@@ -1,0 +1,38 @@
+{
+  "tarea": "Presupuestar un proyecto concreto y montar su calendario de cobros y pagos para ver el margen y la caja que necesita",
+  "rol": "Jefe de proyecto con responsabilidad sobre el margen y sobre la caja",
+  "contexto": {
+    "proyecto": "[QUÉ HAY QUE ENTREGAR]",
+    "cliente": "[NOMBRE Y SI PAGA PUNTUAL O TARDE]",
+    "precio_cerrado": "[IMPORTE SIN IVA]",
+    "plazo": "[FECHA DE INICIO Y DE ENTREGA]"
+  },
+  "entradas": {
+    "tareas_y_horas": "[FASES CON HORAS ESTIMADAS Y QUIÉN LAS HACE]",
+    "coste_hora": "[COSTE INTERNO POR HORA DE CADA PERFIL]",
+    "materiales_y_subcontratas": "[CONCEPTO, IMPORTE Y CUÁNDO HAY QUE PAGARLO]",
+    "condiciones_cobro": "[ANTICIPO, HITOS Y DÍAS DE PAGO DEL CLIENTE]",
+    "gastos_indirectos": "[PORCENTAJE DE ESTRUCTURA QUE IMPUTAS A CADA PROYECTO]"
+  },
+  "metodo": [
+    "Sumar coste directo por fase y añadir el porcentaje de estructura",
+    "Calcular margen en euros y en porcentaje sobre el precio cerrado",
+    "Colocar cobros y pagos en el mes real y calcular la caja acumulada del proyecto",
+    "Identificar el mes de máxima necesidad de dinero adelantado",
+    "Añadir un colchón de horas del 10 al 15 por ciento por imprevistos y decirlo"
+  ],
+  "restricciones": [
+    "No dar por bueno un margen sin comprobar que cubre la estructura imputada",
+    "No suponer que el cliente paga al día si el histórico dice lo contrario",
+    "Si el margen queda por debajo de lo razonable, decirlo con claridad y proponer qué cambiar"
+  ],
+  "formato_salida": {
+    "tipo": "ficha de proyecto",
+    "secciones": ["Costes por fase", "Margen previsto", "Calendario de cobros y pagos mes a mes", "Dinero máximo que tienes que adelantar", "Condiciones a negociar antes de firmar"]
+  },
+  "criterios_calidad": [
+    "El margen aparece en euros y en porcentaje",
+    "Se ve el mes de mayor esfuerzo de caja",
+    "Las condiciones a negociar son concretas y redactables en el contrato"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "tarea": "Diseñar y ejecutar una prueba real del circuito de cancelación, devolución y reembolso de un negocio, y documentar los fallos encontrados.",
+  "contexto": {
+    "que_vendes": "[PRODUCTO FÍSICO / DIGITAL / SERVICIO / SUSCRIPCIÓN]",
+    "donde_cobras": "[STRIPE, PAYPAL, BIZUM, TPV, TRANSFERENCIA]",
+    "quien_atiende": "[TÚ, UN BOT, UN AYUDANTE]",
+    "politica_publicada": "[PEGA TU POLÍTICA DE DEVOLUCIONES O ESCRIBE: NO TENGO]"
+  },
+  "entradas": {
+    "canales_de_contacto": "[WHATSAPP, EMAIL, FORMULARIO, TELÉFONO]",
+    "plazos_legales_aplicables": "[14 DÍAS DE DESISTIMIENTO SI VENDES A CONSUMIDOR EN ESPAÑA / OTROS]",
+    "casos_reales_recientes": "[DESCRIBE 1-2 DEVOLUCIONES QUE HAYAS TENIDO]"
+  },
+  "metodo": [
+    "1. Haz un pedido de prueba real, pagando con tu propia tarjeta y con un correo que no sea el de la empresa.",
+    "2. Ejecuta cuatro guiones distintos: cancelo antes de que salga, devuelvo dentro de plazo, devuelvo fuera de plazo y llega roto.",
+    "3. En cada guion escribe el mensaje como lo escribiría un cliente enfadado, no como lo escribirías tú.",
+    "4. Cronometra: tiempo hasta la primera respuesta, hasta la instrucción clara y hasta ver el dinero de vuelta en el banco.",
+    "5. Anota qué correos automáticos llegan, cuáles no llegan y cuáles llegan con datos mal (importe, nombre, pedido).",
+    "6. Comprueba quién paga el envío de vuelta y si eso coincide con lo que pone tu web.",
+    "7. Revisa el rastro contable: factura rectificativa, apunte del reembolso y comisión que no se devuelve.",
+    "8. Cierra con la lista de arreglos ordenada por lo que más cabrea al cliente."
+  ],
+  "errores_tipicos": [
+    "Probar solo la compra y nunca la vuelta atrás.",
+    "Tener una política en la web que nadie sigue en el WhatsApp.",
+    "Devolver por otro medio distinto al del cobro y liarla en contabilidad.",
+    "No emitir factura rectificativa y descuadrar el trimestre.",
+    "Reembolsar sin avisar: el cliente no lo ve y reclama igual."
+  ],
+  "restricciones": [
+    "No propongas nada que incumpla los derechos del consumidor.",
+    "Los arreglos tienen que poder hacerlos una persona sola sin programar."
+  ],
+  "formato_salida": {
+    "guiones": "Los 4 guiones con el mensaje literal a enviar",
+    "hoja_de_registro": "Tabla: guion, hora de envío, hora de respuesta, qué pasó, correo recibido sí/no, fallo detectado",
+    "fallos": "Lista priorizada: fallo, impacto en el cliente, arreglo concreto, tiempo estimado",
+    "texto_politica": "Redacción corregida de la política de devoluciones en lenguaje claro",
+    "plantillas": "3 respuestas listas: acepto la devolución, la rechazo con motivo, te reembolso y estos son los plazos"
+  },
+  "criterios_calidad": [
+    "Cada fallo tiene hora, captura o frase literal como prueba.",
+    "Los tiempos están medidos, no estimados.",
+    "La política corregida se entiende en una lectura.",
+    "El circuito contable queda cuadrado."
+  ],
+  "si_falta_informacion": "Pregunta primero por la pasarela de cobro y por el canal donde escriben los clientes; el resto puede ir como [SUPUESTO]."
+}

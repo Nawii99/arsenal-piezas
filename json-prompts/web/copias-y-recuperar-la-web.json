@@ -1,0 +1,53 @@
+{
+  "tarea": "Definir un sistema de copias de seguridad de una web pequeña y un procedimiento de restauración probado",
+  "contexto": {
+    "web": "[URL]",
+    "hecha_con": "[HTML, WORDPRESS, SHOPIFY, CONSTRUCTOR VISUAL]",
+    "cada_cuanto_cambia": "[A DIARIO, SEMANAL, CASI NUNCA]",
+    "que_se_perderia": "[TEXTOS, FOTOS, PEDIDOS, CLIENTES, RESERVAS]",
+    "presupuesto": "[0 EUROS / HASTA X EUROS AL MES]"
+  },
+  "entradas": {
+    "donde_esta_alojada": "[PROVEEDOR]",
+    "copias_actuales": "[QUÉ COPIAS TIENES HOY, SI ES QUE TIENES ALGUNA]",
+    "herramientas_disponibles": "[GOOGLE DRIVE, DISCO DURO, GITHUB, OTRO]",
+    "cuanto_puedes_perder": "[HORAS O DÍAS DE TRABAJO ASUMIBLES]"
+  },
+  "pasos": [
+    "1. Inventario de lo que hay que salvar: archivos de la web, imágenes originales, base de datos si la hay, textos legales, lista de clientes o pedidos, y los accesos.",
+    "2. Fija dos números en lenguaje llano: cuánto trabajo puedes permitirte perder y cuánto tiempo puedes estar caído.",
+    "3. Aplica la regla 3-2-1 explicada: tres copias, en dos sitios distintos, una fuera del hosting.",
+    "4. Elige el método por tipo de web: control de versiones para HTML, copia automática del hosting para gestores, exportación periódica para tiendas.",
+    "5. Define la frecuencia según cada cuánto cambia la web y cuánto tiempo se conservan las copias.",
+    "6. Documenta los accesos en un gestor de contraseñas, no en una nota del móvil.",
+    "7. Escribe el procedimiento de restauración en pasos numerados, pensado para leerlo con prisa y nervios.",
+    "8. Haz un simulacro: restaura la copia en un sitio de pruebas y cronometra cuánto tardas.",
+    "9. Pon un recordatorio en el calendario para repetir el simulacro cada seis meses."
+  ],
+  "errores_tipicos": [
+    "Confiar solo en la copia del hosting: si se cae la cuenta, se cae la copia",
+    "Tener copias que nunca se ha probado restaurar",
+    "Guardar la copia en el mismo servidor con otro nombre",
+    "No guardar las imágenes originales, solo las comprimidas de la web",
+    "Olvidar el listado de clientes o pedidos, que suele ser lo más valioso",
+    "Perder los accesos al registrador del dominio, que es lo más difícil de recuperar"
+  ],
+  "restricciones": [
+    "Prioriza opciones gratuitas o de coste bajo",
+    "Nada de guiones automáticos si quien lo va a mantener no sabe programar",
+    "No pidas guardar contraseñas en texto plano"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla del inventario: Qué, Dónde vive, Cada cuánto se copia, Dónde se guarda, Cuánto se conserva",
+    "bloque_2": "Rutina de copias, con qué es automático y qué manual",
+    "bloque_3": "Procedimiento de restauración en pasos numerados",
+    "bloque_4": "Ficha de accesos críticos con qué apuntar de cada uno (sin la contraseña dentro)",
+    "bloque_5": "Guion del simulacro semestral"
+  },
+  "criterios_calidad": [
+    "Al menos una copia vive fuera del proveedor de la web",
+    "El procedimiento de restauración lo puede seguir otra persona sin llamarte",
+    "Está claro qué se pierde en el peor caso",
+    "Se puede montar en una tarde y sin pagar nada obligatorio"
+  ]
+}

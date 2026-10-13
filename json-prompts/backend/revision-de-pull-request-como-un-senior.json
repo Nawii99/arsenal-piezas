@@ -1,0 +1,41 @@
+{
+  "tarea": "Revisar el código de un pull request y devolver comentarios accionables ordenados por gravedad",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL PROYECTO]",
+    "lenguaje_y_framework": "[LENGUAJE Y FRAMEWORK]",
+    "que_cambia_el_pr": "[QUÉ PRETENDE CAMBIAR ESTE PR]",
+    "criticidad": "[BAJA / MEDIA / ALTA: qué pasa si esto falla en producción]",
+    "nivel_del_autor": "[JUNIOR / MEDIO / SENIOR]"
+  },
+  "entradas": {
+    "diff": "[PEGA AQUÍ EL DIFF O LOS ARCHIVOS MODIFICADOS]",
+    "convenciones_del_equipo": "[REGLAS DE ESTILO O ARQUITECTURA QUE YA USÁIS]"
+  },
+  "pasos": [
+    "Resume en 3 líneas qué hace el PR de verdad, no lo que dice el título",
+    "Corrección: casos límite, valores nulos, errores no capturados, concurrencia, transacciones a medias",
+    "Seguridad: entradas sin validar, secretos en el código, permisos, consultas sin parametrizar",
+    "Rendimiento: consultas dentro de bucles, llamadas de red repetidas, cargas completas de tablas",
+    "Diseño: responsabilidades mezcladas, acoplamiento nuevo, duplicación con código que ya existe",
+    "Pruebas: qué caso quedaría sin cubrir si esto entra tal cual",
+    "Deuda técnica que el PR añade y alternativa concreta para no añadirla"
+  ],
+  "restricciones": [
+    "No reescribas el PR entero: propón siempre el cambio mínimo",
+    "Cada comentario cita archivo y función",
+    "Separa lo que bloquea de lo que es opinión",
+    "Si algo no se puede juzgar sin más contexto, pregúntalo en vez de suponer"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["Resumen del cambio", "Bloqueantes", "Recomendables", "Menores u opinables", "Preguntas al autor", "Veredicto"],
+    "formato_de_cada_comentario": "archivo:linea | gravedad | problema | por qué importa | cambio sugerido",
+    "veredicto": "aprobar / aprobar con cambios / rechazar, con una frase de motivo"
+  },
+  "tono": "Directo y respetuoso: critica el código, nunca a la persona",
+  "criterios_calidad": [
+    "Cada bloqueante describe un fallo real y reproducible, no una preferencia",
+    "Nada de comentarios de estilo que ya cubre el linter",
+    "Un desarrollador puede aplicar cada sugerencia sin volver a preguntar"
+  ]
+}

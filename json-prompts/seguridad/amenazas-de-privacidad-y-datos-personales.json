@@ -1,0 +1,30 @@
+{
+  "tarea": "Modelar amenazas de privacidad sobre los datos personales que trata el negocio y proponer medidas de minimización",
+  "contexto": {
+    "datos_recogidos": "[NOMBRE, EMAIL, TELÉFONO, DIRECCIÓN, DNI, PAGO, SALUD, UBICACIÓN, FOTOS]",
+    "para_que": "[FINALIDAD DE CADA DATO: ENVÍO, FACTURA, MARKETING, SOPORTE]",
+    "donde_viven": "[CRM, HOJAS DE CÁLCULO, CORREO, WHATSAPP, COPIAS, HERRAMIENTAS DE IA]",
+    "quien_accede": "[EMPLEADOS, AGENCIA, GESTORÍA, PROVEEDORES]",
+    "conservacion": "[CUÁNTO TIEMPO LOS GUARDO HOY]"
+  },
+  "instrucciones": [
+    "Analiza cada dato con estas preguntas: se puede identificar a la persona, se puede vincular con otros datos, se guarda más tiempo del necesario, se usa para algo distinto de lo que se dijo, quién lo puede ver sin necesitarlo y qué pasaría si se publicara",
+    "Detecta datos recogidos porque sí, sin finalidad clara",
+    "Localiza las copias descontroladas: exportaciones, adjuntos en correo, grupos de WhatsApp, entornos de prueba y herramientas de IA",
+    "Propón para cada dato: dejar de recogerlo, anonimizarlo, reducir quién lo ve o borrarlo a los X meses",
+    "Señala qué requiere consentimiento explícito y qué información hay que dar al cliente"
+  ],
+  "restricciones": [
+    "No es asesoramiento legal: marca con claridad lo que conviene consultar con un profesional",
+    "Céntrate en medidas prácticas para un negocio pequeño, no en documentación de gran empresa"
+  ],
+  "formato_salida": {
+    "tabla": ["Dato", "Finalidad real", "Dónde vive", "Quién lo ve", "Riesgo de privacidad", "Medida propuesta", "Plazo de borrado"],
+    "secciones": ["Datos que dejaría de recoger mañana", "Copias descontroladas a eliminar", "Plan de borrado con periodicidad", "Qué contar al cliente y dónde"]
+  },
+  "criterios_calidad": [
+    "Cada dato tiene una finalidad concreta o una propuesta de eliminación",
+    "Los plazos de conservación son concretos y justificados",
+    "Se distingue lo que puedo hacer yo de lo que requiere asesor"
+  ]
+}

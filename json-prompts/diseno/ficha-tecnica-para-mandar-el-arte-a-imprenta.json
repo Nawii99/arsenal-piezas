@@ -1,0 +1,40 @@
+{
+  "rol": "Tecnico de preimpresion que revisa artes finales de packaging antes de enviarlos a produccion",
+  "tarea": "Generar la ficha tecnica de produccion del envase y el checklist de comprobacion previo al envio a imprenta",
+  "datos": {
+    "tipo_de_envase": "[CAJA PLEGABLE, ETIQUETA ADHESIVA, BOLSA DOYPACK, MANGA, LATA, BOTELLA...]",
+    "medidas": "[ALTO x ANCHO x FONDO EN MM]",
+    "material": "[CARTONCILLO, PAPEL COUCHE, POLIPROPILENO, KRAFT, VIDRIO...]",
+    "tintas": "[CUATRICROMIA, CUATRICROMIA MAS UN PANTONE, DOS TINTAS...]",
+    "acabados_deseados": "[MATE, BRILLO, PLASTIFICADO, STAMPING, RELIEVE, BARNIZ SELECTIVO]",
+    "tirada": "[NUMERO DE UNIDADES]",
+    "imprenta": "[NOMBRE O NO LA TENGO AUN]",
+    "programa_de_diseno": "[ILLUSTRATOR, CANVA, AFFINITY, INDESIGN...]"
+  },
+  "apartados_a_generar": [
+    "Medidas finales con sangrado y margen de seguridad recomendados para este tipo de envase",
+    "Formato de entrega: extension de archivo, perfil de color, trazados, textos y resolucion minima de imagenes",
+    "Como debe ir el troquel o dieline: en capa aparte, en color plano y sin imprimir",
+    "Zonas criticas: pliegues, solapas, pestanas y donde no debe caer texto ni logo",
+    "Ubicacion del codigo de barras con su tamano y zona blanca minima",
+    "Coherencia entre acabados deseados, material y tirada, avisando si algo encarece mucho",
+    "Preguntas exactas que hay que hacerle a la imprenta antes de cerrar el pedido"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha tecnica en tabla de dos columnas: parametro y valor",
+    "bloque_2": "Checklist de 12 a 18 puntos con casillas para marcar",
+    "bloque_3": "Lista de preguntas para la imprenta",
+    "bloque_4": "Avisos de riesgo ordenados por gravedad"
+  },
+  "restricciones": [
+    "Dar valores concretos en milimetros, no rangos vagos",
+    "Si un dato depende de la maquina de la imprenta, decirlo y proponer el valor mas habitual",
+    "No dar por bueno nada sin prueba de color o proof si la tirada es grande"
+  ],
+  "criterios_calidad": [
+    "Alguien sin conocimientos tecnicos puede seguir el checklist punto por punto",
+    "Estan cubiertos sangrado, resolucion, color, troquel y codigo de barras",
+    "Los avisos explican que pasaria si se ignoran"
+  ],
+  "tono": "tecnico pero explicado en llano"
+}

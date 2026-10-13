@@ -1,0 +1,56 @@
+{
+  "tarea": "Haz el inventario de todo lo que caduca en mi infraestructura y móntame un sistema de avisos con antelación suficiente y responsable asignado",
+  "contexto": {
+    "alcance": "[SOLO MI NEGOCIO O TAMBIÉN CUENTAS DE CLIENTES]",
+    "quien_responde": "[QUIÉN RECIBE LOS AVISOS Y QUIÉN ACTÚA SI YO NO ESTOY]",
+    "herramientas_disponibles": "[CALENDARIO, CORREO, HOJA DE CÁLCULO, MÓVIL: LO QUE USO A DIARIO]"
+  },
+  "entradas": {
+    "dominios": "[DOMINIOS, REGISTRADOR Y FECHA DE RENOVACIÓN SI LA SÉ]",
+    "servicios": "[HOSTING, BASES DE DATOS, HERRAMIENTAS DE PAGO Y SU FORMA DE COBRO]",
+    "claves_y_tokens": "[INTEGRACIONES CON CADUCIDAD: pasarelas de pago, APIs, conexiones de redes sociales]",
+    "documentos": "[LICENCIAS, SEGUROS, CONTRATOS DE PROVEEDOR CON FECHA DE FIN]"
+  },
+  "pasos": [
+    "1. Lista todo lo que tiene fecha de fin, incluida la caducidad de la tarjeta con la que pagas cada servicio",
+    "2. Anota para cada elemento qué pasa exactamente el día que caduca y a las cuántas horas se nota",
+    "3. Clasifica por daño: tumba la web, tumba el correo, tumba los cobros, molesta pero se aguanta",
+    "4. Fija la antelación del aviso según el daño: lo que tumba el negocio se avisa con sesenta, treinta y siete días",
+    "5. Activa la renovación automática donde se pueda y confirma que la tarjeta asociada no caduca antes",
+    "6. Crea los avisos en un calendario compartido, no solo en tu cabeza ni en un correo del proveedor que acaba en promociones",
+    "7. Añade una comprobación mensual de diez minutos con la lista delante",
+    "8. Escribe qué hacer si algo caduca igualmente: plazo de recuperación de un dominio y coste de rescate"
+  ],
+  "que_mirar": [
+    "que los avisos del registrador vayan a un correo que leas y que no dependa del propio dominio que puede caer",
+    "la renovación de dominios con privacidad activada, donde los avisos a veces se pierden",
+    "certificados que se renuevan solos pero solo si el dominio sigue apuntando bien",
+    "integraciones que caducan sin avisar y dejan de publicar o de cobrar",
+    "tarjetas de prepago o cuentas con saldo insuficiente"
+  ],
+  "errores_tipicos": [
+    "tener el aviso del dominio en un correo del propio dominio",
+    "suponer que la renovación automática funciona sin haberla comprobado nunca",
+    "pagar en el último día y descubrir que la tarjeta está caducada",
+    "que la cuenta esté a nombre de un colaborador que ya no está",
+    "no tener registrado el periodo de gracia de recuperación del dominio"
+  ],
+  "restricciones": [
+    "no me pidas contraseñas ni números de tarjeta: solo el dato de caducidad",
+    "prioriza soluciones gratuitas y que ya tenga instaladas",
+    "cada aviso debe tener una persona concreta, no un 'alguien'"
+  ],
+  "formato_salida": {
+    "1_tabla_caducidades": "elemento | proveedor | fecha | qué pasa si caduca | daño | renovación automática | responsable",
+    "2_calendario_de_avisos": "eventos a crear con su antelación y su texto",
+    "3_revision_mensual": "lista de diez minutos con lo que se mira cada mes",
+    "4_plan_si_caduca": "pasos y plazos de rescate para dominio, certificado y cobros",
+    "formato_fechas": "día/mes/año"
+  },
+  "criterios_calidad": [
+    "no queda ninguna fila con fecha desconocida sin una tarea para averiguarla",
+    "lo que tumba el negocio tiene al menos dos avisos a distinta antelación",
+    "otra persona podría renovar sin mí siguiendo la tabla",
+    "la lista cabe en una sola pantalla"
+  ]
+}

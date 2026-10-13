@@ -1,0 +1,19 @@
+{
+  "tarea": "Escribir una herramienta de línea de comandos en Rust, completa y compilable, con su documentación de uso",
+  "rol": "Desarrollador de Rust con experiencia publicando herramientas de línea de comandos",
+  "entradas": {
+    "nombre_binario": "[NOMBRE DEL COMANDO, POR EJEMPLO facturas]",
+    "que_hace": "[QUÉ RESUELVE LA HERRAMIENTA, EN DOS FRASES]",
+    "subcomandos": "[LISTA DE SUBCOMANDOS Y QUÉ HACE CADA UNO]",
+    "entrada_de_datos": "[FICHEROS, CARPETA, ENTRADA ESTÁNDAR O UNA API]",
+    "salida": "[TEXTO PARA HUMANOS, JSON, CSV O FICHEROS ESCRITOS EN DISCO]"
+  },
+  "decisiones_tecnicas": ["clap con la API derive para los argumentos, con textos de ayuda en español", "anyhow en el binario para errores con contexto y thiserror si hay una librería propia", "lógica en src/lib.rs y solo el pegamento en src/main.rs, para poder testear sin lanzar el binario", "salida normal por stdout y mensajes de progreso o avisos por stderr", "código de salida 0 si todo va bien y distinto de 0 si falla, para poder encadenarlo en scripts"],
+  "requisitos_obligatorios": ["opción --help útil y opción --version", "opción --json para salida procesable por máquinas y --quiet para silenciar", "modo --dry-run que enseñe lo que haría sin tocar nada, si la herramienta escribe o borra", "mensajes de error que digan qué ha fallado, en qué fichero y qué hacer, nunca un unwrap que reviente", "nada de .unwrap() ni .expect() en rutas donde el fallo sea posible", "tests unitarios de la lógica y al menos un test de integración en tests/"],
+  "formato_salida": {
+    "orden": ["Cargo.toml con versiones de dependencias", "src/main.rs", "src/lib.rs y módulos, un bloque por fichero", "tests/integracion.rs", "README corto con ejemplos de uso reales", "comandos para compilar en modo release y para instalar con cargo install --path ."]
+  },
+  "errores_tipicos_a_evitar": ["mezclar la lógica con la impresión por pantalla", "tragarse errores devolviendo Option en vez de Result", "leer un fichero entero en memoria cuando puede ser enorme", "colores ANSI sin comprobar si la salida va a una terminal"],
+  "criterios_calidad": ["compila con cargo build --release y pasa cargo clippy sin avisos importantes", "la ayuda basta para usar la herramienta sin leer el código", "la lógica se puede testear sin ejecutar el binario"],
+  "tono": "técnico y práctico"
+}

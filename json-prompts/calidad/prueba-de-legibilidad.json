@@ -1,0 +1,39 @@
+{
+  "tarea": "Revisar si mi web se puede leer y usar sin esfuerzo por gente mayor, con poca vista, con prisa o en un móvil a pleno sol, y dejar una lista de arreglos",
+  "contexto": {
+    "pagina": "[URL O PANTALLA A REVISAR]",
+    "cliente_tipo": "[EDAD APROXIMADA Y CÓMO ENTRA: MÓVIL, ORDENADOR, ENLACE DE WHATSAPP]",
+    "accion_principal": "[QUÉ QUIERO QUE HAGA: LLAMAR, RESERVAR, COMPRAR, ESCRIBIR]"
+  },
+  "pasos": [
+    "1. Abre la página en el móvil con el brillo bajo y a un brazo de distancia: si tienes que acercarte, el texto es pequeño.",
+    "2. Mide lo básico: el texto normal no debería verse más pequeño que el de WhatsApp, y los botones deben poder pulsarse con el pulgar sin miedo a fallar.",
+    "3. Comprueba el contraste: gris claro sobre blanco y texto sobre foto son los dos culpables habituales. Si al entornar los ojos desaparece, no vale.",
+    "4. Haz la prueba del blanco y negro: pon una captura en escala de grises y mira si todavía se distingue lo importante.",
+    "5. Navega la página solo con el tabulador: comprueba que se ve dónde estás y que puedes llegar al botón principal sin ratón.",
+    "6. Revisa que los enlaces se distingan del texto normal por algo más que el color.",
+    "7. Comprueba los formularios: etiqueta visible encima de cada campo, no solo dentro; mensajes de error que digan qué arreglar; teclado numérico en el campo de teléfono.",
+    "8. Lee en voz alta el primer párrafo y el botón: si tienes que releer, reescribe. Frases cortas, palabras normales, nada de jerga.",
+    "9. Comprueba las imágenes con texto dentro: ese texto no lo lee un lector de pantalla ni Google.",
+    "10. Verifica que la página se entiende con el móvil en horizontal y con la letra del sistema aumentada."
+  ],
+  "errores_tipicos": [
+    "Diseñar en un portátil grande y no mirar nunca el móvil.",
+    "Poner el texto encima de una foto sin capa oscura detrás.",
+    "Usar el gris de moda para el texto principal.",
+    "Botones fantasma: bordes finos sin relleno que nadie identifica como botón.",
+    "Mensajes de error tipo «campo inválido» sin decir qué falta."
+  ],
+  "formato_salida": {
+    "tabla_hallazgos": "Elemento, problema, a quién afecta, arreglo concreto (tamaño, color, texto)",
+    "prioridad": "Los tres cambios que más gente desbloquean, en orden",
+    "textos_reescritos": "Titular, primer párrafo y texto del botón, reescritos y listos para pegar",
+    "comprobacion_final": "Lista de cinco verificaciones para repetir tras los cambios"
+  },
+  "criterios_calidad": [
+    "Cada arreglo dice el valor concreto o el texto final, no una intención.",
+    "Se ha probado con el móvil en la mano, no solo en el ordenador.",
+    "El recorrido hasta la acción principal se puede hacer solo con teclado.",
+    "Los textos reescritos se entienden leídos una sola vez en voz alta."
+  ]
+}

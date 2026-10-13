@@ -1,0 +1,44 @@
+{
+  "tarea": "Redactar un informe mensual de una página con cuatro gráficos comentados y las acciones del mes siguiente",
+  "contexto": {
+    "cliente": "[NOMBRE DEL CLIENTE Y SECTOR]",
+    "servicio_prestado": "[QUÉ LE HACES: CAMPAÑAS, SEO, MANTENIMIENTO, TIENDA ONLINE...]",
+    "objetivos_acordados": "[LOS OBJETIVOS QUE FIRMASTEIS Y SUS CIFRAS]",
+    "mes_del_informe": "[MES Y AÑO]"
+  },
+  "entradas": {
+    "datos_del_mes": "[PEGA LAS CIFRAS DEL MES: MÉTRICAS Y VALORES]",
+    "datos_del_mes_anterior": "[LAS MISMAS MÉTRICAS DEL MES ANTERIOR]",
+    "datos_del_mismo_mes_del_ano_pasado": "[SI LOS TIENES]",
+    "acciones_realizadas": "[QUÉ HICISTE ESTE MES]",
+    "incidencias": "[QUÉ SE TORCIÓ: BAJAS, RETRASOS, PROBLEMAS TÉCNICOS, ESTACIONALIDAD]"
+  },
+  "estructura": [
+    "Resumen en tres frases: qué ha pasado, por qué y qué se hace ahora",
+    "Cuatro gráficos: evolución del indicador principal, comparativa frente al objetivo, reparto por canal o producto, y un gráfico de la palanca en la que trabajaste",
+    "Comentario de dos frases bajo cada gráfico: qué muestra y qué significa para el negocio del cliente",
+    "Bloque de lo que no ha funcionado, dicho sin excusas",
+    "Tres acciones concretas para el mes siguiente, con responsable y fecha"
+  ],
+  "especificacion_de_graficos": {
+    "para_cada_uno": ["Tipo de gráfico", "Qué va en cada eje", "Comparativa incluida", "Título con la conclusión", "Anotación destacada"],
+    "regla": "Si un dato no cambia ninguna decisión del cliente, no ocupa un gráfico"
+  },
+  "restricciones": [
+    "Todo cabe en una página",
+    "Cada porcentaje va acompañado del valor absoluto para que no engañe",
+    "No atribuir resultados a causas que los datos no soporten",
+    "Nada de jerga de agencia: escribir para alguien que dirige un negocio",
+    "Si un objetivo no se ha cumplido, se dice en el resumen, no escondido al final"
+  ],
+  "formato_salida": {
+    "tipo": "informe listo para maquetar",
+    "partes": ["Titular del mes", "Resumen de tres frases", "Ficha de los cuatro gráficos", "Comentarios", "Lo que no ha ido bien", "Plan del mes siguiente"]
+  },
+  "criterios_calidad": [
+    "El cliente entiende en un minuto si el mes ha ido bien o mal",
+    "Cada cifra citada procede de los datos entregados",
+    "Las acciones propuestas responden a lo que muestran los gráficos"
+  ],
+  "tono": "profesional, honesto y directo"
+}

@@ -1,0 +1,47 @@
+{
+  "tarea": "Redactar la descripción corta y la descripción larga de mi ficha de Google Play, optimizadas para el buscador de la tienda y para que la gente instale",
+  "contexto": {
+    "app": "[NOMBRE DE TU APP]",
+    "que_hace": "[QUÉ RESUELVE, EN UNA FRASE]",
+    "funciones": "[LISTA DE FUNCIONES PRINCIPALES]",
+    "publico": "[A QUIÉN VA DIRIGIDA]",
+    "modelo": "[GRATIS, GRATIS CON COMPRAS O SUSCRIPCIÓN CON PRECIO]",
+    "pruebas": "[VALORACIÓN, NÚMERO DE USUARIOS, PREMIOS O MEDIOS, SOLO SI SON REALES]",
+    "palabras_prioritarias": "[8 A 12 PALABRAS CLAVE ORDENADAS]"
+  },
+  "limites": {
+    "descripcion_corta": "80 caracteres",
+    "descripcion_larga": "4000 caracteres, objetivo entre 2500 y 3500"
+  },
+  "estructura_descripcion_larga": [
+    "Bloque 1: tres líneas que se ven antes de pulsar Más, con el problema y la solución",
+    "Bloque 2: para quién es, en 3 o 4 perfiles concretos",
+    "Bloque 3: funciones en lista corta, cada una como beneficio y no como característica",
+    "Bloque 4: cómo funciona en 3 pasos",
+    "Bloque 5: pruebas y confianza (valoraciones, seguridad, privacidad)",
+    "Bloque 6: precio y qué incluye la versión gratuita, sin letra pequeña engañosa",
+    "Bloque 7: cierre con llamada a la acción y contacto de soporte"
+  ],
+  "reglas_de_palabras_clave": [
+    "Repartir cada palabra prioritaria entre 2 y 4 veces en el texto completo, nunca amontonadas",
+    "Colocar las 3 principales en las primeras 170 caracteres",
+    "Escribir frases que se lean bien en voz alta: si suena a relleno, fuera"
+  ],
+  "formato_salida": {
+    "tipo": "Texto listo para copiar",
+    "partes": [
+      "3 opciones de descripción corta con recuento de caracteres",
+      "Descripción larga completa con los bloques separados y emojis solo si encajan con la marca",
+      "Tabla final: palabra clave, veces que aparece y en qué bloque"
+    ]
+  },
+  "restricciones": [
+    "No prometer resultados ni usar palabras como garantizado, mejor del mundo o número 1",
+    "No mencionar otras tiendas ni marcas ajenas",
+    "No inventar cifras, premios ni valoraciones"
+  ],
+  "criterios_calidad": [
+    "Las tres primeras líneas deben funcionar solas como anuncio",
+    "Ninguna frase de más de 20 palabras"
+  ]
+}

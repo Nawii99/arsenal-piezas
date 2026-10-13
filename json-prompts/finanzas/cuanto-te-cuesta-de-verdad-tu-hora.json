@@ -1,0 +1,60 @@
+{
+  "tarea": "Calcular el coste real de una hora de mi trabajo y el precio hora mínimo por debajo del cual pierdo dinero, con el desglose completo del cálculo.",
+  "contexto": {
+    "actividad": "[QUÉ SERVICIO PRESTO]",
+    "forma_juridica": "[AUTÓNOMO / SOCIEDAD LIMITADA]",
+    "situacion": "[EMPIEZO / YA FACTURO / TENGO COLABORADORES]",
+    "objetivo_de_ingresos_netos_al_ano": "[LO QUE QUIERO QUE ME QUEDE LIMPIO]"
+  },
+  "entradas": {
+    "gastos_fijos_mensuales": "[CUOTA DE AUTÓNOMOS, GESTORÍA, SOFTWARE, TELÉFONO, LOCAL, SEGUROS, TRANSPORTE]",
+    "gastos_variables_medios": "[LO QUE GASTO SOLO CUANDO HAY TRABAJO]",
+    "dias_trabajados_al_ano": "[DÍAS REALES QUITANDO VACACIONES, FESTIVOS Y BAJAS PREVISTAS]",
+    "horas_al_dia": "[HORAS QUE DEDICO AL NEGOCIO]",
+    "porcentaje_horas_facturables": "[SI NO LO SABES, PON 60]",
+    "tipo_medio_de_irpf_o_impuesto": "[SI NO LO SABES, PON 20]"
+  },
+  "conocimiento_a_aplicar": [
+    "De las horas que trabajas solo una parte se factura: presupuestos, administración, formación, marketing y clientes que no entran se llevan entre un 30 y un 45 por ciento del tiempo.",
+    "El coste hora se calcula sobre horas facturables, no sobre horas trabajadas. Ese es el error que arruina el cálculo.",
+    "El IVA no es tuyo: no entra nunca en el cálculo de coste ni de sueldo.",
+    "Al sueldo objetivo hay que sumarle el impuesto que pagarás por él, porque el bruto y el neto no son lo mismo.",
+    "Hay que meter una partida de vacaciones y otra de imprevistos o el modelo se rompe el primer mes malo.",
+    "El coste hora no es el precio: el precio se pone por valor, pero nunca por debajo del coste hora."
+  ],
+  "pasos": [
+    "1. Calcular horas trabajadas al año y aplicar el porcentaje facturable para obtener horas vendibles.",
+    "2. Sumar gastos fijos anuales y gastos variables medios anuales.",
+    "3. Convertir el objetivo de ingresos netos en bruto necesario añadiendo el tipo impositivo estimado.",
+    "4. Sumar gastos totales más bruto necesario y dividir entre horas vendibles: ese es el precio hora suelo.",
+    "5. Calcular también el coste hora sin sueldo, que es el punto donde solo cubres gastos.",
+    "6. Hacer una tabla de sensibilidad con tres escenarios de horas facturables: pesimista, realista y bueno.",
+    "7. Traducir el resultado a precio de media jornada, jornada completa y a un encargo tipo mío."
+  ],
+  "errores_tipicos": [
+    "Dividir entre 1.800 horas como si todas se cobrasen.",
+    "Olvidar la cuota de autónomos y la gestoría, que son de los pocos gastos que no paran nunca.",
+    "Confundir facturación con sueldo.",
+    "No contar el tiempo de hacer presupuestos que luego no salen.",
+    "Poner el precio justo en el coste y quedarse sin margen para imprevistos ni para invertir."
+  ],
+  "restricciones": [
+    "Muestra siempre la fórmula y los números intermedios, no solo el resultado.",
+    "No uses tipos impositivos reales ni datos legales que yo no te haya dado: usa los que te paso como estimación y dilo.",
+    "No prometas ingresos; el resultado es un suelo de coste, no una previsión de ventas."
+  ],
+  "formato_salida": {
+    "1_tabla_de_calculo": "CONCEPTO | IMPORTE ANUAL | CÓMO SE HA CALCULADO",
+    "2_resultados": "Coste hora sin sueldo, precio hora suelo y precio hora recomendado con margen del 20 por ciento",
+    "3_escenarios": "Tabla con tres niveles de horas facturables y su precio hora suelo",
+    "4_traduccion": "Precio de media jornada, jornada y encargo tipo",
+    "5_frase_de_bolsillo": "Una frase del tipo por debajo de X euros la hora este trabajo me cuesta dinero"
+  },
+  "criterios_calidad": [
+    "Los números cuadran si los recalculo a mano con una calculadora.",
+    "Aparecen las horas facturables explícitas y separadas de las trabajadas.",
+    "El sueldo objetivo aparece en bruto y en neto.",
+    "Se avisa de qué pasa con el precio suelo si trabajo menos horas de las previstas."
+  ],
+  "si_faltan_datos": "Pregúntame solo lo imprescindible y usa valores por defecto razonables dejándolos marcados como SUPUESTO."
+}

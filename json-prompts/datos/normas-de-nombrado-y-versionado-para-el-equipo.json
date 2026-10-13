@@ -1,0 +1,31 @@
+{
+  "tarea": "Redactar la norma interna de versionado de migraciones de base de datos para un equipo pequeno",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL PROYECTO O PRODUCTO]",
+    "herramienta_migraciones": "[FLYWAY / LIQUIBASE / ALEMBIC / PRISMA / RAILS / SOLO SQL EN UNA CARPETA]",
+    "personas_que_tocan_la_bd": "[NUMERO Y PERFILES]",
+    "entornos": "[LOCAL, PREPRODUCCION, PRODUCCION... LOS QUE TENGAIS]",
+    "como_desplegais_hoy": "[A MANO / CON PIPELINE AUTOMATICO / NO HAY PROCESO]"
+  },
+  "la_norma_debe_cubrir": [
+    "Formato del nombre de fichero con marca de tiempo y descripcion, con tres ejemplos reales",
+    "Numeracion o marca de tiempo: cual usar y como se evitan colisiones entre ramas",
+    "Regla de oro: una migracion aplicada en produccion nunca se edita, se corrige con otra nueva",
+    "Que va dentro de una migracion y que no: datos de prueba, permisos, indices, datos maestros",
+    "Separacion entre migraciones de estructura y de datos",
+    "Quien revisa y aprueba antes de aplicar, y que se mira en esa revision",
+    "Que hacer cuando dos ramas anaden migraciones a la vez",
+    "Como se recupera un entorno local desviado sin tocar produccion"
+  ],
+  "formato_salida": {
+    "tipo": "documento markdown listo para pegar en el repositorio",
+    "secciones": ["Para que sirve esto", "Reglas obligatorias", "Como se nombra una migracion", "Flujo paso a paso", "Casos conflictivos", "Checklist de revision"],
+    "extra": "Termina con una lista de cinco lineas que cualquiera pueda seguir sin leer el documento entero"
+  },
+  "restricciones": [
+    "Reglas concretas y verificables, nada de recomendaciones vagas",
+    "Adapta los ejemplos a la herramienta indicada, no des ejemplos de otra",
+    "Maximo dos paginas"
+  ],
+  "tono": "Directo, tuteando, sin jerga innecesaria"
+}

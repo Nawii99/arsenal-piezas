@@ -1,0 +1,39 @@
+{
+  "tarea": "Decidir qué tareas repetitivas de mi negocio automatizo primero y con qué",
+  "rol": "Consultor de automatización para negocios pequeños sin equipo técnico",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "nivel_tecnico": "[NINGUNO, ME DEFIENDO O ME APAÑO BIEN]",
+    "presupuesto_mensual": "[CUÁNTO PUEDES PAGAR AL MES EN HERRAMIENTAS]",
+    "herramientas_que_ya_pago": "[LISTA LO QUE YA TIENES CONTRATADO]"
+  },
+  "entradas": {
+    "tareas_repetitivas": "[LISTA CADA TAREA, CUÁNTAS VECES A LA SEMANA Y CUÁNTOS MINUTOS TE LLEVA]",
+    "donde_se_copian_datos": "[DE QUÉ SITIO A QUÉ SITIO PASAS INFORMACIÓN A MANO]",
+    "lo_que_no_quiero_automatizar": "[LO QUE QUIERES SEGUIR HACIENDO TÚ SÍ O SÍ]"
+  },
+  "instrucciones": [
+    "Calcula para cada tarea las horas al mes que consume y clasifícala como automatizable del todo, automatizable en parte o mejor a mano",
+    "Antes de automatizar, di si la tarea se puede simplemente eliminar o simplificar: eso va siempre primero",
+    "Ordena por horas ahorradas al mes dividido entre dificultad de montaje",
+    "Para cada propuesta indica la herramienta concreta, si sirve la que ya pago, el coste aproximado y el tiempo de montaje",
+    "Avisa de los riesgos: qué pasa si la automatización falla y cómo se detecta",
+    "Marca qué tareas NO conviene automatizar por tener trato con el cliente o demasiadas excepciones",
+    "Propón un orden de arranque de tres fases para no liarse montando todo a la vez"
+  ],
+  "restricciones": [
+    "Nada de montajes que exijan programar si mi nivel técnico es ninguno",
+    "No recomiendes más de dos herramientas nuevas de pago",
+    "Sin prometer ahorros concretos en euros que no salgan de mis datos"
+  ],
+  "formato_salida": {
+    "tipo": "tabla priorizada y plan por fases",
+    "columnas_tabla": ["Tarea", "Horas/mes", "Eliminar o automatizar", "Herramienta", "Coste", "Dificultad", "Prioridad"],
+    "secciones_finales": ["Fase 1 esta semana", "Fase 2 este mes", "Fase 3 más adelante", "Lo que no hay que automatizar y por qué"]
+  },
+  "criterios_calidad": [
+    "Se propone eliminar tareas antes que automatizarlas",
+    "Cada herramienta va con el motivo por el que se elige",
+    "El plan se puede empezar hoy mismo sin ayuda externa"
+  ]
+}

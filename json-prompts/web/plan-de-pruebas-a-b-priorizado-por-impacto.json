@@ -1,0 +1,33 @@
+{
+  "tarea": "Proponer y priorizar un plan de pruebas para mejorar la conversión de una página de aterrizaje",
+  "entradas": {
+    "pagina": "[TEXTO O DESCRIPCIÓN DE LA PÁGINA ACTUAL]",
+    "objetivo_medible": "[CONTACTOS, RESERVAS O VENTAS AL MES]",
+    "trafico_mensual": "[VISITAS AL MES]",
+    "conversion_actual": "[PORCENTAJE O 'NO LO SÉ']",
+    "herramientas": "[GOOGLE ANALYTICS, HOTJAR, EL PANEL DE MI CREADOR DE WEBS, NINGUNA]",
+    "limitaciones": "[NO PUEDO TOCAR EL CÓDIGO, PRESUPUESTO CERO, ETC.]"
+  },
+  "metodo": [
+    "Redacta cada hipótesis con la forma: si cambio X por Y, entonces Z mejorará porque...",
+    "Puntúa impacto, confianza y facilidad de 1 a 5 y ordena por la suma",
+    "Empieza siempre por titular, oferta y llamada a la acción antes que por colores",
+    "Indica si el tráfico da para una prueba A/B o si conviene un cambio directo con antes y después",
+    "Marca las pruebas que solo tienen sentido en móvil"
+  ],
+  "salida_requerida": {
+    "tabla": ["Hipótesis", "Elemento", "Versión A actual", "Versión B propuesta", "Impacto", "Confianza", "Facilidad", "Total"],
+    "ficha_top_3": "Para las 3 primeras: qué medir, cuántos días dejarla, cuántas conversiones mínimas y qué decidir según el resultado",
+    "calendario": "Orden de pruebas para 8 semanas, una cosa cada vez",
+    "registro": "Plantilla de tabla para ir apuntando fecha, cambio, resultado y decisión"
+  },
+  "restricciones": [
+    "No propongas pruebas A/B si el tráfico mensual es claramente insuficiente: dilo y propón alternativa",
+    "Nunca cambies dos cosas a la vez en la misma prueba",
+    "Nada de conclusiones con pocos datos: indica el mínimo antes de decidir"
+  ],
+  "criterios_calidad": [
+    "Cada hipótesis se puede ejecutar sin desarrollador salvo que se indique lo contrario",
+    "Queda claro qué hacer si la prueba sale peor"
+  ]
+}

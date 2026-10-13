@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar una política interna de contraseñas y accesos de una sola página, entendible por personal no técnico y lista para firmar",
+  "rol": "Consultor de seguridad que escribe normativa interna clara para pymes",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "tamano_equipo": "[NÚMERO DE PERSONAS]",
+    "tipo_de_trabajo": "[OFICINA, TELETRABAJO, MIXTO, TIENDA FÍSICA]",
+    "gestor_elegido": "[BITWARDEN, 1PASSWORD, KEEPASS, NINGUNO TODAVÍA]",
+    "responsable": "[NOMBRE Y CARGO DE QUIEN VELA POR ESTO]"
+  },
+  "contenido_obligatorio": [
+    "Longitud mínima recomendada y uso de frases de paso en vez de palabras raras difíciles de recordar",
+    "Prohibición de reutilizar la contraseña del trabajo en servicios personales",
+    "Verificación en dos pasos obligatoria en correo, banco, redes y administración de la web",
+    "Uso del gestor de contraseñas y prohibición de excel, post-it, notas del móvil y envíos por WhatsApp o email",
+    "Qué hacer al recibir un aviso de contraseña filtrada o un correo sospechoso",
+    "Norma sobre cuentas compartidas y cuándo están permitidas",
+    "Bloqueo de pantalla, equipos personales y redes wifi públicas",
+    "Devolución de accesos al salir de la empresa"
+  ],
+  "formato_salida": {
+    "estructura": ["Título y fecha de versión", "Para qué sirve esta hoja en tres líneas", "Diez normas numeradas en una frase cada una", "Qué hacer si algo va mal", "Consecuencias razonables del incumplimiento", "Línea de firma con nombre y fecha"],
+    "extension": "Máximo 600 palabras, cabe en un folio",
+    "extra": "Al final, añade un recuadro de tres consejos prácticos para crear contraseñas fáciles de recordar y difíciles de adivinar"
+  },
+  "tono": "Directo, adulto y sin miedo artificial; tuteando al empleado",
+  "restricciones": [
+    "Nada de anglicismos sin traducir ni artículos de leyes citados de memoria",
+    "Cada norma debe poder cumplirse el mismo día en que se lee",
+    "No incluyas nombres de contraseñas ni ejemplos que alguien pueda usar tal cual"
+  ],
+  "criterios_calidad": [
+    "Una persona sin conocimientos técnicos entiende cada norma a la primera",
+    "No hay ninguna norma imposible de comprobar por el responsable",
+    "El documento sirve tal cual para entregarlo a un cliente que pregunta por vuestras medidas"
+  ]
+}

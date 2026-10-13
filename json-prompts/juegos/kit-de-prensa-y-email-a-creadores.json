@@ -1,0 +1,43 @@
+{
+  "tarea": "Redactar el kit de prensa de un juego y la secuencia de emails para creadores de contenido y medios",
+  "contexto": {
+    "juego": "[NOMBRE]",
+    "genero_y_referencias": "[GENERO Y DOS JUEGOS PARECIDOS]",
+    "estado": "[DEMO / ACCESO ANTICIPADO / FECHA DE LANZAMIENTO CONCRETA]",
+    "plataformas": "[PC / MOVIL / CONSOLA]",
+    "idioma_de_contacto": "[CASTELLANO / INGLES / AMBOS]"
+  },
+  "entradas": {
+    "frase_del_juego": "[QUE ERES Y QUE HACES EN UNA FRASE]",
+    "gancho": "[LO QUE LO HACE RARO O DISTINTO]",
+    "materiales": "[TRAILER, CAPTURAS, GIFS, LOGO, ARTE DE PORTADA]",
+    "quien_lo_hace": "[EQUIPO Y DE DONDE SOIS]",
+    "enlaces": "[TIENDA, WEB, REDES]",
+    "claves_disponibles": "[CUANTAS Y DE QUE PLATAFORMA]"
+  },
+  "pasos": [
+    "1. Escribe la ficha del kit de prensa: nombre, frase, genero, plataformas, fecha, precio, idiomas, contacto",
+    "2. Escribe la descripcion en tres tamanos: una frase, un parrafo y media pagina",
+    "3. Lista los materiales que faltan para que el kit sea usable y como nombrarlos",
+    "4. Escribe cinco puntos de por que interesa a un creador en concreto, en lenguaje de espectador y no de desarrollador",
+    "5. Redacta el email frio: asunto de menos de 60 caracteres, cuatro lineas, enlace al trailer, clave incluida sin pedir nada a cambio",
+    "6. Redacta dos variantes: una para creador pequeno y otra para medio o prensa",
+    "7. Escribe el unico seguimiento permitido a los siete dias, de tres lineas",
+    "8. Monta la tabla de seguimiento de envios"
+  ],
+  "restricciones": [
+    "Nada de adjuntos pesados: solo enlaces",
+    "No pidas que suban video ni que hablen bien del juego",
+    "Un solo seguimiento; si no contesta, se cierra",
+    "Nada de datos de ventas ni premios inventados"
+  ],
+  "formato_salida": {
+    "bloques": ["Ficha del kit", "Descripciones en tres tamanos", "Materiales que faltan", "Por que le interesa", "Email a creador pequeno", "Email a medio", "Seguimiento", "Tabla de envios"],
+    "tabla_envios": ["Creador", "Canal y tamano", "Por que encaja", "Fecha de envio", "Clave enviada", "Respuesta", "Resultado"]
+  },
+  "criterios_calidad": [
+    "El email se lee entero en menos de quince segundos",
+    "El motivo de contactar a ese creador es especifico y no vale para cualquiera",
+    "Toda afirmacion del kit se apoya en las entradas"
+  ]
+}

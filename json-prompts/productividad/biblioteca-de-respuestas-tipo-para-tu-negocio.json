@@ -1,0 +1,34 @@
+{
+  "tarea": "Crear una biblioteca de respuestas tipo reutilizables para los correos y mensajes que mas se repiten en mi negocio",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU EMPRESA] que se dedica a [A QUE TE DEDICAS]",
+    "canales": "[CORREO / WHATSAPP / FORMULARIO WEB / INSTAGRAM]",
+    "servicios_y_precios_de_partida": "[LISTA TUS SERVICIOS Y DESDE CUANTO]",
+    "plazos_habituales": "[PLAZO DE ENTREGA O DE CITA]",
+    "formas_de_pago": "[TRANSFERENCIA, TARJETA, RECIBO, SENAL DEL X POR CIENTO]",
+    "preguntas_que_mas_me_repiten": "[PEGA AQUI 8 O 12 PREGUNTAS REALES DE TUS CLIENTES]"
+  },
+  "pasos": [
+    "Agrupar las preguntas en familias: precio, disponibilidad, alcance del servicio, plazos, garantia y postventa, cancelaciones, facturacion",
+    "Escribir una respuesta tipo por familia, con huecos entre corchetes para lo que cambia en cada caso",
+    "Hacer dos longitudes de cada una: version correo y version mensaje corto de WhatsApp",
+    "Anadir a cada respuesta una pregunta final que haga avanzar la conversacion"
+  ],
+  "restricciones": [
+    "No inventar precios, garantias ni plazos: usar solo los del contexto o dejar el hueco entre corchetes",
+    "Version correo maximo 120 palabras, version WhatsApp maximo 45 palabras",
+    "Tuteo, espanol de Espana, sin tecnicismos ni palabras de relleno",
+    "Nada de emojis en la version de correo"
+  ],
+  "formato_salida": {
+    "tipo": "lista numerada de fichas",
+    "cada_ficha": ["Nombre corto de la plantilla", "Cuando usarla", "Asunto sugerido", "Version correo", "Version WhatsApp", "Que rellenar antes de enviar"],
+    "al_final": "Tabla resumen con el nombre de cada plantilla y la pregunta que responde"
+  },
+  "criterios_calidad": [
+    "Ninguna plantilla se solapa con otra",
+    "Cada plantilla se personaliza cambiando como mucho tres datos",
+    "Todas terminan proponiendo un siguiente paso concreto"
+  ],
+  "tono": "cercano, claro y profesional"
+}

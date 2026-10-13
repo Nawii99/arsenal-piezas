@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar una prueba de carga de [NOMBRE DE TU WEB O API] y entregar el guion listo para ejecutar",
+  "contexto": {
+    "sistema": "[QUÉ SE PRUEBA Y PARA QUÉ SIRVE]",
+    "entorno": "[ENTORNO DE PRUEBAS O PRODUCCIÓN CON CUIDADO]",
+    "herramienta": "[K6, ARTILLERY, JMETER O LA QUE PREFIERAS]"
+  },
+  "entradas": {
+    "flujo_usuario": "[PASOS QUE HACE UN USUARIO TÍPICO, EJEMPLO: ENTRA, BUSCA, VE PRODUCTO, AÑADE AL CARRITO]",
+    "rutas": ["[RUTA 1 Y MÉTODO]", "[RUTA 2 Y MÉTODO]"],
+    "carga_objetivo": "[USUARIOS SIMULTÁNEOS O PETICIONES POR SEGUNDO A ALCANZAR]",
+    "limites_aceptables": "[TIEMPO DE RESPUESTA MÁXIMO Y PORCENTAJE DE ERRORES TOLERADO]",
+    "datos_de_prueba": "[USUARIOS O PRODUCTOS FALSOS DISPONIBLES]"
+  },
+  "metodo": [
+    "Define tres pruebas distintas: carga sostenida esperada, subida progresiva hasta romper, y pico repentino",
+    "Modela usuarios que piensan: incluye pausas entre pasos y proporción realista entre navegar y comprar",
+    "Usa datos variados por usuario para no falsear el resultado cacheando siempre lo mismo",
+    "Fija los criterios de aprobado antes de ejecutar, en percentil 95 y no en media",
+    "Indica qué vigilar en el servidor durante la prueba: CPU, memoria, conexiones a base de datos y errores",
+    "Avisa de los errores típicos: probar desde un solo ordenador, medir con caché caliente, y olvidarse de limpiar los datos creados"
+  ],
+  "restricciones": [
+    "No generar carga contra servicios de terceros ni pasarelas de pago reales",
+    "La prueba completa no debe durar más de [MINUTOS DISPONIBLES] minutos",
+    "Nada de dependencias de pago para ejecutarla"
+  ],
+  "formato_salida": {
+    "tipo": "plan + código",
+    "partes": ["Objetivo y criterios de aprobado", "Escenarios con su curva de carga", "Guion completo comentado en la herramienta indicada", "Comandos para ejecutarlo", "Cómo leer los resultados", "Plantilla de informe de resultados"]
+  },
+  "criterios_calidad": [
+    "El guion se puede ejecutar copiando y pegando, solo cambiando la dirección web",
+    "Los criterios de aprobado son números, no adjetivos",
+    "Incluye una sección de qué hacer si la prueba falla y por dónde mirar"
+  ],
+  "tono": "guía paso a paso para alguien que no ha hecho pruebas de carga nunca"
+}

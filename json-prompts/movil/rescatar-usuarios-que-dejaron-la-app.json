@@ -1,0 +1,49 @@
+{
+  "tarea": "Construir una campaña de recuperación de usuarios inactivos de una app, segmentada por lo que hicieron antes de irse, con mensajes por cada canal disponible",
+  "contexto": {
+    "app": "[NOMBRE Y ACCIÓN VALIOSA]",
+    "inactivo": "[A PARTIR DE CUÁNTOS DÍAS SIN ABRIR CONSIDERAS QUE SE FUE]",
+    "canales": "[PUSH / CORREO / WHATSAPP / SMS: MARCA LOS QUE TIENES Y CON CONSENTIMIENTO]",
+    "datos_disponibles": "[QUÉ SABES DE CADA USUARIO: FECHA DE ALTA, ÚLTIMA ACCIÓN, SI PAGÓ]",
+    "novedades": "[QUÉ HA CAMBIADO EN LA APP DESDE QUE SE FUERON]",
+    "incentivo_posible": "[QUÉ PUEDES OFRECER SIN PERDER DINERO]"
+  },
+  "segmentos": [
+    "Instaló y nunca completó el primer resultado",
+    "Lo usó unos días y lo dejó sin llegar a la rutina",
+    "Usuario habitual que dejó de entrar de golpe",
+    "Pagó y canceló",
+    "Se fue tras un fallo o una mala experiencia identificada"
+  ],
+  "metodo": [
+    "1. Sacar la lista de cada segmento con su tamaño: sin volumen no merece la pena montar la secuencia",
+    "2. Escribir la hipótesis de por qué se fue cada segmento en una frase",
+    "3. Diseñar 3 impactos por segmento repartidos en 14 días, no más",
+    "4. Dar en el primer impacto un motivo nuevo y concreto, no un te echamos de menos",
+    "5. Llevar cada mensaje a la pantalla exacta donde se resuelve lo que le frenó",
+    "6. Reservar el incentivo para el tercer impacto y solo en los segmentos donde el precio era el freno",
+    "7. Definir la baja: quien no reacciona a los 3 impactos queda excluido durante 90 días",
+    "8. Medir por segmento cuántos vuelven a abrir y cuántos repiten la acción valiosa a la semana siguiente"
+  ],
+  "errores_a_evitar": [
+    "Enviar el mismo mensaje a todos los inactivos",
+    "Escribir por correo a quien no dio consentimiento o usar WhatsApp sin permiso previo",
+    "Regalar descuento a quien se fue por un fallo sin haberlo arreglado",
+    "Insistir más de tres veces",
+    "Traer de vuelta a la pantalla de inicio y que se pierda otra vez"
+  ],
+  "formato_salida": {
+    "tabla_segmentos": "Segmento, tamaño, hipótesis de abandono, canal, oferta o motivo, pantalla de destino",
+    "secuencias": "Por segmento: día, canal, asunto o título, cuerpo exacto, enlace de destino",
+    "reglas_de_parada": "Condiciones que cancelan los siguientes impactos",
+    "medicion": "Tabla para anotar enviados, abiertos, vueltos y que repitieron la acción valiosa",
+    "decision": "Qué resultado hace que repitas la campaña y cuál la descarta"
+  },
+  "criterios_calidad": [
+    "Cada segmento tiene mensajes distintos y motivo propio",
+    "Ningún mensaje empieza con te echamos de menos",
+    "Todos los enlaces llevan a una pantalla concreta",
+    "El plan respeta los consentimientos de cada canal",
+    "Hay un límite claro de impactos y una fecha de exclusión"
+  ]
+}

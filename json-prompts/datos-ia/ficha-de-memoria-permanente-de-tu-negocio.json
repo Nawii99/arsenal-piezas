@@ -1,0 +1,33 @@
+{
+  "tarea": "Redactar la ficha de memoria permanente de un negocio: el bloque de contexto estable que se carga en la IA una vez y sirve para todas las conversaciones",
+  "entradas": {
+    "empresa": "[NOMBRE, ACTIVIDAD, AÑOS, ZONA, TAMAÑO]",
+    "cliente_ideal": "[A QUIÉN VENDES Y QUÉ LE PREOCUPA]",
+    "oferta": "[SERVICIOS O PRODUCTOS CON PRECIO O HORQUILLA]",
+    "diferencia": "[POR QUÉ TE ELIGEN A TI Y NO AL DE AL LADO]",
+    "tono": "[CERCANO / TÉCNICO / SERIO], TUTEO O USTED",
+    "prohibiciones": "[PALABRAS, PROMESAS Y TEMAS QUE NO QUIERES VER]"
+  },
+  "procedimiento": [
+    "Separa lo estable (identidad, tono, reglas) de lo que caduca (precios, promociones) y marca esto último con fecha de revisión.",
+    "Resume cada bloque en frases cortas y afirmativas, listas para que la IA las aplique sin interpretarlas.",
+    "Convierte las prohibiciones en reglas verificables, no en deseos vagos.",
+    "Añade tres ejemplos breves de frases que suenan a la marca y tres que no.",
+    "Cierra con las preguntas que la IA debe hacer cuando le falte un dato en vez de inventarlo."
+  ],
+  "formato_salida": {
+    "tipo": "bloque de texto listo para copiar y pegar en instrucciones personalizadas",
+    "secciones": ["Quiénes somos", "A quién servimos", "Qué vendemos y a qué precio", "Cómo hablamos", "Qué no hacemos nunca", "Datos que caducan y cuándo revisarlos", "Qué preguntar si falta información"],
+    "longitud": "entre 350 y 600 palabras, sin florituras"
+  },
+  "restricciones": [
+    "No inventes datos del negocio: lo que no esté en las entradas se marca como [PENDIENTE]",
+    "Nada de adjetivos publicitarios vacíos como líder o innovador",
+    "Ningún dato personal de clientes concretos"
+  ],
+  "criterios_calidad": [
+    "Otra persona podría usar la ficha y obtener textos con el mismo tono",
+    "Cada regla se puede comprobar leyendo el resultado",
+    "Se distingue de un vistazo qué hay que actualizar cada mes"
+  ]
+}

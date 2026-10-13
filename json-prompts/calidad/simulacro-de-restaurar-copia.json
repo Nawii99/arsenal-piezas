@@ -1,0 +1,49 @@
+{
+  "tarea": "Preparar y ejecutar un simulacro de recuperación: restaurar una copia de seguridad en un sitio de pruebas y medir qué se recupera, en cuánto tiempo y qué falta.",
+  "contexto": {
+    "que_hay_que_proteger": "[WEB, TIENDA, LISTA DE CLIENTES, FACTURAS, FOTOS, PLANTILLAS, PROMPTS]",
+    "donde_vive_cada_cosa": "[HOSTING, SHOPIFY, DRIVE, EL PORTÁTIL, EL MÓVIL, LA HERRAMIENTA X]",
+    "copias_actuales": "[QUÉ COPIAS CREES QUE TIENES Y QUIÉN LAS HACE]",
+    "cuanto_puedes_estar_parado": "[HORAS QUE AGUANTAS SIN VENDER]"
+  },
+  "entradas": {
+    "herramientas_de_copia": "[PLUGIN, PANEL DEL HOSTING, EXPORTACIÓN MANUAL, NINGUNA]",
+    "ultima_copia_conocida": "[FECHA]"
+  },
+  "metodo": [
+    "1. Haz el inventario: lista todo lo que, si desaparece hoy, te impide facturar mañana.",
+    "2. Para cada elemento anota quién hace la copia, cada cuánto, dónde se guarda y quién sabe el acceso.",
+    "3. Marca los huecos: lo que solo existe en un sitio o solo lo sabe una persona.",
+    "4. Elige el elemento más crítico y restáuralo en un sitio de pruebas o en una carpeta aparte, nunca encima del original.",
+    "5. Cronometra desde que empiezas hasta que puedes usarlo de verdad.",
+    "6. Comprueba el contenido restaurado con tres pruebas: entra un usuario, aparece un pedido reciente y funciona el formulario o el cobro.",
+    "7. Anota lo que no estaba en la copia: contraseñas, dominios, integraciones, pasarela de pago, correos configurados.",
+    "8. Escribe la ficha de emergencia de una página: qué hacer, en qué orden y a quién llamar.",
+    "9. Fija la periodicidad y una fecha para repetir el simulacro."
+  ],
+  "errores_tipicos": [
+    "Tener copias que nadie ha abierto nunca.",
+    "Guardar la copia en el mismo sitio que el original.",
+    "Copiar los archivos pero no la base de datos, o al revés.",
+    "Depender de una cuenta personal que no controla el negocio.",
+    "No tener apuntado el registrador del dominio."
+  ],
+  "restricciones": [
+    "Nunca restaurar encima del sitio en producción durante el simulacro.",
+    "No pedir contraseñas en el chat; indica dónde apuntarlas en un gestor."
+  ],
+  "formato_salida": {
+    "inventario": "Tabla: elemento, dónde vive, copia sí/no, frecuencia, quién accede, riesgo",
+    "acta_del_simulacro": "Qué se restauró, minutos empleados, qué falló, qué faltaba",
+    "huecos": "Lista de agujeros ordenados por gravedad, con el arreglo",
+    "ficha_de_emergencia": "Una página con los pasos de recuperación en orden",
+    "calendario": "Qué se copia, cada cuánto y cuándo se repite el simulacro"
+  },
+  "criterios_calidad": [
+    "El tiempo de recuperación está medido y comparado con lo que aguanta el negocio.",
+    "La ficha de emergencia la puede seguir alguien que no sea tú.",
+    "Cada elemento crítico tiene copia en un sitio distinto al original.",
+    "Quedan identificados los accesos que no estaban en ninguna copia."
+  ],
+  "si_falta_informacion": "Empieza por el inventario aunque no sepas si hay copias; la ausencia de copia también es un resultado."
+}

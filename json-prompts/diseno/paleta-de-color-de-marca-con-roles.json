@@ -1,0 +1,36 @@
+{
+  "tarea": "Construir la paleta de color completa de una marca a partir de un color base, asignando un rol a cada color",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "color_base": "[CODIGO HEX, POR EJEMPLO #1F6FEB]",
+    "sector": "[SECTOR]",
+    "sensacion": "[CONFIANZA, ENERGIA, CALMA, LUJO, CERCANIA]",
+    "competencia": "[COLORES QUE YA USAN TUS COMPETIDORES, SI LOS SABES]",
+    "soportes": "[WEB, REDES, IMPRESION]"
+  },
+  "proceso": [
+    "Analiza el color base (tono, saturacion, luminosidad) y di que transmite hoy",
+    "Define los roles: primario, primario oscuro para pulsar, secundario, acento de llamada a la accion, neutro oscuro de texto, 4 grises y fondo",
+    "Genera una rampa de 9 tonos del color primario, del mas claro al mas oscuro",
+    "Elige un acento que contraste de verdad con el primario y reservalo solo para botones",
+    "Comprueba el contraste de texto sobre cada fondo y marca cual no vale para texto",
+    "Propon la proporcion de uso aproximada 60 30 10"
+  ],
+  "restricciones": [
+    "Maximo 2 colores de marca mas un acento; el resto son neutros",
+    "El acento no puede ser el color mas usado de la pagina",
+    "Evita colores que choquen frontalmente con el lider del sector",
+    "Nada de degradados como sustituto de una paleta"
+  ],
+  "formato_salida": {
+    "tipo": "ficha de paleta",
+    "columnas": ["Nombre del color", "Rol", "HEX", "RGB", "Sirve para texto", "Cuando usarlo", "Cuando no usarlo"],
+    "extra": ["Rampa de 9 tonos con HEX", "Proporcion de uso", "Dos combinaciones prohibidas y por que"]
+  },
+  "criterios_calidad": [
+    "Todo color tiene un rol; ninguno esta por decoracion",
+    "Los HEX son exactos y coherentes entre si",
+    "Se puede montar una pagina entera solo con esta paleta"
+  ],
+  "tono": "Claro y aplicable; explica el porque en una linea, no en un parrafo"
+}

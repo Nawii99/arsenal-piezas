@@ -1,0 +1,44 @@
+{
+  "tarea": "Analizar una reclamación recibida (burofax, carta de abogado, requerimiento o queja formal) y devolver un informe de situación con plan de respuesta",
+  "entradas": {
+    "texto_recibido": "[PEGA AQUÍ EL TEXTO COMPLETO DE LA RECLAMACIÓN]",
+    "fecha_recepcion": "[DD/MM/AAAA]",
+    "quien_reclama": "[CLIENTE, PROVEEDOR, EXEMPLEADO, ARRENDADOR, ABOGADO DE UN TERCERO]",
+    "tu_version": "[QUÉ PASÓ SEGÚN TÚ, CON FECHAS]",
+    "documentos_que_tienes": "[CONTRATOS, FACTURAS, CORREOS, ALBARANES, PARTES]",
+    "importe_en_juego": "[CANTIDAD QUE TE RECLAMAN]"
+  },
+  "analisis": [
+    "Extraer qué se te pide exactamente, en una frase",
+    "Extraer el plazo que te dan y calcular la fecha límite desde la recepción",
+    "Listar los hechos que afirman y marcar cuáles puedes desmentir con documento",
+    "Detectar si es un requerimiento previo a una demanda o solo una queja comercial",
+    "Valorar el riesgo en alto, medio o bajo, y explicar por qué en dos líneas",
+    "Señalar qué documentos te faltan y deberías buscar hoy"
+  ],
+  "opciones_de_respuesta": [
+    "Aceptar y negociar importe o forma de pago",
+    "Responder rebatiendo con pruebas",
+    "Pedir más información y ganar tiempo sin admitir nada",
+    "Derivar a abogado o al seguro de responsabilidad civil"
+  ],
+  "restricciones": [
+    "No afirmar que algo ha prescrito ni dar plazos legales concretos: recomendar verificarlo con un abogado",
+    "No redactar reconocimientos de deuda ni admisiones de culpa",
+    "Avisar expresamente si el plazo indicado vence en menos de 7 días",
+    "Lenguaje llano, sin jerga jurídica"
+  ],
+  "formato_salida": {
+    "1_resumen": "cinco líneas: quién, qué pide, cuánto, plazo y riesgo",
+    "2_tabla_hechos": "lo que afirman, tu versión y la prueba que lo sostiene",
+    "3_recomendacion": "la opción aconsejada y por qué",
+    "4_borrador": "respuesta prudente lista para revisar con tu abogado",
+    "5_no_hagas": "tres errores que no debes cometer en esta situación"
+  },
+  "criterios_calidad": [
+    "La fecha límite aparece calculada y destacada",
+    "El borrador no admite ningún hecho no confirmado por el usuario",
+    "Queda claro si esto necesita abogado y con qué urgencia"
+  ],
+  "aviso_legal": "Análisis orientativo, no es asesoramiento jurídico; ante un requerimiento formal acude a un abogado antes de responder"
+}

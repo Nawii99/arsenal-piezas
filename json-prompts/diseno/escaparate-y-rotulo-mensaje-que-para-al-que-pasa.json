@@ -1,0 +1,37 @@
+{
+  "tarea": "Definir el mensaje, la jerarquía y la disposición de la cartelería exterior de un local: rótulo, vinilos de escaparate y cartel de puerta",
+  "local": {
+    "negocio": "[TIPO DE NEGOCIO Y NOMBRE]",
+    "calle": "[CALLE Y SI ES DE PASO A PIE O EN COCHE]",
+    "escaparate": "[ANCHO Y ALTO APROXIMADOS EN METROS]",
+    "rotulo": "[ANCHO Y ALTO DEL RÓTULO]",
+    "quiero_que_sepan": "[LO PRINCIPAL QUE DEBE ENTENDER QUIEN PASA]",
+    "marca": "[COLORES Y TIPOGRAFÍA SI LAS TIENES]"
+  },
+  "criterio_de_lectura": "Regla práctica: 1 cm de altura de letra por cada metro de distancia de lectura, y algo más si se lee desde un coche",
+  "metodo": [
+    "Separa los tres mensajes: quién eres (rótulo), qué resuelves (escaparate) y qué hacer ahora (puerta)",
+    "Propón el descriptor de 2 a 4 palabras que acompaña al nombre en el rótulo",
+    "Calcula la altura mínima de letra para cada soporte según la distancia de lectura",
+    "Reparte el escaparate: zona libre para ver el interior y zona de vinilo, sin tapar la luz",
+    "Define el cartel de puerta con horario, medios de pago, wifi, idiomas y accesos",
+    "Añade una zona reservada para el cartel de campaña que cambiarás cada temporada"
+  ],
+  "errores_a_evitar": [
+    "Tapar todo el cristal y que el local parezca cerrado",
+    "Poner la web o el Instagram más grandes que lo que vendes",
+    "Letra fina o cursiva a tamaño pequeño en el exterior",
+    "Mensajes distintos y descoordinados en rótulo, cristal y puerta"
+  ],
+  "formato_salida": {
+    "tabla_soportes": "Tabla con soporte, texto exacto, altura de letra en cm y distancia de lectura",
+    "esquema_escaparate": "Descripción por zonas de izquierda a derecha y de arriba abajo",
+    "paleta": "Colores con HEX y su equivalente aproximado en vinilo",
+    "peticion_al_rotulista": "Párrafo listo para pegar en el email de presupuesto"
+  },
+  "criterios_calidad": [
+    "Alguien que no conoce el negocio entiende qué se vende desde la acera de enfrente",
+    "El escaparate deja ver el interior al menos en la mitad de su superficie",
+    "Todos los soportes usan la misma tipografía y los mismos dos colores"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "tarea": "Definir el cuadro de mando semanal de [NOMBRE DEL CENTRO] con seis indicadores, su origen y su umbral de alarma",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CLÍNICA O CENTRO]",
+    "tamaño": "[PROFESIONALES, SALAS Y PERSONAL DE RECEPCIÓN]",
+    "herramientas": "[SOFTWARE DE AGENDA, TPV, HOJA DE CÁLCULO]",
+    "quien_lo_rellena": "[PERSONA Y DÍA DE LA SEMANA]"
+  },
+  "entradas": {
+    "datos_disponibles": "[QUÉ PUEDES EXPORTAR HOY SIN PELEARTE CON EL PROGRAMA]",
+    "objetivo_del_trimestre": "[EJ. LLENAR LAS MAÑANAS, SUBIR EL TICKET MEDIO, BAJAR FALTAS]",
+    "historico": "[DATOS DE LOS ÚLTIMOS 3 MESES SI LOS TIENES]"
+  },
+  "pasos": [
+    "1. Elige seis indicadores y solo seis: ocupación de agenda, primeras visitas nuevas, porcentaje de faltas, ticket medio, sesiones por paciente hasta el alta y origen de los pacientes nuevos.",
+    "2. Para cada uno escribe la definición exacta y de dónde sale el dato, incluido el nombre del informe o la columna.",
+    "3. Fija el valor de partida de cada indicador con los datos históricos; si no hay histórico, marca las dos primeras semanas como medición base.",
+    "4. Pon a cada indicador un umbral verde, uno ámbar y uno rojo con números concretos.",
+    "5. Escribe la acción concreta que se dispara en rojo: quién la hace y en qué plazo. Un indicador sin acción sobra.",
+    "6. Diseña la hoja de cálculo: una fila por semana, una columna por indicador y una columna de notas de contexto como festivos o bajas.",
+    "7. Escribe el guion de la reunión de quince minutos del lunes: se leen los seis números, se comentan solo los ámbar y rojos y se sale con dos acciones.",
+    "8. Añade el bloque mensual: ingresos, gastos y margen para cruzarlo con la ocupación."
+  ],
+  "restricciones": [
+    "No se apunta ningún dato clínico ni identificable de pacientes: solo agregados del negocio.",
+    "Si un indicador cuesta más de cinco minutos de recopilar cada semana, se sustituye por otro más fácil.",
+    "No se comparan semanas con festivos sin marcarlo en la columna de notas."
+  ],
+  "formato_salida": {
+    "1_ficha_de_indicadores": "Nombre, definición, fórmula, origen del dato y frecuencia",
+    "2_umbrales": "Tabla con verde, ámbar y rojo por indicador",
+    "3_acciones": "Qué se hace en rojo, quién y cuándo",
+    "4_plantilla": "Cabecera exacta de la hoja de cálculo y una fila de ejemplo",
+    "5_guion_reunion": "Los quince minutos del lunes, minuto a minuto"
+  },
+  "criterios_calidad": [
+    "Los seis números se pueden rellenar en menos de veinte minutos.",
+    "Cada indicador tiene un dueño y una acción asociada.",
+    "Un mes después se puede ver la tendencia de un vistazo.",
+    "Ninguna casilla depende de una interpretación personal."
+  ],
+  "errores_tipicos": [
+    "Medir quince cosas y no mirar ninguna al mes siguiente.",
+    "Mezclar facturación con cobro y no cuadrar con el banco.",
+    "No anotar los festivos y creer que ha bajado la demanda.",
+    "Guardar la hoja en el ordenador de una sola persona."
+  ]
+}

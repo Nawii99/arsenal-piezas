@@ -1,0 +1,38 @@
+{
+  "tarea": "Escribir el protocolo de incidencias de mi negocio: qué hacer, quién decide y qué se le dice al cliente cuando algo sale mal",
+  "rol": "Responsable de atención al cliente y calidad en un negocio pequeño",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "canales_de_contacto": "[TELÉFONO, WHATSAPP, EMAIL, RESEÑAS, PRESENCIAL]",
+    "quien_atiende": "[QUIÉN RECIBE LAS QUEJAS HABITUALMENTE]",
+    "quien_decide": "[QUIÉN PUEDE APROBAR UNA COMPENSACIÓN]"
+  },
+  "entradas": {
+    "incidencias_habituales": "[LISTA LOS PROBLEMAS QUE MÁS OS PASAN]",
+    "limite_compensacion": "[HASTA CUÁNTO SE PUEDE COMPENSAR SIN CONSULTARTE]",
+    "promesas_al_cliente": "[PLAZOS, GARANTÍAS O CONDICIONES QUE PROMETES]"
+  },
+  "instrucciones": [
+    "Clasifica las incidencias en tres niveles: molestia leve, fallo que afecta al servicio y fallo grave con pérdida de dinero o riesgo legal",
+    "Para cada nivel define plazo máximo de respuesta, quién responde, quién decide y a quién se avisa internamente",
+    "Escribe la respuesta lista para copiar en cada nivel: reconocer, explicar sin excusas, decir qué se hace y cuándo",
+    "Fija la escala de compensación por nivel, con el límite que puede aplicar cada persona sin consultar",
+    "Añade qué NO se debe decir nunca al cliente y por qué",
+    "Incluye el registro de incidencias: qué campos anotar para poder revisar el patrón cada mes",
+    "Cierra con el paso de revisión: cómo se busca la causa real para que no se repita"
+  ],
+  "restricciones": [
+    "No des consejo legal ni cites normativa concreta: si el caso pinta legal, indica que hay que consultar a un profesional",
+    "Respuestas al cliente breves, sin excusas largas y sin culpar a nadie del equipo",
+    "Máximo tres niveles de incidencia"
+  ],
+  "formato_salida": {
+    "tipo": "protocolo en markdown para colgar o compartir con el equipo",
+    "secciones": ["Niveles de incidencia", "Tabla de quién responde y en cuánto tiempo", "Respuestas listas para copiar", "Escala de compensación", "Lo que nunca se dice", "Registro de incidencias", "Revisión mensual de causas"]
+  },
+  "criterios_calidad": [
+    "Cualquiera del equipo sabría qué hacer sin llamarte",
+    "Cada nivel tiene un plazo de respuesta concreto",
+    "La compensación está acotada por escrito"
+  ]
+}

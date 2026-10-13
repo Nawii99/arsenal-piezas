@@ -1,0 +1,31 @@
+{
+  "tarea": "Disenar una politica de gestion del excedente de tesoreria de una empresa pequena, por tramos y con reglas escritas",
+  "situacion": {
+    "saldo_actual_en_cuentas": "[EUROS]",
+    "gastos_fijos_mensuales": "[EUROS]",
+    "variabilidad_de_los_ingresos": "[ESTABLES / ESTACIONALES / IRREGULARES]",
+    "pagos_grandes_previstos": "[IMPUESTOS, PAGAS, INVERSIONES CON IMPORTE Y MES]",
+    "deuda_viva_y_tipo_de_interes": "[EUROS Y PORCENTAJE]",
+    "horizonte": "[CUANTOS MESES PUEDES NO TOCAR PARTE DEL DINERO]",
+    "tolerancia_al_riesgo": "[NINGUNA / BAJA / MEDIA]"
+  },
+  "estructura_de_la_politica": [
+    "Tramo 1 colchon operativo: cuantos meses de gastos fijos dejar siempre disponibles y por que",
+    "Tramo 2 dinero comprometido: importes reservados para impuestos e inversiones ya decididas, con su fecha",
+    "Tramo 3 excedente real: lo que sobra de verdad y durante cuanto tiempo",
+    "Reglas de decision para el excedente, incluyendo amortizar deuda cara como primera opcion",
+    "Reglas de reposicion: cuando y como se rellena el colchon si se usa",
+    "Revision: cada cuanto se repasa la politica y con que indicadores"
+  ],
+  "criterios_para_el_excedente": ["Cuanto tardas en recuperar el dinero si lo necesitas", "Si el capital puede perder valor y cuanto", "Coste y comisiones", "Fiscalidad en una sociedad frente a sacarlo a lo personal", "Complejidad administrativa"],
+  "restricciones": [
+    "No recomendar productos financieros concretos ni marcas ni entidades",
+    "No prometer rentabilidades ni dar por segura ninguna cifra",
+    "Priorizar siempre la liquidez del negocio sobre la rentabilidad",
+    "Recordar que cancelar deuda con interes alto suele ser la opcion mas segura",
+    "Advertir de la diferencia entre dinero de la empresa y dinero personal del socio"
+  ],
+  "formato_salida": "Documento de politica en una pagina con los tres tramos y sus importes calculados, una tabla de reglas si pasa esto haz esto, y un calendario de revisiones",
+  "criterios_calidad": ["Los tres tramos suman el saldo actual", "Las reglas son ejecutables sin pensar", "Queda claro el importe minimo que nunca se toca"],
+  "tono": "Prudente y concreto, tuteando"
+}

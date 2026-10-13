@@ -1,0 +1,34 @@
+{
+  "tarea": "Adaptar un mismo contenido a cinco canales respetando el formato nativo de cada uno, sin repetir las mismas frases",
+  "entradas": {
+    "contenido_base": "[PEGA AQUÍ EL TEXTO, GUION O TRANSCRIPCIÓN]",
+    "marca": "[NOMBRE DE TU MARCA]",
+    "publico": "[A QUIÉN LE HABLAS]",
+    "llamada_a_la_accion": "[QUÉ QUIERES QUE HAGAN]",
+    "enlace": "[URL SI LA HAY]"
+  },
+  "reglas_por_canal": {
+    "linkedin": "120-200 palabras, primera línea como gancho antes del ver más, una idea por párrafo, cierre con pregunta, sin hashtags decorativos",
+    "instagram": "Pie de 80-150 palabras, tono cercano, emojis solo si aportan, 5 hashtags reales del nicho, idea visual descrita en una frase",
+    "x": "Hilo de 5 a 7 tuits de máximo 270 caracteres, el primero autoconclusivo, sin numeración artificial",
+    "tiktok_reel": "Guion de 30-45 segundos con gancho en los 3 primeros segundos, texto en pantalla y cierre con CTA hablado",
+    "newsletter": "Asunto de máximo 45 caracteres, entradilla de 2 líneas y cuerpo de 250 palabras con un solo enlace"
+  },
+  "proceso": [
+    "1. Identificar la idea central y las 3 pruebas o ejemplos que la sostienen",
+    "2. Elegir para cada canal un ángulo distinto de esa idea, no un resumen del anterior",
+    "3. Escribir cada versión con su formato nativo",
+    "4. Comprobar que ninguna frase se repite literalmente entre canales"
+  ],
+  "restricciones": [
+    "No inventar datos que no estén en el contenido base",
+    "Nada de frases tipo enlace en bio ni desliza para más si no aplica",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": "Cinco bloques titulados con el nombre del canal, cada uno con su texto listo para publicar y una línea final con el mejor momento de la semana para publicarlo",
+  "criterios_calidad": [
+    "Cada versión funciona por separado sin haber leído las demás",
+    "Ninguna supera el límite de formato indicado",
+    "El gancho de cada canal es distinto"
+  ]
+}

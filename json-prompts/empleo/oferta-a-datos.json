@@ -1,0 +1,85 @@
+{
+  "tarea": "Convertir el texto de una oferta de trabajo espanola en datos: que piden de verdad, que es adorno, que tecnologias, que sueldo y que senales de alarma.",
+  "idioma_salida": "es-ES",
+  "entrada": {
+    "texto_oferta": "[PEGA AQUI EL ANUNCIO ENTERO, TAL CUAL, SIN RESUMIR NI TRADUCIR]",
+    "portal": "[INFOJOBS | LINKEDIN | TECNOEMPLEO | MANFRED | WEB DE LA EMPRESA | OTRO]",
+    "fecha_de_lectura": "[AAAA-MM-DD]",
+    "mi_perfil_en_una_linea": "[QUE SABES HACER HOY Y DESDE CUANDO]"
+  },
+  "reglas": [
+    "Trabaja solo con lo que pone el anuncio. Si un dato no aparece, es null.",
+    "No rellenes huecos con lo que se suele pedir en puestos parecidos.",
+    "Cada clasificacion lleva la frase literal del anuncio que la justifica.",
+    "Sueldos en euros brutos anuales. Si el anuncio da mensual, convierte y di cuantas pagas has supuesto.",
+    "No juzgues si el candidato encaja ni redactes curriculum: aqui solo se extraen datos."
+  ],
+  "como_clasificar": {
+    "obligatorio": {
+      "definicion": "Sin esto te descartan en el primer filtro.",
+      "pistas": ["imprescindible", "requisito minimo", "se requiere", "es necesario", "no se valoraran perfiles sin"]
+    },
+    "deseable": {
+      "definicion": "Suma puntos, pero no descarta.",
+      "pistas": ["se valorara", "deseable", "plus", "nice to have", "idealmente"]
+    },
+    "adorno": {
+      "definicion": "Frases que no se pueden demostrar ni preparar.",
+      "pistas": ["pasion por la tecnologia", "mentalidad de crecimiento", "somos una familia", "ambiente joven y dinamico"]
+    }
+  },
+  "salida": {
+    "formato": "un unico objeto JSON, sin texto alrededor",
+    "esquema": {
+      "puesto": {
+        "titulo": "string",
+        "empresa": "string o null",
+        "modalidad": "presencial | hibrido | remoto | null",
+        "ubicacion": "string o null",
+        "dias_de_oficina": "numero o null"
+      },
+      "contrato": {
+        "tipo": "indefinido | temporal | practicas | beca | autonomo | null",
+        "periodo_de_prueba": "string o null",
+        "jornada": "string o null"
+      },
+      "sueldo": {
+        "aparece": "boolean",
+        "minimo_bruto_anual": "numero o null",
+        "maximo_bruto_anual": "numero o null",
+        "pagas_supuestas": "numero o null",
+        "variable": "string o null",
+        "cita_literal": "string o null"
+      },
+      "requisitos_obligatorios": [
+        {
+          "requisito": "string",
+          "cita_literal": "string",
+          "anios_pedidos": "numero o null",
+          "como_demostrarlo": "certificado | proyecto propio | trabajo anterior | prueba tecnica | no se puede"
+        }
+      ],
+      "requisitos_deseables": [
+        {"requisito": "string", "cita_literal": "string"}
+      ],
+      "adorno": ["frase del anuncio que no aporta informacion"],
+      "tecnologias": [
+        {
+          "nombre": "string",
+          "peso": "central | secundaria | mencionada de pasada",
+          "cita_literal": "string"
+        }
+      ],
+      "senales_de_alarma": [
+        {
+          "senal": "string",
+          "cita_literal": "string",
+          "gravedad": "baja | media | alta",
+          "que_preguntar_en_la_entrevista": "string"
+        }
+      ],
+      "no_dicho": ["dato importante que el anuncio no menciona"],
+      "palabras_para_el_curriculum": ["termino literal del anuncio que conviene repetir en tu curriculum, solo si es verdad en tu caso"]
+    }
+  }
+}

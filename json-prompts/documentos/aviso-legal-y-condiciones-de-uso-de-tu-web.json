@@ -1,0 +1,40 @@
+{
+  "tarea": "Redactar el aviso legal y las condiciones generales de uso de una web de servicios en España, listos para copiar y publicar",
+  "contexto": {
+    "titular": "[NOMBRE O RAZÓN SOCIAL]",
+    "nif": "[NIF O CIF]",
+    "domicilio": "[DIRECCIÓN FISCAL COMPLETA]",
+    "email_contacto": "[EMAIL DE CONTACTO]",
+    "dominio": "[WWW.TUDOMINIO.COM]",
+    "actividad": "[QUÉ VENDES O QUÉ SERVICIO PRESTAS]",
+    "registro_o_colegio": "[REGISTRO MERCANTIL, COLEGIO PROFESIONAL O 'NO APLICA']",
+    "hay_venta_online": "[SÍ / NO]",
+    "hay_area_de_usuario": "[SÍ / NO]"
+  },
+  "marco_legal": ["LSSI-CE 34/2002 art. 10", "Reglamento (UE) 2016/679", "LOPDGDD 3/2018", "Ley 7/1998 de condiciones generales", "RDL 1/2007 de consumidores"],
+  "instrucciones": [
+    "Empieza por los datos identificativos del art. 10 LSSI: titular, NIF, domicilio, email, dominio y registro si aplica",
+    "Sigue con objeto y ámbito, condiciones de acceso y registro, obligaciones del usuario y usos prohibidos",
+    "Incluye propiedad intelectual, enlaces a terceros y una exención de responsabilidad realista, sin cláusulas abusivas",
+    "Añade cláusula de modificación de las condiciones con aviso previo y fecha de última actualización",
+    "Cierra con ley aplicable española y fuero: si el usuario es consumidor, el de su domicilio; si es empresa, [CIUDAD]",
+    "Marca con la palabra AVISO cualquier punto donde falte información o convenga que lo revise un abogado"
+  ],
+  "restricciones": [
+    "Español de España, frases cortas, tratando de usted al usuario dentro del documento",
+    "Prohibido copiar textos de otras webs o inventar números de registro",
+    "Nada de cláusulas que excluyan derechos irrenunciables del consumidor",
+    "Si falta un dato, deja el corchete visible en vez de inventarlo"
+  ],
+  "formato_salida": {
+    "tipo": "documento con secciones numeradas del 1 al N y titulares en negrita",
+    "extension_orientativa": "entre 1200 y 2000 palabras",
+    "extras": ["lista final de datos pendientes de rellenar", "nota de que no sustituye asesoramiento jurídico"]
+  },
+  "criterios_calidad": [
+    "Contiene todos los datos obligatorios del art. 10 LSSI",
+    "Ninguna cláusula limita la responsabilidad por dolo o negligencia grave",
+    "Todos los corchetes pendientes aparecen listados al final",
+    "Se puede publicar sin reescribir la redacción"
+  ]
+}

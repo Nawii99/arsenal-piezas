@@ -1,0 +1,52 @@
+{
+  "tarea": "Auditar el consumo electrico de un local con enchufes medidores y devolver un plan de ahorro con numeros",
+  "contexto": {
+    "negocio": "[NOMBRE Y TIPO DE NEGOCIO]",
+    "superficie_y_horario": "[M2], abierto de [HORA INICIO] a [HORA FIN], [DIAS A LA SEMANA]",
+    "factura_ultimos_3_meses": "[EUROS/MES] y [kWh/MES]",
+    "tarifa": "[PVPC O PRECIO FIJO], precios [P1 PUNTA] [P2 LLANO] [P3 VALLE] euros por kWh",
+    "potencia_contratada": "[kW PUNTA] en punta y [kW VALLE] en valle",
+    "equipos_sospechosos": "[CAMARA FRIGORIFICA, AIRE ACONDICIONADO, TERMO, HORNO, VITRINA, ILUMINACION...]"
+  },
+  "material_disponible": {
+    "enchufes_medidores": "[MODELO Y CANTIDAD, EJEMPLO 6 ENCHUFES ZIGBEE CON MEDIDA]",
+    "medidor_general": "[SI/NO Y MODELO DE PINZA O MEDIDOR DE CUADRO]",
+    "sistema": "[APP DEL FABRICANTE / HOME ASSISTANT / NINGUNO]"
+  },
+  "metodo": [
+    "1. Reparte los medidores por potencia esperada, no por comodidad: primero frio, climatizacion y calentamiento de agua; la iluminacion LED casi nunca merece un medidor",
+    "2. Mide siete dias seguidos incluyendo un dia de cierre, para poder separar consumo de trabajo y consumo fantasma",
+    "3. Anota por equipo: kWh en dia abierto, kWh en dia cerrado, potencia maxima vista en W y horas encendido",
+    "4. Calcula el consumo fantasma con los kWh del dia cerrado y multiplicalo por los dias de cierre al año",
+    "5. Suma lo medido y comparalo con la factura: si lo medido no llega al 60 por ciento del total, quedan cargas grandes sin medir y hay que decirlo",
+    "6. Mira la potencia maxima simultanea: si nunca pasa del 70 por ciento de la contratada, propon bajar potencia",
+    "7. Ordena las acciones por euros ahorrados al año divididos entre lo que cuesta aplicarlas"
+  ],
+  "restricciones": [
+    "No estimes consumos que no se han medido: marcalos como NO MEDIDO",
+    "No propongas sustituir equipos caros sin calcular en cuantos meses se recuperan",
+    "Nada de tocar cuadro electrico ni cableado: solo enchufes, horarios y ajustes de uso",
+    "Los precios del kWh salen de la factura del cliente, nunca de medias de mercado"
+  ],
+  "errores_frecuentes": [
+    "Medir 24 horas y extrapolar: el frio y el aire dependen del dia y del tiempo que haga",
+    "Poner un enchufe medidor de 10 A en una carga de 16 A como un horno o un aire: riesgo real de calentamiento",
+    "Confundir W de potencia con kWh de energia al calcular el ahorro",
+    "Contar como ahorro apagar algo que el negocio necesita encendido",
+    "Olvidar peajes e IVA al pasar de kWh a euros"
+  ],
+  "formato_salida": {
+    "1_tabla_por_equipo": "Equipo | kWh dia abierto | kWh dia cerrado | kWh al año | euros al año | porcentaje del total",
+    "2_consumo_fantasma": "Cifra en euros al año y de que equipos viene",
+    "3_cobertura": "Porcentaje de la factura explicado por lo medido y que falta por medir",
+    "4_acciones": "Tabla Accion | Coste | Ahorro al año | Meses en recuperarse | Riesgo o molestia",
+    "5_potencia": "Mantener o bajar potencia contratada, con la punta maxima registrada",
+    "6_seguimiento": "Que dejar medido de forma permanente y que revisar cada mes"
+  },
+  "criterios_calidad": [
+    "Cada euro de ahorro se puede rastrear hasta una medicion concreta",
+    "Ninguna accion cambia la forma de trabajar del negocio sin avisarlo",
+    "El informe cabe en dos folios y lo entiende alguien sin conocimientos electricos",
+    "Si los datos no dan para concluir, el informe lo dice y pide otra semana de medicion"
+  ]
+}

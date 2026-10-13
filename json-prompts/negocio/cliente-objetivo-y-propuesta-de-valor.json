@@ -1,0 +1,27 @@
+{
+  "tarea": "Definir mi cliente objetivo y redactar una propuesta de valor que se pueda usar tal cual en la web y en las llamadas de venta",
+  "contexto": {
+    "oferta": "[QUÉ OFRECES, CON DETALLE]",
+    "clientes_reales": "[3 CLIENTES QUE YA TIENES: QUIÉNES SON Y QUÉ TE COMPRARON]",
+    "por_que_compraron": "[LO QUE TE DIJERON, CON SUS PALABRAS]",
+    "por_que_no_compraron": "[OBJECIONES QUE TE HAN PUESTO]",
+    "alternativas_del_cliente": "[QUÉ HACE SI NO TE CONTRATA: OTRO PROVEEDOR, HACERLO ÉL, NO HACER NADA]"
+  },
+  "instrucciones": [
+    "Propón 3 segmentos de cliente concretos y evalúa cada uno por: dolor real, capacidad de pago, facilidad para localizarlos y frecuencia de compra",
+    "Elige uno como principal y explica en 3 líneas por qué",
+    "Para el elegido, describe: día típico, qué le quita el sueño de esto, cómo lo resuelve hoy, qué le costaría no resolverlo y quién decide la compra",
+    "Redacta la propuesta de valor en el formato: ayudo a [QUIÉN] a conseguir [RESULTADO] sin [LO QUE MÁS LE MOLESTA], usando las palabras de mis clientes reales",
+    "Da 3 variantes de esa frase: una para la web, una para presentarte en persona y una para un mensaje frío"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "partes": ["Tabla de los 3 segmentos con su puntuación de 1 a 5 en cada criterio", "Ficha del cliente elegido", "Propuesta de valor y sus 3 variantes", "Lista de 5 objeciones frecuentes con su respuesta en 2 frases", "Lista de a quién NO vendes y por qué"]
+  },
+  "criterios_calidad": [
+    "El segmento es tan concreto que sabría dónde encontrar 20 personas así esta semana",
+    "La propuesta de valor no usa palabras vacías como innovador, líder, calidad o soluciones",
+    "Todo se apoya en lo que han dicho mis clientes reales, no en suposiciones",
+    "El apartado de a quién NO vendes es explícito"
+  ]
+}

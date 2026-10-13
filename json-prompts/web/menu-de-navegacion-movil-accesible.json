@@ -1,0 +1,41 @@
+{
+  "tarea": "Construir la navegacion principal de una web: barra horizontal en escritorio y menu desplegable en movil",
+  "contexto": {
+    "tipo_de_web": "[TIENDA / WEB DE SERVICIOS / BLOG]",
+    "enlaces": ["[ENLACE 1]", "[ENLACE 2]", "[ENLACE 3]", "[ENLACE 4]"],
+    "boton_destacado": "[PIDE PRESUPUESTO / RESERVA / COMPRAR]",
+    "submenus": "[NO / SI, BAJO EL ENLACE X CON ESTOS APARTADOS]"
+  },
+  "entradas": {
+    "logo": "[TEXTO DEL LOGO O 'IMAGEN']",
+    "color_barra": "[#HEXADECIMAL]",
+    "comportamiento_al_bajar": "[FIJA ARRIBA / SE OCULTA AL BAJAR / NORMAL]"
+  },
+  "instrucciones": [
+    "En escritorio barra horizontal; por debajo de 48em, boton hamburguesa que abre un panel a pantalla completa",
+    "El boton lleva aria-expanded y aria-controls, y el panel se cierra con la tecla Escape y al pulsar fuera",
+    "Al abrir el menu, bloquea el scroll del fondo y devuelve el foco al boton al cerrarlo",
+    "Marca el enlace de la pagina actual con aria-current y un subrayado visible",
+    "Las areas pulsables deben medir al menos 44 por 44 pixeles",
+    "Si hay submenus, que se abran con clic y no solo al pasar el raton"
+  ],
+  "restricciones": [
+    "JavaScript propio, corto y comentado; nada de jQuery ni librerias",
+    "Que funcione tambien si el usuario tiene animaciones reducidas",
+    "La barra no debe tapar el contenido al saltar a un ancla"
+  ],
+  "errores_a_evitar": [
+    "Menu que se queda abierto al girar el movil o al ampliar la ventana",
+    "Iconos sin texto alternativo",
+    "Menu que no se puede cerrar con teclado"
+  ],
+  "formato_salida": {
+    "1_codigo": "archivo HTML completo con CSS y JS incluidos y comentados",
+    "2_prueba_en_5_pasos": "lista de comprobaciones para verificar que funciona antes de publicarlo"
+  },
+  "criterios_calidad": [
+    "Se abre y se cierra solo con teclado, sin usar el raton",
+    "No aparece scroll horizontal a 360px",
+    "El menu de escritorio no aparece a medias en tablet"
+  ]
+}

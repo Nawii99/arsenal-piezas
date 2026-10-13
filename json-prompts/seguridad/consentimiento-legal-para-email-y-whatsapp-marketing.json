@@ -1,0 +1,37 @@
+{
+  "tarea": "Auditar y rediseñar el sistema de captación de contactos y consentimiento para envíos comerciales por email, SMS y WhatsApp, conforme al RGPD y a la LSSI",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "herramienta_envio": "[MAILCHIMP, BREVO, ACTIVECAMPAIGN, OTRA]",
+    "tipo_mensajes": "[NEWSLETTER, OFERTAS, RECORDATORIOS, SEGUIMIENTO POSVENTA]"
+  },
+  "entradas": {
+    "origen_contactos": "[FORMULARIO WEB, TARJETAS EN TIENDA, CLIENTES ANTIGUOS, LISTA COMPRADA, EVENTOS, LINKEDIN]",
+    "prueba_consentimiento": "[¿GUARDAS FECHA, HORA Y TEXTO ACEPTADO? SÍ/NO]",
+    "volumen": "[NÚMERO DE CONTACTOS EN LA LISTA]"
+  },
+  "pasos": [
+    "Clasifica cada origen de contactos en apto para enviar, dudoso o no apto y explica el motivo",
+    "Determina cuándo puedes enviar a clientes por productos similares y cuándo hace falta consentimiento expreso",
+    "Diseña el formulario de alta con casilla no premarcada, texto del consentimiento y confirmación por doble opt-in",
+    "Define qué se guarda como prueba: fecha, hora, IP, texto exacto y origen",
+    "Redacta el pie legal de cada envío con identificación del remitente, baja en un clic y enlace a la política de privacidad",
+    "Propón el plan de limpieza y reconfirmación de los contactos dudosos, con el email de reconfirmación incluido"
+  ],
+  "restricciones": [
+    "Nunca dar por bueno el consentimiento de una lista comprada",
+    "La baja debe ser gratuita, en un clic y efectiva en el mismo día",
+    "No mezclar la aceptación de condiciones con la de publicidad"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "tabla de orígenes con semáforo y decisión",
+    "2_textos": "formulario, casillas, email de doble opt-in y pie legal",
+    "3_reconfirmacion": "email para recuperar contactos dudosos",
+    "4_registro": "campos que debe guardar tu herramienta como prueba"
+  },
+  "criterios_calidad": [
+    "Cada contacto de la lista final tiene prueba de su consentimiento o base válida",
+    "El texto de la casilla dice qué se envía y con qué frecuencia",
+    "La baja funciona sin escribir un correo"
+  ]
+}

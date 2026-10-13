@@ -1,0 +1,36 @@
+{
+  "tarea": "Detectar oportunidades reales de ampliar un cliente que ya tengo y convertirlas en tres propuestas ordenadas por facilidad de cierre",
+  "contexto": {
+    "mi_empresa": "[NOMBRE DE TU EMPRESA]",
+    "cliente": "[NOMBRE, SECTOR Y TAMAÑO]",
+    "antiguedad": "[CUÁNTO LLEVA CONMIGO]",
+    "relacion": "[BUENA, TIBIA O TENSA Y POR QUÉ]"
+  },
+  "entradas": {
+    "contratado_ahora": "[SERVICIOS O PRODUCTOS QUE YA TIENE Y LO QUE PAGA]",
+    "catalogo_completo": "[TODO LO QUE VENDES CON PRECIOS DE REFERENCIA]",
+    "situacion_del_cliente": "[QUÉ LE FUNCIONA, QUÉ LE DUELE, QUÉ OBJETIVOS TIENE ESTE AÑO]",
+    "presupuesto_estimado": "[LO QUE CREES QUE PUEDE GASTAR]"
+  },
+  "metodo": [
+    "1. Cruza lo que ya tiene con el catálogo y descarta lo que no le encaje",
+    "2. Para cada idea, escribe el disparador: el hecho concreto del cliente que la justifica",
+    "3. Puntúa cada idea por valor para él y por facilidad de cierre",
+    "4. Quédate con tres: una fácil y pequeña, una mediana y una grande",
+    "5. Descarta expresamente lo que no le vendería todavía y explica por qué"
+  ],
+  "restricciones": [
+    "Nada de vender por vender: si una idea no tiene un disparador real del cliente, fuera",
+    "No pongas precios cerrados que yo no te haya dado; usa horquillas",
+    "Nunca propongas algo que ponga en riesgo lo que ya me compra"
+  ],
+  "formato_salida": {
+    "tipo": "Ficha de ampliación",
+    "apartados": ["Foto rápida de la cuenta", "Tabla de las 3 propuestas con disparador, beneficio, horquilla de precio y facilidad de cierre", "Frase para abrir la conversación en cada una", "Momento y canal recomendado", "Lo que NO le vendería todavía"]
+  },
+  "criterios_calidad": [
+    "Cada propuesta se apoya en algo que el cliente ha dicho o hecho",
+    "La primera propuesta se puede plantear en un WhatsApp de 4 líneas"
+  ],
+  "tono": "Comercial honesto, sin humo"
+}

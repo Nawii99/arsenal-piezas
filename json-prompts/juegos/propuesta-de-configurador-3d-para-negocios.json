@@ -1,0 +1,41 @@
+{
+  "tarea": "Preparar la propuesta comercial de un configurador 3D en la web de un negocio, con alcance, requisitos y precio",
+  "contexto": {
+    "tu_perfil": "[TU NOMBRE], hago 3D y monto cosas con IA sin ser programador",
+    "cliente": "[NOMBRE DEL NEGOCIO Y A QUE SE DEDICA]",
+    "producto_a_configurar": "[MUEBLE / COCINA / JOYA / MAQUINA / VEHICULO]",
+    "donde_se_pondria": "[SU WEB / UNA PANTALLA EN TIENDA / UN ENLACE PARA COMERCIALES]"
+  },
+  "entradas": {
+    "opciones_del_producto": "[MEDIDAS, ACABADOS, COLORES, ACCESORIOS Y CUANTAS COMBINACIONES SALEN]",
+    "material_existente": "[TIENE PLANOS, CATALOGO, FOTOS, MODELOS 3D O NADA]",
+    "objetivo_del_cliente": "[MENOS LLAMADAS PARA PRESUPUESTAR / VENDER ONLINE / ENSENAR EN FERIAS]",
+    "presupuesto_o_expectativa": "[IMPORTE O NO LO HA DICHO]",
+    "tu_tarifa_hora": "[EUROS POR HORA]"
+  },
+  "pasos": [
+    "1. Traduce el objetivo del cliente a algo medible: menos llamadas, mas presupuestos pedidos, menos errores de pedido",
+    "2. Calcula cuantas combinaciones reales hay y avisa si el catalogo hay que simplificar antes de modelar",
+    "3. Define el alcance en tres tamanos: version minima que ya sirve, version completa y version con extras",
+    "4. Para cada version di que ve el usuario, que puede cambiar y que devuelve al final: imagen, resumen o solicitud de presupuesto",
+    "5. Lista todo lo que necesitas del cliente para empezar, con fecha limite: medidas, muestras de acabado, logotipo y acceso a la web",
+    "6. Explica en dos lineas y sin jerga como se ve en su web y que hace falta por su parte",
+    "7. Desglosa el precio por bloques: modelado base, acabados y variantes, montaje en la web, pruebas y formacion",
+    "8. Propon el mantenimiento mensual: anadir acabados nuevos, cambios de catalogo y soporte, con su precio",
+    "9. Escribe las objeciones que va a poner y la respuesta a cada una"
+  ],
+  "restricciones": [
+    "Nada de prometer aumentos de ventas ni porcentajes",
+    "Nombra las herramientas concretas que usarias y quien aloja cada cosa",
+    "Deja claro de quien son los modelos 3D al acabar y que pasa si deja de pagar el mantenimiento"
+  ],
+  "formato_salida": {
+    "bloques": ["Situacion actual y objetivo medible", "Que es un configurador explicado a alguien que no es tecnico", "Las tres versiones y que incluye cada una", "Lo que necesito de ti", "Calendario por fases", "Precio desglosado", "Mantenimiento mensual", "Objeciones y respuestas", "Que pasa despues"],
+    "extension": "dos paginas mas una tabla de precios"
+  },
+  "criterios_calidad": [
+    "El cliente entiende la propuesta sin saber nada de 3D",
+    "Las tres versiones son de verdad distintas en trabajo y en precio",
+    "Queda por escrito la propiedad de los archivos y el alcance del mantenimiento"
+  ]
+}

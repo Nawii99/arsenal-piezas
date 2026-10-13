@@ -1,0 +1,36 @@
+{
+  "tarea": "Proponer y justificar 5 parejas tipograficas (titulares + texto) para una marca",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "sector": "[SECTOR, POR EJEMPLO CLINICA DENTAL O CAFETERIA DE BARRIO]",
+    "personalidad": "[3 ADJETIVOS, POR EJEMPLO CERCANA, SERIA, ARTESANAL]",
+    "publico": "[A QUIEN LE VENDES]",
+    "soportes": "[WEB, INSTAGRAM, CARTELERIA, FACTURAS]",
+    "licencia": "[SOLO FUENTES GRATIS DE GOOGLE FONTS O TAMBIEN DE PAGO]",
+    "idiomas": "[ESPANOL CON TILDES Y N; OTROS IDIOMAS SI LOS NECESITAS]"
+  },
+  "proceso": [
+    "Traduce la personalidad en 3 atributos visuales concretos (por ejemplo geometrica, contraste alto, formas abiertas)",
+    "Propon 5 parejas: una segura, dos de caracter medio, una con serifa editorial y una atrevida",
+    "Comprueba que la fuente de texto tenga al menos 4 pesos y cursiva real",
+    "Descarta fuentes ilegibles a 14 px o sin acentos y ene",
+    "Indica que fuente usar cuando solo se pueda usar una"
+  ],
+  "restricciones": [
+    "Maximo 2 familias por marca, mas una monoespaciada opcional para cifras",
+    "No mezclar dos fuentes casi identicas en estructura",
+    "Si el trafico es sobre todo movil, prioriza altura de x grande",
+    "Solo fuentes que existan hoy y se puedan descargar o enlazar"
+  ],
+  "formato_salida": {
+    "tipo": "tabla comparativa mas recomendacion final",
+    "columnas": ["Pareja", "Titulares", "Texto", "Que transmite", "Donde brilla", "Riesgo", "Licencia y enlace"],
+    "extra": ["Recomendacion final justificada en 3 lineas", "Pesos concretos a usar, por ejemplo 700 en titulares y 400 en texto", "Fuente de sistema de reserva por si la principal no carga"]
+  },
+  "criterios_calidad": [
+    "Cada justificacion conecta con la personalidad declarada, no con gustos",
+    "Se nombra una pareja ganadora sin ambiguedad",
+    "Ninguna fuente inventada"
+  ],
+  "tono": "Directo y sin jerga; si usas un termino tecnico, explicalo en media linea"
+}

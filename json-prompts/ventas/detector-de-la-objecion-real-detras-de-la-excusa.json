@@ -1,0 +1,32 @@
+{
+  "tarea": "Analizar una conversación de venta y diagnosticar cuál es la objeción real que bloquea la decisión",
+  "entradas": {
+    "conversacion": "[PEGA AQUÍ LOS MENSAJES O TUS NOTAS DE LAS LLAMADAS, EN ORDEN]",
+    "oferta": "[QUÉ LE PROPUSISTE Y A QUÉ PRECIO]",
+    "historico": "[CUÁNTOS CONTACTOS, EN CUÁNTOS DÍAS, QUIÉN INICIÓ CADA UNO]"
+  },
+  "analisis": [
+    "Distingue entre lo que dice el cliente y lo que hace: responder tarde, no abrir el documento, no meter a otras personas, no pedir fechas",
+    "Clasifica el bloqueo en: no hay dinero, no hay autoridad, no hay urgencia, no hay confianza, no hay necesidad clara, o hay un competidor dentro",
+    "Puntúa de 0 a 10 la probabilidad real de cierre y explica en qué te basas",
+    "Señala las contradicciones entre lo que dijo en un contacto y en otro",
+    "Detecta si estás hablando con quien decide o con un intermediario"
+  ],
+  "restricciones": [
+    "No inventes intenciones: cada conclusión debe citar la frase o el comportamiento que la sostiene",
+    "Si falta información para decidir, dilo y di qué falta",
+    "Sé directo aunque la conclusión sea que hay que dejarlo estar"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Una frase: cuál es el bloqueo principal",
+    "2_pruebas": "Lista de señales con la cita textual que las respalda",
+    "3_probabilidad": "Nota de 0 a 10 y justificación en dos líneas",
+    "4_preguntas": "Las 3 preguntas exactas que debes hacer en el próximo contacto para confirmarlo o descartarlo",
+    "5_siguiente_paso": "Qué hacer: insistir, cambiar de interlocutor, replantear la oferta o cerrar el contacto"
+  },
+  "criterios_calidad": [
+    "El diagnóstico se sostiene solo con lo que aparece en la conversación",
+    "Las preguntas propuestas son abiertas y no se pueden contestar con un 'sí' de cortesía",
+    "No maquilla un caso perdido"
+  ]
+}

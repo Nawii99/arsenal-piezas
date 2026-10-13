@@ -1,0 +1,45 @@
+{
+  "tarea": "Montar una ronda de vigilancia semanal de quince minutos sobre mi web o tienda para detectar fallos silenciosos antes de que me los cuente un cliente",
+  "contexto": {
+    "web": "[URL PRINCIPAL Y PÁGINAS QUE MÁS IMPORTAN]",
+    "como_llegan_los_clientes": "[GOOGLE / INSTAGRAM / ANUNCIOS / BOCA A BOCA]",
+    "canales_de_contacto": "[FORMULARIO, WHATSAPP, TELÉFONO, EMAIL]",
+    "quien_hace_la_ronda": "[YO / UNA PERSONA DEL EQUIPO] Y QUÉ DÍA"
+  },
+  "ronda_semanal": [
+    "1. Abre la web desde datos móviles y en ventana privada: comprueba que carga y que no salta aviso de sitio no seguro.",
+    "2. Envía el formulario con un dato de prueba reconocible y confirma que llega al buzón, no al panel.",
+    "3. Manda un mensaje al WhatsApp del negocio desde otro número y mira si la respuesta automática sigue viva y dice cosas ciertas.",
+    "4. Haz clic en los enlaces del menú y del pie: los que más se rompen son los de redes y los de política de privacidad.",
+    "5. Comprueba una compra o reserva hasta el paso previo al pago, sin pagar.",
+    "6. Búscate en Google con tu nombre y ciudad: mira que sales, que el enlace va bien y que no aparece un aviso raro.",
+    "7. Mira las reseñas nuevas y responde las que queden sin respuesta.",
+    "8. Revisa si hay actualizaciones pendientes y si la última copia de seguridad existe y tiene fecha reciente.",
+    "9. Anota si alguna página tarda notablemente más que la semana pasada.",
+    "10. Apunta todo en la misma hoja de siempre, con fecha, aunque no haya nada que decir."
+  ],
+  "revision_mensual": [
+    "Caducidades: dominio, certificado, suscripciones y tarjeta de pago asociada.",
+    "Precios y horarios en la web frente a los reales.",
+    "Páginas que ya no llevan a ningún sitio y fotos de productos agotados.",
+    "Accesos de gente que ya no trabaja contigo."
+  ],
+  "errores_tipicos": [
+    "Mirar la web desde tu ordenador con la sesión iniciada, que ve cosas que un visitante no ve.",
+    "Fiarte de que el formulario funciona porque se ve el mensaje de gracias.",
+    "Descubrir el dominio caducado cuando ya está la web caída.",
+    "No dejar registro: sin histórico no sabes si algo empeoró o siempre fue así."
+  ],
+  "formato_salida": {
+    "checklist": "Lista imprimible de la ronda semanal con casilla por punto",
+    "hoja_registro": "Fecha, quién la hizo, incidencias encontradas, acción tomada",
+    "avisos": "Qué recordatorios pongo en el calendario y con cuánta antelación",
+    "protocolo_caida": "Qué hago y a quién escribo si la web no carga, en cinco pasos"
+  },
+  "criterios_calidad": [
+    "La ronda completa cabe en quince minutos de verdad.",
+    "Cada punto se comprueba desde fuera, como un cliente.",
+    "Las incidencias tienen acción y fecha, no solo descripción.",
+    "El protocolo de caída está escrito antes de que haga falta."
+  ]
+}

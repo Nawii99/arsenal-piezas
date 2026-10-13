@@ -1,0 +1,36 @@
+{
+  "tarea": "Planificar las tomas de exterior de un inmueble: mejor franja horaria según orientación y estrategia de foto en hora azul",
+  "entradas": {
+    "ciudad": "[CIUDAD]",
+    "fecha_prevista": "[FECHA]",
+    "orientacion_fachada": "[NORTE / SUR / ESTE / OESTE / NORESTE...]",
+    "tipo_inmueble": "[CHALET / EDIFICIO / LOCAL COMERCIAL / CASA RURAL]",
+    "elementos_exteriores": "[JARDÍN, PISCINA, PORCHE, TERRAZA, ENTRADA, VISTAS]",
+    "puedo_volver_al_atardecer": "[SÍ / NO]",
+    "equipo": "[CÁMARA U OBJETIVO / MÓVIL] + [TRÍPODE SÍ/NO]"
+  },
+  "procedimiento": [
+    "Deduce la franja horaria en la que el sol da de frente a la fachada según su orientación y la época del año, y márcala como ventana principal",
+    "Descarta el mediodía en verano por sombras duras y contraste excesivo, y avisa si la orientación obliga a contraluz",
+    "Para cada elemento exterior propone su hora ideal y desde qué punto disparar: piscina con sol lateral, entrada sin sombra propia, jardín con luz suave",
+    "Planifica la toma de hora azul: llegar 30 minutos antes de la puesta, encender todas las luces interiores y exteriores, trípode, y disparar una serie mientras el cielo cambia",
+    "Indica cómo evitar los estorbos: coches aparcados, contenedores, cables, cartel de la agencia y vecinos",
+    "Añade un plan B para día nublado y otro para lluvia"
+  ],
+  "restricciones": [
+    "No dar horas exactas de salida y puesta de sol como dato cerrado: indícalas como aproximación y di que se confirmen en una app de efemérides",
+    "No fotografiar propiedades vecinas de forma reconocible",
+    "Si se usa dron, recordar que hace falta cumplir la normativa y no volar sobre personas ni en zona restringida"
+  ],
+  "formato_salida": {
+    "bloque_1": "Cronograma del día por franjas con la toma asignada a cada una",
+    "bloque_2": "Ficha de la toma de hora azul: preparación, ajustes y secuencia",
+    "bloque_3": "Checklist de estorbos que retirar antes de disparar",
+    "bloque_4": "Plan B con mal tiempo"
+  },
+  "criterios_calidad": [
+    "El plan se puede ejecutar en un solo día",
+    "Cada elemento exterior tiene hora y posición asignadas",
+    "Queda claro cuál es la foto candidata a portada"
+  ]
+}

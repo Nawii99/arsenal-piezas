@@ -1,0 +1,50 @@
+{
+  "tarea": "Construye mi escalera de segunda venta: qué ofrezco después de cada compra, en qué momento, por qué canal y con qué mensaje, sin parecer un vendedor pesado.",
+  "contexto": {
+    "que_vendo": "[LISTA DE PRODUCTOS O SERVICIOS CON PRECIOS]",
+    "compra_de_entrada_mas_habitual": "[LO PRIMERO QUE SUELEN COMPRARME]",
+    "duracion_o_consumo": "[CUÁNTO LES DURA O CADA CUÁNTO LO NECESITAN]",
+    "canal_postventa": "[WHATSAPP / EMAIL / LLAMADA / EN TIENDA]"
+  },
+  "entradas": {
+    "que_les_pasa_despues": "[QUÉ PROBLEMA NUEVO APARECE CUANDO YA TIENEN LO QUE ME COMPRARON]",
+    "combinaciones_que_funcionan": "[QUÉ SE COMPRA JUNTO O SEGUIDO, SI LO SÉ]",
+    "capacidad": "[CUÁNTO TRABAJO EXTRA PUEDO ASUMIR]"
+  },
+  "metodo": [
+    "1. Ordena mi catálogo en una escalera: entrada, complemento inmediato, siguiente nivel y recurrente.",
+    "2. Para cada peldaño, define el momento natural de ofrecerlo, ligado a algo que le pasa al cliente, no a mi calendario.",
+    "3. Distingue tres jugadas y no las mezcles: complemento en el momento de la compra, mejora a las pocas semanas y reposición cuando se le acaba.",
+    "4. Redacta la oferta siempre desde el resultado que consigue el cliente, y ofrece una sola cosa por mensaje.",
+    "5. Añade el mensaje de comprobación previo: preguntar qué tal le está yendo antes de proponer nada.",
+    "6. Marca los casos en los que no hay que ofrecer nada: incidencia abierta, cliente descontento o compra reciente grande.",
+    "7. Define el calendario de recordatorio de reposición según la duración del producto."
+  ],
+  "errores_a_evitar": [
+    "Ofrecer la segunda venta antes de haber entregado bien la primera.",
+    "Meter tres ofertas en el mismo mensaje.",
+    "Ofrecer algo que el cliente no necesita solo porque tiene más margen.",
+    "Convertir el mensaje de seguimiento en publicidad encubierta desde la primera línea.",
+    "Perseguir al que ya dijo que no en esta ronda."
+  ],
+  "formato_salida": {
+    "escalera": "Tabla con peldaño, qué ofrezco, precio, momento y señal que me indica que toca.",
+    "mensajes": "Un mensaje por jugada, en versión escrita y versión hablada de 20 segundos.",
+    "calendario": "Qué mando el día 1, día 15, día 45 y en la fecha de reposición.",
+    "frenos": "Reglas de cuándo callarme y no ofrecer nada.",
+    "medicion": "Cómo apunto cuántos aceptan cada peldaño para quedarme con lo que funciona."
+  },
+  "restricciones": [
+    "Español de España, tuteo, cercano y honesto.",
+    "Máximo 60 palabras por mensaje y una sola propuesta por mensaje.",
+    "Prohibido inventar productos que no están en mi lista.",
+    "Nada de urgencias falsas ni caducidades inventadas."
+  ],
+  "criterios_calidad": [
+    "Cada oferta se justifica por algo que le pasa al cliente en ese momento.",
+    "El primer contacto después de la compra no vende nada.",
+    "Las jugadas están separadas en el tiempo y no se pisan.",
+    "Puedo llevarlo con una hoja de cálculo y sin herramientas de pago."
+  ],
+  "si_faltan_datos": "Si no te doy la lista completa de productos, monta la escalera con lo que tengo y señala qué hueco me conviene rellenar."
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar tres montajes alternativos para los primeros cinco segundos de un vídeo y compararlos",
+  "contexto": {
+    "plataforma": "[YOUTUBE / REELS / TIKTOK / ANUNCIO]",
+    "publico": "[QUIÉN LO VE Y QUÉ LE PREOCUPA]",
+    "promesa_del_video": "[QUÉ SE LLEVA QUIEN LO VEA ENTERO]"
+  },
+  "entradas": {
+    "arranque_actual": "[DESCRIBE CÓMO EMPIEZA AHORA]",
+    "planos_disponibles": "[LISTA DE IMÁGENES O MOMENTOS QUE PUEDES USAR AL PRINCIPIO]"
+  },
+  "variantes_a_generar": [
+    "Arranque por resultado: se ve primero el final o el logro y luego se explica",
+    "Arranque por conflicto: una frase que nombra el problema del espectador",
+    "Arranque por pregunta o dato inesperado con imagen que lo respalda"
+  ],
+  "para_cada_variante": [
+    "Frase exacta que se oye en el segundo 0",
+    "Plano a plano de los 5 primeros segundos con duraciones",
+    "Rótulo que aparece y en qué segundo",
+    "Cómo enlaza con el minuto 1 del vídeo actual",
+    "Riesgo principal de esta versión"
+  ],
+  "restricciones": [
+    "Nada de saludos, presentaciones ni 'bienvenidos a un nuevo vídeo'",
+    "Sin logotipo ni careta al principio",
+    "Solo material que ya exista o se pueda grabar en 10 minutos",
+    "Sin exagerar ni prometer cosas que el vídeo no cumple"
+  ],
+  "formato_salida": {
+    "por_variante": "Ficha con nombre, frase de apertura, tabla de planos y riesgo",
+    "cierre": "Tabla comparativa de las tres y recomendación de cuál probar primero y con qué medir el resultado"
+  },
+  "criterios_calidad": [
+    "Las tres son montables con lo que ya hay grabado",
+    "Cada frase de apertura se entiende sin contexto previo"
+  ]
+}

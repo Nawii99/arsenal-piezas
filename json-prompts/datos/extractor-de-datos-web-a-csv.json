@@ -1,0 +1,42 @@
+{
+  "tarea": "Escribe un script de Python que extraiga datos de una web pública y los guarde en un CSV limpio",
+  "entradas": {
+    "url_de_partida": "[URL DEL LISTADO]",
+    "datos_a_extraer": "[EJ. NOMBRE, PRECIO, REFERENCIA, DISPONIBILIDAD, ENLACE]",
+    "paginacion": "[CÓMO SE PASA DE PÁGINA O CUÁNTAS PÁGINAS HAY]",
+    "volumen_estimado": "[NÚMERO APROXIMADO DE FICHAS]"
+  },
+  "comprueba_antes": [
+    "Revisa robots.txt y las condiciones de uso, y dime si la extracción es admisible",
+    "Detecta si el contenido se carga con JavaScript y, si es así, propón alternativa",
+    "Busca si la web ofrece API pública o exportación, mejor que raspar el HTML"
+  ],
+  "requisitos_del_script": [
+    "requests y BeautifulSoup; nada de navegadores automatizados salvo que sea imprescindible",
+    "User-Agent identificable y pausa aleatoria de 1 a 3 segundos entre peticiones",
+    "Reintentos con espera creciente ante errores 429 y 5xx, y parada limpia tras 3 fallos seguidos",
+    "Guardado incremental: si se corta, se retoma sin empezar de cero",
+    "Selectores CSS agrupados en un diccionario al principio para poder actualizarlos"
+  ],
+  "salida_de_datos": {
+    "fichero": "datos.csv en UTF-8 con separador de punto y coma para que Excel en español lo abra bien",
+    "columnas": "Las pedidas más 'url_ficha' y 'fecha_extraccion'",
+    "limpieza": "Precios a número, textos sin espacios sobrantes, campos vacíos como cadena vacía"
+  },
+  "formato_salida": {
+    "1_viabilidad": "Semáforo legal y técnico antes del código",
+    "2_codigo": "Script completo comentado en español",
+    "3_uso": "Instalación y ejecución paso a paso",
+    "4_mantenimiento": "Qué revisar cuando la web cambie de diseño"
+  },
+  "restricciones": [
+    "No extraigas datos personales ni contenido tras registro o pago",
+    "No superes una petición por segundo",
+    "Si la web lo prohíbe, dilo claramente y no entregues el script"
+  ],
+  "criterios_calidad": [
+    "El CSV se abre en Excel sin caracteres raros",
+    "El script avisa del progreso y de las fichas que han fallado",
+    "Se puede adaptar a otra web tocando solo los selectores"
+  ]
+}

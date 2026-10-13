@@ -1,0 +1,33 @@
+{
+  "tarea": "Crear el mapa de correspondencia de campos para sincronizar [OBJETO: cliente, pedido, producto] entre [SISTEMA ORIGEN] y [SISTEMA DESTINO]",
+  "entradas": {
+    "campos_origen": "[PEGA LA LISTA DE CAMPOS O UN EJEMPLO DE RESPUESTA JSON DEL ORIGEN]",
+    "campos_destino": "[PEGA LA LISTA DE CAMPOS OBLIGATORIOS Y OPCIONALES DEL DESTINO]",
+    "reglas_propias": "[REGLAS DE TU NEGOCIO: el NIF es obligatorio, los precios van sin IVA, etc.]",
+    "direccion": "[SOLO ORIGEN A DESTINO O EN LOS DOS SENTIDOS]"
+  },
+  "pasos": [
+    "Emparejar cada campo del destino con su origen y marcar los que no tienen equivalente",
+    "Definir la transformación exacta: formato de fecha, separador decimal, mayúsculas, prefijo de teléfono, código de país",
+    "Fijar valor por defecto para cada campo obligatorio sin origen claro",
+    "Elegir la clave que identifica el mismo registro en ambos lados y cómo se guarda esa relación",
+    "Definir quién manda si el dato cambia en los dos sitios a la vez",
+    "Listar los datos que NO deben sincronizarse y por qué"
+  ],
+  "formato_salida": {
+    "tabla_principal": "Campo destino | campo origen | transformación | obligatorio | valor por defecto | qué hacer si falta",
+    "huerfanos": "Campos del origen que se pierden y campos del destino sin origen",
+    "reglas_de_conflicto": "Quién gana en cada caso y con qué criterio",
+    "casos_limite": "Al menos 8 casos reales con el resultado esperado, por ejemplo cliente sin NIF o producto sin stock",
+    "ejemplo_completo": "Un registro de ejemplo en JSON antes y después de la transformación"
+  },
+  "restricciones": [
+    "Ningún campo obligatorio del destino puede quedar sin decisión",
+    "Nada de rellenar huecos con datos inventados: si falta, se rechaza o se marca para revisión",
+    "Los identificadores del origen nunca se reutilizan como identificadores del destino sin decirlo"
+  ],
+  "criterios_calidad": [
+    "Cualquiera puede implementar la sincronización solo con esta tabla",
+    "Cada caso límite tiene una decisión escrita, no un depende"
+  ]
+}

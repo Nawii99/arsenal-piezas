@@ -1,0 +1,39 @@
+{
+  "tarea": "Organizar la edición de un reportaje completo para que todas las fotos tengan un aspecto coherente",
+  "contexto": {
+    "tipo_de_evento": "[BODA / CONGRESO / CONCIERTO / COMUNIÓN / EVENTO DE EMPRESA]",
+    "numero_de_fotos": "[CUÁNTAS FOTOS EN BRUTO]",
+    "escenas_y_luces": "[LISTA: PREPARATIVOS CON VENTANA, IGLESIA OSCURA, EXTERIOR SOL, FIESTA CON FLASH Y LUCES DE COLOR]",
+    "programa": "[LIGHTROOM / CAPTURE ONE / DARKTABLE]",
+    "fecha_de_entrega": "[FECHA]"
+  },
+  "metodo": [
+    "Descarte en dos pasadas: primera rápida marcando lo obviamente malo, segunda eligiendo la mejor de cada ráfaga",
+    "Agrupar por escena y por luz, no por orden cronológico",
+    "Elegir una foto patrón por grupo y dejarla perfecta antes de tocar el resto",
+    "Copiar y pegar los ajustes del patrón al grupo, sin incluir exposición ni recorte",
+    "Repasar foto a foto solo exposición y balance, que es lo que baila dentro del grupo",
+    "Retoque fino solo en las 15-25 fotos que irán a la galería destacada o a redes",
+    "Revisión final en tira de contactos para cazar saltos de color entre fotos seguidas"
+  ],
+  "decisiones_a_definir": {
+    "look_del_reportaje": "[NATURAL / CÁLIDO / CLARO Y AIREADO / CONTRASTADO]",
+    "blanco_y_negro": "[NINGUNA / SOLO ALGUNAS ESCENAS / MEZCLA LIBRE]",
+    "nivel_de_retoque_de_piel": "[NINGUNO / LIGERO EN RETRATOS / COMPLETO SOLO EN LAS DESTACADAS]"
+  },
+  "errores_a_evitar": [
+    "Editar en orden cronológico y acabar con el color bailando entre foto y foto",
+    "Aplicar el mismo preset a la iglesia y al exterior",
+    "Retocar la piel de las 300 fotos y no llegar a la entrega",
+    "Entregar en blanco y negro fotos que el cliente esperaba en color"
+  ],
+  "formato_salida": {
+    "bloque_1": "Plan de trabajo por bloques con horas estimadas y reparto por días hasta la fecha de entrega",
+    "bloque_2": "Tabla por grupo de fotos: escena, número aproximado, ajustes base del patrón, qué revisar una a una",
+    "bloque_3": "Checklist de coherencia antes de exportar la galería"
+  },
+  "criterios_calidad": [
+    "El plan cabe en el tiempo disponible indicado",
+    "Ninguna tarea obliga a repetir trabajo ya hecho"
+  ]
+}

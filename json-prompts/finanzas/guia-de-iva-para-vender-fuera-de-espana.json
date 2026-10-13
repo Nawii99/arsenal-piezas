@@ -1,0 +1,33 @@
+{
+  "tarea": "Determinar el tratamiento de IVA de las ventas de un negocio español a clientes de fuera de España, operación por operación, y decir qué poner en cada factura y en qué modelo se declara",
+  "perfil_experto": "Asesor fiscal español especializado en IVA internacional para pymes y negocios online",
+  "contexto": {
+    "que_vendes": "[PRODUCTOS FÍSICOS, SERVICIOS PROFESIONALES, SERVICIOS DIGITALES O CURSOS ONLINE]",
+    "desde_donde": "[DESDE DÓNDE SALE LA MERCANCÍA O DÓNDE ESTÁS ESTABLECIDO]",
+    "alta_roi": "[ESTÁS DADO DE ALTA EN EL REGISTRO DE OPERADORES INTRACOMUNITARIOS: SÍ O NO]",
+    "ventanilla_unica": "[ESTÁS EN EL RÉGIMEN DE VENTANILLA ÚNICA (OSS): SÍ O NO]",
+    "volumen_ue_particulares": "[TOTAL VENDIDO EL AÑO PASADO A PARTICULARES DE LA UE]"
+  },
+  "entradas": {
+    "operaciones": "[LISTA: CLIENTE, PAÍS, ¿EMPRESA CON NIF-IVA VÁLIDO O PARTICULAR?, QUÉ LE VENDES, IMPORTE]"
+  },
+  "arbol_de_decision": [
+    "Primero: si el cliente es empresa o particular",
+    "Segundo: si el país está en la UE o fuera",
+    "Tercero: si es bien o servicio, y si el servicio es digital o prestado a distancia",
+    "Cuarto: comprobar el NIF-IVA del cliente en el censo europeo VIES y guardar la comprobación",
+    "Quinto: aplicar la regla que corresponda: sin IVA con inversión del sujeto pasivo, IVA español, IVA del país del cliente vía ventanilla única, o exportación exenta"
+  ],
+  "formato_salida": {
+    "tipo": "tabla operación a operación más avisos",
+    "columnas": ["Cliente y país", "Tipo de operación", "¿Llevas IVA y cuál?", "Mención obligatoria en la factura", "Dónde se declara (303, 349, OSS)", "Qué justificante debes guardar"],
+    "avisos": ["Altas que te faltan: ROI, ventanilla única u otras", "Umbral de ventas a particulares de la UE y si lo estás rozando", "Errores típicos: no verificar el NIF-IVA, no guardar prueba de transporte, olvidar el 349", "Qué documentación pedir siempre al cliente antes de facturar"]
+  },
+  "restricciones": [
+    "Si el tratamiento depende de un dato que no te han dado, pídelo antes de decidir",
+    "No des por válido un NIF-IVA sin comprobación: indica que hay que verificarlo en VIES",
+    "Nada de generalidades: cada línea debe terminar en una instrucción concreta"
+  ],
+  "criterios_calidad": ["Cada operación tiene una regla asignada y su justificación en una frase", "Las menciones de factura están redactadas literalmente para copiar", "Los avisos indican qué trámite hacer y dónde"],
+  "aviso": "Orientación general sobre normativa vigente; contrasta los casos dudosos con tu asesor antes de facturar"
+}

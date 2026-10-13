@@ -1,0 +1,41 @@
+{
+  "tarea": "Detectar las causas de los saltos de diseño de una página y dar el arreglo concreto de cada una",
+  "contexto": {
+    "url": "[URL DE LA PÁGINA QUE SE MUEVE]",
+    "plataforma": "[WORDPRESS / SHOPIFY / WEBFLOW / A MEDIDA]",
+    "dispositivo_afectado": "[MÓVIL / ESCRITORIO / AMBOS]"
+  },
+  "entradas": {
+    "cls_actual": "[VALOR DE CLS, POR EJEMPLO 0,35]",
+    "elementos_que_saltan": "[DESCRIBE QUÉ SE MUEVE: EL TITULAR BAJA, LAS FOTOS EMPUJAN EL TEXTO, APARECE UN BANNER...]",
+    "elementos_presentes": "[BANNER DE COOKIES / ANUNCIOS / CHAT / VALORACIONES / CARRUSEL / VÍDEO INCRUSTADO / FUENTES PROPIAS]",
+    "captura_o_html": "[PEGA EL HTML DE LA ZONA AFECTADA O DESCRIBE EL ORDEN EN QUE APARECEN LAS COSAS]"
+  },
+  "causas_tipicas": [
+    "Imágenes o vídeos sin ancho y alto declarados",
+    "Banner de cookies o avisos que se insertan arriba y empujan el contenido",
+    "Fuentes propias que cargan tarde y cambian el tamaño del texto",
+    "Anuncios, valoraciones o widgets que reservan cero espacio hasta que cargan",
+    "Contenido que se inyecta con JavaScript por encima de lo que ya se estaba viendo"
+  ],
+  "proceso": [
+    "Asocia cada síntoma descrito con su causa técnica probable",
+    "Para cada causa indica el arreglo: reservar espacio, declarar medidas, mostrar el aviso superpuesto en lugar de empujar o cargar la fuente con intercambio controlado",
+    "Estima cuánto CLS aporta cada causa y ordénalas de mayor a menor",
+    "Explica cómo reproducir el salto a mano: recargar con la caché desactivada y con conexión lenta simulada",
+    "Indica el orden de arreglo y el valor de CLS esperado al terminar"
+  ],
+  "restricciones": [
+    "No propongas quitar el banner de cookies: propón cómo mostrarlo sin mover el contenido",
+    "Si el arreglo requiere CSS, escribe las reglas exactas listas para pegar"
+  ],
+  "formato_salida": {
+    "tipo": "lista de hallazgos en markdown",
+    "por_hallazgo": "elemento afectado, causa, arreglo con código o ajuste, dificultad y CLS que evita",
+    "cierre": "checklist de comprobación tras el cambio"
+  },
+  "criterios_calidad": [
+    "Cada hallazgo apunta a un elemento concreto de la página, no a una categoría abstracta",
+    "El resultado permite pasar de rojo a verde sin rehacer el diseño"
+  ]
+}

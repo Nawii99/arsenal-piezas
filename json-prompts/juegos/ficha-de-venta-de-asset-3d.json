@@ -1,0 +1,43 @@
+{
+  "tarea": "Redactar la ficha de venta completa de un modelo o pack 3D para una tienda de assets",
+  "contexto": {
+    "tienda": "[NOMBRE DE LA TIENDA O MARKETPLACE]",
+    "idioma": "ingles y castellano",
+    "comprador_tipo": "[DESARROLLADOR INDIE / ARQUITECTO / ANIMADOR / AFICIONADO A LA IMPRESION 3D]",
+    "precio_previsto": "[PRECIO EN EUROS]"
+  },
+  "entradas": {
+    "que_es": "[QUE MODELA EL ASSET, EN UNA FRASE]",
+    "contenido_del_pack": "[LISTA DE PIEZAS O VARIANTES INCLUIDAS]",
+    "formatos": "[FBX / OBJ / GLTF / BLEND / STL / USD]",
+    "poligonos": "[TRIS POR PIEZA O RANGO]",
+    "texturas": "[RESOLUCION, CANALES Y SI SON PBR]",
+    "rigging_y_animacion": "[NO / SI, CON QUE CICLOS]",
+    "escala_y_unidades": "[METROS O CENTIMETROS]",
+    "licencia": "[USO COMERCIAL PERMITIDO SI O NO, LIMITES]",
+    "renders_disponibles": "[LISTA DE IMAGENES QUE YA TIENES]"
+  },
+  "pasos": [
+    "1. Escribe 3 titulos alternativos con la formula tipo de asset + estilo + palabra de busqueda, maximo 60 caracteres",
+    "2. Escribe el primer parrafo diciendo para que sirve y en que proyectos encaja, sin adjetivos vacios",
+    "3. Monta la tabla de especificaciones tecnicas con los datos dados, sin rellenar huecos a ojo",
+    "4. Lista que incluye y que NO incluye el pack, para cortar devoluciones",
+    "5. Propon 25 etiquetas de busqueda en ingles ordenadas de mas a menos genericas y sin repetir sinonimos",
+    "6. Indica el guion de las 6 imagenes de la ficha: portada, escala con figura humana, wireframe, mapas de textura, variantes y detalle",
+    "7. Redacta la nota de licencia en lenguaje claro"
+  ],
+  "restricciones": [
+    "Prohibido afirmar caracteristicas que no esten en las entradas",
+    "Nada de listo para produccion ni calidad AAA si no se justifica con un dato",
+    "Descripcion util por si sola: quien no vea las imagenes debe entender que compra"
+  ],
+  "formato_salida": {
+    "bloques": ["Titulos propuestos", "Descripcion corta de 200 caracteres", "Descripcion larga", "Tabla de especificaciones", "Incluye y no incluye", "Etiquetas", "Guion de imagenes", "Licencia"],
+    "idiomas": "cada bloque primero en ingles y despues en castellano"
+  },
+  "criterios_calidad": [
+    "Toda cifra que aparece viene de las entradas",
+    "El apartado de lo que NO incluye tiene al menos tres puntos concretos",
+    "Las etiquetas incluyen el nombre del objeto, el estilo, el uso y el formato"
+  ]
+}

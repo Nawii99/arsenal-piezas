@@ -1,0 +1,65 @@
+{
+  "tarea": "Ejecutar el cierre financiero del mes en menos de una hora y devolverme un cuadro de mando con siete números, su comparación con meses anteriores y las decisiones que toca tomar.",
+  "contexto": {
+    "negocio": "[QUÉ HAGO Y DESDE CUÁNDO]",
+    "mes_que_cierro": "[MES Y AÑO]",
+    "quien_lo_lee": "[SOLO YO / MI SOCIO / MI PAREJA]",
+    "objetivo_del_ano": "[FACTURAR X / SACAR X DE SUELDO / TENER X DE COLCHÓN]"
+  },
+  "entradas": {
+    "facturado_del_mes": "[BASE SIN IVA]",
+    "cobrado_del_mes": "[DINERO QUE ENTRÓ DE VERDAD]",
+    "gastos_pagados": "[IMPORTE Y DESGLOSE BÁSICO]",
+    "saldo_de_caja_a_fin_de_mes": "[IMPORTE, SUMANDO TODAS LAS CUENTAS MENOS EL COLCHÓN DE IMPUESTOS]",
+    "pendiente_de_cobro": "[IMPORTE Y CUÁNTO LLEVA MÁS DE 30 DÍAS]",
+    "pendiente_de_pago": "[IMPORTE Y VENCIMIENTOS]",
+    "horas_trabajadas": "[APROXIMADO]",
+    "datos_de_los_3_meses_anteriores": "[LOS MISMOS CAMPOS SI LOS TIENES]"
+  },
+  "conocimiento_a_aplicar": [
+    "Facturado y cobrado son cosas distintas y el que te mata es el segundo: la caja es la que paga las facturas.",
+    "Los siete números útiles para un negocio pequeño son: facturado, cobrado, gastos, caja libre, pendiente de cobro vencido, margen y meses de supervivencia.",
+    "Meses de supervivencia = caja libre dividida entre gastos fijos mensuales. Por debajo de dos es zona roja.",
+    "Un mes suelto no dice nada: se mira la media de tres meses para quitar el ruido.",
+    "El colchón de impuestos no se cuenta como caja libre, porque no es tuyo.",
+    "Cada número debe tener una decisión asociada, si no, es un número decorativo.",
+    "El cierre se hace siempre igual y el mismo día del mes: la comparación solo vale si el método no cambia."
+  ],
+  "pasos": [
+    "1. Comprobar que facturado, cobrado y gastos cuadran con el banco a grandes rasgos.",
+    "2. Calcular los siete números del mes.",
+    "3. Compararlos con el mes anterior y con la media de los tres anteriores, en euros y en porcentaje.",
+    "4. Señalar las dos desviaciones más grandes y explicar la causa más probable con los datos que tengo.",
+    "5. Revisar el pendiente de cobro vencido y decidir a quién reclamar esta semana.",
+    "6. Comprobar los meses de supervivencia y activar aviso si bajan de dos.",
+    "7. Escribir las tres decisiones del mes, con responsable y fecha, y las tres cifras a vigilar el mes que viene."
+  ],
+  "errores_tipicos": [
+    "Cerrar el mes mirando solo el saldo del banco.",
+    "Contar el IVA cobrado como ingreso y creer que el mes fue mejor de lo que fue.",
+    "Cambiar la forma de calcular cada mes y perder la comparación.",
+    "Hacer un informe de diez páginas que no se lee ni se usa.",
+    "Detectar una caída y no asociarle ninguna acción."
+  ],
+  "restricciones": [
+    "El cuadro de mando cabe en una pantalla.",
+    "Nada de gráficos ni de indicadores de más: siete números y ya.",
+    "Si un dato falta, ponlo como PENDIENTE y no lo estimes.",
+    "Lenguaje llano, sin jerga contable."
+  ],
+  "formato_salida": {
+    "1_cuadro": "Tabla: INDICADOR | ESTE MES | MES ANTERIOR | MEDIA 3 MESES | SEMÁFORO",
+    "2_lectura": "Cinco líneas explicando qué ha pasado de verdad este mes",
+    "3_alertas": "Máximo tres alertas con su umbral concreto",
+    "4_decisiones": "Tres decisiones con acción, responsable y fecha",
+    "5_vigilar": "Tres cifras a seguir el mes que viene y su objetivo",
+    "6_rutina": "Checklist reutilizable del cierre para el mes siguiente"
+  },
+  "criterios_calidad": [
+    "Los siete números están todos y ninguno se queda sin comparación.",
+    "Cada alerta tiene umbral numérico, no una impresión.",
+    "Las decisiones son acciones concretas con fecha, no propósitos.",
+    "Se puede repetir el mes que viene con el mismo formato exacto."
+  ],
+  "si_faltan_datos": "Pídeme lo mínimo para calcular los siete números y marca el resto como no disponible."
+}

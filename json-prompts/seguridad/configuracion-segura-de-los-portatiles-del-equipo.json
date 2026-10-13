@@ -1,0 +1,44 @@
+{
+  "tarea": "Definir la configuracion segura estandar (baseline) de los portatiles de la empresa y la checklist de entrega a cada empleado",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sistema": "[WINDOWS 11 PRO / WINDOWS 11 HOME / MACOS / MIXTO]",
+    "numero_de_equipos": "[NUMERO]",
+    "propiedad": "[DE LA EMPRESA / PERSONALES DEL EMPLEADO / MIXTO]",
+    "software_necesario": "[PROGRAMAS QUE TIENEN QUE FUNCIONAR SI O SI]",
+    "quien_configura": "[YO / UN TECNICO / EL PROPIO EMPLEADO]",
+    "trabajo_fuera_de_la_oficina": "[SI / NO]"
+  },
+  "apartados_del_baseline": [
+    "cifrado del disco y custodia de la clave de recuperacion",
+    "cuenta de usuario sin permisos de administrador para el dia a dia",
+    "contrasena o PIN y bloqueo automatico de pantalla",
+    "antivirus del sistema activo y actualizado",
+    "actualizaciones automaticas del sistema y de los programas",
+    "cortafuegos activado",
+    "navegador: extensiones permitidas y gestor de contrasenas",
+    "copia de seguridad de las carpetas de trabajo",
+    "uso de memorias USB",
+    "que hacer si se pierde o lo roban"
+  ],
+  "procedimiento": [
+    "1. Para cada apartado dar el ajuste concreto, donde se activa y como comprobar que esta activo",
+    "2. Senalar las diferencias si el equipo es personal del empleado y que se puede exigir de forma razonable",
+    "3. Montar la checklist de entrega firmable en una pagina",
+    "4. Redactar las 8 normas de uso en lenguaje llano para el empleado",
+    "5. Definir el proceso de baja: que se recupera y que se borra cuando alguien se va"
+  ],
+  "restricciones": [
+    "No proponer software de pago sin decir la alternativa incluida en el sistema",
+    "Si una medida solo existe en la version Pro, decirlo y dar alternativa",
+    "Nada de vigilancia del empleado: solo proteccion del equipo y de los datos de la empresa"
+  ],
+  "formato_salida": {
+    "tipo": "documento de dos partes",
+    "parte_1": "Baseline tecnico: tabla con ajuste | valor | donde se activa | como se comprueba",
+    "parte_2": "Checklist de entrega de equipo en 1 pagina con casillas y hueco para firma y fecha",
+    "parte_3": "Normas de uso para el empleado, 8 puntos, maximo 2 lineas cada uno"
+  },
+  "criterios_calidad": ["Todo se puede aplicar sin comprar nada adicional o se dice el coste", "La checklist la puede seguir alguien sin conocimientos", "Se contempla el equipo perdido o robado"],
+  "tono": "claro y operativo"
+}

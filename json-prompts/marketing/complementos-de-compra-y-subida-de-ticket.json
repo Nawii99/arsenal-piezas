@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar los complementos de venta de un pedido: extra en el pago, ampliación tras la compra y alternativa más barata si la rechaza",
+  "entradas": {
+    "producto_principal": "[QUÉ VENDES Y SU PRECIO]",
+    "lo_que_puedes_ofrecer_ademas": "[SERVICIOS, PLANTILLAS, ENVÍO EXPRÉS, GARANTÍA AMPLIADA, SESIONES...]",
+    "coste_de_entrega": "[LO QUE TE CUESTA CADA EXTRA]",
+    "plataforma_de_pago": "[STRIPE, SHOPIFY, WOOCOMMERCE, PAYPAL, PASARELA MANUAL...]",
+    "ticket_medio_actual": "[EUROS POR PEDIDO]",
+    "perfil_comprador": "[QUÉ SUELE PREOCUPARLE JUSTO ANTES DE PAGAR]"
+  },
+  "pasos": [
+    "Elegir un extra de pago que quite un obstáculo inmediato al uso del producto principal",
+    "Fijar su precio entre el 20 % y el 40 % del producto principal y comprobar el margen con el coste dado",
+    "Escribir el texto del extra: una frase de oferta, dos viñetas y el texto de la casilla de aceptación",
+    "Diseñar la ampliación posterior al pago: qué se ofrece, por qué encaja ahora y su precio",
+    "Preparar la alternativa más barata para quien rechace la ampliación",
+    "Definir el orden exacto de las pantallas y qué ve el cliente en cada una"
+  ],
+  "restricciones": [
+    "El extra no debe hacer dudar de la compra principal ni añadir decisiones complicadas",
+    "Nada de casillas premarcadas ni cargos poco claros: prohibido por normativa de consumo",
+    "Máximo un extra en el pago y máximo dos pantallas después de pagar",
+    "Precio siempre con IVA indicado según corresponda"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["Mapa de pantallas", "Extra en el pago (texto listo)", "Ampliación tras la compra (texto listo)", "Alternativa más barata", "Precios y margen por opción", "Cómo montarlo en la plataforma indicada"]
+  },
+  "criterios_calidad": [
+    "Cada oferta se entiende sin abandonar la página de pago",
+    "El margen de cada extra es positivo con los costes declarados",
+    "Un cliente que dice que no a todo termina su compra sin fricción"
+  ],
+  "tono": "comercial pero honrado, nada de trucos"
+}

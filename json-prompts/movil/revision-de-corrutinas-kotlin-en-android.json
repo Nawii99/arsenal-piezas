@@ -1,0 +1,37 @@
+{
+  "tarea": "Auditar el uso de corrutinas y flujos de Kotlin en una app Android",
+  "contexto": {
+    "version_kotlin": "[EJ: 2.0]",
+    "interfaz": "[JETPACK COMPOSE / VISTAS XML]",
+    "arquitectura": "[MVVM CON VIEWMODEL / OTRA]",
+    "sintoma": "[CONGELACIÓN, CIERRE INESPERADO, DATOS QUE NO LLEGAN, BATERÍA]"
+  },
+  "entradas": {
+    "codigo": "[PEGA EL VIEWMODEL, REPOSITORIO O COMPOSABLE]"
+  },
+  "que_revisar": [
+    "ámbito usado: viewModelScope, lifecycleScope o GlobalScope",
+    "GlobalScope o scopes creados a mano que nunca se cancelan",
+    "llamadas de red o disco en el hilo principal sin withContext",
+    "Dispatchers.IO frente a Default según sea espera o cálculo",
+    "excepciones tragadas por falta de try o CoroutineExceptionHandler",
+    "recolección de flujos sin repeatOnLifecycle o collectAsStateWithLifecycle",
+    "tareas que deben sobrevivir a la pantalla y están atadas a ella",
+    "llamadas repetidas al girar la pantalla por lanzar en el sitio equivocado",
+    "uso de runBlocking fuera de tests"
+  ],
+  "restricciones": [
+    "No proponer cambiar de arquitectura, solo arreglar lo que hay",
+    "Cada arreglo debe caber en el fichero aportado",
+    "Distinguir lo que rompe la app de lo que solo es mejorable"
+  ],
+  "formato_salida": {
+    "tabla": "columnas: gravedad | línea | qué pasa en el móvil del usuario | arreglo",
+    "parches": "antes y después en código para lo grave",
+    "checklist_final": "lista de comprobaciones para repasar antes de publicar"
+  },
+  "criterios_calidad": [
+    "Cada hallazgo explica el efecto visible para el usuario",
+    "Ningún arreglo introduce trabajo en el hilo principal"
+  ]
+}

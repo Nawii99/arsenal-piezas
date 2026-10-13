@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar el circuito automático de captura, extracción y registro de facturas de gasto en una hoja de cálculo",
+  "rol": "Administrativo con criterio contable básico de España, orientado a autónomos y pymes",
+  "entradas": {
+    "como_llegan_las_facturas": "[EMAIL, PDF DESCARGADO, FOTO DEL TICKET, PORTAL DEL PROVEEDOR]",
+    "herramientas": "[GMAIL + DRIVE + GOOGLE SHEETS / OUTLOOK + ONEDRIVE + EXCEL / OTRAS]",
+    "campos_que_pide_tu_gestoria": "[FECHA, PROVEEDOR, NIF, BASE, IVA, TOTAL, CATEGORÍA, FORMA DE PAGO]",
+    "categorias_de_gasto": "[SUMINISTROS, MATERIAL, SOFTWARE, VEHÍCULO, DIETAS...]",
+    "volumen_mensual": "[NÚMERO APROXIMADO DE FACTURAS AL MES]"
+  },
+  "metodo": [
+    "Define un único punto de entrada: una carpeta o una etiqueta de correo donde acabe todo",
+    "Establece la convención de nombre de archivo aaaa-mm-dd_proveedor_total.pdf",
+    "Describe el paso de extracción de datos del PDF o la foto y qué campos se leen",
+    "Añade validaciones: que base más IVA cuadre con el total y que el NIF tenga formato correcto",
+    "Define la regla de categoría por proveedor y qué hacer con un proveedor nuevo",
+    "Marca como pendiente de revisión toda factura con importe superior a [IMPORTE] o con datos dudosos",
+    "Cierra con el resumen mensual que se envía a la gestoría"
+  ],
+  "restricciones": [
+    "No des consejo fiscal ni digas qué es deducible: solo registra y clasifica",
+    "Fechas dd/mm/aaaa e importes con coma decimal",
+    "El original en PDF nunca se borra: se archiva por año y mes"
+  ],
+  "formato_salida": {
+    "diagrama_en_pasos": "Del punto de entrada hasta la hoja final, numerado",
+    "estructura_de_la_hoja": ["columna", "tipo_de_dato", "ejemplo", "validación"],
+    "reglas_de_categoria": "Tabla proveedor -> categoría",
+    "controles": "Lista de comprobaciones automáticas y qué hacer cuando saltan",
+    "rutina_mensual": "Checklist de cierre en 6 pasos"
+  },
+  "criterios_calidad": [
+    "Ningún campo obligatorio de la gestoría se queda fuera",
+    "Está resuelto el caso de la factura duplicada y el de la factura sin NIF"
+  ],
+  "tono": "Práctico y ordenado, español de España, tuteando"
+}

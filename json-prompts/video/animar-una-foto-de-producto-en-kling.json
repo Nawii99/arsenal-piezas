@@ -1,0 +1,30 @@
+{
+  "tarea": "Escribir el prompt de imagen a video para animar una foto fija de producto sin que se deforme",
+  "imagen_de_partida": {
+    "que_se_ve": "[DESCRIBE LA FOTO: PRODUCTO, FONDO, ANGULO]",
+    "producto": "[NOMBRE Y MATERIAL DEL PRODUCTO]",
+    "zona_fragil": "[ETIQUETA, TEXTO DEL ENVASE, LOGOTIPO, MANOS]"
+  },
+  "objetivo": {
+    "sensacion": "[PREMIUM Y CALMADO / FRESCO Y RAPIDO / ARTESANAL]",
+    "duracion_segundos": "[5 O 10]",
+    "destino": "[REEL / FICHA DE PRODUCTO / ANUNCIO]"
+  },
+  "reglas_de_animacion": [
+    "El producto es el ancla: se mueve la camara o el entorno, no el objeto, para no romper la etiqueta",
+    "Movimientos seguros en imagen a video: dolly in muy lento, orbita de 15 grados, parallax suave, vapor o vaho que sube, particulas de polvo en la luz, liquido que cae en un vaso",
+    "Movimientos peligrosos que hay que evitar: girar el producto 180 grados, manos que aparecen de la nada, cambios de plano, zoom brusco",
+    "Intensidad de movimiento baja o media; alta solo si el fondo es liso"
+  ],
+  "formato_salida": {
+    "prompt_positivo": "2 o 3 frases en ingles describiendo solo el movimiento y la luz, sin redescribir lo que ya se ve en la foto",
+    "prompt_negativo": "morphing, warping text, distorted label, extra fingers, logo deformation, sudden cuts, camera shake",
+    "ajustes": "nivel de movimiento sugerido, duracion y si conviene generar dos tomas y quedarse con la mejor",
+    "plan_b": "que cambiar en el prompt si la etiqueta se deforma en el primer intento"
+  },
+  "criterios_calidad": [
+    "El texto del envase sigue legible en el ultimo fotograma",
+    "El producto no cambia de forma, color ni proporcion durante el clip",
+    "El clip funciona en bucle o corta limpio para montarlo con otros"
+  ]
+}

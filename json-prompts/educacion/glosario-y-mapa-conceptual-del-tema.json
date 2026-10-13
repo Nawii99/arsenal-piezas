@@ -1,0 +1,37 @@
+{
+  "tarea": "Extraer el glosario y el mapa de relaciones entre conceptos de un material didáctico",
+  "entradas": {
+    "tema": "[TEMA]",
+    "material_origen": "[PEGA AQUÍ EL MATERIAL]",
+    "nivel_alumno": "[NIVEL DE PARTIDA]",
+    "terminos_obligatorios": "[PALABRAS QUE DEBEN APARECER SÍ O SÍ]"
+  },
+  "glosario": {
+    "seleccion": "Entre 15 y 30 términos: los que el alumno necesita para seguir el tema, no todos los que aparecen",
+    "por_termino": [
+      "Definición en una frase sin usar otra palabra técnica sin definir",
+      "Ejemplo cotidiano en una línea",
+      "Con qué se confunde habitualmente y en qué se diferencia",
+      "Nivel: básico, intermedio o avanzado"
+    ],
+    "orden": "Primero por nivel y dentro de cada nivel alfabético"
+  },
+  "mapa_conceptual": {
+    "objetivo": "Mostrar cómo se relacionan los términos, no repetir la lista",
+    "reglas": [
+      "Un concepto central y de 3 a 6 ramas principales",
+      "Cada flecha lleva escrito el verbo que explica la relación: incluye, provoca, se mide con, se opone a",
+      "Máximo 20 nodos para que se entienda de un vistazo"
+    ],
+    "formato": "Bloque de código Mermaid con un diagrama flowchart TD"
+  },
+  "formato_salida": "Primero la tabla de glosario, después el diagrama Mermaid y al final 5 preguntas de autocomprobación sobre las relaciones del mapa",
+  "restricciones": [
+    "Nada de definiciones copiadas de diccionario técnico: se explica con palabras del día a día",
+    "Si un término del material está mal empleado o es ambiguo, señálalo en una nota final"
+  ],
+  "criterios_calidad": [
+    "Un alumno puede leer el glosario entero en 10 minutos",
+    "Ninguna definición usa un término que no esté definido antes en la lista"
+  ]
+}

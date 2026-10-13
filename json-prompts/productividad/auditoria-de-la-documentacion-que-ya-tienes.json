@@ -1,0 +1,40 @@
+{
+  "tarea": "Auditar la documentación interna existente y devolver un diagnóstico con prioridades de arreglo.",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "tamano_equipo": "[NÚMERO DE PERSONAS]",
+    "donde_se_guarda": "[DRIVE, NOTION, CARPETAS DEL ORDENADOR, WHATSAPP...]"
+  },
+  "entradas": {
+    "inventario": "[LISTA: NOMBRE DEL DOCUMENTO | ÚLTIMA FECHA DE EDICIÓN | RESPONSABLE | DÓNDE ESTÁ]",
+    "procesos_criticos": "[LOS 5 PROCESOS QUE NO PUEDEN PARAR EN TU NEGOCIO]",
+    "quejas_frecuentes": "[QUÉ SE PREGUNTA UNA Y OTRA VEZ EN EL EQUIPO]"
+  },
+  "instrucciones": [
+    "Clasifica cada documento como VIGENTE, DUDOSO, OBSOLETO o DUPLICADO usando la fecha y quién lo mantiene.",
+    "Cruza los procesos críticos con el inventario y señala los que no tienen ningún documento.",
+    "Marca como riesgo alto todo proceso crítico que solo sepa hacer una persona.",
+    "Detecta documentos sin responsable asignado.",
+    "Convierte cada pregunta repetida del equipo en una carencia concreta de documentación.",
+    "Ordena las acciones por impacto frente al esfuerzo, no por orden alfabético."
+  ],
+  "restricciones": [
+    "No propongas cambiar de herramienta ni comprar software nuevo.",
+    "Máximo 10 acciones recomendadas para que sea abarcable.",
+    "Si falta información para juzgar un documento, dilo en vez de suponer."
+  ],
+  "formato_salida": {
+    "tipo": "tabla mas lista",
+    "tabla": ["Documento", "Estado", "Motivo", "Riesgo (alto/medio/bajo)", "Acción", "Responsable sugerido"],
+    "secciones_finales": [
+      "Huecos: procesos críticos sin documentar",
+      "Plan de 30 días con 3 acciones por semana",
+      "Lo que se puede borrar o archivar sin miedo"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada acción cabe en menos de dos horas de trabajo.",
+    "Ningún documento se queda sin estado ni sin responsable propuesto."
+  ],
+  "tono": "Claro y sin dramatismo"
+}

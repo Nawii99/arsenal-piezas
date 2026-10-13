@@ -1,0 +1,34 @@
+{
+  "tarea": "Resumir un hilo largo de correo y sacar los acuerdos, los temas abiertos y las tareas con responsable y fecha",
+  "contexto": {
+    "quien_soy_en_el_hilo": "[TU NOMBRE Y TU PAPEL: PROVEEDOR, CLIENTE, JEFE DE PROYECTO]",
+    "fecha_de_hoy": "[FECHA]",
+    "que_necesito_saber": "[POR EJEMPLO: QUE ME TOCA A MI Y QUE PRECIO SE ACORDO]"
+  },
+  "entradas": {
+    "hilo": "[PEGA AQUI TODO EL HILO, CON REMITENTE Y FECHA DE CADA MENSAJE]"
+  },
+  "pasos": [
+    "Ordenar los mensajes por fecha y detectar los cambios de criterio a lo largo del hilo",
+    "Separar lo acordado en firme de lo que solo se propuso y nunca se confirmo",
+    "Extraer cifras, fechas, plazos y condiciones citando quien las dijo y cuando",
+    "Listar las tareas con responsable, fecha y estado",
+    "Marcar las contradicciones y lo que se quedo sin responder"
+  ],
+  "restricciones": [
+    "No deducir acuerdos: si nadie confirmo algo, va en la lista de pendientes de confirmar",
+    "Citar siempre de quien viene cada dato, con el nombre y la fecha del mensaje",
+    "Si un dato aparece con dos valores distintos, mostrar los dos y senalar el conflicto",
+    "Resumen general de maximo 150 palabras"
+  ],
+  "formato_salida": {
+    "bloques": ["Resumen en 5 lineas", "Acuerdos cerrados", "Temas abiertos y contradicciones", "Tabla de tareas", "Correo de confirmacion"],
+    "columnas_tabla_tareas": ["Tarea", "Responsable", "Fecha limite", "Estado", "Mensaje del que sale"],
+    "correo_de_confirmacion": "Borrador breve para enviar al hilo cerrando lo acordado y pidiendo confirmacion de lo dudoso"
+  },
+  "criterios_calidad": [
+    "Nadie que lea el resumen necesita abrir el hilo original",
+    "Toda tarea tiene nombre y fecha, o se marca como sin asignar",
+    "No aparece ninguna afirmacion que no este en el hilo"
+  ]
+}

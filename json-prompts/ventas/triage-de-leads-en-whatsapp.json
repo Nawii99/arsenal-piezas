@@ -1,0 +1,51 @@
+{
+  "tarea": "Montar un sistema de primera respuesta y filtrado de consultas entrantes por mensajería",
+  "contexto": {
+    "negocio": "[TU NEGOCIO], vende [QUÉ] con precios desde [IMPORTE]",
+    "canales": "[WHATSAPP / INSTAGRAM / FORMULARIO WEB]",
+    "quien_responde": "[TÚ SOLO / TÚ Y ALGUIEN MÁS]",
+    "horario": "[HORAS EN LAS QUE ATIENDES]"
+  },
+  "entradas": {
+    "consultas_tipicas": "[PEGA 10 MENSAJES REALES QUE TE LLEGAN]",
+    "tiempo_de_respuesta_actual": "[MINUTOS U HORAS QUE TARDAS]",
+    "quien_no_te_interesa": "[TIPO DE CONSULTA QUE NUNCA ACABA EN VENTA]",
+    "capacidad_de_agenda": "[CUÁNTAS LLAMADAS O VISITAS PUEDES HACER A LA SEMANA]"
+  },
+  "pasos": [
+    "1. Clasifica las consultas típicas en cuatro tipos: comprador claro, curioso de precio, encaje dudoso y fuera de servicio",
+    "2. Escribe la primera respuesta de cada tipo, enviable en menos de 5 minutos, con una sola pregunta al final",
+    "3. Define las tres preguntas de filtro que decide todo: qué necesita, para cuándo y con qué presupuesto orientativo, redactadas para no sonar a interrogatorio",
+    "4. Decide cómo se da precio: horquilla pública desde [IMPORTE], o precio solo tras las tres preguntas, y escríbelo",
+    "5. Crea las etiquetas de estado y qué significa cada una: nuevo, esperando respuesta, cita puesta, presupuesto enviado, ganado, perdido",
+    "6. Escribe el mensaje de descarte amable para los que no encajan, con alternativa si puedes darla",
+    "7. Define la rutina diaria: dos ratos fijos al día para revisar y un límite de mensajes por conversación antes de pasar a llamada"
+  ],
+  "restricciones": [
+    "Prohibido dar presupuesto cerrado por chat sin las tres preguntas contestadas",
+    "Prohibido responder con un audio largo a una consulta inicial",
+    "Ninguna respuesta automática se hace pasar por persona",
+    "Máximo [N] mensajes de ida y vuelta antes de proponer llamada o cita",
+    "Nada de dejar consultas sin contestar: si no encaja, se contesta igual"
+  ],
+  "errores_tipicos": [
+    "Contestar al día siguiente cuando el cliente ya ha escrito a otros tres",
+    "Empezar contando tu servicio antes de saber qué necesita",
+    "Negociar precio por chat con alguien que aún no sabes si encaja",
+    "Mezclar conversaciones sin etiquetas y perder el hilo de quién espera qué",
+    "Llenar la agenda de citas con gente que no puede pagarlo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: tipo de consulta, cómo se reconoce, qué se hace",
+    "bloque_2": "Las primeras respuestas por tipo, listas para guardar como respuestas rápidas",
+    "bloque_3": "Las tres preguntas de filtro con su versión suave",
+    "bloque_4": "Lista de etiquetas de estado con su definición y quién las cambia",
+    "bloque_5": "Mensaje de descarte amable y rutina diaria en cinco pasos"
+  },
+  "criterios_calidad": [
+    "Cualquier respuesta se envía copiando y pegando en menos de un minuto",
+    "Las preguntas de filtro se contestan en una línea cada una",
+    "Al leer un chat sabes en qué estado está sin releerlo entero",
+    "El sistema descarta sin dejar a nadie sin respuesta"
+  ]
+}

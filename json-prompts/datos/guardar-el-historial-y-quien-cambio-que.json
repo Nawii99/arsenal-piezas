@@ -1,0 +1,35 @@
+{
+  "tarea": "Anadir a un modelo de datos existente el historial de cambios y la pista de auditoria, sin romper las consultas actuales",
+  "entradas": {
+    "tablas_a_historificar": "[LISTA DE TABLAS: EJ: PRECIOS, CLIENTES, EXPEDIENTES]",
+    "preguntas_del_pasado": ["[EJ: QUE PRECIO TENIA ESTE PRODUCTO EL 3 DE MARZO]", "[EJ: QUIEN CAMBIO ESTE DATO Y CUANDO]"],
+    "retencion": "[CUANTO TIEMPO HAY QUE CONSERVAR EL HISTORIAL]",
+    "motor": "[PostgreSQL | MySQL | SQL Server]"
+  },
+  "metodo": [
+    "Distinguir tres necesidades: versiones vigentes en el tiempo, registro de auditoria y borrado logico",
+    "Para versiones, aplicar el patron de validez temporal con valido_desde y valido_hasta y una unica fila vigente",
+    "Para auditoria, disenar una tabla de eventos con tabla, id_registro, campo, valor_anterior, valor_nuevo, usuario y momento",
+    "Para borrado, usar borrado_en en vez de DELETE y explicar como afecta a las consultas existentes",
+    "Definir como se purga el historial cuando vence la retencion"
+  ],
+  "restricciones": [
+    "El historial nunca se modifica ni se borra a mano: solo se anaden filas",
+    "Las consultas del dia a dia deben seguir siendo simples: propon una vista con los registros vigentes",
+    "Guarda quien hizo el cambio incluso si fue un proceso automatico",
+    "No dupliques columnas que no cambian nunca"
+  ],
+  "formato_salida": {
+    "1_decision": "Que patron aplicas a cada tabla y por que",
+    "2_tablas": "Definicion de las tablas de historial y auditoria con sus campos",
+    "3_sql": "CREATE TABLE, vistas de registros vigentes y disparadores o procedimiento que rellena la auditoria",
+    "4_consultas": "Una consulta SQL por cada pregunta del pasado de la lista",
+    "5_mantenimiento": "Consulta de purga y periodicidad recomendada"
+  },
+  "criterios_calidad": [
+    "Cada pregunta del pasado tiene su consulta y devuelve el resultado correcto",
+    "Nunca puede haber dos filas vigentes a la vez para el mismo registro",
+    "Las consultas actuales de la aplicacion siguen funcionando o se indica exactamente que cambiar"
+  ],
+  "tono": "Metodico y claro, espanol de Espana"
+}

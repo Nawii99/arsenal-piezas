@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar la sustitución progresiva de un sistema antiguo por uno nuevo, funcionalidad a funcionalidad, con ambos conviviendo",
+  "contexto": {
+    "sistema_actual": "[QUÉ ES Y CON QUÉ ESTÁ HECHO]",
+    "motivo_del_cambio": "[POR QUÉ NO SIRVE: costes, sin soporte, imposible de mantener, no escala]",
+    "usuarios_afectados": "[QUIÉN LO USA Y CUÁNTOS]",
+    "datos": "[VOLUMEN Y TIPO DE DATOS QUE HAY QUE CONSERVAR]",
+    "plazo": "[PLAZO REALISTA DISPONIBLE]"
+  },
+  "entradas": {
+    "funcionalidades": "[LISTA DE LO QUE HACE EL SISTEMA ACTUAL]",
+    "integraciones": "[QUÉ OTROS SISTEMAS DEPENDEN DE ÉL]",
+    "lo_que_no_se_puede_romper": "[PROCESOS CRÍTICOS: cobros, facturación, envíos...]"
+  },
+  "metodo": [
+    "Dibuja la frontera: qué punto único de entrada puede desviar tráfico entre viejo y nuevo",
+    "Ordena las funcionalidades por relación valor / riesgo y empieza por una pequeña y aislada",
+    "Define para cada trozo cómo conviven los datos: quién manda, cómo se sincroniza y cómo se evita duplicar",
+    "Define el plan de vuelta atrás de cada trozo",
+    "Define los criterios para apagar definitivamente cada parte del sistema viejo"
+  ],
+  "restricciones": [
+    "Nada de un único cambio grande el día D",
+    "Cada fase entrega valor observable y se puede parar sin dejar el negocio a medias",
+    "Los datos críticos nunca tienen dos dueños a la vez",
+    "Contempla el coste de mantener los dos sistemas en paralelo"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["Mapa de funcionalidades y orden de migración", "Fases con entregable y duración", "Convivencia de datos por fase", "Riesgos y mitigaciones", "Criterios de apagado del sistema viejo", "Coste de mantener ambos en paralelo", "Señales de alarma para replantear el plan"],
+    "formato_de_cada_fase": "nº | funcionalidad | por qué ahora | riesgo | vuelta atrás | señal de éxito"
+  },
+  "criterios_calidad": [
+    "La primera fase es pequeña y da un aprendizaje real",
+    "Cada fase indica cómo volver atrás en el mismo día",
+    "El plan dice explícitamente qué NO se va a migrar y por qué"
+  ]
+}

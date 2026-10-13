@@ -1,0 +1,38 @@
+{
+  "tarea": "Analizar la solicitud de ejercicio de derechos de un interesado y redactar la respuesta formal, la verificación de identidad y el registro interno del expediente",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "responsable_de_responder": "[NOMBRE Y CARGO]",
+    "fecha_de_recepcion": "[FECHA]"
+  },
+  "entradas": {
+    "solicitud_literal": "[PEGA AQUÍ EL CORREO O ESCRITO TAL CUAL]",
+    "derecho_solicitado": "[ACCESO / RECTIFICACIÓN / SUPRESIÓN / OPOSICIÓN / LIMITACIÓN / PORTABILIDAD / NO ME LO DICE]",
+    "datos_que_tienes": "[DÓNDE ESTÁN SUS DATOS: CRM, facturas, email marketing, copias de seguridad, WhatsApp]",
+    "obligaciones_de_conservar": "[FACTURAS, GARANTÍAS, RECLAMACIONES ABIERTAS U OTROS MOTIVOS LEGALES]"
+  },
+  "pasos": [
+    "Identifica qué derecho se ejerce aunque el solicitante no lo nombre bien",
+    "Comprueba si hace falta verificar la identidad y con qué medida proporcionada, sin pedir el DNI por sistema",
+    "Calcula la fecha límite de respuesta (un mes desde la recepción) y si procede prórroga de dos meses motivada",
+    "Separa los datos que deben eliminarse de los que hay que conservar bloqueados por obligación legal, explicando el motivo",
+    "Redacta la respuesta al interesado en tono cordial y sin jerga",
+    "Prepara la lista de acciones internas: sistemas a tocar, avisos a proveedores y copias de seguridad"
+  ],
+  "restricciones": [
+    "Nunca pedir más documentación de la necesaria para identificar a la persona",
+    "No cobrar por la primera solicitud",
+    "No responder con silencio: incluso denegar exige respuesta motivada e informar de la reclamación ante la AEPD"
+  ],
+  "formato_salida": {
+    "1_analisis": "derecho, plazo límite y decisión con su justificación",
+    "2_email": "respuesta lista para enviar al interesado",
+    "3_acciones_internas": "checklist con responsable y sistema afectado",
+    "4_registro": "ficha del expediente para el archivo de solicitudes"
+  },
+  "criterios_calidad": [
+    "La respuesta dice exactamente qué se ha hecho con sus datos y qué se conserva y por qué",
+    "Aparece la fecha límite y se cumple",
+    "Queda constancia escrita de todo el proceso"
+  ]
+}

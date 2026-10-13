@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar una secuencia automática de 3 correos para recuperar carritos abandonados en una tienda online",
+  "contexto": {
+    "tienda": "[NOMBRE Y QUÉ VENDE]",
+    "producto_tipo": "[PRODUCTO O CATEGORÍA MÁS ABANDONADA]",
+    "precio_medio": "[PRECIO MEDIO DEL CARRITO]",
+    "envio": "[COSTE, PLAZO Y SI HAY ENVÍO GRATIS A PARTIR DE X]",
+    "devoluciones": "[PLAZO Y CONDICIONES REALES]",
+    "pagos": "[MÉTODOS DE PAGO DISPONIBLES]",
+    "puede_dar_descuento": "[SÍ, DE CUÁNTO / NO]",
+    "motivos_de_abandono_conocidos": "[PRECIO, ENVÍO, DUDAS DE TALLA, COMPARANDO, FALTA DE CONFIANZA]"
+  },
+  "secuencia": [
+    "Correo 1 a las 1-2 horas: recordatorio útil y sin presión, con la lista del carrito y un enlace directo para retomar la compra",
+    "Correo 2 a las 20-24 horas: resuelve la fricción principal (envío, devoluciones, tallas, seguridad del pago) con 3 respuestas cortas y una reseña real",
+    "Correo 3 a las 48-72 horas: último aviso; si hay descuento se usa AQUÍ y solo aquí, con fecha de caducidad real y alternativa de producto similar"
+  ],
+  "para_cada_correo": [
+    "Retraso desde el abandono y condición de parada si ya ha comprado",
+    "Dos asuntos y un preheader",
+    "Cuerpo de 90 a 180 palabras, muy escaneable",
+    "Bloque de datos dinámicos entre llaves para tu plataforma, por ejemplo {{nombre}} y {{productos_carrito}}",
+    "Botón principal con su texto exacto y un enlace secundario de contacto"
+  ],
+  "restricciones": [
+    "Sin culpabilizar ni frases tipo 'te has olvidado de algo'",
+    "Nada de cuentas atrás falsas ni stock inventado",
+    "Descuento solo en el tercer correo para no enseñar a la gente a abandonar el carrito a propósito",
+    "Cumple con la ley: enlace de baja y datos identificativos de la empresa al pie"
+  ],
+  "formato_salida": "Tabla con nº, retraso, objetivo y asunto; después los 3 correos completos; al final una lista de 5 comprobaciones antes de activar la automatización",
+  "criterios_calidad": [
+    "Cada correo funciona por sí solo y no repite el mismo argumento",
+    "Toda promesa de envío o devolución coincide con los datos aportados",
+    "El texto se entiende en pantalla de móvil sin ampliar"
+  ]
+}

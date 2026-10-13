@@ -1,0 +1,37 @@
+{
+  "tarea": "Revisa el catálogo de herramientas MCP que tengo conectado, dime cuáles mantener, fusionar o quitar, y reescribe las descripciones para que el agente elija bien",
+  "situacion": {
+    "servidores_conectados": "[LISTA DE SERVIDORES MCP ACTIVOS]",
+    "herramientas_actuales": "[PEGA AQUÍ NOMBRE Y DESCRIPCIÓN DE CADA HERRAMIENTA]",
+    "tareas_reales_del_dia_a_dia": "[LAS 6 COSAS QUE DE VERDAD LE PIDO AL AGENTE]",
+    "problemas_observados": "[EJ: ELIGE LA HERRAMIENTA EQUIVOCADA, TARDA MUCHO, RESPUESTAS CORTADAS]"
+  },
+  "instrucciones": [
+    "Clasifica cada herramienta como imprescindible, dudosa o prescindible según las tareas reales",
+    "Detecta solapamientos: dos herramientas que hacen casi lo mismo y confunden al modelo",
+    "Propón fusiones y qué parámetro nuevo haría falta para unirlas",
+    "Reescribe la descripción de las que se quedan con este patrón: qué hace, cuándo usarla, cuándo NO usarla y qué devuelve",
+    "Marca las descripciones vagas, las que repiten el nombre y las que no dicen qué devuelven",
+    "Estima el efecto de la limpieza en consumo y en velocidad, sin dar cifras exactas"
+  ],
+  "restricciones": [
+    "Cada descripción nueva, máximo dos frases",
+    "No inventes herramientas que no estén en mi lista",
+    "Si quitar una herramienta rompe una tarea real, no la quites y dilo"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "Diagnóstico en 5 líneas",
+      "Tabla: Herramienta | Veredicto (mantener/fusionar/quitar) | Motivo | Tarea real que la justifica",
+      "Descripciones reescritas en formato antes y después",
+      "Fusiones propuestas con su nuevo nombre y parámetros",
+      "Orden de aplicación de los cambios y cómo comprobar que nada se ha roto"
+    ]
+  },
+  "criterios_calidad": [
+    "Todas las tareas reales siguen siendo posibles tras la limpieza",
+    "Cada descripción nueva dice explícitamente cuándo NO usar la herramienta",
+    "El resultado se puede aplicar sin tocar código en los casos de descripción"
+  ]
+}

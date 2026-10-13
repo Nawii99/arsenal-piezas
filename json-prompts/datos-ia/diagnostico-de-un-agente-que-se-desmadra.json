@@ -1,0 +1,38 @@
+{
+  "tarea": "Diagnosticar por que el agente [NOMBRE DEL AGENTE] no se comporta como espero y reescribir su definicion",
+  "contexto": {
+    "instrucciones_actuales": "[PEGA AQUI EL TEXTO COMPLETO DE INSTRUCCIONES DEL AGENTE]",
+    "ejemplos_de_fallo": "[PEGA 3 RESPUESTAS MALAS CON LA PETICION QUE LAS PROVOCO]",
+    "que_esperaba": "[QUE DEBERIA HABER RESPONDIDO EN CADA CASO]",
+    "herramientas_que_usa": "[LISTA DE ACCESOS Y CONEXIONES]",
+    "subagentes": "[SI TIENE, CUALES Y PARA QUE]"
+  },
+  "causas_a_descartar_en_orden": [
+    "Mision poco clara o con dos objetivos a la vez",
+    "Alcance sin limites: no dice que NO hace",
+    "Reglas que se contradicen entre si",
+    "Formato de salida sin definir o definido a medias",
+    "Falta de instruccion sobre que hacer cuando falta informacion",
+    "Instrucciones demasiado largas y con relleno que tapa lo importante",
+    "Trabajo mal repartido: deberia haber un subagente y no lo hay",
+    "Herramientas de mas que le abren la puerta a salirse de su tarea"
+  ],
+  "metodo": [
+    "1. Relaciona cada ejemplo de fallo con una causa concreta de la lista",
+    "2. Cita la frase exacta de las instrucciones que provoca o permite el fallo",
+    "3. Propon la correccion minima: cambiar, quitar o añadir",
+    "4. Ordena las correcciones por impacto y esfuerzo",
+    "5. Entrega la definicion corregida completa"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Tabla con columnas: Fallo observado, Causa, Frase culpable, Correccion propuesta",
+    "2_prioridad": "Las 3 correcciones que arreglan mas fallos con menos cambios",
+    "3_version_nueva": "Texto de instrucciones corregido, completo y listo para pegar",
+    "4_comprobacion": "3 pruebas concretas para verificar que el fallo ya no ocurre"
+  },
+  "restricciones": [
+    "No añadas reglas nuevas que no respondan a un fallo observado",
+    "Si el problema es que la tarea es demasiado grande, dilo y propon el reparto en subagentes",
+    "No culpes al modelo sin haber descartado antes todas las causas de la lista"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar una petición de referidos a un cliente satisfecho y el texto de presentación para que él lo reenvíe",
+  "entradas": {
+    "cliente": "[NOMBRE DEL CLIENTE Y SU EMPRESA]",
+    "resultado_conseguido": "[QUÉ LE HAS RESUELTO, CON EL DETALLE MÁS CONCRETO QUE TENGAS]",
+    "momento": "[QUÉ HA PASADO HOY: ENTREGA, ELOGIO, RENOVACIÓN, CIERRE DE PROYECTO]",
+    "a_quien_quiero_llegar": "[PERFIL DE PERSONA O EMPRESA QUE BUSCAS]",
+    "canal": "[EMAIL, WHATSAPP O EN PERSONA]",
+    "que_ofrezco_a_cambio": "[NADA, DESCUENTO, EXTRA DE SERVICIO O RECIPROCIDAD]"
+  },
+  "pasos": [
+    "Elegir el momento adecuado y justificar por qué es ahora",
+    "Escribir la petición: recordar el resultado, pedir algo fácil y concreto, no 'si conoces a alguien'",
+    "Nombrar 2 o 3 perfiles concretos para que al cliente le venga alguien a la cabeza",
+    "Escribir el texto de presentación listo para reenviar, en nombre del cliente y muy corto",
+    "Escribir el primer mensaje al referido, mencionando quién nos conecta",
+    "Escribir el agradecimiento posterior al cliente, salga o no salga"
+  ],
+  "restricciones": [
+    "Sin chantaje emocional ni insistencia",
+    "Que el cliente pueda ayudarte en menos de dos minutos",
+    "No prometas comisiones ni regalos que no vayas a cumplir",
+    "Máximo 100 palabras por mensaje"
+  ],
+  "formato_salida": {
+    "mensaje_1": "Petición al cliente",
+    "mensaje_2": "Texto para reenviar, escrito como si lo firmara el cliente",
+    "mensaje_3": "Primer contacto con el referido",
+    "mensaje_4": "Agradecimiento",
+    "nota": "Qué hacer si el cliente no contesta a la petición"
+  },
+  "criterios_calidad": [
+    "La petición nombra perfiles concretos, no un 'alguien que le pueda interesar'",
+    "El texto para reenviar se puede copiar sin editar nada salvo el nombre",
+    "El mensaje al referido explica en la primera línea quién nos conecta"
+  ]
+}

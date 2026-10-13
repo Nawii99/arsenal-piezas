@@ -1,0 +1,27 @@
+{
+  "tarea": "Explicar una consulta SQL heredada a una persona sin perfil técnico y señalar sus puntos frágiles",
+  "entradas": {
+    "motor": "[MOTOR Y VERSIÓN]",
+    "consulta": "[PEGA AQUÍ EL SQL QUE NO ENTIENDES]",
+    "para_que_se_usa": "[INFORME, PANTALLA O EXPORTACIÓN DONDE APARECE]",
+    "esquema": "[ESQUEMA DE TABLAS SI LO TIENES, O ESCRIBE NO LO TENGO]"
+  },
+  "formato_salida": {
+    "resumen_una_frase": "Qué devuelve esta consulta, en una sola frase de negocio",
+    "de_donde_sale_cada_dato": "Tabla con columnas Columna del resultado, De qué tabla sale, Cómo se calcula",
+    "filtros_aplicados": "Lista en lenguaje normal de qué se está dejando fuera y qué se incluye",
+    "paso_a_paso": "La consulta explicada por bloques numerados, en el orden en que el motor la resuelve",
+    "puntos_fragiles": "Riesgos: fechas fijas escritas a mano, filtros que ocultan filas con valores vacíos, duplicados por JOIN, divisiones que pueden dar error",
+    "preguntas_al_autor": "3 preguntas que harías a quien la escribió si pudieras"
+  },
+  "restricciones": [
+    "Nada de jerga sin traducir: si aparece JOIN, ventana o subconsulta, explicarlo con una comparación cotidiana",
+    "No reescribir la consulta: aquí solo se explica",
+    "Si una parte no se entiende sin ver los datos, decirlo en vez de suponer"
+  ],
+  "criterios_calidad": [
+    "Alguien sin conocimientos técnicos puede resumir qué hace la consulta después de leer la respuesta",
+    "Cada columna del resultado queda explicada, ninguna se queda sin comentar"
+  ],
+  "tono": "Didáctico, cercano y sin condescendencia"
+}

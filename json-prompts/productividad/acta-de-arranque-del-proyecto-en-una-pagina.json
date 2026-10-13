@@ -1,0 +1,40 @@
+{
+  "tarea": "Redactar el acta de arranque (documento de inicio) de un proyecto, en una página, lista para enviar y aprobar por escrito",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL PROYECTO]",
+    "cliente_o_area": "[CLIENTE O DEPARTAMENTO PARA EL QUE SE HACE]",
+    "problema_a_resolver": "[QUÉ PROBLEMA REAL RESUELVE ESTE PROYECTO]",
+    "entregables": "[LISTA DE COSAS CONCRETAS QUE SE ENTREGAN]",
+    "fechas": "[INICIO DD/MM/AAAA - FIN DD/MM/AAAA]",
+    "presupuesto": "[IMPORTE O HORAS ACORDADAS]",
+    "personas": "[QUIÉN HACE QUÉ Y QUIÉN APRUEBA POR PARTE DEL CLIENTE]",
+    "dudas_o_miedos": "[QUÉ TEMES QUE SE DESMADRE, EJ: CAMBIOS INFINITOS DE DISEÑO]"
+  },
+  "secciones_obligatorias": [
+    "Objetivo del proyecto en una sola frase medible",
+    "Qué SÍ incluye: lista cerrada de entregables con su definición de terminado",
+    "Qué NO incluye: lista explícita de lo que queda fuera y se presupuestaría aparte",
+    "Hitos y fechas clave, máximo 6, cada uno con qué se enseña ese día",
+    "Quién hace qué: responsable, quien aprueba y quien solo se entera",
+    "Qué necesitamos del cliente y para cuándo (materiales, accesos, respuestas)",
+    "Cómo se piden cambios y qué pasa con el precio y el plazo si se piden",
+    "Cómo nos comunicamos: canal, informe semanal y plazo máximo de respuesta",
+    "Criterios de aceptación final y qué se considera proyecto terminado"
+  ],
+  "restricciones": [
+    "Lenguaje llano, frases cortas, nada de tecnicismos sin explicar",
+    "Cada compromiso lleva fecha o no se escribe",
+    "No inventes datos: lo que falte queda como [PENDIENTE DE CONFIRMAR] en una lista al final",
+    "Máximo 700 palabras en total"
+  ],
+  "formato_salida": {
+    "tipo": "documento en markdown con encabezados por sección",
+    "extra_final": "Bloque 'Pendiente de confirmar' y línea de firma con fecha para las dos partes"
+  },
+  "criterios_calidad": [
+    "Alguien ajeno al proyecto entiende qué se va a entregar leyéndolo una vez",
+    "La sección de lo que NO incluye tiene al menos 4 puntos concretos",
+    "No hay ninguna promesa sin fecha ni responsable"
+  ],
+  "tono": "profesional y cercano, tuteando si el cliente es de confianza"
+}

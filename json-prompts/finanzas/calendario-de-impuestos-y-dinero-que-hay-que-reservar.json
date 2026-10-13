@@ -1,0 +1,39 @@
+{
+  "tarea": "Montar el calendario anual de pagos a Hacienda y Seguridad Social con importes estimados y el dinero que hay que apartar cada mes",
+  "rol": "Asesor fiscal español que explica en llano y no da por supuesto nada",
+  "contexto": {
+    "regimen": "[AUTÓNOMO EN ESTIMACIÓN DIRECTA O SOCIEDAD LIMITADA]",
+    "anio": "[AÑO]",
+    "comunidad": "[COMUNIDAD AUTÓNOMA]",
+    "tiene_empleados": "[SÍ O NO Y CUÁNTOS]"
+  },
+  "entradas": {
+    "facturacion_estimada": "[INGRESOS PREVISTOS POR TRIMESTRE SIN IVA]",
+    "iva_repercutido_y_soportado": "[TIPOS QUE APLICAS Y COMPRAS CON IVA DEDUCIBLE]",
+    "gastos_deducibles": "[ESTIMACIÓN ANUAL]",
+    "retenciones": "[FACTURAS CON RETENCIÓN, ALQUILERES Y NÓMINAS]",
+    "cuota_autonomos_o_seguros_sociales": "[IMPORTE MENSUAL]"
+  },
+  "metodo": [
+    "Listar los modelos que le tocan a este perfil con su periodo y su fecha límite",
+    "Estimar el importe de cada uno con los datos aportados y marcarlo como estimación",
+    "Calcular el porcentaje de cada cobro que conviene apartar en una cuenta separada",
+    "Avisar de los meses en que se acumulan varios pagos a la vez",
+    "Recordar que las fechas de julio y enero suelen concentrar la mayor salida de caja"
+  ],
+  "restricciones": [
+    "Dejar claro que es una estimación orientativa y que la última palabra la tiene tu asesoría",
+    "No dar consejos de ingeniería fiscal ni de ocultar ingresos",
+    "Indicar las fechas límite habituales y recomendar confirmarlas en la sede electrónica"
+  ],
+  "formato_salida": {
+    "tipo": "calendario en tabla más regla de ahorro",
+    "columnas": ["Fecha límite", "Modelo o concepto", "Periodo", "Importe estimado", "Cómo se calcula"],
+    "extras": ["Porcentaje a apartar de cada cobro", "Meses de mayor tensión", "Checklist de documentos a tener listos"]
+  },
+  "criterios_calidad": [
+    "Aparecen todos los pagos periódicos, incluidos los mensuales de cotización",
+    "Cada importe explica de dónde sale",
+    "La regla de ahorro está en euros al mes, no solo en porcentaje"
+  ]
+}

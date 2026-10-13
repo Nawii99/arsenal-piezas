@@ -1,0 +1,36 @@
+{
+  "tarea": "Comparar el presupuesto con los datos reales del mes cerrado, explicar las desviaciones relevantes y actualizar la previsión de cierre de año",
+  "rol": "Controller financiero que revisa cierres mensuales de pymes",
+  "contexto": {
+    "negocio": "[A QUÉ TE DEDICAS]",
+    "mes_cerrado": "[MES Y AÑO]",
+    "umbral_relevancia": "[DESVIACIÓN A PARTIR DE LA CUAL QUIERES QUE TE AVISE, EN EUROS O EN PORCENTAJE]"
+  },
+  "entradas": {
+    "presupuesto_mes": "[INGRESOS Y GASTOS PRESUPUESTADOS POR PARTIDA]",
+    "real_mes": "[INGRESOS Y GASTOS REALES POR PARTIDA]",
+    "acumulado_anio": "[PRESUPUESTADO Y REAL ACUMULADO HASTA HOY]",
+    "hechos_conocidos": "[UN CLIENTE QUE SE FUE, UNA CAMPAÑA, UNA SUBIDA DE PRECIOS, UNA AVERÍA]"
+  },
+  "metodo": [
+    "Calcular desviación en euros y en porcentaje por partida, en el mes y en el acumulado",
+    "Filtrar y comentar solo las que superen el umbral de relevancia",
+    "Separar la desviación por precio, por volumen y por gasto no previsto cuando se pueda",
+    "Distinguir desviación puntual de desviación que se va a repetir todos los meses",
+    "Actualizar la previsión de cierre de año con lo aprendido en el mes"
+  ],
+  "restricciones": [
+    "No adornar los malos resultados ni buscar excusas",
+    "Si una desviación no tiene explicación con los datos aportados, decir que hace falta revisarla",
+    "No proponer acciones sin decir cuánto dinero recuperan"
+  ],
+  "formato_salida": {
+    "tipo": "informe mensual de una página",
+    "secciones": ["Semáforo del mes", "Tabla de desviaciones por partida", "Las tres desviaciones que importan y por qué", "Previsión actualizada de cierre", "Acciones para el mes siguiente"]
+  },
+  "criterios_calidad": [
+    "Cada desviación relevante lleva causa y una acción concreta",
+    "Queda claro qué desviaciones son recurrentes",
+    "La previsión actualizada dice cuánto cambia respecto al presupuesto original"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Definir una escala tipografica completa y coherente para una marca, con jerarquia y valores exactos",
+  "contexto": {
+    "proyecto": "[WEB, TIENDA ONLINE, APP O DOCUMENTOS PDF]",
+    "fuente_titulares": "[NOMBRE DE LA FUENTE]",
+    "fuente_texto": "[NOMBRE DE LA FUENTE]",
+    "tamano_base_texto": "[16 px POR DEFECTO, CAMBIALO SI QUIERES]",
+    "densidad": "[AIREADA O COMPACTA]",
+    "necesita_movil": "[SI O NO]"
+  },
+  "proceso": [
+    "Elige una razon de escala coherente con la densidad (1,2 compacta; 1,25 equilibrada; 1,333 aireada) y di cual usas",
+    "Genera los niveles: display, h1, h2, h3, h4, texto grande, texto, texto pequeno, pie y etiqueta",
+    "Para cada nivel fija tamano, peso, interlineado, espaciado entre letras y margen superior e inferior",
+    "Ajusta el interlineado a la baja en tamanos grandes y al alza en tamanos pequenos",
+    "Crea la variante movil reduciendo solo los niveles grandes, nunca el texto de lectura",
+    "Fija la anchura maxima de linea en caracteres para el texto largo"
+  ],
+  "restricciones": [
+    "Nada por debajo de 14 px en texto de lectura",
+    "Maximo 3 pesos distintos en toda la marca",
+    "Interlineado del texto de lectura entre 1,5 y 1,7",
+    "Los valores deben ser numeros redondos y faciles de recordar"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de escala mas bloque de codigo",
+    "columnas": ["Nivel", "Uso real", "Tamano escritorio", "Tamano movil", "Peso", "Interlineado", "Espaciado entre letras"],
+    "extra": ["Bloque CSS con variables listo para copiar", "3 reglas de uso en una linea cada una", "Ejemplo de pagina montada con la escala"]
+  },
+  "criterios_calidad": [
+    "Se distingue de un vistazo un h2 de un h3",
+    "Ningun valor arbitrario: todos salen de la escala declarada",
+    "La version movil no rompe la jerarquia"
+  ],
+  "tono": "Practico, valores concretos, cero teoria de mas"
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Escribe la secuencia de mensajes para recuperar pagos rechazados y pedidos que se quedaron a medias en el checkout",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "pasarela": "[STRIPE / REDSYS / PAYPAL / OTRA]",
+    "metodos_disponibles": "[TARJETA, BIZUM, PAYPAL, TRANSFERENCIA, CONTRA REEMBOLSO...]",
+    "motivos_de_rechazo_frecuentes": "[LOS QUE VEAS EN TU PANEL]",
+    "reserva_de_stock": "[¿GUARDAS EL PRODUCTO? CUÁNTO TIEMPO]",
+    "contacto_de_soporte": "[EMAIL O TELÉFONO DE ATENCIÓN]"
+  },
+  "casos_a_cubrir": [
+    {"caso": "tarjeta rechazada por el banco", "envio": "a los 15 minutos"},
+    {"caso": "pago que requiere confirmación del banco y no se completó", "envio": "a los 30 minutos"},
+    {"caso": "transferencia o Bizum pendiente de recibir", "envio": "a las 24 y a las 72 horas"},
+    {"caso": "pedido creado sin pago asociado", "envio": "a la hora"}
+  ],
+  "para_cada_caso": ["asunto", "cuerpo_del_email", "version_sms_max_160_caracteres", "que_debe_hacer_el_cliente_en_pasos", "alternativa_de_pago_que_le_ofreces"],
+  "restricciones": [
+    "Nunca dar a entender que el cliente ha hecho algo mal ni que su banco es el culpable",
+    "Nunca pedir datos de tarjeta por email, WhatsApp ni teléfono: siempre enlace seguro de pago",
+    "Explicar en una frase qué ha pasado y en tres pasos cómo arreglarlo",
+    "Si el stock está reservado, decir hasta cuándo con fecha y hora",
+    "Español de España, tono tranquilo y de servicio, sin venta"
+  ],
+  "formato_salida": {
+    "bloque_por_caso": "Todos los campos definidos, listos para copiar",
+    "tabla_final": ["caso", "momento_de_envio", "canal", "accion_interna"],
+    "aviso_interno": "Plantilla corta para avisar al equipo cuando un pago superior a [IMPORTE] se queda pendiente"
+  },
+  "criterios_calidad": [
+    "Cada mensaje ofrece al menos una forma alternativa de pagar",
+    "Ningún mensaje pide datos sensibles",
+    "Se entiende en 10 segundos qué tiene que hacer el cliente"
+  ]
+}

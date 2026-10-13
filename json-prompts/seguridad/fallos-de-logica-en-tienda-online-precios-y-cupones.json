@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar las pruebas de lógica de negocio del proceso de compra de una tienda online propia, para detectar formas de pagar de menos o de obtener ventajas no previstas",
+  "contexto": {
+    "tienda": "[NOMBRE Y URL]",
+    "plataforma": "[SHOPIFY, WOOCOMMERCE, PRESTASHOP, A MEDIDA]",
+    "pasarela": "[STRIPE, REDSYS, PAYPAL...]",
+    "cupones": "[TIPOS DE DESCUENTO Y REGLAS ACTUALES]",
+    "envios": "[REGLAS DE PORTES Y GRATUIDAD]",
+    "pasos_compra": "[CARRITO, DATOS, PAGO, CONFIRMACIÓN]"
+  },
+  "autorizacion": "Solo sobre la tienda propia y, si es posible, en entorno de pruebas con pagos en modo test",
+  "pasos": [
+    "Mapear el recorrido de compra y anotar en qué momento se calcula el precio final y quién lo calcula",
+    "Diseñar pruebas de cupones: acumulación de varios, reutilización tras devolución, uso fuera de fecha, uso por debajo del mínimo de compra",
+    "Diseñar pruebas de cantidades: cantidad cero, negativa, decimal o mayor que el stock",
+    "Diseñar pruebas de envío: dirección cambiada después de calcular portes, cambio de país tras aplicar tarifa",
+    "Diseñar pruebas del final del proceso: volver atrás tras pagar, cerrar la ventana antes de confirmar, repetir la confirmación dos veces",
+    "Comprobar que el pedido solo pasa a pagado cuando la pasarela lo confirma, no cuando el navegador vuelve a la web",
+    "Definir para cada prueba el resultado correcto y la evidencia a guardar"
+  ],
+  "restricciones": [
+    "Usar siempre tarjetas y modo de prueba de la pasarela; nunca cobros reales de clientes",
+    "No incluir manipulación de peticiones ni herramientas de interceptación: pruebas realizables desde la propia tienda",
+    "Anular o borrar los pedidos de prueba al terminar"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de casos",
+    "columnas": ["Nº", "Zona", "Qué se prueba", "Pasos", "Resultado correcto", "Pérdida potencial si falla", "Prioridad"],
+    "cierre": "lista de 5 reglas a fijar en la tienda para que estos fallos no vuelvan"
+  },
+  "criterios_calidad": [
+    "Cada caso está ligado a una regla real de cupones o envíos de la tienda",
+    "La columna de pérdida potencial se expresa en términos de negocio, sin inventar cifras",
+    "Las pruebas se pueden repetir antes de cada campaña"
+  ],
+  "tono": "comercial y concreto"
+}

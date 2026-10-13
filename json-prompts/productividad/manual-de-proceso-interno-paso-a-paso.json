@@ -1,0 +1,45 @@
+{
+  "tarea": "Convertir una explicación informal sobre cómo se hace una tarea en un procedimiento interno claro que cualquiera pueda seguir sin preguntar.",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "proceso": "[NOMBRE DEL PROCESO, EJ: DAR DE ALTA A UN CLIENTE NUEVO]",
+    "quien_lo_ejecuta": "[PUESTO O PERSONA QUE HARÁ ESTE PROCESO]",
+    "herramientas": "[PROGRAMAS Y ACCESOS QUE SE USAN]"
+  },
+  "entradas": {
+    "explicacion_en_bruto": "[PEGA AQUÍ TU EXPLICACIÓN TAL CUAL, AUNQUE ESTÉ DESORDENADA]",
+    "documentos_relacionados": "[NOMBRES DE PLANTILLAS O FICHEROS QUE SE USAN]"
+  },
+  "instrucciones": [
+    "Ordena los pasos en su secuencia real y numéralos.",
+    "Cada paso empieza con un verbo en infinitivo y describe una sola acción observable.",
+    "Indica en cada paso la herramienta donde se hace y el tiempo estimado.",
+    "Detecta pasos que faltan o están implícitos y márcalos como HUECO en vez de inventarlos.",
+    "Añade el punto de control de cada paso: qué hay que verificar antes de darlo por bueno.",
+    "Cierra con los errores típicos y qué hacer si algo falla."
+  ],
+  "restricciones": [
+    "No inventes herramientas, plazos ni políticas que no aparezcan en la explicación.",
+    "Nada de contraseñas ni datos personales de clientes dentro del documento.",
+    "Frases cortas, tuteo, sin jerga corporativa.",
+    "Máximo 15 pasos: si salen más, divide el proceso en subprocesos."
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "estructura": [
+      "Título y objetivo del procedimiento en una frase",
+      "Responsable, frecuencia y tiempo total estimado",
+      "Requisitos previos: accesos, materiales y permisos",
+      "Pasos numerados con herramienta, acción y punto de control",
+      "Errores típicos y qué hacer",
+      "Huecos detectados que el responsable debe completar",
+      "Pie con versión, fecha y fecha de próxima revisión"
+    ]
+  },
+  "criterios_calidad": [
+    "Una persona nueva podría ejecutarlo sin preguntar nada.",
+    "Ningún paso mezcla dos acciones distintas.",
+    "Lo que no se sabe aparece como HUECO, nunca como suposición."
+  ],
+  "tono": "Directo, práctico y sin adornos"
+}

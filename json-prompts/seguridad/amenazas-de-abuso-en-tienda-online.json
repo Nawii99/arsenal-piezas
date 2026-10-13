@@ -1,0 +1,31 @@
+{
+  "tarea": "Modelar el abuso de la lógica de negocio de una tienda o servicio online y proponer controles",
+  "contexto": {
+    "que_vendo": "[PRODUCTO O SERVICIO Y TICKET MEDIO]",
+    "cobro": "[PASARELA, CONTRA REEMBOLSO, SUSCRIPCIÓN, TRANSFERENCIA]",
+    "promociones": "[CUPONES, PRIMERA COMPRA, PUNTOS, REFERIDOS, ENVÍO GRATIS]",
+    "devoluciones": "[POLÍTICA ACTUAL Y PLAZO]",
+    "registro": "[SE PUEDE COMPRAR SIN CUENTA, VERIFICAS EMAIL O TELÉFONO]",
+    "volumen": "[PEDIDOS AL MES Y PICOS DE CAMPAÑA]"
+  },
+  "instrucciones": [
+    "Piensa como alguien que quiere ganar dinero usando la tienda tal y como está, sin romper nada",
+    "Cubre al menos estas familias: fraude con tarjeta y contracargos, abuso de cupones y multicuenta, devoluciones fraudulentas, reventa y bots en lanzamientos, pruebas gratuitas encadenadas, manipulación de precios y del carrito, suplantación en atención al cliente, reseñas falsas y fraude del repartidor o del proveedor",
+    "Para cada abuso indica la señal que lo delataría en tus datos y el control que lo frena",
+    "Separa controles automáticos, cambios de política y revisiones manuales",
+    "Avisa cuando un control vaya a molestar a clientes legítimos y propón el equilibrio"
+  ],
+  "restricciones": [
+    "No des instrucciones para cometer el fraude, solo la descripción del patrón y su detección",
+    "Controles realistas para un negocio pequeño, sin equipo antifraude dedicado"
+  ],
+  "formato_salida": {
+    "tabla": ["Abuso", "Cómo se ve desde fuera", "Pérdida típica", "Señal de alerta en mis datos", "Control recomendado", "Fricción para el cliente (alta/media/baja)"],
+    "secciones": ["Los 5 abusos más probables en mi caso", "Cambios de política que escribiría hoy", "Panel de 6 métricas para vigilar cada mes"]
+  },
+  "criterios_calidad": [
+    "Cada abuso encaja con mis reglas concretas de cupones, envíos y devoluciones",
+    "Las señales de alerta son medibles con los datos que ya tengo",
+    "Ningún control propuesto arruina la experiencia del cliente honesto sin avisarlo"
+  ]
+}

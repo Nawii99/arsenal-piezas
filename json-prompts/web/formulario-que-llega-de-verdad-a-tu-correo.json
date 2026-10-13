@@ -1,0 +1,59 @@
+{
+  "tarea": "Montar y depurar el formulario de contacto de [URL_WEB] para que los mensajes lleguen siempre, sin servidor propio",
+  "contexto": {
+    "negocio": "[NOMBRE Y SERVICIO]",
+    "web": "[HTML ESTÁTICO EN GITHUB PAGES / NETLIFY / OTRO HOSTING]",
+    "sintoma": "[NO LLEGA NADA / LLEGA A SPAM / LLEGA BASURA AUTOMÁTICA / AÚN NO EXISTE]",
+    "perfil_lector": "Sin programación, copia y pega bloques de código"
+  },
+  "entradas": {
+    "campos_necesarios": "[NOMBRE, EMAIL, TELÉFONO, MENSAJE, PRESUPUESTO, CÓMO ME CONOCISTE...]",
+    "email_de_destino": "[TU CORREO]",
+    "quieres_copia_en_hoja": "[SÍ / NO]",
+    "volumen_esperado": "[MENSAJES AL MES APROXIMADO]",
+    "html_actual": "[PEGA EL FORMULARIO ACTUAL SI EXISTE]"
+  },
+  "procedimiento": [
+    "1. Elige la vía de envío según el hosting: función del propio hosting, servicio gratuito de formularios o script de hoja de cálculo",
+    "2. Define los campos mínimos: cuantos menos, más consultas; cada campo extra hay que justificarlo",
+    "3. Escribe el HTML con etiquetas asociadas, tipos correctos de campo y campos obligatorios marcados",
+    "4. Añade antispam sin captcha: campo trampa oculto y control de tiempo mínimo de relleno",
+    "5. Programa los tres estados visibles: enviando, enviado correctamente y error con instrucción de qué hacer",
+    "6. Configura la respuesta automática al cliente y el asunto del aviso interno",
+    "7. Prueba desde móvil, desde otro navegador y con datos mal puestos",
+    "8. Revisa carpeta de spam y añade el remitente a contactos seguros"
+  ],
+  "que_mirar": [
+    "Que el mensaje de éxito no aparezca si el envío ha fallado",
+    "Que el campo trampa esté oculto por CSS y sin etiqueta visible",
+    "Que el teclado del móvil cambie a numérico en teléfono y a arroba en email",
+    "Que el aviso interno incluya la página de origen y la fecha",
+    "Que el botón se bloquee tras el primer clic para evitar duplicados"
+  ],
+  "errores_tipicos": [
+    "Usar un enlace mailto: la mitad de los visitantes no tiene programa de correo configurado",
+    "Pedir demasiados datos en el primer contacto",
+    "Dejar el formulario sin ninguna confirmación: el visitante lo envía dos o tres veces",
+    "No probar nunca el caso de error y descubrirlo meses después",
+    "Guardar datos personales sin casilla de privacidad"
+  ],
+  "restricciones": [
+    "Solo opciones con plan gratuito suficiente para el volumen indicado",
+    "Nada de librerías pesadas: HTML, CSS y JavaScript básico",
+    "Incluye la casilla de consentimiento y el enlace a la política de privacidad"
+  ],
+  "formato_salida": {
+    "1_recomendacion": "Qué vía usar para este hosting concreto y por qué, en 4 líneas",
+    "2_codigo_formulario": "HTML completo con estilos incluidos, listo para pegar",
+    "3_codigo_envio": "JavaScript de envío con estados y antispam, comentado en lenguaje llano",
+    "4_configuracion": "Pasos numerados en el panel del servicio elegido, con el nombre exacto de cada opción",
+    "5_textos": "Mensaje de éxito, mensaje de error y email de respuesta automática",
+    "6_pruebas": "Seis pruebas con el resultado esperado, incluida una de envío fallido"
+  },
+  "criterios_calidad": [
+    "El envío funciona desde móvil y desde ordenador y llega en menos de un minuto",
+    "Un envío con datos inválidos muestra el error junto al campo, no un aviso genérico",
+    "El formulario se puede rellenar entero con el teclado",
+    "Ningún dato personal se guarda sin consentimiento explícito"
+  ]
+}

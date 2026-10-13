@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar un sistema de puntuación de leads (lead scoring) sencillo y aplicable en mi CRM, con reglas de puntos, umbrales y acción asociada a cada tramo",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "producto_o_servicio": "[QUÉ VENDES Y A QUÉ PRECIO MEDIO]",
+    "cliente_ideal": "[SECTOR, TAMAÑO, CARGO DE QUIEN DECIDE, ZONA]",
+    "origen_de_leads": "[WEB, ANUNCIOS, FERIAS, RECOMENDACIONES, LISTAS FRÍAS]",
+    "capacidad_semanal": "[CUÁNTOS LEADS PUEDES TRABAJAR BIEN CADA SEMANA]"
+  },
+  "entradas": {
+    "señales_de_los_que_compran": "[QUÉ SUELEN TENER EN COMÚN TUS CLIENTES GANADOS]",
+    "señales_de_los_que_no_compran": "[QUÉ TENÍAN LOS QUE NUNCA CERRARON]",
+    "campos_disponibles_en_crm": "[LISTA DE CAMPOS QUE YA RELLENAS HOY]"
+  },
+  "reglas_del_modelo": [
+    "Puntuar por separado el ajuste (quién es) y el interés (qué ha hecho), y sumarlos al final",
+    "Usar solo señales que ya se pueden registrar con los campos disponibles",
+    "Incluir puntos negativos para descartar: fuera de zona, sin presupuesto, competencia, estudiante o curioso",
+    "Máximo 12 reglas en total para que sea mantenible a mano"
+  ],
+  "formato_salida": {
+    "tabla_ajuste": "señal | cómo se detecta | puntos",
+    "tabla_interes": "acción del lead | cómo se detecta | puntos | caducidad en días",
+    "tabla_negativos": "señal descalificante | puntos que resta",
+    "tramos": "Caliente / Templado / Frío / Descartado con rango de puntos, primera acción, canal y plazo máximo de contacto",
+    "extra": "Guion de una frase para abrir el contacto en cada tramo"
+  },
+  "restricciones": [
+    "Nada de fórmulas complicadas ni porcentajes que no se puedan calcular a mano",
+    "El total máximo debe ser 100 puntos",
+    "Si faltan datos para una señal, propón una alternativa observable"
+  ],
+  "criterios_calidad": [
+    "El tramo Caliente no supera la capacidad semanal indicada",
+    "Cada regla se puede comprobar en menos de 30 segundos por lead",
+    "Incluye cómo revisar el sistema cada trimestre con los cierres reales"
+  ]
+}

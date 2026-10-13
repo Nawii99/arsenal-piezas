@@ -1,0 +1,35 @@
+{
+  "tarea": "Analiza este script de Python que he heredado y explícame qué hace, qué riesgos tiene y cómo usarlo con seguridad",
+  "entradas": {
+    "codigo": "[PEGA AQUÍ EL SCRIPT COMPLETO]",
+    "origen": "[QUIÉN LO HIZO: EX-EMPLEADO, FREELANCE, UNA IA...]",
+    "para_que_creo_que_sirve": "[TU IDEA DE PARA QUÉ ES]"
+  },
+  "analiza": [
+    "Qué hace el script en una frase y en qué orden lo hace",
+    "Qué ficheros, carpetas, bases de datos o webs toca, y si lee o escribe en ellos",
+    "Qué librerías externas necesita y si alguna está abandonada",
+    "Qué datos de entrada espera y en qué formato",
+    "Qué operaciones son irreversibles: borrar, sobrescribir, enviar correos, cobrar",
+    "Contraseñas, claves de API o rutas personales escritas dentro del código",
+    "Partes muertas o que nunca llegan a ejecutarse"
+  ],
+  "formato_salida": {
+    "1_resumen": "Qué hace, en 3 líneas, para alguien no técnico",
+    "2_mapa": "Tabla con Bloque de código, Qué hace y Riesgo (alto/medio/bajo)",
+    "3_entradas_y_salidas": "Lista de lo que necesita y de lo que produce",
+    "4_manual_de_uso": "Pasos para ejecutarlo, incluida la instalación de librerías",
+    "5_semaforo": "Verde: se puede ejecutar. Ámbar: con precauciones. Rojo: no lo ejecutes, y por qué",
+    "6_dudas": "Preguntas que le haría a quien lo escribió"
+  },
+  "restricciones": [
+    "No reescribas el script salvo que te lo pida",
+    "Si el código está incompleto, dilo en vez de suponer lo que falta",
+    "Explica cada término técnico la primera vez que lo uses"
+  ],
+  "criterios_calidad": [
+    "Al terminar de leerlo sé si puedo ejecutarlo sin miedo",
+    "Todo lo que borra o envía algo aparece marcado en ámbar o rojo",
+    "El manual de uso funciona sin conocimientos previos"
+  ]
+}

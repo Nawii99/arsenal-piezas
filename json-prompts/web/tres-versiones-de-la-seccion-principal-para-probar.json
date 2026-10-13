@@ -1,0 +1,42 @@
+{
+  "tarea": "Crear tres maquetaciones distintas de la seccion principal de una landing para compararlas",
+  "contexto": {
+    "que_vendes": "[PRODUCTO O SERVICIO]",
+    "a_quien": "[CLIENTE IDEAL EN UNA FRASE]",
+    "promesa": "[QUE CONSIGUE EL CLIENTE CONTIGO]",
+    "prueba": "[NUMERO DE CLIENTES, ANOS, RESENAS O 'NINGUNA POR AHORA']",
+    "accion_principal": "[PEDIR PRESUPUESTO / COMPRAR / RESERVAR CITA]"
+  },
+  "entradas": {
+    "tienes_imagen": "[FOTO DE PRODUCTO / FOTO DEL EQUIPO / NINGUNA]",
+    "color_principal": "[#HEXADECIMAL]"
+  },
+  "variantes_a_generar": [
+    "A: texto centrado, sin imagen, titular muy grande y un solo boton",
+    "B: dos columnas, texto a la izquierda e imagen a la derecha, con boton y prueba social debajo",
+    "C: imagen de fondo con capa oscura, titular encima, boton y tres puntos de confianza en fila"
+  ],
+  "instrucciones": [
+    "El titular dice el resultado concreto para el cliente, no el nombre de tu empresa",
+    "Maximo 12 palabras en el titular y 25 en la frase de apoyo",
+    "Un unico boton principal; si pones un segundo enlace, que sea claramente secundario",
+    "Lo importante debe verse sin bajar en un movil de 360 por 640",
+    "En la variante C garantiza el contraste del texto sobre la imagen con una capa oscura",
+    "Cambia solo la maquetacion y el enfoque entre variantes, no el producto"
+  ],
+  "restricciones": [
+    "HTML y CSS puros, cada variante en su propio archivo o seccion separada",
+    "Sin ventanas emergentes, cuentas atras falsas ni datos inventados",
+    "Si no hay prueba social real, no la inventes: deja el hueco marcado"
+  ],
+  "formato_salida": {
+    "1_codigo": "las tres variantes maquetadas, una debajo de otra, con su etiqueta A, B y C",
+    "2_tabla_comparativa": "tabla con variante, a quien le encaja mejor y que hipotesis prueba",
+    "3_como_medirlo": "que mirar para decidir cual gana y durante cuanto tiempo"
+  },
+  "criterios_calidad": [
+    "Las tres se entienden en menos de cinco segundos",
+    "El boton principal se ve en pantalla sin bajar en movil",
+    "Ninguna promete resultados que no puedas cumplir"
+  ]
+}

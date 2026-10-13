@@ -1,0 +1,57 @@
+{
+  "tarea": "Crear la política anti-ausencias completa de un centro de salud o bienestar: escalado de recordatorios, condiciones de cancelación, textos de comunicación y guion para la conversación incómoda",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CENTRO]",
+    "precio_medio_sesion": "[PRECIO]",
+    "ausencias_al_mes": "[Nº APROXIMADO Y % SOBRE CITAS TOTALES]",
+    "perfil_cliente": "[MAYORES / FAMILIAS / GENTE QUE TRABAJA / DEPORTISTAS]",
+    "canal_de_aviso": "[WHATSAPP / SMS / LLAMADA / EMAIL]"
+  },
+  "entradas": {
+    "antelacion_reserva_media": "[DÍAS ENTRE QUE SE RESERVA Y LA CITA]",
+    "citas_mas_falladas": "[QUÉ SERVICIOS, DÍAS Y HORAS FALLAN MÁS]",
+    "politica_actual": "[LO QUE HACES HOY, AUNQUE SEA NADA]",
+    "disposicion_a_cobrar": "[NO COBRAR / COBRAR PARTE / PEDIR SEÑAL / SOLO A REINCIDENTES]",
+    "limites": "[LO QUE NO ESTÁS DISPUESTO A HACER]"
+  },
+  "procedimiento": [
+    "1. Calcula el coste real de una ausencia: precio de la sesión más el tiempo del profesional que se queda parado, y ponlo por escrito porque es el argumento de toda la política",
+    "2. Separa tres perfiles: el que avisa con tiempo, el que avisa tarde y el que no aparece, y dales trato distinto",
+    "3. Diseña el escalado de recordatorios en tres momentos: al reservar, unos días antes y el día anterior, cada uno con un objetivo distinto y no repitiendo el mismo texto",
+    "4. Convierte el recordatorio de la víspera en una confirmación activa: la persona tiene que responder algo, aunque sea una palabra",
+    "5. Escribe la regla de cancelación en una frase que quepa en el mensaje de reserva y que un cliente entienda a la primera",
+    "6. Define el trato al reincidente: a partir de cuántas ausencias se le pide señal o se le da hora solo el mismo día",
+    "7. Escribe el guion de la llamada tras una ausencia: primero preguntar qué pasó, después recordar la norma, nunca al revés",
+    "8. Escribe cómo se anuncia el cambio de política a los clientes de siempre para que no lo lean como castigo",
+    "9. Define el registro mensual de ausencias por servicio, día y hora para ver si la política funciona"
+  ],
+  "restricciones": [
+    "Nada de amenazas ni tono de multa: la norma se explica por el hueco que se queda sin usar",
+    "Ningún recordatorio revela el motivo de la consulta ni el tratamiento",
+    "Los cobros por ausencia solo se aplican si se avisaron por escrito antes de reservar",
+    "Prevé la excepción humana: enfermedad, urgencia familiar o accidente no se penalizan",
+    "Español de España, de tú, sin jerga y sin letra pequeña"
+  ],
+  "errores_tipicos": [
+    "Recordar la cita con tanta antelación que se olvida igual, y no volver a recordarla",
+    "Recordatorio que no pide respuesta: no distingue al que va a venir del que ya no viene",
+    "Aplicar la penalización sin haber comunicado la norma antes: genera reseñas malas con razón",
+    "Aplicar la norma solo a veces: en cuanto se sabe que es negociable deja de funcionar",
+    "Culpar al cliente en la llamada antes de preguntarle qué le ha pasado"
+  ],
+  "formato_salida": {
+    "bloque_1": "Cálculo del coste de una ausencia con los números del centro",
+    "bloque_2": "Política en menos de 80 palabras, lista para poner en web, cartel y mensaje de reserva",
+    "bloque_3": "Los tres mensajes del escalado con hora de envío recomendada",
+    "bloque_4": "Guion de la llamada posterior a la ausencia, con tres respuestas típicas",
+    "bloque_5": "Texto de anuncio del cambio a los clientes actuales",
+    "bloque_6": "Plantilla de registro mensual de ausencias"
+  },
+  "criterios_calidad": [
+    "La política se puede explicar de palabra en 20 segundos",
+    "El recordatorio de la víspera obliga a una respuesta clara",
+    "Ningún texto suena a bufete de abogados",
+    "Hay una excepción prevista para casos de fuerza mayor",
+    "Se puede medir el efecto comparando el mismo mes del año anterior"
+  ]
+}

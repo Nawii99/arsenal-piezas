@@ -1,0 +1,35 @@
+{
+  "tarea": "Crear el storyboard completo de un vídeo de unboxing de producto, viñeta a viñeta",
+  "entradas": {
+    "producto": "[QUÉ PRODUCTO ES]",
+    "packaging": "[CÓMO ES LA CAJA: COLOR, MATERIAL, DETALLES]",
+    "contenido": "[QUÉ HAY DENTRO, EN ORDEN DE APARICIÓN]",
+    "sensacion_buscada": "[LUJO / ARTESANAL / DIVERTIDO / TÉCNICO]",
+    "duracion_total_segundos": "[20 / 30 / 45]",
+    "formato": "[VERTICAL 9:16 / HORIZONTAL 16:9]"
+  },
+  "reglas_del_oficio": [
+    "Empieza por el detalle más bonito de la caja, nunca por un plano general aburrido",
+    "Alterna planos generales y de detalle para dar ritmo",
+    "Ningún plano dura más de 3 segundos salvo el momento clave de apertura",
+    "Las manos entran siempre desde fuera de cuadro y no tapan el logo",
+    "El producto final aparece limpio y montado en el último tercio"
+  ],
+  "formato_salida": {
+    "tipo": "lista numerada de viñetas",
+    "campos_por_vinieta": [
+      "Número y duración en segundos",
+      "Tipo de plano y ángulo",
+      "Qué ocurre en la acción",
+      "Texto en pantalla si lo hay",
+      "Sonido o efecto",
+      "Prompt de imagen en inglés para generar la referencia visual de esa viñeta"
+    ],
+    "cierre": "Tabla resumen con el material necesario y el orden de grabación real, que no coincide con el orden del vídeo"
+  },
+  "criterios_calidad": [
+    "La suma de duraciones cuadra con la duración total pedida",
+    "Hay al menos un plano de detalle por cada elemento que sale de la caja",
+    "Se puede grabar con un móvil y luz natural"
+  ]
+}

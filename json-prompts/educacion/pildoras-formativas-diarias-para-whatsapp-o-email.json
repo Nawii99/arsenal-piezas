@@ -1,0 +1,38 @@
+{
+  "tarea": "Escribir una serie de píldoras formativas diarias para enviar al equipo por un canal de mensajería",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "tema": "[HABILIDAD A ENSEÑAR, EJ: ATENDER UNA RECLAMACIÓN AL TELÉFONO]",
+    "equipo": "[PERFIL Y NIVEL DE QUIENES LO RECIBEN]",
+    "canal": "[WHATSAPP O CORREO]",
+    "numero_de_dias": "[10]",
+    "cambio_buscado": "[QUÉ QUIERES QUE HAGAN DISTINTO AL ACABAR]"
+  },
+  "procedimiento": [
+    "Ordena el tema en una sola idea por día, de lo más útil a lo más fino, sin repetir",
+    "Cada píldora tiene: gancho de una línea, la idea explicada con un ejemplo del sector y una micro-acción para hoy",
+    "Usa siempre ejemplos que ocurran de verdad en el puesto descrito, con frases textuales cuando aplique",
+    "En los días 5 y 10 incluye un repaso con una pregunta que se responde en el propio chat",
+    "Añade una variante más corta de cada píldora para quien la lee de pie o entre tareas"
+  ],
+  "restricciones": [
+    "Máximo 90 palabras por píldora en WhatsApp y 150 en correo",
+    "Nada de teoría, siglas ni enlaces largos: si hace falta un enlace, uno solo",
+    "Ni un solo emoji y nada de tono motivacional de coach"
+  ],
+  "formato_salida": {
+    "tipo": "lista numerada de mensajes listos para copiar",
+    "secciones": [
+      "Día, asunto o primera línea, texto del mensaje y micro-acción",
+      "Versión corta de cada día",
+      "Mensaje de presentación de la serie para el primer día",
+      "Mensaje de cierre con el resumen de las ideas clave"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada mensaje se lee en menos de un minuto y pide una sola acción",
+    "Ninguna píldora repite la idea de otra",
+    "Se puede copiar y pegar sin retocar nada"
+  ],
+  "tono": "directo, de compañero a compañero, tuteando"
+}

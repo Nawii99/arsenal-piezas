@@ -1,0 +1,38 @@
+{
+  "tarea": "Disenar la sustitucion del acceso remoto inseguro por un acceso controlado, con comparativa de opciones, plan de migracion y guia para el usuario final",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "acceso_actual": "[ESCRITORIO REMOTO PUBLICADO / PUERTO ABIERTO EN EL ROUTER / VPN ANTIGUA / TEAMVIEWER O SIMILAR]",
+    "personas_que_se_conectan": "[NUMERO Y PERFILES]",
+    "a_que_acceden": "[SERVIDOR DE FICHEROS, PROGRAMA DE GESTION, TPV, CAMARAS...]",
+    "router_o_firewall": "[MARCA Y MODELO]",
+    "presupuesto_mensual": "[IMPORTE APROXIMADO O CERO]",
+    "quien_dara_soporte": "[YO / TECNICO EXTERNO]"
+  },
+  "procedimiento": [
+    "1. Explicar en 5 lineas por que el acceso actual es peligroso, con el escenario concreto de ataque, sin detalles ofensivos",
+    "2. Proponer 3 opciones de acceso controlado adecuadas al tamano del negocio, con ventajas, limites, coste y dificultad",
+    "3. Recomendar una y justificar la eleccion segun el contexto",
+    "4. Detallar el montaje: quien accede a que, doble factor obligatorio, caducidad de accesos y registro de conexiones",
+    "5. Plan de migracion sin dejar a nadie tirado: piloto, convivencia de ambos accesos, fecha de cierre del acceso antiguo",
+    "6. Guia de conexion de 1 pagina para el usuario y guion de soporte para las 3 dudas mas habituales"
+  ],
+  "restricciones": [
+    "El principio es no publicar directamente servicios de administracion en internet",
+    "No recomendar productos concretos como unica salida: dar categoria y ejemplos",
+    "Prever el caso de que se caiga el acceso nuevo y como se entra entonces"
+  ],
+  "formato_salida": {
+    "tipo": "informe de decision",
+    "secciones": [
+      "El riesgo actual explicado a la direccion en 5 lineas",
+      "Tabla comparativa de 3 opciones: coste, dificultad, mantenimiento, para cuantos usuarios",
+      "Opcion recomendada y por que",
+      "Plan de migracion con fechas y responsables",
+      "Guia de conexion para el usuario",
+      "Que se cierra en el router el ultimo dia"
+    ]
+  },
+  "criterios_calidad": ["Queda claro que puerto o servicio deja de estar expuesto", "Ninguna opcion se propone sin coste ni mantenimiento", "Hay fecha concreta de cierre del acceso antiguo"],
+  "tono": "consultor sensato, sin vender miedo"
+}

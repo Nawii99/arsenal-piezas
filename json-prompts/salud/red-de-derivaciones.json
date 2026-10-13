@@ -1,0 +1,52 @@
+{
+  "tarea": "Diseñar la red de derivación cruzada de [NOMBRE DEL CENTRO] con profesionales complementarios de su zona",
+  "contexto": {
+    "mi_servicio": "[QUÉ HACES Y QUÉ NO HACES]",
+    "zona": "[CIUDAD O BARRIO Y RADIO EN MINUTOS]",
+    "perfil_de_paciente": "[QUIÉN VIENE HOY: EDAD, MOTIVO, MOMENTO VITAL]",
+    "capacidad": "[CUÁNTOS PACIENTES NUEVOS PUEDES ASUMIR AL MES]"
+  },
+  "entradas": {
+    "profesionales_cercanos": "[LISTA DE CENTROS Y PROFESIONALES QUE CONOCES O HAS VISTO EN LA ZONA]",
+    "derivaciones_actuales": "[A QUIÉN MANDAS PACIENTES HOY Y QUIÉN TE MANDA]",
+    "casos_que_rechazas": "[QUÉ CONSULTAS LLEGAN QUE NO SON PARA TI]"
+  },
+  "pasos": [
+    "1. Dibuja el recorrido del paciente: a quién ve antes de llegar a ti y a quién necesita después. Ahí están tus aliados naturales.",
+    "2. Descarta a los competidores directos y quédate con los complementarios: los que atienden a la misma persona por otro motivo.",
+    "3. Puntúa cada candidato de 1 a 5 en tres cosas: coincidencia de paciente, cercanía física y calidad percibida. Empieza por los tres mejores.",
+    "4. Prepara la propuesta de primera toma de contacto: no pidas pacientes, ofrece los tuyos primero y pide una reunión de veinte minutos.",
+    "5. Define el acuerdo por escrito en una página: qué casos se derivan en cada sentido, cómo se avisa, qué información se pasa y qué se responde al paciente.",
+    "6. Deja claro el dinero: en profesiones sanitarias no se pagan comisiones por paciente derivado; el intercambio es de valor, no de pagos por captación. Consúltalo con tu colegio profesional.",
+    "7. Crea el material de derivación: tarjeta o mensaje con tu nombre, servicio, dirección, un teléfono directo y una franja reservada para sus derivados.",
+    "8. Monta el registro: fecha, quién deriva, paciente, si acudió y si se cerró tratamiento. Sin ese registro la red se apaga sola.",
+    "9. Define el mantenimiento: agradecer cada derivación en 24 horas y devolver una nota de seguimiento cuando el paciente cierra.",
+    "10. Revisa a los tres meses: quién deriva de verdad, quién no y a quién dedicar más tiempo."
+  ],
+  "restricciones": [
+    "No se comparte información clínica del paciente sin su consentimiento expreso y por un canal seguro.",
+    "Nada de comisiones económicas por derivar pacientes en el ámbito sanitario: revisa el código deontológico de tu profesión.",
+    "No se deriva a nadie que no conozcas o que no hayas comprobado; su mal trabajo será tu culpa.",
+    "El paciente siempre elige y se le da la opción de ir a otro sitio."
+  ],
+  "formato_salida": {
+    "1_mapa_de_aliados": "Tabla con candidato, tipo de complementariedad y puntuación",
+    "2_mensajes_de_contacto": "Email o mensaje inicial y guion de la reunión de veinte minutos",
+    "3_acuerdo": "El documento de una página con los apartados rellenos",
+    "4_material": "Texto de la tarjeta de derivación y del mensaje al paciente derivado",
+    "5_registro": "Columnas de la hoja de seguimiento",
+    "6_rutina": "Qué se hace cada semana y cada trimestre para mantener la red viva"
+  },
+  "criterios_calidad": [
+    "Cada aliado sabe exactamente qué casos mandarte y con qué frase.",
+    "Tú derivas primero y puedes demostrarlo con números.",
+    "El paciente derivado tiene cita en menos de una semana.",
+    "A los tres meses se sabe cuántos pacientes ha traído cada aliado."
+  ],
+  "errores_tipicos": [
+    "Pedir derivaciones sin haber mandado tú ninguna.",
+    "Acuerdos de palabra que nadie recuerda a los dos meses.",
+    "Repartir tarjetas y no volver a hablar con esa persona nunca.",
+    "No avisar al aliado de que su paciente ya fue atendido."
+  ]
+}

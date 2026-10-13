@@ -1,0 +1,35 @@
+{
+  "tarea": "Hacer un premortem de mi plan: dar por hecho que ha fracasado dentro de 90 días y reconstruir las causas, las señales tempranas y la reacción",
+  "contexto": {
+    "plan": "[RESUMEN DE TU PLAN U OBJETIVO CON SUS HITOS Y FECHAS]",
+    "recursos_comprometidos": "[DINERO, HORAS Y PERSONAS QUE VAS A METER]",
+    "dependencias": "[DE QUÉ PERSONAS, PROVEEDORES O PLATAFORMAS DEPENDES]",
+    "historial": "[QUÉ TE HA FALLADO EN PLANES ANTERIORES]",
+    "punto_de_no_retorno": "[A PARTIR DE QUÉ MOMENTO YA NO PUEDES ECHARTE ATRÁS]"
+  },
+  "metodo": [
+    "Escribe primero el titular del fracaso: 'a fecha X el plan ha fracasado porque...'",
+    "Lista de 8 a 12 causas posibles y agrúpalas en internas, externas y de ejecución",
+    "Puntúa cada causa en probabilidad y en daño, de 1 a 5, y quédate con las 5 principales",
+    "Para cada una define la señal temprana observable y en qué semana aparecería",
+    "Escribe la reacción en formato 'si pasa X, entonces hago Y' con responsable",
+    "Marca qué causa exige cambiar el plan ahora, antes de empezar"
+  ],
+  "restricciones": [
+    "Las causas deben ser específicas de este plan, nada de 'falta de motivación'",
+    "Cada señal temprana debe poder comprobarse mirando un dato o una bandeja de entrada",
+    "Nada de tranquilizar: el objetivo es encontrar los fallos, no defender el plan"
+  ],
+  "formato_salida": {
+    "titular_del_fracaso": "Un párrafo de tres líneas contando el fracaso como si ya hubiera ocurrido",
+    "tabla_riesgos": "Tabla con columnas: Causa | Tipo | Probabilidad | Daño | Señal temprana | Semana en que aparece | Si pasa esto, hago esto",
+    "cambios_al_plan": "Qué modificar en el plan antes de empezar y por qué",
+    "criterio_de_abandono": "Qué tendría que ocurrir para parar el plan y no seguir tirando recursos"
+  },
+  "criterios_calidad": [
+    "Ninguna causa es genérica: todas mencionan algo del plan aportado",
+    "Cada reacción se puede ejecutar con los recursos declarados",
+    "El criterio de abandono es un umbral con número y fecha"
+  ],
+  "tono": "Crítico y sin complacencia, español de España"
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Prepara una sesion de formacion interna de seguridad de 30 minutos para el equipo, con guion para quien la imparte y materiales de apoyo",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR]",
+    "asistentes": "[NUMERO Y PERFILES]",
+    "nivel_tecnico": "[bajo / medio]",
+    "riesgo_que_mas_preocupa": "[p. ej. facturas falsas, correos de phishing, moviles perdidos]",
+    "quien_imparte": "[NOMBRE, no es tecnico]"
+  },
+  "estructura": [
+    "Minuto 0-3: un caso real y cercano del sector, contado como una historia",
+    "Minuto 3-12: las 5 conductas que de verdad importan aqui",
+    "Minuto 12-20: dinamica -es phishing o no-, con 6 correos de ejemplo",
+    "Minuto 20-26: que hacer si la lias o si sospechas, sin miedo a represalias",
+    "Minuto 26-30: compromiso de equipo y a quien avisar"
+  ],
+  "materiales": [
+    "Guion literal para quien imparte, con lo que decir y las preguntas que lanzar",
+    "6 correos de ejemplo del ejercicio, 4 falsos y 2 legitimos, con las pistas explicadas",
+    "Test final de 10 preguntas tipo test con solucionario",
+    "Recordatorio de una cara para colgar en la pared con 5 reglas"
+  ],
+  "restricciones": [
+    "Espanol de Espana, tono cercano, cero culpabilizacion",
+    "Los ejemplos deben usar nombres y situaciones del sector indicado",
+    "Nada de estadisticas ni porcentajes inventados",
+    "Prohibido el lenguaje de miedo: el objetivo es que avisen pronto, no que se escondan"
+  ],
+  "formato_salida": "Markdown con cuatro bloques separados y titulados: GUION, EJERCICIO, TEST, CARTEL. El cartel en formato de 5 lineas cortas",
+  "criterios_calidad": [
+    "Quien imparte puede leerlo y darlo sin preparacion previa",
+    "Cada correo de ejemplo tiene al menos dos pistas concretas explicadas",
+    "El test evalua conducta, no memoria de definiciones"
+  ]
+}

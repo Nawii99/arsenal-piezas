@@ -1,0 +1,33 @@
+{
+  "tarea": "Descomponer un guion corto en clips generables por IA y entregar el prompt de cada toma mas el plan de montaje",
+  "entradas": {
+    "guion_o_idea": "[PEGA AQUI TU GUION O CUENTA LA HISTORIA]",
+    "duracion_total_segundos": "[20 A 60]",
+    "duracion_por_clip": "[5 U 8]",
+    "formato": "[9:16 / 16:9]",
+    "estilo_visual": "[REALISTA DOCUMENTAL / PUBLICIDAD LIMPIA / ANIMACION 3D]"
+  },
+  "metodo": [
+    "1. Repartir el guion en bloques de la duracion por clip, cada uno con una sola accion",
+    "2. Alternar tamanos de plano entre tomas consecutivas: general, medio, detalle; dos planos iguales seguidos dan sensacion de error",
+    "3. Mantener la misma direccion de la luz y la misma paleta en toda la serie para que el montaje no parpadee",
+    "4. Encadenar por continuidad: el ultimo fotograma de una toma sugiere el primero de la siguiente, o se corta sobre un movimiento",
+    "5. Reservar la toma final para el producto o la llamada a la accion, con espacio limpio donde luego ira el texto"
+  ],
+  "formato_salida": {
+    "tabla_de_tomas": "una fila por toma con: numero, segundos, que pasa, tamano de plano, movimiento de camara",
+    "prompts": "el prompt completo en ingles de cada toma, numerado igual que la tabla",
+    "notas_de_montaje": "orden, tipo de corte entre tomas y donde entra la musica",
+    "audio": "que voz en off o rotulo va sobre cada toma, con el texto exacto"
+  },
+  "restricciones": [
+    "Ninguna toma cambia de escenario por dentro",
+    "El texto en pantalla se anade en edicion, no se pide al generador",
+    "Como maximo un personaje hablando por toma"
+  ],
+  "criterios_calidad": [
+    "La suma de los segundos cuadra con la duracion total",
+    "Ningun corte obliga al espectador a reorientarse",
+    "Se entiende la historia aunque se vea sin sonido"
+  ]
+}

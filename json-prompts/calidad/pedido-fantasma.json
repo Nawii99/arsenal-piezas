@@ -1,0 +1,46 @@
+{
+  "tarea": "Hacer un pedido de prueba real en mi propia tienda o servicio, del clic al reembolso, anotando cada punto donde el proceso falla, confunde o se calla",
+  "contexto": {
+    "que_vendo": "[PRODUCTO O SERVICIO Y PRECIO]",
+    "donde_se_paga": "[STRIPE / PAYPAL / BIZUM / TRANSFERENCIA / EN TIENDA]",
+    "herramientas": "[WEB O TIENDA, EMAIL DE ENVÍOS, FACTURACIÓN, MENSAJERÍA]",
+    "pais_y_iva": "[ESPAÑA, IVA APLICABLE, SI VENDO FUERA]"
+  },
+  "preparacion": [
+    "Usa un correo nuevo que no esté en ninguna lista, y un móvil distinto al de administración.",
+    "Haz el pedido desde datos móviles, no desde el wifi de casa, y con el móvil, que es por donde compra la mayoría.",
+    "Si puedes, crea un producto de 1 euro oculto; si no, compra el real y reembolsa después.",
+    "Ten a mano el reloj: vas a medir tiempos de respuesta."
+  ],
+  "pasos": [
+    "1. Entra como entraría un cliente frío: desde un anuncio o un enlace de Instagram, no desde tu panel.",
+    "2. Anota cuánto tarda en cargar la página y si algo se mueve o salta mientras lees.",
+    "3. Comprueba antes de pagar: precio con IVA visible, gastos de envío, plazo de entrega, política de devolución y quién eres tú (nombre fiscal y forma de contacto).",
+    "4. Paga de verdad. Anota si el botón se queda pillado, si permite pagar dos veces y qué pantalla ves al terminar.",
+    "5. Cronometra el email de confirmación y mira en qué carpeta cae: bandeja, promociones o spam.",
+    "6. Revisa la factura: nombre fiscal, NIF, número correlativo, IVA desglosado, concepto entendible.",
+    "7. Escribe al soporte una duda normal por el canal público y cronometra la respuesta.",
+    "8. Sigue el pedido hasta la entrega o la primera sesión: avisos de envío, seguimiento, instrucciones de acceso.",
+    "9. Pide la devolución o cancela como un cliente, sin usar tu acceso de administrador, y comprueba cuánto tarda el dinero en volver.",
+    "10. Cierra apuntando qué datos quedaron en tu sistema: pedido, cliente, contabilidad, listas de correo."
+  ],
+  "errores_tipicos": [
+    "Probar con tu cuenta de siempre y con cupones internos: no ves lo que ve un desconocido.",
+    "Probar solo el pago con tarjeta y no el resto de métodos que tienes activos.",
+    "Olvidar el modo real: en pruebas de pasarela todo funciona, en real no.",
+    "No mirar el correo desde el móvil: muchos avisos se ven rotos ahí.",
+    "Terminar en la compra y no probar la devolución, que es donde se pierden las reseñas."
+  ],
+  "formato_salida": {
+    "linea_de_tiempo": "Cada paso con la hora, lo que pasó y lo que esperaba que pasara",
+    "tabla_incidencias": "Incidencia, dónde ocurre, gravedad (bloquea la venta / molesta / cosmética), arreglo propuesto",
+    "pruebas": "Lista de capturas que debo guardar en cada punto",
+    "decision": "Puedo enviar tráfico de pago, o no, y qué tres cosas arreglo primero"
+  },
+  "criterios_calidad": [
+    "Hay al menos una hora anotada en cada paso del recorrido.",
+    "Cada incidencia tiene arreglo concreto y responsable, aunque seas tú.",
+    "Se ha comprobado el dinero devuelto en la cuenta, no solo el aviso de la pasarela.",
+    "El informe distingue lo que bloquea la venta de lo que solo es feo."
+  ]
+}

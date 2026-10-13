@@ -1,0 +1,37 @@
+{
+  "tarea": "Convertir la idea [IDEA O MENSAJE PRINCIPAL] en un guion de vídeo vertical de [DURACIÓN: 30-45 S] para [RED: TIKTOK / REELS / SHORTS]",
+  "contexto": {
+    "negocio": "[QUÉ VENDES O A QUÉ TE DEDICAS]",
+    "publico": "[A QUIÉN LE HABLAS Y QUÉ LE PREOCUPA]",
+    "estilo": "[HABLANDO A CÁMARA / VOZ EN OFF CON B-ROLL / TEXTO EN PANTALLA]",
+    "objetivo": "[GUARDADOS / SEGUIDORES / VISITAS A LA WEB / MENSAJES]"
+  },
+  "metodo": [
+    "Frase 1 (0-2 s): tiene que funcionar sin sonido y sin contexto; nada de presentarse",
+    "Segundos 3-8: aterriza el problema concreto con una situación reconocible",
+    "Cuerpo: una sola idea desarrollada, con un ejemplo o demostración visual",
+    "Últimos 5 s: cierre con giro, resumen o pregunta que invite a comentar",
+    "El CTA va hablado, no solo escrito, y pide una sola cosa"
+  ],
+  "restricciones": [
+    "Máximo 110 palabras habladas para 40 segundos",
+    "Sin tecnicismos ni palabras de folleto: se escribe como se habla",
+    "Los rótulos en pantalla nunca repiten literalmente lo que se dice",
+    "Nada de 'suscríbete' genérico ni de promesas que no puedas cumplir"
+  ],
+  "formato_salida": {
+    "tipo": "tabla + listas",
+    "tabla_guion": "Columnas: Segundo | Qué digo | Qué se ve | Rótulo en pantalla",
+    "extras": [
+      "5 ganchos alternativos para el segundo 0, cada uno con un enfoque distinto (dato, error común, historia, pregunta, resultado)",
+      "Pie de publicación de menos de 200 caracteres",
+      "8 hashtags mezclando genéricos y de nicho",
+      "Idea de portada con el texto que llevaría"
+    ]
+  },
+  "criterios_calidad": [
+    "Se puede grabar con un móvil y sin equipo extra",
+    "Cada gancho alternativo cambia el ángulo, no solo las palabras",
+    "El vídeo se entiende con el sonido quitado"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Elegir claves primarias y disenar el conjunto minimo de indices que acelere las consultas frecuentes indicadas",
+  "entradas": {
+    "esquema": "[PEGA TUS TABLAS Y COLUMNAS]",
+    "consultas_frecuentes": ["[CONSULTA 1 O DESCRIPCION: EJ: PEDIDOS DE UN CLIENTE POR FECHA]", "[CONSULTA 2]", "[CONSULTA 3]"],
+    "volumen_por_tabla": "[FILAS APROXIMADAS DE CADA TABLA]",
+    "proporcion_lecturas_escrituras": "[EJ: 90% LECTURAS]",
+    "motor": "[PostgreSQL | MySQL]"
+  },
+  "metodo": [
+    "Para cada tabla, decidir entre clave sustituta autonumerica y clave natural, y justificarlo",
+    "Extraer de cada consulta las columnas de WHERE, JOIN, ORDER BY y GROUP BY",
+    "Proponer indices compuestos con las columnas en el orden correcto: igualdad primero, rango despues",
+    "Descartar indices redundantes cuando otro con el mismo prefijo ya los cubre",
+    "Senalar donde compensa un indice unico para garantizar reglas de negocio"
+  ],
+  "restricciones": [
+    "Maximo 5 indices por tabla, y justifica cada uno con la consulta que acelera",
+    "Recuerda el coste: cada indice ralentiza inserciones y ocupa disco",
+    "No propongas indices sobre columnas con muy pocos valores distintos salvo que lo argumentes",
+    "Nada de trucos que dependan de una version concreta del motor sin avisarlo"
+  ],
+  "formato_salida": {
+    "1_claves": "Tabla markdown: tabla, clave primaria elegida, motivo",
+    "2_indices": "Tabla markdown: nombre del indice, tabla, columnas en orden, consulta que acelera, coste estimado",
+    "3_sql": "Sentencias CREATE INDEX listas para ejecutar",
+    "4_verificacion": "Como comprobar la mejora con EXPLAIN antes y despues, con un ejemplo",
+    "5_descartados": "Indices que has descartado y por que"
+  },
+  "criterios_calidad": [
+    "Toda consulta de la lista queda cubierta por al menos un indice o se explica por que no hace falta",
+    "No hay dos indices con el mismo prefijo de columnas",
+    "Las claves foraneas usadas en JOIN tienen indice"
+  ],
+  "tono": "Tecnico pero explicado, espanol de Espana"
+}

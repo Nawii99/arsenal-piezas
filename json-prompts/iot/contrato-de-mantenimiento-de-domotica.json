@@ -1,0 +1,51 @@
+{
+  "tarea": "Redactar la propuesta comercial de un servicio de mantenimiento recurrente para instalaciones conectadas, con alcance, exclusiones, niveles y precio justificado",
+  "contexto": {
+    "perfil": "Autónomo o pequeño negocio en España que instala domótica, cámaras o sensores y quiere ingresos recurrentes",
+    "cliente": "[PARTICULAR / COMUNIDAD / BAR O RESTAURANTE / ALOJAMIENTO TURÍSTICO / CLÍNICA / TIENDA]"
+  },
+  "entradas": {
+    "instalacion": "[QUÉ HAY INSTALADO Y CUÁNTOS DISPOSITIVOS, POR TIPO]",
+    "historial": "[QUÉ INCIDENCIAS HA TENIDO Y CUÁNTAS VECES HAS IDO ESTE AÑO]",
+    "tus_costes": "[TU PRECIO HORA, KILÓMETROS Y TIEMPO MEDIO DE DESPLAZAMIENTO]",
+    "distancia": "[KM HASTA EL CLIENTE]",
+    "niveles": "[SI QUIERES OFRECER UNO, DOS O TRES PLANES]"
+  },
+  "pasos": [
+    "1. Parte de lo que ya pasa: cuenta las visitas e incidencias reales del último año y traduce a horas. El precio sale de ahí, no de un porcentaje inventado sobre la instalación.",
+    "2. Separa tres bloques: mantenimiento preventivo programado (revisión, pilas, actualizaciones, copia de configuración), soporte remoto y asistencia presencial.",
+    "3. Define con precisión el alcance: cuántas revisiones al año, cuántas incidencias remotas incluidas al mes, cuántos desplazamientos incluidos y qué se factura aparte.",
+    "4. Escribe las exclusiones sin miedo, que es lo que evita discusiones: material nuevo, ampliaciones, averías por obra o por rayo, fallos del operador de internet, aparatos que el cliente compre por su cuenta y equipos fuera de soporte del fabricante.",
+    "5. Fija tiempos de respuesta realistas por nivel, distinguiendo respuesta (te contesto) de resolución (está arreglado), y con horario laboral definido. No prometas fines de semana si no vas a ir.",
+    "6. Añade lo que le da valor al cliente y a ti te cuesta poco: informe anual del estado, copia guardada de la configuración, inventario actualizado y aviso proactivo cuando un dispositivo deja de reportar.",
+    "7. Calcula el precio mensual con margen: horas previstas por tu precio hora, más desplazamientos, más un colchón del [X] % por imprevistos. Muestra el cálculo en tus notas, no en la oferta del cliente.",
+    "8. Propón permanencia razonable y actualización anual de precio, con la forma de pago y la facturación clara.",
+    "9. Cierra con una comparación honesta: lo que costarían por separado las visitas del último año frente a la cuota."
+  ],
+  "restricciones": [
+    "Español de España, tuteando o de usted según el tipo de cliente, y sin jerga técnica",
+    "Nada de garantizar disponibilidad total ni tiempos que no puedas cumplir",
+    "No inventes cifras de ahorro para el cliente: usa su propio historial",
+    "Indicar siempre si los precios llevan IVA incluido o no"
+  ],
+  "errores_tipicos": [
+    "Incluir desplazamientos ilimitados y perder dinero con el cliente más lejano",
+    "No excluir el material y acabar regalando aparatos",
+    "Ofrecer un solo plan y quedarse sin margen de negociación",
+    "No poner límite mensual al soporte remoto por WhatsApp"
+  ],
+  "formato_salida": {
+    "1_oferta": "Documento para el cliente: qué incluye, qué no, tiempos de respuesta, precio mensual y forma de pago",
+    "2_tabla_planes": "Comparativa de planes con lo incluido en cada uno",
+    "3_exclusiones": "Lista clara y cerrada",
+    "4_calendario": "Qué se hace en cada revisión programada del año",
+    "5_notas_internas": "Tu cálculo de horas, costes y margen, que no se envía al cliente",
+    "6_email": "Correo breve para enviar la propuesta, con un asunto y una llamada a la acción"
+  },
+  "criterios_calidad": [
+    "El precio sale de un cálculo de horas visible en las notas internas",
+    "Las exclusiones cubren material, obra, internet y aparatos ajenos",
+    "Los tiempos de respuesta son cumplibles con la agenda real",
+    "El cliente entiende en un minuto qué pasa cuando llama"
+  ]
+}

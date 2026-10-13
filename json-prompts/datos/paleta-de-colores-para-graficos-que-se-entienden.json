@@ -1,0 +1,41 @@
+{
+  "tarea": "Definir un sistema de color reutilizable para todos los gráficos de una marca, legible e inclusivo",
+  "contexto": {
+    "marca": "[NOMBRE DE TU EMPRESA]",
+    "colores_de_marca": "[CÓDIGOS HEX DE TU LOGO Y TU WEB, POR EJEMPLO #1A4D8F, #F2A20C]",
+    "soportes": "[PANTALLA CLARA / PRESENTACIÓN OSCURA / IMPRESO EN BLANCO Y NEGRO / REDES]",
+    "herramienta": "[EXCEL / SHEETS / LOOKER STUDIO / CANVA / CÓDIGO]"
+  },
+  "entradas": {
+    "tipos_de_grafico_habituales": "[BARRAS, LÍNEAS, MAPA DE CALOR, TARTA, DISPERSIÓN...]",
+    "series_habituales": "[QUÉ SUELES COMPARAR: PRODUCTOS, MESES, CANALES, EQUIPOS...]",
+    "numero_maximo_de_series": "[CUÁNTAS CATEGORÍAS SUELES TENER COMO MÁXIMO]"
+  },
+  "entregar": [
+    "Paleta categórica de hasta seis colores distinguibles entre sí, con hex y nombre corto en español",
+    "Escala secuencial de cinco tonos para valores de menor a mayor",
+    "Escala divergente de cinco tonos para desviaciones respecto a un objetivo o a cero",
+    "Color semántico fijo para positivo, negativo y neutro, sin depender solo de rojo y verde",
+    "Grises de apoyo para ejes, cuadrícula, texto secundario y series de fondo",
+    "Versión para fondo oscuro de toda la paleta"
+  ],
+  "restricciones": [
+    "Contraste suficiente del texto sobre cada color de fondo, indicando la relación de contraste estimada",
+    "Las series deben distinguirse en escala de grises y para daltonismo rojo-verde",
+    "El significado nunca depende solo del color: se acompaña de etiqueta, forma o posición",
+    "Máximo un color saturado por gráfico para destacar lo importante; el resto en gris",
+    "Nada de degradados en barras ni de fondos con textura"
+  ],
+  "formato_salida": {
+    "tipo": "fichas y tabla",
+    "tabla": ["Uso", "Nombre", "Hex", "Cuándo usarlo", "Con qué no combinarlo"],
+    "reglas_de_uso": "Lista de seis reglas cortas para aplicar la paleta siempre igual",
+    "ejemplo_aplicado": "Cómo quedaría un gráfico de barras de ventas por canal usando esta paleta, color a color"
+  },
+  "criterios_calidad": [
+    "Los seis colores se distinguen a simple vista en un gráfico pequeño",
+    "La paleta se reconoce como de la marca sin sacrificar legibilidad",
+    "Cualquiera puede aplicarla copiando los hex, sin saber teoría del color"
+  ],
+  "tono": "práctico, con instrucciones copiables"
+}

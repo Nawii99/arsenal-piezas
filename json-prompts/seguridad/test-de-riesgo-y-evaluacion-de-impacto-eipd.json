@@ -1,0 +1,39 @@
+{
+  "tarea": "Determinar si un tratamiento nuevo requiere Evaluación de Impacto en Protección de Datos (art. 35 RGPD) y elaborar el análisis de riesgos con medidas de mitigación",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "proyecto": "[NOMBRE DEL PROYECTO O TRATAMIENTO NUEVO]",
+    "fase": "[IDEA / EN DESARROLLO / YA EN MARCHA]"
+  },
+  "entradas": {
+    "descripcion": "[QUÉ VAS A HACER Y PARA QUÉ, CON TUS PALABRAS]",
+    "datos": "[QUÉ DATOS TRATAS, INCLUIDOS SALUD, BIOMETRÍA, GEOLOCALIZACIÓN O MENORES]",
+    "personas": "[CUÁNTAS PERSONAS Y DE QUÉ TIPO]",
+    "tecnologia": "[IA, PERFILADO, CÁMARAS, APP MÓVIL, RASTREO, DECISIONES AUTOMÁTICAS]",
+    "medidas_actuales": "[SEGURIDAD QUE YA TIENES: cifrado, accesos, copias, formación]"
+  },
+  "pasos": [
+    "Contrasta el tratamiento con los criterios de alto riesgo y con la lista de tratamientos que exigen EIPD publicada por la AEPD",
+    "Da un veredicto claro: EIPD obligatoria, recomendable o no necesaria, con el motivo",
+    "Si procede, describe el tratamiento, valora la necesidad y la proporcionalidad y comprueba si hay una alternativa menos invasiva",
+    "Identifica riesgos concretos para las personas, no para la empresa: acceso no autorizado, uso indebido, discriminación, pérdida de control sobre sus datos",
+    "Puntúa cada riesgo por probabilidad e impacto y propón medidas de mitigación con el riesgo residual",
+    "Señala si el riesgo residual sigue alto y obliga a consulta previa a la AEPD"
+  ],
+  "restricciones": [
+    "No declarar riesgo bajo sin justificarlo",
+    "Las medidas deben ser accionables por una empresa pequeña, no genéricas",
+    "Distinguir siempre entre lo obligatorio y lo recomendable"
+  ],
+  "formato_salida": {
+    "1_veredicto": "obligatoria, recomendable o no necesaria, en dos líneas",
+    "2_tabla_riesgos": "riesgo | probabilidad | impacto | nivel | medida | riesgo residual",
+    "3_plan": "medidas ordenadas por coste y urgencia con responsable sugerido",
+    "4_preguntas": "lo que hay que aclarar antes de dar por cerrado el análisis"
+  },
+  "criterios_calidad": [
+    "El veredicto se apoya en criterios concretos, no en intuición",
+    "Cada riesgo tiene al menos una medida realista",
+    "Se distingue riesgo inicial de riesgo residual"
+  ]
+}

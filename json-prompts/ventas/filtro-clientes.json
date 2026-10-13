@@ -1,0 +1,48 @@
+{
+  "tarea": "Crea mi filtro de clientes: criterios objetivos para clasificar cada petición que entra en aceptar, aceptar con recargo o rechazar, y los mensajes para decirlo.",
+  "contexto": {
+    "que_vendo": "[SERVICIO O PRODUCTO]",
+    "capacidad": "[CUÁNTOS CLIENTES O PROYECTOS PUEDO LLEVAR A LA VEZ]",
+    "precio_medio": "[TICKET MEDIO]",
+    "mi_cliente_ideal": "[DESCRIPCIÓN EN DOS FRASES]"
+  },
+  "entradas": {
+    "tres_mejores_clientes": "[QUÉ TENÍAN EN COMÚN: TAMAÑO, SECTOR, URGENCIA, FORMA DE DECIDIR]",
+    "tres_peores_clientes": "[QUÉ PASÓ: CAMBIOS CONSTANTES, PAGOS TARDE, EXPECTATIVAS IMPOSIBLES, TRATO]",
+    "peticion_a_evaluar": "[LO QUE ME HA PEDIDO ESTE CLIENTE Y CÓMO LO HA PEDIDO]"
+  },
+  "metodo": [
+    "1. Saca de mis mejores y peores clientes entre 6 y 8 señales observables, no opiniones (ejemplo: pide precio antes de contar qué necesita).",
+    "2. Convierte cada señal en una pregunta que pueda responder con lo que ya sé o con una pregunta al cliente.",
+    "3. Da a cada señal un peso y define el umbral de verde, ámbar y rojo.",
+    "4. Define tres banderas rojas que por sí solas son un no, aunque el resto puntúe bien.",
+    "5. Para el ámbar, define qué condiciones pido: anticipo mayor, recargo por urgencia, alcance cerrado por escrito, plazo más largo.",
+    "6. Escribe los mensajes: aceptar, aceptar con condiciones y rechazar derivando a otra opción.",
+    "7. Aplica el filtro a la petición que te he pasado y da el resultado con su motivo."
+  ],
+  "errores_a_evitar": [
+    "Poner criterios subjetivos del tipo me da buena espina.",
+    "Aceptar por miedo al hueco en la agenda y cobrar por debajo de coste.",
+    "Rechazar con excusas falsas en vez de decir que no encaja.",
+    "Olvidar el criterio de cobro: cómo y cuándo paga es tan importante como el qué."
+  ],
+  "formato_salida": {
+    "tabla_criterios": "Señal, cómo la detecto, peso y qué significa.",
+    "semaforo": "Umbrales exactos de verde, ámbar y rojo con la acción de cada uno.",
+    "banderas_rojas": "Las tres que descartan por sí solas, con la frase para detectarlas pronto.",
+    "mensajes": "Tres mensajes listos: sí, sí con condiciones, no.",
+    "veredicto": "Resultado aplicado a la petición que te he dado, con puntuación y una frase de motivo."
+  },
+  "restricciones": [
+    "Español de España, tuteo, tono profesional y sin sonar altivo.",
+    "El mensaje de rechazo, máximo 70 palabras y sin mentiras.",
+    "Nada de criterios discriminatorios por persona: solo por comportamiento y encaje del encargo."
+  ],
+  "criterios_calidad": [
+    "Otra persona con mis mismos datos llegaría a la misma clasificación.",
+    "Cada señal se puede comprobar en los primeros diez minutos de conversación.",
+    "El mensaje de rechazo deja al cliente con buena sensación y con una alternativa.",
+    "El ámbar tiene condiciones concretas, no un depende."
+  ],
+  "si_faltan_datos": "Si no te doy ejemplos de clientes buenos y malos, hazme cuatro preguntas para sacarlos antes de construir el filtro."
+}

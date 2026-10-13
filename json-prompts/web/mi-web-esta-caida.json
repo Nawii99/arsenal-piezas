@@ -1,0 +1,66 @@
+{
+  "tarea": "Diagnosticar por qué una web no carga y guiar la recuperación paso a paso, incluida la comunicación con clientes",
+  "contexto": {
+    "url": "[DIRECCIÓN DE LA WEB]",
+    "sintoma_exacto": "[MENSAJE QUE SALE EN PANTALLA, COPIADO TAL CUAL]",
+    "desde_cuando": "[HORA APROXIMADA EN QUE DEJÓ DE FUNCIONAR]",
+    "ultimo_cambio": "[QUÉ SE TOCÓ EN LOS ÚLTIMOS 7 DÍAS: DISEÑO, PLUGIN, DNS, PAGO, DOMINIO]",
+    "donde_esta_alojada": "[PROVEEDOR DE HOSTING]",
+    "impacto": "[VENDES POR AQUÍ, RECIBES CITAS, SOLO ES ESCAPARATE]"
+  },
+  "entradas": {
+    "quien_lo_ve_asi": "[SOLO YO / TAMBIÉN OTRAS PERSONAS / SOLO EN MÓVIL]",
+    "correo_del_dominio": "[SIGUE LLEGANDO CORREO SÍ O NO]",
+    "avisos_recibidos": "[CORREOS DEL HOSTING O DEL REGISTRADOR, AUNQUE ESTÉN EN SPAM]",
+    "accesos": "[A QUÉ PANELES PUEDES ENTRAR AHORA MISMO]"
+  },
+  "orden_de_diagnostico": [
+    "1. Confirma que no es solo tu conexión: prueba con datos móviles y pide a alguien que lo abra.",
+    "2. Lee el mensaje exacto: no es lo mismo no se puede acceder al sitio, error 500, error 403, sitio no seguro o esta cuenta ha sido suspendida.",
+    "3. Dominio: comprueba si ha caducado o si el pago falló; es una causa muy frecuente y se ve en el correo del registrador.",
+    "4. Certificado de seguridad: si el aviso es de sitio no seguro, suele ser el certificado caducado o mal renovado.",
+    "5. DNS: comprueba si el dominio sigue apuntando a donde debe.",
+    "6. Hosting: mira si el proveedor tiene una incidencia abierta o si tu cuenta está suspendida por impago o por consumo.",
+    "7. Cambio reciente: si tocaste algo, deshaz ese cambio antes de tocar nada más.",
+    "8. Contenido: si la web carga pero da error, revisa la última publicación o actualización."
+  ],
+  "tabla_sintoma_causa": [
+    "No se puede acceder al sitio: DNS mal apuntado, dominio caducado o servidor apagado",
+    "Error 500: fallo del propio sitio, normalmente por un cambio o una actualización reciente",
+    "Error 403: permisos o bloqueo del hosting",
+    "Página en blanco: fallo en el código o en una plantilla",
+    "Sitio no seguro: certificado caducado o mezcla de contenido inseguro",
+    "Cuenta suspendida: impago o consumo excedido, se arregla desde el panel de facturación"
+  ],
+  "mientras_tanto": [
+    "Publica una página provisional de una sola pantalla con teléfono, WhatsApp y correo",
+    "Avisa en tus redes y en Google con un mensaje corto y sin drama",
+    "Redirige de forma temporal a tu perfil de Google o a tu Instagram si vas a tardar"
+  ],
+  "errores_tipicos": [
+    "Tocar cinco cosas a la vez y perder el rastro de qué lo rompió",
+    "Restaurar una copia antigua encima de todo y perder los pedidos del día",
+    "Cambiar los DNS por si acaso y alargar la caída horas",
+    "No mirar el correo de facturación del dominio",
+    "No abrir ticket al hosting hasta el final, cuando es lo que menos cuesta"
+  ],
+  "restricciones": [
+    "Un solo cambio cada vez y comprobar después de cada uno",
+    "Nada de borrar archivos sin copia previa",
+    "Si el diagnóstico apunta al proveedor, abre ticket ya en paralelo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Causa más probable en una frase",
+    "bloque_2": "Pasos de comprobación numerados con lo que verás si es esa la causa",
+    "bloque_3": "Instrucciones de arreglo para la causa más probable",
+    "bloque_4": "Texto listo para copiar del ticket al soporte del hosting",
+    "bloque_5": "Mensaje breve para clientes por WhatsApp y redes",
+    "bloque_6": "Qué hacer después para que no vuelva a pasar"
+  },
+  "criterios_calidad": [
+    "El orden va de lo más barato y probable a lo más raro",
+    "Cada paso dice qué verás exactamente si esa es la causa",
+    "No se propone tocar código sin copia de seguridad",
+    "Incluye qué comunicar y a quién"
+  ]
+}

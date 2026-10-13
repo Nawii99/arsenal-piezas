@@ -1,0 +1,59 @@
+{
+  "tarea": "Diseña y guíame en un ensayo de restauración: recuperar de verdad una copia de seguridad en un entorno de prueba, cronometrarlo y dejar el procedimiento escrito",
+  "contexto": {
+    "negocio": "[QUÉ NEGOCIO Y QUÉ SE ROMPERÍA SI DESAPARECE HOY]",
+    "activos": "[QUÉ HAY QUE PODER RECUPERAR: web, base de datos, ficheros de clientes, automatizaciones, dominio]",
+    "plataformas": "[DÓNDE VIVE CADA COSA: hosting, base de datos, almacenamiento, herramientas no-code]",
+    "copias_que_creo_tener": "[QUIÉN LAS HACE, CADA CUÁNTO Y DÓNDE SE GUARDAN]",
+    "perfil": "sin perfil técnico: dame el nombre exacto del botón o el comando literal en cada paso"
+  },
+  "entradas": {
+    "lo_que_veo_en_el_panel": "[PEGA AQUÍ EL TEXTO O DESCRIBE LA PANTALLA DE COPIAS]",
+    "presupuesto_mensual": "[EUROS AL MES QUE PUEDO DEDICAR A COPIAS]",
+    "perdida_aceptable": "[CUÁNTAS HORAS DE DATOS PUEDO PERDER SIN QUE SEA UN DRAMA]",
+    "caida_aceptable": "[CUÁNTAS HORAS PUEDO ESTAR SIN SERVICIO]"
+  },
+  "pasos": [
+    "1. Inventario: por cada activo, di si hay copia, quién la genera, cada cuánto, cuánto se conserva y dónde se guarda",
+    "2. Marca en rojo lo que no tiene copia y lo que la tiene en la misma cuenta que el original: eso no es copia",
+    "3. Elige un activo crítico y prepara la restauración en un sitio nuevo (subdominio de pruebas, proyecto nuevo o carpeta local), jamás encima del real",
+    "4. Ejecuta la restauración cronometrando desde 'empiezo' hasta 'funciona de verdad'",
+    "5. Verifica con pruebas concretas: cuenta registros, abre tres pedidos recientes, prueba el acceso de un cliente, comprueba que las imágenes cargan",
+    "6. Anota la fecha del dato más reciente recuperado: esa es tu pérdida real, no la que promete el proveedor",
+    "7. Corrige los agujeros encontrados y repite solo la parte que falló",
+    "8. Fija fecha del próximo ensayo y déjala en el calendario"
+  ],
+  "que_mirar": [
+    "que exista al menos una copia fuera del proveedor principal",
+    "que puedas descargarla tú solo, sin pedírsela a soporte",
+    "si la copia incluye los ficheros subidos por clientes y no solo la base de datos",
+    "si hay claves, variables de entorno o conexiones que no están en ninguna copia",
+    "cuántos días de versiones antiguas se guardan: con un solo día, un borrado que descubres el martes ya no se deshace"
+  ],
+  "errores_tipicos": [
+    "dar por buena la copia del hosting sin haberla restaurado nunca",
+    "probar encima del sitio real y destrozarlo",
+    "guardar la copia en la misma cuenta que puede suspenderse o perderse",
+    "olvidar las claves de las APIs y la configuración",
+    "no tener escrito quién restaura si tú estás sin cobertura"
+  ],
+  "restricciones": [
+    "no toques el entorno real en ningún paso del ensayo",
+    "si propones algo de pago, di antes la alternativa gratuita y su límite",
+    "si te falta un dato para decidir, pregúntamelo en vez de inventarlo"
+  ],
+  "formato_salida": {
+    "1_tabla_inventario": "activo | copia sí/no | quién la hace | frecuencia | días que se guarda | dónde | riesgo alto/medio/bajo",
+    "2_guion_de_restauracion": "pasos numerados con el clic o comando exacto",
+    "3_comprobaciones": "cinco pruebas concretas para dar la restauración por buena",
+    "4_resultado_del_ensayo": "tiempo total, pérdida real de datos, qué falló",
+    "5_plan_de_arreglos": "máximo cinco acciones ordenadas por riesgo, con coste y tiempo",
+    "extension": "que quepa en dos folios"
+  },
+  "criterios_calidad": [
+    "alguien de mi entorno podría seguir el guion sin llamarme",
+    "cada activo tiene un sí o un no, ninguno queda en 'depende'",
+    "las comprobaciones dan números o pantallas concretas, no un 'parece que va'",
+    "el plan de arreglos cabe en una tarde de trabajo"
+  ]
+}

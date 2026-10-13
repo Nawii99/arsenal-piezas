@@ -1,0 +1,35 @@
+{
+  "tarea": "Adaptar un mismo mensaje comercial a tres perfiles de cliente distintos, cambiando argumento, ejemplos y objeciones",
+  "entradas": {
+    "texto_base": "[PEGA AQUÍ EL TEXTO ORIGINAL]",
+    "oferta": "[QUÉ VENDES Y A QUÉ PRECIO]",
+    "perfil_1": "[QUIÉN ES, SU DOLOR PRINCIPAL Y SU OBJECIÓN]",
+    "perfil_2": "[QUIÉN ES, SU DOLOR PRINCIPAL Y SU OBJECIÓN]",
+    "perfil_3": "[QUIÉN ES, SU DOLOR PRINCIPAL Y SU OBJECIÓN]",
+    "canal": "[EMAIL / LANDING / PROPUESTA]"
+  },
+  "proceso": [
+    "1. Extraer del texto base la promesa y las pruebas que la sostienen",
+    "2. Para cada perfil, elegir la prueba que más le pesa y descartar las que le sobran",
+    "3. Reescribir el gancho con el dolor concreto de ese perfil",
+    "4. Cambiar los ejemplos y las cifras de referencia por los de su realidad",
+    "5. Rebatir su objeción específica en un párrafo propio",
+    "6. Ajustar el nivel de detalle técnico y el tratamiento a cada perfil"
+  ],
+  "restricciones": [
+    "La oferta, el precio y las condiciones son idénticos en las tres versiones",
+    "No inventar casos de éxito ni clientes",
+    "Que no parezcan el mismo texto con dos palabras cambiadas",
+    "Español de España"
+  ],
+  "formato_salida": {
+    "por_perfil": "Para cada uno: nombre del perfil, gancho, cuerpo, objeción rebatida y llamada a la acción",
+    "comparativa": "Tabla: perfil / dolor usado / prueba elegida / objeción rebatida",
+    "asuntos": "Un asunto de email de menos de 45 caracteres por perfil"
+  },
+  "criterios_calidad": [
+    "Cada versión menciona el dolor de su perfil en las dos primeras líneas",
+    "Las tres mantienen exactamente la misma oferta",
+    "Ningún párrafo se repite literalmente entre versiones"
+  ]
+}

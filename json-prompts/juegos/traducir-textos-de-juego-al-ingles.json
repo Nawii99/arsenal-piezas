@@ -1,0 +1,40 @@
+{
+  "tarea": "Traducir y adaptar los textos de un juego o aplicacion 3D cuidando espacio, tono y coherencia de terminos",
+  "contexto": {
+    "producto": "[NOMBRE Y GENERO]",
+    "idioma_origen": "castellano de Espana",
+    "idiomas_destino": "[INGLES / PORTUGUES / FRANCES / OTROS]",
+    "tono": "[SERIO / GAMBERRO / INFANTIL / NEUTRO]",
+    "publico": "[QUIEN JUEGA Y QUE EDAD]"
+  },
+  "entradas": {
+    "textos": "[PEGA AQUI LA LISTA DE TEXTOS, UNO POR LINEA, CON SU CLAVE SI LA TIENE]",
+    "contexto_por_texto": "[DONDE APARECE CADA UNO: BOTON, TUTORIAL, DIALOGO, ERROR]",
+    "limite_de_caracteres": "[POR PANTALLA O POR BOTON, SI LO SABES]",
+    "terminos_propios": "[NOMBRES DE OBJETOS, PERSONAJES O MECANICAS QUE NO SE TRADUCEN]"
+  },
+  "pasos": [
+    "1. Antes de traducir, marca los textos ambiguos donde una palabra en castellano puede ser dos cosas distintas en el otro idioma",
+    "2. Construye el glosario: termino en origen, termino elegido en destino y por que, para no cambiarlo nunca mas",
+    "3. Traduce respetando el limite de caracteres; si no cabe, da una version corta y marca que se acorto",
+    "4. Adapta lo que no se traduce literal: refranes, chistes, unidades, formatos de fecha y teclas del teclado",
+    "5. Mantiene intactos los codigos, variables entre llaves y etiquetas; nunca se traducen",
+    "6. Marca los textos que dependen del genero o del plural y propon una redaccion que funcione en ambos casos",
+    "7. Devuelve el resultado en tabla con la clave original para poder pegarlo de vuelta sin liarla",
+    "8. Anade una lista de comprobacion visual: que pantallas hay que mirar despues por riesgo de texto cortado"
+  ],
+  "restricciones": [
+    "Nunca traduzcas nombres propios ni terminos del glosario",
+    "Nada de traduccion literal en botones: usa la palabra que se usa de verdad en juegos de ese idioma",
+    "No cambies el orden ni el numero de lineas de la lista original"
+  ],
+  "formato_salida": {
+    "tabla": ["Clave", "Texto original", "Traduccion", "Caracteres", "Cabe si o no", "Nota"],
+    "extras": ["Glosario", "Textos ambiguos que necesitan que aclares el contexto", "Pantallas a revisar visualmente"]
+  },
+  "criterios_calidad": [
+    "El mismo termino se traduce igual en todas las lineas",
+    "Ningun texto supera el limite sin estar marcado",
+    "Las variables y etiquetas aparecen intactas en la traduccion"
+  ]
+}

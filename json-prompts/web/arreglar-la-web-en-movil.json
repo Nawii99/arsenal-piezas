@@ -1,0 +1,49 @@
+{
+  "tarea": "Detectar qué se rompe en móvil en [URL O HTML PEGADO] y devolver los arreglos de CSS listos para aplicar, sección por sección.",
+  "contexto": {
+    "plataforma": "[HTML PROPIO / WORDPRESS CON TEMA / SHOPIFY / CONSTRUCTOR VISUAL]",
+    "donde_se_toca_el_css": "[ARCHIVO STYLE / CSS ADICIONAL DEL TEMA / EDITOR DE LA PLATAFORMA]",
+    "anchos_a_revisar": "360px, 390px, 430px y tablet 768px"
+  },
+  "entradas": {
+    "sintomas": "[QUÉ VES MAL: TEXTO CORTADO, MENÚ ROTO, IMAGEN GIGANTE, SCROLL LATERAL...]",
+    "secciones": "[CABECERA, MENÚ, HÉROE, TARJETAS, TABLA, FORMULARIO, PIE]",
+    "movil_de_prueba": "[MODELO Y NAVEGADOR DONDE SE VE MAL]"
+  },
+  "pasos": [
+    "1. Comprobar lo primero de todo: que existe la etiqueta meta viewport con width=device-width.",
+    "2. Buscar la causa del desplazamiento lateral: un ancho fijo en píxeles, una imagen sin max-width, una tabla o un texto largo sin partir.",
+    "3. Revisar el menú: si se convierte en desplegable, si se puede cerrar y si tapa el contenido.",
+    "4. Revisar tamaños táctiles: botones y enlaces de 44px de alto mínimo y separados entre sí.",
+    "5. Revisar tipografías: 16px mínimo en texto normal para que el móvil no haga zoom al escribir en un campo.",
+    "6. Convertir rejillas de varias columnas en una sola columna por debajo de 768px, en el orden que tenga sentido leer.",
+    "7. Revisar imágenes y vídeos: proporción mantenida, sin deformar, con width y height para que no salte el contenido.",
+    "8. Revisar elementos fijos: barras pegajosas, banners y chats que en pantalla pequeña se comen media página."
+  ],
+  "restricciones": [
+    "Trabajar de móvil hacia arriba: primero la pantalla pequeña, luego lo grande.",
+    "Nada de !important salvo que la plataforma no deje otra opción, y avisando de ello.",
+    "No reescribir el diseño entero: parches quirúrgicos sobre lo existente.",
+    "Cada arreglo indica el selector exacto y dónde pegarlo."
+  ],
+  "formato_salida": {
+    "bloque_1": "Lista de roturas encontradas por sección y a qué ancho aparecen.",
+    "bloque_2": "CSS de arreglo comentado en español, en un bloque de código, ordenado por sección.",
+    "bloque_3": "Dónde pegar ese CSS según la plataforma.",
+    "bloque_4": "Prueba de 5 minutos: qué hacer con el móvil en la mano para confirmar que está arreglado."
+  },
+  "criterios_calidad": [
+    "A 360px no hay desplazamiento horizontal en ninguna sección.",
+    "Todos los botones se pulsan sin ampliar la pantalla.",
+    "Ningún texto queda tapado por barras fijas ni por el chat.",
+    "El formulario se puede rellenar entero sin que el teclado tape los campos.",
+    "El arreglo no estropea la versión de escritorio."
+  ],
+  "errores_frecuentes": [
+    "Faltar la etiqueta viewport y culpar al tema.",
+    "Poner anchos en píxeles fijos en contenedores.",
+    "Tablas anchas sin contenedor con desplazamiento propio.",
+    "Texto de 12px porque en el ordenador se veía bien.",
+    "Probar solo en el móvil propio y dar por hecho que se ve igual en todos."
+  ]
+}

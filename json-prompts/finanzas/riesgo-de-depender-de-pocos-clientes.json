@@ -1,0 +1,61 @@
+{
+  "tarea": "Medir mi concentración de ingresos por cliente y por tipo de servicio, simular la caída del cliente principal y devolver un plan de diversificación con plazos.",
+  "contexto": {
+    "negocio": "[QUÉ VENDO Y A QUIÉN]",
+    "periodo": "[ÚLTIMOS 12 MESES]",
+    "gastos_fijos_mensuales": "[IMPORTE]",
+    "caja_libre_actual": "[IMPORTE SIN CONTAR EL COLCHÓN DE IMPUESTOS]",
+    "capacidad_libre": "[HORAS AL MES QUE PODRÍA VENDER Y NO VENDO]"
+  },
+  "entradas": {
+    "facturacion_por_cliente": "[CLIENTE | FACTURADO 12 MESES | TIPO DE CONTRATO (PUNTUAL O RECURRENTE) | AVISO DE CANCELACIÓN | ANTIGÜEDAD]",
+    "facturacion_por_linea": "[SERVICIO O PRODUCTO | FACTURADO]",
+    "canales_de_captacion": "[DE DÓNDE VIENEN LOS CLIENTES Y CUÁNTOS DE CADA SITIO]",
+    "senales_de_riesgo": "[CAMBIOS DE INTERLOCUTOR, RECORTES, RETRASOS DE PAGO, MENOS ENCARGOS]"
+  },
+  "conocimiento_a_aplicar": [
+    "Se mide el peso del cliente número uno y el peso conjunto de los tres primeros sobre la facturación total.",
+    "Un cliente por encima de un tercio de tu facturación deja de ser cliente y pasa a ser jefe: cambia tu poder de negociación y tus precios.",
+    "La concentración también existe por canal: depender de una sola fuente de clientes es tan frágil como depender de un solo cliente.",
+    "Los ingresos recurrentes con preaviso largo pesan menos como riesgo que los encargos puntuales grandes.",
+    "Meses de resistencia = caja libre dividida entre gastos fijos, recalculado suponiendo que el cliente grande desaparece mañana.",
+    "Diversificar cuesta tiempo y dinero: se hace con capacidad libre, no quitando horas al cliente que paga.",
+    "La señal más común antes de perder un cliente grande es el cambio de la persona que te contrataba."
+  ],
+  "pasos": [
+    "1. Ordenar clientes por facturación y calcular el porcentaje de cada uno y el acumulado.",
+    "2. Calcular el peso del primero y de los tres primeros y clasificar el riesgo en bajo, medio o alto.",
+    "3. Hacer lo mismo por línea de servicio y por canal de captación.",
+    "4. Simular la pérdida del cliente principal: ingresos que quedan, gastos que siguen y meses de resistencia.",
+    "5. Calcular cuánta facturación nueva necesito y en cuánto tiempo para tapar ese hueco.",
+    "6. Proponer un plan de diversificación en 90 días con acciones semanales realistas para mi capacidad libre.",
+    "7. Definir señales de alarma temprana y qué hacer al detectarlas."
+  ],
+  "errores_tipicos": [
+    "Celebrar el contrato grande y dejar de vender mientras dura.",
+    "Bajar precios al cliente grande porque da volumen, aumentando la dependencia y bajando el margen.",
+    "Confundir facturación con seguridad: un cliente grande que paga tarde es más riesgo, no menos.",
+    "Diversificar aceptando trabajos malos que consumen todas las horas.",
+    "No leer las señales: menos encargos, interlocutor nuevo, pagos que se estiran."
+  ],
+  "restricciones": [
+    "No propongas dejar al cliente principal: el objetivo es reducir dependencia sin perderlo.",
+    "El plan debe caber en la capacidad libre que te he dado, sin inventar horas.",
+    "Nada de estrategias vagas: cada acción con qué se hace, cuándo y a cuántas personas."
+  ],
+  "formato_salida": {
+    "1_semaforo": "Nivel de riesgo con los dos porcentajes clave: peso del primero y de los tres primeros",
+    "2_tabla": "CLIENTE | FACTURADO | % | ACUMULADO | TIPO | PREAVISO | RIESGO",
+    "3_simulacion": "Qué pasa si cae el cliente uno: ingresos, gastos, meses de resistencia",
+    "4_hueco": "Cuánta facturación nueva hace falta al mes y de qué tipo de cliente",
+    "5_plan_90_dias": "Tabla por semanas: ACCIÓN | CANAL | TIEMPO SEMANAL | RESULTADO ESPERADO",
+    "6_alarmas": "Señales concretas y respuesta inmediata a cada una"
+  },
+  "criterios_calidad": [
+    "Los porcentajes suman 100 y el acumulado está bien calculado.",
+    "La simulación de caída está en euros y en meses, no en adjetivos.",
+    "El plan de 90 días no supera mis horas libres.",
+    "Las alarmas son observables: se pueden ver en un email o en un extracto."
+  ],
+  "si_faltan_datos": "Pídeme el reparto de facturación por cliente del último año antes de hacer nada más."
+}

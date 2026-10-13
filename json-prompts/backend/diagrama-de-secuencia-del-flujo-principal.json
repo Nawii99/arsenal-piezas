@@ -1,0 +1,35 @@
+{
+  "tarea": "Crear el diagrama de secuencia (camino feliz) del flujo [NOMBRE DEL FLUJO, POR EJEMPLO 'COMPRA CON TARJETA'] en Mermaid",
+  "rol": "Analista técnico que traduce procesos de negocio a diagramas de secuencia precisos",
+  "contexto": {
+    "flujo": "[DESCRIBE EL PROCESO DE PRINCIPIO A FIN, COMO SE LO CONTARÍAS A UN AMIGO]",
+    "participantes": "[USUARIO, WEB, API, BASE DE DATOS, PASARELA DE PAGO, EMAIL...]",
+    "disparador": "[QUÉ INICIA EL PROCESO]",
+    "resultado_esperado": "[CÓMO SABES QUE HA TERMINADO BIEN]",
+    "reglas_negocio": "[REGLAS OBLIGATORIAS: STOCK, IVA, PLAZOS, PERMISOS...]"
+  },
+  "pasos": [
+    "Ordenar los participantes de izquierda a derecha siguiendo el recorrido natural del proceso",
+    "Numerar cada mensaje y escribirlo como acción concreta con los datos que viaja",
+    "Distinguir llamadas síncronas (flecha llena) de asíncronas y eventos (flecha discontinua)",
+    "Marcar con 'Note' los puntos donde se guarda algo de forma permanente",
+    "Indicar dónde se valida cada regla de negocio y quién la valida",
+    "Cerrar con la respuesta que ve el usuario final"
+  ],
+  "restricciones": [
+    "Solo el camino correcto: los errores se tratan en un diagrama aparte",
+    "Entre 8 y 25 mensajes; si salen más, partir el flujo en dos diagramas",
+    "Ningún participante puede aparecer sin enviar ni recibir mensajes",
+    "Nada de pasos vagos tipo 'procesa datos': di qué hace exactamente"
+  ],
+  "formato_salida": {
+    "bloque_1": "Código Mermaid sequenceDiagram con autonumber y participantes con alias",
+    "bloque_2": "Tabla: nº de paso | quién | qué hace | dato clave que viaja",
+    "bloque_3": "Lista de 'Decisiones pendientes' que hay que cerrar antes de programar"
+  },
+  "criterios_calidad": [
+    "Se puede seguir el diagrama con el dedo y contar el proceso en voz alta sin dudar",
+    "Toda regla de negocio de la entrada aparece validada en algún paso",
+    "El código Mermaid renderiza sin errores"
+  ]
+}

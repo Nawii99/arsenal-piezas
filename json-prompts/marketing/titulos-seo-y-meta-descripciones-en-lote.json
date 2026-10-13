@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar títulos SEO y meta descripciones optimizados para un lote de páginas, priorizando el clic sin engañar",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "diferencial": "[LO QUE TE HACE DISTINTO: ENVÍO, GARANTÍA, AÑOS, ZONA, PRECIO...]",
+    "tipo_web": "[TIENDA / WEB DE SERVICIOS / BLOG]"
+  },
+  "entradas": {
+    "paginas": "[LISTA: URL | TEMA DE LA PÁGINA | PALABRA CLAVE OBJETIVO | TÍTULO ACTUAL SI LO HAY]"
+  },
+  "reglas_titulo": [
+    "Entre 50 y 60 caracteres contando espacios",
+    "La palabra clave lo más al principio posible, pero que se lea natural",
+    "Añade un gancho: beneficio, cifra, año, zona o diferencial",
+    "Incluye la marca al final con guion solo si caben los caracteres",
+    "Ningún título repetido dentro del lote"
+  ],
+  "reglas_meta": [
+    "Entre 145 y 155 caracteres",
+    "Estructura: qué encuentra + por qué tú + llamada a la acción",
+    "Incluye la palabra clave una vez, sin forzar",
+    "Nada de prometer lo que la página no cumple"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown y, debajo, la misma tabla en CSV separado por punto y coma",
+    "columnas": ["URL", "título propuesto", "nº caracteres título", "meta descripción propuesta", "nº caracteres meta", "qué he cambiado y por qué"]
+  },
+  "restricciones": [
+    "No uses mayúsculas sostenidas, ni signos de exclamación múltiples, ni emojis salvo que se pidan",
+    "Prohibido el clickbait: lo prometido tiene que estar en la página",
+    "Cuenta los caracteres de verdad y muéstralos; si te pasas, reescribe antes de entregar"
+  ],
+  "criterios_calidad": [
+    "Ningún título ni meta se sale del rango de caracteres indicado",
+    "Cada propuesta se diferencia de las demás páginas del mismo sitio",
+    "La columna de justificación explica el cambio en una frase entendible"
+  ]
+}

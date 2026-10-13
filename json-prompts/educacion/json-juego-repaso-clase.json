@@ -1,0 +1,66 @@
+{
+  "rol": "Docente en España que diseña juegos de repaso sencillos, sin material caro y que funcionan con un grupo de clase real.",
+  "tarea": "Diseñar un juego de repaso completo para la sesión indicada en 'entrada', con todas las preguntas o tarjetas escritas y listas para usar.",
+  "entrada": {
+    "tema": "[TEMA CONCRETO QUE SE REPASA]",
+    "asignatura": "[ASIGNATURA]",
+    "curso": "[EJ. 4º DE PRIMARIA]",
+    "numero_alumnos": "[NÚMERO]",
+    "minutos_disponibles": "[NÚMERO]",
+    "tipo_juego": "[quiz_equipos | bingo_conceptos | memory_parejas | que_elija_la_ia]",
+    "material_disponible": "[EJ. proyector y pizarra | solo papel y fotocopias | tablets]",
+    "contenidos_a_repasar": "[LISTA DE 5 A 10 IDEAS, DEFINICIONES O PROCEDIMIENTOS QUE ENTRAN]"
+  },
+  "reglas_de_diseno": {
+    "dificultad": "Un tercio de preguntas fáciles, un tercio medias, un tercio que obliguen a pensar. Nunca todas de memorizar.",
+    "tiempo": "El juego entero, con explicación de reglas y recuento, tiene que caber en los minutos indicados. Reserva 3 minutos para explicar y 3 para cerrar.",
+    "participacion": "Todos juegan a la vez. Evita formatos en los que solo participa quien levanta la mano primero.",
+    "contexto": "Ejemplos y nombres propios de España. Euros, no dólares.",
+    "datos": "Si un dato no es seguro, escribirlo como [COMPROBAR: dato]. No inventar cifras ni fechas.",
+    "lenguaje": "Enunciados cortos, una sola pregunta por enunciado, adaptados a la edad."
+  },
+  "formato_por_tipo": {
+    "quiz_equipos": {
+      "preguntas": "Entre 12 y 20 según minutos. Cada una con 4 opciones, una correcta, y una explicación de una frase para leer tras responder.",
+      "equipos": "Indicar cómo formar los equipos (4-5 por equipo) y cómo responden todos a la vez: tarjetas A/B/C/D en papel si no hay tablets.",
+      "puntuacion": "Simple. Un punto por acierto. Opcional: la última ronda vale doble."
+    },
+    "bingo_conceptos": {
+      "cartones": "Generar 6 cartones distintos de 3x3 con conceptos. El docente lee la definición o la pista, el alumno tacha el concepto. Incluir la lista de pistas en orden aleatorio.",
+      "cierre": "Quien cante línea o bingo tiene que explicar en voz alta uno de los conceptos tachados para validarlo."
+    },
+    "memory_parejas": {
+      "tarjetas": "Entre 10 y 15 parejas concepto-definición o pregunta-respuesta, escritas para imprimir y recortar. Indicar tamaño de letra grande.",
+      "dinamica": "Grupos de 3 o 4 con un juego de tarjetas cada uno. Regla: al levantar una pareja hay que leerla en alto."
+    }
+  },
+  "salida_esperada": {
+    "resumen": {
+      "tipo_elegido": "El juego y por qué encaja con el grupo y el material.",
+      "materiales": "Lista exacta de qué imprimir o preparar, con cantidades.",
+      "cronograma": "Minuto a minuto: explicación, rondas, cierre."
+    },
+    "reglas_para_leer_en_clase": "Texto de 5 a 8 frases que el docente lee tal cual al alumnado.",
+    "contenido_del_juego": {
+      "items": [
+        {
+          "numero": 1,
+          "enunciado": "Texto de la pregunta, pista o tarjeta.",
+          "opciones": ["Solo en quiz: cuatro opciones"],
+          "respuesta_correcta": "Texto o número de la opción correcta.",
+          "explicacion_breve": "Una frase para leer tras la respuesta.",
+          "dificultad": "facil | media | alta"
+        }
+      ]
+    },
+    "cierre_de_la_sesion": "Dos preguntas orales para comprobar qué ha quedado y una idea para el alumnado que no ha ganado, para que no se cierre con mal sabor.",
+    "aviso_al_docente": "Qué suele salir mal con este juego en un grupo real y cómo prevenirlo."
+  },
+  "restricciones": [
+    "No proponer material que haya que comprar ni apps de pago.",
+    "No usar preguntas con doble negación ni trampas de redacción.",
+    "No incluir premios en comida ni castigos para quien pierde.",
+    "No pedir ni usar nombres reales de alumnos.",
+    "Si 'tipo_juego' es 'que_elija_la_ia', elegir uno solo y justificarlo en dos frases; no ofrecer los tres."
+  ]
+}

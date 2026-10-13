@@ -1,0 +1,51 @@
+{
+  "tarea": "Convertir un tema en un mini curso de 7 días entregado por email o WhatsApp, con una acción diaria pequeña y comprobación final.",
+  "contexto": {
+    "tema": "[EL TEMA Y EL RESULTADO DE LA SEMANA]",
+    "canal": "[EMAIL / WHATSAPP / AMBOS]",
+    "quien_lo_recibe": "[PERFIL Y POR QUÉ SE APUNTÓ]",
+    "tiempo_diario_del_alumno": "[MINUTOS REALISTAS, NORMALMENTE 10 O 15]",
+    "que_pasa_el_dia_8": "[NADA / OFERTA / INVITACIÓN A TALLER]"
+  },
+  "entradas": {
+    "metodo_completo": "[LOS PASOS DEL MÉTODO QUE VAS A REPARTIR]",
+    "ejemplos_propios": "[CASOS REALES QUE PUEDES CONTAR]",
+    "herramienta_necesaria": "[QUÉ NECESITA TENER A MANO]"
+  },
+  "proceso": [
+    "1. Elige UN resultado de la semana lo bastante pequeño para conseguirse en 7 días de 15 minutos.",
+    "2. Reparte el método en 7 acciones acumulativas: cada día produce un trozo del entregable final.",
+    "3. El día 1 pide la acción más fácil posible y que se note el avance: es el día que decide si siguen.",
+    "4. Escribe cada mensaje con esta estructura: qué vamos a hacer hoy, por qué importa en 2 líneas, cómo se hace paso a paso, el ejemplo, y la acción con su tiempo.",
+    "5. Adapta la longitud al canal: email de 200 a 350 palabras; WhatsApp de 60 a 120 y sin enlaces largos.",
+    "6. Coloca en el día 4 el obstáculo típico y cómo saltárselo: es donde la gente abandona.",
+    "7. El día 6 es de revisión: una lista de comprobación para que valide lo hecho.",
+    "8. El día 7 cierra con el entregable completo, cómo saber si está bien y qué hacer a partir de ahora.",
+    "9. Escribe los asuntos de email o la primera línea de WhatsApp: concretos, sin misterio y sin mayúsculas gritadas.",
+    "10. Añade un mensaje de rescate para quien no abre nada desde el día 3."
+  ],
+  "restricciones": [
+    "Una acción por día. Nunca dos.",
+    "Prohibido pedir que vean un vídeo largo dentro de los 15 minutos diarios.",
+    "No dejes ningún día sin decir cómo saber que el resultado está bien.",
+    "Si vendes algo el día 8, en los 7 anteriores se enseña de verdad, no se hace publicidad."
+  ],
+  "formato_salida": {
+    "mapa": "Tabla: Día | Acción | Trozo del entregable | Minutos.",
+    "mensajes": "Los 7 mensajes completos listos para copiar, con asunto o primera línea.",
+    "rescate": "Mensaje para inactivos con su día de envío.",
+    "dia_8": "Mensaje de cierre y siguiente paso."
+  },
+  "criterios_calidad": [
+    "Al final de la semana existe una cosa terminada, no siete lecturas.",
+    "Cada mensaje se lee y se ejecuta dentro del tiempo declarado.",
+    "Ningún día depende de haber hecho perfecto el anterior: siempre hay forma de engancharse.",
+    "El tono es el mismo persona a persona, sin lenguaje de folleto."
+  ],
+  "errores_tipicos": [
+    "Repartir teoría en 7 trozos en vez de repartir el trabajo.",
+    "Empezar el día 1 con la parte más difícil.",
+    "Mensajes de WhatsApp de cinco párrafos.",
+    "Prometer resultados grandes en una semana."
+  ]
+}

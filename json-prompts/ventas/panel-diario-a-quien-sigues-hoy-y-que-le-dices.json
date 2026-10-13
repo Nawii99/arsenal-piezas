@@ -1,0 +1,37 @@
+{
+  "tarea": "Priorizar una cartera de oportunidades abiertas y decidir la acción de seguimiento de cada una",
+  "entradas": {
+    "oportunidades": "[PEGA TU LISTA: CLIENTE, IMPORTE, FECHA DEL ÚLTIMO CONTACTO, QUIÉN CONTACTÓ ÚLTIMO, QUÉ QUEDÓ PENDIENTE]",
+    "tiempo_disponible_hoy": "[HORAS QUE PUEDES DEDICAR A VENDER]",
+    "canales": "[TELÉFONO, EMAIL, WHATSAPP, VISITA]"
+  },
+  "criterios_de_prioridad": [
+    "Importe en juego",
+    "Días desde el último contacto frente al ciclo normal de tu venta",
+    "Quién movió ficha por última vez: si contestó el cliente, sube prioridad",
+    "Si hay un siguiente paso con fecha acordada o no lo hay",
+    "Señales de compra frente a señales de largas"
+  ],
+  "instrucciones": [
+    "Ordena las oportunidades en tres grupos: LLAMAR HOY, ESCRIBIR HOY y CERRAR O APARCAR",
+    "Para cada una, di en una línea por qué está en ese grupo",
+    "Escribe la primera frase exacta del mensaje o de la llamada de cada una",
+    "Marca las que llevan más tiempo parado que el doble de tu ciclo normal como candidatas a cierre",
+    "Ajusta la lista al tiempo disponible: no propongas más acciones de las que caben"
+  ],
+  "restricciones": [
+    "No inventar datos que no estén en la lista: si falta información, pídela en una nota al final",
+    "Máximo 3 acciones por cliente y día",
+    "Nada de mensajes iguales para varios clientes"
+  ],
+  "formato_salida": {
+    "tipo": "tabla ordenada por prioridad",
+    "columnas": ["prioridad", "cliente", "importe", "días sin contacto", "acción de hoy", "canal", "primera frase"],
+    "final": "Resumen de 3 líneas: dónde está el dinero más cercano, qué has aparcado y qué dato te falta para decidir mejor"
+  },
+  "criterios_calidad": [
+    "Las acciones caben en el tiempo disponible indicado",
+    "Cada primera frase es distinta y menciona algo concreto del cliente",
+    "Ninguna oportunidad se queda sin decisión: o se trabaja, o se cierra"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tarea": "Diseñar un plan de enlazado interno entre los artículos del blog y las páginas que generan negocio",
+  "entradas": {
+    "listado_de_articulos": "[PEGA UNA LÍNEA POR ARTÍCULO: URL, TÍTULO, TEMA Y PALABRA CLAVE]",
+    "paginas_prioritarias": "[URLS DE SERVICIO, PRODUCTO O CONTACTO QUE QUIERES REFORZAR]",
+    "articulos_estrella": "[LOS QUE MÁS VISITAS RECIBEN]",
+    "cms": "[WORDPRESS / SHOPIFY / WEBFLOW / OTRO]"
+  },
+  "metodo": [
+    "Agrupar los artículos por tema y detectar cuál es el principal de cada grupo",
+    "Enviar enlaces desde los artículos con más visitas hacia las páginas prioritarias",
+    "Conectar cada satélite con su artículo principal y el principal con sus satélites",
+    "Detectar artículos huérfanos, sin ningún enlace entrante",
+    "Detectar artículos que compiten por la misma búsqueda y proponer qué hacer"
+  ],
+  "reglas_del_enlace": [
+    "Texto del enlace descriptivo, nunca pincha aquí ni leer más",
+    "Máximo 4 enlaces internos nuevos por artículo",
+    "El enlace debe encajar en una frase que tenga sentido para el lector",
+    "No enlazar dos veces a la misma página desde el mismo artículo",
+    "Nada de enlaces forzados solo para cumplir el plan"
+  ],
+  "formato_salida": {
+    "tabla_principal": {
+      "columnas": ["articulo_origen", "pagina_destino", "texto_del_enlace", "donde_colocarlo", "frase_sugerida", "prioridad"]
+    },
+    "bloques_extra": ["lista_de_articulos_huerfanos", "posibles_canibalizaciones_y_que_hacer", "orden_de_ejecucion_en_3_tandas"]
+  },
+  "criterios_calidad": [
+    "Cada frase sugerida se puede pegar tal cual en el artículo",
+    "Ninguna página prioritaria se queda sin enlaces entrantes",
+    "El plan se puede aplicar en tandas sin bloquearse"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "tarea": "Revisar el texto de [PIEZA: WEB, ANUNCIO, POST, FOLLETO] de un servicio de salud o bienestar y reescribirlo sin afirmaciones indebidas",
+  "contexto": {
+    "tipo_de_servicio": "[FISIOTERAPIA / ESTÉTICA / NUTRICIÓN / SUPLEMENTOS / BIENESTAR / PSICOLOGÍA]",
+    "canal": "[WEB / META ADS / GOOGLE ADS / INSTAGRAM / FOLLETO EN PAPEL]",
+    "es_profesion_sanitaria": "[SÍ / NO / NO LO SÉ]",
+    "pais": "España"
+  },
+  "entradas": {
+    "texto_original": "[PEGA EL TEXTO COMPLETO TAL CUAL]",
+    "pruebas_disponibles": "[QUÉ PUEDES DEMOSTRAR: TITULACIONES, AÑOS, NÚMERO DE PACIENTES, ESTUDIOS]",
+    "testimonios": "[TIENES PERMISO POR ESCRITO DE LAS PERSONAS QUE APARECEN?]"
+  },
+  "pasos": [
+    "1. Subraya cada frase que afirme curar, eliminar, garantizar, sin dolor, resultados permanentes, adelgazar X kilos o prevenir una enfermedad.",
+    "2. Marca las promesas de resultado con número o plazo y las comparaciones con otros profesionales o centros.",
+    "3. Detecta el uso de bata, aparatos o vocabulario médico cuando el servicio no es sanitario.",
+    "4. Revisa los antes y después y los testimonios: sin consentimiento escrito y sin contexto, fuera.",
+    "5. Clasifica cada hallazgo en tres niveles: quitar sí o sí, reescribir con matiz y aceptable como está.",
+    "6. Reescribe cada frase problemática cambiando la promesa de resultado por una descripción del proceso, del método y de a quién va dirigido.",
+    "7. Sustituye el gancho por argumentos que sí se pueden sostener: experiencia, formación, tiempo dedicado, seguimiento, instalaciones y trato.",
+    "8. Añade las menciones que faltan: titulación del profesional, número de registro sanitario del centro si lo hay y aviso de que los resultados varían según cada persona.",
+    "9. Entrega el texto final limpio y una lista de lo que se cambió y por qué."
+  ],
+  "restricciones": [
+    "Esto es una revisión de comunicación, no asesoramiento jurídico: si la pieza es de un centro sanitario, la última palabra la tiene un abogado o el colegio profesional.",
+    "No se inventan datos, estudios ni porcentajes de eficacia.",
+    "No se sustituye una promesa prohibida por otra más suave que diga lo mismo.",
+    "El texto final debe seguir sonando a la marca, no a documento legal."
+  ],
+  "formato_salida": {
+    "1_semaforo": "Tabla con frase original, nivel de riesgo y motivo",
+    "2_texto_corregido": "La pieza completa reescrita, lista para publicar",
+    "3_cambios": "Lista de cambios con la frase antes y después",
+    "4_avisos_obligatorios": "Qué menciones hay que añadir y dónde",
+    "5_pendiente_de_consulta": "Dudas que conviene confirmar con un profesional legal"
+  },
+  "criterios_calidad": [
+    "Ninguna frase del texto final promete un resultado de salud.",
+    "El texto final vende igual o mejor que el original, no queda descafeinado.",
+    "Cada afirmación que queda se puede demostrar con algo concreto.",
+    "El texto pasaría la revisión de una plataforma de anuncios sin retoques."
+  ],
+  "errores_tipicos": [
+    "Confundir describir un método con prometer un resultado.",
+    "Usar testimonios de pacientes sin permiso firmado.",
+    "Poner antes y después sin decir en cuánto tiempo ni con qué constancia.",
+    "Dejar el aviso legal y quitar todo lo que hacía interesante el texto."
+  ]
+}

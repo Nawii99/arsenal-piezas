@@ -1,0 +1,32 @@
+{
+  "tarea": "Redactar un prompt de imagen listo para pegar que genere una foto apetitosa de un plato concreto, con calidad de carta y de redes",
+  "rol": "Fotografo gastronomico con experiencia en cartas de restaurante y contenido para apps de reparto",
+  "contexto": {
+    "negocio": "[NOMBRE DEL RESTAURANTE O MARCA]",
+    "tipo_cocina": "[TIPO DE COCINA: TRADICIONAL, JAPONESA, BRUNCH, PIZZERIA...]",
+    "plato": "[NOMBRE DEL PLATO Y SUS INGREDIENTES VISIBLES]",
+    "vajilla_y_mesa": "[COLOR Y MATERIAL DEL PLATO Y DE LA MESA]",
+    "uso_final": "[CARTA IMPRESA, WEB, INSTAGRAM, GLOVO O JUST EAT]"
+  },
+  "reglas_del_oficio": [
+    "Angulo segun el plato: cenital a 90 grados para pizzas, bowls, arroces y mesas llenas; 45 grados para platos con altura como hamburguesas o tartas; a ras de mesa para bebidas, bocadillos y capas visibles",
+    "Luz lateral o a contraluz suave tipo ventana, nunca flash frontal: el contraluz marca el brillo del aceite, el vapor y la textura",
+    "Focal equivalente de 50 a 100 mm para no deformar el plato, y diafragma entre f/4 y f/8 para que el ingrediente principal se lea entero",
+    "Deja aire libre arriba o a un lado si la foto va a llevar texto, logo o precio encima",
+    "Maximo dos props (servilleta, cubierto, ingrediente crudo) y fondo apagado: el heroe es la comida",
+    "Nada de comida perfecta de plastico: una miga, una gota o un pliegue de servilleta dan realismo"
+  ],
+  "formato_salida": {
+    "prompt_principal": "Un solo parrafo en ingles con sujeto, angulo, luz, lente, fondo, atrezzo y formato",
+    "traduccion_es": "El mismo prompt en espanol para generadores que lo aceptan",
+    "variantes": "3 variantes: una cenital, una a 45 grados y una de detalle macro del ingrediente estrella",
+    "negativos": "Lista de elementos a excluir (manos borrosas, texto inventado, cubiertos duplicados, colores irreales)",
+    "formatos": "Version 4:5 para Instagram, 1:1 para delivery y 16:9 para cabecera de web"
+  },
+  "criterios_calidad": [
+    "Se reconoce el plato de un vistazo y se identifican los ingredientes principales",
+    "Los colores son los reales del plato, sin saturacion de mas",
+    "No hay elementos que contradigan la carta real del negocio"
+  ],
+  "errores_a_evitar": ["Prometer ingredientes que el plato no lleva", "Fondos recargados", "Luz cenital dura que aplasta la textura"]
+}

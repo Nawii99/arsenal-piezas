@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar los 4 correos de la fase de cierre de una oferta con fecha límite real",
+  "contexto": {
+    "que_ofreces": "[PRODUCTO, SERVICIO, CURSO O PROMOCIÓN]",
+    "precio_y_condiciones": "[PRECIO, PAGO ÚNICO O A PLAZOS, QUÉ INCLUYE]",
+    "cierre": "[FECHA Y HORA EXACTAS EN QUE DEJA DE ESTAR DISPONIBLE]",
+    "por_que_cierra": "[PLAZAS LIMITADAS, EMPIEZA EL GRUPO, SUBE EL PRECIO, TEMPORADA]",
+    "para_quien_no_es": "[PERFIL AL QUE NO LE SIRVE]",
+    "objeciones": "[LAS 3 DUDAS QUE MÁS APARECEN: PRECIO, TIEMPO, SI FUNCIONARÁ EN SU CASO]",
+    "garantia": "[GARANTÍA O POLÍTICA DE DEVOLUCIÓN REAL, O 'NINGUNA']",
+    "casos_reales": "[TESTIMONIOS O RESULTADOS QUE PUEDES CITAR TAL CUAL]"
+  },
+  "secuencia": [
+    "Correo 1 (faltan 3 días): recuerda el problema y presenta la oferta completa con qué incluye y qué no",
+    "Correo 2 (faltan 2 días): responde las 3 objeciones en formato pregunta-respuesta y añade un caso real",
+    "Correo 3 (último día por la mañana): resumen corto, para quién es y para quién no, precio y enlace",
+    "Correo 4 (últimas horas): 120 palabras como máximo, hora exacta de cierre, qué pasa después y un solo enlace"
+  ],
+  "para_cada_correo": [
+    "Asunto, preheader y momento exacto de envío",
+    "Cuerpo con la extensión indicada",
+    "Llamada a la acción única repetida como mucho dos veces en el mismo correo",
+    "Una línea con el argumento principal que sostiene ese correo"
+  ],
+  "restricciones": [
+    "La urgencia debe ser verdad: si no hay cierre real, dilo y propón otro enfoque",
+    "Nada de contadores falsos, plazas inventadas ni 'quedan 2' sin dato",
+    "No repitas el mismo argumento en los cuatro correos",
+    "Menciona siempre para quién NO es la oferta, al menos una vez"
+  ],
+  "extra": "Añade una versión corta del correo 4 para enviar solo a quienes clicaron pero no compraron",
+  "formato_salida": "Calendario de envíos en tabla y después los 4 correos completos, cada uno con su asunto y hora",
+  "criterios_calidad": [
+    "Se puede comprar sin leer los otros correos",
+    "Todos los datos de precio y garantía coinciden con lo aportado",
+    "Ningún correo suena a presión ni a chantaje"
+  ]
+}

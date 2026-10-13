@@ -1,0 +1,38 @@
+{
+  "tarea": "Definir mi política de descuentos y mi guion de negociación, con límites calculados sobre el margen",
+  "contexto": {
+    "negocio": "[QUÉ VENDES]",
+    "situacion": "[NEGOCIACIÓN CONCRETA O POLÍTICA GENERAL PARA TODOS LOS CLIENTES]",
+    "quien_negocia": "[TÚ SOLO O TAMBIÉN UN COMERCIAL O SOCIO]"
+  },
+  "entradas": {
+    "precios_y_margenes": "[POR SERVICIO: PRECIO, COSTE Y MARGEN EN PORCENTAJE]",
+    "descuentos_dados": "[DESCUENTOS QUE HAS CONCEDIDO EN LOS ÚLTIMOS MESES Y POR QUÉ]",
+    "contrapartidas_utiles": "[PAGO POR ADELANTADO, VOLUMEN, PLAZO MÁS LARGO, TESTIMONIO, EXCLUSIVIDAD]",
+    "margen_minimo_aceptable": "[PORCENTAJE POR DEBAJO DEL CUAL NO ACEPTAS UN TRABAJO]"
+  },
+  "metodo": [
+    "Calcular cuánto margen se lleva cada porcentaje de descuento y cuánto volumen extra haría falta para compensarlo",
+    "Definir tres niveles de descuento con la contrapartida obligatoria de cada uno",
+    "Marcar el punto de no retorno: el precio por debajo del cual se dice que no y se abandona la operación",
+    "Preparar alternativas al descuento: reducir alcance, alargar el plazo, cambiar la forma de pago",
+    "Escribir quién puede aprobar cada nivel y qué hay que dejar por escrito"
+  ],
+  "formato_salida": {
+    "tabla_descuentos": "Nivel, porcentaje máximo, contrapartida exigida, quién lo aprueba, margen resultante",
+    "impacto": "Cuadro con lo que pierdes de margen en cada nivel y el volumen necesario para compensarlo",
+    "guion": "Frases exactas para conceder un descuento pidiendo algo a cambio",
+    "frases_para_decir_no": "Tres formas de rechazar una rebaja sin romper la relación",
+    "resumen_una_pagina": "Reglas en viñetas para tener a mano en cualquier reunión"
+  },
+  "restricciones": [
+    "Ningún nivel de descuento puede dejar el margen por debajo del mínimo indicado",
+    "Nada de descuentos automáticos por pedirlo: siempre con contrapartida",
+    "Evitar promesas de resultados o comparaciones agresivas con la competencia"
+  ],
+  "criterios_calidad": [
+    "Los números de impacto están calculados y se pueden comprobar",
+    "Las reglas se pueden aplicar en una reunión sin volver a hacer cuentas"
+  ],
+  "tono": "Sobrio, de manual interno, frases cortas"
+}

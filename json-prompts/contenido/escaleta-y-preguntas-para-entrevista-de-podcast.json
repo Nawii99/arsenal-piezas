@@ -1,0 +1,34 @@
+{
+  "tarea": "Preparar la escaleta y el guion de preguntas de una entrevista de podcast de [DURACIÓN: 45-60 MIN] con [NOMBRE DEL INVITADO]",
+  "contexto": {
+    "programa": "[NOMBRE DEL PODCAST Y DE QUÉ VA]",
+    "oyente": "[QUIÉN ESCUCHA Y QUÉ QUIERE SACAR]",
+    "invitado": "[TRAYECTORIA, LOGROS Y DATOS QUE YA CONOZCAS]",
+    "temas_clave": "[2 O 3 TEMAS QUE SÍ O SÍ QUIERES TOCAR]",
+    "tono": "[CONVERSACIÓN DISTENDIDA / ENTREVISTA SERIA / DEBATE]"
+  },
+  "metodo": [
+    "Empieza por lo concreto y reciente del invitado, no por su biografía",
+    "Cada bloque temático avanza: contexto, decisión difícil, error, aprendizaje aplicable",
+    "Preguntas abiertas y de una sola idea; nada de preguntas dobles",
+    "Para cada pregunta principal, prepara 2 repreguntas por si responde corto",
+    "Reserva los 10 últimos minutos para la parte más personal o polémica"
+  ],
+  "formato_salida": {
+    "escaleta": "Tabla con Minuto | Bloque | Objetivo del bloque | Pregunta de entrada",
+    "preguntas": "18-22 preguntas agrupadas por bloque, cada una con sus repreguntas",
+    "apertura": "Texto exacto de presentación del invitado en menos de 60 segundos",
+    "cierre": "Pregunta final recurrente del programa y despedida con CTA",
+    "avisos": "Lista de 5 temas delicados o preguntas a evitar y por qué",
+    "momentos_clip": "5 preguntas con más probabilidad de dar un clip de 60 segundos"
+  },
+  "restricciones": [
+    "No des por buenos datos del invitado que no estén en [TRAYECTORIA]: márcalos como [VERIFICAR]",
+    "Evita preguntas que se respondan con sí o no",
+    "Nada de halagos largos antes de preguntar"
+  ],
+  "criterios_calidad": [
+    "Un oyente que no conoce al invitado entiende en 2 minutos por qué le interesa",
+    "Ninguna pregunta se podría hacer igual a otro invitado distinto"
+  ]
+}

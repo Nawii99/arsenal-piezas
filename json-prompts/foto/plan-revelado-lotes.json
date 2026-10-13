@@ -1,0 +1,46 @@
+{
+  "tarea": "plan_de_revelado_y_exportacion_por_lotes",
+  "idioma": "es-ES",
+  "perfil_usuario": {
+    "nivel": "no_programador",
+    "sistema": "[WINDOWS / MAC / LINUX / ANDROID]",
+    "presupuesto": "prefiere herramientas gratuitas"
+  },
+  "entrada": {
+    "carpeta_origen": "[RUTA DE LA CARPETA]",
+    "numero_de_fotos": "[CUANTAS SON]",
+    "formato": "[JPG / RAW / AMBOS]",
+    "camara_o_movil": "[MODELO]",
+    "tipo_de_sesion": "[PRODUCTO / RETRATO / EVENTO / INTERIORES]",
+    "luz_dominante": "[VENTANA / ESTUDIO / SOL DIRECTO / BOMBILLAS]"
+  },
+  "destino": {
+    "plataformas": ["[WEB PROPIA]", "[INSTAGRAM]", "[FICHA DE TIENDA]"],
+    "perfil_de_color": "sRGB",
+    "lado_largo_px": 2048,
+    "calidad_jpg": 85,
+    "renombrado": "[PREFIJO]-0001"
+  },
+  "herramientas": {
+    "gratis_y_libres": ["darktable", "RawTherapee", "GIMP", "ImageMagick", "XnConvert"],
+    "de_pago_solo_si_ya_la_tiene": ["Lightroom", "Capture One"],
+    "regla": "no propongas nada de pago sin decir el precio y si hay version gratuita"
+  },
+  "salida_esperada": {
+    "formato": "pasos numerados, maximo 10",
+    "incluir": [
+      "ajustes base que se aplican a todas las fotos",
+      "que hay que revisar foto a foto y no se puede automatizar",
+      "como guardar ese ajuste como estilo o preajuste reutilizable",
+      "la orden exacta de exportacion por lotes, lista para copiar",
+      "comprobaciones finales antes de publicar"
+    ]
+  },
+  "reglas": [
+    "Trabaja siempre sobre copias: los archivos originales no se tocan ni se borran.",
+    "Si no estas seguro del nombre exacto de un menu, describe la funcion en vez de inventarlo.",
+    "Si hay caras reconocibles, recuerda que hace falta permiso de esa persona antes de publicar.",
+    "Si alguna imagen se ha generado o retocado con IA de forma que cambie lo que se ve, avisa de que debe indicarse como generada.",
+    "Di el coste y el limite gratuito de cada herramienta que propongas."
+  ]
+}

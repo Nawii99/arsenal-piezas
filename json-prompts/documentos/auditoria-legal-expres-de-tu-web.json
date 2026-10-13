@@ -1,0 +1,38 @@
+{
+  "tarea": "Auditar el cumplimiento legal básico de una web española y devolver un informe de hallazgos priorizado",
+  "entradas": {
+    "url": "[WWW.TUDOMINIO.COM]",
+    "textos_actuales": "[PEGA AQUÍ AVISO LEGAL, PRIVACIDAD Y COOKIES O INDICA QUE NO EXISTEN]",
+    "formularios": "[LISTA DE FORMULARIOS Y QUÉ CASILLAS TIENEN]",
+    "herramientas": "[ANALÍTICA, PÍXELES, CHAT, VÍDEOS, MAPAS]",
+    "tipo_de_negocio": "[SERVICIOS / TIENDA / PROFESIONAL SANITARIO / FORMACIÓN]"
+  },
+  "puntos_a_revisar": [
+    "Datos identificativos del art. 10 LSSI visibles y correctos",
+    "Política de privacidad con finalidades, bases legales, plazos y derechos",
+    "Banner de cookies con rechazo en primera capa y sin carga previa de terceros",
+    "Casillas de consentimiento sin premarcar y separadas por finalidad",
+    "Enlaces legales accesibles desde todas las páginas y desde el checkout",
+    "Condiciones de contratación y derecho de desistimiento si hay venta",
+    "Coherencia entre lo que dice la web y las herramientas realmente instaladas",
+    "Textos legales copiados de otra empresa o con nombres ajenos"
+  ],
+  "instrucciones": [
+    "Para cada punto indica estado con semáforo verde, ámbar o rojo y una frase con la evidencia concreta",
+    "Explica el riesgo real en lenguaje llano: qué puede pasar si se deja así",
+    "Propón la corrección exacta, incluyendo el texto que hay que escribir cuando sea corto",
+    "Ordena las acciones por urgencia y por esfuerzo, empezando por lo que se arregla en menos de una hora",
+    "No afirmes que algo incumple si no puedes verlo: márcalo como pendiente de comprobar y di cómo comprobarlo"
+  ],
+  "formato_salida": {
+    "bloque_1": "tabla de hallazgos con columnas punto, semáforo, evidencia, riesgo y corrección",
+    "bloque_2": "plan de acción en tres grupos: hoy, esta semana, este mes",
+    "bloque_3": "lista de comprobaciones que debe hacer una persona en el navegador"
+  },
+  "criterios_calidad": [
+    "Cada hallazgo tiene evidencia y corrección concreta",
+    "No hay alarmismo ni sanciones inventadas",
+    "El plan cabe en una página",
+    "Se distingue lo comprobado de lo que hay que verificar"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Evaluar si una librería de terceros es segura y sensata de adoptar, y proponer alternativas",
+  "contexto": {
+    "paquete": "[NOMBRE Y VERSIÓN EXACTA]",
+    "ecosistema": "[NPM, PYPI, PACKAGIST, MAVEN...]",
+    "para_que_lo_queremos": "[EJ: GENERAR PDFS DE FACTURAS]",
+    "tipo_de_proyecto": "[SAAS DE PAGO, WEB CORPORATIVA, HERRAMIENTA INTERNA]",
+    "modelo_de_negocio": "[CERRADO Y COMERCIAL / CÓDIGO ABIERTO]"
+  },
+  "que_analizar": [
+    "Mantenimiento: fecha del último lanzamiento, ritmo de publicaciones y número de personas que lo mantienen",
+    "Adopción: descargas, proyectos conocidos que lo usan y si es la opción estándar del ecosistema",
+    "Historial de seguridad: vulnerabilidades pasadas y cuánto tardaron en parchearlas",
+    "Superficie de riesgo: cuántas dependencias arrastra y si ejecuta scripts al instalarse",
+    "Permisos que necesita: red, sistema de ficheros, ejecución de comandos",
+    "Licencia y qué te obliga a hacer en tu caso concreto",
+    "Señales de alarma: nombre parecido al de un paquete famoso, autor sin historial, código minificado en el repositorio"
+  ],
+  "restricciones": [
+    "Distingue lo que has verificado de lo que es impresión general y marca cada dato con VERIFICADO o ESTIMADO",
+    "No recomiendes un paquete solo porque sea popular",
+    "Si no encuentras el paquete, dilo: eso ya es un aviso serio"
+  ],
+  "formato_salida": {
+    "veredicto": "ADOPTAR / ADOPTAR CON CONDICIONES / EVITAR, en la primera línea",
+    "ficha": "Tabla con los siete apartados analizados y un semáforo verde, ámbar o rojo en cada uno",
+    "condiciones": "Si el veredicto es con condiciones, qué hay que hacer: fijar versión, revisar cada X meses, aislar su uso",
+    "alternativas": "2 o 3 opciones equivalentes con una frase de por qué podrían ser mejores",
+    "coste_de_salida": "Qué costaría quitarlo dentro de un año"
+  },
+  "criterios_calidad": [
+    "El veredicto es tajante, sin depende",
+    "Las alternativas existen de verdad y sirven para el mismo caso de uso",
+    "Un no técnico entiende el riesgo en la primera lectura"
+  ],
+  "tono": "asesor prudente que decide, no que marea"
+}

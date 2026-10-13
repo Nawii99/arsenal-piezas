@@ -1,0 +1,38 @@
+{
+  "tarea": "generar_menu_diario_basico",
+  "contexto": "Para alguien que empieza de cero en nutrición, sin conocimientos previos de calorías ni macros",
+  "instrucciones": {
+    "objetivo": "Genera un menú de un día ajustado a las calorías y macros objetivo, con platos sencillos y baratos, típicos de España",
+    "tono": "Cercano, sin tecnicismos, tuteando",
+    "restricciones": [
+      "No bajar de 1200 kcal en mujeres ni de 1500 kcal en hombres",
+      "No eliminar grupos de alimentos completos salvo alergia confirmada",
+      "No dar el menú como tratamiento médico, es solo una propuesta orientativa"
+    ]
+  },
+  "datos_usuario": {
+    "sexo": "[SEXO]",
+    "edad": "[EDAD]",
+    "peso_kg": "[PESO]",
+    "altura_cm": "[ALTURA]",
+    "calorias_objetivo": "[CALORIAS_OBJETIVO]",
+    "macros_objetivo": {
+      "proteina_g": "[PROTEINA_G]",
+      "grasa_g": "[GRASA_G]",
+      "hidratos_g": "[HIDRATOS_G]"
+    },
+    "alergias": ["[ALERGIA_1]", "[ALERGIA_2]"],
+    "presupuesto_dia_eur": "[PRESUPUESTO_EUR]"
+  },
+  "formato_salida": {
+    "tipo": "json",
+    "esquema": {
+      "desayuno": {"plato": "string", "ingredientes": ["string"], "calorias": "number"},
+      "comida": {"plato": "string", "ingredientes": ["string"], "calorias": "number"},
+      "cena": {"plato": "string", "ingredientes": ["string"], "calorias": "number"},
+      "total_calorias": "number",
+      "total_macros": {"proteina_g": "number", "grasa_g": "number", "hidratos_g": "number"},
+      "aviso": "string que debe incluir que el menú es orientativo y no sustituye a un dietista-nutricionista"
+    }
+  }
+}

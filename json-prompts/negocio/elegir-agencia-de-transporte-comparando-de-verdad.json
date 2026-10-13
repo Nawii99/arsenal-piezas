@@ -1,0 +1,39 @@
+{
+  "tarea": "Comparar las opciones de transporte para mi tienda con mis datos reales y recomendarme cuál contratar, con los argumentos para negociar la tarifa",
+  "mis_datos": {
+    "pedidos_mes": "[NÚMERO DE PEDIDOS AL MES]",
+    "estacionalidad": "[MESES FUERTES Y FLOJOS]",
+    "reparto_destinos": "[% PENÍNSULA, BALEARES, CANARIAS, PORTUGAL, RESTO]",
+    "peso_y_medidas": "[PESO MEDIO Y CAJA HABITUAL]",
+    "valor_medio_pedido": "[EUROS]",
+    "requisitos": "[RECOGIDA EN MI DIRECCIÓN, ENTREGA EN PUNTO, REEMBOLSO, FRÍO, FRÁGIL, ENTREGA EN SÁBADO]",
+    "integracion": "[MI PLATAFORMA: SHOPIFY, WOOCOMMERCE, PRESTASHOP, OTRA]"
+  },
+  "candidatos": "[PEGA AQUÍ LOS PRESUPUESTOS O NOMBRES DE AGENCIAS Y AGREGADORES QUE ESTÁS VALORANDO]",
+  "criterios_de_comparacion": [
+    "Coste total por pedido tipo, no solo el precio de tarifa base",
+    "Recargos: combustible, isla, zona remota, reintento, devolución al origen, gestión de aduana",
+    "Plazo real de entrega por destino y porcentaje de entregas en primer intento",
+    "Red de puntos de conveniencia y taquillas cerca de mis clientes",
+    "Cómo se gestiona una incidencia: canal, plazo de respuesta y quién responde de la mercancía",
+    "Seguro incluido y límite de indemnización por bulto",
+    "Facilidad de integración y generación de etiquetas",
+    "Permanencia, volumen mínimo y penalizaciones"
+  ],
+  "pasos": [
+    "1. Construye tres pedidos tipo representativos de mi negocio y calcula el coste total con cada candidato",
+    "2. Puntúa cada candidato de 1 a 5 en los criterios de comparación y explica cada nota en una línea",
+    "3. Señala qué información falta para decidir y qué preguntas exactas debo hacer al comercial",
+    "4. Propón una recomendación principal y una alternativa de respaldo para picos o destinos concretos"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla comparativa con coste por pedido tipo y puntuaciones",
+    "bloque_2": "Recomendación en tres párrafos: cuál, por qué y con qué riesgo",
+    "bloque_3": "Guion de negociación con 8 preguntas y 4 puntos donde suele haber margen",
+    "bloque_4": "Cláusulas que debo revisar antes de firmar"
+  },
+  "criterios_calidad": [
+    "No se usan tarifas inventadas: solo las que yo he pegado o supuestos marcados como supuestos",
+    "La recomendación cambia si cambia el reparto de destinos, y se dice por qué"
+  ]
+}

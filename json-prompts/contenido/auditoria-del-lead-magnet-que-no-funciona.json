@@ -1,0 +1,45 @@
+{
+  "tarea": "Auditar un lead magnet y su página de descarga para explicar por qué no rinde y priorizar los cambios",
+  "contexto": {
+    "recurso": "[NOMBRE Y FORMATO DEL RECURSO]",
+    "promesa_actual": "[LO QUE PROMETE HOY]",
+    "publico_objetivo": "[A QUIÉN QUIERES CAPTAR]",
+    "origen_del_trafico": "[DE DÓNDE LLEGA LA GENTE]"
+  },
+  "entradas": {
+    "texto_de_la_pagina": "[PEGA AQUÍ EL TEXTO COMPLETO DE TU LANDING]",
+    "contenido_del_recurso": "[PEGA EL ÍNDICE O EL TEXTO DEL PDF]",
+    "numeros": "[VISITAS AL MES, DESCARGAS, % DE APERTURA DEL PRIMER EMAIL, VENTAS ATRIBUIDAS]",
+    "que_pasa_despues": "[QUÉ EMAILS O ACCIONES HAY TRAS LA DESCARGA]"
+  },
+  "pasos": [
+    "Calcular la tasa de conversión de la página y decir si está por debajo de lo razonable para ese tráfico",
+    "Localizar el punto de fuga: promesa, página, formulario, recurso o seguimiento",
+    "Revisar si la promesa y el contenido real coinciden",
+    "Comprobar si el recurso encaja con lo que se vende después",
+    "Proponer cambios separando los de 10 minutos de los que exigen rehacer el recurso"
+  ],
+  "restricciones": [
+    "Cada problema detectado debe citar la frase o el elemento concreto que lo provoca",
+    "Prohibido responder 'mejora el copy' sin escribir la versión nueva",
+    "No inventar referencias de sector: si falta un dato, pedirlo",
+    "Máximo 8 problemas, ordenados por impacto esperado",
+    "Español de España, tuteando, directo y sin suavizar"
+  ],
+  "formato_salida": {
+    "tipo": "informe breve",
+    "secciones": [
+      "1. Diagnóstico en 5 líneas",
+      "2. Tabla: problema | dónde está | por qué frena | arreglo propuesto | esfuerzo (bajo/medio/alto) | impacto",
+      "3. Reescritura del titular y del bloque de viñetas de la página",
+      "4. Qué quitar del recurso y qué añadir",
+      "5. Plan de 7 días con qué tocar cada día",
+      "6. Qué medir dentro de 30 días para saber si ha funcionado"
+    ]
+  },
+  "criterios_calidad": [
+    "Los tres primeros arreglos se pueden aplicar sin ayuda externa",
+    "Cada crítica va acompañada de la versión corregida",
+    "El informe distingue lo que sabemos de lo que es una hipótesis"
+  ]
+}

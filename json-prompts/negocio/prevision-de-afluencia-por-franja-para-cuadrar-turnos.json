@@ -1,0 +1,38 @@
+{
+  "tarea": "Prever la afluencia por día y franja horaria de la próxima semana y proponer el cuadrante de personal",
+  "contexto": {
+    "negocio": "[TIPO: BAR, TIENDA, CLÍNICA, TALLER, PELUQUERÍA...]",
+    "horario_de_apertura": "[DÍAS Y HORAS]",
+    "franjas": "[TRAMOS EN QUE QUIERES DIVIDIR EL DÍA, POR EJEMPLO CADA HORA O MAÑANA/MEDIODÍA/TARDE]",
+    "semana_a_planificar": "[FECHAS]"
+  },
+  "entradas": {
+    "historico": "[FECHA;FRANJA;CLIENTES O TICKETS;EUROS, UNA LÍNEA POR FRANJA, MÍNIMO 6 SEMANAS]",
+    "productividad": "[CLIENTES QUE ATIENDE UNA PERSONA POR HORA SIN QUE SE HAGA COLA]",
+    "plantilla": "[NOMBRE;HORAS CONTRATADAS SEMANALES;DÍAS NO DISPONIBLES]",
+    "eventos_previstos": "[FESTIVO, PARTIDO, FERIA, PUENTE, OBRA EN LA CALLE, PROMOCIÓN...]"
+  },
+  "procedimiento": [
+    "1. Calcula el patrón medio por día de la semana y por franja usando las 6 últimas semanas, dando más peso a las 3 últimas",
+    "2. Excluye del cálculo los días con eventos raros y dilo",
+    "3. Aplica el efecto de los eventos previstos de la próxima semana con un porcentaje explícito y justificado",
+    "4. Convierte la afluencia prevista en personas necesarias por franja usando la productividad",
+    "5. Redondea siempre al alza en las franjas que concentran más del 15% de los ingresos del día",
+    "6. Reparte los turnos respetando horas contratadas, descansos y días no disponibles",
+    "7. Señala las franjas donde sobra o falta personal si mantienes el cuadrante actual"
+  ],
+  "restricciones": [
+    "No propongas turnos de menos de 3 horas ni más de 9",
+    "Deja siempre un mínimo de una persona en apertura y cierre",
+    "Si el histórico no llega a 6 semanas, avisa de que la previsión por franja es orientativa"
+  ],
+  "formato_salida": {
+    "tabla_demanda": "Día | Franja | Clientes previstos | Euros previstos | Personas necesarias",
+    "cuadrante": "Tabla por día con el nombre de quién entra y sale en cada franja",
+    "resumen": "Horas totales de la semana, coste aproximado si doy el precio/hora y franjas de riesgo de cola"
+  },
+  "criterios_calidad": [
+    "Ningún empleado supera sus horas contratadas",
+    "Las franjas de mayor facturación quedan siempre cubiertas"
+  ]
+}

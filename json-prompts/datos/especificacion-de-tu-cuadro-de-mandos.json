@@ -1,0 +1,39 @@
+{
+  "tarea": "Especificar un cuadro de mandos de analítica web y de producto para [NEGOCIO], pensado para montarlo en [LOOKER STUDIO / METABASE / HOJA DE CÁLCULO]",
+  "contexto": {
+    "quien_lo_mira": "[DUEÑO / RESPONSABLE DE MARKETING / EQUIPO COMERCIAL]",
+    "frecuencia": "[DIARIA / SEMANAL / MENSUAL]",
+    "decisiones_que_debe_soportar": ["[DECISIÓN 1]", "[DECISIÓN 2]", "[DECISIÓN 3]"],
+    "fuentes_disponibles": ["[GA4]", "[GOOGLE ADS]", "[SEARCH CONSOLE]", "[PEDIDOS DE LA TIENDA]"]
+  },
+  "principios": [
+    "Cada gráfico existe solo si responde a una de las decisiones listadas; si no, fuera",
+    "Arriba lo que se mira en 10 segundos, abajo el detalle para investigar",
+    "Toda métrica lleva comparación con el periodo anterior; un número solo no dice nada",
+    "Como máximo un panel por pantalla, sin desplazamiento infinito"
+  ],
+  "estructura_propuesta": [
+    "Fila 1: 4 tarjetas con los KPIs principales y su variación",
+    "Fila 2: evolución temporal del KPI principal con línea del periodo anterior",
+    "Fila 3: reparto por canal con sesiones, conversiones y tasa",
+    "Fila 4: embudo o pasos clave del producto",
+    "Fila 5: tabla de detalle filtrable (páginas, campañas o productos)"
+  ],
+  "salida_por_bloque": ["titulo", "pregunta_que_responde", "tipo_de_grafico", "metricas", "dimensiones", "filtros", "comparacion", "regla_de_alerta"],
+  "restricciones": [
+    "Máximo 12 elementos visuales en total",
+    "Nada de tartas con más de 5 porciones ni gráficos en 3D",
+    "Define para cada métrica su fórmula exacta para que nadie la interprete a su manera",
+    "Si una fuente no está disponible, propón el sustituto más cercano"
+  ],
+  "formato_salida": {
+    "tipo": "documento de especificación",
+    "secciones": ["Objetivo del panel", "Diccionario de métricas", "Bloques uno a uno", "Filtros globales", "Alertas y umbrales", "Pasos para montarlo"]
+  },
+  "criterios_calidad": [
+    "Quien lo monte no tiene que preguntar nada para hacerlo",
+    "Cada bloque tiene escrita la decisión que dispara",
+    "Hay al menos 3 umbrales de alerta con su cifra concreta"
+  ],
+  "tono": "Preciso, de manual de instrucciones"
+}

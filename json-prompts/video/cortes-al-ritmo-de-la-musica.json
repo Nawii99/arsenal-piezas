@@ -1,0 +1,33 @@
+{
+  "tarea": "Sincronizar el montaje con la música: calcular dónde caen los golpes y asignar a cada uno qué ocurre en pantalla",
+  "contexto": {
+    "duracion_video": "[MM:SS]",
+    "bpm_o_estilo": "[BPM SI LO SABES, O DESCRIPCIÓN DE LA MÚSICA]",
+    "estructura_de_la_cancion": "[SEGUNDO DE LA ENTRADA, DEL SUBIDÓN Y DEL FINAL]"
+  },
+  "entradas": {
+    "planos_disponibles": "[LISTA DE CLIPS CON DESCRIPCIÓN Y DURACIÓN]",
+    "mensaje": "[QUÉ TIENE QUE QUEDAR CLARO AL VERLO]"
+  },
+  "procedimiento": [
+    "Calcular la duración de un compás a partir del BPM: 60 dividido entre BPM da el segundo por pulso",
+    "Proponer una rejilla de cortes cada 2 o 4 pulsos según la sección",
+    "Reservar los planos más potentes para el primer golpe fuerte y para el subidón",
+    "Bajar la cadencia de cortes en las secciones tranquilas y subirla en el estribillo",
+    "Dejar el último plano respirando hasta el final de la música"
+  ],
+  "restricciones": [
+    "El corte cae en el golpe, no medio segundo después",
+    "Nunca más de tres cortes seguidos con la misma duración exacta si el vídeo dura más de 30 segundos",
+    "Si hay voz en off, el ritmo de la voz manda sobre el de la música"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown",
+    "columnas": ["segundo", "golpe musical", "plano que entra", "duración", "efecto (corte seco, zoom, flash, ralentí)"],
+    "extras": ["Duración de pulso calculada", "Mapa de secciones: entrada, desarrollo, subidón, cierre"]
+  },
+  "criterios_calidad": [
+    "Los tiempos están en segundos con un decimal, listos para marcar en el editor",
+    "La energía del montaje sube y baja igual que la música"
+  ]
+}

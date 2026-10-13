@@ -1,0 +1,40 @@
+{
+  "tarea": "Unificar el formato de fechas, importes y porcentajes en un fichero con datos de varios orígenes",
+  "contexto": {
+    "origenes": "[DE DÓNDE VIENE CADA BLOQUE: TPV, BANCO, PASARELA DE PAGO, EXCEL MANUAL]",
+    "zona_horaria": "[EJ: EUROPE/MADRID]",
+    "formato_objetivo_fecha": "AAAA-MM-DD",
+    "formato_objetivo_numero": "punto como separador decimal, sin separador de miles",
+    "moneda": "[EJ: EUR]"
+  },
+  "entradas": {
+    "muestra": "[PEGA 30-50 FILAS EN CSV CON LA CABECERA]",
+    "columnas_fecha": "[NOMBRES DE LAS COLUMNAS DE FECHA]",
+    "columnas_numericas": "[NOMBRES DE LAS COLUMNAS DE IMPORTES O CANTIDADES]"
+  },
+  "pasos": [
+    "Detectar cuántos formatos distintos convive en cada columna y con qué frecuencia",
+    "Resolver la ambigüedad día/mes usando pistas: valores mayores de 12, orden cronológico del fichero y el origen de los datos",
+    "Detectar horas con y sin zona horaria y unificarlas a la zona indicada",
+    "Detectar números donde la coma es decimal y donde es separador de miles, usando el número de dígitos tras el separador",
+    "Detectar importes con símbolo de moneda, paréntesis para negativos o espacios finos dentro del número",
+    "Marcar como ambiguos los casos que no se puedan resolver con certeza"
+  ],
+  "formato_salida": {
+    "tipo": "markdown más CSV",
+    "partes": [
+      "Tabla de diagnóstico: columna | formatos encontrados | ejemplos | regla aplicada",
+      "CSV con los valores ya convertidos y una columna aviso",
+      "Lista de filas ambiguas con las dos interpretaciones posibles"
+    ]
+  },
+  "restricciones": [
+    "Ante una fecha ambigua tipo 03/04/2025 nunca elijas al azar: aplica la regla del origen y explícala",
+    "No redondees importes ni cambies su valor, solo su formato",
+    "No conviertas monedas"
+  ],
+  "criterios_calidad": [
+    "Cada regla aplicada está justificada con un ejemplo del fichero",
+    "El número de filas de entrada y de salida coincide"
+  ]
+}

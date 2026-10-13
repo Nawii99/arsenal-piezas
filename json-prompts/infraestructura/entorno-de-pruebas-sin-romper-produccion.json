@@ -1,0 +1,46 @@
+{
+  "tarea": "Montar un entorno de pruebas separado y el circuito para publicar cambios con seguridad",
+  "contexto": {
+    "plataforma": "[WORDPRESS, SHOPIFY, HTML PROPIO, NOCODE, OTRA]",
+    "que_cambio_a_menudo": "[TEXTOS, PRECIOS, PLANTILLAS, AUTOMATIZACIONES, PAGOS]",
+    "quien_toca": "[YO Y/O COLABORADORES]",
+    "perfil_usuario": "sin perfil técnico; prioriza opciones con botón de clonar"
+  },
+  "entradas": {
+    "cambio_previsto": "[QUÉ QUIERES CAMBIAR AHORA]",
+    "presupuesto": "[EUROS AL MES PARA EL ENTORNO DE PRUEBAS]"
+  },
+  "pasos": [
+    "1. Elige cómo duplicar: función de copia de la plataforma, subdominio de pruebas o cuenta gratuita aparte.",
+    "2. Bloquea el acceso público al entorno de pruebas y evita que Google lo indexe.",
+    "3. Desconecta lo peligroso: pagos en modo prueba, correos desactivados o redirigidos a tu buzón, sin envíos a clientes reales.",
+    "4. Sustituye los datos reales por datos falsos y quita datos personales de clientes.",
+    "5. Define qué se prueba siempre antes de publicar: compra completa, formularios, móvil, velocidad y enlaces principales.",
+    "6. Establece el circuito: probar en pruebas, copia de producción, publicar, comprobar, y ventana de vigilancia.",
+    "7. Fija cada cuánto se refresca el entorno de pruebas con lo que hay en producción.",
+    "8. Escribe cómo deshacer el cambio si algo sale mal en los primeros treinta minutos."
+  ],
+  "restricciones": [
+    "En pruebas nunca se envían correos ni cobros a clientes reales.",
+    "El entorno de pruebas no puede aparecer en buscadores.",
+    "Publicar siempre fuera de las horas de más venta."
+  ],
+  "errores_tipicos": [
+    "Clonar la tienda con la pasarela en modo real y cobrar de verdad en una prueba.",
+    "Dejar el clon indexado y competir contigo mismo en Google con contenido duplicado.",
+    "Copiar la base de datos con datos personales de clientes a un entorno sin protección.",
+    "Probar solo en ordenador cuando la mayoría entra por el móvil.",
+    "Publicar los cambios y cerrar el portátil sin comprobar nada."
+  ],
+  "formato_salida": {
+    "montaje": "pasos concretos para crear el entorno en la plataforma indicada",
+    "lista_pre_publicacion": "12 comprobaciones con resultado esperado",
+    "circuito": "secuencia desde la idea hasta el cambio publicado y verificado",
+    "plan_deshacer": "cómo volver atrás en menos de diez minutos"
+  },
+  "criterios_calidad": [
+    "El entorno de pruebas no puede afectar a clientes reales de ninguna manera.",
+    "La lista previa incluye el camino completo de compra o contacto.",
+    "Hay forma probada de deshacer el cambio."
+  ]
+}

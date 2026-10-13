@@ -1,0 +1,35 @@
+{
+  "tarea": "Definir el territorio visual de una marca y entregar un brief de identidad listo para diseñar o para encargar a un diseñador",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "zona": "[CIUDAD O ÁMBITO DE VENTA]",
+    "cliente_ideal": "[EDAD, SITUACIÓN Y QUÉ LE PREOCUPA]",
+    "competidores_visuales": "[3 MARCAS DE TU SECTOR]",
+    "referencias_que_te_gustan": "[2 O 3 MARCAS DE CUALQUIER SECTOR]",
+    "presupuesto": "[BAJO, MEDIO O ALTO]"
+  },
+  "atributos": ["[ATRIBUTO 1]", "[ATRIBUTO 2]", "[ATRIBUTO 3]"],
+  "pasos": [
+    "Resumir el posicionamiento en una frase: para quién es la marca, qué promete y en qué se diferencia",
+    "Traducir cada atributo a decisiones visuales concretas de forma, color, tipografía, fotografía y nivel de detalle",
+    "Describir el mapa visual del sector: qué hacen todos igual y por dónde se puede salir sin parecer raro",
+    "Proponer 3 territorios visuales distintos con nombre, descripción y público al que atacan",
+    "Recomendar uno y explicar por qué encaja con el negocio y con el presupuesto"
+  ],
+  "formato_salida": {
+    "tipo": "documento en markdown",
+    "secciones": ["Posicionamiento en una frase", "Atributos traducidos a visual", "Mapa visual del sector", "Tres territorios", "Recomendación y siguientes pasos"],
+    "tabla_territorios": "nombre | sensación | color dominante | tipografía | fotografía | riesgo",
+    "extension": "máximo 900 palabras"
+  },
+  "restricciones": [
+    "Prohibido usar moderno, innovador o disruptivo sin explicar qué significan en imagen",
+    "Cada decisión visual se justifica con una razón de negocio, no de gusto personal",
+    "Si falta información clave, hacer como mucho 3 preguntas antes de empezar"
+  ],
+  "criterios_calidad": [
+    "Un diseñador podría empezar a trabajar solo con este brief",
+    "Los tres territorios son de verdad distintos, no variaciones del mismo",
+    "Queda claro qué NO va a ser la marca"
+  ]
+}

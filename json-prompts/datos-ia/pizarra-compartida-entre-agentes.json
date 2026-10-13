@@ -1,0 +1,34 @@
+{
+  "tarea": "Disena la pizarra compartida donde mis agentes leen y escriben el estado de cada caso, con permisos y reglas de escritura",
+  "contexto": {
+    "tipo_de_caso": "[EJ: UN PEDIDO, UN CLIENTE, UNA REPARACION]",
+    "agentes_que_participan": "[LISTA CON SU FUNCION]",
+    "donde_vive": "[EJ: GOOGLE SHEETS, AIRTABLE, NOTION, BASE DE DATOS]",
+    "tiempo_de_guardado": "[EJ: 12 MESES]"
+  },
+  "debe_definir": [
+    "Campos de la pizarra con nombre, tipo y ejemplo real",
+    "Quien puede escribir cada campo: un unico agente responsable por campo",
+    "Campos de solo lectura para el resto de agentes",
+    "Estado del caso con la lista cerrada de valores posibles",
+    "Historial: que se guarda de cada cambio y quien lo hizo",
+    "Regla de conflicto: que pasa si dos agentes quieren escribir lo mismo"
+  ],
+  "errores_a_evitar": [
+    "Un campo de notas gigante donde todo el mundo escribe de todo",
+    "Estados solapados como en curso y pendiente que significan lo mismo",
+    "Guardar datos personales que ningun agente necesita",
+    "Borrar el valor anterior sin dejar rastro"
+  ],
+  "formato_salida": {
+    "tabla_campos": ["campo", "tipo", "quien escribe", "quien lee", "ejemplo"],
+    "estados": "lista de estados y que tiene que cumplirse para pasar de uno al siguiente",
+    "ejemplo": "la ficha de un caso real de mi negocio rellena de principio a fin",
+    "montaje": "como crearla en la herramienta indicada, paso a paso, sin programar"
+  },
+  "criterios_calidad": [
+    "Cada campo tiene un unico responsable de escritura",
+    "Mirando la pizarra se sabe en 5 segundos por donde va el caso",
+    "No hay dos campos que digan lo mismo con otro nombre"
+  ]
+}

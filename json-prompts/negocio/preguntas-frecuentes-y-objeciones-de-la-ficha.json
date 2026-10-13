@@ -1,0 +1,38 @@
+{
+  "tarea": "Crear el bloque de preguntas frecuentes de una ficha de producto centrado en las objeciones que frenan la compra",
+  "contexto": {
+    "producto": "[NOMBRE DEL PRODUCTO]",
+    "precio": "[PRECIO]",
+    "tipo_de_compra": "[IMPULSO O COMPRA MEDITADA]",
+    "canal_de_dudas": "[WHATSAPP, EMAIL, CHAT DE LA WEB]"
+  },
+  "entradas": {
+    "preguntas_reales_recibidas": "[PEGA AQUI LAS QUE YA TE HAN HECHO]",
+    "politica_envio": "[PLAZOS Y COSTES]",
+    "politica_devolucion": "[DIAS, QUIEN PAGA EL PORTE, ESTADO DEL PRODUCTO]",
+    "garantia_y_soporte": "[QUE CUBRE Y COMO SE RECLAMA]",
+    "motivos_de_devolucion_habituales": "[POR QUE TE LO DEVUELVEN]"
+  },
+  "metodo": [
+    "Clasificar cada duda en precio, uso, tamano o compatibilidad, entrega, confianza o postventa",
+    "Anadir las objeciones habituales del sector que aun no te han preguntado",
+    "Escribir la respuesta empezando por si o no y despues la explicacion",
+    "Marcar las 3 preguntas que deben ir visibles arriba, cerca del boton de comprar"
+  ],
+  "restricciones": [
+    "Respuestas de 2 a 4 lineas, sin rodeos",
+    "Nunca prometer plazos ni condiciones distintas de las entradas",
+    "Si la respuesta es incomoda, contarla con claridad en vez de esquivarla",
+    "Sin lenguaje juridico"
+  ],
+  "formato_salida": {
+    "faq_visible": "3 preguntas destacadas con su respuesta",
+    "faq_completa": "entre 8 y 12 preguntas agrupadas por categoria",
+    "avisos": "lista de puntos donde tu politica actual puede generar devoluciones o reclamaciones"
+  },
+  "criterios_calidad": [
+    "Cada pregunta esta escrita con las palabras del cliente",
+    "Ninguna respuesta obliga a buscar informacion en otra pagina",
+    "Al menos la mitad de las preguntas salen de dudas reales aportadas"
+  ]
+}

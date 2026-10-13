@@ -1,0 +1,48 @@
+{
+  "tarea": "Construir el inventario y el mapa de una instalación de dispositivos conectados, con nomenclatura, ubicación, cuentas y plan de recuperación",
+  "contexto": {
+    "perfil": "Persona sin perfil técnico que gestiona la domótica de su casa o de clientes y ya no recuerda qué es cada cosa",
+    "motivo": "[ORDENAR LO MÍO / ENTREGAR A UN CLIENTE / HEREDAR UNA INSTALACIÓN AJENA / PREPARAR UNA MUDANZA]"
+  },
+  "entradas": {
+    "listado_bruto": "[PEGA AQUÍ LO QUE VEAS: nombres de la app, lista de clientes del router, cajas o facturas]",
+    "plano": "[HABITACIONES O ZONAS DEL LOCAL, PLANTA POR PLANTA]",
+    "apps_y_cuentas": "[QUÉ APPS SE USAN Y CON QUÉ CORREO ESTÁ DADA DE ALTA CADA UNA]",
+    "quien_manda": "[QUIÉN ES EL PROPIETARIO DE LAS CUENTAS Y QUIÉN DEBE PODER TOCARLO]"
+  },
+  "pasos": [
+    "1. Define primero la regla de nombres y aplícala a todo: zona + tipo + número, en minúsculas y sin acentos, por ejemplo cocina-enchufe-01. Un nombre bueno se entiende leído en voz alta por teléfono.",
+    "2. Asigna a cada aparato una zona del plano; si un dispositivo no encaja en ninguna zona, es señal de que sobra o de que está mal puesto.",
+    "3. Anota para cada uno: marca, modelo, protocolo (wifi, Zigbee, Bluetooth, cable), alimentación (enchufe o pilas y de qué tipo), app que lo controla y fecha aproximada de instalación.",
+    "4. Reserva un rango de direcciones IP fijas para los aparatos que no pueden cambiar de dirección (cámaras, NAS, hub, impresora) y deja el resto en automático. Explica dónde se hace eso en el router en lenguaje llano.",
+    "5. Marca las dependencias: qué deja de funcionar si se cae el hub, el router o internet. Esa columna es la que evita sustos.",
+    "6. Revisa las cuentas: nada crítico debe depender del correo personal de alguien que puede irse. Propón un correo de la casa o del negocio y quién tiene acceso.",
+    "7. Señala los dispositivos huérfanos: los que nadie usa, los que están dados de alta dos veces y los que ya no fabrican. Propón retirarlos.",
+    "8. Escribe el plan de recuperación: qué se hace, en qué orden, si hay que resetear el router o cambiar de casa."
+  ],
+  "restricciones": [
+    "No inventes datos: lo que no se sepa se marca como PENDIENTE DE COMPROBAR",
+    "Nunca escribas contraseñas dentro del inventario; indica solo dónde están guardadas",
+    "El inventario tiene que servir impreso en papel y colgado junto al cuadro eléctrico"
+  ],
+  "errores_tipicos": [
+    "Nombres tipo Enchufe 3 que no dicen dónde está el enchufe",
+    "Dar IP fija a todo y quedarse sin direcciones o duplicarlas",
+    "Dejar la instalación atada a la cuenta personal del instalador",
+    "No anotar el tipo de pila, y descubrirlo el día que hay que cambiarla"
+  ],
+  "formato_salida": {
+    "1_tabla_inventario": "Columnas: nombre nuevo | nombre viejo | zona | marca y modelo | protocolo | alimentación | app o cuenta | IP fija sí/no | estado",
+    "2_mapa_por_zonas": "Lista por habitación con lo que hay en cada una",
+    "3_dependencias": "Qué deja de funcionar si cae el router, el hub o internet",
+    "4_cuentas": "Qué cuenta controla qué y quién debe tener acceso",
+    "5_limpieza": "Dispositivos a retirar o reubicar, con motivo",
+    "6_plan_recuperacion": "Pasos ordenados para dejarlo todo funcionando tras un cambio de router o una mudanza"
+  },
+  "criterios_calidad": [
+    "Cualquier persona ajena encuentra un aparato concreto en menos de un minuto",
+    "Todos los nombres siguen la misma regla, sin excepciones",
+    "No aparece ninguna contraseña en el documento",
+    "Cada fila tiene zona y alimentación rellenas o marcadas como pendientes"
+  ]
+}

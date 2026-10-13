@@ -1,0 +1,60 @@
+{
+  "tarea": "Diagnosticar el fallo '[DESCRIBE EL SÍNTOMA]' en [URL_WEB] y producir un informe con la causa y la solución",
+  "contexto": {
+    "web": "[URL Y PLATAFORMA]",
+    "quien_diagnostica": "Persona sin perfil técnico, con acceso al navegador y al panel del hosting",
+    "impacto": "[BLOQUEA VENTAS / MOLESTA / SOLO ESTÉTICO]",
+    "desde_cuando": "[FECHA APROXIMADA EN QUE EMPEZÓ]"
+  },
+  "entradas": {
+    "donde_ocurre": "[PÁGINA O PÁGINAS CONCRETAS]",
+    "como_reproducirlo": "[PASOS QUE HAY QUE DAR PARA QUE FALLE]",
+    "dispositivos_probados": "[MÓVIL, MODELO, NAVEGADOR, VERSIÓN; ORDENADOR Y NAVEGADOR]",
+    "cambios_recientes": "[QUÉ SE TOCÓ ANTES DE QUE EMPEZARA: PLUGIN, PLANTILLA, IMÁGENES, DOMINIO]",
+    "mensajes_de_error": "[PEGA LO QUE APAREZCA EN LA CONSOLA DEL NAVEGADOR]"
+  },
+  "procedimiento": [
+    "1. Reproduce el fallo tú mismo y escribe la secuencia exacta de pasos hasta verlo",
+    "2. Delimita el alcance: ¿pasa en todas las páginas, en todos los navegadores, con y sin sesión iniciada?",
+    "3. Prueba en ventana privada y con las extensiones desactivadas para descartar tu propio navegador",
+    "4. Abre la consola del navegador y anota los mensajes en rojo tal cual, incluido el nombre de archivo y la línea",
+    "5. Mira la pestaña de red: recursos que no cargan, cargas muy lentas o bloqueadas",
+    "6. Repasa la línea temporal: qué cambió justo antes; el sospechoso número uno es el último cambio",
+    "7. Aísla desactivando de uno en uno lo añadido recientemente y probando después de cada paso",
+    "8. Formula la hipótesis, pruébala con el cambio mínimo y confirma o descarta",
+    "9. Aplica la corrección, vuelve a probar en los mismos dispositivos y documenta lo ocurrido"
+  ],
+  "que_mirar": [
+    "Errores de la consola que mencionan bloqueo por certificado o contenido mixto",
+    "Recursos que devuelven 404 o 403 en la pestaña de red",
+    "Caché: mucho fallo desaparece al forzar recarga y eso ya es un diagnóstico",
+    "Diferencias entre móvil y ordenador que apuntan a un problema de diseño adaptable",
+    "Fechas de caducidad: certificados, dominios y suscripciones que expiran de madrugada"
+  ],
+  "errores_tipicos": [
+    "Cambiar varias cosas a la vez y no saber cuál lo arregló",
+    "Decir 'no funciona' sin decir en qué dispositivo ni qué se ve",
+    "Tocar el código en producción sin copia previa",
+    "Dar por hecho que es del hosting antes de comprobar el navegador",
+    "No apuntar la solución y volver a sufrir el mismo fallo meses después"
+  ],
+  "restricciones": [
+    "Antes de tocar nada, indica cómo hacer una copia de seguridad",
+    "Un cambio cada vez, con prueba después de cada cambio",
+    "Explica dónde está cada opción del navegador con el nombre exacto del menú"
+  ],
+  "formato_salida": {
+    "1_ficha_del_fallo": "Síntoma, pasos para reproducirlo, dispositivos afectados y no afectados, desde cuándo",
+    "2_arbol_de_diagnostico": "Preguntas sí o no en orden, con la conclusión de cada rama",
+    "3_hipotesis": "Las 3 causas más probables ordenadas por probabilidad, con cómo confirmar cada una",
+    "4_solucion": "Pasos exactos para arreglarlo y cómo deshacerlo si empeora",
+    "5_mensaje_para_un_tecnico": "Texto listo para enviar si hay que delegar, con toda la información que te pediría",
+    "6_prevencion": "Qué hacer para que no vuelva a pasar"
+  },
+  "criterios_calidad": [
+    "El fallo se puede reproducir siguiendo la ficha, sin más explicaciones",
+    "Cada hipótesis lleva una prueba concreta que la confirma o la descarta",
+    "La solución incluye la forma de volver atrás",
+    "El mensaje para el técnico no deja ninguna pregunta obvia sin responder"
+  ]
+}

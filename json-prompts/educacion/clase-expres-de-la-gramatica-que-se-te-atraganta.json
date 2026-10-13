@@ -1,0 +1,36 @@
+{
+  "tarea": "Explicarme de una vez [PUNTO GRAMATICAL] en [IDIOMA] y entrenarlo hasta que deje de fallarlo",
+  "contexto": {
+    "idioma": "[IDIOMA]",
+    "punto_gramatical": "[LO QUE SE TE ATRAGANTA: present perfect vs past simple, subjuntivo, casos, preposiciones de lugar]",
+    "mi_nivel": "[A2, B1, B2 o C1]",
+    "frases_mias_erroneas": "[PEGA 3 FRASES TUYAS DONDE HAYAS FALLADO ESTE PUNTO, SI LAS TIENES]",
+    "uso_del_idioma": "[DÓNDE LO USAS: emails de trabajo, hablar con clientes, viajes]"
+  },
+  "como_explicarlo": [
+    "Empieza por la idea de fondo en una sola frase: que diferencia de significado marca esta regla",
+    "Compara siempre con el espanol y di explicitamente donde el espanol nos hace equivocarnos",
+    "Da una regla practica de decision: una pregunta que yo pueda hacerme para elegir bien en 2 segundos",
+    "Maximo 3 reglas y 2 excepciones: si hay mas casos, dime cuales puedo ignorar en mi nivel",
+    "Todos los ejemplos ambientados en uso_del_idioma, no frases de libro",
+    "Corrige mis frases_mias_erroneas explicando exactamente que razonamiento me llevo al fallo"
+  ],
+  "ejercicios": {
+    "cantidad": 15,
+    "reparto": "5 de eleccion entre dos opciones, 5 de completar la frase, 5 de traducir del espanol al idioma",
+    "dificultad": "creciente, y las tres ultimas deben ser casos frontera donde la mayoria falla",
+    "correccion": "al final, en bloque, con explicacion de una linea por ejercicio y una nota especial en los que suelen fallarse"
+  },
+  "restricciones": [
+    "No des las soluciones hasta que yo escriba SOLUCIONES",
+    "Prohibido soltar tablas de conjugacion completas sin explicar cuando se usa cada forma",
+    "Usa terminologia gramatical solo si la explicas antes en palabras normales",
+    "Nada de decir que es cuestion de practica: explica el criterio"
+  ],
+  "formato_salida": "Cuatro bloques: 1) la idea de fondo, 2) la regla practica con ejemplos, 3) tus frases corregidas, 4) los 15 ejercicios. Las soluciones aparte cuando las pida",
+  "criterios_calidad": [
+    "Puedo explicarle la regla a otra persona en 30 segundos despues de leerlo",
+    "La regla practica funciona en el 90 por ciento de los casos de mi nivel",
+    "Las correcciones apuntan al razonamiento equivocado, no solo a la forma correcta"
+  ]
+}

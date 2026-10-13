@@ -1,0 +1,49 @@
+{
+  "tarea": "Construir un manual de respuestas de tutoria con las dudas recurrentes, la respuesta correcta y la forma pedagogica de contestarla",
+  "contexto": {
+    "formacion": "[NOMBRE DEL CURSO]",
+    "canal_de_dudas": "[GRUPO DE WHATSAPP / EMAIL / FORO / CLASE]",
+    "quien_responde": "[YO / UN AYUDANTE / UN ASISTENTE AUTOMATICO]",
+    "tiempo_de_respuesta_comprometido": "[EJ: 24 HORAS LABORABLES]"
+  },
+  "entradas": {
+    "dudas_reales_recibidas": "[PEGA AQUI MENSAJES REALES DE ALUMNOS, TAL CUAL LOS ESCRIBEN]",
+    "temario": "[INDICE DEL CURSO]",
+    "que_no_quiero_resolver_yo": "[LO QUE EL ALUMNO DEBE RESOLVER SOLO PARA APRENDER]"
+  },
+  "proceso": [
+    "1. Agrupa las dudas reales por causa, no por tema: falta de contexto, paso mal explicado, problema tecnico, miedo a equivocarse",
+    "2. Para cada grupo escribe cual es el malentendido de fondo, no solo la pregunta",
+    "3. Redacta la respuesta corta lista para enviar y, aparte, la explicacion larga por si la piden",
+    "4. Marca las dudas en las que no se da la solucion: en su lugar escribe la pregunta guia que hace que el alumno la encuentre",
+    "5. Anade a cada respuesta el enlace o referencia al minuto o pagina del material donde esta explicado",
+    "6. Detecta las dudas que se repiten mas de tres veces: esas indican material mal explicado, y anota que hay que corregir",
+    "7. Define el protocolo de escalado: que se contesta en el canal, que en privado y que merece una llamada"
+  ],
+  "restricciones": [
+    "Respuesta corta de maximo 5 lineas y sin jerga",
+    "Nunca se responde con eso ya lo explique en el video",
+    "Se responde primero a la persona y luego al contenido: una linea que reconoce la duda antes de resolverla",
+    "Si la respuesta depende de datos que no tienes, se pide exactamente el dato que falta"
+  ],
+  "errores_a_evitar": [
+    "Copiar la teoria del curso como respuesta",
+    "Resolverlo todo por el alumno y que llegue al final sin saber hacerlo solo",
+    "Responder en privado lo que beneficia a todo el grupo",
+    "No anotar las dudas repetidas y seguir explicando mal lo mismo cada edicion"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: Duda tipo | Malentendido de fondo | Respuesta corta | Referencia al material | Se resuelve o se guia",
+    "bloque_2": "Las respuestas cortas juntas, listas para copiar y pegar",
+    "bloque_3": "Preguntas guia para las dudas que el alumno debe resolver solo",
+    "bloque_4": "Lista de arreglos pendientes del material, ordenada por cuantas veces se pregunta",
+    "bloque_5": "Protocolo de escalado y plantillas para pedir el dato que falta",
+    "bloque_6": "Instrucciones para el ayudante: que puede contestar solo y que tiene que pasarte"
+  },
+  "criterios_calidad": [
+    "Un ayudante sin dominio del tema puede contestar el 70 por ciento de las dudas con el manual",
+    "Ninguna respuesta corta pasa de 5 lineas",
+    "Cada duda repetida tiene su arreglo de material asignado",
+    "Las respuestas guiadas no revelan la solucion"
+  ]
+}

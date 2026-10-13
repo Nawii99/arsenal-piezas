@@ -1,0 +1,50 @@
+{
+  "tarea": "Revisar la accesibilidad de [URL O CÓDIGO HTML PEGADO] y devolver los arreglos concretos, ordenados por gravedad, para alguien que no programa.",
+  "contexto": {
+    "tipo_de_pagina": "[LANDING / TIENDA / BLOG / RESERVAS]",
+    "nivel_objetivo": "[BÁSICO SENSATO / WCAG 2.2 NIVEL AA]",
+    "quien_hace_los_cambios": "[YO CON INSTRUCCIONES / UN TÉCNICO]"
+  },
+  "entradas": {
+    "codigo_o_url": "[PEGA EL HTML O INDICA LA URL]",
+    "paleta_de_colores": "[COLORES EN HEX DE TEXTO Y FONDO]",
+    "elementos_interactivos": "[MENÚ, CARRUSEL, VENTANA EMERGENTE, VÍDEO, FORMULARIO]"
+  },
+  "pasos": [
+    "1. Comprobar el contraste de texto sobre fondo: mínimo 4,5 a 1 en texto normal y 3 a 1 en texto grande y en iconos con significado.",
+    "2. Comprobar que toda imagen con información tiene texto alternativo útil y que las decorativas lo llevan vacío.",
+    "3. Recorrer la página solo con el tabulador: todo lo pulsable debe alcanzarse, en orden lógico y con el foco bien visible.",
+    "4. Revisar los formularios: cada campo con su label asociada, errores explicados con texto y no solo con color rojo.",
+    "5. Revisar la jerarquía de encabezados: un solo h1 y sin saltos de nivel.",
+    "6. Revisar el texto de los enlaces: nada de 'pincha aquí' ni 'leer más' repetidos sin contexto.",
+    "7. Revisar movimiento: carruseles que se puedan parar, nada que parpadee, respeto a la preferencia de reducir animación.",
+    "8. Revisar tamaño de objetivos táctiles y que la página siga usable con el texto ampliado al 200 %."
+  ],
+  "restricciones": [
+    "Cada hallazgo incluye el fragmento problemático y el fragmento ya corregido.",
+    "No proponer añadir atributos ARIA donde basta con el HTML correcto.",
+    "No prometer cumplimiento legal ni certificación: se habla de mejoras comprobables.",
+    "Ordenar por gravedad: primero lo que impide usar la página, después lo que molesta."
+  ],
+  "formato_salida": {
+    "resumen": "Cuántos problemas hay por gravedad y cuáles son los tres que arreglar hoy.",
+    "tabla_hallazgos": "Tabla: elemento | problema | a quién afecta | gravedad | arreglo.",
+    "parches": "Fragmentos de HTML y CSS corregidos, listos para sustituir.",
+    "como_comprobar": "Pruebas manuales de 10 minutos que puede hacer el propio usuario.",
+    "pendiente": "Lo que requiere un técnico, redactado para pasárselo."
+  },
+  "criterios_calidad": [
+    "Se puede completar el objetivo principal de la página solo con teclado.",
+    "Ningún texto importante queda por debajo del contraste mínimo.",
+    "Todos los campos de formulario se anuncian con su nombre.",
+    "El foco se ve siempre, también sobre fondos oscuros.",
+    "Los arreglos no rompen el diseño existente."
+  ],
+  "errores_frecuentes": [
+    "Texto gris claro sobre blanco porque queda elegante.",
+    "Quitar el contorno del foco con outline:none y no poner nada en su lugar.",
+    "Usar un div con onclick en vez de un botón de verdad.",
+    "Poner el mismo alt en todas las imágenes o dejarlo con el nombre del archivo.",
+    "Indicar los errores del formulario solo pintando el borde de rojo."
+  ]
+}

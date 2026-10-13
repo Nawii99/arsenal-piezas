@@ -1,0 +1,38 @@
+{
+  "tarea": "Traducir el sistema de marca a un juego de plantillas de redes sociales con especificaciones exactas",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "colores": "[HEX CON SU ROL]",
+    "fuentes": "[TITULARES Y TEXTO CON PESOS]",
+    "logo": "[DESCRIBE VERSIONES DISPONIBLES]",
+    "redes": "[INSTAGRAM, LINKEDIN, TIKTOK, FACEBOOK]",
+    "tipos_de_post": "[CONSEJO, TESTIMONIO, OFERTA, ANTES Y DESPUES, CARRUSEL]",
+    "herramienta": "[CANVA, FIGMA O IA DE IMAGEN]"
+  },
+  "proceso": [
+    "Fija los lienzos: 1080x1350 para feed vertical, 1080x1080 para cuadrado y 1080x1920 para historias",
+    "Define zonas seguras: deja libres 250 px arriba y abajo en historias y los margenes de la interfaz",
+    "Asigna a cada tipo de post un color de fondo y un peso tipografico distintos, siempre dentro del sistema",
+    "Fija tamanos de titular, subtitulo y pie en pixeles para cada lienzo",
+    "Fija el numero maximo de palabras del titular para que se lea en el movil",
+    "Coloca el logo siempre en la misma esquina y con el mismo tamano",
+    "Define el estilo de las fotos: recorte, tratamiento de color y si llevan velo oscuro para el texto encima"
+  ],
+  "restricciones": [
+    "Maximo 2 pesos tipograficos por pieza",
+    "El color de acento solo en un elemento por post",
+    "Nada de texto sobre foto sin velo o caja de fondo",
+    "Todo debe leerse en una miniatura de movil"
+  ],
+  "formato_salida": {
+    "tipo": "juego de plantillas descritas",
+    "por_plantilla": ["Nombre y para que sirve", "Medidas del lienzo", "Fondo y colores", "Tamanos y pesos de texto", "Posicion del logo", "Limite de palabras", "Ejemplo de post relleno con contenido de la marca"],
+    "extra": ["Lista de comprobacion de 6 puntos antes de publicar"]
+  },
+  "criterios_calidad": [
+    "Las plantillas se distinguen entre si pero se reconocen como la misma marca",
+    "Todos los valores son numeros concretos en pixeles",
+    "Cada ejemplo esta escrito con el negocio real, no con texto de relleno"
+  ],
+  "tono": "Practico, para alguien que va a montarlo en Canva esta misma tarde"
+}

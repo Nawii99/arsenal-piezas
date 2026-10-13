@@ -1,0 +1,52 @@
+{
+  "tarea": "Diagnosticar un modelo 3D destinado a web o realidad aumentada y devolver un plan de optimización con objetivos numéricos, orden de acciones y comprobaciones.",
+  "contexto": "El modelo se verá en móviles con conexión normal, dentro de una ficha de producto o un visor incrustado. El límite no es la belleza: es el peso del archivo y la memoria del móvil.",
+  "entradas": {
+    "modelo": "[NOMBRE Y ORIGEN: ESCANEADO, COMPRADO, MODELADO A MANO]",
+    "datos_actuales": "[POLÍGONOS, NÚMERO DE MATERIALES, NÚMERO Y TAMAÑO DE TEXTURAS, PESO DEL ARCHIVO]",
+    "donde_se_ve": "[FICHA DE PRODUCTO | CONFIGURADOR | AR EN MÓVIL | PORTFOLIO]",
+    "que_debe_verse_bien": "[DETALLES QUE NO SE PUEDEN PERDER: LOGOTIPO, COSTURAS, GRABADO...]",
+    "herramientas_disponibles": "[BLENDER | SOLO HERRAMIENTAS ONLINE GRATUITAS]"
+  },
+  "procedimiento": [
+    "1. Fija los objetivos numéricos según el destino: peso final del archivo, polígonos máximos y número de materiales, y justifica cada número en una línea.",
+    "2. Ordena las acciones por relación mejora-esfuerzo: primero texturas, luego materiales, luego geometría, y al final detalles.",
+    "3. Texturas: indica reducir resolución por potencias de dos, unificar los mapas en un solo juego y usar compresión adecuada; recuerda que una textura de 4K pesa cuatro veces una de 2K.",
+    "4. Materiales: fusiona materiales que solo cambian de color, porque cada material extra es una llamada de dibujo más en el móvil.",
+    "5. Geometría: aplica reducción de malla por zonas, conservando silueta y bordes visibles, y elimina lo que nunca se ve (interiores, caras ocultas, tornillos del reverso).",
+    "6. Propón hornear el detalle fino en un mapa de normales en lugar de mantenerlo en la geometría.",
+    "7. Comprueba escala real, unidades y que el objeto esté apoyado en el origen, porque en AR aparece flotando o gigante si no.",
+    "8. Exporta a GLB con compresión de malla y verifica que abre correctamente en un visor.",
+    "9. Define la prueba de aceptación: abrirlo en un móvil de gama media con datos móviles y cronometrar la carga.",
+    "10. Añade el plan B si tras todo sigue pesando: versión ligera para la vista inicial y versión detallada solo al hacer zoom."
+  ],
+  "restricciones": [
+    "No sacrifiques los detalles marcados como imprescindibles por el cliente.",
+    "Cada recorte debe llevar el porcentaje aproximado de peso que ahorra.",
+    "Nada de recomendar pipelines de estudio grande: pasos ejecutables en Blender o en herramientas gratuitas.",
+    "No inventes los datos actuales del modelo: si faltan, indica cómo consultarlos.",
+    "Español de España, tuteando, sin anglicismos sin traducir la primera vez."
+  ],
+  "formato_salida": {
+    "bloque_1": "Diagnóstico en 3 líneas: qué está inflando el archivo.",
+    "bloque_2": "Tabla de objetivos: métrica, valor actual, valor objetivo, motivo.",
+    "bloque_3": "Plan de acciones numerado, cada una con ahorro estimado y riesgo visual.",
+    "bloque_4": "Ajustes de exportación concretos, opción por opción.",
+    "bloque_5": "Prueba de aceptación: qué medir, en qué dispositivo, valor máximo admitido.",
+    "bloque_6": "Qué NO tocar y por qué."
+  },
+  "criterios_calidad": [
+    "Hay números objetivo, no consejos vagos de optimizar.",
+    "Las acciones van ordenadas por lo que más ahorra con menos trabajo.",
+    "Se conserva la silueta y los detalles declarados imprescindibles.",
+    "La exportación final abre bien en un visor y aparece a escala correcta.",
+    "La prueba de carga se hace en móvil real, no en el ordenador del que lo hizo."
+  ],
+  "errores_frecuentes": [
+    "Reducir polígonos a lo bruto y destrozar la silueta cuando el peso estaba en las texturas.",
+    "Dejar diez materiales distintos y culpar al modelo de ir lento.",
+    "Exportar con la escala en centímetros y que en AR el objeto salga cien veces más grande.",
+    "Guardar texturas en formato sin comprimir dentro del GLB.",
+    "Probar la carga solo por wifi y con un ordenador potente."
+  ]
+}

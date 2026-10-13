@@ -1,0 +1,37 @@
+{
+  "tarea": "Disenar un proceso de relleno masivo de datos por lotes, reanudable y sin bloquear la base de datos",
+  "contexto": {
+    "motor_bd": "[POSTGRESQL / MYSQL / SQL SERVER]",
+    "tabla": "[NOMBRE DE LA TABLA]",
+    "filas_a_rellenar": "[NUMERO APROXIMADO]",
+    "ventana_disponible": "[HORAS VALLE O SIN VENTANA, EL SISTEMA ESTA SIEMPRE EN USO]",
+    "puede_ejecutarse_desde": "[CONSOLA SQL / SCRIPT PYTHON / TAREA PROGRAMADA]"
+  },
+  "entradas": {
+    "campo_destino": "[COLUMNA NUEVA QUE HAY QUE RELLENAR]",
+    "regla_de_calculo": "[COMO SE OBTIENE EL VALOR, EJEMPLO: COPIAR DE OTRA TABLA, CALCULAR IVA, NORMALIZAR TELEFONO]",
+    "filas_a_excluir": "[REGISTROS ANULADOS, PRUEBAS, BORRADOS LOGICOS...]"
+  },
+  "instrucciones": [
+    "Propon una consulta previa que cuente cuantas filas hay que tocar y cuantas ya estan bien",
+    "Divide el trabajo en lotes por clave primaria o por fecha, e indica un tamano de lote inicial y como ajustarlo",
+    "El proceso debe poder pararse y reanudarse sin repetir trabajo ni saltarse filas",
+    "Anade una pausa entre lotes y explica como decidir su duracion mirando la carga",
+    "Incluye registro de avance: lote, filas afectadas, tiempo y ultimo identificador procesado",
+    "Prevé que hacer con las filas que fallen: apartarlas en vez de detener todo",
+    "Escribe la consulta de validacion final y una prueba en un subconjunto pequeno antes de lanzar"
+  ],
+  "restricciones": [
+    "Prohibido un UPDATE sin filtro sobre la tabla completa",
+    "El proceso no debe bloquear escrituras de la aplicacion durante mas de unos segundos por lote",
+    "Nada de borrar filas de origen hasta que la validacion final sea correcta"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con bloques de codigo",
+    "secciones": ["Conteo previo", "Prueba en pequeno", "Script por lotes", "Vigilancia mientras corre", "Validacion final", "Que hacer si hay que abortar"]
+  },
+  "criterios_calidad": [
+    "El script es reanudable de verdad, se explica donde guarda el avance",
+    "Se indica una estimacion de duracion total segun el tamano de lote elegido"
+  ]
+}

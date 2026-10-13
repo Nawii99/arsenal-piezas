@@ -1,0 +1,28 @@
+{
+  "tarea": "Convertir diapositivas cargadas de texto en diapositivas de un solo mensaje con apoyo visual y notas del ponente",
+  "entradas": {
+    "texto_original": "[PEGA EL TEXTO TAL CUAL DE LA DIAPOSITIVA O DEL DOCUMENTO]",
+    "publico": "[A QUIÉN SE LO CUENTAS]",
+    "se_proyecta_o_se_lee": "[SE PROYECTA CON ALGUIEN HABLANDO / SE ENVÍA PARA LEER]"
+  },
+  "metodo": [
+    "Localizar la única idea que el público debe recordar",
+    "Convertirla en un titular de menos de 12 palabras que afirme algo",
+    "Dejar como mucho 3 apoyos visibles: un dato, un ejemplo o una consecuencia",
+    "Mover todo lo demás a las notas del ponente",
+    "Si quedan más de dos ideas, partir en varias diapositivas"
+  ],
+  "reglas": [
+    "Máximo 30 palabras visibles por diapositiva",
+    "Nada de viñetas dentro de viñetas",
+    "Cada número lleva su unidad y su periodo",
+    "No añadir información que no esté en el texto original"
+  ],
+  "formato_salida": "Por cada diapositiva resultante: TITULAR, TEXTO VISIBLE, IDEA VISUAL (qué se ve y por qué) y NOTAS DEL PONENTE de 40 a 80 palabras",
+  "criterios_calidad": [
+    "Ninguna diapositiva mezcla dos ideas",
+    "Las notas recogen todo lo que se ha quitado de la pantalla",
+    "Si se proyecta, se entiende a cinco metros de distancia"
+  ],
+  "salida_extra": "Una línea final diciendo cuántas diapositivas había y cuántas quedan"
+}

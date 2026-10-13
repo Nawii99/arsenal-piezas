@@ -1,0 +1,44 @@
+{
+  "tarea": "Construir la matriz de polivalencia del equipo y a partir de ella el plan de formación anual con calendario y coste",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "equipo": "[LISTA DE PERSONAS CON SU PUESTO]",
+    "tareas_clave": "[TAREAS O PROCESOS QUE HAY QUE SABER HACER]",
+    "presupuesto_anual": "[EUROS DISPONIBLES O SIN PRESUPUESTO]",
+    "temporada_alta": "[MESES DE MÁS CARGA DE TRABAJO]"
+  },
+  "entradas": {
+    "nivel_actual": "[PARA CADA PERSONA Y TAREA: 0 NO SABE, 1 CON AYUDA, 2 SOLO, 3 PUEDE ENSEÑAR]",
+    "bajas_o_salidas_previstas": "[VACACIONES LARGAS, JUBILACIONES, CAMBIOS DE PUESTO]",
+    "formacion_bonificada": "[SÍ USÁIS CRÉDITO DE FORMACIÓN O NO]"
+  },
+  "procedimiento": [
+    "Monta la matriz con personas en filas y tareas en columnas y el nivel de 0 a 3 en cada casilla",
+    "Señala en rojo las tareas con una sola persona en nivel 2 o 3: son tu riesgo principal",
+    "Marca en ámbar las tareas donde nadie llega a nivel 3 y por tanto no hay quien enseñe",
+    "Fija para cada riesgo un objetivo del año: quién sube de nivel en qué tarea y para cuándo",
+    "Reparte las acciones por trimestres evitando la temporada alta y asigna formador interno o externo",
+    "Estima coste y horas de cada acción y ajusta al presupuesto indicado priorizando riesgos rojos"
+  ],
+  "restricciones": [
+    "Prioriza siempre formación interna entre compañeros antes que cursos externos de pago",
+    "Ninguna persona con más de dos acciones formativas por trimestre",
+    "No inventes precios de cursos: da rangos y di que hay que pedir presupuesto"
+  ],
+  "formato_salida": {
+    "tipo": "matriz y plan en tablas",
+    "secciones": [
+      "Matriz de polivalencia con leyenda de niveles",
+      "Lista de riesgos ordenados por gravedad",
+      "Tabla: Acción | Quién | Quién forma | Trimestre | Horas | Coste estimado",
+      "Matriz objetivo a 12 meses",
+      "Los tres indicadores con los que revisar el plan cada trimestre"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada acción del plan responde a un riesgo identificado en la matriz",
+    "El plan cabe en el presupuesto y en las horas reales del equipo",
+    "Se ve de un vistazo qué pasa si mañana falta una persona concreta"
+  ],
+  "tono": "analítico y claro"
+}

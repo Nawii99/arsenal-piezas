@@ -1,0 +1,42 @@
+{
+  "tarea": "Crear el plan de incorporación de 90 días de una persona nueva",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "persona": "[NOMBRE]",
+    "puesto": "[NOMBRE DEL PUESTO]",
+    "fecha_incorporacion": "[FECHA]",
+    "responsable_de_acompanarle": "[NOMBRE]",
+    "modalidad": "[PRESENCIAL / HÍBRIDO / REMOTO]"
+  },
+  "entradas": {
+    "resultados_esperados_a_90_dias": ["[RESULTADO 1]", "[RESULTADO 2]"],
+    "herramientas_y_accesos": ["[HERRAMIENTA 1]", "[HERRAMIENTA 2]"],
+    "personas_que_debe_conocer": ["[NOMBRE Y ROL]"],
+    "documentos_a_leer": ["[DOCUMENTO 1]"],
+    "periodo_de_prueba": "[MESES]"
+  },
+  "pasos": [
+    "Preparar la lista de lo que tiene que estar listo antes del primer día: equipo, accesos, mesa, correo y alta",
+    "Diseñar el día 1 hora a hora, sin dejarlo solo delante de un manual",
+    "Repartir por bloques: días 1-30 aprender y observar, 31-60 hacer con apoyo, 61-90 hacer solo",
+    "Asignar a cada bloque un entregable visible y una reunión de revisión con fecha",
+    "Definir las señales de alarma que indican que la incorporación no va bien"
+  ],
+  "restricciones": [
+    "Máximo tres objetivos por bloque",
+    "Cada tarea tiene un responsable con nombre, no 'el equipo'",
+    "Nada de formación de una semana seguida sin tocar trabajo real",
+    "El plan cabe en una página"
+  ],
+  "formato_salida": {
+    "checklist_previo": "Lista de lo que hay que tener listo antes del primer día, con responsable",
+    "dia_1": "Agenda por horas",
+    "tabla_90_dias": "Bloque, qué aprende, qué entrega, con quién, fecha de revisión",
+    "reuniones": "Calendario de seguimiento con duración y guion de cada una",
+    "evaluacion_periodo_prueba": "Cinco preguntas para decidir la continuidad con criterio"
+  },
+  "criterios_calidad": [
+    "La persona sabe cada semana qué se espera de ella",
+    "Todo entregable se puede comprobar sin depender de una opinión"
+  ]
+}

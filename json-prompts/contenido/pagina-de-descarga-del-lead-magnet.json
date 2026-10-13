@@ -1,0 +1,44 @@
+{
+  "tarea": "Redactar el texto completo de una página de captación (squeeze page) para descargar un recurso gratuito a cambio del email",
+  "contexto": {
+    "marca": "[NOMBRE DE TU EMPRESA]",
+    "recurso": "[NOMBRE Y FORMATO: GUÍA PDF, CHECKLIST, PLANTILLA, MINICURSO]",
+    "contenido_real": "[QUÉ INCLUYE POR DENTRO, EN 4 O 6 PUNTOS]",
+    "publico": "[A QUIÉN VA DIRIGIDO]",
+    "origen_del_trafico": "[INSTAGRAM / ANUNCIOS META / GOOGLE / NEWSLETTER / BIO]",
+    "campos_formulario": "[SOLO EMAIL / NOMBRE Y EMAIL / NOMBRE, EMAIL Y EMPRESA]"
+  },
+  "pasos": [
+    "Escribir 5 titulares distintos: por resultado, por tiempo ahorrado, por error evitado, por pregunta y por dato concreto",
+    "Recomendar uno y explicar en una línea por qué encaja con el origen del tráfico",
+    "Redactar el resto de la página con el titular recomendado",
+    "Traducir cada punto del contenido en un beneficio para el lector",
+    "Añadir dos objeciones habituales y resolverlas en el texto"
+  ],
+  "restricciones": [
+    "La página se lee entera en menos de 60 segundos",
+    "Un solo objetivo: descargar. Sin menú, sin enlaces a otras páginas",
+    "Prohibido prometer resultados económicos o plazos garantizados",
+    "Nada de 'secreto', 'revolucionario' ni exclamaciones dobles",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "tipo": "bloques etiquetados listos para montar en la web",
+    "bloques": [
+      "TITULAR y SUBTITULAR",
+      "PARRAFO_DOLOR: 3 líneas que describen la situación actual del lector",
+      "QUE_INCLUYE: 5 viñetas, cada una con el contenido y lo que consigue con él",
+      "PARA_QUIEN_ES / PARA_QUIEN_NO_ES",
+      "SOBRE_MI: 3 líneas de credibilidad con [TUS DATOS DE EXPERIENCIA]",
+      "FORMULARIO: etiquetas de los campos y texto del botón, con 3 alternativas de botón",
+      "MICROCOPY: frase bajo el botón sobre privacidad y frecuencia de emails",
+      "AVISO_LEGAL: texto breve de consentimiento con [RESPONSABLE], [FINALIDAD] y enlace a política de privacidad",
+      "PAGINA_DE_GRACIAS: qué verá tras suscribirse y qué le pides que haga mientras espera el correo"
+    ]
+  },
+  "criterios_calidad": [
+    "El titular nombra un resultado concreto, no una categoría",
+    "Ninguna viñeta se queda en describir el formato del archivo",
+    "El aviso legal está redactado para un negocio en España"
+  ]
+}

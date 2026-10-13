@@ -1,0 +1,41 @@
+{
+  "tarea": "Evaluar una brecha de seguridad de datos personales, decidir si procede notificar a la AEPD en 72 horas y a los afectados, y redactar ambas comunicaciones",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR]",
+    "persona_de_contacto": "[NOMBRE, CARGO Y EMAIL]"
+  },
+  "entradas": {
+    "que_ha_pasado": "[DESCRIBE EL INCIDENTE CON TUS PALABRAS]",
+    "fecha_hora_deteccion": "[CUÁNDO TE ENTERASTE]",
+    "datos_afectados": "[NOMBRES, EMAILS, TELÉFONOS, DNI, DATOS BANCARIOS, SALUD, CONTRASEÑAS]",
+    "personas_afectadas": "[NÚMERO APROXIMADO Y TIPO: clientes, empleados, pacientes]",
+    "estado": "[¿SIGUE ABIERTA LA BRECHA? ¿HAY COPIA DE SEGURIDAD? ¿HAY CIFRADO?]",
+    "medidas_ya_tomadas": "[LO QUE YA HAS HECHO]"
+  },
+  "pasos": [
+    "Clasifica el incidente: confidencialidad, integridad o disponibilidad, y si sigue activo",
+    "Valora el riesgo para los derechos de las personas cruzando tipo de dato, volumen, facilidad de identificación y posible daño",
+    "Decide con criterio explícito: no notificar y documentar, notificar a la AEPD, o notificar además a los afectados por alto riesgo",
+    "Calcula la hora límite exacta de las 72 horas desde la detección",
+    "Redacta la notificación a la AEPD con los apartados del artículo 33 y admite lo que aún se desconoce como información preliminar",
+    "Redacta el aviso a los afectados en lenguaje claro con consejos concretos de protección",
+    "Propón las medidas correctoras y el registro interno de la brecha, obligatorio aunque no se notifique"
+  ],
+  "restricciones": [
+    "No minimizar ni ocultar hechos; si falta información, se dice que la investigación continúa",
+    "No culpar a un empleado por su nombre en documentos externos",
+    "Nada de tecnicismos en el aviso a los afectados"
+  ],
+  "formato_salida": {
+    "1_evaluacion": "tabla de riesgo y decisión razonada con la hora límite",
+    "2_notificacion_aepd": "texto por apartados listo para volcar en el formulario",
+    "3_aviso_afectados": "email breve con qué ha pasado, qué datos, qué hacemos y qué debes hacer tú",
+    "4_plan": "medidas correctoras a 24 horas, 7 días y 30 días"
+  },
+  "criterios_calidad": [
+    "La decisión de notificar o no queda justificada por escrito",
+    "El aviso a afectados incluye acciones útiles y un contacto real",
+    "Existe registro de la brecha aunque no se notifique"
+  ]
+}

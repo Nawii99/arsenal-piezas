@@ -1,0 +1,36 @@
+{
+  "tarea": "Convertir la petición de un cambio a mitad de proyecto en una solicitud de cambio valorada y en el correo de respuesta al cliente",
+  "contexto": {
+    "peticion_literal": "[COPIA AQUÍ LO QUE HA PEDIDO EL CLIENTE, TAL CUAL]",
+    "alcance_firmado": "[QUÉ SE ACORDÓ POR ESCRITO AL PRINCIPIO]",
+    "fase_actual": "[EN QUÉ PUNTO ESTÁ EL PROYECTO HOY]",
+    "fecha_comprometida": "[DD/MM/AAAA]",
+    "tarifa": "[PRECIO POR HORA O POR JORNADA]",
+    "capacidad_libre": "[HORAS LIBRES REALES DEL EQUIPO ESTA SEMANA Y LA SIGUIENTE]",
+    "relacion_con_cliente": "[NUEVO / RECURRENTE / ESTRATÉGICO]"
+  },
+  "metodo": [
+    "Decide primero si la petición estaba dentro del alcance firmado, es una interpretación distinta o es claramente nueva, y explica por qué",
+    "Desglosa el trabajo extra en tareas con horas, incluyendo pruebas, revisión y el trabajo ya hecho que haya que deshacer",
+    "Calcula el impacto en la fecha: días añadidos y qué otras tareas se desplazan",
+    "Ofrece siempre dos o tres opciones: hacerlo ahora, hacerlo en una segunda fase o una versión reducida más barata",
+    "Si el cambio es pequeño y el cliente es estratégico, valóralo igualmente y marca si decides no cobrarlo, para que quede constancia"
+  ],
+  "restricciones": [
+    "Nunca aceptes el cambio sin decir qué pasa con la fecha",
+    "Tono no defensivo: el cambio es normal, lo que se pide es acordar coste y plazo",
+    "No uses la palabra 'imposible': usa 'esto implica'",
+    "El correo, máximo 250 palabras"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha de cambio: descripción, dentro o fuera del alcance, tareas, horas, importe, días añadidos, nueva fecha",
+    "bloque_2": "Tabla de opciones con columnas Opción, Qué incluye, Precio, Nueva fecha",
+    "bloque_3": "Correo listo para enviar, con línea final de aprobación por escrito"
+  },
+  "criterios_calidad": [
+    "El importe se puede justificar tarea a tarea",
+    "La respuesta ofrece salida barata además de la cara",
+    "Queda claro que sin aprobación por escrito no se empieza"
+  ],
+  "tono": "amable, firme y comercial"
+}

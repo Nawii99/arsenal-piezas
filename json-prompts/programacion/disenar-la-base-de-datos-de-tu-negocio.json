@@ -1,0 +1,41 @@
+{
+  "tarea": "Diseñar el esquema de base de datos relacional para un negocio concreto y entregar las sentencias CREATE TABLE listas para ejecutar",
+  "contexto": {
+    "negocio": "[QUÉ HACE TU NEGOCIO Y QUÉ GESTIONA LA APLICACIÓN]",
+    "motor_sql": "[POSTGRESQL / MYSQL / SQL SERVER / SQLITE]",
+    "volumen_esperado": "[CUÁNTOS REGISTROS AL MES ESPERAS]",
+    "quien_lo_mantendra": "[TÚ SOLO / UN DESARROLLADOR / UNA AGENCIA]"
+  },
+  "entradas": {
+    "cosas_que_gestionas": "[EJ: CLIENTES, PRESUPUESTOS, CITAS, PRODUCTOS, PAGOS]",
+    "datos_de_cada_una": "[QUÉ DATOS GUARDAS DE CADA UNA]",
+    "reglas": "[EJ: UN CLIENTE PUEDE TENER VARIAS CITAS; UN PEDIDO TIENE VARIAS LÍNEAS]",
+    "consultas_necesarias": "[QUÉ PREGUNTAS TENDRÁ QUE RESPONDER, EJ: VENTAS POR MES Y POR PRODUCTO]",
+    "requisitos_legales": "[DATOS PERSONALES, FACTURACIÓN, PLAZOS DE CONSERVACIÓN]"
+  },
+  "procedimiento": [
+    "1. Identificar entidades, atributos y relaciones (uno a muchos y muchos a muchos con su tabla intermedia)",
+    "2. Normalizar hasta tercera forma normal y justificar cualquier desnormalización deliberada",
+    "3. Elegir tipos de dato correctos: importes en decimal y nunca en float, fechas con zona horaria si aplica, texto con longitud pensada",
+    "4. Definir claves primarias, claves foráneas con su ON DELETE, restricciones UNIQUE, NOT NULL y CHECK",
+    "5. Añadir campos de auditoría (creado_en, actualizado_en) y marcado de borrado lógico si hace falta",
+    "6. Proponer índices para las consultas listadas"
+  ],
+  "restricciones": [
+    "Nombres de tablas y columnas en español, en minúsculas y con guion bajo",
+    "Nada de guardar varios valores separados por comas en un mismo campo",
+    "No borrar datos de facturación de forma física: usar borrado lógico"
+  ],
+  "formato_salida": {
+    "1_modelo": "Lista de tablas con su propósito en una línea",
+    "2_diagrama": "Esquema de relaciones en texto, tabla por tabla",
+    "3_sql": "Bloque con todos los CREATE TABLE e índices en orden ejecutable",
+    "4_decisiones": "Cinco decisiones de diseño explicadas y su alternativa descartada",
+    "5_datos_de_prueba": "INSERT de ejemplo con tres filas por tabla"
+  },
+  "criterios_calidad": [
+    "Cada consulta necesaria listada se puede responder con este esquema",
+    "No hay datos duplicados en dos sitios sin una razón explicada",
+    "El script se ejecuta de principio a fin sin errores de dependencias"
+  ]
+}

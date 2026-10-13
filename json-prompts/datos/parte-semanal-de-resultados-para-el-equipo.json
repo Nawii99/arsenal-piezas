@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribe el parte semanal de resultados para mi equipo, corto y listo para enviar",
+  "contexto": {
+    "equipo": "[CUÁNTAS PERSONAS Y QUÉ HACEN]",
+    "canal_de_envio": "[WHATSAPP / EMAIL / SLACK]",
+    "semana": "[DEL X AL Y]"
+  },
+  "entradas": {
+    "cifras_semana": "[VENTAS, PEDIDOS, PRESUPUESTOS ENVIADOS, CITAS, INCIDENCIAS, LO QUE MIDÁIS]",
+    "semana_anterior": "[LAS MISMAS CIFRAS]",
+    "objetivo_semanal": "[OBJETIVO POR CADA CIFRA]",
+    "hechos": "[LO QUE HA PASADO: BAJAS, PEDIDO GRANDE, PROBLEMA CON UN PROVEEDOR]",
+    "prioridades": "[EN QUÉ QUIERES QUE SE CENTREN ESTA SEMANA]"
+  },
+  "formato_salida": {
+    "estructura": [
+      "Línea 1: cómo vamos, en una frase",
+      "Bloque de cifras: una línea por métrica con valor, comparación con la semana anterior y semáforo verde, ámbar o rojo",
+      "Menciones: qué ha salido bien y quién lo ha hecho",
+      "Foco de la semana: tres prioridades como máximo, cada una con responsable",
+      "Cierre: una pregunta o petición concreta"
+    ],
+    "longitud": "Máximo 150 palabras, apto para leerse en el móvil sin desplegar",
+    "emojis": "Solo los tres del semáforo, ninguno más"
+  },
+  "restricciones": [
+    "Nada de reproches personales ni de señalar a nadie por lo que ha ido mal",
+    "Si una cifra está en rojo, di también qué se va a hacer",
+    "No repitas la explicación de las métricas cada semana"
+  ],
+  "criterios_calidad": [
+    "Se lee entero en menos de un minuto",
+    "Cualquiera sabe al terminarlo qué tiene que hacer esta semana",
+    "Las cifras se entienden sin abrir ningún archivo adjunto"
+  ],
+  "tono": "Cercano, claro y motivador sin exagerar"
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Construir la matriz de pruebas de control de acceso de una aplicación web propia para verificar que ningún usuario ve ni modifica datos que no le corresponden",
+  "contexto": {
+    "aplicacion": "[NOMBRE Y URL]",
+    "roles": "[LISTA DE ROLES: VISITANTE, CLIENTE, EMPLEADO, ADMIN]",
+    "acciones_por_rol": "[QUÉ DEBERÍA PODER HACER CADA ROL]",
+    "datos_privados": "[FACTURAS, PEDIDOS, HISTORIAL, DOCUMENTOS]",
+    "urls_con_identificador": "[EJEMPLOS DE DIRECCIONES CON NÚMEROS O CÓDIGOS]"
+  },
+  "autorizacion": "Pruebas solo sobre la aplicación propia indicada y con dos cuentas de prueba creadas para ello",
+  "pasos": [
+    "Construir la matriz rol por función: permitido, prohibido o no aplica",
+    "Para cada casilla prohibida, definir una prueba concreta desde la cuenta que no debería poder",
+    "Incluir las tres vías de acceso: menú visible, dirección escrita a mano y acción desde la propia pantalla",
+    "Incluir la prueba del cliente A que abre el documento del cliente B cambiando el identificador de la dirección",
+    "Incluir la comprobación de que ocultar un botón no es lo mismo que impedir la acción",
+    "Incluir la comprobación de las pantallas de descarga y exportación, que suelen olvidarse",
+    "Definir para cada prueba el resultado correcto: mensaje de sin permiso, y no una página en blanco ni un error del servidor",
+    "Priorizar las pruebas por gravedad del dato expuesto"
+  ],
+  "restricciones": [
+    "No incluir herramientas de interceptación ni instrucciones de explotación: solo comprobaciones observables con navegador y cuentas propias",
+    "Nunca usar cuentas o datos de clientes reales",
+    "Cada prueba debe indicar cómo dejar el sistema como estaba"
+  ],
+  "formato_salida": {
+    "bloque_1": "matriz roles por funciones",
+    "bloque_2": "tabla de casos con columnas: Nº, cuenta usada, qué intenta, resultado correcto, señal de alarma, gravedad",
+    "bloque_3": "plantilla de aviso urgente al desarrollador si una prueba sale mal"
+  },
+  "criterios_calidad": [
+    "Toda casilla prohibida tiene al menos una prueba asociada",
+    "Las pruebas usan las pantallas y direcciones reales indicadas",
+    "El resultado correcto está descrito de forma inequívoca"
+  ],
+  "tono": "riguroso y claro"
+}

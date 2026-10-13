@@ -1,0 +1,30 @@
+{
+  "tarea": "Preparar las notas del ponente, los tiempos y el ensayo de una presentación ya montada",
+  "entradas": {
+    "presentacion": "[PEGA EL TITULAR Y EL TEXTO DE CADA DIAPOSITIVA]",
+    "duracion_total": "[MINUTOS]",
+    "formato": "[PRESENCIAL / VIDEOLLAMADA / GRABADA]",
+    "objetivo": "[QUÉ DECISIÓN QUIERES QUE TOMEN]",
+    "nivel_del_publico": "[EXPERTO / GENERALISTA / MIXTO]"
+  },
+  "entregables": [
+    "Reparto de minutos por bloque y por diapositiva, sumando exactamente el total",
+    "Notas por diapositiva: primera frase literal, 3 puntos a decir y frase de transición",
+    "Guion de los primeros 45 segundos, palabra por palabra",
+    "10 preguntas incómodas probables con su respuesta en 3 frases",
+    "Plan B: qué 4 diapositivas se saltan si vas con retraso",
+    "Checklist técnica del día: archivos, adaptador, conexión, modo presentador y copia en PDF"
+  ],
+  "reglas": [
+    "Ritmo de referencia de unas 130 palabras habladas por minuto",
+    "Ninguna diapositiva por encima de 2 minutos, salvo la de precio o la de datos",
+    "Las notas no repiten lo que ya está escrito en pantalla",
+    "Cada transición enlaza con la idea siguiente, nada de y bueno"
+  ],
+  "formato_salida": "Primero la tabla de tiempos, después una ficha por diapositiva y al final las preguntas y la checklist",
+  "criterios_calidad": [
+    "Los minutos suman la duración pedida",
+    "Se puede ensayar en voz alta leyendo solo las fichas",
+    "Las respuestas a las preguntas incómodas no esquivan el tema"
+  ]
+}

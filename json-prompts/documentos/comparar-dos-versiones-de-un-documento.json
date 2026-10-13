@@ -1,0 +1,53 @@
+{
+  "tarea": "Comparar dos versiones de un mismo documento y devolver la lista de cambios reales ordenados por importancia",
+  "contexto": {
+    "tipo_de_documento": "[PRESUPUESTO, CONTRATO, PROPUESTA, MEMORIA, POLITICA INTERNA]",
+    "quien_edito": "[CLIENTE, SOCIO, ABOGADO, YO MISMO HACE MESES]",
+    "que_dicen_haber_cambiado": "[LO QUE TE HAN CONTADO POR EMAIL]",
+    "que_es_critico": "[PRECIOS, PLAZOS, ALCANCE, RESPONSABILIDADES, NOMBRES]"
+  },
+  "entradas": {
+    "version_a": "[PEGA AQUI LA VERSION ORIGINAL COMPLETA]",
+    "version_b": "[PEGA AQUI LA VERSION NUEVA COMPLETA]"
+  },
+  "pasos": [
+    "1. Alinea las dos versiones por apartados y titulos, no por numero de pagina",
+    "2. Marca apartados añadidos, eliminados, movidos de sitio y modificados",
+    "3. Para cada modificacion escribe el texto antes y el texto despues, recortado a lo que cambia",
+    "4. Clasifica cada cambio en tres cajones: cambia el fondo, cambia el matiz, solo es estilo o erratas",
+    "5. Revisa aparte todas las cifras, fechas, porcentajes, plazos y nombres propios, uno a uno",
+    "6. Comprueba si el cambio coincide con lo que dicen haber cambiado o si hay cambios no anunciados",
+    "7. Detecta consecuencias en cadena: un apartado modificado que deja otro sin sentido o una referencia cruzada rota",
+    "8. Propon para cada cambio de fondo: aceptar, aceptar con matiz o rechazar, con una frase de motivo"
+  ],
+  "que_mirar": [
+    "Palabras pequeñas que lo cambian todo: podra, debera, hasta, aproximadamente, salvo",
+    "Numeros con un digito distinto",
+    "Plazos que pasan de dias naturales a habiles o al reves",
+    "Apartados eliminados enteros sin dejar hueco visible",
+    "Cambio del nombre de la empresa firmante"
+  ],
+  "errores_tipicos": [
+    "Fijarse solo en lo resaltado en color y dar por buena el resto",
+    "Contar como cambio cada coma y perder lo importante entre ruido",
+    "Olvidar comparar tambien los anexos y las tablas"
+  ],
+  "restricciones": [
+    "No reescribas el documento: solo compara",
+    "Cita el titulo del apartado en cada cambio",
+    "Si un fragmento no aparece en una de las versiones, dilo como eliminado, no como reescrito"
+  ],
+  "formato_salida": {
+    "bloque_1": "Semaforo en tres lineas: cuantos cambios de fondo, de matiz y de estilo",
+    "bloque_2": "Tabla de cambios de fondo: apartado | antes | despues | efecto practico | recomendacion",
+    "bloque_3": "Lista de cambios de matiz",
+    "bloque_4": "Lista de cambios no anunciados por la otra parte",
+    "bloque_5": "Mensaje breve para responder confirmando lo aceptado y lo que hay que revertir"
+  },
+  "criterios_calidad": [
+    "Ninguna cifra, fecha o nombre cambiado se queda sin listar",
+    "El bloque de estilo no mezcla nada de fondo",
+    "Se puede leer la tabla sin abrir los documentos",
+    "El mensaje final es corto y educado"
+  ]
+}

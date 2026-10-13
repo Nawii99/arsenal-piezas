@@ -1,0 +1,52 @@
+{
+  "tarea": "Analiza mis números de ventas del último periodo, dime en qué paso pierdo más, cuánto dinero se queda ahí y qué hago primero.",
+  "contexto": {
+    "negocio": "[QUÉ VENDO Y A QUIÉN]",
+    "periodo": "[MES O TRIMESTRE ANALIZADO]",
+    "pasos_de_mi_venta": "[EJEMPLO: CONTACTO, RESPUESTA, LLAMADA, PRESUPUESTO, VENTA]",
+    "tiempo_que_le_puedo_dedicar": "[HORAS A LA SEMANA PARA ARREGLARLO]"
+  },
+  "entradas": {
+    "numeros": "[CUÁNTOS EN CADA PASO: CONTACTOS, CONVERSACIONES, PRESUPUESTOS, VENTAS]",
+    "importes": "[TICKET MEDIO Y FACTURACIÓN DEL PERIODO]",
+    "tiempos": "[DÍAS DESDE EL PRIMER CONTACTO HASTA LA VENTA]",
+    "origenes": "[DE DÓNDE VIENEN LOS CONTACTOS Y CUÁNTOS DE CADA SITIO]",
+    "gasto": "[LO QUE ME GASTO EN CAPTAR, SI GASTO ALGO]"
+  },
+  "metodo": [
+    "1. Calcula el paso a paso: qué porcentaje pasa de cada escalón al siguiente y compáralo con lo normal en mi tipo de negocio, avisando de que es una referencia y no una ley.",
+    "2. Marca el escalón con peor porcentaje y también el que mueve más dinero, que no siempre es el mismo.",
+    "3. Estima cuánto facturaría si ese escalón mejorase unos pocos puntos, con el cálculo a la vista.",
+    "4. Separa problema de cantidad (entran pocos) de problema de calidad (entran malos) usando el origen de los contactos.",
+    "5. Mira los tiempos: si el ciclo se alarga, di en qué paso se atasca y qué lo suele causar.",
+    "6. Propón tres acciones ordenadas por esfuerzo bajo y efecto alto, con qué hago exactamente esta semana.",
+    "7. Define los cuatro números que debo apuntar cada semana para no volver a estar a ciegas."
+  ],
+  "errores_a_evitar": [
+    "Mirar solo la facturación total y no los pasos.",
+    "Sacar conclusiones con muy pocos casos: si hay menos de 20, dilo y trata el análisis como indicio.",
+    "Recomendar gastar en publicidad cuando el problema está en el cierre.",
+    "Mezclar orígenes muy distintos en una sola media.",
+    "Inventar porcentajes de referencia sin decir que son orientativos."
+  ],
+  "formato_salida": {
+    "tabla": "Paso, cantidad, porcentaje de conversión, comentario.",
+    "agujero": "El escalón que más dinero pierde, con el cálculo del dinero en juego.",
+    "causas": "Tres causas probables de ese agujero y cómo comprobar cuál es la buena.",
+    "plan": "Tres acciones ordenadas, con tiempo estimado y resultado esperado.",
+    "cuadro_semanal": "Los cuatro números a apuntar y la plantilla de una hoja de cálculo simple para hacerlo."
+  },
+  "restricciones": [
+    "Español de España, tuteo, sin jerga de marketing.",
+    "Todo cálculo debe mostrarse para que yo lo pueda rehacer.",
+    "Prohibido inventar datos que yo no haya dado: si falta uno, decláralo como desconocido.",
+    "Nada de prometer resultados concretos."
+  ],
+  "criterios_calidad": [
+    "Puedo repetir los cálculos con una calculadora.",
+    "El plan cabe en las horas semanales que te he dicho.",
+    "Se distingue claramente si el problema es de cantidad o de calidad de contactos.",
+    "Cada dato que falta aparece marcado como falta, no rellenado a ojo."
+  ],
+  "si_faltan_datos": "Si no tengo los números, dime exactamente qué apuntar durante las próximas cuatro semanas y en qué formato para poder hacer el análisis después."
+}

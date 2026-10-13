@@ -1,0 +1,39 @@
+{
+  "tarea": "Convertir el historial desordenado de una incidencia en una ficha de traspaso completa para la persona o proveedor que la recoge",
+  "contexto": {
+    "negocio": "[QUÉ HACES]",
+    "quien_entrega": "[NOMBRE Y ROL]",
+    "quien_recibe": "[PERSONA, EQUIPO O PROVEEDOR Y QUÉ SABE Y QUÉ NO DEL CASO]",
+    "herramienta": "[DÓNDE SE GUARDA: EMAIL, TRELLO, NOTION, EXCEL, CRM]"
+  },
+  "entradas": {
+    "hilo_completo": "[PEGA AQUÍ TODOS LOS MENSAJES CON EL CLIENTE, EN ORDEN]",
+    "notas_internas": "[LO QUE SE HA HABLADO POR DENTRO]",
+    "ya_probado": "[QUÉ SOLUCIONES SE HAN INTENTADO Y QUÉ PASÓ CON CADA UNA]",
+    "prometido_al_cliente": "[PLAZOS, IMPORTES O ACCIONES QUE YA SE LE HAN PROMETIDO]"
+  },
+  "pasos": [
+    "Extrae los hechos y descarta las conversaciones que no cambian el caso",
+    "Separa lo confirmado de lo que solo dice el cliente y de lo que solo suponemos",
+    "Lista lo ya probado con su resultado para que nadie repita intentos",
+    "Recoge todo lo prometido con fecha, porque eso ya no se puede incumplir",
+    "Marca el estado emocional del cliente y cómo hay que tratarlo",
+    "Define el siguiente paso concreto y quién lo hace",
+    "Escribe el mensaje de presentación que quien recibe envía al cliente"
+  ],
+  "restricciones": [
+    "Máximo una página: si no cabe, sobra información",
+    "Nada de opiniones sobre el cliente que no puedas enseñarle si lo pide",
+    "Si falta un dato clave, aparece en la lista de pendientes, no se rellena a ojo",
+    "Cero jerga interna sin explicar para traspasos a proveedores externos"
+  ],
+  "formato_salida": {
+    "tipo": "ficha de traspaso",
+    "campos": ["Referencia y fecha de apertura", "Cliente y canal preferido", "Problema en una frase", "Impacto y urgencia", "Hechos confirmados", "Dice el cliente / suponemos", "Ya probado y resultado", "Prometido al cliente con fechas", "Estado del cliente y cómo tratarlo", "Siguiente paso y responsable", "Datos que faltan", "Mensaje de presentación al cliente"]
+  },
+  "criterios_calidad": [
+    "Quien recibe puede continuar sin leer el hilo original ni preguntar al cliente",
+    "Ninguna promesa del histórico se queda fuera de la ficha",
+    "El siguiente paso tiene nombre y fecha"
+  ]
+}

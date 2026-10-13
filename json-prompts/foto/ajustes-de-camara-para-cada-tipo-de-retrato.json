@@ -1,0 +1,40 @@
+{
+  "tarea": "Darme los ajustes de cámara concretos para el retrato que voy a hacer, con un punto de partida y cómo corregir si algo sale mal",
+  "mi_equipo": {
+    "camara": "[MARCA Y MODELO DE TU CÁMARA O 'MÓVIL']",
+    "objetivo": "[OBJETIVO Y APERTURA MÁXIMA, EJ. 50 MM f/1.8]",
+    "tengo_tripode": "[SÍ / NO]",
+    "tengo_flash_o_luz_continua": "[SÍ, CUÁL / NO]"
+  },
+  "situacion": {
+    "tipo_de_retrato": "[PRIMER PLANO / MEDIO CUERPO / CUERPO ENTERO / GRUPO DE VARIAS PERSONAS]",
+    "lugar_y_luz": "[JUNTO A UNA VENTANA / OFICINA CON FLUORESCENTES / EXTERIOR A MEDIODÍA / ATARDECER / INTERIOR OSCURO]",
+    "hay_movimiento": "[POSADO QUIETO / NIÑOS / GENTE ANDANDO]",
+    "resultado_que_busco": "[FONDO MUY DESENFOCADO / QUE SE VEA EL SITIO / LUZ NATURAL / ESTILO ESTUDIO]"
+  },
+  "metodo": [
+    "Partir del modo prioridad a la apertura salvo que el movimiento obligue a fijar la velocidad",
+    "Fijar la apertura según cuántas personas y cuánto fondo desenfocado se quiere",
+    "Comprobar la regla de la velocidad mínima para que no salga movido y subir ISO solo lo justo",
+    "Elegir modo de enfoque y punto de enfoque: siempre a los ojos",
+    "Dar un plan B si hay poca luz y otro si sobra luz"
+  ],
+  "restricciones": [
+    "Dar números concretos, no rangos vagos del tipo 'depende'",
+    "Explicar en una línea qué pasa en la foto si subo o bajo cada valor",
+    "No proponer accesorios que he dicho que no tengo"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "AJUSTES DE PARTIDA: modo, apertura, velocidad, ISO, enfoque, balance de blancos, formato de archivo",
+      "CÓMO COMPROBARLO en las dos primeras fotos",
+      "SI SALE MAL: tabla de problema y corrección (movida, oscura, ojos desenfocados, piel amarillenta, fondo feo)",
+      "CHULETA FINAL de 5 líneas para llevar en el móvil"
+    ]
+  },
+  "criterios_calidad": [
+    "Puedo copiar los valores en la cámara sin pensar",
+    "Las correcciones son accionables sobre la marcha",
+    "Los ajustes encajan con mi objetivo real y su apertura máxima"
+  ]
+}

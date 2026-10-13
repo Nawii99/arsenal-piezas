@@ -1,0 +1,49 @@
+{
+  "tarea": "Redactar un brief completo y profesional para encargar videos UGC a un creador de contenido, incluyendo entregables, condiciones y derechos de uso",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "producto": "[PRODUCTO Y COMO SE USA]",
+    "cliente_ideal": "[PERFIL DE CLIENTE]",
+    "numero_de_videos": "[CUANTOS VIDEOS PIDES]",
+    "plataformas": "[TIKTOK / REELS / ANUNCIOS DE PAGO EN META]",
+    "presupuesto": "[PRESUPUESTO TOTAL O POR VIDEO]",
+    "plazo": "[FECHA DE ENTREGA]",
+    "uso_en_publicidad_pagada": "[SI / NO]",
+    "tono_de_marca": "[CERCANO / EXPERTO / GRACIOSO]"
+  },
+  "secciones_del_brief": [
+    "Quienes somos y que vendemos, en 4 lineas",
+    "A quien le hablamos y que le duele",
+    "Que queremos conseguir con estos videos",
+    "Angulos concretos a cubrir, uno por video",
+    "Requisitos tecnicos de grabacion",
+    "Que decir si o si y que no decir nunca",
+    "Entregables exactos y formato de archivo",
+    "Plazos, revisiones incluidas y proceso de aprobacion",
+    "Derechos de uso, duracion y territorio",
+    "Precio, forma de pago y que pasa si no se aprueba"
+  ],
+  "requisitos_tecnicos_a_especificar": [
+    "Vertical 9:16, minimo 1080x1920, 30 fps",
+    "Grabar en horizontal solo si se pide una version 16:9 aparte",
+    "Audio con microfono de solapa o el movil a menos de 40 cm",
+    "Luz natural de frente o ventana lateral, nunca a contraluz",
+    "Entregar los brutos sin musica, sin subtitulos quemados y sin filtros",
+    "Incluir planos de recurso del producto sin que salga la persona"
+  ],
+  "restricciones": [
+    "Lenguaje claro, sin jerga legal imposible de entender",
+    "Las condiciones economicas y los derechos de uso van escritos sin ambiguedad",
+    "Nada de pedir exclusividad indefinida sin pagarla"
+  ],
+  "formato_salida": {
+    "tipo": "Documento con titulares y listas, listo para copiar y enviar por email",
+    "anexos": ["Checklist de una pagina que el creador marca antes de entregar", "Tabla de entregables con nombre de archivo esperado", "Email corto de presentacion para acompanar el brief"]
+  },
+  "criterios_calidad": [
+    "Un creador que no conoce la marca podria grabar sin hacer preguntas",
+    "Queda claro que pasa si el material no cumple lo pedido",
+    "Los derechos de uso cubren exactamente donde vas a publicar",
+    "Cabe en dos folios"
+  ]
+}

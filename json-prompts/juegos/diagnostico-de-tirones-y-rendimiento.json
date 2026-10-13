@@ -1,0 +1,49 @@
+{
+  "tarea": "Diagnosticar por que un proyecto 3D o un juego va lento y devolver un plan de optimizacion ordenado por retorno",
+  "contexto": {
+    "motor_o_programa": "[UNITY / UNREAL / GODOT / BLENDER / THREE.JS]",
+    "donde_se_ejecuta": "[MOVIL / NAVEGADOR / PC MODESTO / PC POTENTE]",
+    "objetivo": "[FOTOGRAMAS POR SEGUNDO QUE QUIERES Y EN QUE APARATO]",
+    "nivel_tecnico": "no soy programador, necesito pasos de menu y ajustes"
+  },
+  "entradas": {
+    "sintoma": "[VA LENTO SIEMPRE / SOLO EN UNA ZONA / TIRONES PUNTUALES / SE CALIENTA / TARDA EN CARGAR]",
+    "cifras": "[FPS ACTUALES, DRAW CALLS, TRIANGULOS EN PANTALLA, MEMORIA, SI LOS TIENES]",
+    "contenido_de_la_escena": "[CUANTOS OBJETOS, LUCES, PARTICULAS, PERSONAJES]",
+    "texturas": "[CUANTAS Y DE QUE TAMANO]",
+    "luces_y_sombras": "[TIEMPO REAL O PRECALCULADAS, CUANTAS PROYECTAN SOMBRA]",
+    "efectos": "[POSTPROCESADO, REFLEJOS, TRANSPARENCIAS, NIEBLA]"
+  },
+  "pasos": [
+    "1. Separa el sintoma en tres familias: mucha geometria, mucho pintado de pantalla o mucho calculo por fotograma",
+    "2. Di que medicion hay que mirar primero en el programa indicado y donde esta ese panel",
+    "3. Propon la prueba de aislamiento: apagar por bloques para ver que baja el consumo, en que orden y que conclusion saca cada resultado",
+    "4. Para cada sospechoso da el arreglo concreto con menus y valores de partida",
+    "5. Ordena los arreglos por ganancia estimada frente a esfuerzo y riesgo de romper el aspecto visual",
+    "6. Marca la linea roja: que no se debe tocar porque se cargaria el acabado",
+    "7. Indica como comprobar la mejora con la misma medicion y en el mismo sitio de la escena"
+  ],
+  "sospechosos_habituales": [
+    "Demasiadas piezas separadas que se dibujan una a una en vez de agrupadas",
+    "Texturas de 4K en objetos que ocupan cuatro pixeles en pantalla",
+    "Luces en tiempo real con sombras donde bastaba luz precalculada",
+    "Transparencias apiladas y particulas grandes que pintan la pantalla varias veces",
+    "Materiales distintos para cosas iguales",
+    "Modelos de alta densidad sin versiones simplificadas para la lejania",
+    "Postprocesado activo por costumbre en aparatos modestos"
+  ],
+  "restricciones": [
+    "Nada de escribir codigo ni de comprar plugins",
+    "Un cambio cada vez y se vuelve a medir; nada de tocar diez cosas de golpe",
+    "Si faltan cifras, di como sacarlas antes de recomendar"
+  ],
+  "formato_salida": {
+    "bloques": ["Hipotesis ordenadas", "Como medir", "Prueba de aislamiento paso a paso", "Tabla de arreglos", "Linea roja visual", "Como verificar la mejora"],
+    "tabla_arreglos": ["Arreglo", "Sospechoso que ataca", "Ganancia esperada", "Esfuerzo", "Riesgo visual"]
+  },
+  "criterios_calidad": [
+    "Cada recomendacion se puede hacer desde la interfaz sin programar",
+    "El plan empieza por la medicion y no por el arreglo",
+    "Se dice explicitamente que se pierde a cambio en cada recorte"
+  ]
+}

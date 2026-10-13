@@ -1,0 +1,34 @@
+{
+  "tarea": "Recomendar los ajustes de cámara y la técnica de luz para cada estancia de una sesión de interiores, con parámetros concretos y explicados",
+  "entradas": {
+    "camara_y_objetivo": "[MODELO DE CÁMARA] + [OBJETIVO Y FOCAL]",
+    "tiene_tripode": "[SÍ / NO]",
+    "tiene_flash": "[SÍ, CUÁL / NO]",
+    "estancias_y_luz": "[EJ: SALÓN CON VENTANAL AL SUR, BAÑO SIN VENTANA, COCINA CON LUZ LATERAL]",
+    "hora_del_dia": "[MAÑANA / MEDIODÍA / TARDE]",
+    "nivel": "[PRINCIPIANTE / MEDIO / AVANZADO]"
+  },
+  "procedimiento": [
+    "Parte de una base fija para interiores: ISO base de la cámara, diafragma entre f/5.6 y f/8 para tener toda la estancia nítida, enfoque manual a un tercio de la profundidad y disparo con temporizador o disparador",
+    "Fija el balance de blancos en un valor manual por estancia en lugar de automático, para que todas las tomas del mismo espacio casen",
+    "Para cada estancia decide la técnica: una sola toma, horquillado de exposiciones (bracketing) de 3 o 5 disparos, o mezcla de una toma para la ventana y otra para el interior",
+    "Cuando haya flash, indica potencia orientativa, hacia dónde rebotarlo (techo blanco o pared lateral) y por qué nunca se dispara de frente",
+    "Advierte de la luz mixta: bombillas cálidas más luz de ventana fría producen zonas de distinto color; da la solución (apagar unas u otras, o corregir por zonas al editar)",
+    "Incluye para cada estancia el error típico y cómo detectarlo en pantalla con el histograma y el aviso de altas luces"
+  ],
+  "restricciones": [
+    "No recomendar ISO alto si hay trípode disponible",
+    "No proponer material que el usuario no ha dicho que tiene",
+    "Explicar cada ajuste en una frase entendible por alguien sin formación técnica"
+  ],
+  "formato_salida": {
+    "tipo": "ficha por estancia",
+    "campos_por_ficha": ["Estancia", "Modo y ajustes (ISO / diafragma / velocidad / balance de blancos)", "Técnica de disparo", "Uso del flash", "Error típico", "Cómo compruebo que está bien"],
+    "cierre": "Tabla resumen de una página para llevar en el móvil"
+  },
+  "criterios_calidad": [
+    "Cada ajuste va con un porqué en lenguaje llano",
+    "Las ventanas conservan detalle y no salen en blanco puro",
+    "Los ajustes son coherentes entre estancias para que el reportaje se vea uniforme"
+  ]
+}

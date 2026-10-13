@@ -1,0 +1,31 @@
+{
+  "tarea": "Revisar la lista de compromisos salidos de reuniones y preparar el seguimiento de los que van tarde",
+  "entradas": {
+    "fecha_hoy": "[FECHA DE HOY]",
+    "listado_tareas": "[PEGA AQUÍ LA LISTA: TAREA, RESPONSABLE, FECHA LÍMITE, ESTADO, REUNIÓN DE ORIGEN]",
+    "proyectos_prioritarios": ["[PROYECTO O CLIENTE QUE MÁS TE IMPORTA]"],
+    "relacion_con_responsables": "[EQUIPO PROPIO / PROVEEDORES / CLIENTES]"
+  },
+  "procedimiento": [
+    "Clasificar cada tarea en: hecha, en plazo, vence esta semana, vencida o sin dueño ni fecha",
+    "Calcular los días de retraso de cada tarea vencida",
+    "Señalar las tareas que bloquean a otras personas o a un cobro",
+    "Detectar tareas repetidas o duplicadas entre reuniones distintas",
+    "Proponer para cada tarea vencida una acción: reclamar, reasignar, replantear la fecha o cancelar",
+    "Redactar el mensaje de seguimiento correspondiente, adaptado a si es equipo, proveedor o cliente"
+  ],
+  "restricciones": [
+    "Máximo 5 reclamos por semana, priorizando impacto y no antigüedad",
+    "Los mensajes no deben sonar a bronca ni a auditoría",
+    "No cambiar fechas por tu cuenta: proponerlas para que las confirme el responsable"
+  ],
+  "formato_salida": {
+    "bloques": ["Semáforo resumen con cuántas tareas hay en cada estado", "Tabla de tareas vencidas ordenada por impacto con días de retraso", "Tareas sin dueño o sin fecha que hay que cerrar hoy", "Los mensajes de seguimiento listos para copiar, uno por persona", "Los 3 puntos que llevar a la próxima reunión de equipo"]
+  },
+  "criterios_calidad": [
+    "Cada mensaje va dirigido a una sola persona y menciona una sola tarea principal",
+    "El resumen cabe en una pantalla",
+    "Ninguna tarea de la lista se queda sin clasificar"
+  ],
+  "tono": "amable pero firme, tuteando"
+}

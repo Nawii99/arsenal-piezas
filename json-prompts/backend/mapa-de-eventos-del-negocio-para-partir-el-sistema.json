@@ -1,0 +1,30 @@
+{
+  "tarea": "Hacer un mapa de eventos del negocio de [NOMBRE DE TU EMPRESA] y proponer, a partir de él, en qué piezas o servicios tendría sentido dividir el sistema y cuáles deben seguir juntas",
+  "entradas": {
+    "negocio": "[A QUÉ SE DEDICA TU EMPRESA]",
+    "recorrido_cliente": "[DE PRINCIPIO A FIN: DESDE QUE TE DESCUBRE HASTA QUE COBRAS Y DAS SOPORTE]",
+    "roles": "[QUÉ PERSONAS O DEPARTAMENTOS TOCAN CADA PASO]",
+    "sistemas_externos": "[PASARELA DE PAGO, ERP, MENSAJERÍA, CRM...]"
+  },
+  "metodo": [
+    "Listar los hechos que ocurren en pasado: pedido creado, pago confirmado, envío entregado, factura emitida",
+    "Ordenarlos en el tiempo y marcar quién los provoca y quién se entera",
+    "Agrupar los eventos que comparten vocabulario y dueño: cada grupo es un candidato a pieza del sistema",
+    "Marcar los puntos donde dos grupos usan la misma palabra con significados distintos (cliente en ventas no es cliente en facturación)",
+    "Señalar qué comunicación entre grupos puede ser por mensaje en cola y cuál necesita respuesta inmediata"
+  ],
+  "restricciones": [
+    "Los nombres de los eventos son los del negocio, no términos técnicos",
+    "Máximo 7 grupos: si salen más, agrupar y decir por qué",
+    "No proponer un servicio por cada tabla de base de datos"
+  ],
+  "formato_salida": {
+    "tipo": "Markdown",
+    "secciones": ["Lista de eventos ordenada en el tiempo", "Tabla evento / quién lo provoca / quién reacciona / dato que lleva", "Grupos propuestos con nombre de negocio", "Palabras que significan cosas distintas según el grupo", "Comunicación entre grupos: inmediata o por cola", "Por dónde empezaría yo y por qué"]
+  },
+  "criterios_calidad": [
+    "Todos los pasos del recorrido del cliente aparecen cubiertos",
+    "Cada grupo propuesto podría explicarse a un comercial en una frase",
+    "Se indica claramente qué NO conviene separar todavía"
+  ]
+}

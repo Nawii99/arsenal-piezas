@@ -1,0 +1,42 @@
+{
+  "tarea": "Convertir una transcripción en bruto en un archivo de subtítulos SRT segmentado y sincronizado",
+  "contexto": {
+    "video": "[TÍTULO O TEMA DEL VÍDEO]",
+    "duracion": "[DURACIÓN EN MINUTOS Y SEGUNDOS]",
+    "idioma": "español de España",
+    "plataforma_destino": "[YOUTUBE / WEB PROPIA / LINKEDIN / INSTAGRAM]"
+  },
+  "entradas": {
+    "transcripcion": "[PEGA AQUÍ LA TRANSCRIPCIÓN, CON MARCAS DE TIEMPO SI LAS TIENES]",
+    "nombres_propios": "[NOMBRES, MARCAS Y TECNICISMOS QUE NO SE DEBEN CAMBIAR]",
+    "velocidad_habla": "[NORMAL / RÁPIDA / CON PAUSAS LARGAS]"
+  },
+  "restricciones": [
+    "Máximo 2 líneas por subtítulo y 42 caracteres por línea, espacios incluidos",
+    "Velocidad de lectura máxima de 17 caracteres por segundo",
+    "Duración mínima de 1 segundo y máxima de 7 segundos por subtítulo",
+    "Deja unos 80 milisegundos de separación entre un subtítulo y el siguiente",
+    "Corta por unidades de sentido: no separes artículo y sustantivo, ni preposición y su complemento, ni verbo y su pronombre",
+    "Si hay que partir una frase, que la primera línea sea la más larga y la segunda cierre la idea",
+    "No resumas ni inventes: limpia solo muletillas, titubeos y repeticiones vacías",
+    "Respeta la puntuación y las mayúsculas del español de España, sin traducir extranjerismos ya asentados"
+  ],
+  "pasos": [
+    "Divide la transcripción en frases y subfrases naturales",
+    "Agrupa esas unidades en bloques que quepan en los límites de caracteres",
+    "Asigna entrada y salida de cada bloque siguiendo el audio y respetando las pausas del hablante",
+    "Comprueba subtítulo a subtítulo caracteres por segundo, duración y solapes",
+    "Corrige los bloques que se pasen dividiéndolos o alargándolos hasta el siguiente hueco de silencio"
+  ],
+  "formato_salida": {
+    "tipo": "bloque de texto en formato SRT listo para guardar como archivo .srt",
+    "estructura": "número de subtítulo, línea de tiempos hh:mm:ss,mmm --> hh:mm:ss,mmm, texto, línea en blanco",
+    "extra": "al final, una tabla con los subtítulos que superan 17 caracteres por segundo y la corrección aplicada"
+  },
+  "criterios_calidad": [
+    "Ningún subtítulo supera los límites de línea, duración ni velocidad de lectura",
+    "Los tiempos no se solapan y avanzan siempre hacia adelante",
+    "Se puede leer cada bloque sin volver atrás para entenderlo",
+    "Los nombres propios aparecen escritos igual en todo el archivo"
+  ]
+}

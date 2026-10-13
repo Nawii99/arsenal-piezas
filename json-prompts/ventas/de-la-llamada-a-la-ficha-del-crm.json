@@ -1,0 +1,37 @@
+{
+  "tarea": "Convertir mis notas o la transcripción de una reunión comercial en un registro de CRM completo, con resumen, campos rellenos, próximo paso y email de seguimiento",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_vendo": "[PRODUCTO O SERVICIO]",
+    "etapas_de_mi_crm": "[LISTA DE TUS ETAPAS EN ORDEN]",
+    "campos_de_mi_crm": "[LISTA DE CAMPOS QUE RELLENAS: presupuesto, decisor, plazo, competencia, motivo de compra]"
+  },
+  "entradas": {
+    "cliente": "[NOMBRE DE LA EMPRESA O PERSONA]",
+    "asistentes": "[QUIÉN ESTABA Y CON QUÉ CARGO]",
+    "notas": "[PEGA AQUÍ TUS NOTAS EN BRUTO O LA TRANSCRIPCIÓN]"
+  },
+  "que_extraer": [
+    "Problema real que quiere resolver el cliente, con sus propias palabras",
+    "Quién decide, quién influye y quién paga",
+    "Presupuesto mencionado o rango implícito, y si no se habló, marcarlo como pendiente",
+    "Plazo o fecha de necesidad",
+    "Objeciones y dudas planteadas, literales",
+    "Competidores o alternativas mencionadas",
+    "Compromisos: qué se lleva cada parte y para cuándo"
+  ],
+  "restricciones": [
+    "No inventes nada que no aparezca en las notas: lo no dicho va en el apartado de huecos por confirmar",
+    "Separa siempre lo que dijo el cliente de tu interpretación",
+    "El resumen no puede pasar de 150 palabras"
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen de la reunión en 150 palabras",
+    "bloque_2": "Campos del CRM en formato campo: valor, con PENDIENTE donde no haya información",
+    "bloque_3": "Etapa recomendada y motivo en una línea",
+    "bloque_4": "Próximo paso con acción, responsable y fecha concreta",
+    "bloque_5": "Email de seguimiento de menos de 120 palabras que recoja lo acordado y pida confirmación de la siguiente fecha",
+    "bloque_6": "Tres preguntas que deberías haber hecho y no hiciste, para la próxima"
+  },
+  "tono": "Sobrio y profesional; el email tutea al cliente y va al grano"
+}

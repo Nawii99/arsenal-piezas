@@ -1,0 +1,36 @@
+{
+  "tarea": "Fijar los topes de gasto y de actividad de un agente de IA y el procedimiento de parada de emergencia",
+  "contexto": {
+    "agente": "[QUÉ EJECUTA SIN SUPERVISIÓN]",
+    "coste_por_accion": "[CUÁNTO CUESTA CADA ACCIÓN, APROXIMADO]",
+    "presupuesto_mensual_maximo": "[IMPORTE QUE NO QUIERES SUPERAR]",
+    "actividad_normal": "[ACCIONES AL DÍA EN UN DÍA TRANQUILO]"
+  },
+  "a_calcular": [
+    "Tope por acción, por hora, por día y por mes, dejando margen sobre la actividad normal",
+    "Umbral de aviso: a qué porcentaje del tope te llega un mensaje",
+    "Umbral de parada: a qué porcentaje el agente deja de actuar por su cuenta",
+    "Bucle sospechoso: cuántas acciones parecidas seguidas son señal de que algo se ha atascado",
+    "Reintentos máximos ante un error antes de rendirse y avisar"
+  ],
+  "freno_de_emergencia": [
+    "Quién puede pararlo y desde dónde",
+    "Qué pasa con lo que estaba a medias",
+    "Cómo se comprueba, ya parado, qué llegó a ejecutarse",
+    "Qué hay que revisar antes de volver a encenderlo"
+  ],
+  "restricciones": [
+    "Ningún tope puede quedar abierto ni en ilimitado",
+    "Si el agente no puede comprobar cuánto lleva gastado, no actúa",
+    "Los avisos van a una persona concreta, no a un buzón general"
+  ],
+  "formato_salida": {
+    "tipo": "ficha de una página",
+    "secciones": ["Tabla de topes", "Avisos y paradas", "Freno de emergencia paso a paso", "Qué revisar al reactivar"],
+    "extra": "cálculo visible de cómo se ha llegado a cada número"
+  },
+  "criterios_calidad": [
+    "Los topes son coherentes con el presupuesto: el tope diario por 30 no lo supera",
+    "Cualquiera del equipo puede parar el agente leyendo solo la ficha"
+  ]
+}

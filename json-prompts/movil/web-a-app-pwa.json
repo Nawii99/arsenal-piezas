@@ -1,0 +1,42 @@
+{
+  "tarea": "Convertir una web existente en una app instalable en el móvil (PWA): generar el manifiesto, los iconos, el service worker y las comprobaciones.",
+  "contexto": {
+    "url_de_la_web": "[https://TU-DOMINIO.COM]",
+    "que_es": "[TIENDA / LANDING / CATÁLOGO / HERRAMIENTA / RESERVAS]",
+    "logo": "[RUTA O DESCRIPCIÓN DEL LOGO]",
+    "color_de_marca": "[#HEX]",
+    "debe_funcionar_sin_internet": "[SÍ / NO / SOLO LA PORTADA]",
+    "como_publico_la_web": "[GITHUB PAGES / NETLIFY / CLOUDFLARE / HOSTING PROPIO]"
+  },
+  "requisitos_previos": [
+    "La web tiene que servirse por HTTPS: sin candado no hay instalación posible.",
+    "Tiene que tener una página de inicio que cargue rápida y sola, sin depender de un login.",
+    "Los ficheros nuevos van en la raíz del sitio, junto al index.html."
+  ],
+  "pasos": [
+    "1. Genera manifest.json con: name, short_name (máximo 12 caracteres para que no se corte bajo el icono), start_url, scope, display en standalone, background_color, theme_color y orientation.",
+    "2. Genera los iconos PNG en 192x192 y 512x512, más una versión maskable con el logo centrado dejando un 20 por ciento de margen por lado.",
+    "3. Añade en el head: el enlace al manifest, la meta theme-color y apple-touch-icon de 180x180 para iPhone.",
+    "4. Escribe un service worker sencillo que guarde en caché la portada, el CSS, la fuente y los iconos, y que sirva una página de sin conexión cuando falle la red.",
+    "5. Registra el service worker desde la página con un script pequeño y protegido por comprobación de soporte.",
+    "6. Añade un botón de instalar que aparezca solo cuando el navegador dispare beforeinstallprompt (Android y escritorio).",
+    "7. Para iPhone, añade un aviso discreto explicando: Compartir y luego Añadir a pantalla de inicio, porque Safari no ofrece botón automático.",
+    "8. Sube los ficheros, abre la web en el móvil e instálala. Repite en un Android y en un iPhone."
+  ],
+  "formato_salida": {
+    "entrega": ["manifest.json completo", "fragmento HTML para el head", "sw.js comentado en español", "script de registro e instalación", "lista de iconos a generar con sus medidas", "pasos de subida según el hosting indicado"],
+    "estilo_codigo": "código completo listo para copiar y pegar, sin fragmentos a medias, con comentarios en español explicando qué hace cada parte"
+  },
+  "criterios_calidad": [
+    "Instalada, la app abre a pantalla completa y NO se ve la barra de direcciones del navegador.",
+    "El icono se ve nítido y centrado en la pantalla de inicio, sin bordes blancos ni recortes del logo.",
+    "En modo avión, abrir la app muestra la portada guardada o la página de sin conexión, nunca el dinosaurio del navegador.",
+    "Al actualizar la web, la app recoge los cambios como mucho al segundo arranque.",
+    "Funciona igual en Chrome de Android y en Safari de iPhone."
+  ],
+  "limitaciones_que_debes_saber": [
+    "En iPhone las notificaciones push solo funcionan si el usuario ha instalado la PWA en su pantalla de inicio.",
+    "Una PWA no aparece en las tiendas: la distribución depende de tu enlace, tu QR y tus mensajes.",
+    "No accede a todo el hardware del móvil como una app nativa."
+  ]
+}

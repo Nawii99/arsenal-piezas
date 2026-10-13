@@ -1,0 +1,32 @@
+{
+  "tarea": "Preparar la conversación con un cliente que ya trabaja con otro proveedor",
+  "contexto": {
+    "oferta": "[QUÉ VENDES]",
+    "proveedor_actual": "[QUIÉN LE SIRVE AHORA, SI LO SABES]",
+    "diferencias_reales": "[EN QUÉ ERES MEJOR DE VERDAD, SIN HUMO]",
+    "fallos_tipicos_del_sector": "[QUEJAS QUE SUELES OÍR SOBRE OTROS PROVEEDORES]"
+  },
+  "instrucciones": [
+    "Nunca hablar mal del proveedor actual: escribe la frase que reconoce que es buena señal que ya tenga a alguien",
+    "Cuatro preguntas para averiguar si está contento de verdad o solo acomodado: qué le resuelven bien, qué le gustaría que fuera distinto, cuándo se revisa el contrato, quién decide un cambio",
+    "Propón una entrada pequeña y sin riesgo: un trabajo puntual, un pico de trabajo, una segunda opinión o un presupuesto de contraste",
+    "Escribe cómo pedir quedarte como segunda opción y cada cuánto volver a contactar",
+    "Añade el mensaje de seguimiento a 3 meses y a 6 meses, con excusa concreta cada uno"
+  ],
+  "restricciones": [
+    "Prohibido comparar precios a la baja como argumento principal",
+    "No pedir el cambio completo en el primer contacto",
+    "Nada de afirmaciones sobre el competidor que no puedas demostrar"
+  ],
+  "formato_salida": {
+    "1_respuesta_inmediata": "3 frases para el momento en que te dice que ya tiene proveedor",
+    "2_preguntas": "Las 4 preguntas, escritas literalmente y en orden",
+    "3_oferta_puerta": "La propuesta de entrada pequeña, con precio o formato sugerido",
+    "4_calendario": "Tabla: cuándo volver a contactar, por qué canal y con qué excusa concreta"
+  },
+  "criterios_calidad": [
+    "El cliente no se siente atacado en su decisión anterior",
+    "La propuesta de entrada es tan pequeña que decir que sí no da miedo",
+    "El calendario de contactos es realista y no invade"
+  ]
+}

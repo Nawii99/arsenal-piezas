@@ -1,0 +1,55 @@
+{
+  "tarea": "Construir el calendario de vencimientos del negocio digital y dejar montados los avisos anticipados",
+  "contexto": {
+    "activos": "[DOMINIOS, HOSTINGS, CERTIFICADOS, LICENCIAS, SUSCRIPCIONES, CONTRATOS, SEGUROS]",
+    "canal_de_aviso": "[CALENDARIO DE GOOGLE / RECORDATORIOS DEL MÓVIL / CORREO / TAREAS COMPARTIDAS]",
+    "responsables": "[QUIÉN SE ENCARGA DE RENOVAR Y QUIÉN SUSTITUYE SI NO ESTÁ]"
+  },
+  "entradas": {
+    "listado_inicial": "[LO QUE YA SÉ QUE TENGO CONTRATADO Y DÓNDE]",
+    "correos_de_facturacion": "[BANDEJA DONDE LLEGAN LAS FACTURAS Y AVISOS DE RENOVACIÓN]",
+    "tarjetas": "[TARJETAS USADAS Y SUS FECHAS DE CADUCIDAD]"
+  },
+  "procedimiento": [
+    "1. Barrido de descubrimiento: busca en el correo por palabras como renovación, factura, suscripción, expira, caducidad; revisa también el extracto bancario de 12 meses",
+    "2. Añade lo que no manda correo: certificados, tokens con caducidad, verificaciones de dominio, códigos de respaldo, contratos con cliente, seguros y altas fiscales",
+    "3. Por cada elemento anota: qué es, proveedor, fecha exacta de vencimiento, coste, si tiene renovación automática, con qué tarjeta se paga y qué se rompe si caduca",
+    "4. Clasifica el impacto: apaga la web, apaga el correo, apaga los cobros, solo molesta",
+    "5. Decide para cada uno renovación automática sí o no: automática en lo crítico, manual en lo que quieras poder cancelar",
+    "6. Crea tres avisos por elemento crítico: 60 días, 14 días y 2 días antes, con el enlace directo al panel de renovación en la descripción",
+    "7. Concentra las fechas cuando se pueda: alinear renovaciones en un mismo mes reduce sustos",
+    "8. Añade un aviso extra por la caducidad de cada tarjeta, dos meses antes, con la lista de servicios a actualizar",
+    "9. Deja una revisión trimestral de 15 minutos para descubrir altas nuevas"
+  ],
+  "que_mirar": [
+    "Dominios con privacidad activada: si el correo de contacto es falso, los avisos de renovación no llegan",
+    "Periodo de gracia y de redención de un dominio caducado, y el coste de recuperarlo",
+    "Certificados automáticos que dejan de renovarse solos si cambia la configuración",
+    "Renovaciones anuales cargadas en una tarjeta que ya no existe",
+    "Servicios contratados por un antiguo colaborador con su correo"
+  ],
+  "errores_tipicos": [
+    "Fiarse solo del aviso del proveedor, que suele llegar a spam",
+    "Poner un único recordatorio el mismo día del vencimiento",
+    "Renovar el dominio y olvidar el certificado o la verificación del correo",
+    "No apuntar quién paga, y que nadie renueve pensando que lo hace el otro"
+  ],
+  "restricciones": [
+    "Nada de fechas inventadas: si no se conoce, marcar como pendiente de comprobar y decir dónde mirarlo",
+    "Cada aviso lleva el enlace del panel y el usuario con el que se entra",
+    "Formato listo para importar o copiar al calendario elegido"
+  ],
+  "formato_salida": {
+    "1_tabla_maestra": "elemento | proveedor | vence el | coste | automática | tarjeta | impacto si caduca | responsable",
+    "2_pendientes": "lo que hay que comprobar y dónde se comprueba",
+    "3_avisos": "lista de eventos a crear con título, fecha, hora y descripción ya redactada",
+    "4_mapa_del_año": "resumen mes a mes del gasto de renovaciones",
+    "5_rutina": "guion de la revisión trimestral en 6 puntos"
+  },
+  "criterios_calidad": [
+    "No queda ningún elemento crítico sin fecha ni sin responsable",
+    "Cada aviso incluye la acción concreta, no solo el nombre del servicio",
+    "Se ve de un vistazo cuánto se paga en renovaciones al año",
+    "El sistema funciona aunque el correo del proveedor acabe en spam"
+  ]
+}

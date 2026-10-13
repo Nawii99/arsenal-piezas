@@ -1,0 +1,40 @@
+{
+  "tarea": "Convertir un proceso conocido en una lista de verificación breve centrada en los puntos donde se falla.",
+  "contexto": {
+    "proceso": "[NOMBRE DE LA TAREA, EJ: ENVIAR UN PEDIDO O CERRAR EL MES]",
+    "quien_la_hace": "[PUESTO O PERSONA]",
+    "frecuencia": "[CADA CUÁNTO SE REPITE]",
+    "coste_del_error": "[QUÉ PASA CUANDO SALE MAL]"
+  },
+  "entradas": {
+    "pasos_actuales": "[DESCRIBE CÓMO SE HACE HOY]",
+    "fallos_reales": "[ERRORES QUE YA HAN OCURRIDO Y QUÉ PROVOCARON]"
+  },
+  "instrucciones": [
+    "No repitas el procedimiento entero: incluye solo lo que se puede olvidar o confundir.",
+    "Redacta cada punto como algo comprobable con un sí o un no, empezando por el verbo.",
+    "Coloca los puntos en el orden real de ejecución.",
+    "Separa la lista en tres bloques: antes de empezar, durante y antes de dar por cerrado.",
+    "Marca con PARADA los puntos que, si fallan, obligan a detenerse y avisar a alguien.",
+    "Deriva al menos un punto de cada fallo real aportado."
+  ],
+  "restricciones": [
+    "Máximo 15 puntos en total.",
+    "Nada de puntos vagos tipo 'revisar que esté todo bien'.",
+    "Cada punto en una sola línea, apto para imprimir en media hoja."
+  ],
+  "formato_salida": {
+    "tipo": "lista de verificación con casillas",
+    "bloques": ["Antes de empezar", "Durante", "Antes de cerrar"],
+    "extras": [
+      "Tabla de fallo real y punto de control que lo evita",
+      "Qué hacer ante un punto marcado como PARADA",
+      "Hueco para firma o iniciales y fecha"
+    ]
+  },
+  "criterios_calidad": [
+    "Se puede completar mientras se trabaja, sin parar la tarea.",
+    "Todo punto se responde con sí o no, sin interpretar."
+  ],
+  "tono": "Escueto y directo"
+}

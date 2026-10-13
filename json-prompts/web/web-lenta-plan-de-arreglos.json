@@ -1,0 +1,51 @@
+{
+  "tarea": "Diagnosticar por qué [URL DE LA WEB] carga lenta y devolver un plan de arreglos ordenado por impacto y por dificultad para alguien que no programa.",
+  "contexto": {
+    "tipo_de_web": "[WORDPRESS / SHOPIFY / HTML ESTÁTICO / WIX / OTRO]",
+    "donde_esta_alojada": "[HOSTING O PLATAFORMA]",
+    "quien_puede_tocarla": "[SOLO YO / UN FREELANCE / NADIE]"
+  },
+  "entradas": {
+    "medicion_movil": "[PEGA AQUÍ LOS RESULTADOS DE PAGESPEED INSIGHTS EN MÓVIL]",
+    "medicion_escritorio": "[PEGA AQUÍ LOS RESULTADOS EN ESCRITORIO]",
+    "paginas_clave": "[HOME, FICHA DE PRODUCTO, PÁGINA DE CONTACTO...]",
+    "plugins_o_apps": "[LISTA DE PLUGINS O APPS INSTALADAS SI LAS CONOCES]",
+    "presupuesto": "[0 € / HASTA X € AL MES]"
+  },
+  "pasos": [
+    "1. Separar lo que mide el usuario real (campo) de lo que mide el laboratorio; mandan LCP, INP y CLS en móvil.",
+    "2. Identificar el elemento que provoca el LCP: casi siempre la imagen grande de arriba o una fuente que tarda.",
+    "3. Revisar el peso total de la página y cuántas peticiones hace; marcar todo lo que pese más de 200 KB.",
+    "4. Detectar scripts de terceros: chats, píxeles, mapas, carruseles, banners de cookies mal montados.",
+    "5. Comprobar imágenes: formato, tamaño real frente a tamaño mostrado, si tienen width y height y si cargan en diferido las de abajo.",
+    "6. Comprobar fuentes: cuántas familias y pesos, si se cargan desde otro dominio y si hay font-display swap.",
+    "7. Comprobar la respuesta del servidor y si hay caché o CDN delante.",
+    "8. Ordenar los arreglos en tres cajones: hoy sin riesgo, esta semana con copia de seguridad, y para encargar a alguien."
+  ],
+  "restricciones": [
+    "Nada de recomendaciones genéricas tipo 'optimiza el código': cada arreglo dice qué se toca y dónde.",
+    "No proponer cambiar de plataforma salvo que sea la única salida, y en ese caso decir el coste real de hacerlo.",
+    "Avisar siempre de qué arreglo puede romper algo visible y cómo volver atrás.",
+    "Priorizar lo gratuito antes que cualquier plugin de pago."
+  ],
+  "formato_salida": {
+    "resumen": "Tres líneas: qué va mal, qué lo causa y cuánto se puede ganar aproximadamente.",
+    "tabla_arreglos": "Tabla con columnas: arreglo | qué mejora (LCP/INP/CLS/peso) | dificultad (baja/media/alta) | riesgo | pasos concretos.",
+    "plan_hoy": "Los 3 arreglos que se hacen hoy, explicados clic a clic.",
+    "como_comprobar": "Cómo volver a medir después y qué números deberían moverse.",
+    "para_encargar": "Texto listo para copiar y pegar a un técnico con lo que queda pendiente."
+  },
+  "criterios_calidad": [
+    "Cada arreglo se puede empezar sin preguntar nada más.",
+    "Se distingue lo que afecta a la nota de laboratorio de lo que afecta al cliente real.",
+    "Ningún arreglo pide tocar código sin decir dónde está el archivo o la opción.",
+    "Se dice explícitamente qué no merece la pena tocar."
+  ],
+  "errores_frecuentes": [
+    "Perseguir el 100 en PageSpeed en vez de arreglar el LCP en móvil.",
+    "Instalar tres plugins de caché a la vez y romper la web.",
+    "Subir fotos de 3000px para mostrarlas a 600px.",
+    "Cargar el chat y el píxel antes de que se vea el contenido.",
+    "Medir en el propio ordenador con la caché caliente y creer que va rápido para todos."
+  ]
+}

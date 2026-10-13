@@ -1,0 +1,38 @@
+{
+  "tarea": "Escribir las instrucciones de edición generativa para quitar, sustituir o ampliar elementos de una foto, con variantes y repaso posterior",
+  "contexto": {
+    "herramienta": "[PHOTOSHOP RELLENO GENERATIVO / GEMINI / KREA / CANVA / OTRA]",
+    "descripcion_de_la_foto": "[QUÉ SE VE: SUJETO, FONDO, HORA DEL DÍA, TIPO DE LUZ Y DESDE DÓNDE VIENE]",
+    "uso_final": "[WEB / REDES / CATÁLOGO / IMPRESIÓN GRANDE]"
+  },
+  "entradas": {
+    "que_quitar": "[ELEMENTOS A ELIMINAR: PERSONA AL FONDO, CABLE, PAPELERA, CARTEL, REFLEJO]",
+    "que_anadir_o_ampliar": "[QUÉ QUIERES QUE APAREZCA O HACIA DÓNDE AMPLIAR EL ENCUADRE]",
+    "intocable": "[LO QUE NO SE PUEDE MODIFICAR: LA CARA, EL PRODUCTO, EL LOGO, EL TEXTO]"
+  },
+  "reglas_de_la_instruccion": [
+    "Describir lo que debe HABER en la zona, no lo que hay que borrar",
+    "Nombrar material, textura y continuidad con lo que rodea la zona",
+    "Indicar dirección, dureza y color de la luz para que la sombra encaje",
+    "Seleccionar un poco más allá del objeto, incluyendo su sombra y su reflejo",
+    "Trabajar por zonas pequeñas y en varias pasadas en vez de una selección enorme"
+  ],
+  "salida_pedida": {
+    "instruccion_principal": "Una instrucción lista para copiar y pegar",
+    "variantes": "3 alternativas con matices distintos para tirar varias generaciones y elegir",
+    "instruccion_negativa": "Qué pedir que NO aparezca, si la herramienta lo admite",
+    "repaso_manual": "Lista de lo que hay que arreglar a mano después: bordes, ruido, grano, tono y perspectiva"
+  },
+  "errores_a_evitar": [
+    "Zonas generadas más limpias y sin grano que el resto de la foto",
+    "Sombras que van en dirección distinta a las reales",
+    "Líneas rectas del fondo (rodapiés, baldosas, marcos) que se rompen al cruzar la zona",
+    "Manos, ojos y textos generados: revisarlos siempre al 100%",
+    "Ampliar el encuadre y quedarse con menos resolución de la necesaria"
+  ],
+  "aviso": "Si la foto es periodística, documental o va en una ficha de producto, no inventes elementos que cambien lo que realmente había",
+  "criterios_calidad": [
+    "Al 100% de zoom no se distingue la zona editada del resto",
+    "El grano y el enfoque son homogéneos en toda la imagen"
+  ]
+}

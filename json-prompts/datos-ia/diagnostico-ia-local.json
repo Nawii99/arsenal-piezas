@@ -1,0 +1,48 @@
+{
+  "tarea": "Diagnostico de viabilidad de IA en local para un cliente pequeno",
+  "idioma_salida": "espanol de Espana",
+  "contexto": {
+    "cliente": "[NOMBRE O SECTOR DEL CLIENTE]",
+    "motivo": "[POR QUE QUIERE IA EN LOCAL: PRIVACIDAD, COSTE POR USO, TRABAJAR SIN INTERNET]",
+    "trata_datos_personales": "[SI O NO]",
+    "presupuesto_maximo_hardware_eur": "[CIFRA O 0 SI NO QUIERE COMPRAR NADA]",
+    "equipos": [
+      {
+        "nombre": "[EQUIPO 1]",
+        "uso_actual": "[A QUE SE DEDICA ESE ORDENADOR]",
+        "sistema": "[WINDOWS 11 / MACOS / LINUX]",
+        "procesador": "[MODELO DE PROCESADOR]",
+        "ram_gb": "[RAM EN GB]",
+        "grafica": "[MODELO DE GRAFICA O NINGUNA]",
+        "vram_gb": "[VRAM EN GB, 0 SI NO TIENE GRAFICA DEDICADA]",
+        "disco_libre_gb": "[GB LIBRES]"
+      }
+    ],
+    "tareas_deseadas": [
+      "[TAREA 1, POR EJEMPLO RESUMIR ACTAS]",
+      "[TAREA 2, POR EJEMPLO RESPONDER SOBRE MANUALES INTERNOS]"
+    ]
+  },
+  "instrucciones": {
+    "criterio_de_ajuste": "Calcula la memoria necesaria como tamano del modelo cuantizado mas un 20 por ciento de margen para el contexto. Si hay grafica dedicada, compara contra la VRAM; si no, contra la RAM, y avisa de que ira lento.",
+    "herramientas_a_considerar": ["Ollama", "LM Studio", "llama.cpp"],
+    "regla_de_cuantizacion": "Recomienda Q4_K_M como punto de partida y explica en una frase que se pierde algo de calidad a cambio de que quepa.",
+    "prohibido": [
+      "Prometer resultados iguales a los de un modelo grande de pago",
+      "Recomendar comprar hardware sin decir el precio aproximado y para que tarea concreta hace falta",
+      "Dar por valida una tarea con datos personales sin advertencia"
+    ],
+    "si_faltan_datos": "Lista que dato falta y no rellenes con suposiciones."
+  },
+  "salida": {
+    "formato": "markdown",
+    "secciones": [
+      {"titulo": "Resumen en tres lineas", "contenido": "Que se puede hacer hoy, que no, y que costaria poder hacerlo"},
+      {"titulo": "Equipo por equipo", "contenido": "Tabla con equipo, modelos que le caben, herramienta recomendada y velocidad esperada en palabras por segundo aproximadas"},
+      {"titulo": "Tarea por tarea", "contenido": "Para cada tarea deseada: viable en local si o no, con que modelo y con que limitaciones"},
+      {"titulo": "Lo que no va a funcionar", "contenido": "Lista honesta de lo que el cliente espera y no va a conseguir con este hardware"},
+      {"titulo": "Aviso de datos", "contenido": "Si trata_datos_personales es SI: decir que el modelo local no exime de cumplir la proteccion de datos, que hay que documentar que se trata y para que, y que ninguna decision sobre una persona se toma sin revision humana"},
+      {"titulo": "Siguiente paso", "contenido": "Una sola accion concreta y su coste aproximado"}
+    ]
+  }
+}

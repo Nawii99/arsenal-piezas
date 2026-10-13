@@ -1,0 +1,34 @@
+{
+  "tarea": "Definir la política de versiones y el plan de retirada para el cambio [DESCRIBE EL CAMBIO QUE QUIERES HACER] en la API de [TU PRODUCTO]",
+  "contexto": {
+    "quien_la_usa": "[CUÁNTOS CLIENTES O APPS Y SI PUEDES CONTACTARLOS]",
+    "canal_de_aviso": "[EMAIL, PANEL, DOCUMENTACIÓN, GESTOR DE CUENTA]",
+    "margen": "[CUÁNTO TIEMPO PUEDES MANTENER LA VERSIÓN ANTIGUA]"
+  },
+  "analiza": [
+    "Si el cambio rompe o no rompe a quien ya la usa, campo por campo",
+    "Si se puede hacer compatible añadiendo en lugar de modificando",
+    "Si hace falta versión nueva o basta con un campo opcional"
+  ],
+  "reglas_de_ruptura": [
+    "Rompe: quitar un campo, renombrarlo, cambiar su tipo, hacer obligatorio lo que era opcional, cambiar un código de error",
+    "No rompe: añadir un campo opcional, añadir un endpoint, añadir un valor nuevo si el cliente ya ignora los desconocidos"
+  ],
+  "formato_salida": {
+    "veredicto": "Rompe o no rompe, con la lista de cambios clasificados",
+    "estrategia": "Cómo se versiona (en la ruta, en cabecera) y por qué",
+    "calendario": "Fechas de anuncio, convivencia de versiones, avisos y apagado definitivo",
+    "aviso_de_deprecacion": "Cabecera de respuesta que avisa y su formato",
+    "guia_de_migracion": "Antes y después con ejemplos JSON, paso a paso, para el que integra",
+    "email_a_clientes": "Borrador de correo de aviso, claro y sin alarmismo"
+  },
+  "restricciones": [
+    "Nunca cambiar el significado de un campo existente manteniendo su nombre",
+    "Nada de apagar una versión sin al menos dos avisos previos",
+    "La guía de migración se publica el mismo día del anuncio, no después"
+  ],
+  "criterios_calidad": [
+    "Un cliente puede migrar leyendo solo la guía",
+    "Queda claro qué pasa exactamente el día del apagado"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "tarea": "Redactar la respuesta pública a una reseña negativa y el plan interno para cerrar el caso",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "sector": "[SECTOR: hostelería, clínica, taller, tienda, hotel...]",
+    "plataforma": "[GOOGLE MAPS / TRIPADVISOR / TRUSTPILOT / AMAZON]",
+    "quien_firma": "[NOMBRE Y CARGO DE QUIEN RESPONDE]",
+    "politica_de_compensacion": "[QUÉ PUEDES OFRECER: repetir servicio, devolución, descuento, nada]"
+  },
+  "entradas": {
+    "texto_resena": "[PEGA AQUÍ LA RESEÑA COMPLETA]",
+    "estrellas": "[1 A 5]",
+    "version_del_negocio": "[QUÉ PASÓ REALMENTE SEGÚN TU EQUIPO]",
+    "es_cliente_verificado": "[SÍ / NO / NO LO SABEMOS]"
+  },
+  "proceso": [
+    "Clasifica la queja: producto, trato, espera, precio, limpieza, error de expectativa o incidencia puntual",
+    "Separa los hechos comprobables de las opiniones y de lo que no consta en ningún registro",
+    "Fija el objetivo: no convencer a quien se queja, sino tranquilizar a los cientos que van a leerla",
+    "Escribe en 4 movimientos: nombrar el problema concreto, disculpa sin excusas, qué se ha comprobado o cambiado, salida a canal privado con contacto real",
+    "Repasa que no haya datos personales, nombre completo del cliente, importes ni detalles médicos o de pedido"
+  ],
+  "restricciones": [
+    "Entre 50 y 110 palabras: las respuestas largas suenan defensivas",
+    "Nunca contradecir al cliente en público ni insinuar que miente",
+    "Prohibido reutilizar la misma respuesta en varias reseñas",
+    "No prometer nada fuera de la política de compensación indicada",
+    "Sin emojis ni signos de exclamación en reseñas de 1 y 2 estrellas",
+    "Español de España, trato de [TÚ / USTED], tono [CERCANO / SOBRIO / PROFESIONAL]"
+  ],
+  "formato_salida": {
+    "bloque_1": "Diagnóstico en 2 líneas: tipo de queja y riesgo reputacional (bajo, medio, alto)",
+    "bloque_2": "Respuesta pública lista para copiar",
+    "bloque_3": "Variante alternativa más breve",
+    "bloque_4": "Mensaje privado para WhatsApp o email al cliente",
+    "bloque_5": "Acción interna: qué revisar, quién lo hace y fecha límite"
+  },
+  "criterios_calidad": [
+    "Quien la lea sin conocerte debe pensar que ahí se soluciona lo que falla",
+    "Cita el detalle concreto de la reseña, no una fórmula intercambiable",
+    "No repite las palabras más dañinas del cliente",
+    "Deja una vía de contacto clara y una persona responsable"
+  ]
+}

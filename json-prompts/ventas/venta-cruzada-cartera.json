@@ -1,0 +1,48 @@
+{
+  "tarea": "Revisar la cartera de clientes actuales y generar, para cada uno, la oportunidad de venta adicional más probable con su mensaje concreto",
+  "rol": "Responsable comercial que conoce la cartera y busca lo que el cliente ya necesita y todavía no te ha comprado",
+  "contexto": {
+    "catalogo": "[LISTA DE TODO LO QUE VENDES CON PRECIOS]",
+    "combinaciones_naturales": "[QUÉ SUELE IR DESPUÉS DE QUÉ EN TU OFICIO]",
+    "capacidad": "[CUÁNTO TRABAJO EXTRA PUEDES ASUMIR ESTE MES]"
+  },
+  "entradas": {
+    "clientes": "[PARA CADA UNO: NOMBRE, QUÉ TE HA COMPRADO, CUÁNDO, IMPORTE, SATISFACCIÓN Y ALGO QUE SEPAS DE SU NEGOCIO]",
+    "periodo": "[MES O TRIMESTRE EN EL QUE QUIERES CERRARLO]"
+  },
+  "pasos": [
+    "Para cada cliente, deduce en qué momento está: acaba de comprar, en pleno trabajo, terminado y contento, terminado y frío",
+    "Cruza lo que ya te ha comprado con el catálogo y descarta lo que no tenga sentido para su situación",
+    "Elige una sola oportunidad por cliente, la más lógica como continuación natural del trabajo anterior",
+    "Estima probabilidad alta, media o baja según satisfacción, tiempo transcurrido y encaje",
+    "Descarta a quien esté descontento o tenga facturas pendientes: ahí no se vende, se arregla",
+    "Escribe el mensaje personalizado que menciona algo concreto del trabajo que ya hicisteis y propone lo siguiente",
+    "Ordena a los clientes por probabilidad e importe y marca a cuántos escribir cada semana para no colapsarte",
+    "Señala el mejor momento para escribir a cada uno (al entregar, a los 15 días, al mes)"
+  ],
+  "restricciones": [
+    "Una oportunidad por cliente: nada de listas de todo lo que podrías venderle",
+    "Prohibido proponer algo que no encaje con lo que sabes de ese cliente",
+    "Los mensajes son individuales, nunca circular masiva",
+    "Máximo 70 palabras por mensaje, español de España, tuteando"
+  ],
+  "formato_salida": {
+    "mapa": [
+      {"cliente": "...", "momento": "...", "ya_compro": "...", "oportunidad": "...", "importe_estimado": 0, "probabilidad": "alta | media | baja", "mejor_momento": "...", "mensaje": "..."}
+    ],
+    "descartados": [{"cliente": "...", "motivo": "...", "que_hacer_antes": "..."}],
+    "plan_semanal": [{"semana": 1, "clientes_a_contactar": ["..."], "importe_en_juego": 0}],
+    "resumen": {"oportunidades": 0, "importe_total_en_juego": 0, "importe_realista": "aplicando solo las de probabilidad alta"}
+  },
+  "criterios_calidad": [
+    "Cada mensaje menciona un detalle real del trabajo anterior de ese cliente",
+    "Ninguna oportunidad supera tu capacidad libre declarada",
+    "Las probabilidades están justificadas con un dato de las entradas",
+    "Si un cliente no tiene oportunidad clara, aparece en descartados y no se fuerza"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Ofrecer a todos lo mismo el mismo día",
+    "Intentar vender a un cliente con una queja abierta",
+    "Prometer trabajo para fechas que no tienes libres"
+  ]
+}

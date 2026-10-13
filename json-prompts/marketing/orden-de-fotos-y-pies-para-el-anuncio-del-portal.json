@@ -1,0 +1,37 @@
+{
+  "tarea": "Ordenar el conjunto de fotos de un inmueble para su publicación, elegir la portada y redactar pie y texto alternativo de cada imagen",
+  "contexto": "En un portal inmobiliario la portada decide el clic y las cinco primeras fotos deciden si el visitante sigue mirando o se va",
+  "entradas": {
+    "listado_de_fotos": "[LISTA CON EL NOMBRE O DESCRIPCIÓN DE CADA FOTO]",
+    "tipo_inmueble": "[PISO / CHALET / LOCAL]",
+    "zona": "[BARRIO Y CIUDAD]",
+    "precio": "[PRECIO DE VENTA O ALQUILER]",
+    "puntos_fuertes": "[EJ: TERRAZA DE 20 M2, REFORMADO, ASCENSOR, VISTAS]",
+    "portal": "[IDEALISTA / FOTOCASA / WEB PROPIA / HABITACLIA]",
+    "maximo_de_fotos": "[NÚMERO PERMITIDO POR EL PORTAL]"
+  },
+  "procedimiento": [
+    "Elige como portada la foto más luminosa y amplia del espacio más vendedor, normalmente salón o terraza, nunca un baño ni un pasillo",
+    "Coloca en las posiciones 2 a 5 los puntos fuertes indicados, alternando plano general y detalle",
+    "Sigue con el recorrido lógico de la vivienda como si entrara un visitante: entrada, salón, cocina, dormitorios, baños, exteriores, zonas comunes",
+    "Deja al final planos, certificado energético, garaje y trastero",
+    "Descarta fotos repetidas, oscuras o que aporten poco: mejor 15 buenas que 30 regulares",
+    "Escribe para cada foto un pie de 8 a 14 palabras que aporte un dato nuevo, no que describa lo evidente",
+    "Escribe el texto alternativo con estancia, característica y zona para posicionamiento en buscadores"
+  ],
+  "restricciones": [
+    "No exagerar ni describir lo que no se ve en la imagen",
+    "No usar mayúsculas sostenidas ni signos de exclamación en los pies",
+    "Respetar el máximo de fotos del portal indicado"
+  ],
+  "formato_salida": {
+    "tipo": "tabla numerada",
+    "columnas": ["Posición", "Foto", "Por qué va aquí", "Pie de foto", "Texto alternativo"],
+    "extras": ["Justificación en 3 líneas de la portada elegida", "Lista de fotos descartadas y motivo", "Dos alternativas de portada para probar"]
+  },
+  "criterios_calidad": [
+    "La secuencia se entiende sin leer nada",
+    "Los puntos fuertes aparecen antes de la sexta foto",
+    "Ningún pie repite información de otro"
+  ]
+}

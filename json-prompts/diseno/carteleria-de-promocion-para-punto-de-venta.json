@@ -1,0 +1,35 @@
+{
+  "tarea": "Crear el juego completo de carteles de una promoción dentro de un local",
+  "promocion": {
+    "tipo": "[REBAJAS, 2X1, DESCUENTO, LIQUIDACIÓN, NOVEDAD]",
+    "condiciones": "[QUÉ INCLUYE Y QUÉ QUEDA FUERA]",
+    "fechas": "[DESDE Y HASTA]",
+    "productos": "[QUÉ ENTRA EN LA PROMOCIÓN]",
+    "local": "[TIPO DE TIENDA O LOCAL Y TAMAÑO APROXIMADO]",
+    "puntos": "[ESCAPARATE, PUERTA, ESTANTES, MOSTRADOR, PROBADORES, CAJA]"
+  },
+  "piezas_a_generar": [
+    "Cartel principal de escaparate: solo el gancho y el plazo",
+    "Cartel de puerta o entrada: la condición en una línea",
+    "Carteles de estante o percha: precio antes y precio ahora",
+    "Cartel de mostrador o caja: producto añadido o venta cruzada",
+    "Cartel de fin de promoción para los últimos días"
+  ],
+  "reglas_de_mensaje": [
+    "Un mensaje por pieza, nunca dos ofertas en el mismo cartel",
+    "El descuento siempre con su condición al lado, en pequeño pero visible",
+    "El plazo escrito con fecha real, no solo por tiempo limitado",
+    "Sin porcentajes inventados ni tachados falsos"
+  ],
+  "formato_salida": {
+    "tabla_piezas": "Columnas: pieza, tamaño recomendado, texto grande, texto pequeño y dónde se coloca",
+    "jerarquia": "Qué elemento manda en cada pieza y su tamaño relativo",
+    "paleta_promo": "Dos colores de promoción compatibles con tu marca, con HEX",
+    "plan_de_montaje": "Orden de colocación y qué retirar al terminar la promoción"
+  },
+  "criterios_calidad": [
+    "Desde cualquier punto del local se ve al menos un cartel de la promoción",
+    "Las condiciones aparecen siempre, nunca solo en la letra pequeña del ticket",
+    "Todas las piezas comparten color, tipografía y palabra clave"
+  ]
+}

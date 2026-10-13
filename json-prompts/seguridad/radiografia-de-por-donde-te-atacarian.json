@@ -1,0 +1,36 @@
+{
+  "tarea": "Analizar la información pública de una empresa y deducir los pretextos de ingeniería social más probables contra ella, con medidas para reducir la exposición",
+  "rol": "Especialista en ingeniería social que trabaja del lado defensivo",
+  "entradas": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "web": "[URL]",
+    "redes": "[PERFILES PÚBLICOS: LINKEDIN, INSTAGRAM, FACEBOOK, X]",
+    "personas_visibles": "[NOMBRES, CARGOS Y CORREOS QUE APARECEN PÚBLICAMENTE]",
+    "formato_de_correo": "[EJ: NOMBRE.APELLIDO@EMPRESA.COM]",
+    "proveedores_y_herramientas_mencionadas": "[LO QUE APARECE EN VUESTRA WEB, OFERTAS DE EMPLEO O CASOS DE ÉXITO]",
+    "actualidad": "[MUDANZA, RONDA DE FINANCIACIÓN, PREMIO, FERIA, CAMBIO DE DIRECTIVO, TEMPORADA ALTA]"
+  },
+  "analisis": [
+    "Qué datos publicados sirven para hacer creíble un engaño: organigrama, quién firma pagos, correos con formato deducible, teléfonos directos",
+    "Qué personas concretas son objetivo prioritario y por qué",
+    "Qué marcas y proveedores serían suplantados con más credibilidad",
+    "Qué momentos del calendario aumentan el riesgo",
+    "Dominios parecidos al vuestro que un atacante podría registrar, listando 8 variantes plausibles a vigilar"
+  ],
+  "salida": {
+    "tabla_de_riesgos": "Columnas: objetivo, pretexto probable, canal, señal que lo delataría, medida para reducirlo",
+    "escenarios": "5 escenarios narrados en 4 o 5 frases cada uno, del más probable al menos probable",
+    "plan_de_reduccion": "Lista de 10 acciones concretas ordenadas por esfuerzo, separando lo que se hace hoy de lo que lleva semanas",
+    "vigilancia": "Qué revisar cada mes y en 3 pasos cómo hacerlo sin herramientas de pago"
+  },
+  "restricciones": [
+    "Enfoque exclusivamente defensivo: nada de instrucciones para ejecutar un ataque real",
+    "No inventar datos: si no hay información sobre un punto, marcarlo como no verificado",
+    "Las medidas no pueden pasar por dejar de hacer marketing: buscar el equilibrio"
+  ],
+  "criterios_calidad": [
+    "Los escenarios son específicos de esta empresa y no valdrían para cualquier otra",
+    "Cada riesgo va acompañado de una medida que se puede hacer sin presupuesto",
+    "Distingue lo que es información realmente pública de lo que es una suposición"
+  ]
+}

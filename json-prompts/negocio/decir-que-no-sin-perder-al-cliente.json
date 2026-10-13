@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribir un mensaje que rechaza la petición de un cliente manteniendo la relación",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "canal": "[EMAIL / WHATSAPP / CHAT]",
+    "relacion": "[CLIENTE NUEVO / HABITUAL / DIFÍCIL]"
+  },
+  "entradas": {
+    "que_pide": "[DEVOLUCIÓN FUERA DE PLAZO / DESCUENTO / ENTREGA IMPOSIBLE / EXTRA GRATIS]",
+    "por_que_no_puedo": "[MOTIVO REAL, EN TUS PALABRAS]",
+    "que_si_puedo_ofrecer": "[ALTERNATIVA 1]",
+    "margen_de_negociacion": "[NINGUNO / ALGO / DEPENDE DEL CASO]"
+  },
+  "estructura_obligatoria": [
+    "1. Frase que demuestra que has entendido exactamente lo que pide",
+    "2. El no, claro y en una sola frase, en la primera mitad del mensaje",
+    "3. El motivo en lenguaje humano, sin citar artículos ni políticas",
+    "4. Una alternativa concreta que sí puedas cumplir",
+    "5. Cierre que deja claro que sigue siendo bienvenido"
+  ],
+  "errores_a_evitar": [
+    "Esconder el no al final o entre líneas: se lee como largas",
+    "Usar 'no puedo' cuando en realidad es 'no lo hacemos'",
+    "Pedir perdón cinco veces por algo que no es un error",
+    "Dejar una rendija que invite a insistir si la respuesta es definitiva"
+  ],
+  "formato_salida": {
+    "version_amable": "para cliente habitual o de buena fe",
+    "version_firme": "para quien ya ha insistido dos o más veces",
+    "frase_de_cierre_si_insiste": "una línea para zanjar sin ser borde"
+  },
+  "criterios_calidad": [
+    "El cliente entiende que es un no sin tener que releer",
+    "Máximo 110 palabras",
+    "No hay ninguna promesa nueva escondida en la alternativa"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Generar [NUMERO] preguntas de opcion multiple sobre [TEMA] con distractores razonados y clave de correccion",
+  "contexto": {
+    "nivel_del_alumnado": "[NIVEL]",
+    "uso": "[REPASO, PRUEBA DE NIVEL, EXAMEN OFICIAL, FORMACION INTERNA]",
+    "penalizacion_por_error": "[SI O NO Y CUANTO]",
+    "reparto_de_dificultad": "30% facil, 50% media, 20% dificil"
+  },
+  "entradas": {
+    "material_de_referencia": "[PEGA AQUI EL TEMARIO, APUNTES O TEXTO FUENTE]",
+    "errores_habituales_de_tus_alumnos": "[LISTA LOS QUE CONOZCAS O ESCRIBE NO SE]"
+  },
+  "metodo": [
+    "Cada pregunta se responde solo con el material de referencia dado",
+    "4 opciones: 1 correcta y 3 distractores basados en errores reales de comprension, no absurdos",
+    "Los distractores deben tener longitud y estilo parecidos a la opcion correcta",
+    "Varia la posicion de la respuesta correcta entre A, B, C y D de forma equilibrada",
+    "Para cada distractor explica que confusion revela elegirlo"
+  ],
+  "restricciones": [
+    "Prohibido 'todas las anteriores', 'ninguna de las anteriores' y dobles negaciones",
+    "El enunciado debe entenderse sin leer las opciones",
+    "Sin pistas gramaticales que delaten la respuesta",
+    "Maximo 25 palabras por enunciado y 15 por opcion",
+    "No repitas la misma idea en dos preguntas"
+  ],
+  "formato_salida": {
+    "1_cuestionario": "Preguntas numeradas con opciones A a D, sin marcar la correcta",
+    "2_clave_y_analisis": "Tabla: Numero | Correcta | Dificultad | Contenido evaluado | Que revela cada distractor",
+    "3_retroalimentacion_automatica": "Texto de 1 o 2 frases que ve el alumno al fallar cada pregunta",
+    "4_importable": "Las preguntas en formato CSV con columnas pregunta,opcion_a,opcion_b,opcion_c,opcion_d,correcta"
+  },
+  "criterios_calidad": [
+    "Un alumno que no sepa el tema no puede acertar por descarte logico",
+    "Cada distractor corresponde a un error identificable",
+    "Ninguna pregunta depende de otra"
+  ]
+}

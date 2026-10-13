@@ -1,0 +1,59 @@
+{
+  "tarea": "Convertir mis notas desordenadas sobre una tarea en un procedimiento escrito que otra persona pueda ejecutar sin preguntarme",
+  "contexto": {
+    "tarea_a_delegar": "[QUÉ TAREA, EJ: PREPARAR Y ENVIAR LOS PEDIDOS DEL DÍA]",
+    "quien_lo_va_a_hacer": "[PERFIL: BECARIO, FAMILIAR, FREELANCE, PRIMER DÍA]",
+    "frecuencia": "[DIARIA, SEMANAL, POR PEDIDO]",
+    "herramientas": "[PROGRAMAS Y CUENTAS QUE SE USAN]"
+  },
+  "entradas": {
+    "explicacion_en_bruto": "[CUENTA COMO LO HACES TÚ, AUNQUE SEA DESORDENADO O TRANSCRITO DE UN AUDIO]",
+    "casos_raros_que_recuerdo": "[EJ: CLIENTE QUE PIDE FACTURA, PEDIDO A CANARIAS, PRODUCTO SIN STOCK]",
+    "limites_de_decision": "[QUÉ PUEDE DECIDIR SOLO Y QUÉ TIENE QUE CONSULTARME]"
+  },
+  "pasos": [
+    "Ordena lo que te cuento en una secuencia lineal y numerala.",
+    "Separa cada paso en accion concreta, donde se hace y que se obtiene al terminar.",
+    "Traduce los sobreentendidos: si digo lo de siempre, preguntame que es antes de escribirlo.",
+    "Marca los puntos de decision con la regla exacta: si pasa esto, haz esto; si pasa lo otro, para y avisa.",
+    "Escribe los textos exactos que hay que copiar: mensajes al cliente, asuntos de correo, nombres de archivo.",
+    "Anade el tiempo estimado de cada bloque y el tiempo total.",
+    "Escribe una lista de comprobacion final de cinco a ocho puntos para saber si la tarea esta bien hecha.",
+    "Escribe la seccion de que hacer si sale mal, con los tres fallos mas probables y su solucion.",
+    "Al final, hazme entre 3 y 8 preguntas sobre los huecos que has detectado."
+  ],
+  "que_mirar": [
+    "Pasos que en realidad son dos pasos juntos.",
+    "Accesos y contrasenas necesarios que nadie ha dado a la otra persona.",
+    "Dependencias de otras personas o de horarios: cierre de mensajeria, cita previa, corte de pedidos.",
+    "Criterios de calidad que solo estan en tu cabeza: que se considera bien hecho."
+  ],
+  "errores_tipicos": [
+    "Escribir el procedimiento en tercera persona y en abstracto, en vez de dar ordenes claras.",
+    "Dar por sabido el vocabulario interno del negocio.",
+    "No decir que hacer cuando falta un dato, que es cuando la gente improvisa.",
+    "Hacer un documento de diez paginas que nadie lee."
+  ],
+  "restricciones": [
+    "No inventes pasos que yo no he contado: preguntamelos.",
+    "Nada de teoria ni de introducciones: solo instrucciones ejecutables.",
+    "Una accion por linea, en imperativo y tuteando.",
+    "Nunca escribas contrasenas dentro del documento; indica donde estan guardadas."
+  ],
+  "formato_salida": {
+    "cabecera": "Nombre de la tarea, para quien, cada cuanto, tiempo estimado y version con fecha",
+    "bloque_antes_de_empezar": "Accesos, materiales y datos necesarios",
+    "bloque_pasos": "Lista numerada, cada paso en una linea con su resultado esperado entre parentesis",
+    "bloque_decisiones": "Tabla: situacion | que hacer | quien decide",
+    "bloque_textos_listos": "Mensajes y asuntos exactos para copiar",
+    "bloque_checklist_final": "Casillas de verificacion",
+    "bloque_si_sale_mal": "Tres problemas y su solucion",
+    "bloque_preguntas": "Las dudas que me quedan por resolver contigo"
+  },
+  "criterios_calidad": [
+    "Alguien que no conoce el negocio podria ejecutarlo con el documento delante.",
+    "Todos los pasos empiezan por un verbo.",
+    "No queda ningun lo de siempre ni ningun etcetera.",
+    "Cabe en dos paginas o esta partido en bloques que se leen sueltos."
+  ]
+}

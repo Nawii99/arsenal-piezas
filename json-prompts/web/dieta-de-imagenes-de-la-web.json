@@ -1,0 +1,59 @@
+{
+  "tarea": "Auditar y optimizar todas las imágenes de [URL_WEB] para que cargue rápido en móvil y no salte el contenido",
+  "contexto": {
+    "web": "[URL Y PARA QUÉ SIRVE]",
+    "plataforma": "[HTML PROPIO / WORDPRESS / SHOPIFY / OTRA]",
+    "donde_duele": "[PÁGINA CONCRETA QUE VA LENTA]",
+    "perfil_lector": "Sin conocimientos técnicos, usa herramientas gratuitas y edita el HTML con cuidado"
+  },
+  "entradas": {
+    "listado_de_imagenes": "[NOMBRE, PESO EN KB Y MEDIDAS EN PÍXELES DE CADA IMAGEN, O EL HTML DE LA PÁGINA]",
+    "medicion_actual": "[PEGA EL RESULTADO DE PAGESPEED INSIGHTS EN MÓVIL]",
+    "ancho_maximo_del_diseno": "[PX DEL CONTENEDOR PRINCIPAL, POR EJEMPLO 1200]",
+    "herramientas_disponibles": "[SQUOOSH / GIMP / CANVA / PANEL DEL HOSTING]"
+  },
+  "procedimiento": [
+    "1. Marca cuál es la imagen grande visible al abrir la página: esa nunca lleva carga diferida",
+    "2. Calcula para cada imagen el ancho real que ocupa en pantalla y descarta píxeles sobrantes",
+    "3. Fija el objetivo de peso: foto grande por debajo de 200 KB, foto de apoyo por debajo de 100 KB, icono por debajo de 20 KB",
+    "4. Elige formato: WebP para fotos y capturas, SVG para logos e iconos, PNG solo si hace falta transparencia con bordes duros",
+    "5. Reencuadra y redimensiona antes de comprimir, nunca al revés",
+    "6. Añade width y height o proporción a cada etiqueta de imagen para que no salte el contenido",
+    "7. Aplica loading diferido a todo lo que quede por debajo de la primera pantalla",
+    "8. Reescribe los textos alternativos describiendo la imagen, no repitiendo palabras clave",
+    "9. Vuelve a medir en móvil y compara con la medición inicial"
+  ],
+  "que_mirar": [
+    "Imágenes servidas mucho más grandes de lo que se ven en pantalla",
+    "Capturas de pantalla guardadas en PNG cuando pesarían la décima parte en WebP",
+    "Fondos decorativos enormes que podrían ser un color o un degradado",
+    "Logos en JPG con fondo blanco sucio en vez de SVG",
+    "Imágenes cargadas desde otro dominio lento"
+  ],
+  "errores_tipicos": [
+    "Comprimir tanto que el producto se ve con manchas y baja la confianza",
+    "Poner carga diferida a la imagen principal: la página parece más lenta",
+    "Cambiar el nombre del archivo y dejar enlaces rotos por toda la web",
+    "Subir la imagen del móvil de 4000 px directamente al gestor",
+    "Medir en el ordenador con fibra y dar el trabajo por bueno"
+  ],
+  "restricciones": [
+    "Solo herramientas gratuitas y sin instalar nada complicado",
+    "No cambies el diseño ni los textos, solo el peso y la entrega de imágenes",
+    "Indica siempre las medidas exactas en píxeles a las que hay que exportar"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "3 líneas con el problema principal y cuánto peso sobra en total",
+    "2_tabla_por_imagen": "Archivo | peso actual | medidas actuales | medidas objetivo | formato objetivo | peso objetivo | acción",
+    "3_instrucciones": "Pasos concretos en la herramienta elegida para convertir y exportar",
+    "4_html_corregido": "Bloque de código con las etiquetas de imagen ya con medidas, carga diferida y texto alternativo",
+    "5_orden_de_ataque": "Las 5 acciones que más mejoran, ordenadas por resultado frente a esfuerzo",
+    "6_verificacion": "Cómo repetir la medición y qué números deberían haber mejorado"
+  },
+  "criterios_calidad": [
+    "El peso total de la página baja de forma clara y se indica la cifra antes y después",
+    "Ninguna imagen queda visiblemente pixelada o con artefactos",
+    "Todas las imágenes tienen dimensiones declaradas y texto alternativo con sentido",
+    "La imagen principal carga inmediata y el resto de forma diferida"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Construir la paleta de color completa de una marca con códigos exactos, jerarquía de uso y comprobación de accesibilidad",
+  "entradas": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "sector": "[SECTOR]",
+    "punto_de_partida": "[COLOR EN HEX O SENSACIÓN QUE BUSCAS]",
+    "aplicaciones": "[WEB, REDES, IMPRENTA, RÓTULO, PACKAGING]",
+    "nivel_de_sobriedad": "[SOBRIA, EQUILIBRADA O LLAMATIVA]"
+  },
+  "estructura_paleta": {
+    "principal": "1 color, el que la gente recordará",
+    "secundarios": "2 colores de apoyo",
+    "acento": "1 color solo para botones, ofertas y llamadas a la acción",
+    "neutros": "3 tonos: fondo claro, gris de texto secundario y negro de texto"
+  },
+  "para_cada_color": ["nombre interno", "HEX", "RGB", "CMYK aproximado", "para qué se usa", "para qué NO se usa"],
+  "reglas": {
+    "proporcion": "indicar el reparto tipo 60 por ciento neutro, 30 principal, 10 acento",
+    "contraste": "comprobar cada combinación de texto sobre fondo y dar la ratio y si pasa AA",
+    "combinaciones_prohibidas": "listar las parejas que no deben usarse juntas y por qué"
+  },
+  "formato_salida": {
+    "tipo": "tabla markdown de colores + bloque de reglas + bloque de variables CSS",
+    "variables_css": "un bloque de código con --color-nombre: #HEX para pegar en la web"
+  },
+  "restricciones": [
+    "Máximo 8 colores en total, contando neutros",
+    "Ningún texto principal por debajo de contraste 4.5 a 1",
+    "Avisar si el color principal es problemático en imprenta o en rótulos retroiluminados"
+  ],
+  "criterios_calidad": [
+    "Cualquiera sabe qué color poner en un botón sin preguntar",
+    "La paleta funciona en fondo claro y en fondo oscuro"
+  ]
+}

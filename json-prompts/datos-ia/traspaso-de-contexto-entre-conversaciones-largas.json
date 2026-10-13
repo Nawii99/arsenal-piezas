@@ -1,0 +1,33 @@
+{
+  "tarea": "Convertir una conversación larga con una IA en una ficha de traspaso que permita continuar el trabajo en una conversación nueva sin perder nada importante",
+  "entradas": {
+    "conversacion": "[PEGA AQUÍ LA CONVERSACIÓN O LO MÁS RELEVANTE DE ELLA]",
+    "objetivo": "[QUÉ ESTÁS INTENTANDO CONSEGUIR]",
+    "siguiente_paso": "[LO PRIMERO QUE QUIERES HACER MAÑANA]"
+  },
+  "procedimiento": [
+    "Extrae solo lo que condiciona el trabajo futuro: decisiones tomadas, datos concretos, restricciones y preferencias del usuario.",
+    "Separa lo decidido y cerrado de lo que sigue abierto.",
+    "Recoge literalmente los datos que no se pueden reconstruir: nombres, cifras, URLs, textos aprobados.",
+    "Anota los caminos ya descartados y por qué, para no repetirlos.",
+    "Redacta el primer mensaje de la conversación nueva, listo para pegar."
+  ],
+  "formato_salida": {
+    "1_estado": "tres frases sobre dónde estamos",
+    "2_decisiones": "lista de decisiones firmes",
+    "3_datos_literales": "lista de datos exactos que hay que conservar",
+    "4_descartado": "qué se probó y no vale, con el motivo",
+    "5_pendiente": "tareas abiertas en orden de prioridad",
+    "6_mensaje_de_arranque": "texto listo para pegar en el chat nuevo"
+  },
+  "restricciones": [
+    "No resumas cifras ni textos aprobados: cópialos tal cual",
+    "No añadas conclusiones que no estén en la conversación",
+    "Máximo 700 palabras en total"
+  ],
+  "criterios_calidad": [
+    "Alguien que no vio la conversación podría continuar el trabajo",
+    "No queda ningún dato exacto perdido",
+    "El mensaje de arranque funciona por sí solo"
+  ]
+}

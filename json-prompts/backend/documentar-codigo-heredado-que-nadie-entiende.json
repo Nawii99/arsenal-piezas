@@ -1,0 +1,36 @@
+{
+  "tarea": "Leer código heredado y producir la documentación que permita a otra persona trabajar en él sin miedo",
+  "contexto": {
+    "modulo": "[NOMBRE DEL MÓDULO O ARCHIVO]",
+    "lenguaje": "[LENGUAJE]",
+    "historia": "[LO QUE SEPAS: quién lo hizo, cuándo, si el autor sigue]",
+    "que_negocio_toca": "[FACTURACIÓN, PEDIDOS, USUARIOS, STOCK...]"
+  },
+  "entradas": {
+    "codigo": "[PEGA AQUÍ EL CÓDIGO]",
+    "dudas_concretas": "[QUÉ TE PREOCUPA O NO ENTIENDES]"
+  },
+  "pasos": [
+    "Describe el propósito real del módulo en 5 líneas, sin jerga",
+    "Traza el flujo principal de principio a fin, entrada por entrada",
+    "Extrae las reglas de negocio escondidas en condiciones y casos especiales, y enúncialas en lenguaje llano",
+    "Lista dependencias externas: base de datos, servicios, archivos, variables de entorno",
+    "Marca el código muerto o inalcanzable, y lo que parece un parche antiguo",
+    "Señala las trampas: efectos colaterales, estado compartido, cosas que fallan en silencio",
+    "Escribe las preguntas que habría que hacer a alguien de negocio para confirmar comportamiento"
+  ],
+  "restricciones": [
+    "No propongas cambios de código en este documento: solo describir y avisar",
+    "Marca cada afirmación insegura con la etiqueta A CONFIRMAR",
+    "Nada de repetir el código línea a línea: explica la intención"
+  ],
+  "formato_salida": {
+    "tipo": "documento markdown",
+    "secciones": ["Para qué sirve", "Flujo principal paso a paso", "Reglas de negocio detectadas", "Entradas, salidas y dependencias", "Trampas y zonas peligrosas", "Código sospechoso de estar muerto", "Preguntas a confirmar", "Por dónde empezar si hay que tocarlo"]
+  },
+  "criterios_calidad": [
+    "Una persona nueva puede modificar el módulo con este documento y el código delante",
+    "Las reglas de negocio están en frases que entendería alguien de administración",
+    "Queda claro qué es hecho y qué es suposición"
+  ]
+}

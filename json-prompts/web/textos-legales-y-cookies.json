@@ -1,0 +1,54 @@
+{
+  "tarea": "Redactar los textos legales de la web [URL] y montar un banner de cookies conforme a la normativa española, para un negocio pequeño sin departamento legal.",
+  "contexto": {
+    "tipo_de_web": "[INFORMATIVA / CAPTACIÓN DE CONTACTOS / TIENDA ONLINE]",
+    "que_datos_recoges": "[FORMULARIO, NEWSLETTER, PEDIDOS, RESERVAS]",
+    "herramientas_instaladas": "[GOOGLE ANALYTICS, PÍXEL DE META, CHAT, MAPAS, VÍDEOS EMBEBIDOS]"
+  },
+  "entradas": {
+    "titular": "[NOMBRE O RAZÓN SOCIAL]",
+    "nif": "[NIF / CIF]",
+    "domicilio": "[DIRECCIÓN FISCAL]",
+    "email_contacto": "[EMAIL]",
+    "proveedores": "[HOSTING, EMAIL MARKETING, PASARELA DE PAGO...]"
+  },
+  "pasos": [
+    "1. Inventariar qué datos se recogen, para qué, cuánto tiempo se guardan y quién más los ve.",
+    "2. Clasificar las cookies en técnicas, de medición y de publicidad; las técnicas no piden permiso, el resto sí.",
+    "3. Redactar el aviso legal con identificación, actividad, propiedad intelectual y ley aplicable.",
+    "4. Redactar la política de privacidad con responsable, finalidad, base legal, plazos, destinatarios, derechos y cómo ejercerlos.",
+    "5. Redactar la política de cookies con la tabla de cookies reales instaladas, no una lista de ejemplo.",
+    "6. Montar el banner con tres opciones igual de visibles: aceptar todas, rechazar todas y configurar.",
+    "7. Bloquear la carga de analítica y píxeles hasta que haya consentimiento, y explicar cómo se hace en la plataforma que use.",
+    "8. Dejar un enlace permanente en el pie para cambiar de opinión y retirar el consentimiento."
+  ],
+  "restricciones": [
+    "No es asesoramiento jurídico: se avisa de ello y se recomienda revisión profesional si hay datos sensibles o menores.",
+    "Prohibido inventar registros, sellos, certificaciones o números de inscripción.",
+    "Nada de muros de cookies que impidan ver la web si rechazas.",
+    "Rechazar tiene que costar el mismo número de clics que aceptar.",
+    "Español de España, claro y sin latinajos innecesarios."
+  ],
+  "formato_salida": {
+    "bloque_1": "Inventario de datos y cookies en tabla: herramienta | qué recoge | categoría | pide consentimiento (sí/no).",
+    "bloque_2": "Aviso legal completo listo para pegar.",
+    "bloque_3": "Política de privacidad completa lista para pegar.",
+    "bloque_4": "Política de cookies completa con la tabla real.",
+    "bloque_5": "HTML y JavaScript del banner en un bloque de código, con el bloqueo previo de scripts.",
+    "bloque_6": "Lista de comprobación final de 8 puntos."
+  },
+  "criterios_calidad": [
+    "Los textos nombran las herramientas que de verdad están instaladas.",
+    "Al rechazar, no se carga ninguna cookie de medición ni de publicidad.",
+    "El banner no tapa el contenido en móvil ni impide cerrarlo.",
+    "Existe una forma clara de retirar el consentimiento después.",
+    "Todos los huecos que dependen del negocio quedan [ENTRE CORCHETES] si faltan datos."
+  ],
+  "errores_frecuentes": [
+    "Copiar los textos legales de otra web con sus datos fiscales dentro.",
+    "Poner el banner pero cargar Analytics igualmente desde el primer segundo.",
+    "Botón de aceptar en color llamativo y rechazar en gris casi invisible.",
+    "Listar cookies genéricas que no se corresponden con las instaladas.",
+    "No enlazar la privacidad desde el formulario donde se piden los datos."
+  ]
+}

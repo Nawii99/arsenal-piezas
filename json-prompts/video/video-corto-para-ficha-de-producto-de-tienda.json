@@ -1,0 +1,32 @@
+{
+  "tarea": "Diseñar el vídeo corto de ficha de producto para una tienda online, orientado a resolver dudas de compra",
+  "entradas": {
+    "producto": "[NOMBRE]",
+    "medidas_y_peso": "[DATOS EXACTOS]",
+    "materiales": "[DE QUÉ ESTÁ HECHO]",
+    "que_incluye_la_caja": "[CONTENIDO]",
+    "dudas_frecuentes": "[LO QUE MÁS PREGUNTAN ANTES DE COMPRAR]",
+    "plataforma": "[TU WEB / AMAZON / ETSY / MARKETPLACE]",
+    "duracion": "[20 A 30 SEGUNDOS]"
+  },
+  "reglas_de_ficha": [
+    "Formato vertical o cuadrado, se ve en un móvil pequeño",
+    "Sin audio imprescindible: todo lo importante va en rótulos grandes",
+    "Se muestra la escala con un objeto conocido o una mano",
+    "Cada duda frecuente se convierte en un plano que la responde",
+    "Nada de precios ni promociones dentro del vídeo"
+  ],
+  "formato_salida": {
+    "tabla": ["Segundo", "Plano", "Qué demuestra", "Rótulo en pantalla", "Duda que responde"],
+    "extras": [
+      "Lista de comprobación de normas típicas de marketplace: sin marcas de agua, sin llamadas a webs externas, primer fotograma limpio",
+      "Propuesta de fotograma de portada",
+      "Texto alternativo de la ficha que acompaña al vídeo"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada duda frecuente aparecida en las entradas tiene su plano",
+    "Los rótulos se leen a tamaño móvil, frases de menos de 6 palabras",
+    "El vídeo se entiende con el sonido apagado y en bucle"
+  ]
+}

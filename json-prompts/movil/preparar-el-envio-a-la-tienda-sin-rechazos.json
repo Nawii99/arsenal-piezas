@@ -1,0 +1,54 @@
+{
+  "tarea": "Preparar el expediente completo de envío de una app a revisión, con la lista de comprobación, los textos obligatorios y el repaso de los motivos de rechazo más frecuentes",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "tienda": "[APP STORE / GOOGLE PLAY / AMBAS]",
+    "datos_que_recoge": "[CORREO, NOMBRE, UBICACIÓN, FOTOS, PAGOS, ANALÍTICA, PUBLICIDAD]",
+    "servicios_de_terceros": "[LISTA: ANALÍTICA, PUBLICIDAD, PASARELA DE PAGO, INICIO DE SESIÓN]",
+    "monetizacion": "[GRATIS / PAGO ÚNICO / SUSCRIPCIÓN / COMPRAS DENTRO DE LA APP / PUBLICIDAD]",
+    "publico": "[GENERAL / MENORES / SALUD / FINANZAS]",
+    "rechazo_previo": "[PEGA EL MENSAJE DE RECHAZO SI YA LO HUBO]"
+  },
+  "bloques_a_preparar": [
+    "Cuenta de prueba con usuario y contraseña que funcione y no caduque, y modo de saltarse el registro si lo hay",
+    "Notas para el revisor explicando cómo llegar a cada función y qué necesita para probarla",
+    "Política de privacidad publicada en una dirección accesible y coherente con lo que la app recoge de verdad",
+    "Declaración de datos: para Play la sección de seguridad de los datos, para App Store las etiquetas de privacidad",
+    "Textos legales de la suscripción visibles antes de pagar: precio, periodo, renovación y cómo cancelar",
+    "Permisos declarados con su explicación en el proyecto",
+    "Clasificación por edades y cuestionario de contenido",
+    "Datos de contacto de soporte funcionando"
+  ],
+  "motivos_frecuentes_de_rechazo": [
+    "La app se cierra o una función no funciona en el dispositivo del revisor",
+    "Cuenta de prueba inválida o función bloqueada tras un muro que el revisor no puede pasar",
+    "App que es solo una web dentro de un contenedor sin nada propio",
+    "Enlaces de pago fuera del sistema de compras de la tienda cuando no está permitido",
+    "Condiciones de la suscripción no visibles antes de comprar",
+    "Contenido de relleno, pantallas vacías o de prueba",
+    "Permisos pedidos sin explicación o que la app no necesita",
+    "Declaración de datos que no coincide con lo que recogen las librerías de terceros"
+  ],
+  "metodo": [
+    "1. Recorrer cada bloque marcando hecho, pendiente o no aplica, con la evidencia de cada uno",
+    "2. Cruzar la lista de servicios de terceros con la declaración de datos, uno por uno",
+    "3. Probar la app en un móvil recién puesto a cero, sin sesión iniciada y con conexión lenta",
+    "4. Redactar las notas del revisor en frases numeradas y cortas",
+    "5. Si hubo rechazo, traducir el mensaje a la causa concreta y al cambio exacto que la resuelve",
+    "6. Preparar la respuesta al revisor: qué se cambió, dónde y cómo comprobarlo"
+  ],
+  "formato_salida": {
+    "lista_de_comprobacion": "Tabla con bloque, estado, qué falta y quién lo hace",
+    "notas_al_revisor": "Texto final listo para pegar en el formulario de envío",
+    "tabla_de_datos": "Dato recogido, para qué, quién lo trata, si se comparte, cómo se declara en cada tienda",
+    "riesgos": "Los 3 motivos de rechazo más probables en este caso y cómo blindarlos",
+    "respuesta_a_rechazo": "Borrador de contestación si vuelve rechazada"
+  },
+  "criterios_calidad": [
+    "Ningún bloque queda en pendiente sin responsable",
+    "La declaración de datos coincide exactamente con las librerías incluidas",
+    "La cuenta de prueba se ha probado desde cero el mismo día del envío",
+    "Las notas al revisor permiten llegar a cada función sin preguntar nada",
+    "Es un repaso operativo, no asesoramiento legal: los textos legales los valida un profesional"
+  ]
+}

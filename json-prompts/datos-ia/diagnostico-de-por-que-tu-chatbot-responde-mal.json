@@ -1,0 +1,30 @@
+{
+  "tarea": "Diagnosticar respuestas incorrectas de un agente que responde con documentos propios y proponer el arreglo exacto para cada fallo",
+  "entradas": {
+    "casos": "[PARA CADA CASO: PREGUNTA DEL USUARIO, RESPUESTA QUE DIO EL AGENTE, FRAGMENTOS QUE RECUPERÓ SI LOS VES, RESPUESTA CORRECTA SEGÚN TÚ]",
+    "instrucciones_actuales": "[PEGA AQUÍ LAS INSTRUCCIONES QUE LE DISTE AL AGENTE]",
+    "documentos_cargados": "[LISTA RESUMIDA]"
+  },
+  "procedimiento": [
+    "Clasifica cada fallo en una de estas causas: no existe el dato en los documentos, existe pero no lo encontró, lo encontró y lo interpretó mal, lo encontró pero el documento está desactualizado, o las instrucciones le permitieron improvisar.",
+    "Justifica la clasificación citando la parte de la respuesta o del fragmento que lo demuestra.",
+    "Propón un arreglo por caso, del más barato al más caro: cambiar una frase de las instrucciones, reetiquetar un documento, añadir contenido nuevo o cambiar cómo se trocea.",
+    "Agrupa los casos por causa y señala el patrón que más se repite.",
+    "Indica cómo comprobar que el arreglo funcionó."
+  ],
+  "formato_salida": {
+    "1_tabla_casos": ["Pregunta", "Qué falló", "Causa", "Prueba que lo demuestra", "Arreglo", "Coste (bajo/medio/alto)"],
+    "2_patron_principal": "un párrafo",
+    "3_plan": "los 3 arreglos que más fallos resuelven, en orden"
+  },
+  "restricciones": [
+    "No propongas cambiar de herramienta ni de modelo como primera solución",
+    "Si no hay datos suficientes para saber la causa, dilo y pide qué información hace falta",
+    "Cada arreglo debe poder ejecutarlo alguien sin perfil técnico"
+  ],
+  "criterios_calidad": [
+    "Cada causa está sostenida con una cita concreta",
+    "Se distingue el fallo de búsqueda del fallo de redacción",
+    "El plan final cabe en una tarde de trabajo"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Crear un moodboard de identidad visual descrito imagen a imagen y entregar el prompt de generación de cada una",
+  "marca": {
+    "nombre": "[NOMBRE DE TU MARCA]",
+    "sector": "[SECTOR]",
+    "territorio_visual": "[CÓMO QUIERES QUE SE VEA: EJ. ARTESANAL CÁLIDO]",
+    "sensaciones": ["[SENSACIÓN 1]", "[SENSACIÓN 2]", "[SENSACIÓN 3]"],
+    "colores_de_partida": "[COLORES O NINGUNO]",
+    "publico": "[A QUIÉN LE VENDES]"
+  },
+  "composicion_moodboard": [
+    "2 imágenes de ambiente o lugar",
+    "2 imágenes de producto o servicio en uso",
+    "1 imagen de textura o material",
+    "1 imagen de detalle humano (manos, gesto, mirada)",
+    "1 imagen de referencia de color",
+    "1 imagen de referencia tipográfica o de rótulo"
+  ],
+  "para_cada_imagen": {
+    "titulo": "qué representa dentro de la marca",
+    "por_que": "qué atributo de marca refuerza",
+    "prompt": "prompt en inglés con sujeto, plano, lente, luz, paleta, fondo y proporción",
+    "negativos": "qué evitar en esa imagen"
+  },
+  "formato_salida": {
+    "tipo": "lista numerada de 8 fichas con los cuatro campos anteriores",
+    "cierre": "párrafo final de 5 líneas explicando qué historia cuenta el moodboard entero"
+  },
+  "restricciones": [
+    "Todos los prompts comparten la misma luz y la misma paleta para que el moodboard sea coherente",
+    "Nada de texto dentro de las imágenes salvo en la de referencia tipográfica",
+    "Sin marcas ni logotipos reales de terceros"
+  ],
+  "criterios_calidad": [
+    "Puestas juntas, las 8 imágenes parecen de la misma marca",
+    "Cada prompt se puede pegar tal cual en un generador sin retocarlo"
+  ]
+}

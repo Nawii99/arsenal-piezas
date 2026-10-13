@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar un anuncio adaptable de la red de busqueda de Google Ads completo y listo para copiar",
+  "contexto": {
+    "servicio_o_producto": "[QUE ANUNCIAS]",
+    "palabras_clave_del_grupo": "[3 A 6 PALABRAS CLAVE DEL MISMO TEMA]",
+    "zona": "[CIUDAD O PROVINCIA, O 'TODA ESPANA']",
+    "diferenciales": "[3 COSAS QUE TE HACEN DISTINTO: PLAZOS, GARANTIA, ANOS, ETC.]",
+    "oferta_o_gancho": "[PRESUPUESTO GRATIS | PRIMERA CONSULTA | ENVIO 24H | DESCUENTO]",
+    "url_final": "[URL DE LA PAGINA DE DESTINO]",
+    "que_pasa_al_hacer_clic": "[FORMULARIO | LLAMADA | COMPRA | RESERVA]"
+  },
+  "limites_tecnicos": {
+    "titulos": "15 titulos de maximo 30 caracteres cada uno, espacios incluidos",
+    "descripciones": "4 descripciones de maximo 90 caracteres cada una",
+    "rutas_url": "2 rutas de maximo 15 caracteres"
+  },
+  "instrucciones": [
+    "Incluye la palabra clave principal literal en al menos 3 titulos y en 1 descripcion",
+    "Cubre estos angulos sin repetirte: palabra clave, zona, beneficio, prueba o confianza, oferta, urgencia, precio o presupuesto, y llamada a la accion",
+    "Escribe al menos 2 titulos que se puedan fijar en la posicion 1 porque contienen marca o servicio",
+    "Indica que titulos conviene fijar y cuales dejar que Google combine",
+    "Anade 4 extensiones de enlaces de sitio con su descripcion breve y 6 textos destacados",
+    "Cuenta y muestra los caracteres exactos de cada linea"
+  ],
+  "restricciones": [
+    "Prohibido usar mayusculas sostenidas, signos de exclamacion en titulos y simbolos raros",
+    "Nada de superlativos no demostrables como 'los mejores de Espana'",
+    "No prometer precios que no aparezcan en la pagina de destino",
+    "Nada de repetir la misma idea en dos titulos distintos"
+  ],
+  "formato_salida": {
+    "tabla_titulos": "nº | titulo | caracteres | angulo | fijar si/no",
+    "tabla_descripciones": "nº | descripcion | caracteres | angulo",
+    "extensiones": "Lista de enlaces de sitio y textos destacados",
+    "aviso_coherencia": "Que debe aparecer si o si en la pagina de destino para que el anuncio no decepcione"
+  },
+  "criterios_calidad": [
+    "Ningun texto pasa del limite de caracteres",
+    "Se cubren los 8 angulos pedidos",
+    "Cualquier combinacion aleatoria de 3 titulos sigue teniendo sentido leida seguida"
+  ]
+}

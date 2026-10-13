@@ -1,0 +1,45 @@
+{
+  "tarea": "Crear un esquema de validacion con Zod en TypeScript, los tipos derivados y los mensajes de error en español",
+  "contexto": {
+    "formulario": "[NOMBRE: ALTA DE CLIENTE, PEDIDO, CONTACTO...]",
+    "donde_se_valida": "[SOLO NAVEGADOR / SOLO SERVIDOR / EN LOS DOS]",
+    "stack": "[REACT HOOK FORM / NEXT SERVER ACTIONS / API EXPRESS / OTRO]",
+    "mercado": "[ESPAÑA / OTRO PAIS]"
+  },
+  "campos": [
+    "[CAMPO 1: NOMBRE, TIPO, OBLIGATORIO O NO, REGLA DE NEGOCIO]",
+    "[CAMPO 2: ...]",
+    "[CAMPO 3: ...]"
+  ],
+  "reglas_obligatorias": [
+    "Recortar espacios y normalizar el email a minusculas antes de validar",
+    "Telefono movil español: 9 digitos empezando por 6 o 7, admitiendo prefijo +34 y espacios",
+    "Si hay DNI o NIF, validar tambien la letra de control",
+    "Si hay IBAN, comprobar el formato y los digitos de control",
+    "Los importes se validan como numero con dos decimales, nunca como texto libre",
+    "Las fechas se validan como texto ISO y se comprueba que sean coherentes",
+    "Los campos de un conjunto cerrado se declaran como enum, no como texto",
+    "Rechazar campos extra no declarados en el esquema"
+  ],
+  "mensajes_error": {
+    "idioma": "Español de España, tuteando",
+    "estilo": "Dicen que hay que hacer, no solo que esta mal",
+    "ejemplo_bueno": "Escribe un movil de 9 digitos que empiece por 6 o 7",
+    "ejemplo_malo": "Formato invalido"
+  },
+  "restricciones": [
+    "El tipo TypeScript se infiere del esquema, no se escribe a mano dos veces",
+    "La validacion del servidor no confia en la del navegador",
+    "No usar expresiones regulares imposibles de leer sin explicarlas en una linea"
+  ],
+  "formato_salida": {
+    "1_esquema": "Archivo esquema.ts con el schema y el tipo inferido",
+    "2_uso_cliente": "Ejemplo de conexion con el formulario del stack indicado",
+    "3_uso_servidor": "Ejemplo de validacion en el endpoint y respuesta de error",
+    "4_tabla_campos": "Campo | Regla | Mensaje de error | Ejemplo valido | Ejemplo invalido"
+  },
+  "criterios_calidad": [
+    "Cada campo tiene un mensaje propio, ninguno genérico",
+    "El mismo esquema sirve en navegador y servidor sin duplicar reglas"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tarea": "Evaluar y puntuar [NÚMERO] ubicaciones candidatas para abrir un [TIPO DE NEGOCIO] y recomendar cuál elegir o si descartar todas",
+  "contexto": {
+    "negocio": "[QUÉ VAS A ABRIR Y TICKET MEDIO ESPERADO]",
+    "cliente_objetivo": "[A QUIÉN QUIERES ATRAER]",
+    "candidatas": "[DIRECCIÓN O ZONA, METROS, ALQUILER MENSUAL Y TRASPASO DE CADA UNA]",
+    "observaciones": "[LO QUE HAS VISTO EN CADA SITIO: PASO DE GENTE, COMERCIOS ALREDEDOR, APARCAMIENTO, LOCALES VACÍOS]",
+    "costes_fijos_previstos": "[TOTAL MENSUAL SIN CONTAR EL ALQUILER]"
+  },
+  "metodo": [
+    "Puntuar cada ubicación en siete criterios: paso de gente del perfil correcto, visibilidad del escaparate, accesibilidad y aparcamiento, comercios que atraen a mi cliente, competencia directa cercana, coste sobre facturación prevista y estado del local",
+    "Pedir para cada criterio una comprobación de campo concreta que yo pueda hacer, con día y franja horaria",
+    "Calcular qué porcentaje representa el alquiler sobre la facturación mensual necesaria y avisar si es insostenible para el sector",
+    "Señalar banderas rojas: rotación de locales vacíos, obras previstas, zona de paso solo de temporada"
+  ],
+  "restricciones": [
+    "No inventar datos de paso de gente ni de renta del barrio: usar solo lo aportado o pedirlo como comprobación",
+    "Toda puntuación debe ir acompañada del motivo",
+    "Incluir siempre la opción de no abrir en ninguna"
+  ],
+  "formato_salida": {
+    "tabla_puntuacion": "Una fila por ubicación y una columna por criterio, del 1 al 5, con total ponderado",
+    "ficha_por_ubicacion": "Para cada candidata: puntos fuertes, puntos débiles, banderas rojas y clientes al día necesarios para cubrir costes",
+    "comprobaciones_de_campo": "Lista de cosas que debo ir a contar o mirar en persona, con día y hora recomendada",
+    "preguntas_al_propietario": "Ocho preguntas que hacer antes de firmar el contrato de alquiler",
+    "recomendacion": "Ubicación recomendada, alternativa y en qué condiciones sería mejor no abrir"
+  },
+  "criterios_calidad": [
+    "La recomendación depende de números, no de sensaciones",
+    "Cada comprobación de campo se puede hacer en menos de una hora",
+    "El coste del alquiler se relaciona con la facturación necesaria, no se valora en abstracto"
+  ],
+  "tono": "Prudente y concreto, como un socio que te frena"
+}

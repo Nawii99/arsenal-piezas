@@ -1,0 +1,40 @@
+{
+  "tarea": "Diseñar el modelo de datos completo del negocio descrito: entidades, atributos, relaciones y sentencias SQL de creacion listas para ejecutar",
+  "contexto": {
+    "negocio": "[QUE HACE TU NEGOCIO EN 3 FRASES]",
+    "donde_estan_los_datos_hoy": "[EXCEL / PAPEL / OTRA APP / NADA]",
+    "procesos_clave": ["[PROCESO 1, EJ: RESERVAR UNA CITA]", "[PROCESO 2, EJ: EMITIR FACTURA]", "[PROCESO 3]"],
+    "preguntas_que_debo_poder_responder": ["[EJ: CUANTO FACTURE POR CLIENTE ESTE MES]", "[EJ: QUE CITAS TENGO MANANA]"],
+    "volumen": "[Nº DE CLIENTES Y Nº DE OPERACIONES AL MES]",
+    "motor": "[PostgreSQL | MySQL | SQL Server | SQLite]"
+  },
+  "metodo": [
+    "Extraer los sustantivos del negocio y proponer entidades candidatas, descartando las que sean solo atributos",
+    "Definir para cada entidad su clave primaria, sus atributos y cuales son obligatorios",
+    "Definir las relaciones con su cardinalidad (1:1, 1:N, N:M) y crear tabla intermedia en cada N:M",
+    "Separar catalogos estables (estados, tipos, categorias) en sus propias tablas en vez de texto libre",
+    "Comprobar que cada pregunta de negocio listada se puede responder con una consulta sobre el modelo"
+  ],
+  "restricciones": [
+    "Nada de campos multivalor: prohibido guardar listas separadas por comas",
+    "Nombres de tablas en plural y minusculas, campos en snake_case, sin acentos ni enes",
+    "Toda tabla lleva id, fecha_alta y fecha_modificacion",
+    "Importes en decimal con 2 decimales, nunca en float",
+    "No inventes requisitos: si falta informacion, listala en 'dudas' en vez de suponer"
+  ],
+  "formato_salida": {
+    "1_resumen": "Parrafo corto explicando el modelo en lenguaje de negocio, sin jerga",
+    "2_tablas": "Una tabla markdown por entidad con columnas: campo, tipo, obligatorio, descripcion",
+    "3_relaciones": "Lista de relaciones en formato 'clientes 1:N pedidos (un cliente tiene muchos pedidos)'",
+    "4_diagrama": "Diagrama entidad-relacion en sintaxis Mermaid erDiagram",
+    "5_sql": "Bloque SQL con CREATE TABLE en el orden correcto de dependencias, con claves foraneas",
+    "6_dudas": "Maximo 5 preguntas que necesitas que responda el dueno del negocio"
+  },
+  "criterios_calidad": [
+    "Ninguna tabla repite informacion que ya vive en otra tabla",
+    "Toda clave foranea apunta a una tabla que existe en el SQL entregado",
+    "El SQL se ejecuta de principio a fin sin errores de dependencias",
+    "Un no tecnico entiende el punto 1 y el punto 3 sin ayuda"
+  ],
+  "tono": "Directo y didactico, en espanol de Espana, tuteando"
+}

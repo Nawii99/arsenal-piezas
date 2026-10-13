@@ -1,0 +1,44 @@
+{
+  "tarea": "Convertir un guion de anuncio en un storyboard vineta a vineta y escribir para cada vineta un prompt de imagen listo para un generador de IA",
+  "contexto": {
+    "guion_o_idea": "[PEGA AQUI TU GUION O DESCRIBE LA IDEA]",
+    "producto": "[PRODUCTO Y COMO ES FISICAMENTE]",
+    "numero_de_vinetas": "[ENTRE 6 Y 12]",
+    "formato": "[9:16 VERTICAL / 1:1 / 16:9]",
+    "estilo_visual": "[REALISTA TIPO MOVIL / PUBLICITARIO DE ESTUDIO / DOCUMENTAL]",
+    "protagonista": "[EDAD, ASPECTO Y ROPA, PARA MANTENERLO IGUAL EN TODAS LAS VINETAS]",
+    "localizacion": "[DONDE PASA LA ESCENA]"
+  },
+  "reglas_de_oficio": [
+    "Alterna planos: general para situar, medio para la persona, detalle para el producto",
+    "No repitas el mismo encuadre en dos vinetas seguidas",
+    "Mantén la misma hora del dia y la misma luz en todas las vinetas de la misma escena",
+    "Describe siempre al protagonista con las mismas palabras exactas para que la IA lo mantenga parecido",
+    "En la vineta del producto, el producto ocupa el centro y se lee la etiqueta"
+  ],
+  "prompt_de_imagen_debe_incluir": [
+    "Tipo de plano y angulo de camara",
+    "Lente equivalente y profundidad de campo",
+    "Esquema de luz y hora del dia",
+    "Descripcion fisica del protagonista y su ropa",
+    "Producto y su posicion en el encuadre",
+    "Fondo, colores dominantes y textura",
+    "Relacion de aspecto y nota de negativos"
+  ],
+  "restricciones": [
+    "Prompts de imagen en ingles, el resto del documento en espanol",
+    "Nada de marcas, logotipos ni caras de personas reales conocidas",
+    "Sin texto dentro de la imagen generada salvo que se pida expresamente"
+  ],
+  "formato_salida": {
+    "tipo": "Una ficha por vineta",
+    "campos_por_ficha": ["Numero", "Segundos", "Descripcion de la accion en una frase", "Plano y camara", "Texto o voz en off que suena aqui", "Prompt de imagen en ingles"],
+    "cierre": "Lista de continuidad: que tiene que coincidir entre vinetas para que no cante el corte"
+  },
+  "criterios_calidad": [
+    "Las vinetas cuentan la historia aunque quites el texto",
+    "Los prompts generan imagenes coherentes entre si",
+    "Cada vineta corresponde a un plano grabable de verdad",
+    "La suma de segundos coincide con la duracion pedida"
+  ]
+}

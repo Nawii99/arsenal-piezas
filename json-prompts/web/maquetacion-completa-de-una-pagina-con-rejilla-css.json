@@ -1,0 +1,42 @@
+{
+  "tarea": "Maquetar una pagina web completa con rejilla CSS responsive y entregar el HTML y el CSS listos para copiar",
+  "contexto": {
+    "negocio": "[A QUE SE DEDICA TU NEGOCIO]",
+    "pagina": "[QUE PAGINA ES: INICIO, SERVICIOS, CONTACTO...]",
+    "secciones_de_arriba_abajo": ["[SECCION 1]", "[SECCION 2]", "[SECCION 3]", "[SECCION 4]"],
+    "estilo": "[SOBRIO Y PROFESIONAL / CERCANO / MINIMALISTA]"
+  },
+  "entradas": {
+    "ancho_maximo_contenido": "[1200px POR DEFECTO]",
+    "color_principal": "[#HEXADECIMAL]",
+    "tipografia": "[NOMBRE DE GOOGLE FONTS O 'LA DEL SISTEMA']"
+  },
+  "instrucciones": [
+    "Disena primero la version movil de 360px y despues amplia a tablet y escritorio",
+    "Usa CSS Grid para la estructura de la pagina y Flexbox solo dentro de cada componente",
+    "Declara colores, espaciados y tamanos como variables CSS en :root, con escala de espaciado de 4px",
+    "Usa solo dos puntos de ruptura: 48em para tablet y 64em para escritorio",
+    "Nada de anchos ni alturas fijas en contenedores: usa minmax, clamp y porcentajes"
+  ],
+  "restricciones": [
+    "Un unico archivo HTML con el CSS dentro de una etiqueta style y sin JavaScript",
+    "Sin Bootstrap, sin Tailwind y sin librerias externas",
+    "Sin imagenes de internet: usa bloques de color con la palabra IMAGEN como marcador",
+    "Contraste de texto minimo 4.5:1 sobre su fondo"
+  ],
+  "errores_a_evitar": [
+    "Scroll horizontal en movil por anchos fijos o margenes negativos",
+    "Texto pegado a los bordes por falta de padding lateral",
+    "Titulos que saltan de tamano entre pantallas en vez de escalar con clamp"
+  ],
+  "formato_salida": {
+    "1_mapa_de_la_pagina": "lista de secciones, que hace cada una y su alto aproximado",
+    "2_codigo": "un solo bloque de codigo HTML completo y comentado seccion por seccion",
+    "3_como_retocarlo": "cinco lineas diciendo que variable tocar para cambiar color, ancho y espaciados"
+  },
+  "criterios_calidad": [
+    "Se ve correcto a 360px, 768px y 1440px sin scroll horizontal",
+    "Funciona al guardarlo como index.html y abrirlo en el navegador",
+    "Ningun tamano ni color esta escrito suelto: todos salen de las variables de :root"
+  ]
+}

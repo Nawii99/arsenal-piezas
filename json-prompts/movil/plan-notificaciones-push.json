@@ -1,0 +1,41 @@
+{
+  "tarea": "Diseñar el plan de notificaciones push de una app: catálogo de avisos, segmentos, momentos, textos y topes de frecuencia.",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "accion_que_da_valor": "[LO QUE QUIERES QUE EL USUARIO HAGA MÁS]",
+    "ciclo_de_uso": "[VARIAS VECES AL DÍA / SEMANAL / PUNTUAL]",
+    "eventos_disponibles": "[QUÉ SABE TU SISTEMA: COMPRAS, MENSAJES, CADUCIDADES, RECORDATORIOS...]",
+    "herramienta_de_envio": "[LA QUE USES O NINGUNA TODAVÍA]",
+    "zona_horaria": "España peninsular salvo indicación contraria"
+  },
+  "pasos": [
+    "1. Separa los avisos en tres cajones: transaccionales (algo le ha pasado a él), útiles (le recuerdan algo que él pidió) y promocionales (te interesan a ti). El tercer cajón es el que quema.",
+    "2. Descarta cualquier aviso que no responda a la pregunta: si esto no llega, el usuario se pierde algo suyo.",
+    "3. Para cada aviso define: disparador, segmento, retraso desde el disparador, horario permitido y a qué pantalla lleva al tocarlo.",
+    "4. Pide el permiso de notificaciones DESPUÉS de que el usuario haya hecho algo que justifique recibirlas, y explicando qué le vas a mandar. El sistema solo deja preguntar una vez.",
+    "5. Escribe los textos: título de hasta 40 caracteres y cuerpo de hasta 120, con el dato personal dentro (nombre, importe, hora, nombre del pedido).",
+    "6. Pon topes: máximo 2 promocionales por semana, nada entre las 22:00 y las 8:00 y ningún usuario recibe dos avisos en menos de 4 horas.",
+    "7. Cada aviso abre la pantalla concreta relacionada, nunca la portada de la app.",
+    "8. Define el cuadro de mando: entregadas, abiertas, porcentaje que desactiva las notificaciones y desinstalaciones en las 24 horas siguientes."
+  ],
+  "formato_salida": {
+    "tabla_principal": ["nombre_del_aviso", "cajon", "disparador", "segmento", "retraso", "horario", "titulo", "cuerpo", "pantalla_de_destino", "tope_de_frecuencia"],
+    "extra_1": "Guion de la pantalla previa que pide el permiso, con su texto",
+    "extra_2": "Calendario tipo de una semana con lo que recibiría un usuario nuevo y uno veterano",
+    "extra_3": "Reglas de silencio: cuándo NO enviar nada"
+  },
+  "criterios_calidad": [
+    "Cada aviso se justifica desde el punto de vista del usuario, no del negocio.",
+    "Ningún título pasa de 40 caracteres ni ningún cuerpo de 120.",
+    "Todos los avisos llevan a una pantalla concreta.",
+    "Un usuario nuevo no recibe más de 3 avisos en su primera semana.",
+    "Existe una regla explícita para dejar de enviar a quien no abre nada en 30 días."
+  ],
+  "errores_frecuentes": [
+    "Pedir el permiso en la primera pantalla y perder el único intento.",
+    "Enviar la misma campaña a toda la base sin segmentar.",
+    "Avisos vagos del tipo tienes novedades, que no dan motivo para abrir.",
+    "Mandar promociones a las 23:00.",
+    "Medir solo aperturas y no mirar cuántos desactivan las notificaciones."
+  ]
+}

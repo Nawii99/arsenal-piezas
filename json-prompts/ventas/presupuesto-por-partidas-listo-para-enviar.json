@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar un presupuesto profesional por partidas para un cliente, listo para enviar",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "actividad": "[A QUÉ TE DEDICAS]",
+    "cliente": "[NOMBRE DEL CLIENTE Y A QUÉ SE DEDICA]",
+    "trabajo_solicitado": "[QUÉ TE HA PEDIDO, CON TODO EL DETALLE QUE TENGAS]",
+    "precios_de_referencia": "[TUS PRECIOS O TU TARIFA POR HORA]",
+    "plazo_estimado": "[SEMANAS O FECHAS]",
+    "forma_de_pago": "[POR EJEMPLO 50 POR CIENTO AL INICIO Y RESTO A ENTREGA]",
+    "pais": "España"
+  },
+  "reglas_de_precio": [
+    "Desglosa el trabajo en 4 a 8 partidas con unidad, cantidad, precio unitario y total",
+    "No inventes precios: si falta un dato, escribe [PENDIENTE DE CONFIRMAR] y anótalo en la lista de dudas",
+    "Separa siempre base imponible, IVA aplicable y total",
+    "Lo que no sea imprescindible va marcado como opcional y no suma al total"
+  ],
+  "estructura_del_documento": [
+    "Encabezado con datos de emisor y cliente, número de presupuesto, fecha y validez",
+    "Resumen en tres líneas de qué problema resuelve el trabajo",
+    "Tabla de partidas, cada una explicada en una frase que entienda alguien de fuera del sector",
+    "Totales: base imponible, IVA y total",
+    "Qué incluye y qué NO incluye",
+    "Plazos e hitos de entrega",
+    "Forma de pago y condiciones",
+    "Siguiente paso concreto para aceptar"
+  ],
+  "restricciones": [
+    "Frases cortas, sin tecnicismos ni relleno comercial",
+    "Nada de descuentos automáticos ni promesas de resultados",
+    "No añadas servicios que no aparezcan en el trabajo solicitado"
+  ],
+  "formato_salida": "Documento en Markdown con tabla de partidas y, al final, un bloque con las dudas que hay que confirmar antes de enviarlo",
+  "criterios_calidad": [
+    "El cliente entiende qué paga en cada línea sin tener que llamarte",
+    "Los totales cuadran con la suma de las partidas",
+    "Queda claro qué ocurre si pide algo fuera del alcance",
+    "Hay fecha de validez y un siguiente paso claro"
+  ],
+  "tono": "Profesional, cercano y directo, tuteando"
+}

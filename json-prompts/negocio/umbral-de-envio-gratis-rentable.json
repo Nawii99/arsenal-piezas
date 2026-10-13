@@ -1,0 +1,41 @@
+{
+  "tarea": "Calcular el umbral de envio gratis mas rentable para una tienda online y disenar la mecanica para que el cliente lo alcance",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "zona_de_envio": "[PENINSULA, BALEARES, CANARIAS, UE]",
+    "politica_actual": "[ENVIO GRATIS DESDE X EUR, TARIFA FIJA O NINGUNA]"
+  },
+  "entradas": {
+    "coste_real_de_envio_eur": "[LO QUE TE COBRA LA AGENCIA POR PEDIDO]",
+    "ticket_medio_actual_eur": "[IMPORTE MEDIO POR PEDIDO]",
+    "margen_bruto_medio_pct": "[MARGEN MEDIO SOBRE VENTA]",
+    "pedidos_mensuales": "[NUMERO]",
+    "reparto_de_pedidos_por_importe": "[EJ 40% ENTRE 20 Y 40 EUR, 35% ENTRE 40 Y 70, 25% MAS DE 70]",
+    "productos_pequenos_disponibles": "[LISTA CON PRECIO Y MARGEN, PARA COMPLETAR CESTA]"
+  },
+  "pasos": [
+    "Calcular el importe de pedido en el que el margen bruto cubre el coste de envio completo",
+    "Anadir un colchon para no dejar el pedido a margen cero y proponer el umbral redondeado",
+    "Estimar cuantos pedidos actuales quedan por debajo del umbral y cuantos podrian subir",
+    "Comparar tres opciones: envio gratis desde el umbral, tarifa fija baja, o envio gratis siempre con el coste repercutido en los precios",
+    "Proponer 5 productos de completar cesta con margen alto para llegar al umbral",
+    "Escribir el mensaje de barra de progreso del carrito, tipo te faltan X euros para el envio gratis"
+  ],
+  "restricciones": [
+    "El umbral no debe superar el doble del ticket medio actual o nadie lo alcanzara",
+    "Diferenciar zonas con coste de envio distinto, sobre todo islas",
+    "No proponer envio gratis universal si el margen medio no lo soporta",
+    "Contar el coste de la devolucion en los pedidos con envio gratis"
+  ],
+  "formato_salida": {
+    "resultado": "Umbral recomendado en euros y motivo en dos frases",
+    "tabla_comparativa": "Opcion | Efecto en ticket medio | Efecto en margen por pedido | Riesgo",
+    "complementos": "Los 5 productos para completar cesta con precio y margen",
+    "textos": "Mensaje del carrito, aviso en la cabecera y linea para la pagina de envios"
+  },
+  "criterios_calidad": [
+    "El umbral sale de un calculo con los datos aportados, no de una cifra redonda al azar",
+    "Se indica el margen por pedido antes y despues del cambio",
+    "Los productos de completar cesta tienen margen superior a la media"
+  ]
+}

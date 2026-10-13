@@ -1,0 +1,44 @@
+{
+  "tarea": "Auditar un gráfico existente, detectar qué impide entenderlo o qué induce a error, y proponer la versión corregida",
+  "contexto": {
+    "que_queria_demostrar": "[EL MENSAJE QUE DEBERÍA TRANSMITIR EL GRÁFICO]",
+    "publico": "[QUIÉN LO VA A MIRAR Y CUÁNTO SABE DEL TEMA]",
+    "soporte": "[PRESENTACIÓN / INFORME EN PDF / PANTALLA / REDES SOCIALES / IMPRESO]",
+    "tiempo_de_lectura": "[SEGUNDOS QUE ALGUIEN LE VA A DEDICAR]"
+  },
+  "entradas": {
+    "grafico": "[ADJUNTA LA CAPTURA O DESCRIBE EL GRÁFICO: TIPO, EJES, SERIES, COLORES, TEXTOS]",
+    "datos_de_origen": "[PEGA LOS DATOS O UNA MUESTRA SI LOS TIENES]",
+    "herramienta_usada": "[EXCEL / SHEETS / CANVA / POWER BI / OTRA]"
+  },
+  "revisar": [
+    "Título: ¿dice la conclusión o solo nombra el tema?",
+    "Escala del eje de valores: ¿empieza en cero cuando debe? ¿hay cortes que exageran diferencias?",
+    "Etiquetas y unidades: ¿se sabe si son euros, unidades o porcentajes, y de qué periodo?",
+    "Orden de las categorías: ¿hay un orden con sentido o están como salieron?",
+    "Número de series y de colores: ¿satura la vista?",
+    "Contraste y legibilidad del texto en el soporte final",
+    "Colores: ¿se distinguen para alguien con daltonismo? ¿se apoya el significado solo en el color?",
+    "Ruido: cuadrículas, bordes, sombras, leyendas y decoración que se puedan eliminar",
+    "Contexto ausente: comparativa, objetivo, media o periodo anterior que falte para interpretar bien",
+    "Coherencia entre lo que dice el título y lo que muestran los datos"
+  ],
+  "restricciones": [
+    "Cada fallo se clasifica como grave, medio o cosmético",
+    "Un fallo es grave solo si hace que alguien saque una conclusión equivocada",
+    "No proponer cambios de estilo sin motivo funcional",
+    "No inventar datos que no aparezcan en el gráfico ni en la muestra"
+  ],
+  "formato_salida": {
+    "tipo": "tabla más propuesta",
+    "tabla": ["Gravedad", "Qué falla", "Por qué confunde", "Arreglo concreto"],
+    "propuesta_final": "Descripción de la versión corregida: tipo de gráfico, título nuevo, ejes, orden, colores y anotaciones",
+    "pasos_en_la_herramienta": "Cómo aplicar los tres arreglos más importantes en la herramienta indicada"
+  },
+  "criterios_calidad": [
+    "Los fallos graves aparecen primero y son de verdad graves",
+    "Cada arreglo es aplicable sin cambiar de programa",
+    "El título propuesto se puede leer solo y ya cuenta la conclusión"
+  ],
+  "tono": "honesto y sin rodeos, tuteando"
+}

@@ -1,0 +1,34 @@
+{
+  "tarea": "Evaluar una crisis en redes sociales y devolver un plan de respuesta por niveles con los mensajes ya redactados",
+  "situacion": {
+    "que_ha_pasado": "[EXPLICA LOS HECHOS SIN ADORNOS]",
+    "donde": "[COMENTARIOS, RESEÑAS DE GOOGLE, X, GRUPO DE WHATSAPP, PRENSA LOCAL]",
+    "que_se_dice": "[COPIA LOS MENSAJES O RESEÑAS TAL CUAL]",
+    "alcance": "[CUÁNTA GENTE LO HA VISTO, SI HAY CUENTAS GRANDES IMPLICADAS]",
+    "tenemos_parte_de_razon": "[SÍ, NO, EN PARTE Y EN QUÉ]",
+    "que_puedo_ofrecer": "[DEVOLUCIÓN, REPETIR EL SERVICIO, DISCULPA, CAMBIO DE PROCESO]",
+    "quien_da_la_cara": "[DUEÑO, RESPONSABLE DE TIENDA, CUENTA DE MARCA]"
+  },
+  "metodo": [
+    "1. Clasifica la gravedad en nivel 1 malentendido, nivel 2 cliente enfadado con razón, nivel 3 fallo real con daño, nivel 4 asunto legal o de seguridad",
+    "2. Separa hechos comprobados de opiniones y rumores antes de escribir nada",
+    "3. Define el mensaje central en una frase que se pueda repetir sin cambiarla",
+    "4. Decide canal, momento y persona que responde en cada nivel",
+    "5. Cierra con la medida real que evita que se repita"
+  ],
+  "prohibido": [
+    "Borrar comentarios que no sean insultos, amenazas o datos personales",
+    "Responder en caliente o con ironía",
+    "Culpar al cliente, al proveedor o a un empleado en público",
+    "Prometer compensaciones que no se puedan cumplir"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Nivel de gravedad y por qué, en 3 líneas",
+    "2_linea_temporal": "Qué hacer en la primera hora, en las primeras 24 horas y en la primera semana",
+    "3_mensajes": "Texto listo para: comentario público, respuesta privada al afectado, publicación abierta si hace falta y mensaje interno al equipo",
+    "4_preguntas_incomodas": "Cinco preguntas que te van a hacer y su respuesta preparada",
+    "5_semaforo": "Señales de que ya está apagado y señales de que hay que escalar"
+  },
+  "criterios_calidad": ["Los mensajes reconocen los hechos sin admitir culpas que no existen", "Ningún texto supera las 100 palabras", "El plan se puede ejecutar sin abogado en los niveles 1 y 2"],
+  "tono": "Sereno, humano y responsable, sin lenguaje corporativo hueco"
+}

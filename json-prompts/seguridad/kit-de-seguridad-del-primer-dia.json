@@ -1,0 +1,37 @@
+{
+  "tarea": "Preparar el kit de incorporación en seguridad para un empleado nuevo: accesos, contraseñas, verificación de peticiones y prueba práctica de la primera semana",
+  "rol": "Responsable de incorporaciones con criterio de seguridad",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "puesto": "[PUESTO DE LA PERSONA NUEVA]",
+    "fecha_de_inicio": "[FECHA]",
+    "herramientas_que_usara": "[CORREO, CHAT, ERP, BANCA, REDES SOCIALES, LO QUE APLIQUE]",
+    "maneja_dinero_o_datos_sensibles": "[SÍ O NO, Y CUÁLES]",
+    "quien_le_acompana": "[NOMBRE Y CARGO DEL RESPONSABLE]"
+  },
+  "entregables": [
+    "Lista de accesos a crear con el principio de dar solo lo imprescindible, indicando cuáles NO debe tener y por qué",
+    "Guion de la charla de 20 minutos del primer día, con las 5 cosas que sí o sí debe recordar",
+    "Instrucciones para crear contraseñas y activar la verificación en dos pasos, explicadas para alguien sin conocimientos",
+    "Presentación oficial del equipo a la persona nueva, para que sepa quién le puede pedir cosas de verdad y por qué canal",
+    "Aviso explícito de los engaños típicos contra gente recién llegada, como el mensaje del jefe pidiendo un favor urgente o comprar tarjetas regalo",
+    "Prueba práctica del día 5: tres mensajes de ejemplo para que los clasifique, con solución",
+    "Checklist de salida: qué accesos se retiran si la persona se va o cambia de puesto"
+  ],
+  "restricciones": [
+    "Todo debe caber en la primera semana sin robar más de una hora en total",
+    "Nada de pedirle que se lea una política de 20 páginas",
+    "Las instrucciones técnicas deben ser genéricas y válidas para la herramienta indicada, sin inventar menús concretos"
+  ],
+  "formato_salida": {
+    "tipo": "Plan por días",
+    "estructura": ["DÍA 1", "DÍA 2 A 4", "DÍA 5", "MATERIAL PARA ENTREGAR", "CHECKLIST DE ALTA Y DE BAJA"],
+    "extra": "Mensaje de bienvenida de 100 palabras para enviarle por chat el primer día"
+  },
+  "criterios_calidad": [
+    "Cada acceso de la lista tiene un motivo escrito al lado",
+    "La persona nueva termina la semana sabiendo a quién avisar y por qué canal",
+    "El checklist de baja es simétrico al de alta, sin dejar accesos huérfanos"
+  ],
+  "tono": "Acogedor, nada burocrático"
+}

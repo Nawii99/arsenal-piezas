@@ -1,0 +1,37 @@
+{
+  "tarea": "Generar el diagrama C4 de Nivel 2 (Contenedores) de [NOMBRE DEL SISTEMA] en Mermaid, con tecnología y protocolo en cada elemento",
+  "rol": "Arquitecto de software que diseña sistemas sencillos de operar y baratos de mantener",
+  "contexto": {
+    "sistema": "[QUÉ HACE EL SISTEMA EN 3 FRASES]",
+    "piezas_actuales": "[LO QUE YA EXISTE: WEB, APP, API, BASE DE DATOS... O 'EMPEZAMOS DE CERO']",
+    "tecnologias_permitidas": "[LENGUAJES Y SERVICIOS QUE TU EQUIPO SABE USAR]",
+    "alojamiento": "[AWS, GOOGLE CLOUD, AZURE, HETZNER, HOSTING COMPARTIDO...]",
+    "volumen_esperado": "[USUARIOS AL MES Y PICOS PREVISTOS]",
+    "presupuesto_mensual": "[LÍMITE APROXIMADO DE GASTO EN INFRAESTRUCTURA]"
+  },
+  "pasos": [
+    "Descomponer el sistema en contenedores: cada uno es algo que se despliega y se ejecuta por separado",
+    "Asignar a cada contenedor una responsabilidad única en una frase",
+    "Indicar tecnología concreta y versión aproximada entre paréntesis",
+    "Etiquetar cada relación con el protocolo y el formato: HTTPS/JSON, AMQP, SQL, SFTP...",
+    "Señalar dónde se guardan datos personales y dónde se guardan pagos",
+    "Proponer la versión mínima viable y aparte las piezas que se pueden añadir más adelante"
+  ],
+  "restricciones": [
+    "No proponer microservicios salvo que el volumen esperado lo justifique: explica por qué",
+    "Máximo 10 contenedores; si hacen falta más, avisar de que el alcance es demasiado grande",
+    "Cada tecnología propuesta debe estar en la lista de permitidas o justificarse en una línea",
+    "Prohibido el relleno de marketing: nada de 'escalable' o 'robusto' sin decir cómo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Código Mermaid C4Container (Person, Container, ContainerDb, System_Ext, Rel)",
+    "bloque_2": "Tabla: contenedor | responsabilidad | tecnología | datos que guarda | coste mensual estimado",
+    "bloque_3": "Sección 'Versión mínima viable' con las piezas imprescindibles",
+    "bloque_4": "Sección 'Riesgos y puntos únicos de fallo' con máximo 5 puntos"
+  },
+  "criterios_calidad": [
+    "Un desarrollador podría presupuestar el trabajo solo con este diagrama y la tabla",
+    "Toda flecha indica protocolo y dirección de la petición",
+    "No hay ningún contenedor sin responsabilidad clara ni ninguna responsabilidad repartida entre dos"
+  ]
+}

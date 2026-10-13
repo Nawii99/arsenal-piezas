@@ -1,0 +1,47 @@
+{
+  "tarea": "Escribir el manual operativo de un proceso repetitivo del negocio, en formato que alguien nuevo pueda ejecutar sin supervisión.",
+  "contexto": {
+    "proceso": "[QUÉ TAREA ES: PREPARAR PEDIDOS, PASAR FACTURAS, RESPONDER PRESUPUESTOS...]",
+    "quien_lo_hara": "[PERFIL DE QUIEN LO VA A EJECUTAR Y QUÉ SABE YA]",
+    "frecuencia": "[DIARIA / SEMANAL / POR PEDIDO]",
+    "herramientas": "[PROGRAMAS, WEBS Y ACCESOS QUE INTERVIENEN]"
+  },
+  "entradas": {
+    "como_lo_hago_yo": "[CUÉNTALO DEL TIRÓN, DESORDENADO, TAL COMO TE SALGA]",
+    "casos_raros": "[QUÉ PASA CUANDO SE TUERCE Y CÓMO LO RESUELVES]",
+    "quien_decide": "[QUÉ DECISIONES NO PUEDE TOMAR SOLO Y TIENE QUE CONSULTARME]"
+  },
+  "pasos": [
+    "Ordena lo que te cuento en fases y numera los pasos de una en una acción por paso.",
+    "Cada paso empieza por un verbo y dice dónde se hace: programa, pantalla, botón o carpeta.",
+    "Marca los puntos de decisión con la condición explícita: si pasa esto, haz aquello.",
+    "Señala los pasos críticos donde un fallo cuesta dinero o cliente, y qué comprobar antes de seguir.",
+    "Añade el tiempo aproximado de cada fase y el total.",
+    "Extrae una lista de comprobación corta para el final, de máximo diez puntos.",
+    "Anota qué accesos, contraseñas o permisos hacen falta y a quién pedirlos.",
+    "Pregúntame como máximo cinco cosas que falten para que el manual funcione sin mí."
+  ],
+  "restricciones": [
+    "Nada de pasos vagos tipo revisar que esté bien: di qué se mira exactamente.",
+    "No incluyas contraseñas ni datos sensibles en el manual.",
+    "Lenguaje llano, frases cortas, tuteando a quien lo lee."
+  ],
+  "errores_tipicos": [
+    "Dar por sabido el contexto que solo conoce el dueño.",
+    "Mezclar en un mismo paso dos acciones distintas.",
+    "No decir qué hacer cuando el caso no es el normal.",
+    "Manual eterno que nadie lee: si pasa de dos páginas, hay que partirlo."
+  ],
+  "formato_salida": {
+    "encabezado": "Nombre del proceso, para qué sirve, cuándo se hace, quién lo hace, tiempo estimado.",
+    "cuerpo": "Fases con pasos numerados; los puntos de decisión en su propia línea empezando por Si.",
+    "tabla_de_casos": "Casos raros: situación, qué hacer, a quién avisar.",
+    "checklist_final": "Lista de comprobación de máximo diez puntos marcables.",
+    "preguntas_pendientes": "Máximo cinco preguntas para completar el manual."
+  },
+  "criterios_calidad": [
+    "Alguien que no conoce el negocio puede ejecutarlo leyendo solo esto.",
+    "Ningún paso obliga a preguntarme para continuar, salvo los marcados como decisión mía.",
+    "Cabe en dos páginas o está partido en manuales más pequeños."
+  ]
+}

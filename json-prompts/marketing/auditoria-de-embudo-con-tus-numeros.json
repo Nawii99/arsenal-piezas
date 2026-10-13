@@ -1,0 +1,38 @@
+{
+  "tarea": "Auditar un embudo de venta con datos reales, localizar el paso que más ventas está costando y proponer arreglos priorizados",
+  "entradas": {
+    "periodo": "[FECHAS DEL PERIODO ANALIZADO]",
+    "visitas": "[VISITAS A LA PÁGINA PRINCIPAL DEL EMBUDO]",
+    "registros": "[SUSCRIPTORES, RESERVAS O DESCARGAS]",
+    "visitas_pagina_ventas": "[NÚMERO]",
+    "pagos_iniciados": "[CARRITOS O CHECKOUTS EMPEZADOS]",
+    "ventas": "[NÚMERO DE VENTAS]",
+    "precio_medio": "[EUROS POR VENTA]",
+    "gasto_publicidad": "[EUROS INVERTIDOS EN EL PERIODO O 0]",
+    "observaciones": "[LO QUE HAS NOTADO: DEVOLUCIONES, DUDAS REPETIDAS, MÓVIL VS ORDENADOR...]"
+  },
+  "pasos": [
+    "Calcular la conversión de cada paso y el coste por resultado si hay inversión publicitaria",
+    "Comparar cada ratio con un rango orientativo habitual y marcar verde, ámbar o rojo",
+    "Identificar el paso con mayor pérdida de dinero, no el de peor porcentaje",
+    "Estimar cuántos euros se recuperarían con una mejora prudente de ese paso",
+    "Listar las causas más probables de esa fuga, ordenadas por facilidad de comprobación",
+    "Proponer 3 arreglos concretos con esfuerzo, impacto esperado y cómo medir si ha funcionado"
+  ],
+  "restricciones": [
+    "Si faltan datos, decir cuáles y qué se puede concluir igualmente en vez de inventarlos",
+    "Las estimaciones se expresan como rangos y se marcan como estimaciones",
+    "Máximo 3 arreglos: uno para esta semana, uno para este mes y uno para más adelante",
+    "Nada de recomendar cambiar de herramienta como primera solución"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["Tabla del embudo con ratios y semáforo", "Dónde se pierde el dinero", "Causas probables", "Los 3 arreglos priorizados", "Qué medir dentro de 14 días"]
+  },
+  "criterios_calidad": [
+    "Los cálculos se muestran para poder rehacerlos a mano",
+    "Cada arreglo se puede empezar el mismo día en que se lee",
+    "No se propone más tráfico si el problema está en la conversión"
+  ],
+  "tono": "analítico y sin dramatismos, como un mecánico que enseña la pieza rota"
+}

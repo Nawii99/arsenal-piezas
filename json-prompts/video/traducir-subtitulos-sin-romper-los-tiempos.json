@@ -1,0 +1,34 @@
+{
+  "tarea": "Traducir un archivo de subtítulos manteniendo los tiempos originales y respetando los límites de lectura",
+  "contexto": {
+    "idioma_origen": "español de España",
+    "idioma_destino": "[INGLÉS / FRANCÉS / ALEMÁN / PORTUGUÉS DE BRASIL / OTRO]",
+    "pais_objetivo": "[PAÍS O MERCADO]",
+    "registro": "[FORMAL / CERCANO PERO PROFESIONAL / COLOQUIAL]",
+    "sector": "[TU SECTOR O TEMÁTICA DEL VÍDEO]"
+  },
+  "entradas": {
+    "srt_original": "[PEGA AQUÍ EL SRT EN ESPAÑOL]",
+    "no_traducir": "[NOMBRE DE MARCA, PRODUCTOS Y TÉRMINOS QUE SE QUEDAN IGUAL]",
+    "glosario": "[TÉRMINO ES = TÉRMINO EN EL IDIOMA DESTINO, UNO POR LÍNEA]"
+  },
+  "restricciones": [
+    "No toques ni un milisegundo de los tiempos: son intocables",
+    "Adapta la longitud del texto para no superar 42 caracteres por línea ni 17 caracteres por segundo en el idioma destino",
+    "Si la traducción literal no cabe, condensa manteniendo la información imprescindible",
+    "Traduce el sentido, no palabra por palabra: adapta refranes, chistes y referencias culturales",
+    "Convierte unidades, monedas y formatos de fecha al uso del país de destino cuando aporte claridad",
+    "Respeta el glosario y la lista de términos que no se traducen",
+    "Usa la puntuación y las comillas propias del idioma destino"
+  ],
+  "formato_salida": {
+    "principal": "SRT completo en el idioma de destino con la numeración y los tiempos idénticos al original",
+    "anexo": "tabla con los subtítulos donde hubo que condensar: número, original, traducción y qué se sacrificó",
+    "avisos": "lista de referencias culturales adaptadas y de frases donde conviene que lo valide un nativo"
+  },
+  "criterios_calidad": [
+    "Mismo número de bloques y mismos tiempos que el original",
+    "Ningún bloque supera los límites de lectura del idioma destino",
+    "Un nativo entendería el texto sin notar que es una traducción"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "tarea": "Analizar un contrato y devolver un resumen practico de obligaciones, fechas, riesgos y puntos a negociar",
+  "contexto": {
+    "quien_soy_en_el_contrato": "[PARTE QUE PRESTA EL SERVICIO, CLIENTE, ARRENDATARIO, PROVEEDOR]",
+    "tipo": "[SERVICIOS, ALQUILER, DISTRIBUCION, CONFIDENCIALIDAD, COLABORACION]",
+    "importe_en_juego": "[CUANTO DINERO MUEVE AL AÑO]",
+    "pais_y_ley": "[ESPAÑA U OTRO]",
+    "tolerancia_al_riesgo": "[BAJA, MEDIA, ALTA]"
+  },
+  "entradas": {
+    "texto_contrato": "[PEGA EL CONTRATO ENTERO, INCLUIDOS ANEXOS]",
+    "lo_hablado_de_palabra": "[QUE OS HABIAIS DICHO ANTES DE VER EL PAPEL]",
+    "lo_que_no_puedo_aceptar": "[TUS LINEAS ROJAS]"
+  },
+  "pasos": [
+    "1. Identifica las partes, el objeto, la duracion, el precio y la forma de pago, y ponlo en una ficha de cinco lineas",
+    "2. Lista cada obligacion que asumes tu, con la clausula donde aparece",
+    "3. Lista cada obligacion de la otra parte y que pasa si no cumple",
+    "4. Saca todas las fechas y plazos: inicio, fin, preaviso, renovacion automatica, plazos de pago, plazos de reclamacion",
+    "5. Busca clausulas de riesgo: exclusividad, no competencia, penalizaciones, indemnizaciones sin tope, cesion de derechos, propiedad del trabajo, confidencialidad eterna, fuero en otra ciudad",
+    "6. Marca lo que contradice lo que os habiais dicho de palabra",
+    "7. Señala lo que falta y deberia estar: revisiones de precio, alcance cerrado, limite de responsabilidad, forma de terminar el contrato",
+    "8. Para cada punto negociable escribe la redaccion alternativa concreta para proponerla",
+    "9. Cierra con un semaforo global y con las tres cosas que pedirias antes de firmar"
+  ],
+  "que_mirar": [
+    "Renovacion automatica con preaviso largo escondida al final",
+    "Penalizaciones que solo van en una direccion",
+    "Pagos condicionados a aprobaciones sin plazo",
+    "Cesion de todos los derechos de lo que crees, incluso lo anterior al contrato",
+    "Tribunales de una ciudad lejana"
+  ],
+  "errores_tipicos": [
+    "Leer solo la parte del precio",
+    "Dar por hecho que los anexos son relleno",
+    "Firmar creyendo que lo hablado por email manda sobre el papel"
+  ],
+  "restricciones": [
+    "No es asesoramiento juridico: si el semaforo sale rojo, recomienda revision de abogado",
+    "Cita siempre el numero de clausula, sin inventar ninguna",
+    "Si una clausula es ambigua, dilo en vez de elegir una interpretacion"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha del contrato en cinco lineas",
+    "bloque_2": "Tabla de obligaciones: quien | que | clausula | consecuencia de incumplir",
+    "bloque_3": "Calendario de fechas y avisos, ordenado",
+    "bloque_4": "Tabla de riesgos: semaforo | clausula | traduccion a lenguaje normal | que pedir",
+    "bloque_5": "Email corto y educado para enviar las peticiones de cambio"
+  },
+  "criterios_calidad": [
+    "Cada afirmacion remite a una clausula concreta",
+    "Las traducciones se entienden sin haber leido el contrato",
+    "Las peticiones de cambio vienen con texto listo para pegar",
+    "No hay dictamenes juridicos disfrazados de certeza"
+  ]
+}

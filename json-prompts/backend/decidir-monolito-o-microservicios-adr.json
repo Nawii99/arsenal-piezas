@@ -1,0 +1,32 @@
+{
+  "tarea": "Decidir si el software de [NOMBRE DE TU EMPRESA] debe seguir siendo un monolito, pasar a monolito modular o partirse en microservicios, y dejarlo escrito en una decisión de arquitectura (ADR) que entienda una persona no técnica",
+  "contexto": {
+    "producto": "[QUÉ HACE TU SOFTWARE EN UNA FRASE]",
+    "usuarios_activos": "[USUARIOS AL DÍA]",
+    "equipo_tecnico": "[CUÁNTOS PROGRAMADORES Y SI SON INTERNOS O AGENCIA]",
+    "dolor_actual": "[QUÉ TE DUELE HOY: DESPLIEGUES LENTOS, CAÍDAS, NADIE SE ATREVE A TOCAR EL CÓDIGO]",
+    "stack": "[LENGUAJE Y BASE DE DATOS QUE USÁIS]",
+    "gasto_infra_mensual": "[EUROS AL MES EN SERVIDORES]"
+  },
+  "metodo": [
+    "Descartar la moda: los microservicios solo se justifican si varios equipos se pisan al desplegar, o si hay partes con necesidades de escala muy distintas",
+    "Valorar 6 ejes: velocidad de entrega, escala, fiabilidad, coste, tamaño del equipo y complejidad de operar",
+    "Proponer siempre la opción intermedia (monolito modular con módulos separados y una cola para las tareas pesadas) antes que trocear",
+    "Estimar el coste oculto de los microservicios: despliegues, monitorización, trazas, red, personas de guardia"
+  ],
+  "restricciones": [
+    "Nada de jerga sin traducir: cada término técnico se explica entre paréntesis la primera vez que aparece",
+    "Si el equipo tiene menos de 5 programadores, recomendar por defecto monolito modular y justificar por qué",
+    "Prohibido recomendar reescribir desde cero"
+  ],
+  "formato_salida": {
+    "tipo": "documento ADR en Markdown",
+    "secciones": ["Decisión en una frase", "Contexto de negocio", "Opciones valoradas en tabla con pros y contras", "Consecuencias y a qué renunciamos", "Coste y esfuerzo estimados", "Señales que nos harían cambiar de decisión", "Los 3 primeros pasos"]
+  },
+  "criterios_calidad": [
+    "La recomendación es una sola y se apoya en los datos del contexto, no en opiniones generales",
+    "Incluye al menos 3 señales medibles que indicarían que ya toca partir el monolito",
+    "Un socio sin perfil técnico puede leerlo y aprobar o rechazar sin ayuda"
+  ],
+  "tono": "directo y sin humo, como un arquitecto veterano explicándoselo al dueño del negocio"
+}

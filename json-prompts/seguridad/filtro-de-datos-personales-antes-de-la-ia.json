@@ -1,0 +1,34 @@
+{
+  "tarea": "Definir qué datos pueden entrar en un agente de IA y cómo anonimizar el resto antes de enviarlos",
+  "contexto": {
+    "documentos": "[QUÉ VAS A PROCESAR: FACTURAS, CHATS, CVS, PEDIDOS]",
+    "finalidad": "[PARA QUÉ NECESITAS EL RESULTADO]",
+    "herramienta_ia": "[QUÉ IA USAS Y SI ES PLAN DE PAGO O GRATUITO]"
+  },
+  "entradas": {
+    "campos_presentes": "[LISTA LOS CAMPOS QUE APARECEN EN TUS DOCUMENTOS]",
+    "ejemplo_real_recortado": "[PEGA UN EJEMPLO CON DATOS INVENTADOS]"
+  },
+  "metodo": [
+    "Clasificar cada campo en: se puede enviar tal cual, se envía sustituido o no se envía nunca",
+    "Aplicar el criterio de mínimo necesario: si el campo no hace falta para la finalidad, fuera",
+    "Proponer la sustitución concreta de cada campo sensible: CLIENTE_01, importe redondeado, provincia en vez de dirección",
+    "Comprobar el riesgo de reidentificación: si juntando campos se adivina la persona, hay que quitar uno más",
+    "Indicar cómo se recupera la relación real fuera de la IA, en una tabla propia"
+  ],
+  "restricciones": [
+    "Salud, ideología, biometría, religión y datos de menores no se envían nunca",
+    "Nada de contraseñas, claves, números completos de tarjeta ni credenciales",
+    "El resultado no incluye asesoramiento jurídico: son medidas prácticas, la validación legal es de un profesional"
+  ],
+  "formato_salida": {
+    "tipo": "tabla más ejemplo",
+    "tabla": "columnas Campo | Decisión | Sustitución | Motivo",
+    "ejemplo": "el ejemplo pegado, mostrado antes y después del filtro",
+    "checklist": "5 comprobaciones que hacer antes de cada envío"
+  },
+  "criterios_calidad": [
+    "Con el resultado filtrado todavía se puede cumplir la finalidad",
+    "Ningún campo queda sin decisión"
+  ]
+}

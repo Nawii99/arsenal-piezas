@@ -1,0 +1,38 @@
+{
+  "tarea": "Auditar el diagrama aportado, señalar sus errores y devolver una versión corregida",
+  "rol": "Revisor de arquitectura exigente que justifica cada objeción y no se guarda nada",
+  "entradas": {
+    "diagrama": "[PEGA AQUÍ EL CÓDIGO MERMAID, PLANTUML O LA DESCRIPCIÓN DEL DIAGRAMA]",
+    "tipo": "[C4 CONTEXTO / C4 CONTENEDORES / C4 COMPONENTES / SECUENCIA]",
+    "para_que_sirve": "[PRESUPUESTAR, PROGRAMAR, PRESENTAR A UN CLIENTE, AUDITORÍA...]",
+    "quien_lo_lee": "[PERFIL DE QUIEN LO VA A LEER]"
+  },
+  "criterios_de_revision": [
+    "Nivel de detalle coherente: no mezclar niveles C4 en un mismo diagrama",
+    "Toda flecha con etiqueta que diga qué se intercambia y en qué sentido",
+    "Ningún elemento huérfano ni sin responsabilidad clara",
+    "Los sistemas externos distinguidos visualmente de los propios",
+    "En secuencias: orden lógico, condiciones explícitas y final claro en cada rama",
+    "Dónde viven los datos personales y los pagos, si aplica",
+    "Nombres coherentes: el mismo elemento se llama igual en todo el diagrama",
+    "Legibilidad: número de elementos razonable y sin cruces innecesarios"
+  ],
+  "pasos": [
+    "Comprobar el diagrama contra cada criterio de revisión",
+    "Clasificar cada problema en grave, medio o cosmético",
+    "Proponer la corrección concreta de cada problema grave y medio",
+    "Reescribir el diagrama corregido manteniendo el estilo original",
+    "Redactar las preguntas que hay que hacerle a quien lo dibujó"
+  ],
+  "restricciones": [
+    "No cambiar decisiones de arquitectura: solo señalar lo que el diagrama no explica",
+    "Cada crítica va acompañada de la corrección: nada de quejas sin solución",
+    "Si el diagrama está bien, decirlo claramente en vez de inventar problemas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Veredicto en una frase y nota del 1 al 10 con su justificación",
+    "bloque_2": "Tabla: problema | gravedad | por qué importa | corrección propuesta",
+    "bloque_3": "Diagrama corregido en código",
+    "bloque_4": "Correo listo para enviar a quien lo hizo, con las 5 correcciones más importantes"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "tarea": "Escribir la fórmula que limpia una columna concreta en una hoja de cálculo y explicar cómo aplicarla",
+  "contexto": {
+    "herramienta": "[EXCEL DE ESCRITORIO, EXCEL 365, GOOGLE SHEETS]",
+    "idioma_formulas": "[ESPAÑOL O INGLÉS: EN EXCEL EN ESPAÑOL LOS SEPARADORES SON PUNTO Y COMA]",
+    "nivel_usuario": "basico"
+  },
+  "entradas": {
+    "columna": "[LETRA DE LA COLUMNA Y QUÉ CONTIENE, EJ: COLUMNA C, NOMBRES DE CLIENTE]",
+    "problema": "[QUÉ ESTÁ MAL: ESPACIOS, MAYÚSCULAS, TEXTO Y NÚMERO JUNTOS, CÓDIGO DENTRO DEL TEXTO...]",
+    "ejemplos": "[PEGA 8 VALORES ACTUALES Y, AL LADO, CÓMO QUIERES QUE QUEDEN]",
+    "primera_fila_datos": "[NÚMERO DE FILA DONDE EMPIEZAN LOS DATOS, NORMALMENTE 2]"
+  },
+  "restricciones": [
+    "Una sola fórmula principal, sin macros ni complementos",
+    "Si la herramienta es Sheets o Excel 365, ofrece también la versión que rellena toda la columna de una vez",
+    "Que la fórmula no dé error cuando la celda está vacía",
+    "Nada de columnas auxiliares salvo que sea imprescindible, y entonces explica por qué"
+  ],
+  "formato_salida": {
+    "bloque_1": "La fórmula lista para pegar, en un bloque de código, con los separadores del idioma indicado",
+    "bloque_2": "Qué hace cada trozo de la fórmula, en una lista de frases cortas",
+    "bloque_3": "Pasos numerados: dónde pegarla, cómo arrastrarla y cómo convertir el resultado en valores fijos",
+    "bloque_4": "Tabla de comprobación con los ejemplos dados y el resultado esperado",
+    "bloque_5": "Dos casos en los que la fórmula fallaría y cómo detectarlos"
+  },
+  "criterios_calidad": [
+    "La fórmula funciona con los ejemplos aportados sin retoques",
+    "No se usan funciones que no existan en la versión indicada",
+    "Explicación entendible por alguien que solo sabe sumar en Excel"
+  ]
+}

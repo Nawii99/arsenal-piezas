@@ -1,0 +1,38 @@
+{
+  "tarea": "Reescribir el material de ayuda de un negocio en fragmentos autoexplicativos para alimentar a un asistente de IA, con reglas de lo que puede y no puede responder",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD]",
+    "nombre_del_asistente": "[CÓMO SE PRESENTA EL BOT]",
+    "idiomas": "[ESPAÑOL / ESPAÑOL E INGLÉS]"
+  },
+  "entradas": {
+    "material_actual": "[PEGA FAQ, POLÍTICAS, FICHAS Y CORREOS TIPO]",
+    "temas_prohibidos": "[EJ: CONSEJO LEGAL, MÉDICO, DESCUENTOS NO AUTORIZADOS, PLAZOS SIN CONFIRMAR]",
+    "datos_sensibles": "[LO QUE EL BOT NUNCA DEBE PEDIR NI MOSTRAR]"
+  },
+  "procedimiento": [
+    "Trocear el material en fragmentos de 80 a 200 palabras, cada uno con una sola idea y entendible por sí solo, sin depender del anterior",
+    "Poner a cada fragmento un título en forma de pregunta y una lista de formas alternativas en que el cliente lo preguntaría",
+    "Sustituir referencias vagas como aquí, arriba o el anterior por el nombre completo de la cosa",
+    "Etiquetar cada fragmento con tema, fecha de validez y si contiene precios o plazos que caducan",
+    "Escribir las reglas del asistente: qué hace si no encuentra la respuesta, cómo deriva a persona y qué nunca afirma",
+    "Listar 15 preguntas de prueba con la respuesta correcta esperada para comprobar que el bot funciona"
+  ],
+  "restricciones": [
+    "Ningún fragmento puede contradecir a otro; si hay conflicto, marcarlo en un apartado de conflictos detectados",
+    "Prohibido rellenar huecos de información: lo que falte se marca como DATO NO DISPONIBLE",
+    "El asistente nunca inventa plazos, precios ni excepciones",
+    "Sin datos personales de clientes reales en los fragmentos"
+  ],
+  "formato_salida": {
+    "tipo": "lista de fichas y dos anexos",
+    "ficha": ["id", "titulo_pregunta", "variantes_de_pregunta", "respuesta", "tema", "caduca", "fuente"],
+    "anexo_1": "Reglas de comportamiento del asistente y frases exactas de derivación",
+    "anexo_2": "Batería de 15 preguntas de prueba con la respuesta esperada"
+  },
+  "criterios_calidad": [
+    "Cada fragmento se entiende leído aislado",
+    "No hay contradicciones sin señalar",
+    "Las reglas cubren qué hacer ante una pregunta fuera de tema"
+  ]
+}

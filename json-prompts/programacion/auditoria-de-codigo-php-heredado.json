@@ -1,0 +1,45 @@
+{
+  "tarea": "Auditar un fichero PHP heredado y devolver los problemas ordenados por gravedad, con el codigo corregido listo para pegar",
+  "contexto": {
+    "negocio": "[QUE HACE TU NEGOCIO]",
+    "que_hace_el_fichero": "[FORMULARIO, LOGIN, LISTADO DE PRODUCTOS, PANEL...]",
+    "version_php_servidor": "[EJEMPLO: 7.4 O 8.2]",
+    "base_de_datos": "[MYSQL, MARIADB O NINGUNA]",
+    "nivel_del_lector": "sin perfil tecnico: explica cada hallazgo en una frase llana antes del codigo"
+  },
+  "entradas": {
+    "codigo_php": "[PEGA AQUI EL CODIGO PHP COMPLETO]"
+  },
+  "revisar_obligatoriamente": [
+    "Inyeccion SQL: consultas montadas concatenando variables en vez de sentencias preparadas con PDO o mysqli",
+    "XSS: variables impresas sin htmlspecialchars con ENT_QUOTES y UTF-8",
+    "Funciones obsoletas o eliminadas: mysql_*, ereg, each, create_function, split",
+    "Subida de ficheros sin validar tipo real, tamano ni carpeta de destino",
+    "Contrasenas o claves de API escritas dentro del codigo",
+    "Errores visibles para el visitante: display_errors activo, var_dump o print_r olvidados",
+    "Formularios que escriben datos sin token CSRF",
+    "include o require con rutas que dependen de lo que envia el usuario",
+    "Avisos al pasar a PHP 8: comparaciones sueltas, variables sin isset, cadenas numericas"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "1. Veredicto en 3 frases: se puede dejar en produccion tal cual, si o no, y por que",
+      "2. Tabla con columnas gravedad (critica/alta/media/baja), linea, que pasa en llano, riesgo real para el negocio",
+      "3. Arreglos: por cada hallazgo, bloque ANTES y bloque DESPUES en PHP, completos y pegables",
+      "4. Fichero corregido entero al final",
+      "5. Comprobaciones manuales antes de subirlo al servidor"
+    ]
+  },
+  "restricciones": [
+    "No inventes lineas que no esten en el codigo pegado: cita el numero de linea real",
+    "No cambies la logica de negocio, solo seguridad, compatibilidad y claridad",
+    "Nada de reescribir con frameworks nuevos: arreglos minimos sobre el codigo existente",
+    "Si falta informacion para decidir, marcalo como DUDA y di que preguntarias"
+  ],
+  "criterios_calidad": [
+    "Todo hallazgo critico lleva su arreglo escrito, no solo el consejo",
+    "El codigo corregido funciona en la version de PHP indicada",
+    "El veredicto se entiende sin buscar nada por internet"
+  ]
+}

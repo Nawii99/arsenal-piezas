@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribir el guion diapositiva a diapositiva de una presentación de ventas para cerrar la venta de [PRODUCTO O SERVICIO]",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_vendes": "[PRODUCTO O SERVICIO Y PRECIO]",
+    "a_quien": "[CARGO Y TIPO DE CLIENTE]",
+    "momento": "[PRIMERA REUNIÓN / SEGUNDA REUNIÓN / ENVÍO POR EMAIL]",
+    "duracion": "[MINUTOS DISPONIBLES]",
+    "alternativa_del_cliente": "[CON QUÉ TE COMPARAN, INCLUIDO NO HACER NADA]",
+    "pruebas": "[CASOS, CIFRAS, CLIENTES O GARANTÍAS QUE TIENES]"
+  },
+  "estructura_obligatoria": [
+    "1 Portada con la promesa concreta, no con el nombre de la empresa",
+    "2 El problema contado con las palabras del cliente",
+    "3 Lo que cuesta no resolverlo",
+    "4 Tu propuesta en una sola frase",
+    "5 Cómo funciona, en 3 pasos",
+    "6 Prueba: caso real o dato verificable",
+    "7 Qué incluye y qué no incluye",
+    "8 Precio y opciones",
+    "9 Objeciones habituales respondidas",
+    "10 Siguiente paso con fecha"
+  ],
+  "reglas": [
+    "Máximo 25 palabras visibles por diapositiva",
+    "Cada titular es una frase que afirma algo, no una etiqueta",
+    "Prohibido inventar datos: lo que falte se marca como [DATO PENDIENTE]",
+    "Si se envía por email, añadir una línea de contexto en cada diapositiva"
+  ],
+  "formato_salida": "Por cada diapositiva: número, titular, texto visible, idea visual y qué dices en voz alta en 2 frases",
+  "criterios_calidad": [
+    "Se entiende la oferta leyendo solo los titulares seguidos",
+    "Hay al menos una prueba concreta antes de hablar de precio",
+    "El cierre pide una acción con fecha"
+  ],
+  "tono": "[CERCANO / SOBRIO / TÉCNICO]"
+}

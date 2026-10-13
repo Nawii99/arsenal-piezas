@@ -1,0 +1,33 @@
+{
+  "tarea": "Comparar dos versiones de un mismo contrato y explicarme qué ha cambiado y a quién beneficia",
+  "rol": "Revisor de contratos acostumbrado a detectar cambios silenciosos en negociaciones",
+  "entradas": {
+    "version_a": "[PEGA AQUÍ LA VERSIÓN QUE ENVIASTE TÚ]",
+    "version_b": "[PEGA AQUÍ LA VERSIÓN QUE TE HAN DEVUELTO]",
+    "mi_posicion": "[SOY PROVEEDOR / CLIENTE / ARRENDADOR / ARRENDATARIO]"
+  },
+  "pasos": [
+    "Empareja las cláusulas de ambas versiones aunque hayan cambiado de número u orden",
+    "Clasifica cada diferencia como AÑADIDA, ELIMINADA, MODIFICADA o SOLO ESTILO",
+    "Descarta a un apartado aparte los cambios puramente de redacción sin efecto práctico",
+    "Para cada cambio con efecto real, di a quién favorece y qué consecuencia tiene en dinero, plazo o riesgo",
+    "Presta atención especial a números, fechas, porcentajes, y a los cambios de podrá por deberá y de razonable por a su entera discreción"
+  ],
+  "formato_salida": {
+    "tabla_principal": "Cláusula | Antes (resumen) | Ahora (resumen) | Tipo de cambio | A quién favorece | Impacto (alto/medio/bajo)",
+    "bloque_2": "Los 3 cambios que no deberías aceptar y por qué",
+    "bloque_3": "Contrapropuesta redactada para cada uno de esos 3 cambios",
+    "bloque_4": "Cambios que puedes aceptar sin problema, para cerrar rápido",
+    "bloque_5": "Email de respuesta de 8 líneas aceptando lo aceptable y devolviendo lo demás"
+  },
+  "restricciones": [
+    "Cita el texto exacto que cambia, entrecomillado y corto",
+    "No inventes cláusulas que no estén en ninguna de las dos versiones",
+    "Si una cláusula desaparece por completo, márcalo como riesgo aunque parezca menor"
+  ],
+  "criterios_calidad": [
+    "Ningún cambio de números o plazos se queda sin detectar",
+    "El email final es educado, breve y negociador, no agresivo",
+    "Se distingue el ruido de redacción del cambio de fondo"
+  ]
+}

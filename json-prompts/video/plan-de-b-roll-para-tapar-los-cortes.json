@@ -1,0 +1,34 @@
+{
+  "tarea": "Planificar las imágenes de apoyo (b-roll) de un vídeo hablado: cuáles, dónde entran, cuánto duran y de dónde salen",
+  "contexto": {
+    "tipo_de_video": "[ENTREVISTA / EXPLICACIÓN A CÁMARA / TESTIMONIO / FORMACIÓN]",
+    "negocio": "[A QUÉ SE DEDICA TU EMPRESA]",
+    "medios": "[MÓVIL / CÁMARA / SOLO BANCO DE IMÁGENES / IA]"
+  },
+  "entradas": {
+    "transcripcion_con_timecodes": "[PEGA AQUÍ EL GUION O LA TRANSCRIPCIÓN CON TIEMPOS]",
+    "cortes_que_se_notan": "[SEGUNDOS DONDE HAY SALTO DE IMAGEN]"
+  },
+  "reglas": [
+    "Prioridad 1: tapar los saltos de imagen de los cortes del hablado",
+    "Prioridad 2: ilustrar lo que se dice cuando la palabra sola no basta",
+    "Duración de cada inserto entre 2 y 4 segundos",
+    "El b-roll entra medio segundo después de que la voz nombre la idea",
+    "No tapar la cara justo cuando dice la frase más importante",
+    "Sin b-roll decorativo: si no aporta, se deja el plano a cámara"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown",
+    "columnas": ["segundo de entrada", "duración", "qué se ve", "motivo (tapar corte / ilustrar)", "origen (grabar, banco, IA)", "prompt o nota de rodaje"],
+    "extras": ["Lista de rodaje agrupada por localización", "Insertos opcionales si sobra tiempo"]
+  },
+  "restricciones": [
+    "Máximo un inserto cada 15 segundos de vídeo",
+    "Todas las tomas propuestas se pueden conseguir con los medios indicados",
+    "El audio original nunca se corta bajo el b-roll"
+  ],
+  "criterios_calidad": [
+    "Cada salto de imagen señalado queda cubierto",
+    "La lista de rodaje cabe en una sola sesión"
+  ]
+}

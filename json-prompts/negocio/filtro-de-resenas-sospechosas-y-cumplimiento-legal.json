@@ -1,0 +1,40 @@
+{
+  "tarea": "Revisar un lote de reseñas para detectar señales de falsedad y comprobar el cumplimiento de las obligaciones de transparencia al publicarlas",
+  "entradas": {
+    "resenas": "[PEGA LAS RESEÑAS CON FECHA, AUTOR Y PUNTUACIÓN]",
+    "como_se_recogen": "[INVITACIÓN TRAS COMPRA / FORMULARIO ABIERTO / IMPORTADAS DE OTRA PLATAFORMA]",
+    "verificas_compra": "[SÍ / NO / SOLO ALGUNAS]",
+    "incentivo_ofrecido": "[NINGUNO / DESCUENTO / SORTEO / PRODUCTO GRATIS]",
+    "donde_se_muestran": "[FICHA DE PRODUCTO / HOME / ANUNCIOS]"
+  },
+  "senales_a_evaluar": [
+    "Picos de reseñas en pocas horas o días sin campaña que lo explique",
+    "Vocabulario de marketing impropio de un cliente y repetición de la misma estructura",
+    "Elogios genéricos sin ningún detalle del uso real",
+    "Mención del nombre completo del producto tal y como aparece en la ficha",
+    "Autores sin más historial o con nombres muy similares entre sí",
+    "Todas de 5 estrellas, sin ninguna crítica intermedia",
+    "Reseñas que hablan de otro producto o de otra tienda"
+  ],
+  "revision_legal": [
+    "Comprobar si se informa de forma clara de cómo se recogen y verifican las reseñas",
+    "Comprobar si se distingue entre reseña verificada y no verificada",
+    "Comprobar si los incentivos se declaran visiblemente",
+    "Comprobar que no se eliminan reseñas negativas legítimas ni se filtran por nota",
+    "Comprobar que la nota media mostrada incluye todas las reseñas publicadas"
+  ],
+  "restricciones": [
+    "Marcar cada reseña como probable, dudosa o sin señales, nunca afirmar con certeza que es falsa",
+    "No acusar a personas concretas",
+    "Recordar que esto es una revisión práctica y no asesoramiento jurídico"
+  ],
+  "formato_salida": {
+    "tabla": "Columnas: nº de reseña, veredicto, señales detectadas, acción sugerida",
+    "bloque_legal": "Lista de incumplimientos detectados y el texto exacto que deberías añadir en tu web",
+    "resumen": "Porcentaje de reseñas dudosas y riesgo global bajo, medio o alto"
+  },
+  "criterios_calidad": [
+    "Cada veredicto cita la señal concreta que lo motiva",
+    "El texto legal propuesto está en español llano y listo para pegar"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Rehaz mi formulario web para que sea accesible y fácil de rellenar, y devuelve el HTML corregido más los textos de ayuda y de error",
+  "contexto": {
+    "formulario": "[PEGA AQUÍ EL HTML ACTUAL O LA LISTA DE CAMPOS]",
+    "objetivo": "[CONTACTO / PRESUPUESTO / RESERVA / ALTA / PAGO]",
+    "campos_obligatorios": "[CUÁLES SON OBLIGATORIOS DE VERDAD]",
+    "donde_se_envia": "[EMAIL, CRM, HOJA DE CÁLCULO...]"
+  },
+  "reglas_a_aplicar": [
+    "Cada campo con etiqueta visible asociada por for e id, nunca solo con el placeholder",
+    "Agrupa opciones relacionadas con fieldset y legend, por ejemplo la forma de pago",
+    "Indica lo obligatorio en el texto de la etiqueta, no solo con un asterisco rojo",
+    "Añade autocomplete correcto: name, email, tel, postal-code, street-address",
+    "Usa el tipo de campo adecuado: email, tel, date, number",
+    "Pon las instrucciones y el formato esperado antes del campo, no después",
+    "Errores en texto junto al campo, diciendo cómo arreglarlo, más un resumen arriba con enlace a cada campo",
+    "Al enviar con errores, el foco va al resumen y los mensajes se anuncian con aria-live",
+    "No borres lo escrito al fallar la validación ni pongas límite de tiempo",
+    "El botón de envío dice qué pasa al pulsarlo, nada de 'Enviar' a secas"
+  ],
+  "formato_salida": {
+    "1_html_corregido": "Código completo en un bloque, con las explicaciones fuera del bloque y en lenguaje llano",
+    "2_tabla_de_cambios": ["Campo", "Qué estaba mal", "Qué se ha cambiado", "Por qué"],
+    "3_textos": "Lista de mensajes de error y de éxito, uno por campo, en español de España",
+    "4_prueba_rapida": "5 comprobaciones que pueda hacer yo mismo con el teclado para verificar que funciona"
+  },
+  "restricciones": [
+    "No añadas librerías ni dependencias externas",
+    "No uses aria-label para sustituir una etiqueta que debería verse",
+    "No pidas datos que no hagan falta para el objetivo del formulario"
+  ],
+  "criterios_calidad": [
+    "Se puede rellenar y enviar entero solo con el teclado",
+    "Cada error dice qué hacer, no solo que hay un error"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "tarea": "Diseñar la estructura de planes y la pantalla de pago de una app, con textos exactos, orden de los planes y reglas de transparencia obligatorias",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ RESUELVE]",
+    "valor_principal": "[LO QUE EL USUARIO CONSIGUE Y NO PUEDE HACER GRATIS EN OTRO SITIO]",
+    "limite_gratuito": "[QUÉ SE PUEDE HACER SIN PAGAR]",
+    "costes": "[LO QUE TE CUESTA CADA USUARIO AL MES]",
+    "competencia": "[PRECIOS DE 2 O 3 ALTERNATIVAS]",
+    "tipo_de_cobro": "[SUSCRIPCIÓN MENSUAL / ANUAL / PAGO ÚNICO / CONSUMIBLES]",
+    "momento_de_mostrarla": "[CUÁNDO APARECE LA PANTALLA HOY]"
+  },
+  "reglas_obligatorias": [
+    "Antes de pagar deben verse: qué se cobra, cada cuánto, cuándo empieza el cobro si hay prueba y cómo se cancela",
+    "Dentro de la app el cobro pasa por el sistema de compras de la tienda cuando el contenido es digital",
+    "El precio se muestra en euros y con impuestos incluidos para el consumidor",
+    "El plan anual se enseña también dividido en su equivalente mensual, sin ocultar el cargo total",
+    "Prohibido cargar antes de que termine la prueba sin avisar"
+  ],
+  "metodo": [
+    "1. Definir el límite gratuito de forma que se note el valor pero se agote con el uso normal",
+    "2. Elegir un máximo de 3 planes y marcar uno recomendado, el del medio",
+    "3. Calcular el precio partiendo del coste por usuario y del ahorro o ingreso que le genera, no de lo que cobra el vecino",
+    "4. Decidir si hay prueba gratuita y de cuántos días, y qué recordatorio se envía antes del cobro",
+    "5. Escribir la pantalla: promesa arriba, 3 beneficios en verbo, planes, botón, letra pequeña, restaurar compra y cerrar",
+    "6. Escribir la pantalla de cancelación: qué pierde y qué alternativa hay, sin poner trabas",
+    "7. Definir el momento exacto en que aparece: tras el primer resultado útil o al topar con el límite"
+  ],
+  "errores_a_evitar": [
+    "Enseñar la pantalla de pago antes de que el usuario haya obtenido nada",
+    "Esconder la equis de cerrar o dificultar la salida",
+    "Cuatro o más planes con diferencias que nadie entiende",
+    "Listar funciones técnicas en vez de resultados",
+    "Olvidar el botón de restaurar compra, que además exigen las tiendas",
+    "Prueba gratuita que pide tarjeta sin decirlo claro"
+  ],
+  "formato_salida": {
+    "tabla_planes": "Plan, precio, periodo, qué incluye, para quién es, cuál es el recomendado",
+    "pantalla": "Todos los textos en orden con su posición, incluidos botón principal, botón secundario y letra pequeña",
+    "letra_pequena": "Texto legal de renovación y cancelación adaptado a la tienda",
+    "disparadores": "Los 3 momentos concretos en que se muestra la pantalla",
+    "secuencia_de_prueba": "Avisos que recibe el usuario durante la prueba gratuita, con día y texto",
+    "variantes": "2 versiones de la promesa principal para comparar",
+    "metricas": "Qué mirar: de cada 100 que ven la pantalla cuántos empiezan, cuántos pagan y cuántos cancelan el primer mes"
+  },
+  "criterios_calidad": [
+    "El usuario entiende en 5 segundos qué paga, cuánto y cada cuánto",
+    "Se puede cerrar la pantalla sin esfuerzo",
+    "Los beneficios están escritos como resultados y no como funciones",
+    "Aparece restaurar compra y la vía de cancelación",
+    "El precio cubre el coste por usuario con margen y está justificado por escrito"
+  ]
+}

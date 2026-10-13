@@ -1,0 +1,37 @@
+{
+  "tarea": "Crear el plan de pruebas, alertas y plan B de una automatización antes de ponerla en marcha",
+  "rol": "Responsable de calidad que piensa en todo lo que puede salir mal",
+  "entradas": {
+    "que_hace_la_automatizacion": "[DESCRÍBELA EN 3 FRASES]",
+    "apps_implicadas": "[LISTA DE APPS Y CONEXIONES]",
+    "frecuencia": "[CADA CUÁNTO SE EJECUTA]",
+    "consecuencia_de_un_fallo": "[UN CLIENTE NO RECIBE ALGO, UNA FACTURA NO SE EMITE, SE DUPLICAN DATOS]",
+    "quien_debe_enterarse": "[NOMBRE Y CANAL DEL AVISO]"
+  },
+  "metodo": [
+    "Escribe casos de prueba con dato de entrada y resultado esperado, incluyendo el caso normal y los raros",
+    "Incluye siempre estos casos límite: campo vacío, acento o ñ, importe cero, fecha rara, texto larguísimo, ejecución duplicada",
+    "Prueba también qué pasa si una app está caída o si caduca la conexión",
+    "Define las alertas: qué avisa, a quién, por qué canal y con qué texto",
+    "Establece un control de vida: cómo sabes que sigue funcionando aunque no falle nada",
+    "Escribe el plan B manual para hacer la tarea a mano mientras se arregla",
+    "Define una revisión periódica y qué se mira en ella"
+  ],
+  "restricciones": [
+    "Las pruebas se hacen con datos falsos o con tu propio correo, nunca con clientes reales",
+    "Toda automatización que envíe algo a un cliente arranca en modo revisión durante [DÍAS] días"
+  ],
+  "formato_salida": {
+    "tabla_pruebas": ["nº", "caso", "dato_de_entrada", "resultado_esperado", "ok_o_ko"],
+    "alertas": ["situación", "aviso", "canal", "texto_del_aviso"],
+    "control_de_vida": "Cómo comprobar cada semana que sigue viva",
+    "plan_b": "Pasos manuales mientras esté caída",
+    "semaforo_de_activacion": "Qué tiene que estar en verde para activarla"
+  },
+  "criterios_calidad": [
+    "Hay al menos 10 casos de prueba y la mitad son casos raros",
+    "Ninguna alerta se queda sin destinatario",
+    "El plan B lo puede ejecutar alguien que no montó la automatización"
+  ],
+  "tono": "Preventivo y concreto, español de España, tuteando"
+}

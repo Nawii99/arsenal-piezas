@@ -1,0 +1,53 @@
+{
+  "tarea": "Preparar la hoja de negociación de una venta concreta: suelo, concesiones con contrapartida y frases de cierre",
+  "contexto": {
+    "vendedor": "[TU NEGOCIO]",
+    "operacion": "[QUÉ SE NEGOCIA Y POR CUÁNTO]",
+    "contraparte": "[CLIENTE Y QUÉ SABES DE SU SITUACIÓN]",
+    "formato": "[REUNIÓN / LLAMADA / CORREO]"
+  },
+  "entradas": {
+    "precio_de_salida": "[IMPORTE Y ALCANCE INCLUIDO]",
+    "coste_real": "[HORAS Y GASTOS QUE TE CUESTA HACERLO]",
+    "suelo": "[POR DEBAJO DE ESTE IMPORTE PREFIERES NO HACERLO]",
+    "tu_alternativa": "[QUÉ HARÍAS CON ESE TIEMPO SI NO SALE: OTRO CLIENTE, DESCANSO, PROYECTO PROPIO]",
+    "lo_que_te_importa": "[PLAZO, COBRO POR ADELANTADO, PERMISO PARA ENSEÑARLO, VOLUMEN, RECOMENDACIÓN]",
+    "lo_que_le_importa": "[LO QUE HA DICHO QUE NECESITA]"
+  },
+  "pasos": [
+    "1. Calcula y escribe el suelo con números, no con sensaciones, usando coste real más el margen mínimo que aceptas",
+    "2. Lista tus monedas de cambio: cosas que valen mucho para el cliente y te cuestan poco, y al revés",
+    "3. Construye la matriz: por cada concesión posible, cuánto te cuesta, qué pides a cambio y la frase exacta para plantearlo",
+    "4. Prepara tres paquetes cerrados en vez de un precio suelto: reducido, estándar y ampliado, con precio y alcance",
+    "5. Escribe la respuesta a la petición de descuento directa, sin dar el número a la primera",
+    "6. Define la señal de retirada: qué frase o condición te hace decir que así no y cómo lo dices sin cerrar la puerta",
+    "7. Anota las tres preguntas que harás antes de mover ningún precio"
+  ],
+  "restricciones": [
+    "Ninguna concesión sin contrapartida, ni siquiera pequeña",
+    "Prohibido bajar el precio manteniendo el mismo alcance",
+    "Prohibido dar dos concesiones seguidas sin respuesta del cliente en medio",
+    "El suelo se escribe antes de la reunión y no se toca durante",
+    "Todo acuerdo se resume por escrito el mismo día"
+  ],
+  "errores_tipicos": [
+    "Negociar sin saber cuánto te cuesta el trabajo",
+    "Ceder rápido para caer bien y quedarte con un cliente que no paga lo que vale",
+    "Hablar de precio antes de que el cliente haya dicho qué necesita de verdad",
+    "Regatear sobre un único número en vez de mover alcance, plazo y forma de pago",
+    "No tener alternativa y negociar desde el miedo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha de preparación: precio de salida, suelo, alternativa y objetivo",
+    "bloque_2": "Matriz en tabla: concesión, coste para mí, valor para el cliente, contrapartida que pido, frase literal",
+    "bloque_3": "Los tres paquetes con precio y alcance en una tabla comparable",
+    "bloque_4": "Guion de respuestas a las peticiones de descuento más probables",
+    "bloque_5": "Frase de retirada y plantilla de resumen del acuerdo"
+  },
+  "criterios_calidad": [
+    "El suelo está en euros y cuadra con el coste real",
+    "Cada fila de la matriz tiene contrapartida, ninguna está vacía",
+    "Los paquetes se diferencian en alcance, no solo en precio",
+    "Puedes leer las frases en voz alta sin sonar agresivo"
+  ]
+}

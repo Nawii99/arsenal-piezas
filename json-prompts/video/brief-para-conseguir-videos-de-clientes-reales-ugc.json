@@ -1,0 +1,45 @@
+{
+  "tarea": "Crear el paquete completo para pedir vídeos testimoniales a clientes reales: invitación, preguntas, instrucciones de grabación y permiso de uso",
+  "contexto": {
+    "producto": "[PRODUCTO O SERVICIO]",
+    "perfil_cliente_objetivo": "[QUÉ TIPO DE CLIENTE QUIERES QUE SALGA]",
+    "compensacion": "[NADA / DESCUENTO / PRODUCTO GRATIS / PAGO]",
+    "uso_previsto": "[FICHA DE PRODUCTO / ANUNCIOS DE PAGO / REDES / EMAIL]",
+    "duracion_deseada": "[SEGUNDOS DE VÍDEO FINAL]"
+  },
+  "entregables": [
+    "Mensaje de invitación por email y versión corta para WhatsApp",
+    "Guion de 6 a 8 preguntas abiertas ordenadas de fácil a comprometida",
+    "Instrucciones de grabación con móvil, en lenguaje de persona normal",
+    "Texto de cesión de derechos de imagen, claro y breve",
+    "Checklist para descartar un vídeo antes de usarlo"
+  ],
+  "criterios_de_las_preguntas": [
+    "Empezar por la situación antes de comprar, no por el producto",
+    "Preguntar por la duda que casi le impide comprar",
+    "Pedir un detalle concreto y medible del resultado, sin exigir cifras inventadas",
+    "Incluir una pregunta sobre lo que menos le gusta, para que el testimonio suene real",
+    "Cerrar con a quién se lo recomendaría y por qué"
+  ],
+  "instrucciones_grabacion": [
+    "Móvil en vertical, cámara a la altura de los ojos y apoyada",
+    "Grabar de día junto a una ventana, con la luz de frente y nunca a la espalda",
+    "Hablar cerca del móvil o con auriculares, en una habitación sin eco ni ruido",
+    "Fondo ordenado y relacionado con el uso del producto",
+    "Responder cada pregunta en una toma separada, empezando la frase con la pregunta incluida"
+  ],
+  "restricciones": [
+    "No dictar frases al cliente ni pedirle que diga algo concreto",
+    "No condicionar la compensación a que el testimonio sea positivo",
+    "Pedir permiso por escrito antes de usar el vídeo en publicidad de pago",
+    "No usar afirmaciones de salud, ingresos o resultados garantizados"
+  ],
+  "formato_salida": {
+    "tipo": "documento por bloques, cada uno listo para copiar y enviar",
+    "tono": "[CERCANO / PROFESIONAL], tuteando y sin jerga"
+  },
+  "criterios_calidad": [
+    "Un cliente sin experiencia puede grabar todo en menos de 15 minutos siguiendo el documento",
+    "Las preguntas producen respuestas con historia, no monosílabos"
+  ]
+}

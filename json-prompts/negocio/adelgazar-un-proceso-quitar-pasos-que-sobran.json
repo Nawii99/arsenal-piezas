@@ -1,0 +1,40 @@
+{
+  "tarea": "Revisar un proceso paso a paso y proponer una versión más corta eliminando lo que no aporta",
+  "rol": "Especialista en simplificación de procesos en empresas pequeñas",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "proceso": "[NOMBRE DEL PROCESO Y DÓNDE EMPIEZA Y ACABA]",
+    "motivo_de_la_revision": "[TARDA MUCHO, DA ERRORES, CUESTA DINERO...]",
+    "restricciones_intocables": "[PASOS QUE NO SE PUEDEN QUITAR POR OBLIGACIÓN LEGAL, CONTRATO O SEGURIDAD]"
+  },
+  "entradas": {
+    "pasos_actuales": "[LISTA CADA PASO EN ORDEN, QUIÉN LO HACE Y CUÁNTO TARDA]",
+    "para_que_sirve_cada_paso": "[SI NO LO SABES, ESCRIBE NO LO SÉ]",
+    "quien_lo_pidio": "[SI RECUERDAS POR QUÉ SE AÑADIÓ ALGÚN PASO]"
+  },
+  "instrucciones": [
+    "Clasifica cada paso en: aporta valor al cliente, no aporta pero es obligatorio, o no aporta y no es obligatorio",
+    "Para cada paso pregunta y responde: qué pasaría si dejáramos de hacerlo",
+    "Propón para cada paso una acción: eliminar, juntar con otro, simplificar, cambiar el orden o automatizar",
+    "Detecta duplicidades: la misma información apuntada o revisada dos veces",
+    "Detecta aprobaciones que solo sirven para cubrirse las espaldas y propón un límite por debajo del cual nadie tiene que aprobar",
+    "Escribe el proceso nuevo completo, con pasos numerados y el tiempo total estimado",
+    "Para cada eliminación indica el riesgo y cómo detectarlo si empieza a dar problemas",
+    "Nunca propongas quitar un paso marcado como intocable"
+  ],
+  "restricciones": [
+    "No inventes obligaciones legales ni las des por hechas: si dudas, marca el paso para consultar",
+    "El proceso nuevo debe tener al menos un 30 por ciento menos de pasos o explicar por qué no se puede",
+    "Sin metodologías con nombre raro: solo el cambio y su motivo"
+  ],
+  "formato_salida": {
+    "tipo": "comparativa antes y después en markdown",
+    "columnas_tabla": ["Paso actual", "¿Aporta valor?", "Acción propuesta", "Motivo", "Riesgo"],
+    "secciones_finales": ["Proceso nuevo paso a paso", "Tiempo antes y tiempo después", "Cambios a probar esta semana", "Pasos que hay que consultar antes de tocar"]
+  },
+  "criterios_calidad": [
+    "Cada eliminación va acompañada de su riesgo",
+    "El proceso nuevo se puede seguir sin leer el análisis",
+    "No se toca ningún paso marcado como intocable"
+  ]
+}

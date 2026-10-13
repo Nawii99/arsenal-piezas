@@ -1,0 +1,55 @@
+{
+  "tarea": "Monta el inventario de accesos y claves de mi negocio y dame el plan para retirar accesos y rotar credenciales sin dejar nada roto",
+  "contexto": {
+    "situacion": "[QUÉ LO DISPARA: sale un colaborador, sospecha de filtración, orden general, entrada de socio]",
+    "sistemas": "[DÓNDE HAY CUENTAS: hosting, dominio, banco, pasarela de cobro, redes, correo, herramientas de IA, repositorios]",
+    "personas": "[QUIÉN TRABAJA O HA TRABAJADO CONMIGO Y CON QUÉ]",
+    "perfil": "sin perfil técnico: indícame el menú exacto donde se revoca cada acceso"
+  },
+  "entradas": {
+    "listado_de_cuentas": "[LO QUE RECUERDE: servicio, quién es el titular, quién entra]",
+    "integraciones": "[QUÉ AUTOMATIZACIONES USAN CLAVES DE API Y PARA QUÉ]",
+    "gestor_de_contrasenas": "[SI USO ALGUNO Y CUÁL]"
+  },
+  "pasos": [
+    "1. Lista servicio por servicio: quién es el titular de la cuenta, quién tiene usuario propio y quién entra con una cuenta compartida",
+    "2. Marca los servicios críticos: dominio, correo, cobros, banco y la cuenta desde la que se recuperan las demás",
+    "3. Comprueba en cada uno la verificación en dos pasos y dónde están guardados los códigos de recuperación",
+    "4. Localiza las claves de API: dónde están escritas, con qué permisos y desde qué automatización se usan",
+    "5. Ordena la rotación por impacto y anota, antes de cambiar cada clave, qué automatizaciones dejarán de funcionar",
+    "6. Rota creando primero la clave nueva, actualizando los sitios que la usan y revocando la vieja al final",
+    "7. En la salida de una persona: quita sus usuarios, cierra sus sesiones activas, cambia contraseñas compartidas y reasigna la titularidad de lo que estuviera a su nombre",
+    "8. Deja escrito el procedimiento de alta y baja para la próxima vez"
+  ],
+  "que_mirar": [
+    "cuentas compartidas con una contraseña que sabe todo el mundo",
+    "claves pegadas en chats, hojas de cálculo o en el código de la web",
+    "claves con todos los permisos cuando solo necesitan leer",
+    "cuál es el correo de recuperación de cada cuenta y quién lo controla",
+    "accesos de agencias y freelances antiguos que siguen abiertos"
+  ],
+  "errores_tipicos": [
+    "revocar una clave sin saber qué se rompe y quedarte sin cobrar pedidos",
+    "perder los códigos de recuperación al cambiar de móvil y bloquearte tú mismo",
+    "dejar la cuenta del dominio a nombre de la agencia que te hizo la web",
+    "cambiar la contraseña pero no cerrar las sesiones ya abiertas",
+    "guardar todo en un cuaderno y no tener copia"
+  ],
+  "restricciones": [
+    "nunca me pidas que te pegue una contraseña o una clave real",
+    "todo cambio crítico debe llevar su prueba de que sigue funcionando",
+    "si algo requiere ser titular de la cuenta, avísame antes de empezar"
+  ],
+  "formato_salida": {
+    "1_tabla_accesos": "servicio | titular | quién entra | tipo de acceso | dos pasos sí/no | criticidad | acción",
+    "2_orden_de_rotacion": "clave | qué la usa | pasos para rotar | prueba posterior",
+    "3_checklist_de_salida": "lista cerrada para cuando alguien deja de colaborar",
+    "4_reglas_futuras": "cinco reglas breves de alta, permisos y almacenamiento de claves"
+  },
+  "criterios_calidad": [
+    "ninguna cuenta crítica queda con titular desconocido",
+    "cada rotación indica qué se rompe y cómo se comprueba después",
+    "la lista de salida se puede ejecutar en menos de una hora",
+    "no aparece ninguna credencial escrita en el documento"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Escribir un script de Python con pandas que limpie un fichero recurrente de forma reproducible",
+  "contexto": {
+    "frecuencia": "[CADA CUÁNTO LO EJECUTAS: SEMANAL, MENSUAL]",
+    "nivel_usuario": "no sé programar, necesito instrucciones de instalación y ejecución paso a paso",
+    "entorno": "[WINDOWS, MAC O GOOGLE COLAB]"
+  },
+  "entradas": {
+    "fichero_origen": "[NOMBRE Y FORMATO: CSV CON PUNTO Y COMA, XLSX, HOJA CONCRETA...]",
+    "columnas_y_tipos": "[LISTA DE COLUMNAS Y QUÉ DEBERÍA SER CADA UNA]",
+    "reglas_de_limpieza": "[LO QUE HACES HOY A MANO, EN FRASES SUELTAS]",
+    "salida_deseada": "[COLUMNAS Y FORMATO DEL FICHERO FINAL]"
+  },
+  "requisitos_del_script": [
+    "Rutas de entrada y salida en variables al principio del fichero, bien señaladas",
+    "Leer respetando la codificación y el separador, con aviso claro si falla",
+    "Cada regla de limpieza en su propia función con nombre en español y un comentario de una línea",
+    "Validaciones antes de guardar: columnas esperadas presentes, tipos correctos, sin duplicados de clave, importes dentro de un rango razonable",
+    "Nunca sobrescribir el fichero original; guardar la salida con la fecha en el nombre",
+    "Registro final por pantalla: filas leídas, filas descartadas y motivo, filas escritas",
+    "Guardar aparte un fichero de rechazos con las filas que no han pasado las validaciones"
+  ],
+  "restricciones": [
+    "Solo pandas y librerías estándar",
+    "Nada de borrar filas en silencio",
+    "Código comentado en español y sin abreviaturas crípticas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Script completo en un único bloque de código",
+    "bloque_2": "Instrucciones de instalación y ejecución numeradas",
+    "bloque_3": "Qué mirar en el registro para saber si ha ido bien",
+    "bloque_4": "Qué cambiar en el script si el mes que viene añaden una columna"
+  },
+  "criterios_calidad": [
+    "El script se ejecuta sin editar nada más que las rutas",
+    "Toda fila descartada queda registrada con su motivo"
+  ]
+}

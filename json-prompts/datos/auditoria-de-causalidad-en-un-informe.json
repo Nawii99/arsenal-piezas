@@ -1,0 +1,34 @@
+{
+  "tarea": "Auditar un informe o afirmación basada en datos y detectar confusiones entre correlación y causalidad, sesgos de selección y métricas mal atribuidas, proponiendo cómo comprobar cada afirmación",
+  "entradas": {
+    "material_a_auditar": "[PEGA AQUÍ EL INFORME, LAS CIFRAS O LA AFIRMACIÓN]",
+    "quien_lo_presenta": "[EQUIPO INTERNO / AGENCIA / PROVEEDOR]",
+    "decision_en_juego": "[QUÉ SE VA A DECIDIR CON ESTO Y CUÁNTO DINERO IMPLICA]",
+    "datos_disponibles_en_casa": "[QUÉ PUEDES CONSULTAR TÚ MISMO PARA VERIFICAR]"
+  },
+  "procedimiento": [
+    "1. Extraer cada afirmación con datos en una lista, tal cual está redactada",
+    "2. Clasificar cada una como: hecho medido, correlación, causalidad afirmada o interpretación",
+    "3. Para cada causalidad afirmada, buscar el patrón de fallo: falta de grupo de control, variable oculta, selección de los mejores casos, atribución de último clic, cambio de definición de la métrica, periodo elegido a conveniencia, tamaño de muestra minúsculo, comparación con un periodo malo",
+    "4. Señalar métricas de vanidad que no llevan a dinero y proponer la métrica sustituta",
+    "5. Para las afirmaciones importantes, proponer una comprobación barata y concreta que se pueda hacer esta semana",
+    "6. Redactar 5 preguntas incómodas y educadas para hacerle a quien presenta el informe"
+  ],
+  "restricciones": [
+    "No descalificar el informe entero; separar lo que sí se sostiene de lo que no",
+    "Cada objeción debe citar la frase o el dato concreto del material",
+    "Nada de acusaciones de mala fe: hablar de método, no de intenciones",
+    "Si falta información para juzgar, decirlo en vez de suponer"
+  ],
+  "formato_salida": {
+    "semaforo": "Tabla: afirmación, tipo, veredicto (verde sostenida, ámbar dudosa, roja no sostenida), motivo en una línea",
+    "lo_que_si_se_sostiene": "Lista breve",
+    "riesgo_para_la_decision": "Párrafo sobre qué pasaría si se decide con estos datos y resultan estar mal",
+    "comprobaciones": "Tabla: qué comprobar, cómo, con qué dato, cuánto se tarda",
+    "preguntas_para_la_reunion": "5 preguntas numeradas, listas para leer en voz alta"
+  },
+  "criterios_calidad": [
+    "Ninguna objeción es genérica: todas apuntan a una frase concreta",
+    "Las comprobaciones propuestas son ejecutables sin contratar a nadie"
+  ]
+}

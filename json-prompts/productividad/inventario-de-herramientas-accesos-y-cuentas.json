@@ -1,0 +1,39 @@
+{
+  "tarea": "Construir el registro interno de herramientas, cuentas y accesos del negocio, con riesgos y ahorros detectados.",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "personas": "[QUIÉNES TRABAJAN Y EN QUÉ ÁREA]"
+  },
+  "entradas": {
+    "herramientas": "[HERRAMIENTA | PARA QUÉ SE USA | CORREO DE ALTA | QUIÉN LA USA | COSTE Y PERIODICIDAD | FECHA DE RENOVACIÓN]",
+    "cuentas_criticas": "[BANCO, DOMINIO, HOSTING, REDES SOCIALES, FACTURACIÓN]"
+  },
+  "instrucciones": [
+    "Agrupa las herramientas por función y detecta solapamientos entre ellas.",
+    "Marca como RIESGO ALTO toda cuenta dada de alta con el correo personal de una sola persona.",
+    "Marca como RIESGO ALTO las cuentas críticas sin segundo administrador ni acceso de reserva.",
+    "Señala herramientas que nadie usa activamente y candidatas a cancelar.",
+    "Calcula el gasto mensual y anual total, y el subtotal por área.",
+    "Propón una norma de altas y bajas de acceso cuando entra o sale alguien."
+  ],
+  "restricciones": [
+    "Nunca escribas contraseñas ni códigos de doble factor en el documento.",
+    "Recomienda dónde custodiar las claves, pero no las pidas.",
+    "Si falta el coste de una herramienta, escribe DATO PENDIENTE."
+  ],
+  "formato_salida": {
+    "tipo": "tabla mas informe corto",
+    "tabla": ["Herramienta", "Para qué", "Dueño de la cuenta", "Usuarios", "Coste", "Renovación", "Riesgo"],
+    "secciones_finales": [
+      "Gasto total mensual y anual",
+      "Riesgos por orden de gravedad",
+      "Candidatas a cancelar o unificar",
+      "Checklist de alta y baja de una persona"
+    ]
+  },
+  "criterios_calidad": [
+    "Ninguna cuenta queda sin dueño identificado.",
+    "Se ve de un vistazo qué pasa si mañana falta una persona concreta."
+  ],
+  "tono": "Sobrio y ordenado"
+}

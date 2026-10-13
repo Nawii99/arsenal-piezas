@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar el comunicado inicial de una incidencia que afecta a varios clientes, adaptado a cada canal, y las dos actualizaciones siguientes",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "tono": "[CERCANO / NEUTRO / FORMAL]",
+    "canales": "[EMAIL, WHATSAPP, INSTAGRAM, WEB, TELÉFONO]",
+    "quien_firma": "[NOMBRE Y CARGO DE QUIEN FIRMA]"
+  },
+  "entradas": {
+    "que_ha_pasado": "[DESCRIBE EL FALLO EN UNA O DOS FRASES]",
+    "desde_cuando": "[FECHA Y HORA DE INICIO]",
+    "a_quien_afecta": "[TODOS / SOLO PEDIDOS DE X DÍA / SOLO UNA ZONA / SOLO UN PRODUCTO]",
+    "que_sabemos": "[HECHOS CONFIRMADOS]",
+    "que_no_sabemos": "[LO QUE AÚN SE ESTÁ MIRANDO]",
+    "apaño_temporal": "[QUÉ PUEDE HACER EL CLIENTE MIENTRAS TANTO, SI HAY ALGO]",
+    "proximo_aviso": "[HORA CONCRETA DE LA SIGUIENTE ACTUALIZACIÓN]"
+  },
+  "pasos": [
+    "Empieza reconociendo el problema en la primera línea, sin preámbulos ni agradecimientos de relleno",
+    "Di a quién afecta y a quién no, para que quien no esté afectado deje de escribir",
+    "Explica qué se está haciendo ahora mismo en lenguaje llano",
+    "Da el apaño temporal si existe; si no existe, dilo claramente",
+    "Cierra con la hora exacta del próximo aviso y dónde consultarlo",
+    "Genera las variantes por canal respetando el largo de cada uno",
+    "Prepara la actualización de seguimiento y el mensaje de cierre cuando se resuelva"
+  ],
+  "restricciones": [
+    "Prohibido dar una causa no confirmada o echar la culpa a un proveedor por su nombre",
+    "Prohibidas las frases vacías: nada de trabajamos sin descanso, disculpen las molestias como única disculpa, incidencia puntual",
+    "No prometas una hora de resolución si no la sabes: promete una hora de próxima actualización",
+    "Sin tecnicismos: si hay que nombrar algo técnico, explícalo en media línea"
+  ],
+  "formato_salida": {
+    "tipo": "bloques listos para copiar",
+    "bloques": ["Email (asunto + cuerpo, máx 150 palabras)", "WhatsApp o SMS (máx 320 caracteres)", "Publicación en redes (máx 80 palabras)", "Aviso corto para la web o el contestador (máx 40 palabras)", "Respuesta breve para quien escriba preguntando", "Actualización de seguimiento", "Mensaje de cierre cuando se resuelva"]
+  },
+  "criterios_calidad": [
+    "Un cliente entiende en 10 segundos si le afecta y qué tiene que hacer",
+    "Toda afirmación es un hecho de que_sabemos, nada inventado",
+    "Hay una hora concreta de próximo aviso en todas las versiones"
+  ]
+}

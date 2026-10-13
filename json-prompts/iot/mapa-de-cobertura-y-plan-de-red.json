@@ -1,0 +1,56 @@
+{
+  "tarea": "Diseñar el plan de red inalámbrica de una instalación domótica ANTES de comprar y colocar dispositivos: dónde hay cobertura, dónde falta y qué equipo mínimo hace falta.",
+  "contexto": {
+    "perfil": "Persona sin formación técnica que instala domótica en [VIVIENDA / LOCAL / OFICINA / NAVE]",
+    "inmueble": {
+      "metros": "[M2]",
+      "plantas": "[NUMERO DE PLANTAS Y SI HAY SOTANO O GARAJE]",
+      "paredes": "[LADRILLO / PLADUR / HORMIGON / PIEDRA / NO LO SE]",
+      "obstaculos": "[ESPEJOS GRANDES, ARMARIO METALICO, ASCENSOR, CAMARA FRIGORIFICA, SUELO RADIANTE]"
+    },
+    "red_actual": {
+      "router": "[MARCA Y MODELO DEL ROUTER DEL OPERADOR]",
+      "ubicacion_router": "[PLANTA Y HABITACION]",
+      "extras_ya_instalados": "[REPETIDORES, PLC, MALLA WIFI O NINGUNO]"
+    },
+    "dispositivos_previstos": "[LISTA CON CANTIDADES: SENSORES DE PUERTA, ENCHUFES, CAMARAS, TERMOSTATO, CERRADURA]"
+  },
+  "entradas": {
+    "medidas_tomadas": "[TABLA: ESTANCIA | SENAL EN dBm O BARRAS | APP USADA | HORA]",
+    "presupuesto_para_red": "[EUROS]",
+    "puede_pasar_cable": "[SI / NO / SOLO POR CANALETA]"
+  },
+  "procedimiento": [
+    "1. Clasifica cada dispositivo por banda y protocolo: wifi 2,4 GHz, wifi 5 GHz, Zigbee, Z-Wave, Thread, Bluetooth o cable.",
+    "2. Marca las estancias con senal peor de -70 dBm como zona de riesgo y peor de -80 dBm como zona inviable.",
+    "3. Comprueba si el router emite 2,4 y 5 GHz con el MISMO nombre de red: eso rompe el alta de casi todos los enchufes y bombillas.",
+    "4. Decide la puerta de enlace: si hay mas de 8 dispositivos de bateria, propon Zigbee o Thread con coordinador central en vez de wifi.",
+    "5. Situa el coordinador lejos del router y del cuadro electrico, con alargador USB, nunca pegado a la caja del operador.",
+    "6. Coloca repetidores o enchufes Zigbee con corriente formando cadena: ninguno a mas de una pared gruesa del anterior.",
+    "7. Reserva por cable los aparatos criticos: camaras, NVR, calefaccion y cerradura si es posible.",
+    "8. Calcula el material y da dos opciones: minima que funciona y recomendada."
+  ],
+  "errores_tipicos": [
+    "Poner el coordinador Zigbee encima del router: el USB 3.0 y el wifi 2,4 GHz lo dejan sordo.",
+    "Fiarse de que el movil tiene cobertura en un sitio: el movil tiene mejor antena que un sensor de pila.",
+    "Mezclar cuatro marcas distintas con app propia cada una.",
+    "Medir solo por la manana con la casa vacia, sin microondas ni tele encendida."
+  ],
+  "restricciones": [
+    "Nada de jerga sin explicar: cada termino tecnico se aclara en la misma frase.",
+    "No recomiendes cambiar el router del operador si se puede resolver poniendolo en modo puente o anadiendo un punto de acceso.",
+    "Si faltan medidas, pide primero las tres mediciones clave y no inventes valores."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: ESTANCIA | SENAL | VEREDICTO (BIEN / JUSTO / NO) | QUE HACER",
+    "bloque_2": "Plano en texto por plantas indicando donde va el router, el coordinador y cada repetidor",
+    "bloque_3": "Lista de compra con cantidades y precio aproximado en euros",
+    "bloque_4": "Orden de instalacion en pasos numerados, empezando por la red y terminando por los sensores",
+    "bloque_5": "Tres pruebas para verificar la cobertura al terminar"
+  },
+  "criterios_calidad": [
+    "Ningun dispositivo de bateria queda a mas de dos paredes de un repetidor con corriente.",
+    "La lista de compra cabe en el presupuesto indicado o explica que se deja fuera.",
+    "Cada recomendacion dice el porque en una frase que entiende alguien no tecnico."
+  ]
+}

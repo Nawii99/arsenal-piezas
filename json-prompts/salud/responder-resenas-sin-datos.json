@@ -1,0 +1,57 @@
+{
+  "tarea": "Escribir el protocolo y las respuestas publicas a resenas de un centro de salud o bienestar, sin confirmar la condicion de paciente ni revelar ningun dato, y con el paso a canal privado",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CENTRO]",
+    "nombre_publico": "[NOMBRE COMERCIAL TAL Y COMO APARECE EN GOOGLE]",
+    "quien_responde": "[QUIEN FIRMA LAS RESPUESTAS: DIRECCION, RECEPCION, EL PROFESIONAL]",
+    "canal_privado": "[EMAIL O TELEFONO AL QUE DERIVAR LAS QUEJAS]",
+    "plazo_de_respuesta": "[EN CUANTAS HORAS TE COMPROMETES A RESPONDER]"
+  },
+  "entradas": {
+    "resena_literal": "[PEGA AQUI EL TEXTO EXACTO DE LA RESENA]",
+    "puntuacion": "[ESTRELLAS]",
+    "que_paso_de_verdad": "[TU VERSION INTERNA DE LO OCURRIDO, SOLO PARA CONTEXTO, NO PARA PUBLICAR]",
+    "es_identificable": "[SABES QUIEN ES: SI, NO, SOSPECHO]"
+  },
+  "pasos": [
+    "1. Clasifica la resena en uno de cinco tipos: elogio, queja de trato, queja de espera o agenda, queja de precio o resultado, y sospecha de resena falsa o de otro centro",
+    "2. Comprueba si el texto contiene datos de salud; si los contiene, la respuesta publica no los repite ni los matiza en ningun caso",
+    "3. Escribe la respuesta publica con esta estructura fija: agradecer, lamentar la experiencia en terminos generales, explicar el compromiso del centro y ofrecer un canal privado con nombre y contacto",
+    "4. Elimina de la respuesta cualquier frase que confirme o niegue que esa persona ha estado en el centro, incluida la formula 'sentimos que su tratamiento'",
+    "5. Para el tipo elogio, escribe respuestas cortas y variadas, sin repetir la misma plantilla en todas",
+    "6. Para la sospecha de resena falsa, redacta la respuesta neutra y describe los pasos de reporte a la plataforma con lo que se necesita aportar",
+    "7. Escribe el mensaje privado de seguimiento: escucha, pregunta abierta, propuesta de solucion y plazo",
+    "8. Define el circuito interno: quien detecta, quien redacta, quien aprueba y en cuanto tiempo se publica",
+    "9. Anade el registro de resenas para detectar si se repite el mismo motivo y arreglar la causa"
+  ],
+  "restricciones": [
+    "Prohibido confirmar, negar o insinuar en publico que la persona es o ha sido paciente",
+    "Prohibido mencionar tratamientos, citas, importes, fechas o cualquier detalle del caso en la respuesta publica",
+    "Prohibido pedir en publico que borre la resena o discutir su version",
+    "Nada de amenazas legales en la respuesta",
+    "Tono sereno, sin ironia y sin frases defensivas"
+  ],
+  "errores_tipicos": [
+    "Responder en caliente y dar detalles del caso para 'defenderse', revelando datos de salud sin querer",
+    "Usar la misma plantilla en las cinco ultimas resenas y que se note",
+    "Responder solo a las malas y dejar las buenas sin contestar",
+    "Prometer en publico un reembolso o una solucion antes de conocer el caso",
+    "Dejar la queja en publico sin abrir nunca un canal privado"
+  ],
+  "formato_salida": {
+    "bloque_1": "Clasificacion de la resena aportada y por que",
+    "bloque_2": "Tres versiones de respuesta publica: breve, media y con canal privado, todas listas para copiar",
+    "bloque_3": "Mensaje privado de seguimiento",
+    "bloque_4": "Lista de frases prohibidas con la alternativa correcta al lado",
+    "bloque_5": "Circuito interno en pasos con responsables y plazos",
+    "limite": "Cada respuesta publica por debajo de 90 palabras",
+    "idioma": "Espanol de Espana, tratando de usted en la respuesta publica"
+  },
+  "criterios_calidad": [
+    "Ninguna respuesta publica permite deducir si la persona ha sido paciente",
+    "Ninguna respuesta contiene datos de salud, fechas ni importes",
+    "Las respuestas de elogio no se parecen entre si",
+    "Toda queja termina con un canal privado concreto y un plazo",
+    "El circuito se entiende sin que lo explique nadie"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "tarea": "Crear un banco de plantillas de respuesta para las preguntas que más repiten los clientes de mi negocio",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU NEGOCIO]",
+    "que_vendes": "[QUÉ VENDES O QUÉ SERVICIO DAS]",
+    "canales": "[CANALES: EMAIL, WHATSAPP, INSTAGRAM, TELÉFONO]",
+    "quien_responde": "[YO SOLO / EQUIPO DE X PERSONAS]",
+    "horario_atencion": "[HORARIO Y DÍAS]",
+    "tiempo_respuesta_prometido": "[EJ: MENOS DE 24 H LABORABLES]"
+  },
+  "entradas": {
+    "preguntas_frecuentes": ["[PREGUNTA 1]", "[PREGUNTA 2]", "[PREGUNTA 3]"],
+    "datos_duros": {
+      "plazos_envio": "[PLAZOS REALES]",
+      "politica_devolucion": "[DÍAS Y CONDICIONES]",
+      "formas_pago": "[FORMAS DE PAGO]",
+      "garantia": "[GARANTÍA]"
+    }
+  },
+  "instrucciones": [
+    "Si te doy menos de 10 preguntas, deduce las que faltan a partir del tipo de negocio y márcalas como propuestas",
+    "Cada respuesta empieza resolviendo la duda en la primera frase, luego el detalle y luego el siguiente paso",
+    "Marca entre corchetes cualquier dato que no te haya dado: no inventes plazos, precios ni condiciones",
+    "Escribe cada plantilla en dos versiones: email de hasta 120 palabras y WhatsApp de hasta 45",
+    "Para cada duda añade la variante de cuando la respuesta es NO y el cliente no va a quedar contento"
+  ],
+  "restricciones": [
+    "Español de España, tuteando salvo que indique lo contrario",
+    "Nada de 'lamentamos las molestias ocasionadas' ni frases de call center",
+    "Sin promesas que el negocio no pueda cumplir",
+    "Máximo un emoji en WhatsApp y ninguno en email"
+  ],
+  "formato_salida": {
+    "tipo": "fichas numeradas",
+    "por_ficha": "título de la duda, versión email, versión WhatsApp, datos a rellenar, cuándo NO usarla"
+  },
+  "criterios_calidad": [
+    "Se puede copiar y enviar cambiando solo los corchetes",
+    "Ninguna respuesta obliga al cliente a volver a escribir para entenderla",
+    "El siguiente paso está siempre explícito"
+  ]
+}

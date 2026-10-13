@@ -1,0 +1,46 @@
+{
+  "tarea": "Crear una píldora formativa de 15 minutos sobre phishing e ingeniería social, con guion para el formador, ejemplos del sector y test de evaluación",
+  "rol": "Formador que enseña seguridad a personas sin perfil técnico",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR]",
+    "perfil_del_publico": "[EJ: COMERCIALES, ADMINISTRACIÓN, OPERARIOS, DIRECCIÓN]",
+    "nivel": "[NINGUNO / BÁSICO / YA HICIERON UNA FORMACIÓN]",
+    "incidentes_vividos": "[CUENTA SI YA OS HA PASADO ALGO, AUNQUE SEA PEQUEÑO]",
+    "canal": "[REUNIÓN PRESENCIAL / VIDEOLLAMADA / VÍDEO GRABADO]"
+  },
+  "contenido_obligatorio": [
+    "Las 5 señales que delatan un mensaje fraudulento, con una regla mnemotécnica fácil de recordar",
+    "La diferencia entre phishing por correo, smishing por SMS, vishing por teléfono y fraude del jefe",
+    "La regla de oro: cualquier petición de dinero, datos o accesos se verifica por un segundo canal",
+    "Qué hacer en los 10 minutos siguientes a haber picado y a quién avisar",
+    "Por qué reportar rápido nunca tiene consecuencias negativas para quien reporta"
+  ],
+  "estructura_del_guion": [
+    "Minuto 0 a 2: gancho con un caso real y cercano al sector",
+    "Minuto 2 a 7: las señales, con 3 ejemplos comentados sacados del día a día del equipo",
+    "Minuto 7 a 11: ejercicio en vivo, tres mensajes para decidir a mano alzada si son falsos o reales",
+    "Minuto 11 a 14: el protocolo interno de verificación y aviso",
+    "Minuto 14 a 15: compromiso único que se lleva cada uno"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "GUION DEL FORMADOR: qué decir en cada tramo, con las frases clave literales",
+      "3 EJEMPLOS COMENTADOS: mensaje falso completo y las pistas subrayadas",
+      "EJERCICIO EN VIVO: 3 mensajes con solución y explicación",
+      "TEST FINAL: 10 preguntas de opción múltiple con la respuesta correcta y una frase de porqué",
+      "CHULETA DE UNA PÁGINA: para imprimir y colgar junto al ordenador"
+    ],
+    "idioma": "Español de España, tuteando y sin tecnicismos"
+  },
+  "restricciones": [
+    "Cero jerga: prohibido usar términos en inglés sin traducir en la misma frase",
+    "Los ejemplos deben ser del sector indicado, no de un banco genérico",
+    "Nada de meter miedo: el mensaje es que esto le pasa a cualquiera y se soluciona avisando rápido"
+  ],
+  "criterios_calidad": [
+    "Alguien sin conocimientos puede impartirlo leyendo el guion tal cual",
+    "Cada pregunta del test se puede responder con lo explicado en los 15 minutos",
+    "La chuleta cabe de verdad en una cara de folio"
+  ]
+}

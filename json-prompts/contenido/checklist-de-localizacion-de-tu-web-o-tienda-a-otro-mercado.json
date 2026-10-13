@@ -1,0 +1,43 @@
+{
+  "tarea": "Generar el checklist de localización de [TU WEB O TIENDA] para el mercado de [PAÍS DE DESTINO], cubriendo todo lo que hay que adaptar además de traducir",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "pais_origen": "España",
+    "pais_destino": "[PAÍS DE DESTINO]",
+    "plataforma": "[SHOPIFY, WOOCOMMERCE, WORDPRESS, WEB A MEDIDA]",
+    "envios_y_pagos": "[CÓMO ENVÍAS Y QUÉ MÉTODOS DE PAGO OFRECES]"
+  },
+  "areas_a_revisar": [
+    "Formatos: fecha, hora, separadores de miles y decimales, teléfono, dirección postal, código postal",
+    "Dinero: moneda, símbolo y su posición, impuestos incluidos o no, redondeo psicológico local",
+    "Producto: tallas, medidas, voltaje, compatibilidades, ingredientes, alérgenos, garantía",
+    "Envíos: plazos reales, festivos locales, aduanas, política de devoluciones",
+    "Textos legales: aviso legal, privacidad, condiciones y su nombre habitual en ese país",
+    "Idioma y variante: léxico local, tratamiento, formularios con nombre y apellidos según la costumbre",
+    "Imágenes y símbolos: personas, gestos, colores, banderas, escenas y clima que aparecen",
+    "Atención al cliente: canal preferido, horario en su franja, tiempo de respuesta prometido",
+    "Confianza: sellos, reseñas, métodos de pago que ahí generan confianza",
+    "Buscadores: cómo llaman ahí a tu producto y si tus palabras clave cambian"
+  ],
+  "proceso": [
+    "Para cada área, indicar qué hay hoy, qué debería haber en el país de destino y el riesgo si no se cambia",
+    "Marcar prioridad alta si afecta a la compra o a lo legal, media si afecta a la confianza, baja si es estética",
+    "Proponer el texto o valor concreto ya adaptado cuando sea posible",
+    "Listar lo que hay que confirmar con un asesor local o legal"
+  ],
+  "restricciones": [
+    "No dar por válida una traducción literal de textos legales: señalarlos siempre para revisión profesional",
+    "No inventar plazos de envío, tipos impositivos ni obligaciones legales concretas",
+    "Distinguir claramente lo que es obligatorio de lo que es recomendable"
+  ],
+  "formato_salida": {
+    "tipo": "tabla accionable",
+    "columnas": ["área", "qué hay ahora", "qué debe poner", "prioridad", "riesgo si no se cambia", "quién lo hace"],
+    "extra": "Resumen final con los 5 puntos que bloquean el lanzamiento"
+  },
+  "criterios_calidad": [
+    "Cada fila se puede convertir en una tarea sin más explicación",
+    "Lo legal y lo fiscal aparece marcado como pendiente de validar, nunca resuelto a la ligera",
+    "El resumen final cabe en media página"
+  ]
+}

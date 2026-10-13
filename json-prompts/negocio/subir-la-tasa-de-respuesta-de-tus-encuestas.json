@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar el plan de envío y los textos para aumentar la tasa de respuesta de una encuesta de satisfacción",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU NEGOCIO]",
+    "encuesta": "[QUÉ ENCUESTA ES Y CUÁNTAS PREGUNTAS TIENE]",
+    "canales_disponibles": "[EMAIL / WHATSAPP / SMS / QR EN TIENDA / DENTRO DE LA APP]",
+    "tasa_actual": "[PORCENTAJE QUE RESPONDE HOY, SI LO SABES]",
+    "incentivo_posible": "[NINGUNO / DESCUENTO / SORTEO / DETALLE]"
+  },
+  "plan": [
+    "Elegir el momento exacto del envío según cuándo el cliente ya ha vivido el servicio",
+    "Definir la secuencia: envío inicial, un recordatorio y punto final, con los días entre medias",
+    "Decidir el canal principal y el de repesca, sin repetir el mismo mensaje en los dos",
+    "Meter la primera pregunta dentro del propio mensaje para que responder empiece con un clic"
+  ],
+  "entregables": {
+    "asuntos": "5 asuntos de email de menos de 40 caracteres, sin palabras que huelan a promoción",
+    "mensaje_inicial": "Cuerpo de menos de 60 palabras que dice cuánto se tarda y para qué sirve",
+    "recordatorio": "Mensaje distinto al primero, de menos de 35 palabras",
+    "version_whatsapp": "Mensaje de menos de 25 palabras, tuteando",
+    "cartel_qr": "Titular y subtítulo para un cartel o adhesivo con QR"
+  },
+  "errores_a_evitar": [
+    "Enviar la encuesta desde una dirección de no-responder",
+    "Pedir datos que ya tienes del cliente",
+    "Prometer un premio a cambio de una nota alta en lugar de a cambio de responder",
+    "Más de dos recordatorios o encuestar al mismo cliente cada dos por tres"
+  ],
+  "formato_salida": "Primero un calendario de envíos en tabla (día | canal | mensaje), después los textos literales numerados",
+  "criterios_calidad": [
+    "Todos los textos se pueden copiar sin retocar",
+    "El plan cumple con no molestar: máximo 2 impactos por cliente y encuesta"
+  ],
+  "nota_legal": "Recuerda al usuario que los envíos comerciales y el uso de datos deben cumplir el RGPD y la LSSI en España"
+}

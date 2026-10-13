@@ -1,0 +1,35 @@
+{
+  "tarea": "Convertir una hoja de cálculo en un esquema SQL correcto y entregar el proceso de importación con control de errores",
+  "entradas": {
+    "columnas_del_excel": "[PEGA LA FILA DE CABECERAS TAL CUAL]",
+    "filas_de_ejemplo": "[PEGA 5 O 10 FILAS DE EJEMPLO]",
+    "motor_sql": "[POSTGRESQL / MYSQL / SQLITE]",
+    "identificador": "[QUÉ COLUMNA IDENTIFICA CADA FILA DE FORMA ÚNICA, O 'NINGUNA']",
+    "uso_previsto": "[QUÉ CONSULTAS QUERRÁS HACER DESPUÉS]",
+    "idioma_de_los_datos": "[FORMATO DE FECHAS Y DECIMALES, EJ: 31/12/2026 Y COMA DECIMAL]"
+  },
+  "procedimiento": [
+    "1. Proponer nombres de columna limpios en minúsculas y sin acentos ni espacios, con su equivalencia al nombre original",
+    "2. Deducir el tipo de dato de cada columna a partir de los ejemplos y avisar de las columnas ambiguas",
+    "3. Detectar columnas que en realidad son otra tabla (categorías, clientes repetidos) y proponer separarlas",
+    "4. Generar la tabla intermedia de carga con todo en texto y luego la consulta de conversión a la tabla definitiva",
+    "5. Listar las validaciones previas: fechas imposibles, importes con símbolos, campos obligatorios vacíos, duplicados"
+  ],
+  "restricciones": [
+    "Importes en decimal con dos decimales, nunca en coma flotante ni en texto",
+    "Fechas convertidas explícitamente indicando el formato de origen",
+    "Nada de importar directamente a la tabla final sin pasar por la tabla intermedia",
+    "Las filas que fallen se guardan en una tabla de rechazos con el motivo, no se descartan en silencio"
+  ],
+  "formato_salida": {
+    "1_mapa_columnas": "Tabla con columna original, nombre nuevo, tipo y observaciones",
+    "2_sql_estructura": "CREATE TABLE de la tabla de carga, la definitiva y la de rechazos",
+    "3_sql_importacion": "Sentencia de carga del fichero y consulta de conversión",
+    "4_validaciones": "Consultas que revisan la calidad antes de dar por buena la carga",
+    "5_pasos": "Instrucciones numeradas para alguien sin perfil técnico"
+  },
+  "criterios_calidad": [
+    "El número de filas del Excel cuadra con filas importadas más filas rechazadas",
+    "Ninguna columna acaba como texto pudiendo ser fecha, número o booleano"
+  ]
+}

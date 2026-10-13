@@ -1,0 +1,34 @@
+{
+  "tarea": "Redactar un manual de marca breve de una pagina, centrado en tipografia y color, listo para entregar a proveedores",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "logo": "[DESCRIBE TU LOGO Y SUS VERSIONES: principal, negativa, icono suelto]",
+    "colores": "[HEX CON SU ROL]",
+    "fuentes": "[TITULARES Y TEXTO, CON PESOS]",
+    "quien_lo_usara": "[DISENADOR, IMPRENTA, COMMUNITY MANAGER, TU MISMO]",
+    "errores_vistos": "[USOS QUE YA HAS SUFRIDO Y QUIERES PROHIBIR]"
+  },
+  "proceso": [
+    "Empieza con una frase que resuma la personalidad visual de la marca",
+    "Fija el area de respeto del logo y su tamano minimo en pantalla y en papel",
+    "Lista los colores con HEX, RGB y CMYK aproximado para imprenta",
+    "Define que fuente y que peso van en cada tipo de pieza",
+    "Escribe 6 usos correctos y 6 usos prohibidos, cada uno en una linea",
+    "Cierra con una lista de comprobacion de 8 puntos antes de publicar cualquier pieza"
+  ],
+  "restricciones": [
+    "Cabe en una pagina: nada de relleno ni de historia de la marca",
+    "Las normas se escriben en imperativo y sin adjetivos",
+    "Nada que no se pueda comprobar a simple vista"
+  ],
+  "formato_salida": {
+    "tipo": "documento de una pagina en secciones cortas",
+    "secciones": ["Personalidad en una frase", "Logo y area de respeto", "Color", "Tipografia", "Si y no", "Lista de comprobacion"]
+  },
+  "criterios_calidad": [
+    "Un proveedor que no conoce la marca puede trabajar solo con esta hoja",
+    "Cada norma es verificable, no opinable",
+    "No sobra ni una linea"
+  ],
+  "tono": "Instrucciones claras, frases cortas, sin marketing"
+}

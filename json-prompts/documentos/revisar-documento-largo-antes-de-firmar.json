@@ -1,0 +1,49 @@
+{
+  "tarea": "Analizar un documento contractual largo y devolver un mapa de riesgos, obligaciones y preguntas concretas antes de firmarlo.",
+  "contexto": {
+    "mi_papel": "[SOY EL QUE CONTRATA / EL QUE PRESTA EL SERVICIO / INQUILINO / PROVEEDOR]",
+    "otra_parte": "[QUIÉN ES Y QUÉ TAMAÑO TIENE]",
+    "que_me_juego": "[IMPORTE, DURACIÓN Y QUÉ PASA SI SALE MAL]",
+    "prisa": "[CUÁNDO TENGO QUE CONTESTAR]"
+  },
+  "entradas": {
+    "documento": "[PEGA EL TEXTO COMPLETO O ADJUNTA EL PDF]",
+    "lo_que_acordamos_de_palabra": "[LO QUE SE HABLÓ Y ESPERO VER REFLEJADO]",
+    "mis_lineas_rojas": "[LO QUE NO PUEDO ACEPTAR DE NINGUNA MANERA]"
+  },
+  "pasos": [
+    "Resume en diez líneas qué dice el documento en cristiano: quién hace qué, por cuánto y hasta cuándo.",
+    "Extrae todas mis obligaciones con su cláusula y su plazo.",
+    "Extrae todo lo que puede costarme dinero: penalizaciones, intereses, renovaciones automáticas, revisiones de precio, gastos repercutidos.",
+    "Marca las cláusulas de salida: cómo se termina, con cuánto preaviso y qué pasa con lo pagado.",
+    "Compara con lo que acordamos de palabra y señala lo que no aparece o aparece distinto.",
+    "Busca contradicciones entre cláusulas y referencias a anexos que no están.",
+    "Señala los huecos: lo que el documento no dice y debería decir.",
+    "Clasifica cada hallazgo en rojo, ámbar o verde según lo que me juego.",
+    "Redacta las preguntas y los cambios que pediría, en frases listas para copiar en un email."
+  ],
+  "restricciones": [
+    "No eres abogado y lo dices al principio: esto es una revisión previa para preparar la conversación.",
+    "Cita siempre el número de cláusula o el trozo literal en el que te basas.",
+    "No afirmes qué es legal o ilegal; señala lo que conviene consultar."
+  ],
+  "errores_tipicos": [
+    "Quedarse solo con el precio y no mirar la duración ni la renovación automática.",
+    "No ver a quién pertenece el trabajo entregado ni los datos de los clientes.",
+    "Pasar por alto la cláusula de exclusividad o de no competencia.",
+    "Aceptar plazos de pago larguísimos sin intereses de demora.",
+    "Ignorar anexos citados que no te han enviado."
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen en cristiano, máximo diez líneas.",
+    "bloque_2": "Tabla de hallazgos: cláusula, qué dice, qué significa para mí, semáforo.",
+    "bloque_3": "Lo que falta o no coincide con lo hablado.",
+    "bloque_4": "Las cinco cosas que negociaría primero, en orden.",
+    "bloque_5": "Borrador de email con las preguntas y los cambios propuestos."
+  },
+  "criterios_calidad": [
+    "Cada punto rojo viene con la cláusula citada, no con una sospecha.",
+    "Puedo mandar el email del bloque cinco sin reescribirlo.",
+    "Después de leerlo sé qué firmo y qué pienso pedir que cambien."
+  ]
+}

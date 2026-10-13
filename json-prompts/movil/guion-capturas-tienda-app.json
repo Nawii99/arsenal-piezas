@@ -1,0 +1,47 @@
+{
+  "tarea": "Diseñar el guion de las capturas de pantalla de la ficha de mi app para las tiendas",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE EN UNA FRASE]",
+    "publico": "[A QUIÉN SIRVE Y QUÉ PROBLEMA LE QUITA]",
+    "tiendas": "[APP STORE / GOOGLE PLAY / AMBAS]",
+    "pantallas_que_existen": "[LISTA DE PANTALLAS REALES DE LA APP]",
+    "apps_parecidas": "[2 O 3 COMPETIDORAS]"
+  },
+  "entradas": {
+    "idioma": "español de España",
+    "numero_de_capturas": "[6 POR DEFECTO]",
+    "formato": "[IPHONE 6.7 PULGADAS / ANDROID 1080x1920]",
+    "colores_de_marca": "[HEX PRIMARIO Y SECUNDARIO]"
+  },
+  "pasos": [
+    "Ordena por beneficio y no por el menú de la app: las dos primeras se ven sin deslizar y son las que deciden la instalación",
+    "Pon a cada captura un titular de seis palabras como mucho, con verbo y beneficio, encima de la imagen",
+    "Asigna a cada titular la pantalla real que lo demuestra, con datos de ejemplo creíbles y en español",
+    "Marca en cada captura el elemento que se resalta con zoom, flecha o sombreado para que se entienda en dos segundos",
+    "Deja la última captura para prueba social real o para el precio y las condiciones",
+    "Escribe una variante alternativa de los titulares uno y dos para poder probarlos por separado"
+  ],
+  "restricciones": [
+    "Textos cortos: en el buscador las capturas se ven en miniatura",
+    "No inventes premios, número de descargas ni valoraciones",
+    "Nada de pantallas de ajustes, permisos o errores",
+    "Mismo fondo y misma tipografía en las seis para que se lean como una serie"
+  ],
+  "errores_frecuentes": [
+    "Empezar por la captura más bonita aunque no explique para qué sirve la app",
+    "Usar el nombre de tus menús internos en vez del beneficio",
+    "Marcos de móvil tan grandes que la pantalla real queda diminuta",
+    "Dejar textos en inglés en una ficha dirigida a España"
+  ],
+  "formato_salida": {
+    "primero": "Tabla con columnas numero, titular, pantalla_de_la_app, elemento_resaltado, por_que_convence",
+    "despues": "Un prompt de imagen por captura, listo para pegar en un generador o para montarlo a mano",
+    "final": "Dos titulares alternativos para las capturas uno y dos"
+  },
+  "criterios_calidad": [
+    "Alguien que no conoce la app entiende para qué sirve viendo solo las dos primeras",
+    "Ningún titular pasa de seis palabras ni repite el verbo de otro",
+    "Cada captura muestra una pantalla que existe de verdad",
+    "La serie cuenta un recorrido: problema, uso y resultado"
+  ]
+}

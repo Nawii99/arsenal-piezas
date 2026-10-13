@@ -1,0 +1,32 @@
+{
+  "tarea": "Traducir a lenguaje llano una hoja de condiciones de inversion o un contrato de financiacion y detectar las clausulas de riesgo para el emprendedor",
+  "entradas": {
+    "documento": "[PEGA AQUI EL TEXTO COMPLETO DEL TERM SHEET O CONTRATO]",
+    "tipo_de_operacion": "[ENTRADA DE SOCIO / PRESTAMO CONVERTIBLE / PRESTAMO BANCARIO / LEASING]",
+    "tu_posicion": "[QUE PORCENTAJE TIENES Y QUE QUIERES CONSEGUIR]",
+    "alternativas": "[TIENES OTRAS OFERTAS O NO]"
+  },
+  "proceso": [
+    "Resumir la operacion en cinco lineas: quien pone que, que recibe y cuando",
+    "Listar todas las clausulas encontradas, una por una, con su traduccion en una frase",
+    "Clasificar cada clausula como estandar, negociable o bandera roja",
+    "Explicar en cada bandera roja que puede pasarte en la practica con un ejemplo con numeros",
+    "Detectar lo que falta y deberia estar en un documento asi"
+  ],
+  "clausulas_a_vigilar": ["Preferencia de liquidacion y si es multiple", "Antidilucion", "Derechos de veto sobre decisiones del dia a dia", "Arrastre y acompanamiento", "Permanencia obligatoria y consolidacion de participaciones de los fundadores", "Exclusividad y penalizacion por romper la negociacion", "Quien paga los gastos legales", "Garantias personales y avales", "Intereses de demora y comisiones de cancelacion", "Vencimiento anticipado y sus causas", "Obligaciones de informacion y auditoria", "Ley aplicable y tribunales"],
+  "salida_por_clausula": {
+    "nombre": "Como se llama en el documento",
+    "en_cristiano": "Que significa en una frase",
+    "riesgo": "Bajo, medio o alto",
+    "ejemplo": "Que te pasaria con numeros concretos",
+    "que_pedir": "Redaccion alternativa que puedes proponer"
+  },
+  "restricciones": [
+    "No es asesoramiento legal: recomendar revision por abogado antes de firmar",
+    "No inventar clausulas que no esten en el texto; si algo no aparece, listarlo como ausente",
+    "Citar literalmente la frase del documento que se esta comentando"
+  ],
+  "formato_salida": "Resumen inicial, tabla de clausulas por nivel de riesgo, las cinco cosas que negociar por orden de prioridad y un email breve al inversor pidiendo esos cambios",
+  "criterios_calidad": ["Cada alerta cita el texto original", "Las propuestas de cambio son concretas y razonables, no un no a todo", "El email suena colaborativo"],
+  "tono": "Claro y protector, sin alarmismo"
+}

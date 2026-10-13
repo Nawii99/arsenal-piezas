@@ -1,0 +1,40 @@
+{
+  "tarea": "Redactar una reclamación de impago en tres niveles de firmeza (recordatorio, requerimiento y último aviso antes de acciones legales) para una factura vencida",
+  "contexto": {
+    "acreedor": "[NOMBRE DE TU EMPRESA O TU NOMBRE Y NIF]",
+    "deudor": "[NOMBRE Y NIF O CIF DEL CLIENTE QUE NO PAGA]",
+    "relacion_comercial": "[DESDE CUÁNDO TRABAJÁIS JUNTOS Y CÓMO ES LA RELACIÓN]",
+    "quiero_conservar_al_cliente": "[SÍ / NO]"
+  },
+  "entradas": {
+    "factura": {"numero": "[Nº DE FACTURA]", "fecha_emision": "[DD/MM/AAAA]", "importe_total": "[IMPORTE CON IVA]", "vencimiento": "[DD/MM/AAAA]"},
+    "concepto": "[QUÉ ENTREGASTE O QUÉ SERVICIO PRESTASTE]",
+    "gestiones_previas": "[LLAMADAS O EMAILS YA ENVIADOS Y QUÉ TE CONTESTARON]",
+    "forma_de_pago": "[Nº DE CUENTA O ENLACE DE PAGO]",
+    "plazo_que_das": "[DÍAS NATURALES PARA PAGAR]"
+  },
+  "pasos": [
+    "Calcular los días de retraso desde el vencimiento y citarlos de forma expresa",
+    "Nivel 1, recordatorio: tono cordial, se asume un despiste administrativo, sin advertencias",
+    "Nivel 2, requerimiento: importe, días de retraso y fecha límite concreta para el pago",
+    "Nivel 3, último aviso: anuncia burofax y reclamación judicial si no hay pago en plazo, con tono seco pero correcto",
+    "En los tres niveles ofrecer una salida: fraccionar el pago o comprometer una fecha"
+  ],
+  "restricciones": [
+    "Nada de amenazar con ficheros de morosos, con avisar a terceros ni con recargos no pactados",
+    "No inventar cláusulas del contrato ni intereses que no consten por escrito",
+    "Máximo 200 palabras por carta y un solo asunto claro",
+    "Español de España, trato de usted, sin tecnicismos innecesarios"
+  ],
+  "formato_salida": {
+    "estructura": "tres bloques separados y numerados",
+    "cada_bloque": ["asunto de email", "cuerpo de la carta", "canal recomendado"],
+    "cierre": "tabla con la fecha sugerida de envío de cada nivel"
+  },
+  "criterios_calidad": [
+    "En 20 segundos se entiende cuánto se debe y hasta cuándo hay que pagar",
+    "El tono sube de verdad del nivel 1 al 3, no es el mismo texto repetido",
+    "Ningún dato inventado: lo que falte se deja entre corchetes"
+  ],
+  "aviso_legal": "Borrador comercial, no es asesoramiento jurídico; revisa con un abogado antes de enviar el último aviso"
+}

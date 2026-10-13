@@ -1,0 +1,34 @@
+{
+  "tarea": "Definir los ajustes de exportación de una misma foto editada para cada canal donde se va a usar",
+  "contexto": {
+    "tipo_de_foto": "[PRODUCTO / RETRATO / PAISAJE / EVENTO / INMUEBLE]",
+    "canales": "[WEB PROPIA / TIENDA ONLINE / INSTAGRAM / LINKEDIN / EMAIL / IMPRESIÓN / ENTREGA AL CLIENTE]",
+    "original": "[MEDIDAS EN PÍXELES Y FORMATO DEL ARCHIVO EDITADO]",
+    "programa": "[LIGHTROOM / PHOTOSHOP / CAPTURE ONE / AFFINITY]",
+    "impresion": "[TAMAÑO Y TIPO DE IMPRESIÓN, SI LA HAY]"
+  },
+  "reglas": [
+    "Exportar siempre desde el archivo editado maestro, nunca desde un JPEG ya comprimido",
+    "sRGB para pantalla; para imprenta, el perfil que pida la imprenta",
+    "El enfoque de salida se ajusta al tamaño final y al soporte, no es el mismo para web que para papel",
+    "Píxeles y peso máximo por canal, priorizando velocidad de carga en web",
+    "Nombres de archivo sin acentos, sin espacios y descriptivos, pensando en el SEO de imágenes"
+  ],
+  "formato_salida": {
+    "tabla": ["canal", "medidas en píxeles", "proporción", "formato", "calidad o peso máximo", "perfil de color", "enfoque de salida", "nombre de archivo"],
+    "extra_1": "Qué recortes secundarios hacen falta (vertical, cuadrado, horizontal) y dónde dejar aire para el texto",
+    "extra_2": "Cómo nombrar y organizar las carpetas de entrega",
+    "extra_3": "Preajuste de exportación a guardar en el programa indicado, con sus opciones"
+  },
+  "errores_a_evitar": [
+    "Subir a la web archivos de varios megas sin comprimir",
+    "Exportar en Adobe RGB para pantalla y ver los colores apagados",
+    "Ampliar una foto pequeña para imprimirla grande",
+    "Recortar a cuadrado y cortar la cabeza del sujeto",
+    "Meter marca de agua enorme encima del producto"
+  ],
+  "criterios_calidad": [
+    "Cada canal tiene medidas y peso concretos, no rangos vagos",
+    "La misma foto se reconoce igual en todos los canales"
+  ]
+}

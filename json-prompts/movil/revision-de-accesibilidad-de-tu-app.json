@@ -1,0 +1,34 @@
+{
+  "tarea": "Revisar la accesibilidad de las pantallas de una app móvil y devolver los problemas con su corrección concreta",
+  "entradas": {
+    "app": "[NOMBRE Y PARA QUÉ SIRVE]",
+    "pantallas": "[DESCRIPCIÓN DE LAS PANTALLAS Y SUS ELEMENTOS]",
+    "colores": "[CÓDIGOS DE COLOR DE TEXTO Y FONDO]",
+    "tamanos_de_letra": "[TAMAÑOS QUE USAS]",
+    "publico": "[QUIÉN LA USA, INCLUYENDO EDAD]",
+    "plataforma": "[iOS, ANDROID O AMBAS]"
+  },
+  "que_comprobar": [
+    "Contraste de texto de al menos 4.5 a 1, y 3 a 1 en texto grande e iconos con significado",
+    "El color nunca es la única forma de transmitir información",
+    "El diseño aguanta cuando el usuario agranda la letra del sistema al 200 por cien",
+    "Zonas tocables de 44 puntos o más y separadas entre sí",
+    "Cada imagen, icono y botón tiene una etiqueta que el lector de pantalla pueda leer",
+    "El orden de lectura sigue el orden visual",
+    "Los formularios indican el error con texto, no solo con el campo en rojo",
+    "Existe alternativa a los gestos complicados como deslizar o mantener pulsado",
+    "Los vídeos y animaciones se pueden pausar y respetan la opción de reducir movimiento"
+  ],
+  "formato_salida": {
+    "tabla": ["Pantalla", "Elemento", "Problema", "A quién afecta", "Gravedad", "Corrección concreta"],
+    "resumen": "Los 5 arreglos con más impacto y menos esfuerzo",
+    "como_probarlo": "Pasos para comprobarlo tú mismo con el móvil: lector de pantalla, texto grande y filtro de color",
+    "texto_alternativo": "Propuesta de etiqueta para cada icono y botón sin texto visible"
+  },
+  "criterios_calidad": [
+    "Cada problema indica el valor actual y el valor mínimo que debería tener",
+    "Las correcciones son concretas, no recomendaciones generales",
+    "Se distingue lo obligatorio de lo recomendable"
+  ],
+  "tono": "Claro y sin tecnicismos, español de España"
+}

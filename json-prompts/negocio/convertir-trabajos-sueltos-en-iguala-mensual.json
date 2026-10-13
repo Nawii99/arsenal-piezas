@@ -1,0 +1,36 @@
+{
+  "tarea": "Diseñar una iguala mensual para un cliente y redactar la propuesta con la que ofrecérsela",
+  "contexto": {
+    "proveedor": "[TU NEGOCIO Y SERVICIO]",
+    "cliente": "[NOMBRE DEL CLIENTE Y RELACIÓN ACTUAL]",
+    "historial": "[QUÉ TRABAJOS LE HAS HECHO EN LOS ÚLTIMOS MESES Y QUÉ FACTURASTE]"
+  },
+  "entradas": {
+    "tareas_recurrentes": "[LO QUE LE HACES CADA MES O CASI CADA MES]",
+    "horas_mensuales_estimadas": "[HORAS MEDIAS Y HORAS DE UN MES CARGADO]",
+    "tarifa_hora_objetivo": "[LO QUE NECESITAS GANAR POR HORA]",
+    "permanencia_deseada": "[SIN PERMANENCIA, 3, 6 O 12 MESES]",
+    "canal_y_tiempos_de_respuesta": "[POR DÓNDE TE ESCRIBE Y EN CUÁNTO RESPONDES]"
+  },
+  "metodo": [
+    "Separar lo recurrente de lo puntual: solo lo recurrente entra en la iguala",
+    "Poner un tope de horas o de entregables al mes y el precio de la hora extra",
+    "Calcular la cuota con el mes cargado, no con el mes tranquilo",
+    "Aplicar un descuento razonable frente al precio suelto y decir cuánto es, para que se vea la ventaja",
+    "Definir qué pasa con las horas no usadas y si se acumulan o se pierden",
+    "Fijar condiciones de salida, aviso previo y revisión anual de precio"
+  ],
+  "formato_salida": {
+    "ficha_iguala": "Nombre del plan, qué incluye, tope mensual, tiempo de respuesta, qué no incluye",
+    "precio": "Cuota mensual sin IVA y con IVA, precio de hora extra y comparación con el precio suelto",
+    "propuesta_email": "Email de menos de 200 palabras para ofrecérsela al cliente",
+    "condiciones": "Permanencia, forma de pago, preaviso de baja, revisión de precio",
+    "objeciones": "Tres objeciones probables de este cliente y su respuesta"
+  },
+  "criterios_calidad": [
+    "La cuota sigue siendo rentable en un mes de trabajo alto",
+    "El tope mensual y el precio de la hora extra están escritos sin ambigüedad",
+    "El email deja claro qué gana el cliente, no solo qué ganas tú"
+  ],
+  "tono": "Cercano y profesional, de proveedor de confianza"
+}

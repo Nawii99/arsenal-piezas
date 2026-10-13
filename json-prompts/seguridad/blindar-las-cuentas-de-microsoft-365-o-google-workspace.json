@@ -1,0 +1,46 @@
+{
+  "tarea": "Disenar un plan por fases para fortificar las cuentas y accesos de la empresa en su plataforma de correo y ficheros en la nube, con comunicacion al equipo incluida",
+  "contexto": {
+    "plataforma": "[MICROSOFT 365 / GOOGLE WORKSPACE]",
+    "plan_contratado": "[EJ: BUSINESS STANDARD]",
+    "numero_de_usuarios": "[NUMERO]",
+    "administradores_actuales": "[QUIENES SON Y SI SIGUEN EN LA EMPRESA]",
+    "dispositivos": "[MOVILES PERSONALES SI/NO, PORTATILES PROPIOS O DE EMPRESA]",
+    "apps_conectadas": "[CRM, FIRMA DIGITAL, FACTURACION, EXTENSIONES...]",
+    "resistencia_esperada_del_equipo": "[BAJA / MEDIA / ALTA]"
+  },
+  "medidas_a_cubrir": [
+    "doble factor obligatorio para todos y metodo recomendado",
+    "cuentas de administrador separadas del uso diario y minimas",
+    "revision de cuentas de exempleados y de buzones compartidos",
+    "reglas de reenvio automatico al exterior",
+    "permisos de aplicaciones de terceros conectadas",
+    "protocolos antiguos sin doble factor",
+    "compartir ficheros con enlace publico",
+    "registro de accesos y alertas de inicio de sesion raro"
+  ],
+  "procedimiento": [
+    "1. Auditoria: que preguntar y donde mirarlo en el panel de administracion, con la ruta del menu",
+    "2. Priorizar por riesgo y por molestia para el usuario",
+    "3. Plan en 3 fases con fechas: piloto con 3 personas, resto del equipo, cierre de excepciones",
+    "4. Preparar la comunicacion interna y el apoyo del primer dia",
+    "5. Definir que se revisa cada mes y quien lo hace"
+  ],
+  "restricciones": [
+    "No proponer funciones que no incluya el plan contratado sin avisar del sobrecoste",
+    "Prever el caso de la persona que pierde el movil con el doble factor",
+    "Nada de desactivar seguridad por comodidad"
+  ],
+  "formato_salida": {
+    "tipo": "plan de proyecto",
+    "secciones": [
+      "Diagnostico: 10 preguntas con donde se comprueba cada una",
+      "Tabla: medida | riesgo que evita | fase | impacto para el usuario | quien lo hace",
+      "Calendario de 3 semanas",
+      "Correo de aviso al equipo y guia de 1 pagina para activar el doble factor",
+      "Plan de emergencia si alguien se queda fuera"
+    ]
+  },
+  "criterios_calidad": ["Nadie se queda sin poder trabajar por culpa del plan", "Cada medida indica donde se activa", "La comunicacion esta escrita para gente no tecnica"],
+  "tono": "profesional y tranquilizador"
+}

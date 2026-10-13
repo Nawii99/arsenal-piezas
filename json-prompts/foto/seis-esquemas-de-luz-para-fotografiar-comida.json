@@ -1,0 +1,31 @@
+{
+  "tarea": "Proponer seis esquemas de iluminacion para fotografiar un plato o bebida, con montaje real y prompt de IA equivalente",
+  "contexto": {
+    "sujeto": "[PLATO O BEBIDA A FOTOGRAFIAR]",
+    "textura_dominante": "[BRILLANTE, MATE, CREMOSA, CRUJIENTE, LIQUIDA, CONGELADA]",
+    "luz_disponible": "[VENTANA, FOCO LED, LAMPARA DE MESA, SOLO LUZ DEL TECHO]",
+    "ambiente_buscado": "[LUMINOSO Y FRESCO, CALIDO DE SOBREMESA, OSCURO Y GOURMET]"
+  },
+  "esquemas_a_cubrir": [
+    "Ventana lateral con rebote blanco: el basico para casi todo",
+    "Contraluz a 135 grados con difusor: brillos, vapor y bebidas",
+    "Luz dura y sombra marcada tipo mediodia: bowls frescos y verano",
+    "Clave baja sobre fondo oscuro: carnes, guisos y carta gourmet",
+    "Luz cenital difusa: mesas llenas y planos de conjunto",
+    "Mixta ambiente mas foco pequeno: fotos de sala con clientes al fondo"
+  ],
+  "por_cada_esquema": {
+    "nombre": "Corto y descriptivo",
+    "para_que_comida": "Cuando funciona y cuando no",
+    "montaje_real": "Posicion de la luz en grados, altura, difusor casero y rebote, con material barato",
+    "ajustes": "ISO, velocidad y diafragma orientativos, o el ajuste equivalente en movil",
+    "prompt_ia": "Prompt en ingles que reproduce esa luz en un generador de imagenes",
+    "riesgo": "El fallo mas comun de ese esquema y como corregirlo"
+  },
+  "formato_salida": "Seis fichas numeradas en markdown, cada una con los seis apartados anteriores y un titular de una linea",
+  "criterios_calidad": [
+    "Ningun esquema exige material que cueste mas de [PRESUPUESTO EN EUROS]",
+    "Las posiciones de luz se describen en grados respecto a la camara, no con vaguedades",
+    "Los seis son visiblemente distintos entre si"
+  ]
+}

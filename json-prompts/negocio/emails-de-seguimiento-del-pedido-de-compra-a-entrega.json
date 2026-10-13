@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir la secuencia completa de emails transaccionales de seguimiento de pedido de mi tienda, desde la confirmación de compra hasta el día después de la entrega",
+  "contexto": {
+    "tienda": "[NOMBRE DE LA TIENDA]",
+    "producto": "[QUÉ VENDES]",
+    "plazo_preparacion": "[EJ: 24-48 H LABORABLES]",
+    "plazo_entrega": "[EJ: 2-4 DÍAS EN PENÍNSULA]",
+    "agencias": "[AGENCIA O AGENCIAS QUE USAS]",
+    "canal_soporte": "[EMAIL / WHATSAPP / TELÉFONO Y HORARIO]",
+    "tono_de_marca": "[CERCANO / SOBRIO / DIVERTIDO]"
+  },
+  "emails": [
+    "1. Confirmación de pedido: qué ha comprado, qué pasa ahora y cuándo recibirá el número de seguimiento",
+    "2. Pedido preparado y enviado: número de seguimiento, enlace, ventana de entrega y qué hacer si no está en casa",
+    "3. En reparto hoy: aviso corto, opciones de recogida en punto y aviso de que un reintento retrasa la entrega",
+    "4. Entregado: confirmación, instrucciones de uso o primer paso, y cómo pedir cambio o devolución sin drama",
+    "5. Retraso: aviso proactivo cuando el paquete lleva [DÍAS DE ALERTA] días sin movimiento, con qué estamos haciendo y qué ofrecemos"
+  ],
+  "reglas_de_redaccion": [
+    "Asunto de menos de 50 caracteres y que incluya el número de pedido",
+    "Primera línea con la información importante: nadie lee el segundo párrafo",
+    "Un único botón o enlace principal por email",
+    "Nada de prometer fechas exactas cuando la agencia da una horquilla",
+    "En el email de retraso, pedir perdón sin excusas largas y decir el siguiente paso con fecha"
+  ],
+  "formato_salida": {
+    "por_cada_email": "Momento de envío, asunto, preencabezado, cuerpo listo para pegar y variables tipo {{nombre}} o {{numero_seguimiento}}",
+    "extra_1": "Versión corta de cada uno para SMS o WhatsApp, máximo 300 caracteres",
+    "extra_2": "Lista de las variables que debo configurar en mi plataforma"
+  },
+  "criterios_calidad": [
+    "Después de leer la secuencia, un cliente no necesita escribir para saber dónde está su pedido",
+    "Ningún email vende otra cosa antes de haber dado la información del envío",
+    "El tono es el mismo en los cinco"
+  ]
+}

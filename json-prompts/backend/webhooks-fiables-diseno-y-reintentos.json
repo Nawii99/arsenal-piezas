@@ -1,0 +1,36 @@
+{
+  "tarea": "Diseñar un sistema de webhooks fiable para avisar de [EVENTOS QUE HAY QUE COMUNICAR] entre [SISTEMA QUE EMITE] y [SISTEMA QUE RECIBE]",
+  "contexto": {
+    "eventos": "[LISTA DE EVENTOS: pago confirmado, pedido enviado, cita cancelada]",
+    "consecuencia_de_perder_uno": "[QUÉ PASA SI UN AVISO NO LLEGA]",
+    "volumen": "[EVENTOS AL DÍA Y PICOS PREVISTOS]",
+    "stack_receptor": "[DÓNDE VAS A RECIBIRLOS: tu servidor, Make, n8n, una función serverless]"
+  },
+  "decide_y_justifica": [
+    "Webhook o consulta periódica para cada evento, según urgencia y volumen",
+    "Qué lleva dentro el aviso: solo el identificador o los datos completos",
+    "Cómo se firma el aviso para saber que es auténtico y cómo se valida",
+    "Política de reintentos con espera creciente y cuándo se da por muerto",
+    "Cómo evitar que un evento repetido se procese dos veces",
+    "Qué hacer con los avisos que fallan siempre"
+  ],
+  "formato_salida": {
+    "catalogo_de_eventos": "Nombre del evento | cuándo se dispara | ejemplo del cuerpo en JSON",
+    "contrato_del_receptor": "Qué debe responder y en cuánto tiempo, y qué códigos provocan reintento",
+    "tabla_de_reintentos": "Intento | espera | acción final",
+    "pseudocodigo_receptor": "Pasos del receptor: validar firma, comprobar si ya se procesó, encolar, responder rápido",
+    "checklist_de_pruebas": "Casos a probar: firma inválida, evento duplicado, receptor caído, evento fuera de orden",
+    "que_vigilar": "3 alarmas mínimas con su umbral"
+  },
+  "restricciones": [
+    "El receptor responde antes de procesar la lógica pesada: primero acepta, luego trabaja",
+    "Nunca confiar en el orden de llegada de los eventos",
+    "Nunca aceptar un aviso sin validar su firma o su origen",
+    "Guardar el identificador de cada evento recibido durante un plazo definido"
+  ],
+  "criterios_calidad": [
+    "El sistema sigue siendo correcto si el mismo evento llega tres veces",
+    "Se puede reenviar un evento antiguo a mano sin romper nada",
+    "Cada decisión viene con el motivo en una frase"
+  ]
+}

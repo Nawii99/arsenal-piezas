@@ -1,0 +1,38 @@
+{
+  "tarea": "Elaborar el informe de cierre de un lanzamiento: qué pasó, por qué, qué se repite y qué se cambia en el siguiente",
+  "entradas": {
+    "lanzamiento": "[NOMBRE Y FECHAS]",
+    "oferta_y_precio": "[QUÉ VENDÍAS Y A CUÁNTO]",
+    "audiencia_impactada": "[SUSCRIPTORES, ALCANCE O CONTACTOS]",
+    "registros": "[INSCRITOS O INTERESADOS]",
+    "ventas_y_facturacion": "[NÚMERO DE VENTAS Y EUROS]",
+    "gasto": "[PUBLICIDAD, HERRAMIENTAS Y COLABORACIONES]",
+    "horas_dedicadas": "[HORAS TUYAS Y DE TU EQUIPO]",
+    "devoluciones": "[NÚMERO Y MOTIVOS]",
+    "notas": "[LO QUE RECUERDAS: QUÉ FUNCIONÓ, QUÉ SE ATASCÓ, QUÉ TE PREGUNTARON]"
+  },
+  "pasos": [
+    "Calcular resultado neto, coste por venta, conversión global y euros por hora dedicada",
+    "Separar los hechos de las interpretaciones y marcar cada conclusión con su nivel de certeza",
+    "Identificar las 3 cosas que más aportaron y las 3 que más costaron sin devolver nada",
+    "Extraer el patrón de las preguntas y objeciones recibidas y decir qué hay que aclarar en la oferta",
+    "Escribir la lista de cambios para el siguiente lanzamiento, ordenada por impacto",
+    "Preparar la ficha de comparación para medir el próximo con las mismas métricas"
+  ],
+  "restricciones": [
+    "No mezclar sensaciones con datos: cada afirmación indica si viene de un número o de una impresión",
+    "Máximo 5 cambios propuestos, cada uno con su responsable y su fecha",
+    "Si un dato falta, decirlo y proponer cómo medirlo la próxima vez",
+    "Sin autocrítica destructiva ni celebraciones vacías"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["Resumen en 5 líneas", "Tabla de números", "Qué funcionó", "Qué no funcionó", "Qué nos dijeron los clientes", "Los 5 cambios para el próximo", "Ficha de métricas a repetir"]
+  },
+  "criterios_calidad": [
+    "Los cálculos se pueden comprobar a mano",
+    "Cada cambio propuesto responde a algo que pasó de verdad en este lanzamiento",
+    "El informe sirve de punto de partida para planificar el siguiente sin releer nada más"
+  ],
+  "tono": "sereno y honesto, de revisión de equipo"
+}

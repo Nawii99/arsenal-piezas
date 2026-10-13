@@ -1,0 +1,41 @@
+{
+  "tarea": "Asignar cada mensaje al canal correcto y reescribirlo para ese canal",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "canales_disponibles": "[PUSH, IN-APP, BUZÓN DENTRO DE LA APP, EMAIL, WHATSAPP, SMS]",
+    "tiene_buzon": "[SÍ O NO, CENTRO DE NOTIFICACIONES DENTRO DE LA APP]",
+    "tipo_de_usuario": "[QUIÉN LA USA Y CON QUÉ FRECUENCIA]"
+  },
+  "entradas": {
+    "mensajes": "[PEGA LA LISTA DE AVISOS QUE ENVÍAS O QUIERES ENVIAR, UNO POR LÍNEA]"
+  },
+  "criterios_de_decision": [
+    "Push: urgente, personal y accionable fuera de la app",
+    "In-app: relevante solo mientras la persona está usando la app o descubre una función",
+    "Buzón: informativo, sin urgencia, que el usuario consulta cuando quiere",
+    "Email: largo, con detalle, comprobante o algo que se guarda",
+    "Ninguno: si no cambia nada para el usuario, no se envía"
+  ],
+  "instrucciones": [
+    "Clasifica cada mensaje de la lista según los criterios y justifica en una línea",
+    "Reescribe cada mensaje con el formato y el límite del canal asignado",
+    "Cuando un mensaje merezca dos canales, define el orden y el retraso entre ellos, y la condición para cancelar el segundo",
+    "Marca los mensajes que deberían dejar de enviarse y explica por qué",
+    "Propón el diseño del buzón si no existe: qué guarda, cuánto tiempo y cómo se marca como leído"
+  ],
+  "restricciones": [
+    "Un mensaje no puede salir por más de dos canales",
+    "Push solo si el usuario puede hacer algo al respecto en ese momento",
+    "Respeta límites: push 40 y 120 caracteres, in-app titular y dos líneas, asunto de email 50 caracteres"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown",
+    "columnas": ["Mensaje original", "Canal asignado", "Motivo", "Texto reescrito", "Segundo canal y retraso", "Condición de cancelación"],
+    "extra": "Debajo, la regla de decisión resumida en 5 líneas para que la use tu equipo sin volver a preguntar"
+  },
+  "criterios_calidad": [
+    "Al menos un mensaje acaba en la categoría de no enviar",
+    "Los textos reescritos respetan los límites indicados",
+    "La regla final se entiende sin leer el resto del documento"
+  ]
+}

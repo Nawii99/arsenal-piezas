@@ -1,0 +1,35 @@
+{
+  "tarea": "Analizar los retratos que te adjunto y decirme con precisión qué está fallando y cómo se corrige en la próxima sesión",
+  "material_que_aporto": {
+    "imagenes": "[ADJUNTA DE 1 A 5 FOTOS]",
+    "ajustes_usados": "[APERTURA, VELOCIDAD, ISO, FOCAL DE CADA FOTO SI LOS SABES]",
+    "equipo": "[CÁMARA Y OBJETIVO O MÓVIL]",
+    "luz_del_sitio": "[DESCRIPCIÓN EN UNA FRASE]",
+    "que_me_chirria": "[LO QUE NO TE GUSTA AUNQUE NO SEPAS EXPLICARLO]",
+    "para_que_eran": "[USO FINAL DE LAS FOTOS]"
+  },
+  "revisar_en_este_orden": [
+    "Enfoque: ¿están los ojos nítidos? ¿el fallo es de enfoque o de trepidación?",
+    "Exposición: caras oscuras, luces quemadas en frente y mejillas",
+    "Luz: dirección, dureza de las sombras, sombras feas bajo los ojos o en el cuello, doble sombra",
+    "Color: dominante de piel, mezcla de luces de distinta temperatura",
+    "Encuadre: recortes por articulaciones, poco aire sobre la cabeza, horizonte torcido",
+    "Fondo: elementos que salen de la cabeza, desorden, falta de separación",
+    "Pose y expresión: hombros, manos, barbilla, tensión",
+    "Distancia y focal: deformación de la nariz por acercarse demasiado"
+  ],
+  "formato_salida": {
+    "por_foto": ["Qué está bien (1 línea)", "Fallo principal", "Fallos secundarios", "Causa técnica probable", "Corrección al disparar", "Qué se puede salvar editando"],
+    "al_final": ["El patrón que se repite en todas", "Los 3 cambios que más mejorarían mis retratos", "Qué NO es culpa del equipo"]
+  },
+  "restricciones": [
+    "Ser directo pero sin condescendencia",
+    "No recomendar comprar equipo salvo que el fallo sea imposible de resolver con el que tengo",
+    "Distinguir siempre entre lo que se arregla en cámara y lo que se arregla editando"
+  ],
+  "criterios_calidad": [
+    "Cada fallo señalado va con una causa y una acción concreta",
+    "Se prioriza: primero lo que más impacto tiene",
+    "Puedo aplicar las correcciones sin comprar nada"
+  ]
+}

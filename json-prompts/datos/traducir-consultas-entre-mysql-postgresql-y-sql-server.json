@@ -1,0 +1,36 @@
+{
+  "tarea": "Traducir una consulta SQL de un motor a otro conservando el mismo resultado y avisando de las diferencias de comportamiento",
+  "entradas": {
+    "motor_origen": "[EJ: MYSQL 5.7]",
+    "motor_destino": "[EJ: POSTGRESQL 16]",
+    "consulta": "[PEGA AQUÍ LA CONSULTA ORIGINAL]",
+    "esquema": "[TABLAS Y TIPOS DE DATO SI LOS TIENES]",
+    "uso": "[INFORME PUNTUAL / CONSULTA EN PRODUCCIÓN]"
+  },
+  "puntos_criticos": [
+    "Funciones de fecha y de intervalo, que cambian de nombre y de sintaxis en cada motor",
+    "Concatenación de textos y funciones de cadena",
+    "Comillas y mayúsculas en los nombres de tablas y columnas",
+    "Paginación: LIMIT frente a OFFSET FETCH o TOP",
+    "División entera frente a división decimal y redondeo de importes",
+    "Comparación de textos sensible o insensible a mayúsculas y acentos",
+    "Tratamiento de valores vacíos y funciones tipo IFNULL, COALESCE o ISNULL",
+    "GROUP BY estricto en el motor destino",
+    "Tipos booleanos, numéricos y de fecha que no equivalen uno a uno"
+  ],
+  "formato_salida": {
+    "consulta_traducida": "La consulta lista para el motor destino, en bloque de código",
+    "tabla_equivalencias": "Tabla con columnas Elemento original, Equivalente en destino, Diferencia de comportamiento",
+    "avisos": "Casos en los que el resultado podría cambiar aunque la consulta funcione",
+    "pruebas": "Consultas de comprobación para ejecutar en ambos motores y comparar recuentos y sumas"
+  },
+  "restricciones": [
+    "No usar funciones que no existan en la versión de destino indicada",
+    "Si algo no tiene equivalente directo, ofrecer una alternativa y explicar qué se pierde",
+    "Mantener los nombres de columna del resultado tal como estaban"
+  ],
+  "criterios_calidad": [
+    "La consulta traducida se ejecuta sin errores de sintaxis en el motor destino",
+    "Todas las diferencias que afectan al número final están señaladas"
+  ]
+}

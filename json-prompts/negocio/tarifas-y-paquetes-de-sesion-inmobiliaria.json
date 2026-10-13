@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar la estructura de tarifas de un fotógrafo de inmobiliaria e interiores: tres paquetes, extras y condiciones de contratación",
+  "entradas": {
+    "ciudad_y_zona": "[CIUDAD Y RADIO EN KM]",
+    "coste_hora_objetivo": "[LO QUE NECESITAS GANAR POR HORA TRABAJADA]",
+    "tiempo_por_sesion": "[HORAS DE VISITA] + [HORAS DE EDICIÓN]",
+    "servicios": "[FOTO / VÍDEO / PLANO / TOUR 360 / DRON / HOME STAGING VIRTUAL]",
+    "cliente_tipo": "[AGENCIA CON VOLUMEN / PARTICULAR / PROMOTORA / ALQUILER TURÍSTICO]",
+    "volumen_mensual_estimado": "[SESIONES AL MES]"
+  },
+  "procedimiento": [
+    "Calcula el coste real de una sesión: desplazamiento, tiempo en vivienda, edición, entrega, gestión y el porcentaje de horas no facturables",
+    "Define tres paquetes por tamaño de inmueble o número de fotos entregadas, con diferencia clara entre ellos y no solo de precio",
+    "Sitúa el paquete intermedio como el recomendado y haz que el superior aporte algo con coste bajo para ti y valor alto para el cliente",
+    "Lista los extras con precio unitario: fotos adicionales, urgencia en 24 horas, hora azul, dron, vídeo vertical, segunda visita por vivienda no preparada",
+    "Propón un descuento por volumen para agencias con mínimo mensual comprometido",
+    "Redacta las condiciones: qué incluye, plazo de entrega, número de retoques incluidos, política de cancelación, quién prepara la vivienda y cesión de uso de las imágenes"
+  ],
+  "restricciones": [
+    "No inventar precios de mercado concretos de la ciudad: calcula desde los costes indicados y marca dónde el usuario debe contrastar",
+    "Los precios se presentan sin IVA e indicándolo",
+    "Nada de tarifas por debajo del coste hora objetivo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla comparativa de los tres paquetes con nombre, qué incluye, número de fotos, plazo y precio",
+    "bloque_2": "Tabla de extras con precio",
+    "bloque_3": "Condiciones de contratación en 10 puntos, listas para pegar en el presupuesto",
+    "bloque_4": "Email de respuesta a una petición de precio, breve y con enlace a los paquetes"
+  },
+  "criterios_calidad": [
+    "Cada paquete supera el coste hora objetivo indicado",
+    "Se entiende en 30 segundos cuál elegir",
+    "Las condiciones evitan los conflictos típicos: casa sin preparar, retoques infinitos, uso en otra web"
+  ]
+}

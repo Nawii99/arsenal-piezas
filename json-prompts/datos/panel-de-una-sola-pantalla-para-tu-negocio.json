@@ -1,0 +1,42 @@
+{
+  "tarea": "Diseñar un panel de control de una sola pantalla para un negocio pequeño: qué indicadores, qué gráficos y en qué orden",
+  "contexto": {
+    "negocio": "[A QUÉ TE DEDICAS Y CÓMO GANAS DINERO]",
+    "objetivo_del_trimestre": "[EL OBJETIVO CONCRETO: FACTURAR X, SUBIR MARGEN, REDUCIR CANCELACIONES...]",
+    "quien_lo_usa": "[TÚ SOLO / TU EQUIPO / UN CLIENTE]",
+    "frecuencia_de_revision": "[DIARIA / SEMANAL / MENSUAL]"
+  },
+  "entradas": {
+    "fuentes_de_datos": "[DE DÓNDE SALEN LOS DATOS: TPV, SHOPIFY, EXCEL, CRM, GOOGLE ANALYTICS...]",
+    "metricas_que_ya_mides": "[LO QUE YA MIRAS HOY]",
+    "herramienta_destino": "[GOOGLE SHEETS / EXCEL / LOOKER STUDIO / NOTION / PÁGINA HTML]",
+    "limitaciones": "[QUÉ DATOS NO TIENES O NO PUEDES SACAR]"
+  },
+  "metodo": [
+    "Elegir una sola métrica principal que resuma la salud del negocio y justificar la elección",
+    "Seleccionar de tres a cinco métricas de apoyo que expliquen los movimientos de la principal",
+    "Descartar métricas de vanidad que no llevan a ninguna decisión y decir por qué se descartan",
+    "Definir para cada métrica: cómo se calcula, con qué se compara (mes anterior, mismo mes del año pasado, objetivo) y qué valor enciende una alarma",
+    "Repartir el espacio: fila superior con cifras grandes, zona central con la evolución, zona inferior con detalle por categoría",
+    "Indicar el gráfico concreto de cada bloque y su tamaño relativo"
+  ],
+  "restricciones": [
+    "Todo tiene que caber en una pantalla sin desplazarse",
+    "Máximo seis bloques en total",
+    "Cada bloque responde a una pregunta escrita; si no hay pregunta, se elimina",
+    "El color solo se usa para señalar bien o mal, nunca de adorno",
+    "Nada que requiera programar: solo lo que se pueda montar en la herramienta indicada"
+  ],
+  "formato_salida": {
+    "tipo": "tabla y esquema",
+    "tabla_metricas": ["Métrica", "Pregunta que responde", "Cómo se calcula", "Comparativa", "Umbral de alarma", "Fuente"],
+    "esquema_visual": "Dibujo del panel en texto, indicando posición y tamaño de cada bloque",
+    "extras": ["Lista de métricas descartadas con su motivo", "Rutina de revisión de 10 minutos: qué mirar y en qué orden"]
+  },
+  "criterios_calidad": [
+    "Cada bloque lleva a una acción posible, no solo a una observación",
+    "El panel se puede montar con los datos que el negocio ya tiene",
+    "Un empleado nuevo entiende el panel sin que nadie se lo explique"
+  ],
+  "tono": "claro y concreto, tuteando"
+}

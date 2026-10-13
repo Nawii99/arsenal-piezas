@@ -1,0 +1,31 @@
+{
+  "tarea": "Crear la escaleta cronometrada de un episodio de podcast en solitario sobre [TEMA DEL EPISODIO], de [DURACIÓN: 20-30 MIN]",
+  "contexto": {
+    "programa": "[NOMBRE DEL PODCAST]",
+    "episodio": "[NÚMERO O TÍTULO PROVISIONAL]",
+    "oyente": "[QUIÉN ESCUCHA Y EN QUÉ MOMENTO DEL DÍA]",
+    "tono": "[CERCANO / ANALÍTICO / MOTIVADOR]",
+    "patrocinio": "[MARCA Y MENSAJE, O 'NINGUNO']",
+    "cta": "[QUÉ PIDES AL FINAL]"
+  },
+  "estructura": [
+    "Cold open de 30 s: la frase más potente del episodio, sacada del contenido",
+    "Sintonía y presentación de 45 s con la promesa del episodio",
+    "3 o 4 bloques de contenido, cada uno con una idea, un ejemplo y una conclusión aplicable",
+    "Cuña de patrocinio en el minuto 5-7, con guion propio de 40 segundos",
+    "Bloque de aplicación: qué hace el oyente esta semana con lo escuchado",
+    "Cierre de 60 s: resumen, adelanto del próximo episodio y CTA único"
+  ],
+  "nivel_de_guion": "Escribe palabra por palabra el cold open, la presentación, la cuña y el cierre. Los bloques de contenido van en viñetas de apoyo para hablar sin leer.",
+  "formato_salida": {
+    "escaleta": "Tabla con Minuto de inicio | Duración | Bloque | Contenido | Nota de locución",
+    "textos_literales": "Los cuatro trozos que van escritos palabra por palabra",
+    "notas_episodio": "Descripción de 150 palabras, 5 marcas de tiempo y enlaces a mencionar",
+    "titulos": "5 títulos de episodio de menos de 65 caracteres"
+  },
+  "criterios_calidad": [
+    "Las viñetas de cada bloque bastan para hablar 5 minutos sin leer un texto",
+    "La suma de duraciones cuadra con la duración objetivo",
+    "El cold open no es una promesa vacía: es una frase real del episodio"
+  ]
+}

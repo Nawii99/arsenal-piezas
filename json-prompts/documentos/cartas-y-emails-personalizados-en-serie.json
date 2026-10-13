@@ -1,0 +1,56 @@
+{
+  "tarea": "Crear una carta o email base con campos variables y generar la version personalizada para cada destinatario de una lista",
+  "contexto": {
+    "motivo_del_envio": "[SUBIDA DE PRECIOS, RENOVACION, AVISO DE CIERRE, RECLAMACION, CERTIFICADO]",
+    "canal": "[EMAIL, CARTA IMPRESA, PDF ADJUNTO, WHATSAPP]",
+    "relacion_con_el_destinatario": "[CLIENTES ANTIGUOS, PROVEEDORES, ALUMNOS, VECINOS]",
+    "tono": "[CERCANO O FORMAL]",
+    "firma": "[NOMBRE, CARGO Y DATOS DE CONTACTO]"
+  },
+  "entradas": {
+    "mensaje_a_transmitir": "[QUE TIENEN QUE SABER Y QUE TIENEN QUE HACER]",
+    "lista_destinatarios": "[PEGA LA TABLA CON SUS COLUMNAS, EJ: nombre;empresa;importe;fecha]",
+    "limites_legales": "[PLAZOS DE PREAVISO U OBLIGACIONES QUE DEBAN CONSTAR]"
+  },
+  "pasos": [
+    "1. Escribe la carta base usando marcadores entre llaves dobles que coincidan exactamente con las columnas de la lista",
+    "2. Deja el primer parrafo con la noticia principal, sin rodeos, y el ultimo con lo que tiene que hacer el destinatario",
+    "3. Define un valor por defecto para cada marcador por si falta el dato, y evita saludos rotos tipo Hola coma",
+    "4. Revisa que ningun marcador quede sin columna correspondiente ni ninguna columna clave sin usar",
+    "5. Genera las versiones personalizadas, una por destinatario, separadas por una linea de guiones",
+    "6. Adapta el trato de tu o usted segun la relacion, de forma consistente en todo el texto",
+    "7. Revisa concordancia de genero y numero en cada version generada",
+    "8. Prepara tres asuntos de email distintos y di cual usar segun el motivo",
+    "9. Marca las filas con datos incompletos para enviarlas a mano"
+  ],
+  "que_mirar": [
+    "Nombres en mayusculas o con el apellido en el campo del nombre",
+    "Importes y fechas con el formato español: coma decimal y dia/mes/año",
+    "Empresas que deben recibir trato de usted aunque el resto no",
+    "Que el plazo de preaviso legal aparezca escrito cuando toque"
+  ],
+  "errores_tipicos": [
+    "Enviar sin haber leido tres versiones completas al azar",
+    "Marcadores mal escritos que aparecen tal cual en la carta enviada",
+    "Poner a todos los destinatarios en copia visible",
+    "Anunciar una subida sin decir desde cuando se aplica"
+  ],
+  "restricciones": [
+    "No inventes importes ni fechas: solo los de la lista",
+    "Maximo 180 palabras por carta",
+    "Ni una promesa comercial que no me hayas oido decir"
+  ],
+  "formato_salida": {
+    "bloque_1": "Carta base con los marcadores entre llaves dobles",
+    "bloque_2": "Tabla de marcadores: marcador | columna de la lista | valor por defecto",
+    "bloque_3": "Versiones personalizadas completas, separadas por una linea de guiones",
+    "bloque_4": "Lista de destinatarios con datos incompletos y que falta en cada uno",
+    "bloque_5": "Tres asuntos de email propuestos"
+  },
+  "criterios_calidad": [
+    "Ninguna version sale con un marcador sin sustituir",
+    "Cada carta se lee en menos de un minuto",
+    "El destinatario sabe que tiene que hacer y hasta cuando",
+    "Los importes coinciden exactamente con los de la lista"
+  ]
+}

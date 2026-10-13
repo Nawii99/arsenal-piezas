@@ -1,0 +1,62 @@
+{
+  "tarea": "Preparar y supervisar el traslado de una web a otro alojamiento o dominio sin perder el tráfico que ya llega desde buscadores",
+  "contexto": {
+    "web_actual": "[URL ACTUAL]",
+    "destino": "[NUEVO HOSTING O NUEVO DOMINIO]",
+    "motivo": "[POR QUÉ TE MUEVES: PRECIO, LENTITUD, REDISEÑO, CAMBIO DE MARCA]",
+    "quien_ejecuta": "[YO SIN PERFIL TÉCNICO / UNA PERSONA TÉCNICA]",
+    "visitas_mensuales": "[NÚMERO APROXIMADO]",
+    "fecha_objetivo": "[DÍA Y FRANJA HORARIA DEL CAMBIO]"
+  },
+  "entradas": {
+    "listado_de_urls": "[PEGA EL SITEMAP.XML O LA LISTA DE PÁGINAS ACTUALES]",
+    "paginas_top": "[LAS 10 PÁGINAS QUE MÁS VISITAS TRAEN SEGÚN TU ANALÍTICA]",
+    "cosas_que_deben_seguir_funcionando": "[FORMULARIOS, PAGOS, RESERVAS, CORREO, ZONA PRIVADA]",
+    "registrador_del_dominio": "[IONOS, GODADDY, NAMECHEAP, OTRO]",
+    "accesos_disponibles": "[QUÉ PANELES Y CONTRASEÑAS TIENES A MANO]"
+  },
+  "pasos": [
+    "1. Inventario: crea una tabla con cada URL antigua, su título, si recibe visitas y su destino (se mantiene igual, cambia de dirección o desaparece).",
+    "2. Marca como críticas las páginas del top de visitas y las que tengan enlaces desde fuera; esas nunca pueden acabar en un error 404.",
+    "3. Mapa de redirecciones: para cada URL que cambie, escribe la pareja origen y destino con una redirección permanente 301 hacia la página equivalente, no hacia la portada.",
+    "4. Copia de seguridad completa antes de tocar nada: archivos, base de datos si la hay, textos e imágenes, y guarda una copia fuera del hosting.",
+    "5. Monta la web nueva y pruébala con el dominio provisional del hosting antes de apuntar el dominio real.",
+    "6. Baja el TTL del DNS a 300 segundos entre 24 y 48 horas antes del cambio para que la mudanza sea rápida de revertir.",
+    "7. Comprueba que el correo del dominio no se rompe: los registros MX y SPF se mantienen aunque cambie el alojamiento web.",
+    "8. Haz el cambio en horario de poco tráfico y con el listado de comprobaciones abierto.",
+    "9. Tras el cambio, sube el sitemap nuevo a Search Console y pide la indexación de las páginas críticas.",
+    "10. Vigila durante 30 días: errores 404, visitas por página y posiciones de las 10 páginas críticas."
+  ],
+  "comprobaciones_antes_de_apagar_lo_viejo": [
+    "Cada URL crítica antigua abre la página correcta y devuelve 301, no 302 ni 404",
+    "El candado de seguridad (certificado SSL) funciona en la versión con www y sin www",
+    "Los formularios envían y llega el correo de verdad, no solo el mensaje de gracias",
+    "Las imágenes y los archivos descargables cargan",
+    "La analítica registra visitas en la web nueva"
+  ],
+  "errores_tipicos": [
+    "Redirigir todo a la portada: Google lo trata casi como si la página hubiera desaparecido",
+    "Dejar la web nueva bloqueada a buscadores porque el modo de pruebas se quedó activado",
+    "Olvidar los registros de correo y quedarte sin recibir mensajes de clientes",
+    "Apagar el hosting antiguo el mismo día: consérvalo al menos 30 días",
+    "Cambiar direcciones sin necesidad; si una URL puede quedarse igual, se queda igual"
+  ],
+  "restricciones": [
+    "Español llano, sin jerga técnica sin explicar",
+    "Nada de tocar código sin decir exactamente en qué archivo y qué línea",
+    "Si falta un dato para decidir, pregúntalo antes de proponer el plan"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de redirecciones con columnas: URL antigua, URL nueva, tipo, prioridad",
+    "bloque_2": "Calendario del cambio hora a hora del día D",
+    "bloque_3": "Lista de comprobación para marcar con casillas",
+    "bloque_4": "Plan de vuelta atrás en 5 pasos si algo sale mal",
+    "bloque_5": "Qué revisar los días 1, 7 y 30 después"
+  },
+  "criterios_calidad": [
+    "Ninguna URL con visitas queda sin destino asignado",
+    "El plan se puede ejecutar sin saber programar",
+    "Existe una vuelta atrás clara y se puede hacer en menos de una hora",
+    "Cada paso dice cómo comprobar que ha salido bien"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Diseñar un itinerario formativo por puestos para una empresa, priorizado por impacto en el trabajo diario",
+  "contexto": {
+    "empresa": "[NOMBRE Y ACTIVIDAD DE LA EMPRESA]",
+    "puestos": "[LISTA DE PUESTOS Y CUÁNTAS PERSONAS HAY EN CADA UNO]",
+    "tareas_clave_por_puesto": "[QUÉ HACE CADA PUESTO EN SU DÍA A DÍA]",
+    "carencias_detectadas": "[QUÉ SE HACE MAL O LENTO HOY]",
+    "horizonte": "[MESES DISPONIBLES]",
+    "presupuesto": "[EUROS O SIN PRESUPUESTO]",
+    "horas_formacion_por_persona": "[HORAS AL MES QUE PUEDEN DEDICAR]"
+  },
+  "metodo": [
+    "Para cada puesto, lista las competencias necesarias y puntúa nivel actual y nivel deseado de 1 a 5",
+    "Calcula la brecha y multiplícala por el impacto en el negocio para priorizar",
+    "Agrupa competencias en acciones formativas concretas con duración",
+    "Reparte las acciones en el horizonte indicado respetando las horas disponibles",
+    "Marca qué es formación común a todos y qué es específica de un puesto",
+    "Indica qué se puede resolver con formación interna y qué exige proveedor externo"
+  ],
+  "formato_salida": {
+    "1_matriz": "Tabla: Puesto | Competencia | Nivel actual | Nivel deseado | Brecha | Impacto 1-5 | Prioridad",
+    "2_acciones": "Tabla: Acción formativa | Puestos destinatarios | Horas | Modalidad | Interna o externa | Coste estimado",
+    "3_calendario": "Cronograma por meses con las acciones colocadas",
+    "4_medicion": "Cómo se comprueba que ha servido: indicador de trabajo real por acción, no encuestas de satisfacción",
+    "5_minimo": "Si solo hubiera dinero para tres acciones, cuáles y por qué"
+  },
+  "restricciones": [
+    "No propongas formación sin relación con una tarea real del puesto",
+    "Respeta el presupuesto y las horas indicadas",
+    "Los indicadores deben ser observables en el trabajo, no notas de examen"
+  ],
+  "criterios_calidad": [
+    "Toda carencia declarada tiene al menos una acción asignada",
+    "El calendario es realista y no solapa formaciones al mismo equipo"
+  ]
+}

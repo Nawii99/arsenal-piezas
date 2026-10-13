@@ -1,0 +1,50 @@
+{
+  "tarea": "Adaptar un curso existente a tres publicos distintos reutilizando el nucleo y cambiando solo lo que hace falta",
+  "contexto": {
+    "curso_actual": "[NOMBRE, DURACION Y FORMATO]",
+    "publico_actual": "[A QUIEN SE LO VENDES HOY]",
+    "publicos_objetivo": ["[PUBLICO A]", "[PUBLICO B]", "[PUBLICO C]"],
+    "tiempo_que_puedo_invertir_en_adaptar": "[HORAS]"
+  },
+  "entradas": {
+    "temario_actual": "[PEGA EL INDICE CON DURACIONES]",
+    "materiales_existentes": "[SLIDES, PLANTILLAS, EJERCICIOS, VIDEOS]",
+    "precio_actual": "[PRECIO Y QUE INCLUYE]"
+  },
+  "proceso": [
+    "1. Identifica el nucleo invariable: lo que se ensena igual para cualquier publico, que no se toca",
+    "2. Identifica la capa variable: ejemplos, casos, plantillas, vocabulario y prisa",
+    "3. Para cada publico define su punto de partida real, su objetivo y la palabra con la que ellos llaman al problema",
+    "4. Sustituye ejemplo a ejemplo: cada ejemplo del curso actual se cambia por el equivalente del sector o nivel del publico",
+    "5. Ajusta el ritmo: que modulo se alarga, cual se resume y cual se elimina para cada publico, con las horas resultantes",
+    "6. Ajusta el entregable final: cada publico se lleva a casa algo distinto y util para su realidad",
+    "7. Ajusta formato, precio y argumento de venta segun quien paga, si el propio alumno o su empresa",
+    "8. Calcula el trabajo real de adaptacion por publico y ordenalo por facilidad"
+  ],
+  "restricciones": [
+    "El nucleo no se reescribe: si hay que reescribirlo, es que no era nucleo",
+    "Cada version mantiene la promesa cumplible, sin prometer resultados economicos",
+    "Nada de cambiar solo la portada y el nombre: los ejemplos tienen que cambiar de verdad",
+    "Tres versiones como maximo, para no volverse loco manteniendo material"
+  ],
+  "errores_a_evitar": [
+    "Adaptar por nivel diciendo lo mismo mas despacio",
+    "Mantener el mismo entregable final para publicos con necesidades distintas",
+    "Bajar el precio para principiantes sin quitar nada del servicio",
+    "Multiplicar versiones y no poder actualizar ninguna cuando cambie la herramienta"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla nucleo frente a capa variable, modulo a modulo",
+    "bloque_2": "Ficha por publico: punto de partida, objetivo, vocabulario propio, entregable final",
+    "bloque_3": "Tabla de temario adaptado por publico con las horas de cada modulo",
+    "bloque_4": "Lista de sustituciones de ejemplos: ejemplo actual, ejemplo nuevo para cada publico",
+    "bloque_5": "Formato, precio orientativo y argumento de venta de cada version",
+    "bloque_6": "Plan de adaptacion ordenado por esfuerzo, con las horas estimadas de cada tarea"
+  },
+  "criterios_calidad": [
+    "Un alumno de cada publico reconoce su dia a dia en los ejemplos",
+    "El nucleo se actualiza una vez y sirve para las tres versiones",
+    "Cada version tiene un entregable final distinto y coherente con su publico",
+    "El plan de adaptacion cabe en las horas declaradas"
+  ]
+}

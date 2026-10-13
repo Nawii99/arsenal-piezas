@@ -1,0 +1,36 @@
+{
+  "tarea": "Evaluar el riesgo de que una colaboracion con un autonomo se considere relacion laboral encubierta en Espana y proponer correcciones concretas",
+  "entradas": {
+    "tiempo_colaborando": "[CUANTOS MESES O ANOS LLEVAIS]",
+    "dedicacion": "[HORAS O DIAS A LA SEMANA]",
+    "horario": "[TIENE HORARIO FIJO IMPUESTO? SI O NO Y CUAL]",
+    "medios": "[QUIEN PONE ORDENADOR, PROGRAMAS, LOCAL Y MATERIAL]",
+    "instrucciones": "[QUIEN LE DICE QUE HACER Y CON QUE DETALLE]",
+    "exclusividad": "[TIENE OTROS CLIENTES? CUANTOS]",
+    "facturacion": "[IMPORTE MENSUAL Y QUE PORCENTAJE DE SUS INGRESOS SUPONE]",
+    "integracion": "[TIENE EMAIL DE EMPRESA, APARECE EN LA WEB, VA A REUNIONES INTERNAS?]",
+    "sustitucion": "[PUEDE ENVIAR A OTRA PERSONA EN SU LUGAR?]"
+  },
+  "metodo": [
+    "Puntuar cada indicio clasico: ajenidad, dependencia, medios propios, horario, exclusividad, integracion en la organizacion y forma de retribucion",
+    "Marcar cada indicio como VERDE, AMBAR o ROJO explicando por que",
+    "Calcular un nivel de riesgo global y justificarlo en tres lineas",
+    "Proponer para cada indicio en ambar o rojo un cambio concreto y realista",
+    "Indicar cuando la unica salida sensata es contratar por cuenta ajena o pasar a TRADE"
+  ],
+  "restricciones": [
+    "No cites sentencias ni articulos concretos si no estas seguro de su contenido",
+    "No des un veredicto juridico definitivo: habla siempre de indicios y de riesgo",
+    "Nada de consejos para disimular la realidad: los cambios deben ser reales"
+  ],
+  "formato_salida": {
+    "tabla": "Tabla con columnas Indicio, Situacion actual, Semaforo, Que cambiar",
+    "riesgo_global": "BAJO, MEDIO o ALTO con explicacion breve",
+    "plan_30_dias": "Maximo 6 acciones ordenadas por urgencia",
+    "aviso": "Frase final recomendando contraste con un laboralista"
+  },
+  "criterios_calidad": [
+    "Cada semaforo se apoya en un dato aportado por el usuario",
+    "Las acciones son ejecutables sin abogado en menos de un mes"
+  ]
+}

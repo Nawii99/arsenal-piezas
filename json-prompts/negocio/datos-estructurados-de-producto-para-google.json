@@ -1,0 +1,40 @@
+{
+  "tarea": "Generar el codigo de datos estructurados Schema.org de tipo Product en formato JSON-LD para una ficha de tienda online",
+  "entradas": {
+    "nombre": "[NOMBRE DEL PRODUCTO]",
+    "marca": "[MARCA]",
+    "sku_o_referencia": "[REFERENCIA INTERNA]",
+    "gtin_o_ean": "[CODIGO DE BARRAS SI LO TIENES]",
+    "descripcion_corta": "[UNA O DOS FRASES]",
+    "url_ficha": "[URL COMPLETA]",
+    "url_imagenes": "[UNA O VARIAS URLS]",
+    "precio": "[PRECIO CON PUNTO DECIMAL]",
+    "moneda": "EUR",
+    "disponibilidad": "[EN STOCK, AGOTADO O BAJO PEDIDO]",
+    "devolucion_dias": "[DIAS]",
+    "valoraciones": "[NOTA MEDIA Y NUMERO DE OPINIONES REALES, O NINGUNA]"
+  },
+  "reglas": [
+    "Usar solo propiedades que Google admite para Product y con los valores exactos de la entrada",
+    "El precio va sin simbolo de euro y con punto como separador decimal",
+    "La disponibilidad se traduce a la url correcta de schema.org",
+    "Incluir aggregateRating solo si hay opiniones reales publicadas en la propia pagina",
+    "Incluir offers con priceValidUntil y la url de la ficha",
+    "No marcar informacion que no aparezca visible en la pagina para el usuario"
+  ],
+  "formato_salida": {
+    "bloque_1": "el codigo JSON-LD completo dentro de una etiqueta script, listo para pegar",
+    "bloque_2": "explicacion en lenguaje llano de donde pegarlo segun la plataforma indicada",
+    "bloque_3": "lista de campos que has dejado fuera y por que",
+    "bloque_4": "como comprobarlo con la prueba de resultados enriquecidos de Google"
+  },
+  "contexto": {
+    "plataforma": "[SHOPIFY, WOOCOMMERCE, PRESTASHOP U OTRA]",
+    "ya_tiene_datos_estructurados": "[SI, NO O NO LO SE]"
+  },
+  "criterios_calidad": [
+    "El codigo pasa la prueba de resultados enriquecidos sin errores",
+    "No hay valores inventados ni de ejemplo dentro del codigo final",
+    "Si la plataforma ya genera datos, avisar del riesgo de duplicarlos"
+  ]
+}

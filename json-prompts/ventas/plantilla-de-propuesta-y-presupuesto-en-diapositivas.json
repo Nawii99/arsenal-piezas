@@ -1,0 +1,36 @@
+{
+  "tarea": "Montar la plantilla reutilizable de propuesta económica en diapositivas para clientes",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "servicio": "[QUÉ VENDES]",
+    "modelo_de_precio": "[POR PROYECTO / POR HORAS / CUOTA MENSUAL]",
+    "importe_orientativo": "[RANGO DE PRECIO]",
+    "plazos": "[DURACIÓN Y FECHAS]",
+    "condiciones": "[FORMA DE PAGO, VALIDEZ Y QUÉ NECESITAS DEL CLIENTE]"
+  },
+  "estructura": [
+    "Portada con el nombre del cliente y la fecha",
+    "Lo que nos has contado: el problema en 4 líneas, con las palabras del cliente",
+    "Objetivo del proyecto, medible",
+    "Alcance: qué incluye, entregable a entregable",
+    "Fuera de alcance: qué no incluye",
+    "Calendario con hitos y fechas",
+    "Inversión: 2 o 3 opciones y qué cambia entre ellas",
+    "Condiciones: pagos, validez de la oferta y qué pasa si hay cambios",
+    "Por qué nosotros: una prueba concreta, no adjetivos",
+    "Siguiente paso: cómo aceptar y antes de qué fecha"
+  ],
+  "reglas": [
+    "Cada partida del alcance dice qué recibe el cliente, no qué haces tú",
+    "La opción intermedia se marca como recomendada y se explica por qué",
+    "Los importes se muestran sin IVA y se indica que el IVA no está incluido",
+    "Las condiciones van en la misma diapositiva del precio, sin letra pequeña escondida",
+    "Cualquier dato no facilitado se marca como [DATO PENDIENTE]"
+  ],
+  "formato_salida": "Una ficha por diapositiva con titular, texto visible y notas, y al final una checklist de 6 puntos antes de enviarla",
+  "criterios_calidad": [
+    "El cliente entiende qué compra y por cuánto en menos de dos minutos",
+    "No hay ambigüedad sobre lo que queda fuera",
+    "Se reutiliza cambiando solo lo que va entre corchetes"
+  ]
+}

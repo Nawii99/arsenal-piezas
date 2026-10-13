@@ -1,0 +1,37 @@
+{
+  "tarea": "Inventariar la web actual y decidir qué hacer con cada página antes de migrarla o rediseñarla",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO Y A QUÉ SE DEDICA]",
+    "web_actual": "[DOMINIO ACTUAL]",
+    "plataforma_actual": "[WORDPRESS, PRESTASHOP, SHOPIFY, WEBFLOW, HECHA A MEDIDA...]",
+    "motivo_del_cambio": "[DISEÑO ANTIGUO, LENTITUD, CAMBIO DE PLATAFORMA, FUSIÓN DE DOS WEBS, CAMBIO DE MARCA...]"
+  },
+  "entradas": {
+    "listado_urls": "[PEGA EL LISTADO DE URLS: EXPORT DEL SITEMAP.XML O DE UNA HERRAMIENTA DE RASTREO]",
+    "datos_trafico": "[VISITAS POR PÁGINA DE LOS ÚLTIMOS 12 MESES, SI LAS TIENES]",
+    "paginas_que_convierten": "[URLS QUE GENERAN CONTACTOS, RESERVAS O VENTAS]"
+  },
+  "pasos": [
+    "Agrupar las URLs por tipo: home, servicios, productos, blog, legales, landings de campaña, categorías, etiquetas y filtros",
+    "Asignar a cada URL una decisión: MANTENER, FUSIONAR, REESCRIBIR, REDIRIGIR o ELIMINAR",
+    "Priorizar por tráfico y por si genera contactos o ventas, nunca por antigüedad",
+    "Detectar contenidos duplicados o casi idénticos y proponer con cuál quedarse",
+    "Señalar páginas huérfanas y páginas con enlaces de otras webs que no se pueden perder"
+  ],
+  "restricciones": [
+    "Ninguna URL con tráfico o con enlaces externos puede quedarse sin destino de redirección",
+    "No inventar datos de tráfico: si faltan, escribir SIN DATOS en esa fila",
+    "Mantener siempre las páginas legales obligatorias: aviso legal, privacidad y cookies"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en Markdown seguida de un resumen",
+    "columnas": ["URL", "Tipo", "Visitas 12m", "Convierte", "Decisión", "URL destino", "Prioridad 1-3", "Motivo"],
+    "extras": ["Cuántas páginas caen en cada decisión", "Las 10 páginas intocables", "Riesgos detectados con la migración"]
+  },
+  "criterios_calidad": [
+    "Cada URL del listado aparece una sola vez",
+    "Ninguna decisión ELIMINAR sin justificación escrita",
+    "El motivo se entiende sin saber nada técnico"
+  ],
+  "tono": "claro, directo y sin tecnicismos innecesarios"
+}

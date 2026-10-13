@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar el guion operativo de un despliegue que incluye migraciones de base de datos, con plan de vuelta atras",
+  "contexto": {
+    "sistema": "[NOMBRE DE LA APLICACION O TIENDA]",
+    "motor_bd": "[POSTGRESQL / MYSQL / SQL SERVER]",
+    "fecha_y_hora": "[DIA Y FRANJA HORARIA PREVISTA]",
+    "personas": "[QUIEN EJECUTA, QUIEN VALIDA, QUIEN AVISA A CLIENTES]",
+    "parada_prevista": "[MINUTOS DE CORTE ACEPTADOS O DESPLIEGUE SIN CORTE]"
+  },
+  "entradas": {
+    "migraciones_incluidas": "[LISTA DE FICHEROS O CAMBIOS DE BASE DE DATOS QUE ENTRAN]",
+    "cambios_de_aplicacion": "[RESUMEN DE LO QUE CAMBIA EN EL CODIGO]",
+    "como_se_revierte_la_app": "[VOLVER A LA VERSION ANTERIOR, ETIQUETA O IMAGEN CONCRETA]"
+  },
+  "instrucciones": [
+    "Empieza con la lista de requisitos previos, incluida la copia de seguridad verificada y quien la ha probado",
+    "Numera los pasos con hora estimada, responsable y comando o accion exacta",
+    "Marca los puntos de no retorno y di claramente a partir de cual ya no se puede volver atras sin perder datos",
+    "Define despues de cada bloque una comprobacion concreta y observable, no un mirar que todo va bien",
+    "Incluye los criterios objetivos para abortar y el procedimiento de vuelta atras completo",
+    "Cierra con las tareas de despues: avisar, vigilar durante x horas, limpiar respaldos"
+  ],
+  "restricciones": [
+    "Cada paso debe caber en una linea y ser ejecutable sin interpretacion",
+    "No mezcles en el mismo paso una accion de base de datos y una de aplicacion",
+    "Si un paso depende de que termine otro, dilo explicitamente"
+  ],
+  "formato_salida": {
+    "tipo": "lista numerada con casillas de verificacion",
+    "columnas": ["Hora", "Paso", "Responsable", "Comprobacion", "Hecho"],
+    "anexos": ["Procedimiento de vuelta atras", "Telefonos y avisos", "Consultas de comprobacion"]
+  },
+  "criterios_calidad": [
+    "Alguien que no participo en el desarrollo podria ejecutarlo",
+    "Existe una respuesta escrita para el escenario de migracion aplicada a medias"
+  ]
+}

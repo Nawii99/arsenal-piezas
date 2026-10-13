@@ -1,0 +1,36 @@
+{
+  "tarea": "Reescribir una consulta SQL lenta para que sea más rápida devolviendo exactamente el mismo resultado",
+  "entradas": {
+    "motor": "[MOTOR Y VERSIÓN]",
+    "consulta_original": "[PEGA AQUÍ LA CONSULTA]",
+    "tiempo_actual": "[SEGUNDOS QUE TARDA]",
+    "indices_disponibles": "[ÍNDICES ACTUALES]",
+    "columnas_obligatorias": "[COLUMNAS QUE EL RESULTADO DEBE SEGUIR TENIENDO]",
+    "puedo_crear_indices": "[SÍ / NO]"
+  },
+  "tecnicas_a_valorar": [
+    "Filtrar y agregar antes de unir, en vez de unir y luego filtrar",
+    "Sustituir subconsultas correlacionadas por JOIN o por funciones de ventana",
+    "Cambiar NOT IN por NOT EXISTS o LEFT JOIN con IS NULL cuando hay nulos",
+    "Quitar DISTINCT si el duplicado viene de un JOIN mal planteado",
+    "Evitar funciones sobre columnas filtradas y comparar tipos de dato iguales",
+    "Reducir columnas y filas traídas al mínimo que necesita el informe",
+    "Valorar una tabla intermedia o vista materializada si la consulta se repite mucho"
+  ],
+  "formato_salida": {
+    "resumen": "Qué se ha cambiado, en 3 puntos",
+    "consulta_optimizada": "La nueva consulta en bloque de código, comentada",
+    "tabla_cambios": "Tabla con columnas Cambio, Motivo, Ganancia esperada, Riesgo",
+    "prueba_de_equivalencia": "Consulta que compara el resultado antiguo y el nuevo y devuelve cero filas si coinciden",
+    "si_no_mejora": "Qué probar a continuación si el tiempo no baja"
+  },
+  "restricciones": [
+    "El resultado debe ser idéntico en filas, orden si se pedía, y valores",
+    "No cambiar la lógica de negocio ni redondear importes por tu cuenta",
+    "Si hay que crear un índice para que funcione, decirlo aparte y no darlo por hecho"
+  ],
+  "criterios_calidad": [
+    "Cada cambio está justificado con una razón técnica concreta",
+    "La prueba de equivalencia se puede ejecutar tal cual"
+  ]
+}

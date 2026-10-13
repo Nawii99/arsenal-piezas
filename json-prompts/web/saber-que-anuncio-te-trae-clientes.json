@@ -1,0 +1,59 @@
+{
+  "tarea": "Configurar la medición de conversiones de [URL_WEB] para atribuir cada consulta o venta a su origen real",
+  "contexto": {
+    "negocio": "[NOMBRE Y QUÉ VENDE]",
+    "que_cuenta_como_conversion": "[FORMULARIO ENVIADO / CLIC EN WHATSAPP / RESERVA DE CITA / COMPRA / DESCARGA]",
+    "canales_activos": "[INSTAGRAM ORGÁNICO, META ADS, GOOGLE, EMAIL, FOLLETOS, BOCA A BOCA]",
+    "perfil_lector": "Sin conocimientos técnicos, puede pegar código en la web y entrar en los paneles"
+  },
+  "entradas": {
+    "herramientas": "[GA4 / META PIXEL / NINGUNA TODAVÍA]",
+    "tiene_pagina_de_gracias": "[SÍ, URL / NO]",
+    "tiene_banner_de_cookies": "[SÍ / NO]",
+    "presupuesto_publicitario_mensual": "[IMPORTE APROXIMADO O 'AÚN NADA']"
+  },
+  "procedimiento": [
+    "1. Define la lista corta de acciones que valen dinero y ponles nombre en minúsculas y sin acentos",
+    "2. Crea una página de gracias con URL propia para cada acción principal: es la forma más fiable de medir",
+    "3. Coloca el código base de medición en todas las páginas y comprueba que se dispara una sola vez",
+    "4. Marca los eventos que no llevan a una página: clic en WhatsApp, clic en teléfono, clic en descarga",
+    "5. Respeta el consentimiento: si el visitante rechaza, no se dispara la medición publicitaria",
+    "6. Etiqueta todos tus enlaces de campaña con parámetros de origen, medio y campaña siguiendo una misma nomenclatura",
+    "7. Añade un campo oculto en el formulario que guarde el origen para verlo también en tu bandeja de correo",
+    "8. Monta un panel sencillo con: visitas, conversiones y conversiones por canal",
+    "9. Prueba en tiempo real haciendo tú mismo una conversión de cada tipo"
+  ],
+  "que_mirar": [
+    "Que un mismo envío no cuente dos veces por recargar la página de gracias",
+    "Que la página de gracias no esté indexada en Google",
+    "Que los nombres de campaña sigan siempre el mismo patrón para poder agrupar",
+    "Que las visitas propias del negocio queden excluidas",
+    "Que los enlaces en redes conserven los parámetros al acortarlos"
+  ],
+  "errores_tipicos": [
+    "Medir clics en el botón en vez de envíos completados",
+    "Mezclar mayúsculas y variantes en los nombres de campaña y acabar con datos partidos",
+    "Instalar dos veces el mismo código y duplicar todos los números",
+    "Sacar conclusiones con quince conversiones al mes",
+    "Olvidar que el tráfico directo suele ser gente que ya te conocía"
+  ],
+  "restricciones": [
+    "Solo herramientas gratuitas",
+    "No pidas instalar gestores de etiquetas complejos si con código directo basta",
+    "Cumple el consentimiento previo de cookies"
+  ],
+  "formato_salida": {
+    "1_mapa_de_conversiones": "Tabla: acción | nombre del evento | dónde se dispara | valor estimado",
+    "2_codigo": "Bloques listos para pegar indicando en qué página y en qué parte del HTML van",
+    "3_nomenclatura": "Reglas de etiquetado con 6 ejemplos de enlaces completos ya montados",
+    "4_pagina_de_gracias": "HTML de la página de gracias con el siguiente paso para el cliente",
+    "5_rutina_semanal": "Qué mirar cada lunes en 10 minutos y qué decisión tomar según el dato",
+    "6_verificacion": "Cómo comprobar en tiempo real que cada evento llega"
+  },
+  "criterios_calidad": [
+    "Cada conversión definida se puede ver llegando en tiempo real durante la prueba",
+    "Ningún evento se dispara por duplicado",
+    "El origen de cada consulta se ve también sin entrar en la herramienta de analítica",
+    "La rutina semanal cabe en una hoja y lleva a una decisión concreta"
+  ]
+}

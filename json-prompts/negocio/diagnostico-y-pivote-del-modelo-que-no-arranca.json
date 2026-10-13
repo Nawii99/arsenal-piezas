@@ -1,0 +1,31 @@
+{
+  "tarea": "Diagnosticar por qué mi modelo de negocio no está funcionando y proponer escenarios de ajuste, pivote o cierre con criterios de decisión",
+  "contexto": {
+    "tiempo_en_marcha": "[MESES DESDE QUE EMPEZASTE]",
+    "numeros": "[FACTURACIÓN Y GASTOS DE LOS ÚLTIMOS 6 MESES, MES A MES]",
+    "clientes": "[CUÁNTOS TIENES, CUÁNTOS REPITEN Y CUÁNTOS SE HAN IDO]",
+    "origen_clientes": "[POR DÓNDE TE LLEGAN: BOCA A BOCA, ANUNCIOS, REDES, MARKETPLACE]",
+    "ya_probado": "[QUÉ HAS INTENTADO YA Y QUÉ PASÓ]",
+    "caja_restante": "[DINERO DISPONIBLE Y MESES QUE AGUANTAS AL RITMO ACTUAL]",
+    "lo_que_no_negocio": "[LÍMITES PERSONALES: HORAS, DEUDA, MUDANZA, SOCIOS]"
+  },
+  "instrucciones": [
+    "Primero localiza dónde se rompe el embudo: no llega gente, llega y no compra, compra y no repite, o compra pero sin margen. Justifícalo con mis números",
+    "Descarta las causas que mis datos no respaldan y dilo",
+    "Propón 3 escenarios: A ajustar lo que hay, B pivotar (cambiar cliente, producto, canal o forma de cobrar), C cerrar de forma ordenada",
+    "Para cada escenario: qué cambia exactamente, qué cuesta, cuántas semanas tarda en verse el efecto y qué señal indicaría que funciona",
+    "Añade una fecha límite y un criterio numérico para decidir entre ellos",
+    "En el escenario C, incluye los pasos prácticos de un cierre ordenado en España: avisar a clientes, cancelar suscripciones y suministros, liquidar stock, bajas y hablar con la gestoría"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "partes": ["Diagnóstico en 5 puntos con el dato que lo respalda", "Tabla comparativa de los 3 escenarios", "Recomendación con sus riesgos", "Plan de 30 días del escenario recomendado, semana a semana", "Fecha y criterio de la próxima decisión"]
+  },
+  "criterios_calidad": [
+    "El diagnóstico se apoya en mis cifras, no en tópicos de emprendimiento",
+    "El escenario de cierre se trata como una opción legítima, sin dramatismo ni ánimos vacíos",
+    "Ninguna propuesta supera mi caja disponible",
+    "Las señales de éxito son medibles en menos de 8 semanas"
+  ],
+  "tono": "directo y honesto, sin motivación de manual"
+}

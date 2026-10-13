@@ -1,0 +1,37 @@
+{
+  "tarea": "Calcular el punto de equilibrio del negocio y traducirlo a un objetivo de ventas mensual, semanal y diario",
+  "rol": "Analista de costes que trabaja con negocios pequeños y explica cada número",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y CÓMO]",
+    "periodo": "[MES TIPO O TEMPORADA]",
+    "objetivo_beneficio": "[BENEFICIO MENSUAL QUE QUIERES DEJAR EN LA EMPRESA]"
+  },
+  "entradas": {
+    "gastos_fijos_mensuales": "[ALQUILER, NÓMINAS, CUOTAS, SEGUROS, SOFTWARE, SUMINISTROS]",
+    "precio_medio": "[PRECIO MEDIO SIN IVA DE TU PRODUCTO O SERVICIO]",
+    "coste_directo_unitario": "[MATERIAL, COMISIONES Y HORAS DIRECTAS POR UNIDAD]",
+    "capacidad": "[UNIDADES O HORAS QUE PUEDES ENTREGAR AL MES]",
+    "dias_operativos": "[DÍAS QUE ABRES O TRABAJAS AL MES]"
+  },
+  "metodo": [
+    "Calcular el margen de contribución por unidad como precio menos coste directo",
+    "Punto de equilibrio en unidades = gastos fijos dividido entre el margen de contribución",
+    "Repetir el cálculo añadiendo el beneficio objetivo a los gastos fijos",
+    "Comprobar si el resultado cabe dentro de la capacidad declarada y avisar si no cabe",
+    "Mostrar qué pasa si subes el precio un 10% y si bajas los fijos un 10%"
+  ],
+  "restricciones": [
+    "Trabajar siempre con precios sin IVA",
+    "Incluir el sueldo del dueño dentro de los gastos fijos aunque hoy no se lo pague",
+    "No redondear a la baja el punto de equilibrio"
+  ],
+  "formato_salida": {
+    "tipo": "ficha de cálculo",
+    "secciones": ["Números de partida", "Cálculo paso a paso", "Objetivo mínimo y objetivo con beneficio", "Traducción a mes, semana y día", "Palancas para bajar el listón"]
+  },
+  "criterios_calidad": [
+    "Se ve la fórmula con los números reales sustituidos",
+    "El objetivo aparece en euros y en unidades",
+    "Queda claro si el objetivo es alcanzable con la capacidad actual"
+  ]
+}

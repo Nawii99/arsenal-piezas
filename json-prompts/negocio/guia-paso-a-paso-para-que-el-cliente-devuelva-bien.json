@@ -1,0 +1,33 @@
+{
+  "tarea": "Crear las instrucciones de devolucion que se envian al cliente para que el producto llegue completo, protegido e identificado",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "producto_tipo": "[FRAGIL / ROPA / ELECTRONICA / VOLUMINOSO / OTRO]",
+    "direccion_devoluciones": "[DIRECCION COMPLETA DE RECEPCION]",
+    "transportista": "[EMPRESA Y SI HAY RECOGIDA A DOMICILIO O PUNTO DE ENTREGA]",
+    "quien_paga": "[CLIENTE / EMPRESA]",
+    "plazo_envio": "[DIAS QUE TIENE EL CLIENTE PARA ENVIARLO]",
+    "debe_incluir": "[ACCESORIOS, CABLES, MANUALES, ETIQUETAS, EMBALAJE ORIGINAL]"
+  },
+  "salida": {
+    "1_email": "Correo de 150 palabras con el numero de devolucion visible y los pasos numerados",
+    "2_pasos": "Instrucciones en 6 pasos, una accion por paso, redactadas para alguien con prisa",
+    "3_checklist": "Lista de comprobacion que el cliente marca antes de cerrar la caja",
+    "4_etiqueta": "Texto de la hoja que mete dentro del paquete: numero de pedido, nombre, motivo y contacto",
+    "5_embalaje": "3 consejos de proteccion especificos para [PRODUCTO TIPO], incluido que NO hacer",
+    "6_que_pasa_despues": "Que ocurre al llegar el paquete, con plazos reales y quien avisa",
+    "7_errores": "Los 5 fallos que mas retrasan una devolucion, en una linea cada uno"
+  },
+  "reglas": [
+    "Prohibido usar mas de una accion por paso",
+    "Cada plazo se expresa en dias concretos, nunca en breve",
+    "Avisar de forma amable de que un producto incompleto puede reducir el reembolso, si asi lo indica tu politica",
+    "Incluir que hacer si el cliente ya tiro la caja original"
+  ],
+  "tono": "Practico y amable, tuteando, como quien explica algo a un amigo con prisa",
+  "criterios_calidad": [
+    "El cliente puede hacerlo todo sin volver a escribirte",
+    "El paquete llega identificado y protegido a la primera",
+    "Sirve tal cual para pegarlo en un email automatico"
+  ]
+}

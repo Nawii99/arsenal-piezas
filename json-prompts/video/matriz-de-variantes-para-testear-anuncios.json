@@ -1,0 +1,43 @@
+{
+  "tarea": "Disenar una matriz de variantes de anuncio en video y un plan de test por fases, indicando que se prueba en cada fase y como se decide el ganador",
+  "contexto": {
+    "producto": "[PRODUCTO Y PRECIO]",
+    "margen_por_venta": "[EUROS QUE TE QUEDAN LIMPIOS POR VENTA]",
+    "publico": "[A QUIEN SE LO VENDES]",
+    "plataforma": "[META / TIKTOK]",
+    "presupuesto_diario": "[EUROS AL DIA]",
+    "duracion_del_test": "[DIAS QUE PUEDES AGUANTAR]",
+    "angulos_que_ya_tienes": "[IDEAS QUE SE TE HAN OCURRIDO]"
+  },
+  "reglas_de_oficio": [
+    "Fase 1: probar angulos distintos, no ganchos, porque el angulo es lo que mas mueve el resultado",
+    "Fase 2: coger el angulo ganador y probar solo ganchos sobre el mismo cuerpo",
+    "Fase 3: coger el gancho ganador y probar formato, duracion y llamada a la accion",
+    "Cambiar una sola variable por fase, nunca dos",
+    "No decidir nada antes de tener suficientes datos: dilo en numero de conversiones, no en dias",
+    "Si el coste por conversion supera el margen durante toda la fase, se corta"
+  ],
+  "variables_a_cruzar": [
+    "Angulo: ahorro, tiempo, estetica, miedo a equivocarse, comodidad, comparacion",
+    "Formato: testimonio a camara, demostracion, voz en off con planos de recurso, comparativa",
+    "Gancho: pregunta, error comun, resultado primero, confesion",
+    "Duracion: 15 s, 30 s, 45 s",
+    "Llamada a la accion: comprar, saber mas, escribir por WhatsApp"
+  ],
+  "restricciones": [
+    "Maximo 6 variantes en la primera fase para no repartir el presupuesto en migajas",
+    "Nada de conclusiones con menos datos de los que marca el propio plan",
+    "Presupuesto y calendario realistas con la cifra que ha dado el usuario"
+  ],
+  "formato_salida": {
+    "tipo": "Plan por fases mas tabla de variantes",
+    "columnas_tabla": ["Codigo de variante", "Angulo", "Formato", "Gancho en una frase", "Duracion", "Que hipotesis prueba"],
+    "extras": ["Calendario dia a dia con el reparto de presupuesto", "Regla escrita de cuando pausar y cuando escalar", "Plantilla de tabla para anotar resultados"]
+  },
+  "criterios_calidad": [
+    "Cada variante prueba una hipotesis distinta y esta escrita en una frase",
+    "El plan cabe en el presupuesto indicado",
+    "Las reglas de decision son numericas, no opiniones",
+    "Se puede empezar manana sin decisiones pendientes"
+  ]
+}

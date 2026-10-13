@@ -1,0 +1,57 @@
+{
+  "tarea": "Diseñar y revisar la configuración DNS de un dominio para que la web cargue bien y el correo llegue a la bandeja de entrada",
+  "contexto": {
+    "dominio": "[MIDOMINIO.ES]",
+    "registrador": "[DÓNDE COMPRASTE EL DOMINIO]",
+    "donde_esta_la_web": "[GITHUB PAGES, NETLIFY, VERCEL, HOSTING CLÁSICO, SHOPIFY]",
+    "proveedor_de_correo": "[GOOGLE WORKSPACE, ZOHO, EL DEL HOSTING, NINGUNO]",
+    "envios_automaticos": "[HERRAMIENTAS QUE ENVÍAN CORREO EN TU NOMBRE: FACTURACIÓN, NEWSLETTER, FORMULARIOS]"
+  },
+  "entradas": {
+    "registros_actuales": "[PEGA AQUÍ LA TABLA DE REGISTROS DNS QUE VES EN TU PANEL]",
+    "instrucciones_del_hosting": "[LO QUE TE PIDE PONER TU PROVEEDOR DE WEB]",
+    "instrucciones_del_correo": "[LO QUE TE PIDE PONER TU PROVEEDOR DE CORREO]",
+    "sintoma": "[QUÉ FALLA AHORA MISMO, SI FALLA ALGO]"
+  },
+  "explica_primero": [
+    "Qué es un DNS con una comparación sencilla: la agenda que traduce el nombre del dominio a la dirección del servidor",
+    "Para qué sirve cada tipo de registro que vas a tocar: A, AAAA, CNAME, MX, TXT",
+    "Qué es el TTL y por qué los cambios tardan en verse"
+  ],
+  "pasos": [
+    "1. Separa mentalmente dos cosas que viven en el mismo sitio pero no se mezclan: la web (A y CNAME) y el correo (MX y TXT).",
+    "2. Web: decide si el dominio raíz apunta por A a una IP o por ALIAS/CNAME al proveedor, y deja www como CNAME al mismo destino.",
+    "3. Elige una versión principal (con www o sin www) y redirige la otra; no dejes las dos vivas por separado.",
+    "4. Correo entrante: copia los registros MX del proveedor tal cual, con sus prioridades, y borra los MX antiguos que sobren.",
+    "5. Correo saliente: crea un único registro SPF que incluya todos los servicios que envían en tu nombre.",
+    "6. Activa la firma DKIM en el panel de tu proveedor de correo y añade el registro que te dé.",
+    "7. Añade DMARC empezando en modo observación y solo endurece cuando lleves semanas sin rebotes.",
+    "8. Espera la propagación y comprueba con una herramienta de consulta DNS y enviándote un correo a otra cuenta."
+  ],
+  "errores_tipicos": [
+    "Tener dos registros SPF: con dos, no vale ninguno; se fusionan en uno solo",
+    "Borrar los MX al cambiar de hosting y quedarte sin recibir correo sin enterarte",
+    "Poner la IP del hosting antiguo copiada de un tutorial viejo",
+    "Duplicar el dominio en el registro (escribir midominio.es.midominio.es) al rellenar el campo nombre",
+    "Enviar desde una herramienta externa sin autorizarla en el SPF: acaba en spam",
+    "Poner DMARC en rechazo el primer día y tumbar tus propios envíos"
+  ],
+  "restricciones": [
+    "No inventes valores: si falta un dato del proveedor, pídelo antes de rellenar",
+    "Indica siempre en qué campo del panel se escribe cada valor (nombre, tipo, valor, prioridad, TTL)",
+    "Avisa de qué cambios pueden dejar la web o el correo caídos durante unos minutos"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla final de registros: Tipo, Nombre, Valor, Prioridad, TTL, Para qué sirve",
+    "bloque_2": "Lista de registros que hay que borrar y por qué",
+    "bloque_3": "Orden exacto en el que hacer los cambios",
+    "bloque_4": "Cómo comprobar cada cosa y cuánto esperar antes de preocuparte",
+    "bloque_5": "Qué hacer si tras el cambio deja de llegar el correo"
+  },
+  "criterios_calidad": [
+    "Un solo SPF, un solo destino principal, sin registros duplicados",
+    "Cada fila de la tabla se puede copiar y pegar en el panel sin editar nada",
+    "Se explica en una línea qué pasa si ese registro falta",
+    "Incluye una prueba concreta para web y otra para correo"
+  ]
+}

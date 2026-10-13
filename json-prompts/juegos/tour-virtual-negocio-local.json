@@ -1,0 +1,53 @@
+{
+  "tarea": "Planificar, captar y montar un recorrido virtual de un local para su web y su ficha de Google, incluyendo guion de puntos, protocolo de captura, entrega y propuesta comercial.",
+  "contexto": "Negocio local que quiere que el cliente vea el sitio antes de venir. El valor no está en la tecnología, está en enseñar lo que hace que la gente se decida: limpieza, espacio, ambiente, accesibilidad.",
+  "entradas": {
+    "negocio": "[TIPO DE LOCAL Y CIUDAD]",
+    "metros_y_estancias": "[SUPERFICIE Y LISTA DE ZONAS]",
+    "objetivo": "[QUE RESERVEN | QUE PIERDAN EL MIEDO | QUE VEAN LA GAMA DE PRODUCTO | ACCESIBILIDAD]",
+    "equipo_disponible": "[MÓVIL | CÁMARA 360 | TRÍPODE]",
+    "donde_se_publica": "[WEB PROPIA | FICHA DE GOOGLE | REDES]"
+  },
+  "procedimiento": [
+    "1. Traduce el objetivo en las tres cosas que el visitante tiene que ver sí o sí, y ordénalas.",
+    "2. Dibuja el recorrido como lo haría un cliente: entrada, recepción, zona principal, zona de servicio, salida; nada de saltos aleatorios.",
+    "3. Marca los puntos de captura en el plano: uno cada 2 o 3 metros en pasillos, uno por estancia pequeña, dos en salas grandes, todos a 1,50 metros de altura.",
+    "4. Prepara el local antes de disparar: orden, quitar cajas y cables, encender toda la luz, retirar objetos personales y datos de clientes a la vista.",
+    "5. Define la hora de captura por la luz natural y evita contraluces contra escaparate.",
+    "6. Protocolo de disparo: trípode nivelado, temporizador, el operador escondido, exposición fija, misma altura en todos los puntos.",
+    "7. Cuida la privacidad: sin clientes reconocibles, sin pantallas con datos, sin documentos legibles.",
+    "8. Define los puntos de información que se añaden encima del recorrido: precios de referencia, nombre de la sala, botón de reserva, teléfono, enlace a la carta.",
+    "9. Monta el orden de navegación y comprueba que desde cualquier punto se llega a la reserva en un toque.",
+    "10. Optimiza para móvil: peso de las imágenes, carga progresiva y comprobación con datos móviles.",
+    "11. Cierra la propuesta comercial: precio del montaje, qué incluye, plazo, y cuota anual opcional de alojamiento y actualizaciones."
+  ],
+  "restricciones": [
+    "Ninguna persona identificable sin permiso por escrito.",
+    "Nada de fotos con el local desordenado o a media luz.",
+    "El recorrido tiene que funcionar en un móvil con datos, no solo con wifi.",
+    "No prometer aparición garantizada en Google.",
+    "Español de España, tuteando, y propuesta comercial en lenguaje de dueño de negocio, no de técnico."
+  ],
+  "formato_salida": {
+    "bloque_1": "Las tres cosas que el tour tiene que demostrar, con su motivo comercial.",
+    "bloque_2": "Plano de recorrido en lista: punto, ubicación, qué se ve, por qué está.",
+    "bloque_3": "Checklist de preparación del local antes de la captura.",
+    "bloque_4": "Protocolo de captura con ajustes de cámara y altura.",
+    "bloque_5": "Puntos de información y navegación, con los textos exactos de cada botón.",
+    "bloque_6": "Propuesta comercial: precio de montaje, incluye y no incluye, plazo, cuota anual."
+  },
+  "criterios_calidad": [
+    "El recorrido sigue la lógica de un cliente que entra por la puerta.",
+    "Todos los puntos están a la misma altura y con la misma exposición.",
+    "Desde cualquier punto se puede reservar o llamar en un toque.",
+    "No aparece nadie identificable ni ningún dato privado.",
+    "Carga en un móvil normal sin esperas largas."
+  ],
+  "errores_frecuentes": [
+    "Capturar con el local a medio ordenar y tener que repetir el día entero.",
+    "Alturas distintas entre puntos: al navegar da sensación de mareo.",
+    "Contraluz contra el escaparate que deja el interior negro.",
+    "Tour precioso sin ningún botón para reservar o llamar.",
+    "Entregar un enlace pesado que en el móvil del dueño tarda una eternidad."
+  ]
+}

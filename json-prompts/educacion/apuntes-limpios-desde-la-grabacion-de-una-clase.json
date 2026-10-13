@@ -1,0 +1,33 @@
+{
+  "tarea": "Transformar la transcripción de una clase en apuntes escritos ordenados y publicables",
+  "entradas": {
+    "titulo_clase": "[TÍTULO DE LA SESIÓN]",
+    "transcripcion": "[PEGA AQUÍ LA TRANSCRIPCIÓN COMPLETA]",
+    "publico": "[A QUIÉN SE LE ENTREGA]",
+    "partes_a_omitir": "[LO QUE NO DEBE APARECER: NOMBRES, DUDAS PRIVADAS, PAUSAS]"
+  },
+  "proceso": [
+    "Detecta los bloques temáticos reales de la clase y ponles título propio, aunque el ponente no los anunciara",
+    "Elimina muletillas, repeticiones, chistes, incidencias técnicas y comentarios de organización",
+    "Reescribe lo hablado en frases completas, manteniendo los ejemplos que puso el ponente",
+    "Recoge las preguntas de los asistentes y sus respuestas en un apartado propio, anonimizadas",
+    "Marca lo que se dijo de pasada y quedó sin explicar como pendiente"
+  ],
+  "formato_salida": {
+    "cabecera": "Título, duración aproximada y 3 ideas clave de la sesión",
+    "cuerpo": "Apartados con encabezados, en el orden en que se explicó, con marcas de minuto entre paréntesis cuando la transcripción las tenga",
+    "ejemplos": "Los ejemplos del ponente en formato cita destacada",
+    "dudas": "Apartado 'Preguntas de clase' con pregunta y respuesta",
+    "cierre": "Apartado 'Se quedó pendiente' y otro 'Para la próxima sesión'"
+  },
+  "restricciones": [
+    "No añadas contenido que el ponente no dijera; si algo está incompleto escribe [SIN DESARROLLAR EN CLASE]",
+    "No cambies criterios ni datos aunque te parezcan discutibles",
+    "Español de España, tuteo y frases cortas"
+  ],
+  "criterios_calidad": [
+    "Quien no asistió puede seguir la clase entera leyendo el documento",
+    "No queda ninguna frase que solo se entienda oyendo el audio",
+    "El documento se lee en menos de la mitad del tiempo que duró la clase"
+  ]
+}

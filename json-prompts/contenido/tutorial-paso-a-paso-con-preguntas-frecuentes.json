@@ -1,0 +1,40 @@
+{
+  "tarea": "Escribir un artículo tutorial paso a paso que alguien pueda seguir hasta el final sin atascarse",
+  "entradas": {
+    "que_se_aprende_a_hacer": "[RESULTADO CONCRETO AL TERMINAR]",
+    "nivel_del_lector": "[CERO / BÁSICO / INTERMEDIO]",
+    "herramientas_necesarias": "[HERRAMIENTAS, MATERIALES O CUENTAS]",
+    "coste_aproximado": "[GRATIS O IMPORTE]",
+    "tiempo_estimado": "[MINUTOS U HORAS]",
+    "pasos_reales": "[ENUMERA LOS PASOS TAL Y COMO LOS HACES TÚ]",
+    "errores_frecuentes": "[EN QUÉ SE ATASCA LA GENTE]",
+    "palabra_clave": "[CÓMO LO BUSCARÍAN EN GOOGLE]"
+  },
+  "estructura": [
+    "Qué vas a conseguir y en cuánto tiempo, en 3 líneas",
+    "Lo que necesitas antes de empezar, en lista",
+    "Los pasos numerados, cada uno con: qué hacer, cómo saber que ha salido bien y qué hacer si falla",
+    "Errores frecuentes y cómo evitarlos",
+    "Cómo comprobar el resultado final",
+    "Siguientes pasos si quieres ir más allá",
+    "Preguntas frecuentes"
+  ],
+  "reglas": [
+    "Un paso, una acción: si un paso tiene dos acciones, se parte en dos",
+    "Empezar cada paso con un verbo en infinitivo o imperativo",
+    "Avisar de lo que no tiene marcha atrás antes de que ocurra",
+    "Nada de saltarse pasos obvios para el experto pero no para el principiante",
+    "No inventar menús, botones ni precios: marcar como [COMPROBAR EN TU VERSIÓN]"
+  ],
+  "formato_salida": {
+    "articulo": "markdown con H2 por bloque y H3 por paso",
+    "incluir": ["ficha_inicial_con_tiempo_coste_y_dificultad", "marcas_de_captura_del_tipo_IMAGEN_paso_3", "faq_de_5_preguntas", "meta_descripcion"],
+    "longitud": "[NÚMERO] palabras"
+  },
+  "criterios_calidad": [
+    "Alguien del nivel indicado llega al final sin buscar nada fuera del artículo",
+    "Cada paso dice cómo saber que ha ido bien",
+    "Las preguntas frecuentes resuelven los atascos reales, no dudas de adorno"
+  ],
+  "tono": "claro, paciente, tuteando, sin dar nada por sabido"
+}

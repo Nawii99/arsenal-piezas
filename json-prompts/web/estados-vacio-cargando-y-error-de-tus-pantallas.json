@@ -1,0 +1,39 @@
+{
+  "tarea": "Disenar y maquetar los estados vacio, cargando y error de una pantalla web, con sus textos y su codigo",
+  "contexto": {
+    "pantalla": "[LISTADO DE PRODUCTOS / RESULTADOS DE BUSQUEDA / PANEL DE PEDIDOS]",
+    "que_muestra_cuando_hay_datos": "[DESCRIBELO]",
+    "que_quieres_que_haga_el_usuario": "[ACCION PRINCIPAL]",
+    "tono": "[CERCANO / NEUTRO Y PROFESIONAL]"
+  },
+  "estados_a_cubrir": [
+    "Primera vez: todavia no hay nada creado",
+    "Sin resultados: hay datos pero el filtro o la busqueda no devuelve nada",
+    "Cargando: esqueletos con la forma real del contenido",
+    "Error de conexion o del servidor",
+    "Sin permiso o sesion caducada"
+  ],
+  "instrucciones": [
+    "Cada estado lleva titulo corto, una linea de explicacion y como maximo un boton principal y un enlace secundario",
+    "El texto dice que ha pasado y que hacer ahora; nada de 'Ha ocurrido un error inesperado'",
+    "Los esqueletos deben tener el mismo alto que el contenido real para que no salte la pagina al cargar",
+    "Nunca uses solo un icono triste: el mensaje tiene que funcionar sin imagenes",
+    "En el estado sin resultados, sugiere quitar filtros o propon dos busquedas alternativas",
+    "Anuncia los cambios de estado con aria-live para lectores de pantalla"
+  ],
+  "restricciones": [
+    "HTML y CSS en un archivo, con los cinco estados visibles a la vez para revisarlos",
+    "Textos en espanol de Espana, maximo 90 caracteres por linea de explicacion",
+    "Sin culpar al usuario ni echar la culpa al navegador"
+  ],
+  "formato_salida": {
+    "1_tabla_textos": "tabla con estado, titulo, explicacion, boton y enlace",
+    "2_codigo": "archivo HTML con los cinco bloques maquetados y la animacion del esqueleto",
+    "3_cuando_mostrar_cada_uno": "regla clara para decidir que estado toca en cada caso"
+  },
+  "criterios_calidad": [
+    "Al pasar de cargando a contenido no salta la pagina",
+    "Cada estado ofrece una salida clara",
+    "Los textos se entienden sin saber nada de informatica"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "tarea": "Generar el protocolo de puesta en marcha, las pruebas de aceptacion y el acta de entrega de una instalacion domotica o IoT.",
+  "contexto": {
+    "cliente": "[NOMBRE Y DIRECCION DE LA INSTALACION]",
+    "alcance_contratado": "[QUE SE PRESUPUESTO: NUMERO DE PUNTOS, FUNCIONES PROMETIDAS]",
+    "instalador": "[MI NOMBRE O EMPRESA Y NIF]",
+    "fecha": "[DD/MM/AAAA]"
+  },
+  "entradas": {
+    "dispositivos_instalados": "[LISTA: TIPO | MARCA Y MODELO | UBICACION | NOMBRE EN LA APP]",
+    "automatizaciones": "[LISTA DE LAS RUTINAS CREADAS Y QUE HACE CADA UNA]",
+    "cuentas_y_accesos": "[QUE CUENTAS SE HAN CREADO Y A NOMBRE DE QUIEN]",
+    "garantias": "[MESES DE GARANTIA DEL MATERIAL Y DE LA MANO DE OBRA]"
+  },
+  "procedimiento": [
+    "1. Genera una prueba por cada funcion prometida en el presupuesto, no por cada aparato.",
+    "2. Escribe cada prueba como accion visible y resultado esperado, para hacerla delante del cliente.",
+    "3. Incluye siempre las pruebas de fallo: corta el wifi, quita la corriente, saca una pila y comprueba que avisa.",
+    "4. Incluye la prueba desde fuera de casa con datos moviles, no solo con el wifi de la casa.",
+    "5. Comprueba el traspaso de cuentas: el titular es el cliente y yo soy invitado o administrador secundario, con su permiso.",
+    "6. Anota los datos tecnicos de la instalacion para el dosier: nombres de red, ubicaciones, modelos, numeros de serie y fecha de compra.",
+    "7. Recoge en el acta los puntos pendientes y los que el cliente rechaza, para que no vuelvan como reclamacion.",
+    "8. Deja formacion minima: tres cosas que el cliente tiene que saber hacer solo."
+  ],
+  "errores_tipicos": [
+    "Entregar con la cuenta a nombre del instalador y con su correo personal.",
+    "No probar nunca desde fuera de la vivienda.",
+    "Dejar las contrasenas por defecto de camaras y grabadores.",
+    "No documentar donde queda el coordinador o el hub escondido en un armario.",
+    "No dejar por escrito lo que NO incluye el trabajo."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de pruebas: NUMERO | FUNCION PROMETIDA | COMO SE PRUEBA | RESULTADO ESPERADO | OK / NO OK | OBSERVACIONES",
+    "bloque_2": "Inventario de lo instalado con ubicacion y numero de serie",
+    "bloque_3": "Ficha de accesos: que cuenta, quien es titular, quien tiene acceso y como revocarlo",
+    "bloque_4": "Las tres cosas que el cliente debe saber hacer solo, en pasos",
+    "bloque_5": "Acta de entrega para firmar: alcance, pendientes, exclusiones, garantia y fecha",
+    "bloque_6": "Datos que el cliente debe guardar y donde"
+  },
+  "restricciones": [
+    "Ninguna contrasena escrita en el acta que se entrega: se indica solo donde esta guardada.",
+    "Lenguaje claro, sin clausulas imposibles de entender.",
+    "Si una funcion prometida no se puede cumplir, aparece como pendiente con fecha, no se omite."
+  ],
+  "criterios_calidad": [
+    "Cada linea del presupuesto tiene al menos una prueba asociada.",
+    "Todas las pruebas se pueden hacer en menos de una hora en total.",
+    "El acta cabe en dos paginas y se puede firmar en el movil."
+  ]
+}

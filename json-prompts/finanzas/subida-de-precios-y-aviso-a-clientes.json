@@ -1,0 +1,42 @@
+{
+  "tarea": "Calcular una subida de precios sostenible para una tienda online, medir el riesgo de perder ventas y redactar la comunicacion a clientes",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "motivo_de_la_subida": "[SUBIDA DE COSTES, MEJORA DE PRODUCTO O PRECIOS CONGELADOS DESDE HACE ANOS]",
+    "ultima_subida": "[CUANDO SUBISTE PRECIOS POR ULTIMA VEZ]",
+    "fecha_de_aplicacion": "[CUANDO ENTRA EN VIGOR]",
+    "tipo_de_cliente": "[COMPRA PUNTUAL, RECURRENTE O SUSCRIPCION]"
+  },
+  "entradas": {
+    "productos": "[LISTA: nombre, precio actual con IVA, coste actual, coste de hace un ano, unidades vendidas al mes]",
+    "margen_objetivo_pct": "[MARGEN QUE QUIERES RECUPERAR]",
+    "clientes_recurrentes": "[CUANTOS Y QUE PESO TIENEN EN LA FACTURACION]"
+  },
+  "pasos": [
+    "Calcular cuanto margen has perdido por producto desde la ultima subida",
+    "Proponer el nuevo precio por producto: subida completa, subida por tramos o subida solo en las referencias mas afectadas",
+    "Calcular el punto de equilibrio: cuantas ventas puedes perder con el precio nuevo y seguir ganando lo mismo",
+    "Proponer amortiguadores: mantener precio en un producto de entrada, avisar con antelacion, ofrecer compra al precio antiguo unos dias",
+    "Definir el calendario: aviso previo, ventana de precio antiguo y cambio en la web",
+    "Redactar el email a clientes y el aviso en la web con el motivo en una frase, sin disculpas ni excusas largas",
+    "Preparar respuestas a las tres quejas mas probables"
+  ],
+  "restricciones": [
+    "Nada de subidas encubiertas reduciendo cantidad sin decirlo",
+    "Respetar los pedidos y suscripciones ya confirmados al precio anterior",
+    "No justificar la subida con datos que no puedas demostrar",
+    "Tono directo y breve: el aviso no pasa de 150 palabras"
+  ],
+  "formato_salida": {
+    "tabla_precios": "Producto | Precio actual | Precio nuevo | Subida % | Margen antes | Margen despues | Ventas que puedes perder sin perder dinero",
+    "plan": "Calendario en 5 pasos con fechas",
+    "email": "Asunto y cuerpo listos para enviar",
+    "aviso_web": "Texto corto para la cabecera o la ficha de producto",
+    "objeciones": "3 quejas probables con la respuesta preparada"
+  },
+  "criterios_calidad": [
+    "Cada precio nuevo viene acompanado del margen que recupera",
+    "El email explica el motivo en una frase y no pide perdon",
+    "Se indica que productos conviene NO subir y por que"
+  ]
+}

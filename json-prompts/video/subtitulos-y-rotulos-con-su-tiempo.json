@@ -1,0 +1,37 @@
+{
+  "tarea": "Preparar los subtítulos y los rótulos en pantalla de un vídeo, con entrada y salida en segundos",
+  "contexto": {
+    "plataforma": "[INSTAGRAM / TIKTOK / YOUTUBE / LINKEDIN]",
+    "formato": "[VERTICAL 9:16 / HORIZONTAL 16:9]",
+    "estilo_de_marca": "[SERIO Y SOBRIO / CERCANO / DIVERTIDO]"
+  },
+  "entradas": {
+    "transcripcion_con_tiempos": "[PEGA AQUÍ LA TRANSCRIPCIÓN CON MARCAS DE TIEMPO]",
+    "palabras_a_destacar": "[CIFRAS, NOMBRES O IDEAS QUE DEBEN RESALTAR]"
+  },
+  "reglas_de_subtitulado": [
+    "Máximo 2 líneas por subtítulo y 42 caracteres por línea",
+    "Entre 1 y 4 segundos en pantalla por bloque",
+    "Cortar por sentido: no separar un artículo de su sustantivo ni partir una cifra",
+    "Limpiar muletillas y repeticiones sin cambiar lo que se dice",
+    "Números del cero al diez con letra, salvo precios, fechas y porcentajes"
+  ],
+  "reglas_de_rotulos": [
+    "Un rótulo de refuerzo cada vez que aparece un dato, un nombre o un paso numerado",
+    "Máximo 6 palabras por rótulo",
+    "Nunca dos rótulos simultáneos en pantalla"
+  ],
+  "formato_salida": {
+    "bloque_1": "Subtítulos en formato SRT completo, numerados y con timecodes 00:00:00,000",
+    "bloque_2": "Tabla de rótulos: entrada, salida, texto, posición en pantalla",
+    "bloque_3": "Aviso de tramos donde el subtítulo va demasiado rápido para leerse"
+  },
+  "restricciones": [
+    "No añadir frases que no estén en el audio",
+    "Respetar la ortografía y las tildes del español de España"
+  ],
+  "criterios_calidad": [
+    "El SRT se puede importar tal cual sin retocar",
+    "El vídeo se entiende leyendo solo los subtítulos y los rótulos"
+  ]
+}

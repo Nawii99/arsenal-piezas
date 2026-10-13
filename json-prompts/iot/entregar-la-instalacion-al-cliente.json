@@ -1,0 +1,47 @@
+{
+  "tarea": "Preparar la entrega de una instalacion de domotica al cliente: pruebas, documentacion, claves y condiciones de soporte",
+  "contexto": {
+    "cliente": "[NOMBRE O NEGOCIO]",
+    "que_se_ha_instalado": "[LISTA DE DISPOSITIVOS Y AUTOMATIZACIONES]",
+    "quien_usara_el_sistema": "[PERSONAS Y NIVEL TECNICO]",
+    "lo_que_se_acordo": "[OBJETIVOS DEL PRESUPUESTO ORIGINAL]",
+    "garantias": "[MESES DE GARANTIA DEL MATERIAL Y DE LA MANO DE OBRA]",
+    "soporte_ofrecido": "[HORAS INCLUIDAS, HORARIO Y CANAL]"
+  },
+  "metodo": [
+    "1. Convierte cada objetivo del presupuesto en una prueba fisica que el cliente pueda ver funcionando delante de ti",
+    "2. Prueba tambien los casos malos delante del cliente: cortar el wifi, quitar una pila, pulsar el interruptor de pared",
+    "3. Documenta el inventario con modelo, ubicacion, tipo de pila y fecha de instalacion de cada aparato",
+    "4. Entrega las claves de forma ordenada: cuentas creadas a nombre del cliente, no a tu nombre, y traspaso escrito",
+    "5. Prepara el manual de una hoja: las cinco cosas que el cliente hara a diario y como se apaga todo si algo se vuelve loco",
+    "6. Deja escrito el mantenimiento: cambio de pilas, actualizaciones, revision anual y que pasa si el cliente cambia de router",
+    "7. Define que esta incluido en soporte y que se factura aparte, con precio por hora o por visita"
+  ],
+  "restricciones": [
+    "Ninguna cuenta queda a nombre del instalador salvo que se pacte por escrito",
+    "Nada de entregar sin que el cliente haya hecho el mismo al menos las pruebas basicas",
+    "El manual no puede pasar de una hoja por las dos caras",
+    "Las pruebas fallidas se listan como pendientes con fecha, no se ocultan"
+  ],
+  "errores_frecuentes": [
+    "Enseñar el sistema funcionando y no dejar nada por escrito",
+    "Dejar todo vinculado a la cuenta del instalador y bloquear al cliente",
+    "No avisar de que cambiar de router obliga a reconfigurar los dispositivos wifi",
+    "Prometer soporte ilimitado por WhatsApp sin limite de horas",
+    "Olvidar apuntar que pila lleva cada sensor y donde estan los escondidos"
+  ],
+  "formato_salida": {
+    "acta_de_pruebas": "Numero | Que se prueba | Como se prueba | Resultado esperado | Resultado real | OK o pendiente",
+    "inventario": "Dispositivo | Modelo | Ubicacion | Alimentacion o pila | Fecha | Garantia hasta",
+    "traspaso_de_accesos": "Cuenta | Titular | Donde se guarda la clave | Quien tiene acceso",
+    "manual_una_hoja": "Cinco acciones del dia a dia, como apagar todo y a quien llamar",
+    "mantenimiento": "Tarea | Frecuencia | Quien la hace | Coste si la hago yo",
+    "condiciones_de_soporte": "Que entra, que no entra, horario, tiempo de respuesta y precio fuera de garantia"
+  },
+  "criterios_calidad": [
+    "Cada objetivo del presupuesto tiene su prueba con resultado escrito",
+    "El cliente puede seguir usando el sistema aunque el instalador desaparezca",
+    "Las pendientes tienen fecha y responsable",
+    "El documento sirve tambien como respaldo si mas adelante hay discusion sobre lo entregado"
+  ]
+}

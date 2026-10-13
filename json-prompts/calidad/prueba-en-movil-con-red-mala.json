@@ -1,0 +1,49 @@
+{
+  "tarea": "Guiar una prueba manual de una página en móvil real bajo condiciones malas y devolver la lista de fallos con el arreglo concreto.",
+  "contexto": {
+    "pagina": "[URL O DESCRIPCIÓN DE LA PÁGINA]",
+    "objetivo_de_la_pagina": "[QUE RELLENEN EL FORMULARIO, QUE COMPREN, QUE LLAMEN]",
+    "de_donde_llega_la_gente": "[ANUNCIO DE INSTAGRAM, GOOGLE, BIO DE TIKTOK, WHATSAPP]",
+    "hecha_con": "[WORDPRESS, SHOPIFY, HTML PROPIO, CONSTRUCTOR]"
+  },
+  "entradas": {
+    "movil_disponible": "[MODELO Y ANTIGÜEDAD DEL MÓVIL CON EL QUE VAS A PROBAR]",
+    "datos_de_uso": "[% DE VISITAS MÓVIL Y CONVERSIÓN SI LOS TIENES]"
+  },
+  "metodo": [
+    "1. Prepara el escenario: móvil real, datos móviles con wifi apagado, brillo medio, y modo ahorro de batería activado.",
+    "2. Entra por el mismo camino que el cliente (pinchando el anuncio o el enlace de la bio), no escribiendo la dirección.",
+    "3. Cuenta los segundos hasta ver algo útil y hasta poder tocar sin que salte el contenido.",
+    "4. Prueba con una sola mano y con el pulgar: comprueba que el botón principal se alcanza sin recolocar el móvil.",
+    "5. Anota los tapones clásicos: cookies que tapan medio móvil, ventana emergente inmediata, chat que oculta el botón, vídeo que arranca solo.",
+    "6. Rellena el formulario tú mismo: teclado correcto en teléfono y correo, autorrelleno, mensajes de error entendibles y qué pasa al pulsar dos veces enviar.",
+    "7. Comprueba lectura: tamaño de letra, contraste al sol, imágenes con texto ilegible y precios visibles sin ampliar.",
+    "8. Gira el móvil a horizontal y prueba también con la letra del sistema agrandada.",
+    "9. Cierra la sesión y vuelve a entrar: comprueba que no se pierde lo escrito de forma tonta.",
+    "10. Ordena los fallos por cuántos clientes pierde cada uno, no por lo fácil que sea arreglarlos."
+  ],
+  "errores_tipicos": [
+    "Probar solo en el ordenador reduciendo la ventana.",
+    "Probar con wifi de fibra y móvil nuevo.",
+    "Botones que en móvil quedan por debajo de tres pantallas de scroll.",
+    "Formularios que piden datos que no hacen falta todavía.",
+    "Números de teléfono que no son pulsables para llamar."
+  ],
+  "restricciones": [
+    "Solo comprobaciones manuales; nada de herramientas que haya que instalar.",
+    "Cada arreglo debe describirse con el nombre del ajuste en el constructor cuando sea posible."
+  ],
+  "formato_salida": {
+    "checklist": "Lista de 20 comprobaciones marcables OK / FALLA / NO APLICA",
+    "tabla_fallos": "Fallo, dónde ocurre, impacto (alto/medio/bajo), arreglo, quién lo hace",
+    "top3": "Los 3 arreglos que hay que hacer hoy",
+    "nueva_prueba": "Qué volver a comprobar después de arreglar"
+  },
+  "criterios_calidad": [
+    "Cada fallo dice en qué pantalla y en qué momento aparece.",
+    "La prueba se puede repetir igual dentro de un mes.",
+    "No hay recomendaciones genéricas del tipo mejorar la experiencia.",
+    "Se ha probado el camino completo hasta el final, no solo la portada."
+  ],
+  "si_falta_informacion": "Si no hay URL, pide una descripción de las secciones y el botón principal antes de empezar."
+}

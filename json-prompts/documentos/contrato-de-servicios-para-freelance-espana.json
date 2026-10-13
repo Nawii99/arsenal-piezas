@@ -1,0 +1,47 @@
+{
+  "tarea": "Redactar un contrato de prestación de servicios profesionales entre un autónomo y su cliente, listo para firmar",
+  "rol": "Redactor legal especializado en contratos mercantiles sencillos para freelancers en España",
+  "entradas": {
+    "prestador": "[TU NOMBRE O EMPRESA], NIF [NIF], domicilio [DIRECCIÓN]",
+    "cliente": "[NOMBRE DEL CLIENTE], NIF/CIF [NIF], domicilio [DIRECCIÓN]",
+    "servicio": "[DESCRIBE EL SERVICIO EN 2 O 3 FRASES]",
+    "entregables": "[LISTA DE ENTREGABLES CONCRETOS]",
+    "fuera_de_alcance": "[LO QUE NO INCLUYE EL PRECIO]",
+    "precio": "[IMPORTE] € más IVA",
+    "forma_de_pago": "[POR EJEMPLO 50% AL INICIO Y 50% A LA ENTREGA]",
+    "plazos": "[FECHAS O PLAZOS DE ENTREGA]",
+    "revisiones_incluidas": "[NÚMERO DE RONDAS DE CAMBIOS]",
+    "duracion": "[PUNTUAL O DE X MESES CON RENOVACIÓN]"
+  },
+  "clausulas_obligatorias": [
+    "Identificación de las partes y su capacidad",
+    "Objeto y alcance detallado, con lista expresa de exclusiones",
+    "Precio, IVA, retención de IRPF si procede y forma de pago",
+    "Plazo de pago máximo y interés de demora por retraso",
+    "Calendario de entregas y consecuencias de retrasos por falta de material del cliente",
+    "Rondas de revisión incluidas y precio del trabajo adicional",
+    "Propiedad intelectual: qué derechos se ceden y a partir de qué pago",
+    "Confidencialidad recíproca",
+    "Protección de datos y encargo de tratamiento si se manejan datos personales",
+    "Causas de resolución, preaviso y liquidación del trabajo ya hecho",
+    "Limitación de responsabilidad al importe del contrato",
+    "Derecho a usar el trabajo como referencia en tu portfolio salvo negativa expresa",
+    "Ley aplicable y tribunales de [TU CIUDAD]"
+  ],
+  "formato_salida": {
+    "estructura": "Encabezado, REUNIDOS, EXPONEN, CLÁUSULAS numeradas, fecha y firmas",
+    "estilo": "Frases cortas, una idea por párrafo, sin latinajos innecesarios",
+    "extra": "Al final añade un ANEXO I con el detalle de entregables y precios"
+  },
+  "restricciones": [
+    "No copies cláusulas que no encajen con los datos aportados",
+    "Marca en [CORCHETES] cualquier dato que falte, no lo inventes",
+    "Debe ser un contrato mercantil entre profesionales, nunca laboral encubierto"
+  ],
+  "criterios_calidad": [
+    "Un cliente sin formación legal entiende cada cláusula a la primera",
+    "Queda claro qué pasa si el cliente no paga, no responde o cancela",
+    "Cabe en 3 o 4 páginas"
+  ],
+  "despues_del_contrato": "Añade una lista de 5 comprobaciones antes de enviarlo a firmar"
+}

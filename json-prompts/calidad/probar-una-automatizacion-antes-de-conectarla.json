@@ -1,0 +1,58 @@
+{
+  "tarea": "Diseñar y ejecutar las pruebas de una automatizacion antes de conectarla a datos y clientes reales.",
+  "contexto": {
+    "quien_lo_usa": "Persona sin perfil tecnico que ha montado un flujo con Make, Zapier, n8n o similar.",
+    "momento": "El flujo ya funciona con un caso ideal y esta a punto de activarse en real.",
+    "objetivo": "Que un dato raro o una caida de un servicio no provoque correos absurdos, duplicados o perdida de pedidos."
+  },
+  "entradas": {
+    "que_hace_el_flujo": "[DESCRIBE EL FLUJO PASO A PASO EN LENGUAJE NORMAL]",
+    "disparador": "[QUE LO ACTIVA: FORMULARIO, PEDIDO, CORREO, HORARIO]",
+    "servicios_conectados": "[HERRAMIENTAS Y CUENTAS QUE INTERVIENEN]",
+    "que_toca_del_mundo_real": "[ENVIA CORREOS, CREA FACTURAS, MUEVE DINERO, ESCRIBE A CLIENTES]",
+    "limite_del_plan": "[OPERACIONES O TAREAS INCLUIDAS AL MES]"
+  },
+  "pasos": [
+    "1. Monta un entorno de prueba: cuentas y correos propios de pruebas, hoja duplicada, etiqueta de prueba en cada registro.",
+    "2. Ejecuta el camino feliz una vez y comprueba el resultado en todos los destinos, no solo en el primero.",
+    "3. Prueba datos sucios: campo vacio, nombre con ñ y tildes, apostrofe, telefono con espacios y prefijo, correo mal escrito, texto larguisimo.",
+    "4. Prueba duplicados: el mismo envio dos veces seguidas y comprueba si crea dos registros o dos correos.",
+    "5. Prueba el fallo de un servicio: desconecta o pon mal una clave y mira si el flujo avisa o se queda callado.",
+    "6. Prueba el volumen: veinte disparos seguidos, y calcula cuantas operaciones consume cada ejecucion.",
+    "7. Comprueba el orden y los tiempos: que no se envie la confirmacion antes de guardar el pedido.",
+    "8. Define el plan de emergencia: como se para el flujo, como se deshace lo hecho y quien se entera.",
+    "9. Activa en real con freno: primero un dia limitado o con revision manual antes de enviar."
+  ],
+  "que_mirar": [
+    "Que ningun correo de prueba pueda salir a un cliente real.",
+    "Que los registros creados en pruebas se puedan borrar despues.",
+    "Que exista aviso cuando el flujo falla, y a donde llega ese aviso.",
+    "Que no haya bucles: un paso que dispara de nuevo el disparador.",
+    "Que los campos obligatorios del destino esten siempre rellenos.",
+    "Que las fechas y zonas horarias sean las de España."
+  ],
+  "errores_tipicos": [
+    "Probar con el propio correo del negocio y mandar sin querer a la lista real.",
+    "Dejar el flujo activo mientras se edita y disparar decenas de ejecuciones.",
+    "No mirar el consumo y quedarse sin operaciones a mitad de mes.",
+    "No enterarse de que lleva dos semanas fallando porque no hay alerta.",
+    "Confiar en que el servicio conectado siempre devuelve el dato con el mismo nombre."
+  ],
+  "restricciones": [
+    "No propongas escribir codigo salvo que no exista alternativa, y entonces explicalo linea a linea.",
+    "Toda prueba destructiva se hace sobre copias, nunca sobre datos reales.",
+    "No incluyas claves ni contraseñas en el resultado."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de pruebas: Nº | Escenario | Dato de prueba | Resultado esperado | Resultado real | Estado.",
+    "bloque_2": "Riesgos detectados ordenados por daño posible, con la proteccion concreta a añadir.",
+    "bloque_3": "Plan de activacion con freno y criterio para quitar el freno.",
+    "bloque_4": "Procedimiento de emergencia en cinco pasos: parar, comprobar, deshacer, avisar, corregir."
+  },
+  "criterios_calidad": [
+    "Hay al menos tres pruebas con datos sucios y una con fallo de servicio.",
+    "Se indica el consumo aproximado por ejecucion.",
+    "Existe una alerta que llega a un sitio que la persona mira a diario.",
+    "El procedimiento de emergencia cabe en media pagina."
+  ]
+}

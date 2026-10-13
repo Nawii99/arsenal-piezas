@@ -1,0 +1,35 @@
+{
+  "tarea": "Redactar el protocolo de emergencia (runbook) para cuando la base de datos deja de responder o se corrompe: pasos en orden, decisiones y comunicación",
+  "contexto": {
+    "sistema_afectado": "[QUÉ DEJA DE FUNCIONAR: tienda online, ERP, app de reservas...]",
+    "motor_y_hosting": "[MOTOR Y DÓNDE ESTÁ ALOJADO]",
+    "contactos": "[NOMBRE Y TELÉFONO DE QUIEN PUEDE TOCAR EL SERVIDOR Y DEL SOPORTE DEL HOSTING]",
+    "donde_estan_las_copias": "[UBICACIÓN Y CÓMO SE ACCEDE]",
+    "donde_estan_las_credenciales": "[GESTOR DE CONTRASEÑAS O RESPONSABLE]",
+    "clientes_afectados": "[A QUIÉN HAY QUE AVISAR Y POR QUÉ CANAL]"
+  },
+  "instrucciones": [
+    "Ordena el protocolo en fases: detectar, contener, diagnosticar, decidir, recuperar y cerrar",
+    "En contener, incluye siempre poner la web en modo mantenimiento y hacer una copia del estado actual ANTES de tocar nada, aunque esté roto",
+    "En diagnosticar, da 6 comprobaciones rápidas en orden: servicio caído, disco lleno, memoria, conexiones agotadas, permisos y corrupción de ficheros",
+    "En decidir, plantea un árbol simple: si el servicio arranca pero va lento, si arranca con datos corruptos o si no arranca; con la acción para cada rama",
+    "Incluye los mensajes tipo para clientes y para el equipo, uno al inicio del incidente y otro al resolverse",
+    "Cierra con el registro del incidente: qué pasó, causa, qué se hizo, qué cambiar para que no se repita"
+  ],
+  "restricciones": [
+    "Prohíbe expresamente restaurar una copia encima de la base actual sin haber guardado antes el estado presente",
+    "Cada fase debe caber en una hoja y llevar responsable",
+    "Nada de jerga sin traducir: cada término técnico lleva su explicación de una línea"
+  ],
+  "formato_salida": {
+    "tipo": "manual imprimible en Markdown",
+    "partes": ["Primeros 5 minutos", "Fases con casillas de verificación", "Árbol de decisión", "Mensajes listos para copiar", "Contactos", "Registro del incidente para rellenar"]
+  },
+  "criterios_calidad": [
+    "Se puede seguir a las 3 de la mañana y con nervios",
+    "Ninguna acción destruye información recuperable",
+    "Cada paso indica quién lo hace y cuánto debería tardar",
+    "Los mensajes a clientes son honestos y no prometen plazos imposibles"
+  ],
+  "tono": "seco y operativo, frases cortas en imperativo"
+}

@@ -1,0 +1,50 @@
+{
+  "tarea": "Escribir el manual de triaje administrativo de mensajes entrantes para la recepción de [NOMBRE DEL CENTRO]",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CLÍNICA O CENTRO DE BIENESTAR]",
+    "quien_atiende": "[PERFIL DE QUIEN CONTESTA: ADMINISTRATIVO SIN FORMACIÓN SANITARIA / AUXILIAR]",
+    "canales": "[WHATSAPP / TELÉFONO / EMAIL / FORMULARIO WEB]",
+    "volumen": "[MENSAJES APROXIMADOS AL DÍA]",
+    "horario_de_respuesta": "[FRANJAS EN LAS QUE SE CONTESTA]"
+  },
+  "entradas": {
+    "mensajes_reales": "[PEGA 15 MENSAJES RECIENTES TAL CUAL LLEGARON, SIN NOMBRES]",
+    "servicios_y_precios": "[QUÉ SE PUEDE DECIR DE PRECIO Y DURACIÓN POR TELÉFONO]",
+    "limite_de_recepcion": "[QUÉ TIENE PROHIBIDO DECIR QUIEN ATIENDE]"
+  },
+  "pasos": [
+    "1. Clasifica los mensajes en cinco cajones: cita y agenda, precio y factura, dudas del servicio, mensajes con síntomas o consejo clínico, y urgencias o quejas graves.",
+    "2. Para los tres primeros cajones escribe la respuesta cerrada que recepción puede mandar sin consultar a nadie.",
+    "3. Para el cajón de síntomas escribe la respuesta puente: se agradece, se dice que quien valora es el profesional y se ofrece cita u hora de llamada. Nunca se opina sobre el síntoma.",
+    "4. Para urgencias define la frase exacta de derivación al 112 o al médico de cabecera y la orden de no dar ninguna indicación por escrito.",
+    "5. Escribe la regla de escalado: qué se pasa al profesional, con qué resumen de tres líneas y en cuánto tiempo debe responder.",
+    "6. Fija los tiempos de respuesta por canal y el mensaje automático de fuera de horario.",
+    "7. Añade el registro de mensajes escalados para que ninguno se quede sin cerrar.",
+    "8. Cierra con la prueba de sala: diez mensajes de examen y la respuesta correcta de cada uno."
+  ],
+  "restricciones": [
+    "Recepción nunca valora síntomas, nunca dice si algo es grave y nunca recomienda medicamentos, dosis ni ejercicios.",
+    "No se dan resultados de pruebas ni información clínica por un canal escrito sin verificar la identidad.",
+    "No se habla del caso de un paciente con un familiar sin autorización expresa.",
+    "Toda respuesta va en tono humano y breve, nunca copiada de un texto legal."
+  ],
+  "formato_salida": {
+    "1_tabla_de_triaje": "Cajón, ejemplo de mensaje, quién responde y en cuánto tiempo",
+    "2_respuestas_tipo": "Entre 12 y 15 respuestas listas para copiar, cada una de menos de 60 palabras",
+    "3_frases_prohibidas": "Lista de frases que recepción no puede escribir nunca, con su alternativa correcta",
+    "4_hoja_de_escalado": "Plantilla del resumen de tres líneas que se pasa al profesional",
+    "5_examen": "Diez mensajes de prueba con la respuesta correcta para formar a alguien nuevo"
+  },
+  "criterios_calidad": [
+    "Una persona nueva contesta bien el 90 por ciento de los mensajes en su primer día con este manual.",
+    "Ninguna respuesta tipo contiene una valoración de salud.",
+    "Cada respuesta acaba en una acción concreta: una cita, una llamada o un dato.",
+    "Los mensajes escalados tienen dueño y plazo."
+  ],
+  "errores_tipicos": [
+    "Contestar por amabilidad a un síntoma con la típica frase de eso suele ser normal.",
+    "Respuestas larguísimas que nadie lee y que dan pie a diez mensajes más.",
+    "Escalar todo al profesional y convertir su móvil en la recepción.",
+    "Dejar sin cerrar los mensajes que llegan el viernes por la tarde."
+  ]
+}

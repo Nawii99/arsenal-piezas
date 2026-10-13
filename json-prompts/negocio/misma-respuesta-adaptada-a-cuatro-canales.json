@@ -1,0 +1,30 @@
+{
+  "tarea": "Adaptar una respuesta de atención al cliente a los distintos canales sin cambiar el fondo del mensaje",
+  "entradas": {
+    "respuesta_original": "[PEGA AQUÍ TU RESPUESTA ACTUAL]",
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "firma": "[NOMBRE DE QUIEN RESPONDE]",
+    "trato": "[TÚ / USTED]"
+  },
+  "canales": {
+    "email": "Asunto de máximo 45 caracteres, cuerpo de 120 a 200 palabras, párrafos de 2 líneas",
+    "whatsapp": "Máximo 50 palabras, sin saludo largo, un solo enlace, sin adjuntos pesados",
+    "instagram_dm": "Máximo 35 palabras, tono cercano, invitación a seguir por otro canal si hay datos personales",
+    "telefono": "Guion hablado de 30 segundos, frases cortas, con la pausa marcada para que el cliente conteste"
+  },
+  "reglas_de_adaptacion": [
+    "El compromiso, el plazo y la condición deben ser idénticos en los cuatro canales",
+    "En canales cortos se recorta el contexto, nunca el siguiente paso",
+    "Nunca pedir datos personales, bancarios o de pago por redes sociales",
+    "Adapta el saludo y la despedida a cada canal, no los copies del email"
+  ],
+  "formato_salida": {
+    "tipo": "cuatro bloques etiquetados",
+    "extra": "Al final, una lista de las diferencias que has introducido y por qué"
+  },
+  "criterios_calidad": [
+    "Un cliente que reciba dos versiones distintas no vería contradicción",
+    "La versión de teléfono se puede leer en voz alta sin tropezar",
+    "Ninguna versión supera su límite de palabras"
+  ]
+}

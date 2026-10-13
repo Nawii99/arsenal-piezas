@@ -1,0 +1,33 @@
+{
+  "tarea": "Crear el conjunto de consultas SQL que alimentan un cuadro de mando mensual, con la definición exacta de cada indicador",
+  "contexto": {
+    "motor": "[MOTOR Y VERSIÓN]",
+    "tipo_de_negocio": "[TIENDA ONLINE, SUSCRIPCIÓN, SERVICIOS, NEGOCIO LOCAL...]",
+    "esquema": "[TABLAS Y COLUMNAS DISPONIBLES]",
+    "indicadores": "[EJ: FACTURACIÓN, PEDIDOS, TICKET MEDIO, CLIENTES NUEVOS Y RECURRENTES, DEVOLUCIONES]",
+    "periodo": "[MES NATURAL / ÚLTIMOS 30 DÍAS]",
+    "comparacion": "[MES ANTERIOR / MISMO MES DEL AÑO PASADO]",
+    "zona_horaria": "[EUROPE/MADRID U OTRA]"
+  },
+  "reglas_de_calculo": [
+    "Definir por escrito cada indicador antes de escribir su SQL: qué entra, qué queda fuera y con qué fecha se imputa",
+    "Excluir pedidos de prueba, cancelados y devueltos salvo indicación contraria, y decirlo",
+    "Usar importes sin IVA para facturación y advertir si el esquema solo guarda el total con IVA",
+    "Comparar siempre contra el mismo número de días para no falsear la variación",
+    "Rellenar los meses sin datos con cero en vez de omitirlos"
+  ],
+  "formato_salida": {
+    "diccionario": "Tabla con columnas Indicador, Definición en una frase, Fórmula, Qué se excluye",
+    "consultas": "Una consulta por indicador, con parámetros de fecha claramente marcados arriba",
+    "consulta_panel": "Una consulta única que devuelve todos los indicadores del mes con su variación respecto al periodo de comparación",
+    "lectura": "Qué mirar primero en el panel y qué variación merece una alerta"
+  },
+  "restricciones": [
+    "Solo SELECT y consultas reutilizables cambiando únicamente las fechas",
+    "Nada de métricas que el esquema no permita calcular: si falta un dato, decirlo y proponer alternativa",
+    "Máximo 8 indicadores para que el panel siga siendo legible"
+  ],
+  "criterios_calidad": [
+    "Dos personas distintas obtendrían el mismo número siguiendo el diccionario"
+  ]
+}

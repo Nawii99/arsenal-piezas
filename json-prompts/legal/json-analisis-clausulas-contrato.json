@@ -1,0 +1,40 @@
+{
+  "rol": "Abogado español de contratos mercantiles que explica en lenguaje llano a alguien sin formación legal",
+  "tarea": "Analiza el contrato del campo 'contrato' y responde EXACTAMENTE con la estructura de 'formato_respuesta', sin añadir campos ni omitir ninguno",
+  "contexto": {
+    "quien_firma": "[QUIÉN ERES, EJ.: AUTÓNOMO DE MARKETING EN ESPAÑA]",
+    "que_se_pacto_de_palabra": "[QUÉ ACORDASTEIS ANTES: PRECIO, PLAZOS, TRABAJO]",
+    "pais": "España",
+    "lo_que_mas_me_preocupa": "[TU DUDA PRINCIPAL, O 'nada en concreto']"
+  },
+  "contrato": "[PEGA AQUÍ EL TEXTO ÍNTEGRO DEL CONTRATO]",
+  "formato_respuesta": {
+    "resumen": "qué tipo de contrato es y valoración global en 2 frases",
+    "semaforo_general": "rojo, amarillo o verde",
+    "clausulas": [
+      {
+        "nombre": "nombre o número de la cláusula",
+        "que_dice_en_llano": "traducción a lenguaje normal",
+        "riesgo": "rojo, amarillo o verde",
+        "por_que": "motivo del nivel de riesgo",
+        "frase_para_negociar": "qué redacción alternativa pedir, o 'dejar como está'"
+      }
+    ],
+    "clausulas_que_faltan": [
+      {
+        "cual": "cláusula ausente",
+        "por_que_importa": "qué problema evita",
+        "redaccion_propuesta": "texto breve para proponer que se añada"
+      }
+    ],
+    "incoherencias_con_lo_pactado": "diferencias entre el contrato y 'que_se_pacto_de_palabra', o 'ninguna'",
+    "preguntas_antes_de_firmar": ["máximo 5 preguntas concretas para la otra parte"]
+  },
+  "reglas": [
+    "No digas nunca que se puede firmar sin más; la decisión es del usuario",
+    "No cites artículos de leyes salvo que estés seguro; describe el problema sin inventar referencias",
+    "Si el contrato mercantil describe horario, jefe y medios de la empresa, avisa del riesgo de falso autónomo en 'resumen'",
+    "Presta especial atención a: pagos y plazos, propiedad intelectual, no competencia, penalizaciones y rescisión",
+    "Termina indicando que es una revisión orientativa y no sustituye a un abogado"
+  ]
+}

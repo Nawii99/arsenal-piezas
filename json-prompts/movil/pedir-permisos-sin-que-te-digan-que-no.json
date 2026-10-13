@@ -1,0 +1,46 @@
+{
+  "tarea": "Diseñar la secuencia y los textos para pedir un permiso del sistema en el móvil de forma que se acepte, incluyendo la pantalla previa propia y el plan B si lo rechazan",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "permiso": "[NOTIFICACIONES / UBICACIÓN / CÁMARA / MICRÓFONO / CONTACTOS / FOTOS / SEGUIMIENTO PUBLICITARIO]",
+    "para_que_lo_necesitas": "[QUÉ GANA EL USUARIO, NO QUÉ GANAS TÚ]",
+    "plataforma": "[IOS / ANDROID / AMBAS]",
+    "momento_actual": "[EN QUÉ PANTALLA SE PIDE HOY]",
+    "tasa_aceptacion": "[% QUE ACEPTA AHORA, SI LO SABES]"
+  },
+  "reglas_del_oficio": [
+    "El aviso del sistema solo se puede lanzar una vez: si lo rechazan hay que ir a Ajustes, así que nunca se lanza en frío",
+    "Antes del aviso del sistema va siempre una pantalla propia explicando el porqué, con opción de decir ahora no sin gastar el intento",
+    "El permiso se pide en el momento en que el usuario intenta hacer algo que lo necesita, no al abrir la app",
+    "En iOS el seguimiento publicitario y las notificaciones se piden por separado y no se mezclan en el mismo momento"
+  ],
+  "metodo": [
+    "1. Elegir el disparador exacto: la acción del usuario tras la cual el permiso tiene sentido evidente",
+    "2. Redactar la pantalla previa: qué gana, un ejemplo concreto de lo que verá y dos botones",
+    "3. Redactar el texto que va dentro del aviso del sistema, que en iOS se define en el proyecto y debe ser concreto",
+    "4. Escribir el camino si dice ahora no: qué sigue funcionando y cuándo se le vuelve a ofrecer",
+    "5. Escribir el camino si ya lo rechazó: mensaje y ruta paso a paso hasta Ajustes del teléfono",
+    "6. Definir el límite: máximo dos peticiones en toda la vida del usuario y nunca dos días seguidos"
+  ],
+  "errores_a_evitar": [
+    "Pedir notificaciones en la pantalla de bienvenida",
+    "Textos genéricos del tipo activa las notificaciones para no perderte nada",
+    "Bloquear la app hasta que se conceda el permiso cuando no es imprescindible",
+    "Prometer en la pantalla previa algo que la app luego no envía",
+    "Pedir ubicación siempre cuando basta mientras se usa la app"
+  ],
+  "formato_salida": {
+    "secuencia": "Diagrama en texto: disparador, pantalla previa, aviso del sistema, camino de aceptado y camino de rechazado",
+    "textos_pantalla_previa": "Título, dos líneas de apoyo, botón de aceptar y botón secundario, con el texto exacto",
+    "texto_del_sistema": "Frase para el aviso nativo, máximo 90 caracteres, empezando por el beneficio",
+    "variantes": "3 versiones de la pantalla previa con enfoques distintos para probarlas por turnos",
+    "plan_b": "Mensaje y pasos exactos hacia Ajustes del móvil, uno para iOS y otro para Android",
+    "metrica": "Qué contar para saber si funciona y con qué mínimo de usuarios comparar"
+  },
+  "criterios_calidad": [
+    "La pantalla previa nombra un beneficio concreto y verificable, no una idea vaga",
+    "La app sigue siendo útil si se rechaza el permiso",
+    "El usuario nunca ve el aviso del sistema sin haber leído antes el porqué",
+    "Los textos caben sin cortarse en una pantalla pequeña"
+  ]
+}

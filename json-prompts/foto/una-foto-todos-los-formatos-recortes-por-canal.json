@@ -1,0 +1,31 @@
+{
+  "tarea": "Adaptar una unica foto de comida a todos los canales del negocio indicando recorte, medidas y ajustes",
+  "contexto": {
+    "foto": "[DESCRIBE LA FOTO: PLATO, ANGULO, DONDE ESTA EL PLATO EN EL ENCUADRE, DONDE HAY AIRE]",
+    "resolucion_original": "[ANCHO POR ALTO EN PIXELES SI LO SABES]",
+    "canales": "[INSTAGRAM, CARTA DIGITAL, WEB, GLOVO O JUST EAT, GOOGLE, CARTELERIA]",
+    "texto_encima": "[SI ALGUNA VERSION LLEVA TEXTO O PRECIO Y CUAL]"
+  },
+  "por_cada_canal": {
+    "proporcion": "Relacion de aspecto y pixeles recomendados",
+    "recorte": "Que parte de la foto se conserva y que se sacrifica, descrito por zonas",
+    "zona_segura": "Donde no poner nada importante para que no lo tape la interfaz",
+    "peso_y_formato": "Tipo de archivo y peso maximo orientativo",
+    "ajustes": "Correcciones de brillo, contraste o encuadre especificas de ese canal"
+  },
+  "reglas": [
+    "Nunca ampliar una foto pequena para un formato grande: mejor recortar menos",
+    "En vertical, el plato se coloca en el tercio superior si debajo va texto",
+    "En delivery manda el cuadrado y la foto se ve a tamano de sello: el plato debe llenar el encuadre",
+    "En carteleria impresa hay que dejar sangrado y no fiarse del color de la pantalla"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla por canal mas orden de trabajo",
+    "extra": "Nombre de archivo sugerido para cada version con un sistema de nomenclatura reutilizable"
+  },
+  "criterios_calidad": [
+    "Ninguna version corta el plato por un sitio raro",
+    "Todas las versiones salen del mismo original, sin recortes imposibles",
+    "El sistema de nombres se entiende sin explicacion"
+  ]
+}

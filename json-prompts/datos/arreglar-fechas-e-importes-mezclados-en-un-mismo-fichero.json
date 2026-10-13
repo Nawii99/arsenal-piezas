@@ -1,0 +1,40 @@
+{
+  "tarea": "Normalizar columnas de fechas e importes con formatos mezclados y señalar los valores ambiguos",
+  "contexto": {
+    "origen_datos": "[PROGRAMA O PERSONA QUE GENERÓ EL FICHERO]",
+    "pais_formato": "[ESPAÑA, MEZCLA DE ESPAÑA Y EEUU, DESCONOCIDO]",
+    "moneda": "[EUR, USD, MEZCLADAS]"
+  },
+  "entradas": {
+    "columnas_fecha": "[NOMBRES DE LAS COLUMNAS DE FECHA]",
+    "columnas_importe": "[NOMBRES DE LAS COLUMNAS DE IMPORTE O CANTIDAD]",
+    "muestra": "[PEGA 30 VALORES REALES DE CADA COLUMNA, CON SUS RAREZAS]"
+  },
+  "reglas_fechas": [
+    "Salida siempre en AAAA-MM-DD",
+    "Detectar si el fichero usa día/mes/año o mes/día/año mirando los valores con día mayor que 12 y aplicar el mismo criterio a todo el fichero",
+    "Marcar como ambiguo, sin convertir, cualquier valor que encaje en los dos criterios cuando el fichero mezcla formatos",
+    "Convertir números de serie de Excel y textos tipo 3 de marzo de 2025 o 03-mar-25",
+    "Rechazar fechas imposibles o fuera del rango razonable del negocio"
+  ],
+  "reglas_importes": [
+    "Salida como número con punto decimal y sin separador de miles ni símbolo",
+    "Interpretar la coma y el punto según el patrón dominante del fichero, no valor a valor",
+    "Limpiar euros, guiones, espacios finos y textos como pendiente o n/d, que pasan a vacío marcado",
+    "Convertir paréntesis y signos al final en negativos",
+    "Avisar si una misma columna mezcla importes con IVA y sin IVA o dos monedas"
+  ],
+  "formato_salida": {
+    "tipo": "tabla csv",
+    "columnas": "fila | columna | valor_original | valor_normalizado | estado | comentario",
+    "resumen": "Formato dominante detectado en cada columna, número de ambiguos y regla aplicada"
+  },
+  "restricciones": [
+    "Prohibido adivinar una fecha ambigua: se marca y se pregunta",
+    "Conserva el valor original en todos los casos"
+  ],
+  "criterios_calidad": [
+    "La regla aplicada se explica en una frase para que el usuario pueda repetirla",
+    "Los valores ambiguos aparecen listados aparte para revisarlos a mano"
+  ]
+}

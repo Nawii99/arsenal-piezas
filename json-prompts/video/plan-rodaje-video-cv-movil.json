@@ -1,0 +1,55 @@
+{
+  "tarea": "Crear el plan de grabación y edición de un vídeo currículum con un móvil Android, a partir del guion final",
+  "contexto": {
+    "guion": "[PEGA AQUÍ EL GUION FINAL]",
+    "duracion_objetivo_segundos": "[ENTRE 60 Y 90]",
+    "destino": "[LINKEDIN / INFOJOBS / ENVÍO POR CORREO]",
+    "equipo": {
+      "movil": "[MODELO DE MÓVIL ANDROID]",
+      "tripode": "[SÍ / NO]",
+      "microfono_externo": "[SÍ / NO]",
+      "editor": "CapCut u otro editor de móvil gratuito"
+    },
+    "lugar": "[DÓNDE SE GRABA: HABITACIÓN, OFICINA, EXTERIOR]",
+    "hora_disponible": "[MAÑANA / TARDE / NOCHE]"
+  },
+  "instrucciones": {
+    "grabacion": [
+      "Divide el guion en bloques de una a tres frases; cada bloque es una toma independiente",
+      "Para cada toma indica: qué se dice, encuadre (plano medio o primer plano), si mira a cámara y cuántas repeticiones grabar",
+      "Indica dónde poner la luz según el lugar y la hora: ventana de frente, nunca detrás",
+      "Indica cómo colocar el móvil: cámara a la altura de los ojos, vertical u horizontal según el destino",
+      "Si no hay micrófono externo, indica cómo reducir eco y ruido con lo que hay en casa",
+      "Incluye una toma de recurso: cinco segundos en silencio mirando a cámara, para tapar cortes"
+    ],
+    "edicion": [
+      "Orden de montaje de las tomas siguiendo el guion",
+      "Dónde cortar entre tomas para que no se note el salto: en cambio de frase, nunca a mitad",
+      "Subtítulos siempre, porque en LinkedIn se ve sin sonido; indicar tamaño y posición para que no tapen la cara",
+      "Rótulo con nombre y puesto en los primeros cinco segundos",
+      "Ajustes de exportación según destino: resolución, orientación y peso máximo aproximado",
+      "Sin música si no se sabe qué licencia tiene"
+    ],
+    "restricciones": [
+      "Solo con el móvil y apps gratuitas; nada que exija ordenador",
+      "Una sesión de grabación de menos de una hora",
+      "No inventar ajustes técnicos del modelo de móvil; si no se conocen, decir dónde buscarlos en la app de cámara"
+    ]
+  },
+  "formato_salida": {
+    "lista_de_tomas": [
+      {
+        "numero": 1,
+        "texto": "frase o frases de esta toma",
+        "encuadre": "plano medio o primer plano",
+        "repeticiones": 3,
+        "nota": "qué vigilar en esta toma"
+      }
+    ],
+    "preparacion": "lista de comprobación antes de darle a grabar, en orden",
+    "montaje": "pasos numerados en el editor de móvil",
+    "exportacion": "ajustes finales según destino",
+    "tiempo_estimado_total": "grabación más edición, en minutos"
+  },
+  "idioma": "español de España, tuteando, frases cortas"
+}

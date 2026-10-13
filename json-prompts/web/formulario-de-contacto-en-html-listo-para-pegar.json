@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar y entregar el código HTML y CSS de un formulario de contacto para [NOMBRE DE TU NEGOCIO], pensado para que lo rellene el máximo de visitantes",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "pagina_donde_va": "[HOME, PÁGINA DE SERVICIO O PÁGINA DE CONTACTO]",
+    "objetivo": "[QUE ME PIDAN PRESUPUESTO, QUE RESERVEN LLAMADA O QUE PREGUNTEN DUDAS]",
+    "que_pasa_al_enviar": "[ME LLEGA UN EMAIL, VA A UN CRM O NO LO SÉ TODAVÍA]",
+    "estilo_visual": "[COLORES Y TIPOGRAFÍA DE MI MARCA]"
+  },
+  "reglas_de_oficio": [
+    "Pide solo lo imprescindible para dar el siguiente paso: cada campo extra reduce los envíos",
+    "Máximo 5 campos visibles; lo demás se pregunta después por email o teléfono",
+    "Etiqueta siempre visible encima del campo, nunca solo texto dentro del campo",
+    "Un único botón, con verbo y beneficio, nunca la palabra Enviar a secas",
+    "Teclado correcto en móvil usando type email y type tel, con autocompletar activado",
+    "Casilla de privacidad sin premarcar y enlace a la política, obligatoria en España",
+    "Campos y botón de al menos 44 píxeles de alto para que se pulsen bien con el dedo"
+  ],
+  "entregables": [
+    "Bloque HTML completo con clases propias y sin dependencias externas",
+    "Bloque CSS aparte, responsive y legible en móvil sin hacer zoom",
+    "Titular encima del formulario y una frase que quite el miedo a dejar los datos",
+    "Microcopy bajo el botón: qué pasa después y en cuánto tiempo respondes",
+    "Una línea explicando dónde pegar cada bloque"
+  ],
+  "restricciones": [
+    "Sin librerías, CDNs ni frameworks",
+    "JavaScript solo para validación básica y bien comentado",
+    "Contraste suficiente y estado de foco visible en cada campo",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": "1) Descripción de la vista previa en 3 líneas. 2) Código HTML. 3) Código CSS. 4) Checklist de 6 comprobaciones antes de publicar.",
+  "criterios_calidad": [
+    "Se entiende de un vistazo qué pasa al enviarlo",
+    "Funciona pegado tal cual, sin tocar nada",
+    "Ningún campo pide un dato que el negocio no vaya a usar"
+  ]
+}

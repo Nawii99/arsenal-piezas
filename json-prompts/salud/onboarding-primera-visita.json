@@ -1,0 +1,51 @@
+{
+  "tarea": "Diseñar la secuencia previa a la primera visita en [NOMBRE DEL CENTRO], desde la reserva hasta que el paciente entra en consulta",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CLÍNICA O CENTRO]",
+    "servicio_de_primera_visita": "[NOMBRE, DURACIÓN Y PRECIO]",
+    "antelacion_media": "[DÍAS ENTRE RESERVA Y CITA]",
+    "canal": "[WHATSAPP / EMAIL / SMS]",
+    "caida_actual": "[CUÁNTAS PRIMERAS VISITAS NO SE PRESENTAN]"
+  },
+  "entradas": {
+    "que_necesita_el_profesional": "[INFORMES, PRUEBAS, LISTA DE MEDICACIÓN, ROPA CÓMODA, VENIR EN AYUNAS...]",
+    "dudas_frecuentes": "[LO QUE MÁS PREGUNTAN ANTES DE VENIR]",
+    "acceso_al_centro": "[DIRECCIÓN, PORTAL, PARKING, TRANSPORTE, PLANTA]"
+  },
+  "pasos": [
+    "1. Dibuja la línea de tiempo con cuatro momentos: al reservar, tres días antes, la víspera y la llegada al centro.",
+    "2. Escribe la confirmación inmediata: día, hora, dirección con enlace de mapa, profesional, duración, precio y política de cancelación en una línea.",
+    "3. Prepara el mensaje de tres días antes con la lista de lo que hay que traer, en viñetas de menos de ocho palabras.",
+    "4. Diseña el formulario previo con el mínimo de preguntas: solo lo que el profesional va a usar en la consulta. Cada pregunta debe tener un para qué.",
+    "5. Escribe el mensaje de la víspera: confirmación con respuesta de una palabra y la frase que baja la ansiedad explicando qué va a pasar en la sesión.",
+    "6. Redacta las tres respuestas a las dudas típicas antes de venir sin entrar en terreno clínico.",
+    "7. Define el guion de acogida en recepción: saludo, comprobación del formulario, tiempo de espera y qué se le dice si el profesional va con retraso.",
+    "8. Define qué se hace si no contesta a la víspera y a qué hora se llama.",
+    "9. Añade la medición: porcentaje de primeras visitas presentadas y formularios rellenados antes de la cita."
+  ],
+  "restricciones": [
+    "El formulario previo no pide datos de salud que no se vayan a usar, y se guarda con acceso restringido.",
+    "No se anticipan valoraciones ni resultados: se explica el proceso, no el posible diagnóstico.",
+    "Los mensajes son cortos: nadie lee un correo de tres pantallas antes de una cita.",
+    "El precio de la primera visita se dice antes, nunca al final de la consulta."
+  ],
+  "formato_salida": {
+    "1_linea_de_tiempo": "Los cuatro momentos con canal y objetivo",
+    "2_mensajes": "Confirmación, preparación, víspera y no contesta, listos para copiar",
+    "3_formulario": "Las preguntas finales con el motivo de cada una",
+    "4_guion_recepcion": "Qué se dice al llegar, paso a paso",
+    "5_medicion": "Dos números que se apuntan cada semana"
+  },
+  "criterios_calidad": [
+    "El paciente llega sabiendo qué traer, dónde aparcar y cuánto va a durar.",
+    "El profesional entra a la consulta con el formulario ya leído.",
+    "Ningún mensaje supera las 90 palabras.",
+    "Hay una acción definida para quien no responde a la víspera."
+  ],
+  "errores_tipicos": [
+    "Mandar un PDF largo que nadie abre desde el móvil.",
+    "Preguntar en el formulario cosas que luego se vuelven a preguntar en consulta.",
+    "No decir el precio hasta que la persona está sentada.",
+    "Confirmar y no volver a aparecer hasta el día de la cita."
+  ]
+}

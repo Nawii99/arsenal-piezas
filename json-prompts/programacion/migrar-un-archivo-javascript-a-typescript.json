@@ -1,0 +1,44 @@
+{
+  "tarea": "Migrar un archivo JavaScript a TypeScript de forma gradual, sin cambiar el comportamiento actual",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL PROYECTO]",
+    "tipo": "[NODE / REACT / VUE / SCRIPT SUELTO]",
+    "gestor_paquetes": "[NPM / PNPM / YARN]",
+    "estrictez_deseada": "[STRICT DESDE YA / PERMISIVO Y APRETAR DESPUES]"
+  },
+  "entradas": {
+    "codigo_javascript": "[PEGA AQUI EL ARCHIVO .JS COMPLETO]",
+    "librerias_usadas": "[EXPRESS, AXIOS, LODASH...]",
+    "quien_lo_importa": "[ARCHIVOS QUE USAN ESTE ARCHIVO / NO LO SE]"
+  },
+  "pasos": [
+    "Listar cada funcion, sus parametros y lo que devuelve realmente",
+    "Inferir los tipos a partir del uso real del codigo, no inventarlos",
+    "Crear interfaces o type para los objetos que se repiten",
+    "Sustituir any por unknown y estrechar el tipo con comprobaciones",
+    "Marcar con TODO los puntos donde falte informacion del negocio"
+  ],
+  "restricciones": [
+    "No cambiar la logica ni el orden de las operaciones",
+    "No usar any salvo justificacion escrita en el informe",
+    "No renombrar funciones ni variables que se usen fuera del archivo",
+    "Mantener el mismo sistema de modulos del original (ESM o CommonJS)"
+  ],
+  "errores_frecuentes_a_evitar": [
+    "Tipar todo como any y dar la migracion por buena",
+    "Olvidar que un valor puede llegar null o undefined",
+    "Usar el operador ! para callar al compilador en vez de comprobar"
+  ],
+  "formato_salida": {
+    "1_archivo_ts": "Codigo TypeScript completo listo para pegar",
+    "2_tipos_nuevos": "Bloque aparte con las interfaces y types creados",
+    "3_comandos": "Comandos npm de instalacion de @types y tsconfig minimo sugerido",
+    "4_riesgos": "Tabla con: linea, duda encontrada, que necesito saber para resolverla"
+  },
+  "criterios_calidad": [
+    "Compila con strict activado o se explica exactamente que falta",
+    "Cero any sin justificar",
+    "Un programador junior entiende el porque de cada tipo"
+  ],
+  "tono": "Tecnico, directo, español de España"
+}

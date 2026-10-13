@@ -1,0 +1,33 @@
+{
+  "tarea": "Analizar reseñas de clientes de mis competidores y convertirlas en oportunidades para mi negocio",
+  "entradas": {
+    "mi_negocio": "[QUÉ VENDES Y DÓNDE]",
+    "fuente": "[GOOGLE MAPS, AMAZON, TRUSTPILOT, APP STORE...]",
+    "resenas": "[PEGA AQUÍ LAS RESEÑAS COPIADAS, INDICANDO COMPETIDOR Y ESTRELLAS DE CADA UNA]"
+  },
+  "pasos": [
+    "Separa las reseñas por competidor y por nota",
+    "Agrupa las quejas en temas repetidos (plazos, atención, precio, calidad, postventa, claridad)",
+    "Cuenta cuántas veces aparece cada tema y ponlo en porcentaje sobre el total",
+    "Haz lo mismo con los elogios: qué valoran cuando están contentos",
+    "Distingue entre quejas que yo puedo evitar y quejas propias del sector",
+    "Recoge frases textuales de clientes para usarlas como material de copy"
+  ],
+  "restricciones": [
+    "No inventes reseñas ni números: trabaja solo con lo pegado",
+    "No nombres a clientes concretos",
+    "Si una muestra es pequeña, avisa de que la conclusión es débil"
+  ],
+  "formato_salida": {
+    "1_tabla_quejas": "Tema, número de menciones, porcentaje, competidores afectados, gravedad",
+    "2_tabla_elogios": "Qué valoran más y quién lo hace bien",
+    "3_frases": "10 frases textuales de clientes útiles para mis anuncios y mi web",
+    "4_oportunidades": "5 promesas que yo podría hacer y cumplir, cada una atada a una queja repetida",
+    "5_alertas": "Errores del sector que también podría cometer yo y cómo prevenirlos"
+  },
+  "criterios_calidad": [
+    "Cada oportunidad nace de una queja contada, no de una intuición",
+    "Las promesas propuestas son cumplibles con un negocio pequeño",
+    "Se distingue claramente lo medido de lo interpretado"
+  ]
+}

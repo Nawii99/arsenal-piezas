@@ -1,0 +1,36 @@
+{
+  "tarea": "Diseñar el guion de pruebas de la zona de acceso de una aplicación web propia: registro, inicio de sesión, recuperación de contraseña, segundo factor y cierre de sesión",
+  "contexto": {
+    "aplicacion": "[NOMBRE Y URL]",
+    "metodos_de_acceso": "[EMAIL Y CONTRASEÑA, GOOGLE, MÓVIL, ENLACE MÁGICO]",
+    "segundo_factor": "[SÍ, NO, SOLO ADMINISTRADORES]",
+    "recuperacion": "[CÓMO SE RECUPERA HOY LA CONTRASEÑA]",
+    "que_hay_dentro": "[DATOS Y ACCIONES DISPONIBLES AL ENTRAR]"
+  },
+  "autorizacion": "Solo sobre la aplicación indicada, con permiso escrito del propietario y usando cuentas de prueba creadas para ello",
+  "pasos": [
+    "Listar todos los puntos por los que se puede entrar o recuperar una cuenta, incluidos los olvidados: app móvil, panel antiguo, acceso de soporte",
+    "Para cada punto, definir pruebas de comportamiento: mensajes de error que revelan si un email existe, límite de intentos fallidos, bloqueo temporal y aviso al usuario",
+    "Comprobar la caducidad y el uso único de los enlaces de recuperación y de los códigos de verificación",
+    "Comprobar qué ocurre con las sesiones abiertas al cambiar la contraseña o activar el segundo factor",
+    "Comprobar si el segundo factor se puede saltar cambiando de método o desde la app móvil",
+    "Comprobar el cierre de sesión real y la caducidad por inactividad",
+    "Para cada prueba, describir resultado correcto, resultado preocupante y evidencia a guardar (captura y fecha)"
+  ],
+  "restricciones": [
+    "No generar herramientas, listas de contraseñas ni scripts de fuerza bruta",
+    "No probar nunca con cuentas de clientes reales",
+    "Describir comprobaciones observables, sin técnicas de evasión"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de casos de prueba",
+    "columnas": ["Nº", "Punto de acceso", "Qué se comprueba", "Pasos", "Resultado correcto", "Señal de alarma", "Evidencia"],
+    "anexos": ["lista de las 5 configuraciones que más fallan en este tipo de aplicación", "texto corto para pedir los arreglos a tu desarrollador"]
+  },
+  "criterios_calidad": [
+    "Cada caso se puede ejecutar sin conocimientos técnicos y con navegador",
+    "Los resultados correctos están escritos de forma objetiva, sin depender de opinión",
+    "Cubre también recuperación de cuenta y cierre de sesión, no solo el login"
+  ],
+  "tono": "metódico y tranquilo"
+}

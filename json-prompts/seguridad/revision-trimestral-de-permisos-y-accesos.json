@@ -1,0 +1,38 @@
+{
+  "tarea": "Revisar la lista actual de usuarios y permisos por herramienta, detectar permisos excesivos o innecesarios y devolver un plan de ajuste",
+  "rol": "Auditor interno de accesos con criterio de mínimo privilegio",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "periodo_revisado": "[TRIMESTRE Y AÑO]",
+    "ultima_revision": "[FECHA O NUNCA]"
+  },
+  "entradas": {
+    "usuarios_y_permisos": "[PEGA AQUÍ LA LISTA: HERRAMIENTA, PERSONA, NIVEL DE PERMISO, ÚLTIMO ACCESO SI LO SABES]",
+    "roles_actuales": "[QUÉ HACE HOY CADA PERSONA]",
+    "bajas_y_cambios": "[QUIÉN SE HA IDO O HA CAMBIADO DE PUESTO ESTE TRIMESTRE]"
+  },
+  "reglas_de_analisis": [
+    "Un permiso de administrador solo se justifica si la persona lo usa para tareas que nadie más puede hacer",
+    "Cuenta sin actividad en 90 días es candidata a desactivar, no a borrar de inmediato",
+    "Cambio de puesto sin cambio de permisos es acumulación de privilegios y hay que corregirlo",
+    "Cuenta genérica del tipo info o admin usada por varias personas es hallazgo de riesgo alto",
+    "Persona externa con acceso indefinido es hallazgo de riesgo alto"
+  ],
+  "formato_salida": {
+    "resumen": "Cinco líneas con el estado general y el número de hallazgos por nivel de riesgo",
+    "tabla_hallazgos": ["Persona o cuenta", "Herramienta", "Permiso actual", "Permiso propuesto", "Motivo", "Riesgo", "Acción"],
+    "acciones_inmediatas": "Lista de cambios a aplicar esta semana con responsable",
+    "ahorro_posible": "Licencias o cuentas de pago que se pueden dar de baja",
+    "proxima_revision": "Fecha propuesta y qué mejorar en el proceso"
+  },
+  "restricciones": [
+    "No inventes datos que no estén en la lista aportada: si falta información, pídela al final en una lista corta",
+    "Cada bajada de permiso debe explicar qué dejará de poder hacer la persona",
+    "Máximo tres niveles de riesgo: alto, medio y bajo"
+  ],
+  "criterios_calidad": [
+    "Ningún hallazgo se queda sin acción propuesta",
+    "Las acciones no interrumpen el trabajo diario del equipo",
+    "El resumen se entiende leyéndolo en un minuto"
+  ]
+}

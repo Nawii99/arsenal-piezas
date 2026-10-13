@@ -1,0 +1,44 @@
+{
+  "tarea": "extraer_datos_cv",
+  "descripcion": "Extrae datos estructurados de un CV en texto plano, que puede venir de un OCR y tener errores de reconocimiento. Nombres propios y numeros son los que mas fallan, revisalos con cuidado antes de darlos por buenos.",
+  "entrada": {
+    "tipo": "texto_plano_de_cv",
+    "idioma_esperado": "es"
+  },
+  "instrucciones": [
+    "Lee el texto completo antes de extraer nada, no proceses por fragmentos.",
+    "Si un dato no aparece en el texto, usa null, nunca inventes un valor.",
+    "Las fechas van en formato AAAA-MM si se conoce el mes, o solo AAAA si no se conoce.",
+    "Cada experiencia laboral es un objeto independiente dentro de la lista experiencia, en orden de mas reciente a mas antigua.",
+    "No incluyas DNI, fecha de nacimiento completa ni ningun dato de salud u origen etnico aunque aparezcan en el texto."
+  ],
+  "esquema_salida": {
+    "nombre_completo": "string o null",
+    "contacto": {
+      "telefono": "string o null",
+      "email": "string o null",
+      "ciudad": "string o null"
+    },
+    "experiencia": [
+      {
+        "empresa": "string",
+        "puesto": "string",
+        "fecha_inicio": "string",
+        "fecha_fin": "string o actualidad"
+      }
+    ],
+    "formacion": [
+      {
+        "titulo": "string",
+        "centro": "string",
+        "anio_fin": "string o null"
+      }
+    ],
+    "idiomas": [
+      {
+        "idioma": "string",
+        "nivel": "string o null"
+      }
+    ]
+  }
+}

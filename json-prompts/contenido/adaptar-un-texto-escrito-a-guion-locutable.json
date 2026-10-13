@@ -1,0 +1,37 @@
+{
+  "tarea": "Adaptar el texto escrito aportado a un guion locutable para [VÍDEO / PODCAST / AUDIO DE VOZ IA] de [DURACIÓN APROXIMADA]",
+  "entradas": {
+    "texto_original": "[PEGA AQUÍ TU ARTÍCULO, EMAIL O NOTAS]",
+    "locutor": "[YO A CÁMARA / VOZ EN OFF / VOZ GENERADA CON IA]",
+    "tono": "[CERCANO / SERIO / ENÉRGICO]",
+    "terminos_dificiles": "[NOMBRES PROPIOS, MARCAS O SIGLAS Y CÓMO SE PRONUNCIAN]"
+  },
+  "transformaciones_obligatorias": [
+    "Partir las frases largas: máximo una idea por frase y unas 18 palabras",
+    "Cambiar las construcciones de escritura por giros hablados (fuera 'asimismo', 'dicho esto', 'cabe destacar')",
+    "Convertir listas escritas en enumeraciones habladas: 'primero..., segundo..., y por último...'",
+    "Escribir las cifras como se dicen: '2.500 €' pasa a 'dos mil quinientos euros'",
+    "Añadir transiciones habladas entre secciones para que no haya saltos secos",
+    "Repetir en voz alta lo que en el texto se entendía por el formato (negritas, tablas, notas)"
+  ],
+  "marcas_de_locucion": [
+    "[PAUSA CORTA] y [PAUSA LARGA] donde el sentido lo pida",
+    "MAYÚSCULAS solo en la palabra que lleva el énfasis de la frase",
+    "[RESPIRA] cada 4 o 5 frases",
+    "Entre paréntesis la pronunciación de los términos difíciles la primera vez que aparecen"
+  ],
+  "formato_salida": {
+    "guion": "Texto final locutable, dividido en bloques numerados con su duración estimada",
+    "resumen": "Duración total estimada a 145 palabras por minuto",
+    "cambios": "Lista de los 8 ajustes más relevantes respecto al original",
+    "trabalenguas": "Frases que cuestan de decir y su versión alternativa"
+  },
+  "restricciones": [
+    "No añadas información nueva ni cambies el mensaje del texto original",
+    "No elimines datos importantes aunque se acorten las frases"
+  ],
+  "criterios_calidad": [
+    "El texto se puede leer en voz alta sin tropezar ni quedarse sin aire",
+    "Suena a alguien hablando, no a alguien leyendo"
+  ]
+}

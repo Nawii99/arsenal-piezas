@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar la ficha de definicion completa de un agente de IA que se encargue de [TAREA A AUTOMATIZAR] en mi negocio",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD DE TU NEGOCIO]",
+    "proceso_actual": "[COMO SE HACE HOY ESA TAREA, PASO A PASO]",
+    "quien_lo_hace_hoy": "[PERSONA O PUESTO]",
+    "volumen": "[CUANTAS VECES AL DIA O A LA SEMANA]",
+    "herramientas_disponibles": "[EMAIL, WHATSAPP, EXCEL, CRM, WEB...]"
+  },
+  "metodo": [
+    "1. Resume la tarea en una sola frase de mision que empiece por un verbo",
+    "2. Delimita el alcance: lista lo que SI hace y lo que NO hace el agente",
+    "3. Define las entradas exactas que necesita para arrancar y de donde salen",
+    "4. Define la salida exacta que entrega, en que formato y quien la recibe",
+    "5. Enumera las herramientas y accesos minimos imprescindibles",
+    "6. Marca los limites duros: acciones prohibidas sin aprobacion de una persona",
+    "7. Define el criterio de terminado y en que casos se para y pregunta",
+    "8. Anota los 3 fallos mas probables y como evitarlos"
+  ],
+  "restricciones": [
+    "Una sola responsabilidad principal: si detectas dos, avisame y propon dividir en dos agentes",
+    "Permisos siempre lo mas estrechos posible; nada de accesos generales por comodidad",
+    "Lenguaje llano, sin jerga tecnica ni nombres de librerias",
+    "Si falta informacion clave, hazme como maximo 5 preguntas antes de escribir la ficha"
+  ],
+  "formato_salida": {
+    "tipo": "ficha en tabla markdown mas un bloque final de texto",
+    "secciones": ["Nombre del agente", "Mision en una frase", "Hace / No hace", "Entradas", "Salida", "Herramientas y permisos", "Limites y aprobaciones", "Criterio de terminado", "Riesgos y como evitarlos"],
+    "bloque_final": "Resumen de 5 lineas listo para pegar como instrucciones del agente"
+  },
+  "criterios_calidad": [
+    "Otra persona podria montar el agente solo con la ficha, sin preguntarme nada",
+    "Cada limite es comprobable, no una buena intencion",
+    "El apartado No hace tiene al menos 4 puntos concretos"
+  ],
+  "tono": "directo y practico, tuteando"
+}

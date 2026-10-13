@@ -1,0 +1,36 @@
+{
+  "tarea": "Clasificar el material bruto de un rodaje en tomas seleccionadas, repuestos y descartes, con criterio escrito",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL VÍDEO]",
+    "objetivo": "[QUÉ TIENE QUE CONTAR EL VÍDEO]",
+    "necesidades_visuales": "[QUÉ MOMENTOS O IMÁGENES SON IMPRESCINDIBLES]"
+  },
+  "entradas": {
+    "lista_de_clips": "[NOMBRE DE ARCHIVO | DURACIÓN | QUÉ SE VE Y SE OYE | INCIDENCIAS]"
+  },
+  "criterios_de_seleccion": [
+    "Se entiende el audio sin esfuerzo y no hay ruido que moleste",
+    "El encuadre y el enfoque aguantan a pantalla completa",
+    "La toma aporta algo que no aporta ninguna otra",
+    "Hay margen al principio y al final para poder cortar con holgura",
+    "La continuidad encaja con las tomas contiguas (ropa, luz, posición)"
+  ],
+  "procedimiento": [
+    "Agrupar los clips por lo que cuentan, no por el orden en que se grabaron",
+    "Dentro de cada grupo elegir una toma principal y una de repuesto",
+    "Señalar los huecos: qué hace falta y no está grabado",
+    "Marcar los clips que necesitan arreglo de audio o de color"
+  ],
+  "formato_salida": {
+    "tabla": ["grupo", "clip", "veredicto (principal / repuesto / descarte)", "mejor fragmento aproximado", "motivo", "arreglos necesarios"],
+    "cierre": ["Lista de huecos por cubrir", "Orden sugerido de los grupos en el montaje"]
+  },
+  "restricciones": [
+    "Todo clip descartado lleva un motivo en una frase",
+    "No dar por buena una toma solo porque sea la única: marcarla como riesgo"
+  ],
+  "criterios_calidad": [
+    "La lista de seleccionados cubre el objetivo del vídeo entero",
+    "Se puede empezar a montar sin volver a abrir el resto del material"
+  ]
+}

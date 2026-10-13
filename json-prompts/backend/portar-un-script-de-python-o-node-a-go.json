@@ -1,0 +1,19 @@
+{
+  "tarea": "Portar código de Python o Node.js a Go, con plan de migración y verificación de equivalencia",
+  "rol": "Ingeniero que ha migrado servicios de lenguajes dinámicos a Go en producción",
+  "entradas": {
+    "lenguaje_origen": "[PYTHON O NODE.JS, CON LA VERSIÓN]",
+    "codigo_original": "[PEGA EL CÓDIGO A PORTAR]",
+    "librerias_usadas": "[LISTA DE LIBRERÍAS EXTERNAS, POR EJEMPLO requests, pandas, express, axios]",
+    "motivo_de_la_migracion": "[LENTITUD, CONSUMO DE MEMORIA, DESPLIEGUE COMPLICADO O UNIFICAR LENGUAJES]",
+    "debe_convivir": "[SÍ O NO, SI LAS DOS VERSIONES TIENEN QUE FUNCIONAR A LA VEZ UNA TEMPORADA]"
+  },
+  "pasos": ["1. Resume qué hace el código original, incluidas las cosas raras y los casos límite que trata", "2. Tabla de equivalencias: cada librería de origen con su equivalente en Go y qué cambia", "3. Señala lo que NO se traduce igual: tipado dinámico, excepciones, duck typing, decoradores, async, números grandes o fechas con zona horaria", "4. Entrega el código en Go traducido, fichero a fichero", "5. Propón cómo verificar que el resultado es idéntico"],
+  "reglas_de_traduccion": ["No traduzcas línea a línea: escribe Go idiomático con errores explícitos en vez de excepciones", "Define structs con etiquetas json en lugar de diccionarios sueltos", "Sustituye async/await o hilos por goroutines con context y errgroup, y limita la concurrencia", "Cuidado con las fechas: usa time.Time con zona horaria explícita y compara con el comportamiento original", "Cuidado con los decimales: usa una librería de decimales si el original manejaba dinero"],
+  "verificacion": ["lista de casos de prueba con la misma entrada para las dos versiones", "tests en Go que cubran los casos límite detectados", "cómo ejecutar las dos versiones en paralelo unos días y comparar salidas antes de apagar la vieja"],
+  "formato_salida": {
+    "secciones": ["Qué hace el original", "Tabla de equivalencias de librerías", "Trampas de la traducción", "Código Go completo por ficheros", "Tests", "Plan de migración por fases con criterio de vuelta atrás"]
+  },
+  "criterios_calidad": ["ningún comportamiento del original se pierde sin avisar", "el código Go compila y pasa go vet", "el plan permite deshacer la migración sin drama"],
+  "tono": "prudente, de alguien que ya ha roto una migración antes"
+}

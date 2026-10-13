@@ -1,0 +1,29 @@
+{
+  "tarea": "Convertir mi currículum a formato JSON Resume para reutilizar los datos con cualquier plantilla",
+  "contexto": {
+    "quien_soy": "[TU PROFESIÓN Y AÑOS DE EXPERIENCIA]",
+    "para_que": "Separar mis datos del diseño: con este archivo relleno plantillas HTML, Typst o Word sin reescribir el CV cada vez",
+    "pais": "España"
+  },
+  "entrada": {
+    "curriculum_en_bruto": "[PEGA AQUÍ TU CV COMPLETO, AUNQUE ESTÉ DESORDENADO O COPIADO DE UN PDF]"
+  },
+  "reglas": [
+    "No inventes ningún dato: si algo falta, deja el campo vacío y añádelo a campos_pendientes",
+    "Fechas en formato AAAA-MM; si solo hay año, AAAA",
+    "Teléfono con prefijo +34 si es español",
+    "Cada puesto con un máximo de 4 logros en highlights, empezando por un verbo",
+    "Devuelve únicamente el JSON, sin texto antes ni después"
+  ],
+  "salida": {
+    "formato": "JSON Resume (estándar abierto con licencia MIT, jsonresume.org)",
+    "esquema": {
+      "basics": { "name": "", "label": "", "email": "", "phone": "", "summary": "", "location": { "city": "", "region": "", "countryCode": "ES" }, "profiles": [ { "network": "", "url": "" } ] },
+      "work": [ { "name": "", "position": "", "startDate": "", "endDate": "", "summary": "", "highlights": [] } ],
+      "education": [ { "institution": "", "area": "", "studyType": "", "endDate": "" } ],
+      "skills": [ { "name": "", "keywords": [] } ],
+      "languages": [ { "language": "", "fluency": "" } ]
+    },
+    "campos_pendientes": []
+  }
+}

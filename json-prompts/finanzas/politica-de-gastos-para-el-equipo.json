@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar la política interna de gastos de una empresa pequeña, clara y aplicable desde el primer día",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "equipo": "[NÚMERO DE PERSONAS Y PERFILES QUE GASTAN: COMERCIALES, TÉCNICOS, OFICINA]",
+    "pais": "España",
+    "quien_aprueba": "[NOMBRE Y CARGO DE QUIEN AUTORIZA]"
+  },
+  "entradas": {
+    "gastos_habituales": "[COMIDAS, DESPLAZAMIENTOS, HOTELES, COMBUSTIBLE, MATERIAL, SOFTWARE, FORMACIÓN, REGALOS A CLIENTES]",
+    "limites_deseados": "[LÍMITES QUE YA TIENES EN MENTE, POR EJEMPLO COMIDA 25 EUROS POR PERSONA]",
+    "medios_de_pago": "[TARJETA DE EMPRESA, ADELANTO DEL EMPLEADO, PAGO DIRECTO POR LA EMPRESA]",
+    "problemas_actuales": "[QUÉ TE ESTÁ PASANDO HOY: TICKETS QUE NO LLEGAN, GASTOS SIN AVISAR, IMPORTES ALTOS]"
+  },
+  "procedimiento": [
+    "Definir el principio general en dos frases: qué se considera un gasto de empresa y qué no",
+    "Fijar límites por tipo de gasto y por persona, con el importe a partir del cual hace falta autorización previa",
+    "Explicar cómo se justifica cada gasto: factura completa a nombre de la empresa siempre que sea posible, ticket solo en importes pequeños, y qué datos debe llevar",
+    "Fijar el plazo para entregar justificantes y el día de pago de los reembolsos",
+    "Listar de forma explícita lo que la empresa no paga, para evitar interpretaciones",
+    "Describir el circuito de aprobación en pasos numerados, con quién decide en cada tramo",
+    "Añadir qué pasa si alguien se salta la política, sin tono amenazante"
+  ],
+  "restricciones": [
+    "Lenguaje sencillo, frases cortas, nada de jerga jurídica",
+    "No afirmar qué es deducible fiscalmente: remitir a la asesoría y avisar de que la factura a nombre de la empresa es lo que facilita la deducción",
+    "El documento entero no debe pasar de dos páginas"
+  ],
+  "formato_salida": {
+    "documento": ["Título y fecha de entrada en vigor", "Principio general", "Tabla de límites por tipo de gasto", "Cómo se justifica un gasto", "Qué no paga la empresa", "Circuito de aprobación paso a paso", "Plazos y fechas de reembolso", "A quién preguntar"],
+    "anexo": "Un mensaje corto de WhatsApp o email para anunciar la política al equipo"
+  },
+  "criterios_calidad": [
+    "Cualquiera del equipo sabe, sin preguntar, si puede hacer un gasto concreto",
+    "Todos los límites llevan importe en euros, nada de razonable o moderado",
+    "El circuito de aprobación cabe en cinco pasos o menos"
+  ]
+}

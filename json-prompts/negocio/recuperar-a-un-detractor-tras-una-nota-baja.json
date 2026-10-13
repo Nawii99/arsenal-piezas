@@ -1,0 +1,43 @@
+{
+  "tarea": "Redactar la respuesta a un cliente detractor y el plan para cerrar el caso",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU NEGOCIO]",
+    "nota_recibida": "[0 A 6]",
+    "comentario_del_cliente": "[PEGA EL COMENTARIO TAL CUAL]",
+    "que_paso_de_verdad": "[TU VERSIÓN DE LOS HECHOS, CON FECHAS]",
+    "valor_del_cliente": "[CUÁNTO GASTA AL AÑO O CUÁNTAS VECES HA COMPRADO]",
+    "margen_de_maniobra": "[LO MÁXIMO QUE PUEDES OFRECER: NADA, DESCUENTO, REPETIR EL SERVICIO, DEVOLUCIÓN]"
+  },
+  "analisis_previo": [
+    "Separar el hecho objetivo de la interpretación del cliente",
+    "Decir si la culpa es del negocio, de una expectativa mal puesta o de algo ajeno",
+    "Identificar qué quiere el cliente en realidad: dinero, disculpa, solución o que no se repita"
+  ],
+  "respuesta": {
+    "estructura": [
+      "Agradecer que se haya molestado en contarlo, sin fórmulas huecas",
+      "Reconocer el hecho concreto que falló, con sus palabras",
+      "Explicar en una frase por qué pasó, sin excusas ni culpar a terceros",
+      "Decir qué se hace ya y para cuándo, con fecha",
+      "Ofrecer la compensación solo si procede y dentro del margen indicado",
+      "Cerrar con una pregunta que invite a responder"
+    ],
+    "tono": "Persona real, tuteando, sin plantilla corporativa ni palabras como lamentamos las molestias ocasionadas",
+    "longitud": "Entre 90 y 140 palabras"
+  },
+  "entregables": [
+    "La respuesta lista para enviar",
+    "Una versión más breve para WhatsApp",
+    "Guion de 6 líneas por si hay que llamar por teléfono",
+    "Ficha de cierre: causa raíz, acción interna, responsable y fecha de revisión"
+  ],
+  "restricciones": [
+    "No prometer nada que no esté en el margen de maniobra",
+    "No pedir que cambie la nota ni que borre la reseña",
+    "No usar la palabra política de empresa como argumento"
+  ],
+  "criterios_calidad": [
+    "Un cliente enfadado la leería entera sin sentirse tratado con plantilla",
+    "Incluye un compromiso concreto con fecha"
+  ]
+}

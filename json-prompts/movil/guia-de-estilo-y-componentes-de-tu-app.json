@@ -1,0 +1,33 @@
+{
+  "tarea": "Definir la guía de estilo y el catálogo de componentes básicos de una app móvil, con valores concretos listos para usar en diseño y desarrollo",
+  "contexto": {
+    "marca": "[NOMBRE]",
+    "colores_actuales": "[CÓDIGOS DE COLOR SI LOS TIENES]",
+    "tipografia": "[NOMBRE DE LA FUENTE O NINGUNA]",
+    "sensacion": "[CONFIANZA, CERCANÍA, LUJO, ENERGÍA...]",
+    "plataforma": "[iOS, ANDROID O AMBAS]",
+    "modo_oscuro": "[SÍ O NO]"
+  },
+  "debe_definir": [
+    "Paleta: color principal, secundario, fondo, superficie, texto principal, texto secundario, borde, éxito, aviso y error, con su código y su equivalente en modo oscuro",
+    "Escala tipográfica: titular grande, titular, subtítulo, cuerpo, cuerpo pequeño y etiqueta, con tamaño, peso e interlineado",
+    "Escala de espaciado en múltiplos de 4 y radios de esquina",
+    "Alturas fijas: barra superior, barra inferior, botón, campo de formulario y fila de lista",
+    "Componentes: botón principal, secundario y de texto, campo de formulario, tarjeta, fila de lista, aviso, etiqueta, ventana modal y barra inferior",
+    "Estados de cada componente: normal, pulsado, desactivado, con error y cargando"
+  ],
+  "formato_salida": {
+    "tabla_colores": ["Nombre del color", "Uso", "Código claro", "Código oscuro", "Contraste con el fondo"],
+    "tabla_texto": ["Estilo", "Tamaño", "Peso", "Interlineado", "Dónde se usa"],
+    "tabla_componentes": ["Componente", "Medidas", "Colores que usa", "Estados", "Cuándo usarlo y cuándo no"],
+    "reglas": "10 reglas de uso escritas en una frase cada una",
+    "prueba": "Descripción de una pantalla de ejemplo montada solo con estos componentes"
+  },
+  "criterios_calidad": [
+    "Todo color de texto sobre su fondo llega a un contraste de 4.5 a 1",
+    "Ningún componente tiene menos de 44 puntos de alto tocable",
+    "No hay dos estilos que sirvan para lo mismo",
+    "Los valores se pueden copiar tal cual a Figma o al código"
+  ],
+  "tono": "Técnico pero explicado en llano, español de España"
+}

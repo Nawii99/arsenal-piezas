@@ -1,0 +1,37 @@
+{
+  "tarea": "Detectar clientes duplicados en un listado y proponer una fusión segura",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "sistema": "[DÓNDE ESTÁN LOS DATOS: HOLDED, HUBSPOT, EXCEL, MYSQL]",
+    "clave_unica_actual": "[CAMPO QUE USAS HOY COMO IDENTIFICADOR, EJ: EMAIL]"
+  },
+  "entradas": {
+    "registros": "[PEGA EL LISTADO EN CSV: ID, NOMBRE, EMAIL, TELEFONO, NIF, DIRECCION, CODIGO_POSTAL, FECHA_ALTA]"
+  },
+  "reglas_coincidencia": [
+    "Coincidencia fuerte: mismo NIF o CIF normalizado, o mismo email en minúsculas quitando el alias con signo más",
+    "Coincidencia fuerte: mismo teléfono normalizado a 9 dígitos, sin prefijo 34 ni espacios ni guiones",
+    "Coincidencia media: nombre muy parecido ignorando mayúsculas, tildes, puntos y formas societarias (SL, S.L., SLU, SA) y además mismo código postal",
+    "Coincidencia débil: solo el nombre se parece; nunca se fusiona",
+    "Falsos positivos típicos a vigilar: familiares con el mismo nombre y dirección, franquicias con el mismo teléfono central, buzones genéricos como info@ o pedidos@ compartidos por varias empresas"
+  ],
+  "reglas_fusion": [
+    "Sobrevive el registro con la fecha de alta más antigua, salvo que otro tenga NIF válido y ese no",
+    "En cada campo se queda el valor no vacío más reciente y mejor formateado",
+    "Nunca se pierde el rastro: lista los IDs absorbidos en una columna id_fusionados"
+  ],
+  "formato_salida": {
+    "tipo": "tabla CSV mas resumen en texto",
+    "columnas": ["grupo", "id", "accion", "confianza", "motivo", "id_superviviente", "campos_en_conflicto"],
+    "resumen": "Cuántos grupos hay por nivel de confianza y cuántos necesitan que los mire una persona"
+  },
+  "restricciones": [
+    "Los grupos de confianza media o baja se marcan como revisar, nunca como fusionar",
+    "No modifiques los valores originales, solo propón el resultado",
+    "Si dos registros tienen NIF distinto no son el mismo cliente, aunque coincida todo lo demás"
+  ],
+  "criterios_calidad": [
+    "Cada grupo explica en una frase por qué se ha agrupado",
+    "Los conflictos entre campos se muestran siempre, no se esconden"
+  ]
+}

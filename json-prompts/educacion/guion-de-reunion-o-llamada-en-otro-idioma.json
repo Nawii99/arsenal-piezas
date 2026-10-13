@@ -1,0 +1,41 @@
+{
+  "tarea": "Prepararme el guion de frases para una [TIPO DE REUNIÓN] en [IDIOMA], con todo lo que necesito decir y lo que probablemente me digan",
+  "contexto": {
+    "idioma": "[IDIOMA]",
+    "tipo_de_reunion": "[videollamada de venta, negociación de precio, visita a fábrica, feria, entrevista]",
+    "interlocutor": "[QUIÉN ES: empresa, cargo, país]",
+    "mi_objetivo": "[QUÉ QUIERES SACAR DE LA REUNIÓN]",
+    "puntos_a_tratar": "[LOS 3 O 4 TEMAS QUE HAY QUE TOCAR SÍ O SÍ]",
+    "mi_nivel": "[A2, B1, B2 o C1]",
+    "duracion_prevista": "[MINUTOS]"
+  },
+  "debe_incluir": [
+    "Frases de apertura y small talk adecuadas al pais del interlocutor",
+    "Como presentarme a mi y a mi empresa en 30 segundos",
+    "Preguntas para hacerle hablar a el y ganar tiempo",
+    "Frases para cada punto a tratar, con una version corta y una version larga",
+    "Respuestas a las 5 objeciones o preguntas mas probables",
+    "Frases de emergencia: pedir que repita, que hable mas despacio, ganar tiempo, admitir que no entiendo sin quedar mal",
+    "Cierre, siguientes pasos y despedida"
+  ],
+  "restricciones": [
+    "Todas las frases al nivel mi_nivel: nada que yo no pueda pronunciar ni sostener si me preguntan",
+    "Cada frase con su traduccion al espanol justo debajo",
+    "Marca con un aviso las expresiones que suenan bruscas o demasiado directas en la cultura del interlocutor",
+    "Nada de formulas ceremoniosas anticuadas"
+  ],
+  "formato_salida": {
+    "tipo": "guion por bloques en el orden cronologico de la reunion",
+    "cada_bloque": "titulo del momento, frases numeradas en [IDIOMA] con traduccion debajo y una nota de cuando usar cada una",
+    "extra_final": [
+      "Chuleta de una pagina con las 15 frases imprescindibles",
+      "Lista de 10 palabras clave del tema que debo saber si o si",
+      "Tres cosas que NO conviene decir con ese interlocutor y por que"
+    ]
+  },
+  "criterios_calidad": [
+    "Puedo imprimir la chuleta y usarla durante la llamada sin buscar nada",
+    "Las objeciones son las que de verdad plantea ese tipo de interlocutor",
+    "Ninguna frase suena a traduccion literal del espanol"
+  ]
+}

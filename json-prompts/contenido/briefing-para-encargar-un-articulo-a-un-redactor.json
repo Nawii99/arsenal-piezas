@@ -1,0 +1,41 @@
+{
+  "tarea": "Redactar el briefing de encargo de un artículo de blog para un redactor externo, de forma que pueda escribirlo sin preguntar nada",
+  "contexto": {
+    "negocio": "[NOMBRE Y SECTOR]",
+    "lector": "[PERFIL, NIVEL DE CONOCIMIENTO Y PROBLEMA]",
+    "tono_de_marca": "[CÓMO HABLÁIS: 3 ADJETIVOS Y UN EJEMPLO DE FRASE]",
+    "palabras_prohibidas": "[PALABRAS QUE NO USÁIS NUNCA]"
+  },
+  "encargo": {
+    "tema": "[TEMA DEL ARTÍCULO]",
+    "palabra_clave": "[PALABRA CLAVE]",
+    "objetivo": "[CAPTAR TRÁFICO / EDUCAR / VENDER SERVICIO X]",
+    "longitud": "[NÚMERO] palabras",
+    "plazo": "[FECHA DE ENTREGA]",
+    "tarifa": "[IMPORTE Y FORMA DE PAGO]",
+    "fuentes_obligatorias": "[ENLACES, DOCUMENTOS O ENTREVISTAS QUE DEBE USAR]",
+    "enlaces_internos_obligatorios": "[URLS QUE DEBE ENLAZAR]"
+  },
+  "debe_incluir": [
+    "Esquema propuesto de H2 y H3 con lo que se espera en cada apartado",
+    "Las 5 preguntas que el artículo tiene que responder sí o sí",
+    "Qué NO tratar para no salirse del tema",
+    "Ejemplos o casos que se esperan",
+    "Qué hacer si falta información: preguntar en vez de inventar"
+  ],
+  "criterios_de_aceptacion": [
+    "Responde las 5 preguntas obligatorias",
+    "Cumple longitud con margen del 10 por ciento",
+    "Sin datos inventados y con fuente citada en cada dato",
+    "Texto original, no reescritura de un solo artículo ajeno",
+    "Tono de marca respetado y palabras prohibidas ausentes"
+  ],
+  "formato_salida": {
+    "documento": "briefing en markdown con secciones numeradas, listo para enviar por correo",
+    "cierre": "lista de comprobación de 8 puntos para revisar la entrega"
+  },
+  "criterios_calidad": [
+    "Un redactor que no conoce el negocio puede escribir el artículo solo con este documento",
+    "No hay instrucciones ambiguas del tipo que quede bien"
+  ]
+}

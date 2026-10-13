@@ -1,0 +1,37 @@
+{
+  "tarea": "Auditar la calidad de una tabla de negocio y devolver los problemas detectados con su consulta de comprobación y la corrección propuesta",
+  "entradas": {
+    "muestra_datos": "[PEGA 20 A 50 FILAS O EL CSV COMPLETO]",
+    "que_es_una_fila": "[EJ: UN PEDIDO, UN CLIENTE, UNA FACTURA, UNA CITA]",
+    "reglas_del_negocio": "[EJ: NO PUEDE HABER PEDIDOS CON IMPORTE 0, EL EMAIL ES ÚNICO, LAS CITAS SON DE LUNES A SÁBADO]",
+    "motor": "[MySQL | PostgreSQL | SQL Server | Excel]"
+  },
+  "comprobaciones": [
+    "Duplicados exactos y duplicados por clave de negocio, por ejemplo mismo email o mismo número de factura",
+    "Campos vacíos o con textos tipo NULL, N/A, guion o cadena vacía",
+    "Formatos mezclados en fechas, teléfonos, códigos postales y NIF",
+    "Importes negativos, ceros sospechosos y valores extremos fuera de rango",
+    "Fechas imposibles: futuras, anteriores a la apertura del negocio o fecha de entrega previa a la de pedido",
+    "Categorías escritas de varias formas, con mayúsculas, tildes o espacios de más",
+    "Registros de prueba y cuentas internas mezcladas con datos reales",
+    "Filas huérfanas: pedidos sin cliente o líneas sin pedido"
+  ],
+  "para_cada_problema": [
+    "Qué es y cuántas filas afecta, en número y en porcentaje",
+    "Ejemplo real sacado de la muestra",
+    "Impacto sobre los informes: qué cifra queda inflada o desinflada",
+    "Consulta para localizarlo y consulta o paso para arreglarlo",
+    "Cómo evitar que vuelva a pasar en el origen"
+  ],
+  "formato_salida": {
+    "semaforo": "Verde, ámbar o rojo con una frase de justificación",
+    "tabla_hallazgos": "Tabla con columnas: problema, filas afectadas, gravedad, impacto, acción",
+    "orden_de_ataque": "Los tres arreglos que más mejoran los informes, en orden",
+    "consultas": "Bloques de código separados y comentados"
+  },
+  "restricciones": [
+    "Las consultas de arreglo se entregan primero como SELECT de revisión y solo después como corrección",
+    "Recomendar copia de seguridad antes de cualquier cambio",
+    "No exagerar la gravedad: distinguir lo cosmético de lo que falsea cifras"
+  ]
+}

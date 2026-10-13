@@ -1,0 +1,59 @@
+{
+  "tarea": "Detectar los enlaces y recursos rotos de [URL_WEB], corregirlos y diseñar la página de error 404",
+  "contexto": {
+    "web": "[URL Y TAMAÑO APROXIMADO EN NÚMERO DE PÁGINAS]",
+    "que_ha_cambiado": "[REORGANIZACIÓN / PRODUCTOS RETIRADOS / CAMBIO DE PLANTILLA / NADA CONCRETO]",
+    "objetivo_principal_de_la_web": "[CONTACTO / VENTA / RESERVA]",
+    "perfil_lector": "Sin conocimientos técnicos"
+  },
+  "entradas": {
+    "informe_de_errores": "[PEGA LOS ERRORES 404 DE GOOGLE SEARCH CONSOLE O EL RESULTADO DE UN RASTREADOR GRATUITO]",
+    "html_o_sitemap": "[PEGA EL SITEMAP O LAS PÁGINAS PRINCIPALES]",
+    "enlaces_publicados_fuera": "[ENLACES QUE HAS PUESTO EN REDES, ANUNCIOS, QR, FOLLETOS O FIRMA DE EMAIL]",
+    "paginas_estrella": "[LAS 3 PÁGINAS A LAS QUE QUIERES LLEVAR AL VISITANTE PERDIDO]"
+  },
+  "procedimiento": [
+    "1. Rastrea la web con una herramienta gratuita y separa: enlaces internos rotos, imágenes que faltan, enlaces externos caídos y redirecciones encadenadas",
+    "2. Cruza con los errores que reporta Search Console, que incluyen enlaces desde fuera",
+    "3. Clasifica cada error: corregir el enlace, redirigir la URL o dejar que devuelva 404 a propósito",
+    "4. Corrige primero los enlaces rotos dentro de páginas con visitas o dentro de la ruta de compra",
+    "5. Redirige las URLs antiguas que aún reciben visitas a su equivalente actual",
+    "6. Revisa enlaces rotos en sitios ajenos: contacta y pide corrección o redirige tú",
+    "7. Diseña la página 404 con: reconocimiento del error en lenguaje humano, buscador, enlaces a las páginas estrella y contacto directo",
+    "8. Añade la medición de la página 404 para saber qué URL falló",
+    "9. Programa una revisión trimestral en el calendario"
+  ],
+  "que_mirar": [
+    "Que la página 404 devuelva realmente el código 404 y no un 200 disfrazado",
+    "Enlaces a PDFs, imágenes y archivos de descarga, que suelen quedar fuera de la revisión",
+    "Enlaces con mayúsculas o barra final distintos de la URL real",
+    "Enlaces de correo y de teléfono mal escritos",
+    "Botones que apuntan a almohadilla y no llevan a ningún sitio"
+  ],
+  "errores_tipicos": [
+    "Redirigir todos los 404 a la portada: el visitante se pierde igual",
+    "Corregir el enlace en una página y dejarlo roto en el menú o el pie",
+    "Ignorar los enlaces rotos de los anuncios pagados, que queman presupuesto",
+    "Borrar una página con visitas sin poner destino",
+    "Dejar la página 404 por defecto del hosting, fría y sin salida"
+  ],
+  "restricciones": [
+    "Solo herramientas gratuitas y sin instalar programas complejos si se puede evitar",
+    "La página 404 mantiene el diseño y el menú de la web",
+    "No redirijas en masa sin revisar el destino de cada URL importante"
+  ],
+  "formato_salida": {
+    "1_resumen": "Cuántos errores hay, cuáles duelen de verdad y por qué",
+    "2_tabla_de_errores": "URL rota | desde dónde se enlaza | tipo | visitas estimadas | acción | destino",
+    "3_reglas_de_redireccion": "Bloque de código para el hosting indicado, listo para pegar",
+    "4_pagina_404": "HTML y CSS completos de la página de error con los textos redactados",
+    "5_medicion": "Cómo registrar qué URL provocó cada 404",
+    "6_rutina": "Revisión trimestral en 20 minutos, paso a paso"
+  },
+  "criterios_calidad": [
+    "Ningún enlace roto queda dentro de la ruta de contacto o de compra",
+    "La página 404 ofrece al menos tres salidas útiles y un contacto",
+    "Cada redirección lleva a la página equivalente y no a la portada",
+    "El informe permite repetir la revisión sin volver a pedir ayuda"
+  ]
+}

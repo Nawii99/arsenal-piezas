@@ -1,0 +1,35 @@
+{
+  "tarea": "Analiza el registro semanal de mi flujo de agentes y escribe un informe corto con decisiones concretas",
+  "contexto": {
+    "periodo": "[SEMANA DEL X AL Y]",
+    "datos": "[PEGA AQUI EL REGISTRO O EL RESUMEN: EJECUCIONES, FALLOS, TIEMPOS, COSTE]",
+    "intervenciones_manuales": "[CUANTAS VECES TUVO QUE ENTRAR UNA PERSONA Y POR QUE]",
+    "objetivo_del_flujo": "[QUE QUERIAS CONSEGUIR AL MONTARLO]",
+    "coste_hora_persona": "[EUROS/HORA APROX]"
+  },
+  "analiza": [
+    "Ejecuciones terminadas solas frente a las que necesitaron a una persona",
+    "Que agente concentra mas fallos y de que tipo",
+    "Pasos mas lentos y si el retraso viene del agente o de la herramienta",
+    "Coste por ejecucion y comparacion con hacerlo a mano",
+    "Reintentos: cuantos y si sirvieron de algo",
+    "Tendencia frente a la semana anterior si hay datos"
+  ],
+  "restricciones": [
+    "No inventes numeros: si un dato no esta, dilo y pide como medirlo",
+    "Cada conclusion apoyada en una cifra del registro",
+    "Nada de porcentajes de mejora prometidos hacia el futuro"
+  ],
+  "formato_salida": {
+    "resumen": "5 lineas que un jefe lee en 30 segundos",
+    "tabla_agentes": ["agente", "ejecuciones", "fallos", "tiempo medio", "coste"],
+    "top_3_problemas": "cada uno con causa probable y arreglo propuesto",
+    "decisiones": "que quitar, que mantener y que probar la semana que viene",
+    "datos_que_faltan": "lo que habria que empezar a registrar"
+  },
+  "criterios_calidad": [
+    "Se entiende sin abrir el registro original",
+    "Cada problema tiene un responsable y un plazo propuesto",
+    "Distingue entre fallo del agente y fallo del diseno del flujo"
+  ]
+}

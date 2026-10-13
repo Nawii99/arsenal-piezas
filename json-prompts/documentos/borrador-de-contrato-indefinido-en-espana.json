@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar el borrador de un contrato de trabajo indefinido conforme al Estatuto de los Trabajadores y al convenio aplicable, listo para revisar con un laboralista",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "cif": "[CIF]",
+    "actividad": "[A QUE SE DEDICA TU EMPRESA]",
+    "convenio_colectivo": "[CONVENIO COLECTIVO APLICABLE O ESCRIBE NO LO SE]",
+    "provincia": "[PROVINCIA]"
+  },
+  "entradas": {
+    "puesto": "[PUESTO Y TAREAS PRINCIPALES]",
+    "grupo_profesional": "[GRUPO O CATEGORIA SEGUN CONVENIO O NO LO SE]",
+    "jornada": "[COMPLETA O PARCIAL: HORAS SEMANALES Y HORARIO]",
+    "salario_bruto_anual": "[SALARIO BRUTO ANUAL Y NUMERO DE PAGAS]",
+    "variable": "[COMISIONES O BONUS SI LOS HAY O NINGUNO]",
+    "periodo_prueba": "[MESES DE PRUEBA O SEGUN CONVENIO]",
+    "lugar_trabajo": "[CENTRO DE TRABAJO O TELETRABAJO PARCIAL]",
+    "fecha_inicio": "[FECHA DE INICIO]"
+  },
+  "pasos": [
+    "Comprobar que el salario propuesto no queda por debajo del SMI ni de las tablas del convenio indicado y avisar si hay riesgo",
+    "Redactar el contrato con estas clausulas: partes, objeto y funciones, grupo profesional, duracion indefinida, periodo de prueba, jornada y distribucion, salario y pagas, vacaciones, confidencialidad, proteccion de datos, registro de jornada, prevencion de riesgos y convenio aplicable",
+    "Anadir anexos solo si proceden: teletrabajo, uso de equipos de la empresa, pacto de no competencia con compensacion",
+    "Listar aparte cada dato que falta o que depende del convenio"
+  ],
+  "restricciones": [
+    "No inventes articulos, numeros de convenio ni cuantias: si no consta, escribe PENDIENTE DE VERIFICAR",
+    "Lenguaje llano, frases cortas, sin latinajos innecesarios",
+    "No incluyas clausulas nulas como renuncias a derechos o no competencia sin compensacion economica"
+  ],
+  "formato_salida": {
+    "bloque_1": "Contrato completo en texto, con clausulas numeradas",
+    "bloque_2": "Lista PENDIENTE DE VERIFICAR con lo que debe confirmar el laboralista",
+    "bloque_3": "Riesgos detectados, maximo 5 vinetas"
+  },
+  "criterios_calidad": [
+    "Una persona sin formacion juridica entiende cada clausula a la primera",
+    "Ninguna cifra aparece sin que el usuario la haya dado",
+    "El texto avisa de forma clara de que es un borrador y no sustituye a un abogado"
+  ],
+  "tono": "Profesional, claro y prudente"
+}

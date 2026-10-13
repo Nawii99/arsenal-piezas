@@ -1,0 +1,36 @@
+{
+  "tarea": "Convertir un servicio facturado por horas en una oferta de precio cerrado por proyecto, con alcance y protecciones",
+  "contexto": {
+    "servicio": "[QUÉ SERVICIO PRESTAS]",
+    "cliente_tipo": "[A QUIÉN SE LO VENDES]",
+    "tarifa_actual": "[PRECIO POR HORA O POR JORNADA DE HOY]"
+  },
+  "entradas": {
+    "horas_reales_por_proyecto": "[HORAS MÍNIMAS, HABITUALES Y DEL PEOR CASO]",
+    "tareas_del_proyecto": "[LISTA DE FASES Y TAREAS DE PRINCIPIO A FIN]",
+    "resultado_para_el_cliente": "[QUÉ GANA, AHORRA O EVITA GRACIAS AL TRABAJO]",
+    "causas_de_desvio": "[QUÉ HACE QUE SE ALARGUE: CAMBIOS, RETRASOS DEL CLIENTE, REVISIONES]"
+  },
+  "metodo": [
+    "Calcular el coste interno con las horas del caso habitual y con las del peor caso",
+    "Fijar el precio cerrado sobre el peor caso razonable, no sobre la media optimista",
+    "Definir el alcance en entregables cerrados: qué se entrega, cuántas revisiones y en qué plazo",
+    "Escribir los disparadores de precio extra: cambio de objetivo, revisiones de más, retrasos del cliente",
+    "Comparar el precio cerrado con lo que el cliente pagaría por horas y explicar por qué le conviene",
+    "Proponer un rango de precio y decir qué justifica moverse al alto o al bajo"
+  ],
+  "formato_salida": {
+    "bloque_costes": "Tabla con fase, horas caso habitual, horas peor caso y coste interno",
+    "precio_propuesto": "Precio cerrado recomendado, suelo por debajo del cual no compensa y precio del peor caso",
+    "alcance": "Lista de lo incluido, número de revisiones y lo excluido",
+    "clausulas": "Tres cláusulas cortas que protegen ante cambios, retrasos y ampliaciones",
+    "argumentario": "Cuatro frases para explicar al cliente por qué ahora es precio cerrado",
+    "semaforo": "Cuándo NO conviene el precio cerrado y sigue mereciendo la pena cobrar por horas"
+  },
+  "criterios_calidad": [
+    "El precio cerrado sigue siendo rentable en el peor caso descrito",
+    "El alcance es tan concreto que se puede discutir con el cliente sin interpretaciones",
+    "Las cláusulas están escritas en lenguaje llano, no de abogado"
+  ],
+  "tono": "Práctico y sin humo, con números encima de la mesa"
+}

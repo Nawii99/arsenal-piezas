@@ -1,0 +1,35 @@
+{
+  "tarea": "Construir e interpretar un análisis de cohortes de retención a partir de datos de clientes, identificando en qué mes de vida se producen las fugas y si las cohortes recientes van mejor o peor",
+  "entradas": {
+    "datos": "[PEGA LA TABLA O DESCRIBE EL CSV: UNA FILA POR CLIENTE CON FECHA DE ALTA Y FECHAS DE COMPRA O ACTIVIDAD]",
+    "definicion_de_activo": "[QUÉ CUENTA COMO SEGUIR SIENDO CLIENTE, POR EJEMPLO COMPRAR AL MENOS UNA VEZ EN EL MES]",
+    "periodo": "[DESDE / HASTA]",
+    "segmentos_de_interes": "[CANAL DE CAPTACIÓN, PRODUCTO DE ENTRADA, PLAN O CIUDAD]",
+    "valor_medio_cliente_mes": "[EUROS]"
+  },
+  "procedimiento": [
+    "1. Agrupar clientes por mes de alta (cohorte) y calcular el porcentaje que sigue activo en el mes 0, 1, 2, 3, 6 y 12",
+    "2. Avisar de las cohortes con pocos clientes, cuyos porcentajes bailan mucho y no deben interpretarse",
+    "3. Localizar el escalón de caída más fuerte y decir en qué mes de vida ocurre",
+    "4. Comparar cohortes antiguas y recientes para ver si la retención mejora, empeora o se mantiene, descontando que las recientes tienen menos meses de historia",
+    "5. Repetir el corte por los segmentos indicados y señalar el canal o producto de entrada con mejor y peor retención",
+    "6. Estimar el valor de vida del cliente aproximado a partir de la curva y del valor medio mensual",
+    "7. Proponer 3 acciones concretas centradas en el mes donde está la fuga principal"
+  ],
+  "restricciones": [
+    "No comparar cohortes con distinto número de meses observados sin decirlo",
+    "No interpretar cohortes con menos de 30 clientes como si fueran fiables",
+    "Si los datos no permiten calcular algo, decirlo en vez de estimarlo por libre"
+  ],
+  "formato_salida": {
+    "tabla_cohortes": "Filas por mes de alta, columnas mes 0 a mes 12, valores en porcentaje, con el tamaño de cada cohorte en la primera columna",
+    "lectura": "6 hallazgos numerados, cada uno con el dato que lo respalda",
+    "donde_se_fugan": "Mes crítico, magnitud de la caída y hipótesis de por qué",
+    "por_segmento": "Tabla con retención a 3 y 6 meses por canal o producto de entrada",
+    "acciones": "3 acciones con el momento exacto de aplicarlas y qué métrica debería moverse"
+  },
+  "criterios_calidad": [
+    "Cada hallazgo cita el número del que sale",
+    "Las cohortes poco fiables aparecen marcadas"
+  ]
+}

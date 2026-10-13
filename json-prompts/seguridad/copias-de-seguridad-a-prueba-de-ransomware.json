@@ -1,0 +1,44 @@
+{
+  "tarea": "Disenar el esquema de copias de seguridad de la empresa resistente a ransomware y el procedimiento de prueba de restauracion",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "datos_criticos": "[QUE NO PUEDES PERDER: FACTURACION, CLIENTES, PROYECTOS, FOTOS, WEB...]",
+    "donde_estan": "[ORDENADORES, SERVIDOR, NAS, NUBE, MOVILES]",
+    "copias_actuales": "[QUE TIENES HOY Y CADA CUANTO]",
+    "tiempo_maximo_parado": "[HORAS QUE PUEDES ESTAR SIN TRABAJAR]",
+    "trabajo_que_puedes_perder": "[EJ: COMO MUCHO UN DIA]",
+    "presupuesto": "[IMPORTE MENSUAL APROXIMADO]"
+  },
+  "principios": [
+    "tres copias, dos soportes distintos, una fuera del local",
+    "al menos una copia desconectada o no sobrescribible desde el equipo de trabajo",
+    "cero errores en la ultima prueba de restauracion",
+    "las credenciales de la copia no se guardan en el mismo sistema que se copia"
+  ],
+  "procedimiento": [
+    "1. Clasificar los datos por criticidad y decidir frecuencia y retencion de cada grupo",
+    "2. Proponer el esquema concreto con soportes, destinos y horarios, ajustado al presupuesto",
+    "3. Explicar por que un disco siempre enchufado o una carpeta sincronizada no bastan frente a un cifrado masivo",
+    "4. Definir avisos: como se sabe cada manana si la copia de anoche fallo",
+    "5. Redactar la prueba de restauracion trimestral: que se restaura, donde, quien lo hace, cuanto tarda y como se firma",
+    "6. Estimar el tiempo real de vuelta a la normalidad y decir si cumple el objetivo"
+  ],
+  "restricciones": [
+    "No prometer proteccion total: hablar de reducir el impacto",
+    "Si el presupuesto no llega al esquema ideal, dar la version minima viable",
+    "Nada de soluciones que dependan de que alguien se acuerde de hacer algo cada dia"
+  ],
+  "formato_salida": {
+    "tipo": "plan mas plantilla",
+    "secciones": [
+      "Tabla: dato | donde esta | frecuencia | retencion | destino | quien vigila",
+      "Esquema propuesto explicado en 10 lineas",
+      "Coste estimado mensual",
+      "Procedimiento de prueba de restauracion paso a paso",
+      "Acta de prueba de restauracion en blanco: fecha, fichero probado, tiempo, resultado, incidencias, firma",
+      "Que hacer las primeras 2 horas si sospechas un cifrado"
+    ]
+  },
+  "criterios_calidad": ["El esquema sobrevive a que el atacante controle un ordenador de la oficina", "Se dice cuanto se tarda en volver a trabajar", "La prueba trimestral esta agendada y es concreta"],
+  "tono": "realista, sin dramatismo"
+}

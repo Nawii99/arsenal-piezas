@@ -1,0 +1,37 @@
+{
+  "tarea": "Identificar los puntos calientes de un proyecto de software: archivos que combinan mucho cambio, mucha complejidad y muchos fallos",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL PROYECTO]",
+    "antiguedad": "[AÑOS QUE LLEVA VIVO EL CÓDIGO]",
+    "tamano_equipo": "[NÚMERO DE PERSONAS QUE TOCAN EL CÓDIGO]",
+    "sintomas": "[QUÉ NOTÁIS: lentitud al desarrollar, bugs repetidos, miedo a tocar cierta zona]"
+  },
+  "entradas": {
+    "estructura_de_carpetas": "[PEGA EL ÁRBOL DE CARPETAS Y ARCHIVOS PRINCIPALES]",
+    "frecuencia_de_cambio": "[PEGA LA SALIDA DE: git log --format=format: --name-only | sort | uniq -c | sort -rn | head -40]",
+    "tamano_archivos": "[LISTA DE ARCHIVOS Y SUS LÍNEAS, SI LA TIENES]",
+    "incidencias_recientes": "[BUGS O CAÍDAS DE LOS ÚLTIMOS MESES Y DÓNDE OCURRIERON]"
+  },
+  "metodo": [
+    "Cruza frecuencia de cambio con tamaño y complejidad aparente: mucho cambio + mucha complejidad = punto caliente",
+    "Marca los archivos que aparecen a la vez en muchos commits (acoplamiento oculto entre módulos)",
+    "Relaciona cada punto caliente con las incidencias reportadas",
+    "Estima el coste actual: cuánto tiempo extra cuesta cada cambio en esa zona",
+    "Propón para cada punto caliente la intervención más barata que reduce el riesgo"
+  ],
+  "restricciones": [
+    "No inventes métricas que no se deduzcan de los datos aportados; marca lo que sea suposición",
+    "Máximo 10 puntos calientes, ordenados de peor a mejor",
+    "Nada de recomendar reescribir el sistema entero"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown + notas",
+    "columnas": ["archivo o módulo", "cambios", "tamaño", "riesgo (1-5)", "síntoma observado", "intervención propuesta", "esfuerzo (S/M/L)"],
+    "extra": "Después de la tabla, 5 líneas con el orden recomendado de ataque y por qué"
+  },
+  "criterios_calidad": [
+    "Cada punto caliente se justifica con un dato de los aportados",
+    "Las intervenciones son concretas: extraer X, cubrir con pruebas Y, separar Z",
+    "Se distingue entre lo urgente y lo que puede esperar sin coste"
+  ]
+}

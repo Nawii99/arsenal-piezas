@@ -1,0 +1,38 @@
+{
+  "tarea": "Extraer de un vídeo largo los fragmentos que funcionan como clip independiente, con entrada, salida y montaje de cada uno",
+  "contexto": {
+    "origen": "[FORMACIÓN / DIRECTO / PÓDCAST / CHARLA / ENTREVISTA]",
+    "destino": "[REELS / TIKTOK / SHORTS / LINKEDIN]",
+    "numero_de_clips": "[CUÁNTOS QUIERES]",
+    "duracion_por_clip": "[30 / 45 / 60 SEGUNDOS]"
+  },
+  "entradas": {
+    "transcripcion_con_tiempos": "[PEGA AQUÍ LA TRANSCRIPCIÓN COMPLETA CON TIMECODES]"
+  },
+  "que_hace_bueno_un_fragmento": [
+    "Tiene principio y final por sí solo, sin necesitar lo anterior",
+    "Contiene una idea concreta, un dato, una historia corta o una opinión clara",
+    "Empieza con una frase que se sostiene sola como primera línea",
+    "No depende de algo que se ve en pantalla y no se entiende fuera de contexto"
+  ],
+  "procedimiento": [
+    "Recorrer la transcripción y marcar los candidatos con su timecode",
+    "Puntuar cada candidato del 1 al 5 y quedarse con los mejores",
+    "Ajustar entrada y salida para que empiece y acabe en frase limpia",
+    "Proponer para cada clip el recorte interno que sobra, si lo hay",
+    "Escribir el rótulo de apertura y el pie de publicación"
+  ],
+  "formato_salida": {
+    "por_clip": ["título", "entrada", "salida", "duración", "por qué funciona", "primera frase literal", "recortes internos", "rótulo de apertura", "texto de publicación"],
+    "cierre": "Calendario sugerido de publicación de los clips por orden de fuerza"
+  },
+  "restricciones": [
+    "Usar solo frases literales del material, sin reescribir lo dicho",
+    "Ningún clip puede empezar a mitad de una frase",
+    "No repetir la misma idea en dos clips distintos"
+  ],
+  "criterios_calidad": [
+    "Cada clip se entiende sin haber visto el vídeo largo",
+    "Los timecodes se pueden marcar directamente en el editor"
+  ]
+}

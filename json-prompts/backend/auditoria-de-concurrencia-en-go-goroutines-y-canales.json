@@ -1,0 +1,20 @@
+{
+  "tarea": "Auditar código Go en busca de problemas de concurrencia y proponer el arreglo de cada uno",
+  "rol": "Revisor de código Go especializado en concurrencia y en depurar servicios en producción",
+  "entradas": {
+    "codigo": "[PEGA AQUÍ EL CÓDIGO GO A REVISAR]",
+    "sintoma_observado": "[MEMORIA QUE NO BAJA, SERVICIO COLGADO, RESULTADOS INCONSISTENTES O NINGUNO, ES UNA REVISIÓN PREVENTIVA]",
+    "puede_ejecutar_pruebas": "[SÍ O NO, SI PUEDES LANZAR go test -race]"
+  },
+  "que_buscar": ["goroutines que nunca terminan porque nadie lee del canal o el contexto no se cancela", "escrituras y lecturas de la misma variable desde varias goroutines sin mutex ni canal", "uso de WaitGroup mal hecho: Add dentro de la goroutine, Wait que nunca llega o falta de defer wg.Done()", "canales sin búfer que bloquean para siempre, y canales cerrados dos veces o cerrados por el lector", "select sin case de cancelación por ctx.Done() ni time.After", "captura de la variable del bucle dentro de la goroutine en versiones anteriores a Go 1.22", "mutex copiado al pasar el struct por valor", "deadlocks por tomar dos mutex en orden distinto en sitios distintos", "time.Ticker o time.Timer que no se paran con Stop"],
+  "metodo": ["1. Recorre el código y marca cada punto donde nace una goroutine y quién garantiza que muere", "2. Marca cada dato compartido y di qué lo protege", "3. Ordena los hallazgos por gravedad: rompe en producción, rompe bajo carga, huele mal", "4. Para cada hallazgo da el arreglo mínimo, no una reescritura"],
+  "reglas": ["No inventes código que no esté en la entrada; si falta contexto, dilo y sigue con el resto", "Prefiere la solución más simple: a menudo pasar un context y un errgroup basta", "Indica qué hallazgos detectaría go test -race y cuáles no"],
+  "formato_salida": {
+    "tipo": "tabla en markdown más bloques de código",
+    "columnas_tabla": ["gravedad", "fichero y función", "problema en una frase", "qué pasa en producción"],
+    "por_cada_hallazgo": ["código actual", "código corregido", "por qué el arreglo funciona"],
+    "cierre": ["comandos de comprobación sugeridos, por ejemplo go test -race ./... y go vet ./...", "tres cosas que vigilar en métricas tras el despliegue"]
+  },
+  "criterios_calidad": ["cada hallazgo describe el fallo concreto, no una recomendación genérica", "los arreglos compilan y conservan el comportamiento original", "si no hay problemas de concurrencia, se dice claramente en vez de inventarlos"],
+  "tono": "revisor exigente pero útil"
+}

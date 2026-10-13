@@ -1,0 +1,43 @@
+{
+  "tarea": "Escribe un script de Python que lea todos los Excel y CSV de una carpeta, los limpie, los una en una sola tabla y exporte el resultado",
+  "contexto": {
+    "quien_lo_ejecuta": "Persona sin conocimientos de programación",
+    "carpeta_entrada": "[RUTA DE LA CARPETA CON LOS FICHEROS]",
+    "descripcion_ficheros": "[QUÉ CONTIENEN: EJ. VENTAS MENSUALES POR TIENDA]",
+    "columnas_esperadas": "[LISTA DE COLUMNAS: FECHA, CLIENTE, PRODUCTO, IMPORTE...]"
+  },
+  "reglas_de_limpieza": [
+    "Normaliza los nombres de columna a minúsculas, sin acentos ni espacios",
+    "Convierte las fechas a AAAA-MM-DD detectando el formato español DD/MM/AAAA",
+    "Convierte importes con coma decimal y punto de miles a número",
+    "Elimina filas totalmente vacías y filas duplicadas exactas",
+    "Añade una columna 'origen_fichero' con el nombre del fichero de procedencia"
+  ],
+  "requisitos_tecnicos": [
+    "Usa solo pandas y openpyxl",
+    "Recorre también las subcarpetas con pathlib",
+    "Envuelve la lectura de cada fichero en try/except y sigue con el resto si uno falla",
+    "Muestra un registro en pantalla: fichero, filas leídas, filas descartadas y motivo"
+  ],
+  "salidas_del_script": [
+    "[RUTA]/consolidado.csv con la tabla unida",
+    "[RUTA]/incidencias.csv con las filas descartadas y su motivo",
+    "Resumen final: total de ficheros, total de filas y fechas mínima y máxima"
+  ],
+  "formato_salida": {
+    "1_codigo": "Un único fichero limpiar_datos.py comentado en español",
+    "2_instalacion": "Comandos exactos para instalar las dependencias en Windows y en Mac",
+    "3_uso": "Cómo ejecutarlo paso a paso y qué debe verse en pantalla",
+    "4_pruebas": "Cómo probarlo con 2 ficheros antes de lanzarlo con todos"
+  },
+  "restricciones": [
+    "No modifiques nunca los ficheros originales",
+    "Nada de rutas fijas escondidas: agrupa la configuración al principio del script",
+    "Sin librerías de pago ni servicios en la nube"
+  ],
+  "criterios_calidad": [
+    "El script llega al final aunque un fichero esté corrupto",
+    "Toda fila que se pierde queda registrada en incidencias.csv",
+    "Puedo cambiar la carpeta editando una sola línea"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar el manual de trabajo del almacén de mi tienda online: preparación de pedidos, cierre del día y recepción de devoluciones, con puntos de control que eviten los errores más comunes",
+  "contexto": {
+    "negocio": "[NOMBRE Y QUÉ VENDES]",
+    "pedidos_dia": "[NÚMERO]",
+    "quien_prepara": "[TÚ SOLO / EQUIPO DE X PERSONAS]",
+    "donde_llegan_los_pedidos": "[PLATAFORMA O PANEL]",
+    "organizacion_almacen": "[ESTANTERÍAS, REFERENCIAS, SI HAY UBICACIONES O NO]",
+    "herramientas": "[IMPRESORA DE ETIQUETAS, BÁSCULA, LECTOR DE CÓDIGOS, NINGUNA]",
+    "hora_de_recogida_agencia": "[HORA LÍMITE]",
+    "errores_que_se_repiten": "[QUÉ FALLA HOY]"
+  },
+  "procedimientos_a_escribir": [
+    "A. Preparación de pedidos: descarga y agrupación, ruta de picking, verificación, embalaje, etiquetado, pesaje y confirmación del envío",
+    "B. Cierre del día: cuadre de pedidos preparados frente a etiquetas generadas, entrega a la agencia y firma del albarán de recogida",
+    "C. Recepción de devoluciones: identificación del pedido, revisión del estado, decisión entre revender, reacondicionar o descartar, reintegro en stock y aviso de reembolso al cliente",
+    "D. Reposición: aviso de stock mínimo y pedido a proveedor"
+  ],
+  "puntos_de_control": [
+    "Comprobar variante y cantidad antes de meter en la caja, no después",
+    "Foto del contenido antes de cerrar para pedidos de más de [IMPORTE] euros",
+    "Una etiqueta por caja y verificación de que el nombre coincide con el albarán",
+    "Pesar el paquete y comparar con el peso esperado: una diferencia grande indica error de picking",
+    "No dar por enviado en la plataforma hasta que la agencia recoge"
+  ],
+  "formato_salida": {
+    "bloque_1": "Manual por procedimiento, en pasos numerados y frases de una línea",
+    "bloque_2": "Checklist imprimible de preparación de pedido, con casillas",
+    "bloque_3": "Checklist de cierre del día",
+    "bloque_4": "Tabla de errores frecuentes: error, causa probable y control que lo evita",
+    "bloque_5": "Guion de formación de 20 minutos para alguien que empieza mañana"
+  },
+  "restricciones": [
+    "Solo pasos que se puedan hacer con las herramientas que he indicado",
+    "Nada de recomendar software nuevo salvo en un apartado final aparte llamado Si creces",
+    "Máximo 12 pasos por procedimiento"
+  ],
+  "criterios_calidad": [
+    "Una persona sin experiencia prepara su primer pedido siguiendo solo el checklist",
+    "Cada punto de control ataca un error concreto de los que yo he descrito"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "tarea": "Transformar notas o una transcripción de reunión en un acta breve y accionable.",
+  "contexto": {
+    "tipo_reunion": "[EQUIPO, CLIENTE, PROVEEDOR, SEGUIMIENTO SEMANAL]",
+    "fecha": "[FECHA]",
+    "asistentes": "[NOMBRES Y ROLES]",
+    "objetivo": "[PARA QUÉ SE CONVOCÓ]"
+  },
+  "entradas": {
+    "notas": "[PEGA AQUÍ TUS NOTAS O LA TRANSCRIPCIÓN, AUNQUE ESTÉN DESORDENADAS]",
+    "pendientes_anteriores": "[TAREAS QUE VENÍAN DE LA REUNIÓN PREVIA]"
+  },
+  "instrucciones": [
+    "Separa tres cosas distintas: información compartida, acuerdos y tareas.",
+    "Cada tarea debe tener verbo, responsable con nombre y fecha límite.",
+    "Si una tarea no tiene responsable o fecha en las notas, márcala como SIN ASIGNAR y ponla al principio.",
+    "Actualiza el estado de los pendientes anteriores: hecho, en curso o parado.",
+    "Recoge los desacuerdos sin suavizarlos y los temas aplazados a la próxima.",
+    "Redacta al final un mensaje de 5 líneas para enviar por chat con lo esencial."
+  ],
+  "restricciones": [
+    "No añadas tareas que nadie mencionó.",
+    "Nada de resumir opiniones personales ni valoraciones sobre las personas.",
+    "El acta no pasa de una página."
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "Datos de la reunión y objetivo",
+      "Acuerdos, numerados",
+      "Tabla de tareas: qué | quién | para cuándo | estado",
+      "Seguimiento de pendientes anteriores",
+      "Temas aplazados a la siguiente reunión",
+      "Mensaje corto para enviar al equipo"
+    ]
+  },
+  "criterios_calidad": [
+    "Toda tarea tiene dueño y fecha, o está marcada como SIN ASIGNAR.",
+    "El acta se lee en menos de dos minutos."
+  ],
+  "tono": "Neutro, sin adjetivos innecesarios"
+}

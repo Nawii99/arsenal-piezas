@@ -1,0 +1,37 @@
+{
+  "tarea": "Detectar clientes duplicados en una lista y proponer un plan de fusión campo a campo",
+  "contexto": {
+    "origen_lista": "[CRM, EXCEL DE VENTAS, LISTA DE EMAIL, RESERVAS...]",
+    "tipo_cliente": "[PARTICULARES O EMPRESAS]",
+    "identificador_oficial": "[EMAIL, TELÉFONO, NIF/CIF O NINGUNO]"
+  },
+  "entradas": {
+    "columnas": "[LISTA DE COLUMNAS TAL CUAL APARECEN EN TU FICHERO]",
+    "muestra": "[PEGA 40 FILAS, MEJOR SI INCLUYES CASOS QUE SOSPECHAS QUE ESTÁN REPETIDOS]"
+  },
+  "reglas_de_coincidencia": [
+    "Coincidencia segura: mismo email normalizado en minúsculas, o mismo teléfono en formato solo dígitos sin prefijo, o mismo NIF/CIF",
+    "Coincidencia probable: nombre y apellidos muy parecidos ignorando acentos, mayúsculas, abreviaturas y orden, más otra señal coincidente como código postal o dirección",
+    "Coincidencia dudosa: solo se parece el nombre; nunca fusionar sin revisión humana",
+    "Ojo con los falsos duplicados: padre e hijo con el mismo nombre, dos sedes de la misma empresa, o un email compartido por una familia"
+  ],
+  "criterio_de_fusion": [
+    "Ficha superviviente: la de fecha de alta más antigua, salvo que otra tenga más campos rellenos",
+    "Para cada campo gana el valor más completo y más reciente; si hay conflicto en un campo crítico, no decidas y márcalo",
+    "Suma histórica de compras y conserva las dos referencias originales para poder deshacer"
+  ],
+  "formato_salida": {
+    "tipo": "tabla csv",
+    "columnas": "grupo | nivel_confianza | id_ficha_superviviente | ids_a_fusionar | campos_en_conflicto | accion_recomendada",
+    "extra": "Debajo de la tabla, una lista corta de casos que debes revisar tú a mano y por qué"
+  },
+  "restricciones": [
+    "No fusiones nada de nivel dudoso: solo proponerlo",
+    "No inventes datos que no estén en la muestra",
+    "Explica en una línea, en cada grupo, por qué crees que son la misma persona"
+  ],
+  "criterios_calidad": [
+    "Todo grupo lleva nivel de confianza y motivo",
+    "Se avisa expresamente de los falsos duplicados detectados"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Revisar la cartera de oportunidades B2B, depurarla y elaborar una previsión de cierre realista",
+  "contexto": {
+    "periodo": "[MES O TRIMESTRE QUE ESTÁS PREVIENDO]",
+    "objetivo": "[IMPORTE QUE NECESITAS CERRAR]",
+    "ciclo_medio_de_venta": "[SEMANAS QUE SUELE TARDAR UNA VENTA]",
+    "criterio_de_fases": "[CÓMO DEFINES TUS FASES O DÉJALO EN BLANCO PARA QUE LAS PROPONGA]"
+  },
+  "entradas": {
+    "operaciones": "[PEGA UNA LÍNEA POR OPERACIÓN: CLIENTE, IMPORTE, FASE, FECHA PREVISTA, ÚLTIMO CONTACTO, SIGUIENTE PASO ACORDADO]"
+  },
+  "pasos": [
+    "Comprueba en cada operación si hay siguiente paso con fecha y si el cliente ha hecho algo por su parte",
+    "Marca como inflada toda operación sin siguiente paso, sin contacto en las últimas 3 semanas o con fecha de cierre imposible según el ciclo medio",
+    "Asigna probabilidad justificada por hechos, no por sensaciones",
+    "Calcula tres escenarios: comprometido, probable y optimista",
+    "Propón las 5 acciones de mayor impacto para esta semana y di qué operaciones hay que dejar morir"
+  ],
+  "restricciones": [
+    "No subir la probabilidad por entusiasmo del vendedor: solo por hechos verificables",
+    "Toda operación sin siguiente paso con fecha baja automáticamente de probabilidad",
+    "Nada de recomendaciones genéricas tipo 'hacer más seguimiento'"
+  ],
+  "formato_salida": {
+    "tabla": "Cliente | Importe | Fase | Probabilidad | Motivo | Riesgo principal | Acción y fecha",
+    "escenarios": "Importe comprometido, probable y optimista con la diferencia respecto al objetivo",
+    "plan_semana": "5 acciones ordenadas por impacto, cada una con cliente y día",
+    "limpieza": "Operaciones a cerrar como perdidas y por qué"
+  },
+  "criterios_calidad": [
+    "Cada probabilidad se justifica con un hecho concreto de la operación",
+    "El escenario comprometido solo incluye operaciones con siguiente paso confirmado por el cliente",
+    "El plan de la semana cabe en la agenda de una persona"
+  ],
+  "tono": "Exigente, honesto y sin autoengaño"
+}

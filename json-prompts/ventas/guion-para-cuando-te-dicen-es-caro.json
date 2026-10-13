@@ -1,0 +1,35 @@
+{
+  "tarea": "Preparar un guion de respuestas a objeciones de precio para una conversación de venta concreta",
+  "contexto": {
+    "servicio": "[QUÉ VENDES Y EN QUÉ SE DIFERENCIA]",
+    "precio": "[PRECIO QUE VAS A DAR]",
+    "cliente": "[TIPO DE CLIENTE Y SU SITUACIÓN]",
+    "alternativas_del_cliente": "[COMPETIDORES, HACERLO ÉL MISMO O NO HACER NADA]"
+  },
+  "entradas": {
+    "objeciones_frecuentes": "[LAS FRASES EXACTAS QUE TE DICEN: ES CARO, ME LO PIENSO, TENGO OTRO PRESUPUESTO MÁS BARATO...]",
+    "lo_que_puedes_ceder": "[FORMA DE PAGO, PLAZO, ALCANCE REDUCIDO]",
+    "lo_que_no_cedes": "[LÍMITES INNEGOCIABLES]",
+    "pruebas": "[CASOS, RESULTADOS, GARANTÍAS O REFERENCIAS QUE PUEDES ENSEÑAR]"
+  },
+  "reglas": [
+    "Antes de responder, siempre una pregunta para saber si es falta de presupuesto, falta de valor percibido o falta de urgencia",
+    "Nunca bajar el precio sin quitar alcance o pedir algo a cambio",
+    "No discutir con el cliente ni desprestigiar a la competencia",
+    "Usar cifras del propio cliente para comparar coste y beneficio",
+    "Aceptar el no con elegancia y dejar la puerta abierta con un seguimiento"
+  ],
+  "formato_salida": {
+    "tabla_objeciones": "Objeción literal, qué significa de verdad, pregunta a hacer, respuesta de 2 o 3 frases",
+    "respuestas_por_canal": "Versión hablada y versión escrita para email o WhatsApp de cada objeción",
+    "escalera_de_concesiones": "Qué ofrecer primero, segundo y tercero, y qué pedir a cambio en cada paso",
+    "frases_prohibidas": "Lista de cosas que no debes decir y por qué",
+    "cierre": "Tres formas de cerrar con siguiente paso y fecha"
+  },
+  "criterios_calidad": [
+    "Cada respuesta cabe en menos de 40 palabras y suena natural al leerla en alto",
+    "Ninguna respuesta empieza rebajando el precio",
+    "El guion distingue al cliente que no puede pagar del que no ve el valor"
+  ],
+  "tono": "Conversacional, seguro y sin agresividad, español de España"
+}

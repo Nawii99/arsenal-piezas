@@ -1,0 +1,35 @@
+{
+  "tarea": "Define el protocolo de traspaso entre dos agentes: el formato exacto del mensaje, que es obligatorio y como se valida",
+  "contexto": {
+    "agente_origen": "[NOMBRE Y QUE HACE]",
+    "agente_destino": "[NOMBRE Y QUE HACE]",
+    "informacion_que_viaja": "[EJ: DATOS DEL CLIENTE, MEDIDAS, PRESUPUESTO PROVISIONAL]",
+    "datos_sensibles": "[QUE NO DEBE SALIR NUNCA, EJ: DNI, IBAN]"
+  },
+  "debe_definir": [
+    "Campos obligatorios del traspaso y tipo de cada uno",
+    "Campos opcionales y que hacer si vienen vacios",
+    "Un campo de nivel de confianza del agente origen sobre su propio trabajo",
+    "Un campo de supuestos: lo que el agente ha dado por hecho sin comprobar",
+    "Un campo de pendientes: lo que el destino tiene que resolver si o si",
+    "Que hace el destino si el traspaso llega incompleto: rechazarlo y pedirlo de nuevo"
+  ],
+  "errores_a_evitar": [
+    "Pasar la conversacion entera en vez del resultado limpio",
+    "Mezclar hechos comprobados con suposiciones sin distinguirlos",
+    "Reenviar datos personales que el destino no necesita para su trabajo",
+    "Dar por bueno un traspaso sin comprobar que trae todos los campos"
+  ],
+  "formato_salida": {
+    "parte_1": "esquema del mensaje de traspaso en JSON con todos los campos y un comentario aparte de que significa cada uno",
+    "parte_2": "ejemplo relleno con un caso real de mi negocio",
+    "parte_3": "ejemplo de traspaso mal hecho y por que se rechaza",
+    "parte_4": "lista de comprobacion de 6 puntos que el agente destino aplica antes de empezar"
+  },
+  "criterios_calidad": [
+    "El agente destino puede trabajar solo con el traspaso, sin ver la conversacion anterior",
+    "Se distingue a simple vista lo comprobado de lo supuesto",
+    "Ningun campo admite texto libre sin limite"
+  ],
+  "tono": "tecnico pero explicado en llano"
+}

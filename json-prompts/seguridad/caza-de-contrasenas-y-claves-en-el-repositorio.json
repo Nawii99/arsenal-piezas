@@ -1,0 +1,35 @@
+{
+  "tarea": "Detectar credenciales expuestas en el código y entregar un plan de rotación y limpieza",
+  "contexto": {
+    "repositorio": "[NOMBRE Y SI ES PÚBLICO O PRIVADO]",
+    "servicios_conectados": "[EJ: STRIPE, AWS, GMAIL, BASE DE DATOS, OPENAI]",
+    "quien_ha_tenido_acceso": "[EJ: 2 EMPLEADOS Y UN FREELANCE QUE YA NO TRABAJA CON NOSOTROS]"
+  },
+  "entradas": {
+    "material": "[PEGA EL CÓDIGO, LOS FICHEROS DE CONFIGURACIÓN O LA SALIDA DE gitleaks / trufflehog]",
+    "ficheros_ignorados": "[PEGA TU .gitignore SI LO TIENES]"
+  },
+  "procedimiento": [
+    "Localiza cadenas con pinta de credencial: claves de API, tokens, contraseñas, cadenas de conexión, claves privadas y certificados",
+    "Clasifica cada hallazgo como credencial real, ejemplo de documentación o falso positivo, y justifica la decisión",
+    "Para las reales, identifica el servicio y qué podría hacer alguien con esa clave",
+    "Ordena por daño potencial: dinero, acceso a datos de clientes, acceso a servidores",
+    "Indica si el secreto pudo quedar en el historial de git aunque ya no esté en el código actual"
+  ],
+  "restricciones": [
+    "No repitas la credencial completa en la respuesta: muestra solo los 4 primeros caracteres",
+    "No propongas reescribir el historial de git sin avisar de que rompe los clones existentes",
+    "Si no puedes determinar el servicio, dilo en vez de adivinar"
+  ],
+  "formato_salida": {
+    "tabla": ["fichero y línea", "tipo de secreto", "servicio", "daño si se filtra", "real o falso positivo"],
+    "plan_de_rotacion": "Lista numerada por servicio con: revocar la clave vieja, generar la nueva, dónde ponerla como variable de entorno, qué desplegar y cómo comprobar que sigue funcionando",
+    "prevencion": "Qué añadir al .gitignore, qué fichero .env.example crear y qué comprobación automática poner antes de cada commit"
+  },
+  "criterios_calidad": [
+    "Cada secreto real tiene su paso de revocación concreto en el panel del servicio",
+    "El plan se puede seguir sin saber programar",
+    "Se avisa explícitamente de qué se rompe si se rota una clave en horario de trabajo"
+  ],
+  "tono": "de urgencia tranquila: claro, ordenado y sin alarmismo"
+}

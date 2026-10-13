@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar la tabla o listado de [QUÉ LISTA: PEDIDOS / CLIENTES / FACTURAS] de [NOMBRE DEL PRODUCTO]",
+  "contexto": {
+    "quien_la_usa": "[PERFIL Y CADA CUÁNTO ENTRA]",
+    "tarea_principal": "[QUÉ VIENE A HACER: BUSCAR UNO CONCRETO / REVISAR TODO / EXPORTAR]",
+    "volumen": "[CUÁNTOS REGISTROS SUELE HABER]",
+    "dispositivo": "[ESCRITORIO / TAMBIÉN MÓVIL]"
+  },
+  "entradas": {
+    "datos_disponibles": "[LISTA TODOS LOS CAMPOS QUE TIENES DE CADA REGISTRO]",
+    "acciones": "[QUÉ PUEDE HACER CON UN REGISTRO: VER, EDITAR, DUPLICAR, BORRAR]"
+  },
+  "pasos": [
+    "Elegir un máximo de 6 columnas visibles y justificar cada una según la tarea principal",
+    "Definir el orden por defecto y qué columnas se pueden ordenar",
+    "Definir buscador, filtros rápidos y filtros avanzados, con los valores concretos de cada uno",
+    "Definir la alineación: texto a la izquierda, números y dinero a la derecha con decimales fijos",
+    "Definir etiquetas de estado con color y texto, nunca solo color",
+    "Definir acciones por fila, selección múltiple y acciones en lote",
+    "Definir paginado o carga progresiva y qué se ve en móvil convirtiendo cada fila en tarjeta"
+  ],
+  "restricciones": [
+    "Nada de barras horizontales para leer la información básica",
+    "Las acciones destructivas piden confirmación y nunca están pegadas a las habituales",
+    "Las fechas en formato día/mes/año y los importes en euros con separador de miles"
+  ],
+  "formato_salida": {
+    "tipo": "especificación por bloques",
+    "secciones": ["Columnas elegidas y descartadas con motivo", "Buscador y filtros", "Ordenación y paginado", "Acciones por fila y en lote", "Versión móvil", "Estado vacío y estado de carga"]
+  },
+  "criterios_calidad": [
+    "Se puede encontrar un registro concreto en menos de tres acciones",
+    "Cada columna visible tiene un motivo escrito",
+    "La versión móvil no obliga a hacer zoom"
+  ],
+  "tono": "práctico, orientado a la tarea del usuario"
+}

@@ -1,0 +1,50 @@
+{
+  "tarea": "Diagnosticar en qué punto se pierde la venta y proponer las dos acciones de mayor efecto",
+  "contexto": {
+    "negocio": "[TU NEGOCIO], vende [QUÉ] a [A QUIÉN]",
+    "forma_de_vender": "[TIENDA ONLINE / PRESUPUESTOS / CITAS / MOSTRADOR]",
+    "periodo_analizado": "[MES O TRIMESTRE]",
+    "nivel": "la explicación debe entenderse sin saber de analítica; nada de siglas sin traducir"
+  },
+  "entradas": {
+    "numeros": "[CUÁNTA GENTE LLEGÓ, CUÁNTOS PREGUNTARON, CUÁNTOS PIDIERON PRECIO, CUÁNTOS COMPRARON, IMPORTE MEDIO]",
+    "si_faltan_datos": "[DI QUÉ NO SABES; SE ESTIMARÁ Y SE MARCARÁ COMO ESTIMACIÓN]",
+    "motivos_de_no_compra": "[LO QUE TE DIJERON LOS QUE NO COMPRARON]",
+    "esfuerzo_dedicado": "[HORAS O DINERO QUE PUSISTE EN CAPTAR]"
+  },
+  "pasos": [
+    "1. Dibuja el recorrido real en 5 pasos con los nombres de tu negocio, no con jerga de marketing",
+    "2. Calcula el porcentaje que pasa de cada paso al siguiente y muestra la cuenta",
+    "3. Marca el escalón con mayor caída y comprueba si esa caída es normal o anómala para este tipo de venta",
+    "4. Cruza la caída con [MOTIVOS_DE_NO_COMPRA] y separa problema de atracción, de confianza, de precio o de proceso",
+    "5. Simula qué pasaría si ese escalón mejora unos puntos, en euros, dejando claro que es una simulación",
+    "6. Propón exactamente dos acciones para ese escalón, con qué se hace, cuánto cuesta y en cuántos días se ve el efecto",
+    "7. Indica los tres números que hay que apuntar cada semana a partir de ahora y dónde apuntarlos"
+  ],
+  "restricciones": [
+    "Prohibido inventar datos: lo estimado se marca como estimado",
+    "Prohibido prometer resultados o porcentajes de mejora garantizados",
+    "Máximo dos acciones propuestas, priorizadas",
+    "Cada porcentaje se acompaña de la división que lo produce",
+    "Todo en euros y en lenguaje llano"
+  ],
+  "errores_tipicos": [
+    "Echar más dinero a publicidad cuando la fuga está en el presupuesto sin seguimiento",
+    "Mirar solo visitas y no respuestas ni cierres",
+    "Comparar meses con temporadas distintas sin decirlo",
+    "Cambiar cinco cosas a la vez y no saber cuál funcionó"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla del recorrido: paso, cuántos, porcentaje que pasa al siguiente",
+    "bloque_2": "Frase de diagnóstico: el dinero se pierde en [PASO] porque [MOTIVO]",
+    "bloque_3": "Simulación en euros con los supuestos escritos",
+    "bloque_4": "Las dos acciones con coste, tiempo y responsable",
+    "bloque_5": "Plantilla semanal de tres números para rellenar"
+  },
+  "criterios_calidad": [
+    "Cualquier persona sin formación técnica entiende el diagnóstico a la primera",
+    "Todas las cuentas se pueden repetir a mano con los datos aportados",
+    "Las estimaciones están marcadas y separadas de los datos reales",
+    "Las dos acciones se pueden empezar esta semana"
+  ]
+}

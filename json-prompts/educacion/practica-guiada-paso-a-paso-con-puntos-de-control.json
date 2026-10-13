@@ -1,0 +1,32 @@
+{
+  "tarea": "Convertir un procedimiento en una práctica guiada paso a paso con puntos de control y resolución de problemas",
+  "contexto": {
+    "procedimiento": "[QUÉ TIENEN QUE APRENDER A HACER]",
+    "herramientas_o_material": "[PROGRAMA, MÁQUINA O MATERIAL QUE USAN]",
+    "nivel_de_partida": "[QUÉ SABEN YA HACER]",
+    "tiempo_disponible": "[MINUTOS]",
+    "riesgos_o_seguridad": "[NORMAS DE SEGURIDAD O AVISOS, SI APLICA]"
+  },
+  "instrucciones": [
+    "Divide la práctica en fases y cada fase en pasos numerados, con una sola acción por paso",
+    "Empieza con una lista de comprobación previa: qué debe tener abierto, encendido o preparado antes de empezar",
+    "Cada 3 o 4 pasos añade un punto de control con la pregunta '¿qué deberías estar viendo ahora?' y la respuesta correcta",
+    "Para cada punto de control, añade dos síntomas de que va mal y cómo volver al buen camino",
+    "Marca los 2 o 3 pasos donde se juega el resultado y explica por qué importan",
+    "Termina con un criterio de 'práctica terminada': cómo sabe el alumno que lo ha conseguido"
+  ],
+  "restricciones": [
+    "Instrucciones en imperativo y sin jerga sin explicar",
+    "Nada de suponer conocimientos que no estén en el nivel de partida",
+    "Los tiempos por fase deben sumar el tiempo disponible",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "secciones": ["objetivo en una frase", "comprobación previa", "fases con pasos numerados", "puntos de control", "tabla de problemas y soluciones", "criterio de práctica terminada", "reto extra para los que acaben antes"]
+  },
+  "criterios_calidad": [
+    "Un alumno podría completarla sin preguntar nada al profesor",
+    "Cada punto de control se puede verificar mirando algo concreto",
+    "El reto extra evita que los rápidos se aburran"
+  ]
+}

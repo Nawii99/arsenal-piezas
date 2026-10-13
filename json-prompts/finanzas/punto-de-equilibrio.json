@@ -1,0 +1,53 @@
+{
+  "tarea": "Calcular el punto de equilibrio mensual del negocio y el nivel de ventas necesario para pagarme el sueldo que quiero",
+  "contexto": {
+    "negocio": "[TIPO DE NEGOCIO Y QUÉ VENDE]",
+    "situacion": "[YA ABIERTO / A PUNTO DE ABRIR / VALORANDO UNA LÍNEA NUEVA]",
+    "dias_de_actividad": "[DÍAS QUE ABRES O TRABAJAS AL MES]"
+  },
+  "entradas": {
+    "gastos_fijos": "[ALQUILER, SUMINISTROS, CUOTA DE AUTÓNOMOS, NÓMINAS, SEGUROS, SOFTWARE, GESTORÍA: IMPORTE MENSUAL DE CADA UNO]",
+    "sueldo_deseado": "[LO QUE QUIERES SACAR LIMPIO AL MES]",
+    "productos_o_servicios": "[LISTA: NOMBRE, PRECIO DE VENTA SIN IVA, COSTE DIRECTO POR UNIDAD, PESO EN LAS VENTAS EN %]",
+    "comisiones": "[PORCENTAJE DE PASARELA, PLATAFORMA O MARKETPLACE]",
+    "inversion_en_captacion": "[GASTO MENSUAL EN ANUNCIOS U OTRAS ACCIONES]",
+    "ticket_medio": "[SI LO SABES, IMPORTE MEDIO POR VENTA]"
+  },
+  "procedimiento": [
+    "1. Suma los gastos fijos mensuales y deja el sueldo aparte, no lo mezcles todavía",
+    "2. Por producto: margen de contribución = precio sin IVA menos coste directo menos comisiones",
+    "3. Si hay varios productos, calcula el margen de contribución medio ponderado por el peso de cada uno en las ventas",
+    "4. Punto de equilibrio en unidades = gastos fijos dividido entre el margen de contribución medio; redondea siempre hacia arriba",
+    "5. Punto de equilibrio en euros = unidades por el precio medio; conviértelo a ventas por día abierto y a clientes por día",
+    "6. Repite el cálculo sumando el sueldo deseado a los gastos fijos y llama a ese resultado el objetivo de vida",
+    "7. Contrasta con la realidad: compara ambos números con las ventas reales de los últimos tres meses y con la capacidad máxima que puedes atender",
+    "8. Haz dos sensibilidades: precio un 10% arriba y coste directo un 10% arriba, y muestra cómo se mueve el punto de equilibrio",
+    "9. Señala las dos palancas que más mueven el número en este negocio concreto y qué hacer con ellas"
+  ],
+  "restricciones": [
+    "Trabaja siempre sin IVA en precios y costes, y dilo explícitamente",
+    "El sueldo del dueño se trata como objetivo, no como gasto fijo, para separar los dos números",
+    "No des por buena una capacidad superior a la que el negocio puede atender físicamente",
+    "Si un dato falta, usa un rango y márcalo como supuesto"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Meter el coste de la mercancía entre los gastos fijos",
+    "Olvidar la cuota de autónomos, la gestoría y el seguro",
+    "Calcular con el precio con IVA incluido",
+    "Dar un número que exige más clientes al día de los que caben en el local o en la agenda"
+  ],
+  "formato_salida": {
+    "1_numeros": "Tres cifras grandes: ventas al mes para no perder, ventas al mes para el sueldo, clientes por día abierto",
+    "2_desglose": "Tabla de gastos fijos y tabla de margen por producto",
+    "3_realidad": "Comparación con las ventas actuales y con la capacidad máxima, con veredicto en una línea",
+    "4_sensibilidad": "Tabla corta con los dos escenarios",
+    "5_palancas": "Dos acciones concretas con el efecto estimado en el número",
+    "estilo": "Español llano, con la cuenta escrita paso a paso"
+  },
+  "criterios_calidad": [
+    "Las operaciones están escritas y se pueden rehacer a mano",
+    "El resultado se expresa también por día y por cliente",
+    "El veredicto dice claramente si el negocio es viable con la capacidad que tiene",
+    "No aparece ningún número sin origen"
+  ]
+}

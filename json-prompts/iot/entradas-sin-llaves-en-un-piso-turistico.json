@@ -1,0 +1,46 @@
+{
+  "tarea": "Diseñar el acceso autonomo de un alojamiento con cerradura inteligente, incluyendo plan de fallos y mensajes al huesped",
+  "contexto": {
+    "alojamiento": "[NOMBRE, CIUDAD, PLANTA, TIPO DE PUERTA Y CERRADURA ACTUAL]",
+    "accesos": "[PORTAL, PUERTA DE VIVIENDA, TRASTERO, GARAJE]",
+    "canal_de_reservas": "[AIRBNB / BOOKING / WEB PROPIA / VARIOS]",
+    "rotacion": "[ENTRADAS POR MES] y horario de entrada y salida",
+    "quien_esta_cerca": "[PERSONA DE CONTACTO EN LA ZONA Y TIEMPO DE RESPUESTA]",
+    "cobertura": "[HAY WIFI EN EL RELLANO O SOLO DENTRO?]"
+  },
+  "metodo": [
+    "1. Elige tipo de cerradura segun la puerta: bombin motorizado sobre cilindro europeo, cerradura completa o caja de llaves; indica cual encaja y por que",
+    "2. Exige apertura por codigo que funcione sin internet: la conexion sirve para gestionar, no para abrir",
+    "3. Define codigos con validez desde la hora de entrada menos [MINUTOS DE MARGEN] hasta la hora de salida, uno por reserva y uno permanente para limpieza",
+    "4. Define el plan B en cascada: codigo maestro, llave fisica en caja de seguridad, persona de contacto y cerrajero de guardia",
+    "5. Fija avisos: bateria por debajo del [PORCENTAJE DE BATERIA] por ciento, puerta sin cerrar tras [MINUTOS] minutos, cerradura sin conexion",
+    "6. Escribe los mensajes al huesped: uno el dia antes con instrucciones, uno el dia de entrada con el codigo y uno de salida",
+    "7. Añade la rutina de la persona de limpieza: comprobar cierre, tapa de pilas y anotar incidencias"
+  ],
+  "restricciones": [
+    "Nunca dependas de la nube para que la puerta se abra",
+    "Nada de codigos reutilizados entre huespedes ni de fechas de nacimiento",
+    "Si la comunidad de vecinos debe autorizar cambios en el portal, indicalo antes de comprar",
+    "Registro de entradas guardado solo el tiempo necesario y sin datos personales de mas"
+  ],
+  "errores_frecuentes": [
+    "Pilas gastadas en plena madrugada sin aviso previo",
+    "Cerradura instalada en puerta acorazada con bombin que no admite el motor",
+    "Codigo enviado al huesped equivocado por copiar y pegar",
+    "Instrucciones sin foto: el huesped no encuentra el portal ni sabe girar el pomo",
+    "Olvidar el acceso del personal de limpieza y acabar dando el codigo del huesped"
+  ],
+  "formato_salida": {
+    "solucion_tecnica": "Cerradura y accesorios propuestos, con motivo y precio aproximado",
+    "tabla_codigos": "Tipo de codigo | Quien lo usa | Validez | Quien lo genera | Donde se guarda",
+    "plan_de_fallos": "Fallo | Sintoma para el huesped | Que hace el huesped | Que hace el anfitrion",
+    "mensajes": "Textos listos para copiar, en español y en ingles, cortos y con indicaciones fisicas",
+    "mantenimiento": "Tareas periodicas con frecuencia y responsable"
+  },
+  "criterios_calidad": [
+    "Un huesped a las tres de la mañana sin datos moviles puede entrar",
+    "Ningun codigo sobrevive a la reserva para la que se creo",
+    "Los mensajes se entienden sin saber que es una cerradura inteligente",
+    "Existe un responsable con nombre para cada tipo de incidencia"
+  ]
+}

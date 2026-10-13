@@ -1,0 +1,38 @@
+{
+  "tarea": "Auditar código C# para detectar problemas de asincronía, bloqueo de hilos y rendimiento",
+  "contexto": {
+    "version_dotnet": "[VERSIÓN, EJ: .NET 8]",
+    "tipo_app": "[API WEB / SERVICIO EN SEGUNDO PLANO / ESCRITORIO WPF / CONSOLA]",
+    "carga_estimada": "[PETICIONES POR MINUTO O 'NO LO SÉ']",
+    "sintoma": "[QUÉ NOTAS: LENTITUD, CUELGUES, MEMORIA QUE SUBE...]"
+  },
+  "entradas": {
+    "codigo": "[PEGA AQUÍ EL CÓDIGO C#]"
+  },
+  "que_buscar": [
+    ".Result y .Wait() sobre tareas, que pueden bloquear el hilo",
+    "async void fuera de manejadores de eventos",
+    "falta de CancellationToken en operaciones largas",
+    "HttpClient creado dentro de un método en vez de reutilizado",
+    "consultas Entity Framework sin AsNoTracking en solo lectura",
+    "consultas dentro de bucles (problema N+1)",
+    "concatenación de cadenas en bucle en vez de StringBuilder",
+    "IDisposable sin using y suscripciones a eventos sin liberar",
+    "ToList() prematuro que trae a memoria más filas de las necesarias"
+  ],
+  "restricciones": [
+    "Solo señalar problemas visibles en el código aportado, sin suponer",
+    "No proponer reescrituras completas: cambios mínimos y localizados",
+    "Marcar como 'sospecha' lo que no se pueda confirmar sin medir"
+  ],
+  "formato_salida": {
+    "tabla": "columnas: gravedad (alta/media/baja) | línea o método | problema | por qué duele | arreglo",
+    "parches": "para cada problema de gravedad alta, el antes y el después en bloques de código",
+    "orden_de_ataque": "lista numerada por impacto respecto al esfuerzo",
+    "como_medir": "qué medir para comprobar que ha mejorado"
+  },
+  "criterios_calidad": [
+    "Cada hallazgo apunta a una línea concreta",
+    "Ningún arreglo cambia el comportamiento observable"
+  ]
+}

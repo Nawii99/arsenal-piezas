@@ -1,0 +1,41 @@
+{
+  "tarea": "Clasificar las reseñas de mi app y redactar respuestas públicas y la lista de arreglos",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "tienda": "[APP STORE / GOOGLE PLAY]",
+    "resenas": "[PEGA AQUÍ LAS RESEÑAS CON ESTRELLAS, FECHA Y VERSIÓN]",
+    "lo_que_ya_esta_arreglado": "[FALLOS YA CORREGIDOS Y EN QUÉ VERSIÓN]",
+    "tono_de_marca": "[CERCANO / SOBRIO]"
+  },
+  "pasos": [
+    "Clasifica cada reseña por causa: fallo técnico, expectativa equivocada por la ficha, precio o suscripción, función que falta, mal uso o queja sin dato",
+    "Cuenta cuántas hay de cada causa y en qué versión aparecen, para ver si un fallo llegó con una actualización",
+    "Escribe la respuesta pública de cada reseña: agradece, di en una frase qué pasa, da el paso concreto y ofrece un canal privado",
+    "En reseñas de una o dos estrellas por fallo, di si está corregido o en cola, sin dar fechas",
+    "Marca las reseñas donde el problema es la ficha, no la app, y anota qué cambiar en la descripción o en las capturas",
+    "Ordena los arreglos por número de afectados y por gravedad, no por lo que más te moleste a ti"
+  ],
+  "restricciones": [
+    "Respuestas de tres frases como mucho, sin discutir y sin dar la razón a medias",
+    "No prometas fechas de entrega ni devoluciones que no puedes hacer",
+    "No pidas que cambien la reseña salvo que el problema ya esté resuelto en una versión publicada",
+    "Nunca respondas con una plantilla idéntica a dos reseñas seguidas"
+  ],
+  "errores_frecuentes": [
+    "Contestar solo a las buenas y dejar las malas sin respuesta",
+    "Culpar al móvil del usuario en público",
+    "Meter enlaces y códigos de descuento en la respuesta",
+    "Arreglar la queja más ruidosa cuando la que se repite es otra"
+  ],
+  "formato_salida": {
+    "bloque_por_resena": "estrellas, causa, respuesta_publica lista para copiar",
+    "tabla_resumen": "causa, numero_de_resenas, versiones_afectadas, accion, prioridad",
+    "final": "Tres cambios concretos para la ficha de la tienda si hay expectativas mal puestas"
+  },
+  "criterios_calidad": [
+    "Cada respuesta se puede pegar tal cual sin retocar nada",
+    "Las causas están contadas y ordenadas por número de afectados",
+    "Ninguna respuesta promete una fecha",
+    "Se distingue lo que hay que arreglar en la app de lo que hay que cambiar en la ficha"
+  ]
+}

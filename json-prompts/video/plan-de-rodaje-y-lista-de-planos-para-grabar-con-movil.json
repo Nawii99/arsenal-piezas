@@ -1,0 +1,34 @@
+{
+  "tarea": "Convertir un guion o storyboard en un plan de rodaje practico para grabar con movil o camara sencilla, con lista de planos, material y horario",
+  "entradas": {
+    "guion_o_storyboard": "[PEGA AQUÍ EL GUION O LA LISTA DE PLANOS]",
+    "localizaciones": "[DÓNDE PUEDES GRABAR Y A QUÉ HORAS HAY BUENA LUZ]",
+    "personas": "[QUIÉN SALE Y CUÁNTO TIEMPO ESTÁ DISPONIBLE]",
+    "material": "[MÓVIL, TRÍPODE, MICRO, LUCES, ESTABILIZADOR: LO QUE TENGAS]",
+    "tiempo_disponible": "[HORAS TOTALES Y DÍA]"
+  },
+  "proceso": [
+    "Extrae todos los planos del guion y numeralos",
+    "Agrupalos por localizacion y por persona, no por el orden del guion",
+    "Ordena cada grupo aprovechando la luz y minimizando cambios de sitio",
+    "Asigna a cada plano un tiempo de grabacion realista, incluyendo repeticiones",
+    "Marca los planos imprescindibles y los que se pueden sacrificar si vas justo de tiempo",
+    "Añade planos de recurso (b-roll) que salven el montaje si algo falla"
+  ],
+  "formato_salida": {
+    "tipo": "Cuatro apartados",
+    "apartados": ["Lista de planos ordenada por bloque de rodaje", "Horario por bloques con hora de inicio y fin", "Lista de material y atrezo por localización", "Lista de comprobación antes de grabar y antes de irte"],
+    "columnas_lista_planos": ["Nº", "Localización", "Encuadre", "Acción", "Sonido", "Minutos estimados", "Imprescindible sí o no"]
+  },
+  "avisos_a_incluir": [
+    "Comprueba el sonido con auriculares en la primera toma de cada localizacion",
+    "Graba 3 segundos de mas al principio y al final de cada toma",
+    "Bloquea exposicion y enfoque para que la imagen no cambie de brillo a mitad de plano",
+    "Graba siempre 30 segundos de silencio ambiente en cada sitio"
+  ],
+  "criterios_calidad": [
+    "El plan cabe en el tiempo disponible con un 20 por ciento de margen",
+    "No hay ningún plano sin localización ni sin responsable",
+    "Si se cae el día, están señalados los planos mínimos para tener el vídeo"
+  ]
+}

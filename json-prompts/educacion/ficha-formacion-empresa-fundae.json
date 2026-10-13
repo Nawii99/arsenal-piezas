@@ -1,0 +1,54 @@
+{
+  "tarea": "Redactar la ficha completa de una accion formativa para presentarla a una empresa cliente, con objetivos, contenidos, evaluacion y documentacion",
+  "contexto": {
+    "empresa_cliente": "[NOMBRE Y SECTOR]",
+    "perfil_de_los_asistentes": "[PUESTOS Y NIVEL PREVIO]",
+    "numero_de_asistentes": "[EJ: 12]",
+    "modalidad": "[PRESENCIAL / AULA VIRTUAL / TELEFORMACION / MIXTA]",
+    "horas_totales": "[EJ: 20]",
+    "quiere_bonificar": "[SI / NO / NO LO SE]"
+  },
+  "entradas": {
+    "necesidad_declarada_por_la_empresa": "[LO QUE TE HAN PEDIDO CON SUS PALABRAS]",
+    "problema_real_detectado": "[LO QUE HAS VISTO TU AL PREGUNTAR]",
+    "contenidos_que_domino": "[LO QUE PUEDO IMPARTIR CON SOLVENCIA]"
+  },
+  "proceso": [
+    "1. Traduce la necesidad de la empresa a resultados de trabajo observables: que hara distinto el equipo el lunes siguiente",
+    "2. Escribe los objetivos con verbo de accion y condicion de logro, uno general y entre tres y cinco especificos",
+    "3. Estructura los contenidos en modulos con reparto de horas y di en cada uno cuanto es practica y cuanto teoria",
+    "4. Define el metodo: que hace el formador, que hace el alumno y con que material, modulo a modulo",
+    "5. Define la evaluacion en dos niveles: prueba de aprovechamiento del alumno y evaluacion de la satisfaccion del grupo",
+    "6. Lista los medios y requisitos tecnicos que debe poner la empresa y los que pones tu",
+    "7. Anade el apartado de documentacion y control: hojas de firma o registro de conexion, certificado de asistencia y datos que necesitaras si van a bonificar",
+    "8. Cierra con calendario propuesto y condiciones de la propuesta"
+  ],
+  "restricciones": [
+    "No afirmes que la accion esta aprobada o bonificada: describe los requisitos y remite a la gestoria o entidad organizadora para tramitarla",
+    "No inventes normativa, articulos ni importes de bonificacion",
+    "Objetivos redactados en tercera persona y en terminos evaluables",
+    "Lenguaje profesional pero sin jerga pedagogica vacia"
+  ],
+  "errores_a_evitar": [
+    "Objetivos tipo conocer o sensibilizarse, que no se pueden evaluar",
+    "Prometer horas que no cuadran con los contenidos",
+    "Olvidar como se acredita la asistencia, que es lo que suele tumbar el expediente",
+    "Copiar el temario de tu curso abierto sin adaptarlo al puesto del asistente"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha de la accion formativa: denominacion, modalidad, horas, numero de participantes, perfil destinatario",
+    "bloque_2": "Objetivo general y objetivos especificos",
+    "bloque_3": "Tabla de contenidos: Modulo | Contenidos | Horas | Horas de practica | Metodo",
+    "bloque_4": "Sistema de evaluacion: prueba de aprovechamiento descrita y criterio de apto",
+    "bloque_5": "Medios, requisitos tecnicos y responsabilidades de cada parte",
+    "bloque_6": "Documentacion y control de asistencia, con la lista de datos a recabar si se va a bonificar",
+    "bloque_7": "Calendario propuesto y condiciones economicas en partidas",
+    "bloque_8": "Avisos: que tiene que confirmar la empresa con su gestoria antes de contratar"
+  },
+  "criterios_calidad": [
+    "Cada objetivo especifico tiene su contenido y su forma de evaluarlo",
+    "Las horas de los modulos suman las horas totales",
+    "Un responsable de recursos humanos puede aprobarlo sin llamarte para preguntar",
+    "No hay ninguna afirmacion legal o de subvencion que no puedas sostener"
+  ]
+}

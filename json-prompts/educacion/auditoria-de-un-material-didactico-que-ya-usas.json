@@ -1,0 +1,32 @@
+{
+  "tarea": "Auditar un material didáctico existente y proponer correcciones concretas parte por parte",
+  "entradas": {
+    "material": "[PEGA AQUÍ EL MATERIAL COMPLETO O EL CAPÍTULO A REVISAR]",
+    "objetivo_curso": "[QUÉ DEBE SABER HACER EL ALUMNO AL TERMINAR]",
+    "perfil_alumno": "[NIVEL, EDAD Y CONTEXTO]",
+    "sintomas_detectados": "[QUEJAS, DUDAS REPETIDAS, ABANDONOS O SUSPENSOS QUE HAS VISTO]"
+  },
+  "ejes_de_revision": [
+    "Alineación: cada apartado sirve al objetivo declarado o sobra",
+    "Nivel: vocabulario y ejemplos por encima o por debajo del alumno",
+    "Orden: conceptos que se usan antes de haberse explicado",
+    "Densidad: párrafos largos, muros de texto y falta de ejemplos",
+    "Práctica: proporción entre teoría y ejercicios",
+    "Comprobación: el alumno tiene forma de saber si lo ha entendido",
+    "Accesibilidad: contraste, tamaño, imágenes sin explicación, siglas sin desarrollar"
+  ],
+  "formato_salida": {
+    "resumen": "Semáforo por eje con una línea de justificación",
+    "hallazgos": "Tabla con: apartado afectado, qué falla, por qué perjudica al alumno, corrección concreta y esfuerzo estimado (bajo, medio, alto)",
+    "prioridades": "Los 5 arreglos que más mejoran el material con menos trabajo, ordenados",
+    "reescritura": "Reescribe como ejemplo el fragmento peor valorado, versión original y versión corregida"
+  },
+  "restricciones": [
+    "Nada de valoraciones vagas tipo 'se podría mejorar': cada hallazgo cita el texto afectado",
+    "No propongas rehacerlo todo: prioriza siempre lo reparable"
+  ],
+  "criterios_calidad": [
+    "Cada corrección se puede aplicar sin consultar nada más",
+    "Los hallazgos explican el efecto en el alumno, no solo la norma incumplida"
+  ]
+}

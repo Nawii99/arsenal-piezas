@@ -1,0 +1,38 @@
+{
+  "tarea": "Preparar una reclamación de consumo completa: escrito de reclamación a la empresa, lista de pruebas y ruta de escalado si no responden",
+  "perfil": "Consumidor particular en España reclamando a una empresa",
+  "entradas": {
+    "reclamante": "[TU NOMBRE, DNI, DOMICILIO, TELÉFONO Y EMAIL]",
+    "empresa": "[NOMBRE COMERCIAL, CIF SI LO TIENES Y DIRECCIÓN O EMAIL DE ATENCIÓN AL CLIENTE]",
+    "compra": {"que": "[PRODUCTO O SERVICIO]", "fecha": "[DD/MM/AAAA]", "importe": "[IMPORTE]", "canal": "[TIENDA FÍSICA / ONLINE / TELÉFONO]"},
+    "que_ha_pasado": "[EL PROBLEMA CONTADO CON FECHAS]",
+    "gestiones_previas": "[LLAMADAS, EMAILS, Nº DE INCIDENCIA Y RESPUESTAS RECIBIDAS]",
+    "pruebas": "[FACTURA, TICKET, CAPTURAS, GARANTÍA, FOTOS]",
+    "peticion": "[DEVOLUCIÓN, REPARACIÓN, SUSTITUCIÓN O ANULACIÓN DEL CARGO]"
+  },
+  "pasos": [
+    "Ordenar los hechos por fecha en frases cortas y verificables",
+    "Comprobar si la petición encaja mejor como garantía, desistimiento, servicio no prestado o cobro indebido, y decirlo",
+    "Redactar la reclamación con identificación, hechos, petición y plazo de respuesta",
+    "Indicar la vía formal siguiente: hoja de reclamaciones del establecimiento, oficina municipal de consumo u organismo autonómico, y arbitraje de consumo si la empresa está adherida",
+    "Advertir de los plazos que puede haber caducado o estar a punto de caducar y recomendar no demorar el envío"
+  ],
+  "restricciones": [
+    "No citar artículos ni normas concretas si no se tiene certeza; describir el derecho en lenguaje llano",
+    "No prometer resultados ni plazos de resolución de los organismos",
+    "Escrito máximo de 350 palabras, claro y sin insultos",
+    "Español de España, primera persona"
+  ],
+  "formato_salida": {
+    "1_escrito": "reclamación lista para enviar por email o formulario",
+    "2_pruebas": "lista numerada de documentos a adjuntar",
+    "3_ruta": "tabla con paso, a quién te diriges, qué envías y cuánto esperas",
+    "4_seguimiento": "tres líneas para anotar fechas y respuestas"
+  },
+  "criterios_calidad": [
+    "El escrito se entiende sin conocer el caso",
+    "La petición es una sola y concreta, con importe si lo hay",
+    "La ruta de escalado dice exactamente qué hacer si no contestan"
+  ],
+  "aviso_legal": "Guía orientativa, no es asesoramiento jurídico; los organismos de consumo son autonómicos y sus trámites varían"
+}

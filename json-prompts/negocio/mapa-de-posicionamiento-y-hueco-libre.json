@@ -1,0 +1,37 @@
+{
+  "tarea": "Construir un mapa de posicionamiento de mi mercado y proponerme el hueco que puedo ocupar",
+  "entradas": {
+    "mi_negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "mis_puntos_fuertes_reales": "[EN QUÉ ERES MEJOR DE VERDAD, SIN EXAGERAR]",
+    "competidores": [
+      {"nombre": "[COMPETIDOR 1]", "promesa": "[SU FRASE DE POSICIONAMIENTO]", "precio": "[BANDA DE PRECIO]"},
+      {"nombre": "[COMPETIDOR 2]", "promesa": "[SU FRASE]", "precio": "[BANDA]"},
+      {"nombre": "[COMPETIDOR 3]", "promesa": "[SU FRASE]", "precio": "[BANDA]"}
+    ],
+    "criterios_de_compra": "[LAS 3 COSAS QUE MÁS PESAN CUANDO TU CLIENTE ELIGE]"
+  },
+  "pasos": [
+    "Elige los dos ejes que de verdad usan los clientes para decidir y justifica por qué esos y no otros",
+    "Sitúa a cada competidor en el mapa con una posición del 1 al 10 en cada eje",
+    "Señala las zonas llenas, las zonas vacías y las zonas vacías por un buen motivo (no hay mercado)",
+    "Cruza los huecos viables con mis puntos fuertes reales",
+    "Escribe la declaración de posicionamiento del hueco elegido"
+  ],
+  "restricciones": [
+    "Nada de ejes tópicos tipo calidad-precio si no son los que decide el cliente",
+    "El hueco propuesto debe ser sostenible: explica por qué no me lo copian en dos meses",
+    "No inventes competidores que no existan"
+  ],
+  "formato_salida": {
+    "1_ejes": "Los dos ejes elegidos y su justificación",
+    "2_mapa": "Tabla con competidor, posición eje X, posición eje Y y en qué esquina cae",
+    "3_huecos": "Zonas vacías, con veredicto de si hay mercado o no",
+    "4_posicionamiento": "Mi declaración: para [CLIENTE] que [PROBLEMA], soy el único que [DIFERENCIA], porque [PRUEBA]",
+    "5_consecuencias": "Qué tendría que cambiar en mi web, mi precio y mi oferta para sostener ese posicionamiento"
+  },
+  "criterios_calidad": [
+    "La declaración cabe en una frase y se entiende sin explicación",
+    "El hueco se apoya en algo que ya hago bien",
+    "Se dice claramente a qué clientes renuncio"
+  ]
+}

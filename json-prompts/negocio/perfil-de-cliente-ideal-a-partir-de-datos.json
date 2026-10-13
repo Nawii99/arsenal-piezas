@@ -1,0 +1,34 @@
+{
+  "tarea": "Construir la ficha del cliente ideal de [TU NEGOCIO] a partir de los datos reales aportados, sin inventar perfiles de fantasía",
+  "entradas": {
+    "datos_disponibles": "[PEGA AQUÍ RESPUESTAS DE ENCUESTA, NOTAS DE VENTAS, LISTADO DE CLIENTES O CONVERSACIONES]",
+    "producto": "[QUÉ VENDES Y A QUÉ PRECIO]",
+    "mejores_clientes": "[QUIÉNES TE HAN COMPRADO MÁS O CON MENOS FRICCIÓN]",
+    "clientes_problematicos": "[QUIÉNES DAN MÁS TRABAJO O MENOS MARGEN]"
+  },
+  "metodo": [
+    "Agrupar los datos en segmentos por comportamiento de compra, no por edad o género",
+    "Elegir el segmento con mejor combinación de: capacidad de pago, urgencia del problema y facilidad para localizarlo",
+    "Describir el momento exacto en que ese cliente se da cuenta de que necesita una solución",
+    "Listar sus objeciones reales y qué alternativa usa hoy, incluida la de no hacer nada"
+  ],
+  "restricciones": [
+    "Toda afirmación debe apoyarse en los datos aportados o marcarse como HIPÓTESIS A VALIDAR",
+    "Prohibido inventar nombres ficticios con biografía novelada",
+    "Máximo dos perfiles: el principal y el secundario"
+  ],
+  "formato_salida": {
+    "segmentos_detectados": "Lista de segmentos con su tamaño estimado en los datos y por qué se descartan o se eligen",
+    "ficha_principal": "Ficha con: quién es, situación, problema principal en sus palabras, disparador de compra, qué usa hoy, objeciones, presupuesto que maneja, dónde se le encuentra y qué le convence",
+    "ficha_secundaria": "Misma ficha resumida para el segundo segmento",
+    "anti_cliente": "A quién NO debo vender y por qué",
+    "mensajes": "Tres frases de gancho escritas con las palabras que usa el propio cliente",
+    "validacion": "Tres preguntas concretas que debo hacer a cinco clientes para confirmar esta ficha"
+  },
+  "criterios_calidad": [
+    "El perfil se puede usar mañana para segmentar un anuncio o elegir dónde publicar",
+    "Las citas y frases proceden de los datos aportados",
+    "El anti cliente está definido con la misma claridad que el cliente ideal"
+  ],
+  "tono": "Concreto, sin adjetivos de folleto"
+}

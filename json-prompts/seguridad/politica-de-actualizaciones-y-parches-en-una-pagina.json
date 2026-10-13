@@ -1,0 +1,40 @@
+{
+  "tarea": "Redactar la politica de gestion de actualizaciones y parches de la empresa, con plazos por gravedad, calendario, responsables y procedimiento de marcha atras",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sistemas": "[ORDENADORES, SERVIDORES, MOVILES, ROUTER, CAMARAS, TPV, NAS, IMPRESORAS]",
+    "programas_clave": "[GESTION, CONTABILIDAD, DISENO, NAVEGADORES...]",
+    "quien_mantiene": "[INTERNO / PROVEEDOR EXTERNO / CADA UNO SU EQUIPO]",
+    "horario_del_negocio": "[HORARIO DE APERTURA]",
+    "sistemas_que_no_pueden_parar": "[CUALES Y EN QUE FRANJAS]",
+    "sistemas_antiguos_sin_soporte": "[SI LOS HAY, CUALES]"
+ },
+  "procedimiento": [
+    "1. Ordenar el inventario por criticidad para el negocio",
+    "2. Definir plazos maximos de aplicacion por gravedad: critica, alta, media, baja, y quien decide la gravedad",
+    "3. Fijar ventanas de mantenimiento compatibles con el horario y avisar de quien comunica el corte",
+    "4. Separar lo que puede ir en automatico de lo que necesita prueba previa",
+    "5. Definir el procedimiento de marcha atras y quien autoriza aplazar una actualizacion",
+    "6. Tratar aparte los sistemas sin soporte del fabricante: aislarlos, sustituirlos o asumir el riesgo por escrito",
+    "7. Definir como se deja constancia de cada aplicacion"
+  ],
+  "restricciones": [
+    "Todo plazo debe ser realista para el tamano del negocio: nada de compromisos imposibles",
+    "Cada linea de la politica tiene un responsable con nombre de puesto",
+    "El documento debe caber en una pagina para la version resumida"
+  ],
+  "formato_salida": {
+    "tipo": "politica interna mas calendario",
+    "secciones": [
+      "Objetivo y alcance en 4 lineas",
+      "Tabla: tipo de sistema | quien actualiza | automatico o manual | ventana | plazo segun gravedad",
+      "Procedimiento paso a paso de una actualizacion, incluida la comprobacion posterior",
+      "Marcha atras y aplazamientos: quien autoriza y como se registra",
+      "Sistemas sin soporte: decision y fecha",
+      "Calendario anual con las ventanas marcadas",
+      "Registro de aplicaciones: plantilla de tabla en blanco"
+    ]
+  },
+  "criterios_calidad": ["Cualquier empleado sabe leyendo el documento que le toca hacer", "Los plazos distinguen gravedad", "Se contempla el sistema viejo que no se puede actualizar"],
+  "tono": "documento interno, claro y breve"
+}

@@ -1,0 +1,47 @@
+{
+  "tarea": "Trocear un contenido formativo largo en una serie de pildoras diarias de microlearning con una accion practica cada dia",
+  "contexto": {
+    "contenido_origen": "[CURSO, PDF, MANUAL O TRANSCRIPCION]",
+    "canal": "[EMAIL / WHATSAPP / TELEGRAM]",
+    "numero_de_pildoras": "[EJ: 10 DIAS]",
+    "tiempo_de_lectura_por_pildora": "[MINUTOS, EJ 3]",
+    "perfil_del_alumno": "[QUIEN LO RECIBE Y QUE HACE CADA DIA]"
+  },
+  "entradas": {
+    "material": "[PEGA AQUI EL CONTENIDO O SU INDICE DETALLADO]",
+    "resultado_final_deseado": "[QUE SABRA HACER AL TERMINAR LA SERIE]"
+  },
+  "proceso": [
+    "1. Extrae del material la lista de acciones que el alumno tiene que llegar a hacer, no de temas que tiene que saber",
+    "2. Ordena esas acciones por dependencia: nada aparece antes de lo que necesita",
+    "3. Asigna una sola accion por pildora; si una accion no cabe en el tiempo declarado, partela en dos dias",
+    "4. Escribe cada pildora con esta estructura: asunto, gancho de una linea, explicacion breve, la accion de hoy y como saber que la has hecho bien",
+    "5. Cada tres pildoras inserta un dia de repaso que recupere lo de dias anteriores en forma de pregunta",
+    "6. Cierra la serie con una pildora de consolidacion que junte todo en un caso completo"
+  ],
+  "restricciones": [
+    "Una idea por pildora, sin excepciones",
+    "Nada de teoria que no se use ese mismo dia",
+    "Frases cortas, sin siglas sin explicar, tuteando",
+    "La accion diaria se hace en menos de 10 minutos y con lo que el alumno ya tiene"
+  ],
+  "errores_a_evitar": [
+    "Convertir capitulos en pildoras: un capitulo no es una dosis",
+    "Acumular deberes que se van encadenando hasta que el alumno abandona",
+    "Escribir asuntos genericos tipo Dia 4: nadie los abre",
+    "Dejar la accion como opcional"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de la serie: Dia | Accion del dia | Idea unica | Depende de",
+    "bloque_2": "Las pildoras completas, una detras de otra, listas para copiar y pegar en el canal indicado",
+    "bloque_3": "Los asuntos o primeras lineas de cada pildora juntos, para revisarlos de un vistazo",
+    "bloque_4": "Los dias de repaso con sus preguntas y respuestas",
+    "bloque_5": "Que medir: en que dia miras si la gente sigue abriendo y que reescribir si cae"
+  },
+  "criterios_calidad": [
+    "Cada pildora se lee en el tiempo declarado leyendola en voz alta",
+    "Si quitas una pildora, la siguiente deja de tener sentido: hay progresion real",
+    "Toda pildora acaba en una accion verificable por el propio alumno",
+    "No hay dos pildoras que enseñen lo mismo con otras palabras"
+  ]
+}

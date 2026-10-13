@@ -1,0 +1,56 @@
+{
+  "tarea": "Redacta el acta de entrega de la infraestructura de un proyecto a mi cliente: qué se entrega, a nombre de quién queda cada cuenta, qué cuesta al mes y hasta dónde llega mi soporte",
+  "contexto": {
+    "proyecto": "[QUÉ HE MONTADO PARA EL CLIENTE]",
+    "cliente": "[NOMBRE FISCAL Y PERSONA DE CONTACTO]",
+    "nivel_tecnico_del_cliente": "[NINGUNO, BÁSICO, TIENE INFORMÁTICO]",
+    "como_sigue": "[SE LO QUEDA ÉL, LO MANTENGO YO CON CUOTA, LO COGE OTRA AGENCIA]"
+  },
+  "entradas": {
+    "servicios": "[LISTA DE CUENTAS Y SERVICIOS USADOS, CON TITULAR ACTUAL Y COSTE]",
+    "entregables": "[WEB, AUTOMATIZACIONES, CORREOS, PLANTILLAS, DOCUMENTACIÓN]",
+    "condiciones": "[LO PACTADO SOBRE SOPORTE, GARANTÍA Y PLAZOS]"
+  },
+  "pasos": [
+    "1. Inventaría todo lo que sostiene el proyecto, incluidos servicios gratuitos que un día pueden dejar de serlo",
+    "2. Marca qué cuentas deben quedar a nombre del cliente y cuáles se quedan a mi nombre por decisión suya",
+    "3. Traspasa primero lo que da soberanía: dominio, correo y pasarela de cobro, con la facturación cambiada a su tarjeta",
+    "4. Entrega los accesos por un canal seguro y pide al cliente que cambie las contraseñas al recibirlas",
+    "5. Redacta el coste recurrente real con periodicidad y fecha de renovación de cada servicio",
+    "6. Escribe la documentación mínima: cómo se publica un cambio, dónde están las copias y qué hacer si algo falla",
+    "7. Define el alcance del soporte: qué está cubierto, qué se factura aparte y hasta qué fecha llega la garantía",
+    "8. Cierra con una sesión de traspaso grabada o resumida y con la firma de conformidad"
+  ],
+  "que_mirar": [
+    "que no quede ninguna suscripción cobrándose a tu tarjeta personal",
+    "que el dominio quede a nombre fiscal del cliente y no de un empleado suyo cualquiera",
+    "quién controla el correo de recuperación de las cuentas entregadas",
+    "licencias de plantillas o imágenes que no son transferibles",
+    "qué pasa con los datos de sus clientes y quién es responsable a partir de la entrega"
+  ],
+  "errores_tipicos": [
+    "entregar accesos por chat y no cambiar nunca las contraseñas",
+    "quedarte de titular del dominio y pagarlo tú durante años",
+    "no fijar el fin de la garantía y dar soporte gratis para siempre",
+    "entregar sin documentación y volverte imprescindible por accidente en vez de por contrato",
+    "olvidar decir qué servicios se caen si deja de pagarlos"
+  ],
+  "restricciones": [
+    "tono profesional pero llano, sin jerga técnica innecesaria",
+    "ninguna credencial escrita dentro del acta, solo la vía por la que se entrega",
+    "no prometas disponibilidad ni plazos que no pueda cumplir"
+  ],
+  "formato_salida": {
+    "1_inventario": "servicio | para qué sirve | titular tras la entrega | coste | periodicidad | renovación",
+    "2_traspasos": "pasos por cuenta, quién hace qué y en qué orden",
+    "3_alcance_soporte": "incluido | no incluido | precio de lo no incluido | fecha fin de garantía",
+    "4_manual_breve": "máximo una página de instrucciones básicas para el cliente",
+    "5_conformidad": "párrafo de aceptación con hueco para fecha y firma"
+  },
+  "criterios_calidad": [
+    "tras la entrega no queda ningún cargo en mis tarjetas",
+    "el cliente puede entrar solo a todo lo esencial sin llamarme",
+    "queda por escrito qué cuesta seguir funcionando cada mes",
+    "el alcance del soporte no admite interpretaciones"
+  ]
+}

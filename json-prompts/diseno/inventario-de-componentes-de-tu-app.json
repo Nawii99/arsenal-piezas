@@ -1,0 +1,36 @@
+{
+  "tarea": "Convertir la lista de pantallas de [NOMBRE DEL PRODUCTO] en un inventario de componentes de interfaz priorizado",
+  "contexto": {
+    "producto": "[QUÉ HACE Y PARA QUIÉN]",
+    "usuarios": "[QUIÉN LO USA Y CON QUÉ NIVEL TÉCNICO]",
+    "plataforma": "[WEB / MÓVIL / AMBAS]",
+    "punto_de_partida": "[DESDE CERO / YA TENGO ALGUNAS PANTALLAS HECHAS]",
+    "plazo": "[SEMANAS DISPONIBLES]"
+  },
+  "entradas": {
+    "pantallas": "[LISTA TUS PANTALLAS: POR EJEMPLO ACCESO, PANEL, LISTADO DE CLIENTES, FICHA DE CLIENTE, AJUSTES]"
+  },
+  "pasos": [
+    "Recorrer cada pantalla y anotar todas las piezas visuales que aparecen",
+    "Agrupar las piezas repetidas en un único componente y anotar sus variantes",
+    "Clasificar en tres niveles: básicos, compuestos y plantillas de pantalla",
+    "Marcar prioridad alta, media o baja según en cuántas pantallas aparece",
+    "Detectar piezas que se parecen demasiado y proponer unificarlas"
+  ],
+  "restricciones": [
+    "No inventes pantallas que no estén en la lista",
+    "Cada componente aparece una sola vez, con sus variantes agrupadas",
+    "Máximo 25 componentes en total: si salen más, agrupa"
+  ],
+  "formato_salida": {
+    "tipo": "tabla",
+    "columnas": ["componente", "nivel", "variantes", "pantallas donde aparece", "prioridad", "esfuerzo estimado bajo/medio/alto"],
+    "extras": ["Orden sugerido de trabajo en 3 tandas", "Lista de piezas candidatas a unificarse"]
+  },
+  "criterios_calidad": [
+    "Toda pantalla de la lista queda cubierta por algún componente",
+    "La prioridad se justifica por reutilización real, no por gusto",
+    "El orden de trabajo permite tener una pantalla completa funcionando pronto"
+  ],
+  "tono": "ordenado y sin tecnicismos innecesarios"
+}

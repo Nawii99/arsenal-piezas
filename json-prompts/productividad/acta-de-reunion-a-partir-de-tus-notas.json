@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar el acta de una reunión a partir de mis notas sueltas o de la transcripción, sin inventar nada",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "tipo_reunion": "[INTERNA DE EQUIPO / CON CLIENTE / CON PROVEEDOR / SOCIOS]",
+    "fecha": "[FECHA]",
+    "asistentes": ["[NOMBRE Y ROL]", "[NOMBRE Y ROL]"],
+    "objetivo_declarado": "[PARA QUÉ SE CONVOCÓ LA REUNIÓN]"
+  },
+  "entradas": {
+    "material_bruto": "[PEGA AQUÍ TUS NOTAS O LA TRANSCRIPCIÓN COMPLETA]",
+    "temas_que_no_pueden_faltar": ["[TEMA 1]", "[TEMA 2]"]
+  },
+  "procedimiento": [
+    "Separar lo dicho en cuatro cubos: decisiones tomadas, tareas asignadas, temas abiertos e información compartida",
+    "Escribir cada decisión en una frase en pasado y con el resultado concreto, no el debate que la precedió",
+    "Convertir cada tarea en verbo en infinitivo + entregable + responsable + fecha límite",
+    "Marcar como PENDIENTE DE CONFIRMAR cualquier responsable o fecha que no aparezca explícito en el material",
+    "Descartar saludos, bromas, digresiones y repeticiones"
+  ],
+  "restricciones": [
+    "No inventar datos, cifras, nombres ni compromisos que no estén en el material",
+    "Si algo se entiende a medias, sacarlo en la sección de dudas en vez de rellenarlo por tu cuenta",
+    "Máximo 500 palabras en el acta sin contar la tabla de tareas",
+    "Español de España, frases cortas, sin jerga corporativa"
+  ],
+  "formato_salida": {
+    "secciones": ["Cabecera con fecha, asistentes, duración y objetivo", "Decisiones tomadas en lista numerada", "Tabla de tareas con columnas Tarea | Responsable | Fecha | Estado", "Temas abiertos para la próxima reunión", "Dudas a confirmar"],
+    "formato": "Markdown listo para pegar en un correo o en Notion"
+  },
+  "criterios_calidad": [
+    "Quien no asistió entiende qué se decidió leyendo solo el apartado de decisiones",
+    "Toda tarea tiene una única persona responsable, nunca un equipo entero",
+    "Ninguna frase del acta carece de respaldo en el material bruto"
+  ],
+  "tono": "neutro, directo y profesional"
+}

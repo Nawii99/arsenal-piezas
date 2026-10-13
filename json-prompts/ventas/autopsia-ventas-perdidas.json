@@ -1,0 +1,50 @@
+{
+  "tarea": "Analizar las oportunidades perdidas de un periodo, encontrar el patrón que se repite y proponer dos cambios concretos",
+  "rol": "Analista comercial de negocio pequeño que busca la causa real y no la excusa cómoda de 'el mercado está mal'",
+  "contexto": {
+    "periodo": "[MES O TRIMESTRE ANALIZADO]",
+    "proceso_actual": "[PASOS QUE SIGUES DESDE QUE ENTRA UN CONTACTO HASTA QUE FIRMA]",
+    "precio_medio": "[IMPORTE MEDIO DE TUS PRESUPUESTOS]"
+  },
+  "entradas": {
+    "oportunidades": "[UNA POR LÍNEA: CLIENTE, ORIGEN, IMPORTE, FECHA, ÚLTIMA FASE ALCANZADA, MOTIVO QUE TE DIERON, LO QUE TÚ CREES QUE PASÓ]",
+    "ganadas": "[LAS QUE SÍ CERRASTE, CON LOS MISMOS DATOS]"
+  },
+  "pasos": [
+    "Marca para cada pérdida la fase exacta en la que se cayó: primer contacto, llamada, propuesta enviada, negociación o firma",
+    "Separa el motivo declarado del motivo probable y explica por qué crees que difieren cuando difieran",
+    "Clasifica cada motivo probable en cinco causas: cliente mal cualificado, propuesta poco clara, precio fuera de rango, seguimiento flojo, competencia mejor colocada",
+    "Cuenta pérdidas e importe por fase y por causa, y señala la fase donde se pierde más dinero, no más operaciones",
+    "Compara ganadas y perdidas buscando diferencias en origen del contacto, importe, plazo de respuesta y número de contactos",
+    "Calcula la tasa de cierre global y por origen del contacto",
+    "Propón exactamente dos cambios para el mes siguiente, con la acción, quién la hace y cómo sabrás en 30 días si ha funcionado",
+    "Señala qué dato te falta registrar para que la próxima autopsia sea mejor"
+  ],
+  "restricciones": [
+    "No inventes causas: si los datos no lo sostienen, di que no hay información suficiente",
+    "Nada de recomendaciones genéricas tipo 'hacer más seguimiento': la acción debe ser concreta y medible",
+    "Máximo dos cambios propuestos, para que se puedan hacer de verdad",
+    "Español de España, directo, sin jerga de consultoría"
+  ],
+  "formato_salida": {
+    "resumen": {"oportunidades": 0, "ganadas": 0, "perdidas": 0, "tasa_de_cierre_pct": 0, "importe_perdido": 0},
+    "por_fase": [{"fase": "...", "perdidas": 0, "importe": 0}],
+    "por_causa": [{"causa": "...", "perdidas": 0, "importe": 0, "evidencia": "casos que la sostienen"}],
+    "por_origen": [{"origen": "...", "oportunidades": 0, "cerradas": 0, "tasa_pct": 0}],
+    "patron_principal": "dos frases con la fuga que más dinero cuesta",
+    "diferencias_ganadas_vs_perdidas": ["máximo 4"],
+    "dos_cambios": [{"cambio": "...", "como_se_hace": "...", "senal_de_exito_en_30_dias": "..."}],
+    "datos_que_faltan": ["qué registrar a partir de ahora"]
+  },
+  "criterios_calidad": [
+    "Cada causa señalada cita al menos dos casos concretos de la lista",
+    "La fase con más dinero perdido queda identificada con números",
+    "Los dos cambios se pueden empezar esta semana sin gastar dinero",
+    "Si el origen del contacto explica la diferencia, se dice claramente"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Aceptar 'era caro' como causa sin comprobar si las ganadas tenían importe parecido",
+    "Mezclar clientes que nunca fueron reales con oportunidades de verdad",
+    "Sacar veinte conclusiones y no aplicar ninguna"
+  ]
+}

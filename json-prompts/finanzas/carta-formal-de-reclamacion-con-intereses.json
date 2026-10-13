@@ -1,0 +1,41 @@
+{
+  "tarea": "Redactar una carta de reclamación formal de deuda y calcular los intereses de demora y gastos de recobro reclamables",
+  "contexto": {
+    "acreedor": "[TU NOMBRE FISCAL, NIF Y DIRECCIÓN]",
+    "deudor": "[NOMBRE FISCAL, NIF Y DIRECCIÓN DEL CLIENTE]",
+    "tipo_de_operacion": "[ENTRE EMPRESAS O AUTÓNOMOS / CON UN CONSUMIDOR]",
+    "envio": "[BUROFAX CON ACUSE / CORREO CERTIFICADO / EMAIL CON CONFIRMACIÓN]"
+  },
+  "entradas": {
+    "facturas_reclamadas": "[NÚMERO, FECHA, IMPORTE Y VENCIMIENTO DE CADA UNA]",
+    "fecha_de_hoy": "[FECHA]",
+    "tipo_de_interes_aplicable": "[PORCENTAJE PACTADO O EL LEGAL DE DEMORA VIGENTE]",
+    "gestiones_previas": "[FECHAS Y MEDIO DE CADA RECLAMACIÓN ANTERIOR]",
+    "documentos": "[CONTRATO, PRESUPUESTO FIRMADO, ALBARANES, EMAILS DE CONFORMIDAD]"
+  },
+  "pasos": [
+    "Listar cada factura con sus días de retraso contados desde el vencimiento hasta hoy",
+    "Calcular los intereses de demora por factura con la fórmula importe por tipo por días entre 365, mostrando el cálculo",
+    "Sumar principal, intereses y, si la operación es entre empresas, la indemnización fija por costes de cobro",
+    "Redactar la carta: identificación de las partes, relación de la deuda, gestiones previas, cantidad exigida, plazo para pagar y consecuencia",
+    "Preparar la lista de pruebas que hay que conservar y adjuntar"
+  ],
+  "reglas": [
+    "No inventar el tipo de interés legal: usar el que indique el usuario y avisar de que hay que confirmarlo en el BOE",
+    "Sin insultos, sin amenazas desproporcionadas y sin afirmar acciones que no se vayan a emprender",
+    "Dejar claro que esto no es asesoramiento jurídico y que un abogado debe revisarlo antes de ir a juicio",
+    "Fijar siempre un plazo concreto de pago, normalmente entre 7 y 15 días naturales"
+  ],
+  "formato_salida": {
+    "tabla_deuda": "Factura, importe, vencimiento, días de retraso e intereses calculados",
+    "carta": "Texto completo listo para imprimir o enviar por burofax",
+    "anexo": "Lista de documentos a adjuntar",
+    "siguientes_pasos": "Qué hacer si no paga en el plazo, en tres opciones ordenadas por coste"
+  },
+  "criterios_calidad": [
+    "Los cálculos se muestran paso a paso y se pueden comprobar",
+    "La carta identifica la deuda sin ambigüedad",
+    "El tono es firme pero impecable si acaba leyéndolo un juez"
+  ],
+  "tono": "Formal, sobrio y contundente"
+}

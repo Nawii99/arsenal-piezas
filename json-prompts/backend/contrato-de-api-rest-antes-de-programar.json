@@ -1,0 +1,41 @@
+{
+  "tarea": "Diseñar el contrato completo de una API REST para [QUÉ TIENE QUE PERMITIR HACER LA API] antes de escribir código",
+  "contexto": {
+    "producto": "[QUÉ HACE TU PRODUCTO EN UNA FRASE]",
+    "quien_la_va_a_usar": "[TU WEB, TU APP MÓVIL, CLIENTES EXTERNOS, UN PARTNER]",
+    "stack": "[LENGUAJE Y FRAMEWORK: Node, Laravel, Django, .NET]",
+    "volumen_estimado": "[LLAMADAS AL DÍA APROXIMADAS]"
+  },
+  "entradas": {
+    "recursos": "[COSAS QUE MANEJA: pedidos, clientes, citas, facturas]",
+    "operaciones": "[QUÉ HAY QUE PODER HACER CON CADA UNA: crear, listar, cambiar estado]",
+    "reglas_de_negocio": "[REGLAS QUE NO SE PUEDEN SALTAR, POR EJEMPLO NO BORRAR PEDIDOS PAGADOS]"
+  },
+  "pasos": [
+    "Convertir cada necesidad en recursos en plural con rutas predecibles y sin verbos en la URL",
+    "Asignar el método correcto a cada operación y justificarlo: GET no cambia nada, POST crea, PUT reemplaza, PATCH modifica una parte, DELETE borra",
+    "Definir por endpoint los parámetros, un ejemplo de petición, un ejemplo de respuesta correcta y la lista de errores posibles",
+    "Definir desde el principio paginación, filtros y orden en todos los listados",
+    "Marcar qué campos son obligatorios, cuáles tienen valor por defecto y cuáles no se pueden cambiar después de crear el registro",
+    "Señalar las decisiones que serán caras de cambiar más adelante"
+  ],
+  "restricciones": [
+    "Ningún endpoint devuelve 200 con un error escondido dentro del cuerpo",
+    "Fechas siempre en formato ISO 8601 con zona horaria",
+    "Importes en enteros de céntimos y la moneda en un campo aparte",
+    "Nombres de campos en un solo idioma y un solo estilo, sin mezclar"
+  ],
+  "formato_salida": {
+    "1_tabla_de_endpoints": "Método | Ruta | Para qué sirve | Quién puede llamarla",
+    "2_detalle_por_endpoint": "Petición de ejemplo, respuesta de ejemplo y tabla de errores con código HTTP y significado",
+    "3_modelo_de_datos": "Campo, tipo, obligatorio, ejemplo y notas",
+    "4_openapi": "Fichero OpenAPI 3.1 en YAML listo para pegar",
+    "5_avisos": "Máximo 5 decisiones que conviene confirmar antes de programar"
+  },
+  "criterios_calidad": [
+    "Un programador externo podría implementarlo sin preguntarte nada",
+    "Todos los errores previsibles tienen su código y su mensaje",
+    "No hay dos maneras distintas de hacer lo mismo"
+  ],
+  "tono": "Directo y técnico, con una frase en lenguaje llano en cada decisión importante"
+}

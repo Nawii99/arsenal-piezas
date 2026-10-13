@@ -1,0 +1,54 @@
+{
+  "tarea": "Elegir el tipo de sensor adecuado para un problema concreto, comparar al menos tres alternativas y justificar la eleccion con sus limites reales.",
+  "contexto": {
+    "que_quiero_detectar": "[EJ: QUE ALGUIEN ENTRE EN EL ALMACEN / QUE LA NEVERA SE APAGUE / QUE HAYA AGUA EN EL SUELO / QUE LA PUERTA SE QUEDE ABIERTA]",
+    "para_que_sirve_saberlo": "[AVISO AL MOVIL / ENCENDER UNA LUZ / PARAR UNA MAQUINA / DEJAR REGISTRO]",
+    "donde": "[INTERIOR / EXTERIOR / CAMARA FRIA / BANO / CUADRO ELECTRICO]",
+    "condiciones": "[TEMPERATURA, HUMEDAD, POLVO, ANIMALES, CORRIENTES DE AIRE, LUZ SOLAR DIRECTA]",
+    "quien_convive_con_el": "[NINOS, MASCOTAS, CLIENTES, PERSONAL DE LIMPIEZA]"
+  },
+  "entradas": {
+    "hay_corriente_cerca": "[SI / NO / SOLO ENCHUFE A 3 METROS]",
+    "tolerancia_a_falsos_avisos": "[NINGUNA / ALGUNA A LA SEMANA / DA IGUAL]",
+    "presupuesto_por_punto": "[EUROS]",
+    "ecosistema": "[HOME ASSISTANT / ALEXA / GOOGLE / APP DE LA MARCA / ME DA IGUAL]"
+  },
+  "catalogo_a_considerar": [
+    "Contacto magnetico de puerta o ventana",
+    "PIR de movimiento por infrarrojos",
+    "Presencia por radar mmWave 24 o 60 GHz",
+    "Sensor de inundacion por dos contactos",
+    "Medidor de consumo en enchufe o pinza amperimetrica en cuadro",
+    "Temperatura y humedad con sonda externa",
+    "Vibracion o acelerometro",
+    "Sensor de puerta de garaje por distancia",
+    "Deteccion por camara con reconocimiento en el propio aparato"
+  ],
+  "procedimiento": [
+    "1. Reformula el problema como un evento medible: no quiero saber si hay alguien, sino si hay movimiento en la zona X durante mas de Y segundos.",
+    "2. Descarta los sensores que no soportan las condiciones fisicas del sitio.",
+    "3. Compara los tres candidatos que quedan en: fiabilidad, falsos positivos, alimentacion, retardo de aviso y precio.",
+    "4. Comprueba el modo de alimentacion: pila CR2032 en exterior frio dura muy poco, avisa de ello.",
+    "5. Define umbrales y retardos concretos para evitar avisos en cadena.",
+    "6. Propon el sensor elegido, el suplente y un truco de colocacion que reduzca fallos."
+  ],
+  "errores_tipicos": [
+    "Usar PIR para saber si alguien sigue sentado: el PIR deja de detectar si no hay movimiento.",
+    "Usar radar mmWave junto a una cortina que se mueve o un ventilador: detecta siempre.",
+    "Poner el sensor de inundacion en alto en vez de a ras de suelo y en el punto mas bajo.",
+    "Medir temperatura de camara frigorifica con el aparato dentro y la radio fuera de alcance.",
+    "Colocar un PIR enfrente de una ventana con sol o de una salida de aire caliente."
+  ],
+  "formato_salida": {
+    "bloque_1": "Frase de una linea con el evento medible reformulado",
+    "bloque_2": "Tabla comparativa: OPCION | COMO FUNCIONA | ACIERTA CUANDO | FALLA CUANDO | ALIMENTACION | PRECIO ORIENTATIVO",
+    "bloque_3": "Eleccion recomendada y suplente, con el motivo en dos frases",
+    "bloque_4": "Instrucciones de colocacion: altura, angulo, distancia y que evitar delante",
+    "bloque_5": "Umbrales sugeridos y prueba de aceptacion para comprobar que funciona"
+  },
+  "criterios_calidad": [
+    "Cada opcion incluye al menos un caso real en el que falla.",
+    "La recomendacion es un tipo de sensor con caracteristicas, no una marca concreta cerrada.",
+    "La prueba de aceptacion se puede hacer en menos de 10 minutos en el sitio."
+  ]
+}

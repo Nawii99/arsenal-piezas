@@ -1,0 +1,53 @@
+{
+  "tarea": "Rediseñar mi aplicación para que las tareas lentas salgan del clic del usuario y se ejecuten en segundo plano con cola, reintentos y aviso del resultado",
+  "contexto": {
+    "que_hace_la_app": "[DESCRIBE LA FUNCIÓN QUE VA LENTA]",
+    "cuanto_tarda_hoy": "[SEGUNDOS O MINUTOS]",
+    "donde_corre": "[VERCEL / RAILWAY / VPS / N8N / MAKE]",
+    "limite_de_tiempo_del_hosting": "[SI LO SABES: 10s, 60s, SIN LÍMITE, NO LO SÉ]"
+  },
+  "entradas": {
+    "tareas_lentas": "[ENVIAR EMAILS, GENERAR PDF, LLAMAR A UNA IA, REDIMENSIONAR IMÁGENES, IMPORTAR CSV, AVISAR POR WHATSAPP]",
+    "cuantas_al_dia": "[NÚMERO APROXIMADO]",
+    "que_ve_el_usuario_ahora": "[PANTALLA CARGANDO, ERROR, NADA]",
+    "presupuesto_mensual": "[GRATIS / HASTA X EUROS]"
+  },
+  "pasos": [
+    "1. Clasifica cada tarea en inmediata (menos de 1 segundo, se hace en el momento) o diferida (va a la cola)",
+    "2. Elige el mecanismo más simple que sirva para mi volumen y presupuesto y justifícalo: tabla en la base de datos como cola, servicio de colas gestionado o herramienta sin código",
+    "3. Diseña la tabla trabajos con: tipo, datos de entrada, estado, intentos, ejecutar_a_partir_de, ultimo_error, resultado",
+    "4. Define la regla de oro: el clic solo guarda el trabajo y devuelve un identificador; el usuario ve estado en proceso",
+    "5. Escribe el trabajador que coge trabajos pendientes de uno en uno, marca en curso para que nadie lo coja dos veces y libera si se queda colgado",
+    "6. Aplica reintentos con espera creciente (1 min, 5 min, 30 min) y un máximo; lo que agote intentos va a fallidos con su error legible",
+    "7. Haz cada tarea repetible sin daño: antes de enviar un email o cobrar, comprueba si ya se hizo con esa clave",
+    "8. Decide cómo se entera el usuario: refresco de estado en pantalla, email al terminar o aviso en el panel",
+    "9. Añade un panel mínimo con pendientes, en curso, fallidos y un botón de reintentar",
+    "10. Da el plan de pruebas: simular un fallo del proveedor externo, un trabajo que tarda de más y dos trabajadores a la vez"
+  ],
+  "restricciones": [
+    "No propongas una infraestructura grande si con una tabla y una tarea programada cada minuto me vale",
+    "Nada de dejar al usuario esperando más de 3 segundos en ningún caso",
+    "Cada trabajo fallido tiene que dejar un error entendible por una persona, no solo una traza técnica",
+    "Explica los costes reales del servicio que propongas"
+  ],
+  "formato_salida": {
+    "1_decision": "Qué mecanismo elijo y por qué, con la alternativa descartada",
+    "2_tabla_tareas": "Tabla markdown: tarea, inmediata o diferida, reintentos, qué ve el usuario",
+    "3_sql": "Creación de la tabla trabajos con índices",
+    "4_codigo": "Encolar, trabajador y una tarea de ejemplo, comentados, en [LENGUAJE]",
+    "5_operacion": "Cómo se lanza el trabajador y cómo se vigila",
+    "6_pruebas": "Pruebas numeradas con el resultado esperado"
+  },
+  "criterios_calidad": [
+    "El botón responde siempre en menos de un segundo",
+    "Si el proveedor externo falla, el trabajo se reintenta solo y no se pierde",
+    "Dos trabajadores simultáneos no ejecutan el mismo trabajo dos veces",
+    "Puedo ver en cualquier momento qué está pendiente y qué ha fallado"
+  ],
+  "errores_tipicos": [
+    "Reintentar sin control una llamada de pago a la IA y multiplicar la factura",
+    "Dejar trabajos en curso para siempre cuando el proceso se cae a mitad",
+    "Guardar en la cola datos que caducan en vez del identificador del registro",
+    "No avisar al usuario y que repita el envío cinco veces"
+  ]
+}

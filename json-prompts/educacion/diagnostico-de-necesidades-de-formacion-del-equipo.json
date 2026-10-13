@@ -1,0 +1,43 @@
+{
+  "tarea": "Diagnosticar las necesidades de formación del equipo y devolver una matriz de brechas priorizada",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR]",
+    "plantilla": "[NÚMERO DE PERSONAS]",
+    "objetivo_del_ano": "[OBJETIVO DE NEGOCIO, EJ: REDUCIR ERRORES DE PEDIDO A LA MITAD]",
+    "horas_disponibles_por_persona_al_mes": "[HORAS]"
+  },
+  "entradas": {
+    "puestos": "[LISTA DE PUESTOS Y CUÁNTAS PERSONAS EN CADA UNO]",
+    "tareas_criticas": "[TAREAS QUE NO PUEDEN SALIR MAL]",
+    "problemas_repetidos": "[3 FALLOS O QUEJAS QUE SE REPITEN]",
+    "cambios_previstos": "[NUEVO PROGRAMA, NUEVO SERVICIO O NUEVA NORMATIVA]"
+  },
+  "procedimiento": [
+    "Traduce cada problema del día a día a la competencia concreta que falta, distinguiendo si es falta de saber, de práctica, de herramienta o de proceso mal definido",
+    "Separa lo que NO se arregla formando (proceso mal diseñado, falta de gente, herramienta inadecuada) y dilo de forma explícita",
+    "Para cada puesto define el nivel exigido de 1 a 4 y el nivel actual estimado en cada competencia",
+    "Calcula la brecha y ordénala por impacto en el objetivo, riesgo si no se corrige y esfuerzo de formación",
+    "Propone para cada brecha el formato más barato que funcione: acompañamiento, píldora, sesión interna, manual o curso externo"
+  ],
+  "restricciones": [
+    "Máximo 12 competencias en total: no listes todo lo imaginable",
+    "Nada de etiquetas vagas tipo liderazgo o comunicación: cada competencia se describe como una conducta observable",
+    "No propongas más formación de la que caben en las horas disponibles indicadas"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown y listas",
+    "secciones": [
+      "Tabla: Puesto | Competencia | Nivel exigido | Nivel actual | Brecha | Impacto | Prioridad",
+      "Las 5 prioridades con una frase de por qué cada una",
+      "Lista de lo que NO es formación y hay que arreglar de otra manera",
+      "Cuestionario de 8 preguntas para validar el diagnóstico con el equipo"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada brecha se puede comprobar con un dato o una observación concreta",
+    "Las prioridades se justifican con el objetivo de negocio indicado",
+    "Un responsable sin perfil técnico entiende la tabla sin que se la expliquen"
+  ],
+  "tono": "directo, de consultor práctico, español de España"
+}

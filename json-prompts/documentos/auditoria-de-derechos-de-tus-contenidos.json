@@ -1,0 +1,41 @@
+{
+  "tarea": "Auditar los derechos de uso de los contenidos que usa mi negocio y marcar cuáles hay que sustituir, documentar o licenciar",
+  "rol": "Consultor de propiedad intelectual para pequeñas empresas en España",
+  "contexto": {
+    "negocio": "[QUÉ VENDE TU NEGOCIO Y A QUIÉN]",
+    "canales": "[WEB, INSTAGRAM, ANUNCIOS DE PAGO, CATÁLOGO PDF, PACKAGING...]",
+    "uso_comercial": "[SÍ / NO]",
+    "territorio": "[ESPAÑA / UE / MUNDIAL]"
+  },
+  "entradas": {
+    "inventario": "[LISTA DE CONTENIDOS: NOMBRE, TIPO, DE DÓNDE SALIÓ, DÓNDE SE USA]",
+    "licencias": "[PEGA EL TEXTO O EL ENLACE DE LAS LICENCIAS QUE TENGAS]"
+  },
+  "pasos": [
+    "Clasifica cada elemento por tipo: imagen, vídeo, música, tipografía, texto, icono, plantilla o software",
+    "Identifica el origen: creación propia, encargo a un freelance, banco de imágenes, generado con IA, descargado de internet u origen desconocido",
+    "Asigna estado de derechos: en regla, dudoso o sin cobertura",
+    "Comprueba si la licencia cubre uso comercial, publicidad de pago, modificación, reventa, territorio y plazo",
+    "Detecta los fallos típicos: música de vídeos de redes en anuncios, tipografía de escritorio incrustada en la web, fotos sacadas de un buscador, plantillas con licencia personal y trabajos de freelance sin cesión firmada",
+    "Propón para cada elemento con riesgo una acción concreta: sustituir, ampliar licencia, pedir cesión por escrito o retirar"
+  ],
+  "restricciones": [
+    "No inventes el contenido de una licencia que no se te haya pegado: márcala como sin verificar",
+    "Prioriza por riesgo real: primero lo que está en anuncios de pago y en la web pública",
+    "Español llano, sin latinajos innecesarios"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown más resumen",
+    "columnas": ["Elemento", "Tipo", "Origen", "¿Cubre este uso?", "Riesgo alto/medio/bajo", "Acción", "Plazo"],
+    "extras": [
+      "Semáforo con el número de elementos por nivel de riesgo",
+      "Cinco acciones para esta semana",
+      "Modelo de correo para pedir a un proveedor la licencia o la cesión por escrito"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada fila termina en una acción concreta, no en un consejo genérico",
+    "Se distingue entre no tener la licencia y tener una licencia que no cubre ese uso",
+    "Cierra con un aviso de que es una revisión orientativa y no asesoramiento jurídico"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Revisar un texto generado con IA separando lo que es comprobable de lo que está inventado o exagerado, y dejarlo publicable sin afirmaciones que no pueda sostener",
+  "contexto": {
+    "texto": "[PEGA AQUÍ EL TEXTO COMPLETO]",
+    "donde_se_publica": "[WEB / BLOG / FICHA DE PRODUCTO / PROPUESTA A CLIENTE / REDES]",
+    "sector": "[SECTOR, Y SI ESTÁ REGULADO: SALUD, FINANZAS, LEGAL, ALIMENTACIÓN]",
+    "lo_que_yo_sé_de_verdad": "[DATOS PROPIOS QUE PUEDO DEMOSTRAR: AÑOS, CLIENTES, PLAZOS, MATERIALES]"
+  },
+  "pasos": [
+    "1. Trocea el texto en frases y clasifica cada una: OPINIÓN, DATO PROPIO, DATO EXTERNO, PROMESA o NORMATIVA.",
+    "2. Deja en paz las opiniones y céntrate en las otras cuatro categorías.",
+    "3. Para cada DATO EXTERNO, señala si el texto cita fuente, y trátalo como falso hasta comprobarlo: los números redondos, los porcentajes y los estudios son los sospechosos habituales.",
+    "4. Para cada DATO PROPIO, comprueba si tú tienes cómo demostrarlo; si no, reescríbelo en lo que sí puedes decir.",
+    "5. Para cada PROMESA, pregunta: ¿la cumplo el peor día del año? Si no, conviértela en condicional o quítala.",
+    "6. Para cada NORMATIVA o cifra legal, márcala como PENDIENTE DE VERIFICAR: nunca la des por buena porque suene razonable.",
+    "7. Marca también los nombres propios, fechas, precios y unidades: son donde más se equivoca la IA.",
+    "8. Reescribe el texto en dos versiones: una segura solo con lo comprobado, y otra con huecos marcados para los datos que vas a verificar.",
+    "9. Deja una lista corta de qué tienes que buscar y dónde, en orden de importancia."
+  ],
+  "errores_tipicos": [
+    "Fiarte de una cifra porque la IA la repite en tres redacciones distintas.",
+    "Aceptar una fuente que suena oficial sin abrirla y leer si dice eso.",
+    "Dejar el «según estudios» sin estudio, que es la forma educada de inventar.",
+    "Corregir el estilo y no los datos: leerlo bonito no lo hace cierto.",
+    "Meter promesas de plazo o resultado en textos de venta sin poder cumplirlas."
+  ],
+  "formato_salida": {
+    "tabla_frases": "Frase, categoría, veredicto (comprobado / dudoso / inventado / imposible de sostener), qué hago con ella",
+    "lista_verificaciones": "Qué buscar, dónde buscarlo y por qué importa",
+    "version_segura": "El texto reescrito solo con lo que puedo sostener hoy",
+    "riesgos": "Frases que pueden dar problemas legales o de reputación, con la alternativa"
+  },
+  "criterios_calidad": [
+    "Ninguna cifra sobrevive sin origen o sin quedar marcada como pendiente.",
+    "La versión segura se puede publicar tal cual, sin corchetes.",
+    "Las promesas están escritas de forma que puedas cumplirlas en tu peor semana.",
+    "El tono del original se mantiene: se quitan datos, no personalidad."
+  ]
+}

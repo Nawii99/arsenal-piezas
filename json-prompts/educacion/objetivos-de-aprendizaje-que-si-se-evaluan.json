@@ -1,0 +1,38 @@
+{
+  "tarea": "Convertir objetivos de aprendizaje vagos en objetivos observables y medibles, cada uno con su evidencia de logro",
+  "entradas": {
+    "curso": "[NOMBRE DEL CURSO]",
+    "modulos": "[PEGA AQUÍ TU LISTA DE MÓDULOS]",
+    "objetivos_actuales": "[PEGA TUS OBJETIVOS TAL COMO ESTÁN, AUNQUE SEAN MALOS]",
+    "nivel": "[INICIACIÓN / INTERMEDIO / AVANZADO]"
+  },
+  "reglas_de_redaccion": [
+    "Estructura: verbo observable + objeto concreto + condición + criterio de éxito",
+    "Prohibido usar: conocer, entender, comprender, ser consciente, familiarizarse, saber sobre",
+    "Verbos permitidos por nivel: recordar (identificar, listar), aplicar (calcular, redactar, montar), analizar (comparar, diagnosticar), crear (diseñar, producir)",
+    "Un solo verbo por objetivo",
+    "Entre 1 y 3 objetivos por módulo, nunca más"
+  ],
+  "para_cada_objetivo_devuelve": [
+    "Objetivo reescrito",
+    "Nivel cognitivo (recordar, aplicar, analizar o crear)",
+    "Evidencia: qué entrega o hace el alumno para demostrarlo",
+    "Criterio de aprobado en una frase",
+    "Actividad de clase que lo entrena"
+  ],
+  "revision_critica": [
+    "Marca los objetivos originales que eran contenido disfrazado y explica por qué",
+    "Señala objetivos duplicados entre módulos",
+    "Señala módulos sin objetivo de nivel aplicar o superior"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: Módulo | Objetivo original | Objetivo reescrito | Nivel | Evidencia",
+    "bloque_2": "Lista de objetivos descartados con motivo",
+    "bloque_3": "Los 5 objetivos que mejor funcionan como argumento de venta, redactados en segunda persona para la web"
+  },
+  "criterios_calidad": [
+    "Cada objetivo se puede corregir con un sí o un no mirando la evidencia",
+    "Ningún objetivo depende de la opinión del profesor",
+    "El conjunto cubre todos los módulos sin huecos"
+  ]
+}

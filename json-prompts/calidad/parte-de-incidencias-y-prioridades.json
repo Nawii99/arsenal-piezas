@@ -1,0 +1,55 @@
+{
+  "tarea": "Transformar una lista desordenada de fallos y quejas en fichas de incidencia reproducibles y priorizadas.",
+  "contexto": {
+    "quien_lo_usa": "Persona que gestiona sola su web, su tienda y sus automatismos y acumula fallos en notas, chats y correos.",
+    "momento": "Hay mas cosas rotas que tiempo y hace falta un orden defendible.",
+    "objetivo": "Que cada fallo se pueda reproducir, explicar a quien lo arregle y colocar en un orden con criterio."
+  },
+  "entradas": {
+    "lista_de_fallos": "[PEGA AQUI TUS NOTAS, QUEJAS Y CAPTURAS DESCRITAS, TAL CUAL]",
+    "que_te_da_dinero": "[LA VIA PRINCIPAL DE INGRESO: TIENDA, FORMULARIO, TELEFONO, CITA]",
+    "horas_disponibles": "[HORAS QUE PUEDES DEDICAR ESTA SEMANA]",
+    "quien_arregla": "[YO CON IA, UN FREELANCE, EL SOPORTE DE LA HERRAMIENTA]",
+    "fechas_limite": "[CAMPAÑA, TEMPORADA O EVENTO QUE MARQUE PRISA]"
+  },
+  "pasos": [
+    "1. Separa lo que es un fallo de lo que es una mejora o un gusto personal: solo lo primero entra como incidencia.",
+    "2. Convierte cada fallo en ficha: titulo en una linea, pasos para reproducirlo, que esperabas, que pasa de verdad, donde y con que dispositivo.",
+    "3. Marca si es reproducible siempre, a veces o una sola vez, y como se ha comprobado.",
+    "4. Puntua impacto: bloquea la venta, entorpece, molesta, o cosmetico.",
+    "5. Puntua frecuencia: le pasa a todos, a muchos, a pocos, o a un caso raro.",
+    "6. Cruza impacto y frecuencia para dar prioridad de P0 a P3 y explica el porque en una linea.",
+    "7. Estima esfuerzo en minutos u horas y quien deberia hacerlo.",
+    "8. Monta el plan de la semana con las horas disponibles y di explicitamente que se queda fuera."
+  ],
+  "que_mirar": [
+    "Fallos duplicados descritos con palabras distintas por dos personas.",
+    "Quejas que en realidad son un problema de texto poco claro y no un fallo tecnico.",
+    "Fallos que solo ocurren en un navegador o en un movil concreto.",
+    "Fallos silenciosos que nadie reporta pero pierden pedidos, como un correo que no sale.",
+    "Arreglos que se pisan entre si o que dependen de otro previo."
+  ],
+  "errores_tipicos": [
+    "Fichas del tipo no funciona, sin pasos ni dispositivo, imposibles de reproducir.",
+    "Priorizar por lo que mas ruido hace en vez de por lo que mas dinero cuesta.",
+    "Mezclar en una misma ficha tres problemas distintos.",
+    "Cerrar una incidencia sin volver a probarla."
+  ],
+  "restricciones": [
+    "No inventes pasos de reproduccion que no esten en las notas: si faltan, pon que hay que preguntar.",
+    "Cada prioridad debe poder defenderse con impacto y frecuencia.",
+    "El plan semanal no puede superar las horas indicadas."
+  ],
+  "formato_salida": {
+    "bloque_1": "Fichas numeradas con: Titulo | Pasos | Esperado | Observado | Entorno | Reproducible | Impacto | Frecuencia | Prioridad | Esfuerzo | Responsable.",
+    "bloque_2": "Tabla resumen ordenada por prioridad.",
+    "bloque_3": "Plan de la semana con horas asignadas y lo que queda fuera y por que.",
+    "bloque_4": "Lista de incidencias con informacion incompleta y la pregunta exacta que hay que hacer para cerrarlas."
+  },
+  "criterios_calidad": [
+    "Cualquier persona puede reproducir un P0 leyendo solo su ficha.",
+    "No hay dos fichas describiendo el mismo fallo.",
+    "Cada prioridad lleva su justificacion en una linea.",
+    "El plan semanal es realista con las horas disponibles."
+  ]
+}

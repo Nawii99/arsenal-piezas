@@ -1,0 +1,83 @@
+{
+  "tarea": "Rellena la ficha completa de una candidatura: encaje, curriculum adaptado a esta oferta, carta corta y control de envio.",
+  "idioma": "espanol de Espana, tuteando, frases cortas",
+  "candidato": {
+    "nombre": "[TU NOMBRE Y APELLIDOS]",
+    "ciudad": "[TU CIUDAD]",
+    "situacion": "[EJ: CAMBIO DE SECTOR, SIN EXPERIENCIA PREVIA EN TECNOLOGIA]",
+    "puesto_objetivo": "[EJ: SOPORTE TECNICO N1 / QA MANUAL / DATOS JUNIOR]",
+    "disponibilidad": {
+      "incorporacion": "[EJ: INMEDIATA / 15 DIAS]",
+      "modalidad": "[PRESENCIAL / HIBRIDO / REMOTO]",
+      "cambio_de_ciudad": "[SI / NO]",
+      "salario_minimo_bruto_anual_eur": "[EJ: 21000]"
+    },
+    "curriculum_base": "[PEGA AQUI TU CURRICULUM COMPLETO, LARGO, CON TODO: EXPERIENCIA, PROYECTOS, CURSOS, HERRAMIENTAS]"
+  },
+  "oferta": {
+    "empresa": "[NOMBRE EXACTO DE LA EMPRESA, TAL Y COMO SE ESCRIBE]",
+    "puesto": "[TITULO EXACTO DE LA OFERTA]",
+    "portal": "[INFOJOBS / LINKEDIN / TECNOEMPLEO / MANFRED / WEB DE LA EMPRESA]",
+    "url": "[ENLACE DE LA OFERTA]",
+    "correo_destino": "[CORREO DE CONTACTO O 'SE POSTULA POR EL PORTAL']",
+    "salario_publicado": "[BRUTO ANUAL EN EUROS O 'NO LO INDICA']",
+    "contrato": "[INDEFINIDO / TEMPORAL / PRACTICAS / NO LO INDICA]",
+    "texto_integro": "[PEGA EL ANUNCIO ENTERO, SIN RESUMIR]"
+  },
+  "reglas": {
+    "prohibido_inventar": true,
+    "detalle": [
+      "No anadas ni un titulo, ni una herramienta, ni un ano de experiencia que no este en el curriculum base.",
+      "Puedes reordenar, recortar y reescribir con las palabras de la oferta. Nada mas.",
+      "Si un requisito duro no se cumple, dilo en 'requisitos_que_no_cumples'. No lo maquilles.",
+      "Nada de adjetivos vacios: proactivo, apasionado, orientado a resultados.",
+      "Cifras solo si estan en el curriculum base."
+    ]
+  },
+  "devuelve": {
+    "formato": "un unico objeto JSON con esta forma exacta, sin texto alrededor",
+    "esquema": {
+      "id_candidatura": "empresa-puesto-AAAAMMDD, en minusculas y con guiones",
+      "encaje": {
+        "nota_sobre_10": 0,
+        "requisitos_que_cumples": [],
+        "requisitos_que_no_cumples": [],
+        "veredicto": "enviar / enviar solo si adaptas / no merece la pena",
+        "por_que": ""
+      },
+      "curriculum_adaptado": {
+        "titular": "",
+        "resumen": [],
+        "habilidades_ordenadas": [],
+        "experiencia": [
+          {
+            "puesto": "",
+            "donde": "",
+            "cuando": "",
+            "logros": []
+          }
+        ],
+        "que_he_quitado_y_por_que": [],
+        "nombre_archivo": "CV-[TU APELLIDO]-empresa-puesto.pdf"
+      },
+      "carta_presentacion": {
+        "asunto_del_correo": "",
+        "cuerpo": [],
+        "palabras": 0
+      },
+      "revision_antes_de_enviar": {
+        "nombre_de_empresa_correcto_en_todo_el_texto": "si / no",
+        "sin_restos_de_otra_candidatura": "si / no",
+        "correo_destino_verificado": "si / no",
+        "adjunto_en_pdf_y_con_nombre_util": "si / no",
+        "todo_lo_escrito_es_verdad_y_lo_defiendo_en_entrevista": "si / no"
+      },
+      "seguimiento": {
+        "fecha_de_envio": "AAAA-MM-DD",
+        "recordatorio_a_los_dias": 7,
+        "mensaje_de_recordatorio": ""
+      },
+      "riesgos": []
+    }
+  }
+}

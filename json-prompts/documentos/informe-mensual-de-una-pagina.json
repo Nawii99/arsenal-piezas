@@ -1,0 +1,56 @@
+{
+  "tarea": "Convertir los datos del mes en un informe de una pagina con lectura, no solo con numeros",
+  "contexto": {
+    "negocio": "[ACTIVIDAD]",
+    "para_quien": "[YO MISMO, SOCIO, CLIENTE CON CUOTA, INVERSOR, BANCO]",
+    "periodo": "[MES Y AÑO]",
+    "objetivo_del_periodo": "[QUE HABIAS DICHO QUE IBAS A CONSEGUIR]",
+    "nivel_de_detalle": "[RESUMEN O DETALLADO]"
+  },
+  "entradas": {
+    "datos_del_mes": "[PEGA LAS CIFRAS: VENTAS, PEDIDOS, CLIENTES NUEVOS, GASTOS, LO QUE MIDAS]",
+    "datos_del_mes_anterior": "[LAS MISMAS CIFRAS DEL MES PASADO]",
+    "datos_del_mismo_mes_del_año_pasado": "[SI LOS TIENES]",
+    "cosas_que_pasaron": "[CAMPAÑAS, VACACIONES, AVERIAS, UN CLIENTE GRANDE QUE ENTRO O SE FUE]"
+  },
+  "pasos": [
+    "1. Elige como maximo cuatro numeros principales, los que de verdad mueven el negocio, y justifica en una linea por que esos",
+    "2. Para cada numero da: valor del mes, variacion frente al mes anterior en porcentaje y en euros, y variacion frente al año pasado si existe",
+    "3. Explica cada variacion con una causa concreta de la lista de cosas que pasaron, y si no la sabes escribe CAUSA NO IDENTIFICADA",
+    "4. Distingue lo que es tendencia de lo que es un pico puntual",
+    "5. Compara con el objetivo del periodo y di si se ha cumplido, con el desvio en euros",
+    "6. Señala una señal de alarma temprana, aunque el mes haya ido bien",
+    "7. Propon tres acciones para el mes siguiente, cada una con responsable y con el numero que deberia moverse",
+    "8. Cierra con una frase que resuma el mes sin adornos"
+  ],
+  "que_mirar": [
+    "Porcentajes sobre bases pequeñas, que engañan: da siempre tambien el valor absoluto",
+    "Meses con distinto numero de dias laborables o con festivos",
+    "Un solo cliente grande que distorsiona el total",
+    "Ingresos cobrados frente a ingresos facturados: di cual estas usando"
+  ],
+  "errores_tipicos": [
+    "Meter veinte indicadores y no decidir nada",
+    "Celebrar un buen mes provocado por un cobro atrasado del mes anterior",
+    "Comparar solo con el mes anterior en un negocio estacional",
+    "Acciones vagas del tipo mejorar el marketing"
+  ],
+  "restricciones": [
+    "No inventes ninguna cifra ni la estimes: si falta, escribe SIN DATO",
+    "Todo el informe cabe en una pagina",
+    "Nada de lenguaje de consultoria: frases cortas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Titular del mes en una frase",
+    "bloque_2": "Tabla de los cuatro numeros: indicador | mes | mes anterior | variacion | frente al objetivo",
+    "bloque_3": "Tres parrafos cortos: que ha ido bien, que ha ido mal, que no sabemos",
+    "bloque_4": "Señal de alarma temprana",
+    "bloque_5": "Tabla de acciones: accion | responsable | para cuando | numero que debe moverse"
+  },
+  "criterios_calidad": [
+    "Cada cifra del informe sale de los datos entregados",
+    "Las variaciones llevan porcentaje y euros",
+    "Las acciones son concretas y comprobables",
+    "Se lee en tres minutos y se entiende sin explicacion"
+  ]
+}

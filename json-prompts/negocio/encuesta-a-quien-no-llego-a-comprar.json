@@ -1,0 +1,41 @@
+{
+  "tarea": "Crea una encuesta breve para clientes que abandonaron el carrito y el método para analizar sus respuestas",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "producto": "[PRODUCTO O CATEGORÍA]",
+    "canal": "[EMAIL / FORMULARIO EN LA WEB / WHATSAPP]",
+    "incentivo_por_responder": "[NINGUNO / SORTEO / CUPÓN PARA LA PRÓXIMA COMPRA]",
+    "cuantos_carritos_al_mes": "[NÚMERO APROXIMADO]"
+  },
+  "parte_1_encuesta": {
+    "numero_de_preguntas": 5,
+    "estructura": [
+      "1 pregunta cerrada sobre el motivo principal, con 6 opciones y un otros",
+      "2 preguntas cerradas de apoyo (precio percibido y confianza)",
+      "1 pregunta abierta de una línea",
+      "1 pregunta sobre qué haría falta para que comprara hoy"
+    ],
+    "requisitos": [
+      "Se responde en menos de 60 segundos",
+      "Sin preguntas que empujen la respuesta ni opciones que se solapen",
+      "Incluye el email de invitación: asunto, cuerpo de menos de 80 palabras y texto del botón",
+      "Español de España, tuteando"
+    ]
+  },
+  "parte_2_analisis": {
+    "entrada": "[PEGA AQUÍ LAS RESPUESTAS RECIBIDAS]",
+    "pasos": [
+      "1. Agrupa las respuestas abiertas en como mucho 6 motivos",
+      "2. Cuenta cuántas caen en cada motivo y su porcentaje",
+      "3. Separa lo que puedes arreglar de lo que no depende de ti",
+      "4. Propón un arreglo concreto por motivo, con esfuerzo alto/medio/bajo",
+      "5. Marca las 3 frases textuales más reveladoras para usarlas en los textos de la web"
+    ],
+    "formato": "Tabla: motivo | nº de respuestas | % | arreglo propuesto | esfuerzo | frase textual de ejemplo"
+  },
+  "restricciones": [
+    "No interpretes de más: si hay menos de 20 respuestas, avisa de que son pistas y no conclusiones",
+    "No inventes respuestas ni completes las que estén a medias",
+    "Nada de porcentajes sin decir sobre cuántas respuestas están calculados"
+  ]
+}

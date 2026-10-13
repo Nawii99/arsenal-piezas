@@ -1,0 +1,35 @@
+{
+  "tarea": "Generar el diagrama C4 de Nivel 3 (Componentes) del contenedor [NOMBRE DEL CONTENEDOR, POR EJEMPLO 'API DE PEDIDOS'] en Mermaid",
+  "rol": "Arquitecto de software especializado en separar responsabilidades dentro de una aplicación",
+  "contexto": {
+    "contenedor": "[QUÉ HACE ESTE CONTENEDOR EN 2 FRASES]",
+    "funcionalidades": "[LISTA DE COSAS QUE SABE HACER: CREAR PEDIDO, CANCELAR, CALCULAR ENVÍO...]",
+    "tecnologia": "[LENGUAJE Y FRAMEWORK]",
+    "dependencias_externas": "[BASES DE DATOS, COLAS Y APIS QUE USA]",
+    "estructura_actual": "[PEGA EL ÁRBOL DE CARPETAS O ESCRIBE 'NO EXISTE TODAVÍA']"
+  },
+  "pasos": [
+    "Agrupar las funcionalidades en componentes por responsabilidad, no por tipo de fichero",
+    "Separar tres capas: entrada (controladores), reglas de negocio y acceso a datos o servicios externos",
+    "Dibujar las llamadas entre componentes indicando siempre el sentido",
+    "Detectar componentes que hagan demasiadas cosas y proponer cómo partirlos",
+    "Detectar dependencias circulares y marcarlas en rojo en la lista de problemas"
+  ],
+  "restricciones": [
+    "Las reglas de negocio no pueden depender de la base de datos ni del framework web",
+    "Entre 5 y 12 componentes: fuera de ese rango el nivel de detalle es incorrecto",
+    "Nombres en español o inglés, pero coherentes entre sí en todo el diagrama",
+    "No incluir clases sueltas ni funciones: eso es nivel de código, no de componente"
+  ],
+  "formato_salida": {
+    "bloque_1": "Código Mermaid C4Component con Container_Boundary alrededor del contenedor",
+    "bloque_2": "Tabla: componente | responsabilidad | de quién depende | qué se rompe si falla",
+    "bloque_3": "Lista 'Problemas detectados' ordenada por gravedad, con la corrección propuesta en una línea",
+    "bloque_4": "Propuesta de estructura de carpetas coherente con los componentes"
+  },
+  "criterios_calidad": [
+    "Cada componente se puede explicar en una frase sin usar la palabra 'gestiona'",
+    "No hay dependencias circulares o, si las hay, están señaladas explícitamente",
+    "La estructura de carpetas propuesta se corresponde una a una con el diagrama"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tarea": "Diseñar el sistema de autenticación y permisos de la API de [NOMBRE DE TU PRODUCTO]",
+  "contexto": {
+    "consumidores": "[TU APP MÓVIL, TU WEB, CLIENTES EMPRESA, INTEGRADORES EXTERNOS]",
+    "datos_expuestos": "[QUÉ INFORMACIÓN SE PUEDE LEER O MODIFICAR]",
+    "datos_personales": "[SÍ O NO Y DE QUÉ TIPO]",
+    "identidad_actual": "[QUÉ USAS HOY: usuarios en base de datos, Google, Auth0, nada]"
+  },
+  "decide_y_justifica": [
+    "Claves de API, tokens de acceso con caducidad o delegación tipo OAuth, según el consumidor",
+    "Duración del token, si hay token de refresco y cómo se revoca",
+    "Permisos por ámbito: qué puede hacer cada clave y no más",
+    "Dónde se guarda la credencial en cada tipo de cliente y dónde no debe estar nunca",
+    "Rotación programada y procedimiento de emergencia si una clave se filtra"
+  ],
+  "formato_salida": {
+    "recomendacion": "Opción elegida por tipo de consumidor con dos frases de motivo",
+    "tabla_de_ambitos": "Ámbito | qué permite | quién lo obtiene | riesgo si se filtra",
+    "flujo_paso_a_paso": "Cómo se pide, se usa y se renueva la credencial, con ejemplo de cabecera",
+    "errores": "Qué devolver ante credencial ausente, caducada, revocada o sin permisos, con el código HTTP correcto",
+    "checklist_de_implantacion": "Lista de verificación antes de abrir la API al público",
+    "plan_de_fuga": "Pasos exactos si mañana se publica una clave por error"
+  },
+  "restricciones": [
+    "Nunca credenciales en la URL ni en parámetros de consulta",
+    "Nunca una única clave maestra compartida entre todos los clientes",
+    "Las claves se guardan cifradas o troceadas, nunca en texto plano",
+    "Todo por HTTPS y con caducidad definida, sin excepciones"
+  ],
+  "criterios_calidad": [
+    "Se puede revocar el acceso de un solo cliente sin afectar a los demás",
+    "Cada recomendación explica el riesgo que evita en lenguaje llano"
+  ]
+}

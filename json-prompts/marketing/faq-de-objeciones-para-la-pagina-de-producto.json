@@ -1,0 +1,39 @@
+{
+  "tarea": "Escribir el bloque de preguntas frecuentes de una página de producto centrado en resolver las objeciones que frenan la compra",
+  "contexto": {
+    "producto": "[QUÉ VENDES Y QUÉ INCLUYE]",
+    "precio": "[PRECIO Y FORMA DE PAGO]",
+    "cliente": "[A QUIÉN VA DIRIGIDO Y QUÉ LE PREOCUPA]",
+    "alternativas": "[QUÉ HACE HOY EL CLIENTE SI NO TE COMPRA]"
+  },
+  "entradas": {
+    "objeciones_reales": "[LO QUE TE DICEN CUANDO NO COMPRAN]",
+    "garantia_y_devolucion": "[CONDICIONES REALES]",
+    "pruebas": "[CASOS, NÚMEROS, RESEÑAS O CERTIFICACIONES QUE PUEDAS ENSEÑAR]",
+    "limitaciones": "[PARA QUIÉN NO ES ESTE PRODUCTO]"
+  },
+  "procedimiento": [
+    "Ordenar las objeciones por el momento en que aparecen: es para mí, funciona, precio, riesgo, y qué pasa después de comprar",
+    "Escribir 10 o 12 preguntas con las palabras del cliente, incluyendo las incómodas de precio y de comparación",
+    "Responder reconociendo la duda en la primera frase y resolviéndola con un hecho concreto de las entradas",
+    "Usar las pruebas donde más pesan, sin repetir la misma prueba en varias respuestas",
+    "Incluir al menos una pregunta que diga honestamente para quién NO es el producto",
+    "Cerrar cada respuesta con el siguiente paso natural, sin presionar"
+  ],
+  "restricciones": [
+    "Nada de exagerar ni de prometer resultados que dependan del cliente",
+    "No esconder el precio ni las condiciones de devolución",
+    "Máximo 70 palabras por respuesta",
+    "Prohibido usar urgencia falsa o escasez inventada"
+  ],
+  "formato_salida": {
+    "tipo": "bloque markdown listo para pegar en la página",
+    "estructura": ["Pregunta en negrita", "Respuesta", "Orden final recomendado de las preguntas"],
+    "extras": ["Las 3 preguntas que deberían ir también arriba, junto al botón de compra", "2 versiones alternativas de la pregunta sobre el precio para probar cuál funciona mejor"]
+  },
+  "criterios_calidad": [
+    "Cada respuesta se apoya en un dato real de las entradas",
+    "Aparecen las objeciones incómodas, no solo las fáciles",
+    "Después de leer el bloque no queda ninguna duda razonable sin resolver"
+  ]
+}

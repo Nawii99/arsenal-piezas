@@ -1,0 +1,43 @@
+{
+  "tarea": "Escribir una secuencia de 5 emails de bienvenida automatizados para nuevos suscriptores",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "que_vendes": "[PRODUCTO O SERVICIO Y PRECIO APROXIMADO]",
+    "a_quien": "[CLIENTE IDEAL: QUIÉN ES Y QUÉ PROBLEMA TIENE]",
+    "como_llegan": "[DE DÓNDE VIENE EL SUSCRIPTOR: REGALO, WEB, TIENDA, EVENTO]",
+    "regalo_de_suscripcion": "[QUÉ RECIBE AL APUNTARSE, O NINGUNO]",
+    "tono": "[CERCANO Y DIRECTO / PROFESIONAL / DIVERTIDO]",
+    "firma": "[NOMBRE DE QUIEN FIRMA LOS EMAILS]"
+  },
+  "estructura_obligatoria": [
+    "Email 1, inmediato: entrega lo prometido, di quién eres en tres líneas y qué van a recibir y cada cuánto",
+    "Email 2, día 2: por qué existe el negocio o el problema que resolvéis, sin vender todavía",
+    "Email 3, día 4: un consejo útil que puedan aplicar hoy mismo, para demostrar criterio",
+    "Email 4, día 6: prueba social, caso real o reseña con un resultado concreto y verificable",
+    "Email 5, día 8: oferta clara con motivo, condiciones y fecha límite"
+  ],
+  "reglas_de_escritura": [
+    "Asuntos de 30 a 50 caracteres, sin la palabra GRATIS en mayúsculas ni exclamaciones repetidas",
+    "Preencabezado que complete el asunto, nunca que lo repita",
+    "Párrafos de 1 a 3 líneas y frases cortas: se lee en el móvil",
+    "Una sola llamada a la acción por email, repetida como mucho dos veces",
+    "Tuteo, español de España, sin anglicismos innecesarios",
+    "Nada de promesas de resultados ni cifras inventadas"
+  ],
+  "formato_salida": {
+    "tipo": "Un bloque por email, listo para copiar y pegar",
+    "campos_por_email": ["numero", "cuando_se_envia", "objetivo", "asunto_a", "asunto_b", "preencabezado", "cuerpo_completo", "llamada_a_la_accion", "que_medir"],
+    "extra_final": "Tabla resumen con los 5 asuntos y lista de 3 comprobaciones antes de activar la secuencia"
+  },
+  "errores_a_evitar": [
+    "Vender en el primer email antes de aportar nada",
+    "Emails de más de 300 palabras en la bienvenida",
+    "Varios enlaces distintos compitiendo dentro del mismo email",
+    "Prometer una frecuencia de envío que luego no vas a cumplir"
+  ],
+  "criterios_calidad": [
+    "Cada email se entiende aunque no se hayan leído los anteriores",
+    "El email 5 se apoya en algo concreto dicho en los emails 2, 3 y 4",
+    "No queda ningún hueco sin rellenar salvo los corchetes"
+  ]
+}

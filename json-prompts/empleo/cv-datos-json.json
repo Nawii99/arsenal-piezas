@@ -1,0 +1,32 @@
+{
+  "rol": "Eres un redactor de currículums para el mercado laboral español. Escribes claro, sin humo y sin inventar nada.",
+  "tarea": "Convierte los datos del candidato en un currículum de una página, listo para pegar en la plantilla que te indique el campo formato_salida.",
+  "candidato": {
+    "nombre": "[TU NOMBRE]",
+    "puesto_objetivo": "[PUESTO AL QUE ASPIRAS]",
+    "ciudad": "[CIUDAD]",
+    "contacto": {
+      "email": "[TU EMAIL]",
+      "telefono": "[TU TELÉFONO]",
+      "linkedin": "[URL DE TU PERFIL, O DÉJALO VACÍO]"
+    },
+    "experiencia": [
+      {
+        "empresa": "[EMPRESA]",
+        "puesto": "[PUESTO]",
+        "fechas": "[MES/AÑO - MES/AÑO]",
+        "logros": "[QUÉ CONSEGUISTE, CON CIFRAS SOLO SI LAS TIENES]"
+      }
+    ],
+    "formacion": "[TÍTULOS Y CURSOS, DEL MÁS RECIENTE AL MÁS ANTIGUO]",
+    "habilidades": "[HERRAMIENTAS E IDIOMAS QUE MANEJAS DE VERDAD]"
+  },
+  "reglas": [
+    "No inventes datos, fechas ni cifras. Si falta algo, escribe [PENDIENTE] y lístalo al final.",
+    "Máximo una página. Frases cortas y verbos de acción.",
+    "Nada de foto, edad ni estado civil: en España no hacen falta y pueden jugar en contra.",
+    "Escribe en español de España salvo que el puesto pida otro idioma.",
+    "Duplica la entrada de experiencia tantas veces como trabajos tenga el candidato."
+  ],
+  "formato_salida": "[ELIGE: texto plano con secciones en mayúsculas / HTML en un solo archivo / código Typst / código LaTeX compatible con la plantilla que pegaré después]"
+}

@@ -1,0 +1,56 @@
+{
+  "tarea": "Construir una previsión de caja semana a semana para las próximas 13 semanas y marcar en qué semanas el saldo baja del colchón mínimo",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "forma_juridica": "[AUTÓNOMO O SOCIEDAD]",
+    "quien_lo_usa": "El dueño del negocio, sin formación financiera, en España",
+    "herramienta_destino": "[GOOGLE SHEETS / EXCEL / PAPEL]"
+  },
+  "entradas": {
+    "saldo_bancario_hoy": "[IMPORTE EN EUROS Y FECHA DE HOY]",
+    "cobros_comprometidos": "[LISTA: CLIENTE, IMPORTE, FECHA PREVISTA DE COBRO, FACTURADO SÍ/NO]",
+    "ventas_recurrentes": "[IMPORTE MEDIO QUE ENTRA CADA SEMANA POR VENTA DIRECTA O TIENDA]",
+    "gastos_fijos": "[ALQUILER, CUOTA DE AUTÓNOMOS, NÓMINAS, SEGUROS, SUSCRIPCIONES: IMPORTE Y DÍA DE CARGO]",
+    "gastos_variables": "[COMPRAS A PROVEEDOR, COMISIONES DE COBRO, ENVÍOS: IMPORTE O PORCENTAJE SOBRE VENTA]",
+    "impuestos_previstos": "[IMPORTES Y FECHAS DE 303 Y 130 SI LOS SABES; SI NO, DÉJALO VACÍO]",
+    "prestamos": "[CUOTA MENSUAL Y DÍA DE CARGO]",
+    "colchon_minimo": "[IMPORTE POR DEBAJO DEL CUAL ME PONGO NERVIOSO]"
+  },
+  "procedimiento": [
+    "1. Fija la semana 1 como la del lunes más próximo y numera hasta la 13 con su rango de fechas reales",
+    "2. Trabaja SOLO con dinero que entra o sale de la cuenta, con IVA incluido; una factura emitida no es un cobro",
+    "3. Retrasa cada cobro de cliente al plazo real observado, no al pactado: si suelen pagar a 45 días, ponlo a 45",
+    "4. Si faltan impuestos, estima IVA como (IVA repercutido menos soportado del trimestre) y colócalo el día 20 de enero, abril, julio y octubre",
+    "5. Reparte los gastos fijos en la semana en la que cae el cargo, no prorrateados",
+    "6. Calcula por semana: entradas, salidas, flujo neto y saldo final acumulado",
+    "7. Marca en rojo las semanas con saldo final por debajo del colchón mínimo y en ámbar las que quedan a menos del 20% por encima",
+    "8. Haz un escenario pesimista: cobros retrasados 30 días más y ventas recurrentes un 25% abajo",
+    "9. Propón para cada semana en rojo 3 palancas concretas con el importe que aporta cada una y los días que tarda en hacer efecto"
+  ],
+  "restricciones": [
+    "No inventes ingresos futuros que no estén respaldados por un pedido, un contrato o una media histórica",
+    "No mezcles beneficio con caja ni menciones amortizaciones",
+    "Trata el IVA cobrado como dinero ajeno: señálalo aparte del saldo disponible",
+    "Si falta un dato clave, pídelo antes de calcular; máximo 5 preguntas"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Dar por cobrada la factura el día que se emite",
+    "Olvidar la cuota de autónomos, el seguro anual o la paga extra",
+    "Contar el IVA repercutido como beneficio disponible",
+    "Poner los impuestos prorrateados por meses en vez del día real de pago"
+  ],
+  "formato_salida": {
+    "1_tabla_semanal": "Columnas: semana, fechas, entradas, salidas, flujo neto, saldo final, semáforo",
+    "2_lista_de_riesgo": "Semanas en rojo con importe que falta y fecha límite para actuar",
+    "3_escenario_pesimista": "Misma tabla resumida a saldo final por semana",
+    "4_plan": "Máximo 6 acciones, cada una con importe estimado, plazo y a quién hay que llamar",
+    "5_hoja_de_calculo": "Bloque CSV con la tabla semanal listo para pegar en Sheets",
+    "estilo": "Español llano, tuteando, sin jerga contable"
+  },
+  "criterios_calidad": [
+    "La suma de saldo inicial más flujos de las 13 semanas cuadra con el saldo final mostrado",
+    "Todas las fechas son reales y futuras",
+    "Cada acción propuesta se puede ejecutar esta misma semana sin ayuda externa",
+    "El dueño entiende la tabla sin que nadie se la explique"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "tarea": "Diseñar un proyecto final por fases para un curso, con entregables, plazos y evaluación",
+  "contexto": {
+    "curso": "[NOMBRE DEL CURSO]",
+    "duracion_total": "[SEMANAS O SESIONES]",
+    "resultado_final": "[QUÉ DEBE TENER TERMINADO EL ALUMNO AL ACABAR]",
+    "recursos": "[HERRAMIENTAS, DATOS O MATERIALES A SU ALCANCE]",
+    "modalidad": "[INDIVIDUAL O EN EQUIPOS DE X PERSONAS]",
+    "horas_semanales_del_alumno": "[HORAS REALISTAS FUERA DE CLASE]"
+  },
+  "instrucciones": [
+    "Divide el proyecto en 4 o 5 fases, cada una con un entregable pequeño que se pueda revisar en menos de 10 minutos",
+    "La fase 1 debe cerrar el alcance para evitar proyectos imposibles: incluye una plantilla de una página que el alumno rellena y tú apruebas",
+    "Define para cada fase: objetivo, entregable, formato del entregable, tiempo estimado y qué feedback recibe",
+    "Marca en qué fase suele abandonarse la gente y qué punto de control lo evita",
+    "Propón 6 ideas de proyecto de distinta ambición para quien no sepa qué hacer",
+    "Añade una rúbrica final de 5 criterios con descriptores de qué es un 4, un 7 y un 9"
+  ],
+  "restricciones": [
+    "El esfuerzo total debe caber en las horas semanales indicadas",
+    "Nada de entregables que dependan de comprar herramientas de pago",
+    "Cada entregable tiene que ser evaluable sin ver el resto del trabajo",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "secciones": ["resumen del proyecto en 5 líneas para presentarlo el primer día", "tabla de fases con fechas relativas", "plantilla de alcance de la fase 1", "catálogo de 6 ideas", "rúbrica final", "señales de alarma para el profesor"]
+  },
+  "criterios_calidad": [
+    "El alumno sabe desde el día 1 qué tendrá terminado el último día",
+    "Ninguna fase depende de que la anterior salga perfecta",
+    "La rúbrica se entiende sin explicación oral"
+  ]
+}

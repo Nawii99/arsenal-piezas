@@ -1,0 +1,56 @@
+{
+  "tarea": "Generar y validar los datos estructurados de [URL_WEB] para mejorar cómo se ve en los resultados de Google",
+  "contexto": {
+    "negocio": "[NOMBRE, ACTIVIDAD Y CIUDAD]",
+    "tipo_de_pagina": "[NEGOCIO LOCAL / PRODUCTO / SERVICIO / ARTÍCULO / EVENTO / RECETA / PREGUNTAS FRECUENTES]",
+    "perfil_lector": "Sin conocimientos técnicos, pega un bloque de código en el HTML"
+  },
+  "entradas": {
+    "datos_del_negocio": "[NOMBRE, DIRECCIÓN, TELÉFONO, HORARIOS, ZONAS QUE ATIENDE, REDES]",
+    "datos_del_producto_o_servicio": "[NOMBRE, DESCRIPCIÓN, PRECIO, DISPONIBILIDAD, IMÁGENES]",
+    "opiniones_reales": "[NÚMERO DE RESEÑAS Y NOTA MEDIA, CON SU FUENTE]",
+    "preguntas_frecuentes": "[PREGUNTAS Y RESPUESTAS QUE YA APARECEN EN LA PÁGINA]"
+  },
+  "procedimiento": [
+    "1. Identifica qué tipo de marcado corresponde a cada página; no mezcles tipos que no encajan",
+    "2. Comprueba que todo lo que vas a marcar está también visible para el visitante en esa misma página",
+    "3. Rellena primero las propiedades obligatorias y luego las recomendadas que aporten información real",
+    "4. Escribe horarios, precios y fechas en el formato exacto que exige el estándar",
+    "5. Enlaza entre sí los bloques cuando corresponda: la organización, la página y el producto",
+    "6. Inserta el bloque en formato JSON-LD dentro del HTML, uno por página",
+    "7. Valida con la prueba de resultados enriquecidos y corrige errores y avisos",
+    "8. Vuelve a rastrear la página desde Search Console y espera a que aparezca en el informe"
+  ],
+  "que_mirar": [
+    "Las opiniones marcadas deben ser reales y estar publicadas en la propia página",
+    "Los horarios se escriben con días abreviados y horas en formato de 24 horas",
+    "El precio va sin símbolo de moneda y la moneda en su propia propiedad",
+    "Una misma información no debe declararse dos veces con datos distintos",
+    "Marcar no garantiza que Google lo muestre: es una candidatura, no una orden"
+  ],
+  "errores_tipicos": [
+    "Inventarse valoraciones: es motivo de penalización manual",
+    "Marcar preguntas frecuentes que no están escritas en la página",
+    "Dejar datos de ejemplo del generador sin sustituir",
+    "Copiar el bloque en todas las páginas con el mismo contenido",
+    "Olvidar actualizar los precios marcados cuando cambian en la web"
+  ],
+  "restricciones": [
+    "Solo información verificable y visible en la página",
+    "Usa siempre JSON-LD, no marcado dentro de las etiquetas",
+    "No propongas ningún tipo de marcado que Google haya dejado de usar"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Qué tipos de marcado tocan en esta web y qué resultado visual se puede esperar",
+    "2_bloques_json_ld": "Un bloque completo por página, listo para pegar antes del cierre del head",
+    "3_tabla_de_datos": "Qué dato va en cada propiedad y de dónde sale",
+    "4_validacion": "Pasos para validar y qué significa cada error y aviso frecuente",
+    "5_mantenimiento": "Qué hay que actualizar cuando cambian precios, horarios o reseñas"
+  },
+  "criterios_calidad": [
+    "El validador no devuelve ningún error",
+    "Todos los datos marcados aparecen también visibles en la página",
+    "Cada página tiene su bloque propio, sin copias idénticas",
+    "No hay ninguna valoración ni dato no verificable"
+  ]
+}

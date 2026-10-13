@@ -1,0 +1,44 @@
+{
+  "tarea": "Redactar el manual de incorporación de una persona nueva con un plan de sus primeros 30 días.",
+  "contexto": {
+    "empresa": "[NOMBRE Y A QUÉ SE DEDICA EN UNA FRASE]",
+    "puesto": "[PUESTO QUE SE INCORPORA]",
+    "modalidad": "[PRESENCIAL, REMOTO O MIXTO]",
+    "responsable_acogida": "[QUIÉN LE ACOMPAÑA]"
+  },
+  "entradas": {
+    "tareas_del_puesto": "[QUÉ VA A HACER EN SU DÍA A DÍA]",
+    "herramientas_y_accesos": "[PROGRAMAS, CORREO, CARPETAS, MÓVIL, LLAVES]",
+    "personas_clave": "[NOMBRE | PARA QUÉ ACUDIR A ELLA]",
+    "resultado_al_mes": "[QUÉ DEBE SABER HACER SOLA A LOS 30 DÍAS]"
+  },
+  "instrucciones": [
+    "Divide el plan en día 1, semana 1, semana 2 y semanas 3-4, con objetivos concretos en cada tramo.",
+    "En el día 1 pon solo lo imprescindible: accesos, presentaciones y una tarea real pequeña.",
+    "Asocia cada bloque a una persona de referencia y a un momento de repaso.",
+    "Añade la lista de accesos que debe preparar la empresa ANTES de que llegue.",
+    "Incluye las normas internas de verdad: horarios, vacaciones, gastos, canales de comunicación.",
+    "Termina con las 10 preguntas frecuentes que hace todo el mundo al entrar."
+  ],
+  "restricciones": [
+    "No incluyas contraseñas: indica a quién se las pide.",
+    "Nada de frases motivacionales ni de valores vacíos.",
+    "Marca como [POR COMPLETAR] lo que no te haya dado el usuario."
+  ],
+  "formato_salida": {
+    "tipo": "documento markdown imprimible",
+    "secciones": [
+      "Bienvenida y a qué nos dedicamos, en 10 líneas",
+      "Checklist de preparación previa para la empresa",
+      "Plan día 1 / semana 1 / semana 2 / semanas 3-4",
+      "Quién es quién y para qué acudir a cada uno",
+      "Normas prácticas del día a día",
+      "Preguntas frecuentes"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada tramo tiene un resultado comprobable, no solo lecturas.",
+    "Se puede entregar tal cual el primer día sin retocar nada."
+  ],
+  "tono": "Cercano, concreto y tuteando"
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Comparar mi negocio local con los competidores de mi zona y darme un plan de mejora priorizado",
+  "entradas": {
+    "mi_negocio": "[NOMBRE, TIPO DE NEGOCIO Y DIRECCIÓN]",
+    "mi_ficha": "[NOTA MEDIA, NÚMERO DE RESEÑAS, HORARIO, FOTOS, SERVICIOS QUE TIENES PUBLICADOS]",
+    "zona": "[BARRIO O CIUDAD Y RADIO EN KILÓMETROS]",
+    "busqueda_clave": "[LO QUE ESCRIBE TU CLIENTE EN GOOGLE, POR EJEMPLO PELUQUERÍA EN CHAMBERÍ]",
+    "competidores": "[PEGA AQUÍ DE 3 A 6 COMPETIDORES CON SU NOTA, RESEÑAS, HORARIO, SERVICIOS Y PRECIOS SI SE VEN]"
+  },
+  "pasos": [
+    "Ordena a todos por nota y por número de reseñas y explica qué pesa más en cada caso",
+    "Compara horarios y detecta franjas en las que nadie abre",
+    "Compara servicios publicados y encuentra los que solo ofrezco yo o solo ofrecen ellos",
+    "Analiza si responden a las reseñas y con qué tono",
+    "Revisa fotos, descripción y publicaciones de la ficha: cantidad, actualidad y calidad aparente",
+    "Estima el ritmo de reseñas nuevas al mes de cada uno"
+  ],
+  "restricciones": [
+    "Nada de tácticas contra las normas: ni reseñas falsas ni pedir que dejen reseñas a cambio de descuento",
+    "Solo información pública de las fichas",
+    "Marca como estimación todo lo que no se pueda contar exactamente"
+  ],
+  "formato_salida": {
+    "1_tabla": "Negocio, nota, reseñas, ritmo de reseñas, horario, servicios diferenciales, respuesta a reseñas",
+    "2_mi_posicion": "En qué puesto estoy y qué me separa del primero",
+    "3_huecos": "Horarios, servicios y públicos que nadie está cubriendo en la zona",
+    "4_plan": "10 acciones ordenadas por impacto y esfuerzo, con la primera que puedo hacer hoy mismo",
+    "5_resenas": "Guion honesto de 3 líneas para pedir reseñas a clientes contentos"
+  },
+  "criterios_calidad": [
+    "Las 10 acciones se hacen desde el móvil o el ordenador, sin contratar a nadie",
+    "Cada hueco detectado se apoya en un dato de la tabla",
+    "Nada de trucos que puedan suponer la suspensión de la ficha"
+  ]
+}

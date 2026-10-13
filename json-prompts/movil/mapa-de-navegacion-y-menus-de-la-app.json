@@ -1,0 +1,37 @@
+{
+  "tarea": "Organizar la arquitectura de información de una app móvil y proponer el sistema de navegación: qué va en el menú principal, qué en niveles inferiores y qué se elimina",
+  "entradas": {
+    "app": "[NOMBRE Y PARA QUÉ SIRVE]",
+    "funciones_actuales": "[LISTA COMPLETA DE PANTALLAS Y FUNCIONES, AUNQUE ESTÉ DESORDENADA]",
+    "tipos_de_usuario": "[PERFILES QUE USAN LA APP]",
+    "tareas_mas_frecuentes": "[LAS 3 COSAS QUE MÁS SE HACEN]",
+    "plataforma": "[iOS, ANDROID O AMBAS]"
+  },
+  "metodo": [
+    "1. Agrupar las funciones por el objetivo del usuario, no por cómo está organizada tu empresa",
+    "2. Nombrar cada grupo con la palabra que usaría un cliente, no con jerga interna",
+    "3. Asignar a cada grupo una frecuencia de uso: diaria, semanal, rara",
+    "4. Reservar la barra inferior para lo de uso diario, máximo 5 apartados",
+    "5. Mandar lo de uso raro a Ajustes o a Perfil",
+    "6. Comprobar que ninguna tarea frecuente necesita más de 3 toques",
+    "7. Decidir si hace falta buscador y qué debe encontrar"
+  ],
+  "formato_salida": {
+    "mapa": "Árbol en texto con sangría: nivel 1, nivel 2 y nivel 3",
+    "tabla_menu": ["Apartado del menú inferior", "Icono sugerido", "Qué contiene", "Frecuencia de uso"],
+    "tabla_rutas": ["Tarea frecuente", "Camino exacto de toques", "Nº de toques"],
+    "decisiones": "Lista de qué se ha movido, fusionado o eliminado y el motivo de cada cambio",
+    "dudas": "Apartados cuyo nombre habría que validar con usuarios reales"
+  },
+  "restricciones": [
+    "Nada de menú lateral oculto como navegación principal",
+    "Nombres de apartado de una o dos palabras",
+    "No inventar funciones que no estén en la lista de entrada"
+  ],
+  "criterios_calidad": [
+    "Las 3 tareas frecuentes se hacen en 3 toques o menos",
+    "Cada función de la lista original aparece en algún sitio del mapa",
+    "Un desarrollador entiende la estructura sin preguntar nada"
+  ],
+  "tono": "Práctico y directo, español de España"
+}

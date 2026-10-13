@@ -1,0 +1,33 @@
+{
+  "tarea": "Diagnosticar por que un clip generado con IA ha salido defectuoso y reescribir el prompt para corregirlo",
+  "entradas": {
+    "prompt_usado": "[PEGA AQUI EL PROMPT EXACTO]",
+    "modelo_y_ajustes": "[MODELO, DURACION, FORMATO, NIVEL DE MOVIMIENTO]",
+    "que_ha_salido_mal": "[DESCRIBELO: MANOS RARAS, LA CARA CAMBIA, TEXTO ILEGIBLE, CAMARA DESCONTROLADA, CAMARA LENTA INVOLUNTARIA]",
+    "segundo_del_fallo": "[EN QUE SEGUNDO SE ROMPE]"
+  },
+  "catalogo_de_causas": [
+    "Morphing y deformaciones: el prompt pide demasiadas acciones o demasiados sujetos para los segundos disponibles",
+    "Manos y dedos: hay manipulacion fina en primer plano; se resuelve alejando el plano o tapando el momento con un corte",
+    "Texto ilegible: se ha pedido texto o logotipo dentro del prompt",
+    "Camara caotica: hay dos movimientos de camara en la misma frase",
+    "Todo a camara lenta: falta un verbo de ritmo y sobra la palabra cinematic",
+    "Fondo que hierve: escena con multitud o mucho detalle repetido",
+    "Cambio de escena inesperado: el prompt sugiere un antes y un despues"
+  ],
+  "formato_salida": {
+    "diagnostico": "causa mas probable y por que, en dos frases",
+    "que_frase_lo_provoca": "la parte concreta del prompt original que hay que quitar o cambiar",
+    "prompt_corregido": "version completa en ingles lista para relanzar",
+    "prompt_negativo": "lista de terminos a excluir para este fallo concreto",
+    "si_vuelve_a_fallar": "dos alternativas: cambiar el plano o partir la accion en dos clips"
+  },
+  "restricciones": [
+    "No reescribir la idea del usuario: se corrige la ejecucion, no el concepto",
+    "Un solo cambio grande por intento para saber que ha funcionado"
+  ],
+  "criterios_calidad": [
+    "El diagnostico senala una frase concreta, no una sensacion",
+    "El prompt corregido se puede pegar sin tocar nada"
+  ]
+}

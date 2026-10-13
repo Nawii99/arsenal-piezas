@@ -1,0 +1,36 @@
+{
+  "tarea": "Convertir una hoja de calculo plana en un modelo relacional normalizado hasta 3FN y entregar el plan de migracion de los datos",
+  "entradas": {
+    "cabeceras": "[PEGA AQUI LA FILA DE CABECERAS DE TU EXCEL]",
+    "filas_ejemplo": "[PEGA 5 FILAS REALES O INVENTADAS PERO REALISTAS]",
+    "filas_totales": "[Nº APROXIMADO DE FILAS]",
+    "motor_destino": "[PostgreSQL | MySQL | SQLite]"
+  },
+  "metodo": [
+    "Inferir el tipo real de cada columna y detectar columnas que mezclan dos datos distintos",
+    "Detectar grupos repetidos (columnas producto1, producto2...) y convertirlos en filas de una tabla hija",
+    "Detectar dependencias funcionales y separar en tablas hasta cumplir 3FN",
+    "Proponer una clave natural o sustituta para cada tabla nueva",
+    "Marcar los valores sucios: duplicados, formatos de fecha mezclados, campos vacios, texto en columnas numericas"
+  ],
+  "restricciones": [
+    "No pierdas ninguna columna: cada columna original debe aparecer mapeada en la salida",
+    "Si desnormalizas algo a proposito, justifica por que en una frase",
+    "Fechas siempre en tipo fecha, nunca texto; importes en decimal(10,2)",
+    "No propongas herramientas de pago"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Lista de problemas encontrados en la hoja, ordenados por gravedad",
+    "2_modelo": "Tablas propuestas con sus campos y tipos, en tablas markdown",
+    "3_mapa": "Tabla de equivalencias: columna original -> tabla.campo destino -> transformacion necesaria",
+    "4_sql": "CREATE TABLE de las tablas nuevas",
+    "5_migracion": "Pasos numerados para importar el CSV y repartirlo en las tablas, con las consultas INSERT/SELECT",
+    "6_comprobaciones": "3 consultas SQL para verificar que no se ha perdido ni duplicado nada tras la importacion"
+  },
+  "criterios_calidad": [
+    "Toda columna original tiene destino o una razon explicita para descartarse",
+    "Ninguna tabla final tiene columnas repetidas del tipo campo1, campo2",
+    "Las consultas de comprobacion devuelven cero filas si todo ha ido bien"
+  ],
+  "tono": "Practico, paso a paso, espanol de Espana"
+}

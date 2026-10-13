@@ -1,0 +1,38 @@
+{
+  "tarea": "Crear el sistema de tokens de diseño (color, tipografía, espaciado, bordes y sombras) de la interfaz de [NOMBRE DEL PRODUCTO]",
+  "contexto": {
+    "producto": "[QUÉ HACE EL PRODUCTO EN UNA FRASE]",
+    "tipo_de_interfaz": "[WEB / APP MÓVIL / PANEL DE ADMINISTRACIÓN]",
+    "personalidad_de_marca": "[3 ADJETIVOS: POR EJEMPLO CERCANA, SERIA, MODERNA]",
+    "color_principal": "[CÓDIGO HEX O ESCRIBE NINGUNO]",
+    "entrega_final": "[CSS / TAILWIND / FIGMA / NO LO SÉ]"
+  },
+  "entradas": {
+    "modo_oscuro": "[SÍ / NO]",
+    "densidad": "[CÓMODA / COMPACTA]",
+    "idiomas": "[ES / ES Y EN]"
+  },
+  "pasos": [
+    "Definir 5 familias de color con 9 tonos cada una: neutro, principal, éxito, aviso y error",
+    "Asignar roles semánticos (fondo, superficie, borde, texto principal, texto atenuado, acento) en lugar de nombres de color",
+    "Definir una escala tipográfica de 6 tamaños con altura de línea y grosor para cada uno",
+    "Definir espaciados en múltiplos de 4 px, 3 radios de borde y 3 niveles de sombra",
+    "Comprobar el contraste de cada pareja texto/fondo y marcar las que no lleguen al mínimo"
+  ],
+  "restricciones": [
+    "Máximo 2 familias tipográficas y usa fuentes gratuitas de Google Fonts",
+    "Nada de colores sueltos fuera de la escala definida",
+    "Cada token lleva nombre, valor y una frase de cuándo usarlo",
+    "Contraste mínimo 4.5:1 en texto normal y 3:1 en texto grande y en bordes de campos"
+  ],
+  "formato_salida": {
+    "tipo": "tabla más bloque de código",
+    "secciones": ["Tabla de tokens con nombre, valor en claro, valor en oscuro y uso", "Bloque de variables CSS listo para pegar", "Lista de avisos de contraste que no pasan y cómo corregirlos"]
+  },
+  "criterios_calidad": [
+    "Todos los textos pasan el contraste mínimo indicado",
+    "Ningún token se llama por su color, sino por su función",
+    "Otra persona podría maquetar una pantalla nueva sin preguntar nada"
+  ],
+  "tono": "directo y práctico, sin adornos"
+}

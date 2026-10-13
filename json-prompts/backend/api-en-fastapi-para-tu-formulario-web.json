@@ -1,0 +1,37 @@
+{
+  "tarea": "Crea una API sencilla en Python con FastAPI que reciba los envíos de mi formulario web, los valide, los guarde y me avise por email",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD]",
+    "campos_del_formulario": "[EJ. nombre, email, teléfono, mensaje, presupuesto]",
+    "donde_guardar": "[SQLITE / GOOGLE SHEETS / CSV]",
+    "email_de_aviso": "[TU EMAIL]",
+    "dominio_de_la_web": "[https://TUDOMINIO.COM]"
+  },
+  "requisitos_funcionales": [
+    "Endpoint POST /contacto que reciba JSON y devuelva un mensaje amable",
+    "Validación con Pydantic: email correcto, teléfono en formato español, campos obligatorios",
+    "Campo trampa antispam y límite de envíos por IP y minuto",
+    "Guardado con fecha, hora y origen de la petición",
+    "Aviso por email al recibir un envío, sin retrasar la respuesta al visitante",
+    "Endpoint GET /salud para comprobar que la API sigue viva"
+  ],
+  "requisitos_de_seguridad": [
+    "CORS limitado a mi dominio, nunca abierto a todos los orígenes",
+    "Claves y contraseñas en variables de entorno, jamás en el código",
+    "Mensajes de error que no revelen detalles internos",
+    "Aviso de qué debo cumplir en consentimiento y protección de datos"
+  ],
+  "formato_salida": {
+    "1_estructura": "Árbol de ficheros del proyecto",
+    "2_codigo": "main.py, modelos y un fichero .env.ejemplo, comentados en español",
+    "3_html": "Fragmento de formulario HTML con la llamada a la API",
+    "4_local": "Cómo levantarla en mi ordenador y probarla",
+    "5_publicacion": "Pasos para publicarla en un servicio gratuito o barato",
+    "6_pruebas": "Comandos para probar un envío correcto, uno inválido y uno de spam"
+  },
+  "criterios_calidad": [
+    "Funciona en local siguiendo los pasos, sin tocar nada más",
+    "Un envío con email inválido devuelve un error claro y no se guarda",
+    "No hay ninguna credencial escrita dentro del código"
+  ]
+}

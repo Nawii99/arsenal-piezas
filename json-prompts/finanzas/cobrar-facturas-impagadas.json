@@ -1,0 +1,56 @@
+{
+  "tarea": "Diseñar la secuencia completa de reclamación de una factura vencida y escribir los mensajes listos para enviar",
+  "contexto": {
+    "pais": "España",
+    "relacion": "[CLIENTE RECURRENTE / PUNTUAL / ACABADO DE ENTRAR]",
+    "quiero_conservar_al_cliente": "[SÍ / ME DA IGUAL / NO]"
+  },
+  "entradas": {
+    "importe": "[IMPORTE TOTAL CON IVA]",
+    "fecha_factura": "[FECHA DE EMISIÓN]",
+    "fecha_vencimiento": "[FECHA PACTADA DE PAGO]",
+    "dias_de_retraso": "[NÚMERO DE DÍAS]",
+    "contacto": "[NOMBRE, CARGO Y CANAL HABITUAL: EMAIL, WHATSAPP, TELÉFONO]",
+    "historial": "[¿HA PAGADO TARDE ANTES? ¿CUÁNTAS VECES?]",
+    "que_le_sigo_prestando": "[SERVICIO ACTIVO, ENTREGAS PENDIENTES O NADA]",
+    "excusas_recibidas": "[LO QUE TE HAN DICHO, LITERAL]",
+    "pruebas": "[PRESUPUESTO FIRMADO, EMAIL DE ACEPTACIÓN, ALBARÁN, CHAT]"
+  },
+  "procedimiento": [
+    "1. Clasifica el caso: despiste, problema de tesorería del cliente, disputa sobre el trabajo o impago deliberado; cada uno se trata distinto",
+    "2. Monta la escalera por días desde el vencimiento: día 1 recordatorio neutro, día 7 recordatorio firme con factura adjunta, día 15 llamada con resumen escrito después, día 21 aviso de suspensión de servicio, día 30 aviso de reclamación formal",
+    "3. En cada peldaño sube solo un grado el tono; nunca amenaces con algo que no vayas a hacer",
+    "4. Escribe cada mensaje entero, con asunto, importe, número de factura, fecha de vencimiento, IBAN y una fecha límite concreta",
+    "5. Incluye siempre una salida fácil: enlace de pago o calendario de dos plazos con fechas cerradas",
+    "6. Si es disputa sobre el trabajo, separa la parte no discutida y pide su cobro mientras se resuelve el resto",
+    "7. Prepara la respuesta a las tres excusas más habituales: lo tiene administración, estamos cerrando mes, no me ha llegado la factura",
+    "8. Explica cuándo tiene sentido reclamar por escrito de forma fehaciente y qué documentación hay que tener guardada antes de llegar ahí",
+    "9. Cierra con las cláusulas a meter en el próximo presupuesto para que no se repita"
+  ],
+  "restricciones": [
+    "Nada de insultos, amenazas veladas ni presión en público o en redes",
+    "No prometas acciones legales concretas ni plazos judiciales: remite a un abogado o gestor para ese paso",
+    "Mensajes cortos: el de email no pasa de 120 palabras, el de WhatsApp no pasa de 50",
+    "El importe, el número de factura y la fecha aparecen siempre en las dos primeras líneas"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Pedir disculpas por reclamar lo tuyo",
+    "Reclamar solo por WhatsApp sin dejar rastro por escrito con la factura adjunta",
+    "Seguir entregando trabajo mientras la deuda crece",
+    "Aceptar un aplazamiento sin fecha ni importe concretos"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Dos líneas: qué tipo de impago es y qué probabilidad razonable hay de cobrarlo",
+    "2_calendario": "Tabla con día, canal, objetivo del contacto y tono",
+    "3_mensajes": "Los cinco textos completos, listos para copiar, con asunto cuando sea email",
+    "4_respuestas_a_excusas": "Tres pares excusa - respuesta",
+    "5_prevencion": "Cláusulas y condiciones de pago para el próximo presupuesto",
+    "estilo": "Educado, firme, sin rodeos, tuteando salvo que el cliente sea de trato formal"
+  },
+  "criterios_calidad": [
+    "Cada mensaje pide una acción concreta con fecha",
+    "El tono sube de forma gradual y sigue siendo profesional en el último peldaño",
+    "Ningún mensaje deja al cliente sin forma inmediata de pagar",
+    "El protocolo se puede repetir con cualquier otra factura cambiando cuatro datos"
+  ]
+}

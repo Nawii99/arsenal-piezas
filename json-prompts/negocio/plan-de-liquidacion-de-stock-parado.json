@@ -1,0 +1,40 @@
+{
+  "tarea": "Disenar un plan de liquidacion por tramos para el stock parado de una tienda online, recuperando el maximo de caja posible",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "motivo": "[CIERRE DE TEMPORADA, CAMBIO DE MODELO, FALTA DE ESPACIO O CAJA]",
+    "fecha_limite": "[CUANDO NECESITAS HABERLO VENDIDO]"
+  },
+  "entradas": {
+    "referencias_paradas": "[LISTA: nombre, coste unitario, PVP actual, unidades en stock, meses sin venta]",
+    "coste_de_almacenaje_mensual_eur": "[SI LO CONOCES, SI NO PON 0]",
+    "caja_que_necesitas_recuperar_eur": "[OBJETIVO EN EUROS]",
+    "base_de_clientes": "[NUMERO DE SUSCRIPTORES DE EMAIL O SEGUIDORES]"
+  },
+  "pasos": [
+    "Ordenar las referencias por dinero inmovilizado: coste unitario por unidades en stock",
+    "Clasificar cada una en recuperable, sacrificable o para donar o desguazar por piezas",
+    "Disenar tres tramos de descuento con fechas: suave, medio y final, con el porcentaje de cada tramo",
+    "Fijar el precio suelo por referencia: el que recupera al menos el coste de compra, y decir cuando conviene bajar de ahi",
+    "Proponer mecanicas alternativas al descuento: lote sorpresa, regalo por compra, pack con producto que si rota, outlet separado",
+    "Montar el calendario de avisos por email y redes para cada tramo",
+    "Estimar la caja recuperada en un escenario prudente y en uno optimista"
+  ],
+  "restricciones": [
+    "No mezclar la liquidacion con el catalogo normal para no devaluar los productos que si venden",
+    "No bajar de precio suelo sin avisar de forma explicita de la perdida por unidad",
+    "Limitar la duracion total del plan a la fecha limite indicada",
+    "Respetar la obligacion de indicar el precio anterior de referencia"
+  ],
+  "formato_salida": {
+    "tabla_referencias": "Referencia | Dinero inmovilizado | Clasificacion | Precio tramo 1 | Tramo 2 | Tramo 3 | Precio suelo",
+    "calendario": "Tramo | Fechas | Descuento | Canal y mensaje",
+    "estimacion": "Caja recuperada prudente y optimista, y perdida contable asumida",
+    "textos": "Asunto y cuerpo breve del email de cada tramo"
+  },
+  "criterios_calidad": [
+    "Cada referencia tiene precio suelo y no se propone venderla por debajo sin justificacion",
+    "El plan cabe dentro de la fecha limite",
+    "Se distingue con claridad recuperar caja de ganar margen"
+  ]
+}

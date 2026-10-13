@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir la página de confirmación posterior a la conversión y la primera comunicación de seguimiento",
+  "contexto": {
+    "accion_realizada": "[HA DEJADO SUS DATOS / HA COMPRADO / HA RESERVADO CITA / HA DESCARGADO ALGO]",
+    "que_pasa_ahora": "[QUIÉN LE CONTACTA, CÓMO Y EN CUÁNTO TIEMPO]",
+    "siguiente_accion_deseada": "[RESERVAR HORA, UNIRSE AL WHATSAPP, VER UN VÍDEO, COMPRAR UN COMPLEMENTO]",
+    "producto_complementario": "[SI TIENES ALGO QUE OFRECER AHORA Y SU PRECIO]",
+    "canal_principal": "[EMAIL / WHATSAPP / TELÉFONO]"
+  },
+  "estructura": [
+    "Confirmación clara de que ha salido bien y qué ha quedado registrado",
+    "Qué pasa exactamente ahora, con nombre de quién le escribe y plazo concreto",
+    "Qué tiene que hacer él, si es que tiene que hacer algo: revisar spam, guardar el número, preparar un dato",
+    "Una sola acción siguiente destacada con botón",
+    "Contenido de valor mientras espera: guía, vídeo o caso relacionado",
+    "Oferta complementaria opcional, discreta y sin presión",
+    "Datos de contacto por si algo falla"
+  ],
+  "reglas": [
+    "Nada de 'gracias, nos pondremos en contacto lo antes posible': plazo concreto siempre",
+    "Una sola acción principal, el resto secundario",
+    "Si la acción fue una compra, refuerza la decisión y reduce el arrepentimiento",
+    "Recuerda marcar la conversión en tu medición en esta página"
+  ],
+  "formato_salida": {
+    "pagina": "Texto completo de la página de gracias, bloque a bloque",
+    "mensaje_inmediato": "Email o WhatsApp de confirmación con asunto y cuerpo",
+    "recordatorio": "Segundo mensaje a las 48 horas si no ha habido respuesta",
+    "nota_tecnica": "Qué conviene medir en esta página, explicado sin tecnicismos"
+  },
+  "restricciones": [
+    "No prometas plazos que el negocio no pueda cumplir",
+    "Nada de vender agresivamente a alguien que acaba de dejar solo su email"
+  ],
+  "criterios_calidad": ["El cliente termina la lectura sabiendo qué pasa, cuándo y qué puede hacer mientras tanto"]
+}

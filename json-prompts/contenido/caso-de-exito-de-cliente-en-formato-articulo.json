@@ -1,0 +1,40 @@
+{
+  "tarea": "Escribir un caso de éxito en formato artículo de blog que demuestre resultados y sirva como material de venta",
+  "entradas": {
+    "cliente": "[NOMBRE O ANÓNIMO: SECTOR Y TAMAÑO]",
+    "situacion_inicial": "[QUÉ PROBLEMA TENÍA Y QUÉ LE COSTABA]",
+    "por_que_me_eligio": "[QUÉ LE HIZO CONTRATARTE]",
+    "que_hicimos": "[PASOS REALES EN ORDEN]",
+    "obstaculos": "[QUÉ SE TORCIÓ POR EL CAMINO]",
+    "resultados": "[CIFRAS O HECHOS MEDIDOS, ANTES Y DESPUÉS]",
+    "plazo": "[CUÁNTO DURÓ]",
+    "cita_del_cliente": "[FRASE TEXTUAL O DÉJALO VACÍO]",
+    "permiso_para_publicar_nombre": "[SÍ / NO]"
+  },
+  "estructura": [
+    "Titular con el resultado y el tipo de cliente, sin exagerar",
+    "Resumen en 3 líneas: quién, qué problema y qué se consiguió",
+    "El punto de partida contado con detalle y con el coste real del problema",
+    "Lo que hicimos, paso a paso, explicando el porqué de cada decisión",
+    "Lo que no salió a la primera y cómo se resolvió",
+    "Resultados con datos y con el plazo en el que llegaron",
+    "Qué aprendimos y qué haríamos distinto",
+    "Cierre con invitación a hablar, sin presión"
+  ],
+  "restricciones": [
+    "Si no hay permiso, anonimizar y describir el perfil sin pistas identificables",
+    "Prohibido redondear o adornar cifras: solo las aportadas",
+    "Incluir al menos una dificultad real, un caso perfecto no se cree",
+    "No atribuir el resultado solo al proveedor: reconocer lo que puso el cliente",
+    "Nada de superlativos ni de la palabra espectacular"
+  ],
+  "formato_salida": {
+    "articulo": "markdown de [NÚMERO] palabras",
+    "extras": ["ficha_resumen_para_el_inicio", "3_frases_para_usar_en_redes", "meta_descripcion"]
+  },
+  "criterios_calidad": [
+    "Un cliente potencial del mismo sector se reconoce en el punto de partida",
+    "El proceso se entiende lo bastante como para inspirar confianza",
+    "Suena a experiencia real y no a folleto comercial"
+  ]
+}

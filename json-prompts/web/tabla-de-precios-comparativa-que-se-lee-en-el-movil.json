@@ -1,0 +1,36 @@
+{
+  "tarea": "Maquetar una seccion de precios comparativa, responsive y facil de leer",
+  "contexto": {
+    "que_vendes": "[SERVICIO / SUSCRIPCION / PACK]",
+    "plan_recomendado": "[CUAL QUIERES QUE ELIJAN]",
+    "periodo": "[MENSUAL / ANUAL / PAGO UNICO]"
+  },
+  "entradas": {
+    "planes": ["[PLAN 1: NOMBRE, PRECIO, PARA QUIEN ES]", "[PLAN 2: NOMBRE, PRECIO, PARA QUIEN ES]", "[PLAN 3: NOMBRE, PRECIO, PARA QUIEN ES]"],
+    "caracteristicas_a_comparar": ["[CARACTERISTICA 1]", "[CARACTERISTICA 2]", "[CARACTERISTICA 3]", "[CARACTERISTICA 4]"],
+    "texto_boton": "[EMPEZAR / CONTRATAR / PEDIR CITA]"
+  },
+  "instrucciones": [
+    "En escritorio, columnas de igual ancho con las caracteristicas alineadas en la misma fila entre planes",
+    "En movil, tarjetas apiladas empezando por el plan recomendado, cada una repitiendo el nombre de la caracteristica",
+    "Destaca el plan recomendado con borde de color y una etiqueta pequena, sin agrandarlo tanto que descuadre la fila",
+    "El precio grande, el periodo pequeno al lado y debajo una linea de a quien le encaja ese plan",
+    "Usa iconos de si y no con texto alternativo; nunca solo color para diferenciar",
+    "Un boton por plan, todos a la misma altura, y bajo la tabla una linea de garantia o condiciones"
+  ],
+  "restricciones": [
+    "HTML y CSS puros, sin JavaScript ni librerias",
+    "Maximo tres planes y ocho caracteristicas: mas opciones bloquean la decision",
+    "No uses una etiqueta table si en movil hay que reordenar; usa rejilla"
+  ],
+  "formato_salida": {
+    "1_codigo": "archivo HTML completo con los tres planes y sus estilos",
+    "2_orden_recomendado": "en que orden colocar los planes y por que",
+    "3_textos_alternativos": "dos versiones distintas del texto del boton para probar"
+  },
+  "criterios_calidad": [
+    "A 360px se entiende que incluye cada plan sin scroll lateral",
+    "Las filas de caracteristicas quedan alineadas entre columnas en escritorio",
+    "El plan recomendado se ve destacado pero la fila sigue cuadrada"
+  ]
+}

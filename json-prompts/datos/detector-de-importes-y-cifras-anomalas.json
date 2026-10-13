@@ -1,0 +1,40 @@
+{
+  "tarea": "Detectar valores anómalos y errores de registro en datos económicos y explicarlos en lenguaje llano",
+  "contexto": {
+    "tipo_datos": "[VENTAS, GASTOS, PEDIDOS, HORAS FACTURADAS]",
+    "periodo": "[EJ: ENERO A JUNIO DE 2026]",
+    "ticket_medio_habitual": "[IMPORTE MEDIO NORMAL EN TU NEGOCIO]",
+    "rango_esperado": "[IMPORTE MÍNIMO Y MÁXIMO RAZONABLES]",
+    "estacionalidad": "[MESES FUERTES Y FLOJOS, SI LOS HAY]"
+  },
+  "entradas": {
+    "datos": "[PEGA EN CSV: FECHA, CLIENTE, CONCEPTO, CANTIDAD, PRECIO_UNITARIO, IMPORTE_TOTAL, METODO_PAGO]"
+  },
+  "comprobaciones": [
+    "Importes fuera del rango esperado, por arriba y por abajo",
+    "Importe total que no cuadra con cantidad por precio unitario",
+    "Importes a cero, negativos o repetidos exactamente el mismo día y cliente",
+    "Valores con un dígito de más o de menos respecto al patrón habitual del cliente",
+    "Fechas fuera del periodo, en fin de semana si el negocio no abre, o en el futuro",
+    "Concentraciones raras: muchas operaciones idénticas en pocos minutos",
+    "Huecos: días o clientes sin ningún registro cuando deberían tenerlo"
+  ],
+  "formato_salida": {
+    "tipo": "informe markdown",
+    "secciones": [
+      "Semáforo: cuántas anomalías críticas, dudosas y leves",
+      "Tabla de casos: fila | valor | tipo de anomalía | por qué llama la atención | qué comprobar",
+      "Impacto estimado sobre el total del periodo, indicando el importe en juego",
+      "Qué revisar primero, en orden"
+    ]
+  },
+  "restricciones": [
+    "No afirmes que hay fraude ni error confirmado: habla de indicios y de qué comprobar",
+    "No corrijas los datos, solo señálalos",
+    "Si una anomalía puede tener explicación normal, dilo (un pedido grande de un cliente nuevo, por ejemplo)"
+  ],
+  "criterios_calidad": [
+    "Cada caso se entiende sin abrir el fichero",
+    "Se indica siempre cuántas filas del total representan las anomalías"
+  ]
+}

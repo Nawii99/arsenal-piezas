@@ -1,0 +1,41 @@
+{
+  "tarea": "Elaborar el informe mensual de reputación online de una tienda a partir de las reseñas del periodo",
+  "entradas": {
+    "periodo": "[MES Y AÑO]",
+    "resenas_del_mes": "[PEGA LAS RESEÑAS CON FECHA, PLATAFORMA, NOTA Y PRODUCTO]",
+    "datos_mes_anterior": "[NOTA MEDIA, Nº DE RESEÑAS Y TEMAS PRINCIPALES DEL MES ANTERIOR]",
+    "pedidos_del_mes": "[NÚMERO DE PEDIDOS ENTREGADOS]",
+    "objetivo": "[QUÉ QUIERES CONSEGUIR: MÁS RESEÑAS, MEJOR NOTA, MENOS QUEJAS DE ENVÍO...]"
+  },
+  "metricas_a_calcular": [
+    "Nota media del mes y variación respecto al mes anterior",
+    "Número de reseñas y tasa de reseña sobre pedidos entregados",
+    "Reparto por estrellas en porcentaje",
+    "Porcentaje de reseñas respondidas y tiempo medio de respuesta si consta",
+    "Reseñas con foto o vídeo sobre el total",
+    "Top 3 productos mejor y peor valorados"
+  ],
+  "analisis": [
+    "Temas positivos recurrentes con número de menciones",
+    "Temas negativos recurrentes, separando producto, envío, atención y expectativa",
+    "Temas nuevos que no existían el mes anterior",
+    "Señal de alarma: cualquier queja que aparezca 3 o más veces"
+  ],
+  "restricciones": [
+    "Si falta algún dato de entrada, calcular lo que se pueda y marcar el resto como no disponible",
+    "No redondear al alza ni ocultar caídas de nota",
+    "Máximo una página de informe: lo demás va en anexo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen de 5 líneas que se pueda leer de pie",
+    "bloque_2": "Tabla de métricas con columna de variación frente al mes anterior",
+    "bloque_3": "Tabla de temas: tema, menciones, tendencia sube/baja/igual",
+    "bloque_4": "3 acciones para el mes siguiente, cada una con responsable y fecha límite",
+    "bloque_5": "Citas destacadas: dos positivas y dos negativas"
+  },
+  "criterios_calidad": [
+    "Las acciones atacan las causas repetidas, no las anécdotas",
+    "Cualquiera puede entender el informe sin saber de datos",
+    "El informe se puede rehacer igual el mes que viene con los mismos campos"
+  ]
+}

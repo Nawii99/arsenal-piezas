@@ -1,0 +1,36 @@
+{
+  "tarea": "Especificar el componente [NOMBRE DEL COMPONENTE: BOTÓN / CAMPO DE TEXTO / TARJETA] con todas sus variantes y estados",
+  "contexto": {
+    "producto": "[NOMBRE DEL PRODUCTO Y QUÉ HACE]",
+    "plataforma": "[WEB DE ESCRITORIO / MÓVIL / AMBAS]",
+    "tokens_disponibles": "[PEGA AQUÍ TUS COLORES Y TIPOGRAFÍA, O ESCRIBE PROPÓN TÚ]"
+  },
+  "entradas": {
+    "variantes": "[PRINCIPAL, SECUNDARIO, DE TEXTO, DESTRUCTIVO]",
+    "tamanos": "[PEQUEÑO, MEDIANO, GRANDE]",
+    "con_icono": "[SÍ, A LA IZQUIERDA / SÍ, A LA DERECHA / NO]"
+  },
+  "estados_obligatorios": ["normal", "encima con el ratón", "pulsado", "con foco de teclado", "cargando", "desactivado"],
+  "pasos": [
+    "Describir la anatomía del componente: qué partes lo forman y cuáles son opcionales",
+    "Dar para cada variante y estado: color de fondo, color de texto, borde, sombra y opacidad",
+    "Fijar altura, relleno interno, tamaño de letra, radio y separación entre icono y texto",
+    "Definir el comportamiento del texto largo, del componente a ancho completo y del área táctil mínima de 44 px",
+    "Listar los errores típicos que hay que evitar con este componente"
+  ],
+  "restricciones": [
+    "El estado de foco debe verse sin depender del color, con un contorno visible",
+    "El estado desactivado no puede confundirse con el normal ni perder legibilidad total",
+    "Nada de valores inventados fuera de los tokens indicados"
+  ],
+  "formato_salida": {
+    "tipo": "tabla por variante más lista de reglas de uso",
+    "secciones": ["Anatomía", "Tabla variante x estado con todos los valores", "Medidas y espaciados", "Cuándo usar cada variante y cuándo no", "5 errores frecuentes"]
+  },
+  "criterios_calidad": [
+    "Ningún estado queda sin definir",
+    "Se puede maquetar el componente solo con esta ficha, sin ver un diseño",
+    "Las reglas de uso dicen también qué NO hacer"
+  ],
+  "tono": "claro y concreto, con medidas exactas en píxeles"
+}

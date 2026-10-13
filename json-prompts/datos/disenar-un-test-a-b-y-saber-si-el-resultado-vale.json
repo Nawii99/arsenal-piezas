@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar un test A/B para [ELEMENTO A PROBAR] en [PÁGINA O PANTALLA] y, cuando haya datos, interpretar el resultado",
+  "modo": "[DISEÑAR / INTERPRETAR]",
+  "entradas_diseno": {
+    "problema_observado": "[QUÉ HAS VISTO EN LOS DATOS QUE TE HACE PROBAR ESTO]",
+    "cambio_propuesto": "[DESCRIBE LA VARIANTE B]",
+    "metrica_objetivo": "[EJ: TASA DE COMPRA / ALTAS / CLICS AL BOTÓN PRINCIPAL]",
+    "trafico_semanal": "[NÚMERO DE VISITAS A ESA PÁGINA]",
+    "conversion_actual": "[PORCENTAJE]",
+    "mejora_minima_que_me_interesa": "[EJ: 10% RELATIVO]"
+  },
+  "entradas_interpretacion": {
+    "variante_a": "[VISITAS] y [CONVERSIONES]",
+    "variante_b": "[VISITAS] y [CONVERSIONES]",
+    "dias_en_marcha": "[NÚMERO]"
+  },
+  "reglas_del_metodo": [
+    "Formular la hipótesis como: si cambio X, entonces Y mejorará porque Z",
+    "Una sola métrica principal y máximo dos de vigilancia para detectar daños colaterales",
+    "Calcular el tamaño de muestra necesario y los días estimados antes de lanzar",
+    "Duración mínima de semanas completas para cubrir todos los días de la semana",
+    "Prohibido parar el test al ver un pico: definir de antemano cuándo se decide"
+  ],
+  "errores_a_evitar": [
+    "Mirar resultados a diario y quedarse con el momento favorable",
+    "Probar dos cambios a la vez y no saber cuál funcionó",
+    "Medir clics cuando lo que importa son pedidos",
+    "Sacar conclusiones con menos de 100 conversiones por variante"
+  ],
+  "formato_salida": {
+    "ficha_test": ["hipotesis", "variantes", "metrica_principal", "metricas_vigilancia", "muestra_necesaria", "duracion_estimada", "criterio_de_decision"],
+    "lectura_resultados": ["diferencia_relativa", "si_el_dato_es_suficiente_o_no", "riesgo_de_falso_positivo_en_lenguaje_llano", "decision_recomendada"],
+    "cierre": "Qué hacer si gana B, si gana A y si queda en empate"
+  },
+  "criterios_calidad": ["Explica la significación sin fórmulas, en lenguaje de negocio", "Nunca declara ganador con muestra insuficiente"],
+  "tono": "Honesto, incluso cuando la respuesta es no sabemos todavía"
+}

@@ -1,0 +1,30 @@
+{
+  "tarea": "Crear tres opciones de presupuesto para el mismo encargo, para que el cliente elija opción en vez de decidir si contrata o no",
+  "entradas": {
+    "trabajo_base": "[LO QUE TE HA PEDIDO EL CLIENTE]",
+    "precio_de_partida": "[LO QUE COBRARÍAS POR ESE TRABAJO]",
+    "extras_posibles": "[SERVICIOS QUE PUEDES AÑADIR: MANTENIMIENTO, FORMACIÓN, URGENCIA, MÁS ALCANCE]",
+    "presupuesto_del_cliente": "[SI TE HA DADO UNA CIFRA O UN RANGO PONLO; SI NO, ESCRIBE DESCONOCIDO]",
+    "sector": "[SECTOR DEL CLIENTE]"
+  },
+  "como_construir_las_opciones": [
+    "Esencial: resuelve el problema mínimo, sin extras y con plazo normal",
+    "Recomendada: la que quieres que elija, con dos o tres añadidos de valor real y precio entre 1,5 y 2 veces la esencial",
+    "Ampliada: incluye acompañamiento posterior o más alcance y sirve de precio ancla",
+    "Las tres resuelven el problema: la esencial nunca puede parecer una trampa",
+    "Diferencia por alcance y responsabilidad, nunca por calidad del trabajo"
+  ],
+  "restricciones": [
+    "Máximo seis líneas de contenido por opción",
+    "Mismo orden de conceptos en las tres para que se comparen de un vistazo",
+    "Indica cuál recomiendas y por qué en una sola frase",
+    "No inventes servicios que no estén en extras_posibles"
+  ],
+  "formato_salida": "Tabla comparativa de tres columnas, un párrafo de recomendación y una línea con el siguiente paso",
+  "criterios_calidad": [
+    "En treinta segundos se entiende qué cambia de una opción a otra",
+    "La recomendada es la más fácil de justificar dentro de la empresa del cliente",
+    "Ninguna opción deja el problema a medias"
+  ],
+  "tono": "Claro y sin presión"
+}

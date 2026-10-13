@@ -1,0 +1,41 @@
+{
+  "tarea": "Reescribir un borrador de artículo para que suene a persona con experiencia real y no a texto generado en serie",
+  "entradas": {
+    "borrador": "[PEGA AQUÍ EL TEXTO]",
+    "quien_firma": "[NOMBRE Y A QUÉ TE DEDICAS]",
+    "mi_experiencia_en_el_tema": "[AÑOS, CASOS, CIFRAS PROPIAS, ERRORES QUE HAS COMETIDO]",
+    "como_hablo": "[PEGA UN TEXTO TUYO DE EJEMPLO]",
+    "palabras_prohibidas": "[LISTA]",
+    "opiniones_propias": "[EN QUÉ NO ESTÁS DE ACUERDO CON LO QUE SE DICE HABITUALMENTE]"
+  },
+  "que_eliminar": [
+    "Frases de relleno: en el mundo actual, hoy en día, es importante destacar que",
+    "Tríos de adjetivos y enumeraciones vacías",
+    "Conclusiones que repiten la introducción sin aportar",
+    "Verbos comodín: potenciar, optimizar, maximizar, revolucionar",
+    "Párrafos que dicen lo mismo con otras palabras"
+  ],
+  "que_anadir": [
+    "Al menos dos ejemplos concretos de la experiencia aportada, con nombres de cosas reales",
+    "Una opinión propia, aunque sea incómoda, y su motivo",
+    "Un error típico que el autor ha visto o cometido",
+    "Cifras o detalles concretos en lugar de generalidades"
+  ],
+  "reglas": [
+    "Variar la longitud de las frases: alternar cortas y largas",
+    "Mantener el significado y los datos del original",
+    "No añadir información que no esté en las entradas",
+    "Conservar la estructura de títulos salvo que sobre alguna sección"
+  ],
+  "formato_salida": {
+    "1_texto_reescrito": "markdown completo",
+    "2_tabla_de_cambios": "columnas frase_original, frase_nueva y motivo, máximo 12 filas",
+    "3_frases_que_he_eliminado": "lista de las frases vacías retiradas",
+    "4_lo_que_falta": "qué información propia deberías aportar para que el artículo gane aún más"
+  },
+  "criterios_calidad": [
+    "Se puede leer en voz alta sin que suene raro",
+    "Hay al menos tres detalles que solo podría contar quien ha hecho el trabajo",
+    "Ninguna palabra prohibida sobrevive"
+  ]
+}

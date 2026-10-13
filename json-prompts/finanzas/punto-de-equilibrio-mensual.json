@@ -1,0 +1,38 @@
+{
+  "tarea": "Calcular el punto de equilibrio mensual del negocio en euros y en unidades, y traducirlo a objetivos diarios y semanales",
+  "contexto": {
+    "negocio": "[TIPO DE NEGOCIO Y CIUDAD]",
+    "dias_abiertos_al_mes": "[NÚMERO DE DÍAS]",
+    "sueldo_del_dueño_incluido": "[SÍ/NO Y CUÁNTO]"
+  },
+  "entradas": {
+    "costes_fijos_mensuales": "[ALQUILER, SUELDOS, CUOTA DE AUTÓNOMO, SUMINISTROS, SEGUROS, SOFTWARE, GESTORÍA, PRÉSTAMOS]",
+    "precio_medio_venta_sin_iva": "[EUROS POR TICKET O POR SERVICIO]",
+    "coste_directo_medio_por_venta": "[MATERIALES, COMISIONES, ENVÍO, PERSONAL VARIABLE]",
+    "ventas_actuales_al_mes": "[UNIDADES O TICKETS ACTUALES]"
+  },
+  "pasos": [
+    "Revisa la lista de costes fijos y añade los que suele olvidar la gente: cuota de autónomo, gestoría, seguros, mantenimiento, suscripciones anuales prorrateadas y el sueldo del dueño",
+    "Calcula el margen de contribución por venta y su porcentaje sobre el precio",
+    "Calcula el punto de equilibrio en unidades: costes fijos dividido entre margen por unidad; y en euros: costes fijos dividido entre el porcentaje de margen",
+    "Traduce el resultado a ventas por día abierto y por semana, redondeando hacia arriba",
+    "Compara con las ventas actuales y di cuántas ventas sobran o faltan",
+    "Haz tres escenarios: pesimista con un [X]% menos de ventas, realista y optimista, y di en cuál sigues cubriendo costes",
+    "Indica cuánto puedes subir un coste fijo concreto antes de dejar de cubrir gastos"
+  ],
+  "restricciones": [
+    "Todo sin IVA y sin contar como ingreso el dinero de subvenciones o préstamos",
+    "Si el margen por unidad sale negativo, detente y avisa de que el problema es el precio o el coste, no el volumen",
+    "No mezcles inversión inicial con costes fijos mensuales; sepáralas"
+  ],
+  "formato_salida": {
+    "tipo": "resumen numérico + tabla de escenarios",
+    "bloques": ["Costes fijos totales", "Margen por venta", "Punto de equilibrio en unidades y en euros", "Objetivo diario y semanal", "Situación actual", "Tres escenarios", "Qué haría falta para ganar [BENEFICIO OBJETIVO] al mes"]
+  },
+  "criterios_calidad": [
+    "Los cálculos se muestran paso a paso para poder repetirlos en una hoja de cálculo",
+    "El objetivo diario es un número que se puede recordar y colgar en la pared",
+    "Se avisa de los costes fijos olvidados que se han añadido"
+  ],
+  "tono": "Sencillo y tranquilizador, con los números por delante"
+}

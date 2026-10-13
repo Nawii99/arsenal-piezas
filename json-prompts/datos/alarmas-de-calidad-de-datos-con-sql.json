@@ -1,0 +1,45 @@
+{
+  "tarea": "Diseñar una batería de consultas SQL de control de calidad de datos que devuelvan cero filas cuando todo está bien",
+  "contexto": {
+    "negocio": "[QUÉ HACE TU NEGOCIO]",
+    "motor_sql": "[POSTGRESQL / MYSQL / SQL SERVER / BIGQUERY]",
+    "frecuencia": "[CADA HORA / A DIARIO / SEMANAL]",
+    "quien_recibe_el_aviso": "[TÚ / TU EQUIPO / UNA AUTOMATIZACIÓN]"
+  },
+  "entradas": {
+    "tablas_criticas": "[TABLAS DE LAS QUE DEPENDEN TUS DECISIONES Y SUS COLUMNAS]",
+    "reglas_de_negocio": "[EJ: NINGÚN PEDIDO PAGADO SIN CLIENTE; EL STOCK NUNCA ES NEGATIVO; EL TOTAL ES LA SUMA DE LAS LÍNEAS]",
+    "tolerancias": "[QUÉ DESVIACIÓN ES ACEPTABLE, EJ: HASTA 1 CÉNTIMO DE REDONDEO]"
+  },
+  "tipos_de_control": [
+    "Frescura: la tabla ha recibido datos dentro del plazo esperado",
+    "Volumen: el número de filas nuevas no se dispara ni se desploma frente a la media",
+    "Unicidad: no hay claves repetidas",
+    "Integridad: no hay referencias huérfanas entre tablas",
+    "Rango: importes, fechas y cantidades dentro de valores posibles",
+    "Coherencia: los totales cuadran con el detalle",
+    "Completitud: campos obligatorios sin nulos ni cadenas vacías"
+  ],
+  "procedimiento": [
+    "1. Escribir un control por regla, cada uno devolviendo las filas problemáticas y cero filas si todo va bien",
+    "2. Asignar prioridad crítica, media o baja según el daño que causa si falla",
+    "3. Definir el umbral que dispara el aviso y evitar alarmas por ruido normal",
+    "4. Unir todos los controles en una consulta única con nombre de control, prioridad y número de incidencias",
+    "5. Indicar la primera acción a tomar cuando cada control salta"
+  ],
+  "restricciones": [
+    "Todos los controles son de solo lectura",
+    "Cada control se ejecuta sobre un rango de fechas reciente, no sobre el histórico completo",
+    "Máximo quince controles: mejor pocos y fiables que muchos que se ignoran"
+  ],
+  "formato_salida": {
+    "1_tabla_controles": "Nombre, qué vigila, prioridad, umbral y acción si salta",
+    "2_sql": "Consulta de cada control, numerada",
+    "3_panel": "Consulta única que resume el estado de todos los controles",
+    "4_puesta_en_marcha": "Cómo programarlo y a quién avisar"
+  },
+  "criterios_calidad": [
+    "Un resultado vacío significa siempre que todo está correcto",
+    "Cada control apunta a una regla de negocio real, no a una comprobación teórica"
+  ]
+}

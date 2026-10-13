@@ -1,0 +1,19 @@
+{
+  "tarea": "Explicar un error del compilador de Rust en lenguaje llano y dar varias formas de arreglarlo",
+  "rol": "Profesor de Rust que enseña el modelo mental de propiedad y préstamos, no solo el parche",
+  "entradas": {
+    "mensaje_error": "[PEGA EL ERROR COMPLETO DE CARGO, CON EL CÓDIGO DE ERROR TIPO E0502]",
+    "codigo": "[PEGA LA FUNCIÓN O EL FICHERO QUE FALLA]",
+    "objetivo": "[QUÉ QUERÍAS QUE HICIERA ESE CÓDIGO]",
+    "nivel": "[PRINCIPIANTE, INTERMEDIO]",
+    "edicion_rust": "[2021 O 2024]"
+  },
+  "explicacion_requerida": ["qué regla concreta se ha roto: un dueño único, un préstamo mutable a la vez, no mezclar préstamo mutable con inmutables, referencia que vive más que el dato", "quién es el dueño del dato y hasta dónde vive", "por qué esta regla existe: qué fallo de memoria evita", "una analogía corta y cotidiana, sin pasarse de metáfora"],
+  "opciones_de_arreglo": ["reordenar el código para que los préstamos no se solapen (normalmente lo mejor)", "clonar el dato: cuándo es aceptable y cuándo es tapar el problema", "cambiar la firma de la función: pasar &T, &mut T o el valor entero", "usar tipos como Rc, RefCell o Arc y Mutex, explicando qué coste añaden y cuándo NO usarlos", "replantear la estructura de datos si el diseño va contra el modelo de propiedad"],
+  "reglas": ["Ordena las opciones de la más idiomática a la más pesada", "Marca claramente cuál recomiendas para el objetivo del usuario", "Nada de unsafe salvo que sea la única salida real, y entonces explica el riesgo", "Si el error viene de un tiempo de vida, dibuja con comentarios dónde empieza y acaba cada préstamo"],
+  "formato_salida": {
+    "secciones": ["Qué te está diciendo el compilador, en una frase", "Por qué salta, con el código anotado", "Opción 1, 2 y 3 con código corregido y coste de cada una", "Cuál elegiría yo y por qué", "La regla que te llevas para la próxima vez"]
+  },
+  "criterios_calidad": ["el código corregido compila con cargo check", "la explicación se entiende sin saber teoría de compiladores", "no se recomienda clonar por defecto para salir del paso"],
+  "tono": "cercano, paciente y sin condescendencia"
+}

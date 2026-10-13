@@ -1,0 +1,36 @@
+{
+  "tarea": "Traducir un temario interno en el programa comercial público del curso, orientado a que el cliente entienda qué se lleva",
+  "entradas": {
+    "temario_interno": "[PEGA TU TEMARIO TAL COMO LO TIENES]",
+    "publico": "[A QUIÉN VA DIRIGIDO]",
+    "precio": "[PRECIO EN EUROS E IVA]",
+    "formato_y_fechas": "[ONLINE/PRESENCIAL, HORARIO Y FECHAS]",
+    "formador": "[NOMBRE Y POR QUÉ ESTÁ CUALIFICADO]",
+    "plazas": "[Nº DE PLAZAS SI ES LIMITADO]"
+  },
+  "secciones_a_escribir": [
+    "Título del curso y subtítulo con el resultado concreto",
+    "Para quién es este curso: 4 perfiles descritos por su situación",
+    "Para quién NO es: 3 perfiles, con honestidad",
+    "Qué sabrás hacer al terminar: 5 frases en segunda persona empezando por verbo",
+    "Temario en lenguaje de alumno: cada módulo con título de beneficio y 3 viñetas de contenido",
+    "Metodología en 4 líneas: cómo se aprende, no cómo se enseña",
+    "Qué incluye: materiales, soporte, certificado, acceso",
+    "Requisitos previos reales",
+    "Dedicación semanal estimada",
+    "Precio, formas de pago y política de devolución",
+    "5 preguntas frecuentes con respuesta breve"
+  ],
+  "restricciones": [
+    "Prohibido prometer resultados económicos o de empleo",
+    "Nada de palabras como revolucionario, definitivo o transformador",
+    "Frases cortas, tuteo, español de España",
+    "Si un módulo no aporta beneficio claro al alumno, dilo en un aviso al final en vez de maquillarlo"
+  ],
+  "formato_salida": "Documento en markdown listo para pegar en la web, más una versión resumida de 150 palabras para email o redes",
+  "criterios_calidad": [
+    "Alguien ajeno al sector entiende qué va a aprender",
+    "Cada afirmación es comprobable",
+    "El apartado Para quién NO es está escrito de verdad, no de adorno"
+  ]
+}

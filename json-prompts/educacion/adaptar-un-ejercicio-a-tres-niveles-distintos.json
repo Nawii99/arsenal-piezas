@@ -1,0 +1,32 @@
+{
+  "tarea": "Adaptar un ejercicio existente a tres niveles de dificultad manteniendo el mismo objetivo de aprendizaje",
+  "entradas": {
+    "ejercicio_original": "[PEGA AQUÍ EL EJERCICIO TAL CUAL LO USAS]",
+    "objetivo_de_aprendizaje": "[LO QUE DEBE APRENDER, PASE LO QUE PASE]",
+    "dificultades_observadas": "[QUÉ ATASCA A LOS QUE VAN JUSTOS]",
+    "perfil_de_los_avanzados": "[QUÉ YA DOMINAN LOS QUE VAN SOBRADOS]",
+    "tiempo_de_clase": "[MINUTOS]"
+  },
+  "instrucciones": [
+    "Versión apoyo: mismo objetivo, con el problema troceado en pasos, un ejemplo resuelto delante y los datos ya organizados",
+    "Versión estándar: el ejercicio original ajustado si hace falta para que se entienda mejor",
+    "Versión ampliación: añade una restricción nueva, datos incompletos o la obligación de justificar la decisión, sin meter materia que no se ha dado",
+    "No bajes el objetivo en la versión de apoyo: baja la carga de trabajo, no lo que se aprende",
+    "Indica qué ayudas retiras a medida que el alumno avanza y en qué orden",
+    "Las tres versiones deben terminar en el mismo tipo de resultado para poder ponerlas en común en clase"
+  ],
+  "restricciones": [
+    "Nada de etiquetar las versiones como 'fácil' o 'para los que van mal' en el material del alumno",
+    "Las tres deben caber en el mismo tiempo de clase",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "por_version": ["enunciado listo para repartir", "apoyos incluidos", "tiempo estimado", "solución", "qué observar mientras trabajan"],
+    "cierre": "Guion de 5 minutos para la puesta en común conjunta de las tres versiones"
+  },
+  "criterios_calidad": [
+    "Un observador externo no sabría decir qué versión es la de apoyo solo por el aspecto",
+    "El objetivo evaluado es idéntico en las tres",
+    "La puesta en común tiene sentido con las tres versiones sobre la mesa"
+  ]
+}

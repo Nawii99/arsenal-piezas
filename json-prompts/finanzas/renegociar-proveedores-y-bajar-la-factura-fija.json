@@ -1,0 +1,38 @@
+{
+  "tarea": "Preparar la renegociación de los proveedores fijos: priorizar cuáles atacar y redactar el mensaje de negociación de cada uno",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[TU SECTOR]",
+    "situacion": "[POR QUÉ QUIERES BAJAR COSTES: MARGEN AJUSTADO, CAÍDA DE VENTAS, SUBIDA DE PRECIOS]"
+  },
+  "entradas": {
+    "proveedores": "[POR CADA UNO: NOMBRE, QUÉ TE DA, IMPORTE MENSUAL O ANUAL, AÑOS CON ELLOS, PERMANENCIA, FECHA DE RENOVACIÓN]",
+    "consumo_real": "[CUÁNTO USAS DE VERDAD: LICENCIAS ACTIVAS, KILOS, HORAS, GIGAS, VISITAS]",
+    "subidas_recientes": "[QUÉ PROVEEDORES TE HAN SUBIDO EL PRECIO Y CUÁNTO]",
+    "alternativas": "[COMPETIDORES O PRESUPUESTOS QUE YA TENGAS]"
+  },
+  "procedimiento": [
+    "Calcular el coste anual de cada proveedor y su peso sobre el gasto fijo total",
+    "Puntuar cada proveedor por potencial de ahorro: pagas por más de lo que usas, llevas años sin revisar el precio, hay alternativas reales, la renovación está cerca",
+    "Elegir para cada uno una palanca de negociación: ajustar al consumo real, compromiso de permanencia a cambio de descuento, pago anual anticipado, agrupar servicios, igualar oferta de la competencia",
+    "Fijar tres cifras antes de escribir: precio objetivo, precio aceptable y precio a partir del cual te vas",
+    "Avisar del coste real de cambiar de proveedor: migración, formación, parón del servicio",
+    "Redactar el email: contexto breve, valor de la relación, petición concreta con cifra, alternativa creíble, fecha límite de respuesta"
+  ],
+  "restricciones": [
+    "Nada de faroles falsos: solo mencionar alternativas que existan de verdad",
+    "Tono firme pero cordial, sin amenazas ni súplicas",
+    "Cada email por debajo de 150 palabras"
+  ],
+  "formato_salida": {
+    "tabla_prioridades": ["proveedor", "coste_anual", "potencial_de_ahorro", "palanca", "precio_objetivo", "fecha_para_hablar"],
+    "emails": "Un email listo para enviar por cada proveedor priorizado, con asunto",
+    "guion_telefonico": "Cinco frases para la llamada, incluida la respuesta a un NO",
+    "resumen": "Ahorro anual posible si sale bien la mitad de las negociaciones"
+  },
+  "criterios_calidad": [
+    "Cada email pide una cifra concreta, no un descuento genérico",
+    "Las prioridades están ordenadas por euros, no por antipatía con el proveedor",
+    "Se indica qué hacer si el proveedor dice que no"
+  ]
+}

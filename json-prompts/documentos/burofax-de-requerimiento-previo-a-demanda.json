@@ -1,0 +1,41 @@
+{
+  "tarea": "Redactar el texto de un burofax de requerimiento fehaciente de pago, apto para acreditar la reclamación previa a un procedimiento monitorio",
+  "marco": "Operación entre empresas o con un particular en España; si es entre empresas se puede invocar la Ley 3/2004 de morosidad si así se indica",
+  "entradas": {
+    "remitente": "[NOMBRE, NIF, DOMICILIO COMPLETO Y CONTACTO]",
+    "destinatario": "[NOMBRE, NIF, DOMICILIO COMPLETO DONDE RECIBIRÁ EL BUROFAX]",
+    "tipo_de_deudor": "[EMPRESA O AUTÓNOMO / CONSUMIDOR PARTICULAR]",
+    "origen_de_la_deuda": "[CONTRATO, PEDIDO O FACTURA QUE LA JUSTIFICA]",
+    "documentos": "[LISTA DE FACTURAS, ALBARANES O CORREOS QUE ACREDITAN LA ENTREGA]",
+    "importe_principal": "[IMPORTE]",
+    "vencimiento": "[DD/MM/AAAA]",
+    "intereses": "[INTERESES PACTADOS EN CONTRATO O 'LOS LEGALES QUE CORRESPONDAN']",
+    "plazo_final": "[DÍAS NATURALES DESDE LA RECEPCIÓN]",
+    "cuenta_de_pago": "[IBAN]"
+  },
+  "estructura_obligatoria": [
+    "Encabezado con remitente y destinatario identificados",
+    "Hechos numerados: qué se contrató, qué se entregó, qué se facturó y qué está impagado",
+    "Relación de documentos que acreditan la deuda",
+    "Requerimiento expreso de pago con importe, plazo y forma de pago",
+    "Advertencia de las consecuencias: reclamación judicial y costes e intereses derivados",
+    "Fecha, lugar y firma"
+  ],
+  "restricciones": [
+    "No citar artículos concretos salvo los que el usuario indique; si no los aporta, escribir 'la normativa aplicable'",
+    "No afirmar hechos que el usuario no haya facilitado",
+    "Sin insultos, coacciones ni referencias a la vida personal del deudor",
+    "Lenguaje formal pero comprensible, máximo 500 palabras"
+  ],
+  "formato_salida": {
+    "bloque_1": "texto del burofax listo para copiar",
+    "bloque_2": "lista de documentos que debes adjuntar o conservar",
+    "bloque_3": "checklist de envío: envío con acuse de recibo y certificación de texto, y guardar el justificante"
+  },
+  "criterios_calidad": [
+    "Los hechos van numerados y cada uno se puede probar con un documento de la lista",
+    "El requerimiento y el plazo aparecen en una frase inequívoca",
+    "Nada queda ambiguo sobre quién debe qué, a quién y cuándo"
+  ],
+  "aviso_legal": "Modelo orientativo; antes de iniciar acciones judiciales consúltalo con un abogado"
+}

@@ -1,0 +1,56 @@
+{
+  "tarea": "Escribe el manual de emergencia de mi negocio digital: los fallos más probables con síntoma, primera comprobación, acciones en orden y a quién avisar",
+  "contexto": {
+    "negocio": "[QUÉ VENDO Y POR QUÉ CANAL]",
+    "sistemas": "[WEB, TIENDA, RESERVAS, PASARELA DE COBRO, CORREO, AUTOMATIZACIONES Y QUIÉN LOS PROVEE]",
+    "quien_lo_va_a_usar": "[YO, UN SOCIO, UN EMPLEADO SIN CONOCIMIENTOS TÉCNICOS]",
+    "historial": "[QUÉ HA FALLADO EN LOS ÚLTIMOS MESES]"
+  },
+  "entradas": {
+    "proveedores_y_soporte": "[CÓMO SE ABRE UNA INCIDENCIA EN CADA UNO Y CUÁNTO TARDAN]",
+    "horario_critico": "[FRANJAS EN LAS QUE UNA CAÍDA DUELE DE VERDAD]",
+    "limites": "[QUÉ NO PUEDE TOCAR QUIEN NO SEA YO]"
+  },
+  "pasos": [
+    "1. Lista los seis fallos más probables según lo que uso y lo que ya me ha pasado",
+    "2. Para cada uno escribe el síntoma tal y como lo ve un cliente, no en lenguaje técnico",
+    "3. Añade la primera comprobación que distingue si el problema es mío o del proveedor",
+    "4. Escribe las acciones en orden, de la menos arriesgada a la más arriesgada, con el punto exacto en el que hay que parar y pedir ayuda",
+    "5. Incluye siempre la opción de revertir al estado anterior antes que la de arreglar en caliente",
+    "6. Pon los datos de contacto y de cuenta necesarios para abrir la incidencia sin buscarlos",
+    "7. Añade el mensaje tipo para clientes y quién lo publica",
+    "8. Termina con una revisión corta posterior: qué pasó, cómo se detectó, cuánto duró y qué evitaría la repetición"
+  ],
+  "que_mirar": [
+    "si el fallo es del proveedor, la acción es esperar e informar, no tocar",
+    "que el manual sea accesible desde el móvil y no viva dentro del sistema que puede caer",
+    "qué decisiones cuestan dinero y necesitan tu aprobación",
+    "cuánto tiempo se espera antes de escalar a un técnico externo",
+    "qué pruebas confirman que ya está resuelto de verdad"
+  ],
+  "errores_tipicos": [
+    "tocar varias cosas a la vez y no saber cuál lo arregló",
+    "guardar el manual en la propia web que se ha caído",
+    "no anotar la hora de inicio y luego no saber qué contar al cliente",
+    "buscar culpables en vez de causas y que nadie vuelva a avisar",
+    "reiniciar sin haber mirado nada y perder la pista del fallo"
+  ],
+  "restricciones": [
+    "lenguaje llano: nada de jerga sin explicar",
+    "cada acción en una línea con un verbo claro",
+    "no incluyas contraseñas en el documento, solo dónde están guardadas"
+  ],
+  "formato_salida": {
+    "1_ficha_por_fallo": "síntoma | primera comprobación | acciones en orden | límite antes de escalar | prueba de que está resuelto",
+    "2_directorio": "proveedor | canal de soporte | dato de cuenta necesario | tiempo de respuesta habitual",
+    "3_comunicacion": "mensajes cortos para clientes según gravedad",
+    "4_revision_posterior": "cinco preguntas para rellenar en quince minutos",
+    "extension": "una hoja por fallo, legible en el móvil"
+  },
+  "criterios_calidad": [
+    "una persona sin perfil técnico puede seguir la ficha completa",
+    "cada ficha dice claramente cuándo hay que dejar de intentarlo",
+    "todo fallo tiene una prueba objetiva de resolución",
+    "no hay ningún paso que dependa de recordar algo de memoria"
+  ]
+}

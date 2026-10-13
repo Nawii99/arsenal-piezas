@@ -1,0 +1,27 @@
+{
+  "tarea": "Calcular el punto de equilibrio de mi negocio y analizar su sensibilidad a cambios de precio, coste y volumen",
+  "entradas": {
+    "productos": "[POR CADA UNO: NOMBRE, PRECIO DE VENTA SIN IVA, COSTE DIRECTO POR UNIDAD, % DE LAS VENTAS QUE REPRESENTA]",
+    "costes_fijos_mensuales": "[LISTA DETALLADA: ALQUILER, SUELDOS CON SEGUROS SOCIALES, CUOTA DE AUTÓNOMOS, GESTORÍA, SUMINISTROS, SEGUROS, SOFTWARE, CUOTA DEL PRÉSTAMO]",
+    "ventas_actuales_mes": "[UNIDADES Y FACTURACIÓN DEL ÚLTIMO MES]",
+    "sueldo_que_necesito": "[LO QUE NECESITAS SACAR AL MES PARA VIVIR]"
+  },
+  "instrucciones": [
+    "Calcula margen de contribución por unidad y en porcentaje, producto a producto y en media ponderada",
+    "Calcula el punto de equilibrio en unidades y en euros de facturación al mes",
+    "Calcula también el punto de equilibrio 'con mi sueldo dentro', sumándolo a los costes fijos",
+    "Compara ese número con mis ventas actuales y di cuánto falta o cuánto margen de seguridad hay, en porcentaje",
+    "Haz una tabla de sensibilidad: qué pasa con el punto de equilibrio si el precio baja un 10%, si el coste directo sube un 10% y si los fijos suben 200 euros",
+    "Muestra la fórmula usada en cada cálculo para que pueda comprobarlo"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con tablas y cifras redondeadas a euros",
+    "partes": ["Tabla de márgenes por producto", "Punto de equilibrio básico y con sueldo", "Tabla de sensibilidad", "Semáforo de viabilidad: verde, ámbar o rojo, con una frase de explicación", "3 palancas concretas para bajar el punto de equilibrio"]
+  },
+  "criterios_calidad": [
+    "No se confunden costes fijos con variables: cada partida queda clasificada",
+    "Todo se calcula sin IVA y se avisa de ello",
+    "Las cifras se pueden reproducir con una calculadora siguiendo las fórmulas mostradas",
+    "Las palancas propuestas son accionables este mes, no generalidades"
+  ]
+}

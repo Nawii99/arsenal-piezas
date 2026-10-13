@@ -1,0 +1,35 @@
+{
+  "tarea": "Definir el sistema de señalética interior de un local: qué carteles hacen falta, qué dicen y cómo se ven",
+  "local": {
+    "tipo": "[BAR, CLÍNICA, TIENDA, GIMNASIO, TALLER, OFICINA]",
+    "espacios": "[LISTA DE ZONAS: ENTRADA, ESPERA, ASEOS, PROBADORES, ALMACÉN, SALIDA]",
+    "recorrido": "[POR DÓNDE ENTRA Y SE MUEVE EL CLIENTE]",
+    "normas": "[LO QUE HAY QUE COMUNICAR: HORARIOS, PAGOS, RESERVAS, MASCOTAS, AFORO]",
+    "idiomas": "[CASTELLANO Y OTROS SI HACE FALTA]",
+    "marca": "[COLORES Y TIPOGRAFÍA]"
+  },
+  "tipos_de_senal": ["orientación, dice hacia dónde", "identificación, dice qué es este sitio", "informativa, dice cómo funciona", "normativa, dice qué no se puede", "obligatoria por ley, como salidas y extintores"],
+  "metodo": [
+    "Recorre mentalmente el trayecto del cliente y detecta cada punto de duda",
+    "Asigna a cada punto un tipo de señal y un tamaño según la distancia",
+    "Redacta los textos en positivo y en una línea, evitando el prohibido cuando se pueda",
+    "Unifica el formato: mismo fondo, misma tipografía y misma posición del icono",
+    "Separa lo que es obligatorio por normativa y no se puede rediseñar libremente"
+  ],
+  "formato_salida": {
+    "inventario": "Tabla con zona, tipo de señal, texto exacto, tamaño en cm y material sugerido",
+    "plantilla": "Descripción de la plantilla común: márgenes, posición del texto y del icono",
+    "prioridad": "Qué señales poner primero si el presupuesto es corto",
+    "pedido": "Resumen agrupado por material para pedirlo todo junto"
+  },
+  "restricciones": [
+    "Máximo 8 palabras por señal",
+    "Nunca usar solo color para distinguir dos señales",
+    "Contraste alto y tipografía sin adornos"
+  ],
+  "criterios_calidad": [
+    "Un cliente nuevo llega al aseo sin preguntar",
+    "Todas las señales parecen del mismo sistema",
+    "Las señales obligatorias están identificadas y no se han maquillado"
+  ]
+}

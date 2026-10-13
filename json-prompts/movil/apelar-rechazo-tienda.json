@@ -1,0 +1,43 @@
+{
+  "tarea": "Interpretar un rechazo de App Store o Google Play, decidir si toca corregir o alegar, y redactar la respuesta al equipo de revisión.",
+  "contexto": {
+    "tienda": "[APP STORE / GOOGLE PLAY]",
+    "texto_literal_del_rechazo": "[PEGA AQUÍ EL MENSAJE COMPLETO TAL CUAL, INCLUIDO EL NÚMERO DE DIRECTRIZ O POLÍTICA]",
+    "capturas_que_te_han_enviado": "[DESCRIBE LO QUE SE VE, SI TE HAN MANDADO ALGUNA]",
+    "que_hace_la_app": "[EN DOS FRASES]",
+    "version_enviada": "[NÚMERO Y FECHA]",
+    "cambios_de_esta_version": "[QUÉ TOCASTE RESPECTO A LA ANTERIOR]"
+  },
+  "pasos": [
+    "1. Localiza el número exacto de directriz o política citado y traduce a lenguaje llano qué prohíbe o exige.",
+    "2. Clasifica el caso: A) fallo real que hay que corregir, B) el revisor no ha podido probar la app, C) malentendido sobre el modelo de negocio, D) desacuerdo de fondo.",
+    "3. Si es B, casi siempre es acceso: prepara usuario y contraseña de demostración, con datos ya cargados, y una nota de cómo llegar a la función que no encontraron.",
+    "4. Si es A, escribe la lista de cambios concretos, pantalla por pantalla, y qué versión los incorpora.",
+    "5. Si es C o D, redacta una respuesta breve y educada en el canal oficial: hechos, capturas numeradas y referencia a la directriz. Nunca discutas ni amenaces.",
+    "6. Comprueba las causas clásicas: app que parece una web metida en un marco, funcionalidad mínima, contenido de ejemplo, enlaces rotos, pagos digitales fuera del sistema de la tienda, permisos sin justificar, política de privacidad caída.",
+    "7. No reenvíes el mismo archivo sin cambios ni sin explicación: se rechaza otra vez y quema la cola de revisión.",
+    "8. Deja anotado qué causó el rechazo para revisarlo en cada envío futuro."
+  ],
+  "formato_salida": {
+    "bloque_1": "Qué te están diciendo, en cristiano, en 3 renglones",
+    "bloque_2": "Clasificación del caso y decisión: corregir, aclarar o ambas",
+    "bloque_3": "Lista de correcciones concretas, ordenadas por lo que desbloquea antes",
+    "bloque_4": "Mensaje listo para enviar al equipo de revisión, en inglés claro y neutro, máximo 200 palabras",
+    "bloque_5": "Datos de la cuenta de demostración y pasos para reproducir la función",
+    "bloque_6": "Comprobaciones a repetir antes de cada próximo envío"
+  },
+  "criterios_calidad": [
+    "El mensaje cita la directriz por su número y responde exactamente a eso, sin defenderse de cosas que no te han dicho.",
+    "Tono neutro y profesional: ni disculpas excesivas ni reproches.",
+    "Cada afirmación va acompañada de dónde comprobarla dentro de la app.",
+    "Si hay corrección, se dice qué se ha cambiado y en qué versión.",
+    "La cuenta de demostración funciona de verdad y no caduca."
+  ],
+  "errores_frecuentes": [
+    "Responder en español a un equipo que revisa en inglés.",
+    "Enviar un mensaje largo con la historia del proyecto.",
+    "Prometer que lo arreglarás en una versión futura en lugar de arreglarlo ahora.",
+    "Dar una cuenta de prueba con verificación por SMS que el revisor no puede recibir.",
+    "Cambiar diez cosas a la vez y no saber cuál desbloqueó la aprobación."
+  ]
+}

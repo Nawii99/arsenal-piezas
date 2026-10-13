@@ -1,0 +1,34 @@
+{
+  "tarea": "Convertir una tabla ancha o mal estructurada en una tabla ordenada de una fila por observación",
+  "contexto": {
+    "origen": "[HOJA DE EXCEL HECHA A MANO, EXPORT DE UN PROGRAMA, INFORME EN PDF PASADO A EXCEL]",
+    "analisis_posterior": "[QUÉ QUIERES HACER DESPUÉS: TABLA DINÁMICA, GRÁFICO DE EVOLUCIÓN, SUBIRLO A UNA HERRAMIENTA]"
+  },
+  "entradas": {
+    "estructura_actual": "[DESCRIBE LA HOJA: FILAS DE TÍTULO, CELDAS COMBINADAS, COLUMNAS POR MES, SUBTOTALES...]",
+    "muestra": "[PEGA LAS PRIMERAS 20 FILAS TAL CUAL, INCLUYENDO CABECERAS Y TOTALES]",
+    "columnas_identificativas": "[LAS QUE DICEN DE QUÉ ES CADA FILA: PRODUCTO, TIENDA, COMERCIAL...]",
+    "columnas_de_valor": "[LAS QUE CONTIENEN CIFRAS: MESES, TRIMESTRES, CANALES...]"
+  },
+  "pasos": [
+    "Quitar filas de título, filas en blanco, subtotales y totales, dejándolos anotados aparte para comprobar después",
+    "Rellenar hacia abajo los valores que solo aparecen en la primera fila de cada bloque por culpa de celdas combinadas",
+    "Pasar las columnas de valor a dos columnas: una de concepto y otra de importe",
+    "Convertir los nombres de columna tipo ene-25 en una fecha real en formato AAAA-MM-DD",
+    "Comprobar que la suma de la tabla nueva coincide con los totales anotados antes"
+  ],
+  "restricciones": [
+    "Ninguna celda combinada ni fila vacía en el resultado",
+    "Nombres de columna en minúsculas, sin acentos ni espacios",
+    "No descartar filas con importe cero: son información"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla resultante en CSV con la muestra ya transformada",
+    "bloque_2": "Comparación de totales: original frente a transformado, con la diferencia",
+    "bloque_3": "Pasos para repetirlo tú mismo con el fichero completo, en Excel o en Sheets"
+  },
+  "criterios_calidad": [
+    "Los totales cuadran o se explica exactamente dónde está la diferencia",
+    "Cada fila del resultado se entiende sola, sin mirar filas de arriba"
+  ]
+}

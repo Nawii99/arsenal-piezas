@@ -1,0 +1,37 @@
+{
+  "tarea": "Decidir si [TAREA QUE QUIERO AUTOMATIZAR] necesita un agente propio, un subagente dentro de otro agente o simplemente un buen prompt",
+  "contexto": {
+    "descripcion": "[EXPLICA LA TAREA COMO SE LA CONTARIAS A UN COMPAÑERO NUEVO]",
+    "frecuencia": "[CADA CUANTO LA HACES]",
+    "tiempo_por_vez": "[CUANTO TE LLEVA HOY]",
+    "necesita_datos_de_fuera": "[SI/NO Y CUALES]",
+    "decisiones_que_implica": "[QUE HAY QUE DECIDIR POR EL CAMINO]",
+    "consecuencia_de_un_error": "[QUE PASA SI SALE MAL]"
+  },
+  "criterios_de_decision": [
+    "Prompt suelto: un solo paso, sin herramientas, revisas tu el resultado",
+    "Prompt con plantilla fija: se repite igual, cambian solo los datos",
+    "Subagente: es una pieza de un proceso mayor y siempre la llama otro agente",
+    "Agente propio: varios pasos encadenados, usa herramientas y decide sobre la marcha",
+    "Nada de IA: la tarea tiene reglas fijas y la resuelve mejor una automatizacion normal o una plantilla"
+  ],
+  "metodo": [
+    "1. Cuenta los pasos reales y cuantas veces hay que decidir algo",
+    "2. Mira si hace falta tocar herramientas o solo escribir texto",
+    "3. Calcula el tiempo que se ahorra al mes y comparalo con el esfuerzo de montarlo",
+    "4. Valora el riesgo si se equivoca y sin nadie mirando",
+    "5. Da un veredicto unico y una alternativa mas sencilla por si el veredicto se te queda grande"
+  ],
+  "formato_salida": {
+    "veredicto": "Una linea: prompt, plantilla, subagente, agente o nada de IA",
+    "por_que": "4 razones apoyadas en lo que te he contado, no en generalidades",
+    "en_contra": "2 razones por las que podria no ser la mejor opcion",
+    "primer_paso": "Que hacer esta misma semana para probarlo con poco esfuerzo",
+    "señal_de_ascenso": "Que tendria que pasar para subir de nivel (de prompt a agente, por ejemplo)"
+  },
+  "restricciones": [
+    "No recomiendes un agente si con menos se resuelve: dilo aunque suene poco ambicioso",
+    "Nada de nombres de herramientas de moda ni de promesas de porcentajes",
+    "Maximo 400 palabras"
+  ]
+}

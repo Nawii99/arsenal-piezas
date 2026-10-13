@@ -1,0 +1,34 @@
+{
+  "tarea": "Adaptar un cartel ya existente a varios formatos manteniendo la misma identidad visual",
+  "cartel_original": {
+    "titular": "[TITULAR ACTUAL]",
+    "subtitulo": "[SUBTÍTULO O DATOS]",
+    "datos": "[FECHA, LUGAR, PRECIO O CONDICIONES]",
+    "elementos": "[IMAGEN PRINCIPAL, LOGO, COLORES, TIPOGRAFÍAS]",
+    "formato_base": "[A3 VERTICAL U OTRO]"
+  },
+  "formatos_destino": ["A4 vertical", "A5 flyer", "Story vertical 1080x1920", "Post cuadrado 1080x1080", "Cabecera horizontal para email", "Pantalla del local 1920x1080", "Cartel de escaparate A2", "Marcapáginas o tarjeta 9x5 cm"],
+  "principio": "No se estira ni se encoge el mismo diseño: cada formato reordena los mismos elementos según su distancia y su tiempo de lectura",
+  "metodo": [
+    "Clasifica los elementos en imprescindibles, secundarios y prescindibles",
+    "Para cada formato decide qué se queda, qué se recorta y qué se agranda",
+    "Define la zona segura de cada formato, sobre todo en story por la interfaz",
+    "Ajusta el titular: versión larga, media y de tres palabras",
+    "Indica si el logo va arriba, abajo o se sustituye por la marca de agua"
+  ],
+  "formato_salida": {
+    "tabla": "Una fila por formato con medidas en px o mm, titular usado, elementos incluidos y elementos eliminados",
+    "avisos": "Qué formato necesita rehacer la imagen por recorte y cómo encuadrarla",
+    "orden_de_produccion": "En qué orden crearlos para aprovechar el trabajo"
+  },
+  "restricciones": [
+    "Los mismos colores y tipografías en todos los formatos",
+    "El titular puede acortarse pero nunca cambiar de significado",
+    "En los formatos de redes, ningún texto en el 15 por ciento inferior"
+  ],
+  "criterios_calidad": [
+    "Las ocho piezas se reconocen como la misma campaña de un vistazo",
+    "Ninguna versión tiene texto cortado ni pegado al borde",
+    "Cada formato se lee a la distancia a la que se va a ver"
+  ]
+}

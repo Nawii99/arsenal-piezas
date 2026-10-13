@@ -1,0 +1,40 @@
+{
+  "tarea": "Diseñar el plan de copias de seguridad de una pyme y la prueba periódica de restauración",
+  "contexto": {
+    "empresa": "[NOMBRE DE LA EMPRESA]",
+    "tolerancia_a_parada": "[CUÁNTAS HORAS PUEDE ESTAR PARADO EL NEGOCIO]",
+    "perdida_de_datos_asumible": "[CUÁNTAS HORAS DE TRABAJO PUEDES PERMITIRTE PERDER]",
+    "presupuesto_mensual": "[EUROS AL MES]"
+  },
+  "entradas": {
+    "datos_criticos": "[FACTURAS, CONTABILIDAD, BASE DE CLIENTES, FOTOS, PROYECTOS, CORREO, WEB O TIENDA]",
+    "donde_estan": "[ORDENADOR DEL DESPACHO, NUBE, PROGRAMA DE GESTIÓN, MÓVIL, DISCO EN RED]",
+    "copias_actuales": "[QUÉ SE COPIA HOY, DÓNDE Y CADA CUÁNTO]",
+    "ultima_restauracion_probada": "[FECHA O NUNCA]"
+  },
+  "metodo": [
+    "Aplicar la regla 3-2-1: tres copias del dato, en dos soportes distintos y una fuera de la oficina",
+    "Comprobar que la copia en la nube no sea solo sincronización: si borras o cifran un fichero, la sincronización lo replica y no salva nada",
+    "Exigir al menos una copia desconectada o inmutable, que un intruso con tu contraseña no pueda borrar",
+    "Definir frecuencia y retención por tipo de dato en función de las horas de trabajo que puedes perder",
+    "Escribir la prueba de restauración: qué fichero se recupera, en qué equipo, quién la hace y cuánto tarda",
+    "Definir quién revisa cada semana que las copias se han hecho y qué avisa cuando fallan"
+  ],
+  "restricciones": [
+    "Nada de scripts ni línea de comandos: solo opciones que se activan con clics o servicios contratables",
+    "Incluir el correo y los programas de gestión en la nube, que muchos creen que se copian solos",
+    "Toda copia con datos de clientes va cifrada y con la contraseña guardada en el gestor",
+    "Si falta información, listar las preguntas concretas en lugar de suponer"
+  ],
+  "formato_salida": {
+    "tipo": "plan en tabla más calendario y ficha de prueba",
+    "columnas": ["Dato", "Dónde vive", "Cómo se copia", "Cada cuánto", "Cuánto se guarda", "Copia fuera de la oficina", "Responsable", "Coste al mes"],
+    "anexos": ["Calendario de tareas semanales, mensuales y trimestrales", "Ficha de prueba de restauración con casillas y hueco para la fecha y el tiempo tardado"]
+  },
+  "criterios_calidad": [
+    "Se puede recuperar un fichero borrado de hace un mes sin llamar a nadie",
+    "Ninguna copia depende de que una persona se acuerde de enchufar algo a diario",
+    "La prueba de restauración cabe en 30 minutos y la puede hacer alguien no técnico"
+  ],
+  "tono": "práctico y concreto, tuteando"
+}

@@ -1,0 +1,40 @@
+{
+  "tarea": "Escribirme el guion de dirección de una sesión de retrato: frases exactas que decir, orden de poses y trucos para que la persona se relaje",
+  "sesion": {
+    "a_quien_fotografio": "[PERFIL: DIRECTIVO, AUTÓNOMO, EQUIPO DE OFICINA, ABUELO, ADOLESCENTE]",
+    "uso_de_las_fotos": "[LINKEDIN / WEB DE LA EMPRESA / PRENSA / REDES / REGALO FAMILIAR]",
+    "duracion": "[MINUTOS DISPONIBLES]",
+    "planos_necesarios": "[PRIMER PLANO / MEDIO CUERPO / CUERPO ENTERO / HORIZONTAL PARA WEB]",
+    "ropa_prevista": "[QUÉ VA A LLEVAR]",
+    "nivel_de_timidez": "[SE SUELTA RÁPIDO / MUY INCÓMODO / NO LE GUSTAN LAS FOTOS]"
+  },
+  "metodo": [
+    "Empezar por dos minutos de conversación y disparos de calentamiento que la persona sepa que no cuentan",
+    "Dar órdenes de una sola cosa cada vez: primero pies, luego cuerpo, luego manos, luego barbilla, al final la mirada",
+    "Provocar expresiones con preguntas y no pidiendo sonrisa, porque la sonrisa pedida sale falsa",
+    "Ir de las poses más fáciles a las más expuestas",
+    "Enseñar una foto buena a mitad de sesión para dar confianza",
+    "Corregir los fallos habituales: hombros de frente, barbilla metida, manos muertas, mandíbula tensa, mirada perdida"
+  ],
+  "formato_salida": {
+    "tipo": "guion cronometrado",
+    "secciones": [
+      "ANTES: mensaje al cliente con qué ropa traer y qué evitar",
+      "MINUTO A MINUTO: bloques de tiempo con lo que hago yo y la frase literal que digo",
+      "BANCO DE POSES: 10 poses con nombre, descripción en una frase y a quién favorece",
+      "FRASES PARA PROVOCAR EXPRESIÓN: 8 frases o preguntas reales",
+      "RESCATE: qué hacer si la persona se bloquea o si se acaba el tiempo"
+    ]
+  },
+  "restricciones": [
+    "Las frases tienen que sonar a persona normal, en español de España y tuteando",
+    "Nada de indicaciones vagas del tipo 'relájate' o 'sé natural'",
+    "Ninguna pose que exija material o espacio que no he indicado",
+    "Respetar el tiempo total indicado"
+  ],
+  "criterios_calidad": [
+    "Puedo leer el guion en el móvil durante la sesión",
+    "Cada pose lleva una corrección concreta asociada",
+    "Salen al menos tres fotos claramente distintas para el uso indicado"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "tarea": "Diseñar el conjunto de reglas de aviso de una instalación con sensores para que avise lo justo y siempre a quien puede actuar",
+  "contexto": {
+    "perfil": "Persona sin perfil técnico que configura avisos de sensores para sí misma o para un cliente",
+    "situacion": "[AVISOS NUEVOS / DEMASIADAS ALERTAS / NADIE HACE CASO / SE PERDIÓ UN AVISO IMPORTANTE]"
+  },
+  "entradas": {
+    "sensores": "[LISTA: qué mide, dónde está, cada cuánto envía dato, margen de error conocido]",
+    "que_importa": "[QUÉ SITUACIONES SON REALMENTE GRAVES Y CUÁLES SOLO MOLESTAS]",
+    "personas": "[QUIÉN RECIBE, EN QUÉ HORARIO Y POR QUÉ CANAL: móvil, correo, panel]",
+    "historial": "[EJEMPLOS DE AVISOS RECIBIDOS ÚLTIMAMENTE Y CUÁLES ERAN FALSOS]"
+  },
+  "pasos": [
+    "1. Clasifica cada aviso en tres niveles: información (se mira cuando se puede), atención (hoy) y urgencia (ahora). Solo el nivel urgencia puede sonar de noche.",
+    "2. Para cada regla define cuatro cosas: umbral, tiempo que debe mantenerse antes de disparar, ventana horaria y a quién va. Sin el tiempo de permanencia, cualquier lectura suelta genera ruido.",
+    "3. Añade histéresis: el aviso se cierra a un valor distinto del que lo abrió, para que un sensor que oscila alrededor del umbral no dispare veinte veces seguidas.",
+    "4. Pon límite de repetición: como máximo un aviso cada [N] minutos por regla, y un resumen si se repite.",
+    "5. Crea las reglas de silencio con criterio: durante la limpieza, durante la carga y descarga, o cuando alguien pulsa un botón de mantenimiento con caducidad automática. Un silencio sin caducidad se convierte en un sistema apagado.",
+    "6. Añade la regla que casi nadie pone: sensor mudo. Si un sensor lleva [N] horas sin enviar datos, hay que avisar, porque el silencio parece normalidad.",
+    "7. Define el escalado: si el aviso urgente no se confirma en [N] minutos, salta a un segundo contacto por otro canal.",
+    "8. Escribe el texto de cada aviso: qué pasa, dónde, desde cuándo, valor actual y primera acción. Un aviso que solo dice ALARMA no sirve.",
+    "9. Define la revisión: a las dos semanas, contar avisos por regla y ajustar las que hayan disparado más falsos que ciertos."
+  ],
+  "restricciones": [
+    "Ningún aviso sin destinatario concreto ni sin acción asociada",
+    "Como máximo un tipo de aviso puede despertar de madrugada por instalación",
+    "Nada de reglas que dependan de que alguien mire un panel",
+    "El texto del aviso cabe en la pantalla de bloqueo del móvil"
+  ],
+  "errores_tipicos": [
+    "Poner el umbral en el valor límite en vez de un poco antes",
+    "Avisar por correo algo urgente",
+    "Silenciar para siempre una regla molesta en lugar de corregirla",
+    "No tener ninguna alerta de sensor sin datos y creer que todo va bien"
+  ],
+  "formato_salida": {
+    "1_tabla_reglas": "Columnas: regla | nivel | umbral | permanencia | cierre (histéresis) | horario | destinatario | canal",
+    "2_textos": "Texto exacto de cada aviso, con los huecos de valor marcados",
+    "3_escalado": "Qué pasa si nadie contesta, con tiempos",
+    "4_silencios": "Reglas de silencio y su caducidad",
+    "5_vigilancia_del_sistema": "Avisos de sensor mudo y de fallo de corriente",
+    "6_revision": "Qué medir a las dos semanas y con qué criterio ajustar"
+  },
+  "criterios_calidad": [
+    "Toda regla tiene permanencia y destinatario",
+    "Existe al menos una regla de sensor sin datos",
+    "Los avisos de madrugada están justificados uno a uno",
+    "Cada texto de aviso incluye una primera acción concreta"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Auditar respuestas reales que he enviado a clientes, puntuarlas y reescribirlas",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "tono_deseado": "[EJ: CLARO, CERCANO Y BREVE]",
+    "canal": "[EMAIL / WHATSAPP / CHAT]"
+  },
+  "entradas": {
+    "mensajes": ["[PEGA MENSAJE 1]", "[PEGA MENSAJE 2]", "[PEGA MENSAJE 3]"],
+    "contexto_de_cada_uno": "[QUÉ HABÍA PREGUNTADO EL CLIENTE]"
+  },
+  "criterios_de_puntuacion": {
+    "claridad": "¿Se entiende a la primera lectura?",
+    "resolucion": "¿Resuelve la duda o manda al cliente a otro sitio?",
+    "siguiente_paso": "¿Queda claro qué pasa ahora y quién lo hace?",
+    "tono": "¿Suena a persona o a formulario?",
+    "longitud": "¿Sobra texto que nadie va a leer?",
+    "riesgo": "¿Hay promesas, culpas o datos que no deberían estar por escrito?"
+  },
+  "instrucciones": [
+    "Puntúa cada criterio de 1 a 5 y da la nota media del mensaje",
+    "Señala como máximo tres fallos por mensaje, citando la frase exacta",
+    "Reescribe el mensaje corrigiendo esos fallos y respetando los datos originales",
+    "No inventes información: si falta un dato, déjalo entre corchetes",
+    "Al final, saca los tres vicios que se repiten en todos mis mensajes"
+  ],
+  "formato_salida": {
+    "por_mensaje": "original, tabla de notas, fallos con la frase citada, versión reescrita",
+    "resumen_final": "tres vicios repetidos y tres reglas para no volver a caer"
+  },
+  "criterios_calidad": [
+    "Las críticas van siempre acompañadas de la frase concreta y de su arreglo",
+    "La versión reescrita es más corta que la original salvo que faltara información"
+  ]
+}

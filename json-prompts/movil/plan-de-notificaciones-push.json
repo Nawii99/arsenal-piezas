@@ -1,0 +1,42 @@
+{
+  "tarea": "Diseñar el plan de notificaciones push del primer mes con sus textos",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "accion_que_quiero_que_repitan": "[LA ACCIÓN QUE INDICA QUE LA APP LES SIRVE]",
+    "datos_que_tengo_del_usuario": "[QUÉ SÉ DE LO QUE HA HECHO DENTRO DE LA APP]",
+    "herramienta_de_envio": "[LA QUE USO O NINGUNA TODAVÍA]",
+    "tipo_de_uso": "[DIARIO / SEMANAL / PUNTUAL]"
+  },
+  "pasos": [
+    "Separa avisos de servicio, que responden a algo que hizo el usuario, de avisos comerciales, que buscan que vuelva",
+    "Elige el momento de pedir el permiso de notificaciones: después de la primera acción útil y con una pantalla previa que explique qué va a recibir",
+    "Define cada aviso por su disparador y por el segmento al que va, nunca por una fecha del calendario general",
+    "Escribe título de cuarenta caracteres como mucho y cuerpo de ciento veinte, con el dato concreto del usuario dentro",
+    "Indica a qué pantalla exacta lleva cada aviso al tocarlo, no a la portada de la app",
+    "Pon un tope de frecuencia por usuario y una regla de apagado cuando ya ha hecho la acción",
+    "Fija la ventana horaria y la métrica de control de cada aviso"
+  ],
+  "restricciones": [
+    "Nada de envíos comerciales sin permiso claro ni fuera de la franja de diez de la mañana a nueve de la noche",
+    "Máximo tres avisos comerciales por semana y por usuario",
+    "Sin urgencias falsas, sin mayúsculas gritando y sin emojis de relleno",
+    "Cada aviso tiene que poder desactivarse desde los ajustes de la app"
+  ],
+  "errores_frecuentes": [
+    "Pedir el permiso en el primer segundo y quedarse sin él para siempre",
+    "Mandar el mismo aviso a todo el mundo, incluido a quien ya hizo lo que le pides",
+    "Llevar al usuario a la pantalla de inicio y obligarle a buscar aquello de lo que le hablabas",
+    "Mirar solo las aperturas y no las desactivaciones ni las desinstalaciones"
+  ],
+  "formato_salida": {
+    "tabla": "nombre, tipo, disparador, segmento, momento, titulo, cuerpo, pantalla_destino, tope_frecuencia, metrica",
+    "anexo": "Texto de la pantalla previa que pide el permiso",
+    "reglas": "Lista corta de reglas de apagado y de topes globales"
+  },
+  "criterios_calidad": [
+    "Cada aviso nace de algo que hizo o dejó de hacer esa persona",
+    "Ningún título pasa de cuarenta caracteres",
+    "Todos los avisos abren la pantalla concreta de la que hablan",
+    "Existe una métrica de daño, como desactivaciones o bajas, además de la de apertura"
+  ]
+}

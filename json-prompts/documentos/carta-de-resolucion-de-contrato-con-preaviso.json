@@ -1,0 +1,36 @@
+{
+  "tarea": "Redactar la comunicación de resolución o no renovación de un contrato, correcta en forma y en plazo",
+  "entradas": {
+    "contrato": "[TÍTULO DEL CONTRATO] firmado el [FECHA] con [OTRA PARTE]",
+    "clausula_resolucion": "[PEGA LA CLÁUSULA DE DURACIÓN, PREAVISO Y RESOLUCIÓN]",
+    "motivo": "[NO RENOVACIÓN / INCUMPLIMIENTO / ACUERDO MUTUO / FIN DE PROYECTO]",
+    "hechos": "[SI HAY INCUMPLIMIENTO, LISTA FECHAS Y HECHOS CONCRETOS]",
+    "fecha_fin_deseada": "[FECHA EN QUE QUIERES QUE TERMINE]",
+    "pendientes": "[FACTURAS, MATERIALES, ACCESOS O FIANZA POR DEVOLVER]",
+    "tono": "[CORDIAL / NEUTRO / FIRME]"
+  },
+  "pasos": [
+    "Calcula el plazo de preaviso a partir de la cláusula y avisa si ya no llegas a tiempo",
+    "Indica el canal correcto de envío según el contrato: email, correo certificado o burofax con acuse",
+    "Redacta la comunicación citando la cláusula que ampara la resolución",
+    "Enumera las obligaciones pendientes de cada parte y un plazo para cumplirlas",
+    "Evita frases que reconozcan culpa o que renuncien a reclamar"
+  ],
+  "formato_salida": {
+    "1_aviso_de_plazos": "Fecha límite para comunicar y fecha real de fin del contrato",
+    "2_carta": "Texto completo con encabezado de partes, referencia al contrato, cláusula invocada, fecha de efectos, pendientes y despedida",
+    "3_version_email": "La misma comunicación resumida en 10 líneas para enviar por correo",
+    "4_checklist": "Qué guardar como prueba: acuse de recibo, capturas, facturas y accesos revocados"
+  },
+  "restricciones": [
+    "No amenaces con acciones que el usuario no vaya a emprender",
+    "No reconozcas deudas ni incumplimientos propios",
+    "Si la cláusula aportada no permite resolver todavía, dilo antes de redactar y propón alternativas"
+  ],
+  "criterios_calidad": [
+    "La carta se sostiene como prueba si acaba en una reclamación",
+    "Fechas y plazos calculados y escritos con claridad",
+    "Tono profesional aunque la relación esté rota"
+  ],
+  "aviso": "Si hay dinero importante en juego o un conflicto abierto, revísalo con un abogado antes de enviar"
+}

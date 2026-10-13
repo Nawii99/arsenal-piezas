@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar el bloque de preguntas frecuentes de una página de aterrizaje enfocado a eliminar objeciones de compra",
+  "entradas": {
+    "producto": "[QUÉ VENDES Y CÓMO FUNCIONA]",
+    "precio_y_pago": "[PRECIO, FORMAS DE PAGO Y SI HAY FINANCIACIÓN]",
+    "plazos": "[TIEMPO DE ENTREGA O DE RESPUESTA]",
+    "garantia": "[DEVOLUCIONES, GARANTÍA O PRUEBA]",
+    "preguntas_reales": "[LO QUE TE PREGUNTAN POR WHATSAPP, EMAIL O TELÉFONO]",
+    "motivos_de_no": "[POR QUÉ TE DICEN QUE NO AL FINAL]",
+    "zona_o_cobertura": "[DÓNDE TRABAJAS O A DÓNDE ENVÍAS]"
+  },
+  "tipos_de_objecion_a_cubrir": [
+    "Es caro o no sé si lo vale",
+    "No sé si funciona en mi caso concreto",
+    "No me fío de pagar por adelantado",
+    "No tengo tiempo ni ganas de complicaciones",
+    "Qué pasa si no me gusta o quiero cancelar",
+    "Quién está detrás y qué experiencia tiene",
+    "Cuánto tarda y qué tengo que hacer yo"
+  ],
+  "reglas_de_redaccion": [
+    "La pregunta se escribe como la diría el cliente, no en lenguaje corporativo",
+    "Respuesta de 2 a 4 frases: primero la respuesta directa, después el matiz",
+    "Nunca esquives el precio ni respondas 'depende de cada caso' sin dar un rango o un ejemplo",
+    "Cierra las respuestas críticas con un enlace o botón al siguiente paso",
+    "Ordena de la duda más frecuente a la menos frecuente"
+  ],
+  "formato_salida": {
+    "bloque_web": "10 preguntas con su respuesta, listas para pegar en la página",
+    "version_whatsapp": "Las 5 más repetidas en respuesta corta para copiar y pegar en el móvil",
+    "señales": "Lista de dudas detectadas que conviene resolver cambiando la oferta, no solo el texto"
+  },
+  "restricciones": [
+    "No inventes garantías, plazos ni condiciones que el usuario no haya indicado",
+    "Marca con [CONFIRMAR] cualquier dato del que no estés seguro"
+  ],
+  "criterios_calidad": ["Después de leer las preguntas, no queda ninguna razón razonable para no dar el paso"]
+}

@@ -1,0 +1,63 @@
+{
+  "tarea": "Redactar la pagina de tienda completa de un juego, incluidas descripcion corta, texto largo, etiquetas y el guion visual de capsula, capturas y trailer",
+  "contexto": {
+    "quien_lo_usa": "Creador independiente que publica su primer juego o demo",
+    "como_decide_el_comprador": "Mira la capsula, lee la descripcion corta, ve el trailer 15 segundos y ojea capturas. Rara vez lee el texto largo entero",
+    "momento": "Antes de publicar la pagina, cuanto antes mejor para acumular listas de deseados"
+  },
+  "entradas": {
+    "plataforma": "[STEAM / ITCH / GOOGLE PLAY / WEB]",
+    "juego": "[NOMBRE Y DE QUE VA EN UNA FRASE]",
+    "genero_y_referencias": "[GENERO Y TRES JUEGOS PARECIDOS]",
+    "gancho_diferencial": "[QUE HACE QUE NO SEA UNO MAS]",
+    "estado": "[DEMO / ACCESO ANTICIPADO / COMPLETO]",
+    "precio_previsto": "[EUROS O GRATIS]",
+    "material_disponible": "[CAPTURAS, GIFS, VIDEO, ARTE]"
+  },
+  "conocimiento_del_oficio": {
+    "descripcion_corta": "Una o dos frases que digan genero, accion principal y gancho. Nada de historia ni de mundo fantastico antes de decir a que se juega",
+    "regla_del_verbo": "El jugador tiene que saber que hace con las manos: construyes, disparas, ordenas, cultivas, resuelves",
+    "capsula": "Se ve del tamaño de un sello. Legible: pocos elementos, contraste alto, titulo grande y una imagen reconocible. Nada de escena llena de detalle",
+    "capturas": "Cinco o seis, la primera la mas representativa del bucle de juego, sin menus, sin pantallas de carga y sin texto de depuracion",
+    "trailer": "Los primeros cinco segundos con juego real en movimiento. Logo al final, no al principio",
+    "etiquetas": "Se eligen por como busca la gente, mezclando genero, ambientacion y mecanica. Las etiquetas mal puestas te sacan de las listas donde encajarias",
+    "texto_largo": "Bloques cortos con titulo, cada uno con un GIF o imagen. Lo que no aporta una razon de compra, sobra",
+    "lo_que_espanta": "Comparaciones grandilocuentes, promesas de contenido futuro y capturas de una version que no existe todavia"
+  },
+  "pasos": [
+    "1. Escribir la frase de una linea que resume el juego y probarla con alguien que no lo conozca",
+    "2. Redactar la descripcion corta en menos de 300 caracteres",
+    "3. Elegir de 8 a 15 etiquetas y justificar cada una",
+    "4. Montar el texto largo en 4 o 5 bloques, cada uno con su imagen",
+    "5. Escribir el brief de la capsula: composicion, colores, tamaño del titulo y prueba de miniatura",
+    "6. Seleccionar y ordenar las capturas indicando que muestra cada una",
+    "7. Escribir la escaleta del trailer segundo a segundo",
+    "8. Preparar la llamada a la accion y el texto del boton de lista de deseados o descarga"
+  ],
+  "errores_tipicos": [
+    "Empezar la descripcion con la historia del reino en lugar de con la jugabilidad",
+    "Capsula con arte precioso e ilegible en miniatura",
+    "Trailer que empieza con logos y textos y pierde al espectador",
+    "Etiquetas copiadas de un juego grande que no se parece al tuyo",
+    "Publicar la pagina el mismo dia del lanzamiento y no acumular listas de deseados"
+  ],
+  "restricciones": [
+    "Sin superlativos, sin comparaciones con juegos famosos y sin prometer contenido que no existe",
+    "Version en español y version en ingles",
+    "Respeta los limites de caracteres de la plataforma indicada"
+  ],
+  "formato_salida": {
+    "1_frase_del_juego": "Una linea",
+    "2_descripcion_corta": "Texto final con recuento de caracteres",
+    "3_texto_largo": "Bloques con titulo, cuerpo y que imagen acompaña",
+    "4_etiquetas": "Lista con motivo de cada una",
+    "5_brief_capsula": "Composicion, texto, colores y prueba de legibilidad en miniatura",
+    "6_capturas_y_trailer": "Orden de capturas y escaleta del trailer por segundos"
+  },
+  "criterios_calidad": [
+    "Alguien que lee solo la descripcion corta sabe a que se juega",
+    "La capsula se entiende reducida al tamaño de una uña",
+    "El trailer enseña juego real antes del segundo cinco",
+    "Ninguna afirmacion de la pagina depende de contenido no terminado"
+  ]
+}

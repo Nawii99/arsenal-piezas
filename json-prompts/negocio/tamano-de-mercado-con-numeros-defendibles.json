@@ -1,0 +1,34 @@
+{
+  "tarea": "Estimar el tamaño de mercado de [PRODUCTO O SERVICIO] en [ZONA GEOGRÁFICA] con método de arriba abajo y de abajo arriba, dejando visible cada supuesto",
+  "contexto": {
+    "que_vendo": "[DESCRIPCIÓN EN UNA FRASE]",
+    "precio_medio": "[PRECIO POR CLIENTE O TICKET MEDIO EN EUROS]",
+    "frecuencia_de_compra": "[VECES AL AÑO QUE COMPRA UN CLIENTE]",
+    "tipo_de_cliente": "[PARTICULARES O EMPRESAS, Y CON QUÉ CARACTERÍSTICAS]",
+    "cuota_realista": "[PORCENTAJE DEL MERCADO QUE CREES PODER CAPTAR EN 3 AÑOS]"
+  },
+  "metodo": [
+    "Calcular el mercado total posible, el mercado al que puedo llegar de verdad y el que puedo captar en los primeros años",
+    "Hacer el cálculo dos veces: partiendo de datos de población o empresas, y partiendo de mi capacidad real de atender clientes",
+    "Nombrar fuentes públicas españolas que sirven para cada dato (INE, DIRCE, Eurostat, informes sectoriales, colegios profesionales) sin inventar cifras concretas",
+    "Marcar claramente qué números son datos y cuáles son supuestos míos"
+  ],
+  "restricciones": [
+    "Prohibido dar cifras sin decir de dónde salen o de qué supuesto dependen",
+    "Si falta un dato, poner un rango razonado y marcarlo como PENDIENTE DE VERIFICAR",
+    "Nada de porcentajes de crecimiento inventados"
+  ],
+  "formato_salida": {
+    "tabla_calculo": "Tabla con: concepto, fórmula, valor bajo, valor medio, valor alto y fuente o supuesto",
+    "comparacion": "Comparación entre el cálculo de arriba abajo y el de abajo arriba, explicando por qué se parecen o no",
+    "sensibilidad": "Qué pasa con la facturación si el precio o la cuota bajan un 30 por ciento",
+    "punto_de_equilibrio": "Cuántos clientes al mes hacen falta para cubrir [COSTES FIJOS MENSUALES EN EUROS]",
+    "veredicto": "Cinco líneas diciendo si el mercado da para el objetivo de facturación de [OBJETIVO ANUAL EN EUROS] y qué habría que verificar primero"
+  },
+  "criterios_calidad": [
+    "Cualquier persona puede rehacer el cálculo cambiando un supuesto",
+    "Los datos inventados están señalados como tales",
+    "El veredicto es una recomendación clara, no un quizá"
+  ],
+  "tono": "Sobrio y honesto, sin optimismo comercial"
+}

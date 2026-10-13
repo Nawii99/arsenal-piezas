@@ -1,0 +1,36 @@
+{
+  "tarea": "Generar titulo SEO y meta descripcion para una lista de fichas de producto de una tienda online",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "mercado": "Espana, busquedas en espanol",
+    "tipo_de_producto": "[QUE VENDES]",
+    "envio_destacable": "[EJ: ENVIO EN 24H O ENVIO GRATIS DESDE X EUROS]"
+  },
+  "entradas": {
+    "listado_productos": "[PEGA AQUI UNA LINEA POR PRODUCTO: MARCA, MODELO, ATRIBUTO CLAVE, PRECIO]",
+    "palabra_clave_por_producto": "[COMO LO BUSCARIA UN CLIENTE EN GOOGLE]"
+  },
+  "reglas_seo": [
+    "Titulo entre 50 y 60 caracteres, contando espacios",
+    "La palabra clave va al principio del titulo, no al final",
+    "Meta descripcion entre 140 y 155 caracteres, con un beneficio y una razon para hacer clic",
+    "Incluir marca y modelo cuando existan, porque la gente busca por modelo",
+    "No repetir la misma meta descripcion en dos productos distintos",
+    "Nada de MAYUSCULAS enteras, signos de exclamacion ni emojis"
+  ],
+  "errores_a_evitar": [
+    "Rellenar el titulo con la misma coletilla comercial en todos los productos",
+    "Prometer precios o descuentos que cambian, porque quedan desfasados",
+    "Escribir la meta descripcion como una lista de palabras clave"
+  ],
+  "formato_salida": {
+    "tipo": "tabla",
+    "columnas": ["producto", "titulo_seo", "n_caracteres_titulo", "meta_descripcion", "n_caracteres_meta", "palabra_clave_usada"],
+    "despues_de_la_tabla": "lista de productos cuyo titulo se parece demasiado a otro, con la alternativa propuesta"
+  },
+  "criterios_calidad": [
+    "Ningun titulo ni meta pasa del limite de caracteres indicado",
+    "Cada fila se entiende sin haber leido la ficha completa",
+    "Un cliente sabria por el titulo si ese producto es el que busca"
+  ]
+}

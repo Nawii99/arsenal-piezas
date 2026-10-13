@@ -1,0 +1,40 @@
+{
+  "tarea": "Crear el cartel de un evento en A3 vertical: textos definitivos, jerarquía visual y guía de maquetación",
+  "contexto": {
+    "evento": "[NOMBRE DEL EVENTO]",
+    "organiza": "[NOMBRE DE TU NEGOCIO O ASOCIACIÓN]",
+    "fecha_hora": "[DÍA Y HORA]",
+    "lugar": "[SITIO Y DIRECCIÓN]",
+    "entrada": "[GRATIS, PRECIO O RESERVA]",
+    "publico": "[A QUIÉN VA DIRIGIDO]",
+    "donde_se_cuelga": "[ESCAPARATES, TABLÓN DEL BARRIO, FAROLAS, INTERIOR DEL LOCAL]",
+    "marca": "[COLORES Y TIPOGRAFÍAS SI LAS TIENES]"
+  },
+  "regla_de_los_tres_metros": "A 3 metros debe leerse qué es. A 1 metro, cuándo y dónde. De cerca, el resto",
+  "metodo": [
+    "Ordena la información en cuatro niveles: titular, subtítulo, datos prácticos y letra pequeña",
+    "Propón 3 titulares de 2 a 5 palabras y di cuál recomiendas y por qué",
+    "Define la retícula: márgenes, zona de titular, zona de imagen y pie con logos",
+    "Asigna tamaños relativos: el titular al menos 4 veces el cuerpo de texto",
+    "Revisa el contraste entre texto y fondo y elimina todo dato que no aporte",
+    "Cierra con el pie de patrocinadores o el aviso legal si hace falta"
+  ],
+  "restricciones": [
+    "Máximo 30 palabras visibles en todo el cartel",
+    "Nunca colocar texto sobre zonas de la imagen con mucho detalle",
+    "Un solo mensaje principal y una sola llamada a la acción",
+    "Español de España, sin anglicismos innecesarios"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha de textos por niveles: titular, subtítulo, datos y pie",
+    "bloque_2": "Mapa de maquetación por zonas de arriba abajo, con porcentaje de altura de cada una",
+    "bloque_3": "Paleta de 3 colores con código HEX y pareja tipográfica gratuita de Google Fonts",
+    "bloque_4": "Prompt de imagen para generar la ilustración o foto de fondo",
+    "bloque_5": "Checklist de 6 puntos antes de mandar a imprimir"
+  },
+  "criterios_calidad": [
+    "Se entiende de qué va el evento en menos de 3 segundos",
+    "Fecha, hora y lugar aparecen juntos y sin ambigüedad",
+    "Sigue funcionando impreso en blanco y negro"
+  ]
+}

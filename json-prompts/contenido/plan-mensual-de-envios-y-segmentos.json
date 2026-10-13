@@ -1,0 +1,40 @@
+{
+  "tarea": "Construir el plan de envíos de email de un mes completo, con segmentos, temas, fechas y tope de frecuencia",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "mes_y_ano": "[MES Y AÑO A PLANIFICAR]",
+    "tamano_lista": "[NÚMERO TOTAL DE SUSCRIPTORES]",
+    "segmentos_disponibles": "[POR EJEMPLO: NUEVOS, COMPRADORES, INACTIVOS, INTERESADOS EN X]",
+    "fechas_clave": "[LANZAMIENTOS, REBAJAS, FESTIVOS, EVENTOS, TEMPORADA]",
+    "capacidad_real": "[CUÁNTOS CORREOS PUEDES ESCRIBIR A LA SEMANA]",
+    "contenido_ya_existente": "[ARTÍCULOS, VÍDEOS O POSTS QUE PUEDES REUTILIZAR]"
+  },
+  "reglas_de_planificacion": [
+    "Reparte entre contenido útil y venta con una proporción aproximada de 3 a 1",
+    "Ningún suscriptor recibe más correos a la semana de los que marque el tope indicado",
+    "Los que ya compraron no reciben los correos de venta del mismo producto",
+    "Deja al menos un hueco de reserva por si surge algo",
+    "Encadena los temas: cada correo prepara el siguiente",
+    "Prioriza reutilizar contenido existente antes que crear de cero"
+  ],
+  "para_cada_envio_define": [
+    "Fecha y hora propuestas",
+    "Segmento que lo recibe y quién queda excluido",
+    "Tipo: contenido, venta, aviso, encuesta o reactivación",
+    "Tema en una frase y asunto provisional",
+    "Llamada a la acción",
+    "Métrica principal para juzgarlo",
+    "Tiempo estimado de preparación"
+  ],
+  "formato_salida": "Tabla markdown con una fila por envío y las columnas anteriores, ordenada por fecha. Debajo: resumen de cuántos correos recibe cada segmento en el mes, avisos de solapamiento y 3 ideas de reserva",
+  "restricciones": [
+    "No propongas más envíos de los que caben en la capacidad indicada",
+    "Nada de rellenar semanas con temas sin sustancia",
+    "Si dos campañas chocan en la misma semana, señálalo y propón cómo separarlas"
+  ],
+  "criterios_calidad": [
+    "El plan se puede ejecutar con las horas declaradas",
+    "Ningún segmento recibe dos correos de venta seguidos",
+    "Cada envío tiene un motivo claro para existir"
+  ]
+}

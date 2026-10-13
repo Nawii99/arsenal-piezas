@@ -1,0 +1,37 @@
+{
+  "tarea": "Explicar un contrato en lenguaje llano, como si me lo contara un amigo que sabe de esto",
+  "entradas": {
+    "texto_contrato": "[PEGA AQUÍ EL CONTRATO COMPLETO]",
+    "mi_papel": "[SOY EL QUE COBRA / EL QUE PAGA / EL INQUILINO / EL PROVEEDOR]",
+    "para_quien": "[PARA MÍ / PARA EXPLICÁRSELO A MI SOCIO / A MI EQUIPO]"
+  },
+  "reglas_de_traduccion": [
+    "Frases de menos de 20 palabras",
+    "Cada término jurídico se explica la primera vez entre paréntesis",
+    "Habla en segunda persona: tú te comprometes a..., ellos pueden...",
+    "Convierte plazos en fechas o en días naturales fáciles de contar",
+    "Traduce importes y porcentajes a euros reales con el ejemplo del contrato"
+  ],
+  "formato_salida": {
+    "1_en_una_frase": "Qué es este contrato y para qué sirve",
+    "2_a_que_te_obligas": "Lista de 5 a 8 puntos con lo que tienes que hacer sí o sí",
+    "3_a_que_se_obligan_ellos": "Lista de lo que la otra parte se compromete a hacer",
+    "4_dinero": "Cuánto, cuándo, cómo se factura y qué pasa si se retrasa el pago",
+    "5_fechas_clave": "Tabla: fecha o plazo | qué ocurre | quién tiene que actuar",
+    "6_como_salir": "Cómo se termina el contrato, con cuánto preaviso y con qué coste",
+    "7_letra_pequena": "Las 5 cosas que no verías si lo leyeras en diagonal",
+    "8_semaforo": "Firmarlo tal cual, firmarlo con cambios o no firmarlo, y por qué en 3 líneas"
+  },
+  "restricciones": [
+    "No añadas nada que no esté en el contrato",
+    "Cuando algo sea ambiguo, di literalmente: esto está redactado de forma ambigua y puede interpretarse así o asá",
+    "Indica el número de cláusula de donde sacas cada punto",
+    "Máximo una página equivalente"
+  ],
+  "criterios_calidad": [
+    "Alguien sin conocimientos legales sabe decidir después de leerlo",
+    "No queda ninguna obligación económica sin mencionar",
+    "Se distingue lo que dice el contrato de lo que es tu opinión"
+  ],
+  "aviso": "Resumen orientativo; el que manda siempre es el texto firmado"
+}

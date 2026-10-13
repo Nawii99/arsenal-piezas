@@ -1,0 +1,37 @@
+{
+  "tarea": "Analizar un proyecto ya terminado y producir la retrospectiva con lecciones aprendidas y acciones de mejora concretas para el próximo proyecto",
+  "contexto": {
+    "proyecto": "[NOMBRE Y TIPO DE PROYECTO]",
+    "previsto_vs_real": "[HORAS Y PRESUPUESTO PREVISTOS FRENTE A LOS REALES]",
+    "fechas": "[FECHA PREVISTA DE ENTREGA Y FECHA REAL]",
+    "incidencias": "[QUÉ PASÓ: RETRASOS, ERRORES, CAMBIOS, PROBLEMAS CON PROVEEDORES]",
+    "voz_del_equipo": "[LO QUE HA DICHO LA GENTE, AUNQUE SEA EN BRUTO]",
+    "voz_del_cliente": "[QUEJAS, ELOGIOS O SILENCIOS SIGNIFICATIVOS]"
+  },
+  "metodo": [
+    "Compara previsto y real en horas, dinero y fechas, y calcula el desvío en porcentaje",
+    "Separa lo que salió bien por método de lo que salió bien por suerte",
+    "Para cada fallo importante pregunta por qué tres veces hasta llegar a la causa de fondo, no al culpable",
+    "Detecta patrones que se repiten de proyectos anteriores si el usuario los ha mencionado",
+    "Traduce cada lección en una acción que se pueda meter en la plantilla o en el proceso, no en un buen propósito",
+    "Máximo 5 acciones: más de eso no se aplica nunca"
+  ],
+  "restricciones": [
+    "Prohibido señalar personas: se habla de decisiones y de proceso",
+    "Nada de conclusiones tipo 'hay que comunicarse mejor': cada acción dice qué se hace, quién y cuándo",
+    "Si los datos no permiten sacar una conclusión, dilo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla Previsto vs Real (horas, dinero, fecha) con el desvío en porcentaje",
+    "bloque_2": "Qué funcionó y por qué (máximo 5 puntos)",
+    "bloque_3": "Qué falló, con la causa de fondo de cada caso",
+    "bloque_4": "Tabla de acciones: Acción, Responsable, Fecha, Dónde queda registrada (plantilla, contrato, checklist)",
+    "bloque_5": "Una frase para el presupuesto del próximo proyecto parecido"
+  },
+  "criterios_calidad": [
+    "Cada fallo llega a una causa de proceso, no a 'faltó tiempo'",
+    "Las acciones caben en el trabajo real de la semana siguiente",
+    "La frase final cambia de verdad cómo se presupuestará el próximo proyecto"
+  ],
+  "tono": "honesto y sin buscar culpables"
+}

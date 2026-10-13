@@ -1,0 +1,36 @@
+{
+  "tarea": "Redactar un anexo (adenda) a un contrato ya firmado para recoger un cambio de alcance y su precio",
+  "entradas": {
+    "contrato_original": "[TÍTULO DEL CONTRATO] firmado el [FECHA] entre [PARTE A] y [PARTE B]",
+    "clausulas_afectadas": "[NÚMEROS DE LAS CLÁUSULAS QUE CAMBIAN]",
+    "que_pide_el_cliente": "[DESCRIBE EL TRABAJO NUEVO O EL CAMBIO SOLICITADO]",
+    "esfuerzo_extra": "[HORAS O JORNADAS ADICIONALES ESTIMADAS]",
+    "precio_adicional": "[IMPORTE] € más IVA",
+    "nuevo_plazo": "[NUEVA FECHA DE ENTREGA O DÍAS DE DESPLAZAMIENTO DEL CALENDARIO]"
+  },
+  "contenido_del_anexo": [
+    "Referencia al contrato original, sus partes y su fecha",
+    "Motivo del anexo en dos frases neutrales, sin reproches",
+    "Cláusulas que se modifican, con la redacción nueva completa",
+    "Trabajo adicional descrito con entregables concretos",
+    "Precio adicional, forma y momento de pago",
+    "Nuevo calendario y efecto en las entregas pendientes",
+    "Declaración de que el resto del contrato sigue vigente sin cambios",
+    "Fecha de efectos y firmas de ambas partes"
+  ],
+  "formato_salida": {
+    "documento": "ANEXO Nº [NÚMERO] con cláusulas numeradas y espacio para firmas",
+    "tabla_previa": "Antes | Ahora | Coste | Nuevo plazo",
+    "email_de_envio": "Mensaje de 6 a 8 líneas explicando el anexo, con tono colaborativo y una frase clara de que hasta la firma no se empieza el trabajo nuevo"
+  },
+  "restricciones": [
+    "No modifiques cláusulas que el usuario no haya mencionado",
+    "Nada de tono de reproche por el cambio de alcance",
+    "Si falta el precio o el plazo, déjalo en [CORCHETES] y avisa"
+  ],
+  "criterios_calidad": [
+    "Queda inequívoco qué sustituye a qué y desde cuándo",
+    "El cliente entiende el coste extra sin sentirse engañado",
+    "El anexo se sostiene solo si alguien lo lee dentro de un año"
+  ]
+}

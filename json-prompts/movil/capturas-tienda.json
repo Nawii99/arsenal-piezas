@@ -1,0 +1,44 @@
+{
+  "tarea": "Diseñar el guion de las capturas de pantalla de la ficha de una app: orden, titulares, qué pantalla se ve en cada una y cómo generarlas.",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "pantallas_disponibles": "[LISTA DE PANTALLAS REALES DE LA APP]",
+    "beneficio_principal": "[LO QUE EL USUARIO CONSIGUE]",
+    "objeciones": "[POR QUÉ DUDARÍA: PRECIO, TIEMPO, DESCONFIANZA...]",
+    "tiene_prueba_social": "[VALORACIONES, USUARIOS, MEDIOS, CLIENTES O NINGUNA]"
+  },
+  "medidas": {
+    "app_store": "suben las de 6,7 pulgadas (1290 x 2796 px) y con eso vale para el resto de iPhone; iPad aparte si la app lo soporta",
+    "google_play": "mínimo 1080 px en el lado corto, proporción 9:16, entre 2 y 8 imágenes",
+    "visibles_sin_deslizar": "las 3 primeras en iOS y las 2 primeras en Android: ahí se decide todo"
+  },
+  "pasos": [
+    "1. Decide la promesa de cada captura antes de pensar en el diseño: una idea por captura, nunca dos.",
+    "2. Ordena así: 1 beneficio principal, 2 cómo funciona, 3 la función que te diferencia, 4 prueba social, 5 objeción resuelta, 6 llamada a la acción.",
+    "3. Escribe el titular de cada captura: máximo 6 palabras, en positivo y en segunda persona.",
+    "4. Coloca el titular ARRIBA, encima del móvil, con la pantalla real recortada debajo. Texto grande: debe leerse en una miniatura del tamaño de un sello.",
+    "5. Usa el mismo fondo y la misma tipografía en todas para que se lea como una serie.",
+    "6. Rellena las pantallas con datos creíbles (nombres españoles, importes en euros), nunca con Lorem ipsum ni cuentas vacías.",
+    "7. Si tienes vídeo de vista previa, que funcione sin sonido y enseñe la app en los 3 primeros segundos.",
+    "8. Genera una versión para móvil pequeño y mira las miniaturas al 25 por ciento: si no se lee, el texto es pequeño."
+  ],
+  "formato_salida": {
+    "tipo": "una ficha por captura",
+    "campos_por_captura": ["numero", "promesa", "titular_max_6_palabras", "pantalla_de_la_app_que_se_ve", "elementos_a_destacar", "nota_de_diseño", "prompt_de_imagen_para_el_fondo"],
+    "extra": "al final, paleta de 3 colores, tipografía sugerida y lista de medidas a exportar"
+  },
+  "criterios_calidad": [
+    "Un desconocido entiende qué hace la app viendo solo las 2 primeras capturas, sin leer la descripción.",
+    "Ningún titular supera las 6 palabras ni repite lo que ya dice el anterior.",
+    "Todas las capturas comparten fondo, tipografía y posición del texto.",
+    "Las pantallas mostradas existen de verdad en la app: enseñar funciones inexistentes es motivo de rechazo.",
+    "El texto se lee en miniatura al 25 por ciento de tamaño."
+  ],
+  "errores_frecuentes": [
+    "Subir capturas en crudo sin titular: no cuentan nada.",
+    "Poner el texto dentro del marco del móvil, donde queda diminuto.",
+    "Enseñar la pantalla de registro o de precios en primera posición.",
+    "Textos en inglés en una ficha para España.",
+    "Marcos de móvil con muescas de modelos antiguos: envejecen la app."
+  ]
+}

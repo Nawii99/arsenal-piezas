@@ -1,0 +1,36 @@
+{
+  "tarea": "Redacta la declaración de accesibilidad de mi web y el plan de mejora asociado, siguiendo la estructura habitual en España y en la Unión Europea",
+  "contexto": {
+    "organizacion": "[NOMBRE FISCAL Y NOMBRE COMERCIAL]",
+    "web": "[URL Y QUÉ INCLUYE: TIENDA, BLOG, ÁREA DE CLIENTES]",
+    "tipo_de_entidad": "[EMPRESA PRIVADA / ENTIDAD PÚBLICA / ASOCIACIÓN]",
+    "revision_hecha": "[AUTOEVALUACIÓN CON IA / AUDITORÍA EXTERNA / NINGUNA TODAVÍA]",
+    "fallos_conocidos": "[LISTA DE LO QUE SABES QUE NO CUMPLE HOY]",
+    "contacto": "[EMAIL O FORMULARIO PARA QUEJAS Y SOLICITUDES]",
+    "fecha_revision": "[DD/MM/AAAA]"
+  },
+  "estructura_del_documento": [
+    "Compromiso de accesibilidad y a qué web se aplica",
+    "Situación de cumplimiento: conforme, parcialmente conforme o no conforme, con la norma de referencia",
+    "Contenido no accesible, en tres bloques: incumplimientos, carga desproporcionada y contenido fuera de ámbito",
+    "Alternativas ofrecidas a quien se encuentre una barrera, por ejemplo atención por teléfono o email",
+    "Cómo preparar la declaración: fecha, método de revisión y fecha de la próxima revisión",
+    "Procedimiento de queja y sugerencia, con plazo de respuesta y a quién escribir",
+    "Plan de mejora con acciones, responsable y trimestre previsto"
+  ],
+  "tono": "claro, honesto y sin promesas: si algo no cumple, se dice",
+  "formato_salida": {
+    "1_documento": "Texto final listo para publicar en una página propia, con títulos y párrafos cortos",
+    "2_plan": "Tabla con columnas: acción, barrera que resuelve, esfuerzo, responsable y trimestre",
+    "3_pendientes": "Lista de datos que faltan y preguntas exactas que me tienes que hacer"
+  },
+  "restricciones": [
+    "No afirmes un nivel de cumplimiento que no se haya verificado: si no consta, escribe parcialmente conforme",
+    "Marca entre corchetes cualquier dato legal que deba confirmar un profesional",
+    "Añade al final un aviso de que el texto no es asesoramiento jurídico"
+  ],
+  "criterios_calidad": [
+    "Se puede publicar tal cual salvo los corchetes pendientes",
+    "Cualquier persona entiende cómo reclamar en menos de un minuto de lectura"
+  ]
+}

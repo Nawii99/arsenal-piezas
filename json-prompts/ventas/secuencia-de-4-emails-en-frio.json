@@ -1,0 +1,35 @@
+{
+  "tarea": "Escribir una secuencia de 4 emails en frío para conseguir una respuesta o una llamada corta",
+  "contexto": {
+    "quien_escribe": "[TU NOMBRE Y EMPRESA]",
+    "a_quien": "[CARGO Y TIPO DE EMPRESA]",
+    "problema_que_resuelvo": "[PROBLEMA CONCRETO DEL DESTINATARIO]",
+    "prueba_real": "[CASO, CLIENTE O DATO VERIFICABLE QUE PUEDAS ENSEÑAR]",
+    "peticion": "[QUÉ PIDES: 15 MINUTOS, UNA RESPUESTA DE SÍ O NO, UN ENVÍO DE MATERIAL]",
+    "idioma_y_tono": "Español de España, tuteo, directo y sin adornos"
+  },
+  "estructura_de_la_secuencia": [
+    "Email 1 (día 0): gancho personalizado + una sola idea + petición pequeña",
+    "Email 2 (día 3): aporta algo útil sin pedir nada nuevo (dato, ejemplo, comparación)",
+    "Email 3 (día 7): prueba social concreta de un cliente parecido",
+    "Email 4 (día 12): cierre elegante dando la puerta por cerrada y dejándola abierta"
+  ],
+  "restricciones": [
+    "Cada email por debajo de 120 palabras y con una sola llamada a la acción",
+    "Asunto de 3 a 6 palabras, en minúsculas, sin signos de exclamación ni emojis",
+    "Prohibido: 'espero que este correo te encuentre bien', 'somos líderes', 'solución innovadora', 'sinergias'",
+    "Nada de datos ni casos inventados: si falta la prueba, deja el hueco marcado",
+    "Todo en segunda persona, hablando del prospecto y no de mí"
+  ],
+  "formato_salida": {
+    "por_cada_email": "día de envío | asunto | cuerpo | qué cambia respecto al anterior",
+    "extra_1": "Tres asuntos alternativos para probar en el email 1",
+    "extra_2": "Lista de los campos que hay que personalizar en cada envío",
+    "extra_3": "Qué hacer según la respuesta: interesado, 'ahora no', no contesta"
+  },
+  "criterios_calidad": [
+    "El email 1 se entiende en el móvil sin desplegar y sin abrir adjuntos",
+    "Ningún email repite el argumento del anterior",
+    "El email de cierre no suena a reproche"
+  ]
+}

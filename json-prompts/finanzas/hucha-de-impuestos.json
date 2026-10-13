@@ -1,0 +1,53 @@
+{
+  "tarea": "Diseñar un sistema sencillo de apartado de impuestos por cada cobro, con el porcentaje a reservar, dónde guardarlo y el calendario de pagos del año.",
+  "contexto": {
+    "perfil": "[AUTÓNOMO EN ESPAÑA / SOCIEDAD PEQUEÑA]",
+    "tipo_de_clientes": "[EMPRESAS, PARTICULARES O MEZCLA]",
+    "antiguedad": "[AÑOS DADO DE ALTA, PARA SABER SI APLICAN REDUCCIONES O TIPOS REDUCIDOS]",
+    "aviso": "Esto es orientación práctica, no asesoría fiscal: las cifras finales las confirma el gestor"
+  },
+  "entradas": {
+    "ingresos_previstos": "[FACTURACIÓN MEDIA MENSUAL SIN IVA]",
+    "tipo_de_iva": "[21, 10, 4 O EXENTO SEGÚN ACTIVIDAD]",
+    "retencion_en_factura": "[SÍ O NO, Y PORCENTAJE QUE TE RETIENEN LOS CLIENTES EMPRESA]",
+    "gastos_con_iva_deducible": "[MEDIA MENSUAL DE COMPRAS Y SERVICIOS CON FACTURA A TU NOMBRE]",
+    "cuotas_y_pagos_fijos": "[CUOTA DE AUTÓNOMOS, GESTORÍA, PRÉSTAMOS]",
+    "cuentas_disponibles": "[CUENTA PRINCIPAL Y SI TIENES O PUEDES ABRIR UNA SEGUNDA CUENTA O HUCHA]"
+  },
+  "metodo": [
+    "1. Explica en dos frases por qué el IVA cobrado no es ingreso: lo cobras por cuenta de Hacienda y lo devuelves cada trimestre.",
+    "2. Calcula el porcentaje a apartar de cada cobro: IVA repercutido menos IVA soportado estimado, más una reserva para el pago a cuenta del IRPF.",
+    "3. Ajusta según el tipo de cliente: si te retienen en factura, la reserva de IRPF baja porque ya adelantas parte.",
+    "4. Redondea a un porcentaje único fácil de aplicar y explica el margen de seguridad que lleva dentro.",
+    "5. Define el sistema físico: en cuanto entra un cobro, transferir ese porcentaje a la segunda cuenta el mismo día, o el mismo día de cada semana si prefieres agrupar.",
+    "6. Monta el calendario del año con los meses de presentación trimestral y el de la declaración anual, marcando cuánto debería haber en la hucha antes de cada fecha.",
+    "7. Añade la regla del ingreso grande: cuando entre un cobro fuera de lo normal, apartar antes de decidir en qué se gasta.",
+    "8. Prepara la revisión trimestral: comparar lo apartado con lo que dice el gestor y ajustar el porcentaje para el trimestre siguiente.",
+    "9. Explica qué hacer si el dinero ya no está: pedir aplazamiento antes de la fecha límite y no después, y hablarlo con el gestor."
+  ],
+  "restricciones": [
+    "No des cifras de tipos impositivos ni de reducciones que no te hayan confirmado: cuando dudes, indica que lo verifique el gestor.",
+    "Nunca recomiendes dejar de declarar, retrasar la presentación ni facturar sin IVA cuando corresponde.",
+    "No mezcles el dinero de la hucha con el colchón de tesorería del negocio: son dos bolsas distintas.",
+    "Nada de porcentajes mágicos sin enseñar la cuenta que los produce."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Mirar el saldo del banco y creer que todo es tuyo.",
+    "Apartar solo el IVA y olvidar el pago a cuenta del IRPF.",
+    "Gastar la hucha en una compra del negocio pensando en reponerla luego.",
+    "No guardar las facturas de gasto y perder IVA deducible.",
+    "Emitir factura y apartar cuando cobras es lo correcto, pero olvidar que el IVA se declara por lo facturado aunque no hayas cobrado."
+  ],
+  "formato_salida": {
+    "bloque_1": "El porcentaje único a apartar, con la cuenta detrás en tres líneas.",
+    "bloque_2": "Instrucciones del sistema en cinco pasos, con el día de la semana concreto.",
+    "bloque_3": "Calendario del año con las fechas de presentación y el saldo objetivo de la hucha en cada una.",
+    "bloque_4": "Qué revisar con el gestor cada trimestre, en tres preguntas.",
+    "estilo": "Español de España, tuteando, tranquilizador y concreto"
+  },
+  "criterios_calidad": [
+    "El usuario puede aplicarlo hoy mismo con su banco actual.",
+    "Queda clarísimo qué parte es cálculo y qué parte hay que confirmar con un profesional.",
+    "El porcentaje incluye un margen de seguridad explicado, no oculto."
+  ]
+}

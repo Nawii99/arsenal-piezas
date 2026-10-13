@@ -1,0 +1,54 @@
+{
+  "tarea": "Revisar un documento antes de enviarlo fuera y dejarlo limpio de datos que no deben salir",
+  "contexto": {
+    "documento": "[QUE ES: PRESUPUESTO, MEMORIA, INFORME, CONTRATO, PROPUESTA]",
+    "destinatario": "[CLIENTE NUEVO, BANCO, ADMINISTRACION, CONCURSO, PUBLICO EN INTERNET]",
+    "de_donde_sale": "[PLANTILLA REUTILIZADA DE OTRO CLIENTE, DOCUMENTO INTERNO, PRIMERA VERSION]",
+    "sensibilidad": "[BAJA, MEDIA, ALTA]"
+  },
+  "entradas": {
+    "texto": "[PEGA EL DOCUMENTO COMPLETO, INCLUIDAS TABLAS, PIES DE PAGINA Y ANEXOS]",
+    "que_si_puede_salir": "[DATOS QUE SI PUEDEN APARECER]",
+    "quien_no_puede_aparecer": "[NOMBRES DE CLIENTES O PERSONAS QUE NO DEBEN SALIR]"
+  },
+  "pasos": [
+    "1. Busca datos personales: nombres, DNI, telefonos, emails, direcciones, matriculas, numeros de cuenta",
+    "2. Busca datos de terceros: otros clientes, precios que les hiciste, condiciones especiales, nombres de proveedores",
+    "3. Busca restos de plantilla: nombres antiguos, fechas de otro año, logotipos que no tocan, textos de ejemplo",
+    "4. Busca marcas de borrador: comentarios, notas entre parentesis, texto en mayusculas tipo PENDIENTE o REVISAR, dobles espacios de un corta y pega",
+    "5. Revisa cabeceras, pies de pagina, numeracion y nombre del archivo, que es donde se cuela lo viejo",
+    "6. Para cada hallazgo propon que hacer: borrar, sustituir por un termino generico o pedir permiso para citarlo",
+    "7. Comprueba coherencia final: que el nombre del destinatario, las fechas y los importes sean los de este envio",
+    "8. Recuerda las comprobaciones que hay que hacer fuera del texto: propiedades del archivo, control de cambios, historial de versiones y exportar a PDF plano"
+  ],
+  "que_mirar": [
+    "El nombre del cliente anterior escondido en la segunda pagina o en el pie",
+    "Precios de coste o margenes internos en una tabla que ibas a quitar",
+    "Rutas de carpetas de tu ordenador dentro de imagenes o encabezados",
+    "Enlaces a documentos compartidos que el destinatario no deberia poder abrir",
+    "Firmas escaneadas reutilizadas"
+  ],
+  "errores_tipicos": [
+    "Tapar datos con un rectangulo negro encima en vez de borrarlos",
+    "Fiarse del buscador para un solo nombre y olvidar sus variantes",
+    "Enviar el archivo editable cuando bastaba un PDF",
+    "No mirar los anexos"
+  ],
+  "restricciones": [
+    "No cambies el contenido tecnico ni el sentido del documento",
+    "Marca cada cambio, no lo hagas en silencio",
+    "Si dudas de si un dato puede salir, marcalo para que lo decida yo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Semaforo: se puede enviar, enviar con cambios, no enviar",
+    "bloque_2": "Tabla: apartado | que se ha encontrado | riesgo | accion propuesta",
+    "bloque_3": "Documento corregido completo, con los cambios señalados entre corchetes",
+    "bloque_4": "Lista de comprobaciones a hacer en el propio archivo antes de enviar"
+  },
+  "criterios_calidad": [
+    "No queda ningun nombre de tercero sin justificar",
+    "El documento corregido sigue siendo coherente y completo",
+    "Cada hallazgo tiene una accion concreta",
+    "La lista final se puede hacer en cinco minutos"
+  ]
+}

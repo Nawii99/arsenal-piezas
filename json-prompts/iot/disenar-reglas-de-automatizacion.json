@@ -1,0 +1,45 @@
+{
+  "tarea": "Convertir deseos en lenguaje normal en una tabla de reglas de automatizacion revisada y a prueba de fallos",
+  "contexto": {
+    "lugar": "[VIVIENDA / TIENDA / OFICINA / NAVE]",
+    "quien_lo_usa": "[PERSONAS, EDADES, SI HAY NIÑOS, MAYORES O MASCOTAS]",
+    "sistema": "[HOME ASSISTANT / ALEXA / GOOGLE HOME / APP DEL FABRICANTE]",
+    "dispositivos": "[LISTA CON ESTANCIA: LUCES, SENSORES DE PRESENCIA, PUERTAS, TERMOSTATO, PERSIANAS, ENCHUFES]",
+    "deseos_en_bruto": "[FRASES TAL CUAL LAS DIJO EL CLIENTE, EJEMPLO: QUE SE ENCIENDA SOLO CUANDO PASE ALGUIEN]"
+  },
+  "metodo": [
+    "1. Traduce cada deseo a una regla con cuatro piezas: disparador, condiciones, accion y como termina",
+    "2. Para cada regla escribe el caso malo: que pasa si el sensor se queda colgado, si no hay internet o si hay alguien quieto",
+    "3. Distingue sensor de movimiento (se apaga solo aunque estes dentro) de sensor de presencia (detecta quietud) y ajusta los tiempos segun cual haya",
+    "4. Añade siempre una salida manual: pulsar el interruptor fisico manda durante [MINUTOS DE MODO MANUAL] minutos",
+    "5. Marca prioridades entre reglas que se pisan y di cual gana",
+    "6. Define el modo de emergencia: que debe seguir funcionando sin internet y sin el hub",
+    "7. Redacta la prueba de aceptacion: pasos a repetir y resultado esperado"
+  ],
+  "restricciones": [
+    "Maximo [NUMERO MAXIMO DE REGLAS] reglas: si hace falta mas, es que el planteamiento esta mal",
+    "Ninguna regla puede apagar luz o calefaccion en una zona donde el sistema detecte a alguien",
+    "Nada que dependa de la nube para funciones de seguridad o de acceso",
+    "Escrito en lenguaje llano, sin codigo: el YAML se hace despues a partir de esta tabla"
+  ],
+  "errores_frecuentes": [
+    "Apagados de un minuto que dejan a oscuras a quien esta sentado quieto",
+    "Dos reglas que se disparan a la vez y encienden y apagan en bucle",
+    "Automatizar la puerta o la alarma sin plan para cuando falla el wifi",
+    "Usar la puesta de sol como disparador y olvidar los dias muy nublados",
+    "No dejar forma de desactivar todo cuando hay visita o vacaciones"
+  ],
+  "formato_salida": {
+    "tabla_reglas": "Nombre | Disparador | Condiciones | Accion | Como termina | Prioridad",
+    "tabla_fallos": "Regla | Que falla | Comportamiento seguro esperado",
+    "modos": "Lista de modos globales (casa, fuera, noche, visita, vacaciones) y que cambia en cada uno",
+    "prueba_de_aceptacion": "Lista numerada de pruebas fisicas con resultado esperado, para hacerlas en una tarde",
+    "pendientes": "Deseos que no se pueden cumplir con los aparatos actuales y que haria falta"
+  },
+  "criterios_calidad": [
+    "Cada deseo original aparece resuelto o marcado como imposible, ninguno se pierde",
+    "Ninguna regla depende de que una persona recuerde algo",
+    "Un tecnico distinto podria montarlo solo con esta tabla",
+    "Existe al menos una prueba fisica por regla"
+  ]
+}

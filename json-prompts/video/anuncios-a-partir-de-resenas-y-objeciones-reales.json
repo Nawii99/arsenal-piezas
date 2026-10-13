@@ -1,0 +1,39 @@
+{
+  "tarea": "Analizar resenas, comentarios y objeciones reales de clientes y convertirlos en 3 guiones de anuncio en video que respondan a las pegas que mas frenan la compra",
+  "contexto": {
+    "producto": "[PRODUCTO Y PRECIO]",
+    "resenas_y_comentarios": "[PEGA AQUI RESENAS, COMENTARIOS Y MENSAJES TAL CUAL, SIN CORREGIR]",
+    "preguntas_repetidas": "[LO QUE TE PREGUNTAN SIEMPRE ANTES DE COMPRAR]",
+    "motivos_de_devolucion": "[SI LOS TIENES]",
+    "plataforma": "[TIKTOK / REELS / META]"
+  },
+  "metodo": [
+    "Agrupa lo pegado en tres bloques: elogios, dudas antes de comprar y quejas despues de comprar",
+    "Saca las 5 objeciones mas repetidas y ordenalas por cuanto frenan la venta",
+    "Marca las frases textuales de clientes que se pueden usar como gancho tal cual",
+    "Elige las 3 objeciones que un video puede resolver ensenando algo, no solo diciendolo",
+    "Escribe un guion por objecion, cada uno con una demostracion que la desmonte"
+  ],
+  "reglas_de_oficio": [
+    "El gancho es la objecion dicha en voz alta, con las palabras del cliente",
+    "Nunca se ridiculiza a quien tiene la duda",
+    "Se responde ensenando: producto en uso, comparacion, primer plano del material o del proceso",
+    "Si la queja es cierta, se reconoce y se explica que has hecho para arreglarlo",
+    "Cada guion dura entre 25 y 40 segundos"
+  ],
+  "restricciones": [
+    "Prohibido inventar resenas o testimonios que no estan en el material pegado",
+    "Prohibido citar a un cliente con nombre y apellidos sin permiso",
+    "Nada de afirmaciones que no puedas demostrar en camara"
+  ],
+  "formato_salida": {
+    "tipo": "Informe mas guiones",
+    "secciones": ["Ranking de las 5 objeciones con la frase textual que las representa", "Tres guiones en tabla con columnas Plano, Segundos, Que se ve, Que se dice y Rotulo", "Frases de clientes listas para usar como rotulo", "Lista de lo que habria que ensenar en camara para que cada respuesta sea creible"]
+  },
+  "criterios_calidad": [
+    "Las objeciones salen del material aportado y se puede senalar de donde",
+    "Cada guion desmonta una sola objecion, no todas a la vez",
+    "La respuesta se ve, no solo se dice",
+    "Suena honesto: reconoce lo que el producto no hace"
+  ]
+}

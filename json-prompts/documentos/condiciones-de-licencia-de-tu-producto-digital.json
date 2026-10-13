@@ -1,0 +1,43 @@
+{
+  "tarea": "Redactar las condiciones de licencia de uso de un producto digital que vendo por internet",
+  "rol": "Especialista en licencias de productos digitales para pequeños negocios",
+  "producto": {
+    "nombre": "[NOMBRE DEL PRODUCTO]",
+    "tipo": "[PLANTILLA / CURSO / EBOOK / SOFTWARE / PACK DE RECURSOS]",
+    "precio": "[PRECIO Y SI ES PAGO ÚNICO O SUSCRIPCIÓN]",
+    "comprador_tipo": "[PARTICULAR / EMPRESA / AGENCIA]",
+    "soporte_incluido": "[QUÉ SOPORTE Y ACTUALIZACIONES INCLUYES]"
+  },
+  "decisiones_de_licencia": {
+    "usos_permitidos": "[USO PERSONAL, USO EN PROYECTOS DE CLIENTES, MODIFICACIÓN...]",
+    "usos_prohibidos": "[REVENTA, COMPARTIR ACCESOS, INCLUIRLO EN OTRO PRODUCTO, FORMAR CON ÉL...]",
+    "numero_de_usuarios": "[1 PERSONA / EQUIPO DE X / ILIMITADO EN LA EMPRESA]",
+    "proyectos": "[UN PROYECTO / PROYECTOS ILIMITADOS]"
+  },
+  "pasos": [
+    "Deja claro que se vende una licencia de uso y no la propiedad del producto",
+    "Define los niveles de licencia: personal, profesional y de agencia, con el uso que permite cada uno",
+    "Regula descargas, número de dispositivos, accesos compartidos y caducidad",
+    "Explica el derecho de desistimiento en contenido digital y cómo se renuncia al empezar la descarga",
+    "Incluye qué pasa si se detecta un uso indebido: retirada de acceso y reclamación",
+    "Añade limitación de responsabilidad y actualizaciones del producto"
+  ],
+  "restricciones": [
+    "Sin cláusulas abusivas para consumidores y sin renuncias imposibles de garantías legales",
+    "Lenguaje claro: cada apartado, en menos de cinco líneas",
+    "Nada de copiar condiciones de otra empresa"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "Documento de condiciones de licencia con apartados numerados",
+      "Tabla comparativa de los niveles de licencia y su precio sugerido",
+      "Resumen de tres líneas para poner en la página de venta",
+      "Aviso corto para incluir dentro del propio archivo o del área de alumnos"
+    ]
+  },
+  "criterios_calidad": [
+    "Un comprador entiende en 30 segundos qué puede y qué no puede hacer",
+    "Cada prohibición tiene su consecuencia escrita",
+    "Cierra recordando adaptarlo con un abogado si vendes fuera de España"
+  ]
+}

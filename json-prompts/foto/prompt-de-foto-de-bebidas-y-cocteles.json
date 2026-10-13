@@ -1,0 +1,29 @@
+{
+  "tarea": "Escribir prompts de imagen para fotografiar una bebida con aspecto refrescante y creible",
+  "contexto": {
+    "bebida": "[NOMBRE Y COLOR DE LA BEBIDA]",
+    "recipiente": "[TIPO DE VASO O COPA Y GROSOR DEL CRISTAL]",
+    "guarnicion": "[RODAJA, HIERBABUENA, ESPUMA, CANELA, NADA]",
+    "temperatura": "[FRIA CON HIELO, CALIENTE CON VAPOR, TEMPLADA]",
+    "ambiente": "[TERRAZA A MEDIODIA, BARRA DE NOCHE, MESA DE DESAYUNO]"
+  },
+  "reglas_del_oficio": [
+    "Camara a ras del borde del vaso o ligeramente por debajo: las bebidas se fotografian a la altura de los ojos del vaso, no desde arriba",
+    "Contraluz o luz lateral trasera: es lo unico que hace brillar el liquido y el hielo",
+    "Fondo oscuro para bebidas claras y fondo claro para bebidas oscuras, para que se recorte la silueta",
+    "Condensacion y gotas solo si la bebida esta fria de verdad; el vapor se ve mejor a contraluz sobre fondo oscuro",
+    "Hielo transparente y de formas irregulares, nunca cubitos identicos de nevera",
+    "Cuidado con los reflejos: el cristal refleja la ventana, la camara y el fotografo"
+  ],
+  "formato_salida": {
+    "prompt_principal": "Parrafo unico en ingles con encuadre, luz, fondo, cristal, hielo y atmosfera",
+    "variantes": "3 variantes: producto limpio sobre fondo liso, en contexto de mesa con comida, y detalle macro de la condensacion",
+    "negativos": "Excluir cubitos falsos, liquido plano sin brillo, manos deformes, marcas y logos inventados",
+    "aspect_ratio": "9:16 para stories, 4:5 para feed y 1:1 para carta digital"
+  },
+  "criterios_calidad": [
+    "El liquido tiene volumen y brillo, no parece pintura plana",
+    "El nivel de llenado es realista y el vaso no aparece cortado por el borde de la imagen",
+    "No aparece ninguna marca comercial que no sea tuya"
+  ]
+}

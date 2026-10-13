@@ -1,0 +1,50 @@
+{
+  "tarea": "Auditar una hoja de cálculo de precios, presupuestos o control de caja buscando errores de fórmula, de impuestos y de criterio, y devolver las correcciones.",
+  "contexto": {
+    "para_que_es_la_hoja": "[CALCULAR PRECIOS, HACER PRESUPUESTOS, CONTROLAR CAJA, SEGUIR PEDIDOS]",
+    "quien_la_usa": "[SOLO YO / VARIAS PERSONAS]",
+    "pais_e_impuestos": "[ESPAÑA, IVA 21/10/4, RECARGO, IRPF SI APLICA]",
+    "origen": "[LA HICE YO / ME LA PASARON / LA HIZO UNA IA]"
+  },
+  "entradas": {
+    "hoja": "[ADJUNTA EL ARCHIVO O PEGA LAS FILAS Y LAS FÓRMULAS]",
+    "resultado_esperado": "[UN CASO DEL QUE SEPAS EL RESULTADO CORRECTO]",
+    "reglas_del_negocio": "[DESCUENTOS, MÍNIMOS, PORTES, COMISIONES DE PLATAFORMA]"
+  },
+  "metodo": [
+    "1. Identifica las celdas de entrada, las de cálculo y las de resultado, y señala dónde hay números escritos a mano dentro de una fórmula.",
+    "2. Comprueba los rangos: sumas que se dejan la última fila, referencias que no se han copiado bien y filas ocultas incluidas o excluidas sin querer.",
+    "3. Revisa impuestos: base y total no mezclados en la misma columna, tipo de IVA correcto por producto, y si el precio de venta al público lleva IVA incluido o no.",
+    "4. Revisa redondeos: redondear al final y no en cada paso, y comprobar el efecto en 100 unidades.",
+    "5. Revisa el margen: que reste todos los costes reales, incluidas comisiones de plataforma, portes, devoluciones y tu propio tiempo.",
+    "6. Prueba con tres casos: uno normal, uno con descuento máximo y uno absurdo (cantidad cero o negativa) para ver si la hoja se rompe o miente.",
+    "7. Busca las trampas típicas: texto que parece número, comas y puntos decimales mezclados, fechas en formato distinto y celdas vacías tratadas como cero.",
+    "8. Propón el arreglo celda a celda y una versión limpia con las entradas separadas y bloqueadas.",
+    "9. Añade dos comprobaciones automáticas visibles: una celda que avise si el margen baja de tu mínimo y otra si el total no cuadra."
+  ],
+  "errores_tipicos": [
+    "Meter el 21% escrito dentro de una fórmula en vez de en una celda.",
+    "Calcular el margen sobre el coste creyendo que es sobre la venta.",
+    "Copiar una fila y arrastrar mal las referencias.",
+    "Sumar precios con IVA y sin IVA en la misma columna.",
+    "Confiar en la hoja porque el total suena razonable."
+  ],
+  "restricciones": [
+    "No reconstruyas la hoja entera si no hace falta: prioriza arreglos localizados.",
+    "Explica cada fórmula corregida en una línea en cristiano."
+  ],
+  "formato_salida": {
+    "tabla_errores": "Celda o zona, qué está mal, consecuencia en euros, fórmula corregida",
+    "pruebas": "Los 3 casos con resultado antes y después",
+    "hoja_recomendada": "Estructura propuesta: pestaña de datos, de cálculo y de resultado",
+    "alertas": "Las dos comprobaciones automáticas con su fórmula",
+    "resumen": "Tres líneas con lo que estabas perdiendo o cobrando de más"
+  },
+  "criterios_calidad": [
+    "Cada error señala la celda concreta.",
+    "La consecuencia se expresa en euros sobre un caso real.",
+    "Las fórmulas corregidas funcionan en Excel y en Google Sheets.",
+    "El caso conocido da el resultado esperado tras las correcciones."
+  ],
+  "si_falta_informacion": "Pide un caso del que se conozca el resultado correcto; sin él no se puede validar la hoja."
+}

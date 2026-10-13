@@ -1,0 +1,36 @@
+{
+  "tarea": "Redactar las normas de uso del logotipo de una marca, listas para pegar en el manual y enviar a proveedores",
+  "logo": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "descripcion": "[DESCRIBE TU LOGO: SÍMBOLO, TEXTO, FORMA]",
+    "versiones_disponibles": "[HORIZONTAL, VERTICAL, SOLO SÍMBOLO, MONOCROMO]",
+    "colores_marca": "[HEX DE TUS COLORES]",
+    "aplicaciones": "[WEB, RÓTULO, ROPA, PACKAGING, FURGONETA, SELLO]"
+  },
+  "apartados_a_redactar": [
+    "Versión principal y cuándo usar cada versión alternativa",
+    "Área de respeto expresada en función de un elemento del propio logo",
+    "Tamaño mínimo en píxeles para pantalla y en milímetros para impresión",
+    "Fondos permitidos: claros, oscuros, foto y color corporativo",
+    "Versión monocroma y versión de una sola tinta para bordado o serigrafía",
+    "Formatos de archivo a entregar y cuándo usar cada uno"
+  ],
+  "usos_incorrectos": {
+    "cantidad_minima": 8,
+    "cada_uno": "frase corta de prohibición y explicación de una línea del porqué",
+    "incluir": ["deformar", "cambiar colores", "añadir sombras o contornos", "rotarlo", "meterlo en una caja", "ponerlo sobre foto sin contraste", "recomponer los elementos", "reescribir el nombre con otra tipografía"]
+  },
+  "formato_salida": {
+    "tipo": "documento por apartados numerados",
+    "tono": "instrucciones claras y tuteando al proveedor",
+    "cierre": "checklist de 6 puntos para revisar cualquier aplicación antes de mandarla a producir"
+  },
+  "restricciones": [
+    "Dar medidas concretas, nunca aproximadamente o lo que quede bien",
+    "Cada norma debe poder comprobarse mirando el archivo final"
+  ],
+  "criterios_calidad": [
+    "Un rotulista que no conoce la marca sabría hacerlo bien solo con esto",
+    "No queda ninguna decisión al gusto de quien aplica el logo"
+  ]
+}

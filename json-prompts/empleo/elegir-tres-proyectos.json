@@ -1,0 +1,72 @@
+{
+  "tarea": "Elegir los tres proyectos que tengo que construir para demostrar lo que se, sin experiencia laboral previa en tecnologia",
+  "perfil": {
+    "puesto_objetivo": "[PUESTO EXACTO TAL Y COMO SALE EN LAS OFERTAS, P. EJ. TECNICO DE SOPORTE N1]",
+    "pais": "Espana",
+    "situacion": "[EN FORMACION / AUTODIDACTA / CAMBIO DE SECTOR DESDE HOSTELERIA]",
+    "experiencia_previa_no_tecnica": ["[TRABAJO 1 Y ANOS]", "[TRABAJO 2 Y ANOS]"],
+    "herramientas_que_manejo_de_verdad": ["[HERRAMIENTA 1]", "[HERRAMIENTA 2]", "[HERRAMIENTA 3]"],
+    "horas_libres_por_semana": "[NUMERO]",
+    "semanas_hasta_empezar_a_postular": "[NUMERO]",
+    "equipo": "[PORTATIL / SOLO MOVIL ANDROID / AMBOS]"
+  },
+  "materia_prima": {
+    "ofertas_reales": ["[PEGA AQUI LA OFERTA 1 DE INFOJOBS, LINKEDIN O TECNOEMPLEO]", "[OFERTA 2]", "[OFERTA 3]"],
+    "sectores_que_conozco_por_dentro": ["[COMERCIO, HOSTELERIA, ATENCION AL CLIENTE, AUTONOMO...]"],
+    "ideas_que_ya_tengo": ["[IDEA 1]", "[IDEA 2]"]
+  },
+  "criterios_de_seleccion": {
+    "obligatorios": [
+      "Cada proyecto demuestra un requisito que aparece literalmente en al menos dos de las ofertas pegadas",
+      "Se termina en las horas disponibles antes de empezar a postular",
+      "Se puede ensenar en 90 segundos a alguien que no es tecnico",
+      "Sale de un sector que el candidato conoce por dentro"
+    ],
+    "descartar_si": [
+      "Es un clon de tutorial famoso (lista de tareas, clon de Twitter, calculadora)",
+      "Necesita pagar servidores o licencias",
+      "Depende de datos privados de una empresa real",
+      "No se puede ensenar funcionando en una entrevista"
+    ],
+    "reparto_de_los_tres": {
+      "proyecto_1": "Rapido y visible. Menos de 10 horas. Sirve para tener algo publicado ya",
+      "proyecto_2": "El central. Ataca el requisito mas repetido en las ofertas",
+      "proyecto_3": "El que demuestra que sabe trabajar con otros: documentacion, pruebas o mantenimiento"
+    }
+  },
+  "proceso": [
+    "Extraer de las ofertas los requisitos repetidos y ordenarlos por frecuencia",
+    "Separar los que se aprenden de los que se demuestran",
+    "Cruzar esos requisitos con los sectores que el candidato conoce",
+    "Generar seis ideas y matar tres con los criterios de descarte",
+    "Trocear cada superviviente en sesiones de dos horas"
+  ],
+  "formato_de_salida": {
+    "tipo": "json",
+    "esquema": {
+      "requisitos_detectados": [{"requisito": "string", "veces_que_aparece": "number", "se_aprende_o_se_demuestra": "string"}],
+      "proyectos": [
+        {
+          "nombre": "string",
+          "que_hace_en_una_frase": "string",
+          "requisito_que_demuestra": "string",
+          "por_que_encaja_con_su_pasado": "string",
+          "horas_estimadas": "number",
+          "entregables": ["repositorio publico", "README con capturas", "demo funcionando", "publicacion contandolo"],
+          "plan_por_sesiones": [{"sesion": "number", "objetivo": "string", "criterio_de_terminado": "string"}],
+          "donde_se_va_a_atascar": "string",
+          "como_lo_cuenta_en_la_entrevista": "string"
+        }
+      ],
+      "descartados": [{"idea": "string", "motivo": "string"}],
+      "orden_y_calendario": [{"semana": "number", "que_toca": "string"}],
+      "senal_de_alarma": "string"
+    }
+  },
+  "reglas": [
+    "Si faltan las ofertas reales, pedirlas antes de responder. No inventarlas",
+    "Nada de proyectos que el candidato no pueda explicar linea a linea",
+    "Nada de promesas de contratacion",
+    "Decir en voz alta si el plan no cabe en las horas disponibles y recortar a dos proyectos"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Revisar mis oportunidades abiertas, identificar las atascadas, diagnosticar por qué y darme una acción concreta con mensaje listo para cada una",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_vendo": "[PRODUCTO O SERVICIO Y TICKET MEDIO]",
+    "ciclo_de_venta_normal": "[DÍAS]",
+    "dias_maximos_por_etapa": "[POR EJEMPLO: propuesta 14 días, negociación 10 días]"
+  },
+  "entradas": {
+    "oportunidades_abiertas": "[PEGA: cliente, importe, etapa, días en la etapa, fecha última actividad, último resumen de la conversación, próximo paso]"
+  },
+  "diagnostico": {
+    "causas_a_descartar": [
+      "No hemos hablado con quien decide de verdad",
+      "No hay urgencia ni fecha de necesidad por parte del cliente",
+      "El precio no encaja con el presupuesto que manejan",
+      "Hay un competidor o una solución interna en juego",
+      "El próximo paso lo tenemos que dar nosotros y no lo hemos dado",
+      "El proyecto se ha aparcado por motivos ajenos a nosotros"
+    ],
+    "regla": "Elegir la causa más probable a partir de lo que dice el histórico, no de suposiciones optimistas"
+  },
+  "formato_salida": {
+    "tabla": "cliente | importe | días parada | causa probable | decisión (reactivar / poner en pausa con fecha / cerrar perdida) | acción de esta semana",
+    "mensajes": "Para las oportunidades a reactivar, un email o mensaje de WhatsApp de menos de 90 palabras, sin sonar a insistencia, con una pregunta que se pueda contestar en una línea",
+    "limpieza": "Lista de las que hay que cerrar como perdidas con el motivo de pérdida a registrar en el CRM",
+    "resumen": "Importe total que se recupera y el que se saca de la previsión"
+  },
+  "restricciones": [
+    "Nada de mensajes tipo solo hago seguimiento o te escribo para ver cómo lo ves",
+    "Cada mensaje debe aportar algo nuevo: una fecha, un dato, una alternativa o una salida digna",
+    "Máximo una acción por oportunidad"
+  ],
+  "criterios_calidad": [
+    "Al menos un tercio de las oportunidades acaba cerrada o con fecha real, no en el limbo",
+    "Los motivos de pérdida son concretos y sirven para aprender"
+  ],
+  "tono": "Profesional, cercano y sin rodeos, tuteando al cliente"
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Calcular el retorno de cada automatización candidata y ordenarlas en un plan trimestral",
+  "rol": "Analista de negocio prudente que no infla los beneficios",
+  "contexto": {
+    "coste_hora_persona": "[EUROS/HORA DE QUIEN HACE HOY LA TAREA]",
+    "horas_disponibles_al_mes_para_montar": "[HORAS]",
+    "presupuesto_herramientas": "[EUROS AL MES]"
+  },
+  "entradas": {
+    "candidatas": "[LISTA: NOMBRE, MINUTOS POR VEZ, VECES AL MES, HERRAMIENTA PREVISTA, HORAS ESTIMADAS DE MONTAJE, COSTE MENSUAL]"
+  },
+  "metodo": [
+    "Calcula el ahorro mensual en horas y en euros de cada candidata",
+    "Resta el coste mensual de la herramienta y el tiempo de mantenimiento, que estimas en un 10 por ciento del ahorro",
+    "Calcula la inversión inicial como horas de montaje por coste hora",
+    "Calcula en cuántos meses se recupera la inversión",
+    "Aplica un recorte de realismo del 30 por ciento al ahorro estimado y explica por qué",
+    "Ordena por meses hasta recuperar la inversión y descarta lo que tarde más de 12 meses",
+    "Reparte las supervivientes en tres meses respetando las horas disponibles"
+  ],
+  "restricciones": [
+    "No prometas resultados: todo son estimaciones con supuestos escritos",
+    "Si un dato falta, ponlo como supuesto visible en vez de inventar una cifra",
+    "Cuenta también el coste oculto de mantener la automatización"
+  ],
+  "formato_salida": {
+    "tabla_roi": ["automatización", "horas_ahorradas_mes", "ahorro_euros_mes", "coste_mes", "inversión_inicial", "meses_para_recuperar", "decisión"],
+    "plan_trimestral": "Qué montar en el mes 1, el 2 y el 3, con horas asignadas",
+    "descartadas": "Qué no hacer y por qué",
+    "supuestos": "Lista de supuestos usados en los cálculos"
+  },
+  "criterios_calidad": [
+    "Todos los números se pueden reconstruir a mano con los datos de entrada",
+    "El plan cabe en las horas disponibles declaradas",
+    "Hay al menos una candidata descartada con un motivo claro"
+  ],
+  "tono": "Frío con los números, claro al explicarlos, español de España, tuteando"
+}

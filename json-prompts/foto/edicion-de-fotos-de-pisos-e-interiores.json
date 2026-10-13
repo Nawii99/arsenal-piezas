@@ -1,0 +1,36 @@
+{
+  "tarea": "Definir la edición completa de una foto de interior para un anuncio inmobiliario o de alojamiento",
+  "contexto": {
+    "tipo_de_inmueble": "[PISO / CASA / LOCAL / APARTAMENTO TURÍSTICO / OFICINA]",
+    "estancia": "[SALÓN / COCINA / DORMITORIO / BAÑO / TERRAZA]",
+    "condiciones": "[HORA DEL DÍA, VENTANAS ORIENTADAS A..., LUCES ENCENDIDAS O NO]",
+    "material_disponible": "[UNA SOLA FOTO / VARIAS EXPOSICIONES / FOTO CON FLASH Y OTRA SIN FLASH]",
+    "portal": "[IDEALISTA / FOTOCASA / AIRBNB / BOOKING / WEB PROPIA]"
+  },
+  "procedimiento": [
+    "Corregir distorsión del objetivo y poner las verticales rectas; las paredes no se caen hacia dentro",
+    "Nivelar el horizonte usando el canto de una encimera o el rodapié como referencia",
+    "Equilibrar la exposición: recuperar la vista de la ventana y levantar sombras sin dejar la foto lavada",
+    "Unificar la luz mixta: bombillas amarillas contra luz de ventana azulada, corregido por zonas con máscaras",
+    "Dejar paredes blancas realmente blancas y la madera con su tono real",
+    "Limpiar lo que distrae: cables, enchufes sucios, restos en el suelo, reflejo del fotógrafo en espejos y cristales",
+    "Ajustar contraste suave y enfoque moderado, y exportar al tamaño del portal"
+  ],
+  "errores_a_evitar": [
+    "Efecto HDR con halos grises alrededor de muebles y marcos",
+    "Ventanas blancas totalmente quemadas o, al revés, vista perfecta con interior negro",
+    "Paredes teñidas de amarillo o azul según la bombilla",
+    "Gran angular exagerado que hace el salón el doble de grande de lo que es",
+    "Borrar defectos reales del inmueble: eso genera visitas fallidas y quejas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Pasos en orden con la herramienta y el valor orientativo de cada uno",
+    "bloque_2": "Qué hacer si solo tienes una foto y qué hacer si tienes varias exposiciones",
+    "bloque_3": "Ajustes de exportación para el portal indicado",
+    "bloque_4": "Consejos de toma para la próxima visita, para editar menos"
+  },
+  "criterios_calidad": [
+    "La foto se ve luminosa pero sigue pareciendo real",
+    "El espacio se percibe con el tamaño que tiene"
+  ]
+}

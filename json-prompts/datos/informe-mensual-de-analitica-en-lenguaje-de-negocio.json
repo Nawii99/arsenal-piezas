@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar el informe mensual de analítica de [NEGOCIO O CLIENTE] correspondiente a [MES Y AÑO]",
+  "audiencia": "[DUEÑO DEL NEGOCIO / CLIENTE SIN PERFIL TÉCNICO / SOCIO]",
+  "entradas": {
+    "mes_actual": "[SESIONES, USUARIOS, CONVERSIONES, TASA DE CONVERSIÓN E INGRESOS]",
+    "mes_anterior": "[LAS MISMAS CIFRAS]",
+    "mismo_mes_ano_anterior": "[LAS MISMAS CIFRAS O ESCRIBE NO TENGO]",
+    "por_canal": "[PEGA LA TABLA DE CANALES CON SESIONES Y CONVERSIONES]",
+    "top_paginas": "[PEGA LAS 10 PÁGINAS MÁS VISTAS]",
+    "que_hicimos_este_mes": "[ACCIONES: CAMPAÑAS, ARTÍCULOS, CAMBIOS EN LA WEB]",
+    "gasto_en_publicidad": "[IMPORTE O NO APLICA]"
+  },
+  "estructura": [
+    "Titular del mes en una frase con la cifra que importa",
+    "Semáforo de 4 KPIs con valor, variación y una línea de por qué",
+    "Qué ha funcionado: 3 puntos con el dato que lo demuestra",
+    "Qué no ha funcionado: 2 puntos sin excusas y con la causa probable",
+    "Canal a canal: una frase por canal, solo si hay algo que decir",
+    "Decisiones para el mes que viene: 3 acciones con responsable y fecha"
+  ],
+  "restricciones": [
+    "Máximo una página; nada de volcar tablas enteras de la herramienta",
+    "Cada porcentaje va acompañado del número absoluto entre paréntesis",
+    "Prohibido el lenguaje de agencia: nada de sinergias, engagement u optimización sin objeto",
+    "Si un dato es dudoso por un problema de medición, se dice en el propio informe"
+  ],
+  "formato_salida": {
+    "tipo": "markdown listo para pegar en un correo",
+    "tabla_kpis": ["kpi", "este_mes", "mes_anterior", "variacion", "lectura_en_una_linea"],
+    "cierre": "Bloque Decisiones con 3 acciones numeradas"
+  },
+  "criterios_calidad": [
+    "Alguien que no ha abierto nunca la herramienta entiende el informe entero",
+    "Toda afirmación va pegada a un número del informe",
+    "Las acciones propuestas se derivan de lo que dicen los datos, no de un listado estándar"
+  ],
+  "tono": "Sobrio, honesto, sin florituras"
+}

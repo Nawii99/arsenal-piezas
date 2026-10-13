@@ -1,0 +1,45 @@
+{
+  "tarea": "Prepararme la llamada de renovación de un cliente concreto: guion hablado, pruebas de valor, preguntas que debo hacer y respuestas a las objeciones probables",
+  "contexto": {
+    "mi_empresa": "[NOMBRE DE TU EMPRESA]",
+    "cliente": "[NOMBRE DEL CLIENTE Y A QUÉ SE DEDICA]",
+    "contrato_actual": "[QUÉ TIENE CONTRATADO Y CUÁNTO PAGA AL MES O AL AÑO]",
+    "fecha_renovacion": "[FECHA]",
+    "interlocutor": "[NOMBRE, CARGO Y SI DECIDE O SOLO PROPONE]"
+  },
+  "entradas": {
+    "resultados_del_ultimo_periodo": "[QUÉ HA CONSEGUIDO CON TU SERVICIO: NÚMEROS, HITOS, ENTREGAS]",
+    "incidencias": "[PROBLEMAS QUE HA HABIDO Y CÓMO SE RESOLVIERON]",
+    "cambios_propuestos": "[SUBIDA DE PRECIO, CAMBIO DE ALCANCE O RENOVACIÓN IGUAL]",
+    "riesgos_que_intuyo": "[LO QUE ME PREOCUPA DE ESTA CUENTA]"
+  },
+  "estructura_del_guion": [
+    "Apertura de 30 segundos que fija el objetivo de la llamada sin pedir perdón",
+    "Repaso de resultados: 3 pruebas concretas de lo conseguido, con su número al lado",
+    "Preguntas abiertas sobre sus objetivos del próximo año y qué cambiaría del servicio",
+    "Propuesta de renovación: qué sigue igual, qué mejora y el precio",
+    "Cierre con siguiente paso concreto y fecha"
+  ],
+  "objeciones_a_preparar": [
+    "Nos lo estamos replanteando internamente",
+    "Este año tenemos el presupuesto recortado",
+    "Hemos recibido una oferta más barata",
+    "No estamos usando ni la mitad de lo que pagamos",
+    "Ha entrado un jefe nuevo y quiere revisarlo todo"
+  ],
+  "restricciones": [
+    "Frases para decir en voz alta, cortas, sin palabras cursis ni anglicismos",
+    "Ninguna respuesta a objeción puede empezar bajando el precio; el descuento solo aparece a cambio de algo (más meses, más volumen, pago por adelantado)",
+    "Si me faltan resultados que enseñar, dilo claro y propón qué medir desde ya"
+  ],
+  "formato_salida": {
+    "tipo": "Guion con apartados",
+    "apartados": ["Objetivo de la llamada", "Guion paso a paso con frases literales", "5 preguntas clave", "Tabla objeción / respuesta / concesión permitida", "Correo de seguimiento en 120 palabras"]
+  },
+  "criterios_calidad": [
+    "Podría leer el guion tal cual y sonar natural",
+    "Cada prueba de valor va con un dato, no con adjetivos",
+    "Queda claro qué NO puedo conceder"
+  ],
+  "tono": "Cercano y seguro, de igual a igual"
+}

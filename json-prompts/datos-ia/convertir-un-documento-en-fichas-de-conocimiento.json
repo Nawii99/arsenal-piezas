@@ -1,0 +1,39 @@
+{
+  "tarea": "Transformar un documento largo o desordenado en fichas de conocimiento cortas, autocontenidas y etiquetadas, listas para cargar en un agente de IA",
+  "contexto": {
+    "publico": "[CLIENTE FINAL / EQUIPO INTERNO]",
+    "vocabulario_cliente": "[PALABRAS QUE USAN TUS CLIENTES AUNQUE NO SEAN LAS TÉCNICAS]"
+  },
+  "entradas": {
+    "documento": "[PEGA AQUÍ EL TEXTO]",
+    "fecha_documento": "[FECHA O VERSIÓN]"
+  },
+  "procedimiento": [
+    "Detecta cada idea independiente del documento y conviértela en una ficha; no juntes dos temas en una.",
+    "Titula cada ficha con la pregunta que respondería un cliente, usando su vocabulario.",
+    "Escribe la respuesta en 40-120 palabras, autocontenida, sin decir según el apartado anterior.",
+    "Añade a cada ficha: sinónimos y formas alternativas de preguntar, etiquetas de tema, publico, vigencia y documento de origen.",
+    "Marca como [DUDA] cualquier punto ambiguo del original en vez de resolverlo por tu cuenta.",
+    "Al final, lista los temas que el documento deja sin cubrir."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Fichas que dependen de leer la anterior",
+    "Copiar párrafos legales sin traducirlos a lenguaje claro",
+    "Perder cifras, plazos o excepciones al resumir"
+  ],
+  "formato_salida": {
+    "tipo": "una ficha tras otra en markdown",
+    "plantilla_ficha": ["Pregunta", "Respuesta", "Otras formas de preguntarlo", "Etiquetas", "Origen y fecha", "Vigencia"],
+    "cierre": "lista de dudas y lista de huecos"
+  },
+  "restricciones": [
+    "No añadas información que no esté en el documento",
+    "Conserva literales las cifras, plazos, porcentajes y condiciones",
+    "Español llano, frases cortas"
+  ],
+  "criterios_calidad": [
+    "Cada ficha se entiende suelta",
+    "Ningún dato numérico del original se ha perdido ni redondeado",
+    "Las formas alternativas de preguntar suenan a cliente real"
+  ]
+}

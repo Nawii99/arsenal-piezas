@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribir un caso práctico de empresa para trabajar en clase, con datos, dilema y solución del profesor",
+  "contexto": {
+    "sector": "[SECTOR O TIPO DE NEGOCIO]",
+    "rol_del_alumno": "[PUESTO QUE ASUME: RESPONSABLE DE VENTAS, GERENTE, TÉCNICO...]",
+    "decision_central": "[LA DECISIÓN QUE DEBE TOMAR]",
+    "conceptos_a_aplicar": "[2 O 3 CONCEPTOS DEL TEMARIO QUE DEBE USAR]",
+    "duracion": "[MINUTOS DE TRABAJO EN CLASE]",
+    "modalidad": "[INDIVIDUAL O EN GRUPOS DE 3-4]"
+  },
+  "instrucciones": [
+    "Inventa una empresa ficticia con nombre, tamaño, facturación aproximada y situación de partida en menos de 250 palabras",
+    "Incluye un anexo de datos con al menos dos tablas (por ejemplo ventas por mes y costes por partida) con cifras coherentes entre sí",
+    "Plantea un dilema con dos opciones defendibles, no una con respuesta obvia",
+    "Añade tres tensiones reales: presupuesto limitado, plazo corto y un stakeholder en contra",
+    "Formula 5 preguntas al alumno, de menor a mayor exigencia, terminando en una recomendación argumentada",
+    "Escribe aparte la guía del profesor: respuesta esperada a cada pregunta, argumentos válidos de ambas opciones y qué respuestas delatan que no han entendido el concepto"
+  ],
+  "restricciones": [
+    "Nada de empresas reales ni de datos inventados sobre marcas existentes",
+    "Las cifras deben cuadrar si alguien las suma",
+    "El caso se lee en 6 minutos como máximo",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "bloque_1": "Enunciado del caso para repartir al alumno",
+    "bloque_2": "Anexo de datos en tablas",
+    "bloque_3": "Preguntas numeradas con espacio para responder",
+    "bloque_4": "Guía del profesor (no repartir)",
+    "bloque_5": "Cronograma de la sesión minuto a minuto"
+  },
+  "criterios_calidad": [
+    "Dos grupos pueden llegar a conclusiones distintas y ambas defendibles",
+    "Todos los datos del anexo sirven para algo o son distractores intencionados",
+    "La guía del profesor permite dirigir el debate sin haber preparado nada más"
+  ]
+}

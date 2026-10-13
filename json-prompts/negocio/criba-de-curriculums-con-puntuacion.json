@@ -1,0 +1,41 @@
+{
+  "tarea": "Puntuar candidaturas contra los requisitos del puesto y devolver una lista corta ordenada",
+  "contexto": {
+    "puesto": "[NOMBRE DEL PUESTO]",
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "plazas": "[Nº DE PLAZAS]",
+    "candidatos_a_entrevistar": "[Nº QUE QUIERES EN LA LISTA CORTA]"
+  },
+  "criterios_y_peso": [
+    { "criterio": "[REQUISITO IMPRESCINDIBLE 1]", "peso": "[1-5]", "tipo": "eliminatorio" },
+    { "criterio": "[REQUISITO IMPRESCINDIBLE 2]", "peso": "[1-5]", "tipo": "eliminatorio" },
+    { "criterio": "[DESEABLE 1]", "peso": "[1-5]", "tipo": "suma" },
+    { "criterio": "[DESEABLE 2]", "peso": "[1-5]", "tipo": "suma" }
+  ],
+  "entradas": {
+    "candidaturas": "[PEGA AQUÍ CADA CV O CANDIDATURA, SEPARADOS POR '---' Y CON UN IDENTIFICADOR]"
+  },
+  "pasos": [
+    "Puntuar de 0 a 5 cada criterio con la evidencia textual que lo justifica",
+    "Marcar como 'sin evidencia' lo que no aparezca, en vez de suponerlo",
+    "Calcular la nota total ponderada y ordenar de mayor a menor",
+    "Detectar señales de alarma reales: saltos sin explicar, incoherencias de fechas, funciones que no cuadran con el nivel",
+    "Escribir para cada finalista las dos preguntas que resolverían la mayor duda"
+  ],
+  "restricciones": [
+    "Ignorar edad, sexo, nacionalidad, foto, estado civil, barrio y nombre a efectos de puntuación",
+    "No inventar experiencia que no esté escrita",
+    "Un CV mal maquetado no baja la nota; solo cuenta el contenido",
+    "La decisión final es humana: el resultado es una propuesta"
+  ],
+  "formato_salida": {
+    "tabla": "Identificador, nota por criterio, total ponderado, veredicto (entrevistar / reserva / descartar)",
+    "lista_corta": "Los [Nº] mejores con tres líneas de por qué y sus dos preguntas clave",
+    "reserva": "Candidatos que merecen un segundo vistazo y qué les falta",
+    "descartados": "Solo el motivo objetivo, en una línea cada uno"
+  },
+  "criterios_calidad": [
+    "Cada punto otorgado está respaldado por una frase del CV",
+    "Ningún descarte se justifica por algo no relacionado con el puesto"
+  ]
+}

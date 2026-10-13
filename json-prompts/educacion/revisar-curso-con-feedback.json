@@ -1,0 +1,51 @@
+{
+  "tarea": "Analizar el feedback de los alumnos de una formación y decidir, con criterio, qué se rehace, qué se quita y qué se deja igual.",
+  "contexto": {
+    "formacion": "[NOMBRE, FORMATO, EDICIÓN Y NÚMERO DE ALUMNOS]",
+    "promesa": "[QUÉ PROMETÍA EL CURSO]",
+    "tiempo_para_cambios": "[HORAS QUE PUEDES DEDICAR ANTES DE LA SIGUIENTE EDICIÓN]",
+    "coste_de_rehacer": "[QUÉ CUESTA REGRABAR O REESCRIBIR CADA TIPO DE MATERIAL]"
+  },
+  "entradas": {
+    "respuestas_de_encuesta": "[PEGA LAS RESPUESTAS TAL CUAL, INCLUIDAS LAS PUNTUACIONES]",
+    "comentarios_sueltos": "[MENSAJES, DUDAS REPETIDAS, RESEÑAS, COMENTARIOS EN CLASE]",
+    "datos_de_uso": "[FINALIZACIÓN POR MÓDULO, ENTREGAS, ASISTENCIA SI LA TIENES]"
+  },
+  "proceso": [
+    "1. Separa el feedback en cuatro cajones: contenido, ritmo y formato, soporte y acompañamiento, expectativas de venta (lo que creían que compraban).",
+    "2. Cuenta cuántas personas dicen cada cosa. Una queja de una persona es una anécdota; tres es un patrón.",
+    "3. Cruza cada patrón con los datos de uso: si dicen que un módulo es pesado y además es donde caen, es prioritario.",
+    "4. Descarta con criterio: peticiones que cambiarían el público objetivo, peticiones de más contenido cuando el problema era exceso, y gustos personales aislados.",
+    "5. Separa lo que es problema de contenido de lo que es problema de expectativa: si prometiste otra cosa, se arregla en la página de venta, no en el temario.",
+    "6. Puntúa cada cambio por impacto (cuánta gente afecta) y esfuerzo (horas de rehacer) y ordénalos.",
+    "7. Escoge tres cambios para la próxima edición: uno grande y dos baratos. El resto va a una lista de espera con fecha de revisión.",
+    "8. Escribe qué medirás para saber si el cambio funcionó y con qué número lo comparas.",
+    "9. Redacta el mensaje a los alumnos contando qué has cambiado gracias a ellos: sube la confianza y trae recomendaciones."
+  ],
+  "restricciones": [
+    "No cambies nada solo porque lo pida el alumno más ruidoso.",
+    "Prohibido añadir contenido nuevo si el patrón principal es que sobra o abruma.",
+    "Toda decisión lleva escrito el motivo y cuántas personas la respaldan.",
+    "Nada de rehacer el curso entero: máximo tres cambios por edición."
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen: qué funciona (y no se toca), qué falla, qué es ruido.",
+    "bloque_2": "Tabla: Patrón | Nº de personas | Cajón | Dato de uso que lo apoya | Decisión (rehacer, quitar, dejar, aparcar).",
+    "bloque_3": "Los tres cambios elegidos con sus horas estimadas y quién los hace.",
+    "bloque_4": "Lista de espera con fecha de revisión.",
+    "bloque_5": "Qué mido en la próxima edición y contra qué número.",
+    "bloque_6": "Mensaje a los alumnos con los cambios hechos."
+  },
+  "criterios_calidad": [
+    "Cada decisión se apoya en un recuento, no en la última cosa que has leído.",
+    "Queda escrito qué NO se cambia y por qué: es la mitad del trabajo.",
+    "Los tres cambios caben en las horas disponibles.",
+    "Hay un número de partida para poder comparar después."
+  ],
+  "errores_tipicos": [
+    "Reaccionar al comentario más duro y rehacer lo que funcionaba.",
+    "Preguntar solo a los que terminaron: los que abandonaron tienen la información valiosa.",
+    "Encuestas de estrellas sin preguntas abiertas: no te dicen qué arreglar.",
+    "Acumular una lista de 30 mejoras y no hacer ninguna."
+  ]
+}

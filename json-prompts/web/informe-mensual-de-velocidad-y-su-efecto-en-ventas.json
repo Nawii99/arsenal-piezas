@@ -1,0 +1,42 @@
+{
+  "tarea": "Elaborar el informe mensual de rendimiento web cruzando las métricas de velocidad con los resultados del negocio",
+  "contexto": {
+    "negocio": "[NOMBRE Y QUÉ VENDE]",
+    "web": "[URL]",
+    "mes_analizado": "[MES Y AÑO]",
+    "destinatario": "[YO / SOCIO / CLIENTE]"
+  },
+  "entradas": {
+    "metricas_mes_actual": "LCP [X s], INP [X ms], CLS [X], porcentaje de URLs correctas [X %]",
+    "metricas_mes_anterior": "LCP [X s], INP [X ms], CLS [X], porcentaje de URLs correctas [X %]",
+    "cambios_aplicados": "[LISTA DE MEJORAS HECHAS ESTE MES Y EN QUÉ FECHA]",
+    "datos_negocio": "visitas [X], conversiones [X], tasa de conversión [X %], ticket medio [X €], porcentaje de tráfico móvil [X %]",
+    "incidencias": "[CAÍDAS, CAMBIOS DE DISEÑO, CAMPAÑAS O TEMPORADA ALTA QUE PUEDAN DISTORSIONAR]"
+  },
+  "proceso": [
+    "Compara cada métrica con el mes anterior indicando la variación y si el cambio es relevante o ruido",
+    "Relaciona cada mejora aplicada con la métrica que debía mover y di si el efecto se ve o no",
+    "Cruza velocidad y conversión con prudencia: habla de coincidencia, nunca afirmes causa demostrada",
+    "Señala los factores externos que pueden explicar las variaciones antes de atribuirlas a la velocidad",
+    "Propón tres acciones para el mes siguiente ordenadas por impacto esperado",
+    "Indica qué páginas siguen en rojo y cuáles han pasado a verde"
+  ],
+  "restricciones": [
+    "No prometas porcentajes de aumento de ventas por mejorar la velocidad",
+    "Si los datos no son suficientes para concluir, dilo con claridad en lugar de rellenar",
+    "Máximo una página de informe"
+  ],
+  "formato_salida": {
+    "tipo": "informe breve en markdown",
+    "secciones": [
+      "Resumen en tres viñetas: qué ha mejorado, qué ha empeorado y qué hacemos",
+      "Tabla comparativa mes actual frente a mes anterior con la variación",
+      "Efecto observado de cada mejora aplicada",
+      "Plan del mes siguiente con tres acciones y responsable"
+    ]
+  },
+  "criterios_calidad": [
+    "Cualquier persona sin perfil técnico entiende el informe en dos minutos",
+    "Toda conclusión se apoya en un dato aportado en las entradas"
+  ]
+}

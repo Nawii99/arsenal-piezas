@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar el escrito de respuesta de la empresa a una reclamacion formal de un consumidor",
+  "expediente": {
+    "empresa": "[NOMBRE, CIF Y DIRECCION DE TU EMPRESA]",
+    "reclamante": "[NOMBRE DEL CLIENTE]",
+    "referencia": "[NUMERO DE HOJA DE RECLAMACIONES O EXPEDIENTE]",
+    "fecha_reclamacion": "[FECHA]",
+    "peticion_del_cliente": "[QUE PIDE EXACTAMENTE]",
+    "cronologia": "[FECHAS Y HECHOS: COMPRA, ENTREGA, AVISO, GESTIONES REALIZADAS]",
+    "pruebas": "[FACTURAS, CORREOS, ALBARANES, INFORMES TECNICOS DISPONIBLES]",
+    "posicion": "[ACEPTAS TODO / ACEPTAS EN PARTE / RECHAZAS]",
+    "propuesta": "[LO QUE OFRECES: REPARACION, CAMBIO, REEMBOLSO, IMPORTE]"
+  },
+  "estructura": [
+    "Encabezado con datos de ambas partes y referencia del expediente",
+    "Antecedentes: cronologia numerada de hechos con fechas, solo hechos comprobables",
+    "Actuaciones realizadas por la empresa hasta la fecha",
+    "Posicion de la empresa, apoyada en la documentacion y en la garantia aplicable",
+    "Propuesta de solucion concreta con plazo de ejecucion",
+    "Disponibilidad para acuerdo y datos de contacto",
+    "Relacion de documentos que se adjuntan"
+  ],
+  "reglas": [
+    "Tono institucional, respetuoso y sin ironia ni reproches al cliente",
+    "Separar hechos de opiniones: nada de suponemos que o creemos que",
+    "No reconocer responsabilidades que no consten en la documentacion aportada",
+    "No usar tecnicismos juridicos si no se dominan"
+  ],
+  "formato_salida": {
+    "escrito": "Documento formal listo para imprimir y firmar, maximo 2 paginas",
+    "resumen_interno": "Media pagina con riesgos, coste de aceptar frente a coste de litigar y recomendacion",
+    "checklist": "Documentos a adjuntar y plazos que no puedes dejar pasar"
+  },
+  "aviso": "Incluir al final una nota indicando que conviene revision por un profesional si el importe supera [IMPORTE LIMITE]",
+  "criterios_calidad": [
+    "Cada afirmacion se puede probar con un documento de la lista",
+    "La propuesta de solucion es clara, medible y con fecha"
+  ]
+}

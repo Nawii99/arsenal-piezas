@@ -1,0 +1,51 @@
+{
+  "tarea": "Redacta la política interna de uso de servidores MCP y agentes de IA en mi empresa, en una página, entendible por cualquiera del equipo y aplicable desde mañana",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR]",
+    "personas": "[NÚMERO DE PERSONAS]",
+    "sistemas_criticos": "[EJ: FACTURACIÓN, CRM DE CLIENTES, TIENDA ONLINE, HISTORIALES]",
+    "tratamos_datos_personales": "[SÍ / NO]",
+    "quien_aprueba": "[NOMBRE O ROL QUE DA EL VISTO BUENO]",
+    "clientes_o_normativa_exigente": "[EJ: CLIENTES PÚBLICOS, SANIDAD, NINGUNA]"
+  },
+  "debe_cubrir": [
+    "Qué conectores se pueden usar: lista permitida, lista prohibida y cómo se pide uno nuevo",
+    "Regla de permisos mínimos y prohibición de credenciales de administrador salvo aprobación escrita",
+    "Qué acciones exigen confirmación humana: enviar a clientes, cobrar, borrar, publicar, firmar",
+    "Dónde se guardan las claves y por qué canales nunca se comparten",
+    "Uso de datos personales y de clientes con agentes, y qué no puede salir nunca de la empresa",
+    "Registro: quién tiene qué conectado y revisión periódica",
+    "Qué hacer ante un incidente y a quién avisar, con plazo",
+    "Formación mínima antes de conectar nada"
+  ],
+  "instrucciones": [
+    "Escribe reglas numeradas, en segunda persona y en frases cortas",
+    "Cada regla dice qué se puede, qué no, y la excepción si la hay",
+    "Adapta la exigencia al tamaño de la empresa: nada de burocracia imposible de cumplir",
+    "Añade una tabla de responsabilidades sencilla",
+    "Incluye un formulario de solicitud de conector nuevo con 6 preguntas",
+    "Añade una nota indicando que esto no es asesoramiento legal y que conviene revisarlo con un profesional si tratáis datos personales"
+  ],
+  "restricciones": [
+    "Máximo una página equivalente más el formulario",
+    "Sin jerga técnica ni artículos legales citados de memoria",
+    "Nada de reglas imposibles de verificar"
+  ],
+  "formato_salida": {
+    "tipo": "documento markdown",
+    "secciones": [
+      "Para qué sirve esta política y a quién aplica",
+      "Reglas numeradas",
+      "Tabla: Quién | De qué responde",
+      "Formulario de solicitud de conector nuevo",
+      "Qué hacer si algo sale mal",
+      "Fecha de revisión y aviso legal"
+    ]
+  },
+  "criterios_calidad": [
+    "Cualquier persona del equipo entiende qué puede y qué no en una lectura",
+    "Cada regla es comprobable",
+    "El proceso para pedir un conector nuevo cabe en 10 minutos"
+  ]
+}

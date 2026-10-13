@@ -1,0 +1,41 @@
+{
+  "tarea": "Generar un banco de 50 ideas de contenido repartidas por pilares y ángulos, con gancho y formato para cada una",
+  "contexto": {
+    "negocio": "[QUÉ HACES Y QUÉ VENDES]",
+    "cliente_ideal": "[A QUIÉN LE HABLAS]",
+    "dudas_frecuentes": "[LAS 5 PREGUNTAS QUE MÁS TE HACEN]",
+    "objeciones": "[LAS 3 EXCUSAS MÁS COMUNES PARA NO COMPRARTE]",
+    "temas_prohibidos": "[DE QUÉ NO QUIERES HABLAR]",
+    "formatos_favoritos": "[VÍDEO CORTO, CARRUSEL, TEXTO, DIRECTO, EMAIL...]"
+  },
+  "pilares": {
+    "educar": "Enseñar algo que el cliente puede aplicar hoy mismo",
+    "demostrar": "Casos, antes y después, procesos reales, cifras propias",
+    "opinion": "Postura clara sobre errores comunes del sector",
+    "cercania": "Quién eres, cómo trabajas, fallos y aprendizajes",
+    "vender": "Producto, oferta, objeciones y llamada directa"
+  },
+  "angulos": ["error típico", "comparativa", "paso a paso", "mito derribado", "pregunta de cliente", "cifra o dato propio", "detrás de las cámaras", "antes y después"],
+  "pasos": [
+    "1. Reparte las 50 ideas: 15 educar, 12 demostrar, 8 opinión, 8 cercanía, 7 vender",
+    "2. Cada idea usa un ángulo de la lista y no repite ángulo más de siete veces",
+    "3. Convierte cada duda y cada objeción del cliente en al menos una idea",
+    "4. Escribe el gancho como si fuera la primera frase de la publicación",
+    "5. Asigna el formato que mejor le pega a esa idea, no siempre el mismo",
+    "6. Marca con una estrella las 10 que más probabilidad tienen de traer clientes"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown numerada del 1 al 50",
+    "columnas": ["Nº", "Pilar", "Ángulo", "Idea", "Gancho", "Formato", "Estrella"]
+  },
+  "restricciones": [
+    "Prohibido el relleno tipo '5 consejos para mejorar'; cada idea dice de qué habla exactamente",
+    "Nada de temas de la lista de prohibidos",
+    "Español de España, tuteando"
+  ],
+  "criterios_calidad": [
+    "Cualquier idea se podría grabar o escribir en menos de 30 minutos",
+    "No hay dos ganchos que digan lo mismo con otras palabras",
+    "Las diez marcadas conectan de forma clara con lo que vendes"
+  ]
+}

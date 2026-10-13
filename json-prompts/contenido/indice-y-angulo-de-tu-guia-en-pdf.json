@@ -1,0 +1,47 @@
+{
+  "tarea": "Diseñar el ángulo comercial y el índice completo de una guía práctica en PDF a partir de la experiencia real del autor",
+  "contexto": {
+    "autor": "[TU NOMBRE Y A QUÉ TE DEDICAS]",
+    "publico": "[A QUIÉN VA DIRIGIDA: SECTOR, PUESTO, NIVEL DE CONOCIMIENTO]",
+    "problema_principal": "[EL PROBLEMA CONCRETO QUE RESUELVE]",
+    "resultado_prometido": "[QUÉ SABRÁ HACER EL LECTOR AL TERMINAR]",
+    "extension_objetivo": "[Nº DE PÁGINAS APROXIMADO: 12, 40, 120]",
+    "objetivo_de_negocio": "[CAPTAR SUSCRIPTORES / VENDER SERVICIO / VENDER EN AMAZON]"
+  },
+  "entradas": {
+    "cosas_que_sabes": "[3 A 10 COSAS QUE SABES Y CASI NADIE CUENTA]",
+    "errores_frecuentes": "[ERRORES QUE VES REPETIRSE EN TUS CLIENTES]",
+    "casos_reales": "[CASOS, CIFRAS O ANÉCDOTAS QUE PUEDES CONTAR]",
+    "guias_de_la_competencia": "[QUÉ HAY YA PUBLICADO SOBRE ESTO]"
+  },
+  "pasos": [
+    "Proponer 3 ángulos distintos para la misma guía y recomendar uno explicando por qué",
+    "Definir la transformación: dónde está el lector al empezar y dónde acaba",
+    "Ordenar los capítulos como una secuencia de acciones, no como una lista de temas",
+    "Repartir las páginas por capítulo según el peso real del contenido",
+    "Marcar en qué capítulo aparece de forma natural la oferta del autor"
+  ],
+  "restricciones": [
+    "Cada capítulo debe resolver algo, no solo informar",
+    "Nada de capítulo introductorio sobre historia o teoría general",
+    "Máximo 8 capítulos para guías de menos de 40 páginas",
+    "No inventar datos, estadísticas ni estudios; si hacen falta, marcarlos como [DATO A VERIFICAR]",
+    "Español de España, tuteando al lector"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "1. Ángulo elegido y por qué (máx 120 palabras)",
+      "2. Título y subtítulo de portada, con 2 alternativas",
+      "3. Promesa en una frase para la contraportada o la landing",
+      "4. Índice: por capítulo, título, qué aprende el lector, 3 a 5 apartados internos, páginas estimadas y qué recurso lo acompaña",
+      "5. Dónde encaja tu oferta y con qué frase de transición",
+      "6. Qué te falta por aportar tú: lista de datos, casos o capturas que solo tienes tú"
+    ]
+  },
+  "criterios_calidad": [
+    "Un desconocido entiende de qué va la guía leyendo solo el índice",
+    "Ningún capítulo se solapa con otro",
+    "El lector podría aplicar algo ya en el capítulo 1"
+  ]
+}

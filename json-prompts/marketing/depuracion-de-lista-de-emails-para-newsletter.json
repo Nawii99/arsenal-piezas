@@ -1,0 +1,37 @@
+{
+  "tarea": "Depurar una lista de suscriptores de email antes de importarla a una herramienta de envío",
+  "contexto": {
+    "herramienta_envio": "[MAILCHIMP, BREVO, MAILERLITE, ACTIVECAMPAIGN...]",
+    "origen_contactos": "[FORMULARIO WEB, COMPRAS, EVENTOS, TARJETAS EN PAPEL, LISTA HEREDADA]",
+    "pais": "España, aplica RGPD y LSSI",
+    "ultimo_envio": "[FECHA DEL ÚLTIMO CORREO ENVIADO A ESTA LISTA]"
+  },
+  "entradas": {
+    "lista": "[PEGA EN CSV: EMAIL, NOMBRE, FECHA_ALTA, ORIGEN, CONSENTIMIENTO, ULTIMA_APERTURA]"
+  },
+  "comprobaciones": [
+    "Sintaxis: falta la arroba, dos arrobas, espacios, comas en vez de puntos, acentos o eñes en la parte del dominio",
+    "Erratas típicas de dominio: gmail.con, gmial.com, hotmal.com, yaho.es, outlok.com",
+    "Buzones genéricos o de rol: info@, admin@, ventas@, noreply@, que suelen dar mala entrega",
+    "Direcciones desechables o de un solo uso",
+    "Duplicados exactos y duplicados por alias con signo más o por puntos en Gmail",
+    "Sin consentimiento registrado o con origen desconocido",
+    "Inactivos: sin ninguna apertura en los últimos 12 meses"
+  ],
+  "formato_salida": {
+    "tipo": "tres listas más resumen",
+    "lista_1": "CSV listo para importar, con el email ya normalizado en minúsculas",
+    "lista_2": "CSV de corregibles, con el valor original, la corrección propuesta y el motivo",
+    "lista_3": "CSV de excluidos, con el motivo de exclusión",
+    "resumen": "Cuántos contactos quedan, cuántos se pierden y en qué porcentaje se reduce la lista"
+  },
+  "restricciones": [
+    "No corrijas un dominio si la errata no es evidente: mándalo a corregibles para que lo confirme una persona",
+    "Nunca traslades a la lista buena un contacto sin consentimiento, aunque el email sea válido",
+    "No compruebes si el buzón existe de verdad: eso requiere una verificación externa; recomiéndala si el porcentaje de dudosos es alto"
+  ],
+  "criterios_calidad": [
+    "La suma de las tres listas coincide con el total de entrada",
+    "Cada exclusión tiene un motivo entendible por alguien de marketing"
+  ]
+}

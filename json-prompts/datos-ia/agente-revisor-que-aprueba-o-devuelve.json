@@ -1,0 +1,35 @@
+{
+  "tarea": "Escribe el agente revisor que audita el trabajo de los demas agentes y emite un veredicto: aprobado, corregir o parar",
+  "contexto": {
+    "que_revisa": "[EJ: PRESUPUESTOS, RESPUESTAS A CLIENTES, FICHAS DE PRODUCTO]",
+    "criterios_del_negocio": "[EJ: PRECIOS SIEMPRE CON IVA, PLAZO MAXIMO 10 DIAS]",
+    "fallos_tipicos": "[LOS 3 O 4 ERRORES QUE MAS OS PASAN]",
+    "quien_decide_en_duda": "[PERSONA]"
+  },
+  "rubrica": [
+    "Exactitud: cifras, fechas y nombres coinciden con los datos de entrada",
+    "Completitud: no falta ningun apartado obligatorio",
+    "Cumplimiento: respeta las reglas del negocio y lo prometido al cliente",
+    "Coherencia: no se contradice consigo mismo ni con el traspaso recibido",
+    "Tono: encaja con como habla la marca"
+  ],
+  "reglas": [
+    "Puntua cada criterio de 1 a 5 y justifica con la frase concreta del texto revisado",
+    "Un solo criterio por debajo de 3 impide el aprobado",
+    "No reescribas el trabajo entero: senala el arreglo minimo",
+    "Si el fallo viene de un dato que falta, la culpa es del traspaso, indicalo",
+    "Si detectas riesgo legal, economico o de datos personales, veredicto parar"
+  ],
+  "formato_salida": {
+    "veredicto": "aprobado | corregir | parar",
+    "tabla": ["criterio", "nota", "prueba citada", "arreglo concreto"],
+    "correcciones": "lista ordenada por gravedad, cada una en una frase accionable",
+    "mensaje_al_agente": "texto breve listo para devolverselo al agente que hizo el trabajo",
+    "limite": "maximo 300 palabras en total"
+  },
+  "criterios_calidad": [
+    "Cada nota va acompanada de una cita literal, nunca de una opinion suelta",
+    "El agente corregido sabe exactamente que cambiar sin volver a preguntar",
+    "El revisor nunca aprueba algo con datos inventados"
+  ]
+}

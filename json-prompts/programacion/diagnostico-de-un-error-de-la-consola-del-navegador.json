@@ -1,0 +1,40 @@
+{
+  "tarea": "Diagnosticar un error de JavaScript o TypeScript a partir del mensaje y la traza, y proponer la solucion",
+  "entradas": {
+    "mensaje_error": "[PEGA EL ERROR COMPLETO, INCLUIDA LA TRAZA]",
+    "codigo_senalado": "[PEGA LAS LINEAS QUE INDICA LA TRAZA Y LAS 10 DE ALREDEDOR]",
+    "que_estaba_haciendo": "[LA ACCION EXACTA: DAR AL BOTON DE PAGAR, CARGAR LA PAGINA...]",
+    "cuando_ocurre": "[SIEMPRE / SOLO A VECES / SOLO EN MOVIL / SOLO EN PRODUCCION]",
+    "entorno": "[NAVEGADOR Y VERSION / VERSION DE NODE / FRAMEWORK Y VERSION]",
+    "cambios_recientes": "[QUE SE TOCO ANTES DE QUE EMPEZARA A FALLAR]"
+  },
+  "metodo": [
+    "Traducir el mensaje de error a lenguaje llano",
+    "Leer la traza de abajo arriba y senalar la primera linea de codigo propio",
+    "Proponer entre 2 y 4 hipotesis ordenadas de mas a menos probable",
+    "Para cada hipotesis, dar una comprobacion rapida que la confirme o descarte",
+    "Solo despues de eso, proponer el arreglo"
+  ],
+  "sospechosos_habituales": [
+    "Leer una propiedad de algo que es undefined o null",
+    "Usar un dato antes de que llegue la respuesta asincrona",
+    "Ejecutar codigo del navegador en el servidor o al reves",
+    "Diferencias entre desarrollo y produccion: variables de entorno, minificacion, CORS",
+    "Version de libreria distinta a la que espera el codigo"
+  ],
+  "restricciones": [
+    "No proponer arreglos que solo tapen el error, como envolver todo en try catch vacio",
+    "Si falta informacion clave, pedir exactamente el dato que falta antes de opinar",
+    "Distinguir siempre entre causa y sintoma"
+  ],
+  "formato_salida": {
+    "1_traduccion": "Que significa este error, en una frase",
+    "2_hipotesis": "Tabla: hipotesis | probabilidad | como comprobarlo en 2 minutos",
+    "3_arreglo": "Codigo corregido del fragmento afectado",
+    "4_prevencion": "Que cambio evitaria que vuelva a pasar (validacion, tipo, test)"
+  },
+  "criterios_calidad": [
+    "La comprobacion propuesta se puede hacer sin instalar nada",
+    "El arreglo ataca la causa, no el sintoma"
+  ]
+}

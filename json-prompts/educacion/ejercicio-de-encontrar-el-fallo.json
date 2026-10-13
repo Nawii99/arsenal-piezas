@@ -1,0 +1,37 @@
+{
+  "tarea": "Crear un ejercicio de detección de errores: un trabajo con fallos escondidos a propósito y su corrección",
+  "contexto": {
+    "tipo_de_trabajo": "[QUÉ REVISAN: UN PRESUPUESTO, UN INFORME, UN CÁLCULO, UN EMAIL, UNA FICHA...]",
+    "tema": "[TEMA DEL TEMARIO QUE SE PRACTICA]",
+    "nivel": "[PRINCIPIANTE, INTERMEDIO O AVANZADO]",
+    "tiempo_de_la_actividad": "[MINUTOS]"
+  },
+  "errores_a_incluir": {
+    "cantidad": "[8 POR DEFECTO]",
+    "tipos": "[ERRORES QUE QUIERES QUE APAREZCAN, O DEJA 'LOS MÁS HABITUALES DEL TEMA']",
+    "reparto": "3 evidentes, 3 que hay que buscar y 2 que solo detecta quien domina el tema"
+  },
+  "instrucciones": [
+    "Escribe el documento con pinta de trabajo real y verosímil, sin avisar de dónde están los fallos",
+    "Numera las líneas o los apartados para que el alumno pueda señalar dónde ha encontrado cada cosa",
+    "Mete al menos un elemento que parezca un error pero sea correcto, para castigar la corrección a bulto",
+    "Prepara la hoja de soluciones con: ubicación exacta, qué está mal, por qué está mal, cómo debería estar y qué consecuencia tendría en la vida real",
+    "Asigna una dificultad de 1 a 3 a cada fallo"
+  ],
+  "formato_salida": {
+    "documento_con_errores": "Texto o tabla numerada para repartir",
+    "hoja_de_respuesta_del_alumno": "Tabla con columnas: linea, que esta mal, como lo corrijo",
+    "solucionario": "Tabla con los fallos, la trampa correcta y la puntuación sugerida",
+    "puesta_en_comun": "3 preguntas para debatir en grupo al terminar"
+  },
+  "restricciones": [
+    "Nada de errores de ortografía como relleno salvo que sea el objetivo del ejercicio",
+    "Los fallos deben ser de criterio o de método, no de despiste tonto",
+    "Español de España"
+  ],
+  "criterios_calidad": [
+    "El documento pasaría por real a primera vista",
+    "Los 8 fallos son defendibles ante un alumno que discuta",
+    "La trampa correcta separa a quien entiende de quien tacha por tachar"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Crear 4 prompts de imagen de [PRODUCTO] en una escena real de uso, para redes y anuncios de [NOMBRE DE TU MARCA]",
+  "contexto": {
+    "producto": "[PRODUCTO Y MATERIAL]",
+    "cliente_ideal": "[EDAD APROXIMADA, ESTILO DE VIDA, PAIS]",
+    "momento_de_uso": "[DESAYUNO, OFICINA, GIMNASIO, BANO, TERRAZA...]",
+    "ambiente": "[CALIDO Y HOGARENO / MINIMAL Y FRIO / NATURAL Y RUSTICO]",
+    "formato": "[VERTICAL 4:5 O 9:16 / CUADRADO 1:1]"
+  },
+  "reglas_de_oficio": [
+    "El producto tiene que ser el elemento mas nitido y mejor iluminado de la escena",
+    "Maximo tres elementos de atrezzo y todos coherentes con el momento de uso",
+    "Luz de ventana lateral suave con sombras direccionales, nada de flash frontal plano",
+    "Fondo desenfocado suave, con lente equivalente a 35-50 mm para que se vea el entorno",
+    "Si aparecen personas, mostrar manos o cuerpo parcial, sin caras protagonistas ni miradas a camara",
+    "Dejar zona vacia en un lado por si hay que poner texto encima"
+  ],
+  "variantes_pedidas": [
+    "Escena de manana con luz calida",
+    "Escena de sobremesa con luz neutra",
+    "Detalle cercano con el producto en la mano",
+    "Plano cenital sobre una superficie con dos objetos de apoyo"
+  ],
+  "formato_salida": {
+    "tipo": "tabla con una fila por variante",
+    "columnas": ["variante", "prompt en ingles", "prompt en espanol", "proporcion", "donde usarla", "espacio libre para texto"],
+    "extra": "Lista de 6 elementos a excluir para que el generador no ensucie la escena"
+  },
+  "criterios_calidad": [
+    "Se entiende para que sirve el producto sin leer nada",
+    "La escena parece una casa real, no un catalogo de muebles vacio",
+    "El producto conserva su forma, color y etiqueta reales"
+  ],
+  "errores_a_evitar": [
+    "Escenas sobrecargadas donde se pierde el producto",
+    "Texto inventado en carteles o envases",
+    "Manos con dedos deformes: pedir composicion que evite manos completas si el generador falla"
+  ]
+}

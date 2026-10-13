@@ -1,0 +1,46 @@
+{
+  "tarea": "Escribir un script Bash de despliegue de una web por SSH con copia de seguridad previa y marcha atras en un comando",
+  "contexto": {
+    "tipo_de_web": "[WORDPRESS, LARAVEL, PHP A MEDIDA, HTML ESTATICO]",
+    "acceso_al_servidor": "SSH con clave, sin contrasena por teclado",
+    "entornos": "[SOLO PRODUCCION / PRUEBAS Y PRODUCCION]"
+  },
+  "entradas": {
+    "carpeta_local": "[RUTA EN TU ORDENADOR]",
+    "servidor": "[usuario@servidor.com]",
+    "carpeta_remota": "[/var/www/TU-WEB]",
+    "excluir": "[.git, node_modules, uploads, .env, config LOCAL]",
+    "tareas_post_despliegue": "[NINGUNA / VACIAR CACHE / REINICIAR PHP-FPM / MIGRACIONES]"
+  },
+  "requisitos_del_script": [
+    "set -euo pipefail y aviso claro en rojo si algo falla",
+    "Pedir confirmacion escribiendo la palabra PRODUCCION antes de tocar el servidor en vivo",
+    "Hacer una copia de la carpeta remota actual antes de sustituir nada, con fecha en el nombre",
+    "Usar rsync con --delete y con --exclude para lo indicado, y ofrecer modo simulacion con --dry-run",
+    "Mostrar la lista de ficheros que va a cambiar y esperar confirmacion antes de aplicar",
+    "Ejecutar las tareas posteriores solo si el rsync termino bien",
+    "Comprobar despues que la web responde con codigo 200 usando curl",
+    "Incluir una opcion --rollback que restaure la ultima copia",
+    "Guardar un registro de cada despliegue con fecha, usuario y resultado"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con bloques de codigo",
+    "secciones": [
+      "1. Script completo comentado en espanol",
+      "2. Preparacion previa: como generar y copiar la clave SSH, paso a paso",
+      "3. Como probarlo primero en modo simulacion",
+      "4. Que hacer si el despliegue sale mal, con el comando exacto de marcha atras",
+      "5. Tres errores tipicos y como se ven en pantalla"
+    ]
+  },
+  "restricciones": [
+    "Nunca borrar ficheros subidos por usuarios ni ficheros de configuracion del servidor",
+    "Ninguna contrasena dentro del script",
+    "No usar herramientas que haya que instalar en el servidor remoto"
+  ],
+  "criterios_calidad": [
+    "Un despliegue mal hecho se puede deshacer en menos de un minuto",
+    "El script avisa antes de cada accion destructiva",
+    "Los mensajes en pantalla se entienden sin ser tecnico"
+  ]
+}

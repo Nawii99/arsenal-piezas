@@ -1,0 +1,34 @@
+{
+  "tarea": "Preparar un plan de acción para responder a un aviso, desactivación de producto o suspensión de cuenta en un marketplace",
+  "contexto": {
+    "marketplace": "[AMAZON / ETSY]",
+    "texto_del_aviso": "[COPIA EL CORREO O EL AVISO TAL CUAL, SIN RESUMIR]",
+    "afectado": "[CUENTA COMPLETA / ASIN O ARTÍCULO CONCRETO]",
+    "motivo_declarado": "[AUTENTICIDAD, SEGURIDAD, PROPIEDAD INTELECTUAL, RENDIMIENTO, DOCUMENTACIÓN...]",
+    "que_paso_realmente": "[TU EXPLICACIÓN HONESTA]",
+    "documentacion_disponible": "[FACTURAS DE COMPRA, DATOS DEL PROVEEDOR, CERTIFICADOS, FOTOS]",
+    "acciones_ya_tomadas": "[LO QUE YA HAS CAMBIADO]",
+    "historial": "[AVISOS ANTERIORES, SI LOS HAY]"
+  },
+  "metodo": [
+    "Traduce el aviso a lenguaje llano y di exactamente qué te están pidiendo demostrar",
+    "Separa lo que es causa raíz de lo que son síntomas; el canal quiere la causa",
+    "Comprueba si la documentación disponible cumple los requisitos habituales: facturas con datos fiscales, proveedor verificable, cantidades coherentes con lo vendido y fecha reciente",
+    "Estructura el plan en tres bloques: causa raíz, acciones inmediatas ya ejecutadas y medidas para que no se repita",
+    "Escribe en primera persona del plural, con hechos y fechas, sin excusas, sin culpar al canal y sin apelar a la pena"
+  ],
+  "formato_salida": {
+    "que_te_piden": "Resumen en 3 líneas del requisito real",
+    "diagnostico": "Causa raíz probable y gravedad estimada",
+    "documentos_a_reunir": "Lista con qué debe aparecer en cada documento para que sea aceptado",
+    "borrador_plan_de_accion": "Texto completo listo para revisar, con los tres bloques y máximo una página",
+    "huecos": "Qué falta o qué no cuadra en tu versión y que debes resolver antes de enviar",
+    "que_no_hacer": "Errores que empeoran el caso, como abrir varios casos a la vez o crear otra cuenta"
+  },
+  "criterios_calidad": [
+    "El borrador no promete nada que no puedas demostrar con papel",
+    "Cada medida preventiva es verificable: proceso, responsable y frecuencia",
+    "Se marca claramente cualquier punto donde convenga consultar con un asesor o abogado"
+  ],
+  "aviso": "Esto es un borrador de trabajo, no asesoramiento legal; revisa los datos y los documentos antes de enviarlo"
+}

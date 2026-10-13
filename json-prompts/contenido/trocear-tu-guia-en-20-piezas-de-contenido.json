@@ -1,0 +1,41 @@
+{
+  "tarea": "Convertir una guía o libro ya escrito en 20 piezas de contenido distintas repartidas por canal",
+  "contexto": {
+    "obra": "[TÍTULO DE LA GUÍA O LIBRO]",
+    "contenido": "[PEGA AQUÍ EL ÍNDICE O EL TEXTO COMPLETO]",
+    "canales": "[INSTAGRAM / LINKEDIN / TIKTOK / NEWSLETTER / BLOG]",
+    "frecuencia": "[CUÁNTAS PUBLICACIONES POR SEMANA PUEDES SOSTENER]",
+    "destino": "[LANDING DE DESCARGA / FICHA DE AMAZON / PÁGINA DE SERVICIO]"
+  },
+  "pasos": [
+    "Extraer las 20 ideas con más fuerza propia, señalando de qué capítulo sale cada una",
+    "Asignar a cada idea el canal y el formato donde mejor funciona",
+    "Evitar que dos piezas repitan el mismo argumento con otras palabras",
+    "Escribir el gancho de cada pieza y el desarrollo en borrador",
+    "Ordenarlas en un calendario para [Nº DE SEMANAS]"
+  ],
+  "formatos_permitidos": [
+    "Post de texto",
+    "Carrusel de 6 a 8 diapositivas",
+    "Guion de vídeo corto de 30 segundos",
+    "Email de newsletter",
+    "Artículo de blog"
+  ],
+  "restricciones": [
+    "Solo 5 de las 20 piezas mencionan la descarga de forma directa; el resto aportan sin pedir nada",
+    "Nada de frases motivacionales genéricas",
+    "Cada pieza tiene que sostenerse sin haber leído la guía",
+    "Sin hashtags de relleno: máximo 5 y relacionados",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "tipo": "tabla y anexo",
+    "tabla": "Nº | capítulo de origen | idea | canal | formato | gancho | llamada a la acción | semana",
+    "anexo": "Texto en borrador de cada pieza, con indicación del visual necesario cuando aplique"
+  },
+  "criterios_calidad": [
+    "Las 20 piezas cubren capítulos distintos, sin concentrarse en el primero",
+    "Los ganchos no se parecen entre sí",
+    "Al menos 5 piezas son directamente aplicables por quien las lee"
+  ]
+}

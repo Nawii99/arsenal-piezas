@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar una carta de requerimiento de subsanación con anuncio de resolución del contrato por incumplimiento de la otra parte",
+  "entradas": {
+    "remitente": "[TU NOMBRE O EMPRESA, NIF Y DOMICILIO]",
+    "destinatario": "[NOMBRE, NIF Y DOMICILIO DE LA OTRA PARTE]",
+    "contrato": {"objeto": "[QUÉ SE CONTRATÓ]", "fecha_firma": "[DD/MM/AAAA]", "duracion": "[PLAZO O INDEFINIDO]"},
+    "clausulas_incumplidas": "[NÚMERO Y TEXTO LITERAL DE LAS CLÁUSULAS, SI LAS TIENES]",
+    "hechos": "[LISTA DE INCUMPLIMIENTOS CON FECHA Y QUÉ PASÓ EN CADA UNO]",
+    "perjuicio": "[QUÉ TE HA COSTADO: DINERO, RETRASOS, CLIENTES PERDIDOS]",
+    "plazo_subsanacion": "[DÍAS PARA QUE LO ARREGLE]",
+    "peticion": "[QUÉ QUIERES: QUE CUMPLA, DEVOLUCIÓN DE DINERO O RESOLUCIÓN]"
+  },
+  "pasos": [
+    "Ordenar los hechos cronológicamente y descartar los que no tengan prueba o fecha",
+    "Enlazar cada hecho con la obligación concreta que se incumple",
+    "Fijar un plazo de subsanación razonable y una fecha límite en formato DD/MM/AAAA",
+    "Anunciar el efecto si no se subsana: resolución del contrato y reclamación de daños",
+    "Reservar expresamente el derecho a reclamar los perjuicios"
+  ],
+  "restricciones": [
+    "No dar por resuelto el contrato en esta carta: primero requerimiento y plazo",
+    "No exagerar los daños ni poner cifras que no puedas justificar con facturas",
+    "Nada de valoraciones personales sobre la otra parte",
+    "Máximo 450 palabras, tono formal y frío"
+  ],
+  "formato_salida": {
+    "carta": "texto listo para enviar por burofax o correo certificado",
+    "anexo_pruebas": "tabla con fecha, hecho y documento que lo prueba",
+    "riesgos": "tres avisos de lo que puede pasar si envías esta carta"
+  },
+  "criterios_calidad": [
+    "Cada acusación va acompañada de fecha y prueba",
+    "La fecha límite aparece destacada y sin ambigüedad",
+    "El texto sirve igual si acaba en negociación que si acaba en juzgado"
+  ],
+  "aviso_legal": "Documento orientativo; resolver un contrato tiene consecuencias, consúltalo con un abogado"
+}

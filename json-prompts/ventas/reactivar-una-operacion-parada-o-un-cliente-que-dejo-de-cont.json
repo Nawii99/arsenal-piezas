@@ -1,0 +1,35 @@
+{
+  "tarea": "Diagnosticar por qué se ha parado una oportunidad B2B y escribir la secuencia de reactivación",
+  "contexto": {
+    "cliente": "[EMPRESA E INTERLOCUTOR]",
+    "historial": "[QUÉ HA PASADO Y EN QUÉ FECHAS, EN ORDEN]",
+    "propuesta_enviada": "[QUÉ OFRECISTE E IMPORTE]",
+    "ultimo_mensaje_del_cliente": "[PEGA SU ÚLTIMO MENSAJE TAL CUAL]",
+    "dias_sin_respuesta": "[NÚMERO DE DÍAS]"
+  },
+  "pasos": [
+    "Lista las 4 causas más probables del silencio, ordenadas por probabilidad, con la pista del historial que apunta a cada una",
+    "Elige la causa más probable y diseña 4 mensajes espaciados: aportar valor, cambiar de ángulo, hablar con otra persona y cierre educado",
+    "Escribe cada mensaje completo con su asunto y el día en que enviarlo",
+    "Incluye el mensaje de cierre que da permiso a decir que no y suele provocar respuesta",
+    "Indica cómo reaccionar según lo que conteste"
+  ],
+  "restricciones": [
+    "Prohibido escribir 'haciendo seguimiento', 'te hago un ping' o 'solo por si acaso'",
+    "Cada mensaje aporta algo nuevo: dato, caso, cambio de condiciones o pregunta útil",
+    "Nada de culpabilizar ni de insinuar que el cliente ha sido maleducado",
+    "Máximo 80 palabras por mensaje"
+  ],
+  "formato_salida": {
+    "diagnostico": "Tabla: Causa posible | Pista que lo indica | Cómo confirmarlo",
+    "secuencia": "4 mensajes numerados con día, canal, asunto y texto",
+    "reacciones": "Qué hacer si responde con interés, con un no o con silencio tras el cuarto",
+    "decision": "Criterio para marcar la oportunidad como perdida y cuándo volver a intentarlo"
+  },
+  "criterios_calidad": [
+    "El diagnóstico se apoya en hechos del historial, no en suposiciones genéricas",
+    "El mensaje de cierre permite responder con una sola palabra",
+    "Ningún mensaje suena a plantilla automática"
+  ],
+  "tono": "Educado, adulto y sin ansiedad"
+}

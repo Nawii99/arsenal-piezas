@@ -1,0 +1,33 @@
+{
+  "tarea": "Analizar la retención por cohortes de [PRODUCTO O SERVICIO] e identificar en qué momento se pierde a los usuarios y qué hacer",
+  "contexto": {
+    "modelo": "[SUSCRIPCIÓN MENSUAL / APP GRATUITA / COMPRA RECURRENTE / SERVICIO]",
+    "definicion_de_activo": "[QUÉ ACCIÓN CONSIDERAS QUE ES ESTAR ACTIVO, EJ: INICIAR SESIÓN Y HACER X]",
+    "ciclo_natural_de_uso": "[DIARIO / SEMANAL / MENSUAL]"
+  },
+  "entradas": {
+    "tabla_cohortes": "[PEGA AQUÍ LAS COHORTES: MES DE ALTA Y USUARIOS ACTIVOS EN CADA PERIODO POSTERIOR]",
+    "altas_por_periodo": "[NUEVOS USUARIOS POR MES O SEMANA]",
+    "bajas_conocidas": "[CANCELACIONES SI LAS TIENES]",
+    "cambios_del_producto": "[QUÉ LANZASTE Y CUÁNDO, PARA CRUZARLO CON LAS COHORTES]"
+  },
+  "analisis": [
+    "Calcular retención en periodo 1, 3 y 6 y decir si la curva se estabiliza o cae a cero",
+    "Identificar el periodo de mayor abandono y si es abandono temprano (mala activación) o tardío (falta de valor sostenido)",
+    "Comparar cohortes entre sí y relacionar mejoras o empeoramientos con los cambios de producto aportados",
+    "Estimar cuántos usuarios de cada cohorte siguen vivos hoy",
+    "Proponer una métrica de activación: la acción de los primeros días que separa a los que se quedan"
+  ],
+  "restricciones": [
+    "No confundas usuarios nuevos con usuarios activos ni retención con crecimiento",
+    "Avisa si alguna cohorte es demasiado pequeña para concluir nada",
+    "Nada de recomendaciones tipo mejorar la experiencia: di qué se cambia y en qué momento del uso"
+  ],
+  "formato_salida": {
+    "tabla_retencion": "Cohorte por filas y periodos por columnas, en porcentaje y con el absoluto entre paréntesis",
+    "diagnostico": "3 hallazgos numerados con el dato que los sostiene",
+    "acciones": "Tabla con momento_del_recorrido, accion, canal (email, aviso en producto, llamada) y como_medirlo"
+  },
+  "criterios_calidad": ["Distingue abandono de activación y abandono de valor", "Cada acción se sitúa en un día o semana concreta del recorrido del usuario"],
+  "tono": "Analítico y directo"
+}

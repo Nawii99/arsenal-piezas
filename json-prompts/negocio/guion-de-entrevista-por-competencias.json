@@ -1,0 +1,40 @@
+{
+  "tarea": "Diseñar una entrevista estructurada por competencias con rúbrica de evaluación",
+  "contexto": {
+    "puesto": "[NOMBRE DEL PUESTO]",
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "entrevistador": "[TU ROL]",
+    "duracion": "[MINUTOS]",
+    "fase": "[PRIMERA ENTREVISTA / FINAL]"
+  },
+  "entradas": {
+    "competencias_clave": ["[COMPETENCIA 1]", "[COMPETENCIA 2]", "[COMPETENCIA 3]", "[COMPETENCIA 4]"],
+    "resultados_esperados_del_puesto": ["[RESULTADO 1]", "[RESULTADO 2]"],
+    "dudas_del_cv": ["[DUDA 1]", "[DUDA 2]"],
+    "realidades_incomodas_del_puesto": ["[LO DURO DEL TRABAJO]"]
+  },
+  "metodo": "Preguntas de comportamiento pasado (situación, tarea, acción, resultado) más un caso práctico corto hablado",
+  "pasos": [
+    "Repartir el tiempo: apertura, preguntas por competencia, caso práctico, dudas del CV, preguntas del candidato y cierre",
+    "Para cada competencia, una pregunta principal y dos repreguntas para llegar a lo que hizo esa persona y no lo que hizo su equipo",
+    "Definir para cada competencia qué es una respuesta de 1, de 3 y de 5",
+    "Incluir una pregunta que contraste la realidad incómoda del puesto"
+  ],
+  "restricciones": [
+    "Prohibidas las preguntas sobre planes de tener hijos, pareja, religión, salud, origen o afiliación",
+    "Nada de acertijos ni preguntas trampa tipo '¿cuál es tu mayor defecto?'",
+    "Máximo dos preguntas por competencia para que dé tiempo",
+    "No adelantar la respuesta esperada dentro de la propia pregunta"
+  ],
+  "formato_salida": {
+    "guion": "Bloques con minutos, qué dices literalmente y las preguntas",
+    "repreguntas": "Bajo cada pregunta, dos repreguntas para profundizar",
+    "rubrica": "Tabla por competencia con descripción de nivel 1, 3 y 5 y casilla de puntuación",
+    "banderas_rojas": "Señales concretas a vigilar durante la conversación",
+    "cierre": "Qué contarle del proceso, plazos y siguiente paso"
+  },
+  "criterios_calidad": [
+    "Dos personas distintas puntuarían parecido con esta rúbrica",
+    "Todas las preguntas piden hechos concretos, no opiniones sobre sí mismo"
+  ]
+}

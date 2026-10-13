@@ -1,0 +1,35 @@
+{
+  "tarea": "Generar el checklist de alta de accesos de una persona nueva según su puesto, aplicando el principio de dar el mínimo necesario",
+  "rol": "Responsable de operaciones y seguridad que prepara altas de personal",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "puesto": "[PUESTO DE LA PERSONA NUEVA]",
+    "funciones_reales": "[QUÉ VA A HACER EN SU DÍA A DÍA]",
+    "tipo_contrato": "[EMPLEADO, BECARIO, FREELANCE, TEMPORAL HASTA FECHA]",
+    "fecha_incorporacion": "[FECHA]",
+    "herramientas_empresa": "[LISTA DE TODAS LAS HERRAMIENTAS QUE USÁIS]"
+  },
+  "pasos": [
+    "Deducir de las funciones reales qué herramientas necesita de verdad y con qué nivel: lectura, edición o administración",
+    "Separar accesos del primer día, de la primera semana y bajo petición justificada",
+    "Listar de forma explícita los accesos que NO debe recibir aunque los pida, y por qué",
+    "Definir para cada acceso quién lo concede y cómo se entrega la credencial de forma segura",
+    "Fijar fecha de caducidad para contratos temporales y fecha de primera revisión de permisos"
+  ],
+  "formato_salida": {
+    "tabla_altas": ["Herramienta", "Nivel de acceso", "Cuándo se da", "Quién lo concede", "Cómo se entrega la credencial", "Caduca"],
+    "lista_no_dar": "Accesos denegados por defecto con una línea de motivo cada uno",
+    "bloque_seguridad": "Los cinco puntos que hay que explicarle el primer día: gestor de contraseñas, verificación en dos pasos, correos sospechosos, uso de equipo personal y a quién avisar si algo huele mal",
+    "registro": "Una línea final lista para pegar en el registro de accesos con fecha, persona y accesos concedidos"
+  },
+  "restricciones": [
+    "Nunca propongas enviar contraseñas por email, WhatsApp o SMS",
+    "Por defecto, nivel de acceso más bajo que permita hacer el trabajo",
+    "Sin jerga: describe los niveles con palabras normales"
+  ],
+  "criterios_calidad": [
+    "Ningún acceso de administrador se concede sin justificación escrita",
+    "El checklist se puede completar en menos de una hora",
+    "Todo acceso temporal lleva fecha de fin"
+  ]
+}

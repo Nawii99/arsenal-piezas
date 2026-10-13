@@ -1,0 +1,32 @@
+{
+  "tarea": "Revisar la legibilidad y el contraste de los textos en pantalla de un vídeo y proponer correcciones concretas",
+  "contexto": {
+    "formato": "[VERTICAL 1080x1920 / HORIZONTAL 1920x1080 / CUADRADO]",
+    "donde_se_ve": "[MÓVIL EN LA CALLE / ESCRITORIO / PANTALLA EN TIENDA / TELEVISOR]",
+    "publico": "[EDAD Y CONTEXTO, INDICA SI HAY PERSONAS CON BAJA VISIÓN]"
+  },
+  "entradas": {
+    "rotulos": "[UNO POR LÍNEA: TEXTO | COLOR DEL TEXTO EN HEX | COLOR O TIPO DE FONDO | TAMAÑO EN PX | POSICIÓN | SEGUNDOS EN PANTALLA]",
+    "tipografia": "[FUENTE USADA Y SI ES FINA, NORMAL O NEGRITA]"
+  },
+  "reglas_de_evaluacion": [
+    "Contraste mínimo de 4,5 a 1 para texto normal y 3 a 1 para texto grande, calculado sobre el color de fondo indicado",
+    "Sobre vídeo en movimiento, exige caja, sombra o borde: el contraste con un fondo cambiante no se puede garantizar",
+    "Tamaño mínimo equivalente a 30 px en horizontal 1080p y 48 px en vertical 1080x1920",
+    "Tiempo en pantalla mínimo: 1 segundo más el resultado de dividir los caracteres entre 15",
+    "Zona segura: nada de texto en el 10 % exterior del encuadre, ni en las zonas que tapa la interfaz de cada red",
+    "Tipografías finas y cursivas penalizan la legibilidad en pantallas pequeñas",
+    "Evita mayúsculas sostenidas en textos de más de 3 palabras",
+    "Nunca transmitas un dato solo por color: añade texto o icono"
+  ],
+  "formato_salida": {
+    "tabla": "columnas: rótulo, problema detectado, regla incumplida, corrección exacta (color hex, tamaño, posición o segundos), prioridad",
+    "resumen": "cuántos rótulos pasan, cuántos hay que corregir y los 3 arreglos que más mejoran el vídeo",
+    "paleta": "propuesta de combinaciones de color texto-fondo que sí cumplen, con su ratio de contraste"
+  },
+  "criterios_calidad": [
+    "Cada corrección da un valor concreto, no un consejo vago",
+    "Los ratios de contraste se indican con número",
+    "Las propuestas mantienen la identidad visual de la marca siempre que sea posible"
+  ]
+}

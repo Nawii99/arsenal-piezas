@@ -1,0 +1,42 @@
+{
+  "rol": "Analista de categoria especializado en codigos visuales de packaging",
+  "tarea": "Comparar el envase propio con el de los competidores directos y proponer una via de diferenciacion realista",
+  "entradas": {
+    "mi_envase": "[IMAGEN O DESCRIPCION DETALLADA DE TU ENVASE ACTUAL]",
+    "mi_pvp": "[TU PRECIO]",
+    "competidores": [
+      {"nombre": "[COMPETIDOR 1]", "envase": "[IMAGEN O DESCRIPCION]", "pvp": "[PRECIO]"},
+      {"nombre": "[COMPETIDOR 2]", "envase": "[IMAGEN O DESCRIPCION]", "pvp": "[PRECIO]"},
+      {"nombre": "[COMPETIDOR 3]", "envase": "[IMAGEN O DESCRIPCION]", "pvp": "[PRECIO]"}
+    ],
+    "categoria": "[CATEGORIA DE PRODUCTO]",
+    "canal": "[DONDE COMPARTIS ESPACIO: LINEAL, MARKETPLACE, TIENDA ESPECIALIZADA]",
+    "objetivo": "[QUE QUIERES CONSEGUIR: PARECER MAS PREMIUM, MAS NATURAL, MAS BARATO, MAS SERIO]"
+  },
+  "analisis": [
+    "Identificar los codigos de la categoria: colores, tipografias, imagenes y recursos que se repiten en casi todos",
+    "Separar codigos obligatorios (si los rompes no te reconocen) de codigos rutinarios (se pueden romper sin riesgo)",
+    "Situar cada envase en dos ejes: percepcion de precio y percepcion de naturalidad o tecnicismo",
+    "Detectar en que se confunde el envase propio con cada competidor",
+    "Comprobar si el precio percibido por el envase encaja con el PVP real",
+    "Proponer tres vias de diferenciacion con su coste estimado de aplicacion: bajo, medio o alto"
+  ],
+  "formato_salida": {
+    "tabla_comparativa": "filas por marca y columnas: color dominante, tipografia, imagen principal, promesa del frontal, precio percibido de 1 a 5",
+    "mapa_de_posicionamiento": "descripcion en texto de los dos ejes y donde cae cada marca",
+    "hueco_libre": "que espacio visual no ocupa nadie en esta categoria",
+    "tres_vias": "cada via con: en que consiste, que se cambia del envase actual, riesgo y coste",
+    "recomendacion": "una sola via elegida y por que, en cinco lineas"
+  },
+  "restricciones": [
+    "No proponer cambios que obliguen a cambiar de formato o de proveedor salvo que se diga expresamente",
+    "No confundir diferenciarse con ser raro: la propuesta debe seguir siendo reconocible en la categoria",
+    "Si solo hay descripciones y no imagenes, indicar el nivel de confianza del analisis"
+  ],
+  "criterios_calidad": [
+    "La recomendacion final es una sola y esta justificada",
+    "Se distingue entre lo que hay que respetar y lo que se puede romper",
+    "Cada via se puede empezar el lunes siguiente"
+  ],
+  "tono": "analitico y sin florituras"
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Disenar una migracion de esquema versionada con script de subida y script de vuelta atras",
+  "contexto": {
+    "motor_bd": "[POSTGRESQL / MYSQL / SQL SERVER / MARIADB / SQLITE]",
+    "herramienta_migraciones": "[FLYWAY / LIQUIBASE / ALEMBIC / PRISMA / KNEX / SOLO SQL A MANO]",
+    "entorno_destino": "[DESARROLLO / PREPRODUCCION / PRODUCCION]",
+    "filas_aproximadas": "[NUMERO DE FILAS DE LA TABLA MAS GRANDE AFECTADA]",
+    "parada_permitida": "[MINUTOS DE CORTE ACEPTABLES O CERO]"
+  },
+  "entradas": {
+    "esquema_actual": "[PEGA EL CREATE TABLE O DESCRIBE LAS TABLAS IMPLICADAS]",
+    "cambio_deseado": "[NUEVA COLUMNA, CAMBIO DE TIPO, INDICE, TABLA NUEVA, RENOMBRADO...]",
+    "quien_usa_esas_tablas": "[PANTALLAS, INFORMES O PROCESOS QUE LEEN O ESCRIBEN AHI]"
+  },
+  "instrucciones": [
+    "Empieza diciendo si el cambio es compatible hacia atras o rompe el codigo actual",
+    "Escribe el script de subida con sentencias idempotentes cuando el motor lo permita",
+    "Escribe el script de vuelta atras que deshaga lo anterior sin perder datos creados entretanto",
+    "Si el cambio destruye datos, sustituye el borrado por un renombrado a columna o tabla de respaldo",
+    "Indica el orden de despliegue respecto a la aplicacion: primero base de datos o primero codigo",
+    "Anade consultas de verificacion que confirmen que la migracion quedo bien aplicada"
+  ],
+  "restricciones": [
+    "Prohibido DROP COLUMN y DROP TABLE en el script de subida",
+    "Avisa explicitamente si alguna sentencia no puede ir dentro de una transaccion",
+    "Nombra los ficheros con fecha, hora y descripcion en minusculas separada por guiones bajos",
+    "No inventes columnas ni tablas que no aparezcan en el esquema que te doy"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["Resumen y nivel de riesgo", "Fichero de subida", "Fichero de vuelta atras", "Orden de despliegue", "Comprobaciones posteriores"]
+  },
+  "criterios_calidad": [
+    "El script de vuelta atras deja la base de datos exactamente como estaba",
+    "Cada sentencia lleva una linea explicando en castellano llano que hace",
+    "Se avisa de bloqueos de tabla previsibles y de cuanto pueden durar"
+  ],
+  "tono": "Tecnico pero explicado para alguien que no es administrador de bases de datos"
+}

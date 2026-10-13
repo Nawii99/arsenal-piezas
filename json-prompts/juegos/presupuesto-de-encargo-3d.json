@@ -1,0 +1,40 @@
+{
+  "tarea": "Convertir la peticion de un cliente de 3D en un presupuesto cerrado con alcance, entregables, revisiones y pagos",
+  "contexto": {
+    "tipo_de_encargo": "[MODELADO / TEXTURIZADO / ANIMACION / RENDERS / RETOPOLOGIA / ESCANEO]",
+    "cliente": "[NOMBRE Y SECTOR]",
+    "tu_tarifa_hora": "[EUROS POR HORA]",
+    "tu_disponibilidad": "[HORAS POR SEMANA]"
+  },
+  "entradas": {
+    "peticion_literal": "[COPIA EL EMAIL O EL MENSAJE DEL CLIENTE TAL CUAL]",
+    "referencias": "[ENLACES O DESCRIPCION DE LO QUE LE GUSTA]",
+    "uso_final": "[WEB / JUEGO / ANUNCIO / IMPRESION / CATALOGO]",
+    "plazo_pedido": "[FECHA]",
+    "presupuesto_del_cliente": "[IMPORTE O NO LO HA DICHO]"
+  },
+  "pasos": [
+    "1. Traduce la peticion a un alcance en frases medibles: cuantas piezas, cuantos planos, cuantos segundos, que resolucion",
+    "2. Marca todo lo que la peticion no aclara y escribe las preguntas exactas que hay que hacer antes de firmar",
+    "3. Divide el trabajo en fases con horas estimadas por fase y un rango optimista y pesimista",
+    "4. Fija los entregables por fase: formatos de archivo, resolucion, si se entregan las fuentes o solo el resultado",
+    "5. Limita las revisiones: cuantas incluidas por fase, que se considera revision y que se considera cambio de alcance",
+    "6. Lista los extras que se cobran aparte con su precio: cambio de concepto, urgencia, entrega de archivos fuente, cesion de derechos ampliada",
+    "7. Propon calendario de pagos con senal por adelantado y pago final antes de entregar los archivos finales",
+    "8. Redacta el presupuesto listo para enviar y una version corta para WhatsApp"
+  ],
+  "restricciones": [
+    "El precio sale de horas por tarifa mas extras; nada de cifras redondas sin desglose",
+    "No incluyas cesion de derechos ilimitada por defecto: siempre como partida aparte",
+    "Nada de trabajo previo gratis como prueba mas alla de una imagen de estilo"
+  ],
+  "formato_salida": {
+    "bloques": ["Resumen del encargo entendido", "Preguntas antes de aceptar", "Tabla de fases con horas y precio", "Entregables", "Revisiones incluidas", "Extras y su precio", "Calendario y forma de pago", "Validez del presupuesto", "Version corta para mensaje"],
+    "tabla": ["Fase", "Que se hace", "Horas", "Importe", "Entregable"]
+  },
+  "criterios_calidad": [
+    "Cualquiera que lea el alcance sabe decir si un cambio esta dentro o fuera",
+    "Hay al menos cinco preguntas que evitan malentendidos caros",
+    "Los extras cubren los tres motivos habituales de conflicto: cambios, prisas y archivos fuente"
+  ]
+}

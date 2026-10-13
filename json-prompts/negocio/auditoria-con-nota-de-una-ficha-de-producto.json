@@ -1,0 +1,40 @@
+{
+  "tarea": "Auditar una ficha de producto publicada y devolver una lista priorizada de mejoras",
+  "contexto": {
+    "producto": "[NOMBRE DEL PRODUCTO]",
+    "url": "[URL DE LA FICHA]",
+    "precio": "[PRECIO]",
+    "visitas_y_ventas_ultimos_30_dias": "[SI LOS TIENES]"
+  },
+  "entradas": {
+    "texto_actual_de_la_ficha": "[PEGA AQUI TITULO, BULLETS Y DESCRIPCION]",
+    "n_fotos_y_que_muestran": "[DESCRIBELAS]",
+    "tiene_opiniones": "[SI O NO Y CUANTAS]",
+    "ficha_de_un_competidor": "[PEGA AQUI UNA FICHA QUE SI VENDE]"
+  },
+  "puntos_a_revisar": [
+    "Titulo: identifica producto, marca y atributo clave",
+    "Primera pantalla: precio, foto, disponibilidad y boton de compra visibles sin bajar",
+    "Bullets: beneficios concretos con dato detras",
+    "Descripcion: responde para quien es, como se usa y que incluye",
+    "Especificaciones: medidas, materiales y compatibilidad completas",
+    "Confianza: envio, devolucion, garantia y opiniones",
+    "Dudas sin resolver que obligan al cliente a preguntar",
+    "Textos duplicados del fabricante o de otra ficha tuya"
+  ],
+  "formato_salida": {
+    "nota_global": "de 0 a 10",
+    "tabla_por_apartado": "columnas apartado, nota, que falla, arreglo concreto, impacto alto medio o bajo, esfuerzo",
+    "top_3_arreglos": "lo que harias esta misma semana",
+    "reescritura": "version corregida del titulo y de los bullets"
+  },
+  "restricciones": [
+    "Cada fallo se acompana siempre de la correccion escrita, no solo del diagnostico",
+    "No inventar datos del producto que no esten en la ficha aportada",
+    "Ser directo: si algo esta bien, decirlo en una linea y pasar al siguiente punto"
+  ],
+  "criterios_calidad": [
+    "Cualquier arreglo se puede aplicar sin ayuda tecnica",
+    "La prioridad se justifica por su efecto en la decision de compra"
+  ]
+}

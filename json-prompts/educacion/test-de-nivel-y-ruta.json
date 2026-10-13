@@ -1,0 +1,50 @@
+{
+  "tarea": "Crear un cuestionario de diagnóstico previo que sitúe al alumno en un nivel y le devuelva una ruta de aprendizaje personalizada.",
+  "contexto": {
+    "materia": "[TEMA DE LA FORMACIÓN]",
+    "programas_disponibles": "[LISTA DE TUS CURSOS, TALLERES O RECURSOS Y PARA QUIÉN ES CADA UNO]",
+    "niveles_a_distinguir": "[NORMALMENTE 3 O 4: DESDE CERO, HA PROBADO, YA FACTURA...]",
+    "donde_se_rellena": "[FORMULARIO WEB / MENSAJE / EN LA PRIMERA CLASE]",
+    "preguntas_maximas": "[ENTRE 7 Y 12]"
+  },
+  "entradas": {
+    "senales_de_cada_nivel": "[QUÉ HACE Y QUÉ NO HACE ALGUIEN DE CADA NIVEL, CON EJEMPLOS REALES]",
+    "errores_de_colocacion": "[CASOS EN QUE ALGUIEN SE CREYÓ DE OTRO NIVEL Y SE FRUSTRÓ]"
+  },
+  "proceso": [
+    "1. Define los niveles por lo que la persona YA HA HECHO, no por lo que cree saber. Autoevaluarse es poco fiable.",
+    "2. Escribe para cada nivel dos o tres señales observables ('ya ha cobrado a un cliente', 'tiene la web publicada').",
+    "3. Convierte cada señal en una pregunta de hecho, con respuestas cerradas y sin escalas del 1 al 10.",
+    "4. Añade 2 preguntas de situación (mini caso con opciones) para detectar a quien sobreestima su nivel.",
+    "5. Añade 2 preguntas de contexto: tiempo semanal disponible y presupuesto para herramientas. Condicionan la ruta tanto como el nivel.",
+    "6. Diseña el sistema de puntuación: qué respuestas suman a qué nivel y qué respuesta es determinante (una sola señal puede mandar a un nivel).",
+    "7. Escribe el resultado que ve cada perfil: dónde está, qué le falta, por dónde empezar y qué NO tiene que hacer todavía.",
+    "8. Asocia a cada perfil el recurso o programa que le corresponde, incluyendo el caso 'aún no te hace falta comprar nada'.",
+    "9. Prueba el cuestionario con 5 personas conocidas de niveles distintos y ajusta los cortes."
+  ],
+  "restricciones": [
+    "Nada de preguntas que solo sirvan para halagar o para vender.",
+    "Máximo 3 minutos de relleno.",
+    "Ningún resultado deja a la persona sin siguiente paso gratuito.",
+    "Pide solo los datos personales que vayas a usar y di para qué."
+  ],
+  "formato_salida": {
+    "bloque_1": "Definición de niveles con sus señales observables.",
+    "bloque_2": "Cuestionario listo para copiar: preguntas y opciones.",
+    "bloque_3": "Tabla de puntuación: Pregunta | Opción | Puntos por nivel | Regla determinante.",
+    "bloque_4": "Texto de resultado por perfil: diagnóstico, ruta de 3 pasos, qué evitar, recurso recomendado.",
+    "bloque_5": "Mensaje de seguimiento para enviar 48 horas después según el perfil."
+  },
+  "criterios_calidad": [
+    "Dos personas del mismo nivel real salen colocadas en el mismo sitio.",
+    "Cada resultado dice algo que la persona no sabía de sí misma.",
+    "La ruta se puede empezar hoy mismo sin pagar nada.",
+    "Ningún perfil recibe un programa que le queda grande o pequeño."
+  ],
+  "errores_tipicos": [
+    "Preguntar '¿cuál es tu nivel?' y fiarse de la respuesta.",
+    "Que todos los caminos lleven al mismo curso caro: se nota y quema la confianza.",
+    "Cuestionarios de 25 preguntas que nadie termina.",
+    "Dar un resultado genérico tipo horóscopo."
+  ]
+}

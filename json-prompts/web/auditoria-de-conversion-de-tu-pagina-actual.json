@@ -1,0 +1,41 @@
+{
+  "tarea": "Auditar una página de aterrizaje existente y devolver una lista priorizada de mejoras accionables",
+  "entradas": {
+    "pagina": "[PEGA AQUÍ TODO EL TEXTO DE LA PÁGINA O LA URL]",
+    "objetivo": "[QUÉ QUIERES QUE HAGA EL VISITANTE]",
+    "trafico": "[DE DÓNDE LLEGA Y CON QUÉ ANUNCIO O BÚSQUEDA]",
+    "datos": "[VISITAS AL MES, CONVERSIONES, PORCENTAJE MÓVIL SI LO SABES]",
+    "quejas_o_dudas_frecuentes": "[LO QUE MÁS TE PREGUNTAN ANTES DE COMPRAR]"
+  },
+  "revisar_en_este_orden": [
+    "Claridad: en 5 segundos se entiende qué es, para quién y qué hacer",
+    "Coherencia entre la promesa del anuncio y el titular",
+    "Propuesta de valor: resultado concreto frente a frases genéricas",
+    "Llamada a la acción: cuántas hay, dónde están, qué texto llevan",
+    "Fricción del formulario: número de campos y datos que se piden de más",
+    "Prueba social: existe, es creíble, está cerca de los botones",
+    "Objeciones sin responder: precio, plazos, garantía, quién está detrás",
+    "Jerarquía visual: qué se lee primero y qué compite con el botón",
+    "Móvil: qué se ve sin bajar, tamaño de botones, formularios largos",
+    "Velocidad y peso de imágenes",
+    "Confianza y legal: datos fiscales, contacto real, privacidad y cookies"
+  ],
+  "errores_tipicos_a_buscar": [
+    "Menú de navegación que se lleva al visitante fuera de la página",
+    "Titular que habla del negocio y no del cliente",
+    "Botón 'Enviar' o 'Contactar' sin decir qué pasa después",
+    "Testimonios anónimos o sin resultado",
+    "Formularios con teléfono obligatorio sin explicar para qué",
+    "Carrusel en la parte de arriba que nadie mira entero"
+  ],
+  "formato_salida": {
+    "resumen": "3 líneas: qué falla más y qué se está perdiendo por ello",
+    "tabla": ["Problema", "Dónde está", "Impacto (alto/medio/bajo)", "Esfuerzo (alto/medio/bajo)", "Cambio exacto a hacer", "Texto nuevo propuesto"],
+    "plan": "Los 5 arreglos de esta semana en orden y qué mirar después de cada uno"
+  },
+  "restricciones": [
+    "No opines sobre gustos de diseño sin relacionarlo con conversión",
+    "Si falta un dato para juzgar algo, dilo en vez de suponer"
+  ],
+  "criterios_calidad": ["Cada punto trae el texto o el cambio ya redactado, no un consejo genérico"]
+}

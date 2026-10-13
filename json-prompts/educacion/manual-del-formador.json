@@ -1,0 +1,52 @@
+{
+  "tarea": "Escribir el manual del formador para que otra persona imparta un taller propio con la misma calidad, sin haberlo diseñado.",
+  "contexto": {
+    "taller": "[NOMBRE, DURACIÓN Y FORMATO]",
+    "perfil_de_quien_imparte": "[QUÉ SABE Y QUÉ NO SABE LA PERSONA QUE LO DARÁ]",
+    "publico": "[A QUIÉN SE IMPARTE Y QUÉ NIVEL TRAE]",
+    "materiales": "[DIAPOSITIVAS, CUADERNO, PLANTILLAS, EQUIPO NECESARIO]",
+    "donde_se_imparte": "[EN EMPRESA / SALA ALQUILADA / ONLINE]"
+  },
+  "entradas": {
+    "guion_o_minutado_actual": "[LO QUE HACES TÚ HOY, AUNQUE ESTÉ EN TU CABEZA: DESCRÍBELO]",
+    "preguntas_que_siempre_salen": "[LISTA CON TU RESPUESTA HABITUAL]",
+    "momentos_delicados": "[DONDE LA SALA SE ATASCA, SE PONE TENSA O SE DISPERSA]"
+  },
+  "proceso": [
+    "1. Separa lo que es intocable (objetivo, ejercicios, entregable, orden) de lo que cada formador puede adaptar (ejemplos, anécdotas, ritmo).",
+    "2. Escribe el minutado bloque a bloque con el objetivo de cada bloque en una línea: qué tiene que haber pasado al terminarlo.",
+    "3. Para cada bloque incluye: consigna literal del ejercicio, ejemplo resuelto, tiempo, y las dos frases clave que no se pueden dejar de decir.",
+    "4. Escribe el banco de respuestas: pregunta frecuente, respuesta corta, respuesta ampliada y qué NO decir.",
+    "5. Documenta los momentos delicados con el guion de reacción: qué hacer si nadie participa, si alguien monopoliza, si el nivel es más bajo del esperado, si sobran 20 minutos, si faltan 20.",
+    "6. Prepara la lista de montaje: qué llevar, qué preparar la víspera, comprobaciones 30 minutos antes y qué se entrega a los asistentes.",
+    "7. Define el estándar de calidad: 5 cosas que deben pasar sí o sí para considerar que el taller salió bien.",
+    "8. Añade el protocolo de después: cómo recoger valoraciones, qué reportar y a quién.",
+    "9. Diseña la formación del formador: qué debe ver, ensayar y hacer en sombra antes de impartir solo."
+  ],
+  "restricciones": [
+    "Escrito para alguien que no estuvo en el diseño: nada de referencias implícitas.",
+    "Cada instrucción es accionable; nada de 'crea un buen ambiente'.",
+    "Marca claramente lo que se puede improvisar y lo que no.",
+    "El manual cabe en un documento que se puede leer entero en 45 minutos."
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha del taller: objetivo, público, entregable, duración, materiales.",
+    "bloque_2": "Minutado: Bloque | Minutos | Objetivo | Qué dice el formador | Qué hacen los asistentes | Intocable o adaptable.",
+    "bloque_3": "Banco de preguntas y respuestas.",
+    "bloque_4": "Guiones de reacción para situaciones difíciles.",
+    "bloque_5": "Listas de montaje: víspera, 30 minutos antes, al terminar.",
+    "bloque_6": "Estándar de calidad y plan de formación del nuevo formador."
+  },
+  "criterios_calidad": [
+    "Una persona competente pero ajena puede impartirlo tras leerlo y ensayar una vez.",
+    "No queda ningún bloque sin objetivo ni sin consigna literal.",
+    "Las situaciones difíciles tienen respuesta escrita, no 'usa el sentido común'.",
+    "El estándar de calidad se puede comprobar desde fuera."
+  ],
+  "errores_tipicos": [
+    "Entregar solo las diapositivas y llamarlo manual.",
+    "Dar libertad total y que cada formador imparta otra cosa.",
+    "Olvidar el montaje y los imprevistos, que es donde se estropean los talleres.",
+    "No dejar espacio para que el formador use sus propios ejemplos: sonará falso."
+  ]
+}

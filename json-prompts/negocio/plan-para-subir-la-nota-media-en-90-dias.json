@@ -1,0 +1,34 @@
+{
+  "tarea": "Calcular el esfuerzo necesario para subir la nota media y montar un plan de 90 días",
+  "entradas": {
+    "nota_actual": "[EJ: 3,9]",
+    "numero_resenas": "[EJ: 84]",
+    "nota_objetivo": "[EJ: 4,5]",
+    "clientes_al_mes": "[NÚMERO]",
+    "resenas_nuevas_al_mes": "[NÚMERO ACTUAL]",
+    "causas_de_las_malas": "[LOS 3 MOTIVOS PRINCIPALES]"
+  },
+  "proceso": [
+    "Calcula cuántas reseñas de 5 estrellas hacen falta para llegar al objetivo y muestra la cuenta",
+    "Traduce ese número a reseñas por mes y al porcentaje de clientes que deben dejarla",
+    "Di sin rodeos si el objetivo es alcanzable en 90 días o hace falta más tiempo",
+    "Ataca primero las causas de las malas: sin eso, cada nueva mala borra el avance",
+    "Reparte el plan en 3 meses con un objetivo medible por mes",
+    "Añade un aviso si el ritmo pedido supera lo razonable para el volumen de clientes"
+  ],
+  "restricciones": [
+    "Nada de comprar reseñas, incentivarlas ni pedirlas a conocidos",
+    "No prometer posiciones en Google ni aumentos de ventas",
+    "Si el objetivo no es realista, decirlo y proponer uno alcanzable"
+  ],
+  "formato_salida": {
+    "calculo": "La cuenta explicada en 3 líneas y el número final de reseñas necesarias",
+    "veredicto": "Realista, ajustado o inviable, con la alternativa razonable",
+    "tabla_meses": "Mes | Objetivo de reseñas | Acciones | Causa de quejas a corregir | Cómo se mide",
+    "riesgos": "3 cosas que pueden tirar el plan abajo y qué hacer"
+  },
+  "criterios_calidad": [
+    "Los números cuadran y se pueden comprobar a mano",
+    "El plan combina conseguir buenas y dejar de generar malas"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar un cluster temático (página pilar más contenidos satélite) y el plan de enlazado interno que concentre autoridad en la página que vende",
+  "contexto": {
+    "tema_central": "[TEMA PRINCIPAL DEL CLUSTER]",
+    "pagina_que_vende": "[URL DE SERVICIO O PRODUCTO A EMPUJAR]",
+    "negocio": "[QUÉ VENDES]"
+  },
+  "entradas": {
+    "contenidos_actuales": "[LISTA: URL | TÍTULO | TEMA QUE TRATA]",
+    "keywords_del_cluster": ["[KEYWORD PILAR]", "[SATÉLITE 1]", "[SATÉLITE 2]", "[SATÉLITE 3]"]
+  },
+  "pasos": [
+    "Define la página pilar: qué keyword ataca, qué cubre en amplitud y qué deja para los satélites",
+    "Asigna cada URL existente a un satélite; marca las que sobran o se solapan",
+    "Detecta canibalizaciones: dos páginas que atacan lo mismo. Decide fusionar, redirigir o diferenciar y explica cuál",
+    "Lista los satélites que faltan por crear, con su keyword y una frase de enfoque",
+    "Traza los enlaces: cada satélite enlaza al pilar y al menos a otro satélite hermano; el pilar enlaza a todos",
+    "Redacta el texto de enlace exacto para cada enlace, variado y descriptivo",
+    "Ordena la ejecución por semanas según impacto y esfuerzo"
+  ],
+  "restricciones": [
+    "Nada de textos de enlace tipo 'haz clic aquí' ni el mismo texto repetido en todos los enlaces",
+    "Máximo 3 enlaces internos nuevos por artículo para que no quede forzado",
+    "No propongas fusionar páginas que reciben tráfico distinto sin avisar del riesgo"
+  ],
+  "formato_salida": {
+    "bloques": ["Esquema del cluster en lista jerárquica", "Tabla de decisiones sobre contenidos actuales (mantener, fusionar, redirigir, borrar)", "Tabla de enlaces: origen, destino, texto de enlace, dónde colocarlo", "Contenidos a crear con keyword y enfoque", "Plan de ejecución por semanas"],
+    "estilo": "markdown con tablas"
+  },
+  "criterios_calidad": [
+    "La página que vende recibe enlaces desde todos los satélites",
+    "Ninguna keyword queda asignada a dos páginas",
+    "Cada decisión de fusionar o redirigir explica qué se gana"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir una propuesta comercial que venda el trabajo antes de enseñar el precio",
+  "contexto": {
+    "quien_soy": "[TU NOMBRE O EMPRESA Y AÑOS DE EXPERIENCIA]",
+    "cliente": "[EMPRESA DEL CLIENTE Y SECTOR]",
+    "persona_que_decide": "[NOMBRE Y CARGO]",
+    "problema_detectado": "[LO QUE TE CONTÓ EN LA REUNIÓN, CON SUS PALABRAS]",
+    "objetivo_del_cliente": "[QUÉ QUIERE CONSEGUIR Y PARA CUÁNDO]",
+    "solucion_propuesta": "[QUÉ VAS A HACER TÚ]",
+    "precio": "[IMPORTE Y FORMA DE PAGO]",
+    "pruebas": "[CASOS, CLIENTES PARECIDOS O RESULTADOS QUE PUEDAS ENSEÑAR]"
+  },
+  "secuencia_obligatoria": [
+    "1. Situación actual descrita con las palabras del cliente, sin adornar",
+    "2. Qué pasa si no se hace nada, en tiempo, dinero o riesgo",
+    "3. Objetivo medible que perseguís juntos",
+    "4. Cómo lo vas a hacer, en fases numeradas con un entregable y un plazo por fase",
+    "5. Qué necesitas del cliente para que salga bien",
+    "6. Prueba de que sabes hacerlo",
+    "7. Inversión y opciones de pago",
+    "8. Siguiente paso con fecha"
+  ],
+  "restricciones": [
+    "Prohibidas las palabras sinergia, holístico, líder del sector y solución integral",
+    "Ningún adjetivo sin un dato detrás",
+    "Máximo dos páginas equivalentes",
+    "El precio no aparece hasta el punto 7"
+  ],
+  "formato_salida": "Propuesta en Markdown, con un título por sección y viñetas cortas",
+  "criterios_calidad": [
+    "Alguien que no estuvo en la reunión entiende el encargo al leerla",
+    "Cada fase tiene entregable y plazo",
+    "El cliente reconoce su propio problema, no un texto genérico"
+  ],
+  "tono": "De profesional que ya ha hecho esto antes: seguro y sin vender humo"
+}

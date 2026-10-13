@@ -1,0 +1,39 @@
+{
+  "tarea": "Diseñar y ejecutar las comprobaciones de control que validan un fichero después de limpiarlo o transformarlo",
+  "contexto": {
+    "transformaciones_aplicadas": "[QUÉ LE HAS HECHO: DEDUPLICAR, UNIR FICHEROS, NORMALIZAR IMPORTES, FILTRAR...]",
+    "uso_final": "[GESTORÍA, BANCO, INFORME DE DIRECCIÓN, CARGA EN OTRA HERRAMIENTA]",
+    "consecuencia_de_un_error": "[QUÉ PASA SI EL DATO ESTÁ MAL]"
+  },
+  "entradas": {
+    "resumen_original": "[FILAS, SUMA DE IMPORTES, NÚMERO DE CLIENTES Y RANGO DE FECHAS DEL FICHERO ORIGINAL]",
+    "resumen_limpio": "[LOS MISMOS DATOS DEL FICHERO YA LIMPIO]",
+    "muestra_limpia": "[PEGA 20 FILAS DEL FICHERO FINAL]"
+  },
+  "comprobaciones": [
+    "Conteo: filas antes y después, con explicación de cada fila desaparecida",
+    "Cuadre de importes: la suma total debe coincidir salvo por lo que se haya descartado a propósito",
+    "Cobertura temporal: el mismo primer y último día, y ningún mes con cero filas si antes tenía",
+    "Unicidad: ninguna clave de negocio repetida en el fichero final",
+    "Tipos y rangos: importes numéricos, fechas válidas, porcentajes entre cero y cien",
+    "Coherencia entre columnas: totales que cuadran con cantidad por precio",
+    "Prueba del ojo: diez filas al azar comparadas una a una con el origen"
+  ],
+  "restricciones": [
+    "Una diferencia solo se acepta si está explicada; si no, es un fallo",
+    "No des por bueno el fichero si falla cualquier comprobación de cuadre de dinero"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "Semáforo: se puede usar, usar con reservas o no usar",
+      "Tabla: comprobación | valor esperado | valor obtenido | diferencia | resultado",
+      "Explicación de cada diferencia detectada",
+      "Qué corregir antes de darlo por bueno, en orden"
+    ]
+  },
+  "criterios_calidad": [
+    "Ninguna comprobación se marca como correcta sin cifra que lo respalde",
+    "El veredicto final es una sola frase clara"
+  ]
+}

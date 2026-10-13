@@ -1,0 +1,58 @@
+{
+  "tarea": "Montar un control de gasto para servicios de pago por consumo: inventario, techos, alertas y plan de reacción",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y CUÁNTO FACTURAS AL MES APROXIMADAMENTE]",
+    "servicios": "[LISTA DE SERVICIOS QUE PAGAS: HOSTING, API DE IA, BASE DE DATOS, CORREO, ALMACENAMIENTO, DOMINIOS]",
+    "tope_mensual": "[CUÁNTO PUEDO GASTAR AL MES SIN QUE ME DUELA] euros",
+    "tope_de_panico": "[CIFRA A PARTIR DE LA CUAL QUIERO QUE SE APAGUE ALGO] euros",
+    "perfil": "sin perfil técnico: las alarmas deben poder configurarse desde paneles web"
+  },
+  "entradas": {
+    "facturas": "[IMPORTES DE LOS ÚLTIMOS 3 MESES POR SERVICIO, SI LOS TENGO]",
+    "tarjeta": "[TARJETA O CUENTA CON LA QUE SE PAGA Y SI TIENE LÍMITE]",
+    "quien_recibe_avisos": "[CORREO Y TELÉFONO DONDE QUIERO LAS ALERTAS]"
+  },
+  "procedimiento": [
+    "1. Inventario real: entra en cada panel y apunta servicio, plan, modelo de cobro (fijo, por uso, por usuario), importe del último mes y fecha de renovación",
+    "2. Clasifica cada servicio en: imprescindible para facturar, útil, y dormido (no lo usa nadie desde hace más de 30 días)",
+    "3. Marca cuáles pueden dispararse solos: todo lo que cobre por peticiones, por tokens, por gigabytes salidos o por correos enviados",
+    "4. Para cada servicio disparable, busca en su panel si permite límite duro (corta el servicio) o solo aviso, y anótalo: la diferencia es la que te salva",
+    "5. Configura tres avisos por servicio: al 50 por ciento del tope, al 80 y al 100, con destino al correo y al móvil",
+    "6. Pon un tope duro donde el proveedor lo permita, y donde no lo permita, usa una tarjeta virtual o prepago con límite mensual",
+    "7. Define el plan de reacción: qué apago primero, qué no se puede apagar nunca y a quién aviso",
+    "8. Calcula el coste por venta: gasto mensual dividido entre pedidos o clientes del mes, para saber si el consumo tiene sentido",
+    "9. Fija una revisión mensual de 20 minutos con fecha en el calendario"
+  ],
+  "que_mirar": [
+    "Pruebas gratis que se convierten en plan de pago en una fecha concreta",
+    "Cobros por transferencia de datos de salida, que suelen ser el sobrecoste invisible",
+    "Entornos de pruebas encendidos que nadie usa y siguen facturando",
+    "Copias de seguridad y logs guardados para siempre, que crecen sin parar",
+    "Servicios contratados en dólares: el importe en euros varía con el cambio",
+    "Quién más tiene acceso a crear recursos con esa tarjeta"
+  ],
+  "errores_tipicos": [
+    "Confundir aviso con límite: el aviso llega, la factura también",
+    "Poner la alerta en un correo que nadie mira",
+    "Dejar la clave de API de IA en un sitio público y financiar el consumo de un desconocido",
+    "Apagar el servicio equivocado en caliente y tirar la web durante horas"
+  ],
+  "restricciones": [
+    "No proponer cambios de plan sin decir qué se pierde al bajar",
+    "Cifras solo a partir de las facturas aportadas: nada de estimaciones inventadas",
+    "Todo configurable desde el navegador salvo que se indique lo contrario"
+  ],
+  "formato_salida": {
+    "1_tabla_inventario": "servicio | para qué sirve | tipo de cobro | gasto último mes | ¿se puede disparar? | ¿admite tope duro? | renovación",
+    "2_recortes": "lista de servicios dormidos o sobredimensionados con el ahorro mensual estimado de cada uno",
+    "3_alertas": "instrucciones paso a paso por servicio para dejar configurados los tres avisos",
+    "4_plan_de_panico": "orden exacto de apagado con lo que deja de funcionar en cada paso",
+    "5_hoja_mensual": "plantilla corta para apuntar cada mes el gasto por servicio y el coste por venta"
+  },
+  "criterios_calidad": [
+    "Cada servicio del inventario tiene un responsable, una fecha de renovación y un tope",
+    "Existe al menos un límite duro real en los servicios que cobran por uso",
+    "El plan de pánico se puede ejecutar desde el móvil en menos de 10 minutos",
+    "El ahorro propuesto está calculado sobre facturas reales"
+  ]
+}

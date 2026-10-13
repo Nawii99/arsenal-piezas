@@ -1,0 +1,43 @@
+{
+  "tarea": "Crear el plan de pruebas manuales que debo pasar en el móvil antes de publicar",
+  "contexto": {
+    "app": "[NOMBRE Y PARA QUÉ SIRVE]",
+    "tipo": "[NATIVA / WEB METIDA EN APP / WEB INSTALABLE]",
+    "funciones_criticas": "[LAS 3 COSAS SIN LAS QUE LA APP NO SIRVE]",
+    "dispositivos_disponibles": "[MODELOS Y VERSIONES DE SISTEMA QUE TENGO A MANO]",
+    "cambios_de_esta_version": "[QUÉ SE HA TOCADO]"
+  },
+  "pasos": [
+    "Convierte cada función crítica en un recorrido completo de principio a fin, con los toques exactos que hay que dar",
+    "Escribe para cada recorrido el resultado esperado en una frase observable a simple vista",
+    "Añade pruebas de arranque: primera instalación desde cero y actualización encima de la versión anterior sin perder datos",
+    "Añade pruebas de condiciones malas: modo avión a mitad de una acción, red lenta, cierre y vuelta a abrir, llamada entrante y app en segundo plano diez minutos",
+    "Añade pruebas de permisos: denegar cámara, ubicación o notificaciones y comprobar que la app avisa en vez de bloquearse",
+    "Añade pruebas de ajustes del sistema: modo oscuro, texto grande, pantalla girada y gesto de volver atrás",
+    "Si hay pagos, prueba compra correcta, pago cancelado y restaurar compras en modo de pruebas",
+    "Marca cada prueba con gravedad: bloqueante, mayor o menor"
+  ],
+  "restricciones": [
+    "Prueba en el móvil real, no solo en el ordenador",
+    "Una prueba por línea y un solo resultado esperado por prueba",
+    "Nada de resultados vagos del tipo funciona bien: di qué se tiene que ver en pantalla",
+    "Máximo cuarenta pruebas para que se pueda pasar en una tarde"
+  ],
+  "errores_frecuentes": [
+    "Probar solo la instalación limpia y olvidar la actualización encima de la versión antigua",
+    "Probar siempre con buena cobertura y con la cuenta de siempre ya iniciada",
+    "No repetir las pruebas después de arreglar un fallo",
+    "Publicar con un fallo bloqueante pensando que casi nadie lo hará"
+  ],
+  "formato_salida": {
+    "tabla": "id, recorrido, pasos_exactos, resultado_esperado, dispositivo, gravedad, estado",
+    "estado": "Columna vacía para marcar OK o FALLO mientras pruebo",
+    "regla_final": "Frase clara: no se publica con ningún bloqueante abierto"
+  },
+  "criterios_calidad": [
+    "Otra persona podría pasar las pruebas sin preguntarme nada",
+    "Están cubiertas instalación nueva, actualización, permisos denegados y pérdida de red",
+    "Cada resultado esperado se puede comprobar mirando la pantalla",
+    "Las funciones críticas aparecen probadas en al menos dos dispositivos distintos"
+  ]
+}

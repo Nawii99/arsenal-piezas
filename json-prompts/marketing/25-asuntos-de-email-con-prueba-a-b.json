@@ -1,0 +1,38 @@
+{
+  "tarea": "Generar 25 asuntos de email con preencabezado y diseñar una prueba A/B sencilla",
+  "contexto": {
+    "de_que_va_el_email": "[RESUME EL EMAIL EN DOS FRASES]",
+    "oferta_o_contenido": "[QUÉ OFRECES O QUÉ CUENTAS]",
+    "publico": "[QUIÉN RECIBE EL EMAIL Y QUÉ RELACIÓN TIENE CONTIGO]",
+    "remitente": "[NOMBRE QUE APARECE COMO REMITENTE]",
+    "tamano_lista": "[NÚMERO APROXIMADO DE SUSCRIPTORES]",
+    "palabras_prohibidas": "[PALABRAS QUE NO QUIERES USAR NUNCA]"
+  },
+  "angulos": [
+    "Curiosidad honesta: insinúa sin engañar",
+    "Beneficio directo: qué gana quien abre",
+    "Pregunta que el lector se hace de verdad",
+    "Número o lista concreta",
+    "Urgencia real, solo si existe una fecha o un límite",
+    "Personal, como si lo escribiera un amigo",
+    "Contraintuitivo: rompe una creencia habitual del sector",
+    "Objeción: nombra el miedo que frena la compra"
+  ],
+  "instrucciones": [
+    "Reparte los 25 asuntos entre los 8 ángulos y marca a cuál pertenece cada uno",
+    "Longitud entre 25 y 55 caracteres, indica el número de caracteres de cada uno",
+    "Escribe un preencabezado de 40 a 90 caracteres para cada asunto",
+    "Evita mayúsculas sostenidas, varios signos de exclamación y símbolos raros",
+    "Marca con una nota cualquier asunto que pueda parecer publicidad agresiva"
+  ],
+  "formato_salida": {
+    "tabla": ["n", "asunto", "caracteres", "angulo", "preencabezado", "riesgo_spam"],
+    "seleccion": "Los 5 mejores con una frase de por qué",
+    "plan_ab": "Qué dos asuntos enfrentar, a qué porcentaje de la lista, cuántas horas esperar y con qué métrica decidir"
+  },
+  "criterios_calidad": [
+    "Ningún asunto promete algo que el email no cumple",
+    "Los 25 son claramente distintos entre sí, no variaciones de la misma frase",
+    "Se entienden aunque el móvil corte el texto a los 35 caracteres"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "tarea": "Calcular el efecto real de un descuento o promoción en mi margen y decidir si la lanzo, la cambio o la sustituyo",
+  "contexto": {
+    "negocio": "[QUÉ VENDES]",
+    "motivo": "[LIQUIDAR STOCK / ATRAER CLIENTES NUEVOS / FECHA COMERCIAL / PRESIÓN DE LA COMPETENCIA / PETICIÓN DE UN CLIENTE]",
+    "canal": "[TIENDA FÍSICA / WEB / MARKETPLACE / VENTA DIRECTA]"
+  },
+  "entradas": {
+    "producto": "[NOMBRE, PRECIO DE VENTA SIN IVA, COSTE DIRECTO POR UNIDAD]",
+    "descuento_pensado": "[PORCENTAJE O IMPORTE, Y SOBRE QUÉ PRODUCTOS]",
+    "ventas_actuales": "[UNIDADES POR SEMANA O POR MES SIN PROMOCIÓN]",
+    "comisiones": "[PORCENTAJE DE PASARELA O PLATAFORMA]",
+    "costes_de_la_promo": "[ANUNCIOS, ENVÍO GRATIS, CARTELERÍA, HORAS EXTRA]",
+    "stock": "[UNIDADES DISPONIBLES Y SI CADUCA O SE QUEDA ANTIGUO]",
+    "clientes_que_repiten": "[PORCENTAJE APROXIMADO QUE VUELVE A COMPRAR, SI LO SABES]"
+  },
+  "procedimiento": [
+    "1. Calcula el margen unitario actual: precio sin IVA menos coste directo menos comisiones",
+    "2. Calcula el margen con descuento y la caída en porcentaje del margen, no del precio; enseña las dos cifras juntas porque asustan distinto",
+    "3. Calcula las unidades extra necesarias para mantener el mismo beneficio total, en unidades y en porcentaje sobre las ventas actuales",
+    "4. Compara ese porcentaje con lo que sube la venta de verdad en promociones anteriores; si no hay dato, dilo y usa un rango prudente",
+    "5. Resta los costes de la promoción y recalcula el objetivo",
+    "6. Comprueba el suelo: a partir de qué descuento vendes por debajo de coste o dejas de cubrir las comisiones",
+    "7. Valora el efecto colateral: canibalizar ventas que ibas a hacer a precio completo y acostumbrar al cliente a esperar rebaja",
+    "8. Propón tres alternativas que no tocan el precio de tarifa: pack, unidad extra, servicio añadido, descuento condicionado a pago por adelantado o a volumen",
+    "9. Da la recomendación con el descuento máximo defendible y las condiciones que debe llevar"
+  ],
+  "restricciones": [
+    "Todos los cálculos sin IVA y con las comisiones incluidas",
+    "No prometas aumentos de ventas: trabaja con el objetivo necesario, no con el resultado esperado",
+    "No propongas vender por debajo de coste salvo que sea liquidación declarada de stock muerto y dilo",
+    "Si falta el coste directo, no se puede hacer el cálculo: pídelo"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Confundir descuento sobre precio con caída de margen",
+    "Olvidar el coste del envío gratis dentro de la promoción",
+    "Hacer descuento general cuando bastaba con un producto gancho",
+    "Repetir la misma promoción hasta que el precio de tarifa deje de existir"
+  ],
+  "formato_salida": {
+    "1_cuenta": "Tabla con margen actual, margen con descuento, caída del margen en % y unidades extra necesarias",
+    "2_escenarios": "Tres niveles de descuento con su objetivo de ventas y su suelo",
+    "3_riesgos": "Dos o tres efectos colaterales concretos para este negocio",
+    "4_alternativas": "Tres opciones sin tocar tarifa, con su coste y su margen",
+    "5_recomendacion": "Descuento máximo defendible y condiciones que debe llevar",
+    "estilo": "Cuentas a la vista, sin lenguaje de marketing"
+  },
+  "criterios_calidad": [
+    "Aparecen siempre juntas la caída de precio y la caída de margen",
+    "El objetivo de ventas está en unidades y en porcentaje",
+    "Las alternativas son ejecutables con lo que ya tiene el negocio",
+    "Ninguna cifra de aumento de ventas se presenta como segura"
+  ]
+}

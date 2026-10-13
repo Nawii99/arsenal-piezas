@@ -1,0 +1,41 @@
+{
+  "tarea": "Crear un plan de optimización de imágenes para una página web, imagen por imagen, con formato, tamaños y atributos",
+  "contexto": {
+    "url": "[URL DE LA PÁGINA]",
+    "plataforma": "[WORDPRESS / SHOPIFY / WEBFLOW / A MEDIDA]",
+    "herramientas_disponibles": "[SQUOOSH / PLUGIN DE OPTIMIZACIÓN / CDN DE IMÁGENES / NINGUNA]",
+    "nivel_tecnico": "[NO SÉ PROGRAMAR / SÉ TOCAR HTML / TENGO DESARROLLADOR]"
+  },
+  "entradas": {
+    "listado_imagenes": "[NOMBRE, PESO EN KB, MEDIDAS EN PÍXELES Y FORMATO DE CADA IMAGEN, PEGADO DESDE PAGESPEED O DESDE LA PESTAÑA RED DEL NAVEGADOR]",
+    "ancho_hueco_movil": "[ANCHO REAL EN PÍXELES QUE OCUPA CADA IMAGEN EN MÓVIL, SI LO SABES]",
+    "imagen_principal": "[CUÁL ES LA IMAGEN QUE SE VE PRIMERO AL ENTRAR]"
+  },
+  "reglas_del_oficio": [
+    "Una imagen no debe servirse a más del doble del ancho que ocupa en pantalla",
+    "Fotografías en AVIF o WebP con calidad entre 60 y 80; logotipos e iconos en SVG",
+    "La imagen que se ve al entrar nunca lleva carga diferida y sí prioridad alta",
+    "Todas las imágenes llevan ancho y alto declarados para que no salte el diseño",
+    "Las imágenes que están más abajo sí llevan carga diferida"
+  ],
+  "proceso": [
+    "Marca cada imagen como crítica si se ve al entrar o secundaria si hay que bajar para verla",
+    "Calcula el peso objetivo de cada una y compáralo con el actual",
+    "Indica el formato y las medidas de salida, incluidas las versiones para móvil y escritorio",
+    "Escribe la etiqueta lista para pegar con los atributos correctos de tamaño, carga y prioridad",
+    "Suma cuántos kilobytes se ahorran en total y qué porcentaje del peso de la página representa"
+  ],
+  "restricciones": [
+    "No bajes la calidad de las fotos de producto por debajo de lo aceptable para vender",
+    "Si la plataforma genera los tamaños sola, dilo y explica qué ajuste tocar en lugar de dar código"
+  ],
+  "formato_salida": {
+    "tipo": "tabla más código",
+    "columnas": "imagen, uso, peso actual, peso objetivo, formato nuevo, medidas nuevas, atributos y prioridad de cambio",
+    "extra": "bloque final con el ahorro total y los tres cambios que hacer hoy"
+  },
+  "criterios_calidad": [
+    "Cada fila es accionable sin buscar nada más en internet",
+    "El código propuesto se puede pegar tal cual y es válido"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "tarea": "Generar y priorizar un mapa de palabras clave para posicionar mi app en las tiendas, indicando dónde colocar cada término",
+  "rol": "Analista de ASO que trabaja con datos limitados y razona por intención de búsqueda",
+  "contexto": {
+    "app": "[NOMBRE DE TU APP]",
+    "que_hace": "[QUÉ RESUELVE, EN UNA FRASE]",
+    "funciones_principales": "[3 A 5 FUNCIONES CLAVE]",
+    "publico": "[A QUIÉN VA DIRIGIDA Y CÓMO HABLA ESA GENTE]",
+    "mercado": "[PAÍS E IDIOMA]",
+    "competidores": "[3 O 4 APPS COMPETIDORAS]",
+    "palabras_que_ya_tienes": "[TÉRMINOS QUE SE TE OCURREN A TI]"
+  },
+  "metodo": [
+    "Partir de 5 grupos: problema que resuelve, resultado que busca el usuario, categoría, sinónimos coloquiales y marcas o apps de referencia",
+    "Sacar al menos 60 términos y luego agrupar por intención: descubrimiento, comparación o marca",
+    "Marcar cada término como cola corta (1 palabra), media (2) o larga (3 o más)",
+    "Estimar competencia alta, media o baja explicando el motivo, sin inventar cifras de volumen",
+    "Descartar términos prohibidos: nombres de competidores, promesas médicas o legales y superlativos"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla en texto más resumen final",
+    "columnas": [
+      "palabra clave",
+      "intención",
+      "tipo de cola",
+      "relevancia para la app (1 a 5)",
+      "competencia estimada",
+      "prioridad (alta, media, baja)",
+      "dónde colocarla: título, subtítulo, campo de palabras clave, descripción corta o descripción larga"
+    ],
+    "resumen_final": [
+      "Las 5 palabras por las que hay que pelear ahora",
+      "Las 10 de cola larga con las que se puede ganar rápido",
+      "Términos descartados y por qué"
+    ]
+  },
+  "restricciones": [
+    "No inventar volúmenes de búsqueda exactos ni datos de herramientas de pago",
+    "Nada de repetir la misma raíz en más de tres términos prioritarios",
+    "Escribir los términos tal y como los teclearía una persona normal, con y sin tildes"
+  ],
+  "criterios_calidad": [
+    "Que al menos la mitad de la lista sean términos que un usuario escribiría, no jerga interna",
+    "Que cada prioridad alta esté justificada en una línea"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Diseñar el mapeo de columnas entre varios ficheros de distinta procedencia y devolver la tabla unificada",
+  "contexto": {
+    "objetivo": "[QUÉ QUIERES VER CUANDO ESTÉN JUNTOS: VENTAS TOTALES, CLIENTES ÚNICOS, STOCK...]",
+    "periodo": "[FECHAS QUE ABARCAN LOS FICHEROS]"
+  },
+  "entradas": {
+    "fuentes": [
+      {"nombre": "[FUENTE 1, EJ: TIENDA ONLINE]", "cabecera": "[PEGA LA FILA DE CABECERA]", "muestra": "[PEGA 10 FILAS]"},
+      {"nombre": "[FUENTE 2, EJ: MARKETPLACE]", "cabecera": "[PEGA LA FILA DE CABECERA]", "muestra": "[PEGA 10 FILAS]"},
+      {"nombre": "[FUENTE 3, EJ: HOJA DEL COMERCIAL]", "cabecera": "[PEGA LA FILA DE CABECERA]", "muestra": "[PEGA 10 FILAS]"}
+    ],
+    "esquema_destino_deseado": "[COLUMNAS QUE QUIERES AL FINAL, O ESCRIBE PROPONLO TÚ]"
+  },
+  "pasos": [
+    "Proponer el esquema destino con nombres en minúsculas y sin espacios, y el tipo de cada columna",
+    "Mapear cada columna de cada fuente al campo destino, incluidas las que hay que calcular o partir en dos",
+    "Detectar diferencias de significado que parecen iguales: importe con IVA frente a sin IVA, fecha de pedido frente a fecha de cobro, precio unitario frente a total de línea",
+    "Añadir una columna origen para saber siempre de qué fichero viene cada fila",
+    "Definir cómo evitar filas duplicadas cuando un mismo pedido aparece en dos fuentes"
+  ],
+  "restricciones": [
+    "Si dos fuentes no son comparables en un campo, dilo y no las mezcles a la fuerza",
+    "No conviertas divisas ni IVA sin que el usuario lo confirme",
+    "Marca los campos destino que quedan vacíos para alguna fuente"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de mapeo: campo_destino | tipo | fuente_1 | fuente_2 | fuente_3 | transformación necesaria",
+    "bloque_2": "Lista de conflictos y decisiones que debe tomar el usuario, numeradas",
+    "bloque_3": "Tabla unificada en CSV con las filas de la muestra ya transformadas"
+  },
+  "criterios_calidad": [
+    "Toda columna de las fuentes aparece en el mapeo, aunque sea para descartarla con motivo",
+    "Las transformaciones están descritas de forma que se pueden repetir igual el mes que viene"
+  ]
+}

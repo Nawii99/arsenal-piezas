@@ -1,0 +1,37 @@
+{
+  "tarea": "Rediseñar las tareas lentas de [NOMBRE DE TU APLICACIÓN] para que se ejecuten en segundo plano mediante colas",
+  "contexto": {
+    "tecnologia": "[LENGUAJE Y FRAMEWORK], infraestructura [DÓNDE ESTÁ ALOJADO]",
+    "herramientas_disponibles": "[REDIS, RABBITMQ, SQS, EL SISTEMA DE COLAS DE TU FRAMEWORK O NINGUNO AÚN]"
+  },
+  "entradas": {
+    "tareas": [
+      { "nombre": "[TAREA 1, EJEMPLO: ENVIAR EMAIL DE CONFIRMACIÓN]", "tarda": "[SEGUNDOS]", "veces_al_dia": "[NÚMERO]", "urgencia": "[AL INSTANTE, MINUTOS U HORAS]" },
+      { "nombre": "[TAREA 2, EJEMPLO: GENERAR FACTURA EN PDF]", "tarda": "[SEGUNDOS]", "veces_al_dia": "[NÚMERO]", "urgencia": "[AL INSTANTE, MINUTOS U HORAS]" }
+    ],
+    "consecuencia_de_fallo": "[QUÉ PASA SI UNA TAREA NO SE EJECUTA O SE EJECUTA DOS VECES]"
+  },
+  "metodo": [
+    "Decide para cada tarea si va en segundo plano y qué se responde al usuario mientras tanto",
+    "Define colas separadas por urgencia para que un envío masivo no bloquee lo urgente",
+    "Especifica reintentos con espera creciente, número máximo de intentos y cola de tareas fallidas",
+    "Asegura que repetir una tarea no duplique efectos: cobros, correos o pedidos; explica cómo con una clave única",
+    "Indica cómo avisar al usuario del final: recarga automática, correo o aviso en pantalla",
+    "Cubre los fallos típicos: tareas que dependen de datos que ya cambiaron, colas que crecen sin que nadie mire y trabajos que se pierden al reiniciar el servidor"
+  ],
+  "restricciones": [
+    "Sin añadir servicios de pago si se puede evitar",
+    "El cambio debe poder implantarse tarea a tarea, no todo de golpe",
+    "Los pagos y las facturas no pueden duplicarse bajo ningún concepto"
+  ],
+  "formato_salida": {
+    "tipo": "diseño técnico",
+    "secciones": ["Tabla de tareas con cola, prioridad y reintentos", "Flujo antes y después para la tarea más crítica", "Qué se le enseña al usuario mientras espera", "Métricas y alertas de la cola", "Orden de implantación", "Cómo probar que funciona"]
+  },
+  "criterios_calidad": [
+    "Cada tarea indica qué pasa si falla y quién se entera",
+    "Ninguna tarea crítica sin protección contra ejecuciones duplicadas",
+    "El plan permite volver atrás tarea por tarea"
+  ],
+  "tono": "explicativo, con ejemplos del negocio y no solo de código"
+}

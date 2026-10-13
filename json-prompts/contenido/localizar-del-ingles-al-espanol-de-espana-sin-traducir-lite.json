@@ -1,0 +1,41 @@
+{
+  "tarea": "Localizar al español de España un texto escrito en inglés, adaptando sentido, referencias y formatos en lugar de traducir palabra por palabra",
+  "contexto": {
+    "tipo_de_pieza": "[WEB, EMAIL, ANUNCIO, MANUAL, FICHA DE PRODUCTO, INTERFAZ]",
+    "sector": "[SECTOR]",
+    "publico": "[QUIÉN LO LEE EN ESPAÑA Y QUÉ NIVEL TÉCNICO TIENE]",
+    "tratamiento": "[TÚ O USTED]",
+    "mercado_origen": "[PAÍS DEL TEXTO ORIGINAL]"
+  },
+  "entradas": {
+    "texto_original": "[PEGA AQUÍ EL TEXTO EN INGLÉS]",
+    "no_traducir": "[NOMBRES DE MARCA, PRODUCTOS Y BOTONES QUE SE QUEDAN EN INGLÉS]",
+    "limite_de_caracteres": "[SI HAY BOTONES O TITULARES CON LÍMITE, INDÍCALO AQUÍ]"
+  },
+  "reglas_de_localizacion": [
+    "Adaptar unidades: millas a kilómetros, libras a kilos, grados Fahrenheit a Celsius, dólares al precio real en euros si se indica",
+    "Adaptar formatos: fechas en día/mes/año, hora en formato de 24 horas, coma decimal y punto de miles",
+    "Sustituir referencias culturales que aquí no se entienden por equivalentes locales, o eliminarlas si no hay equivalente",
+    "Evitar calcos y falsos amigos habituales como actualmente por currently, eventualmente por eventually o soportar por support",
+    "Reescribir las llamadas a la acción para que suenen naturales, no traducidas: nada de obtén el tuyo hoy",
+    "Tener en cuenta que el español ocupa entre un 15 y un 25 por ciento más que el inglés y recortar donde haya límite de espacio",
+    "Respetar la puntuación española: signos de apertura, comillas latinas, mayúsculas solo en la primera palabra de los títulos"
+  ],
+  "restricciones": [
+    "No traducir los términos de la lista no_traducir",
+    "No añadir promesas, garantías ni datos que no estén en el original",
+    "Nada de anglicismos innecesarios cuando existe palabra en español de uso normal"
+  ],
+  "formato_salida": {
+    "bloque_1": "Texto localizado listo para publicar",
+    "bloque_2": "Tabla de decisiones: fragmento inglés, versión española, tipo de adaptación (unidad, referencia cultural, tono, longitud)",
+    "bloque_3": "Avisos: frases del original que no funcionan en España y por qué",
+    "bloque_4": "Alternativas para titulares y botones que superan el límite de caracteres"
+  },
+  "criterios_calidad": [
+    "Un lector español no puede adivinar que el texto viene del inglés",
+    "Todas las unidades, fechas y precios están en formato español",
+    "El texto respeta el límite de caracteres indicado en cada elemento",
+    "Se mantiene el mensaje comercial original sin exagerarlo"
+  ]
+}

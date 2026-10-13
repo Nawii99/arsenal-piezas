@@ -1,0 +1,43 @@
+{
+  "tarea": "Escribir el guion de un vídeo tutorial interno grabado con captura de pantalla, con locución y acciones sincronizadas",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "herramienta": "[PROGRAMA O SISTEMA QUE SE ENSEÑA]",
+    "tarea_concreta": "[QUÉ SE APRENDE A HACER, EJ: DAR DE ALTA UN CLIENTE Y EMITIR SU PRIMERA FACTURA]",
+    "quien_lo_vera": "[PERFIL Y NIVEL DE LOS ESPECTADORES]",
+    "duracion_objetivo_minutos": "[6]"
+  },
+  "entradas": {
+    "pasos_reales": "[SECUENCIA DE CLICS Y PANTALLAS TAL COMO SE HACE HOY]",
+    "datos_de_ejemplo": "[CLIENTE, PRODUCTO O CASO FICTICIO A USAR EN LA GRABACIÓN]",
+    "puntos_donde_la_gente_se_pierde": "[DUDAS HABITUALES]"
+  },
+  "procedimiento": [
+    "Divide el vídeo en capítulos de 45 a 90 segundos, cada uno con un resultado visible en pantalla",
+    "Para cada capítulo escribe en paralelo la acción en pantalla y la locución palabra por palabra",
+    "Empieza el vídeo mostrando el resultado final en 15 segundos antes de explicar el proceso",
+    "Marca dónde hay que hacer zoom, pausar o poner un rótulo en pantalla",
+    "En los puntos donde la gente se pierde, añade un aviso hablado con qué mirar y qué NO tocar",
+    "Cierra con un resumen de 20 segundos y la tarea que debe hacer el espectador para practicar"
+  ],
+  "restricciones": [
+    "Locución en frases cortas, en presente y tuteando",
+    "Nada de datos reales de clientes: usa siempre el caso de ejemplo indicado",
+    "Nada de leer menús en voz alta: se dice qué se busca, no cada clic obvio"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de guion y anexos",
+    "secciones": [
+      "Tabla: Capítulo | Segundos | Acción en pantalla | Locución literal | Rótulo",
+      "Checklist de preparación antes de grabar (pantalla limpia, datos de prueba, notificaciones)",
+      "Título del vídeo y descripción de 3 líneas para el repositorio interno",
+      "Marcas de tiempo de los capítulos para el reproductor"
+    ]
+  },
+  "criterios_calidad": [
+    "El vídeo se entiende sin sonido gracias a los rótulos",
+    "Nadie tiene que rebobinar: cada paso se ve completo antes de pasar al siguiente",
+    "La duración total no supera la marcada"
+  ],
+  "tono": "claro y tranquilo, sin prisas"
+}

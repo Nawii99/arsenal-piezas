@@ -1,0 +1,34 @@
+{
+  "tarea": "generar_contenido_cv_web",
+  "descripcion": "Organiza los datos de una persona en un JSON listo para rellenar una plantilla de currículum web, sin inventar nada que no se haya dado",
+  "entrada": {
+    "nombre_completo": "[NOMBRE Y APELLIDOS]",
+    "puesto_buscado": "[PUESTO QUE BUSCA]",
+    "ciudad": "[CIUDAD, PAIS]",
+    "email": "[EMAIL DE CONTACTO]",
+    "telefono": "[TELEFONO, OPCIONAL]",
+    "resumen_bruto": "[PEGA AQUI TU EXPERIENCIA EN TUS PALABRAS, SIN ORDENAR]",
+    "formacion_bruta": "[PEGA AQUI TUS ESTUDIOS, SIN ORDENAR]",
+    "habilidades_brutas": "[LISTA LIBRE DE COSAS QUE SABES HACER]"
+  },
+  "instrucciones": [
+    "no inventes empresas, fechas ni titulos que no esten en la entrada",
+    "si falta un dato, deja el campo como cadena vacia, no lo rellenes con un ejemplo",
+    "ordena la experiencia de la mas reciente a la mas antigua",
+    "limita cada descripcion de experiencia a una frase de menos de 25 palabras",
+    "no uses superlativos ni adjetivos que no se puedan comprobar"
+  ],
+  "formato_salida": {
+    "nombre_completo": "string",
+    "puesto_buscado": "string",
+    "contacto": { "ciudad": "string", "email": "string", "telefono": "string" },
+    "resumen_profesional": "string de maximo 50 palabras",
+    "experiencia": [ { "puesto": "string", "empresa": "string", "fechas": "string", "descripcion": "string" } ],
+    "formacion": [ { "titulo": "string", "centro": "string", "fechas": "string" } ],
+    "habilidades": ["string"]
+  },
+  "restricciones": [
+    "no incluir DNI, direccion exacta ni fecha de nacimiento",
+    "la salida debe ser JSON valido, sin comentarios ni texto fuera del JSON"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Revisar la entregabilidad de un envío de email y devolver una lista de comprobaciones con las correcciones concretas, explicadas para alguien sin perfil técnico",
+  "entradas": {
+    "dominio_de_envio": "[EL DOMINIO DESDE EL QUE ENVÍAS, POR EJEMPLO tunegocio.com]",
+    "remitente": "[NOMBRE Y DIRECCIÓN QUE VE EL DESTINATARIO]",
+    "herramienta": "[MAILCHIMP, BREVO, MAILERLITE, ACTIVECAMPAIGN, KLAVIYO U OTRA]",
+    "antiguedad_del_dominio": "[NUEVO, MENOS DE 3 MESES, MÁS DE UN AÑO]",
+    "volumen": "[CUÁNTOS CORREOS ENVÍAS POR ENVÍO Y AL MES]",
+    "origen_de_la_lista": "[ALTAS PROPIAS, COMPRAS, SORTEO, LISTA HEREDADA O COMPRADA]",
+    "correo_a_revisar": "[PEGA AQUÍ EL TEXTO Y DESCRIBE LAS IMÁGENES Y ENLACES]"
+  },
+  "comprobaciones_tecnicas": [
+    "SPF, DKIM y DMARC: explica en una frase qué es cada uno y qué debe pedirle a su proveedor de dominio para activarlo",
+    "Dominio propio en el remitente en vez de gmail.com o hotmail.com",
+    "Enlace de baja visible y funcional en un clic",
+    "Datos de la empresa en el pie: nombre, identificación fiscal y dirección",
+    "Dominio de los enlaces igual al del remitente y sin acortadores"
+  ],
+  "comprobaciones_del_contenido": [
+    "Proporción texto/imagen: al menos el 60% del correo debe ser texto real",
+    "Todas las imágenes con texto alternativo y peso contenido",
+    "Palabras y signos que disparan filtros: gratis, urgente, ganar dinero, exceso de exclamaciones y mayúsculas",
+    "Asunto que no engaña respecto al contenido",
+    "Número de enlaces razonable y ninguno roto",
+    "Versión en texto plano disponible"
+  ],
+  "si_el_dominio_es_nuevo": "Propón un plan de calentamiento de 3 a 4 semanas indicando cuántos correos enviar cada semana y a qué parte de la lista empezar (los que más abren primero)",
+  "formato_salida": "Tabla con columnas: Comprobación | Estado (correcto / a revisar / problema) | Por qué importa en una frase | Qué hacer exactamente. Después: las 3 correcciones urgentes ordenadas y una prueba final de 5 pasos antes de dar a enviar",
+  "restricciones": [
+    "Explica cada término técnico entre paréntesis la primera vez que aparezca",
+    "No des por hecho que tiene acceso al panel del dominio: indica a quién pedírselo",
+    "Nada de garantizar que no caerá en spam; habla de reducir el riesgo"
+  ],
+  "criterios_calidad": [
+    "Todas las acciones se pueden hacer sin escribir código",
+    "Se distingue lo urgente de lo deseable",
+    "Si falta información para juzgar un punto, se marca como 'no verificable' en vez de suponer"
+  ]
+}

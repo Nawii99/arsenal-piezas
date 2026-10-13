@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar la evaluación final de un curso alineada con sus objetivos de aprendizaje",
+  "entradas": {
+    "curso": "[NOMBRE DEL CURSO]",
+    "objetivos": "[PEGA LOS OBJETIVOS DE APRENDIZAJE DEL CURSO]",
+    "numero_preguntas_test": "[Nº DE PREGUNTAS]",
+    "hay_prueba_practica": "[SÍ / NO]",
+    "nota_de_aprobado": "[EJ: 70 POR CIENTO]",
+    "tiempo_examen": "[MINUTOS]"
+  },
+  "reglas_del_test": [
+    "Cada pregunta se vincula a un objetivo concreto: indícalo",
+    "4 opciones, una correcta y tres distractores plausibles basados en errores reales de alumnos",
+    "Prohibidas las opciones todas las anteriores y ninguna de las anteriores",
+    "Prohibido que la opción correcta sea sistemáticamente la más larga",
+    "Reparto: 30 por ciento de recuerdo, 50 por ciento de aplicación a un caso, 20 por ciento de análisis",
+    "Los enunciados de aplicación empiezan con una mini situación de 1 o 2 frases"
+  ],
+  "prueba_practica": [
+    "Un encargo realista con entregable definido",
+    "Instrucciones para el alumno",
+    "Rúbrica de 4 criterios con 4 niveles cada uno y puntos",
+    "Qué constituye un suspenso automático"
+  ],
+  "formato_salida": {
+    "bloque_examen": "Preguntas numeradas listas para copiar, sin las respuestas",
+    "bloque_plantilla": "Plantilla de corrección: respuesta correcta, objetivo evaluado, por qué falla cada distractor",
+    "bloque_practica": "Enunciado y rúbrica en tabla",
+    "bloque_calculo": "Cómo se compone la nota final y qué se necesita para el certificado",
+    "bloque_mapa": "Tabla de cobertura: Objetivo | Nº de preguntas que lo evalúan"
+  },
+  "criterios_calidad": [
+    "Ningún objetivo se queda sin evaluar y ninguno acapara el examen",
+    "Ninguna pregunta se puede acertar sin haber hecho el curso",
+    "Los distractores enseñan algo al corregir"
+  ]
+}

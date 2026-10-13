@@ -1,0 +1,35 @@
+{
+  "tarea": "Escribir el guion de una entrevista corta a un cliente que ha dejado de comprar o ha cancelado",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU NEGOCIO]",
+    "que_vendo": "[PRODUCTO, SERVICIO O SUSCRIPCIÓN]",
+    "tipo_de_baja": "[CANCELACIÓN / NO RENOVACIÓN / CLIENTE INACTIVO DESDE HACE X MESES]",
+    "antiguedad_del_cliente": "[CUÁNTO TIEMPO FUE CLIENTE]",
+    "formato": "[LLAMADA DE 15 MIN / VIDEOLLAMADA / EMAIL CON 5 PREGUNTAS]"
+  },
+  "guion": {
+    "apertura": "3 frases que dejan claro que no se le va a vender nada y cuánto va a durar",
+    "bloque_hechos": "Preguntas sobre qué pasó y cuándo, antes de preguntar por opiniones",
+    "bloque_motivo": "Llegar al motivo real con dos repreguntas del tipo y eso por qué te importaba",
+    "bloque_alternativa": "Qué está usando ahora y qué le da eso que no le dábamos",
+    "bloque_vuelta": "Qué tendría que pasar para que volviera a probarnos",
+    "cierre": "Agradecimiento y permiso para escribirle si se arregla lo que ha contado"
+  },
+  "reglas_de_entrevista": [
+    "Preguntas abiertas, nunca de sí o no",
+    "Prohibido defender el producto o justificar el precio durante la entrevista",
+    "Preguntar por lo que hizo, no por lo que haría en teoría",
+    "Callar después de preguntar y dejar el silencio",
+    "Máximo 8 preguntas en total"
+  ],
+  "entregables": [
+    "Mensaje de invitación a la entrevista, máximo 70 palabras",
+    "Guion completo con las preguntas literales y las repreguntas entre paréntesis",
+    "Plantilla de notas para rellenar durante la conversación",
+    "Versión reducida de 5 preguntas para enviar por email a quien no quiera hablar"
+  ],
+  "criterios_calidad": [
+    "Ninguna pregunta sugiere la respuesta ni culpa al cliente",
+    "El guion se puede seguir en 15 minutos sin agobiar"
+  ]
+}

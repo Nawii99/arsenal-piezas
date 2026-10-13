@@ -1,0 +1,50 @@
+{
+  "tarea": "Prepara la comunicación de una subida de precios a mis clientes actuales: a quién, cuánto, cuándo se lo digo, con qué texto y cómo respondo a las quejas.",
+  "contexto": {
+    "que_vendo": "[SERVICIO O PRODUCTO, Y SI ES RECURRENTE O POR ENCARGO]",
+    "precio_actual": "[PRECIO ACTUAL]",
+    "precio_nuevo": "[PRECIO NUEVO O PORCENTAJE DE SUBIDA]",
+    "desde_cuando_sin_subir": "[AÑOS O MESES]",
+    "motivo_real": "[COSTES, MÁS SERVICIO INCLUIDO, DEMANDA, MEJORA DE CALIDAD]"
+  },
+  "entradas": {
+    "lista_de_clientes": "[NOMBRE, LO QUE PAGA, ANTIGÜEDAD, CUÁNTO TRABAJO ME DA, CÓMO PAGA]",
+    "mejoras_hechas_este_ano": "[QUÉ HAGO AHORA QUE NO HACÍA ANTES]",
+    "riesgo_que_asumo": "[CUÁNTOS CLIENTES PUEDO PERMITIRME PERDER]"
+  },
+  "metodo": [
+    "1. Separa a los clientes en tres grupos: los que están muy por debajo de tarifa, los que están cerca y los que ya pagan bien.",
+    "2. Propón una subida distinta por grupo y un calendario escalonado, empezando por los que menos riesgo tienen.",
+    "3. Fija el preaviso: mínimo 30 días para servicios recurrentes y aplicación en el siguiente ciclo o pedido.",
+    "4. Redacta la carta: nueva tarifa, fecha de entrada, qué mejora recibe y qué opciones tiene si no quiere la subida.",
+    "5. Prepara la versión corta para WhatsApp y la versión hablada para los clientes de confianza, a los que se les cuenta antes por teléfono.",
+    "6. Escribe las respuestas a las cuatro reacciones típicas: es mucho, me voy a la competencia, congélamelo a mí, lo entiendo pero dame plazo.",
+    "7. Define la alternativa que ofreces en vez de descuento: menos alcance por el precio antiguo."
+  ],
+  "errores_a_evitar": [
+    "Pedir perdón o justificarse en exceso: el tono de disculpa invita a negociar.",
+    "Subir a todos lo mismo el mismo día.",
+    "Anunciarlo con menos de un mes de aviso en servicios de cuota.",
+    "Ceder el precio antiguo sin quitar nada a cambio.",
+    "Escribir un texto genérico enviado en copia oculta a toda la cartera."
+  ],
+  "formato_salida": {
+    "plan": "Tabla con cliente, precio actual, precio nuevo, fecha de aviso, fecha de aplicación y riesgo de fuga alto, medio o bajo.",
+    "carta": "Texto de la comunicación en versión email, versión WhatsApp y guion telefónico de 60 segundos.",
+    "objeciones": "Las cuatro reacciones típicas con la respuesta y el límite hasta donde estoy dispuesto a ceder.",
+    "plan_b": "Qué ofrecer al cliente que no acepta, sin regalar el margen."
+  },
+  "restricciones": [
+    "Español de España, tuteo o usted según cada cliente, y tono firme pero cordial.",
+    "La carta, máximo 150 palabras.",
+    "Nada de echar la culpa a terceros de forma vaga ni de inventar datos económicos.",
+    "El motivo que se comunica tiene que ser el motivo real que te he dado."
+  ],
+  "criterios_calidad": [
+    "La carta dice la cifra nueva y la fecha en las tres primeras líneas.",
+    "No aparece la palabra lo siento ni disculpas por la subida.",
+    "Cada respuesta a objeción tiene un límite claro de hasta dónde cedo.",
+    "El calendario empieza por los clientes de menor riesgo."
+  ],
+  "si_faltan_datos": "Si no te paso la lista de clientes, dame el método por grupos y una plantilla que yo pueda rellenar."
+}

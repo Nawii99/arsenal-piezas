@@ -1,0 +1,38 @@
+{
+  "tarea": "Definir los números que debo revisar cada semana y el guion de la reunión para revisarlos en 30 minutos",
+  "rol": "Director de operaciones que monta cuadros de mando sencillos para negocios pequeños",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "objetivo_del_trimestre": "[QUÉ QUIERES CONSEGUIR EN LOS PRÓXIMOS 3 MESES]",
+    "equipo": "[QUIÉN ASISTE A LA REUNIÓN Y DE QUÉ SE ENCARGA]",
+    "herramientas_de_datos": "[TPV, EXCEL, BANCO, WEB, LO QUE TENGAS]"
+  },
+  "entradas": {
+    "datos_disponibles": "[QUÉ DATOS PUEDES SACAR HOY SIN VOLVERTE LOCO]",
+    "problemas_recientes": "[LO QUE SE HA TORCIDO EN LOS ÚLTIMOS MESES]"
+  },
+  "instrucciones": [
+    "Elige entre 5 y 7 indicadores como máximo, mezclando ventas, entrega, calidad y dinero",
+    "Para cada indicador escribe la definición exacta, de dónde sale el dato, quién lo apunta, cada cuánto y el valor que enciende la alarma",
+    "Descarta indicadores que no puedan recogerse en menos de 5 minutos a la semana y dilo",
+    "Incluye al menos un indicador adelantado, que avise antes de que caigan las ventas",
+    "Diseña la plantilla del panel semanal, con columnas para las últimas 6 semanas y una casilla de comentario",
+    "Escribe el guion de la reunión con minutos por bloque y las preguntas exactas que se hacen en cada uno",
+    "Define cómo se cierra la reunión: máximo 3 acciones con responsable y fecha"
+  ],
+  "restricciones": [
+    "Nada de indicadores de vanidad como seguidores o visitas si no se relacionan con ventas",
+    "La reunión no puede pasar de 30 minutos",
+    "Nada de herramientas nuevas: usar lo que ya tengo"
+  ],
+  "formato_salida": {
+    "tipo": "ficha de indicadores, plantilla de panel y guion de reunión",
+    "columnas_tabla": ["Indicador", "Definición", "De dónde sale", "Quién lo apunta", "Objetivo", "Alarma"],
+    "secciones_finales": ["Plantilla del panel semanal", "Guion de la reunión minuto a minuto", "Cómo se cierran los acuerdos"]
+  },
+  "criterios_calidad": [
+    "Todos los indicadores se pueden recoger con lo que ya tengo",
+    "Cada indicador tiene un umbral que dispara una acción",
+    "El guion cabe en una hoja"
+  ]
+}

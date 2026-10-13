@@ -1,0 +1,33 @@
+{
+  "tarea": "Inventariar todo lo digital de un negocio pequeño y clasificar qué necesita copia de seguridad y con qué prioridad",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD DE TU NEGOCIO]",
+    "equipo": "[CUÁNTAS PERSONAS Y QUÉ DISPOSITIVOS USAN]",
+    "herramientas": "[PROGRAMAS Y APPS QUE USÁIS: EJ. GMAIL, DRIVE, SHOPIFY, HOLDED, WHATSAPP BUSINESS, TPV]",
+    "sitios_con_datos": "[ORDENADORES, MÓVILES, NAS, DISCOS USB, NUBE, PAPEL]",
+    "responsable_actual": "[QUIÉN SE ENCARGA HOY DE LAS COPIAS, SI ALGUIEN]"
+  },
+  "pasos": [
+    "Recorre el día a día del negocio (vender, cobrar, atender, entregar, declarar impuestos) y anota qué dato o sistema hace falta en cada paso",
+    "Añade los olvidos habituales: buzón de correo, contactos, facturas emitidas y recibidas, contraseñas, dominio y web, base del TPV, listas de clientes, certificado digital y firma, contratos, nóminas, fotos de producto y plantillas",
+    "Anota para cada activo: dueño, dónde vive hoy, si tiene copia y de qué tipo",
+    "Clasifica por impacto: crítico (el negocio para), importante (molesta mucho), prescindible",
+    "Señala los activos que solo existen en un sitio: ahí está el riesgo real"
+  ],
+  "restricciones": [
+    "No propongas herramientas de pago sin decir antes qué se consigue con lo que ya está contratado",
+    "No des por hecho que la nube ya hace copia: distingue sincronizar de copiar con historial",
+    "Lenguaje llano; si usas un término técnico, explícalo en cinco palabras"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown mas dos listas",
+    "columnas": ["Activo", "Dónde está hoy", "Dueño", "¿Tiene copia?", "Impacto si se pierde", "Prioridad 1-3"],
+    "listas": ["Puntos únicos de fallo (críticos y sin copia)", "Cinco acciones para esta semana ordenadas por urgencia"]
+  },
+  "criterios_calidad": [
+    "Aparecen al menos 15 activos y ninguno es genérico tipo archivos",
+    "Cada activo crítico sin copia lleva una acción concreta asociada",
+    "Queda clara la diferencia entre sincronización y copia de seguridad"
+  ],
+  "tono": "Directo, de asesor que ya ha visto a mucha gente perder datos"
+}

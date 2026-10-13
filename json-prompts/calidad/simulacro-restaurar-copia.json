@@ -1,0 +1,40 @@
+{
+  "tarea": "Comprobar que puedo recuperar mi web, tienda o datos a partir de las copias de seguridad, midiendo cuánto tardo y qué se pierde por el camino",
+  "contexto": {
+    "que_tengo_montado": "[WORDPRESS / SHOPIFY / WEB EN HTML / HOJAS DE CÁLCULO / HERRAMIENTA NO CODE]",
+    "donde_estan_las_copias": "[PANEL DEL HOSTING / PLUGIN / DRIVE / DISCO / NO LO SÉ]",
+    "cada_cuanto_se_hacen": "[DIARIA / SEMANAL / CUANDO ME ACUERDO]",
+    "que_no_puedo_perder": "[PEDIDOS, CLIENTES, FACTURAS, FOTOS, TEXTOS, CONTRASEÑAS]"
+  },
+  "pasos": [
+    "1. Haz inventario: qué se copia hoy, qué NO se copia (correo, facturas, catálogos en otra herramienta, dominios) y quién tiene los accesos.",
+    "2. Escribe dos números antes de empezar: cuántas horas puedes estar caído y cuántas horas de datos puedes perder.",
+    "3. Descarga una copia a tu ordenador y comprueba que se abre y pesa lo razonable: una copia de 2 kB no es una copia.",
+    "4. Restaura en un sitio aparte: subdominio de pruebas, hosting temporal o tienda en modo borrador. Nunca encima de lo bueno.",
+    "5. Cronometra desde que empiezas hasta que la copia funciona.",
+    "6. Comprueba en la copia restaurada: entras al panel, se ven los pedidos recientes, las fotos cargan, el formulario envía y el pago está configurado.",
+    "7. Apunta qué falta: normalmente los correos, los archivos subidos del último día o alguna conexión con otra herramienta.",
+    "8. Anota qué contraseñas y accesos necesitaste y dónde estaban: si están solo en tu cabeza, tienes un problema.",
+    "9. Corrige lo que falle y repite el simulacro hasta que salga a la primera.",
+    "10. Guarda el procedimiento escrito paso a paso, para poder seguirlo con prisa y nervios."
+  ],
+  "errores_tipicos": [
+    "Tener copias activadas y no haber restaurado ninguna nunca.",
+    "Guardar la copia en el mismo sitio que la web: si cae el hosting, cae todo.",
+    "Restaurar encima del original y romper también lo que quedaba.",
+    "Olvidar el dominio y el correo, que no van en la copia de la web.",
+    "No tener a mano los accesos cuando llega el susto."
+  ],
+  "formato_salida": {
+    "inventario": "Qué se copia, dónde, cada cuánto, y qué se queda fuera",
+    "acta_del_simulacro": "Fecha, minutos empleados, qué funcionó y qué faltó",
+    "huecos": "Riesgo detectado, consecuencia si pasa, arreglo concreto",
+    "procedimiento": "Pasos numerados para restaurar, con accesos necesarios y a quién avisar"
+  },
+  "criterios_calidad": [
+    "La restauración se ha hecho en un entorno aparte, no sobre el original.",
+    "Hay un tiempo medido, no una estimación.",
+    "El procedimiento lo puede seguir alguien que no seas tú.",
+    "Están identificados los datos que NO entran en la copia."
+  ]
+}

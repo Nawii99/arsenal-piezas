@@ -1,0 +1,35 @@
+{
+  "tarea": "Generar la lista de preparación previa (home staging ligero) de una vivienda que se va a fotografiar, estancia por estancia, más el mensaje de aviso al propietario",
+  "contexto": "Casi todo el trabajo de una buena foto inmobiliaria se hace antes de disparar: despejar, ordenar, igualar luces y quitar lo personal",
+  "entradas": {
+    "tipo_vivienda": "[PISO / CHALET / ÁTICO / ESTUDIO]",
+    "estado": "[HABITADA / VACÍA / ALQUILER TURÍSTICO / OBRA NUEVA]",
+    "estancias": "[LISTA DE ESTANCIAS]",
+    "estilo": "[MODERNO / RÚSTICO / CLÁSICO / NÓRDICO]",
+    "destinatario_aviso": "[PROPIETARIO / AGENCIA / INQUILINO]",
+    "dias_de_antelacion": "[NÚMERO DE DÍAS]"
+  },
+  "procedimiento": [
+    "Para cada estancia lista qué hay que RETIRAR (imanes de nevera, productos de limpieza, alfombrillas de baño, toallas usadas, cables, papeleras, comida a la vista, fotos familiares, juguetes)",
+    "Lista qué hay que ORDENAR o COLOCAR (cojines mullidos y en su sitio, sillas alineadas, cama hecha con ropa lisa, cortinas abiertas y simétricas, tapa del váter bajada)",
+    "Lista qué hay que ENCENDER O APAGAR: todas las bombillas de la misma estancia encendidas, televisión apagada, extractor apagado, ventiladores parados",
+    "Añade la limpieza crítica: cristales, espejos, grifería y suelos, porque son lo que más se nota en la foto",
+    "Marca con prioridad ALTA lo que arruina la foto si no se hace y con MEDIA lo que solo mejora",
+    "Redacta el mensaje de aviso al destinatario, en tono amable, con la lista resumida en 8 puntos y la hora a la que hay que tenerlo listo"
+  ],
+  "restricciones": [
+    "No proponer cambios de obra, pintura ni compra de muebles",
+    "No pedir al propietario nada que no se pueda hacer en menos de una hora",
+    "Respetar la privacidad: todo lo que identifique a la familia se guarda, no se fotografía"
+  ],
+  "formato_salida": {
+    "bloque_1": "Checklist por estancia con casillas [ ] y etiqueta de prioridad",
+    "bloque_2": "Lista corta de material que lleva el fotógrafo (bayeta, limpiacristales, bombillas de repuesto de luz cálida, pinzas)",
+    "bloque_3": "Mensaje listo para copiar y enviar por WhatsApp o email al destinatario"
+  },
+  "criterios_calidad": [
+    "Ninguna tarea dura más de 10 minutos",
+    "El mensaje se lee en menos de un minuto y no suena exigente",
+    "Están cubiertas todas las estancias indicadas"
+  ]
+}

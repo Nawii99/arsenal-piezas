@@ -1,0 +1,32 @@
+{
+  "tarea": "Disenar un plan de sesion de fotos de comida realizable con movil dentro del propio local, minuto a minuto",
+  "contexto": {
+    "negocio": "[TIPO DE NEGOCIO: BAR, RESTAURANTE, CAFETERIA, PASTELERIA, FOOD TRUCK]",
+    "platos": "[LISTA DE PLATOS Y BEBIDAS A FOTOGRAFIAR]",
+    "tiempo": "[HORAS DISPONIBLES Y FRANJA HORARIA]",
+    "espacios_con_luz": "[MESAS O ZONAS CERCA DE VENTANA, ORIENTACION SI SE SABE]",
+    "equipo_disponible": "[MODELO DE MOVIL, TRIPODE, CARTULINAS, PERSONAL QUE AYUDA]"
+  },
+  "metodo": [
+    "Ordenar los platos de menos a mas perecedero: fritos y helados al final, ensaladas y guisos primero",
+    "Montar un unico set junto a ventana y mover los platos, no el set",
+    "Cada plato: 6 disparos (cenital, 45 grados, ras de mesa, detalle macro, plano con manos, plano con contexto de mesa)",
+    "Bloquear exposicion y enfoque tocando la parte mas clara del plato y bajando un poco el brillo",
+    "Usar cartulina blanca de rebote en el lado opuesto a la ventana para abrir las sombras"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla en markdown mas checklist final",
+    "columnas": ["Hora", "Plato", "Quien lo emplata", "Set y fondo", "Angulos a disparar", "Props", "Notas"],
+    "extras": ["Lista de la compra de props y fondos baratos", "Ajustes exactos del movil", "Plan B si el dia esta nublado o hay que disparar de noche"]
+  },
+  "restricciones": [
+    "Sin equipo de estudio ni flash: solo luz natural, cartulinas y lo que hay en el local",
+    "La cocina no puede parar mas de [MINUTOS] seguidos",
+    "Cada plato fotografiado debe poder servirse o aprovecharse despues"
+  ],
+  "criterios_calidad": [
+    "El plan cabe en el tiempo indicado con margen del 20 por ciento",
+    "Cada plato sale con al menos un plano vertical y uno cuadrado",
+    "Cualquiera del equipo puede seguirlo sin saber de fotografia"
+  ]
+}

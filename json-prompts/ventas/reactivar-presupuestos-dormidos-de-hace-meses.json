@@ -1,0 +1,35 @@
+{
+  "tarea": "Redactar un mensaje de reactivación para un presupuesto antiguo que quedó sin respuesta",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "canal": "[WHATSAPP O EMAIL]",
+    "tiempo_transcurrido": "[MESES DESDE EL ÚLTIMO CONTACTO]"
+  },
+  "entradas": {
+    "cliente": "[NOMBRE Y A QUÉ SE DEDICA]",
+    "lo_que_pidio": "[QUÉ PRESUPUESTASTE Y POR CUÁNTO]",
+    "motivo_del_silencio": "[LO QUE CREES QUE PASÓ, O 'NO LO SÉ']",
+    "novedad_real": "[QUÉ HA CAMBIADO DE VERDAD: NUEVO SERVICIO, HUECO EN AGENDA, CASO PARECIDO, PRECIO NUEVO]"
+  },
+  "instrucciones": [
+    "Empieza recordando en una línea quién eres y de qué hablasteis, sin reproches por el silencio",
+    "El motivo de escribir tiene que ser la novedad real, no 'quería saber cómo lo llevas'",
+    "Baja la presión: deja claro que si ya no le interesa, no pasa nada y no volverás a insistir",
+    "Pide algo mínimo: una respuesta de una palabra o elegir entre dos opciones",
+    "Genera 3 versiones: una neutra, una con caso parecido y una con fecha o hueco concreto"
+  ],
+  "restricciones": [
+    "Máximo 80 palabras por versión",
+    "Sin emoticonos en exceso, sin mayúsculas gritonas y sin 'oferta solo por hoy'",
+    "No dar por hecho que sigue necesitándolo"
+  ],
+  "formato_salida": {
+    "por_version": ["nombre de la versión", "cuándo usarla", "asunto (si es email)", "mensaje listo para copiar"],
+    "final": "Una línea de seguimiento para enviar 5 días después si no contesta, y la señal que indica que hay que cerrar el contacto definitivamente"
+  },
+  "criterios_calidad": [
+    "Se lee en menos de 20 segundos",
+    "No parece un mensaje masivo: menciona algo concreto de ese cliente",
+    "Contestar cuesta menos esfuerzo que ignorarlo"
+  ]
+}

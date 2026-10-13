@@ -1,0 +1,53 @@
+{
+  "tarea": "Auditar un modelo 3D antes de entregarlo o publicarlo y devolver un informe de arreglos ordenado por gravedad",
+  "contexto": {
+    "quien_lo_pide": "[TU NOMBRE O ESTUDIO], hago 3D sin formacion tecnica formal",
+    "programa": "[BLENDER / MAYA / 3DS MAX / ZBRUSH / OTRO]",
+    "destino_del_modelo": "[ENTREGA A CLIENTE / TIENDA DE ASSETS / MOTOR UNITY O UNREAL / RENDER / IMPRESION 3D]",
+    "plazo": "[FECHA DE ENTREGA]"
+  },
+  "entradas": {
+    "archivo": "[NOMBRE Y FORMATO DEL ARCHIVO]",
+    "estadisticas": "[TRIANGULOS TOTALES, NUMERO DE OBJETOS, NUMERO DE MATERIALES]",
+    "texturas": "[LISTA DE TEXTURAS CON TAMANO EN PIXELES Y FORMATO]",
+    "escala_y_unidades": "[METROS / CENTIMETROS / NO LO SE]",
+    "capturas_o_descripcion": "[PEGA LO QUE VES: OUTLINER, PANEL DE ESTADISTICAS, VISTA DE MALLA]",
+    "requisitos_recibidos": "[LIMITE DE POLIGONOS, FORMATOS PEDIDOS, TAMANO MAXIMO DE TEXTURA, NOMENCLATURA EXIGIDA]"
+  },
+  "lista_de_comprobacion": [
+    "Escala real: un objeto de 1 metro debe medir 1 metro al importarlo; si mide 100 o 0.01 hay las unidades mal",
+    "Transformaciones aplicadas: escala 1 1 1 y rotacion 0 0 0 en todos los objetos antes de exportar",
+    "Origen del objeto en la base o en el centro logico, no perdido a 40 metros del modelo",
+    "Normales hacia fuera y sin caras invertidas; se ve activando el sombreado de caras",
+    "Geometria suelta: vertices dobles, caras interiores que no se ven y objetos huerfanos que solo suman peso",
+    "Ngons y triangulos en zonas que se deforman o se suavizan; ahi hacen falta quads limpios",
+    "UVs sin solapes involuntarios, con margen entre islas y densidad parecida entre piezas",
+    "Materiales con nombres claros, sin duplicados vacios ni rutas de textura rotas",
+    "Texturas en potencias de dos y con sufijo de canal: base, normal, rugosidad, metalico",
+    "Nombres y jerarquia: nada llamado Cube.003; nombres descriptivos y agrupados por pieza",
+    "Peso del archivo y del paquete final frente al limite del destino",
+    "Animacion si la hay: ciclos que cierran, sin deriva de la raiz y huesos con nombre"
+  ],
+  "pasos": [
+    "1. Clasifica cada punto de la lista en CORRECTO, DUDOSO o FALLO con los datos dados",
+    "2. Para cada FALLO explica que se rompe en la practica y donde se nota",
+    "3. Da el arreglo en pasos de menu del programa indicado, sin scripts ni addons de pago",
+    "4. Ordena por gravedad: primero lo que impide entregar, luego lo que da mala impresion, luego lo cosmetico",
+    "5. Estima minutos por arreglo y suma un total",
+    "6. Marca lo que no se puede juzgar y di exactamente que captura o dato falta"
+  ],
+  "restricciones": [
+    "No inventes datos del archivo: lo que falte va al apartado de pendientes",
+    "Cada termino tecnico se explica en media linea la primera vez que aparece"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en texto mas lista de pendientes",
+    "columnas": ["Punto revisado", "Estado", "Que se rompe", "Como se arregla", "Minutos"],
+    "cierre": ["Semaforo global VERDE AMBAR o ROJO para entregar", "Tiempo total estimado", "Datos que faltan"]
+  },
+  "criterios_calidad": [
+    "Cada FALLO trae un arreglo que se puede seguir sin conocimientos previos",
+    "El semaforo global es coherente con los fallos listados",
+    "Ningun punto queda en DUDOSO sin decir que dato lo resolveria"
+  ]
+}

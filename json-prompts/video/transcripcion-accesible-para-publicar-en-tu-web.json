@@ -1,0 +1,34 @@
+{
+  "tarea": "Convertir la transcripción de un vídeo en una página de transcripción accesible lista para publicar",
+  "contexto": {
+    "titulo_video": "[TÍTULO DEL VÍDEO]",
+    "web": "[NOMBRE DE TU WEB O BLOG]",
+    "tema": "[DE QUÉ VA]",
+    "palabras_clave": "[2 O 3 BÚSQUEDAS QUE TE INTERESAN]"
+  },
+  "entradas": {
+    "transcripcion": "[PEGA AQUÍ LA TRANSCRIPCIÓN O EL SRT]",
+    "hablantes": "[NOMBRE Y CARGO DE CADA PERSONA]",
+    "elementos_visuales": "[GRÁFICOS, PANTALLAZOS, DEMOSTRACIONES O ROTULOS QUE APARECEN]"
+  },
+  "restricciones": [
+    "No cambies lo que se dice: limpia muletillas, repeticiones y frases cortadas, nada más",
+    "Marca cada intervención con el nombre del hablante en negrita",
+    "Añade marcas de tiempo cada 1 o 2 minutos, no en cada frase",
+    "Describe entre corchetes lo que solo se ve, por ejemplo [en pantalla: gráfico de ventas por mes]",
+    "Divide en apartados con encabezados descriptivos, no genéricos",
+    "Frases cortas y párrafos de máximo 4 líneas",
+    "Sin jerga innecesaria y con las siglas explicadas la primera vez"
+  ],
+  "formato_salida": {
+    "bloque_1": "resumen del vídeo en 4 o 5 líneas",
+    "bloque_2": "índice con los apartados y su marca de tiempo",
+    "bloque_3": "transcripción completa en Markdown con encabezados, hablantes y descripciones visuales",
+    "bloque_4": "texto alternativo propuesto para la miniatura y meta descripción de la página"
+  },
+  "criterios_calidad": [
+    "Alguien que no vea ni oiga el vídeo se entera de todo leyendo la página",
+    "Los encabezados permiten navegar de un vistazo y con lector de pantalla",
+    "Las palabras clave aparecen de forma natural, sin repetirlas forzando"
+  ]
+}

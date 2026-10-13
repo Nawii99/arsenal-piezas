@@ -1,0 +1,43 @@
+{
+  "tarea": "Convertir una tarea que hace el dueño en un procedimiento escrito que otra persona pueda ejecutar sola",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "tarea_a_delegar": "[NOMBRE DE LA TAREA]",
+    "quien_la_hace_hoy": "[NOMBRE]",
+    "quien_la_hara": "[PUESTO O PERSONA]",
+    "frecuencia": "[DIARIA / SEMANAL / MENSUAL]",
+    "tiempo_que_lleva": "[MINUTOS U HORAS]"
+  },
+  "entradas": {
+    "como_lo_haces_hoy": "[EXPLÍCALO COMO TE SALGA, AUNQUE SEA DESORDENADO]",
+    "herramientas_y_accesos": ["[HERRAMIENTA 1]", "[HERRAMIENTA 2]"],
+    "resultado_bien_hecho": "[CÓMO SABES QUE ESTÁ BIEN]",
+    "errores_que_ya_han_pasado": ["[ERROR 1]", "[ERROR 2]"],
+    "decisiones_que_no_puede_tomar_sola": ["[DECISIÓN QUE TE CONSULTA]"]
+  },
+  "pasos": [
+    "Ordenar el proceso en pasos numerados que empiecen por un verbo",
+    "Marcar en cada paso la herramienta, el tiempo estimado y dónde está el archivo o el acceso",
+    "Separar lo que decide sola de lo que tiene que consultar, con el criterio exacto",
+    "Añadir los errores típicos y cómo se detectan antes de que lleguen al cliente",
+    "Cerrar con una lista de comprobación final y una prueba corta para validar que lo ha entendido"
+  ],
+  "restricciones": [
+    "Ningún paso da por sabido nada: si hay que abrir una herramienta, se dice cuál y dónde",
+    "Sin jerga interna sin explicar",
+    "Máximo 15 pasos; si salen más, dividir en dos procedimientos",
+    "No incluir contraseñas ni datos sensibles en el documento"
+  ],
+  "formato_salida": {
+    "cabecera": "Nombre, objetivo, quién lo hace, cada cuánto, tiempo estimado y última actualización",
+    "pasos": "Lista numerada con herramienta y tiempo por paso",
+    "decisiones": "Tabla de qué decide sola y qué consulta, con el criterio",
+    "errores_frecuentes": "Error, cómo se detecta y cómo se corrige",
+    "checklist_final": "Puntos a verificar antes de dar la tarea por terminada",
+    "prueba": "Cinco preguntas para comprobar que la persona lo ha entendido"
+  },
+  "criterios_calidad": [
+    "Alguien que entra hoy podría hacerlo con el documento delante y sin preguntarte",
+    "Cada paso tiene un resultado visible al terminarlo"
+  ]
+}

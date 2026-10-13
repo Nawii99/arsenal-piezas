@@ -1,0 +1,40 @@
+{
+  "tarea": "Escribe un script de Python que lea mi fichero de datos, calcule los indicadores del periodo y genere un informe en PDF con gráficas",
+  "entradas": {
+    "fichero_datos": "[RUTA DEL CSV O EXCEL]",
+    "columnas": "[EJ. fecha, cliente, producto, unidades, importe]",
+    "periodo": "[MES ACTUAL / ÚLTIMOS 90 DÍAS]",
+    "destinatario": "[YO / MI SOCIO / MI ASESOR]"
+  },
+  "indicadores_a_calcular": [
+    "Total facturado del periodo y variación frente al periodo anterior",
+    "Ticket medio y número de pedidos",
+    "Top 10 productos por importe y por unidades",
+    "Top 10 clientes y qué porcentaje suponen sobre el total",
+    "Evolución diaria o semanal del importe",
+    "Clientes que compraron el periodo anterior y este no"
+  ],
+  "graficas": [
+    "Línea de evolución temporal del importe",
+    "Barras horizontales del top 10 de productos",
+    "Barras comparando este periodo con el anterior",
+    "Un solo color de marca [COLOR HEX], sin efectos 3D ni gráficos de quesitos"
+  ],
+  "requisitos_tecnicos": [
+    "pandas para los cálculos y matplotlib para las gráficas",
+    "PDF de varias páginas generado desde el propio script",
+    "Ejes etiquetados en español y separador de miles con punto",
+    "Si faltan columnas o el periodo no tiene datos, aborta con un mensaje claro"
+  ],
+  "formato_salida": {
+    "1_codigo": "Script informe_mensual.py comentado en español",
+    "2_estructura_pdf": "Portada con el periodo, página de indicadores, páginas de gráficas y anexo de datos",
+    "3_instalacion": "Comandos exactos de instalación",
+    "4_personalizacion": "Qué líneas tocar para cambiar periodo, colores o logotipo"
+  },
+  "criterios_calidad": [
+    "Los números del PDF cuadran con una suma manual del fichero",
+    "El informe se entiende sin explicaciones añadidas",
+    "Se genera con un solo comando y siempre igual"
+  ]
+}

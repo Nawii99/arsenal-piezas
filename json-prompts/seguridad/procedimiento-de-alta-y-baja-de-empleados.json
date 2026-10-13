@@ -1,0 +1,37 @@
+{
+  "tarea": "Crea el procedimiento interno de alta y baja de personas (onboarding y offboarding) centrado en accesos, dispositivos y datos",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "puestos_tipicos": "[p. ej. comercial, tecnico de taller, administracion]",
+    "sistemas_y_cuentas": "[LISTA: correo, Drive, CRM, banco, TPV, redes sociales, movil de empresa, llaves fisicas]",
+    "responsable_sistemas": "[NOMBRE O ROL]",
+    "responsable_rrhh": "[NOMBRE O ROL]",
+    "preaviso_habitual": "[DIAS]"
+  },
+  "entregables": [
+    "Checklist de ALTA con tareas antes del primer dia, el primer dia y la primera semana",
+    "Checklist de BAJA con tareas el ultimo dia y en las 24 horas siguientes",
+    "Checklist de BAJA URGENTE por despido o conflicto, a ejecutar en menos de 1 hora",
+    "Tabla de permisos por puesto: que accesos le tocan y cuales no"
+  ],
+  "para_cada_tarea_indica": ["que se hace", "quien la hace", "cuando", "como se deja constancia"],
+  "errores_tipicos_a_cubrir": [
+    "Cuentas compartidas cuyo password no se cambia al irse alguien",
+    "Correo del que se va reenviado sin plazo ni control",
+    "Accesos al banco, al TPV o a las redes sociales que nadie recuerda",
+    "Movil o portatil devuelto sin borrar ni comprobar",
+    "Ficheros de clientes guardados en el Drive personal del empleado",
+    "Licencias de pago que se siguen facturando tras la baja"
+  ],
+  "restricciones": [
+    "Espanol de Espana, lenguaje llano, sin terminos tecnicos sin explicar",
+    "Solo pasos que una persona sin perfil tecnico pueda ejecutar o encargar",
+    "Nada de recomendar herramientas de pago sin decir la alternativa manual"
+  ],
+  "formato_salida": "Tablas en Markdown con columnas Paso / Responsable / Plazo / Evidencia, mas un apartado final de 5 lineas titulado Que revisar cada trimestre",
+  "criterios_calidad": [
+    "Ningun paso depende de conocimiento que solo tenga la persona que se va",
+    "La baja urgente se puede ejecutar leyendo solo esa tabla",
+    "Cada acceso listado en el contexto aparece en alta y en baja"
+  ]
+}

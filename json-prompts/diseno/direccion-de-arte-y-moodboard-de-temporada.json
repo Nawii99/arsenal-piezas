@@ -1,0 +1,33 @@
+{
+  "tarea": "Definir la direccion de arte fotografica de la coleccion [NOMBRE DE LA COLECCION] de [NOMBRE DE TU MARCA]",
+  "entradas": {
+    "posicionamiento": "[PRECIO Y POSICIONAMIENTO: asequible, medio, premium]",
+    "cliente_ideal": "[QUIEN COMPRA: edad, estilo de vida, referentes]",
+    "sensacion_buscada": "[TRES ADJETIVOS]",
+    "referencias": "[2 O 3 MARCAS QUE TE GUSTAN VISUALMENTE]",
+    "lo_que_no_quieres": "[ESTILOS QUE RECHAZAS]"
+  },
+  "decisiones_a_cerrar": [
+    "Paleta de fondos y atrezo con codigos de color aproximados",
+    "Tipo de luz dominante y su direccion",
+    "Distancia emocional: mirada a camara o escena observada",
+    "Grado de estilismo: minimo, medio o editorial",
+    "Tratamiento de color en revelado: contraste, saturacion y tono de piel"
+  ],
+  "formato_salida": {
+    "bloque_1": "ficha de estilo en 10 lineas, una decision por linea",
+    "bloque_2": "tabla de si y no con 8 filas: que aparece siempre y que no aparece nunca",
+    "bloque_3": "12 descripciones de imagen para montar el moodboard, cada una en una frase",
+    "bloque_4": "parrafo de 60 palabras para enviar a un fotografo o a una IA como estilo base"
+  },
+  "restricciones": [
+    "Coherente con el precio de la marca: nada de lujo falso si vendes asequible",
+    "Cada decision debe poder comprobarse mirando una foto, sin conceptos abstractos",
+    "No copiar campanas concretas de otras marcas, solo tomar el criterio"
+  ],
+  "criterios_calidad": [
+    "Dos personas distintas producirian fotos parecidas siguiendo la ficha",
+    "Se puede decir si una foto entra o no entra en la coleccion en 10 segundos",
+    "El estilo funciona igual en ficha de producto que en redes"
+  ]
+}

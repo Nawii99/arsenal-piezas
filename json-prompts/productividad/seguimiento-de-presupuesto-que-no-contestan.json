@@ -1,0 +1,35 @@
+{
+  "tarea": "Escribir una secuencia de cuatro correos de seguimiento para un presupuesto enviado que no ha recibido respuesta",
+  "contexto": {
+    "yo": "[TU NOMBRE] de [NOMBRE DE TU EMPRESA]",
+    "cliente": "[NOMBRE DE LA PERSONA Y EMPRESA]",
+    "que_presupueste": "[SERVICIO O PRODUCTO Y ALCANCE]",
+    "importe": "[IMPORTE O RANGO]",
+    "fecha_de_envio": "[FECHA]",
+    "lo_que_hablamos_antes": "[DUDAS QUE PLANTEO, PLAZOS QUE PEDIA, QUIEN DECIDE]",
+    "validez_de_la_oferta": "[FECHA LIMITE O CONDICION QUE CAMBIA]"
+  },
+  "pasos": [
+    "Definir el objetivo de cada correo: recordar sin presionar, aportar valor nuevo, resolver la objecion probable y cerrar dando salida elegante",
+    "Para el correo 2 elegir un aporte real: un caso parecido, una alternativa mas barata o una aclaracion del alcance",
+    "Para el correo 3 nombrar la objecion mas probable segun el contexto y desactivarla",
+    "Para el correo 4 escribir un cierre que permita decir que no sin incomodidad y deje la puerta abierta",
+    "Proponer los dias de envio de cada correo contados desde el envio del presupuesto"
+  ],
+  "restricciones": [
+    "Nada de urgencias falsas ni descuentos que no me hayas visto autorizar",
+    "Maximo 90 palabras por correo y una sola pregunta al final",
+    "Cada correo se entiende solo, sin obligar a releer los anteriores",
+    "Prohibido escribir solo queria saber si has visto mi correo como unico contenido"
+  ],
+  "formato_salida": {
+    "tipo": "cuatro fichas de correo",
+    "cada_ficha": ["Numero y dia de envio", "Objetivo en una linea", "Dos opciones de asunto", "Cuerpo listo para enviar"],
+    "al_final": ["Calendario resumen en tabla", "Que hacer si contesta que no hay presupuesto y que hacer si pide rebaja"]
+  },
+  "criterios_calidad": [
+    "Ningun correo repite el argumento de otro",
+    "El tono sube en firmeza pero nunca en reproche",
+    "El ultimo correo deja la relacion intacta aunque no compre"
+  ]
+}

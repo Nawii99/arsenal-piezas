@@ -1,0 +1,44 @@
+{
+  "tarea": "Diseñar la pantalla de pago de mi app y la tabla de planes",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ RESUELVE]",
+    "que_se_cobra": "[SUSCRIPCIÓN / PAGO ÚNICO / CONSUMIBLES]",
+    "valor_para_el_usuario": "[QUÉ CONSIGUE PAGANDO QUE NO CONSIGUE GRATIS]",
+    "limite_gratuito": "[QUÉ SE PUEDE HACER SIN PAGAR]",
+    "precios_de_referencia": "[LO QUE COBRAN APPS PARECIDAS]",
+    "tienda": "[APP STORE / GOOGLE PLAY / AMBAS]"
+  },
+  "pasos": [
+    "Elige el momento de enseñar la pantalla: justo después de que el usuario haya visto el valor o al toparse con el límite, nunca al abrir la app por primera vez",
+    "Define dos o tres planes como mucho, con el anual destacado y el ahorro frente al mensual escrito en euros y en porcentaje",
+    "Escribe el titular en beneficio, tres líneas de lo que incluye en lenguaje de usuario y no de funciones internas",
+    "Escribe el texto obligatorio de la compra: precio, periodo, renovación automática, cuándo se cobra y cómo cancelar desde los ajustes de la tienda",
+    "Añade enlaces visibles a condiciones y a política de privacidad y el botón de restaurar compras",
+    "Prepara la salida sin comprar sin trampas y decide si se ofrece un recordatorio o una versión limitada",
+    "Define los dos números a medir: cuántos ven la pantalla y cuántos compran, y una variante para probar"
+  ],
+  "restricciones": [
+    "Sin cuentas atrás falsas ni descuentos que no existen",
+    "El botón de cerrar tiene que verse a la primera",
+    "No prometas resultados económicos al usuario",
+    "Precios en euros y ajustados a los escalones que permite la tienda"
+  ],
+  "errores_frecuentes": [
+    "Enseñar el pago antes de que el usuario haya conseguido nada",
+    "Listar funciones técnicas en vez de lo que gana la persona",
+    "Olvidar restaurar compras y llenar el soporte de correos",
+    "No decir cómo se cancela, que es motivo de rechazo y de reseñas malas"
+  ],
+  "formato_salida": {
+    "pantalla": "Textos exactos: titular, subtítulo, tres beneficios, planes, botón, texto legal de renovación, enlaces y salida",
+    "tabla_planes": "plan, precio, periodo, ahorro, a_quien_le_conviene",
+    "comprobaciones": "Lista de requisitos de la tienda a verificar antes de enviar",
+    "prueba": "Variante alternativa del titular y del plan destacado"
+  },
+  "criterios_calidad": [
+    "Se entiende qué se cobra, cada cuánto y cómo cancelar sin releer",
+    "Los beneficios están escritos en primera persona del usuario",
+    "Aparecen restaurar compras y los dos enlaces legales",
+    "El momento de aparición está justificado con lo que el usuario acaba de hacer"
+  ]
+}

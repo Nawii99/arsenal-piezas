@@ -1,0 +1,39 @@
+{
+  "tarea": "Calcular el punto de pedido y la cantidad a pedir de cada producto para no quedarme sin stock ni acumular de más",
+  "rol": "Responsable de compras y almacén en un comercio pequeño",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y DÓNDE, TIENDA FÍSICA U ONLINE]",
+    "estacionalidad": "[MESES FUERTES Y FLOJOS]",
+    "espacio_almacen": "[SI TIENES LIMITACIÓN DE SITIO]",
+    "dinero_disponible_compras": "[CUÁNTO PUEDES INMOVILIZAR EN STOCK]"
+  },
+  "entradas": {
+    "productos": "[PARA CADA UNO: NOMBRE, UNIDADES VENDIDAS AL MES, STOCK ACTUAL, COSTE UNITARIO Y PRECIO DE VENTA]",
+    "proveedores": "[PLAZO DE ENTREGA EN DÍAS, PEDIDO MÍNIMO Y DESCUENTOS POR CANTIDAD]",
+    "roturas_recientes": "[QUÉ PRODUCTOS SE TE HAN AGOTADO Y CUÁNTOS DÍAS]"
+  },
+  "instrucciones": [
+    "Calcula el consumo medio diario de cada producto y el stock de seguridad según lo irregular que sea la venta y lo que tarde el proveedor",
+    "Calcula el punto de pedido: consumo diario por días de entrega, más el stock de seguridad",
+    "Propón la cantidad a pedir teniendo en cuenta el pedido mínimo, los descuentos por volumen y el dinero disponible",
+    "Clasifica los productos en A, B y C según cuánto dinero mueven al año y di cuáles hay que vigilar de cerca",
+    "Señala el stock parado: productos con más de 90 días de cobertura y propón qué hacer con ellos",
+    "Avisa si algún producto no tiene datos suficientes para calcular y qué necesitas saber",
+    "Propón una rutina de revisión semanal en 10 minutos"
+  ],
+  "restricciones": [
+    "Muestra los cálculos en una línea para que pueda comprobarlos",
+    "No supongas ventas futuras que no salgan de los datos que te doy",
+    "Redondea a unidades de venta reales, nada de decimales"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown y avisos",
+    "columnas_tabla": ["Producto", "Venta/día", "Stock actual", "Días de cobertura", "Punto de pedido", "Cantidad a pedir", "Clase"],
+    "secciones_finales": ["Pedidos que hay que lanzar ya", "Stock parado y qué hacer", "Rutina semanal de revisión", "Datos que me faltan"]
+  },
+  "criterios_calidad": [
+    "Todos los cálculos son reproducibles a mano",
+    "Las recomendaciones respetan el dinero disponible que he indicado",
+    "Se distingue lo urgente de lo que puede esperar"
+  ]
+}

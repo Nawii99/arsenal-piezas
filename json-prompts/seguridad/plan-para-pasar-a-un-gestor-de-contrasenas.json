@@ -1,0 +1,41 @@
+{
+  "tarea": "Diseñar un plan de migración por fases para pasar todas las contraseñas del negocio a un gestor de contraseñas, con tareas, orden y mensajes al equipo",
+  "rol": "Consultor que ha implantado gestores de contraseñas en equipos pequeños no técnicos",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "gestor_elegido": "[BITWARDEN, 1PASSWORD, KEEPASS, PROTON PASS...]",
+    "personas": "[NÚMERO DE PERSONAS Y NIVEL TÉCNICO]",
+    "cuentas_estimadas": "[NÚMERO APROXIMADO DE CUENTAS]",
+    "situacion_actual": "[EXCEL, NAVEGADOR, PAPEL, MEMORIA, MEZCLA]",
+    "fecha_objetivo": "[FECHA]"
+  },
+  "pasos": [
+    "Fase 0: decidir estructura de carpetas o colecciones por área y por nivel de criticidad, y quién es el administrador y el administrador suplente",
+    "Fase 1: migrar primero las cuentas críticas de dinero e identidad, cambiando la contraseña al migrarla y activando verificación en dos pasos",
+    "Fase 2: migrar el resto por áreas, importando desde el navegador y limpiando duplicados y cuentas muertas",
+    "Fase 3: eliminar de forma definitiva el excel, las notas y las contraseñas guardadas en navegadores personales",
+    "Fase 4: activar el plan de emergencia: contacto de recuperación, copia de la clave maestra en sobre sellado y prueba de recuperación real"
+  ],
+  "riesgos_a_prevenir": [
+    "Quedarse fuera de una cuenta por perder los códigos de recuperación de la verificación en dos pasos",
+    "Una sola persona con la clave maestra y sin suplente",
+    "Migrar todo de golpe un viernes y bloquear el trabajo del lunes",
+    "Dejar copias antiguas del excel en el correo o en la nube"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de fases con columnas: Fase, Qué se hace, Quién, Cuándo, Cómo sé que está hecho",
+    "bloque_2": "Checklist imprimible de la sesión de alta de cada persona, paso a paso",
+    "bloque_3": "Mensaje corto para enviar al equipo explicando el cambio y qué se espera de ellos",
+    "bloque_4": "Plan de emergencia en cinco líneas"
+  },
+  "restricciones": [
+    "No supongas conocimientos técnicos: describe los pasos como los ve el usuario en pantalla",
+    "Nada de contraseñas reales ni de ejemplos copiables",
+    "El plan cabe en cuatro semanas trabajando a ratos"
+  ],
+  "criterios_calidad": [
+    "Cada fase tiene una prueba concreta que demuestra que ha terminado bien",
+    "El plan contempla qué pasa si el responsable se pone enfermo",
+    "El mensaje al equipo se entiende sin explicaciones adicionales"
+  ]
+}

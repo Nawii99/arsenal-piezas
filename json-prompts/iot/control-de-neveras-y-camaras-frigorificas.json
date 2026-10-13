@@ -1,0 +1,51 @@
+{
+  "tarea": "Diseñar el control de temperatura de equipos de frío de un negocio: sensores, umbrales, avisos y registro histórico presentable en una inspección",
+  "contexto": {
+    "perfil": "Dueño o instalador sin perfil técnico que necesita vigilar frío sin contratar un sistema industrial",
+    "negocio": "[BAR / OBRADOR / CARNICERÍA / FARMACIA / COCINA CENTRAL / TIENDA]",
+    "equipos": "[LISTA DE NEVERAS, ARCONES, VITRINAS Y CÁMARAS, CON SU TEMPERATURA DE TRABAJO]"
+  },
+  "entradas": {
+    "sensores_disponibles": "[MODELO DE SENSOR SI YA LO TIENES, O NINGUNO]",
+    "conectividad": "[HAY WIFI EN LA ZONA DE CÁMARAS SÍ/NO, HAY HUB SÍ/NO]",
+    "horario": "[HORARIO DEL LOCAL Y QUIÉN ESTÁ DISPONIBLE DE MADRUGADA]",
+    "requisitos": "[QUÉ REGISTRO TE EXIGEN Y CADA CUÁNTO]"
+  },
+  "pasos": [
+    "1. Fija para cada equipo la temperatura objetivo y el margen aceptable, y separa el umbral de aviso del umbral de alarma: avisar antes de que el producto esté en riesgo es lo que salva el género.",
+    "2. Define el retardo de la alarma. Una puerta abierta cinco minutos en hora punta sube la temperatura y no es una avería. Sin retardo, el sistema cansa y se acaba silenciando.",
+    "3. Decide dónde va la sonda: dentro del producto o en un recipiente con glicerina o agua, nunca al aire libre pegada al ventilador ni junto a la puerta. El aire cambia en segundos, el producto no.",
+    "4. Elige tipo de sensor por caso: sonda con cable para arcones y cámaras metálicas donde la señal no sale, sensor inalámbrico para neveras normales, y siempre con alimentación pensada (pila de litio si hay frío extremo, porque las alcalinas se mueren).",
+    "5. Monta el aviso en escalera: primero mensaje al móvil del encargado, y si nadie confirma en [N] minutos, llamada o aviso a un segundo contacto. Un único aviso silencioso de madrugada no sirve de nada.",
+    "6. Añade un aviso específico de fallo de corriente y de sensor mudo: un sensor que deja de enviar es tan grave como uno que marca mal.",
+    "7. Define el registro: cada cuánto se guarda la lectura, cuánto tiempo se conserva y cómo se exporta para enseñarlo.",
+    "8. Escribe el protocolo humano: qué hace quien recibe la alerta, en qué orden y a quién llama, con qué se comprueba antes de tirar producto.",
+    "9. Programa la prueba real: sacar el sensor de la nevera y comprobar que el aviso llega de verdad al móvil correcto."
+  ],
+  "restricciones": [
+    "No des cifras legales concretas como si fueran normativa; indica que se confirmen con el técnico de higiene o el asesor",
+    "No propongas nada que dependa de que alguien mire una app a diario",
+    "Todo aviso debe llegar al móvil, no solo a un panel",
+    "El sistema tiene que seguir avisando aunque se caiga internet o haya que preverlo explícitamente"
+  ],
+  "errores_tipicos": [
+    "Colocar la sonda al aire y llenarse de falsas alarmas por el ciclo de desescarche",
+    "Poner el umbral justo en el límite y enterarse cuando ya es tarde",
+    "Usar wifi dentro de una cámara frigorífica metálica y perder la señal",
+    "No probar nunca la alarma hasta el día que hace falta"
+  ],
+  "formato_salida": {
+    "1_tabla_equipos": "Columnas: equipo | temperatura objetivo | umbral aviso | umbral alarma | retardo | dónde va la sonda",
+    "2_material": "Lista de sensores y accesorios con motivo de la elección y alternativa más barata",
+    "3_avisos": "Escalera de avisos con contactos, plazos y quién responde",
+    "4_registro": "Frecuencia, conservación y cómo se exporta",
+    "5_protocolo": "Qué hacer al recibir una alarma, paso a paso, en menos de diez líneas",
+    "6_prueba": "Guion de la prueba de puesta en marcha con resultado esperado"
+  },
+  "criterios_calidad": [
+    "Cada equipo tiene umbral, retardo y ubicación de sonda definidos",
+    "Existe aviso de corte de luz y de sensor sin datos",
+    "El protocolo lo puede seguir un camarero a las tres de la mañana",
+    "La prueba de puesta en marcha es concreta y verificable"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar una encuesta a clientes con preguntas neutrales, plan de muestreo y guía de lectura de resultados, dejando claro qué se puede y qué no se puede concluir",
+  "entradas": {
+    "decision_que_quiero_tomar": "[LA DECISIÓN CONCRETA QUE DEPENDE DE ESTA ENCUESTA]",
+    "publico": "[CLIENTES ACTUALES / ANTIGUOS / LEADS / PÚBLICO FRÍO]",
+    "tamano_de_la_base": "[CUÁNTA GENTE PUEDES CONTACTAR]",
+    "canal": "[EMAIL / WHATSAPP / FORMULARIO WEB / EN TIENDA]",
+    "tiempo_maximo_de_respuesta": "[MINUTOS QUE ACEPTAS PEDIRLE AL CLIENTE]",
+    "incentivo": "[NINGUNO / DESCUENTO / SORTEO]"
+  },
+  "procedimiento": [
+    "1. Traducir la decisión en 3 preguntas de investigación; todo lo que no sirva para esas 3 se elimina",
+    "2. Redactar entre 6 y 10 preguntas, ordenadas de fácil a comprometida, con los datos de clasificación al final",
+    "3. Preferir preguntas sobre comportamiento pasado y real frente a intenciones futuras, que se inflan",
+    "4. Revisar cada pregunta contra la lista de sesgos: pregunta que induce la respuesta, doble pregunta en una, escala sin punto medio o mal etiquetada, jerga interna, opción de no sé ausente",
+    "5. Calcular el número de respuestas necesario para un margen de error del 5 % o del 10 % sobre la base indicada, y el envío necesario según una tasa de respuesta realista",
+    "6. Advertir del sesgo de quién responde: quien contesta suele ser el más contento o el más enfadado"
+  ],
+  "restricciones": [
+    "Nada de preguntas del tipo pagarías X por esto sin acompañarlas de una pregunta de compra real o compromiso",
+    "Máximo una pregunta abierta obligatoria",
+    "Escalas siempre de 1 a 5 con etiquetas en los extremos y en el centro",
+    "Prohibido usar el nombre de la marca en el enunciado cuando se pide valoración, para no condicionar"
+  ],
+  "formato_salida": {
+    "cuestionario": "Numerado, con el texto exacto de cada pregunta, tipo de respuesta y opciones",
+    "por_que_cada_pregunta": "Tabla: pregunta, qué decisión ayuda a tomar, sesgo que se ha evitado",
+    "plan_de_muestreo": "Respuestas objetivo, envíos necesarios, margen de error resultante y días de campo",
+    "mensaje_de_invitacion": "Texto corto para email o WhatsApp con asunto",
+    "guia_de_lectura": "Cómo interpretar los resultados y 4 conclusiones que NO se podrán sacar con esta encuesta"
+  },
+  "criterios_calidad": [
+    "La encuesta se responde en el tiempo indicado",
+    "Ninguna pregunta sugiere la respuesta deseada",
+    "Queda por escrito el margen de error y a quién representa la muestra"
+  ]
+}

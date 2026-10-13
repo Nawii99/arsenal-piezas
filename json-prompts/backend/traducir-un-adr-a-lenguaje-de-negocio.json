@@ -1,0 +1,35 @@
+{
+  "tarea": "Traducir un ADR técnico a un resumen ejecutivo de una página para una persona sin perfil técnico que tiene que aprobarlo",
+  "entradas": {
+    "adr_tecnico": "[PEGA EL ADR COMPLETO]",
+    "lector": "[SOCIO, DIRECTOR FINANCIERO, CLIENTE, INVERSOR...]",
+    "lo_que_le_preocupa": "[COSTE, PLAZO, RIESGO LEGAL, CAÍDAS DEL SERVICIO, DEPENDER DE UNA PERSONA]",
+    "dinero_en_juego": "[COSTE ESTIMADO DE LA DECISIÓN Y DE MANTENERLA AL AÑO]",
+    "decision_que_le_pides": "[APROBAR PRESUPUESTO, DAR EL VISTO BUENO, ELEGIR ENTRE DOS OPCIONES]"
+  },
+  "pasos": [
+    "1. Explica la decisión en una frase que entendería alguien ajeno al sector",
+    "2. Traduce cada término técnico a su efecto en el negocio: en dinero, en tiempo o en riesgo",
+    "3. Presenta la comparación de opciones en términos de coste, plazo y riesgo, no de tecnología",
+    "4. Di qué pasa si no se decide nada, con su coste",
+    "5. Señala los dos riesgos principales y qué se hará para contenerlos",
+    "6. Cierra con la petición concreta: qué necesitas de esa persona y para cuándo"
+  ],
+  "restricciones": [
+    "Prohibido usar nombres de tecnologías sin explicar en la misma frase para qué sirven",
+    "Nada de siglas sin desarrollar",
+    "Máximo una página; frases cortas",
+    "No prometas resultados que el ADR no sostiene; si algo es incierto, dilo con esa palabra",
+    "Usa una analogía como mucho, y que sea del sector del lector"
+  ],
+  "formato_salida": {
+    "tipo": "markdown de una página",
+    "secciones": ["Qué te pido en una frase", "Qué hay que decidir", "Opciones y qué implica cada una (tabla: opción, coste, plazo, riesgo)", "Qué recomendamos y por qué", "Qué pasa si no hacemos nada", "Riesgos principales y cómo los cubrimos", "Qué necesito de ti y para cuándo"]
+  },
+  "criterios_calidad": [
+    "El lector puede decidir sin hacer ninguna pregunta técnica",
+    "Cada cifra que aparece tiene su origen indicado",
+    "No queda ni una palabra técnica sin traducir"
+  ],
+  "tono": "Claro, adulto y sin condescendencia"
+}

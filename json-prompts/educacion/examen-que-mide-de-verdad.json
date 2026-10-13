@@ -1,0 +1,52 @@
+{
+  "tarea": "Redactar un examen de opción múltiple y preguntas de aplicación que mida capacidad real, con distractores creíbles y corrección justificada.",
+  "contexto": {
+    "materia": "[TEMA Y MÓDULOS QUE ENTRAN]",
+    "nivel": "[INICIACIÓN / INTERMEDIO / AVANZADO]",
+    "uso": "[EXAMEN FINAL / TEST DE NIVEL PREVIO / AUTOEVALUACIÓN / CERTIFICADO PARA EMPRESA]",
+    "numero_de_preguntas": "[ENTRE 10 Y 30]",
+    "tiempo_disponible": "[MINUTOS]",
+    "nota_de_corte": "[PORCENTAJE PARA APROBAR]"
+  },
+  "entradas": {
+    "objetivos_de_aprendizaje": "[LISTA DE LO QUE EL ALUMNO DEBE SABER HACER, UNO POR LÍNEA]",
+    "errores_reales_de_alumnos": "[FALLOS QUE HAS VISTO COMETER: SON LA MATERIA PRIMA DE LOS DISTRACTORES]",
+    "material_del_curso": "[RESUMEN O ÍNDICE DEL CONTENIDO EVALUABLE]"
+  },
+  "proceso": [
+    "1. Reparte las preguntas por objetivo de aprendizaje: ninguno se queda sin evaluar y ninguno acapara más del 30%.",
+    "2. Clasifica cada pregunta en nivel RECORDAR, APLICAR o DECIDIR. Como mínimo la mitad deben ser APLICAR o DECIDIR.",
+    "3. Para las de aplicar, plantea un mini caso de 2 o 3 líneas con datos concretos y pregunta qué haría el alumno.",
+    "4. Escribe 4 opciones por pregunta. Los 3 distractores salen de errores reales, no de tonterías: cada uno es lo que creería alguien que entendió mal una cosa concreta.",
+    "5. Comprueba que todas las opciones tengan longitud y estilo parecidos y que la correcta no sea siempre la más larga ni la más detallada.",
+    "6. Elimina 'todas las anteriores', 'ninguna de las anteriores', dobles negaciones y palabras absolutas como siempre o nunca.",
+    "7. Escribe la justificación de la respuesta correcta y, para cada distractor, qué confusión revela y a qué lección hay que volver.",
+    "8. Ordena el examen de menos a más difícil y calcula si cabe en el tiempo (calcula 1 minuto por pregunta de recordar y 3 por caso).",
+    "9. Añade 2 preguntas abiertas de entregable con su rúbrica de 3 niveles si el examen da certificado."
+  ],
+  "restricciones": [
+    "Nada de preguntas capciosas ni de pillar al alumno con la redacción.",
+    "No se evalúa nada que no se haya enseñado en el material aportado.",
+    "Lenguaje llano: si la pregunta necesita releerse dos veces, se reescribe.",
+    "La posición de la respuesta correcta se reparte para que no haya patrón."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de cobertura: Objetivo | Nº de preguntas | Nivel.",
+    "bloque_2": "Examen limpio para el alumno, preguntas numeradas con sus opciones.",
+    "bloque_3": "Hoja de corrección: respuesta correcta, por qué, y qué revela cada distractor.",
+    "bloque_4": "Rúbrica de las preguntas abiertas con 3 niveles: no logrado, aceptable, sobresaliente.",
+    "bloque_5": "Instrucciones para el alumno: tiempo, nota de corte, si puede consultar material."
+  },
+  "criterios_calidad": [
+    "Un alumno que solo se leyó el índice suspende; uno que hizo los ejercicios aprueba.",
+    "Ningún distractor es descartable sin saber la materia.",
+    "Cada pregunta se puede trazar a un objetivo y a una lección concreta.",
+    "La corrección explica el error, no solo señala la letra correcta."
+  ],
+  "errores_tipicos": [
+    "Distractores absurdos que hacen el test regalado.",
+    "Preguntar definiciones cuando lo que enseñas es un oficio práctico.",
+    "Poner nota de corte alta sin haber probado el examen con nadie.",
+    "Olvidar decir si se puede usar material de consulta."
+  ]
+}

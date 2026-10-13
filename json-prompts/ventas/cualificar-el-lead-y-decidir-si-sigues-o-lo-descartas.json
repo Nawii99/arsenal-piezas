@@ -1,0 +1,41 @@
+{
+  "tarea": "Cualificar un prospecto tras el primer contacto y decidir si sigo, lo aparco o lo descarto",
+  "entradas": {
+    "notas_del_contacto": "[PEGA AQUÍ LO QUE TE DIJO, EL EMAIL O TUS APUNTES]",
+    "mi_oferta": "[QUÉ VENDES Y A QUÉ PRECIO APROXIMADO]",
+    "plazo_de_entrega": "[CUÁNTO TARDAS EN EMPEZAR Y EN ENTREGAR]",
+    "cliente_ideal": "[RESUMEN DE TU CLIENTE IDEAL]",
+    "motivos_de_descarte": "[LO QUE PARA TI ES UN NO ROTUNDO]"
+  },
+  "criterios_de_evaluacion": [
+    "Problema: ¿tiene un problema real que yo resuelvo y lo reconoce?",
+    "Dinero: ¿hay presupuesto o capacidad de pago plausible?",
+    "Decisión: ¿habla quien decide o hay más gente por medio?",
+    "Urgencia: ¿hay una fecha o un disparador que empuje?",
+    "Encaje: ¿se parece a mis mejores clientes?",
+    "Competencia: ¿ya tiene proveedor y en qué situación?"
+  ],
+  "pasos": [
+    "Puntuar cada criterio de 0 a 5 solo con lo que aparece en las notas",
+    "Marcar explícitamente lo que NO se sabe en lugar de suponerlo",
+    "Dar un veredicto: seguir ahora, aparcar con fecha o descartar",
+    "Proponer las 3 preguntas que más despejarían la duda, redactadas para soltarlas tal cual",
+    "Escribir el siguiente mensaje según el veredicto"
+  ],
+  "restricciones": [
+    "No inventes información que no esté en las notas",
+    "Si faltan datos para puntuar, escribe 'sin datos' y no des una nota media inflada",
+    "El veredicto debe ser uno solo, sin ambigüedades"
+  ],
+  "formato_salida": {
+    "tabla": "criterio | nota 0-5 | prueba en las notas | qué falta saber",
+    "veredicto": "SEGUIR / APARCAR HASTA [FECHA] / DESCARTAR + dos líneas de motivo",
+    "preguntas": "Las 3 preguntas literales",
+    "siguiente_mensaje": "Email o WhatsApp de menos de 90 palabras"
+  },
+  "criterios_calidad": [
+    "Cada nota está justificada con una frase textual del prospecto",
+    "El veredicto no depende de mi ilusión, sino de los criterios",
+    "Si es descarte, el mensaje cierra con elegancia y deja la puerta abierta"
+  ]
+}

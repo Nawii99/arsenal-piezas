@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar mi cuadro de mandos mensual: qué indicadores seguir, de dónde salen, qué umbral enciende la alarma y cómo hacer la revisión",
+  "contexto": {
+    "negocio": "[A QUÉ TE DEDICAS Y CÓMO GANAS DINERO]",
+    "objetivos_trimestre": "[TUS OBJETIVOS ACTUALES]",
+    "fuentes_de_datos": "[HERRAMIENTAS DE LAS QUE PUEDES SACAR DATOS: BANCO, TPV, FACTURACIÓN, ANALÍTICA, CRM, REDES]",
+    "historico": "[CIFRAS DE LOS ÚLTIMOS 3 MESES SI LAS TIENES]",
+    "tiempo_para_medir": "[MINUTOS AL MES QUE ESTÁS DISPUESTO A DEDICAR A ESTO]"
+  },
+  "metodo": [
+    "Elige entre 6 y 8 indicadores repartidos en dinero, clientes, entrega y tiempo propio",
+    "Por cada objetivo del trimestre debe haber al menos un indicador que lo vigile",
+    "Incluye al menos dos indicadores adelantados (avisan antes) y no solo de resultado",
+    "Descarta indicadores que no se puedan sacar de las fuentes declaradas o que cuesten más de 10 minutos",
+    "Fija para cada uno un valor esperado, un umbral de alerta y qué hacer si se cruza",
+    "Define la fecha del mes en la que se recogen los datos y la duración de la revisión"
+  ],
+  "restricciones": [
+    "Máximo 8 indicadores; si sobran, elimina y explica por qué",
+    "Nada de métricas de vanidad como seguidores o impresiones salvo que vendas por ese canal",
+    "La recogida completa debe caber en el tiempo declarado"
+  ],
+  "formato_salida": {
+    "1_tabla_indicadores": "Tabla con columnas: Indicador | Qué responde | Fuente | Frecuencia | Valor esperado | Umbral de alerta | Acción si salta",
+    "2_plantilla_registro": "Cabeceras de una hoja de cálculo para ir apuntando los datos cada mes",
+    "3_guion_revision": "Las 5 preguntas de la reunión mensual contigo mismo, en orden",
+    "4_descartados": "Indicadores descartados y motivo"
+  },
+  "criterios_calidad": [
+    "Todos los indicadores se pueden calcular con las fuentes declaradas",
+    "Cada umbral tiene una acción concreta asociada, no un 'revisar'",
+    "La plantilla se puede copiar a una hoja de cálculo sin cambios"
+  ],
+  "tono": "Concreto y numérico, español de España"
+}

@@ -1,0 +1,41 @@
+{
+  "tarea": "Diseñar un plan de refactorización por pasos pequeños, cada uno desplegable y reversible, sin detener el desarrollo de producto",
+  "contexto": {
+    "modulo": "[QUÉ MÓDULO O ZONA HAY QUE REFACTORIZAR]",
+    "lenguaje_y_framework": "[LENGUAJE Y FRAMEWORK]",
+    "problema": "[QUÉ DUELE HOY: lentitud, bugs, imposible de cambiar, nadie lo entiende]",
+    "cobertura_de_pruebas": "[NINGUNA / POCA / DECENTE]",
+    "ritmo_de_despliegue": "[CADA CUÁNTO PONÉIS CÓDIGO EN PRODUCCIÓN]"
+  },
+  "entradas": {
+    "codigo_actual": "[PEGA EL CÓDIGO O LAS FIRMAS DE LAS FUNCIONES PRINCIPALES]",
+    "comportamiento_esperado": "[QUÉ TIENE QUE SEGUIR HACIENDO EXACTAMENTE IGUAL]"
+  },
+  "principios": [
+    "Antes de cambiar nada, asegurar el comportamiento actual con pruebas de caracterización",
+    "Un paso = un cambio con una intención, desplegable solo y reversible",
+    "Separar cambios de comportamiento de cambios de estructura: nunca en el mismo paso",
+    "Convivencia temporal del código viejo y el nuevo antes de borrar"
+  ],
+  "pasos_del_plan": [
+    "Paso 0: pruebas que fijan el comportamiento actual, incluidos los casos raros",
+    "Pasos de estructura: extraer, renombrar, aislar dependencias externas",
+    "Paso de sustitución: activar lo nuevo detrás de un interruptor si hace falta",
+    "Paso de limpieza: borrar el código muerto y el interruptor"
+  ],
+  "restricciones": [
+    "Ningún paso puede durar más de [DÍAS MÁXIMOS POR PASO] días",
+    "Nada de reescribir desde cero",
+    "Si un paso no se puede probar, divídelo hasta que se pueda"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["Riesgos detectados", "Pruebas de red previas", "Plan paso a paso", "Cómo revertir cada paso", "Señales de que hay que parar"],
+    "formato_de_cada_paso": "nº | objetivo | qué se toca | cómo se verifica | vuelta atrás | duración estimada"
+  },
+  "criterios_calidad": [
+    "Tras cada paso el sistema queda entregable y funcionando",
+    "Los pasos de estructura no cambian resultados observables",
+    "El plan se puede pausar a mitad sin dejar el código peor que antes"
+  ]
+}

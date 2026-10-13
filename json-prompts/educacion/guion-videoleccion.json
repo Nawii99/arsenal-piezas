@@ -1,0 +1,51 @@
+{
+  "tarea": "Escribir el guion de una vídeo-lección grabada con pantalla compartida, marcando lo que se dice, lo que se ve y dónde pausa el alumno.",
+  "contexto": {
+    "tema": "[QUÉ ENSEÑA ESTA LECCIÓN, UNA SOLA COSA]",
+    "lo_que_sabra_hacer": "[ACCIÓN OBSERVABLE AL TERMINAR]",
+    "que_ha_visto_antes": "[LECCIÓN ANTERIOR Y QUÉ SE DA POR SABIDO]",
+    "duracion_objetivo": "[ENTRE 6 Y 12 MINUTOS]",
+    "forma_de_grabar": "[SOLO PANTALLA / PANTALLA CON CÁMARA PEQUEÑA / CÁMARA]",
+    "herramienta_en_pantalla": "[QUÉ PROGRAMA O WEB SE VE]"
+  },
+  "entradas": {
+    "pasos_del_metodo": "[LOS PASOS QUE VAS A DEMOSTRAR, EN ORDEN]",
+    "ejemplo_que_usaras": "[EL CASO CONCRETO QUE SE VE EN PANTALLA]",
+    "dudas_frecuentes": "[LO QUE SIEMPRE PREGUNTAN EN ESTE PUNTO]"
+  },
+  "proceso": [
+    "1. Escribe el gancho de 15 segundos: qué problema resuelve la lección y qué se verá hecho al final. Nada de presentarte.",
+    "2. Enseña el resultado terminado antes de empezar: el alumno necesita saber a dónde va.",
+    "3. Divide la demostración en bloques de 60 a 90 segundos, uno por paso. Cada bloque: qué hacemos, por qué, y qué se mira para saber que va bien.",
+    "4. Escribe el texto hablado en frases cortas, como se habla, con tuteo. Ninguna frase de más de 20 palabras.",
+    "5. Para cada bloque anota qué se ve en pantalla, dónde hay zoom y qué hay que ocultar (datos personales, pestañas, notificaciones).",
+    "6. Coloca 2 o 3 puntos de PAUSA Y HAZLO donde el alumno debe replicar antes de seguir.",
+    "7. Anticipa las dudas frecuentes justo donde surgen, no al final.",
+    "8. Cierra con: qué acaba de conseguir, el error más común al hacerlo solo y qué viene en la siguiente lección.",
+    "9. Calcula la duración a 130 palabras por minuto más el tiempo de las demostraciones en silencio."
+  ],
+  "restricciones": [
+    "Una lección, una cosa. Si aparecen dos temas, se parte en dos vídeos.",
+    "Prohibido empezar con 'hola, bienvenidos a un nuevo vídeo'.",
+    "Nada de leer diapositivas: si hay pantalla, se hace en vivo.",
+    "Marca en el guion qué se puede regrabar suelto para no repetir todo si te equivocas."
+  ],
+  "formato_salida": {
+    "tabla": "Bloque | Minuto aprox. | Qué digo (texto literal) | Qué se ve en pantalla | Acción del alumno.",
+    "extras": "Lista previa a grabar: pestañas abiertas, datos que ocultar, archivos de ejemplo preparados.",
+    "titulo_y_descripcion": "Título de la lección y descripción de 3 líneas con lo que aprende.",
+    "capitulos": "Marcas de capítulo con su minuto estimado."
+  },
+  "criterios_calidad": [
+    "El guion leído en voz alta suena a persona, no a texto escrito.",
+    "Cada paso indica cómo saber que salió bien antes de pasar al siguiente.",
+    "La duración estimada no se pasa más de un 15% del objetivo.",
+    "Se puede grabar de una sentada con la lista previa preparada."
+  ],
+  "errores_tipicos": [
+    "Explicar 4 minutos de contexto antes de tocar la pantalla.",
+    "Grabar con notificaciones y datos personales a la vista.",
+    "No avisar de los puntos de pausa y dejar al alumno corriendo detrás.",
+    "Improvisar el cierre y no decir qué hacer a continuación."
+  ]
+}

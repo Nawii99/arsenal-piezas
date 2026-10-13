@@ -1,0 +1,46 @@
+{
+  "tarea": "Redacta el informe de resultados del periodo para mi cliente, orientado a lo que le importa a él y no a lo que hemos hecho nosotros",
+  "contexto": {
+    "mi_empresa": "[TU NOMBRE O EL DE TU AGENCIA]",
+    "cliente": "[NOMBRE DEL CLIENTE Y SU SECTOR]",
+    "servicio": "[QUÉ LE PRESTAS: PUBLICIDAD, SEO, REDES, DESARROLLO, CONSULTORÍA]",
+    "periodo": "[MES O TRIMESTRE]",
+    "objetivos_acordados": "[LO QUE PROMETISTE CONSEGUIR Y EN QUÉ PLAZO]",
+    "honorarios": "[IMPORTE DEL PERIODO Y PRESUPUESTO GESTIONADO SI LO HAY]"
+  },
+  "entradas": {
+    "resultados": "[MÉTRICAS DEL PERIODO]",
+    "periodo_anterior": "[LAS MISMAS MÉTRICAS]",
+    "trabajo_realizado": "[TAREAS, CAMPAÑAS, ENTREGABLES]",
+    "incidencias": "[LO QUE NO SALIÓ, RETRASOS, BLOQUEOS DEL PROPIO CLIENTE]"
+  },
+  "pasos": [
+    "Empieza por el resultado de negocio del cliente, no por las tareas realizadas",
+    "Relaciona cada acción con el efecto que ha tenido, y si no se puede demostrar, dilo",
+    "Traduce las métricas técnicas a lenguaje de negocio: clientes, presupuestos, llamadas, ingresos",
+    "Reconoce lo que no ha funcionado y explica qué se cambia por ello",
+    "Cierra con la propuesta del siguiente periodo y lo que necesitas del cliente"
+  ],
+  "formato_salida": {
+    "secciones": [
+      "Resumen para el que solo lee lo primero: tres líneas",
+      "Tabla de objetivos: objetivo | conseguido | desviación | valoración",
+      "Qué hemos hecho este periodo, agrupado por línea de trabajo",
+      "Qué hemos aprendido, incluido lo que no ha funcionado",
+      "Plan del próximo periodo con prioridades",
+      "Qué necesitamos de ti, con fechas"
+    ],
+    "extension": "Entre 600 y 900 palabras"
+  },
+  "restricciones": [
+    "Nada de métricas de vanidad presentadas como logros",
+    "Sin promesas de resultados futuros: usa expectativas con rango y supuestos",
+    "No escondas los malos resultados en la letra pequeña"
+  ],
+  "criterios_calidad": [
+    "El cliente entiende qué ha comprado con su dinero este mes",
+    "Cada afirmación tiene su cifra al lado",
+    "El informe sirve de guion para la reunión de seguimiento"
+  ],
+  "tono": "Profesional, honesto y seguro, tuteando o de usted según el cliente"
+}

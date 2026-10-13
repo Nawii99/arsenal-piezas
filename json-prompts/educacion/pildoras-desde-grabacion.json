@@ -1,0 +1,50 @@
+{
+  "tarea": "Convertir la grabación de [NOMBRE DE LA SESIÓN], de [DURACIÓN], en píldoras de [MINUTOS] con título, corte exacto, material de apoyo y orden de publicación.",
+  "contexto": {
+    "origen": "[CLASE EN DIRECTO / WEBINAR / MENTORÍA GRABADA / PONENCIA]",
+    "destino": "[CURSO DE PAGO / ÁREA DE ALUMNOS / SERIE GRATUITA / MATERIAL PARA EMPRESAS]",
+    "publico": "[QUIÉN LO VA A VER Y QUÉ SABE]",
+    "herramientas_de_edicion": "[LO QUE SABES USAR: CAPCUT, CLIPCHAMP, NADA]"
+  },
+  "entradas": {
+    "transcripcion_con_marcas_de_tiempo": "[PEGA LA TRANSCRIPCIÓN]",
+    "partes_que_ya_sabes_que_sobran": "[SALUDOS, INCIDENCIAS, DUDAS PERSONALES]",
+    "promesa_del_producto_final": "[QUÉ CONSIGUE QUIEN VE LA SERIE ENTERA]"
+  },
+  "procedimiento": [
+    "1. Recorre la transcripción y marca cada idea completa: empieza donde se plantea el problema y termina donde se resuelve. Ese es el corte natural, no el minuto redondo.",
+    "2. Descarta lo que solo tiene sentido en directo: saludos, referencias a la fecha, respuestas a un asistente concreto, chistes de contexto.",
+    "3. Agrupa las ideas en una secuencia con orden pedagógico, aunque en el directo salieran desordenadas.",
+    "4. Para cada píldora, escribe el corte con minuto de entrada y de salida, un título que diga el beneficio y una frase de contexto que se grabará como intro de 10 segundos.",
+    "5. Detecta los huecos: lo que se dio por sabido en el directo y hay que explicar aparte. Propón una píldora nueva de relleno para cada hueco.",
+    "6. Extrae de cada píldora un material de apoyo: lista de pasos, plantilla, checklist o resumen de una página.",
+    "7. Añade a cada píldora una tarea de 10 minutos y una pregunta de autocomprobación.",
+    "8. Propón el orden de publicación y el motivo de ese orden, y marca cuáles pueden ser gratuitas de gancho y cuáles van dentro del producto de pago.",
+    "9. Indica los arreglos mínimos de edición: cortar muletillas repetidas, subtítulos, tapar datos personales que se vean en pantalla."
+  ],
+  "restricciones": [
+    "Ninguna píldora que empiece con hola a todos ni que mencione la fecha del directo.",
+    "Cada píldora se entiende sola, sin haber visto la anterior.",
+    "No inventar contenido que no está en la grabación: los huecos se marcan como pendientes de grabar.",
+    "Español de España, títulos de menos de 60 caracteres."
+  ],
+  "errores_a_evitar": [
+    "Cortar por duración fija y dejar ideas partidas por la mitad.",
+    "Publicar el directo entero y llamarlo curso.",
+    "Dejar dentro nombres de asistentes o datos de sus negocios sin permiso.",
+    "Ordenar las píldoras como salieron en el directo, con lo difícil al principio."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de píldoras: número, título, minuto de entrada y salida, idea única, duración final.",
+    "bloque_2": "Para cada píldora: frase de intro de 10 segundos, material de apoyo, tarea y pregunta de autocomprobación.",
+    "bloque_3": "Lista de huecos detectados con la píldora nueva que habría que grabar y su guion en cinco líneas.",
+    "bloque_4": "Orden de publicación con el motivo y marca de gratuita o de pago.",
+    "bloque_5": "Lista de arreglos de edición por píldora."
+  },
+  "criterios_calidad": [
+    "Cada corte empieza con una frase que ya tiene sentido sin contexto previo.",
+    "Ninguna píldora dura más del doble de lo indicado.",
+    "El conjunto cumple la promesa del producto final o se dice qué falta.",
+    "No queda dentro ningún dato personal de terceros."
+  ]
+}

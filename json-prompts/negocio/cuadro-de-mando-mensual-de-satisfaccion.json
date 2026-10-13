@@ -1,0 +1,36 @@
+{
+  "tarea": "Calcular las métricas de satisfacción del mes y montar un informe de una página con decisiones",
+  "entradas": {
+    "notas_nps": "[PEGA LAS NOTAS DE 0 A 10, SEPARADAS POR COMAS, O EL RECUENTO POR NOTA]",
+    "notas_csat": "[PEGA LAS NOTAS DE 1 A 5 DE SOPORTE, SI LAS TIENES]",
+    "mes_analizado": "[MES Y AÑO]",
+    "datos_mes_anterior": "[NPS Y CSAT DEL MES PASADO, SI LOS TIENES]",
+    "objetivo_trimestre": "[LA CIFRA A LA QUE QUIERES LLEGAR]"
+  },
+  "calculos": [
+    "NPS = porcentaje de promotores (9-10) menos porcentaje de detractores (0-6); pasivos son 7-8",
+    "CSAT = porcentaje de respuestas 4 y 5 sobre el total de respuestas",
+    "Tasa de respuesta = respuestas recibidas entre encuestas enviadas",
+    "Mostrar siempre el número de respuestas junto a cada porcentaje"
+  ],
+  "reglas_de_interpretacion": [
+    "Con menos de 30 respuestas, avisar de que el dato es orientativo y no sacar tendencias",
+    "No celebrar ni alarmarse por variaciones menores de 5 puntos entre meses",
+    "Comprobar si la subida o bajada viene de un cambio real o de haber cambiado a quién se encuesta"
+  ],
+  "formato_salida": {
+    "bloque_1": "Titular de una frase con la conclusión del mes",
+    "bloque_2": "Tabla: métrica | este mes | mes anterior | diferencia | nº de respuestas",
+    "bloque_3": "Reparto de promotores, pasivos y detractores en porcentaje y en número",
+    "bloque_4": "Las 3 decisiones del mes, cada una con responsable y fecha",
+    "bloque_5": "Riesgos y dudas del dato, en 3 líneas"
+  },
+  "restricciones": [
+    "No inventar datos que no estén en las entradas: si falta algo, escribir sin dato",
+    "Nada de gráficos ni tecnicismos estadísticos; lenguaje llano"
+  ],
+  "criterios_calidad": [
+    "Cualquier persona del negocio entiende el informe en 2 minutos",
+    "Los porcentajes son comprobables a mano con los datos aportados"
+  ]
+}

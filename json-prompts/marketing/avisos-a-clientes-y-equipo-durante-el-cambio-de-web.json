@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir todos los mensajes de comunicación de un cambio de web para clientes y para el equipo",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO Y A QUÉ SE DEDICA]",
+    "que_cambia_para_el_cliente": "[NUEVO DOMINIO, NUEVA TIENDA, NUEVOS ACCESOS, PEDIDOS ANTIGUOS, PUNTOS DE FIDELIDAD, NADA VISIBLE]",
+    "fechas": "[DÍA Y HORA DEL CAMBIO Y CUÁNTO PUEDE DURAR LA INTERRUPCIÓN]",
+    "canales": "[EMAIL, WHATSAPP, BANNER EN LA WEB, REDES SOCIALES, CARTEL EN TIENDA]",
+    "contacto_incidencias": "[TELÉFONO O CORREO AL QUE ESCRIBIR SI ALGO FALLA]"
+  },
+  "piezas_a_redactar": [
+    "Email de aviso previo, entre 5 y 7 días antes",
+    "Recordatorio corto el día anterior por WhatsApp o SMS",
+    "Banner en la web durante el cambio, máximo dos frases",
+    "Email de estreno el día que se publica, contando qué gana el cliente",
+    "Post para redes sociales anunciando la web nueva",
+    "Respuestas tipo a las cinco quejas más probables",
+    "Nota interna para el equipo con qué decir y a quién derivar"
+  ],
+  "reglas_de_redaccion": [
+    "Hablar de lo que gana el cliente, no de la tecnología usada",
+    "Decir siempre qué tiene que hacer el cliente, aunque sea nada",
+    "Si hay interrupción, decir cuándo y cuánto sin adornos",
+    "Nunca pedir contraseñas ni datos bancarios en estos avisos y avisar de posibles intentos de fraude aprovechando el cambio",
+    "Frases cortas, tuteo y cero jerga"
+  ],
+  "formato_salida": {
+    "por_pieza": ["Canal", "Cuándo se envía", "Asunto o titular", "Texto completo listo para copiar", "Llamada a la acción"],
+    "extras": ["Calendario de envíos en una tabla", "Versión corta de cada mensaje para WhatsApp"]
+  },
+  "criterios_calidad": [
+    "Cada mensaje se entiende en una lectura",
+    "Ningún mensaje promete mejoras que no se van a notar",
+    "El correo de incidencias aparece en todas las piezas de cara al cliente"
+  ],
+  "tono": "cercano, tranquilo y honesto"
+}

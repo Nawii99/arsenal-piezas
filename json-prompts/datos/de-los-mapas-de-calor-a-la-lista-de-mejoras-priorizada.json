@@ -1,0 +1,37 @@
+{
+  "tarea": "Convertir observaciones de mapas de calor y grabaciones de sesión de [PÁGINA] en una lista priorizada de mejoras de conversión",
+  "contexto": {
+    "pagina": "[URL Y PARA QUÉ SIRVE ESA PÁGINA]",
+    "objetivo_de_la_pagina": "[LA ÚNICA ACCIÓN QUE QUIERES QUE HAGA EL VISITANTE]",
+    "trafico_mensual": "[NÚMERO DE VISITAS]",
+    "conversion_actual": "[PORCENTAJE]",
+    "herramienta": "[MICROSOFT CLARITY / HOTJAR / OTRA]"
+  },
+  "entradas": {
+    "mapa_de_clics": "[QUÉ SE CLICA MUCHO Y QUÉ NO SE CLICA NADA]",
+    "mapa_de_scroll": "[HASTA DÓNDE LLEGA LA MAYORÍA, EN PORCENTAJE]",
+    "grabaciones": "[LO QUE HAS VISTO: DUDAS, VUELTAS ATRÁS, RELLENOS A MEDIAS, CLICS EN COSAS NO CLICABLES]",
+    "señales_de_frustracion": "[CLICS DE RABIA, CLICS MUERTOS, SCROLL NERVIOSO]",
+    "movil_vs_escritorio": "[DIFERENCIAS QUE HAYAS NOTADO]"
+  },
+  "metodo": [
+    "Traducir cada observación en un problema concreto del usuario, no en una opinión de diseño",
+    "Clasificar el problema como de claridad, de confianza, de fricción o de relevancia",
+    "Comprobar si el contenido importante queda por debajo del punto al que llega la gente",
+    "Detectar elementos que parecen botones y no lo son, y viceversa",
+    "Proponer un cambio por problema y la forma de verificar que lo arregla",
+    "Puntuar cada mejora con impacto, confianza y esfuerzo del 1 al 5 y ordenar por la suma"
+  ],
+  "restricciones": [
+    "Nada de rediseños completos: cambios concretos y aislados que se puedan probar",
+    "Si una observación se basa en menos de 20 grabaciones, márcala como indicio, no como conclusión",
+    "Separa siempre lo observado de lo interpretado"
+  ],
+  "formato_salida": {
+    "tabla_prioridades": ["observacion", "problema_del_usuario", "tipo", "cambio_propuesto", "impacto", "confianza", "esfuerzo", "prioridad"],
+    "top_3": "Ficha de las 3 primeras con el texto o elemento exacto que hay que cambiar",
+    "como_verificar": "Qué métrica debe moverse y en cuánto tiempo"
+  },
+  "criterios_calidad": ["Cada fila parte de un dato observado, no de una preferencia estética", "Las tres primeras se pueden implementar sin desarrollador o casi"],
+  "tono": "Concreto, de lista de tareas"
+}

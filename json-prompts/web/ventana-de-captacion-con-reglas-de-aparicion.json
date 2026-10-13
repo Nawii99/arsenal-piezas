@@ -1,0 +1,32 @@
+{
+  "tarea": "Diseñar una ventana de captación de emails para la web de [TU NEGOCIO] y definir sus reglas de aparición",
+  "contexto": {
+    "oferta": "[QUÉ DAS A CAMBIO DEL EMAIL: GUÍA, DESCUENTO, PLANTILLA, LISTA DE ESPERA]",
+    "paginas": "[EN QUÉ PÁGINAS DEBE APARECER Y EN CUÁLES NO]",
+    "visitante_tipo": "[QUIÉN ENTRA Y QUÉ ANDA BUSCANDO]",
+    "estilo": "[COLORES Y TONO DE MI MARCA]"
+  },
+  "contenido_de_la_ventana": {
+    "titular": "Máximo 8 palabras, con el beneficio concreto",
+    "apoyo": "Una frase de 15 palabras que explique qué recibe y cuándo",
+    "campos": "Solo email",
+    "boton": "Verbo más recompensa, nunca Suscribirse",
+    "salida": "Enlace de rechazo escrito con respeto, no en plan sarcástico",
+    "letra_pequena": "Privacidad, frecuencia de envío y baja en un clic"
+  },
+  "reglas_de_aparicion": [
+    "Nunca en los primeros [SEGUNDOS] de visita ni antes del primer desplazamiento",
+    "Disparadores posibles: intención de salida en ordenador, 60 por ciento de página leída en móvil, o segunda visita",
+    "Frecuencia máxima: una vez por persona cada [DÍAS] días",
+    "No aparecer si ya está suscrita ni durante el proceso de compra o de pago",
+    "Cerrable con la tecla escape, tocando fuera y con una equis grande y visible",
+    "En móvil, ocupar como mucho media pantalla y no tapar el menú"
+  ],
+  "variantes": "Genera 3 versiones del titular y el botón para ir probando cuál funciona mejor",
+  "formato_salida": "1) Textos de la ventana. 2) Tabla de reglas de aparición lista para configurar en la herramienta. 3) Las 3 variantes. 4) Qué medir durante 2 semanas y cuándo retirarla si no funciona.",
+  "restricciones": [
+    "Nada de bloquear el contenido ni de cuentas atrás falsas",
+    "Nada de urgencia inventada",
+    "Español de España, tuteando"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tarea": "Diseñar un calendario editorial de blog para 3 meses organizado en grupos temáticos, con artículo pilar y artículos satélite",
+  "contexto": {
+    "negocio": "[NOMBRE Y SECTOR]",
+    "servicios_a_vender": ["[SERVICIO 1]", "[SERVICIO 2]"],
+    "cliente_ideal": "[QUIÉN ES Y QUÉ LE PREOCUPA]",
+    "frecuencia": "[CUÁNTOS ARTÍCULOS AL MES]",
+    "quien_escribe": "[YO SOLO / EQUIPO / REDACTOR EXTERNO]",
+    "temas_ya_publicados": "[LISTA DE ARTÍCULOS QUE YA TIENES]",
+    "fecha_de_inicio": "[MES Y AÑO]"
+  },
+  "metodo": [
+    "Definir de 3 a 4 grupos temáticos que lleven directamente a los servicios que se quieren vender",
+    "Por cada grupo, un artículo pilar amplio y de 4 a 6 satélites que resuelvan dudas concretas",
+    "Repartir por fase del cliente: descubrimiento, comparación y decisión",
+    "Ordenar la publicación empezando por los que menos competencia tienen y más cerca están de la venta",
+    "Marcar qué artículo enlaza a cuál dentro de cada grupo"
+  ],
+  "restricciones": [
+    "No repetir un tema ya publicado: si aparece, proponer actualizarlo en lugar de crear uno nuevo",
+    "Nada de temas de moda sin relación con lo que vende el negocio",
+    "Cada artículo debe poder escribirse con lo que el negocio ya sabe, sin investigación imposible"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown",
+    "columnas": ["semana", "grupo_tematico", "tipo (pilar o satelite)", "titulo_propuesto", "palabra_clave", "fase_del_cliente", "objetivo", "enlaza_a", "esfuerzo (bajo/medio/alto)"],
+    "extra_final": "mapa de los grupos temáticos en lista anidada y 5 ideas de reserva por si algún tema se cae"
+  },
+  "criterios_calidad": [
+    "Cada título es específico y se entiende sin leer nada más",
+    "Todos los grupos temáticos conducen a un servicio concreto",
+    "El plan es realista para la frecuencia y el equipo indicados"
+  ]
+}

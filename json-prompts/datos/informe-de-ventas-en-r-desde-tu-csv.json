@@ -1,0 +1,50 @@
+{
+  "tarea": "Escribir un script de R que lea un CSV de ventas y genere un informe mensual con metricas, tablas y conclusiones escritas",
+  "contexto": {
+    "negocio": "[QUE VENDES Y A QUIEN]",
+    "herramienta": "R con RStudio, usando solo readr, dplyr, tidyr, lubridate, scales y knitr",
+    "nivel_del_usuario": "no programa: el script debe funcionar cambiando solo las variables del principio"
+  },
+  "entradas": {
+    "ruta_csv": "[C:/RUTA/VENTAS.CSV O ~/ventas.csv]",
+    "separador": "[; PARA EXPORTACIONES ESPANOLAS O , ]",
+    "decimal": "[, O .]",
+    "columnas": {
+      "fecha": "[NOMBRE DE TU COLUMNA DE FECHA]",
+      "cliente": "[NOMBRE DE TU COLUMNA DE CLIENTE]",
+      "producto": "[NOMBRE DE TU COLUMNA DE PRODUCTO]",
+      "unidades": "[NOMBRE DE TU COLUMNA DE CANTIDAD]",
+      "importe": "[NOMBRE DE TU COLUMNA DE IMPORTE SIN IVA]"
+    },
+    "periodo": "[EJEMPLO: 2025-01-01 A 2025-12-31]",
+    "moneda": "EUR"
+  },
+  "analisis_obligatorio": [
+    "Facturacion total, ticket medio, numero de pedidos y unidades del periodo",
+    "Evolucion mes a mes con variacion respecto al mes anterior y al mismo mes del ano anterior si hay datos",
+    "Top 10 productos y top 10 clientes por importe, con su porcentaje sobre el total",
+    "Concentracion: que porcentaje de la facturacion viene del 20 por ciento de clientes",
+    "Productos que caen mas de un 20 por ciento respecto al trimestre anterior",
+    "Deteccion de problemas en los datos: fechas invalidas, importes negativos, filas duplicadas y celdas vacias"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con bloques de codigo R",
+    "secciones": [
+      "1. Bloque de configuracion arriba del todo con todas las variables a rellenar",
+      "2. Script R completo y comentado en espanol, que imprime las tablas por consola y las guarda en CSV",
+      "3. Explicacion de que hace cada bloque en una frase",
+      "4. Plantilla de conclusiones: 5 frases tipo que el usuario rellena con los numeros que salgan",
+      "5. Errores tipicos al ejecutarlo en R y como resolverlos"
+    ]
+  },
+  "restricciones": [
+    "No inventes datos ni cifras de ejemplo como si fueran reales",
+    "El script debe avisar y parar si falta una columna, indicando cual",
+    "Nada de paquetes que exijan compilar o instalar cosas de sistema"
+  ],
+  "criterios_calidad": [
+    "Funciona con acentos y con importes en formato espanol",
+    "Se ejecuta entero sin editar nada mas que el bloque de configuracion",
+    "Las conclusiones hablan de decisiones de negocio, no de estadistica"
+  ]
+}

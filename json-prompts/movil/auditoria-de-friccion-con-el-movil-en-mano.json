@@ -1,0 +1,49 @@
+{
+  "tarea": "Auditar una app o web móvil recorriéndola a mano en un teléfono real y devolver una lista priorizada de puntos de fricción con su arreglo concreto",
+  "contexto": {
+    "producto": "[NOMBRE Y DIRECCIÓN O NOMBRE EN LA TIENDA]",
+    "recorrido_clave": "[EL CAMINO QUE DEBE COMPLETAR EL USUARIO: EJ. DESDE ABRIR HASTA PAGAR]",
+    "dispositivos": "[MÓVILES REALES DISPONIBLES, INCLUYENDO UNO ANTIGUO O DE PANTALLA PEQUEÑA]",
+    "tipo_usuario": "[NUEVO SIN CUENTA / YA REGISTRADO]",
+    "capturas": "[ADJUNTA CAPTURAS O DESCRIBE CADA PANTALLA]"
+  },
+  "puntos_a_revisar": [
+    "Alcance del pulgar: acciones importantes en la mitad inferior de la pantalla",
+    "Tamaño de los objetivos: nada táctil menor que la yema de un dedo ni pegado a otro botón",
+    "Texto legible sin acercar la pantalla y con contraste suficiente a pleno sol",
+    "Teclado: tipo correcto por campo, número para teléfonos, correo para correos, y que no tape el botón",
+    "Formularios: número de campos, campos obligatorios, mensajes de error junto al campo",
+    "Esperas: qué se ve mientras carga y qué pasa con conexión mala o sin conexión",
+    "Vuelta atrás: el botón atrás del sistema no debe romper el recorrido ni borrar lo escrito",
+    "Interrupciones: llamada entrante, bloqueo de pantalla y vuelta a la app sin perder datos",
+    "Modo oscuro, texto grande del sistema y rotación de pantalla",
+    "Costes ocultos y letra pequeña antes de pagar"
+  ],
+  "metodo": [
+    "1. Recorrer el camino clave sin ayudas, en el móvil, cronometrando cada pantalla",
+    "2. Repetirlo con datos móviles limitados y con el móvil antiguo",
+    "3. Anotar cada punto donde se duda, se retrocede o se toca dos veces lo mismo",
+    "4. Puntuar cada problema por frecuencia y por gravedad, de 1 a 3 cada uno",
+    "5. Multiplicar ambas notas para ordenar y marcar los que se arreglan cambiando solo un texto",
+    "6. Proponer el arreglo concreto y cómo se comprueba que quedó resuelto"
+  ],
+  "errores_a_evitar": [
+    "Auditar solo en el ordenador con la ventana estrecha",
+    "Probar con la cuenta de siempre ya rellena y con sesión iniciada",
+    "Mezclar gustos personales de diseño con problemas reales de uso",
+    "Dar una lista de 40 puntos sin orden de prioridad"
+  ],
+  "formato_salida": {
+    "tabla_problemas": "Una fila por problema con: pantalla, qué ocurre, por qué molesta, frecuencia, gravedad, prioridad, arreglo propuesto, esfuerzo",
+    "top_5": "Los cinco arreglos que más ganan por lo poco que cuestan",
+    "arreglos_de_texto": "Cambios que solo son microcopy, con el texto viejo y el nuevo",
+    "guion_de_prueba": "Pasos exactos para repetir la auditoría dentro de un mes",
+    "antes_y_despues": "Qué medir para saber si el arreglo funcionó"
+  },
+  "criterios_calidad": [
+    "Cada problema señala una pantalla concreta y una acción concreta",
+    "Toda fila tiene arreglo propuesto, no solo la queja",
+    "La prioridad se justifica con frecuencia y gravedad, no con opinión",
+    "Se ha probado en al menos dos móviles distintos y con conexión mala"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "tarea": "Definir la ficha de estilo visual de una marca y convertirla en un bloque de texto reutilizable en todos los prompts de video",
+  "entradas": {
+    "marca": "[NOMBRE Y QUE VENDE]",
+    "sensacion": "[CALIDO Y ARTESANAL / CLINICO Y PRECISO / JOVEN Y CALLEJERO / LUJO SOBRIO]",
+    "referencias": "[DOS ANUNCIOS, PELICULAS O CUENTAS QUE TE GUSTEN]",
+    "colores_de_marca": "[COLORES PRINCIPALES]",
+    "donde_se_publica": "[REDES / WEB / PANTALLA EN TIENDA]"
+  },
+  "decisiones_a_fijar": [
+    "Paleta: dos colores dominantes y uno de acento, descritos por nombre y no por codigo",
+    "Luz: fuente, direccion, dureza y hora del dia",
+    "Optica: distancia focal habitual y profundidad de campo",
+    "Camara: repertorio corto de movimientos permitidos y prohibidos",
+    "Textura: grano, contraste, nitidez, viraje de color",
+    "Ritmo: duracion media de plano y velocidad de la accion",
+    "Vestuario y atrezo: materiales y superficies que si aparecen y cuales no"
+  ],
+  "formato_salida": {
+    "ficha": "cada decision con su valor concreto y una frase de por que",
+    "bloque_estilo": "de 30 a 45 palabras en ingles para pegar al final de cualquier prompt",
+    "prompt_negativo_de_marca": "lo que nunca debe salir en un video de esta marca",
+    "tres_pruebas": "tres prompts de test para validar la ficha antes de producir la serie",
+    "que_puede_variar": "lo que si se puede cambiar entre videos sin romper el estilo"
+  },
+  "criterios_calidad": [
+    "Cada decision es comprobable mirando un fotograma",
+    "El bloque de estilo no contradice a la accion de ningun prompt",
+    "Dos personas distintas aplicando la ficha obtendrian videos parecidos"
+  ]
+}

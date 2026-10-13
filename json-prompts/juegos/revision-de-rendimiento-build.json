@@ -1,0 +1,53 @@
+{
+  "tarea": "Diagnosticar la caída de rendimiento de un juego o escena 3D y devolver un plan de ajustes ordenado por impacto, con mediciones antes y después.",
+  "contexto": "Autor sin perfil técnico usando un motor tipo Unity o Unreal. La causa casi nunca es el ordenador del desarrollador, sino el dispositivo del jugador y unos pocos excesos concretos.",
+  "entradas": {
+    "proyecto": "[MOTOR Y VERSIÓN, TIPO DE JUEGO]",
+    "sintoma": "[BAJA A X FOTOGRAMAS, TIRONES PUNTUALES, CALIENTA EL MÓVIL, TARDA EN CARGAR]",
+    "cuando_pasa": "[EN QUÉ ESCENA O ACCIÓN CONCRETA]",
+    "dispositivo_objetivo": "[MÓVIL DE GAMA MEDIA | PORTÁTIL SIN GRÁFICA | PC]",
+    "contenido_de_escena": "[NÚMERO APROXIMADO DE OBJETOS, LUCES, PARTÍCULAS Y TAMAÑO DE TEXTURAS]"
+  },
+  "procedimiento": [
+    "1. Distingue el síntoma: fotogramas bajos constantes es carga de escena; tirones puntuales es carga o generación de basura en memoria; calentamiento es trabajo continuo excesivo.",
+    "2. Mide antes de tocar nada: fotogramas por segundo en la escena problemática, en el dispositivo objetivo, y apúntalo.",
+    "3. Haz la prueba de aislamiento: desactiva por grupos (luces dinámicas, partículas, sombras, interfaz, sonido) y anota cuánto sube en cada caso.",
+    "4. Revisa las sospechas habituales por orden: luces dinámicas de más, sombras en tiempo real de todo, transparencias solapadas a pantalla completa, texturas enormes, demasiados materiales distintos, objetos que se dibujan sin verse.",
+    "5. Comprueba lo que se calcula cada fotograma sin necesidad: búsquedas de objetos, física de cosas quietas, animaciones fuera de cámara.",
+    "6. Aplica los ajustes de coste bajo primero: apagar sombras de objetos pequeños, reducir resolución de texturas, limitar partículas, activar oclusión y niveles de detalle.",
+    "7. Después toca los de coste medio: fusionar materiales, hornear la iluminación estática, dividir la escena en zonas.",
+    "8. Vuelve a medir después de cada cambio y anota la mejora; si un cambio no mejora, deshazlo.",
+    "9. Fija un presupuesto de rendimiento para el dispositivo objetivo: fotogramas mínimos, memoria de texturas y número de objetos por escena.",
+    "10. Comprueba en la compilación final, no en el editor, porque el editor miente.",
+    "11. Cierra con la lista de lo que queda pendiente y su coste estimado en horas."
+  ],
+  "restricciones": [
+    "Un cambio cada vez y medición después de cada uno.",
+    "Nada de tocar código si no es necesario: primero ajustes de escena y de importación.",
+    "Todas las mediciones en el dispositivo objetivo, nunca solo en el ordenador del desarrollador.",
+    "No propongas soluciones que empeoren el aspecto sin avisar del coste visual.",
+    "Explicaciones en lenguaje llano, cada término técnico con su traducción."
+  ],
+  "formato_salida": {
+    "bloque_1": "Hipótesis de causa según el síntoma, ordenadas por probabilidad.",
+    "bloque_2": "Protocolo de aislamiento: qué desactivar, en qué orden, qué anotar.",
+    "bloque_3": "Tabla de acciones: acción, dificultad, mejora esperada, coste visual.",
+    "bloque_4": "Plantilla de mediciones antes y después.",
+    "bloque_5": "Presupuesto de rendimiento para el dispositivo objetivo.",
+    "bloque_6": "Pendientes con horas estimadas."
+  },
+  "criterios_calidad": [
+    "Cada conclusión se apoya en una medición, no en una sospecha.",
+    "Los cambios se ordenan por mejora frente a esfuerzo.",
+    "Se prueba en la compilación final y en el dispositivo objetivo.",
+    "Los cambios que no mejoran se revierten.",
+    "El coste visual de cada ajuste está declarado."
+  ],
+  "errores_frecuentes": [
+    "Optimizar a ciegas cambiando diez cosas a la vez.",
+    "Fiarse de los fotogramas del editor.",
+    "Dejar sombras en tiempo real en objetos que nadie mira.",
+    "Texturas de 4K en objetos que ocupan 50 píxeles en pantalla.",
+    "Probar solo en el móvil más caro que tienes en casa."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "tarea": "Revisar un proyecto de videovigilancia en un negocio espanol y devolver el plan de camaras conforme a proteccion de datos, con la cartelería y el papeleo necesarios.",
+  "contexto": {
+    "negocio": "[TIPO: BAR, TIENDA, TALLER, CLINICA, COMUNIDAD DE VECINOS, ALMACEN]",
+    "responsable": "[NOMBRE O RAZON SOCIAL Y NIF]",
+    "empleados": "[NUMERO Y SI HAY REPRESENTANTES DE LOS TRABAJADORES]",
+    "finalidad_declarada": "[SEGURIDAD, CONTROL DE ACCESOS, PREVENCION DE ROBOS]"
+  },
+  "entradas": {
+    "camaras_previstas": "[LISTA: NUMERO | QUE ENFOCA | INTERIOR O EXTERIOR | CON O SIN AUDIO | FIJA O MOVIL]",
+    "grabacion": "[EN GRABADOR LOCAL / EN NUBE DEL FABRICANTE / AMBAS]",
+    "quien_ve_las_imagenes": "[DUENO, ENCARGADO, EMPRESA DE SEGURIDAD, INSTALADOR]",
+    "tiempo_de_conservacion_actual": "[DIAS]"
+  },
+  "reglas_que_debes_aplicar": [
+    "Las camaras no pueden enfocar la via publica salvo la franja imprescindible del acceso.",
+    "Prohibido enfocar zonas de descanso, vestuarios, aseos y taquillas.",
+    "Hay que informar a los trabajadores y a sus representantes antes de instalar.",
+    "Cartel informativo visible en cada acceso, con el icono de zona videovigilada, el responsable y como ejercer los derechos.",
+    "Conservacion maxima de 30 dias salvo que las imagenes documenten un hecho a disposicion de autoridades.",
+    "El audio solo se graba si esta muy justificado; por norma general, desactivalo.",
+    "Si un tercero accede a las imagenes hace falta contrato de encargado del tratamiento.",
+    "Hay que llevar registro de actividades de tratamiento e incluir la videovigilancia.",
+    "Grabar a escondidas a un empleado sin informacion previa es la via rapida a una sancion."
+  ],
+  "procedimiento": [
+    "1. Revisa camara por camara el encuadre y marca las que invaden zona prohibida, proponiendo giro, mascara de privacidad o retirada.",
+    "2. Ajusta la conservacion al minimo util y configura el borrado automatico.",
+    "3. Define quien accede, con que usuario y desde donde, y elimina los accesos compartidos.",
+    "4. Redacta el texto del cartel y di donde colgarlo.",
+    "5. Redacta la comunicacion a la plantilla y la clausula para el contrato o el tablon.",
+    "6. Lista el papeleo minimo y quien lo firma.",
+    "7. Anade la parte tecnica de seguridad: cambiar contrasenas por defecto, no abrir puertos al exterior, actualizar el grabador."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: CAMARA | QUE ENFOCA | VEREDICTO | CORRECCION PROPUESTA",
+    "bloque_2": "Texto listo para imprimir del cartel informativo",
+    "bloque_3": "Comunicacion a los trabajadores en un parrafo",
+    "bloque_4": "Checklist de papeleo: documento | quien lo firma | donde se guarda",
+    "bloque_5": "Ajustes tecnicos a aplicar en el grabador y en la red",
+    "bloque_6": "Aviso final: esto es orientacion practica, no asesoramiento juridico; consulta a un profesional si el caso es delicado"
+  },
+  "restricciones": [
+    "No cites articulos concretos si no estas seguro: describe la obligacion en lenguaje claro.",
+    "No propongas nunca camaras ocultas ni grabacion sin informar.",
+    "Marca como duda para abogado todo lo que roce despidos o pruebas laborales."
+  ],
+  "criterios_calidad": [
+    "Cada camara tiene veredicto y correccion concreta.",
+    "El cartel esta escrito, no descrito.",
+    "Se distingue lo obligatorio de lo recomendable."
+  ]
+}

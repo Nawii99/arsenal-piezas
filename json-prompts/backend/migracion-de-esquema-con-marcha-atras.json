@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir el plan y los scripts SQL de una migración de esquema en una base de datos en producción, con script de vuelta atrás",
+  "entradas": {
+    "cambio_deseado": "[QUÉ QUIERES CAMBIAR, EJ: DIVIDIR nombre_completo EN nombre Y apellidos]",
+    "tabla_actual": "[CREATE TABLE ACTUAL DE LA TABLA AFECTADA]",
+    "motor_sql": "[POSTGRESQL / MYSQL / SQL SERVER]",
+    "filas": "[NÚMERO APROXIMADO DE FILAS]",
+    "ventana_de_parada": "[PUEDO PARAR X MINUTOS / NO PUEDO PARAR EL SERVICIO]",
+    "aplicacion_que_la_usa": "[QUÉ APLICACIONES ESCRIBEN EN ESA TABLA]"
+  },
+  "procedimiento": [
+    "1. Elegir estrategia: cambio directo si la tabla es pequeña, o expandir-migrar-contraer si no se puede parar el servicio",
+    "2. Paso expandir: añadir columnas o tablas nuevas admitiendo nulos, sin tocar lo existente",
+    "3. Paso rellenar: copiar los datos por lotes para no bloquear la tabla, con consulta de progreso",
+    "4. Paso verificar: consultas que comparan el dato viejo y el nuevo fila a fila y cuentan discrepancias",
+    "5. Paso contraer: aplicar NOT NULL, restricciones e índices y retirar lo antiguo solo cuando la aplicación ya no lo use",
+    "6. Escribir el script de vuelta atrás de cada paso"
+  ],
+  "restricciones": [
+    "Ningún paso deja la aplicación anterior rota mientras se despliega la nueva",
+    "Nada de renombrar o borrar una columna en el mismo despliegue que la crea",
+    "Actualizaciones masivas por lotes con límite de filas, nunca de una vez",
+    "Copia de seguridad verificada antes de empezar"
+  ],
+  "formato_salida": {
+    "1_estrategia": "Cuál se elige y por qué, en cuatro líneas",
+    "2_scripts": "Un bloque de SQL por paso, numerado y en orden de ejecución",
+    "3_verificacion": "Consultas de comprobación con el resultado esperado",
+    "4_vuelta_atras": "Script de reversión por paso",
+    "5_checklist": "Lista de comprobación antes, durante y después, con tiempos estimados"
+  },
+  "criterios_calidad": [
+    "Se puede parar en cualquier paso sin dejar los datos a medias",
+    "La verificación demuestra que no se ha perdido ni una fila"
+  ]
+}

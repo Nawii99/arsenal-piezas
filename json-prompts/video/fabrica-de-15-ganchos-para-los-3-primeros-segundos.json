@@ -1,0 +1,47 @@
+{
+  "tarea": "Generar 15 ganchos distintos para los 3 primeros segundos de un anuncio en video vertical, listos para grabar y comparar entre si",
+  "contexto": {
+    "producto": "[PRODUCTO O SERVICIO]",
+    "cliente": "[A QUIEN VA DIRIGIDO]",
+    "dolor_principal": "[LO QUE MAS LE MOLESTA HOY]",
+    "deseo": "[LO QUE QUIERE CONSEGUIR]",
+    "plataforma": "[TIKTOK / REELS / SHORTS / YOUTUBE]",
+    "gancho_actual": "[COMO EMPIEZA TU ANUNCIO AHORA]"
+  },
+  "tipos_de_gancho_a_cubrir": [
+    "Pregunta directa al cliente concreto",
+    "Declaracion polemica o contraintuitiva",
+    "Error comun que casi todos cometen",
+    "Resultado ensenado antes de explicarlo",
+    "Confesion personal o metedura de pata",
+    "Comparacion visual entre dos opciones",
+    "Aviso o advertencia util",
+    "Respuesta a un comentario o resena real",
+    "Numero concreto o precio dicho de golpe",
+    "Accion rara en pantalla que obliga a mirar"
+  ],
+  "para_cada_gancho_devuelve": [
+    "Frase hablada literal, maximo 14 palabras",
+    "Rotulo en pantalla, maximo 7 palabras",
+    "Que se ve exactamente en el primer fotograma",
+    "Tipo de gancho al que pertenece",
+    "A quien deja fuera y a quien atrae"
+  ],
+  "restricciones": [
+    "Prohibido empezar con hola, buenas o el nombre de la marca",
+    "Prohibido el clickbait que no se cumple luego en el video",
+    "Nada de promesas de dinero facil ni de resultados garantizados",
+    "Espanol de Espana, hablado, tuteando"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla de 15 filas",
+    "columnas": ["Numero", "Tipo", "Frase hablada", "Rotulo", "Primer fotograma", "Riesgo"],
+    "cierre": "Ranking de los 5 que probarias primero, con una linea explicando por que, y el orden de test sugerido"
+  },
+  "criterios_calidad": [
+    "Los 15 son claramente distintos entre si, no variaciones de la misma frase",
+    "Cada uno se puede grabar sin material extra",
+    "Todos encajan con el cuerpo del anuncio que ya existe",
+    "Ninguno promete algo que el producto no hace"
+  ]
+}

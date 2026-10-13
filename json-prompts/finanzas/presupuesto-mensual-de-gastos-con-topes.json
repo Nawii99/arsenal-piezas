@@ -1,0 +1,39 @@
+{
+  "tarea": "Construir un presupuesto mensual de gastos por categoría con topes realistas y reglas de aviso",
+  "contexto": {
+    "negocio": "[QUÉ HACE TU NEGOCIO]",
+    "meses_a_presupuestar": "[NÚMERO DE MESES, POR EJEMPLO 6]",
+    "estacionalidad": "[MESES FUERTES Y MESES FLOJOS DE TU NEGOCIO]"
+  },
+  "entradas": {
+    "gasto_historico": "[GASTO REAL DE LOS ÚLTIMOS 3 MESES POR CATEGORÍA]",
+    "ingresos_previstos": "[FACTURACIÓN QUE ESPERAS CADA MES]",
+    "objetivo_beneficio": "[QUÉ QUIERES QUE TE QUEDE AL MES]",
+    "compromisos_ya_firmados": "[ALQUILER, NÓMINAS, PRÉSTAMOS, RENOVACIONES ANUALES Y SUS FECHAS]"
+  },
+  "procedimiento": [
+    "Separar gastos fijos (no se pueden mover a corto plazo) de variables (dependen de la actividad)",
+    "Calcular la media de los 3 meses por categoría y descartar los importes puntuales que no se repetirán",
+    "Fijar el tope de cada categoría partiendo de la media, ajustando por estacionalidad y por el objetivo de beneficio",
+    "Expresar los gastos variables también como porcentaje sobre la facturación prevista, para que suban y bajen con las ventas",
+    "Colocar en su mes los pagos gordos que solo caen una o dos veces al año (seguros, impuestos, renovaciones)",
+    "Comprobar que ingresos previstos menos gastos presupuestados llegan al objetivo de beneficio; si no llegan, decir qué categorías hay que recortar y cuánto",
+    "Definir un semáforo por categoría: verde hasta el 90% del tope, ámbar del 90 al 100%, rojo por encima"
+  ],
+  "restricciones": [
+    "Nada de recortes imposibles: si una categoría es fija, decirlo y no bajarla",
+    "Dejar siempre un colchón para imprevistos entre el 3% y el 5% del gasto total",
+    "No incluir IVA en el presupuesto de gasto si eres una empresa que lo deduce; indicarlo al principio"
+  ],
+  "formato_salida": {
+    "tabla_1": "Presupuesto mes a mes: categoría, tipo, media histórica, tope del mes, motivo del ajuste",
+    "tabla_2": "Calendario de pagos gordos: mes, concepto, importe",
+    "resumen": ["Gasto total presupuestado por mes", "Beneficio previsto por mes", "Los 3 topes que más te va a costar respetar y por qué"],
+    "reglas_de_aviso": "Lista de frases del tipo: si en marketing pasas de X euros antes del día 20, para la campaña"
+  },
+  "criterios_calidad": [
+    "Los topes salen de datos reales, no de cifras redondas inventadas",
+    "Cada mes cuadra: ingresos menos gastos igual al beneficio mostrado",
+    "Se ve claro qué hacer cuando una categoría se pone en rojo"
+  ]
+}

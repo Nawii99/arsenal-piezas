@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar un acuerdo de cesión de derechos de contenido y de imagen para colaborar con un creador o usar el testimonio de un cliente en publicidad",
+  "rol": "Asesor legal de marketing con experiencia en campañas con creadores",
+  "partes": {
+    "marca": "[TU EMPRESA, CIF Y DIRECCIÓN]",
+    "creador": "[NOMBRE, DNI Y SI ES MAYOR DE EDAD]"
+  },
+  "objeto": {
+    "contenido": "[NÚMERO Y TIPO DE PIEZAS: VÍDEOS, FOTOS, RESEÑA EN VÍDEO...]",
+    "aparece_su_imagen": "[SÍ / NO]",
+    "usos": "[ORGÁNICO EN TUS REDES, ANUNCIOS DE PAGO, WEB, EMAIL, TIENDA FÍSICA]",
+    "plazo": "[MESES O AÑOS DE USO]",
+    "territorio": "[ESPAÑA / UE / MUNDIAL]",
+    "exclusividad": "[SÍ, CON PROHIBICIÓN DE TRABAJAR CON COMPETENCIA X MESES / NO]",
+    "contraprestacion": "[IMPORTE, PRODUCTO O AMBOS]"
+  },
+  "pasos": [
+    "Separa dos permisos distintos: derechos sobre el contenido creado y derecho a usar su imagen y su voz",
+    "Detalla si la marca puede editar, recortar, subtitular y crear variantes del contenido",
+    "Fija quién publica, con qué menciones y con qué etiquetado de publicidad según la ley española",
+    "Regula la música y los terceros que aparezcan en el vídeo: el creador garantiza tener permisos",
+    "Incluye la revocación: qué pasa si el creador pide dejar de aparecer y en qué plazo se retira",
+    "Añade tratamiento de datos personales y conservación de los archivos"
+  ],
+  "restricciones": [
+    "Nada de cesiones indefinidas de imagen sin posibilidad de revocación",
+    "Si el creador es menor, exige consentimiento de los tutores y dilo de forma expresa",
+    "Documento de dos páginas como máximo, en lenguaje claro"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "Acuerdo completo listo para firmar, con espacios de firma",
+      "Versión corta por correo o WhatsApp para colaboraciones pequeñas, válida como aceptación",
+      "Checklist de comprobaciones antes de meter el contenido en anuncios"
+    ]
+  },
+  "criterios_calidad": [
+    "Usos, plazo y territorio aparecen escritos con valores concretos, no con genéricos",
+    "Distingue con claridad el uso orgánico del uso en publicidad pagada",
+    "Incluye recordatorio de guardar el acuerdo firmado junto a los archivos entregados"
+  ]
+}

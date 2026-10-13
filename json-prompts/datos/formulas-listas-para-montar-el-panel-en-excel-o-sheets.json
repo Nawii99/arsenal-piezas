@@ -1,0 +1,35 @@
+{
+  "tarea": "Dame las fórmulas y los pasos exactos para montar un cuadro de mando sobre mi hoja de cálculo actual",
+  "herramienta": "[EXCEL / GOOGLE SHEETS] en idioma [ESPAÑOL / INGLÉS]",
+  "entradas": {
+    "hoja_de_datos": "[NOMBRE DE LA HOJA, POR EJEMPLO Ventas]",
+    "columnas": "[LISTA DE COLUMNAS CON SU LETRA: A Fecha, B Cliente, C Producto, D Unidades, E Importe, F Canal]",
+    "fila_de_ejemplo": "[PEGA AQUÍ UNA FILA REAL DE DATOS]",
+    "periodo": "[DESDE QUÉ FECHA HASTA QUÉ FECHA]",
+    "calculos_que_necesito": "[VENTAS POR MES, TOP 10 CLIENTES, TICKET MEDIO, VENTAS POR CANAL, COMPARATIVA CON EL AÑO ANTERIOR]"
+  },
+  "pasos": [
+    "Revisa si las columnas indicadas bastan y avisa de las que faltan antes de dar nada",
+    "Propón una hoja aparte llamada Panel para que las fórmulas no ensucien los datos originales",
+    "Da la fórmula concreta con las referencias de mis columnas, no con ejemplos genéricos",
+    "Explica en una línea qué hace cada fórmula y en qué celda hay que pegarla",
+    "Añade una tabla dinámica cuando sea más simple que la fórmula y describe los campos a arrastrar",
+    "Termina con comprobaciones para saber si los números están bien"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: qué quiero calcular | celda donde va | fórmula lista para pegar | qué hace",
+    "bloque_2": "Tablas dinámicas paso a paso: filas, columnas, valores y filtros",
+    "bloque_3": "Gráficos recomendados para cada cálculo y por qué ese y no otro",
+    "bloque_4": "Comprobaciones: la suma del panel debe coincidir con el total de la hoja de datos, celdas vacías, fechas mal escritas, duplicados"
+  },
+  "restricciones": [
+    "Usa funciones estándar y disponibles en la versión indicada; si una función es reciente, ofrece alternativa clásica",
+    "Nada de macros ni de scripts",
+    "Si una fórmula puede dar error por celdas vacías, envuélvela para que no muestre error"
+  ],
+  "criterios_calidad": [
+    "Puedo copiar y pegar cada fórmula sin cambiar nada más que el rango si crece la tabla",
+    "Los cálculos siguen funcionando cuando añado filas nuevas",
+    "Cada número del panel se puede rastrear hasta los datos de origen"
+  ]
+}

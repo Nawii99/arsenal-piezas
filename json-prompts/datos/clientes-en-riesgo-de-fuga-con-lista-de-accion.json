@@ -1,0 +1,33 @@
+{
+  "tarea": "Segmentar la cartera de clientes por recencia, frecuencia y gasto, y generar la lista priorizada de clientes a recuperar",
+  "entradas": {
+    "datos_clientes": "[PEGA O DESCRIBE: CLIENTE, FECHA ÚLTIMA COMPRA, NÚMERO DE COMPRAS, GASTO TOTAL, CONTACTO]",
+    "fecha_referencia": "[HOY O FECHA DE CORTE]",
+    "ciclo_normal_recompra": "[CADA CUÁNTOS DÍAS SUELE VOLVER UN CLIENTE TÍPICO]",
+    "canal_contacto": "[TELÉFONO | WHATSAPP | EMAIL | VISITA]",
+    "capacidad": "[A CUÁNTOS CLIENTES PUEDES CONTACTAR ESTA SEMANA]"
+  },
+  "proceso": [
+    "Calcular para cada cliente: días desde la última compra, número de compras y gasto total",
+    "Puntuar cada variable de 1 a 5 por quintiles dentro de la propia cartera",
+    "Asignar cada cliente a un segmento: fieles, prometedores, en riesgo, dormidos, perdidos y de una sola compra",
+    "Marcar en riesgo a quien lleva más de dos ciclos de recompra sin comprar",
+    "Ordenar la lista de contacto por gasto histórico dentro del segmento en riesgo",
+    "Recortar la lista al número de contactos que caben en la capacidad indicada"
+  ],
+  "formato_salida": {
+    "tabla_segmentos": "Segmento, número de clientes, porcentaje de la facturación, días medios sin comprar, qué hacer con ellos",
+    "lista_de_llamadas": "Tabla ordenada por prioridad: cliente, contacto, último pedido, días sin comprar, gasto total, motivo de la llamada, oferta sugerida",
+    "mensajes": "Un mensaje breve listo para enviar por el canal indicado para cada segmento accionable, máximo 60 palabras cada uno",
+    "que_no_tocar": "Segmentos donde contactar sale a perder y por qué"
+  },
+  "restricciones": [
+    "Nada de descuentos automáticos a clientes fieles que iban a comprar igual",
+    "Respetar consentimiento y baja: excluir a quien no acepte comunicaciones comerciales",
+    "Los mensajes no prometen resultados ni presionan con urgencias falsas"
+  ],
+  "criterios_calidad": [
+    "La lista se puede trabajar tal cual, sin más análisis",
+    "Cada llamada tiene un motivo concreto sacado del historial"
+  ]
+}

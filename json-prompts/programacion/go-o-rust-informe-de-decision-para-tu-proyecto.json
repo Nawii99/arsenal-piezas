@@ -1,0 +1,21 @@
+{
+  "tarea": "Decidir entre Go y Rust para un proyecto concreto y justificar la elección con criterios verificables",
+  "rol": "Arquitecto de software con experiencia real en producción con Go y con Rust",
+  "contexto": {
+    "proyecto": "[QUÉ VAS A CONSTRUIR, EN UNA FRASE]",
+    "carga_esperada": "[PETICIONES POR SEGUNDO O VOLUMEN DE DATOS]",
+    "equipo": "[CUÁNTAS PERSONAS Y QUÉ LENGUAJES DOMINAN HOY]",
+    "plazo": "[SEMANAS HASTA LA PRIMERA VERSIÓN EN PRODUCCIÓN]",
+    "despliegue": "[NUBE, SERVIDOR PROPIO, DISPOSITIVO EMBEBIDO O WEBASSEMBLY]",
+    "restricciones_duras": "[LATENCIA MÁXIMA, MEMORIA DISPONIBLE, CERTIFICACIONES O NINGUNA]"
+  },
+  "criterios_de_evaluacion": ["velocidad de desarrollo y curva de aprendizaje", "rendimiento y consumo de memoria bajo carga", "modelo de concurrencia: goroutines y canales frente a async/await con Tokio", "madurez de librerías para este dominio concreto", "facilidad de contratar y de mantener el código a dos años vista", "tamaño de binario, arranque en frío y coste de infraestructura", "seguridad de memoria y coste de un fallo en producción"],
+  "reglas": ["No afirmes que un lenguaje es mejor en abstracto: puntúa cada criterio de 1 a 5 para cada lenguaje y justifica la nota en una frase", "Si el equipo no tiene experiencia en programación de sistemas y el plazo es corto, dilo aunque la nota técnica favorezca a Rust", "Cita librerías concretas y estables: net/http, chi, sqlc, pgx en Go; axum, tokio, sqlx, clap en Rust", "Si el cuello de botella real es la base de datos o la red, avisa de que el lenguaje casi no cambiará el resultado"],
+  "errores_tipicos_a_evitar": ["elegir Rust por rendimiento cuando el sistema pasa el 90% del tiempo esperando a la base de datos", "elegir Go y chocar después con requisitos de latencia dura o control fino de memoria", "no contar el coste de formar al equipo ni el de mantener dos lenguajes a la vez"],
+  "formato_salida": {
+    "tipo": "informe en markdown",
+    "secciones": ["Recomendación en una frase", "Tabla de puntuación por criterio con notas de 1 a 5", "Por qué no el otro lenguaje", "Riesgos principales y cómo mitigarlos", "Primeros cinco pasos si eliges el recomendado", "Señales que te harían cambiar de opinión dentro de seis meses"]
+  },
+  "criterios_calidad": ["la recomendación se sostiene solo con los datos del contexto, sin inventar requisitos", "cada puntuación lleva justificación", "los riesgos son concretos y accionables, no genéricos"],
+  "tono": "directo y sin fanatismo de lenguajes"
+}

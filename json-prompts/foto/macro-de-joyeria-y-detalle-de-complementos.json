@@ -1,0 +1,33 @@
+{
+  "tarea": "Escribir el prompt de imagen macro para [PIEZA DE JOYERIA O COMPLEMENTO PEQUENO] de [NOMBRE DE TU MARCA]",
+  "entradas": {
+    "pieza": "[ANILLO / PENDIENTES / RELOJ / GAFAS]",
+    "material": "[PLATA / ORO / ACERO / RESINA] con acabado [PULIDO / MATE / SATINADO]",
+    "piedra_o_cristal": "[TIPO Y COLOR, O NINGUNO]",
+    "detalle_clave": "[GRABADO, ENGARCE, ESLABON O BISAGRA QUE HAY QUE VER]"
+  },
+  "tecnica": {
+    "lente": "macro 100 mm a distancia corta",
+    "diafragma": "f/11 a f/16 con apilado de enfoque para que toda la pieza este nitida",
+    "luz": "caja de luz envolvente o difusor curvo para que el metal refleje gradientes suaves",
+    "acentos": "una tira de luz estrecha para dibujar el filo brillante del metal",
+    "negros": "tarjetas negras a los lados para dar forma al reflejo y evitar el gris plano",
+    "superficie": "[PIEDRA OSCURA / TERCIOPELO / PAPEL SATINADO / CRISTAL CON REFLEJO]"
+  },
+  "restricciones": [
+    "Sin puntos blancos quemados sobre el metal",
+    "Sin polvo, huellas ni pelusas visibles",
+    "El brillo de la piedra debe ser realista, no destellos de estrella artificiales",
+    "Nada de manos ni piel salvo que se pida expresamente",
+    "Proporciones reales de la pieza, sin exagerar el tamano de la piedra"
+  ],
+  "formato_salida": {
+    "variantes": ["macro frontal del detalle clave", "tres cuartos con reflejo de acento", "pieza sobre superficie con sombra suave", "pieza puesta en [OREJA / MUNECA / DEDO] con piel neutra"],
+    "cada_variante": ["prompt en ingles", "prompt negativo", "relacion de aspecto"]
+  },
+  "criterios_calidad": [
+    "Se aprecia el grabado o el engarce al ver la imagen a tamano completo",
+    "El tono del metal se distingue con claridad de otro metal parecido",
+    "La pieza parece fotografiada, no dibujada"
+  ]
+}

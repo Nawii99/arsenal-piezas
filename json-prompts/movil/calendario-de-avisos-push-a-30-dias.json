@@ -1,0 +1,47 @@
+{
+  "tarea": "Construir un calendario de 30 días de notificaciones push para una app, con reglas de segmentación, frecuencia y silencio",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "accion_valiosa": "[LA ACCIÓN QUE QUIERES QUE REPITAN: EJ. REGISTRAR UN GASTO, RESERVAR, PUBLICAR]",
+    "frecuencia_natural": "[CADA CUÁNTO TIENE SENTIDO USARLA: DIARIA, SEMANAL, PUNTUAL]",
+    "segmentos": "[GRUPOS QUE SABES DISTINGUIR: NUEVOS, ACTIVOS, DORMIDOS, DE PAGO]",
+    "herramienta": "[DESDE DÓNDE ENVÍAS: EJ. PANEL PROPIO, ONESIGNAL, FIREBASE]",
+    "zona_horaria": "[ESPAÑA PENINSULAR / CANARIAS / VARIOS PAÍSES]"
+  },
+  "tipos_de_aviso": [
+    "Transaccional: algo le ha pasado a este usuario y le importa ahora",
+    "Recordatorio pactado: él eligió que se lo recordaras y a qué hora",
+    "Reenganche: lleva días sin entrar y hay algo esperándole",
+    "Novedad: función nueva que afecta a lo que ya usaba",
+    "Promoción: como máximo uno cada dos semanas y nunca dos seguidos"
+  ],
+  "metodo": [
+    "1. Repartir los 30 días por segmento, no por calendario general: cada grupo tiene su propia secuencia",
+    "2. Poner un tope duro: máximo 3 avisos por semana por persona y máximo 1 al día",
+    "3. Asignar horas realistas por segmento y evitar la franja de 22:00 a 8:00",
+    "4. Escribir cada aviso con título de hasta 40 caracteres y cuerpo de hasta 110, porque más se corta",
+    "5. Definir a qué pantalla concreta abre cada aviso, nunca a la pantalla de inicio",
+    "6. Añadir reglas de silencio: si ya hizo la acción, ese aviso se cancela",
+    "7. Definir la revisión: qué mirar el día 31 para decidir qué se queda"
+  ],
+  "errores_a_evitar": [
+    "Enviar el mismo aviso a todos los usuarios a la misma hora",
+    "Avisos de marketing disfrazados de alerta urgente",
+    "Abrir siempre en la pantalla de inicio y obligar a buscar",
+    "Enviar a quien ya hizo la acción que le estás pidiendo",
+    "Medir solo aperturas y no mirar las desinstalaciones ni las bajas de notificaciones"
+  ],
+  "formato_salida": {
+    "tabla_calendario": "Una fila por aviso con: día, segmento, tipo, hora, título, cuerpo, pantalla de destino, condición de cancelación",
+    "reglas_globales": "Topes de frecuencia, franjas prohibidas y prioridad si dos avisos coinciden el mismo día",
+    "kit_reenganche": "3 secuencias distintas para dormidos de 7, 30 y 90 días",
+    "cuadro_de_control": "Las 5 cifras a revisar cada semana con su umbral de alarma",
+    "lista_de_no_enviar": "Casos en los que se cancela el envío aunque toque por calendario"
+  },
+  "criterios_calidad": [
+    "Ningún usuario recibe más de 3 avisos en una semana",
+    "Cada aviso se entiende sin abrir la app y dice qué ha pasado o qué gana",
+    "Todos abren en una pantalla concreta relacionada con el texto",
+    "El plan incluye qué hacer si suben las bajas de notificaciones"
+  ]
+}

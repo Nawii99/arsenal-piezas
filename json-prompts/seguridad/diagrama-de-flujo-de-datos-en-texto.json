@@ -1,0 +1,33 @@
+{
+  "tarea": "Construir un diagrama de flujo de datos con fronteras de confianza para preparar un modelado de amenazas",
+  "sistema": {
+    "nombre": "[NOMBRE DEL SISTEMA O APLICACIÓN]",
+    "que_hace": "[QUÉ RESUELVE Y PARA QUIÉN]",
+    "usuarios": "[CLIENTES, EMPLEADOS, ADMINISTRADORES, PROVEEDORES]",
+    "componentes": "[WEB, APP MÓVIL, BASE DE DATOS, PANEL DE ADMIN, CORREO, ALMACÉN DE FICHEROS]",
+    "servicios_externos": "[PASARELA DE PAGO, EMAIL MARKETING, ANALÍTICA, MENSAJERÍA, IA]",
+    "datos_que_circulan": "[NOMBRE, EMAIL, DIRECCIÓN, TARJETA, DNI, HISTORIAL]"
+  },
+  "instrucciones": [
+    "Identifica los elementos en cuatro tipos: actores externos, procesos, almacenes de datos y flujos",
+    "Traza cada flujo indicando qué dato viaja, en qué dirección y si va cifrado",
+    "Dibuja las fronteras de confianza: internet a servidor, servidor a base de datos, empresa a proveedor externo, usuario normal a administrador",
+    "Marca dónde se guardan datos personales y cuánto tiempo se quedan",
+    "Termina con las preguntas que habría que confirmar con quien programó el sistema"
+  ],
+  "restricciones": [
+    "No inventes componentes que no te he dado: si sospechas que falta alguno, ponlo como pregunta",
+    "El diagrama Mermaid debe ser válido y legible, con nombres en español"
+  ],
+  "formato_salida": {
+    "bloque_1": "Diagrama en Mermaid (flowchart) con subgráficos por frontera de confianza",
+    "bloque_2": "Tabla de flujos con columnas: Origen, Destino, Dato que viaja, Cifrado (sí/no/no sé), Frontera que cruza",
+    "bloque_3": "Lista de almacenes de datos con qué guardan y quién los puede leer",
+    "bloque_4": "Cinco preguntas pendientes para el desarrollador o proveedor"
+  },
+  "criterios_calidad": [
+    "Cada frontera de confianza queda visible en el diagrama, no solo mencionada",
+    "No queda ningún flujo sin decir qué dato transporta",
+    "Se identifican copias de datos escondidas: exportaciones a Excel, correos con adjuntos, entornos de pruebas y copias de seguridad"
+  ]
+}

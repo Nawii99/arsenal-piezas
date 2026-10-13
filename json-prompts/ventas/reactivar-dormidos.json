@@ -1,0 +1,50 @@
+{
+  "tarea": "Diseña una campaña para reactivar clientes que compraron y llevan tiempo sin volver: cómo segmentarlos, qué mensaje mandar a cada grupo y cómo medirlo.",
+  "contexto": {
+    "negocio": "[QUÉ VENDO]",
+    "frecuencia_normal_de_compra": "[CADA CUÁNTO COMPRA UN CLIENTE SANO]",
+    "canales_que_tengo": "[EMAIL / WHATSAPP / SMS / LLAMADA / INSTAGRAM]",
+    "permiso": "[TENGO CONSENTIMIENTO PARA ESCRIBIRLES: SÍ / NO / SOLO ALGUNOS]"
+  },
+  "entradas": {
+    "lista": "[CLIENTES CON: ÚLTIMA COMPRA, QUÉ COMPRÓ, IMPORTE, VECES QUE HA COMPRADO]",
+    "novedades": "[QUÉ HAY NUEVO DESDE QUE SE FUERON: PRODUCTO, SERVICIO, HORARIO, LOCAL, MEJORA]",
+    "margen_disponible": "[HASTA CUÁNTO PUEDO INVERTIR EN INCENTIVO SIN PERDER DINERO]"
+  },
+  "metodo": [
+    "1. Clasifica la lista en cuatro grupos: recientes que se han saltado un ciclo, dormidos de medio plazo, dormidos de largo plazo y los que tuvieron una mala experiencia.",
+    "2. Asigna a cada grupo un motivo probable de marcha y un objetivo distinto de la campaña.",
+    "3. Escribe un mensaje por grupo con esta estructura: te echamos de menos no, mejor un motivo concreto para escribir hoy, algo nuevo o útil, y una acción muy fácil.",
+    "4. Reserva el incentivo económico solo para el grupo de largo plazo, y que sea de valor añadido antes que descuento.",
+    "5. Para el grupo de mala experiencia, prepara un mensaje de una sola pregunta pidiendo qué falló, sin vender nada.",
+    "6. Define el calendario: primer mensaje, recordatorio a los cuatro días y cierre a los diez, y la baja fácil en todos.",
+    "7. Define cómo mido: respuestas, pedidos, importe recuperado y bajas."
+  ],
+  "errores_a_evitar": [
+    "Mandar el mismo mensaje a toda la lista.",
+    "Empezar con un descuento grande: enseña al cliente a esperar rebajas.",
+    "Escribir a quien pidió no recibir comunicaciones.",
+    "Mensajes largos con historia de la empresa.",
+    "No preparar qué se hace con quien responde: la campaña muere en la bandeja de entrada."
+  ],
+  "formato_salida": {
+    "segmentos": "Los cuatro grupos con su criterio numérico y cuántos clientes míos entran en cada uno si te he pasado la lista.",
+    "mensajes": "Un mensaje por grupo y canal, listos para copiar, con asunto y primera línea.",
+    "secuencia": "Calendario con día, canal y mensaje.",
+    "respuestas": "Qué contesto a: me interesa, ahora no, ya no lo necesito, y a la queja antigua.",
+    "medicion": "Tabla sencilla para apuntar enviados, respuestas, pedidos e importe."
+  },
+  "restricciones": [
+    "Español de España, tuteo, cercano y sin exageraciones.",
+    "Máximo 60 palabras por mensaje de WhatsApp y 120 en email.",
+    "Incluir siempre forma de darse de baja y respetar la protección de datos.",
+    "Prohibido inventar promociones que yo no he autorizado."
+  ],
+  "criterios_calidad": [
+    "Cada mensaje tiene un motivo creíble para escribir precisamente hoy.",
+    "Solo un grupo lleva descuento y cabe dentro del margen que te he dado.",
+    "La acción que se pide se hace en un clic o respondiendo una palabra.",
+    "Se puede ejecutar en una tarde sin herramientas de pago."
+  ],
+  "si_faltan_datos": "Si no tengo fechas de última compra, propón cómo reconstruir los grupos con lo que sí tengo, como facturas o pedidos."
+}

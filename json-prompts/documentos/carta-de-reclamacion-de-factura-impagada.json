@@ -1,0 +1,36 @@
+{
+  "tarea": "Redactar una secuencia de reclamacion de factura impagada de un autonomo o pequena empresa a un cliente en Espana, desde el recordatorio hasta el requerimiento previo a la via judicial",
+  "entradas": {
+    "acreedor": "[TU NOMBRE O EMPRESA Y NIF]",
+    "deudor": "[NOMBRE DEL CLIENTE Y PERSONA DE CONTACTO]",
+    "factura": "[NUMERO, FECHA E IMPORTE CON IVA]",
+    "vencimiento": "[FECHA DE VENCIMIENTO PACTADA]",
+    "trabajo": "[QUE ENTREGASTE Y CUANDO]",
+    "comunicaciones_previas": "[QUE LE HAS ESCRITO YA Y QUE TE HA RESPONDIDO]",
+    "relacion": "[QUIERES SEGUIR TRABAJANDO CON EL? SI O NO]",
+    "plazo_final": "[DIAS QUE LE DAS PARA PAGAR]"
+  },
+  "pasos": [
+    "Escribir tres textos escalonados: recordatorio cordial, reclamacion formal y requerimiento fehaciente previo a acciones legales",
+    "En la reclamacion formal, incluir el detalle de la factura, los dias de retraso y la mencion a la Ley 3/2004 de lucha contra la morosidad y a los intereses de demora e indemnizacion por costes de cobro",
+    "Ajustar el tono al dato de si quiere conservar al cliente",
+    "Proponer canal y prueba de envio para cada paso, incluido burofax con acuse en el ultimo",
+    "Anadir un mensaje corto de WhatsApp o telefono para acompanar cada envio"
+  ],
+  "restricciones": [
+    "Sin amenazas, insultos ni menciones a listas de morosos como forma de presion",
+    "No calcules intereses exactos: indica la formula y pide el tipo vigente al usuario",
+    "Cada carta cabe en una pagina"
+  ],
+  "formato_salida": {
+    "email_1": "Recordatorio cordial listo para copiar",
+    "email_2": "Reclamacion formal con detalle de importes",
+    "burofax": "Requerimiento formal con encabezado, cuerpo y cierre",
+    "calendario": "Que enviar y en que dia contando desde hoy",
+    "siguiente_paso": "Que opciones tiene si no paga, explicadas en 4 lineas"
+  },
+  "criterios_calidad": [
+    "Los tres textos se pueden enviar sin retoques salvo los datos entre corchetes",
+    "El requerimiento sirve como prueba de reclamacion previa"
+  ]
+}

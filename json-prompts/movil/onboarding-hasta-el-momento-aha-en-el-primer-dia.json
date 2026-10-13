@@ -1,0 +1,33 @@
+{
+  "tarea": "Rediseñar el onboarding para que el usuario llegue al momento de valor en la primera sesión",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "momento_aha": "[LA ACCIÓN CONCRETA QUE HACE QUE EL USUARIO ENTIENDA EL VALOR]",
+    "onboarding_actual": "[LISTA LOS PASOS DE HOY, EN ORDEN]",
+    "abandono": "[EN QUÉ PASO SE CAE MÁS GENTE, SI LO SABES]",
+    "datos_que_pides": "[REGISTRO, PERMISOS, TARJETA, FORMULARIOS...]",
+    "retencion_d1": "[PORCENTAJE ACTUAL O: no lo sé]"
+  },
+  "instrucciones": [
+    "Cuenta cuántos pasos y cuántos toques hay hoy hasta el momento aha y di cuántos deberían quedar",
+    "Marca cada paso como imprescindible antes del valor o aplazable a después",
+    "Aplaza registro, permisos y pagos todo lo posible; explica el orden recomendado y por qué",
+    "Propón una versión reducida del recorrido, pantalla a pantalla, con el texto principal de cada una",
+    "Añade un estado inicial útil: qué ve el usuario cuando aún no tiene contenido propio",
+    "Define el mensaje in-app y el push del día 1 solo para quien no llegó al momento aha",
+    "Indica los eventos que hay que medir en cada paso para saber dónde se cae"
+  ],
+  "restricciones": [
+    "Nada de pantallas de bienvenida con tres diapositivas explicando bondades",
+    "No pidas el permiso de notificaciones antes de que el usuario reciba valor",
+    "Cada pantalla propuesta tiene un único objetivo y un botón principal"
+  ],
+  "formato_salida": {
+    "secciones": ["Diagnóstico del recorrido actual", "Recorrido propuesto pantalla a pantalla", "Qué se aplaza y a qué momento", "Estado inicial vacío", "Mensajes del día 1", "Eventos a medir", "Qué probar primero"]
+  },
+  "criterios_calidad": [
+    "El usuario llega al momento aha en menos pasos que ahora",
+    "Se puede construir sin rehacer la app entera",
+    "Cada recomendación dice qué métrica debería moverse"
+  ]
+}

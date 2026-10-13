@@ -1,0 +1,56 @@
+{
+  "tarea": "Diseña qué vigilar de mi negocio digital, con qué avisos y con qué mensajes a clientes cuando algo se cae, usando herramientas gratuitas",
+  "contexto": {
+    "que_tengo": "[WEB, TIENDA, RESERVAS, PANEL DE CLIENTES, AUTOMATIZACIONES]",
+    "lo_que_de_verdad_da_dinero": "[LA PANTALLA O PASO CONCRETO QUE NO PUEDE FALLAR: p. ej. el botón de pagar]",
+    "horario_de_negocio": "[CUÁNDO IMPORTA DE VERDAD]",
+    "quien_recibe_avisos": "[YO, UN SOCIO, UN TÉCNICO EXTERNO Y SUS CANALES]"
+  },
+  "entradas": {
+    "urls": "[DIRECCIONES A VIGILAR]",
+    "caidas_pasadas": "[QUÉ HA FALLADO ANTES Y CÓMO ME ENTERÉ]",
+    "presupuesto": "[CERO EUROS O CUÁNTO AL MES]"
+  },
+  "pasos": [
+    "1. Elige entre tres y cinco puntos de vigilancia que representen dinero, no solo la portada",
+    "2. Para cada punto define qué es 'está bien': código de respuesta correcto y un texto concreto que debe aparecer en la página",
+    "3. Añade vigilancias que no son de web: certificado a punto de caducar, dominio, y el resultado de la automatización que cobra",
+    "4. Fija frecuencia y umbral: cada cinco minutos y avisar tras dos fallos seguidos para no llenarte de falsas alarmas",
+    "5. Configura los canales de aviso por gravedad: móvil para lo que tumba las ventas, correo para lo demás",
+    "6. Monta la página de estado fuera de tu propia infraestructura, para que siga en pie cuando tu web no lo esté",
+    "7. Escribe las plantillas de aviso a clientes: primera comunicación, actualización y cierre",
+    "8. Prueba el sistema provocando un fallo controlado y comprueba que el aviso llega al móvil"
+  ],
+  "que_mirar": [
+    "que la vigilancia mire el contenido de la página y no solo que responda: una web puede responder y estar vacía",
+    "vigilar el proceso de compra o reserva, no solo la portada",
+    "que los avisos no se apaguen por saturación cuando todo falla a la vez",
+    "quién atiende fuera de tu horario y qué se le permite tocar",
+    "guardar el histórico para saber si un proveedor falla a menudo"
+  ],
+  "errores_tipicos": [
+    "alojar la página de estado en el mismo servidor que se cae",
+    "avisar a demasiada gente y que nadie actúe",
+    "vigilar cada minuto y agotar el plan gratuito el primer día",
+    "no probar nunca que el aviso llega de verdad",
+    "contar a los clientes detalles técnicos en vez de decir qué pueden hacer mientras tanto"
+  ],
+  "restricciones": [
+    "prioriza opciones gratuitas y di el límite exacto del plan gratuito",
+    "máximo cinco vigilancias para no volverme loco",
+    "los mensajes a clientes en español llano, sin culpar a nadie y sin jerga"
+  ],
+  "formato_salida": {
+    "1_tabla_vigilancias": "qué se vigila | qué es correcto | frecuencia | umbral de aviso | canal | quién responde",
+    "2_configuracion": "pasos concretos para dejarlo montado en la herramienta elegida",
+    "3_plantillas_clientes": "tres mensajes breves: aviso, actualización y resuelto",
+    "4_prueba_de_fuego": "cómo simular un fallo y qué debe pasar",
+    "5_revision": "qué mirar cada mes en el histórico"
+  },
+  "criterios_calidad": [
+    "cada vigilancia se puede relacionar con dinero o con una promesa a clientes",
+    "el sistema completo se monta en menos de una tarde",
+    "los avisos distinguen urgente de informativo",
+    "existe una prueba que demuestra que el aviso llega"
+  ]
+}

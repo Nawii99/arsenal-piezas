@@ -1,0 +1,41 @@
+{
+  "tarea": "Diagnosticar los problemas de ritmo de un primer montaje y proponer recortes concretos con segundos",
+  "contexto": {
+    "plataforma": "[YOUTUBE / INSTAGRAM / LINKEDIN / WEB]",
+    "duracion_actual": "[MM:SS]",
+    "duracion_deseada": "[MM:SS]",
+    "publico": "[QUIÉN LO VA A VER Y CUÁNTO SABE DEL TEMA]"
+  },
+  "entradas": {
+    "escaleta_o_transcripcion_por_minutos": "[PEGA AQUÍ EL CONTENIDO MINUTO A MINUTO]",
+    "datos_de_retencion_si_los_tienes": "[SEGUNDOS DONDE CAE LA CURVA, SI LOS CONOCES]"
+  },
+  "que_revisar": [
+    "Introducciones que tardan en decir de qué va el vídeo",
+    "Explicaciones que repiten una idea ya dicha",
+    "Frases de relleno: 'como os decía', 'antes de nada', 'bueno pues'",
+    "Tramos largos sin cambio de plano, de tema o de ritmo de voz",
+    "Contexto que se puede sustituir por un rótulo de dos palabras",
+    "Finales que se alargan después de que ya esté todo dicho"
+  ],
+  "procedimiento": [
+    "Puntuar cada minuto del 1 al 5 en interés y decir por qué",
+    "Marcar los tres tramos con peor puntuación como puntos de fuga",
+    "Proponer para cada tramo: cortar, comprimir, tapar con visual o reordenar",
+    "Calcular la duración que queda tras aplicar todos los recortes"
+  ],
+  "restricciones": [
+    "Cada propuesta debe indicar segundos aproximados de ahorro",
+    "No proponer volver a grabar salvo que no haya alternativa, y decirlo aparte",
+    "No sugerir efectos ni transiciones vistosas como solución al ritmo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: minuto, nota 1-5, qué falla, acción, segundos ahorrados",
+    "bloque_2": "Los 3 recortes que más mejoran el vídeo, en orden de impacto",
+    "bloque_3": "Duración final estimada y una frase de veredicto"
+  },
+  "criterios_calidad": [
+    "Cada acción se puede ejecutar hoy mismo sobre el material existente",
+    "El diagnóstico señala momentos concretos, nunca 'hazlo más dinámico'"
+  ]
+}

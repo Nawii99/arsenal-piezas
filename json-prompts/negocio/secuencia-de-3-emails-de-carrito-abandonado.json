@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribe una secuencia de 3 emails de recuperación de carrito abandonado para una tienda online",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "que_vende": "[QUÉ VENDES EN UNA FRASE]",
+    "categoria_mas_abandonada": "[CATEGORÍA O PRODUCTO QUE MÁS SE ABANDONA]",
+    "ticket_medio": "[TICKET MEDIO EN EUROS]",
+    "envio": "[COSTE Y PLAZO DE ENVÍO]",
+    "devoluciones": "[POLÍTICA DE DEVOLUCIONES]",
+    "objeciones_frecuentes": ["[OBJECIÓN 1]", "[OBJECIÓN 2]", "[OBJECIÓN 3]"],
+    "tono": "[CERCANO / NEUTRO / PREMIUM]"
+  },
+  "calendario": [
+    {"email": 1, "envio": "1 hora despues del abandono", "objetivo": "recordar y quitar fricción, sin vender", "incentivo": "ninguno"},
+    {"email": 2, "envio": "24 horas despues", "objetivo": "resolver objeciones con pruebas: reseñas, garantía, plazos", "incentivo": "ninguno"},
+    {"email": 3, "envio": "72 horas despues", "objetivo": "último aviso con incentivo y caducidad real", "incentivo": "[% DESCUENTO O ENVÍO GRATIS] válido [HORAS]"}
+  ],
+  "restricciones": [
+    "Nada de urgencia falsa: si no hay stock limitado real, no lo menciones",
+    "Un solo botón de acción por email, incluyendo el texto exacto del botón",
+    "Asunto de menos de 45 caracteres y preheader que no repita el asunto",
+    "Cuerpo de 80 a 150 palabras por email",
+    "Español de España, tuteando, sin emojis en los asuntos de los emails 1 y 2",
+    "No inventes datos, plazos ni testimonios: si falta un dato, deja el hueco entre corchetes"
+  ],
+  "formato_salida": {
+    "estructura": "un bloque por email",
+    "campos_por_email": ["numero", "momento_de_envio", "asunto", "preheader", "cuerpo", "texto_del_boton", "posdata"],
+    "extra": "Al final, 3 asuntos alternativos por email para ir probando"
+  },
+  "criterios_calidad": [
+    "El email 1 no ofrece descuento y no suena a plantilla automática",
+    "Las tres objeciones del contexto quedan resueltas en algún email",
+    "El incentivo aparece solo en el email 3 y con caducidad concreta",
+    "Se puede enviar tal cual cambiando únicamente los corchetes"
+  ]
+}

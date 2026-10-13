@@ -1,0 +1,29 @@
+{
+  "tarea": "revisar_licencia_asset_juego",
+  "instrucciones": "Analiza el asset descrito en 'asset' y determina si su licencia permite el uso indicado en 'uso_previsto'. Responde solo con el formato de 'salida', sin texto extra.",
+  "asset": {
+    "nombre": "[NOMBRE DEL ASSET]",
+    "tipo": "[gráfico / música / sonido / fuente / código / modelo 3D]",
+    "fuente": "[TIENDA O BANCO DE DONDE VIENE, EJEMPLO: UNITY ASSET STORE]",
+    "url_licencia": "[ENLACE AL TEXTO DE LA LICENCIA]",
+    "texto_licencia_resumido": "[PEGA AQUÍ EL FRAGMENTO CLAVE DE LA LICENCIA]"
+  },
+  "uso_previsto": {
+    "juego_de_pago": true,
+    "distribucion": "[STEAM / ITCH.IO / AMBAS / OTRA]",
+    "modifica_el_asset": false,
+    "redistribuye_el_asset_suelto": false
+  },
+  "criterios_de_evaluacion": [
+    "la licencia menciona explícitamente uso comercial o venta",
+    "la licencia exige atribución y en qué forma",
+    "la licencia prohíbe la reventa del asset suelto fuera del juego",
+    "la licencia tiene límite de copias, ingresos o número de proyectos"
+  ],
+  "salida": {
+    "veredicto": "permitido / permitido con condiciones / no permitido / no está claro",
+    "condiciones": "texto con lo que hay que cumplir, por ejemplo la atribución exacta",
+    "riesgo_si_se_ignora": "qué puede pasar si se usa sin cumplir la licencia, en una frase",
+    "siguiente_paso": "qué hacer ahora: usarlo, pedir permiso al autor, o buscar alternativa"
+  }
+}

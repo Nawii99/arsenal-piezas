@@ -1,0 +1,51 @@
+{
+  "tarea": "Guiar el diagnóstico de un sensor que da lecturas erráticas o se queda colgado, hasta una conclusión: mal montaje, mala alimentación, interferencia o aparato defectuoso",
+  "contexto": {
+    "perfil": "Persona sin perfil técnico con destornillador y móvil, sin osciloscopio ni laboratorio",
+    "urgencia": "[CRÍTICO / MOLESTO / CURIOSIDAD]"
+  },
+  "entradas": {
+    "sensor": "[QUÉ MIDE, MARCA Y MODELO, PROTOCOLO, CÓMO SE ALIMENTA]",
+    "sintoma": "[VALORES IMPOSIBLES / SALTOS BRUSCOS / SE QUEDA CONGELADO EN UN VALOR / DESAPARECE Y VUELVE]",
+    "lecturas": "[PEGA UNA MUESTRA DE LECTURAS CON SU HORA]",
+    "montaje": "[DÓNDE ESTÁ COLOCADO, A QUÉ ALTURA, PEGADO A QUÉ, LONGITUD DEL CABLE SI LO HAY]",
+    "entorno": "[SOL DIRECTO, CORRIENTES DE AIRE, HUMEDAD, MOTORES O NEVERAS CERCA, OBRA RECIENTE]"
+  },
+  "pasos": [
+    "1. Empieza por la lectura, no por el aparato: mira si los valores raros tienen patrón horario, si coinciden con el sol, con el arranque de un compresor o con la hora de limpieza.",
+    "2. Descarta lo primero que falla de verdad: alimentación. Pila baja o cargador flojo dan lecturas caprichosas mucho antes de apagar el aparato. Prueba con pila nueva de marca o con otro cargador de más amperios.",
+    "3. Comprueba el montaje: sensores de temperatura al sol, pegados a una pared caliente o sobre un aparato que calienta miden el montaje, no la habitación. Un sensor de humedad recién instalado necesita horas para estabilizarse.",
+    "4. Si hay cable, sospecha del cable: tirones, empalmes hechos con regletas flojas, cable de datos largo pasado junto a cables de corriente. Mueve el cable con el sensor en marcha y observa si la lectura salta.",
+    "5. Aísla variables una a una: mismo sensor en otro sitio, otro sensor en el mismo sitio. Esas dos pruebas separan aparato de ubicación mejor que ninguna otra.",
+    "6. Descarta la parte de red: si el problema es que desaparece y vuelve, es conexión, no medida; entonces se trata como cobertura o batería.",
+    "7. Contrasta con una referencia independiente: un termómetro barato de cocina, un higrómetro conocido o el móvil. Sin referencia, no se sabe quién miente.",
+    "8. Anota qué prueba se hizo, cuándo y qué salió, para no repetir en círculo.",
+    "9. Concluye con una de estas cuatro causas y una acción: montaje, alimentación, cableado o interferencia, o aparato defectuoso, y en ese último caso indica si está en garantía y qué reclamar."
+  ],
+  "restricciones": [
+    "Nada de abrir aparatos enchufados a la red ni de manipular el cuadro eléctrico: eso es trabajo de electricista",
+    "Una prueba cada vez, y anotando el resultado",
+    "No cambiar el aparato hasta haber probado en otra ubicación",
+    "Si el sensor está en un equipo bajo garantía, avisar antes de tocar nada"
+  ],
+  "errores_tipicos": [
+    "Cambiar el sensor y encontrarse el mismo fallo por la ubicación",
+    "Cambiar dos cosas a la vez y no saber cuál lo arregló",
+    "Fiarse de un solo dato en vez de mirar una serie de lecturas",
+    "Confundir un desescarche programado con una avería"
+  ],
+  "formato_salida": {
+    "1_hipotesis": "Tres causas probables ordenadas, con el dato que apunta a cada una",
+    "2_plan_de_pruebas": "Lista ordenada: prueba | qué esperas ver si la hipótesis es cierta | tiempo que lleva",
+    "3_tabla_de_registro": "Plantilla para anotar prueba, hora y resultado",
+    "4_decision": "Árbol simple: si pasa esto, la causa es aquella",
+    "5_arreglo": "Qué hacer en cada caso y cómo dejar el montaje para que no vuelva",
+    "6_cuando_rendirse": "Señales de que toca cambiar el aparato o llamar a un profesional"
+  },
+  "criterios_calidad": [
+    "Ninguna prueba requiere herramientas de laboratorio",
+    "Las pruebas están ordenadas de más barata y rápida a más costosa",
+    "Se incluye siempre una comparación contra una referencia independiente",
+    "La conclusión es una causa concreta, no una lista de posibilidades"
+  ]
+}

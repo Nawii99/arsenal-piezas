@@ -1,0 +1,33 @@
+{
+  "tarea": "Diseñar el flujo de pago dentro de una app móvil, desde la decisión de comprar hasta la confirmación, incluyendo errores y recuperación",
+  "contexto": {
+    "que_se_vende": "[SUSCRIPCIÓN, PRODUCTO O SERVICIO]",
+    "precios": "[PRECIOS Y PLANES]",
+    "metodos_de_pago": "[TARJETA, APPLE PAY, GOOGLE PAY, BIZUM, PAYPAL]",
+    "prueba_gratuita": "[SÍ O NO, Y DURACIÓN]",
+    "pais_clientes": "[PAÍS O PAÍSES]",
+    "plataforma": "[iOS, ANDROID O AMBAS]"
+  },
+  "reglas_de_oficio": [
+    "Precio total con impuestos visible antes de pedir cualquier dato",
+    "Los métodos rápidos del móvil van arriba, la tarjeta manual debajo",
+    "Ningún campo que se pueda deducir o autocompletar",
+    "Teclado numérico en tarjeta y validación mientras se escribe",
+    "Si hay prueba gratuita, decir el día exacto del primer cobro y cómo cancelar",
+    "Nunca sacar al usuario a un navegador si se puede evitar",
+    "Pantalla de confirmación con qué ha comprado, cuánto ha pagado y qué pasa ahora"
+  ],
+  "formato_salida": {
+    "tabla_pasos": ["Paso", "Pantalla", "Qué se pide", "Qué se muestra", "Botón", "Motivo de abandono típico", "Cómo se evita"],
+    "errores": "Tabla con: tipo de fallo (tarjeta rechazada, sin conexión, caducada, saldo), mensaje al usuario y camino de recuperación",
+    "diagrama": "Flujo en texto con flechas incluyendo el camino de pago fallido y el reintento",
+    "textos": "Textos exactos del botón de compra y de la pantalla de confirmación",
+    "checklist_legal": "Puntos a revisar con un asesor: condiciones, desistimiento, renovación automática y facturación"
+  },
+  "criterios_calidad": [
+    "Tres pasos como máximo desde la decisión hasta el pago hecho",
+    "Ningún fallo de pago deja al usuario en una pantalla sin salida",
+    "Las condiciones de renovación se entienden sin leer letra pequeña"
+  ],
+  "aviso": "Los puntos legales son orientativos y hay que validarlos con un profesional"
+}

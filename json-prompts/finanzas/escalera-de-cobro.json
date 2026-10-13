@@ -1,0 +1,50 @@
+{
+  "tarea": "Construir una escalera de cobro de seis peldaños con fechas, canal y texto listo para enviar, adaptada a un cliente y una factura concretos.",
+  "contexto": {
+    "quien_cobra": "[AUTÓNOMO O PEQUEÑA EMPRESA EN ESPAÑA]",
+    "relacion_con_el_cliente": "[NUEVO / RECURRENTE / EL MÁS GRANDE QUE TENGO]",
+    "tono_deseado": "[CORDIAL FIRME POR DEFECTO]"
+  },
+  "entradas": {
+    "factura": "[NÚMERO, FECHA DE EMISIÓN, IMPORTE CON Y SIN IVA, FECHA DE VENCIMIENTO]",
+    "trabajo_entregado": "[QUÉ SE ENTREGÓ Y CUÁNDO, CON PRUEBA: EMAIL DE ACEPTACIÓN, ALBARÁN, ACTA]",
+    "contactos": "[PERSONA QUE PIDIÓ EL TRABAJO Y PERSONA DE ADMINISTRACIÓN QUE PAGA]",
+    "historial": "[SI YA PAGÓ TARDE OTRAS VECES Y CUÁNTO TARDÓ]",
+    "dependencia": "[QUÉ PORCENTAJE DE MIS INGRESOS ES ESTE CLIENTE]"
+  },
+  "metodo": [
+    "1. Fija el calendario contando desde el vencimiento: día menos 3 recordatorio amable previo, día 1 aviso de vencimiento, día 7 reclamación, día 15 llamada con resumen escrito después, día 30 aviso de suspensión de servicio e intereses de demora, día 45 carta formal previa a reclamación.",
+    "2. Redacta cada mensaje con la misma estructura: referencia de la factura, importe, qué se entregó, qué necesitas, fecha límite y una sola pregunta que se conteste con sí o no.",
+    "3. Cambia el destinatario según el peldaño: primero administración, a partir del día 15 también la persona que encargó el trabajo.",
+    "4. En el peldaño del día 15 escribe el guion de la llamada: apertura, pregunta por el motivo del retraso, oferta de pago fraccionado en dos plazos y cierre con compromiso de fecha.",
+    "5. En el día 30 incluye la mención al derecho a intereses de demora y a la compensación por costes de cobro que la ley de morosidad reconoce, sin citar importes ni artículos inventados y recomendando confirmarlo con el gestor.",
+    "6. En el día 45 propón dos vías reales: reclamación por burofax con acuse y, según importe, procedimiento monitorio o empresa de recobro, explicando en una línea qué es cada cosa.",
+    "7. Añade tres medidas para que no vuelva a pasar: 50 por ciento por adelantado, entrega final contra pago y domiciliación bancaria en los recurrentes.",
+    "8. Si el cliente pesa más del 30 por ciento de los ingresos, avisa de que la escalera se aplica igual pero con llamada antes que email en cada peldaño."
+  ],
+  "restricciones": [
+    "Nunca amenazas, insultos ni exposición pública del deudor.",
+    "No des asesoramiento jurídico cerrado: describe las vías y remite al gestor o al abogado para el paso legal.",
+    "Nada de intereses ni penalizaciones que no estuvieran en el presupuesto o el contrato firmado.",
+    "Mensajes cortos: máximo 120 palabras cada uno, para que se lean en el móvil."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Pedir perdón por reclamar lo que ya has trabajado.",
+    "Reclamar solo por WhatsApp sin dejar rastro escrito con la referencia de la factura.",
+    "Seguir entregando trabajo nuevo mientras hay facturas vencidas.",
+    "Escribir siempre a la misma persona cuando quien paga es otra.",
+    "Perder la prueba de entrega: sin ella la reclamación se complica."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla del calendario: día, canal, destinatario, objetivo del peldaño.",
+    "bloque_2": "Los seis textos listos para copiar, cada uno con su asunto.",
+    "bloque_3": "Guion de la llamada en seis frases.",
+    "bloque_4": "Tres cambios en tus condiciones de cobro para el próximo cliente.",
+    "estilo": "Español de España, tuteando al usuario y tratando de usted al cliente en los textos"
+  },
+  "criterios_calidad": [
+    "Cada texto se puede enviar sin tocar nada salvo los datos entre corchetes.",
+    "El tono sube de firmeza peldaño a peldaño sin llegar nunca a la amenaza.",
+    "Todos los mensajes citan número de factura, importe y fecha límite."
+  ]
+}

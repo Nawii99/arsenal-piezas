@@ -1,0 +1,34 @@
+{
+  "tarea": "Escribir una secuencia de 3 emails para recuperar carritos abandonados en una tienda online",
+  "contexto": {
+    "tienda": "[NOMBRE DE LA TIENDA]",
+    "productos": "[QUÉ VENDES Y PRECIO MEDIO DEL PEDIDO]",
+    "envio": "[COSTE DE ENVÍO Y DESDE QUÉ IMPORTE ES GRATIS]",
+    "plazo_entrega": "[DÍAS DE ENTREGA]",
+    "devoluciones": "[POLÍTICA DE DEVOLUCIÓN EN UNA FRASE]",
+    "descuento_permitido": "[NINGUNO / PORCENTAJE MÁXIMO QUE ACEPTAS]",
+    "dudas_frecuentes": "[LAS 3 OBJECIONES QUE MÁS TE DICEN ANTES DE COMPRAR]"
+  },
+  "secuencia": [
+    "Email 1 a las 2 horas: recordatorio amable y sin descuento, con el carrito visible y un botón para volver",
+    "Email 2 a las 24 horas: resuelve las objeciones (envío, devoluciones, seguridad del pago) y añade una reseña",
+    "Email 3 a las 72 horas: último aviso con motivo real (stock o reserva del carrito) y, solo si lo permites, el incentivo"
+  ],
+  "reglas": [
+    "Nunca culpabilizar ni usar frases del tipo te has olvidado de algo importante",
+    "El descuento solo aparece en el email 3, y jamás en el primero",
+    "Un único botón principal por email, con texto que diga la acción concreta",
+    "Menciona el nombre del producto y su precio, no un carrito genérico",
+    "Incluye enlace a atención al cliente y baja fácil en el pie",
+    "Español de España, tuteo, sin urgencia falsa ni contadores inventados"
+  ],
+  "formato_salida": {
+    "por_email": ["momento_de_envio", "asunto", "preencabezado", "cuerpo", "texto_del_boton", "que_bloques_dinamicos_usar"],
+    "extra": "Lista de variables a insertar desde la tienda y checklist de 5 puntos antes de activar la automatización"
+  },
+  "criterios_calidad": [
+    "Cada email ataca una razón distinta de abandono, no repite el mismo argumento",
+    "Se entiende sin imágenes, por si el correo las bloquea",
+    "Nada de afirmaciones legales dudosas sobre plazos o garantías"
+  ]
+}

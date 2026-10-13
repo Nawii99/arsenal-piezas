@@ -1,0 +1,39 @@
+{
+  "tarea": "Diagnosticar el problema de color de una foto y dar la corrección exacta para que los tonos sean fieles y coherentes",
+  "contexto": {
+    "tipo_de_foto": "[RETRATO / PRODUCTO / COMIDA / INTERIOR / EVENTO]",
+    "luz_de_la_escena": "[LUZ DE DÍA / BOMBILLA / LED / FLUORESCENTE / MEZCLA DE VARIAS]",
+    "software": "[LIGHTROOM / CAMERA RAW / CAPTURE ONE / PHOTOSHOP / APP DE MÓVIL]",
+    "formato": "[RAW / JPEG]"
+  },
+  "entradas": {
+    "que_veo_mal": "[DESCRÍBELO: AMARILLENTO, VERDOSO, PIELES ROJAS, BLANCOS GRISES, AZULES APAGADOS]",
+    "referencia_neutra": "[HAY CARTA DE GRIS / UNA PARED BLANCA / NO HAY NADA NEUTRO]",
+    "color_critico": "[EL COLOR QUE DEBE SALIR EXACTO: EL DEL PRODUCTO, LA PIEL, LA MADERA]"
+  },
+  "procedimiento": [
+    "Identificar la dominante y separar si es global (afecta a toda la foto) o mixta (zonas con luces distintas)",
+    "Fijar el punto neutro: cuentagotas sobre gris o blanco sin quemar; si no hay, partir de temperatura por tipo de luz",
+    "Ajustar temperatura y matiz, y comprobar el resultado en el histograma RGB, no solo a ojo",
+    "Corregir la piel o el color crítico con HSL: tono, saturación y luminancia del canal implicado",
+    "Si la luz es mixta, corregir por zonas con máscaras en vez de tocar el balance global",
+    "Comprobar por último que los grises siguen siendo grises y no se han teñido"
+  ],
+  "errores_a_evitar": [
+    "Usar el cuentagotas sobre una zona quemada o sobre un blanco que en realidad es de color",
+    "Corregir la dominante subiendo saturación general",
+    "Editar con la pantalla sin calibrar y a distinto brillo cada día",
+    "Aplicar el mismo balance a todo un lote cuando la luz cambió a mitad de sesión"
+  ],
+  "formato_salida": {
+    "bloque_1": "Diagnóstico en 3 frases: qué dominante hay y de dónde viene",
+    "bloque_2": "Tabla: ajuste, valor orientativo con rango, por qué y en qué orden",
+    "bloque_3": "Comprobación final: 3 cosas que mirar para saber si el color ya está bien",
+    "bloque_4": "Cómo evitar este problema al disparar la próxima vez"
+  },
+  "criterios_calidad": [
+    "Las instrucciones usan los nombres reales de los controles del software indicado",
+    "No se propone ningún plugin ni preset de pago"
+  ],
+  "tono": "Claro y práctico, tuteando"
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Montarme una rutina diaria de pronunciacion en [IDIOMA] centrada en los sonidos que fallamos los hispanohablantes",
+  "contexto": {
+    "idioma_y_variante": "[IDIOMA Y VARIANTE: inglés británico, francés de Francia, alemán estándar]",
+    "mi_nivel": "[A2, B1, B2 o C1]",
+    "problemas_detectados": "[QUÉ TE DICEN O QUÉ NOTAS: no me entienden por teléfono, se me traba la erre, me piden que repita los números]",
+    "palabras_que_se_me_atragantan": "[3 O 4 PALABRAS QUE NUNCA TE SALEN]",
+    "minutos_dia": "[MINUTOS AL DÍA, por ejemplo 10]",
+    "contexto_de_uso": "[DÓNDE HABLAS: llamadas de trabajo, atención al público, presentaciones]"
+  },
+  "contenido_requerido": [
+    "Los 8 sonidos de [IDIOMA] que peor hace un espanol, ordenados por cuanto estropean la comprension",
+    "Para cada sonido: como colocar lengua, labios y mandibula explicado con palabras normales, y con que sonido espanol lo confundimos",
+    "Pares minimos: 6 parejas de palabras que solo se distinguen por ese sonido, con el lio que se monta si las confundes",
+    "Ritmo y acentuacion: donde cae el golpe de voz y que silabas se comen los nativos",
+    "Entonacion: como suena una pregunta, una peticion educada y una queja, y que pasa si lo dices plano",
+    "Correccion de mis palabras_que_se_me_atragantan, silaba a silaba"
+  ],
+  "rutina": {
+    "duracion": "[MINUTOS AL DÍA] repartidos en bloques cronometrados",
+    "bloques": "calentamiento de sonidos, pares minimos en voz alta, shadowing de 5 frases del contexto_de_uso y grabacion final de 30 segundos",
+    "progresion": "que trabajar cada dia de una semana, sin repetir el mismo sonido dos dias seguidos",
+    "autoevaluacion": "que escuchar en mi grabacion para saber si voy mejorando, con 4 senales concretas"
+  },
+  "restricciones": [
+    "Nada de alfabeto fonetico internacional: escribe la pronunciacion aproximada tal y como la leeria un espanol",
+    "No pretendas que pierda el acento: el objetivo es que me entiendan a la primera",
+    "Todas las frases de practica sacadas del contexto_de_uso indicado",
+    "No propongas trabalenguas de nativos ni ejercicios que exijan material de pago"
+  ],
+  "formato_salida": "Ficha imprimible de una pagina con la tabla de sonidos, mas la rutina de 7 dias en tabla, mas la lista de pares minimos",
+  "criterios_calidad": [
+    "Puedo hacer la rutina solo, sin profesor y sin material extra",
+    "Cada consejo dice que hacer con la boca, no solo como suena",
+    "Se prioriza lo que afecta a que me entiendan sobre lo que solo suena mas nativo"
+  ]
+}

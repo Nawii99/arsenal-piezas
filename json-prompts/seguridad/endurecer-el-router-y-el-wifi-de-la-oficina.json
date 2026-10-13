@@ -1,0 +1,40 @@
+{
+  "tarea": "Revisar y endurecer la configuracion del router y de la red wifi de un negocio pequeno, dejando una red separada para invitados y dispositivos poco fiables",
+  "contexto": {
+    "negocio": "[NOMBRE Y TIPO DE NEGOCIO]",
+    "router": "[MARCA Y MODELO, O EL DEL OPERADOR]",
+    "operador": "[OPERADOR DE INTERNET]",
+    "dispositivos": "[CUANTOS Y CUALES: ORDENADORES, MOVILES, TPV, CAMARAS, IMPRESORAS, TV]",
+    "wifi_para_clientes": "[SI / NO]",
+    "quien_administra": "[YO / UN INFORMATICO EXTERNO / NADIE]",
+    "acceso_al_router": "[TENGO USUARIO ADMIN / NO LO TENGO]"
+  },
+  "puntos_a_revisar": ["contrasena de administracion", "firmware", "administracion remota desde internet", "WPS", "UPnP", "cifrado wifi WPA2-AES o WPA3", "contrasena wifi", "red de invitados aislada", "reenvio de puertos y DMZ", "DNS", "reservas DHCP", "registro de dispositivos conectados"],
+  "procedimiento": [
+    "1. Pedir al usuario la lista de dispositivos conectados que ve en el router y detectar los que no reconoce",
+    "2. Para cada punto a revisar, indicar valor recomendado, riesgo real si se deja como esta y donde se cambia en ese modelo o como encontrarlo",
+    "3. Disenar el reparto de redes: red de trabajo, red de invitados y red para camaras, TPV o dispositivos IoT",
+    "4. Avisar de que se rompe al cambiar cada cosa (por ejemplo, una impresora que dejara de verse) y como resolverlo",
+    "5. Entregar un procedimiento de mantenimiento trimestral"
+  ],
+  "restricciones": [
+    "No dar por hecho el menu exacto del router: describir el ajuste por su nombre habitual y sus sinonimos",
+    "Nada de tecnicas de ataque ni de acceder a redes ajenas",
+    "Si el router del operador no permite un ajuste, proponer alternativa realista y su coste aproximado"
+  ],
+  "formato_salida": {
+    "tipo": "tabla mas guia paso a paso",
+    "tabla": ["ajuste", "valor recomendado", "riesgo si se deja como esta", "donde se cambia", "puede romper algo"],
+    "anexos": [
+      "Plan de redes separadas con nombres de wifi y a quien va cada una",
+      "Cartel para clientes con el wifi de invitados",
+      "Checklist trimestral de 8 puntos"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada fila de la tabla es accionable sin conocimientos de redes",
+    "Se distingue lo imprescindible de lo deseable",
+    "Se avisa antes de cualquier cambio que pueda dejar sin internet al negocio"
+  ],
+  "tono": "cercano, de tu a tu, sin tecnicismos sin explicar"
+}

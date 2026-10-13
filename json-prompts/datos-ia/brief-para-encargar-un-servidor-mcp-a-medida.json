@@ -1,0 +1,50 @@
+{
+  "tarea": "Escribe el documento de encargo (brief técnico) de un servidor MCP a medida que conecte mi sistema con un agente de IA, listo para enviar a un desarrollador y pedir presupuesto",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sistema_a_conectar": "[NOMBRE DEL SISTEMA: ERP, BASE DE DATOS, SOFTWARE PROPIO]",
+    "tiene_api": "[SÍ / NO / NO LO SÉ]",
+    "documentacion_disponible": "[ENLACE O 'NO HAY']",
+    "quien_usara_el_agente": "[EJ: EQUIPO DE ATENCIÓN AL CLIENTE, 4 PERSONAS]",
+    "cliente_de_ia": "[EJ: CLAUDE DESKTOP, CLAUDE CODE, UNA APP PROPIA]",
+    "plazo_deseado": "[EJ: 4 SEMANAS]",
+    "presupuesto_orientativo": "[IMPORTE O 'A PROPUESTA']"
+  },
+  "casos_de_uso": [
+    "[CASO 1: QUÉ PIDE EL USUARIO Y QUÉ DEBE PASAR]",
+    "[CASO 2]",
+    "[CASO 3]"
+  ],
+  "instrucciones": [
+    "Convierte cada caso de uso en las acciones mínimas que debe exponer el servidor, con nombre en verbo más objeto",
+    "Separa acciones de solo lectura de acciones que modifican datos y marca cuáles necesitan confirmación humana",
+    "Define para cada acción qué datos entran, qué devuelve y qué errores debe explicar en lenguaje claro",
+    "Añade requisitos no funcionales: autenticación, límites de uso, tiempos de respuesta, registro de actividad y entorno de pruebas",
+    "Incluye qué NO entra en el encargo para evitar malentendidos",
+    "Cierra con criterios de aceptación verificables y un plan de entrega en fases"
+  ],
+  "restricciones": [
+    "El documento lo tiene que entender un no técnico y ser suficiente para un desarrollador",
+    "Nada de tecnología concreta impuesta salvo que yo la indique",
+    "Máximo dos páginas equivalentes"
+  ],
+  "formato_salida": {
+    "tipo": "documento markdown",
+    "secciones": [
+      "Objetivo del proyecto en 5 líneas",
+      "Casos de uso con el resultado esperado",
+      "Tabla de acciones: Nombre | Qué hace | Lee o escribe | Datos de entrada | Datos de salida | ¿Requiere confirmación?",
+      "Requisitos de seguridad y datos personales",
+      "Requisitos no funcionales",
+      "Fuera de alcance",
+      "Entregables y fases con hitos",
+      "Criterios de aceptación",
+      "Preguntas abiertas para el proveedor"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada caso de uso está cubierto por al menos una acción de la tabla",
+    "Los criterios de aceptación se pueden comprobar con una prueba concreta",
+    "No hay ningún requisito ambiguo del tipo 'que funcione bien'"
+  ]
+}

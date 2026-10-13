@@ -1,0 +1,57 @@
+{
+  "tarea": "Disenar la plantilla con campos combinables y la tabla de datos para una combinacion de correspondencia, mas las instrucciones de ejecucion",
+  "contexto": {
+    "documento": "[QUÉ DOCUMENTO: CERTIFICADO, CARTA DE SUBIDA DE PRECIOS, RECORDATORIO, DIPLOMA, CONTRATO TIPO]",
+    "destinatarios": "[QUIÉNES Y CUÁNTOS APROXIMADAMENTE]",
+    "herramienta": "[WORD CON EXCEL, GOOGLE DOCS CON SHEETS O LIBREOFFICE]",
+    "salida_final": "[PDF INDIVIDUAL, IMPRESIÓN O ENVÍO POR EMAIL]"
+  },
+  "entradas": {
+    "texto_base": "[PEGA EL DOCUMENTO TAL Y COMO LO ESCRIBES HOY PARA UNA PERSONA]",
+    "datos_disponibles": "[COLUMNAS QUE TENGO EN MI LISTA]",
+    "tono": "[FORMAL DE USTED O CERCANO DE TÚ]",
+    "datos_de_mi_empresa": "[NOMBRE, NIF, DIRECCIÓN, CONTACTO]"
+  },
+  "pasos": [
+    "Lee el texto base y subraya todo lo que cambia de una persona a otra.",
+    "Convierte cada variable en un campo con nombre corto sin tildes ni espacios, por ejemplo nombre_cliente o importe_total.",
+    "Reduce el numero de campos: si dos se pueden calcular de otro, dejalo indicado en vez de pedir la columna.",
+    "Resuelve el genero y el plural: propon campos como tratamiento o formula_saludo para no escribir el/la todo el rato.",
+    "Define el formato de cada campo: fecha en texto largo, importes con dos decimales y simbolo de euro, porcentajes con coma.",
+    "Marca los campos opcionales y escribe la frase alternativa cuando el dato falta, en vez de dejar un hueco.",
+    "Genera la fila de cabeceras de la hoja de datos, en el mismo orden que aparecen en la plantilla.",
+    "Escribe tres filas de ejemplo con casos distintos, incluido uno con campo opcional vacio.",
+    "Escribe las instrucciones de la herramienta elegida, paso a paso y con el nombre real de los menus.",
+    "Anade una prueba en corto: generar solo tres documentos y revisarlos antes de lanzar los cien."
+  ],
+  "que_mirar": [
+    "Nombres que llegan en mayusculas completas o con espacios sobrantes.",
+    "Fechas que la hoja de calculo convierte sola a otro formato.",
+    "Ceros iniciales de codigos postales y numeros de expediente.",
+    "Campos vacios que dejan frases sin sentido como Estimado ,"
+  ],
+  "errores_tipicos": [
+    "Poner el campo dentro de una imagen o de un encabezado que no se combina.",
+    "Nombrar dos campos casi igual y confundirlos al insertarlos.",
+    "Lanzar la combinacion entera sin revisar ninguna copia.",
+    "Enviar el documento con el nombre de otro cliente por reutilizar una plantilla antigua."
+  ],
+  "restricciones": [
+    "No inventes clausulas legales ni datos de mi empresa.",
+    "Manten el texto base: solo sustituye variables y ajusta concordancias.",
+    "Todos los campos van entre dobles llaves para que se vean a simple vista."
+  ],
+  "formato_salida": {
+    "bloque_1_plantilla": "El documento completo con los campos entre dobles llaves, listo para copiar en Word o Docs",
+    "bloque_2_diccionario": "Tabla: campo | que es | formato | obligatorio | texto alternativo si esta vacio",
+    "bloque_3_hoja_datos": "Fila de cabeceras y tres filas de ejemplo en CSV con punto y coma",
+    "bloque_4_instrucciones": "Pasos numerados en la herramienta elegida, incluida la prueba en corto y como guardar en PDF por separado",
+    "bloque_5_revision": "Lista de 6 comprobaciones antes de enviar"
+  },
+  "criterios_calidad": [
+    "Todos los campos de la plantilla existen en la cabecera y al reves.",
+    "Ninguna frase queda mal escrita cuando un campo opcional esta vacio.",
+    "Las instrucciones nombran menus reales y no pasos genericos.",
+    "El documento de ejemplo se lee natural, sin rastro de plantilla."
+  ]
+}

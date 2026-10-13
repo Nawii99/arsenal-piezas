@@ -1,0 +1,60 @@
+{
+  "tarea": "Diseñar y ejecutar una sesion de pruebas con jugadores y convertir lo observado en un informe de fricciones priorizado",
+  "contexto": {
+    "quien_lo_usa": "Creador solo o con un socio, sin equipo de pruebas ni presupuesto",
+    "momento": "Con la primera version jugable, aunque tenga graficos provisionales",
+    "regla_de_fondo": "Con cinco personas ya se detecta la mayoria de los problemas graves de comprension"
+  },
+  "entradas": {
+    "que_se_prueba": "[JUEGO, DEMO, NIVEL, CONFIGURADOR 3D, EXPERIENCIA VR]",
+    "duracion_de_la_prueba": "[MINUTOS]",
+    "que_quieres_averiguar": "[TRES PREGUNTAS CONCRETAS]",
+    "perfil_de_los_probadores": "[JUGADORES HABITUALES / GENTE QUE NO JUEGA / CLIENTES POTENCIALES]",
+    "como_se_prueba": "[EN PERSONA / POR VIDEOLLAMADA COMPARTIENDO PANTALLA / A DISTANCIA CON GRABACION]"
+  },
+  "conocimiento_del_oficio": {
+    "regla_de_oro": "No ayudes ni expliques nada mientras juegan. Cada vez que abres la boca destruyes el dato",
+    "pensar_en_voz_alta": "Pideles que digan lo que estan pensando e intentando; cuando se callan mucho tiempo suele ser confusion",
+    "que_medir": "Segundos hasta la primera accion correcta, momento exacto donde se atascan, cuantas veces repiten un error, donde abandonarian y que creen que es el objetivo",
+    "preguntas_prohibidas": "Preguntas que sugieren la respuesta, como te ha gustado. Preguntar mejor: que estabas intentando hacer ahi, y que esperabas que pasara",
+    "lo_que_dicen_frente_a_lo_que_hacen": "La gente es amable y miente para no ofenderte. Vale lo que hace su cursor, no su opinion educada",
+    "priorizacion": "Gravedad por frecuencia. Un fallo que bloquea a cuatro de cinco va antes que uno feo que vieron todos pero no molesto",
+    "tamaño_de_la_muestra": "Cinco personas del perfil correcto valen mas que veinte amigos que quieren agradarte"
+  },
+  "pasos": [
+    "1. Escribir las tres preguntas que la sesion tiene que responder",
+    "2. Definir las tareas que se pedira hacer, sin explicar como",
+    "3. Preparar el guion: bienvenida, aviso de que se prueba el juego y no a la persona, permiso de grabacion",
+    "4. Preparar la hoja de observacion con marcas de tiempo",
+    "5. Ejecutar la sesion callado, anotando momento y comportamiento",
+    "6. Hacer las preguntas de cierre, todas abiertas",
+    "7. Volcar todo a una tabla de incidencias con la persona y el minuto",
+    "8. Agrupar, puntuar por gravedad y frecuencia y sacar las cinco acciones siguientes"
+  ],
+  "errores_tipicos": [
+    "Explicar los controles antes de empezar y no descubrir que nadie los entiende",
+    "Probar solo con amigos del sector",
+    "Apuntar opiniones en vez de comportamientos",
+    "Hacer cambios entre probador y probador y no poder comparar",
+    "Salir de la sesion con veinte ideas y ninguna prioridad"
+  ],
+  "restricciones": [
+    "Nada de herramientas de pago: cuaderno, cronometro y grabacion de pantalla",
+    "Las preguntas de cierre deben ser abiertas y neutras",
+    "El informe final no puede pasar de una pagina"
+  ],
+  "formato_salida": {
+    "1_objetivo": "Las tres preguntas de la sesion",
+    "2_guion_de_sesion": "Texto que se lee al probador, palabra por palabra",
+    "3_tareas": "Lista de tareas y como se sabe que la ha completado",
+    "4_hoja_de_observacion": "Tabla: minuto | que hace | que dice | fricción detectada",
+    "5_informe": "Tabla de fricciones con gravedad, frecuencia y prioridad",
+    "6_siguientes_acciones": "Cinco cambios concretos ordenados"
+  },
+  "criterios_calidad": [
+    "El guion no contiene ninguna explicacion de como se juega",
+    "Las fricciones estan descritas como comportamiento observado, no como opinion",
+    "La prioridad se justifica con gravedad y frecuencia",
+    "Cada accion siguiente cabe en un dia de trabajo"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "tarea": "Disenar un sistema de control automatico de temperatura para neveras, camaras y congeladores de un negocio de alimentacion, con registro, avisos y hoja de incidencias.",
+  "contexto": {
+    "negocio": "[BAR / RESTAURANTE / OBRADOR / CARNICERIA / SUPERMERCADO / FARMACIA]",
+    "equipos": "[LISTA: NOMBRE DEL EQUIPO | TIPO REFRIGERACION O CONGELACION | UBICACION | PUERTA DE CRISTAL O CIEGA]",
+    "quien_lo_gestiona": "[DUENO / ENCARGADO / RESPONSABLE DE APPCC]",
+    "como_se_hace_hoy": "[LIBRETA A MANO / NADA / TERMOMETRO DE PARED]"
+  },
+  "referencias_de_temperatura": {
+    "refrigeracion_general": "[RANGO OBJETIVO SEGUN VUESTRO PLAN APPCC, HABITUALMENTE ENTRE 0 Y 4 GRADOS]",
+    "congelacion": "[HABITUALMENTE IGUAL O POR DEBAJO DE -18 GRADOS]",
+    "nota": "Los rangos exactos los fija el plan de autocontrol del negocio y el tipo de producto; pide el documento antes de fijar umbrales"
+  },
+  "procedimiento": [
+    "1. Elige sonda por equipo: sonda de cable separada del emisor de radio, porque la radio no sale de una camara metalica.",
+    "2. Coloca la sonda en el punto mas desfavorable, no pegada al evaporador ni en la puerta; sumergida en glicol o gel si quieres lecturas estables.",
+    "3. Define el intervalo de registro: cada 5 o 15 minutos es suficiente y no agota la pila.",
+    "4. Define umbrales con retardo: no avises al primer grado de mas, avisa si se pasa del limite durante mas de 20 o 30 minutos seguidos.",
+    "5. Distingue apertura de puerta de averia real: la subida por apertura es corta y se recupera sola.",
+    "6. Define el aviso critico nocturno y a quien llega si el primero no contesta.",
+    "7. Define el archivo de datos: exportacion mensual en hoja de calculo, con maximos, minimos y medias por equipo y dia.",
+    "8. Manten un termometro calibrado para contraste y anota la comprobacion periodica frente a la sonda.",
+    "9. Redacta el procedimiento de incidencia: que hacer con el genero, quien decide y donde se firma."
+  ],
+  "errores_tipicos": [
+    "Poner el sensor en la puerta o en la balda de arriba y creer que esa es la temperatura del genero.",
+    "Meter un sensor wifi dentro de una camara: pierde cobertura y deja huecos en el registro.",
+    "Usar pilas alcalinas en congelador: se agotan en semanas; usar litio.",
+    "Poner umbral sin retardo y acabar ignorando cien avisos al dia.",
+    "Guardar los datos solo en la nube del fabricante sin exportarlos nunca."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de equipos: EQUIPO | SENSOR PROPUESTO | DONDE VA LA SONDA | UMBRAL | RETARDO | DESTINATARIO DEL AVISO",
+    "bloque_2": "Lista de material con cantidades y precio orientativo",
+    "bloque_3": "Pasos de instalacion y de comprobacion inicial con termometro de contraste",
+    "bloque_4": "Formato del informe mensual: columnas y como se genera",
+    "bloque_5": "Hoja de incidencias: campos a rellenar y arbol de decision sobre el genero",
+    "bloque_6": "Rutina diaria del personal, que debe caber en 2 minutos"
+  },
+  "restricciones": [
+    "No afirmes que el sistema cumple una norma concreta: di que sirve de apoyo al plan de autocontrol del negocio y que los umbrales los fija ese plan.",
+    "Nada que obligue a manipular el circuito frigorifico.",
+    "Temperaturas siempre en grados Celsius con un decimal."
+  ],
+  "criterios_calidad": [
+    "Cada equipo tiene sensor, ubicacion de sonda y umbral concretos.",
+    "El sistema sigue registrando aunque se caiga internet, o se avisa de que no.",
+    "El informe mensual se puede ensenar a un inspector sin retocarlo."
+  ]
+}

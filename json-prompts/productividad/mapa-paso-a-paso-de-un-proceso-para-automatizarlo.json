@@ -1,0 +1,37 @@
+{
+  "tarea": "Convertir un proceso manual en un mapa de pasos, decisiones y datos listo para automatizarse",
+  "rol": "Analista de procesos que documenta para gente sin perfil técnico",
+  "entradas": {
+    "nombre_del_proceso": "[POR EJEMPLO: DAR DE ALTA UN PEDIDO NUEVO]",
+    "como_lo_haces_hoy": "[CUÉNTALO COMO SE LO CONTARÍAS A ALGUIEN QUE ENTRA MAÑANA]",
+    "herramientas_implicadas": "[CORREO, EXCEL, TPV, WHATSAPP, DRIVE...]",
+    "quien_lo_hace": "[TÚ / UNA PERSONA DEL EQUIPO]",
+    "casos_raros_conocidos": "[PEDIDOS URGENTES, CLIENTES SIN NIF, DEVOLUCIONES...]"
+  },
+  "metodo": [
+    "Numera los pasos en orden real, uno por acción, empezando por el disparador que inicia todo",
+    "Para cada paso indica dónde ocurre, qué dato entra, qué dato sale y cuánto tarda",
+    "Separa los pasos mecánicos de los que requieren una decisión y escribe la regla de cada decisión en formato si esto entonces aquello",
+    "Detecta los datos que se copian de un sitio a otro: ahí está el ahorro",
+    "Señala los puntos donde hoy se cuelan errores y qué pasa si fallan",
+    "Propón dónde debe quedarse una revisión humana antes de enviar algo a un cliente o cobrar"
+  ],
+  "restricciones": [
+    "No inventes pasos que no aparezcan en la descripción: si falta algo, pregúntalo al final",
+    "Nada de nombres de producto ni de código en el mapa: eso viene después"
+  ],
+  "formato_salida": {
+    "1_disparador": "Qué evento arranca el proceso",
+    "2_tabla_pasos": ["nº", "acción", "herramienta", "dato_entra", "dato_sale", "minutos", "mecánico_o_decisión"],
+    "3_reglas_de_decision": "Lista de reglas si-entonces",
+    "4_datos_maestros": "Campos que viajan por todo el proceso y cómo se llaman en cada sitio",
+    "5_tramos": "Qué tramo automatizar entero, cuál con revisión y cuál dejar manual",
+    "6_preguntas_pendientes": "Máximo 5 preguntas para cerrar el mapa"
+  },
+  "criterios_calidad": [
+    "Otra persona podría ejecutar el proceso solo con el mapa",
+    "Cada decisión tiene una regla escrita, nada de depende",
+    "Los nombres de los campos son consistentes en toda la salida"
+  ],
+  "tono": "Claro y ordenado, español de España, tuteando"
+}

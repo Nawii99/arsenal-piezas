@@ -1,0 +1,33 @@
+{
+  "tarea": "Convertir objetivos de retención en reglas de disparo configurables en la herramienta de mensajería",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "herramienta": "[FIREBASE, ONESIGNAL, BRAZE, CUSTOMER.IO U OTRA]",
+    "eventos_disponibles": "[LISTA EXACTA DE EVENTOS QUE YA ENVÍAS, CON SUS NOMBRES]",
+    "propiedades_usuario": "[IDIOMA, PLAN, CIUDAD, FECHA DE ALTA, ETC.]",
+    "objetivos": "[2 O 3 ACCIONES QUE QUIERES QUE LA GENTE REPITA]"
+  },
+  "instrucciones": [
+    "Propón 8 reglas: 3 de activación, 3 de hábito y 2 de rescate por inactividad",
+    "Cada regla debe usar solo eventos y propiedades de la lista de entradas; si necesitas uno nuevo, márcalo como pendiente de implementar",
+    "Define para cada regla: evento disparador, condiciones extra, retraso desde el evento, ventana horaria y caducidad del envío",
+    "Define las exclusiones: quién no debe recibirla y qué la cancela si el usuario actúa antes",
+    "Añade un tope global de frecuencia y di qué regla cede el paso cuando dos coinciden",
+    "Ordena las reglas por prioridad y explica en una línea qué métrica mueve cada una"
+  ],
+  "restricciones": [
+    "Nada de reglas que se disparen a todos los usuarios a la vez",
+    "Toda regla tiene condición de cancelación; sin ella no es válida",
+    "Los nombres de evento se escriben tal cual aparecen en las entradas"
+  ],
+  "formato_salida": {
+    "tipo": "lista numerada, una ficha por regla",
+    "ficha": ["Nombre de la regla", "Objetivo", "Disparador", "Condiciones", "Retraso", "Ventana horaria", "Caducidad", "Exclusiones", "Cancelación", "Canal", "Prioridad", "Métrica"],
+    "extra": "Al final, una tabla de resolución de conflictos entre reglas y la lista de eventos nuevos que habría que implementar"
+  },
+  "criterios_calidad": [
+    "Un desarrollador puede configurarlas sin hacer preguntas",
+    "Ninguna combinación de reglas permite más de 2 push al día al mismo usuario",
+    "Cada regla responde a un comportamiento concreto, no a un calendario"
+  ]
+}

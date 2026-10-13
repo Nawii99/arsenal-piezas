@@ -1,0 +1,37 @@
+{
+  "tarea": "Dime qué gráfico usar para cada dato que quiero enseñar, cómo configurarlo y qué título ponerle",
+  "contexto": {
+    "donde_se_vera": "[PANEL, PRESENTACIÓN, INFORME EN PDF, MÓVIL]",
+    "publico": "[EQUIPO, CLIENTE, BANCO, INVERSOR]",
+    "herramienta": "[EXCEL, SHEETS, LOOKER STUDIO, POWER BI, CANVA]"
+  },
+  "entradas": {
+    "datos_a_mostrar": "[LISTA: POR EJEMPLO VENTAS MENSUALES DE DOS AÑOS, REPARTO POR CANAL, TOP 10 PRODUCTOS, EMBUDO DE VENTA]",
+    "mensaje_por_dato": "[QUÉ QUIERES QUE ENTIENDA EL QUE LO MIRE EN CADA CASO]",
+    "volumen": "[CUÁNTAS CATEGORÍAS Y CUÁNTOS PERIODOS TIENE CADA DATO]"
+  },
+  "reglas": [
+    "Evolución en el tiempo se ve con líneas; comparar categorías con barras; partes de un total con barras apiladas o cien por cien",
+    "Tarta solo con dos o tres porciones y nunca para comparar periodos",
+    "Ordena las barras por valor salvo que el orden natural sea el tiempo o una escala",
+    "Ejes de barras siempre desde cero; en líneas se puede recortar el eje si se avisa en el gráfico",
+    "Máximo cinco series por gráfico; el resto agrúpalo en Otros",
+    "Un color con significado y el resto en gris; nada de arcoíris decorativos",
+    "El título debe ser la conclusión, no la etiqueta del dato"
+  ],
+  "formato_salida": {
+    "ficha_por_dato": "Bloque con: dato | gráfico recomendado | por qué | gráfico a evitar y motivo | ejes y orden | colores | título con la conclusión | nota al pie con la fuente y el periodo",
+    "tabla_resumen": "Una fila por gráfico con su ubicación sugerida en la página o el panel",
+    "aviso": "Casos en los que un número grande solo se entiende mejor que cualquier gráfico"
+  },
+  "restricciones": [
+    "Nada de gráficos en tres dimensiones, ni de efectos, ni de gráficos de araña",
+    "Cada gráfico debe entenderse sin que nadie lo explique al lado",
+    "Si los datos no dan para el gráfico propuesto, dilo y ofrece la alternativa"
+  ],
+  "criterios_calidad": [
+    "Leyendo solo los títulos ya se entiende la historia completa",
+    "Ningún gráfico necesita más de cinco segundos para captarse",
+    "Se puede reproducir cada gráfico en la herramienta indicada sin plugins"
+  ]
+}

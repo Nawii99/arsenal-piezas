@@ -1,0 +1,49 @@
+{
+  "tarea": "Crear el sistema para pedir recomendaciones y testimonios a clientes, con momentos, mensajes y preguntas guiadas",
+  "contexto": {
+    "negocio": "[TU NEGOCIO], [QUÉ VENDES]",
+    "donde_se_publican": "[GOOGLE / WEB / INSTAGRAM / PROPUESTAS]",
+    "tono": "español de España, tuteo, sin adular ni suplicar"
+  },
+  "entradas": {
+    "clientes_candidatos": "[NOMBRE, QUÉ LE HICISTE, RESULTADO CONSEGUIDO, GRADO DE CONTENTO]",
+    "momento_actual": "[ACABO DE ENTREGAR / HACE MESES / ME ACABA DE FELICITAR]",
+    "a_quien_quieres_llegar": "[PERFIL DE CLIENTE QUE BUSCAS, PARA PEDIR PRESENTACIONES CONCRETAS]",
+    "detalle_medible": "[DATO O CAMBIO CONCRETO QUE CONSIGUIÓ EL CLIENTE, SI LO HAY]"
+  },
+  "pasos": [
+    "1. Elige el momento de pedir: cuando el cliente expresa satisfacción o justo tras un hito visible, nunca con una factura pendiente",
+    "2. Separa las dos peticiones: testimonio y presentación a alguien, y decide cuál pides primero a cada candidato",
+    "3. Escribe la petición de testimonio con cinco preguntas guía para que el cliente no se quede en blanco: cómo estabas antes, qué te frenaba, qué pasó, qué resultado ves, a quién se lo recomendarías",
+    "4. Ofrece dos formatos: responder por escrito en tres minutos o mandar un audio de un minuto que tú transcribes",
+    "5. Escribe la petición de presentación pidiendo un nombre concreto del perfil [A_QUIEN_QUIERES_LLEGAR], no un a ver si me recomiendas",
+    "6. Redacta el mensaje reenviable que el cliente puede copiar y mandar a su contacto sin escribir nada",
+    "7. Añade el recordatorio único a los 7 días y el agradecimiento posterior, con qué devuelves tú"
+  ],
+  "restricciones": [
+    "Prohibido pagar por reseñas o escribirlas tú y pedir que las firmen",
+    "Prohibido pedir nada a un cliente con incidencia abierta o factura vencida",
+    "Un solo recordatorio, y si no contesta se deja estar",
+    "Siempre se pide permiso antes de publicar nombre, empresa o foto",
+    "Nada de plantillas genéricas: cada petición nombra el trabajo concreto"
+  ],
+  "errores_tipicos": [
+    "Pedir un testimonio en abstracto y recibir un muy profesional y atento que no vende nada",
+    "Pedir recomendaciones a todo el mundo a la vez y quemar la confianza",
+    "No poner fácil el paso: obligar al cliente a redactar de cero",
+    "Olvidar el agradecimiento y no volver a poder pedir nada"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de candidatos: nombre, qué pedir, cuándo y por qué canal",
+    "bloque_2": "Mensaje de petición de testimonio con las cinco preguntas guía",
+    "bloque_3": "Mensaje de petición de presentación y mensaje reenviable listo para copiar",
+    "bloque_4": "Mensaje de recordatorio y mensaje de agradecimiento",
+    "bloque_5": "Guion de 6 preguntas por si el testimonio se graba en vídeo o audio"
+  },
+  "criterios_calidad": [
+    "El cliente puede responder en menos de tres minutos",
+    "El testimonio resultante cuenta un antes, un durante y un resultado concreto",
+    "La petición de presentación menciona un perfil claro, no un favor genérico",
+    "Ninguna frase suena a súplica ni a intercambio comprado"
+  ]
+}

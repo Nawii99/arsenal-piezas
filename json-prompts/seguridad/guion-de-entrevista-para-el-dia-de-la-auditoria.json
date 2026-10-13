@@ -1,0 +1,33 @@
+{
+  "tarea": "Preparar el guion de entrevistas de una auditoría ISO 27001 o ENS: preguntas del auditor por perfil, respuesta modelo y evidencia a mostrar",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "norma": "[ISO 27001, ENS O AMBAS]",
+    "perfiles": "[LISTA DE PERFILES: DIRECCIÓN, RESPONSABLE DE SEGURIDAD, TI, RRHH, COMPRAS, ATENCIÓN AL CLIENTE]",
+    "herramientas": "[HERRAMIENTAS Y NUBE QUE USÁIS]",
+    "documentos": "[DOCUMENTOS DEL SGSI Y DÓNDE ESTÁN GUARDADOS]"
+  },
+  "instrucciones": [
+    "Genera entre 8 y 12 preguntas reales por perfil, del estilo que usa un auditor: pide ejemplos, fechas y registros, no definiciones",
+    "Para cada pregunta escribe la respuesta modelo en primera persona, corta y honesta, y la evidencia exacta que hay que abrir en pantalla",
+    "Incluye las preguntas trampa habituales: cuándo se revisó por última vez, quién lo aprobó, enséñame el último registro, qué pasó con el incidente de tal fecha",
+    "Marca en rojo las preguntas donde la organización no tiene evidencia y propone qué hacer antes de la auditoría",
+    "Añade normas de conducta: no divagar, responder solo lo preguntado, no enseñar documentos no solicitados, decir lo desconozco y lo consulto en vez de inventar"
+  ],
+  "restricciones": [
+    "Ninguna respuesta modelo puede maquillar la realidad ni contradecir la documentación",
+    "Nada de respuestas de más de 5 líneas",
+    "No sugieras ocultar información al auditor"
+  ],
+  "formato_salida": {
+    "por_perfil": "Tabla: Pregunta | Qué busca el auditor | Respuesta modelo | Evidencia a mostrar y dónde está | Semáforo verde/ámbar/rojo",
+    "ensayo": "Agenda de una sesión de ensayo de 60 minutos con el equipo",
+    "lista_riesgos": "Puntos débiles detectados y acción previa recomendada con fecha"
+  },
+  "criterios_calidad": [
+    "Cada evidencia citada existe en el contexto o está marcada como pendiente",
+    "Las preguntas cubren tanto cláusulas de gestión como controles técnicos",
+    "Un empleado sin formación en la norma entiende su guion en una lectura"
+  ],
+  "tono": "Cercano y tranquilizador, de preparación de equipo"
+}

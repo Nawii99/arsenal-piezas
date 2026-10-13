@@ -1,0 +1,40 @@
+{
+  "tarea": "Auditar una rubrica de evaluacion existente, detectar sus fallos y entregar una version corregida",
+  "entradas": {
+    "rubrica_actual": "[PEGA AQUI TU RUBRICA COMPLETA]",
+    "tarea_que_evalua": "[DESCRIBE LA TAREA O PEGA EL ENUNCIADO]",
+    "problemas_detectados": "[EJ: TODOS SACAN LO MISMO, HAY RECLAMACIONES, DOS PROFESORES NO COINCIDEN]",
+    "notas_reales_del_ultimo_grupo": "[OPCIONAL: PEGA LAS NOTAS POR CRITERIO]"
+  },
+  "checklist_de_auditoria": [
+    "Descriptores vagos que solo cambian el adverbio entre niveles",
+    "Criterios que se solapan y penalizan dos veces el mismo fallo",
+    "Criterios no observables en la entrega o que dependen del proceso no visible",
+    "Sesgos por lengua materna, medios economicos, acceso a tecnologia o estilo personal",
+    "Pesos que no reflejan los objetivos de aprendizaje",
+    "Saltos de nivel desiguales (del 2 al 3 hay un abismo y del 3 al 4 nada)",
+    "Falta de nivel cero o de que hacer si no hay evidencia",
+    "Lenguaje que el alumno no entiende sin explicacion"
+  ],
+  "metodo": [
+    "Recorre la checklist criterio por criterio y marca cumple o no cumple con la cita textual del problema",
+    "Clasifica cada hallazgo como grave, medio o leve segun su efecto en la nota",
+    "Si hay notas reales, comprueba si algun criterio no discrimina porque todos sacan lo mismo",
+    "Propone la redaccion nueva de cada descriptor problematico"
+  ],
+  "restricciones": [
+    "No rehagas la rubrica entera si solo falla una parte: respeta lo que ya funciona",
+    "Manten el numero de criterios salvo que justifiques fusionar o eliminar alguno",
+    "Nada de teoria pedagogica: solo hallazgos y correcciones"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Tabla: Hallazgo | Gravedad | Cita del texto original | Por que es un problema",
+    "2_rubrica_corregida": "Version lista para usar con los cambios marcados en negrita",
+    "3_resumen_de_cambios": "Maximo 8 lineas explicando que cambia y por que",
+    "4_prueba_de_fuego": "3 entregas ficticias breves y su puntuacion con la nueva rubrica para comprobar que discrimina"
+  },
+  "criterios_calidad": [
+    "Cada hallazgo cita el texto exacto de la rubrica original",
+    "La version corregida se puede aplicar sin explicaciones adicionales"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "tarea": "Disenar una red de derivacion entre profesionales de salud y bienestar de la misma zona, con criterios de eleccion, propuesta de colaboracion, protocolo de derivacion y seguimiento",
+  "contexto": {
+    "mi_servicio": "[QUE HACES EXACTAMENTE Y QUE NO HACES]",
+    "ciudad_y_zona": "[CIUDAD, BARRIO Y RADIO EN KILOMETROS]",
+    "perfil_paciente": "[QUIEN VIENE HOY A TU CENTRO]",
+    "capacidad": "[CUANTOS PACIENTES NUEVOS PUEDES ASUMIR AL MES]",
+    "casos_que_rechazas": "[TIPOS DE CASO QUE TE LLEGAN Y NO PUEDES O NO QUIERES ATENDER]"
+  },
+  "entradas": {
+    "profesionales_conocidos": "[NOMBRES O TIPOS DE PROFESIONALES QUE YA CONOCES EN LA ZONA]",
+    "tiempo_disponible": "[HORAS AL MES QUE PUEDES DEDICAR A ESTO]"
+  },
+  "pasos": [
+    "1. Dibuja el recorrido del paciente antes y despues de ti: a quien suele ver antes de llegar y a quien necesita despues; de ahi salen los perfiles a los que merece la pena acercarse",
+    "2. Haz la lista de perfiles complementarios, no competidores, y ordenala por cuantos pacientes tuyos podrian venir de cada uno",
+    "3. Para cada perfil define que le aportas tu: descarga de casos que no quiere, seguimiento, horario que el no cubre o un servicio del que carece",
+    "4. Escribe la primera toma de contacto por escrito: presentacion en dos lineas, que haces, que caso concreto le derivarias y peticion de un cafe de 20 minutos",
+    "5. Prepara el guion de esa reunion: que preguntar sobre sus casos incomodos, que ofrecer, y cerrar con una prueba pequena de un caso",
+    "6. Define el protocolo de derivacion: que informacion viaja, con que consentimiento del paciente, por que canal y quien llama a quien",
+    "7. Escribe el informe de vuelta al profesional que deriva: que se ha hecho, en que punto esta y que se recomienda, dentro de tu ambito",
+    "8. Define las reglas del acuerdo: nada de comisiones por paciente derivado, reciprocidad esperada, tiempos de respuesta y como se rompe la colaboracion sin drama",
+    "9. Monta el seguimiento: tabla de derivaciones enviadas y recibidas por profesional y mes, y revision trimestral de quien aporta"
+  ],
+  "restricciones": [
+    "Nada de pagos ni comisiones por derivar pacientes; la colaboracion se basa en reciprocidad y calidad",
+    "Ningun dato del paciente viaja sin su consentimiento explicito y por escrito",
+    "No opines sobre el trabajo clinico del otro profesional ni prometas resultados en su nombre",
+    "El paciente siempre elige y siempre se le da mas de una opcion cuando es posible",
+    "No propongas derivaciones fuera de tu ambito de actuacion"
+  ],
+  "errores_tipicos": [
+    "Buscar solo a quien te pueda mandar pacientes y no mandar nunca ninguno",
+    "Presentarse pidiendo, en vez de llegar con un caso concreto que ya le derivas",
+    "Enviar datos del paciente por un grupo de mensajeria comun",
+    "No cerrar el circulo: derivar y no contar nunca como fue",
+    "Acumular veinte contactos flojos en vez de cinco relaciones activas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Mapa del recorrido del paciente con los perfiles antes y despues",
+    "bloque_2": "Tabla de candidatos: perfil, que le aportas, que te aporta, prioridad",
+    "bloque_3": "Mensaje de primer contacto y guion de la reunion de 20 minutos",
+    "bloque_4": "Protocolo de derivacion en pasos, con el texto del consentimiento del paciente",
+    "bloque_5": "Plantilla de informe de vuelta",
+    "bloque_6": "Tabla de seguimiento trimestral",
+    "idioma": "Espanol de Espana, tono profesional entre iguales"
+  },
+  "criterios_calidad": [
+    "Cada candidato tiene un motivo claro por el que le interesa colaborar contigo",
+    "El protocolo dice exactamente que dato viaja y con que permiso",
+    "El primer mensaje se puede enviar sin retocar",
+    "No aparece ninguna forma de pago por derivacion",
+    "El seguimiento permite ver en tres meses quien aporta y quien no"
+  ]
+}

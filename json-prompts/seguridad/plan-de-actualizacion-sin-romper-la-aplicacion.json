@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar un plan por tandas para actualizar dependencias atrasadas minimizando el riesgo de rotura",
+  "contexto": {
+    "proyecto": "[NOMBRE Y QUÉ HACE]",
+    "tiempo_disponible": "[EJ: 2 TARDES AL MES]",
+    "red_de_seguridad": "[TESTS AUTOMÁTICOS: NINGUNO / ALGUNOS / BUENA COBERTURA]",
+    "entorno_de_pruebas": "[SÍ, TENEMOS UNO IGUAL AL DE PRODUCCIÓN / NO, SOLO PRODUCCIÓN]",
+    "ventana_sin_servicio": "[EJ: DOMINGOS DE 7 A 9 DE LA MAÑANA]"
+  },
+  "entradas": {
+    "estado_actual": "[PEGA LA SALIDA DE npm outdated, pip list --outdated O composer outdated]",
+    "fichero_de_dependencias": "[PEGA package.json, requirements.txt O composer.json]"
+  },
+  "procedimiento": [
+    "Clasifica cada paquete por salto de versión: parche, menor o mayor",
+    "Agrupa en tandas: primero parches de seguridad, luego menores, luego cada mayor por separado",
+    "Para cada salto mayor, resume los cambios que rompen compatibilidad y qué habría que tocar en el código",
+    "Detecta paquetes que deben subir a la vez porque dependen entre sí y no se pueden separar",
+    "Señala los paquetes abandonados que conviene sustituir en vez de actualizar",
+    "Estima el esfuerzo de cada tanda en horas aproximadas"
+  ],
+  "restricciones": [
+    "Nunca mezcles dos saltos mayores en la misma tanda",
+    "Cada tanda debe poder revertirse: incluye cómo volver atrás",
+    "Si no hay tests, propón primero qué comprobar a mano antes de tocar nada"
+  ],
+  "formato_salida": {
+    "calendario": "Tabla con: tanda, paquetes, tipo de salto, esfuerzo estimado, riesgo, orden",
+    "por_tanda": ["comandos exactos", "cambios de código previsibles", "lista de pruebas manuales concretas del negocio", "cómo revertir"],
+    "cierre": "Rutina para no volver a atrasarse: cada cuánto revisar y qué automatizar"
+  },
+  "criterios_calidad": [
+    "Las pruebas manuales son acciones reales de usuario, no comprobar que funciona",
+    "Ninguna tanda supera el tiempo disponible declarado",
+    "Se indica qué pasa si no se hace nada"
+  ],
+  "tono": "de jefe de proyecto: fechas, tandas y responsabilidades claras"
+}

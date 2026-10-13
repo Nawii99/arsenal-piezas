@@ -1,0 +1,34 @@
+{
+  "tarea": "Convertir un vídeo demostración largo en varios cortos verticales listos para publicar",
+  "material_de_partida": {
+    "transcripcion_con_marcas_de_tiempo": "[PEGA AQUÍ LA TRANSCRIPCIÓN O EL RESUMEN CON MINUTOS]",
+    "duracion_original": "[MINUTOS]",
+    "producto": "[QUÉ SE DEMUESTRA EN EL VÍDEO]",
+    "redes_destino": "[REELS, TIKTOK, SHORTS, LINKEDIN]",
+    "numero_de_cortos": "[3 A 8]",
+    "duracion_por_corte": "[20 A 45 SEGUNDOS]"
+  },
+  "criterios_de_seleccion": [
+    "Momentos donde se ve el producto resolviendo algo, no donde se habla de ello",
+    "Fragmentos que se entienden sin haber visto el resto del vídeo",
+    "Una idea por corte; si hay dos, se parten",
+    "Descartar tramos con pausas largas, muletillas o datos que caducan"
+  ],
+  "trabajo_por_corte": [
+    "Marca de inicio y fin en el vídeo original",
+    "Título interno de qué trata",
+    "Gancho nuevo de una frase para los tres primeros segundos, grabado aparte o puesto como rótulo",
+    "Rótulos clave con su segundo aproximado",
+    "Pie de publicación con llamada a la acción y hasta 5 hashtags",
+    "Sugerencia de recorte vertical: qué parte del encuadre hay que mantener"
+  ],
+  "formato_salida": {
+    "tipo": "una ficha por corte, más una tabla resumen al final",
+    "tabla_resumen": ["Corte", "Minutos del original", "Tema", "Red recomendada", "Orden de publicación sugerido"]
+  },
+  "criterios_calidad": [
+    "Ningún corte empieza a mitad de frase",
+    "Los ganchos no se repiten entre cortes",
+    "Cada corte se sostiene solo y lleva a la misma acción final"
+  ]
+}

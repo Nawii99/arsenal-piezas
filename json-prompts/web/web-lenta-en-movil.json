@@ -1,0 +1,53 @@
+{
+  "tarea": "Diagnosticar la lentitud de una web en móvil y devolver un plan de arreglos ordenado por impacto y esfuerzo",
+  "contexto": {
+    "url": "[DIRECCIÓN DE LA PÁGINA MÁS IMPORTANTE]",
+    "tipo_de_web": "[LANDING, TIENDA, BLOG, WEB DE SERVICIOS]",
+    "hecha_con": "[HTML A MANO, WORDPRESS, SHOPIFY, CONSTRUCTOR VISUAL]",
+    "quien_puede_tocar": "[YO SIN SABER PROGRAMAR / TENGO A ALGUIEN TÉCNICO]",
+    "publico": "[MAYORÍA MÓVIL O ESCRITORIO, PAÍS, TIPO DE CONEXIÓN]"
+  },
+  "entradas": {
+    "informe_de_velocidad": "[PEGA EL RESULTADO DE PAGESPEED INSIGHTS EN MODO MÓVIL]",
+    "lista_de_imagenes": "[NOMBRES Y PESOS DE LAS IMÁGENES SI LOS TIENES]",
+    "scripts_de_terceros": "[CHAT, PÍXELES, MAPAS, VÍDEOS, RESEÑAS, COOKIES]",
+    "codigo_o_plantilla": "[PEGA EL HTML O DI QUÉ PLANTILLA USAS]"
+  },
+  "pasos": [
+    "1. Traduce las tres métricas que importan a lenguaje normal: cuánto tarda en verse lo principal, cuánto tarda en responder al primer toque y cuánto baila el contenido al cargar.",
+    "2. Identifica al culpable número uno: casi siempre es una imagen enorme, una fuente que bloquea o un script externo.",
+    "3. Imágenes: revisa peso, formato y medidas reales frente al tamaño en pantalla; propone convertir a WebP, redimensionar y poner ancho y alto en el HTML.",
+    "4. Carga diferida: la imagen de arriba se carga ya, el resto con carga perezosa.",
+    "5. Fuentes: como mucho dos familias y dos grosores, con carga que no bloquee el texto.",
+    "6. Terceros: lista cada script, di qué aporta de verdad y propone quitarlo, retrasarlo hasta que el usuario interactúe o sustituirlo por algo ligero.",
+    "7. Vídeos incrustados: sustituir por una imagen que carga el reproductor solo al pulsar.",
+    "8. Comprueba que no hay saltos de contenido: reserva el espacio de banners, cookies e imágenes.",
+    "9. Vuelve a medir después de cada bloque de cambios y anota antes y después."
+  ],
+  "errores_tipicos": [
+    "Perseguir el 100 de puntuación en vez de que la página se vea rápido de verdad",
+    "Subir la foto de la cámara de 5 MB y encogerla por CSS: sigue pesando lo mismo",
+    "Instalar tres plugins de caché a la vez y romper la web",
+    "Medir solo en tu wifi y con tu móvil nuevo",
+    "Cargar el chat y el banner de cookies antes que el contenido",
+    "Cambiar veinte cosas de golpe y no saber cuál mejoró"
+  ],
+  "restricciones": [
+    "Separa claramente lo que puede hacer alguien sin perfil técnico y lo que necesita ayuda",
+    "No propongas cambios que puedan romper el diseño sin avisar",
+    "Nada de prometer puntuaciones concretas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Diagnóstico en 5 líneas en español llano",
+    "bloque_2": "Tabla de arreglos: Problema, Arreglo, Impacto (alto/medio/bajo), Esfuerzo, Quién lo hace",
+    "bloque_3": "Los 3 arreglos de hoy, con instrucciones paso a paso",
+    "bloque_4": "Instrucciones exactas para las imágenes: qué medida y qué formato para cada una",
+    "bloque_5": "Cómo volver a medir y qué anotar"
+  },
+  "criterios_calidad": [
+    "Cada arreglo dice dónde se toca y cómo se deshace",
+    "Los tres primeros arreglos se pueden hacer en menos de una hora",
+    "No hay recomendaciones genéricas del tipo optimiza tu web",
+    "Queda claro qué se mide antes y después"
+  ]
+}

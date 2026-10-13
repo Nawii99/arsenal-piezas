@@ -1,0 +1,36 @@
+{
+  "tarea": "Traducir una ficha tecnica de proveedor a bullets de beneficio para una ficha de producto",
+  "contexto": {
+    "producto": "[NOMBRE DEL PRODUCTO]",
+    "cliente": "[QUIEN LO COMPRA Y PARA QUE]",
+    "situacion_de_uso": "[DONDE Y CUANDO LO USA]",
+    "nivel_tecnico_del_cliente": "bajo"
+  },
+  "entradas": {
+    "especificaciones": "[PEGA AQUI LA FICHA TECNICA DEL PROVEEDOR TAL CUAL]",
+    "quejas_habituales_del_sector": "[QUE SUELE FALLAR EN PRODUCTOS PARECIDOS]"
+  },
+  "metodo": [
+    "Para cada especificacion, responder en una linea a la pregunta y esto que me aporta a mi",
+    "Descartar las especificaciones que no cambian nada para el cliente",
+    "Agrupar las que sobreviven en un maximo de 6 beneficios",
+    "Ordenar los beneficios por lo que mas influye en la decision de compra",
+    "Escribir cada bullet como beneficio en negrita, dos puntos y el dato tecnico que lo respalda"
+  ],
+  "restricciones": [
+    "Cada bullet, maximo 22 palabras",
+    "El dato tecnico se copia tal cual, sin redondear ni mejorar",
+    "Nada de adjetivos vacios como premium, calidad superior o alta gama",
+    "Si una especificacion es peor que la media del sector, no ocultarla: proponer como contarla con honestidad"
+  ],
+  "formato_salida": {
+    "bloque_1": "tabla con columnas especificacion, beneficio para el cliente, se usa si o no",
+    "bloque_2": "los 6 bullets finales listos para pegar en la ficha",
+    "bloque_3": "lista de especificaciones descartadas y por que"
+  },
+  "criterios_calidad": [
+    "Ningun bullet repite la idea de otro",
+    "Un cliente sin conocimientos tecnicos entiende todos los bullets",
+    "Todo beneficio se puede rastrear hasta un dato de la ficha tecnica"
+  ]
+}

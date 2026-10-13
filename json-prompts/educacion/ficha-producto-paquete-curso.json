@@ -1,0 +1,33 @@
+{
+  "producto": "Paquete de curso a medida",
+  "cliente": {
+    "nombre": "[NOMBRE DEL CLIENTE]",
+    "tipo": "[academia / colegio / profesor particular / empresa]"
+  },
+  "curso": {
+    "tema": "[TEMA DEL CURSO]",
+    "nivel": "[inicial / medio / avanzado]",
+    "idioma": "es",
+    "num_alumnos": "[NUMERO DE ALUMNOS]",
+    "duracion_horas": "[NUMERO DE HORAS]"
+  },
+  "entregables": [
+    {"tipo": "plan_de_clase", "incluido": true},
+    {"tipo": "ejercicios", "incluido": true, "cantidad_por_bloque": 4},
+    {"tipo": "examen", "incluido": true},
+    {"tipo": "rubrica_correccion", "incluido": true},
+    {"tipo": "correccion_examenes", "incluido": false, "precio_extra_eur_por_alumno": "[PRECIO]"}
+  ],
+  "precio": {
+    "moneda": "EUR",
+    "precio_base_eur": "[PRECIO]",
+    "incluye_iva": false,
+    "nota_iva": "Si eres autonomo en España, añade el IVA que corresponda y declara el ingreso en tu trimestral."
+  },
+  "plazo_entrega_dias": "[NUMERO DE DIAS]",
+  "formato_entrega": ["pdf", "docx"],
+  "revision_incluida": {
+    "numero_rondas": 1,
+    "condiciones": "Una ronda de cambios sin coste, cambios adicionales se cobran aparte."
+  }
+}

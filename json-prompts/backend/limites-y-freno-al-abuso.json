@@ -1,0 +1,52 @@
+{
+  "tarea": "Definir e implantar límites de uso, cuotas y defensas antiabuso en las partes públicas de mi aplicación, sin molestar al cliente legítimo",
+  "contexto": {
+    "que_esta_expuesto": "[FORMULARIO DE CONTACTO / CHAT CON IA / API PÚBLICA / REGISTRO / SUBIDA DE ARCHIVOS]",
+    "coste_por_uso": "[SI CADA USO CUESTA DINERO: LLAMADA A IA, SMS, EMAIL; O NINGUNO]",
+    "trafico_normal": "[VISITAS Y ENVÍOS AL DÍA EN UN DÍA NORMAL]",
+    "donde_corre": "[CLOUDFLARE / VERCEL / VPS / OTRO]"
+  },
+  "entradas": {
+    "quien_debe_poder_usarlo": "[CUALQUIERA, SOLO REGISTRADOS, SOLO CLIENTES DE PAGO]",
+    "abuso_ya_sufrido": "[SPAM, REGISTROS FALSOS, PICOS DE GASTO, NINGUNO AÚN]",
+    "tope_de_gasto_aceptable": "[EUROS AL DÍA COMO MÁXIMO]"
+  },
+  "pasos": [
+    "1. Haz el mapa de superficie expuesta: cada ruta pública, qué cuesta cada llamada y qué daño hace su abuso",
+    "2. Define límites en tres capas: por dirección IP, por cuenta o clave, y un tope global diario de gasto que corta el servicio antes de arruinarte",
+    "3. Elige los números partiendo del tráfico normal: pon el límite entre tres y cinco veces el uso legítimo máximo y explícalo",
+    "4. Escoge el algoritmo (ventana deslizante o cubo de fichas) y dónde se cuenta: en el proveedor (Cloudflare), en el servidor o en la base de datos",
+    "5. Devuelve 429 con la cabecera de cuándo reintentar y un mensaje claro para el usuario, distinto del mensaje para la API",
+    "6. Añade defensas específicas: campo trampa y tiempo mínimo de relleno en formularios, verificación de email antes de gastar recursos, tamaño y tipo de archivo permitidos",
+    "7. Protege lo caro detrás de una acción barata: primero registro o captcha, después la llamada que cuesta dinero",
+    "8. Registra cada bloqueo con motivo para poder distinguir un ataque de un cliente al que estás molestando",
+    "9. Configura alertas por umbral de gasto y de bloqueos, y el interruptor manual para apagar la función cara",
+    "10. Dame el plan de pruebas: superar el límite, comprobar que el cliente normal nunca lo toca y verificar que el tope de gasto corta"
+  ],
+  "restricciones": [
+    "Ningún límite puede bloquear a un cliente que paga sin dejar rastro que yo pueda ver",
+    "No uses captcha en todo: solo donde el coste o el daño lo justifiquen",
+    "Cuenta también los intentos fallidos de login, no solo los correctos",
+    "Prioriza lo que ya tenga incluido mi proveedor antes que instalar nada nuevo"
+  ],
+  "formato_salida": {
+    "1_mapa": "Tabla markdown: ruta, coste por uso, riesgo, límite propuesto, dónde se aplica",
+    "2_configuracion": "Configuración concreta para mi proveedor, lista para copiar",
+    "3_codigo": "Middleware o función de límite comentado en [LENGUAJE], con respuesta 429",
+    "4_mensajes": "Textos que ve el usuario cuando se le bloquea",
+    "5_alertas": "Umbrales, canal de aviso e interruptor de emergencia",
+    "6_pruebas": "Pruebas numeradas con resultado esperado"
+  },
+  "criterios_calidad": [
+    "El tráfico normal simulado nunca recibe un 429",
+    "Superar el límite devuelve 429 con indicación de cuándo reintentar",
+    "El gasto diario no puede pasar del tope aunque el ataque continúe",
+    "Cada bloqueo queda registrado con motivo y momento"
+  ],
+  "errores_tipicos": [
+    "Limitar solo por IP y bloquear a toda una oficina o a todos los de una operadora móvil",
+    "Poner el límite tan bajo que los clientes reales se quejan",
+    "Proteger el formulario y dejar abierto el endpoint que usa el formulario",
+    "No tener tope de gasto y enterarte con la factura del mes"
+  ]
+}

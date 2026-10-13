@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribir el prompt de imagen para generar un retrato corporativo realista, y devolverlo listo para pegar en el generador",
+  "sujeto": {
+    "descripcion": "[EDAD APROXIMADA, GÉNERO, PELO, RASGOS, GAFAS O NO]",
+    "sector": "[ABOGACÍA / CONSULTORÍA / SALUD / TECNOLOGÍA / HOSTELERÍA / CREATIVO]",
+    "ropa": "[TRAJE / CAMISA SIN CORBATA / JERSEY / UNIFORME] y colores",
+    "expresion": "[SERIA Y CERCANA / SONRISA CONTENIDA / SEGURA]"
+  },
+  "uso_final": "[FOTO DE PERFIL DE LINKEDIN / WEB DE LA EMPRESA / NOTA DE PRENSA / FIRMA DE EMAIL]",
+  "receta_fotografica": {
+    "plano": "[PRIMER PLANO / PLANO PECHO / MEDIO CUERPO]",
+    "lente": "[85 MM PARA PRIMER PLANO / 50 MM PARA MEDIO CUERPO]",
+    "apertura": "f/2.8 para fondo suave sin perder los ojos nítidos",
+    "altura_de_camara": "a la altura de los ojos",
+    "luz": "[VENTANA LATERAL SUAVE / DOS LUCES DE ESTUDIO / LUZ DE OFICINA REAL]",
+    "fondo": "[GRIS LISO / OFICINA DESENFOCADA / PARED DE LADRILLO / EXTERIOR URBANO]",
+    "formato": "[CUADRADO 1:1 / VERTICAL 4:5 / HORIZONTAL 16:9]"
+  },
+  "debe_incluir_el_prompt": [
+    "Enfoque nítido en los ojos y textura de piel real con poros visibles",
+    "Sin retoque de plástico, sin ojos simétricos artificiales",
+    "Manos fuera de encuadre o en posición natural si aparecen",
+    "Espacio libre arriba para recortes en círculo"
+  ],
+  "evitar": ["texto o logos inventados", "dientes deformes", "orejas y gafas duplicadas", "fondo con letras ilegibles", "aspecto de anuncio de banco de imágenes"],
+  "formato_salida": {
+    "1": "PROMPT PRINCIPAL en un bloque de texto seguido, en inglés, listo para copiar",
+    "2": "TRADUCCIÓN de lo que pide, en español, en tres líneas",
+    "3": "3 VARIANTES: más cercana, más seria, con más contexto de oficina",
+    "4": "QUÉ REVISAR en el resultado: ojos, manos, gafas, cuello, fondo"
+  },
+  "criterios_calidad": [
+    "El retrato pasa por foto real en tamaño pequeño de perfil",
+    "La luz y la lente son coherentes entre sí",
+    "Las variantes sirven para usos distintos y no son cambios cosméticos"
+  ]
+}

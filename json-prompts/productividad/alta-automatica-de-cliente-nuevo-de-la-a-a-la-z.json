@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar la automatización completa del alta de un cliente nuevo, desde que dice que sí hasta que empieza el trabajo",
+  "rol": "Responsable de operaciones que diseña experiencias de cliente sencillas y automatizables",
+  "entradas": {
+    "que_vendes": "[SERVICIO O PRODUCTO]",
+    "disparador": "[FIRMA PRESUPUESTO / PAGA SEÑAL / RELLENA FORMULARIO]",
+    "documentos_que_pides": "[DATOS FISCALES, LOGO, ACCESOS, DNI...]",
+    "herramientas": "[FORMULARIO, DRIVE, CALENDARIO, EMAIL, FACTURACIÓN, NOTION O TRELLO]",
+    "plazo_hasta_arrancar": "[DÍAS]",
+    "quien_participa": "[TÚ, ADMINISTRACIÓN, TÉCNICO]"
+  },
+  "metodo": [
+    "Ordena la secuencia en momentos: día 0, día 1, día 3 y día 7, con lo que ocurre en cada uno",
+    "Para cada momento define acción automática, mensaje al cliente, tarea interna y responsable",
+    "Crea la estructura de carpetas y la convención de nombres del cliente",
+    "Escribe los emails o mensajes completos, cortos y con un solo objetivo cada uno",
+    "Añade recordatorios automáticos si el cliente no entrega la documentación en el plazo",
+    "Marca los dos o tres puntos donde hace falta una persona y por qué",
+    "Cierra con la comprobación de que todo está listo antes de arrancar el trabajo"
+  ],
+  "restricciones": [
+    "Máximo cuatro mensajes al cliente en toda la secuencia",
+    "No pidas dos veces el mismo dato",
+    "Nada de pedir documentación sensible por WhatsApp"
+  ],
+  "formato_salida": {
+    "tabla_secuencia": ["momento", "disparador", "acción_automática", "mensaje_al_cliente", "tarea_interna", "responsable"],
+    "mensajes": "Texto completo de cada email o mensaje, con asunto",
+    "estructura_carpetas": "Árbol con la convención de nombres",
+    "checklist_arranque": "Lista de 8 comprobaciones antes del primer día"
+  },
+  "criterios_calidad": [
+    "El cliente sabe en todo momento qué toca y cuándo",
+    "Cada acción automática indica en qué herramienta se configura",
+    "La secuencia funciona igual si el cliente tarda en responder"
+  ],
+  "tono": "Profesional y cálido, español de España, tuteando"
+}

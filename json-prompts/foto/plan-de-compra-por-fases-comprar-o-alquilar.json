@@ -1,0 +1,36 @@
+{
+  "tarea": "Hacerme una hoja de ruta de inversión en equipo de retrato en tres fases y decirme qué es mejor alquilar que comprar",
+  "mi_situacion": {
+    "encargos_al_mes": "[NÚMERO DE SESIONES DE RETRATO AL MES ACTUALMENTE]",
+    "precio_medio_sesion": "[LO QUE COBRAS POR SESIÓN, EN EUROS]",
+    "equipo_actual": "[LISTA DE LO QUE YA TIENES]",
+    "dinero_disponible_ahora": "[EUROS QUE PUEDES GASTAR SIN AHOGARTE]",
+    "objetivo_12_meses": "[QUÉ TIPO DE TRABAJOS QUIERES HACER DENTRO DE UN AÑO]",
+    "tengo_tienda_de_alquiler_cerca": "[SÍ / NO / NO LO SÉ]"
+  },
+  "metodo": [
+    "Detectar primero qué me está frenando de verdad: falta de luz, de focal, de fiabilidad o de acabado",
+    "Ordenar las compras por cuánto cambian la foto final por euro invertido",
+    "Comparar cada pieza con su alquiler: si se usa en menos de una parte de los encargos, alquilar",
+    "Marcar el punto en el que una pieza deja de compensar alquilarla y toca comprarla",
+    "Incluir siempre el segundo cuerpo o el plan de respaldo antes de subir de gama",
+    "Recordar los gastos que no son equipo: discos, copias de seguridad, seguro y transporte"
+  ],
+  "formato_salida": {
+    "fase_1": "Lo que compro ya, con coste y qué problema resuelve",
+    "fase_2": "Lo que compro cuando ocurra X (indicar el disparador concreto: número de encargos, tipo de cliente)",
+    "fase_3": "Lo que solo tiene sentido si mi negocio llega a Y",
+    "tabla_comprar_o_alquilar": ["Pieza", "Coste de compra", "Coste de alquiler por día", "Veces al año que la usaría", "Recomendación"],
+    "lista_de_no_comprar": "Material caro que suele decepcionar a quien empieza en retrato, con el motivo"
+  },
+  "restricciones": [
+    "No proponer nada por encima del dinero disponible en la fase 1",
+    "No prometer ingresos ni plazos de recuperación exactos, hablar de condiciones",
+    "Precios en euros y como rango aproximado, avisando de que hay que comprobarlos"
+  ],
+  "criterios_calidad": [
+    "Cada compra va atada a un problema real de mis sesiones",
+    "Los disparadores de la fase 2 y 3 son medibles",
+    "Queda claro qué NO debo comprar todavía"
+  ]
+}

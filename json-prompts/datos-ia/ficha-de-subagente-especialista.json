@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar la ficha del subagente especialista en [PASO CONCRETO QUE QUIERO SEPARAR]",
+  "contexto": {
+    "agente_que_lo_llama": "[NOMBRE DEL AGENTE PRINCIPAL]",
+    "por_que_lo_separo": "[QUE PROBLEMA DA HOY ESE PASO]",
+    "recibe": "[INFORMACION QUE LE LLEGARA]",
+    "debe_devolver": "[RESULTADO EXACTO]",
+    "frecuencia": "[CUANTAS VECES SE LE LLAMARA]"
+  },
+  "apartados_de_la_ficha": [
+    "Nombre corto y descriptivo",
+    "Encargo unico en una frase: si necesita dos frases, esta mal partido",
+    "Conocimiento de oficio: las 5 reglas o criterios que aplica un buen profesional en ese paso",
+    "Entradas obligatorias y opcionales",
+    "Salida con sus campos y un ejemplo relleno",
+    "Errores tipicos de ese oficio y como evitarlos",
+    "Que hace si la entrada llega incompleta",
+    "Fuera de alcance: lo que devuelve al coordinador en vez de resolverlo",
+    "Como se sabe que su trabajo esta bien hecho, en 3 comprobaciones"
+  ],
+  "restricciones": [
+    "El subagente no habla con el cliente final ni cambia el objetivo del proceso",
+    "No hace su propia investigacion por libre: trabaja con lo que le dan",
+    "No pide aclaraciones al usuario: devuelve una peticion de datos al coordinador",
+    "La ficha completa no pasa de una pagina"
+  ],
+  "formato_salida": {
+    "parte_1": "La ficha con los apartados anteriores en markdown",
+    "parte_2": "El texto de instrucciones del subagente, listo para pegar, en menos de 300 palabras",
+    "parte_3": "Dos ejemplos completos de llamada y respuesta"
+  },
+  "criterios_calidad": [
+    "El conocimiento de oficio aporta algo que la IA no haria por defecto",
+    "La salida encaja tal cual con lo que necesita el paso siguiente",
+    "Puedo reutilizar el subagente en otro proceso cambiando solo las entradas"
+  ]
+}

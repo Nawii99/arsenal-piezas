@@ -1,0 +1,39 @@
+{
+  "tarea": "Planificar y escribir la campaña de email de una promoción con fecha límite",
+  "contexto": {
+    "que_promocionas": "[PRODUCTO, SERVICIO O EVENTO]",
+    "precio_normal": "[PRECIO HABITUAL]",
+    "precio_promocion": "[PRECIO O CONDICIÓN ESPECIAL]",
+    "motivo_de_la_oferta": "[POR QUÉ AHORA: ANIVERSARIO, TEMPORADA, PLAZAS LIMITADAS]",
+    "fechas": "[DÍA DE INICIO Y DÍA DE FIN, CON HORA DE CIERRE]",
+    "limite_real": "[PLAZAS, UNIDADES O NINGUNO]",
+    "publico": "[A QUIÉN SE LO ENVÍAS Y QUÉ RELACIÓN TIENE CONTIGO]",
+    "objeciones": "[LAS 3 RAZONES POR LAS QUE NO TE COMPRAN]"
+  },
+  "calendario": [
+    "Aviso previo, 3 días antes: anuncia que llega algo y qué problema resuelve, sin enlace de compra",
+    "Apertura, día 1: la oferta explicada entera, condiciones y botón",
+    "Día 2: caso real o testimonio de alguien parecido al lector",
+    "Día 3: resuelve las objeciones una a una, formato preguntas y respuestas",
+    "Día 4 por la mañana: recordatorio corto, queda un día",
+    "Día 5 por la mañana: último día, resumen de lo que incluye",
+    "Día 5 tres horas antes del cierre: email muy breve, solo el enlace y la hora exacta"
+  ],
+  "reglas": [
+    "La urgencia debe ser real: si no hay límite verdadero, no se inventa",
+    "Repite las condiciones completas (precio, qué incluye, plazo) en todos los emails de venta",
+    "Ofrece en el primer email la opción de no recibir el resto de la promoción",
+    "Cada email tiene un ángulo distinto, nunca es el anterior reescrito",
+    "Español de España, tuteo, sin superlativos ni promesas de resultados"
+  ],
+  "formato_salida": {
+    "tabla_calendario": ["dia", "hora_sugerida", "objetivo", "angulo", "segmento"],
+    "emails": "Los 7 completos con asunto, preencabezado, cuerpo y texto del botón",
+    "cierre": "Email opcional para quienes hicieron clic y no compraron, y qué medir al acabar"
+  },
+  "criterios_calidad": [
+    "El lector entiende la oferta aunque solo lea uno de los siete emails",
+    "No hay ninguna afirmación que no puedas cumplir",
+    "Todo está listo para programar sin reescribir nada"
+  ]
+}

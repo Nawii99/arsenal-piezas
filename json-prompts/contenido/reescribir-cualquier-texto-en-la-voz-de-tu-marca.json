@@ -1,0 +1,41 @@
+{
+  "tarea": "Reescribir un texto ya existente en la voz de mi marca sin cambiar los hechos ni inventar nada",
+  "contexto_marca": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "a_quien_habla": "[A QUIÉN TE DIRIGES]",
+    "tratamiento": "[TÚ O USTED]",
+    "personalidad": "[3 ADJETIVOS DE TU VOZ]",
+    "expresiones_propias": "[5 PALABRAS O FRASES QUE SÍ USAS]",
+    "palabras_prohibidas": "[PALABRAS QUE NUNCA USAS]"
+  },
+  "entradas": {
+    "texto_original": "[PEGA AQUÍ EL TEXTO]",
+    "canal_destino": "[WEB / EMAIL / LINKEDIN / FOLLETO]",
+    "muestra_de_mi_voz": "[PEGA UN TEXTO TUYO ANTERIOR QUE SÍ SUENE A TI]"
+  },
+  "proceso": [
+    "1. Extraer de la muestra 6 rasgos de estilo: longitud de frase, persona verbal, uso de preguntas, nivel técnico, humor y ritmo",
+    "2. Listar los hechos, cifras y nombres del original que no se pueden tocar",
+    "3. Reescribir aplicando los rasgos y respetando esos hechos",
+    "4. Depurar muletillas, adverbios en -mente innecesarios y frases hechas",
+    "5. Marcar con [DUDA] cualquier dato confuso o que parezca incorrecto"
+  ],
+  "restricciones": [
+    "No inventar cifras, fechas, nombres ni testimonios",
+    "No cambiar el mensaje principal ni el orden de los argumentos clave",
+    "Media de frase por debajo de 20 palabras",
+    "Prohibido el lenguaje de folleto: líder, innovador, solución integral, sinergia",
+    "Español de España"
+  ],
+  "formato_salida": {
+    "bloque_1": "Texto reescrito, listo para copiar y pegar",
+    "bloque_2": "Tabla de los 5 cambios más importantes: antes / después / por qué",
+    "bloque_3": "Lista de dudas o datos a confirmar",
+    "bloque_4": "2 titulares alternativos en la misma voz"
+  },
+  "criterios_calidad": [
+    "Un lector habitual reconocería la marca aunque quitaras el logo",
+    "Cero datos nuevos respecto al original",
+    "Se puede leer en voz alta sin trabarse"
+  ]
+}

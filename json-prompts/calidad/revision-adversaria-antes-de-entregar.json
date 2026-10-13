@@ -1,0 +1,55 @@
+{
+  "tarea": "Someter un entregable a una revision adversaria desde tres papeles distintos y devolver los agujeros con su arreglo.",
+  "contexto": {
+    "quien_lo_usa": "Autonomo o negocio pequeño que va a enviar una propuesta, un presupuesto, una pagina de venta o una oferta.",
+    "momento": "El documento esta terminado y a punto de salir; ya no hay tiempo para rehacerlo entero.",
+    "idea_clave": "Es mas barato que te tumben las pegas en casa que delante del cliente."
+  },
+  "entradas": {
+    "entregable": "[PEGA AQUI EL TEXTO COMPLETO DEL DOCUMENTO O LA PAGINA]",
+    "a_quien_va": "[TIPO DE CLIENTE, CARGO, SECTOR, TAMAÑO]",
+    "que_quieres_conseguir": "[QUE FIRME, QUE PAGUE, QUE PIDA CITA]",
+    "precio_y_condiciones": "[IMPORTE, PLAZOS, FORMA DE PAGO, QUE INCLUYE Y QUE NO]",
+    "competencia_conocida": "[CON QUIEN TE COMPARAN Y POR CUANTO]"
+  },
+  "pasos": [
+    "1. Papel de cliente escéptico: lee y saca las diez objeciones mas probables, incluida la incomoda del precio, y marca cuales no estan respondidas en el texto.",
+    "2. Papel de competidor: busca por donde te atacaria para quedarse el trabajo y que ofreceria a cambio.",
+    "3. Papel de revisor exigente: señala promesas vagas, plazos sin fecha, alcance sin limite y todo lo que pueda acabar en trabajo gratis.",
+    "4. Papel de lector con prisa: mira si en treinta segundos se entiende que se ofrece, cuanto cuesta y que hay que hacer ahora.",
+    "5. Marca los riesgos de compromiso: garantias, resultados prometidos, plazos que dependen de terceros y datos personales.",
+    "6. Para cada agujero, escribe la frase exacta que lo tapa dentro del documento.",
+    "7. Termina con las tres pegas que si o si te van a decir y la respuesta preparada para el momento de la llamada."
+  ],
+  "que_mirar": [
+    "Si el precio aparece sin contexto de valor justo al lado.",
+    "Si el alcance deja claro cuantas revisiones o reuniones incluye.",
+    "Si se prometen resultados que no dependen solo de ti.",
+    "Si falta el siguiente paso concreto con fecha.",
+    "Si hay jerga que el cliente no usa en su dia a dia.",
+    "Si el documento asume que el lector ya te conoce y confia."
+  ],
+  "errores_tipicos": [
+    "Pedir a la IA que mejore el texto y quedarse con una version mas bonita pero igual de floja.",
+    "Contestar a las objeciones solo en la llamada, cuando el que decide no esta.",
+    "Añadir mas paginas en vez de responder mejor a lo que preocupa.",
+    "Bajar el precio antes de que nadie lo haya cuestionado."
+  ],
+  "restricciones": [
+    "Se duro pero concreto: cada critica lleva su arreglo escrito.",
+    "No reescribas el documento entero: propone cambios quirurgicos.",
+    "No inventes datos del cliente ni de la competencia; señala lo que hay que averiguar."
+  ],
+  "formato_salida": {
+    "bloque_1": "Objeciones del cliente escéptico con nota de peligro alto, medio o bajo y si estan ya respondidas.",
+    "bloque_2": "Ataque del competidor en cinco puntos y tu contra en una linea cada uno.",
+    "bloque_3": "Tabla de arreglos: Donde | Que falla | Frase exacta a poner.",
+    "bloque_4": "Las tres pegas garantizadas y su respuesta preparada para la llamada."
+  },
+  "criterios_calidad": [
+    "Al menos una objecion incomoda sobre el precio y otra sobre el riesgo de contratarte.",
+    "Cada arreglo se puede copiar y pegar en el documento.",
+    "No se propone bajar el precio como primera solucion.",
+    "El resultado se lee en cinco minutos antes de enviar."
+  ]
+}

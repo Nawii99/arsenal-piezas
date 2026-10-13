@@ -1,0 +1,54 @@
+{
+  "tarea": "Localizar los textos de un juego al español de España: glosario de términos, traducción con límite de espacio, variables protegidas y plan de revisión dentro del juego.",
+  "contexto": "Los fallos de localización en juegos no son de idioma, son de espacio, de contexto y de variables rotas. Un texto que se sale del botón arruina la sensación de producto acabado.",
+  "entradas": {
+    "juego": "[NOMBRE, GÉNERO Y TONO]",
+    "idioma_origen": "[IDIOMA DE PARTIDA]",
+    "textos": "[LISTA O ARCHIVO DE CADENAS, CON SU CLAVE SI LA TIENE]",
+    "limites": "[MÁXIMO DE CARACTERES POR TIPO DE ELEMENTO: BOTÓN, TOOLTIP, DIÁLOGO]",
+    "tratamiento": "[TUTEO | USTED]",
+    "publico": "[EDAD Y TIPO DE JUGADOR]"
+  },
+  "procedimiento": [
+    "1. Construye el glosario antes de traducir nada: nombres propios, objetos, habilidades, monedas y verbos de acción, con su traducción fija y una nota de por qué.",
+    "2. Decide qué NO se traduce: nombres de marca, nombres propios del universo, teclas.",
+    "3. Fija el tratamiento y el género del jugador; si el juego permite personaje de cualquier género, redacta en fórmulas neutras sin inventar formas artificiales.",
+    "4. Protege las variables y los códigos de formato: cualquier elemento entre llaves o con símbolo de porcentaje se copia tal cual y nunca se traduce ni se reordena si el motor no lo permite.",
+    "5. Traduce por función, no por literalidad: botones en infinitivo o imperativo constante, avisos cortos, diálogos con voz de personaje.",
+    "6. Aplica el límite de caracteres: el español suele ocupar entre un 15 y un 25 por ciento más que el inglés; acorta reformulando, nunca abreviando con puntos.",
+    "7. Marca las cadenas que dependen de contexto y necesitan captura de pantalla antes de decidir.",
+    "8. Resuelve los plurales y los números con fórmulas que funcionen para 1 y para muchos.",
+    "9. Adapta unidades, formato de fecha, decimales con coma y moneda en euros.",
+    "10. Prepara la revisión en pantalla: recorrer el juego con la versión traducida y anotar desbordes, cortes y frases que no encajan con lo que se ve.",
+    "11. Entrega la tabla final con clave, original, traducción, número de caracteres y notas."
+  ],
+  "restricciones": [
+    "Nunca traducir ni alterar variables, etiquetas ni códigos de formato.",
+    "No superar los límites de caracteres declarados.",
+    "Nada de español neutro latino: español de España.",
+    "No inventar términos que ya estén fijados en el glosario.",
+    "Si una cadena es ambigua sin contexto, marcarla en lugar de adivinar."
+  ],
+  "formato_salida": {
+    "bloque_1": "Glosario en tabla: término original, traducción fija, nota de uso.",
+    "bloque_2": "Decisiones de estilo: tratamiento, mayúsculas, forma de los botones, signos de puntuación.",
+    "bloque_3": "Tabla de traducción: clave, original, traducción, caracteres, límite, aviso si excede.",
+    "bloque_4": "Lista de cadenas marcadas por falta de contexto, con la pregunta concreta a resolver.",
+    "bloque_5": "Checklist de revisión en pantalla, 8 puntos.",
+    "bloque_6": "Lista de riesgos detectados: plurales, géneros, textos concatenados por el código."
+  },
+  "criterios_calidad": [
+    "Ninguna variable se ha tocado.",
+    "Ninguna traducción supera su límite de caracteres.",
+    "El mismo término se traduce igual en todo el juego.",
+    "Los botones mantienen una forma verbal consistente.",
+    "Las dudas están marcadas y no resueltas a la ligera."
+  ],
+  "errores_frecuentes": [
+    "Traducir cadenas sueltas sin ver dónde aparecen.",
+    "Textos que se salen del botón en móvil.",
+    "Frases montadas por el código que en español quedan sin sentido.",
+    "Mezclar tuteo y usted en el mismo menú.",
+    "Dejar puntos decimales a la inglesa en las cifras."
+  ]
+}

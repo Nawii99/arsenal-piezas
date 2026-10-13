@@ -1,0 +1,32 @@
+{
+  "tarea": "Auditar el formulario de captación de [DIRECCIÓN DE LA PÁGINA] y devolver un plan de mejoras ordenado por impacto",
+  "entradas": {
+    "campos_actuales": "[LISTA DE CAMPOS TAL CUAL APARECEN, INDICANDO CUÁLES SON OBLIGATORIOS]",
+    "texto_del_boton": "[LO QUE PONE EN EL BOTÓN]",
+    "texto_alrededor": "[TITULAR Y FRASES QUE ACOMPAÑAN AL FORMULARIO]",
+    "datos": "[VISITAS Y ENVÍOS DEL ÚLTIMO MES, SI LOS TIENES]",
+    "en_movil": "[QUÉ SE VE MAL O QUÉ CUESTA RELLENAR DESDE EL MÓVIL]"
+  },
+  "revisa_uno_a_uno": [
+    "Número de campos y cuáles se pueden eliminar o dejar opcionales",
+    "Campos que dan pereza o desconfianza: teléfono, empresa, presupuesto, mensaje largo",
+    "Claridad del titular: qué recibe la persona a cambio de sus datos",
+    "Botón: verbo concreto frente a genérico, tamaño y contraste",
+    "Fricción en móvil: teclado equivocado, campos estrechos, desplegables largos",
+    "Señales de confianza cerca del botón: plazo de respuesta, privacidad, nada de spam",
+    "Errores de validación: mensajes confusos o que borran lo escrito",
+    "Qué ve la persona justo después de enviar"
+  ],
+  "errores_tipicos_a_descartar": [
+    "Formulario por debajo del pliegue sin ningún aviso de que existe",
+    "Campo mensaje obligatorio cuando la mayoría solo quiere precio",
+    "Captcha agresivo que expulsa a gente real",
+    "Correo de aviso que cae en spam y hace parecer que nadie escribe"
+  ],
+  "formato_salida": "Tabla con columnas Problema, Por qué frena, Cambio concreto, Esfuerzo (bajo/medio/alto) e Impacto esperado (bajo/medio/alto). Debajo, los 3 cambios a hacer esta semana y una prueba para comprobar que el formulario llega de verdad al buzón.",
+  "restricciones": [
+    "Nada de recomendaciones genéricas: cada cambio debe indicar el texto o el campo exacto",
+    "No propongas herramientas de pago si hay solución gratuita",
+    "Español de España, tuteando"
+  ]
+}

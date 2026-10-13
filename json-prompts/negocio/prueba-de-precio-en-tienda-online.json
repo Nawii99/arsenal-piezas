@@ -1,0 +1,38 @@
+{
+  "tarea": "Disenar una prueba de precio para un producto de ecommerce y la plantilla para interpretar los resultados sin estadistica avanzada",
+  "contexto": {
+    "producto": "[PRODUCTO A PROBAR]",
+    "precio_actual_con_iva_eur": "[PRECIO DE HOY]",
+    "coste_completo_eur": "[COSTE POR UNIDAD]",
+    "visitas_mensuales_a_la_ficha": "[NUMERO]",
+    "pedidos_mensuales": "[NUMERO]",
+    "plataforma": "[SHOPIFY, WOOCOMMERCE, PRESTASHOP U OTRA]",
+    "semanas_disponibles": "[CUANTAS SEMANAS PUEDES PROBAR]"
+  },
+  "pasos": [
+    "Calcular la conversion actual y el beneficio mensual actual del producto",
+    "Proponer 3 precios a probar: el actual, uno un escalon por encima y otro mas alto, con justificacion de cada salto",
+    "Calcular cuantas ventas puedes perder en cada precio y seguir ganando lo mismo o mas",
+    "Definir el metodo de prueba viable sin herramientas caras: por periodos alternos, por canal o por pagina duplicada",
+    "Fijar la duracion minima y el numero minimo de pedidos por variante para que el resultado signifique algo",
+    "Listar los factores que pueden ensuciar la prueba: campanas, festivos, roturas de stock, cambios de envio",
+    "Definir la regla de decision antes de empezar: que resultado hace que subas el precio y cual te hace volver atras"
+  ],
+  "restricciones": [
+    "No mostrar precios distintos al mismo cliente a la vez ni a clientes identificables por perfil",
+    "Respetar el precio anunciado a quien ya haya visto la ficha y tenga el producto en el carrito",
+    "No cambiar mas de una cosa a la vez: solo el precio, con la misma foto, texto y gastos de envio",
+    "Si el trafico mensual es bajo, decirlo con claridad y proponer alternativa en vez de una prueba sin validez"
+  ],
+  "formato_salida": {
+    "punto_de_partida": "Conversion, ticket, margen y beneficio mensual actuales",
+    "tabla_escenarios": "Precio probado | Ventas necesarias para igualar beneficio | Margen unitario | Beneficio si la conversion cae un 10, 20 o 30%",
+    "protocolo": "Pasos de montaje, duracion, que anotar cada semana",
+    "plantilla_de_lectura": "Tabla vacia para rellenar con los resultados y la regla de decision escrita"
+  },
+  "criterios_calidad": [
+    "La decision se toma por beneficio total, no por numero de unidades vendidas",
+    "La prueba se puede montar sin contratar herramientas adicionales",
+    "Se avisa con honestidad si el volumen de la tienda no da para concluir nada"
+  ]
+}

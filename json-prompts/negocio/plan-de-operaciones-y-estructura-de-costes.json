@@ -1,0 +1,28 @@
+{
+  "tarea": "Escribir el plan de operaciones de mi negocio y su estructura de costes, desde que llega el pedido hasta que se cobra",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y CÓMO LO ENTREGAS HOY]",
+    "volumen": "[PEDIDOS, CLIENTES O SERVICIOS AL MES]",
+    "personas": "[QUIÉN TRABAJA CONTIGO Y CUÁNTAS HORAS]",
+    "proveedores": "[PRINCIPALES PROVEEDORES Y PLAZOS DE ENTREGA]",
+    "herramientas": "[PROGRAMAS Y SERVICIOS QUE PAGAS AL MES]",
+    "local_o_stock": "[SI TIENES LOCAL, ALMACÉN O STOCK, Y DE CUÁNTO]"
+  },
+  "instrucciones": [
+    "Describe el proceso completo en pasos numerados: captación, presupuesto, aceptación, producción o compra, entrega, cobro y postventa",
+    "En cada paso indica: quién lo hace, cuánto tiempo lleva, con qué herramienta y qué puede salir mal",
+    "Marca los cuellos de botella: los pasos que dependen de una sola persona o que se atascan al subir el volumen",
+    "Separa la estructura de costes en fijos mensuales y variables por pedido, y calcula el coste total de servir un pedido medio, incluyendo el tiempo de las personas valorado a precio de hora",
+    "Calcula a partir de qué volumen mensual conviene contratar a alguien o externalizar"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "partes": ["Tabla del proceso: paso, responsable, tiempo, herramienta, riesgo", "Diagrama del flujo en texto con flechas", "Tabla de costes fijos mensuales", "Tabla de costes variables por pedido", "Coste de servir un pedido medio y margen que queda", "Los 3 cuellos de botella y su solución", "Umbral de contratación o externalización"]
+  },
+  "criterios_calidad": [
+    "El tiempo de las personas se cuenta como coste, también el mío",
+    "Cada paso tiene un responsable con nombre o rol, no 'el equipo'",
+    "Los costes suman lo mismo que en mi previsión financiera",
+    "Las soluciones propuestas no requieren invertir antes de agotar lo que ya tengo"
+  ]
+}

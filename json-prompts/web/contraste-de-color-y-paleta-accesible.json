@@ -1,0 +1,36 @@
+{
+  "tarea": "Revisa el contraste de color de mi web y devuélveme una paleta corregida que cumpla WCAG 2.2 AA sin cargarse la identidad de la marca",
+  "contexto": {
+    "colores_actuales": "[LISTA EN HEX: TEXTO, FONDOS, BOTONES, ENLACES, ESTADOS HOVER Y ERROR]",
+    "usos": "[DÓNDE SE USA CADA COLOR: TEXTO PRINCIPAL, BOTÓN PRIMARIO, AVISOS...]",
+    "colores_intocables": "[LOS COLORES DE MARCA QUE NO SE PUEDEN CAMBIAR]",
+    "tamanos_de_texto": "[EJ: CUERPO 16PX, TITULARES 32PX, LETRA PEQUEÑA 13PX]"
+  },
+  "que_calcular": [
+    "Ratio de contraste de cada pareja texto/fondo, con dos decimales",
+    "Umbral aplicable: 4.5:1 para texto normal y 3:1 para texto grande (24px o 18.5px en negrita)",
+    "3:1 para bordes de campos, iconos con significado y el indicador de foco",
+    "Peor caso de contraste cuando el texto va sobre imagen o degradado"
+  ],
+  "como_corregir": [
+    "Ajusta solo la luminosidad y mantén el tono de marca lo más cerca posible",
+    "Da el hex nuevo e indica cuánto se aleja del original",
+    "Si un color de marca no sirve para texto, propón reservarlo para fondos, bordes o adornos"
+  ],
+  "formato_salida": {
+    "tabla": ["Pareja de colores", "Uso", "Ratio actual", "Cumple AA sí o no", "Hex corregido", "Ratio nuevo"],
+    "extras": [
+      "Bloque de variables CSS con la paleta corregida, listo para pegar",
+      "Revisión de si algo se entiende solo por color (errores, estados, gráficos) y cómo añadir icono o texto",
+      "Nota sobre modo oscuro si el sitio lo tiene"
+    ]
+  },
+  "restricciones": [
+    "No propongas gris claro sobre blanco por estética",
+    "Cambios mínimos y justificados: no rediseñes la marca entera"
+  ],
+  "criterios_calidad": [
+    "Todas las parejas quedan igual o por encima del umbral que les toca",
+    "Los hex propuestos son reales y se pueden pegar tal cual"
+  ]
+}

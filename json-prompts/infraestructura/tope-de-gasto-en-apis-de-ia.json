@@ -1,0 +1,57 @@
+{
+  "tarea": "Diséñame el control de gasto de un servicio que consume APIs de pago por uso: topes, avisos, frenos técnicos y medidas de ahorro, sin romper la experiencia del cliente",
+  "contexto": {
+    "que_he_montado": "[QUÉ HACE MI SERVICIO Y QUÉ APIS DE PAGO USA]",
+    "quien_lo_usa": "[PÚBLICO ABIERTO, CLIENTES CON CUENTA, SOLO YO]",
+    "cobro": "[GRATIS, SUSCRIPCIÓN, PAGO POR USO: PRECIO QUE COBRO]",
+    "tope_mensual": "[EUROS MÁXIMOS QUE ESTOY DISPUESTO A GASTAR]"
+  },
+  "entradas": {
+    "consumo_actual": "[LO QUE VEO EN EL PANEL DE USO: peticiones y coste del último mes]",
+    "picos": "[SI HA HABIDO SUBIDAS RARAS Y CUÁNDO]",
+    "donde_corre": "[PLATAFORMA DONDE ESTÁ ALOJADO EL CÓDIGO O LA AUTOMATIZACIÓN]"
+  },
+  "pasos": [
+    "1. Calcula el coste de una sola operación completa: cuántas llamadas encadena y qué cuesta cada una",
+    "2. Compara ese coste con lo que cobras: si no hay margen, el problema es el precio, no la técnica",
+    "3. Configura en el proveedor el tope duro de gasto y los avisos al cincuenta, ochenta y cien por cien",
+    "4. Usa una clave distinta por proyecto para poder cortar solo lo afectado",
+    "5. Pon un límite por usuario y por hora, y una cola cuando se supere en vez de dejar pasar todo",
+    "6. Guarda en caché las respuestas repetidas y las preguntas frecuentes: mucho consumo es la misma pregunta cien veces",
+    "7. Recorta el gasto por petición: usa el modelo más barato que dé la calidad suficiente, limita la longitud de la respuesta y no mandes todo el historial cada vez",
+    "8. Protege contra bucles: tiempo máximo de espera, número máximo de reintentos y freno si el mismo usuario dispara demasiadas peticiones",
+    "9. Registra consumo por usuario y revisa la lista de los que más gastan una vez por semana"
+  ],
+  "que_mirar": [
+    "que la clave no esté nunca en la parte visible de la web, donde cualquiera puede copiarla",
+    "reintentos automáticos que multiplican el coste cuando el servicio falla",
+    "tareas programadas que se ejecutan mucho más a menudo de lo que crees",
+    "funciones que se llaman en cada carga de página aunque el usuario no pida nada",
+    "qué le ve el cliente cuando se alcanza el tope: mejor un mensaje claro que un error feo"
+  ],
+  "errores_tipicos": [
+    "publicar sin tope de gasto y descubrirlo con la factura",
+    "probar en bucle mientras desarrollas con la misma clave que la producción",
+    "cobrar tarifa plana un servicio con coste por uso sin límite de consumo",
+    "guardar en caché cosas personales de un cliente y servírselas a otro",
+    "apagar el servicio sin avisar a quien ha pagado"
+  ],
+  "restricciones": [
+    "no inventes precios de proveedores: pídemelos o déjalos como variable a rellenar",
+    "ninguna medida puede hacer que un cliente que ha pagado se quede sin servicio sin aviso",
+    "explica cada freno en lenguaje llano y dime dónde se configura"
+  ],
+  "formato_salida": {
+    "1_coste_por_operacion": "desglose de llamadas y fórmula con los huecos a rellenar",
+    "2_topes_y_avisos": "qué configurar en el panel, con valores concretos",
+    "3_frenos": "lista de límites técnicos con el valor recomendado y su motivo",
+    "4_ahorros": "medidas ordenadas por ahorro estimado frente a esfuerzo",
+    "5_mensajes_al_usuario": "textos para límite alcanzado y para espera en cola"
+  },
+  "criterios_calidad": [
+    "existe un tope duro que hace imposible superar mi presupuesto",
+    "cada freno indica dónde se configura y cómo se prueba",
+    "el margen queda calculado, no supuesto",
+    "el cliente legítimo no nota los frenos en uso normal"
+  ]
+}

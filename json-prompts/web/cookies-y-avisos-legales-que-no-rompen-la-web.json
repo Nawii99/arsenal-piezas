@@ -1,0 +1,58 @@
+{
+  "tarea": "Preparar el sistema de consentimiento de cookies y los textos legales de [URL_WEB] conforme a RGPD y LSSI en España",
+  "contexto": {
+    "titular": "[NOMBRE O RAZÓN SOCIAL], [NIF], [DIRECCIÓN], [EMAIL DE CONTACTO]",
+    "tipo_de_web": "[LANDING / TIENDA / BLOG / WEB DE SERVICIOS]",
+    "tiene_venta_online": "[SÍ / NO]",
+    "perfil_lector": "Sin abogado ni programador, hace los cambios él mismo"
+  },
+  "entradas": {
+    "servicios_que_cargan_scripts": "[GOOGLE ANALYTICS / META PIXEL / YOUTUBE / GOOGLE FONTS / MAPS / CHAT / TIPOGRAFÍAS / OTROS]",
+    "formularios_existentes": "[QUÉ DATOS PIDES EN CADA FORMULARIO Y PARA QUÉ]",
+    "donde_guardas_los_datos": "[EMAIL / HOJA DE CÁLCULO / CRM / HERRAMIENTA DE EMAIL MARKETING]",
+    "proveedores_fuera_de_la_ue": "[LISTA O 'NO LO SÉ']"
+  },
+  "procedimiento": [
+    "1. Inventaría todo lo que carga la web y clasifícalo en: necesarias, analítica, publicidad, funcionales",
+    "2. Determina qué se puede cargar antes del consentimiento (solo lo necesario) y qué debe esperar",
+    "3. Diseña el banner: botones Aceptar, Rechazar y Configurar con el mismo peso visual",
+    "4. Redacta la capa de detalle con la tabla de cookies: nombre, proveedor, finalidad y duración",
+    "5. Escribe Aviso legal, Política de privacidad y Política de cookies con los datos del titular",
+    "6. Añade en cada formulario la casilla de consentimiento sin marcar y el enlace a privacidad",
+    "7. Deja registrado cómo se guarda la prueba del consentimiento y cómo se cambia de opinión después",
+    "8. Comprueba en el navegador que sin aceptar no se crean cookies de analítica ni publicidad"
+  ],
+  "que_mirar": [
+    "Rechazar tiene que ser tan fácil como aceptar y estar en la primera pantalla",
+    "El banner no puede tapar el contenido de forma que obligue a aceptar para leer",
+    "Las casillas de consentimiento nunca vienen premarcadas",
+    "YouTube incrustado y Google Fonts cargados desde Google también dejan rastro: trátalos como no necesarios",
+    "Debe existir un enlace permanente para cambiar la configuración de cookies"
+  ],
+  "errores_tipicos": [
+    "Copiar la política legal de otra web y dejar dentro los datos del competidor",
+    "Poner el banner pero cargar la analítica igualmente desde la primera visita",
+    "Solo botón de Aceptar o Rechazar escondido en un segundo clic",
+    "No mencionar a los proveedores que tratan los datos ni la transferencia fuera de la UE",
+    "Prometer plazos de conservación que luego nadie cumple"
+  ],
+  "restricciones": [
+    "Prioriza soluciones gratuitas y ligeras antes que plataformas de pago",
+    "Advierte de forma clara de que esto no sustituye asesoramiento jurídico",
+    "Nada de textos genéricos: todo debe reflejar los servicios reales listados en las entradas"
+  ],
+  "formato_salida": {
+    "1_tabla_de_rastreadores": "Servicio | categoría | ¿carga antes de aceptar? | cookie o dato que deja | duración",
+    "2_codigo_banner": "HTML, CSS y JavaScript en un solo bloque para pegar antes del cierre del body, sin librerías externas",
+    "3_textos_legales": "Tres documentos completos y rellenados: aviso legal, privacidad y cookies",
+    "4_texto_formularios": "Frase exacta de consentimiento y el aviso corto que va bajo el botón de enviar",
+    "5_prueba": "Guía paso a paso para comprobarlo en el navegador y qué se debe ver en cada caso",
+    "6_pendientes": "Lista de decisiones que el titular debe confirmar antes de publicar"
+  },
+  "criterios_calidad": [
+    "Sin aceptar nada, en el navegador no aparece ninguna cookie de analítica ni publicidad",
+    "Aceptar y rechazar están al mismo nivel visual y con un solo clic",
+    "Los textos legales no contienen ningún dato de ejemplo sin sustituir",
+    "Existe la vía para retirar el consentimiento y funciona"
+  ]
+}

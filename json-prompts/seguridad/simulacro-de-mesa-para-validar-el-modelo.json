@@ -1,0 +1,33 @@
+{
+  "tarea": "Diseñar un simulacro de mesa que ponga a prueba el modelo de amenazas y el plan de respuesta del equipo",
+  "contexto": {
+    "escenario": "[RANSOMWARE, FUGA DE DATOS DE CLIENTES, CORREO DEL JEFE PIDIENDO UNA TRANSFERENCIA, CAÍDA DEL PROVEEDOR, ROBO DE PORTÁTIL]",
+    "participantes": "[QUIÉN VIENE Y SU ROL: DUEÑO, ADMINISTRACIÓN, COMERCIAL, INFORMÁTICO EXTERNO]",
+    "defensas_actuales": "[COPIAS DE SEGURIDAD, DOBLE FACTOR, SEGURO, CONTACTOS DE EMERGENCIA]",
+    "duracion": "[MINUTOS DISPONIBLES, POR EJEMPLO 60]",
+    "nivel": "[PRIMERA VEZ O YA HEMOS HECHO ALGUNO]"
+  },
+  "instrucciones": [
+    "Escribe el guion en fases con horas simuladas y una inyección nueva en cada fase que complique la situación",
+    "En cada fase plantea de tres a cinco preguntas al grupo: quién decide, a quién se avisa, qué se apaga y qué se comunica",
+    "Incluye al menos una decisión incómoda: pagar o no pagar, parar el servicio, avisar a clientes o esperar",
+    "Añade los plazos legales y de comunicación que hay que tener en cuenta y a quién avisar",
+    "Termina con una plantilla de conclusiones para anotar lo que ha fallado"
+  ],
+  "restricciones": [
+    "Nada de detalles técnicos de ataque: el ejercicio es de decisión y comunicación",
+    "El guion debe caber en la duración indicada, con minutos asignados a cada fase",
+    "Todo el material tiene que poder imprimirse y usarse sin preparación previa"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha del ejercicio: objetivo, participantes, reglas y materiales",
+    "bloque_2": "Guion por fases con hora simulada, inyección, preguntas y respuestas esperadas para el facilitador",
+    "bloque_3": "Hoja de decisiones a rellenar durante el ejercicio",
+    "bloque_4": "Plantilla de conclusiones con columnas: Qué falló, Por qué, Acción, Responsable, Fecha"
+  },
+  "criterios_calidad": [
+    "Las preguntas obligan a decidir, no a describir teoría",
+    "Al menos una inyección deja al descubierto una suposición del modelo de amenazas",
+    "Las conclusiones salen convertidas en tareas con responsable y fecha"
+  ]
+}

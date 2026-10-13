@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar la arquitectura de información y el menú de una web rediseñada",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "tipos_de_visitante": "[EJ: CLIENTE NUEVO QUE NO TE CONOCE, CLIENTE QUE COMPARA PRECIOS, CLIENTE ACTUAL QUE BUSCA SOPORTE]",
+    "accion_principal": "[QUÉ QUIERES QUE HAGAN: PEDIR PRESUPUESTO, RESERVAR CITA, COMPRAR, LLAMAR]",
+    "paginas_actuales": "[PEGA EL LISTADO DE PÁGINAS DE LA WEB DE HOY]"
+  },
+  "pasos": [
+    "Agrupar contenidos por lo que busca el visitante, no por cómo está organizada la empresa por dentro",
+    "Definir un máximo de siete entradas en el menú principal",
+    "Marcar qué páginas son de primer nivel y cuáles cuelgan de otra",
+    "Nombrar cada página con palabras que usa el cliente, no con jerga interna",
+    "Definir el recorrido de cada tipo de visitante desde que entra hasta la acción principal",
+    "Colocar lo que va en el pie: legales, contacto, redes y páginas de apoyo"
+  ],
+  "restricciones": [
+    "Nada importante puede quedar a más de tres clics desde la home",
+    "Prohibidos nombres vagos como Soluciones, Enfoque o Nuestro mundo",
+    "Cada página debe tener una única acción principal",
+    "No crear páginas que luego nadie va a mantener"
+  ],
+  "formato_salida": {
+    "bloque_1": "Árbol de la web en lista anidada, con la URL propuesta y el objetivo de cada página en una línea",
+    "bloque_2": "Menú principal y pie, con el texto exacto de cada enlace",
+    "bloque_3": "Recorrido de cada tipo de visitante paso a paso",
+    "bloque_4": "Tabla de correspondencia entre páginas actuales y páginas nuevas",
+    "bloque_5": "Bloques recomendados para la home, en orden de arriba abajo"
+  },
+  "criterios_calidad": [
+    "Toda página nueva tiene un motivo de existir escrito en una frase",
+    "Ninguna página actual con tráfico se queda fuera del mapa",
+    "Un desconocido entiende el menú sin que se lo expliquen"
+  ]
+}

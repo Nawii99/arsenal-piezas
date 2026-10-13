@@ -1,0 +1,50 @@
+{
+  "tarea": "Hacer la auditoría de propiedad, accesos y copias de seguridad de [WEB O NEGOCIO] y dejar un plan para recuperar el control y poder restaurarla.",
+  "contexto": {
+    "quien_la_hizo": "[YO / AGENCIA / UN CONOCIDO / NO LO SÉ]",
+    "antigüedad": "[AÑOS APROXIMADOS]",
+    "que_pasaria_si_cae": "[PIERDO PEDIDOS / SOLO IMAGEN / RESERVAS PARADAS]"
+  },
+  "entradas": {
+    "dominio": "[DOMINIO]",
+    "lo_que_sabes": "[REGISTRADOR, HOSTING, CORREO, PLATAFORMA, CUENTAS QUE CONTROLAS]",
+    "lo_que_no_sabes": "[LO QUE DESCONOCES O SOSPECHAS]"
+  },
+  "pasos": [
+    "1. Listar los activos que hay que controlar: dominio, DNS, hosting o plataforma, correo profesional, código o tema, base de datos, pasarela de pago, analítica, Search Console y ficha de Google.",
+    "2. Para cada activo anotar: dónde está, con qué cuenta se entra, quién es el titular y quién paga la renovación.",
+    "3. Comprobar el dominio con una consulta whois y ver la fecha de caducidad y el titular.",
+    "4. Detectar los puntos de un solo dueño: cosas que solo controla el proveedor y que te dejan colgado si desaparece.",
+    "5. Definir la copia de seguridad: qué se copia, con qué frecuencia, dónde se guarda fuera del hosting y cuánto tiempo se conserva.",
+    "6. Probar una restauración de verdad: una copia que nunca se ha restaurado no es una copia.",
+    "7. Poner alertas: renovación del dominio, caducidad del certificado y aviso de caída.",
+    "8. Escribir el plan de emergencia: pasos y teléfonos si la web se cae un sábado."
+  ],
+  "restricciones": [
+    "Ninguna contraseña se escribe dentro del documento: se indica en qué gestor de contraseñas se guarda.",
+    "No pedir accesos con tono acusatorio: la petición al proveedor debe ser cordial y profesional.",
+    "Nada de saltarse a nadie ni de tocar cuentas ajenas: se pide lo que corresponde al titular.",
+    "Priorizar dominio y copias por encima de todo lo demás."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de activos: activo | proveedor | titular | quién paga | riesgo si lo pierdo (alto/medio/bajo) | acción.",
+    "bloque_2": "Los tres agujeros más graves y cómo taparlos esta semana.",
+    "bloque_3": "Plan de copias de seguridad concreto para la plataforma indicada.",
+    "bloque_4": "Email listo para enviar al proveedor pidiendo accesos y titularidad.",
+    "bloque_5": "Ficha de emergencia de una página con qué hacer si la web se cae."
+  },
+  "criterios_calidad": [
+    "El dominio figura a nombre del negocio o del titular, no del proveedor.",
+    "Existe una copia reciente guardada fuera del hosting y ya restaurada una vez.",
+    "Hay al menos dos personas o dos vías de acceso a cada activo crítico.",
+    "Nadie depende de una cuenta de correo personal de un antiguo colaborador.",
+    "La ficha de emergencia cabe en una página y se entiende sin ser técnico."
+  ],
+  "errores_frecuentes": [
+    "Que el dominio esté a nombre de la agencia y caduque sin avisar.",
+    "Guardar las copias en el mismo servidor que se puede perder.",
+    "No haber restaurado nunca una copia y descubrir que estaban vacías.",
+    "Accesos de administrador ligados al correo de alguien que ya no está.",
+    "Pagar el hosting con una tarjeta caducada y enterarse cuando la web ya está caída."
+  ]
+}

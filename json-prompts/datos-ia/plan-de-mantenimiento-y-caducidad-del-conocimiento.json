@@ -1,0 +1,34 @@
+{
+  "tarea": "Diseñar el plan de mantenimiento de una base de conocimiento de un agente de IA: caducidades, responsables, calendario de revisión y proceso de retirada",
+  "contexto": {
+    "negocio": "[ACTIVIDAD]",
+    "ritmo_de_cambio": "[QUÉ CAMBIA CADA MES, CADA TRIMESTRE Y CADA AÑO EN TU SECTOR]",
+    "equipo": "[PERSONAS DISPONIBLES Y HORAS AL MES]"
+  },
+  "entradas": {
+    "documentos": "[LISTA CON NOMBRE, TEMA, FECHA Y RESPONSABLE ACTUAL]"
+  },
+  "procedimiento": [
+    "Asigna a cada documento una caducidad realista según lo rápido que cambie su contenido, no según su antigüedad.",
+    "Marca los documentos críticos, aquellos cuyo error cuesta dinero o genera reclamación.",
+    "Define el disparador de revisión extraordinaria: cambio de precios, cambio legal, producto nuevo, queja de un cliente.",
+    "Escribe el proceso de retirada: cómo se saca un documento viejo, qué se pone en su lugar y cómo se avisa al equipo.",
+    "Reparte el trabajo en un calendario mensual que quepa en las horas disponibles.",
+    "Añade tres señales de alarma que indican que la base de conocimiento está envejeciendo."
+  ],
+  "formato_salida": {
+    "1_tabla": ["Documento", "Crítico sí/no", "Caduca cada", "Responsable", "Qué se comprueba", "Disparadores extra"],
+    "2_calendario": "qué se revisa cada mes del año, en una lista",
+    "3_proceso_retirada": "pasos numerados",
+    "4_alarmas": "tres señales y qué hacer ante cada una"
+  },
+  "restricciones": [
+    "El plan no puede superar las horas mensuales indicadas; si no cabe, recorta y di qué dejas fuera",
+    "Cada tarea con nombre de responsable, nada de el equipo"
+  ],
+  "criterios_calidad": [
+    "Los documentos críticos se revisan más a menudo que el resto",
+    "El plan es sostenible con el equipo real",
+    "Se sabe qué hacer el día que cambian los precios"
+  ]
+}

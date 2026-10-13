@@ -1,0 +1,39 @@
+{
+  "tarea": "Preparar el guion de una reunión uno a uno con una persona de mi equipo",
+  "contexto": {
+    "persona": "[NOMBRE]",
+    "puesto": "[PUESTO]",
+    "tiempo_en_el_equipo": "[MESES O AÑOS]",
+    "tipo_de_1a1": "[SEGUIMIENTO MENSUAL / CONVERSACIÓN DIFÍCIL / REVISIÓN DE OBJETIVOS]",
+    "duracion_minutos": "[30 / 45 / 60]"
+  },
+  "entradas": {
+    "que_va_bien": ["[EJEMPLO CONCRETO Y RECIENTE]"],
+    "que_no_va_bien": ["[HECHO OBSERVABLE, NO ETIQUETA DE PERSONALIDAD]"],
+    "acuerdos_1a1_anterior": ["[QUÉ SE ACORDÓ Y SI SE CUMPLIÓ]"],
+    "lo_que_quiero_conseguir": "[OBJETIVO DE LA CONVERSACIÓN]"
+  },
+  "procedimiento": [
+    "Abrir con una pregunta amplia y dejar que hable primero la otra persona",
+    "Repasar los acuerdos anteriores antes de introducir temas nuevos",
+    "Formular el feedback como hecho observado, efecto que tuvo y petición concreta",
+    "Preparar tres preguntas para entender su punto de vista antes de proponer soluciones",
+    "Cerrar con dos o tres acuerdos con fecha y qué apoyo doy yo",
+    "Dejar preparada la pregunta de cierre sobre qué necesita de mí"
+  ],
+  "restricciones": [
+    "Ni una sola etiqueta sobre la persona: solo comportamientos y hechos",
+    "Nada de comparaciones con otros compañeros",
+    "Máximo tres temas en la conversación",
+    "Nunca mezclar felicitación y crítica en la misma frase"
+  ],
+  "formato_salida": {
+    "secciones": ["Objetivo de la reunión en una frase", "Guion por bloques con minutos", "Frases exactas sugeridas para el feedback difícil", "Preguntas para escuchar", "Plantilla de acuerdos con fecha y apoyo", "Qué anotar después para el próximo 1 a 1"]
+  },
+  "criterios_calidad": [
+    "La persona habla más de la mitad del tiempo previsto",
+    "Cada crítica va acompañada de un ejemplo concreto y de una petición clara",
+    "La reunión termina con acuerdos escritos, no con buenas intenciones"
+  ],
+  "tono": "honesto, respetuoso y sin rodeos"
+}

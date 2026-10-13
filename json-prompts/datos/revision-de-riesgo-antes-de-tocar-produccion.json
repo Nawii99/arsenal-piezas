@@ -1,0 +1,37 @@
+{
+  "tarea": "Revisar una migracion de base de datos y emitir un veredicto de riesgo antes de ejecutarla en produccion",
+  "contexto": {
+    "motor_bd": "[POSTGRESQL / MYSQL / SQL SERVER / MARIADB]",
+    "version_motor": "[VERSION EXACTA SI LA CONOCES]",
+    "trafico": "[SISTEMA EN USO 24H / HAY HORAS VALLE DE X A Y / SE PUEDE PARAR]",
+    "filas_por_tabla": "[TABLA: NUMERO DE FILAS, UNA POR LINEA]",
+    "hay_replicas": "[SI / NO / NO LO SE]"
+  },
+  "entradas": {
+    "script_a_revisar": "[PEGA AQUI EL SQL O EL FICHERO DE MIGRACION COMPLETO]",
+    "copia_de_seguridad": "[CUANDO SE HIZO LA ULTIMA Y SI SABES RESTAURARLA]"
+  },
+  "revisa_en_este_orden": [
+    "Perdida de datos: borrados, truncados, cambios de tipo que recortan valores",
+    "Bloqueos: sentencias que bloquean la tabla entera y cuanto pueden tardar segun el tamano",
+    "Restricciones que fallaran por datos existentes: nulos, duplicados, claves foraneas huerfanas",
+    "Compatibilidad con el codigo que ya esta desplegado durante el despliegue",
+    "Idempotencia y que pasa si el script se corta a la mitad",
+    "Indices creados sin la opcion de creacion concurrente cuando el motor la ofrece",
+    "Valores por defecto y columnas obligatorias anadidas a tablas grandes"
+  ],
+  "formato_salida": {
+    "tipo": "tabla + conclusion",
+    "columnas_tabla": ["Linea o sentencia", "Problema detectado", "Riesgo (rojo/ambar/verde)", "Correccion concreta"],
+    "cierre": "Veredicto final en una linea: LANZAR, LANZAR CON CAMBIOS o NO LANZAR, y los tres pasos previos obligatorios"
+  },
+  "restricciones": [
+    "No reescribas el script entero, senala solo lo que hay que cambiar",
+    "Si falta informacion para juzgar un riesgo, dilo en vez de suponer",
+    "Nada de recomendaciones genericas tipo haz copia de seguridad sin decir de que tablas"
+  ],
+  "criterios_calidad": [
+    "Cada riesgo rojo lleva su alternativa segura escrita en SQL",
+    "Se estima el tiempo de bloqueo en funcion del numero de filas indicado"
+  ]
+}

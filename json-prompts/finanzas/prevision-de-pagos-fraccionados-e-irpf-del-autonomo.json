@@ -1,0 +1,38 @@
+{
+  "tarea": "Calcular el pago fraccionado del modelo 130 de un trimestre y estimar el resultado de la declaración de la renta del año, con un plan de apartado mensual de dinero",
+  "perfil_experto": "Asesor fiscal español especializado en IRPF de autónomos en estimación directa",
+  "contexto": {
+    "situacion": "[AUTÓNOMO EN ESTIMACIÓN DIRECTA NORMAL O SIMPLIFICADA]",
+    "comunidad_autonoma": "[TU COMUNIDAD]",
+    "situacion_personal": "[ESTADO CIVIL, HIJOS, OTRAS RENTAS COMO NÓMINA O ALQUILERES]",
+    "periodo": "[TRIMESTRE Y AÑO]"
+  },
+  "entradas": {
+    "ingresos_acumulados": "[INGRESOS DEL AÑO HASTA EL FINAL DEL TRIMESTRE]",
+    "gastos_acumulados": "[GASTOS DEDUCIBLES DEL AÑO HASTA EL FINAL DEL TRIMESTRE]",
+    "cuota_autonomos": "[LO QUE PAGAS AL MES A LA SEGURIDAD SOCIAL]",
+    "retenciones_soportadas": "[TOTAL DE RETENCIONES QUE TE HAN PRACTICADO TUS CLIENTES]",
+    "pagos_130_anteriores": "[LO YA INGRESADO EN TRIMESTRES PREVIOS DE ESTE AÑO]"
+  },
+  "pasos": [
+    "Calcular el rendimiento neto acumulado: ingresos menos gastos deducibles",
+    "Aplicar el 20% sobre ese rendimiento y restar los pagos fraccionados anteriores y las retenciones soportadas",
+    "Comprobar si el resultado sale negativo y explicar qué se hace en ese caso",
+    "Avisar de si por porcentaje de ingresos con retención podrías estar exento de presentar el 130",
+    "Proyectar el año completo y estimar la cuota de IRPF final por tramos, indicando que es una estimación"
+  ],
+  "formato_salida": {
+    "bloque_1": "Cálculo del 130 paso a paso con los números a la vista",
+    "bloque_2": "Importe a ingresar este trimestre y fecha límite",
+    "bloque_3": "Proyección del año: beneficio estimado, IRPF estimado y resultado aproximado de la renta",
+    "bloque_4": "Cuánto apartar cada mes en una cuenta separada, en euros",
+    "bloque_5": "Tres decisiones que podrías tomar antes de que acabe el año para no pagar de más"
+  },
+  "restricciones": [
+    "Marca con claridad qué es cálculo exacto y qué es estimación",
+    "No prometas ahorros ni des cifras cerradas de la renta final",
+    "Si falta un dato clave, pídelo antes de calcular"
+  ],
+  "criterios_calidad": ["Los cálculos son reproducibles y se muestran las operaciones", "El plan de apartado mensual es un número concreto", "El texto lo entiende alguien sin formación contable"],
+  "aviso": "Estimación orientativa basada en la normativa vigente; contrástala con tu asesor"
+}

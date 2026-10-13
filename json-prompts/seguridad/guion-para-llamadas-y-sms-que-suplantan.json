@@ -1,0 +1,45 @@
+{
+  "tarea": "Crear una guía de defensa ante estafas telefónicas y por SMS, con frases de respuesta literales y un procedimiento de verificación para el equipo",
+  "rol": "Formador especializado en fraude telefónico y suplantación de identidad",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "quien_atiende_llamadas": "[PUESTOS QUE COGEN EL TELÉFONO]",
+    "bancos_y_proveedores_reales": "[LISTA]",
+    "intentos_recibidos": "[DESCRIBE LOS QUE RECORDÉIS, AUNQUE SEA POR ENCIMA]",
+    "telefonos_oficiales_verificados": "[NÚMEROS BUENOS APUNTADOS DE ANTES]"
+  },
+  "escenarios_a_cubrir": [
+    "Falso empleado del banco que avisa de un cargo sospechoso y pide un código recibido por SMS",
+    "Falso soporte informático que pide instalar un programa de control remoto",
+    "Falsa mensajería que pide un pago pequeño de aduanas por SMS",
+    "Falso organismo público que amenaza con una sanción inmediata",
+    "Falso comercial de un proveedor que pide confirmar datos de facturación",
+    "Mensaje de voz o audio que imita a un directivo pidiendo urgencia"
+  ],
+  "para_cada_escenario": [
+    "Cómo empieza la llamada y qué frases usa el estafador para generar urgencia y autoridad",
+    "La señal que lo delata siempre",
+    "Respuesta literal recomendada, en una o dos frases educadas",
+    "Cómo terminar la conversación y qué hacer justo después"
+  ],
+  "reglas_innegociables": [
+    "Un código de verificación no se dice nunca en voz alta, ni al banco ni a nadie",
+    "Nunca se instala nada durante una llamada entrante",
+    "Si llaman ellos, se cuelga y se llama al número oficial guardado de antes",
+    "Colgar no es de mala educación: es el procedimiento"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "TARJETA DE BOLSILLO: 6 frases de respuesta para tener junto al teléfono",
+      "FICHAS POR ESCENARIO: una ficha corta por cada situación",
+      "ÁRBOL DE DECISIÓN: si piden X entonces haz Y, en 8 ramas como mucho",
+      "SIMULACRO: 3 llamadas para ensayar por parejas, con lo que dice el estafador y la solución"
+    ],
+    "idioma": "Español de España, coloquial y directo"
+  },
+  "criterios_calidad": [
+    "Las frases de respuesta se pueden decir tal cual sin sonar raro ni agresivo",
+    "Cada escenario incluye la señal concreta que lo delata, no consejos vagos",
+    "Cabe todo en dos folios impresos"
+  ]
+}

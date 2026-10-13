@@ -1,0 +1,35 @@
+{
+  "tarea": "Redactar el manual interno de gestión de reseñas de un negocio pequeño",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "sector": "[SECTOR]",
+    "personas_que_responden": "[QUIÉN Y CON QUÉ HORARIO]",
+    "plataformas": "[GOOGLE, TRIPADVISOR, REDES, OTRAS]",
+    "casos_tipicos": "[LOS 5 MOTIVOS DE QUEJA MÁS FRECUENTES]",
+    "limite_compensacion": "[HASTA DÓNDE PUEDE LLEGAR EL EQUIPO SIN CONSULTAR]"
+  },
+  "proceso": [
+    "Define el tono de marca en 5 reglas de sí y 5 de no, con ejemplo de cada una",
+    "Fija plazos de respuesta por tipo de reseña y quién cubre fines de semana",
+    "Crea el árbol de decisión: responder, responder y llamar, escalar o denunciar",
+    "Escribe un esqueleto de respuesta por cada caso típico, con huecos entre corchetes",
+    "Define qué se escala al responsable siempre: salud, seguridad, discriminación, prensa, amenaza legal o abogado",
+    "Añade la rutina semanal de revisión y el registro de casos"
+  ],
+  "restricciones": [
+    "Lenguaje claro para alguien sin experiencia previa",
+    "Ninguna plantilla puede publicarse sin personalizar al menos una frase",
+    "Nada de frases hechas prohibidas: incluye una lista negra de expresiones",
+    "El manual completo debe caber en 2 páginas"
+  ],
+  "formato_salida": {
+    "pagina_1": "Tono, plazos, quién responde qué y árbol de decisión",
+    "pagina_2": "Plantillas por caso, lista negra de frases y casos que se escalan siempre",
+    "checklist": "7 comprobaciones antes de pulsar publicar",
+    "prueba": "3 reseñas de ejemplo con la respuesta correcta para formar al equipo"
+  },
+  "criterios_calidad": [
+    "Una persona nueva puede responder su primera reseña solo con este documento",
+    "Cada regla tiene un ejemplo, no solo el enunciado"
+  ]
+}

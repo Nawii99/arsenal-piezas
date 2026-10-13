@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar 5 combinaciones de título, subtítulo y campo de palabras clave para la ficha de App Store, optimizadas para búsqueda y para convencer",
+  "contexto": {
+    "app": "[NOMBRE DE TU APP]",
+    "marca_obligatoria": "[NOMBRE QUE SÍ O SÍ DEBE APARECER]",
+    "que_hace": "[QUÉ RESUELVE, EN UNA FRASE]",
+    "publico": "[A QUIÉN VA DIRIGIDA]",
+    "idioma_ficha": "[IDIOMA Y PAÍS]",
+    "palabras_prioritarias": "[10 PALABRAS CLAVE ORDENADAS POR PRIORIDAD]",
+    "textos_actuales": "[TÍTULO Y SUBTÍTULO DE AHORA, SI EXISTEN]"
+  },
+  "limites": {
+    "titulo": "30 caracteres máximo, se corta antes en la lista de resultados",
+    "subtitulo": "30 caracteres máximo",
+    "campo_keywords": "100 caracteres máximo, separados por comas y sin espacios"
+  },
+  "reglas_del_oficio": [
+    "No repetir en el campo de palabras clave ninguna palabra que ya esté en el título o el subtítulo",
+    "No usar espacios después de las comas en el campo de palabras clave: se desperdician caracteres",
+    "Evitar plurales cuando el singular ya cubre la búsqueda y evitar artículos y preposiciones",
+    "No incluir la categoría si ya la asigna la tienda ni el nombre de competidores",
+    "El subtítulo debe sumar palabras nuevas y a la vez leerse como un beneficio, no como una lista",
+    "Priorizar que las 15 primeras letras del título se entiendan solas"
+  ],
+  "formato_salida": {
+    "tipo": "5 propuestas numeradas con la misma estructura",
+    "por_propuesta": [
+      "titulo (con recuento de caracteres)",
+      "subtitulo (con recuento de caracteres)",
+      "campo_keywords (con recuento de caracteres)",
+      "palabras clave cubiertas en total",
+      "a qué tipo de usuario apunta esta versión",
+      "riesgo o pega de esta versión"
+    ],
+    "cierre": "Recomendación final: cuál enviaría y cuál usaría como alternativa para probar después"
+  },
+  "criterios_calidad": [
+    "Ningún campo puede pasarse de su límite: contar los caracteres y mostrarlos",
+    "Las 5 propuestas deben ser realmente distintas entre sí, no variaciones de una coma",
+    "Nada de superlativos vacíos como la mejor app o la número 1"
+  ]
+}

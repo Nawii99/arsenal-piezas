@@ -1,0 +1,37 @@
+{
+  "tarea": "Transformar unos subtítulos estándar en subtítulos para personas sordas o con pérdida auditiva (SDH)",
+  "contexto": {
+    "tipo_pieza": "[VÍDEO CORPORATIVO / FORMACIÓN / ENTREVISTA / DOCUMENTAL / ANUNCIO]",
+    "norma_referencia": "UNE 153010 y buenas prácticas de subtitulado en España"
+  },
+  "entradas": {
+    "subtitulos_o_transcripcion": "[PEGA AQUÍ EL SRT O LA TRANSCRIPCIÓN]",
+    "personas_que_hablan": "[NOMBRE Y BREVE DESCRIPCIÓN DE CADA UNA]",
+    "sonidos_relevantes": "[MÚSICA, RUIDOS, EFECTOS QUE APORTAN INFORMACIÓN]",
+    "colores_disponibles": "[SI TU REPRODUCTOR ADMITE COLOR POR HABLANTE, INDÍCALO]"
+  },
+  "reglas_sdh": [
+    "Identifica al hablante cuando no se le vea en pantalla o hablen varias personas, en mayúsculas y con dos puntos",
+    "Describe entre paréntesis los sonidos que aportan información: (puerta que se cierra), (risas), (móvil vibrando)",
+    "Indica la música con almohadilla y su función: # música tensa # o el título si es reconocible",
+    "Marca el tono solo si cambia el sentido: (irónico), (susurra), (grita)",
+    "No describas sonidos evidentes en imagen ni conviertas la pieza en una narración",
+    "Mantén el orden: primero quién habla, luego el efecto sonoro, luego el diálogo",
+    "Si un sonido y un diálogo coinciden, prioriza el diálogo y coloca el sonido en el bloque contiguo"
+  ],
+  "restricciones": [
+    "Máximo 2 líneas y 37 caracteres por línea para dejar sitio a las marcas de hablante",
+    "Velocidad de lectura máxima de 15 caracteres por segundo, más pausada que en subtítulos normales",
+    "No elimines información: si hay que acortar, reformula sin perder el dato"
+  ],
+  "formato_salida": {
+    "principal": "archivo SRT completo con las marcas SDH aplicadas",
+    "anexo_1": "lista de hablantes con su etiqueta y, si procede, color asignado",
+    "anexo_2": "lista de sonidos y música añadidos, con el motivo por el que son relevantes"
+  },
+  "criterios_calidad": [
+    "Una persona sin oír nada entiende quién habla y qué pasa fuera de cuadro",
+    "No hay descripciones redundantes con lo que ya se ve",
+    "El ritmo de lectura permite leer y mirar la imagen"
+  ]
+}

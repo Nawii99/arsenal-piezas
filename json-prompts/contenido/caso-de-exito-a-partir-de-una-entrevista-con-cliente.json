@@ -1,0 +1,40 @@
+{
+  "tarea": "Escribir un caso de éxito publicable a partir de la entrevista o las notas de un cliente real",
+  "entradas": {
+    "cliente": "[NOMBRE DEL CLIENTE O EMPRESA, O ANÓNIMO POR SECTOR]",
+    "transcripcion_o_notas": "[PEGA AQUÍ LA CONVERSACIÓN O TUS NOTAS]",
+    "producto_contratado": "[QUÉ TE COMPRÓ]",
+    "datos_verificables": "[CIFRAS, PLAZOS O HECHOS QUE PUEDES DEMOSTRAR]",
+    "destino": "[PÁGINA WEB / PDF COMERCIAL / LINKEDIN / EMAIL]",
+    "extension": "[PALABRAS APROXIMADAS]"
+  },
+  "estructura": [
+    "Titular con el resultado principal en las palabras del cliente",
+    "Ficha rápida: quién es, a qué se dedica y desde cuándo es cliente",
+    "Punto de partida: qué problema tenía y qué había probado antes",
+    "La duda: qué le frenaba a la hora de contratar",
+    "Qué hicimos: la solución explicada en pasos comprensibles",
+    "Resultado: qué cambió, con datos solo si son verificables",
+    "Cita destacada del cliente, textual",
+    "Cierre: para quién es esto y llamada a la acción"
+  ],
+  "restricciones": [
+    "Ninguna cifra que no aparezca en datos verificables",
+    "Las citas se pueden limpiar de muletillas, nunca reescribir el mensaje",
+    "Nada de superlativos del tipo revolucionario o el mejor del mercado",
+    "Si falta información clave, listarla como preguntas pendientes en vez de inventarla",
+    "Respetar la confidencialidad si el cliente pidió anonimato"
+  ],
+  "formato_salida": {
+    "bloque_1": "3 titulares alternativos",
+    "bloque_2": "El caso completo con los apartados de la estructura",
+    "bloque_3": "Versión corta de 80 palabras para usar como testimonio en la web",
+    "bloque_4": "Publicación de LinkedIn de 150 palabras derivada del caso",
+    "bloque_5": "Lista de preguntas pendientes para el cliente"
+  },
+  "criterios_calidad": [
+    "Un lector del mismo sector se reconoce en el punto de partida",
+    "Se entiende qué se hizo, no solo qué bien salió",
+    "El texto sobrevive a que un competidor lo lea con lupa"
+  ]
+}

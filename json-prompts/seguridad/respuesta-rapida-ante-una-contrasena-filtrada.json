@@ -1,0 +1,37 @@
+{
+  "tarea": "Elaborar el plan de respuesta de las primeras 24 horas ante una contraseña o cuenta comprometida en un negocio pequeño",
+  "rol": "Responsable de respuesta ante incidentes que guía a alguien sin equipo técnico",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "cuenta_afectada": "[QUÉ CUENTA O SERVICIO]",
+    "como_se_detecto": "[AVISO DE FILTRACIÓN, ACCESO EXTRAÑO, CORREO FRAUDULENTO, AVISO DE UN CLIENTE...]",
+    "que_alcanzaba_esa_cuenta": "[CORREO, DINERO, DATOS DE CLIENTES, WEB, REDES]",
+    "quien_mas_la_usaba": "[PERSONAS Y SI COMPARTÍAN CONTRASEÑA]",
+    "hay_datos_personales": "[SÍ O NO Y DE QUIÉN]"
+  },
+  "pasos": [
+    "Contener: cambiar la contraseña, cerrar todas las sesiones abiertas y revisar los dispositivos con acceso",
+    "Cortar la propagación: cambiar esa misma contraseña en cualquier otro servicio donde se hubiera reutilizado",
+    "Comprobar el daño: reglas de reenvío de correo creadas sin permiso, cambios de datos bancarios, aplicaciones conectadas, nuevos usuarios administradores y últimos accesos",
+    "Avisar a quien toque: equipo, banco, clientes afectados y proveedores, con mensaje adaptado a cada uno",
+    "Valorar si hay datos personales implicados y si procede una notificación formal, recomendando consultar con un asesor jurídico",
+    "Cerrar el incidente: qué falló, qué se cambia para que no vuelva a pasar y quién lo verifica"
+  ],
+  "formato_salida": {
+    "bloque_1": "Acciones de la primera hora en lista numerada, la más urgente primero",
+    "bloque_2": "Tabla de comprobaciones con columnas Qué mirar, Dónde, Señal de alarma",
+    "bloque_3": "Tres borradores de aviso listos para enviar: al equipo, a clientes afectados y al banco o proveedor",
+    "bloque_4": "Registro del incidente con fecha, hechos, acciones y responsables",
+    "bloque_5": "Tres medidas para que no se repita"
+  },
+  "restricciones": [
+    "No des consejo legal cerrado: señala cuándo hay que consultar con un abogado o asesor en protección de datos",
+    "No propongas herramientas de ataque ni acciones contra terceros",
+    "Los avisos a clientes deben ser honestos, breves y sin tecnicismos"
+  ],
+  "criterios_calidad": [
+    "Las acciones están ordenadas por urgencia real, no por comodidad",
+    "Incluye la revisión de reglas de reenvío de correo, que casi siempre se olvida",
+    "El registro del incidente sirve como evidencia posterior"
+  ]
+}

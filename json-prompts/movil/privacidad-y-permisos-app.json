@@ -1,0 +1,40 @@
+{
+  "tarea": "Preparar la declaración de privacidad de datos para App Store y Google Play, la política de privacidad y los textos con los que la app pide cada permiso.",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "quien_publica": "[NOMBRE FISCAL O AUTÓNOMO, PAÍS: ESPAÑA]",
+    "datos_que_recoge": "[EMAIL, NOMBRE, TELÉFONO, UBICACIÓN, FOTOS, PAGOS, USO...]",
+    "herramientas_de_terceros": "[ANALÍTICA, PUBLICIDAD, PAGOS, CHAT, NOTIFICACIONES...]",
+    "permisos_que_pide": "[CÁMARA, FOTOS, UBICACIÓN, MICRÓFONO, CONTACTOS, NOTIFICACIONES]",
+    "hay_cuentas_de_usuario": "[SÍ / NO]",
+    "va_dirigida_a_menores": "[SÍ / NO]"
+  },
+  "pasos": [
+    "1. Haz el inventario real: por cada dato, apunta para qué se usa, dónde se guarda, cuánto tiempo y quién más lo ve. Si no sabes responder, no lo recojas.",
+    "2. Marca cada dato como recogido, vinculado a la identidad del usuario o usado para seguimiento publicitario. Esas tres casillas son las que preguntan las tiendas.",
+    "3. Revisa las herramientas de terceros: cada SDK de analítica o publicidad recoge datos por su cuenta y también hay que declararlos.",
+    "4. Redacta la política de privacidad en español y en una URL pública y permanente: responsable, datos, finalidad, base legal, plazos, terceros, derechos y correo de contacto.",
+    "5. Redacta el texto de cada permiso del sistema: una frase que diga PARA QUÉ, en concreto y en su beneficio. Nada de la app necesita acceso a tus fotos.",
+    "6. Añade una pantalla explicativa propia ANTES de lanzar el aviso del sistema: si el usuario dice que no al aviso del sistema, no se le puede volver a preguntar.",
+    "7. Pide cada permiso en el momento en que hace falta, no todos al abrir la app por primera vez.",
+    "8. Añade dentro de la app una forma de borrar la cuenta y los datos: es obligatorio si hay registro de usuarios."
+  ],
+  "formato_salida": {
+    "entrega": ["tabla dato / finalidad / vinculado a identidad / usado para seguimiento / tercero implicado", "borrador de política de privacidad en español", "texto de cada permiso, máximo 2 renglones", "guion de las pantallas explicativas previas", "lista de comprobación antes de enviar a revisión"],
+    "aviso": "al final, marcar en rojo cualquier punto donde falte información del negocio para poder declararlo con honestidad"
+  },
+  "criterios_calidad": [
+    "Todo lo declarado en las tiendas coincide con lo que la app hace de verdad: la incoherencia es la causa número uno de rechazo en este apartado.",
+    "Cada texto de permiso explica el beneficio concreto, no la necesidad técnica.",
+    "La política de privacidad está en una URL que responde y no caduca.",
+    "Existe una forma clara de borrar la cuenta desde dentro de la app.",
+    "No se recoge ningún dato que no se use para algo que el usuario entendería."
+  ],
+  "errores_frecuentes": [
+    "Copiar una política de privacidad de otra web sin cambiar el responsable ni los datos reales.",
+    "Declarar que no se recogen datos teniendo dentro una herramienta de analítica.",
+    "Pedir todos los permisos en la primera pantalla y quemar el único intento que da el sistema.",
+    "Olvidar el permiso de notificaciones, que en Android moderno se pide en tiempo de ejecución.",
+    "No ofrecer borrado de cuenta cuando hay registro."
+  ]
+}

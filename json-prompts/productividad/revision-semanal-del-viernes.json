@@ -1,0 +1,37 @@
+{
+  "tarea": "Conducir mi revisión semanal: comparar lo planificado con lo hecho, sacar 3 aprendizajes y fijar las prioridades de la semana siguiente",
+  "entradas": {
+    "plan_de_la_semana": "[LO QUE TENÍAS PLANIFICADO HACER]",
+    "lo_hecho": "[LO QUE HAS HECHO DE VERDAD]",
+    "cifras": "[VENTAS, CLIENTES NUEVOS, PRESUPUESTOS ENVIADOS U OTRO DATO QUE SIGAS]",
+    "pendientes": "[LO QUE SE HA QUEDADO SIN HACER]",
+    "que_me_freno": "[INTERRUPCIONES, IMPREVISTOS O BLOQUEOS DE LA SEMANA]",
+    "proxima_semana": "[CITAS Y COMPROMISOS QUE YA TIENES]"
+  },
+  "metodo": [
+    "Calcula el porcentaje de lo planificado que se ha completado y compáralo sin dramatizar",
+    "Separa los incumplimientos por causa: exceso de plan, interrupciones, bloqueo externo o falta de ganas",
+    "Identifica la tarea de la semana que más ha aportado al objetivo y la que menos",
+    "Pregunta al usuario solo lo imprescindible si falta información clave, máximo 3 preguntas",
+    "Convierte los pendientes en decisiones: se hace, se aplaza con fecha o se elimina",
+    "Cierra con 3 prioridades para la semana siguiente, no más"
+  ],
+  "restricciones": [
+    "Nada de frases motivadoras ni de culpabilizar",
+    "Cada aprendizaje debe traducirse en un cambio concreto de la semana que viene",
+    "Máximo una página de salida"
+  ],
+  "formato_salida": {
+    "marcador": "Planificado vs completado en número y porcentaje",
+    "tabla_causas": "Tabla con columnas: Pendiente | Causa | Decisión (hacer, aplazar con fecha, eliminar)",
+    "lo_que_funciono": "Dos o tres cosas que repetir",
+    "aprendizajes": "3 aprendizajes, cada uno con el cambio concreto que provoca",
+    "tres_prioridades": "Las 3 prioridades de la semana siguiente con el resultado esperado de cada una"
+  },
+  "criterios_calidad": [
+    "Ningún pendiente se queda sin decisión",
+    "Los cambios propuestos son accionables el lunes por la mañana",
+    "El texto es honesto: si la semana ha ido mal, lo dice"
+  ],
+  "tono": "Sereno y honesto, como un socio que te conoce, español de España"
+}

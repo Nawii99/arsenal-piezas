@@ -1,0 +1,33 @@
+{
+  "tarea": "evaluar_riesgo_privacidad_app_antes_de_instalar",
+  "contexto": {
+    "usuario": "persona que empieza de cero en seguridad móvil",
+    "sistema_operativo": "[ANDROID O IOS]"
+  },
+  "entrada": {
+    "nombre_app": "[NOMBRE DE LA APP]",
+    "tienda": "[GOOGLE PLAY, APP STORE U OTRA FUENTE]",
+    "numero_descargas": "[SI SE MUESTRA EN LA FICHA]",
+    "valoracion": "[NOTA Y NUMERO DE RESEÑAS]",
+    "permisos_solicitados": ["[LISTA DE PERMISOS QUE PIDE AL INSTALAR O AL ABRIR]"],
+    "desarrollador": "[NOMBRE DEL DESARROLLADOR QUE APARECE EN LA FICHA]"
+  },
+  "criterios_evaluacion": {
+    "procedencia": "comprobar si la app viene de la tienda oficial o de un archivo APK o IPA descargado de una web",
+    "permisos_coherentes": "comparar los permisos pedidos con la función real de la app",
+    "reputacion_desarrollador": "buscar si el desarrollador tiene otras apps y si tiene web propia verificable",
+    "antiguedad_y_reseñas": "desconfiar de apps muy nuevas con miles de reseñas de golpe, señal de reseñas falsas",
+    "politica_privacidad": "comprobar que existe un enlace a política de privacidad legible, no solo un enlace roto"
+  },
+  "salida_esperada": {
+    "nivel_riesgo": "[BAJO, MEDIO O ALTO]",
+    "motivo": "explicación breve sin tecnicismos de por qué",
+    "recomendacion": "instalar, instalar con permisos restringidos, o no instalar",
+    "alternativa_si_no_instalar": "sugerir una alternativa conocida solo si existe, sin inventar nombres"
+  },
+  "reglas": {
+    "no_afirmar_sin_evidencia": true,
+    "no_recomendar_apk_fuera_de_tienda_oficial": true,
+    "avisar_riesgo_si_pide_permiso_administrador_del_dispositivo": true
+  }
+}

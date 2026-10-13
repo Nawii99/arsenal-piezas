@@ -1,0 +1,39 @@
+{
+  "tarea": "Encontrar dónde se atasca mi proceso y proponer cómo desatascarlo",
+  "rol": "Analista de mejora de procesos con enfoque práctico y sin herramientas caras",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "proceso_analizado": "[DESDE QUÉ MOMENTO HASTA QUÉ MOMENTO, EJ: DESDE QUE ENTRA EL PEDIDO HASTA QUE SALE]",
+    "plazo_prometido": "[LO QUE LE DICES AL CLIENTE]",
+    "plazo_real": "[LO QUE TARDÁIS DE VERDAD]"
+  },
+  "entradas": {
+    "etapas": "[LISTA LAS ETAPAS EN ORDEN Y QUIÉN HACE CADA UNA]",
+    "tiempos": "[CUÁNTO SE TARDA EN CADA ETAPA Y CUÁNTO SE ESPERA ENTRE ETAPAS]",
+    "acumulaciones": "[DÓNDE SE AMONTONA TRABAJO PENDIENTE]",
+    "reprocesos": "[QUÉ SE REHACE O SE DEVUELVE Y CON QUÉ FRECUENCIA]"
+  },
+  "instrucciones": [
+    "Separa en cada etapa el tiempo de trabajo real del tiempo de espera y calcula qué porcentaje del plazo total es pura espera",
+    "Identifica el cuello de botella: la etapa con menos capacidad, no la más lenta en apariencia",
+    "Comprueba si el atasco viene de capacidad, de esperar aprobaciones, de falta de información o de trabajo mal hecho antes",
+    "Calcula cuánto bajaría el plazo total si se arregla solo el cuello de botella",
+    "Propón 3 cambios: uno de coste cero para esta semana, uno de reorganización para este mes y uno que requiera inversión",
+    "Avisa si al desatascar una etapa el problema se va a mover a la siguiente",
+    "No des por buenos mis datos si son incoherentes: señálalo"
+  ],
+  "restricciones": [
+    "Prohibido recomendar 'contratar más gente' como primera solución",
+    "Cada propuesta indica quién la ejecuta y en cuánto tiempo se nota",
+    "Sin promesas de porcentajes de mejora que no salgan de mis datos"
+  ],
+  "formato_salida": {
+    "tipo": "informe breve en markdown",
+    "secciones": ["Recorrido del trabajo etapa por etapa", "Tabla de trabajo real frente a espera", "El atasco y por qué lo es", "3 cambios propuestos con esfuerzo e impacto", "Qué medir la semana que viene"]
+  },
+  "criterios_calidad": [
+    "El atasco se señala con datos, no con intuición",
+    "Cada cambio dice qué deja de pasar cuando funciona",
+    "Queda claro qué medir para saber si ha mejorado"
+  ]
+}

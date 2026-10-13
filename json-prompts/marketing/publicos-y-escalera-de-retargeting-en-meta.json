@@ -1,0 +1,37 @@
+{
+  "tarea": "Definir la arquitectura de publicos y la escalera de retargeting para una cuenta de Meta Ads",
+  "contexto": {
+    "negocio": "[QUE VENDES]",
+    "visitas_web_mes": "[NUMERO APROXIMADO]",
+    "ventas_o_leads_mes": "[NUMERO]",
+    "ticket_medio_eur": "[IMPORTE]",
+    "listas_propias": "[EMAILS DE CLIENTES: CUANTOS | TELEFONOS | NINGUNA]",
+    "ciclo_de_compra": "[COMPRA IMPULSIVA | DE DIAS | DE SEMANAS]",
+    "recompra": "[SE VUELVE A COMPRAR CADA CUANTO O 'COMPRA UNICA']"
+  },
+  "instrucciones": [
+    "Define 4 niveles de temperatura: frio, tibio (interaccion en redes o video visto), caliente (visita web o producto visto) y muy caliente (carrito o formulario iniciado)",
+    "Para cada nivel indica: como se crea el publico, ventana de dias, tamano minimo para que funcione, exclusiones obligatorias y mensaje que toca decir ahi",
+    "Ajusta las ventanas de dias al ciclo de compra indicado, no uses 30 dias por defecto para todo",
+    "Si el trafico mensual es bajo, di claramente que niveles no tienen volumen suficiente y agrupalos",
+    "Anade publicos de exclusion: compradores recientes, empleados, personas ya convertidas y quien acaba de comprar",
+    "Propon 2 publicos similares (lookalike) partiendo de la mejor fuente disponible y explica por que esa y no otra",
+    "Incluye un plan de reactivacion para clientes antiguos usando la lista propia"
+  ],
+  "restricciones": [
+    "No crear publicos por debajo del tamano minimo util",
+    "No solapar publicos sin exclusiones, para no competir contra ti mismo",
+    "Nada de subir listas de contactos sin base legal ni consentimiento (RGPD)"
+  ],
+  "formato_salida": {
+    "1_tabla_publicos": "nivel | nombre del publico | como se crea | ventana de dias | exclusiones | mensaje clave",
+    "2_esquema_flujo": "Diagrama en texto de por donde pasa una persona desde que no te conoce hasta que compra",
+    "3_frecuencia": "Limite de frecuencia recomendado por nivel y que hacer si se dispara",
+    "4_lista_de_montaje": "Pasos exactos en el administrador de anuncios para crear cada publico"
+  },
+  "criterios_calidad": [
+    "Ningun publico se solapa sin su exclusion correspondiente",
+    "Las ventanas de dias responden al ciclo de compra indicado",
+    "El mensaje de cada nivel es distinto y coherente con lo que esa persona ya sabe de ti"
+  ]
+}

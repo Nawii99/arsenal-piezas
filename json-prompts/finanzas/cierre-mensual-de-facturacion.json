@@ -1,0 +1,43 @@
+{
+  "tarea": "Preparar el cierre mensual de facturación: detectar todo lo entregado y no facturado y generar la lista de facturas a emitir",
+  "contexto": {
+    "empresa": "[TU EMPRESA]",
+    "mes_a_cerrar": "[MES Y AÑO]",
+    "dia_de_facturacion": "[DÍA DEL MES EN QUE FACTURAS]",
+    "modelo_de_cobro": "[POR PROYECTO / CUOTA MENSUAL / POR HORAS / MIXTO]"
+  },
+  "entradas": {
+    "trabajos_entregados": "[CLIENTE, QUÉ SE ENTREGÓ, FECHA E IMPORTE ACORDADO]",
+    "cuotas_fijas": "[CLIENTES CON IGUALA Y SU IMPORTE]",
+    "extras_aprobados": "[TRABAJOS FUERA DE PRESUPUESTO Y QUIÉN LOS APROBÓ]",
+    "gastos_repercutibles": "[MATERIALES, VIAJES O LICENCIAS PAGADOS POR CUENTA DEL CLIENTE]",
+    "facturas_ya_emitidas": "[LISTADO DEL MES]",
+    "anticipos_cobrados": "[IMPORTES RECIBIDOS A CUENTA]"
+  },
+  "pasos": [
+    "Cruzar lo entregado con lo facturado y señalar cada hueco",
+    "Comprobar que las cuotas fijas y las subidas de precio pactadas están aplicadas",
+    "Recuperar extras y gastos repercutibles que suelen olvidarse",
+    "Descontar anticipos ya cobrados para no facturar dos veces",
+    "Ordenar las facturas a emitir por importe y por urgencia de cobro",
+    "Revisar numeración correlativa y fechas antes de emitir"
+  ],
+  "reglas": [
+    "No proponer facturar nada que no esté entregado o aprobado por escrito",
+    "Marcar como DUDOSO todo lo que no se pueda justificar con un documento",
+    "Avisar si algún cliente acumula trabajo sin facturar de meses anteriores"
+  ],
+  "formato_salida": {
+    "pendiente_de_facturar": "Tabla: cliente, concepto, importe, prueba que lo respalda",
+    "facturas_a_emitir": "Lista ordenada con importe y fecha de emisión sugerida",
+    "total_del_mes": "Suma prevista y comparación con lo ya emitido",
+    "dudosos": "Puntos a confirmar con el cliente antes de facturar",
+    "checklist": "Diez comprobaciones finales antes de darle a enviar"
+  },
+  "criterios_calidad": [
+    "No queda ningún trabajo entregado sin decisión de facturar o no",
+    "Los importes cuadran con lo pactado y con los anticipos",
+    "El cierre se puede completar en una sola sesión"
+  ],
+  "tono": "Ordenado, metódico y breve"
+}

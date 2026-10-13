@@ -1,0 +1,41 @@
+{
+  "tarea": "Normalizar direcciones postales españolas escritas de forma libre y separarlas en campos",
+  "contexto": {
+    "pais": "España",
+    "uso": "[PARA QUÉ: ENVÍOS, FACTURACIÓN, RUTAS DE REPARTO, INFORMES POR PROVINCIA]",
+    "transportista": "[EMPRESA DE ENVÍOS SI LA HAY]"
+  },
+  "entradas": {
+    "direcciones": "[PEGA LAS DIRECCIONES, UNA POR LÍNEA, TAL CUAL ESTÁN EN TU FICHERO]"
+  },
+  "reglas_normalizacion": [
+    "Tipo de vía en palabra completa y con inicial mayúscula: Calle, Avenida, Paseo, Plaza, Carretera, Camino, Travesía (corrige c/, cl, avda, avd, pza, ctra)",
+    "Número separado de la vía; si hay bis, letra o kilómetro, mantenlo",
+    "Piso, puerta, escalera y bloque van a un campo aparte llamado detalle",
+    "Código postal siempre con 5 dígitos, añadiendo el cero delante cuando falte (ej: 8001 pasa a 08001)",
+    "La provincia se deduce de los dos primeros dígitos del código postal y se compara con la que venía escrita",
+    "Nombres de población en su forma oficial, respetando lenguas cooficiales (A Coruña, Girona, Alacant/Alicante según venga)",
+    "Quita espacios dobles, puntos sueltos y mayúsculas completas; usa mayúscula inicial en nombres propios"
+  ],
+  "errores_a_detectar": [
+    "Código postal que no corresponde a la provincia escrita",
+    "Población inexistente o mal escrita",
+    "Dirección sin número",
+    "Dos direcciones metidas en el mismo campo",
+    "Apartados de correos, que no admiten mensajería"
+  ],
+  "formato_salida": {
+    "tipo": "tabla CSV",
+    "columnas": ["original", "tipo_via", "nombre_via", "numero", "detalle", "codigo_postal", "poblacion", "provincia", "estado", "aviso"],
+    "valores_estado": ["correcta", "corregida", "revisar"]
+  },
+  "restricciones": [
+    "No inventes números, portales ni códigos postales que no aparezcan",
+    "Si el código postal y la población se contradicen, marca revisar y explica cuál sospechas que es el bueno",
+    "Conserva siempre la dirección original en su columna"
+  ],
+  "criterios_calidad": [
+    "Toda dirección marcada como corregida indica qué se ha cambiado",
+    "Ninguna fila se queda sin estado"
+  ]
+}

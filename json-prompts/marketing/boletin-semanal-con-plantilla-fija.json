@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar el boletín de esta semana siguiendo una plantilla fija reutilizable",
+  "contexto": {
+    "nombre_boletin": "[NOMBRE DEL BOLETÍN]",
+    "tema_general": "[DE QUÉ VA SIEMPRE TU BOLETÍN]",
+    "lector": "[QUIÉN LO LEE Y QUÉ QUIERE CONSEGUIR]",
+    "tema_de_esta_semana": "[ASUNTO CONCRETO A TRATAR]",
+    "material_de_apoyo": "[NOTAS, ENLACES O DATOS QUE QUIERES INCLUIR]",
+    "novedad_del_negocio": "[NOVEDAD, PROMOCIÓN O NADA]",
+    "accion_final": "[QUÉ QUIERES QUE HAGAN: RESPONDER, RESERVAR, COMPRAR, LEER]"
+  },
+  "plantilla": [
+    "Asunto y preencabezado",
+    "Saludo de una línea que conecte con la semana del lector",
+    "Idea principal: el tema explicado en 200-350 palabras con un ejemplo real",
+    "Aplícalo hoy: 3 pasos concretos que se puedan hacer en menos de 30 minutos",
+    "El detalle que casi nadie mira: un matiz de oficio poco conocido",
+    "Recomendación breve: herramienta, lectura o recurso, con por qué",
+    "Novedad del negocio en 3 líneas, si la hay",
+    "Cierre con una pregunta y la acción final",
+    "Posdata con un enlace y la baja fácil"
+  ],
+  "restricciones": [
+    "Entre 500 y 800 palabras en total",
+    "Tuteo, español de España, frases cortas, cero jerga de consultoría",
+    "Máximo 3 enlaces en todo el boletín",
+    "Nada de datos ni estudios inventados: si no hay fuente, se dice como opinión",
+    "Texto que funcione en solo texto, sin depender de imágenes"
+  ],
+  "formato_salida": {
+    "entrega": "Boletín completo listo para pegar en el gestor de correo",
+    "añadir_al_final": ["Tres asuntos alternativos", "Un resumen de 2 líneas para redes", "Idea del boletín de la semana siguiente"]
+  },
+  "criterios_calidad": [
+    "Se puede leer entero en menos de 4 minutos",
+    "El lector se lleva algo aplicable aunque no haga clic en ningún enlace",
+    "La estructura es idéntica a la plantilla, para poder repetirla cada semana"
+  ]
+}

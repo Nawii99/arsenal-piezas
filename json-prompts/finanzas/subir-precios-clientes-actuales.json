@@ -1,0 +1,53 @@
+{
+  "tarea": "Diseñar una subida de precios a clientes ya existentes: cuánto, a quién, en qué orden y con qué mensaje",
+  "contexto": {
+    "negocio": "[QUÉ VENDES]",
+    "modelo": "[CUOTA MENSUAL / PROYECTOS / PRODUCTO / SERVICIO PRESENCIAL]",
+    "ultima_subida": "[FECHA O NUNCA]"
+  },
+  "entradas": {
+    "cartera": "[LISTA: CLIENTE, PRECIO ACTUAL, ANTIGÜEDAD, MARGEN APROXIMADO, NIVEL DE DEPENDENCIA QUE TIENE DE TI 1 A 5]",
+    "subida_de_costes": "[QUÉ SE TE HA ENCARECIDO Y CUÁNTO EN %]",
+    "lista_de_espera": "[TIENES DEMANDA SIN ATENDER SÍ/NO Y CUÁNTA]",
+    "precio_a_clientes_nuevos": "[LO QUE COBRAS HOY A UNO QUE ENTRE]",
+    "mejoras_aportadas": "[QUÉ HACES AHORA QUE NO HACÍAS AL FIJAR EL PRECIO]",
+    "cuantos_puedo_perder": "[NÚMERO DE CLIENTES QUE PODRÍAS PERDER SIN PONER EN RIESGO LA CAJA]"
+  },
+  "procedimiento": [
+    "1. Calcula la brecha entre lo que pagan los antiguos y lo que pagan los nuevos: esa brecha es el primer objetivo",
+    "2. Divide la cartera en tres tandas: primero los de menor margen y menor riesgo de perder, luego los intermedios, al final los estratégicos",
+    "3. Fija la subida por cliente entre un mínimo defendible y un máximo, y nunca subas más del máximo sin cambiar también lo que entregas",
+    "4. Calcula el punto de indiferencia: cuántos clientes puedes perder con la nueva tarifa y seguir facturando lo mismo, con la cuenta a la vista",
+    "5. Elige la fecha de efecto con al menos 30 días de aviso y respeta lo firmado en contratos vivos",
+    "6. Empareja la subida con algo tangible: un cambio en el alcance, un tiempo de respuesta, un extra incluido o la retirada de algo que regalabas",
+    "7. Escribe la carta: motivo en una línea, precio nuevo, fecha de efecto, qué mejora y una salida digna si no le encaja",
+    "8. Prepara tres respuestas: pide rebaja, amenaza con irse, pide congelar el precio; incluye hasta dónde puedes ceder y con qué contrapartida",
+    "9. Define la señal de parada: si en la primera tanda se va más de cierto porcentaje, revisa antes de seguir con la siguiente"
+  ],
+  "restricciones": [
+    "Nunca justifiques la subida con problemas personales ni con la inflación como única razón",
+    "No apliques la misma subida lineal a toda la cartera",
+    "No prometas mejoras que no puedas sostener cada mes",
+    "Nada de cifras de resultados garantizados"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Avisar con menos de un mes o comunicarlo en la misma factura sin previo aviso",
+    "Pedir perdón en el mensaje y abrir la puerta a negociar sin querer",
+    "Subir a todos a la vez y quedarse sin margen de maniobra",
+    "Ceder la rebaja sin quitar nada del alcance"
+  ],
+  "formato_salida": {
+    "1_tabla": "Cliente, precio actual, precio nuevo, subida en % y en euros, tanda, riesgo de fuga",
+    "2_cuenta": "Facturación actual, facturación con la subida y cuántos clientes puedes perder sin bajar de la actual",
+    "3_calendario": "Fechas de aviso y de efecto por tanda",
+    "4_carta": "Texto completo de la comunicación, versión email y versión WhatsApp",
+    "5_objeciones": "Tres objeciones con su respuesta y el límite de concesión",
+    "estilo": "Firme y cordial, sin disculpas, tuteando salvo clientes de trato formal"
+  },
+  "criterios_calidad": [
+    "La cuenta del punto de indiferencia está escrita y se entiende",
+    "La carta cabe en una pantalla del móvil",
+    "Ningún cliente estratégico está en la primera tanda",
+    "Cada respuesta a objeción tiene un límite claro de hasta dónde cedes"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "tarea": "Inventariar los datos que recoge mi app y preparar el borrador de la declaración de privacidad de las tiendas",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "servicios_integrados": "[ANALÍTICA, NOTIFICACIONES, PAGOS, MAPAS, PUBLICIDAD, CHAT, LOGIN SOCIAL]",
+    "datos_que_pide_al_usuario": "[NOMBRE, CORREO, TELÉFONO, FOTOS, UBICACIÓN, LO QUE SEA]",
+    "donde_se_guardan": "[PROVEEDOR Y PAÍS SI LO SÉ]",
+    "publico": "[INCLUYE MENORES / SOLO ADULTOS]"
+  },
+  "pasos": [
+    "Lista cada dato que entra en la app, tanto el que escribe el usuario como el que recogen los servicios de terceros por su cuenta",
+    "Para cada dato anota para qué se usa, si se vincula a la identidad de la persona, si sirve para seguimiento publicitario, quién lo recibe y cuánto tiempo se guarda",
+    "Marca los datos que en realidad no necesitas y propone dejar de recogerlos",
+    "Traduce el inventario a las categorías que piden los formularios de las tiendas y deja marcada la respuesta de cada apartado",
+    "Comprueba que existe una ruta clara para borrar la cuenta y los datos desde dentro de la app y también desde la web",
+    "Redacta el borrador de la política de privacidad con secciones cortas: qué recojo, para qué, con quién lo comparto, cuánto lo guardo, derechos y contacto",
+    "Señala los puntos dudosos que hay que consultar con un profesional antes de publicar"
+  ],
+  "restricciones": [
+    "Esto es un borrador de trabajo, no un texto legal cerrado ni asesoramiento jurídico",
+    "No declares menos de lo que recogen tus servicios: la analítica y la publicidad cuentan aunque no las mires",
+    "Lenguaje llano, nada de copiar párrafos de otra web",
+    "Si hay menores, márcalo aparte porque las reglas cambian"
+  ],
+  "errores_frecuentes": [
+    "Olvidar los datos que recogen las librerías de terceros metidas por el programador",
+    "Decir que no se recoge nada mientras hay analítica y avisos push activos",
+    "No ofrecer forma de borrar la cuenta, que las tiendas exigen",
+    "Publicar una política sin dirección de contacto ni responsable"
+  ],
+  "formato_salida": {
+    "tabla_inventario": "dato, origen, finalidad, vinculado_a_identidad, usado_para_seguimiento, destinatarios, plazo",
+    "respuestas_formulario": "Lista de apartados de la tienda con la respuesta marcada",
+    "borrador_politica": "Secciones redactadas y listas para revisar",
+    "avisos": "Lista de puntos a consultar con un profesional"
+  },
+  "criterios_calidad": [
+    "Cada servicio integrado aparece con los datos que recoge por su cuenta",
+    "Lo declarado en el formulario coincide con la tabla de inventario",
+    "Está descrita la ruta de borrado de cuenta paso a paso",
+    "Los puntos dudosos están marcados en vez de resueltos a ojo"
+  ]
+}

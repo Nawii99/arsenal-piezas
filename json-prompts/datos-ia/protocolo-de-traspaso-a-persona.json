@@ -1,0 +1,33 @@
+{
+  "tarea": "Definir el protocolo de traspaso de un agente de IA a una persona del equipo",
+  "contexto": {
+    "negocio": "[NOMBRE Y QUÉ VENDES]",
+    "horario_humano": "[HORARIO EN EL QUE HAY ALGUIEN]",
+    "quien_recoge": "[PERSONA O EQUIPO Y CANAL DE AVISO]",
+    "asuntos_delicados": "[BAJAS, RECLAMACIONES, SALUD, DINERO, LO QUE APLIQUE]"
+  },
+  "disparadores_a_definir": [
+    "Enfado o amenaza de reclamación, denuncia o reseña negativa",
+    "Petición de dinero: devolución, descuento, cancelación o cambio de factura",
+    "Datos personales sensibles o petición de ejercer derechos del RGPD",
+    "Dos respuestas seguidas en las que el agente no ha resuelto la duda",
+    "El cliente pide hablar con una persona, aunque sea de forma indirecta",
+    "El agente no tiene el dato y tendría que suponerlo"
+  ],
+  "restricciones": [
+    "El agente nunca promete plazos ni compensaciones al traspasar",
+    "Fuera de [HORARIO HUMANO] el agente dice cuándo habrá respuesta, sin inventarse una hora",
+    "El traspaso se hace a la primera señal, no después de insistir"
+  ],
+  "formato_salida": {
+    "tipo": "documento con tres bloques",
+    "bloque_1": "tabla Disparador | Señal concreta en el mensaje | Acción",
+    "bloque_2": "mensajes literales al cliente, uno por disparador, máximo 3 líneas cada uno",
+    "bloque_3": "plantilla del aviso interno con resumen del caso, qué ha probado el agente y urgencia"
+  },
+  "criterios_calidad": [
+    "Cada disparador se reconoce por señales concretas, no por intuición",
+    "Los mensajes al cliente no suenan a robot ni echan la culpa al sistema"
+  ],
+  "tono": "cercano y responsable"
+}

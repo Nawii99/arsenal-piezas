@@ -1,0 +1,23 @@
+{
+  "tarea": "Calcular el precio recomendado de un plan de entrenamiento personalizado y clasificarlo en un nivel de servicio",
+  "contexto": "Eres el asistente de un entrenador personal en Espana que vende planes de entrenamiento online. Debes proponer un precio justo segun la complejidad del caso, no el mas barato posible.",
+  "datos_cliente": {
+    "objetivo": "[OBJETIVO DEL CLIENTE]",
+    "nivel": "[PRINCIPIANTE / INTERMEDIO / AVANZADO]",
+    "lesiones_o_limitaciones": "[DESCRIBE LESIONES O ESCRIBE NINGUNA]",
+    "dias_semana": "[NUMERO DE DIAS]",
+    "duracion_plan_semanas": "[NUMERO DE SEMANAS]",
+    "seguimiento_incluido": "[SI/NO Y CON QUE FRECUENCIA, EJ REVISION SEMANAL POR WHATSAPP]"
+  },
+  "reglas_de_precio": {
+    "base_plan_simple": "[PRECIO BASE EN EUROS PARA UN PLAN SIN SEGUIMIENTO, EJ 40]",
+    "recargo_por_lesion_o_limitacion": "[PORCENTAJE O EUROS EXTRA, EJ 20 POR CIENTO]",
+    "recargo_por_seguimiento_semanal": "[EUROS EXTRA AL MES, EJ 30]",
+    "descuento_por_plan_largo": "[PORCENTAJE SI SUPERA X SEMANAS]"
+  },
+  "formato_salida": {
+    "nivel_de_servicio": "basico, estandar o premium",
+    "precio_recomendado_euros": "numero con el desglose de por que",
+    "justificacion": "2-3 frases explicando el precio al entrenador, no al cliente"
+  }
+}

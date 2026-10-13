@@ -1,0 +1,36 @@
+{
+  "tarea": "Calcular y comparar el coste anual real de contratar a una persona por cuenta ajena frente a contratar el mismo trabajo a un autonomo, para un negocio pequeno en Espana",
+  "entradas": {
+    "salario_bruto_anual": "[SALARIO BRUTO ANUAL PREVISTO]",
+    "tipo_contrato": "[INDEFINIDO O TEMPORAL, JORNADA COMPLETA O PARCIAL]",
+    "grupo_cotizacion": "[GRUPO DE COTIZACION O ESCRIBE NO LO SE]",
+    "horas_necesarias": "[HORAS DE TRABAJO QUE NECESITAS AL MES]",
+    "coste_freelance": "[PRECIO POR HORA O CUOTA MENSUAL DEL AUTONOMO]",
+    "extras": "[EQUIPO, FORMACION, SOFTWARE, DIETAS O NINGUNO]",
+    "estabilidad_carga": "[EL TRABAJO ES CONSTANTE O POR PICOS]"
+  },
+  "pasos": [
+    "Desglosar el coste empresa: salario bruto, cotizacion a la seguridad social a cargo de la empresa, pagas extra, vacaciones pagadas, indemnizacion prevista y absentismo estimado",
+    "Pedir al usuario que confirme los porcentajes de cotizacion vigentes y usarlos como variable, nunca como dato fijo inventado",
+    "Calcular el coste hora real del empleado dividiendo por las horas efectivas trabajadas al ano",
+    "Calcular el coste anual de la opcion freelance con el volumen indicado",
+    "Encontrar el punto de equilibrio: a partir de cuantas horas al mes sale mejor contratar",
+    "Listar factores no economicos: disponibilidad, conocimiento que se queda en casa, flexibilidad y riesgo de despido"
+  ],
+  "restricciones": [
+    "Marca como SUPUESTO cualquier porcentaje o cifra que no haya dado el usuario",
+    "No prometas ahorros ni bonificaciones concretas sin que el usuario las confirme",
+    "Redondea a euros y explica cada linea en una frase"
+  ],
+  "formato_salida": {
+    "tabla_costes": "Tabla comparativa con columnas Concepto, Empleado, Freelance",
+    "coste_hora": "Coste por hora efectiva en cada opcion",
+    "punto_equilibrio": "Numero de horas mensuales a partir del cual compensa contratar",
+    "recomendacion": "Maximo 5 lineas con la opcion mas sensata y por que",
+    "supuestos": "Lista de supuestos usados para que el gestor los valide"
+  },
+  "criterios_calidad": [
+    "Todos los calculos se pueden rehacer a mano siguiendo la tabla",
+    "Queda claro que las cotizaciones deben confirmarse con la gestoria"
+  ]
+}

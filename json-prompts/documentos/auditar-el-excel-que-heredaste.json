@@ -1,0 +1,54 @@
+{
+  "tarea": "Auditar una hoja de calculo hecha por otra persona y devolver un informe de fallos y arreglos ordenados por gravedad",
+  "contexto": {
+    "para_que_sirve_la_hoja": "[EJ: CALCULAR PRESUPUESTOS, CONTROLAR STOCK, COMISIONES]",
+    "quien_la_hizo": "[EX EMPLEADO, GESTOR, PLANTILLA DESCARGADA]",
+    "decisiones_que_dependen_de_ella": "[QUE SE DECIDE MIRANDO ESTOS NUMEROS]",
+    "programa": "[EXCEL, GOOGLE SHEETS, LIBREOFFICE]"
+  },
+  "entradas": {
+    "contenido": "[PEGA LAS HOJAS COMO TEXTO O CSV, INDICANDO LA LETRA DE COLUMNA Y EL NUMERO DE FILA]",
+    "formulas": "[PEGA LAS FORMULAS DE LAS CELDAS CLAVE, EJ: D2 = B2*C2]",
+    "sintoma": "[QUE TE CHIRRIA: UN TOTAL RARO, UN ERROR EN PANTALLA, NADA CONCRETO]"
+  },
+  "pasos": [
+    "1. Dibuja el mapa de la hoja: que zona son datos de entrada, cual es de calculo y cual es de resultado",
+    "2. Localiza numeros escritos a mano dentro de formulas (por ejemplo un 21 o un 1,21 metido a pelo) y proponlos como celda aparte",
+    "3. Revisa rangos: sumas que se quedan cortas o que se pasan y cogen la fila de totales",
+    "4. Busca errores visibles y explica cada uno en cristiano: division entre cero, referencia rota, valor no encontrado, texto donde deberia haber numero",
+    "5. Comprueba si hay columnas de numeros guardados como texto, que no suman",
+    "6. Comprueba si hay filas ocultas o filtros que estan dejando datos fuera de los totales",
+    "7. Detecta calculos repetidos en sitios distintos que dan resultados diferentes",
+    "8. Propon el arreglo minimo para cada fallo, indicando celda exacta y formula nueva",
+    "9. Escribe una hoja de instrucciones de uso para que el proximo no la rompa"
+  ],
+  "que_mirar": [
+    "Totales que no cambian cuando cambias un dato de entrada",
+    "Copias de la misma tabla en pestañas distintas con datos desactualizados",
+    "Fechas guardadas como texto",
+    "Porcentajes aplicados dos veces",
+    "Celdas de resultado donde alguien ha escrito el numero a mano encima de la formula"
+  ],
+  "errores_tipicos": [
+    "Reescribir la hoja entera en vez de arreglar lo minimo",
+    "Tocar formulas sin guardar antes una copia con la fecha en el nombre",
+    "Suponer que si no sale error en pantalla el calculo esta bien"
+  ],
+  "restricciones": [
+    "No propongas macros ni programacion: solo funciones normales de hoja de calculo",
+    "Cada arreglo debe poder hacerse a mano en menos de dos minutos",
+    "Si no ves la formula de una celda, pidela en vez de suponerla"
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen en cinco lineas: para que sirve la hoja y si sus numeros son fiables ahora mismo",
+    "bloque_2": "Tabla: gravedad (alta, media, baja) | celda o rango | que pasa | por que importa | arreglo exacto",
+    "bloque_3": "Lista de comprobaciones para hacer despues de arreglar, con el resultado esperado",
+    "bloque_4": "Texto corto de instrucciones de uso para pegar en una pestaña nueva llamada LEEME"
+  },
+  "criterios_calidad": [
+    "Cada fallo apunta a una celda concreta, no a la hoja en general",
+    "Los arreglos van con la formula lista para pegar",
+    "Se distingue lo que esta mal de lo que solo es feo",
+    "Alguien sin idea de Excel puede seguir los pasos"
+  ]
+}

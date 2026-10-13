@@ -1,0 +1,36 @@
+{
+  "tarea": "Analizar los resultados que ocupan hoy el top 10 de Google para una palabra clave y devolver un brief de contenido listo para redactar",
+  "contexto": {
+    "keyword_objetivo": "[PALABRA CLAVE]",
+    "pais": "[PAÍS O CIUDAD]",
+    "negocio": "[QUÉ VENDES Y QUÉ TE DIFERENCIA]",
+    "url_a_posicionar": "[URL NUEVA O EXISTENTE]"
+  },
+  "entradas": {
+    "serp": "[PEGA AQUÍ TÍTULOS, URLS Y DESCRIPCIONES DE LOS 10 PRIMEROS RESULTADOS]",
+    "encabezados_competidores": "[PEGA LOS H2 Y H3 DE 2 O 3 DE ELLOS]",
+    "bloques_serp": "[INDICA SI SALEN: FRAGMENTO DESTACADO, VÍDEOS, IMÁGENES, MAPA LOCAL, 'OTRAS PREGUNTAS', RESUMEN DE IA]"
+  },
+  "pasos": [
+    "Deduce la intención dominante: informar, comparar, comprar o navegar, y di qué formato gana (guía, listado, comparativa, página de servicio, ficha)",
+    "Calcula el rango de extensión razonable a partir de lo que hacen los competidores, sin inflarlo",
+    "Lista los subtemas que repiten todos: son obligatorios",
+    "Detecta huecos: preguntas que nadie responde bien, datos desactualizados, falta de ejemplos, de precios o de casos reales",
+    "Propón el ángulo diferencial concreto que puede aportar este negocio y que los demás no pueden copiar",
+    "Define el esquema de encabezados definitivo y qué entidades y términos relacionados deben aparecer de forma natural"
+  ],
+  "restricciones": [
+    "No copies los encabezados de los competidores palabra por palabra: reordénalos y mejóralos",
+    "No propongas contenido que el negocio no pueda respaldar con experiencia real",
+    "Nada de rellenar con paja para llegar a una cifra de palabras"
+  ],
+  "formato_salida": {
+    "secciones": ["Intención y formato ganador", "Extensión objetivo", "Esquema de encabezados H1-H2-H3", "Subtemas obligatorios", "Huecos que puedo aprovechar", "Ángulo diferencial", "Preguntas a responder (para FAQ)", "Enlaces internos sugeridos", "Título SEO y meta descripción propuestos", "Checklist previa a publicar"],
+    "estilo": "markdown con listas cortas, sin párrafos largos"
+  },
+  "criterios_calidad": [
+    "El esquema cubre todos los subtemas comunes y añade al menos dos que no tiene nadie",
+    "Cada hueco detectado está justificado con lo que se ve en la SERP aportada",
+    "El brief es accionable: un redactor podría escribir sin preguntar nada más"
+  ]
+}

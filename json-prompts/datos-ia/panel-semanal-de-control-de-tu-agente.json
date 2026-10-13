@@ -1,0 +1,41 @@
+{
+  "tarea": "Montar el panel de control semanal de un agente de IA en produccion y redactar el informe de la semana",
+  "contexto": {
+    "que_hace_el_agente": "[QUE HACE TU AGENTE EN UNA FRASE]",
+    "objetivo_del_negocio": "[QUE DEBE CONSEGUIR: CITAS, VENTAS, RESOLVER DUDAS, AHORRAR TIEMPO DE SOPORTE]",
+    "quien_lee_el_informe": "[TU SOLO, TU EQUIPO O UN CLIENTE]"
+  },
+  "entradas": {
+    "datos_de_la_semana": "[PEGA: NUMERO DE CONVERSACIONES, RESUELTAS SIN AYUDA, DERIVADAS A PERSONA, ABANDONOS, QUEJAS, VENTAS O CITAS, COSTE TOTAL]",
+    "datos_semana_anterior": "[LOS MISMOS DATOS DE LA SEMANA PASADA, O NO DISPONIBLE]",
+    "muestra_revisada": "[RESULTADO DE REVISAR A MANO 10 CONVERSACIONES AL AZAR]"
+  },
+  "indicadores": [
+    { "nombre": "Resueltas sin persona", "como_se_calcula": "resueltas sin ayuda entre total", "alarma_si": "baja mas de [X] puntos respecto a la semana anterior" },
+    { "nombre": "Derivaciones a persona", "como_se_calcula": "derivadas entre total", "alarma_si": "sube de [X] por ciento" },
+    { "nombre": "Abandonos", "como_se_calcula": "conversaciones sin ultimo mensaje del cliente", "alarma_si": "supera [X] por ciento" },
+    { "nombre": "Calidad de la muestra", "como_se_calcula": "conversaciones correctas de las 10 revisadas", "alarma_si": "baja de [X] sobre 10" },
+    { "nombre": "Coste por conversacion", "como_se_calcula": "coste total entre conversaciones", "alarma_si": "sube mas de [X] por ciento" },
+    { "nombre": "Resultado de negocio", "como_se_calcula": "citas o ventas atribuidas al agente", "alarma_si": "cae dos semanas seguidas" }
+  ],
+  "metodo": [
+    "Calcula cada indicador y compara con la semana anterior en puntos o porcentaje",
+    "Marca en rojo los indicadores en alarma y en ambar los que empeoran sin llegar al umbral",
+    "Busca la explicacion mas probable de cada rojo apoyandote en la muestra revisada",
+    "Propone una sola accion por indicador en rojo"
+  ],
+  "restricciones": [
+    "Si falta un dato, escribe SIN DATO y no lo estimes",
+    "No mezcles opinion con cifras: primero los numeros, luego la lectura",
+    "Maximo una pagina"
+  ],
+  "formato_salida": {
+    "tipo": "informe semanal",
+    "secciones": ["Semaforo de la semana en 3 lineas", "Tabla de indicadores con valor, semana anterior, variacion y estado", "Que ha pasado, con ejemplos de la muestra", "Acciones para la semana que viene con responsable"]
+  },
+  "criterios_calidad": [
+    "Todos los indicadores tienen valor o SIN DATO",
+    "Cada rojo lleva una accion concreta y una sola",
+    "Se entiende sin saber nada de tecnologia"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar la política de privacidad de una tienda online y los avisos breves de cada formulario, conforme al RGPD y la LOPDGDD",
+  "responsable": {
+    "nombre": "[NOMBRE FISCAL]",
+    "nif": "[NIF O CIF]",
+    "direccion": "[DIRECCIÓN]",
+    "email_privacidad": "[EMAIL PARA EJERCER DERECHOS]",
+    "delegado_proteccion_datos": "[NOMBRE O ESCRIBE NO APLICA]"
+  },
+  "tratamientos": {
+    "pedidos": "[DATOS QUE PIDES EN EL CHECKOUT]",
+    "newsletter": "[SÍ/NO Y CON QUÉ HERRAMIENTA]",
+    "atencion_cliente": "[EMAIL, CHAT, WHATSAPP]",
+    "publicidad": "[PÍXELES O PLATAFORMAS QUE USAS]",
+    "proveedores": "[PASARELA DE PAGO, TRANSPORTISTA, EMAIL MARKETING, HOSTING, ANALÍTICA]"
+  },
+  "reglas_de_redaccion": [
+    "Una fila por tratamiento con: finalidad, base jurídica, datos, plazo de conservación y destinatarios",
+    "Base jurídica correcta: ejecución del contrato para pedidos, consentimiento para newsletter y publicidad, obligación legal para facturación",
+    "Indicar transferencias internacionales y la garantía aplicada cuando el proveedor esté fuera de la UE",
+    "Explicar los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad, y la reclamación ante la AEPD",
+    "Sin frases vacías del tipo tratamos sus datos con la máxima seguridad"
+  ],
+  "entregables": [
+    "Política de privacidad completa para publicar en la web",
+    "Aviso corto (2 o 3 líneas) para el formulario de contacto",
+    "Aviso corto para el alta de newsletter, con casilla sin premarcar",
+    "Aviso corto para el checkout",
+    "Texto del pie del email comercial con la baja en un clic"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "estructura": ["Política por apartados numerados", "Tabla resumen de tratamientos", "Bloque Textos para formularios con cada aviso separado y listo para copiar"]
+  },
+  "criterios_calidad": ["Solo aparecen tratamientos y proveedores que el usuario ha indicado", "Ninguna casilla premarcada ni consentimiento agrupado con la compra", "Los plazos de conservación son concretos, no genéricos"],
+  "aviso": "Documento orientativo; revísalo con un especialista si tratas datos sensibles."
+}

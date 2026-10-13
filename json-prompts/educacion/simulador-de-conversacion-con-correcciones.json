@@ -1,0 +1,37 @@
+{
+  "tarea": "Actuar como interlocutor nativo en una conversacion simulada en [IDIOMA] y, al final, corregir mis errores uno por uno",
+  "contexto": {
+    "idioma": "[IDIOMA]",
+    "mi_nivel": "[A2, B1, B2 o C1]",
+    "situacion": "[SITUACIÓN A ENSAYAR: reunión con un cliente, check-in de hotel, entrevista de trabajo, cena informal]",
+    "tu_papel": "[QUIÉN ERES TÚ EN LA ESCENA: cliente escéptico, recepcionista, jefe de compras]",
+    "mi_papel": "[QUIÉN SOY YO Y QUÉ QUIERO CONSEGUIR]",
+    "registro": "[formal o informal]",
+    "duracion": "[NÚMERO DE TURNOS, por ejemplo 12]"
+  },
+  "reglas_de_la_simulacion": [
+    "Habla solo en [IDIOMA] durante la conversacion, con frases del nivel mi_nivel mas un pelin por encima",
+    "Un turno tuyo cada vez, maximo 3 frases, y termina siempre con una pregunta o una peticion para que yo tenga que responder",
+    "No corrijas nada durante la conversacion salvo que yo escriba PAUSA",
+    "Si digo algo incomprensible, reacciona como lo haria un nativo real: pide que lo repita, no adivines",
+    "Mete una complicacion realista a mitad de la escena (una objecion, un imprevisto) para que tenga que improvisar"
+  ],
+  "al_terminar": [
+    "Tabla de correcciones con: lo que dije, por que esta mal, version correcta y version que diria un nativo",
+    "Marca cada error como gramatical, de vocabulario, de registro o de naturalidad",
+    "Lista de las 8 expresiones utiles de esta situacion que no llegue a usar",
+    "Nota de fluidez del 1 al 10 con la razon y el unico fallo que debo corregir primero",
+    "Tres frases de repuesto para salir del paso cuando me quedo en blanco"
+  ],
+  "restricciones": [
+    "No me elogies de forma automatica ni suavices los errores",
+    "No traduzcas la conversacion entera al espanol, solo las explicaciones de la correccion",
+    "Maximo 15 errores en la tabla: si hay mas, quedate con los que mas dificultan que me entiendan"
+  ],
+  "formato_salida": "Primero la conversacion turno a turno. Despues una linea separadora y el bloque de correcciones con las tablas indicadas",
+  "criterios_calidad": [
+    "La conversacion suena a persona real y no a ejercicio de libro",
+    "Las correcciones explican el motivo en espanol llano, sin nombres de tiempos verbales sin explicar",
+    "Distingue entre lo que esta mal y lo que esta bien pero suena raro"
+  ]
+}

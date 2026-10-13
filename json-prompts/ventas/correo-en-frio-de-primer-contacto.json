@@ -1,0 +1,38 @@
+{
+  "tarea": "Escribir un correo en frio de primer contacto para un cliente potencial concreto, con variantes de asunto y un recordatorio",
+  "contexto": {
+    "yo": "[TU NOMBRE] de [NOMBRE DE TU EMPRESA]",
+    "que_hago": "[SERVICIO EN UNA FRASE]",
+    "a_quien_ayudo": "[TIPO DE CLIENTE IDEAL]",
+    "resultado_que_suelo_dar": "[RESULTADO CONCRETO, SIN INVENTAR CIFRAS]",
+    "caso_parecido": "[CLIENTE O PROYECTO SIMILAR QUE PUEDA CITAR]",
+    "que_pido": "[UNA LLAMADA DE 15 MINUTOS / UNA RESPUESTA DE SI O NO / ENVIAR INFO]"
+  },
+  "entradas": {
+    "destinatario": "[NOMBRE, CARGO Y EMPRESA]",
+    "por_que_le_escribo_a_el": "[ALGO REAL QUE HAS VISTO: SU WEB, UNA OFERTA DE EMPLEO, UNA NOTICIA, UNA RESENA]"
+  },
+  "pasos": [
+    "Abrir con el motivo concreto y verificable por el que le escribo a esta persona, sin halagos vacios",
+    "Nombrar en una linea el problema que suele tener alguien en su situacion",
+    "Decir que hago y para quien, con una prueba corta y creible",
+    "Cerrar con una peticion pequena y facil de contestar",
+    "Generar tres asuntos distintos: uno con el problema, uno con la referencia concreta y uno neutro"
+  ],
+  "restricciones": [
+    "Maximo 110 palabras el correo principal y maximo 45 el recordatorio",
+    "Prohibido: espero que estes bien, soluciones a medida, sinergias, lider del sector y aumentar tus ventas un X por ciento",
+    "Nada de adjuntos ni de mas de un enlace",
+    "No inventar datos de su empresa: si falta informacion, dejar el hueco entre corchetes",
+    "Asuntos de 4 a 7 palabras y en minusculas salvo nombres propios"
+  ],
+  "formato_salida": {
+    "bloques": ["Tres asuntos con una linea explicando cuando funciona cada uno", "Correo principal listo para enviar", "Recordatorio para 4 dias despues", "Version WhatsApp o LinkedIn de 40 palabras"],
+    "al_final": "Tres frases de personalizacion alternativas por si la primera no encaja"
+  },
+  "criterios_calidad": [
+    "Se nota que el correo esta escrito para esa persona y no valdria para otra empresa cualquiera",
+    "Se lee entero en menos de 20 segundos",
+    "La peticion final se puede contestar con una sola frase"
+  ]
+}

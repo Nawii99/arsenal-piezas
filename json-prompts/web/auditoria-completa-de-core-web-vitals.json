@@ -1,0 +1,42 @@
+{
+  "tarea": "Auditar el rendimiento de una web a partir de los datos de PageSpeed Insights y devolver un plan de mejoras priorizado",
+  "contexto": {
+    "web": "[URL DE TU WEB]",
+    "tecnologia": "[WORDPRESS / SHOPIFY / WEBFLOW / PRESTASHOP / A MEDIDA]",
+    "objetivo_de_la_pagina": "[VENDER / PEDIR CITA / CAPTAR CONTACTOS]",
+    "quien_ejecuta": "[YO SIN SABER PROGRAMAR / MI DESARROLLADOR / UNA AGENCIA]"
+  },
+  "entradas": {
+    "informe_pegado": "[PEGA AQUÍ EL INFORME DE PAGESPEED INSIGHTS: MÉTRICAS Y LISTA DE OPORTUNIDADES]",
+    "metricas_movil": "LCP [X s], INP [X ms], CLS [X], FCP [X s], TTFB [X ms]",
+    "presupuesto": "[EUROS U HORAS DISPONIBLES ESTE MES]"
+  },
+  "umbrales_referencia": "LCP bueno hasta 2,5 s y malo por encima de 4 s; INP bueno hasta 200 ms y malo por encima de 500 ms; CLS bueno hasta 0,1 y malo por encima de 0,25; TTFB objetivo por debajo de 800 ms",
+  "proceso": [
+    "Separa los datos de usuarios reales de los de laboratorio y avisa si solo hay datos de laboratorio porque aún no hay tráfico suficiente",
+    "Clasifica cada métrica en bueno, mejorable o malo según los umbrales y hazlo primero para móvil",
+    "Para cada métrica mala escribe la causa raíz probable, no el síntoma que muestra la herramienta",
+    "Agrupa las oportunidades en cinco bloques: servidor y caché, imágenes y vídeo, CSS y fuentes, JavaScript propio y scripts de terceros",
+    "Estima por acción el impacto alto, medio o bajo, el esfuerzo en horas y si la puede hacer alguien sin programar",
+    "Ordena por impacto entre esfuerzo y marca las tres primeras como victorias rápidas"
+  ],
+  "restricciones": [
+    "Nada de consejos genéricos tipo optimiza tus imágenes: di qué imagen, en qué formato y con qué tamaño",
+    "Avisa si algún cambio puede romper el seguimiento de conversiones o el consentimiento de cookies"
+  ],
+  "formato_salida": {
+    "tipo": "informe en markdown",
+    "secciones": [
+      "Semáforo de LCP, INP y CLS en móvil y en escritorio",
+      "Tabla con columnas: acción, métrica que mejora, impacto, esfuerzo, quién lo hace y cómo se comprueba",
+      "Plan en tres fases: esta semana, este mes y este trimestre",
+      "Qué NO hacer y por qué"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada acción incluye cómo verificar la mejora y con qué herramienta",
+    "Ninguna acción se explica en más de dos frases",
+    "El plan cabe en el presupuesto indicado"
+  ],
+  "tono": "claro y directo, sin jerga; si usas un término técnico lo explicas en cinco palabras"
+}

@@ -1,0 +1,56 @@
+{
+  "tarea": "Revisa mis automatizaciones y tareas programadas, define qué significa que han ido bien y móntame alarmas que salten cuando no se ejecutan o cuando no producen resultado",
+  "contexto": {
+    "automatizaciones": "[QUÉ TENGO MONTADO Y EN QUÉ HERRAMIENTA: no-code, tareas programadas del hosting, scripts]",
+    "para_que_sirven": "[QUÉ APORTA CADA UNA AL NEGOCIO: facturas, avisos, sincronización de stock, publicaciones, copias]",
+    "como_me_entero_hoy": "[SI ME ENTERO Y CÓMO]",
+    "perfil": "sin perfil técnico: dime dónde se configura cada aviso"
+  },
+  "entradas": {
+    "listado": "[NOMBRE, FRECUENCIA Y ÚLTIMA VEZ QUE SÉ QUE FUNCIONÓ]",
+    "fallos_pasados": "[QUÉ SE HA PARADO ANTES Y CUÁNTO TARDÉ EN VERLO]",
+    "canal_de_aviso": "[DÓNDE QUIERO RECIBIR LA ALARMA]"
+  },
+  "pasos": [
+    "1. Por cada automatización, define el resultado esperado en números: cuántos registros, cuántos correos, cuántas filas, en qué plazo",
+    "2. Distingue tres estados: no se ha ejecutado, se ha ejecutado con error, y se ha ejecutado sin error pero sin producir nada, que es el más traicionero",
+    "3. Monta una señal de vida: la tarea avisa cada vez que termina bien y salta la alarma si no llega esa señal en el plazo previsto",
+    "4. Añade una comprobación de resultado: si procesa cero elementos varios días seguidos, aviso aunque no haya error",
+    "5. Configura reintentos con límite y separación entre intentos, y evita que un reintento duplique facturas o correos",
+    "6. Deja un registro sencillo con fecha, duración y cantidad procesada, en una hoja o en la propia herramienta",
+    "7. Prueba la alarma desactivando la tarea a propósito y comprobando que salta",
+    "8. Añade una revisión semanal de cinco minutos con el registro delante"
+  ],
+  "que_mirar": [
+    "conexiones caducadas: la causa más común de una automatización que se para sin ruido",
+    "cambios de horario de verano y zonas horarias que desplazan la hora de ejecución",
+    "límites del plan gratuito consumidos a mitad de mes que dejan todo parado",
+    "tareas que dependen de otra anterior y se ejecutan igual aunque la primera fallara",
+    "que el aviso de la propia herramienta no acabe en la carpeta de promociones"
+  ],
+  "errores_tipicos": [
+    "dar por hecho que funciona porque no ha llegado ningún error",
+    "reintentar sin control y enviar el mismo correo o la misma factura veinte veces",
+    "poner la alarma en el mismo sistema que puede estar caído",
+    "avisar de todo y acabar ignorando los avisos",
+    "no registrar cuántos elementos se procesan y no poder comparar con lo normal"
+  ],
+  "restricciones": [
+    "prioriza herramientas gratuitas y di el límite del plan gratuito",
+    "ninguna alarma puede depender de que yo mire un panel",
+    "cada medida debe indicar cómo se prueba que funciona"
+  ],
+  "formato_salida": {
+    "1_tabla_automatizaciones": "nombre | qué hace | frecuencia | resultado esperado | qué es fallo | canal de aviso | responsable",
+    "2_alarmas": "cómo montar la señal de vida y la comprobación de resultado, paso a paso",
+    "3_reintentos": "reglas para no duplicar acciones",
+    "4_registro": "columnas de la hoja de seguimiento y qué mirar cada semana",
+    "5_prueba": "cómo simular el fallo y qué debo recibir"
+  },
+  "criterios_calidad": [
+    "cada automatización tiene un resultado esperado medible, no un 'que funcione'",
+    "se detecta el caso de ejecutarse sin producir nada",
+    "las alarmas viven fuera del sistema vigilado",
+    "hay una prueba realizada que demuestra que la alarma salta"
+  ]
+}

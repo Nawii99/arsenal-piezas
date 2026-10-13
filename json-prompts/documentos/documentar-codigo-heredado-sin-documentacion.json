@@ -1,0 +1,36 @@
+{
+  "tarea": "Documentar código heredado con comentarios de API y un resumen técnico para nuevos desarrolladores",
+  "contexto": {
+    "lenguaje": "[JAVA / KOTLIN / C#]",
+    "formato_comentarios": "[JAVADOC / KDOC / COMENTARIOS XML DE C#]",
+    "lector_objetivo": "[DESARROLLADOR NUEVO / EMPRESA EXTERNA / YO MISMO EN SEIS MESES]",
+    "que_sabemos": "[LO POCO QUE SEPAS DEL MÓDULO, O 'NADA']"
+  },
+  "entradas": {
+    "codigo": "[PEGA AQUÍ LAS CLASES A DOCUMENTAR]"
+  },
+  "reglas": [
+    "Documentar el porqué y los efectos, no repetir lo que el nombre ya dice",
+    "En cada método público: para qué sirve, parámetros, qué devuelve y qué excepciones lanza",
+    "Indicar si un método modifica estado, escribe en base de datos o llama fuera",
+    "Marcar como SUPOSICIÓN cualquier cosa deducida y no confirmada por el código",
+    "Señalar el código que parece muerto o duplicado en vez de documentarlo",
+    "No documentar métodos privados triviales"
+  ],
+  "restricciones": [
+    "No modificar ni una línea de lógica",
+    "No inventar autores, fechas ni números de versión",
+    "Español para el resumen; comentarios en [ESPAÑOL / INGLÉS]"
+  ],
+  "formato_salida": {
+    "1_codigo_comentado": "el mismo código con los comentarios añadidos",
+    "2_resumen_modulo": "qué hace, quién lo llama, qué necesita para funcionar, máximo 15 líneas",
+    "3_glosario": "tabla con los términos del negocio que aparecen y su significado",
+    "4_preguntas_abiertas": "lista de dudas que hay que confirmar con alguien del equipo",
+    "5_deudas": "partes frágiles que conviene tocar con cuidado"
+  },
+  "criterios_calidad": [
+    "Alguien que no conoce el proyecto entiende para qué sirve el módulo con el resumen",
+    "Toda suposición está marcada como tal"
+  ]
+}

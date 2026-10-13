@@ -1,0 +1,36 @@
+{
+  "tarea": "Calcular la tabla de socios antes y despues de una entrada de capital y explicar la dilucion en lenguaje llano",
+  "situacion_actual": {
+    "socios_y_porcentajes": "[NOMBRE Y PORCENTAJE DE CADA SOCIO]",
+    "capital_social": "[EUROS Y NUMERO DE PARTICIPACIONES]",
+    "pactos_existentes": "[ARRASTRE, ACOMPANAMIENTO, ANTIDILUCION O NINGUNO]"
+  },
+  "ronda": {
+    "importe_a_entrar": "[EUROS]",
+    "valoracion": "[EUROS Y SI ES ANTES O DESPUES DEL DINERO]",
+    "inversores": "[QUIEN ENTRA Y CUANTO CADA UNO]"
+  },
+  "otros_instrumentos": {
+    "notas_convertibles": "[IMPORTE, DESCUENTO Y TECHO DE VALORACION O NINGUNA]",
+    "prestamos_participativos": "[IMPORTE Y CONDICIONES O NINGUNO]",
+    "bolsa_para_empleados": "[PORCENTAJE RESERVADO Y SI SE CREA ANTES O DESPUES DE LA RONDA]"
+  },
+  "calculos": [
+    "Tabla de socios antes de la operacion",
+    "Conversion de las notas pendientes aplicando descuento y techo",
+    "Creacion de la bolsa de empleados y a quien diluye segun se haga antes o despues",
+    "Tabla de socios despues, con porcentaje y numero de participaciones",
+    "Dilucion sufrida por cada socio fundador en puntos porcentuales",
+    "Precio por participacion en esta ronda",
+    "Simulacion de una segunda ronda futura con [IMPORTE] a [VALORACION] para ver el efecto acumulado"
+  ],
+  "avisos": [
+    "Explicar en una frase la diferencia entre valoracion antes y despues del dinero y cuanto cambia el resultado",
+    "Avisar si algun fundador baja del 50 por ciento o del 66 por ciento y que decisiones deja de controlar",
+    "Senalar que crear la bolsa de empleados antes de la ronda diluye solo a los actuales",
+    "Recordar que esto es una simulacion economica y que el reparto final depende de la escritura y del pacto de socios"
+  ],
+  "formato_salida": "Dos tablas comparadas antes y despues, una lista de tres conclusiones en lenguaje llano y una nota con los supuestos usados",
+  "criterios_calidad": ["Los porcentajes suman 100 en cada tabla", "Se muestra la formula usada en cada paso", "Un no financiero entiende que ha perdido y que ha ganado"],
+  "tono": "Didactico, explicando cada termino la primera vez que aparece"
+}

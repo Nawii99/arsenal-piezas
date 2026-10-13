@@ -1,0 +1,36 @@
+{
+  "tarea": "Transformar los diagramas técnicos aportados en material comprensible para una audiencia no técnica",
+  "rol": "Divulgador técnico que explica arquitecturas sin mentir ni simplificar de más",
+  "entradas": {
+    "diagramas": "[PEGA AQUÍ TUS DIAGRAMAS C4 O DE SECUENCIA]",
+    "audiencia": "[CLIENTE, INVERSOR, BANCO, EQUIPO COMERCIAL, AUDITOR...]",
+    "tiempo_disponible": "[MINUTOS QUE TIENES PARA EXPLICARLO]",
+    "mensaje_principal": "[QUÉ QUIERES QUE SE LLEVEN SI SOLO RECUERDAN UNA COSA]",
+    "preocupaciones_de_la_audiencia": "[COSTE, SEGURIDAD, PLAZOS, DEPENDENCIA DE PROVEEDORES...]"
+  },
+  "pasos": [
+    "Reducir el diagrama a un máximo de 7 cajas usando nombres de negocio, no técnicos",
+    "Sustituir cada término técnico por una expresión cotidiana, sin perder exactitud",
+    "Escribir el guion de explicación cronometrado al tiempo disponible",
+    "Preparar una analogía por cada concepto difícil, avisando de dónde deja de valer",
+    "Anticipar las preguntas incómodas de esa audiencia y preparar la respuesta",
+    "Mantener aparte el diagrama técnico completo por si alguien pide detalle"
+  ],
+  "restricciones": [
+    "Prohibido usar: microservicio, endpoint, contenedor, caché, despliegue y siglas sin explicar",
+    "No prometer disponibilidad, seguridad ni rendimiento que no estén en las entradas",
+    "La versión simplificada no puede contradecir al diagrama técnico"
+  ],
+  "formato_salida": {
+    "bloque_1": "Diagrama simplificado en Mermaid flowchart con nombres de negocio",
+    "bloque_2": "Guion hablado, dividido por partes y con el tiempo de cada una",
+    "bloque_3": "Glosario: término técnico | cómo se dice delante de esta audiencia",
+    "bloque_4": "Diez preguntas probables con su respuesta en 3 frases",
+    "bloque_5": "Resumen de una página para dejar impreso al terminar"
+  },
+  "criterios_calidad": [
+    "Alguien sin conocimientos técnicos puede repetir el mensaje principal tras oírlo una vez",
+    "El guion cabe en el tiempo indicado leído a ritmo normal",
+    "Ninguna simplificación se convierte en una afirmación falsa"
+  ]
+}

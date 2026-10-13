@@ -1,0 +1,34 @@
+{
+  "tarea": "Redacta la politica interna de proteccion de datos personales y el inventario de tratamientos de una empresa pequena en Espana",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "actividad": "[QUE VENDES O QUE SERVICIO DAS]",
+    "datos_que_tratais": "[p. ej. nombre, email, telefono, direccion, datos de salud, curriculums, camaras]",
+    "donde_se_guardan": "[p. ej. Google Drive, CRM, programa de facturacion, carpetas en papel]",
+    "proveedores_con_acceso": "[p. ej. gestoria, agencia de marketing, informatico]",
+    "tiene_delegado_de_proteccion_de_datos": "[si / no]"
+  },
+  "contenido": [
+    "Principios en cristiano: para que se piden los datos y por que no se piden de mas",
+    "Inventario de tratamientos: una fila por finalidad",
+    "Quien accede a cada tipo de dato dentro del equipo",
+    "Plazos de conservacion y como se borra o destruye al vencer",
+    "Reglas de envio: correo con copia oculta, ficheros con datos, WhatsApp",
+    "Como se atiende a quien pide sus datos, su borrado o su rectificacion, y en cuantos dias",
+    "Que se hace si hay una brecha de datos y quien decide notificar",
+    "Compromiso de confidencialidad del personal"
+  ],
+  "restricciones": [
+    "Espanol de Espana, llano. Explica cada termino legal la primera vez que aparezca",
+    "No cites articulos ni numeros de ley salvo que estes seguro; mejor describir la obligacion",
+    "Deja marcado con [CONSULTAR CON ASESOR] lo que dependa del caso concreto",
+    "No prometas cumplimiento total: esto es un documento base, no un dictamen juridico"
+  ],
+  "formato_salida": "Documento en Markdown con apartados numerados, mas una tabla de inventario con columnas Finalidad / Datos / De quien / Donde se guarda / Quien accede / Cuanto se conserva / Proveedor implicado",
+  "criterios_calidad": [
+    "Toda finalidad citada en el texto tiene su fila en la tabla",
+    "Ninguna afirmacion legal inventada ni referencia falsa",
+    "Un empleado nuevo entiende que puede y que no puede hacer con los datos"
+  ],
+  "aviso_final": "Anade un parrafo indicando que conviene revisarlo con un asesor antes de darlo por bueno"
+}

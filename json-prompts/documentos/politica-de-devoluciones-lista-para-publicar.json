@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar la política de devoluciones, desistimiento y garantía de mi tienda online en España, en lenguaje claro para el cliente y coherente con la normativa de consumo vigente",
+  "contexto": {
+    "titular": "[NOMBRE FISCAL, NIF Y DIRECCIÓN]",
+    "tienda": "[NOMBRE COMERCIAL Y WEB]",
+    "productos": "[QUÉ VENDES]",
+    "excepciones_reales": "[PRODUCTOS PERSONALIZADOS, PRECINTADOS DE HIGIENE, PERECEDEROS, DIGITALES]",
+    "plazo_desistimiento_dias": "[14 O EL QUE OFREZCAS SI ES MAYOR]",
+    "quien_paga_la_vuelta": "[EL CLIENTE / LA TIENDA / GRATIS SI ES FALLO NUESTRO]",
+    "metodo_reembolso": "[MISMO MEDIO DE PAGO / VALE / A ELECCIÓN]",
+    "direccion_de_devoluciones": "[DIRECCIÓN COMPLETA]",
+    "email_atencion": "[EMAIL]"
+  },
+  "instrucciones": [
+    "Separa con claridad tres cosas distintas que la gente confunde: desistimiento sin motivo, producto defectuoso o garantía, y error en el pedido",
+    "Explica en cada caso el plazo, quién paga el porte de vuelta, en qué estado debe volver el producto y cuándo se devuelve el dinero",
+    "No inventes cláusulas que limiten derechos del consumidor: si una condición que te he dado es abusiva o dudosa, señálala en un aviso aparte en vez de escribirla",
+    "Añade el paso a paso de cómo pide una devolución el cliente, con el canal y qué datos debe dar",
+    "Incluye un modelo de formulario de desistimiento que el cliente pueda copiar"
+  ],
+  "restricciones": [
+    "Frases cortas, sin latinajos ni artículos citados a lo bruto",
+    "Nada de promesas que luego no pueda cumplir en almacén",
+    "Si un dato entre corchetes falta, dejarlo marcado como PENDIENTE y no rellenarlo a ojo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Política completa con títulos y apartados, lista para pegar en la web",
+    "bloque_2": "Versión resumida de 6 líneas para el pie de la ficha de producto",
+    "bloque_3": "Modelo de formulario de desistimiento",
+    "bloque_4": "Avisos: puntos donde debo consultar con un asesor antes de publicar"
+  },
+  "criterios_calidad": [
+    "Un cliente sin formación jurídica entiende en un minuto qué puede devolver y cómo",
+    "No hay contradicciones entre apartados ni plazos distintos para lo mismo",
+    "Queda claro cuándo el porte de vuelta lo paga la tienda"
+  ],
+  "tono": "Claro, cercano y sin letra pequeña disimulada"
+}

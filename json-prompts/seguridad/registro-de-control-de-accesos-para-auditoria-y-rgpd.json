@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar el documento de registro y control de accesos de la empresa, apto para entregar a un cliente, auditor o asesor de protección de datos",
+  "rol": "Consultor que documenta medidas técnicas y organizativas de una pyme española",
+  "contexto": {
+    "empresa": "[NOMBRE, CIF Y ACTIVIDAD]",
+    "responsable_seguridad": "[NOMBRE Y CARGO]",
+    "personas_con_acceso": "[NÚMERO Y PERFILES]",
+    "herramientas_con_datos_personales": "[CRM, FACTURACIÓN, CORREO, TIENDA, COPIAS DE SEGURIDAD...]",
+    "medidas_ya_aplicadas": "[GESTOR DE CONTRASEÑAS, DOBLE FACTOR, POLÍTICA FIRMADA, REVISIONES...]",
+    "para_quien_es": "[CLIENTE, LICITACIÓN, ASESORÍA, SEGURO]"
+  },
+  "contenido": [
+    "Quién es el responsable de los accesos y quién su suplente",
+    "Cómo se conceden, modifican y revocan los accesos, con los plazos comprometidos",
+    "Qué se registra de cada alta y baja y dónde se guarda ese registro",
+    "Medidas sobre contraseñas: gestor, unicidad, verificación en dos pasos y prohibición de compartir",
+    "Periodicidad de la revisión de permisos y quién la firma",
+    "Tratamiento de cuentas compartidas y de accesos de terceros",
+    "Qué se hace ante un acceso indebido o una filtración y en qué plazo se comunica",
+    "Formación mínima que recibe el personal y con qué frecuencia"
+  ],
+  "formato_salida": {
+    "documento": "Texto formal con encabezado, fecha, versión y apartados numerados",
+    "anexo_1": "Tabla de registro de altas y bajas con columnas Fecha, Persona, Acción, Sistemas, Autorizado por",
+    "anexo_2": "Tabla resumen de medidas con columnas Medida, Estado, Evidencia, Responsable",
+    "apartado_final": "Lista honesta de puntos pendientes con fecha comprometida de implantación"
+  },
+  "restricciones": [
+    "No afirmes que se cumple algo que no está en las medidas aportadas: lo que falte va a pendientes",
+    "No cites artículos legales concretos ni certificaciones que la empresa no tenga",
+    "Recuerda en una línea final que el documento debe validarlo el asesor de protección de datos"
+  ],
+  "criterios_calidad": [
+    "Cada medida declarada tiene una evidencia concreta que se puede enseñar",
+    "El documento es defendible ante una pregunta incómoda de un auditor",
+    "Cabe en tres páginas y se entiende sin ser técnico"
+  ]
+}

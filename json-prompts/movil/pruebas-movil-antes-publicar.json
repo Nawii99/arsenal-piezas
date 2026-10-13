@@ -1,0 +1,52 @@
+{
+  "tarea": "Generar un guion de pruebas manuales en móvil, ejecutable por una persona sin perfil técnico, para validar una app o web-app antes de publicarla.",
+  "contexto": {
+    "producto": "[APP NATIVA / PWA / WEB RESPONSIVA]",
+    "funciones_principales": "[LISTA DE LO QUE EL USUARIO PUEDE HACER]",
+    "camino_del_dinero": "[PASOS DESDE QUE ENTRA HASTA QUE PAGA O CONTACTA]",
+    "dispositivos_disponibles": "[LOS MÓVILES QUE TIENES A MANO]",
+    "cambios_de_esta_version": "[QUÉ SE HA TOCADO]"
+  },
+  "matriz_minima": [
+    "Un iPhone reciente y, si puedes, uno pequeño tipo SE.",
+    "Un Android de gama baja o media: es donde salen los fallos de lentitud.",
+    "Modo claro y modo oscuro.",
+    "Tamaño de letra del sistema al máximo.",
+    "Red lenta y modo avión."
+  ],
+  "casos_obligatorios": [
+    "Instalación desde cero, con la app nunca abierta antes en ese móvil.",
+    "Recorrido completo del camino del dinero, de principio a fin, sin saltarse pasos.",
+    "Formularios con datos españoles: DNI o NIF, teléfono de 9 cifras, código postal con cero delante, dirección con tilde y con la eñe.",
+    "Importes con coma decimal y símbolo de euro.",
+    "Perder la conexión a mitad de una acción y recuperarla.",
+    "Girar la pantalla y volver.",
+    "Botón atrás del sistema en Android y gesto de deslizar en iPhone.",
+    "Recibir una llamada o bloquear la pantalla y volver a la app.",
+    "Teclado abierto tapando el botón de continuar.",
+    "Zona de la muesca y de la barra inferior: nada cortado ni inalcanzable.",
+    "Volver a abrir la app al día siguiente: ¿sigue la sesión iniciada?",
+    "Enlaces salientes, correo y teléfono: que abran lo que deben."
+  ],
+  "pasos": [
+    "1. Escribe cada prueba como acción esperada y resultado esperado, en una frase cada uno.",
+    "2. Ordena empezando por el camino del dinero: si eso falla, lo demás da igual.",
+    "3. Ejecuta con el móvil en la mano y una mano sola, como lo usaría un cliente en la calle.",
+    "4. Apunta cada fallo con: qué móvil, qué hiciste, qué esperabas, qué pasó y captura o vídeo de pantalla.",
+    "5. Clasifica cada fallo como bloqueante, molesto o cosmético.",
+    "6. No publiques con ningún bloqueante abierto; los cosméticos van a la lista de después.",
+    "7. Repite solo el camino del dinero después de cada corrección."
+  ],
+  "formato_salida": {
+    "tabla_de_pruebas": ["numero", "que_hago", "que_debe_pasar", "dispositivo", "resultado", "gravedad"],
+    "parte_de_fallos": ["titulo_corto", "pasos_para_reproducir", "esperado", "obtenido", "dispositivo_y_version", "gravedad"],
+    "cierre": "semáforo final: se publica o no se publica, con el motivo en una frase"
+  },
+  "criterios_calidad": [
+    "Cada prueba la puede ejecutar alguien que no conoce el producto, solo leyendo la fila.",
+    "El camino del dinero está probado entero en al menos dos móviles distintos.",
+    "Ningún fallo se describe como no funciona: siempre pasos, esperado y obtenido.",
+    "Hay al menos una prueba con red mala y otra sin red.",
+    "El semáforo final es un sí o un no, sin medias tintas."
+  ]
+}

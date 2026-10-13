@@ -1,0 +1,37 @@
+{
+  "tarea": "Revisar el gasto de infraestructura de [NOMBRE DE TU NEGOCIO] y proponer ahorros sin empeorar el rendimiento",
+  "contexto": {
+    "proveedor": "[AWS, GOOGLE CLOUD, AZURE, HETZNER, HOSTING COMPARTIDO U OTRO]",
+    "que_sirve": "[QUÉ APLICACIONES CORREN AHÍ]",
+    "gasto_mensual": "[TOTAL EN EUROS AL MES]"
+  },
+  "entradas": {
+    "desglose": "[LISTA DE SERVICIOS CON SU COSTE MENSUAL]",
+    "uso_real": "[USO MEDIO Y MÁXIMO DE CPU Y MEMORIA DE CADA SERVIDOR]",
+    "patron_trafico": "[HORARIO Y DÍAS DE MÁS Y MENOS USO]",
+    "compromisos": "[CONTRATOS O RESERVAS QUE YA TIENES]"
+  },
+  "metodo": [
+    "Ordena el gasto de mayor a menor y céntrate en lo que suma el 80 por ciento",
+    "Busca los desperdicios habituales: servidores sobredimensionados, entornos de pruebas encendidos de noche y fines de semana, discos y copias de seguridad huérfanos, direcciones IP y balanceadores sin usar, registros guardados demasiado tiempo y tráfico de salida evitable con caché o CDN",
+    "Para cada recorte estima el ahorro mensual y el efecto en el rendimiento, diciendo qué métrica podría empeorar",
+    "Separa lo reversible en un clic de lo que implica migrar algo",
+    "Indica qué NO tocar por ser el camino crítico del cliente"
+  ],
+  "restricciones": [
+    "No proponer cambio de proveedor como primera opción",
+    "Ningún recorte puede aumentar el tiempo de respuesta de [RUTA CRÍTICA]",
+    "Mantener las copias de seguridad y su plazo de conservación legal"
+  ],
+  "formato_salida": {
+    "tipo": "informe de ahorro",
+    "tabla": "columnas: partida | gasto actual | acción | ahorro estimado al mes | riesgo | reversible sí o no",
+    "cierre": ["Plan en 3 fases", "Alertas de gasto que deberías activar", "Revisión recomendada cada cuánto"]
+  },
+  "criterios_calidad": [
+    "Los ahorros se presentan como estimación, nunca como promesa",
+    "Cada acción dice cómo comprobar que no ha empeorado nada",
+    "Incluye al menos dos ahorros que se apliquen hoy mismo sin riesgo"
+  ],
+  "tono": "contable y directo, hablando de euros al mes"
+}

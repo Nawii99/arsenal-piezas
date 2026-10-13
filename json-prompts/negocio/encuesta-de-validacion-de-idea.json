@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar un cuestionario de validación para comprobar si existe demanda real de [IDEA DE PRODUCTO O SERVICIO] antes de invertir dinero, y explicar cómo repartirlo e interpretarlo",
+  "contexto": {
+    "proyecto": "[NOMBRE DE TU NEGOCIO O PROYECTO]",
+    "publico_supuesto": "[A QUIÉN CREES QUE LE SIRVE: EDAD, ZONA, SITUACIÓN]",
+    "problema_supuesto": "[PROBLEMA QUE CREES QUE TIENE ESA GENTE]",
+    "canal_de_reparto": "[DÓNDE LA VAS A PASAR: WHATSAPP, INSTAGRAM, EMAIL, EN PERSONA]",
+    "presupuesto_incentivos": "[LO QUE PUEDES GASTAR EN SORTEOS O ANUNCIOS, O 0]"
+  },
+  "metodo": [
+    "Separar lo que quiero saber en tres bloques: si el problema existe y duele, qué hacen hoy para resolverlo, y qué estarían dispuestos a pagar",
+    "Preguntar por comportamiento pasado y gasto real, nunca por intenciones futuras del tipo lo comprarías",
+    "Empezar por preguntas de filtro que descarten a quien no es cliente potencial",
+    "Terminar con una pregunta de compromiso: dejar email, apuntarse a lista de espera o pagar una señal"
+  ],
+  "restricciones": [
+    "Máximo 12 preguntas y menos de 4 minutos de respuesta",
+    "Nada de preguntas que insinúen la respuesta correcta ni que vendan la idea",
+    "Como mucho 2 preguntas abiertas, el resto cerradas para poder contar",
+    "Lenguaje llano, español de España, sin tecnicismos ni nombre de la marca en las primeras preguntas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla con: número, pregunta, tipo (filtro, opción única, múltiple, escala 1-5, abierta), opciones de respuesta y qué mide",
+    "bloque_2": "Texto exacto del mensaje para pedir que la rellenen, en versión WhatsApp y versión Instagram",
+    "bloque_3": "Plan de muestra: cuántas respuestas mínimas, de qué perfiles y en cuántos días",
+    "bloque_4": "Semáforo de decisión: qué resultados serían señal verde para seguir, ámbar para ajustar y roja para parar, con números concretos",
+    "bloque_5": "Lista de los 3 sesgos que pueden estropear este estudio y cómo evitarlos"
+  },
+  "criterios_calidad": [
+    "Cada pregunta se puede vincular a una decisión concreta que voy a tomar",
+    "Ninguna pregunta se puede responder solo con sí por educación",
+    "El semáforo usa porcentajes y cifras, no adjetivos"
+  ],
+  "tono": "Directo y práctico, tuteando, sin jerga de consultoría"
+}

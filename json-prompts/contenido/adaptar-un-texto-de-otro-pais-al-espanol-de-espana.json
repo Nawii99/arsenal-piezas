@@ -1,0 +1,35 @@
+{
+  "tarea": "Adaptar un texto escrito para otro mercado hispanohablante o traducido del inglés al español de España",
+  "entradas": {
+    "texto_original": "[PEGA AQUÍ EL TEXTO]",
+    "origen": "[LATAM / TRADUCCIÓN DEL INGLÉS / NEUTRO]",
+    "publico_destino": "[A QUIÉN LE HABLAS EN ESPAÑA]",
+    "tratamiento": "[TÚ O USTED]",
+    "sector": "[TU SECTOR]"
+  },
+  "puntos_a_revisar": [
+    "Pronombres y conjugaciones: ustedes por vosotros cuando corresponda",
+    "Léxico: computadora, celular, carro, jugo, plata, agarrar, ahorita y similares",
+    "Calcos del inglés: aplicar para, remover, asumir, eventualmente, en orden de",
+    "Moneda, formato de precio con coma decimal y símbolo detrás, fechas en día/mes/año",
+    "Unidades, tallas, impuestos: IVA en lugar de sales tax o IVA local",
+    "Referencias culturales, festivos y ejemplos de ciudades o marcas",
+    "Normativa mencionada: sustituir por la equivalente española o marcarla como pendiente"
+  ],
+  "restricciones": [
+    "No añadir coloquialismos exagerados ni jerga de un solo barrio",
+    "Mantener el registro del original: si era formal, sigue siendo formal",
+    "No cambiar cifras, plazos ni condiciones legales por tu cuenta",
+    "Marcar con [REVISAR CON ASESOR] toda mención legal, fiscal o de garantía"
+  ],
+  "formato_salida": {
+    "texto_adaptado": "Versión final lista para publicar",
+    "tabla_de_cambios": "Original / adaptado / motivo, solo de los cambios relevantes",
+    "pendientes": "Lista de puntos legales o de datos que debe confirmar una persona"
+  },
+  "criterios_calidad": [
+    "Un lector español no notaría que el texto viene de fuera",
+    "No queda ni un calco del inglés",
+    "Precios, fechas y unidades siguen el formato español"
+  ]
+}

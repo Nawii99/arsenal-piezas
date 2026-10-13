@@ -1,0 +1,50 @@
+{
+  "tarea": "Preparar el paquete completo para que otra persona pueda impartir mi formacion manteniendo la calidad",
+  "contexto": {
+    "curso": "[NOMBRE, DURACION Y FORMATO]",
+    "quien_lo_impartira": "[FORMADOR CONTRATADO / ACADEMIA / FRANQUICIA]",
+    "nivel_del_formador": "[SABE DEL TEMA / SABE DAR CLASE PERO NO DEL TEMA]",
+    "modelo_economico": "[PAGO POR EDICION / PORCENTAJE / CUOTA FIJA]"
+  },
+  "entradas": {
+    "materiales_actuales": "[SLIDES, EJERCICIOS, VIDEOS, PLANTILLAS, RUBRICAS]",
+    "lo_que_solo_esta_en_mi_cabeza": "[TRUCOS, ANECDOTAS, RESPUESTAS A DUDAS DIFICILES]"
+  },
+  "proceso": [
+    "1. Saca de tu cabeza lo no escrito: por cada modulo, anota que dices realmente, que ejemplo pones y donde suele atascarse la clase",
+    "2. Escribe la guia del formador modulo a modulo con tiempos, mensaje clave, ejemplo obligatorio y ejercicio",
+    "3. Marca lo intocable y lo adaptable: que partes se imparten tal cual y donde el formador puede poner sus ejemplos",
+    "4. Prepara el material del alumno y el del formador por separado, y una lista de que se entrega, cuando y como",
+    "5. Define la acreditacion: que tiene que hacer un formador antes de impartir, por ejemplo asistir a una edicion y dar una clase de prueba",
+    "6. Define el control de calidad: que se mide en cada edicion y que ocurre si baja",
+    "7. Redacta las condiciones: uso de marca y materiales, exclusividad por zona si la hay, precios minimos, duracion y como se termina el acuerdo",
+    "8. Define el mantenimiento: cada cuanto actualizas el material y como llega la actualizacion a los formadores"
+  ],
+  "restricciones": [
+    "No redactes el contrato como documento legal definitivo: entrega un pliego de condiciones para llevarlo a un abogado",
+    "Ningun apartado puede depender de que estes tu disponible por telefono",
+    "Nada de suponer que el formador sabe lo que tu sabes",
+    "Prohibido prometer ingresos al formador"
+  ],
+  "errores_a_evitar": [
+    "Entregar solo las diapositivas y llamarlo licencia",
+    "No fijar precio minimo y que hundan el valor de tu curso",
+    "Olvidar quien atiende las dudas de los alumnos y quien responde ante ellos",
+    "No prever como se retira la licencia si la calidad cae"
+  ],
+  "formato_salida": {
+    "bloque_1": "Indice del paquete: todos los documentos y materiales que lo componen",
+    "bloque_2": "Guia del formador: tabla por modulo con Minutos, Mensaje clave, Ejemplo obligatorio, Ejercicio, Donde se atasca la clase",
+    "bloque_3": "Tabla de intocable frente a adaptable",
+    "bloque_4": "Proceso de acreditacion del formador, paso a paso",
+    "bloque_5": "Sistema de control de calidad: que se mide, cada cuanto y umbrales de aviso",
+    "bloque_6": "Pliego de condiciones en puntos, para llevar a un abogado",
+    "bloque_7": "Plan de actualizacion del material y comunicacion a los formadores"
+  },
+  "criterios_calidad": [
+    "Un formador competente puede dar el curso leyendo solo el paquete",
+    "Cada modulo tiene tiempos, mensaje clave y ejemplo escrito",
+    "Queda claro quien responde ante el alumno en cada situacion",
+    "Hay una forma objetiva de detectar que una edicion salio mal"
+  ]
+}

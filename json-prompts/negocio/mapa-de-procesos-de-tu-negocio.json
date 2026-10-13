@@ -1,0 +1,39 @@
+{
+  "tarea": "Levantar el mapa de procesos de mi negocio y ordenarlo por cuál conviene arreglar primero",
+  "rol": "Consultor de operaciones con experiencia en pymes y autónomos en España",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "personas": "[CUÁNTAS PERSONAS SOIS Y QUÉ HACE CADA UNA]",
+    "herramientas_actuales": "[EXCEL, WHATSAPP, CRM, TPV, LO QUE USES]",
+    "volumen_mensual": "[PEDIDOS, CLIENTES O SERVICIOS AL MES]",
+    "dolor_principal": "[LO QUE MÁS TE QUEMA AHORA MISMO]"
+  },
+  "entradas": {
+    "dia_tipico": "[CUENTA TU DÍA DE TRABAJO DE PRINCIPIO A FIN]",
+    "quejas_frecuentes": "[LO QUE MÁS TE RECLAMAN LOS CLIENTES]"
+  },
+  "instrucciones": [
+    "Agrupa la actividad en tres bloques: captación de clientes, entrega del producto o servicio, y soporte (administración, cobros, compras)",
+    "Para cada proceso indica nombre, quién lo hace, con qué herramienta, cada cuánto ocurre y cuántas horas al mes consume",
+    "Marca cada proceso como documentado, solo en la cabeza de alguien, o inexistente",
+    "Señala como riesgo los procesos que dependen de una única persona",
+    "Puntúa cada proceso de 1 a 5 en dolor (tiempo perdido, errores, quejas) y de 1 a 5 en facilidad de arreglo",
+    "Ordena por dolor alto y facilidad alta: eso es lo que se toca primero",
+    "Si falta información para puntuar algo, dilo en vez de inventarlo"
+  ],
+  "restricciones": [
+    "Nada de jerga de consultoría: explícalo como a alguien que no ha trabajado nunca en una oficina",
+    "Máximo 12 procesos; si salen más, agrúpalos",
+    "No propongas software de pago sin decir qué problema concreto resuelve"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown y luego listas cortas",
+    "columnas_tabla": ["Proceso", "Quién", "Herramienta", "Frecuencia", "Horas/mes", "Estado", "Dolor", "Facilidad"],
+    "secciones_finales": ["Los 3 procesos a arreglar este mes y por qué", "Riesgos por depender de una sola persona", "Preguntas que necesito que me respondas para afinar"]
+  },
+  "criterios_calidad": [
+    "Cada proceso tiene un responsable concreto, no 'el equipo'",
+    "Las horas al mes van explicadas, no puestas a ojo sin más",
+    "El top 3 se justifica con las puntuaciones, no con opiniones"
+  ]
+}

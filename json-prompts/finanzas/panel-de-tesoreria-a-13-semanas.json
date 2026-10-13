@@ -1,0 +1,42 @@
+{
+  "tarea": "Monta mi previsión de tesorería semana a semana para las próximas 13 semanas y avísame de cuándo me quedo sin caja",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "fecha_de_inicio": "[LUNES DE LA SEMANA 1]",
+    "saldo_actual": "[DINERO EN CUENTAS HOY]",
+    "colchon_minimo": "[SALDO POR DEBAJO DEL CUAL NO QUIERES BAJAR]"
+  },
+  "entradas": {
+    "cobros_previstos": "[FACTURAS EMITIDAS PENDIENTES CON IMPORTE Y FECHA PREVISTA DE COBRO]",
+    "ventas_estimadas": "[VENTAS QUE ESPERAS CADA SEMANA Y SU PLAZO DE COBRO]",
+    "pagos_fijos": "[ALQUILER, NÓMINAS, SEGUROS, CUOTAS, SUSCRIPCIONES CON SU DÍA DE CARGO]",
+    "pagos_variables": "[PROVEEDORES, STOCK, PUBLICIDAD]",
+    "impuestos": "[IVA TRIMESTRAL, IRPF, IMPUESTO DE SOCIEDADES CON FECHAS]",
+    "deuda": "[PRÉSTAMOS Y CUOTAS MENSUALES]"
+  },
+  "pasos": [
+    "Trabaja siempre con la fecha real de cobro y de pago, no con la de la factura",
+    "Aplica un retraso realista a los cobros de clientes que suelen pagar tarde y dilo",
+    "Trata el IVA como dinero que no es tuyo: sepáralo del saldo disponible",
+    "Calcula saldo inicial, entradas, salidas y saldo final de cada semana",
+    "Marca la primera semana en que el saldo baja del colchón mínimo",
+    "Haz un escenario prudente en el que los cobros llegan dos semanas más tarde"
+  ],
+  "formato_salida": {
+    "tabla_principal": "Una fila por semana: semana | saldo inicial | cobros | pagos | saldo final | señal verde ámbar o roja",
+    "detalle": "Debajo de la tabla, el desglose de los tres mayores cobros y pagos de cada semana crítica",
+    "alertas": "Semanas en riesgo con el importe que falta",
+    "palancas": "Cinco medidas ordenadas por rapidez: adelantar cobros, aplazar pagos, recortes, financiación",
+    "supuestos": "Lista de supuestos usados para que pueda corregirlos"
+  },
+  "restricciones": [
+    "Todo en euros y con IVA incluido en cobros y pagos, indicándolo",
+    "No mezcles beneficio con caja: aquí solo importa el dinero que entra y sale",
+    "Si falta un dato, pon un supuesto conservador y márcalo en la lista de supuestos"
+  ],
+  "criterios_calidad": [
+    "Sé la semana exacta en la que tengo un problema, si lo tengo",
+    "Puedo cambiar un supuesto y ver qué se mueve",
+    "Las medidas propuestas están ordenadas por lo rápido que dan dinero"
+  ]
+}

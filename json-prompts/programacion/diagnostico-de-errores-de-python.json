@@ -1,0 +1,43 @@
+{
+  "tarea": "Diagnostica el error de Python que te paso y devuélveme el código corregido y funcionando",
+  "entradas": {
+    "mensaje_de_error": "[PEGA EL TRACEBACK COMPLETO, DESDE 'Traceback' HASTA LA ÚLTIMA LÍNEA]",
+    "codigo": "[PEGA EL SCRIPT O LA PARTE QUE FALLA]",
+    "version_python": "[EJ. 3.12]",
+    "sistema_operativo": "[WINDOWS / MACOS / LINUX]",
+    "que_esperaba": "[QUÉ DEBERÍA HACER EL SCRIPT]",
+    "que_hice_antes": "[CAMBIOS RECIENTES O CÓMO LO EJECUTO]"
+  },
+  "procedimiento": [
+    "Lee el traceback de abajo arriba e identifica el tipo de error y la línea exacta",
+    "Distingue si el fallo está en mi código o dentro de una librería",
+    "Explica la causa raíz en dos frases, sin jerga",
+    "Descarta las causas alternativas y di por qué",
+    "Propón el arreglo mínimo, no una reescritura del script"
+  ],
+  "revisa_estas_causas_habituales": [
+    "Librería no instalada o instalada fuera del entorno virtual",
+    "Ruta de fichero incorrecta o ejecución desde la carpeta equivocada",
+    "Indentación mezclando tabuladores y espacios",
+    "Tipos: sumar texto con número, un None inesperado, índice fuera de rango",
+    "Codificación al leer CSV con acentos (UTF-8 frente a latin-1)",
+    "Un fichero mío con el mismo nombre que una librería"
+  ],
+  "formato_salida": {
+    "1_veredicto": "Una frase: qué ha pasado",
+    "2_causa": "Explicación en lenguaje llano, máximo 4 líneas",
+    "3_arreglo": "Código corregido completo del bloque afectado, comentado",
+    "4_comprobacion": "Comando exacto para ejecutarlo y qué debo ver si funciona",
+    "5_prevencion": "Dos cambios para que este error no se repita"
+  },
+  "restricciones": [
+    "Si te falta información para estar seguro, pregunta antes de inventar",
+    "No cambies la lógica del script más allá de lo necesario",
+    "Marca claramente cualquier suposición que hagas"
+  ],
+  "criterios_calidad": [
+    "El arreglo se entiende sin saber leer un traceback",
+    "Queda claro qué línea cambio y por cuál",
+    "No aparecen soluciones del tipo 'prueba a reinstalarlo todo'"
+  ]
+}

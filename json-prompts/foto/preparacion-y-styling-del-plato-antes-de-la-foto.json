@@ -1,0 +1,28 @@
+{
+  "tarea": "Preparar el guion de food styling de un plato concreto para que aguante bien durante la sesion de fotos",
+  "contexto": {
+    "plato": "[NOMBRE DEL PLATO]",
+    "ingredientes": "[INGREDIENTES Y COMO SE SIRVE HABITUALMENTE]",
+    "punto_debil": "[QUE SE ESTROPEA ANTES: SE DERRITE, SE APAGA, SUELTA AGUA, SE OSCURECE]",
+    "minutos_utiles": "[MINUTOS QUE AGUANTA CON BUEN ASPECTO]",
+    "vajilla": "[PLATO O RECIPIENTE EN EL QUE SE SIRVE]"
+  },
+  "debe_incluir": [
+    "Orden de montaje: que va al fondo, que en medio y que se anade en el ultimo segundo antes de disparar",
+    "Trucos honestos permitidos: pincelar aceite para brillo, agua fria en spray para frescor, hierbas frescas al final, hielo justo antes",
+    "Trucos prohibidos por enganosos: pegamento, carton dentro del plato, comida cruda haciendose pasar por cocinada",
+    "Cantidad de racion: igual o menor que la que se sirve al cliente, nunca mayor",
+    "Eleccion de la mejor unidad: como elegir la hamburguesa, la fresa o la loncha mas fotogenica del lote",
+    "Limpieza del borde del plato y del cristal antes de cada toma"
+  ],
+  "formato_salida": {
+    "tipo": "Ficha imprimible de una pagina para colgar en cocina",
+    "secciones": ["Mise en place para foto", "Montaje paso a paso con minutos", "Retoques de ultimo segundo", "Que NO hacer", "Checklist de 8 puntos antes de disparar"]
+  },
+  "criterios_calidad": [
+    "Cualquier cocinero del equipo puede ejecutarlo sin el fotografo delante",
+    "Todo lo que aparece en la foto es lo mismo que recibe el cliente",
+    "El guion cabe en los minutos utiles indicados"
+  ],
+  "tono": "Directo, de cocina, sin tecnicismos de fotografia"
+}

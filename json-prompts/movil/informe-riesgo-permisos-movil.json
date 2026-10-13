@@ -1,0 +1,48 @@
+{
+  "tarea": "generar_informe_riesgo_permisos_movil",
+  "contexto": {
+    "nombre_cliente": "[NOMBRE DEL CLIENTE]",
+    "sistema_operativo": "[ANDROID O IPHONE]",
+    "uso_dispositivo": "[PERSONAL, AUTONOMO O EMPRESA]",
+    "fecha_revision": "[FECHA DE HOY]"
+  },
+  "datos_entrada": {
+    "apps_con_permisos": [
+      {
+        "nombre_app": "[NOMBRE DE LA APP]",
+        "permisos_concedidos": ["[PERMISO 1]", "[PERMISO 2]"],
+        "origen": "[TIENDA OFICIAL, APK EXTERNA O DESCONOCIDO]"
+      }
+    ],
+    "copia_de_seguridad": {
+      "activa": "[SI O NO]",
+      "ultima_fecha": "[FECHA O DESCONOCIDA]"
+    },
+    "cifrado_dispositivo": {
+      "codigo_bloqueo_activo": "[SI O NO]",
+      "tipo_cifrado_reportado": "[SEGUN AJUSTES DEL MOVIL]"
+    },
+    "dispositivo_cambia_de_manos": "[SI O NO]"
+  },
+  "instrucciones_salida": {
+    "formato": "tabla_mas_resumen",
+    "idioma": "es-ES",
+    "nivel_tecnico": "sin_jerga",
+    "campos_obligatorios": [
+      "riesgo_semaforo",
+      "hallazgos_por_bloque",
+      "acciones_recomendadas",
+      "precio_orientativo_correccion"
+    ],
+    "restricciones": [
+      "no inventar apps ni permisos que no esten en datos_entrada",
+      "marcar como pendiente_revision_manual cualquier app cuyo origen sea desconocido",
+      "no afirmar seguridad total, solo nivel de riesgo reducido"
+    ]
+  },
+  "uso_comercial": {
+    "es_entregable_de_pago": true,
+    "servicio_asociado": "auditoria de seguridad movil",
+    "nota_precio": "el precio de correccion es orientativo y lo confirma el profesional antes de facturar"
+  }
+}

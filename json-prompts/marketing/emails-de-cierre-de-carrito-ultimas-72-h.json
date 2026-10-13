@@ -1,0 +1,43 @@
+{
+  "tarea": "Escribir la secuencia de 5 correos de las últimas 72 horas de un lanzamiento, hasta el cierre de la oferta",
+  "entradas": {
+    "oferta": "[QUÉ VENDES Y QUÉ INCLUYE]",
+    "precio": "[PRECIO Y FORMAS DE PAGO]",
+    "cierre": "[FECHA Y HORA EXACTAS DEL CIERRE, HORA PENINSULAR]",
+    "que_pasa_al_cerrar": "[SUBE EL PRECIO, SE VAN LOS EXTRAS, SE CIERRA EL GRUPO...]",
+    "caso_real": "[UN CLIENTE, SU SITUACIÓN Y SU RESULTADO, O 'NO TENGO']",
+    "objeciones": "[LAS 3 DUDAS QUE MÁS TE ESCRIBEN]",
+    "enlace": "[URL DE LA PÁGINA DE VENTAS]",
+    "remitente": "[NOMBRE CON EL QUE FIRMAS]"
+  },
+  "secuencia": [
+    "Email 1 (-72 h): recordatorio con el resumen de la oferta y para quién NO es",
+    "Email 2 (-48 h): la objeción principal respondida con argumento y ejemplo",
+    "Email 3 (-24 h): caso real contado como historia, o desglose de qué se lleva si no hay caso",
+    "Email 4 (-6 h): últimas horas, resumen en lista y respuestas rápidas a las dudas",
+    "Email 5 (-1 h): aviso corto de cierre, sin argumentar, solo enlace y hora"
+  ],
+  "reglas_por_email": [
+    "3 opciones de asunto por correo, máximo 45 caracteres, sin palabras que disparen el spam ni mayúsculas gritonas",
+    "Una sola idea por correo y una sola llamada a la acción, repetida al principio y al final",
+    "Entre 120 y 300 palabras, párrafos de 1 a 3 líneas",
+    "Incluir línea de texto previo (preheader)"
+  ],
+  "restricciones": [
+    "Solo escasez real: la que se derive de 'que_pasa_al_cerrar'",
+    "Prohibido inventar testimonios o números de ventas",
+    "Si no hay caso real, sustituirlo por demostración concreta del método",
+    "Incluir siempre opción de darse de baja y cumplir el tono permitido en España",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "tipo": "markdown, un bloque por correo",
+    "campos_por_correo": ["Momento de envío", "3 asuntos", "Preheader", "Cuerpo", "Llamada a la acción", "P.D."]
+  },
+  "criterios_calidad": [
+    "Ningún correo repite el argumento del anterior",
+    "Se puede leer el email 5 en 15 segundos",
+    "Alguien que ya compró no se siente insultado al leerlos"
+  ],
+  "tono": "honesto y cercano, con urgencia real y cero manipulación"
+}

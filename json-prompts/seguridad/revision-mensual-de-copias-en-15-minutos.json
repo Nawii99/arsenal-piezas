@@ -1,0 +1,35 @@
+{
+  "tarea": "Crear la rutina mensual de verificación de copias de seguridad y su hoja de registro para un negocio pequeño",
+  "contexto": {
+    "sistemas_de_copia": "[HERRAMIENTAS Y DESTINOS QUE USÁIS]",
+    "responsable": "[NOMBRE] y suplente [NOMBRE]",
+    "dia_fijo": "[EJ. PRIMER LUNES DE CADA MES]",
+    "tiempo_disponible": "[MINUTOS]",
+    "a_quien_avisar": "[NOMBRE Y CANAL SI ALGO FALLA]"
+  },
+  "comprobaciones": [
+    "Última copia correcta de cada sistema y su fecha",
+    "Tamaño de la copia comparado con el mes anterior: una caída brusca suele significar que algo dejó de copiarse",
+    "Restaurar un archivo al azar y abrirlo para confirmar que sirve",
+    "Espacio libre en el destino y avisos de cuota",
+    "Copia externa o fuera de línea: fecha de la última actualización y dónde está guardada",
+    "Accesos: quién puede entrar al sistema de copias y si sobra alguien",
+    "Altas y bajas del mes: equipos, personas o herramientas nuevas que aún no están cubiertas"
+  ],
+  "señales_de_alarma": [
+    "Copias con más de [DÍAS] días de antigüedad",
+    "Errores repetidos en el registro del programa de copia",
+    "Nadie sabe la contraseña de cifrado o de recuperación"
+  ],
+  "formato_salida": {
+    "parte_1": "Checklist numerado con minutos por tarea, que sume el tiempo disponible",
+    "parte_2": "Tabla de registro mensual: Fecha | Sistema | Última copia | Tamaño | Prueba de restauración | Estado | Incidencias | Firma",
+    "parte_3": "Semáforo de estado global: verde, ámbar o rojo con su criterio",
+    "parte_4": "Texto listo para pegar como tarea recurrente en el calendario"
+  },
+  "criterios_calidad": [
+    "Se puede completar en el tiempo indicado sin ayuda técnica",
+    "Incluye siempre una restauración real, no solo mirar pantallas verdes",
+    "El registro deja constancia por escrito y con firma"
+  ]
+}

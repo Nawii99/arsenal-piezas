@@ -1,0 +1,42 @@
+{
+  "tarea": "Definir el modelo de cobro dentro de una app: qué es gratis, qué se paga, qué formato de compra, a qué precio y con qué margen real tras comisiones e IVA.",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "valor_principal": "[LO QUE EL USUARIO CONSIGUE CON ELLA]",
+    "tipo_de_uso": "[DIARIO / SEMANAL / PUNTUAL / DE TEMPORADA]",
+    "coste_por_usuario_al_mes": "[SERVIDORES, IA, SOPORTE... EN EUROS]",
+    "vende_bienes_digitales_o_servicios_del_mundo_real": "[DIGITAL DENTRO DE LA APP / SERVICIO O PRODUCTO FÍSICO]",
+    "referencias_de_precio": "[QUÉ COBRAN APPS PARECIDAS]"
+  },
+  "reglas_de_las_tiendas": [
+    "Lo digital que se consume dentro de la app debe cobrarse con el sistema de pago de la tienda. Los productos físicos y los servicios prestados fuera pueden cobrarse por tu pasarela.",
+    "La tienda se queda una comisión sobre cada cobro; hay un programa reducido para desarrolladores pequeños y una comisión menor para suscripciones que llevan más de un año seguido.",
+    "El precio que ve el usuario en España incluye IVA: tu ingreso es el precio menos IVA y menos comisión.",
+    "Las condiciones, la duración de la prueba y cómo cancelar tienen que estar visibles antes de comprar, o te rechazan la ficha."
+  ],
+  "pasos": [
+    "1. Decide la frontera: qué parte es gratis para siempre y qué parte se paga. La frontera correcta deja probar el valor y cobra por la cantidad, la comodidad o el resultado.",
+    "2. Elige el formato: suscripción mensual y anual, pago único, o paquetes de consumibles. Suscripción solo si el usuario recibe valor de forma continua.",
+    "3. Fija dos o tres niveles como mucho y ponles nombre por lo que consigue el usuario, no por el tamaño.",
+    "4. Calcula el ingreso neto por cliente: precio menos IVA, menos comisión de la tienda, menos coste por usuario. Si sale negativo, el precio o el plan están mal.",
+    "5. Ancla el precio anual frente al mensual con un descuento claro y di cuánto ahorra en euros.",
+    "6. Decide la prueba gratuita: duración, si pide tarjeta y qué pasa al terminar. Avisa antes de cobrar.",
+    "7. Escribe la pantalla de pago: promesa arriba, comparativa de niveles, precio con letra grande, condiciones y enlace a restaurar compras.",
+    "8. Define qué mirar: porcentaje que compra, cancelaciones al mes y cuánto deja de media un cliente."
+  ],
+  "formato_salida": {
+    "bloque_1": "Frontera gratis/pago explicada en 3 renglones",
+    "bloque_2": "Tabla de niveles: nombre, qué incluye, precio mensual, precio anual, para quién es",
+    "bloque_3": "Cálculo del ingreso neto por cliente paso a paso, con los números del contexto",
+    "bloque_4": "Textos completos de la pantalla de pago",
+    "bloque_5": "Condiciones de la prueba gratuita y avisos previos al cobro",
+    "bloque_6": "Las 3 métricas a vigilar y el umbral que indicaría que hay que cambiar el precio"
+  },
+  "criterios_calidad": [
+    "El cálculo de márgenes usa los datos del contexto y se ve la operación, no solo el resultado.",
+    "No se prometen ingresos ni se inventan cifras de mercado.",
+    "El formato de cobro encaja con el tipo de uso: nada de suscripción para una app de uso puntual.",
+    "La pantalla de pago dice el precio, la duración y cómo cancelar sin buscar.",
+    "Se distingue con claridad qué debe pasar por el sistema de pago de la tienda y qué no."
+  ]
+}

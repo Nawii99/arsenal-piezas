@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar una hoja de cálculo que genere sola el informe semanal del negocio a partir de una tabla de datos en bruto",
+  "rol": "Analista de datos que trabaja con hojas de cálculo sencillas y a prueba de fallos",
+  "entradas": {
+    "herramienta": "[GOOGLE SHEETS / EXCEL]",
+    "origen_de_los_datos": "[EXPORTACIÓN DEL TPV, PEDIDOS DE LA TIENDA, HOJA DE HORAS, CRM]",
+    "columnas_disponibles": "[FECHA, CLIENTE, PRODUCTO, CANTIDAD, IMPORTE, CANAL, ESTADO]",
+    "indicadores_que_quiero_ver": "[VENTAS, TICKET MEDIO, PEDIDOS, CLIENTES NUEVOS, TOP PRODUCTOS]",
+    "comparacion": "[SEMANA ANTERIOR / MISMA SEMANA DEL AÑO PASADO]"
+  },
+  "metodo": [
+    "Propón tres pestañas: DATOS en bruto que solo se pega, CALCULOS con fórmulas y PANEL con el resumen",
+    "En DATOS no debe haber ninguna fórmula ni fila de totales",
+    "Usa fórmulas que se recalculen solas al pegar más filas y funciones de rango completo",
+    "Da la fórmula exacta de cada indicador, con separador de argumentos punto y coma",
+    "Añade el cálculo de la variación frente al periodo de comparación en porcentaje",
+    "Incluye formato condicional para marcar en rojo lo que empeora y en verde lo que mejora",
+    "Prevé qué muestra la hoja cuando una semana no tiene datos, sin errores en pantalla"
+  ],
+  "restricciones": [
+    "Sin macros ni scripts: solo fórmulas",
+    "Nada de tablas dinámicas que haya que refrescar a mano",
+    "Fechas dd/mm/aaaa y euros con coma decimal"
+  ],
+  "formato_salida": {
+    "estructura_de_pestañas": "Qué va en cada una y en qué celdas",
+    "tabla_formulas": ["indicador", "celda", "fórmula", "qué_mide"],
+    "panel": "Descripción del bloque de resumen que se lee en 30 segundos",
+    "instrucciones_semanales": "Los 3 pasos que haces cada lunes",
+    "errores_frecuentes": "4 fallos típicos y cómo evitarlos"
+  },
+  "criterios_calidad": [
+    "Las fórmulas son copiables tal cual y usan referencias coherentes",
+    "El usuario solo tiene que pegar datos, nada más",
+    "Ningún indicador depende de escribir un dato a mano dos veces"
+  ],
+  "tono": "Concreto y paso a paso, español de España, tuteando"
+}

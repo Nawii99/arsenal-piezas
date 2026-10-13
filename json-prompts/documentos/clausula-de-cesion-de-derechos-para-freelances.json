@@ -1,0 +1,41 @@
+{
+  "tarea": "Redactar la cláusula de propiedad intelectual y cesión de derechos para el contrato con un proveedor externo, adaptada a la ley española",
+  "rol": "Abogado de contratos mercantiles que escribe en lenguaje claro",
+  "contexto": {
+    "cliente": "[TU NOMBRE O EMPRESA Y CIF]",
+    "proveedor": "[NOMBRE DEL FREELANCE O AGENCIA]",
+    "encargo": "[QUÉ ENCARGAS: LOGO, WEB, FOTOS, TEXTOS, CÓDIGO, VÍDEO...]",
+    "usos_previstos": "[WEB, REDES, ANUNCIOS, PACKAGING, MERCHANDISING, FRANQUICIAS...]",
+    "territorio": "[ESPAÑA / UE / MUNDIAL]",
+    "plazo": "[DURACIÓN MÁXIMA LEGAL O AÑOS CONCRETOS]",
+    "precio": "[IMPORTE ACORDADO]",
+    "exclusividad": "[SÍ / NO]"
+  },
+  "pasos": [
+    "Diferencia derechos morales, que no se ceden, de derechos de explotación, que sí",
+    "Enumera de forma expresa los derechos cedidos: reproducción, distribución, comunicación pública y transformación",
+    "Fija territorio, plazo, exclusividad y si se puede subceder a terceros",
+    "Deja claro que el precio pactado incluye la cesión y no habrá pagos posteriores por uso",
+    "Incluye la entrega de archivos editables y fuentes, no solo el resultado final",
+    "Añade garantía del proveedor de que la obra es original y de que tiene licencia de los materiales de terceros que incorpore",
+    "Regula qué pasa con el portfolio del proveedor y con el material previo o reutilizable"
+  ],
+  "restricciones": [
+    "Ajústate al marco español de propiedad intelectual y evita fórmulas copiadas de contratos anglosajones",
+    "No prometas la cesión de derechos morales ni la cesión global de obras futuras",
+    "Frases cortas, sin jerga innecesaria"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "Cláusula lista para pegar, numerada y con subapartados",
+      "Versión corta de tres párrafos para presupuestos pequeños",
+      "Explicación en cristiano de qué dice cada apartado",
+      "Lista de errores a evitar y de puntos que el proveedor suele negociar"
+    ]
+  },
+  "criterios_calidad": [
+    "Se puede pegar tal cual en un contrato sin retocar la redacción",
+    "Cada derecho cedido aparece nombrado de forma expresa",
+    "Termina recomendando revisión de un abogado antes de firmar importes altos"
+  ]
+}

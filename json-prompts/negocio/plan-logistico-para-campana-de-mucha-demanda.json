@@ -1,0 +1,38 @@
+{
+  "tarea": "Preparar el plan logístico de mi tienda para el pico de ventas de [NOMBRE DE LA CAMPAÑA], con calendario, capacidad, fechas límite de pedido y plan B",
+  "contexto": {
+    "campaña": "[BLACK FRIDAY / NAVIDAD / REBAJAS / OTRA]",
+    "fechas": "[DEL X AL Y]",
+    "pedidos_dia_normal": "[NÚMERO]",
+    "pedidos_dia_esperados_en_pico": "[NÚMERO]",
+    "capacidad_preparacion_diaria": "[PEDIDOS QUE PODÉIS PREPARAR AL DÍA Y CON CUÁNTA GENTE]",
+    "stock_actual": "[REFERENCIAS Y UNIDADES]",
+    "plazo_proveedor": "[DÍAS DESDE QUE PIDES HASTA QUE RECIBES]",
+    "agencias_y_plazos": "[AGENCIA, ZONA, PLAZO Y HASTA QUÉ DÍA GARANTIZAN ENTREGA]"
+  },
+  "entregables": [
+    "1. Calendario de cuenta atrás por semanas: qué hay que tener cerrado en S-6, S-4, S-2, S-1 y durante la campaña",
+    "2. Cálculo de stock necesario por referencia según la previsión, con colchón de seguridad y fecha límite para pedir al proveedor",
+    "3. Comprobación de capacidad: si los pedidos esperados superan la capacidad diaria, cuántas horas o personas extra hacen falta y desde qué día",
+    "4. Fechas límite de compra para entrega antes de [FECHA CLAVE] por zona, para publicar en la web",
+    "5. Preparativos de almacén: materiales de embalaje con margen, zona de picking reordenada por rotación, etiquetas impresas por adelantado",
+    "6. Plan de devoluciones post campaña: plazo ampliado, refuerzo de revisión y qué hacer con el producto que vuelve",
+    "7. Plan B por escrito: rotura de stock, caída de la agencia, colapso del almacén y saturación de atención al cliente"
+  ],
+  "avisos_al_cliente": [
+    "Banner con la fecha límite de pedido por zona",
+    "Email de aviso de última llamada",
+    "Mensaje preparado para el caso de retraso general de la agencia"
+  ],
+  "reglas": [
+    "Trabajar con dos escenarios: previsión normal y previsión alta del [PORCENTAJE EXTRA] % por encima",
+    "No prometer fechas de entrega que dependan del último día de recogida de la agencia",
+    "Cada tarea del calendario lleva responsable y fecha"
+  ],
+  "formato_salida": {
+    "bloque_1": "Calendario en tabla por semanas con tareas, responsable y fecha",
+    "bloque_2": "Tabla de stock necesario y fecha límite de pedido a proveedor",
+    "bloque_3": "Fechas límite de compra para publicar en la web",
+    "bloque_4": "Plan B en una página"
+  }
+}

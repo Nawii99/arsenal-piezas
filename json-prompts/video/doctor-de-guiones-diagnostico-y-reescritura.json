@@ -1,0 +1,36 @@
+{
+  "tarea": "Auditar un guion de video existente, señalar sus fallos con precision y entregar una version reescrita mejor",
+  "entradas": {
+    "guion": "[PEGA AQUÍ EL GUION COMPLETO]",
+    "objetivo": "[QUÉ QUIERES CONSEGUIR CON EL VÍDEO]",
+    "publico": "[A QUIÉN VA DIRIGIDO]",
+    "plataforma": "[DÓNDE SE PUBLICA]",
+    "datos_si_los_hay": "[RETENCIÓN, VISUALIZACIONES, COMENTARIOS O CONVERSIONES]"
+  },
+  "revisa_estos_puntos": [
+    "Gancho: engancha en los 3 primeros segundos o tarda demasiado en arrancar",
+    "Claridad: hay una sola idea principal o se mezclan varias",
+    "Ritmo: tramos largos sin que pase nada, frases demasiado largas para decirlas",
+    "Concrecion: afirmaciones vagas que habria que sustituir por datos, ejemplos o demostraciones",
+    "Lenguaje: palabras de folleto, jerga, tono de anuncio impostado",
+    "Visual: partes que se cuentan hablando y se entenderian mejor enseñandolas",
+    "Cierre: hay una unica llamada a la accion clara",
+    "Duracion real: palabras dividido entre 2,5 palabras por segundo"
+  ],
+  "formato_salida": {
+    "tipo": "Tres partes en este orden",
+    "parte_1": "Diagnóstico: tabla con Punto revisado, Nota del 1 al 5, Qué falla exactamente y en qué frase",
+    "parte_2": "Los 3 arreglos que más van a cambiar el resultado, en orden de impacto",
+    "parte_3": "Guion reescrito completo, con marcas de tiempo, y una lista de los cambios hechos con su motivo"
+  },
+  "restricciones": [
+    "No suavices: si el gancho es malo, dilo y explica por que",
+    "No inventes datos ni testimonios que no esten en el guion original",
+    "Manten la voz y el estilo del autor; corrige el guion, no lo conviertas en otro"
+  ],
+  "criterios_calidad": [
+    "Cada crítica señala la frase concreta, no el guion en general",
+    "La versión reescrita se puede grabar tal cual",
+    "La duración estimada aparece antes y después de la reescritura"
+  ]
+}

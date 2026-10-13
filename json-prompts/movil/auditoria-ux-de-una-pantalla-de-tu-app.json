@@ -1,0 +1,38 @@
+{
+  "tarea": "Auditar una pantalla de app móvil y devolver los problemas de usabilidad ordenados por gravedad, cada uno con su arreglo concreto",
+  "entradas": {
+    "pantalla": "[NOMBRE Y FUNCIÓN DE LA PANTALLA]",
+    "objetivo_del_usuario": "[QUÉ QUIERE CONSEGUIR AQUÍ]",
+    "objetivo_del_negocio": "[QUÉ QUIERES QUE HAGA]",
+    "elementos_visibles": "[LISTA DE TODO LO QUE APARECE: TEXTOS, BOTONES, CAMPOS, IMÁGENES]",
+    "sintoma_observado": "[QUÉ ESTÁ PASANDO: ABANDONO, ERRORES, DUDAS DE CLIENTES]",
+    "plataforma": "[iOS, ANDROID O AMBAS]"
+  },
+  "que_revisar": [
+    "Jerarquía: se entiende en 3 segundos qué es esta pantalla y qué hacer",
+    "Acción principal: una sola, visible sin desplazar, en la zona baja alcanzable con el pulgar",
+    "Zonas táctiles de al menos 44 puntos y separación suficiente entre ellas",
+    "Legibilidad: tamaño mínimo de 16 puntos en texto de lectura y contraste suficiente",
+    "Formularios: teclado adecuado por campo, autorrelleno, validación al salir del campo y no al enviar",
+    "Estados: qué se ve mientras carga, si no hay datos, si falla la conexión",
+    "Reversibilidad: se puede volver atrás o deshacer sin perder lo escrito",
+    "Ruido: elementos que no ayudan al objetivo y se pueden quitar"
+  ],
+  "formato_salida": {
+    "bloque_1": "Veredicto en 3 líneas: qué falla de raíz",
+    "bloque_2_tabla": ["Gravedad (alta, media, baja)", "Problema", "Por qué molesta al usuario", "Arreglo concreto", "Esfuerzo (bajo, medio, alto)"],
+    "bloque_3": "Los 3 cambios que haría primero, en orden",
+    "bloque_4": "Descripción de la pantalla ya corregida, elemento a elemento de arriba abajo"
+  },
+  "restricciones": [
+    "No proponer rediseños completos si un ajuste resuelve el problema",
+    "Cada arreglo debe ser accionable, nada de consejos genéricos",
+    "Respetar los patrones nativos de la plataforma indicada"
+  ],
+  "criterios_calidad": [
+    "Mínimo 8 hallazgos y máximo 15",
+    "Ningún hallazgo repetido con otras palabras",
+    "Cada arreglo se puede pedir a un desarrollador tal cual está escrito"
+  ],
+  "tono": "Claro y sin tecnicismos, español de España"
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Preparar el guion de una llamada de seguimiento comercial de 10 minutos",
+  "entradas": {
+    "cliente": "[NOMBRE, EMPRESA Y CARGO]",
+    "propuesta": "[QUÉ LE OFRECISTE Y A QUÉ PRECIO]",
+    "ultimo_contacto": "[QUÉ PASÓ, CUÁNDO Y QUÉ QUEDÓ PENDIENTE]",
+    "objetivo_de_la_llamada": "[QUÉ QUIERES CONSEGUIR: FECHA, DECISOR, PRUEBA, FIRMA]"
+  },
+  "estructura": [
+    "Apertura de 15 segundos: motivo real de la llamada y permiso para seguir ('¿te pillo bien 5 minutos?')",
+    "Puente: recordar en una frase dónde lo dejasteis",
+    "Tres preguntas de diagnóstico, ordenadas de menos a más comprometida",
+    "Momento de escuchar: qué señales indican interés real y cuáles indican que hay que parar",
+    "Anticipar las 3 objeciones más probables con la respuesta preparada en 2 frases",
+    "Cierre: propuesta de siguiente paso con día y hora",
+    "Plan B si dice que no es buen momento y plan C si no coge el teléfono"
+  ],
+  "restricciones": [
+    "Nada de monólogos: ninguna intervención tuya supera las 3 frases",
+    "No recitar características del producto salvo que el cliente lo pida",
+    "Español de España, hablado, tuteando"
+  ],
+  "formato_salida": {
+    "1_chuleta": "Guion de una página en viñetas, para tener delante mientras llamas",
+    "2_preguntas": "Las 3 preguntas escritas literalmente",
+    "3_objeciones": "Tabla: objeción esperada / respuesta en 2 frases",
+    "4_mensaje_buzon": "Qué decir en el contestador en 20 segundos",
+    "5_email_posterior": "Email de 60 palabras para enviar tras colgar con lo acordado"
+  },
+  "criterios_calidad": [
+    "Todo cabe en una página",
+    "La llamada acaba con un compromiso con fecha o con un no claro",
+    "Ninguna frase suena a teleoperador leyendo"
+  ]
+}

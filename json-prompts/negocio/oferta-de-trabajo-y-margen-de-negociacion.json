@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar una oferta de empleo por escrito y preparar la negociación salarial",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "candidato": "[NOMBRE]",
+    "puesto": "[NOMBRE DEL PUESTO]",
+    "pais": "España"
+  },
+  "entradas": {
+    "salario_bruto_anual_ofrecido": "[EUROS]",
+    "techo_real_que_puedes_pagar": "[EUROS]",
+    "tipo_de_contrato": "[INDEFINIDO / TEMPORAL / PRÁCTICAS]",
+    "jornada_y_horario": "[DETALLE]",
+    "periodo_de_prueba": "[MESES]",
+    "fecha_incorporacion": "[FECHA]",
+    "extras": ["[TELETRABAJO / FORMACIÓN / VARIABLE / DÍAS LIBRES]"],
+    "lo_que_ha_pedido_el_candidato": "[EUROS O CONDICIÓN]"
+  },
+  "pasos": [
+    "Escribir la oferta con todas las condiciones, sin ambigüedades ni promesas verbales",
+    "Explicar en dos frases por qué le habéis elegido, que es lo que hace que se acepte",
+    "Preparar tres respuestas para cuando pida más: contraoferta al alza, extras no salariales y revisión con fecha y criterio",
+    "Definir el límite: cifra a partir de la cual dices que no y cómo lo dices sin cerrar la puerta"
+  ],
+  "restricciones": [
+    "No prometer subidas futuras sin condición y fecha concretas",
+    "No presionar con plazos falsos de 24 horas",
+    "Indicar que el contrato definitivo lo revisa la gestoría o un laboralista",
+    "Nada de cifras en neto sin aclarar que dependen de la situación personal"
+  ],
+  "formato_salida": {
+    "email_oferta": "Mensaje listo para enviar, máximo 250 palabras, con las condiciones en lista",
+    "tabla_condiciones": "Bruto anual, pagas, jornada, horario, teletrabajo, vacaciones, prueba, incorporación",
+    "guion_negociacion": "Tres escenarios con lo que dices en cada uno",
+    "limite": "Cifra máxima y frase de cierre si se supera",
+    "email_no_seleccionados": "Mensaje breve y respetuoso para el resto de finalistas"
+  },
+  "criterios_calidad": [
+    "El candidato no puede tener dudas sobre cuánto va a cobrar y cuándo empieza",
+    "Ninguna respuesta de negociación supera el techo indicado"
+  ]
+}

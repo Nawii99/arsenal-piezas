@@ -1,0 +1,37 @@
+{
+  "tarea": "Convertir un cambio de esquema rompedor en un plan de migracion por fases sin parada de servicio",
+  "metodo": "expandir, migrar datos, cambiar lectura, cambiar escritura, contraer",
+  "contexto": {
+    "motor_bd": "[POSTGRESQL / MYSQL / SQL SERVER]",
+    "tabla": "[NOMBRE DE LA TABLA]",
+    "filas": "[NUMERO APROXIMADO DE FILAS]",
+    "escrituras_por_minuto": "[APROXIMADO O NO LO SE]",
+    "despliegue_app": "[CUANTAS VECES AL DIA PODEIS DESPLEGAR CODIGO]"
+  },
+  "entradas": {
+    "cambio_deseado": "[EJEMPLO: RENOMBRAR CLIENTE_NOMBRE A NOMBRE_COMPLETO / PASAR IMPORTE DE TEXTO A DECIMAL]",
+    "codigo_afectado": "[MODULOS, INFORMES O INTEGRACIONES QUE USAN ESA COLUMNA]"
+  },
+  "instrucciones": [
+    "Divide el trabajo en fases numeradas y di que se despliega en cada una: base de datos o aplicacion",
+    "En la fase de expansion anade lo nuevo sin tocar lo viejo y mantiene ambos escribiendose a la vez",
+    "Explica como sincronizar los dos campos durante la convivencia y que hacer con las filas nuevas",
+    "El relleno de datos historicos va por lotes, indica tamano de lote y pausa entre lotes",
+    "La fase de limpieza solo se ejecuta cuando se cumplan condiciones concretas, escribelas",
+    "Para cada fase indica como volver atras si falla"
+  ],
+  "formato_salida": {
+    "tipo": "plan por fases",
+    "por_cada_fase": ["Nombre y objetivo", "SQL o cambio de codigo", "Cuanto puede durar", "Como comprobar que fue bien", "Vuelta atras"],
+    "cierre": "Tabla resumen con el calendario sugerido de las fases"
+  },
+  "restricciones": [
+    "Ninguna fase puede dejar la aplicacion actual sin funcionar",
+    "Nada de sentencias que reescriban la tabla completa bloqueandola",
+    "Si el motor indicado no soporta alguna opcion, dilo y propon la alternativa"
+  ],
+  "criterios_calidad": [
+    "Un desarrollador junior podria ejecutar el plan siguiendo solo el documento",
+    "Cada fase tiene un criterio objetivo para pasar a la siguiente"
+  ]
+}

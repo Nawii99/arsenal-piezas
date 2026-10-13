@@ -1,0 +1,34 @@
+{
+  "tarea": "Analizar el contenido en redes de mis competidores y proponerme un plan de contenidos con hueco propio",
+  "entradas": {
+    "mi_negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "mi_red_principal": "[INSTAGRAM, TIKTOK, LINKEDIN, YOUTUBE...]",
+    "competidores": ["[PERFIL 1]", "[PERFIL 2]", "[PERFIL 3]"],
+    "muestras": "[PEGA 10-20 PUBLICACIONES SUYAS: TEXTO, FORMATO, FECHA Y MÉTRICAS VISIBLES]"
+  },
+  "pasos": [
+    "Clasifica cada publicación por formato (vídeo corto, carrusel, foto, texto, directo) y por intención (educar, entretener, vender, prueba social, detrás de las cámaras)",
+    "Calcula la interacción relativa de cada publicación respecto a la media de ese perfil, no en números absolutos",
+    "Señala los 5 temas que más repiten y los 3 que evitan",
+    "Detecta su gancho habitual en los primeros 3 segundos o la primera línea",
+    "Estima su ritmo de publicación y sus horas",
+    "Identifica qué preguntas de los comentarios se quedan sin responder"
+  ],
+  "restricciones": [
+    "No estimes seguidores ni alcance si no está en los datos aportados",
+    "Nada de copiar guiones: propuestas propias",
+    "Si las métricas son pocas, trata las conclusiones como hipótesis a probar"
+  ],
+  "formato_salida": {
+    "1_tabla": "Competidor, formato dominante, temas, ritmo, gancho tipo, qué le funciona mejor",
+    "2_patrones": "5 patrones que se repiten en los contenidos que mejor funcionan del sector",
+    "3_hueco": "3 territorios de contenido que nadie está tocando y encajan conmigo",
+    "4_plan": "12 ideas de publicación mías con formato, gancho y qué pretende cada una",
+    "5_medir": "Qué mirar a las 4 semanas para saber si funciona"
+  },
+  "criterios_calidad": [
+    "Las 12 ideas se pueden grabar o escribir con un móvil y sin equipo",
+    "Cada idea dice claramente en qué se diferencia de lo que ya hace la competencia",
+    "Ninguna conclusión se presenta como dato si es una estimación"
+  ]
+}

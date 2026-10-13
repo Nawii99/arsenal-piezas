@@ -1,0 +1,54 @@
+{
+  "tarea": "Redactar el acta de entrega y el manual breve de una instalación de domótica o sensores para el cliente final",
+  "contexto": {
+    "perfil": "Instalador sin perfil técnico de escritura que necesita cerrar el trabajo por escrito",
+    "cliente": "[NOMBRE O TIPO DE CLIENTE Y NIVEL DE SOLTURA CON LA TECNOLOGÍA: bajo, medio, alto]"
+  },
+  "entradas": {
+    "instalado": "[LISTA DE LO MONTADO: aparatos, cantidad, ubicación, marca y modelo]",
+    "automatizaciones": "[QUÉ SE HA PROGRAMADO Y QUÉ HACE CADA COSA]",
+    "cuentas": "[QUÉ APPS SE USAN Y A NOMBRE DE QUIÉN QUEDAN]",
+    "garantias": "[GARANTÍA DEL FABRICANTE POR PRODUCTO Y TU GARANTÍA DE MANO DE OBRA]",
+    "pendientes": "[LO QUE QUEDA POR HACER O DEPENDE DE UN TERCERO]"
+  },
+  "pasos": [
+    "1. Escribe primero la parte que el cliente va a usar de verdad: cómo se enciende, se apaga y se anula cada cosa, y sobre todo cómo dejarlo todo en manual si falla internet. Esa es la página que salva la relación.",
+    "2. Traduce cada automatización a una frase de causa y efecto en lenguaje normal: cuando pasa esto, ocurre aquello, salvo si esto otro.",
+    "3. Deja claro quién es dueño de qué: las cuentas van a nombre del cliente, con su correo, y tú indicas con qué acceso te quedas y hasta cuándo.",
+    "4. Separa garantías: la del fabricante por aparato con su plazo, y la tuya por mano de obra, diciendo qué cubre y qué no (obra posterior, cambios hechos por el cliente, subidas de tensión, internet del operador).",
+    "5. Anota lo que consume mantenimiento: pilas por tipo y fecha prevista, actualizaciones, limpieza de lentes o sensores.",
+    "6. Enumera los pendientes y las condiciones: qué falta, de quién depende y qué pasa si no se hace.",
+    "7. Añade los datos de contacto y el procedimiento de aviso: por dónde se te avisa, en qué horario y qué información hace falta para poder ayudar sin ir.",
+    "8. Cierra con la firma de conformidad y la fecha, y con la relación de material entregado, incluidos mandos, llaves y accesorios sobrantes.",
+    "9. Prepara además una versión de una sola página para colgar en la cocina o en el cuadro, con lo urgente."
+  ],
+  "restricciones": [
+    "Español de España, claro y sin jerga; nada de nombres técnicos sin explicar",
+    "No incluir contraseñas en el documento; indicar cómo se entregan aparte",
+    "No prometer funcionamiento sin internet si no es cierto",
+    "Toda garantía indicada con plazo y con exclusiones"
+  ],
+  "errores_tipicos": [
+    "Entregar la instalación atada a la cuenta del instalador",
+    "No explicar cómo funciona el interruptor de siempre y dejar al cliente vendido",
+    "Dar por hecho que el cliente sabe qué es un hub",
+    "No dejar por escrito los pendientes y discutir después sobre ellos"
+  ],
+  "formato_salida": {
+    "1_portada": "Cliente, dirección, fecha, instalador y resumen en tres líneas",
+    "2_que_hay_instalado": "Tabla: aparato | ubicación | marca y modelo | garantía y fecha de fin",
+    "3_como_se_usa": "Instrucciones por escenas de uso cotidiano, con el modo manual siempre indicado",
+    "4_automatizaciones": "Cada una en una frase de causa y efecto",
+    "5_cuentas_y_accesos": "Quién es titular de qué y qué acceso conserva el instalador",
+    "6_garantia_y_exclusiones": "Qué cubre y qué no, por escrito",
+    "7_mantenimiento": "Pilas, limpiezas y revisiones con fechas previstas",
+    "8_pendientes_y_firma": "Lista de pendientes y conformidad con fecha",
+    "9_hoja_de_nevera": "Una página con lo urgente: qué hacer si se va la luz, si falla internet o si algo no responde"
+  },
+  "criterios_calidad": [
+    "El cliente puede volver a modo manual leyendo una sola página",
+    "Todas las cuentas quedan a nombre del cliente",
+    "Cada garantía tiene plazo y exclusiones escritas",
+    "No aparece ninguna contraseña en el documento"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Sintetizar toda la investigación de mercado aportada sobre [PROYECTO O IDEA] en un informe de una página que termine en una decisión de seguir, ajustar o parar",
+  "entradas": {
+    "hallazgos": "[PEGA AQUÍ TODO LO QUE TENGAS: RESULTADOS DE ENCUESTA, NOTAS DE ENTREVISTAS, ANÁLISIS DE COMPETENCIA, DATOS DE BÚSQUEDAS]",
+    "decision_a_tomar": "[QUÉ TIENES QUE DECIDIR EXACTAMENTE Y CON QUÉ DINERO ASOCIADO]",
+    "plazo": "[CUÁNDO HAY QUE DECIDIR]",
+    "destinatario": "[PARA TI, PARA UN SOCIO, PARA EL BANCO O PARA UN INVERSOR]"
+  },
+  "metodo": [
+    "Separar hechos verificados, opiniones de terceros y supuestos propios, y etiquetar cada afirmación",
+    "Valorar la solidez de cada prueba por tamaño de muestra y por si mide comportamiento o solo intención",
+    "Señalar explícitamente las evidencias que contradicen la hipótesis, no solo las que la apoyan",
+    "Calcular qué le falta al informe para ser concluyente y cuánto costaría conseguirlo"
+  ],
+  "restricciones": [
+    "Máximo una página equivalente, unas 500 palabras",
+    "Prohibido rellenar huecos con suposiciones no marcadas",
+    "Si las pruebas no bastan para decidir, decirlo claramente en vez de forzar una conclusión"
+  ],
+  "formato_salida": {
+    "titular": "Una frase con la conclusión principal",
+    "decision": "SEGUIR, AJUSTAR o PARAR, con dos líneas de justificación",
+    "pruebas_a_favor": "Tres pruebas con su nivel de solidez (alta, media, baja)",
+    "pruebas_en_contra": "Tres riesgos o evidencias contrarias con su nivel de solidez",
+    "supuestos_criticos": "Los dos supuestos que, si fallan, tiran abajo la conclusión",
+    "que_falta_por_saber": "Tabla con: pregunta abierta, cómo resolverla, coste y días",
+    "plan_30_dias": "Cinco acciones concretas con fecha para la opción recomendada"
+  },
+  "criterios_calidad": [
+    "Se puede leer en tres minutos y tomar una decisión",
+    "Ninguna afirmación aparece sin etiqueta de hecho, opinión o supuesto",
+    "Las pruebas en contra están tratadas con el mismo rigor que las favorables"
+  ],
+  "tono": "Neutral y ejecutivo, sin adornos"
+}

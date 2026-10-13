@@ -1,0 +1,40 @@
+{
+  "tarea": "Planificar el calendario de emails de un trimestre, equilibrando contenido y venta, con fecha, tipo, asunto y objetivo",
+  "contexto": {
+    "lista": "[CUÁNTOS SUSCRIPTORES Y CÓMO LLEGARON]",
+    "productos": "[QUÉ VENDES Y A QUÉ PRECIO]",
+    "promociones_previstas": "[REBAJAS, LANZAMIENTOS O FECHAS ESPECIALES DEL TRIMESTRE]",
+    "trimestre": "[MESES QUE VAS A PLANIFICAR]",
+    "capacidad": "[CUÁNTOS EMAILS PUEDES ESCRIBIR AL MES]"
+  },
+  "mezcla": {
+    "contenido_util": "55% de los envíos",
+    "historia_o_caso": "20%",
+    "venta_directa": "20%",
+    "servicio_o_aviso": "5%",
+    "regla_de_saturacion": "Nunca dos emails de venta seguidos y máximo dos envíos por semana"
+  },
+  "pasos": [
+    "1. Coloca primero las promociones con fecha fija y sus recordatorios",
+    "2. Rellena el resto respetando la mezcla y la capacidad declarada",
+    "3. Escribe para cada envío un asunto de menos de 50 caracteres y una alternativa para probar",
+    "4. Define en una línea el objetivo de cada email y su única llamada a la acción",
+    "5. Marca los envíos que se pueden reutilizar de contenido ya publicado",
+    "6. Señala los momentos de limpieza de lista y de reactivación de inactivos"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown ordenada por fecha",
+    "columnas": ["Fecha", "Tipo", "Asunto A", "Asunto B", "Objetivo", "Llamada a la acción", "Reutiliza contenido"],
+    "anexo": "Resumen de cuántos envíos hay de cada tipo y aviso si se rompe alguna regla"
+  },
+  "restricciones": [
+    "Cumple las normas de consentimiento: solo a quien se apuntó, con baja visible en todos los envíos",
+    "Nada de asuntos engañosos ni falsos 're:' o 'fwd:'",
+    "Español de España, tuteando"
+  ],
+  "criterios_calidad": [
+    "La mezcla declarada se cumple dentro del trimestre",
+    "Ningún email tiene dos llamadas a la acción distintas",
+    "Los asuntos dicen de qué va el email sin engañar"
+  ]
+}

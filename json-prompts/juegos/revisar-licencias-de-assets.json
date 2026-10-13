@@ -1,0 +1,39 @@
+{
+  "tarea": "Auditar la procedencia y las licencias de todos los materiales usados en un proyecto 3D o de juego antes de publicarlo",
+  "contexto": {
+    "proyecto": "[NOMBRE Y QUE ES]",
+    "uso_previsto": "[GRATIS / DE PAGO / ENCARGO DE CLIENTE / ANUNCIO / CONTENIDO PARA REDES]",
+    "donde_se_publica": "[TIENDA, PLATAFORMA O CANAL]",
+    "pais": "Espana"
+  },
+  "entradas": {
+    "inventario": "[LISTA DE CADA MODELO, TEXTURA, SONIDO, MUSICA, FUENTE, PLUGIN Y DE DONDE SALIO]",
+    "licencias_guardadas": "[TEXTO O ENLACE DE LA LICENCIA DE CADA UNO SI LO TIENES]",
+    "generado_con_ia": "[QUE PIEZAS SE HICIERON CON IA Y CON QUE HERRAMIENTA]",
+    "marcas_visibles": "[LOGOS, COCHES REALES, EDIFICIOS RECONOCIBLES, PERSONAJES CONOCIDOS]"
+  },
+  "pasos": [
+    "1. Clasifica cada elemento en VERDE se puede usar, AMBAR falta comprobar algo, ROJO hay que sustituir",
+    "2. Para cada elemento identifica cuatro cosas: uso comercial permitido, obligacion de citar al autor, si se puede redistribuir dentro del producto y si se puede modificar",
+    "3. Senala el caso tipico de licencia gratuita solo para uso personal usada en un trabajo cobrado",
+    "4. Revisa aparte marcas, edificios y personajes reconocibles y di el riesgo en lenguaje claro",
+    "5. Revisa la musica y los efectos de sonido, que es donde saltan mas reclamaciones en video",
+    "6. Para lo generado con IA, apunta que herramienta y que condiciones tenia cuando se genero",
+    "7. Escribe el texto de creditos y atribuciones con el formato que pide cada licencia",
+    "8. Da un plan de sustitucion para los ROJO con alternativas del mismo tipo"
+  ],
+  "restricciones": [
+    "Esto es una revision practica, no asesoramiento juridico; dilo al final en una linea",
+    "Si no hay licencia guardada, el elemento no es VERDE aunque parezca gratis",
+    "No supongas condiciones de una web sin que aparezcan en las entradas"
+  ],
+  "formato_salida": {
+    "tabla": ["Elemento", "Origen", "Uso comercial", "Atribucion", "Redistribucion", "Modificacion", "Semaforo", "Accion"],
+    "extras": ["Texto de creditos listo para pegar", "Plan de sustitucion de los ROJO", "Carpeta de pruebas que deberias guardar"]
+  },
+  "criterios_calidad": [
+    "Ningun elemento sale sin semaforo",
+    "Cada AMBAR dice exactamente que hay que buscar o preguntar para cerrarlo",
+    "El texto de creditos incluye a todos los que exigen atribucion y a nadie mas"
+  ]
+}

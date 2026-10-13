@@ -1,0 +1,54 @@
+{
+  "tarea": "Calcular qué porcentaje de cada cobro debo apartar para impuestos y diseñar la rutina para hacerlo sin pensar",
+  "contexto": {
+    "pais": "España",
+    "situacion": "[AUTÓNOMO EN ESTIMACIÓN DIRECTA / SOCIEDAD]",
+    "antiguedad": "[MESES O AÑOS DE ALTA]",
+    "aviso": "Orientación práctica, no asesoramiento fiscal; las cifras finales las confirma un gestor"
+  },
+  "entradas": {
+    "facturacion_media_mensual": "[IMPORTE SIN IVA]",
+    "tipo_de_clientes": "[EMPRESAS ESPAÑOLAS / PARTICULARES / CLIENTES EXTRANJEROS: REPARTO APROXIMADO EN %]",
+    "iva_que_repercuto": "[21% / 10% / 4% / EXENTO / NO LO SÉ]",
+    "retencion_en_factura": "[15% / 7% / NINGUNA / NO LO SÉ]",
+    "gastos_con_iva_deducible": "[IMPORTE MEDIO MENSUAL DE COMPRAS Y GASTOS CON FACTURA]",
+    "pago_fraccionado": "[PRESENTO MODELO 130 SÍ/NO/NO LO SÉ]",
+    "donde_cobro": "[TRANSFERENCIA / STRIPE / BIZUM / EFECTIVO / TPV]"
+  },
+  "procedimiento": [
+    "1. Separa el cobro en tres partes: base imponible, IVA repercutido y retención practicada",
+    "2. El IVA repercutido no es ingreso: apártalo entero y réstale el IVA soportado medio de los gastos para estimar lo que acabará yendo a Hacienda",
+    "3. Estima el IRPF a cuenta: si el cliente ya retiene, el porcentaje a apartar baja; si son particulares, sube",
+    "4. Calcula un único porcentaje de apartado sobre el dinero que entra en la cuenta, redondeado hacia arriba al 5% más cercano",
+    "5. Comprueba el porcentaje contra un trimestre real pasado: si sobra dinero al pagar, baja 5 puntos; si falta, sube 5",
+    "6. Define la rutina: cuenta o hucha separada, momento del apartado y quién lo hace",
+    "7. Escribe el calendario de los cuatro trimestres con fechas límite y con la fecha de aviso siete días antes",
+    "8. Añade el caso de los clientes extranjeros y de las facturas sin IVA si aparecen en las entradas"
+  ],
+  "restricciones": [
+    "No des porcentajes como si fueran una liquidación exacta: son una reserva de seguridad",
+    "No recomiendes trucos ni gastos dudosos para deducir",
+    "Si el usuario no sabe su tipo de IVA o retención, usa el escenario más conservador y dilo",
+    "Cierra siempre recordando que un gestor confirma la cifra final"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Gastarse el IVA cobrado creyendo que es facturación propia",
+    "Apartar sobre la base y olvidar que en la cuenta entra el importe con IVA",
+    "Olvidar que en el primer año el 130 puede no aplicarse igual",
+    "Dejar el apartado para fin de mes en vez de hacerlo en cada cobro"
+  ],
+  "formato_salida": {
+    "1_porcentaje": "Una frase: de cada 100 euros que entren aparta X euros",
+    "2_desglose": "Tabla con IVA estimado, IRPF estimado y colchón, en euros por mes",
+    "3_rutina": "Pasos numerados de la operativa, incluido dónde guardar el dinero",
+    "4_calendario": "Tabla de los cuatro trimestres con fechas de presentación y de aviso previo",
+    "5_prueba": "Cómo comprobar en el siguiente trimestre si el porcentaje está bien calibrado",
+    "estilo": "Español llano, tuteando, frases cortas"
+  },
+  "criterios_calidad": [
+    "El porcentaje se aplica sobre el dinero que realmente entra en la cuenta, no sobre la base",
+    "El calendario tiene fechas concretas del año en curso",
+    "Queda claro qué parte del saldo del banco no es del negocio",
+    "Se puede ejecutar sin ninguna herramienta de pago"
+  ]
+}

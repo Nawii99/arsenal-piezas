@@ -1,0 +1,49 @@
+{
+  "tarea": "Clasificar las reseñas negativas de una app y redactar respuestas públicas por motivo, más la lista de arreglos que salen de ellas",
+  "contexto": {
+    "app": "[NOMBRE]",
+    "tienda": "[APP STORE / GOOGLE PLAY]",
+    "resenas": "[PEGA AQUÍ LAS RESEÑAS TAL CUAL, CON ESTRELLAS Y FECHA]",
+    "version_actual": "[NÚMERO DE VERSIÓN Y QUÉ SE ARREGLÓ EN ELLA]",
+    "canal_de_soporte": "[CORREO O FORMULARIO AL QUE DERIVAR]",
+    "tono": "[CERCANO Y DIRECTO / FORMAL]"
+  },
+  "clasificacion": [
+    "Fallo técnico reproducible",
+    "Función que falta o que se esperaba",
+    "Precio, suscripción o cobro no entendido",
+    "Confusión de uso, la función existe pero no la encuentra",
+    "Queja fuera de la app: envío, tienda, servicio",
+    "Reseña abusiva o falsa"
+  ],
+  "metodo": [
+    "1. Etiquetar cada reseña con un motivo y con el dato clave: modelo de móvil, versión, país si aparece",
+    "2. Contar cuántas hay de cada motivo y ordenar por volumen, no por lo mucho que escuece",
+    "3. Escribir una respuesta por reseña siguiendo el esquema: reconocer, dar el dato concreto, decir qué pasa ahora, dar salida",
+    "4. En los fallos, pedir solo dos datos: modelo y versión, y llevar la conversación al canal de soporte",
+    "5. En Google Play, avisar por respuesta cuando el fallo ya esté corregido en una versión publicada",
+    "6. Marcar para retirada solo las que incumplen las normas de la tienda, no las que molestan",
+    "7. Volcar los motivos en una lista priorizada de arreglos con esfuerzo estimado"
+  ],
+  "errores_a_evitar": [
+    "Copiar y pegar la misma respuesta en todas",
+    "Discutir, justificar o culpar al usuario o a su móvil",
+    "Pedir por respuesta pública que cambie la nota",
+    "Prometer fechas de arreglo que no vas a cumplir",
+    "Incluir datos personales del usuario en una respuesta pública"
+  ],
+  "formato_salida": {
+    "tabla_resenas": "Una fila por reseña con: fecha, estrellas, motivo, gravedad, respuesta propuesta",
+    "respuestas": "Texto exacto listo para pegar, máximo 350 caracteres cada una",
+    "plantillas": "Una plantilla por motivo con los huecos marcados para reutilizar",
+    "lista_de_arreglos": "Problemas ordenados por número de reseñas afectadas, con el arreglo propuesto",
+    "mensaje_de_seguimiento": "Texto para volver a escribir cuando el fallo esté corregido",
+    "rutina": "Cada cuánto revisar y cuánto tiempo dedicarle"
+  },
+  "criterios_calidad": [
+    "Cada respuesta menciona algo concreto de esa reseña, no una fórmula",
+    "Ninguna respuesta discute ni pide cambiar la nota",
+    "Todas las de fallo técnico terminan con una vía de contacto clara",
+    "La lista de arreglos está ordenada por impacto real, no por opinión"
+  ]
+}

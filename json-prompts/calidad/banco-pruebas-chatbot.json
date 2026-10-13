@@ -1,0 +1,43 @@
+{
+  "tarea": "Construir un banco de 25 pruebas para mi asistente de IA y ejecutarlo entero cada vez que cambio sus instrucciones, para detectar qué respuestas se han roto antes de que lo note un cliente",
+  "contexto": {
+    "que_hace_el_asistente": "[QUÉ HACE: RESUELVE DUDAS / PIDE CITA / RECOMIENDA PRODUCTO / FILTRA PRESUPUESTOS]",
+    "canal": "[WHATSAPP / CHAT DE LA WEB / INSTAGRAM / TELÉFONO]",
+    "instrucciones_actuales": "[PEGA AQUÍ EL PROMPT O INSTRUCCIONES QUE TIENE HOY EL ASISTENTE]",
+    "cambio_que_acabo_de_hacer": "[QUÉ HE TOCADO ESTA VEZ: NUEVO PRECIO, TONO, NUEVA NORMA...]"
+  },
+  "entradas": {
+    "datos_reales_del_negocio": "[HORARIOS, PRECIOS, ZONAS DE SERVICIO, PLAZOS, POLÍTICA DE DEVOLUCIONES]",
+    "cosas_que_nunca_debe_decir": "[DESCUENTOS NO AUTORIZADOS, CONSEJO MÉDICO O LEGAL, DATOS DE OTROS CLIENTES, PLAZOS QUE NO PUEDO CUMPLIR]",
+    "conversaciones_reales": "[PEGA 5 CONVERSACIONES REALES DE CLIENTES SI LAS TIENES; SI NO, ESCRIBE «NO TENGO»]"
+  },
+  "pasos": [
+    "1. Reparte los 25 casos así: 8 preguntas frecuentes normales, 5 con el cliente dando datos incompletos, 4 con prisa o enfado, 3 con faltas de ortografía o audio mal transcrito, 3 fuera de tema, 2 que el asistente NO debe responder nunca.",
+    "2. Para cada caso escribe el mensaje exacto del cliente, no un resumen: tiene que poder copiarse y pegarse tal cual en el chat.",
+    "3. Define la respuesta esperada como una lista de comprobaciones, no como un texto literal: qué dato debe aparecer, qué debe preguntar, qué no debe prometer y en qué idioma responde.",
+    "4. Marca cada caso como CRÍTICO (si falla, no publico) o MENOR (anoto y sigo).",
+    "5. Ejecuta los 25 en el canal real, no en el editor del prompt: el canal recorta, pierde emojis y parte mensajes largos.",
+    "6. Anota el resultado de cada caso: PASA, PASA CON PEGAS o FALLA, con la respuesta literal recibida.",
+    "7. Antes de tocar nada, agrupa los fallos por causa probable: falta el dato, la instrucción es ambigua, o el modelo se inventa cosas.",
+    "8. Arregla una sola causa, vuelve a pasar el banco entero y compara con la ejecución anterior."
+  ],
+  "errores_tipicos": [
+    "Probar solo preguntas fáciles y bien escritas: los clientes escriben mal, en mayúsculas y a trozos.",
+    "Cambiar cinco cosas del prompt a la vez y no saber cuál arregló o rompió qué.",
+    "Dar por bueno un caso porque «suena bien» sin comprobar si el dato es cierto.",
+    "No repetir los casos que ya pasaban: lo que se rompe suele ser lo que ya funcionaba.",
+    "Guardar las pruebas en la cabeza en vez de en una tabla que se pueda repasar dentro de tres meses."
+  ],
+  "formato_salida": {
+    "tabla_de_casos": "Una fila por caso con: número, categoría, mensaje del cliente, comprobaciones esperadas, crítico o menor",
+    "hoja_de_ejecucion": "Misma tabla con columnas añadidas: respuesta recibida, resultado, causa probable",
+    "resumen": "Cuántos pasan, cuántos fallan, qué críticos están rotos y si publico o no",
+    "siguiente_accion": "Un solo cambio propuesto en las instrucciones, escrito tal cual para pegarlo"
+  },
+  "criterios_calidad": [
+    "Los 25 mensajes son copiables y pegables, sin corchetes sin rellenar.",
+    "Ningún caso se valida por parecido de estilo: siempre por un dato o comportamiento comprobable.",
+    "Los 2 casos prohibidos tienen definido qué debe hacer el asistente en su lugar (derivar a persona, pedir datos, decir que no lo sabe).",
+    "El resumen deja claro, en una frase, si se publica el cambio o no."
+  ]
+}

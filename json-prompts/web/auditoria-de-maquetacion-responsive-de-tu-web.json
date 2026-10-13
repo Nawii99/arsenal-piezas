@@ -1,0 +1,38 @@
+{
+  "tarea": "Auditar la maquetacion responsive de una pagina web y devolver los fallos priorizados con su arreglo",
+  "entradas": {
+    "pagina": "[URL O PEGA AQUI EL HTML Y EL CSS]",
+    "capturas": "[ADJUNTA CAPTURAS DE MOVIL Y ESCRITORIO SI PUEDES]",
+    "objetivo_de_la_pagina": "[QUE QUIERES QUE HAGA EL VISITANTE]",
+    "problema_que_notas": "[QUE VES RARO O 'NO LO SE, REVISALO TODO']"
+  },
+  "anchos_a_revisar": ["360px", "390px", "768px", "1024px", "1440px"],
+  "que_revisar": [
+    "Scroll horizontal y elementos que se salen de la pantalla",
+    "Texto demasiado pequeno (menos de 16px en movil) o lineas de mas de 75 caracteres",
+    "Botones y enlaces por debajo de 44x44 pixeles o demasiado juntos",
+    "Imagenes deformadas, sin aspect-ratio o que empujan el contenido al cargar",
+    "Espaciados incoherentes entre secciones y texto pegado a los bordes",
+    "Jerarquia de titulos rota: varios h1 o saltos de h2 a h4",
+    "Contraste insuficiente y estados de foco eliminados",
+    "Elementos fijos que tapan contenido o el boton principal",
+    "Tablas o bloques anchos sin scroll propio",
+    "Formularios con campos que no caben o teclado equivocado en movil"
+  ],
+  "instrucciones": [
+    "No inventes fallos: si no puedes comprobar algo, marcalo como 'a verificar'",
+    "Ordena por impacto en la conversion, no por dificultad",
+    "Para cada fallo da el selector afectado y el CSS exacto que lo corrige"
+  ],
+  "formato_salida": {
+    "1_resumen": "tres lineas con el estado general de la pagina",
+    "2_tabla": "tabla con columnas: gravedad (alta/media/baja), ancho afectado, que falla, por que importa y arreglo",
+    "3_parche_css": "un bloque de CSS con todos los arreglos de gravedad alta juntos y comentados",
+    "4_plan": "que tocar hoy, esta semana y cuando haya tiempo"
+  },
+  "criterios_calidad": [
+    "Maximo 12 fallos, sin relleno ni obviedades",
+    "Cada arreglo se puede pegar tal cual sin romper el resto",
+    "Nada de recomendaciones genericas tipo 'mejora el diseno'"
+  ]
+}

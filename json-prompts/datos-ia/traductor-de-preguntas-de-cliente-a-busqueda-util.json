@@ -1,0 +1,38 @@
+{
+  "tarea": "Reescribir preguntas reales de clientes en varias consultas de búsqueda que sí encuentren la respuesta en la base de conocimiento del agente, y construir el diccionario de sinónimos del sector",
+  "contexto": {
+    "sector": "[TU SECTOR]",
+    "vocabulario_interno": "[CÓMO LLAMÁIS VOSOTROS A LAS COSAS]",
+    "vocabulario_cliente": "[CÓMO LO LLAMAN ELLOS]"
+  },
+  "entradas": {
+    "preguntas": "[PEGA PREGUNTAS REALES, CON SUS FALTAS Y SUS ABREVIATURAS]",
+    "temas_de_la_base": "[LISTA DE TEMAS QUE CUBREN TUS DOCUMENTOS]"
+  },
+  "procedimiento": [
+    "Para cada pregunta, di primero qué quiere saber el cliente en realidad, en una frase.",
+    "Genera tres reescrituras: una literal corregida, una con el vocabulario interno del sector y una más amplia por si la respuesta está en un tema vecino.",
+    "Señala el dato que falta cuando la pregunta es ambigua y escribe la repregunta exacta al cliente.",
+    "Indica en qué tema de la base debería buscarse cada reescritura.",
+    "Con todas las preguntas, construye un diccionario de equivalencias palabra de cliente a palabra interna."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Reescribir añadiendo suposiciones que el cliente no ha dicho",
+    "Convertir una pregunta concreta en una genérica",
+    "Ignorar los errores de escritura en vez de contemplarlos como variantes"
+  ],
+  "formato_salida": {
+    "1_tabla": ["Pregunta original", "Qué quiere saber", "Reescritura literal", "Reescritura con jerga interna", "Reescritura amplia", "Tema donde buscar", "Repregunta si hace falta"],
+    "2_diccionario": "tabla de dos columnas: dice el cliente / decimos nosotros",
+    "3_uso": "cómo pegar el diccionario en las instrucciones del agente, en 5 líneas"
+  },
+  "restricciones": [
+    "No inventes términos del sector que no aparezcan en el vocabulario aportado",
+    "Máximo una repregunta por pregunta original"
+  ],
+  "criterios_calidad": [
+    "Las reescrituras conservan la intención original",
+    "El diccionario cubre las palabras que de verdad aparecen en las preguntas",
+    "Las repreguntas son cortas y se pueden contestar en una línea"
+  ]
+}

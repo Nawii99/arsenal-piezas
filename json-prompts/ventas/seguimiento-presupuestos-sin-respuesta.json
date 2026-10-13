@@ -1,0 +1,53 @@
+{
+  "tarea": "Redactar una secuencia de seguimiento de un presupuesto sin respuesta y decidir en qué mensaje se cierra el caso",
+  "contexto": {
+    "quien_escribe": "[TU NOMBRE], de [TU NEGOCIO], que vende [QUÉ VENDES]",
+    "a_quien": "[NOMBRE DEL CONTACTO], de [EMPRESA O PARTICULAR]",
+    "canal": "[EMAIL / WHATSAPP / LLAMADA]",
+    "idioma": "español de España, [TUTEO O USTED], frases cortas, cero jerga comercial"
+  },
+  "entradas": {
+    "presupuesto": "[IMPORTE Y QUÉ INCLUYE, EN UNA FRASE]",
+    "fecha_de_envio": "[FECHA]",
+    "ultimo_mensaje_del_cliente": "[COPIA LITERAL DE LO ÚLTIMO QUE DIJO]",
+    "motivo_de_espera_declarado": "[LO CONSULTO / ESTAMOS LIADOS / NO DIJO NADA]",
+    "quien_decide": "[MI CONTACTO / OTRA PERSONA / NO LO SÉ]",
+    "fecha_limite_real": "[HUECO EN AGENDA HASTA X / PRECIO VÁLIDO HASTA X / NO HAY]",
+    "seguimientos_ya_hechos": "[CUÁNTOS Y CUÁNDO]"
+  },
+  "pasos": [
+    "1. Clasifica el silencio: sin presupuesto, sin prioridad, sin poder de decisión o sin interés. Elige una sola hipótesis y dila en una línea antes de escribir",
+    "2. Escribe el mensaje 1 (día 3): recuerda el problema del cliente con sus palabras, no el precio, y pide una respuesta de una palabra",
+    "3. Escribe el mensaje 2 (día 7): aporta algo nuevo y útil sin pedir nada a cambio, por ejemplo un dato, un plazo o una forma de empezar más pequeña",
+    "4. Escribe el mensaje 3 (día 14): pon sobre la mesa la limitación real de [FECHA_LIMITE_REAL] sin inventarla, y ofrece dos opciones concretas de arranque",
+    "5. Escribe el mensaje 4 (día 21) de cierre educado: dices que lo archivas, dejas la puerta abierta y pides una frase de motivo",
+    "6. Para cada mensaje escribe el asunto (si es email) y la longitud objetivo en palabras",
+    "7. Añade la respuesta preparada para las tres reacciones más probables: es caro, ahora no, ya lo hemos dado a otro"
+  ],
+  "restricciones": [
+    "Ningún mensaje pasa de 90 palabras",
+    "Prohibido escribir solo para preguntar si lo recibiste o si has podido mirarlo",
+    "Prohibido bajar el precio antes del mensaje 4, y si se toca precio se cambia el alcance, no el número a secas",
+    "Prohibido inventar urgencias, descuentos o clientes esperando",
+    "Una sola pregunta por mensaje"
+  ],
+  "errores_tipicos": [
+    "Insistir cada dos días y quemar el contacto",
+    "Escribir párrafos justificando el precio en vez de recordar el problema",
+    "Seguir a la persona equivocada porque nunca preguntaste quién firma",
+    "Rendirse en el segundo mensaje, que es justo donde suele llegar la respuesta"
+  ],
+  "formato_salida": {
+    "bloque_1": "Hipótesis del silencio en una línea",
+    "bloque_2": "Tabla en texto con columnas: dia, canal, asunto, objetivo del mensaje",
+    "bloque_3": "Los 4 mensajes completos, listos para copiar y pegar",
+    "bloque_4": "Respuestas preparadas a las 3 reacciones probables",
+    "bloque_5": "Regla de cierre: qué señal concreta significa archivar el caso"
+  },
+  "criterios_calidad": [
+    "Cada mensaje se entiende leyéndolo suelto, sin releer el anterior",
+    "Ningún mensaje suena a plantilla: los cuatro citan algo concreto del cliente",
+    "La fecha límite que aparece es real y verificable por ti",
+    "Tras leer la secuencia sabes exactamente qué día dejas de escribir"
+  ]
+}

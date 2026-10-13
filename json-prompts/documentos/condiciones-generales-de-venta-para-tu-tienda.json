@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar las condiciones generales de contratación de una tienda online española, listas para publicar",
+  "datos_vendedor": {
+    "denominacion": "[NOMBRE FISCAL COMPLETO]",
+    "nif": "[NIF O CIF]",
+    "domicilio": "[DIRECCIÓN COMPLETA]",
+    "email": "[EMAIL DE ATENCIÓN AL CLIENTE]",
+    "telefono": "[TELÉFONO O ESCRIBE NO DISPONIBLE]",
+    "web": "[URL DE TU TIENDA]"
+  },
+  "operativa": {
+    "productos": "[QUÉ VENDES Y SI HAY PRODUCTOS PERSONALIZADOS O DIGITALES]",
+    "precios": "[PRECIOS CON IVA INCLUIDO SÍ/NO Y TIPO DE IVA]",
+    "envio": "[ZONAS, COSTES Y PLAZOS DE ENTREGA]",
+    "pagos": "[TARJETA, PAYPAL, BIZUM, TRANSFERENCIA, CONTRARREEMBOLSO]",
+    "devoluciones": "[QUIÉN PAGA EL PORTE DE DEVOLUCIÓN Y EN CUÁNTOS DÍAS DEVUELVES EL DINERO]"
+  },
+  "clausulas_obligatorias": [
+    "Identificación del vendedor y objeto de las condiciones",
+    "Proceso de compra paso a paso y momento en que se perfecciona el contrato",
+    "Precios, impuestos, gastos de envío y errores tipográficos de precio",
+    "Formas de pago y facturación",
+    "Plazos de entrega, incidencias de transporte y entregas fallidas",
+    "Derecho de desistimiento de 14 días naturales, con enlace al formulario y excepciones legales",
+    "Garantía legal de conformidad de 3 años y procedimiento de reclamación",
+    "Atención al cliente, hoja de reclamaciones y plataforma europea de resolución de litigios",
+    "Protección de datos con remisión a la política de privacidad",
+    "Ley aplicable, fuero del domicilio del consumidor y modificación de las condiciones"
+  ],
+  "restricciones": [
+    "Nada de cláusulas que limiten derechos del consumidor: serían nulas",
+    "Nada de plazos de devolución inferiores a 14 días naturales",
+    "Frases cortas, tuteando al cliente y sin latinajos",
+    "Si un dato no se ha aportado, déjalo como [PENDIENTE] y no lo inventes"
+  ],
+  "formato_salida": {
+    "tipo": "documento en markdown con numeración 1, 1.1, 1.2",
+    "extra": ["Fecha de última actualización", "Checklist final de datos pendientes de completar"]
+  },
+  "criterios_calidad": ["Cada cláusula refleja tu operativa real, no un modelo genérico", "Un cliente entiende en 2 minutos plazos, costes y cómo devolver"],
+  "aviso": "Borrador orientativo; conviene una revisión por abogado antes de publicarlo."
+}

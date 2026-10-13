@@ -1,0 +1,26 @@
+{
+  "tarea": "Comparar pasarelas de pago para una tienda online pequeña sin cuota mensual y devolver una tabla de decisión, sin inventar comisiones.",
+  "contexto": {
+    "pais_venta": "[PAÍS O PAÍSES DONDE SE VENDE]",
+    "volumen_mensual_ventas": "[NÚMERO APROXIMADO DE VENTAS AL MES]",
+    "tipo_de_negocio": "[AUTÓNOMO / SOCIEDAD]",
+    "moneda_principal": "[EUR / OTRA]"
+  },
+  "pasarelas_a_comparar": ["Stripe", "PayPal", "Redsys"],
+  "criterios": [
+    {"nombre": "rapidez_de_alta", "pregunta": "¿Cuánto se tarda en tener la cuenta lista para cobrar?"},
+    {"nombre": "requisitos", "pregunta": "¿Qué papeles o contratos pide (CIF, contrato con banco, verificación de identidad)?"},
+    {"nombre": "cuando_llega_el_dinero", "pregunta": "¿Cuántos días tarda el dinero en llegar a la cuenta bancaria real?"},
+    {"nombre": "donde_consultar_comision", "pregunta": "Enlace o indicación de dónde comprobar la comisión actual, sin inventar la cifra"}
+  ],
+  "reglas": [
+    "No inventar porcentajes de comisión: si no se conocen, escribir 'consultar en la web oficial'.",
+    "No recomendar ninguna pasarela sin conocer el volumen de ventas y el país.",
+    "Avisar siempre de que el dinero no llega de forma instantánea a la cuenta bancaria."
+  ],
+  "formato_salida": {
+    "tipo": "tabla",
+    "columnas": ["pasarela", "rapidez_de_alta", "requisitos", "cuando_llega_el_dinero", "donde_consultar_comision"],
+    "cierre": "Una recomendación final en una frase, condicionada al contexto dado."
+  }
+}

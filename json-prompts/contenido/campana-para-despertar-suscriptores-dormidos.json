@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar una campaña de reactivación de 3 correos para suscriptores que llevan meses sin abrir, y definir la limpieza posterior de la lista",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "definicion_de_inactivo": "[SIN ABRIR NI CLICAR EN LOS ÚLTIMOS X MESES]",
+    "numero_de_inactivos": "[CUÁNTOS SON Y QUÉ % DE LA LISTA]",
+    "que_les_prometiste": "[LO QUE DECÍA EL FORMULARIO CUANDO SE APUNTARON]",
+    "que_ha_cambiado": "[NOVEDADES REALES DESDE ENTONCES: PRODUCTOS, PRECIOS, FORMATO]",
+    "herramienta": "[MAILCHIMP, BREVO, MAILERLITE, ACTIVECAMPAIGN, KLAVIYO U OTRA]"
+  },
+  "secuencia": [
+    "Correo 1: '¿Sigues ahí?' honesto, recuerda cómo llegó a la lista, resume en 3 puntos lo que recibirá y ofrece un enlace de un clic para seguir",
+    "Correo 2 a los 4 días: entrega tu mejor contenido de los últimos meses en formato lista con 3 enlaces, sin pedir nada más que un clic",
+    "Correo 3 a los 8 días: despedida cordial, avisa de que le darás de baja tú mismo y deja un único botón para quedarse"
+  ],
+  "para_cada_correo": [
+    "Asunto y preheader",
+    "Cuerpo de 100 a 200 palabras",
+    "Botón principal con texto exacto y qué etiqueta debe aplicar el clic",
+    "Condición de salida de la secuencia"
+  ],
+  "plan_de_limpieza": [
+    "Qué hacer con quien abre pero no clica y con quien no hace nada",
+    "Cuándo borrar o pasar a una lista aparte, y por qué conviene aunque duela",
+    "Cómo dejar registrado el consentimiento de los que se quedan"
+  ],
+  "restricciones": [
+    "Tono honesto, sin drama ni chantaje emocional",
+    "Nada de descuentos agresivos como única razón para quedarse",
+    "Respeta el RGPD: baja en un clic y sin justificar"
+  ],
+  "formato_salida": "Los 3 correos completos, después un plan de limpieza en pasos numerados con los días exactos y las etiquetas o segmentos a crear en la herramienta indicada",
+  "criterios_calidad": [
+    "El lector entiende por qué recibe este correo",
+    "Las instrucciones de la herramienta son concretas, no genéricas",
+    "Se avisa de los riesgos de borrar contactos antes de hacerlo"
+  ]
+}

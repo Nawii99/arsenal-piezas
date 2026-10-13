@@ -1,0 +1,33 @@
+{
+  "tarea": "Auditar la secuencia de un temario existente y detectar saltos de dificultad, dependencias rotas y contenido sobrante",
+  "entradas": {
+    "temario_actual": "[PEGA AQUÍ TU TEMARIO COMPLETO, MÓDULO A MÓDULO]",
+    "nivel_alumno": "[NIVEL DE PARTIDA REAL DE TUS ALUMNOS]",
+    "punto_de_abandono": "[DÓNDE SUELEN ABANDONAR O ATASCARSE, SI LO SABES]",
+    "tiempo_semanal_del_alumno": "[HORAS QUE PUEDE DEDICAR A LA SEMANA]"
+  },
+  "analisis_a_realizar": [
+    "Mapa de prerrequisitos: para cada lección, qué debe dominarse antes y si eso aparece antes en el temario",
+    "Dependencias rotas: lecciones que usan conceptos aún no explicados",
+    "Saltos de dificultad: dos lecciones consecutivas con distancia excesiva de exigencia",
+    "Mesetas: tramos largos sin que el alumno produzca nada",
+    "Contenido huérfano: lecciones que no alimentan ningún resultado final",
+    "Carga por semana: si el temario cabe en el tiempo real del alumno"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Semáforo por módulo (verde, ámbar, rojo) con una frase de motivo",
+    "2_problemas": "Tabla: Problema | Dónde ocurre | Consecuencia para el alumno | Gravedad 1-5",
+    "3_temario_reordenado": "Propuesta nueva de orden, marcando MOVIDO, NUEVO, FUSIONADO o FUERA en cada línea",
+    "4_puentes": "Micro-lecciones puente que hay que añadir, con título y 3 puntos de contenido",
+    "5_plan": "Los 3 cambios que más reducen abandono, ordenados por esfuerzo de implementación"
+  },
+  "restricciones": [
+    "No propongas alargar el curso más de un 15 por ciento",
+    "Cada cambio debe justificarse con el efecto concreto en el alumno",
+    "Si algo está bien, dilo y no lo toques"
+  ],
+  "criterios_calidad": [
+    "Ninguna lección del temario final usa algo no explicado antes",
+    "El diagnóstico señala problemas concretos, no genéricos"
+  ]
+}

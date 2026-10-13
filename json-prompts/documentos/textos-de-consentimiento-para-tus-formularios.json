@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar los textos de consentimiento, casillas e información básica en capas para los formularios de un negocio español",
+  "contexto": {
+    "responsable": "[NOMBRE O RAZÓN SOCIAL]",
+    "url_privacidad": "[ENLACE A TU POLÍTICA DE PRIVACIDAD]",
+    "email_derechos": "[EMAIL]",
+    "formularios": "[EJ: CONTACTO, PRESUPUESTO, NEWSLETTER, DESCARGA DE GUÍA, RESERVA DE CITA]",
+    "usos_posteriores": "[EJ: RESPONDER, ENVIAR OFERTAS, LLAMAR POR TELÉFONO, WHATSAPP]",
+    "herramienta_email": "[EJ: MAILCHIMP, BREVO, ACTIVECAMPAIGN]"
+  },
+  "instrucciones": [
+    "Para cada formulario propón: campos mínimos necesarios, texto de información básica en capas y las casillas exactas",
+    "Separa siempre el consentimiento por finalidad: una casilla para responder no sirve para enviar publicidad",
+    "Escribe las casillas en primera persona del usuario, cortas y comprensibles, con enlace a la política de privacidad",
+    "Aplica minimización: señala los campos que se piden por costumbre y no hacen falta",
+    "Redacta el flujo de doble opt-in: texto del email de confirmación, asunto, botón y mensaje de la página de gracias",
+    "Redacta el pie de los emails comerciales con identificación del remitente y baja en un clic",
+    "Indica qué prueba del consentimiento hay que guardar: fecha, hora, IP, texto mostrado y versión"
+  ],
+  "restricciones": [
+    "Prohibidas las casillas premarcadas y los consentimientos agrupados en una sola casilla",
+    "No condiciones el envío del formulario a aceptar publicidad, salvo que sea la contraprestación real y se diga",
+    "Máximo 2 líneas por casilla",
+    "Nada de textos legales interminables encima del botón"
+  ],
+  "formato_salida": {
+    "bloque_1": "ficha por formulario con campos, texto en capas y casillas",
+    "bloque_2": "secuencia de doble opt-in con los textos exactos",
+    "bloque_3": "pie legal para emails comerciales",
+    "bloque_4": "lista de datos a registrar como prueba del consentimiento"
+  },
+  "criterios_calidad": [
+    "Cada finalidad distinta tiene su propia casilla y ninguna viene marcada",
+    "Los textos caben en el formulario sin romper el diseño",
+    "Se puede demostrar quién consintió y cuándo",
+    "El usuario entiende qué recibirá antes de dejar su email"
+  ]
+}

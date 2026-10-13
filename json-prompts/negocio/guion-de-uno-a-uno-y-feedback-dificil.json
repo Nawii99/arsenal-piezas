@@ -1,0 +1,41 @@
+{
+  "tarea": "Preparar una reunión individual de seguimiento y feedback con una persona del equipo",
+  "contexto": {
+    "persona": "[NOMBRE]",
+    "puesto": "[PUESTO]",
+    "tiempo_en_la_empresa": "[MESES O AÑOS]",
+    "relacion_actual": "[BUENA / TENSA / DISTANTE]",
+    "duracion": "[MINUTOS]"
+  },
+  "entradas": {
+    "lo_que_va_bien": ["[HECHO CONCRETO 1]", "[HECHO CONCRETO 2]"],
+    "lo_que_hay_que_corregir": ["[HECHO CON FECHA Y EFECTO 1]", "[HECHO CON FECHA Y EFECTO 2]"],
+    "lo_que_ya_le_has_dicho_antes": "[SÍ, CUÁNDO / NUNCA]",
+    "objetivo_de_la_reunion": "[QUÉ QUIERES QUE CAMBIE Y PARA CUÁNDO]",
+    "gravedad": "[AVISO SUAVE / SERIO / ÚLTIMO AVISO]"
+  },
+  "metodo": "Hecho observable, efecto en el negocio o en el equipo, escucha, acuerdo con fecha",
+  "pasos": [
+    "Reformular cada crítica como conducta observable, quitando adjetivos sobre la persona",
+    "Preparar la frase de apertura y la primera pregunta abierta",
+    "Anticipar tres reacciones posibles (se justifica, se cierra, se derrumba) y qué responder en cada una",
+    "Cerrar con dos o tres acuerdos concretos, con responsable, fecha y forma de comprobarlos",
+    "Redactar el correo de resumen posterior de menos de 150 palabras"
+  ],
+  "restricciones": [
+    "Nada de juicios sobre el carácter, solo hechos y efectos",
+    "No comparar con otros compañeros por su nombre",
+    "No mezclar la conversación de sueldo con la de rendimiento en la misma reunión",
+    "Si el caso puede acabar en sanción o despido, recomendar consultar a un laboralista antes"
+  ],
+  "formato_salida": {
+    "guion": "Apertura, refuerzo de lo que va bien, tema a corregir, escucha, acuerdos y cierre, con lo que dices en cada parte",
+    "frases_listas": "Cinco frases textuales para los momentos incómodos",
+    "acuerdos": "Tabla con acuerdo, responsable, fecha y cómo se comprueba",
+    "email_resumen": "Correo posterior para dejar constancia"
+  },
+  "criterios_calidad": [
+    "Cada crítica va acompañada de un hecho con fecha",
+    "La persona sale sabiendo exactamente qué tiene que hacer distinto"
+  ]
+}

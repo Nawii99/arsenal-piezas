@@ -1,0 +1,36 @@
+{
+  "tarea": "Preparar una campaña para recuperar clientes que se fueron: a quién escribir primero, qué decirle a cada tipo y con qué oferta de vuelta",
+  "contexto": {
+    "mi_empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_vendo": "[SERVICIO O PRODUCTO]",
+    "periodo_de_bajas": "[DESDE CUÁNDO MIRAS LAS BAJAS]"
+  },
+  "entradas": {
+    "lista_de_bajas": "[CLIENTE, FECHA DE BAJA, MOTIVO, LO QUE FACTURABA, CÓMO ACABÓ LA RELACIÓN]",
+    "que_ha_cambiado": "[MEJORAS REALES DESDE ENTONCES: SERVICIO, PRECIOS, EQUIPO, PLAZOS]",
+    "oferta_de_vuelta": "[LO QUE PUEDES OFRECER: PRUEBA, PLAN MÁS PEQUEÑO, SIN PERMANENCIA, RECUPERAR CONDICIONES]"
+  },
+  "metodo": [
+    "1. Clasifica cada baja por motivo: precio, calidad, cambio de responsable, ya no lo necesitaba o se fue a la competencia",
+    "2. Descarta a quien no debo recuperar y di por qué",
+    "3. Puntúa a los demás por probabilidad de volver y por dinero que aportarían",
+    "4. Escribe un mensaje distinto por cada motivo, que reconozca lo que pasó sin excusas largas",
+    "5. Define el orden de envío y qué hacer con quien conteste y con quien no"
+  ],
+  "restricciones": [
+    "Un mensaje por motivo, no uno genérico para todos",
+    "Máximo 130 palabras por mensaje, sin nostalgia ni reproches",
+    "La oferta de vuelta nunca puede ser mejor que la de mis clientes actuales; si lo es, avísame",
+    "Si el motivo fue un fallo mío, se reconoce en una frase y se pasa a qué ha cambiado"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla de priorización más mensajes",
+    "columnas": ["Cliente", "Motivo de la baja", "Probabilidad de volver", "Facturación potencial", "Mensaje a usar", "Semana de envío"],
+    "extras": ["Un mensaje por cada motivo", "Respuesta preparada para 'ya trabajamos con otro'", "Lista de a quién no escribir"]
+  },
+  "criterios_calidad": [
+    "Ningún mensaje suena a plantilla de marketing masivo",
+    "Sé a quién escribo el lunes y a quién no escribo nunca"
+  ],
+  "tono": "Adulto, sin resentimiento y sin mendigar"
+}

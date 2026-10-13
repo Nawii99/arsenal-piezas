@@ -1,0 +1,35 @@
+{
+  "tarea": "Define los puntos donde mi flujo de agentes debe parar y pedir aprobacion a una persona, y como pide esa aprobacion",
+  "contexto": {
+    "que_hace_el_flujo": "[DESCRIPCION EN 3 LINEAS]",
+    "decisiones_que_toma": "[EJ: FIJAR PRECIO, ENVIAR EMAIL, EMITIR FACTURA, CONCEDER DESCUENTO]",
+    "limite_economico": "[EJ: HASTA 200 EUROS DECIDE SOLO]",
+    "quien_aprueba": "[PERSONA Y CANAL]",
+    "horario_de_respuesta": "[EJ: LUNES A VIERNES DE 9 A 18]"
+  },
+  "criterios_para_parar": [
+    "Impacto economico por encima del limite indicado",
+    "Contacto directo con un cliente por primera vez o tras una queja",
+    "Datos personales o documentos con validez legal",
+    "Baja confianza del agente o contradiccion entre agentes",
+    "Caso nuevo que no encaja en ningun supuesto previsto"
+  ],
+  "para_cada_parada_define": [
+    "En que paso exacto ocurre",
+    "Que se le ensena a la persona para decidir en menos de un minuto",
+    "Opciones cerradas: aprobar, cambiar esto, rechazar",
+    "Que pasa si nadie contesta dentro del horario",
+    "Como sigue el flujo despues de la respuesta"
+  ],
+  "formato_salida": {
+    "tabla_paradas": ["paso", "motivo", "quien aprueba", "plazo", "si no contesta"],
+    "plantillas_de_aviso": "3 mensajes cortos con el resumen del caso y los botones de decision",
+    "lo_que_no_para": "lista explicita de lo que el flujo hace solo sin preguntar",
+    "revision": "cada cuanto revisar estos limites y con que dato"
+  },
+  "criterios_calidad": [
+    "El aviso trae toda la informacion para decidir sin abrir nada mas",
+    "No hay tantas paradas que la automatizacion pierda sentido",
+    "Cada parada tiene un plan por si nadie responde"
+  ]
+}

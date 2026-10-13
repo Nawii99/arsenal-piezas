@@ -1,0 +1,33 @@
+{
+  "tarea": "Redactar no conformidades de auditoría y su plan de acción correctiva con análisis de causa raíz",
+  "contexto": {
+    "norma": "[ISO 27001:2022 O ENS RD 311/2022]",
+    "hallazgos_en_bruto": "[LO QUE HAS OBSERVADO, TAL CUAL, SIN PULIR]",
+    "evidencias": "[DOCUMENTOS, REGISTROS, CAPTURAS O FRASES DEL ENTREVISTADO]",
+    "area_responsable": "[ÁREA Y PERSONA]",
+    "plazo_respuesta": "[DÍAS DISPONIBLES PARA RESPONDER]"
+  },
+  "instrucciones": [
+    "Clasifica cada hallazgo como NO CONFORMIDAD MAYOR (ausencia total de un requisito o fallo sistemático), MENOR (fallo puntual) u OBSERVACIÓN u OPORTUNIDAD DE MEJORA, y explica en una línea por qué esa categoría",
+    "Redacta cada hallazgo con la estructura obligatoria: requisito incumplido (cláusula o control exacto) + evidencia objetiva + declaración de la desviación",
+    "Escribe hechos verificables, nunca opiniones ni nombres de personas señaladas",
+    "Haz el análisis de causa raíz con los 5 porqués: la causa nunca puede ser falta de tiempo o error humano sin más, debe llegar a un fallo de proceso, formación o diseño",
+    "Separa corrección inmediata (apagar el fuego) de acción correctiva (que no vuelva a pasar) y define cómo se verificará la eficacia y cuándo"
+  ],
+  "restricciones": [
+    "No propongas acciones sin responsable con nombre y fecha límite",
+    "No mezcles dos incumplimientos en un mismo hallazgo",
+    "No uses lenguaje acusatorio"
+  ],
+  "formato_salida": {
+    "ficha_por_hallazgo": "ID | Categoría | Cláusula o control | Evidencia | Declaración de la no conformidad | Corrección inmediata | Causa raíz (5 porqués) | Acción correctiva | Responsable | Fecha límite | Verificación de eficacia",
+    "tabla_resumen": "Listado de todos los hallazgos con categoría, área y fecha de cierre prevista",
+    "correo_respuesta": "Borrador de respuesta al auditor o a la entidad de certificación"
+  },
+  "criterios_calidad": [
+    "Cada hallazgo cita el requisito exacto y una evidencia concreta",
+    "Ninguna causa raíz se queda en el síntoma",
+    "Las fechas caben dentro del plazo de respuesta indicado"
+  ],
+  "tono": "Objetivo, neutro y profesional"
+}

@@ -1,0 +1,45 @@
+{
+  "tarea": "Diseñar las reglas de desvio de excedente fotovoltaico a cargas propias con umbrales y prioridades",
+  "contexto": {
+    "instalacion": "[kWp DE PLACAS], inversor [MARCA Y MODELO], bateria [SI/NO, kWh]",
+    "medida_disponible": "[MEDIDOR DE VERTIDO / INVERSOR CON API / SHELLY EM / NINGUNO]",
+    "cargas_desviables": "[TERMO ELECTRICO kW, BOMBA DE PISCINA kW, LAVADORA, COCHE ELECTRICO kW, AIRE]",
+    "tarifa": "[PRECIO COMPRA kWh] frente a [COMPENSACION POR EXCEDENTE kWh]",
+    "rutina_de_la_casa": "[HORAS EN QUE NO HAY NADIE, HORA DE DUCHAS, DIAS DE LAVADORA]"
+  },
+  "metodo": [
+    "1. Comprueba primero que se puede medir el excedente en tiempo real; sin esa medida solo se puede programar por horas, y hay que decirlo",
+    "2. Ordena las cargas por prioridad: primero la que almacena energia de verdad (termo, bateria, coche), luego las de confort",
+    "3. Para cada carga define umbral de arranque en W de excedente sostenido y tiempo minimo, por ejemplo [W DE ARRANQUE] durante [MINUTOS] minutos",
+    "4. Define histeresis: umbral de parada mas bajo que el de arranque y tiempo minimo de funcionamiento, para no castigar reles ni compresores",
+    "5. Marca ventanas horarias: la piscina en horas centrales, el termo antes de la hora de duchas",
+    "6. Define el respaldo: si a las [HORA LIMITE] el termo no llego a temperatura, se completa con red",
+    "7. Calcula el ahorro estimado como kWh desviados por la diferencia entre precio de compra y compensacion"
+  ],
+  "restricciones": [
+    "Nada de manipular el inversor ni la instalacion electrica: solo control de cargas por enchufe, contactor o rele instalado por electricista",
+    "Las cargas de mas de [AMPERIOS LIMITE] amperios no van con enchufe inteligente, van con contactor",
+    "No prometas ahorros: da un rango con supuestos explicitos",
+    "Respeta un maximo de [ARRANQUES POR DIA] arranques diarios por carga"
+  ],
+  "errores_frecuentes": [
+    "Encender y apagar el termo cada dos minutos cuando pasa una nube",
+    "Desviar excedente a la piscina y quedarse sin agua caliente",
+    "Enchufe inteligente barato conectado a una resistencia de 2000 W en continuo",
+    "Confundir produccion total con excedente real: lo que importa es lo que sobra tras el consumo de la casa",
+    "Olvidar la seguridad del termo: el termostato propio manda siempre"
+  ],
+  "formato_salida": {
+    "tabla_cargas": "Carga | Potencia | Prioridad | Umbral arranque | Umbral parada | Tiempo minimo | Ventana horaria",
+    "reglas": "Lista numerada de reglas en lenguaje llano, listas para programar",
+    "material": "Que hace falta comprar y que necesita electricista",
+    "estimacion": "kWh desviados al dia en verano y en invierno, con los supuestos usados",
+    "comprobacion": "Que mirar la primera semana para ajustar umbrales"
+  },
+  "criterios_calidad": [
+    "Ninguna carga arranca y para mas veces de las permitidas",
+    "El confort de la casa manda sobre el ahorro y se nota en las reglas",
+    "Las cifras de ahorro llevan sus supuestos al lado",
+    "Todo lo que exige electricista aparece marcado"
+  ]
+}

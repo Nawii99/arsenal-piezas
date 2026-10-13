@@ -1,0 +1,76 @@
+{
+  "tarea": "Construye una mini-app web para un cliente a partir de este brief. Un solo archivo index.html con CSS y JS dentro, sin frameworks ni instalación. Debe funcionar en Chrome de Android y poder añadirse a la pantalla de inicio.",
+  "cliente": {
+    "nombre_negocio": "[NOMBRE DEL NEGOCIO]",
+    "sector": "[ACADEMIA / CLÍNICA / TIENDA / RESTAURANTE / OTRO]",
+    "web_o_instagram": "[URL]",
+    "para_quien_es_la_app": "[SUS ALUMNOS / SUS CLIENTES / SUS EMPLEADOS]"
+  },
+  "objetivo": {
+    "que_debe_conseguir": "[EJ: QUE LOS ALUMNOS REPASEN VOCABULARIO ANTES DEL EXAMEN]",
+    "como_sabremos_que_funciona": "[EJ: TERMINAN LA PARTIDA Y PULSAN EL BOTÓN DE CONTACTO]"
+  },
+  "app": {
+    "tipo": "[QUIZ / MEMORY / TARJETAS DE REPASO / CHECKLIST / CALCULADORA / RULETA]",
+    "pantallas": [
+      { "nombre": "inicio", "que_hay": "logo o nombre del negocio, una frase de qué va, botón empezar" },
+      { "nombre": "juego", "que_hay": "[PREGUNTA CON 4 OPCIONES / TABLERO DE PAREJAS / FORMULARIO DE CÁLCULO]" },
+      { "nombre": "resultado", "que_hay": "puntuación, mensaje según el nivel conseguido, botón repetir, botón de contacto del negocio" }
+    ],
+    "contenido": {
+      "donde_esta": "en un bloque al principio del archivo con un comentario grande que diga CAMBIA AQUÍ TUS PREGUNTAS",
+      "numero_de_elementos": "[10]",
+      "quien_lo_aporta": "[EL CLIENTE / LO REDACTO YO Y EL CLIENTE LO APRUEBA]",
+      "ejemplos": [
+        { "pregunta": "[PREGUNTA DE EJEMPLO]", "opciones": ["[A]", "[B]", "[C]", "[D]"], "correcta": 0, "explicacion": "[UNA LÍNEA QUE SE MUESTRA AL RESPONDER]" }
+      ]
+    },
+    "boton_de_contacto": {
+      "texto": "[EJ: RESERVA TU CLASE DE PRUEBA]",
+      "enlace": "[https://wa.me/34XXXXXXXXX O URL DE RESERVA]"
+    }
+  },
+  "marca": {
+    "color_principal": "[#HEX]",
+    "color_secundario": "[#HEX]",
+    "tipografia": "la del sistema, sin descargar fuentes",
+    "logo": "[RUTA AL ARCHIVO O ESCRIBE: no hay, usa el nombre en texto]",
+    "tono_de_los_textos": "[CERCANO / FORMAL / INFANTIL]",
+    "idioma": "español de España"
+  },
+  "restricciones": {
+    "sin_registro_ni_login": true,
+    "sin_recoger_datos_personales": true,
+    "sin_servidor_ni_base_de_datos": true,
+    "sin_librerias_externas_ni_cdn": true,
+    "funciona_sin_internet_tras_la_primera_carga": true,
+    "peso_maximo_total": "500 KB",
+    "botones_altura_minima_px": 48,
+    "texto_tamano_minimo_px": 16
+  },
+  "entrega": {
+    "archivos": ["index.html", "manifest.json", "sw.js", "icono-192.png", "icono-512.png", "COMO-CAMBIAR-EL-CONTENIDO.md"],
+    "manual_para_el_cliente": "máximo una página, sin tecnicismos, con captura de dónde se cambian las preguntas y cómo volver a subir el archivo",
+    "publicar_en": "[GITHUB PAGES / NETLIFY DROP]",
+    "fecha_entrega": "[DD/MM/AAAA]",
+    "rondas_de_cambios_incluidas": "[2]"
+  },
+  "fuera_de_alcance": [
+    "Play Store y App Store",
+    "registro de usuarios y recogida de datos",
+    "pagos dentro de la app",
+    "dominio propio",
+    "cambios de contenido después de la entrega"
+  ],
+  "antes_de_escribir_codigo": [
+    "Resume el brief en 5 líneas y espera a que confirme",
+    "Si hay algo entre corchetes sin rellenar, pregúntalo. No lo inventes",
+    "Si vas a partir de un proyecto de ejemplo, dime cuál y qué licencia tiene",
+    "Propón el contenido de ejemplo y espera aprobación antes de programar"
+  ],
+  "al_terminar": [
+    "Lista de comprobación marcada: probado en Chrome de Android, se añade a pantalla de inicio, funciona en modo avión, el botón final abre el enlace correcto, textos sin faltas",
+    "Mensaje de tres líneas para el cliente explicando cómo instalarla en su móvil",
+    "Si algo del brief no se ha podido cumplir, dilo aquí con el motivo"
+  ]
+}

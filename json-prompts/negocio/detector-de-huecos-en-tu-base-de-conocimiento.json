@@ -1,0 +1,37 @@
+{
+  "tarea": "Cruzar las consultas recibidas con el contenido de ayuda existente y priorizar qué artículos faltan por escribir",
+  "contexto": {
+    "negocio": "[QUÉ HACE TU NEGOCIO]",
+    "quien_atiende": "[CUÁNTAS PERSONAS ATIENDEN Y EN QUÉ CANALES]",
+    "tiempo_disponible": "[HORAS AL MES PARA ESCRIBIR AYUDA]"
+  },
+  "entradas": {
+    "indice_actual": "[LISTA DE TÍTULOS DE TU FAQ O CENTRO DE AYUDA ACTUAL]",
+    "consultas_recibidas": "[PEGA LAS CONSULTAS DEL ÚLTIMO MES O TRIMESTRE]",
+    "consultas_que_mas_tiempo_cuestan": "[LAS QUE MÁS OS ALARGAN, SI LAS TIENES DETECTADAS]"
+  },
+  "procedimiento": [
+    "Clasificar cada consulta en: ya respondida en el índice actual, respondida pero mal explicada, o no cubierta",
+    "Para las respondidas pero mal explicadas, decir qué falla: título poco buscable, respuesta incompleta, dato desactualizado o lenguaje interno",
+    "Agrupar las no cubiertas en temas y estimar cuántas consultas evitaría cada tema",
+    "Puntuar cada hueco de 1 a 5 en frecuencia, en tiempo que cuesta responderlo a mano y en riesgo si se responde mal",
+    "Ordenar por impacto dividido por esfuerzo y proponer un plan de escritura ajustado a tiempo_disponible"
+  ],
+  "restricciones": [
+    "No proponer más artículos de los que caben en el tiempo disponible",
+    "Cada hueco debe ir con un título de artículo concreto, no con un tema abstracto",
+    "No sugerir reescribir todo el centro de ayuda de golpe"
+  ],
+  "formato_salida": {
+    "tipo": "tres tablas y un plan",
+    "tabla_1": "Huecos nuevos con título propuesto, frecuencia, esfuerzo, prioridad",
+    "tabla_2": "Artículos existentes a arreglar con el problema concreto y el arreglo",
+    "tabla_3": "Consultas que NO deben ir a la ayuda porque requieren persona",
+    "plan": "Orden de escritura por semanas con responsable sugerido"
+  },
+  "criterios_calidad": [
+    "Cada prioridad se justifica con datos de las entradas, no con opiniones",
+    "Los títulos propuestos son buscables por un cliente",
+    "El plan es realista para el tiempo declarado"
+  ]
+}

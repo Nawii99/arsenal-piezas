@@ -1,0 +1,50 @@
+{
+  "tarea": "Diseñar el plan de copias de seguridad del negocio y probar una restauración real",
+  "contexto": {
+    "negocio": "[A QUÉ SE DEDICA]",
+    "perfil_usuario": "emprendedor sin perfil técnico; explica todo en pasos concretos y sin jerga",
+    "que_tengo_montado": "[WEB, TIENDA, BASE DE DATOS, AUTOMATIZACIONES, DRIVE, CORREO]",
+    "proveedores": "[HOSTING / PLATAFORMAS / SERVICIOS QUE USO]",
+    "datos_que_puedo_perder": "[CUÁNTAS HORAS DE DATOS PUEDO PERDER COMO MUCHO]",
+    "tiempo_caido_aceptable": "[CUÁNTAS HORAS AGUANTO SIN SERVICIO]"
+  },
+  "entradas": {
+    "copias_actuales": "[QUÉ COPIO HOY Y DÓNDE, O 'NADA']",
+    "presupuesto_mes": "[EUROS AL MES QUE PUEDO GASTAR]"
+  },
+  "pasos": [
+    "1. Inventaria qué hay que salvar: base de datos, ficheros subidos, plantillas o código, configuración, contactos, facturas.",
+    "2. Marca cada elemento como crítico, importante o prescindible, y di quién lo genera (yo, los clientes, un proveedor).",
+    "3. Aplica la regla 3-2-1: tres copias, en dos sitios distintos, una fuera del proveedor original.",
+    "4. Define frecuencia y retención por elemento (diaria 7 días, semanal 4 semanas, mensual 12 meses).",
+    "5. Comprueba qué copia ya hace el proveedor, qué cubre exactamente, cuánto guarda y si restaurar se paga aparte.",
+    "6. Añade al menos una copia que no dependa de ese proveedor: exportación periódica a otra nube o a un disco.",
+    "7. Escribe el procedimiento de restauración paso a paso, indicando dónde se pulsa en cada pantalla.",
+    "8. Haz un simulacro real: restaura en un sitio de pruebas y cronometra cuánto tardas de principio a fin.",
+    "9. Apunta lo que falló, corrígelo y fija el siguiente simulacro dentro de tres meses."
+  ],
+  "restricciones": [
+    "Nada que exija servidor propio ni línea de comandos si existe alternativa con interfaz.",
+    "Prioriza opciones gratis o por debajo de [EUROS] al mes.",
+    "Una copia que nunca se ha restaurado no cuenta como copia."
+  ],
+  "errores_tipicos": [
+    "Fiarse de la copia del hosting sin saber que solo guarda 24 horas o que restaurar es de pago.",
+    "Copiar los ficheros pero no la base de datos, o al revés.",
+    "Guardar la copia dentro de la misma cuenta que puedes perder o que te pueden bloquear.",
+    "No copiar accesos y claves: sin ellos la copia no arranca.",
+    "Cifrar la copia con una contraseña que solo existe en tu cabeza."
+  ],
+  "formato_salida": {
+    "tabla_inventario": "columnas: elemento | criticidad | dónde vive | cómo se copia | frecuencia | retención | dónde va la copia",
+    "procedimiento_restauracion": "lista numerada de 8 a 15 pasos con tiempo estimado de cada uno",
+    "calendario": "qué se comprueba cada mes y qué simulacro toca cada trimestre",
+    "coste_total": "suma en euros al mes de las herramientas propuestas"
+  },
+  "criterios_calidad": [
+    "Cada elemento crítico tiene una copia fuera del proveedor original.",
+    "El procedimiento lo puede seguir alguien que no seas tú.",
+    "El tiempo estimado de restauración cabe dentro del tiempo caído aceptable.",
+    "Hay fecha concreta para el primer simulacro."
+  ]
+}

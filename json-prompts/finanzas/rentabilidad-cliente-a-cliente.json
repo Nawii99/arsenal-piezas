@@ -1,0 +1,38 @@
+{
+  "tarea": "Calcular la rentabilidad real de cada cliente en un periodo y clasificarlos para decidir a quién subir precio, a quién mimar y a quién dejar ir",
+  "contexto": {
+    "negocio": "[TIPO DE NEGOCIO Y SERVICIO QUE PRESTAS]",
+    "periodo": "[AÑO O ÚLTIMOS 12 MESES]",
+    "coste_hora_objetivo": "[EUROS/HORA QUE NECESITAS COBRAR PARA CUBRIR COSTES Y SUELDO]"
+  },
+  "entradas": {
+    "clientes": "[LISTA: NOMBRE, FACTURADO SIN IVA, HORAS DEDICADAS, COSTES DIRECTOS EN EUROS]",
+    "extras_no_facturados": "[REUNIONES, CAMBIOS DE ÚLTIMA HORA, DESPLAZAMIENTOS, SOPORTE POR WHATSAPP]",
+    "dias_medios_de_cobro": "[DÍAS QUE TARDA CADA CLIENTE EN PAGAR O MEDIA GENERAL]"
+  },
+  "pasos": [
+    "Calcula por cliente: margen en euros = facturado sin IVA menos costes directos; y margen por hora = margen dividido entre horas totales",
+    "Suma a las horas facturadas las horas invisibles (reuniones, revisiones, soporte) porque ahí se esconde casi toda la pérdida",
+    "Compara el margen por hora de cada cliente con el coste hora objetivo y calcula la diferencia",
+    "Puntúa cada cliente del 1 al 5 en: rentabilidad, puntualidad de pago, esfuerzo emocional y potencial de crecimiento",
+    "Clasifica cada cliente en una de estas cuatro categorías: mantener y cuidar, subir precio, renegociar alcance, dejar ir",
+    "Calcula qué pasaría con tu beneficio si dejases ir a los clientes de la última categoría y llenases esas horas al precio objetivo"
+  ],
+  "restricciones": [
+    "Nada de juicios sobre las personas: habla de números y de encaje comercial",
+    "Si faltan horas de algún cliente, estímalas y marca la estimación como aproximada",
+    "No propongas dejar ir a un cliente que suponga más del [PORCENTAJE MÁXIMO DE DEPENDENCIA]% de la facturación sin un plan de sustitución"
+  ],
+  "formato_salida": {
+    "tipo": "tabla + fichas de decisión",
+    "columnas": ["Cliente", "Facturado", "Horas reales", "Margen €", "Margen/hora", "Días de cobro", "Categoría"],
+    "ficha_por_cliente_problematico": ["Qué pasa", "Qué proponerle", "Frase exacta para decírselo", "Plan B si dice que no"],
+    "cierre": "Resumen en 5 líneas y el beneficio estimado tras aplicar los cambios"
+  },
+  "criterios_calidad": [
+    "Cada categoría asignada se apoya en el margen por hora, no en la intuición",
+    "Las frases para hablar con el cliente son usables tal cual, sin rellenar nada más",
+    "El análisis avisa si dependes en exceso de uno o dos clientes"
+  ],
+  "tono": "Práctico y honesto, como un asesor que te dice la verdad sin dramatizar"
+}

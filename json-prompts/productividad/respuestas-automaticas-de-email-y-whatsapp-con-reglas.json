@@ -1,0 +1,39 @@
+{
+  "tarea": "Crear el kit de respuestas automáticas repetidas de un negocio y las reglas de enrutado entre bot y persona",
+  "rol": "Responsable de atención al cliente que escribe plantillas breves y humanas",
+  "contexto": {
+    "negocio": "[QUÉ VENDES O QUÉ SERVICIO DAS]",
+    "canales": "[EMAIL, WHATSAPP BUSINESS, INSTAGRAM, FORMULARIO WEB]",
+    "horario_atencion": "[DÍAS Y HORAS]",
+    "plazos_reales": "[ENVÍO, RESPUESTA, CITA, DEVOLUCIÓN]",
+    "voz_de_marca": "[CERCANA / FORMAL / TÉCNICA]"
+  },
+  "entradas": {
+    "preguntas_repetidas": "[PEGA LAS 8 O 10 PREGUNTAS QUE MÁS TE HACEN]",
+    "temas_prohibidos_para_el_automatismo": "[RECLAMACIONES, PRECIOS A MEDIDA, TEMAS LEGALES O DE SALUD]"
+  },
+  "metodo": [
+    "Agrupa las preguntas en intenciones y ponle nombre a cada una",
+    "Escribe para cada intención una respuesta de 40 a 70 palabras que resuelva y proponga el siguiente paso",
+    "Define las palabras clave que activan cada respuesta, incluyendo faltas de ortografía habituales",
+    "Crea una regla de escalado a persona con la frase exacta de traspaso",
+    "Escribe la respuesta de fuera de horario con el plazo real de contestación",
+    "Añade una variante corta para WhatsApp y otra algo más formal para email"
+  ],
+  "restricciones": [
+    "Nada de prometer plazos ni condiciones que no estén en los datos de entrada",
+    "Sin emojis en email, como mucho uno en WhatsApp",
+    "Si la consulta toca un tema prohibido, la respuesta solo confirma recepción y avisa de que contesta una persona"
+  ],
+  "formato_salida": {
+    "tabla_intenciones": ["intención", "palabras_clave", "canal", "respuesta", "escala_a_persona"],
+    "mensajes_fijos": ["fuera de horario", "acuse de recibo", "traspaso a persona", "cierre de conversación"],
+    "reglas_de_enrutado": "Lista si-entonces ordenada por prioridad"
+  },
+  "criterios_calidad": [
+    "Ninguna respuesta obliga al cliente a repetir lo que ya ha contado",
+    "Todas terminan con un siguiente paso claro",
+    "Se distingue con claridad qué contesta el automatismo y qué no"
+  ],
+  "tono": "Cercano y resolutivo, español de España, tuteando al cliente"
+}

@@ -1,0 +1,55 @@
+{
+  "tarea": "Convertir una transcripcion o unas notas de reunion en un acta breve, accionable y enviable",
+  "contexto": {
+    "tipo_de_reunion": "[CLIENTE, PROVEEDOR, EQUIPO, SOCIOS, COMUNIDAD]",
+    "objetivo_de_la_reunion": "[PARA QUE SE CONVOCO]",
+    "asistentes": "[NOMBRES Y ROL DE CADA UNO]",
+    "fecha": "[FECHA Y DURACION]",
+    "tono": "[FORMAL O CERCANO]"
+  },
+  "entradas": {
+    "material": "[PEGA LA TRANSCRIPCION O LAS NOTAS, AUNQUE ESTEN DESORDENADAS]",
+    "temas_que_no_pueden_faltar": "[LO QUE SI O SI TIENE QUE QUEDAR RECOGIDO]"
+  },
+  "pasos": [
+    "1. Separa lo dicho en cuatro cosas distintas: informacion, opinion, decision tomada y tarea comprometida",
+    "2. Tira la charla suelta, los saludos y lo que no lleva a nada",
+    "3. Escribe cada decision en una frase que empiece por el verbo y que se entienda dentro de seis meses",
+    "4. Cada tarea lleva responsable con nombre, que hay que entregar y fecha; si no se dijo la fecha, escribe FECHA POR CONFIRMAR",
+    "5. Recoge aparte los temas abiertos y quien tiene que resolverlos",
+    "6. Anota cifras, precios y plazos exactamente como se dijeron, y marca los que sonaron aproximados",
+    "7. Señala los desacuerdos sin tomar partido y sin adornar",
+    "8. Propon la fecha del siguiente contacto y su unico objetivo"
+  ],
+  "que_mirar": [
+    "Compromisos disfrazados de intencion: lo miro, lo vemos, ya te digo algo",
+    "Tareas sin dueño, que son las que no se hacen",
+    "Cambios de alcance colados en medio de la conversacion",
+    "Cosas que se dan por sabidas y no estan escritas en ningun sitio"
+  ],
+  "errores_tipicos": [
+    "Hacer un acta larguisima que nadie lee",
+    "Transcribir en vez de resumir",
+    "Atribuir a alguien una decision que en realidad no acepto",
+    "Meter conclusiones tuyas como si se hubieran acordado"
+  ],
+  "restricciones": [
+    "No inventes acuerdos ni fechas que no aparezcan en el material",
+    "Si algo se entiende a medias, ponlo como punto abierto",
+    "El acta entera cabe en una pagina"
+  ],
+  "formato_salida": {
+    "bloque_1": "Cabecera: asunto, fecha, duracion, asistentes",
+    "bloque_2": "Decisiones, maximo siete, en lista numerada",
+    "bloque_3": "Tabla de tareas: que | quien | para cuando | como se sabe que esta hecho",
+    "bloque_4": "Temas abiertos y quien los resuelve",
+    "bloque_5": "Proximo paso con fecha",
+    "bloque_6": "Email de envio de cuatro lineas pidiendo que confirmen o corrijan en 48 horas"
+  },
+  "criterios_calidad": [
+    "Toda tarea tiene nombre propio y fecha o marca de pendiente",
+    "Quien no fue a la reunion entiende el acta sin preguntar nada",
+    "No aparece ninguna cifra que no se dijera",
+    "Se lee en menos de dos minutos"
+  ]
+}

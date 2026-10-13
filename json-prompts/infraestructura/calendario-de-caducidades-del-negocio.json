@@ -1,0 +1,46 @@
+{
+  "tarea": "Construir el calendario de caducidades y renovaciones críticas del negocio",
+  "contexto": {
+    "servicios": "[DOMINIOS, HOSTING, CERTIFICADOS, LICENCIAS, SUSCRIPCIONES, TOKENS, SEGUROS]",
+    "medios_de_pago": "[TARJETAS Y CUENTAS ASOCIADAS]",
+    "quien_recibe_los_avisos": "[CORREO Y PERSONA]",
+    "perfil_usuario": "sin perfil técnico; el calendario debe ser una tabla y unos recordatorios"
+  },
+  "entradas": {
+    "facturas_recientes": "[LISTA DE CARGOS DE LOS ÚLTIMOS 12 MESES]",
+    "sustos_pasados": "[QUÉ SE TE HA CADUCADO ALGUNA VEZ]"
+  },
+  "pasos": [
+    "1. Saca de las facturas y del banco todos los cargos recurrentes, incluidos los anuales que se olvidan.",
+    "2. Añade lo que caduca sin cargo: certificados, tokens de acceso, verificaciones y contraseñas de aplicación.",
+    "3. Anota para cada uno: fecha, importe, si renueva solo, con qué tarjeta y qué pasa si caduca.",
+    "4. Clasifica por impacto: catastrófico (dominio, correo), grave (certificado, hosting) y molesto (licencias).",
+    "5. Comprueba que la tarjeta asociada no caduca antes que el servicio.",
+    "6. Activa renovación automática solo en lo crítico y decide qué dejas manual para poder cancelar.",
+    "7. Crea recordatorios a 60, 30 y 7 días para lo crítico, en un calendario que sí mires.",
+    "8. Marca los servicios que ya no usas y fija fecha para darlos de baja antes del siguiente cobro."
+  ],
+  "restricciones": [
+    "Los avisos no pueden ir solo al correo del propio servicio que puede caducar.",
+    "Nada de renovación automática en servicios que estás valorando abandonar.",
+    "El dominio siempre con renovación automática y con bloqueo de transferencia activado."
+  ],
+  "errores_tipicos": [
+    "Perder el dominio por un aviso enviado a un correo antiguo que ya no lees.",
+    "Tarjeta caducada y renovación automática fallida sin que nadie lo mire.",
+    "Certificado caducado y navegador avisando de sitio no seguro en plena campaña.",
+    "Pagar dos años seguidos herramientas que ya no usas.",
+    "Contratar cada servicio con un correo distinto y perder el rastro."
+  ],
+  "formato_salida": {
+    "tabla_caducidades": "columnas: servicio | fecha | importe | automático | tarjeta | impacto si caduca | acción",
+    "recordatorios": "lista de eventos a crear con fecha y texto exacto",
+    "bajas_propuestas": "qué cancelar, antes de qué fecha y cuánto se deja de pagar al año",
+    "resumen_anual": "gasto fijo total al año agrupado por tipo"
+  },
+  "criterios_calidad": [
+    "Todo lo catastrófico tiene renovación automática y aviso a 60 días.",
+    "Ningún aviso depende del servicio que puede caer.",
+    "El resumen cuadra con los cargos reales aportados."
+  ]
+}

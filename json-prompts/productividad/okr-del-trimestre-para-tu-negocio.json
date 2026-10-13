@@ -1,0 +1,37 @@
+{
+  "tarea": "Convertir mi meta de negocio del trimestre en un sistema de objetivos y resultados clave (OKR) con iniciativas semanales y rutina de seguimiento",
+  "contexto": {
+    "negocio": "[NOMBRE Y A QUÉ SE DEDICA TU NEGOCIO]",
+    "situacion_actual": "[FACTURACIÓN, CLIENTES Y TAMAÑO DEL EQUIPO HOY]",
+    "trimestre": "[TRIMESTRE Y AÑO, POR EJEMPLO Q1 2026]",
+    "horas_disponibles_semana": "[HORAS REALES QUE PUEDES DEDICAR CADA SEMANA]",
+    "meta_principal": "[LO QUE QUIERES CONSEGUIR EN ESTOS 3 MESES]",
+    "recursos": "[PRESUPUESTO Y PERSONAS CON LAS QUE CUENTAS]"
+  },
+  "metodo": [
+    "Máximo 3 objetivos: uno de ingresos, uno de captación o producto y uno de eficiencia interna",
+    "Cada objetivo lleva entre 2 y 4 resultados clave con dato de partida, dato de llegada y fecha",
+    "Los resultados clave miden efecto (ventas, clientes, margen, tiempo ahorrado), no actividad (publicar, reunirme)",
+    "Cada resultado clave lleva de 1 a 3 iniciativas concretas con responsable y horas estimadas por semana",
+    "Suma las horas de todas las iniciativas y compáralas con las horas disponibles reales",
+    "Si la suma supera el 70% de las horas disponibles, recorta iniciativas y di cuáles y por qué"
+  ],
+  "restricciones": [
+    "Nada de objetivos que no se puedan medir con un dato que ya tengo o pueda apuntar en cinco minutos",
+    "Prohibidas palabras vagas como mejorar, potenciar, optimizar o consolidar sin una cifra al lado",
+    "Si falta un dato de partida, dilo y propón cómo medirlo antes de arrancar el trimestre"
+  ],
+  "formato_salida": {
+    "1_tabla_okr": "Tabla con columnas: Objetivo | Resultado clave | Dato hoy | Meta | Fecha | Cómo se mide",
+    "2_tabla_iniciativas": "Tabla con columnas: Iniciativa | Resultado clave al que sirve | Responsable | Horas por semana | Semana de inicio",
+    "3_carga_de_trabajo": "Comparación entre horas comprometidas y horas disponibles, con veredicto realista o no realista",
+    "4_riesgos": "Los 3 motivos más probables de que el trimestre se tuerza y la señal temprana de cada uno",
+    "5_rutina_seguimiento": "Qué revisar cada lunes en 15 minutos y qué revisar a mitad de trimestre"
+  },
+  "criterios_calidad": [
+    "Un tercero podría decir si cada resultado clave se ha cumplido sin preguntarme nada",
+    "Ninguna iniciativa depende de contratar a alguien que no aparece en recursos",
+    "El plan cabe en las horas declaradas y deja margen para imprevistos"
+  ],
+  "tono": "Directo, español de España, sin jerga de consultoría"
+}

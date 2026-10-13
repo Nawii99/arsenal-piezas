@@ -1,0 +1,38 @@
+{
+  "tarea": "Preparar la negociación final de un contrato B2B y el cierre",
+  "contexto": {
+    "cliente": "[EMPRESA E INTERLOCUTOR QUE NEGOCIA]",
+    "oferta_actual": "[QUÉ INCLUYE Y A QUÉ PRECIO]",
+    "coste_y_margen": "[TU COSTE Y EL MARGEN QUE TE DEJA]",
+    "peticiones_del_cliente": "[DESCUENTO, PLAZOS DE PAGO, ALCANCE EXTRA, PENALIZACIONES...]",
+    "alternativa_del_cliente": "[QUÉ HARÍA SI NO TE COMPRA A TI]",
+    "tu_alternativa": "[QUÉ PASA SI NO CIERRAS ESTA VENTA]",
+    "innegociables": "[LO QUE NO PUEDES CEDER BAJO NINGÚN CONCEPTO]"
+  },
+  "pasos": [
+    "Separa las peticiones del cliente en precio, alcance, plazos y riesgo",
+    "Define para cada punto tu objetivo, tu punto de salida y tu límite de abandono",
+    "Construye una lista de monedas de cambio: qué puedes dar que te cueste poco y valga mucho para él",
+    "Empareja cada concesión con una contrapartida concreta: volumen, duración, pago por adelantado, caso de cliente o referencia",
+    "Escribe la respuesta exacta a la petición de descuento y a la comparación con la competencia",
+    "Cierra con el procedimiento de firma: documento, quién firma, fechas y arranque"
+  ],
+  "restricciones": [
+    "Ninguna concesión se da sin pedir algo a cambio",
+    "Prohibido bajar el precio manteniendo el mismo alcance",
+    "Si la petición cruza un innegociable, se prepara la retirada educada",
+    "Nada de plazos de pago que dejen la caja en riesgo"
+  ],
+  "formato_salida": {
+    "tabla_negociacion": "Punto | Objetivo | Salida | Límite | Contrapartida que pides",
+    "guion": "Frases literales para las 4 situaciones más probables de la reunión",
+    "simulacion": "Cómo puede quedar el acuerdo en el mejor y en el peor caso, con su margen",
+    "cierre": "Checklist de pasos hasta la firma con responsables y fechas"
+  },
+  "criterios_calidad": [
+    "Cada concesión tiene su precio calculado sobre el margen",
+    "El límite de abandono está escrito antes de entrar en la reunión",
+    "El checklist de firma no deja ningún paso a la improvisación"
+  ],
+  "tono": "Sereno, firme y colaborativo"
+}

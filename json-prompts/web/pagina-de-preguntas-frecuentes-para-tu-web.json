@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar la página completa de preguntas frecuentes de una web, optimizada para lectura rápida y para búsquedas en Google",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR]",
+    "producto_o_servicio": "[QUÉ VENDES EXACTAMENTE]",
+    "zona": "[CIUDAD O ZONA, O ÁMBITO NACIONAL]",
+    "paginas_para_enlazar": "[URLS DE PRODUCTO, ENVÍOS, CONTACTO, PRECIOS]"
+  },
+  "entradas": {
+    "dudas_conocidas": "[LISTA LAS DUDAS QUE YA TE PREGUNTAN]",
+    "politicas": "[PLAZOS, PRECIOS, GARANTÍA, DEVOLUCIONES, HORARIOS]",
+    "lo_que_te_diferencia": "[POR QUÉ TE ELIGEN]"
+  },
+  "procedimiento": [
+    "Proponer entre 18 y 25 preguntas repartidas en 5 o 6 bloques: antes de comprar, precios y pagos, plazos y entrega, uso del producto, incidencias y devoluciones, empresa y contacto",
+    "Escribir cada pregunta tal y como se busca en Google, en lenguaje del cliente y sin abreviar",
+    "Responder en dos partes: primera frase con la respuesta directa y después el detalle o la excepción",
+    "Incluir de forma natural el enlace interno útil en las respuestas que lo pidan, sin forzar",
+    "Marcar con AVISO las respuestas que deben revisarse si cambian precios o plazos"
+  ],
+  "restricciones": [
+    "Nada de respuestas de una sola línea vacías ni de promesas que no puedas cumplir",
+    "Máximo 90 palabras por respuesta y sin repetir la pregunta al empezar",
+    "Evitar el relleno comercial: quien lee una FAQ quiere el dato, no el discurso",
+    "Español de España y tuteo"
+  ],
+  "formato_salida": {
+    "tipo": "documento markdown listo para copiar",
+    "estructura": ["Título H1", "Índice con enlaces a los bloques", "Bloques H2 con cada pregunta en H3", "Cierre con vías de contacto"],
+    "extras": ["Lista de las 8 preguntas más importantes para destacar arriba", "Meta título y meta descripción de la página"]
+  },
+  "criterios_calidad": [
+    "Se puede encontrar cualquier respuesta en menos de 15 segundos",
+    "Ninguna respuesta contradice a otra",
+    "Las preguntas suenan a cliente, no a departamento interno",
+    "Todas las políticas relevantes están cubiertas"
+  ]
+}

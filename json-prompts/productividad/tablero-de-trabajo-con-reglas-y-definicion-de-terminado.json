@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar el tablero de gestión de un proyecto: columnas, límites de trabajo en curso, plantilla de tarjeta, definición de terminado y rutinas de revisión",
+  "contexto": {
+    "tipo_de_proyecto": "[QUÉ TIPO DE TRABAJO SE GESTIONA, EJ: PROYECTOS DE DISEÑO PARA CLIENTES]",
+    "herramienta": "[TRELLO / NOTION / ASANA / CLICKUP / PIZARRA FÍSICA]",
+    "equipo": "[CUÁNTAS PERSONAS Y QUÉ ROLES]",
+    "recorrido_de_una_tarea": "[POR QUÉ PASOS PASA UNA TAREA DESDE QUE NACE HASTA QUE SE ENTREGA]",
+    "quien_revisa": "[QUIÉN APRUEBA ANTES DE DAR ALGO POR TERMINADO]",
+    "problema_actual": "[QUÉ FALLA HOY, EJ: TODO SE QUEDA EN 'EN CURSO']"
+  },
+  "metodo": [
+    "Propón entre 4 y 6 columnas que reflejen el recorrido real, no un proceso teórico",
+    "Fija un límite de tarjetas simultáneas por columna y por persona, y explica qué hacer cuando se alcanza",
+    "Separa la espera del trabajo: si algo está parado esperando al cliente, tiene su propia columna",
+    "Define la plantilla de tarjeta: qué campos son obligatorios para que una tarea pueda entrar en el tablero",
+    "Escribe la definición de terminado como una lista de comprobaciones objetivas, iguales para todos",
+    "Añade reglas antizombis: qué pasa con una tarjeta que lleva más de X días sin moverse",
+    "Cierra con las rutinas: repaso diario de 10 minutos, revisión semanal y limpieza mensual, con quién las lleva"
+  ],
+  "restricciones": [
+    "Nada de columnas decorativas que nadie usa",
+    "Las etiquetas, como mucho 6, con su significado escrito",
+    "Todo tiene que poderse montar en la herramienta indicada, sin plan de pago si es posible"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de columnas: Nombre, Qué significa, Límite, Cuándo se mueve a la siguiente",
+    "bloque_2": "Plantilla de tarjeta con los campos obligatorios",
+    "bloque_3": "Definición de terminado, en checklist",
+    "bloque_4": "Reglas del tablero, numeradas, máximo 8",
+    "bloque_5": "Rutinas: qué se revisa cada día, cada semana y cada mes, y quién"
+  },
+  "criterios_calidad": [
+    "Cualquiera del equipo sabe en qué columna va una tarea sin preguntar",
+    "La definición de terminado no admite interpretaciones",
+    "Las reglas atacan directamente el problema actual descrito"
+  ],
+  "tono": "claro y mandón en el buen sentido: reglas cortas y sin excusas"
+}

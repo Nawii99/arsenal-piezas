@@ -1,0 +1,43 @@
+{
+  "tarea": "generar_variantes_producto_stripe",
+  "descripcion": "Genera la lista de variantes de un producto con el precio final con IVA ya calculado, en el formato que necesita Stripe para crear el Price de cada variante.",
+  "contexto": {
+    "pais": "ES",
+    "moneda": "EUR",
+    "tipos_iva_validos": [21, 10, 4, 0]
+  },
+  "entrada": {
+    "nombre_producto": "[NOMBRE_PRODUCTO]",
+    "precio_base_sin_iva": "[PRECIO_SIN_IVA_EN_EUROS]",
+    "tipo_iva": "[21_O_10_O_4]",
+    "variantes": [
+      {
+        "atributo": "[EJEMPLO_TALLA_O_COLOR]",
+        "valores": ["[VALOR_1]", "[VALOR_2]", "[VALOR_3]"]
+      }
+    ]
+  },
+  "instrucciones": [
+    "Calcula el precio con IVA de cada variante como precio_base_sin_iva multiplicado por (1 + tipo_iva/100), redondeado a dos decimales.",
+    "Genera un SKU único por variante combinando las tres primeras letras del nombre del producto y el valor del atributo, en mayúsculas y sin espacios.",
+    "No cambies el precio entre variantes salvo que el usuario indique un recargo explícito para alguna de ellas.",
+    "Si falta el tipo de IVA, usa 21 por defecto y dilo en el campo aviso, no lo asumas en silencio."
+  ],
+  "salida_esperada": {
+    "formato": "json",
+    "esquema": {
+      "producto": "string",
+      "moneda": "EUR",
+      "aviso": "string o null",
+      "variantes": [
+        {
+          "sku": "string",
+          "atributo": "string",
+          "valor": "string",
+          "precio_sin_iva": "number",
+          "precio_con_iva": "number"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "tarea": "Planificar en que modelo, resolucion y numero de intentos se genera cada toma de un proyecto para no agotar los creditos",
+  "entradas": {
+    "lista_de_tomas": "[ENUMERA TUS TOMAS Y QUE PASA EN CADA UNA]",
+    "herramientas_disponibles": "[VEO / SORA / KLING / RUNWAY Y TU PLAN CONTRATADO]",
+    "presupuesto": "[CREDITOS O EUROS DISPONIBLES]",
+    "fecha_entrega": "[CUANDO]",
+    "donde_se_ve": "[MOVIL / TELEVISION / PANTALLA GRANDE]"
+  },
+  "criterios_de_reparto": [
+    "Tomas protagonistas, las que salen al principio o muestran el producto: calidad alta y varios intentos",
+    "Tomas de relleno, transiciones y fondos desenfocados: calidad media y un intento",
+    "Tomas con dialogo o lipsync: modelo con audio nativo aunque cueste mas",
+    "Tomas que parten de una foto que ya tienes: imagen a video, mas barato y mas fiel",
+    "Si en redes se ve en movil, subir de resolucion aporta poco frente a acertar el encuadre",
+    "Reservar un 20 por ciento de los creditos para reintentos de ultima hora"
+  ],
+  "formato_salida": {
+    "tabla_de_produccion": "una fila por toma con: prioridad, modelo, resolucion, duracion, intentos previstos, coste estimado",
+    "suma": "coste total estimado y margen que queda",
+    "orden_de_trabajo": "que generar primero para poder abortar a tiempo si algo no funciona",
+    "recortes": "que tomas se sacrifican primero si el presupuesto no llega",
+    "avisos": "donde es probable que se necesiten mas intentos de los previstos"
+  },
+  "restricciones": [
+    "No inventar precios: usar los datos que aporte el usuario y marcar como estimacion lo que no se sepa",
+    "Nunca dejar el proyecto sin margen para reintentos"
+  ],
+  "criterios_calidad": [
+    "El plan cabe en el presupuesto declarado",
+    "Las tomas mas visibles son las que llevan mas recursos"
+  ]
+}

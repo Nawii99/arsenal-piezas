@@ -1,0 +1,42 @@
+{
+  "tarea": "Generar tipos TypeScript, validacion en tiempo de ejecucion y cliente tipado a partir de una respuesta JSON real de una API",
+  "contexto": {
+    "api": "[NOMBRE DE LA API]",
+    "endpoint": "[METODO Y RUTA, EJ: GET /v1/pedidos]",
+    "autenticacion": "[BEARER TOKEN / API KEY EN CABECERA / NINGUNA]",
+    "entorno": "[NAVEGADOR / NODE / AMBOS]"
+  },
+  "entradas": {
+    "json_ejemplo": "[PEGA AQUI UNA RESPUESTA REAL DE LA API]",
+    "campos_opcionales_conocidos": "[CAMPOS QUE A VECES NO VIENEN / NO LO SE]",
+    "documentacion_relevante": "[PEGA LO QUE TENGAS O ESCRIBE NO TENGO]"
+  },
+  "reglas_de_tipado": [
+    "Los campos que no aparezcan siempre se marcan como opcionales o union con null",
+    "Las fechas llegan como texto: tiparlas como string y convertirlas aparte",
+    "Los identificadores se tipan como string aunque parezcan numeros, salvo que la doc diga lo contrario",
+    "Los valores de un conjunto cerrado se convierten en union de literales, no en string",
+    "Nada de any ni de object suelto"
+  ],
+  "salidas_requeridas": [
+    "Interfaces y types con nombres claros en ingles y comentario en español encima de cada uno",
+    "Esquema de validacion para comprobar la respuesta antes de usarla",
+    "Funcion cliente async con manejo de error de red, de estado HTTP y de respuesta inesperada",
+    "Ejemplo de uso de 5 lineas"
+  ],
+  "restricciones": [
+    "No inventar campos que no esten en el JSON de ejemplo",
+    "No suponer que la API siempre responde 200",
+    "Marcar con [REVISAR] cualquier campo cuyo tipo sea ambiguo por un solo ejemplo"
+  ],
+  "formato_salida": {
+    "bloque_1": "tipos.ts",
+    "bloque_2": "validacion.ts",
+    "bloque_3": "cliente.ts",
+    "bloque_4": "Lista de suposiciones que he hecho y que deberias confirmar"
+  },
+  "criterios_calidad": [
+    "El codigo compila tal cual, sin editar",
+    "Si la API devuelve algo raro, el error es entendible y no un crash"
+  ]
+}

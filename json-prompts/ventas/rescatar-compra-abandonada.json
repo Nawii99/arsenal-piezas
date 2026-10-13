@@ -1,0 +1,50 @@
+{
+  "tarea": "Diseña el sistema para recuperar compras que se quedan a medias: los mensajes de recuperación, los motivos que hay que arreglar antes y cómo saber si funciona.",
+  "contexto": {
+    "donde_vendo": "[TIENDA ONLINE / WHATSAPP / INSTAGRAM / FORMULARIO WEB]",
+    "producto": "[QUÉ VENDO Y PRECIO MEDIO]",
+    "pasos_del_proceso": "[DESDE QUE ENTRA HASTA QUE PAGA]",
+    "datos_que_capto": "[EMAIL, TELÉFONO, NOMBRE: QUÉ TENGO ANTES DE QUE ABANDONE]"
+  },
+  "entradas": {
+    "motivos_sospechados": "[GASTOS DE ENVÍO, DUDA DE TALLA O ENCAJE, PRECIO, DESCONFIANZA, PLAZO, PAGO COMPLICADO]",
+    "pruebas_de_confianza": "[RESEÑAS, DEVOLUCIONES, GARANTÍA, TELÉFONO DE CONTACTO, FOTOS REALES]",
+    "margen": "[CUÁNTO PUEDO DAR SIN PERDER DINERO]"
+  },
+  "metodo": [
+    "1. Antes de escribir mensajes, revisa el proceso: cuántos pasos, si se ve el precio final con envío desde el principio, si se puede pagar sin registrarse y si el móvil lo hace fácil.",
+    "2. Lista los frenos por orden de sospecha y di cuál se arregla cambiando la página en vez de con un mensaje.",
+    "3. Diseña tres contactos: a la hora, a las 24 horas y a las 48 horas, cada uno con un enfoque distinto.",
+    "4. Contacto 1: servicial, tipo se te quedó a medias, respondo dudas, sin descuento.",
+    "5. Contacto 2: quitar el miedo con la prueba de confianza más fuerte y responder al freno más probable.",
+    "6. Contacto 3: última llamada con incentivo pequeño y real, o con alternativa más barata si el freno es precio.",
+    "7. Añade la versión WhatsApp uno a uno, para el que preguntó por privado y no volvió.",
+    "8. Define qué medir: cuántos abandonan, cuántos recuperados y en qué paso se caen."
+  ],
+  "errores_a_evitar": [
+    "Mandar descuento en el primer mensaje: pagas por gente que iba a comprar igual.",
+    "Escribir a quien no dio permiso o guardar datos sin base legal.",
+    "Mensajes con demasiada insistencia el mismo día.",
+    "Tratar como abandono a quien solo miraba: separa curiosidad de intención real.",
+    "Arreglar con mensajes lo que es un problema del proceso de pago."
+  ],
+  "formato_salida": {
+    "diagnostico": "Lista de frenos ordenada con la solución de cada uno y si es de página o de mensaje.",
+    "secuencia": "Los tres mensajes con asunto, texto y hora de envío, en versión email y versión WhatsApp.",
+    "microcopias": "Frases concretas para poner en la página: envío, devoluciones, plazo y formas de pago.",
+    "medicion": "Los cuatro números a apuntar cada semana y qué significa que suban o bajen."
+  },
+  "restricciones": [
+    "Español de España, tuteo, tono de ayuda y no de persecución.",
+    "Máximo 70 palabras por mensaje.",
+    "Cumplir protección de datos y ofrecer baja fácil.",
+    "Ningún incentivo por encima del margen que te he indicado."
+  ],
+  "criterios_calidad": [
+    "El primer mensaje ayuda y no vende.",
+    "Cada mensaje responde a un freno distinto.",
+    "Al menos dos mejoras propuestas son del proceso, no de los mensajes.",
+    "Puedo montarlo yo sin saber programar."
+  ],
+  "si_faltan_datos": "Si no sé los motivos de abandono, propón cómo averiguarlos preguntando a cinco clientes recientes."
+}

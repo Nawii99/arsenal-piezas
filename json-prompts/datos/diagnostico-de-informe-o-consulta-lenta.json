@@ -1,0 +1,34 @@
+{
+  "tarea": "Diagnosticar por qué una consulta o informe es lento y entregar una versión optimizada explicada en lenguaje llano",
+  "entradas": {
+    "consulta_actual": "[PEGA AQUÍ LA CONSULTA SQL O DESCRIBE EL INFORME]",
+    "motor_y_version": "[EJ: MySQL 8, PostgreSQL 15, SQL Server 2019]",
+    "tamaño_tablas": "[FILAS APROXIMADAS DE CADA TABLA IMPLICADA]",
+    "indices_existentes": "[LISTA DE ÍNDICES SI LOS CONOCES, O DESCONOCIDO]",
+    "tiempo_actual": "[CUÁNTO TARDA HOY]",
+    "frecuencia_uso": "[CADA CUÁNTO SE EJECUTA]"
+  },
+  "revisar_por_orden": [
+    "Funciones aplicadas sobre columnas en el WHERE que impiden usar índices",
+    "Filtros de fecha mal planteados y conversiones implícitas de tipo",
+    "SELECT de columnas que nadie usa y traída de filas que luego se descartan",
+    "Uniones sin condición o por columnas sin índice",
+    "Subconsultas repetidas que podrían calcularse una sola vez",
+    "Ordenaciones y agrupaciones sobre conjuntos enormes",
+    "Falta de índice en las columnas de filtro y de unión más usadas",
+    "Cálculos que se repiten en cada carga y podrían guardarse ya agregados"
+  ],
+  "formato_salida": {
+    "veredicto": "En dos frases: cuál es la causa principal",
+    "tabla_problemas": "Problema, por qué frena, esfuerzo de arreglo bajo medio o alto, mejora esperada alta media o baja",
+    "consulta_optimizada": "SQL reescrito y comentado, equivalente en resultados al original",
+    "indices_propuestos": "Sentencias CREATE INDEX con la explicación de qué acelera cada una y su coste en escrituras",
+    "comprobacion": "Cómo verificar que la versión nueva devuelve exactamente lo mismo que la vieja",
+    "si_sigue_lento": "Dos medidas de fondo, como tabla resumen precalculada o cambio de frecuencia del informe"
+  },
+  "restricciones": [
+    "La consulta optimizada debe devolver el mismo resultado: si cambia algo, avisarlo en mayúsculas",
+    "Nada de índices porque sí: justificar cada uno",
+    "Prohibido proponer cambios de estructura de tablas sin advertir del riesgo y de la copia de seguridad"
+  ]
+}

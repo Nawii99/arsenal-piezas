@@ -1,0 +1,40 @@
+{
+  "tarea": "Diagnosticar por qué [NOMBRE DE TU WEB O API] va lenta y entregar un plan de mejoras ordenado por impacto y esfuerzo",
+  "contexto": {
+    "producto": "[QUÉ HACE TU PRODUCTO EN UNA FRASE]",
+    "tecnologia": "[LENGUAJE Y FRAMEWORK], base de datos [BASE DE DATOS], alojado en [DÓNDE ESTÁ ALOJADO]",
+    "trafico": "[VISITAS O PETICIONES AL DÍA] con pico en [FRANJA HORARIA DEL PICO]",
+    "sintoma": "[QUÉ VA LENTO Y DESDE CUÁNDO]"
+  },
+  "entradas": {
+    "medidas_actuales": "[TIEMPOS DE RESPUESTA QUE CONOCES: MEDIA Y PERCENTIL 95 SI LO TIENES]",
+    "paginas_o_rutas_lentas": ["[RUTA 1]", "[RUTA 2]"],
+    "recursos_en_hora_punta": "[USO DE CPU, MEMORIA Y DISCO]",
+    "ya_probado": "[CAMBIOS QUE YA HAS HECHO Y QUÉ PASÓ]"
+  },
+  "metodo": [
+    "Reparte el tiempo total de una petición en cuatro tramos: red, servidor de aplicación, base de datos y servicios externos; di en cuál se va",
+    "Revisa primero las causas frecuentes: consultas repetidas en bucle (N+1), falta de índices, llamadas externas sin tiempo límite, imágenes sin comprimir y trabajo pesado hecho mientras el usuario espera",
+    "Distingue si el problema aparece solo con mucha carga (saturación) o también con un único usuario (código lento)",
+    "Para cada hipótesis, indica la medición concreta que la confirma antes de tocar nada",
+    "Ordena las mejoras por impacto dividido entre esfuerzo y marca cuáles se pueden deshacer sin riesgo"
+  ],
+  "restricciones": [
+    "No propongas reescribir el sistema ni cambiar de tecnología",
+    "Cada mejora debe caber en menos de [DÍAS DISPONIBLES] días de trabajo",
+    "Gasto extra de infraestructura permitido: [EUROS AL MES COMO MÁXIMO]",
+    "Explica en una frase cada término técnico la primera vez que lo uses"
+  ],
+  "formato_salida": {
+    "tipo": "informe en markdown",
+    "secciones": ["Resumen en 5 líneas", "Dónde se va el tiempo", "Hipótesis y cómo confirmarlas", "Plan en tres olas: hoy, esta semana, este mes", "Qué medir antes y después"],
+    "tabla_plan": "columnas: mejora | causa que ataca | impacto esperado | esfuerzo | riesgo | cómo se comprueba"
+  },
+  "criterios_calidad": [
+    "Ninguna hipótesis sin una forma concreta de confirmarla",
+    "Al menos tres mejoras que no cuesten dinero en servidores",
+    "Cada mejora dice qué métrica debería moverse",
+    "Si faltan datos clave, pídelos primero en vez de suponer"
+  ],
+  "tono": "directo y llano, como un compañero con experiencia explicándotelo"
+}

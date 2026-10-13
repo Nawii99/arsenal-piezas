@@ -1,0 +1,47 @@
+{
+  "tarea": "Extraer los datos de un lote de facturas y tickets y volcarlos en una tabla de gastos consistente y revisable.",
+  "contexto": {
+    "actividad": "[A QUÉ ME DEDICO]",
+    "regimen": "[AUTÓNOMO / SOCIEDAD / ESTIMACIÓN DIRECTA...]",
+    "periodo": "[TRIMESTRE Y AÑO]",
+    "destino": "[GESTORÍA / MI EXCEL DE CONTROL / PROGRAMA DE CONTABILIDAD]"
+  },
+  "entradas": {
+    "documentos": "[PEGA EL TEXTO DE LAS FACTURAS O ADJUNTA LOS PDF UNO A UNO]",
+    "categorias": "[LISTA DE CATEGORÍAS QUE YA USO: SOFTWARE, SUMINISTROS, DIETAS, MATERIAL...]",
+    "cuenta_de_pago": "[BANCO O TARJETA CON LA QUE PAGO NORMALMENTE]"
+  },
+  "pasos": [
+    "Por cada documento extrae: fecha, proveedor, NIF del proveedor, número de factura, base imponible, tipo de IVA, cuota de IVA, total y forma de pago.",
+    "Comprueba la aritmética: base más cuota igual a total, y cuota igual a base por el tipo declarado.",
+    "Marca como dudoso todo documento donde falte NIF, número de factura o no cuadren las cuentas.",
+    "Distingue factura completa de ticket simplificado y avísame de cuáles conviene pedir de nuevo.",
+    "Asigna categoría de gasto de mi lista, sin inventar categorías nuevas salvo que lo justifiques aparte.",
+    "Detecta duplicados por proveedor, importe y fecha cercana.",
+    "Suma totales por categoría, por tipo de IVA y del periodo entero.",
+    "Deja una columna de notas con lo que hay que preguntar o reclamar."
+  ],
+  "restricciones": [
+    "No estimes importes ni tipos de IVA que no aparezcan en el documento: se marcan como pendientes.",
+    "No des consejo fiscal ni digas qué es deducible: eso lo decide mi gestoría.",
+    "Respeta los importes tal cual aparecen, con dos decimales."
+  ],
+  "errores_tipicos": [
+    "Confundir el total con la base imponible en tickets de restaurante.",
+    "Facturas en otra moneda apuntadas como euros.",
+    "El NIF del emisor confundido con el mío en facturas donde salen los dos.",
+    "Facturas rectificativas apuntadas como un gasto más en vez de restar.",
+    "Suscripciones anuales metidas enteras en un mes sin avisar de que cubren doce."
+  ],
+  "formato_salida": {
+    "tabla": "Columnas: fecha, proveedor, NIF, numero_factura, concepto, categoria, base, tipo_iva, cuota_iva, total, forma_pago, estado, notas.",
+    "separador": "CSV con punto y coma, decimales con coma, listo para abrir en Excel español.",
+    "resumen": "Totales por categoría y por tipo de IVA, más el total del periodo.",
+    "pendientes": "Lista numerada de documentos dudosos con qué falta en cada uno."
+  },
+  "criterios_calidad": [
+    "Cada fila cuadra: base más cuota igual a total.",
+    "Ningún dato aparece inventado; lo que falta se ve como pendiente.",
+    "Puedo mandarle el CSV a la gestoría sin retocar columnas."
+  ]
+}

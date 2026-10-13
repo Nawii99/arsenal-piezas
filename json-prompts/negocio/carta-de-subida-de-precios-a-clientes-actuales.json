@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribir la comunicación de subida de precios a clientes actuales y preparar las respuestas a sus reacciones",
+  "contexto": {
+    "negocio": "[TU NEGOCIO Y QUÉ SERVICIO DAS A ESTOS CLIENTES]",
+    "tipo_de_cliente": "[CLIENTE FIEL DE AÑOS / CLIENTE PEQUEÑO / CLIENTE GRANDE]",
+    "relacion": "[TRATO DE TÚ O DE USTED, FRECUENCIA DE CONTACTO]"
+  },
+  "entradas": {
+    "precio_actual": "[PRECIO O CUOTA DE HOY]",
+    "precio_nuevo": "[PRECIO O CUOTA NUEVA]",
+    "fecha_efecto": "[DESDE QUÉ FECHA SE APLICA]",
+    "ultima_subida": "[AÑO DE LA ÚLTIMA SUBIDA O NUNCA]",
+    "motivos_reales": "[SUBIDA DE COSTES, MÁS SERVICIO INCLUIDO, MEJORAS, DEMANDA]",
+    "margen_de_maniobra": "[QUÉ PUEDES OFRECER SI SE RESISTE: PLAZO, ALCANCE, PAGO ANUAL]"
+  },
+  "reglas": [
+    "Avisar con antelación suficiente y con fecha concreta, nunca con efecto retroactivo",
+    "Un solo motivo claro, sin lista de excusas ni quejas sobre lo caro que está todo",
+    "No pedir perdón ni usar condicionales del tipo me gustaría poder mantener",
+    "Recordar en una línea el valor entregado hasta ahora, con un hecho concreto",
+    "Dejar la puerta abierta a hablarlo, pero sin insinuar que el precio es negociable"
+  ],
+  "formato_salida": {
+    "version_email": "Asunto y cuerpo de menos de 180 palabras",
+    "version_whatsapp": "Mensaje de 5 líneas para clientes de trato informal",
+    "version_carta_cliente_grande": "Texto formal con cuadro de precios antiguo y nuevo",
+    "guion_llamada": "Cinco frases para decirlo por teléfono, con la pausa marcada tras el precio",
+    "respuestas_a_objeciones": "Tabla con la objeción típica, qué responder y hasta dónde ceder",
+    "plan_por_cliente": "A quién avisar primero y a quién dejar para el final, según riesgo de fuga"
+  },
+  "criterios_calidad": [
+    "El precio nuevo y la fecha aparecen sin rodeos en las primeras líneas",
+    "Ninguna frase suena a disculpa",
+    "Las respuestas a objeciones incluyen qué contrapartida pedir a cambio de cualquier concesión"
+  ],
+  "tono": "Educado, firme y breve, en español de España"
+}

@@ -1,0 +1,46 @@
+{
+  "tarea": "Inventariar accesos críticos del negocio y eliminar los puntos únicos de fallo",
+  "contexto": {
+    "negocio": "[A QUÉ SE DEDICA]",
+    "personas": "[QUIÉN TOCA QUÉ: YO, SOCIO, FREELANCE, GESTORÍA]",
+    "servicios": "[DOMINIO, HOSTING, BANCO, PASARELA DE PAGO, EMAIL, REDES, IA, FACTURACIÓN]",
+    "perfil_usuario": "sin perfil técnico; nada de servidores de claves complicados"
+  },
+  "entradas": {
+    "gestor_de_contrasenas": "[EL QUE USO O 'NINGUNO']",
+    "segundo_factor": "[APP, SMS, LLAVE FÍSICA O NADA]"
+  },
+  "pasos": [
+    "1. Lista cada servicio con: a nombre de quién está, con qué correo se entra, quién paga y qué pasa si se cae.",
+    "2. Marca los servicios llave, los que si caen arrastran a los demás: correo del dominio, dominio y banco.",
+    "3. Comprueba que el correo de recuperación no sea uno alojado en el propio servicio que puedes perder.",
+    "4. Activa segundo factor en los servicios llave y guarda los códigos de recuperación fuera del móvil.",
+    "5. Sustituye contraseñas compartidas por usuarios individuales con permisos mínimos donde se pueda.",
+    "6. Define el sobre de emergencia: qué necesita una persona de confianza para entrar si tú no estás.",
+    "7. Escribe el procedimiento de baja: qué se revoca el mismo día en que un colaborador se va.",
+    "8. Fija una revisión semestral de accesos y quítalos a quien ya no los use."
+  ],
+  "restricciones": [
+    "Nunca dejes por escrito una contraseña fuera del gestor de contraseñas.",
+    "El sobre de emergencia describe cómo llegar a las llaves, no contiene las llaves.",
+    "Permisos mínimos: nadie es administrador por comodidad."
+  ],
+  "errores_tipicos": [
+    "Tener el dominio a nombre de la agencia o del primo que montó la web.",
+    "Segundo factor por SMS en el banco y en el dominio con un número que puede ser duplicado.",
+    "Códigos de recuperación guardados solo en el mismo móvil que puede perderse.",
+    "Compartir una única cuenta entre tres personas y no saber quién hizo qué.",
+    "No revocar accesos al terminar una colaboración."
+  ],
+  "formato_salida": {
+    "tabla_accesos": "columnas: servicio | titular | correo de acceso | 2FA | quién más entra | criticidad | qué pasa si cae",
+    "riesgos_ordenados": "los cinco puntos únicos de fallo, de más grave a menos",
+    "plan_30_dias": "acciones concretas por semana para cerrarlos",
+    "sobre_de_emergencia": "contenido y dónde se guarda"
+  },
+  "criterios_calidad": [
+    "Todos los servicios llave están a nombre del negocio o del dueño.",
+    "Ningún servicio llave depende de un único dispositivo.",
+    "Existe procedimiento de baja escrito y probado."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Prever la demanda por referencia y calcular punto de pedido, stock de seguridad y cantidad a comprar",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU NEGOCIO]",
+    "horizonte": "[NÚMERO DE SEMANAS A PREVER, POR EJEMPLO 8]",
+    "nivel_de_servicio_objetivo": "[95% SI NO SABES QUÉ PONER]"
+  },
+  "entradas": {
+    "ventas_por_referencia": "[REFERENCIA;SEMANA;UNIDADES VENDIDAS, UNA LÍNEA POR REFERENCIA Y SEMANA, MÍNIMO 26 SEMANAS]",
+    "stock_actual": "[REFERENCIA;UNIDADES EN ALMACÉN;UNIDADES YA PEDIDAS AL PROVEEDOR]",
+    "plazo_de_entrega": "[REFERENCIA;DÍAS QUE TARDA EL PROVEEDOR]",
+    "lote_minimo": "[REFERENCIA;UNIDADES MÍNIMAS POR PEDIDO]",
+    "coste_unitario": "[REFERENCIA;COSTE EN EUROS]"
+  },
+  "procedimiento": [
+    "1. Clasifica las referencias en ABC por facturación y avisa de que las C no merecen previsión fina",
+    "2. Para cada referencia calcula la demanda media semanal y su desviación típica de las últimas 13 semanas",
+    "3. Detecta referencias con demanda intermitente (más de la mitad de semanas a cero) y trátalas por separado con reposición simple",
+    "4. Aplica el factor estacional de la referencia si el histórico lo justifica",
+    "5. Calcula stock de seguridad con el nivel de servicio pedido y la variabilidad de la demanda durante el plazo de entrega",
+    "6. Punto de pedido = demanda media durante el plazo de entrega + stock de seguridad",
+    "7. Cantidad a pedir = necesidad del horizonte - stock actual - pedidos en curso, redondeada al alza al lote mínimo",
+    "8. Marca el stock sobrante: referencias con más de 12 semanas de cobertura"
+  ],
+  "restricciones": [
+    "No propongas comprar referencias sin ventas en las últimas 13 semanas",
+    "Indica siempre unidades y euros de cada pedido propuesto",
+    "Si una referencia tiene menos de 8 semanas de histórico, márcala como no fiable"
+  ],
+  "formato_salida": {
+    "tabla_pedido": "Referencia | Clase ABC | Demanda semanal prevista | Stock actual | Cobertura en semanas | Punto de pedido | Unidades a pedir | Euros | Urgencia",
+    "tabla_exceso": "Referencia | Unidades paradas | Euros inmovilizados | Qué hacer con ellas",
+    "resumen": "Importe total del pedido y las 5 referencias en riesgo de rotura esta misma semana"
+  },
+  "criterios_calidad": [
+    "Ninguna cantidad propuesta baja del lote mínimo del proveedor",
+    "Las referencias en riesgo de rotura aparecen ordenadas por días hasta quedarse a cero"
+  ]
+}

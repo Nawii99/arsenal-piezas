@@ -1,0 +1,42 @@
+{
+  "tarea": "Escribir un informe corto que explique la deuda técnica a personas no técnicas y justifique una decisión",
+  "contexto": {
+    "destinatario": "[A QUIÉN VA: dirección, cliente, socio, comité]",
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "peticion": "[QUÉ PIDES: tiempo, presupuesto, parar funcionalidades, contratar]",
+    "nivel_tecnico_del_lector": "ninguno"
+  },
+  "entradas": {
+    "problemas_tecnicos": "[LISTA DE LOS 3-6 PROBLEMAS PRINCIPALES, EN TU LENGUAJE]",
+    "impacto_observado": "[RETRASOS, INCIDENCIAS, QUEJAS DE CLIENTES, HORAS DE SOPORTE]",
+    "intentos_previos": "[QUÉ SE HA INTENTADO YA Y POR QUÉ NO FUNCIONÓ]"
+  },
+  "reglas_de_traduccion": [
+    "Sustituye cada término técnico por su consecuencia de negocio: retraso, riesgo de caída, coste de soporte, cliente perdido",
+    "Usa la metáfora del préstamo: lo prestado, los intereses que se pagan cada mes y qué pasa si no se devuelve",
+    "Da rangos y supuestos, nunca cifras exactas inventadas"
+  ],
+  "restricciones": [
+    "Máximo una página",
+    "Prohibido usar jerga sin explicarla en la misma frase",
+    "No culpes a personas ni a decisiones pasadas: describe la situación actual",
+    "Toda cifra debe ir acompañada de cómo se ha estimado"
+  ],
+  "formato_salida": {
+    "tipo": "documento markdown",
+    "secciones": [
+      "Situación en 3 frases",
+      "Qué nos está costando hoy (tiempo, dinero, riesgo)",
+      "Qué pasa si no hacemos nada en 6 y 12 meses",
+      "Tres opciones: no hacer nada, arreglo mínimo, arreglo completo (coste, plazo y qué se gana)",
+      "Recomendación y qué necesito de vosotros",
+      "Cómo sabremos que ha funcionado"
+    ]
+  },
+  "tono": "Tranquilo, sin dramatismo ni alarmismo; hechos y consecuencias",
+  "criterios_calidad": [
+    "Alguien sin perfil técnico entiende el documento a la primera",
+    "Cada opción tiene coste, plazo y consecuencia",
+    "Termina con una petición clara y una fecha"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "tarea": "Revisar las dependencias de un proyecto en Go o Rust y devolver un plan de saneamiento priorizado",
+  "rol": "Responsable de seguridad de la cadena de suministro de software",
+  "entradas": {
+    "lenguaje": "[GO O RUST]",
+    "manifiesto": "[PEGA EL CONTENIDO DE go.mod O DE Cargo.toml]",
+    "fichero_bloqueo": "[PEGA go.sum O Cargo.lock SI LO TIENES, O ESCRIBE 'NO LO TENGO']",
+    "tipo_de_producto": "[CERRADO Y COMERCIAL, ABIERTO O INTERNO]",
+    "tolerancia_a_cambios": "[SOLO PARCHES, MENORES TAMBIÉN O PUEDO SUBIR VERSIONES MAYORES]"
+  },
+  "revisiones": ["vulnerabilidades conocidas y qué versión las corrige", "paquetes abandonados: sin publicaciones recientes, sin mantenimiento o marcados como obsoletos", "licencias incompatibles con el tipo de producto, con atención especial a GPL y AGPL en productos cerrados", "dependencias que podrías quitar porque la librería estándar ya lo hace", "exceso de dependencias transitivas para una funcionalidad pequeña", "paquetes con nombre parecido a otro popular, por si hay confusión de nombres", "en Rust, uso de bloques unsafe en dependencias críticas"],
+  "herramientas_a_recomendar": {
+    "go": ["govulncheck ./...", "go list -m -u all", "go mod tidy", "revisar go.sum en el control de versiones"],
+    "rust": ["cargo audit", "cargo deny check licenses bans", "cargo outdated", "cargo update seguido de tests"]
+  },
+  "reglas": ["No afirmes que una versión concreta tiene una vulnerabilidad concreta si no estás seguro: marca lo que hay que verificar con la herramienta y di el comando exacto", "Ordena por riesgo real: expuesto a internet y con datos sensibles primero", "Avisa de las actualizaciones que rompen la API y de lo que habrá que tocar", "Distingue lo urgente de lo conveniente"],
+  "formato_salida": {
+    "tipo": "tabla en markdown más plan de acción",
+    "columnas_tabla": ["dependencia", "versión actual", "versión recomendada", "motivo", "riesgo (alto, medio, bajo)", "rompe compatibilidad (sí o no)"],
+    "cierre": ["orden de actualización en tres tandas con qué probar tras cada una", "comandos exactos a ejecutar", "qué automatizar para no repetir esta revisión a mano"]
+  },
+  "criterios_calidad": ["nada se marca como vulnerable sin decir cómo comprobarlo", "el plan se puede ejecutar en una tarde", "las licencias se evalúan según el tipo de producto declarado"],
+  "tono": "serio, sin alarmismo"
+}

@@ -1,0 +1,57 @@
+{
+  "tarea": "Calcular el margen real por cliente en un periodo, ordenar los clientes por rentabilidad y proponer una decisión concreta para cada uno.",
+  "contexto": {
+    "negocio": "[QUÉ VENDO]",
+    "periodo_analizado": "[ÚLTIMOS 6 O 12 MESES]",
+    "coste_hora_interno": "[LO QUE ME CUESTA MI HORA, SI NO LO SÉ, DILO]",
+    "capacidad": "[HORAS QUE PUEDO VENDER AL MES]"
+  },
+  "entradas": {
+    "clientes": "[CLIENTE | FACTURADO EN EL PERIODO | HORAS DEDICADAS REALES | GASTOS DIRECTOS DEL PROYECTO | DÍAS MEDIOS EN PAGAR | DESCUENTOS APLICADOS | EXTRAS NO FACTURADOS]",
+    "gastos_generales_del_periodo": "[IMPORTE TOTAL]",
+    "notas_cualitativas": "[QUIÉN ME TRAE RECOMENDADOS, QUIÉN ME ESTRESA, QUIÉN ES ESCAPARATE]"
+  },
+  "conocimiento_a_aplicar": [
+    "El cliente que más factura no suele ser el que más deja: hay que mirar euros de margen por hora dedicada.",
+    "Las horas invisibles son las que descuadran todo: reuniones, correos, cambios de última hora y revisiones no cerradas.",
+    "Un cliente que paga a 90 días te está usando de banco: hay que valorar ese coste, aunque sea de forma aproximada.",
+    "Los gastos generales se reparten por horas dedicadas, no a partes iguales entre clientes.",
+    "Un cliente puede ser poco rentable y aun así interesar si trae recomendados o sirve de escaparate; eso se decide a la vista del número, no en su lugar.",
+    "Las tres salidas para un cliente en pérdidas son: subir precio, reducir alcance o dejarlo ir con orden."
+  ],
+  "pasos": [
+    "1. Calcular para cada cliente: ingreso neto, coste directo, coste de horas al coste hora interno y reparto de gastos generales.",
+    "2. Obtener margen en euros, margen en porcentaje y margen por hora dedicada.",
+    "3. Ordenar de mayor a menor margen por hora y marcar los que quedan por debajo de mi coste hora.",
+    "4. Calcular el peso de cada cliente sobre la facturación total.",
+    "5. Cruzar el número con las notas cualitativas y clasificar en: SUBIR PRECIO, REDUCIR ALCANCE, MANTENER, ESCALAR o SOLTAR.",
+    "6. Para los de subir precio, proponer la subida concreta en porcentaje y el argumento en una frase.",
+    "7. Estimar qué pasa con mis ingresos y mis horas si aplico todo el plan."
+  ],
+  "errores_tipicos": [
+    "Medir solo facturación y quedarse con el cliente grande que da pérdidas.",
+    "No apuntar las horas reales y calcular con las presupuestadas.",
+    "Soltar un cliente sin tener con qué llenar ese hueco.",
+    "Subir el precio a todos a la vez y sin aviso previo.",
+    "Olvidar los extras regalados, que son la fuga más común."
+  ],
+  "restricciones": [
+    "Si no tengo horas reales, dilo y trabaja con estimaciones marcadas como tales.",
+    "No propongas soltar a un cliente que sea más del 30 por ciento de mi facturación sin un plan de sustitución previo.",
+    "Nada de juicios sobre las personas: hablamos de números y de condiciones."
+  ],
+  "formato_salida": {
+    "1_tabla": "CLIENTE | FACTURADO | HORAS | MARGEN EUROS | MARGEN POR HORA | % DE MI FACTURACIÓN | DECISIÓN",
+    "2_top_y_fondo": "Los 3 mejores y los 3 peores con una línea de explicación cada uno",
+    "3_plan": "Para cada cliente a renegociar: subida propuesta, fecha de aviso y frase exacta para el email",
+    "4_impacto": "Ingresos y horas antes y después si sale el plan, y si no sale",
+    "5_riesgos": "Qué puede salir mal y qué hago si me dicen que no"
+  },
+  "criterios_calidad": [
+    "Aparece margen por hora, no solo margen en euros.",
+    "Todos los clientes tienen decisión asignada.",
+    "Las frases de renegociación se pueden enviar tal cual, sin adornos ni excusas.",
+    "El escenario de que todos digan que no está calculado."
+  ],
+  "si_faltan_datos": "Pídeme las horas reales por cliente aunque sean aproximadas; sin eso el análisis no vale."
+}

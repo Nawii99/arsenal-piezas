@@ -1,0 +1,50 @@
+{
+  "tarea": "Evaluar la imprimibilidad de una pieza 3D, proponer orientacion y ajustes, y calcular su coste por unidad",
+  "contexto": {
+    "impresora": "[MODELO Y TECNOLOGIA: FDM O RESINA]",
+    "material": "[PLA / PETG / ABS / RESINA ESTANDAR / RESINA RESISTENTE]",
+    "uso_final": "[DECORATIVO / FUNCIONAL CON CARGA / ENCAJA CON OTRA PIEZA / MINIATURA]",
+    "volumen_de_impresion": "[X POR Y POR Z EN MM]"
+  },
+  "entradas": {
+    "medidas_de_la_pieza": "[LARGO ANCHO ALTO EN MM]",
+    "descripcion_de_la_forma": "[VOLADIZOS, PAREDES FINAS, TEXTOS, AGUJEROS, PARTES MOVILES]",
+    "grosor_minimo": "[MM O NO LO SE]",
+    "tolerancias_necesarias": "[HOLGURAS EN MM SI ENCAJA CON ALGO]",
+    "coste_material": "[EUROS POR KILO O POR LITRO]",
+    "coste_hora_maquina": "[EUROS POR HORA QUE TE ASIGNAS]",
+    "tiempo_estimado": "[HORAS QUE DA EL LAMINADOR O NO LO SE]",
+    "unidades": "[CUANTAS PIEZAS]"
+  },
+  "revisiones": [
+    "Malla cerrada y sin agujeros ni caras invertidas: si no lo sabes, indica como comprobarlo",
+    "Paredes por debajo del minimo del material y detalles que se perderan al imprimir",
+    "Voladizos por encima de 45 grados y donde haran falta soportes",
+    "Superficie de contacto con la cama y riesgo de despegue o alabeo",
+    "Orientacion frente a la direccion de la fuerza: las capas se rompen antes en el sentido de crecimiento",
+    "Holguras para piezas que encajan y compensacion de agujeros que suelen salir mas estrechos",
+    "Huecos cerrados en resina que atrapan liquido y necesitan agujero de drenaje",
+    "Trocear la pieza si no cabe o si asi se ahorran soportes"
+  ],
+  "pasos": [
+    "1. Marca cada revision como OK, RIESGO o BLOQUEANTE y explica la consecuencia visible",
+    "2. Propon dos orientaciones posibles con sus pros y contras y elige una recomendada",
+    "3. Da los ajustes de partida: altura de capa, perimetros, relleno y tipo de soporte, con el porque de cada uno",
+    "4. Lista el postprocesado necesario y sus minutos",
+    "5. Calcula coste por unidad: material mas horas de maquina mas postprocesado mas margen de fallo",
+    "6. Propon precio de venta por unidad y por lote, separando coste y margen"
+  ],
+  "restricciones": [
+    "Si falta el peso o el tiempo, calcula con un rango y di que dato lo cerraria",
+    "No prometas resistencia mecanica concreta sin ensayo"
+  ],
+  "formato_salida": {
+    "bloques": ["Semaforo de imprimibilidad", "Tabla de revisiones", "Orientacion recomendada", "Ajustes de partida", "Postprocesado", "Desglose de coste por unidad", "Precio sugerido"],
+    "unidades": "milimetros, gramos, horas y euros"
+  },
+  "criterios_calidad": [
+    "El coste incluye material, maquina, postprocesado y un porcentaje de piezas falladas",
+    "La orientacion elegida se justifica con la forma concreta de la pieza",
+    "Los ajustes son coherentes con el material y el uso final indicados"
+  ]
+}

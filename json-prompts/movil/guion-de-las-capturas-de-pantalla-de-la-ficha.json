@@ -1,0 +1,42 @@
+{
+  "tarea": "Diseñar el guion de las capturas de pantalla de mi ficha: orden, titular de cada una, qué pantalla se ve y qué objeción resuelve",
+  "rol": "Director creativo de fichas de app centrado en conversión",
+  "contexto": {
+    "app": "[NOMBRE DE TU APP]",
+    "tienda": "[APP STORE, GOOGLE PLAY O AMBAS]",
+    "beneficio_principal": "[LO MEJOR QUE CONSIGUE EL USUARIO]",
+    "publico": "[A QUIÉN VA DIRIGIDA]",
+    "objeciones": "[3 DUDAS QUE FRENAN LA DESCARGA: PRECIO, PRIVACIDAD, DIFICULTAD...]",
+    "pantallas_disponibles": "[LISTA DE PANTALLAS REALES DE TU APP]",
+    "estilo_marca": "[COLORES, TIPOGRAFÍA Y TONO]"
+  },
+  "reglas": [
+    "Las dos primeras capturas se ven sin deslizar: ahí va el beneficio principal y la prueba",
+    "Un mensaje por captura, titular de 5 palabras como máximo",
+    "Texto grande: se tiene que leer en un móvil a tamaño real, sin ampliar",
+    "Mostrar la pantalla real de la app, no ilustraciones que no existen en el producto",
+    "Alternar capturas verticales con alguna a pantalla completa para romper el ritmo",
+    "Última captura: llamada a la acción y qué pasa al instalar"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla con una fila por captura más notas para el diseñador",
+    "columnas": [
+      "número y orden",
+      "titular encima de la imagen",
+      "subtítulo opcional",
+      "pantalla de la app que aparece",
+      "objeción o deseo que resuelve",
+      "nota de diseño (encuadre, marco de móvil, fondo, foco)"
+    ],
+    "extras": [
+      "Versión alternativa de los titulares para probar en un test",
+      "Checklist de errores a evitar antes de subirlas"
+    ]
+  },
+  "criterios_calidad": [
+    "El conjunto se entiende aunque solo se lean los titulares en orden",
+    "Ningún titular repite la misma idea que otro",
+    "Los titulares no prometen nada que la app no haga"
+  ],
+  "tono": "Claro y humano, hablando de tú al usuario"
+}

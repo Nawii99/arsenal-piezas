@@ -1,0 +1,54 @@
+{
+  "tarea": "Preparar el cierre de un trimestre para enviarlo a la gestoría: revisar que no falte nada, marcar lo dudoso y generar la lista de preguntas concretas.",
+  "contexto": {
+    "perfil": "[AUTÓNOMO EN ESPAÑA / SOCIEDAD PEQUEÑA]",
+    "trimestre": "[CUÁL Y CON QUÉ FECHA LÍMITE DE ENVÍO A LA GESTORÍA]",
+    "aviso": "Este material organiza la información: quien decide qué es deducible y qué se presenta es tu gestor"
+  },
+  "entradas": {
+    "facturas_emitidas": "[NÚMEROS DE FACTURA DEL TRIMESTRE, IMPORTES, IVA Y RETENCIÓN SI LA HAY]",
+    "facturas_recibidas": "[PROVEEDORES, IMPORTES, IVA, Y SI TIENES EL PDF A TU NOMBRE Y CON TU NIF]",
+    "movimientos_bancarios": "[EXTRACTO DEL TRIMESTRE DE TODAS LAS CUENTAS Y TARJETAS DEL NEGOCIO]",
+    "gastos_pagados_con_dinero_personal": "[LISTA, SI LOS HAY]",
+    "gastos_mixtos": "[MÓVIL, COCHE, CASA COMO OFICINA, INTERNET, DIETAS]",
+    "otros": "[VENTAS A OTROS PAÍSES, COMPRAS A PROVEEDORES EXTRANJEROS, SUBVENCIONES, PLATAFORMAS]"
+  },
+  "metodo": [
+    "1. Comprueba la serie de facturas emitidas: numeración correlativa sin huecos y sin saltos de fecha. Señala cualquier hueco.",
+    "2. Cruza el extracto bancario con las facturas: marca todo cargo sin factura asociada y toda factura sin cobro localizado.",
+    "3. Lista las facturas de gasto que faltan por pedir, con el nombre del proveedor y el enlace o email al que reclamarlas. Las suscripciones y las compras online son las que más se olvidan.",
+    "4. Revisa que cada factura recibida tenga tu nombre o razón social y tu NIF: un ticket sin datos no vale igual, y hay que preguntarlo.",
+    "5. Marca en amarillo los gastos dudosos: comidas, ropa, coche, casa, formación, regalos. No decidas tú: prepáralos como preguntas para el gestor con el importe y el motivo del gasto.",
+    "6. Señala los casos especiales que cambian la declaración: clientes o proveedores de fuera de España, ventas por plataformas, inversión del sujeto pasivo, operaciones sin IVA. Pregunta cómo tratarlos.",
+    "7. Calcula el borrador orientativo: IVA repercutido menos soportado, e ingresos menos gastos del trimestre, para que sepas de cuánto va la cosa antes de la llamada. Márcalo como estimación.",
+    "8. Comprueba que tienes el dinero apartado para ese pago y, si no llega, di que la conversación de aplazamiento se tiene antes de la fecha límite.",
+    "9. Genera el email de envío al gestor con la lista de adjuntos y las preguntas numeradas."
+  ],
+  "restricciones": [
+    "No afirmes que un gasto es deducible: se plantea como pregunta al gestor.",
+    "No cites artículos, porcentajes ni modelos que no te hayan dado como dato.",
+    "Nada de sugerir facturas de conveniencia, gastos ficticios ni retrasos en la presentación.",
+    "El borrador es orientativo y hay que decirlo cada vez que aparezca una cifra."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Enviar el trimestre sin las facturas de las suscripciones online.",
+    "Mezclar la cuenta personal con la del negocio y no poder justificar movimientos.",
+    "Guardar solo el ticket del datáfono en vez de la factura completa.",
+    "Dejar la preparación para el último día del plazo.",
+    "Descubrir el importe a pagar el mismo día del cargo."
+  ],
+  "formato_salida": {
+    "bloque_1": "Checklist de comprobaciones con marca de hecho o pendiente.",
+    "bloque_2": "Lista de facturas que faltan por pedir, con proveedor y a quién reclamarlas.",
+    "bloque_3": "Movimientos sin justificar, uno por línea, con fecha e importe.",
+    "bloque_4": "Preguntas numeradas para el gestor, cada una con su importe y contexto.",
+    "bloque_5": "Borrador orientativo del trimestre y comprobación de si el dinero está apartado.",
+    "bloque_6": "Email de envío listo para copiar, con la lista de adjuntos.",
+    "estilo": "Español de España, tuteando, ordenado y sin alarmar"
+  },
+  "criterios_calidad": [
+    "Ningún movimiento del extracto se queda sin clasificar o sin marcar como pendiente.",
+    "Las preguntas al gestor son concretas y se contestan con un sí o un no.",
+    "En ningún punto se da una decisión fiscal como si fuera cierta."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "tarea": "comparar_cv_con_oferta",
+  "instrucciones": {
+    "rol": "Eres un experto en selección de personal y en sistemas ATS.",
+    "reglas": [
+      "No inventes experiencia que no esté en el CV.",
+      "Si un requisito no aparece en el CV, márcalo como que falta.",
+      "Responde solo con el JSON de salida, sin texto adicional."
+    ]
+  },
+  "entrada": {
+    "cv": "[PEGAR TEXTO COMPLETO DEL CV]",
+    "oferta": "[PEGAR TEXTO COMPLETO DE LA OFERTA]"
+  },
+  "formato_salida": {
+    "puntuacion_match": "número del 0 al 100",
+    "palabras_clave_oferta": ["lista de palabras clave detectadas en la oferta"],
+    "palabras_clave_presentes_en_cv": ["lista de las que sí aparecen en el CV"],
+    "palabras_clave_ausentes_en_cv": ["lista de las que faltan en el CV"],
+    "riesgos_formato_ats": ["ejemplo: usa tablas", "ejemplo: usa columnas"],
+    "cambios_sugeridos": [
+      {
+        "frase_original_cv": "texto tal cual está en el CV",
+        "frase_sugerida": "texto reescrito con el lenguaje de la oferta, sin inventar nada"
+      }
+    ]
+  }
+}

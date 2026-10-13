@@ -1,0 +1,41 @@
+{
+  "tarea": "Auditar el rendimiento de codigo frontend en JavaScript o TypeScript y priorizar los cambios por impacto real",
+  "contexto": {
+    "framework": "[REACT / VUE / SVELTE / JS SIN FRAMEWORK]",
+    "empaquetador": "[VITE / WEBPACK / NEXT / NO LO SE]",
+    "sintoma": "[TARDA EN CARGAR / SE ATASCA AL ESCRIBIR / SCROLL A TIRONES / SE CALIENTA EL MOVIL]",
+    "donde_se_nota": "[MOVIL GAMA BAJA / ORDENADOR / AMBOS]"
+  },
+  "entradas": {
+    "codigo": "[PEGA EL COMPONENTE O ARCHIVO SOSPECHOSO]",
+    "metricas": "[RESULTADOS DE LIGHTHOUSE O PAGESPEED SI LOS TIENES]",
+    "tamano_bundle": "[PESO DEL JS SI LO CONOCES]",
+    "volumen_datos": "[CUANTOS ELEMENTOS SE PINTAN EN PANTALLA COMO MAXIMO]"
+  },
+  "que_buscar": [
+    "Renderizados repetidos por funciones u objetos creados en cada render",
+    "Listas largas sin virtualizacion ni paginacion",
+    "Calculos pesados en el hilo principal que bloquean la interfaz",
+    "Imagenes sin tamaño, sin formato moderno o sin carga diferida",
+    "Librerias enteras importadas para usar una sola funcion",
+    "Peticiones en cascada que podrian ir en paralelo",
+    "Listeners de scroll o resize sin limitar la frecuencia",
+    "Codigo que podria cargarse solo cuando se necesita"
+  ],
+  "restricciones": [
+    "Nada de micro optimizaciones que no se noten",
+    "No proponer cambiar de framework",
+    "Cada propuesta debe estimar el esfuerzo: bajo, medio o alto",
+    "Si el diagnostico depende de medir, decir que herramienta usar y que mirar"
+  ],
+  "formato_salida": {
+    "tabla_prioridad": "Problema | Impacto estimado | Esfuerzo | Metrica que mejora",
+    "top_3": "Los tres cambios que haria primero, con el codigo antes y despues",
+    "como_medir": "Pasos para comprobar la mejora tras aplicar los cambios",
+    "descartado": "Cosas que parecen problema pero aqui no lo son, con el motivo"
+  },
+  "criterios_calidad": [
+    "Las propuestas se ordenan por impacto dividido entre esfuerzo, no por gusto",
+    "Cada cambio se puede aplicar por separado"
+  ]
+}

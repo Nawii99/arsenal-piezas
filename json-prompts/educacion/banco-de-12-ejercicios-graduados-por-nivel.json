@@ -1,0 +1,39 @@
+{
+  "tarea": "Diseñar un banco de 12 ejercicios prácticos graduados por dificultad sobre un tema concreto",
+  "contexto": {
+    "formacion": "[NOMBRE DEL CURSO O FORMACIÓN]",
+    "tema_concreto": "[TEMA EXACTO DE LA SESIÓN]",
+    "perfil_alumnado": "[QUIÉN APRENDE: EDAD, NIVEL PREVIO Y POR QUÉ SE FORMA]",
+    "duracion_disponible": "[MINUTOS TOTALES DE PRÁCTICA]",
+    "herramientas_permitidas": "[ORDENADOR, CALCULADORA, APUNTES O NADA]"
+  },
+  "objetivo_aprendizaje": "Al terminar, el alumno debe ser capaz de [VERBO OBSERVABLE + RESULTADO CONCRETO]",
+  "entradas": {
+    "contenido_base": "[PEGA AQUÍ TU TEMARIO, APUNTES O GUION DE CLASE]",
+    "errores_ya_observados": "[ERRORES QUE YA HAS VISTO EN CLASE, SI LOS TIENES]"
+  },
+  "instrucciones": [
+    "Reparte los 12 ejercicios en 3 niveles: 4 de reconocimiento (aplicar la regla con los datos dados), 4 de aplicación (elegir el método y ejecutarlo) y 4 de transferencia (situación nueva con datos incompletos o sobrantes)",
+    "Usa solo conceptos que aparezcan en el contenido base: no introduzcas materia nueva",
+    "Pon datos realistas del sector, con nombres, cifras y unidades verosímiles",
+    "En los de transferencia incluye al menos un dato irrelevante para obligar a decidir qué se usa",
+    "Escribe la solución completa paso a paso, no solo el resultado final",
+    "Señala en cada solución el punto exacto donde suele fallar la gente"
+  ],
+  "restricciones": [
+    "Enunciados de 90 palabras como máximo",
+    "Cada ejercicio con una única respuesta correcta defendible",
+    "Nada de preguntas de memoria pura ni de definiciones",
+    "Español de España, tuteando al alumno"
+  ],
+  "formato_salida": {
+    "tabla_resumen": ["numero", "nivel", "que evalua", "tiempo estimado"],
+    "ficha_por_ejercicio": ["enunciado", "datos de partida", "que entrega el alumno", "solucion paso a paso", "error tipico", "pista si se atasca"]
+  },
+  "criterios_calidad": [
+    "Se podrían usar mañana en clase sin retocarlos",
+    "La dificultad sube de verdad entre niveles, no solo cambian los números",
+    "Los tiempos estimados suman como mucho la duración disponible"
+  ],
+  "tono": "claro, directo, sin adornos"
+}

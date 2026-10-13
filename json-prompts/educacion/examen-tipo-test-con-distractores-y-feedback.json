@@ -1,0 +1,33 @@
+{
+  "tarea": "Redactar preguntas de test con distractores plausibles y retroalimentación por opción",
+  "entradas": {
+    "tema": "[TEMA EVALUADO]",
+    "contenido_referencia": "[PEGA AQUÍ LOS APUNTES O EL TEMARIO EN QUE SE BASA]",
+    "numero_preguntas": "[CUÁNTAS]",
+    "dificultad": "[FÁCIL / MEDIA / ALTA]",
+    "soporte": "[PAPEL / MOODLE / GOOGLE FORMS / OTRA PLATAFORMA]"
+  },
+  "reglas_de_redaccion": [
+    "Cuatro opciones por pregunta, una sola correcta, todas de longitud parecida",
+    "Los distractores nacen de errores reales de alumnos: confusión de conceptos, paso omitido, regla aplicada fuera de contexto",
+    "Prohibido usar 'todas las anteriores', 'ninguna de las anteriores' y negaciones dobles",
+    "El enunciado se entiende sin leer las opciones y no da pistas gramaticales",
+    "Reparte la posición de la respuesta correcta entre las cuatro letras"
+  ],
+  "reparto": {
+    "recuerdo": "30% de las preguntas",
+    "comprension": "40%",
+    "aplicacion_a_un_caso": "30%"
+  },
+  "formato_salida": {
+    "bloque_1": "VERSIÓN ALUMNO: preguntas numeradas con opciones a, b, c, d",
+    "bloque_2": "CLAVE Y FEEDBACK: por pregunta, letra correcta, por qué lo es y una frase que explique el fallo detrás de cada distractor",
+    "bloque_3": "Tabla con pregunta, concepto evaluado y nivel cognitivo",
+    "bloque_4": "Si el soporte es una plataforma, lista de las preguntas en formato CSV separado por punto y coma"
+  },
+  "criterios_calidad": [
+    "Nadie puede acertar por descarte sin saber el tema",
+    "Cada respuesta correcta se puede justificar señalando una parte del contenido de referencia",
+    "Ninguna pregunta depende de memorizar un dato anecdótico"
+  ]
+}

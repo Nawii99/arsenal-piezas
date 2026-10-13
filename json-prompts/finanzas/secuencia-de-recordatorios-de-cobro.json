@@ -1,0 +1,41 @@
+{
+  "tarea": "Escribir una secuencia de 5 mensajes de recordatorio de cobro para una factura, con escalado progresivo de tono",
+  "contexto": {
+    "empresa": "[TU EMPRESA]",
+    "persona_que_firma": "[TU NOMBRE Y CARGO]",
+    "relacion_con_el_cliente": "[CLIENTE NUEVO / HABITUAL / GRAN CUENTA]",
+    "canal": "[EMAIL / WHATSAPP / AMBOS]"
+  },
+  "entradas": {
+    "cliente": "[NOMBRE DEL CLIENTE Y PERSONA DE CONTACTO]",
+    "factura": "[NÚMERO E IMPORTE]",
+    "vencimiento": "[FECHA DE VENCIMIENTO]",
+    "servicio_prestado": "[QUÉ LE ENTREGASTE]",
+    "datos_de_pago": "[IBAN O ENLACE DE PAGO]",
+    "consecuencia_real": "[QUÉ PASA SI NO PAGA: PARAR SERVICIO, INTERESES, RECLAMACIÓN]"
+  },
+  "calendario": [
+    "Mensaje 1: 5 días antes del vencimiento, aviso amable con la factura adjunta",
+    "Mensaje 2: el día del vencimiento, recordatorio neutro con los datos de pago",
+    "Mensaje 3: 7 días después, pregunta si hay alguna incidencia con la factura",
+    "Mensaje 4: 21 días después, firme, con fecha límite y consecuencia concreta",
+    "Mensaje 5: 40 días después, aviso previo a reclamación formal"
+  ],
+  "reglas": [
+    "Cada mensaje de menos de 120 palabras y con una sola petición clara",
+    "Repetir siempre número de factura, importe y datos de pago",
+    "Nada de amenazas, insultos ni frases pasivo-agresivas: firmeza educada",
+    "Poner facilidades para pagar antes que reproches",
+    "En el mensaje 4 y 5 mencionar el derecho a intereses de demora sin citar leyes de memoria"
+  ],
+  "formato_salida": {
+    "por_mensaje": "Momento de envío, asunto, cuerpo listo para copiar y una línea con el objetivo del mensaje",
+    "extra": "Tres respuestas preparadas para las excusas más típicas: no me llegó, está en revisión, pago el mes que viene"
+  },
+  "criterios_calidad": [
+    "Se pueden copiar y enviar sin retocar salvo los datos entre corchetes",
+    "El tono sube de forma gradual y creíble",
+    "Ningún mensaje deja dudas sobre cuánto, a dónde y para cuándo hay que pagar"
+  ],
+  "tono": "Educado, profesional y cada vez más firme"
+}

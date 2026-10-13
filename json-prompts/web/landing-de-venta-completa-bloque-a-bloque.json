@@ -1,0 +1,47 @@
+{
+  "tarea": "Escribir la estructura completa y todo el texto de una página de aterrizaje orientada a conversión",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "que_vendo": "[PRODUCTO O SERVICIO EN UNA FRASE]",
+    "cliente_ideal": "[A QUIÉN LE SIRVE Y EN QUÉ SITUACIÓN ESTÁ]",
+    "problema_principal": "[EL DOLOR QUE RESUELVES]",
+    "resultado_prometido": "[QUÉ CONSIGUE Y EN CUÁNTO TIEMPO]",
+    "precio_o_rango": "[PRECIO O RANGO]",
+    "objetivo": "[CONSEGUIR CONTACTO / VENDER / RESERVAR CITA]",
+    "origen_del_trafico": "[ANUNCIOS META, GOOGLE, EMAIL, SEO]",
+    "promesa_del_anuncio": "[FRASE EXACTA CON LA QUE LLEGAN A LA PÁGINA]",
+    "pruebas_disponibles": "[TESTIMONIOS, CASOS, NÚMEROS, GARANTÍA]"
+  },
+  "estructura_obligatoria": [
+    "1. Héroe: titular con resultado concreto, subtitular que explica cómo, botón y una línea de confianza",
+    "2. Problema contado con las palabras del cliente",
+    "3. Solución: qué es exactamente y cómo funciona en 3 pasos",
+    "4. Beneficios: 5 bloques que traducen cada característica en resultado",
+    "5. Prueba social: 3 testimonios con nombre, punto de partida y resultado",
+    "6. Oferta: qué incluye, precio, formas de pago y qué pasa justo después",
+    "7. Riesgo: garantía, devolución o prueba sin compromiso",
+    "8. Objeciones: 6 preguntas que hoy frenan la compra",
+    "9. Cierre: repetir promesa, botón y siguiente paso claro"
+  ],
+  "reglas_de_copy": [
+    "El titular recoge literalmente la promesa del anuncio que trae al visitante",
+    "Un único objetivo y un único tipo de botón en toda la página",
+    "Cada afirmación fuerte lleva prueba detrás o se elimina",
+    "El botón dice lo que ocurre al pulsarlo, nunca 'Enviar' ni 'Más información'"
+  ],
+  "restricciones": [
+    "No inventes testimonios, cifras, premios ni clientes",
+    "Nada de promesas garantizadas ni afirmaciones médicas o financieras",
+    "Marca con [FALTA DATO] cualquier hueco que solo pueda rellenar el negocio"
+  ],
+  "formato_salida": {
+    "tipo": "Bloques numerados",
+    "por_bloque": "Nombre, texto listo para copiar, idea de imagen y una línea de por qué funciona",
+    "extra_final": "Título SEO de 60 caracteres, meta descripción de 155 y 3 titulares alternativos"
+  },
+  "criterios_calidad": [
+    "En 5 segundos se entiende qué vendes, para quién y qué hay que hacer",
+    "Si un párrafo se puede borrar sin perder sentido, se borra"
+  ],
+  "tono": "[CERCANO Y DIRECTO / PROFESIONAL Y SOBRIO]"
+}

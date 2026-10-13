@@ -1,0 +1,40 @@
+{
+  "tarea": "Redactar el plan de actuación ante un incidente grave (ransomware, borrado masivo o caída prolongada) para un negocio pequeño",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD]",
+    "sistemas_criticos": "[LOS QUE PARAN EL NEGOCIO SI CAEN]",
+    "copias_disponibles": "[DÓNDE ESTÁN Y DE CUÁNDO SON]",
+    "contactos": "[INFORMÁTICO, GESTORÍA, PROVEEDORES, BANCO, SEGURO]",
+    "seguro_ciber": "[SÍ O NO Y NÚMERO DE PÓLIZA]",
+    "horario": "[CUÁNDO ESTÁIS ABIERTOS]"
+  },
+  "fases": [
+    "Detectar y confirmar: señales claras de que es un incidente y no un fallo pasajero",
+    "Contener: qué se desconecta de la red, qué copias se aíslan inmediatamente y qué NO se apaga para no perder pruebas",
+    "Avisar: orden de llamadas dentro y fuera, con qué frase exacta",
+    "Decidir: seguir en modo manual, restaurar o esperar; criterios para elegir",
+    "Restaurar: orden de sistemas según lo que permite volver a facturar antes",
+    "Cerrar: comprobar que no queda acceso del atacante, cambiar contraseñas y escribir el informe"
+  ],
+  "avisos_legales": [
+    "Si hay datos personales afectados, valorar la notificación a la AEPD dentro de las 72 horas y avisar a los afectados si procede",
+    "Guardar registro de horas, decisiones y capturas para el seguro y para la denuncia",
+    "Denunciar ante Policía o Guardia Civil y contactar con INCIBE 017 para orientación"
+  ],
+  "restricciones": [
+    "No recomiendes pagar el rescate; explica por qué es mala idea y qué hacer en su lugar",
+    "El plan cabe en dos folios y se entiende leyéndolo por primera vez bajo estrés",
+    "Nada de herramientas que requieran conocimientos técnicos avanzados"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha de una página: primeras 2 horas, paso a paso numerado",
+    "bloque_2": "Tabla de contactos con quién llama a quién y en qué orden",
+    "bloque_3": "Plan de vuelta a la normalidad por sistemas y por días",
+    "bloque_4": "Modo manual: cómo seguir cobrando y atendiendo mientras tanto"
+  },
+  "criterios_calidad": [
+    "Cada paso empieza por un verbo y dice quién lo hace",
+    "Incluye qué no hacer, no solo qué hacer",
+    "Se puede imprimir y colgar en la pared"
+  ]
+}

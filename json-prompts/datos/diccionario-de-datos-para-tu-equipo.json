@@ -1,0 +1,33 @@
+{
+  "tarea": "Redactar el diccionario de datos de una base de datos: que guarda cada tabla, que significa cada campo y que valores admite",
+  "entradas": {
+    "esquema": "[PEGA EL CREATE TABLE O LA LISTA DE TABLAS Y CAMPOS]",
+    "quien_lo_va_a_leer": "[DESARROLLADORES | ANALISTAS | EL DUENO DEL NEGOCIO | TODOS]",
+    "negocio": "[QUE HACE LA EMPRESA, PARA DAR SENTIDO A LOS NOMBRES]"
+  },
+  "metodo": [
+    "Agrupar las tablas por area funcional: clientes, ventas, catalogo, operaciones, sistema",
+    "Describir cada tabla en una frase que empiece por 'Guarda...'",
+    "Describir cada campo con su significado de negocio, no repitiendo el nombre tecnico",
+    "Enumerar los valores validos de los campos de estado o categoria y que significa cada uno",
+    "Senalar campos ambiguos, obsoletos o cuyo nombre engana, y proponer un nombre mejor"
+  ],
+  "restricciones": [
+    "Prohibido describir un campo repitiendo su nombre: 'fecha_alta: la fecha de alta' no vale",
+    "Marca con un aviso los campos que contienen datos personales",
+    "Si no puedes deducir el significado de un campo, dilo en vez de inventarlo",
+    "Sin jerga innecesaria: si usas un termino tecnico, explicalo la primera vez"
+  ],
+  "formato_salida": {
+    "1_indice": "Lista de areas y tablas que contiene cada una",
+    "2_por_tabla": "Para cada tabla: para que sirve, con que otras tablas se relaciona y tabla markdown de campos con columnas campo, tipo, significado, valores validos, dato personal",
+    "3_glosario": "Terminos de negocio que aparecen en los nombres, explicados",
+    "4_pendientes": "Campos dudosos u obsoletos con la pregunta concreta que hay que resolver"
+  },
+  "criterios_calidad": [
+    "Alguien que no conoce la base de datos entiende para que sirve cada tabla leyendo una frase",
+    "Todos los campos de estado tienen su lista de valores",
+    "Todos los campos con datos personales quedan marcados"
+  ],
+  "tono": "Documental, claro y sin adornos, espanol de Espana"
+}

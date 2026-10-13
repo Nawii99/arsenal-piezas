@@ -1,0 +1,54 @@
+{
+  "tarea": "Diseñar la secuencia de seguimiento de un presupuesto parado: 5 contactos con fecha, canal y texto listo para enviar",
+  "rol": "Comercial que sabe que el silencio casi nunca es un no, pero que insistir igual cinco veces sí lo convierte en no",
+  "contexto": {
+    "que_presupuestaste": "[TRABAJO Y IMPORTE]",
+    "fecha_de_envio": "[CUÁNDO LO MANDASTE]",
+    "ultimo_contacto": "[QUÉ TE DIJERON LA ÚLTIMA VEZ, TAL CUAL]",
+    "contactos_ya_hechos": "[CUÁNTAS VECES Y POR DÓNDE HAS ESCRITO YA]"
+  },
+  "entradas": {
+    "cliente": "[NOMBRE, CARGO Y NEGOCIO]",
+    "canal_habitual": "[EMAIL / WHATSAPP / TELÉFONO]",
+    "novedades_tuyas": "[ALGO NUEVO QUE PUEDAS APORTAR: CASO PARECIDO, HUECO EN AGENDA, CAMBIO DE PRECIO, PLAZO]",
+    "fecha_limite_real": "[HASTA CUÁNDO PUEDES MANTENER PRECIO O HUECO, SI ES CIERTO]"
+  },
+  "pasos": [
+    "Diagnostica el silencio: se le ha ido de las manos, no decide él, ha pillado otra oferta, no era prioridad o le frenó el precio; elige el más probable y di en qué te basas",
+    "Diseña 5 contactos repartidos en 3 semanas, alternando canal y con motivo distinto cada uno; nunca dos seguidos que solo digan '¿alguna novedad?'",
+    "Contacto 1: aportar algo útil relacionado con su problema, sin pedir respuesta",
+    "Contacto 2: pregunta cerrada que sea fácil de contestar en una palabra",
+    "Contacto 3: llamada corta con mensaje de voz o guion de 20 segundos si no coge",
+    "Contacto 4: opción de facilitar la decisión: dividir el trabajo en una primera fase pequeña o ajustar alcance",
+    "Contacto 5: cierre limpio dando permiso para decir que no y dejando la puerta abierta",
+    "Escribe cada mensaje entero, con asunto si es email, y marca el día exacto contando desde hoy",
+    "Añade qué hacer según lo que respondan: sí, no, silencio total"
+  ],
+  "restricciones": [
+    "Prohibido el chantaje emocional y las frases tipo 'último aviso' o 'te voy a dar de baja' si no es cierto",
+    "Solo puedes mencionar fecha límite si es real y la has indicado en las entradas",
+    "Cada mensaje aporta algo nuevo: información, facilidad o cierre",
+    "Máximo 80 palabras por mensaje; WhatsApp máximo 45",
+    "Español de España, tuteando o de usted según el trato indicado"
+  ],
+  "formato_salida": {
+    "diagnostico": {"causa_probable": "...", "en_que_te_basas": "..."},
+    "secuencia": [
+      {"numero": 1, "dia": "hoy", "canal": "...", "motivo": "...", "asunto": "...", "mensaje": "..."}
+    ],
+    "guion_llamada": "20 segundos de texto para el buzón de voz",
+    "arbol_de_respuestas": {"si_dice_si": "...", "si_dice_no": "...", "si_no_contesta_al_quinto": "..."},
+    "cuando_archivarlo": "criterio para dejar de perseguir y cuándo volver a intentarlo"
+  },
+  "criterios_calidad": [
+    "Ningún mensaje pide disculpas por escribir ni empieza con 'perdona que insista'",
+    "Los cinco mensajes se pueden leer seguidos sin que suenen repetidos",
+    "El último deja al cliente cómodo para decir que no",
+    "Cada mensaje se puede contestar en menos de 10 segundos"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Mandar el mismo '¿has podido verlo?' tres veces",
+    "Bajar el precio en el segundo contacto por miedo al silencio",
+    "Escribir un email largo repitiendo la propuesta entera"
+  ]
+}

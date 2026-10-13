@@ -1,0 +1,50 @@
+{
+  "tarea": "Disenar la encuesta de cierre de una edicion formativa y convertir sus respuestas en un plan de mejora priorizado",
+  "contexto": {
+    "formacion": "[NOMBRE Y DURACION]",
+    "numero_de_alumnos": "[MATRICULADOS Y CUANTOS TERMINARON]",
+    "canal_de_la_encuesta": "[FORMULARIO / EMAIL / AL FINAL DEL DIRECTO]",
+    "que_decidire_con_esto": "[EJ: SI REPITO EL MODULO 3, SI SUBO EL PRECIO]"
+  },
+  "entradas": {
+    "modulos": "[LISTA DE MODULOS]",
+    "datos_que_ya_tengo": "[ASISTENCIA, ENTREGAS, ABANDONOS, DEVOLUCIONES]",
+    "respuestas_recibidas": "[PEGA AQUI LAS RESPUESTAS SI YA LAS TIENES, O ESCRIBE AUN NO]"
+  },
+  "proceso": [
+    "1. Parte de la decision que vas a tomar y escribe solo las preguntas cuya respuesta cambie esa decision",
+    "2. Combina tres tipos: una de recomendacion con escala, dos o tres de valoracion por modulo y dos abiertas muy dirigidas",
+    "3. Formula las abiertas en concreto: que fue lo mas util y que quitarias, en lugar de sugerencias o comentarios",
+    "4. Anade una pregunta de aplicacion: que has hecho ya con lo aprendido, que es lo que de verdad mide si funciono",
+    "5. Pide permiso explicito para usar la respuesta como testimonio, con nombre o sin el",
+    "6. Al analizar, cruza lo que dicen con lo que hicieron: quien abandono en el modulo 3 pesa mas que quien lo puntuo bien sin verlo",
+    "7. Convierte los hallazgos en un plan: cambios que haces si o si, cambios que pruebas y cosas que no tocas aunque las pidan",
+    "8. Extrae los fragmentos aprovechables como testimonio y marca cuales tienen permiso"
+  ],
+  "restricciones": [
+    "Maximo 8 preguntas y menos de 3 minutos para responder",
+    "Nada de preguntas que induzcan la respuesta que quieres oir",
+    "No pidas datos personales que no vayas a usar y avisa de para que usas la respuesta",
+    "Los testimonios se usan tal cual, sin retocar el sentido"
+  ],
+  "errores_a_evitar": [
+    "Encuestar solo a los que terminaron: los que se fueron son los que mas informacion tienen",
+    "Preguntar por satisfaccion general y quedarte sin saber que arreglar",
+    "Cambiar el curso entero por un comentario aislado",
+    "Confundir gustar con servir: un modulo entretenido puede no ensenar nada"
+  ],
+  "formato_salida": {
+    "bloque_1": "Encuesta lista para publicar, pregunta a pregunta, con sus escalas",
+    "bloque_2": "Encuesta corta de tres preguntas para los que abandonaron, con su mensaje de envio",
+    "bloque_3": "Tabla de analisis: Hallazgo | Evidencia que lo sostiene | Cuanta gente lo dice | Que decision afecta",
+    "bloque_4": "Plan de mejora en tres columnas: cambio seguro, cambio a probar, no se toca y por que",
+    "bloque_5": "Testimonios extraidos, marcando cuales tienen permiso de uso",
+    "bloque_6": "Los dos o tres numeros a seguir edicion tras edicion y como calcularlos"
+  },
+  "criterios_calidad": [
+    "Toda pregunta esta ligada a una decision concreta",
+    "El plan de mejora cabe en el tiempo que tienes antes de la siguiente edicion",
+    "Ningun cambio seguro se apoya en una sola opinion",
+    "Los testimonios son frases reales de alumnos, no reescritas"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Transformar un contenido para que sea fácil de citar por asistentes de IA y por los resúmenes de IA de los buscadores, sin perder utilidad para el lector",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "que_vendes": "[PRODUCTO O SERVICIO]",
+    "url": "[URL DEL CONTENIDO]",
+    "preguntas_de_clientes": ["[PREGUNTA REAL 1]", "[PREGUNTA REAL 2]", "[PREGUNTA REAL 3]"]
+  },
+  "entradas": {
+    "contenido_actual": "[PEGA EL TEXTO]",
+    "pruebas_propias": "[DATOS, CASOS, GARANTÍAS, CERTIFICACIONES, AÑOS DE EXPERIENCIA, PRECIOS PÚBLICOS]"
+  },
+  "pasos": [
+    "Convierte cada pregunta real en un encabezado y responde debajo en 40-60 palabras, autosuficientes, sin depender del párrafo anterior",
+    "Coloca la definición o la respuesta directa antes que el contexto: primero el qué, luego el porqué",
+    "Añade datos concretos y verificables con su origen y fecha; las IA citan lo que tiene cifras y fuente",
+    "Incluye una tabla de comparación o de especificaciones: es el formato que mejor se extrae",
+    "Deja explícito quién firma, con qué experiencia y cuándo se actualizó el contenido",
+    "Nombra la marca junto al problema que resuelve, de forma natural, para que la asociación quede clara",
+    "Propón un bloque de preguntas frecuentes marcable con datos estructurados FAQ"
+  ],
+  "restricciones": [
+    "Nada de datos sin fuente: si no hay origen, escribe [VERIFICAR DATO]",
+    "Prohibido el autobombo sin prueba: cada afirmación de superioridad va con dato o se elimina",
+    "Frases de una sola idea; evita pronombres ambiguos que rompen la respuesta al extraerla"
+  ],
+  "formato_salida": {
+    "bloques": ["Contenido reescrito en markdown", "Lista de las 8 preguntas cubiertas con su respuesta corta", "Tabla de datos o comparativa", "Ficha de autoría y fecha de actualización", "Checklist de 6 puntos para revisar futuros contenidos"]
+  },
+  "criterios_calidad": [
+    "Cualquier respuesta corta se puede copiar suelta y sigue entendiéndose",
+    "Aparece al menos un dato propio que nadie más puede aportar",
+    "El texto sigue siendo agradable de leer para una persona"
+  ]
+}

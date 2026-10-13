@@ -1,0 +1,61 @@
+{
+  "tarea": "Planificar la captura fotogrametrica de un objeto real con movil y el proceso de limpieza posterior hasta dejar un modelo usable",
+  "contexto": {
+    "quien_lo_usa": "Persona sin equipo profesional, con un movil reciente y luz de casa o de calle",
+    "para_que": "Vender el modelo, imprimirlo, enseñarlo en una web o usarlo en un juego",
+    "limite_real": "Hay objetos que la fotogrametria no captura bien y conviene saberlo antes de perder una tarde"
+  },
+  "entradas": {
+    "objeto": "[QUE ES, MEDIDAS APROXIMADAS Y MATERIAL]",
+    "acabado": "[MATE / BRILLANTE / TRANSPARENTE / METALICO / PELUDO]",
+    "donde_se_captura": "[INTERIOR / EXTERIOR / ESCAPARATE / TALLER]",
+    "movil": "[MODELO Y SI TIENE LIDAR]",
+    "software_disponible": "[APP DE ESCANEO / METASHAPE / REALITY SCAN / MESHROOM / BLENDER]",
+    "destino": "[MARKETPLACE / IMPRESION 3D / WEB / JUEGO]"
+  },
+  "conocimiento_del_oficio": {
+    "lo_que_no_funciona": "Cristal, espejos, metal pulido, objetos negros brillantes y pelo suelto. Se resuelven con spray mate temporal o se descartan",
+    "numero_de_fotos": "Entre 60 y 150 para un objeto de sobremesa. Menos deja agujeros, muchas mas solo alarga el calculo",
+    "solape": "Cada foto debe compartir entre el 60 y el 80 por ciento con la anterior: pasos cortos alrededor del objeto",
+    "alturas": "Tres vueltas completas: a la altura del objeto, a 45 grados por encima y casi cenital. Y una cuarta serie para la base",
+    "luz": "Luz difusa y constante, dia nublado o interior sin sol directo. Las sombras duras se quedan pegadas a la textura para siempre",
+    "quien_se_mueve": "Muevete tu alrededor del objeto. Si usas plato giratorio, el fondo cambia respecto al objeto y hay que enmascarar",
+    "escala": "Pon una regla o un objeto de medida conocida en la escena: sin eso el modelo sale sin escala real",
+    "despues_de_escanear": "El escaneo bruto pesa demasiado y es inutilizable: hay que recortar el suelo, cerrar agujeros, reducir malla, hacer una malla limpia encima y pasar el detalle y el color a texturas"
+  },
+  "pasos": [
+    "1. Evaluar el objeto y decidir si es apto, si necesita spray mate o si conviene otro metodo",
+    "2. Preparar el sitio: fondo neutro, luz difusa, referencia de escala y objeto elevado si hay que capturar la base",
+    "3. Fijar exposicion y enfoque del movil para que no cambien entre fotos",
+    "4. Hacer las tres vueltas con el solape indicado y contar las fotos",
+    "5. Revisar las fotos y descartar las movidas o desenfocadas antes de procesar",
+    "6. Procesar y revisar el resultado bruto buscando agujeros y zonas de ruido",
+    "7. Limpiar: recortar entorno, cerrar agujeros, reducir malla y crear la version ligera",
+    "8. Pasar el color y el relieve a texturas y comprobar la escala real"
+  ],
+  "errores_tipicos": [
+    "Capturar con sol directo y quedarse con sombras pintadas en la textura",
+    "Dar la vuelta al objeto a mano y romper la coherencia entre fotos",
+    "Usar el flash o dejar el enfoque automatico saltando",
+    "Entregar el escaneo bruto de dos millones de triangulos a un cliente",
+    "Olvidar la referencia de escala y tener que medir el objeto otra vez"
+  ],
+  "restricciones": [
+    "Solo movil y software gratuito o de prueba",
+    "No propongas comprar equipo",
+    "Indica los numeros: fotos, vueltas, grados entre disparos y triangulos finales"
+  ],
+  "formato_salida": {
+    "1_apto_o_no": "Veredicto sobre el objeto y preparacion previa necesaria",
+    "2_plan_de_captura": "Tabla: vuelta | altura | numero de fotos | grados entre disparos",
+    "3_ajustes_del_movil": "Lista concreta",
+    "4_proceso_de_limpieza": "Pasos numerados con el objetivo de triangulos y resolucion de textura final",
+    "5_control_de_calidad": "Como comprobar escala, agujeros y textura antes de darlo por bueno"
+  },
+  "criterios_calidad": [
+    "El plan de captura cabe en una hoja y se puede seguir de pie con el movil en la mano",
+    "Dice claramente que hacer si el objeto es brillante o transparente",
+    "El modelo final tiene escala real comprobable",
+    "El resultado se entrega ligero, no en bruto"
+  ]
+}

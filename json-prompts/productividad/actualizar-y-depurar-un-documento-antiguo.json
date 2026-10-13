@@ -1,0 +1,39 @@
+{
+  "tarea": "Actualizar un documento interno desfasado y dejar constancia de los cambios y de lo que falta por confirmar.",
+  "contexto": {
+    "documento": "[NOMBRE DEL DOCUMENTO]",
+    "ultima_actualizacion": "[FECHA APROXIMADA]",
+    "responsable": "[QUIÉN LO MANTIENE A PARTIR DE AHORA]"
+  },
+  "entradas": {
+    "texto_original": "[PEGA AQUÍ EL DOCUMENTO COMPLETO]",
+    "cambios_en_el_negocio": "[HERRAMIENTAS NUEVAS, PRECIOS, PERSONAS, NORMAS O PASOS QUE HAN CAMBIADO]"
+  },
+  "instrucciones": [
+    "Clasifica cada parte del original como SIGUE VÁLIDO, HAY QUE CAMBIARLO, SOBRA o NO PUEDO SABERLO.",
+    "Reescribe solo lo que cambia y conserva el resto tal cual estaba.",
+    "Elimina pasos que dependen de herramientas o personas que ya no están.",
+    "Unifica el vocabulario: un mismo concepto, siempre la misma palabra.",
+    "Reúne en una lista aparte todo lo que necesita confirmación humana, con a quién preguntar.",
+    "Genera un registro de cambios con la versión nueva, la fecha y una línea por cambio.",
+    "Propón la fecha de la próxima revisión según lo rápido que cambie ese proceso."
+  ],
+  "restricciones": [
+    "No inventes procedimientos nuevos para tapar huecos del original.",
+    "No cambies la estructura ni el orden si no hace falta.",
+    "Marca visiblemente lo modificado para que se pueda revisar de un vistazo."
+  ],
+  "formato_salida": {
+    "tipo": "tres bloques en markdown",
+    "bloques": [
+      "1. Documento actualizado completo, listo para sustituir al viejo",
+      "2. Registro de cambios: versión, fecha, qué se cambió y por qué",
+      "3. Pendiente de confirmar: pregunta concreta y a quién hacérsela"
+    ]
+  },
+  "criterios_calidad": [
+    "El documento nuevo se puede usar tal cual, sin leer el viejo.",
+    "Nada dudoso se ha dado por bueno en silencio."
+  ],
+  "tono": "Preciso y conservador con lo que ya funciona"
+}

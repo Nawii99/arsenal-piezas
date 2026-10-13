@@ -1,0 +1,33 @@
+{
+  "tarea": "Resumir una reunión para una persona concreta que no asistió, destacando solo lo que le afecta",
+  "entradas": {
+    "material": "[PEGA EL ACTA, LAS NOTAS O LA TRANSCRIPCIÓN]",
+    "destinatario": "[NOMBRE]",
+    "rol_destinatario": "[SOCIO / RESPONSABLE DE VENTAS / DISEÑADOR / CLIENTE...]",
+    "de_que_se_ocupa": "[SU PARTE DEL PROYECTO]",
+    "nivel_de_detalle": "[MUY BREVE / NORMAL]"
+  },
+  "procedimiento": [
+    "Identificar primero qué decisiones cambian el trabajo de esta persona",
+    "Poner esas decisiones al principio, antes que cualquier contexto",
+    "Añadir lo que se espera de ella con fecha, marcado como acción requerida",
+    "Resumir el resto en dos o tres líneas de contexto general",
+    "Terminar señalando qué se decidió sin ella y podría querer discutir"
+  ],
+  "restricciones": [
+    "Máximo 10 líneas más la lista de acciones",
+    "Nada de tono de reproche por no haber asistido",
+    "No incluir temas que no le afecten aunque se hablaran mucho",
+    "Si hubo información sensible o confidencial marcada, omitirla y avisar"
+  ],
+  "formato_salida": {
+    "bloques": ["Lo que cambia para ti", "Lo que necesitamos de ti y para cuándo", "Contexto en 3 líneas", "Se decidió sin ti (dilo si no estás de acuerdo)"],
+    "canal": "Mensaje listo para enviar por email o chat interno"
+  },
+  "criterios_calidad": [
+    "Se lee en menos de un minuto",
+    "Toda acción pedida tiene fecha",
+    "No hace falta abrir el acta completa para saber qué hacer"
+  ],
+  "tono": "directo y de compañero, tuteando"
+}

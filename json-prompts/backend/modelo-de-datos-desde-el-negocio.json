@@ -1,0 +1,54 @@
+{
+  "tarea": "Diseñar el modelo de datos de mi aplicación (tablas, campos, relaciones y reglas) partiendo de cómo funciona el negocio de verdad, antes de escribir una línea de código",
+  "contexto": {
+    "negocio_en_una_frase": "[QUÉ VENDE O HACE EL NEGOCIO]",
+    "quien_usa_la_app": "[YO SOLO / MI EQUIPO DE X PERSONAS / MIS CLIENTES FINALES]",
+    "volumen_esperado_primer_ano": "[Nº DE CLIENTES, PEDIDOS O REGISTROS AL MES]",
+    "base_de_datos_prevista": "[POSTGRES / MYSQL / SQLITE / NO LO SÉ, DECÍDELO TÚ]",
+    "nivel_tecnico": "no soy programador: explícalo en castellano llano y dame el SQL listo para pegar"
+  },
+  "entradas": {
+    "flujo_real": "[CUENTA EL PROCESO PASO A PASO: LLEGA UN CLIENTE, PIDE ALGO, SE COBRA, SE ENTREGA, SE FACTURA]",
+    "documentos_que_uso_hoy": "[HOJA DE CÁLCULO, FACTURAS, FICHAS EN PAPEL, WHATSAPP]",
+    "preguntas_que_debo_responder": "[EJ: CUÁNTO FACTURÉ ESTE MES, QUIÉN NO HA PAGADO, QUÉ SERVICIO SE REPITE MÁS]",
+    "datos_sensibles": "[DNI, DIRECCIONES, DATOS DE SALUD, DATOS DE PAGO, O NINGUNO]"
+  },
+  "pasos": [
+    "1. Saca del flujo los sustantivos que son cosas del negocio (cliente, pedido, cita, factura) y decide cuáles merecen tabla propia y cuáles son solo un campo",
+    "2. Define por tabla: nombre en plural y minúsculas, clave primaria id, campos con su tipo, cuáles son obligatorios y qué valor por defecto tienen",
+    "3. Marca las relaciones uno a muchos y muchos a muchos, y crea las tablas intermedias necesarias",
+    "4. Añade creado_en y actualizado_en a todas las tablas, y borrado lógico (borrado_en) en lo que nunca se debe perder: clientes, pedidos, facturas",
+    "5. Guarda el dinero en céntimos como número entero y con su moneda; nunca en decimales de coma flotante",
+    "6. Congela el histórico: una factura guarda el precio y el nombre del producto tal como estaban ese día, no un enlace al precio actual",
+    "7. Crea índices para las búsquedas que he pedido y restricciones únicas donde no puede haber duplicados (email de cliente, número de factura)",
+    "8. Contrasta el modelo con cada pregunta de negocio: si una no se puede responder con una consulta, falta un campo o una tabla",
+    "9. Escribe el SQL de creación y un juego de datos de ejemplo con 5 filas por tabla",
+    "10. Señala qué campos guardan datos personales y cuáles habría que borrar o anonimizar si un cliente lo pide"
+  ],
+  "restricciones": [
+    "Nada de tablas genéricas tipo datos o extras con un campo JSON para todo",
+    "Máximo 12 tablas en la primera versión; si salen más, estás modelando cosas que aún no vendes",
+    "Nombres de tablas y campos en un solo idioma, sin acentos ni eñes",
+    "No inventes campos que no salgan del flujo que te he contado; si falta información, pregúntamela antes"
+  ],
+  "formato_salida": {
+    "1_resumen": "Párrafo breve explicando el modelo como si se lo contaras al dueño del negocio",
+    "2_tabla_de_tablas": "Tabla markdown con: tabla, para qué sirve, campos clave, con qué se relaciona",
+    "3_diagrama": "Diagrama mermaid con las relaciones",
+    "4_sql": "Bloque SQL completo de creación con claves, índices y restricciones",
+    "5_consultas": "Una consulta SQL por cada pregunta de negocio de la lista",
+    "6_dudas": "Decisiones que has tomado por mí y que debo confirmar"
+  },
+  "criterios_calidad": [
+    "El SQL se ejecuta tal cual sin errores en la base de datos indicada",
+    "Cada pregunta de negocio tiene su consulta y devuelve algo con los datos de ejemplo",
+    "Ningún dato importante desaparece si se borra otra fila",
+    "Un precio pasado no cambia aunque hoy cambie la tarifa"
+  ],
+  "errores_tipicos": [
+    "Escribir el nombre del cliente a mano en cada pedido en vez de enlazarlo",
+    "Usar el email como clave primaria: la gente cambia de email",
+    "Meter varios valores separados por comas en un mismo campo",
+    "Olvidar el campo estado en pedidos y citas y acabar deduciéndolo por fechas"
+  ]
+}

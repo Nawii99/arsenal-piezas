@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar el plan de acogida de 90 días de un cliente recién firmado, con hitos, mensajes y el primer resultado visible que debe notar",
+  "contexto": {
+    "mi_empresa": "[NOMBRE DE TU EMPRESA]",
+    "servicio": "[QUÉ ACABAS DE VENDER Y POR CUÁNTO]",
+    "cliente_tipo": "[SECTOR Y TAMAÑO DEL CLIENTE]",
+    "equipo": "[QUIÉN LO ATIENDE: TÚ SOLO, UN TÉCNICO, UNA AGENCIA]"
+  },
+  "entradas": {
+    "expectativa_de_compra": "[QUÉ LE PROMETISTE Y QUÉ ESPERA CONSEGUIR]",
+    "primer_resultado_posible": "[LO PRIMERO ÚTIL QUE PUEDE VER Y EN CUÁNTOS DÍAS]",
+    "fallos_habituales": "[DÓNDE SE SUELE ATASCAR LA GENTE AL EMPEZAR CONTIGO]"
+  },
+  "estructura": [
+    "Días 1-7: bienvenida, recogida de datos, expectativas por escrito y quién es quién",
+    "Días 8-30: primer resultado visible y primera llamada de comprobación",
+    "Días 31-60: ajuste, formación de las personas que lo usan y ampliación del uso",
+    "Días 61-90: repaso de resultados, petición de opinión y primera conversación de continuidad"
+  ],
+  "restricciones": [
+    "Máximo 8 puntos de contacto en total; no agobiar",
+    "Cada hito con responsable, día y qué se considera hecho",
+    "Nada de tareas internas que el cliente no note; si es interna, márcala aparte"
+  ],
+  "formato_salida": {
+    "tipo": "Calendario más plantillas",
+    "apartados": ["Tabla día / acción / canal / responsable / hecho cuando", "Email de bienvenida", "Lista de datos a pedir el primer día", "Guion de la llamada del día 30", "3 señales de alarma tempranas y qué hacer con cada una"]
+  },
+  "criterios_calidad": [
+    "El cliente ve algo útil antes del día 30",
+    "Todo el plan cabe en una hoja y se puede repetir con el próximo cliente",
+    "Ningún paso depende de que yo me acuerde"
+  ],
+  "tono": "Ordenado y cercano"
+}

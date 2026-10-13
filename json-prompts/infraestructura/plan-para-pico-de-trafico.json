@@ -1,0 +1,58 @@
+{
+  "tarea": "Prepara mi web o tienda para un pico de visitas previsto: qué reforzar antes, qué medir durante y qué hacer si empieza a ir lenta o se cae",
+  "contexto": {
+    "evento": "[QUÉ LO PROVOCA: campaña de anuncios, salida en prensa, colaboración, rebajas]",
+    "fecha_y_hora": "[CUÁNDO EMPIEZA Y CUÁNTO DURA]",
+    "visitas_esperadas": "[ESTIMACIÓN Y EN QUÉ ME BASO]",
+    "plataforma": "[DÓNDE ESTÁ LA WEB Y QUÉ PLAN TENGO CONTRATADO]",
+    "objetivo": "[QUÉ QUIERO QUE HAGA LA GENTE: comprar, reservar, dejar el correo]"
+  },
+  "entradas": {
+    "rendimiento_actual": "[TIEMPO DE CARGA Y VISITAS HABITUALES SI LOS SÉ]",
+    "pagina_de_destino": "[LA URL QUE VA A RECIBIR EL GOLPE]",
+    "stock_o_aforo": "[UNIDADES O PLAZAS DISPONIBLES]"
+  },
+  "pasos": [
+    "1. Identifica la ruta crítica: la página de entrada y los tres pasos hasta la conversión, y olvídate del resto",
+    "2. Mide el estado actual de esa ruta antes de tocar nada, para poder comparar",
+    "3. Aligera lo evidente: imágenes al tamaño real y en formato moderno, quitar plugins y rastreadores que no aportan, y fuentes que bloquean la carga",
+    "4. Activa caché y una red de distribución delante de la web, y comprueba que la página de destino se sirve cacheada",
+    "5. Localiza lo que no se puede cachear porque es personal, como carrito y cuenta, y comprueba que aguanta",
+    "6. Haz una prueba de carga modesta y realista en horario tranquilo, y anota a partir de cuántos visitantes simultáneos empieza a ir lenta",
+    "7. Prepara el plan B: página estática de respaldo con la oferta y un formulario simple, lista para publicar en minutos",
+    "8. Avisa a proveedores clave, sube plan temporalmente si hace falta y confirma que se puede bajar después",
+    "9. Durante el pico, vigila cada quince minutos y ten a mano cómo desactivar lo que más pese"
+  ],
+  "que_mirar": [
+    "la base de datos y el proceso de pago suelen ser el cuello de botella, no el diseño",
+    "formularios y correos automáticos que se acumulan y se quedan atascados",
+    "límites del plan: visitas incluidas, transferencia y peticiones por minuto",
+    "stock real frente a pedidos aceptados, para no vender lo que no tienes",
+    "si tu pasarela de cobro o tu servicio de correo tiene límites por minuto"
+  ],
+  "errores_tipicos": [
+    "rediseñar la web la víspera del lanzamiento",
+    "lanzar la campaña sin haber comprobado la página en móvil y con datos móviles",
+    "cachear también el carrito y mezclar sesiones de clientes",
+    "subir de plan y olvidarse de bajarlo al mes siguiente",
+    "no tener a nadie mirando durante la primera hora"
+  ],
+  "restricciones": [
+    "nada de cambios estructurales en las cuarenta y ocho horas previas",
+    "cada cambio debe poder deshacerse en menos de diez minutos",
+    "prioriza lo gratuito y di el coste exacto de lo que no lo sea"
+  ],
+  "formato_salida": {
+    "1_ruta_critica": "pasos del visitante y qué puede fallar en cada uno",
+    "2_preparativos": "tareas ordenadas por impacto frente a esfuerzo, con tiempo estimado",
+    "3_prueba": "cómo hacer la prueba de carga y qué número me dice que aguanto",
+    "4_dia_del_evento": "qué mirar, cada cuánto y con qué umbral de alarma",
+    "5_plan_b": "pasos para publicar la página de respaldo y mensaje para clientes"
+  },
+  "criterios_calidad": [
+    "hay una cifra concreta de visitantes simultáneos que sé que aguanto",
+    "todos los cambios propuestos son reversibles y están fechados",
+    "el plan B se puede activar en menos de quince minutos",
+    "no hay ninguna tarea que exija saber programar"
+  ]
+}

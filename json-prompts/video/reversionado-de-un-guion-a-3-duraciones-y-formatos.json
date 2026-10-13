@@ -1,0 +1,31 @@
+{
+  "tarea": "Adaptar un guion de video existente a tres duraciones y tres formatos de pantalla, manteniendo intacto el mensaje central",
+  "entradas": {
+    "guion_original": "[PEGA AQUÍ TU GUION O LA TRANSCRIPCIÓN DEL VÍDEO]",
+    "duracion_original": "[SEGUNDOS]",
+    "mensaje_innegociable": "[LA IDEA QUE NO PUEDE DESAPARECER EN NINGUNA VERSIÓN]",
+    "llamada_a_la_accion": "[QUÉ QUIERES QUE HAGA EL ESPECTADOR]",
+    "plataformas": "[DÓNDE VAS A PUBLICAR CADA VERSIÓN]"
+  },
+  "versiones_a_producir": [
+    "60 s horizontal 16:9 para YouTube o web",
+    "30 s vertical 9:16 para Reels, TikTok y Shorts",
+    "15 s vertical 9:16, pensado para verse sin sonido"
+  ],
+  "reglas_de_recorte": [
+    "Primero se quitan ejemplos y matices, nunca el gancho ni la llamada a la accion",
+    "En la version de 15 s el mensaje va tambien en texto en pantalla",
+    "En vertical, deja libre el 15 por ciento superior e inferior de la pantalla para los rotulos de la app",
+    "En horizontal se puede recuperar contexto y detalle que en vertical sobra",
+    "Cada version tiene su propio gancho, adaptado a como se consume esa plataforma"
+  ],
+  "formato_salida": {
+    "tipo": "Tres bloques, uno por version, con el mismo esquema",
+    "por_version": ["Duración y formato", "Guion literal con marcas de tiempo", "Qué se ve en cada tramo", "Texto en pantalla", "Qué se ha eliminado del original y por qué", "Recorte y encuadre recomendados al reencuadrar el material grabado"]
+  },
+  "criterios_calidad": [
+    "Las tres versiones se sostienen solas: nadie necesita haber visto la larga",
+    "El mensaje innegociable aparece en las tres",
+    "La de 15 segundos se entiende con el móvil en silencio"
+  ]
+}

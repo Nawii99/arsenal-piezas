@@ -1,0 +1,38 @@
+{
+  "tarea": "Reescribir una descripción de producto o servicio centrada en características para convertirla en un texto de venta centrado en el cliente",
+  "entradas": {
+    "ficha_actual": "[PEGA AQUÍ LA DESCRIPCIÓN ACTUAL O LAS ESPECIFICACIONES]",
+    "producto": "[QUÉ VENDES]",
+    "cliente": "[QUIÉN LO COMPRA Y PARA QUÉ]",
+    "precio": "[PRECIO Y SI HAY ENVÍO O GARANTÍA]",
+    "dudas_frecuentes": "[3 DUDAS QUE TE PREGUNTAN ANTES DE COMPRAR]",
+    "diferencia": "[QUÉ TIENES TÚ QUE NO TIENE EL DE AL LADO]"
+  },
+  "proceso": [
+    "1. Convertir cada característica en beneficio con la fórmula: qué es, qué hace, qué gana el cliente",
+    "2. Ordenar los beneficios por lo que más le importa al cliente descrito, no por lo que más te gusta a ti",
+    "3. Resolver cada duda frecuente dentro del texto, sin esperar a las FAQ",
+    "4. Añadir un apartado de para quién sí y para quién no es este producto",
+    "5. Cerrar con una llamada a la acción concreta y el dato que quita el miedo (garantía, devolución, plazo)"
+  ],
+  "restricciones": [
+    "Cero adjetivos huecos: espectacular, increíble, revolucionario, único",
+    "No prometer resultados, plazos ni certificaciones que no estén en la ficha original",
+    "Mantener todas las especificaciones técnicas en su apartado, sin eliminarlas",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "titular": "Una línea con el beneficio principal",
+    "parrafo_de_entrada": "3 o 4 frases que conectan con el problema del cliente",
+    "beneficios": "5 viñetas en formato beneficio (característica entre paréntesis)",
+    "para_quien_si_y_no": "Dos listas cortas",
+    "dudas_resueltas": "Las 3 dudas con su respuesta en 2 líneas",
+    "ficha_tecnica": "Especificaciones tal cual, en lista",
+    "cta": "Frase de acción y microtexto de confianza debajo del botón"
+  },
+  "criterios_calidad": [
+    "Ninguna viñeta habla solo de la característica sin decir qué gana el cliente",
+    "Las 3 dudas quedan respondidas dentro del texto",
+    "Nada de lo afirmado sale de la imaginación: todo procede de la ficha original"
+  ]
+}

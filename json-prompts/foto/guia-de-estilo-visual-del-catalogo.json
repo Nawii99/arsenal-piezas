@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar la guia de estilo fotografico del catalogo de [NOMBRE DE TU MARCA] para que cualquiera pueda hacer fotos que encajen entre si",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "que_vendes": "[TIPO DE PRODUCTOS: JOYERIA, COSMETICA, ROPA, ALIMENTACION...]",
+    "posicionamiento": "[ECONOMICO / MEDIO / PREMIUM]",
+    "colores_de_marca": "[COLORES O CODIGOS HEX]",
+    "canales": "[WEB, INSTAGRAM, AMAZON, CATALOGO IMPRESO]",
+    "quien_hace_las_fotos": "[YO CON EL MOVIL / FOTOGRAFO EXTERNO / IA]"
+  },
+  "secciones_obligatorias": [
+    "Idea visual en una frase y tres adjetivos que definen la imagen de marca",
+    "Fondos permitidos y prohibidos, con color exacto",
+    "Esquema de luz estandar y su alternativa cuando no hay ventana",
+    "Angulos y planos oficiales por tipo de producto",
+    "Encuadre y margenes: cuanto aire dejar y donde va el producto",
+    "Props y superficies permitidos, y cuantos como maximo por foto",
+    "Tratamiento de sombras y reflejos",
+    "Set minimo de fotos que debe tener cada producto",
+    "Ajustes de edicion: contraste, saturacion y temperatura de color",
+    "Formatos y medidas de exportacion por canal"
+  ],
+  "restricciones": [
+    "Todo tiene que poder ejecutarse con [MOVIL Y LUZ DE VENTANA] como minimo",
+    "Nada de material caro obligatorio: si propones algo, indica una alternativa barata",
+    "Cada regla se escribe en una frase que se pueda comprobar mirando la foto"
+  ],
+  "formato_salida": {
+    "tipo": "documento con titulos y listas numeradas",
+    "anexo_1": "Ficha de una pagina para imprimir y tener en la mesa de fotos",
+    "anexo_2": "Lista de comprobacion de 10 casillas antes de dar por buena una foto",
+    "anexo_3": "Ejemplos de descripcion de foto correcta e incorrecta para 2 productos reales"
+  },
+  "criterios_calidad": [
+    "Otra persona podria seguir la guia sin preguntarte nada",
+    "Las reglas son medibles: distancias, angulos, proporciones y colores concretos",
+    "No hay palabras vacias como elegante o impactante sin explicar como se consigue"
+  ]
+}

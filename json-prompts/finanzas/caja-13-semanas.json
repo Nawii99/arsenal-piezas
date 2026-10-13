@@ -1,0 +1,54 @@
+{
+  "tarea": "Construir una previsión de tesorería semanal a 13 semanas, detectar las semanas en riesgo y proponer acciones concretas por semana para evitar el saldo negativo.",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y CON QUÉ ESTACIONALIDAD]",
+    "situacion": "[VOY JUSTO / VIENE TEMPORADA BAJA / VOY A COMPRAR ALGO GRANDE]",
+    "fecha_de_inicio": "[LUNES DE LA SEMANA QUE VIENE]"
+  },
+  "entradas": {
+    "saldo_hoy": "[SALDO REAL EN CUENTAS, RESTANDO LO YA APARTADO PARA IMPUESTOS]",
+    "cobros_comprometidos": "[FACTURAS EMITIDAS: IMPORTE Y FECHA PREVISTA DE COBRO REAL, NO LA DE VENCIMIENTO]",
+    "cobros_probables": "[PRESUPUESTOS ENVIADOS CON SU PROBABILIDAD ESTIMADA]",
+    "ingresos_recurrentes": "[CUOTAS, SUSCRIPCIONES, VENTAS MEDIAS SEMANALES]",
+    "pagos_fijos": "[ALQUILER, NÓMINAS, CUOTA DE AUTÓNOMOS, PRÉSTAMOS, SEGUROS, SOFTWARE, CON SU DÍA DE CARGO]",
+    "pagos_variables": "[PROVEEDORES, MATERIAL, SUBCONTRATAS, PUBLICIDAD]",
+    "pagos_de_impuestos": "[FECHAS Y IMPORTES ESTIMADOS DEL TRIMESTRE]"
+  },
+  "metodo": [
+    "1. Monta una fila por semana con: saldo inicial, cobros, pagos, saldo final. El saldo final de una semana es el inicial de la siguiente.",
+    "2. Sitúa cada cobro en la semana en que llega el dinero de verdad: si el cliente paga a 60 días y siempre se retrasa 10, colócalo a 70.",
+    "3. Aplica un recorte prudente a los cobros probables: cuenta solo la parte que corresponde a su probabilidad y avisa de que es estimación.",
+    "4. Coloca los pagos en su día real de cargo, no a final de mes en bloque.",
+    "5. Marca con semáforo cada semana: rojo si el saldo final es negativo, ámbar si queda por debajo del colchón mínimo, verde si lo supera.",
+    "6. Define el colchón mínimo: un mes de pagos fijos. Si no llega, dilo con esas palabras.",
+    "7. Para cada semana roja o ámbar da tres palancas concretas y con importe: adelantar un cobro con descuento por pronto pago, aplazar un pago no crítico hablándolo antes con el proveedor, retrasar una compra, o activar una venta rápida de algo que ya tienes.",
+    "8. Prepara dos escenarios: uno en el que el cliente grande paga tarde y otro en el que un cobro probable no entra. Di en qué semana revienta cada uno.",
+    "9. Deja la rutina: cada lunes, actualizar saldo real, mover lo cobrado y añadir la semana 13 nueva."
+  ],
+  "restricciones": [
+    "Todo en euros de caja: entra o sale dinero de la cuenta, sin criterio de devengo ni facturas no cobradas.",
+    "El dinero apartado para impuestos no cuenta como disponible.",
+    "No inventes cobros nuevos ni ventas futuras que el usuario no haya puesto.",
+    "Si el usuario no sabe el día de cargo de un pago fijo, pídelo antes de suponerlo."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Usar la fecha de vencimiento de la factura y no la fecha real en la que ese cliente suele pagar.",
+    "Meter el IVA cobrado como dinero disponible.",
+    "Olvidar los pagos anuales que caen dentro del trimestre: seguros, renovaciones, cuotas.",
+    "Hacerlo por meses: los agujeros de caja se esconden dentro del mes.",
+    "Contar el crédito de la tarjeta como colchón."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de 13 filas: semana, fecha de inicio, saldo inicial, cobros, pagos, saldo final, semáforo.",
+    "bloque_2": "Frase clara con la primera semana en riesgo y de cuánto es el hueco.",
+    "bloque_3": "Palancas por semana en riesgo, con importe y a quién hay que llamar.",
+    "bloque_4": "Los dos escenarios y su semana crítica.",
+    "bloque_5": "Rutina del lunes en cuatro pasos.",
+    "estilo": "Español de España, tuteando, sin alarmismo pero sin suavizar los números"
+  },
+  "criterios_calidad": [
+    "Los saldos encadenan bien de una semana a otra: compruébalo antes de entregar.",
+    "Cada semana en rojo tiene al menos dos palancas con importe suficiente para taparla.",
+    "Queda claro qué es dato y qué es estimación."
+  ]
+}

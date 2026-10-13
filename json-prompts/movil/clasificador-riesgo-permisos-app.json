@@ -1,0 +1,45 @@
+{
+  "tarea": "Clasificar el riesgo de privacidad de las apps instaladas en un móvil a partir de su lista de permisos",
+  "contexto": "Se usa dentro de un servicio de revisión de móviles para generar un informe de riesgo por app, en un formato que se puede insertar en una automatización o en un informe para el cliente",
+  "entrada_esperada": {
+    "movil": "string: modelo y sistema operativo",
+    "apps": [
+      {
+        "nombre": "string",
+        "categoria_declarada": "string, ejemplo: mensajeria, banca, linterna, juego",
+        "permisos": ["string"]
+      }
+    ]
+  },
+  "instrucciones": [
+    "Para cada app, compara sus permisos con su categoria_declarada",
+    "Marca riesgo_alto si un permiso no tiene relacion con lo que hace la app segun su categoria_declarada",
+    "Marca riesgo_alto siempre que el permiso sea accesibilidad o administrador_de_dispositivo, salvo que la categoria_declarada sea gestor_de_contrasenas, antivirus o control_parental",
+    "Marca riesgo_medio cuando la categoria_declarada no sea suficiente para juzgar el permiso",
+    "Marca riesgo_bajo cuando el permiso encaje claramente con la categoria_declarada, aunque sea un permiso sensible como camara o ubicacion"
+  ],
+  "formato_salida": {
+    "tipo": "json",
+    "esquema": {
+      "resumen": {
+        "total_apps": "number",
+        "riesgo_alto": "number",
+        "riesgo_medio": "number",
+        "riesgo_bajo": "number"
+      },
+      "apps_riesgo_alto": [
+        {
+          "nombre": "string",
+          "motivo": "string",
+          "accion_recomendada": "string"
+        }
+      ]
+    }
+  },
+  "reglas": [
+    "No inventar la funcion real de una app que no se conoce: si la categoria_declarada es dudosa, clasificar como riesgo_medio y decirlo en el motivo",
+    "No devolver texto fuera del objeto JSON de salida",
+    "Si la lista de apps llega vacia, devolver el resumen con todos los contadores en cero y el array apps_riesgo_alto vacio, no un error"
+  ],
+  "limite": "Esta clasificacion es automatica y orientativa, no sustituye una revision manual antes de entregar un informe a un cliente que paga por el servicio"
+}

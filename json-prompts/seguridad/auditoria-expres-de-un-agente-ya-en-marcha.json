@@ -1,0 +1,36 @@
+{
+  "tarea": "Auditar un agente de IA ya en funcionamiento y devolver sus riesgos ordenados con el parche concreto de cada uno",
+  "contexto": {
+    "instrucciones_actuales": "[PEGA AQUÍ EL PROMPT DE SISTEMA O LAS REGLAS DEL AGENTE]",
+    "herramientas": "[QUÉ TIENE CONECTADO Y CON QUÉ PERMISOS]",
+    "quien_le_habla": "[PÚBLICO, CLIENTES REGISTRADOS O SOLO EL EQUIPO]",
+    "datos_que_maneja": "[QUÉ INFORMACIÓN VE]",
+    "supervision_actual": "[QUIÉN Y CADA CUÁNTO LO REVISA]"
+  },
+  "puntos_a_revisar": [
+    "Acciones irreversibles que puede hacer sin confirmación",
+    "Datos a los que accede y no necesita para su trabajo",
+    "Ausencia de topes de gasto, de volumen o de reintentos",
+    "Qué pasa si le pegan un texto con instrucciones escondidas",
+    "Si puede inventarse datos que el cliente tomará por ciertos",
+    "Si hay registro de lo que hace y si alguien lo mira",
+    "Qué ocurre cuando falla una herramienta: ¿sigue como si nada?",
+    "Si existe un procedimiento para pararlo y quién lo conoce"
+  ],
+  "restricciones": [
+    "Cada riesgo debe apuntar a algo concreto de lo aportado, sin suposiciones",
+    "Nada de recomendaciones que exijan contratar herramientas nuevas en el primer bloque",
+    "Máximo 8 riesgos"
+  ],
+  "formato_salida": {
+    "tipo": "informe con tabla y plan",
+    "tabla": "columnas Riesgo | Qué podría pasar | Probabilidad | Impacto | Parche | Esfuerzo",
+    "plan": "los 3 parches a hacer esta semana, redactados como pasos, y el texto exacto a añadir a las instrucciones",
+    "cierre": "3 preguntas que la auditoría no ha podido responder con la información dada"
+  },
+  "criterios_calidad": [
+    "Los riesgos están ordenados por impacto real en el negocio, no por lo técnico que suenen",
+    "Los parches se pueden aplicar sin saber programar",
+    "Ningún parche rompe el trabajo normal del agente"
+  ]
+}

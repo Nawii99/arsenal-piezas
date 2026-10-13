@@ -1,0 +1,35 @@
+{
+  "tarea": "Rediseñar el formulario y las llamadas a la acción de una página de aterrizaje para reducir el abandono",
+  "entradas": {
+    "objetivo_formulario": "[PEDIR PRESUPUESTO / RESERVAR CITA / DESCARGAR GUÍA / COMPRAR]",
+    "campos_actuales": "[LISTA DE CAMPOS QUE PIDES HOY]",
+    "uso_real_de_cada_dato": "[PARA QUÉ USAS CADA CAMPO DE VERDAD]",
+    "texto_boton_actual": "[LO QUE PONE TU BOTÓN AHORA]",
+    "que_pasa_despues": "[QUÉ RECIBE Y EN CUÁNTO TIEMPO LE CONTESTAS]",
+    "miedos_del_cliente": "[SPAM, LLAMADAS INSISTENTES, PRECIO SORPRESA...]"
+  },
+  "metodo": [
+    "Clasifica cada campo en imprescindible, útil o eliminable según su uso real",
+    "Ordena los campos de menos a más comprometido y deja el teléfono para el final",
+    "Escribe microcopy bajo cada campo solo donde exista una duda real",
+    "Redacta el botón en primera persona y con el resultado: 'Quiero mi presupuesto'",
+    "Añade una línea de tranquilidad junto al botón sobre privacidad y contacto",
+    "Propón versión en varios pasos solo si hay más de 5 campos"
+  ],
+  "salida_requerida": {
+    "formulario_final": "Lista de campos con etiqueta, tipo, obligatorio sí o no y texto de ayuda",
+    "botones": "3 opciones de texto para el botón principal y una para el secundario",
+    "mensajes": "Error por campo, mensaje de éxito y qué decir mientras se envía",
+    "pagina_o_mensaje_de_gracias": "Texto de confirmación con el siguiente paso concreto",
+    "justificacion": "Una línea por decisión explicando qué fricción quita"
+  },
+  "restricciones": [
+    "No pidas datos que no vayas a usar en los próximos 7 días",
+    "Nada de campos obligatorios de empresa o cargo en negocios de particulares",
+    "Cumple RGPD: finalidad clara, casilla de privacidad sin marcar y sin casillas premarcadas"
+  ],
+  "criterios_calidad": [
+    "Se puede rellenar con una mano en el móvil en menos de 40 segundos",
+    "Cada campo eliminado está justificado y cada campo que queda también"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "tarea": "Escribir el codigo R con ggplot2 de cuatro graficos de negocio listos para exportar e insertar en un informe",
+  "contexto": {
+    "para_quien": "[SOCIO, BANCO, CLIENTE, EQUIPO]",
+    "mensaje_principal": "[QUE QUIERES QUE ENTIENDAN AL VERLOS]",
+    "paquetes": "ggplot2, dplyr, scales, forcats",
+    "idioma": "todos los titulos, ejes y etiquetas en espanol"
+  },
+  "entradas": {
+    "ruta_datos": "[RUTA DEL CSV O EXCEL]",
+    "columna_fecha": "[NOMBRE]",
+    "columna_categoria": "[PRODUCTO, CANAL, COMERCIAL...]",
+    "columna_importe": "[NOMBRE]",
+    "colores_marca": "[HASTA 3 COLORES EN HEXADECIMAL, EJ #1B4965]",
+    "formato_salida_imagen": "[PNG PARA PANTALLA / PDF PARA IMPRIMIR]"
+  },
+  "graficos": [
+    "1. Evolucion mensual del importe con linea, puntos y una linea de media movil de 3 meses",
+    "2. Comparativa por categoria en barras horizontales ordenadas de mayor a menor, con el valor al final de cada barra",
+    "3. Reparto del total por categoria con barra apilada al 100 por cien, agrupando en Otros lo que baje del 3 por ciento",
+    "4. Concentracion tipo Pareto: barras de importe por cliente o producto y linea de porcentaje acumulado"
+  ],
+  "reglas_de_diseno": [
+    "Fondo limpio con theme_minimal, sin lineas de rejilla verticales innecesarias",
+    "Importes formateados en euros con separador de miles espanol usando scales",
+    "Titulo que diga la conclusion, no la variable, y subtitulo con el periodo",
+    "Sin leyenda si se puede etiquetar directamente sobre el grafico",
+    "Nada de graficos de tarta ni de efectos 3D",
+    "Tamano y tipografia legibles al imprimir en A4"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con bloques de codigo R",
+    "secciones": [
+      "1. Bloque de configuracion con las variables a rellenar",
+      "2. Un bloque de codigo por grafico, independiente y ejecutable por separado",
+      "3. Codigo para guardar cada grafico con ggsave en el formato y tamano indicados",
+      "4. Para cada grafico, una frase de lectura que el usuario puede poner como pie de imagen"
+    ]
+  },
+  "restricciones": [
+    "No inventes datos: si faltan columnas, el codigo debe avisar y parar",
+    "Maximo 8 categorias visibles por grafico, el resto agrupado",
+    "Colores accesibles y distinguibles tambien en blanco y negro"
+  ],
+  "criterios_calidad": [
+    "Cada grafico se entiende sin leer texto alrededor",
+    "El codigo se ejecuta de arriba abajo sin errores",
+    "El resultado no parece una hoja de calculo"
+  ]
+}

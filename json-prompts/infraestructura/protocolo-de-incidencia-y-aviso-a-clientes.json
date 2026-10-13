@@ -1,0 +1,47 @@
+{
+  "tarea": "Crear el protocolo de incidencias y los mensajes de aviso a clientes",
+  "contexto": {
+    "servicio": "[QUÉ SE CAE: TIENDA, RESERVAS, APP, ENTREGA DE PEDIDOS]",
+    "clientes": "[QUIÉNES SON Y POR DÓNDE TE ESCRIBEN]",
+    "canales_disponibles": "[EMAIL, WHATSAPP, INSTAGRAM, WEB, TELÉFONO]",
+    "compromisos": "[LO QUE PROMETES EN TUS CONDICIONES, SI PROMETES ALGO]",
+    "perfil_usuario": "trabaja solo o casi; el protocolo debe ser ejecutable por una persona"
+  },
+  "entradas": {
+    "tipos_de_incidencia": "[CAÍDA TOTAL, PAGOS FALLANDO, LENTITUD, DATO ERRÓNEO, FUGA DE DATOS]",
+    "tono_de_marca": "[CERCANO, SOBRIO, TÉCNICO...]"
+  },
+  "pasos": [
+    "1. Define tres niveles de gravedad con ejemplos concretos y qué exige cada uno.",
+    "2. Fija el reloj: a los cuántos minutos se avisa en cada nivel, aunque todavía no sepas la causa.",
+    "3. Escribe la secuencia de actuación: confirmar, contener, comunicar, arreglar, cerrar.",
+    "4. Prepara tres plantillas: primer aviso, actualización de seguimiento y cierre con explicación.",
+    "5. Decide el sitio único de la verdad: una página o un canal donde se publica el estado.",
+    "6. Prepara la respuesta rápida para quien escriba por privado mientras dura la incidencia.",
+    "7. Define qué se compensa y qué no, con criterio fijo, para no improvisar caso a caso.",
+    "8. Cierra con un resumen breve: qué pasó, qué se ha cambiado para que no se repita."
+  ],
+  "restricciones": [
+    "Nunca prometas una hora de solución que no puedas garantizar.",
+    "No culpes al proveedor en público ni des detalles técnicos que no aporten.",
+    "Si hay datos personales afectados, indica que hay obligaciones legales de aviso y no lo trates como una caída normal."
+  ],
+  "errores_tipicos": [
+    "Callar hasta tener la solución y que los clientes se enteren por su cuenta.",
+    "Avisar por un canal y dejar sin respuesta a quien pregunta por otro.",
+    "Decir ya está arreglado sin haberlo comprobado con un caso real.",
+    "Prometer compensaciones distintas a cada cliente que insiste.",
+    "No dejar por escrito qué pasó y volver a tropezar en lo mismo."
+  ],
+  "formato_salida": {
+    "tabla_gravedad": "columnas: nivel | ejemplo | plazo de aviso | canales | quién decide",
+    "secuencia": "lista numerada de la primera hora",
+    "plantillas": "tres textos listos para copiar, con [HUECOS] señalados, máximo 90 palabras cada uno",
+    "criterio_compensacion": "reglas fijas por nivel"
+  },
+  "criterios_calidad": [
+    "Los mensajes se entienden sin conocimientos técnicos.",
+    "Cada plantilla dice qué pasa, qué haces y cuándo vuelves a contar algo.",
+    "El protocolo cabe en una hoja y se puede seguir bajo estrés."
+  ]
+}

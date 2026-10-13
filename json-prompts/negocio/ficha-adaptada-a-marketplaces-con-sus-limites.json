@@ -1,0 +1,36 @@
+{
+  "tarea": "Adaptar la ficha de producto de mi tienda al formato y las reglas de un marketplace",
+  "contexto": {
+    "marketplace": "[AMAZON, MIRAVIA, EL CORTE INGLES U OTRO]",
+    "categoria_en_el_marketplace": "[CATEGORIA]",
+    "marca_registrada": "[SI O NO]",
+    "mercado": "Espana"
+  },
+  "entradas": {
+    "ficha_actual": "[PEGA AQUI TU TITULO, BULLETS Y DESCRIPCION]",
+    "datos_obligatorios": "[MARCA, MODELO, MATERIAL, MEDIDAS, PESO, UNIDADES POR PACK]",
+    "terminos_de_busqueda": "[COMO LO BUSCA LA GENTE DENTRO DEL MARKETPLACE]",
+    "limites_del_formulario": "[SI LOS CONOCES: CARACTERES DE TITULO, NUMERO DE BULLETS]"
+  },
+  "reglas": [
+    "Titulo: marca, tipo de producto, atributo principal, medida o cantidad, en ese orden",
+    "Un bullet por beneficio, empezando por 2 o 3 palabras en mayusculas a modo de etiqueta",
+    "No incluir precios, ofertas, urls, telefonos ni menciones a otras tiendas",
+    "No usar palabras prohibidas tipo el mas vendido, garantia de por vida o numero 1",
+    "Los terminos de busqueda ocultos van sin repetir palabras que ya estan en el titulo",
+    "Respetar los limites de caracteres indicados y contarlos"
+  ],
+  "formato_salida": {
+    "titulo": "con el numero de caracteres entre parentesis",
+    "bullets": "5 bullets con su numero de caracteres",
+    "descripcion": "texto plano en parrafos cortos",
+    "terminos_busqueda_ocultos": "lista separada por espacios",
+    "tabla_atributos": "campo del formulario y valor a introducir",
+    "avisos": "lista de datos que faltan para poder publicar"
+  },
+  "criterios_calidad": [
+    "Ningun texto supera el limite de caracteres del marketplace indicado",
+    "El titulo se entiende aunque se corte en el movil",
+    "No queda ninguna frase que pueda incumplir las normas del marketplace"
+  ]
+}

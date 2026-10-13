@@ -1,0 +1,32 @@
+{
+  "tarea": "Convertir la lista de herramientas conectadas a un agente de IA en una matriz de permisos con topes por herramienta",
+  "contexto": {
+    "agente": "[QUÉ HACE TU AGENTE EN UNA FRASE]",
+    "supervisor": "[QUIÉN REVISA LO QUE HACE Y CON QUÉ FRECUENCIA]"
+  },
+  "entradas": {
+    "herramientas": ["[HERRAMIENTA 1 Y PARA QUÉ]", "[HERRAMIENTA 2 Y PARA QUÉ]", "[HERRAMIENTA 3 Y PARA QUÉ]"],
+    "volumen_normal_diario": "[CUÁNTAS ACCIONES AL DÍA SON NORMALES]"
+  },
+  "metodo": [
+    "Para cada herramienta, separar operaciones de lectura y de escritura: la lectura casi siempre puede ser libre, la escritura no",
+    "Marcar cuáles son irreversibles: enviar, publicar, cobrar, borrar, cancelar, dar de baja",
+    "Poner a cada operación de escritura un tope diario y un tope por operación",
+    "Definir el modo seguro por defecto: si el agente duda del permiso, no actúa y pregunta",
+    "Añadir una lista de destinatarios o registros intocables: [CUENTAS O CLIENTES QUE NO SE TOCAN]"
+  ],
+  "restricciones": [
+    "Ninguna herramienta puede quedar en permiso total sin tope",
+    "El agente nunca crea, cambia ni comparte credenciales, claves ni accesos",
+    "Si una operación afecta a más de [NÚMERO] registros de golpe, pasa a confirmación humana"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown más notas",
+    "columnas": ["Herramienta", "Operación", "Leer o escribir", "Reversible", "Permiso", "Tope", "Quién confirma"],
+    "notas": "debajo de la tabla, 5 líneas con los tres permisos más peligrosos y por qué"
+  },
+  "criterios_calidad": [
+    "Cada fila tiene un tope concreto o la palabra prohibido, nunca queda en blanco",
+    "Se puede leer la tabla y saber en 30 segundos qué es lo peor que podría hacer el agente"
+  ]
+}

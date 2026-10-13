@@ -1,0 +1,74 @@
+{
+  "tarea": "Disenar un plan de copias de seguridad realista para un negocio pequeno, con pruebas de restauracion programadas",
+  "idioma": "espanol de Espana",
+  "principio": "Una copia que nunca se ha restaurado no es una copia, es una suposicion",
+  "contexto_negocio": {
+    "actividad": "[A QUE SE DEDICA]",
+    "personas": "[CUANTAS PERSONAS TRABAJAN]",
+    "quien_manda_en_esto": "[NOMBRE Y CARGO DE QUIEN RESPONDE SI SE PIERDEN LOS DATOS]",
+    "presupuesto_mensual_euros": "[CIFRA O 'MINIMO POSIBLE']",
+    "nivel_tecnico_del_equipo": "[BAJO / MEDIO / ALTO]"
+  },
+  "inventario": {
+    "instruccion": "Pregunta por cada bloque antes de proponer nada. Si falta un bloque, dilo en el plan en lugar de inventarlo",
+    "bloques": [
+      {
+        "nombre": "facturacion y contabilidad",
+        "donde_vive": "[PROGRAMA O NUBE]",
+        "horas_que_aguanta_sin_ello": "[NUMERO]",
+        "contiene_datos_personales": "[SI / NO]"
+      },
+      {
+        "nombre": "correo y documentos",
+        "donde_vive": "[GMAIL / MICROSOFT 365 / SERVIDOR PROPIO]",
+        "horas_que_aguanta_sin_ello": "[NUMERO]",
+        "contiene_datos_personales": "[SI / NO]"
+      },
+      {
+        "nombre": "web o tienda",
+        "donde_vive": "[HOSTING O PLATAFORMA]",
+        "horas_que_aguanta_sin_ello": "[NUMERO]",
+        "contiene_datos_personales": "[SI / NO]"
+      },
+      {
+        "nombre": "ficheros de clientes y proyectos",
+        "donde_vive": "[CARPETA, NAS, NUBE]",
+        "horas_que_aguanta_sin_ello": "[NUMERO]",
+        "contiene_datos_personales": "[SI / NO]"
+      }
+    ]
+  },
+  "reglas_del_plan": {
+    "regla_3_2_1": "Tres copias de cada cosa, en dos soportes distintos, una de ellas fuera del local",
+    "copia_aislada": "Al menos una copia que no se pueda borrar desde el equipo de trabajo, porque el programa malicioso de secuestro cifra tambien las unidades conectadas",
+    "sincronizacion_no_es_copia": "Explicar que Drive, OneDrive o Dropbox sincronizan el borrado y el cifrado, asi que por si solos no son copia de seguridad",
+    "cifrado": "Las copias que salen del local van cifradas y la clave se guarda en el gestor de contrasenas, no en un papel junto al disco",
+    "retencion": "Proponer cuantos dias, semanas y meses se guardan, y justificar el numero"
+  },
+  "prueba_de_restauracion": {
+    "obligatoria": true,
+    "periodicidad": "una vez al trimestre como minimo",
+    "como": "Elegir un fichero al azar y una carpeta entera, restaurarlos en un sitio distinto del original y comprobar que se abren",
+    "registro": "Anotar fecha, quien lo hizo, cuanto tardo y que fallo",
+    "criterio_de_fallo": "Si nadie sabe hacerlo sin ayuda del que lo monto, el plan esta mal y hay que simplificarlo"
+  },
+  "salida_esperada": {
+    "formato": "documento corto en markdown",
+    "secciones": [
+      "Que se copia y que no, con lo que se deja fuera a proposito",
+      "Calendario: que se copia cada dia, cada semana y cada mes",
+      "Quien hace cada cosa, por nombre, no por cargo",
+      "Coste mensual estimado en euros",
+      "Guia de restauracion en pasos numerados que entienda alguien sin conocimientos tecnicos",
+      "Que hacer las primeras dos horas si se cifran los equipos",
+      "Que queda pendiente y necesita a un profesional"
+    ],
+    "tono": "frases cortas, sin tecnicismos, sin promesas"
+  },
+  "limites": {
+    "no_prometer": "No afirmar que el negocio queda protegido ni que no perdera datos",
+    "datos_personales": "Si algun bloque contiene datos personales, avisar de que el proveedor de la copia necesita contrato de encargado de tratamiento y de que conviene que lo revise un asesor en proteccion de datos",
+    "persona_responsable": "Recomendar un tecnico si hay servidor propio, si hay historiales clinicos o datos de salud, o si ya ha habido un incidente",
+    "incidente_en_curso": "Si el negocio ya tiene equipos cifrados, no seguir con el plan: decir que desconecten de la red sin apagar, que no paguen y que llamen a un tecnico y al INCIBE en el 017"
+  }
+}

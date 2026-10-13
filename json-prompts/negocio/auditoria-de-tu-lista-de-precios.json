@@ -1,0 +1,38 @@
+{
+  "tarea": "Auditar mi lista de precios y decidir qué subo, qué mantengo, qué reformulo y qué dejo de vender",
+  "contexto": {
+    "negocio": "[QUÉ NEGOCIO TIENES Y DESDE CUÁNDO]",
+    "objetivo": "[GANAR MÁS MARGEN, TRABAJAR MENOS HORAS, SIMPLIFICAR EL CATÁLOGO]"
+  },
+  "entradas": {
+    "catalogo": "[POR CADA SERVICIO: NOMBRE, PRECIO, HORAS QUE TE LLEVA, COSTE DIRECTO, VECES VENDIDO AL AÑO]",
+    "clientes": "[QUIÉN COMPRA CADA COSA Y SI REPITE]",
+    "tarifa_hora_objetivo": "[LO QUE NECESITAS GANAR POR HORA TRABAJADA]",
+    "quejas_o_frenos": "[QUÉ SERVICIOS DAN MÁS PROBLEMAS, RETRASOS O RECLAMACIONES]"
+  },
+  "metodo": [
+    "Calcular por servicio: margen por venta, margen por hora y margen total anual",
+    "Ordenar los servicios por margen por hora, que es el dato que de verdad manda",
+    "Clasificar cada uno en subir precio, mantener, reempaquetar o retirar",
+    "Detectar el servicio gancho que trae clientes aunque deje poco margen y marcarlo como excepción",
+    "Proponer para cada subida una cifra concreta y el argumento con el que la vas a defender",
+    "Comprobar el efecto: si se aplican los cambios, cuánto cambia el margen anual manteniendo el mismo volumen"
+  ],
+  "formato_salida": {
+    "tabla_diagnostico": "Servicio, precio, horas, coste, margen por hora, veces al año, margen anual, decisión",
+    "top_3_fugas": "Los tres servicios que más margen te destruyen y por qué",
+    "plan_de_precios": "Precio nuevo propuesto por servicio y fecha de aplicación",
+    "catalogo_simplificado": "Propuesta de catálogo con menos referencias y mejor ordenado",
+    "simulacion": "Margen anual actual frente al margen tras los cambios, con los supuestos usados"
+  },
+  "restricciones": [
+    "Si falta el coste o las horas de un servicio, pedirlo antes de clasificarlo",
+    "No proponer subidas iguales para todo: cada decisión con su motivo",
+    "Señalar el riesgo comercial de retirar un servicio antes de recomendarlo"
+  ],
+  "criterios_calidad": [
+    "Todas las decisiones se apoyan en el margen por hora, no en intuiciones",
+    "La simulación indica claramente qué supone y qué no está garantizado"
+  ],
+  "tono": "Analítico y directo, como un socio que mira los números contigo"
+}

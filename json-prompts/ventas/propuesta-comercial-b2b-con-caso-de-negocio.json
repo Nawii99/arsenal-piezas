@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar una propuesta comercial B2B con caso de negocio para presentar a un comité",
+  "contexto": {
+    "cliente": "[EMPRESA Y ACTIVIDAD]",
+    "interlocutor": "[NOMBRE Y CARGO DE QUIEN TE LO PIDE]",
+    "quien_mas_lo_lee": "[OTROS CARGOS QUE LO VERÁN: DIRECCIÓN, FINANZAS, IT...]",
+    "problema_detectado": "[PROBLEMA CON CIFRAS QUE TE CONTARON EN LA REUNIÓN]",
+    "solucion": "[QUÉ PROPONES HACER]",
+    "alcance": "[QUÉ INCLUYE Y QUÉ NO]",
+    "precio": "[IMPORTE, FORMA DE PAGO Y DURACIÓN]",
+    "plazos": "[FECHAS DE INICIO Y HITOS]"
+  },
+  "pasos": [
+    "Empieza por un resumen de una página que se entienda sin leer el resto",
+    "Reformula el problema con las palabras y las cifras del cliente",
+    "Explica la solución en fases con entregables y responsables por fase",
+    "Construye el caso de negocio: coste de no hacer nada, inversión y retorno estimado con los supuestos declarados",
+    "Añade riesgos y cómo los mitigas, condiciones y validez de la oferta",
+    "Termina con el siguiente paso concreto y una fecha"
+  ],
+  "restricciones": [
+    "Todo cálculo de retorno indica sus supuestos y se marca como estimación",
+    "Prohibido prometer resultados garantizados o porcentajes sin origen",
+    "Nada de páginas de 'quiénes somos' antes del problema del cliente",
+    "Máximo 6 páginas equivalentes"
+  ],
+  "formato_salida": {
+    "documento": "Secciones con títulos: Resumen, Situación actual, Propuesta, Plan y plazos, Inversión, Retorno estimado, Riesgos, Condiciones, Siguiente paso",
+    "tabla_inversion": "Concepto | Detalle | Importe | Periodicidad",
+    "email_de_envio": "Texto breve para mandar la propuesta y proponer una llamada de repaso"
+  },
+  "criterios_calidad": [
+    "Un directivo que no estuvo en la reunión entiende la propuesta leyendo solo el resumen",
+    "Queda escrito de forma explícita qué NO incluye el precio",
+    "Hay una única opción recomendada, aunque se ofrezcan alternativas"
+  ],
+  "tono": "Profesional, claro y sin marketing vacío"
+}

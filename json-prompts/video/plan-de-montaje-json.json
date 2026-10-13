@@ -1,0 +1,26 @@
+{
+  "tipo_documento": "plan_de_montaje",
+  "version": "1.0",
+  "proyecto": {
+    "titulo": "[TÍTULO DEL VÍDEO]",
+    "plataforma_destino": "[TIKTOK / INSTAGRAM / YOUTUBE / OTRA]",
+    "programa_montaje": "[DAVINCI RESOLVE / CAPCUT / KDENLIVE]",
+    "duracion_objetivo_segundos": "[NÚMERO]"
+  },
+  "clips": [
+    {
+      "orden": 1,
+      "nombre_archivo": "[NOMBRE DEL ARCHIVO DE VÍDEO]",
+      "inicio": "[MM:SS DENTRO DEL CLIP ORIGINAL]",
+      "fin": "[MM:SS DENTRO DEL CLIP ORIGINAL]",
+      "transicion_entrada": "corte",
+      "texto_en_pantalla": "[TEXTO O null SI NO HAY]",
+      "audio": {
+        "voz_original": true,
+        "musica_de_fondo": "[NOMBRE DE LA PISTA O null]",
+        "volumen_musica_porcentaje": 20
+      }
+    }
+  ],
+  "notas_revision": "[AVISOS PARA QUIEN MONTE, POR EJEMPLO DERECHOS DE LA MÚSICA]"
+}

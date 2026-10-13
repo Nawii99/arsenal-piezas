@@ -1,0 +1,57 @@
+{
+  "tarea": "Auditar y limpiar un fichero de datos de negocio, dejando reglas para que no se vuelva a ensuciar.",
+  "contexto": {
+    "quien_lo_usa": "Persona que gestiona su lista de clientes, contactos o catalogo en hojas de calculo o exportaciones.",
+    "momento": "Antes de importar a otra herramienta, enviar una campaña o publicar el catalogo.",
+    "objetivo": "Que ningun envio rebote, ningun cliente aparezca dos veces y ningun producto salga con precio o stock erroneo."
+  },
+  "entradas": {
+    "fichero": "[PEGA UNA MUESTRA DE FILAS CON SU CABECERA O DESCRIBE LAS COLUMNAS]",
+    "para_que_es": "[IMPORTAR A CRM, CAMPAÑA DE EMAIL, CATALOGO DE TIENDA, CONTABILIDAD]",
+    "campos_obligatorios": "[CUALES NO PUEDEN ESTAR VACIOS]",
+    "reglas_del_negocio": "[POR EJEMPLO: PRECIO CON DOS DECIMALES, TELEFONOS DE ESPAÑA, SKU UNICO]",
+    "origen_de_los_datos": "[FORMULARIO WEB, FERIA, COMPRA, IMPORTACION ANTIGUA]"
+  },
+  "pasos": [
+    "1. Describe el fichero: cuantas filas, cuantas columnas, que representa cada fila y que columnas sobran.",
+    "2. Cuenta vacios por columna y señala los que afectan a campos obligatorios.",
+    "3. Detecta duplicados por varios criterios, no solo por nombre: correo normalizado en minusculas, telefono sin espacios ni prefijo, y referencia unica.",
+    "4. Valida formatos: correos con arroba y dominio creible, telefonos con nueve digitos, fechas con un solo formato, precios con separador coherente.",
+    "5. Busca datos imposibles: precios a cero, stock negativo, fechas en el futuro, codigos postales de menos de cinco cifras.",
+    "6. Detecta problemas de codificacion: tildes y ñ convertidas en simbolos raros.",
+    "7. Revisa consentimiento y origen si son contactos: quien acepto recibir comunicaciones y cuando.",
+    "8. Propone la limpieza fila a fila indicando que se corrige solo y que necesita decision humana.",
+    "9. Escribe las reglas de entrada para que el formulario o el proceso no vuelva a meter basura."
+  ],
+  "que_mirar": [
+    "Nombres en mayusculas o con espacios al final que rompen la personalizacion del correo.",
+    "Dos filas del mismo cliente con correos distintos: hay que decidir cual manda.",
+    "Columnas que mezclan dos datos, como nombre y apellidos o direccion completa.",
+    "Ceros a la izquierda perdidos en codigos postales y referencias.",
+    "Precios importados con coma o punto segun el sistema, que cambian el importe.",
+    "Contactos antiguos sin actividad que conviene apartar antes de una campaña."
+  ],
+  "errores_tipicos": [
+    "Limpiar sobre el fichero original sin guardar copia previa.",
+    "Borrar duplicados quedandose con la fila mas vieja y perdiendo el dato bueno.",
+    "Corregir a mano y volver a ensuciar en la siguiente importacion por no arreglar el formulario.",
+    "Enviar a una lista comprada y quemar el dominio de correo."
+  ],
+  "restricciones": [
+    "No inventes datos que falten: se marcan como pendientes.",
+    "No propongas conservar contactos sin base para escribirles.",
+    "Toda correccion automatica debe ser reversible con la copia previa."
+  ],
+  "formato_salida": {
+    "bloque_1": "Radiografia del fichero: filas, columnas, vacios por columna, duplicados detectados.",
+    "bloque_2": "Tabla de incidencias: Fila | Columna | Problema | Correccion propuesta | Automatica o manual.",
+    "bloque_3": "Fichero limpio propuesto o las instrucciones exactas para limpiarlo en la hoja de calculo.",
+    "bloque_4": "Reglas de entrada para el formulario y para la proxima importacion."
+  },
+  "criterios_calidad": [
+    "Los duplicados se detectan por al menos dos criterios distintos.",
+    "Cada correccion automatica dice exactamente que cambia.",
+    "Las decisiones que requieren criterio humano estan separadas y contadas.",
+    "Las reglas de entrada evitan al menos los tres problemas mas frecuentes encontrados."
+  ]
+}

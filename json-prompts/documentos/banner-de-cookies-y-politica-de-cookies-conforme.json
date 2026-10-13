@@ -1,0 +1,37 @@
+{
+  "tarea": "Clasificar las cookies de una web y redactar el banner de consentimiento y la política de cookies conforme a la guía de la AEPD",
+  "contexto": {
+    "dominio": "[WWW.TUDOMINIO.COM]",
+    "tipo_de_web": "[WEB DE SERVICIOS / TIENDA ONLINE / BLOG]",
+    "herramientas_instaladas": "[EJ: GOOGLE ANALYTICS 4, META PIXEL, GOOGLE ADS, HOTJAR, YOUTUBE, GOOGLE MAPS, CHAT DE SOPORTE]",
+    "gestor_de_consentimiento": "[EJ: COOKIEBOT, COMPLIANZ, CMP PROPIA, NINGUNO]",
+    "email_contacto": "[EMAIL]"
+  },
+  "instrucciones": [
+    "Clasifica cada herramienta en técnica necesaria, de preferencias, de análisis o de publicidad y comportamiento",
+    "Indica para cada cookie: nombre o familia, titular, finalidad en una frase, duración y si es propia o de tercero",
+    "Avisa de cuáles no pueden cargarse antes del consentimiento y cuáles se pueden mantener siempre",
+    "Redacta la primera capa del banner: información breve, y botones Aceptar todas, Rechazar todas y Configurar, con el mismo peso visual",
+    "Redacta la segunda capa: panel por categorías con interruptores, todos desactivados por defecto salvo las técnicas",
+    "Redacta la política de cookies completa: qué son, categorías, tablas por categoría, cómo cambiar la decisión y cómo borrarlas en cada navegador",
+    "Añade instrucciones claras para que rechazar cueste lo mismo que aceptar y para volver a mostrar el panel desde el pie de la web"
+  ],
+  "restricciones": [
+    "Prohibido proponer muros de cookies que impidan el acceso sin alternativa",
+    "Nada de casillas premarcadas ni de seguir navegando equivale a aceptar",
+    "El botón de rechazar debe estar en la primera capa",
+    "Si no conoces la duración exacta de una cookie, indícalo como dato a comprobar en vez de inventarla"
+  ],
+  "formato_salida": {
+    "bloque_1": "tabla de inventario de cookies por categoría",
+    "bloque_2": "textos exactos del banner primera y segunda capa",
+    "bloque_3": "política de cookies completa lista para publicar",
+    "bloque_4": "checklist de comprobación técnica y errores frecuentes detectados"
+  },
+  "criterios_calidad": [
+    "Ninguna cookie no necesaria se carga antes del consentimiento",
+    "Aceptar y rechazar tienen la misma facilidad",
+    "Las tablas cubren todas las herramientas declaradas",
+    "El usuario puede retirar el consentimiento con dos clics"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Inventariar activos, datos, personas y puntos de entrada de un negocio pequeño como paso previo a un modelado de amenazas",
+  "rol": "Analista de seguridad que explica sin jerga a alguien sin perfil técnico",
+  "contexto": {
+    "negocio": "[A QUÉ SE DEDICA TU NEGOCIO]",
+    "tamano": "[NÚMERO DE PERSONAS Y SI HAY TELETRABAJO]",
+    "sistemas": "[WEB, TIENDA ONLINE, CRM, CORREO, TPV, NAS, MÓVILES, PORTÁTILES]",
+    "proveedores_con_acceso": "[GESTORÍA, AGENCIA, HOSTING, PASARELA DE PAGO, INFORMÁTICO EXTERNO]",
+    "datos_sensibles": "[DATOS DE CLIENTES, PAGOS, NÓMINAS, SALUD, FOTOS]"
+  },
+  "instrucciones": [
+    "Agrupa lo que tengo en cuatro bloques: datos, sistemas, personas y accesos de terceros",
+    "Por cada activo indica dónde vive, quién puede entrar y qué pasaría si se pierde, se filtra o se para",
+    "Marca los puntos de entrada desde internet: formularios, logins, correo, WhatsApp, dominios, VPN y escritorio remoto",
+    "Señala las fronteras de confianza, es decir dónde un dato pasa de mi control a manos de otro",
+    "Si falta un dato que impida continuar, pregúntalo; si no, asume lo más habitual y márcalo como suposición"
+  ],
+  "restricciones": [
+    "Nada de herramientas de ataque ni de escaneo: esto es inventario y análisis",
+    "Español llano, sin siglas sin explicar",
+    "Máximo 30 activos: si hay más, agrupa por familias"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown mas listas",
+    "columnas_tabla": ["Activo", "Tipo", "Dónde está", "Quién accede", "Datos que contiene", "Impacto si falla (alto/medio/bajo)"],
+    "secciones_extra": ["Puntos de entrada desde internet", "Fronteras de confianza", "Suposiciones que he hecho", "Las 5 joyas de la corona"]
+  },
+  "criterios_calidad": [
+    "Cada activo tiene responsable e impacto de negocio, no solo un nombre",
+    "Aparecen los activos que siempre se olvidan: copias de seguridad, buzones del dominio, móviles personales, redes sociales y accesos de exempleados",
+    "Las joyas de la corona van justificadas con una frase de negocio"
+  ],
+  "errores_a_evitar": [
+    "Listar solo ordenadores y olvidar cuentas, datos y proveedores",
+    "Confundir un fallo técnico con el daño real al negocio",
+    "Dar por hecho que lo que gestiona un tercero no es asunto mío"
+  ]
+}

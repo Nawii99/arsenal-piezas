@@ -1,0 +1,37 @@
+{
+  "tarea": "Hacer el control de calidad de un reportaje de fotografía inmobiliaria antes de la entrega y redactar el email de envío",
+  "entradas": {
+    "cliente": "[AGENCIA O PROPIETARIO]",
+    "fotos_entregables": "[LISTA O DESCRIPCIÓN DE LAS FOTOS FINALES, O ADJÚNTALAS]",
+    "estancias_comprometidas": "[LISTA DE ESTANCIAS QUE INCLUÍA EL ENCARGO]",
+    "incluia_el_encargo": "[NÚMERO DE FOTOS, VÍDEO, PLANO, RETOQUES]",
+    "plazo": "[FECHA DE ENTREGA]",
+    "medio_de_entrega": "[WETRANSFER / DRIVE / GALERÍA WEB]"
+  },
+  "procedimiento": [
+    "Comprueba cobertura: que todas las estancias comprometidas están y que ninguna se ha quedado con una sola foto mala",
+    "Revisa técnica en cada imagen: verticales rectas, horizonte nivelado, foco correcto, ventanas con detalle, sombras abiertas",
+    "Revisa color: paredes blancas neutras, sin dominante amarilla ni azul, y coherencia entre fotos de la misma estancia",
+    "Busca los errores clásicos: reflejo del fotógrafo en espejos y cristales, trípode a la vista, puertas a medio abrir, cables, papeleras, tapa del váter subida, luces de distinta temperatura encendidas",
+    "Comprueba privacidad: nada de personas, mascotas, fotos familiares reconocibles, documentos, matrículas ni número de portal si el cliente lo pidió",
+    "Verifica los archivos: nombres ordenados, tamaño y peso adecuados para el uso, y ausencia de duplicados",
+    "Clasifica cada hallazgo en: hay que corregir, mejor descartar, o aceptable",
+    "Redacta el email de entrega con lo que se envía, cómo descargarlo, condiciones de uso de las imágenes y una petición amable de reseña o de repetir"
+  ],
+  "restricciones": [
+    "No aprobar por defecto: si falta información para juzgar algo, pregúntalo",
+    "No sugerir retoques que oculten defectos del inmueble",
+    "El email no debe pedir disculpas ni abrir la puerta a retoques ilimitados"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de revisión: Foto / Problema detectado / Gravedad / Qué hago",
+    "bloque_2": "Semáforo global de entrega: listo, listo con avisos, o no entregar todavía",
+    "bloque_3": "Lista de estancias o tomas que faltan respecto a lo comprometido",
+    "bloque_4": "Email de entrega listo para copiar"
+  },
+  "criterios_calidad": [
+    "Cada problema señalado dice exactamente cómo se arregla",
+    "No se marca como grave nada que el cliente no vaya a notar",
+    "El email se lee en menos de un minuto"
+  ]
+}

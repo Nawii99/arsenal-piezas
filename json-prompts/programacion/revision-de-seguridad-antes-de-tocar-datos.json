@@ -1,0 +1,40 @@
+{
+  "tarea": "Auditar una sentencia SQL que modifica datos o estructura antes de ejecutarla y entregar un procedimiento seguro paso a paso",
+  "entradas": {
+    "sentencia": "[PEGA AQUÍ EL UPDATE, DELETE, ALTER O MERGE QUE QUIERES EJECUTAR]",
+    "motor_sql": "[POSTGRESQL / MYSQL / SQL SERVER]",
+    "entorno": "[PRODUCCIÓN / PRUEBAS]",
+    "tabla_y_filas": "[TABLA AFECTADA Y CUÁNTAS FILAS TIENE]",
+    "copia_de_seguridad": "[SÍ, DE HOY / SÍ, ANTIGUA / NO TENGO]",
+    "que_pretendes": "[EXPLICA CON TUS PALABRAS QUÉ QUIERES CONSEGUIR]"
+  },
+  "procedimiento": [
+    "1. Traducir la sentencia a lenguaje llano: qué filas toca y qué les hace",
+    "2. Comprobar si lo que hace coincide con lo que el usuario pretende",
+    "3. Detectar peligros: falta de WHERE, WHERE demasiado amplio, JOIN que multiplica filas, tipos que no casan, claves foráneas en cascada, columnas que se quedan sin datos",
+    "4. Escribir el SELECT equivalente que muestra exactamente las filas que se verán afectadas",
+    "5. Escribir la versión final dentro de una transacción con punto de vuelta atrás",
+    "6. Indicar cómo deshacerlo si sale mal"
+  ],
+  "clasificacion_riesgo": {
+    "verde": "Reversible y acotado a pocas filas identificadas",
+    "ambar": "Afecta a muchas filas o a datos de clientes, pero es reversible con copia",
+    "rojo": "Irreversible, sin copia o sin filtro claro: no ejecutar"
+  },
+  "restricciones": [
+    "Si no hay copia de seguridad reciente, el veredicto es siempre no ejecutar",
+    "Nunca proponer ejecutar directamente en producción sin haberlo probado en una copia",
+    "No sugerir desactivar restricciones de integridad para que la sentencia pase"
+  ],
+  "formato_salida": {
+    "1_que_hace": "Explicación en dos frases",
+    "2_riesgo": "Verde, ámbar o rojo con el motivo",
+    "3_select_previo": "Consulta para ver las filas afectadas antes de tocar nada",
+    "4_sentencia_segura": "Versión final con BEGIN, la sentencia, la comprobación y COMMIT o ROLLBACK",
+    "5_plan_b": "Cómo revertir y qué comprobar después"
+  },
+  "criterios_calidad": [
+    "El número de filas afectadas queda estimado antes de ejecutar",
+    "Cada aviso señala la línea concreta de la sentencia"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir el guion plano a plano de un vídeo tour vertical de un inmueble, grabable con un móvil en una sola visita",
+  "entradas": {
+    "inmueble": "[TIPO, METROS Y ZONA]",
+    "recorrido": "[ORDEN DE ESTANCIAS DESDE LA ENTRADA]",
+    "puntos_fuertes": "[3 COSAS QUE MÁS VENDEN]",
+    "duracion": "[30 / 45 / 60 SEGUNDOS]",
+    "destino": "[INSTAGRAM REELS / TIKTOK / WHATSAPP / PORTAL]",
+    "equipo": "[MÓVIL] + [ESTABILIZADOR SÍ/NO] + [MICRÓFONO SÍ/NO]",
+    "precio_publicable": "[SÍ, PRECIO / NO MOSTRAR]"
+  },
+  "procedimiento": [
+    "Empieza por el plano más impactante, no por el portal ni por el pasillo: los primeros dos segundos deciden si siguen viendo",
+    "Divide el tiempo total en tomas de 2 a 4 segundos y asigna una estancia o detalle a cada una",
+    "Indica para cada toma el movimiento: avance lento hacia delante, giro suave, plano fijo o descubrimiento al abrir una puerta",
+    "Graba en vertical 9:16, a la altura del pecho, caminando con pasos cortos y talón primero para que no tiemble",
+    "Alterna plano general de estancia con detalle (grifería, suelo, vistas) para dar ritmo",
+    "Escribe el texto en pantalla de cada toma: máximo 5 palabras, y deja libres los márgenes superior e inferior por la interfaz de la red",
+    "Cierra con la llamada a la acción y el dato clave (zona, metros, y precio solo si procede)"
+  ],
+  "restricciones": [
+    "Sin música con derechos: indica que se use la biblioteca de la propia red",
+    "No grabar a vecinos, matrículas ni interiores de viviendas colindantes",
+    "No usar zoom digital ni cámara lenta que estire el recorrido"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de guion",
+    "columnas": ["Toma", "Segundos", "Estancia", "Movimiento de cámara", "Qué debe verse", "Texto en pantalla"],
+    "extras": ["Lista de tomas de seguridad extra por si algo sale movido", "Pie de publicación con 6 hashtags de zona"]
+  },
+  "criterios_calidad": [
+    "La suma de segundos coincide con la duración pedida",
+    "El recorrido se entiende sin narración",
+    "Los tres puntos fuertes aparecen dentro de los primeros 15 segundos"
+  ]
+}

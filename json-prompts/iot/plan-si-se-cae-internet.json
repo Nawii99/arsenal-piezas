@@ -1,0 +1,53 @@
+{
+  "tarea": "Definir el comportamiento de una instalacion domotica cuando falla internet, la corriente o el servidor del fabricante, y dejar por escrito el plan de degradacion.",
+  "contexto": {
+    "instalacion": "[DESCRIBE EL INMUEBLE Y SU USO]",
+    "inventario": "[LISTA DE DISPOSITIVOS CON MARCA, FUNCION Y SI DEPENDEN DE NUBE]",
+    "personas_afectadas": "[QUIEN VIVE O TRABAJA ALLI, SI HAY MAYORES, NINOS O ANIMALES]",
+    "cosas_que_no_pueden_fallar": "[EJ: LA PUERTA TIENE QUE ABRIRSE, LA CAMARA FRIGORIFICA NO PUEDE PARAR, LA CALEFACCION EN INVIERNO]"
+  },
+  "escenarios_a_cubrir": [
+    "Se cae internet pero hay luz y wifi local",
+    "Se cae el router entero",
+    "Se va la luz 10 minutos",
+    "Se va la luz 8 horas",
+    "El fabricante cierra el servicio o cambia la app",
+    "Se estropea el hub o el mini ordenador central",
+    "El movil del dueno se pierde o se rompe"
+  ],
+  "procedimiento": [
+    "1. Marca cada dispositivo como LOCAL, MIXTO o SOLO NUBE segun si funciona sin internet.",
+    "2. Para cada elemento critico define el estado seguro al fallar: la cerradura queda abierta o cerrada, la valvula cerrada, el enchufe encendido.",
+    "3. Comprueba que existe siempre un mando fisico: interruptor de pared, llave, mando a distancia, boton manual.",
+    "4. Calcula que aguanta con SAI y cuanto: router, hub y camaras suelen ser los unicos que merece la pena mantener.",
+    "5. Decide que avisos deben salir por una via distinta a internet, por ejemplo SMS con una tarjeta 4G barata o sirena local.",
+    "6. Define el arranque tras un corte: que se enciende solo, que queda apagado y en que orden.",
+    "7. Prepara la copia de seguridad de la configuracion y donde se guarda.",
+    "8. Redacta la ficha de una pagina para el cliente con que hacer si algo no responde."
+  ],
+  "errores_tipicos": [
+    "Instalar cerradura inteligente sin dejar bombin de llave o sin pilas de emergencia.",
+    "Sustituir un interruptor de pared por uno inteligente sin dejar forma manual de encender.",
+    "Poner el hub en un enchufe sin SAI y el router con SAI, o al reves.",
+    "Bombillas inteligentes que al volver la luz se encienden todas a la vez a plena potencia de madrugada.",
+    "Depender de un unico movil para todo, sin segundo administrador en las cuentas."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de inventario: DISPOSITIVO | LOCAL O NUBE | QUE HACE SI CAE INTERNET | ESTADO SEGURO | MANDO MANUAL",
+    "bloque_2": "Tabla por escenario: ESCENARIO | QUE DEJA DE FUNCIONAR | CONSECUENCIA | MITIGACION | COSTE",
+    "bloque_3": "Lista de compra de mitigacion ordenada por relacion coste beneficio",
+    "bloque_4": "Procedimiento de arranque tras corte de luz",
+    "bloque_5": "Ficha de una pagina para pegar en el cuadro, en lenguaje de calle",
+    "bloque_6": "Plan de copias: que se guarda, cada cuanto y donde"
+  },
+  "restricciones": [
+    "Nunca propongas una solucion que deje a alguien encerrado o sin calefaccion.",
+    "Cualquier intervencion en el cuadro electrico la hace un electricista.",
+    "Si algo es solo nube y es critico, di claramente que hay que sustituirlo."
+  ],
+  "criterios_calidad": [
+    "Todo elemento critico tiene mando manual documentado.",
+    "La ficha de una pagina la entiende alguien de 70 anos.",
+    "Las mitigaciones tienen precio y prioridad, no son una lista de deseos."
+  ]
+}

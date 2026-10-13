@@ -1,0 +1,37 @@
+{
+  "tarea": "Auditar las dependencias de un proyecto y entregar un plan de parcheo priorizado por riesgo real",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL PROYECTO]",
+    "lenguaje_y_gestor": "[NODE/NPM, PYTHON/PIP, PHP/COMPOSER, JAVA/MAVEN...]",
+    "que_expone": "[WEB PÚBLICA / API INTERNA / APP DE ESCRITORIO]",
+    "datos_sensibles": "[DATOS PERSONALES, PAGOS, NINGUNO]"
+  },
+  "entradas": {
+    "salida_del_escaner": "[PEGA LA SALIDA DE npm audit, pip-audit, composer audit O EL INFORME DE DEPENDABOT/SNYK]",
+    "fichero_de_dependencias": "[PEGA package.json, requirements.txt O composer.json]"
+  },
+  "procedimiento": [
+    "Agrupa los avisos por paquete y quédate con la versión segura mínima de cada uno",
+    "Separa dependencias directas de transitivas e indica qué dependencia directa arrastra cada transitiva",
+    "Reevalúa la severidad según el uso real: si la función vulnerable no se usa en este proyecto, bájala y explica por qué",
+    "Marca los avisos que solo afectan a entorno de desarrollo o a herramientas de compilación",
+    "Calcula el riesgo de rotura de cada arreglo: parche, menor o mayor según semver",
+    "Ordena por impacto real dividido entre esfuerzo y reparte en tres tandas: hoy, esta semana, este trimestre"
+  ],
+  "restricciones": [
+    "No inventes identificadores CVE ni números de versión: si un dato no está en la entrada, escribe DATO NO DISPONIBLE",
+    "No propongas actualizarlo todo a la última versión por defecto",
+    "Cada recomendación lleva el comando exacto de instalación"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown más secciones",
+    "columnas": ["paquete", "versión actual", "versión objetivo", "directa o transitiva", "severidad real", "riesgo de rotura", "comando"],
+    "secciones_extra": ["Resumen en 5 líneas para alguien no técnico", "Tanda 1: hoy", "Tanda 2: esta semana", "Tanda 3: este trimestre", "Qué probar después de cada tanda"]
+  },
+  "criterios_calidad": [
+    "Ningún paquete aparece dos veces",
+    "Toda severidad rebajada lleva justificación de una línea",
+    "El plan completo cabe en una página"
+  ],
+  "tono": "directo, sin jerga innecesaria, explicando siempre el porqué"
+}

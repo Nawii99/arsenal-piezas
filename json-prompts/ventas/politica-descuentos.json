@@ -1,0 +1,52 @@
+{
+  "tarea": "Definir la política de descuentos del negocio y el guion de negociación: qué se puede bajar, hasta dónde y a cambio de qué",
+  "rol": "Negociador que trata el descuento como un intercambio, nunca como un regalo para caer bien",
+  "contexto": {
+    "servicio_y_precio": "[QUÉ VENDES Y A CUÁNTO]",
+    "coste_directo": "[LO QUE TE CUESTA HACERLO: MATERIAL, SUBCONTRATAS, HORAS]",
+    "horas_por_trabajo": "[HORAS MEDIAS]",
+    "objetivo_por_hora": "[EUROS POR HORA QUE NECESITAS PARA VIVIR DE ESTO]"
+  },
+  "entradas": {
+    "peticion_del_cliente": "[LO QUE TE HA PEDIDO, TAL CUAL]",
+    "tipo_de_cliente": "[NUEVO / RECURRENTE / GRANDE / RECOMENDADO]",
+    "tu_agenda": "[LLENA / MEDIA / VACÍA]",
+    "contrapartidas_posibles": "[PAGO POR ADELANTADO, MÁS MESES, MÁS VOLUMEN, TESTIMONIO, REFERIDOS, PLAZO FLEXIBLE, MENOS REVISIONES]"
+  },
+  "pasos": [
+    "Calcula el suelo: precio por debajo del cual el trabajo no te compensa, partiendo de coste directo, horas y objetivo por hora",
+    "Define tres escalones de descuento con su porcentaje máximo y la contrapartida obligatoria de cada uno",
+    "Ajusta según agenda: con agenda llena el descuento máximo baja; con agenda vacía puede subir un escalón pero nunca cruzar el suelo",
+    "Prepara tres alternativas al descuento que cuestan poco y valen mucho para el cliente: plazo, orden de entrega, extra de bajo coste, forma de pago",
+    "Escribe el guion en cuatro tiempos: agradeces, preguntas por qué ese número, propones el intercambio y confirmas por escrito",
+    "Escribe la frase para decir que no cuando piden por debajo del suelo, ofreciendo reducir alcance en lugar de precio",
+    "Redacta el mensaje de confirmación por escrito que deja constancia del descuento y de la contrapartida"
+  ],
+  "restricciones": [
+    "Ningún escalón puede dejar el precio por debajo del suelo calculado",
+    "Todo descuento va atado a una contrapartida concreta y verificable",
+    "Prohibido descontar sin poner fecha de validez a esa condición",
+    "Español de España, tono tranquilo, sin pedir perdón por tus precios"
+  ],
+  "formato_salida": {
+    "calculo_del_suelo": {"coste_directo": 0, "horas": 0, "objetivo_por_hora": 0, "precio_suelo": 0},
+    "escalones": [
+      {"nivel": 1, "descuento_max_pct": 0, "contrapartida": "...", "cuando_usarlo": "..."}
+    ],
+    "alternativas_al_descuento": ["máximo 4, con lo que te cuesta cada una"],
+    "guion_negociacion": {"agradecer": "...", "preguntar": "...", "proponer": "...", "cerrar": "..."},
+    "frase_para_decir_que_no": "...",
+    "mensaje_de_confirmacion": "texto listo para enviar por email o WhatsApp"
+  },
+  "criterios_calidad": [
+    "Sabrías responder a un regateo sin hacer cuentas en el momento",
+    "Cada porcentaje tiene detrás un número, no una intuición",
+    "El guion nunca ofrece descuento antes de preguntar el motivo",
+    "Queda claro qué pasa si el cliente insiste: reduces alcance, no precio"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Descontar por miedo a perder al cliente en la primera pega",
+    "Dar el descuento y luego pedir la contrapartida",
+    "Aplicar el precio rebajado también a los siguientes encargos sin decidirlo"
+  ]
+}

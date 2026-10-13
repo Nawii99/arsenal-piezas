@@ -1,0 +1,39 @@
+{
+  "tarea": "Analizar la cartera de facturas pendientes de cobro y devolver un plan de recobro priorizado",
+  "contexto": {
+    "empresa": "[TU EMPRESA O NOMBRE]",
+    "sector": "[SECTOR]",
+    "plazo_pactado": "[15 / 30 / 60 DÍAS]",
+    "fecha_de_hoy": "[FECHA]",
+    "caja_disponible": "[DINERO EN BANCO HOY]"
+  },
+  "entradas": {
+    "listado_facturas": "[PEGA AQUÍ: CLIENTE, Nº FACTURA, IMPORTE, FECHA EMISIÓN, VENCIMIENTO, ESTADO]",
+    "historial": "[CLIENTES QUE SIEMPRE PAGAN TARDE O YA TE HAN FALLADO]",
+    "trabajo_en_curso": "[CLIENTES A LOS QUE SIGUES TRABAJANDO SIN COBRAR]"
+  },
+  "pasos": [
+    "Clasificar cada factura por antigüedad del vencimiento: al corriente, 1-30 días, 31-60, 61-90 y más de 90",
+    "Calcular el total pendiente, el total vencido y el porcentaje que representa cada tramo",
+    "Marcar la concentración de riesgo: cuánto del pendiente depende de un solo cliente",
+    "Asignar a cada factura una prioridad según importe, días vencidos y comportamiento previo del cliente",
+    "Proponer la acción concreta de esta semana para cada factura prioritaria: email, llamada, parar el servicio o carta formal"
+  ],
+  "reglas": [
+    "No dar por cobrada ninguna factura sin confirmación explícita en los datos",
+    "Señalar siempre si conviene dejar de prestar el servicio a un cliente que acumula deuda",
+    "Nada de consejos legales concretos: solo indicar cuándo tocaría consultar con un abogado"
+  ],
+  "formato_salida": {
+    "resumen": "Cuatro cifras: pendiente total, vencido total, cliente con más riesgo y días medios de retraso",
+    "tabla_antiguedad": "Tramo, número de facturas, importe y porcentaje",
+    "tabla_acciones": "Cliente, factura, importe, días vencidos, prioridad (alta/media/baja) y acción de esta semana",
+    "alertas": "Máximo 5 avisos de riesgo, el más grave primero"
+  },
+  "criterios_calidad": [
+    "Todos los importes suman correctamente con el listado de entrada",
+    "Cada factura prioritaria tiene una acción concreta y ejecutable hoy",
+    "El resumen se entiende en menos de un minuto"
+  ],
+  "tono": "Analítico, directo y sin dramatismo"
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar el procedimiento interno para atender los derechos del RGPD y escribir las plantillas de respuesta",
+  "contexto": {
+    "responsable": "[NOMBRE O RAZÓN SOCIAL]",
+    "email_derechos": "[EMAIL DE PRIVACIDAD]",
+    "sistemas_con_datos": "[EJ: CRM, EMAIL MARKETING, FACTURACIÓN, DRIVE, COPIAS DE SEGURIDAD, WHATSAPP]",
+    "responsable_interno": "[PERSONA O PUESTO QUE SE ENCARGA]",
+    "obligaciones_de_conservacion": "[EJ: FACTURAS 6 AÑOS MERCANTIL Y 4 AÑOS FISCAL]"
+  },
+  "derechos_cubiertos": ["acceso", "rectificación", "supresión", "oposición", "limitación", "portabilidad", "decisiones automatizadas"],
+  "instrucciones": [
+    "Define el circuito paso a paso: recepción, registro, verificación de identidad proporcionada, búsqueda en todos los sistemas, decisión, respuesta y archivo de la prueba",
+    "Fija el plazo de un mes prorrogable dos meses más y explica cómo y cuándo comunicar la prórroga",
+    "Explica cuándo se puede denegar total o parcialmente y cómo justificarlo, por ejemplo facturas que deben conservarse",
+    "Recuerda trasladar la petición a los encargados del tratamiento afectados",
+    "Escribe plantillas de email para: acuse de recibo, petición de identificación, respuesta afirmativa por derecho, denegación motivada y prórroga",
+    "Añade un registro en tabla para dejar constancia de cada solicitud y su resultado"
+  ],
+  "restricciones": [
+    "No pidas el DNI por defecto: solo si hay dudas razonables de identidad y explicando por qué",
+    "Nunca respondas negando el derecho sin motivo legal y sin informar de la reclamación ante la AEPD",
+    "Tono correcto y no defensivo, incluso ante peticiones agresivas",
+    "Plazos siempre en días naturales y con fecha límite calculada"
+  ],
+  "formato_salida": {
+    "bloque_1": "diagrama del circuito en pasos numerados con responsable y plazo",
+    "bloque_2": "plantillas de email listas para copiar",
+    "bloque_3": "tabla de registro de solicitudes",
+    "bloque_4": "lista de sistemas donde buscar y borrar, incluidas copias de seguridad"
+  },
+  "criterios_calidad": [
+    "Cada plantilla informa del derecho a reclamar ante la AEPD",
+    "El circuito indica quién hace qué y en cuántos días",
+    "Se contempla el borrado en todos los sistemas declarados",
+    "Una persona sin formación legal puede seguirlo sin ayuda"
+  ]
+}

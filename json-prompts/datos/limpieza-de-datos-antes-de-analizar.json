@@ -1,0 +1,37 @@
+{
+  "tarea": "Auditar la calidad de una tabla de datos antes de analizarla, detectando problemas que distorsionarían cualquier estadística posterior, y entregar un plan de limpieza paso a paso",
+  "entradas": {
+    "muestra_de_datos": "[PEGA LAS PRIMERAS 30 FILAS O ADJUNTA EL FICHERO]",
+    "diccionario": "[QUÉ SIGNIFICA CADA COLUMNA Y EN QUÉ UNIDAD]",
+    "origen": "[DE DÓNDE SE EXPORTÓ Y CADA CUÁNTO]",
+    "analisis_previsto": "[QUÉ QUIERES CALCULAR DESPUÉS]",
+    "numero_total_de_filas": "[NÚMERO]"
+  },
+  "procedimiento": [
+    "1. Revisar estructura: columnas mal tipadas, números guardados como texto, decimales con coma y con punto mezclados, fechas en formatos distintos, espacios sobrantes",
+    "2. Detectar duplicados exactos y duplicados probables (mismo cliente escrito de dos formas)",
+    "3. Medir huecos por columna y decidir para cada una: rellenar, dejar en blanco o excluir la fila, explicando el efecto de cada opción",
+    "4. Localizar valores imposibles (importes negativos, edades de 200 años, fechas futuras) y valores extremos, distinguiendo el error de captura del caso real poco frecuente",
+    "5. Comprobar coherencia entre columnas: fecha de baja anterior a la de alta, importe distinto de precio por unidades, totales que no suman",
+    "6. Comprobar cobertura temporal: meses o días que faltan, cortes de datos, cambios de criterio a mitad del periodo",
+    "7. Indicar qué problemas invalidarían el análisis previsto y cuáles solo lo ensucian un poco"
+  ],
+  "restricciones": [
+    "No eliminar valores extremos por defecto: proponer analizarlos con y sin ellos",
+    "Toda transformación debe ser reversible y quedar documentada",
+    "No inventar valores para rellenar huecos sin decir con qué criterio se rellenan",
+    "Si la muestra es demasiado pequeña para juzgar, decirlo"
+  ],
+  "formato_salida": {
+    "semaforo_general": "Apto para analizar, apto con reservas o no apto, en una línea con el motivo",
+    "tabla_de_incidencias": "Columna afectada, problema, filas afectadas, gravedad, arreglo propuesto",
+    "plan_de_limpieza": "Pasos numerados en el orden exacto de ejecución, indicando si se hacen en hoja de cálculo",
+    "formulas": "Fórmulas de hoja de cálculo listas para copiar en los arreglos más repetitivos",
+    "avisos_para_el_analisis": "Qué conclusiones habrá que matizar aunque se limpie todo",
+    "prevencion": "3 cambios en la forma de recoger los datos para que esto no se repita"
+  },
+  "criterios_calidad": [
+    "Cada incidencia indica cuántas filas afecta",
+    "El plan se puede ejecutar sin programar"
+  ]
+}

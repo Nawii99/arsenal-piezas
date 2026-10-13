@@ -1,0 +1,37 @@
+{
+  "tarea": "Convertir una transcripción bruta en un plan de montaje (paper edit) con los cortes exactos, en orden y con timecodes",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL VÍDEO]",
+    "formato_final": "[YOUTUBE 8 MIN / REEL 45 S / VÍDEO DE VENTA 2 MIN]",
+    "publico": "[A QUIÉN VA DIRIGIDO]",
+    "objetivo": "[QUE ENTIENDA X / QUE COMPRE Y / QUE SE APUNTE A Z]",
+    "duracion_objetivo": "[MM:SS]"
+  },
+  "entradas": {
+    "transcripcion_con_timecodes": "[PEGA AQUÍ LA TRANSCRIPCIÓN CON MARCAS DE TIEMPO]",
+    "notas_de_rodaje": "[TOMAS BUENAS, TOMAS FALLIDAS, AVISOS]"
+  },
+  "procedimiento": [
+    "Marcar las frases que sostienen el objetivo y descartar todo lo demás",
+    "Eliminar muletillas, repeticiones, arranques en falso y silencios de más de 1 segundo",
+    "Agrupar lo salvado en bloques temáticos y ordenarlos por interés decreciente",
+    "Elegir la frase de apertura entre las tres más potentes de todo el material",
+    "Decidir para cada corte si es duro, tapado con b-roll o con solape de audio (J-cut o L-cut)",
+    "Comprobar que la suma de duraciones cuadra con la duración objetivo"
+  ],
+  "restricciones": [
+    "No inventar frases: solo se puede recortar y reordenar lo que dice la transcripción",
+    "Ningún bloque hablado seguido de más de 20 segundos sin cambio visual",
+    "Marcar como AVISO cualquier corte que rompa el sentido de la frase"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown",
+    "columnas": ["nº", "entrada", "salida", "frase que se oye (primeras 8 palabras)", "tipo de corte", "visual encima", "motivo"],
+    "extras": ["Lista de descartes con el motivo", "Duración total estimada", "Tres opciones de frase de apertura"]
+  },
+  "criterios_calidad": [
+    "Un editor sin contexto podría montar el vídeo solo con esta tabla",
+    "Cada corte tiene un motivo escrito, no es un recorte al azar",
+    "La primera frase funciona sola, sin presentación previa"
+  ]
+}

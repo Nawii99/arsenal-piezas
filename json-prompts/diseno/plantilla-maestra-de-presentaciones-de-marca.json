@@ -1,0 +1,39 @@
+{
+  "tarea": "Diseñar el sistema de diapositivas maestras de la marca y explicar cómo montarlo paso a paso en la herramienta indicada",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR]",
+    "herramienta": "[POWERPOINT / GOOGLE SLIDES / KEYNOTE / CANVA]",
+    "formato": "[16:9 PANTALLA / 4:3 / VERTICAL 9:16]",
+    "usos_habituales": "[VENTAS, FORMACIÓN, INFORMES INTERNOS...]",
+    "activos_de_marca": "[COLORES HEX, TIPOGRAFÍAS Y VERSIONES DE LOGO QUE TIENES]"
+  },
+  "reglas_de_diseno": [
+    "Rejilla de 12 columnas con margen exterior mínimo del 6% del ancho del lienzo",
+    "Máximo 2 tipografías: una para titulares y otra para texto, con escala 40/28/20/16 puntos",
+    "Un solo mensaje y un solo elemento dominante por diapositiva",
+    "Contraste mínimo 4.5:1 entre texto y fondo",
+    "El logo aparece en portada, separadores y cierre, no en todas las diapositivas"
+  ],
+  "entregables": [
+    "Lista de 10 a 14 diseños maestros con nombre, para qué sirve cada uno y qué elementos lleva",
+    "Especificación por diseño: posición y tamaño de cada caja en porcentaje del lienzo",
+    "Escala tipográfica con tamaño, interlineado y color de cada estilo",
+    "Paleta aplicada: fondo, texto, acento y combinaciones prohibidas",
+    "Instrucciones numeradas para crear los patrones o el tema en la herramienta indicada",
+    "Checklist de 8 puntos para revisar cualquier diapositiva antes de enviarla"
+  ],
+  "errores_a_evitar": [
+    "Texto encima de una foto sin capa de oscurecido",
+    "Mezclar iconos de estilos distintos",
+    "Rellenar el hueco con texto en lugar de dejar aire",
+    "Usar más de tres colores en una misma diapositiva"
+  ],
+  "formato_salida": "Markdown con una tabla de diseños maestros, una ficha por diseño y el checklist al final",
+  "criterios_calidad": [
+    "Alguien sin ojo para el diseño puede montar la plantilla siguiendo los pasos",
+    "Todas las medidas son concretas, sin aproximadamente ni similares",
+    "Los diseños cubren portada, índice, texto, dos columnas, imagen a sangre, datos, cita, separador y cierre"
+  ],
+  "tono": "Directo y práctico, sin jerga de diseño sin explicar"
+}

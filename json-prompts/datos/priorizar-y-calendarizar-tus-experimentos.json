@@ -1,0 +1,35 @@
+{
+  "tarea": "Convertir una lista de ideas de mejora en un backlog de experimentos priorizado y calendarizado, con hipótesis formulada y criterio de éxito para cada uno",
+  "entradas": {
+    "ideas": "[LISTA DE IDEAS TAL Y COMO LAS TIENES, AUNQUE ESTÉN SUELTAS]",
+    "embudo": "[ETAPAS Y CIFRAS: VISITAS, CARRITOS, PEDIDOS O EQUIVALENTE]",
+    "trafico_mensual": "[NÚMERO]",
+    "capacidad": "[HORAS O PERSONAS DISPONIBLES AL MES]",
+    "herramientas": "[QUÉ USAS PARA MEDIR Y PARA HACER CAMBIOS]",
+    "objetivo_del_trimestre": "[LA MÉTRICA QUE QUIERES MOVER]"
+  },
+  "procedimiento": [
+    "1. Reescribir cada idea como hipótesis: si cambiamos X, entonces la métrica Y mejorará, porque Z",
+    "2. Descartar las ideas cuya métrica no esté conectada con el objetivo del trimestre y explicar por qué se descartan",
+    "3. Puntuar de 1 a 5 en impacto potencial, confianza en que funcione (según evidencia previa) y facilidad de ejecución; calcular la nota media",
+    "4. Estimar para cada test la muestra necesaria según la etapa del embudo donde actúa; marcar como no medible cualquiera cuyo volumen sea insuficiente y convertirlo en decisión directa o en investigación cualitativa",
+    "5. Ordenar por nota y encajar en el calendario respetando que solo puede correr un test a la vez sobre la misma página o métrica",
+    "6. Reservar un hueco al mes para repetir un test ganador y confirmar que el efecto se mantiene"
+  ],
+  "restricciones": [
+    "Nada de solapar dos tests que compitan por el mismo tráfico y la misma métrica",
+    "Cada test necesita una hipótesis y un criterio de éxito antes de entrar en el calendario",
+    "No priorizar por lo que más ilusión hace, sino por la nota; si se salta el orden hay que justificarlo por escrito"
+  ],
+  "formato_salida": {
+    "backlog": "Tabla: nombre corto, hipótesis, etapa del embudo, impacto, confianza, facilidad, nota, muestra necesaria, medible sí o no",
+    "calendario": "Tabla por semanas de los próximos 3 meses con el test asignado y su fecha mínima de lectura",
+    "descartados": "Lista con el motivo del descarte",
+    "fichas": "Ficha completa de los 3 primeros tests, listas para arrancar",
+    "panel_de_seguimiento": "Las 4 columnas que debe tener tu hoja de control de experimentos"
+  },
+  "criterios_calidad": [
+    "Ningún test del calendario carece de volumen suficiente para leerse",
+    "Las hipótesis explican el porqué, no solo el qué"
+  ]
+}

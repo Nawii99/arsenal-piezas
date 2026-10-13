@@ -1,0 +1,41 @@
+{
+  "tarea": "Convertir mi forma de hacer una tarea en un procedimiento escrito que pueda seguir otra persona",
+  "rol": "Responsable de operaciones que documenta procesos para equipos pequeños",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "tarea_a_documentar": "[NOMBRE DE LA TAREA, EJ: PREPARAR Y ENVIAR UN PEDIDO]",
+    "quien_la_hace_hoy": "[TÚ O QUIEN SEA]",
+    "quien_la_hara": "[PERFIL DE QUIEN LA ASUMIRÁ Y SU EXPERIENCIA]",
+    "herramientas": "[PROGRAMAS, MÁQUINAS O MATERIALES QUE INTERVIENEN]",
+    "frecuencia": "[CADA CUÁNTO SE HACE]"
+  },
+  "entradas": {
+    "explicacion_en_bruto": "[CUENTA CÓMO LO HACES TÚ, DESORDENADO, TAL CUAL TE SALGA]",
+    "errores_pasados": "[FALLOS QUE YA HAN OCURRIDO CON ESTA TAREA]",
+    "tiempo_objetivo": "[CUÁNTO DEBERÍA TARDAR UNA VEZ APRENDIDA]"
+  },
+  "instrucciones": [
+    "Ordena mi explicación en pasos numerados, uno por acción, empezando siempre por un verbo",
+    "Antes de los pasos, escribe qué hace falta tener a mano para empezar y cuándo se dispara la tarea",
+    "En los pasos donde hay una decisión, escribe la regla exacta: si pasa esto, haz aquello",
+    "Marca los pasos críticos donde un fallo cuesta dinero o cabrea al cliente",
+    "Incluye un apartado de errores típicos con la señal de alarma y cómo corregirlos",
+    "Añade un apartado de cuándo parar y preguntar al responsable",
+    "Termina con una checklist de verificación final que se pueda marcar en 1 minuto",
+    "Señala en qué pasos falta información mía para que el manual sea completo"
+  ],
+  "restricciones": [
+    "Frases cortas y en imperativo, tuteando",
+    "Nada de pasos tipo 'gestionar el pedido': concreta la acción real",
+    "Máximo 20 pasos; si son más, divide en dos procedimientos"
+  ],
+  "formato_salida": {
+    "tipo": "documento en markdown listo para imprimir",
+    "secciones": ["Para qué sirve", "Cuándo se hace", "Qué necesitas antes de empezar", "Pasos", "Errores típicos", "Cuándo preguntar", "Checklist final", "Tiempo estimado"]
+  },
+  "criterios_calidad": [
+    "Alguien que no conoce el negocio podría ejecutarlo sin llamarte",
+    "Cada paso tiene un resultado observable",
+    "No hay ningún paso que dependa de 'usar el sentido común'"
+  ]
+}

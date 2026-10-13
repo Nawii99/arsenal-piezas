@@ -1,0 +1,39 @@
+{
+  "tarea": "Construir el glosario terminológico de [NOMBRE DE TU MARCA]: cómo se escribe cada término, cuáles se prefieren y cuáles se prohíben con su alternativa",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "sector": "[SECTOR]",
+    "productos": "[NOMBRES EXACTOS DE TUS PRODUCTOS O SERVICIOS]",
+    "idiomas": "[ESPAÑOL DE ESPAÑA Y, SI APLICA, OTROS IDIOMAS O VARIANTES]"
+  },
+  "entradas": {
+    "textos_de_muestra": "[PEGA 3 A 8 TEXTOS TUYOS PARA EXTRAER LOS TÉRMINOS REALES QUE USAS]",
+    "palabras_que_odias": "[LISTA DE PALABRAS QUE NO QUIERES VER NUNCA]",
+    "tecnicismos_del_sector": "[TÉRMINOS QUE TU CLIENTE PUEDE NO ENTENDER]"
+  },
+  "proceso": [
+    "Detectar en los textos todas las formas distintas de nombrar lo mismo y elegir una sola forma oficial",
+    "Fijar la escritura exacta de la marca y los productos: mayúsculas, guiones, espacios, plural y género del artículo",
+    "Clasificar los anglicismos en tres grupos: se quedan porque el cliente los usa, se traducen, o se explican la primera vez",
+    "Para cada término prohibido, dar la alternativa concreta que se usa en su lugar",
+    "Añadir una explicación en una frase para los tecnicismos que el cliente puede no entender"
+  ],
+  "restricciones": [
+    "Cada término prohibido debe tener alternativa: prohibir sin sustituto no vale",
+    "No incluir términos genéricos del idioma, solo los que afectan a tu marca o sector",
+    "Nada de reglas basadas en gusto: la razón debe ser claridad, coherencia o percepción del cliente"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown más un anexo",
+    "columnas": ["término oficial", "variantes que no se usan", "uso correcto en una frase", "nivel: obligatorio, preferido o prohibido", "motivo"],
+    "anexo_1": "Escritura oficial de marca y productos con 5 ejemplos correctos y 5 incorrectos",
+    "anexo_2": "Lista de anglicismos con decisión y alternativa",
+    "anexo_3": "Instrucción lista para pegar en una IA: reglas de vocabulario resumidas en 10 líneas"
+  },
+  "criterios_calidad": [
+    "El glosario tiene al menos 25 entradas sacadas de los textos reales aportados",
+    "Ninguna entrada se contradice con otra",
+    "Cualquier persona sabría, con la tabla delante, qué palabra usar sin preguntar",
+    "El anexo de instrucción para IA funciona por sí solo sin leer el resto"
+  ]
+}

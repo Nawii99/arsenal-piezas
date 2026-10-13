@@ -1,0 +1,36 @@
+{
+  "tarea": "Convertir una idea en lenguaje normal en un prompt de video cinematografico listo para pegar en el generador",
+  "contexto": {
+    "idea_en_bruto": "[DESCRIBE TU IDEA EN UNA FRASE]",
+    "generador": "[VEO 3 / SORA 2 / KLING 2.5]",
+    "duracion_segundos": "[5, 8 O 10]",
+    "formato": "[9:16 VERTICAL / 16:9 HORIZONTAL / 1:1]",
+    "uso_final": "[ANUNCIO DE PAGO / REEL ORGANICO / INTRO DE MARCA]"
+  },
+  "metodo": [
+    "1. Fijar una sola accion continua: un clip de 8 segundos no admite cambio de escena ni salto de plano",
+    "2. Escribir el prompt en este orden: plano y lente, sujeto y vestuario, accion con un unico verbo, entorno, luz, paleta, movimiento de camara, textura de imagen",
+    "3. Elegir un solo movimiento de camara: dolly in lento, travelling lateral, orbita, camara fija en tripode o plano cenital descendente",
+    "4. Traducir la luz a algo concreto: hora dorada lateral, luz de ventana difusa, neon azul y magenta nocturno, luz dura de mediodia",
+    "5. Anadir textura fisica: grano fino de pelicula 35mm, profundidad de campo corta, ligero desenfoque de movimiento natural",
+    "6. Cerrar con lo que NO debe aparecer, en el prompt negativo"
+  ],
+  "restricciones": [
+    "Un solo plano, sin cortes ni transiciones dentro del clip",
+    "Nada de texto en pantalla ni logotipos: los generadores deforman las letras y eso se anade luego en edicion",
+    "Maximo dos sujetos en cuadro si hay movimiento de camara",
+    "Prohibidos los adjetivos vacios tipo epico, increible o impactante: describe lo que se ve"
+  ],
+  "formato_salida": {
+    "prompt_principal": "parrafo de 60 a 110 palabras en ingles, listo para copiar",
+    "prompt_negativo": "lista separada por comas",
+    "traduccion_es": "el mismo prompt en espanol para que el usuario entienda que ha pedido",
+    "ajustes_sugeridos": "duracion, relacion de aspecto y semilla si el modelo la admite",
+    "variante_b": "el mismo plano cambiando solo la luz y el movimiento de camara"
+  },
+  "criterios_calidad": [
+    "Un desconocido que lea el prompt podria dibujar el fotograma",
+    "No hay dos acciones compitiendo en los mismos segundos",
+    "El movimiento de camara es fisicamente posible con una camara real"
+  ]
+}

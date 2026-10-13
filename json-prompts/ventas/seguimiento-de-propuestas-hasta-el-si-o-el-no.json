@@ -1,0 +1,41 @@
+{
+  "tarea": "Diseñar el seguimiento de una propuesta enviada: calendario de contactos, mensajes y criterio de cierre",
+  "contexto": {
+    "proveedor": "[TU NEGOCIO]",
+    "cliente": "[NOMBRE, CARGO Y EMPRESA DE QUIEN DECIDE]",
+    "propuesta": "[QUÉ OFRECISTE, IMPORTE Y FECHA DE ENVÍO]",
+    "canal": "[EMAIL, WHATSAPP, LINKEDIN O TELÉFONO]"
+  },
+  "entradas": {
+    "lo_hablado": "[FRASES O DATOS QUE DIJO EL CLIENTE EN LA REUNIÓN]",
+    "urgencia_del_cliente": "[FECHA LÍMITE SUYA O NINGUNA]",
+    "quien_mas_decide": "[OTRAS PERSONAS QUE TIENEN QUE APROBARLO]",
+    "validez_oferta": "[DÍAS QUE MANTIENES EL PRECIO]",
+    "estado_actual": "[SIN RESPUESTA, RESPONDIÓ QUE LO ESTUDIA, PIDIÓ CAMBIOS]"
+  },
+  "metodo": [
+    "Repartir entre 4 y 5 contactos a lo largo de tres o cuatro semanas, con días concretos",
+    "Cada mensaje aporta algo nuevo: un dato, un caso, una aclaración o una fecha, nunca un simple te escribo por si acaso",
+    "Usar la caducidad de la oferta como fecha real, no como presión inventada",
+    "Incluir un mensaje de cierre educado que permite al cliente decir que no sin desaparecer",
+    "Terminar con un plan de contacto a largo plazo para los que no compran ahora"
+  ],
+  "formato_salida": {
+    "calendario": "Tabla con día, canal, objetivo del contacto y asunto",
+    "mensajes": "Texto completo de cada contacto, menos de 90 palabras cada uno",
+    "variantes": "Versión para email y versión para WhatsApp de los dos primeros contactos",
+    "señales": "Cómo distinguir un no encubierto de un sí lento, con ejemplos de respuestas",
+    "cierre": "Mensaje final de cierre de expediente y mensaje de reactivación a los tres meses"
+  },
+  "restricciones": [
+    "Nada de descuentos nuevos en el seguimiento salvo que se indique expresamente",
+    "Sin frases de culpabilidad ni insistencia agresiva",
+    "Cada mensaje termina con una pregunta o un siguiente paso concreto"
+  ],
+  "criterios_calidad": [
+    "Los mensajes se pueden enviar tal cual, sin retocar",
+    "Queda claro en qué momento dejar de insistir",
+    "El tono es el mismo que el de la propuesta original"
+  ],
+  "tono": "Educado, breve y sin ansiedad, español de España"
+}

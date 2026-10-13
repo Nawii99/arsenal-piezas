@@ -1,0 +1,34 @@
+{
+  "tarea": "Comparar Java, Kotlin y C# para un proyecto concreto y recomendar uno",
+  "contexto": {
+    "proyecto": "[QUÉ VAS A CONSTRUIR, EN DOS FRASES]",
+    "tipo": "[API / APP ANDROID / ESCRITORIO / PROCESO POR LOTES / VIDEOJUEGO]",
+    "equipo_actual": "[CUÁNTA GENTE Y QUÉ SABEN HOY]",
+    "plazo": "[MESES HASTA LA PRIMERA VERSIÓN]",
+    "donde_se_ejecuta": "[SERVIDOR PROPIO / NUBE / MÓVIL / PC DEL CLIENTE]",
+    "presupuesto": "[HOLGADO / AJUSTADO]",
+    "vida_esperada": "[AÑOS QUE ESPERAS MANTENERLO]"
+  },
+  "criterios_de_comparacion": [
+    "encaje con el tipo de proyecto",
+    "curva de aprendizaje para el equipo actual",
+    "disponibilidad y coste de contratar en España",
+    "madurez de librerías para este caso concreto",
+    "coste de ejecución: memoria, arranque, licencias",
+    "herramientas y facilidad de despliegue",
+    "riesgo de quedarse atado a un fabricante"
+  ],
+  "restricciones": [
+    "Nada de opiniones de moda: cada punto atado a un criterio",
+    "Reconocer cuándo dos opciones empatan de verdad",
+    "Avisar si la respuesta correcta es una cuarta opción fuera de la lista"
+  ],
+  "formato_salida": {
+    "1_tabla": "filas con los criterios, columnas Java, Kotlin y C#, puntuación de 1 a 5 y una nota",
+    "2_recomendacion": "un lenguaje elegido y tres motivos concretos",
+    "3_cuando_me_equivocaria": "en qué condiciones la recomendación cambia",
+    "4_plan_de_arranque": "primeros cinco pasos si se acepta la recomendación",
+    "5_señales_de_alarma": "qué vigilar en los tres primeros meses"
+  },
+  "tono": "consultor honesto, sin vender ninguna tecnología"
+}

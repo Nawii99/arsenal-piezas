@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar una secuencia de prospección B2B en frío de 12 toques repartidos en 3 semanas",
+  "contexto": {
+    "que_vendes": "[PRODUCTO O SERVICIO Y RESULTADO QUE DA]",
+    "cargo_objetivo": "[CARGO EXACTO: DIRECTOR DE OPERACIONES, RESPONSABLE DE COMPRAS...]",
+    "sector_objetivo": "[SECTOR Y TAMAÑO DE EMPRESA]",
+    "dolor_principal": "[PROBLEMA QUE TIENE ESA PERSONA EN SU DÍA A DÍA]",
+    "prueba": "[CASO, CIFRA O CLIENTE CONOCIDO QUE PUEDES MENCIONAR]",
+    "peticion": "[QUÉ PIDES: 20 MINUTOS, UNA AUDITORÍA GRATUITA, UNA DEMO...]"
+  },
+  "pasos": [
+    "Reparte 12 toques en 15 días laborables: emails, mensajes de LinkedIn, visitas de perfil, llamadas y un cierre educado",
+    "Cada toque aporta un ángulo distinto: dolor, caso de cliente, dato del sector, pregunta corta, recurso útil y despedida",
+    "Escribe el texto completo de cada email y mensaje, listo para copiar",
+    "Indica día, canal, objetivo del toque y qué hacer si responde o si abre pero no responde"
+  ],
+  "restricciones": [
+    "Emails de máximo 90 palabras, un solo asunto por email y una sola petición",
+    "Nada de 'espero que estés muy bien', 'te escribo porque somos líderes' ni adjuntos en el primer contacto",
+    "Prohibido prometer resultados concretos que no estén respaldados por la prueba aportada",
+    "Tutea salvo que el cargo objetivo sea de dirección general, donde se usa usted"
+  ],
+  "formato_salida": {
+    "tabla_calendario": "Día | Canal | Objetivo del toque | Asunto | Estado esperado",
+    "textos": "Texto íntegro de cada email y mensaje numerado del 1 al 12",
+    "ramas": "Qué responder ante: interés, 'mándame información', 'ahora no' y silencio total",
+    "cierre": "Regla para dar la cuenta por dormida y cuándo reintentar"
+  },
+  "criterios_calidad": [
+    "El primer email se entiende en 10 segundos leyendo solo la primera línea",
+    "Ningún toque repite el mismo argumento que el anterior",
+    "Cada mensaje se podría enviar sin retocar nada salvo el nombre y la empresa"
+  ],
+  "tono": "Humano, breve y sin jerga de vendedor"
+}

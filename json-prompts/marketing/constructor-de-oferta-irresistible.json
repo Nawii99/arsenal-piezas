@@ -1,0 +1,38 @@
+{
+  "tarea": "Convertir un producto o servicio en una oferta concreta y vendible: nombre, promesa, contenido, extras, garantía, precio y justificación",
+  "entradas": {
+    "producto": "[QUÉ VENDES Y CÓMO SE ENTREGA]",
+    "resultado_cliente": "[QUÉ CONSIGUE EL CLIENTE Y EN CUÁNTO TIEMPO]",
+    "cliente_ideal": "[A QUIÉN, CON SU SITUACIÓN ANTES DE COMPRAR]",
+    "precio_actual": "[PRECIO EN EUROS]",
+    "coste_real": "[LO QUE TE CUESTA ENTREGARLO, EUROS Y HORAS]",
+    "competencia": "[2 O 3 ALTERNATIVAS Y SUS PRECIOS]",
+    "activos_disponibles": "[PLANTILLAS, GRUPOS, SESIONES, MATERIALES QUE YA TIENES]",
+    "objeciones_habituales": "[LO QUE MÁS TE DICEN PARA NO COMPRAR]"
+  },
+  "pasos": [
+    "Reescribir la promesa como resultado medible y con plazo, sin adjetivos vacíos",
+    "Desglosar la oferta en entregables concretos y traducir cada uno a beneficio para el cliente",
+    "Añadir de 2 a 4 extras que ataquen cada uno una objeción concreta y que no disparen el coste",
+    "Proponer una garantía asumible según el coste real declarado y explicar sus condiciones",
+    "Justificar el precio con el valor del resultado y con el coste de no hacer nada, no con el esfuerzo del vendedor",
+    "Crear 3 variantes: básica, principal recomendada y ampliada, con la principal como opción evidente",
+    "Redactar el bloque de oferta listo para pegar en la página de ventas"
+  ],
+  "restricciones": [
+    "Prohibido prometer cifras de ingresos o resultados garantizados",
+    "Nada de urgencia inventada: solo escasez real (plazas, fechas, plazos)",
+    "Los extras deben costar poco de entregar y valer mucho para el cliente",
+    "Cumplir normativa española de consumo: si hay derecho de desistimiento, mencionarlo"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "bloques": ["Nombre de la oferta", "Promesa en una frase", "Qué incluye (tabla entregable / beneficio)", "Extras y objeción que resuelven", "Garantía", "Precio y justificación", "Las 3 variantes", "Bloque listo para pegar en la web"]
+  },
+  "criterios_calidad": [
+    "Un desconocido entiende en 10 segundos qué se lleva y para qué sirve",
+    "Cada objeción declarada queda respondida por algún elemento de la oferta",
+    "El margen sigue siendo positivo con el coste real indicado"
+  ],
+  "tono": "claro, concreto, sin humo ni palabrería de gurú"
+}

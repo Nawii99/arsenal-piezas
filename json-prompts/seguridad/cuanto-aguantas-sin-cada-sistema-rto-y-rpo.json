@@ -1,0 +1,36 @@
+{
+  "tarea": "Calcular para cada proceso del negocio cuánto tiempo puede estar caído (RTO) y cuánto dato puede perderse (RPO), con el impacto económico estimado",
+  "glosario": {
+    "RTO": "Horas máximas que el proceso puede estar parado antes de que duela de verdad",
+    "RPO": "Cuánto trabajo reciente puedes permitirte rehacer si pierdes datos"
+  },
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD]",
+    "procesos_clave": "[EJ. COBRAR, ATENDER PEDIDOS, FABRICAR, DAR CITAS, FACTURAR, NÓMINAS]",
+    "facturacion_media_diaria": "[EUROS]",
+    "temporada_alta": "[MESES O DÍAS CRÍTICOS]",
+    "sistemas_por_proceso": "[QUÉ PROGRAMA O DATO USA CADA PROCESO]"
+  },
+  "metodo": [
+    "Para cada proceso, estima la pérdida por hora parada: ventas no hechas, penalizaciones, horas del equipo sin poder trabajar y coste de rehacer",
+    "Diferencia día normal de temporada alta",
+    "Fija RTO y RPO como decisión de negocio, no técnica, y justifícalos en una frase",
+    "Compara el RTO deseado con el tiempo real de restauración que hoy tenéis: la diferencia es la brecha",
+    "Ordena las brechas por dinero en juego y propone la medida más barata que las cierre"
+  ],
+  "restricciones": [
+    "Usa rangos y supuestos declarados, nunca cifras inventadas con falsa precisión",
+    "Marca claramente qué dato ha puesto el usuario y cuál es una estimación tuya",
+    "Nada de jerga: explica RTO y RPO con ejemplos del propio negocio"
+  ],
+  "formato_salida": {
+    "tabla": ["Proceso", "Sistemas que usa", "Pérdida por hora", "RTO objetivo", "RPO objetivo", "Situación actual", "Brecha", "Medida propuesta", "Coste aprox."],
+    "resumen": "Tres frases con las conclusiones para el dueño del negocio",
+    "prioridades": "Top 3 de inversiones por relación coste-riesgo"
+  },
+  "criterios_calidad": [
+    "Cada RTO y RPO va acompañado del motivo de negocio",
+    "Se distingue el día normal de la temporada fuerte",
+    "Las medidas propuestas son proporcionadas al dinero en juego"
+  ]
+}

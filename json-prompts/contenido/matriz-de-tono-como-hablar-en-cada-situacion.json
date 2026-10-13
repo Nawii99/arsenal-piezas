@@ -1,0 +1,42 @@
+{
+  "tarea": "Crear la matriz de tono de [NOMBRE DE TU MARCA]: cómo se ajusta el tono en cada situación y canal sin perder la voz de la marca",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "rasgos_de_voz": "[3 A 5 RASGOS FIJOS QUE NUNCA CAMBIAN]",
+    "canales": "[WEB, EMAIL, WHATSAPP, REDES, TELÉFONO, TIENDA FÍSICA]",
+    "quien_atiende": "[TÚ, TU EQUIPO O UN CHATBOT]"
+  },
+  "entradas": {
+    "situaciones": "[LISTA TUS SITUACIONES REALES: VENDER, EXPLICAR PRECIO, RETRASO EN UN PEDIDO, QUEJA PÚBLICA, SUBIDA DE PRECIOS, DAR LA BIENVENIDA, DESPEDIR A UN CLIENTE]",
+    "ejemplos_reales": "[PEGA 2 O 3 MENSAJES QUE YA HAS ENVIADO EN ESAS SITUACIONES]"
+  },
+  "dimensiones_de_tono": [
+    "formal frente a cercano",
+    "serio frente a divertido",
+    "directo frente a envolvente",
+    "entusiasta frente a sobrio"
+  ],
+  "proceso": [
+    "Situar cada situación en las cuatro dimensiones con un valor de 1 a 5 y justificarlo en una línea",
+    "Definir para cada situación qué hacer siempre, qué evitar siempre y con qué frase abrir",
+    "Escribir dos frases modelo por situación y canal, una corta y una completa",
+    "Marcar las situaciones de riesgo que exigen revisión humana antes de enviar"
+  ],
+  "restricciones": [
+    "Los rasgos de voz no cambian nunca: solo se ajusta la intensidad del tono",
+    "En situaciones negativas, prohibido el humor, los emojis y las excusas vagas",
+    "Nada de fórmulas de call center como lamentamos las molestias ocasionadas",
+    "Toda disculpa debe incluir qué ha pasado, qué se hace y para cuándo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Matriz en tabla: situación, canal, valor en cada dimensión, qué sí, qué no",
+    "bloque_2": "Frases modelo por situación, listas para copiar",
+    "bloque_3": "Semáforo de riesgo: verde envía, ámbar revisa, rojo consulta antes"
+  },
+  "criterios_calidad": [
+    "Cualquier persona del equipo sabría responder a una queja con esta matriz delante",
+    "Las frases modelo se pueden enviar tal cual, solo rellenando datos",
+    "Ninguna situación queda sin qué evitar",
+    "La voz se reconoce igual en el mensaje alegre y en el mensaje difícil"
+  ]
+}

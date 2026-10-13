@@ -1,0 +1,33 @@
+{
+  "tarea": "Analizar stock y rotación por referencia y devolver la propuesta de pedido a proveedor y la lista de producto parado",
+  "entradas": {
+    "inventario": "[PRODUCTO, REFERENCIA, STOCK ACTUAL, COSTE UNITARIO, PRECIO DE VENTA]",
+    "ventas": "[UNIDADES VENDIDAS POR PRODUCTO EN LAS ÚLTIMAS [NÚMERO] SEMANAS]",
+    "plazo_proveedor_dias": "[DÍAS DESDE QUE PIDES HASTA QUE RECIBES]",
+    "minimo_pedido": "[UNIDADES O IMPORTE MÍNIMO POR PEDIDO]",
+    "estacionalidad": "[MESES FUERTES Y FLOJOS, O NINGUNA]"
+  },
+  "calculos": [
+    "Venta media semanal por referencia y su variación reciente",
+    "Días de cobertura: stock actual dividido entre venta media diaria",
+    "Punto de pedido: venta media diaria por plazo de proveedor más un colchón de seguridad",
+    "Rotación anualizada y dinero inmovilizado por referencia, stock por coste",
+    "Clasificación ABC por facturación y marca de referencias sin venta en el periodo"
+  ],
+  "formato_salida": {
+    "alertas_rojas": "Referencias que se quedan sin stock antes de que llegue el pedido, con la fecha estimada de rotura",
+    "propuesta_pedido": "Tabla: referencia, stock, venta semanal, cobertura en días, unidades a pedir, coste del pedido",
+    "stock_parado": "Referencias con más de [NÚMERO] días de cobertura o sin ventas, con el dinero inmovilizado y una acción sugerida",
+    "resumen_dinero": "Total inmovilizado, total propuesto de pedido y las tres referencias que más dinero liberan",
+    "supuestos": "Qué se ha asumido sobre demanda, plazos y devoluciones"
+  },
+  "restricciones": [
+    "No proponer pedidos por debajo del mínimo del proveedor sin avisar",
+    "Marcar como estimación cualquier referencia con menos de 4 semanas de histórico",
+    "Nada de liquidar producto de temporada sin comprobar la estacionalidad indicada"
+  ],
+  "criterios_calidad": [
+    "La propuesta de pedido se puede enviar al proveedor sin retocar cantidades",
+    "Cada alerta roja indica la fecha aproximada de rotura"
+  ]
+}

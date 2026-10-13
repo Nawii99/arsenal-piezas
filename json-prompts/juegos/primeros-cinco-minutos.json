@@ -1,0 +1,53 @@
+{
+  "tarea": "Rediseñar los primeros cinco minutos de un juego: orden de enseñanza, mecánicas por minuto, texto en pantalla y momentos de recompensa.",
+  "contexto": "La mayoría de abandonos ocurren antes del minuto cinco. Un tutorial correcto enseña haciendo, en el orden en que el jugador necesita cada cosa, no en el orden en que se programó.",
+  "entradas": {
+    "juego": "[NOMBRE Y GÉNERO]",
+    "mecanicas": "[LISTA DE ACCIONES QUE EL JUGADOR PUEDE HACER]",
+    "entrada_actual": "[QUÉ PASA HOY EN LOS PRIMEROS MINUTOS]",
+    "plataforma_y_controles": "[MÓVIL TÁCTIL | TECLADO Y RATÓN | MANDO]",
+    "momento_estrella": "[LA COSA MÁS DIVERTIDA DEL JUEGO]"
+  },
+  "procedimiento": [
+    "1. Coloca el momento estrella lo antes posible: decide qué versión reducida de esa diversión puede vivir el jugador antes del minuto dos.",
+    "2. Ordena las mecánicas por necesidad: enseña solo la que hace falta para superar el obstáculo inmediato y aplaza el resto.",
+    "3. Convierte cada explicación en un obstáculo que solo se supera usando la mecánica; el nivel enseña, no el cartel.",
+    "4. Diseña un espacio seguro donde el jugador pueda equivocarse sin morir mientras aprende el control básico.",
+    "5. Escribe el texto en pantalla con un máximo de 8 palabras por aviso y solo cuando el jugador ya está delante del problema.",
+    "6. Reparte una recompensa visible cada 60 o 90 segundos: sonido, apertura de puerta, moneda, cambio de escenario.",
+    "7. Marca el punto de no retorno del aprendizaje: en qué minuto el jugador ya sabe jugar solo y hay que dejar de instruir.",
+    "8. Define qué pasa si el jugador ignora el aviso: el juego debe recuperarlo sin bloquearlo ni regañarle.",
+    "9. Elabora el guion minuto a minuto en tabla, con lo que ve, lo que hace, lo que aprende y qué siente.",
+    "10. Añade una versión corta para el jugador experto que quiere saltarse todo.",
+    "11. Define la prueba: dos personas que no conocen el juego lo juegan sin que digas nada; si preguntan qué hago, ese punto está roto."
+  ],
+  "restricciones": [
+    "Nada de vídeos ni pantallas de texto largo al principio.",
+    "Como máximo tres mecánicas nuevas en cinco minutos.",
+    "Ningún aviso puede tapar la zona de la pantalla donde ocurre la acción.",
+    "No se puede exigir leer para superar un obstáculo.",
+    "Español de España, textos de juego cortos y directos."
+  ],
+  "formato_salida": {
+    "bloque_1": "Diagnóstico de la entrada actual: los tres puntos donde se pierde al jugador.",
+    "bloque_2": "Orden de enseñanza de mecánicas con su justificación.",
+    "bloque_3": "Tabla minuto a minuto: minuto, qué ve, qué hace, qué aprende, recompensa.",
+    "bloque_4": "Textos exactos en pantalla, uno por línea, con su momento de aparición.",
+    "bloque_5": "Ruta rápida para jugadores expertos.",
+    "bloque_6": "Protocolo de comprobación con dos jugadores nuevos y señales de fallo."
+  },
+  "criterios_calidad": [
+    "El jugador vive algo divertido antes del minuto dos.",
+    "Ninguna mecánica se explica antes de necesitarla.",
+    "Los textos caben en un vistazo y no interrumpen la acción.",
+    "Hay recompensa al menos cada 90 segundos.",
+    "Se puede jugar entero sin leer nada."
+  ],
+  "errores_frecuentes": [
+    "Enseñar todos los controles seguidos en la primera pantalla.",
+    "Guardar la mejor mecánica para el nivel 5 y perder al jugador en el 1.",
+    "Bloquear el avance hasta que el jugador pulse el botón exacto que le piden.",
+    "Poner la historia antes que el juego.",
+    "Probar el tutorial solo con quien ya conoce el juego."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "tarea": "Escribir tests unitarios con JUnit 5 y Mockito para la clase indicada",
+  "contexto": {
+    "version_java": "[VERSIÓN, EJ: 21]",
+    "framework": "[SPRING BOOT / SIN FRAMEWORK]",
+    "libreria_aserciones": "[ASSERTJ / JUNIT ASSERTIONS]"
+  },
+  "entradas": {
+    "clase_a_probar": "[PEGA AQUÍ EL CÓDIGO DE LA CLASE]",
+    "dependencias": "[FIRMAS DE LOS REPOSITORIOS O SERVICIOS QUE USA]",
+    "reglas_negocio": "[QUÉ TIENE QUE CUMPLIR SÍ O SÍ, EN FRASES CORTAS]"
+  },
+  "cobertura_minima": [
+    "un caso feliz por método público",
+    "valores límite: cero, negativo, vacío, null, colección vacía",
+    "cada excepción que el código lanza a propósito",
+    "cada rama de un if o switch con condición de negocio"
+  ],
+  "reglas_de_estilo": [
+    "nombres de test en formato deberia_HacerAlgo_cuando_Condicion",
+    "estructura Preparar, Actuar, Comprobar separada por líneas en blanco",
+    "una sola razón de fallo por test",
+    "usar @ParameterizedTest cuando cambien solo los datos",
+    "verificar interacciones con verify solo cuando el efecto sea el objetivo"
+  ],
+  "restricciones": [
+    "No probar getters y setters triviales",
+    "No usar Thread.sleep ni depender de la hora real del sistema",
+    "No conectar con base de datos, red ni ficheros"
+  ],
+  "formato_salida": {
+    "1_clase_de_test": "código Java completo con imports",
+    "2_tabla_casos": "columnas: test | entrada | resultado esperado | regla que cubre",
+    "3_huecos": "qué ha quedado sin cubrir y por qué haría falta un test de integración"
+  },
+  "criterios_calidad": [
+    "Los tests fallan si se rompe la regla de negocio correspondiente",
+    "Ningún test depende del orden de ejecución"
+  ]
+}

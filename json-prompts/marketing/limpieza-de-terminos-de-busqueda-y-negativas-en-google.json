@@ -1,0 +1,36 @@
+{
+  "tarea": "Analizar un informe de terminos de busqueda de Google Ads y devolver la lista de palabras clave negativas y las oportunidades detectadas",
+  "contexto": {
+    "que_vendes": "[SERVICIO O PRODUCTO EXACTO]",
+    "que_NO_vendes": "[LO QUE LA GENTE CONFUNDE CONTIGO: SEGUNDA MANO, REPARACION, CURSOS, EMPLEO, ETC.]",
+    "zona": "[ZONA DONDE OPERAS]",
+    "ticket_medio_eur": "[IMPORTE]",
+    "cpa_objetivo_eur": "[MAXIMO QUE PUEDES PAGAR POR CONVERSION]"
+  },
+  "datos": "[PEGA AQUI EL INFORME: TERMINO | CLICS | COSTE | CONVERSIONES]",
+  "instrucciones": [
+    "Clasifica cada termino en: relevante y rentable, relevante pero caro, dudoso, e irrelevante",
+    "Detecta patrones de intencion equivocada: gratis, empleo, trabajo, curso, opiniones, segunda mano, como hacerlo uno mismo, manual, pdf, marcas de la competencia, otras ciudades",
+    "Propon negativas agrupando por raiz cuando se repita el patron, indicando la concordancia adecuada (amplia, de frase o exacta) y si va a nivel de campana o de cuenta",
+    "Marca los terminos con gasto por encima del CPA objetivo y sin conversiones como candidatos a negativa inmediata",
+    "Detecta terminos que convierten bien y merecen su propio grupo de anuncios o palabra clave exacta",
+    "Avisa si algun termino no deberia bloquearse por volumen o por ser una variante util"
+  ],
+  "restricciones": [
+    "No bloquear terminos con conversiones aunque sean caros: primero proponer bajar puja o mejorar la pagina",
+    "No proponer negativas que dejen fuera busquedas del servicio principal",
+    "Advertir siempre del riesgo de bloquear de mas"
+  ],
+  "formato_salida": {
+    "1_resumen": "Gasto total analizado, gasto desperdiciado estimado y porcentaje",
+    "2_negativas": "Tabla: termino o raiz | concordancia | nivel (cuenta o campana) | motivo",
+    "3_oportunidades": "Terminos a promover a palabra clave propia, con la idea de anuncio",
+    "4_dudosos": "Los que hay que vigilar y con que umbral decidir",
+    "5_rutina": "Cada cuanto repetir esta revision segun el volumen de clics"
+  },
+  "criterios_calidad": [
+    "Cada negativa lleva su motivo en una linea",
+    "No se propone bloquear ningun termino que haya convertido",
+    "Las raices agrupadas no colisionan con el servicio principal"
+  ]
+}

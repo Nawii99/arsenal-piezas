@@ -1,0 +1,40 @@
+{
+  "tarea": "Auditar la rentabilidad de un catalogo de ecommerce a partir de un listado de productos y devolver una clasificacion accionable por referencia",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "periodo_analizado": "[EJ ULTIMOS 12 MESES]",
+    "numero_de_referencias": "[CUANTOS PRODUCTOS]",
+    "objetivo": "[SUBIR MARGEN GLOBAL, LIMPIAR CATALOGO O AMBAS]"
+  },
+  "entradas": {
+    "datos_por_producto": "[PEGA AQUI TU TABLA: referencia, nombre, precio_venta_sin_iva, coste_unitario, unidades_vendidas, devoluciones, stock_actual]",
+    "coste_medio_de_envio_eur": "[COSTE MEDIO POR PEDIDO]",
+    "comisiones_medias_pct": "[PASARELA + MARKETPLACE]",
+    "margen_minimo_aceptable_pct": "[EJ 30]"
+  },
+  "pasos": [
+    "Calcular para cada referencia el margen bruto unitario en euros y en porcentaje, restando coste, envio y comisiones",
+    "Calcular el beneficio total aportado: margen unitario por unidades vendidas",
+    "Ordenar por beneficio total y marcar el grupo A que acumula el 80% del beneficio",
+    "Cruzar rotacion y margen para clasificar cada referencia en: motor, vaca, trampa, muerto",
+    "Marcar como trampa lo que vende mucho con margen por debajo del minimo aceptable",
+    "Marcar como muerto lo que tiene stock y menos de [X] ventas en el periodo",
+    "Proponer una accion por grupo: subir precio, renegociar proveedor, agrupar en pack, liquidar o retirar"
+  ],
+  "restricciones": [
+    "No proponer subidas de precio superiores al 15% sin justificar el motivo",
+    "Senalar de forma explicita las referencias con datos incompletos en vez de estimarlos",
+    "No recomendar retirar un producto que sea gancho de entrada sin avisar del efecto en el resto de la cesta"
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen en 5 lineas: margen medio del catalogo, cuantas referencias en cada grupo y dinero atrapado en stock muerto",
+    "bloque_2": "Tabla: Referencia | Margen unitario EUR | Margen % | Beneficio total | Grupo | Accion recomendada",
+    "bloque_3": "Las 10 acciones ordenadas por impacto en euros, con el impacto estimado de cada una",
+    "bloque_4": "Lista de datos que faltan para afinar el analisis"
+  },
+  "criterios_calidad": [
+    "Cada producto tiene grupo y accion, ninguno queda sin clasificar",
+    "El impacto estimado se calcula con las unidades reales vendidas, no con supuestos optimistas",
+    "La tabla se puede copiar directamente a una hoja de calculo"
+  ]
+}

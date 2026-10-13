@@ -1,0 +1,43 @@
+{
+  "tarea": "Redactar la guía de estilo de subtitulado de una marca, con reglas aplicables y ejemplos correctos e incorrectos",
+  "contexto": {
+    "marca": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR]",
+    "tipos_de_video": "[FORMACIÓN, REELS, WEBINARS, TESTIMONIOS, ANUNCIOS: LOS QUE HAGAS]",
+    "tono": "[CERCANO Y DE TÚ / PROFESIONAL Y DE USTED / TÉCNICO]",
+    "idiomas": "[ESPAÑOL DE ESPAÑA Y OTROS QUE USES]"
+  },
+  "entradas": {
+    "terminos_propios": "[PRODUCTOS, PLANES, MARCAS Y CÓMO SE ESCRIBEN]",
+    "siglas": "[SIGLAS DEL SECTOR Y SU SIGNIFICADO]",
+    "anglicismos_habituales": "[PALABRAS EN INGLÉS QUE USÁIS Y SI SE TRADUCEN O NO]",
+    "casos_dudosos": "[DECISIONES QUE HABÉIS DISCUTIDO ALGUNA VEZ]"
+  },
+  "apartados_de_la_guia": [
+    "Parámetros técnicos: caracteres por línea, líneas, duración mínima y máxima, velocidad de lectura",
+    "Criterios de corte de línea con ejemplos bien y mal",
+    "Cifras, porcentajes, precios, horas y fechas",
+    "Nombres propios, productos, cargos y tratamiento de la marca",
+    "Siglas y su primera aparición",
+    "Anglicismos: cuáles se dejan, cuáles se traducen y cuáles van en cursiva",
+    "Muletillas, titubeos, risas y palabrotas: qué se transcribe y qué se elimina",
+    "Puntuación, mayúsculas, comillas y guiones de diálogo",
+    "Marcas para hablantes y sonidos en versiones accesibles",
+    "Estilo visual de los subtítulos incrustados: fuente, tamaño, color y posición",
+    "Nombrado de archivos y flujo de revisión antes de publicar"
+  ],
+  "restricciones": [
+    "Cada regla debe ser una instrucción accionable, no un principio abstracto",
+    "Acompaña cada regla de al menos un ejemplo correcto y uno incorrecto reales del sector",
+    "Máximo 3 páginas equivalentes: si no cabe, prioriza lo que más se repite"
+  ],
+  "formato_salida": {
+    "principal": "documento en Markdown con los apartados numerados y ejemplos en tabla",
+    "anexo": "checklist de una página para pegar junto al puesto de edición"
+  },
+  "criterios_calidad": [
+    "Alguien nuevo puede subtitular un vídeo siguiendo solo esta guía",
+    "No queda ningún caso dudoso del listado sin respuesta",
+    "Las reglas no se contradicen entre apartados"
+  ]
+}

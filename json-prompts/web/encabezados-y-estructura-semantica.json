@@ -1,0 +1,32 @@
+{
+  "tarea": "Revisa y reescribe la estructura semántica de una página web: encabezados, regiones y orden de lectura, para que se navegue bien con lector de pantalla",
+  "contexto": {
+    "contenido": "[PEGA AQUÍ EL HTML O EL LISTADO DE SECCIONES Y TÍTULOS DE LA PÁGINA]",
+    "objetivo_de_la_pagina": "[VENDER X / CAPTAR CONTACTOS / INFORMAR SOBRE Y]",
+    "hecha_con": "[ELEMENTOR / DIVI / SHOPIFY / HTML A MANO / OTRA]"
+  },
+  "que_debes_hacer": [
+    "Propón un único h1 que diga de qué va la página",
+    "Ordena el resto de títulos en h2 y h3 sin saltar niveles y sin usar el tamaño de letra como criterio",
+    "Marca las regiones con header, nav, main, aside y footer, y pon un solo main por página",
+    "Si hay varios nav o varias listas de enlaces, dales un nombre que las distinga",
+    "Añade un enlace para saltar al contenido principal al inicio del documento",
+    "Comprueba que el orden del código coincide con el orden visual de lectura",
+    "Convierte en listas lo que visualmente ya es una lista, y en tablas con encabezados lo que son datos",
+    "Señala los sitios donde se usa un div con clic que debería ser un botón o un enlace"
+  ],
+  "formato_salida": {
+    "1_mapa_actual": "Esquema en árbol de los encabezados y regiones tal como están ahora, con los fallos marcados",
+    "2_mapa_propuesto": "Esquema en árbol corregido",
+    "3_html": "Esqueleto HTML de la página con las etiquetas correctas y el texto real de mis títulos",
+    "4_instrucciones": "Pasos para aplicarlo desde mi gestor de contenidos, sin tocar código si es posible"
+  },
+  "restricciones": [
+    "No cambies el texto de mis títulos salvo que sean vacíos o no digan nada, y entonces propón alternativa aparte",
+    "No metas roles ARIA donde ya sirve una etiqueta HTML normal"
+  ],
+  "criterios_calidad": [
+    "Leyendo solo la lista de encabezados se entiende la página entera",
+    "Cada zona de la página tiene su etiqueta y nada queda fuera de una región"
+  ]
+}

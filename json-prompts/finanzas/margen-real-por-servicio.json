@@ -1,0 +1,51 @@
+{
+  "tarea": "Calcular el margen real de cada línea de venta repartiendo los costes indirectos y ordenar las líneas de más a menos rentable, con una decisión concreta para cada una.",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "perfil": "Autónomo o micropyme en España, sin formación contable, sin software de gestión",
+    "sintoma": "[POR EJEMPLO: FACTURO 6.000 AL MES Y NO ME QUEDA NADA]"
+  },
+  "entradas": {
+    "lineas_de_venta": "[LISTA: NOMBRE, PRECIO SIN IVA, UNIDADES VENDIDAS EL ÚLTIMO MES]",
+    "costes_directos_por_linea": "[MATERIAL, SUBCONTRATA, COMISIÓN DE PASARELA, ENVÍO, LICENCIA POR UNIDAD]",
+    "horas_reales_por_linea": "[HORAS QUE TE LLEVA DE VERDAD, INCLUYENDO REUNIONES Y CAMBIOS]",
+    "gastos_fijos_mensuales": "[ALQUILER, CUOTA DE AUTÓNOMOS, GESTORÍA, SOFTWARE, TELÉFONO, SEGUROS, SUMINISTROS]",
+    "horas_vendibles_al_mes": "[HORAS QUE PUEDES FACTURAR DE VERDAD, LO HABITUAL ES 100-120]"
+  },
+  "metodo": [
+    "1. Calcula el coste de hora-empresa: gastos fijos mensuales dividido entre horas vendibles al mes. Enséñalo como número redondo.",
+    "2. Para cada línea: margen bruto por unidad = precio sin IVA menos costes directos por unidad.",
+    "3. Imputa estructura: coste de estructura por unidad = horas reales por unidad multiplicado por coste de hora-empresa.",
+    "4. Margen neto por unidad = margen bruto menos coste de estructura. Margen neto mensual = margen neto por unidad por unidades vendidas.",
+    "5. Calcula el margen por hora de cada línea: margen bruto por unidad dividido entre horas reales. Ese es el número que ordena la lista.",
+    "6. Marca semáforo: verde si margen por hora supera el coste de hora-empresa en más de un 50 por ciento, ámbar si lo supera poco, rojo si queda por debajo.",
+    "7. Para cada línea en rojo propón tres salidas: subir precio (di el precio mínimo que la pone en ámbar), recortar horas (di qué paso del proceso se elimina) o retirarla.",
+    "8. Cierra con el reparto de tiempo ideal del mes siguiente entre las líneas verdes."
+  ],
+  "restricciones": [
+    "Trabaja siempre con precios sin IVA: el IVA no es ingreso.",
+    "No inventes cifras que no te hayan dado; si falta un dato, pide ese dato concreto antes de calcular.",
+    "Distingue en el texto lo que es cálculo exacto de lo que es estimación por falta de datos.",
+    "Nada de promesas de facturación futura ni de porcentajes de crecimiento inventados."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Olvidar la cuota de autónomos y la gestoría dentro de los gastos fijos.",
+    "Usar las horas presupuestadas en vez de las horas reales: es donde se esconde la pérdida.",
+    "Meter la comisión de la pasarela o del marketplace en gastos fijos en vez de en coste directo.",
+    "Repartir la estructura a partes iguales entre líneas en vez de por horas consumidas.",
+    "Confundir facturado con cobrado al contar unidades vendidas."
+  ],
+  "formato_salida": {
+    "bloque_1": "Una frase con el coste de hora-empresa y qué significa.",
+    "bloque_2": "Tabla en texto con columnas: línea, precio, coste directo, horas, margen por hora, margen neto mensual, semáforo.",
+    "bloque_3": "Lista de decisiones, una por línea, empezando por un verbo: subir a X euros, recortar Y, retirar.",
+    "bloque_4": "Tres números para vigilar el mes que viene, con el valor de hoy al lado.",
+    "estilo": "Español de España, tuteando, frases cortas, sin jerga contable sin explicar"
+  },
+  "criterios_calidad": [
+    "Todas las cuentas están escritas con sus números, no solo el resultado.",
+    "La suma de márgenes netos mensuales menos los gastos fijos coincide con el beneficio del mes: si no cuadra, avisa del descuadre.",
+    "Cada línea en rojo lleva un precio mínimo concreto, no un consejo genérico.",
+    "El usuario puede rehacerlo el mes que viene solo cambiando las cifras de entrada."
+  ]
+}

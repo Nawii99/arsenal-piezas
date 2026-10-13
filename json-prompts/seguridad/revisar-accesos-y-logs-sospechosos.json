@@ -1,0 +1,38 @@
+{
+  "tarea": "Analizar registros de acceso para identificar actividad sospechosa y decir que comprobar despues",
+  "rol": "Analista de seguridad que revisa logs de hosting, correo y paneles de administracion de pymes",
+  "entradas": {
+    "origen_de_los_datos": "[HOSTING, WORDPRESS, GOOGLE WORKSPACE, MICROSOFT 365, PREStASHOP, CRM, VPN]",
+    "registros": "[PEGA AQUI LAS LINEAS DE LOG O LA LISTA DE ACCESOS: FECHA, HORA, IP, USUARIO, ACCION]",
+    "periodo": "[DESDE QUE FECHA HASTA QUE FECHA]",
+    "normalidad": {
+      "horario_habitual": "[EJ: LUNES A VIERNES DE 8 A 19]",
+      "paises_y_ciudades_esperados": "[EJ: ESPANA, A VECES PORTUGAL]",
+      "usuarios_legitimos": "[LISTA DE PERSONAS Y PROVEEDORES QUE DEBERIAN ENTRAR]",
+      "ips_conocidas": "[IP DE LA OFICINA O DEL PROVEEDOR SI LA SABES]"
+    }
+  },
+  "instrucciones": [
+    "Agrupa los accesos por usuario y por IP y marca cuales se salen de la normalidad declarada",
+    "Busca patrones concretos: intentos fallidos repetidos seguidos de uno correcto, accesos en horario raro, dos paises en poco tiempo, alta de usuarios nuevos, cambios de contrasena o de correo de recuperacion, reglas de reenvio automatico creadas",
+    "Puntua cada hallazgo de 1 a 5 segun gravedad y explica en una frase por que es sospechoso",
+    "Distingue el ruido de fondo (rastreadores, escaneos automaticos, plugins) de la actividad dirigida a tu sistema",
+    "Indica que registro adicional pedir al proveedor y con que texto exacto solicitarlo",
+    "Termina con las acciones inmediatas si hay indicios de acceso activo"
+  ],
+  "restricciones": [
+    "No afirmes que hubo intrusion sin senalar la linea concreta que lo sostiene",
+    "No busques informacion sobre las IPs fuera de lo aportado ni asignes identidades a personas",
+    "Si los datos son insuficientes, dilo claramente en vez de rellenar con suposiciones"
+  ],
+  "formato_salida": {
+    "tipo": "Informe con tabla de hallazgos",
+    "secciones": ["Veredicto en 3 lineas", "Tabla de hallazgos con gravedad y linea de referencia", "Que es ruido y se puede ignorar", "Que registros pedir al proveedor", "Acciones inmediatas"]
+  },
+  "criterios_calidad": [
+    "Cada hallazgo es rastreable hasta el dato original",
+    "El informe no marca como grave lo que es rutina de internet",
+    "Las acciones se pueden hacer desde el panel del proveedor"
+  ],
+  "tono": "Analitico y sin dramatismo"
+}

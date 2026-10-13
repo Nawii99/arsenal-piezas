@@ -1,0 +1,38 @@
+{
+  "tarea": "Elaborar el programa anual de auditoría interna y el plan detallado de una auditoría interna de SGSI ISO/IEC 27001",
+  "contexto": {
+    "organizacion": "[NOMBRE DE TU EMPRESA]",
+    "alcance_sgsi": "[ALCANCE]",
+    "procesos_y_sedes": "[PROCESOS, DEPARTAMENTOS Y SEDES A AUDITAR]",
+    "personas_clave": "[NOMBRES Y CARGOS: DIRECCIÓN, TI, RRHH, COMPRAS, RESPONSABLE DE SEGURIDAD]",
+    "dias_disponibles": "[NÚMERO DE DÍAS Y FECHAS]",
+    "auditor_interno": "[QUIÉN AUDITA Y DE QUÉ ÁREA DEPENDE]",
+    "hallazgos_anteriores": "[NO CONFORMIDADES Y OBSERVACIONES DE LA AUDITORÍA PREVIA]"
+  },
+  "instrucciones": [
+    "Diseña primero el programa anual: qué cláusulas y controles se auditan en cada ciclo para cubrir el 100% antes de la recertificación",
+    "Comprueba y advierte sobre la independencia del auditor: nadie puede auditar su propio trabajo",
+    "Elabora el plan de la auditoría con franjas horarias, área, auditado, cláusula o control revisado y evidencia a solicitar",
+    "Incluye siempre las cláusulas 4 a 10 y no solo los controles del Anexo A",
+    "Dedica tiempo específico a verificar el cierre de los hallazgos anteriores",
+    "Prepara un checklist por área con preguntas de auditoría y la evidencia objetiva que se pedirá para cada una",
+    "Reserva franja de reunión de apertura, de cierre y de redacción de hallazgos"
+  ],
+  "restricciones": [
+    "Las jornadas no superan 7 horas efectivas de entrevista al día",
+    "Cada punto del checklist pide una evidencia concreta, no una opinión",
+    "No incluyas áreas fuera del alcance declarado"
+  ],
+  "formato_salida": {
+    "1_programa_anual": "Tabla: Ciclo | Áreas | Cláusulas y controles | Trimestre | Auditor",
+    "2_plan_auditoria": "Tabla por día: Hora | Área | Auditado | Cláusula o control | Evidencia a solicitar",
+    "3_checklist": "Por área: pregunta, evidencia esperada, criterio de aceptación y casilla de resultado",
+    "4_correos": "Borrador de convocatoria a los auditados y de la reunión de apertura"
+  },
+  "criterios_calidad": [
+    "El programa cubre todas las cláusulas y todos los controles aplicables del SoA",
+    "Cada pregunta del checklist se puede responder mirando un documento, un registro o una pantalla",
+    "El plan cabe en los días indicados sin solapamientos"
+  ],
+  "tono": "Organizado y operativo, listo para enviar a los auditados"
+}

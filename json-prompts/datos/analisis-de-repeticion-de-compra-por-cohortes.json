@@ -1,0 +1,35 @@
+{
+  "tarea": "Construir un análisis de cohortes de repetición de compra y traducir la tabla resultante a conclusiones de negocio",
+  "entradas": {
+    "tabla_pedidos": "[NOMBRE DE LA TABLA Y COLUMNAS: CLIENTE, FECHA, IMPORTE, ESTADO]",
+    "motor": "[MySQL | PostgreSQL | SQL Server | BigQuery]",
+    "periodo": "[DESDE QUÉ MES HASTA QUÉ MES]",
+    "que_cuenta_como_compra": "[PEDIDOS PAGADOS Y NO DEVUELTOS, IMPORTE MÍNIMO SI APLICA]",
+    "tipo_negocio": "[COMPRA PUNTUAL | RECURRENTE | SUSCRIPCIÓN]"
+  },
+  "definiciones": {
+    "cohorte": "Mes de la primera compra del cliente",
+    "mes_0": "El mes en el que compró por primera vez",
+    "retencion_mes_n": "Porcentaje de clientes de la cohorte que vuelven a comprar en el mes N"
+  },
+  "proceso": [
+    "Detectar la primera compra de cada cliente y asignarle su cohorte",
+    "Contar clientes activos de cada cohorte en cada mes posterior",
+    "Calcular el porcentaje sobre el tamaño inicial de la cohorte",
+    "Calcular también el gasto acumulado medio por cliente en cada mes",
+    "Marcar las cohortes con menos de 30 clientes como poco fiables",
+    "Excluir el mes en curso por estar incompleto"
+  ],
+  "formato_salida": {
+    "consulta": "SQL comentado en el dialecto indicado",
+    "tabla_cohortes": "Filas igual a cohorte mensual, columnas igual a mes 0 hasta mes 6, valores en porcentaje",
+    "tabla_gasto": "La misma rejilla pero con euros acumulados por cliente",
+    "lectura": "Cinco viñetas: dónde se cae la mayoría, qué cohorte va mejor y qué la diferencia",
+    "acciones": "Tres acciones de retención situadas en el mes exacto donde se pierde el cliente"
+  },
+  "restricciones": [
+    "No comparar cohortes de tamaños muy distintos sin advertirlo",
+    "Nada de conclusiones sobre cohortes incompletas",
+    "Explicar la tabla como si el lector no hubiera visto nunca una cohorte"
+  ]
+}

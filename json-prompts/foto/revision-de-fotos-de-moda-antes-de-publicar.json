@@ -1,0 +1,32 @@
+{
+  "tarea": "Revisar las fotos adjuntas de [PRENDA O COMPLEMENTO] y decidir cuales se publican en [CANAL]",
+  "contexto": {
+    "color_real": "[COLOR REAL DE LA PRENDA, describelo como si lo tuvieras en la mano]",
+    "ficha_de_estilo": "[PEGA AQUI TU FICHA DE ESTILO O DESCRIBE TU ESTILO EN 3 LINEAS]",
+    "requisitos_del_canal": "[FORMATO, FONDO Y NUMERO DE FOTOS QUE ADMITE]"
+  },
+  "que_revisar_en_cada_foto": [
+    "Color: si el tono se aleja del real y hacia donde vira",
+    "Enfoque: si el tejido esta nitido en la zona que vende",
+    "Caida y arrugas: pliegues feos, tirones o prenda mal colocada",
+    "Estilismo: etiquetas, hilos, pelusas, calzado o joyas que distraen",
+    "Encuadre: miembros cortados por las articulaciones, poco aire, horizonte torcido",
+    "Luz: sombras duras en la cara, quemados en zonas claras, ojos sin luz",
+    "Fondo: elementos que se cruzan con la silueta o distraen"
+  ],
+  "formato_salida": {
+    "tabla": "una fila por foto con columnas: numero, veredicto (publicar / retocar / descartar), problema principal, arreglo concreto, minutos estimados",
+    "resumen": "orden recomendado de las fotos en la ficha y cual va de portada, con el motivo",
+    "aviso": "que foto falta para completar el canal y como conseguirla"
+  },
+  "restricciones": [
+    "Un veredicto por foto, sin respuestas ambiguas",
+    "Cada arreglo debe ser accionable con herramientas basicas de edicion",
+    "No sugerir retoques que cambien la forma del cuerpo de la modelo",
+    "No aprobar fotos cuyo color enganaria al comprador"
+  ],
+  "criterios_calidad": [
+    "Al aplicar la lista, la ficha queda cerrada sin volver a decidir nada",
+    "Los descartes estan justificados con un motivo visible"
+  ]
+}

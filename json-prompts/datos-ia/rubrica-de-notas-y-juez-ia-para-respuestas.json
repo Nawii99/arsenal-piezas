@@ -1,0 +1,40 @@
+{
+  "tarea": "Actuar como juez de calidad y puntuar la respuesta de un agente de IA con una rubrica fija",
+  "contexto": {
+    "que_hace_el_agente": "[QUE HACE TU AGENTE EN UNA FRASE]",
+    "prioridades": "[QUE IMPORTA MAS EN TU NEGOCIO: NO INVENTAR, SER BREVE, SONAR CERCANO, CERRAR CITA]",
+    "tono_de_marca": "[COMO HABLA TU MARCA]"
+  },
+  "entradas": {
+    "mensaje_del_cliente": "[PEGA EL MENSAJE DEL CLIENTE]",
+    "respuesta_del_agente": "[PEGA LA RESPUESTA QUE DIO EL AGENTE]",
+    "verdad_de_referencia": "[EL DATO CORRECTO SEGUN TU INFORMACION, O NO DISPONIBLE]"
+  },
+  "rubrica": [
+    { "criterio": "Exactitud", "peso": 35, "que_mirar": "Todo lo afirmado se sostiene con la informacion disponible", "escala": "0 afirma algo falso, 1 correcto pero incompleto, 2 correcto y completo" },
+    { "criterio": "Cumple la peticion", "peso": 25, "que_mirar": "Responde a lo que se ha pedido y no a otra cosa", "escala": "0 no responde, 1 responde a medias, 2 resuelve" },
+    { "criterio": "Limites y seguridad", "peso": 20, "que_mirar": "No promete precios, plazos ni condiciones que no puede prometer y deriva cuando toca", "escala": "0 se salta un limite, 1 dudoso, 2 respeta los limites" },
+    { "criterio": "Claridad y longitud", "peso": 10, "que_mirar": "Se entiende a la primera y no se alarga sin motivo", "escala": "0 confuso o enorme, 1 mejorable, 2 claro y del tamano justo" },
+    { "criterio": "Tono de marca", "peso": 10, "que_mirar": "Suena como la marca y no como un folleto", "escala": "0 fuera de tono, 1 neutro, 2 en tono" }
+  ],
+  "procedimiento": [
+    "Lee la respuesta entera antes de puntuar nada",
+    "Puntua criterio por criterio y cita el fragmento exacto que justifica cada nota",
+    "Calcula la nota final sobre 100 aplicando los pesos",
+    "Si algun criterio saca un 0 en Exactitud o en Limites, marca el veredicto como RECHAZADA aunque la nota final sea alta"
+  ],
+  "restricciones": [
+    "No reescribas la respuesta salvo en el campo de mejora sugerida",
+    "No supongas informacion que no aparezca en las entradas",
+    "Se duro: la nota 2 es para respuestas que enviarias a tu mejor cliente"
+  ],
+  "formato_salida": {
+    "tipo": "JSON",
+    "campos": ["notas_por_criterio", "cita_justificativa_por_criterio", "nota_final_sobre_100", "veredicto", "fallo_principal", "mejora_sugerida_en_una_frase"]
+  },
+  "criterios_calidad": [
+    "Cada nota lleva su cita textual",
+    "El veredicto es coherente con las reglas de rechazo automatico",
+    "La mejora sugerida es accionable y concreta"
+  ]
+}

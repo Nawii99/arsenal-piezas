@@ -1,0 +1,37 @@
+{
+  "tarea": "Evaluar si una reseña es denunciable y preparar la solicitud de retirada y la respuesta pública de reserva",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "plataforma": "[GOOGLE MAPS / TRIPADVISOR / TRUSTPILOT / OTRA]",
+    "pais": "España"
+  },
+  "entradas": {
+    "texto_resena": "[PEGA LA RESEÑA COMPLETA]",
+    "autor": "[NOMBRE VISIBLE Y OTRAS RESEÑAS SUYAS SI LAS HAS MIRADO]",
+    "comprobaciones": "[QUÉ HAS MIRADO: pedidos, reservas, agenda, cámaras, tickets]",
+    "resultado": "[NO APARECE COMO CLIENTE / SÍ FUE CLIENTE / NO SE PUEDE SABER]"
+  },
+  "proceso": [
+    "Clasifica el motivo posible de retirada: no es cliente, insultos o lenguaje ofensivo, datos personales, conflicto de intereses o competidor, contenido no relacionado con la experiencia, spam o extorsión",
+    "Valora la probabilidad de que la plataforma la retire: alta, media o baja, y explica por qué",
+    "Si la probabilidad es baja, recomienda no denunciar y responder bien",
+    "Redacta la solicitud de retirada en tono neutro, citando el motivo y los hechos comprobables",
+    "Redacta la respuesta pública para publicar mientras se resuelve"
+  ],
+  "restricciones": [
+    "No afirmar en público que la reseña es falsa ni acusar a un competidor",
+    "No publicar datos del cliente, pedidos, importes ni horarios en la respuesta pública",
+    "Nada de amenazas legales en el texto público",
+    "No prometer plazos de retirada: dependen de la plataforma"
+  ],
+  "formato_salida": {
+    "veredicto": "Denunciable sí o no, motivo y probabilidad de éxito",
+    "texto_denuncia": "Mensaje para el formulario de la plataforma, máximo 150 palabras",
+    "respuesta_publica": "Texto sereno de 40 a 70 palabras",
+    "siguientes_pasos": "3 acciones ordenadas, incluyendo qué hacer si la rechazan"
+  },
+  "criterios_calidad": [
+    "La denuncia se apoya en la norma incumplida, no en que la reseña te moleste",
+    "La respuesta pública deja bien al negocio incluso ante quien crea al reseñador"
+  ]
+}

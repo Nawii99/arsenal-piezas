@@ -1,0 +1,38 @@
+{
+  "tarea": "Analizar la bajada de precio de un competidor y recomendar una respuesta razonada para una tienda online, con las consecuencias de cada opcion",
+  "contexto": {
+    "producto_afectado": "[NOMBRE DEL PRODUCTO]",
+    "tu_precio_con_iva_eur": "[PRECIO ACTUAL]",
+    "tu_coste_completo_eur": "[COSTE POR UNIDAD]",
+    "peso_en_tus_ventas_pct": "[% DE TU FACTURACION]",
+    "competidor": "[NOMBRE O TIPO: MARKETPLACE, TIENDA LOCAL, MARCA]",
+    "precio_del_competidor_eur": "[PRECIO NUEVO]",
+    "desde_cuando": "[FECHA O DURACION DE LA BAJADA]"
+  },
+  "pasos": [
+    "Determinar si la bajada es puntual de campana o un cambio estructural de posicionamiento",
+    "Comprobar si el producto es realmente comparable: mismo modelo, garantia, plazo de entrega y gastos de envio incluidos",
+    "Calcular que margen te quedaria igualando el precio y cuantas unidades mas tendrias que vender para ganar lo mismo",
+    "Evaluar cuatro respuestas: igualar, no mover el precio y reforzar valor, bajar solo en una version o pack, o retirar el producto",
+    "Listar las palancas que no son precio: plazo de entrega, garantia ampliada, regalo, atencion, packs, financiacion",
+    "Recomendar una opcion con el motivo en tres frases y definir la senal que te haria cambiar de decision"
+  ],
+  "restricciones": [
+    "No recomendar igualar si el margen resultante baja del [MARGEN MINIMO ACEPTABLE %]",
+    "No asumir que el cliente compara solo por precio sin comprobar el valor entregado",
+    "Nada de acuerdos ni conversaciones de precios con competidores",
+    "Distinguir siempre precio con IVA y gastos de envio incluidos al comparar"
+  ],
+  "formato_salida": {
+    "diagnostico": "5 lineas sobre que esta pasando de verdad",
+    "tabla_opciones": "Opcion | Efecto en margen unitario | Efecto en volumen esperado | Riesgo a 3 meses | Esfuerzo",
+    "recomendacion": "Decision, motivo y que hacer esta misma semana",
+    "defensa_sin_bajar_precio": "6 acciones concretas ordenadas por rapidez de aplicacion",
+    "vigilancia": "Que revisar cada semana y con que dato decides cambiar de rumbo"
+  },
+  "criterios_calidad": [
+    "La recomendacion se sostiene en numeros de margen, no en intuicion",
+    "Se explica cuando NO merece la pena defender ese producto",
+    "Las acciones se pueden ejecutar sin equipo grande ni presupuesto alto"
+  ]
+}

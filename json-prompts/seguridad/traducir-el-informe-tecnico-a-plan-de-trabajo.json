@@ -1,0 +1,39 @@
+{
+  "tarea": "Transformar un informe de prueba de intrusión web en un plan de trabajo con tareas accionables para el equipo de desarrollo, redactado por un responsable de negocio sin perfil técnico",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "quien_desarrolla": "[AGENCIA, FREELANCE O EQUIPO INTERNO]",
+    "herramienta_tareas": "[TRELLO, JIRA, NOTION, EMAIL]",
+    "fecha_objetivo": "[FECHA LÍMITE DE CIERRE]",
+    "contrato": "[HAY MANTENIMIENTO CONTRATADO O SE PRESUPUESTA APARTE]"
+  },
+  "entradas": {
+    "informe": "[PEGA AQUÍ EL INFORME O EL LISTADO DE HALLAZGOS]"
+  },
+  "pasos": [
+    "Agrupar hallazgos que se arreglan con un mismo cambio para no abrir tareas duplicadas",
+    "Escribir cada tarea con título accionable, dónde ocurre, qué se espera después del cambio y cómo se comprobará",
+    "Separar lo que es cambio de código, cambio de configuración del servidor o cambio de proceso interno",
+    "Marcar lo que puede resolver el proveedor de hosting o la plataforma sin tocar código",
+    "Añadir a cada tarea el criterio de aceptación: qué hay que enseñar para darla por cerrada",
+    "Señalar las tareas que pueden romper algo y necesitan probarse en preproducción antes",
+    "Preparar el email de envío al desarrollador con el contexto, el plazo y la petición de estimación",
+    "Preparar la lista de preguntas al auditor sobre lo que no queda claro"
+  ],
+  "restricciones": [
+    "No incluir detalles de explotación en las tarjetas: describir el arreglo, no el ataque",
+    "No copiar párrafos del informe tal cual: reescribir en tareas",
+    "Si un hallazgo no tiene arreglo claro en el informe, marcarlo como pendiente de aclarar en vez de improvisar"
+  ],
+  "formato_salida": {
+    "bloque_1": "lista de tarjetas con formato: título, descripción, criterio de aceptación, prioridad, responsable, fecha",
+    "bloque_2": "email de envío listo para copiar",
+    "bloque_3": "lista de dudas para el auditor"
+  },
+  "criterios_calidad": [
+    "Ninguna tarea empieza con verbos vagos tipo revisar o mejorar",
+    "Todo hallazgo del informe acaba en una tarea, agrupado o aplazado de forma explícita",
+    "El criterio de aceptación permite cerrar la tarea sin discusión"
+  ],
+  "tono": "práctico y directo"
+}

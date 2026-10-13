@@ -1,0 +1,39 @@
+{
+  "tarea": "Convierte esta tarea manual y repetitiva en un script de Python y déjalo programado para que se ejecute solo",
+  "contexto": {
+    "tarea_manual": "[DESCRIBE LA TAREA PASO A PASO COMO SE LA EXPLICARÍAS A UN BECARIO]",
+    "frecuencia": "[CADA DÍA / CADA LUNES / CADA FIN DE MES]",
+    "tiempo_que_me_lleva": "[MINUTOS APROXIMADOS]",
+    "ficheros_o_carpetas": "[RUTAS Y TIPOS DE FICHERO IMPLICADOS]",
+    "sistema_operativo": "[WINDOWS / MACOS]"
+  },
+  "antes_de_escribir_codigo": [
+    "Resume la tarea en pasos numerados y confirma que la has entendido",
+    "Señala qué pasos se pueden automatizar y cuáles necesitan una decisión humana",
+    "Pregunta lo imprescindible si algo es ambiguo"
+  ],
+  "requisitos_del_script": [
+    "Librería estándar siempre que se pueda; si hace falta algo externo, justifícalo",
+    "Configuración agrupada y comentada al principio del fichero",
+    "Modo prueba: una variable SIMULACION que muestre lo que haría sin tocar nada",
+    "Registro de lo ejecutado en un fichero de log con fecha y hora",
+    "Nunca sobrescribe: copia a una carpeta 'copia_seguridad' antes de modificar"
+  ],
+  "programacion_automatica": [
+    "Instrucciones para el Programador de tareas de Windows y para cron o launchd en Mac",
+    "Cómo indicar la ruta del entorno virtual dentro de la tarea programada",
+    "Cómo comprobar que se ha ejecutado y qué pasa si el ordenador estaba apagado"
+  ],
+  "formato_salida": {
+    "1_plan": "Pasos automatizables y pasos que siguen siendo manuales",
+    "2_codigo": "Script completo comentado en español",
+    "3_instalacion": "Comandos exactos, uno por línea",
+    "4_programacion": "Pasos con los nombres reales de menús y botones",
+    "5_pruebas": "Cómo probarlo en modo simulación antes de dejarlo suelto"
+  },
+  "criterios_calidad": [
+    "La primera ejecución puede hacerse en modo simulación sin riesgo",
+    "Si falla, el log dice en qué paso y con qué fichero",
+    "Cambiar rutas o frecuencia no obliga a tocar la lógica"
+  ]
+}

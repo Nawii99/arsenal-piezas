@@ -1,0 +1,35 @@
+{
+  "tarea": "Reescribir todos los textos de ayuda, error y confirmación del formulario de [NOMBRE DEL FORMULARIO] para que nadie se atasque",
+  "entradas": {
+    "campos": "[LISTA DE CAMPOS CON SU REGLA: OBLIGATORIO, FORMATO, LONGITUD]",
+    "errores_actuales": "[TEXTOS QUE MUESTRA AHORA, SI LOS CONOCES]",
+    "idioma_y_tono": "Español de España, tuteando, tono [CERCANO O NEUTRO]"
+  },
+  "para_cada_campo_genera": [
+    "Etiqueta clara y corta",
+    "Texto de ayuda debajo, solo si aporta algo",
+    "Ejemplo de formato correcto dentro del campo",
+    "Mensaje de error si está vacío",
+    "Mensaje de error si el formato no es válido",
+    "Mensaje de confirmación cuando queda bien relleno, si aplica"
+  ],
+  "reglas_de_escritura": [
+    "Di qué ha pasado y cómo arreglarlo en la misma frase",
+    "Nada de culpar a la persona ni de mayúsculas ni signos de admiración",
+    "Prohibidas las palabras inválido, incorrecto y error genérico",
+    "Máximo 12 palabras por mensaje",
+    "El error aparece junto al campo, nunca solo arriba del todo"
+  ],
+  "comportamiento": [
+    "Valida al salir del campo, no mientras se escribe",
+    "Nunca borres lo que la persona ya había escrito",
+    "Al fallar el envío, lleva el foco al primer campo con problema",
+    "El botón nunca se queda pulsado sin decir nada: muestra Enviando"
+  ],
+  "casos_especiales": ["email con espacio o punto final", "teléfono con prefijo o espacios", "casilla de privacidad sin marcar", "envío duplicado por doble clic", "fallo del servidor"],
+  "formato_salida": "Tabla con Campo, Etiqueta, Ayuda, Error vacío, Error de formato. Debajo, bloque aparte con los mensajes de los casos especiales y una nota de 4 líneas sobre cuándo mostrar cada uno.",
+  "criterios_calidad": [
+    "Cualquier persona sabe qué tocar sin preguntar a nadie",
+    "Los textos caben en una línea en móvil"
+  ]
+}

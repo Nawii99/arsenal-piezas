@@ -1,0 +1,52 @@
+{
+  "tarea": "Planificar y redactar una subida de precios a clientes actuales, cliente por cliente, con la carta de aviso y el plan de respuesta",
+  "contexto": {
+    "negocio": "[TU NEGOCIO], [SERVICIO O PRODUCTO]",
+    "tipo_de_relacion": "[CUOTA MENSUAL / TRABAJOS SUELTOS / IGUALA]",
+    "tiempo_sin_subir": "[MESES O AÑOS]",
+    "pais": "España, precios con IVA indicado según [CON IVA / SIN IVA]"
+  },
+  "entradas": {
+    "lista_de_clientes": "[NOMBRE, QUÉ PAGA, DESDE CUÁNDO, HORAS QUE TE COME AL MES, TRATO FÁCIL O DIFÍCIL]",
+    "motivo_real": "[SUBIDA DE COSTES / MÁS ALCANCE DEL PACTADO / PRECIO POR DEBAJO DE MERCADO]",
+    "subida_objetivo": "[PORCENTAJE O IMPORTE QUE QUIERES ALCANZAR]",
+    "fecha_de_entrada": "[FECHA DESDE LA QUE SE APLICA]",
+    "margen_de_maniobra": "[QUÉ PUEDES OFRECER A CAMBIO: PLAZO, ALCANCE, PAGO ANUAL]"
+  },
+  "pasos": [
+    "1. Ordena los clientes en cuatro grupos: rentables y fáciles, rentables y difíciles, poco rentables y fáciles, poco rentables y difíciles",
+    "2. Asigna a cada grupo una subida distinta, mayor en los poco rentables, y marca a cuáles no te importa perder",
+    "3. Fija el aviso mínimo por escrito: al menos [DÍAS] días antes de [FECHA_DE_ENTRADA]",
+    "4. Redacta la carta o mensaje base: motivo en una frase, precio nuevo, fecha, qué mejora o se mantiene, y agradecimiento sin disculpas",
+    "5. Crea tres variantes: cliente antiguo y querido, cliente estándar, cliente que ya te dio guerra",
+    "6. Prepara la escalera de concesiones: qué ofreces en la primera queja, en la segunda y dónde te plantas",
+    "7. Define el plan si se va: qué le dices, cómo entregas lo suyo y cuándo vuelves a contactarle"
+  ],
+  "restricciones": [
+    "Prohibido pedir perdón por subir precios o usar la palabra lamentablemente",
+    "Prohibido justificar con tus problemas personales o con la inflación como excusa vacía",
+    "Nunca se anuncia una subida por un canal informal si el contrato exige aviso escrito",
+    "El precio nuevo aparece en euros, claro, sin letra pequeña",
+    "Ningún cliente se entera por un tercero: orden de envío definido"
+  ],
+  "errores_tipicos": [
+    "Subir a todos lo mismo y castigar a los buenos clientes",
+    "Avisar con dos días y romper la confianza",
+    "Ceder en el primer email y anular la subida entera",
+    "Meter la subida escondida en una factura sin avisar",
+    "No calcular cuántos clientes puedes perder y aun así ganar más"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de clientes con grupo, precio actual, precio nuevo y riesgo de fuga alto, medio o bajo",
+    "bloque_2": "Cuenta simple: ingresos actuales, ingresos si suben todos, ingresos si se van los de riesgo alto",
+    "bloque_3": "Carta base y las tres variantes, listas para enviar",
+    "bloque_4": "Escalera de concesiones y frase de plantarse",
+    "bloque_5": "Calendario de envíos con fechas concretas"
+  },
+  "criterios_calidad": [
+    "La carta se lee en menos de un minuto y el precio nuevo se ve sin buscar",
+    "Sabes de antemano a qué clientes estás dispuesto a perder",
+    "Cada concesión tiene contrapartida, ninguna es un regalo",
+    "Los números cuadran aunque se vaya el porcentaje que has estimado"
+  ]
+}

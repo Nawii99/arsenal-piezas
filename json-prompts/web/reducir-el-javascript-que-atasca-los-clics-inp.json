@@ -1,0 +1,43 @@
+{
+  "tarea": "Analizar por qué una web responde tarde a los clics y proponer un plan para reducir el JavaScript y mejorar el INP",
+  "contexto": {
+    "url": "[URL DE LA PÁGINA]",
+    "plataforma": "[WORDPRESS / SHOPIFY / WEBFLOW / A MEDIDA]",
+    "quien_toca_codigo": "[NADIE / YO CON AYUDA / DESARROLLADOR]"
+  },
+  "entradas": {
+    "inp_actual": "[X ms EN MÓVIL]",
+    "interaccion_lenta": "[QUÉ SE NOTA LENTO: ABRIR EL MENÚ, AÑADIR AL CARRITO, FILTRAR PRODUCTOS, ENVIAR EL FORMULARIO]",
+    "scripts_cargados": "[LISTA DE PLUGINS, LIBRERÍAS Y ETIQUETAS QUE CARGA LA PÁGINA CON SU PESO EN KB]",
+    "tiempo_de_bloqueo": "[TBT O TIEMPO TOTAL DE BLOQUEO QUE INDICA PAGESPEED]"
+  },
+  "conocimiento_previo": [
+    "El INP mide el retardo total desde que se pulsa hasta que se ve la respuesta en pantalla",
+    "Las tareas largas de JavaScript bloquean el hilo principal y retrasan cualquier pulsación",
+    "Un mismo efecto suele conseguirse con CSS o con HTML nativo en lugar de con una librería",
+    "Cargar un script cuando el usuario interactúa suele ser mejor que cargarlo al inicio"
+  ],
+  "proceso": [
+    "Clasifica cada script en imprescindible, aplazable o eliminable y justifica la etiqueta en una frase",
+    "Señala los que se pueden cargar solo al interactuar, solo en la página que los necesita o solo en escritorio",
+    "Para la interacción lenta descrita, explica qué está pasando en el navegador en lenguaje llano",
+    "Propón alternativas nativas a librerías pesadas cuando existan, por ejemplo desplegables o galerías",
+    "Estima el peso y el tiempo de bloqueo que se ahorra y el INP objetivo"
+  ],
+  "restricciones": [
+    "No propongas quitar nada que afecte a facturación, cookies o medición sin señalar la alternativa",
+    "Advierte de cada cambio que pueda romper funcionalidad y cómo probarlo antes de publicarlo"
+  ],
+  "formato_salida": {
+    "tipo": "informe en markdown",
+    "secciones": [
+      "Tabla: script, para qué sirve, peso, decisión, riesgo y cómo se aplica",
+      "Explicación en lenguaje llano de por qué se atasca la interacción indicada",
+      "Orden de ejecución en tres pasos con la prueba a hacer después de cada uno"
+    ]
+  },
+  "criterios_calidad": [
+    "Ninguna recomendación pide reescribir la web entera",
+    "Cada decisión indica qué se pierde si se aplica"
+  ]
+}

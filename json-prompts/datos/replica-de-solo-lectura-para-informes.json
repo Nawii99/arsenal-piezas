@@ -1,0 +1,34 @@
+{
+  "tarea": "Explicar y planificar el montaje de una réplica de solo lectura de la base de datos para informes, exportaciones y consultas pesadas",
+  "contexto": {
+    "motor_y_version": "[MySQL 8, PostgreSQL 16, SQL Server... Y VERSIÓN]",
+    "alojamiento": "[VPS, AWS RDS, HOSTING GESTIONADO, SERVIDOR PROPIO]",
+    "problema_actual": "[QUÉ SE PONE LENTO Y CUÁNDO: p. ej. el informe de ventas del lunes tumba la tienda]",
+    "quien_consultara_la_replica": "[PERSONAS O HERRAMIENTAS: Metabase, Excel, Looker Studio, un analista]",
+    "tolerancia_a_retraso": "[SEGUNDOS O MINUTOS DE RETRASO QUE PUEDES ACEPTAR EN LOS DATOS]",
+    "presupuesto_mensual": "[EUROS AL MES PARA EL SEGUNDO SERVIDOR]"
+  },
+  "instrucciones": [
+    "Explica primero qué es una réplica y en qué se diferencia de una copia de seguridad: la réplica copia también los errores y borrados, así que no sustituye al backup",
+    "Indica si el hosting o servicio indicado ofrece réplicas con un botón y, si es así, recomiéndalo antes que montarla a mano",
+    "Si hay que montarla a mano, da los pasos ordenados para el motor indicado y qué se necesita en cada máquina",
+    "Explica el retraso de la réplica, cómo medirlo y qué informes no deben leerse de ahí por ese retraso",
+    "Indica cómo crear un usuario de solo lectura y limitarle las tablas visibles",
+    "Cierra con la vigilancia: cómo saber si la réplica se ha desenganchado y qué hacer entonces"
+  ],
+  "restricciones": [
+    "Deja claro en negrita que una réplica no es una copia de seguridad",
+    "No propongas montarla a mano si el proveedor ya la ofrece integrada",
+    "Avisa del sobrecoste real: la réplica consume un servidor entero"
+  ],
+  "formato_salida": {
+    "tipo": "guía práctica en Markdown",
+    "secciones": ["Para qué sirve y para qué no", "Opción con botón del proveedor", "Opción manual paso a paso", "Usuario de solo lectura", "Retraso y vigilancia", "Coste mensual estimado"]
+  },
+  "criterios_calidad": [
+    "Queda claro qué consultas van a la réplica y cuáles siguen en la principal",
+    "Los pasos son específicos del motor y la versión indicados",
+    "Se explica cómo comprobar que la réplica está al día"
+  ],
+  "tono": "pedagógico, con ejemplos del negocio del usuario"
+}

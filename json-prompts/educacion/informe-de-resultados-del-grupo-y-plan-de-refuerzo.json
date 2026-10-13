@@ -1,0 +1,35 @@
+{
+  "tarea": "Analizar los resultados de un grupo por criterio de evaluacion y proponer un plan de refuerzo",
+  "entradas": {
+    "notas_por_alumno_y_criterio": "[PEGA AQUI LA TABLA O EL CSV: alumno, criterio1, criterio2, ...]",
+    "rubrica_o_criterios": "[PEGA LOS CRITERIOS Y SUS PESOS]",
+    "nota_de_corte": "[EJ: 5]",
+    "sesiones_disponibles_para_refuerzo": "[NUMERO DE CLASES]",
+    "fecha_siguiente_prueba": "[FECHA]"
+  },
+  "metodo": [
+    "Calcula media, mediana y dispersion de cada criterio y del total",
+    "Identifica los 2 o 3 criterios con peor resultado y los que no discriminan porque todos puntuan igual",
+    "Agrupa al alumnado en tres perfiles segun patron de fallos, no segun nota global",
+    "Para cada perfil propone una accion distinta, con actividad concreta y duracion",
+    "Distribuye las acciones en las sesiones disponibles con un calendario"
+  ],
+  "restricciones": [
+    "No etiquetes al alumnado con juicios de valor: describe patrones de error",
+    "No propongas mas trabajo del que cabe en las sesiones indicadas",
+    "Nada de recomendaciones genericas tipo 'estudiar mas' o 'motivar al grupo'",
+    "Usa los nombres solo dentro de los grupos de refuerzo, no en el resumen publico"
+  ],
+  "formato_salida": {
+    "1_panorama": "Tabla por criterio: media, mediana, porcentaje de aprobados y semaforo verde ambar rojo",
+    "2_hallazgos": "5 conclusiones en una linea cada una, ordenadas por urgencia",
+    "3_perfiles": "Los 3 grupos, que les pasa exactamente y quien esta en cada uno",
+    "4_plan": "Calendario sesion a sesion: objetivo, actividad, material necesario y como comprobar que ha funcionado",
+    "5_mensaje_a_familias_o_direccion": "Parrafo de 100 palabras con el resumen y las medidas tomadas"
+  },
+  "criterios_calidad": [
+    "Cada conclusion sale de un numero de la tabla, no de una impresion",
+    "El plan cabe en las sesiones disponibles",
+    "Cada accion tiene una forma de comprobar si ha servido"
+  ]
+}

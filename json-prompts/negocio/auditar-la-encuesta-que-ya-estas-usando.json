@@ -1,0 +1,34 @@
+{
+  "tarea": "Auditar una encuesta de satisfacción existente y entregar una versión corregida",
+  "entradas": {
+    "encuesta_actual": "[PEGA TODAS LAS PREGUNTAS CON SUS OPCIONES Y ESCALAS]",
+    "tasa_de_finalizacion": "[QUÉ PORCENTAJE LA TERMINA, SI LO SABES]",
+    "decisiones_que_tomo_con_ella": "[PARA QUÉ USAS LOS RESULTADOS]",
+    "canal_y_momento": "[DÓNDE Y CUÁNDO SE ENVÍA]"
+  },
+  "revisar_pregunta_a_pregunta": [
+    "Sesgo: palabras que empujan a responder bien o mal",
+    "Doble pregunta: dos ideas metidas en una sola",
+    "Escala: número de puntos, etiquetas, punto medio y coherencia entre preguntas",
+    "Jerga interna o nombres que el cliente no usa",
+    "Preguntas cuya respuesta ya está en tus sistemas y no hace falta preguntar",
+    "Preguntas cuya respuesta no cambiaría ninguna decisión: sobran",
+    "Obligatoriedad innecesaria y campos que bloquean el envío",
+    "Datos personales pedidos sin necesidad ni aviso de privacidad"
+  ],
+  "formato_salida": {
+    "tabla_diagnostico": "Columnas: nº pregunta | problema detectado | gravedad (alta/media/baja) | reescritura propuesta",
+    "veredicto": "Cuántas preguntas mantener, cuáles fusionar y cuáles eliminar, con el motivo en una línea",
+    "encuesta_nueva": "Versión final completa lista para copiar, con las preguntas ordenadas de fácil a comprometida",
+    "tiempo_estimado": "Segundos que se tarda en responder la versión nueva"
+  },
+  "restricciones": [
+    "La versión nueva no puede tener más preguntas que la original",
+    "Mantener la métrica principal si ya se venía midiendo, para no perder la comparación con meses anteriores",
+    "No proponer herramientas de pago ni integraciones técnicas"
+  ],
+  "criterios_calidad": [
+    "Cada problema señalado viene con su reescritura, no solo con la crítica",
+    "La encuesta nueva sigue respondiendo a las decisiones que el usuario ha declarado"
+  ]
+}

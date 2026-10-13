@@ -1,0 +1,34 @@
+{
+  "tarea": "Definir el subsistema de color de estados y su version en modo oscuro para un producto digital",
+  "contexto": {
+    "producto": "[WEB, TIENDA ONLINE O APP]",
+    "color_primario": "[HEX]",
+    "fondo_claro": "[HEX, NORMALMENTE #FFFFFF]",
+    "modo_oscuro": "[SI O NO]",
+    "mensajes_habituales": "[PAGO CORRECTO, TARJETA RECHAZADA, STOCK BAJO, AVISO DE ENVIO]"
+  },
+  "proceso": [
+    "Define 4 estados: exito, error, aviso e informacion",
+    "Para cada uno da tres tonos: fondo suave, borde y texto o icono",
+    "Comprueba que el texto del estado contrasta al menos 4,5 con su fondo suave",
+    "Asegurate de que el estado informacion no se confunda con el color primario de marca",
+    "Si hay modo oscuro, invierte la logica: fondo oscuro apagado y texto claro saturado, nunca el mismo HEX",
+    "Anade a cada estado un icono y una palabra de apoyo para quien no distinga colores"
+  ],
+  "restricciones": [
+    "Nunca comunicar un estado solo con color",
+    "Rojo reservado exclusivamente a errores, jamas decorativo",
+    "Maximo 12 tokens de color de estado en total"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de tokens mas ejemplos de mensaje",
+    "columnas": ["Estado", "Fondo claro", "Borde", "Texto", "Version oscura", "Icono", "Ejemplo de mensaje real"],
+    "extra": ["Variables CSS listas para pegar", "Regla de una linea sobre cuando usar cada estado"]
+  },
+  "criterios_calidad": [
+    "Todos los ejemplos de mensaje estan escritos con las situaciones reales indicadas",
+    "Ningun estado depende solo del color",
+    "La version oscura no es el mismo color con opacidad"
+  ],
+  "tono": "Concreto, orientado a que se entienda el mensaje a la primera"
+}

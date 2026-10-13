@@ -1,0 +1,41 @@
+{
+  "tarea": "Escribir el guion minutado de una sesión de formación interna, con actividades y comprobación de aprendizaje",
+  "contexto": {
+    "tema": "[TEMA DE LA SESIÓN]",
+    "quien_la_imparte": "[NOMBRE Y PUESTO, NO ES FORMADOR PROFESIONAL]",
+    "asistentes": "[CUÁNTOS SON Y DE QUÉ PUESTOS]",
+    "nivel_de_partida": "[QUÉ SABEN YA]",
+    "duracion_minutos": "[90]",
+    "formato": "[SALA PRESENCIAL O VIDEOLLAMADA]"
+  },
+  "objetivo_aprendizaje": "[QUÉ DEBEN SABER HACER AL SALIR, EN UNA FRASE CON UN VERBO DE ACCIÓN]",
+  "procedimiento": [
+    "Reparte el tiempo en bloques de máximo 15 minutos alternando explicación y práctica",
+    "Abre con un caso real de la empresa que duela, no con la teoría ni con la presentación del ponente",
+    "Por cada concepto explicado incluye un ejercicio donde los asistentes hacen algo, no solo escuchan",
+    "Prevé las tres objeciones o dudas más probables del equipo y prepara la respuesta",
+    "Cierra con un compromiso concreto por persona: qué va a hacer distinto la semana que viene"
+  ],
+  "restricciones": [
+    "Ningún bloque de explicación seguida supera los 12 minutos",
+    "Máximo 8 diapositivas y sin párrafos en ellas",
+    "Nada de teoría que no se use en el trabajo del día siguiente"
+  ],
+  "formato_salida": {
+    "tipo": "guion minutado y anexos",
+    "secciones": [
+      "Tabla: Minuto | Bloque | Qué dice el formador | Qué hacen los asistentes | Material",
+      "Guion literal del arranque, los primeros 3 minutos",
+      "Enunciado de los ejercicios con la solución para el formador",
+      "Contenido de las diapositivas, una línea por diapositiva",
+      "5 preguntas de comprobación final con sus respuestas",
+      "Lista de material y preparación previa"
+    ]
+  },
+  "criterios_calidad": [
+    "Al menos el 40 por ciento del tiempo es práctica de los asistentes",
+    "Todos los ejemplos son del sector y del día a día de la empresa",
+    "Alguien que no domine el tema podría impartirla con este guion"
+  ],
+  "tono": "práctico, sin lenguaje académico"
+}

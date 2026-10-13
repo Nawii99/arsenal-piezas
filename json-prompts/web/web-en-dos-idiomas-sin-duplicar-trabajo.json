@@ -1,0 +1,60 @@
+{
+  "tarea": "Diseñar la estructura multiidioma de [URL_WEB] en [IDIOMA_PRINCIPAL] y [IDIOMA_SECUNDARIO] y dejarla lista para publicar",
+  "contexto": {
+    "negocio": "[NOMBRE, SERVICIO Y ZONA]",
+    "por_que_otro_idioma": "[TURISTAS / CLIENTES INTERNACIONALES / COMUNIDAD BILINGÜE]",
+    "tipo_de_web": "[HTML ESTÁTICO / WORDPRESS / TIENDA]",
+    "quien_traduce": "[YO CON IA / TRADUCTOR PROFESIONAL / MIXTO]"
+  },
+  "entradas": {
+    "paginas_actuales": "[LISTA DE PÁGINAS CON SU URL Y SU OBJETIVO]",
+    "paginas_que_si_merecen_traduccion": "[LAS QUE VENDEN; EL BLOG SUELE NO HACER FALTA]",
+    "terminos_intraducibles": "[NOMBRE DE MARCA, PLATOS, PRODUCTOS, ZONAS]",
+    "datos_locales": "[MONEDA, HORARIOS, TELÉFONO, DIRECCIÓN, FORMAS DE PAGO]"
+  },
+  "procedimiento": [
+    "1. Elige el esquema de URL por carpetas de idioma y mantenlo en toda la web",
+    "2. Decide qué páginas se traducen y cuáles no: traducir todo es la vía rápida al abandono",
+    "3. Define el idioma por defecto y qué pasa con quien llega sin coincidencia",
+    "4. Prepara el selector de idioma visible arriba, con el nombre del idioma escrito, no solo banderas",
+    "5. Añade en cada página las etiquetas de idioma alternativo enlazando ambas versiones y a sí misma",
+    "6. Traduce también lo invisible: títulos de pestaña, descripciones, textos alternativos, botones y mensajes de error",
+    "7. Adapta lo cultural: formato de fecha, moneda, unidades, ejemplos, forma de tratar al lector",
+    "8. Localiza los formularios: campos de dirección y validaciones cambian según país",
+    "9. Revisa que el enlace de cada idioma lleve a la misma página, no siempre a la portada",
+    "10. Publica y comprueba la indexación de ambas versiones"
+  ],
+  "que_mirar": [
+    "Cada página debe declarar su idioma en la etiqueta principal del HTML",
+    "Las banderas no representan idiomas: hay muchos países que hablan español o inglés",
+    "Las traducciones automáticas sin revisión hunden la confianza en las páginas de precio",
+    "Los enlaces internos deben quedarse dentro del mismo idioma",
+    "El idioma no debe cambiar solo por la ubicación detectada"
+  ],
+  "errores_tipicos": [
+    "Traducir la web y dejar el formulario y el mensaje de gracias en el idioma original",
+    "Mezclar los dos idiomas en la misma página",
+    "Duplicar contenido sin declarar las versiones alternativas",
+    "Traducir literalmente los reclamos comerciales y perder el gancho",
+    "Olvidar traducir los textos legales cuando se vende fuera"
+  ],
+  "restricciones": [
+    "Nada de plugins de pago ni traducción automática en tiempo real",
+    "El mantenimiento debe seguir siendo de una sola persona",
+    "Prioriza siempre las páginas que generan ingresos"
+  ],
+  "formato_salida": {
+    "1_mapa_de_urls": "Tabla: página | URL idioma principal | URL idioma secundario | ¿se traduce? | prioridad",
+    "2_bloque_de_etiquetas": "Código de las etiquetas de idioma alternativo listo para pegar en cada página",
+    "3_selector": "HTML y CSS del selector de idioma",
+    "4_glosario": "Términos que no se traducen y traducción fija de los términos clave del negocio",
+    "5_traducciones": "Los textos traducidos de las páginas prioritarias, adaptados y no literales",
+    "6_comprobaciones": "Lista de verificación antes de publicar y después de publicar"
+  },
+  "criterios_calidad": [
+    "Cada página traducida enlaza a su equivalente exacta en el otro idioma",
+    "No queda ni un texto de interfaz sin traducir en la ruta de compra o contacto",
+    "Las traducciones suenan naturales para un nativo, no a traducción automática",
+    "El mapa de URLs no tiene ninguna página huérfana"
+  ]
+}

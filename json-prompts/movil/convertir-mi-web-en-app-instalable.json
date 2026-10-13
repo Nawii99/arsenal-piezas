@@ -1,0 +1,43 @@
+{
+  "tarea": "Decidir si necesito app de tienda y dejar mi web instalable en el móvil",
+  "contexto": {
+    "web": "[URL Y QUÉ HACE]",
+    "lo_que_necesita_el_usuario": "[CONSULTAR, RESERVAR, COMPRAR, GRABAR, LO QUE SEA]",
+    "funciones_del_movil_necesarias": "[CÁMARA, UBICACIÓN, AVISOS, TRABAJAR SIN COBERTURA, NINGUNA]",
+    "quien_la_va_a_usar": "[CLIENTES / EMPLEADOS / AMBOS]",
+    "acceso_a_los_archivos": "[TENGO ACCESO AL CÓDIGO O AL PANEL: SÍ O NO]"
+  },
+  "pasos": [
+    "Primero el veredicto: di si con web instalable basta o si de verdad hace falta app de tienda, con el motivo en una frase",
+    "Si basta, comprueba que la web va por conexión segura y funciona bien en pantalla de móvil",
+    "Genera el archivo de manifiesto con nombre corto, nombre completo, iconos de ciento noventa y dos y quinientos doce píxeles, icono adaptable, color de fondo, color de tema, pantalla de inicio y modo sin barra de navegador",
+    "Añade una capa mínima que guarde las páginas principales y muestre una página propia cuando no hay conexión",
+    "Explica cómo instalarla en Android desde el menú del navegador y en iPhone con añadir a pantalla de inicio",
+    "Avisa de lo que no funciona igual en iPhone y de lo que se pierde si el usuario borra el navegador",
+    "Deja una lista de comprobación para verificar la instalación en un móvil real"
+  ],
+  "restricciones": [
+    "Nada de prometer que sustituye a una app nativa en todo",
+    "Los pasos van explicados para alguien sin perfil técnico, con dónde se pega cada archivo",
+    "No metas librerías ni servicios de pago",
+    "Si hace falta app de tienda de verdad, dilo claramente y no montes un apaño"
+  ],
+  "errores_frecuentes": [
+    "Iconos con fondo transparente que se ven recortados en Android",
+    "Olvidar el icono grande y que la instalación no aparezca",
+    "Guardar en caché páginas con precios y que el usuario vea datos viejos",
+    "Dar por hecho que los avisos push funcionarán igual en iPhone"
+  ],
+  "formato_salida": {
+    "veredicto": "Web instalable o app de tienda, con el motivo",
+    "archivos": "Contenido completo del manifiesto y de la capa sin conexión, listos para copiar",
+    "instalacion": "Pasos numerados para Android y para iPhone con lo que se ve en pantalla",
+    "comprobaciones": "Lista de seis pruebas en un móvil real"
+  },
+  "criterios_calidad": [
+    "El veredicto está justificado con las funciones que la web sí puede o no puede hacer",
+    "Los archivos se pegan y funcionan sin tocar nada más que los nombres y colores",
+    "Las instrucciones de instalación se pueden mandar por WhatsApp a un cliente",
+    "Está dicho qué no funciona en iPhone antes de que el usuario lo descubra"
+  ]
+}

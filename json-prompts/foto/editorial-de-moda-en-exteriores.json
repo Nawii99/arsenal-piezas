@@ -1,0 +1,37 @@
+{
+  "tarea": "Crear el prompt de una imagen editorial de moda en exteriores para [NOMBRE DE TU MARCA]",
+  "historia": {
+    "look": "[PRENDAS Y COMPLEMENTOS DEL LOOK COMPLETO]",
+    "personaje": "[QUIEN ES Y QUE ESTA HACIENDO, en una frase]",
+    "lugar": "[CALLE, PLAYA, CAMPO O ARQUITECTURA CONCRETA]",
+    "momento": "[AMANECER / HORA DORADA / MEDIODIA NUBLADO / HORA AZUL]",
+    "clima": "[DESPEJADO / VIENTO / DESPUES DE LLOVER]"
+  },
+  "camara": {
+    "plano": "plano general que situa el lugar y plano medio que ensena el tejido",
+    "lente": "35 mm para contexto, 85 mm para comprimir el fondo y separar a la modelo",
+    "diafragma": "f/2.8 para fondo desenfocado, f/8 si el lugar forma parte del mensaje",
+    "altura": "a la altura del pecho, contrapicado suave solo si quieres presencia",
+    "movimiento": "paso en marcha, tela y pelo movidos por el viento"
+  },
+  "luz_natural": {
+    "direccion": "sol a contraluz bajo con reflector delante, o luz lateral de hora dorada",
+    "riesgo": "evitar sol cenital de mediodia por las ojeras y el contraste duro",
+    "ambiente": "[NEBLINA, POLVO EN EL AIRE, REFLEJOS EN EL SUELO MOJADO]"
+  },
+  "restricciones": [
+    "Nada de marcas, carteles ni texto legible en el fondo",
+    "Ropa con caida y arrugas reales de una prenda usada",
+    "Sin caras de fondo reconocibles",
+    "Coherencia entre la sombra de la modelo y la hora indicada"
+  ],
+  "formato_salida": {
+    "entrega": "4 imagenes de la misma escena que puedan ir juntas en un carrusel",
+    "por_imagen": ["prompt en ingles", "prompt negativo", "relacion de aspecto", "funcion en el carrusel"]
+  },
+  "criterios_calidad": [
+    "Las 4 imagenes parecen del mismo dia, misma hora y misma modelo",
+    "Se sigue reconociendo la prenda pese al ambiente",
+    "La escena cuenta algo, no es una pose vacia"
+  ]
+}

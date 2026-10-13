@@ -1,0 +1,39 @@
+{
+  "tarea": "Crear una batería de ejercicios prácticos para un módulo concreto, con enunciado, solución y rúbrica de corrección",
+  "contexto": {
+    "modulo": "[NOMBRE DEL MÓDULO]",
+    "objetivo_del_modulo": "[QUÉ DEBE SABER HACER EL ALUMNO AL ACABARLO]",
+    "sector_de_los_alumnos": "[SECTOR O TIPO DE NEGOCIO DE TUS ALUMNOS]",
+    "tiempo_de_practica": "[MINUTOS U HORAS DISPONIBLES]",
+    "herramientas_permitidas": "[EXCEL, IA, PAPEL, SOFTWARE CONCRETO]"
+  },
+  "tipos_a_generar": [
+    "2 ejercicios de calentamiento de menos de 5 minutos",
+    "3 ejercicios de aplicación directa con datos realistas del sector indicado",
+    "2 casos con información incompleta o contradictoria, para forzar decisiones",
+    "1 reto final integrador que use todo el módulo",
+    "1 ejercicio de detección de errores: se da un trabajo mal hecho y hay que encontrar los fallos"
+  ],
+  "para_cada_ejercicio": [
+    "Título",
+    "Enunciado listo para copiar y pegar al alumno",
+    "Datos o material de partida inventado pero verosímil",
+    "Tiempo estimado",
+    "Dificultad de 1 a 5",
+    "Solución comentada paso a paso",
+    "Rúbrica: 3 criterios con qué es bien, regular y mal",
+    "Errores típicos que cometerá el alumno y qué revelan",
+    "Variante más fácil y variante más difícil"
+  ],
+  "restricciones": [
+    "Nada de ejercicios de definir el concepto o explicar la teoría",
+    "Los datos deben ser plausibles en euros y en el contexto español",
+    "Cada ejercicio debe poder corregirse en menos de 5 minutos"
+  ],
+  "formato_salida": "Fichas separadas por ejercicio, más una tabla resumen final con título, tipo, tiempo y dificultad",
+  "criterios_calidad": [
+    "Todos los ejercicios apuntan al objetivo del módulo",
+    "La dificultad crece de forma progresiva",
+    "La rúbrica permite corregir sin dudar"
+  ]
+}

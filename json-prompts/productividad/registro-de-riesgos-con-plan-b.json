@@ -1,0 +1,36 @@
+{
+  "tarea": "Elaborar el registro de riesgos de un proyecto, priorizado, con señales de alerta temprana, medidas preventivas y plan B para cada riesgo",
+  "contexto": {
+    "proyecto": "[DESCRIPCIÓN DEL PROYECTO EN 3 FRASES]",
+    "plazo": "[FECHA LÍMITE Y SI ES NEGOCIABLE O NO]",
+    "presupuesto": "[IMPORTE U HORAS]",
+    "equipo": "[CUÁNTAS PERSONAS, DEDICACIÓN Y SI ALGUIEN ES IMPRESCINDIBLE]",
+    "dependencias_externas": "[PROVEEDORES, APROBACIONES, LICENCIAS, MATERIALES, CLIENTES QUE DEBEN RESPONDER]",
+    "historial": "[QUÉ SALIÓ MAL EN PROYECTOS PARECIDOS, SI LO SABES]"
+  },
+  "metodo": [
+    "Busca riesgos en seis frentes: personas, cliente, proveedores, técnico, dinero y calendario",
+    "Escribe cada riesgo como causa + suceso + consecuencia, no como una palabra suelta",
+    "Puntúa probabilidad de 1 a 5 y impacto de 1 a 5, y calcula la exposición multiplicando ambos",
+    "Ordena de mayor a menor exposición y quédate con los 10 más altos",
+    "Para cada riesgo define la señal de alerta temprana: el dato observable que avisa de que está pasando",
+    "Separa la medida preventiva (para que no ocurra) del plan B (qué hacemos si ya ha ocurrido)",
+    "Asigna un responsable de vigilar cada riesgo y una fecha de revisión"
+  ],
+  "restricciones": [
+    "Nada de riesgos genéricos tipo 'que salga mal' o 'falta de comunicación': tienen que ser específicos de este proyecto",
+    "Cada plan B debe poder ejecutarse con los recursos que hay, no con recursos imaginarios",
+    "No metas más de 12 riesgos: un registro que nadie lee no sirve"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown ordenada por exposición descendente",
+    "columnas": ["ID", "Riesgo (causa-suceso-consecuencia)", "Prob (1-5)", "Impacto (1-5)", "Exposición", "Señal de alerta", "Prevención", "Plan B", "Vigila"],
+    "cierre": "Párrafo 'Los 3 riesgos que me quitarían el sueño' con qué hacer esta misma semana con cada uno"
+  },
+  "criterios_calidad": [
+    "Todo riesgo tiene una señal de alerta observable, no una intuición",
+    "Prevención y plan B son acciones distintas, no la misma frase repetida",
+    "Los tres primeros riesgos son claramente los más peligrosos para el plazo o el dinero"
+  ],
+  "tono": "realista, sin alarmismo ni optimismo de folleto"
+}

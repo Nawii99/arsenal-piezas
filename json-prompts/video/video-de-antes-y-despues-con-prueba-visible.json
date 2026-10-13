@@ -1,0 +1,39 @@
+{
+  "tarea": "Escribir el guion de un vídeo de antes y después que demuestre el resultado de un producto o servicio",
+  "entradas": {
+    "producto_o_servicio": "[QUÉ ES]",
+    "situacion_de_partida": "[CÓMO ESTÁ LA COSA ANTES]",
+    "resultado_esperado": "[CÓMO QUEDA DESPUÉS]",
+    "tiempo_real_del_proceso": "[MINUTOS, HORAS O DÍAS]",
+    "condiciones_de_la_prueba": "[QUÉ SE HA USADO Y EN QUÉ CONDICIONES]",
+    "duracion_del_video": "[15 / 30 / 45 SEGUNDOS]"
+  },
+  "reglas_de_credibilidad": [
+    "Mismo encuadre, misma distancia y misma luz en el antes y en el después",
+    "Plano continuo sin cortes en el momento clave siempre que se pueda",
+    "Se dice en pantalla cuánto tiempo ha pasado de verdad",
+    "No se promete un resultado que dependa de cada caso sin avisar de ello",
+    "Si hay acelerado, se indica con un rótulo"
+  ],
+  "estructura": [
+    "Gancho con el estado inicial más feo o más reconocible",
+    "Aplicación o uso del producto, mostrando el gesto real",
+    "Aceleración del proceso con rótulo de tiempo",
+    "Revelación del después en el mismo encuadre",
+    "Comparación lado a lado y llamada a la acción"
+  ],
+  "formato_salida": {
+    "tipo": "tabla plano a plano",
+    "columnas": ["Tiempo", "Plano", "Acción", "Rótulo en pantalla", "Nota de grabación"],
+    "extras": [
+      "Frase honesta para matizar el resultado sin restarle fuerza",
+      "Tres rótulos alternativos para el primer segundo",
+      "Cómo marcar la posición de la cámara para repetir el encuadre exacto"
+    ]
+  },
+  "criterios_calidad": [
+    "El espectador ve el cambio sin que nadie se lo explique",
+    "No hay ninguna afirmación que no se pueda demostrar en el vídeo",
+    "El vídeo funciona sin sonido"
+  ]
+}

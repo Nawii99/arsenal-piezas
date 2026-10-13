@@ -1,0 +1,54 @@
+{
+  "tarea": "Diseñar y ejecutar una prueba A/B sencilla en una web propia y decidir con criterio cuándo hay resultado",
+  "contexto": {
+    "pagina": "[URL DE LA PÁGINA A PROBAR]",
+    "objetivo": "[QUÉ ACCIÓN CUENTA COMO ÉXITO: COMPRA, FORMULARIO, LLAMADA, RESERVA]",
+    "visitas_semanales": "[NÚMERO APROXIMADO]",
+    "conversiones_semanales_actuales": "[CUÁNTAS ACCIONES CONSIGUES AHORA]",
+    "hipotesis": "[QUÉ CREES QUE PASARÁ Y POR QUÉ]"
+  },
+  "entradas": {
+    "version_a": "[LO QUE TIENES AHORA, PEGA EL TEXTO O DESCRIBE EL ELEMENTO]",
+    "version_b": "[LA ALTERNATIVA QUE QUIERES PROBAR]",
+    "herramienta_de_medicion": "[LA ANALÍTICA QUE USAS]",
+    "tiempo_disponible": "[CUÁNTAS SEMANAS PUEDES ESPERAR]"
+  },
+  "pasos": [
+    "1. Comprueba primero si merece la pena: con menos de 100 acciones al mes, una prueba A/B no te va a dar una respuesta fiable; propón alternativas como entrevistas o encuestas.",
+    "2. Formula la hipótesis en una frase: si cambio esto, espero que suba esto otro, porque esta razón.",
+    "3. Cambia una sola cosa; si cambias la página entera, no sabrás qué funcionó.",
+    "4. Define la métrica principal (una sola) y dos métricas de control para detectar daños colaterales.",
+    "5. Implanta el reparto: al entrar, se asigna A o B al azar y se guarda la elección en el navegador para que la persona vea siempre lo mismo.",
+    "6. Envía un evento con la variante asignada y otro cuando se cumpla el objetivo.",
+    "7. Fija de antemano cuántas conversiones por variante necesitas y la fecha mínima de cierre; nada de mirar cada hora y parar cuando gane la tuya.",
+    "8. Deja correr al menos dos semanas completas para cubrir todos los días de la semana.",
+    "9. Al cerrar, compara, decide y escribe qué aprendiste aunque no gane ninguna."
+  ],
+  "errores_tipicos": [
+    "Parar en cuanto una variante va ganando el segundo día",
+    "Probar con muy poco tráfico y creerse una diferencia que es puro azar",
+    "Cambiar cosas a mitad de la prueba",
+    "Lanzar una campaña de pago en mitad del test y desequilibrar el público",
+    "Medir clics en el botón en vez de ventas reales",
+    "Que un mismo visitante vea A un día y B otro y se confunda"
+  ],
+  "restricciones": [
+    "Sin herramientas de pago",
+    "Código que se pueda pegar en el HTML de la página",
+    "No prometas porcentajes de mejora",
+    "Si el tráfico no da, dilo claramente y propón otro método"
+  ],
+  "formato_salida": {
+    "bloque_1": "Veredicto de viabilidad: sí o no, con el número de conversiones necesarias",
+    "bloque_2": "Ficha de la prueba: hipótesis, cambio único, métrica principal, controles, fecha de cierre",
+    "bloque_3": "Código del reparto y de los eventos listo para pegar",
+    "bloque_4": "Tabla de seguimiento para rellenar cada semana",
+    "bloque_5": "Regla de decisión escrita antes de empezar"
+  },
+  "criterios_calidad": [
+    "La decisión de parar está escrita antes de ver los datos",
+    "Se cambia una sola variable",
+    "El mismo visitante siempre ve la misma versión",
+    "Si el tráfico es insuficiente, se dice sin rodeos"
+  ]
+}

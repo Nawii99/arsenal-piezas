@@ -1,0 +1,52 @@
+{
+  "tarea": "Auditar todos los gastos fijos y suscripciones del negocio y decidir qué cortar, qué renegociar y qué mantener",
+  "contexto": {
+    "negocio": "[TIPO DE NEGOCIO Y TAMAÑO]",
+    "objetivo": "[LIBERAR CAJA / SUBIR MARGEN / PREPARAR UN MES FLOJO]",
+    "limite": "No tocar nada que ponga en riesgo el servicio al cliente ni obligaciones legales"
+  },
+  "entradas": {
+    "lista_de_cargos": "[TODOS LOS CARGOS RECURRENTES DEL BANCO Y DE LA TARJETA DE LOS ÚLTIMOS 3 MESES: CONCEPTO E IMPORTE]",
+    "contratos": "[ALQUILER, SUMINISTROS, TELEFONÍA, SEGUROS, GESTORÍA, TPV, LEASING: IMPORTE Y FECHA DE RENOVACIÓN SI SE SABE]",
+    "herramientas": "[SOFTWARE Y SUSCRIPCIONES: PARA QUÉ SE USA Y CADA CUÁNTO SE ABRE]",
+    "personas": "[COLABORADORES FIJOS Y LO QUE SE LES PAGA AL MES]",
+    "ingresos_mensuales": "[FACTURACIÓN MEDIA PARA CALCULAR PESOS]"
+  },
+  "procedimiento": [
+    "1. Ordena todos los gastos de mayor a menor importe anual, no mensual: el orden cambia y aparecen sorpresas",
+    "2. Clasifica cada uno en cuatro cajones: imprescindible, mejora el ingreso, comodidad, y no sé para qué es",
+    "3. Para cada gasto pregunta: si lo corto hoy, qué pasa esta semana, este mes y en seis meses",
+    "4. Marca los duplicados: dos herramientas que hacen lo mismo, seguros solapados, planes con funciones que no usas",
+    "5. Detecta los que se pagan por usuario o por volumen y comprueba si el plan está sobredimensionado",
+    "6. Separa en tres acciones: cancelar ya, bajar de plan, renegociar en la renovación",
+    "7. Para lo renegociable, prepara el guion: alternativa real con precio, antigüedad como cliente y petición concreta",
+    "8. Calcula el ahorro mensual y anual de cada acción y el total, sin exagerar",
+    "9. Ordena las acciones por ahorro dividido entre esfuerzo y pon fecha a las cinco primeras"
+  ],
+  "restricciones": [
+    "No propongas cancelar seguros obligatorios, la gestoría si no hay sustituto, ni herramientas que sostienen el cobro",
+    "No recomiendes impagar ni cancelar sin respetar el preaviso del contrato",
+    "Antes de proponer un cambio de proveedor, comprueba que existe alternativa concreta",
+    "Nada de ahorros inventados: si no hay dato de precio alternativo, dilo"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Cortar lo que trae clientes por ser lo más visible en la lista",
+    "Olvidar las suscripciones anuales que solo aparecen un mes al año",
+    "Dejar tarjetas con cargos de servicios que ya no se usan",
+    "Renegociar sin tener una alternativa real sobre la mesa"
+  ],
+  "formato_salida": {
+    "1_tabla": "Concepto, importe mensual, importe anual, cajón, acción, ahorro estimado, fecha límite",
+    "2_totales": "Ahorro mensual y anual sumado, y qué porcentaje de la facturación representa",
+    "3_sospechosos": "Lista de cargos no identificados con cómo averiguar qué son",
+    "4_guiones": "Textos de llamada o email para las tres renegociaciones de mayor importe",
+    "5_plan": "Cinco acciones con fecha para las próximas dos semanas",
+    "estilo": "Directo, sin moralina, tuteando"
+  },
+  "criterios_calidad": [
+    "Cada gasto tiene una acción asignada, ninguno queda sin decidir",
+    "El ahorro total no incluye supuestos sin respaldo",
+    "Ningún recorte propuesto afecta a la entrega al cliente",
+    "Los guiones de renegociación citan una alternativa concreta"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "tarea": "Escribir la ficha de producto completa de una tienda online, lista para copiar y pegar",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "producto": "[NOMBRE DEL PRODUCTO]",
+    "categoria": "[CATEGORIA DONDE VA]",
+    "precio": "[PRECIO EN EUROS]",
+    "cliente_objetivo": "[A QUIEN SE LO VENDES]",
+    "problema_que_resuelve": "[PROBLEMA PRINCIPAL DEL CLIENTE]"
+  },
+  "entradas": {
+    "ficha_tecnica": "[MATERIALES, MEDIDAS, PESO, QUE INCLUYE LA CAJA]",
+    "diferencial": "[QUE TIENE ESTO QUE NO TENGA EL DE LA COMPETENCIA]",
+    "envio_y_devoluciones": "[PLAZO DE ENVIO Y DIAS DE DEVOLUCION]"
+  },
+  "pasos": [
+    "Convertir cada dato tecnico en un beneficio concreto para el cliente",
+    "Escribir 5 bullets: beneficio primero y el dato tecnico que lo demuestra despues",
+    "Redactar la descripcion larga en tres bloques: para quien es, como se usa un dia normal, que incluye",
+    "Detectar las 4 dudas que frenan la compra y responderlas dentro del texto",
+    "Cerrar con una llamada a la accion clara y sin exagerar"
+  ],
+  "restricciones": [
+    "Espanol de Espana, tuteando, frases de menos de 20 palabras",
+    "Prohibido usar el mejor, revolucionario, unico en el mercado o promesas de resultados",
+    "No inventar materiales, certificados, origenes ni cifras que no esten en las entradas",
+    "Si falta un dato necesario, escribir FALTA DATO y que dato es, en vez de rellenarlo"
+  ],
+  "formato_salida": {
+    "titulo_producto": "maximo 60 caracteres, con producto y atributo clave",
+    "subtitulo": "una frase de unos 90 caracteres",
+    "bullets": "lista de 5",
+    "descripcion_larga": "entre 250 y 350 palabras con subtitulos",
+    "tabla_especificaciones": "filas con atributo y valor",
+    "faq": "4 preguntas con respuesta de dos lineas",
+    "llamada_a_la_accion": "una frase"
+  },
+  "criterios_calidad": [
+    "Se entiende que hace el producto en los primeros 10 segundos de lectura",
+    "Cada bullet tiene detras un dato verificable de la ficha tecnica",
+    "Ninguna frase serviria igual para un producto distinto"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar la política interna de uso de inteligencia artificial y de titularidad del contenido generado para mi negocio",
+  "rol": "Responsable de cumplimiento que escribe normas cortas y aplicables",
+  "contexto": {
+    "negocio": "[A QUÉ SE DEDICA Y CUÁNTA GENTE SOIS]",
+    "herramientas": "[QUÉ IA USÁIS PARA TEXTO, IMAGEN, VÍDEO, VOZ O CÓDIGO]",
+    "entregables": "[QUÉ SE GENERA CON IA: POSTS, ILUSTRACIONES, CÓDIGO, INFORMES...]",
+    "clientes": "[SI TUS CLIENTES EXIGEN ALGO SOBRE IA EN SUS CONTRATOS]"
+  },
+  "pasos": [
+    "Clasifica los usos en tres niveles: permitido, permitido con revisión humana y prohibido",
+    "Explica de forma sencilla el problema de la titularidad de lo generado por IA y por qué conviene aportar aportación humana relevante",
+    "Fija reglas para no meter en la IA datos confidenciales de clientes, material con derechos de terceros ni datos personales",
+    "Prohíbe imitar el estilo identificable de un autor vivo o la imagen y voz de personas reales sin permiso",
+    "Define cómo se documenta cada pieza: herramienta, fecha, indicaciones usadas y qué revisó una persona",
+    "Establece qué se comunica al cliente y cuándo se pide su autorización previa",
+    "Añade el proceso de revisión antes de publicar: plagio, datos inventados y marcas visibles en las imágenes"
+  ],
+  "restricciones": [
+    "Normas accionables, no principios abstractos",
+    "Máximo dos páginas",
+    "Nada de afirmaciones tajantes sobre leyes en desarrollo: señala la incertidumbre donde exista"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "Política en apartados numerados",
+      "Tabla de usos permitidos, con revisión y prohibidos",
+      "Plantilla de registro de generación para cada entregable",
+      "Cláusula breve para incluir en tus contratos con clientes",
+      "Cláusula breve para tus contratos con freelances"
+    ]
+  },
+  "criterios_calidad": [
+    "Un empleado nuevo entiende qué puede hacer con leerlo una vez",
+    "Cada regla dice quién la aplica y en qué momento",
+    "Incluye fecha de revisión de la política"
+  ]
+}

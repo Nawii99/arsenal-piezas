@@ -1,0 +1,46 @@
+{
+  "tarea": "Escribir un script Bash de vigilancia de una web y su servidor que avise solo cuando hay un problema real, para ejecutar por cron",
+  "contexto": {
+    "servidor": "[VPS LINUX PROPIO / HOSTING CON ACCESO SSH]",
+    "quien_recibe_los_avisos": "[TU / TU TECNICO / AMBOS]",
+    "tolerancia": "prefiero un aviso de mas que enterarme tarde, pero sin repetir el mismo aviso cada hora"
+  },
+  "entradas": {
+    "urls_a_vigilar": "[https://TUWEB.COM, https://TUWEB.COM/tienda]",
+    "texto_que_debe_aparecer": "[UNA PALABRA QUE SIEMPRE ESTE EN LA PAGINA, EJ: Contacto]",
+    "aviso_disco_por_ciento": "[EJEMPLO: 85]",
+    "aviso_certificado_dias": "[EJEMPLO: 15]",
+    "canal_de_aviso": "[EMAIL / TELEGRAM / AMBOS]",
+    "datos_del_canal": "[EMAIL DESTINO O TOKEN Y CHAT ID DE TELEGRAM, LEIDOS DE UN FICHERO .env]"
+  },
+  "comprobaciones": [
+    "Que cada URL responde codigo 200 en menos de 5 segundos, con reintento antes de dar por caida la web",
+    "Que en la respuesta aparece el texto esperado, para detectar la pagina en blanco o el error de base de datos",
+    "Dias que quedan hasta que caduque el certificado HTTPS",
+    "Porcentaje de disco usado y memoria libre",
+    "Que los servicios indicados estan activos, si el usuario tiene VPS",
+    "Que la ultima copia de seguridad existe y es de hace menos de 24 horas"
+  ],
+  "requisitos_del_script": [
+    "set -euo pipefail y ninguna clave escrita dentro del script",
+    "Avisar una sola vez por incidencia usando un fichero de estado, y avisar tambien cuando se resuelve",
+    "Mensaje de aviso corto y claro: que falla, desde cuando y que revisar primero",
+    "Registrar todo en un log con fecha aunque no haya problema",
+    "Usar solo curl, openssl, df y date, disponibles en cualquier Linux"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con bloques de codigo",
+    "secciones": [
+      "1. Script completo comentado en espanol",
+      "2. Fichero .env de ejemplo y permisos que hay que ponerle",
+      "3. Linea de crontab recomendada y explicada",
+      "4. Como forzar un aviso de prueba para comprobar que llega",
+      "5. Primeros pasos ante cada tipo de aviso, en formato lista"
+    ]
+  },
+  "criterios_calidad": [
+    "No avisa por cosas sin importancia ni repite el mismo aviso indefinidamente",
+    "Un aviso se entiende leyendolo en el movil en 5 segundos",
+    "Se instala en menos de 10 minutos siguiendo las instrucciones"
+  ]
+}

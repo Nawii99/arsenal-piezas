@@ -1,0 +1,94 @@
+# mudanza-de-proveedor-sin-caidas…
+
+**Tipo:** JSON prompt · **Área:** Infraestructura · **Licencia:** CC BY 4.0
+
+Plan paso a paso para cambiar de hosting, correo o base de datos sin que los clientes noten nada, con marcha atrás preparada.
+
+## Qué es y qué hace
+
+Planifica la migración de un servicio (web, tienda, correo, base de datos) desde un proveedor a otro sin que los clientes noten nada, con marcha atrás preparada. Entran qué migras, el motivo, el tráfico y las horas de más actividad, la tolerancia a corte, la fecha límite, el inventario actual, dónde está el dominio y qué integraciones apuntan al servicio. Salen un plan de pasos sin tecnicismos, avisos antes de cada acción irreversible, las comprobaciones de funcionamiento y el plan de vuelta atrás. Funciona con Claude, Codex, Gemini o una IA local.
+
+## Cómo usarla
+
+1. Inventaría lo que hay en el proveedor actual
+2. Prepara la copia en el nuevo
+3. Cambia en la franja de menos tráfico
+4. Ten la vuelta atrás lista
+
+## Cuándo usarla
+
+Úsalo cuando te suba el precio el proveedor, quieras salir de una plataforma con cuota mensual o migrar una web o un correo a otro sitio.
+
+## Cómo ganar dinero con ella
+
+Te permite pasar a alternativas más baratas o gratuitas sin perder ventas durante la mudanza ni pagar a alguien para que la haga.
+
+- Migración de web de cliente a un hosting más barato sin cortar ventas…
+- Traslado de correo y dominio para una pyme que quiere bajar costes…
+- Servicio de cambio de proveedor cerrado por precio fijo para autónomos…
+
+**Precio orientativo:** 150–400 € por migración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
+
+## El JSON prompt
+
+```json
+{
+  "tarea": "Planificar y ejecutar la migración de [SERVICIO] desde [PROVEEDOR ACTUAL] a [PROVEEDOR NUEVO] sin interrumpir el servicio a clientes",
+  "contexto": {
+    "que_migro": "[WEB / TIENDA / CORREO / BASE DE DATOS / ARCHIVOS / AUTOMATIZACIONES]",
+    "motivo": "[PRECIO / LÍMITES / RENDIMIENTO / SOPORTE / CIERRE DEL PROVEEDOR]",
+    "trafico": "[VISITAS Y PEDIDOS AL MES, Y HORAS DE MÁS ACTIVIDAD]",
+    "tolerancia_a_corte": "[CUÁNTOS MINUTOS DE CAÍDA PUEDO ASUMIR Y EN QUÉ FRANJA]",
+    "perfil": "sin perfil técnico: pasos concretos y avisos claros antes de cada acción irreversible"
+  },
+  "entradas": {
+    "inventario_actual": "[QUÉ HAY EN EL PROVEEDOR ACTUAL: PÁGINAS, BASES DE DATOS, CORREOS, CERTIFICADOS, REDIRECCIONES]",
+    "donde_esta_el_dominio": "[REGISTRADOR Y QUIÉN GESTIONA EL DNS]",
+    "integraciones": "[QUÉ APUNTA A ESTE SERVICIO: PASARELA DE PAGO, FORMULARIOS, AUTOMATIZACIONES, ANALÍTICA]",
+    "fecha_limite": "[RENOVACIÓN O FECHA DE CIERRE DEL PROVEEDOR ACTUAL]"
+  },
+  "procedimiento": [
+    "1. Inventario completo del origen, incluyendo lo invisible: redirecciones antiguas, correos de dominio, certificados, tareas programadas y buzones de formularios",
+    "2. Montar el destino en paralelo y probarlo con una dirección temporal o un subdominio de pruebas, sin tocar el dominio real",
+    "3. Copiar los datos y comparar cantidades: número de páginas, productos, pedidos, usuarios, archivos; si no cuadra, no se sigue",
+    "4. Bajar el TTL del DNS a 300 segundos al menos 48 horas antes del cambio, para que el cambio se propague rápido",
+    "5. Elegir ventana en la franja de menos tráfico y avisar a clientes solo si va a haber interrupción visible",
+    "6. Congelar cambios en el origen durante la ventana: nada de pedidos ni ediciones que luego se pierdan",
+    "7. Cambiar el DNS al destino, comprobar desde el móvil con datos móviles y desde otro navegador, y revisar el certificado HTTPS",
+    "8. Recorrer una compra o una solicitud completa de principio a fin: formulario, pago, correo de confirmación, entrada en el panel",
+    "9. Mantener el origen encendido y pagado durante [7 A 30] días como marcha atrás, sin borrar nada",
+    "10. Revisar a los 7 días: enlaces rotos, correos que no llegan, caídas de visitas en la analítica y errores en los registros",
+    "11. Solo entonces cancelar el servicio antiguo, después de una copia final descargada a tu ordenador"
+  ],
+  "que_mirar": [
+    "Correo del dominio: si migras el hosting sin mirar los registros MX puedes dejar de recibir correos y no enterarte",
+    "Registros SPF, DKIM y DMARC que hay que copiar al nuevo sitio",
+    "Redirecciones de URLs antiguas para no perder posiciones en Google",
+    "Direcciones IP fijas que estuvieran en listas blancas de terceros",
+    "Enlaces de pago y webhooks que apuntan al dominio o a rutas concretas",
+    "Zonas horarias y formatos de fecha distintos entre proveedores"
+  ],
+  "errores_tipicos": [
+    "Cancelar el proveedor antiguo el mismo día del cambio",
+    "Migrar un viernes por la tarde o en plena campaña de ventas",
+    "No bajar el TTL antes y quedarse con clientes viendo la web vieja durante horas",
+    "Comprobar solo desde tu ordenador, que tiene la caché sucia"
+  ],
+  "restricciones": [
+    "Nada de borrar en el origen hasta pasado el periodo de gracia",
+    "Cada paso indica cómo comprobar que salió bien y cómo deshacerlo",
+    "Si el proveedor nuevo no permite exportar los datos, decirlo antes de empezar"
+  ],
+  "formato_salida": {
+    "1_evaluacion": "qué se gana, qué se pierde y qué no es migrable",
+    "2_inventario": "tabla origen | destino | ¿migrado? | comprobación",
+    "3_cronograma": "tareas por día con horas, incluida la ventana de cambio",
+    "4_guion_de_la_ventana": "minuto a minuto con comprobaciones y criterio de aborto",
+    "5_plan_de_marcha_atras": "qué hacer y en cuánto tiempo se recupera el estado anterior",
+    "6_revisiones": "comprobaciones a las 24 horas, 7 días y 30 días"
+  },
+  "criterios_calidad": [
+    "Existe un criterio escrito de abortar y un plan de vuelta atrás realista",
+    "Las comprobaciones se hacen desde fuera de tu red, no solo desde tu equipo",
+    "El correo del d
+```

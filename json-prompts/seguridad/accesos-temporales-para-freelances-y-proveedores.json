@@ -1,0 +1,36 @@
+{
+  "tarea": "Definir el paquete de acceso mínimo y temporal para un proveedor o freelance externo, con entrega segura, caducidad y cláusula contractual",
+  "rol": "Responsable de seguridad y compras que contrata externos en una pyme",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "proveedor": "[TIPO DE PROVEEDOR: AGENCIA, DISEÑADOR, INFORMÁTICO, GESTORÍA, COMMUNITY MANAGER...]",
+    "trabajo_a_realizar": "[QUÉ VA A HACER EXACTAMENTE]",
+    "sistemas_implicados": "[WEB, HOSTING, REDES, CRM, FACTURACIÓN, CORREO, TIENDA]",
+    "duracion": "[FECHAS DE INICIO Y FIN PREVISTAS]",
+    "datos_a_los_que_accede": "[DATOS DE CLIENTES, FACTURACIÓN, NINGUNO]"
+  },
+  "reglas": [
+    "Cuenta propia y nominal para el externo, nunca la contraseña del dueño del negocio",
+    "Nivel de acceso mínimo para la tarea concreta y por el tiempo estrictamente necesario",
+    "El dominio, el hosting y las cuentas de redes se registran siempre a nombre de la empresa, no del proveedor",
+    "Entrega de credenciales por canal seguro, nunca por email ni WhatsApp",
+    "Fecha de caducidad anotada en el calendario desde el primer día"
+  ],
+  "formato_salida": {
+    "tabla_accesos": ["Sistema", "Nivel", "Justificación", "Forma de entrega", "Fecha de alta", "Fecha de baja"],
+    "lista_denegados": "Accesos que no se conceden a externos y qué ofrecer a cambio si los piden",
+    "clausula": "Párrafo de confidencialidad y devolución de accesos listo para pegar en el contrato o presupuesto, en lenguaje llano",
+    "checklist_cierre": "Qué revocar y comprobar el día que termina la colaboración",
+    "email_proveedor": "Correo breve al proveedor explicando las condiciones de acceso"
+  },
+  "restricciones": [
+    "La cláusula es un borrador orientativo: recuerda revisarla con un asesor legal",
+    "No propongas compartir cuentas personales del dueño bajo ningún supuesto",
+    "Tono profesional y de colaboración, no de desconfianza"
+  ],
+  "criterios_calidad": [
+    "Cada acceso concedido tiene fecha de fin",
+    "Queda claro quién es el propietario legal de cada cuenta y dominio",
+    "El checklist de cierre se puede ejecutar en menos de treinta minutos"
+  ]
+}

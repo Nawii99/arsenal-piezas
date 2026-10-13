@@ -1,0 +1,44 @@
+{
+  "tarea": "Diagnosticar el proceso de facturación y cobro del negocio y entregar un plan de mejora de 30 días",
+  "contexto": {
+    "empresa": "[TU EMPRESA]",
+    "actividad": "[QUÉ VENDES]",
+    "facturacion_anual_aproximada": "[IMPORTE]",
+    "quien_factura": "[TÚ SOLO / UNA PERSONA / GESTORÍA]"
+  },
+  "entradas": {
+    "como_facturo_hoy": "[HERRAMIENTA O MÉTODO: EXCEL, PROGRAMA, GESTORÍA, A MANO]",
+    "cuando_emito": "[AL ENTREGAR / A FIN DE MES / CUANDO ME ACUERDO]",
+    "plazo_que_doy": "[DÍAS DE VENCIMIENTO HABITUAL]",
+    "formas_de_pago": "[TRANSFERENCIA / DOMICILIACIÓN / TARJETA / ENLACE]",
+    "como_reclamo": "[QUÉ HACES CUANDO SE PASA EL VENCIMIENTO Y CUÁNDO]",
+    "retraso_medio_real": "[DÍAS QUE TARDAN DE VERDAD EN PAGARTE]",
+    "problemas_frecuentes": "[FACTURAS DEVUELTAS, PORTALES DE PROVEEDORES, CLIENTES QUE NO CONTESTAN]"
+  },
+  "pasos": [
+    "Reconstruir la línea de tiempo real desde que entregas hasta que el dinero entra, con los días de cada tramo",
+    "Marcar los tres tramos donde se pierden más días y explicar la causa",
+    "Identificar prácticas que retrasan el cobro: emitir tarde, plazos largos, no pedir anticipo, no domiciliar, no reclamar hasta el mes siguiente",
+    "Proponer cambios concretos ordenados por impacto y por esfuerzo, con el efecto esperado en días",
+    "Convertir los cambios en un plan de 30 días con tareas semanales",
+    "Definir tres indicadores para medir si mejora: días medios de cobro, porcentaje vencido y porcentaje cobrado en plazo"
+  ],
+  "reglas": [
+    "No prometer cifras concretas de mejora: hablar de dirección y de rango",
+    "Priorizar cambios que se puedan hacer sin contratar a nadie ni cambiar de programa",
+    "Cada recomendación debe decir quién la hace y en qué momento del mes"
+  ],
+  "formato_salida": {
+    "linea_de_tiempo": "Tramos del proceso con los días que consume cada uno",
+    "cuellos_de_botella": "Tres puntos críticos con su causa",
+    "mejoras": "Tabla: cambio, esfuerzo, impacto y días que ahorra",
+    "plan_30_dias": "Semana 1 a 4 con tareas concretas",
+    "indicadores": "Qué medir, cómo calcularlo y cada cuánto revisarlo"
+  },
+  "criterios_calidad": [
+    "El diagnóstico se basa solo en los datos aportados",
+    "Todas las tareas del plan caben en el tiempo de una persona",
+    "Cada mejora explica por qué acorta el cobro"
+  ],
+  "tono": "Consultor práctico, directo y sin humo"
+}

@@ -1,0 +1,30 @@
+{
+  "tarea": "Preparar respuestas para cuando el cliente dice que el presupuesto es caro",
+  "entradas": {
+    "servicio_y_precio": "[QUÉ VENDES Y POR CUÁNTO]",
+    "objecion_literal": "[LO QUE TE HA DICHO EL CLIENTE, CON SUS PALABRAS]",
+    "alternativa_del_cliente": "[CON QUÉ TE COMPARA: OTRO PRESUPUESTO, HACERLO ÉL MISMO O NO HACER NADA]",
+    "margen_de_maniobra": "[HASTA DÓNDE PUEDES BAJAR O QUÉ PUEDES QUITAR]",
+    "valor_diferencial": "[LO QUE HACES TÚ Y NO HACE LA ALTERNATIVA]"
+  },
+  "metodo": [
+    "Clasifica la objeción: no tengo presupuesto, no veo el valor, lo he visto más barato o no es el momento",
+    "Antes de responder, propón una pregunta para entender de dónde sale la cifra que él esperaba",
+    "Responde bajando alcance, nunca bajando el precio por el mismo trabajo",
+    "Explica qué cuesta la alternativa barata en tiempo, riesgo o tener que rehacerlo",
+    "Cierra con una pregunta que devuelva la decisión al cliente"
+  ],
+  "restricciones": [
+    "Nada de justificarse ni de pedir perdón por el precio",
+    "No prometas resultados ni plazos que no controlas",
+    "Todo descuento va a cambio de algo: pago por adelantado, menos alcance o plazo flexible",
+    "Máximo cuatro frases por respuesta"
+  ],
+  "formato_salida": "Para cada tipo de objeción: la pregunta previa, la respuesta para decir en voz alta y la versión escrita para WhatsApp o email",
+  "criterios_calidad": [
+    "Se puede decir en voz alta sin sonar aprendido de memoria",
+    "Ninguna respuesta regala margen",
+    "Queda claro qué se quita si se baja el precio"
+  ],
+  "tono": "Tranquilo, sin ponerse a la defensiva"
+}

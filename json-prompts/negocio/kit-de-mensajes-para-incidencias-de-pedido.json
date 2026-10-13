@@ -1,0 +1,38 @@
+{
+  "tarea": "Crear la secuencia de mensajes que se envían a un cliente durante una incidencia, desde el aviso hasta el cierre",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "canal_principal": "[EMAIL / WHATSAPP / SMS]",
+    "quien_escribe": "[NOMBRE DE LA PERSONA QUE FIRMA]"
+  },
+  "entradas": {
+    "tipo_incidencia": "[RETRASO / PAQUETE PERDIDO / PRODUCTO ROTO / ERROR EN EL PEDIDO / FALTA DE STOCK]",
+    "referencia": "[Nº DE PEDIDO O CITA]",
+    "plazo_nuevo": "[FECHA O RANGO REALISTA]",
+    "causa_explicable": "[LO QUE SÍ SE PUEDE CONTAR AL CLIENTE]",
+    "compensacion": "[NINGUNA / DESCUENTO / ENVÍO GRATIS / REEMBOLSO PARCIAL]",
+    "frecuencia_avisos": "[CADA CUÁNTOS DÍAS INFORMAS]"
+  },
+  "mensajes_a_escribir": [
+    "M1 Aviso proactivo: se lo cuentas tú antes de que pregunte",
+    "M2 Actualización sin novedades: qué decir cuando aún no hay solución",
+    "M3 Solución en marcha: qué se ha hecho y cuándo lo tendrá",
+    "M4 Cierre: confirmación de que está resuelto y compensación si la hay",
+    "M5 Disculpa por retraso en responder, por si se te ha pasado contestar"
+  ],
+  "reglas": [
+    "Cada mensaje lleva fecha o plazo concreto, nunca 'lo antes posible'",
+    "Nunca prometas una fecha que no controles: da rango y di de qué depende",
+    "No cargues la culpa al transportista ni a un proveedor con nombre",
+    "Longitud máxima: 60 palabras en WhatsApp o SMS, 130 en email"
+  ],
+  "formato_salida": {
+    "tipo": "tabla",
+    "columnas": "mensaje, cuándo se envía, canal, texto listo, dato a rellenar"
+  },
+  "criterios_calidad": [
+    "El cliente nunca tiene que preguntar '¿hay novedades?'",
+    "Todos los mensajes son coherentes entre sí en plazos y tono",
+    "Se pueden programar tal cual en una automatización"
+  ]
+}

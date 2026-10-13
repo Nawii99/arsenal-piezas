@@ -1,0 +1,38 @@
+{
+  "tarea": "Verificar frase a frase si la respuesta de un agente de IA esta respaldada por las fuentes que tenia disponibles",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD DE TU NEGOCIO]",
+    "riesgo": "[QUE PASA SI EL AGENTE AFIRMA ALGO FALSO EN TU CASO]"
+  },
+  "entradas": {
+    "pregunta_del_cliente": "[PEGA LA PREGUNTA]",
+    "respuesta_del_agente": "[PEGA LA RESPUESTA COMPLETA]",
+    "fuentes": "[PEGA LOS DOCUMENTOS, FICHAS DE PRODUCTO, PRECIOS O CONDICIONES QUE EL AGENTE DEBIA USAR]"
+  },
+  "metodo": [
+    "Trocea la respuesta en afirmaciones sueltas y numeralas",
+    "Clasifica cada afirmacion como RESPALDADA, PARCIAL, NO RESPALDADA o CONTRADICE LA FUENTE",
+    "En las RESPALDADAS y PARCIALES copia el fragmento exacto de la fuente que la sostiene",
+    "Vigila especialmente cifras, plazos, precios, porcentajes, garantias, nombres propios y enlaces",
+    "Detecta el tono de seguridad: afirmaciones rotundas sobre cosas que la fuente no confirma"
+  ],
+  "restricciones": [
+    "No uses conocimiento general ni supongas lo habitual del sector: solo valen las fuentes pegadas",
+    "Si una afirmacion es obvia pero no aparece en las fuentes, marcala como NO RESPALDADA igualmente",
+    "No reescribas la respuesta hasta la ultima seccion"
+  ],
+  "formato_salida": {
+    "tipo": "informe",
+    "secciones": [
+      "Semaforo global: VERDE sin invenciones, AMARILLO con matices, ROJO con al menos una invencion o contradiccion",
+      "Tabla con: numero, afirmacion, veredicto, cita de la fuente o vacio",
+      "Las tres invenciones mas peligrosas y por que",
+      "Version corregida de la respuesta, solo con lo respaldado y pidiendo lo que falte"
+    ]
+  },
+  "criterios_calidad": [
+    "Ninguna afirmacion se queda sin clasificar",
+    "Toda cita es literal de las fuentes, no un resumen",
+    "La version corregida no anade informacion nueva"
+  ]
+}

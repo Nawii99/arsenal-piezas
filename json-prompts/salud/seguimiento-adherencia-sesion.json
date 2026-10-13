@@ -1,0 +1,56 @@
+{
+  "tarea": "Crear la secuencia de mensajes de seguimiento entre una sesión y la siguiente, para sostener el cumplimiento de las pautas acordadas, sin dar indicaciones clínicas nuevas",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CENTRO]",
+    "quien_escribe": "[PROFESIONAL QUE ATENDIÓ / RECEPCIÓN EN SU NOMBRE]",
+    "canal": "[WHATSAPP / SMS / EMAIL]",
+    "dias_entre_sesiones": "[7 / 14 / 21]",
+    "volumen": "[CUÁNTOS CLIENTES ACTIVOS HAY A LA VEZ]"
+  },
+  "entradas": {
+    "pauta_acordada": "[LO QUE EL PROFESIONAL PACTÓ CON EL CLIENTE, TAL CUAL LO ESCRIBIÓ EN LA FICHA]",
+    "dificultad_previsible": "[LO QUE MÁS LE VA A COSTAR: TIEMPO, DOLOR AL EMPEZAR, OLVIDO, VERGÜENZA]",
+    "nivel_de_confianza": "[PRIMERA VEZ / CLIENTE DE AÑOS]",
+    "preferencia_de_contacto": "[LO QUE LA PERSONA HAYA DICHO SOBRE RECIBIR MENSAJES]"
+  },
+  "procedimiento": [
+    "1. Reduce la pauta acordada a una sola frase que la persona pueda repetir de memoria, sin cambiar nada de lo que dijo el profesional",
+    "2. Diseña cuatro contactos entre sesión y sesión: al día siguiente, a mitad de periodo, dos días antes de la cita y el recordatorio de la cita",
+    "3. El mensaje del día siguiente solo hace una cosa: confirmar que se ha entendido la pauta y abrir la puerta a preguntar dudas de organización",
+    "4. El mensaje de mitad de periodo pregunta por el cumplimiento con una escala de tres opciones que se responde con un número",
+    "5. Prepara tres ramas de respuesta según ese número: va bien, va a medias, no lo ha hecho, cada una con un texto distinto y sin reproche",
+    "6. El mensaje de dos días antes prepara la siguiente sesión: qué traer, qué ropa, y una pregunta para que llegue con la información lista",
+    "7. Escribe la regla de traspaso: qué respuestas del cliente tiene que ver el profesional antes de la sesión y cómo se le avisa",
+    "8. Define el límite de insistencia: cuántos mensajes sin respuesta antes de parar, y con qué frase se cierra la secuencia",
+    "9. Adapta el tono a la preferencia declarada y prevé la versión corta para quien pidió pocos mensajes"
+  ],
+  "restricciones": [
+    "Los mensajes no añaden, cambian ni matizan ninguna indicación clínica: solo recuerdan lo ya pactado",
+    "Si el cliente cuenta que algo va peor, la respuesta no valora nada: traslada al profesional y ofrece adelantar la cita",
+    "No se escriben diagnósticos ni nombres de patologías en el mensaje",
+    "Nada de tono de vigilancia ni de culpa por no cumplir",
+    "Máximo cuatro mensajes por periodo, y ninguno fuera del horario del centro"
+  ],
+  "errores_tipicos": [
+    "Mensajes genéricos de ánimo que no piden nada y no informan de nada",
+    "Preguntas abiertas que obligan a escribir un párrafo: casi nadie contesta",
+    "Reñir al que dice que no lo ha hecho, con el resultado de que la próxima vez mienta",
+    "Recoger respuestas que nadie lee antes de la sesión",
+    "Automatizar el mensaje firmado por el profesional sin que él sepa qué se está enviando en su nombre"
+  ],
+  "formato_salida": {
+    "bloque_1": "La pauta resumida en una frase memorizable",
+    "bloque_2": "Los cuatro mensajes con el día de envío indicado",
+    "bloque_3": "Las tres ramas de respuesta al mensaje de mitad de periodo",
+    "bloque_4": "Texto de traslado al profesional y criterio de cuándo se usa",
+    "bloque_5": "Versión corta de la secuencia para quien quiere pocos mensajes",
+    "bloque_6": "Regla de parada por falta de respuesta"
+  },
+  "criterios_calidad": [
+    "Ningún mensaje introduce información clínica nueva",
+    "Al menos un mensaje se puede responder con un solo número",
+    "El profesional recibe antes de la sesión lo que necesita saber",
+    "Los cuatro mensajes son distintos entre sí en función y en tono",
+    "La secuencia funciona igual con veinte clientes activos a la vez"
+  ]
+}

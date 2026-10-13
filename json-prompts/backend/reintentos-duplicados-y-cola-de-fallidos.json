@@ -1,0 +1,31 @@
+{
+  "tarea": "Definir la política de reintentos, de no duplicar efectos (idempotencia) y de cola de fallidos para los trabajos en segundo plano de [NOMBRE DE TU APLICACIÓN]",
+  "entradas": {
+    "trabajos": "[LISTA DE TRABAJOS EN COLA QUE TIENES HOY]",
+    "trabajos_sensibles": "[CUÁLES TOCAN DINERO, EMAILS A CLIENTES O DATOS FISCALES]",
+    "fallos_reales": "[QUÉ HA FALLADO ÚLTIMAMENTE Y CÓMO OS DISTEIS CUENTA]",
+    "sistema_de_colas": "[REDIS/SIDEKIQ, RABBITMQ, SQS, CELERY, LO QUE USÉIS O NINGUNO]"
+  },
+  "reglas_del_oficio": [
+    "Clasificar cada fallo en pasajero (red, servicio caído, límite de peticiones) o definitivo (dato mal, cliente borrado): el pasajero se reintenta, el definitivo no",
+    "Reintentos con espera creciente y algo de aleatoriedad, para no golpear todos a la vez al servicio que se está recuperando",
+    "Poner un tope de intentos y un destino final: cola de fallidos con el mensaje, el error y la hora",
+    "Idempotencia: cada trabajo lleva una clave única y antes de actuar comprueba si ya se hizo; los cobros y los emails la necesitan siempre",
+    "Nunca reintentar dentro de una transacción abierta ni dejar el registro a medias"
+  ],
+  "debe_producir": ["Tabla trabajo por trabajo con intentos, esperas y clave de idempotencia", "Qué se guarda en la cola de fallidos", "Quién la revisa, cada cuánto y con qué aviso", "Procedimiento para relanzar un fallido a mano sin duplicar"],
+  "restricciones": [
+    "Nada de reintentar infinito",
+    "Si un trabajo no puede hacerse idempotente, decirlo y proponer alternativa (bloqueo o marca en base de datos)",
+    "Explicar idempotencia con un ejemplo del negocio, no con teoría"
+  ],
+  "formato_salida": {
+    "tipo": "Markdown con tablas",
+    "secciones": ["Resumen en 5 líneas", "Tabla de política por trabajo", "Cola de fallidos y avisos", "Cómo relanzar sin duplicar", "Checklist de revisión semanal"]
+  },
+  "criterios_calidad": [
+    "Todos los trabajos sensibles del contexto tienen clave de idempotencia definida",
+    "Las esperas entre reintentos están en segundos o minutos concretos, no en generalidades",
+    "Incluye qué avisar y a quién cuando la cola de fallidos crece"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Guiar la recuperación de datos borrados o modificados por error en una base de datos, priorizando no perder los datos nuevos que hayan entrado después del incidente",
+  "contexto": {
+    "que_paso": "[DESCRIBE EL ERROR: p. ej. un DELETE sin WHERE en la tabla pedidos, un script de importación que sobrescribió precios]",
+    "hora_aproximada": "[FECHA Y HORA DEL ERROR]",
+    "hora_actual": "[FECHA Y HORA AHORA]",
+    "motor_y_hosting": "[MOTOR, VERSIÓN Y DÓNDE ESTÁ ALOJADO]",
+    "copias_disponibles": "[QUÉ COPIAS TIENES Y DE QUÉ FECHAS]",
+    "registro_de_transacciones": "[ACTIVO, NO ACTIVO O NO LO SÉ]",
+    "actividad_desde_el_error": "[HAN ENTRADO PEDIDOS O REGISTROS NUEVOS DESPUÉS: SÍ O NO]"
+  },
+  "instrucciones": [
+    "Primero, las medidas inmediatas: cortar la escritura o poner mantenimiento, no reiniciar el servidor y hacer una copia del estado actual antes de nada",
+    "Determina si es posible una recuperación a un punto en el tiempo con lo que hay; si no lo es, dilo claramente y explica qué se pierde",
+    "Propón siempre restaurar en una base de datos aparte y de ahí copiar solo las filas afectadas a la base real",
+    "Da las consultas para comparar la base restaurada y la actual: qué filas faltan, cuáles están alteradas y cuáles son nuevas y hay que conservar",
+    "Explica el orden de reinserción para no romper relaciones entre tablas ni duplicar identificadores",
+    "Termina con las comprobaciones finales y con las 3 medidas para que no se repita: usuarios con permisos limitados, pruebas en copia y confirmación obligatoria en operaciones masivas"
+  ],
+  "restricciones": [
+    "Nunca propongas restaurar la copia encima de la base de producción si ha habido actividad posterior",
+    "Marca cada comando destructivo con un aviso antes",
+    "Si falta un dato para decidir, pregúntalo antes de continuar"
+  ],
+  "formato_salida": {
+    "tipo": "plan de rescate numerado",
+    "partes": ["Haz esto ahora mismo", "Qué se puede recuperar y qué no", "Pasos con comandos y consultas", "Comprobaciones finales", "Prevención"]
+  },
+  "criterios_calidad": [
+    "El plan conserva los datos entrados después del error",
+    "Cada consulta de comparación indica qué resultado se espera",
+    "Se dice con claridad el alcance real de la pérdida, sin adornos"
+  ],
+  "tono": "calmado y directivo, primero lo urgente"
+}

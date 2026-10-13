@@ -1,0 +1,33 @@
+{
+  "tarea": "Revisar los textos comerciales y promociones de una tienda online para detectar prácticas comerciales desleales y reescribir lo problemático",
+  "entradas": {
+    "campaña": "[NOMBRE Y FECHAS DE LA PROMOCIÓN]",
+    "textos": "[PEGA AQUÍ BANNERS, FICHAS, EMAILS Y ANUNCIOS]",
+    "precios": "[PRECIO ANTERIOR, PRECIO ACTUAL Y DESDE CUÁNDO SE APLICABA EL ANTERIOR]",
+    "condiciones": "[MÍNIMO DE COMPRA, UNIDADES, EXCLUSIONES, CADUCIDAD]",
+    "reseñas_y_creadores": "[CÓMO OBTIENES LAS RESEÑAS Y SI HAY COLABORACIONES PAGADAS]"
+  },
+  "que_revisar": [
+    "Precio anterior: debe ser el más bajo aplicado en los 30 días previos",
+    "Descuentos y porcentajes: que el cálculo cuadre con el precio real",
+    "Urgencia falsa: contadores, últimas unidades o stock que no son ciertos",
+    "Gratis: nada es gratis si hay coste asociado obligatorio",
+    "Afirmaciones sobre salud, resultados o sostenibilidad sin respaldo",
+    "Letra pequeña: condiciones esenciales que deben ir junto al reclamo",
+    "Reseñas: solo publicables si verificas que quien las deja compró el producto",
+    "Colaboraciones pagadas: identificación clara del contenido publicitario",
+    "Suscripciones: precio total, renovación y cómo cancelar"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown",
+    "columnas": ["Texto original", "Problema detectado", "Norma o criterio", "Riesgo alto/medio/bajo", "Versión corregida"],
+    "extra": ["Lista de condiciones que faltan por publicar", "3 alternativas de gancho que venden igual sin riesgo"]
+  },
+  "restricciones": [
+    "No suavices: si una frase es engañosa, dilo claramente",
+    "Las versiones corregidas deben mantener la fuerza comercial, no volverse aburridas",
+    "No inventes datos de precios ni de stock que no estén en la entrada"
+  ],
+  "criterios_calidad": ["Cada corrección conserva el beneficio para el cliente", "Ninguna recomendación se queda en revisar la legalidad sin decir qué cambiar"],
+  "aviso": "Revisión orientativa de marketing; no sustituye a un abogado de consumo."
+}

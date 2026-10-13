@@ -1,0 +1,43 @@
+{
+  "tarea": "Crear el protocolo interno de gestión de incidencias de envío de mi tienda, con el árbol de decisión, los plazos y los mensajes al cliente ya redactados",
+  "contexto": {
+    "tienda": "[NOMBRE DE LA TIENDA]",
+    "agencias": "[AGENCIAS Y PLAZO QUE DAN PARA RECLAMAR]",
+    "valor_medio_pedido": "[EUROS]",
+    "seguro_contratado": "[COBERTURA POR BULTO O KG]",
+    "limite_compensacion_sin_autorizacion": "[EUROS QUE PUEDE DECIDIR ATENCIÓN AL CLIENTE]",
+    "quien_gestiona": "[NOMBRE O ROL DEL RESPONSABLE]"
+  },
+  "tipos_de_incidencia": [
+    "Paquete retrasado sin movimiento en el seguimiento",
+    "Paquete entregado según la agencia pero el cliente dice que no lo tiene",
+    "Paquete dañado o producto roto al abrir",
+    "Paquete perdido o extraviado",
+    "Dirección incorrecta o cliente ausente tras varios intentos",
+    "Devolución al origen sin que el cliente la haya pedido"
+  ],
+  "para_cada_tipo_devuelve": [
+    "Cuándo se considera incidencia (día exacto desde el envío)",
+    "Qué pruebas hay que reunir y en qué plazo: fotos del embalaje, prueba de entrega, albarán, peso registrado",
+    "Qué reclamar a la agencia, por qué canal y antes de qué fecha límite",
+    "Qué se le ofrece al cliente: reenvío, reembolso o compensación, y en qué orden",
+    "Cuándo se escala al responsable",
+    "Dos mensajes listos para enviar al cliente: el primero de respuesta rápida y el segundo de resolución"
+  ],
+  "reglas": [
+    "Nunca dejar al cliente esperando a la agencia sin darle una fecha de respuesta nuestra",
+    "No prometer un reenvío hasta confirmar que hay stock",
+    "Guardar siempre foto del paquete cerrado antes de salir del almacén: sin eso, casi ninguna reclamación de daños prospera",
+    "Registrar cada incidencia con pedido, agencia, causa y coste, para revisar el patrón cada mes"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla resumen: incidencia | plazo de detección | acción interna | oferta al cliente | plazo de cierre",
+    "bloque_2": "Ficha detallada de cada tipo de incidencia",
+    "bloque_3": "Mensajes al cliente listos para copiar, en tono [TONO DE TU MARCA]",
+    "bloque_4": "Plantilla de registro de incidencias con las columnas a rellenar"
+  },
+  "criterios_calidad": [
+    "Una persona nueva puede seguir el protocolo sin preguntar nada",
+    "Ningún paso depende de una decisión subjetiva sin límite de euros"
+  ]
+}

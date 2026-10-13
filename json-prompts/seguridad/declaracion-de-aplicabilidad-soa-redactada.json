@@ -1,0 +1,35 @@
+{
+  "tarea": "Redactar la Declaración de Aplicabilidad (SoA) de un SGSI ISO/IEC 27001:2022 lista para entregar al auditor",
+  "contexto": {
+    "organizacion": "[NOMBRE DE TU EMPRESA]",
+    "alcance_declarado": "[TEXTO EXACTO DEL ALCANCE DEL SGSI]",
+    "controles_no_aplicables": "[LISTA DE CONTROLES QUE CREES QUE NO APLICAN Y POR QUÉ]",
+    "documentacion_existente": "[POLÍTICAS Y PROCEDIMIENTOS QUE YA TIENES, CON NOMBRE Y VERSIÓN]",
+    "herramientas": "[HERRAMIENTAS DE SEGURIDAD Y NUBE QUE USAS]",
+    "version_soa": "[VERSIÓN Y FECHA]"
+  },
+  "instrucciones": [
+    "Genera una fila por cada uno de los 93 controles del Anexo A, sin saltarte ninguno",
+    "Para cada control indica si es aplicable, el motivo de inclusión (riesgo, requisito legal, contrato con cliente o decisión de dirección) y el estado de implantación",
+    "En las exclusiones exige un motivo objetivo y verificable: por ejemplo, no se desarrolla software propio, no hay centro de proceso de datos propio, no hay teletrabajo",
+    "Nunca justifiques una exclusión diciendo que es caro, que no da tiempo o que no se considera necesario: eso genera no conformidad",
+    "Enlaza cada control aplicable con el documento o evidencia que lo soporta, y si no existe, escribe PENDIENTE con la fecha comprometida",
+    "Marca las cuatro etiquetas de atributo del control cuando ayuden a explicarlo: preventivo/detectivo/correctivo y confidencialidad/integridad/disponibilidad"
+  ],
+  "restricciones": [
+    "No cites evidencias que no aparezcan en el contexto",
+    "Cada justificación debe caber en dos líneas y ser comprensible por alguien no técnico",
+    "Mantén una redacción homogénea en las 93 filas"
+  ],
+  "formato_salida": {
+    "cabecera": "Organización, alcance, versión, fecha, autor y aprobador",
+    "tabla": "Control | Nombre | Aplicable Sí/No | Motivo de inclusión o exclusión | Estado (implantado/parcial/pendiente) | Evidencia o documento | Responsable",
+    "anexo_final": "Listado aparte de las exclusiones con su justificación ampliada y lista de riesgos que las respaldan"
+  },
+  "criterios_calidad": [
+    "Ninguna celda queda vacía ni contiene texto genérico como aplica o se cumple",
+    "Las exclusiones son coherentes con el alcance declarado",
+    "Todo control implantado apunta a un documento con nombre y versión"
+  ],
+  "tono": "Formal pero legible, apto para documento oficial del SGSI"
+}

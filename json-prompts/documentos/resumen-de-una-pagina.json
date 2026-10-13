@@ -1,0 +1,48 @@
+{
+  "tarea": "Convertir un documento largo en una ficha de una sola página orientada a que el lector decida.",
+  "contexto": {
+    "quien_lo_lee": "[CARGO, CUÁNTO SABE DEL TEMA Y CUÁNTO TIEMPO TIENE]",
+    "que_quiero_que_haga": "[FIRMAR, APROBAR PRESUPUESTO, DARME UNA REUNIÓN, ELEGIR OPCIÓN]",
+    "tono": "[FORMAL / CERCANO PROFESIONAL]",
+    "soporte": "[PDF ADJUNTO / CUERPO DE EMAIL / IMPRESO]"
+  },
+  "entradas": {
+    "documento_original": "[PEGA EL TEXTO LARGO O ADJUNTA EL ARCHIVO]",
+    "datos_que_no_pueden_faltar": "[CIFRAS, PLAZOS O CONDICIONES QUE SÍ O SÍ APARECEN]",
+    "lo_que_prefiero_no_destacar": "[LO QUE VA EN EL ANEXO Y NO EN LA PÁGINA]"
+  },
+  "pasos": [
+    "Identifica la decisión concreta que el lector tiene que tomar y ponla como título de trabajo.",
+    "Extrae los tres mensajes que sostienen esa decisión y descarta el resto.",
+    "Selecciona como mucho cinco cifras y comprueba que todas salen del documento original.",
+    "Redacta la situación en dos frases y lo que propones en tres.",
+    "Si hay opciones, ponlas en tabla con coste, plazo y qué implica cada una.",
+    "Escribe los riesgos y su mitigación en dos líneas, sin esconderlos.",
+    "Cierra con la petición exacta: qué necesitas, de quién y para qué fecha.",
+    "Ajusta a una página real: si no cabe, quita contenido, no reduzcas el tamaño de letra por debajo de 10.",
+    "Deja al final una lista de qué queda en el anexo."
+  ],
+  "restricciones": [
+    "Prohibido incluir un dato que no esté en el documento original.",
+    "Nada de adjetivos de folleto: innovador, líder, sinergia.",
+    "Frases de máximo veinte palabras.",
+    "Sin promesas de resultados que no puedas sostener."
+  ],
+  "errores_tipicos": [
+    "Resumir por orden del documento en vez de por importancia para quien decide.",
+    "Meter toda la metodología y dejar fuera el precio y el plazo.",
+    "Terminar sin pedir nada concreto.",
+    "Cifras que no cuadran con el anexo."
+  ],
+  "formato_salida": {
+    "titulo": "Una línea que diga qué se decide.",
+    "secciones": "Situación, Propuesta, Cifras clave, Opciones, Riesgos, Qué necesito de ti.",
+    "longitud": "Máximo 400 palabras en total.",
+    "extra": "Debajo, lista de lo que queda en el anexo y en qué página del original está cada dato."
+  },
+  "criterios_calidad": [
+    "Se lee entero en menos de dos minutos.",
+    "Cada cifra se puede rastrear al documento original.",
+    "Queda clarísimo qué tiene que hacer el lector y para cuándo."
+  ]
+}

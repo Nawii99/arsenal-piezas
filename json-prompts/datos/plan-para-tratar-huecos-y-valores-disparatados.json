@@ -1,0 +1,36 @@
+{
+  "tarea": "Proponer un plan de tratamiento de valores vacíos y valores atípicos, columna a columna",
+  "contexto": {
+    "uso_de_los_datos": "[INFORME DE VENTAS, PREVISIÓN DE STOCK, SEGMENTAR CLIENTES...]",
+    "tolerancia_al_error": "[ALTA SI ES ORIENTATIVO, BAJA SI VA A FACTURACIÓN O A UN BANCO]"
+  },
+  "entradas": {
+    "columnas": "[COLUMNA, QUÉ MIDE, UNIDAD Y PORCENTAJE APROXIMADO DE VACÍOS]",
+    "muestra_valores_extremos": "[PEGA LOS 15 VALORES MÁS ALTOS Y LOS 15 MÁS BAJOS DE LAS COLUMNAS NUMÉRICAS]"
+  },
+  "pasos": [
+    "Distinguir tres tipos de vacío: no aplica, no se recogió y se perdió al exportar, porque cada uno se trata distinto",
+    "Para cada columna elegir una opción: dejar vacío, rellenar con un valor neutro justificado, arrastrar el valor anterior, descartar la fila o pedir el dato al origen",
+    "Separar los valores atípicos reales, como un pedido grande de verdad, de los errores de tecleo como un cero de más o un decimal desplazado",
+    "Comprobar coherencia entre columnas: cantidad por precio frente a total, fecha de cobro anterior a la de pedido, descuento mayor que el importe",
+    "Decir qué efecto tiene cada decisión sobre el resultado final del informe"
+  ],
+  "restricciones": [
+    "Nunca rellenar con la media un campo de dinero sin advertirlo expresamente",
+    "No eliminar filas por ser raras: solo si son imposibles, y explicando por qué",
+    "Cada decisión debe poder deshacerse: conservar el valor original"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "Tabla: columna | vacíos | tipo de vacío | decisión | justificación en una frase",
+      "Tabla de atípicos: valor | fila | ¿error o real? | señal que lo delata | acción",
+      "Lista de comprobaciones de coherencia entre columnas que han fallado",
+      "Aviso final: en qué medida el informe puede seguir estando sesgado"
+    ]
+  },
+  "criterios_calidad": [
+    "Ninguna decisión sin justificación entendible",
+    "Se distingue siempre entre error y dato real inusual"
+  ]
+}

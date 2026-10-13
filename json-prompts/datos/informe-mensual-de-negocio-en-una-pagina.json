@@ -1,0 +1,45 @@
+{
+  "tarea": "Redacta el informe mensual de negocio en una sola página a partir de las cifras que te doy, con conclusiones y decisiones, no solo números",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "actividad": "[QUÉ VENDES Y A QUIÉN]",
+    "mes_informado": "[MES Y AÑO]",
+    "quien_lo_lee": "[SOCIO / EQUIPO / BANCO / INVERSOR]",
+    "decision_pendiente": "[QUÉ SE VA A DECIDIR CON ESTE INFORME]"
+  },
+  "entradas": {
+    "metricas_del_mes": "[FACTURACIÓN, PEDIDOS, TICKET MEDIO, MARGEN, GASTO EN PUBLICIDAD, CLIENTES NUEVOS, CLIENTES QUE REPITEN]",
+    "mes_anterior": "[LAS MISMAS CIFRAS DEL MES ANTERIOR]",
+    "mismo_mes_ano_pasado": "[LAS MISMAS CIFRAS DEL AÑO PASADO O «NO DISPONIBLE»]",
+    "objetivo_del_mes": "[OBJETIVO QUE TENÍAS FIJADO]",
+    "hechos_relevantes": "[CAMPAÑAS, SUBIDAS DE PRECIO, BAJAS, VACACIONES, INCIDENCIAS]"
+  },
+  "pasos": [
+    "Calcula la variación frente al mes anterior y frente al mismo mes del año pasado, en euros y en porcentaje",
+    "Separa lo estacional de lo real: si ese mes suele ser flojo o fuerte, dilo antes de sacar conclusiones",
+    "Identifica las tres métricas que más han movido el resultado y explica por qué con los hechos relevantes",
+    "Marca lo que no se puede afirmar con los datos disponibles en vez de inventarte la causa",
+    "Cierra con acciones concretas, cada una con responsable y fecha"
+  ],
+  "formato_salida": {
+    "estructura": [
+      "Titular del mes en una sola frase",
+      "Tabla: métrica | mes | mes anterior | año anterior | objetivo | desviación",
+      "Tres cosas que han ido bien y tres que han ido mal",
+      "Qué vigilar el mes que viene, máximo tres indicadores",
+      "Decisiones propuestas con responsable y fecha"
+    ],
+    "extension": "Máximo 500 palabras además de la tabla"
+  },
+  "restricciones": [
+    "Cifras en euros con separador de miles y sin decimales, salvo los porcentajes",
+    "Nada de jerga: si usas un término técnico, explícalo en la misma frase",
+    "No inventes datos que no te he dado; escribe «sin dato» donde falte"
+  ],
+  "criterios_calidad": [
+    "Alguien que no conoce el negocio entiende cómo ha ido el mes en un minuto",
+    "Cada conclusión se apoya en una cifra concreta que aparece en la tabla",
+    "Toda acción propuesta se puede empezar esta misma semana"
+  ],
+  "tono": "Directo, profesional y sin adornos"
+}

@@ -1,0 +1,52 @@
+{
+  "tarea": "Convertir mis notas de una reunión de venta en un email de resumen que fija lo acordado y el siguiente paso",
+  "contexto": {
+    "remitente": "[TU NOMBRE], de [TU NEGOCIO]",
+    "destinatarios": "[QUIÉN ESTUVO EN LA REUNIÓN Y QUIÉN MÁS DEBE LEERLO]",
+    "tipo_de_reunion": "[PRIMERA TOMA DE CONTACTO / PRESENTACIÓN DE PROPUESTA / CIERRE]",
+    "idioma": "español de España, [TUTEO O USTED], claro y sin adornos"
+  },
+  "entradas": {
+    "notas_en_bruto": "[PEGA AQUÍ TUS NOTAS TAL CUAL, AUNQUE ESTÉN DESORDENADAS]",
+    "frases_literales_del_cliente": "[LO QUE DIJO CON SUS PALABRAS SOBRE SU PROBLEMA]",
+    "acuerdos": "[LO QUE SE DIO POR HECHO EN LA REUNIÓN]",
+    "dudas_abiertas": "[LO QUE QUEDÓ SIN RESOLVER]",
+    "siguiente_paso_propuesto": "[QUÉ QUIERES QUE PASE Y PARA CUÁNDO]"
+  },
+  "pasos": [
+    "1. Separa las notas en cuatro montones: hechos, acuerdos, dudas y tareas",
+    "2. Escribe el objetivo del cliente en dos frases usando sus palabras entrecomilladas",
+    "3. Redacta el alcance acordado en viñetas de lo que sí incluye y una lista corta de lo que no incluye",
+    "4. Anota condiciones habladas: precio orientativo, plazos, quién aporta qué y de qué depende",
+    "5. Lista las tareas con responsable y fecha, incluidas las tuyas",
+    "6. Cierra con el siguiente paso concreto y una pregunta de confirmación fácil de contestar",
+    "7. Marca en un apartado aparte las suposiciones que has hecho al ordenar las notas, para que el cliente las corrija"
+  ],
+  "restricciones": [
+    "Máximo 250 palabras en el cuerpo del email",
+    "Prohibido añadir compromisos que no se hablaron en la reunión",
+    "Prohibido meter argumentos de venta o adjetivos sobre tu servicio",
+    "Lo que no incluye se escribe siempre, aunque incomode",
+    "Toda fecha va en formato día y mes, sin decir la semana que viene"
+  ],
+  "errores_tipicos": [
+    "Mandar el resumen tres días después, cuando ya se ha enfriado",
+    "Resumir con tus palabras y perder los matices que dijo el cliente",
+    "Dejar el siguiente paso en manos del cliente sin fecha",
+    "No escribir lo que queda fuera y acabar haciéndolo gratis",
+    "Enviar el presupuesto sin haber confirmado el alcance"
+  ],
+  "formato_salida": {
+    "bloque_1": "Asunto del email, máximo 8 palabras, con el nombre del proyecto",
+    "bloque_2": "Email completo con apartados: lo que buscáis, lo que incluye, lo que no incluye, condiciones habladas, tareas y fechas, siguiente paso",
+    "bloque_3": "Apartado de suposiciones a confirmar",
+    "bloque_4": "Versión corta de 5 líneas para WhatsApp",
+    "bloque_5": "Recordatorio programado: qué escribir si no contesta en [DÍAS] días"
+  },
+  "criterios_calidad": [
+    "Alguien que no estuvo en la reunión entiende qué se acordó",
+    "Aparece al menos una frase literal del cliente",
+    "Hay una fecha concreta y una persona en cada tarea",
+    "El email se contesta con un vale, correcto sin necesitar más aclaraciones"
+  ]
+}

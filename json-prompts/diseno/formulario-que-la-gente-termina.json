@@ -1,0 +1,38 @@
+{
+  "tarea": "Rediseñar el formulario de [PARA QUÉ ES: REGISTRO / CONTACTO / PAGO / ALTA DE CLIENTE] para que se complete sin fricción",
+  "contexto": {
+    "negocio": "[A QUÉ TE DEDICAS]",
+    "objetivo_del_formulario": "[QUÉ PASA DESPUÉS DE ENVIARLO]",
+    "dispositivo_principal": "[MÓVIL / ESCRITORIO]",
+    "problema_detectado": "[DÓNDE SE ABANDONA O QUÉ DATOS LLEGAN MAL]"
+  },
+  "entradas": {
+    "campos_actuales": "[LISTA LOS CAMPOS TAL Y COMO ESTÁN HOY]",
+    "datos_imprescindibles": "[SIN CUÁLES NO PUEDES TRABAJAR]"
+  },
+  "pasos": [
+    "Eliminar o aplazar todo campo que no sea imprescindible ahora mismo y decir por qué",
+    "Ordenar los campos de lo fácil a lo comprometido y agruparlos en bloques con título",
+    "Elegir el tipo de control adecuado para cada dato: texto, selector, casillas, fecha o interruptor",
+    "Escribir etiqueta, texto de ayuda y ejemplo de relleno para cada campo",
+    "Escribir el mensaje de error exacto de cada campo: qué ha pasado y cómo arreglarlo",
+    "Definir el estado de envío, el mensaje de éxito y qué se ve si falla el envío"
+  ],
+  "restricciones": [
+    "Etiquetas siempre visibles encima del campo, nunca solo dentro como texto fantasma",
+    "Los errores se muestran junto al campo y en lenguaje llano, sin culpar al usuario",
+    "Nada de asteriscos sin explicar ni campos obligatorios sorpresa",
+    "Un solo botón principal por pantalla"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de campos más textos literales",
+    "columnas": ["campo", "tipo de control", "etiqueta", "texto de ayuda", "obligatorio", "mensaje de error"],
+    "extras": ["Orden y agrupación final", "Textos del botón, del éxito y del fallo", "Qué campos he quitado y por qué"]
+  },
+  "criterios_calidad": [
+    "Ningún campo queda sin mensaje de error propio",
+    "Todos los textos están escritos para publicar, no descritos",
+    "El formulario se puede rellenar de una pasada en el móvil"
+  ],
+  "tono": "cercano y claro, tuteando al usuario final"
+}

@@ -1,0 +1,33 @@
+{
+  "tarea": "Diseña la segmentación de mis carritos abandonados y el flujo de recuperación que corresponde a cada segmento",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "ticket_medio": "[TICKET MEDIO EN EUROS]",
+    "categorias": "[TUS CATEGORÍAS PRINCIPALES]",
+    "canales_disponibles": "[EMAIL / SMS / WHATSAPP / ANUNCIOS DE RETARGETING / LLAMADA]",
+    "herramienta": "[KLAVIYO / MAILCHIMP / BREVO / SHOPIFY EMAIL / OTRA]",
+    "distingo_cliente_nuevo": "[SÍ / NO]",
+    "margen_bruto": "[MARGEN BRUTO EN %]"
+  },
+  "criterios_de_segmentacion": [
+    "valor del carrito: por debajo, alrededor o muy por encima del ticket medio",
+    "histórico: cliente nuevo, cliente que ya compró, cliente que abandona a menudo",
+    "punto de abandono: carrito, datos de envío o pantalla de pago",
+    "origen del tráfico: búsqueda, anuncio, email o redes",
+    "tipo de producto: compra impulsiva o compra pensada"
+  ],
+  "para_cada_segmento_define": ["nombre", "regla_para_identificarlo", "canales", "numero_de_contactos", "tiempos", "mensaje_principal", "incentivo", "cuando_parar"],
+  "restricciones": [
+    "Máximo 6 segmentos: si salen más, agrupa",
+    "Cada regla debe poder montarse con filtros normales de la herramienta indicada, sin programar",
+    "Los carritos por debajo del ticket medio no llevan trato manual ni llamadas",
+    "Nadie recibe más de [MÁXIMO DE MENSAJES] contactos por carrito",
+    "Si el cliente compra, todo el flujo se detiene"
+  ],
+  "formato_salida": {
+    "tabla_principal": "Un segmento por fila con todas las columnas definidas",
+    "orden_de_montaje": "Los segmentos ordenados por lo que más recuperaría con menos trabajo",
+    "paso_a_paso": "Cómo crear el primer segmento en la herramienta indicada, en pasos numerados",
+    "exclusiones": "Lista de a quién NO escribir nunca (baja, queja abierta, pedido ya hecho, prueba interna)"
+  }
+}

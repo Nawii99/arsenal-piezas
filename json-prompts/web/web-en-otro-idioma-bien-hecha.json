@@ -1,0 +1,52 @@
+{
+  "tarea": "Planificar y montar la versión en [IDIOMA DESTINO] de [URL], con la estructura de direcciones, el marcado hreflang y el criterio de qué se traduce.",
+  "contexto": {
+    "idioma_actual": "[ESPAÑOL / OTRO]",
+    "publico_objetivo": "[PAÍS O TIPO DE CLIENTE]",
+    "plataforma": "[HTML / WORDPRESS / SHOPIFY / OTRA]",
+    "quien_traduce": "[YO CON IA Y REVISIÓN / TRADUCTOR PROFESIONAL]"
+  },
+  "entradas": {
+    "paginas_candidatas": "[LISTA DE PÁGINAS Y VISITAS O IMPORTANCIA DE CADA UNA]",
+    "terminos_que_no_se_traducen": "[NOMBRE DE MARCA, PRODUCTOS, TÉRMINOS PROPIOS]",
+    "datos_locales": "[MONEDA, IMPUESTOS, PLAZOS DE ENVÍO, TELÉFONO, HORARIOS]"
+  },
+  "pasos": [
+    "1. Elegir qué páginas se traducen: primero las que venden, nunca el blog entero de golpe.",
+    "2. Elegir la estructura de direcciones: subcarpeta /en/ por defecto, y explicar cuándo compensa subdominio o dominio propio.",
+    "3. Traducir adaptando: precios en la moneda que corresponda, ejemplos locales, formatos de fecha y teléfono, formas de pago.",
+    "4. Traducir también lo invisible: title, meta description, textos alternativos de imágenes, botones, mensajes de error y textos legales.",
+    "5. Añadir el marcado hreflang recíproco entre cada par de versiones y una versión x-default.",
+    "6. Poner el atributo lang correcto en la etiqueta html de cada versión.",
+    "7. Montar el selector de idioma visible en la cabecera, con el nombre del idioma escrito en su propio idioma, nunca con banderas.",
+    "8. Revisar el resultado con alguien que hable el idioma y comprobar la indexación en Search Console."
+  ],
+  "restricciones": [
+    "Nada de traducción automática publicada sin revisión humana.",
+    "No redirigir automáticamente por el idioma del navegador ni por país: se ofrece, no se impone.",
+    "Cada versión debe ser accesible por su propia URL, no por un desplegable que cambia el texto sin cambiar la dirección.",
+    "No traducir el nombre de marca ni los términos de la lista de excepciones.",
+    "Los enlaces internos de cada versión apuntan a páginas del mismo idioma."
+  ],
+  "formato_salida": {
+    "bloque_1": "Lista priorizada de páginas a traducir, con el motivo de cada una.",
+    "bloque_2": "Mapa de direcciones: URL original | URL traducida.",
+    "bloque_3": "Bloque de etiquetas hreflang listo para pegar en el head, en un bloque de código.",
+    "bloque_4": "Glosario: término | traducción acordada | no se traduce.",
+    "bloque_5": "Comprobaciones antes y después de publicar, en lista."
+  },
+  "criterios_calidad": [
+    "Cada versión declara hreflang hacia todas las demás y hacia sí misma.",
+    "El selector de idioma lleva a la misma página, no a la portada.",
+    "Ningún texto queda mezclado: nada de botones en español dentro de la versión inglesa.",
+    "Los precios, plazos y datos de contacto tienen sentido para el país destino.",
+    "Un hablante nativo lee la página principal sin tropezar."
+  ],
+  "errores_frecuentes": [
+    "Traducir con un plugin automático y dejar los títulos y descripciones en español.",
+    "Usar banderas para elegir idioma y ofender o confundir a media clientela.",
+    "Que el selector devuelva siempre a la home y se pierda la página que se estaba viendo.",
+    "Olvidar el hreflang de vuelta y que Google no relacione las versiones.",
+    "Traducir el blog entero antes de traducir la página de contacto."
+  ]
+}

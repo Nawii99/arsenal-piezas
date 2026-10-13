@@ -1,0 +1,34 @@
+{
+  "tarea": "Disenar el bodegon de campana de [PRODUCTO] para [CAMPANA O TEMPORADA] y entregar el prompt de imagen listo para generar",
+  "contexto": {
+    "campana": "[NAVIDAD / REBAJAS / DIA DE LA MADRE / LANZAMIENTO]",
+    "mensaje": "[QUE QUIERES QUE PIENSE QUIEN LA VEA]",
+    "colores_de_marca": "[COLORES O HEX]",
+    "formatos_necesarios": "[PORTADA WEB 16:9, INSTAGRAM 4:5, STORY 9:16]"
+  },
+  "decisiones_a_tomar": [
+    "Paleta de 3 colores maximo, con el producto destacando sobre el fondo",
+    "Superficie: piedra, madera, tela, papel o metodo de fondo continuo",
+    "Atrezzo simbolico de la campana, maximo 3 piezas y ninguna mas llamativa que el producto",
+    "Tipo de luz: dura con sombras marcadas o difusa y envolvente, segun el tono de la campana",
+    "Composicion: bloque central, diagonal o repeticion de varias unidades",
+    "Zona reservada para el texto o el descuento"
+  ],
+  "restricciones": [
+    "El producto no cambia de color, forma ni etiqueta",
+    "Nada de texto generado por la IA dentro de la imagen: el texto se pone despues",
+    "La composicion tiene que sobrevivir al recorte a cuadrado y a vertical"
+  ],
+  "formato_salida": {
+    "bloque_1": "Concepto de la imagen en 3 lineas",
+    "bloque_2": "Ficha tecnica: plano, angulo, lente, luz, fondo, atrezzo, paleta",
+    "bloque_3": "Prompt final en ingles y en espanol, uno por cada formato pedido",
+    "bloque_4": "Prompt negativo con lo que hay que excluir",
+    "bloque_5": "Dos alternativas mas sobrias por si la primera resulta recargada"
+  },
+  "criterios_calidad": [
+    "La imagen comunica la campana sin necesitar texto",
+    "El producto ocupa el punto de mayor contraste de la foto",
+    "La zona de texto queda limpia y legible"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Preparar la hoja de ruta para darse de alta como trabajador autonomo en Espana y el calendario de obligaciones del primer ano",
+  "entradas": {
+    "actividad": "[QUE VAS A HACER, EN UNA FRASE]",
+    "clientes": "[PARTICULARES, EMPRESAS O AMBOS]",
+    "ambito": "[ESPANA, UNION EUROPEA O FUERA DE LA UE]",
+    "lugar": "[EN CASA, EN LOCAL PROPIO O EN CASA DEL CLIENTE]",
+    "ingresos_estimados": "[INGRESOS MENSUALES ESTIMADOS EL PRIMER ANO]",
+    "gastos_previstos": "[GASTOS PRINCIPALES PREVISTOS]",
+    "empleados": "[VAS A CONTRATAR A ALGUIEN? SI O NO]",
+    "provincia": "[PROVINCIA O MUNICIPIO]"
+  },
+  "pasos": [
+    "Ordenar los tramites: alta censal en Hacienda con el epigrafe de IAE que mejor encaje, alta en el RETA, mutua y base de cotizacion, y comunicaciones locales si hay local",
+    "Explicar para cada tramite: donde se hace, que documentacion hace falta, plazo y error tipico",
+    "Proponer dos o tres epigrafes de IAE posibles con sus pros y contras, sin afirmar cual es el correcto",
+    "Aclarar si la actividad lleva IVA o esta exenta y que retencion de IRPF aplicar en las facturas",
+    "Montar un calendario anual con los modelos trimestrales y anuales que le tocarian",
+    "Listar obligaciones que se olvidan: libros de ingresos y gastos, facturacion correcta, seguro de responsabilidad civil, proteccion de datos y prevencion si hay local"
+  ],
+  "restricciones": [
+    "No des importes exactos de cuota ni tipos impositivos sin avisar de que hay que confirmarlos en la sede electronica o con una gestoria",
+    "No afirmes que corresponde una bonificacion concreta: indica que hay que comprobar requisitos",
+    "Nada de consejos para no declarar ingresos"
+  ],
+  "formato_salida": {
+    "checklist": "Lista numerada de tramites con casilla, plazo y donde se hace",
+    "calendario": "Tabla por trimestres con modelos y fechas orientativas",
+    "presupuesto": "Estimacion de costes fijos del primer ano con supuestos marcados",
+    "preguntas_gestoria": "5 preguntas concretas para llevar a la gestoria"
+  },
+  "criterios_calidad": [
+    "Cada paso se puede hacer sin conocimientos previos",
+    "Queda claro que dato hay que verificar y donde"
+  ]
+}

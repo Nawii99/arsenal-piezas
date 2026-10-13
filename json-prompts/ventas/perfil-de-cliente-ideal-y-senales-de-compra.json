@@ -1,0 +1,35 @@
+{
+  "tarea": "Definir mi perfil de cliente ideal y traducirlo en señales observables que pueda buscar en internet antes de contactar",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_vendo": "[QUÉ VENDES EN UNA FRASE]",
+    "precio_medio": "[PRECIO MEDIO POR CLIENTE]",
+    "mejores_clientes": ["[CLIENTE 1: SECTOR, TAMAÑO Y POR QUÉ FUE BUENO]", "[CLIENTE 2]", "[CLIENTE 3]"],
+    "clientes_que_salieron_mal": ["[CLIENTE Y MOTIVO: REGATEO, IMPAGO, NO ERA SU PROBLEMA...]"],
+    "zona_geografica": "[CIUDAD, PROVINCIA O PAÍS]",
+    "canal_de_prospeccion": "[EMAIL, LINKEDIN, TELÉFONO, VISITA O WHATSAPP]"
+  },
+  "pasos": [
+    "Buscar el patrón común de los buenos clientes: sector, tamaño, momento del negocio y quién decidió la compra",
+    "Escribir el perfil ideal con criterios verificables desde fuera, no con adjetivos como 'empresa moderna'",
+    "Definir la anti-lista: a quién NO contactar aunque parezca que encaja",
+    "Convertir el perfil en 8-12 señales de compra observables (una web, una oferta de empleo, una obra, una apertura, una reseña, un cambio de responsable)",
+    "Indicar dónde se ve cada señal y qué buscar exactamente"
+  ],
+  "restricciones": [
+    "Nada de datos inventados sobre mi mercado: si falta información, pídemela",
+    "Cada criterio debe poder comprobarse en menos de 3 minutos por prospecto",
+    "Sin jerga de marketing: lenguaje llano"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha del cliente ideal: sector, tamaño, quién decide, problema que sufre, presupuesto probable, momento de compra",
+    "bloque_2": "Tabla de señales con columnas: señal | dónde se ve | qué indica | urgencia (alta/media/baja)",
+    "bloque_3": "Anti-lista: 5 tipos de prospecto a descartar y por qué",
+    "bloque_4": "Cinco búsquedas concretas listas para copiar y pegar en Google, LinkedIn o directorios"
+  },
+  "criterios_calidad": [
+    "Un desconocido podría usar la ficha para separar 20 empresas en válidas y no válidas sin preguntarme nada",
+    "Ninguna señal depende de información privada o de intuición",
+    "La anti-lista es tan concreta como la lista"
+  ]
+}

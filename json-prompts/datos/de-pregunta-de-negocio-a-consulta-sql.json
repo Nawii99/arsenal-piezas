@@ -1,0 +1,37 @@
+{
+  "tarea": "Traducir una pregunta de negocio a una consulta SQL correcta, comentada y lista para ejecutar en modo solo lectura",
+  "contexto": {
+    "motor": "[MOTOR Y VERSIÓN: MySQL 8, PostgreSQL 15, SQL Server, BigQuery, SQLite]",
+    "negocio": "[QUÉ VENDE TU NEGOCIO Y A QUIÉN]",
+    "pregunta": "[LA PREGUNTA EN LENGUAJE NORMAL, EJ: CUÁNTO FACTURÉ POR PRODUCTO EL MES PASADO]",
+    "esquema": "[PEGA LAS TABLAS, COLUMNAS Y CLAVES QUE VAS A USAR]",
+    "volumen_aproximado": "[FILAS APROXIMADAS DE LA TABLA PRINCIPAL]"
+  },
+  "pasos": [
+    "Reformular la pregunta en una frase medible: métrica, unidad, periodo y nivel de agrupación",
+    "Listar las dudas de interpretación (si el importe lleva IVA, si cuentan los pedidos cancelados o devueltos) y resolverlas con el supuesto más prudente, dejándolo escrito",
+    "Elegir las tablas mínimas necesarias y el tipo de JOIN correcto según si pueden faltar filas",
+    "Escribir la consulta con alias legibles y filtros de fecha por rango cerrado-abierto",
+    "Añadir una consulta de verificación que compruebe el resultado por otro camino"
+  ],
+  "restricciones": [
+    "Solo SELECT: nada de UPDATE, DELETE, DROP ni cambios de esquema",
+    "Nunca usar SELECT asterisco: nombrar las columnas una a una",
+    "Filtrar fechas con columna mayor o igual que el inicio y menor que el fin, sin aplicar funciones sobre la columna filtrada",
+    "No inventar tablas ni columnas que no aparezcan en el esquema pegado",
+    "Incluir LIMIT en las consultas exploratorias"
+  ],
+  "formato_salida": {
+    "bloque_1": "Pregunta reformulada en una frase y supuestos asumidos",
+    "bloque_2": "La consulta SQL en bloque de código, con comentarios en las partes no obvias",
+    "bloque_3": "Explicación en 4 o 5 frases, sin jerga, de qué hace la consulta",
+    "bloque_4": "Consulta de verificación y qué resultado debería dar si todo está bien",
+    "bloque_5": "Avisos: qué puede hacer que el número salga mal"
+  },
+  "criterios_calidad": [
+    "La consulta se ejecuta tal cual, sin editar, en el motor indicado",
+    "Cada columna del resultado lleva un alias en español entendible",
+    "Los supuestos están escritos fuera del SQL, no escondidos dentro"
+  ],
+  "tono": "Directo y llano; explica cada término técnico la primera vez que aparece"
+}

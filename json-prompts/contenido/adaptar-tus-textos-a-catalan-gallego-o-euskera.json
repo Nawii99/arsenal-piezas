@@ -1,0 +1,40 @@
+{
+  "tarea": "Preparar la versión en [CATALÁN, VALENCIANO, GALLEGO O EUSKERA] de un texto de [NOMBRE DE TU NEGOCIO], decidiendo qué se traduce, qué se mantiene y cómo se presenta la versión bilingüe",
+  "contexto": {
+    "lengua_destino": "[CATALÁN, VALENCIANO, GALLEGO O EUSKERA]",
+    "territorio": "[CIUDAD O COMARCA DONDE ESTÁ TU CLIENTE]",
+    "tipo_de_pieza": "[WEB, CARTEL, CARTA DE MENÚ, EMAIL, MENSAJE DE WHATSAPP, FICHA DE GOOGLE]",
+    "uso_de_la_lengua": "[SOLO LENGUA COOFICIAL, BILINGÜE A DOS COLUMNAS O CASTELLANO CON DETALLES EN LA LENGUA]"
+  },
+  "entradas": {
+    "texto_original": "[PEGA AQUÍ EL TEXTO EN CASTELLANO]",
+    "no_traducir": "[NOMBRE DE LA MARCA, PRODUCTOS, PLATOS O SERVICIOS QUE SE QUEDAN IGUAL]",
+    "tratamiento": "[TÚ O USTED]"
+  },
+  "reglas": [
+    "Traducir el sentido y el tono, no palabra por palabra: los giros del castellano no se calcan",
+    "Mantener sin traducir los nombres propios de marca, productos y platos de la lista no_traducir",
+    "Usar la variante local cuando existan formas distintas dentro de la misma lengua y señalarlo",
+    "Respetar la normativa ortográfica vigente de la lengua y evitar castellanismos",
+    "En euskera, cuidar el orden de la frase y no traducir estructuras del castellano de forma literal",
+    "En bilingüe, mantener el mismo mensaje en las dos versiones: nada de ofertas o condiciones distintas",
+    "Adaptar saludos, fórmulas de cortesía y despedidas a lo que se usa de verdad en la zona"
+  ],
+  "restricciones": [
+    "No mezclar las dos lenguas dentro de la misma frase",
+    "No traducir textos legales sin marcarlos para revisión profesional",
+    "Señalar toda expresión de la que no se tenga certeza en lugar de improvisar"
+  ],
+  "formato_salida": {
+    "bloque_1": "Texto en la lengua de destino, listo para publicar",
+    "bloque_2": "Versión bilingüe presentada según el uso indicado",
+    "bloque_3": "Tabla de decisiones: qué se ha traducido, qué se ha mantenido y por qué",
+    "bloque_4": "Lista de frases marcadas para que las confirme una persona nativa"
+  },
+  "criterios_calidad": [
+    "El texto no suena a traducción automática ni arrastra estructuras del castellano",
+    "Los nombres de marca y producto aparecen escritos exactamente igual que en el original",
+    "Las dos versiones dicen lo mismo, sin diferencias de precio, plazo ni condiciones",
+    "Toda duda queda listada, nunca disimulada"
+  ]
+}

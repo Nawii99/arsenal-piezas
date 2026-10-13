@@ -1,0 +1,31 @@
+{
+  "tarea": "Diseñar el sistema de plantillas de redes sociales de una marca, con formatos, estructura y reglas de aplicación",
+  "marca": {
+    "nombre": "[NOMBRE DE TU MARCA]",
+    "colores": "[HEX DE TUS COLORES]",
+    "tipografias": "[TÍTULOS Y TEXTOS]",
+    "logo": "[VERSIONES DISPONIBLES]"
+  },
+  "canales": "[INSTAGRAM, TIKTOK, LINKEDIN, FACEBOOK]",
+  "tipos_de_contenido": "[EJ. CONSEJO, PRODUCTO, TESTIMONIO, OFERTA, DETRÁS DE LAS CÁMARAS]",
+  "quien_publica": "[TÚ, UN EMPLEADO O UNA AGENCIA]",
+  "plantillas_a_definir": {
+    "cantidad": 6,
+    "cada_plantilla": ["nombre", "para qué tipo de post", "formato en píxeles", "zonas seguras", "jerarquía de elementos de arriba a abajo", "colores usados", "tamaño de titular y máximo de caracteres", "dónde va el logo"]
+  },
+  "reglas_del_sistema": [
+    "Cuánto porcentaje de la parrilla es foto, cuánto color plano y cuánto texto",
+    "Qué elemento se repite siempre para que se reconozca la marca de un vistazo",
+    "Cómo se adapta cada plantilla de cuadrado a vertical sin recortar lo importante",
+    "Qué está prohibido: filtros, emojis en titulares, más de dos tipografías, texto sobre zonas de la interfaz"
+  ],
+  "formato_salida": {
+    "tipo": "ficha por plantilla + bloque de reglas + tabla resumen de medidas por canal",
+    "extra": "instrucciones paso a paso para montar la primera plantilla en Canva"
+  },
+  "criterios_calidad": [
+    "Una persona sin ojo de diseño puede publicar sin romper la coherencia",
+    "Las seis plantillas cubren el contenido real del negocio, no casos raros",
+    "Todo el texto entra sin reducir la tipografía por debajo del mínimo indicado"
+  ]
+}

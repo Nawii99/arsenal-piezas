@@ -1,0 +1,36 @@
+{
+  "tarea": "Generar la lista de comprobación final de un montaje y los ajustes de exportación para cada plataforma",
+  "contexto": {
+    "programa": "[PREMIERE / DAVINCI / CAPCUT / FINAL CUT / OTRO]",
+    "plataformas": "[YOUTUBE, INSTAGRAM, TIKTOK, WEB, WHATSAPP]",
+    "duracion": "[MM:SS]",
+    "contenido": "[LLEVA MÚSICA / VOZ EN OFF / MATERIAL DE TERCEROS]"
+  },
+  "apartados_a_revisar": [
+    "Imagen: negros al principio o al final, planos congelados, saltos, encuadres torcidos",
+    "Ritmo: cortes que llegan tarde, silencios muertos, final que se alarga",
+    "Audio: niveles de voz, música que tapa la voz, golpes, cambios de volumen entre clips",
+    "Texto: faltas de ortografía, rótulos que se salen del área segura, subtítulos desfasados",
+    "Color: saltos de tono entre planos, blancos quemados, pieles anaranjadas",
+    "Legal: música con licencia, logos o marcas de terceros, permisos de personas que salen",
+    "Cierre: llamada a la acción visible el tiempo suficiente"
+  ],
+  "referencias_tecnicas": [
+    "Voz alrededor de -14 LUFS para plataformas y picos por debajo de -1 dBTP",
+    "Música de fondo entre 15 y 20 dB por debajo de la voz",
+    "Área segura: sin texto en el 15% superior ni inferior en vertical"
+  ],
+  "formato_salida": {
+    "bloque_1": "Checklist con casillas por apartado, en orden de revisión",
+    "bloque_2": "Tabla de exportación: plataforma, resolución, fotogramas por segundo, códec, bitrate, formato de audio",
+    "bloque_3": "Los cinco fallos que más se cuelan en este tipo de vídeo"
+  },
+  "restricciones": [
+    "Cada punto se puede verificar mirando el montaje, sin herramientas de pago",
+    "Nada de recomendaciones genéricas: siempre con el valor o el sitio donde mirarlo"
+  ],
+  "criterios_calidad": [
+    "Se puede recorrer entera en menos de 15 minutos",
+    "Los ajustes de exportación se pueden copiar directamente en el programa indicado"
+  ]
+}

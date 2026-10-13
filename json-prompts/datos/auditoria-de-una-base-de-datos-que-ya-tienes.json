@@ -1,0 +1,38 @@
+{
+  "tarea": "Auditar un esquema de base de datos existente y entregar un informe de hallazgos priorizados con su correccion",
+  "entradas": {
+    "esquema": "[PEGA AQUI EL CREATE TABLE DE TUS TABLAS O SU DESCRIPCION]",
+    "sintomas": "[QUE TE PASA: VA LENTO, DATOS DUPLICADOS, ERRORES...]",
+    "uso": "[Nº DE USUARIOS Y CONSULTAS MAS FRECUENTES]",
+    "puedo_parar_el_servicio": "[SI | NO | SOLO DE MADRUGADA]"
+  },
+  "revisar": [
+    "Tablas sin clave primaria o con clave primaria mal elegida",
+    "Relaciones sin clave foranea declarada, que permiten datos huerfanos",
+    "Tipos de datos incorrectos: importes en float, fechas o numeros guardados como texto, VARCHAR gigantes",
+    "Campos que se repiten en varias tablas y pueden desincronizarse",
+    "Listas guardadas dentro de una celda separadas por comas",
+    "Falta de NOT NULL, UNIQUE o CHECK donde el negocio los exige",
+    "Columnas que ya nadie usa y campos con nombres enganosos",
+    "Ausencia de indices en columnas usadas para filtrar o unir tablas",
+    "Datos personales sin control de acceso, borrado ni retencion"
+  ],
+  "restricciones": [
+    "No propongas rehacer todo desde cero salvo que lo justifiques con hechos del esquema",
+    "Cada hallazgo debe citar la tabla y columna concretas",
+    "Marca el riesgo de cada arreglo: si puede romper la aplicacion o borrar datos"
+  ],
+  "formato_salida": {
+    "1_semaforo": "Nota del 1 al 10 al esquema y tres frases de resumen",
+    "2_hallazgos": "Tabla markdown con columnas: gravedad (alta/media/baja), tabla.columna, problema, consecuencia real, arreglo propuesto",
+    "3_sql_correcciones": "Sentencias ALTER TABLE listas para ejecutar, empezando por las de gravedad alta",
+    "4_plan": "Orden recomendado de aplicacion, indicando cuales necesitan parada de servicio y cuales no",
+    "5_no_tocar": "Cosas que parecen errores pero probablemente son intencionadas"
+  },
+  "criterios_calidad": [
+    "Como minimo un hallazgo por cada sintoma descrito",
+    "Ningun arreglo propuesto borra datos sin avisarlo de forma explicita",
+    "Las consecuencias estan escritas en lenguaje de negocio, no tecnico"
+  ],
+  "tono": "Franco, sin dramatizar, espanol de Espana"
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar el acuerdo de reparto de derechos de propiedad intelectual y de ingresos de una obra creada entre varias personas o marcas",
+  "rol": "Abogado especializado en acuerdos entre socios creativos",
+  "entradas": {
+    "participantes": "[NOMBRES, DNI O CIF Y QUÉ ES CADA UNO]",
+    "obra": "[QUÉ VAIS A CREAR: CURSO, PODCAST, LIBRO, APP, PRODUCTO CONJUNTO]",
+    "aportaciones": "[QUÉ APORTA CADA UNO: TRABAJO, DINERO, MARCA, AUDIENCIA, MATERIAL PREVIO]",
+    "reparto_ingresos": "[PORCENTAJES ACORDADOS]",
+    "marca_bajo_la_que_se_publica": "[NOMBRE Y DE QUIÉN ES]"
+  },
+  "pasos": [
+    "Distingue el material previo de cada parte, que sigue siendo suyo, de lo creado en común",
+    "Define la titularidad de la obra conjunta y en qué porcentaje",
+    "Regula las decisiones: qué necesita acuerdo de todos y qué puede decidir uno solo",
+    "Fija cómo se reparten ingresos, quién factura, cuándo se liquida y qué gastos se descuentan antes",
+    "Establece qué pasa si alguien se va: puede seguir usando la obra, con qué límites y durante cuánto tiempo",
+    "Regula la explotación posterior: traducciones, versiones, venta a terceros y uso en portfolio",
+    "Añade confidencialidad, resolución de desacuerdos y qué ocurre en caso de fallecimiento o venta de una empresa"
+  ],
+  "restricciones": [
+    "No dejes ningún porcentaje sin definir ni ningún supuesto de salida sin respuesta",
+    "Evita fórmulas ambiguas del tipo se decidirá de mutuo acuerdo sin un mecanismo de desempate",
+    "Máximo tres páginas"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "Acuerdo completo por cláusulas numeradas",
+      "Tabla resumen de quién aporta qué, quién es titular de qué y quién cobra cuánto",
+      "Lista de las diez preguntas incómodas que debéis responder antes de firmar",
+      "Anexo para añadir nuevas obras a la colaboración"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada escenario de ruptura tiene una respuesta escrita",
+    "El material previo de cada parte queda protegido de forma expresa",
+    "Cierra recomendando revisión por un abogado si hay dinero o inversión de por medio"
+  ]
+}

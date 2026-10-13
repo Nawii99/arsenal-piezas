@@ -1,0 +1,41 @@
+{
+  "tarea": "Diagnosticar por que una campana de pago no genera ventas y devolver la accion correctiva prioritaria",
+  "datos_de_entrada": {
+    "plataforma": "[META | GOOGLE ADS | TIKTOK]",
+    "dias_activa": "[NUMERO DE DIAS]",
+    "gasto_total_eur": "[GASTO]",
+    "impresiones": "[NUMERO]",
+    "clics": "[NUMERO]",
+    "ctr": "[PORCENTAJE]",
+    "cpm_eur": "[COSTE POR MIL IMPRESIONES]",
+    "cpc_eur": "[COSTE POR CLIC]",
+    "visitas_a_la_pagina": "[NUMERO]",
+    "conversiones": "[NUMERO Y DE QUE TIPO]",
+    "precio_producto_eur": "[PRECIO]",
+    "cambios_ya_probados": "[QUE HAS TOCADO Y CUANDO]"
+  },
+  "metodo": [
+    "Comprueba primero si hay volumen suficiente para juzgar: por debajo de unas 1.000 impresiones o 100 clics, di que no hay datos y que hay que esperar",
+    "Recorre el embudo en orden y localiza el primer punto que falla: entrega (CPM), atencion (CTR y reproducciones), clic a visita (perdida entre clics y sesiones), pagina (visitas sin anadir al carrito o sin formulario), y cierre (carritos sin compra)",
+    "Para cada tramo, compara con rangos habituales del sector y di si esta alto, normal o bajo",
+    "Descarta antes que nada los fallos de medicion: eventos duplicados, pixel mal puesto, consentimiento de cookies o conversiones sin atribuir",
+    "Da UNA sola hipotesis principal y como maximo dos secundarias"
+  ],
+  "restricciones": [
+    "No recomiendes cambiar mas de una variable a la vez",
+    "No propongas subir presupuesto como solucion a un problema de conversion",
+    "Si los datos no dan para concluir, dilo claramente en vez de inventar"
+  ],
+  "formato_salida": {
+    "1_semaforo": "Tabla del embudo: tramo | tu dato | rango habitual | verde, ambar o rojo",
+    "2_hipotesis": "Cual es el cuello de botella y en que dato te basas",
+    "3_plan_72_horas": "3 acciones ordenadas por impacto y esfuerzo, con lo que hay que hacer exactamente",
+    "4_que_no_tocar": "Lo que conviene dejar quieto y por que",
+    "5_como_saber_si_funciona": "Que metrica debe moverse, cuanto y en cuantos dias"
+  },
+  "criterios_calidad": [
+    "Cada conclusion cita el numero que la sustenta",
+    "Las acciones son ejecutables hoy sin contratar a nadie",
+    "Se distingue entre problema de anuncio y problema de oferta"
+  ]
+}

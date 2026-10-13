@@ -1,0 +1,34 @@
+{
+  "tarea": "Reescribir un texto técnico para un lector no experto sin perder exactitud",
+  "entradas": {
+    "texto_original": "[PEGA AQUÍ EL TEXTO TÉCNICO]",
+    "lector": "[QUIÉN LO VA A LEER: EJ. DUEÑO DE UNA TIENDA, SIN CONOCIMIENTOS DE INFORMÁTICA]",
+    "que_ya_sabe": "[LO QUE TU LECTOR YA CONOCE]",
+    "decision_que_toma": "[QUÉ TIENE QUE DECIDIR AL TERMINAR DE LEER]",
+    "terminos_que_debe_aprender": "[TÉRMINOS QUE SÍ HAY QUE MANTENER Y EXPLICAR]"
+  },
+  "proceso": [
+    "1. Marcar cada tecnicismo del original y clasificarlo en: se elimina, se sustituye o se mantiene y se explica",
+    "2. Sustituir los eliminables por su equivalente en lenguaje corriente",
+    "3. Explicar los que se mantienen con una comparación cotidiana, nunca con otro tecnicismo",
+    "4. Reordenar el texto para que primero vaya lo que le afecta al lector y después el detalle",
+    "5. Comprobar que no se ha perdido ninguna condición, límite o requisito del original"
+  ],
+  "restricciones": [
+    "Prohibido simplificar hasta el punto de decir algo falso",
+    "Nada de siglas sin desarrollar la primera vez",
+    "Frases cortas y voz activa",
+    "No añadir promesas ni garantías que no estén en el original"
+  ],
+  "formato_salida": {
+    "version_clara": "El texto reescrito completo",
+    "glosario": "Tabla: término técnico / cómo lo he dicho / por qué se puede decir así",
+    "alertas": "Puntos donde simplificar más haría perder precisión, señalados uno a uno",
+    "resumen_en_3_frases": "Lo mínimo que el lector debe llevarse"
+  },
+  "criterios_calidad": [
+    "Un adolescente lo entendería a la primera lectura",
+    "Un experto no encontraría ninguna afirmación incorrecta",
+    "Se conservan todas las condiciones y excepciones del original"
+  ]
+}

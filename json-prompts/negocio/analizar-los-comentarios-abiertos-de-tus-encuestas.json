@@ -1,0 +1,34 @@
+{
+  "tarea": "Clasificar respuestas abiertas de encuestas de satisfacción y convertirlas en una lista de acciones priorizada",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU NEGOCIO]",
+    "periodo": "[FECHAS DE LAS RESPUESTAS]",
+    "numero_de_respuestas": "[CUÁNTAS PEGAS]",
+    "decision_que_tengo_que_tomar": "[QUÉ VAS A DECIDIR CON ESTO]"
+  },
+  "entradas": {
+    "respuestas": "[PEGA AQUÍ LAS RESPUESTAS, UNA POR LÍNEA, CON SU NOTA DELANTE SI LA TIENES]"
+  },
+  "metodo": [
+    "Leer todas las respuestas antes de crear ninguna categoría",
+    "Crear entre 5 y 9 temas nacidos de lo que dicen los clientes, no de categorías genéricas",
+    "Asignar cada respuesta a un solo tema principal y marcar su tono: positivo, negativo o mixto",
+    "Contar respuestas por tema y calcular el porcentaje sobre el total",
+    "Separar lo que es un fallo real de lo que es una expectativa mal puesta antes de la compra",
+    "Marcar como señal débil todo tema con menos de 3 menciones y no sacar conclusiones de él"
+  ],
+  "formato_salida": {
+    "tabla_temas": "Columnas: tema | menciones | % del total | tono dominante | frase textual de ejemplo",
+    "tabla_acciones": "Columnas: acción concreta | tema que resuelve | esfuerzo (bajo/medio/alto) | quién | plazo",
+    "resumen": "5 líneas máximo con lo que hay que hacer esta semana"
+  },
+  "restricciones": [
+    "No inventes ni parafrasees las citas: cópialas literales y recórtalas con puntos suspensivos si son largas",
+    "No mezcles tu opinión con lo que dicen los clientes",
+    "Si un tema aparece solo en respuestas de una nota concreta, dilo"
+  ],
+  "criterios_calidad": [
+    "Los números de la tabla suman el total de respuestas pegadas",
+    "Cada acción propuesta es ejecutable por un negocio pequeño, sin equipo grande ni software nuevo"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "tarea": "Preparar la publicación completa de un asset o pack 3D en un marketplace: contenido del paquete, nomenclatura, previsualizaciones, título, descripción y etiquetas.",
+  "contexto": "Los assets se venden por la miniatura y se devuelven por el desorden interno. Un pack bien organizado y bien fotografiado se vende mucho más que uno mejor modelado y mal presentado.",
+  "entradas": {
+    "asset": "[QUÉ ES: MODELO SUELTO, PACK, MATERIALES, ESCENA]",
+    "contenido_real": "[LISTA DE PIEZAS Y FORMATOS QUE TIENES]",
+    "publico": "[DESARROLLADORES DE JUEGOS | ARQUITECTURA E INTERIORISMO | IMPRESIÓN 3D | ANIMACIÓN]",
+    "marketplace": "[SKETCHFAB | CGTRADER | ITCH | UNITY O UNREAL | OTRO]",
+    "precio_objetivo": "[PRECIO QUE TE PLANTEAS]",
+    "licencia": "[USO PERSONAL | USO COMERCIAL | EXTENDIDA]"
+  },
+  "procedimiento": [
+    "1. Audita el contenido: comprueba que cada pieza tiene nombre descriptivo, escala real, origen en el suelo, materiales nombrados y sin objetos ocultos ni cámaras basura.",
+    "2. Define la estructura de carpetas y la nomenclatura: prefijo del pack, nombre de la pieza, variante, formato, todo en minúsculas y sin acentos ni espacios.",
+    "3. Decide los formatos a incluir según el público: FBX y GLB para juegos y web, OBJ como comodín, STL para impresión, más el archivo nativo si la licencia lo justifica.",
+    "4. Planifica seis imágenes de previsualización: pieza principal sobre fondo neutro, vista de todas las piezas juntas, detalle de textura, vista de la malla en modo alambre, escala con figura humana o referencia, y una imagen de uso en escena.",
+    "5. Escribe el título con la estructura: qué es, estilo, y palabra clave que busca el comprador; sin adjetivos de relleno.",
+    "6. Redacta la descripción con lo que el comprador comprueba antes de pagar: número de piezas, polígonos, resolución y tipo de mapas, unidades y escala, si está listo para juego, si tiene UV limpias.",
+    "7. Añade una sección de lo que NO incluye, para evitar valoraciones negativas.",
+    "8. Genera de 15 a 25 etiquetas mezclando término genérico, término específico, estilo y uso.",
+    "9. Justifica el precio comparando con packs similares y propone versión gratuita reducida como gancho.",
+    "10. Deja escrito el texto de licencia en lenguaje claro: qué puede hacer el comprador y qué no."
+  ],
+  "restricciones": [
+    "No prometas ventas ni cifras.",
+    "Nada de descripciones genéricas: cada dato tiene que ser comprobable en el archivo.",
+    "Etiquetas en inglés si el marketplace es internacional, ficha en el idioma del marketplace.",
+    "No incluyas texturas ni referencias de terceros sin derechos.",
+    "Explicación clara para alguien sin formación técnica formal."
+  ],
+  "formato_salida": {
+    "bloque_1": "Checklist de auditoría del archivo, 10 puntos con casilla.",
+    "bloque_2": "Árbol de carpetas y ejemplos de nombres de fichero.",
+    "bloque_3": "Guion de las 6 previsualizaciones: qué se ve, encuadre, fondo y luz.",
+    "bloque_4": "Título, descripción completa y sección de lo no incluido.",
+    "bloque_5": "Lista de etiquetas separadas por comas.",
+    "bloque_6": "Recomendación de precio y de versión gratuita gancho, con el motivo."
+  },
+  "criterios_calidad": [
+    "La descripción contesta sin ambigüedad a polígonos, mapas, escala y formatos.",
+    "Las miniaturas se entienden a tamaño pequeño en el listado.",
+    "Los nombres de fichero son consistentes y ordenables alfabéticamente.",
+    "Está escrito lo que no incluye el pack.",
+    "La licencia se entiende sin abogado."
+  ],
+  "errores_frecuentes": [
+    "Subir el archivo con la escala en unidades raras y que llegue microscópico al comprador.",
+    "Renders bonitos con luces y postproducción que el asset no lleva dentro: es la primera causa de devolución.",
+    "Nombres tipo objeto1, final, final2 dentro del archivo.",
+    "Olvidar la vista de malla y perder al comprador técnico.",
+    "Incluir texturas descargadas sin licencia comercial."
+  ]
+}

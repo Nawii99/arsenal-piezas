@@ -1,0 +1,35 @@
+{
+  "tarea": "Definir la reticula y el sistema de espaciado de un proyecto para que todas las piezas queden alineadas",
+  "contexto": {
+    "proyecto": "[WEB, LANDING, APP O PLANTILLAS DE PDF]",
+    "ancho_maximo_contenido": "[POR EJEMPLO 1200 px]",
+    "dispositivos": "[MOVIL, TABLETA Y ESCRITORIO O SOLO ALGUNOS]",
+    "tipo_de_paginas": "[PAGINA DE VENTAS, CATALOGO, BLOG, FICHA DE PRODUCTO]",
+    "densidad": "[AIREADA O COMPACTA]"
+  },
+  "proceso": [
+    "Fija la unidad base en 4 px y genera la escala de espaciado: 4, 8, 12, 16, 24, 32, 48, 64, 96",
+    "Define columnas y canales por dispositivo: 4 columnas en movil, 8 en tableta, 12 en escritorio",
+    "Fija los margenes laterales de cada dispositivo",
+    "Aplica la regla de proximidad: mas espacio entre bloques que dentro de un bloque, y da los valores exactos",
+    "Define el espacio vertical entre secciones y entre elementos de una misma seccion",
+    "Fija el espacio interior de botones, tarjetas y campos de formulario",
+    "Anade la altura minima de zona pulsable de 44 px"
+  ],
+  "restricciones": [
+    "Todo valor debe salir de la escala; nada de 13 px ni 27 px",
+    "Maximo 9 pasos de espaciado",
+    "El texto largo nunca ocupa las 12 columnas: limitalo a 8",
+    "Sin librerias externas ni marcos de trabajo"
+  ],
+  "formato_salida": {
+    "tipo": "especificacion mas codigo",
+    "secciones": ["Tabla de la escala de espaciado con su uso tipico", "Tabla de reticula por dispositivo", "Reglas de proximidad", "Variables CSS listas para pegar", "Ejemplo de seccion montada con la reticula"]
+  },
+  "criterios_calidad": [
+    "Cada espacio del ejemplo se justifica con un paso de la escala",
+    "Se ve claramente donde acaba una seccion y empieza otra",
+    "Funciona igual en movil que en escritorio"
+  ],
+  "tono": "Tecnico y breve; tablas antes que parrafos"
+}

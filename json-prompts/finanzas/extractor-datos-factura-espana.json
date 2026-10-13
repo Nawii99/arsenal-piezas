@@ -1,0 +1,26 @@
+{
+  "tarea": "extraer_datos_factura_espana",
+  "contexto": "Este prompt estructurado se usa dentro de un servicio de contabilidad automatizada para autónomos y pymes españolas. Recibe el texto de una factura (por OCR o PDF) y debe devolver los campos necesarios para el cierre trimestral de IVA e IRPF.",
+  "instrucciones": "Lee el texto de la factura y devuelve SOLO un JSON con los campos del esquema. Si un campo no aparece en la factura, ponlo como null, no lo inventes. Si el documento no es una factura, indícalo en 'es_factura_valida' como false y no rellenes el resto.",
+  "esquema_salida": {
+    "es_factura_valida": "boolean",
+    "tipo": "emitida o recibida",
+    "numero_factura": "string o null",
+    "fecha_emision": "string en formato AAAA-MM-DD o null",
+    "emisor": { "nombre": "string o null", "nif": "string o null" },
+    "receptor": { "nombre": "string o null", "nif": "string o null" },
+    "lineas_iva": [ { "base_imponible": "number", "tipo_iva": "number, por ejemplo 21, 10, 4 o 0", "cuota_iva": "number" } ],
+    "irpf_retenido": { "aplica": "boolean", "porcentaje": "number o null", "importe": "number o null" },
+    "total_factura": "number o null",
+    "categoria_gasto_sugerida": "string o null, solo si tipo es recibida",
+    "alertas": ["array de strings con problemas detectados, por ejemplo falta NIF o el total no cuadra"]
+  },
+  "reglas": [
+    "No inventes NIF, fechas ni importes que no estén escritos en el texto de la factura.",
+    "Si el texto trae varios tipos de IVA en la misma factura, devuelve una línea en lineas_iva por cada tipo.",
+    "El IRPF retenido solo aplica normalmente a facturas emitidas por profesionales a otras empresas, no a compras de material.",
+    "Si el total no cuadra con la suma de bases más cuotas de IVA, añade una alerta en vez de corregir el número tú mismo.",
+    "Esto es un borrador para revisión humana antes de usarlo en el cierre fiscal, nunca lo des como dato definitivo sin que alguien lo mire."
+  ],
+  "uso_en_el_servicio": "Cada factura que sube el cliente pasa por este prompt antes de entrar en la hoja de cálculo del servicio de contabilidad automatizada. Las que salen con es_factura_valida en false o con alertas se apartan para revisión manual y no se cobran como facturas procesadas automáticamente."
+}

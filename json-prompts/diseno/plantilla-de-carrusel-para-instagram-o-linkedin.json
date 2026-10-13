@@ -1,0 +1,33 @@
+{
+  "tarea": "Crear la plantilla de carrusel de marca para la red indicada y aplicarla a un tema concreto",
+  "entradas": {
+    "marca": "[NOMBRE Y COLORES]",
+    "red": "[INSTAGRAM / LINKEDIN]",
+    "tema": "[SOBRE QUÉ VA ESTE CARRUSEL]",
+    "publico": "[A QUIÉN LE HABLAS]",
+    "cta": "[QUÉ QUIERES QUE HAGAN AL FINAL]"
+  },
+  "sistema_visual": [
+    "Lienzo de 1080x1350 px con márgenes de seguridad de 90 px por lado",
+    "Tres tipos de lámina: portada, contenido y cierre, todas con la misma rejilla",
+    "Titular arriba a la izquierda, cuerpo debajo y número de lámina abajo a la derecha",
+    "Solo 2 tamaños de texto por lámina y un único color de acento",
+    "Un elemento de continuidad entre láminas que invite a deslizar"
+  ],
+  "contenido": [
+    "Lámina 1: promesa concreta en menos de 10 palabras",
+    "Láminas intermedias: una idea por lámina, con ejemplo o dato",
+    "Penúltima: resumen en 3 puntos",
+    "Última: llamada a la acción con un motivo para hacerla ahora"
+  ],
+  "restricciones": [
+    "Entre 7 y 10 láminas",
+    "Sin texto en los 120 px inferiores si es Instagram",
+    "Sin promesas de resultados ni cifras inventadas"
+  ],
+  "formato_salida": "Por cada lámina: número, titular, texto visible de máximo 30 palabras, indicación visual y posición de cada elemento; después el pie de publicación y 8 etiquetas",
+  "criterios_calidad": [
+    "Cada lámina se entiende aunque se lea suelta",
+    "El sistema sirve para futuros carruseles cambiando solo el texto"
+  ]
+}

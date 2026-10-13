@@ -1,0 +1,68 @@
+{
+  "tarea": "Generar un conjunto de datos de prueba inventados siguiendo esta especificación al pie de la letra. Los datos no son de personas reales ni deben parecerlo.",
+  "para_que_se_usa": "[QUÉ VAS A PROBAR: UN FLUJO DE N8N QUE ENVÍA EMAILS, UNA HOJA DE SEGUIMIENTO COMERCIAL, UN CRM NUEVO]",
+  "salida": {
+    "formato": "[csv O json]",
+    "csv": {
+      "separador": ";",
+      "decimal": ",",
+      "fechas": "DD/MM/AAAA",
+      "codificacion": "UTF-8",
+      "cabecera": true
+    },
+    "json": {
+      "estructura": "array de objetos",
+      "decimal": ".",
+      "fechas": "AAAA-MM-DD"
+    },
+    "nombre_archivo": "PRUEBA_[TIPO]_[FECHA].[EXTENSION]",
+    "entregar": "primero el archivo completo en un bloque de código sin texto antes; después la lista de filas con errores intencionados"
+  },
+  "volumen": {
+    "filas": "[NÚMERO, POR EJEMPLO 30]",
+    "maximo_sin_confirmar": 500
+  },
+  "columnas": [
+    { "nombre": "id", "tipo": "entero", "regla": "correlativo desde 1, sin huecos" },
+    { "nombre": "nombre", "tipo": "texto", "regla": "nombres habituales en España con algo de variedad de origen; nada de famosos" },
+    { "nombre": "apellidos", "tipo": "texto", "regla": "dos apellidos separados por espacio" },
+    { "nombre": "email", "tipo": "texto", "regla": "solo dominios example.com, example.es o example.org" },
+    { "nombre": "telefono", "tipo": "texto", "regla": "formato 600 000 0XX, cambiando solo las dos últimas cifras" },
+    { "nombre": "ciudad", "tipo": "texto", "regla": "ciudad real de España" },
+    { "nombre": "provincia", "tipo": "texto", "regla": "provincia real y coherente con la ciudad" },
+    { "nombre": "codigo_postal", "tipo": "texto", "regla": "5 cifras, coherente con la provincia; conservar el cero inicial (08001)" },
+    { "nombre": "empresa", "tipo": "texto", "regla": "inventada; debe incluir la palabra Demo, Pruebas o Ficticia" },
+    { "nombre": "fecha_alta", "tipo": "fecha", "regla": "entre [FECHA INICIO] y [FECHA FIN], repartidas sin agruparse" },
+    { "nombre": "importe_eur", "tipo": "decimal", "regla": "entre 20 y 5000 con dos decimales; variedad real, no todos redondos" },
+    { "nombre": "estado", "tipo": "lista", "valores": ["activo", "inactivo", "moroso", "baja"], "reparto": "aprox. 60% activo, el resto repartido" }
+  ],
+  "columnas_extra_que_quiero": [
+    "[AÑADE AQUÍ COLUMNAS PROPIAS, POR EJEMPLO: origen_lead, comercial_asignado, interes]"
+  ],
+  "errores_intencionados": {
+    "porcentaje": 8,
+    "tipos": [
+      "email sin arroba",
+      "telefono vacio",
+      "codigo_postal de 4 cifras",
+      "fila duplicada exacta",
+      "fecha imposible como 31/02"
+    ],
+    "marcar_al_final": true
+  },
+  "prohibido": [
+    "DNI, NIF o CIF con letra de control calculada para números aleatorios",
+    "IBAN, números de cuenta o tarjetas, ni siquiera falsos",
+    "emails con gmail, hotmail, outlook o dominios de empresas reales",
+    "nombres de personas famosas, políticos o personajes",
+    "marcas o productos reales con precios reales",
+    "columnas que no estén en esta especificación",
+    "tildes o eñes en los nombres de columna"
+  ],
+  "comprobacion_final": [
+    "todas las filas tienen el mismo número de columnas",
+    "ningún email sale de los dominios example",
+    "los códigos postales cuadran con la provincia salvo los errores marcados",
+    "el número de filas coincide con el pedido"
+  ]
+}

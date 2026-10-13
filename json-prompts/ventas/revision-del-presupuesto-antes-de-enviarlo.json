@@ -1,0 +1,30 @@
+{
+  "tarea": "Revisar un presupuesto ya escrito y señalar qué falla antes de enviarlo",
+  "entradas": {
+    "texto_del_presupuesto": "[PEGA AQUÍ TU PRESUPUESTO COMPLETO]",
+    "cliente": "[QUIÉN LO VA A LEER Y QUÉ CARGO TIENE]",
+    "importe": "[IMPORTE TOTAL]",
+    "historial": "[CLIENTE NUEVO O YA HABÉIS TRABAJADO JUNTOS]"
+  },
+  "que_revisar": [
+    "Claridad: partidas que el cliente no entendería sin llamarte",
+    "Riesgo: alcance abierto, revisiones ilimitadas, plazos sin condiciones, materiales del cliente sin fecha",
+    "Precio: totales que no cuadran, IVA ausente, descuentos sin motivo",
+    "Persuasión: se explica el resultado o solo se listan tareas",
+    "Fricción: falta validez, forma de pago o siguiente paso",
+    "Tono: tecnicismos, palabras vacías y disculpas innecesarias",
+    "Lo que falta y suele provocar discusiones en este tipo de trabajo"
+  ],
+  "restricciones": [
+    "No reescribas el documento entero, solo lo que falla",
+    "Cita el fragmento original antes de cada corrección",
+    "Si algo está bien, dilo en una línea y no lo toques",
+    "Sé concreto: nada de mejorar la redacción sin dar la frase ya escrita"
+  ],
+  "formato_salida": "Lista de hallazgos por gravedad, cada uno con qué falla, por qué importa y la frase corregida; al final una nota de 0 a 10 y los tres cambios más rentables",
+  "criterios_calidad": [
+    "Cada hallazgo se puede aplicar en menos de un minuto",
+    "Los riesgos económicos aparecen antes que los de estilo",
+    "La nota va justificada con motivos concretos"
+  ]
+}

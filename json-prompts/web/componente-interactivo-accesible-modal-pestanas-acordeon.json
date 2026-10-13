@@ -1,0 +1,36 @@
+{
+  "tarea": "Dame la especificación y el código de un componente web interactivo accesible, con su comportamiento de teclado, foco y anuncios",
+  "contexto": {
+    "componente": "[VENTANA MODAL / ACORDEÓN / PESTAÑAS / MENÚ DESPLEGABLE / CARRUSEL / AVISO DE COOKIES]",
+    "para_que_sirve": "[QUÉ RESUELVE EN MI WEB]",
+    "contenido": "[QUÉ VA DENTRO: TEXTOS, BOTONES, FORMULARIO...]",
+    "tecnologia": "[HTML Y JAVASCRIPT SIN LIBRERÍAS / REACT / WORDPRESS / SHOPIFY]"
+  },
+  "debes_definir": [
+    "Etiquetas HTML nativas siempre que existan, y roles ARIA solo cuando no haya alternativa",
+    "Nombre accesible del componente y de cada control",
+    "Mapa de teclas: Tab, Mayúsculas+Tab, Enter, Espacio, Escape, flechas, Inicio y Fin",
+    "Gestión del foco: dónde entra al abrir, si queda atrapado dentro y a dónde vuelve al cerrar",
+    "Estados que hay que anunciar: expandido, seleccionado, oculto, cargando",
+    "Qué pasa con el resto de la página mientras el componente está abierto",
+    "Comportamiento con zoom al 200%, en móvil y con animaciones reducidas",
+    "Indicador de foco visible con contraste mínimo de 3:1"
+  ],
+  "formato_salida": {
+    "1_tabla_de_teclado": ["Tecla", "Qué hace", "Qué se anuncia"],
+    "2_html": "Marcado completo con los atributos correctos y comentarios fuera del bloque",
+    "3_js": "JavaScript mínimo necesario, sin dependencias",
+    "4_css": "Estilos del foco y de los estados",
+    "5_pruebas": "Lista de 8 comprobaciones para dar el componente por bueno"
+  },
+  "restricciones": [
+    "No uses div con clic donde deba ir un button o un enlace",
+    "No pongas tabindex con números positivos",
+    "No escondas contenido con display none si tiene que seguir siendo accesible",
+    "Nada de abrir el componente automáticamente sin que la persona lo pida, salvo que sea imprescindible"
+  ],
+  "criterios_calidad": [
+    "Funciona igual con ratón, teclado y pantalla táctil",
+    "Se puede cerrar o salir de él siempre, sin quedarse atrapado"
+  ]
+}

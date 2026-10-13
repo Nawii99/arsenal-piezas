@@ -1,0 +1,40 @@
+{
+  "tarea": "Aplicar STRIDE a cada componente y flujo del sistema y proponer mitigaciones concretas",
+  "metodo": {
+    "S": "Suplantación de identidad",
+    "T": "Manipulación de datos",
+    "R": "Repudio, negar que hiciste algo",
+    "I": "Fuga de información",
+    "D": "Denegación de servicio, tirar el sistema",
+    "E": "Elevación de privilegios, pasar de usuario normal a administrador"
+  },
+  "sistema": {
+    "nombre": "[NOMBRE DEL SISTEMA]",
+    "componentes": "[LISTA DE COMPONENTES: WEB, API, BASE DE DATOS, PANEL ADMIN, INTEGRACIONES]",
+    "tipos_de_usuario": "[ANÓNIMO, CLIENTE REGISTRADO, EMPLEADO, ADMINISTRADOR]",
+    "autenticacion_actual": "[CÓMO SE ENTRA HOY: CONTRASEÑA, GOOGLE, DOBLE FACTOR, NINGUNO]",
+    "datos_criticos": "[QUÉ DATOS DOLERÍA MÁS PERDER O FILTRAR]"
+  },
+  "instrucciones": [
+    "Recorre componente por componente y, en cada uno, valora las seis letras de STRIDE",
+    "Descarta explícitamente las que no apliquen y explica en una línea por qué",
+    "Para cada amenaza describe un escenario realista y concreto, con quién ataca y qué consigue",
+    "Propón una mitigación principal y una alternativa más barata para negocios pequeños",
+    "Indica si la mitigación depende de mí o de un proveedor"
+  ],
+  "restricciones": [
+    "Nada de instrucciones para atacar: describe el riesgo, no el modo de explotarlo paso a paso",
+    "Mínimo dos amenazas por componente y máximo seis, quédate con las que más duelen",
+    "Prohibido el relleno tipo revisar la seguridad periódicamente"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown",
+    "columnas": ["ID", "Componente", "Letra STRIDE", "Escenario en una frase", "Impacto en el negocio", "Probabilidad (alta/media/baja)", "Mitigación", "Quién lo hace"],
+    "cierre": "Resumen ejecutivo de 5 líneas para alguien sin perfil técnico"
+  },
+  "criterios_calidad": [
+    "Los escenarios son específicos de mi sistema, no frases genéricas de manual",
+    "Cada mitigación es una acción concreta y comprobable",
+    "El repudio y la elevación de privilegios no se despachan con una línea vacía"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Diseñar la estrategia de caché de [NOMBRE DE TU PRODUCTO] capa por capa, con tiempos de vida, invalidación y riesgos",
+  "contexto": {
+    "producto": "[QUÉ HACE Y QUIÉN LO USA]",
+    "tecnologia": "[LENGUAJE Y FRAMEWORK], base de datos [BASE DE DATOS], CDN [CDN QUE USAS O NINGUNA]",
+    "trafico": "[PETICIONES AL DÍA] y páginas más visitadas: [LISTA DE PÁGINAS]"
+  },
+  "entradas": {
+    "datos_a_cachear": [
+      { "nombre": "[TIPO DE DATO 1]", "cambia_cada": "[CADA CUÁNTO CAMBIA]", "desfase_tolerable": "[SEGUNDOS O MINUTOS ACEPTABLES]", "es_personal": "[SÍ O NO]" },
+      { "nombre": "[TIPO DE DATO 2]", "cambia_cada": "[CADA CUÁNTO CAMBIA]", "desfase_tolerable": "[SEGUNDOS O MINUTOS ACEPTABLES]", "es_personal": "[SÍ O NO]" }
+    ],
+    "datos_que_nunca_deben_cachearse": "[EJEMPLO: CARRITO, PANEL DE USUARIO, STOCK EXACTO]"
+  },
+  "capas_a_cubrir": ["navegador y cabeceras HTTP", "CDN o proxy delante", "caché en memoria de la aplicación", "caché compartida tipo Redis", "resultados de consultas a base de datos", "respuestas de APIs externas"],
+  "metodo": [
+    "Para cada dato, elige la capa más cercana al usuario que sea segura y justifica por qué",
+    "Propón un tiempo de vida concreto derivado del desfase tolerable, no un número al azar",
+    "Define cómo se invalida: por tiempo, por evento al guardar, o por versión en la clave",
+    "Diseña el nombre de la clave de caché e incluye lo que la hace única (idioma, usuario, versión del contenido)",
+    "Cubre los fallos típicos: datos privados servidos a otro usuario, avalancha al caducar todo a la vez, caché que no se borra al editar, y qué pasa si la caché se cae"
+  ],
+  "restricciones": [
+    "Nada de cachear datos personales en capas compartidas",
+    "El sistema debe seguir funcionando aunque la caché esté vacía o caída",
+    "Herramientas disponibles: [LO QUE PUEDES USAR O CONTRATAR]"
+  ],
+  "formato_salida": {
+    "tipo": "tabla + fichas",
+    "tabla": "columnas: dato | capa | clave | tiempo de vida | cómo se invalida | riesgo si falla",
+    "extras": ["Cabeceras HTTP recomendadas con ejemplo", "Orden de implantación en 3 pasos", "Métricas de acierto de caché a vigilar"]
+  },
+  "criterios_calidad": [
+    "Cada tiempo de vida está justificado con una frase",
+    "Ningún dato personal acaba en CDN o caché compartida sin separar por usuario",
+    "Incluye qué hacer el día que haya que vaciar la caché entera"
+  ],
+  "tono": "práctico, con ejemplos concretos y sin teoría de más"
+}

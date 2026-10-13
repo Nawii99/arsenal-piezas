@@ -1,0 +1,41 @@
+{
+  "tarea": "Redactar una propuesta comercial con tres opciones de precio comparables y una opción recomendada",
+  "contexto": {
+    "proveedor": "[TU NOMBRE O EMPRESA] que vende [SERVICIO O PRODUCTO]",
+    "cliente": "[NOMBRE DEL CLIENTE Y A QUÉ SE DEDICA]",
+    "problema_del_cliente": "[QUÉ LE DUELE Y QUÉ HA PEDIDO EN LA REUNIÓN O EL EMAIL]",
+    "resultado_que_busca": "[MÁS VENTAS, MENOS TIEMPO, CUMPLIR UN PLAZO, ETC.]"
+  },
+  "entradas": {
+    "precio_referencia": "[PRECIO QUE TENÍAS EN MENTE PARA EL TRABAJO ESTÁNDAR]",
+    "entregables_posibles": "[LISTA DE TODO LO QUE PODRÍAS INCLUIR]",
+    "plazos": "[FECHAS O SEMANAS DE ENTREGA]",
+    "limites": "[LO QUE NO HACES O NO ESTÁ INCLUIDO NUNCA]"
+  },
+  "reglas_de_precio": [
+    "La opción recomendada es la del medio y debe ser la que más te interesa vender",
+    "El paquete básico resuelve el problema pero sin extras, no debe parecer una trampa",
+    "El premium se diferencia por alcance, velocidad o acompañamiento, nunca solo por precio",
+    "Los tres paquetes se describen con los mismos conceptos para que se puedan comparar de un vistazo",
+    "Cada precio se presenta junto al resultado que compra, no como una lista de tareas"
+  ],
+  "formato_salida": {
+    "apertura": "Párrafo corto que resume lo que el cliente contó, con sus palabras",
+    "tabla_comparativa": "Filas de conceptos y tres columnas de paquete con incluido o no incluido",
+    "detalle_por_paquete": "Nombre, para quién es, qué incluye, plazo, precio sin IVA y precio con IVA",
+    "recomendacion": "Dos o tres líneas diciendo cuál elegirías tú y por qué, según lo que contó el cliente",
+    "condiciones": "Forma de pago, validez de la oferta, qué necesitas del cliente para empezar",
+    "cierre": "Siguiente paso concreto con fecha propuesta"
+  },
+  "restricciones": [
+    "Máximo una página y media de texto",
+    "Nada de descuentos ni de promesas de resultados",
+    "Sin tecnicismos: si aparece un término del oficio, explicarlo en cinco palabras"
+  ],
+  "criterios_calidad": [
+    "Un cliente sin conocimientos entiende la diferencia entre paquetes en menos de un minuto",
+    "Los tres precios están calculados sobre el alcance real, no inventados alrededor de una cifra",
+    "Queda claro qué pasa si el cliente pide algo fuera de lo incluido"
+  ],
+  "tono": "Profesional, cercano, en español de España, tuteando si el trato ya es de tú"
+}

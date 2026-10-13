@@ -1,0 +1,40 @@
+{
+  "tarea": "Adaptar un texto escrito en español de España al español de [PAÍS DE DESTINO], ajustando léxico, tratamiento, referencias y formatos",
+  "contexto": {
+    "pais_destino": "[MÉXICO, COLOMBIA, ARGENTINA, CHILE, PERÚ...]",
+    "canal": "[WEB, EMAIL, REDES, ANUNCIO, ATENCIÓN AL CLIENTE]",
+    "producto": "[QUÉ VENDES]",
+    "formalidad": "[CERCANA, NEUTRA O FORMAL]",
+    "moneda_y_precios": "[MONEDA LOCAL Y SI HAY QUE CONVERTIR O DEJAR EN EUROS]"
+  },
+  "entradas": {
+    "texto_original": "[PEGA AQUÍ TU TEXTO EN ESPAÑOL DE ESPAÑA]",
+    "terminos_de_marca": "[PALABRAS QUE NO SE TOCAN NUNCA]"
+  },
+  "reglas_de_adaptacion": [
+    "Ajustar el tratamiento del país: usted o tú en singular, ustedes en plural, voseo si corresponde en Argentina o Uruguay",
+    "Cambiar el léxico peninsular por el local: coche, móvil, ordenador, piso, tarta, zumo, vale, currar y similares",
+    "Eliminar expresiones y muletillas de España como guay, chaval, mola, tío, joder, flipar o hostia",
+    "Revisar palabras con significado ofensivo o sexual en el país de destino antes de dejarlas",
+    "Adaptar referencias locales: festivos, horarios de comida, instituciones, ejemplos de ciudades",
+    "Ajustar formatos de fecha, moneda, teléfono y separadores de miles y decimales del país",
+    "Subir un punto la cortesía por defecto: en gran parte de Latinoamérica el registro directo español se percibe como brusco"
+  ],
+  "restricciones": [
+    "No usar un español neutro sin sabor: el texto debe sonar del país concreto indicado",
+    "No mezclar léxico de varios países en la misma pieza",
+    "No cambiar precios ni condiciones comerciales sin indicación expresa"
+  ],
+  "formato_salida": {
+    "bloque_1": "Texto adaptado listo para publicar",
+    "bloque_2": "Tabla de sustituciones: término España, término local, motivo",
+    "bloque_3": "Riesgos detectados: palabras o chistes que podían sentar mal y qué se ha hecho con ellos",
+    "bloque_4": "Tres preguntas para validar con alguien nativo antes de publicar"
+  },
+  "criterios_calidad": [
+    "Un lector del país lo daría por escrito en su país",
+    "El tratamiento es coherente de principio a fin, sin mezclar tú y vos o tú y usted",
+    "No queda ninguna expresión exclusiva de España sin justificar",
+    "Los formatos numéricos y de fecha corresponden al país de destino"
+  ]
+}

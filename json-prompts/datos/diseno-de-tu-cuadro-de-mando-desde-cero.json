@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseña el cuadro de mando de mi negocio: qué indicadores debo mirar, cómo se calculan y cómo se organizan en pantalla",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "modelo_de_ingresos": "[VENTA PUNTUAL / SUSCRIPCIÓN / SERVICIOS POR HORAS / TIENDA ONLINE / LOCAL FÍSICO]",
+    "herramientas": "[EXCEL, GOOGLE SHEETS, LOOKER STUDIO, SHOPIFY, TPV, CRM...]",
+    "quien_lo_mira": "[TÚ / EQUIPO DE VENTAS / SOCIOS]",
+    "frecuencia": "[DIARIA / SEMANAL / MENSUAL]"
+  },
+  "entradas": {
+    "objetivo_del_ano": "[OBJETIVO PRINCIPAL: FACTURAR X, ABRIR LOCAL, REDUCIR BAJAS...]",
+    "datos_que_tengo": "[LISTA DE DATOS DISPONIBLES Y DÓNDE ESTÁN]",
+    "decisiones_habituales": "[QUÉ DECIDES CADA SEMANA: PRESUPUESTO, STOCK, TURNOS, PRECIOS]"
+  },
+  "metodo": [
+    "Parte de las decisiones, no de los datos: cada indicador debe cambiar una decisión concreta",
+    "Propón ocho indicadores como máximo y justifica los descartes típicos como visitas, seguidores o me gusta",
+    "Separa indicadores de resultado, que llegan con retraso, de indicadores de actividad, que puedo mover hoy",
+    "Define para cada indicador un umbral verde, ámbar y rojo coherente con las cifras del negocio",
+    "Ordena la pantalla en tres bloques: cómo vamos, de dónde viene y qué está fallando"
+  ],
+  "formato_salida": {
+    "tabla_indicadores": "Columnas: bloque | indicador | qué pregunta responde | fórmula exacta | fuente del dato | frecuencia | verde/ámbar/rojo",
+    "boceto_de_pantalla": "Descripción por filas de qué va arriba, en el centro y abajo, y qué gráfico usar en cada hueco",
+    "lista_de_descartes": "Indicadores que conviene NO poner y el motivo",
+    "plan_de_montaje": "Pasos numerados para construirlo con mis herramientas, empezando por una versión mínima"
+  },
+  "restricciones": [
+    "Nada que exija programar ni contratar software nuevo, salvo que lo señales aparte como opcional",
+    "Cada fórmula explicada con palabras entendibles, no solo en lenguaje técnico",
+    "Si falta un dato para calcular un indicador, propón un sustituto aproximado"
+  ],
+  "criterios_calidad": [
+    "El panel cabe en una pantalla sin tener que desplazarse",
+    "Cada indicador tiene responsable, umbral y acción asociada si se pone en rojo",
+    "Se puede montar en una tarde con lo que ya tengo"
+  ]
+}

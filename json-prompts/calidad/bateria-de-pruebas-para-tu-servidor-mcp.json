@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribe la batería de pruebas de aceptación de mi servidor MCP: casos concretos, qué herramienta debería llamar el agente, con qué datos y qué resultado se considera correcto",
+  "contexto": {
+    "servidor": "[NOMBRE DEL SERVIDOR MCP]",
+    "herramientas": "[PEGA LA LISTA DE HERRAMIENTAS Y SUS PARÁMETROS]",
+    "tareas_que_debe_cubrir": "[LO QUE EL AGENTE TIENE QUE SABER HACER]",
+    "entorno_de_pruebas": "[CUENTA DE PRUEBAS / DATOS FALSOS / DATOS REALES]"
+  },
+  "tipos_de_caso_obligatorios": [
+    "Camino normal: la petición típica del día a día",
+    "Ambigüedad: petición poco clara, el agente debería preguntar en vez de inventar",
+    "Elección entre herramientas parecidas",
+    "Datos que no existen o resultado vacío",
+    "Límites: muchos resultados, texto muy largo, fechas raras, acentos y ñ",
+    "Permisos: intentar una acción no autorizada",
+    "Acción que modifica datos: debe pedir confirmación antes",
+    "Fallo del servicio conectado: caído o lento",
+    "Intento de manipulación: contenido leído que incluye instrucciones ocultas"
+  ],
+  "instrucciones": [
+    "Genera entre 12 y 20 casos repartidos entre todos los tipos obligatorios",
+    "Escribe cada petición tal cual la diría una persona del equipo, en español coloquial",
+    "Indica la herramienta esperada y los argumentos que debería usar",
+    "Define el resultado correcto y también qué se consideraría un fallo",
+    "Marca cada caso como bloqueante o no bloqueante para dar por buena la entrega"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown",
+    "columnas": ["ID", "Tipo de caso", "Lo que pide el usuario", "Herramienta esperada", "Argumentos esperados", "Resultado correcto", "Se considera fallo si", "Bloqueante"],
+    "al_final": ["Datos de prueba que necesito preparar", "Regla de aceptación: qué porcentaje y qué casos bloqueantes deben pasar"]
+  },
+  "criterios_calidad": [
+    "Todos los tipos obligatorios tienen al menos un caso",
+    "Cada caso lo puede ejecutar una persona sin perfil técnico copiando la petición",
+    "El resultado correcto está descrito de forma que no admite interpretación"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tarea": "Redactar el email de cierre de una secuencia de seguimiento sin respuesta",
+  "entradas": {
+    "cliente": "[NOMBRE Y EMPRESA]",
+    "propuesta": "[QUÉ LE OFRECISTE]",
+    "contactos_previos": "[CUÁNTOS MENSAJES Y EN CUÁNTAS SEMANAS]",
+    "ultimo_acuerdo": "[EN QUÉ QUEDASTEIS LA ÚLTIMA VEZ QUE HABLASTEIS]"
+  },
+  "instrucciones": [
+    "Asume la responsabilidad del silencio en vez de reprochárselo",
+    "Da por cerrado el tema de forma clara: dile que dejas de escribirle",
+    "Ofrece tres respuestas de una sola palabra o número para que le cueste nada contestar (por ejemplo: 1 sigue interesando, 2 más adelante, 3 no)",
+    "Deja la puerta abierta sin condiciones ni resentimiento",
+    "Escribe dos versiones: una para cliente frío y otra para cliente con el que ya hubo buena relación"
+  ],
+  "restricciones": [
+    "Máximo 90 palabras, sin adjuntos y sin repetir la propuesta entera",
+    "Nada de ironía, culpa ni 'entiendo que no te interesa' en tono seco",
+    "No pedir una llamada: la respuesta debe poder ser un número"
+  ],
+  "formato_salida": {
+    "por_version": ["asunto (máximo 6 palabras)", "cuerpo del email", "cuándo enviarla"],
+    "extra": "Qué hacer con cada una de las tres respuestas posibles, en una línea cada una"
+  },
+  "criterios_calidad": [
+    "El email no suena dolido ni pasivo-agresivo",
+    "Contestar cuesta menos de 5 segundos",
+    "Si el cliente no responde, la relación queda intacta para dentro de un año"
+  ]
+}

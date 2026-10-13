@@ -1,0 +1,34 @@
+{
+  "tarea": "Reescribe los textos de mi web en lenguaje claro, para que cualquier persona los entienda a la primera lectura",
+  "contexto": {
+    "textos_originales": "[PEGA AQUÍ LOS TEXTOS TAL CUAL ESTÁN]",
+    "a_quien_van": "[PERFIL DE QUIEN LOS LEE: EDAD, CONOCIMIENTOS, SITUACIÓN]",
+    "accion_deseada": "[QUÉ QUIERO QUE HAGAN DESPUÉS DE LEER]",
+    "vocabulario_obligatorio": "[TÉRMINOS DEL SECTOR QUE NO SE PUEDEN QUITAR]"
+  },
+  "reglas_de_lenguaje_claro": [
+    "Una idea por frase y frases de menos de 20 palabras de media",
+    "Voz activa y tú como tratamiento, siempre igual en toda la página",
+    "Explica cada término técnico la primera vez, en la misma frase",
+    "Sustituye lo abstracto por lo concreto: qué pasa, cuándo y quién lo hace",
+    "Los enlaces y botones dicen a dónde llevan o qué hacen, nada de 'más información'",
+    "Convierte los procesos en pasos numerados y las condiciones en lista",
+    "Cifras y fechas en formato español, sin abreviaturas raras",
+    "Nada de mayúsculas sostenidas ni de texto en negrita para párrafos enteros"
+  ],
+  "formato_salida": {
+    "1_comparativa": "Tabla con columnas: texto original, texto reescrito y qué se ha simplificado",
+    "2_version_final": "Los textos listos para pegar, con sus títulos y subtítulos",
+    "3_resumen_facil": "Un bloque de 5 líneas al principio de cada página, con lo esencial",
+    "4_medidas": "Media de palabras por frase antes y después, y palabras difíciles eliminadas"
+  },
+  "restricciones": [
+    "No cambies el significado ni suavices condiciones, precios o plazos",
+    "No añadas promesas ni datos que no estén en el original",
+    "Español de España, sin anglicismos evitables"
+  ],
+  "criterios_calidad": [
+    "Alguien ajeno al sector sabe qué tiene que hacer después de leer",
+    "No queda ninguna palabra técnica sin explicar"
+  ]
+}

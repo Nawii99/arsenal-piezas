@@ -1,0 +1,60 @@
+{
+  "tarea": "Diseñar y ejecutar una prueba A/B casera en [URL_PAGINA] para mejorar [ACCIÓN_OBJETIVO]",
+  "contexto": {
+    "negocio": "[NOMBRE Y QUÉ VENDE]",
+    "pagina": "[URL Y PARA QUÉ SIRVE]",
+    "accion_objetivo": "[ENVÍO DE FORMULARIO / CLIC EN COMPRAR / RESERVA]",
+    "perfil_lector": "Sin perfil técnico, publica cambios en la web y sabe leer un panel de analítica sencillo"
+  },
+  "entradas": {
+    "visitas_mensuales_a_la_pagina": "[NÚMERO]",
+    "conversiones_mensuales_actuales": "[NÚMERO]",
+    "contenido_actual": "[PEGA EL TITULAR, EL SUBTÍTULO Y EL TEXTO DEL BOTÓN]",
+    "sospecha": "[QUÉ CREES QUE FRENA A LA GENTE]",
+    "canales_de_trafico": "[DE DÓNDE LLEGAN LAS VISITAS]"
+  },
+  "procedimiento": [
+    "1. Calcula la conversión actual y comprueba si hay volumen suficiente: con menos de unas 200 visitas al mes por versión, no hagas test, haz cambios grandes y observa",
+    "2. Formula una hipótesis con esta forma: si cambio X por Y, la acción objetivo subirá porque Z",
+    "3. Cambia una sola cosa relevante: titular, promesa, precio mostrado, orden de secciones o botón; no cambies el color de un botón esperando milagros",
+    "4. Elige el método sencillo: dos URLs distintas repartiendo el tráfico desde los enlaces de campaña, o cambio secuencial por periodos iguales",
+    "5. Define de antemano cuánto va a durar y cuántas conversiones necesitas para decidir",
+    "6. Etiqueta ambas versiones para poder separar los datos",
+    "7. Deja correr la prueba entera sin mirar cada día ni cortarla al primer día bueno",
+    "8. Compara y decide: gana, pierde o no hay diferencia clara; el empate también es información",
+    "9. Implementa la ganadora, apunta el aprendizaje y plantea la siguiente prueba"
+  ],
+  "que_mirar": [
+    "Que el tráfico de las dos versiones venga de las mismas fuentes",
+    "Que no coincida con rebajas, festivos o una campaña puntual",
+    "Que el periodo cubra semanas completas: los fines de semana no se comportan igual",
+    "Que ambas versiones carguen a la misma velocidad",
+    "Que la diferencia sea grande y no un dos por ciento con cuarenta conversiones"
+  ],
+  "errores_tipicos": [
+    "Parar la prueba en cuanto una versión va ganando",
+    "Cambiar cinco cosas a la vez y no saber cuál funcionó",
+    "Probar con tan pocas visitas que el resultado es puro azar",
+    "Contar clics en el botón en lugar de conversiones completadas",
+    "Dejar la versión perdedora publicada por olvido"
+  ],
+  "restricciones": [
+    "Solo herramientas gratuitas y cambios que se puedan publicar a mano",
+    "Nada de estadística complicada: reglas de decisión claras y prudentes",
+    "Si no hay volumen suficiente, dilo y propón una alternativa"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Conversión actual, si hay volumen para testar y qué probar primero",
+    "2_hipotesis": "Tres hipótesis ordenadas por impacto esperado, con su justificación",
+    "3_variantes": "Texto completo de la versión A y de la versión B, listas para publicar",
+    "4_montaje": "Pasos para publicar ambas, repartir el tráfico y etiquetarlas",
+    "5_regla_de_decision": "Duración, conversiones mínimas y qué diferencia se considera ganadora",
+    "6_registro": "Plantilla de una fila por prueba: fecha, hipótesis, resultado y aprendizaje"
+  },
+  "criterios_calidad": [
+    "La prueba cambia un solo elemento y está escrito cuál",
+    "La regla de decisión está fijada antes de empezar",
+    "Las dos variantes están redactadas enteras, no descritas",
+    "Si no hay volumen, se dice sin rodeos y se propone otra vía"
+  ]
+}

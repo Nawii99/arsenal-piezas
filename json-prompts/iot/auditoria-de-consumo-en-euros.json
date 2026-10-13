@@ -1,0 +1,57 @@
+{
+  "tarea": "Convertir lecturas de enchufes medidores o de un medidor de cuadro en euros al ano por aparato, y proponer acciones de ahorro ordenadas por rentabilidad.",
+  "contexto": {
+    "lugar": "[VIVIENDA / BAR / TIENDA / TALLER / OFICINA]",
+    "tarifa": {
+      "tipo": "[FIJA / PVPC POR HORAS / CON DISCRIMINACION HORARIA]",
+      "precio_kwh": "[EUROS POR kWh, IVA INCLUIDO, SEGUN MI FACTURA]",
+      "potencia_contratada_kw": "[kW]",
+      "coste_potencia_mes": "[EUROS AL MES]"
+    },
+    "horario_de_uso": "[HORAS DE APERTURA O DE PRESENCIA EN CASA]"
+  },
+  "entradas": {
+    "lecturas": "[TABLA: APARATO | POTENCIA MEDIA EN W | HORAS AL DIA ENCENDIDO | O BIEN kWh ACUMULADOS Y DIAS DE MEDIDA]",
+    "dias_de_medicion": "[NUMERO DE DIAS]",
+    "factura_reciente": "[TOTAL EUROS Y kWh DEL ULTIMO MES SI LOS TIENES]"
+  },
+  "calculos_obligatorios": [
+    "kWh al dia = potencia media en W x horas encendido / 1000",
+    "Coste anual = kWh al dia x 365 x precio del kWh",
+    "Si hay kWh acumulados: kWh al ano = kWh medidos / dias de medida x 365",
+    "Consumo fantasma = potencia en reposo x horas apagado / 1000, convertido a euros al ano",
+    "Retorno de una mejora = coste de la mejora / ahorro anual, expresado en anos y meses"
+  ],
+  "procedimiento": [
+    "1. Comprueba que la medicion cubre al menos 7 dias e incluye un fin de semana; si no, avisa de que el dato es debil.",
+    "2. Calcula euros al ano por aparato y ordena de mayor a menor.",
+    "3. Separa consumo util de consumo fantasma o en reposo.",
+    "4. Suma el total estimado y compara con la factura real: si difiere mas de un 25 por ciento, di que falta medir algo y que puede ser.",
+    "5. Detecta picos simultaneos que puedan hacer saltar la potencia contratada y propon escalonar arranques.",
+    "6. Propon acciones en tres grupos: gratis, barato de menos de 100 euros y con inversion.",
+    "7. Calcula el retorno de cada accion y descarta las que tarden mas de 4 anos."
+  ],
+  "errores_tipicos": [
+    "Multiplicar la potencia de la etiqueta por 24 horas: los frigorificos y calderas arrancan y paran.",
+    "Olvidar el termino de potencia: bajar kW contratados a veces ahorra mas que apagar aparatos.",
+    "Medir un aparato con un enchufe medidor de 10 A cuando consume mas: peligro y lectura falsa.",
+    "Prometer ahorros sin decir que dependen del precio del kWh, que cambia."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: APARATO | W MEDIOS | HORAS DIA | kWh AL ANO | EUROS AL ANO | PORCENTAJE DEL TOTAL",
+    "bloque_2": "Los cinco mayores consumidores con una frase de que hacer con cada uno",
+    "bloque_3": "Consumo fantasma total en euros al ano y de donde sale",
+    "bloque_4": "Tabla de acciones: ACCION | COSTE | AHORRO ANUAL ESTIMADO | RETORNO | MOLESTIA PARA EL USUARIO",
+    "bloque_5": "Nota de incertidumbre: que dato es flojo y como mejorarlo"
+  },
+  "restricciones": [
+    "No inventes precios de kWh: usa el que aporte el usuario o pidelo.",
+    "Presenta los ahorros como estimacion con rango, nunca como garantia.",
+    "Euros con dos decimales y kWh con uno."
+  ],
+  "criterios_calidad": [
+    "Los numeros cuadran: la suma de la tabla coincide con el total declarado.",
+    "Toda cifra se puede recalcular a mano con los datos mostrados.",
+    "Hay al menos una accion gratis que se puede aplicar hoy."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "tarea": "Crear una batería de preguntas de prueba con respuesta esperada y criterio de aprobado para evaluar un agente que responde con documentos propios",
+  "contexto": {
+    "agente": "[QUÉ HACE Y PARA QUIÉN]",
+    "canal": "[WEB, WHATSAPP, INTERNO]"
+  },
+  "entradas": {
+    "preguntas_reales": "[PEGA LAS QUE OS HACEN DE VERDAD]",
+    "documentos": "[RESUMEN DE LO QUE HAY CARGADO]",
+    "limites": "[TEMAS QUE EL AGENTE NO DEBE TRATAR]"
+  },
+  "procedimiento": [
+    "Genera 25 preguntas repartidas así: 10 fáciles de dato directo, 5 que exigen juntar dos documentos, 4 formuladas con las palabras torpes de un cliente real, 3 sobre temas prohibidos, 2 con un dato falso metido a propósito y 1 sin respuesta posible en los documentos.",
+    "Para cada una escribe la respuesta esperada en una o dos frases y de qué documento debería salir.",
+    "Define el criterio de aprobado: qué tiene que aparecer sí o sí y qué invalida la respuesta.",
+    "En las preguntas trampa, la respuesta correcta es reconocer que no lo sabe o corregir el dato falso.",
+    "Añade una hoja de puntuación simple para anotar aprobado, regular o suspenso."
+  ],
+  "formato_salida": {
+    "tipo": "tabla lista para copiar a una hoja de cálculo",
+    "columnas": ["Nº", "Tipo de prueba", "Pregunta", "Respuesta esperada", "Documento fuente", "Aprobado si...", "Suspenso si..."],
+    "cierre": "regla de decisión final: cuántos fallos y de qué tipo bloquean la puesta en marcha"
+  },
+  "restricciones": [
+    "Nada de preguntas de laboratorio: usa el vocabulario de un cliente real, con faltas incluidas",
+    "No inventes datos de la empresa para las respuestas esperadas; si falta, escribe [COMPLETAR]"
+  ],
+  "criterios_calidad": [
+    "Cualquier persona del equipo puede pasar el test sin ayuda",
+    "Las trampas detectan invenciones, no solo errores",
+    "El resultado es un sí o un no claros"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar la respuesta a un cliente que quiere cancelar o darse de baja, con intento de retención honesto",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "tipo_servicio": "[SUSCRIPCIÓN / IGUALA MENSUAL / CITAS RECURRENTES / CONTRATO]",
+    "canal": "[EMAIL / WHATSAPP / TELÉFONO]"
+  },
+  "entradas": {
+    "mensaje_del_cliente": "[PEGA LO QUE TE HA ESCRITO]",
+    "motivo_declarado": "[PRECIO / FALTA DE USO / MAL SERVICIO / SE VA A LA COMPETENCIA / MOTIVO PERSONAL]",
+    "antiguedad": "[TIEMPO QUE LLEVA CONTIGO]",
+    "cuanto_paga": "[IMPORTE Y PERIODICIDAD]",
+    "que_puedo_ofrecer": "[PAUSA, CAMBIO DE PLAN, DESCUENTO TEMPORAL, SESIÓN DE AJUSTE]",
+    "hasta_donde_llego": "[LÍMITE QUE NO PIENSAS PASAR]"
+  },
+  "pasos": [
+    "Distingue si el motivo declarado es el real o hay otro detrás y dilo en una nota interna",
+    "Acepta la baja sin poner trabas en la primera frase: nada de retenerle a la fuerza",
+    "Haz una sola pregunta que abra conversación, no un cuestionario",
+    "Propón como mucho dos alternativas, la primera que no sea bajar el precio",
+    "Deja claro cómo se cancela y en qué fecha deja de pagar, aunque acabes reteniéndole"
+  ],
+  "restricciones": [
+    "Prohibido culpabilizar, dramatizar o usar cuentas atrás",
+    "No ofrecer descuentos permanentes por defecto",
+    "Máximo 130 palabras",
+    "Si el motivo es un mal servicio, primero se arregla y luego se ofrece algo"
+  ],
+  "formato_salida": {
+    "1_respuesta": "mensaje listo para enviar",
+    "2_variante_sin_oferta": "para cuando no merece la pena retener",
+    "3_mensaje_de_despedida": "para dejar la puerta abierta a que vuelva",
+    "4_nota_interna": "motivo real probable y qué habría que cambiar en el negocio"
+  },
+  "criterios_calidad": [
+    "El cliente puede irse sin fricción si insiste",
+    "La oferta de retención es coherente con el motivo, no un descuento genérico"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Detectar los puntos de tensión de caja de los próximos meses y devolver un plan de medidas ordenado por dinero liberado y facilidad",
+  "rol": "Consultor de tesorería que ha sacado a pymes de apuros de caja sin financiación cara",
+  "contexto": {
+    "negocio": "[A QUÉ TE DEDICAS]",
+    "horizonte": "[NÚMERO DE MESES QUE QUIERES REVISAR]",
+    "colchon_objetivo": "[SALDO MÍNIMO QUE QUIERES MANTENER SIEMPRE]"
+  },
+  "entradas": {
+    "saldos_previstos": "[SALDO PREVISTO AL FINAL DE CADA MES]",
+    "facturas_por_cobrar": "[CLIENTE, IMPORTE, FECHA DE VENCIMIENTO Y DÍAS DE RETRASO]",
+    "pagos_comprometidos": "[PROVEEDOR, IMPORTE, FECHA Y SI ADMITE APLAZAMIENTO]",
+    "financiacion_disponible": "[LÍNEA DE CRÉDITO, TARJETA O FONDOS PROPIOS Y SU COSTE]",
+    "gastos_prescindibles": "[SUSCRIPCIONES, COMPRAS O PROYECTOS QUE PODRÍAS APLAZAR]"
+  },
+  "metodo": [
+    "Cuantificar cada hueco: euros que faltan, fecha en que aparece y días que dura",
+    "Buscar primero dinero que ya es tuyo: cobros atrasados, anticipos y gastos aplazables",
+    "Después mover fechas de pago, y solo al final proponer financiación con su coste estimado",
+    "Valorar cada medida por importe, días que tarda en hacer efecto y riesgo con el cliente o proveedor",
+    "Señalar los pagos que nunca se retrasan: nóminas, impuestos y seguros sociales"
+  ],
+  "restricciones": [
+    "No proponer dejar de pagar impuestos ni cotizaciones",
+    "No sugerir medidas que quemen la relación con un cliente que sostiene el negocio",
+    "Decir siempre el coste aproximado de cada opción de financiación"
+  ],
+  "formato_salida": {
+    "tipo": "informe corto de una página",
+    "secciones": ["Huecos detectados", "Tabla de medidas con importe, plazo y esfuerzo", "Plan por orden de ejecución", "Qué hacer esta misma semana"]
+  },
+  "criterios_calidad": [
+    "La suma de las medidas cubre el hueco más grande",
+    "Cada medida indica quién la ejecuta y en qué fecha",
+    "Se distingue lo que soluciona el problema de lo que solo lo aplaza"
+  ]
+}

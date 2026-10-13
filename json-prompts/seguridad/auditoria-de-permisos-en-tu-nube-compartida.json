@@ -1,0 +1,40 @@
+{
+  "tarea": "Auditar los permisos y enlaces compartidos de la nube de una pyme y proponer la limpieza",
+  "contexto": {
+    "empresa": "[NOMBRE DE LA EMPRESA]",
+    "nube": "[GOOGLE DRIVE / ONEDRIVE / DROPBOX / OTRA]",
+    "personas": "[NÚMERO DE PERSONAS CON CUENTA]",
+    "externos_con_acceso": "[GESTORÍA, FREELANCES, AGENCIA, CLIENTES]"
+  },
+  "entradas": {
+    "carpetas_principales": "[NOMBRE DE CARPETA Y QUÉ CONTIENE]",
+    "listado_de_permisos": "[PEGA AQUÍ QUIÉN TIENE ACCESO A CADA CARPETA, SI LO TIENES]",
+    "enlaces_publicos": "[ENLACES DE TIPO CUALQUIERA CON EL ENLACE QUE SEPAS QUE EXISTEN]",
+    "datos_sensibles": "[NÓMINAS, CONTRATOS, DATOS DE SALUD, TARJETAS, PRESUPUESTOS]"
+  },
+  "metodo": [
+    "Clasificar cada carpeta en pública interna, confidencial o restringida a dirección",
+    "Detectar los tres problemas típicos: enlaces abiertos a cualquiera, externos que ya no trabajan contigo y personas con permiso de edición cuando solo necesitan leer",
+    "Comprobar quién es el propietario de cada carpeta: si es una cuenta personal o de alguien que se fue, marcarlo como riesgo alto",
+    "Proponer una estructura simple de tres niveles y a quién corresponde cada uno",
+    "Indicar los pasos exactos para revocar un enlace, quitar a un externo y cambiar de propietario en la nube indicada",
+    "Definir la revisión periódica: cada cuánto, quién y con qué lista"
+  ],
+  "restricciones": [
+    "No proponer migrar de plataforma: trabajar con la que ya se paga",
+    "Cada hallazgo lleva un nivel de gravedad y una acción concreta, nunca un consejo genérico",
+    "Avisar de los efectos secundarios: qué se puede romper al quitar un permiso y a quién avisar antes",
+    "Si no se aportan datos de permisos, entregar primero la guía para exportar o revisar esa lista"
+  ],
+  "formato_salida": {
+    "tipo": "informe de hallazgos con tabla de acciones",
+    "columnas": ["Carpeta o fichero", "Problema detectado", "Gravedad", "Quién se ve afectado", "Acción", "Pasos exactos", "Responsable", "Hecho"],
+    "cierre": ["Estructura de carpetas propuesta", "Norma de compartición en 6 reglas", "Recordatorio de revisión trimestral"]
+  },
+  "criterios_calidad": [
+    "Ningún documento con datos personales queda accesible por enlace abierto",
+    "Cada acción se explica con el nombre real de los botones de la plataforma indicada",
+    "Las acciones se pueden hacer en una mañana y por orden de gravedad"
+  ],
+  "tono": "analítico y claro, tuteando"
+}

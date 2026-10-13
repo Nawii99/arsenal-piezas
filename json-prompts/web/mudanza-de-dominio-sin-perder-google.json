@@ -1,0 +1,62 @@
+{
+  "tarea": "Planificar y ejecutar la mudanza de [DOMINIO_ANTIGUO] a [DOMINIO_NUEVO] conservando el posicionamiento y sin dejar páginas rotas",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO Y A QUÉ SE DEDICA]",
+    "perfil_de_quien_ejecuta": "Persona sin perfil técnico que copia y pega en el panel del hosting",
+    "tipo_de_web": "[HTML ESTÁTICO / WORDPRESS / SHOPIFY / WIX / OTRO]",
+    "hosting_actual": "[HOSTING O PLATAFORMA]",
+    "motivo": "[CAMBIO DE MARCA / UNIFICAR DOS WEBS / DOMINIO PROVISIONAL A DEFINITIVO]"
+  },
+  "entradas": {
+    "listado_urls_actuales": "[PEGA EL CONTENIDO DE TU SITEMAP.XML O LA LISTA DE URLS]",
+    "paginas_con_mas_visitas": "[TOP 10 DE GOOGLE SEARCH CONSOLE, ÚLTIMOS 3 MESES]",
+    "estructura_nueva": "[SI CAMBIAN LAS RUTAS, DESCRÍBELO; SI NO, ESCRIBE 'MISMAS RUTAS']",
+    "acceso_a_dns_y_search_console": "[SÍ / NO / PARCIAL]",
+    "fecha_prevista": "[FECHA Y FRANJA HORARIA DE MENOS VISITAS]"
+  },
+  "procedimiento": [
+    "1. Congela cambios: no publiques contenido nuevo en el dominio antiguo durante la mudanza",
+    "2. Construye la tabla de equivalencias URL vieja -> URL nueva, una fila por página, sin dejar ninguna sin destino",
+    "3. Para páginas que desaparecen, elige el destino más parecido; solo usa la home como destino si no hay nada equivalente",
+    "4. Monta la web nueva completa y compruébala antes de tocar nada del dominio antiguo",
+    "5. Publica las redirecciones 301 (permanentes) desde el dominio antiguo, incluida la versión con y sin www",
+    "6. Revisa que enlaces internos, menús, imágenes, PDFs y canonical apunten ya al dominio nuevo",
+    "7. Sube el sitemap nuevo a Search Console y usa la herramienta de cambio de dirección si el dominio antiguo es tuyo",
+    "8. Actualiza dominio en: Google Business Profile, redes sociales, firma de email, facturas, Google Ads, enlaces de campañas",
+    "9. Mantén el dominio antiguo pagado y redirigiendo al menos 12 meses",
+    "10. Vigila 8 semanas: errores 404, cobertura en Search Console y visitas semana a semana"
+  ],
+  "que_mirar": [
+    "Que la redirección sea 301 y no 302: la 302 no traspasa el posicionamiento",
+    "Que cada URL redirija a su equivalente exacta, no todas a la portada",
+    "Que no haya cadenas de redirección (A -> B -> C): siempre A -> C",
+    "Que el certificado HTTPS del dominio nuevo esté activo antes de mover el tráfico",
+    "Que el archivo robots.txt del dominio nuevo no bloquee la web entera"
+  ],
+  "errores_tipicos": [
+    "Apagar el hosting antiguo el mismo día: se pierden todas las redirecciones",
+    "Olvidar las URLs con parámetros, las de idiomas o las de la tienda",
+    "Dejar los enlaces internos apuntando al dominio viejo",
+    "Hacer la mudanza en plena campaña de ventas o un viernes por la tarde",
+    "Perder el acceso al correo porque se tocan los registros MX sin querer"
+  ],
+  "restricciones": [
+    "No propongas herramientas de pago si hay alternativa gratuita",
+    "Explica cada paso en lenguaje llano y di dónde se hace clic",
+    "Marca con AVISO los pasos que pueden tumbar la web o el correo"
+  ],
+  "formato_salida": {
+    "1_resumen": "5 líneas: qué va a pasar, cuánto tarda y qué riesgo hay",
+    "2_tabla_redirecciones": "Tabla con columnas: URL antigua | URL nueva | tipo | prioridad",
+    "3_bloque_tecnico": "Código listo para copiar (.htaccess, _redirects de Netlify o reglas de Cloudflare) según la plataforma indicada",
+    "4_calendario": "Checklist por días: D-7, D-1, día D, D+1, D+7, D+30",
+    "5_comprobaciones": "Lista de 10 pruebas concretas con el resultado esperado de cada una",
+    "6_plan_b": "Qué hacer y en qué orden si la web se cae o las visitas se hunden"
+  },
+  "criterios_calidad": [
+    "Ninguna URL del listado se queda sin destino asignado",
+    "El bloque técnico se puede pegar tal cual sin editar nada más que los dominios",
+    "Cada comprobación dice qué se ve en pantalla cuando está bien",
+    "Un lector sin conocimientos técnicos puede seguirlo sin buscar en Google"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Preparar subtítulos incrustados para vídeo vertical, con texto, tiempos y estilo listos para montar",
+  "contexto": {
+    "red": "[INSTAGRAM REELS / TIKTOK / YOUTUBE SHORTS]",
+    "duracion": "[SEGUNDOS DEL VÍDEO]",
+    "tipo_video": "[HABLANDO A CÁMARA / VOZ EN OFF SOBRE IMÁGENES / ENTREVISTA]",
+    "marca": {
+      "tipografia": "[FUENTE DE TU MARCA O UNA SANS BOLD]",
+      "color_texto": "[COLOR PRINCIPAL]",
+      "color_resalte": "[COLOR PARA LA PALABRA CLAVE]"
+    }
+  },
+  "entradas": {
+    "guion": "[PEGA AQUÍ EL GUION O LA TRANSCRIPCIÓN]"
+  },
+  "restricciones": [
+    "De 3 a 6 palabras por bloque, una sola línea siempre que quepa y máximo dos",
+    "El texto vive en la franja central-baja, entre el 55 % y el 75 % de la altura, nunca en el 20 % inferior ni en el 15 % superior",
+    "Deja márgenes laterales de al menos el 10 % del ancho",
+    "Tamaño mínimo equivalente a 48 px sobre lienzo de 1080x1920",
+    "Texto claro con borde oscuro o caja semitransparente para que se lea sobre cualquier fondo",
+    "Resalta con color solo una palabra por bloque y no en todos los bloques",
+    "Nada de mayúsculas sostenidas en bloques largos: dificultan la lectura",
+    "Que el primer bloque aparezca antes del segundo 1 y contenga el gancho"
+  ],
+  "formato_salida": {
+    "tabla": "columnas: nº, tiempo inicio, tiempo fin, texto del bloque, palabra resaltada, nota de posición",
+    "ficha_estilo": "resumen de fuente, tamaño, color, borde, sombra y posición para copiar en el editor",
+    "srt_alternativo": "el mismo contenido en SRT por si prefieres subtítulos activables"
+  },
+  "criterios_calidad": [
+    "El vídeo se entiende leyendo solo los bloques, sin audio",
+    "Ningún bloque cae donde la app pone botones, usuario o descripción",
+    "Los cambios de bloque coinciden con el ritmo del habla, no cada X segundos fijos"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Auditar un perfil de red social desde los ojos de un desconocido y devolver una lista priorizada de arreglos concretos",
+  "entradas": {
+    "red": "[INSTAGRAM / TIKTOK / LINKEDIN / FACEBOOK]",
+    "nombre_usuario_y_nombre_visible": "[@USUARIO Y NOMBRE QUE APARECE]",
+    "biografia_actual": "[COPIA AQUÍ TU BIO TAL CUAL]",
+    "enlace_actual": "[A DÓNDE LLEVA TU ENLACE]",
+    "destacados_o_seccion_fija": "[TÍTULOS DE TUS DESTACADOS]",
+    "ultimas_publicaciones": "[TITULARES O DESCRIPCIÓN DE TUS 9 ÚLTIMOS POSTS]",
+    "accion_deseada": "[QUE ME ESCRIBAN POR MENSAJE / QUE RESERVEN CITA / QUE COMPREN]",
+    "cliente_ideal": "[A QUIÉN QUIERES ATRAER]"
+  },
+  "que_revisar": [
+    "Claridad en 5 segundos: se entiende qué haces, para quién y dónde",
+    "Nombre visible: incluye la palabra que tu cliente buscaría",
+    "Biografía: promesa concreta, prueba y llamada a la acción, sin frases vacías",
+    "Enlace: lleva a una página que continúa lo que prometía el perfil",
+    "Rejilla o últimas publicaciones: hay variedad de formatos y se ve la cara o el producto",
+    "Prueba social visible: resultados, reseñas o clientes reales",
+    "Coherencia: la promesa del perfil y lo que publicas hablan de lo mismo"
+  ],
+  "errores_tipicos_a_señalar": [
+    "Biografía llena de emojis y adjetivos pero sin decir qué vendes",
+    "Enlace a la home genérica en vez de a la acción concreta",
+    "Destacados sin precios, sin proceso y sin opiniones",
+    "Publicar solo producto y nunca la persona que está detrás"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Qué entiende un desconocido de tu perfil en 5 segundos, en 3 frases",
+    "2_puntuacion": "Nota de 0 a 10 en cada punto revisado, con una línea de justificación",
+    "3_arreglos": "Tabla con: prioridad, qué cambiar, por qué y el texto nuevo ya redactado",
+    "4_biografia_nueva": "Tres versiones de biografía listas para copiar, dentro del límite de caracteres de la red",
+    "5_plan_7_dias": "Qué tocar cada día durante una semana, máximo 30 minutos al día"
+  },
+  "restricciones": ["Cada arreglo debe venir con el texto final escrito, no con un consejo abstracto", "No proponer cambios que exijan diseñador o presupuesto"],
+  "criterios_calidad": ["Las tres biografías respetan el límite de caracteres", "Los arreglos están ordenados por impacto y no por orden de aparición"],
+  "tono": "Directo y honesto, sin dorar la píldora, español de España"
+}

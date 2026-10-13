@@ -1,0 +1,57 @@
+{
+  "tarea": "Construir un manual de objeciones propio con la respuesta exacta a cada pega, en tres versiones: hablada, WhatsApp y email",
+  "rol": "Comercial que trata la objeción como información, no como ataque: primero entiende qué hay detrás y luego responde",
+  "contexto": {
+    "que_vendo": "[SERVICIO O PRODUCTO Y PRECIO]",
+    "a_quien": "[TIPO DE CLIENTE]",
+    "tus_pruebas": "[RESULTADOS, CASOS, GARANTÍAS O AÑOS DE OFICIO QUE PUEDES ENSEÑAR]",
+    "lo_que_no_puedes_ofrecer": "[LÍMITES REALES: PLAZOS, DESCUENTOS, ALCANCE]"
+  },
+  "entradas": {
+    "objeciones_reales": "[PEGA LAS FRASES TAL CUAL TE LAS DICEN TUS CLIENTES]",
+    "momento_en_que_aparecen": "[AL DAR PRECIO / TRAS LA PROPUESTA / EN LA PRIMERA LLAMADA]",
+    "que_sueles_responder": "[LO QUE CONTESTAS AHORA, PARA MEJORARLO]"
+  },
+  "pasos": [
+    "Agrupa las objeciones en cinco familias: precio, confianza, momento, competencia y decisión de terceros",
+    "Para cada objeción, escribe qué significa de verdad cuando la dicen y cuál es la pregunta que la desactiva",
+    "Distingue si es objeción real o excusa educada; da la señal que permite distinguirlas",
+    "Escribe la respuesta con esta estructura: reconoces sin dar la razón del todo, preguntas para concretar, respondes con un hecho o prueba y devuelves con una pregunta de avance",
+    "Escribe una variante corta para hablar por teléfono, otra para WhatsApp y otra para email",
+    "Marca la línea roja: qué no vas a hacer nunca para salvar esa objeción",
+    "Añade la respuesta al silencio: qué haces si tras contestar no dicen nada"
+  ],
+  "restricciones": [
+    "Nada de trucos manipuladores ni presión artificial: sin urgencias falsas ni plazas limitadas inventadas",
+    "No prometas resultados numéricos que no puedas garantizar",
+    "Cada respuesta termina en pregunta o en propuesta de siguiente paso",
+    "Español de España hablado; frases de menos de 20 palabras"
+  ],
+  "formato_salida": {
+    "objeciones": [
+      {
+        "frase_del_cliente": "...",
+        "familia": "precio | confianza | momento | competencia | decisión",
+        "que_significa": "...",
+        "pregunta_para_desactivar": "...",
+        "es_real_o_excusa": "cómo distinguirlo",
+        "respuesta_telefono": "...",
+        "respuesta_whatsapp": "...",
+        "respuesta_email": "...",
+        "linea_roja": "..."
+      }
+    ],
+    "chuleta": "las 5 frases más útiles resumidas para tener a mano en la mesa"
+  },
+  "criterios_calidad": [
+    "Puedes leer cualquier respuesta en voz alta y suena a ti, no a folleto",
+    "Ninguna respuesta empieza discutiendo ni con un 'pero'",
+    "Hay al menos una objeción a la que la respuesta correcta es retirarte con elegancia",
+    "Ninguna respuesta depende de bajar el precio"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Responder al 'es caro' con un descuento inmediato",
+    "Rebatir antes de preguntar: te defiendes de algo que no habían dicho",
+    "Escribir párrafos largos en WhatsApp cuando la objeción se resuelve con una pregunta"
+  ]
+}

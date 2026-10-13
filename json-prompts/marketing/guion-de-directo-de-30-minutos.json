@@ -1,0 +1,34 @@
+{
+  "tarea": "Escribir el guion minuto a minuto de un directo de 30 minutos en redes, con contenido, interacción y momento de venta",
+  "entradas": {
+    "tema": "[TEMA DEL DIRECTO]",
+    "publico": "[QUIÉN SE VA A CONECTAR Y QUÉ LE PREOCUPA]",
+    "red": "[INSTAGRAM / TIKTOK / LINKEDIN / YOUTUBE]",
+    "oferta": "[QUÉ VENDES, PRECIO Y CONDICIÓN ESPECIAL SI LA HAY]",
+    "dudas_frecuentes": "[LAS 5 OBJECIONES QUE MÁS TE PONEN]",
+    "prueba": "[CASOS, RESULTADOS O DEMOSTRACIÓN QUE PUEDES ENSEÑAR EN DIRECTO]"
+  },
+  "estructura": [
+    "Min 0-3 entrada en bucle: saludo, de qué va, qué se lleva quien se quede hasta el final",
+    "Min 3-6 calentamiento: pregunta fácil para que escriban en el chat y saludo por nombre",
+    "Min 6-18 contenido: tres bloques con un punto y un ejemplo cada uno",
+    "Min 18-22 demostración o caso real",
+    "Min 22-26 oferta: problema, solución, precio, condición y cómo apuntarse",
+    "Min 26-30 preguntas y cierre con recordatorio de la acción"
+  ],
+  "formato_salida": {
+    "guion": "Tabla con: tramo_de_minutos, objetivo, qué_digo (frases literales de arranque y cierre de cada tramo), qué_enseño",
+    "ganchos_de_reentrada": "Seis frases para repetir cada pocos minutos porque siempre entra gente nueva",
+    "preguntas_para_el_chat": "Ocho preguntas que animen a escribir sin ser una encuesta aburrida",
+    "respuestas_a_objeciones": "Las cinco dudas frecuentes con respuesta de menos de 40 palabras",
+    "checklist_tecnica": "Comprobaciones de 10 minutos antes: luz, sonido, batería, enlace fijado, cartel de anuncio",
+    "reaprovechamiento": "Cinco cortes del directo que se pueden publicar después, con el minuto aproximado"
+  },
+  "restricciones": [
+    "Nada de leer el guion palabra por palabra salvo la entrada, la oferta y el cierre",
+    "No dejar el precio para el final escondido: se dice claro en el tramo de la oferta",
+    "Nada de urgencia falsa ni cuentas atrás inventadas"
+  ],
+  "criterios_calidad": ["Quien se conecte en el minuto 20 entiende de qué va en menos de 30 segundos", "Hay al menos una petición de interacción cada 4 minutos"],
+  "tono": "Conversacional, con energía pero sin gritar, español de España"
+}

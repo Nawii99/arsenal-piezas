@@ -1,0 +1,43 @@
+{
+  "tarea": "Explicar y evaluar el riesgo de un script desconocido antes de ejecutarlo, linea por linea y en lenguaje llano",
+  "contexto": {
+    "lenguaje": "[BASH / PHP / R]",
+    "origen": "[ME LO PASO UN PROVEEDOR / LO COPIE DE INTERNET / VIENE CON UN PROGRAMA]",
+    "donde_lo_ejecutaria": "[MI PORTATIL / EL SERVIDOR DE LA WEB EN PRODUCCION / UN VPS DE PRUEBAS]",
+    "que_dicen_que_hace": "[LO QUE TE HAN CONTADO QUE HACE]"
+  },
+  "entradas": {
+    "script": "[PEGA AQUI EL SCRIPT COMPLETO]"
+  },
+  "buscar_obligatoriamente": [
+    "Borrados y sobrescrituras: rm -rf, mv sobre rutas existentes, truncados, unlink, file.remove, DROP o DELETE sin WHERE",
+    "Conexiones a internet: curl, wget, fetch, install.packages desde origenes raros, y a que direccion concreta",
+    "Codigo descargado y ejecutado al vuelo, del tipo descargar y pasar a la shell",
+    "Envio de datos hacia fuera: ficheros, claves, variables de entorno o base de datos",
+    "Escalada de permisos: sudo, chmod 777, cambios de propietario, escritura en carpetas del sistema",
+    "Persistencia: lineas anadidas a cron, servicios, perfiles de shell o tareas programadas",
+    "Codigo ofuscado, en base64 o comprimido para que no se lea",
+    "Rutas absolutas peligrosas y variables sin comillas que pueden expandirse mal"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "1. Semaforo en la primera linea: VERDE ejecutable, AMARILLO ejecutar con cambios, ROJO no ejecutar, y una frase de motivo",
+      "2. Que hace de verdad, en 5 frases y sin tecnicismos",
+      "3. Tabla: linea | que hace | riesgo (alto/medio/bajo) | que puede pasar si sale mal",
+      "4. Coincide o no con lo que te dijeron que hacia",
+      "5. Version segura del script con las lineas peligrosas corregidas o comentadas",
+      "6. Como probarlo con red: en que entorno, que copia hacer antes y como deshacerlo"
+    ]
+  },
+  "restricciones": [
+    "No ejecutes nada: solo lectura del texto pegado",
+    "Si una linea es ambigua, marcala como ROJA por defecto y explica la duda",
+    "Nada de suposiciones sobre lo que el autor pretendia: juzga lo que hace el codigo"
+  ],
+  "criterios_calidad": [
+    "El semaforo aparece antes que cualquier explicacion",
+    "Cada riesgo alto se explica con un ejemplo de consecuencia concreta",
+    "Alguien sin perfil tecnico puede decidir con esto en dos minutos"
+  ]
+}

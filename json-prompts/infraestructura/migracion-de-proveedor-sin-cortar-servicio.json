@@ -1,0 +1,49 @@
+{
+  "tarea": "Planificar una migración de proveedor minimizando el corte de servicio",
+  "contexto": {
+    "origen": "[PROVEEDOR ACTUAL Y QUÉ ALOJA]",
+    "destino": "[PROVEEDOR NUEVO]",
+    "motivo": "[PRECIO, RENDIMIENTO, SOPORTE, FUNCIONES]",
+    "que_se_mueve": "[WEB, BASE DE DATOS, CORREO, DOMINIO, FICHEROS, AUTOMATIZACIONES]",
+    "trafico": "[MOMENTOS DE MÁS VENTAS O VISITAS]",
+    "perfil_usuario": "sin perfil técnico; puede pedir ayuda al soporte de cada proveedor"
+  },
+  "entradas": {
+    "fecha_limite": "[CUÁNDO VENCE EL CONTRATO ACTUAL]",
+    "tolerancia_corte": "[MINUTOS DE CORTE ACEPTABLES]"
+  },
+  "pasos": [
+    "1. Inventaria todo lo que hay en el origen, incluidas cuentas de correo, redirecciones y tareas programadas.",
+    "2. Baja el TTL del DNS varios días antes para que el cambio se propague rápido.",
+    "3. Monta una copia completa en el destino y pruébala con un dominio provisional o el fichero hosts.",
+    "4. Congela cambios: desde X horas antes nadie toca contenido ni pedidos en el origen.",
+    "5. Haz copia final del origen y guárdala fuera de los dos proveedores.",
+    "6. Cambia primero lo de menos riesgo y deja el correo y el DNS para el final, en horario valle.",
+    "7. Ejecuta la lista de comprobación posterior: portada, compra de prueba, formularios, correo entrante y saliente, redirecciones y enlaces antiguos.",
+    "8. Mantén el origen contratado y en pie al menos [DÍAS] días como red de seguridad.",
+    "9. Define el punto de no retorno y el plan de vuelta atrás anterior a ese punto."
+  ],
+  "restricciones": [
+    "Nada de migrar en viernes ni en campaña de ventas.",
+    "No se cancela el proveedor antiguo hasta pasar el periodo de gracia.",
+    "Toda la ventana tiene que caber en [MINUTOS] de corte."
+  ],
+  "errores_tipicos": [
+    "Mover la web y olvidar el correo o los buzones antiguos.",
+    "Perder las redirecciones y hundir el posicionamiento en Google.",
+    "No revisar los certificados y quedarse con avisos de sitio no seguro.",
+    "Copiar la base de datos horas antes y perder los pedidos de esa tarde.",
+    "Cancelar el hosting antiguo el mismo día y quedarse sin plan B."
+  ],
+  "formato_salida": {
+    "cronograma": "tabla con momento (D-7, D-1, hora 0, +1h, +24h) | acción | responsable | tiempo estimado",
+    "lista_comprobacion": "20 comprobaciones posteriores con resultado esperado",
+    "plan_vuelta_atras": "pasos para revertir y hasta qué momento es posible",
+    "riesgos": "los cinco mayores con su mitigación"
+  },
+  "criterios_calidad": [
+    "Existe un punto de no retorno explícito.",
+    "Correo, redirecciones y certificados están cubiertos, no solo la web.",
+    "El corte previsto cabe en la tolerancia indicada."
+  ]
+}

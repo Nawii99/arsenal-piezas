@@ -1,0 +1,55 @@
+{
+  "tarea": "Diagnosticar si los correos de un negocio llegan a la bandeja de entrada y devolver un plan de arreglo ordenado por impacto.",
+  "contexto": {
+    "quien_lo_usa": "Autonomo o negocio pequeño que envia presupuestos, confirmaciones o boletines desde su propio dominio.",
+    "momento": "Se sospecha que los correos no llegan, o se va a enviar por primera vez a una lista.",
+    "objetivo": "Saber si el problema es tecnico, de contenido o de reputacion, y arreglar lo que se pueda sin tecnico."
+  },
+  "entradas": {
+    "dominio": "[TUDOMINIO.COM]",
+    "desde_donde_envias": "[GMAIL, OUTLOOK, HERRAMIENTA DE BOLETINES, TU WEB, TU TIENDA]",
+    "tipo_de_correos": "[PRESUPUESTOS, CONFIRMACIONES DE PEDIDO, BOLETIN, CORREO EN FRIO]",
+    "volumen_mensual": "[NUMERO APROXIMADO DE ENVIOS AL MES]",
+    "sintoma": "[NADIE RESPONDE, ME DICEN QUE NO LES LLEGA, REBOTES, NO LO SE]"
+  },
+  "pasos": [
+    "1. Prueba de bandejas: envia el mismo correo a una cuenta de Gmail, una de Outlook o Hotmail y una de otro proveedor, y anota donde cae cada uno.",
+    "2. Comprueba los tres registros del dominio con un comprobador gratuito y traduce el resultado a lenguaje llano: SPF, DKIM y DMARC.",
+    "3. Revisa el remitente: nombre reconocible, direccion del dominio propio y no una gratuita, y responder a que funcione.",
+    "4. Revisa el contenido del correo: proporcion de texto e imagenes, enlaces acortados, adjuntos pesados, palabras tipicas de spam y mayusculas.",
+    "5. Revisa la lista: contactos comprados, direcciones antiguas y rebotes acumulados.",
+    "6. Comprueba que existe forma clara de darse de baja y de contactar.",
+    "7. Ordena los hallazgos por impacto y da el arreglo con el sitio exacto donde se toca."
+  ],
+  "que_mirar": [
+    "Si el correo llega a Promociones en Gmail, cuenta como llegado pero se avisa.",
+    "Rebotes duros repetidos: hay que limpiar la lista antes de enviar mas.",
+    "Enviar desde un dominio recien comprado sin calentar: empezar poco a poco.",
+    "Formularios de la web que envian con un remitente falso del cliente.",
+    "Firmas con imagenes enormes o con enlaces a servicios raros.",
+    "Un mismo correo enviado a decenas de personas en copia en vez de individual."
+  ],
+  "errores_tipicos": [
+    "Probar solo con la propia cuenta, que siempre recibe bien porque conoce al remitente.",
+    "Enviar de golpe a mil contactos el primer dia con un dominio nuevo.",
+    "Confundir buzon lleno del destinatario con bloqueo por spam.",
+    "Poner el enlace de baja escondido o inexistente en un boletin."
+  ],
+  "restricciones": [
+    "Explica cada termino tecnico con una frase en castellano llano la primera vez que aparezca.",
+    "No propongas tocar registros DNS sin decir exactamente donde se hace y que se copia.",
+    "No prometas porcentajes de mejora."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de la prueba de bandejas: Proveedor | Donde cayo | Cuanto tardo.",
+    "bloque_2": "Diagnostico en tres lineas: que esta bien, que esta mal, que es lo mas urgente.",
+    "bloque_3": "Plan de arreglo numerado con dificultad baja, media o alta y donde se toca cada cosa.",
+    "bloque_4": "Rutina de vigilancia mensual en tres puntos."
+  },
+  "criterios_calidad": [
+    "El diagnostico distingue problema tecnico, de contenido y de lista.",
+    "Cada arreglo indica el sitio concreto: panel del dominio, herramienta de envio o texto del correo.",
+    "Nada del plan exige contratar a nadie sin haber probado antes lo gratuito.",
+    "Queda claro como volver a comprobar que el arreglo funciono."
+  ]
+}

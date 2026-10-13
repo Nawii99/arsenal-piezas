@@ -1,0 +1,48 @@
+{
+  "tarea": "Convertir una hoja de cálculo en una plantilla blindada que otra persona pueda rellenar sin romperla ni meter datos inválidos.",
+  "contexto": {
+    "para_que_sirve_la_hoja": "[PARTE DE HORAS / PEDIDO / INVENTARIO / ALTA DE CLIENTE]",
+    "quien_la_rellena": "[PERFIL Y NIVEL TÉCNICO DE QUIEN ESCRIBE EN ELLA]",
+    "herramienta": "[EXCEL / GOOGLE SHEETS]",
+    "que_hago_yo_despues": "[QUÉ CÁLCULO O PROCESO DEPENDE DE ESOS DATOS]"
+  },
+  "entradas": {
+    "columnas_actuales": "[PEGA LA CABECERA Y 5 FILAS DE EJEMPLO]",
+    "reglas_del_negocio": "[EJ: LAS HORAS NO PASAN DE 12 AL DÍA, EL DESCUENTO MÁXIMO ES 20%]",
+    "listas_cerradas": "[VALORES PERMITIDOS PARA CADA CAMPO DE ELECCIÓN]"
+  },
+  "pasos": [
+    "Separa la hoja en tres zonas: instrucciones, zona de escritura y zona de cálculo bloqueada.",
+    "Por cada columna decide si se escribe libre, se elige de lista o se calcula sola.",
+    "Define la validación de datos exacta de cada campo: tipo, rango, longitud y mensaje de ayuda que verá quien rellena.",
+    "Escribe el mensaje de error de cada validación en lenguaje claro, diciendo qué hacer.",
+    "Añade formato condicional que marque en color las filas incompletas o incoherentes.",
+    "Indica qué celdas se protegen y los pasos de menú para proteger la hoja dejando libre solo la zona de escritura.",
+    "Añade una celda de semáforo arriba que diga si la hoja está lista para enviar o le faltan datos.",
+    "Escribe las instrucciones de la pestaña de ayuda en cinco líneas máximo."
+  ],
+  "restricciones": [
+    "Nada de macros ni de complementos: solo funciones y menús estándar.",
+    "Los mensajes de error se escriben tuteando y sin jerga técnica.",
+    "La zona de escritura no debe tener nunca fórmulas visibles."
+  ],
+  "errores_tipicos": [
+    "Proteger la hoja y bloquear también las celdas que hay que rellenar.",
+    "Listas desplegables que apuntan a un rango que luego crece y se queda corto.",
+    "Validaciones que no se aplican al pegar datos con copiar y pegar.",
+    "Fórmulas que se rompen al insertar filas en medio.",
+    "Fechas escritas a mano en veinte formatos distintos."
+  ],
+  "formato_salida": {
+    "bloque_1": "Mapa de la hoja: qué va en cada zona y en qué columnas.",
+    "bloque_2": "Tabla por columna: tipo, validación exacta, mensaje de ayuda, mensaje de error, bloqueada sí o no.",
+    "bloque_3": "Fórmulas listas para pegar, con la celda donde va cada una.",
+    "bloque_4": "Pasos de menú numerados para aplicar validaciones, formato condicional y protección.",
+    "bloque_5": "Texto de la pestaña de instrucciones."
+  },
+  "criterios_calidad": [
+    "Alguien sin experiencia puede rellenarla sin preguntarme nada.",
+    "Un dato imposible se rechaza en el momento, no después.",
+    "Mis fórmulas siguen intactas después de que la rellenen."
+  ]
+}

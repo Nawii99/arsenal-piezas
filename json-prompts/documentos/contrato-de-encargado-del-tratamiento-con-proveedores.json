@@ -1,0 +1,41 @@
+{
+  "tarea": "Redactar un contrato de encargado del tratamiento conforme al artículo 28 del RGPD entre un responsable español y su proveedor",
+  "partes": {
+    "responsable": "[TU NOMBRE O RAZÓN SOCIAL Y NIF]",
+    "encargado": "[NOMBRE DEL PROVEEDOR Y NIF]",
+    "quien_redacta": "[SOY EL RESPONSABLE / SOY EL PROVEEDOR]"
+  },
+  "entradas": {
+    "servicio_prestado": "[EJ: GESTORÍA LABORAL, MANTENIMIENTO INFORMÁTICO, EMAIL MARKETING, CRM]",
+    "datos_a_los_que_accede": "[CATEGORÍAS DE DATOS Y DE INTERESADOS]",
+    "duracion": "[DURACIÓN DEL CONTRATO]",
+    "subcontratacion": "[SÍ / NO Y SUBENCARGADOS CONOCIDOS]",
+    "ubicacion_servidores": "[UE O PAÍS TERCERO]",
+    "al_finalizar": "[DEVOLVER O DESTRUIR LOS DATOS]"
+  },
+  "instrucciones": [
+    "Incluye objeto, descripción del tratamiento, duración, naturaleza y finalidad, tipo de datos y categorías de interesados",
+    "Recoge las obligaciones del encargado: tratar solo según instrucciones documentadas, confidencialidad del personal, seguridad, asistencia al responsable y notificación de brechas sin dilación indebida",
+    "Regula la subcontratación con autorización previa y traslado de las mismas obligaciones al subencargado",
+    "Regula las transferencias internacionales y exige garantías adecuadas si hay servidores fuera de la UE",
+    "Prevé auditorías, devolución o destrucción de datos al finalizar y prueba documental de ello",
+    "Añade un anexo con las medidas de seguridad concretas y otro con los subencargados autorizados"
+  ],
+  "restricciones": [
+    "Adapta el reparto de responsabilidades según quién redacte, pero sin cláusulas abusivas para la otra parte",
+    "No fijes indemnizaciones ni penalizaciones sin indicar que deben negociarse",
+    "Deja en corchetes plazos, importes y nombres que no se hayan facilitado"
+  ],
+  "formato_salida": {
+    "bloque_1": "contrato con cláusulas numeradas y espacio de firma",
+    "bloque_2": "anexo I de descripción del tratamiento",
+    "bloque_3": "anexo II de medidas de seguridad",
+    "bloque_4": "correo breve para enviárselo al proveedor pidiendo firma"
+  },
+  "criterios_calidad": [
+    "Cubre los ocho contenidos mínimos del art. 28.3",
+    "El plazo de aviso de brechas está expresado en horas o días concretos",
+    "Los anexos están rellenos con los datos declarados",
+    "Se puede firmar sin cambios estructurales"
+  ]
+}

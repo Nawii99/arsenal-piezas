@@ -1,0 +1,37 @@
+{
+  "tarea": "Preparar la lista de planos (shot list) para grabar un producto en una sesión con móvil",
+  "situacion": {
+    "producto": "[QUÉ VAS A GRABAR]",
+    "espacio": "[SALÓN, COCINA, MESA JUNTO A VENTANA, TALLER, EXTERIOR]",
+    "luz_disponible": "[LUZ DE VENTANA / FOCO LED / SOLO LUZ DE TECHO]",
+    "material": "[MÓVIL, TRÍPODE, ARO DE LUZ, CARTULINAS, LO QUE TENGAS]",
+    "tiempo_disponible_horas": "[1 / 2 / 4]",
+    "vídeos_a_los_que_alimenta": "[REELS, FICHA DE PRODUCTO, ANUNCIO, WEB]"
+  },
+  "ajustes_recomendados": {
+    "resolucion_y_fps": "proponer ajuste concreto y cuándo usar cámara lenta",
+    "bloqueo": "recordar bloquear enfoque y exposición en cada plano",
+    "encuadre": "grabar dejando aire arriba y abajo para poder recortar a vertical y a horizontal"
+  },
+  "planos_obligatorios": [
+    "Producto entero sobre fondo limpio, cámara fija",
+    "Detalle macro de la textura, etiqueta o acabado",
+    "Producto en uso con manos, gesto lento y completo",
+    "Antes y después o resultado del uso",
+    "Producto en su contexto real de cliente",
+    "Plano de apoyo para tapar cortes de montaje"
+  ],
+  "formato_salida": {
+    "tabla": ["Nº", "Plano y ángulo", "Movimiento", "Qué debe verse", "Duración a grabar", "Truco para que salga bien"],
+    "extras": [
+      "Orden real de rodaje agrupando por posición de cámara para no montar y desmontar",
+      "Lista de comprobación antes de empezar: limpiar el producto, quitar huellas, modo avión, tarjeta libre",
+      "Qué hacer si la luz cambia a mitad de sesión"
+    ]
+  },
+  "criterios_calidad": [
+    "Todos los planos se pueden grabar con el material declarado",
+    "La sesión cabe en el tiempo disponible con margen",
+    "Cada plano indica para qué vídeo servirá después"
+  ]
+}

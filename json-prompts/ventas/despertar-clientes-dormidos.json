@@ -1,0 +1,49 @@
+{
+  "tarea": "Diseñar una campaña de reactivación de clientes y contactos antiguos, con segmentos, motivo de contacto y mensajes",
+  "contexto": {
+    "negocio": "[TU NEGOCIO], vende [QUÉ]",
+    "canales_disponibles": "[EMAIL / WHATSAPP / TELÉFONO / INSTAGRAM]",
+    "normas": "España y RGPD: solo se contacta a quien dio sus datos o fue cliente, siempre con forma fácil de decir basta"
+  },
+  "entradas": {
+    "base_de_contactos": "[LISTA CON NOMBRE, QUÉ COMPRÓ O PIDIÓ, FECHA DEL ÚLTIMO CONTACTO, IMPORTE]",
+    "novedad_real": "[QUÉ HA CAMBIADO DE VERDAD: NUEVO SERVICIO, HUECO EN AGENDA, MEJOR PRECIO, RESULTADO NUEVO]",
+    "capacidad": "[CUÁNTOS CLIENTES NUEVOS PUEDES ATENDER ESTE MES]",
+    "oferta_de_vuelta": "[QUÉ OFRECES, SI OFRECES ALGO, Y HASTA CUÁNDO]"
+  },
+  "pasos": [
+    "1. Divide la base en cuatro segmentos: compró y quedó contento, compró y hubo roce, pidió presupuesto y no compró, solo dejó el contacto",
+    "2. Descarta a quien pidió no ser contactado y a quien acabó mal: escribe la lista de excluidos",
+    "3. Para cada segmento elige un motivo creíble para escribir hoy, ligado a [NOVEDAD_REAL], nunca un solo saludo",
+    "4. Escribe el mensaje 1 por segmento: máximo 70 palabras, referencia a lo que compró o pidió, y una pregunta fácil de contestar",
+    "5. Escribe el mensaje 2 de recuerdo a los 5 días, distinto y más corto",
+    "6. Ordena a quién escribes primero según importe y facilidad, sin pasarte de [CAPACIDAD]",
+    "7. Define qué haces con quien responde: pregunta de cualificación, oferta o cita"
+  ],
+  "restricciones": [
+    "Prohibido mandar el mismo texto a todos los segmentos",
+    "Prohibido empezar con hace tiempo que no hablamos sin dar un motivo real",
+    "Nada de descuentos generalizados a la lista entera",
+    "Máximo dos mensajes por contacto en esta campaña",
+    "Todo envío masivo por email lleva forma clara de darse de baja"
+  ],
+  "errores_tipicos": [
+    "Escribir a la lista entera el mismo día y no poder atender a los que responden",
+    "Recordar al cliente algo que salió mal sin haberlo resuelto",
+    "Confundir contacto antiguo con lista comprada, que ni se toca",
+    "Medir solo aperturas y no respuestas ni citas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de segmentos: nombre, cuántos, motivo de contacto, canal",
+    "bloque_2": "Lista de excluidos y por qué",
+    "bloque_3": "Mensajes 1 y 2 por segmento, listos para copiar",
+    "bloque_4": "Calendario de envío por tandas ajustado a la capacidad",
+    "bloque_5": "Qué contar al final: respuestas, citas y ventas, con una tabla vacía para rellenar"
+  },
+  "criterios_calidad": [
+    "Cada mensaje demuestra que recuerdas algo concreto de esa persona",
+    "El motivo para escribir hoy resistiría la pregunta y por qué me escribes ahora",
+    "El calendario no supera lo que puedes atender",
+    "Nadie de la lista de excluidos aparece en los envíos"
+  ]
+}

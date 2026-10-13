@@ -1,0 +1,34 @@
+{
+  "tarea": "Crear un test de opción múltiple con distractores basados en errores reales y explicación de cada opción",
+  "contexto": {
+    "tema": "[TEMA O MÓDULO]",
+    "contenido_de_referencia": "[PEGA EL MATERIAL DEL QUE SALEN LAS PREGUNTAS]",
+    "nivel": "[PRINCIPIANTE, INTERMEDIO O AVANZADO]",
+    "finalidad": "[REPASO EN CLASE O EVALUACIÓN CON NOTA]",
+    "numero_de_preguntas": "[10 POR DEFECTO]"
+  },
+  "instrucciones": [
+    "Cada pregunta plantea una situación breve, no una definición: el alumno debe aplicar algo para responder",
+    "4 opciones por pregunta, una correcta y tres distractores que reproduzcan errores que la gente comete de verdad",
+    "Prohibido usar 'todas las anteriores', 'ninguna de las anteriores' o distractores absurdos de relleno",
+    "Que la opción correcta no sea sistemáticamente la más larga ni ocupe siempre la misma posición",
+    "Explica en una o dos frases por qué la correcta lo es y qué confusión concreta esconde cada distractor",
+    "Reparte las preguntas: 4 de aplicación directa, 4 de análisis de una situación y 2 de detectar un error"
+  ],
+  "formato_salida": {
+    "version_alumno": "Preguntas numeradas con sus opciones a, b, c, d y sin respuestas",
+    "version_profesor": "Misma numeración con la respuesta correcta, la explicación de cada opción y el concepto que evalúa",
+    "plantilla_de_correccion": "Lista compacta tipo 1-c, 2-a... para corregir a mano"
+  },
+  "restricciones": [
+    "Enunciados de 50 palabras como máximo",
+    "Todo debe poder responderse con el contenido de referencia",
+    "Nada de preguntas con doble negación ni con truco de redacción",
+    "Español de España"
+  ],
+  "criterios_calidad": [
+    "Quien ha estudiado acierta y quien no, cae en el distractor previsible",
+    "Ningún distractor es descartable sin saber la materia",
+    "Las explicaciones sirven de repaso por sí solas"
+  ]
+}

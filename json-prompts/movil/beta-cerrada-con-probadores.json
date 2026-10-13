@@ -1,0 +1,45 @@
+{
+  "tarea": "Organizar una prueba cerrada de mi app con probadores reales",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "plataforma": "[IOS CON TESTFLIGHT / ANDROID CON PRUEBA CERRADA / AMBAS]",
+    "numero_de_probadores": "[20 A 30]",
+    "de_donde_los_saco": "[CLIENTES, LISTA DE CORREO, GRUPOS, CONOCIDOS DEL SECTOR]",
+    "fechas": "[INICIO Y FIN, UNOS DIEZ O CATORCE DÍAS]",
+    "funciones_a_validar": "[LO QUE MÁS ME PREOCUPA]"
+  },
+  "pasos": [
+    "Escribe el mensaje de reclutamiento con qué es, cuánto tiempo pide, qué gana el probador y qué datos necesito de él",
+    "Redacta la guía de instalación paso a paso para alguien sin nivel técnico, con lo que verá en pantalla en cada paso y qué hacer si el enlace falla",
+    "Convierte lo que quieres validar en misiones concretas repartidas en los días, no en un vago pruébala a ver",
+    "Monta el formulario de incidencias con cinco campos: qué hacías, qué esperabas, qué pasó, modelo de móvil y captura o vídeo",
+    "Prepara los recordatorios: bienvenida el primer día, empujón a los tres días a quien no ha entrado, cierre el último día",
+    "Define cómo clasificar lo que llegue en fallo, confusión o petición de función, y qué entra en la versión de lanzamiento",
+    "Escribe el mensaje de cierre con lo que se ha corregido gracias a ellos"
+  ],
+  "restricciones": [
+    "Nada de pedir opiniones abiertas sin misión: se pide comportamiento y hechos",
+    "Los probadores tienen que poder salirse cuando quieran y saber qué se hace con sus datos",
+    "Un solo canal de reporte para no perder nada por privados sueltos",
+    "No cambies la app a mitad sin avisar de qué versión están probando"
+  ],
+  "errores_frecuentes": [
+    "Reclutar solo amigos que dicen que está genial",
+    "Dar instrucciones de instalación asumiendo que saben lo que es una invitación por correo",
+    "Recoger el feedback por WhatsApp y perder la mitad",
+    "Terminar la beta sin contar a nadie qué se arregló, y quedarte sin probadores la próxima vez"
+  ],
+  "formato_salida": {
+    "mensaje_reclutamiento": "Texto listo para enviar",
+    "guia_instalacion": "Pasos numerados por plataforma",
+    "misiones": "Tabla con dia, mision, que_observar",
+    "formulario": "Campos exactos del formulario de incidencias",
+    "cierre": "Mensaje final y plantilla de informe con fallos clasificados y prioridad"
+  },
+  "criterios_calidad": [
+    "Un probador sin nivel técnico instala la app siguiendo la guía sin preguntarme",
+    "Cada misión valida una función concreta que me preocupa",
+    "El formulario obliga a decir qué esperaba y qué pasó",
+    "El plan cabe en diez o catorce días con recordatorios ya escritos"
+  ]
+}

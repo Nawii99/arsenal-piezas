@@ -1,0 +1,35 @@
+{
+  "tarea": "Comparar comprar al contado, comprar financiado, leasing y renting para un mismo bien y recomendar la mejor opcion para un negocio pequeno",
+  "bien": {
+    "que_es": "[VEHICULO / MAQUINARIA / EQUIPO INFORMATICO / LOCAL]",
+    "precio_de_compra_sin_iva": "[EUROS]",
+    "anos_de_uso_previstos": "[ANOS]",
+    "intensidad_de_uso": "[KILOMETROS AL ANO U HORAS DE USO]",
+    "valor_estimado_al_final": "[EUROS O NO LO SE]",
+    "riesgo_de_quedarse_obsoleto": "[ALTO / MEDIO / BAJO]"
+  },
+  "ofertas_disponibles": {
+    "prestamo": "[IMPORTE, PLAZO Y TIPO DE INTERES]",
+    "leasing": "[CUOTA, PLAZO Y VALOR RESIDUAL]",
+    "renting": "[CUOTA, PLAZO Y QUE INCLUYE]"
+  },
+  "situacion": {
+    "caja_disponible": "[EUROS]",
+    "meses_de_colchon_si_pagas_al_contado": "[MESES]",
+    "forma_juridica": "[AUTONOMO / SL]",
+    "uso_profesional": "[100 POR CIENTO O MIXTO]"
+  },
+  "analisis_requerido": [
+    "Coste total de propiedad a los anos previstos en cada opcion, incluyendo mantenimiento, seguro, impuestos y reparaciones",
+    "Salida de caja el primer ano en cada opcion",
+    "Que pasa con el bien al final: te lo quedas, lo devuelves o lo vendes",
+    "Flexibilidad para salirse antes y coste de hacerlo",
+    "Tratamiento fiscal habitual de cada opcion segun forma juridica, marcando lo que hay que confirmar con tu asesor",
+    "Efecto de pagar al contado sobre el colchon de seguridad"
+  ],
+  "regla_de_decision": "Aplicar y explicar tres reglas practicas: si el bien se queda obsoleto rapido tiende a renting; si lo vas a usar muchos anos y sin cambios tiende a compra; nunca dejar la caja por debajo de tres meses de gastos fijos para comprar al contado",
+  "restricciones": ["No dar por cerrado el tratamiento fiscal: remitir al asesor para el caso concreto", "Indicar los supuestos de mantenimiento y seguro usados", "Si falta el valor residual, estimarlo y decirlo"],
+  "formato_salida": "Tabla comparativa de las cuatro opciones con coste total, salida de caja el primer ano, flexibilidad y propiedad final. Despues una recomendacion con dos razones y una condicion que la cambiaria",
+  "criterios_calidad": ["Se comparan costes totales, no cuotas sueltas", "Se dice que ocurre si el negocio va peor de lo previsto", "La recomendacion es una sola opcion, no un depende"],
+  "tono": "Practico, de asesor que te dice lo que haria el"
+}

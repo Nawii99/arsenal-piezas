@@ -1,0 +1,31 @@
+{
+  "tarea": "Revisar el cumplimiento de protección de datos del formulario de [NOMBRE DEL FORMULARIO] y redactar los textos legales que le faltan",
+  "entradas": {
+    "responsable": "[NOMBRE O RAZÓN SOCIAL, NIF Y EMAIL DE CONTACTO]",
+    "datos_que_pido": "[LISTA DE CAMPOS]",
+    "para_que": "[RESPONDER CONSULTAS, ENVIAR PRESUPUESTOS, MANDAR NEWSLETTER, TODO ELLO]",
+    "donde_acaban": "[MI CORREO, UN CRM, UNA HERRAMIENTA DE EMAIL: DI CUÁL]",
+    "cuanto_tiempo": "[TIEMPO QUE LOS CONSERVAS, SI LO SABES]"
+  },
+  "comprueba": [
+    "Que cada dato pedido tenga una finalidad concreta y necesaria",
+    "Que el consentimiento comercial vaya en casilla aparte y sin premarcar",
+    "Que exista enlace visible a la política de privacidad antes del botón",
+    "Que se informe de responsable, finalidad, base jurídica, destinatarios y derechos",
+    "Que quede registro de cuándo y cómo se dio el consentimiento",
+    "Que la herramienta usada esté declarada, sobre todo si está fuera de la Unión Europea"
+  ],
+  "redacta": [
+    "Texto de la casilla obligatoria de tratamiento de datos",
+    "Texto de la casilla opcional de comunicaciones comerciales",
+    "Aviso resumido de dos líneas bajo el formulario",
+    "Bloque de información básica en capas para poner junto al formulario",
+    "Apartado de la política de privacidad correspondiente a este formulario"
+  ],
+  "formato_salida": "1) Semáforo con Cumple, Dudoso o Falta por cada punto revisado. 2) Textos redactados listos para copiar. 3) Lista de acciones pendientes ordenadas por urgencia.",
+  "restricciones": [
+    "Marca claramente lo que sea una recomendación general y no asesoramiento jurídico",
+    "Recomienda que un profesional revise el resultado antes de publicarlo",
+    "Normativa española y europea, lenguaje sencillo"
+  ]
+}

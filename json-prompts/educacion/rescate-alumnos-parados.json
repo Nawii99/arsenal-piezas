@@ -1,0 +1,52 @@
+{
+  "tarea": "Crear una secuencia de reenganche para los alumnos parados de [NOMBRE DE LA FORMACIÓN], segmentada por en qué punto se quedaron y por qué.",
+  "contexto": {
+    "tipo_de_formacion": "[COHORTE / ACCESO PERMANENTE / SUSCRIPCIÓN]",
+    "canal": "[EMAIL / WHATSAPP / MENSAJE DENTRO DE LA PLATAFORMA]",
+    "cuanto_llevan_parados": "[DÍAS SIN ENTRAR]",
+    "queda_por_delante": "[QUÉ LES FALTA DEL PROGRAMA]",
+    "fecha_limite_real": "[SI EL ACCESO CADUCA O LA COHORTE TERMINA]"
+  },
+  "entradas": {
+    "lista_de_parados": "[NOMBRE Y ÚLTIMA LECCIÓN VISTA, UNO POR LÍNEA]",
+    "motivos_que_conoces": "[TRABAJO, DIFICULTAD, SE ATASCARON EN X, NO LO SÉ]",
+    "recurso_de_rescate": "[RESUMEN, SESIÓN DE DUDAS, RUTA CORTA, PLANTILLA]"
+  },
+  "procedimiento": [
+    "1. Segmenta en cuatro grupos: nunca empezó, se quedó en el arranque, se atascó en un punto concreto, iba bien y desapareció por vida personal.",
+    "2. Para cada grupo, formula la hipótesis del obstáculo en una frase y el favor concreto que le vas a hacer para quitarlo.",
+    "3. Escribe el primer mensaje sin reproche y sin preguntar cómo vas: propón una acción de 10 minutos y ofrécele el atajo.",
+    "4. Construye la ruta corta: la versión mínima del curso, entre 3 y 5 lecciones, con la que aun así consigue el resultado principal.",
+    "5. Escribe el segundo mensaje a los 4 días, con un caso de otro alumno que estaba igual, sin nombres si no tienes permiso.",
+    "6. Escribe el tercer mensaje con la fecha límite real, si existe, y con la opción digna de salir: pausa, cambio de edición o baja limpia.",
+    "7. Prepara la respuesta para cuando contesten con excusas: acepta, reduce el compromiso a la mitad y fija un día concreto.",
+    "8. Define el criterio de parada: cuántos mensajes sin respuesta antes de dejar de escribir y qué le mandas como despedida útil.",
+    "9. Anota qué grupo responde mejor para arreglar el curso, no solo para rescatar a esta gente."
+  ],
+  "restricciones": [
+    "Máximo tres mensajes por alumno y separados al menos 4 días.",
+    "Nada de culpa, ni de te lo estás perdiendo, ni de contadores falsos.",
+    "Cada mensaje propone una sola acción y ocupa menos de 90 palabras.",
+    "Si hay una fecha límite, tiene que ser verdad. Español de España, tuteando."
+  ],
+  "errores_a_evitar": [
+    "Mandar el mismo mensaje a todos: el que nunca empezó y el que se atascó necesitan cosas distintas.",
+    "Ofrecer más contenido a quien ya se siente desbordado.",
+    "Escribir solo cuando quieres vender la siguiente edición.",
+    "No dar salida digna y quedarte con un alumno resentido que además habla."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de segmentos: grupo, cuántos, obstáculo probable, favor que le haces.",
+    "bloque_2": "Los tres mensajes escritos para cada segmento, listos para copiar, con asunto si es email.",
+    "bloque_3": "La ruta corta: las lecciones mínimas y el resultado que se consigue con ellas.",
+    "bloque_4": "Respuestas preparadas a las tres excusas más habituales.",
+    "bloque_5": "Regla de parada y mensaje de despedida útil.",
+    "bloque_6": "Qué apuntar de las respuestas para mejorar el curso."
+  },
+  "criterios_calidad": [
+    "Ningún mensaje se puede leer como reproche si lo lee alguien de mal humor.",
+    "La primera acción propuesta se hace en 10 minutos de verdad.",
+    "Cada segmento recibe un texto claramente distinto.",
+    "Hay una salida digna en el tercer mensaje."
+  ]
+}

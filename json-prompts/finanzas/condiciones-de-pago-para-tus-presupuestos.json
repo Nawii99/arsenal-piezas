@@ -1,0 +1,45 @@
+{
+  "tarea": "Redactar el bloque de condiciones de pago y cobro para incluir en presupuestos, propuestas y contratos",
+  "contexto": {
+    "empresa": "[TU EMPRESA]",
+    "actividad": "[QUÉ VENDES O QUÉ SERVICIO PRESTAS]",
+    "tipo_de_cliente": "[PARTICULAR / PYME / GRAN EMPRESA / ADMINISTRACIÓN]"
+  },
+  "entradas": {
+    "trabajo": "[DESCRIPCIÓN DEL PROYECTO O PEDIDO]",
+    "importe_total": "[IMPORTE SIN IVA]",
+    "duracion": "[SEMANAS O MESES DE EJECUCIÓN]",
+    "anticipo_deseado": "[PORCENTAJE A LA FIRMA]",
+    "hitos": "[MOMENTOS EN LOS QUE QUIERES COBRAR]",
+    "gastos_repercutibles": "[MATERIALES, DESPLAZAMIENTOS, LICENCIAS]",
+    "metodos_de_cobro": "[TRANSFERENCIA / DOMICILIACIÓN / TARJETA / ENLACE DE PAGO]"
+  },
+  "clausulas_a_cubrir": [
+    "Calendario de pagos con importes y momento exacto de cada factura",
+    "Plazo de pago y fecha de vencimiento contada desde la emisión",
+    "Qué ocurre si el cliente se retrasa: intereses, suspensión del trabajo y reanudación",
+    "Trabajos fuera de presupuesto y cómo se aprueban antes de ejecutarlos",
+    "Gastos repercutibles y actualización de precios en proyectos largos",
+    "Cancelación por parte del cliente y trabajo ya ejecutado",
+    "Propiedad de la entrega o retirada del material hasta el pago completo",
+    "Validez del presupuesto y qué pasa si lo acepta meses después"
+  ],
+  "reglas": [
+    "Frases cortas y sin latinajos: tiene que entenderlo un cliente sin abogado",
+    "Cada cláusula, en un párrafo con su título",
+    "Nada de condiciones abusivas ni penalizaciones desproporcionadas",
+    "Adaptar la exigencia al tipo de cliente y avisar de qué es negociable",
+    "Recordar que un abogado debe revisar el texto antes de usarlo de forma habitual"
+  ],
+  "formato_salida": {
+    "bloque_condiciones": "Texto numerado listo para pegar al final del presupuesto",
+    "resumen_cliente": "Tabla simple: qué paga, cuándo y cómo",
+    "notas": "Tres avisos sobre los puntos que más se discuten y cómo defenderlos"
+  },
+  "criterios_calidad": [
+    "El cliente sabe en 30 segundos cuánto paga y cuándo",
+    "Ninguna cláusula deja el cobro al criterio del cliente",
+    "El texto sirve tal cual para el próximo presupuesto cambiando solo cifras"
+  ],
+  "tono": "Profesional, claro y sin sonar desconfiado"
+}

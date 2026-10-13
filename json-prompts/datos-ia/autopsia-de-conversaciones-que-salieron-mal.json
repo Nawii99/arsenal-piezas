@@ -1,0 +1,48 @@
+{
+  "tarea": "Analizar conversaciones reales fallidas de un agente de IA, agruparlas por tipo de error y priorizar los arreglos",
+  "contexto": {
+    "que_hace_el_agente": "[QUE HACE TU AGENTE EN UNA FRASE]",
+    "como_se_que_fallaron": "[SENAL: EL CLIENTE SE FUE, PIDIO HABLAR CON UNA PERSONA, SE QUEJO, NO SE CERRO LA VENTA]",
+    "periodo": "[FECHAS DE LAS CONVERSACIONES]"
+  },
+  "entradas": {
+    "conversaciones": "[PEGA LAS CONVERSACIONES COMPLETAS, SEPARADAS POR UNA LINEA CON TRES GUIONES]",
+    "prompt_actual": "[PEGA EL PROMPT DE SISTEMA DEL AGENTE]"
+  },
+  "taxonomia_de_errores": [
+    "Entendio mal lo que pedia el cliente",
+    "Le falto informacion y respondio igual",
+    "Se invento un dato",
+    "Uso mal o no uso una herramienta",
+    "Respondio correcto pero demasiado largo o frio",
+    "No supo decir que no y prometio de mas",
+    "No derivo a una persona cuando tocaba",
+    "Se enrosco repitiendo lo mismo",
+    "El problema no era del agente sino del proceso o del catalogo"
+  ],
+  "metodo": [
+    "Etiqueta cada conversacion con un unico error principal de la taxonomia y hasta dos secundarios",
+    "Marca el turno exacto en el que se torcio",
+    "Cuenta cuantas conversaciones caen en cada error y calcula el porcentaje",
+    "Cruza los errores con el prompt actual: senala que frase del prompt lo permite o no lo cubre",
+    "Estima el esfuerzo de cada arreglo como bajo, medio o alto"
+  ],
+  "restricciones": [
+    "No inventes lo que penso el cliente: apoyate en lo que escribio",
+    "Si una conversacion no tiene error claro del agente, dilo en vez de forzar una etiqueta"
+  ],
+  "formato_salida": {
+    "tipo": "informe",
+    "secciones": [
+      "Ranking de errores con numero de casos y porcentaje",
+      "Dos ejemplos citados por cada uno de los tres errores mas frecuentes",
+      "Tabla de arreglos con: error, cambio propuesto, esfuerzo y casos que resolveria",
+      "Los tres cambios al prompt escritos literalmente para copiar y pegar"
+    ]
+  },
+  "criterios_calidad": [
+    "Los porcentajes suman el total de conversaciones analizadas",
+    "Cada error frecuente lleva citas textuales",
+    "Los arreglos estan ordenados por casos resueltos entre esfuerzo"
+  ]
+}

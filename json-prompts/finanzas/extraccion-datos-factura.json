@@ -1,0 +1,27 @@
+{
+  "tarea": "extraer_datos_factura_espana",
+  "instruccion": "Lee el texto o la imagen de una factura española y extrae los datos en el formato indicado. Si un dato no aparece, pon null, no lo inventes.",
+  "contexto": "El usuario es autonomo o pyme y quiere llevar un registro de sus facturas de gasto o de venta sin usar un programa de contabilidad.",
+  "esquema_salida": {
+    "tipo_factura": "venta o gasto, segun quien la emite",
+    "numero_factura": "string o null",
+    "fecha_emision": "formato AAAA-MM-DD o null",
+    "emisor": { "nombre": "string o null", "nif": "string o null" },
+    "receptor": { "nombre": "string o null", "nif": "string o null" },
+    "lineas": [ { "concepto": "string", "base_imponible": "numero", "tipo_iva": "numero, por ejemplo 21, 10, 4 o 0", "cuota_iva": "numero" } ],
+    "retencion_irpf": { "aplica": "true o false", "porcentaje": "numero o null", "importe": "numero o null" },
+    "total_factura": "numero",
+    "avisos": ["lista de textos cortos si falta algun dato obligatorio o hay algo raro"]
+  },
+  "reglas": [
+    "No inventes NIF, fechas ni importes que no esten en el texto original.",
+    "Si el total no cuadra con la suma de base mas IVA menos retencion, dilo en avisos en vez de corregirlo tu.",
+    "Si la factura no tiene numero o le faltan datos obligatorios, dilo en avisos, no la des por valida.",
+    "Los importes van siempre en euros con punto decimal, sin simbolo de moneda."
+  ],
+  "no_hacer": [
+    "No calcules impuestos que no esten reflejados en la factura original.",
+    "No asumas el tipo de IVA si no aparece escrito: pon null y avisalo.",
+    "No uses este resultado como declaracion fiscal definitiva sin revision humana."
+  ]
+}

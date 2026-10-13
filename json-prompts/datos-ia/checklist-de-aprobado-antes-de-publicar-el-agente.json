@@ -1,0 +1,39 @@
+{
+  "tarea": "Elaborar la lista de comprobacion de aprobado para publicar un agente de IA y emitir un veredicto de salida",
+  "contexto": {
+    "que_hace_el_agente": "[QUE HACE TU AGENTE EN UNA FRASE]",
+    "alcance": "[A CUANTAS PERSONAS AL DIA VA A ATENDER Y EN QUE CANAL]",
+    "consecuencia_de_un_fallo": "[QUE PASA SI RESPONDE MAL: PERDER UNA VENTA, UNA QUEJA, UN PROBLEMA LEGAL]",
+    "quien_supervisa": "[PERSONA QUE REVISA LAS CONVERSACIONES Y CADA CUANTO]"
+  },
+  "entradas": {
+    "resultados_de_pruebas": "[PEGA LOS RESULTADOS QUE TENGAS: CASOS PASADOS Y FALLADOS]",
+    "casos_fallados": "[PEGA LOS CASOS QUE SIGUEN FALLANDO]"
+  },
+  "bloques_a_comprobar": [
+    "Cobertura: hay casos de prueba para las peticiones mas frecuentes y para los limites",
+    "Exactitud: no aparecen datos inventados en la muestra revisada",
+    "Limites: no promete precios, plazos ni consejos prohibidos",
+    "Salida de emergencia: sabe decir que no sabe y pasar a una persona",
+    "Datos personales: no pide ni repite mas datos de los necesarios",
+    "Aviso al usuario: queda claro que habla con una IA y como llegar a una persona",
+    "Registro: quedan guardadas las conversaciones para poder revisarlas",
+    "Plan B: que pasa si el agente se cae o responde raro un domingo",
+    "Revision humana: quien mira las conversaciones la primera semana y cada cuanto"
+  ],
+  "metodo": [
+    "Para cada bloque define un umbral concreto y medible antes de valorar nada",
+    "Valora cada bloque como APTO, APTO CON CONDICION o NO APTO segun los resultados pegados",
+    "Si falta informacion para valorar un bloque, marcalo como SIN EVIDENCIA y pidela",
+    "Marca como bloqueantes los bloques de Limites, Salida de emergencia y Datos personales"
+  ],
+  "formato_salida": {
+    "tipo": "checklist con veredicto",
+    "secciones": ["Tabla de bloques con umbral, estado y evidencia", "Veredicto: SALE, SALE EN PRUEBAS CON SUPERVISION o NO SALE", "Lista de tareas pendientes ordenadas por urgencia", "Fecha de revision recomendada"]
+  },
+  "criterios_calidad": [
+    "Ningun bloque se aprueba sin evidencia",
+    "Un bloqueante en NO APTO impide el veredicto SALE",
+    "Los umbrales estan escritos en numeros o en condiciones comprobables"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "tarea": "Redactar la política de devoluciones y desistimiento de una tienda online española, con formulario y versión resumida",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "catalogo": "[QUÉ VENDES]",
+    "casos_especiales": "[PRODUCTOS PERSONALIZADOS, PERECEDEROS, HIGIENE PRECINTADA, DIGITALES, SUSCRIPCIONES]",
+    "porte_devolucion": "[LO PAGA EL CLIENTE O LO PAGAS TÚ]",
+    "plazo_reembolso": "[DÍAS EN LOS QUE DEVUELVES EL DINERO, MÁXIMO 14]",
+    "direccion_devoluciones": "[DIRECCIÓN COMPLETA]"
+  },
+  "reglas_legales": [
+    "14 días naturales desde la recepción para desistir, sin justificar y sin penalización",
+    "Si no informas del derecho, el plazo se amplía 12 meses",
+    "El reembolso incluye el envío estándar de ida y se hace por el mismo medio de pago",
+    "Las excepciones legales deben citarse una a una, no en bloque",
+    "El desistimiento es distinto de la garantía por producto defectuoso: explícalo por separado"
+  ],
+  "entregables": [
+    "Política completa para la página de devoluciones",
+    "Formulario de desistimiento en el modelo legal, listo para copiar",
+    "Resumen de 4 líneas para la ficha de producto",
+    "Instrucciones paso a paso para el cliente",
+    "Guion interno de decisión para tu equipo: cuándo aceptar, cuándo no y qué responder"
+  ],
+  "restricciones": [
+    "No condiciones la devolución a que el embalaje esté intacto si la ley no lo permite",
+    "No ofrezcas solo vale o cambio cuando corresponde devolver el dinero",
+    "Tono claro y amable, tuteando, sin mayúsculas ni tono amenazante"
+  ],
+  "formato_salida": {"tipo": "markdown con secciones separadas por entregable"},
+  "criterios_calidad": ["Un cliente sabe en 30 segundos si puede devolver y qué hacer", "Las excepciones están justificadas por norma, no por comodidad de la tienda"],
+  "aviso": "Texto orientativo; ajústalo con asesoría si vendes fuera de España."
+}

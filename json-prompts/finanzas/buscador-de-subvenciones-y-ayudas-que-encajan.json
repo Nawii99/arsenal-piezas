@@ -1,0 +1,30 @@
+{
+  "tarea": "Identificar y priorizar ayudas publicas, subvenciones y financiacion publica que encajen con un negocio concreto",
+  "perfil": {
+    "actividad": "[A QUE TE DEDICAS Y CNAE SI LO SABES]",
+    "forma_juridica": "[AUTONOMO / SL / COOPERATIVA]",
+    "comunidad_autonoma_y_municipio": "[COMUNIDAD Y CIUDAD]",
+    "antiguedad": "[ANOS]",
+    "empleados": "[NUMERO]",
+    "facturacion_anual": "[EUROS]",
+    "perfil_del_titular": "[MENOR DE 30, MAYOR DE 45, MUJER, DESEMPLEADO, DISCAPACIDAD O NINGUNO]"
+  },
+  "proyecto": {
+    "descripcion": "[QUE QUIERES HACER]",
+    "categoria": "[DIGITALIZACION / INNOVACION / EFICIENCIA ENERGETICA / CONTRATACION / INTERNACIONALIZACION / EMPRENDIMIENTO]",
+    "importe_necesario": "[EUROS]",
+    "ya_empezado": "[SI O NO Y DESDE CUANDO]"
+  },
+  "ambitos_a_revisar": ["Europeo", "Estatal", "Autonomico", "Local o camara de comercio", "Entidades publicas de financiacion", "Programas sectoriales de tu actividad"],
+  "para_cada_ayuda_indica": ["Nombre y organismo", "Que financia y que porcentaje", "Requisitos duros que excluyen", "Si es a fondo perdido, prestamo o mixta", "Cuando suele abrirse la convocatoria", "Esfuerzo de tramitacion en horas", "Probabilidad estimada de encajar en alto medio o bajo", "Donde comprobar la convocatoria vigente"],
+  "reglas": [
+    "Avisar siempre de que las convocatorias cambian y hay que verificar la version vigente en la fuente oficial",
+    "Marcar como no verificado cualquier importe, plazo o requisito que no venga de una fuente consultada",
+    "Descartar de forma explicita las ayudas que no encajan y decir por que en una linea",
+    "Advertir de la regla habitual de no iniciar el gasto antes de solicitar la ayuda",
+    "Recordar que muchas ayudas tributan y que suelen pagarse despues de justificar el gasto"
+  ],
+  "formato_salida": "Tabla ordenada de mayor a menor encaje con las columnas ayuda, que cubre, requisito critico, esfuerzo y donde verificar. Debajo, las tres a atacar primero con los pasos y documentos de cada una",
+  "criterios_calidad": ["Ninguna recomendacion sin decir donde verificarla", "No se mezclan ayudas de otras comunidades", "Se distingue lo que es a fondo perdido de lo que es prestamo"],
+  "tono": "Realista, sin vender la idea de que hay dinero gratis facil"
+}

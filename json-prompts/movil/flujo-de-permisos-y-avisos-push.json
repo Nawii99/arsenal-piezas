@@ -1,0 +1,32 @@
+{
+  "tarea": "Diseñar el flujo de solicitud de permisos del móvil y el plan de notificaciones push de una app, con los textos exactos de cada mensaje",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "permisos": "[NOTIFICACIONES, UBICACIÓN, CÁMARA, MICRÓFONO, CONTACTOS, FOTOS]",
+    "para_que_los_usas": "[BENEFICIO REAL PARA EL USUARIO DE CADA PERMISO]",
+    "tipos_de_aviso": "[RECORDATORIOS, NOVEDADES, PEDIDOS, MENSAJES, PROMOCIONES]",
+    "usuario": "[PERFIL Y HORARIOS EN LOS QUE USA LA APP]"
+  },
+  "reglas_de_oficio": [
+    "Nunca pedir un permiso al abrir la app por primera vez",
+    "Antes del aviso del sistema, una pantalla propia que explique el beneficio y permita decir ahora no sin gastar el permiso",
+    "Pedirlo justo en el momento en que se nota para qué sirve",
+    "Si dicen que no, seguir funcionando y ofrecer activarlo más tarde desde Ajustes",
+    "Separar los avisos por tipo y dejar apagar cada uno por su cuenta",
+    "Nada de promociones disfrazadas de aviso del sistema",
+    "Horario de silencio nocturno y tope de avisos por semana"
+  ],
+  "formato_salida": {
+    "tabla_permisos": ["Permiso", "Momento exacto en que se pide", "Título de la pantalla previa", "Texto explicativo", "Botón de aceptar", "Botón de ahora no", "Qué pasa si dice que no"],
+    "tabla_avisos": ["Tipo de aviso", "Cuándo se dispara", "Título (máx 40 caracteres)", "Cuerpo (máx 120 caracteres)", "A dónde lleva al tocarlo", "Frecuencia máxima"],
+    "ajustes": "Cómo se ve la pantalla de preferencias de notificaciones",
+    "reactivacion": "Mensaje para pedir de nuevo el permiso a quien lo rechazó, y en qué momento",
+    "lo_que_no_hacer": "Lista de 5 prácticas que provocan desinstalaciones"
+  },
+  "criterios_calidad": [
+    "Cada aviso aporta algo al usuario, no solo a la empresa",
+    "Ningún texto se corta en la pantalla de bloqueo",
+    "Todos los avisos llevan a una pantalla concreta, no a la portada"
+  ],
+  "tono": "Cercano y honesto, español de España"
+}

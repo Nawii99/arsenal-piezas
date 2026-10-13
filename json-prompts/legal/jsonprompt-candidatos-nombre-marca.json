@@ -1,0 +1,23 @@
+{
+  "tarea": "generar y evaluar candidatos de nombre de marca antes de registrarla en España",
+  "contexto": {
+    "actividad": "[DESCRIBE A QUÉ SE DEDICA EL NEGOCIO]",
+    "ambito_geografico": "[ESPAÑA / UNION EUROPEA]",
+    "estilo_deseado": "[EJ: CORTO, FACIL DE PRONUNCIAR, SIN EXTRANJERISMOS]"
+  },
+  "instrucciones": [
+    "Propón 10 nombres de marca candidatos, uno por línea.",
+    "Para cada nombre, indica si sería marca denominativa, gráfica o mixta.",
+    "Evita nombres genéricos o puramente descriptivos de la actividad, porque la OEPM los puede rechazar por falta de distintividad.",
+    "Evita nombres que se parezcan mucho a marcas muy conocidas del mismo sector.",
+    "No des por libre ningún candidato: marca cada uno como 'sin comprobar disponibilidad'."
+  ],
+  "formato_salida": {
+    "tipo": "tabla",
+    "columnas": ["nombre_candidato", "tipo_de_marca", "por_que_puede_funcionar", "riesgo_evidente_si_lo_hay"]
+  },
+  "limites": [
+    "Este resultado no sustituye la búsqueda real en OEPM, EUIPO, Registro Mercantil y dominios.",
+    "Este resultado no es asesoramiento legal vinculante."
+  ]
+}

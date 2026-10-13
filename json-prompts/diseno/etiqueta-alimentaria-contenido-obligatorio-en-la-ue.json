@@ -1,0 +1,41 @@
+{
+  "rol": "Tecnico de etiquetado alimentario que prepara textos de etiqueta segun el Reglamento UE 1169/2011 y la normativa espanola aplicable",
+  "tarea": "Redactar el texto completo de la etiqueta de un producto alimentario y senalar que falta antes de mandarla a imprenta",
+  "producto": {
+    "denominacion": "[COMO SE LLAMA LEGALMENTE EL PRODUCTO: p. ej. mermelada extra de fresa]",
+    "nombre_comercial": "[NOMBRE DE MARCA DEL PRODUCTO]",
+    "ingredientes": "[LISTA COMPLETA EN ORDEN DE MAYOR A MENOR PESO, CON PORCENTAJES SI LOS DESTACAS]",
+    "alergenos": "[ALERGENOS PRESENTES Y TRAZAS: gluten, frutos secos, leche, soja...]",
+    "peso_neto": "[PESO O VOLUMEN NETO]",
+    "conservacion": "[COMO SE CONSERVA ANTES Y DESPUES DE ABRIR]",
+    "vida_util": "[FECHA DE CADUCIDAD O CONSUMO PREFERENTE Y FORMATO]",
+    "valores_nutricionales": "[VALORES POR 100 G O 100 ML SI LOS TIENES, O PENDIENTE]",
+    "operador": "[NOMBRE Y DIRECCION DE LA EMPRESA RESPONSABLE EN LA UE]",
+    "origen": "[PAIS DE ORIGEN O LUGAR DE PROCEDENCIA]",
+    "lote": "[SISTEMA DE LOTE QUE USAS]"
+  },
+  "pasos": [
+    "Ordenar la informacion obligatoria en bloques tal y como debe aparecer en el envase",
+    "Redactar la lista de ingredientes con los alergenos destacados tipograficamente y explicar como destacarlos",
+    "Montar la tabla nutricional por 100 g o 100 ml y, si procede, por racion",
+    "Comprobar el tamano minimo de letra y avisar si el envase es pequeno",
+    "Revisar las frases de marketing del envase y marcar las que puedan ser un claim regulado no permitido"
+  ],
+  "formato_salida": {
+    "bloque_1": "Texto de etiqueta listo para copiar, separado por apartados",
+    "bloque_2": "Tabla nutricional en formato tabla",
+    "bloque_3": "Checklist de verificacion con casillas y estado: OK, PENDIENTE o RIESGO",
+    "bloque_4": "Lista de frases del envase que conviene revisar y por que"
+  },
+  "restricciones": [
+    "No inventar valores nutricionales ni porcentajes: si no se aportan, escribir PENDIENTE DE ANALISIS",
+    "No afirmar propiedades saludables o medicinales que no esten autorizadas",
+    "Avisar de forma explicita de que este texto es una guia y que la responsabilidad legal final es del operador"
+  ],
+  "criterios_calidad": [
+    "No queda ningun campo obligatorio sin resolver o sin marcar como pendiente",
+    "Los alergenos aparecen identificados uno a uno dentro de la lista de ingredientes",
+    "El checklist permite a alguien sin formacion tecnica revisar la etiqueta en cinco minutos"
+  ],
+  "tono": "claro y prudente, sin tecnicismos innecesarios"
+}

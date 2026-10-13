@@ -1,0 +1,39 @@
+{
+  "tarea": "Redacta el plan de respuesta ante incidentes de seguridad de una empresa pequena, pensado para ejecutarlo con nervios y sin equipo tecnico propio",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sistemas_criticos": "[p. ej. correo, ERP, TPV, web de reservas, servidor de archivos]",
+    "soporte_informatico": "[NOMBRE Y TELEFONO]",
+    "banco_y_telefono": "[BANCO Y TELEFONO DE FRAUDE]",
+    "seguro_ciber": "[COMPANIA Y POLIZA O -no tengo-]",
+    "horario_del_negocio": "[p. ej. L-V 9 a 18]"
+  },
+  "escenarios_a_cubrir": [
+    "Ransomware: archivos cifrados y nota de rescate",
+    "Cuenta de correo comprometida y envio de correos en tu nombre",
+    "Fraude del CEO o factura falsa ya pagada",
+    "Perdida o robo de portatil o movil con datos",
+    "Filtracion o publicacion de datos de clientes",
+    "Caida o borrado de la web o del sistema de reservas"
+  ],
+  "para_cada_escenario": [
+    "Senales de que esta pasando",
+    "Primeros 15 minutos: que hacer y que NO hacer",
+    "Primeras 4 horas: contener y avisar",
+    "A quien se llama y en que orden, con hueco para el telefono",
+    "Que se apunta en el registro del incidente",
+    "Cuando toca plantearse avisar a clientes o a la autoridad de proteccion de datos"
+  ],
+  "restricciones": [
+    "Espanol de Espana, imperativo claro: haz esto, no hagas aquello",
+    "Cada escenario cabe en una pagina imprimible",
+    "No des asesoramiento juridico cerrado: indica cuando conviene consultar y con quien",
+    "Incluye siempre el aviso de no apagar ni formatear antes de que lo vea el tecnico"
+  ],
+  "formato_salida": "Una ficha por escenario en Markdown, cada una con titulo, semaforo de gravedad, lista numerada de acciones y caja final -Telefonos-. Cierra con una plantilla de registro de incidente de 8 campos",
+  "criterios_calidad": [
+    "Un empleado sin conocimientos puede ejecutar los primeros 15 minutos solo",
+    "Ninguna accion destruye pruebas o copias necesarias para recuperar",
+    "El plan indica quien decide y quien comunica, sin ambiguedad"
+  ]
+}

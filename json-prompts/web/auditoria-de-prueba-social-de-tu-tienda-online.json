@@ -1,0 +1,37 @@
+{
+  "tarea": "Auditar la prueba social de una tienda online y devolver un plan de mejoras priorizado",
+  "entradas": {
+    "url_tienda": "[URL DE TU TIENDA]",
+    "sector": "[SECTOR O TIPO DE PRODUCTO]",
+    "contenido_home": "[PEGA EL TEXTO O DESCRIBE LA PÁGINA DE INICIO]",
+    "contenido_ficha": "[PEGA EL TEXTO DE UNA FICHA DE PRODUCTO]",
+    "contenido_checkout": "[QUÉ SE VE EN CARRITO Y PAGO]",
+    "activos_disponibles": "[NÚMERO DE RESEÑAS, NOTA MEDIA, FOTOS DE CLIENTES, CASOS, MEDIOS, SELLOS, Nº DE CLIENTES]"
+  },
+  "puntos_a_revisar": [
+    "Inicio: si hay prueba social por encima del primer scroll y si es concreta o genérica",
+    "Ficha de producto: posición de la nota media, número de reseñas visible y cercanía al botón de comprar",
+    "Reseñas: si se pueden filtrar, si hay fotos de clientes y si aparecen también las negativas",
+    "Carrito y pago: sellos de pago seguro, política de devoluciones y garantía a la vista",
+    "Coherencia: si la nota que se enseña coincide con la real en plataformas externas",
+    "Velocidad y móvil: si el widget de reseñas carga tarde o rompe la maquetación",
+    "Confianza legal: aviso de cómo se recogen y verifican las reseñas"
+  ],
+  "errores_tipicos_a_detectar": [
+    "Testimonios sin nombre, sin foto y sin contexto que parecen inventados",
+    "Sellos de confianza autoconcedidos que no enlazan a ninguna fuente",
+    "Reseñas solo de 5 estrellas, que reducen la credibilidad en vez de aumentarla",
+    "Prueba social escondida al final de la página",
+    "Contadores de urgencia falsos tipo 12 personas viendo esto ahora"
+  ],
+  "formato_salida": {
+    "tabla_hallazgos": "Columnas: zona, qué falla, por qué importa, arreglo concreto, impacto alto/medio/bajo, esfuerzo alto/medio/bajo",
+    "plan": "Los 5 arreglos a hacer esta semana, en orden",
+    "nota": "Puntuación global de confianza de 0 a 10 con una frase que la justifique"
+  },
+  "criterios_calidad": [
+    "Cada arreglo dice exactamente dónde se toca y qué se pone, no consejos vagos",
+    "No se recomienda ninguna práctica que engañe al comprador",
+    "Se distingue lo que se puede hacer sin programador de lo que no"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar la carta de límites de un agente de IA antes de ponerlo a trabajar con clientes reales",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD DE TU NEGOCIO]",
+    "que_hace_el_agente": "[QUÉ QUIERES QUE HAGA EL AGENTE]",
+    "canales": "[WEB, WHATSAPP, EMAIL O TELÉFONO]",
+    "con_quien_habla": "[CLIENTES, EMPLEADOS O PROVEEDORES]",
+    "riesgo_maximo_asumible": "[QUÉ ES LO PEOR QUE PUEDE PASAR SIN QUE SEA UN DESASTRE]"
+  },
+  "entradas": {
+    "acciones_deseadas": ["[ACCIÓN 1]", "[ACCIÓN 2]", "[ACCIÓN 3]"],
+    "datos_a_los_que_accede": "[CRM, CALENDARIO, PEDIDOS, FICHEROS]",
+    "normativa_aplicable": "[RGPD, CONSUMO, SECTOR CONCRETO]"
+  },
+  "pasos": [
+    "Separar cada acción en tres cajones: permitida siempre, permitida con confirmación humana y prohibida",
+    "Poner a cada acción permitida un límite numérico: importe máximo, veces al día, antigüedad del dato",
+    "Listar los temas sobre los que el agente no opina: legal, médico, fiscal, promesas de resultados y datos de terceros",
+    "Escribir la frase exacta con la que el agente reconoce que algo se sale de sus límites",
+    "Definir a quién avisa, por qué vía y en cuánto tiempo cuando se topa con un límite"
+  ],
+  "restricciones": [
+    "Nada de límites vagos tipo ser prudente: cada regla debe poder comprobarse con un sí o un no",
+    "Toda acción que mueva dinero, borre datos o hable en nombre del negocio ante terceros va con confirmación humana",
+    "Máximo 15 reglas: si no caben, el agente está haciendo demasiadas cosas"
+  ],
+  "formato_salida": {
+    "tipo": "documento en markdown",
+    "secciones": ["Qué puede hacer", "Qué hace solo si lo confirmo", "Qué no hace nunca", "Frases de rechazo", "A quién avisa y cuándo", "Fecha de revisión"],
+    "tabla_final": "columnas Acción | Cajón | Límite numérico | Quién confirma"
+  },
+  "criterios_calidad": [
+    "Una persona ajena al negocio podría aplicar cada regla sin preguntar nada",
+    "Ninguna regla se contradice con otra",
+    "Todas las acciones irreversibles están en el cajón de confirmación o en el de prohibidas"
+  ],
+  "tono": "claro, directo y sin jerga técnica"
+}

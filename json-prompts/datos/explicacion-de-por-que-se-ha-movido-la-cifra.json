@@ -1,0 +1,35 @@
+{
+  "tarea": "Explica por qué ha cambiado esta cifra entre los dos periodos, descomponiendo la variación en causas medibles",
+  "entradas": {
+    "metrica": "[QUÉ CIFRA SE HA MOVIDO: FACTURACIÓN, MARGEN, PEDIDOS...]",
+    "periodo_a": "[PERIODO DE REFERENCIA Y SU VALOR]",
+    "periodo_b": "[PERIODO ACTUAL Y SU VALOR]",
+    "desglose": "[LA MISMA CIFRA ABIERTA POR PRODUCTO, CANAL, CLIENTE O ZONA EN AMBOS PERIODOS]",
+    "precio_y_unidades": "[PRECIO MEDIO Y UNIDADES VENDIDAS EN CADA PERIODO SI LOS TIENES]",
+    "cambios_conocidos": "[SUBIDAS DE PRECIO, ROTURAS DE STOCK, CAMPAÑAS, FESTIVOS, BAJAS DE CLIENTES]"
+  },
+  "metodo": [
+    "Cuantifica primero la variación total en euros y en porcentaje",
+    "Descompón el cambio en efecto precio, efecto volumen y efecto mix cuando haya datos para ello",
+    "Ordena de mayor a menor las partes que más aportan a la variación hasta cubrir el ochenta por ciento del movimiento",
+    "Descarta explicaciones que los datos no sostienen y dilo abiertamente",
+    "Distingue entre causa demostrada con datos e hipótesis por confirmar, y di qué dato haría falta para confirmarla"
+  ],
+  "formato_salida": {
+    "resumen": "Una frase con la causa principal y el peso que tiene sobre el total",
+    "tabla_de_causas": "Columnas: causa | euros que explica | porcentaje del movimiento | evidencia | demostrada o hipótesis",
+    "lo_que_no_es": "Explicaciones plausibles que los datos descartan",
+    "comprobaciones": "Qué mirar la semana que viene para confirmar o descartar las hipótesis",
+    "acciones": "Dos o tres medidas proporcionadas al tamaño real del problema"
+  },
+  "restricciones": [
+    "La suma de las causas debe cuadrar con la variación total; si sobra un resto, muéstralo como no explicado",
+    "No confundas coincidencia con causa",
+    "Nada de recomendaciones genéricas del tipo mejorar el marketing"
+  ],
+  "criterios_calidad": [
+    "Puedo explicar la causa principal en una frase delante de cualquiera",
+    "Cada euro de la variación está asignado o marcado como no explicado",
+    "Las acciones propuestas atacan la causa dominante, no las secundarias"
+  ]
+}

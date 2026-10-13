@@ -1,0 +1,38 @@
+{
+  "tarea": "Reconstruir ADRs retroactivos a partir de un sistema ya construido y sin documentar",
+  "contexto": {
+    "proyecto": "[NOMBRE Y QUÉ HACE EL SISTEMA]",
+    "antiguedad": "[AÑOS APROXIMADOS Y CUÁNTAS MANOS HAN PASADO]",
+    "situacion": "[POR QUÉ NECESITAS ENTENDERLO AHORA: HERENCIA, AUDITORÍA, MIGRACIÓN...]"
+  },
+  "entradas": {
+    "estructura_de_carpetas": "[PEGA EL ÁRBOL DE DIRECTORIOS PRINCIPAL]",
+    "dependencias": "[PEGA EL package.json, requirements.txt, pom.xml O EQUIVALENTE]",
+    "infraestructura": "[DÓNDE ESTÁ DESPLEGADO Y CON QUÉ SERVICIOS]",
+    "historia_conocida": "[LO QUE TE HAYAN CONTADO, AUNQUE SEAN RUMORES]"
+  },
+  "pasos": [
+    "1. Identifica de 5 a 10 decisiones de arquitectura visibles en el material aportado",
+    "2. Para cada una, distingue tres niveles: DECISIÓN DELIBERADA, ACCIDENTE HISTÓRICO o COPIA DE UNA PLANTILLA",
+    "3. Reconstruye el contexto probable de la época, marcándolo siempre como hipótesis",
+    "4. Evalúa si la decisión sigue teniendo sentido hoy: VIGENTE, DUDOSA u OBSOLETA",
+    "5. Para las obsoletas, estima el coste de cambiarla y el riesgo de dejarla",
+    "6. Ordena las decisiones por impacto si se tocan, de mayor a menor"
+  ],
+  "restricciones": [
+    "Separa siempre lo que ves en el código de lo que supones; usa las etiquetas OBSERVADO e HIPÓTESIS",
+    "No propongas reescribir nada en este documento: aquí solo se documenta",
+    "Si un indicio no basta para afirmar algo, di qué fichero o persona lo confirmaría"
+  ],
+  "formato_salida": {
+    "tipo": "Una ficha por decisión, en markdown",
+    "campos_por_ficha": ["Título", "Qué se decidió (observado)", "Contexto probable (hipótesis)", "Tipo: deliberada / accidente / plantilla", "Estado hoy: vigente / dudosa / obsoleta", "Qué se rompe si lo cambias", "Cómo confirmarlo"],
+    "cierre": "Tabla resumen con las decisiones ordenadas por impacto y una lista de las 3 preguntas más urgentes"
+  },
+  "criterios_calidad": [
+    "Ninguna hipótesis se presenta como hecho",
+    "Cada ficha señala el fichero, carpeta o dependencia que la sustenta",
+    "Un desarrollador nuevo sabría por dónde no empezar a tocar"
+  ],
+  "tono": "Detectivesco y prudente, sin juzgar a quien lo hizo antes"
+}

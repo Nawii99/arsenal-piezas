@@ -1,0 +1,49 @@
+{
+  "tarea": "Redactar el contenido de las secciones de una web de currículum a partir de datos en bruto, sin inventar nada que no esté en la entrada.",
+  "contexto": "El resultado se pega directamente en una plantilla de web de currículum ya maquetada; solo hace falta el texto de cada sección, no el diseño.",
+  "entrada": {
+    "datos_personales": {
+      "nombre": "[NOMBRE]",
+      "puesto_objetivo": "[PUESTO AL QUE ASPIRAS]",
+      "ubicacion": "[CIUDAD, PAÍS]"
+    },
+    "experiencia": [
+      {
+        "empresa": "[NOMBRE EMPRESA]",
+        "puesto": "[PUESTO]",
+        "fecha_inicio": "[MES AÑO]",
+        "fecha_fin": "[MES AÑO O 'ACTUAL']",
+        "tareas_en_bruto": "[LISTA DE TAREAS SIN PULIR, TAL CUAL LAS RECUERDES]",
+        "resultado_con_cifra": "[UN RESULTADO MEDIBLE, O 'NO TENGO' SI NO LO HAY]"
+      }
+    ],
+    "proyectos": [
+      {
+        "nombre": "[NOMBRE DEL PROYECTO]",
+        "descripcion_en_bruto": "[QUÉ ES, EN TUS PALABRAS]",
+        "enlace": "[URL O 'SIN ENLACE']"
+      }
+    ],
+    "habilidades": {
+      "tecnicas": ["[HABILIDAD 1]", "[HABILIDAD 2]"],
+      "blandas": ["[HABILIDAD 1]"]
+    }
+  },
+  "instrucciones": [
+    "No inventes tareas, cifras ni empresas que no estén en la entrada; si falta un dato, deja la sección más corta en vez de rellenar con algo falso.",
+    "Convierte las tareas en bruto de cada experiencia en 2-3 frases con verbo de acción al principio (hice, gestioné, reduje), sin adjetivos vacíos.",
+    "Si el campo resultado_con_cifra dice 'NO TENGO', no lo sustituyas por una cifra inventada: describe el logro sin número.",
+    "El resumen general no puede superar las 3 frases."
+  ],
+  "restricciones": {
+    "longitud_maxima_resumen_palabras": 60,
+    "tono": "[FORMAL / CERCANO / DIRECTO]",
+    "idioma_salida": "[IDIOMA]"
+  },
+  "formato_salida": {
+    "resumen": "texto de 2-3 frases",
+    "experiencia_redactada": "lista, una entrada por puesto, con el texto ya pulido",
+    "proyectos_redactados": "lista, una entrada por proyecto",
+    "aviso_datos_faltantes": "lista de qué dato faltaba y en qué sección, para revisarlo a mano"
+  }
+}

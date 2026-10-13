@@ -1,0 +1,51 @@
+{
+  "tarea": "Convertir la transcripción de una sesión real en una lección estructurada, con resumen, guion limpio, ejercicio y comprobación.",
+  "contexto": {
+    "tipo_de_grabacion": "[CONSULTORÍA CON CLIENTE / CLASE EN DIRECTO / LLAMADA DE DUDAS / CHARLA]",
+    "duracion_original": "[MINUTOS]",
+    "curso_o_serie": "[EN QUÉ CURSO O SERIE ENCAJA Y QUÉ MÓDULO ES]",
+    "nivel_del_alumno": "[CERO / BÁSICO / YA HA HECHO ALGO]",
+    "confidencialidad": "[QUÉ NOMBRES, CIFRAS O DATOS HAY QUE ANONIMIZAR SÍ O SÍ]"
+  },
+  "entradas": {
+    "transcripcion": "[PEGA AQUÍ LA TRANSCRIPCIÓN COMPLETA CON MARCAS DE TIEMPO SI LAS TIENES]",
+    "objetivo_de_la_leccion": "[QUÉ QUIERES QUE SEPA HACER QUIEN LA VEA]"
+  },
+  "proceso": [
+    "1. Lee la transcripción entera y marca los momentos donde se resuelve algo de verdad: una decisión, un cálculo, un antes y después, una objeción respondida.",
+    "2. Descarta saludos, ruido, líos técnicos, chistes privados y todo lo que dependa del contexto de esa persona concreta.",
+    "3. Extrae el método implícito: qué pasos siguió el experto aunque no los nombrara. Escríbelos como lista numerada.",
+    "4. Detecta las frases textuales valiosas (explicaciones que salieron redondas) y consérvalas literales entre comillas para reutilizarlas.",
+    "5. Anonimiza según la lista de confidencialidad: sustituye nombres por perfil ('una clínica dental de barrio') y cifras exactas por rangos.",
+    "6. Reordena el contenido en la estructura: problema, contexto mínimo, método paso a paso, ejemplo aplicado, errores que vimos, ejercicio.",
+    "7. Escribe el resumen de 5 líneas que el alumno leería si no viera el vídeo.",
+    "8. Propone los cortes de vídeo con marcas de tiempo aprovechables y qué hay que volver a grabar (solo los huecos)."
+  ],
+  "restricciones": [
+    "No inventes nada que no esté en la transcripción; si falta un paso, márcalo como HUECO A GRABAR.",
+    "Prohibido publicar datos identificables del cliente aunque parezcan inocentes (ciudad + sector + cifra ya identifica).",
+    "Mantén el tono hablado del experto: limpia muletillas, no lo conviertas en lenguaje de manual.",
+    "Si la sesión mezcla dos temas, sepáralos en dos lecciones y dilo."
+  ],
+  "formato_salida": {
+    "titulo": "Título de la lección, verbo de acción.",
+    "resumen": "5 líneas.",
+    "metodo": "Pasos numerados con lo que hay que mirar en cada uno.",
+    "ejemplo": "El caso real anonimizado, en 10 líneas máximo.",
+    "frases_reutilizables": "Lista de citas textuales con su marca de tiempo.",
+    "errores_observados": "Lo que la persona de la grabación hacía mal y cómo se corrigió.",
+    "ejercicio": "Tarea concreta con entregable y tiempo estimado.",
+    "plan_de_montaje": "Tabla: Minuto inicio | Minuto fin | Qué se usa | Huecos a regrabar."
+  },
+  "criterios_calidad": [
+    "Alguien que no estuvo en la sesión entiende la lección sin contexto extra.",
+    "Cada paso del método aparece de verdad en la transcripción, con su marca de tiempo.",
+    "No queda ni un dato que permita identificar al cliente original.",
+    "El ejercicio se puede hacer en el tiempo indicado con lo enseñado, sin herramientas nuevas."
+  ],
+  "errores_tipicos": [
+    "Publicar la grabación entera 'porque tiene valor': el alumno abandona en el minuto seis.",
+    "Quedarse con las anécdotas y perder el método.",
+    "Reescribirlo todo en tono corporativo y cargarse lo que hacía creíble al experto."
+  ]
+}

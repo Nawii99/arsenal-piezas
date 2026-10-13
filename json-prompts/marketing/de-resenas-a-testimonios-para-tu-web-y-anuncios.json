@@ -1,0 +1,36 @@
+{
+  "tarea": "Transformar reseñas reales en testimonios listos para usar en web, redes y anuncios",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "que_vendes": "[PRODUCTO O SERVICIO]",
+    "objeciones": "[LAS 3 DUDAS QUE MÁS FRENAN A TUS CLIENTES]",
+    "destinos": "[PÁGINA DE INICIO / FICHA DE PRODUCTO / INSTAGRAM / ANUNCIO / PRESUPUESTOS]"
+  },
+  "entradas": {
+    "resenas": "[PEGA AQUÍ TUS MEJORES RESEÑAS CON NOMBRE Y PLATAFORMA]"
+  },
+  "proceso": [
+    "Empareja cada reseña con la objeción que desmonta",
+    "Recorta la cita hasta dejar la frase con más fuerza, sin cambiar el sentido ni añadir palabras",
+    "Marca con corchetes cualquier recorte y no maquilles faltas que cambien el significado",
+    "Propón el formato para cada destino: frase corta con estrellas, bloque con nombre y ciudad, o captura de la reseña",
+    "Redacta el mensaje para pedir permiso de uso al cliente"
+  ],
+  "restricciones": [
+    "Prohibido inventar, mezclar o mejorar frases de clientes",
+    "Nada de apellidos completos, fotos ni datos personales sin permiso escrito",
+    "No atribuir a un cliente algo que no dijo, ni siquiera reformulado",
+    "Indica siempre la plataforma de origen de la cita"
+  ],
+  "formato_salida": {
+    "tabla": "Objeción | Cita recortada | Autor y origen | Destino recomendado",
+    "bloque_web": "3 testimonios maquetados en texto para pegar en la web",
+    "post": "Un post corto para redes construido sobre la mejor reseña",
+    "anuncio": "2 titulares de anuncio basados en frases literales",
+    "permiso": "Mensaje breve para pedir autorización de uso"
+  },
+  "criterios_calidad": [
+    "Cada cita se puede localizar tal cual en la reseña original",
+    "Suenan a cliente hablando, no a copy de agencia"
+  ]
+}

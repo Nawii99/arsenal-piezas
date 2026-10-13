@@ -1,0 +1,36 @@
+{
+  "tarea": "Auditar una serie histórica y decidir si es apta para hacer previsiones, indicando qué limpiar y cómo",
+  "contexto": {
+    "origen_de_los_datos": "[TPV, TIENDA ONLINE, EXCEL A MANO, FACTURACIÓN...]",
+    "que_mide_la_serie": "[VENTAS EN EUROS, PEDIDOS, CITAS, VISITAS...]",
+    "periodicidad": "[DIARIA, SEMANAL O MENSUAL]"
+  },
+  "entradas": {
+    "serie": "[PEGA LOS DATOS TAL CUAL, EN FORMATO fecha;valor, UNO POR LÍNEA]",
+    "sucesos_conocidos": "[CIERRES, CAMBIO DE TPV, CAMBIO DE PRECIOS, MUDANZA, BAJA LARGA...]"
+  },
+  "procedimiento": [
+    "1. Comprueba la continuidad del calendario y lista las fechas que faltan",
+    "2. Detecta fechas duplicadas, valores negativos, ceros sospechosos y textos donde debería haber números",
+    "3. Marca valores atípicos por dos vías: desviación respecto a la mediana y salto brusco respecto al periodo anterior",
+    "4. Busca cambios de nivel: tramos en los que la media cambia y ya no vuelve, e indica la fecha aproximada del cambio",
+    "5. Distingue el cero real (no hubo ventas) del cero por falta de dato, usando los sucesos conocidos",
+    "6. Valora si la serie mezcla criterios: con IVA y sin IVA, devoluciones incluidas o no",
+    "7. Dictamina si la serie sirve tal cual, sirve tras limpiar, o no sirve"
+  ],
+  "restricciones": [
+    "No corrijas nada en silencio: propón la corrección y explica el efecto que tendría",
+    "No elimines un pico solo por ser alto si hay un suceso que lo explica",
+    "Habla de fechas concretas, nunca de rangos vagos"
+  ],
+  "formato_salida": {
+    "veredicto": "Una frase: apta, apta tras limpieza o no apta, y desde qué fecha es fiable",
+    "tabla_incidencias": "Fecha o tramo | Problema | Gravedad alta/media/baja | Causa probable | Qué hacer",
+    "plan_de_limpieza": "Pasos numerados que puedo aplicar yo en Excel o Google Sheets",
+    "aviso": "Qué previsiones NO debería hacer con estos datos"
+  },
+  "criterios_calidad": [
+    "Cada incidencia señala la fila concreta afectada",
+    "El plan de limpieza es ejecutable sin saber programar"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "tarea": "Diseñar el contrato de la API que van a consumir terceros: rutas, autenticación, formatos, errores, límites, versionado y documentación, antes de programarla",
+  "contexto": {
+    "quien_la_va_a_usar": "[MI PROPIA APP MÓVIL / UN CLIENTE / UNA AGENCIA / CUALQUIERA QUE SE REGISTRE]",
+    "que_expone": "[QUÉ DATOS O ACCIONES SE PUEDEN CONSULTAR O EJECUTAR]",
+    "cuantos_consumidores": "[UNO CONCRETO / VARIOS CLIENTES / PÚBLICO]",
+    "nivel_tecnico": "no soy programador: necesito el contrato claro para poder encargarlo o generarlo"
+  },
+  "entradas": {
+    "casos_de_uso": "[QUÉ QUIERE HACER EL QUE LA USA, EN FRASES: LISTAR PEDIDOS, CREAR UNA CITA, DESCARGAR FACTURAS]",
+    "datos_que_no_deben_salir": "[CAMPOS INTERNOS, MÁRGENES, DATOS DE OTROS CLIENTES]",
+    "volumen_previsto": "[PETICIONES AL DÍA]"
+  },
+  "pasos": [
+    "1. Traduce cada caso de uso a un recurso y unas operaciones, con nombres en plural y sin verbos en la ruta",
+    "2. Elige el método de autenticación adecuado y explica por qué: clave de API por consumidor, token con caducidad o acceso delegado",
+    "3. Define el formato de respuesta uniforme para éxito y para error, con un código de error propio, mensaje para humanos y campo afectado",
+    "4. Fija la lista de códigos HTTP que vas a usar y cuándo: 200, 201, 400, 401, 403, 404, 409, 422, 429, 500",
+    "5. Define paginación por cursor, orden por defecto y filtros permitidos, con el límite máximo de elementos por página",
+    "6. Añade idempotencia en las operaciones que crean o cobran, mediante una cabecera de clave de idempotencia",
+    "7. Establece límites de uso por consumidor y qué cabeceras informan de lo que le queda",
+    "8. Decide la política de versiones: versión en la ruta, qué cambios se consideran rompedores y cuánto aviso das antes de retirar algo",
+    "9. Escribe la especificación OpenAPI completa con ejemplos de petición y respuesta reales",
+    "10. Redacta la guía de inicio rápido: cómo conseguir la clave, primera llamada con curl y los tres errores más habituales"
+  ],
+  "restricciones": [
+    "Nada de exponer identificadores internos ni campos que no estén en la lista aprobada",
+    "Ningún dato de un consumidor puede ser accesible con la clave de otro",
+    "Las fechas siempre en formato ISO 8601 con zona horaria; el dinero, en céntimos con moneda",
+    "No inventes funcionalidades que no salgan de los casos de uso"
+  ],
+  "formato_salida": {
+    "1_resumen": "Qué hace esta API y qué no hace, en cinco líneas",
+    "2_tabla_endpoints": "Tabla markdown: método, ruta, para qué sirve, permisos, códigos posibles",
+    "3_openapi": "Especificación OpenAPI en YAML lista para pegar",
+    "4_errores": "Catálogo de códigos de error con mensaje y qué debe hacer quien lo recibe",
+    "5_guia_rapida": "Documento breve con ejemplos en curl",
+    "6_decisiones": "Lista de decisiones a confirmar y sus alternativas"
+  },
+  "criterios_calidad": [
+    "La especificación OpenAPI es válida y se puede importar en un cliente de pruebas",
+    "Cada caso de uso se resuelve con las rutas definidas, sin inventar nada",
+    "Todos los errores tienen el mismo formato y son entendibles sin mirar el código",
+    "Un desarrollador externo puede hacer su primera llamada con solo la guía rápida"
+  ],
+  "errores_tipicos": [
+    "Devolver 200 con un mensaje de error dentro y romper a todos los que la consumen",
+    "Paginar por número de página y duplicar o saltar registros cuando se insertan datos",
+    "Cambiar el nombre de un campo sin versionar y tumbar la integración del cliente",
+    "Dar una sola clave de API compartida para todos los consumidores"
+  ]
+}

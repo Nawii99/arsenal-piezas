@@ -1,0 +1,31 @@
+{
+  "tarea": "Elaborar el inventario de cookies de una tienda online, el texto del banner y la política de cookies, según la guía de la AEPD",
+  "entradas": {
+    "url": "[URL DE TU TIENDA]",
+    "plataforma": "[SHOPIFY / WOOCOMMERCE / PRESTASHOP / OTRA]",
+    "herramientas_instaladas": "[GOOGLE ANALYTICS, META PIXEL, TIKTOK, HOTJAR, CHAT, VÍDEOS EMBEBIDOS...]",
+    "listado_detectado": "[PEGA AQUÍ LAS COOKIES QUE TE MUESTRE TU GESTOR O EL NAVEGADOR]",
+    "gestor_de_consentimiento": "[NOMBRE DEL PLUGIN O ESCRIBE NINGUNO]"
+  },
+  "clasificacion": ["técnicas o necesarias", "de preferencias", "de análisis o medición", "de publicidad y perfilado"],
+  "pasos": [
+    "1. Clasificar cada cookie y decir si es propia o de tercero",
+    "2. Indicar finalidad en una frase, duración y titular",
+    "3. Señalar cuáles NO pueden cargarse antes del consentimiento",
+    "4. Detectar el error típico: analítica o píxeles disparándose al cargar la página",
+    "5. Redactar el banner de primera capa con botones Aceptar, Rechazar y Configurar, los tres igual de visibles",
+    "6. Redactar la política de cookies con la tabla completa y cómo retirar el consentimiento",
+    "7. Proponer cada cuánto revisar el inventario"
+  ],
+  "restricciones": [
+    "Prohibido el muro de cookies sin alternativa y los patrones que empujen a aceptar",
+    "Rechazar debe estar en la primera capa, no escondido en configuración",
+    "No inventes cookies que el usuario no haya aportado: si sospechas de alguna, márcala como POR VERIFICAR"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "bloques": ["Tabla: Cookie | Titular | Tipo | Finalidad | Duración | Bloquear antes del consentimiento", "Texto exacto del banner", "Texto del panel de configuración por categorías", "Política de cookies completa", "Lista de acciones técnicas para tu plataforma"]
+  },
+  "criterios_calidad": ["Toda cookie no necesaria queda bloqueada hasta el consentimiento", "El banner cabe en pantalla de móvil y se entiende de una lectura"],
+  "aviso": "Guía orientativa basada en criterios publicados por la AEPD."
+}

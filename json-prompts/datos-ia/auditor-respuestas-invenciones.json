@@ -1,0 +1,71 @@
+{
+  "tarea": "auditar_respuesta_de_ia_contra_sus_fuentes",
+  "idioma": "es-ES",
+  "contexto": {
+    "pregunta_original": "[PEGA AQUI LA PREGUNTA QUE HICISTE]",
+    "respuesta_a_auditar": "[PEGA AQUI LA RESPUESTA QUE DIO LA IA]",
+    "fuentes_permitidas": [
+      "[PEGA AQUI EL FRAGMENTO 1 QUE LA IA TENIA QUE USAR]",
+      "[PEGA AQUI EL FRAGMENTO 2, O BORRA ESTA LINEA SI NO HAY MAS]"
+    ],
+    "uso_previsto": "[interno | enviar a cliente | publicar | decidir sobre una persona]"
+  },
+  "reglas": {
+    "solo_fuentes": true,
+    "conocimiento_propio_prohibido": true,
+    "si_no_aparece_en_fuentes": "marcar como no_verificable, nunca completar de memoria",
+    "prohibido_reescribir": "no mejores la respuesta, solo audita"
+  },
+  "revision": {
+    "pasos": [
+      "Partir la respuesta en afirmaciones sueltas, una por frase con contenido.",
+      "Buscar cada afirmacion en las fuentes permitidas.",
+      "Copiar la cita literal que la apoya, sin parafrasear.",
+      "Si no hay cita literal, el veredicto es no_verificable aunque suene razonable."
+    ],
+    "senales_de_invencion": [
+      "cifras, porcentajes o precios exactos que no aparecen en ninguna fuente",
+      "fechas, plazos o articulos de ley concretos sin respaldo",
+      "nombres de personas, empresas o productos que no estan en las fuentes",
+      "enlaces o referencias bibliograficas",
+      "frases de relleno tipo segun los expertos o los estudios demuestran",
+      "respuestas demasiado seguras sobre algo que las fuentes solo insinuan"
+    ]
+  },
+  "salida": {
+    "formato": "json",
+    "esquema": {
+      "afirmaciones": [
+        {
+          "texto": "frase literal de la respuesta",
+          "veredicto": "apoyada | contradicha | no_verificable",
+          "cita_literal": "texto exacto de la fuente, o cadena vacia",
+          "gravedad": "alta | media | baja"
+        }
+      ],
+      "recuento": {
+        "apoyadas": 0,
+        "contradichas": 0,
+        "no_verificables": 0
+      },
+      "apto_para_enviar": false,
+      "motivo": "una linea explicando la decision",
+      "requiere_revision_humana": true,
+      "que_arreglar": [
+        "instruccion concreta y corta"
+      ]
+    }
+  },
+  "criterios_de_corte": {
+    "no_apto_si": [
+      "hay al menos una afirmacion contradicha",
+      "hay una no_verificable de gravedad alta",
+      "el uso_previsto es publicar y queda cualquier no_verificable"
+    ]
+  },
+  "limites": {
+    "datos_personales": "Si la respuesta o las fuentes contienen datos de personas identificables, no se pegan en ningun servicio ajeno sin permiso de quien responde de esos datos; en ese caso, usa un modelo en local.",
+    "decisiones_sobre_personas": "Si el uso_previsto es decidir sobre una persona, requiere_revision_humana es siempre true y esta auditoria no sustituye a quien decide.",
+    "alcance": "Esta auditoria comprueba que la respuesta se apoya en las fuentes dadas. No comprueba que las fuentes sean correctas ni esten al dia."
+  }
+}

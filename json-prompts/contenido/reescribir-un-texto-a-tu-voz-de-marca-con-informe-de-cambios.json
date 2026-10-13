@@ -1,0 +1,40 @@
+{
+  "tarea": "Reescribir un texto para que suene a [NOMBRE DE TU MARCA] sin cambiar la información que contiene, y justificar cada cambio",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "canal": "[DÓNDE SE PUBLICA: WEB, EMAIL, LINKEDIN, INSTAGRAM, WHATSAPP]",
+    "objetivo_del_texto": "[QUÉ QUIERES QUE HAGA O ENTIENDA QUIEN LO LEA]",
+    "quien_lo_lee": "[PERFIL DEL LECTOR Y CUÁNTO SABE DEL TEMA]"
+  },
+  "entradas": {
+    "texto_original": "[PEGA AQUÍ EL TEXTO TAL CUAL]",
+    "rasgos_de_voz": "[3 A 5 RASGOS: POR EJEMPLO DIRECTO, SIN JERGA, CON HUMOR SECO]",
+    "tratamiento": "[TÚ O USTED]",
+    "palabras_obligatorias": "[TÉRMINOS QUE SIEMPRE USAMOS]",
+    "palabras_prohibidas": "[TÉRMINOS QUE NUNCA USAMOS]"
+  },
+  "proceso": [
+    "Listar primero los hechos, datos, cifras y promesas del original para no perder ninguno",
+    "Detectar qué falla en el tono: frases largas, voz pasiva, jerga, relleno, entusiasmo falso, calcos del inglés",
+    "Reescribir aplicando los rasgos de voz y respetando el tratamiento",
+    "Comprobar uno a uno que todos los hechos de la lista siguen presentes y sin alterar"
+  ],
+  "restricciones": [
+    "No añadir datos, cifras, plazos, garantías ni beneficios que no estuvieran en el original",
+    "No eliminar avisos legales, condiciones ni advertencias",
+    "Mantener la longitud dentro de más menos el 20 por ciento del original salvo que se indique otra cosa",
+    "Nada de superlativos ni exclamaciones si no están en los rasgos de voz"
+  ],
+  "formato_salida": {
+    "bloque_1": "Versión reescrita, lista para copiar y pegar",
+    "bloque_2": "Tabla de cambios con columnas: fragmento original, versión nueva, motivo del cambio, rasgo de voz aplicado",
+    "bloque_3": "Lista de hechos verificados que siguen intactos",
+    "bloque_4": "Dudas o decisiones que necesitan tu confirmación"
+  },
+  "criterios_calidad": [
+    "Ningún dato del original se ha perdido ni se ha inventado uno nuevo",
+    "Cada cambio de la tabla se justifica con un rasgo de voz, no con gusto personal",
+    "El texto se puede leer en voz alta sin trabarse",
+    "No aparece ninguna palabra de la lista de prohibidas"
+  ]
+}

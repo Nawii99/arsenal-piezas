@@ -1,0 +1,49 @@
+{
+  "tarea": "Convertir los datos de enchufes medidores y del contador en un informe de ahorro con acciones concretas por aparato",
+  "contexto": {
+    "perfil": "Persona sin perfil técnico que mide consumos con enchufes inteligentes en su casa o en la de un cliente",
+    "objetivo": "[BAJAR LA FACTURA / AJUSTAR LA POTENCIA / SABER SI COMPENSA CAMBIAR UN APARATO / EVITAR QUE SALTE EL DIFERENCIAL]"
+  },
+  "entradas": {
+    "mediciones": "[PEGA LOS DATOS: aparato, consumo en kWh por día o mes, potencia máxima vista en W, periodo medido]",
+    "tarifa": "[PRECIO POR kWh Y SI HAY TRAMOS HORARIOS, PRECIO DE POTENCIA CONTRATADA]",
+    "potencia_contratada": "[kW CONTRATADOS Y SI ALGUNA VEZ SALTA EL AUTOMÁTICO]",
+    "horarios": "[A QUÉ HORAS SE USA CADA APARATO Y CUÁLES SE PUEDEN MOVER]"
+  },
+  "pasos": [
+    "1. Separa dos cosas que se confunden siempre: potencia (W, lo que hace saltar el automático) y energía (kWh, lo que se paga). Un aparato de mucha potencia poco rato puede costar poco.",
+    "2. Ordena los aparatos por energía consumida al mes y calcula el coste de cada uno con la tarifa dada. Trabaja con los precios que te den, sin inventar ninguno.",
+    "3. Busca el consumo fantasma: lo que gasta el conjunto de madrugada con todo apagado. Suele estar en descodificadores, equipos de música, ordenadores en reposo y fuentes de alimentación viejas.",
+    "4. Detecta los aparatos que están encendidos más horas de las necesarias: bombas, calentadores, deshumidificadores, secamanos, rótulos y letreros luminosos.",
+    "5. Mira la coincidencia de picos: qué aparatos arrancan a la vez. Si la suma se acerca a la potencia contratada, propón desplazar uno en el tiempo antes de subir la potencia, que se paga todos los meses.",
+    "6. Para cada aparato con posible cambio de horario, calcula el ahorro con los tramos horarios dados y di si merece la pena la molestia.",
+    "7. Marca los datos poco fiables: mediciones de menos de una semana, aparatos de temporada y enchufes medidores con margen de error grande en cargas pequeñas.",
+    "8. Cierra con tres acciones de coste cero, dos de coste bajo y, solo si sale a cuenta, una inversión, con su plazo de retorno calculado a partir de los datos reales."
+  ],
+  "restricciones": [
+    "No inventes precios de la luz ni consumos: si falta un dato, pídelo",
+    "No prometas porcentajes de ahorro; da importes calculados con los datos aportados y di el margen de error",
+    "No metas un enchufe medidor doméstico en cargas grandes como un horno, una vitrocerámica o un aire acondicionado por cable: avisa del límite de amperios",
+    "Distingue siempre lo medido de lo estimado"
+  ],
+  "errores_tipicos": [
+    "Medir una semana rara (vacaciones, ola de calor) y extrapolar al año",
+    "Sumar potencias de placa en vez de consumo real y asustarse sin motivo",
+    "Subir la potencia contratada para no volver a mirar, y pagarlo cada mes",
+    "Enchufar un aparato de alta potencia a un enchufe inteligente barato y quemarlo"
+  ],
+  "formato_salida": {
+    "1_ranking": "Tabla: aparato | kWh mes | coste mes | % del total | fiabilidad del dato",
+    "2_fantasmas": "Consumo en reposo detectado y a qué corresponde",
+    "3_picos": "Qué coincide y riesgo de saltar el automático",
+    "4_acciones": "Lista con: acción, ahorro estimado al mes, coste, molestia (baja/media/alta)",
+    "5_inversiones": "Solo las que se amortizan, con el cálculo a la vista",
+    "6_avisos": "Qué datos habría que medir mejor y durante cuánto tiempo"
+  },
+  "criterios_calidad": [
+    "Todo importe sale de un cálculo visible con los datos aportados",
+    "Se distingue potencia de energía en todo el informe",
+    "Cada acción indica cuánta molestia supone, no solo cuánto ahorra",
+    "Los datos poco fiables aparecen marcados como tales"
+  ]
+}

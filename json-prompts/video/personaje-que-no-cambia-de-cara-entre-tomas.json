@@ -1,0 +1,32 @@
+{
+  "tarea": "Definir la ficha de un personaje y el bloque de descripcion que se repite literalmente en cada prompt para mantener la coherencia entre clips",
+  "personaje": {
+    "rol": "[QUIEN ES: FUNDADORA, REPARTIDOR, MASCOTA DE MARCA]",
+    "edad_aprox": "[EDAD]",
+    "rasgos": "[PELO, PIEL, COMPLEXION, RASGOS DISTINTIVOS]",
+    "vestuario_fijo": "[PRENDA, COLOR Y DETALLE QUE NO CAMBIA NUNCA]",
+    "gesto_propio": "[ALGO QUE HACE SIEMPRE: SONRISA LADEADA, MANOS EN LOS BOLSILLOS]"
+  },
+  "serie": {
+    "numero_de_clips": "[CUANTOS]",
+    "situaciones": "[LISTA BREVE DE QUE HACE EN CADA CLIP]"
+  },
+  "metodo": [
+    "1. Redactar un bloque de identidad de 35 a 50 palabras, siempre las mismas y en el mismo orden, que abrira todos los prompts",
+    "2. Anclar tres detalles invariables y concretos: un color de prenda, un accesorio y un rasgo fisico",
+    "3. Prohibir en la ficha cualquier dato que el modelo pueda interpretar libre: guapo, elegante, moderno",
+    "4. Generar un fotograma de referencia del personaje y reutilizarlo como imagen inicial siempre que el modelo lo permita",
+    "5. Cambiar entre clips solo entorno, accion, luz y plano; nunca la descripcion del personaje"
+  ],
+  "formato_salida": {
+    "bloque_identidad": "texto exacto en ingles para pegar al principio de cada prompt",
+    "prompts_por_clip": "para cada situacion: bloque de identidad + entorno + accion + camara + luz",
+    "lista_invariables": "los tres anclajes que no se tocan",
+    "checklist_revision": "que mirar al comparar dos clips: cara, tono de piel, prenda, peinado, edad aparente"
+  },
+  "criterios_calidad": [
+    "Puestos dos clips seguidos, cualquiera diria que es la misma persona",
+    "El bloque de identidad esta copiado palabra por palabra en todos los prompts",
+    "Ningun prompt anade rasgos nuevos del personaje"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tarea": "Revisar un lote de fotos de comida y clasificarlas en publicar, retocar o repetir, con motivo concreto",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "canal_destino": "[CARTA, WEB, INSTAGRAM, DELIVERY, GOOGLE]",
+    "lote": "[NUMERO DE FOTOS Y PLATOS QUE APARECEN]",
+    "limite": "[CUANTAS FOTOS FINALES NECESITAS]"
+  },
+  "criterios_de_revision": [
+    "Enfoque: el punto nitido cae sobre el ingrediente protagonista",
+    "Exposicion: no hay blancos quemados en salsas, quesos ni manteles",
+    "Color: la comida tiene su color real, sin dominante amarilla ni azulada",
+    "Limpieza: sin manchas en el borde del plato, huellas en el cristal ni migas fuera de sitio",
+    "Fondo: sin elementos que distraigan, cables, servilletas usadas ni carteles",
+    "Encuadre: nada importante cortado por el borde y aire suficiente para poner texto",
+    "Apetito: la foto da hambre al primer vistazo de un segundo",
+    "Coherencia: encaja con el resto del lote en luz, vajilla y estilo"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla mas resumen",
+    "columnas": ["Foto", "Plato", "Veredicto", "Motivo principal", "Que retocar o repetir", "Canal recomendado"],
+    "resumen_final": ["Las 3 mejores y por que", "Fallo que se repite en todo el lote", "Dos consejos para la proxima sesion"]
+  },
+  "restricciones": [
+    "Un veredicto por foto: PUBLICAR, RETOCAR o REPETIR, sin medias tintas",
+    "El motivo debe ser observable en la imagen, nada de opiniones vagas",
+    "Si dos fotos son casi iguales, elegir una y descartar la otra explicando la diferencia"
+  ],
+  "tono": "Critico pero util, como un director de arte que tiene prisa"
+}

@@ -1,0 +1,51 @@
+{
+  "tarea": "Construir una rúbrica de corrección para la entrega [NOMBRE DE LA ENTREGA] con criterios, niveles de logro, evidencias observables y frases de feedback listas para pegar.",
+  "contexto": {
+    "formacion": "[NOMBRE DEL CURSO O TALLER]",
+    "entrega_a_corregir": "[QUÉ ENTREGA EL ALUMNO: ARCHIVO, TEXTO, VÍDEO, PROYECTO]",
+    "nivel_de_los_alumnos": "[PRINCIPIANTE / INTERMEDIO / MIXTO]",
+    "quien_corrige": "[YO / UN AYUDANTE / VARIOS TUTORES]",
+    "tiempo_objetivo_por_correccion": "[MINUTOS]"
+  },
+  "entradas": {
+    "enunciado_de_la_entrega": "[PEGA EL ENUNCIADO TAL CUAL SE LO DAS AL ALUMNO]",
+    "ejemplo_de_entrega_buena": "[PEGA O DESCRIBE UNA ENTREGA QUE TE PARECIÓ NOTABLE]",
+    "ejemplo_de_entrega_floja": "[PEGA O DESCRIBE UNA ENTREGA QUE SUSPENDERÍAS]",
+    "fallos_que_ves_una_y_otra_vez": "[LISTA LIBRE]"
+  },
+  "procedimiento": [
+    "1. Extrae del enunciado entre 4 y 6 criterios, ni uno más. Si salen ocho, dos son el mismo criterio con otro nombre.",
+    "2. Pondera los criterios en porcentajes que sumen 100 y justifica cada peso en una línea.",
+    "3. Define 4 niveles por criterio (insuficiente, en camino, correcto, excelente) describiendo lo que se VE en la entrega, no lo que el alumno siente o entiende.",
+    "4. Para cada nivel, escribe una evidencia concreta tomada de los ejemplos aportados.",
+    "5. Marca los criterios eliminatorios: aquello que, si falta, hace que la entrega vuelva sin nota (por ejemplo, no haber entregado el archivo pedido).",
+    "6. Redacta para cada criterio y nivel una frase de feedback de dos partes: qué está bien y la siguiente acción concreta que debe hacer.",
+    "7. Añade un banco de 10 comentarios para los fallos recurrentes aportados.",
+    "8. Escribe el protocolo de reclamación: qué pasa si el alumno no está de acuerdo y en cuántos días se revisa."
+  ],
+  "restricciones": [
+    "Cada descriptor de nivel, máximo 25 palabras y siempre en tercera persona sobre la entrega.",
+    "Prohibido usar adverbios vagos como adecuadamente, correctamente o suficientemente sin decir cuánto.",
+    "El feedback nunca juzga a la persona, solo el trabajo.",
+    "Español de España, tuteando en las frases de feedback."
+  ],
+  "errores_a_evitar": [
+    "Rúbricas de 10 criterios: nadie las usa y acabas corrigiendo a ojo.",
+    "Niveles que se distinguen solo por adjetivos (bueno, muy bueno) y no por hechos.",
+    "Puntuar la presentación por encima del fondo cuando el curso enseña el fondo.",
+    "No fijar qué es eliminatorio, y luego aprobar entregas que no cumplen lo básico."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de rúbrica: criterio, peso, y los cuatro niveles con su descriptor y evidencia.",
+    "bloque_2": "Lista de criterios eliminatorios.",
+    "bloque_3": "Banco de frases de feedback ordenadas por criterio y nivel, listas para copiar.",
+    "bloque_4": "Plantilla de devolución al alumno: nota por criterio, tres cosas bien, una acción a mejorar, plazo de reentrega.",
+    "bloque_5": "Protocolo de reclamación en 5 líneas."
+  },
+  "criterios_calidad": [
+    "Dos personas distintas corrigiendo la misma entrega deberían quedar a menos de un nivel de diferencia por criterio.",
+    "Corregir con la rúbrica cabe en el tiempo objetivo indicado.",
+    "Los ejemplos aportados caen donde tú esperabas al aplicar la rúbrica; si no, ajusta descriptores.",
+    "Cada frase de feedback termina con una acción que el alumno puede hacer hoy."
+  ]
+}

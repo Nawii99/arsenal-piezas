@@ -1,0 +1,37 @@
+{
+  "tarea": "Convertir un ADR aprobado en una ficha de seguimiento con métricas, umbrales y fechas de revisión",
+  "entradas": {
+    "adr_aprobado": "[PEGA EL ADR O SU DECISIÓN Y JUSTIFICACIÓN]",
+    "resultado_esperado": "[QUÉ ESPERAS QUE MEJORE Y EN CUÁNTO TIEMPO]",
+    "herramientas_de_medicion": "[QUÉ TIENES YA: LOGS, MÉTRICAS, FACTURA CLOUD, ENCUESTAS AL EQUIPO]",
+    "responsable": "[QUIÉN HACE EL SEGUIMIENTO]"
+  },
+  "pasos": [
+    "1. Extrae del ADR las promesas implícitas: qué se supone que va a mejorar",
+    "2. Convierte cada promesa en un indicador medible con lo que ya tienes, sin montar nada nuevo",
+    "3. Anota el valor actual de cada indicador antes del cambio; si no se conoce, marca MEDIR ANTES DE EMPEZAR",
+    "4. Define para cada indicador un umbral verde, uno ámbar y uno rojo",
+    "5. Define las señales de alarma cualitativas: quejas del equipo, tareas que se atascan, incidencias repetidas",
+    "6. Fija tres momentos de revisión: a las 2 semanas, a los 2 meses y a los 6 meses, con qué se mira en cada uno",
+    "7. Escribe la regla de reapertura: qué combinación de señales obliga a volver a abrir el ADR"
+  ],
+  "restricciones": [
+    "Máximo 5 indicadores; si hay más, el seguimiento no se hará",
+    "Nada que exija instalar herramientas nuevas para poder medirse",
+    "Cada indicador debe poder consultarse en menos de 10 minutos",
+    "Prohibido usar indicadores que nadie pueda influir con su trabajo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de indicadores: nombre, cómo se mide, valor actual, verde, ámbar, rojo",
+    "bloque_2": "Lista de señales cualitativas de alarma",
+    "bloque_3": "Calendario de revisiones con la pregunta concreta de cada una",
+    "bloque_4": "Regla de reapertura del ADR en una sola frase",
+    "bloque_5": "Bloque markdown para pegar al final del ADR original"
+  },
+  "criterios_calidad": [
+    "El responsable puede completar la revisión en menos de 30 minutos",
+    "Los umbrales son números o hechos observables, no impresiones",
+    "La regla de reapertura es lo bastante clara para aplicarla sin discutir"
+  ],
+  "tono": "Operativo y breve"
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Auditar y reescribir el guion aportado para que mantenga la atención y cumpla su objetivo",
+  "entradas": {
+    "guion_actual": "[PEGA AQUÍ TU GUION COMPLETO]",
+    "formato": "[VÍDEO YOUTUBE / REEL / PODCAST / ANUNCIO]",
+    "duracion_objetivo": "[MINUTOS O SEGUNDOS]",
+    "publico": "[A QUIÉN VA DIRIGIDO]",
+    "objetivo": "[QUÉ TIENE QUE CONSEGUIR]"
+  },
+  "que_revisar": [
+    "Gancho: ¿los primeros segundos dan una razón concreta para seguir?",
+    "Ritmo: párrafos donde no pasa nada nuevo durante más de 20 segundos",
+    "Claridad: frases largas, subordinadas, jerga y palabras de folleto",
+    "Estructura: bloques que se solapan, saltos sin transición u orden ilógico",
+    "Promesa: lo que se anuncia al principio y no se cumple después",
+    "Cierre: si la llamada a la acción es única, concreta y está justificada",
+    "Locución: frases imposibles de decir de una sola vez en voz alta"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Tabla con Zona del guion | Problema detectado | Gravedad (alta/media/baja) | Cómo se arregla",
+    "2_puntos_de_fuga": "Los 3 momentos exactos donde es más probable que abandonen, citando la frase",
+    "3_reescritura": "El guion completo corregido, listo para grabar",
+    "4_cambios": "Lista de los 10 cambios más importantes y por qué se han hecho",
+    "5_alternativas": "3 ganchos nuevos para el arranque"
+  },
+  "restricciones": [
+    "Respeta la voz y las expresiones propias del autor: se corrige, no se reescribe con otro estilo",
+    "No añadas datos, cifras ni ejemplos que no estén en el guion original",
+    "Sé concreto: nada de 'mejorar el enganche', di qué frase cambiar y por cuál"
+  ],
+  "criterios_calidad": [
+    "Cada problema señalado incluye la frase literal donde ocurre",
+    "La versión reescrita es igual de larga o más corta, nunca más larga sin motivo"
+  ]
+}

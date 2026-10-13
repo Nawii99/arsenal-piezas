@@ -1,0 +1,44 @@
+{
+  "tarea": "Revisar codigo JavaScript o TypeScript y devolver un informe de hallazgos ordenado por gravedad",
+  "contexto": {
+    "que_hace_este_codigo": "[EXPLICA EN UNA FRASE QUE HACE]",
+    "donde_se_ejecuta": "[NAVEGADOR / NODE EN SERVIDOR / FUNCION SERVERLESS]",
+    "maneja_datos_sensibles": "[SI, DATOS DE CLIENTES O PAGOS / NO]",
+    "trafico_esperado": "[POCO / MEDIO / ALTO]"
+  },
+  "entradas": {
+    "codigo": "[PEGA AQUI EL CODIGO A REVISAR]",
+    "sintomas_observados": "[QUE FALLA O 'NADA, ES REVISION PREVENTIVA']"
+  },
+  "que_revisar": [
+    "Errores de logica y casos limite: array vacio, valor null, division entre cero",
+    "Asincronia: promesas sin await, sin catch, bucles con await innecesario",
+    "Comparaciones con == en vez de ===, y variables que deberian ser const",
+    "Mutaciones de objetos o arrays que llegan por parametro",
+    "Fugas de memoria: listeners y timers que no se limpian",
+    "Seguridad: innerHTML con datos del usuario, claves API en el codigo del navegador",
+    "Rendimiento: consultas dentro de bucles, recalculos innecesarios"
+  ],
+  "escala_gravedad": {
+    "critico": "Rompe en produccion o expone datos",
+    "alto": "Falla en casos reales frecuentes",
+    "medio": "Deuda tecnica que dara guerra pronto",
+    "bajo": "Estilo o legibilidad"
+  },
+  "restricciones": [
+    "No proponer reescribir todo el archivo",
+    "Cada hallazgo debe citar la linea o el fragmento exacto",
+    "No inventar fallos: si algo no se puede verificar, indicarlo como duda",
+    "Maximo 12 hallazgos, priorizando los graves"
+  ],
+  "formato_salida": {
+    "tabla": "Gravedad | Linea | Problema | Por que importa | Arreglo propuesto",
+    "parches": "Fragmento de codigo corregido para cada hallazgo critico y alto",
+    "veredicto": "Una frase: se puede subir a produccion, se puede con reservas, o no se sube"
+  },
+  "criterios_calidad": [
+    "Ningun hallazgo generico del tipo mejorar el rendimiento",
+    "El arreglo se puede copiar y pegar",
+    "El veredicto es claro y sin rodeos"
+  ]
+}

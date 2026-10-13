@@ -1,0 +1,35 @@
+{
+  "tarea": "Analizar la demanda de búsqueda del sector [SECTOR] en [PAÍS O ZONA] a partir de la lista de palabras clave aportada y convertirla en un plan de captación",
+  "entradas": {
+    "lista_de_busquedas": "[PEGA AQUÍ LAS PALABRAS CLAVE CON SU VOLUMEN MENSUAL Y DIFICULTAD, EXPORTADAS DE TU HERRAMIENTA]",
+    "mi_oferta": "[QUÉ VENDES Y A QUÉ PRECIO]",
+    "zona": "[CIUDAD, PROVINCIA O PAÍS AL QUE VENDES]",
+    "situacion_web": "[TIENES WEB, BLOG O NADA]"
+  },
+  "metodo": [
+    "Clasificar cada búsqueda por intención: informativa, comparativa, comercial o de compra directa",
+    "Agrupar las búsquedas en temas y calcular el volumen sumado de cada tema",
+    "Señalar señales de negocio: búsquedas con precio, opiniones, cerca de mí, alternativas a o marca de competidor",
+    "Detectar estacionalidad evidente y avisar de los meses fuertes y flojos",
+    "Marcar qué búsquedas son alcanzables para un negocio pequeño y cuáles están dominadas por grandes"
+  ],
+  "restricciones": [
+    "No inventar volúmenes: si un dato no está en la lista aportada, dejarlo como sin dato",
+    "Ignorar búsquedas fuera de la zona indicada",
+    "Nada de recomendaciones técnicas de SEO avanzado, esto es análisis de demanda"
+  ],
+  "formato_salida": {
+    "tabla_temas": "Tabla con: tema, volumen sumado, intención dominante, dificultad media y potencial de venta del 1 al 5",
+    "joyas": "Diez búsquedas con buena relación entre intención de compra y baja competencia",
+    "vacios": "Necesidades que aparecen en las búsquedas y que mi oferta actual no cubre",
+    "estacionalidad": "Meses fuertes y flojos deducidos de los datos y qué implica para el calendario comercial",
+    "plan": "Los cinco primeros contenidos o páginas a crear, en orden, con el tema que ataca cada uno",
+    "veredicto": "Tres líneas diciendo si hay demanda suficiente para vivir de este mercado y con qué reservas"
+  },
+  "criterios_calidad": [
+    "Cada recomendación se apoya en una cifra de la lista aportada",
+    "El plan es ejecutable por una sola persona en tres meses",
+    "Se distingue quién busca por curiosidad de quién busca para comprar"
+  ],
+  "tono": "Analítico y directo, sin jerga de agencia"
+}

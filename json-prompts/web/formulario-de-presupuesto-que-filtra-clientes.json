@@ -1,0 +1,33 @@
+{
+  "tarea": "Diseñar un formulario de solicitud de presupuesto por pasos para [TU SERVICIO] que recoja lo necesario para cotizar y clasifique cada contacto",
+  "contexto": {
+    "servicio": "[QUÉ VENDES Y CÓMO SE COBRA]",
+    "trabajo_minimo": "[IMPORTE O TAMAÑO MÍNIMO QUE TE COMPENSA]",
+    "datos_para_cotizar": "[QUÉ NECESITAS SABER SÍ O SÍ PARA DAR UN PRECIO]",
+    "senales_de_mal_encaje": "[PLAZOS IMPOSIBLES, FUERA DE ZONA, PRESUPUESTO MUY BAJO]"
+  },
+  "estructura": {
+    "paso_1": "Una sola pregunta fácil que arranque el compromiso, sin pedir datos personales",
+    "paso_2": "2 o 3 preguntas de alcance con opciones cerradas",
+    "paso_3": "Plazo y presupuesto en tramos, nunca campo abierto de euros",
+    "paso_4": "Datos de contacto y consentimiento, al final y no al principio",
+    "barra_de_progreso": "Visible desde el primer paso"
+  },
+  "reglas_de_oficio": [
+    "Preguntas de opción múltiple siempre que se pueda: se responde con un dedo",
+    "Nunca pidas el teléfono antes de haber dado algo a cambio",
+    "Una pregunta abierta como máximo, y opcional",
+    "Deja una salida honesta: si no encaja, ofrece una alternativa o una guía gratuita"
+  ],
+  "puntuacion": {
+    "instruccion": "Asigna puntos a cada respuesta y define 3 categorías de contacto",
+    "categorias": ["atender hoy", "atender esta semana", "responder con plantilla o derivar"],
+    "salida": "Tabla de respuesta, puntos y motivo"
+  },
+  "formato_salida": "1) Guion completo del formulario paso a paso con textos exactos. 2) Tabla de puntuación. 3) Tres plantillas de respuesta, una por categoría. 4) Lista de campos con su tipo, para montarlo en cualquier herramienta de formularios.",
+  "criterios_calidad": [
+    "Se rellena en menos de 90 segundos desde el móvil",
+    "Con las respuestas puedes dar un precio o un rango sin más llamadas",
+    "Ninguna pregunta suena a interrogatorio"
+  ]
+}

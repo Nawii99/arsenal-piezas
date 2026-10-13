@@ -1,0 +1,32 @@
+{
+  "tarea": "Diseñar el sistema de tareas en segundo plano (colas de trabajos) para [NOMBRE DE TU APLICACIÓN]: decidir qué se saca de la petición del usuario, cómo se nombra cada trabajo y con qué prioridad se procesa",
+  "entradas": {
+    "que_hace_la_app": "[DESCRIPCIÓN EN UNA FRASE]",
+    "acciones_lentas": "[LISTA: GENERAR FACTURA PDF, ENVIAR EMAIL, REDIMENSIONAR FOTOS, LLAMAR A LA API DE...]",
+    "volumen_diario": "[CUÁNTAS VECES AL DÍA CADA UNA Y EN QUÉ HORAS SE CONCENTRAN]",
+    "tolerancia": "[CUÁNTO PUEDE TARDAR CADA UNA SIN QUE EL CLIENTE SE QUEJE]",
+    "tecnologia": "[LENGUAJE Y SI YA USÁIS ALGO TIPO REDIS, RABBITMQ, SQS O NADA]"
+  },
+  "reglas_del_oficio": [
+    "Va a la cola todo lo que el usuario no necesita ver ya: emails, PDFs, sincronizaciones, avisos, informes",
+    "No va a la cola lo que decide si la operación es válida: cobrar, comprobar stock o autorizar",
+    "Separar colas por prioridad y por velocidad: rápida para lo interactivo, lenta para lotes; nunca mezclar en una sola",
+    "Cada trabajo lleva un identificador propio para poder repetirlo sin duplicar efectos",
+    "El trabajo recibe un identificador, no el objeto entero: los datos se releen de la base al ejecutarlo"
+  ],
+  "debe_definir_por_trabajo": ["Nombre", "Qué dispara el trabajo", "Datos que recibe", "Cola y prioridad", "Tiempo máximo de ejecución", "Qué pasa si falla", "Qué ve el usuario mientras tanto"],
+  "restricciones": [
+    "Recomendar la herramienta más simple que sirva para el volumen indicado y decir cuándo dejaría de servir",
+    "Nada de arquitecturas de eventos completas si el volumen no lo justifica",
+    "Explicar en una línea, en lenguaje llano, qué es una cola"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de trabajos + apartado de decisiones",
+    "apartados": ["Tabla de trabajos", "Colas y número de procesos recomendados", "Qué se le enseña al usuario mientras espera", "Qué monitorizar cada día", "Errores típicos a evitar"]
+  },
+  "criterios_calidad": [
+    "Cada acción lenta del contexto aparece clasificada como cola o como respuesta inmediata, con motivo",
+    "Los tiempos propuestos encajan con la tolerancia declarada",
+    "Un programador puede empezar a implementarlo sin hacer más preguntas"
+  ]
+}

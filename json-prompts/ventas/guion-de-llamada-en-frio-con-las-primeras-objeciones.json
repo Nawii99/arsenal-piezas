@@ -1,0 +1,42 @@
+{
+  "tarea": "Escribir un guion de llamada en frío de 45 segundos con manejo de las objeciones de apertura",
+  "contexto": {
+    "quien_llama": "[TU NOMBRE Y EMPRESA]",
+    "a_quien_llamo": "[CARGO Y TIPO DE NEGOCIO]",
+    "motivo_real_de_la_llamada": "[POR QUÉ LE LLAMAS A ÉL Y HOY]",
+    "prueba": "[CLIENTE PARECIDO O RESULTADO REAL]",
+    "objetivo": "[CITA, VISITA, ENVÍO DE PRESUPUESTO O SIMPLE CUALIFICACIÓN]",
+    "duracion_maxima": "[MINUTOS QUE PIDES]"
+  },
+  "estructura": [
+    "Apertura: nombre, empresa y permiso en una frase ('te pillo 30 segundos')",
+    "Motivo: por qué le llamo justo a él, con el detalle concreto",
+    "Puente: el problema típico de negocios como el suyo, en su lenguaje",
+    "Pregunta de diagnóstico: una sola, abierta y fácil",
+    "Petición del siguiente paso con dos opciones de día y hora"
+  ],
+  "objeciones_a_cubrir": [
+    "Ahora no puedo hablar",
+    "Mándame un email",
+    "Ya trabajamos con otro proveedor",
+    "No me interesa",
+    "¿Cuánto cuesta?",
+    "No soy yo quien lo lleva"
+  ],
+  "restricciones": [
+    "Lenguaje hablado, frases cortas, nada que no dirías en voz alta",
+    "Sin presentar catálogo ni precios en la apertura",
+    "Prohibido mentir sobre contactos previos o recomendaciones",
+    "Respeta un no claro a la primera y cierra con educación"
+  ],
+  "formato_salida": {
+    "guion": "Texto literal marcado con [PAUSA] donde hay que callarse",
+    "tabla_objeciones": "objeción | qué significa de verdad | respuesta literal | siguiente paso",
+    "ficha_de_registro": "Qué apuntar tras cada llamada en 5 campos"
+  },
+  "criterios_calidad": [
+    "La apertura se lee en voz alta en menos de 15 segundos",
+    "Las respuestas a objeciones no discuten con el prospecto",
+    "Cada respuesta termina en una pregunta o en un siguiente paso concreto"
+  ]
+}

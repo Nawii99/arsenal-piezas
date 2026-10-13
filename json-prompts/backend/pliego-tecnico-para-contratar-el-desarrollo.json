@@ -1,0 +1,32 @@
+{
+  "tarea": "Redactar el pliego técnico que [NOMBRE DE TU EMPRESA] enviará a agencias y programadores para presupuestar el desarrollo o la reforma de su backend, dejando claras las decisiones de arquitectura que se aceptan y las que no",
+  "entradas": {
+    "que_quieres": "[QUÉ HAY QUE CONSTRUIR O REFORMAR, EN LENGUAJE DE NEGOCIO]",
+    "volumen": "[USUARIOS Y OPERACIONES ESPERADAS EL PRIMER AÑO]",
+    "presupuesto_y_plazo": "[RANGO DE EUROS Y FECHA OBJETIVO]",
+    "lo_que_ya_tienes": "[WEB, BASE DE DATOS, INTEGRACIONES EXISTENTES]",
+    "quien_lo_mantiene": "[TÚ, UN INTERNO, LA PROPIA AGENCIA]"
+  },
+  "debe_exigir": [
+    "Arquitectura por defecto: monolito modular con cola de tareas, salvo que el proveedor justifique otra cosa por escrito",
+    "Código y cuentas a nombre del cliente desde el primer día",
+    "Despliegue automatizado y entorno de pruebas separado del real",
+    "Copias de seguridad probadas, con prueba de restauración documentada",
+    "Documentación mínima: cómo levantar el proyecto, cómo desplegar y qué hacer si se cae"
+  ],
+  "preguntas_a_los_candidatos": ["¿Qué partes irían a cola y por qué?", "¿Qué pasa si el servicio de pago no responde?", "¿Cómo se despliega sin cortar el servicio?", "¿Qué monitorización dejáis puesta?", "¿Qué hace falta para que otro equipo pueda continuar vuestro trabajo?"],
+  "restricciones": [
+    "Prohibido pedir tecnologías concretas por moda: se piden resultados y se deja justificar la elección",
+    "Cada entregable debe ser comprobable por alguien no técnico",
+    "Incluir criterios de aceptación y forma de pago por hitos"
+  ],
+  "formato_salida": {
+    "tipo": "documento en Markdown listo para enviar",
+    "secciones": ["Contexto y objetivo de negocio", "Alcance dentro y fuera", "Requisitos técnicos mínimos", "Entregables e hitos", "Criterios de aceptación", "Preguntas obligatorias en la oferta", "Plantilla de comparación de ofertas"]
+  },
+  "criterios_calidad": [
+    "Tres agencias distintas presentarían ofertas comparables entre sí",
+    "Queda por escrito qué queda fuera del alcance",
+    "El apartado de propiedad del código y de los accesos es explícito"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "tarea": "Auditar los registros DNS de un dominio y dejar una lista de cambios exactos",
+  "contexto": {
+    "dominio": "[MIDOMINIO.COM]",
+    "donde_esta_registrado": "[REGISTRADOR: OVH, GODADDY, NAMECHEAP, IONOS...]",
+    "donde_esta_la_web": "[HOSTING O PLATAFORMA DONDE ESTÁ LA WEB]",
+    "quien_lleva_el_correo": "[GOOGLE WORKSPACE, MICROSOFT 365, ZOHO, EL PROPIO HOSTING...]",
+    "envios_masivos": "[HERRAMIENTA DE NEWSLETTER O EMAILS AUTOMÁTICOS, SI LA HAY]",
+    "perfil_usuario": "sin perfil técnico: explica qué es cada registro en una frase antes de tocarlo"
+  },
+  "entradas": {
+    "registros_actuales": "[PEGA AQUÍ LA LISTA DE REGISTROS DNS TAL CUAL SALE EN EL PANEL]",
+    "sintoma": "[QUÉ FALLA: WEB NO CARGA, CORREO EN SPAM, DOMINIO SIN SSL...]"
+  },
+  "pasos": [
+    "1. Clasifica cada registro por función: web (A, AAAA, CNAME), correo (MX), verificaciones (TXT) y otros.",
+    "2. Señala duplicados y contradicciones, sobre todo dos SPF distintos o MX de dos proveedores a la vez.",
+    "3. Revisa el SPF: debe ser un único registro TXT que incluya todos los servicios que envían correo en tu nombre.",
+    "4. Revisa que exista DKIM del proveedor de correo y de la herramienta de newsletter.",
+    "5. Propón un DMARC de arranque en modo observación y explica cuándo endurecerlo.",
+    "6. Comprueba que www y el dominio a secas apuntan al mismo sitio y que uno redirige al otro.",
+    "7. Revisa el TTL: bájalo antes de una migración y súbelo después.",
+    "8. Indica qué comprobar en un verificador público de DNS y correo, y qué resultado esperas ver."
+  ],
+  "restricciones": [
+    "No inventes valores: si falta el DKIM del proveedor, di dónde se copia en su panel.",
+    "Cambios de uno en uno, con margen de propagación de hasta 24 horas.",
+    "Antes de tocar nada, guarda una captura de todos los registros actuales."
+  ],
+  "errores_tipicos": [
+    "Tener dos registros SPF: eso invalida los dos.",
+    "Meter en el SPF la herramienta de newsletter y olvidar la de facturación o el CRM.",
+    "Borrar el TXT de verificación del proveedor de correo por parecer basura.",
+    "Poner DMARC en rechazo el primer día y cortar tus propios envíos.",
+    "Cambiar los MX sin avisar y perder los correos que entren esa noche."
+  ],
+  "formato_salida": {
+    "tabla_diagnostico": "columnas: registro | valor actual | veredicto (correcto, sobra, falta, mal) | por qué",
+    "lista_de_cambios": "orden exacto de aplicación, con el valor final a pegar entre comillas",
+    "comprobaciones": "qué mirar después y a las 24 horas para dar el cambio por bueno",
+    "riesgos": "qué se puede romper y cómo volver atrás"
+  },
+  "criterios_calidad": [
+    "Solo hay un SPF y cubre todos los remitentes reales.",
+    "Cada cambio propuesto lleva su valor literal listo para copiar.",
+    "Se indica el orden y el momento del día menos arriesgado para tocarlo."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribir una secuencia de tres mensajes para reactivar a un cliente que ha dejado de responder o de usar mi servicio, sin sonar pesado ni desesperado",
+  "contexto": {
+    "mi_empresa": "[NOMBRE DE TU EMPRESA]",
+    "cliente": "[NOMBRE Y PERSONA DE CONTACTO]",
+    "que_paga": "[SERVICIO E IMPORTE]",
+    "ultimo_contacto": "[FECHA Y DE QUÉ SE HABLÓ]",
+    "que_pudo_pasar": "[INCIDENCIA, CAMBIO DE PERSONA, TEMPORADA FLOJA O NO LO SÉ]"
+  },
+  "entradas": {
+    "valor_que_puedo_aportar": "[UN DATO, UNA MEJORA, UN RECURSO O UNA IDEA ÚTIL PARA ÉL AHORA]",
+    "canales": "[EMAIL, WHATSAPP, LLAMADA, LINKEDIN]",
+    "idioma_y_tuteo": "[TUTEO O USTED]"
+  },
+  "secuencia": [
+    "Mensaje 1 (día 0): aporta algo útil sin pedir nada y da pie a responder con un sí o un no",
+    "Mensaje 2 (día 4): recuerda un resultado concreto conseguido juntos y propone 15 minutos con dos huecos cerrados",
+    "Mensaje 3 (día 10): mensaje de cierre educado que da salida y deja la puerta abierta"
+  ],
+  "restricciones": [
+    "Cada mensaje por debajo de 120 palabras y con una sola pregunta",
+    "Prohibido 'te escribo para hacer seguimiento', 'espero que estés muy bien' y las disculpas por insistir",
+    "Asunto de email de 6 palabras como mucho, sin mayúsculas gritonas ni emojis",
+    "Nada de descuentos ni regalos en esta secuencia"
+  ],
+  "formato_salida": {
+    "tipo": "Los tres mensajes listos para copiar",
+    "por_mensaje": ["Día", "Canal", "Asunto", "Texto", "Qué significa si no contesta"],
+    "extra": "Versión corta de los tres para WhatsApp y una nota sobre cuándo dejar de insistir"
+  },
+  "criterios_calidad": [
+    "Se pueden enviar tal cual, sin retocar",
+    "Ninguno hace sentir culpable al cliente",
+    "El tercero permite cerrar el tema sin quemar la relación"
+  ],
+  "tono": "Humano, breve y sin postureo"
+}

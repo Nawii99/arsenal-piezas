@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar una campaña de reactivación de usuarios inactivos, con segmentos, mensajes y regla de parada",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "volumen_inactivos": "[CUÁNTOS USUARIOS Y DESDE CUÁNDO NO ENTRAN]",
+    "que_hacian_antes": "[ACCIONES QUE COMPLETARON ANTES DE IRSE]",
+    "motivos_sospechados": "[POR QUÉ CREES QUE SE FUERON]",
+    "novedades_reales": "[MEJORAS O FUNCIONES NUEVAS DESDE QUE SE FUERON]",
+    "canales": "[PUSH, EMAIL, WHATSAPP, SMS, ANUNCIOS DE REMARKETING]",
+    "incentivo_disponible": "[QUÉ PUEDES OFRECER SIN PERDER DINERO, O: ninguno]"
+  },
+  "instrucciones": [
+    "Divide a los inactivos en 4 segmentos según lo lejos que llegaron y cuánto tiempo llevan fuera",
+    "Para cada segmento escribe una secuencia de 3 mensajes repartidos en 14 días, con el canal de cada uno",
+    "El primer mensaje debe recordar el valor, no pedir nada; el incentivo solo aparece en el último, si existe",
+    "Adapta el mensaje al motivo probable de abandono de cada segmento",
+    "Define la regla de parada: si no abre ninguno de los tres, se saca de la lista durante 90 días",
+    "Indica a quién no escribir: quien desinstaló, quien se dio de baja o quien tuvo una mala experiencia sin resolver"
+  ],
+  "restricciones": [
+    "Nada de mensajes que hagan sentir culpable al usuario",
+    "Máximo 3 impactos por segmento en 14 días, sumando todos los canales",
+    "Sin descuentos inventados: usa solo el incentivo indicado",
+    "Cada mensaje lleva un enlace a una pantalla útil, nunca a la portada"
+  ],
+  "formato_salida": {
+    "tipo": "un bloque por segmento",
+    "campos_por_segmento": ["Nombre del segmento", "Definición técnica del filtro", "Motivo probable de abandono", "Mensaje 1 / 2 / 3 con canal, día y texto", "Enlace de destino", "Regla de parada", "Resultado esperado que se medirá"]
+  },
+  "criterios_calidad": [
+    "Los segmentos no se solapan y se pueden construir con datos que ya tienes",
+    "Los textos suenan a persona, no a máquina de marketing",
+    "Se mide la reactivación real: sesiones a los 7 días, no solo la apertura del mensaje"
+  ]
+}

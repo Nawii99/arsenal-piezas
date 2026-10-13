@@ -1,0 +1,49 @@
+{
+  "tarea": "Analizar el presupuesto de desarrollo web recibido, señalar huecos y riesgos, y preparar las preguntas y condiciones que hay que cerrar antes de firmar.",
+  "contexto": {
+    "quien_lo_envia": "[AGENCIA / FREELANCE / CONOCIDO]",
+    "que_necesito": "[WEB NUEVA / REDISEÑO / TIENDA / RESERVAS / BLOG]",
+    "presupuesto_disponible": "[IMPORTE MÁXIMO CÓMODO]"
+  },
+  "entradas": {
+    "texto_presupuesto": "[PEGA AQUÍ EL PRESUPUESTO COMPLETO]",
+    "plazo_ofrecido": "[SEMANAS O FECHA]",
+    "otros_presupuestos": "[IMPORTES DE OTRAS OFERTAS SI LAS TIENES]"
+  },
+  "pasos": [
+    "1. Separar el precio en partidas: diseño, desarrollo, contenidos, fotos, migración, formación, mantenimiento y licencias.",
+    "2. Marcar lo que no aparece y suele costar dinero después: textos, fotos, traducciones, correo profesional, copias de seguridad, actualizaciones, certificado, hosting.",
+    "3. Comprobar la propiedad: a nombre de quién quedan el dominio, el hosting, el código y las cuentas.",
+    "4. Comprobar qué pasa al terminar: entrega de accesos, si te puedes llevar la web y si hay permanencia en el mantenimiento.",
+    "5. Comprobar si el precio incluye licencias anuales de plantilla o plugins y quién las renueva.",
+    "6. Detectar señales de humo: 'SEO garantizado', 'primera posición en Google', web ilimitada, sin plazos ni entregables.",
+    "7. Traducir cada partida técnica a lenguaje llano y decir si es necesaria para el objetivo declarado.",
+    "8. Redactar la lista de preguntas y las condiciones mínimas que deben constar por escrito."
+  ],
+  "restricciones": [
+    "No decir si el precio es caro o barato en abstracto: valorarlo frente a lo que se entrega.",
+    "Nada de inventar tarifas de mercado con cifras concretas; hablar de rangos y de qué hace variar el precio.",
+    "No recomendar echar atrás una propuesta sin explicar exactamente qué falla.",
+    "Tono práctico y educado: el objetivo es negociar, no pelearse."
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen en 5 líneas: qué incluye de verdad, qué no incluye y el riesgo principal.",
+    "bloque_2": "Tabla: partida | qué significa en cristiano | necesaria para tu objetivo (sí/no/depende) | duda a resolver.",
+    "bloque_3": "Lo que falta y va a costar dinero después.",
+    "bloque_4": "Diez preguntas para enviar tal cual por email.",
+    "bloque_5": "Cláusulas mínimas que deben figurar: propiedad, accesos, plazos, hitos de pago, garantía de errores y qué pasa si se rompe la relación."
+  },
+  "criterios_calidad": [
+    "Después de leerlo se sabe exactamente qué preguntar y qué exigir por escrito.",
+    "Cada partida queda explicada sin tecnicismos.",
+    "Se distingue lo imprescindible de lo prescindible para el objetivo del negocio.",
+    "Las preguntas se pueden enviar sin retocar."
+  ],
+  "errores_frecuentes": [
+    "Firmar sin que conste a nombre de quién queda el dominio.",
+    "Pagar el 100 % por adelantado sin hitos ni entregables.",
+    "Aceptar un mantenimiento mensual sin saber qué incluye.",
+    "Comprar 'posicionamiento garantizado'.",
+    "No pedir los textos y las fotos como parte del encargo y descubrir que los tienes que poner tú."
+  ]
+}

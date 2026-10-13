@@ -1,0 +1,50 @@
+{
+  "tarea": "Redactar una secuencia de cuatro correos de reclamación, con tono creciente, plazos y registro de lo enviado.",
+  "contexto": {
+    "que_reclamo": "[FACTURA IMPAGADA / ENTREGA PENDIENTE / RESPUESTA A UNA PROPUESTA]",
+    "relacion": "[CLIENTE HABITUAL / CLIENTE NUEVO / ADMINISTRACIÓN / PROVEEDOR]",
+    "importe_y_antiguedad": "[CUÁNTO Y CUÁNTOS DÍAS DE RETRASO]",
+    "quiero_seguir_trabajando_con_el": "[SÍ / NO / SOLO SI PAGA]"
+  },
+  "entradas": {
+    "historial": "[QUÉ SE ACORDÓ, QUÉ SE ENTREGÓ Y QUÉ RESPUESTAS HE RECIBIDO]",
+    "documentos_de_apoyo": "[FACTURA, PRESUPUESTO ACEPTADO, ALBARÁN, CONVERSACIÓN]",
+    "condiciones_pactadas": "[PLAZO DE PAGO, INTERESES DE DEMORA SI LOS HAY]"
+  },
+  "pasos": [
+    "Ordena los hechos en una línea temporal con fechas y documentos, sin adjetivos.",
+    "Define los cuatro tramos: recordatorio amable, seguimiento con hechos, aviso formal con plazo, y último aviso antes de escalar.",
+    "Fija cuántos días separan cada tramo y en qué día laborable enviarlo.",
+    "Escribe cada correo con asunto propio, máximo 120 palabras, con una sola petición clara.",
+    "Sube el tono por hechos y por plazos, nunca por insultos ni por amenazas vagas.",
+    "En el tercer tramo, cita la factura, la fecha de vencimiento y las condiciones pactadas.",
+    "En el cuarto, indica el siguiente paso concreto que tomarás y la fecha límite.",
+    "Añade una versión corta de cada tramo para WhatsApp o llamada.",
+    "Prepara la tabla de registro de lo enviado, con fecha y respuesta."
+  ],
+  "restricciones": [
+    "Nada de amenazas de acciones que no vayas a ejecutar.",
+    "No cites artículos legales ni intereses concretos que no me haya confirmado mi asesor.",
+    "Sin sarcasmo ni reproches personales.",
+    "Siempre ofrece una salida: fraccionar, nueva fecha o hablar por teléfono."
+  ],
+  "errores_tipicos": [
+    "Escribir un correo larguísimo explicando tus problemas de caja.",
+    "Disculparte por reclamar lo que es tuyo.",
+    "Reclamar sin adjuntar la factura ni el número.",
+    "Saltar del tono amable al ultimátum sin pasos intermedios.",
+    "No dejar rastro escrito de las llamadas."
+  ],
+  "formato_salida": {
+    "bloque_1": "Línea temporal de los hechos con fechas.",
+    "bloque_2": "Calendario de los cuatro envíos con la fecha propuesta de cada uno.",
+    "bloque_3": "Los cuatro correos completos con asunto y cuerpo, listos para copiar.",
+    "bloque_4": "Versiones cortas para WhatsApp o guion de llamada.",
+    "bloque_5": "Tabla de registro: fecha, canal, tramo, respuesta recibida."
+  },
+  "criterios_calidad": [
+    "Cada correo pide una sola cosa y da una fecha.",
+    "El tono sube sin perder la educación ni cerrar la puerta antes de tiempo.",
+    "Puedo enviarlos sin cambiar nada salvo los datos de la factura."
+  ]
+}

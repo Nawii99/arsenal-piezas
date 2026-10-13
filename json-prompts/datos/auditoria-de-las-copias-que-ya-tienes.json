@@ -1,0 +1,35 @@
+{
+  "tarea": "Auditar el sistema de copias de seguridad existente de una base de datos y devolver los riesgos detectados ordenados por gravedad con su solución concreta",
+  "contexto": {
+    "inventario_actual": "[DESCRIBE LO QUE HAY HOY: p. ej. copia diaria del hosting, un cron con mysqldump, snapshots semanales]",
+    "donde_se_guardan": "[DESTINOS Y SI ESTÁN EN EL MISMO SERVIDOR O FUERA]",
+    "frecuencia_y_retencion": "[CADA CUÁNTO SE HACEN Y CUÁNTO TIEMPO SE GUARDAN]",
+    "cifrado": "[SÍ, NO O NO LO SÉ]",
+    "ultima_restauracion_probada": "[FECHA O 'NUNCA']",
+    "quien_recibe_los_avisos": "[QUIÉN SE ENTERA SI UNA COPIA FALLA]",
+    "acceso_a_las_copias": "[QUIÉN PUEDE BORRARLAS]"
+  },
+  "instrucciones": [
+    "Comprueba punto por punto: regla 3-2-1, copia fuera del servidor, cifrado, retención, verificación periódica, avisos de fallo, control de quién puede borrar y documentación",
+    "Para cada punto di el estado con CUMPLE, DUDOSO o FALLA y explica en una frase por qué",
+    "Puntúa el riesgo de cada fallo de 1 a 5 según probabilidad e impacto y ordénalos de mayor a menor",
+    "Da la solución de cada fallo con el esfuerzo estimado en horas y si tiene coste",
+    "Señala los riesgos silenciosos: copias que aparecen como correctas pero están vacías, copias que caducan sin avisar y credenciales guardadas en el mismo sitio que la copia",
+    "Si falta información para juzgar un punto, di exactamente qué hay que mirar y dónde"
+  ],
+  "restricciones": [
+    "No des por bueno nada que no se haya probado restaurando",
+    "No recomiendes cambiar de proveedor como primera solución",
+    "Máximo 10 hallazgos, los que de verdad importan"
+  ],
+  "formato_salida": {
+    "tipo": "informe de auditoría",
+    "secciones": ["Semáforo general en 3 líneas", "Tabla de comprobaciones con estado", "Hallazgos ordenados por riesgo con solución y esfuerzo", "Qué arreglar esta misma semana", "Qué información falta por confirmar"]
+  },
+  "criterios_calidad": [
+    "Cada hallazgo dice qué pasaría en concreto si nadie lo arregla",
+    "Las soluciones son accionables sin contratar a nadie o dicen a quién contratar",
+    "El plan de la semana no ocupa más de 4 horas de trabajo"
+  ],
+  "tono": "honesto, sin dramatizar ni tranquilizar de más"
+}

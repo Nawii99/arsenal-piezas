@@ -1,0 +1,53 @@
+{
+  "tarea": "Preparar el plan de mudanza de [DOMINIO O WEB ACTUAL] a [DESTINO], con el mapa de redirecciones y el orden exacto de tareas para no perder posiciones en Google.",
+  "contexto": {
+    "motivo": "[CAMBIO DE NOMBRE / NUEVA WEB / CAMBIO DE PLATAFORMA / LIMPIEZA DE URLS]",
+    "plataforma_origen": "[WORDPRESS / WIX / HTML / SHOPIFY / OTRA]",
+    "plataforma_destino": "[LA NUEVA]",
+    "trafico_actual": "[VISITAS AL MES APROXIMADAS Y DE DÓNDE VIENEN]"
+  },
+  "entradas": {
+    "listado_urls": "[PEGA LAS URLS ACTUALES O EL SITEMAP]",
+    "paginas_que_traen_visitas": "[LAS 20 MEJORES SEGÚN SEARCH CONSOLE]",
+    "paginas_que_desaparecen": "[LAS QUE NO TENDRÁN EQUIVALENTE]",
+    "fecha_prevista": "[DÍA Y FRANJA HORARIA]"
+  },
+  "pasos": [
+    "1. Congelar el inventario: exportar todas las URLs actuales y las que más visitas reciben.",
+    "2. Emparejar cada URL antigua con su equivalente nueva, una a una; si no hay equivalente, elegir la página más parecida, nunca la home por defecto.",
+    "3. Decidir qué páginas desaparecen de verdad y devolverán 410, y cuáles se redirigen.",
+    "4. Escribir las redirecciones 301 en el formato de la plataforma destino (_redirects, .htaccess, reglas del panel o plugin).",
+    "5. Revisar que ninguna redirección encadene más de un salto ni forme un bucle.",
+    "6. Actualizar enlaces internos, menús, botones, firmas de correo, biografías de redes y campañas para que apunten al destino final.",
+    "7. Publicar, verificar el dominio nuevo en Search Console y usar la herramienta de cambio de dirección si el dominio cambia.",
+    "8. Enviar el sitemap nuevo y vigilar durante 30 días errores 404, cobertura y posiciones."
+  ],
+  "restricciones": [
+    "Nunca redirigir todo a la home: se pierde el valor de cada página.",
+    "Nada de redirecciones 302 para un cambio permanente.",
+    "No borrar la web antigua ni dejar caducar el dominio viejo durante al menos un año.",
+    "Mantener los mismos textos y títulos en las páginas que traen visitas, aunque cambie el diseño.",
+    "Hacer el cambio en un día de poco tráfico y con copia de seguridad hecha."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de redirecciones: URL antigua | URL nueva | tipo (301/410) | prioridad.",
+    "bloque_2": "Archivo de redirecciones ya escrito para la plataforma destino, en bloque de código.",
+    "bloque_3": "Orden de tareas del día del cambio, hora a hora.",
+    "bloque_4": "Comprobaciones de las 24 horas siguientes y de los 30 días siguientes.",
+    "bloque_5": "Señales de alarma y qué hacer si aparecen."
+  },
+  "criterios_calidad": [
+    "Toda URL antigua con visitas tiene destino asignado.",
+    "Ninguna redirección da error, bucle ni cadena de dos saltos.",
+    "El sitemap nuevo solo contiene URLs que responden 200.",
+    "Los enlaces internos apuntan ya al destino final, no a la redirección.",
+    "Hay una forma clara de volver atrás si algo sale mal."
+  ],
+  "errores_frecuentes": [
+    "Lanzar la web nueva sin ninguna redirección y ver caer las visitas a la semana.",
+    "Redirigir a la home todas las fichas de producto retiradas.",
+    "Dejar la web antigua accesible a la vez que la nueva y duplicar contenidos.",
+    "Bloquear por descuido el rastreo con robots.txt o noindex heredados del entorno de pruebas.",
+    "No verificar el dominio nuevo en Search Console hasta un mes después."
+  ]
+}

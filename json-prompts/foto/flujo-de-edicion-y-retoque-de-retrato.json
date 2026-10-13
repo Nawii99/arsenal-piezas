@@ -1,0 +1,41 @@
+{
+  "tarea": "Darme un flujo de edición de retrato ordenado, con el orden exacto de ajustes, valores de partida y el punto donde debo parar",
+  "contexto": {
+    "programa": "[LIGHTROOM / CAPTURE ONE / PHOTOSHOP / SNAPSEED / EDITOR DEL MÓVIL / GIMP]",
+    "numero_de_fotos": "[CUÁNTAS VAS A ENTREGAR]",
+    "tipo_de_retrato": "[CORPORATIVO / FAMILIAR / MODA / EVENTO]",
+    "acabado_buscado": "[NATURAL Y LIMPIO / CÁLIDO / CONTRASTADO / BLANCO Y NEGRO]",
+    "tiempo_disponible": "[MINUTOS TOTALES PARA TODAS]",
+    "formato_de_archivo": "[RAW / JPG]"
+  },
+  "orden_de_trabajo": [
+    "Selección: descartar por ojos cerrados y desenfoque antes de tocar nada",
+    "Ajustes globales: balance de blancos, exposición, recuperar altas luces y sombras, contraste",
+    "Tono de piel: corregir dominantes rojizas o amarillas sin desaturar los labios",
+    "Recorte y enderezado según el uso final",
+    "Retoque local: manchas puntuales, pelos sueltos, brillos en la frente",
+    "Suavizado de piel solo si hace falta y manteniendo poro y textura",
+    "Ojos y dientes: un toque de claridad, nunca blanqueo total",
+    "Enfoque de salida y ruido según dónde se va a publicar",
+    "Sincronizar los ajustes al resto de fotos y revisar una a una",
+    "Exportar en los tamaños que pide cada uso"
+  ],
+  "errores_a_evitar": [
+    "Piel de muñeca por exceso de suavizado",
+    "Ojos con blanco puro y dientes fosforito",
+    "Cada foto de la misma sesión con un color distinto",
+    "Recortar por las articulaciones o cortar la coronilla sin querer",
+    "Sobreenfocar la piel y marcar imperfecciones"
+  ],
+  "formato_salida": {
+    "1": "FLUJO NUMERADO con el ajuste, el valor de partida y en qué mirar para saber si te has pasado",
+    "2": "AJUSTES DE EXPORTACIÓN por destino: web, redes, impresión",
+    "3": "REVISIÓN FINAL: 6 comprobaciones antes de entregar",
+    "4": "CÓMO RECORTAR EL TIEMPO si voy justo"
+  },
+  "criterios_calidad": [
+    "El resultado sigue pareciendo la misma persona",
+    "Todas las fotos de la sesión son coherentes entre sí",
+    "Puedo repetir el flujo de memoria en la siguiente sesión"
+  ]
+}

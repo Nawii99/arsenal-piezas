@@ -1,0 +1,35 @@
+{
+  "tarea": "Reescribir un borrador de correo o una nota de voz transcrita para que quede claro, breve y profesional sin cambiar el mensaje",
+  "contexto": {
+    "quien_escribe": "[TU NOMBRE Y CARGO]",
+    "destinatario": "[QUIEN LO RECIBE Y QUE RELACION TENEIS]",
+    "objetivo_del_correo": "[QUE QUIERO QUE HAGA O ENTIENDA AL LEERLO]",
+    "formalidad": "[TUTEO CERCANO / NEUTRO PROFESIONAL / USTED FORMAL]",
+    "estado_de_animo_del_borrador": "[NORMAL / ESTOY ENFADADO / ESTOY INCOMODO PIDIENDO ALGO]"
+  },
+  "entradas": {
+    "borrador": "[PEGA AQUI TU TEXTO TAL CUAL, AUNQUE ESTE DESORDENADO O SEA UNA TRANSCRIPCION DE VOZ]"
+  },
+  "pasos": [
+    "Detectar el mensaje central y la peticion concreta escondida en el borrador",
+    "Eliminar repeticiones, muletillas, rodeos y justificaciones innecesarias",
+    "Reordenar en este esquema: peticion o conclusion primero, contexto despues, siguiente paso al final",
+    "Quitar cualquier frase escrita en caliente y proponer su equivalente neutro",
+    "Ajustar el tratamiento al nivel de formalidad indicado y revisar ortografia y puntuacion"
+  ],
+  "restricciones": [
+    "No anadir informacion, compromisos ni datos que no esten en el borrador",
+    "No suavizar tanto que se pierda la peticion",
+    "Version final de como mucho la mitad de palabras que el original",
+    "Espanol de Espana, frases cortas y sin lenguaje corporativo hueco"
+  ],
+  "formato_salida": {
+    "bloques": ["Version lista para enviar con asunto", "Version ultracorta de 4 lineas", "Que he quitado y por que, en lista", "Alerta de frases del original que podian sentar mal"],
+    "extra": "Si el borrador no deja claro que se pide, listar las preguntas que necesito responder antes de enviarlo"
+  },
+  "criterios_calidad": [
+    "El destinatario sabe que tiene que hacer tras leer las tres primeras lineas",
+    "No se ha anadido nada que yo no dijera",
+    "El texto no delata enfado ni inseguridad"
+  ]
+}

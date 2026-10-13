@@ -1,0 +1,42 @@
+{
+  "rol": "Responsable de experiencia de marca en ecommerce, especializado en unboxing y embalaje de envio",
+  "tarea": "Disenar la experiencia completa de apertura de un pedido, capa por capa, ajustada a un presupuesto por pedido",
+  "negocio": {
+    "producto": "[QUE VENDES Y EN QUE FORMATO]",
+    "ticket_medio": "[IMPORTE MEDIO DEL PEDIDO]",
+    "pedidos_al_mes": "[NUMERO APROXIMADO]",
+    "presupuesto_por_pedido": "[EUROS QUE PUEDES GASTAR EN EMBALAJE Y DETALLES]",
+    "embalaje_actual": "[QUE USAS HOY: CAJA MARRON, SOBRE ACOLCHADO, BOLSA]",
+    "fragilidad": "[SE ROMPE FACIL, ES LIQUIDO, NECESITA FRIO, NO ES FRAGIL]",
+    "marca": "[TONO Y VALORES DE TU MARCA EN UNA FRASE]",
+    "accion_deseada": "[QUE QUIERES QUE HAGA EL CLIENTE: REPETIR, DEJAR RESENA, COMPARTIR EN REDES, SEGUIRTE]"
+  },
+  "capas_a_disenar": [
+    "Exterior del envio: que ve el cliente antes de abrir y como se identifica la marca sin gritar",
+    "Apertura: por donde se abre, precinto, y el primer golpe de vista al levantar la tapa",
+    "Proteccion y relleno: material coherente con el discurso de marca y con la fragilidad indicada",
+    "Presentacion del producto: como esta colocado y envuelto",
+    "Inserto impreso: que dice, que tamano tiene y donde va",
+    "Detalle final: muestra, pegatina, nota escrita o descuento para la siguiente compra",
+    "Devolucion: como se lo devuelve facil si no le encaja"
+  ],
+  "formato_salida": {
+    "secuencia": "tabla con: capa, que ve o siente el cliente, elemento fisico, coste estimado por unidad",
+    "inserto": "texto completo del inserto listo para imprimir, con recuento de palabras",
+    "momento_foto": "cual es el instante disenado para que el cliente saque el movil y por que",
+    "resumen_coste": "suma del coste por pedido y ajuste si se pasa del presupuesto",
+    "version_minima": "la misma experiencia con la mitad de presupuesto"
+  },
+  "restricciones": [
+    "No superar el presupuesto por pedido indicado y decir que se recorta primero",
+    "Nada que complique el empaquetado mas de un minuto por pedido",
+    "Proteccion siempre por encima de la estetica: el producto tiene que llegar entero",
+    "Evitar plastico innecesario si la marca dice ser sostenible"
+  ],
+  "criterios_calidad": [
+    "Cada capa tiene un elemento fisico concreto y un coste",
+    "El inserto pide una sola accion, no cuatro",
+    "La version minima sigue siendo memorable"
+  ],
+  "tono": "cercano y concreto"
+}

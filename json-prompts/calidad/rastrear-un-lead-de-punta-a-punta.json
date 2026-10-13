@@ -1,0 +1,48 @@
+{
+  "tarea": "Auditar el recorrido completo de un contacto desde el formulario o el anuncio hasta la respuesta al cliente, localizando dónde se pierde o se retrasa.",
+  "contexto": {
+    "origen_de_los_contactos": "[FORMULARIO WEB, ANUNCIO CON FORMULARIO, DM, LLAMADA, QR]",
+    "herramientas_por_medio": "[WORDPRESS, ZAPIER O MAKE, HOJA DE CÁLCULO, CRM, WHATSAPP, CORREO]",
+    "quien_debe_responder": "[PERSONA O BOT Y EN CUÁNTO TIEMPO]",
+    "sintoma": "[QUÉ TE HACE SOSPECHAR: CLIENTES QUE DICEN QUE ESCRIBIERON, CAÍDA DE LEADS...]"
+  },
+  "entradas": {
+    "campos_del_formulario": "[LISTA DE CAMPOS Y CUÁLES SON OBLIGATORIOS]",
+    "avisos_configurados": "[A QUÉ CORREO O NÚMERO LLEGA EL AVISO]",
+    "volumen_esperado": "[CONTACTOS AL MES QUE DEBERÍAS TENER]"
+  },
+  "metodo": [
+    "1. Dibuja el recorrido en pasos: clic, página, envío, guardado, aviso, respuesta, registro y seguimiento. Un paso por línea.",
+    "2. Envía tres contactos de prueba identificables (por ejemplo nombre PRUEBA-1, PRUEBA-2, PRUEBA-3) desde tres orígenes distintos.",
+    "3. Persigue cada uno paso a paso y anota la hora en que aparece en cada sitio; si no aparece, ahí está la fuga.",
+    "4. Prueba a propósito los casos que rompen: teléfono con espacios y prefijo, correo con mayúsculas, nombre con acentos y eñes, mensaje muy largo, doble envío y envío desde móvil con red mala.",
+    "5. Comprueba la casilla de privacidad y qué pasa si no se marca; y si el aviso legal se está guardando.",
+    "6. Revisa dónde acaban los avisos: carpeta de spam, promociones, filtro automático o buzón que nadie mira.",
+    "7. Mide el tiempo real hasta la primera respuesta al cliente y compáralo con el que prometes.",
+    "8. Propón una prueba fija: un contacto de prueba semanal y una alerta si un día no entra ninguno."
+  ],
+  "errores_tipicos": [
+    "El formulario dice gracias pero no manda nada.",
+    "El aviso va a un correo antiguo o a una persona que ya no está.",
+    "Duplicados que hacen creer que hay más leads de los que hay.",
+    "Acentos y eñes que llegan rotos y hacen ilegible el mensaje.",
+    "Nadie mira si un día se dejan de recibir contactos."
+  ],
+  "restricciones": [
+    "Los contactos de prueba deben poder borrarse después; indica cómo.",
+    "No mezclar pruebas con datos de clientes reales."
+  ],
+  "formato_salida": {
+    "mapa_del_recorrido": "Los pasos numerados con la herramienta responsable de cada uno",
+    "tabla_seguimiento": "Prueba, paso, hora, aparece sí/no, observación",
+    "fugas": "Lista de puntos donde se pierde o se retrasa, con la causa probable y el arreglo",
+    "plan_de_vigilancia": "Prueba semanal, quién la hace y qué señal indica avería"
+  },
+  "criterios_calidad": [
+    "Cada paso del recorrido tiene un responsable identificado.",
+    "Las fugas están demostradas con una prueba concreta y su hora.",
+    "Se han probado al menos 4 casos de datos sucios.",
+    "El plan de vigilancia ocupa menos de 10 minutos a la semana."
+  ],
+  "si_falta_informacion": "Pide la lista de herramientas por las que pasa el contacto; sin el mapa no hay auditoría posible."
+}

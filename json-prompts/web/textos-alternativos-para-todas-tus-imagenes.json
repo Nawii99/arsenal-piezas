@@ -1,0 +1,35 @@
+{
+  "tarea": "Escribe el texto alternativo (alt) de cada imagen de mi web, uno por imagen, listo para copiar y pegar en el HTML",
+  "contexto": {
+    "negocio": "[QUÉ VENDES O QUÉ HACES]",
+    "listado_imagenes": "[PEGA AQUÍ NOMBRE DE ARCHIVO O DESCRIPCIÓN DE CADA IMAGEN, UNA POR LÍNEA]",
+    "pagina_donde_van": "[FICHA DE PRODUCTO / BLOG / HOME / GALERÍA]",
+    "idioma": "español de España"
+  },
+  "reglas_del_alt": [
+    "Describe lo que aporta la imagen en esa página concreta, no lo que se ve sin más",
+    "Entre 5 y 15 palabras; si necesita más, propón una descripción larga aparte",
+    "No empieces con 'imagen de' ni con 'foto de'",
+    "Si la imagen es decorativa, indica que el alt debe quedarse vacío y explica por qué",
+    "Si la imagen es un enlace o un botón, el alt describe el destino o la acción",
+    "Si la imagen lleva texto dentro, ese texto tiene que aparecer en el alt",
+    "En fichas de producto incluye color, material o detalle que ayude a decidir la compra",
+    "Nada de repetir palabras clave para SEO ni de copiar el pie de foto"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown",
+    "columnas": ["Archivo o imagen", "Tipo: informativa, decorativa, funcional o compleja", "alt propuesto", "Etiqueta img completa lista para pegar"],
+    "anadidos": [
+      "Para gráficos, mapas o infografías, un párrafo de descripción larga",
+      "Aviso de las imágenes cuyo alt no se puede escribir sin más información, con la pregunta exacta que me tienes que hacer"
+    ]
+  },
+  "restricciones": [
+    "No uses el mismo alt en dos imágenes distintas",
+    "No describas emociones ni interpretes lo que no se ve"
+  ],
+  "criterios_calidad": [
+    "Alguien que solo escuche la página entiende de qué va sin ver nada",
+    "Las imágenes decorativas no añaden ruido a la escucha"
+  ]
+}

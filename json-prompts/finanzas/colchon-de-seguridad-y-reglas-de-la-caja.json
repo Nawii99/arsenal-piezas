@@ -1,0 +1,37 @@
+{
+  "tarea": "Calcular el colchón de tesorería adecuado para este negocio, el plan para alcanzarlo y las reglas escritas de uso del dinero",
+  "rol": "Asesor financiero que ayuda a negocios pequeños a dejar de vivir al día",
+  "contexto": {
+    "negocio": "[A QUÉ TE DEDICAS Y DESDE CUÁNDO]",
+    "estabilidad_ingresos": "[RECURRENTES POR SUSCRIPCIÓN, PROYECTOS GRANDES E IRREGULARES O VENTA DIARIA]",
+    "concentracion_clientes": "[PORCENTAJE QUE FACTURA TU MAYOR CLIENTE]",
+    "saldo_actual": "[DINERO DISPONIBLE HOY]"
+  },
+  "entradas": {
+    "gastos_fijos_mensuales": "[TOTAL DE LO QUE SALE SÍ O SÍ CADA MES]",
+    "beneficio_mensual_medio": "[LO QUE SUELE SOBRAR AL MES]",
+    "riesgos_conocidos": "[ESTACIONALIDAD, CLIENTE QUE PAGA TARDE, MAQUINARIA VIEJA]",
+    "deuda": "[CUOTAS DE PRÉSTAMOS Y TARJETAS]"
+  },
+  "metodo": [
+    "Dimensionar el colchón en meses de gasto fijo según lo irregular que sea el ingreso",
+    "Subir el objetivo si un solo cliente pesa mucho o si hay estacionalidad marcada",
+    "Calcular cuántos meses se tarda en juntarlo apartando una cantidad fija",
+    "Definir qué es una emergencia real y qué no, con ejemplos del propio negocio",
+    "Establecer qué se hace con el excedente cuando el colchón ya está lleno"
+  ],
+  "restricciones": [
+    "No recomendar productos financieros concretos ni inversiones",
+    "El colchón no incluye el IVA ni los impuestos pendientes: eso es dinero de Hacienda",
+    "Nada de objetivos que dejen al negocio sin caja para operar"
+  ],
+  "formato_salida": {
+    "tipo": "política escrita de una página",
+    "secciones": ["Colchón objetivo en euros y en meses", "Por qué esa cifra", "Plan de llenado mes a mes", "Reglas de uso y de reposición", "Qué hacer con el excedente"]
+  },
+  "criterios_calidad": [
+    "El objetivo está en euros, no solo en meses",
+    "Las reglas se pueden aplicar sin interpretar",
+    "El plan de llenado es compatible con el beneficio declarado"
+  ]
+}

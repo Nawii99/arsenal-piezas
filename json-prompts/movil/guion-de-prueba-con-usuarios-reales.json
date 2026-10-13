@@ -1,0 +1,39 @@
+{
+  "tarea": "Preparar el guion completo de una prueba de usabilidad moderada con 5 personas sobre una app móvil",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "estado": "[PROTOTIPO CLICABLE O APP FUNCIONANDO]",
+    "dudas_a_resolver": "[QUÉ QUIERES SABER: SI ENTIENDEN EL MENÚ, SI COMPLETAN EL REGISTRO...]",
+    "perfil_participantes": "[QUIÉN DEBE PROBARLA]",
+    "duracion": "[MINUTOS POR SESIÓN]",
+    "formato": "[PRESENCIAL O POR VIDEOLLAMADA]"
+  },
+  "estructura_de_la_sesion": [
+    "Bienvenida y encuadre: probamos la app, no a ti",
+    "Preguntas de calentamiento sobre su día a día",
+    "Tareas por orden de importancia",
+    "Preguntas de cierre y despedida"
+  ],
+  "reglas_del_moderador": [
+    "No explicar cómo se usa la app ni señalar la pantalla",
+    "Pedir que piense en voz alta y recordarlo si se calla",
+    "Ante una pregunta, devolverla: y tú qué harías",
+    "No preguntar si les gusta, preguntar qué esperaban que pasara",
+    "Anotar lo que hacen, no lo que dicen que harían"
+  ],
+  "formato_salida": {
+    "bloque_1": "Texto literal de bienvenida para leer en voz alta",
+    "bloque_2": "5 o 6 tareas escritas como situación real, no como instrucción, cada una con el criterio de éxito y el tiempo esperado",
+    "bloque_3": "Preguntas de seguimiento por tarea",
+    "bloque_4": "Preguntas de cierre",
+    "bloque_5": "Plantilla de anotación en tabla: participante, tarea, resultado, dónde se atasca, frase textual",
+    "bloque_6": "Cómo resumir los hallazgos al terminar las 5 sesiones y priorizarlos",
+    "bloque_7": "Mensaje de invitación para reclutar participantes"
+  },
+  "criterios_calidad": [
+    "Ninguna tarea contiene la palabra que aparece en el botón que hay que pulsar",
+    "Todas las tareas caben en el tiempo de sesión indicado",
+    "Las preguntas no inducen la respuesta"
+  ],
+  "tono": "Cercano y natural, español de España"
+}

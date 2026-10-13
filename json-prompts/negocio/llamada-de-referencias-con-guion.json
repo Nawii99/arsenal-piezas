@@ -1,0 +1,38 @@
+{
+  "tarea": "Preparar una llamada de comprobación de referencias y su informe de conclusiones",
+  "contexto": {
+    "puesto": "[NOMBRE DEL PUESTO]",
+    "candidato": "[NOMBRE]",
+    "referente": "[NOMBRE Y CARGO]",
+    "relacion": "[JEFE DIRECTO / CLIENTE / COMPAÑERO]",
+    "duracion_llamada": "15 minutos"
+  },
+  "entradas": {
+    "dudas_pendientes": ["[DUDA 1]", "[DUDA 2]"],
+    "lo_que_afirma_el_candidato": ["[AFIRMACIÓN 1]", "[AFIRMACIÓN 2]"],
+    "exigencias_del_puesto": ["[EXIGENCIA 1]", "[EXIGENCIA 2]"]
+  },
+  "pasos": [
+    "Abrir explicando quién eres, para qué llamas y que serán 15 minutos",
+    "Empezar por preguntas fáciles de fecha y funciones para contrastar lo que dijo el candidato",
+    "Pasar a preguntas abiertas de comportamiento sin sugerir la respuesta",
+    "Cerrar con la pregunta de contratación: si volvería a contratarle y para qué tipo de puesto",
+    "Anotar literalmente los silencios, los rodeos y los elogios genéricos"
+  ],
+  "restricciones": [
+    "Solo llamar con permiso expreso del candidato",
+    "No preguntar por salud, vida personal, motivos de baja ni situación familiar",
+    "No revelar detalles confidenciales del proceso ni de otros candidatos",
+    "Una sola referencia no decide: se necesitan al menos dos coincidentes"
+  ],
+  "formato_salida": {
+    "guion": "Diez preguntas numeradas con lo que quieres detectar en cada una",
+    "hoja_de_notas": "Plantilla para apuntar respuesta, tono y contradicción",
+    "informe": "Confirmado, no confirmado y contradicho, cada punto en una línea",
+    "recomendacion": "Seguir adelante, seguir con condiciones o parar, con el motivo"
+  },
+  "criterios_calidad": [
+    "Las preguntas no se pueden responder solo con un sí o un no",
+    "El informe separa hechos verificados de impresiones"
+  ]
+}

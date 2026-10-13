@@ -1,0 +1,44 @@
+{
+  "tarea": "Escribir un script de R con tidyverse que limpie una hoja de Excel desordenada y genere un informe de calidad de los datos",
+  "contexto": {
+    "origen": "[DE DONDE SALE EL EXCEL: TPV, CRM, GESTORIA, FORMULARIO WEB]",
+    "frecuencia": "[UNA VEZ / CADA MES / CADA SEMANA]",
+    "paquetes_permitidos": "readxl, dplyr, stringr, lubridate, janitor, writexl"
+  },
+  "entradas": {
+    "ruta_excel": "[RUTA DEL FICHERO .XLSX]",
+    "hoja": "[NOMBRE O NUMERO DE HOJA]",
+    "filas_de_cabecera_basura": "[CUANTAS FILAS HAY QUE SALTAR ANTES DE LA CABECERA, 0 SI NINGUNA]",
+    "columnas": "[LISTA TUS COLUMNAS Y QUE SIGNIFICA CADA UNA]",
+    "clave_de_duplicado": "[QUE COMBINACION HACE QUE DOS FILAS SEAN LA MISMA, EJ: EMAIL + FECHA]"
+  },
+  "limpieza_obligatoria": [
+    "Normalizar nombres de columna a minusculas sin acentos ni espacios con janitor::clean_names",
+    "Quitar filas y columnas completamente vacias",
+    "Convertir fechas de varios formatos a un unico formato, avisando de las que no se pueden convertir",
+    "Pasar importes de texto a numero tratando la coma decimal y el punto de miles",
+    "Limpiar textos: espacios sobrantes, mayusculas inconsistentes y variantes del mismo nombre",
+    "Normalizar emails, telefonos espanoles y NIF o CIF a un formato unico",
+    "Marcar duplicados segun la clave indicada en vez de borrarlos a ciegas",
+    "Detectar valores imposibles: importes negativos, fechas futuras, cantidades a cero"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con bloques de codigo R",
+    "secciones": [
+      "1. Script R completo y comentado, con la configuracion arriba del todo",
+      "2. Que genera: un fichero limpio.xlsx, un fichero revisar.xlsx con las filas dudosas y un resumen por consola",
+      "3. Informe de calidad: cuantas filas entraron, cuantas salieron limpias, cuantas a revisar y por que motivo",
+      "4. Decisiones que ha tomado el script y que el usuario deberia confirmar"
+    ]
+  },
+  "restricciones": [
+    "Nunca sobrescribir el fichero original",
+    "No borrar filas dudosas: apartarlas en el fichero de revision",
+    "Si una regla de limpieza puede cambiar el significado del dato, preguntar en vez de decidir"
+  ],
+  "criterios_calidad": [
+    "El script se puede volver a ejecutar cada mes sin tocar nada",
+    "Ninguna fila desaparece sin quedar contada en el informe",
+    "Funciona con acentos y con el formato numerico espanol"
+  ]
+}

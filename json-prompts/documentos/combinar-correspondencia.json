@@ -1,0 +1,47 @@
+{
+  "tarea": "Generar [NÚMERO] documentos personalizados a partir de una plantilla de texto y una lista de datos, detectando antes los fallos que arruinarían el envío.",
+  "contexto": {
+    "negocio": "[A QUÉ ME DEDICO]",
+    "documento": "[CARTA DE AVISO / CERTIFICADO / RECIBO / PRESUPUESTO / CONTRATO TIPO]",
+    "destinatarios": "[CUÁNTOS SON Y QUÉ RELACIÓN TIENEN CONMIGO]",
+    "canal": "[EMAIL / PDF ADJUNTO / IMPRESO / WHATSAPP]"
+  },
+  "entradas": {
+    "plantilla": "[PEGA EL TEXTO BASE, MARCANDO CON CORCHETES LO QUE CAMBIA EN CADA UNO]",
+    "cabecera_y_muestra": "[PEGA LA FILA DE CABECERA Y 5 FILAS REALES DE TU EXCEL O CSV]",
+    "idioma_y_trato": "[ESPAÑOL, TUTEO O USTED]"
+  },
+  "pasos": [
+    "Normaliza los nombres de columna a minúsculas sin tildes ni espacios y avisa si hay dos que se parecen demasiado.",
+    "Sustituye cada hueco de la plantilla por {{nombre_de_columna}} usando exactamente los nombres normalizados.",
+    "Lista los huecos que no tienen columna equivalente y las columnas que no se usan en ningún hueco.",
+    "Define regla de formato por campo: importes con coma decimal y euro detrás, fechas dd/mm/aaaa, nombres con mayúscula inicial, NIF sin espacios.",
+    "Define qué hacer con cada celda vacía: dejar en blanco, texto por defecto o excluir esa fila del envío.",
+    "Redacta también el asunto del email y el nombre de archivo del PDF, personalizados con los mismos campos.",
+    "Genera tres documentos completos con datos reales de la muestra, incluido uno con celdas vacías.",
+    "Entrega las instrucciones para producir el resto en bloque con la herramienta que ya tengo."
+  ],
+  "restricciones": [
+    "No inventes datos que no estén en la lista: si falta un dato obligatorio, la fila se aparta.",
+    "No cambies importes, fechas ni condiciones legales del texto original.",
+    "El texto debe leerse natural aunque un campo salga corto o largo."
+  ],
+  "errores_tipicos": [
+    "Columnas con el mismo nombre repetido y el programa cogiendo la que no es.",
+    "Fechas que Excel guarda como número y salen como 45231.",
+    "Nombres en MAYÚSCULAS que quedan gritones en el saludo.",
+    "Espacios invisibles al final de las celdas que rompen el saludo."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de campos: nombre normalizado, ejemplo, formato aplicado, qué hacer si está vacío.",
+    "bloque_2": "Plantilla final con los huecos en formato {{campo}}.",
+    "bloque_3": "Lista de avisos: huecos sin columna, columnas sin usar, filas que hay que apartar.",
+    "bloque_4": "Tres documentos de muestra completos, uno de ellos con datos incompletos.",
+    "bloque_5": "Instrucciones paso a paso para generar la tanda entera y nombrar los archivos."
+  },
+  "criterios_calidad": [
+    "Puedo leer las tres muestras y enviarlas tal cual sin tocar nada.",
+    "Ninguna muestra contiene texto tipo {{campo}} sin sustituir.",
+    "Sé exactamente cuántas filas se envían y cuántas se apartan y por qué."
+  ]
+}

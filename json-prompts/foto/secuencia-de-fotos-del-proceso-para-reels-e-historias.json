@@ -1,0 +1,31 @@
+{
+  "tarea": "Disenar la secuencia de planos fotograficos del proceso de elaboracion de un plato para carrusel, historias o reel",
+  "contexto": {
+    "plato": "[NOMBRE DEL PLATO]",
+    "pasos_visibles": "[PASOS DE LA ELABORACION QUE SE VEN BONITOS: CORTAR, AMASAR, EMPLATAR, FLAMBEAR...]",
+    "protagonista": "[QUIEN COCINA Y SI SALE LA CARA O SOLO LAS MANOS]",
+    "duracion_real": "[MINUTOS QUE DURA EL PROCESO]",
+    "destino": "[CARRUSEL DE 8, HISTORIAS, REEL DE 20 SEGUNDOS]"
+  },
+  "estructura": [
+    "Plano 1 gancho: el resultado final, para que se quede a ver como se hace",
+    "Planos 2 a 6: proceso en orden, alternando plano general, detalle de manos y macro de textura",
+    "Plano de sonido o movimiento: corte, chisporroteo, hilo de aceite o vapor",
+    "Plano final: el plato servido en mesa, con contexto del local"
+  ],
+  "por_cada_plano": {
+    "numero": "Orden",
+    "que_se_ve": "Accion concreta y elemento protagonista",
+    "angulo_y_altura": "Cenital, 45 grados o a ras, y a que altura va la camara",
+    "vertical_u_horizontal": "Formato del disparo",
+    "luz": "De donde viene la luz en ese plano",
+    "texto_en_pantalla": "Frase corta que acompana, maximo 7 palabras"
+  },
+  "restricciones": [
+    "Todos los planos se pueden hacer con un movil y una persona ayudando",
+    "Nada de planos que exijan parar la cocina mas de un minuto",
+    "Higiene visible: manos limpias, panos limpios, superficies recogidas"
+  ],
+  "formato_salida": "Guion numerado en tabla mas orden de grabacion optimizado (agrupando planos que comparten posicion de camara)",
+  "criterios_calidad": ["La secuencia se entiende sin sonido", "Se ve al menos una textura irresistible", "El primer plano funciona como gancho por si solo"]
+}

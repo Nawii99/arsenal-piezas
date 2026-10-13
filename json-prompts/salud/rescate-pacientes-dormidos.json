@@ -1,0 +1,49 @@
+{
+  "tarea": "Diseñar una campaña de reactivación de pacientes inactivos de [NOMBRE DEL CENTRO] segmentada por motivo de abandono",
+  "contexto": {
+    "tipo_de_centro": "[FISIOTERAPIA / DENTAL / PSICOLOGÍA / NUTRICIÓN / ESTÉTICA]",
+    "base_de_pacientes": "[NÚMERO TOTAL DE FICHAS Y DESDE QUÉ AÑO]",
+    "canales_disponibles": "[WHATSAPP / EMAIL / TELÉFONO / SMS]",
+    "quien_ejecuta": "[RECEPCIÓN / EL PROPIO PROFESIONAL]"
+  },
+  "entradas": {
+    "listado": "[EXPORTA: NOMBRE, ÚLTIMA VISITA, SERVICIO REALIZADO, IMPORTE, SI QUEDÓ TRATAMIENTO SIN TERMINAR]",
+    "servicios_de_reentrada": "[QUÉ SERVICIO CORTO Y BARATO PUEDE SERVIR DE PUERTA DE VUELTA]",
+    "capacidad_libre": "[CUÁNTAS CITAS NUEVAS PUEDES ATENDER A LA SEMANA]"
+  },
+  "pasos": [
+    "1. Divide el listado en cuatro grupos: tratamiento sin terminar, alta correcta hace más de un año, una sola visita y nunca volvió, y presupuesto aceptado que nunca se ejecutó.",
+    "2. Descarta de la campaña a quien pidió no ser contactado, a quien tuvo una incidencia y a quien se fue por una queja no resuelta.",
+    "3. Para cada grupo escribe el motivo real por el que dejó de venir y el mensaje que responde a ese motivo concreto.",
+    "4. Redacta un mensaje personal, corto y en primera persona del profesional, no de la clínica. Sin palabra promoción y sin emojis en exceso.",
+    "5. Ofrece un motivo claro para volver ahora: revisión de control, cierre del tratamiento pendiente o cambio en el servicio, no un descuento genérico.",
+    "6. Ordena el envío por tandas de 30 personas al día para que la agenda pueda absorber las respuestas.",
+    "7. Escribe el segundo mensaje de seguimiento a los 5 días para quien no ha contestado, distinto del primero y aún más corto.",
+    "8. Define el cierre: quien no responde a dos mensajes sale de la campaña y no se le vuelve a escribir en 12 meses."
+  ],
+  "restricciones": [
+    "Nunca se menciona el diagnóstico ni el motivo clínico de la última visita en el mensaje.",
+    "Se cumple la baja inmediata si alguien pide no recibir más mensajes y se anota en su ficha.",
+    "Nada de urgencias falsas ni de últimas plazas si no es verdad.",
+    "No se prometen resultados de salud: se ofrece una cita, no una mejoría."
+  ],
+  "formato_salida": {
+    "1_segmentos": "Tabla con los cuatro grupos, cuántas personas caen en cada uno y su prioridad",
+    "2_mensajes": "Un mensaje inicial y un seguimiento por segmento, listos para copiar",
+    "3_calendario": "Qué tandas se envían cada día durante dos semanas",
+    "4_guion_de_llamada": "Doce líneas para el caso de los tratamientos sin terminar, con objeciones y respuestas",
+    "5_medicion": "Tabla con enviados, respuestas, citas y facturación de la campaña"
+  },
+  "criterios_calidad": [
+    "Cada segmento tiene un mensaje que no valdría para los demás.",
+    "El mensaje se lee entero en la pantalla del móvil sin desplegar.",
+    "La campaña no genera más citas de las que caben en la agenda.",
+    "Se puede decir, al terminar, cuántos euros ha traído y cuántas horas ha costado."
+  ],
+  "errores_tipicos": [
+    "Mandar el mismo mensaje a toda la base y quemarla de una vez.",
+    "Escribir en nombre de la clínica en lugar del profesional que le atendió.",
+    "Regalar un descuento grande a quien habría vuelto pagando el precio entero.",
+    "No avisar a recepción y que las respuestas se queden sin contestar dos días."
+  ]
+}

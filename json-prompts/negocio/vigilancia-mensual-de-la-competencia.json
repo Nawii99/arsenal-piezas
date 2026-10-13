@@ -1,0 +1,42 @@
+{
+  "tarea": "Diseñar mi sistema de vigilancia de competencia y el modelo de informe mensual",
+  "entradas": {
+    "mi_negocio": "[QUÉ VENDES Y DÓNDE]",
+    "competidores_a_vigilar": ["[COMPETIDOR 1]", "[COMPETIDOR 2]", "[COMPETIDOR 3]"],
+    "tiempo_disponible": "[MINUTOS AL MES QUE PUEDES DEDICARLE]",
+    "herramientas": "[LO QUE YA USAS: HOJA DE CÁLCULO, NOTION, ALERTAS DE GOOGLE...]"
+  },
+  "que_vigilar": [
+    "Precios y promociones publicadas",
+    "Nuevos productos, servicios o paquetes",
+    "Cambios en el titular y la promesa de su web",
+    "Anuncios activos y ofertas de temporada",
+    "Ofertas de empleo publicadas (indican hacia dónde van)",
+    "Reseñas nuevas y su tono",
+    "Notas de prensa, premios y colaboraciones"
+  ],
+  "pasos": [
+    "Para cada punto a vigilar, indica la fuente exacta y cuánto se tarda en revisarla",
+    "Ajusta la lista al tiempo disponible: si no cabe, prioriza y di qué se queda fuera",
+    "Define el umbral que convierte un cambio en alerta (por ejemplo, bajada de precio superior al 10 por ciento)",
+    "Define qué hago yo ante cada tipo de alerta",
+    "Prepara la plantilla de la hoja de seguimiento con sus columnas"
+  ],
+  "formato_salida": {
+    "1_rutina": "Checklist mensual con fuente, minutos y responsable",
+    "2_hoja": "Columnas de la hoja de seguimiento y ejemplo de una fila rellenada",
+    "3_alertas": "Tabla de señal, umbral y reacción recomendada",
+    "4_informe": "Plantilla del informe mensual: cambios detectados, impacto para mí, decisiones y qué vigilar el mes que viene",
+    "5_automatizar": "Qué partes se pueden automatizar gratis y cómo"
+  },
+  "restricciones": [
+    "Solo fuentes públicas y legales: nada de datos privados ni de hacerse pasar por cliente si implica engaño",
+    "La rutina completa no debe superar el tiempo disponible indicado",
+    "Sin herramientas de pago salvo que se indique alternativa gratuita"
+  ],
+  "criterios_calidad": [
+    "Puedo ejecutar la rutina yo solo el primer día del mes",
+    "Cada alerta lleva asociada una acción concreta, no solo un aviso",
+    "El informe cabe en una página"
+  ]
+}

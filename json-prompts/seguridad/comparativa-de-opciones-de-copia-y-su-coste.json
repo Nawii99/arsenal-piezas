@@ -1,0 +1,45 @@
+{
+  "tarea": "Comparar opciones de copia de seguridad para un negocio pequeño y recomendar una combinación concreta con su coste anual",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD]",
+    "volumen_datos": "[GIGAS APROXIMADOS Y CRECIMIENTO AL AÑO]",
+    "presupuesto": "[EUROS AL MES O AL AÑO]",
+    "nivel_tecnico": "[NINGUNO / BÁSICO / ALGUIEN SE APAÑA]",
+    "local_fisico": "[SÍ O NO]",
+    "ya_contratado": "[EJ. GOOGLE WORKSPACE, MICROSOFT 365, HOSTING]",
+    "exigencias": "[EJ. DATOS EN LA UE, HISTORIAL DE 1 AÑO, RECUPERAR EN MENOS DE 4 HORAS]"
+  },
+  "opciones_a_evaluar": [
+    "Aprovechar el plan de nube ya contratado con su historial de versiones",
+    "Servicio de copia en la nube dedicado con retención e inmutabilidad",
+    "Discos externos rotados y guardados fuera del local",
+    "NAS en el local con copia adicional a la nube",
+    "Servicio gestionado por un informático externo",
+    "Combinaciones mixtas"
+  ],
+  "criterios_de_comparacion": [
+    "Coste primer año y coste recurrente, incluyendo hardware y horas de persona",
+    "Esfuerzo mensual en minutos y qué pasa si esa persona se va de vacaciones",
+    "Protección frente a ransomware, robo, incendio y error humano",
+    "Tiempo estimado hasta volver a trabajar",
+    "Facilidad de salida: sacar tus datos si dejas el servicio",
+    "Ubicación de los datos y encaje con el RGPD"
+  ],
+  "restricciones": [
+    "Precios como rangos orientativos y con la fecha de la estimación",
+    "Menciona categorías de producto y ejemplos, dejando claro que hay que verificar precio actual",
+    "Nada de recomendar la opción más cara por defecto",
+    "Descarta explícitamente lo que no encaja y explica por qué"
+  ],
+  "formato_salida": {
+    "tabla": ["Opción", "Coste año 1", "Coste recurrente", "Minutos al mes", "Protege frente a", "No protege frente a", "Tiempo de recuperación", "Encaje 1-5"],
+    "recomendacion": "Una combinación concreta con motivo en tres frases",
+    "plan_b": "Alternativa si el presupuesto baja a la mitad",
+    "pasos": "Qué contratar o comprar esta semana, en orden"
+  },
+  "criterios_calidad": [
+    "La recomendación cumple la regla 3-2-1 dentro del presupuesto",
+    "Se cuenta el coste del tiempo de las personas, no solo el del servicio",
+    "Cada descarte está justificado"
+  ]
+}

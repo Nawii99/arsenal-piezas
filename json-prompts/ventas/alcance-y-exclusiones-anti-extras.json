@@ -1,0 +1,33 @@
+{
+  "tarea": "Redactar el apartado de alcance, exclusiones y condiciones de un presupuesto para evitar trabajo extra no pagado",
+  "entradas": {
+    "servicio": "[QUÉ SERVICIO VENDES]",
+    "entregables": "[QUÉ ENTREGAS EXACTAMENTE Y EN QUÉ FORMATO]",
+    "plazo": "[PLAZO Y FECHA DE INICIO PREVISTA]",
+    "revisiones_incluidas": "[NÚMERO DE RONDAS DE CAMBIOS]",
+    "que_aporta_el_cliente": "[TEXTOS, FOTOS, ACCESOS, DATOS, PERSONA DE CONTACTO]",
+    "extras_frecuentes": "[LO QUE TE SUELEN PEDIR DE MÁS]",
+    "precio_hora_extra": "[TARIFA PARA TRABAJO FUERA DE ALCANCE]"
+  },
+  "debe_incluir": [
+    "Lista cerrada de lo que sí incluye, con cantidades",
+    "Lista de lo que no incluye, nombrando los extras frecuentes",
+    "Qué pasa si el cliente pide un cambio fuera de alcance: aviso previo por escrito y tarifa",
+    "Qué pasa si el cliente se retrasa entregando materiales: cómo se mueve el plazo",
+    "Revisiones incluidas y coste de las siguientes",
+    "De quién es el trabajo y en qué momento pasa al cliente",
+    "Validez del presupuesto y condiciones de cancelación"
+  ],
+  "restricciones": [
+    "Lenguaje llano, sin jerga jurídica innecesaria",
+    "Cada condición en una frase, nada de párrafos largos",
+    "Tono de acuerdo entre profesionales, no de desconfianza",
+    "Esto no es asesoramiento legal: recomienda revisión profesional si el importe es alto"
+  ],
+  "formato_salida": "Dos listas (incluye y no incluye) más un bloque de condiciones numeradas listo para pegar en el presupuesto",
+  "criterios_calidad": [
+    "Las discusiones típicas del sector quedan resueltas por escrito",
+    "El cliente sabe qué tiene que aportar y cuándo",
+    "Nada queda abierto a interpretación en plazos ni en revisiones"
+  ]
+}

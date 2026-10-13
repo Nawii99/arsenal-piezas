@@ -1,0 +1,42 @@
+{
+  "tarea": "Convertir una previsión base en tres escenarios de tesorería y medir cuánto puede empeorar cada variable antes de quedarse sin caja",
+  "rol": "Analista financiero que prepara decisiones de inversión en negocios pequeños",
+  "contexto": {
+    "negocio": "[A QUÉ TE DEDICAS]",
+    "decision_a_valorar": "[CONTRATAR, ALQUILAR, INVERTIR, LANZAR PRODUCTO]",
+    "horizonte": "[NÚMERO DE MESES]",
+    "caja_inicial": "[SALDO DE PARTIDA]"
+  },
+  "entradas": {
+    "prevision_base": "[INGRESOS Y GASTOS PREVISTOS POR MES]",
+    "variables_sensibles": "[VENTAS, PRECIO MEDIO, DÍAS DE COBRO, COSTE DE MATERIA PRIMA]",
+    "gastos_nuevos": "[LO QUE AÑADE LA DECISIÓN Y DESDE QUÉ MES]"
+  },
+  "escenarios": {
+    "optimista": "Ventas un 15% por encima y cobros puntuales",
+    "realista": "La previsión base tal cual",
+    "pesimista": "Ventas un 25% por debajo, cobros 30 días más tarde y costes un 10% más altos"
+  },
+  "metodo": [
+    "Recalcular la caja mes a mes en los tres escenarios partiendo del mismo saldo inicial",
+    "Indicar en cuál de ellos y en qué mes la caja se queda en negativo",
+    "Calcular el punto de no retorno: cuánto pueden caer las ventas antes de agotar la caja",
+    "Señalar la variable que más mueve el resultado",
+    "Proponer una señal de alarma temprana para saber pronto en qué escenario estás"
+  ],
+  "restricciones": [
+    "No presentar el escenario optimista como el previsible",
+    "Mantener los mismos gastos fijos en los tres escenarios salvo que se justifique lo contrario",
+    "Nada de porcentajes sin traducir a euros"
+  ],
+  "formato_salida": {
+    "tipo": "tabla comparativa más veredicto",
+    "columnas": ["Mes", "Caja optimista", "Caja realista", "Caja pesimista"],
+    "extras": ["Veredicto en tres líneas sobre si la decisión es asumible", "Condiciones que deberían cumplirse para seguir adelante", "Señales de alarma con su umbral"]
+  },
+  "criterios_calidad": [
+    "Se ve el mes exacto de peor caja en cada escenario",
+    "El veredicto responde de verdad a la decisión planteada",
+    "Las señales de alarma son medibles con datos que ya tienes"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tarea": "Auditar una presentación existente y devolver la lista priorizada de arreglos para que parezca profesional",
+  "entradas": {
+    "presentacion": "[PEGA AQUÍ EL TEXTO DE CADA DIAPOSITIVA O DESCRÍBELAS UNA A UNA]",
+    "objetivo": "[QUÉ QUIERES QUE PASE DESPUÉS DE VERLA]",
+    "publico": "[QUIÉN LA VE]",
+    "marca": "[COLORES Y TIPOGRAFÍAS OFICIALES]",
+    "limite_tiempo": "[MINUTOS QUE TIENES PARA ARREGLARLA]"
+  },
+  "que_revisar": [
+    "Mensaje: una idea por diapositiva y titulares que afirman algo",
+    "Orden: si el argumento avanza o se repite",
+    "Densidad: palabras visibles, viñetas dentro de viñetas, tablas ilegibles",
+    "Jerarquía: qué se lee primero en cada diapositiva",
+    "Consistencia: márgenes, tamaños, colores y alineaciones",
+    "Legibilidad: contraste, tamaño mínimo de texto, gráficos sin etiquetar",
+    "Sobras: diapositivas que se pueden borrar sin perder nada"
+  ],
+  "restricciones": [
+    "No rehacer la presentación entera: proponer arreglos aplicables sobre lo que ya existe",
+    "Cada arreglo dice exactamente qué hacer, nada de mejorar la jerarquía",
+    "Máximo 3 problemas por diapositiva, los más graves"
+  ],
+  "formato_salida": "Tabla con columnas Diapositiva, Problema, Gravedad (alta media baja), Arreglo concreto y Minutos; después un bloque Top 5 arreglos si solo tienes una hora y otro con las diapositivas a eliminar o fusionar",
+  "criterios_calidad": [
+    "Ordenado por impacto, no por número de diapositiva",
+    "Se puede ejecutar sin saber diseño",
+    "Distingue un fallo real de una cuestión de gusto"
+  ]
+}

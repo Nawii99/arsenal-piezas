@@ -1,0 +1,33 @@
+{
+  "tarea": "Condensar un tema en una ficha resumen de una sola página A4 para repaso rápido",
+  "entradas": {
+    "tema": "[TEMA A RESUMIR]",
+    "material_origen": "[PEGA AQUÍ EL TEXTO, APUNTES O GUION DE PARTIDA]",
+    "uso_previsto": "[REPASO DE EXAMEN / CONSULTA EN EL PUESTO DE TRABAJO / RECORDATORIO TRAS EL CURSO]",
+    "nivel_lector": "[QUÉ SABE YA QUIEN LA VA A LEER]"
+  },
+  "criterio_de_seleccion": [
+    "Entra lo que el lector necesita para actuar; se cae todo lo que solo es contexto o historia",
+    "Si dos ideas dicen casi lo mismo, se queda la más aplicable",
+    "Las excepciones raras se citan en una sola línea al final, no ocupan bloque propio"
+  ],
+  "estructura": [
+    "Titular del tema y una frase de para qué sirve",
+    "Definiciones clave: máximo 6, una línea cada una",
+    "El proceso o la fórmula: pasos numerados, máximo 7 pasos",
+    "Ejemplo mínimo resuelto en 4 líneas",
+    "Trampas y errores: máximo 5 viñetas que empiecen por el error",
+    "Regla mnemotécnica o frase para recordarlo"
+  ],
+  "formato_salida": "Markdown en dos columnas simuladas mediante una tabla de 2 columnas, sin párrafos largos, todo en viñetas y negritas para los términos",
+  "restricciones": [
+    "Máximo 400 palabras en total",
+    "Nada de introducciones ni cierres motivacionales",
+    "No añadas información que no esté en el material de origen; si detectas un hueco importante, márcalo como [FALTA EN TU MATERIAL: qué]"
+  ],
+  "criterios_calidad": [
+    "Cabe impreso en una cara de A4 con letra legible",
+    "Se puede consultar de un vistazo en menos de 30 segundos",
+    "Ningún punto obliga a ir a buscar otra fuente para entenderlo"
+  ]
+}

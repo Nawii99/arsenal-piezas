@@ -1,0 +1,39 @@
+{
+  "tarea": "Escribir la parrilla completa de una semana con los textos finales listos para copiar y programar",
+  "entradas": {
+    "temas_de_la_semana": "[5 O 7 TEMAS, UNO POR DÍA]",
+    "redes": "[INSTAGRAM, LINKEDIN, TIKTOK, FACEBOOK...]",
+    "tono": "[CÓMO HABLA TU MARCA: CERCANO, TÉCNICO, GRACIOSO...]",
+    "objetivo_semana": "[EJ: LLEVAR TRÁFICO A LA PÁGINA DE RESERVAS]",
+    "enlace_u_oferta": "[A DÓNDE MANDAS A LA GENTE]",
+    "cosas_que_nunca_dices": "[PALABRAS O PROMESAS QUE NO USAS]"
+  },
+  "reglas_por_red": {
+    "instagram": "Primera línea corta que enganche, párrafos de 1 o 2 líneas, entre 5 y 10 hashtags al final",
+    "linkedin": "Primera frase que corte el scroll, sin hashtags de relleno, cierre con pregunta profesional",
+    "tiktok": "Guion hablado de 25 a 40 segundos con gancho en los 3 primeros segundos",
+    "facebook": "Texto algo más largo y directo, con la llamada a la acción explícita"
+  },
+  "pasos": [
+    "1. Adapta cada tema al formato y longitud de la red que le toca",
+    "2. Escribe el texto final completo, no un esquema",
+    "3. Añade una idea visual concreta: qué se ve en la foto o en el vídeo",
+    "4. Propón hora de publicación y justifícala en media línea",
+    "5. Solo una publicación de la semana vende de forma directa"
+  ],
+  "formato_salida": {
+    "tipo": "un bloque por día",
+    "estructura_del_bloque": ["Día y hora", "Red y formato", "Texto final", "Hashtags", "Idea visual", "Llamada a la acción"],
+    "cierre": "Al final, lista de fotos o vídeos a grabar para toda la semana"
+  },
+  "restricciones": [
+    "Nada de emojis en exceso: como mucho dos por publicación",
+    "No inventes datos, precios ni testimonios",
+    "Español de España, tuteando, frases cortas"
+  ],
+  "criterios_calidad": [
+    "El texto se puede copiar y pegar sin retocar nada",
+    "Cada publicación se entiende sola, sin las demás",
+    "El objetivo de la semana aparece de forma natural en al menos tres días"
+  ]
+}

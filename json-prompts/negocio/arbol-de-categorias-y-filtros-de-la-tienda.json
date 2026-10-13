@@ -1,0 +1,38 @@
+{
+  "tarea": "Disenar el arbol de categorias, subcategorias y filtros de una tienda online",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "sector": "[QUE VENDES]",
+    "n_referencias": "[CUANTOS PRODUCTOS TIENES]",
+    "plataforma": "[SHOPIFY, WOOCOMMERCE, PRESTASHOP U OTRA]"
+  },
+  "entradas": {
+    "listado_de_productos_o_familias": "[PEGA AQUI TU CATALOGO RESUMIDO]",
+    "atributos_disponibles": "[TALLA, COLOR, MATERIAL, USO, MARCA, PRECIO...]",
+    "como_los_pide_la_gente": "[PALABRAS QUE USAN TUS CLIENTES AL PREGUNTAR]"
+  },
+  "criterios_de_diseno": [
+    "Maximo 3 niveles de profundidad y entre 5 y 9 categorias en el menu principal",
+    "Nombrar las categorias como las busca el cliente, no como las llama el proveedor",
+    "Cada categoria final debe tener al menos 5 productos o se fusiona con otra",
+    "Separar lo que es categoria de lo que debe ser filtro, y decir el motivo",
+    "Evitar que un producto viva en dos categorias distintas sin categoria principal definida"
+  ],
+  "entregables": [
+    "Arbol de categorias en formato lista indentada",
+    "Tabla de filtros por categoria con el orden en que deben aparecer",
+    "Lista de categorias huerfanas o duplicadas detectadas en el catalogo actual",
+    "Propuesta de urls limpias para cada categoria",
+    "Redirecciones necesarias si alguna categoria actual desaparece"
+  ],
+  "restricciones": [
+    "No proponer mas de 8 filtros por categoria",
+    "Urls en minusculas, sin acentos, separadas por guiones",
+    "Avisar de cada cambio que pueda romper enlaces existentes"
+  ],
+  "criterios_calidad": [
+    "Desde la portada se llega a cualquier producto en 3 clics o menos",
+    "Un cliente nuevo entiende el menu sin preguntar",
+    "Ninguna categoria queda vacia ni con un solo producto"
+  ]
+}

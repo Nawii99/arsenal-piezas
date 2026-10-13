@@ -1,0 +1,40 @@
+{
+  "tarea": "Escribir un artículo de blog optimizado para posicionar en Google la palabra clave objetivo, listo para publicar",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU EMPRESA]",
+    "que_vende": "[QUÉ VENDES EN UNA FRASE]",
+    "lector_objetivo": "[A QUIÉN VA DIRIGIDO: OFICIO, NIVEL Y PROBLEMA]",
+    "palabra_clave_principal": "[PALABRA CLAVE]",
+    "palabras_clave_secundarias": ["[SECUNDARIA 1]", "[SECUNDARIA 2]", "[SECUNDARIA 3]"],
+    "intencion_de_busqueda": "[INFORMATIVA / COMPARATIVA / TRANSACCIONAL]",
+    "longitud_objetivo": "[NÚMERO] palabras",
+    "pais_y_lengua": "España, español de España"
+  },
+  "pasos": [
+    "Deducir qué espera encontrar quien busca esa palabra clave y resumirlo en dos líneas antes de escribir",
+    "Proponer un título H1 con la palabra clave dentro de los primeros 40 caracteres",
+    "Montar un esquema de H2 y H3 que cubra las dudas reales, incluidas las que casi nadie responde",
+    "Escribir el artículo siguiendo el esquema y respondiendo la pregunta principal en el primer párrafo",
+    "Cerrar con una llamada a la acción coherente con lo que vende el negocio"
+  ],
+  "restricciones": [
+    "Párrafos de tres líneas como máximo y frases cortas",
+    "Nada de introducciones de relleno del tipo en el mundo actual",
+    "Prohibido inventar datos, estudios, cifras o citas: si hace falta un dato, marcarlo como [DATO A VERIFICAR]",
+    "Sin adjetivos vacíos ni promesas de resultados",
+    "La palabra clave aparece donde encaja de forma natural, nunca forzada"
+  ],
+  "formato_salida": {
+    "orden": ["titulo_h1", "meta_descripcion", "resumen_en_3_puntos", "cuerpo_en_markdown", "faq", "cta_final", "notas_para_el_autor"],
+    "meta_descripcion": "máximo 155 caracteres, con la palabra clave y un motivo para hacer clic",
+    "faq": "3 preguntas reales con respuesta de 2 a 4 líneas",
+    "notas_para_el_autor": "lista de datos, capturas o enlaces internos que debería añadir el negocio"
+  },
+  "criterios_calidad": [
+    "Un lector con prisa entiende la respuesta leyendo solo los H2 y el primer párrafo de cada sección",
+    "Cada sección aporta algo que no estaba en la anterior",
+    "El texto se puede publicar sin reescribirlo, solo revisando los [DATO A VERIFICAR]",
+    "Hay ejemplos concretos del sector, no frases genéricas"
+  ],
+  "tono": "cercano, directo, tuteando, sin tecnicismos innecesarios"
+}

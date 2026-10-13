@@ -1,0 +1,59 @@
+{
+  "tarea": "Definir la nomenclatura y la estructura de carpetas de un proyecto 3D y generar el paquete de entrega final con su documento de instrucciones",
+  "contexto": {
+    "quien_lo_usa": "Persona sin perfil tecnico que trabaja sola y acumula versiones sueltas en el escritorio",
+    "momento": "Al arrancar el proyecto para hacerlo bien, o el dia de la entrega para salvar el desorden",
+    "destinatario": "[CLIENTE / MARKETPLACE / TU YO DE DENTRO DE SEIS MESES]"
+  },
+  "entradas": {
+    "nombre_proyecto": "[NOMBRE CORTO SIN ESPACIOS NI TILDES]",
+    "tipo": "[PACK DE ASSETS / ESCENA / PERSONAJE / PROYECTO DE JUEGO / RENDERS]",
+    "archivos_actuales": "[PEGA LA LISTA DE NOMBRES TAL CUAL ESTAN AHORA]",
+    "motor_o_software_destino": "[UNITY / UNREAL / BLENDER / WEB / IMPRESION]",
+    "que_se_entrega": "[SOLO EXPORTADOS / EXPORTADOS Y FUENTES / TODO EL PROYECTO]"
+  },
+  "conocimiento_del_oficio": {
+    "prefijos_estandar": "SM para malla estatica, SK para malla con esqueleto, T para textura, M para material, A para animacion, BP o PRE para prefabs y presets",
+    "forma_del_nombre": "prefijo_proyecto_objeto_variante_version, todo en minusculas o CamelCase, sin espacios, sin tildes, sin la letra ñ y sin caracteres raros",
+    "sufijos_de_textura": "_BC color base, _N normal, _R rugosidad, _M metalico, _AO oclusion, _ORM canales empaquetados",
+    "versionado": "_v01, _v02 con dos digitos, nunca final ni definitivo ni bueno. La version que se entrega se copia aparte como _ENTREGA con la fecha",
+    "carpetas": "01_fuentes, 02_texturas, 03_exportados, 04_referencias, 05_renders, 06_entrega. Numeradas para que el orden alfabetico sea el orden de trabajo",
+    "rutas": "Texturas siempre dentro de la carpeta del proyecto y enlazadas en relativo; si el enlace apunta a Escritorio, el cliente vera el modelo sin textura",
+    "copia_de_seguridad": "Tres copias, dos soportes, una fuera de casa. El proyecto de un cliente no vive solo en el portatil"
+  },
+  "pasos": [
+    "1. Leer la lista de archivos actual y detectar duplicados, versiones perdidas y nombres ambiguos",
+    "2. Proponer el arbol de carpetas concreto con el nombre del proyecto ya puesto",
+    "3. Generar la tabla de renombrado: nombre viejo a la izquierda, nombre nuevo a la derecha",
+    "4. Marcar que archivos van al paquete de entrega y cuales se quedan solo en tu disco",
+    "5. Comprobar que cada exportado tiene sus texturas dentro del paquete y con la ruta correcta",
+    "6. Redactar el documento LEEME de la entrega: que hay, en que unidades, como importarlo y a quien escribir",
+    "7. Definir el nombre del zip de entrega y su peso aproximado",
+    "8. Dejar una lista de comprobacion previa al envio"
+  ],
+  "errores_tipicos": [
+    "Renombrar archivos con el proyecto abierto y romper los enlaces de textura",
+    "Entregar un zip con la carpeta personal del ordenador dentro",
+    "Meter en la entrega diez versiones y que el cliente abra la equivocada",
+    "Usar tildes o espacios en nombres que despues fallan en un motor de juego",
+    "No incluir ninguna nota de escala ni de unidades"
+  ],
+  "restricciones": [
+    "No propongas herramientas de pago: todo tiene que poder hacerse renombrando a mano o con el explorador de archivos",
+    "La tabla de renombrado debe ser copiable tal cual",
+    "Maximo seis carpetas de primer nivel"
+  ],
+  "formato_salida": {
+    "1_arbol_de_carpetas": "Bloque de texto con la estructura indentada",
+    "2_tabla_renombrado": "nombre actual | nombre nuevo | carpeta destino",
+    "3_paquete_entrega": "Lista exacta de lo que entra en el zip y nombre del zip",
+    "4_documento_leeme": "Texto completo listo para guardar como archivo de texto",
+    "5_checklist_previo_al_envio": "Entre 6 y 10 comprobaciones marcables"
+  },
+  "criterios_calidad": [
+    "Ningun nombre nuevo lleva espacios, tildes ni la palabra final",
+    "El LEEME dice unidades, escala real y version del software",
+    "Un desconocido abre el zip y sabe que archivo abrir primero",
+    "La tabla de renombrado cubre todos los archivos de la lista de entrada"
+  ]
+}

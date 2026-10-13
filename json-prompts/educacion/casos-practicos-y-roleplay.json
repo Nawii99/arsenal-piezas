@@ -1,0 +1,49 @@
+{
+  "tarea": "Crear casos practicos y simulaciones de rol para practicar en clase, con guion para cada parte y solucion modelo",
+  "contexto": {
+    "tema": "[HABILIDAD QUE SE PRACTICA]",
+    "perfil_del_alumno": "[QUIEN ES Y QUE HACE EN SU TRABAJO]",
+    "formato": "[PRESENCIAL EN PAREJAS / SALAS DE ZOOM / INDIVIDUAL ASINCRONO]",
+    "tiempo_por_caso": "[MINUTOS, EJ 15]",
+    "numero_de_casos": "[EJ: 4, DE MENOR A MAYOR DIFICULTAD]"
+  },
+  "entradas": {
+    "situacion_real_de_referencia": "[UN CASO REAL QUE HAYAS VIVIDO O TE HAYAN CONTADO]",
+    "errores_tipicos_que_quiero_provocar": ["[ERROR 1]", "[ERROR 2]"]
+  },
+  "proceso": [
+    "1. Define para cada caso la decision que el alumno tiene que tomar: sin decision no hay caso, hay lectura",
+    "2. Escribe el contexto con datos concretos, incluyendo uno o dos datos irrelevantes para que aprenda a filtrar",
+    "3. Redacta las fichas separadas: la del alumno, con lo que sabe, y la del otro personaje, con lo que oculta o le preocupa",
+    "4. Introduce una complicacion a mitad del ejercicio que el formador lanza en un momento pactado",
+    "5. Escribe la solucion modelo con el razonamiento, no solo el resultado, y dos respuestas aceptables alternativas",
+    "6. Prepara las preguntas de puesta en comun para el debriefing: que hiciste, que te llevo a hacerlo, que harias distinto",
+    "7. Escala la dificultad entre casos cambiando una sola variable cada vez"
+  ],
+  "restricciones": [
+    "Nada de casos con empresas inventadas de miles de millones: escala y cifras creibles para el perfil declarado",
+    "Cada caso cabe en el tiempo declarado incluyendo la puesta en comun",
+    "Sin trampas: toda la informacion necesaria esta en las fichas",
+    "El personaje que interpreta el otro rol tiene motivos comprensibles, no es un villano"
+  ],
+  "errores_a_evitar": [
+    "Casos con una unica respuesta obvia: no se aprende nada",
+    "Fichas tan largas que el tiempo se va en leer",
+    "Saltarse la puesta en comun, que es donde ocurre el aprendizaje",
+    "Que el formador improvise la complicacion y descoloque a unos si y a otros no"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla resumen: Caso | Decision que se practica | Dificultad | Variable que cambia respecto al anterior",
+    "bloque_2": "Ficha del alumno para cada caso, lista para imprimir o pegar en el chat",
+    "bloque_3": "Ficha del otro rol o del formador, con la complicacion y el minuto en que se lanza",
+    "bloque_4": "Solucion modelo con razonamiento y dos alternativas aceptables",
+    "bloque_5": "Guion de puesta en comun con las preguntas en orden y el tiempo de cada una",
+    "bloque_6": "Senales de que el ejercicio esta funcionando y que hacer si el grupo se bloquea"
+  },
+  "criterios_calidad": [
+    "Dos alumnos razonables pueden decidir cosas distintas y ambas defenderse",
+    "Las fichas se leen en menos de dos minutos",
+    "Cada caso practica una sola habilidad principal",
+    "El debriefing saca a la luz los errores tipicos declarados"
+  ]
+}

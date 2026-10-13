@@ -1,0 +1,42 @@
+{
+  "tarea": "Diseñar el recorrido de las primeras pantallas hasta el momento en que el usuario ve el valor",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ RESUELVE]",
+    "accion_de_valor": "[LA PRIMERA COSA ÚTIL QUE EL USUARIO DEBERÍA CONSEGUIR]",
+    "permisos_que_necesita": "[CÁMARA / UBICACIÓN / NOTIFICACIONES / NINGUNO]",
+    "necesita_cuenta": "[SÍ / NO / SOLO PARA GUARDAR]",
+    "nivel_tecnico_del_usuario": "[BAJO / MEDIO]"
+  },
+  "pasos": [
+    "Define en una frase el momento en que el usuario dice ahora lo pillo y cuenta cuántos toques hay hasta ahí",
+    "Quita de en medio todo lo que no sea imprescindible para llegar a ese momento",
+    "Coloca el registro después del valor, salvo que sin cuenta no se pueda hacer nada",
+    "Cada permiso se pide justo cuando hace falta y con una pantalla previa que explica para qué, con opción de seguir sin darlo",
+    "Si la app está vacía al principio, propone datos de ejemplo o una plantilla para que no se vea una pantalla en blanco",
+    "Escribe el texto exacto de cada pantalla: titular, una línea de apoyo, botón principal y salida secundaria",
+    "Indica para cada pantalla el evento que hay que medir para saber dónde se cae la gente"
+  ],
+  "restricciones": [
+    "Máximo tres pantallas antes del momento de valor",
+    "Un solo botón principal por pantalla",
+    "Titulares de ocho palabras como mucho y sin jerga",
+    "Siempre debe existir una forma de saltar o de volver atrás"
+  ],
+  "errores_frecuentes": [
+    "Pedir todos los permisos nada más abrir, antes de que el usuario sepa qué es la app",
+    "Un tutorial de cinco pantallas que nadie lee",
+    "Obligar a registrarse para poder mirar",
+    "Formularios largos con campos que no se usan hasta meses después"
+  ],
+  "formato_salida": {
+    "por_pantalla": "Bloque con nombre, objetivo, titular, texto de apoyo, botón principal, salida secundaria y evento a medir",
+    "resumen": "Diagrama en texto del recorrido con el número de toques hasta el momento de valor",
+    "extra": "Lista de lo que se ha quitado del recorrido y en qué momento posterior pedirlo"
+  },
+  "criterios_calidad": [
+    "Se llega al momento de valor en menos de un minuto y sin escribir una contraseña",
+    "Cada permiso tiene su explicación previa y su alternativa si se deniega",
+    "Ninguna pantalla pide algo que la app todavía no necesita",
+    "Todos los textos se entienden leyéndolos en voz alta a alguien ajeno"
+  ]
+}

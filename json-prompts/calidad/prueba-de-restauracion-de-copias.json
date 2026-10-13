@@ -1,0 +1,57 @@
+{
+  "tarea": "Comprobar que las copias de seguridad de un negocio pequeño se pueden restaurar de verdad y detectar que quedaria fuera.",
+  "contexto": {
+    "quien_lo_usa": "Persona sin perfil tecnico cuyo negocio depende de una web, una tienda y unos ficheros de clientes.",
+    "momento": "Revision periodica, o antes de tocar algo importante como el hosting, la plantilla o el dominio.",
+    "idea_clave": "Una copia no comprobada no es una copia: solo es una esperanza."
+  },
+  "entradas": {
+    "que_hay_que_salvar": "[WEB, TIENDA, CLIENTES, FACTURAS, FOTOS, CORREO, HOJAS DE CALCULO]",
+    "copias_actuales": "[QUE HERRAMIENTA HACE CADA COPIA Y CADA CUANTO]",
+    "donde_se_guardan": "[MISMO SERVIDOR, DISCO EXTERNO, NUBE, OTRA CUENTA]",
+    "cuanto_puedes_estar_parado": "[HORAS O DIAS QUE AGUANTA EL NEGOCIO SIN ESO]",
+    "cuanto_puedes_perder": "[HORAS DE TRABAJO O PEDIDOS QUE PUEDES ASUMIR PERDER]"
+  },
+  "pasos": [
+    "1. Haz el inventario: cada cosa que salvar, quien la genera, donde vive y quien tiene acceso.",
+    "2. Localiza fisicamente la ultima copia de cada cosa y anota su fecha y su tamaño.",
+    "3. Descarga una copia a tu ordenador y abrela: si no se abre o pide una clave que nadie tiene, ya has encontrado el fallo.",
+    "4. Restaura en un sitio nuevo y vacio, nunca encima del original, y cronometra cuanto tardas.",
+    "5. Comprueba la restauracion con una lista de cinco cosas concretas: una pagina, una imagen, un pedido, un cliente y un enlace de descarga.",
+    "6. Anota lo que no estaba en la copia: correo, formularios, ajustes de dominio, contraseñas, cuentas de terceros.",
+    "7. Compara el tiempo real de restauracion con el tiempo que aguanta el negocio parado.",
+    "8. Corrige el plan: frecuencia, sitio adicional, acceso de una segunda persona y calendario de la proxima prueba."
+  ],
+  "que_mirar": [
+    "Que la copia no viva solo en el mismo sitio que el original.",
+    "Que haya varias versiones y no solo la de anoche, por si el problema viene de hace dias.",
+    "Que alguien mas pueda acceder si tu no estas disponible.",
+    "Que las contraseñas y accesos esten a salvo en un gestor y no en un papel.",
+    "Que los datos de clientes copiados esten protegidos y no en una carpeta abierta.",
+    "Que existan las facturas de los ultimos años, que hay que conservar."
+  ],
+  "errores_tipicos": [
+    "Confiar en el boton de copias del hosting sin haber restaurado nunca.",
+    "Guardar la copia en la misma cuenta que puede perderse o bloquearse.",
+    "Restaurar encima del original y quedarse sin las dos versiones.",
+    "Olvidar que el correo, las citas y los contactos tambien son datos del negocio.",
+    "No apuntar la contraseña del archivo cifrado de la copia."
+  ],
+  "restricciones": [
+    "No escribas contraseñas ni claves en el resultado, solo donde deben guardarse.",
+    "No propongas herramientas de pago sin comprobar antes lo que ya esta incluido.",
+    "Toda prueba se hace sobre un destino vacio."
+  ],
+  "formato_salida": {
+    "bloque_1": "Inventario en tabla: Elemento | Quien lo copia | Cada cuanto | Donde | Ultima copia | Comprobada.",
+    "bloque_2": "Acta de la prueba: que se restauro, cuanto tardo, que funciono y que no.",
+    "bloque_3": "Huecos detectados con el riesgo de cada uno en una frase.",
+    "bloque_4": "Plan corregido y fecha de la proxima prueba."
+  },
+  "criterios_calidad": [
+    "Se ha restaurado algo de verdad, no solo comprobado que el archivo existe.",
+    "El tiempo de restauracion se compara con el tiempo tolerable de parada.",
+    "Los huecos incluyen lo que no es la web: correo, accesos y cuentas de terceros.",
+    "Queda una fecha concreta para repetir la prueba."
+  ]
+}

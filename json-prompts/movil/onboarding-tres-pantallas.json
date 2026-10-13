@@ -1,0 +1,43 @@
+{
+  "tarea": "Diseñar el recorrido de primera apertura de una app para que el usuario llegue a su primer resultado útil en menos de 60 segundos.",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "momento_ajá": "[LA PRIMERA VEZ QUE EL USUARIO NOTA QUE ESTO LE SIRVE: DESCRÍBELO COMO UNA ACCIÓN CONCRETA]",
+    "pasos_actuales_al_abrir": "[LO QUE HOY SE ENCUENTRA: REGISTRO, TUTORIAL, PERMISOS...]",
+    "friccion_conocida": "[DONDE SABES O SOSPECHAS QUE SE CAEN]",
+    "necesita_cuenta_de_verdad": "[SÍ, PORQUE... / NO]",
+    "tipo_de_usuario": "[NIVEL TÉCNICO Y PRISA QUE LLEVA]"
+  },
+  "principios": [
+    "Primero valor, después registro: pedir cuenta antes de enseñar nada mata la mitad de las primeras aperturas.",
+    "Cada pantalla que añades tiene que ganarse el sitio: si no acerca al momento ajá, fuera.",
+    "Los permisos se piden cuando hacen falta, no en fila al principio.",
+    "Nada de cuenta vacía: si la app está vacía al entrar, el usuario no sabe qué mirar.",
+    "Preguntar 2 o 3 cosas al usuario está bien si cada respuesta cambia lo que ve después. Si no cambia nada, es un cuestionario inútil."
+  ],
+  "pasos": [
+    "1. Escribe el momento ajá como una frase con verbo: el usuario ha [ACCIÓN] y ha visto [RESULTADO].",
+    "2. Cuenta cuántos toques y cuántos campos hay hoy desde abrir hasta ese momento. Anota el número.",
+    "3. Elimina o aplaza todo lo que no sea imprescindible para llegar ahí.",
+    "4. Diseña 3 pantallas como máximo: enganche y promesa, una pregunta que personalice, y la acción que da el primer resultado.",
+    "5. Rellena la app con un ejemplo prehecho o con datos de muestra editables para que nadie vea una pantalla vacía.",
+    "6. Coloca el registro justo después del primer resultado, cuando ya hay algo que perder.",
+    "7. Define el estado vacío de cada pantalla principal: qué se ve y qué botón invita a la siguiente acción.",
+    "8. Define qué medir: porcentaje que llega al momento ajá, tiempo hasta llegar y porcentaje que vuelve al día siguiente."
+  ],
+  "formato_salida": {
+    "bloque_1": "Momento ajá redactado en una frase",
+    "bloque_2": "Recorrido actual y recorrido propuesto, con número de toques de cada uno",
+    "bloque_3": "Ficha por pantalla: objetivo, titular, subtítulo, botón principal, botón secundario y qué pasa si el usuario lo salta",
+    "bloque_4": "Momento exacto en que se pide cada permiso y con qué frase",
+    "bloque_5": "Textos de los estados vacíos de las pantallas principales",
+    "bloque_6": "Las 3 métricas a mirar y qué haremos si no mejoran en 2 semanas"
+  },
+  "criterios_calidad": [
+    "Se puede llegar al primer resultado sin crear cuenta.",
+    "El recorrido propuesto tiene menos toques que el actual y se dice cuántos.",
+    "Cada pantalla se puede saltar sin romper la app.",
+    "Ningún texto pasa de 12 palabras en titular ni de 20 en subtítulo.",
+    "Ninguna pantalla principal queda vacía sin explicación y sin botón."
+  ]
+}

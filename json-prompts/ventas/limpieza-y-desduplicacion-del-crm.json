@@ -1,0 +1,40 @@
+{
+  "tarea": "Auditar y limpiar la base de contactos y empresas de mi CRM: detectar duplicados, registros incompletos y datos caducados, y devolver un plan de limpieza que yo pueda ejecutar",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_vendemos": "[QUÉ VENDES EN UNA FRASE]",
+    "crm": "[HUBSPOT / PIPEDRIVE / ZOHO / ODOO / HOJA DE CÁLCULO]",
+    "volumen_registros": "[NÚMERO APROXIMADO DE CONTACTOS]",
+    "personas_que_lo_usan": "[CUÁNTAS PERSONAS TOCAN EL CRM]"
+  },
+  "entradas": {
+    "muestra_datos": "[PEGA 30-100 FILAS EXPORTADAS CON: nombre, empresa, email, teléfono, propietario, última actividad, etapa]",
+    "campos_obligatorios": "[LISTA DE CAMPOS QUE NUNCA PUEDEN ESTAR VACÍOS]",
+    "meses_para_considerar_inactivo": "[NÚMERO DE MESES]"
+  },
+  "pasos": [
+    "Detectar duplicados por email exacto, por dominio de empresa más nombre parecido y por teléfono normalizado",
+    "Marcar registros zombis: sin actividad desde hace más meses de los indicados y sin oportunidad abierta",
+    "Normalizar formatos: teléfonos con prefijo +34, emails en minúsculas, nombres de empresa sin duplicar SL o SLU",
+    "Separar emails genéricos o no válidos (info@, no-reply@, dominios rotos) del resto de contactos",
+    "Para cada grupo de duplicados, proponer registro maestro y explicar qué dato se conserva de cada uno"
+  ],
+  "restricciones": [
+    "No inventes ningún dato que falte: marca el hueco como VACÍO",
+    "No propongas borrado definitivo: primero archivar o etiquetar como revisión pendiente",
+    "Señala los contactos sin origen ni consentimiento claro para revisarlos por RGPD",
+    "No agrupes dos empresas solo porque el nombre se parezca"
+  ],
+  "formato_salida": {
+    "tabla_duplicados": "registro_maestro | registros_a_fusionar | motivo | riesgo_de_error (alto/medio/bajo)",
+    "tabla_incompletos": "identificador | campos_que_faltan | cómo recuperarlos | prioridad",
+    "tabla_inactivos": "identificador | última actividad | acción sugerida (reactivar/archivar)",
+    "cierre": "5 reglas de higiene para que el CRM no se vuelva a ensuciar"
+  },
+  "criterios_calidad": [
+    "Cada fusión indica exactamente qué dato sobrevive de cada ficha",
+    "Las acciones están ordenadas por impacto y no por volumen",
+    "El plan completo se puede ejecutar en una tarde de trabajo"
+  ],
+  "tono": "Directo y sin tecnicismos, como un responsable de operaciones explicando a su equipo"
+}

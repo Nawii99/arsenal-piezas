@@ -1,0 +1,53 @@
+{
+  "tarea": "Montar el kit de prensa de un juego (materiales, textos y datos) y el correo personalizado de contacto para medios pequeños y creadores de contenido.",
+  "contexto": "Autor independiente sin presupuesto de marketing. Los creadores reciben decenas de correos al día: gana el que se lo pone fácil y demuestra que conoce su canal.",
+  "entradas": {
+    "juego": "[NOMBRE, GÉNERO, PLATAFORMAS Y FECHA]",
+    "gancho": "[LO QUE HACE DIFERENTE A TU JUEGO EN UNA FRASE]",
+    "material_disponible": "[CAPTURAS, GIFS, TRÁILER, LOGOTIPO, ARTE]",
+    "lista_de_contactos": "[CANALES O MEDIOS A LOS QUE QUIERES ESCRIBIR]",
+    "claves_de_acceso": "[TIENES CLAVES DE DESCARGA O BUILD JUGABLE]"
+  },
+  "procedimiento": [
+    "1. Escribe la frase de una línea que un creador pueda decir en directo para explicar tu juego a su audiencia.",
+    "2. Redacta la descripción en tres tamaños: 1 línea, 50 palabras y 150 palabras, todas coherentes.",
+    "3. Lista la ficha de datos: estudio, fecha, plataformas, precio, idiomas, si tiene modo foto o multijugador, duración media.",
+    "4. Selecciona el material y sus formatos: 6 capturas horizontales sin interfaz sobrante, 2 gifs de la mecánica principal, tráiler de menos de 90 segundos, logotipo con fondo transparente.",
+    "5. Ordena las capturas para que las tres primeras se entiendan sin contexto.",
+    "6. Añade permiso explícito de monetización de vídeos y de uso del material, en una frase clara.",
+    "7. Ordena la lista de contactos por encaje real: qué juegos parecidos ha jugado ese canal y cuándo.",
+    "8. Escribe el correo con asunto de menos de 60 caracteres, primera línea personalizada con algo concreto del canal, gancho, enlace al kit y clave de acceso, y despedida sin súplicas.",
+    "9. Añade la variante para medios escritos, más informativa y con la ficha de datos arriba.",
+    "10. Prepara el único mensaje de seguimiento admitido, a los 7 días, de tres líneas.",
+    "11. Define el seguimiento en una tabla simple: contacto, fecha de envío, respuesta, resultado."
+  ],
+  "restricciones": [
+    "Prohibido el correo genérico enviado en copia oculta a cien personas.",
+    "Máximo 150 palabras en el correo a creadores.",
+    "Nada de exagerar: sin revolucionario, sin único en el mundo.",
+    "Un solo seguimiento, nunca más.",
+    "Español de España, tuteando a creadores, tono normal y educado."
+  ],
+  "formato_salida": {
+    "bloque_1": "Frase de una línea y descripciones de 50 y 150 palabras.",
+    "bloque_2": "Ficha de datos del juego en tabla.",
+    "bloque_3": "Lista del material con formatos, tamaños y nombres de archivo sugeridos.",
+    "bloque_4": "Texto de permisos de uso y monetización.",
+    "bloque_5": "Correo a creadores y correo a medios, listos para copiar, con hueco de personalización marcado.",
+    "bloque_6": "Mensaje de seguimiento y tabla de control de envíos."
+  },
+  "criterios_calidad": [
+    "El creador entiende el juego sin abrir un solo enlace.",
+    "La personalización es concreta y no vale para cualquier canal.",
+    "El material se puede descargar y usar sin pedir permiso adicional.",
+    "El correo se lee en menos de 30 segundos.",
+    "Hay una forma de saber a quién se escribió y qué pasó."
+  ],
+  "errores_frecuentes": [
+    "Enviar solo el tráiler y ningún dato.",
+    "No decir en qué plataformas está ni si hay clave disponible.",
+    "Capturas con menús, depuración o marcas de agua.",
+    "Escribir a canales enormes que jamás juegan tu género.",
+    "Insistir tres veces y quemar el contacto."
+  ]
+}

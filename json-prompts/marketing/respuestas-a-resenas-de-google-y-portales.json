@@ -1,0 +1,44 @@
+{
+  "tarea": "Escribir la respuesta pública a una reseña de cliente pensando en quien la va a leer después",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "sector": "[SECTOR]",
+    "portal": "[GOOGLE / TRIPADVISOR / AMAZON / TRUSTPILOT]",
+    "lector_objetivo": "la persona que está dudando si comprarte, no quien escribió la reseña"
+  },
+  "entradas": {
+    "texto_resena": "[PEGA LA RESEÑA]",
+    "estrellas": "[1 A 5]",
+    "es_cliente_real": "[SÍ / NO / NO LO SÉ]",
+    "nuestra_version": "[QUÉ PASÓ SEGÚN TUS REGISTROS]",
+    "solucion_posible": "[QUÉ PUEDES OFRECERLE]"
+  },
+  "clasificacion_previa": [
+    "Elogio sin peros",
+    "Crítica justa con un fallo real",
+    "Crítica exagerada o con datos falsos",
+    "Reseña de alguien que no es cliente o competencia",
+    "Reseña de una estrella sin texto"
+  ],
+  "reglas_por_tipo": {
+    "elogio": "Agradece, nombra el detalle concreto que menciona y añade un motivo para volver, sin vender",
+    "critica_justa": "Reconoce, di qué has cambiado y lleva la conversación a un canal privado",
+    "exagerada": "Corrige el dato con hechos y tono tranquilo, sin desmentir a gritos ni ironía",
+    "no_cliente": "Responde con educación, indica que no encuentras el pedido y pide datos para revisarlo",
+    "sin_texto": "Respuesta breve invitando a contarte qué falló"
+  },
+  "restricciones": [
+    "Nunca dar datos personales, nº de pedido, importes ni detalles del caso en público",
+    "Máximo 70 palabras",
+    "Sin sarcasmo, sin discutir y sin repetir la acusación dentro de tu respuesta",
+    "No prometer compensaciones en público"
+  ],
+  "formato_salida": {
+    "tipo": "clasificación + 3 versiones",
+    "detalle": "Di de qué tipo es la reseña, da 3 respuestas (breve, media y con solución) y una nota de si conviene reportarla al portal"
+  },
+  "criterios_calidad": [
+    "Quien lea la reseña y la respuesta se queda más tranquilo que antes",
+    "No se puede recortar ninguna frase para usarla contra el negocio"
+  ]
+}

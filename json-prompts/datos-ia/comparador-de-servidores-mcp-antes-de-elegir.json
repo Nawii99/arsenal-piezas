@@ -1,0 +1,46 @@
+{
+  "tarea": "Compara los servidores MCP candidatos que te doy para una misma necesidad y recomiéndame uno, explicando en qué caso me convendría el segundo",
+  "necesidad": {
+    "que_quiero_que_haga_el_agente": "[DESCRIBE LA TAREA CONCRETA]",
+    "herramienta_o_servicio_a_conectar": "[EJ: NOTION, STRIPE, POSTGRES, GOOGLE CALENDAR]",
+    "acciones_imprescindibles": ["[ACCIÓN 1]", "[ACCIÓN 2]", "[ACCIÓN 3]"],
+    "volumen_estimado": "[EJ: 200 CONSULTAS AL DÍA]",
+    "presupuesto_mensual": "[EJ: 0 EUROS / HASTA 30 EUROS]",
+    "acepto_conectores_no_oficiales": "[SÍ / NO]",
+    "cliente_donde_lo_usaré": "[EJ: CLAUDE DESKTOP, CLAUDE CODE, N8N, CURSOR]"
+  },
+  "candidatos": [
+    {"nombre": "[NOMBRE 1]", "enlace": "[URL O REPOSITORIO]"},
+    {"nombre": "[NOMBRE 2]", "enlace": "[URL O REPOSITORIO]"},
+    {"nombre": "[NOMBRE 3]", "enlace": "[URL O REPOSITORIO]"}
+  ],
+  "criterios_con_peso": [
+    {"criterio": "Cubre las acciones imprescindibles", "peso": 30},
+    {"criterio": "Mantenimiento vivo: último cambio, incidencias abiertas, quién hay detrás", "peso": 20},
+    {"criterio": "Seguridad: qué permisos pide, dónde viajan los datos, si guarda credenciales", "peso": 20},
+    {"criterio": "Facilidad de instalación y configuración sin perfil técnico", "peso": 15},
+    {"criterio": "Documentación y ejemplos claros", "peso": 10},
+    {"criterio": "Coste total, incluyendo la API del servicio conectado", "peso": 5}
+  ],
+  "instrucciones": [
+    "Rellena una ficha por candidato: quién lo mantiene, si es oficial del fabricante, qué herramientas expone y cuáles escriben datos",
+    "Puntúa cada criterio de 0 a 10 y calcula la nota ponderada",
+    "Marca cualquier señal de alarma: sin actualizar en meses, pide credenciales de administrador, sin licencia clara, autor anónimo, poca actividad",
+    "Si un dato no lo puedes verificar, escribe 'no verificado' en vez de suponerlo"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "Recomendación en 3 líneas y por qué",
+      "Tabla comparativa: Criterio | Peso | Candidato 1 | Candidato 2 | Candidato 3",
+      "Ficha corta de cada candidato con sus señales de alarma",
+      "En qué situación cambiaría mi recomendación",
+      "Prueba de 20 minutos para confirmar la elección antes de comprometerme"
+    ]
+  },
+  "criterios_calidad": [
+    "Ningún dato inventado: lo no verificable aparece como no verificado",
+    "La recomendación se sostiene en los criterios de más peso",
+    "Queda claro qué acción de mi lista no cubre cada candidato"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Hacerme una prueba de nivel de [IDIOMA] por fases y darme al final un diagnostico con mi nivel MCER aproximado y mi plan de ataque",
+  "contexto": {
+    "idioma": "[IDIOMA]",
+    "uso_previsto": "[PARA QUÉ LO QUIERES: trabajo, examen oficial, viajar, ocio]",
+    "historial": "[CUÁNTO TIEMPO LLEVAS Y CÓMO LO HAS ESTUDIADO]",
+    "duracion_prueba": "[MINUTOS QUE QUIERES DEDICAR, por ejemplo 20]"
+  },
+  "como_debe_desarrollarse": [
+    "Trabaja por fases y espera siempre mi respuesta antes de seguir: no me des el examen entero de golpe",
+    "Fase 1: 8 preguntas de gramatica y uso de dificultad creciente, de A1 a C1, de opcion multiple",
+    "Fase 2: un texto corto adaptado a lo que fallo en la fase 1, con 4 preguntas de comprension abiertas",
+    "Fase 3: dos preguntas de produccion escrita, una cotidiana y otra de opinion, de 40 a 60 palabras cada una",
+    "Fase 4: tres preguntas de expresion oral que respondo escribiendo tal cual las diria, para ver mi soltura",
+    "Ajusta la dificultad sobre la marcha: si acierto todo, sube; si fallo dos seguidas, baja"
+  ],
+  "restricciones": [
+    "No me digas si acierto o fallo hasta el final de cada fase",
+    "Nada de preguntas trampa ni vocabulario rebuscado que no mida nivel real",
+    "Los enunciados en espanol, el contenido de las preguntas en [IDIOMA]",
+    "No infles el resultado por amabilidad"
+  ],
+  "informe_final": {
+    "nivel_estimado": "nivel MCER global mas la horquilla, por ejemplo B1 alto rozando B2",
+    "desglose": "nivel por destreza: gramatica, vocabulario, comprension lectora, expresion escrita y soltura",
+    "lo_que_ya_dominas": "lista de 5 puntos",
+    "tus_5_agujeros": "los fallos concretos ordenados por lo que mas te frena, con un ejemplo mio de cada uno",
+    "que_estudiar_primero": "los 3 temas por orden y por que ese orden",
+    "tiempo_estimado": "cuantas semanas de estudio te separan del siguiente nivel segun horas semanales",
+    "equivalencias": "a que nota rondaria en los examenes oficiales de ese idioma"
+  },
+  "criterios_calidad": [
+    "El diagnostico se apoya en respuestas concretas mias, citandolas",
+    "El nivel se da con honestidad, aunque sea mas bajo de lo que espero",
+    "El plan de ataque cabe en media pagina y es accionable manana"
+  ]
+}

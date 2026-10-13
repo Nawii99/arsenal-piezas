@@ -1,0 +1,38 @@
+{
+  "tarea": "Crear las plantillas de mensaje de todo el proceso de devolución, cambio o garantía",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "tipo_producto": "[QUÉ VENDES]",
+    "venta": "[ONLINE / TIENDA FÍSICA / AMBAS]"
+  },
+  "politica": {
+    "plazo_devolucion": "[DÍAS DESDE LA ENTREGA]",
+    "estado_exigido": "[SIN USAR, CON ETIQUETA, EN SU CAJA...]",
+    "quien_paga_el_envio": "[CLIENTE / NOSOTROS / SEGÚN EL MOTIVO]",
+    "plazo_reembolso": "[DÍAS DESDE QUE LO RECIBIMOS]",
+    "excepciones": "[PRODUCTOS PERSONALIZADOS, HIGIENE, OFERTAS FINALES...]",
+    "garantia": "[AÑOS Y QUÉ CUBRE]"
+  },
+  "plantillas_a_generar": [
+    "P1 Acuse: confirmas que has recibido la solicitud y pides lo que falta (fotos, nº de pedido, motivo)",
+    "P2 Aprobada: instrucciones paso a paso para devolver, con dirección y etiqueta",
+    "P3 Denegada: no cumple condiciones, con el motivo y una alternativa",
+    "P4 Cambio en vez de devolución: cómo proponerlo sin presionar",
+    "P5 Garantía en curso: plazos de revisión y qué pasa mientras",
+    "P6 Reembolso hecho: importe, método y cuándo lo verá en su cuenta"
+  ],
+  "reglas": [
+    "Cada plantilla lleva la condición aplicable en una sola frase, sin lenguaje legal",
+    "Si el motivo es un fallo nuestro, el envío no lo paga el cliente y se dice explícitamente",
+    "Numera los pasos que debe hacer el cliente: máximo tres",
+    "No cites artículos de ley salvo que yo te lo pida"
+  ],
+  "formato_salida": {
+    "tipo": "seis plantillas numeradas",
+    "por_plantilla": "asunto, texto, datos a rellenar, versión corta para WhatsApp"
+  },
+  "criterios_calidad": [
+    "El cliente puede completar la devolución sin escribir otra vez",
+    "Las condiciones dichas coinciden exactamente con la política que te he dado"
+  ]
+}

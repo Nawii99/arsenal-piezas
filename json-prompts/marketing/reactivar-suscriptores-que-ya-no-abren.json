@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar una campaña de reactivación de suscriptores inactivos y la limpieza posterior de la lista",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO Y QUÉ VENDE]",
+    "frecuencia_envios": "[CADA CUÁNTO ENVÍAS]",
+    "definicion_inactivo": "[MESES SIN ABRIR NI HACER CLIC, POR EJEMPLO 4]",
+    "tamano_segmento": "[NÚMERO APROXIMADO DE INACTIVOS]",
+    "que_recibian": "[QUÉ CONTENIDO LES ENVIABAS HASTA AHORA]",
+    "incentivo": "[QUÉ LES OFRECES PARA VOLVER, O NINGUNO]"
+  },
+  "secuencia": [
+    "Email 1: sinceridad. Reconoce que hace tiempo que no interactúan y pregunta si quieren seguir, con dos botones claros",
+    "Email 2, tres días después: recuerda el valor. Los 3 mejores contenidos o ventajas que se han perdido",
+    "Email 3, siete días después: despedida educada avisando de la baja automática y con un último botón para quedarse"
+  ],
+  "reglas": [
+    "Tono humano y sin drama, nada de te vamos a echar de menos exagerado",
+    "Ofrece siempre bajar la frecuencia como alternativa a darse de baja",
+    "Prohibido usar asuntos engañosos tipo respuesta o reenvío",
+    "Envía en horarios distintos a los habituales para probar otra franja"
+  ],
+  "plan_de_limpieza": [
+    "Qué hacer con quien abre pero no hace clic",
+    "Cuándo eliminar definitivamente y cómo guardar registro por si acaso",
+    "Cómo evitar volver a acumular inactivos: revisión cada cuántos meses"
+  ],
+  "formato_salida": {
+    "emails": ["momento", "asunto", "preencabezado", "cuerpo", "botones"],
+    "tabla_decision": "Qué segmento se queda, cuál baja de frecuencia y cuál se elimina, con el criterio de cada uno",
+    "resumen": "5 líneas explicando qué esperar de la campaña y qué mirar a los 15 días"
+  },
+  "criterios_calidad": [
+    "El suscriptor no se siente presionado ni engañado en ningún momento",
+    "Los tres emails se pueden programar sin tocar nada más que el nombre del negocio",
+    "La limpieza está descrita paso a paso, sin dar por hecho conocimientos técnicos"
+  ]
+}

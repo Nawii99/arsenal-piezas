@@ -1,0 +1,89 @@
+# rescate-pacientes-inactivos…
+
+**Tipo:** JSON prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
+
+Campaña para recuperar pacientes o clientes que dejaron de venir, segmentada por el motivo real del abandono y con los mensajes ya escritos.
+
+## Qué es y qué hace
+
+JSON prompt que diseña una campaña de recuperación de pacientes inactivos: segmenta el listado por motivo de abandono, propone un calendario de envíos por días y redacta los mensajes listos para enviar. Se pega en cualquier chat de IA; por ejemplo, en una clínica de fisioterapia con huecos en agenda.
+
+## Cómo usarla
+
+1. Copia el JSON
+2. Rellena centro, servicios y listado de inactivos
+3. Pégalo en la IA
+4. Envía los mensajes por el canal elegido
+5. Que lo revise un profesional
+
+## Cuándo usarla
+
+Úsalo cuando tengas agenda con huecos y una base de datos de gente que vino alguna vez y ya no aparece, y quieras recuperarla sin bajar precios.
+
+## Cómo ganar dinero con ella
+
+Llenar huecos con clientes que ya te conocen cuesta mucho menos que captar nuevos: es facturación de agenda que hoy se queda vacía.
+
+- Campaña de reactivación de pacientes para clínicas y centros de estética…
+- Recuperación de clientes dormidos por WhatsApp para gimnasios…
+- Servicio mensual de seguimiento de bases de clientes inactivos…
+
+**Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
+
+> **Aviso:** toca un tema delicado (salud, legal, finanzas o seguridad). Úsala como ayuda y que un profesional revise el resultado antes de entregarlo.
+
+## El JSON prompt
+
+```json
+{
+  "tarea": "Diseñar una campaña de recuperación de pacientes o clientes inactivos de un centro de salud o bienestar, segmentada por motivo de abandono, con mensajes listos para enviar y un plan de envío por días",
+  "contexto": {
+    "tipo_de_centro": "[FISIOTERAPIA / DENTAL / PODOLOGÍA / NUTRICIÓN / PSICOLOGÍA / ESTÉTICA / GIMNASIO]",
+    "ciudad_o_barrio": "[CIUDAD O BARRIO]",
+    "servicios_y_precio": "[SERVICIO 1 - PRECIO; SERVICIO 2 - PRECIO; SERVICIO 3 - PRECIO]",
+    "canales": "[WHATSAPP / SMS / EMAIL / LLAMADA]",
+    "quien_firma": "[NOMBRE Y CARGO DE QUIEN ENVÍA, EJ: LAURA, RECEPCIÓN]",
+    "tono": "cercano, de tú, sin urgencia falsa y sin lenguaje comercial agresivo"
+  },
+  "entradas": {
+    "listado_inactivos": "[PEGA AQUÍ UNA FILA POR PERSONA: NOMBRE, FECHA ÚLTIMA VISITA, SERVICIO, GASTO TOTAL, SI DEJÓ EL TRATAMIENTO A MEDIAS, SI HUBO QUEJA]",
+    "meses_sin_venir_minimo": "[6]",
+    "huecos_libres_por_semana": "[NÚMERO DE HUECOS VACÍOS QUE PUEDES LLENAR]",
+    "incentivo_permitido": "[NINGUNO / REVISIÓN DE SEGUIMIENTO SIN COSTE / DESCUENTO EN BONO / PRIORIDAD DE AGENDA]",
+    "prohibiciones_del_centro": "[LO QUE NO SE PUEDE OFRECER NI PROMETER]"
+  },
+  "procedimiento": [
+    "1. Clasifica cada persona en uno de estos cinco grupos y no mezcles mensajes entre grupos",
+    "2. Grupo A tratamiento interrumpido a mitad: el mensaje pregunta por el estado y ofrece retomar donde lo dejó, nunca vende otra cosa",
+    "3. Grupo B alta correcta hace más de doce meses: el mensaje ofrece revisión o mantenimiento, recordando cuándo tocaba según su pauta",
+    "4. Grupo C vino una sola vez y no volvió: el mensaje asume que algo no encajó y pregunta abiertamente qué falló, sin ofrecer nada todavía",
+    "5. Grupo D gasto histórico alto: mensaje personal, escrito por el profesional que le atendió, sin promoción",
+    "6. Grupo E hubo queja o incidencia: mensaje de disculpa concreta y propuesta de arreglo, revisado por el responsable antes de enviar",
+    "7. Para cada grupo escribe el mensaje principal (máximo 60 palabras), una única pregunta final que se pueda responder con una palabra, y un recordatorio para enviar a los cuatro días si no contesta",
+    "8. Reparte los envíos en tandas diarias que no superen los huecos libres de la semana, para no prometer citas que no tienes",
+    "9. Escribe las respuestas preparadas para los cuatro casos que van a llegar: quiere cita, quiere precio, dice que ya va a otro sitio, dice que no le interesa",
+    "10. Define cómo se marca cada resultado en la ficha para no volver a escribir a quien pidió no ser molestado"
+  ],
+  "restricciones": [
+    "Nunca des consejo clínico, diagnóstico ni interpretación de síntomas en el mensaje: si la persona cuenta un problema, la respuesta es ofrecer una cita de valoración",
+    "No menciones en el mensaje el diagnóstico, la patología ni el detalle del tratamiento: solo la fecha de la última visita y el servicio de forma genérica",
+    "No uses cuentas atrás, plazas falsas ni descuentos que no se hayan aprobado",
+    "Incluye siempre una salida fácil: una frase para que la persona pida no recibir más mensajes",
+    "Escribe en español de España, de tú, frases cortas y sin tecnicismos"
+  ],
+  "errores_tipicos": [
+    "Mandar el mismo mensaje a los cinco grupos: baja la respuesta y molesta a quien tuvo una mala experiencia",
+    "Enviar a las 22:00 o en domingo: escribe en horario de apertura del centro",
+    "Abrir con un descuento: quema margen con gente que habría vuelto igual",
+    "Lanzar 400 mensajes de golpe con la agenda llena y no poder atender las respuestas",
+    "Escribir datos de salud en el mensaje, que puede leer cualquiera que coja el móvil"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de segmentación: grupo, criterio, número de personas, mensaje asignado",
+    "bloque_2": "Los cinco mensajes principales y sus cinco recordatorios, cada uno listo para copiar y pegar",
+    "bloque_3": "Calendario de envío por días con cuántos mensajes salen cada día",
+    "bloque_4": "Respuestas preparadas a las cuatro reacciones más probables",
+    "bloque_5": "Checklist de tres comprobaciones antes de pulsar enviar"
+  },
+  "criterios_calidad": [
+```

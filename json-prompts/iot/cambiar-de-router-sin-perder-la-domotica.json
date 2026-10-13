@@ -1,0 +1,50 @@
+{
+  "tarea": "Preparar y ejecutar un cambio de router, de operadora o de contraseña wifi sin perder el control de los dispositivos conectados",
+  "contexto": {
+    "perfil": "Persona sin perfil técnico con una casa o local lleno de aparatos conectados",
+    "motivo": "[CAMBIO DE OPERADORA / ROUTER NUEVO / CAMBIO DE CONTRASEÑA / MUDANZA / AVERÍA DEL ROUTER]"
+  },
+  "entradas": {
+    "dispositivos": "[LISTA POR TIPO Y CANTIDAD: enchufes, bombillas, cámaras, hub, robot, televisor, altavoces, impresora, alarma]",
+    "router_actual": "[NOMBRE DE RED, SI LAS BANDAS ESTÁN SEPARADAS, IPS FIJAS ASIGNADAS]",
+    "router_nuevo": "[MARCA Y MODELO SI SE CONOCE]",
+    "fecha": "[CUÁNDO SE HACE EL CAMBIO Y CUÁNTAS HORAS HAY DISPONIBLES]"
+  },
+  "pasos": [
+    "1. El truco que ahorra toda la faena: configurar el router nuevo con el mismo nombre de red y la misma contraseña que el viejo. La mayoría de los aparatos se reconectan solos sin tocar nada.",
+    "2. Comprueba si ese truco vale en tu caso: si el nombre viejo estaba duplicado para 2,4 y 5 GHz, aprovecha para separar las bandas, pero entonces asume que habrá que dar de alta de nuevo los aparatos de 2,4 GHz.",
+    "3. Haz el inventario previo y clasifica los aparatos en tres grupos: se reconectan solos, hay que meterlos otra vez desde la app, y hay que resetear físicamente con un botón.",
+    "4. Guarda antes lo que se pierde: escenas y automatizaciones del hub, listado de cámaras y grabaciones, reservas de IP fija, y usuarios que tienen acceso compartido.",
+    "5. Localiza los aparatos difíciles antes del día D: los que están en falso techo, en alto, detrás de muebles o cuyo botón de reset exige escalera. Prevé quién los alcanza.",
+    "6. Ordena el arranque: primero el hub y los aparatos con cable, luego cámaras y enchufes, y al final bombillas y sensores. Encender todo a la vez satura el router y confunde el diagnóstico.",
+    "7. Recupera las IP fijas en el router nuevo antes de encender las cámaras, o algunas apps dejarán de encontrarlas.",
+    "8. Reserva un plan de vuelta atrás: no devuelvas el router viejo hasta que todo lleve 48 horas funcionando.",
+    "9. Cierra con la ronda de verificación aparato por aparato y con las automatizaciones probadas de verdad, no solo mirando si aparecen en línea."
+  ],
+  "restricciones": [
+    "No hacer el cambio un viernes por la tarde ni antes de irse de viaje",
+    "No borrar cuentas ni desvincular aparatos antes de tener el router nuevo funcionando",
+    "Cada paso indica cuánto tarda y si necesita escalera o dos personas",
+    "Si hay alarma conectada, avisar a la empresa antes de cortar"
+  ],
+  "errores_tipicos": [
+    "Poner un nombre de red nuevo por costumbre y tener que dar de alta cuarenta aparatos",
+    "Olvidar las reservas de IP y perder el acceso a las cámaras",
+    "Devolver el router antiguo el mismo día y quedarse sin la configuración anterior",
+    "Dar por bueno que un enchufe está en línea sin probar si responde"
+  ],
+  "formato_salida": {
+    "1_decision": "Mismo nombre de red o cambio, con la razón",
+    "2_checklist_previo": "Qué guardar y anotar antes de tocar nada",
+    "3_grupos": "Tabla: dispositivo | grupo (solo, app, reset físico) | dificultad de acceso",
+    "4_orden_del_dia": "Secuencia paso a paso con tiempos",
+    "5_verificacion": "Ronda de comprobación con qué se prueba en cada aparato",
+    "6_plan_b": "Qué hacer si algo no vuelve, y cómo volver atrás"
+  },
+  "criterios_calidad": [
+    "Se evalúa explícitamente la opción de mantener el mismo nombre y contraseña",
+    "Todos los aparatos quedan asignados a un grupo",
+    "Existe verificación funcional, no solo comprobación de que aparecen en línea",
+    "Hay plan de vuelta atrás con plazo"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Preparar el traspaso de una tarea mía a otra persona, con formación, límites de decisión y control de calidad",
+  "rol": "Jefe de equipo con experiencia formando a gente nueva en negocios pequeños",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "tarea_a_delegar": "[QUÉ TAREA SUELTAS]",
+    "quien_la_recibe": "[NOMBRE O PERFIL, EXPERIENCIA Y HORAS DISPONIBLES]",
+    "relacion": "[EMPLEADO, AUTÓNOMO EXTERNO O BECARIO]",
+    "riesgo_si_sale_mal": "[QUÉ PASA SI LA LÍA: DINERO, CLIENTE, IMAGEN]"
+  },
+  "entradas": {
+    "como_lo_haces_tu": "[EXPLICA TU FORMA DE HACERLO Y TUS MANÍAS]",
+    "decisiones_que_puede_tomar_solo": "[HASTA DÓNDE PUEDE LLEGAR SIN PREGUNTARTE]",
+    "definicion_de_bien_hecho": "[CÓMO SABES QUE UN TRABAJO ESTÁ BIEN]"
+  },
+  "instrucciones": [
+    "Divide la tarea en partes y propón un traspaso en 4 etapas: yo lo hago y miras, lo hacemos juntos, lo haces y reviso, lo haces solo",
+    "Indica para cada etapa cuánto dura, qué tiene que demostrar la persona para pasar a la siguiente y qué reviso yo",
+    "Escribe la lista de decisiones que puede tomar sola, las que consulta y las que nunca toma",
+    "Define el control de calidad: qué se revisa, cada cuánto y con qué checklist de 5 puntos como máximo",
+    "Prepara las 8 preguntas que le voy a hacer para comprobar que ha entendido la tarea",
+    "Anticipa los 5 fallos más probables de alguien nuevo y cómo prevenirlos",
+    "Propón cómo dar la reunión de seguimiento semanal en 15 minutos"
+  ],
+  "restricciones": [
+    "Nada de microgestión: el plan debe reducir mi intervención con el tiempo",
+    "El lenguaje del material debe entenderlo alguien sin experiencia previa",
+    "No inventes normas laborales ni condiciones de contrato"
+  ],
+  "formato_salida": {
+    "tipo": "plan en markdown con calendario de etapas",
+    "secciones": ["Plan de traspaso en 4 etapas", "Qué decide solo y qué consulta", "Checklist de calidad", "Preguntas de comprobación", "Fallos probables y cómo evitarlos", "Guion de la reunión semanal"]
+  },
+  "criterios_calidad": [
+    "Al final del plan yo dedico menos tiempo del que dedicaba antes",
+    "Los límites de decisión son concretos, con cifras o casos",
+    "Cada etapa tiene una prueba clara para avanzar"
+  ]
+}

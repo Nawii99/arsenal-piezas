@@ -1,0 +1,40 @@
+{
+  "tarea": "Redactar la comunicación de modificación de precios o condiciones a clientes con contrato o cuota recurrente, respetando el preaviso pactado",
+  "entradas": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "servicio": "[QUÉ SERVICIO O CUOTA SE MODIFICA]",
+    "precio_actual": "[IMPORTE Y PERIODICIDAD]",
+    "precio_nuevo": "[IMPORTE Y PERIODICIDAD]",
+    "fecha_efecto": "[DD/MM/AAAA]",
+    "preaviso_del_contrato": "[DÍAS DE PREAVISO QUE EXIGE TU CONTRATO O 'NO ESTÁ PACTADO']",
+    "motivo": "[SUBIDA DE COSTES, MÁS HORAS INCLUIDAS, NUEVA VERSIÓN DEL SERVICIO]",
+    "que_mejora_el_cliente": "[NOVEDADES O MEJORAS QUE ACOMPAÑAN AL CAMBIO]",
+    "opciones_del_cliente": "[ACEPTAR, CAMBIAR DE PLAN O CANCELAR SIN PENALIZACIÓN]",
+    "segmento": "[TODOS LOS CLIENTES / SOLO LOS ANTIGUOS / SOLO UN PLAN]"
+  },
+  "pasos": [
+    "Comprobar que entre la fecha de envío y la fecha de efecto hay al menos el preaviso indicado y avisar si no llega",
+    "Decir el precio nuevo y la fecha de efecto en las tres primeras líneas, sin rodeos",
+    "Explicar el motivo en una frase honesta, sin excusas largas",
+    "Detallar qué gana el cliente y qué no cambia",
+    "Explicar sus opciones, incluida la de cancelar, y cómo ejercerlas"
+  ],
+  "restricciones": [
+    "Nada de esconder la subida al final ni de eufemismos como 'actualización de tarifas' sin decir la cifra",
+    "No inventar mejoras que el usuario no haya indicado",
+    "Máximo 200 palabras en el email",
+    "Tuteo o usted según indique el usuario; por defecto, usted"
+  ],
+  "formato_salida": {
+    "email": "asunto y cuerpo",
+    "version_whatsapp": "mensaje de 5 líneas con enlace",
+    "faq": "cinco preguntas y respuestas para el equipo que atienda las quejas",
+    "calendario": "fecha límite de envío para cumplir el preaviso"
+  },
+  "criterios_calidad": [
+    "El cliente sabe cuánto pagará y desde cuándo antes de la línea cinco",
+    "Aparecen sus opciones reales, incluida la baja",
+    "No hay letra pequeña ni condiciones ocultas"
+  ],
+  "aviso_legal": "Revisa tu contrato: el preaviso y las condiciones de modificación mandan sobre cualquier modelo"
+}

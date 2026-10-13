@@ -1,0 +1,35 @@
+{
+  "tarea": "Auditar una FAQ existente para detectar información caducada, contradicciones y respuestas que generan reclamaciones",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD]",
+    "ultima_revision": "[FECHA APROXIMADA DE LA ÚLTIMA ACTUALIZACIÓN]",
+    "cambios_recientes": "[QUÉ HA CAMBIADO: PRECIOS, PROVEEDOR, PLAZOS, HORARIOS, PRODUCTOS RETIRADOS]"
+  },
+  "entradas": {
+    "faq_actual": "[PEGA AQUÍ EL TEXTO COMPLETO DE TU FAQ ACTUAL]",
+    "condiciones_vigentes": "[LAS CONDICIONES REALES DE HOY]",
+    "quejas_recibidas": "[QUEJAS O MALENTENDIDOS RECIENTES, SI LOS HAY]"
+  },
+  "procedimiento": [
+    "Revisar una a una las respuestas y clasificarlas en correcta, desactualizada, incompleta, contradictoria o arriesgada",
+    "Marcar como arriesgada toda respuesta que prometa algo que las condiciones vigentes no garantizan",
+    "Cruzar las respuestas entre sí para encontrar contradicciones, por ejemplo plazos distintos en dos preguntas",
+    "Reescribir cada respuesta problemática con las condiciones vigentes y explicar en una línea qué se ha cambiado",
+    "Proponer preguntas que sobran porque ya no aplican y preguntas nuevas que los cambios recientes hacen necesarias"
+  ],
+  "restricciones": [
+    "No tocar las respuestas que ya son correctas",
+    "No suavizar una condición real para que suene mejor",
+    "Señalar como PENDIENTE lo que no se pueda decidir sin datos que no están en las entradas"
+  ],
+  "formato_salida": {
+    "tipo": "informe markdown",
+    "secciones": ["Semáforo resumen con el número de respuestas en cada estado", "Tabla de hallazgos con pregunta, problema, gravedad y arreglo", "Texto nuevo de las respuestas reescritas", "Preguntas a eliminar", "Preguntas a añadir"],
+    "extras": ["Recordatorio de qué revisar cada trimestre y quién lo hace"]
+  },
+  "criterios_calidad": [
+    "Toda respuesta marcada como arriesgada explica qué reclamación podría provocar",
+    "El texto reescrito se puede publicar tal cual",
+    "Ninguna contradicción queda sin resolver"
+  ]
+}

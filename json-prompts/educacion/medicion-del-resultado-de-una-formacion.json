@@ -1,0 +1,44 @@
+{
+  "tarea": "Diseñar la medición del impacto de una formación interna en cuatro niveles: satisfacción, aprendizaje, aplicación y resultado de negocio",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "formacion": "[QUÉ FORMACIÓN SE HA DADO O SE VA A DAR]",
+    "participantes": "[CUÁNTOS Y DE QUÉ PUESTOS]",
+    "coste_total": "[EUROS DE CURSO MÁS HORAS DE TRABAJO INVERTIDAS]",
+    "cambio_esperado": "[QUÉ DEBEN HACER DISTINTO DESPUÉS]"
+  },
+  "entradas": {
+    "indicadores_disponibles": "[DATOS QUE YA MEDÍS: ERRORES, VENTAS, TIEMPOS, QUEJAS, DEVOLUCIONES]",
+    "situacion_de_partida": "[VALOR ACTUAL DE ESOS INDICADORES]",
+    "plazo_de_evaluacion": "[SEMANAS HASTA LA MEDICIÓN FINAL]"
+  },
+  "procedimiento": [
+    "Nivel 1: 5 preguntas de valoración al acabar, ninguna sobre si ha gustado el catering",
+    "Nivel 2: cómo comprobar el aprendizaje antes y después con la misma prueba",
+    "Nivel 3: qué observar en el puesto a las 4 y a las 8 semanas y quién lo observa",
+    "Nivel 4: qué indicador de negocio debería moverse, cuánto y en qué plazo, con la situación de partida como referencia",
+    "Advierte de qué otras causas pueden explicar el cambio del indicador para no atribuirlo todo a la formación",
+    "Define el criterio de decisión: con qué resultados se repite, se rehace o se cancela la formación"
+  ],
+  "restricciones": [
+    "No prometas cifras de retorno: da el método de cálculo con los datos de la empresa",
+    "Ninguna encuesta de más de 6 preguntas",
+    "Solo indicadores que la empresa ya pueda medir sin montar un sistema nuevo"
+  ],
+  "formato_salida": {
+    "tipo": "plan de medición en tablas",
+    "secciones": [
+      "Tabla: Nivel | Qué se mide | Cómo | Cuándo | Responsable",
+      "Encuesta de valoración lista para enviar",
+      "Pauta de observación en el puesto con conductas concretas",
+      "Cálculo del coste total y qué mejora haría falta para compensarlo",
+      "Semáforo de decisión con los tres escenarios posibles"
+    ]
+  },
+  "criterios_calidad": [
+    "Todo lo que se mide tiene fecha y responsable",
+    "El nivel 4 se apoya en un dato que la empresa ya tiene",
+    "Se distingue con honestidad entre lo que demuestra y lo que solo sugiere"
+  ],
+  "tono": "sobrio y honesto, sin vender humo"
+}

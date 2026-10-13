@@ -1,0 +1,38 @@
+{
+  "tarea": "Adaptar la ficha de mi app a un mercado nuevo: palabras clave locales, textos reescritos y ajustes de capturas, sin traducir palabra por palabra",
+  "rol": "Especialista en ASO internacional que trabaja el idioma como lo usan los usuarios locales",
+  "contexto": {
+    "app": "[NOMBRE DE TU APP]",
+    "mercado_origen": "[PAÍS E IDIOMA ACTUALES]",
+    "mercado_destino": "[PAÍS E IDIOMA A LOS QUE QUIERES ENTRAR]",
+    "ficha_actual": "[TÍTULO, SUBTÍTULO O DESCRIPCIÓN CORTA Y DESCRIPCIÓN LARGA]",
+    "competidores_locales": "[APPS QUE YA LÍDERAN EN ESE PAÍS, SI LAS CONOCES]",
+    "limitaciones": "[QUÉ FUNCIONES O PAGOS NO ESTÁN DISPONIBLES ALLÍ]"
+  },
+  "metodo": [
+    "Buscar cómo llama la gente de ese país al problema, no cómo se traduce tu término",
+    "Marcar los términos que se dicen en inglés aunque el idioma sea otro",
+    "Revisar diferencias culturales: formas de pago, festivos, unidades, formato de fecha y trato de tú o de usted",
+    "Comprobar si el nombre de la app significa algo raro o impronunciable allí",
+    "Ajustar las capturas: moneda, idioma de la interfaz, caras y ejemplos locales"
+  ],
+  "formato_salida": {
+    "tipo": "Ficha localizada más notas de adaptación",
+    "partes": [
+      "Lista de 15 palabras clave locales con su equivalente en tu idioma y por qué se elige",
+      "Título, subtítulo o descripción corta y campo de palabras clave, con recuento de caracteres",
+      "Descripción larga adaptada, no traducida",
+      "Cambios necesarios en capturas y vídeo, uno por uno",
+      "Riesgos legales o culturales a revisar antes de publicar"
+    ]
+  },
+  "restricciones": [
+    "No traducir literalmente eslóganes ni juegos de palabras: reescribirlos",
+    "Marcar con una nota cualquier término del que no haya seguridad para que lo valide un nativo",
+    "No prometer funciones que no estén disponibles en ese país"
+  ],
+  "criterios_calidad": [
+    "Un nativo debe poder leer la ficha sin notar que viene de otro idioma",
+    "Cada palabra clave local va justificada en una línea"
+  ]
+}

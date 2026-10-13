@@ -1,0 +1,41 @@
+{
+  "tarea": "Redactar todas las comunicaciones de un incidente de seguridad adaptadas a cada publico",
+  "rol": "Responsable de comunicacion de crisis que trabaja con el equipo tecnico y con el asesor legal",
+  "contexto": {
+    "empresa": "[NOMBRE COMERCIAL]",
+    "que_ha_pasado_version_confirmada": "[SOLO LO QUE ESTA CONFIRMADO, SIN SUPOSICIONES]",
+    "datos_o_servicios_afectados": "[QUE DATOS O QUE SERVICIOS SE HAN VISTO AFECTADOS Y CUALES NO]",
+    "medidas_tomadas": "[QUE HAS HECHO YA PARA RESOLVERLO]",
+    "que_debe_hacer_el_cliente": "[CAMBIAR CONTRASENA, REVISAR CARGOS, DESCONFIAR DE CORREOS EN TU NOMBRE...]",
+    "estado_actual": "[RESUELTO / EN CURSO / EN INVESTIGACION]",
+    "canal_de_contacto": "[EMAIL O TELEFONO PARA DUDAS]"
+  },
+  "entregables": [
+    "Email a clientes afectados, maximo 250 palabras",
+    "Mensaje corto de WhatsApp o SMS, maximo 40 palabras",
+    "Comunicado interno para el equipo con instrucciones concretas",
+    "Email a proveedores o socios cuyos sistemas puedan verse implicados",
+    "Respuesta breve para redes sociales y para resenas",
+    "Guion de 8 lineas para atender llamadas, con las 5 preguntas mas probables y su respuesta"
+  ],
+  "instrucciones": [
+    "Empieza cada mensaje diciendo que ha pasado, no con disculpas de relleno",
+    "Di siempre que datos NO se han visto afectados si eso esta confirmado, porque reduce la alarma",
+    "Incluye una accion clara para el destinatario y un plazo",
+    "Evita el lenguaje que suene a admision de culpa o a minimizacion; describe hechos",
+    "Advierte de que la empresa nunca pedira contrasenas ni codigos por telefono, para prevenir el fraude derivado",
+    "Marca entre corchetes lo que deba revisar un abogado antes de enviar"
+  ],
+  "restricciones": [
+    "Nada de tecnicismos ni de culpar a un proveedor con nombre y apellidos",
+    "No prometas plazos de resolucion que no me hayas pedido confirmar",
+    "Sin emojis y sin exclamaciones"
+  ],
+  "formato_salida": "Un bloque por entregable, con titulo, asunto cuando aplique y el texto listo para copiar",
+  "criterios_calidad": [
+    "Un cliente entiende en 20 segundos si le afecta y que tiene que hacer",
+    "Ningun mensaje contiene informacion que no este en el contexto confirmado",
+    "El tono es el mismo en todos los canales"
+  ],
+  "tono": "Honesto, sobrio, cercano, tuteando al cliente"
+}

@@ -1,0 +1,41 @@
+{
+  "tarea": "Preparar el guion completo de una llamada telefónica para reclamar una factura vencida y cerrar un compromiso de pago con fecha",
+  "contexto": {
+    "empresa": "[TU EMPRESA]",
+    "quien_llama": "[TU NOMBRE Y CARGO]",
+    "interlocutor": "[NOMBRE Y PUESTO: ADMINISTRACIÓN, GERENCIA, COMPRAS]",
+    "quiero_seguir_trabajando_con_el": "[SÍ / NO]"
+  },
+  "entradas": {
+    "factura": "[NÚMERO, IMPORTE Y FECHA DE VENCIMIENTO]",
+    "dias_de_retraso": "[NÚMERO DE DÍAS]",
+    "gestiones_previas": "[QUÉ EMAILS O MENSAJES LE HAS ENVIADO Y QUÉ TE HA CONTESTADO]",
+    "margen_de_negociacion": "[PAGO FRACCIONADO SÍ/NO, DESCUENTO SÍ/NO, PLAZO MÁXIMO QUE ACEPTAS]"
+  },
+  "pasos": [
+    "Escribir la apertura: quién eres, motivo en una frase y pregunta abierta sobre el estado de la factura",
+    "Escribir la pregunta clave que obliga a concretar fecha e importe",
+    "Preparar respuestas para las excusas típicas: no la hemos recibido, está en revisión, el jefe no está, no hay dinero, pagamos por remesas",
+    "Escribir el cierre con compromiso: fecha, importe y confirmación por escrito después de la llamada",
+    "Redactar el email de resumen que se envía justo al colgar"
+  ],
+  "reglas": [
+    "Nunca amenazar, gritar ni acusar: el objetivo es cobrar y, si procede, conservar al cliente",
+    "No colgar sin fecha concreta o sin un siguiente paso con día y hora",
+    "Escuchar más que hablar: incluir pausas marcadas en el guion",
+    "Si el cliente reconoce la deuda, pedir que lo confirme por escrito"
+  ],
+  "formato_salida": {
+    "guion": "Bloques numerados con lo que dices tú, en frases habladas y cortas",
+    "objeciones": "Tabla: excusa del cliente, respuesta y pregunta de seguimiento",
+    "cierre": "Frase exacta para fijar el compromiso",
+    "email_posterior": "Texto breve de confirmación de lo acordado",
+    "ficha_de_registro": "Campos a anotar tras la llamada: fecha, persona, compromiso y próximo aviso"
+  },
+  "criterios_calidad": [
+    "Suena a persona hablando, no a texto leído",
+    "Cada objeción tiene salida sin ceder de más",
+    "La llamada termina siempre con una fecha por escrito"
+  ],
+  "tono": "Cordial, seguro y firme"
+}

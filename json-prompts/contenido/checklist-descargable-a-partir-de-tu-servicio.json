@@ -1,0 +1,45 @@
+{
+  "tarea": "Convertir un proceso profesional en una checklist descargable de 1 o 2 páginas que sirva de lead magnet",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU EMPRESA Y QUÉ VENDES]",
+    "servicio_base": "[EL SERVICIO O PROCESO DEL QUE SALE LA CHECKLIST]",
+    "publico": "[QUIÉN LA VA A DESCARGAR]",
+    "momento_del_cliente": "[ANTES DE CONTRATAR / MIENTRAS COMPARA / DESPUÉS DE UN PROBLEMA]",
+    "accion_deseada": "[LLAMADA GRATIS / PRESUPUESTO / RESPONDER AL EMAIL]"
+  },
+  "entradas": {
+    "pasos_que_sigues": "[LISTA DE LO QUE HACES CON CADA CLIENTE, EN DESORDEN VALE]",
+    "errores_tipicos": "[QUÉ SE LE OLVIDA SIEMPRE AL CLIENTE]",
+    "herramientas": "[QUÉ USAS TÚ: PROGRAMAS, DOCUMENTOS, NORMATIVA]"
+  },
+  "pasos": [
+    "Agrupar los puntos en 3 o 4 bloques con nombre propio y orden cronológico",
+    "Escribir cada punto como una acción verificable que se pueda marcar como hecha",
+    "Añadir a cada bloque un aviso de error frecuente redactado en una línea",
+    "Reservar los 2 o 3 puntos más difíciles y señalar que ahí suele hacer falta ayuda profesional",
+    "Cerrar con un paso final que lleve a la acción deseada"
+  ],
+  "restricciones": [
+    "Entre 15 y 30 puntos en total, ni uno más",
+    "Cada punto en una sola línea, máximo 14 palabras, empezando por verbo",
+    "Sin jerga: si un término técnico es imprescindible, explicarlo entre paréntesis en 5 palabras",
+    "Nada de relleno tipo 'ten una buena actitud'",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "tipo": "markdown listo para pegar en Canva o Google Docs",
+    "estructura": [
+      "Título de portada y subtítulo con la promesa",
+      "Frase de una línea sobre para quién es y para quién no",
+      "Bloques con sus puntos en casillas [ ]",
+      "Recuadro 'los 3 fallos que más caros salen'",
+      "Cierre de 3 líneas con la llamada a la acción y los datos de contacto",
+      "Sugerencia de nombre del archivo PDF"
+    ]
+  },
+  "criterios_calidad": [
+    "Alguien puede usarla hoy mismo sin leer nada más",
+    "Cabe en 2 páginas A4 con letra legible",
+    "Demuestra criterio profesional sin regalar todo el trabajo"
+  ]
+}

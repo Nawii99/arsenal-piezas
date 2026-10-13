@@ -1,0 +1,26 @@
+{
+  "tarea": "generar_locucion_con_voz_ia",
+  "texto": {
+    "contenido": "[PEGA AQUÍ EL TEXTO EXACTO QUE QUIERES QUE DIGA LA VOZ]",
+    "idioma": "es-ES"
+  },
+  "voz": {
+    "tipo": "[FEMENINA / MASCULINA / NEUTRA]",
+    "edad_aproximada": "[JOVEN / ADULTA / MAYOR]",
+    "tono": "[NEUTRO / CERCANO / FORMAL / ENERGICO]",
+    "velocidad": "[LENTA / NORMAL / RAPIDA]"
+  },
+  "emocion": {
+    "principal": "[NEUTRA / ALEGRE / SERIA / EMOCIONADA / TRISTE]",
+    "intensidad": "[BAJA / MEDIA / ALTA]"
+  },
+  "pausas": {
+    "tras_puntos": "normal",
+    "notas": "[INDICA SI QUIERES ALGUNA PAUSA LARGA EN UN PUNTO CONCRETO DEL TEXTO]"
+  },
+  "uso": {
+    "destino": "[VIDEO PROPIO / PODCAST / ANUNCIO / USO PERSONAL]",
+    "es_comercial": "[SI / NO]"
+  },
+  "aviso_legal": "No uses la voz clonada de una persona real sin su permiso expreso por escrito, ni aunque sea para un proyecto pequeño: en España usar la voz de alguien sin consentimiento puede vulnerar su derecho a la propia imagen."
+}

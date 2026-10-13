@@ -1,0 +1,35 @@
+{
+  "tarea": "Crear el protocolo interno de decision de devoluciones para el equipo de atencion al cliente",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR Y TIPO DE PRODUCTO]",
+    "ticket_medio": "[IMPORTE MEDIO DE PEDIDO]",
+    "coste_devolucion": "[COSTE APROXIMADO DE GESTIONAR UNA DEVOLUCION]",
+    "casos_frecuentes": "[LOS 5 MOTIVOS QUE MAS TE LLEGAN]",
+    "limite_autonomia": "[HASTA QUE IMPORTE PUEDE DECIDIR EL EQUIPO SIN CONSULTARTE]"
+  },
+  "debe_incluir": [
+    "Semaforo de decision: VERDE se acepta sin preguntar, AMBAR se acepta con condiciones, ROJO se escala",
+    "Para cada motivo frecuente, la decision por defecto y la frase exacta que se le dice al cliente",
+    "Que preguntas hacer antes de decidir y cuales no preguntar nunca porque suenan a interrogatorio",
+    "Pruebas que se piden segun el caso: foto, video, numero de serie, fecha de compra",
+    "Excepciones comerciales: cliente recurrente, error propio, pedido con incidencia previa",
+    "Errores tipicos a evitar: prometer plazos, discutir por escrito, pedir la caja original sin necesidad"
+  ],
+  "formato_salida": {
+    "1_tabla": "Columnas: Situacion | Decision por defecto | Condiciones | Quien decide | Frase al cliente",
+    "2_arbol": "Arbol de decision en 6 preguntas de si o no, en texto indentado",
+    "3_checklist": "Checklist de 8 puntos para cerrar un caso de devolucion",
+    "4_escalado": "Cuando parar y avisar al responsable, con 4 senales de alarma"
+  },
+  "restricciones": [
+    "Todo cabe en 2 folios",
+    "Nada de teoria, solo instrucciones ejecutables",
+    "Respetar siempre la garantia legal aunque la politica comercial sea mas estricta"
+  ],
+  "criterios_calidad": [
+    "Una persona nueva resuelve el 80 por ciento de los casos sin preguntar",
+    "Cada decision tiene un motivo economico o legal explicito",
+    "No hay ninguna casilla que diga depende"
+  ]
+}

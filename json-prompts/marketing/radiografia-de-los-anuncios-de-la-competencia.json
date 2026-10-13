@@ -1,0 +1,34 @@
+{
+  "tarea": "Analizar los anuncios activos de mis competidores y proponerme ángulos propios para mis campañas",
+  "entradas": {
+    "mi_producto": "[QUÉ VENDES, PRECIO Y A QUIÉN]",
+    "plataforma": "[META, TIKTOK, GOOGLE...]",
+    "presupuesto": "[EUROS AL MES QUE PUEDES INVERTIR]",
+    "anuncios": "[PEGA AQUÍ LOS ANUNCIOS: MARCA, TEXTO, DESCRIPCIÓN DEL CREATIVO Y TIEMPO QUE LLEVAN ACTIVOS]"
+  },
+  "pasos": [
+    "Marca qué anuncios llevan más tiempo activos: suelen ser los que les funcionan",
+    "Clasifica cada anuncio por ángulo: dolor, deseo, precio, miedo, comparación, prueba social, novedad o autoridad",
+    "Extrae el gancho de los primeros segundos o de la primera línea",
+    "Identifica la oferta concreta y la llamada a la acción",
+    "Detecta a qué momento del cliente apunta: no sabe que tiene el problema, compara opciones o está a punto de comprar",
+    "Señala qué ángulos están saturados y cuáles no usa nadie"
+  ],
+  "restricciones": [
+    "No copiar textos ni creatividades: propuestas originales",
+    "No prometer resultados ni inventar métricas de sus campañas",
+    "Respetar lo que la normativa española permite prometer en mi sector"
+  ],
+  "formato_salida": {
+    "1_tabla": "Marca, ángulo, gancho, oferta, llamada a la acción, tiempo activo, momento del cliente",
+    "2_patrones": "Qué repiten todos y qué se puede deducir de ello",
+    "3_saturado_vs_libre": "Ángulos quemados y ángulos libres en mi sector",
+    "4_propuestas": "6 anuncios míos: ángulo, gancho de una línea, texto de 50 palabras, idea visual y a quién van dirigidos",
+    "5_plan_de_prueba": "Cómo repartir el presupuesto para probarlos y qué mirar para decidir"
+  },
+  "criterios_calidad": [
+    "Cada propuesta indica en qué se diferencia de lo que ya está corriendo",
+    "Los ganchos son concretos y sin promesas imposibles",
+    "El plan de prueba cabe dentro del presupuesto indicado"
+  ]
+}

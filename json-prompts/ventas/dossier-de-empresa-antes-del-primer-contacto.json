@@ -1,0 +1,39 @@
+{
+  "tarea": "Preparar un dossier de una página sobre una empresa concreta para personalizar el primer contacto comercial",
+  "entradas": {
+    "empresa_objetivo": "[NOMBRE DE LA EMPRESA]",
+    "web_y_redes": "[URL DE LA WEB Y PERFILES]",
+    "lo_que_yo_vendo": "[TU SERVICIO O PRODUCTO EN UNA FRASE]",
+    "resultado_tipico_que_consigo": "[RESULTADO CONCRETO EN CLIENTES PARECIDOS]",
+    "informacion_que_ya_tengo": "[NOTAS, CONTACTO PREVIO, QUIÉN ME LOS RECOMENDÓ]",
+    "persona_objetivo": "[CARGO CON EL QUE QUIERES HABLAR]"
+  },
+  "pasos": [
+    "Resumir a qué se dedican, a quién venden y cómo ganan dinero",
+    "Detectar señales recientes: contrataciones, aperturas, cambios de web, notas de prensa, reseñas nuevas",
+    "Listar tres problemas plausibles relacionados con lo que vendo, cada uno con la pista concreta que lo sugiere",
+    "Identificar quién decide y quién influye, con el cargo y cómo llegar a esa persona",
+    "Proponer el mejor gancho de entrada: el detalle concreto por el que empezar el mensaje",
+    "Marcar los riesgos: motivos por los que quizá no sea un buen prospecto"
+  ],
+  "restricciones": [
+    "Separa siempre HECHO (lo has visto en una fuente) de SUPOSICIÓN, y marca cada línea con una de las dos etiquetas",
+    "Cita la fuente o la URL de cada hecho",
+    "No inventes nombres de personas ni cifras de facturación",
+    "Máximo una página"
+  ],
+  "formato_salida": {
+    "cabecera": "Empresa, sector, tamaño estimado, zona",
+    "que_hacen": "3 líneas",
+    "senales_recientes": "Lista con fecha y fuente",
+    "hipotesis_de_dolor": "Tabla: problema | pista que lo sugiere | cómo lo resuelvo yo",
+    "a_quien_hablar": "Cargo, por qué esa persona y canal recomendado",
+    "gancho_de_entrada": "Una frase literal para abrir el mensaje",
+    "semaforo": "Verde, ámbar o rojo con una línea de justificación"
+  },
+  "criterios_calidad": [
+    "El gancho es tan específico que no serviría para otra empresa",
+    "Toda suposición está marcada como tal",
+    "Si el semáforo es rojo, dice claramente que no merece la pena contactar"
+  ]
+}

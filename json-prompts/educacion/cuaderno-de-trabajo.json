@@ -1,0 +1,49 @@
+{
+  "tarea": "Convertir una lección en un cuaderno de trabajo imprimible que el alumno rellena mientras aprende y termina con una decisión tomada.",
+  "contexto": {
+    "leccion_o_taller": "[TÍTULO Y OBJETIVO]",
+    "momento_de_uso": "[DURANTE UN VÍDEO / EN UN TALLER PRESENCIAL / COMO DEBERES]",
+    "tiempo_de_relleno": "[MINUTOS QUE VA A DEDICAR]",
+    "soporte": "[PARA IMPRIMIR EN A4 / PARA RELLENAR EN PANTALLA]",
+    "paginas_maximas": "[NÚMERO]"
+  },
+  "entradas": {
+    "contenido_de_la_leccion": "[PEGA EL GUION, EL RESUMEN O LOS PASOS DEL MÉTODO]",
+    "entregable_final": "[QUÉ TIENE QUE QUEDAR ESCRITO AL TERMINAR]",
+    "ejemplo_resuelto": "[UN CASO TUYO YA HECHO PARA MOSTRAR CÓMO SE RELLENA]"
+  },
+  "proceso": [
+    "1. Identifica las 3 a 6 decisiones que el alumno debe tomar en esta lección: el cuaderno existe para que las tome, no para tomar apuntes.",
+    "2. Convierte cada decisión en una página con: pregunta clara, el ejemplo resuelto en gris, el hueco del alumno y una pista de qué mirar para decidir.",
+    "3. Sustituye toda explicación larga por lo mínimo necesario: el cuaderno acompaña, no repite el vídeo.",
+    "4. Añade una lista de comprobación al final de cada página: 3 casillas que confirman que lo escrito sirve.",
+    "5. Diseña la última página como resumen: las decisiones tomadas juntas, para que se pueda fotografiar y usar.",
+    "6. Marca los puntos de pausa del vídeo con el icono y el minuto aproximado.",
+    "7. Calcula el tiempo de relleno sumando 2 minutos por hueco corto y 5 por decisión, y recorta si te pasas.",
+    "8. Añade una página inicial con: para quién es, qué necesitas a mano y qué tendrás al terminar."
+  ],
+  "restricciones": [
+    "Nada de páginas decorativas ni frases motivacionales de relleno.",
+    "Huecos con tamaño realista: si esperas 3 líneas, deja 3 líneas.",
+    "Todo hueco lleva su ejemplo resuelto al lado o encima.",
+    "Si se imprime en blanco y negro, tiene que seguir entendiéndose."
+  ],
+  "formato_salida": {
+    "estructura": "Página a página, con encabezado, contenido, huecos marcados como ______ y lista de comprobación.",
+    "marcas": "Indica [PAUSA EL VÍDEO], [ESCRIBE AQUÍ] y [COMPRUEBA] donde toque.",
+    "final": "Página resumen y una línea de qué hacer con el cuaderno una vez relleno.",
+    "nota_de_maquetacion": "Indicaciones simples: tipografía grande, márgenes anchos, una idea por página."
+  },
+  "criterios_calidad": [
+    "Al terminar el cuaderno hay un entregable, no unos apuntes.",
+    "Un alumno puede rellenarlo sin volver a ver el vídeo dos veces.",
+    "Cabe en las páginas indicadas sin letra minúscula.",
+    "Cada hueco tiene un ejemplo que quita el miedo a la hoja en blanco."
+  ],
+  "errores_tipicos": [
+    "Hacer un PDF bonito que en realidad es el guion copiado.",
+    "Pedir reflexiones abiertas sin ejemplo: el alumno deja el hueco vacío.",
+    "Meter 20 páginas para una lección de 15 minutos.",
+    "Olvidar la página resumen: el trabajo se queda disperso y no se usa."
+  ]
+}

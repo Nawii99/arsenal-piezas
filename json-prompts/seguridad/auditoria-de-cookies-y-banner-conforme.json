@@ -1,0 +1,36 @@
+{
+  "tarea": "Auditar las cookies y tecnologías de seguimiento de una web y definir un banner de consentimiento conforme a la guía de cookies de la AEPD",
+  "contexto": {
+    "web": "[DOMINIO]",
+    "tipo_de_web": "[CORPORATIVA / TIENDA ONLINE / BLOG / RESERVAS]",
+    "gestor_consentimiento": "[HERRAMIENTA DE BANNER O NINGUNA]"
+  },
+  "entradas": {
+    "herramientas_instaladas": "[ANALÍTICA, PÍXEL DE META, GOOGLE ADS, CHAT EN VIVO, VÍDEOS EMBEBIDOS, MAPAS, TIPOGRAFÍAS EXTERNAS]",
+    "cookies_detectadas": "[PEGA AQUÍ EL LISTADO DEL NAVEGADOR O DE TU ESCÁNER, SI LO TIENES]"
+  },
+  "pasos": [
+    "Clasifica cada cookie en técnica necesaria, de preferencias, de analítica o de publicidad y comportamiento",
+    "Marca cuáles pueden cargarse sin consentimiento y cuáles deben esperar a la aceptación",
+    "Redacta el banner de primera capa con opciones equivalentes de aceptar, rechazar y configurar",
+    "Define el panel de configuración por categorías, con todo desactivado por defecto salvo las técnicas",
+    "Escribe la política de cookies de segunda capa con la tabla de cookies, finalidad, titular y duración",
+    "Explica cómo retirar el consentimiento y cómo volver a mostrar el banner"
+  ],
+  "restricciones": [
+    "Rechazar debe costar lo mismo que aceptar: mismo nivel, mismo tamaño visual",
+    "Nada de muros de cookies que impidan el acceso sin alternativa",
+    "Seguir navegando no es consentimiento válido",
+    "El consentimiento caduca: recuérdalo con un plazo máximo razonable"
+  ],
+  "formato_salida": {
+    "tabla_cookies": "nombre | titular | tipo | finalidad | duración | requiere consentimiento",
+    "textos": "banner de primera capa, panel de configuración y política de cookies completa",
+    "plan_tecnico": "lista de cambios a pedir a quien lleva la web, ordenados por prioridad"
+  },
+  "criterios_calidad": [
+    "Ninguna cookie no técnica se instala antes de aceptar",
+    "La tabla no deja ninguna cookie sin finalidad explicada",
+    "El usuario puede cambiar de opinión en dos clics"
+  ]
+}

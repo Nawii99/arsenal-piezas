@@ -1,0 +1,46 @@
+{
+  "tarea": "Redactar el manual de identidad visual completo de una marca, con todos los capítulos desarrollados y listos para maquetar",
+  "datos_marca": {
+    "nombre": "[NOMBRE DE TU MARCA]",
+    "actividad": "[A QUÉ TE DEDICAS]",
+    "valores": ["[VALOR 1]", "[VALOR 2]", "[VALOR 3]"],
+    "logo": "[DESCRIPCIÓN Y VERSIONES QUE TIENES]",
+    "colores": "[HEX DE CADA COLOR Y SU NOMBRE]",
+    "tipografias": "[TÍTULOS Y TEXTOS]",
+    "tono_de_voz": "[CÓMO HABLA TU MARCA]",
+    "aplicaciones": "[DÓNDE APARECE TU MARCA]"
+  },
+  "indice": [
+    "1. Quiénes somos y qué prometemos",
+    "2. El logotipo y sus versiones",
+    "3. Área de respeto y tamaños mínimos",
+    "4. Usos incorrectos del logotipo",
+    "5. Color: paleta, códigos y proporciones",
+    "6. Tipografía: familias, escala y jerarquía",
+    "7. Estilo de imagen y fotografía",
+    "8. Iconos, formas y elementos gráficos",
+    "9. Tono de voz y ejemplos de textos",
+    "10. Aplicaciones: papelería, redes, web y señalética",
+    "11. Qué hacer y qué no: resumen de una página",
+    "12. Archivos entregados y contacto para dudas"
+  ],
+  "como_escribir_cada_capitulo": [
+    "Empezar con una frase que explique la regla en lenguaje llano",
+    "Dar la especificación exacta con números, códigos o medidas",
+    "Cerrar con un ejemplo correcto y uno incorrecto descritos con palabras"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con un encabezado por capítulo",
+    "extension_por_capitulo": "entre 150 y 350 palabras",
+    "maquetacion": "indicar entre corchetes dónde iría cada imagen o ejemplo visual"
+  },
+  "restricciones": [
+    "No inventar datos que no estén en datos_marca: si falta algo, marcarlo como PENDIENTE",
+    "Nada de relleno teórico sobre qué es una marca"
+  ],
+  "criterios_calidad": [
+    "Cada capítulo contiene al menos una regla comprobable",
+    "El documento se entiende sin tener el logo delante",
+    "El resumen de una página sirve por sí solo para el día a día"
+  ]
+}

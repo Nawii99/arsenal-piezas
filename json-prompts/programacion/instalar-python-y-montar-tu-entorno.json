@@ -1,0 +1,46 @@
+{
+  "tarea": "Guíame paso a paso para instalar Python y dejar preparado un entorno de trabajo aislado, como si no supiera nada de programación",
+  "perfil_usuario": {
+    "sistema_operativo": "[WINDOWS 11 / MACOS / UBUNTU]",
+    "nivel": "Sin experiencia con la terminal",
+    "objetivo": "[QUÉ QUIERO HACER CON PYTHON: EJ. AUTOMATIZAR INFORMES DE VENTAS]"
+  },
+  "cubre_estos_puntos": [
+    "Qué versión de Python instalar y de dónde descargarla",
+    "Marcar la opción 'Add Python to PATH' y por qué importa",
+    "Cómo abrir la terminal y comprobar que Python responde",
+    "Crear una carpeta de proyecto y un entorno virtual con venv",
+    "Activar y desactivar el entorno virtual",
+    "Instalar librerías con pip y guardarlas en requirements.txt",
+    "Editor recomendado y cómo abrir la carpeta del proyecto",
+    "Cómo ejecutar mi primer script .py"
+  ],
+  "para_cada_paso_incluye": [
+    "El comando exacto para copiar y pegar",
+    "Lo que debo ver en pantalla si ha ido bien",
+    "El error más habitual de ese paso y cómo salir de él"
+  ],
+  "errores_tipicos_a_cubrir": [
+    "'python' no se reconoce como comando",
+    "Lío entre python y python3, pip y pip3",
+    "Instalar librerías fuera del entorno virtual",
+    "Permisos denegados y por qué no hay que usar sudo con pip",
+    "Ejecutar el script desde la carpeta equivocada"
+  ],
+  "formato_salida": {
+    "estructura": "Lista numerada; cada paso con Comando, Resultado esperado y Si falla",
+    "bloques_de_codigo": "Separados por sistema operativo, sin mezclarlos",
+    "final": "Checklist de 6 comprobaciones para saber que todo está listo",
+    "extension": "Máximo 900 palabras"
+  },
+  "restricciones": [
+    "Español llano, tuteando, sin jerga sin explicar",
+    "Nada de Docker, conda ni configuraciones avanzadas",
+    "No des por supuesto ningún paso intermedio"
+  ],
+  "criterios_calidad": [
+    "Puedo seguir la guía entera sin buscar nada por mi cuenta",
+    "Cada comando indica en qué carpeta debo estar",
+    "Termino con el entorno activado y una librería instalada"
+  ]
+}

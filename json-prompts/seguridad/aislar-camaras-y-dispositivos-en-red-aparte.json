@@ -1,0 +1,50 @@
+{
+  "tarea": "Diseñar un plan realista para aislar cámaras y dispositivos conectados poco fiables del resto de la red, y cerrar los accesos peligrosos",
+  "contexto": {
+    "perfil": "Persona sin perfil técnico que instala cámaras y aparatos conectados y necesita dejarlo seguro sin montar una red de empresa",
+    "lugar": "[VIVIENDA / LOCAL CON CLIENTES / OFICINA / ALOJAMIENTO TURÍSTICO]",
+    "nivel_de_riesgo": "[HAY IMÁGENES DE PERSONAS / HAY DATOS DE CLIENTES / SOLO USO PERSONAL]"
+  },
+  "entradas": {
+    "dispositivos": "[LISTA DE CÁMARAS, VIDEOPORTEROS, TIMBRES, ROBOTS, TELEVISORES Y APARATOS DE MARCA DESCONOCIDA]",
+    "router": "[MARCA, MODELO Y SI PERMITE RED DE INVITADOS O VLAN]",
+    "acceso_remoto": "[SE VE DESDE FUERA SÍ/NO, CON QUÉ APP, HAY PUERTOS ABIERTOS SÍ/NO/NO LO SÉ]",
+    "quien_usa": "[QUIÉN DEBE VER LAS CÁMARAS Y DESDE DÓNDE]"
+  },
+  "pasos": [
+    "1. Ordena los aparatos por riesgo: los que llevan cámara o micrófono primero, luego los que abren puertas o cerraduras, y por último los que solo encienden luces.",
+    "2. Comprueba lo básico antes de nada: contraseña de fábrica cambiada, firmware actualizado y cuenta con verificación en dos pasos donde la haya.",
+    "3. Decide el nivel de separación posible con el router que hay: red de invitados con aislamiento de clientes es lo mínimo aceptable; VLAN solo si el equipo lo permite y hay quien lo mantenga.",
+    "4. Avisa del efecto secundario: al separar redes, el móvil puede dejar de encontrar los aparatos en local. Indica qué se pierde y cómo se soluciona (usar la nube del fabricante o dejar el móvil en la misma red al configurar).",
+    "5. Cierra el acceso desde internet: nada de abrir puertos ni de DMZ. Si hace falta ver las cámaras desde fuera, que sea por la app del fabricante o por una VPN del propio router.",
+    "6. Revisa el UPnP: si está activo, los aparatos se abren puertos solos. Explica dónde desactivarlo y qué puede dejar de funcionar.",
+    "7. Repasa la parte legal y de sentido común: dónde no se puede enfocar una cámara (vía pública, vivienda del vecino, zonas de descanso del personal), cartel informativo si hay clientes o empleados, y quién guarda las grabaciones y cuánto tiempo.",
+    "8. Deja una prueba de comprobación posterior y una fecha de revisión."
+  ],
+  "restricciones": [
+    "No propongas herramientas de ataque ni de escaneo agresivo",
+    "No des por hecho que el router del operador admite VLAN",
+    "Cada medida debe indicar qué se rompe al aplicarla",
+    "Nada de jerga: red de invitados, contraseña, actualización, aplicación"
+  ],
+  "errores_tipicos": [
+    "Cambiar la contraseña de la app pero dejar la del aparato en la de fábrica",
+    "Abrir puertos para ver la cámara desde el móvil y dejar el vídeo expuesto",
+    "Meter también el hub de domótica en la red aislada y romper todas las automatizaciones",
+    "Grabar zonas donde no se puede grabar y descubrirlo con una denuncia"
+  ],
+  "formato_salida": {
+    "1_semaforo": "Tabla: dispositivo | riesgo (rojo/ámbar/verde) | motivo en una línea",
+    "2_medidas_hoy": "Lista de acciones que se hacen en menos de una hora, con dónde se toca cada una",
+    "3_separacion_de_red": "Qué va en la red principal, qué va en la aislada y qué se pierde al hacerlo",
+    "4_acceso_desde_fuera": "Forma recomendada y formas prohibidas",
+    "5_avisos_legales": "Cartel, zonas prohibidas y conservación de grabaciones",
+    "6_revision": "Qué comprobar dentro de seis meses"
+  },
+  "criterios_calidad": [
+    "Ninguna medida requiere comprar equipo nuevo para el nivel mínimo",
+    "Se avisa explícitamente de cada función que dejará de ir",
+    "El plan distingue lo imprescindible de lo deseable",
+    "Un cliente entiende el semáforo sin explicación adicional"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "tarea": "Revisar una pieza de comunicación antes de publicarla y detectar riesgos culturales, dobles sentidos y expresiones que no funcionan en [PAÍS O PÚBLICO OBJETIVO]",
+  "contexto": {
+    "pieza": "[ESLOGAN, ANUNCIO, POST, EMAIL, NOMBRE DE PRODUCTO]",
+    "mercado": "[PAÍS, REGIÓN O COMUNIDAD A LA QUE SE DIRIGE]",
+    "publico": "[EDAD, PERFIL, SENSIBILIDADES CONOCIDAS]",
+    "canal": "[DÓNDE SE PUBLICA]",
+    "marca": "[NOMBRE DE TU MARCA Y QUÉ VENDE]"
+  },
+  "entradas": {
+    "texto_a_revisar": "[PEGA AQUÍ EL TEXTO, CLAIM O GUION]",
+    "descripcion_visual": "[DESCRIBE LA IMAGEN O EL VÍDEO SI LO HAY: PERSONAS, GESTOS, COLORES, ESCENA]"
+  },
+  "que_revisar": [
+    "Palabras con significado sexual, escatológico u ofensivo en el mercado de destino",
+    "Dobles sentidos involuntarios al leer el claim rápido, en voz alta o partido en dos líneas",
+    "Juegos de palabras y refranes que no se entienden fuera de España",
+    "Referencias a religión, política, historia reciente, territorio o deporte local",
+    "Estereotipos de género, edad, origen, cuerpo o clase en el texto y en la imagen",
+    "Gestos, colores y símbolos con lectura distinta en ese mercado",
+    "Humor: si depende de ironía, comprobar si ahí se lee como ironía o como insulto",
+    "Promesas que en ese mercado tienen implicaciones legales o de expectativa"
+  ],
+  "proceso": [
+    "Marcar cada hallazgo con semáforo: rojo no publicar, ámbar revisar, verde correcto",
+    "Explicar el riesgo en una frase que entienda alguien sin formación en marketing",
+    "Proponer dos alternativas concretas para cada hallazgo rojo o ámbar",
+    "Cerrar con una versión limpia completa de la pieza"
+  ],
+  "restricciones": [
+    "No suavizar la valoración por educación: si algo es rojo, se dice rojo",
+    "No inventar polémicas improbables: cada riesgo debe explicarse con un motivo comprensible",
+    "Separar lo que es riesgo real de lo que es cuestión de gusto"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: fragmento, riesgo, semáforo, motivo, alternativas",
+    "bloque_2": "Veredicto en una frase: publicable, publicable con cambios o no publicable",
+    "bloque_3": "Versión corregida completa",
+    "bloque_4": "Qué conviene validar con una persona nativa del mercado"
+  },
+  "criterios_calidad": [
+    "Todo hallazgo rojo lleva al menos dos alternativas listas para usar",
+    "El veredicto es claro y no se esconde entre matices",
+    "La versión corregida mantiene la idea original de la campaña"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "tarea": "Calcular la rentabilidad real de cada cliente y decidir a cuáles subir precio, cuáles rediseñar y de cuáles salir",
+  "contexto": {
+    "negocio": "[QUÉ SERVICIO O PRODUCTO VENDES]",
+    "periodo_analizado": "[ÚLTIMOS 6 O 12 MESES]",
+    "capacidad": "[HORAS ÚTILES QUE PUEDES DEDICAR AL MES]"
+  },
+  "entradas": {
+    "clientes": "[LISTA: NOMBRE, FACTURADO EN EL PERIODO, HORAS DEDICADAS APROXIMADAS, COSTES DIRECTOS EN SU CUENTA]",
+    "coste_hora_interno": "[LO QUE TE CUESTA UNA HORA TUYA O DE TU EQUIPO; SI NO LO SABES, DÍMELO]",
+    "comisiones_y_pasarela": "[PORCENTAJE QUE SE LLEVA STRIPE, PAYPAL O EL TPV]",
+    "desplazamientos_y_dietas": "[IMPORTE POR CLIENTE SI APLICA]",
+    "friccion": "[POR CLIENTE: RETRASOS DE PAGO EN DÍAS, REUNIONES EXTRA AL MES, CAMBIOS FUERA DE ALCANCE, NIVEL DE ESTRÉS 1 A 5]",
+    "origen": "[CÓMO LLEGÓ CADA CLIENTE Y CUÁNTO COSTÓ CONSEGUIRLO SI SE SABE]"
+  },
+  "procedimiento": [
+    "1. Por cliente: margen bruto = facturado menos costes directos menos comisiones menos desplazamientos",
+    "2. Resta el coste de las horas dedicadas para llegar al margen real y calcula el margen por hora",
+    "3. Añade las horas invisibles: reuniones, emails, revisiones y arreglos; si no están medidas, estima y márcalo como estimación",
+    "4. Convierte el retraso de cobro en coste: cada 30 días de retraso es dinero tuyo financiando a otro, dilo en euros aproximados",
+    "5. Ordena a los clientes de mayor a menor margen por hora y calcula qué porcentaje del margen total aportan los tres primeros",
+    "6. Comprueba la concentración: si un cliente supera el 30% de tus ingresos, márcalo como riesgo aunque sea rentable",
+    "7. Clasifica en cuatro grupos: mantener y cuidar, subir precio, rediseñar el encargo para que cueste menos, y salir",
+    "8. Para cada cliente de subir precio, calcula el porcentaje necesario para llegar al margen objetivo",
+    "9. Para cada cliente de salir, escribe el plan de salida ordenada con plazos y qué hueco de facturación deja"
+  ],
+  "restricciones": [
+    "Trabaja con dinero cobrado, no facturado",
+    "Si faltan horas por cliente, pide una estimación en tramos en vez de inventarla",
+    "No propongas dejar a la vez a clientes que sumen más del 25% de la facturación",
+    "Nada de porcentajes de mejora prometidos"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Mirar solo la facturación y llamar mejor cliente al que más factura",
+    "Ignorar las horas de gestión y de reuniones",
+    "Olvidar las comisiones de la pasarela en los cobros con tarjeta",
+    "Echar a un cliente sin tener antes el hueco cubierto"
+  ],
+  "formato_salida": {
+    "1_tabla": "Cliente, facturado, costes, horas, margen real, margen por hora, días de retraso, semáforo",
+    "2_ranking": "Los tres que sostienen el negocio y los tres que lo hunden, con una línea de por qué",
+    "3_decisiones": "Los cuatro grupos con el nombre de cada cliente y la acción concreta",
+    "4_guion": "Qué decirle al cliente al que subes precio y al que dejas, en dos párrafos cada uno",
+    "5_csv": "Bloque CSV con la tabla para pegar en la hoja de cálculo",
+    "estilo": "Directo, sin suavizar las malas noticias, tuteando"
+  },
+  "criterios_calidad": [
+    "Todas las cifras de margen se pueden reconstruir con los datos de entrada",
+    "Lo estimado está marcado como estimado",
+    "Cada decisión lleva una acción con fecha",
+    "El análisis cabe en una pantalla"
+  ]
+}

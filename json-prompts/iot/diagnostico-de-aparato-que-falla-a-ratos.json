@@ -1,0 +1,52 @@
+{
+  "tarea": "Diagnosticar por descarte un dispositivo domotico que funciona de forma intermitente, siguiendo un orden que va de lo barato y probable a lo caro e improbable.",
+  "contexto": {
+    "dispositivo": "[MARCA, MODELO Y QUE HACE]",
+    "protocolo": "[WIFI / ZIGBEE / Z-WAVE / THREAD / BLUETOOTH / CABLE]",
+    "alimentacion": "[PILA (TIPO) / ENCHUFE / POE / 12V]",
+    "donde_esta": "[ESTANCIA, ALTURA, DENTRO DE CAJA O ARMARIO, EXTERIOR]",
+    "desde_cuando_falla": "[FECHA O EVENTO: DESDE QUE CAMBIE EL ROUTER, DESDE UNA ACTUALIZACION]"
+  },
+  "entradas": {
+    "sintoma_exacto": "[SE PONE NO DISPONIBLE / TARDA 10 SEGUNDOS / PIERDE EL ESTADO / SE REINICIA]",
+    "patron_horario": "[SIEMPRE POR LA NOCHE / CUANDO LLUEVE / AL PONER LA LAVADORA / SIN PATRON]",
+    "frecuencia": "[VECES POR DIA O SEMANA]",
+    "que_ya_he_probado": "[LISTA]",
+    "registro_disponible": "[PEGA AQUI EL HISTORIAL O LOG SI LO TIENES]"
+  },
+  "procedimiento": [
+    "1. Reproduce y anota: pide 3 dias de registro de la hora exacta de cada caida antes de tocar nada.",
+    "2. Aisla si es el aparato o el sitio: lleva el dispositivo a un metro del router o del coordinador y observa 24 horas.",
+    "3. Aisla si es la radio: mira si otros aparatos del mismo protocolo tambien fallan a la vez.",
+    "4. Revisa alimentacion: pila por debajo del 40 por ciento en frio, fuente compartida, alargador con muchos aparatos.",
+    "5. Revisa interferencias: microondas, USB 3.0, camara del portero, canal wifi solapado con Zigbee.",
+    "6. Revisa la red: reserva de IP fija por MAC en el router, ahorro de energia del wifi, aislamiento de clientes activado.",
+    "7. Revisa firmware y app: cambios recientes en el aparato o en la aplicacion central.",
+    "8. Revisa lo fisico: humedad, condensacion, borne flojo, cable pisado, iman de la puerta desalineado.",
+    "9. Solo despues de todo lo anterior, sustituye el aparato."
+  ],
+  "tabla_causas": [
+    "Cae siempre a la misma hora: automatizacion, reinicio programado del router o temporizador de la marca.",
+    "Cae cuando arranca un motor: caida de tension o interferencia electrica.",
+    "Cae solo en verano o en invierno: temperatura o pila.",
+    "Caen varios a la vez: red o coordinador, no el aparato.",
+    "Cae al reiniciar el movil: la integracion depende del movil, no del sistema."
+  ],
+  "formato_salida": {
+    "bloque_1": "Hipotesis ordenadas por probabilidad, con porcentaje aproximado de sospecha",
+    "bloque_2": "Plan de pruebas: PRUEBA | COMO SE HACE PASO A PASO | CUANTO DURA | QUE RESULTADO CONFIRMA O DESCARTA",
+    "bloque_3": "Plantilla de registro de incidencias: FECHA | HORA | QUE PASABA EN CASA | QUE HICE",
+    "bloque_4": "Criterio de rendicion: cuando dejar de investigar y sustituir, con el coste de seguir buscando",
+    "bloque_5": "Mensaje corto para el cliente explicando el estado sin tecnicismos"
+  },
+  "restricciones": [
+    "Una sola prueba a la vez: si cambias dos cosas no sabras cual era.",
+    "Nada de restablecer de fabrica antes de agotar las pruebas reversibles.",
+    "Prohibido tocar el cuadro electrico sin electricista si hay que abrir mecanismos."
+  ],
+  "criterios_calidad": [
+    "La primera prueba de la lista se puede hacer hoy, gratis y sin herramientas.",
+    "Cada prueba tiene un resultado que descarta algo, no solo mira a ver.",
+    "El plan llega a un final: o esta arreglado o hay que cambiarlo, con fecha."
+  ]
+}

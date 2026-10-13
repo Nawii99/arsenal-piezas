@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar el plan de respuesta ante incidentes informáticos de una pyme, en una sola página imprimible",
+  "contexto": {
+    "empresa": "[NOMBRE DE LA EMPRESA]",
+    "actividad_critica": "[QUÉ PROCESO NO PUEDE PARAR: VENTA, PRODUCCIÓN, CITAS, ENVÍOS]",
+    "horario": "[HORARIO DE APERTURA Y SI HAY TURNOS O FINES DE SEMANA]"
+  },
+  "entradas": {
+    "contactos": "[RESPONSABLE INTERNO, INFORMÁTICO EXTERNO, GESTORÍA, BANCO, HOSTING, ASEGURADORA, CON TELÉFONOS]",
+    "sistemas_criticos": "[CORREO, PROGRAMA DE GESTIÓN, TIENDA, TPV, TELÉFONO, NUBE]",
+    "seguro_ciber": "[SÍ / NO / NÚMERO DE PÓLIZA]",
+    "donde_estan_las_copias": "[UBICACIÓN Y RESPONSABLE DE LAS COPIAS DE SEGURIDAD]"
+  },
+  "metodo": [
+    "Definir cuatro escenarios: ficheros secuestrados y cifrados, cuenta de correo robada, web o tienda caída, y pérdida o robo de un portátil o móvil",
+    "Escribir para cada escenario los primeros 5 pasos en orden, empezando por aislar el equipo de la red sin apagarlo del todo si se puede",
+    "Fijar quién decide, quién llama y quién informa al equipo y a los clientes",
+    "Incluir el aviso a la Agencia Española de Protección de Datos en 72 horas si hay datos personales afectados, y a quién se encarga",
+    "Marcar los cinco no: no pagar rescates por tu cuenta, no borrar pruebas, no reinstalar antes de valorar, no usar la misma cuenta comprometida para avisar y no ocultarlo internamente",
+    "Dejar un hueco de registro para anotar hora, hecho y decisión durante el incidente"
+  ],
+  "restricciones": [
+    "Todo el plan cabe en una página imprimible y legible sin ordenador",
+    "Cada paso indica quién lo hace, con nombre del puesto, no en abstracto",
+    "Los teléfonos importantes aparecen también en formato para guardar en el móvil",
+    "Nada de procedimientos que necesiten a un técnico presente para el primer paso"
+  ],
+  "formato_salida": {
+    "tipo": "ficha de una página",
+    "bloques": ["Primeros 15 minutos, pase lo que pase", "Los 4 escenarios con sus 5 pasos", "Directorio de llamadas por orden", "Los cinco no", "Tabla de registro del incidente", "Qué revisar al día siguiente"]
+  },
+  "criterios_calidad": [
+    "Sirve aunque el correo y los ordenadores no funcionen",
+    "Una persona sola sabe qué hacer en el primer minuto",
+    "Incluye qué contar a los clientes y con qué palabras"
+  ],
+  "tono": "sereno y operativo, tuteando"
+}

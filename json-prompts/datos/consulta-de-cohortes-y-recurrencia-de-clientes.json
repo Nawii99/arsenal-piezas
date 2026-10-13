@@ -1,0 +1,35 @@
+{
+  "tarea": "Escribir la consulta SQL que calcula cohortes de clientes por mes de primera compra y su recurrencia en los meses siguientes",
+  "entradas": {
+    "motor": "[MOTOR Y VERSIÓN]",
+    "tabla_pedidos": "[NOMBRE DE LA TABLA Y COLUMNAS DE CLIENTE, FECHA, IMPORTE Y ESTADO]",
+    "que_cuenta_como_compra": "[EJ: PEDIDOS PAGADOS Y NO DEVUELTOS]",
+    "meses_a_analizar": "[EJ: LOS ÚLTIMOS 12 MESES]",
+    "metrica": "[CLIENTES QUE REPITEN / FACTURACIÓN POR COHORTE]",
+    "zona_horaria": "[EUROPE/MADRID U OTRA]"
+  },
+  "metodo": [
+    "Calcular para cada cliente el mes de su primera compra válida",
+    "Asignar cada compra posterior al número de meses transcurridos desde esa primera compra",
+    "Agrupar por cohorte y por mes transcurrido, contando clientes distintos",
+    "Calcular el porcentaje sobre el tamaño inicial de la cohorte",
+    "Generar la rejilla completa de meses aunque algunas celdas sean cero",
+    "Excluir los meses incompletos del final para no confundir con una caída falsa"
+  ],
+  "restricciones": [
+    "Solo SELECT, con funciones de ventana o subconsultas soportadas por el motor indicado",
+    "Un cliente cuenta una sola vez por mes aunque haga varias compras",
+    "Usar la fecha de pago, no la de creación, si ambas existen; indicarlo si se cambia"
+  ],
+  "formato_salida": {
+    "consulta": "La consulta completa en bloque de código, con comentarios por bloque",
+    "como_leer_la_tabla": "Explicación de qué significa cada fila, cada columna y cada porcentaje",
+    "interpretacion": "Qué patrones buscar: caída al segundo mes, cohortes mejores que otras, meseta de fieles",
+    "decisiones": "3 decisiones de negocio que puedes tomar según lo que salga",
+    "variantes": "Cómo cambiar la consulta para medir facturación por cohorte en vez de número de clientes"
+  },
+  "criterios_calidad": [
+    "El resultado se puede pegar en una hoja de cálculo y pintar como rejilla sin retocar",
+    "Los porcentajes de la primera columna dan siempre 100 por cien"
+  ]
+}

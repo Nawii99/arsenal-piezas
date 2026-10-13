@@ -1,0 +1,51 @@
+{
+  "tarea": "Planificar y redactar la subida de precios a clientes actuales: quién sube, cuánto, con qué calendario y con qué comunicación",
+  "rol": "Asesor que sabe que una subida bien avisada y bien explicada se acepta casi siempre, y una mal hecha rompe relaciones",
+  "contexto": {
+    "que_vendes": "[SERVICIO Y MODALIDAD: PUNTUAL, CUOTA MENSUAL, POR HORAS]",
+    "tarifa_actual": "[PRECIOS DE HOY]",
+    "ultima_subida": "[CUÁNDO SUBISTE POR ÚLTIMA VEZ]",
+    "motivo_real": "[SUBIDA DE COSTES, MÁS TRABAJO INCLUIDO, MÁS EXPERIENCIA, AGENDA LLENA]"
+  },
+  "entradas": {
+    "lista_de_clientes": "[NOMBRE, LO QUE PAGA, DESDE CUÁNDO, CUÁNTO TRABAJO DA, SI PAGA A TIEMPO]",
+    "subida_objetivo": "[PORCENTAJE O IMPORTE QUE QUIERES ALCANZAR]",
+    "fecha_de_entrada": "[DESDE CUÁNDO QUIERES APLICARLA]",
+    "clientes_intocables": "[SI HAY ALGUNO AL QUE NO QUIERES SUBIR Y POR QUÉ]"
+  },
+  "pasos": [
+    "Clasifica cada cliente en cuatro grupos: rentable y fácil, rentable y pesado, poco rentable y fácil, poco rentable y pesado",
+    "Asigna subida por grupo: la mayor a los poco rentables y pesados, la menor o ninguna a los rentables y fáciles muy antiguos",
+    "Calcula el ingreso mensual antes y después, y cuántos clientes te puedes permitir perder sin quedarte peor",
+    "Fija el calendario: aviso con al menos 30 días, fecha de entrada y a quién avisas primero (empieza por uno poco rentable para practicar)",
+    "Escribe la carta o mensaje: agradecimiento breve, hecho concreto que ha cambiado, precio nuevo con fecha, qué mejora o se mantiene y cierre disponible para hablarlo",
+    "Prepara respuestas a las tres reacciones típicas: se queja, pide congelar el precio y amenaza con irse",
+    "Prepara una salida digna para quien no pueda pagar: reducir alcance a un paquete menor"
+  ],
+  "restricciones": [
+    "Sin disculpas ni justificaciones largas: un motivo claro basta",
+    "No menciones la inflación como único argumento si tu trabajo también ha mejorado",
+    "Nada de subidas retroactivas ni aplicadas a trabajos ya presupuestados",
+    "Español de España, tono cordial y firme, máximo 180 palabras la carta"
+  ],
+  "formato_salida": {
+    "clasificacion": [{"cliente": "...", "grupo": "...", "precio_actual": 0, "precio_nuevo": 0, "subida_pct": 0, "riesgo_de_perderlo": "bajo | medio | alto"}],
+    "cuentas": {"ingreso_mensual_actual": 0, "ingreso_mensual_previsto": 0, "clientes_que_puedes_perder": 0},
+    "calendario": [{"fecha": "...", "accion": "...", "clientes": ["..."]}],
+    "carta_email": "texto completo con asunto",
+    "version_whatsapp": "texto corto",
+    "respuestas_preparadas": {"se_queja": "...", "pide_congelar": "...", "amenaza_con_irse": "..."},
+    "plan_b_por_cliente": "paquete reducido que puedes ofrecer al precio antiguo"
+  },
+  "criterios_calidad": [
+    "El precio nuevo y la fecha aparecen en la carta sin rodeos y en la primera mitad del texto",
+    "Sabes cuántos clientes puedes perder antes de que la subida te salga mal",
+    "Ninguna respuesta preparada acaba retirando la subida entera",
+    "El orden de avisos empieza por los clientes de menor riesgo económico para ti"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Subir a todos lo mismo sin mirar quién te da dinero y quién te da trabajo",
+    "Avisar con una semana y por WhatsApp a un cliente grande",
+    "Ceder ante el primero que protesta y que se corra la voz"
+  ]
+}

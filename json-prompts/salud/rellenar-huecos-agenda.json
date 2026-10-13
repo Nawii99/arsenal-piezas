@@ -1,0 +1,51 @@
+{
+  "tarea": "Diseñar el sistema de lista de espera y los mensajes para rellenar huecos de última hora en la agenda de [NOMBRE DEL CENTRO]",
+  "contexto": {
+    "tipo_de_centro": "[FISIOTERAPIA / DENTAL / PSICOLOGÍA / PODOLOGÍA / ESTÉTICA / NUTRICIÓN]",
+    "zona": "[CIUDAD O BARRIO]",
+    "profesionales_y_salas": "[EJ. 2 PROFESIONALES Y 2 BOXES]",
+    "canal_con_pacientes": "[WHATSAPP BUSINESS / SMS / TELÉFONO]",
+    "software_de_agenda": "[NOMBRE DEL PROGRAMA O AGENDA EN PAPEL]"
+  },
+  "entradas": {
+    "servicios": "[SERVICIO, DURACIÓN Y PRECIO DE CADA UNO]",
+    "huecos_frecuentes": "[FRANJAS QUE SE QUEDAN VACÍAS, EJ. MAÑANAS DE MARTES]",
+    "antelacion_del_aviso": "[CUÁNTAS HORAS ANTES SUELEN AVISAR DE MEDIA]",
+    "lista_de_espera_actual": "[CÓMO SE GUARDA HOY: LIBRETA, EXCEL O NO EXISTE]"
+  },
+  "pasos": [
+    "1. Clasifica los huecos en tres tipos: aviso con más de 24 horas, aviso el mismo día y no presentado sin avisar. Cada uno se rellena de forma distinta.",
+    "2. Define la lista de espera con cuatro campos y ninguno más: nombre, servicio, franjas en las que puede venir y si acepta avisos de última hora.",
+    "3. Ordena la lista por prioridad: primero quien tiene un tratamiento empezado, después quien pidió cita y se fue sin ella, y al final las altas antiguas.",
+    "4. Escribe el mensaje de aviso de hueco: máximo 300 caracteres, con día, hora, servicio y una pregunta cerrada de sí o no.",
+    "5. Fija la regla de envío: se avisa a tres personas a la vez, la plaza es para quien conteste antes y a las otras dos se les manda el mensaje de cortesía.",
+    "6. Pon un corte horario: si el hueco es dentro de menos de dos horas se llama por teléfono en lugar de escribir.",
+    "7. Redacta la confirmación de la plaza con dirección, hora y qué traer.",
+    "8. Monta la hoja de control: fecha, hueco, personas avisadas, ocupado sí o no y minutos hasta llenarlo."
+  ],
+  "restricciones": [
+    "Nada de valoraciones clínicas ni consejos de salud en los mensajes: solo logística de la cita.",
+    "No se nombra el motivo de consulta en el mensaje, porque el móvil lo puede leer otra persona: se escribe tu cita en [NOMBRE DEL CENTRO].",
+    "Solo se escribe a quien haya dado su consentimiento para avisos y todo mensaje incluye cómo darse de baja.",
+    "No se ofrece descuento por rellenar el hueco: devalúa el servicio y los pacientes lo aprenden."
+  ],
+  "formato_salida": {
+    "1_tabla_lista_espera": "Columnas exactas de la hoja y una fila de ejemplo rellena",
+    "2_arbol_de_decision": "Qué se hace según las horas de antelación del hueco",
+    "3_mensajes": "Aviso de hueco, cortesía a los no elegidos, confirmación y recordatorio, listos para copiar",
+    "4_rutina_de_recepcion": "Tres tareas con la hora exacta a la que se hacen cada día",
+    "5_hoja_de_control": "Columnas para medir el porcentaje de huecos rellenados por semana"
+  },
+  "criterios_calidad": [
+    "El mensaje de aviso se entiende y se puede contestar con una sola palabra.",
+    "Recepción ejecuta todo el sistema sin preguntar nada al profesional.",
+    "Existe un número objetivo y se sabe cuántos huecos se rellenaron esta semana.",
+    "Ningún mensaje revela información sobre la salud del paciente."
+  ],
+  "errores_tipicos": [
+    "Avisar a toda la lista a la vez y tener que decir que no a cinco personas.",
+    "Mandar el aviso sin la hora exacta, lo que abre una conversación larga.",
+    "Guardar la lista de espera solo en la cabeza de una persona.",
+    "Tapar el hueco con un servicio más corto que deja otro hueco detrás."
+  ]
+}

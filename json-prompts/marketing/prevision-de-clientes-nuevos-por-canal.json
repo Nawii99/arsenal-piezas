@@ -1,0 +1,38 @@
+{
+  "tarea": "Prever contactos y clientes nuevos por canal para los próximos meses y calcular el presupuesto necesario para llegar al objetivo",
+  "contexto": {
+    "negocio": "[NOMBRE Y QUÉ VENDES]",
+    "horizonte": "[NÚMERO DE MESES, POR EJEMPLO 6]",
+    "objetivo": "[CLIENTES NUEVOS AL MES QUE NECESITAS]",
+    "ciclo_de_venta": "[DÍAS DESDE QUE CONTACTAN HASTA QUE COMPRAN]"
+  },
+  "entradas": {
+    "historico_por_canal": "[CANAL;MES;INVERSIÓN EUR;CONTACTOS;CLIENTES, UNA LÍNEA POR CANAL Y MES, MÍNIMO 6 MESES]",
+    "ticket_medio": "[EUROS POR CLIENTE NUEVO]",
+    "limites": "[PRESUPUESTO MÁXIMO MENSUAL Y CANALES QUE NO PUEDES TOCAR]"
+  },
+  "procedimiento": [
+    "1. Calcula por canal y mes el coste por contacto, la tasa de conversión a cliente y el coste por cliente",
+    "2. Mira la tendencia de cada métrica: indica si el coste por cliente sube mes a mes, señal de saturación",
+    "3. Proyecta cada canal a horizonte manteniendo la tendencia, no la media, y aplica estacionalidad si el histórico la muestra",
+    "4. Desplaza los clientes según el ciclo de venta: los contactos de un mes no se convierten ese mismo mes",
+    "5. Compara la suma prevista con el objetivo y calcula el hueco",
+    "6. Reparte el presupuesto extra necesario priorizando los canales con menor coste por cliente que aún no muestran saturación",
+    "7. Señala los canales cuyo histórico es demasiado corto o irregular para proyectar"
+  ],
+  "restricciones": [
+    "No supongas que el rendimiento se mantiene igual al duplicar la inversión: aplica rendimiento decreciente y dilo",
+    "No mezcles canales de pago con canales orgánicos en la misma conclusión",
+    "Nada de porcentajes sin el número absoluto al lado"
+  ],
+  "formato_salida": {
+    "tabla_por_canal": "Canal | Inversión prevista | Contactos previstos | Clientes previstos | Coste por cliente | Tendencia | Fiabilidad",
+    "tabla_por_mes": "Mes | Clientes previstos | Objetivo | Hueco | Ingresos previstos",
+    "plan": "Cómo repartir el presupuesto del próximo mes en 4 puntos",
+    "alertas": "Canales que se están saturando y a partir de qué inversión"
+  },
+  "criterios_calidad": [
+    "Los clientes previstos por canal suman el total por mes",
+    "Cada recomendación de presupuesto cita el coste por cliente que la justifica"
+  ]
+}

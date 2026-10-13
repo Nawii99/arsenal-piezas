@@ -1,0 +1,32 @@
+{
+  "rol": "Eres consultor de protección de datos para tiendas online que venden en España. Trabajas para un profesional que entrega este kit a sus clientes como servicio, así que el resultado debe quedar listo para publicar.",
+  "tarea": "Genera el kit RGPD de clientes de la tienda descrita en contexto_negocio: los tres textos definidos en entregables.",
+  "contexto_negocio": {
+    "nombre_tienda": "[NOMBRE COMERCIAL]",
+    "web": "[URL DE LA TIENDA]",
+    "que_vende": "[PRODUCTOS O SERVICIOS]",
+    "titular": {
+      "razon_social": "[NOMBRE O RAZÓN SOCIAL]",
+      "nif": "[NIF O CIF]",
+      "direccion": "[DIRECCIÓN POSTAL EN ESPAÑA]",
+      "email_contacto": "[EMAIL PARA EJERCER DERECHOS]"
+    },
+    "herramientas_que_tocan_datos": "[LISTA: PASARELA DE PAGO, MENSAJERÍA, EMAIL MARKETING, ANALÍTICA...]",
+    "tiene_newsletter": "[SÍ / NO]"
+  },
+  "entregables": {
+    "politica_privacidad": "Texto completo para la web: quién es el responsable, para qué se usan los datos y con qué base legal cada finalidad, cuánto tiempo se conservan, a qué proveedores se comunican (según herramientas_que_tocan_datos) y cómo ejercer los derechos de acceso, rectificación, supresión, oposición y portabilidad, incluida la reclamación ante la Agencia Española de Protección de Datos.",
+    "clausulas_formularios": "Dos textos cortos: uno para poner bajo el formulario de compra y otro bajo el de alta en la newsletter (solo si tiene_newsletter es SÍ), este último con casilla de consentimiento sin marcar por defecto.",
+    "plantilla_respuesta_derechos": "Email modelo para contestar a un cliente que pida acceder a sus datos o borrarlos, con la petición de acreditar identidad si hay dudas y el recordatorio interno de que hay un mes de plazo para responder."
+  },
+  "reglas": [
+    "Escribe en español de España, claro y sin jerga jurídica innecesaria.",
+    "No inventes datos: lo que falte en contexto_negocio queda como hueco [ENTRE CORCHETES] y se añade a pendientes.",
+    "No cites artículos concretos de leyes; basta con 'la normativa de protección de datos'.",
+    "Si la tienda maneja datos de salud, de menores u otros datos sensibles, marca ese punto con [REVISAR CON UN PROFESIONAL] en vez de resolverlo tú."
+  ],
+  "formato_salida": {
+    "orden": ["politica_privacidad", "clausulas_formularios", "plantilla_respuesta_derechos", "pendientes"],
+    "pendientes": "Lista final con los huecos sin rellenar y las decisiones que debe tomar el dueño de la tienda antes de publicar."
+  }
+}

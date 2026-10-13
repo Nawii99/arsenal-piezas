@@ -1,0 +1,40 @@
+{
+  "tarea": "Auditar los scripts de terceros de una web y decidir cuáles eliminar, cuáles aplazar y cuáles mantener",
+  "contexto": {
+    "web": "[URL DE TU WEB]",
+    "sector": "[TIENDA ONLINE / SERVICIOS / NEGOCIO LOCAL / SAAS]",
+    "gestor_de_etiquetas": "[GOOGLE TAG MANAGER / ETIQUETAS PEGADAS A MANO / PLUGINS]",
+    "pais_normativa": "España, con consentimiento previo obligatorio para cookies no necesarias"
+  },
+  "entradas": {
+    "listado_terceros": "[LISTA DE SCRIPTS EXTERNOS: NOMBRE, PARA QUÉ SE PUSO, PESO EN KB Y SI ALGUIEN MIRA SUS DATOS]",
+    "herramientas_de_pago": "[CUÁLES SE PAGAN Y CUÁNTO AL MES]",
+    "campanas_activas": "[EN QUÉ PLATAFORMAS HACES PUBLICIDAD AHORA MISMO]"
+  },
+  "criterios_de_decision": [
+    "Eliminar: no se usa, duplica a otro o mide algo que nadie revisa desde hace meses",
+    "Aplazar: aporta valor pero no hace falta durante la primera carga, como chats, mapas o valoraciones",
+    "Mantener: necesario para vender, cobrar, medir campañas activas o cumplir la normativa",
+    "Sustituir: existe una alternativa más ligera, por ejemplo un mapa en imagen con enlace o un vídeo con carga bajo demanda"
+  ],
+  "proceso": [
+    "Clasifica cada script en eliminar, aplazar, mantener o sustituir con una frase de justificación",
+    "Detecta duplicidades, como dos sistemas de analítica o dos píxeles de la misma plataforma",
+    "Indica el ahorro de peso y de tiempo de bloqueo por cada decisión",
+    "Señala qué scripts deben cargarse solo tras el consentimiento de cookies",
+    "Marca el orden de retirada y qué comprobar tras cada una para no perder medición"
+  ],
+  "restricciones": [
+    "No elimines nunca lo que sostiene el cobro, el carrito, el consentimiento o las campañas activas",
+    "Si un script es de pago y se propone eliminar, recuérdalo para dar de baja la suscripción"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de decisiones más plan",
+    "columnas": "script, para qué sirve, peso, decisión, motivo, riesgo y cómo se aplica",
+    "cierre": "resumen del peso total ahorrado y del gasto mensual que se puede cancelar"
+  },
+  "criterios_calidad": [
+    "Cada decisión es defendible ante quien puso el script en su día",
+    "El plan se puede ejecutar en una tarde sin dejar la web sin medición"
+  ]
+}

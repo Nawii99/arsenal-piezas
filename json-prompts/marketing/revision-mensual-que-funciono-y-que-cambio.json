@@ -1,0 +1,34 @@
+{
+  "tarea": "Analizar los resultados del mes y convertirlos en reglas concretas para el calendario editorial del mes siguiente",
+  "entradas": {
+    "datos_publicaciones": "[PEGA LA LISTA: FECHA, CANAL, TEMA, FORMATO, ALCANCE, INTERACCIONES, CLICS, GUARDADOS]",
+    "objetivo_del_mes": "[LO QUE PERSEGUÍAS]",
+    "resultados_negocio": "[VENTAS, CITAS O REGISTROS CONSEGUIDOS Y DE DÓNDE VINIERON]",
+    "horas_dedicadas": "[CUÁNTO TIEMPO TE LLEVÓ]"
+  },
+  "analisis_pedido": [
+    "Top 5 publicaciones por resultado de negocio, no solo por 'me gusta'",
+    "Peores 5 y qué tenían en común",
+    "Rendimiento por formato: cuál rinde más por hora invertida",
+    "Rendimiento por pilar y por día de la semana",
+    "Relación entre alcance y clics: qué gusta pero no mueve a nadie",
+    "Publicaciones que costaron mucho y aportaron poco"
+  ],
+  "reglas": [
+    "Habla solo de lo que se ve en los datos; si una muestra es pequeña, avísalo",
+    "No confundas alcance con resultado; prioriza siempre clics, mensajes y ventas",
+    "Si faltan datos para una conclusión, di qué habría que medir el mes que viene"
+  ],
+  "formato_salida": {
+    "1_resumen": "Cinco líneas con lo que ha pasado este mes",
+    "2_tablas": "Tabla de mejores, tabla de peores y tabla por formato",
+    "3_conclusiones": "Máximo cinco conclusiones, cada una con el dato que la sostiene",
+    "4_decisiones": "Lista 'seguir haciendo / dejar de hacer / probar' con tres puntos cada una",
+    "5_reglas_mes_siguiente": "Entre 4 y 6 reglas concretas para montar el próximo calendario"
+  },
+  "criterios_calidad": [
+    "Cada conclusión va acompañada del número que la respalda",
+    "Las reglas se pueden aplicar directamente al hacer el calendario, sin interpretación",
+    "No hay recomendaciones genéricas tipo 'publicar más contenido de valor'"
+  ]
+}

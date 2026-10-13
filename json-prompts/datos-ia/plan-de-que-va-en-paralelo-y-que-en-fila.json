@@ -1,0 +1,37 @@
+{
+  "tarea": "Ordena las tareas de mi flujo de agentes en fases, indicando que puede ejecutarse a la vez y que tiene que esperar",
+  "contexto": {
+    "tareas": "[LISTA: NOMBRE - QUE NECESITA PARA EMPEZAR - CUANTO TARDA APROX]",
+    "resultado_final": "[QUE SE ENTREGA AL ACABAR]",
+    "tiempo_maximo_aceptable": "[EJ: 10 MINUTOS]",
+    "limite_de_agentes_a_la_vez": "[EJ: 3]"
+  },
+  "metodo": [
+    "Para cada tarea, escribe de que otras tareas depende de verdad, no por costumbre",
+    "Agrupa en fases: en una fase van juntas las tareas sin dependencias entre si",
+    "Marca el camino mas largo, que es el que manda en el tiempo total",
+    "Detecta dependencias falsas que se pueden romper y como",
+    "Senala los puntos donde hay que juntar resultados y quien los junta"
+  ],
+  "restricciones": [
+    "No superar el limite de agentes a la vez indicado",
+    "Dos tareas que escriben en el mismo sitio nunca van en la misma fase",
+    "Toda fase acaba con una comprobacion antes de abrir la siguiente"
+  ],
+  "errores_a_evitar": [
+    "Lanzar todo a la vez y no saber que resultado llego antes",
+    "Juntar resultados sin definir que pasa si uno viene vacio",
+    "Paralelizar tareas que consultan la misma herramienta con limite de uso"
+  ],
+  "formato_salida": {
+    "tabla_dependencias": ["tarea", "depende de", "duracion", "fase asignada"],
+    "plan_por_fases": "fase 1, fase 2, fase 3 con las tareas de cada una y quien junta el resultado",
+    "tiempo_estimado": "total antes y despues del reordenado",
+    "riesgos": "3 cosas que pueden romperse al ejecutar en paralelo y como evitarlas"
+  },
+  "criterios_calidad": [
+    "Cada dependencia esta justificada con un motivo real",
+    "El plan cabe en una pagina y se entiende sin explicaciones",
+    "El tiempo total estimado es coherente con las duraciones dadas"
+  ]
+}

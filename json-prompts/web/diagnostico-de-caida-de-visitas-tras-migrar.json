@@ -1,0 +1,37 @@
+{
+  "tarea": "Diagnosticar la caída de visitas o ventas tras una migración web y proponer un plan de recuperación priorizado",
+  "contexto": {
+    "fecha_migracion": "[FECHA EN QUE SE PUBLICÓ LA WEB NUEVA]",
+    "que_cambio": "[DOMINIO, URLS, PLATAFORMA, DISEÑO, TEXTOS, ESTRUCTURA DEL MENÚ, TODO...]",
+    "sintoma": "[QUÉ HA BAJADO Y CUÁNTO: VISITAS, CONTACTOS, PEDIDOS]"
+  },
+  "entradas": {
+    "trafico_antes_despues": "[PEGA VISITAS POR SEMANA DE LOS 3 MESES ANTERIORES Y DE DESPUÉS]",
+    "paginas_mas_afectadas": "[URLS QUE MÁS HAN CAÍDO]",
+    "errores_detectados": "[ERRORES 404, PÁGINAS NO INDEXADAS O AVISOS DE SEARCH CONSOLE]",
+    "otros_factores": "[ESTACIONALIDAD, CAMPAÑAS PARADAS, SUBIDA DE PRECIOS, CAMBIOS EN EL SECTOR]"
+  },
+  "hipotesis_a_revisar_en_orden": [
+    "La web nueva sigue bloqueada a buscadores o con etiqueta de no indexar",
+    "Redirecciones mal hechas, cadenas, bucles o todo apuntando a la home",
+    "URLs cambiadas sin redirección",
+    "Contenido recortado o textos importantes eliminados en el rediseño",
+    "Títulos y descripciones perdidos o duplicados",
+    "Velocidad de carga peor que antes, sobre todo en móvil",
+    "Medición rota: en realidad no ha caído el tráfico, ha caído el registro",
+    "Formularios o carrito que fallan y no dejan convertir",
+    "Causas ajenas a la web: temporada, competencia o publicidad parada"
+  ],
+  "metodo": "Descartar primero medición rota y bloqueo a buscadores, después lo técnico y por último el contenido; cada hipótesis con la comprobación exacta que la confirma o la descarta",
+  "formato_salida": {
+    "bloque_1": "Resumen en tres frases de qué está pasando",
+    "bloque_2": "Tabla con Hipótesis, Probabilidad alta media o baja, Cómo comprobarlo, Qué hacer si se confirma",
+    "bloque_3": "Plan de acción de las próximas 72 horas ordenado por impacto",
+    "bloque_4": "Plazo razonable de recuperación y qué señales indican que va bien"
+  },
+  "restricciones": [
+    "No afirmar la causa sin decir con qué dato se comprueba",
+    "No prometer plazos ni porcentajes de recuperación",
+    "Separar siempre lo que es efecto normal de una migración de lo que es un fallo"
+  ]
+}

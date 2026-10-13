@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar el informe posterior al incidente de rendimiento de [NOMBRE DE TU SERVICIO] y sacar acciones para que no se repita",
+  "contexto": {
+    "servicio": "[QUÉ SERVICIO SE VIO AFECTADO]",
+    "fecha_y_duracion": "[DÍA, HORA DE INICIO Y CUÁNTO DURÓ]",
+    "impacto": "[USUARIOS, PEDIDOS O TAREAS AFECTADAS]"
+  },
+  "entradas": {
+    "cronologia_en_bruto": "[LO QUE FUE PASANDO Y A QUÉ HORA, TAL CUAL LO RECUERDES]",
+    "senales": "[MENSAJES DE ERROR, GRÁFICAS, REGISTROS O ALERTAS QUE VISTE]",
+    "cambios_recientes": "[DESPLIEGUES, CAMPAÑAS O CAMBIOS DE CONFIGURACIÓN DE LOS DÍAS PREVIOS]",
+    "como_se_resolvio": "[QUÉ HICISTE PARA QUE VOLVIERA A FUNCIONAR]"
+  },
+  "metodo": [
+    "Reconstruye la cronología con horas y separa detección, diagnóstico y resolución",
+    "Busca la causa raíz preguntando por qué cinco veces, y distingue la causa del detonante",
+    "Analiza si fue saturación (demanda por encima de la capacidad), degradación (algo se volvió lento) o efecto dominó entre partes del sistema",
+    "Evalúa por qué no se detectó antes y qué alerta faltaba",
+    "Propón acciones en tres plazos: parche ya, refuerzo esta semana y cambio estructural; cada una con responsable y fecha",
+    "Escribe el texto sin culpar a personas: se analizan sistemas y procesos"
+  ],
+  "restricciones": [
+    "Nada de nombres de personas señalando errores",
+    "No afirmar causas sin dato que las respalde: marca lo que es hipótesis",
+    "Máximo [NÚMERO] acciones para que sean realizables"
+  ],
+  "formato_salida": {
+    "tipo": "informe en markdown + comunicado",
+    "secciones": ["Resumen para dirección en 5 líneas", "Impacto en cifras", "Cronología", "Causa raíz y detonante", "Qué funcionó y qué no", "Acciones con responsable y fecha", "Cómo sabremos que está resuelto"],
+    "anexo": "borrador de mensaje breve y honesto para enviar a clientes afectados"
+  },
+  "criterios_calidad": [
+    "Cada acción ataca una causa concreta del informe",
+    "El resumen se entiende sin conocimientos técnicos",
+    "Incluye al menos una acción de detección, no solo de arreglo"
+  ],
+  "tono": "sereno, honesto y sin excusas"
+}

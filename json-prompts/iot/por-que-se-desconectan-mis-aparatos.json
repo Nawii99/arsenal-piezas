@@ -1,0 +1,47 @@
+{
+  "tarea": "Diagnosticar por capas por que se desconectan o van lentos los dispositivos conectados y dar un plan de arreglo",
+  "contexto": {
+    "sintoma": "[DESCRIPCION EXACTA: QUE APARATO, CADA CUANTO, A QUE HORA]",
+    "afecta_a": "[TODOS LOS DISPOSITIVOS / SOLO UNA MARCA / SOLO UNA ZONA DE LA CASA]",
+    "desde_cuando": "[FECHA O SUCESO: CAMBIO DE ROUTER, MUDANZA, ACTUALIZACION]",
+    "router": "[MARCA, MODELO Y OPERADOR]",
+    "dispositivos": "[NUMERO APROXIMADO Y PROTOCOLOS: WIFI, ZIGBEE, BLUETOOTH]",
+    "distancia_y_obstaculos": "[METROS Y QUE HAY EN MEDIO: PAREDES GRUESAS, ESPEJOS, METAL, NEVERA]"
+  },
+  "metodo": [
+    "1. Delimita: haz una lista de que falla y que NO falla, porque eso ya descarta media investigacion",
+    "2. Capa alimentacion: fuentes baratas y ladrones compartidos causan reinicios; prueba con otro enchufe y otra fuente",
+    "3. Capa radio Wi-Fi: comprueba que la red 2.4 GHz existe y que el aparato no esta intentando entrar en la de 5 GHz; si la red es unica con el mismo nombre, plantea separarla temporalmente para probar",
+    "4. Capa canal: mira saturacion de canales Wi-Fi en 2.4 GHz y usa 1, 6 u 11; si hay Zigbee, comprueba que su canal no se solapa con el del Wi-Fi",
+    "5. Capa numero de clientes: routers de operador flojean por encima de [NUMERO MAXIMO DE DISPOSITIVOS] dispositivos; cuenta cuantos hay",
+    "6. Capa direcciones: revisa si el router reparte y quita IPs continuamente; propon reserva de IP por dispositivo",
+    "7. Capa malla Zigbee: los dispositivos a corriente hacen de repetidor, los de pila no; si toda la malla cuelga de un solo enchufe, refuerza",
+    "8. Prueba final: cambia UNA cosa, deja 24 horas y anota si se repite; nunca cambies tres cosas a la vez"
+  ],
+  "restricciones": [
+    "Un cambio por prueba, con su periodo de observacion",
+    "Nada de reinstalar todo de cero antes de haber aislado la causa",
+    "No cambies contraseñas ni nombre de red sin avisar de que habra que reemparejar",
+    "Si la conclusion es que el router del operador no da mas de si, dilo claramente"
+  ],
+  "errores_frecuentes": [
+    "Meter un repetidor Wi-Fi que crea otra red y empeora el emparejamiento",
+    "Sacar conclusiones tras diez minutos cuando el fallo aparece cada dos dias",
+    "Colocar la pasarela Zigbee pegada al router: se interfieren",
+    "Culpar al aparato mas barato cuando el problema es de cobertura o de fuente de alimentacion",
+    "Actualizar firmware en mitad del diagnostico y perder el rastro"
+  ],
+  "formato_salida": {
+    "resumen": "Causa mas probable en una frase y nivel de confianza alto, medio o bajo",
+    "tabla_descartes": "Hipotesis | Como se comprueba | Resultado | Descartada si",
+    "plan_por_pasos": "Pasos numerados en orden de barato a caro, con tiempo de observacion de cada uno",
+    "que_comprar": "Solo si hace falta, con motivo tecnico y alternativa gratis primero",
+    "como_saber_que_esta_resuelto": "Criterio medible, por ejemplo cero desconexiones en 7 dias"
+  },
+  "criterios_calidad": [
+    "Se prueba lo gratis antes que lo que cuesta dinero",
+    "Cada hipotesis tiene una prueba que la puede tumbar",
+    "Nadie tiene que reinstalar todo el sistema",
+    "El plan lo puede ejecutar alguien sin conocimientos, paso a paso"
+  ]
+}

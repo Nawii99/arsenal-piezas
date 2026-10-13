@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar un contrato mercantil de prestacion de servicios entre una empresa y un profesional autonomo en Espana, con clausulas que refuercen la independencia real del prestador",
+  "partes": {
+    "cliente": "[NOMBRE Y CIF DE TU EMPRESA]",
+    "proveedor": "[NOMBRE Y NIF DEL AUTONOMO]"
+  },
+  "entradas": {
+    "servicio": "[QUE SERVICIO CONTRATAS, EN UNA FRASE]",
+    "entregables": "[LISTA DE ENTREGABLES CONCRETOS]",
+    "precio": "[PRECIO Y SI ES POR PROYECTO, POR HORA O CUOTA MENSUAL]",
+    "forma_pago": "[PLAZO DE PAGO Y METODO]",
+    "duracion": "[DURACION Y PREAVISO PARA TERMINAR]",
+    "herramientas": "[QUIEN PONE EQUIPOS Y PROGRAMAS]"
+  },
+  "clausulas_obligatorias": [
+    "Objeto y entregables medibles",
+    "Independencia: el proveedor organiza su tiempo, medios y metodo, sin horario impuesto ni exclusividad",
+    "Precio, facturacion, IVA e IRPF y plazo de pago segun Ley 3/2004 de morosidad",
+    "Propiedad intelectual y cesion de derechos al pagar",
+    "Confidencialidad y proteccion de datos con encargado de tratamiento si procede",
+    "Responsabilidades, subcontratacion y seguro si aplica",
+    "Duracion, preaviso, causas de resolucion y consecuencias",
+    "Ley aplicable y juzgados competentes"
+  ],
+  "errores_a_evitar": [
+    "Fijar horario fijo, vacaciones o jefe directo dentro del contrato",
+    "Pagar siempre la misma cantidad sin entregables asociados",
+    "Dar correo corporativo, uniforme o tarjeta como si fuera plantilla",
+    "Exclusividad sin compensacion"
+  ],
+  "formato_salida": {
+    "contrato": "Texto completo con clausulas numeradas y espacio para firmas",
+    "aviso_riesgos": "Lista de puntos del encargo que podrian interpretarse como relacion laboral",
+    "dudas": "Preguntas que debe resolver el usuario antes de firmar"
+  },
+  "criterios_calidad": [
+    "Cada obligacion tiene un plazo o una condicion medible",
+    "No hay clausulas copiadas de un contrato laboral",
+    "Incluye aviso de que conviene revisarlo con un abogado"
+  ],
+  "tono": "Claro, directo y sin jerga"
+}

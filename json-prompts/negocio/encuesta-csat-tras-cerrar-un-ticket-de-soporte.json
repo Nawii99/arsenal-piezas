@@ -1,0 +1,31 @@
+{
+  "tarea": "Crear la encuesta de satisfacción de una sola pregunta (CSAT) que se envía al cerrar cada incidencia de soporte",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU NEGOCIO]",
+    "canal_de_soporte": "[EMAIL / CHAT WEB / WHATSAPP / TELÉFONO]",
+    "incidencias_tipicas": "[LAS 3 O 4 COSAS POR LAS QUE MÁS TE ESCRIBEN]",
+    "quien_atiende": "[TÚ SOLO / EQUIPO DE X PERSONAS]"
+  },
+  "diseño_de_la_pregunta": {
+    "enunciado": "Debe referirse a la atención recibida en esa incidencia concreta, no al negocio en general",
+    "escala": "5 puntos con etiqueta escrita en cada punto, de Muy mal a Muy bien, sin números sueltos",
+    "seguimiento": "Una sola pregunta abierta opcional, con texto distinto si la nota es baja o alta"
+  },
+  "entregables": [
+    "Texto de la pregunta y de las 5 etiquetas de la escala",
+    "Mensaje de envío en dos versiones: email (máx 50 palabras) y WhatsApp (máx 25 palabras)",
+    "Protocolo de qué hacer con cada nota: quién responde, en cuánto tiempo y con qué mensaje",
+    "Plantilla de disculpa para notas de 1 y 2 que no promete compensación automática"
+  ],
+  "restricciones": [
+    "Nada de pedir la nota antes de confirmar que el problema está resuelto",
+    "Nunca condicionar la nota (prohibido pedir un 5 o mencionar objetivos internos)",
+    "Un solo envío por incidencia y un máximo de un recordatorio",
+    "No enviar encuesta si el cliente ya ha respondido a otra en los últimos [NÚMERO] días"
+  ],
+  "formato_salida": "Ficha con: pregunta, escala, mensajes por canal y tabla de protocolo (nota | acción | plazo | responsable)",
+  "criterios_calidad": [
+    "El cliente entiende qué se le pregunta sin leer dos veces",
+    "El protocolo cubre las 5 notas posibles, sin huecos"
+  ]
+}

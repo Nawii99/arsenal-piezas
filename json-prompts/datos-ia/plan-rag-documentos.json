@@ -1,0 +1,43 @@
+{
+  "tarea": "montar_rag_sobre_mis_documentos",
+  "contexto": {
+    "perfil": "persona sin conocimientos de programacion",
+    "equipo": {"sistema": "[Windows|Mac|Linux]", "memoria_ram_gb": "[NUMERO]", "grafica": "[MODELO O ninguna]"},
+    "documentos": {
+      "tema": "[DE QUE VAN TUS DOCUMENTOS]",
+      "formatos": ["pdf", "docx", "txt"],
+      "cantidad": "[CUANTOS ARCHIVOS]",
+      "idioma": "es-ES",
+      "contienen_datos_personales": "[si|no]"
+    },
+    "presupuesto_mensual_euros": "[NUMERO O 0]"
+  },
+  "reglas": {
+    "privacidad": [
+      "si contienen_datos_personales es si, proponer solo opciones que funcionen dentro de mi ordenador",
+      "no subir ningun archivo a un servicio externo sin pedirme permiso antes y decirme donde se guarda y cuanto tiempo",
+      "ninguna decision sobre una persona se toma con la respuesta del sistema sin que la revise yo"
+    ],
+    "estilo": ["espanol de Espana", "sin anglicismos evitables", "pasos numerados que pueda seguir sin programar"],
+    "honestidad": ["si una opcion cuesta dinero, decir cuanto al mes", "si algo puede fallar, decirlo en el mismo paso"]
+  },
+  "plan_esperado": {
+    "pasos": [
+      {"orden": 1, "nombre": "preparar los archivos", "detalle_minimo": "como ordenarlos, que quitar y que hacer con los PDF escaneados"},
+      {"orden": 2, "nombre": "trocear el texto", "detalle_minimo": "tamano de trozo y solape recomendados y por que esos numeros"},
+      {"orden": 3, "nombre": "elegir modelo de incrustaciones", "detalle_minimo": "dos opciones, una que funcione en mi equipo y otra de pago con precio por millon de palabras"},
+      {"orden": 4, "nombre": "elegir base vectorial", "detalle_minimo": "dos opciones con su limite gratuito real"},
+      {"orden": 5, "nombre": "probar y evaluar", "detalle_minimo": "10 preguntas de prueba con la respuesta que espero y como puntuar si acierta"}
+    ],
+    "riesgos": {
+      "alucinaciones": "como detectar que se inventa una respuesta y como obligarle a citar el documento y la pagina",
+      "coste": "de donde sale el gasto y que pasa si subo mas documentos",
+      "datos_personales": "que no debo hacer nunca con estos archivos"
+    }
+  },
+  "salida": {
+    "formato": "lista de pasos numerados",
+    "cada_paso_incluye": ["que hago yo", "que hace el ordenador", "como se si ha salido bien"],
+    "al_final": "tabla comparativa de las opciones propuestas con coste mensual y donde se guardan mis datos"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Definir la política de retención, cifrado y control de acceso de las copias de seguridad de una base de datos con datos personales, y cómo responder a una solicitud de supresión",
+  "contexto": {
+    "pais_de_actividad": "España",
+    "datos_personales": "[QUÉ GUARDAS: nombre, email, teléfono, dirección, datos de salud, datos de pago...]",
+    "volumen_de_clientes": "[NÚMERO APROXIMADO]",
+    "donde_estan_las_copias": "[PROVEEDOR Y PAÍS DEL CENTRO DE DATOS]",
+    "quien_accede": "[PERSONAS O EMPRESAS CON ACCESO A LAS COPIAS]",
+    "obligaciones_conocidas": "[FACTURAS 4 AÑOS, CONTRATOS, NORMATIVA DEL SECTOR...]",
+    "herramientas": "[CON QUÉ HACES LAS COPIAS HOY]"
+  },
+  "instrucciones": [
+    "Propón una tabla de retención por tipo de dato: cuánto se conserva, por qué motivo y qué pasa al vencer el plazo",
+    "Diferencia con claridad la base de datos viva de las copias: en las copias no se puede borrar una fila suelta, y explica cómo se gestiona eso en la práctica",
+    "Detalla el cifrado recomendado en tránsito y en reposo, y dónde se guarda la clave para que no se pierda con el servidor",
+    "Define quién puede acceder, quién puede borrar copias y cómo queda registrado",
+    "Redacta el procedimiento para una solicitud de supresión: borrado en la base viva, marca del caso, y supresión efectiva en copias cuando expire el ciclo de retención, con el plazo comunicado al cliente",
+    "Añade un texto breve y honesto para tu política de privacidad sobre las copias de seguridad",
+    "Cierra con las señales de alerta que exigirían consultar con un asesor legal"
+  ],
+  "restricciones": [
+    "No des asesoramiento legal definitivo: recomienda revisión profesional en los puntos delicados",
+    "Nada de plazos legales inventados; si no estás seguro, dilo y señala qué hay que confirmar",
+    "Lenguaje llano, sin copiar artículos enteros de la norma"
+  ],
+  "formato_salida": {
+    "tipo": "documento de política interna",
+    "secciones": ["Tabla de retención", "Cifrado y gestión de claves", "Quién accede y quién borra", "Procedimiento de supresión", "Texto para la política de privacidad", "Cuándo llamar a un asesor"]
+  },
+  "criterios_calidad": [
+    "Cada plazo de conservación tiene un motivo escrito al lado",
+    "El procedimiento de supresión es realista con copias inmutables",
+    "La clave de cifrado no queda guardada en el mismo sitio que las copias"
+  ],
+  "tono": "serio y claro, sin alarmismo legal"
+}

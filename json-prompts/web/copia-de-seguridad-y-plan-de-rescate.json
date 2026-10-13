@@ -1,0 +1,60 @@
+{
+  "tarea": "Diseñar el sistema de copias de seguridad y el plan de restauración de [URL_WEB]",
+  "contexto": {
+    "negocio": "[NOMBRE Y QUÉ APORTA LA WEB AL NEGOCIO]",
+    "tipo_de_web": "[HTML ESTÁTICO / WORDPRESS / TIENDA / WEB CON RESERVAS]",
+    "hosting_y_dominio": "[PROVEEDOR DE HOSTING] Y [REGISTRADOR DEL DOMINIO]",
+    "cuanto_puede_estar_caida": "[HORAS ACEPTABLES SIN WEB]",
+    "cuantos_datos_puede_perder": "[HORAS O DÍAS DE CONTENIDO ASUMIBLES]"
+  },
+  "entradas": {
+    "que_hay_en_la_web": "[PÁGINAS, IMÁGENES, PEDIDOS, CLIENTES, RESERVAS, ARTÍCULOS]",
+    "copias_actuales": "[NINGUNA / LAS DEL HOSTING / MANUALES DE VEZ EN CUANDO]",
+    "quien_tiene_los_accesos": "[PERSONAS Y DÓNDE ESTÁN GUARDADAS LAS CONTRASEÑAS]",
+    "almacenamiento_disponible": "[GOOGLE DRIVE / DISCO EXTERNO / GITHUB / OTRO]"
+  },
+  "procedimiento": [
+    "1. Inventaría los cuatro bloques: archivos, base de datos, cuentas y accesos, y configuración de dominio y correo",
+    "2. Asigna a cada bloque una frecuencia según cuánto cambia y cuánto duele perderlo",
+    "3. Aplica la regla tres copias, dos soportes distintos, una fuera del hosting",
+    "4. Elige el método más simple que funcione: exportación del panel, plugin gratuito o repositorio de código",
+    "5. Automatiza lo que se pueda y pon recordatorio en el calendario para lo manual",
+    "6. Documenta el procedimiento de restauración paso a paso, como si lo fuera a hacer otra persona",
+    "7. Guarda aparte la lista de accesos críticos: dominio, hosting, correo, pasarela de pago",
+    "8. Haz una restauración de prueba real en un subdominio y cronometra cuánto tarda",
+    "9. Fija una revisión cada seis meses"
+  ],
+  "que_mirar": [
+    "Que la copia no viva solo en el mismo hosting que la web",
+    "Que la base de datos y los archivos correspondan a la misma fecha",
+    "Que las copias no contengan datos personales sin protección",
+    "Que el dominio tenga renovación automática y contacto de correo válido",
+    "Que alguien más pueda acceder a los accesos si tú no estás"
+  ],
+  "errores_tipicos": [
+    "Confiar en la copia del hosting sin haberla restaurado jamás",
+    "Guardar copias en la cuenta de correo del propio dominio caído",
+    "Copiar los archivos y olvidar la base de datos, donde están los pedidos",
+    "Acumular copias hasta llenar el espacio y que el sistema deje de copiar",
+    "No apuntar las contraseñas de la pasarela de pago ni del registrador"
+  ],
+  "restricciones": [
+    "Solo herramientas gratuitas o ya contratadas",
+    "El plan debe caber en dos folios y ser ejecutable por alguien ajeno al negocio",
+    "No incluyas contraseñas reales en el documento del plan"
+  ],
+  "formato_salida": {
+    "1_inventario": "Tabla: elemento | dónde vive | cada cuánto se copia | dónde se guarda | quién lo hace",
+    "2_instrucciones_copia": "Pasos numerados para cada tipo de copia con el nombre de los botones",
+    "3_plan_de_rescate": "Procedimiento de restauración en orden, con tiempos estimados por paso",
+    "4_hoja_de_accesos": "Plantilla de accesos críticos indicando dónde guardarla, sin rellenar contraseñas",
+    "5_calendario": "Qué se hace cada semana, cada mes y cada seis meses",
+    "6_prueba": "Guion de la prueba de restauración y qué resultado confirma que ha ido bien"
+  },
+  "criterios_calidad": [
+    "Existe al menos una copia fuera del hosting",
+    "El plan de rescate incluye una prueba ya realizada con su fecha",
+    "Cualquier persona ajena podría restaurar la web siguiendo el documento",
+    "Nada del plan depende de recordar algo de memoria"
+  ]
+}

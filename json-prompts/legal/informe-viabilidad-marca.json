@@ -1,0 +1,44 @@
+{
+  "tarea": "generar_informe_viabilidad_marca",
+  "rol": "Asistente que redacta el informe de viabilidad de una marca para un cliente que paga por el servicio",
+  "instrucciones": "Usa los resultados de las búsquedas en OEPM, EUIPO, dominios y redes sociales para rellenar la plantilla. No inventes resultados: si falta un dato, escribe null y dilo en el apartado de avisos.",
+  "entrada": {
+    "nombre_marca": "[NOMBRE]",
+    "clases_niza": ["[CLASE]"],
+    "pais_objetivo": "[España o Unión Europea]",
+    "cliente": {
+      "nombre": "[NOMBRE CLIENTE]",
+      "email": "[EMAIL CLIENTE]"
+    }
+  },
+  "resultados_busqueda": {
+    "oepm": {
+      "coincidencias_exactas": [],
+      "coincidencias_similares": [],
+      "fecha_consulta": "[FECHA]"
+    },
+    "euipo": {
+      "coincidencias_exactas": [],
+      "coincidencias_similares": [],
+      "fecha_consulta": "[FECHA]"
+    },
+    "dominios": {
+      "es": "[libre/ocupado]",
+      "com": "[libre/ocupado]",
+      "eu": "[libre/ocupado]"
+    },
+    "redes_sociales": {
+      "instagram": "[libre/ocupado]",
+      "x": "[libre/ocupado]",
+      "linkedin": "[libre/ocupado]"
+    }
+  },
+  "salida_esperada": {
+    "semaforo": "[verde/amarillo/rojo]",
+    "resumen": "[una frase con el veredicto]",
+    "recomendacion": "[qué debería hacer el cliente a continuación]",
+    "honorarios_servicio": "[EUROS]",
+    "tasas_oficiales_estimadas": "[EUROS, consultar tarifa vigente de la OEPM]",
+    "disclaimer": "Esta comprobación es orientativa y no sustituye una búsqueda de novedad oficial ni asesoría de un agente de la propiedad industrial colegiado."
+  }
+}

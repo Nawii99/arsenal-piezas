@@ -1,0 +1,34 @@
+{
+  "tarea": "Comprimir un texto hasta un límite exacto de caracteres conservando el mensaje que más vende",
+  "entradas": {
+    "texto_original": "[PEGA AQUÍ EL TEXTO LARGO]",
+    "limite_caracteres": "[NÚMERO EXACTO, EJ. 90]",
+    "ubicacion": "[TITULAR DE GOOGLE ADS / ASUNTO DE EMAIL / BIO / META DESCRIPCIÓN / SUBTÍTULO]",
+    "innegociable": "[PALABRA, MARCA, PRECIO U OFERTA QUE DEBE APARECER SÍ O SÍ]"
+  },
+  "proceso": [
+    "1. Extraer del original el beneficio principal y el elemento innegociable",
+    "2. Eliminar por este orden: relleno, adjetivos, matices, contexto y por último detalle",
+    "3. Sustituir expresiones largas por equivalentes cortos sin cambiar el sentido",
+    "4. Contar los caracteres con espacios de cada versión y escribir el número",
+    "5. Descartar cualquier versión que se pase, aunque sea por un carácter"
+  ],
+  "restricciones": [
+    "No usar abreviaturas raras ni quitar tildes para ganar espacio",
+    "No cortar a mitad de idea ni terminar en puntos suspensivos",
+    "No inventar ofertas ni cifras para acortar",
+    "Español de España"
+  ],
+  "formato_salida": {
+    "opcion_a": "Versión más fiel al original, con recuento de caracteres",
+    "opcion_b": "Versión más directa y comercial, con recuento",
+    "opcion_c": "Versión con el beneficio al principio, con recuento",
+    "recomendada": "Cuál elegirías para la ubicación indicada y por qué, en dos líneas",
+    "que_se_ha_perdido": "Lista de lo que ha quedado fuera por si es importante"
+  },
+  "criterios_calidad": [
+    "Las tres opciones respetan el límite exacto",
+    "Las tres contienen el elemento innegociable",
+    "Ninguna suena telegráfica ni forzada"
+  ]
+}

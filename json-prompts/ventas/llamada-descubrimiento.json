@@ -1,0 +1,55 @@
+{
+  "tarea": "Escribe el guion completo de una llamada de descubrimiento de 25 minutos para decidir si merece la pena mandar propuesta a este posible cliente y, si merece la pena, con qué información hacerla.",
+  "contexto": {
+    "que_vendo": "[QUÉ VENDO, UNA FRASE]",
+    "precio_habitual": "[PRECIO O HORQUILLA DE PRECIOS]",
+    "canal": "[TELÉFONO / VIDEOLLAMADA / PRESENCIAL]",
+    "origen_del_contacto": "[ANUNCIO / RECOMENDACIÓN / FORMULARIO WEB / FERIA / MENSAJE FRÍO]",
+    "quien_soy": "[AUTÓNOMO O EQUIPO PEQUEÑO], sin departamento comercial y con poco tiempo"
+  },
+  "entradas": {
+    "lo_que_ya_se": "[LO QUE PUSO EN EL FORMULARIO O ME CONTÓ POR MENSAJE]",
+    "sector_del_cliente": "[SECTOR]",
+    "tamano_del_cliente": "[Nº DE EMPLEADOS O FACTURACIÓN APROXIMADA SI LA SÉ]",
+    "motivo_aparente": "[LO QUE DICE QUE NECESITA]"
+  },
+  "metodo": [
+    "1. Apertura de 30 segundos: agradecer, decir cuánto dura la llamada, pedir permiso para preguntar y avisar de que al final le diré con sinceridad si le puedo ayudar o no.",
+    "2. Situación: tres preguntas sobre cómo lo hace hoy, con qué herramientas y quién se encarga.",
+    "3. Problema: tres preguntas sobre qué falla, desde cuándo y qué han probado ya que no funcionó.",
+    "4. Coste del problema: llevarle a ponerle número o tiempo (horas al mes, pedidos perdidos, clientes que se van, penalizaciones).",
+    "5. Decisión: quién más opina, con qué presupuesto cuenta y para cuándo lo quiere resuelto.",
+    "6. Encaje: contar en dos frases un caso parecido y preguntar si se parece a lo suyo.",
+    "7. Cierre: resumir con sus propias palabras, decir si encaja o no, y acordar siguiente paso con día y hora concretos."
+  ],
+  "reglas_de_conversacion": [
+    "Preguntas abiertas y de una en una; nada de encadenar dos preguntas seguidas.",
+    "Después de cada respuesta, callar tres segundos antes de hablar.",
+    "No presentar el producto hasta el punto 6; si pregunta el precio antes, dar la horquilla y volver a preguntar.",
+    "Anotar sus palabras literales sobre el problema para reutilizarlas luego en la propuesta."
+  ],
+  "errores_a_evitar": [
+    "Hablar más del 40% del tiempo.",
+    "Aceptar respuestas vagas del tipo queremos crecer sin pedir un ejemplo concreto de la última vez que pasó.",
+    "Terminar sin fecha para el siguiente paso, dejando un ya te digo algo.",
+    "Descartar por presupuesto sin haber medido antes el coste del problema."
+  ],
+  "formato_salida": {
+    "bloque_1": "Guion literal, frase a frase, con las preguntas numeradas y entre paréntesis qué escucho en cada una.",
+    "bloque_2": "Tres bifurcaciones con lo que digo si contesta ya lo estamos haciendo interno, no tengo presupuesto ahora, o lo tengo que consultar.",
+    "bloque_3": "Ficha de una página para rellenar durante la llamada con: problema en sus palabras, coste, quién decide, presupuesto, fecha y siguiente paso.",
+    "bloque_4": "Semáforo de decisión con las condiciones exactas para verde (mando propuesta), ámbar (pido un dato más) y rojo (le digo que no encaja y le recomiendo alternativa)."
+  },
+  "restricciones": [
+    "Español de España, tuteando y sin jerga comercial americana.",
+    "Frases cortas, como se habla, no como se escribe.",
+    "Nada de técnicas de presión ni urgencias falsas."
+  ],
+  "criterios_calidad": [
+    "Puedo leer el guion en voz alta y suena a persona normal.",
+    "Al acabar la llamada tengo la ficha rellena y sé si es verde, ámbar o rojo.",
+    "Hay al menos una pregunta que obliga al cliente a poner un número.",
+    "El semáforo tiene condiciones objetivas, no opiniones."
+  ],
+  "si_faltan_datos": "Hazme como máximo cinco preguntas antes de escribir el guion; si no contesto, asume lo más habitual en el sector y márcalo como supuesto."
+}

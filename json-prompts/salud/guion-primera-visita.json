@@ -1,0 +1,58 @@
+{
+  "tarea": "Escribir el guion completo de la primera visita de valoracion, minuto a minuto, incluyendo acogida, entrevista, explicacion del plan, presentacion del precio y cierre, sin diagnosticar ni prometer resultados",
+  "contexto": {
+    "tipo_de_servicio": "[SERVICIO PRINCIPAL DEL CENTRO]",
+    "duracion_primera_visita": "[MINUTOS TOTALES]",
+    "precio_primera_visita": "[PRECIO Y SI SE DESCUENTA DEL PLAN]",
+    "planes_disponibles": "[BONOS O PLANES CON NUMERO DE SESIONES Y PRECIO]",
+    "quien_atiende": "[EL PROFESIONAL, Y SI HAY RECEPCION QUE HACE ELLA]",
+    "perfil_habitual": "[QUIEN SUELE VENIR Y QUE LE PREOCUPA]"
+  },
+  "entradas": {
+    "tasa_actual_de_cierre": "[DE CADA 10 PRIMERAS VISITAS, CUANTAS SIGUEN, SI LO SABES]",
+    "objeciones_frecuentes": "[LO QUE MAS TE DICEN PARA NO EMPEZAR]",
+    "limites_legales": "[LO QUE NO PUEDES AFIRMAR EN TU PROFESION]"
+  },
+  "pasos": [
+    "1. Reparte los minutos en cinco bloques: acogida y encuadre, escucha, exploracion o valoracion propia de tu ambito, devolucion en lenguaje llano y propuesta",
+    "2. Escribe el encuadre inicial de 30 segundos: como va a ir la visita, cuanto dura y que se lleva al salir; asi se elimina la ansiedad de no saber que pasa",
+    "3. Redacta las preguntas de escucha en orden embudo: motivo con sus palabras, desde cuando, que ha probado, que le impide hacer y que quiere volver a poder hacer",
+    "4. Marca la regla de los dos minutos sin interrumpir al principio y donde apuntar lo que dice literalmente",
+    "5. Escribe la devolucion en lenguaje llano con la estructura: esto es lo que veo dentro de mi ambito, esto es lo que propongo y esto es lo que espero revisar en X sesiones",
+    "6. Escribe la presentacion del plan y del precio: numero de sesiones, frecuencia, precio total, formas de pago y que pasa si quiere parar",
+    "7. Coloca el precio despues del valor y antes de la pregunta de cierre, dicho sin disculparse y seguido de silencio",
+    "8. Prepara la respuesta a cinco objeciones habituales sin presionar, incluida la salida digna 'piensatelo y te escribo el jueves'",
+    "9. Define que se lleva el paciente al salir: resumen escrito del plan, proxima cita agendada y a quien escribir si duda",
+    "10. Anade el registro interno de la visita: motivo, propuesta hecha, decision y motivo si no sigue"
+  ],
+  "restricciones": [
+    "Nada de diagnosticar ni de usar etiquetas clinicas que no correspondan a tu profesion",
+    "Prohibido prometer curacion, plazos exactos de mejoria o resultados garantizados",
+    "Prohibida cualquier tecnica de presion: ofertas que caducan hoy, urgencia falsa o miedo",
+    "El precio siempre se dice completo y de viva voz, nunca solo por escrito al final",
+    "Si el caso no es para ti, el guion incluye derivar"
+  ],
+  "errores_tipicos": [
+    "Hablar el 80 por ciento del tiempo y no dejar contar el motivo real de la visita",
+    "Usar vocabulario tecnico que el paciente no entiende y que le deja sin saber que le pasa",
+    "Dejar la propuesta en 'ya me diras' sin fecha ni siguiente paso",
+    "Bajar el precio en cuanto el paciente duda",
+    "No agendar la siguiente cita antes de que salga por la puerta"
+  ],
+  "formato_salida": {
+    "bloque_1": "Reparto de minutos por bloque",
+    "bloque_2": "Guion con frases literales entre comillas y acotaciones de que hacer",
+    "bloque_3": "Lista de preguntas de escucha en orden",
+    "bloque_4": "Tabla de objeciones con respuesta y salida digna",
+    "bloque_5": "Hoja de resumen que se lleva el paciente",
+    "bloque_6": "Registro interno de la visita",
+    "idioma": "Espanol de Espana, frases cortas, listo para leer en voz alta"
+  },
+  "criterios_calidad": [
+    "El guion cabe en el tiempo declarado sin ir corriendo",
+    "Ninguna frase promete resultados ni suena a diagnostico",
+    "El precio aparece dicho en voz alta con una frase concreta",
+    "Hay una salida escrita para el caso de que el paciente no quiera empezar",
+    "Otro profesional del centro podria usarlo tal cual"
+  ]
+}

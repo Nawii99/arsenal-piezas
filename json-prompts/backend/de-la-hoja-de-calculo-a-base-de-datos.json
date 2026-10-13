@@ -1,0 +1,53 @@
+{
+  "tarea": "Migrar los datos de mi hoja de cálculo a una base de datos, limpiándolos por el camino y demostrando con cifras que no se ha perdido ni deformado nada",
+  "contexto": {
+    "origen": "[EXCEL / GOOGLE SHEETS / VARIOS ARCHIVOS]",
+    "filas_y_columnas": "[APROXIMADAS]",
+    "destino": "[POSTGRES / SUPABASE / MYSQL / AIRTABLE / NO LO SÉ]",
+    "quien_sigue_usando_la_hoja": "[NADIE TRAS LA MIGRACIÓN / ALGUIEN DURANTE UN TIEMPO]"
+  },
+  "entradas": {
+    "muestra": "[PEGA LAS 20 PRIMERAS FILAS CON SUS CABECERAS]",
+    "significado_de_columnas": "[EXPLICA LAS COLUMNAS CUYO NOMBRE NO SE ENTIENDA]",
+    "reglas_del_negocio": "[EJ: UN CLIENTE NO PUEDE REPETIR NIF; EL IMPORTE NUNCA ES NEGATIVO]",
+    "suciedad_conocida": "[FILAS EN BLANCO, TOTALES A MITAD, COLORES QUE SIGNIFICAN ALGO, COMENTARIOS]"
+  },
+  "pasos": [
+    "1. Haz el perfilado de la muestra: por columna, tipo real, valores vacíos, valores raros, formatos mezclados y valores únicos",
+    "2. Detecta el significado escondido en el formato: colores, negritas, notas y filas de subtotal, y conviértelo en columnas explícitas",
+    "3. Propón el esquema de destino y la correspondencia columna a columna, incluyendo qué se descarta y por qué",
+    "4. Define las reglas de normalización: fechas a ISO, decimales con punto, importes en céntimos, teléfonos y NIF con formato único, textos recortados",
+    "5. Define la clave para detectar duplicados y la regla para decidir cuál gana cuando dos filas se refieren a lo mismo",
+    "6. Escribe el script de importación por lotes, que valide antes de insertar y separe las filas rechazadas en un archivo aparte con el motivo",
+    "7. Ejecuta primero en modo simulación sobre una copia y muestra el informe sin escribir nada",
+    "8. Comprueba el cuadre: total de filas de origen igual a importadas más rechazadas, y suma de importes idéntica hasta el céntimo",
+    "9. Decide la convivencia: cuánto tiempo sigue viva la hoja, si se sincroniza en un sentido y cuándo se congela en solo lectura",
+    "10. Deja el archivo original intacto y guardado como copia con fecha"
+  ],
+  "restricciones": [
+    "No modifiques ni sobreescribas el archivo original en ningún caso",
+    "Ninguna fila se descarta en silencio: todo rechazo va al informe con su motivo",
+    "No adivines valores que faltan; márcalos para revisión manual",
+    "Si una regla de negocio no está clara, pregunta antes de importar"
+  ],
+  "formato_salida": {
+    "1_perfilado": "Tabla markdown: columna, tipo detectado, vacíos, ejemplos raros, decisión",
+    "2_esquema_y_mapa": "SQL de creación y tabla de correspondencia origen-destino",
+    "3_script": "Script de importación comentado en [LENGUAJE] con modo simulación",
+    "4_informe": "Formato del informe de importación y del archivo de rechazos",
+    "5_cuadre": "Consultas de comprobación de totales",
+    "6_plan_convivencia": "Pasos y fecha de congelación de la hoja"
+  },
+  "criterios_calidad": [
+    "Filas de origen igual a importadas más rechazadas, sin diferencias",
+    "La suma de importes coincide al céntimo con la hoja",
+    "Toda fila rechazada tiene motivo entendible",
+    "Reejecutar la importación no crea registros duplicados"
+  ],
+  "errores_tipicos": [
+    "Perder los ceros a la izquierda de códigos postales y de identificadores",
+    "Confundir el formato de fecha día-mes con mes-día y desplazar medio año de datos",
+    "Importar las filas de totales como si fueran registros",
+    "Perder el significado que estaba solo en el color de la celda"
+  ]
+}

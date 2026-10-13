@@ -1,0 +1,36 @@
+{
+  "tarea": "Redactar el prompt de imagen para hacer home staging virtual sobre la foto de una estancia vacía, manteniendo intacta la arquitectura real",
+  "entradas": {
+    "foto_de_partida": "[ADJUNTA LA FOTO DE LA ESTANCIA VACÍA]",
+    "estancia": "[SALÓN / DORMITORIO PRINCIPAL / COCINA / TERRAZA]",
+    "superficie_aprox": "[METROS CUADRADOS]",
+    "estilo": "[NÓRDICO CLARO / MEDITERRÁNEO / INDUSTRIAL / CLÁSICO SOBRIO]",
+    "comprador_objetivo": "[PAREJA JOVEN / FAMILIA CON NIÑOS / INVERSOR PARA ALQUILAR]",
+    "elementos_intocables": "[SUELO, VENTANAS, RADIADORES, VIGAS, PUERTAS]",
+    "herramienta": "[NANO BANANA / MIDJOURNEY / FLUX / GEMINI]"
+  },
+  "procedimiento": [
+    "Describe primero la escena real que se ve en la foto: dimensiones aparentes, dirección de la luz de ventana, color de suelo y paredes",
+    "Añade el mobiliario concreto y su colocación, en cantidad realista para los metros indicados, sin llenar la estancia",
+    "Indica que la luz de los muebles nuevos debe coincidir en dirección, dureza y temperatura con la luz de la ventana original",
+    "Especifica que la perspectiva, la altura de cámara y las líneas de fuga de la foto original se mantienen",
+    "Añade paleta de color de 3 tonos coherente con el estilo y el comprador objetivo",
+    "Cierra el prompt con parámetros técnicos: foto de interiorismo, luz natural, sin gente, sin texto, sin marcas"
+  ],
+  "restricciones": [
+    "No cambiar suelo, ventanas, distribución ni tamaño de la estancia: solo se añaden muebles y decoración",
+    "No tapar defectos visibles del inmueble con muebles colocados a propósito",
+    "El resultado debe declararse como imagen recreada cuando se publique"
+  ],
+  "formato_salida": {
+    "bloque_1": "Prompt principal en inglés, en un solo párrafo, listo para copiar",
+    "bloque_2": "Prompt negativo (qué no queremos: distorsión, muebles flotando, dobles sombras, texto)",
+    "bloque_3": "Tres variantes del mismo espacio con distinto estilo de decoración",
+    "bloque_4": "Frase de aviso legal para poner en el pie de la imagen publicada"
+  },
+  "criterios_calidad": [
+    "Las sombras de los muebles caen hacia el mismo lado que las de la foto original",
+    "Los muebles tienen tamaño coherente con puertas y ventanas",
+    "Se reconoce que es la misma estancia de la foto de partida"
+  ]
+}

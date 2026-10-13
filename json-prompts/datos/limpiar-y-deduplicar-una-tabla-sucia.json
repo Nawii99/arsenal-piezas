@@ -1,0 +1,35 @@
+{
+  "tarea": "Detectar y corregir duplicados, valores inconsistentes y huecos en una tabla, entregando SQL de diagnóstico y de limpieza por separado",
+  "entradas": {
+    "tabla": "[NOMBRE DE LA TABLA Y SUS COLUMNAS CON TIPO]",
+    "motor_sql": "[POSTGRESQL / MYSQL / SQL SERVER / SQLITE]",
+    "definicion_duplicado": "[QUÉ CONSIDERAS EL MISMO REGISTRO, EJ: MISMO EMAIL O MISMO NIF]",
+    "cual_sobrevive": "[EL MÁS RECIENTE / EL MÁS COMPLETO / EL QUE TIENE PEDIDOS]",
+    "problemas_detectados": "[EJ: MAYÚSCULAS Y ESPACIOS, TELÉFONOS CON FORMATOS DISTINTOS, FECHAS EN TEXTO]",
+    "volumen": "[FILAS APROXIMADAS]"
+  },
+  "procedimiento": [
+    "1. Fase diagnóstico: consultas de solo lectura que cuentan duplicados, nulos, valores raros y formatos distintos por columna",
+    "2. Fase normalización: recortar espacios, unificar mayúsculas, limpiar teléfonos, tipar fechas e importes",
+    "3. Fase deduplicación: agrupar por la clave de duplicado y elegir superviviente con ROW_NUMBER y criterio explícito",
+    "4. Fase fusión: trasladar al superviviente los datos que solo tienen los descartados y reapuntar las tablas relacionadas",
+    "5. Fase prevención: restricción UNIQUE o índice que impida que vuelva a pasar"
+  ],
+  "restricciones": [
+    "Antes de borrar nada, copiar las filas afectadas a una tabla de respaldo con la fecha en el nombre",
+    "Nunca borrar un registro que tenga pedidos, facturas o citas asociadas sin reapuntarlos primero",
+    "Cada sentencia de limpieza va acompañada del SELECT que muestra qué va a cambiar",
+    "Respetar la protección de datos: no exportar datos personales fuera de la base"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Consultas de conteo con una línea explicando qué revela cada una",
+    "2_normalizacion": "SQL de limpieza por columna",
+    "3_deduplicacion": "SQL de respaldo, selección de superviviente, fusión y borrado, en ese orden",
+    "4_prevencion": "Restricciones e índices para que no se repita",
+    "5_checklist": "Pasos numerados a ejecutar en orden y qué comprobar tras cada uno"
+  },
+  "criterios_calidad": [
+    "El recuento de clientes reales no cambia por accidente: se explica cuántas filas se eliminan y por qué",
+    "Ninguna tabla relacionada queda apuntando a un registro borrado"
+  ]
+}

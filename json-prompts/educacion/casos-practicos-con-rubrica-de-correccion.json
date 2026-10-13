@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar casos prácticos de evaluación y su rúbrica de corrección",
+  "entradas": {
+    "tema": "[TEMA O MÓDULO]",
+    "competencia_evaluada": "[QUÉ DEBE DEMOSTRAR QUE SABE HACER]",
+    "sector": "[SECTOR O CONTEXTO REAL DE LOS CASOS]",
+    "numero_casos": "[CUÁNTOS CASOS]",
+    "tiempo_entrega": "[EN CLASE / DEBERES DE UNA SEMANA / PROYECTO FINAL]",
+    "trabajo": "[INDIVIDUAL / EN GRUPO]"
+  },
+  "diseno_de_cada_caso": [
+    "Situación de partida en 5 o 6 líneas con datos concretos y un cliente o problema creíble",
+    "Encargo: qué tiene que entregar el alumno, en qué formato y con qué extensión",
+    "Restricción realista: presupuesto, plazo, normativa o recurso limitado",
+    "Un dato distractor que no hace falta usar",
+    "Pistas escalonadas: tres pistas que el profesor puede soltar si el grupo se atasca"
+  ],
+  "rubrica": {
+    "criterios": "Entre 4 y 6, cada uno con su peso en porcentaje sumando 100",
+    "niveles": "Cuatro niveles descritos con conducta observable: excelente, adecuado, insuficiente y no entregado",
+    "regla": "Nada de adjetivos sueltos: cada nivel describe qué se ve en el trabajo entregado"
+  },
+  "formato_salida": {
+    "bloque_1": "HOJA DEL ALUMNO: casos y rúbrica visible, porque el alumno debe conocer los criterios antes de empezar",
+    "bloque_2": "GUÍA DEL PROFESOR: solución orientativa de cada caso, respuestas aceptables alternativas y errores esperables",
+    "bloque_3": "Rúbrica en tabla lista para copiar en una hoja de cálculo"
+  },
+  "restricciones": [
+    "No uses empresas ni personas reales: inventa nombres neutros",
+    "Cada caso se resuelve solo con lo enseñado en el módulo"
+  ],
+  "criterios_calidad": [
+    "Dos profesores distintos corrigen el mismo trabajo y llegan a una nota parecida",
+    "El alumno sabe antes de entregar qué le van a puntuar",
+    "Corregir un trabajo con la rúbrica lleva pocos minutos"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "tarea": "Escribir los microtextos de una app móvil: botones, mensajes de error, estados vacíos, confirmaciones, avisos de permiso y textos de carga",
+  "contexto": {
+    "app": "[NOMBRE Y PARA QUÉ SIRVE]",
+    "tono_de_marca": "[CERCANO, PROFESIONAL, DIVERTIDO O SERIO]",
+    "tratamiento": "[TÚ O USTED]",
+    "situaciones": "[LISTA DE PANTALLAS Y MOMENTOS QUE NECESITAN TEXTO]",
+    "palabras_prohibidas": "[JERGA O TÉRMINOS QUE NO QUIERES USAR]"
+  },
+  "reglas_de_escritura": [
+    "Botones con verbo y resultado: Guardar cambios, no Aceptar",
+    "Errores en tres partes: qué ha pasado, por qué y qué hacer ahora",
+    "Nunca culpar al usuario ni mostrar códigos técnicos sin traducir",
+    "Estados vacíos con una frase de contexto y un botón para empezar",
+    "Títulos de 40 caracteres o menos, cuerpo de 120 o menos",
+    "Mismo verbo para la misma acción en toda la app"
+  ],
+  "formato_salida": {
+    "tabla": ["Pantalla o situación", "Tipo (botón, error, vacío, aviso, éxito)", "Título", "Texto de apoyo", "Botón principal", "Botón secundario", "Nº de caracteres"],
+    "despues": [
+      "Glosario: lista de términos y cómo se dicen siempre en la app",
+      "3 mensajes de error mal escritos que suelen aparecer y su versión corregida",
+      "Lista de textos que deberían acortarse si el idioma se traduce a otro más largo"
+    ]
+  },
+  "criterios_calidad": [
+    "Todos los textos caben en una pantalla de móvil sin cortarse",
+    "Ningún error deja al usuario sin saber qué hacer después",
+    "Se puede copiar y pegar la tabla directamente al desarrollador",
+    "El tono es el mismo en los 3 tipos de mensaje"
+  ],
+  "idioma": "[ESPAÑOL DE ESPAÑA U OTRO]"
+}

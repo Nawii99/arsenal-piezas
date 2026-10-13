@@ -1,0 +1,57 @@
+{
+  "tarea": "Preparar el protocolo de comunicación de incidencias: página de estado, mensajes previos, escalado y informe posterior",
+  "contexto": {
+    "servicio": "[QUÉ SERVICIO PUEDE CAERSE Y A QUIÉN AFECTA]",
+    "clientes": "[CUÁNTOS SON Y POR DÓNDE SE COMUNICAN CONTIGO: WHATSAPP, CORREO, TELÉFONO]",
+    "compromisos": "[SI HAY CONTRATO O PROMESA DE DISPONIBILIDAD, CUÁL ES]",
+    "horario": "[HORAS EN LAS QUE ATIENDO Y QUÉ PASA FUERA DE ESE HORARIO]"
+  },
+  "entradas": {
+    "herramientas": "[DONDE PUEDO PUBLICAR EL ESTADO: PÁGINA ESTÁTICA GRATUITA, REDES, GRUPO DE WHATSAPP, CORREO]",
+    "historial": "[CAÍDAS O FALLOS QUE YA HE TENIDO Y CÓMO REACCIONÉ]",
+    "dependencias": "[PROVEEDORES EXTERNOS QUE PUEDEN CAUSAR LA CAÍDA Y DÓNDE ESTÁ SU PÁGINA DE ESTADO]"
+  },
+  "procedimiento": [
+    "1. Define los niveles de incidencia: caída total, funcionamiento degradado, fallo parcial en una función y mantenimiento planificado",
+    "2. Por cada nivel define quién se entera, en cuántos minutos y por qué canal",
+    "3. Aloja la página de estado FUERA del sistema que puede caerse: si todo vive junto, cuando cae la web cae también el aviso",
+    "4. Redacta las plantillas de mensaje: primer aviso, actualización cada X minutos, resolución y disculpa; sin culpar a nadie y sin jerga",
+    "5. Fija el ritmo de actualización aunque no haya novedades: el silencio es lo que enfada al cliente, no la avería",
+    "6. Define quién habla: una sola voz hacia fuera para no dar versiones contradictorias",
+    "7. Prepara el guion de la primera media hora: comprobar si es tuyo o del proveedor, mirar la página de estado del proveedor, publicar el aviso, y solo después ponerte a arreglarlo",
+    "8. Escribe la plantilla del informe posterior: qué pasó, a quién afectó y cuánto tiempo, por qué pasó en lenguaje llano, qué se ha hecho para que no se repita y cuándo estará hecho",
+    "9. Ensaya una vez con una caída simulada y cronometra desde el fallo hasta el primer aviso publicado"
+  ],
+  "que_mirar": [
+    "Tiempo hasta el primer aviso: es la métrica que más nota el cliente",
+    "Si el aviso depende del mismo dominio, correo o servidor que ha caído",
+    "Compromisos escritos en tu contrato que no puedes cumplir con tu montaje actual",
+    "Incidencias que son del proveedor: hay que decirlo sin escudarse en ello",
+    "Datos personales: nunca detallar en público qué información se ha visto afectada sin asesorarse antes"
+  ],
+  "errores_tipicos": [
+    "Prometer una hora de vuelta que no puedes cumplir y tener que corregirla",
+    "Explicar la causa técnica en jerga en lugar de decir qué significa para el cliente",
+    "Desaparecer hasta tenerlo arreglado",
+    "No cerrar nunca la incidencia y dejar el aviso colgado durante días"
+  ],
+  "restricciones": [
+    "Mensajes en español llano, tuteando, máximo 5 líneas cada uno",
+    "No inventar causas ni plazos: usar huecos entre corchetes para rellenar en caliente",
+    "Si la incidencia afecta a datos personales, indicar que hay obligaciones legales y recomendar consultarlas"
+  ],
+  "formato_salida": {
+    "1_niveles": "tabla: nivel | ejemplo | a quién aviso | en cuánto tiempo | por qué canal",
+    "2_plantillas": "4 mensajes listos con huecos entre corchetes",
+    "3_pagina_de_estado": "contenido y estructura de la página, con dónde alojarla y por qué separada",
+    "4_guion_30_minutos": "pasos numerados de la primera media hora",
+    "5_informe_posterior": "plantilla del informe para el cliente",
+    "6_ensayo": "guion de la simulación y qué medir"
+  },
+  "criterios_calidad": [
+    "El primer aviso se puede publicar en menos de 15 minutos desde el móvil",
+    "La página de estado no comparte infraestructura con lo que puede caer",
+    "Los mensajes se entienden sin conocimientos técnicos",
+    "El informe posterior incluye acciones con fecha, no buenas intenciones"
+  ]
+}

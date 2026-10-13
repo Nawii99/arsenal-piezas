@@ -1,0 +1,31 @@
+{
+  "tarea": "Diseñar un imán de leads para [TU NEGOCIO] y escribir la página de captación y el formulario que lo entrega",
+  "contexto": {
+    "cliente_ideal": "[A QUIÉN VENDES, EN UNA FRASE]",
+    "problema_urgente": "[QUÉ LE QUITA EL SUEÑO A ESE CLIENTE]",
+    "que_vendes_despues": "[SERVICIO O PRODUCTO AL QUE QUIERES LLEVARLE]",
+    "tiempo_que_tengo": "[HORAS QUE PUEDO DEDICAR A PREPARARLO]"
+  },
+  "paso_1_elegir_iman": {
+    "instruccion": "Propón 5 ideas de imán que se consuman en menos de 10 minutos y resuelvan un trozo pequeño del problema",
+    "formatos_validos": ["plantilla rellenable", "checklist", "calculadora simple", "guía de una página", "mini vídeo"],
+    "descarta": ["ebooks largos que nadie lee", "newsletter genérica", "descuentos que atraen a curiosos"],
+    "para_cada_idea": "Título, promesa en una frase, esfuerzo de preparación y qué tipo de cliente atrae"
+  },
+  "paso_2_pagina": {
+    "secciones": ["titular con la promesa concreta", "3 viñetas de lo que se lleva", "para quién es y para quién no", "formulario", "quién eres en 2 líneas"],
+    "tono": "[CERCANO, PROFESIONAL O DIRECTO]"
+  },
+  "paso_3_formulario": {
+    "campos": "Solo email, y nombre únicamente si vas a personalizar los correos",
+    "boton": "Verbo más lo que recibe, por ejemplo Quiero la plantilla",
+    "bajo_el_boton": "Frase de privacidad y de baja fácil",
+    "consentimiento": "Casilla sin premarcar para recibir comunicaciones comerciales, separada de la entrega del recurso"
+  },
+  "formato_salida": "1) Tabla con las 5 ideas y cuál recomiendas y por qué. 2) Texto completo de la página, listo para copiar. 3) Campos y textos exactos del formulario. 4) Email de entrega con asunto y cuerpo.",
+  "criterios_calidad": [
+    "La promesa se puede cumplir en el propio recurso, sin humo",
+    "El imán atrae justo a quien puede comprar después",
+    "Nada de datos que no vayas a usar"
+  ]
+}

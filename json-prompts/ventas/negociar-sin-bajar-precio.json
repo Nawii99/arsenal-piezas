@@ -1,0 +1,52 @@
+{
+  "tarea": "Prepárame la negociación de este trato: mi horquilla, las contrapartidas que pido por cada concesión, la secuencia de la conversación y mi punto de retirada.",
+  "contexto": {
+    "que_negocio": "[TRABAJO O PEDIDO]",
+    "precio_pedido": "[MI PRECIO]",
+    "coste_real": "[LO QUE ME CUESTA A MÍ ENTRE MATERIAL Y HORAS]",
+    "precio_minimo_al_que_gano_dinero": "[SUELO]",
+    "cuanto_necesito_este_cliente": "[MUCHO / NORMAL / POCO]"
+  },
+  "entradas": {
+    "lo_que_pide_el_cliente": "[DESCUENTO O CONDICIÓN QUE HA PLANTEADO]",
+    "lo_que_le_importa_de_verdad": "[PLAZO, RIESGO, FORMA DE PAGO, EXCLUSIVIDAD, SOPORTE]",
+    "mi_alternativa_si_no_hay_trato": "[OTRO CLIENTE, OTRO ENCARGO, TIEMPO LIBRE PARA VENDER]",
+    "su_alternativa": "[QUÉ HARÍA ÉL SI YO DIGO QUE NO]"
+  },
+  "metodo": [
+    "1. Calcula tres cifras: precio de salida, precio objetivo y suelo por debajo del cual digo que no.",
+    "2. Haz una lista de monedas de cambio que a mí me cuestan poco y a él le valen mucho: plazo más largo, pago por adelantado, menos revisiones, horario, volumen, permiso para publicar el caso.",
+    "3. Regla de oro: ninguna concesión sin contrapartida; escribe cada pareja concesión-contrapartida.",
+    "4. Diseña tres paquetes bueno, mejor y óptimo para que la conversación pase de cuánto cuesta a cuál elijo.",
+    "5. Escribe la secuencia: primero entender por qué pide descuento, después preguntar sobre qué presupuesto trabaja, después ofrecer paquete alternativo, y solo al final tocar el precio.",
+    "6. Prepara la frase de retirada educada y qué dejo abierto para volver dentro de unos meses.",
+    "7. Añade el cierre por escrito: qué se acordó, en un mensaje de cinco líneas enviado el mismo día."
+  ],
+  "errores_a_evitar": [
+    "Dar la primera rebaja antes de que él diga una cifra.",
+    "Descuentos con números redondos y grandes: parecen inventados y provocan que pida más.",
+    "Negociar solo el precio y olvidar el alcance: es más barato quitar trabajo que bajar la tarifa.",
+    "Aceptar en caliente en la reunión sin echar cuentas.",
+    "Amenazar con retirarte si no piensas hacerlo."
+  ],
+  "formato_salida": {
+    "cifras": "Salida, objetivo y suelo, con el cálculo a la vista.",
+    "monedas_de_cambio": "Tabla con concesión, lo que me cuesta, lo que pido a cambio.",
+    "paquetes": "Los tres paquetes con lo que incluye y no incluye cada uno y su precio.",
+    "guion": "Frases literales para las cuatro fases de la conversación.",
+    "retirada": "Frase de cierre sin acuerdo y mensaje de puerta abierta.",
+    "acta": "Plantilla del mensaje de confirmación de lo acordado."
+  },
+  "restricciones": [
+    "Español de España, tuteo, tono tranquilo, sin trucos de manipulación.",
+    "Ninguna propuesta puede quedar por debajo del suelo que te he dado.",
+    "Nada de mentir sobre otros clientes o falsa escasez."
+  ],
+  "criterios_calidad": [
+    "Cada rebaja del guion lleva pegada su contrapartida.",
+    "Las tres cifras salen de mi coste real, no de una sensación.",
+    "El paquete básico sigue siendo rentable si lo elige.",
+    "Sé decir en una sola frase cuándo me levanto de la mesa."
+  ],
+  "si_faltan_datos": "Si no te doy el coste real, pídemelo antes de calcular nada: sin ese número la negociación es a ciegas."
+}

@@ -1,0 +1,34 @@
+{
+  "tarea": "Redactar la política interna de copias de seguridad y guardado de información de una empresa pequeña, en un folio y en lenguaje claro",
+  "contexto": {
+    "empresa": "[NOMBRE FISCAL Y COMERCIAL]",
+    "herramientas_oficiales": "[DÓNDE SE GUARDAN LOS ARCHIVOS DE VERDAD: EJ. GOOGLE DRIVE DE EMPRESA]",
+    "responsable_copias": "[NOMBRE Y SUPLENTE]",
+    "personas_afectadas": "[PLANTILLA, AUTÓNOMOS COLABORADORES, BECARIOS]",
+    "fecha_vigor": "[DD/MM/AAAA]"
+  },
+  "debe_incluir": [
+    "Qué información se considera de la empresa y no puede vivir solo en un equipo personal",
+    "Dónde se guarda cada tipo de archivo, con la ruta o carpeta concreta",
+    "Qué está prohibido: pendrives sin cifrar, cuentas personales, WhatsApp como archivo definitivo, discos duros bajo la mesa",
+    "Quién hace las copias, con qué frecuencia y quién las revisa",
+    "Qué hacer al perder o cambiar un equipo y al salir una persona de la empresa",
+    "A quién avisar si sospechas de una pérdida o de un correo raro, y en cuánto tiempo"
+  ],
+  "restricciones": [
+    "Máximo una página, frases cortas y apartados numerados",
+    "Sin artículos legales copiados ni lenguaje de abogado",
+    "Cada norma dice qué hacer, no solo qué evitar",
+    "Adaptado a España y compatible con el RGPD sin pretender ser asesoramiento jurídico"
+  ],
+  "formato_salida": {
+    "documento": "Título, fecha de vigor, 8 a 10 normas numeradas, tabla de responsables y hueco de firma",
+    "anexo": "Chuleta de 5 líneas para colgar junto al ordenador",
+    "email": "Correo breve de 120 palabras para enviarlo al equipo explicando el porqué"
+  },
+  "criterios_calidad": [
+    "Una persona nueva entiende dónde guardar sus archivos en menos de dos minutos",
+    "No hay normas imposibles de cumplir en el día a día",
+    "Incluye qué pasa si no se cumple, sin tono amenazante"
+  ]
+}

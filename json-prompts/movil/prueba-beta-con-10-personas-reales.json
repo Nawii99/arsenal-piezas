@@ -1,0 +1,43 @@
+{
+  "tarea": "Diseñar y coordinar una prueba beta de una semana con 10 usuarios reales, incluyendo tareas, formulario de recogida y criterio de decisión final",
+  "contexto": {
+    "app": "[NOMBRE Y VERSIÓN A PROBAR]",
+    "novedad": "[QUÉ ES NUEVO O QUÉ SE QUIERE VALIDAR]",
+    "canal_de_distribucion": "[TESTFLIGHT / PRUEBA INTERNA DE PLAY / ENLACE WEB]",
+    "perfiles_disponibles": "[DE DÓNDE SALEN LOS 10: CLIENTES, LISTA DE CORREO, CONOCIDOS DEL SECTOR]",
+    "fecha_de_publicacion": "[CUÁNDO QUIERES PUBLICAR]",
+    "riesgo_mayor": "[LO QUE MÁS MIEDO TE DA QUE FALLE]"
+  },
+  "metodo": [
+    "1. Elegir perfiles que se parezcan al cliente real, no amigos que van a decir que está muy bien",
+    "2. Repartir dispositivos: al menos 4 Android y 4 iPhone, con un móvil antiguo entre ellos",
+    "3. Escribir el mensaje de invitación con lo que se pide, cuánto tiempo lleva y qué recibe a cambio",
+    "4. Redactar de 3 a 5 tareas cerradas con un objetivo, sin decir cómo se hace",
+    "5. Montar el formulario de recogida con campos fijos: tarea, qué esperaba, qué pasó, captura, modelo y versión",
+    "6. Fijar el calendario: día 1 invitación, día 2 recordatorio, día 5 cierre, día 6 clasificación, día 7 decisión",
+    "7. Clasificar cada incidencia como bloqueante, molesta o deseo, y decidir qué entra en esta versión",
+    "8. Cerrar el círculo: contar a los probadores qué se arregló gracias a ellos"
+  ],
+  "errores_a_evitar": [
+    "Pedir opinión general en vez de tareas concretas: qué te parece no sirve de nada",
+    "Estar delante guiando mientras la persona lo prueba",
+    "Recoger los fallos por WhatsApp suelto y perderlos",
+    "Meter cambios grandes a mitad de la prueba",
+    "Confundir un deseo de una persona con un fallo que afecta a todos"
+  ],
+  "formato_salida": {
+    "lista_de_invitados": "Tabla con perfil, dispositivo, sistema, canal de contacto y estado",
+    "mensaje_invitacion": "Texto exacto para enviar, con instrucciones de instalación por sistema",
+    "tareas": "Las tareas numeradas tal como se envían al probador",
+    "formulario": "Los campos exactos del formulario de recogida",
+    "tabla_incidencias": "Incidencia, quién la vio, dispositivo, gravedad, decisión, responsable",
+    "criterio_de_salida": "Qué tiene que cumplirse para publicar y qué obliga a retrasar",
+    "mensaje_de_cierre": "Texto de agradecimiento con lo arreglado"
+  },
+  "criterios_calidad": [
+    "Cada tarea tiene un objetivo comprobable y ninguna explica cómo hacerlo",
+    "Toda incidencia recogida trae modelo de móvil y versión",
+    "Ningún fallo bloqueante queda sin decisión escrita",
+    "La prueba cubre iPhone y Android y al menos un móvil antiguo"
+  ]
+}

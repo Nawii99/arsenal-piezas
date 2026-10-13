@@ -1,0 +1,34 @@
+{
+  "tarea": "Escribir el guion de un video demostracion con grabacion de pantalla o de producto, sincronizando locucion y acciones visibles paso a paso",
+  "entradas": {
+    "producto": "[QUÉ HERRAMIENTA, APP O PRODUCTO ENSEÑAS]",
+    "para_quien": "[PERFIL DEL ESPECTADOR Y SU NIVEL TÉCNICO]",
+    "caso_de_uso": "[LA TAREA CONCRETA QUE VAS A DEMOSTRAR DE PRINCIPIO A FIN]",
+    "pasos_reales": "[LISTA DE PASOS TAL Y COMO SE HACEN HOY]",
+    "duracion_objetivo": "[SEGUNDOS]",
+    "objetivo": "[VENDER / ONBOARDING DE CLIENTES / REDUCIR SOPORTE]"
+  },
+  "estructura": [
+    "Resultado primero: enseña el resultado final en los primeros 10 segundos",
+    "Situacion de partida: donde empieza el espectador",
+    "Pasos numerados, uno por bloque, cada uno con una sola accion visible",
+    "Punto de friccion: el paso donde la gente se atasca y como se resuelve",
+    "Cierre: resultado conseguido y siguiente paso concreto"
+  ],
+  "reglas": [
+    "Un paso por bloque; si un paso tiene tres clics, se ve el ratón pero solo se narra la intención",
+    "La locucion nunca describe lo obvio: si se ve, no se dice",
+    "Calcula 2,5 palabras por segundo y deja 1 segundo de silencio despues de cada paso",
+    "Nada de jerga: si hay que usar un termino tecnico, se explica en la misma frase"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla de guion tecnico mas una lista de preparacion",
+    "columnas": ["Bloque", "Segundos", "Locución literal", "Qué se ve en pantalla", "Zoom o resalte", "Rótulo"],
+    "preparacion": ["Datos de ejemplo que hay que crear antes de grabar", "Qué ocultar en pantalla por privacidad", "Resolución y formato de grabación recomendados"]
+  },
+  "criterios_calidad": [
+    "Alguien que no conoce el producto puede repetir la tarea después de verlo una vez",
+    "No hay ningún tramo de más de 8 segundos sin que pase algo en pantalla",
+    "La demo enseña un caso real completo, no funciones sueltas"
+  ]
+}

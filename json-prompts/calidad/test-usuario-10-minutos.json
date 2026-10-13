@@ -1,0 +1,39 @@
+{
+  "tarea": "Preparar y ejecutar cinco pruebas con personas reales de diez minutos sobre mi web, tienda o producto, y sacar de ahí una lista corta de arreglos ordenada por impacto",
+  "contexto": {
+    "que_van_a_probar": "[URL O NOMBRE DEL PRODUCTO]",
+    "a_quien_se_dirige": "[PERFIL DE CLIENTE: EDAD, SITUACIÓN, QUÉ PROBLEMA TIENE]",
+    "mi_duda_principal": "[QUÉ NECESITO AVERIGUAR: SI SE ENTIENDE QUÉ VENDO, SI EL PRECIO ASUSTA, SI ENCUENTRAN CÓMO CONTRATAR]",
+    "a_quien_puedo_reclutar": "[CLIENTES, VECINOS, GENTE DE UN GRUPO, CONOCIDOS QUE NO SEAN DEL SECTOR]"
+  },
+  "pasos": [
+    "1. Elige cinco personas parecidas a tu cliente y que no sepan de qué va tu negocio; con cinco ya salen casi todos los problemas gordos.",
+    "2. Escribe tres tareas, no preguntas: por ejemplo «averigua cuánto costaría esto para un piso de dos habitaciones» o «pide cita para el jueves».",
+    "3. Empieza con la prueba de los cinco segundos: enseña la portada cinco segundos, tápala y pregunta qué vende esta empresa y para quién.",
+    "4. Pídeles que vayan diciendo en voz alta lo que piensan mientras lo hacen, y avisa de que se prueba la web, no a ellos.",
+    "5. No ayudes. Cuando se atasquen, cuenta hasta diez y pregunta «¿qué esperabas que pasara?».",
+    "6. Apunta hechos, no opiniones: dónde dudan, qué leen dos veces, qué botón buscan y no está, en qué palabra se paran.",
+    "7. Cierra con dos preguntas: qué es lo que menos ha quedado claro y qué precio se esperaba.",
+    "8. Junta los cinco resultados y quédate con los problemas que aparecen en tres o más personas.",
+    "9. Ordena los arreglos por dos criterios: cuánta gente se atasca y cuánto cuesta arreglarlo."
+  ],
+  "errores_tipicos": [
+    "Preguntar «¿te gusta?»: todos dicen que sí y no te enteras de nada.",
+    "Rescatar a la persona en cuanto duda, que es justo la información que buscabas.",
+    "Probar con gente de tu sector, que ya entiende la jerga.",
+    "Hacer treinta pruebas: a partir de la quinta se repite lo mismo.",
+    "Cambiar la web entre pruebas y no poder comparar."
+  ],
+  "formato_salida": {
+    "guion": "Texto exacto que digo al empezar, las tres tareas y las preguntas de cierre",
+    "plantilla_observacion": "Tabla por participante: tarea, la completó o no, tiempo, dónde dudó, frase textual",
+    "problemas_repetidos": "Problema, cuántos de cinco lo sufren, qué se pierde por él",
+    "plan": "Tres arreglos concretos ordenados, con qué texto o botón cambio exactamente"
+  },
+  "criterios_calidad": [
+    "Las tareas se pueden completar sin ayuda y sin explicar nada antes.",
+    "La plantilla recoge frases textuales, no interpretaciones.",
+    "Solo se proponen arreglos para problemas vistos en tres o más personas.",
+    "Cada arreglo dice qué se cambia, no «mejorar la claridad»."
+  ]
+}

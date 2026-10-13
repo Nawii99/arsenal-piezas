@@ -1,0 +1,36 @@
+{
+  "tarea": "Preparar el primer contacto por WhatsApp y la visita presencial a negocios locales de mi zona",
+  "contexto": {
+    "que_vendo": "[SERVICIO O PRODUCTO EN UNA FRASE]",
+    "tipo_de_negocio": "[PELUQUERÍAS, TALLERES, CLÍNICAS, RESTAURANTES...]",
+    "zona": "[CIUDAD O BARRIO]",
+    "origen_del_contacto": "[FICHA DE GOOGLE, WEB, HE PASADO POR LA PUERTA, ME LO PASÓ ALGUIEN]",
+    "objetivo": "[VISITA, PRUEBA GRATUITA, PRESUPUESTO O CITA]",
+    "detalle_observado": "[ALGO REAL DEL NEGOCIO: RESEÑAS, CARTA, ESCAPARATE, HORARIO]"
+  },
+  "pasos": [
+    "Escribir el mensaje de WhatsApp inicial: quién eres, cómo has llegado a ellos y una pregunta corta",
+    "Escribir dos variantes de tono: cercano de barrio y más profesional",
+    "Escribir el recordatorio a los 3 días si no contestan",
+    "Preparar el guion de la visita: 20 segundos de presentación en el mostrador y qué dejar",
+    "Definir qué hacer cuando el dueño no está y solo hay personal"
+  ],
+  "restricciones": [
+    "Nada de mensajes masivos idénticos: cada uno lleva un dato del negocio",
+    "Máximo 60 palabras por mensaje y sin enlaces en el primero",
+    "Sin audios, sin mayúsculas sostenidas y con un máximo de un emoji",
+    "Respeta el horario comercial y no escribas en fin de semana ni en hora punta del negocio",
+    "Cumple protección de datos: identifícate y ofrece dejar de escribir"
+  ],
+  "formato_salida": {
+    "mensajes": "Bloques listos para copiar, numerados por momento de envío",
+    "guion_visita": "Qué decir, qué llevar y qué dejar encima del mostrador",
+    "tabla_horarios": "Tipo de negocio | mejor franja para contactar | franja prohibida",
+    "respuestas": "Qué contestar a 'déjame información', 'ya tenemos uno' y 'no me interesa'"
+  },
+  "criterios_calidad": [
+    "El mensaje se lee entero en la notificación del móvil",
+    "Se nota que has visto ese negocio en concreto",
+    "Ninguna frase suena a comercial de puerta fría de manual"
+  ]
+}

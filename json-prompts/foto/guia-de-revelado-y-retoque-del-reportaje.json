@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir el flujo de edición paso a paso de un reportaje de fotografía inmobiliaria, pensado para aplicarse en lote y con acabado uniforme",
+  "entradas": {
+    "programa": "[LIGHTROOM / CAPTURE ONE / DARKTABLE / PHOTOSHOP / MÓVIL: SNAPSEED O LIGHTROOM MOBILE]",
+    "numero_de_fotos": "[NÚMERO]",
+    "formato": "[RAW / JPG]",
+    "problemas_detectados": "[EJ: PAREDES AMARILLAS, VENTANAS QUEMADAS, LÍNEAS TORCIDAS, RUIDO]",
+    "acabado": "[NATURAL Y LIMPIO / LUMINOSO PARA PORTAL / CÁLIDO DE REVISTA]",
+    "plazo_entrega": "[FECHA]"
+  },
+  "procedimiento": [
+    "Selección: descarta duplicadas y elige la mejor de cada encuadre antes de tocar nada; indica cuántas se entregan por estancia",
+    "Corrección de perspectiva: endereza verticales y horizonte primero, porque recorta el encuadre y condiciona el resto",
+    "Color: fija un balance de blancos neutro tomando referencia de una pared blanca y aplícalo a todas las fotos de la misma estancia",
+    "Exposición y contraste: sube sombras para que se vea el mueble oscuro, baja altas luces para recuperar la ventana, sin dejar la foto plana ni gris",
+    "Limpieza: quita enchufes sucios no, pero sí motas de polvo del sensor, cables sueltos evidentes y reflejos del fotógrafo en espejos",
+    "Detalle final: nitidez moderada, reducción de ruido si hizo falta ISO alto, y verificación de que los blancos de las paredes son blancos y no rosas ni verdes",
+    "Sincronización: explica cómo copiar los ajustes al resto de fotos de la misma estancia y qué hay que revisar una a una igualmente",
+    "Exportación: dos juegos, uno para portal y otro para web o impresión, con medidas y peso concretos"
+  ],
+  "restricciones": [
+    "Prohibido añadir o quitar elementos que cambien lo que se vende (humedades, grietas, mobiliario que no está)",
+    "Prohibido el cielo azul falso salvo que se indique claramente que es una recreación",
+    "Nada de saturación exagerada ni efecto HDR con halos"
+  ],
+  "formato_salida": {
+    "bloque_1": "Flujo numerado con el nombre exacto del control del programa indicado y un rango de valores orientativo",
+    "bloque_2": "Tabla de exportación: uso, medida del lado largo en píxeles, calidad y peso máximo",
+    "bloque_3": "Lista de 8 errores típicos con cómo se ven y cómo se arreglan"
+  },
+  "criterios_calidad": [
+    "Todas las fotos del mismo reportaje parecen tomadas el mismo día y con la misma luz",
+    "Las verticales están rectas y las ventanas conservan la vista",
+    "El resultado sigue pareciendo una casa real, no un render"
+  ]
+}

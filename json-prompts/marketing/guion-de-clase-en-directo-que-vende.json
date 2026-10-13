@@ -1,0 +1,38 @@
+{
+  "tarea": "Escribir el guion completo de una clase en directo gratuita cuyo objetivo es vender una oferta al final",
+  "entradas": {
+    "tema_clase": "[TÍTULO O TEMA DE LA CLASE]",
+    "publico": "[QUIÉN ASISTE Y EN QUÉ PUNTO ESTÁ]",
+    "oferta": "[QUÉ VENDES AL FINAL Y QUÉ INCLUYE]",
+    "precio": "[PRECIO Y CONDICIÓN ESPECIAL PARA ASISTENTES]",
+    "duracion": "[MINUTOS TOTALES, POR EJEMPLO 60]",
+    "prueba_social": "[CASOS, RESULTADOS O TESTIMONIOS REALES DISPONIBLES]",
+    "objeciones": "[LAS 4 EXCUSAS MÁS HABITUALES PARA NO COMPRAR]"
+  },
+  "estructura_obligatoria": [
+    "Apertura y gancho (5 min): promesa de la clase y motivo para quedarse hasta el final",
+    "Quién eres en 90 segundos, contado como prueba de que puedes ayudar, no como currículum",
+    "Marco del problema: por qué lo que hacen ahora no funciona",
+    "3 bloques de contenido útil que enseñen el QUÉ y dejen ver que el CÓMO completo lleva acompañamiento",
+    "Transición a la oferta sin cambio brusco de tono",
+    "Presentación de la oferta: entregables, extras, garantía, precio y condición para asistentes",
+    "Cierre con llamada a la acción repetida y turno de preguntas guiado"
+  ],
+  "salida_por_bloque": ["minuto de inicio", "objetivo del bloque", "qué decir (guion en frases habladas)", "qué se ve en pantalla", "pregunta al chat para mantener la atención"],
+  "restricciones": [
+    "El contenido útil debe servir aunque nadie compre",
+    "Prohibido inventar testimonios, cifras o casos: usar solo lo aportado en prueba_social",
+    "Nada de cuentas atrás falsas ni de plazas ilimitadas disfrazadas de limitadas",
+    "Español de España, hablado, frases cortas y fáciles de decir en voz alta"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["Ficha de la clase", "Guion minutado por bloques", "Bloque de oferta palabra por palabra", "Respuestas a las 4 objeciones", "Mensajes de recordatorio antes del directo", "Qué hacer en las 48 horas siguientes"]
+  },
+  "criterios_calidad": [
+    "La oferta empieza como muy tarde en el minuto 40 de una clase de 60",
+    "Cada objeción tiene respuesta preparada con ejemplo",
+    "El guion se puede leer en voz alta sin sonar a texto escrito"
+  ],
+  "tono": "cercano, seguro, sin presión agresiva"
+}

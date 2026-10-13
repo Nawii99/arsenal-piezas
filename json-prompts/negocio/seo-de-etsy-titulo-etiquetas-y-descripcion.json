@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribir la ficha de un artículo de Etsy optimizada para el buscador interno y para el comprador que busca un regalo",
+  "contexto": {
+    "articulo": "[QUÉ ES, EN UNA FRASE]",
+    "tienda": "[NOMBRE DE TU TIENDA ETSY]",
+    "materiales": "[MATERIALES]",
+    "medidas_y_peso": "[MEDIDAS]",
+    "personalizable": "[SÍ/NO Y QUÉ SE PUEDE PERSONALIZAR]",
+    "ocasiones": "[BODA, NAVIDAD, CUMPLEAÑOS, DÍA DE LA MADRE...]",
+    "para_quien": "[A QUIÉN SE LE REGALA]",
+    "estilo": "[MINIMALISTA, BOHO, VINTAGE, RÚSTICO...]",
+    "precio": "[PRECIO]",
+    "plazo_produccion_y_envio": "[DÍAS]"
+  },
+  "reglas_del_canal": [
+    "Título de hasta 140 caracteres; las primeras 40 deciden: pon ahí la búsqueda principal, no el nombre de tu tienda",
+    "Exactamente 13 etiquetas, cada una de hasta 20 caracteres, en frases de 2 o 3 palabras, sin repetir la misma raíz en todas",
+    "Las etiquetas deben coincidir con palabras que aparecen en el título; Etsy premia esa coherencia",
+    "Combina etiquetas por producto, por estilo, por ocasión, por destinatario y por material",
+    "Primeras dos líneas de la descripción: qué es, para quién y por qué gusta, porque es lo que se ve sin desplegar"
+  ],
+  "formato_salida": {
+    "titulo": "Título propuesto + recuento de caracteres",
+    "titulo_alternativo": "Una segunda versión con otro enfoque de búsqueda",
+    "etiquetas": "Las 13 en lista numerada con su recuento de caracteres",
+    "atributos": "Categoría, ocasión, destinatario, color y estilo que deberías marcar",
+    "descripcion": "Bloques: gancho, qué incluye, medidas y materiales, cómo se personaliza, plazos y envío, cuidados, política de cambios",
+    "seccion_regalo": "Frase corta para envoltorio o tarjeta y sugerencia de venta cruzada",
+    "ideas_de_foto": "5 fotos ordenadas: principal sobre fondo limpio, en contexto de uso, detalle de material, escala con referencia y opciones de personalización"
+  },
+  "criterios_calidad": [
+    "Ninguna etiqueta pasa de 20 caracteres ni repite exactamente otra",
+    "El título se lee como una frase natural, no como una lista de palabras sueltas",
+    "La descripción responde a plazo, medidas y qué pasa si llega mal, sin que el comprador tenga que preguntar"
+  ],
+  "tono": "Cercano y artesano, español de España, sin superlativos vacíos"
+}

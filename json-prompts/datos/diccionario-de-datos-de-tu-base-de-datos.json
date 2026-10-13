@@ -1,0 +1,34 @@
+{
+  "tarea": "Documentar en español llano una base de datos existente para que cualquiera del negocio entienda qué hay dentro",
+  "entradas": {
+    "esquema": "[PEGA LOS CREATE TABLE, EL LISTADO DE TABLAS Y COLUMNAS O UNA CAPTURA EN TEXTO]",
+    "sistema": "[TIENDA ONLINE | CRM | ERP | APP PROPIA | HOJA MIGRADA]",
+    "filas_ejemplo": "[PEGA 3 O 4 FILAS DE LAS TABLAS PRINCIPALES SI LAS TIENES]",
+    "dudas_actuales": "[QUÉ NO ENTIENDES O QUÉ CAMPOS TE CONFUNDEN]"
+  },
+  "proceso": [
+    "Agrupar las tablas por área de negocio: clientes, pedidos, productos, pagos, logística, sistema",
+    "Identificar la tabla principal de cada área y las tablas auxiliares o de apoyo",
+    "Deducir las relaciones a partir de los nombres de columna y confirmar cuál es la clave de unión",
+    "Marcar campos ambiguos, campos que parecen obsoletos y campos que guardan estados o códigos",
+    "Señalar qué tabla usar para responder a las preguntas de negocio más habituales"
+  ],
+  "formato_salida": {
+    "resumen": "Cinco líneas explicando qué guarda esta base de datos y para qué sirve",
+    "mapa_de_areas": "Lista de áreas con sus tablas asociadas",
+    "ficha_por_tabla": "Para cada tabla: para qué sirve en una frase, qué representa una fila, columnas clave con su significado en español, con qué otras tablas se une y por qué columna",
+    "tabla_de_codigos": "Valores posibles de los campos de estado y qué significa cada uno",
+    "avisos": "Campos duplicados, nombres engañosos, fechas sin zona horaria y datos personales sensibles",
+    "atajos": "Cinco preguntas de negocio frecuentes y qué tablas hay que mirar para cada una"
+  },
+  "restricciones": [
+    "Cuando algo sea una suposición, escribir SUPOSICIÓN delante",
+    "Prohibido inventar tablas o columnas que no aparecen en el esquema",
+    "Nada de definiciones de manual: explicar en términos del negocio"
+  ],
+  "criterios_calidad": [
+    "Alguien que llega hoy sabe dónde está la facturación sin preguntar",
+    "Cada relación indica las dos columnas exactas que se unen",
+    "Los campos con datos personales quedan marcados"
+  ]
+}

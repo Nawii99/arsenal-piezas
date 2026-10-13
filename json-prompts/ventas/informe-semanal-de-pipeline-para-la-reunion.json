@@ -1,0 +1,41 @@
+{
+  "tarea": "Preparar el informe semanal de pipeline para la reunión comercial: qué ha cambiado, dónde está el problema y qué decisiones hay que tomar",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "semana": "[FECHAS DE LA SEMANA]",
+    "objetivo_del_mes": "[IMPORTE EN EUROS]",
+    "asistentes": "[QUIÉN ESTARÁ EN LA REUNIÓN Y SU PAPEL]",
+    "duracion_reunion": "[MINUTOS DISPONIBLES]"
+  },
+  "entradas": {
+    "pipeline_actual": "[IMPORTE TOTAL Y NÚMERO DE OPORTUNIDADES POR ETAPA]",
+    "pipeline_semana_anterior": "[LOS MISMOS DATOS DE LA SEMANA PASADA]",
+    "entradas_nuevas": "[OPORTUNIDADES CREADAS ESTA SEMANA CON IMPORTE Y ORIGEN]",
+    "ganadas_y_perdidas": "[CIERRES Y PÉRDIDAS DE LA SEMANA CON MOTIVO]",
+    "actividad": "[LLAMADAS, REUNIONES Y PROPUESTAS ENVIADAS]"
+  },
+  "analisis_requerido": [
+    "Variación del pipeline frente a la semana anterior y de dónde viene esa variación",
+    "Cobertura: cuántas veces cubre el pipeline el objetivo que queda por cerrar",
+    "Etapa donde se acumulan más operaciones y más días: el cuello de botella",
+    "Oportunidades que han cambiado de fecha de cierre por segunda vez o más",
+    "Patrón en los motivos de pérdida de las últimas semanas"
+  ],
+  "formato_salida": {
+    "titular": "Una frase con la situación real de la semana",
+    "tabla_semaforo": "indicador | esta semana | semana anterior | tendencia | color",
+    "top_5": "Las 5 operaciones que deciden el mes, con importe, riesgo y acción",
+    "cuello_de_botella": "Dónde se atasca todo y una hipótesis de por qué",
+    "orden_del_dia": "Guion de la reunión ajustado a los minutos disponibles, con 3 decisiones a tomar",
+    "compromisos": "Tabla de acción, responsable y fecha para la semana siguiente"
+  },
+  "restricciones": [
+    "Máximo una página; nada de repasar todas las oportunidades una por una",
+    "Cada dato va acompañado de su comparación con la semana anterior",
+    "Si un dato falta, dilo en vez de estimarlo"
+  ],
+  "criterios_calidad": [
+    "Quien lo lea en 3 minutos sabe si el mes está en riesgo y por qué",
+    "Todas las acciones tienen nombre y fecha"
+  ]
+}

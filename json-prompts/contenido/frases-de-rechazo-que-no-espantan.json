@@ -1,0 +1,33 @@
+{
+  "tarea": "Escribir las respuestas literales que da un agente de IA cuando una petición se sale de sus límites",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD]",
+    "voz": "[CÓMO HABLÁIS: CERCANO, SOBRIO, DIVERTIDO]",
+    "alternativa": "[A DÓNDE MANDAS AL CLIENTE: TELÉFONO, FORMULARIO, PERSONA]"
+  },
+  "entradas": {
+    "situaciones": ["[LO QUE NO PUEDE HACER 1]", "[LO QUE NO PUEDE HACER 2]", "[LO QUE NO PUEDE HACER 3]", "[LO QUE NO PUEDE HACER 4]"]
+  },
+  "estructura_de_cada_respuesta": [
+    "Reconocer lo que pide el cliente con sus palabras",
+    "Decir el no en una frase, sin rodeos y sin culpar al sistema",
+    "Ofrecer la vía real para conseguirlo",
+    "Cerrar preguntando si puede ayudar en otra cosa"
+  ],
+  "restricciones": [
+    "Prohibido decir no estoy autorizado, no tengo permisos o mis reglas me impiden",
+    "Prohibido prometer plazos, importes o resultados",
+    "Nada de disculpas repetidas: como mucho una",
+    "Máximo 4 líneas por respuesta y sin tecnicismos"
+  ],
+  "variantes": ["versión para chat", "versión para email", "versión para cliente enfadado"],
+  "formato_salida": {
+    "tipo": "lista por situación",
+    "por_situacion": ["situación", "las tres variantes", "qué NO decir nunca en ese caso"]
+  },
+  "criterios_calidad": [
+    "Ninguna respuesta suena a plantilla ni a robot",
+    "En todas queda claro el siguiente paso del cliente",
+    "Se pueden copiar y pegar sin retocar"
+  ]
+}

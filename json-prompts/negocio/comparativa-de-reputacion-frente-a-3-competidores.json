@@ -1,0 +1,36 @@
+{
+  "tarea": "Comparar la reputación online de un negocio con la de tres competidores y priorizar acciones",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "zona": "[CIUDAD O BARRIO]",
+    "sector": "[SECTOR]"
+  },
+  "entradas": {
+    "mis_datos": "[NOTA MEDIA / Nº DE RESEÑAS / RESEÑAS ÚLTIMOS 3 MESES / % RESPONDIDAS / 3 QUEJAS MÁS REPETIDAS / 3 ELOGIOS MÁS REPETIDOS]",
+    "competidor_1": "[MISMOS DATOS]",
+    "competidor_2": "[MISMOS DATOS]",
+    "competidor_3": "[MISMOS DATOS]"
+  },
+  "proceso": [
+    "Compara cuatro cosas por separado: nota, volumen, frescura y respuesta, porque cada una se arregla distinto",
+    "Detecta el hueco: qué critican de ellos que tú haces bien y no cuentas en ningún sitio",
+    "Detecta la brecha: qué elogian de ellos que tú ni ofreces ni mencionas",
+    "Calcula el esfuerzo de alcanzarlos en volumen: cuántas reseñas al mes durante cuántos meses",
+    "Ordena las acciones por resultado a corto plazo frente a esfuerzo"
+  ],
+  "restricciones": [
+    "Trabaja solo con los datos aportados y di claramente qué falta",
+    "Nada de tácticas contra la competencia ni reseñas cruzadas",
+    "Sin proyecciones de ingresos ni promesas de posición en Google"
+  ],
+  "formato_salida": {
+    "tabla_comparativa": "Indicador | Tú | C1 | C2 | C3 | Quién gana",
+    "lectura": "5 frases con lo que de verdad significa esa tabla",
+    "tu_hueco": "Una frase con el argumento donde ganas y dónde debes contarlo",
+    "plan_90_dias": "Mes | Objetivo medible | 2 acciones | Cómo comprobar que va bien"
+  },
+  "criterios_calidad": [
+    "Distingue lo que puedes cambiar en semanas de lo que tarda meses",
+    "El plan cabe en la agenda de un negocio pequeño"
+  ]
+}

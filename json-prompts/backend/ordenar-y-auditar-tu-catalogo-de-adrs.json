@@ -1,0 +1,43 @@
+{
+  "tarea": "Auditar un conjunto de ADRs existentes y producir un índice saneado con los problemas detectados",
+  "entradas": {
+    "listado_adrs": "[PEGA LA LISTA: NÚMERO, TÍTULO, FECHA, ESTADO Y RESUMEN DE CADA UNO]",
+    "areas_criticas": "[PARTES DEL SISTEMA QUE MÁS TE PREOCUPAN: DATOS, PAGOS, AUTENTICACIÓN...]",
+    "convencion_actual": "[CÓMO LOS NOMBRÁIS Y DÓNDE LOS GUARDÁIS]"
+  },
+  "comprobaciones": [
+    "Estados coherentes: propuesto, aceptado, rechazado, superado, obsoleto",
+    "ADRs aceptados que en realidad ya no se cumplen en el código",
+    "Contradicciones entre dos ADRs vigentes",
+    "Duplicados o decisiones partidas en varios documentos sin enlazarse",
+    "ADRs que superan a otros sin marcar el anterior como superado",
+    "Numeración con huecos o repetida",
+    "Títulos que no dicen qué se decidió",
+    "Áreas críticas sin ningún ADR que las cubra",
+    "ADRs de más de dos años sin fecha de revisión"
+  ],
+  "pasos": [
+    "1. Pasa cada comprobación sobre el listado y anota los ADRs afectados",
+    "2. Propón el estado correcto para cada ADR con estado dudoso",
+    "3. Detecta los huecos: decisiones importantes que se ven en el sistema pero no tienen ADR",
+    "4. Prioriza el trabajo de saneamiento en tres niveles: urgente, este trimestre, algún día",
+    "5. Genera el índice final ordenado por área y con enlaces entre ADRs relacionados"
+  ],
+  "restricciones": [
+    "No reescribas el contenido de ningún ADR: aquí solo se ordena y se señala",
+    "Si no hay información para juzgar un ADR, márcalo como REVISAR A MANO",
+    "Máximo 10 tareas de saneamiento urgentes"
+  ],
+  "formato_salida": {
+    "bloque_1": "Índice markdown agrupado por área, con número, título, estado y fecha de revisión",
+    "bloque_2": "Tabla de problemas: ADR afectado, tipo de problema, gravedad, acción propuesta",
+    "bloque_3": "Lista de huecos: decisiones sin ADR y por qué importan",
+    "bloque_4": "Plan de saneamiento en tres niveles con esfuerzo estimado en horas"
+  },
+  "criterios_calidad": [
+    "Tras aplicar el plan, cualquiera sabe qué ADRs están vigentes hoy",
+    "Ninguna contradicción queda sin señalar",
+    "Las acciones propuestas son concretas: cambiar estado, enlazar, escribir, archivar"
+  ],
+  "tono": "Ordenado y de inventario"
+}

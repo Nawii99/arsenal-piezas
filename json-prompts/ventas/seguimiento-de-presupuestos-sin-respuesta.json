@@ -1,0 +1,31 @@
+{
+  "tarea": "Crear una secuencia de seguimiento para presupuestos enviados que no han recibido respuesta",
+  "entradas": {
+    "cliente": "[NOMBRE Y EMPRESA]",
+    "fecha_envio": "[CUÁNDO ENVIASTE EL PRESUPUESTO]",
+    "importe": "[IMPORTE]",
+    "canal": "[EMAIL, WHATSAPP O LLAMADA]",
+    "ultimo_contacto": "[QUÉ TE DIJO LA ÚLTIMA VEZ]",
+    "fecha_limite_validez": "[HASTA CUÁNDO VALE EL PRECIO]"
+  },
+  "secuencia": [
+    "Toque 1, a los 3 días: aporta algo útil (un dato, un ejemplo parecido) y pregunta si le encaja el enfoque",
+    "Toque 2, a los 7 días: resuelve la duda más habitual en este tipo de encargo",
+    "Toque 3, a los 14 días: recuerda la validez del precio y ofrece una versión reducida",
+    "Toque 4, a los 21 días: cierre educado del tipo cierro la carpeta, dime si lo retomamos más adelante",
+    "Cada mensaje en 60 palabras o menos y con una sola pregunta"
+  ],
+  "restricciones": [
+    "Prohibido escribir solo para saber si lo ha visto",
+    "Nunca dos mensajes seguidos por el mismo canal sin aportar algo nuevo",
+    "Sin descuentos en los tres primeros toques",
+    "Adapta la formalidad al canal indicado"
+  ],
+  "formato_salida": "Cuatro mensajes listos para copiar, cada uno con su día de envío, canal y asunto cuando aplique",
+  "criterios_calidad": [
+    "Ningún mensaje suena a insistencia vacía",
+    "Cada uno funciona aunque el cliente no haya leído el anterior",
+    "El último deja la puerta abierta sin quedar mal"
+  ],
+  "tono": "Educado y directo, de igual a igual"
+}

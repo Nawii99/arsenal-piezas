@@ -1,0 +1,20 @@
+{
+  "tarea": "Analizar código Rust lento y proponer optimizaciones ordenadas por impacto real, con forma de medirlas",
+  "rol": "Ingeniero de Rust con experiencia en optimización guiada por mediciones",
+  "entradas": {
+    "codigo": "[PEGA LA FUNCIÓN O EL MÓDULO LENTO]",
+    "tiempo_actual": "[CUÁNTO TARDA HOY Y CON QUÉ ENTRADA]",
+    "tamano_datos": "[NÚMERO DE ELEMENTOS O TAMAÑO DE FICHERO TÍPICO]",
+    "objetivo": "[A CUÁNTO QUIERES BAJARLO O CUÁNTA MEMORIA PUEDES GASTAR]",
+    "compilas_en_release": "[SÍ O NO]"
+  },
+  "primera_comprobacion": ["si no compila con --release, dilo antes que nada: puede ser diez o cien veces más lento y no hace falta optimizar nada más", "si el proceso pasa la mayor parte del tiempo esperando disco o red, avisa de que optimizar CPU no servirá"],
+  "que_revisar": ["clones y to_string() dentro de bucles que se pueden sustituir por referencias o &str", "asignaciones repetidas: Vec y String sin with_capacity, colecciones intermedias que se podrían encadenar con iteradores", "algoritmo y estructura de datos: búsquedas lineales dentro de bucles que piden un HashMap, complejidad cuadrática escondida", "formateo con format! en caminos calientes", "Box, Rc y dyn Trait donde bastaría un tipo concreto o genéricos", "trabajo repetido que se puede calcular una vez fuera del bucle", "posible paralelización con rayon y si merece la pena con este tamaño de datos", "lectura de ficheros sin BufReader"],
+  "reglas": ["Ordena las propuestas por relación entre mejora esperada y esfuerzo, y di cuál harías primero", "Estima la mejora como orden de magnitud, sin prometer porcentajes exactos", "No propongas unsafe ni micro-trucos ilegibles salvo que todo lo demás esté hecho", "Cada cambio debe mantener el mismo resultado; señala si alguno cambia el comportamiento en algún caso"],
+  "como_medir": ["añade un benchmark con criterion para la función afectada", "comandos sugeridos: cargo build --release, cargo bench, y perfilado con cargo flamegraph", "mide antes y después de cada cambio, uno a uno, no todos a la vez"],
+  "formato_salida": {
+    "secciones": ["Diagnóstico en tres líneas", "Tabla: cambio propuesto, mejora esperada, esfuerzo, riesgo", "Código antes y después de los dos o tres cambios principales", "Benchmark listo para pegar", "Qué NO tocar y por qué"]
+  },
+  "criterios_calidad": ["el código propuesto compila y da el mismo resultado", "nada se recomienda sin explicar de dónde sale la mejora", "si el código ya está bien, se dice en vez de inventar optimizaciones"],
+  "tono": "analítico, sin humo"
+}

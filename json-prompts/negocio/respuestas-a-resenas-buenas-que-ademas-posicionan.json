@@ -1,0 +1,35 @@
+{
+  "tarea": "Escribir una respuesta distinta para cada reseña positiva, con lenguaje de servicio y zona",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "servicios": "[LISTA DE 3 A 6 SERVICIOS O PRODUCTOS TAL COMO LOS BUSCA LA GENTE]",
+    "zona": "[CIUDAD, BARRIO O ZONA DE INFLUENCIA]",
+    "quien_firma": "[NOMBRE Y CARGO]",
+    "trato": "[TÚ / USTED]"
+  },
+  "entradas": {
+    "resenas_positivas": "[PEGA AQUÍ LAS RESEÑAS DE 4 Y 5 ESTRELLAS, UNA POR LÍNEA, CON EL NOMBRE DEL CLIENTE]"
+  },
+  "proceso": [
+    "Lee cada reseña y localiza el detalle único que menciona",
+    "Responde a ese detalle en la primera frase para que no parezca copiado",
+    "Cuela de forma natural el servicio concreto y la zona, solo cuando encaje",
+    "Cierra con una invitación concreta a volver o a probar otro servicio",
+    "Varía saludos, cierres y estructura entre respuestas consecutivas"
+  ],
+  "restricciones": [
+    "Entre 25 y 55 palabras por respuesta",
+    "Nombre de pila del cliente solo si aparece en la reseña",
+    "Prohibido empezar dos respuestas con la misma palabra",
+    "Nada de forzar palabras clave: si suena a anuncio, se quita",
+    "Máximo un emoji, y solo si el negocio es de trato informal"
+  ],
+  "formato_salida": {
+    "tabla": "Nº | Cliente | Detalle que menciona | Respuesta lista para copiar",
+    "aviso": "Marca con asterisco las reseñas que conviene contestar en privado por algo que dicen"
+  },
+  "criterios_calidad": [
+    "Ninguna respuesta serviría igual para otra reseña distinta",
+    "Se lee en 5 segundos y suena a persona, no a departamento"
+  ]
+}

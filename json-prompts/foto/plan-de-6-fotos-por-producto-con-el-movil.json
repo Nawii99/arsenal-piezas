@@ -1,0 +1,40 @@
+{
+  "tarea": "Disenar el plan de rodaje de 6 fotos para [PRODUCTO], pensado para hacerse con movil y luz natural en casa",
+  "contexto": {
+    "producto": "[PRODUCTO, TAMANO APROXIMADO Y MATERIAL]",
+    "lugar": "[MESA JUNTO A VENTANA / TRASTERO / COCINA]",
+    "equipo": "[MODELO DE MOVIL O CAMARA Y LO QUE TENGAS: TRIPODE, CARTULINAS, FLEXO]",
+    "tiempo_disponible": "[MINUTOS U HORAS]"
+  },
+  "set_de_fotos": [
+    "1. Principal frontal sobre fondo neutro",
+    "2. Tres cuartos para ver volumen",
+    "3. Detalle del acabado, costura, cierre o etiqueta",
+    "4. Escala junto a un objeto cotidiano reconocible",
+    "5. Producto en uso o en su contexto real",
+    "6. Contenido completo de la caja o del pack"
+  ],
+  "para_cada_foto_indica": [
+    "Que se ve y por que le importa al comprador",
+    "Altura y angulo de camara en grados",
+    "Posicion de la ventana respecto al producto y donde poner la cartulina de rebote",
+    "Distancia aproximada y si usar zoom 2x para evitar deformacion",
+    "Como colocar el producto para que no se caiga ni brille mal",
+    "Ajustes del movil: bloquear enfoque y exposicion, HDR, cuadricula"
+  ],
+  "restricciones": [
+    "Nada de comprar material: solo alternativas caseras como folios, cartulina, papel de horno o una sabana blanca",
+    "Evitar luz directa del sol y mezclar luz de ventana con bombillas amarillas",
+    "Todas las tomas deben hacerse sin mover la mesa para mantener el mismo fondo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: numero de foto, objetivo, montaje, ajustes, error tipico",
+    "bloque_2": "Orden recomendado de disparo para tardar lo menos posible",
+    "bloque_3": "Lista de preparacion del producto antes de disparar: limpiar, planchar, quitar etiquetas de precio",
+    "bloque_4": "Los 5 fallos que obligan a repetir la sesion"
+  },
+  "criterios_calidad": [
+    "Cualquiera con un movil podria ejecutar el plan sin conocimientos previos",
+    "Las seis fotos cubren duda de tamano, calidad, uso y contenido"
+  ]
+}

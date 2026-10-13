@@ -1,0 +1,36 @@
+{
+  "tarea": "Diagnosticar por qué ha caído [MÉTRICA: VISITAS / PEDIDOS / LEADS] en [WEB O PRODUCTO] y devolver hipótesis ordenadas por probabilidad con su comprobación",
+  "entradas": {
+    "metrica_afectada": "[EJ: PEDIDOS]",
+    "periodo_normal": "[FECHAS] con valor [CIFRA]",
+    "periodo_caida": "[FECHAS] con valor [CIFRA]",
+    "desglose_por_canal": "[PEGA AQUÍ SESIONES Y CONVERSIONES POR CANAL DE AMBOS PERIODOS]",
+    "desglose_por_dispositivo": "[MÓVIL / ESCRITORIO, SI LO TIENES]",
+    "cambios_recientes": "[REDISEÑO, CAMBIO DE PRECIOS, PAUSAR CAMPAÑAS, MIGRACIÓN, BANNER DE COOKIES...]",
+    "estacionalidad_conocida": "[EJ: AGOSTO SIEMPRE FLOJO]"
+  },
+  "metodo": [
+    "Separar si es un problema de tráfico (menos gente) o de conversión (misma gente, compra menos)",
+    "Comprobar si la caída es de un solo canal, dispositivo, país o página, o es generalizada",
+    "Descartar primero causas de medición: etiqueta rota, consentimiento, filtros, cambio de dominio",
+    "Luego causas externas: algoritmo, competencia, estacionalidad, presupuesto de campañas",
+    "Luego causas internas: web caída, formulario roto, pasarela de pago, velocidad, stock",
+    "Estimar el impacto de cada hipótesis en unidades de negocio, no en porcentajes sueltos"
+  ],
+  "restricciones": [
+    "No afirmes causas sin dato que las respalde: marca cada hipótesis como confirmada, probable o descartable",
+    "Compara siempre contra el mismo periodo del año anterior si el dato está disponible",
+    "Si faltan datos para decidir, pide exactamente qué informe hay que sacar y dónde"
+  ],
+  "formato_salida": {
+    "resumen": "3 líneas: qué ha pasado, causa más probable y qué hacer hoy",
+    "tabla_hipotesis": ["hipotesis", "probabilidad_alta_media_baja", "como_comprobarla_paso_a_paso", "impacto_estimado", "si_se_confirma_que_hago"],
+    "plan": "Lista de comprobaciones en el orden en el que hay que hacerlas, la más rápida y barata primero"
+  },
+  "criterios_calidad": [
+    "Distingue claramente entre caída real y caída de medición",
+    "Cada comprobación se puede hacer en menos de 20 minutos y dice dónde hacer clic",
+    "No hay hipótesis genéricas del tipo mejora el SEO"
+  ],
+  "tono": "Frío y analítico, sin alarmismo"
+}

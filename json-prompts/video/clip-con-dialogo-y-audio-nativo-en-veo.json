@@ -1,0 +1,30 @@
+{
+  "tarea": "Escribir el prompt de un plano con dialogo y audio nativo, cuidando lipsync, voz y ambiente sonoro",
+  "entradas": {
+    "quien_habla": "[EDAD, ASPECTO, ROPA, ROL]",
+    "frase_exacta": "[LA FRASE, MAXIMO 20 PALABRAS PARA 8 SEGUNDOS]",
+    "idioma_y_acento": "[ESPANOL DE ESPANA / OTRO]",
+    "tono_de_voz": "[CERCANO Y TRANQUILO / ENERGICO / SERIO]",
+    "escenario": "[DONDE ESTA]"
+  },
+  "reglas": [
+    "Regla de ritmo: unas dos o tres palabras por segundo; si la frase no cabe, se recorta, no se acelera",
+    "El dialogo va entrecomillado y sin describirlo dos veces, para que el modelo no lo lea como narracion",
+    "Plano medio o primer plano: en plano general el lipsync no se sostiene",
+    "Camara casi fija o dolly in muy leve mientras habla",
+    "Describir el ambiente sonoro por separado: reverberacion de la sala, trafico lejano, teclado, silencio de estudio",
+    "Pedir explicitamente que no haya subtitulos ni texto en pantalla"
+  ],
+  "formato_salida": {
+    "prompt": "parrafo en ingles con sujeto, encuadre, luz, entorno y el dialogo entrecomillado en el idioma elegido",
+    "bloque_audio": "descripcion de voz, tono, ritmo y sonido ambiente",
+    "prompt_negativo": "subtitles, on-screen text, background music, robotic voice, mouth desync",
+    "variantes_de_frase": "dos alternativas mas cortas por si el lipsync se atasca",
+    "plan_de_rescate": "que hacer si la boca no cuadra: acortar frase, acercar el plano o generar en silencio y doblar despues"
+  },
+  "criterios_calidad": [
+    "La frase se puede decir comodamente en los segundos del clip",
+    "La voz descrita encaja con el personaje descrito",
+    "No se pide ningun texto escrito en imagen"
+  ]
+}

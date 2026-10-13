@@ -1,0 +1,40 @@
+{
+  "tarea": "Convertir una lista suelta de problemas técnicos en un backlog de deuda técnica priorizado y listo para planificar",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "producto": "[QUÉ HACE TU PRODUCTO]",
+    "objetivos_del_trimestre": "[OBJETIVOS DE NEGOCIO: lanzar X, aguantar Y clientes, reducir soporte...]",
+    "capacidad": "[HORAS O DÍAS DE DESARROLLO DISPONIBLES PARA DEUDA TÉCNICA]"
+  },
+  "entradas": {
+    "problemas_detectados": "[PEGA LA LISTA TAL CUAL, AUNQUE ESTÉ DESORDENADA]",
+    "restricciones_conocidas": "[FECHAS, AUDITORÍAS, CONTRATOS O MIGRACIONES YA COMPROMETIDAS]"
+  },
+  "metodo_priorizacion": {
+    "tipo_de_deuda": ["deliberada y sana", "deliberada e imprudente", "accidental", "por obsolescencia"],
+    "criterios": ["riesgo de caída o pérdida de datos", "coste de no hacerlo cada mes", "bloqueo de funcionalidades de negocio", "esfuerzo estimado", "reversibilidad"],
+    "regla": "Prioriza lo que bloquea un objetivo de negocio o puede provocar una caída; luego lo que ahorra tiempo cada semana"
+  },
+  "pasos": [
+    "Agrupa problemas duplicados o que se resuelven con la misma acción",
+    "Clasifica cada uno por tipo de deuda y criterios",
+    "Descarta explícitamente lo que no merece la pena arreglar y explica por qué",
+    "Reparte lo aprobado en tandas que quepan en la capacidad indicada"
+  ],
+  "restricciones": [
+    "Cada ítem cabe en una tanda de trabajo entregable; parte lo que sea demasiado grande",
+    "No propongas más trabajo del que cabe en la capacidad declarada",
+    "Marca claramente los ítems que se pueden aplazar sin riesgo"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown + plan",
+    "columnas": ["id", "problema", "tipo de deuda", "riesgo si no se hace", "beneficio", "esfuerzo", "prioridad"],
+    "plan": "Tandas numeradas con lo que entra en cada una y el resultado observable al terminarla",
+    "descartados": "Lista aparte con el motivo de descarte"
+  },
+  "criterios_calidad": [
+    "Cada prioridad se puede defender ante alguien de negocio en una frase",
+    "El plan cabe en la capacidad real",
+    "Cada tanda deja el sistema funcionando, sin estados intermedios rotos"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "tarea": "Comparar la información de mi negocio en todos los sitios donde aparece y sacar una lista de contradicciones con la versión correcta y dónde corregir cada una",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD]",
+    "canales": "[WEB, FICHA DE GOOGLE, INSTAGRAM, FACEBOOK, TIENDA ONLINE, CARTA O CATÁLOGO EN PDF, PORTALES, CHATBOT, FIRMA DE EMAIL, FOLLETOS]",
+    "cambio_reciente": "[QUÉ HE CAMBIADO ÚLTIMAMENTE: PRECIOS, HORARIO, DIRECCIÓN, TELÉFONO, SERVICIOS]",
+    "version_correcta": "[LOS DATOS BUENOS DE HOY, ESCRITOS UNA SOLA VEZ]"
+  },
+  "datos_a_comparar": [
+    "Nombre exacto del negocio y forma de escribirlo.",
+    "Dirección, incluidos piso y referencias, y zona de servicio.",
+    "Teléfono y WhatsApp, y quién los contesta.",
+    "Horario normal, festivos y vacaciones.",
+    "Precios y qué incluye cada uno, con IVA o sin él.",
+    "Servicios o productos que ya no ofreces y siguen anunciados.",
+    "Plazos de entrega o de respuesta prometidos.",
+    "Política de devolución, cancelación y fianzas.",
+    "Fotos que ya no corresponden al local o al producto.",
+    "Enlaces: los que llevan a páginas muertas o a perfiles abandonados."
+  ],
+  "pasos": [
+    "1. Escribe primero la versión correcta de cada dato: sin eso, la auditoría no tiene con qué comparar.",
+    "2. Recorre cada canal y copia el dato tal cual aparece, con captura y fecha.",
+    "3. Búscate en Google con el nombre y la ciudad y revisa también los sitios que no controlas: portales, directorios, agregadores.",
+    "4. Pregunta a tu propio chatbot o a tu WhatsApp automático por precio y horario, que suele quedarse congelado en la versión antigua.",
+    "5. Marca cada diferencia por gravedad: engaña al cliente, le hace perder el viaje, o solo es incoherente.",
+    "6. Ordena las correcciones por cuánta gente ve ese canal, no por lo fácil que sea cambiarlo.",
+    "7. Anota qué canales no puedes editar tú y a quién hay que escribir.",
+    "8. Deja fijada la fecha de la próxima revisión y quién la hace."
+  ],
+  "errores_tipicos": [
+    "Actualizar la web y olvidar la ficha de Google, que es la que más gente ve.",
+    "Dejar PDFs y cartas antiguas colgando con precios viejos.",
+    "No revisar los perfiles antiguos que ya no usas pero siguen apareciendo.",
+    "Cambiar el precio y no el texto del anuncio ni el del bot.",
+    "Hacer la auditoría sin escribir antes cuál es el dato correcto."
+  ],
+  "formato_salida": {
+    "tabla_comparativa": "Dato, versión correcta, y una columna por canal con lo que dice hoy",
+    "lista_correcciones": "Canal, qué corregir, texto exacto que hay que poner, quién lo hace",
+    "canales_ajenos": "Dónde aparece mi negocio sin que yo lo controle y cómo pedir el cambio",
+    "recordatorio": "Fecha de la próxima revisión y lista mínima a comprobar"
+  },
+  "criterios_calidad": [
+    "La versión correcta está escrita una sola vez y todo se compara contra ella.",
+    "Cada corrección incluye el texto final, listo para pegar.",
+    "Se ha revisado al menos un canal que no controlas.",
+    "El chatbot o las respuestas automáticas están incluidos en la comparación."
+  ]
+}

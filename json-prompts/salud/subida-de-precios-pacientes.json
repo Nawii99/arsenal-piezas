@@ -1,0 +1,50 @@
+{
+  "tarea": "Planificar y redactar la actualización de tarifas de [NOMBRE DEL CENTRO] con su comunicación a pacientes",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CLÍNICA O CENTRO]",
+    "ultima_subida": "[AÑO DE LA ÚLTIMA ACTUALIZACIÓN]",
+    "tipo_de_paciente": "[RECURRENTE, PUNTUAL, CON BONOS, DE MUTUA]",
+    "competencia_en_zona": "[PRECIOS APROXIMADOS DE 3 CENTROS CERCANOS]"
+  },
+  "entradas": {
+    "tarifas_actuales": "[SERVICIO, PRECIO Y NÚMERO DE SESIONES AL MES DE CADA UNO]",
+    "costes": "[ALQUILER, SUELDOS, MATERIAL Y SU VARIACIÓN DESDE LA ÚLTIMA SUBIDA]",
+    "bonos_vendidos": "[BONOS PAGADOS Y NO CONSUMIDOS A DÍA DE HOY]"
+  },
+  "pasos": [
+    "1. Calcula cuánto han subido tus costes desde la última actualización y cuál es tu margen actual por servicio.",
+    "2. No subas todo por igual: sube más los servicios con demanda alta y hueco escaso, y deja quieto lo que ya está caro para la zona.",
+    "3. Ajusta a cifras redondas y comprensibles; evita los céntimos y los precios con nueve en salud.",
+    "4. Decide la fecha de entrada en vigor con al menos cuatro semanas de aviso y respeta los bonos ya pagados hasta su fecha de caducidad.",
+    "5. Define las excepciones por escrito: pacientes con tratamiento en curso, planes largos ya presupuestados y casos sociales concretos.",
+    "6. Escribe el mensaje: una frase de agradecimiento, el hecho de la subida con la fecha, qué mejora o se mantiene, y ninguna disculpa.",
+    "7. Prepara tres versiones: cartel en recepción, mensaje a la base de pacientes y guion de mostrador de seis líneas.",
+    "8. Entrena las respuestas a las tres reacciones típicas: es mucho, en el centro de al lado es más barato y me lo tengo que pensar.",
+    "9. Fija la revisión: a las seis semanas se mira cuántos pacientes se han ido de verdad y cuánto ha subido la facturación."
+  ],
+  "restricciones": [
+    "No se sube el precio a un paciente con un tratamiento ya presupuestado y en marcha.",
+    "No se pide perdón por subir precios ni se dan explicaciones largas: enfría y genera dudas.",
+    "No se usan los costes de la vida como excusa vacía: se explica qué mejora en el servicio.",
+    "No se anuncian precios distintos a personas distintas sin un criterio escrito."
+  ],
+  "formato_salida": {
+    "1_tabla_de_tarifas": "Servicio, precio actual, precio nuevo, variación y motivo",
+    "2_impacto": "Facturación estimada antes y después, y cuántas bajas puedes asumir",
+    "3_calendario": "Fechas de aviso, entrada en vigor y fin de respeto de bonos",
+    "4_mensajes": "Cartel, mensaje a pacientes y guion de mostrador",
+    "5_objeciones": "Tres reacciones con su respuesta en dos frases"
+  },
+  "criterios_calidad": [
+    "Se sabe cuántos pacientes se pueden perder antes de que la subida deje de compensar.",
+    "El mensaje ocupa menos de 100 palabras y no pide disculpas.",
+    "Todo el equipo dice el mismo precio y la misma explicación.",
+    "Los bonos y tratamientos en curso quedan claros por escrito."
+  ],
+  "errores_tipicos": [
+    "Subir un 3 por ciento cada año por miedo y quedarse muy por debajo del mercado.",
+    "Avisar la misma semana del cambio.",
+    "Hacer excepciones de palabra a quien se queja y crear precios distintos por paciente.",
+    "Subir precio sin tocar nada del servicio ni del trato."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "tarea": "Crear una prueba de evaluación interna con rúbrica de corrección para verificar el dominio de una tarea del puesto",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "materia": "[TAREA O MATERIA EVALUADA]",
+    "puesto": "[PUESTO DE LOS EVALUADOS]",
+    "uso": "[COMPROBAR FIN DE FORMACIÓN O AUTORIZAR TRABAJO AUTÓNOMO]",
+    "nota_minima": "[PORCENTAJE DE APROBADO, EJ: 80]"
+  },
+  "entradas": {
+    "contenidos_impartidos": "[TEMAS Y PROCEDIMIENTOS QUE SE HAN ENSEÑADO]",
+    "errores_a_detectar": "[FALLOS QUE NO PUEDEN PASAR EN EL TRABAJO REAL]",
+    "tiempo_de_prueba": "[MINUTOS DISPONIBLES]"
+  },
+  "procedimiento": [
+    "Reparte las preguntas entre saber (30 por ciento) y saber hacer (70 por ciento), nunca al revés",
+    "Escribe 6 preguntas de opción múltiple con distractores que sean errores reales, no absurdos",
+    "Añade 3 casos prácticos con datos concretos donde haya que decidir y justificar",
+    "Incluye 1 caso trampa con un dato incorrecto para ver si lo detectan",
+    "Redacta la rúbrica: qué respuesta vale el punto entero, cuál medio punto y cuál cero",
+    "Marca las preguntas eliminatorias: fallarlas significa no apto aunque la nota total llegue"
+  ],
+  "restricciones": [
+    "Nada de preguntas de memoria pura ni de definiciones de manual",
+    "Ningún enunciado ambiguo ni con doble negación",
+    "La prueba cabe en el tiempo indicado con margen"
+  ],
+  "formato_salida": {
+    "tipo": "dos documentos separados",
+    "secciones": [
+      "Documento 1: prueba lista para entregar al evaluado",
+      "Documento 2: plantilla de corrección con respuestas, rúbrica y puntuación",
+      "Tabla de qué contenido evalúa cada pregunta",
+      "Recomendación de qué hacer con quien no aprueba: qué repasar y cuándo repetir"
+    ]
+  },
+  "criterios_calidad": [
+    "Dos personas distintas corrigiendo con la rúbrica dan la misma nota",
+    "Aprobar la prueba significa que la tarea se hace bien en el trabajo real",
+    "Ninguna pregunta se puede acertar por sentido común sin haber recibido la formación"
+  ],
+  "tono": "neutro y preciso"
+}

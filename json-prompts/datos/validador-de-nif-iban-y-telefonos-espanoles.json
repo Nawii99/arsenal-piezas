@@ -1,0 +1,38 @@
+{
+  "tarea": "Validar identificadores fiscales, cuentas bancarias y teléfonos de una base de clientes española",
+  "contexto": {
+    "tipo_clientes": "[PARTICULARES, EMPRESAS O AMBOS]",
+    "uso": "[FACTURACIÓN, DOMICILIACIÓN DE RECIBOS, AVISOS POR SMS O WHATSAPP]",
+    "pais_principal": "España"
+  },
+  "entradas": {
+    "registros": "[PEGA EN CSV: ID, NOMBRE, NIF_CIF, IBAN, TELEFONO]"
+  },
+  "reglas_validacion": {
+    "nif": "8 dígitos más letra de control calculada con el resto de dividir entre 23 sobre la tabla TRWAGMYFPDXBNJZSQVHLCKE",
+    "nie": "Empieza por X, Y o Z; se sustituye por 0, 1 o 2 y se aplica la misma letra de control",
+    "cif": "Letra inicial de tipo de sociedad más 7 dígitos y dígito o letra de control",
+    "iban": "24 caracteres para España: ES más 2 dígitos de control, 4 de entidad, 4 de oficina, 2 de control y 10 de cuenta; se comprueba el módulo 97",
+    "telefono": "9 dígitos; móvil si empieza por 6 o 7, fijo si empieza por 8 o 9; se admite prefijo 34 pero se separa"
+  },
+  "normalizacion_previa": [
+    "Quitar espacios, puntos, guiones y prefijos escritos a mano",
+    "Pasar letras a mayúscula",
+    "Detectar confusiones típicas entre O y 0, I y 1, B y 8"
+  ],
+  "formato_salida": {
+    "tipo": "tabla CSV",
+    "columnas": ["id", "campo", "valor_original", "valor_normalizado", "resultado", "motivo", "accion_recomendada"],
+    "valores_resultado": ["valido", "corregible", "invalido", "vacio"],
+    "extra": "Al final, un bloque con el listado de IDs a los que hay que pedir el dato de nuevo"
+  },
+  "restricciones": [
+    "No inventes ni completes dígitos que falten",
+    "Corregible solo cuando el arreglo es evidente, como quitar espacios o añadir el prefijo ES",
+    "No confirmes que una cuenta existe: solo compruebas el formato y los dígitos de control"
+  ],
+  "criterios_calidad": [
+    "Cada invalido explica en lenguaje llano qué falla",
+    "El resumen final dice cuántos registros no se pueden facturar tal como están"
+  ]
+}

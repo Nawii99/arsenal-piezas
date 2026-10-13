@@ -1,0 +1,49 @@
+{
+  "tarea": "Diseñar una campaña de reactivación de clientes inactivos: selección, motivo del contacto, mensaje y calendario",
+  "rol": "Comercial que vuelve a llamar a la puerta sin sonar desesperado ni pedir favores",
+  "contexto": {
+    "negocio": "[QUÉ VENDES]",
+    "ciclo_normal_de_compra": "[CADA CUÁNTO TE COMPRA UN CLIENTE NORMAL]",
+    "novedades": "[QUÉ HA CAMBIADO EN TU NEGOCIO DESDE ENTONCES: SERVICIOS, EQUIPO, PLAZOS, RESULTADOS]"
+  },
+  "entradas": {
+    "clientes_inactivos": "[NOMBRE, ÚLTIMA COMPRA, IMPORTE, QUÉ COMPRÓ Y CÓMO ACABÓ LA RELACIÓN]",
+    "motivos_conocidos_de_baja": "[SI SABES POR QUÉ DEJARON DE COMPRAR]",
+    "epoca_del_ano": "[SI TU SECTOR TIENE TEMPORADAS]"
+  },
+  "pasos": [
+    "Define qué es dormido en tu negocio a partir del ciclo normal de compra; no uses una cifra genérica",
+    "Separa en tres grupos: se fueron contentos y sin motivo, se fueron por un problema, se fueron por precio",
+    "Descarta a los que se fueron con un conflicto abierto o impago salvo que primero repares eso",
+    "Elige el motivo del contacto para cada grupo: novedad útil, disculpa y arreglo, o propuesta de entrada más pequeña",
+    "Escribe un primer mensaje que no eche en cara la ausencia y que pueda contestarse con una palabra",
+    "Prepara el segundo contacto a los 7 días, con un motivo distinto, y el cierre a los 20",
+    "Para los que se fueron por un problema, escribe la pregunta directa sobre qué pasó y qué harías distinto",
+    "Marca cuántos contactar por semana y en qué orden, empezando por los de mayor importe histórico"
+  ],
+  "restricciones": [
+    "Nada de descuentos de reenganche en el primer mensaje",
+    "Prohibidas frases como 'hace mucho que no sabemos de ti' o 'te echamos de menos'",
+    "Máximo tres contactos por cliente en toda la campaña",
+    "Español de España, cercano, sin lenguaje de newsletter"
+  ],
+  "formato_salida": {
+    "definicion_de_dormido": "a partir de cuántos meses, y por qué",
+    "grupos": [{"grupo": "...", "clientes": ["..."], "motivo_del_contacto": "..."}],
+    "mensajes": [{"grupo": "...", "contacto_1": "...", "contacto_2": "...", "cierre": "..."}],
+    "casos_a_reparar": [{"cliente": "...", "que_paso": "...", "mensaje_de_reparacion": "..."}],
+    "calendario": [{"semana": 1, "clientes": ["..."], "canal": "..."}],
+    "que_medir": ["cuántos responden", "cuántos vuelven a comprar", "importe recuperado"]
+  },
+  "criterios_calidad": [
+    "Ningún mensaje suena a plantilla enviada a lista",
+    "Cada grupo tiene un motivo de contacto distinto y creíble",
+    "Los clientes con impago o conflicto no reciben oferta antes de la conversación",
+    "El primer mensaje se puede contestar sin esfuerzo"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Mandar un email masivo con un cupón y llamarlo reactivación",
+    "Reprochar el silencio o preguntar por qué dejaron de contar contigo en el primer mensaje",
+    "Insistir con los que ya dijeron que no volverían"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "tarea": "Convertir una tarea que hago de memoria en un procedimiento escrito que otra persona pueda ejecutar sola",
+  "contexto": {
+    "proceso": "[QUE TAREA, EJ: PREPARAR Y ENVIAR PEDIDOS, CERRAR LA CAJA, RESPONDER PRESUPUESTOS]",
+    "quien_lo_va_a_hacer": "[PERFIL Y EXPERIENCIA DE QUIEN LO EJECUTARA]",
+    "frecuencia": "[DIARIA, SEMANAL, POR PEDIDO]",
+    "herramientas": "[PROGRAMAS, CORREO, HOJAS, MAQUINAS QUE INTERVIENEN]",
+    "que_pasa_si_sale_mal": "[CONSECUENCIA REAL DE UN ERROR]"
+  },
+  "entradas": {
+    "como_lo_hago_yo": "[CUENTALO COMO TE SALGA, EN DESORDEN, INCLUYENDO LOS TRUCOS]",
+    "casos_raros": "[SITUACIONES QUE SE SALEN DE LO NORMAL Y COMO LAS RESUELVES]",
+    "lo_que_nunca_hay_que_hacer": "[PROHIBICIONES]"
+  },
+  "pasos": [
+    "1. Define el disparador: que hace que esta tarea empiece",
+    "2. Define el resultado terminado: como es una tarea bien acabada, en una frase medible",
+    "3. Ordena los pasos en secuencia, uno por linea, empezando cada uno por un verbo",
+    "4. Divide cualquier paso que tenga dos acciones dentro",
+    "5. Anota en cada paso donde se hace, con que herramienta y cuanto suele tardar",
+    "6. Marca los pasos criticos, los que si se hacen mal cuestan dinero o clientes",
+    "7. Convierte los casos raros en reglas del tipo si pasa esto, entonces haz esto",
+    "8. Escribe la lista de comprobacion final, corta, para marcar antes de dar por cerrada la tarea",
+    "9. Deja claro cuando hay que parar y preguntar en vez de decidir por cuenta propia"
+  ],
+  "que_mirar": [
+    "Pasos que en tu cabeza son uno solo y en realidad son cuatro",
+    "Datos que solo estan en tu movil o en tu cabeza: contraseñas, contactos, precios",
+    "Decisiones que tomas por intuicion y hay que convertir en regla",
+    "Palabras del oficio que la persona nueva no va a entender"
+  ],
+  "errores_tipicos": [
+    "Escribirlo para ti y no para quien no sabe nada",
+    "Mezclar el procedimiento con la explicacion de por que se hace asi",
+    "Dejar fuera los casos raros, que son justo los que generan las llamadas"
+  ],
+  "restricciones": [
+    "Frases cortas y en imperativo",
+    "Nada de tecnicismos sin explicar",
+    "No inventes pasos que no aparecen en lo que te he contado: si falta informacion, pregunta al final"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha: nombre del procedimiento, disparador, resultado terminado, tiempo estimado",
+    "bloque_2": "Pasos numerados, uno por linea, con los criticos marcados",
+    "bloque_3": "Reglas de casos raros en formato si pasa esto entonces esto",
+    "bloque_4": "Lista de comprobacion final con casillas",
+    "bloque_5": "Preguntas que me tienes que hacer porque faltan datos"
+  },
+  "criterios_calidad": [
+    "Alguien que no conoce el negocio puede ejecutarlo sin llamarte",
+    "Cada paso tiene una sola accion",
+    "El resultado terminado se puede comprobar mirando algo concreto",
+    "Cabe en dos folios"
+  ]
+}

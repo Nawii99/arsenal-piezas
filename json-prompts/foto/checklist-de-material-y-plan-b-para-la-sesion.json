@@ -1,0 +1,41 @@
+{
+  "tarea": "Prepararme la lista de material para una sesión de retrato concreta y el plan B para los fallos más probables",
+  "sesion": {
+    "tipo": "[RETRATOS CORPORATIVOS / SESIÓN FAMILIAR / EVENTO / FOTOS DE MARCA PERSONAL]",
+    "lugar": "[OFICINA / CASA / EXTERIOR / LOCAL ALQUILADO] y descripción en una frase",
+    "fecha_y_hora": "[DÍA Y FRANJA HORARIA]",
+    "numero_de_personas": "[CUÁNTAS PERSONAS Y CUÁNTAS FOTOS FINALES]",
+    "hay_enchufes": "[SÍ / NO / NO LO SÉ]",
+    "como_me_desplazo": "[A PIE / COCHE / TRANSPORTE PÚBLICO]",
+    "mi_equipo_disponible": "[LISTA DE LO QUE TIENES]"
+  },
+  "metodo": [
+    "Separar lo imprescindible de lo deseable y de lo que solo se lleva si cabe",
+    "Contar baterías y tarjetas por horas de sesión, no por intuición",
+    "Incluir lo que no es fotografía y siempre se olvida: cinta, pinzas, toallitas, agua, rollo quitapelusas, alargador",
+    "Añadir una tarea de la noche anterior: cargar, formatear, limpiar el objetivo y comprobar el sensor",
+    "Listar los fallos más probables de esta sesión concreta y su solución"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "IMPRESCINDIBLE (si falta, no hay sesión)",
+      "MUY RECOMENDABLE",
+      "SOLO SI CABE",
+      "LA NOCHE ANTES: tareas con casilla",
+      "AL LLEGAR: 5 comprobaciones en los primeros 10 minutos",
+      "PLAN B: tabla de riesgo, señal de alarma y solución",
+      "AL TERMINAR: copia de seguridad y siguiente paso con el cliente"
+    ],
+    "estilo": "listas con casillas de verificación, frases cortas"
+  },
+  "restricciones": [
+    "No incluir material que no tengo salvo en un apartado final de alquiler o préstamo",
+    "Adaptar el peso de la mochila a cómo me desplazo",
+    "Máximo una página imprimible"
+  ],
+  "criterios_calidad": [
+    "Cada punto se puede comprobar en 10 segundos",
+    "El plan B es específico de este lugar y esta hora, no genérico",
+    "Incluye la copia de seguridad de los archivos antes de salir del sitio"
+  ]
+}

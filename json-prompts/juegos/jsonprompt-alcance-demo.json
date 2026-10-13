@@ -1,0 +1,27 @@
+{
+  "tarea": "Definir que contenido incluir y excluir en la demo jugable de un videojuego antes de publicarla en Steam o itch.io",
+  "contexto": "Se usa cuando el estudio va a lanzar una demo y necesita decidir el alcance sin dar contenido de mas ni de menos, para ahorrar la reunion de discusion interna",
+  "entrada": {
+    "titulo_juego": "[nombre del juego]",
+    "genero": "[genero]",
+    "duracion_total_juego_completo_horas": "[numero]",
+    "mecanicas_principales": ["[mecanica 1]", "[mecanica 2]", "[mecanica 3]"],
+    "nivel_o_zona_candidata_a_demo": "[descripcion de la zona o nivel]",
+    "objetivo_de_la_demo": "[por ejemplo: conseguir wishlists, validar antes de un evento, probar con streamers]"
+  },
+  "restricciones": [
+    "la demo no debe superar el 15 por ciento del contenido total salvo que el objetivo sea distinto",
+    "no debe incluir el final ni giros argumentales importantes",
+    "debe poder jugarse de principio a fin sin bugs bloqueantes conocidos",
+    "debe dejar claro dentro de la propia demo que no esta incluido en la version final"
+  ],
+  "salida": {
+    "contenido_incluido": "lista de mecanicas, niveles o personajes que si entran en la demo",
+    "contenido_excluido": "lista de lo que se deja fuera y por que",
+    "duracion_estimada_demo_minutos": "numero orientativo",
+    "riesgos": "lista de riesgos, por ejemplo revelar demasiado contenido o dejar la demo demasiado corta",
+    "checklist_antes_de_publicar": "lista de comprobaciones tecnicas y de contenido antes de subir la demo"
+  },
+  "formato": "tabla en markdown con las columnas contenido, incluir o excluir, motivo",
+  "tono": "directo, sin relleno, en espanol de Espana"
+}

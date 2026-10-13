@@ -1,0 +1,36 @@
+{
+  "tarea": "Hacer el mapa de personas de una cuenta clave: quién decide, quién influye, quién puede frenarme y a quién debería conocer todavía",
+  "contexto": {
+    "mi_empresa": "[NOMBRE DE TU EMPRESA]",
+    "cliente": "[NOMBRE, SECTOR Y TAMAÑO]",
+    "facturacion_de_la_cuenta": "[LO QUE ME FACTURA AL AÑO]",
+    "riesgo_actual": "[QUÉ PASA SI MI CONTACTO SE VA MAÑANA]"
+  },
+  "entradas": {
+    "personas_conocidas": "[NOMBRE, CARGO, TRATO QUE TENGO CON CADA UNO, ÚLTIMA VEZ QUE HABLAMOS]",
+    "organigrama_aproximado": "[DEPARTAMENTOS Y CARGOS QUE SABES QUE EXISTEN]",
+    "quien_firma": "[QUIÉN APRUEBA EL GASTO Y A PARTIR DE QUÉ IMPORTE]"
+  },
+  "metodo": [
+    "1. Asigna a cada persona un papel: decide, usa, influye, paga o bloquea",
+    "2. Marca el nivel de relación de 0 a 3 y la última fecha de contacto",
+    "3. Señala los huecos: papeles importantes que no tengo cubiertos",
+    "4. Propón para cada hueco una excusa legítima para entrar (informe, invitación, consulta técnica, presentación por parte de mi contacto)",
+    "5. Deja un plan de 30 días con dos contactos nuevos como máximo"
+  ],
+  "restricciones": [
+    "Nada de saltarse a mi contacto por detrás: cada entrada nueva debe poder contarse delante de él",
+    "No inventes cargos ni nombres que no te haya dado",
+    "Máximo dos frases por persona"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla más plan",
+    "columnas": ["Persona", "Cargo", "Papel", "Relación 0-3", "Qué le importa", "Próximo paso"],
+    "extras": ["Huecos peligrosos", "Mensaje de presentación para pedirle a mi contacto que me presente", "Plan de 30 días"]
+  },
+  "criterios_calidad": [
+    "Se ve de un vistazo de qué persona depende mi facturación",
+    "Cada acercamiento tiene un motivo que aporta algo al otro"
+  ],
+  "tono": "Práctico y discreto"
+}

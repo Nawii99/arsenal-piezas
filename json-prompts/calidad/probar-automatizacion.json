@@ -1,0 +1,51 @@
+{
+  "tarea": "Probar a propósito mi automatización con los casos raros que la rompen, y dejar montado un aviso para enterarme cuando falle de verdad",
+  "contexto": {
+    "herramienta": "[MAKE / ZAPIER / N8N / AUTOMATIZACIÓN NATIVA]",
+    "que_hace_el_flujo": "[DE DÓNDE SALE EL DATO, POR DÓNDE PASA Y DÓNDE ACABA]",
+    "cada_cuanto_se_dispara": "[POR FORMULARIO / CADA HORA / POR MENSAJE NUEVO]",
+    "que_pasa_si_falla": "[SE PIERDE UN LEAD, NO SE COBRA, EL CLIENTE NO RECIBE NADA]"
+  },
+  "casos_a_probar": [
+    "Campo vacío: el cliente deja el teléfono o el nombre en blanco.",
+    "Formato raro: teléfono con prefijo, espacios o letras; email en mayúsculas; fecha al revés.",
+    "Texto larguísimo o con emojis y acentos.",
+    "Duplicado: la misma persona envía el formulario tres veces en un minuto.",
+    "Avalancha: veinte entradas seguidas, para ver si se pasa del límite de la herramienta.",
+    "Servicio caído: el destino no responde, ¿reintenta, se pierde o se queda a medias?",
+    "Permiso caducado: la conexión con Gmail, Drive o la hoja se ha desconectado.",
+    "Dato a medias: se crea el contacto pero no se envía el email, y nadie lo sabe.",
+    "Cambio de nombre de una columna de la hoja de cálculo.",
+    "Prueba en fin de semana o de madrugada, si el flujo depende de horarios."
+  ],
+  "pasos": [
+    "1. Dibuja el flujo en una lista de pasos numerados y marca en cuál se pierde el dato si se corta ahí.",
+    "2. Lanza los diez casos uno a uno, con datos falsos reconocibles como PRUEBA-01, para poder borrarlos luego.",
+    "3. Después de cada caso, comprueba el destino final, no el aviso de éxito de la herramienta.",
+    "4. Revisa el historial de ejecuciones y mira cuáles fallaron en silencio.",
+    "5. Añade lo que falte: filtro de duplicados, valores por defecto, reintento y una ruta de error.",
+    "6. Monta el aviso: que un fallo te llegue por email o mensaje con el dato dentro, para poder rehacerlo a mano.",
+    "7. Guarda una copia o exportación del flujo que funciona antes de tocarlo otra vez.",
+    "8. Borra los datos de prueba de todos los destinos, incluidas listas de correo."
+  ],
+  "errores_tipicos": [
+    "Probar solo con tus datos perfectos y ninguno con faltas.",
+    "Confiar en la marca verde de la herramienta sin abrir el destino.",
+    "No poner aviso de fallo: te enteras cuando el cliente reclama.",
+    "Dejar los contactos de prueba dentro de la lista real y enviarles emails.",
+    "Modificar el flujo en producción sin copia previa."
+  ],
+  "formato_salida": {
+    "mapa_del_flujo": "Pasos numerados con el punto de pérdida marcado",
+    "tabla_casos": "Caso, dato usado, resultado esperado, resultado real, arreglo",
+    "arreglos": "Lista de cambios concretos a aplicar en la herramienta, en orden",
+    "aviso_de_fallo": "Cómo queda montado el aviso y a dónde llega",
+    "limpieza": "Qué datos de prueba hay que borrar y de dónde"
+  },
+  "criterios_calidad": [
+    "Cada caso se ha verificado en el destino final.",
+    "Existe un aviso que llega a una persona con el dato suficiente para rehacerlo a mano.",
+    "Hay copia del flujo anterior antes de los cambios.",
+    "No queda ningún dato de prueba vivo en listas o contabilidad."
+  ]
+}

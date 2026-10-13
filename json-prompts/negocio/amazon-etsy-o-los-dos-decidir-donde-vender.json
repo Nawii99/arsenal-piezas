@@ -1,0 +1,37 @@
+{
+  "tarea": "Comparar marketplaces para un producto concreto y recomendar en cuál vender primero, con un plan de entrada de 30 días",
+  "contexto": {
+    "producto": "[QUÉ VENDES Y EN QUÉ VARIANTES]",
+    "tipo": "[ARTESANAL / PERSONALIZADO / VINTAGE / FABRICADO EN SERIE / REVENTA DE MARCA]",
+    "coste_unitario": "[COSTE]",
+    "precio_previsto": "[PRECIO]",
+    "stock_disponible": "[UNIDADES O CAPACIDAD DE PRODUCCIÓN AL MES]",
+    "tiempo_semanal": "[HORAS QUE PUEDES DEDICAR]",
+    "presupuesto_inicial": "[EUROS]",
+    "marca_registrada": "[SÍ/NO]",
+    "mercados_de_interes": "[ESPAÑA, UE, EE. UU.]"
+  },
+  "canales_a_comparar": ["Amazon Seller Central", "Etsy", "Tienda propia con Shopify o similar"],
+  "criterios_de_comparacion": [
+    "Encaje del producto con lo que busca el público de ese canal",
+    "Coste total: cuota, comisión por venta, comisión de pago, logística y publicidad",
+    "Esfuerzo de entrada: verificación de identidad, fotos, fichas, requisitos fiscales",
+    "Competencia y sensibilidad al precio en tu categoría",
+    "Obligaciones fiscales al vender fuera de España (IVA, ventanilla única, facturación)",
+    "Dependencia y riesgo: qué pasa si te cierran la cuenta mañana"
+  ],
+  "formato_salida": {
+    "tabla_comparativa": "Criterio | Amazon | Etsy | Tienda propia, con nota de 1 a 5 y una línea de justificación",
+    "coste_por_venta": "Cálculo aproximado de lo que te queda limpio en cada canal con tu precio y coste",
+    "recomendacion": "Canal principal elegido, canal secundario y cuál descartar por ahora, con el motivo",
+    "plan_30_dias": "Cuatro semanas con tareas concretas para abrir el canal recomendado",
+    "requisitos_previos": "Documentación, alta fiscal y datos que necesitas antes de empezar",
+    "senales_para_abrir_el_segundo_canal": "3 condiciones medibles que deben cumplirse antes de diversificar"
+  },
+  "criterios_calidad": [
+    "La recomendación se apoya en el tipo de producto y en el margen, no en modas",
+    "Si el margen no aguanta las comisiones de ningún canal, se dice claramente y se propone subir precio o cambiar producto",
+    "Las cuestiones fiscales se marcan como 'a confirmar con tu asesor', sin dar por hecho tu situación"
+  ],
+  "tono": "Práctico y honesto, español de España, sin vender humo sobre lo fácil que es vender por internet"
+}

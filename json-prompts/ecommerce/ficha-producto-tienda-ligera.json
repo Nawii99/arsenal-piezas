@@ -1,0 +1,39 @@
+{
+  "tarea": "generar_ficha_producto_tienda_ligera",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "pais": "España",
+    "moneda": "EUR",
+    "tipo_iva_pct": "[21 | 10 | 4 | 0]"
+  },
+  "producto": {
+    "nombre": "[NOMBRE DEL PRODUCTO]",
+    "precio_sin_iva_eur": "[PRECIO SIN IVA]",
+    "descripcion_corta": "[UNA FRASE, MAXIMO 20 PALABRAS]",
+    "variantes": [
+      { "tipo": "[talla|color|formato]", "opciones": ["[OPCION 1]", "[OPCION 2]"] }
+    ],
+    "stock_disponible": "[NUMERO O 'bajo pedido']",
+    "envio": {
+      "peso_kg": "[PESO]",
+      "zona": "[España peninsular|Baleares|Canarias|UE|Internacional]",
+      "coste_envio_eur": "[COSTE]"
+    }
+  },
+  "pasarela": {
+    "proveedor": "stripe",
+    "modo_cobro": "[payment_link|checkout_embebido]",
+    "comision_estimada_pct": 1.4,
+    "comision_fija_eur": 0.25
+  },
+  "salida_esperada": {
+    "formato": "bloque de texto para pegar en la página de producto",
+    "incluir": ["titulo", "descripcion_larga", "boton_de_compra_con_precio_final_con_iva", "aviso_de_gastos_de_envio"],
+    "tono": "directo, sin superlativos, en español de España"
+  },
+  "restricciones": [
+    "no inventar certificaciones ni sellos de calidad",
+    "no prometer plazos de envio que no esten en envio.zona",
+    "mostrar siempre el precio final con IVA incluido, no solo el precio sin IVA"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "tarea": "Diseñar el calendario de notificaciones push, in-app y correo del primer mes de vida de un usuario nuevo",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "que_resuelve": "[QUÉ PROBLEMA RESUELVE EN UNA FRASE]",
+    "usuario_tipo": "[QUIÉN LA USA Y PARA QUÉ]",
+    "momento_aha": "[ACCIÓN QUE HACE QUE EL USUARIO ENTIENDA EL VALOR]",
+    "accion_recurrente": "[ACCIÓN QUE DEBERÍA REPETIR CADA SEMANA]",
+    "herramienta_envio": "[FIREBASE, ONESIGNAL, BRAZE, CUSTOMER.IO U OTRA]",
+    "zona_horaria": "[PAÍSES O ZONAS DONDE ESTÁN TUS USUARIOS]"
+  },
+  "entradas": {
+    "eventos_disponibles": "[EVENTOS QUE YA MIDES: registro, primer uso, compra...]",
+    "retencion_actual": "[D1, D7 Y D30 SI LOS CONOCES; SI NO, ESCRIBE: no lo sé]",
+    "canales_activos": "[PUSH, IN-APP, EMAIL, WHATSAPP]"
+  },
+  "instrucciones": [
+    "Reparte los mensajes en cuatro tramos: día 0-1, día 2-7, día 8-14 y día 15-30",
+    "Cada mensaje se dispara por un comportamiento (evento o ausencia de evento), nunca por fecha a secas salvo el de bienvenida",
+    "Máximo 2 push por semana y nunca dos el mismo día; el resto va a in-app o email",
+    "Para cada push indica la condición de salida: si el usuario ya hizo la acción, no se envía",
+    "Respeta ventana horaria de 09:00 a 21:00 hora local y evita las mañanas de domingo",
+    "Marca qué mensajes son transaccionales (siempre se envían) y cuáles promocionales (se pueden silenciar)"
+  ],
+  "restricciones": [
+    "Título de push: máximo 40 caracteres. Cuerpo: máximo 120 caracteres",
+    "Nada de mayúsculas gritadas ni relleno tipo No te lo pierdas",
+    "Un solo objetivo y una sola llamada a la acción por mensaje",
+    "No prometas descuentos ni datos que no estén en las entradas"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown",
+    "columnas": ["Día", "Canal", "Disparador", "Título", "Cuerpo", "Deep link", "Condición de exclusión", "Métrica que debe subir"],
+    "extra": "Después de la tabla, lista 5 riesgos de fatiga detectados y cómo evitarlos"
+  },
+  "criterios_calidad": [
+    "Ningún usuario recibe más de 6 push en los 30 días",
+    "Cada mensaje lleva deep link a una pantalla concreta, no a la portada",
+    "Al menos la mitad de los mensajes se disparan por inactividad o por acción incompleta",
+    "El mensaje se entiende sin abrir la app"
+  ]
+}

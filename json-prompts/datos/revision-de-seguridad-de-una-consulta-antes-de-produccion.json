@@ -1,0 +1,33 @@
+{
+  "tarea": "Auditar una sentencia SQL antes de ejecutarla en producción y devolver una versión segura con plan de vuelta atrás",
+  "entradas": {
+    "motor": "[MOTOR Y VERSIÓN]",
+    "sentencia": "[PEGA AQUÍ EL SQL QUE VAS A EJECUTAR]",
+    "entorno": "[PRODUCCIÓN / PRUEBAS]",
+    "tablas_afectadas": "[TABLAS Y FILAS APROXIMADAS]",
+    "copia_de_seguridad": "[FECHA DE LA ÚLTIMA COPIA O NO TENGO]",
+    "horario": "[HORA PREVISTA Y SI HAY CLIENTES USANDO EL SISTEMA]"
+  },
+  "lista_de_comprobacion": [
+    "UPDATE o DELETE sin WHERE, o con un WHERE que no acota lo que se cree",
+    "JOIN sin condición que multiplica filas sin querer",
+    "Comparaciones con NULL que hacen que filas queden fuera en silencio",
+    "Valores literales pegados en el texto en vez de parámetros: riesgo de inyección",
+    "Sentencia que puede bloquear la tabla y dejar la aplicación colgada",
+    "Cambios de esquema sin transacción o sin ventana de mantenimiento",
+    "Efecto sobre datos personales y sobre lo que ven los clientes"
+  ],
+  "formato_salida": {
+    "semaforo": "VERDE, ÁMBAR o ROJO con una frase de justificación",
+    "riesgos": "Tabla con columnas Riesgo, Qué pasaría, Probabilidad, Cómo evitarlo",
+    "consulta_previa": "Un SELECT que cuenta y muestra exactamente las filas que la sentencia va a tocar",
+    "sentencia_segura": "La versión corregida, con transacción y límites, en bloque de código",
+    "vuelta_atras": "Pasos concretos para deshacer el cambio si sale mal",
+    "checklist_previa": "Lista de 5 comprobaciones a marcar antes de pulsar ejecutar"
+  },
+  "restricciones": [
+    "Si el semáforo es ROJO, decir claramente no lo ejecutes todavía y por qué",
+    "Nunca dar por hecho que existe copia de seguridad si el usuario no lo ha dicho"
+  ],
+  "tono": "Prudente y concreto, sin alarmismo"
+}

@@ -1,0 +1,60 @@
+{
+  "tarea": "Diseñar e implantar un formulario de contacto fiable en una web estática, con anti-spam y aviso de privacidad",
+  "contexto": {
+    "negocio": "[A QUÉ TE DEDICAS]",
+    "web": "[URL O DÓNDE ESTÁ ALOJADA: GITHUB PAGES, NETLIFY, HOSTING CLÁSICO]",
+    "que_quieres_saber_del_cliente": "[DATOS IMPRESCINDIBLES PARA PODER PRESUPUESTAR]",
+    "correo_de_recepcion": "[DÓNDE QUIERES QUE TE LLEGUEN LOS MENSAJES]",
+    "volumen_esperado": "[MENSAJES AL MES APROXIMADOS]"
+  },
+  "entradas": {
+    "servicio_elegido": "[FORMSPREE, WEB3FORMS, NETLIFY FORMS, OTRO, O DÉJAME ELEGIR]",
+    "estilo_visual": "[COLORES Y TIPOGRAFÍA DE LA WEB]",
+    "idioma": "[ES / ES+EN]",
+    "pagina_donde_va": "[CONTACTO, PORTADA, PÁGINA DE VENTA]"
+  },
+  "decisiones_previas": [
+    "Cuántos campos: cada campo de más reduce los envíos; justifica cada uno",
+    "Campos obligatorios frente a opcionales",
+    "Qué pasa al enviar: mensaje en la misma página mejor que salto a otra",
+    "Si hace falta copia automática al cliente confirmando que lo has recibido"
+  ],
+  "pasos": [
+    "1. Define los campos mínimos y el texto de cada etiqueta en lenguaje de persona, no de formulario oficial.",
+    "2. Escribe el HTML del formulario con etiquetas asociadas a cada campo, tipos correctos (email, tel) y textos de ayuda.",
+    "3. Conecta el envío al servicio elegido y explica dónde se pega la clave o la dirección de destino.",
+    "4. Añade una trampa para robots: un campo oculto que las personas no ven y los robots rellenan; si viene relleno, se descarta.",
+    "5. Añade validación antes de enviar y mensajes de error concretos junto al campo que falla.",
+    "6. Muestra un mensaje de gracias claro en la misma página y di cuándo responderás.",
+    "7. Añade la casilla de consentimiento con el texto de protección de datos y el enlace a la política de privacidad.",
+    "8. Prueba real: envía desde el móvil, con datos falsos y con acentos y ñ, y comprueba que llega y que no cae en spam.",
+    "9. Guarda una nota con dónde se configuró y con qué cuenta, para no perderla dentro de seis meses."
+  ],
+  "errores_tipicos": [
+    "Poner solo un correo escrito como texto y perder a quien escribe desde el móvil",
+    "Pedir demasiados datos en el primer contacto",
+    "Enviar a un correo que nunca miras o que filtra el remitente automático a spam",
+    "No probar el formulario después de un rediseño y estar meses sin recibir nada",
+    "Usar captchas agresivos que espantan a clientes reales",
+    "Olvidar la casilla y el enlace de privacidad"
+  ],
+  "restricciones": [
+    "El HTML tiene que funcionar pegado tal cual, sin instalar nada en un servidor",
+    "Sin librerías externas pesadas",
+    "Textos legales orientativos, avisando de que no son asesoramiento jurídico"
+  ],
+  "formato_salida": {
+    "bloque_1": "Lista de campos justificada",
+    "bloque_2": "HTML completo del formulario listo para pegar",
+    "bloque_3": "CSS mínimo para que encaje con la web",
+    "bloque_4": "Pasos de configuración del servicio, uno por línea",
+    "bloque_5": "Prueba de aceptación: 6 comprobaciones con casillas",
+    "bloque_6": "Plantilla de respuesta automática al cliente"
+  },
+  "criterios_calidad": [
+    "Se envía y llega en la primera prueba sin tocar código",
+    "Funciona con el teclado y en pantalla de móvil pequeña",
+    "El spam automático se queda fuera sin molestar a las personas",
+    "Los mensajes de error dicen qué arreglar, no solo que hay un error"
+  ]
+}

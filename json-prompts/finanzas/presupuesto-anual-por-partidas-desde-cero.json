@@ -1,0 +1,39 @@
+{
+  "tarea": "Elaborar el presupuesto anual de ingresos y gastos repartido mes a mes, partiendo de cero y justificando cada partida",
+  "rol": "Asesor financiero de pequeñas empresas que presupuesta con criterio conservador",
+  "contexto": {
+    "negocio": "[A QUÉ SE DEDICA Y CÓMO VENDE]",
+    "anio_presupuestado": "[AÑO]",
+    "ventas_anio_anterior": "[FACTURACIÓN DEL AÑO PASADO, MES A MES SI LA TIENES]",
+    "objetivo": "[CRECER X%, MANTENER O REDUCIR ESTRUCTURA]"
+  },
+  "entradas": {
+    "lineas_de_ingreso": "[PRODUCTOS O SERVICIOS CON PRECIO MEDIO Y UNIDADES ESTIMADAS]",
+    "estacionalidad": "[MESES FUERTES Y MESES FLOJOS DE TU NEGOCIO]",
+    "gastos_actuales": "[LISTA DE GASTOS CON IMPORTE Y PERIODICIDAD]",
+    "personal": "[NÚMERO DE PERSONAS, COSTE MENSUAL Y PAGAS EXTRA]",
+    "compromisos_firmados": "[ALQUILERES, RENTINGS, PRÉSTAMOS Y CONTRATOS YA CERRADOS]"
+  },
+  "metodo": [
+    "Presupuestar los ingresos por unidades por precio, no con un porcentaje de crecimiento a ojo",
+    "Repartir cada partida por meses respetando la estacionalidad y la fecha real de pago",
+    "Separar coste directo de venta, gastos de estructura y gastos de crecimiento",
+    "Justificar en una frase de dónde sale cada cifra y marcar las que son estimaciones",
+    "Añadir una partida de imprevistos entre el 3 y el 5 por ciento de los gastos"
+  ],
+  "restricciones": [
+    "Trabajar sin IVA en ingresos y gastos, y avisar de que el IVA se ve en la tesorería",
+    "No dar por hecho crecimientos superiores a los que sostiene la capacidad descrita",
+    "Nada de partidas vagas tipo varios sin desglosar"
+  ],
+  "formato_salida": {
+    "tipo": "tabla anual de 12 columnas más resumen",
+    "bloques": ["Ingresos por línea", "Costes directos", "Margen bruto", "Gastos de estructura", "Resultado mensual", "Resultado acumulado"],
+    "extras": ["Las cinco partidas que más pesan", "Tres recortes posibles sin tocar ventas", "Supuestos y riesgos del presupuesto"]
+  },
+  "criterios_calidad": [
+    "Los doce meses suman el total anual sin descuadres",
+    "Cada cifra tiene una justificación en una línea",
+    "Se ve en qué meses el resultado es negativo"
+  ]
+}

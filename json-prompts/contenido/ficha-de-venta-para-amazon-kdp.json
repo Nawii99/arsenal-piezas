@@ -1,0 +1,43 @@
+{
+  "tarea": "Preparar la ficha completa de un libro autopublicado en Amazon KDP: título, subtítulo, descripción, palabras clave y categorías",
+  "contexto": {
+    "tema": "[DE QUÉ VA EL LIBRO]",
+    "indice": "[PEGA AQUÍ TUS CAPÍTULOS]",
+    "lector_ideal": "[QUIÉN LO COMPRA Y EN QUÉ MOMENTO]",
+    "formato": "[EBOOK KINDLE / TAPA BLANDA / AMBOS]",
+    "precio": "[PRECIO PREVISTO]",
+    "autor": "[TU NOMBRE Y TU CREDIBILIDAD EN EL TEMA]",
+    "libros_parecidos": "[2 O 3 TÍTULOS QUE COMPITEN CONTIGO]"
+  },
+  "pasos": [
+    "Proponer 5 combinaciones de título y subtítulo, mezclando el término que la gente busca con el resultado prometido",
+    "Recomendar una y explicar en 2 líneas el porqué",
+    "Escribir la descripción con gancho inicial, qué incluye, para quién es y cierre",
+    "Elegir 7 palabras clave sin repetir términos ya presentes en el título",
+    "Proponer 3 categorías y 2 alternativas menos saturadas"
+  ],
+  "restricciones": [
+    "Descripción de entre 150 y 250 palabras",
+    "Prohibido mencionar a otros autores, marcas registradas o promesas de resultados",
+    "Nada de reseñas, premios ni cifras de ventas inventadas",
+    "Las palabras clave deben ser frases que una persona escribiría en el buscador",
+    "Español de España"
+  ],
+  "formato_salida": {
+    "tipo": "campos etiquetados para copiar y pegar en KDP",
+    "campos": [
+      "TITULO (máx 60 caracteres) y 4 alternativas",
+      "SUBTITULO (máx 120 caracteres)",
+      "DESCRIPCION en HTML sencillo con <h2>, <b> y <ul> tal y como lo acepta KDP",
+      "PALABRAS_CLAVE: 7 líneas, una por caja de KDP",
+      "CATEGORIAS: 3 recomendadas y 2 alternativas con una línea de justificación",
+      "BIO_AUTOR de 60 palabras",
+      "BRIEF_PORTADA: qué debe transmitir, texto que va en cubierta y estilo visual"
+    ]
+  },
+  "criterios_calidad": [
+    "El título contiene el término que el lector buscaría",
+    "Las primeras dos líneas de la descripción funcionan solas, porque Amazon corta el resto",
+    "Ninguna palabra clave repite exactamente el título"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tarea": "Convertir una lista de precios en un cartel de pared: orden, agrupación, nombres y jerarquía visual",
+  "entradas": {
+    "tipo_de_local": "[PELUQUERÍA, BAR, TALLER, CLÍNICA, TIENDA...]",
+    "lista": "[PEGA AQUÍ TUS SERVICIOS O PRODUCTOS CON PRECIO Y, SI LO SABES, MARGEN]",
+    "panel": "[ANCHO Y ALTO DEL CARTEL O PIZARRA]",
+    "distancia_lectura": "[A CUÁNTOS METROS SE LEE, DESDE LA COLA O DESDE LA MESA]",
+    "lo_que_quiero_vender_mas": "[2 O 3 PRODUCTOS O SERVICIOS]"
+  },
+  "metodo": [
+    "Agrupa en un máximo de 5 bloques con nombres claros y sin tecnicismos",
+    "Coloca lo más rentable arriba a la derecha de cada bloque y al final de la lista",
+    "Reescribe cada nombre para que se entienda qué incluye, en 6 palabras o menos",
+    "Marca 2 o 3 destacados con una etiqueta breve tipo el más pedido",
+    "Propón un pack o combinado por bloque con su precio",
+    "Calcula la altura mínima de letra según la distancia de lectura"
+  ],
+  "reglas_de_precio": [
+    "Escribe el precio con el mismo tamaño que el nombre, no más grande",
+    "Sin símbolos ni ceros innecesarios y sin alinear los precios en una columna a la derecha con puntitos",
+    "Evita listar de más barato a más caro de forma mecánica"
+  ],
+  "formato_salida": {
+    "cartel": "El contenido del cartel en tabla: bloque, nombre, descripción corta, precio y destacado",
+    "jerarquia": "Tamaños relativos de título de bloque, nombre, descripción y precio",
+    "altura_letra": "Altura mínima en cm para cada nivel",
+    "notas_pie": "Avisos obligatorios: alérgenos, IVA incluido, medios de pago"
+  },
+  "criterios_calidad": [
+    "Se lee entero desde la distancia indicada sin acercarse",
+    "Ningún bloque tiene más de 8 líneas",
+    "Los productos más rentables están en posiciones de mirada, no escondidos"
+  ]
+}

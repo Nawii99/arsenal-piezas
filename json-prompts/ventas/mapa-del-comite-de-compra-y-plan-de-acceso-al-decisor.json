@@ -1,0 +1,34 @@
+{
+  "tarea": "Mapear el comité de compra de una cuenta B2B y diseñar el plan para llegar a quien decide",
+  "contexto": {
+    "cliente": "[EMPRESA, SECTOR Y TAMAÑO]",
+    "personas_conocidas": "[NOMBRE, CARGO Y QUÉ TE HA DICHO CADA UNA]",
+    "importe_operacion": "[IMPORTE APROXIMADO]",
+    "estado_actual": "[EN QUÉ FASE ESTÁ LA VENTA Y QUÉ HA PASADO YA]",
+    "lo_que_desconoces": "[DUDAS QUE TIENES SOBRE QUIÉN DECIDE]"
+  },
+  "pasos": [
+    "Asigna a cada persona un papel: quien firma, quien usa, quien controla el presupuesto, quien puede bloquear y quien te apoya dentro",
+    "Estima para cada uno qué le importa, qué gana y qué teme con esta compra",
+    "Detecta los papeles que faltan por identificar y propone cómo averiguarlos sin quedar mal con tu contacto",
+    "Propone para cada persona una acción concreta: qué enviarle, qué preguntarle o a qué reunión invitarla",
+    "Escribe el mensaje para pedirle a tu contacto acceso a la dirección sin saltártelo"
+  ],
+  "restricciones": [
+    "No inventes nombres ni cargos: los desconocidos se marcan como hueco por cubrir",
+    "Nada de saltarse al contacto por detrás: siempre con su conocimiento",
+    "Máximo 2 líneas por persona en el mapa"
+  ],
+  "formato_salida": {
+    "tabla_mapa": "Persona | Cargo | Papel en la compra | Qué le importa | Postura estimada | Acción siguiente",
+    "huecos": "Lista de papeles sin identificar y pregunta exacta para descubrirlos",
+    "mensaje_acceso": "Texto para pedir a tu contacto una reunión con la dirección",
+    "riesgos": "Los 3 motivos más probables por los que esta operación puede caerse"
+  },
+  "criterios_calidad": [
+    "Queda claro quién firma y si ya has hablado con esa persona",
+    "Cada acción siguiente tiene destinatario y se puede hacer esta semana",
+    "Los supuestos se marcan como supuestos"
+  ],
+  "tono": "Analítico y práctico"
+}

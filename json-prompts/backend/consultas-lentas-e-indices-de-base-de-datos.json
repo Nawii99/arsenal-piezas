@@ -1,0 +1,38 @@
+{
+  "tarea": "Analizar las consultas lentas de [NOMBRE DE TU APLICACIÓN] y proponer índices y reescrituras con su riesgo",
+  "contexto": {
+    "motor": "[POSTGRESQL, MYSQL, SQL SERVER U OTRO] versión [VERSIÓN]",
+    "tamano_datos": "[FILAS APROXIMADAS DE LAS TABLAS PRINCIPALES]",
+    "donde_duele": "[QUÉ PANTALLA O PROCESO VA LENTO]"
+  },
+  "entradas": {
+    "consultas": ["[PEGA AQUÍ LA CONSULTA 1]", "[PEGA AQUÍ LA CONSULTA 2]"],
+    "tiempos": "[CUÁNTO TARDA CADA UNA Y CUÁNTAS VECES SE EJECUTA AL DÍA]",
+    "esquema": "[DEFINICIÓN DE LAS TABLAS E ÍNDICES QUE YA EXISTEN]",
+    "plan_ejecucion": "[PEGA EL EXPLAIN SI LO TIENES, O ESCRIBE NO LO TENGO]"
+  },
+  "metodo": [
+    "Si no hay plan de ejecución, indica el comando exacto para obtenerlo antes de seguir",
+    "Para cada consulta di qué la hace lenta: recorrido completo de tabla, ordenación en disco, unión mal filtrada, función aplicada sobre la columna filtrada o exceso de filas devueltas",
+    "Detecta el patrón de consulta repetida en bucle desde el código y propón agrupar en una sola consulta",
+    "Propón índices concretos con el orden correcto de columnas y explica por qué ese orden",
+    "Avisa del coste de cada índice: espacio, escrituras más lentas y bloqueo al crearlo en producción",
+    "Marca lo que se arregla paginando, limitando el rango de fechas o precalculando en vez de con un índice"
+  ],
+  "restricciones": [
+    "No propongas cambiar de motor de base de datos",
+    "Máximo [NÚMERO] índices nuevos en total",
+    "Indica siempre la forma de crear el índice sin bloquear la tabla si el motor lo permite"
+  ],
+  "formato_salida": {
+    "tipo": "ficha por consulta",
+    "campos_por_consulta": ["diagnóstico en 2 líneas", "consulta reescrita", "sentencias de índice listas para copiar", "mejora esperada", "riesgo y cómo deshacerlo"],
+    "cierre": "tabla resumen ordenada por tiempo total ahorrado al día"
+  },
+  "criterios_calidad": [
+    "Ningún índice propuesto sin decir qué consulta lo aprovecha",
+    "Señala los índices existentes que quedan duplicados y se pueden borrar",
+    "Incluye cómo comprobar la mejora midiendo antes y después"
+  ],
+  "tono": "técnico pero explicado, sin dar por sabido nada"
+}

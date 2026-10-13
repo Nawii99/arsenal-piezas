@@ -1,0 +1,37 @@
+{
+  "tarea": "Prepararme la conversación con un cliente que quiere cancelar o pide una rebaja: preguntas para entender el motivo real, alternativas al descuento y límites claros",
+  "contexto": {
+    "mi_empresa": "[NOMBRE DE TU EMPRESA]",
+    "cliente": "[NOMBRE Y PERSONA QUE TE LO HA DICHO]",
+    "lo_que_paga": "[IMPORTE Y PERIODICIDAD]",
+    "margen": "[MARGEN APROXIMADO DE ESTA CUENTA EN PORCENTAJE O EN EUROS]",
+    "antiguedad_y_relacion": "[AÑOS CONMIGO Y CÓMO ESTÁ LA RELACIÓN]"
+  },
+  "entradas": {
+    "motivo_declarado": "[LO QUE TE HA DICHO LITERALMENTE]",
+    "historial": "[INCIDENCIAS, RESULTADOS Y CAMBIOS RECIENTES EN LA CUENTA]",
+    "concesiones_posibles": "[LO QUE PUEDES OFRECER: PAUSA, CAMBIO DE PLAN, MENOS ALCANCE, PAGO APLAZADO, DESCUENTO MÁXIMO]"
+  },
+  "metodo": [
+    "1. Traduce el motivo declarado a los motivos reales posibles y ordénalos por probabilidad",
+    "2. Dame 6 preguntas para averiguar cuál es, sin sonar a interrogatorio",
+    "3. Para cada motivo real, propón la respuesta y la alternativa que NO toca el precio",
+    "4. Solo después, define la escalera de concesiones: qué pides tú a cambio de cada cosa que das",
+    "5. Marca el punto en el que conviene dejarlo ir y cómo cerrar bien la salida"
+  ],
+  "restricciones": [
+    "El descuento es siempre la última opción y nunca gratis",
+    "No suplicar, no culpar al cliente y no prometer cambios que dependan de terceros",
+    "Frases cortas, para decirlas por teléfono"
+  ],
+  "formato_salida": {
+    "tipo": "Plan de conversación",
+    "apartados": ["Motivos reales probables", "6 preguntas para hacer", "Tabla motivo / respuesta / alternativa sin descuento", "Escalera de concesiones con lo que pido a cambio", "Señales de que hay que dejarlo ir", "Email de confirmación de lo acordado"]
+  },
+  "criterios_calidad": [
+    "Sé exactamente qué digo en los primeros 60 segundos",
+    "Ninguna concesión sale gratis",
+    "Incluye una salida digna si se va igualmente"
+  ],
+  "tono": "Sereno, firme y respetuoso"
+}

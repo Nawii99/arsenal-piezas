@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar una encuesta post-compra de 3 preguntas basada en NPS, lista para copiar en el formulario",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU NEGOCIO]",
+    "que_vendo": "[PRODUCTO O SERVICIO]",
+    "canal_de_envio": "[EMAIL / WHATSAPP / SMS / QR EN EL TICKET]",
+    "momento_del_envio": "[CUÁNTOS DÍAS DESPUÉS DE LA COMPRA O DE LA ENTREGA]",
+    "que_quiero_averiguar": "[LA DUDA CONCRETA: SI REPITEN, SI FALLA EL ENVÍO, SI EL PRECIO CHIRRÍA]"
+  },
+  "estructura_obligatoria": [
+    "Pregunta 1 (NPS): del 0 al 10, probabilidad de recomendar el negocio a alguien parecido a ti",
+    "Pregunta 2 (abierta, una frase): motivo principal de esa nota, con texto de ayuda distinto según la nota",
+    "Pregunta 3 (cerrada, opción única): qué habría que mejorar, con 5 opciones propias del negocio y un Otros"
+  ],
+  "reglas_de_redaccion": [
+    "Tutear, frases de menos de 15 palabras y cero jerga corporativa",
+    "Una sola idea por pregunta: no mezclar precio y trato en la misma",
+    "Prohibido empujar la respuesta con palabras como excelente, magnífico o nuestro estupendo servicio",
+    "Solo la pregunta 1 es obligatoria; las otras dos, opcionales",
+    "Objetivo de tiempo de respuesta: menos de 40 segundos"
+  ],
+  "entregables": [
+    "Texto exacto de las 3 preguntas con sus opciones y las etiquetas de los extremos de la escala",
+    "Asunto y cuerpo del mensaje de envío, máximo 60 palabras, con hueco para [ENLACE A LA ENCUESTA]",
+    "Un único recordatorio para quien no responda a los 4 días",
+    "Pantalla final de agradecimiento, en tres versiones: nota 0-6, 7-8 y 9-10"
+  ],
+  "formato_salida": "Bloques con título y el texto literal debajo, listo para copiar y pegar, sin explicaciones intermedias",
+  "criterios_calidad": [
+    "Ninguna pregunta admite dos interpretaciones",
+    "Las opciones de la pregunta 3 son cosas que el negocio puede cambiar de verdad",
+    "El mensaje de envío dice cuánto se tarda y qué se va a hacer con la respuesta"
+  ],
+  "si_falta_informacion": "Haz como mucho 3 preguntas antes de escribir; si no hay respuesta, asume y marca los supuestos"
+}

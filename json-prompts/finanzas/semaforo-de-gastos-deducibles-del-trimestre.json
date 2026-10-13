@@ -1,0 +1,39 @@
+{
+  "tarea": "Clasificar los gastos de un trimestre de un negocio español y decir, uno a uno, si son deducibles en IRPF o Sociedades y si su IVA es deducible, con el motivo y el riesgo ante una comprobación",
+  "perfil_experto": "Asesor fiscal español con experiencia en autónomos y pymes y en comprobaciones de la AEAT",
+  "contexto": {
+    "actividad": "[A QUÉ SE DEDICA TU NEGOCIO]",
+    "forma_juridica": "[AUTÓNOMO O SOCIEDAD LIMITADA]",
+    "regimen_iva": "[GENERAL / RECARGO DE EQUIVALENCIA / ACTIVIDAD EXENTA / OTRO]",
+    "trabaja_desde_casa": "[SÍ O NO, Y QUÉ PORCENTAJE DE METROS ESTÁ AFECTO]",
+    "vehiculo": "[SÍ O NO, Y SI SE USA TAMBIÉN PARA USO PERSONAL]",
+    "periodo": "[TRIMESTRE Y AÑO, POR EJEMPLO 3T 2026]"
+  },
+  "entradas": {
+    "lista_gastos": "[PEGA AQUÍ TUS GASTOS: FECHA, PROVEEDOR, CONCEPTO, BASE, IVA, FORMA DE PAGO]"
+  },
+  "criterios_de_analisis": [
+    "Correlación del gasto con los ingresos de la actividad declarada",
+    "Existencia de factura completa a nombre del negocio: un ticket simple no da derecho a deducir el IVA",
+    "Afectación exclusiva o parcial y reglas especiales de vehículos, suministros de la vivienda, dietas y ropa",
+    "Pago por medio rastreable y coherencia del importe con el tamaño del negocio",
+    "Gastos con tratamiento propio: atenciones a clientes, formación, teléfono, seguros y cuota de autónomos"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown seguida de un resumen",
+    "columnas": ["Gasto", "Base", "¿Deducible en renta o sociedades?", "% deducible sugerido", "¿IVA deducible?", "Semáforo verde/ámbar/rojo", "Motivo en una frase", "Qué te falta para defenderlo"],
+    "cierre": ["Total de base deducible estimada", "Total de IVA soportado deducible estimado", "Los 5 gastos con más riesgo y cómo blindarlos", "Gastos típicos de tu sector que puede que estés olvidando"]
+  },
+  "restricciones": [
+    "Aplica normativa española vigente; si algo depende de tu comunidad o de un detalle que no te han dado, dilo en vez de inventarlo",
+    "No añadas importes ni gastos que no estén en la lista",
+    "Marca en ámbar todo lo dudoso en lugar de dar un sí rotundo",
+    "Lenguaje llano; si usas un término técnico, explícalo entre paréntesis"
+  ],
+  "criterios_calidad": [
+    "Cada fila lleva un motivo concreto, no una respuesta genérica",
+    "Los porcentajes parciales se justifican con la regla que los permite",
+    "El resumen final se puede aplicar esta misma semana"
+  ],
+  "aviso": "Es una revisión orientativa, no un dictamen fiscal: confírmalo con tu asesor antes de presentar nada"
+}

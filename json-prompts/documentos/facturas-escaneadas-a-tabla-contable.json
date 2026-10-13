@@ -1,0 +1,56 @@
+{
+  "tarea": "Leer un lote de facturas y gastos en PDF o foto y volcarlos a una tabla contable cuadrada, lista para el gestor",
+  "contexto": {
+    "negocio": "[A QUE SE DEDICA EL NEGOCIO]",
+    "pais": "España",
+    "regimen": "[AUTONOMO O SOCIEDAD]",
+    "periodo": "[MES O TRIMESTRE, EJ 3T 2026]",
+    "numero_de_documentos": "[CUANTAS FACTURAS MAS O MENOS]",
+    "destino": "[GESTORIA, HOLDED, CONTASIMPLE, EXCEL PROPIO]"
+  },
+  "entradas": {
+    "documentos": "[PEGA EL TEXTO DE CADA FACTURA O ADJUNTA LOS ARCHIVOS, UNO DETRAS DE OTRO SEPARADOS POR TRES GUIONES]",
+    "categorias_de_gasto": "[LISTA QUE YA USAS, EJ: SUMINISTROS, SOFTWARE, DIETAS, COMBUSTIBLE, ALQUILER]",
+    "proveedores_habituales": "[NOMBRES QUE SE REPITEN, PARA ESCRIBIRLOS SIEMPRE IGUAL]"
+  },
+  "pasos": [
+    "1. De cada documento saca: fecha de emision, numero de factura, nombre fiscal del proveedor, NIF o CIF, base imponible, tipo de IVA, cuota de IVA, retencion de IRPF si la hay y total",
+    "2. Comprueba la aritmetica: base por tipo debe dar la cuota, y base mas cuota menos retencion debe dar el total",
+    "3. Si algo no cuadra por mas de dos centimos, no lo ajustes a ojo: marca la fila como REVISAR y di que falla",
+    "4. Escribe cada proveedor siempre con el mismo texto, usando la lista de proveedores habituales",
+    "5. Asigna una categoria de la lista dada; si ninguna encaja pon OTROS y propon la categoria nueva al final",
+    "6. Aparta en una lista distinta los tickets sin datos fiscales completos, que no sirven como factura",
+    "7. Busca duplicados: mismo proveedor, misma fecha y mismo total",
+    "8. Ordena por fecha de la mas antigua a la mas reciente y numera las filas"
+  ],
+  "que_mirar": [
+    "Facturas con dos tipos de IVA distintos dentro: una fila por tipo",
+    "Compras a otro pais de la UE sin IVA: marcar como inversion del sujeto pasivo",
+    "Fechas en dia/mes/año, no al reves",
+    "Importes con coma decimal y sin separador de miles",
+    "Proveedores que cobran en otra divisa: anotar divisa e importe original"
+  ],
+  "errores_tipicos": [
+    "Confundir el numero de factura con el numero de pedido o de cliente",
+    "Poner el total en la columna de base imponible",
+    "Dar por buena una cifra borrosa de una foto en vez de marcarla como dudosa",
+    "Meter el resguardo del datafono como si fuera la factura"
+  ],
+  "restricciones": [
+    "No inventes ningun dato que no aparezca en el documento; si falta, escribe FALTA",
+    "No opines sobre si un gasto es deducible; solo señala si faltan requisitos formales",
+    "Redondea siempre a dos decimales"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla CSV separada por punto y coma con cabecera: fila;fecha;proveedor;nif;num_factura;concepto;categoria;base;tipo_iva;cuota_iva;irpf;total;estado",
+    "bloque_2": "Lista de filas marcadas REVISAR, una linea por fila, con el motivo",
+    "bloque_3": "Lista de posibles duplicados",
+    "bloque_4": "Totales del periodo: suma de bases, suma de cuotas de IVA, suma de retenciones y total"
+  },
+  "criterios_calidad": [
+    "Cada fila cuadra: base mas cuota menos IRPF igual al total",
+    "Ningun proveedor aparece escrito de dos maneras distintas",
+    "Filas buenas mas descartadas igual al numero de documentos entregados",
+    "El CSV se pega en una hoja de calculo y no se rompe ninguna columna"
+  ]
+}

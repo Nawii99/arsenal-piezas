@@ -1,0 +1,57 @@
+{
+  "tarea": "Redactar el manual de atencion telefonica y por mensajeria de un centro de salud o bienestar, con guiones por tipo de llamada, limites de lo que puede responder recepcion y criterios de derivacion interna",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CENTRO Y SERVICIOS]",
+    "quien_atiende": "[RECEPCION, EL PROPIO PROFESIONAL O UN SERVICIO EXTERNO]",
+    "horario_atencion": "[HORARIO EN QUE SE COGE EL TELEFONO]",
+    "volumen": "[LLAMADAS Y MENSAJES APROXIMADOS AL DIA]",
+    "herramientas": "[TELEFONO FIJO, MOVIL, WHATSAPP BUSINESS, SOFTWARE DE CITAS]",
+    "precios_publicables": "[QUE PRECIOS PUEDE DECIR RECEPCION Y CUALES NO]"
+  },
+  "entradas": {
+    "preguntas_frecuentes": "[LAS 10 PREGUNTAS QUE MAS OS HACEN POR TELEFONO]",
+    "casos_conflictivos": "[SITUACIONES QUE OS PONEN EN APUROS]"
+  },
+  "pasos": [
+    "1. Clasifica las entradas en seis tipos: pedir cita, cambiar o cancelar, preguntar precio, preguntar si le conviene el servicio, queja, y comercial o spam",
+    "2. Escribe la formula de apertura y de cierre identica para todo el equipo, con nombre del centro, nombre de quien atiende y ofrecimiento de ayuda",
+    "3. Para pedir cita, define los datos minimos a recoger en orden y la confirmacion en voz alta antes de colgar",
+    "4. Para preguntas de precio, escribe la respuesta que da el precio de forma directa y anade contexto, sin evasivas del tipo 'depende'",
+    "5. Para preguntas del tipo 'a mi me pasa esto, me sirve lo vuestro', escribe la respuesta que NO valora el caso y ofrece la visita de valoracion, con la frase exacta",
+    "6. Traza la linea roja: lista de cosas que recepcion nunca responde y a quien se pasan, con el mensaje de traspaso",
+    "7. Escribe la gestion de la queja al telefono: escuchar sin interrumpir, resumir, disculpar el malestar, dar plazo de respuesta y anotar",
+    "8. Define el protocolo de llamadas perdidas y mensajes fuera de horario: mensaje automatico, plazo de devolucion de llamada y quien lo hace",
+    "9. Escribe las cinco respuestas rapidas guardadas de WhatsApp Business y las etiquetas para clasificar conversaciones",
+    "10. Anade la hoja de recados en papel o digital con los campos obligatorios"
+  ],
+  "restricciones": [
+    "Recepcion no valora sintomas, no dice si algo es grave, no recomienda tratamientos ni interpreta pruebas: eso se cita o se pasa al profesional",
+    "Ningun dato de salud se anota en canales compartidos ni se comenta delante de otros pacientes",
+    "Ante una situacion que parezca urgente, la unica indicacion es dirigirse a los servicios de urgencias o al 112",
+    "No prometer plazos ni resultados en nombre del profesional",
+    "Todos los guiones deben poder leerse en voz alta sin sonar robotico"
+  ],
+  "errores_tipicos": [
+    "Dar una opinion sobre si el servicio le va a servir para 'ayudar' y crear expectativas falsas",
+    "Esquivar el precio y perder la llamada",
+    "Coger la cita sin confirmar el telefono y no poder avisar de un cambio",
+    "Dejar los mensajes de WhatsApp sin responder mas de un dia",
+    "Anotar el motivo de consulta en una libreta a la vista del mostrador"
+  ],
+  "formato_salida": {
+    "bloque_1": "Formulas de apertura y cierre",
+    "bloque_2": "Un guion por tipo de llamada con frases literales y acotaciones",
+    "bloque_3": "Lista roja de lo que recepcion no responde, con el mensaje de traspaso",
+    "bloque_4": "Cinco respuestas rapidas de WhatsApp listas para guardar",
+    "bloque_5": "Hoja de recados con campos",
+    "bloque_6": "Checklist de primer dia para alguien que entra nuevo en recepcion",
+    "idioma": "Espanol de Espana, trato de usted salvo indicacion contraria"
+  },
+  "criterios_calidad": [
+    "Ningun guion invade terreno clinico",
+    "Toda pregunta de precio tiene una respuesta con cifra o con el motivo claro de por que se ve en consulta",
+    "Cada tipo de llamada termina con un siguiente paso concreto",
+    "Una persona nueva puede atender el telefono el primer dia con el manual delante",
+    "Los guiones suenan naturales al leerlos en voz alta"
+  ]
+}

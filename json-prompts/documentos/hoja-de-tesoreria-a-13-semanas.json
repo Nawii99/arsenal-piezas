@@ -1,0 +1,59 @@
+{
+  "tarea": "Diseñar una hoja de calculo de prevision de tesoreria a 13 semanas, con estructura, formulas exactas y como usarla cada lunes",
+  "contexto": {
+    "negocio": "[ACTIVIDAD Y SI ES ESTACIONAL]",
+    "forma_juridica": "[AUTONOMO O SOCIEDAD]",
+    "iva": "[TRIMESTRAL O MENSUAL]",
+    "cobros": "[AL CONTADO, A 30 DIAS, A 60 DIAS, MEZCLA]",
+    "programa": "[EXCEL, GOOGLE SHEETS, LIBREOFFICE]"
+  },
+  "entradas": {
+    "saldo_de_partida": "[DINERO EN BANCO HOY]",
+    "cobros_previstos": "[FACTURAS EMITIDAS PENDIENTES CON FECHA PREVISTA DE COBRO]",
+    "pagos_fijos": "[ALQUILER, NOMINAS, CUOTAS, SUSCRIPCIONES, PRESTAMOS, SEGUROS]",
+    "pagos_variables": "[COMPRAS, PROVEEDORES, COMBUSTIBLE]",
+    "impuestos": "[FECHAS Y ESTIMACION DE IVA E IRPF O SOCIEDADES]"
+  },
+  "pasos": [
+    "1. Monta la pestaña PREVISION con una columna por semana durante 13 semanas, con la fecha del lunes en la cabecera",
+    "2. Filas en este orden: saldo inicial, cobros por concepto, total cobros, pagos por concepto, total pagos, movimiento neto, saldo final",
+    "3. El saldo inicial de cada semana es igual al saldo final de la anterior, enlazado por formula, nunca escrito a mano",
+    "4. Total cobros y total pagos con sumas de rango, dejando dos filas vacias dentro del rango para poder añadir conceptos",
+    "5. Movimiento neto igual a total cobros menos total pagos; saldo final igual a saldo inicial mas movimiento neto",
+    "6. Trata el IVA como lo que es: dinero que entra y sale, con su fila propia y la fecha real de pago del modelo trimestral",
+    "7. Pon las cuotas de autonomos, los seguros anuales y las pagas extra en la semana concreta en la que se pagan",
+    "8. Añade una fila de colchon minimo y una alerta que marque cualquier semana con saldo final por debajo de ese colchon",
+    "9. Crea la pestaña REAL para anotar cada lunes lo que paso de verdad y comparar con lo previsto",
+    "10. Escribe la rutina de cinco minutos de cada lunes: actualizar saldo real, mover cobros que se han retrasado y mirar la primera semana en rojo"
+  ],
+  "que_mirar": [
+    "La diferencia entre facturar y cobrar: aqui solo va el dinero que entra en el banco",
+    "Clientes que siempre pagan tarde: mete su retraso habitual, no la fecha de la factura",
+    "Pagos que solo ocurren una vez al año y se olvidan",
+    "Cuotas de prestamo separando lo que es capital de lo que es interes"
+  ],
+  "errores_tipicos": [
+    "Mezclar prevision y realidad en la misma celda",
+    "Olvidar el IVA y creer que ese dinero es tuyo",
+    "Poner los cobros optimistas y los pagos a la baja",
+    "Actualizarla solo cuando ya hay problema"
+  ],
+  "restricciones": [
+    "Solo funciones basicas de hoja de calculo, nada de macros",
+    "Da las formulas con referencias tipo B7 explicando que hay en cada celda",
+    "No des consejo fiscal ni de inversion, solo estructura y calculo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Mapa de la hoja: pestañas y para que sirve cada una",
+    "bloque_2": "Tabla de filas con la formula exacta de cada una y en que celda va",
+    "bloque_3": "Ejemplo relleno de las cuatro primeras semanas con datos de muestra",
+    "bloque_4": "Regla de alerta y como marcarla con formato condicional",
+    "bloque_5": "Rutina del lunes en cinco pasos"
+  },
+  "criterios_calidad": [
+    "Cambiar un cobro de semana cambia solo los saldos posteriores",
+    "El saldo final de la semana 13 se puede seguir a mano y cuadra",
+    "Aparece la fecha exacta de los pagos de impuestos",
+    "La hoja se actualiza en cinco minutos a la semana"
+  ]
+}

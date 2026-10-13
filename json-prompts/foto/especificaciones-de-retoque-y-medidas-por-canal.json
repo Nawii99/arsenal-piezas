@@ -1,0 +1,41 @@
+{
+  "tarea": "Definir las especificaciones de retoque y exportacion de las fotos de producto de [NOMBRE DE TU MARCA] para cada canal de venta",
+  "entradas": {
+    "canales": "[WEB PROPIA, AMAZON, ETSY, INSTAGRAM, CATALOGO PDF]",
+    "herramienta": "[PHOTOSHOP / LIGHTROOM / CANVA / PHOTOPEA / APP DEL MOVIL]",
+    "tipo_de_foto": "[FONDO BLANCO / FONDO DE COLOR / LIFESTYLE]",
+    "nivel": "[NO SE EDITAR NADA / ME DEFIENDO]"
+  },
+  "pasos_de_retoque_ordenados": [
+    "Encuadrar y enderezar horizontales y verticales",
+    "Ajustar exposicion y equilibrio de blancos con una referencia neutra",
+    "Limpiar polvo, pelusas, huellas y reflejos molestos",
+    "Igualar el fondo dejandolo uniforme sin quemar los bordes del producto",
+    "Recuperar la sombra de contacto si la limpieza se la ha comido",
+    "Ajustar contraste y saturacion sin falsear el color real del producto",
+    "Enfocar de salida al final, despues de redimensionar",
+    "Exportar en el tamano y peso que pide cada canal"
+  ],
+  "por_cada_canal_indica": [
+    "Proporcion y pixeles del lado largo recomendados",
+    "Formato de archivo y calidad de compresion",
+    "Peso maximo orientativo",
+    "Margen de aire alrededor del producto",
+    "Si acepta fondo no blanco o no"
+  ],
+  "restricciones": [
+    "El color del producto debe seguir pareciendose al real: nada de saturar de mas",
+    "No estirar la imagen para cuadrar formatos: recortar en vez de deformar",
+    "Guardar siempre el archivo original sin tocar antes de exportar"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de especificaciones por canal",
+    "bloque_2": "Receta paso a paso adaptada a la herramienta indicada, con nombres de menu",
+    "bloque_3": "Sistema de carpetas y version original, editada y exportada",
+    "bloque_4": "Comprobacion final de 6 puntos antes de subir"
+  },
+  "criterios_calidad": [
+    "Los pasos se pueden seguir sin saber edicion",
+    "Cada especificacion es un numero concreto, no una recomendacion vaga"
+  ]
+}

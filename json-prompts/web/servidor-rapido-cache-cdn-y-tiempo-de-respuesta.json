@@ -1,0 +1,46 @@
+{
+  "tarea": "Diagnosticar un tiempo de respuesta de servidor alto y proponer la configuración de caché, CDN y cabeceras adecuada",
+  "contexto": {
+    "web": "[URL DE TU WEB]",
+    "plataforma": "[WORDPRESS / WOOCOMMERCE / SHOPIFY / PRESTASHOP / A MEDIDA]",
+    "hosting": "[PROVEEDOR, TIPO COMPARTIDO O VPS Y PRECIO MENSUAL]",
+    "ubicacion_publico": "[DE DÓNDE VIENEN TUS VISITAS: ESPAÑA, LATINOAMÉRICA, EUROPA]"
+  },
+  "entradas": {
+    "ttfb_actual": "[X ms EN MÓVIL Y EN ESCRITORIO]",
+    "cache_actual": "[PLUGIN O SISTEMA DE CACHÉ ACTIVO, SI HAY ALGUNO]",
+    "cdn_actual": "[CLOUDFLARE / NINGUNO / OTRO]",
+    "zonas_dinamicas": "[CARRITO, ÁREA DE CLIENTES, BUSCADOR, FORMULARIOS O RESERVAS]"
+  },
+  "conocimiento_previo": [
+    "El TTFB objetivo es inferior a 800 ms y buena parte suele venir de generar la página en cada visita",
+    "La caché de página sirve HTML ya hecho y es la mejora más grande en webs de contenido",
+    "Los archivos estáticos deben ir con caché larga y nombre versionado para poder actualizarlos",
+    "Las páginas con carrito o sesión iniciada no deben cachearse enteras",
+    "Una CDN acerca los archivos al visitante y reduce la latencia por distancia"
+  ],
+  "proceso": [
+    "Estima qué parte del TTFB viene del hosting, de la generación de la página y de la distancia geográfica",
+    "Propón la configuración de caché por tipo de página, indicando qué se cachea y qué se excluye",
+    "Define las cabeceras de caché recomendadas para HTML, CSS, JavaScript, imágenes y fuentes",
+    "Di si merece la pena una CDN en este caso y con qué ajustes mínimos",
+    "Solo si nada de lo anterior basta, valora el cambio de plan o de hosting con criterios concretos"
+  ],
+  "restricciones": [
+    "No propongas cachear zonas con sesión, carrito o datos personales",
+    "Explica cómo vaciar la caché al publicar cambios para no volverse loco"
+  ],
+  "formato_salida": {
+    "tipo": "guía de configuración",
+    "secciones": [
+      "Diagnóstico del TTFB en tres partes con porcentajes estimados",
+      "Tabla: tipo de recurso, caché recomendada, dónde se configura",
+      "Pasos numerados de aplicación y prueba, con el resultado esperado",
+      "Señales que indicarían que sí toca cambiar de hosting"
+    ]
+  },
+  "criterios_calidad": [
+    "Las instrucciones son ejecutables desde el panel del hosting o del plugin indicado",
+    "Se avisa de cada riesgo antes de cada paso"
+  ]
+}

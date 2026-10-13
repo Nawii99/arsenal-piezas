@@ -1,0 +1,51 @@
+{
+  "tarea": "Montar un banco de casos de prueba para un prompt o agente de IA y ejecutarlo para saber si una versión nueva mejora o empeora respecto a la que ya funciona.",
+  "contexto": {
+    "negocio": "[A QUÉ TE DEDICAS]",
+    "para_que_sirve_el_prompt": "[QUÉ HACE: RESPONDER DUDAS, RESUMIR, CLASIFICAR CORREOS...]",
+    "donde_se_usa": "[WHATSAPP / WEB / USO INTERNO]",
+    "nivel_tecnico": "sin perfil técnico: nada de código ni herramientas de pago"
+  },
+  "entradas": {
+    "prompt_actual": "[PEGA EL PROMPT QUE YA USAS]",
+    "prompt_nuevo": "[PEGA LA VERSIÓN MODIFICADA O ESCRIBE: NINGUNA]",
+    "mensajes_reales": "[5 A 15 MENSAJES REALES DE CLIENTES, TAL CUAL LLEGARON]",
+    "respuesta_ideal": "[QUÉ CONSIDERAS UNA RESPUESTA CORRECTA]",
+    "lineas_rojas": "[LO QUE NUNCA DEBE HACER: INVENTAR PRECIOS, PROMETER PLAZOS, DAR CONSEJO LEGAL O MÉDICO]"
+  },
+  "metodo": [
+    "1. Clasifica los mensajes reales en cuatro grupos: caso normal, caso raro, caso con datos incompletos y caso hostil o tramposo.",
+    "2. Completa hasta 12 casos; si falta algún grupo, inventa casos verosímiles del negocio y márcalos como [SIMULADO].",
+    "3. Para cada caso escribe qué tiene que aparecer sí o sí (dato, tono, aviso) y qué no puede aparecer.",
+    "4. Ejecuta el prompt actual con los 12 casos y guarda la respuesta literal.",
+    "5. Ejecuta el prompt nuevo con los mismos 12 casos, sin cambiar ni una coma del caso.",
+    "6. Compara caso a caso y puntúa CUMPLE, CUMPLE A MEDIAS o FALLA, con el motivo en una frase.",
+    "7. Marca como REGRESIÓN todo caso que antes cumplía y ahora no: es el motivo más frecuente para no publicar.",
+    "8. Repite dos veces los 3 casos más importantes para ver si la respuesta es estable o cambia demasiado.",
+    "9. Propón el cambio mínimo en el prompt nuevo para arreglar cada regresión, sin tocar lo que ya funciona."
+  ],
+  "errores_tipicos": [
+    "Probar solo con la pregunta fácil que escribirías tú.",
+    "Cambiar el prompt y los casos a la vez: así no sabes qué ha mejorado.",
+    "Dar por buena una respuesta bonita que se ha inventado un dato.",
+    "No repetir ningún caso: la IA varía y hay que ver si es estable.",
+    "Guardar las pruebas en la cabeza en vez de en una tabla reutilizable."
+  ],
+  "restricciones": [
+    "No inventes datos del negocio: si no te los doy, márcalos como [SUPUESTO].",
+    "No reescribas el prompt entero salvo que te lo pida; cambios mínimos y localizados."
+  ],
+  "formato_salida": {
+    "tabla_casos": "Tabla con columnas: nº, mensaje del caso, grupo, debe aparecer, no debe aparecer, resultado versión actual, resultado versión nueva, veredicto",
+    "bloque_regresiones": "Lista de casos que han empeorado, con el motivo",
+    "veredicto": "PUBLICAR, PUBLICAR CON ARREGLOS o NO PUBLICAR, con dos líneas de justificación",
+    "prompt_corregido": "Versión final lista para copiar y pegar"
+  },
+  "criterios_calidad": [
+    "Hay al menos 2 casos hostiles y 2 con datos incompletos.",
+    "Cada veredicto cita un trozo literal de la respuesta como prueba.",
+    "Ningún caso queda sin puntuar.",
+    "El banco de casos sirve tal cual la próxima vez que toques el prompt."
+  ],
+  "si_falta_informacion": "Haz como máximo 3 preguntas concretas y, si aun así falta algo, sigue con supuestos marcados como [SUPUESTO]."
+}

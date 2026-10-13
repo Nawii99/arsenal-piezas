@@ -1,0 +1,36 @@
+{
+  "tarea": "Definir el estándar de embalaje de mi tienda por familia de producto, ajustando protección, tamaño de caja y coste, y explicando qué rotura evita cada decisión",
+  "contexto": {
+    "productos": "[LISTA: NOMBRE, PESO, MEDIDAS, MATERIAL, FRAGILIDAD DE 1 A 5]",
+    "embalaje_actual": "[QUÉ CAJAS Y RELLENOS USAS Y A QUÉ PRECIO]",
+    "roturas_frecuentes": "[QUÉ SE TE ROMPE Y POR DÓNDE]",
+    "agencia": "[AGENCIA Y SU DIVISOR VOLUMÉTRICO: 5000 O 6000]",
+    "imagen_de_marca": "[SOBRIO / CUIDADO / ECOLÓGICO / LUJO]",
+    "presupuesto_por_pedido": "[EUROS MÁXIMOS DE EMBALAJE]"
+  },
+  "para_cada_familia_define": [
+    "Caja o sobre recomendado con medidas exactas en cm y por qué esas medidas",
+    "Relleno y protección: material, dónde va y grosor mínimo en las esquinas",
+    "Orden de montaje paso a paso, como lo haría alguien en su primer día",
+    "Peso real y peso volumétrico resultante, y cuál te van a facturar",
+    "Coste de embalaje por pedido desglosado",
+    "Qué rotura concreta previene y qué error típico hay que evitar"
+  ],
+  "optimizaciones_a_proponer": [
+    "Reducir el número de referencias de caja a un máximo de [NÚMERO DE TAMAÑOS] tamaños que cubran el catálogo",
+    "Casos donde bajar una talla de caja ahorra tramo de peso facturable",
+    "Alternativas más baratas o más sostenibles con el mismo nivel de protección",
+    "Qué añadir dentro sin encarecer: instrucción de devolución, etiqueta de vuelta, nota"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: familia de producto | caja | relleno | peso facturable | coste por pedido",
+    "bloque_2": "Ficha de montaje por familia, en pasos numerados y cortos, para colgar en la pared del almacén",
+    "bloque_3": "Lista de compra de materiales con cantidades para [PEDIDOS AL MES] pedidos al mes",
+    "bloque_4": "Ahorro estimado frente al embalaje actual, con el cálculo a la vista"
+  },
+  "criterios_calidad": [
+    "Ninguna recomendación sube el coste sin explicar qué rotura evita",
+    "Las medidas de caja son reales y estándar de mercado, no inventadas al milímetro"
+  ],
+  "tono": "Instrucciones de taller: cortas, en imperativo y sin adornos"
+}

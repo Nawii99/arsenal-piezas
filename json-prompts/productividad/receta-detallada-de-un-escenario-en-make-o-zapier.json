@@ -1,0 +1,40 @@
+{
+  "tarea": "Escribir la receta de montaje paso a paso de una automatización, módulo a módulo y campo a campo",
+  "rol": "Especialista en automatizaciones visuales que explica a alguien que abre la herramienta por primera vez",
+  "entradas": {
+    "herramienta": "[MAKE / ZAPIER / N8N / POWER AUTOMATE]",
+    "disparador_deseado": "[QUÉ TIENE QUE PASAR PARA QUE ARRANQUE: LLEGA UN EMAIL, SE CREA UN PEDIDO...]",
+    "apps_conectadas": "[APP DE ORIGEN Y APP DE DESTINO]",
+    "resultado_esperado": "[QUÉ DEBE QUEDAR HECHO AL FINAL]",
+    "campos_origen": "[NOMBRE, EMAIL, IMPORTE, FECHA, REFERENCIA...]",
+    "campos_destino": "[COLUMNAS DE LA HOJA O CAMPOS DEL CRM]",
+    "condiciones": "[SOLO SI EL IMPORTE SUPERA X, SOLO CLIENTES NUEVOS...]"
+  },
+  "metodo": [
+    "Empieza siempre por el disparador y di si conviene por evento o programado, y con qué frecuencia",
+    "Numera los módulos en orden, uno por acción, con su nombre tal y como aparece en la herramienta",
+    "Para cada módulo indica la configuración clave y el mapeo campo a campo en formato origen -> destino",
+    "Coloca un filtro lo antes posible para no gastar operaciones en ejecuciones inútiles",
+    "Añade un paso de deduplicación para no procesar dos veces el mismo registro",
+    "Añade una ruta de error que avise por email o mensaje cuando algo falle"
+  ],
+  "restricciones": [
+    "No inventes nombres de módulos: si no estás seguro, descríbelo como acción genérica y avisa",
+    "Formatos españoles: fechas dd/mm/aaaa y decimales con coma cuando se escriban en la hoja",
+    "Nada de guardar contraseñas ni claves dentro de los campos de texto"
+  ],
+  "formato_salida": {
+    "resumen": "Una frase con lo que hará el escenario",
+    "pasos": "Lista numerada de módulos con su configuración y su mapeo",
+    "filtros": "Condiciones exactas",
+    "tabla_mapeo": ["campo_origen", "campo_destino", "transformación"],
+    "pruebas": "3 casos de prueba con el dato de entrada y el resultado esperado",
+    "antes_de_activar": "Checklist de 5 comprobaciones"
+  },
+  "criterios_calidad": [
+    "Se puede seguir sin saber nada de programación",
+    "Ningún campo del destino queda sin origen o sin valor por defecto",
+    "Está previsto qué pasa si el dato llega vacío o mal escrito"
+  ],
+  "tono": "Instrucciones cortas y accionables, español de España, tuteando"
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Analizar la web de un competidor y sacar conclusiones aplicables a la mía",
+  "entradas": {
+    "competidor": "[NOMBRE Y URL DEL COMPETIDOR]",
+    "contenido_web": "[PEGA AQUÍ EL TEXTO DE SU PÁGINA PRINCIPAL Y DE VENTAS]",
+    "mi_web": "[URL O TEXTO DE TU PÁGINA]",
+    "mi_cliente": "[A QUIÉN VENDES Y QUÉ LE PREOCUPA]"
+  },
+  "que_analizar": [
+    "Titular principal: qué promesa hace y a quién señala",
+    "Propuesta de valor: qué dice que le pasa al cliente si compra",
+    "Oferta: qué vende exactamente, con qué precio, garantía y plazo",
+    "Prueba social: testimonios, casos, logos, número de clientes y si son creíbles",
+    "Objeciones: cuáles responde y cuáles se deja sin responder",
+    "Llamadas a la acción: cuántas hay, qué piden y en qué momento aparecen",
+    "Captación: si regala algo a cambio del email y qué",
+    "Estructura y orden de los bloques de la página",
+    "Palabras y expresiones que usa para hablar del problema del cliente"
+  ],
+  "comparativa": "Para cada punto anterior, di qué hace él, qué hago yo y quién lo hace mejor",
+  "restricciones": [
+    "No copiar textos literales: proponer versiones propias",
+    "Nada de valoraciones estéticas subjetivas sin explicar el efecto en la venta",
+    "Si falta información, dilo en vez de suponer"
+  ],
+  "formato_salida": {
+    "1_resumen": "5 líneas con la estrategia de esa web en cristiano",
+    "2_tabla": "Tabla de 9 filas: elemento, qué hace él, qué hago yo, quién gana",
+    "3_copiar": "5 cosas que debería adoptar, ordenadas por impacto y esfuerzo",
+    "4_evitar": "3 cosas que hace él y que no debería copiar, con el motivo",
+    "5_titulares": "3 propuestas de titular para mi web, distintas entre sí"
+  },
+  "criterios_calidad": [
+    "Cada recomendación se puede aplicar sin programar",
+    "El análisis explica el porqué comercial, no solo describe",
+    "Los titulares propuestos son concretos y mencionan al cliente o su problema"
+  ]
+}

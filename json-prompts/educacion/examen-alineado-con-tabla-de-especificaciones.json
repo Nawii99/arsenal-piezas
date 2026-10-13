@@ -1,0 +1,40 @@
+{
+  "tarea": "Construir una prueba de evaluacion alineada con los contenidos impartidos, usando tabla de especificaciones",
+  "contexto": {
+    "materia": "[MATERIA]",
+    "nivel": "[NIVEL DEL ALUMNADO]",
+    "duracion_de_la_prueba": "[MINUTOS]",
+    "nota_minima_para_aprobar": "[EJ: 5 SOBRE 10]",
+    "tipos_de_pregunta_permitidos": ["opcion multiple", "respuesta corta", "problema", "caso practico"]
+  },
+  "entradas": {
+    "bloques_de_contenido": "[LISTA CADA BLOQUE Y LAS HORAS O SESIONES DEDICADAS A CADA UNO]",
+    "objetivos_o_competencias": "[LISTA LO QUE EL ALUMNO DEBE SER CAPAZ DE HACER]",
+    "materiales_permitidos": "[APUNTES, CALCULADORA, NADA]"
+  },
+  "metodo": [
+    "Reparte el peso de las preguntas en proporcion a las horas dedicadas a cada bloque",
+    "Clasifica cada pregunta por nivel cognitivo: recordar, comprender, aplicar, analizar",
+    "Reserva al menos un 40 por ciento a aplicar o analizar, no solo memoria",
+    "Estima el tiempo de resolucion de cada pregunta y comprueba que cabe en la duracion total",
+    "Evita preguntas encadenadas donde fallar la primera arrastre a todas las siguientes"
+  ],
+  "restricciones": [
+    "Enunciados en una sola frase clara, sin dobles negaciones ni 'todas las anteriores'",
+    "No preguntes contenidos que no aparezcan en los bloques indicados",
+    "Puntuacion total exactamente 10 puntos",
+    "Nada de preguntas trampa ni de datos ambiguos"
+  ],
+  "formato_salida": {
+    "1_tabla_de_especificaciones": "Bloque | Horas | Peso % | Numero de preguntas | Niveles cognitivos cubiertos",
+    "2_examen": "Enunciados numerados con su puntuacion entre parentesis",
+    "3_plantilla_de_correccion": "Respuesta correcta y reparto de puntos parciales de cada pregunta",
+    "4_control_de_tiempo": "Minutos estimados por pregunta y total",
+    "5_version_adaptada": "Ajustes para alumnado con mas tiempo o apoyo"
+  },
+  "criterios_calidad": [
+    "El peso de cada bloque no se desvia mas de 5 puntos porcentuales de sus horas",
+    "Toda pregunta se puede responder con lo impartido",
+    "El tiempo estimado no supera el 85 por ciento de la duracion"
+  ]
+}

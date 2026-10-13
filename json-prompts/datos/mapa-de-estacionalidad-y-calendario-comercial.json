@@ -1,0 +1,35 @@
+{
+  "tarea": "Detectar el patrón estacional del negocio y convertirlo en un calendario comercial de 12 meses",
+  "contexto": {
+    "negocio": "[NOMBRE Y SECTOR]",
+    "zona": "[COMUNIDAD AUTÓNOMA O CIUDAD, PARA FESTIVOS LOCALES]",
+    "tipo_de_cliente": "[PARTICULARES O EMPRESAS]"
+  },
+  "entradas": {
+    "historico": "[PEGA AL MENOS 2 AÑOS EN FORMATO periodo;ventas_eur;pedidos, UNO POR LÍNEA]",
+    "granularidad": "[SEMANAL O MENSUAL]",
+    "campanas_actuales": "[REBAJAS, BLACK FRIDAY, VUELTA AL COLE, NAVIDAD...]",
+    "capacidad_maxima": "[CUÁNTO PUEDES SERVIR COMO MÁXIMO EN UNA SEMANA]"
+  },
+  "procedimiento": [
+    "1. Calcula el índice de cada periodo respecto a la media anual y compáralo entre los dos años para ver si el patrón se repite",
+    "2. Separa lo que es estacionalidad real de lo que fue una campaña puntual o un año raro",
+    "3. Cruza los picos y valles con el calendario español: Semana Santa (móvil), agosto, puentes, rebajas, Black Friday y Navidad",
+    "4. Señala los periodos en los que la demanda prevista supera la capacidad máxima",
+    "5. Propón para cada mes una acción concreta: invertir, mantener, promocionar, mantenimiento o vacaciones"
+  ],
+  "restricciones": [
+    "Si el patrón no se repite entre años, dilo claramente en vez de forzar una estacionalidad",
+    "Semana Santa cambia de mes: trátala aparte y no la mezcles con el efecto de marzo o abril",
+    "Máximo una acción por mes, la más rentable"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: Periodo | Índice año 1 | Índice año 2 | ¿Se repite? | Causa probable",
+    "bloque_2": "Calendario de 12 meses: Mes | Nivel esperado | Acción | Presupuesto sugerido (alto/medio/bajo) | Cuándo empezar a prepararlo",
+    "bloque_3": "Las 3 semanas del año que más ingresos concentran y qué debe estar listo antes"
+  },
+  "criterios_calidad": [
+    "Cada afirmación sobre estacionalidad se apoya en los dos años, no en uno",
+    "El calendario es accionable: cada línea dice qué hacer y cuándo"
+  ]
+}

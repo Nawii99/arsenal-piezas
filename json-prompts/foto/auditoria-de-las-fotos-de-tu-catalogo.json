@@ -1,0 +1,39 @@
+{
+  "tarea": "Auditar las fotos actuales del catalogo de [NOMBRE DE TU MARCA] y decidir cuales se quedan, cuales se retocan y cuales hay que repetir",
+  "entradas": {
+    "productos": "[LISTA DE PRODUCTOS CON SUS FOTOS ADJUNTAS O DESCRITAS]",
+    "canal_principal": "[TIENDA PROPIA / AMAZON / INSTAGRAM SHOP / CATALOGO PDF]",
+    "estandar_deseado": "[FONDO BLANCO LIMPIO / FONDO DE COLOR DE MARCA / LIFESTYLE]",
+    "presupuesto_de_repeticion": "[CUANTOS PRODUCTOS PUEDES REFOTOGRAFIAR ESTE MES]"
+  },
+  "que_revisar_en_cada_foto": [
+    "Exposicion: blancos quemados o sombras tapadas sin detalle",
+    "Color: el producto se ve del mismo tono que en la realidad y el fondo no tira a azul o amarillo",
+    "Encuadre: aire por los cuatro lados y producto centrado, apto para recorte cuadrado",
+    "Enfoque: el frontal y la etiqueta estan nitidos",
+    "Limpieza: polvo, pelusas, huellas, arrugas y cables a la vista",
+    "Coherencia: mismo angulo, misma altura de camara y misma escala que el resto del catalogo",
+    "Legalidad y claridad: la foto no promete algo que el producto no incluye"
+  ],
+  "reglas_de_decision": [
+    "Repetir si falla enfoque, color del producto o hay suciedad visible",
+    "Retocar si solo falla fondo, encuadre o pequenas motas",
+    "Mantener si cumple todo aunque no sea espectacular, y anotarla como mejorable"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla con columnas: producto, veredicto (mantener/retocar/repetir), fallo principal, arreglo concreto, prioridad 1 a 3",
+    "bloque_2": "Resumen de los 3 fallos que mas se repiten en todo el catalogo",
+    "bloque_3": "Plan de repeticion por tandas segun el presupuesto indicado",
+    "bloque_4": "Lista de comprobacion de 8 puntos para las proximas fotos"
+  },
+  "tono": "directo y concreto, como un director de arte que tiene que sacar el catalogo esta semana",
+  "criterios_calidad": [
+    "Cada veredicto va acompanado del motivo visible, no de una opinion generica",
+    "Los arreglos son accionables: recortar, limpiar fondo, repetir con luz difusa",
+    "La prioridad tiene en cuenta que producto vende mas"
+  ],
+  "errores_a_evitar": [
+    "Decir que todo esta bien para quedar bien",
+    "Proponer repetir el catalogo entero de golpe"
+  ]
+}

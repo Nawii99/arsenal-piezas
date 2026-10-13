@@ -1,0 +1,32 @@
+{
+  "tarea": "Redactar el mini manual de marca en formato presentación para que cualquiera use bien el logo, los colores y la tipografía",
+  "entradas": {
+    "marca": "[NOMBRE DE TU EMPRESA]",
+    "logo": "[DESCRIBE TU LOGO: SÍMBOLO, TEXTO Y VERSIONES QUE TIENES]",
+    "colores": "[HEX]",
+    "tipografias": "[NOMBRES]",
+    "quien_lo_usara": "[EQUIPO, IMPRENTA, FREELANCES, AGENCIA]"
+  },
+  "secciones": [
+    "Portada y qué es la marca en una frase",
+    "Versiones del logo y cuándo usar cada una",
+    "Área de respeto y tamaño mínimo, con medidas concretas",
+    "Usos incorrectos, con 6 ejemplos descritos",
+    "Colores con HEX, RGB y CMYK y proporción de uso",
+    "Tipografías, escala y alternativas para web y para Office",
+    "Fotografía: qué sí y qué no, con criterios comprobables",
+    "Iconos y grosor de trazo",
+    "Ejemplos aplicados: tarjeta, cabecera de redes, diapositiva y factura",
+    "A quién pedir los archivos originales"
+  ],
+  "restricciones": [
+    "Cada regla debe poder comprobarse mirando una pieza, nada de conceptos abstractos",
+    "El área de respeto se expresa en función de un elemento del propio logo",
+    "Máximo una diapositiva por sección"
+  ],
+  "formato_salida": "Una diapositiva por sección con titular, texto visible corto y descripción del gráfico que la acompaña",
+  "criterios_calidad": [
+    "Un proveedor externo puede aplicar la marca sin llamarte",
+    "Incluye los casos raros: fondo oscuro, tamaño diminuto e impresión a una tinta"
+  ]
+}

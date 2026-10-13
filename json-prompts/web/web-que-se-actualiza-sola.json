@@ -1,0 +1,53 @@
+{
+  "tarea": "Conectar una página web estática a una hoja de cálculo para que un listado (precios, catálogo, horarios, disponibilidad) se actualice sin tocar código",
+  "contexto": {
+    "que_se_publica": "[TARIFAS, CATÁLOGO, MENÚ DEL DÍA, HORARIOS, PLAZAS DISPONIBLES]",
+    "cada_cuanto_cambia": "[DIARIO, SEMANAL, PUNTUAL]",
+    "quien_lo_edita": "[YO O ALGUIEN DEL EQUIPO SIN PERFIL TÉCNICO]",
+    "web": "[URL Y DÓNDE ESTÁ ALOJADA]"
+  },
+  "entradas": {
+    "hoja_de_calculo": "[GOOGLE SHEETS U OTRA, INDICA CUÁL]",
+    "columnas": "[NOMBRE, PRECIO, DESCRIPCIÓN, CATEGORÍA, DISPONIBLE, IMAGEN]",
+    "ejemplo_de_filas": "[PEGA 3 FILAS DE EJEMPLO]",
+    "diseno_de_la_tarjeta": "[CÓMO QUIERES QUE SE VEA CADA ELEMENTO]"
+  },
+  "pasos": [
+    "1. Diseña la hoja como si fuera una base de datos: una fila por elemento, una columna por dato, la primera fila con los nombres de columna y nada de celdas combinadas.",
+    "2. Añade una columna de publicado con sí o no, para poder ocultar cosas sin borrarlas.",
+    "3. Fija reglas de formato: precios con punto o coma según decidas, imágenes como enlace directo, sin filas vacías en medio.",
+    "4. Publica la hoja en formato CSV y guarda esa dirección; deja claro que cualquiera con el enlace podrá leer esos datos, así que nada de información privada.",
+    "5. En la página, lee ese CSV al cargar, conviértelo en una lista y dibuja las tarjetas con el diseño acordado.",
+    "6. Protege contra errores: si la hoja no responde, muestra la última versión guardada o un mensaje discreto en vez de una página rota.",
+    "7. Cachea el resultado unos minutos para que no se consulte en cada visita.",
+    "8. Valida los datos al pintar: fila sin nombre o sin precio se salta y se avisa en la consola.",
+    "9. Escribe la guía de uso para quien edita: qué se puede tocar, qué no, y cuánto tarda en verse el cambio."
+  ],
+  "errores_tipicos": [
+    "Cambiar el nombre o el orden de las columnas y romper la web",
+    "Meter texto en la columna de precio (a consultar, desde 20) y que falle el cálculo",
+    "Poner en la hoja datos privados de clientes, que quedan públicos al publicarla",
+    "Enlazar imágenes desde el móvil o desde carpetas privadas que luego no cargan",
+    "No poner ningún plan B si la hoja deja de responder",
+    "Filas duplicadas por copiar y pegar"
+  ],
+  "restricciones": [
+    "Sin servidor propio ni bases de datos",
+    "JavaScript sencillo y comentado en español",
+    "Que la página siga siendo usable si los datos tardan o fallan",
+    "Nada de datos personales en la hoja publicada"
+  ],
+  "formato_salida": {
+    "bloque_1": "Plantilla de la hoja: nombres exactos de columna y ejemplo relleno",
+    "bloque_2": "Código completo de la página que lee la hoja y pinta las tarjetas",
+    "bloque_3": "Instrucciones de publicación de la hoja, paso a paso",
+    "bloque_4": "Guía de una página para quien edita la hoja",
+    "bloque_5": "Qué hacer si la web deja de mostrar los datos"
+  },
+  "criterios_calidad": [
+    "Editar una celda y ver el cambio en la web sin tocar nada más",
+    "Una fila mal rellenada no rompe la página entera",
+    "El listado se ve bien en móvil",
+    "La guía la entiende alguien que solo sabe usar hojas de cálculo"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "tarea": "Decidir si me compensa una inversión concreta comparándola con las alternativas y viendo su efecto en la caja",
+  "contexto": {
+    "negocio": "[QUÉ HACES]",
+    "decision": "[QUÉ QUIERES COMPRAR Y PARA QUÉ]",
+    "urgencia": "[LO NECESITO YA / PUEDO ESPERAR MESES]"
+  },
+  "entradas": {
+    "precio": "[IMPORTE TOTAL SIN IVA Y CON IVA]",
+    "forma_de_pago": "[CONTADO / FINANCIADO: CUOTA, PLAZO E INTERESES / RENTING: CUOTA Y AÑOS]",
+    "gastos_asociados": "[INSTALACIÓN, MANTENIMIENTO ANUAL, SEGURO, CONSUMIBLES, FORMACIÓN, LICENCIAS]",
+    "efecto_esperado": "[QUÉ TE AHORRA EN HORAS O EN DINERO AL MES, O CUÁNTOS INGRESOS NUEVOS PERMITE Y POR QUÉ]",
+    "caja_disponible": "[SALDO DE HOY Y COLCHÓN QUE NO QUIERES TOCAR]",
+    "alternativas": "[ALQUILAR, COMPRAR DE SEGUNDA MANO, SUBCONTRATAR, NO HACER NADA: PRECIO DE CADA UNA SI SE SABE]",
+    "vida_util": "[AÑOS QUE ESPERAS USARLO]"
+  },
+  "procedimiento": [
+    "1. Calcula el coste total de propiedad a la vida útil: precio más gastos asociados más intereses, no solo la etiqueta",
+    "2. Traduce el beneficio esperado a euros al mes; si es ahorro de horas, valóralo con el coste hora real y márcalo como estimación",
+    "3. Plazo de recuperación = desembolso inicial dividido entre el beneficio neto mensual; exprésalo en meses",
+    "4. Aplica la regla de prudencia: si el plazo supera la mitad de la vida útil o pasa de 24 meses en un negocio pequeño, enciende el aviso",
+    "5. Compara las alternativas con la misma cuenta, incluido no hacer nada",
+    "6. Mira el efecto en la caja mes a mes durante 12 meses: cuánto baja el saldo y si se cruza el colchón mínimo",
+    "7. Comprueba la dependencia: qué pasa si las ventas caen un 30% y la cuota sigue ahí",
+    "8. Busca la versión pequeña: alquilar un mes, comprarlo usado, hacer una prueba antes de comprometerse",
+    "9. Da un veredicto claro con las dos condiciones que lo cambiarían"
+  ],
+  "restricciones": [
+    "No uses el ahorro fiscal como motivo principal de compra",
+    "No cuentes ingresos nuevos que dependan de clientes que aún no existen sin marcarlo como supuesto",
+    "Compara siempre contra no hacer nada",
+    "Nada de promesas de rentabilidad"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Mirar solo la cuota mensual y no el coste total",
+    "Olvidar mantenimiento, consumibles y seguro",
+    "Comprar capacidad para una demanda que todavía no tienes",
+    "Vaciar el colchón de caja para pagar al contado y ahorrarse intereses"
+  ],
+  "formato_salida": {
+    "1_veredicto": "Sí, no o todavía no, en una línea, con el motivo principal",
+    "2_cuenta": "Coste total, beneficio mensual estimado y plazo de recuperación en meses",
+    "3_comparativa": "Tabla de alternativas con coste a un año y a la vida útil",
+    "4_caja": "Efecto mes a mes en el saldo durante 12 meses y si cruza el colchón",
+    "5_prueba_pequena": "Cómo probarlo con poco dinero antes de comprometerse",
+    "estilo": "Frío con los números, claro con la recomendación"
+  },
+  "criterios_calidad": [
+    "Los supuestos están listados aparte y marcados como tales",
+    "El plazo de recuperación se calcula con beneficio neto, no con ingreso bruto",
+    "La opción de no hacer nada aparece en la comparativa",
+    "El veredicto no se esconde tras condicionales"
+  ]
+}

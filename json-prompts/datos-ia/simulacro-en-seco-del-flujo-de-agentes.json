@@ -1,0 +1,35 @@
+{
+  "tarea": "Haz un simulacro en seco de mi flujo de agentes: recorrelo con casos dificiles y dime donde se rompe antes de conectarlo",
+  "contexto": {
+    "descripcion_del_flujo": "[PEGA AQUI TUS AGENTES Y LOS PASOS EN ORDEN]",
+    "entrada_tipica": "[EJEMPLO REAL DE LO QUE LLEGA AL EMPEZAR]",
+    "resultado_esperado": "[QUE DEBERIA SALIR]",
+    "desastre_inaceptable": "[EJ: ENVIAR UN PRECIO EQUIVOCADO A UN CLIENTE]"
+  },
+  "casos_a_probar": [
+    "Caso normal, todo correcto",
+    "Entrada incompleta: falta un dato clave",
+    "Entrada contradictoria: el cliente dice dos cosas incompatibles",
+    "Un agente devuelve algo con el formato cambiado",
+    "Una herramienta externa no responde",
+    "Caso fuera de alcance que el flujo no deberia atender",
+    "Volumen: 20 casos entrando a la vez"
+  ],
+  "para_cada_caso_devuelve": [
+    "Recorrido paso a paso indicando que agente actua y que entrega",
+    "El punto exacto donde se rompe o se degrada",
+    "Consecuencia real para el negocio si eso pasa un lunes por la manana",
+    "Arreglo concreto: cambiar una instruccion, anadir una comprobacion o meter a una persona"
+  ],
+  "formato_salida": {
+    "por_caso": "titulo, recorrido, veredicto pasa o falla, consecuencia, arreglo",
+    "resumen_final": "tabla de los fallos ordenados por gravedad",
+    "veredicto": "listo para arrancar | arrancar solo con supervision | no arrancar todavia",
+    "siguiente_paso": "los 3 arreglos a hacer antes de nada"
+  },
+  "criterios_calidad": [
+    "Ningun caso se despacha con un vale, funciona sin recorrerlo",
+    "Las consecuencias se explican en dinero, tiempo o cliente enfadado",
+    "Los arreglos son cambios concretos, no consejos generales"
+  ]
+}

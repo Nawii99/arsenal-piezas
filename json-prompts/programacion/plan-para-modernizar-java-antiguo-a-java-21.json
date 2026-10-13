@@ -1,0 +1,38 @@
+{
+  "tarea": "Modernizar código Java antiguo a la sintaxis y APIs de una versión reciente",
+  "contexto": {
+    "version_actual": "[EJ: JAVA 8]",
+    "version_destino": "[EJ: JAVA 21]",
+    "librerias_clave": "[SPRING, LOMBOK, GUAVA, JUNIT4...]",
+    "tiene_tests": "[SÍ / NO / SOLO ALGUNOS]"
+  },
+  "entradas": {
+    "codigo": "[PEGA AQUÍ LA CLASE O EL PAQUETE A MODERNIZAR]"
+  },
+  "transformaciones_a_aplicar": [
+    "clases de solo datos a record",
+    "bucles y filtros manuales a streams cuando quede más claro",
+    "cadenas de if sobre tipos a switch con patrones",
+    "concatenaciones largas a bloques de texto",
+    "var en variables locales cuando el tipo sea evidente",
+    "try con recursos y NIO en vez de cerrar a mano",
+    "jerarquías cerradas a sealed interface",
+    "utilidades propias sustituidas por métodos de la biblioteca estándar"
+  ],
+  "restricciones": [
+    "No tocar el comportamiento observable en ningún caso",
+    "No usar streams si el bucle original es más legible",
+    "No quitar Lombok si el proyecto depende de él en otras clases",
+    "Señalar aparte lo que exige cambiar dependencias o configuración de build"
+  ],
+  "formato_salida": {
+    "1_codigo_modernizado": "clase completa",
+    "2_tabla_cambios": "columnas: patrón antiguo | patrón nuevo | líneas ahorradas | riesgo",
+    "3_plan_por_fases": "fase 1 sin riesgo, fase 2 con tests, fase 3 con cambio de dependencias",
+    "4_bloqueantes": "qué impide subir de versión hoy y qué hacer con ello"
+  },
+  "criterios_calidad": [
+    "El código nuevo es más corto o más claro, nunca solo más moderno",
+    "Cada cambio de fase 3 lleva su motivo escrito"
+  ]
+}

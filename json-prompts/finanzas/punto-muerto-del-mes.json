@@ -1,0 +1,60 @@
+{
+  "tarea": "Calcular mi punto muerto mensual: cuánto tengo que facturar y cuántas unidades o clientes necesito para cubrir todos los costes, con escenarios y umbral de alarma.",
+  "contexto": {
+    "negocio": "[QUÉ VENDO Y CÓMO]",
+    "modelo": "[SERVICIOS POR HORAS / PRODUCTOS / SUSCRIPCIÓN / MIXTO]",
+    "forma_juridica": "[AUTÓNOMO / SOCIEDAD LIMITADA]",
+    "sueldo_que_necesito_sacar_al_mes": "[IMPORTE NETO]"
+  },
+  "entradas": {
+    "costes_fijos_mensuales": "[ALQUILER, CUOTA, GESTORÍA, SOFTWARE, SUELDOS, SEGUROS, PRÉSTAMOS]",
+    "precio_medio_de_venta": "[IMPORTE SIN IVA]",
+    "coste_variable_por_venta": "[MATERIALES, COMISIONES DE PASARELA, ENVÍO, SUBCONTRATA]",
+    "ventas_de_los_ultimos_meses": "[NÚMERO Y FACTURACIÓN DE LOS ÚLTIMOS 6 MESES]",
+    "estacionalidad": "[MESES BUENOS Y MESES MALOS]"
+  },
+  "conocimiento_a_aplicar": [
+    "Punto muerto en unidades = costes fijos dividido entre el margen de contribución por unidad, que es precio menos coste variable.",
+    "Punto muerto en euros = costes fijos dividido entre el margen de contribución en porcentaje.",
+    "El IVA se queda fuera de todo el cálculo, en ingresos y en gastos.",
+    "El sueldo del dueño es un coste fijo: si no está dentro, el punto muerto sale falso y bajo.",
+    "Las comisiones de la pasarela de pago y los envíos son coste variable, no gasto general.",
+    "Con estacionalidad hay que calcular el punto muerto anual además del mensual, porque hay meses que se compensan con otros.",
+    "El umbral de alarma se pone por encima del punto muerto, no en él: si vendes exactamente el mínimo no te queda nada para imprevistos."
+  ],
+  "pasos": [
+    "1. Separar con cuidado costes fijos y costes variables, revisando los dudosos uno a uno.",
+    "2. Calcular el margen de contribución por venta en euros y en porcentaje.",
+    "3. Calcular punto muerto mensual en euros y en número de ventas o clientes.",
+    "4. Añadir el sueldo objetivo y calcular el punto de vivir dignamente, por encima del punto muerto.",
+    "5. Comparar con las ventas reales de los últimos 6 meses y decir cuántos meses estuve por debajo.",
+    "6. Hacer tres escenarios: si suben los fijos un 10 por ciento, si baja el precio un 10 por ciento y si sube el coste variable un 10 por ciento.",
+    "7. Fijar el umbral de alarma semanal para poder reaccionar dentro del mes."
+  ],
+  "errores_tipicos": [
+    "No incluir el propio sueldo y creer que el negocio va bien.",
+    "Meter el IVA en el precio y calcular el margen sobre él.",
+    "Tratar las comisiones de cobro como gasto fijo.",
+    "Calcular solo con el mes bueno.",
+    "Mirar el punto muerto una vez al año y no volver a tocarlo cuando cambian los costes."
+  ],
+  "restricciones": [
+    "Muestra las fórmulas usadas y los números intermedios.",
+    "No inventes datos de mercado ni compares con medias del sector.",
+    "Si mi mezcla de productos es muy variada, dilo y trabaja con el margen medio ponderado explicando el límite del cálculo."
+  ],
+  "formato_salida": {
+    "1_clasificacion": "Tabla de costes: CONCEPTO | IMPORTE MES | FIJO O VARIABLE | POR QUÉ",
+    "2_resultados": "Margen de contribución, punto muerto en euros y en ventas, y punto de sueldo digno",
+    "3_realidad": "Comparación con los últimos 6 meses y meses por debajo del umbral",
+    "4_escenarios": "Tabla con los tres escenarios y su nuevo punto muerto",
+    "5_alarma": "Cifra semanal a vigilar y qué hago si a mitad de mes voy por debajo"
+  },
+  "criterios_calidad": [
+    "Si multiplico las ventas del punto muerto por el margen unitario me salen exactamente los costes fijos.",
+    "El sueldo aparece explícito y separado.",
+    "Los tres escenarios están calculados, no comentados.",
+    "La cifra semanal de alarma es un número redondo y fácil de recordar."
+  ],
+  "si_faltan_datos": "Pídeme el desglose de gastos mensuales antes de clasificar nada por tu cuenta."
+}

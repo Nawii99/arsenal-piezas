@@ -1,0 +1,49 @@
+{
+  "tarea": "Transformar un encargo en criterios de aceptación comprobables y aplicarlos a la entrega recibida, devolviendo un veredicto y una lista de correcciones.",
+  "contexto": {
+    "que_encargaste": "[WEB, LOGO, VÍDEO, CAMPAÑA, AUTOMATIZACIÓN, TEXTOS]",
+    "proveedor": "[FREELANCE / AGENCIA / CONOCIDO]",
+    "importe_y_pagos": "[IMPORTE Y CÓMO ESTÁ REPARTIDO EL PAGO]",
+    "para_que_lo_quieres": "[OBJETIVO DE NEGOCIO REAL]"
+  },
+  "entradas": {
+    "presupuesto_o_encargo": "[PEGA EL PRESUPUESTO, EL BRIEF O LOS MENSAJES DONDE SE ACORDÓ]",
+    "entrega_recibida": "[DESCRIBE O ADJUNTA LO QUE TE HAN DADO, CON ENLACES O ARCHIVOS]",
+    "plazo_pactado": "[FECHA ACORDADA Y FECHA REAL DE ENTREGA]"
+  },
+  "metodo": [
+    "1. Saca del encargo la lista de entregables prometidos, uno por línea, incluidos los que se dijeron por mensaje.",
+    "2. Convierte cada entregable en un criterio comprobable por un no técnico: qué tengo que poder hacer, ver o abrir para decir que está.",
+    "3. Añade los criterios que casi nadie pide y luego duelen: archivos editables, accesos y propiedad de las cuentas, dominio a tu nombre, formatos, licencias de fotos y tipografías, documentación mínima.",
+    "4. Revisa la entrega criterio a criterio y marca CUMPLE, PARCIAL o NO CUMPLE con la prueba concreta.",
+    "5. Separa lo que es un fallo objetivo de lo que es gusto tuyo: se negocian distinto.",
+    "6. Distingue defecto (lo pactado no está bien) de cambio de alcance (quieres algo nuevo que hay que pagar).",
+    "7. Ordena las correcciones en bloqueantes para el pago final y menores para una segunda vuelta.",
+    "8. Redacta el mensaje al proveedor: cordial, concreto, con lista numerada, plazo propuesto y qué pasa con el pago."
+  ],
+  "errores_tipicos": [
+    "Aceptar la entrega por WhatsApp con un vale, gracias y perder el derecho a reclamar.",
+    "No pedir los accesos de administrador ni los archivos fuente.",
+    "Mezclar quejas de gusto con incumplimientos y perder autoridad.",
+    "Pagar el 100% antes de probarlo en real.",
+    "No comprobar licencias de imágenes o música."
+  ],
+  "restricciones": [
+    "Tono profesional y no agresivo: el objetivo es cobrar la corrección, no ganar la discusión.",
+    "No afirmes incumplimientos que no estén escritos en el encargo."
+  ],
+  "formato_salida": {
+    "tabla_aceptacion": "Criterio, de dónde sale, cómo se comprueba, resultado, prueba",
+    "veredicto": "ACEPTADA, ACEPTADA CON CORRECCIONES o RECHAZADA, con motivo en tres líneas",
+    "correcciones": "Lista numerada separando bloqueantes y menores",
+    "mensaje_al_proveedor": "Texto listo para enviar",
+    "clausulas_para_la_proxima": "4 frases para meter en el próximo presupuesto"
+  },
+  "criterios_calidad": [
+    "Todo criterio sale del encargo o se marca como añadido razonable.",
+    "Cada NO CUMPLE tiene una prueba señalable.",
+    "El mensaje cabe en una pantalla y no insulta.",
+    "Queda claro qué se paga ya y qué se paga al corregir."
+  ],
+  "si_falta_informacion": "Si no hay encargo escrito, reconstrúyelo con los mensajes disponibles y avisa de que la posición negociadora es más débil."
+}

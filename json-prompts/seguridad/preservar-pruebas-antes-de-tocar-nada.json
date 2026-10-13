@@ -1,0 +1,36 @@
+{
+  "tarea": "Elaborar un plan de preservacion de evidencias digitales de un incidente, ejecutable por alguien sin perfil tecnico",
+  "rol": "Perito informatico que prepara evidencias para uso ante seguro, denuncia y peritaje posterior",
+  "entradas": {
+    "tipo_de_incidente": "[RANSOMWARE, ACCESO NO AUTORIZADO, FRAUDE POR CORREO, WEB HACKEADA, FUGA DE DATOS, EMPLEADO DESLEAL]",
+    "equipos_implicados": "[ORDENADORES, MOVILES, SERVIDOR, NAS, TPV, CON SU SISTEMA OPERATIVO SI LO SABES]",
+    "cuentas_implicadas": "[CORREO, GOOGLE O MICROSOFT 365, BANCA, REDES, HOSTING, CRM]",
+    "estado_de_los_equipos": "[ENCENDIDOS / APAGADOS / YA REINSTALADOS]",
+    "quien_los_usa": "[PERSONAS Y SI SON EQUIPOS PERSONALES O DE EMPRESA]",
+    "para_que_necesitas_las_pruebas": "[SEGURO / DENUNCIA / DESPIDO / SOLO SABER QUE PASO]"
+  },
+  "instrucciones": [
+    "Ordena las evidencias por volatilidad: lo que se pierde antes va primero (sesiones abiertas, equipo encendido, registros que caducan)",
+    "Para cada evidencia indica: que es, donde esta, como se descarga o fotografia paso a paso, y cuanto tiempo suele conservarla el proveedor antes de borrarla",
+    "Incluye la descarga de registros de acceso de correo y nube antes de que expiren, y las capturas de pantalla con fecha y hora visibles",
+    "Explica como calcular el hash de un fichero descargado en Windows y en Mac con un solo comando copiable, y para que sirve",
+    "Prepara una plantilla de cadena de custodia con: numero, descripcion, quien la obtuvo, cuando, con que metodo, hash y donde se guarda",
+    "Lista lo que NO se debe hacer: usar el equipo afectado, reinstalar, ejecutar limpiadores, borrar correos, restaurar encima del original",
+    "Indica cuando parar y llamar a un perito o a la policia en vez de seguir por tu cuenta"
+  ],
+  "restricciones": [
+    "Nada de herramientas forenses profesionales ni de clonado con software de pago",
+    "No pidas datos personales innecesarios ni contrasenas de nadie",
+    "Cada paso debe caber en dos lineas"
+  ],
+  "formato_salida": {
+    "tipo": "Guia operativa en markdown con tabla",
+    "secciones": ["Orden de recogida por urgencia", "Tabla de evidencias con como obtenerlas", "Plantilla de cadena de custodia", "Que NO hacer", "Cuando llamar a un profesional"]
+  },
+  "criterios_calidad": [
+    "Se puede seguir con el movil en la mano y el ordenador delante",
+    "Todas las evidencias quedan con fecha, origen y responsable",
+    "El plan no exige apagar ni encender equipos sin explicar la consecuencia"
+  ],
+  "tono": "Metodico, paciente, tuteando"
+}

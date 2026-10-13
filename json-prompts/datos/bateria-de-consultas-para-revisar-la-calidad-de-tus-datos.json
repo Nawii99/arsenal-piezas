@@ -1,0 +1,34 @@
+{
+  "tarea": "Generar una batería de consultas SQL de solo lectura que detecte problemas de calidad en los datos y resuma los hallazgos",
+  "entradas": {
+    "motor": "[MOTOR Y VERSIÓN]",
+    "tablas": "[ESQUEMA DE LAS TABLAS CLAVE: CLIENTES, PEDIDOS, PRODUCTOS...]",
+    "reglas_de_negocio": "[REGLAS QUE SIEMPRE DEBEN CUMPLIRSE, EJ: TODO PEDIDO TIENE CLIENTE, EL IMPORTE NUNCA ES NEGATIVO]",
+    "volumen": "[FILAS APROXIMADAS POR TABLA]",
+    "motivo": "[MIGRACIÓN, AUDITORÍA, DESCONFIANZA EN UN INFORME...]"
+  },
+  "comprobaciones": [
+    "Duplicados por identificador de negocio (email, NIF, referencia) aunque el id técnico sea distinto",
+    "Campos obligatorios vacíos o con cadenas en blanco",
+    "Registros huérfanos: hijos cuyo padre ya no existe",
+    "Fechas imposibles: futuras, anteriores a la apertura del negocio o de fin antes de inicio",
+    "Importes negativos, a cero o fuera de rango razonable",
+    "Formatos inconsistentes en teléfonos, códigos postales, emails y mayúsculas",
+    "Valores de estado que no están en la lista permitida",
+    "Totales de cabecera que no cuadran con la suma de sus líneas"
+  ],
+  "formato_salida": {
+    "consultas": "Una consulta por comprobación, numerada, cada una con un comentario de qué busca y qué significa que devuelva filas",
+    "consulta_resumen": "Una consulta que junta los recuentos de todas las comprobaciones en una sola tabla de resultados",
+    "tabla_priorizacion": "Tabla con columnas Problema, Gravedad, Impacto en el negocio, Cómo se corrige",
+    "plan_de_limpieza": "Orden recomendado para arreglar los problemas, empezando por los que bloquean a los demás"
+  },
+  "restricciones": [
+    "Solo SELECT: la limpieza se propone, no se ejecuta",
+    "Cada consulta debe devolver ejemplos concretos, no solo un número",
+    "Incluir LIMIT en las consultas que puedan devolver miles de filas"
+  ],
+  "criterios_calidad": [
+    "Las comprobaciones reflejan las reglas de negocio indicadas, no solo comprobaciones genéricas"
+  ]
+}

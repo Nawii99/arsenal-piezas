@@ -1,0 +1,44 @@
+{
+  "tarea": "Diseña el catálogo de herramientas de mi servidor MCP: nombres, descripciones, esquemas de entrada, formato de salida y errores, listo para que un desarrollador lo implemente",
+  "contexto": {
+    "sistema": "[SISTEMA QUE SE CONECTA]",
+    "acciones_que_quiero": "[LISTA EN LENGUAJE NORMAL DE LO QUE DEBE PODER HACER]",
+    "datos_disponibles": "[TABLAS, CAMPOS O ENDPOINTS QUE EXISTEN]",
+    "usuarios_del_agente": "[QUIÉN LE HABLARÁ AL AGENTE]"
+  },
+  "reglas_de_diseno": [
+    "Un nombre por herramienta en verbo más objeto, en minúsculas y con guion bajo",
+    "Cada herramienta hace una cosa: mejor pocas herramientas claras que muchas parecidas",
+    "Ninguna herramienta devuelve volcados enormes: siempre paginación o límite y resumen",
+    "Los parámetros llevan tipo, si son obligatorios y un ejemplo real",
+    "Las acciones que modifican datos son distinguibles a simple vista y avisan de que son irreversibles",
+    "Los errores se devuelven en lenguaje claro y dicen qué hacer a continuación",
+    "Evita nombres que se solapen entre sí para que el agente no dude cuál elegir"
+  ],
+  "instrucciones": [
+    "Agrupa las acciones pedidas y propón el catálogo mínimo que las cubre",
+    "Para cada herramienta escribe una descripción de una o dos frases pensada para que el modelo sepa cuándo usarla y cuándo no",
+    "Define el esquema de entrada con nombre de parámetro, tipo, obligatorio y ejemplo",
+    "Define qué devuelve, con un ejemplo de respuesta corta",
+    "Lista de dos a cuatro errores previstos por herramienta con su mensaje",
+    "Señala qué herramientas conviene dejar fuera de la primera versión"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con fichas",
+    "ficha_por_herramienta": [
+      "Nombre",
+      "Para qué sirve (una frase)",
+      "Cuándo usarla y cuándo no",
+      "Lee o escribe",
+      "Tabla de parámetros: Nombre | Tipo | Obligatorio | Ejemplo",
+      "Qué devuelve, con ejemplo",
+      "Errores previstos y mensaje al usuario"
+    ],
+    "al_final": ["Tabla resumen del catálogo", "Herramientas descartadas y motivo"]
+  },
+  "criterios_calidad": [
+    "Todas las acciones pedidas quedan cubiertas y ninguna herramienta duplica a otra",
+    "Un desarrollador podría empezar a programar sin hacer más preguntas",
+    "Las descripciones distinguen bien entre herramientas parecidas"
+  ]
+}

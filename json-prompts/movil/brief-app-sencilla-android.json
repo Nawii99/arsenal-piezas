@@ -1,0 +1,32 @@
+{
+  "tarea": "Genera un tutorial completo para crear una app sencilla que funcione en el navegador de un móvil Android",
+  "quien_lo_pide": {
+    "nivel": "cero, no he programado nunca",
+    "herramientas": ["ordenador con Claude Code", "móvil Android con Chrome"],
+    "idioma": "español de España, tuteando"
+  },
+  "app": {
+    "tipo": "[QUIZ / LISTA DE TAREAS / CONTADOR / JUEGO DE MEMORIA]",
+    "nombre": "[NOMBRE DE LA APP]",
+    "para_que_la_quiero": "[EXPLÍCALO EN UNA FRASE]",
+    "requisitos": {
+      "un_solo_archivo_html": true,
+      "funciona_sin_internet": true,
+      "guarda_los_datos_al_cerrar": true,
+      "botones_grandes_para_dedo": true
+    }
+  },
+  "formato_de_respuesta": {
+    "primero": "lista de pasos, una frase por paso",
+    "codigo": "completo y de una pieza, nunca a trozos",
+    "explicacion": "qué hace cada bloque, una frase por bloque, sin jerga",
+    "final": "cómo abrirla en el móvil y cómo fijarla en la pantalla de inicio",
+    "practica": "tres cambios fáciles que pueda hacer yo, con la línea exacta"
+  },
+  "prohibido": [
+    "dar el código por partes",
+    "usar librerías que haya que instalar",
+    "dar por hecho que sé programar",
+    "proponer publicar en Google Play como primer paso"
+  ]
+}

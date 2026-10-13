@@ -1,0 +1,49 @@
+{
+  "tarea": "Escribe el protocolo para cuando un cliente anuncia que se va: preguntas para saber el motivo real, alternativas que puedo ofrecer, cuándo dejarle marchar y cómo cerrar la relación bien.",
+  "contexto": {
+    "servicio": "[QUÉ LE PRESTO Y CADA CUÁNTO PAGA]",
+    "importe_mensual": "[IMPORTE]",
+    "antiguedad": "[TIEMPO QUE LLEVA CONMIGO]",
+    "condiciones": "[PERMANENCIA, PREAVISO, PENALIZACIONES SI LAS HAY]"
+  },
+  "entradas": {
+    "lo_que_ha_dicho": "[SU MENSAJE LITERAL DE BAJA]",
+    "historial": "[INCIDENCIAS, RETRASOS, QUEJAS, CAMBIOS DE PERSONA DE CONTACTO]",
+    "opciones_que_puedo_ofrecer": "[PAUSA, PLAN MÁS PEQUEÑO, CAMBIO DE ALCANCE, CAMBIO DE PERSONA, AJUSTE DE PRECIO]"
+  },
+  "metodo": [
+    "1. Responde en menos de 24 horas y sin discutir: agradecer el aviso y pedir 15 minutos para entender qué ha pasado.",
+    "2. Averigua a cuál de estos cuatro grupos pertenece: precio, resultados que no llegan, trato o servicio, o cambio en su negocio que nada tiene que ver conmigo.",
+    "3. Usa tres preguntas: qué esperaba y no ha pasado, desde cuándo lo piensa, y qué tendría que ser distinto para quedarse.",
+    "4. Ofrece solución solo si el motivo se puede arreglar; para el motivo cambio en su negocio, ofrece pausa en vez de rebaja.",
+    "5. Nunca ofrezcas de entrada una bajada de precio: primero cambia el alcance o el formato.",
+    "6. Si se va, cierra bien: entrega de materiales o accesos, resumen de lo hecho, factura al día y puerta abierta con fecha de recontacto.",
+    "7. Anota el motivo en una lista de bajas para ver el patrón cada trimestre."
+  ],
+  "errores_a_evitar": [
+    "Contestar a la defensiva o justificarte punto por punto.",
+    "Ofrecer un descuento en el primer mensaje: el cliente aprende a amenazar con irse.",
+    "Sacar la letra pequeña de la permanencia como primer argumento.",
+    "Retener a un cliente que te cuesta dinero o que te trata mal.",
+    "Enterarte del problema el día de la baja por no preguntar antes."
+  ],
+  "formato_salida": {
+    "respuesta_inmediata": "Mensaje de 60 palabras para contestar hoy mismo.",
+    "guion_llamada": "Las preguntas en orden y qué escuchar en cada respuesta.",
+    "arbol": "Cuatro motivos con la oferta concreta de cada uno y con lo que no hay que ofrecer.",
+    "despedida": "Mensaje de cierre elegante y checklist de entrega final.",
+    "prevencion": "Tres señales de aviso que debo vigilar en los clientes que siguen, con qué hacer al detectarlas."
+  },
+  "restricciones": [
+    "Español de España, tuteo o usted según la relación, sin dramatismo ni reproches.",
+    "Ninguna oferta puede saltarse las condiciones firmadas que te he dado.",
+    "Nada de retener con culpabilidad ni con trabas para darse de baja."
+  ],
+  "criterios_calidad": [
+    "El primer mensaje no intenta vender nada, solo entender.",
+    "Hay al menos un motivo en el que la recomendación es dejarle ir.",
+    "Las alternativas cambian el servicio, no solo el precio.",
+    "El cierre deja al cliente en condiciones de recomendarme aunque se vaya."
+  ],
+  "si_faltan_datos": "Si no te paso el historial, pídeme dos datos: última incidencia y última vez que hablamos sin que hubiera problema."
+}

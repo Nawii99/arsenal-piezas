@@ -1,0 +1,37 @@
+{
+  "tarea": "Analizar un conjunto de reseñas y devolver patrones, causas y un plan de mejora priorizado",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "sector": "[SECTOR]",
+    "periodo": "[DESDE / HASTA]",
+    "nota_media_actual": "[EJ: 4,2]"
+  },
+  "entradas": {
+    "resenas": "[PEGA AQUÍ LAS RESEÑAS, UNA POR LÍNEA, CON FECHA Y ESTRELLAS]"
+  },
+  "proceso": [
+    "Etiqueta cada reseña por tema: producto, trato, tiempos, precio, limpieza, reservas, posventa, instalaciones",
+    "Cuenta cuántas veces aparece cada tema en positivo y en negativo",
+    "Compara el primer tercio del periodo con el último para ver si algo empeora",
+    "Distingue quejas estructurales (se repiten) de incidencias sueltas",
+    "Localiza qué elogian más: eso es tu argumento de venta real, no el que tú crees",
+    "Propón acciones concretas y baratas antes que inversiones grandes"
+  ],
+  "restricciones": [
+    "No inventes datos que no estén en las reseñas y avisa si la muestra es pequeña",
+    "Nada de porcentajes falsamente precisos: usa cifras redondas y di sobre cuántas reseñas",
+    "Máximo 3 prioridades: si todo es prioritario, no hay plan"
+  ],
+  "formato_salida": {
+    "resumen": "5 conclusiones en una frase cada una",
+    "tabla_temas": "Tema | Menciones positivas | Menciones negativas | Tendencia",
+    "citas": "2 citas literales por tema, la mejor y la peor",
+    "top_3_arreglar": "Problema | Causa probable | Acción concreta | Coste estimado bajo/medio/alto | Responsable",
+    "argumentos_de_venta": "3 frases que puedes usar en tu web sacadas de lo que más elogian"
+  },
+  "criterios_calidad": [
+    "Cada conclusión se apoya en al menos dos reseñas distintas",
+    "Las acciones son ejecutables esta misma semana",
+    "Señala explícitamente lo que las reseñas no permiten saber"
+  ]
+}

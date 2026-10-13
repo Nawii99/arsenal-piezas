@@ -1,0 +1,39 @@
+{
+  "tarea": "Diseñar el árbol de autoservicio que guía a un cliente desde su duda hasta la respuesta, con reglas claras de derivación a persona",
+  "contexto": {
+    "canal": "[CHAT DE LA WEB / WHATSAPP BUSINESS / PÁGINA DE AYUDA]",
+    "horario_humano": "[CUÁNDO HAY ALGUIEN DETRÁS]",
+    "volumen": "[CONSULTAS APROXIMADAS AL DÍA]"
+  },
+  "entradas": {
+    "categorias_de_consulta": "[LISTA LOS TIPOS DE CONSULTA QUE RECIBES]",
+    "respuestas_disponibles": "[QUÉ RESPUESTAS Y ENLACES YA TIENES]",
+    "casos_que_exigen_persona": "[EJ: RECLAMACIONES, COBROS DUPLICADOS, DATOS PERSONALES]",
+    "datos_que_puedes_pedir": "[EJ: NÚMERO DE PEDIDO, EMAIL, MATRÍCULA]"
+  },
+  "procedimiento": [
+    "Definir un primer menú de 4 a 6 opciones como máximo, escritas en lenguaje del cliente",
+    "Bajar cada opción a un segundo nivel y, solo si hace falta, a un tercero: nunca más de tres niveles",
+    "En cada hoja del árbol indicar la respuesta exacta que se da y el enlace o dato que se entrega",
+    "Definir la salida a persona en cada rama, con el mensaje de traspaso y los datos que se recogen antes",
+    "Añadir la ruta de emergencia: qué pasa si el cliente no entiende el menú o escribe algo libre",
+    "Marcar qué ramas conviene medir para saber si el autoservicio funciona"
+  ],
+  "restricciones": [
+    "Ninguna ruta puede dejar al cliente en un callejón sin salida",
+    "Siempre debe existir la opción de hablar con una persona, incluso fuera de horario",
+    "Los casos_que_exigen_persona nunca se responden de forma automática",
+    "Opciones de menú de 4 palabras como máximo"
+  ],
+  "formato_salida": {
+    "tipo": "esquema numerado por niveles y tabla de derivación",
+    "esquema": "1, 1.1, 1.1.1 con el texto literal de cada opción y de cada respuesta",
+    "tabla_derivacion": ["Rama", "Motivo de derivación", "Datos a recoger antes", "Mensaje de traspaso"],
+    "extras": ["Mensajes de bienvenida, de no te he entendido y de fuera de horario"]
+  },
+  "criterios_calidad": [
+    "Cualquier duda de las categorías declaradas encuentra su rama",
+    "Ninguna rama supera los tres clics hasta la respuesta",
+    "Las derivaciones llegan al equipo con contexto suficiente para no repreguntar"
+  ]
+}

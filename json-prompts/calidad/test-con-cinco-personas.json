@@ -1,0 +1,57 @@
+{
+  "tarea": "Preparar y analizar una prueba de usabilidad con cinco personas reales sobre una web, una tienda o un proceso de reserva.",
+  "contexto": {
+    "quien_lo_usa": "Persona sin perfil tecnico que ya tiene visitas pero pocas conversiones y no sabe por que.",
+    "momento": "Antes de invertir mas en publicidad o de rehacer la pagina entera por intuicion.",
+    "por_que_cinco": "Con cinco personas ya aparecen la mayoria de los tropiezos gordos y repetidos."
+  },
+  "entradas": {
+    "que_se_prueba": "[URL O DESCRIPCION DEL PROCESO A PROBAR]",
+    "accion_principal": "[COMPRAR, PEDIR PRESUPUESTO, RESERVAR CITA, DESCARGAR]",
+    "perfil_de_los_probadores": "[EDAD, OFICIO, SI CONOCEN O NO TU NEGOCIO]",
+    "donde_se_hace": "[EN PERSONA, POR VIDEOLLAMADA CON PANTALLA COMPARTIDA]",
+    "tiempo_por_persona": "[15, 20 O 30 MINUTOS]"
+  },
+  "pasos": [
+    "1. Escribe tres tareas concretas y realistas que la persona debe intentar sola, redactadas como un encargo y no como una instruccion paso a paso.",
+    "2. Prepara el guion de bienvenida: se prueba la pagina, no a la persona, y no pasa nada por equivocarse.",
+    "3. Pide que hable en voz alta todo el rato: que busca, que espera y que le extraña.",
+    "4. Durante la prueba, calla: solo puedes responder con que harias tu ahora y por que.",
+    "5. Anota tres cosas por tarea: si la completa, cuanto tarda y donde duda o se equivoca.",
+    "6. Al terminar, haz solo tres preguntas: que hacia esta pagina, que te ha resultado raro, y a quien se lo recomendarias.",
+    "7. Junta los cinco resultados y aplica la regla: si tres o mas tropiezan en lo mismo, se arregla si o si.",
+    "8. Traduce cada tropiezo en un cambio concreto y en el orden en que hacerlos."
+  ],
+  "que_mirar": [
+    "Donde se para el raton o el dedo sin decidirse.",
+    "Palabras de tu web que la persona no entiende o interpreta al reves.",
+    "Si busca el precio y no lo encuentra rapido.",
+    "Si vuelve atras o abre el buscador porque se ha perdido.",
+    "Si desconfia en algun punto y en cual exactamente.",
+    "Cuantos pasos hace de mas respecto a lo previsto."
+  ],
+  "errores_tipicos": [
+    "Probar con amigos que ya conocen el negocio y te quieren agradar.",
+    "Ayudar en cuanto la persona duda, que es justo el dato que buscabas.",
+    "Preguntar te gusta en vez de mirar si consigue hacerlo.",
+    "Grabar y no analizar, o anotar frases sueltas sin agrupar por problema.",
+    "Cambiar la pagina despues de la primera persona y perder la comparacion."
+  ],
+  "restricciones": [
+    "Las tareas no pueden contener el nombre exacto del boton que hay que pulsar.",
+    "Pide permiso antes de grabar y no recojas datos personales innecesarios.",
+    "No mas de tres tareas por sesion."
+  ],
+  "formato_salida": {
+    "bloque_1": "Guion completo de la sesion, listo para leer en voz alta.",
+    "bloque_2": "Hoja de anotacion con columnas: Persona | Tarea | Completada | Tiempo | Donde tropieza | Frase textual.",
+    "bloque_3": "Tabla resumen de tropiezos con cuantas personas lo sufrieron y su gravedad.",
+    "bloque_4": "Lista de arreglos ordenada: primero los que sufren tres o mas personas y cuestan poco."
+  },
+  "criterios_calidad": [
+    "Las tareas se entienden sin explicacion adicional.",
+    "El resumen distingue lo que la gente hizo de lo que la gente opino.",
+    "Cada arreglo se puede empezar el mismo dia.",
+    "No se propone rehacer la web entera por un tropiezo de una sola persona."
+  ]
+}

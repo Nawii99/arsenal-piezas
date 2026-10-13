@@ -1,0 +1,33 @@
+{
+  "tarea": "Diagnosticar por qué ha dejado de funcionar la integración entre [TU SISTEMA] y [SISTEMA EXTERNO] y proponer solución",
+  "sintomas": {
+    "que_pasa": "[DESCRIBE EL FALLO COMO LO VES: no entran pedidos, se duplican, tarda muchísimo]",
+    "desde_cuando": "[FECHA Y HORA APROXIMADA]",
+    "afecta_a_todos": "[A TODOS LOS CASOS O SOLO A ALGUNOS, Y A CUÁLES]",
+    "que_cambio_antes": "[DESPLIEGUE, CAMBIO DE PLAN, RENOVACIÓN DE CLAVES, AVISO DEL PROVEEDOR, NADA QUE SEPAS]"
+  },
+  "evidencias": {
+    "errores": "[PEGA LOS MENSAJES DE ERROR TAL CUAL]",
+    "logs": "[PEGA UN TROZO DE LOG DE UNA LLAMADA QUE FALLA]",
+    "estado_proveedor": "[QUÉ DICE SU PÁGINA DE ESTADO O SU SOPORTE]"
+  },
+  "metodo": [
+    "Separar si el fallo está en tu lado, en la red o en el proveedor, usando el código de respuesta como primera pista",
+    "Revisar por este orden: credenciales caducadas, certificado, límites de uso alcanzados, cambio de versión de la API, cambio en el formato de datos, cuota agotada, IP no autorizada",
+    "Para cada hipótesis, indicar la comprobación exacta que la confirma o la descarta",
+    "No dar por buena una causa sin una comprobación que la respalde"
+  ],
+  "formato_salida": {
+    "hipotesis": "Máximo 5 causas ordenadas por probabilidad, cada una con su comprobación y qué verías si fuera esa",
+    "comandos": "Comandos o pasos concretos para comprobar cada hipótesis",
+    "apaño": "Qué hacer ahora para que el negocio siga funcionando mientras se arregla",
+    "arreglo": "Solución definitiva y cómo verificar que ha quedado bien",
+    "prevencion": "Alarma o comprobación que habría avisado antes de que lo notaran los clientes",
+    "mensaje_a_clientes": "Aviso breve por si hay que informar, solo si procede"
+  },
+  "restricciones": [
+    "No proponer tocar producción sin decir antes cómo volver atrás",
+    "Si faltan datos para decidir, pedirlos en una lista corta antes de concluir",
+    "Nada de reinstalar o reescribir todo como primera opción"
+  ]
+}

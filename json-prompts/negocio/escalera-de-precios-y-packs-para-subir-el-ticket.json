@@ -1,0 +1,37 @@
+{
+  "tarea": "Disenar una escalera de precios de tres niveles y los packs asociados para aumentar el valor medio del pedido de una tienda online",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "producto_estrella": "[PRODUCTO QUE MAS VENDES]",
+    "precio_actual_eur": "[PRECIO CON IVA]",
+    "coste_unitario_eur": "[COSTE COMPLETO]",
+    "otros_productos_disponibles": "[LISTA DE PRODUCTOS QUE COMBINAN BIEN]",
+    "ticket_medio_actual_eur": "[IMPORTE MEDIO POR PEDIDO]",
+    "tipo_de_cliente": "[QUIEN TE COMPRA Y QUE BUSCA]"
+  },
+  "pasos": [
+    "Definir tres niveles: entrada, recomendado y premium, con el recomendado como opcion que quieres que elijan",
+    "Asignar a cada nivel un contenido concreto, un precio y un margen, no solo mas cantidad",
+    "Colocar el precio del nivel entrada como ancla baja y el premium como ancla alta que hace razonable al del medio",
+    "Disenar 3 packs con ahorro visible para el cliente pero manteniendo o mejorando el margen en euros",
+    "Escribir el argumento de venta de cada nivel en una frase orientada al beneficio, no a la ficha tecnica",
+    "Proponer el orden de aparicion en la web y que nivel se marca como mas vendido"
+  ],
+  "restricciones": [
+    "El salto de precio entre niveles no debe superar el doble del nivel anterior",
+    "Cada pack debe tener margen en euros igual o superior al del producto suelto",
+    "Nada de descuentos que canibalicen el producto principal: el pack anade, no rebaja",
+    "Maximo tres niveles para no bloquear la decision del cliente"
+  ],
+  "formato_salida": {
+    "tabla_niveles": "Nivel | Que incluye | Precio con IVA | Coste | Margen EUR | Margen % | Para quien es",
+    "tabla_packs": "Pack | Contenido | Precio | Ahorro visible para el cliente | Margen EUR",
+    "textos": "Nombre comercial y frase de venta de cada nivel y cada pack",
+    "puesta_en_marcha": "5 pasos para montarlo en la ficha de producto y en el carrito"
+  },
+  "criterios_calidad": [
+    "El nivel recomendado es el que mas margen en euros aporta",
+    "El ahorro comunicado en cada pack es real y comprobable con los precios sueltos",
+    "Los nombres no usan tecnicismos ni palabras en ingles innecesarias"
+  ]
+}

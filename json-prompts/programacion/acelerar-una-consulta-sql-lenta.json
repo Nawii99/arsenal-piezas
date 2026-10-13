@@ -1,0 +1,38 @@
+{
+  "tarea": "Diagnosticar por qué una consulta SQL es lenta y devolver una versión optimizada con los índices necesarios",
+  "entradas": {
+    "consulta_actual": "[PEGA AQUÍ TU CONSULTA SQL COMPLETA]",
+    "motor_sql": "[POSTGRESQL / MYSQL / SQL SERVER / BIGQUERY]",
+    "tiempo_actual": "[CUÁNTO TARDA HOY]",
+    "objetivo": "[CUÁNTO TE VALDRÍA, EJ: MENOS DE 2 SEGUNDOS]",
+    "tamano_tablas": "[FILAS APROXIMADAS DE CADA TABLA IMPLICADA]",
+    "indices_existentes": "[ÍNDICES QUE YA TIENES, O 'NO LO SÉ']",
+    "plan_ejecucion": "[PEGA EL EXPLAIN / EXPLAIN ANALYZE SI LO TIENES, O 'NO LO TENGO']"
+  },
+  "procedimiento": [
+    "1. Si no hay plan de ejecución, indicar el comando exacto para obtenerlo en ese motor",
+    "2. Identificar los cuellos de botella: escaneos completos, ordenaciones grandes, JOIN sin índice, funciones aplicadas sobre columnas filtradas",
+    "3. Reescribir la consulta manteniendo exactamente el mismo resultado",
+    "4. Proponer índices concretos con su CREATE INDEX y el orden de columnas justificado",
+    "5. Estimar el impacto de cada cambio como alto, medio o bajo, sin prometer porcentajes"
+  ],
+  "reglas_de_oficio": [
+    "No filtrar con funciones sobre la columna indexada (evitar WHERE YEAR(fecha) = 2025)",
+    "Sustituir subconsultas correlacionadas por JOIN o agregaciones previas cuando sea posible",
+    "Revisar SELECT DISTINCT: suele tapar un JOIN que duplica filas",
+    "Filtrar y agregar lo antes posible, y traer solo las columnas que se usan",
+    "Recordar que cada índice acelera lecturas pero ralentiza escrituras"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Lista de causas ordenadas por impacto, en lenguaje llano",
+    "2_sql_optimizado": "Consulta reescrita en bloque de código",
+    "3_indices": "Sentencias CREATE INDEX con una línea de justificación cada una",
+    "4_verificacion": "Cómo comprobar que el resultado es idéntico al original",
+    "5_riesgos": "Qué puede empeorar con estos cambios y a qué vigilar"
+  },
+  "criterios_calidad": [
+    "El resultado de la consulta optimizada es idéntico al de la original",
+    "Cada índice propuesto está ligado a un filtro, JOIN u ORDER BY concreto de la consulta",
+    "No se recomienda ampliar el servidor antes de agotar los cambios de consulta e índices"
+  ]
+}

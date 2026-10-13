@@ -1,0 +1,37 @@
+{
+  "tarea": "Crea el diccionario de métricas de mi empresa: una definición única, clara y sin ambigüedades para cada indicador que usamos",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "actividad": "[QUÉ VENDES Y A QUIÉN]",
+    "herramientas_de_origen": "[TPV, SHOPIFY, FACTURACIÓN, CRM, EXCEL...]",
+    "personas_implicadas": "[QUIÉN CONSULTA O REPORTA CADA MÉTRICA]"
+  },
+  "entradas": {
+    "metricas_a_definir": "[FACTURACIÓN, VENTAS NETAS, MARGEN, CLIENTE ACTIVO, PEDIDO, TASA DE CONVERSIÓN, COSTE POR CLIENTE...]",
+    "como_se_calculan_hoy": "[EXPLICA COMO LO HACE CADA PERSONA O DEPARTAMENTO]",
+    "discrepancias_conocidas": "[DÓNDE NO CUADRAN LAS CIFRAS]"
+  },
+  "pasos": [
+    "Para cada métrica escribe una definición en una frase que no admita dos lecturas",
+    "Deja explícito qué se incluye y qué se excluye: IVA, devoluciones, envíos, descuentos, pedidos anulados, pruebas internas",
+    "Fija la fecha de referencia: fecha de pedido, de cobro o de entrega, y avisa de cómo cambia el resultado según cuál elijas",
+    "Señala las discrepancias que explican los descuadres actuales y propón cuál debe ser la versión oficial",
+    "Asigna responsable y frecuencia de revisión a cada métrica"
+  ],
+  "formato_salida": {
+    "tabla": "Columnas: métrica | definición en una frase | fórmula | incluye | excluye | fecha de referencia | fuente oficial | responsable",
+    "anexo_1": "Errores típicos al calcularla y cómo detectarlos",
+    "anexo_2": "Métricas parecidas que se confunden entre sí y cómo distinguirlas",
+    "anexo_3": "Reglas de la casa: redondeo, moneda, semanas de lunes a domingo, cierre de mes"
+  },
+  "restricciones": [
+    "Una sola definición oficial por métrica, nunca dos versiones válidas",
+    "Lenguaje llano: cualquiera del equipo debe entenderlo sin formación previa",
+    "Si una métrica no se puede calcular con las fuentes indicadas, márcala como pendiente y di qué falta"
+  ],
+  "criterios_calidad": [
+    "Dos personas distintas calculan la misma cifra siguiendo el documento y les sale lo mismo",
+    "Cada definición cabe en dos líneas",
+    "Las discrepancias actuales quedan explicadas, no escondidas"
+  ]
+}

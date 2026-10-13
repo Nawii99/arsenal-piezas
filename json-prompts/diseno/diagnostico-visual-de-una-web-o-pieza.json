@@ -1,0 +1,36 @@
+{
+  "tarea": "Diagnosticar los problemas de tipografia, color y espaciado de una pieza existente y priorizar los arreglos",
+  "contexto": {
+    "pieza": "[WEB, LANDING, CARTEL, PDF O POST; ADJUNTA CAPTURA SI PUEDES]",
+    "descripcion": "[DESCRIBE LO QUE SE VE SI NO ADJUNTAS IMAGEN]",
+    "colores_usados": "[HEX QUE APARECEN]",
+    "fuentes_usadas": "[NOMBRES O DESCRIPCION]",
+    "objetivo_de_la_pieza": "[QUE QUIERES QUE HAGA QUIEN LA VE]",
+    "publico": "[A QUIEN VA DIRIGIDA]"
+  },
+  "proceso": [
+    "Describe primero, sin juzgar, que ves: fuentes, colores, tamanos, espacios",
+    "Comprueba el orden de lectura: que se ve primero, segundo y tercero, y si coincide con el objetivo",
+    "Revisa los sospechosos habituales: mas de dos familias tipograficas, mas de cuatro tamanos, texto de lectura por debajo de 16 px, lineas de mas de 90 caracteres, interlineado corto",
+    "Revisa el color: cuantos colores hay, si el acento se usa en mas de un sitio, contraste del texto y colores que compiten",
+    "Revisa el espaciado: margenes desiguales, elementos relacionados separados y elementos distintos pegados",
+    "Ordena los hallazgos por impacto en la confianza y la conversion"
+  ],
+  "restricciones": [
+    "Cada problema debe llevar su arreglo con valor concreto, no un consejo generico",
+    "Maximo 12 hallazgos para que sea abarcable",
+    "Nada de rediseno completo: la meta es arreglar lo que hay",
+    "Di tambien las 3 cosas que ya estan bien y no hay que tocar"
+  ],
+  "formato_salida": {
+    "tipo": "informe priorizado",
+    "columnas": ["Prioridad", "Que falla", "Por que importa", "Arreglo concreto con valores", "Esfuerzo"],
+    "extra": ["Los 3 arreglos que hacer hoy mismo", "Que esta bien y no debes tocar"]
+  },
+  "criterios_calidad": [
+    "Cero comentarios de gusto personal: todo se apoya en una regla explicada",
+    "Los arreglos incluyen numeros o codigos exactos",
+    "Se puede empezar a aplicar en menos de una hora"
+  ],
+  "tono": "Honesto y util, sin sermonear ni adornar"
+}

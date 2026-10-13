@@ -1,0 +1,38 @@
+{
+  "tarea": "Escribe las pruebas automáticas con pytest de este script de Python para poder cambiarlo sin romperlo",
+  "entradas": {
+    "codigo": "[PEGA AQUÍ EL SCRIPT O EL MÓDULO]",
+    "que_hace": "[EXPLICA EN DOS FRASES QUÉ HACE]",
+    "casos_que_me_preocupan": "[EJ. FICHERO VACÍO, FECHAS RARAS, IMPORTES NEGATIVOS]"
+  },
+  "procedimiento": [
+    "Lista las funciones y di cuáles merecen prueba y cuáles no",
+    "Señala el código difícil de probar y cómo separarlo (leer fichero aparte de calcular)",
+    "Escribe una prueba por comportamiento, con un nombre que describa lo que verifica"
+  ],
+  "cubre_estos_casos": [
+    "Camino normal con datos correctos",
+    "Entradas vacías o ficheros sin filas",
+    "Valores límite: cero, negativos, fechas fuera de rango",
+    "Tipos incorrectos y campos que faltan",
+    "Errores esperados comprobados con pytest.raises",
+    "Textos con acentos, eñes y caracteres raros"
+  ],
+  "requisitos_tecnicos": [
+    "pytest y ficheros temporales con tmp_path, sin tocar datos reales",
+    "Datos de ejemplo con fixtures, sin depender de internet ni de la fecha de hoy",
+    "Cada prueba independiente: puede ejecutarse sola y en cualquier orden",
+    "Sustitutos solo para lo externo: red, email o reloj"
+  ],
+  "formato_salida": {
+    "1_mapa": "Tabla con Función, Riesgo y Pruebas propuestas",
+    "2_codigo": "Fichero test_[NOMBRE].py completo",
+    "3_ejecucion": "Comando para instalar pytest, lanzarlo y cómo leer el resultado",
+    "4_pendiente": "Qué no queda cubierto y por qué"
+  },
+  "criterios_calidad": [
+    "Las pruebas fallan si rompo una función a propósito",
+    "No dependen de mi ordenador, de rutas concretas ni de la hora",
+    "El nombre de la prueba explica el fallo sin abrir el código"
+  ]
+}

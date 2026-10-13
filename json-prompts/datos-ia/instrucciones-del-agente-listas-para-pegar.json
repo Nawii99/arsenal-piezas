@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribir el texto de instrucciones (mensaje de sistema) del agente [NOMBRE DEL AGENTE], listo para copiar y pegar",
+  "contexto": {
+    "mision": "[QUE RESUELVE EL AGENTE EN UNA FRASE]",
+    "a_quien_sirve": "[CLIENTES, EQUIPO INTERNO, A MI MISMO...]",
+    "pasos_que_debe_seguir": "[PASOS EN ORDEN, TAL Y COMO LOS HARIA UNA PERSONA]",
+    "prohibiciones": "[LO QUE NO DEBE HACER NUNCA]",
+    "formato_de_respuesta": "[EMAIL, FICHA, TABLA, MENSAJE CORTO...]",
+    "idioma_y_trato": "español de España, [TUTEO O USTED]"
+  },
+  "estructura_obligatoria_del_texto": [
+    "Identidad: quien es y para quien trabaja, en 2 lineas",
+    "Objetivo: el resultado concreto que debe entregar",
+    "Procedimiento: pasos numerados, cada uno con una accion verificable",
+    "Que hacer si falta informacion: preguntar en vez de inventar, con maximo de preguntas",
+    "Prohibiciones explicitas, en negativo y sin ambiguedad",
+    "Formato de salida exacto, con las secciones y su orden",
+    "Autorrevision final: 3 comprobaciones antes de responder"
+  ],
+  "reglas_de_redaccion": [
+    "Frases cortas y en imperativo: haz, comprueba, no inventes",
+    "Nada de adjetivos vacios como excelente, profesional o de calidad",
+    "Cada regla debe poder responderse con si o no al revisarla",
+    "Entre 250 y 500 palabras: si sobra, quita lo generico, no lo concreto",
+    "No incluir datos sensibles ni contraseñas dentro de las instrucciones"
+  ],
+  "formato_salida": {
+    "bloque_1": "El texto de instrucciones final, sin comentarios ni explicaciones alrededor",
+    "bloque_2": "Lista de las decisiones que has tomado y por que, en 5 puntos",
+    "bloque_3": "3 mensajes de prueba con los que puedo comprobar si el agente se comporta"
+  },
+  "criterios_calidad": [
+    "Si borro cualquier frase del texto, el agente empeora de forma evidente",
+    "No hay dos reglas que se contradigan",
+    "Un desconocido entiende que hace el agente leyendo solo las 2 primeras lineas"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "tarea": "Definir el proceso de retoque de una foto de producto para publicarla en una tienda online cumpliendo las normas del canal",
+  "contexto": {
+    "producto": "[QUÉ ES Y DE QUÉ MATERIAL: CRISTAL, TELA, METAL, PLÁSTICO, MADERA]",
+    "canal": "[AMAZON / SHOPIFY / WOOCOMMERCE / ETSY / WEB PROPIA / CATÁLOGO PDF]",
+    "fondo_deseado": "[BLANCO PURO / GRIS SUAVE / AMBIENTADO]",
+    "software": "[PHOTOSHOP / AFFINITY / GIMP / CANVA / HERRAMIENTA DE RECORTE AUTOMÁTICO]"
+  },
+  "entradas": {
+    "defectos_visibles": "[POLVO, HUELLAS, ARRUGAS, REFLEJOS, ETIQUETAS, CABLES, SOMBRAS SUCIAS]",
+    "numero_de_fotos": "[CUÁNTAS FOTOS DEL MISMO PRODUCTO]",
+    "color_real_del_producto": "[DESCRÍBELO O DA EL CÓDIGO DE COLOR SI LO TIENES]"
+  },
+  "procedimiento": [
+    "Enderezar y nivelar el producto antes de recortar nada",
+    "Limpiar polvo, huellas y motas con pincel corrector al 100% de zoom",
+    "Recortar el fondo con selección y refinar bordes; en pelo, cristal o transparencias, revisar a mano",
+    "Reconstruir una sombra de contacto suave para que el producto no flote",
+    "Ajustar el color al del producto real, comparándolo con la pieza física o con su código de color",
+    "Igualar encuadre y tamaño del producto entre todas las fotos de la ficha",
+    "Exportar al tamaño y peso que exige el canal"
+  ],
+  "reglas_del_canal": "Indica los requisitos concretos del canal elegido: fondo, márgenes, proporción del producto en el encuadre, lado mínimo en píxeles y formato",
+  "errores_a_evitar": [
+    "Recorte con borde blanco o dentado alrededor del producto",
+    "Producto flotando sin sombra o con sombra dura falsa",
+    "Blanquear el fondo tanto que se coman los bordes claros del producto",
+    "Cambiar el color del producto respecto al real y provocar devoluciones",
+    "Subir imágenes de 6 MB que hunden la velocidad de la web"
+  ],
+  "formato_salida": {
+    "bloque_1": "Checklist de retoque en orden, con la herramienta de cada paso",
+    "bloque_2": "Tabla de exportación: canal, medidas en píxeles, formato, peso máximo y nombre de archivo sugerido",
+    "bloque_3": "Revisión final: 5 comprobaciones antes de subir"
+  },
+  "criterios_calidad": [
+    "El producto se ve igual en pantalla que en la mano",
+    "Todas las fotos de la ficha mantienen el mismo tamaño relativo y el mismo fondo"
+  ]
+}

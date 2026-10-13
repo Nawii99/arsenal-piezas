@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar un requerimiento de cese en el uso no autorizado de marca, contenidos o imágenes propias, con plazo de retirada",
+  "entradas": {
+    "titular": "[TU NOMBRE O EMPRESA, NIF Y DOMICILIO]",
+    "infractor": "[NOMBRE, WEB, PERFIL O EMPRESA QUE ESTÁ COPIANDO]",
+    "que_copian": "[NOMBRE DE MARCA, LOGO, FOTOS, TEXTOS DE WEB, CATÁLOGO O CÓDIGO]",
+    "donde_lo_han_publicado": "[URLS, PERFILES O TIENDAS CONCRETAS]",
+    "prueba_de_titularidad": "[REGISTRO DE MARCA Y NÚMERO, FECHA DE PUBLICACIÓN, ORIGINALES, FACTURAS DEL FOTÓGRAFO]",
+    "fecha_de_deteccion": "[DD/MM/AAAA]",
+    "dano": "[CONFUSIÓN DE CLIENTES, PÉRDIDA DE VENTAS, USO EN ANUNCIOS]",
+    "plazo_retirada": "[DÍAS NATURALES]",
+    "quiero_ademas": "[RETIRADA / RETIRADA MÁS DISCULPA / RETIRADA MÁS COMPENSACIÓN]"
+  },
+  "pasos": [
+    "Identificar de forma exacta cada elemento copiado y su ubicación con URL y fecha de captura",
+    "Acreditar la titularidad con el dato aportado, sin dar por supuesto ningún registro",
+    "Explicar el perjuicio en términos comprensibles: confusión y aprovechamiento del trabajo ajeno",
+    "Requerir la retirada con plazo y pedir confirmación escrita de que se ha hecho",
+    "Anunciar los siguientes pasos: denuncia a la plataforma y acciones legales"
+  ],
+  "restricciones": [
+    "Si no hay marca registrada, no afirmar que la hay: hablar de nombre comercial usado desde una fecha",
+    "No pedir cantidades concretas de indemnización salvo que el usuario las indique",
+    "Tono firme y educado, sin descalificaciones ni amenazas de difusión pública",
+    "Máximo 400 palabras"
+  ],
+  "formato_salida": {
+    "carta": "texto para enviar por email y por burofax",
+    "version_corta": "mensaje de 6 líneas para el primer contacto por redes o formulario",
+    "pruebas": "lista de capturas y datos que debes guardar antes de enviar nada",
+    "via_plataforma": "pasos para reclamar por infracción en la plataforma donde esté publicado"
+  },
+  "criterios_calidad": [
+    "Cada elemento copiado aparece con su enlace y su prueba de origen",
+    "No se afirma ningún derecho que el usuario no haya acreditado",
+    "El plazo y la confirmación de retirada están escritos con claridad"
+  ],
+  "aviso_legal": "Orientativo; para acciones de marca o propiedad intelectual consulta con un abogado especializado"
+}

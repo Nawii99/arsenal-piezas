@@ -1,0 +1,38 @@
+{
+  "tarea": "Crear un componente de tarjeta reutilizable en HTML y CSS con sus variantes y sus estados",
+  "contexto": {
+    "que_muestra": "[PRODUCTO / SERVICIO / ARTICULO / TESTIMONIO]",
+    "donde_se_usa": "[EN UN LISTADO DE 3 POR FILA EN ESCRITORIO Y 1 EN MOVIL]",
+    "accion_principal": "[VER FICHA / COMPRAR / LEER MAS]"
+  },
+  "entradas": {
+    "campos": ["[IMAGEN]", "[TITULO]", "[DESCRIPCION CORTA]", "[PRECIO O DATO DESTACADO]", "[BOTON]"],
+    "color_principal": "[#HEXADECIMAL]",
+    "esquinas": "[REDONDEADAS 12px / RECTAS]"
+  },
+  "variantes": ["normal", "destacada", "compacta sin imagen", "no disponible"],
+  "estados": ["reposo", "raton encima", "foco con teclado", "cargando con esqueleto gris"],
+  "instrucciones": [
+    "Escribe una sola clase base y modificadores con guion doble, por ejemplo tarjeta--destacada",
+    "Todas las tarjetas de una fila deben quedar a la misma altura aunque el texto sea distinto",
+    "Recorta el titulo a dos lineas y la descripcion a tres con line-clamp, sin cortar palabras a medias",
+    "La imagen va con aspect-ratio y object-fit cover para que nunca se deforme",
+    "Toda la tarjeta clicable pero con un unico enlace real, para no repetir enlaces al leerla con lector de pantalla",
+    "El estado de foco debe verse con un contorno claro, nunca lo elimines"
+  ],
+  "restricciones": [
+    "HTML y CSS puros en un solo archivo, sin librerias",
+    "Sin alturas fijas en la tarjeta ni texto dentro de imagenes",
+    "Todos los colores y radios salen de variables CSS"
+  ],
+  "formato_salida": {
+    "1_codigo": "archivo HTML completo con la rejilla de ejemplo y las cuatro variantes visibles a la vez",
+    "2_tabla_de_variantes": "tabla con variante, cuando usarla y que cambia respecto a la normal",
+    "3_como_anadir_una_tarjeta": "el trozo de HTML minimo a copiar para meter una tarjeta nueva"
+  },
+  "criterios_calidad": [
+    "Con tres tarjetas de texto muy desigual la fila sigue cuadrada",
+    "Se puede recorrer con el tabulador y se ve siempre donde esta el foco",
+    "En movil las tarjetas se apilan sin que se salga nada"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "tarea": "Comparar comprar al contado, financiar o alquilar un activo concreto, con impacto en caja mes a mes, coste total y prueba de resistencia si baja el trabajo.",
+  "contexto": {
+    "negocio": "[QUÉ HACES Y PARA QUÉ NECESITAS EL EQUIPO]",
+    "urgencia": "[LO NECESITO YA / PUEDO ESPERAR MESES]",
+    "aviso": "El tratamiento fiscal exacto de amortizaciones, renting y deducciones lo confirma el gestor"
+  },
+  "entradas": {
+    "activo": "[QUÉ ES, PRECIO SIN IVA, IVA, VIDA ÚTIL ESPERADA EN AÑOS]",
+    "opcion_contado": "[PRECIO FINAL Y DESCUENTO POR PAGO AL CONTADO SI LO HAY]",
+    "opcion_financiada": "[ENTRADA, CUOTA, NÚMERO DE CUOTAS, TIPO O TAE, COMISIÓN DE APERTURA, CUOTA FINAL]",
+    "opcion_alquiler": "[CUOTA MENSUAL, DURACIÓN, QUÉ INCLUYE: MANTENIMIENTO, SEGURO, SUSTITUCIÓN, PENALIZACIÓN POR SALIDA]",
+    "costes_de_uso": "[MANTENIMIENTO, SEGURO, CONSUMIBLES, REPARACIONES ESPERADAS AL AÑO]",
+    "caja_actual": "[SALDO DISPONIBLE SIN CONTAR EL DINERO DE IMPUESTOS Y EL COLCHÓN]",
+    "ingreso_asociado": "[QUÉ FACTURACIÓN O AHORRO ESPERAS QUE TRAIGA AL MES Y POR QUÉ]"
+ },
+  "metodo": [
+    "1. Ojo con la coma anterior: revisa que el JSON que generes sea válido y no repitas ese fallo en tu salida.",
+    "2. Calcula el coste total de cada opción a lo largo de la vida útil: desembolsos más costes de uso menos valor residual estimado al final.",
+    "3. Calcula el coste mensual equivalente de cada opción para poder compararlas en la misma unidad.",
+    "4. Mide el impacto en caja: cuánto sale el primer mes y cuánto cada mes después. Comprueba si el contado deja la caja por debajo de un mes de gastos fijos: si es así, descártalo aunque salga más barato.",
+    "5. Calcula el punto de uso mínimo: cuántas horas, servicios o pedidos al mes tiene que dar el equipo para cubrir su coste mensual equivalente.",
+    "6. Prueba de resistencia: recalcula con un 30 por ciento menos de trabajo y di si la cuota se sigue pagando sola o se come el margen.",
+    "7. Señala las trampas del contrato: permanencia, penalización por cancelar, límites de uso o kilometraje, quién paga las averías, si el seguro está incluido y qué pasa al final del alquiler.",
+    "8. Compara flexibilidad frente a propiedad: si la tecnología se queda vieja rápido o el trabajo es estacional, el alquiler compra libertad; si el uso es estable y largo, la propiedad sale mejor.",
+    "9. Cierra con una recomendación única y las dos condiciones que la harían cambiar."
+  ],
+  "restricciones": [
+    "No des por deducible ningún gasto sin remitir al gestor.",
+    "No compares cuota contra precio: compara siempre coste total y coste mensual equivalente.",
+    "Nada de valores residuales inventados: pídelos o marca la estimación como tal.",
+    "Si el ingreso asociado es una suposición del usuario, trátalo como escenario y no como hecho."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Mirar solo la cuota mensual porque parece asumible.",
+    "Olvidar el IVA en el desembolso inicial aunque luego se recupere.",
+    "Comprar con el dinero apartado para el trimestre.",
+    "No leer la penalización por cancelación anticipada del renting.",
+    "Justificar la compra con un trabajo grande que aún no está firmado."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla comparativa: opción, desembolso inicial, coste mensual equivalente, coste total, flexibilidad.",
+    "bloque_2": "Impacto en caja de los primeros seis meses en las tres opciones.",
+    "bloque_3": "Punto de uso mínimo mensual para que se pague sola.",
+    "bloque_4": "Resultado de la prueba de resistencia con un 30 por ciento menos de trabajo.",
+    "bloque_5": "Recomendación en una frase y las dos condiciones que la cambiarían.",
+    "estilo": "Español de España, tuteando, con los números delante"
+  },
+  "criterios_calidad": [
+    "Las tres opciones están medidas con la misma unidad y el mismo horizonte.",
+    "La recomendación tiene en cuenta la caja, no solo el coste.",
+    "Las cláusulas peligrosas del contrato aparecen citadas para revisarlas."
+  ]
+}

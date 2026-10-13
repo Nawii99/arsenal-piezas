@@ -1,0 +1,36 @@
+{
+  "tarea": "Genera un banco de asuntos y preheaders para emails de carrito abandonado y un plan de pruebas A/B realista",
+  "contexto": {
+    "producto": "[PRODUCTO O CATEGORÍA]",
+    "cliente_tipo": "[QUIÉN COMPRA: EDAD, SITUACIÓN, QUÉ LE PREOCUPA]",
+    "asuntos_actuales": "[LOS QUE USAS HOY]",
+    "apertura_actual": "[% DE APERTURA SI LO SABES]",
+    "envios_al_mes": "[CUÁNTOS CARRITOS ABANDONADOS TIENES AL MES]",
+    "nombre_del_remitente": "[QUIÉN APARECE COMO REMITENTE]"
+  },
+  "enfoques": [
+    {"nombre": "recordatorio neutro", "cantidad": 4},
+    {"nombre": "pregunta directa", "cantidad": 4},
+    {"nombre": "objeción resuelta (envío, talla, devolución)", "cantidad": 4},
+    {"nombre": "utilidad o consejo sobre el producto", "cantidad": 4},
+    {"nombre": "escasez o caducidad solo si es real", "cantidad": 4},
+    {"nombre": "personalizado con el nombre del producto", "cantidad": 4}
+  ],
+  "restricciones": [
+    "Asunto de 25 a 45 caracteres, contando espacios",
+    "Preheader de 40 a 90 caracteres que amplíe el asunto, nunca que lo repita",
+    "Prohibido: gratis en mayúsculas, signos de exclamación repetidos, urgencia inventada",
+    "Máximo un emoji y solo en los enfoques donde encaje",
+    "Español de España"
+  ],
+  "formato_salida": {
+    "tabla": ["enfoque", "asunto", "n_caracteres", "preheader", "para_que_email_de_la_secuencia"],
+    "plan_de_pruebas": "Tabla con: ronda, asunto A, asunto B, qué mides, cuántos envíos hacen falta como mínimo y cuándo decidir",
+    "nota_final": "Si los envíos al mes son pocos, di cuántas semanas hay que esperar antes de dar por buena una diferencia"
+  },
+  "criterios_calidad": [
+    "Ningún asunto pasa de 45 caracteres",
+    "Cada ronda de prueba cambia una sola cosa",
+    "Se avisa cuando el volumen es demasiado bajo para concluir nada"
+  ]
+}

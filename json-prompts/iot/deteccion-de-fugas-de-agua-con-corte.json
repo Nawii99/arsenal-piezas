@@ -1,0 +1,51 @@
+{
+  "tarea": "Diseñar un sistema de detección de fugas de agua con sensores, avisos y corte automático, con plan de instalación y de pruebas",
+  "contexto": {
+    "perfil": "Persona sin perfil técnico que quiere proteger un inmueble propio o de cliente sin obra grande",
+    "inmueble": "[PISO / CASA / LOCAL / PISO TURÍSTICO / SEGUNDA RESIDENCIA], habitado [SIEMPRE / A TEMPORADAS / VACÍO]"
+  },
+  "entradas": {
+    "puntos_de_agua": "[LAVADORA, LAVAVAJILLAS, CALDERA O TERMO, BAJO FREGADERO, BAÑOS, RIEGO, ACUMULADOR]",
+    "llave_general": "[DÓNDE ESTÁ, SI ES ACCESIBLE Y QUÉ DIÁMETRO TIENE]",
+    "electricidad": "[HAY ENCHUFE CERCA DE LA LLAVE GENERAL SÍ/NO]",
+    "quien_avisa": "[QUIÉN RECIBE EL AVISO Y SI HAY ALGUIEN CERCA DEL INMUEBLE]",
+    "riesgos": "[HAY VECINO DEBAJO, PARQUÉ, SÓTANO, ALMACÉN CON GÉNERO]"
+  },
+  "pasos": [
+    "1. Ordena los puntos por probabilidad y por daño: los latiguillos de lavadora y lavavajillas y el termo son los que más revientan; el sótano y el vecino de abajo son los que más cuestan.",
+    "2. Coloca los sensores en el suelo, en el punto más bajo y donde el agua llegaría primero, no encima del aparato. El agua va donde va, no donde nos conviene.",
+    "3. Decide qué es aviso y qué es corte: en un piso habitado puede bastar avisar; en un piso vacío o turístico, el corte automático es lo que evita el desastre.",
+    "4. Elige el tipo de llave motorizada según la instalación: sobre la llave existente si es accesible, o electroválvula si hay obra prevista, avisando de que la instalación de fontanería y la eléctrica las debe hacer un profesional.",
+    "5. Prevé el fallo de la propia llave: qué pasa si se va la luz o si falla el motor, cómo se abre a mano y cómo se avisa de que el agua sigue cortada.",
+    "6. Añade la detección por caudal si el sistema lo permite: agua corriendo muchos minutos seguidos con la casa vacía es una fuga aunque ningún sensor se moje.",
+    "7. Piensa en el invierno de la casa vacía: heladas, y también el aviso de que la calefacción ha caído, porque las tuberías reventadas son fugas futuras.",
+    "8. Define quién recibe qué aviso, el escalado si nadie contesta y el teléfono del fontanero de guardia.",
+    "9. Escribe el protocolo de prueba semestral: mojar el sensor con un paño húmedo o unas gotas, comprobar que corta, y volver a abrir la llave y confirmar suministro."
+  ],
+  "restricciones": [
+    "La instalación de fontanería y de electricidad la hace un profesional, no el usuario",
+    "No propongas cortar el agua en instalaciones donde el corte cause otro daño sin avisarlo",
+    "El sistema debe funcionar aunque se caiga internet o hay que decir claramente que no",
+    "Todo aviso llega al móvil de una persona concreta"
+  ],
+  "errores_tipicos": [
+    "Poner el sensor sobre la lavadora en lugar de en el suelo",
+    "Instalar la llave motorizada sin dejar forma de abrir a mano",
+    "Olvidar que el aviso de fuga en un piso vacío no sirve si nadie tiene llave",
+    "No probar nunca el corte y descubrir el día de la fuga que la llave está agarrotada"
+  ],
+  "formato_salida": {
+    "1_mapa_de_riesgo": "Tabla: punto de agua | probabilidad | daño potencial | prioridad",
+    "2_sensores": "Dónde va cada uno, tipo, alimentación y por qué en ese punto exacto",
+    "3_corte": "Con corte o sin corte, tipo de llave, quién lo instala y qué cuesta aproximadamente pedir presupuesto",
+    "4_avisos": "Quién recibe qué, escalado y contacto del fontanero",
+    "5_fallos": "Qué pasa sin luz, sin internet y con la llave averiada",
+    "6_pruebas": "Guion de la prueba semestral con pasos y resultado esperado"
+  },
+  "criterios_calidad": [
+    "Cada sensor tiene justificada su posición exacta en el suelo",
+    "Está resuelto el modo manual de la llave de corte",
+    "El plan distingue inmueble habitado de inmueble vacío",
+    "La prueba periódica es concreta y con fecha asignada"
+  ]
+}

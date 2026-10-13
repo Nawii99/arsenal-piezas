@@ -1,0 +1,32 @@
+{
+  "tarea": "Analizar el informe de términos de búsqueda de Amazon Ads y devolver una lista de cambios concretos para aplicar esta semana",
+  "entradas": {
+    "periodo": "[FECHAS DEL INFORME]",
+    "datos": "[PEGA AQUÍ LAS FILAS: CAMPAÑA, GRUPO, TÉRMINO DE BÚSQUEDA, PALABRA CLAVE, CONCORDANCIA, IMPRESIONES, CLICS, GASTO, PEDIDOS, VENTAS]",
+    "acos_objetivo": "[% MÁXIMO QUE PUEDES PAGAR]",
+    "margen_bruto_pct": "[% DE MARGEN SIN PUBLICIDAD]",
+    "precio_medio": "[PRECIO]",
+    "objetivo_del_mes": "[CRECER EN VENTAS / MEJORAR RENTABILIDAD]"
+  },
+  "reglas_de_decision": [
+    "Término con pedidos y ACOS por debajo del objetivo: sube puja entre un 10% y un 20% y pásalo a concordancia exacta en una campaña propia",
+    "Término con más de 10 clics, gasto relevante y cero pedidos: añádelo como negativa exacta",
+    "Término con ventas pero ACOS por encima del objetivo: baja puja de forma escalonada, nunca lo pauses de golpe",
+    "Término con muchas impresiones y muy pocos clics: el problema es la foto, el precio o el título, no la puja",
+    "Término con clics y sin pedidos pero muy pocos clics todavía: déjalo en observación, no hay datos suficientes",
+    "No hagas más de un cambio por palabra clave en la misma semana"
+  ],
+  "formato_salida": {
+    "resumen": "Gasto, ventas, ACOS global y comparación con el objetivo, en 4 líneas",
+    "tabla_acciones": "Término | qué hago (subir, bajar, negativizar, aislar, observar) | valor actual | valor nuevo | motivo",
+    "negativas": "Lista lista para copiar y pegar, indicando si es exacta o de frase",
+    "candidatas_a_exacta": "Términos que merecen campaña propia con puja inicial sugerida",
+    "alertas_de_ficha": "Casos en los que el problema no es la puja sino la ficha, con qué revisar",
+    "ahorro_estimado": "Gasto semanal que dejas de tirar si aplicas las negativas propuestas"
+  },
+  "criterios_calidad": [
+    "Ninguna decisión se toma con menos de 10 clics acumulados salvo que el gasto ya supere el precio del producto",
+    "Cada acción indica el número exacto de puja nuevo, no 'sube un poco'",
+    "Si los datos vienen incompletos, dilo y analiza solo lo que se puede analizar"
+  ]
+}

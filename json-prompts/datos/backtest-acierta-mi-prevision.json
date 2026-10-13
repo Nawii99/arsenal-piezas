@@ -1,0 +1,36 @@
+{
+  "tarea": "Evaluar la calidad de mis previsiones pasadas, medir error y sesgo, y recomendar el método a usar a partir de ahora",
+  "contexto": {
+    "que_preveo": "[VENTAS, PEDIDOS, CITAS, UNIDADES...]",
+    "periodicidad": "[SEMANAL O MENSUAL]",
+    "como_lo_hago_ahora": "[A OJO, MEDIA DE LOS 3 ÚLTIMOS MESES, MISMO MES DEL AÑO PASADO, HOJA DE CÁLCULO...]"
+  },
+  "entradas": {
+    "historico_comparado": "[PEGA AL MENOS 12 LÍNEAS EN FORMATO periodo;previsto;real]",
+    "decisiones_que_dependen": "[COMPRAS, TURNOS, PRESUPUESTO DE ANUNCIOS...]"
+  },
+  "procedimiento": [
+    "1. Calcula por periodo el error absoluto y el error porcentual",
+    "2. Calcula el error porcentual medio (MAPE) y el error medio con signo para detectar sesgo",
+    "3. Di si hay sesgo sistemático: previsiones que se quedan cortas o largas de forma repetida",
+    "4. Compara mi previsión con dos métodos de referencia: repetir el valor del periodo anterior y repetir el mismo periodo del año pasado",
+    "5. Si mi método no gana a ninguna referencia, dilo sin rodeos",
+    "6. Analiza si el error se concentra en ciertos meses, en campañas o en periodos de mucha actividad",
+    "7. Recomienda un método concreto y explícalo en una frase, con la fórmula lista para Excel o Google Sheets"
+  ],
+  "restricciones": [
+    "Nunca calcules el porcentaje de error cuando el valor real sea cero: márcalo aparte",
+    "No propongas modelos que requieran programar",
+    "Interpreta el MAPE en lenguaje llano diciendo qué significa para mis decisiones"
+  ],
+  "formato_salida": {
+    "tabla": "Periodo | Previsto | Real | Error | Error % | ¿Corto o largo?",
+    "resumen": "MAPE, sesgo medio y comparación con los dos métodos de referencia",
+    "veredicto": "Mi método es mejor, igual o peor que copiar el año pasado",
+    "recomendacion": "Método propuesto, fórmula para hoja de cálculo y corrección de sesgo a aplicar"
+  },
+  "criterios_calidad": [
+    "Los cálculos son reproducibles a mano con los datos dados",
+    "La recomendación es una sola, no una lista de opciones"
+  ]
+}

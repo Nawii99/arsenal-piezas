@@ -1,0 +1,40 @@
+{
+  "tarea": "Analiza mis datos de carrito abandonado del mes y devuélveme un cuadro de mando con conclusiones y siguientes pasos",
+  "datos_del_mes": {
+    "periodo": "[MES Y AÑO]",
+    "sesiones": "[NÚMERO]",
+    "carritos_creados": "[NÚMERO]",
+    "checkouts_iniciados": "[NÚMERO]",
+    "pedidos_completados": "[NÚMERO]",
+    "ingresos_totales": "[EUROS]",
+    "emails_de_recuperacion": [
+      {"email": 1, "enviados": "[N]", "aperturas": "[N]", "clics": "[N]", "pedidos": "[N]", "ingresos": "[EUROS]"},
+      {"email": 2, "enviados": "[N]", "aperturas": "[N]", "clics": "[N]", "pedidos": "[N]", "ingresos": "[EUROS]"},
+      {"email": 3, "enviados": "[N]", "aperturas": "[N]", "clics": "[N]", "pedidos": "[N]", "ingresos": "[EUROS]"}
+    ],
+    "descuentos_aplicados": "[EUROS TOTALES EN CUPONES DE RECUPERACIÓN]",
+    "margen_bruto": "[% SOBRE VENTA]",
+    "mes_anterior": "[INGRESOS RECUPERADOS EL MES PASADO, SI LOS TIENES]"
+  },
+  "calcula": [
+    "tasa de abandono de carrito y de checkout",
+    "tasa de recuperación: pedidos recuperados entre carritos abandonados",
+    "ingresos recuperados y margen que queda tras los descuentos",
+    "ingreso por email enviado, de cada uno de los tres",
+    "qué email aporta más margen y cuál casi no aporta nada",
+    "comparación con el mes anterior si hay dato"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de métricas: metrica | valor | como_se_calcula | lectura en una frase",
+    "bloque_2": "Tabla por email: email | apertura % | clic % | conversion % | ingreso por envio | margen",
+    "bloque_3": "Tres conclusiones en lenguaje llano, sin jerga",
+    "bloque_4": "Tres acciones concretas para el mes que viene, ordenadas por impacto",
+    "bloque_5": "Qué dato me falta para tomar mejores decisiones"
+  },
+  "restricciones": [
+    "Muestra siempre la operación aritmética de cada cálculo",
+    "Si un dato falta o no cuadra, dilo y no lo rellenes por tu cuenta",
+    "Advierte cuando el volumen sea tan bajo que el porcentaje no signifique nada",
+    "Nada de comparaciones con medias del sector inventadas"
+  ]
+}

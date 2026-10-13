@@ -1,0 +1,39 @@
+{
+  "tarea": "Calcular hacia atrás, desde mi objetivo de facturación, cuántas oportunidades y cuánta actividad comercial necesito cada semana, y decirme si el objetivo es alcanzable con mi equipo",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "periodo": "[TRIMESTRE O AÑO]",
+    "objetivo_facturacion": "[IMPORTE EN EUROS]",
+    "ya_asegurado": "[IMPORTE YA CERRADO O RECURRENTE COMPROMETIDO]"
+  },
+  "entradas": {
+    "ticket_medio": "[IMPORTE MEDIO POR VENTA]",
+    "tasas_conversion": "[LEAD A REUNIÓN, REUNIÓN A PROPUESTA, PROPUESTA A CIERRE, EN PORCENTAJE]",
+    "ciclo_de_venta": "[DÍAS DESDE PRIMER CONTACTO HASTA FIRMA]",
+    "equipo_comercial": "[Nº DE PERSONAS Y HORAS SEMANALES DEDICADAS A VENDER]",
+    "canales_de_captacion": "[DE DÓNDE SALEN HOY TUS LEADS Y CUÁNTOS AL MES]"
+  },
+  "calculos": [
+    "Ventas necesarias = objetivo menos lo ya asegurado, dividido entre el ticket medio",
+    "Subir por el embudo aplicando las tasas de conversión para obtener propuestas, reuniones y leads necesarios",
+    "Repartir el resultado por semana y por comercial",
+    "Aplicar el ciclo de venta: indicar la fecha límite para que un lead nuevo pueda cerrarse dentro del periodo",
+    "Contrastar la actividad semanal resultante con las horas disponibles y decir si cabe o no"
+  ],
+  "formato_salida": {
+    "tabla_embudo_inverso": "nivel del embudo | cantidad necesaria en el periodo | por mes | por semana | por comercial",
+    "veredicto": "Alcanzable, ajustado o irreal, con el motivo numérico",
+    "fecha_limite": "Último día para generar leads que aún puedan cerrar dentro del periodo",
+    "palancas": "3 opciones para cerrar la diferencia (más leads, mejor conversión, mayor ticket) con lo que exigiría cada una",
+    "panel": "Los 4 números que debes mirar cada semana en el CRM para saber si vas en rumbo"
+  },
+  "restricciones": [
+    "Muestra las operaciones matemáticas, no solo los resultados",
+    "Si falta alguna tasa de conversión, usa un valor prudente, dilo y marca el resultado como estimación",
+    "No propongas objetivos de actividad que superen las horas disponibles"
+  ],
+  "criterios_calidad": [
+    "Todos los números cuadran entre sí de arriba abajo",
+    "El plan semanal se puede escribir en una pizarra"
+  ]
+}

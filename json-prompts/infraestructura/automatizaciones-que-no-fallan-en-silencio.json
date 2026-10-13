@@ -1,0 +1,46 @@
+{
+  "tarea": "Hacer fiable una automatización recurrente y detectar cuando deja de ejecutarse",
+  "contexto": {
+    "automatizacion": "[QUÉ HACE Y CADA CUÁNTO]",
+    "herramienta": "[MAKE, N8N, ZAPIER, TAREA PROGRAMADA, SCRIPT]",
+    "consecuencia_si_falla": "[QUÉ PASA SI NO SE EJECUTA O SE EJECUTA DOS VECES]",
+    "perfil_usuario": "sin perfil técnico; configuración por interfaz"
+  },
+  "entradas": {
+    "pasos_actuales": "[DESCRIBE EL FLUJO PASO A PASO]",
+    "fallos_vistos": "[QUÉ HA IDO MAL HASTA AHORA]"
+  },
+  "pasos": [
+    "1. Separa el flujo en pasos y marca cuáles cambian algo fuera (enviar email, cobrar, publicar) y cuáles solo leen.",
+    "2. Hazlo repetible sin daño: cada paso que cambia algo debe llevar una marca que impida repetirlo dos veces.",
+    "3. Define reintentos solo para fallos temporales, con espera creciente y un máximo de intentos.",
+    "4. Separa los casos fallidos en una lista aparte para revisarlos a mano en vez de bloquear el flujo.",
+    "5. Añade señal de vida: un aviso si la automatización no se ha ejecutado en el plazo esperado.",
+    "6. Registra por vuelta: hora, elementos procesados, saltados y fallidos.",
+    "7. Pon un tope de seguridad: si en una vuelta se van a tocar más de [NÚMERO] elementos, para y avisa.",
+    "8. Prueba a propósito los tres escenarios: sin datos, con datos repetidos y con el servicio externo caído."
+  ],
+  "restricciones": [
+    "Nada de reintentar de forma infinita.",
+    "Ningún paso que cobre o envíe correo puede ejecutarse sin control de duplicados.",
+    "Los avisos van a una persona concreta, no a un buzón que nadie mira."
+  ],
+  "errores_tipicos": [
+    "Dar por hecho que si no llega aviso es que todo va bien, cuando el flujo lleva días parado.",
+    "Reprocesar el histórico entero por un cambio de filtro y enviar cientos de emails.",
+    "Reintentar un fallo de datos que nunca se va a arreglar solo.",
+    "No guardar por dónde se quedó y empezar de cero cada vez.",
+    "Probar solo con el caso bueno y nunca con el flujo vacío o con errores."
+  ],
+  "formato_salida": {
+    "diagrama_en_texto": "pasos numerados marcando cuáles modifican algo",
+    "tabla_de_fallos": "columnas: qué puede fallar | señal | reintentar sí o no | acción manual",
+    "configuracion": "qué activar en la herramienta indicada, opción por opción",
+    "plan_de_pruebas": "tres escenarios con el resultado esperado de cada uno"
+  },
+  "criterios_calidad": [
+    "Ejecutar el flujo dos veces seguidas no produce duplicados.",
+    "Existe aviso por ausencia de ejecución, no solo por error.",
+    "Cada vuelta deja registro consultable."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "tarea": "Diseñar y ejecutar una auditoría de cliente misterioso sobre el propio negocio (y opcionalmente sobre dos competidores) para medir la calidad real de la atención.",
+  "contexto": {
+    "negocio": "[TIPO DE NEGOCIO Y ZONA]",
+    "canales": "[WHATSAPP, TELÉFONO, FORMULARIO WEB, INSTAGRAM, PRESENCIAL]",
+    "quien_atiende": "[TÚ, EMPLEADO, BOT, MEZCLA]",
+    "horario": "[HORARIO DE ATENCIÓN DECLARADO]"
+  },
+  "entradas": {
+    "servicio_a_preguntar": "[SERVICIO O PRODUCTO CONCRETO]",
+    "promesa_publica": "[LO QUE PROMETES EN LA WEB: RESPUESTA EN 24H, PRESUPUESTO GRATIS...]",
+    "competidores": "[2 NOMBRES O ESCRIBE: NINGUNO]"
+  },
+  "metodo": [
+    "1. Crea tres perfiles de comprador: el que tiene prisa, el que regatea el precio y el que duda y pide detalles.",
+    "2. Escribe para cada perfil el mensaje inicial exacto, corto y creíble, sin pistas de que es una prueba.",
+    "3. Reparte los contactos: uno en hora punta, uno a última hora y uno en fin de semana o fuera de horario.",
+    "4. Usa un número o correo que no esté guardado en tu agenda ni identificado con la empresa.",
+    "5. Mide en cada contacto: minutos hasta la primera respuesta, si preguntan nombre y necesidad, si dan precio o lo esquivan, si proponen cita y si hacen seguimiento a las 48 horas.",
+    "6. Puntúa cada contacto de 0 a 2 en cinco casillas: rapidez, claridad, trato, precio comprensible y cierre.",
+    "7. Repite lo mismo con los competidores para tener una referencia, sin hacerles perder tiempo más allá de una consulta normal.",
+    "8. Convierte los tres fallos peores en un cambio concreto: una plantilla, un aviso o un cambio de horario."
+  ],
+  "errores_tipicos": [
+    "Avisar al equipo de que va a haber prueba.",
+    "Escribir como escribes tú y no como escribe un cliente.",
+    "Probar solo en horario bueno.",
+    "Medir sensaciones y no minutos.",
+    "No comprobar el seguimiento: el fallo más caro es no volver a escribir."
+  ],
+  "restricciones": [
+    "No hagas pedidos falsos que generen coste real a terceros ni ocupes citas de pago.",
+    "Nada de grabar llamadas sin cumplir la ley; toma notas."
+  ],
+  "formato_salida": {
+    "guiones": "3 mensajes iniciales listos para copiar, uno por perfil",
+    "hoja_de_campo": "Tabla: perfil, canal, día y hora, minutos hasta respuesta, qué preguntaron, precio sí/no, cierre sí/no, puntuación",
+    "comparativa": "Tu negocio frente a los competidores en las cinco casillas",
+    "tres_arreglos": "Los 3 cambios con más impacto, con la plantilla o el ajuste ya escrito"
+  },
+  "criterios_calidad": [
+    "Los tiempos están en minutos reales anotados.",
+    "Los mensajes de prueba son indistinguibles de un cliente real.",
+    "Cada arreglo se puede aplicar esta misma semana.",
+    "Se cubre al menos un contacto fuera de horario."
+  ],
+  "si_falta_informacion": "Pregunta por los canales activos y la promesa pública; lo demás asúmelo y márcalo como [SUPUESTO]."
+}

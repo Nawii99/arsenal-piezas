@@ -1,0 +1,39 @@
+{
+  "tarea": "Auditar la seguridad de uno o varios endpoints de API centrándose en autenticación, permisos y exposición de datos",
+  "contexto": {
+    "api": "[NOMBRE Y PARA QUÉ SIRVE]",
+    "quien_la_consume": "[APP MÓVIL PROPIA, CLIENTES EXTERNOS, WEB PÚBLICA]",
+    "roles_existentes": "[EJ: ANÓNIMO, CLIENTE, EMPLEADO, ADMINISTRADOR]",
+    "metodo_de_autenticacion": "[TOKEN JWT, SESIÓN CON COOKIE, CLAVE DE API, NINGUNO]",
+    "multi_cliente": "[SÍ, CADA EMPRESA VE SOLO SUS DATOS / NO]"
+  },
+  "entradas": {
+    "endpoints": "[PEGA EL CÓDIGO DE LAS RUTAS O LA ESPECIFICACIÓN OPENAPI]",
+    "middleware_o_guardas": "[PEGA EL CÓDIGO QUE COMPRUEBA PERMISOS SI ESTÁ EN OTRO FICHERO]"
+  },
+  "matriz_a_construir": "Para cada endpoint y cada rol, indicar si debería poder llamarlo y si el código realmente lo impide",
+  "que_comprobar": [
+    "Que la comprobación de permisos mira el recurso concreto y no solo que el usuario esté identificado",
+    "Que cambiar un identificador en la URL no da acceso a datos de otro cliente",
+    "Qué campos devuelve la respuesta de más: contraseñas cifradas, correos internos, campos de otro cliente",
+    "Que los parámetros de filtrado, orden y paginación no permiten inyección ni volcar la base entera",
+    "Que existe límite de peticiones en login, recuperación de contraseña y endpoints caros",
+    "Que los mensajes de error no revelan si un usuario existe o no",
+    "Que los métodos de escritura validan el cuerpo de la petición campo a campo"
+  ],
+  "restricciones": [
+    "No generes peticiones de ataque contra sistemas reales: describe la prueba, no la lances",
+    "Marca como NO VERIFICABLE lo que dependa de código que no te han pegado"
+  ],
+  "formato_salida": {
+    "matriz": "Tabla endpoints por roles con OK, FALLO o NO VERIFICABLE en cada celda",
+    "hallazgos": "Por cada FALLO: gravedad, qué vería o haría el atacante, arreglo con código, prueba para confirmarlo",
+    "plan": "Los 5 arreglos por orden, con esfuerzo estimado"
+  },
+  "criterios_calidad": [
+    "La matriz cubre todos los endpoints pegados",
+    "Cada fallo describe el dato concreto que quedaría expuesto",
+    "No se confunde autenticación con autorización en ningún punto"
+  ],
+  "tono": "riguroso, orientado a lo que puede pasar de verdad"
+}

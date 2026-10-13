@@ -1,0 +1,39 @@
+{
+  "tarea": "Crear el sistema de valoraciones y reseñas de mi app: momentos para pedirlas, textos de la petición y respuestas modelo a las reseñas",
+  "contexto": {
+    "app": "[NOMBRE DE TU APP]",
+    "nota_actual": "[NOTA MEDIA Y NÚMERO DE VALORACIONES]",
+    "momentos_buenos": "[ACCIONES EN LAS QUE EL USUARIO YA HA CONSEGUIDO ALGO CON TU APP]",
+    "quejas_frecuentes": "[LAS 5 QUEJAS QUE MÁS SE REPITEN]",
+    "tono_de_marca": "[CERCANO, SOBRIO, DIVERTIDO...]",
+    "soporte": "[EMAIL O CANAL DE ATENCIÓN]"
+  },
+  "parte_1_pedir_valoracion": {
+    "reglas": [
+      "Pedirla justo después de un momento de éxito, nunca al abrir por primera vez",
+      "Como máximo una petición por usuario cada varios meses",
+      "Nunca condicionar recompensas a poner 5 estrellas: las tiendas lo prohíben",
+      "Si el usuario está descontento, llevarlo a soporte antes que a la tienda"
+    ],
+    "entregar": "3 momentos concretos con el texto exacto de la petición, de menos de 25 palabras cada uno"
+  },
+  "parte_2_responder_resenas": {
+    "entregar": "Una respuesta modelo por cada queja frecuente, más 2 para reseñas positivas",
+    "estructura_respuesta": [
+      "agradecer sin peloteo",
+      "reconocer el problema con sus palabras",
+      "qué vais a hacer y cuándo, sin prometer fechas imposibles",
+      "canal para seguir hablando"
+    ],
+    "limites": "Máximo 60 palabras por respuesta y nada de plantillas idénticas repetidas"
+  },
+  "formato_salida": {
+    "tipo": "Documento con dos bloques y textos listos para copiar",
+    "extra": "Calendario simple: cuándo revisar reseñas, cuánto tardar en responder y qué avisar al equipo"
+  },
+  "criterios_calidad": [
+    "Ninguna respuesta suena a robot ni empieza igual que la anterior",
+    "Las peticiones dentro de la app respetan las normas de App Store y Google Play",
+    "Cada queja frecuente tiene además una idea de mejora del producto"
+  ]
+}

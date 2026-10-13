@@ -1,0 +1,52 @@
+{
+  "tarea": "Diseñar el temario de un curso partiendo del resultado observable que consigue el alumno, eliminando todo lo que no lleve a ese resultado.",
+  "contexto": {
+    "quien_ensena": "[QUIÉN ERES Y QUÉ HAS HECHO DE VERDAD EN ESTO: AÑOS, CASOS, CIFRAS PROPIAS]",
+    "alumno": "[A QUIÉN VA DIRIGIDO: OFICIO, NIVEL, TIEMPO SEMANAL REAL DISPONIBLE]",
+    "punto_a": "[DÓNDE ESTÁ HOY EL ALUMNO, EN CONCRETO, CON SUS PALABRAS]",
+    "punto_b": "[QUÉ SABE HACER AL TERMINAR: ACCIÓN OBSERVABLE + ENTREGABLE]",
+    "formato": "[GRABADO / EN DIRECTO / MIXTO]",
+    "duracion_disponible": "[HORAS DE VÍDEO O NÚMERO DE SESIONES Y SEMANAS]",
+    "herramientas_que_puede_pagar": "[GRATIS / HASTA X EUROS AL MES]"
+  },
+  "entradas": {
+    "material_que_ya_tengo": "[PLANTILLAS, CHARLAS, ARTÍCULOS, CASOS DE CLIENTES, CAPTURAS]",
+    "dudas_reales_recibidas": "[PREGUNTAS QUE TE HACE LA GENTE UNA Y OTRA VEZ]",
+    "cursos_parecidos": "[QUÉ PROMETEN OTROS Y QUÉ DEJAN FUERA]"
+  },
+  "proceso": [
+    "1. Reescribe el punto B en una sola frase: verbo de acción observable + entregable + condición ('publica su primera página de venta con cobro funcionando en 14 días').",
+    "2. Lista entre 8 y 15 tareas que el alumno tiene que saber EJECUTAR para pasar de A a B. Cada tarea empieza por verbo. Si no se puede observar, no es tarea: es teoría.",
+    "3. Ordena las tareas por dependencia real (qué necesita estar hecho antes), no por orden lógico de manual.",
+    "4. Agrupa las tareas en 4 a 7 módulos. Cada módulo tiene su propio mini-entregable que el alumno puede enseñar.",
+    "5. Para cada módulo define: entregable, duración estimada, 2 errores típicos del alumno y cómo se comprueba que está bien.",
+    "6. Marca cada tema como IMPRESCINDIBLE, ÚTIL o BONITO DE SABER. Todo lo BONITO sale del temario principal y se va a un anexo opcional.",
+    "7. Sitúa la primera victoria: algo que el alumno consigue en los primeros 30 minutos de curso.",
+    "8. Revisa que el material que ya tienes cubra al menos la mitad de los módulos y marca qué falta por crear."
+  ],
+  "restricciones": [
+    "Nada de módulos llamados 'Introducción', 'Mindset' o 'Historia de': si hace falta contexto, va dentro de la primera tarea.",
+    "No prometas resultados de dinero ni plazos que dependan del mercado.",
+    "Cada módulo tiene que caber en el tiempo semanal declarado del alumno.",
+    "Si una tarea necesita una herramienta de pago, indica siempre la alternativa gratuita."
+  ],
+  "formato_salida": {
+    "bloque_1": "Frase de resultado (punto B) en una línea.",
+    "bloque_2": "Tabla: Módulo | Tarea que aprende | Entregable | Duración | Cómo se comprueba.",
+    "bloque_3": "Lista de la primera victoria y en qué minuto llega.",
+    "bloque_4": "Lista de lo descartado con el motivo de cada descarte.",
+    "bloque_5": "Inventario: qué material ya tienes por módulo y qué te falta grabar o escribir."
+  },
+  "criterios_calidad": [
+    "Todo módulo termina con algo que el alumno puede enseñar a otra persona.",
+    "Un desconocido puede leer el temario y decir en voz alta qué sabrá hacer al final.",
+    "No hay ningún módulo sin entregable.",
+    "El curso completo cabe en las horas declaradas con un 20% de margen."
+  ],
+  "errores_tipicos": [
+    "Convertir el índice de un libro en temario: mucho tema, ninguna tarea.",
+    "Meter todo lo que sabes por miedo a que parezca poco; lo que sobra es lo que hace abandonar.",
+    "Dejar la parte difícil para el final, cuando el alumno ya se ha ido.",
+    "Poner exámenes teóricos en vez de entregables."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "tarea": "Diseñar un plan de pago fraccionado para una deuda vencida y redactar el acuerdo escrito entre las partes",
+  "contexto": {
+    "acreedor": "[TU NOMBRE FISCAL Y NIF]",
+    "deudor": "[NOMBRE FISCAL Y NIF DEL CLIENTE]",
+    "quiero_conservar_al_cliente": "[SÍ / NO]",
+    "urgencia_de_caja": "[ALTA / MEDIA / BAJA]"
+  },
+  "entradas": {
+    "deuda_total": "[IMPORTE Y FACTURAS INCLUIDAS]",
+    "antiguedad": "[DÍAS O MESES DESDE EL VENCIMIENTO]",
+    "situacion_del_cliente": "[QUÉ TE HA EXPLICADO SOBRE SU SITUACIÓN]",
+    "capacidad_de_pago": "[IMPORTE MENSUAL QUE DICE PODER ASUMIR]",
+    "plazo_maximo_que_aceptas": "[NÚMERO DE MESES]",
+    "servicio_en_curso": "[SIGUES TRABAJANDO PARA ÉL: SÍ / NO]"
+  },
+  "pasos": [
+    "Proponer tres calendarios: rápido con pago inicial fuerte, equilibrado y largo, con número de cuotas e importes",
+    "Recomendar uno y explicar en dos líneas por qué encaja con tu caja y con su capacidad real",
+    "Fijar un pago inicial inmediato como señal de compromiso",
+    "Definir qué pasa si falla una cuota: vencimiento anticipado del resto y suspensión del servicio",
+    "Redactar el acuerdo con reconocimiento de deuda, calendario, forma de pago y firmas",
+    "Escribir el email con el que se le envía la propuesta"
+  ],
+  "reglas": [
+    "No renunciar al principal salvo que el usuario lo autorice expresamente",
+    "Cada cuota con fecha concreta e importe cerrado, nada de a lo largo del mes",
+    "Vincular la continuidad del servicio al cumplimiento del plan",
+    "Avisar de que el acuerdo debe firmarse por ambas partes y de que conviene revisión legal"
+  ],
+  "formato_salida": {
+    "comparativa": "Tabla de las tres opciones: pago inicial, número de cuotas, importe y fecha final",
+    "recomendacion": "Opción elegida y motivo",
+    "acuerdo": "Documento completo listo para firmar",
+    "calendario": "Lista de fechas e importes para anotar en tu agenda",
+    "email": "Mensaje breve para enviarlo al cliente"
+  },
+  "criterios_calidad": [
+    "Las cuotas suman exactamente la deuda",
+    "El acuerdo sirve como prueba del reconocimiento de deuda",
+    "El cliente puede decir sí sin negociar más"
+  ],
+  "tono": "Firme, práctico y sin resentimiento"
+}

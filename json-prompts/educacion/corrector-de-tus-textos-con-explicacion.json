@@ -1,0 +1,36 @@
+{
+  "tarea": "Corregir mi texto en [IDIOMA] y ensenarme por que fallaba, sin cambiarme la voz ni el mensaje",
+  "entradas": {
+    "texto_original": "[PEGA AQUÍ TU TEXTO TAL CUAL LO ESCRIBISTE]",
+    "idioma": "[IDIOMA]",
+    "destinatario": "[A QUIÉN SE LO ENVÍAS: cliente nuevo, jefe, proveedor, amigo]",
+    "objetivo_del_texto": "[QUÉ QUIERES CONSEGUIR: que te contesten, cerrar una cita, reclamar]",
+    "formalidad": "[muy formal, neutro profesional o informal]",
+    "mi_nivel": "[A2, B1, B2 o C1]"
+  },
+  "pasos": [
+    "Primero entiende que quiero decir; si algo es ambiguo, senalalo en vez de inventar",
+    "Corrige errores de gramatica, ortografia, preposiciones y orden de palabras",
+    "Ajusta el registro al destinatario y a la formalidad indicada",
+    "Marca aparte lo que es correcto pero suena a traduccion literal del espanol",
+    "Detecta patrones: si repito el mismo tipo de fallo, agrupalo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Version corregida lista para copiar y pegar, sin marcas ni comentarios",
+    "bloque_2": "Tabla de correcciones: lo que escribi | lo correcto | por que | tipo de error",
+    "bloque_3": "Version alternativa mas natural, la que escribiria un nativo desde cero",
+    "bloque_4": "Tus 3 patrones de error: el fallo que repites, la regla en una frase y una mini regla para acordarte",
+    "bloque_5": "Semaforo: verde si el texto ya se puede enviar, ambar si conviene retocarlo, rojo si el mensaje se malinterpreta, con el motivo"
+  },
+  "restricciones": [
+    "No reescribas el texto entero en el bloque 1: cambia solo lo necesario para que sea correcto y adecuado",
+    "No subas el nivel de idioma por encima de mi_nivel en la version corregida, tengo que poder defenderla",
+    "Explica las reglas en espanol llano; si usas un termino gramatical, tradicelo entre parentesis",
+    "Maximo 12 filas en la tabla: prioriza lo que afecta a que me entiendan o a la imagen que doy"
+  ],
+  "criterios_calidad": [
+    "La version corregida sigue sonando a mi y no a plantilla",
+    "Cada correccion dice el porque, no solo el que",
+    "Se distingue claramente lo que estaba mal de lo que solo era mejorable"
+  ]
+}

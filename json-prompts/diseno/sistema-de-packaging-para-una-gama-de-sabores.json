@@ -1,0 +1,38 @@
+{
+  "rol": "Disenador de sistemas de packaging para gamas de producto",
+  "tarea": "Definir el sistema visual que hace que todas las variantes de una gama se reconozcan como una familia y se diferencien entre si sin leer",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "producto_base": "[QUE ES: p. ej. cerveza artesana en lata de 33 cl]",
+    "variantes_actuales": ["[VARIANTE 1]", "[VARIANTE 2]", "[VARIANTE 3]", "[VARIANTE 4]"],
+    "variantes_futuras_previstas": "[CUANTAS MAS PIENSAS SACAR EN DOS ANOS]",
+    "elementos_de_marca_fijos": "[LOGO, TIPOGRAFIA O COLOR CORPORATIVO QUE YA TIENES]",
+    "material_y_formato": "[LATA, BOLSA, TARRO, CAJA, ETIQUETA ADHESIVA...]",
+    "tecnica_impresion": "[DIGITAL, OFFSET, FLEXO O NO LO SE]"
+  },
+  "decisiones_a_tomar": [
+    "Que elementos son constantes en todas las variantes: zona de marca, estructura, tipografia, posicion del claim",
+    "Que elemento es la variable de diferenciacion principal: color, ilustracion, patron o combinacion, y por que",
+    "Cuanta superficie ocupa el codigo diferenciador para que se vea a dos metros",
+    "Como se nombran las variantes en el envase, con cuantas palabras y con que jerarquia",
+    "Como se anade una variante nueva sin romper el sistema"
+  ],
+  "formato_salida": {
+    "tabla_variantes": "tabla con columnas: variante, color principal en HEX, color secundario, elemento grafico, nombre en el envase",
+    "reglas_del_sistema": "lista numerada de 8 a 12 reglas cortas que un disenador debe respetar",
+    "zona_constante": "descripcion de la parte del envase que nunca cambia, con proporciones aproximadas",
+    "prueba_de_lineal": "como se veria la gama completa colocada junta y por que no se confunden",
+    "plan_de_crecimiento": "que colores y recursos quedan reservados para las variantes futuras"
+  },
+  "restricciones": [
+    "Los colores elegidos deben distinguirse tambien para personas con daltonismo: no fiar la diferenciacion solo al rojo y verde",
+    "Maximo dos elementos de diferenciacion, no cinco",
+    "Si la tecnica de impresion es flexo, limitar el numero de tintas y avisarlo"
+  ],
+  "criterios_calidad": [
+    "Alguien a dos metros distingue la variante sin leer el nombre",
+    "Se puede anadir una variante nueva siguiendo las reglas, sin rediseno",
+    "La marca se reconoce igual en todas las referencias"
+  ],
+  "tono": "practico y concreto, con decisiones cerradas"
+}

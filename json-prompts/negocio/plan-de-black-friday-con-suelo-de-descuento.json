@@ -1,0 +1,41 @@
+{
+  "tarea": "Disenar el plan de una campana promocional de ecommerce con el descuento maximo admisible por producto y el calendario dia a dia",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "campana": "[BLACK FRIDAY, REBAJAS, ANIVERSARIO U OTRA]",
+    "fechas": "[DEL X AL Y]",
+    "objetivo_principal": "[FACTURAR, LIQUIDAR STOCK O CAPTAR CLIENTES NUEVOS]",
+    "objetivo_en_cifras": "[EJ 15.000 EUR DE VENTA O 300 UNIDADES]"
+  },
+  "entradas": {
+    "productos_candidatos": "[LISTA: nombre, precio con IVA, coste completo, stock, ventas mensuales normales]",
+    "margen_minimo_que_aceptas_pct": "[EJ 20]",
+    "presupuesto_publicidad_eur": "[INVERSION PREVISTA]",
+    "canales_disponibles": "[EMAIL, INSTAGRAM, ANUNCIOS, WHATSAPP]"
+  },
+  "pasos": [
+    "Calcular para cada producto el descuento maximo que respeta el margen minimo, contando envio y comisiones",
+    "Elegir 3 productos gancho con descuento agresivo y el resto con descuento moderado",
+    "Definir la mecanica: descuento directo, 2x1, regalo por compra o umbral por importe, y justificar la elegida",
+    "Montar el calendario por dias: preaviso, apertura, recordatorio de mitad, ultimo dia y prorroga si procede",
+    "Asignar a cada dia el canal, el mensaje y el producto protagonista",
+    "Definir las condiciones legales de la promocion: fechas, unidades, exclusiones y acumulacion con otros cupones"
+  ],
+  "restricciones": [
+    "Ningun producto puede bajar del margen minimo indicado",
+    "Respetar la normativa espanola de precios: mostrar el precio mas bajo aplicado en los 30 dias previos",
+    "No mas de dos mecanicas distintas en la misma campana para no confundir",
+    "No incluir productos sin stock suficiente para aguantar la campana"
+  ],
+  "formato_salida": {
+    "tabla_precios": "Producto | PVP normal | Descuento maximo % | Precio de campana | Margen resultante EUR",
+    "calendario": "Dia | Canal | Mensaje en una linea | Producto protagonista",
+    "condiciones": "Texto legal breve listo para pegar en la web",
+    "medicion": "4 numeros a mirar al terminar y como calcular si la campana ha salido a cuenta"
+  },
+  "criterios_calidad": [
+    "Se ve el margen que queda en cada producto rebajado, no solo el porcentaje de descuento",
+    "El calendario cabe en una pagina y cualquiera de tu equipo puede ejecutarlo",
+    "El objetivo en cifras se traduce en unidades a vender por dia"
+  ]
+}

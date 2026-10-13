@@ -1,0 +1,34 @@
+{
+  "tarea": "Prepárame un guion de pruebas de teclado y foco para mi web, paso a paso, para hacerlo yo mismo sin herramientas ni saber programar",
+  "contexto": {
+    "web": "[URL]",
+    "paginas_a_probar": "[HOME, FICHA DE PRODUCTO, CARRITO, CONTACTO...]",
+    "elementos_interactivos": "[MENÚ DESPLEGABLE, BUSCADOR, CARRUSEL, VENTANA MODAL, CHAT, AVISO DE COOKIES]",
+    "navegador": "[CHROME / FIREFOX / SAFARI]"
+  },
+  "metodo": [
+    "Genera una prueba por elemento con: teclas a pulsar, qué debe pasar y qué señal indica que hay fallo",
+    "Cubre Tab y Mayúsculas+Tab, Enter, Espacio, Escape y flechas",
+    "Empieza comprobando que el primer tabulador ofrece un enlace para saltar al contenido",
+    "Comprueba que el foco se ve siempre, con contraste suficiente y sin quedar tapado por barras fijas o cookies",
+    "Comprueba que al abrir una ventana modal el foco entra dentro, no se escapa detrás y vuelve al botón de origen al cerrar con Escape",
+    "Comprueba que el orden del foco sigue el orden visual y que no hay elementos que reciben foco sin verse",
+    "Comprueba que los menús desplegables se abren y recorren con teclado, no solo pasando el ratón por encima"
+  ],
+  "formato_salida": {
+    "tipo": "checklist numerada, apta para imprimir",
+    "columnas": ["N", "Elemento", "Teclas", "Resultado esperado", "OK o FALLO", "Notas"],
+    "cierre": [
+      "Tabla de fallos típicos con su causa habitual",
+      "Frase exacta que puedo copiar para pedirle a mi desarrollador el arreglo de cada fallo"
+    ]
+  },
+  "restricciones": [
+    "Cero jerga técnica sin explicar en la misma línea",
+    "No pidas instalar extensiones, lectores de pantalla ni programas"
+  ],
+  "criterios_calidad": [
+    "Cualquier persona puede seguirlo entero en unos 20 minutos",
+    "Cada posible fallo lleva detrás una acción concreta"
+  ]
+}

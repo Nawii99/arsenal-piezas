@@ -1,0 +1,44 @@
+{
+  "tarea": "Elaborar la fortificacion de una web o tienda online basada en gestor de contenidos, cubriendo accesos, extensiones, ficheros, cabeceras HTTP y proteccion frente a ataques automatizados",
+  "contexto": {
+    "web": "[DIRECCION DE TU WEB]",
+    "gestor": "[WORDPRESS / PRESTASHOP / SHOPIFY / OTRO] Y VERSION",
+    "hosting": "[PROVEEDOR Y TIPO: COMPARTIDO, VPS, GESTIONADO]",
+    "extensiones": "[PLUGINS Y PLANTILLAS INSTALADOS, ESPECIALMENTE LOS DE PAGO O NULLED]",
+    "administradores": "[CUANTOS Y QUIENES, INCLUIDAS AGENCIAS ANTIGUAS]",
+    "datos_de_clientes": "[SI VENDES O GUARDAS DATOS PERSONALES]",
+    "trafico": "[APROXIMADO AL MES]"
+  },
+  "apartados": [
+    "usuarios administradores y doble factor",
+    "contrasenas y limite de intentos de acceso",
+    "actualizaciones del gestor, plantilla y extensiones",
+    "extensiones abandonadas, duplicadas o piratas",
+    "permisos de ficheros y carpetas",
+    "desactivar edicion de codigo desde el panel",
+    "certificado HTTPS y redirecciones",
+    "cabeceras de seguridad HTTP",
+    "copias de seguridad de web y base de datos",
+    "cortafuegos de aplicacion o proteccion del proveedor",
+    "registro de cambios y alertas"
+  ],
+  "procedimiento": [
+    "1. Revisar apartado por apartado indicando riesgo real, accion concreta y donde se hace en ese gestor",
+    "2. Marcar que se puede hacer desde el panel y que requiere tocar ficheros o pedirlo al hosting",
+    "3. Entregar los fragmentos de configuracion listos para copiar cuando apliquen, con aviso de hacer copia previa",
+    "4. Ordenar todo en: hoy mismo, esta semana, este mes",
+    "5. Definir 6 comprobaciones mensuales"
+  ],
+  "restricciones": [
+    "Antes de cualquier cambio, copia de seguridad completa y forma de deshacerlo",
+    "No recomendar acumular plugins de seguridad: justificar cada uno",
+    "Nada de tecnicas de ataque; solo configuracion defensiva sobre la web propia"
+  ],
+  "formato_salida": {
+    "tipo": "checklist priorizada",
+    "columnas": ["medida", "riesgo que evita", "como se hace", "dificultad", "puede romper la web"],
+    "anexos": ["Fragmentos de configuracion comentados", "Correo tipo al hosting pidiendo lo que no puedes tocar tu", "Rutina mensual de 6 puntos"]
+  },
+  "criterios_calidad": ["Cada medida dice si puede romper el diseno o el checkout", "Se distingue lo que depende del hosting", "Nada de consejos genericos sin donde tocarlo"],
+  "tono": "practico, de tecnico que te lo explica bien"
+}

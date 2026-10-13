@@ -1,0 +1,37 @@
+{
+  "tarea": "Corregir la entrega de un alumno con rúbrica, dar nota justificada y escribir feedback accionable",
+  "entradas": {
+    "enunciado_del_ejercicio": "[PEGA EL ENUNCIADO QUE DISTE]",
+    "solucion_de_referencia": "[PEGA TU SOLUCIÓN O LOS PUNTOS QUE DEBÍAN APARECER]",
+    "entrega_del_alumno": "[PEGA AQUÍ LO QUE HA ENTREGADO]",
+    "nivel_esperado": "[PRINCIPIANTE, INTERMEDIO O AVANZADO]"
+  },
+  "rubrica": [
+    {"criterio": "[CRITERIO 1, EJ. PLANTEAMIENTO CORRECTO]", "peso": "[PORCENTAJE]"},
+    {"criterio": "[CRITERIO 2, EJ. EJECUCIÓN Y CÁLCULOS]", "peso": "[PORCENTAJE]"},
+    {"criterio": "[CRITERIO 3, EJ. JUSTIFICACIÓN DE LAS DECISIONES]", "peso": "[PORCENTAJE]"},
+    {"criterio": "[CRITERIO 4, EJ. PRESENTACIÓN Y CLARIDAD]", "peso": "[PORCENTAJE]"}
+  ],
+  "instrucciones": [
+    "Puntúa cada criterio de 0 a 4 y explica en una frase por qué esa puntuación, citando textualmente el fragmento de la entrega que la justifica",
+    "Calcula la nota final sobre 10 aplicando los pesos y muestra el cálculo",
+    "Distingue entre error de concepto, error de ejecución y despiste: dilo explícitamente",
+    "Si algo está bien pero por el motivo equivocado, señálalo",
+    "No inventes contenido que no esté en la entrega ni supongas buenas intenciones"
+  ],
+  "formato_salida": {
+    "para_el_profesor": ["tabla criterio-puntuacion-evidencia", "nota final con el cálculo", "señales de alerta"],
+    "para_el_alumno": ["3 frases de lo que has hecho bien", "2 fallos concretos con la corrección", "1 tarea de 15 minutos para arreglarlo", "frase de cierre"]
+  },
+  "restricciones": [
+    "El feedback al alumno no supera las 180 palabras",
+    "Nada de sarcasmo ni de juicios sobre la persona: solo sobre el trabajo",
+    "Si la entrega está incompleta, dilo y no la puntúes por encima de lo entregado",
+    "Español de España, tuteando al alumno"
+  ],
+  "criterios_calidad": [
+    "Otro profesor con la misma rúbrica pondría una nota parecida",
+    "Cada punto quitado está atado a una evidencia del texto",
+    "El alumno sabe exactamente qué hacer a continuación"
+  ]
+}

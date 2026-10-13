@@ -1,0 +1,36 @@
+{
+  "tarea": "Preparar la solicitud completa de una operacion de financiacion ante banco, linea ICO o sociedad de garantia reciproca",
+  "operacion": {
+    "tipo": "[PRESTAMO / POLIZA DE CREDITO / LINEA ICO / AVAL SGR / LEASING]",
+    "importe": "[EUROS]",
+    "destino_del_dinero": "[INVERSION O CIRCULANTE, DETALLADO]",
+    "plazo": "[ANOS]"
+  },
+  "solicitante": {
+    "forma_juridica": "[AUTONOMO / SL]",
+    "antiguedad": "[ANOS]",
+    "facturacion_dos_ultimos_anos": "[EUROS Y EUROS]",
+    "resultado_ultimo_ejercicio": "[EUROS]",
+    "deuda_bancaria_actual": "[EUROS Y NUMERO DE ENTIDADES]",
+    "incidencias": "[IMPAGOS, APLAZAMIENTOS CON HACIENDA O NINGUNA]",
+    "garantias_ofrecidas": "[AVAL PERSONAL, INMUEBLE, PIGNORACION O NINGUNA]"
+  },
+  "entregables": [
+    "Checklist de documentacion con una linea por documento, quien lo emite y donde conseguirlo",
+    "Memoria de la operacion de una pagina: quien eres, que pides, para que y como lo vas a devolver",
+    "Cuadro con los cuatro ratios que mira el analista y el valor del solicitante",
+    "Guion de la reunion con la oficina: como abrir, que ensenar y que no decir de mas",
+    "Las diez objeciones mas habituales del analista con la respuesta preparada",
+    "Preguntas que hacer tu: comisiones, vinculaciones, cancelacion anticipada y carencia"
+  ],
+  "ratios_a_calcular": ["Deuda total entre beneficio operativo", "Cobertura de la cuota con el beneficio mensual", "Fondos propios sobre total del balance", "Peso de la cuota nueva sobre los ingresos"],
+  "avisos_obligatorios": [
+    "Explicar en lenguaje llano que significa firmar un aval personal y que bienes quedan expuestos",
+    "Advertir sobre productos vinculados que encarecen la operacion (seguros, planes, tarjetas)",
+    "Recordar que conviene pedir oferta a mas de una entidad antes de firmar"
+  ],
+  "restricciones": ["No prometer que la operacion se aprobara", "No inventar requisitos concretos de una entidad: hablar de lo habitual y marcar lo que hay que confirmar", "Distinguir lo que aplica a autonomo y lo que aplica a sociedad"],
+  "formato_salida": "Documento con seis apartados numerados y checklists con casillas para ir marcando",
+  "criterios_calidad": ["El usuario puede salir a por los papeles hoy mismo con la lista en la mano", "La memoria cabe en una pagina", "Cada objecion tiene respuesta con un dato, no con una excusa"],
+  "tono": "Cercano pero riguroso, tuteando"
+}

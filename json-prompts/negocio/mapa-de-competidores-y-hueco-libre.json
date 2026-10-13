@@ -1,0 +1,33 @@
+{
+  "tarea": "Analizar la competencia de [TU NEGOCIO] en [ZONA O NICHO] y detectar el hueco de mercado que nadie está cubriendo bien",
+  "contexto": {
+    "mi_negocio": "[QUÉ VENDES Y A QUIÉN, EN UNA FRASE]",
+    "competidores": "[LISTA DE 3 A 6 COMPETIDORES CON SU WEB O PERFIL]",
+    "datos_recogidos": "[PEGA AQUÍ PRECIOS, TEXTOS DE SUS WEBS, RESEÑAS O LO QUE HAYAS COPIADO DE CADA UNO]",
+    "mis_fortalezas": "[LO QUE TÚ HACES MEJOR O DE FORMA DISTINTA]"
+  },
+  "metodo": [
+    "Analizar cada competidor por: público al que apunta, promesa principal, gama de precios, canales donde vende, puntos fuertes y quejas repetidas de sus clientes",
+    "Detectar los dos ejes que de verdad separan a los competidores en este mercado y colocar a cada uno en una rejilla de dos ejes",
+    "Buscar huecos: público desatendido, promesa que nadie hace, formato o rango de precio vacío",
+    "Valorar cada hueco por tamaño aparente, facilidad de entrada y encaje con mis fortalezas"
+  ],
+  "restricciones": [
+    "Usar solo la información aportada en datos_recogidos y marcar como SUPUESTO cualquier deducción",
+    "Prohibido inventar precios, cifras de facturación o número de clientes de terceros",
+    "Nada de descalificar a la competencia: análisis frío"
+  ],
+  "formato_salida": {
+    "tabla_comparativa": "Una fila por competidor y columnas: público, promesa, precio, canales, fuerte, débil, queja repetida",
+    "mapa_posicionamiento": "Descripción de la rejilla de dos ejes indicando en qué cuadrante cae cada competidor y dónde queda espacio vacío",
+    "huecos": "Tres huecos ordenados de mejor a peor, cada uno con: descripción, a quién sirve, por qué está libre y riesgo principal",
+    "posicionamiento_recomendado": "Una frase de posicionamiento para mi negocio con la estructura: para [CLIENTE] que [SITUACIÓN], somos [CATEGORÍA] que [BENEFICIO], a diferencia de [ALTERNATIVA]",
+    "siguiente_paso": "Tres acciones concretas para esta semana que prueban si el hueco es real"
+  },
+  "criterios_calidad": [
+    "Los ejes del mapa son los que de verdad usa el cliente para elegir, no categorías genéricas",
+    "Cada hueco viene con su riesgo, no solo con su oportunidad",
+    "La frase de posicionamiento se entiende sin explicación"
+  ],
+  "tono": "Analítico y claro, tuteando"
+}

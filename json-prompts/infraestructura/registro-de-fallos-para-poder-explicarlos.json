@@ -1,0 +1,46 @@
+{
+  "tarea": "Diseñar el registro mínimo de eventos para poder diagnosticar reclamaciones sin ser técnico",
+  "contexto": {
+    "flujo_que_da_dinero": "[DESCRIBE EL CAMINO: VISITA, FORMULARIO, PAGO, ENTREGA, EMAIL]",
+    "herramientas": "[PLATAFORMA WEB, PASARELA DE PAGO, AUTOMATIZACIÓN, IA, EMAIL]",
+    "reclamacion_tipica": "[LA QUEJA QUE MÁS SE REPITE]",
+    "perfil_usuario": "sin perfil técnico; los registros deben ser legibles en una hoja de cálculo"
+  },
+  "entradas": {
+    "volumen": "[OPERACIONES AL DÍA APROXIMADAS]",
+    "donde_puedo_guardar": "[HOJA DE CÁLCULO, BASE NOCODE, PANEL DE LA HERRAMIENTA]"
+  },
+  "pasos": [
+    "1. Dibuja el recorrido completo en pasos y marca en cuáles se puede romper sin que nadie se entere.",
+    "2. Define para cada paso un evento con: fecha y hora, identificador de la operación, quién, qué pasó y resultado.",
+    "3. Elige un identificador único que viaje por todo el recorrido, para poder unir el pago con el email enviado.",
+    "4. Decide qué NO se guarda: contraseñas, tarjetas y datos personales que no hagan falta.",
+    "5. Añade el registro de errores: mensaje literal, paso donde ocurrió y si hubo reintento.",
+    "6. Fija cuánto tiempo se conserva y cómo se borra lo viejo.",
+    "7. Crea una vista de consulta: buscar por email o pedido y ver la línea de tiempo completa.",
+    "8. Prueba con un caso real haciendo tú una compra o un envío de prueba."
+  ],
+  "restricciones": [
+    "Nada de guardar datos personales que no necesites para resolver la incidencia.",
+    "El registro no puede vivir solo dentro de la herramienta que se puede caer.",
+    "Cada línea debe entenderse leyéndola sola, sin contexto extra."
+  ],
+  "errores_tipicos": [
+    "Guardar solo los éxitos y no los errores, que es justo lo que necesitas.",
+    "Registrar mensajes tipo error sin decir en qué paso ni con qué operación.",
+    "Usar horas locales y de servidor mezcladas y no poder ordenar nada.",
+    "Guardar el número de tarjeta completo o el contenido íntegro de conversaciones.",
+    "Dejar el registro creciendo sin límite hasta que la hoja no abre."
+  ],
+  "formato_salida": {
+    "esquema_de_evento": "lista de campos con nombre, ejemplo y por qué se guarda",
+    "tabla_de_puntos": "columnas: paso del recorrido | evento a registrar | dónde se configura | quién lo escribe",
+    "consulta_tipo": "pasos para investigar la reclamación típica indicada",
+    "politica_de_retencion": "cuánto se guarda cada tipo de dato y cómo se borra"
+  },
+  "criterios_calidad": [
+    "Con el identificador único se puede reconstruir un caso de principio a fin.",
+    "Los errores quedan registrados con su mensaje literal.",
+    "No se almacena ningún dato sensible innecesario."
+  ]
+}

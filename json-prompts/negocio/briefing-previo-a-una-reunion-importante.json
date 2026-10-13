@@ -1,0 +1,37 @@
+{
+  "tarea": "Preparar el briefing de una reunión importante para llegar con objetivo, argumentos y respuestas listas",
+  "contexto": {
+    "mi_empresa": "[NOMBRE Y A QUÉ TE DEDICAS]",
+    "con_quien": "[PERSONA, CARGO Y EMPRESA]",
+    "tipo": "[VENTA / NEGOCIACIÓN DE PRECIO / ALIANZA / BANCO / PROVEEDOR]",
+    "historial": "[QUÉ HA PASADO ANTES CON ELLOS]",
+    "duracion_prevista": "[MINUTOS]"
+  },
+  "entradas": {
+    "objetivo_maximo": "[EL RESULTADO IDEAL]",
+    "minimo_aceptable": "[POR DEBAJO DE ESTO NO CIERRAS]",
+    "que_sabes_de_ellos": "[DATOS, WEB, NOTICIAS, CONVERSACIONES PREVIAS]",
+    "lo_que_temes_que_te_pregunten": ["[PREGUNTA INCÓMODA]"]
+  },
+  "procedimiento": [
+    "Formular en una frase qué quieres que la otra parte haga al salir de la reunión",
+    "Definir tres mensajes clave y una prueba o dato que respalde cada uno",
+    "Preparar cinco preguntas abiertas para que hablen ellos y descubras su prioridad real",
+    "Anticipar cuatro objeciones probables con respuesta de dos frases cada una",
+    "Fijar tus líneas rojas y qué concesiones puedes dar a cambio de qué",
+    "Preparar el cierre: qué propones como siguiente paso concreto y con fecha"
+  ],
+  "restricciones": [
+    "No inventar datos sobre la otra empresa: si no los tienes, indicarlos como algo que confirmar durante la reunión",
+    "El briefing debe caber en una hoja",
+    "Nada de guiones palabra por palabra, solo mensajes y preguntas"
+  ],
+  "formato_salida": {
+    "secciones": ["Objetivo en una frase", "Tres mensajes clave con su prueba", "Cinco preguntas para hacerles", "Objeciones y respuestas", "Líneas rojas y concesiones", "Cierre propuesto", "Chuleta de 10 líneas para llevar impresa"]
+  },
+  "criterios_calidad": [
+    "Las preguntas son abiertas y no se responden con sí o no",
+    "Las respuestas a objeciones ocupan dos frases como mucho",
+    "El cierre propuesto incluye fecha y responsable"
+  ]
+}

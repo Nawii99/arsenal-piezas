@@ -1,0 +1,53 @@
+{
+  "tarea": "Preparar la propuesta de un plan de formación a medida para una empresa, con objetivos medibles, itinerario por perfiles y seguimiento.",
+  "contexto": {
+    "empresa": "[SECTOR, TAMAÑO, CIUDAD]",
+    "quien_decide": "[GERENCIA / RECURSOS HUMANOS / RESPONSABLE DE ÁREA Y QUÉ LE PREOCUPA]",
+    "problema_declarado": "[LO QUE TE HAN DICHO QUE NECESITAN, CON SUS PALABRAS]",
+    "perfiles_a_formar": "[GRUPOS, CUÁNTAS PERSONAS Y NIVEL DE CADA UNO]",
+    "disponibilidad": "[HORAS QUE PUEDEN DEDICAR, EN HORARIO LABORAL O FUERA]",
+    "formato_posible": "[PRESENCIAL EN SUS OFICINAS / ONLINE EN DIRECTO / MIXTO]"
+  },
+  "entradas": {
+    "lo_que_ofreces": "[TUS MÓDULOS, TALLERES Y MATERIALES DISPONIBLES]",
+    "restricciones_de_la_empresa": "[TURNOS, PICOS DE TRABAJO, HERRAMIENTAS QUE USAN, NORMATIVA INTERNA]",
+    "presupuesto_orientativo": "[SI LO CONOCES]"
+  },
+  "proceso": [
+    "1. Traduce el problema declarado a un problema de comportamiento: qué hace hoy el equipo y qué debería hacer distinto. Si no cambia un comportamiento, no lo arregla una formación y hay que decirlo.",
+    "2. Define de 3 a 5 objetivos medibles con el indicador que la empresa ya tenga (tiempo por tarea, errores, presupuestos enviados, reseñas, incidencias).",
+    "3. Agrupa a las personas en 2 o 3 itinerarios por perfil; no todos necesitan lo mismo ni las mismas horas.",
+    "4. Monta el itinerario en sesiones cortas separadas por días de aplicación en el puesto: nada de un atracón de 8 horas.",
+    "5. Para cada sesión define: objetivo, duración, entregable aplicado a su negocio y quién debe asistir.",
+    "6. Diseña la aplicación en el puesto: qué tarea real hacen entre sesiones y quién la supervisa dentro de la empresa.",
+    "7. Define la medición: qué se mide antes, qué después y en qué fecha se revisa.",
+    "8. Prepara el calendario con fechas propuestas, sala o enlace, y qué necesitas de ellos (equipos, permisos, acceso a sus herramientas).",
+    "9. Cierra con condiciones: precio por grupo, qué incluye, materiales, número máximo de asistentes, política de cambios de fecha y validez de la oferta.",
+    "10. Añade una nota sobre posibles ayudas o bonificaciones a la formación: indica que debe confirmarlo su gestoría y no lo des por hecho."
+  ],
+  "restricciones": [
+    "Nada de programas genéricos: todos los ejemplos y ejercicios se hacen con casos de esa empresa.",
+    "No prometas resultados de negocio que dependan de decisiones que no controlas.",
+    "Propuesta de 3 páginas como mucho, más un anexo con el detalle de sesiones.",
+    "Precio con cifra clara y qué queda fuera, sin letra pequeña."
+  ],
+  "formato_salida": {
+    "pagina_1": "Situación entendida, objetivos medibles y resultado esperado.",
+    "pagina_2": "Itinerarios por perfil, calendario y modalidad.",
+    "pagina_3": "Precio, qué incluye, qué no incluye, condiciones y siguiente paso con fecha.",
+    "anexo": "Tabla de sesiones: Sesión | Perfil | Duración | Objetivo | Entregable | Tarea entre sesiones.",
+    "correo_de_envio": "Borrador de 8 líneas para mandar la propuesta."
+  },
+  "criterios_calidad": [
+    "Cada objetivo tiene un indicador que la empresa puede consultar sin trabajo extra.",
+    "Quien decide entiende en la primera página qué cambia en su equipo.",
+    "Las sesiones encajan con la disponibilidad declarada, sin optimismo.",
+    "Queda escrito qué pasa si no se cumple lo pactado por cualquiera de las dos partes."
+  ],
+  "errores_tipicos": [
+    "Vender horas de formación en vez de un cambio concreto.",
+    "Aceptar formar a 30 personas de niveles distintos en la misma sala.",
+    "No pedir nada a la empresa: sin aplicación en el puesto no queda nada a los quince días.",
+    "Afirmar que la formación está bonificada sin comprobarlo."
+  ]
+}

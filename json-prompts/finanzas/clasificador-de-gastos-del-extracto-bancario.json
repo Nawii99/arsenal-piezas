@@ -1,0 +1,37 @@
+{
+  "tarea": "Clasificar todos los movimientos de gasto de un extracto bancario en categorías útiles y señalar los apuntes que no cuadran",
+  "contexto": {
+    "negocio": "[QUÉ HACE TU NEGOCIO]",
+    "forma_juridica": "[AUTÓNOMO O SOCIEDAD LIMITADA]",
+    "periodo": "[MES Y AÑO DEL EXTRACTO]",
+    "moneda": "EUR"
+  },
+  "entradas": {
+    "movimientos": "[PEGA AQUÍ LOS MOVIMIENTOS: FECHA, CONCEPTO, IMPORTE]",
+    "categorias_propias": "[SI YA USAS CATEGORÍAS, PÉGALAS AQUÍ; SI NO, ESCRIBE NINGUNA]"
+  },
+  "procedimiento": [
+    "Traducir cada concepto bancario a un proveedor reconocible (ejemplo: COMPRA TARJ 4589 AMZN MKTP se convierte en Amazon)",
+    "Asignar una categoría entre: local y suministros, personal, software y suscripciones, marketing, compras y materias primas, transporte y dietas, servicios profesionales, comisiones bancarias, impuestos y seguros, otros",
+    "Marcar cada gasto como fijo (se repite cada mes) o variable",
+    "Marcar si es un cargo automático (domiciliado o en tarjeta), que son los que se olvidan",
+    "Señalar como dudosos: conceptos sin proveedor claro, importes muy distintos a lo habitual, posibles gastos personales y cargos duplicados el mismo día",
+    "No crear categorías nuevas salvo que un gasto no encaje en ninguna y pese más del 2% del total"
+  ],
+  "restricciones": [
+    "No estimar ni redondear importes: usar el importe exacto del extracto",
+    "Si un concepto es ambiguo, dejarlo como POR REVISAR en vez de adivinar",
+    "No dar consejo fiscal concreto: solo indicar qué conviene preguntar a la asesoría"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown más resumen",
+    "columnas": ["fecha", "proveedor", "importe", "categoria", "fijo_o_variable", "automatico", "estado"],
+    "bloques_finales": ["Total por categoría de mayor a menor con su porcentaje sobre el total", "Los 5 proveedores que más te cuestan", "Lista de movimientos por revisar con el motivo y qué comprobar"]
+  },
+  "criterios_calidad": [
+    "La suma de las categorías coincide con el total de gastos del extracto",
+    "Ningún movimiento se queda sin clasificar",
+    "Cada dudoso explica en una línea por qué lo es"
+  ],
+  "tono": "directo y sin tecnicismos contables"
+}

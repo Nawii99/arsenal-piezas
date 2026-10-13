@@ -1,0 +1,36 @@
+{
+  "tarea": "Extraer de una transcripción todos los compromisos y tareas acordadas, con su cita textual de respaldo",
+  "entradas": {
+    "transcripcion": "[PEGA AQUÍ LA TRANSCRIPCIÓN COMPLETA]",
+    "participantes": ["[NOMBRE]", "[NOMBRE]"],
+    "fecha_reunion": "[FECHA]",
+    "proyecto_o_cliente": "[NOMBRE DEL PROYECTO O CLIENTE]"
+  },
+  "que_cuenta_como_compromiso": [
+    "Alguien dice que hará algo concreto, aunque no diga fecha",
+    "Se acuerda enviar, revisar, llamar, preparar o decidir algo",
+    "Se fija una fecha, un plazo o una próxima reunión"
+  ],
+  "que_no_cuenta": [
+    "Ideas sueltas, hipótesis y frases del tipo estaría bien o habría que",
+    "Opiniones y quejas sin acción asociada"
+  ],
+  "procedimiento": [
+    "Recorrer la transcripción y marcar cada frase que contenga un compromiso",
+    "Normalizar cada compromiso a: verbo en infinitivo + entregable concreto + responsable + fecha",
+    "Traducir plazos vagos a fecha real calculando desde la fecha de la reunión y marcarlos como estimados",
+    "Si el responsable no está claro, dejarlo como SIN ASIGNAR en vez de suponerlo",
+    "Detectar compromisos contradictorios o repetidos y agruparlos",
+    "Ordenar el resultado por fecha límite, lo más urgente arriba"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla en CSV con cabecera para importar en Excel, Notion o Trello",
+    "columnas": ["tarea", "responsable", "fecha_limite", "prioridad", "cita_textual", "confianza"],
+    "extra": "Debajo de la tabla, una lista corta de compromisos ambiguos que conviene confirmar por escrito"
+  },
+  "criterios_calidad": [
+    "Cada fila incluye la cita literal donde se dijo, para poder verificarla",
+    "No aparece ninguna tarea que no se pueda rastrear en la transcripción",
+    "Las fechas están en formato DD/MM/AAAA"
+  ]
+}

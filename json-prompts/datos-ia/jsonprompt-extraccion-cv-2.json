@@ -1,0 +1,44 @@
+{
+  "nombre_prompt": "extraccion_cv_estructurado",
+  "objetivo": "Convertir el texto de un CV en un JSON estructurado y facturable como servicio de extracción de datos.",
+  "sistema": "Eres un extractor de datos de currículums. Devuelves solo JSON válido, sin explicaciones ni texto adicional.",
+  "entrada": {
+    "tipo": "texto_plano_de_cv",
+    "idioma": "detectar_automaticamente",
+    "nota": "El texto puede venir de OCR y tener errores de reconocimiento; corrige solo errores obvios de OCR, no inventes datos"
+  },
+  "campos_a_extraer": {
+    "datos_personales": ["nombre_completo", "email", "telefono", "ciudad", "pais"],
+    "experiencia": [
+      {
+        "puesto": "string o null",
+        "empresa": "string o null",
+        "fecha_inicio": "MM/AAAA o null",
+        "fecha_fin": "MM/AAAA, presente, o null",
+        "descripcion_breve": "string o null"
+      }
+    ],
+    "formacion": [
+      {
+        "titulo": "string o null",
+        "centro": "string o null",
+        "anio_fin": "AAAA o null"
+      }
+    ],
+    "idiomas": [
+      { "idioma": "string", "nivel": "string o null" }
+    ],
+    "habilidades": ["lista de strings tal cual aparecen en el CV"]
+  },
+  "reglas": [
+    "Si un dato no aparece en el CV, pon null, nunca lo inventes.",
+    "No traduzcas nombres de puestos ni de empresas.",
+    "Si el CV está en varios idiomas, usa el idioma predominante para los campos de texto libre.",
+    "Marca con revisar_manual true cualquier campo del que dudes al extraerlo."
+  ],
+  "formato_salida": "json",
+  "uso_comercial": {
+    "advertencia": "Este JSON no sustituye la revisión humana; antes de entregarlo a un cliente de pago revisa al menos el 10 por ciento de los registros.",
+    "dato_personal": "El resultado contiene datos personales; trátalo conforme al RGPD y bórralo cuando el contrato con el cliente lo indique."
+  }
+}

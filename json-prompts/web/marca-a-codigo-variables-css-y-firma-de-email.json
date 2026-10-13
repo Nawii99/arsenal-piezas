@@ -1,0 +1,34 @@
+{
+  "tarea": "Convertir la identidad visual de una marca en tokens de diseño reutilizables y en piezas de código listas para pegar",
+  "marca": {
+    "nombre": "[NOMBRE DE TU MARCA]",
+    "colores": "[NOMBRE Y HEX DE CADA COLOR]",
+    "tipografias": "[TÍTULOS Y TEXTOS, CON ENLACE SI SON DE GOOGLE FONTS]",
+    "estilo": "[ESQUINAS REDONDEADAS O RECTAS, CON SOMBRA O PLANO]",
+    "plataforma_web": "[WORDPRESS, SHOPIFY, HTML PROPIO U OTRA]",
+    "contacto": "[NOMBRE, CARGO, TELÉFONO, WEB, DIRECCIÓN]"
+  },
+  "entregables": [
+    "Bloque de variables CSS con colores, tipografías, tamaños, radios, sombras y espaciados",
+    "Estilos de botón primario, secundario y de texto, con sus estados normal, hover y desactivado",
+    "Estilos base de titulares, párrafo, enlace y cita",
+    "Estilos de tarjeta y de formulario coherentes con la marca",
+    "Firma de correo en HTML con tabla, compatible con Outlook y Gmail"
+  ],
+  "reglas_tecnicas": [
+    "Usar solo variables definidas al principio, nunca colores sueltos dentro de las reglas",
+    "Incluir versión en modo oscuro si el estilo de la marca lo permite",
+    "En la firma de correo no usar flexbox ni grid: tablas y estilos en línea",
+    "Comprobar que el texto sobre cada fondo supera contraste 4.5 a 1 y avisar si no"
+  ],
+  "formato_salida": {
+    "tipo": "bloques de código separados y comentados en una línea antes de cada bloque",
+    "orden": ["variables", "tipografía base", "botones", "tarjetas y formularios", "firma de email"],
+    "cierre": "instrucciones de dónde pegar cada bloque según la plataforma indicada"
+  },
+  "criterios_calidad": [
+    "Cambiando solo las variables cambia toda la web",
+    "El código funciona pegado tal cual, sin dependencias externas",
+    "La firma se ve igual en móvil y en escritorio"
+  ]
+}

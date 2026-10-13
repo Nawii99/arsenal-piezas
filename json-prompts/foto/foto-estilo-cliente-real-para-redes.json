@@ -1,0 +1,32 @@
+{
+  "tarea": "Generar prompts de imagen tipo contenido de clienta real mostrando [PRENDA O COMPLEMENTO] de [NOMBRE DE TU MARCA]",
+  "objetivo": "que la imagen parezca hecha con movil por una persona normal, no una campana de marca",
+  "entradas": {
+    "prenda": "[PRENDA CON TEJIDO Y COLOR]",
+    "persona": "[EDAD APROXIMADA, ESTILO Y COMPLEXION]",
+    "escenario": "[HABITACION, PROBADOR DE TIENDA, PORTAL, COCHE, ASCENSOR]",
+    "momento": "[ANTES DE SALIR / EN EL TRABAJO / DE VIAJE]"
+  },
+  "claves_de_realismo": [
+    "Luz disponible: bombilla calida de casa, fluorescente de probador o ventana sin difusor",
+    "Encuadre imperfecto, con leve inclinacion y sujecion a una mano",
+    "Grano suave y nitidez de sensor pequeno, no calidad de camara profesional",
+    "Detalles de vida en el fondo: percha, espejo con marcas, ropa doblada",
+    "Pose espontanea, no de modelo"
+  ],
+  "restricciones": [
+    "Sin fondo de estudio ni iluminacion profesional",
+    "Sin texto ni interfaz de aplicacion sobre la imagen",
+    "Sin cara borrosa artificial ni recortes raros del reflejo del espejo",
+    "La prenda tiene que verse entera al menos en una de las variantes"
+  ],
+  "formato_salida": {
+    "variantes": ["selfie de espejo de cuerpo entero", "detalle del complemento en la mano", "foto hecha por otra persona en la calle", "prenda colgada en la habitacion antes de ponersela"],
+    "cada_variante": ["prompt en ingles", "prompt negativo", "relacion de aspecto 4:5 o 9:16", "pie de foto sugerido en espanol"]
+  },
+  "criterios_calidad": [
+    "Un desconocido diria que la foto la ha hecho una clienta",
+    "La prenda sigue siendo identificable y con el color correcto",
+    "Vale para publicar en redes y para probar como anuncio"
+  ]
+}

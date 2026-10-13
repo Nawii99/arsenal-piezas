@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribir un carrusel de 8 diapositivas sobre un tema concreto, con el texto exacto de cada diapositiva, el pie de publicación y la indicación visual",
+  "entradas": {
+    "tema": "[TEMA CONCRETO DEL CARRUSEL]",
+    "para_quien": "[A QUIÉN LE INTERESA ESTO Y QUÉ SABE YA]",
+    "mi_experiencia": "[QUÉ HAS VIVIDO, MEDIDO O APRENDIDO TÚ SOBRE ESTO]",
+    "red": "[INSTAGRAM / LINKEDIN]",
+    "accion_final": "[GUARDAR, COMENTAR UNA PALABRA, ESCRIBIRME, ENTRAR AL ENLACE]",
+    "marca": "[NOMBRE DE TU EMPRESA Y COLORES SI LOS TIENES]"
+  },
+  "estructura_obligatoria": [
+    "D1 portada: promesa concreta o error caro, máximo 9 palabras",
+    "D2 tensión: por qué esto le está costando dinero o tiempo a quien lee",
+    "D3 a D6 desarrollo: un punto por diapositiva, con ejemplo real o número",
+    "D7 resumen accionable: los pasos en una sola lista",
+    "D8 cierre: quién eres, qué ofreces y la acción final"
+  ],
+  "reglas_de_redaccion": [
+    "Máximo 30 palabras por diapositiva y máximo 12 en el titular",
+    "Frases cortas, verbos en presente y segunda persona",
+    "Prohibidas las palabras vacías: sinergia, disruptivo, potenciar, empoderar",
+    "Cada diapositiva debe dejar una duda abierta que empuje a deslizar"
+  ],
+  "formato_salida": {
+    "diapositivas": "Lista de 8 elementos con: numero, titular, texto_de_apoyo, idea_visual",
+    "pie_de_publicacion": "Texto de 120 a 180 palabras que amplíe el tema y termine con la acción final",
+    "primera_linea": "Tres alternativas de primera línea del pie, cada una menor de 125 caracteres",
+    "etiquetas": "De 8 a 12 hashtags mezclando nicho, sector y zona",
+    "comentario_fijado": "Un comentario propio para fijar que reactive la conversación"
+  },
+  "criterios_calidad": [
+    "Alguien que no te conozca puede aplicar algo hoy mismo solo con leer el carrusel",
+    "Ninguna diapositiva es relleno ni repite la anterior",
+    "El texto cabe en la imagen sin reducir la letra a tamaño ilegible"
+  ],
+  "tono": "Experto que habla claro, sin postureo, español de España"
+}

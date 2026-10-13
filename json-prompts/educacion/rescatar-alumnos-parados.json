@@ -1,0 +1,50 @@
+{
+  "tarea": "Diagnosticar dónde y por qué abandonan los alumnos de una formación y diseñar los arreglos del contenido y los mensajes de rescate.",
+  "contexto": {
+    "formacion": "[NOMBRE, FORMATO Y DURACIÓN]",
+    "numero_de_alumnos": "[CUÁNTOS HAY MATRICULADOS]",
+    "datos_disponibles": "[QUÉ PUEDES VER: PROGRESO POR MÓDULO, ENTREGAS, MENSAJES, ASISTENCIA, DEVOLUCIONES]",
+    "promesa_del_curso": "[QUÉ PROMETISTE AL VENDERLO]",
+    "canal_de_contacto": "[EMAIL / WHATSAPP / COMUNIDAD]"
+  },
+  "entradas": {
+    "progreso_por_modulo": "[PEGA LOS DATOS: MÓDULO Y CUÁNTOS LO COMPLETAN]",
+    "mensajes_de_alumnos": "[QUEJAS, DUDAS Y MOTIVOS DE BAJA TAL CUAL LOS ESCRIBIERON]",
+    "tareas_pedidas": "[QUÉ ENTREGABLES PIDES Y EN QUÉ MOMENTO]"
+  },
+  "proceso": [
+    "1. Dibuja el embudo del curso: cuántos empiezan, cuántos llegan a cada módulo y cuántos terminan. Marca los dos escalones donde más gente se cae.",
+    "2. Clasifica cada caída en una de estas causas: no entendió, se aburrió, le faltaba un requisito, la tarea era demasiado grande, se le acabó el tiempo, no le importaba ese módulo.",
+    "3. Contrasta la causa con los mensajes reales de alumnos; si no hay datos suficientes, escribe las 3 preguntas exactas que hay que enviar para averiguarlo.",
+    "4. Para el escalón peor, propón el arreglo del contenido: partir la lección, añadir un ejemplo resuelto, quitar un requisito, mover la tarea, grabar un vídeo de 3 minutos que desatasque.",
+    "5. Define las señales de alarma automáticas: 7 días sin entrar, tarea sin entregar, módulo abierto y no terminado.",
+    "6. Escribe 3 mensajes de rescate distintos por señal: uno que pregunta y no vende, uno que ofrece el atajo (resumen o plantilla) y uno de última llamada con fecha.",
+    "7. Diseña un empujón positivo: reconocer públicamente a quien avanza y un hito intermedio celebrable.",
+    "8. Establece qué vas a medir dentro de 30 días para saber si el arreglo funcionó, con los números de partida escritos hoy."
+  ],
+  "restricciones": [
+    "Nada de culpar al alumno: si abandona en el mismo punto mucha gente, el problema es el curso.",
+    "Los mensajes de rescate no llevan oferta de compra.",
+    "Máximo 3 contactos de rescate por alumno; después se le deja tranquilo.",
+    "No pidas testimonios a quien no ha terminado."
+  ],
+  "formato_salida": {
+    "bloque_1": "Embudo con porcentajes y los dos puntos críticos señalados.",
+    "bloque_2": "Tabla: Punto de caída | Causa probable | Prueba en la que me baso | Arreglo | Esfuerzo (bajo, medio, alto).",
+    "bloque_3": "Preguntas exactas para enviar a los que abandonaron.",
+    "bloque_4": "Los mensajes de rescate listos para copiar, con su señal disparadora y su momento.",
+    "bloque_5": "Números de partida y qué revisar a los 30 días."
+  },
+  "criterios_calidad": [
+    "Cada causa se apoya en un dato o en una cita de alumno, no en una intuición.",
+    "Hay al menos un arreglo de esfuerzo bajo que se puede hacer esta semana.",
+    "Los mensajes suenan a persona preocupada, no a recordatorio automático.",
+    "Queda escrito el número exacto que quieres mover y para cuándo."
+  ],
+  "errores_tipicos": [
+    "Añadir contenido nuevo cuando el problema es que sobra.",
+    "Mandar el mismo recordatorio genérico a todo el mundo.",
+    "Mirar solo las ventas y no el porcentaje de finalización.",
+    "Regalar una prórroga sin arreglar lo que atascaba."
+  ]
+}

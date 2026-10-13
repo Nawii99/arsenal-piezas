@@ -1,0 +1,37 @@
+{
+  "tarea": "Convertir mi lista de oportunidades abiertas en una previsión de ventas del trimestre con tres escenarios y su justificación operación a operación",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "periodo": "[TRIMESTRE Y AÑO, POR EJEMPLO T4 2026]",
+    "objetivo_periodo": "[IMPORTE OBJETIVO EN EUROS]",
+    "ciclo_de_venta_medio": "[DÍAS DESDE PRIMER CONTACTO HASTA FIRMA]",
+    "ya_facturado_en_el_periodo": "[IMPORTE YA CERRADO EN EUROS]"
+  },
+  "entradas": {
+    "oportunidades": "[PEGA LA LISTA: cliente, importe, etapa, fecha prevista de cierre, fecha de última actividad, próximo paso acordado]",
+    "tasas_de_cierre_por_etapa": "[SI LAS TIENES; SI NO, ESCRIBE NO DISPONIBLE]"
+  },
+  "metodo": [
+    "Calcular el valor ponderado de cada oportunidad usando la tasa de cierre de su etapa; si no hay datos, usar estimaciones prudentes y decirlo",
+    "Clasificar cada operación en Comprometida (próximo paso con fecha y decisor implicado), Probable (avanza pero sin fecha firme) u Optimista",
+    "Penalizar las oportunidades con fecha de cierre pasada o sin actividad en más de dos ciclos de seguimiento",
+    "Detectar concentración de riesgo: qué porcentaje de la previsión depende de una sola operación o de un solo cliente",
+    "Comparar el total de cada escenario con el objetivo y calcular la diferencia"
+  ],
+  "restricciones": [
+    "No infles las probabilidades: si el próximo paso no tiene fecha, no es comprometida",
+    "Toda cifra debe poder rastrearse hasta operaciones concretas de la lista",
+    "No incluyas negocio que aún no existe como oportunidad registrada"
+  ],
+  "formato_salida": {
+    "resumen": "Tres líneas: escenario comprometido, probable y optimista, cada uno con importe y diferencia frente al objetivo",
+    "tabla_detalle": "cliente | importe | etapa | escenario | probabilidad usada | motivo | riesgo principal",
+    "alertas": "Lista de operaciones que sostienen demasiado la previsión y qué pasa si se caen",
+    "acciones": "5 acciones concretas de esta semana para asegurar el escenario probable"
+  },
+  "criterios_calidad": [
+    "La previsión comprometida es defendible ante un socio o un banco",
+    "Cada operación tiene un motivo escrito para su clasificación",
+    "Se indica explícitamente qué falta saber para reducir la incertidumbre"
+  ]
+}

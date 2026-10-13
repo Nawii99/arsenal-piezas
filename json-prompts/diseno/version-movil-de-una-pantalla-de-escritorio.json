@@ -1,0 +1,34 @@
+{
+  "tarea": "Adaptar a móvil la pantalla de escritorio [NOMBRE DE LA PANTALLA] de [NOMBRE DEL PRODUCTO]",
+  "contexto": {
+    "contenido_actual": "[ENUMERA LO QUE HAY EN LA PANTALLA DE ESCRITORIO, DE ARRIBA A ABAJO]",
+    "accion_principal": "[QUÉ QUIERES QUE HAGA LA PERSONA]",
+    "porcentaje_movil": "[APROXIMADO, SI LO SABES]",
+    "innegociable": "[QUÉ NO SE PUEDE QUITAR NI OCULTAR]"
+  },
+  "anchos_objetivo": ["360 px móvil pequeño", "768 px tableta", "1280 px escritorio"],
+  "pasos": [
+    "Ordenar los bloques por importancia para la tarea, no por cómo están hoy",
+    "Decidir para cada bloque: se mantiene, se pliega en acordeón, se mueve abajo o se elimina",
+    "Definir la navegación en móvil: menú lateral, pestañas inferiores o menú desplegable, y justificar la elección",
+    "Definir si la acción principal se queda fija en la parte inferior de la pantalla",
+    "Convertir tablas en tarjetas y varias columnas en una sola",
+    "Revisar áreas táctiles de 44 px, márgenes laterales y tamaño de letra mínimo",
+    "Indicar qué se ve sin hacer scroll en 360 px de ancho"
+  ],
+  "restricciones": [
+    "En móvil no se esconde información necesaria para decidir, solo se reordena o se pliega",
+    "Nada de menús con más de 7 entradas visibles a la vez",
+    "No usar ventanas emergentes que tapen la pantalla completa al entrar"
+  ],
+  "formato_salida": {
+    "tipo": "esquema de bloques en orden",
+    "secciones": ["Orden final de bloques en móvil con la decisión tomada en cada uno", "Navegación elegida y por qué", "Qué entra en la primera pantalla sin scroll", "Cambios en tablas y formularios", "Lista de comprobación antes de publicar"]
+  },
+  "criterios_calidad": [
+    "La acción principal se alcanza con el pulgar y sin buscarla",
+    "Cada decisión de plegar o quitar está justificada",
+    "La pantalla se entiende con una sola mano y en vertical"
+  ],
+  "tono": "resolutivo, decidiendo en vez de dar opciones abiertas"
+}

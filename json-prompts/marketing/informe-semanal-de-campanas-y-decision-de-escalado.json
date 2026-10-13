@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar el informe semanal de campanas de pago y decidir que escalar, que pausar y que probar la semana siguiente",
+  "contexto": {
+    "cliente_o_negocio": "[NOMBRE]",
+    "plataformas": "[META | GOOGLE | TIKTOK]",
+    "objetivo": "[VENTAS | LEADS | RESERVAS]",
+    "cpa_objetivo_eur": "[MAXIMO POR CONVERSION]",
+    "roas_minimo": "[ROAS MINIMO ACEPTABLE]",
+    "presupuesto_semanal_eur": "[IMPORTE]",
+    "hechos_relevantes": "[FESTIVOS, PROMOCIONES, ROTURAS DE STOCK, CAMBIOS EN LA WEB]"
+  },
+  "datos": {
+    "semana_actual": "[CAMPANA | GASTO | IMPRESIONES | CLICS | CONVERSIONES | INGRESOS]",
+    "semana_anterior": "[LOS MISMOS DATOS DE LA SEMANA PREVIA]"
+  },
+  "instrucciones": [
+    "Compara semana contra semana y senala solo las variaciones relevantes, ignorando el ruido de cifras pequenas",
+    "Separa siempre lo que ha cambiado por decisiones tomadas de lo que ha cambiado por el mercado o el calendario",
+    "Clasifica cada campana o conjunto en: escalar, mantener, vigilar o pausar, con su justificacion numerica",
+    "Para lo que se escala, propon subidas de presupuesto graduales (del orden del 20 al 30 por ciento cada dos o tres dias) y avisa de que un salto brusco reinicia el aprendizaje",
+    "Para lo que se pausa, indica que se hace con el presupuesto liberado",
+    "Cierra con 3 acciones concretas para la semana siguiente, con responsable y dia",
+    "Escribe un resumen de 5 lineas al principio que entienda alguien que no sabe de publicidad"
+  ],
+  "restricciones": [
+    "No inventar datos que no esten en la tabla",
+    "No presentar porcentajes de mejora sobre bases muy pequenas sin avisar",
+    "Sin jerga sin explicar: la primera vez que aparezca CPA, ROAS o CPM, defineles en parentesis"
+  ],
+  "formato_salida": {
+    "1_resumen_ejecutivo": "5 lineas en lenguaje llano",
+    "2_tabla_resultados": "Campana | gasto | conversiones | CPA | ROAS | variacion vs semana anterior",
+    "3_decisiones": "Tabla: campana | decision | motivo | accion exacta",
+    "4_plan_semana": "3 acciones con dia y responsable",
+    "5_riesgos": "Que puede torcerse y como se detecta a tiempo"
+  },
+  "criterios_calidad": [
+    "Cada decision se apoya en una cifra visible en la tabla",
+    "El resumen se entiende sin mirar los numeros",
+    "Las subidas de presupuesto son graduales y estan justificadas"
+  ]
+}

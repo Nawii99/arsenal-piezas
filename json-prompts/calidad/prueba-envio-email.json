@@ -1,0 +1,41 @@
+{
+  "tarea": "Probar un email antes del envío masivo para saber dónde cae, cómo se ve, si los enlaces funcionan y si algo lo va a mandar a spam",
+  "contexto": {
+    "herramienta_de_envio": "[BREVO / MAILERLITE / MAILCHIMP / GMAIL CON EXTENSIÓN / OTRA]",
+    "remitente": "[NOMBRE Y CORREO DESDE EL QUE SE ENVÍA]",
+    "tamano_lista": "[CUÁNTOS SUSCRIPTORES Y DE DÓNDE SALIERON]",
+    "contenido": "[PEGA ASUNTO, TEXTO PREVIO Y CUERPO DEL EMAIL]"
+  },
+  "pasos": [
+    "1. Prepara buzones de prueba: uno de Gmail, uno de Outlook o Hotmail, uno corporativo tuyo y uno de un amigo que nunca te haya escrito.",
+    "2. Envía la prueba a esos cuatro y anota en qué carpeta cae cada uno: principal, promociones, no deseado o desaparecido.",
+    "3. Ábrelo en el móvil primero: mide cuánto se ve del asunto (unos 35 caracteres) y del texto previo antes de abrir.",
+    "4. Comprueba la versión de texto sin imágenes: muchos clientes bloquean imágenes, y si tu mensaje vive dentro de una imagen, desaparece.",
+    "5. Pincha todos los enlaces uno a uno, incluidos los del pie, y comprueba que llevan a la página correcta y no a una que ya no existe.",
+    "6. Comprueba el enlace de baja: si no funciona o no está, tienes un problema legal y de reputación.",
+    "7. Repasa las señales de spam: asunto en mayúsculas, muchos signos de exclamación, palabras como gratis o urgente repetidas, un solo enlace acortado, imágenes pesadas.",
+    "8. Revisa que el nombre del remitente sea reconocible y que responder al email llegue a un buzón que lees de verdad.",
+    "9. Si es una lista grande o fría, envía primero a un 10 por ciento, espera dos horas y mira aperturas, rebotes y bajas antes de enviar al resto.",
+    "10. Anota los resultados para comparar con el próximo envío."
+  ],
+  "errores_tipicos": [
+    "Probar solo con tu propio correo, que siempre te deja pasar.",
+    "Enviar todo el email como una imagen bonita: en Outlook se ve un rectángulo vacío.",
+    "Usar un asunto largo que en el móvil se corta justo donde estaba la idea.",
+    "Cambiar de dominio de envío y disparar todo el volumen el primer día.",
+    "No mirar los rebotes: una lista sucia hunde los envíos siguientes."
+  ],
+  "formato_salida": {
+    "tabla_buzones": "Buzón, carpeta donde cae, cómo se ve, incidencias",
+    "revision_enlaces": "Enlace, destino real, estado",
+    "riesgos_spam": "Señal detectada, gravedad, corrección concreta",
+    "asunto_alternativo": "Tres asuntos que caben en móvil, con el mismo mensaje",
+    "decision": "Envío completo, envío por partes o corrijo antes"
+  },
+  "criterios_calidad": [
+    "Se ha probado en al menos tres proveedores distintos, uno de ellos ajeno.",
+    "El email se entiende entero con las imágenes bloqueadas.",
+    "Todos los enlaces han sido pinchados, incluido el de baja.",
+    "La decisión final está escrita en una línea y es ejecutable hoy."
+  ]
+}

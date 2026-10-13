@@ -1,0 +1,42 @@
+{
+  "tarea": "Extraer de una conversación larga la decisión tomada y documentarla en una ficha breve y reutilizable.",
+  "contexto": {
+    "asunto": "[SOBRE QUÉ SE ESTABA DECIDIENDO]",
+    "participantes": "[NOMBRES Y ROLES]",
+    "fecha": "[FECHA DE LA DECISIÓN]"
+  },
+  "entradas": {
+    "conversacion": "[PEGA AQUÍ EL HILO DE WHATSAPP, LOS EMAILS O LAS NOTAS DE LA REUNIÓN]"
+  },
+  "instrucciones": [
+    "Identifica la decisión final y enúnciala en una sola frase afirmativa.",
+    "Recoge los motivos reales que se dieron, citando quién los planteó.",
+    "Lista las alternativas que se barajaron y por qué se descartaron.",
+    "Separa lo decidido de lo que quedó abierto o pendiente de confirmar.",
+    "Extrae las acciones concretas con responsable y fecha si aparecen en el hilo.",
+    "Señala los supuestos que, si cambian, obligarían a revisar la decisión."
+  ],
+  "restricciones": [
+    "No opines sobre si la decisión es buena: documenta, no juzgues.",
+    "Si algo no está claro en el hilo, escríbelo en 'Puntos a confirmar' en vez de deducirlo.",
+    "Máximo una página."
+  ],
+  "formato_salida": {
+    "tipo": "ficha markdown",
+    "campos": [
+      "Título de la decisión",
+      "Fecha y participantes",
+      "Decisión en una frase",
+      "Contexto y motivos",
+      "Alternativas descartadas y por qué",
+      "Acciones: qué, quién, para cuándo",
+      "Puntos a confirmar",
+      "Cuándo habría que revisar esta decisión"
+    ]
+  },
+  "criterios_calidad": [
+    "Alguien que no estuvo en la conversación entiende la decisión en 2 minutos.",
+    "No aparece ninguna afirmación que no esté respaldada por el hilo."
+  ],
+  "tono": "Neutro y factual"
+}

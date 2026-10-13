@@ -1,0 +1,49 @@
+{
+  "tarea": "Construir un banco de respuestas a las objeciones reales de mis clientes, con tres versiones por objeción",
+  "contexto": {
+    "negocio": "[TU NEGOCIO] vende [QUÉ] a [A QUIÉN]",
+    "precio": "[PRECIO Y FORMA DE PAGO]",
+    "canales_de_venta": "[WHATSAPP / LLAMADA / PRESENCIAL / EMAIL]",
+    "tono": "español de España, tuteo, directo, sin frases de vendedor de manual"
+  },
+  "entradas": {
+    "objeciones_reales": "[PEGA AQUÍ LAS FRASES LITERALES QUE TE DICEN, CUANTAS MÁS MEJOR]",
+    "alternativas_del_cliente": "[QUÉ HARÍA SI NO TE CONTRATA: OTRO PROVEEDOR, HACERLO ÉL, NO HACER NADA]",
+    "pruebas_que_tienes": "[CASOS, FOTOS, GARANTÍA, PLAZOS, REFERENCIAS]",
+    "tus_limites": "[DESCUENTO MÁXIMO Y CONDICIONES QUE NO NEGOCIAS]"
+  },
+  "pasos": [
+    "1. Agrupa las objeciones en cinco familias: precio, confianza, momento, competencia y alcance",
+    "2. Para cada una decide si es objeción real o excusa educada, y escribe la pregunta que sirve para distinguirlas",
+    "3. Escribe la respuesta corta de 2 frases para mensaje escrito",
+    "4. Escribe la respuesta hablada de 20 segundos, con pausa marcada donde debes callarte",
+    "5. Escribe la contrapregunta que devuelve la conversación al problema del cliente",
+    "6. Añade la prueba concreta que acompaña a cada respuesta, sacada de [PRUEBAS_QUE_TIENES]",
+    "7. Marca las dos objeciones ante las que conviene retirarse en vez de insistir"
+  ],
+  "restricciones": [
+    "Prohibido empezar respondiendo con la palabra pero",
+    "Prohibido rebatir con adjetivos: cada respuesta lleva un hecho, una cifra tuya o un caso",
+    "Prohibido prometer resultados que no puedas cumplir por escrito",
+    "Ninguna respuesta corta pasa de 40 palabras",
+    "Si se ofrece descuento, va siempre a cambio de algo: pago por adelantado, menos alcance o más plazo"
+  ],
+  "errores_tipicos": [
+    "Justificar el precio hablando de tus costes, que al cliente no le importan",
+    "Contestar rápido a una excusa educada en vez de averiguar el motivo de verdad",
+    "Discutir con el cliente y ganar la discusión perdiendo la venta",
+    "Tener respuestas geniales que nunca te aprendes porque son párrafos largos"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla en texto: objecion literal, familia, es real o excusa",
+    "bloque_2": "Ficha por objeción con respuesta corta, respuesta hablada, contrapregunta y prueba",
+    "bloque_3": "Chuleta de una página con solo las frases, para tener al lado del teléfono",
+    "bloque_4": "Lista de casos en los que toca retirarse y cómo hacerlo"
+  },
+  "criterios_calidad": [
+    "Puedes leer cualquier respuesta hablada en voz alta sin trabarte",
+    "Ninguna respuesta suena a discusión: todas terminan en pregunta o en opción",
+    "Cada familia tiene al menos una prueba concreta asociada",
+    "La chuleta cabe de verdad en una hoja"
+  ]
+}

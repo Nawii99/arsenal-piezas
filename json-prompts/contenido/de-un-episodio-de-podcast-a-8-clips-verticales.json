@@ -1,0 +1,38 @@
+{
+  "tarea": "Extraer 8 clips verticales publicables a partir de la transcripción de [TÍTULO DEL EPISODIO O VÍDEO]",
+  "entradas": {
+    "transcripcion": "[PEGA LA TRANSCRIPCIÓN CON MARCAS DE TIEMPO]",
+    "publico": "[A QUIÉN VA DIRIGIDO]",
+    "redes": "[TIKTOK / REELS / SHORTS / LINKEDIN]",
+    "duracion_clip": "[ENTRE 30 Y 75 SEGUNDOS]"
+  },
+  "como_elegir_los_clips": [
+    "Busca momentos completos: una idea que empieza y termina sin necesitar contexto externo",
+    "Prioriza opiniones contundentes, cifras concretas, historias personales y errores confesados",
+    "Descarta trozos que dependan de una pregunta previa o de una broma interna",
+    "Que los 8 clips traten temas distintos entre sí",
+    "Marca el inicio en la primera palabra útil, no en la muletilla anterior"
+  ],
+  "que_hacer_con_cada_clip": [
+    "Reescribir la primera frase como gancho, respetando lo que se dijo",
+    "Indicar si hace falta un rótulo de contexto al principio y cuál",
+    "Proponer el punto exacto de corte final para que no quede colgado"
+  ],
+  "formato_salida": {
+    "tabla": "Columnas: Nº | Inicio | Fin | Tema | Por qué funciona | Gancho o rótulo inicial | Pie de publicación",
+    "extras": [
+      "Orden de publicación sugerido para 4 semanas",
+      "3 citas textuales cortas para publicar como imagen o post de texto",
+      "1 clip destacado con el guion de rótulos segundo a segundo"
+    ]
+  },
+  "restricciones": [
+    "No cambies el sentido de lo dicho ni inventes frases que no estén en la transcripción",
+    "Las marcas de tiempo tienen que existir en la transcripción aportada",
+    "Cada pie de publicación, menos de 200 caracteres"
+  ],
+  "criterios_calidad": [
+    "Cada clip se entiende viéndolo suelto, sin haber oído el episodio",
+    "Ningún clip depende de una pregunta que no aparece dentro del propio corte"
+  ]
+}

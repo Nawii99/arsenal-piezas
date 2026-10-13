@@ -1,0 +1,36 @@
+{
+  "tarea": "Crear un plan de pruebas A/B priorizado para aumentar los envíos del formulario de [DIRECCIÓN DE LA PÁGINA]",
+  "situacion_actual": {
+    "visitas_mes": "[NÚMERO]",
+    "envios_mes": "[NÚMERO]",
+    "formulario_actual": "[CAMPOS, TITULAR Y TEXTO DEL BOTÓN]",
+    "herramienta_de_medicion": "[ANALÍTICA QUE USAS O NINGUNA]"
+  },
+  "paso_previo": "Calcula la tasa de conversión actual y avisa si el volumen de visitas es demasiado bajo para sacar conclusiones fiables; en ese caso propone mejoras directas en vez de pruebas",
+  "genera_pruebas_sobre": [
+    "Número de campos: versión corta contra versión actual",
+    "Texto del botón: genérico contra beneficio concreto",
+    "Titular del formulario: qué obtiene la persona",
+    "Formulario de una pantalla contra formulario por pasos",
+    "Señales de confianza junto al botón",
+    "Posición del formulario en la página"
+  ],
+  "para_cada_prueba_indica": [
+    "Hipótesis en formato: si cambio X, entonces pasará Y, porque Z",
+    "Qué se cambia exactamente, sin tocar nada más",
+    "Métrica principal y una métrica de control para no engañarte",
+    "Duración mínima en semanas completas",
+    "Esfuerzo de montaje y riesgo"
+  ],
+  "reglas": [
+    "Una sola variable por prueba",
+    "Nunca detengas una prueba el primer día que va ganando",
+    "Semanas completas para no mezclar días laborables y fines de semana",
+    "Si la diferencia es pequeña, quédate con la versión más simple"
+  ],
+  "formato_salida": "Tabla priorizada con Prueba, Hipótesis, Cambio, Métrica, Duración, Esfuerzo. Debajo, calendario de 8 semanas y una plantilla corta para anotar el resultado de cada prueba.",
+  "criterios_calidad": [
+    "Todas las pruebas se pueden montar sin programar",
+    "Las tres primeras atacan la mayor fuente de abandono"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Redactar la política de garantía y el procedimiento de reclamaciones de una tienda online, con respuestas tipo para el equipo",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "productos": "[QUÉ VENDES Y SI SON DE SEGUNDA MANO O DIGITALES]",
+    "comunidad_autonoma": "[TU COMUNIDAD AUTÓNOMA]",
+    "canal_atencion": "[EMAIL, TELÉFONO O FORMULARIO]",
+    "tiempos_internos": "[EN CUÁNTO RESPONDES Y EN CUÁNTO RESUELVES]"
+  },
+  "reglas_legales": [
+    "Garantía legal de conformidad de 3 años en bienes y 2 años en contenidos digitales",
+    "En los 2 primeros años se presume que la falta de conformidad ya existía en la entrega",
+    "El cliente elige entre reparación o sustitución salvo que sea desproporcionada; después, rebaja del precio o resolución",
+    "La reparación o sustitución es gratuita, incluidos portes",
+    "Existe además la garantía comercial voluntaria, que nunca reduce la legal",
+    "Hojas de reclamaciones oficiales y sistema arbitral de consumo",
+    "Información sobre la plataforma europea de resolución de litigios en línea"
+  ],
+  "entregables": [
+    "Política de garantía publicable en la web",
+    "Procedimiento interno paso a paso desde que entra la reclamación",
+    "Formulario de incidencia con los datos a pedir al cliente",
+    "5 respuestas tipo: producto defectuoso, producto no recibido, retraso en la entrega, cliente que reclama fuera de plazo y cliente que amenaza con denuncia",
+    "Guía de cuándo escalar a asesoría"
+  ],
+  "tono": "cercano, resolutivo y sin excusas, tuteando y sin frases defensivas",
+  "restricciones": [
+    "No ofrezcas menos de lo que obliga la ley ni condiciones la garantía a conservar la caja",
+    "No uses la palabra garantía para hablar del desistimiento: son cosas distintas",
+    "Cada respuesta tipo debe caber en un email corto y proponer una solución concreta"
+  ],
+  "formato_salida": {"tipo": "markdown con la política, el procedimiento numerado y las respuestas tipo en bloques separados"},
+  "criterios_calidad": ["El equipo sabe qué ofrecer en cada caso sin preguntar", "Las respuestas no prometen nada que la tienda no pueda cumplir"],
+  "aviso": "Contenido orientativo; comprueba los requisitos de hojas de reclamaciones de tu comunidad."
+}

@@ -1,0 +1,34 @@
+{
+  "tarea": "Disenarme un sistema completo de organizacion del correo: carpetas, reglas automaticas, avisos y rutina diaria",
+  "contexto": {
+    "gestor_de_correo": "[GMAIL / OUTLOOK / APPLE MAIL / OTRO]",
+    "cuentas": "[CUANTAS CUENTAS TIENES Y PARA QUE ES CADA UNA]",
+    "volumen_diario": "[CORREOS QUE RECIBES AL DIA APROXIMADAMENTE]",
+    "tipos_de_correo_que_recibo": "[CLIENTES, PROVEEDORES, BOLETINES, FACTURAS, NOTIFICACIONES DE HERRAMIENTAS, EQUIPO]",
+    "que_es_urgente_de_verdad": "[QUE REMITENTES O ASUNTOS NO PUEDEN ESPERAR]",
+    "mi_horario": "[HORARIO DE TRABAJO Y DIAS]"
+  },
+  "pasos": [
+    "Proponer un arbol de carpetas o etiquetas corto, sin subcarpetas de tercer nivel",
+    "Escribir las reglas de filtrado una a una, indicando condicion y accion en el lenguaje del gestor indicado",
+    "Definir dos o tres ventanas al dia para procesar correo y que se hace en cada una",
+    "Redactar las respuestas automaticas: fuera de horario, vacaciones y acuse de recibo de nuevas peticiones",
+    "Dar un plan de limpieza inicial para vaciar la bandeja historica sin leerla entera",
+    "Anadir la revision semanal de 20 minutos"
+  ],
+  "restricciones": [
+    "Maximo 7 carpetas o etiquetas principales",
+    "Nada de instalar herramientas de pago ni de programar nada",
+    "Cada regla explicada en un solo paso, apta para alguien sin perfil tecnico",
+    "Ninguna regla debe borrar correo de forma automatica"
+  ],
+  "formato_salida": {
+    "bloques": ["Estructura de carpetas con para que sirve cada una", "Tabla de reglas", "Rutina diaria por horas", "Textos de respuesta automatica", "Plan de limpieza inicial en 5 pasos", "Checklist de revision semanal"],
+    "columnas_tabla_reglas": ["Si el correo cumple", "Entonces", "Carpeta destino", "Aviso si o no"]
+  },
+  "criterios_calidad": [
+    "Todo se puede montar en menos de una hora sin ayuda tecnica",
+    "Ningun correo de cliente puede acabar archivado sin verlo",
+    "El sistema sigue funcionando aunque un dia no proceses el correo"
+  ]
+}

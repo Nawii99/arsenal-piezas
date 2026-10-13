@@ -1,0 +1,56 @@
+{
+  "tarea": "Redacta un borrador de contrato de prestación de servicios (colaboración mercantil) en español de España, siguiendo exactamente esta especificación.",
+  "aviso_obligatorio": "Incluye al final del documento una nota que diga que es un borrador de trabajo y no asesoramiento legal, y que conviene revisión de un abogado antes de firmar.",
+  "partes": {
+    "prestador": {
+      "nombre": "[TU NOMBRE COMPLETO O RAZON SOCIAL]",
+      "nif": "[TU NIF]",
+      "domicilio": "[TU DIRECCION FISCAL]",
+      "condicion": "trabajador autónomo dado de alta en el RETA"
+    },
+    "cliente": {
+      "nombre": "[NOMBRE O RAZON SOCIAL DEL CLIENTE]",
+      "nif_cif": "[NIF O CIF DEL CLIENTE]",
+      "domicilio": "[DIRECCION DEL CLIENTE]",
+      "representante": "[QUIEN FIRMA POR EL CLIENTE Y EN CALIDAD DE QUE]"
+    }
+  },
+  "servicio": {
+    "descripcion": "[QUE VAS A HACER, EN CONCRETO: POR EJEMPLO GESTION DE REDES SOCIALES CON 12 PUBLICACIONES AL MES]",
+    "entregables": ["[ENTREGABLE 1]", "[ENTREGABLE 2]"],
+    "fuera_de_alcance": ["[QUE NO INCLUYE, POR EJEMPLO INVERSION EN PUBLICIDAD O DISEÑO WEB]"],
+    "rondas_de_revision_incluidas": 2,
+    "cambios_de_alcance": "todo lo que no esté en los entregables se presupuesta aparte por escrito antes de hacerse"
+  },
+  "condiciones_economicas": {
+    "precio": "[IMPORTE] euros",
+    "iva": "21% no incluido en el precio, se añade en factura",
+    "irpf": "retención del [15, O 7 SI LLEVAS MENOS DE 3 AÑOS DE AUTONOMO] por ciento si el prestador es persona física",
+    "forma_de_pago": "[POR EJEMPLO: 50% A LA FIRMA Y 50% A LA ENTREGA, O CUOTA MENSUAL POR ADELANTADO]",
+    "plazo_de_pago": "30 días desde la fecha de factura, sin superar nunca los 60 días que marca la ley de morosidad",
+    "retraso_en_el_pago": "devenga el interés de demora legal y suspende la obligación de seguir entregando trabajo"
+  },
+  "plazos": {
+    "fecha_de_inicio": "[FECHA]",
+    "duracion": "[DURACION, O 'hasta completar los entregables']",
+    "preaviso_de_resolucion": "15 días por escrito para cualquiera de las partes, pagando el cliente todo el trabajo realizado hasta la fecha"
+  },
+  "clausulas_obligatorias": [
+    "propiedad intelectual: los derechos sobre el trabajo se ceden al cliente solo cuando esté pagado el precio completo; hasta entonces son del prestador",
+    "el prestador puede mostrar el trabajo en su portfolio salvo pacto expreso en contra",
+    "confidencialidad mutua, con una duración de [2] años tras el fin del contrato",
+    "no exclusividad: el prestador puede trabajar para otros clientes, incluidos los del mismo sector",
+    "independencia: el prestador organiza su propio horario, medios y lugar de trabajo, sin integrarse en la estructura del cliente, dejando claro que no existe relación laboral",
+    "limitación de responsabilidad del prestador al importe total del contrato, excluyendo lucro cesante",
+    "el cliente entrega los materiales y accesos necesarios en plazo; los retrasos del cliente amplían los plazos del prestador",
+    "protección de datos: cada parte cumple el RGPD respecto a los datos que trate",
+    "firma electrónica: las partes aceptan la firma electrónica como válida, conforme al reglamento europeo eIDAS",
+    "ley española y juzgados de [TU CIUDAD]"
+  ],
+  "formato_de_salida": {
+    "estructura": "encabezado con lugar y fecha, REUNIDOS, EXPONEN, CLAUSULAS numeradas, bloque de firmas",
+    "extension": "entre 2 y 4 páginas",
+    "lenguaje": "claro y directo, sin latinismos ni arcaísmos tipo 'otrosí'",
+    "pendientes": "deja entre corchetes y en mayúsculas cualquier dato que falte, sin inventarlo"
+  }
+}

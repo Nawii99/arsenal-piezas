@@ -1,0 +1,41 @@
+{
+  "tarea": "Diseñar una rúbrica analítica de 4 niveles para evaluar [NOMBRE DE LA TAREA O TRABAJO]",
+  "contexto": {
+    "materia_o_curso": "[MATERIA O CURSO]",
+    "perfil_alumnado": "[NIVEL: 3o ESO, FP, universidad, formación de empresa]",
+    "objetivos_de_aprendizaje": ["[OBJETIVO 1]", "[OBJETIVO 2]", "[OBJETIVO 3]"],
+    "peso_en_la_nota_final": "[PORCENTAJE]",
+    "tiempo_maximo_de_correccion_por_alumno": "[MINUTOS]"
+  },
+  "entradas": {
+    "enunciado_de_la_tarea": "[PEGA AQUÍ EL ENUNCIADO COMPLETO]",
+    "ejemplo_de_trabajo_notable": "[OPCIONAL: PEGA UN EJEMPLO REAL O ESCRIBE NO TENGO]"
+  },
+  "metodo": [
+    "Extrae del enunciado entre 4 y 6 criterios observables y descarta todo lo que no se pueda ver en la entrega",
+    "Redacta cada criterio como conducta observable, nunca como rasgo de la persona (no vale 'es responsable')",
+    "Define 4 niveles: Excelente 4, Adecuado 3, En proceso 2, Insuficiente 1",
+    "Entre nivel y nivel debe cambiar algo medible (cantidad, precisión, autonomía), no solo el adverbio",
+    "Pon umbrales concretos cuando se pueda: numero de fuentes citadas, errores por pagina, minutos de exposicion",
+    "Asigna pesos que sumen 100 y justifica cada peso en una linea",
+    "Marca cual es el nivel minimo para aprobar cada criterio"
+  ],
+  "restricciones": [
+    "Lenguaje claro para que el alumno entienda la rubrica sin explicacion adicional",
+    "Maximo 30 palabras por descriptor",
+    "Nada de criterios que evaluen esfuerzo, actitud o presentacion salvo que esten en los objetivos",
+    "No inventes normativa ni citas de leyes educativas"
+  ],
+  "formato_salida": {
+    "1_tabla_rubrica": "Tabla markdown: Criterio | Peso | Excelente (4) | Adecuado (3) | En proceso (2) | Insuficiente (1)",
+    "2_calculo_de_nota": "Formula explicada con un ejemplo numerico completo",
+    "3_version_para_el_alumno": "La misma rubrica en 'yo consigo...' para que la usen antes de entregar",
+    "4_dudas_frecuentes": "3 casos limite y como puntuarlos"
+  },
+  "criterios_calidad": [
+    "Dos correctores distintos darian la misma nota con esta rubrica",
+    "Ningun descriptor usa palabras vagas como bueno, adecuado o suficiente sin concretar",
+    "Los pesos suman exactamente 100"
+  ],
+  "tono": "Profesional, directo, sin jerga pedagogica innecesaria"
+}

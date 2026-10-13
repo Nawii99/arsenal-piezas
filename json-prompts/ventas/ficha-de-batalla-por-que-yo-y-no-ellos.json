@@ -1,0 +1,35 @@
+{
+  "tarea": "Crear una ficha de batalla comercial para vender frente a un competidor concreto",
+  "entradas": {
+    "mi_oferta": "[QUÉ VENDES, QUÉ INCLUYE Y A QUÉ PRECIO]",
+    "mis_pruebas": "[CASOS, RESULTADOS, AÑOS DE EXPERIENCIA O GARANTÍAS QUE PUEDES DEMOSTRAR]",
+    "competidor": "[NOMBRE DEL COMPETIDOR]",
+    "su_oferta": "[LO QUE SABES DE SU PRODUCTO Y SU PRECIO]",
+    "objeciones_reales": ["[OBJECIÓN QUE TE HAN DICHO 1]", "[OBJECIÓN 2]", "[OBJECIÓN 3]"],
+    "canal": "[LLAMADA, REUNIÓN, EMAIL O WHATSAPP]"
+  },
+  "pasos": [
+    "Resume en una frase por qué un cliente elegiría a ese competidor",
+    "Resume en una frase por qué me elegiría a mí",
+    "Define el tipo de cliente para el que él es mejor opción y reconócelo abiertamente",
+    "Prepara respuestas a cada objeción con la estructura: entender, matizar con un hecho, reconducir a mi ventaja",
+    "Prepara 5 preguntas que yo pueda hacer al cliente y que destaquen mis puntos fuertes sin hablar mal de nadie"
+  ],
+  "restricciones": [
+    "Prohibido criticar o desprestigiar al competidor: nada de afirmaciones negativas sin dato público",
+    "Nada de datos inventados sobre su empresa",
+    "Frases cortas y hablables, tal como se dicen por teléfono"
+  ],
+  "formato_salida": {
+    "1_resumen": "Una tabla de dos columnas: él gana en / yo gano en",
+    "2_frase_ancla": "Mi frase de 15 palabras para cuando me comparan",
+    "3_objeciones": "Cada objeción con la respuesta literal, en menos de 60 palabras",
+    "4_preguntas": "5 preguntas para hacer al cliente y por qué funcionan",
+    "5_cuando_retirarme": "Señales de que ese cliente no es para mí y cómo cerrarlo con elegancia"
+  },
+  "criterios_calidad": [
+    "Todo lo que se dice del competidor es público y comprobable",
+    "Las respuestas suenan a persona, no a folleto",
+    "Reconoce al menos un punto en el que el competidor es mejor"
+  ]
+}

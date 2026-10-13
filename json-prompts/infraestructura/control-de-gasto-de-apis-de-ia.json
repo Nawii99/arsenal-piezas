@@ -1,0 +1,49 @@
+{
+  "tarea": "Diseñar el control de consumo y coste de las llamadas a modelos de IA",
+  "contexto": {
+    "producto": "[QUÉ HACE TU HERRAMIENTA O AUTOMATIZACIÓN]",
+    "modelos_usados": "[PROVEEDORES Y MODELOS]",
+    "volumen": "[LLAMADAS AL DÍA Y USUARIOS APROXIMADOS]",
+    "gasto_actual": "[EUROS AL MES]",
+    "tope_deseado": "[EUROS AL MES COMO MÁXIMO]",
+    "perfil_usuario": "sin perfil técnico; propuestas configurables desde paneles o herramientas nocode"
+  },
+  "entradas": {
+    "tareas_que_usan_ia": "[LISTA DE USOS: RESUMIR, CLASIFICAR, REDACTAR, RESPONDER...]",
+    "calidad_minima": "[QUÉ NO PUEDE EMPEORAR]"
+  },
+  "pasos": [
+    "1. Reparte el gasto por tarea: cuánto cuesta cada uso y cuál se lleva la mayor parte.",
+    "2. Marca qué tareas son sencillas y pueden ir con un modelo más barato o incluso sin IA.",
+    "3. Recorta lo que entra: quita contexto repetido, adjuntos innecesarios e historial largo.",
+    "4. Limita lo que sale con un tope de longitud por tipo de respuesta.",
+    "5. Guarda en caché las respuestas a preguntas repetidas y las tareas sobre el mismo contenido.",
+    "6. Pon topes por usuario y por día para que nadie pueda vaciar tu saldo.",
+    "7. Configura alerta de consumo al 50, 80 y 100 por ciento del tope mensual.",
+    "8. Encola y agrupa lo que no sea urgente en vez de llamar una vez por elemento.",
+    "9. Antes de aplicar cada recorte, define cómo comprobarás que la calidad se mantiene."
+  ],
+  "restricciones": [
+    "Ningún cambio puede empeorar lo indicado en calidad mínima.",
+    "No propongas montar tu propio servidor de modelos.",
+    "Cada ahorro estimado debe explicarse, sin inventar cifras exactas de factura."
+  ],
+  "errores_tipicos": [
+    "Usar el modelo más caro para clasificar textos de dos líneas.",
+    "Mandar el historial completo de la conversación en cada llamada.",
+    "No cachear preguntas frecuentes que se repiten decenas de veces al día.",
+    "No poner tope por usuario y exponerse a abusos o bucles.",
+    "Reintentar en bucle una llamada que falla y multiplicar el gasto."
+  ],
+  "formato_salida": {
+    "tabla_gasto": "columnas: tarea | modelo actual | peso en el gasto | cambio propuesto | riesgo de calidad",
+    "medidas_ordenadas": "de mayor ahorro y menor riesgo a menor ahorro o mayor riesgo",
+    "limites": "topes por usuario, por día y por mes, con el aviso de cada umbral",
+    "prueba_de_calidad": "diez casos de ejemplo a comparar antes y después"
+  },
+  "criterios_calidad": [
+    "Cada medida indica dónde se configura exactamente.",
+    "Hay un tope duro que impide superar el gasto máximo.",
+    "Se propone una forma de comprobar que la calidad no cae."
+  ]
+}

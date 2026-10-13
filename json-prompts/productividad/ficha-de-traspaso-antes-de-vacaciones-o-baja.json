@@ -1,0 +1,45 @@
+{
+  "tarea": "Redactar una ficha de traspaso para que otra persona pueda cubrir un puesto durante una ausencia sin dejar nada colgando.",
+  "contexto": {
+    "quien_se_ausenta": "[NOMBRE Y PUESTO]",
+    "quien_cubre": "[NOMBRE O NOMBRES]",
+    "periodo": "[FECHA DE INICIO Y DE VUELTA]",
+    "tipo": "[VACACIONES, BAJA, SALIDA DEFINITIVA]"
+  },
+  "entradas": {
+    "tareas_periodicas": "[TAREA | CADA CUÁNTO | DÍA CONCRETO]",
+    "asuntos_abiertos": "[CLIENTE O PROYECTO | ESTADO | SIGUIENTE PASO | FECHA]",
+    "accesos": "[QUÉ HERRAMIENTAS Y CUENTAS HAY QUE PODER USAR]",
+    "contactos": "[PROVEEDORES O CLIENTES QUE PUEDEN ESCRIBIR Y QUÉ ESPERAN]"
+  },
+  "instrucciones": [
+    "Ordena las tareas periódicas por fecha dentro del periodo de ausencia, no por tipo.",
+    "Marca cada asunto abierto como CRÍTICO, NORMAL o PUEDE ESPERAR según su fecha límite.",
+    "Para cada tarea crítica indica qué pasa si no se hace y a quién avisar.",
+    "Prepara una lista de comprobación previa a la salida y otra para el día de la vuelta.",
+    "Redacta un mensaje breve de respuesta automática y otro para avisar a los contactos clave.",
+    "Señala lo que NO debe decidir la persona que cubre y debe esperar al regreso."
+  ],
+  "restricciones": [
+    "No incluyas contraseñas: indica quién las custodia o el gestor de claves.",
+    "Todo debe caber en dos páginas.",
+    "Nada de tareas sin fecha ni sin responsable."
+  ],
+  "formato_salida": {
+    "tipo": "documento markdown con casillas de verificación",
+    "secciones": [
+      "Resumen del relevo en 5 líneas",
+      "Calendario de tareas durante la ausencia",
+      "Asuntos abiertos con estado y prioridad",
+      "Accesos necesarios y a quién pedirlos",
+      "Qué hacer si pasa X (3 escenarios de urgencia)",
+      "Checklist antes de salir y checklist a la vuelta",
+      "Textos listos para enviar"
+    ]
+  },
+  "criterios_calidad": [
+    "Quien cubre sabe qué hacer cada semana sin llamar a nadie.",
+    "Ningún asunto abierto se queda sin siguiente paso y fecha."
+  ],
+  "tono": "Operativo y tranquilo"
+}

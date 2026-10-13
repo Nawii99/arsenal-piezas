@@ -1,0 +1,33 @@
+{
+  "tarea": "Preparar 5 microcasos de 10 minutos para dinamizar una clase en directo",
+  "contexto": {
+    "tema": "[TEMA O CONCEPTO A REFORZAR]",
+    "perfil_del_grupo": "[QUIÉNES SON Y A QUÉ SE DEDICAN]",
+    "tamano_del_grupo": "[NÚMERO DE ASISTENTES]",
+    "minutos_por_caso": "[10 POR DEFECTO]",
+    "formato": "[PRESENCIAL O ONLINE]"
+  },
+  "instrucciones": [
+    "Cada microcaso arranca con una situación de 4 líneas que se pueda leer en voz alta",
+    "Plantea una única pregunta de decisión: qué harías y por qué",
+    "Los 5 casos deben cubrir ángulos distintos del mismo concepto, sin repetirse",
+    "Para cada uno indica: la respuesta que suele dar la gente, por qué es incompleta y hacia dónde llevar el debate",
+    "Incluye la pregunta de remate que hace saltar el concepto clave cuando el grupo se queda en la superficie",
+    "Añade una variante para grupo callado (votación a mano alzada o por parejas) y otra para grupo hablador (limitar a una frase por persona)"
+  ],
+  "restricciones": [
+    "Sin datos numéricos que exijan calculadora",
+    "Nada de casos que dependan de conocer una empresa concreta",
+    "Cada caso debe funcionar aunque nadie haya leído nada antes",
+    "Español de España, lenguaje hablado"
+  ],
+  "formato_salida": {
+    "ficha_por_caso": ["titulo corto", "situacion para leer en voz alta", "pregunta", "respuesta habitual", "por que se queda corta", "pregunta de remate", "cierre en una frase"],
+    "extra": "Orden recomendado de los 5 casos y por qué ese orden"
+  },
+  "criterios_calidad": [
+    "Se pueden usar sin proyector ni material impreso",
+    "Cada caso genera desacuerdo real en la sala",
+    "El cierre deja una idea que el alumno puede repetir al salir"
+  ]
+}

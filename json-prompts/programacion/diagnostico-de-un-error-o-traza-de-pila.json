@@ -1,0 +1,35 @@
+{
+  "tarea": "Diagnosticar una excepción a partir de su traza de pila y proponer el arreglo",
+  "contexto": {
+    "lenguaje": "[JAVA / KOTLIN / C#]",
+    "version_runtime": "[EJ: JAVA 21, .NET 8, KOTLIN 2.0]",
+    "framework": "[SPRING BOOT / ANDROID / ASP.NET CORE / OTRO]",
+    "entorno": "[LOCAL / PREPRODUCCIÓN / PRODUCCIÓN]",
+    "reproducible": "[SIEMPRE / A VECES / UNA SOLA VEZ]"
+  },
+  "entradas": {
+    "traza_completa": "[PEGA AQUÍ LA TRAZA ENTERA, INCLUIDOS LOS 'Caused by']",
+    "codigo_sospechoso": "[PEGA EL MÉTODO QUE APARECE EN LA PRIMERA LÍNEA TUYA]",
+    "que_estaba_haciendo": "[ACCIÓN DEL USUARIO O PROCESO QUE LO DISPARÓ]"
+  },
+  "metodo": [
+    "Leer la traza de abajo arriba y quedarse con el último 'Caused by'",
+    "Localizar la primera línea del paquete propio, no del framework",
+    "Explicar en una frase qué valor o estado provocó el fallo",
+    "Separar causa raíz de síntoma antes de proponer nada",
+    "Proponer el arreglo mínimo y, aparte, la mejora estructural"
+  ],
+  "restricciones": [
+    "No inventar código que no aparezca en la traza ni en lo aportado",
+    "Si falta información, pedir exactamente qué fichero o log hace falta",
+    "No proponer capturar la excepción y no hacer nada con ella"
+  ],
+  "formato_salida": {
+    "causa_raiz": "una frase en lenguaje llano",
+    "linea_culpable": "fichero y línea",
+    "explicacion": "máximo 5 líneas",
+    "arreglo_inmediato": "bloque de código antes y después",
+    "prevencion": "validación, test o comprobación que evita que vuelva",
+    "confianza": "alta, media o baja, con lo que falta por confirmar"
+  }
+}

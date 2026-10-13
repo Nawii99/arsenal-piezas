@@ -1,0 +1,43 @@
+{
+  "tarea": "Redactar un anexo de requisitos de rendimiento web para incluir en el encargo a un desarrollador o agencia",
+  "contexto": {
+    "proyecto": "[WEB NUEVA / REDISEÑO / TIENDA ONLINE]",
+    "plataforma_prevista": "[WORDPRESS / SHOPIFY / WEBFLOW / A MEDIDA / SIN DECIDIR]",
+    "paginas_clave": "[HOME, FICHA DE PRODUCTO, LANDING DE CAMPAÑA, CONTACTO]",
+    "publico": "[MAYORÍA MÓVIL / MAYORÍA ESCRITORIO] en [PAÍS O ZONA]",
+    "presupuesto_y_plazo": "[EUROS] y entrega prevista [FECHA]"
+  },
+  "objetivos_medibles": {
+    "LCP_movil": "por debajo de 2,5 segundos en la página de inicio y en la ficha de producto",
+    "INP": "por debajo de 200 milisegundos en las interacciones principales",
+    "CLS": "por debajo de 0,1 en todas las plantillas",
+    "peso_maximo": "[X KB] de JavaScript y [X KB] de imágenes en la primera carga",
+    "condiciones_de_medida": "medición en móvil con conexión 4G simulada, tres veces, tomando la mediana"
+  },
+  "contenido_del_documento": [
+    "Requisitos de imágenes: formatos modernos, tamaños adaptados, medidas declaradas y carga diferida salvo la primera pantalla",
+    "Requisitos de tipografías: número máximo de familias y grosores y servidas desde el propio dominio",
+    "Límites a scripts de terceros y obligación de justificar cada uno",
+    "Caché, compresión y CDN configuradas antes de la entrega",
+    "Accesibilidad mínima y compatibilidad con móviles antiguos",
+    "Qué se entrega: informe de medición de cada plantilla y acceso a los datos de usuarios reales"
+  ],
+  "proceso": [
+    "Adapta los objetivos al tipo de proyecto y avisa si alguno es poco realista con ese presupuesto",
+    "Escribe cada requisito de forma verificable, con la herramienta y el momento de comprobación",
+    "Añade una cláusula de aceptación: qué pasa si en la entrega no se cumplen los umbrales",
+    "Incluye preguntas a hacer al proveedor antes de firmar"
+  ],
+  "restricciones": [
+    "Lenguaje de encargo profesional pero comprensible para alguien sin perfil técnico",
+    "Nada de exigir puntuaciones de 100 en PageSpeed: se exigen métricas de usuario real"
+  ],
+  "formato_salida": {
+    "tipo": "documento listo para adjuntar al presupuesto",
+    "estructura": "objetivo del proyecto, requisitos numerados, tabla de umbrales, criterios de aceptación y preguntas al proveedor"
+  },
+  "criterios_calidad": [
+    "Un desarrollador puede presupuestar con el documento sin pedir aclaraciones",
+    "Todo requisito se puede comprobar el día de la entrega"
+  ]
+}

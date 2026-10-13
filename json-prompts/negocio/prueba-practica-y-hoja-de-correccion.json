@@ -1,0 +1,40 @@
+{
+  "tarea": "Diseñar una prueba práctica breve para finalistas y su hoja de corrección",
+  "contexto": {
+    "puesto": "[NOMBRE DEL PUESTO]",
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "tarea_real_a_simular": "[QUÉ HARÍA UN MARTES CUALQUIERA]",
+    "tiempo_maximo": "[MINUTOS U HORAS]",
+    "remunerada": "[SÍ / NO Y CUÁNTO]",
+    "formato": "[EN CASA / EN DIRECTO CONTIGO]"
+  },
+  "entradas": {
+    "materiales_que_entregas": ["[DATO O DOCUMENTO 1]", "[DATO O DOCUMENTO 2]"],
+    "competencias_a_medir": ["[COMPETENCIA 1]", "[COMPETENCIA 2]", "[COMPETENCIA 3]"],
+    "nivel_esperado": "[JUNIOR / INTERMEDIO / SENIOR]"
+  },
+  "pasos": [
+    "Reducir la tarea real a un ejercicio que se resuelva dentro del tiempo máximo",
+    "Redactar el enunciado con contexto, objetivo, qué se entrega y qué NO hace falta hacer",
+    "Meter una ambigüedad deliberada para ver si el candidato pregunta o supone",
+    "Construir la rúbrica de corrección con pesos por competencia",
+    "Preparar tres preguntas de defensa para comentar la entrega con el candidato"
+  ],
+  "restricciones": [
+    "La prueba no puede ser trabajo real aprovechable por la empresa sin pagarlo",
+    "Nada de pruebas de más de [TIEMPO MÁXIMO]; si necesita un fin de semana, está mal planteada",
+    "Todos los finalistas reciben exactamente el mismo enunciado",
+    "Se evalúa el criterio y el proceso, no que acierte una respuesta única"
+  ],
+  "formato_salida": {
+    "enunciado": "Texto listo para enviar al candidato, con plazo y forma de entrega",
+    "rubrica": "Tabla con competencia, peso, qué es insuficiente, correcto y excelente",
+    "solucion_orientativa": "Cómo sería una buena entrega, para que puedas comparar",
+    "preguntas_de_defensa": "Tres preguntas para la conversación posterior",
+    "email": "Mensaje breve de envío explicando tiempo, pago y qué se valora"
+  },
+  "criterios_calidad": [
+    "El candidato sabe exactamente qué entregar y cuándo",
+    "La rúbrica permite puntuar sin discutir sobre gustos personales"
+  ]
+}

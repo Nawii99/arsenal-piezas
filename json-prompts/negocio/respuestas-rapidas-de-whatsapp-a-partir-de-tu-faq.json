@@ -1,0 +1,36 @@
+{
+  "tarea": "Convertir preguntas frecuentes en respuestas rápidas de WhatsApp, cortas, con atajo y con variantes según la situación",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "horario_atencion": "[HORARIO]",
+    "tono": "[CERCANO Y BREVE / FORMAL]",
+    "enlaces_utiles": "[WEB, RESERVAS, SEGUIMIENTO DE PEDIDO, UBICACIÓN]"
+  },
+  "entradas": {
+    "faq_o_politicas": "[PEGA TUS PREGUNTAS FRECUENTES O TUS POLÍTICAS]",
+    "situaciones_habituales": "[EJ: PIDE PRECIO, PREGUNTA SI HAY STOCK, SE QUEJA DE RETRASO, QUIERE CITA]"
+  },
+  "procedimiento": [
+    "Crear una respuesta rápida por situación, con un atajo corto que empiece por barra y sea fácil de recordar",
+    "Escribir cada mensaje en 2 o 3 frases, con un solo dato clave y una sola llamada a la acción",
+    "Añadir para cada una una variante suave para clientes molestos y una variante de seguimiento si no contestan",
+    "Marcar entre corchetes los huecos que hay que personalizar a mano en cada conversación",
+    "Añadir la respuesta de fuera de horario y la de derivación a persona"
+  ],
+  "restricciones": [
+    "Máximo 400 caracteres por mensaje y sin párrafos largos",
+    "Nada de emojis salvo uno como mucho y solo si el tono lo pide",
+    "No prometer plazos concretos si no están en las entradas",
+    "Nunca pedir datos de tarjeta ni contraseñas por WhatsApp"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown",
+    "columnas": ["Atajo", "Situación", "Mensaje", "Variante cliente molesto", "Variante seguimiento", "Qué personalizar"],
+    "extras": ["Mensaje de bienvenida automático", "Mensaje de ausencia fuera de horario"]
+  },
+  "criterios_calidad": [
+    "Se pueden copiar y pegar sin retocar casi nada",
+    "Suenan a persona, no a robot",
+    "Cubren las situaciones declaradas sin dejar ninguna fuera"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "tarea": "Construir el calendario fiscal y contable anual de un negocio español concreto: qué modelos le tocan, cuándo, qué hay que preparar antes de cada uno y quién lo hace",
+  "perfil_experto": "Asesor fiscal español que organiza el cumplimiento anual de autónomos y pymes",
+  "contexto": {
+    "forma_juridica": "[AUTÓNOMO O SOCIEDAD LIMITADA]",
+    "actividad": "[A QUÉ TE DEDICAS Y DESDE QUÉ FECHA]",
+    "empleados": "[NÚMERO DE EMPLEADOS O NINGUNO]",
+    "profesionales_con_retencion": "[SI PAGAS FACTURAS CON RETENCIÓN, POR EJEMPLO A TU GESTORÍA]",
+    "alquiler_local": "[SÍ O NO]",
+    "ventas_fuera_de_espana": "[NO / UE / FUERA DE LA UE / VENTAS ONLINE A PARTICULARES DE LA UE]",
+    "quien_presenta": "[TÚ MISMO O TU GESTORÍA]",
+    "ano": "[AÑO A PLANIFICAR]"
+  },
+  "modelos_a_valorar": ["303 y 390 de IVA", "130 o 131 de pagos fraccionados", "111 y 190 de retenciones", "115 y 180 de alquileres", "349 de operaciones intracomunitarias", "347 de operaciones con terceros", "200 y 202 del impuesto de sociedades", "Renta anual", "Legalización de libros y depósito de cuentas en el Registro Mercantil"],
+  "formato_salida": {
+    "tipo": "tabla ordenada por fecha",
+    "columnas": ["Fecha límite", "Modelo o trámite", "Qué es, en una frase", "¿Te aplica y por qué?", "Qué preparar 7 días antes", "Responsable"],
+    "extras": ["Lista de modelos que NO te aplican, con el motivo, para que te quedes tranquilo", "Rutina mensual de 30 minutos para llegar con todo listo", "Aviso sobre domiciliaciones, que se cierran unos días antes del fin de plazo"]
+  },
+  "restricciones": [
+    "Da los plazos habituales e indica que las fechas exactas se confirman en el calendario oficial de la AEAT de ese año",
+    "No incluyas modelos que no apliquen a este negocio salvo en la lista de descartados",
+    "Una frase por explicación, sin jerga"
+  ],
+  "criterios_calidad": ["Cada obligación tiene fecha, preparación previa y responsable", "Se distingue entre presentar y pagar", "El calendario se puede volcar a Google Calendar tal cual"],
+  "aviso": "Confirma las fechas exactas en el calendario oficial del año en curso"
+}

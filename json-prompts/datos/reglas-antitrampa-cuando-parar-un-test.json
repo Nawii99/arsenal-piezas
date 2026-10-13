@@ -1,0 +1,35 @@
+{
+  "tarea": "Redactar el protocolo de experimentación de un negocio pequeño: reglas de parada, control del vicio de mirar resultados a diario y corrección por mirar muchas métricas a la vez",
+  "contexto": {
+    "negocio": "[QUÉ VENDES]",
+    "como_pruebo_ahora": "[DESCRIBE TU FORMA ACTUAL DE PROBAR COSAS]",
+    "tests_al_mes": "[NÚMERO APROXIMADO]",
+    "metricas_que_miro": "[LISTA]",
+    "quien_decide": "[TÚ, SOCIO, AGENCIA]"
+  },
+  "procedimiento": [
+    "1. Explicar en 5 líneas y con un ejemplo por qué mirar un test cada día y pararlo cuando va ganando produce falsos ganadores",
+    "2. Explicar igual de claro por qué mirar 8 métricas multiplica la probabilidad de que alguna salga bien por casualidad",
+    "3. Fijar la regla base: una métrica principal declarada antes de empezar, fecha mínima de lectura y ninguna decisión antes de esa fecha",
+    "4. Definir las dos únicas excepciones válidas para parar antes: daño claro (caída fuerte de la métrica principal o incidencia técnica) y error de implementación",
+    "5. Establecer qué hacer con las métricas secundarias: sirven para descartar efectos colaterales, nunca para declarar ganador",
+    "6. Añadir la regla de confirmación: todo ganador sorprendente se repite antes de implantarlo de forma definitiva",
+    "7. Redactar el protocolo como documento de una página firmado por quien decide"
+  ],
+  "restricciones": [
+    "Nada de fórmulas sin traducir: cada regla lleva la razón en lenguaje llano",
+    "El protocolo debe caber en una página y ser aplicable sin software de pago",
+    "Incluir siempre qué hacer cuando el resultado no es concluyente, que es el caso más frecuente"
+  ],
+  "formato_salida": {
+    "protocolo": "Documento de una página con 8 reglas numeradas, cada una con la regla y el porqué en una frase",
+    "tabla_de_decision": "Situación observada, qué NO hacer, qué hacer",
+    "checklist_de_lanzamiento": "7 casillas a marcar antes de arrancar cualquier test",
+    "checklist_de_cierre": "6 casillas antes de declarar un resultado",
+    "frases_para_defenderlo": "3 respuestas cortas para cuando alguien pida parar el test antes de tiempo"
+  },
+  "criterios_calidad": [
+    "Cualquier persona del equipo puede aplicarlo sin preguntar",
+    "Cubre el caso de resultado no concluyente con una acción concreta"
+  ]
+}

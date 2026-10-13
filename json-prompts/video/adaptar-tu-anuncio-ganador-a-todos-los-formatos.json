@@ -1,0 +1,43 @@
+{
+  "tarea": "Adaptar un anuncio en video que ya funciona a varias plataformas, duraciones y proporciones, indicando que planos se quedan y que cambia en cada version",
+  "contexto": {
+    "anuncio_original": "[PEGA EL GUION O DESCRIBE PLANO A PLANO LO QUE SE VE Y SE DICE]",
+    "duracion_original": "[SEGUNDOS]",
+    "por_que_funciona": "[LO QUE CREES QUE ENGANCHA]",
+    "plataformas_destino": "[TIKTOK, REELS, SHORTS, YOUTUBE IN-STREAM, DISPLAY, WEB]",
+    "duraciones_necesarias": "[6 s, 15 s, 30 s, 60 s]",
+    "idioma_subtitulos": "[ESPANOL]"
+  },
+  "reglas_de_oficio": [
+    "En cada version, lo primero que se ve tiene que ser el momento mas fuerte del original",
+    "En la version de 6 segundos solo caben una idea y la marca",
+    "Al pasar de vertical a horizontal, recoloca la accion: no recortes por el centro sin mirar",
+    "Los rotulos se suben o bajan segun la zona que tapa la interfaz de cada plataforma",
+    "En YouTube antes del video, la marca aparece en los primeros 5 segundos porque se puede saltar",
+    "Los subtitulos van siempre: la mayoria lo ve sin sonido"
+  ],
+  "para_cada_version_devuelve": [
+    "Plataforma y proporcion",
+    "Duracion final",
+    "Lista de planos del original que se conservan, en orden",
+    "Que se corta y por que",
+    "Texto de rotulos y su posicion",
+    "Llamada a la accion adaptada al sitio"
+  ],
+  "restricciones": [
+    "No inventar planos que no existen en el original salvo que se marque como plano nuevo a grabar",
+    "Subtitulos de maximo 2 lineas y 42 caracteres por linea",
+    "Nada de acelerar el video para que quepa"
+  ],
+  "formato_salida": {
+    "tipo": "Una ficha por version mas una tabla resumen",
+    "tabla_resumen": ["Version", "Proporcion", "Duracion", "Planos usados", "Cambio principal"],
+    "cierre": "Lista de planos nuevos que habria que grabar y nombres de archivo sugeridos para no liarte"
+  },
+  "criterios_calidad": [
+    "Cada version se sostiene sola sin haber visto la original",
+    "Las duraciones cuadran sumando los planos elegidos",
+    "Los rotulos no chocan con la interfaz de cada plataforma",
+    "La idea que hacia funcionar el original sigue intacta"
+  ]
+}

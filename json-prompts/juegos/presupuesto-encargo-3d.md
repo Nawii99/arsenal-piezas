@@ -1,0 +1,92 @@
+# presupuesto-encargo-3d…
+
+**Tipo:** JSON prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
+
+Monta el presupuesto de un encargo de 3D o de juego con alcance cerrado, hitos de cobro, revisiones incluidas y condiciones legales de España.
+
+## Qué es y qué hace
+
+JSON prompt que convierte la petición de un cliente de 3D o de juegos en un presupuesto con alcance cerrado. Entran la petición y tu tarifa; sale lista de entregables, rondas de revisión, hitos de cobro y condiciones para autónomos en España. Se usa en cualquier chat de IA.
+
+## Cómo usarla
+
+1. Copia el JSON en un chat de IA
+2. Rellena los [corchetes] con el cliente y tu tarifa
+3. Revisa el presupuesto y ajusta importes
+4. Que lo revise un profesional
+
+## Cuándo usarla
+
+Úsalo cuando un cliente te pida precio por modelar, animar o montar algo en 3D y necesites pasar una propuesta seria en lugar de un numero suelto por WhatsApp.
+
+## Cómo ganar dinero con ella
+
+El dinero de este oficio se pierde en revisiones infinitas y en trabajo fuera de alcance: cerrar entregables, rondas y anticipo protege el margen del encargo.
+
+- Presupuestos cerrados para freelancers de modelado y animación…
+- Plantilla de condiciones y revisiones para estudios pequeños…
+- Propuestas por hitos de cobro para desarrollo de juegos…
+
+## El JSON prompt
+
+```json
+{
+  "tarea": "Convertir la peticion informal de un cliente en un presupuesto de 3D con alcance cerrado, hitos de pago y condiciones",
+  "contexto": {
+    "quien_lo_usa": "Autonomo o pequeño estudio en España que factura trabajos de modelado, animacion, render o desarrollo de juego",
+    "problema_real": "El cliente pide un precio antes de que nadie haya definido que se entrega exactamente",
+    "momento": "Tras la primera conversacion y antes de tocar el software"
+  },
+  "entradas": {
+    "cliente": "[NOMBRE Y TIPO: EMPRESA, PARTICULAR, ESTUDIO]",
+    "peticion_literal": "[COPIA LO QUE TE HA DICHO EL CLIENTE]",
+    "referencias": "[ENLACES O DESCRIPCION DE LO QUE QUIERE]",
+    "plazo_pedido": "[FECHA O URGENCIA]",
+    "tu_tarifa_hora": "[EUROS/HORA O NO LA SE]",
+    "tu_situacion": "[AUTONOMO / EMPRESA / SIN ALTA TODAVIA]",
+    "uso_final": "[JUEGO COMERCIAL / VIDEO / PUBLICIDAD / IMPRESION / INTERNO]"
+  },
+  "conocimiento_del_oficio": {
+    "regla_del_alcance": "Un presupuesto de 3D no se cotiza por objeto sino por: numero de piezas, nivel de detalle, si lleva texturas PBR, si lleva rig, si lleva animacion y cuantos planos de render",
+    "rondas_de_revision": "Se incluyen dos rondas de cambios sobre el mismo concepto. Cambiar de concepto es un encargo nuevo",
+    "hitos": "40 por ciento al aceptar, 30 al validar el bloqueo o blocking, 30 a la entrega final. En clientes nuevos nunca por debajo del 30 por ciento por adelantado",
+    "derechos": "No es lo mismo licencia de uso que cesion en exclusiva. La cesion en exclusiva y el uso publicitario se cobran aparte, entre un 30 y un 100 por ciento mas",
+    "impuestos_españa": "Factura con IVA del 21 por ciento salvo excepcion; si facturas como autonomo a empresa o profesional se aplica retencion de IRPF, y esa retencion no es un descuento, es dinero adelantado a Hacienda",
+    "urgencia": "Trabajo fuera de plazo normal, fines de semana o entrega en menos de una semana: recargo del 25 al 50 por ciento, dicho por escrito",
+    "lo_que_hunde_el_margen": "Archivos fuente incluidos sin cobrarlos, cambios de escala del proyecto a mitad, y no fijar quien aporta las referencias"
+  },
+  "pasos": [
+    "1. Traducir la peticion del cliente a una lista de entregables contables, uno por linea",
+    "2. Marcar lo que NO esta incluido, con la misma claridad que lo incluido",
+    "3. Estimar horas por entregable en tres escenarios: rapido, normal y con imprevistos",
+    "4. Aplicar tarifa hora y redondear a precio de partida",
+    "5. Añadir linea de derechos de uso segun el uso final declarado",
+    "6. Definir hitos de pago, plazo por hito y fecha de entrega condicionada a la respuesta del cliente",
+    "7. Escribir las condiciones: rondas incluidas, precio por ronda extra, propiedad de los archivos fuente y penalizacion por parada del proyecto",
+    "8. Cerrar con la validez del presupuesto y como se acepta"
+  ],
+  "errores_tipicos": [
+    "Dar un precio total sin desglose: el cliente negocia el numero grande en vez de quitar partidas",
+    "No poner fecha de caducidad al presupuesto",
+    "Incluir el archivo fuente por defecto y perder trabajo futuro",
+    "Empezar sin anticipo porque el cliente parece de fiar",
+    "Olvidar que las esperas del cliente mueven la fecha de entrega"
+  ],
+  "restricciones": [
+    "No inventes tipos impositivos concretos si el usuario no confirma su situacion: indica que lo revise con su asesor",
+    "Nada de cifras de rentabilidad prometidas",
+    "Tono profesional y directo, sin disculpas ni relleno"
+  ],
+  "formato_salida": {
+    "1_resumen": "Tres lineas: que se entrega, cuando y precio total sin impuestos",
+    "2_tabla_partidas": "Concepto | detalle | horas | importe",
+    "3_no_incluido": "Lista clara",
+    "4_calendario_y_pagos": "Hito | que se entrega | fecha | porcentaje",
+    "5_condiciones": "Revisiones, derechos de uso, archivos fuente, urgencias y paradas",
+    "6_email_de_envio": "Mensaje corto listo para copiar"
+  },
+  "criterios_calidad": [
+    "Cada partida se puede marcar como entregada o no sin discusion",
+    "El apartado de lo no incluido tiene al menos cuatro lineas",
+    "Los hitos suman el 100 por ciento y ninguno depende de algo inde
+```

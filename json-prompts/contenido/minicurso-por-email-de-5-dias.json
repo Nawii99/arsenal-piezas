@@ -1,0 +1,41 @@
+{
+  "tarea": "Diseñar y redactar un minicurso gratuito de 5 lecciones por email que sirva de lead magnet",
+  "contexto": {
+    "marca": "[NOMBRE DE TU EMPRESA O TU NOMBRE]",
+    "tema": "[SOBRE QUÉ ENSEÑAS]",
+    "transformacion": "[DE DÓNDE PARTE EL ALUMNO Y DÓNDE ACABA EN 5 DÍAS]",
+    "publico": "[QUIÉN SE APUNTA]",
+    "tu_metodo": "[LOS PASOS DE TU FORMA DE TRABAJAR]",
+    "oferta_final": "[QUÉ VENDES AL TERMINAR Y A QUÉ PRECIO]"
+  },
+  "pasos": [
+    "Definir el resultado pequeño pero real que el alumno consigue el día 5",
+    "Repartir el método en 5 lecciones, cada una con un solo concepto",
+    "Escribir cada lección con: por qué importa, cómo se hace, ejemplo y tarea de 15 minutos",
+    "Enlazar el final de cada lección con la siguiente en una frase",
+    "Presentar la oferta solo en la lección 5, como continuación natural"
+  ],
+  "restricciones": [
+    "Entre 300 y 500 palabras por lección",
+    "Una tarea por día que se pueda hacer en 15 minutos",
+    "Nada de teoría sin aplicación ni deberes que requieran comprar herramientas de pago",
+    "No prometer resultados económicos",
+    "Español de España, tuteando, como si escribieras a un alumno concreto"
+  ],
+  "formato_salida": {
+    "tipo": "documento por lecciones",
+    "incluye": [
+      "Nombre del minicurso y promesa en una frase",
+      "Temario de los 5 días en una tabla: día | título | qué aprende | tarea",
+      "Texto completo de las 5 lecciones con asunto de email y preencabezado",
+      "Email de bienvenida (día 0) explicando cómo funciona el curso",
+      "Email extra de reenganche para quien deja de abrir en el día 3",
+      "Formulario de alta: campos, texto del botón y frase legal"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada lección deja algo aplicado, no solo leído",
+    "El curso funciona aunque el alumno no compre nada",
+    "La oferta del día 5 se apoya en lo aprendido los días anteriores"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "tarea": "comprobar_disponibilidad_marca",
+  "instrucciones": "Comprueba la disponibilidad de un nombre de marca en las fuentes indicadas y devuelve el resultado en este mismo formato JSON, rellenando cada campo con lo que encuentres. No inventes datos: si no puedes consultar una fuente, pon el estado 'no_comprobado'.",
+  "entrada": {
+    "nombre_candidato": "[NOMBRE]",
+    "actividad": "[DESCRIPCION DE LA ACTIVIDAD]",
+    "clases_niza": ["[NUMERO DE CLASE]"],
+    "ambito": "espana"
+  },
+  "fuentes_a_consultar": {
+    "oepm": {
+      "url": "https://www.oepm.es",
+      "campo_busqueda": "Consulta de marcas y nombres comerciales",
+      "estado": "no_comprobado",
+      "coincidencias": []
+    },
+    "euipo": {
+      "url": "https://euipo.europa.eu/eSearch",
+      "estado": "no_comprobado",
+      "coincidencias": []
+    },
+    "dominio_es": {
+      "url": "https://www.nic.es",
+      "estado": "no_comprobado"
+    },
+    "dominio_com": {
+      "url": "[REGISTRADOR USADO]",
+      "estado": "no_comprobado"
+    },
+    "redes_sociales": {
+      "instagram": "no_comprobado",
+      "linkedin": "no_comprobado",
+      "tiktok": "no_comprobado"
+    }
+  },
+  "salida_esperada": {
+    "veredicto": "libre | ocupado | riesgo_de_parecido | no_comprobado",
+    "riesgos": [],
+    "recomendacion": ""
+  },
+  "reglas": {
+    "no_afirmar_libre_sin_comprobar": true,
+    "no_sustituir_asesoria_legal": true,
+    "avisar_si_hay_parecido_en_misma_clase": true
+  }
+}

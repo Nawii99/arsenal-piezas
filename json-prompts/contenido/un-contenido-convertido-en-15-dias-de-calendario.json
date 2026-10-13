@@ -1,0 +1,41 @@
+{
+  "tarea": "Despiezar un contenido largo en 15 publicaciones distintas y colocarlas en un calendario de 15 días",
+  "entradas": {
+    "contenido_original": "[PEGA AQUÍ EL TEXTO, LA TRANSCRIPCIÓN O EL RESUMEN DETALLADO]",
+    "tipo_original": "[VÍDEO, PODCAST, ARTÍCULO, CHARLA, CLASE...]",
+    "canales": "[DÓNDE VAS A PUBLICAR]",
+    "fecha_inicio": "[PRIMER DÍA DEL CALENDARIO]",
+    "destino": "[QUÉ QUIERES QUE HAGA LA GENTE AL FINAL]"
+  },
+  "tipos_de_pieza": [
+    "Idea fuerte suelta convertida en publicación de texto",
+    "Fragmento en vídeo corto con su minuto de origen",
+    "Lista o pasos convertidos en carrusel",
+    "Frase polémica o contracorriente para generar debate",
+    "Pregunta del público con su respuesta",
+    "Dato o ejemplo concreto ampliado",
+    "Resumen final que remite al contenido completo"
+  ],
+  "pasos": [
+    "1. Extrae del original entre 15 y 20 ideas separables, sin repetir",
+    "2. Descarta las que no se sostengan solas fuera del contexto",
+    "3. Asigna a cada idea el tipo de pieza y el canal que mejor le encaja",
+    "4. Ordena las 15 en el calendario alternando formatos, sin dos iguales seguidos",
+    "5. Escribe la primera frase de cada pieza, la que decide si siguen leyendo",
+    "6. Coloca en los días 5, 10 y 15 las piezas que llevan al destino indicado"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown de 15 filas",
+    "columnas": ["Día", "Canal", "Tipo de pieza", "Idea del original", "Primera frase", "Qué hace falta para producirla"]
+  },
+  "restricciones": [
+    "Todo sale del contenido original: no añadas ideas que no estén ahí",
+    "Si una idea no da para una publicación entera, dilo y descártala",
+    "Español de España, tuteando"
+  ],
+  "criterios_calidad": [
+    "Las 15 piezas se pueden leer seguidas sin sensación de repetición",
+    "Cada pieza cita de dónde sale, para poder volver al original",
+    "Al menos 10 se pueden producir sin volver a grabar nada"
+  ]
+}

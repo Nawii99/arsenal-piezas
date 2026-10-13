@@ -1,0 +1,31 @@
+{
+  "tarea": "Calcular cuánto hay que cobrar por este trabajo para que sea rentable, y con qué margen",
+  "entradas": {
+    "descripcion_del_trabajo": "[QUÉ HAY QUE HACER]",
+    "tareas_y_horas_estimadas": "[LISTA DE TAREAS CON TUS HORAS APROXIMADAS]",
+    "ganancia_por_hora_objetivo": "[LO QUE QUIERES GANAR POR HORA]",
+    "gastos_directos": "[SUBCONTRATAS, LICENCIAS, MATERIALES, DESPLAZAMIENTOS]",
+    "gastos_fijos_mensuales": "[CUOTA, GESTORÍA, SOFTWARE, LOCAL]",
+    "horas_facturables_al_mes": "[HORAS REALES QUE PUEDES VENDER AL MES]"
+  },
+  "metodo": [
+    "Suma las horas por tarea y añade un colchón del 20 por ciento por imprevistos y revisiones",
+    "Reparte los gastos fijos entre las horas facturables para obtener tu coste por hora real",
+    "Coste total = horas con colchón por coste hora real, más los gastos directos",
+    "Propón precio con margen del 30, del 40 y del 50 por ciento sobre el coste total",
+    "Indica el precio suelo por debajo del cual conviene rechazar el trabajo",
+    "Avisa de qué puede disparar las horas: revisiones sin límite, plazos cortos o cliente lento"
+  ],
+  "restricciones": [
+    "Enseña las operaciones paso a paso con los números a la vista",
+    "Todos los importes son sin IVA salvo que se indique lo contrario",
+    "No des asesoramiento fiscal, solo el cálculo",
+    "Si falta algún dato, pídelo antes de calcular"
+  ],
+  "formato_salida": "Tabla de horas y costes, tres escenarios de precio y un párrafo final con el precio recomendado y el precio suelo",
+  "criterios_calidad": [
+    "El cálculo se puede rehacer a mano y da lo mismo",
+    "Queda claro qué parte es coste y qué parte es beneficio",
+    "Se nombran los riesgos que harían perder dinero"
+  ]
+}

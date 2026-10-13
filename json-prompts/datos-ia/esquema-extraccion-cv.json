@@ -1,0 +1,46 @@
+{
+  "tarea": "extraccion_datos_curriculum",
+  "descripcion": "Prompt estructurado para pedir a un modelo que devuelva los datos de un CV en un JSON con un esquema fijo, pensado para usarlo desde una automatizacion que luego vuelca los campos en una hoja de calculo o una base de datos.",
+  "instrucciones": "Lee el texto del curriculum que se pasa en el campo texto_cv y devuelve EXCLUSIVAMENTE un JSON que cumpla el esquema de esquema_salida. Si un dato no aparece en el texto, usa null, nunca inventes valores. No añadas texto fuera del JSON.",
+  "entrada": {
+    "texto_cv": "[TEXTO COMPLETO DEL CV, YA EXTRAIDO POR OCR O COPIADO DEL DOCUMENTO]"
+  },
+  "esquema_salida": {
+    "nombre_completo": "string o null",
+    "contacto": {
+      "email": "string o null",
+      "telefono": "string o null",
+      "ciudad": "string o null"
+    },
+    "experiencia": [
+      {
+        "empresa": "string",
+        "puesto": "string",
+        "fecha_inicio": "string en formato AAAA-MM o null",
+        "fecha_fin": "string en formato AAAA-MM o la palabra actualidad",
+        "descripcion_breve": "string o null"
+      }
+    ],
+    "educacion": [
+      {
+        "titulo": "string",
+        "centro": "string o null",
+        "anio_fin": "string o null"
+      }
+    ],
+    "idiomas": [
+      {
+        "idioma": "string",
+        "nivel": "string tal como aparece en el CV, sin traducir a un marco que el CV no usa"
+      }
+    ],
+    "anos_experiencia_total": "numero o null",
+    "campos_no_encontrados": ["lista de nombres de campo que no aparecian en el texto"]
+  },
+  "reglas": [
+    "Si el CV esta en un idioma distinto del español, mantén los textos originales, no traduzcas.",
+    "No incluyas datos de salud, religion, afiliacion sindical, origen étnico o situacion familiar aunque aparezcan en el CV.",
+    "Si hay fechas ambiguas con solo el año, usa el mes 01 y añade una nota en campos_no_encontrados indicando que la fecha es aproximada.",
+    "Devuelve un único objeto JSON válido, sin comentarios ni texto adicional antes o después."
+  ]
+}

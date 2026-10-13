@@ -1,0 +1,49 @@
+{
+  "tarea": "Diseñar el formulario mínimo que recoge los datos que de verdad necesito, con validaciones y textos que eviten respuestas inservibles.",
+  "contexto": {
+    "para_que_pido_los_datos": "[PRESUPUESTO, ALTA DE CLIENTE, RESERVA, BRIEF, INSCRIPCIÓN]",
+    "quien_lo_rellena": "[PERFIL, PRISA QUE TIENE Y SI LO HARÁ DESDE EL MÓVIL]",
+    "herramienta": "[GOOGLE FORMS / FORMULARIO DE MI WEB / PDF RELLENABLE / WHATSAPP]",
+    "que_hago_con_las_respuestas": "[A DÓNDE VAN Y QUÉ PROCESO DISPARAN]"
+  },
+  "entradas": {
+    "campos_que_pido_ahora": "[LISTA ACTUAL, SI YA TIENES UNO]",
+    "problemas_actuales": "[QUÉ LLEGA MAL O QUÉ TENGO QUE PREGUNTAR DESPUÉS]",
+    "datos_imprescindibles": "[SIN ESTO NO PUEDO TRABAJAR]"
+  },
+  "pasos": [
+    "Por cada campo actual pregunta para qué lo uso; si no cambia ninguna decisión ni ningún proceso, propón eliminarlo.",
+    "Ordena los campos de menos a más esfuerzo y deja los datos personales delicados para el final.",
+    "Elige para cada campo el tipo que menos deja escribir a mano: opción única, lista, número, fecha, sí o no.",
+    "Redacta la etiqueta de cada campo como una pregunta corta y su texto de ayuda con un ejemplo real.",
+    "Define la validación exacta: obligatorio, formato, mínimo y máximo, y el mensaje de error en lenguaje claro.",
+    "Añade lógica condicional: qué campos aparecen solo si la respuesta anterior es determinada.",
+    "Escribe el texto de la cabecera diciendo cuánto se tarda y qué pasa después de enviar.",
+    "Escribe el mensaje de confirmación con el siguiente paso y el plazo de respuesta.",
+    "Indica qué campos tienen que ser obligatorios de verdad y cuáles pueden esperar."
+  ],
+  "restricciones": [
+    "Máximo [NÚMERO] campos: si hay más, hay que justificarlo campo a campo.",
+    "No pidas datos personales que no vayas a usar.",
+    "Cero preguntas abiertas salvo una final de comentarios.",
+    "Todo tiene que funcionar en pantalla de móvil."
+  ],
+  "errores_tipicos": [
+    "Preguntar el presupuesto en campo libre y recibir contestaciones inútiles.",
+    "Campos de teléfono sin formato que llegan con letras y espacios.",
+    "Obligar a rellenar algo que la persona no sabe todavía y provocar abandono.",
+    "No decir qué pasa después y quedar como un formulario que va al vacío."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de campos: pregunta, tipo, opciones, obligatorio, validación, texto de ayuda, mensaje de error.",
+    "bloque_2": "Reglas condicionales escritas como si esto entonces aparece aquello.",
+    "bloque_3": "Textos de cabecera y de confirmación.",
+    "bloque_4": "Campos que propongo eliminar y por qué.",
+    "bloque_5": "Pasos para montarlo en la herramienta elegida."
+  },
+  "criterios_calidad": [
+    "Se rellena en menos de tres minutos desde el móvil.",
+    "Cada campo que queda tiene un uso concreto explicado.",
+    "Con lo que llega puedo trabajar sin llamar para completar datos."
+  ]
+}

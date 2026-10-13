@@ -1,0 +1,52 @@
+{
+  "tarea": "Escribir el manual de emergencia de mi aplicación: cómo diagnosticar una caída, en qué orden actuar, cómo deshacer el último cambio, qué comunicar y qué revisar después",
+  "contexto": {
+    "aplicacion": "[QUÉ ES Y QUÉ PASA SI NO FUNCIONA]",
+    "piezas": "[WEB, BASE DE DATOS, PASARELA DE PAGO, EMAIL, API DE IA, AUTOMATIZACIONES]",
+    "proveedores": "[HOSTING, DOMINIO, BASE DE DATOS, CORREO]",
+    "quien_actua": "[YO SOLO / YO Y UN COLABORADOR] y mi nivel es no técnico"
+  },
+  "entradas": {
+    "caidas_pasadas": "[QUÉ HA FALLADO OTRAS VECES Y CÓMO SE ARREGLÓ, O NINGUNA]",
+    "canales_de_cliente": "[EMAIL, WHATSAPP, INSTAGRAM, TELÉFONO]",
+    "horario_critico": "[CUÁNDO DUELE MÁS UNA CAÍDA]"
+  },
+  "pasos": [
+    "1. Escribe el árbol de diagnóstico en 5 minutos: comprobar si es mi web o todo internet, si es el dominio, si es el hosting, si es la base de datos o si es un proveedor externo, con el enlace de estado de cada proveedor",
+    "2. Ordena la actuación por prioridad: primero restaurar el servicio, después averiguar la causa; nada de investigar con la tienda caída",
+    "3. Escribe el procedimiento de vuelta atrás del último despliegue, paso a paso y con capturas de dónde se pulsa",
+    "4. Define los interruptores de emergencia: apagar la función que gasta dinero, desactivar el pago, poner página de mantenimiento",
+    "5. Prepara tres síntomas y su guion concreto: la web no carga, se cobra pero no se entrega, la aplicación va lentísima",
+    "6. Incluye la comprobación de datos: qué mirar para saber si se han perdido registros y cuándo hay que restaurar copia",
+    "7. Redacta los mensajes al cliente: aviso inicial sin excusas técnicas, actualización a mitad y cierre con qué has hecho",
+    "8. Define cuándo pedir ayuda, a quién y con qué información se abre el ticket al proveedor",
+    "9. Escribe la ficha de después: qué pasó, desde cuándo, cómo se detectó, cómo se arregló, qué evitaría que se repita",
+    "10. Prepara la lista de datos y accesos que tengo que tener a mano fuera de la aplicación caída"
+  ],
+  "restricciones": [
+    "Todo tiene que poder ejecutarse desde el móvil si estoy fuera",
+    "Nada de jerga: cada paso empieza por un verbo y dice dónde pulsar",
+    "Máximo dos páginas: si no cabe, no se lee en una urgencia",
+    "No incluyas contraseñas en el documento, solo dónde están guardadas"
+  ],
+  "formato_salida": {
+    "1_primeros_5_minutos": "Lista numerada de comprobaciones con qué significa cada resultado",
+    "2_arbol": "Diagrama mermaid de decisión síntoma a causa probable",
+    "3_procedimientos": "Vuelta atrás, mantenimiento e interruptores, paso a paso",
+    "4_comunicacion": "Tres mensajes listos para copiar y pegar",
+    "5_contactos": "Tabla markdown: proveedor, para qué, dónde se abre incidencia, página de estado",
+    "6_ficha_posterior": "Plantilla de análisis de lo ocurrido"
+  },
+  "criterios_calidad": [
+    "Una persona sin conocimientos técnicos puede seguirlo sin preguntar nada",
+    "Cada paso dice qué esperar y qué hacer si no ocurre",
+    "El procedimiento de vuelta atrás se ha probado una vez en frío",
+    "Los mensajes al cliente se pueden enviar sin editar nada más que la hora"
+  ],
+  "errores_tipicos": [
+    "Guardar el manual dentro del sistema que se cae",
+    "Ponerse a investigar la causa mientras el negocio sigue parado",
+    "No avisar a los clientes y enterarse ellos por su cuenta",
+    "Deshacer el cambio sin anotar qué se deshizo y volver a subirlo la semana siguiente"
+  ]
+}

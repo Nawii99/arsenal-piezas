@@ -1,0 +1,41 @@
+{
+  "tarea": "Diseñar un plan de pruebas A/B para mi ficha de app: hipótesis priorizadas, variantes concretas, duración y cómo interpretar los resultados",
+  "contexto": {
+    "app": "[NOMBRE DE TU APP]",
+    "tienda": "[APP STORE (PRUEBAS DE PÁGINA DE PRODUCTO) O GOOGLE PLAY (EXPERIMENTOS DE FICHA)]",
+    "trafico_mensual": "[VISITAS A LA FICHA AL MES]",
+    "conversion_actual": "[INSTALACIONES ENTRE VISITAS, EN PORCENTAJE]",
+    "elementos_actuales": "[ICONO, CAPTURAS, TÍTULO, SUBTÍTULO, DESCRIPCIÓN CORTA TAL Y COMO ESTÁN HOY]",
+    "sospecha": "[QUÉ CREES QUE ESTÁ FALLANDO]"
+  },
+  "metodo": [
+    "Ordenar los elementos por impacto habitual en conversión: icono, primeras dos capturas, título y subtítulo, descripción corta, vídeo",
+    "Una prueba a la vez por elemento y máximo 2 o 3 variantes por prueba",
+    "Cada hipótesis escrita como: si cambio X por Y, la conversión sube porque Z",
+    "Estimar la duración según el tráfico: con poco tráfico, probar solo cambios grandes",
+    "Definir de antemano cuándo se para la prueba y qué diferencia se considera suficiente"
+  ],
+  "formato_salida": {
+    "tipo": "Calendario de pruebas más ficha por experimento",
+    "por_experimento": [
+      "nombre del experimento",
+      "elemento que se toca",
+      "hipótesis",
+      "variante A (actual) y variantes B y C descritas al detalle",
+      "métrica principal y métricas de control",
+      "duración estimada y tráfico mínimo",
+      "qué decisión se toma con cada resultado posible"
+    ],
+    "calendario": "Orden de las pruebas para los próximos 3 meses, una detrás de otra"
+  },
+  "errores_frecuentes": [
+    "Cambiar varias cosas a la vez y no saber qué funcionó",
+    "Parar la prueba el primer día que va ganando",
+    "Ignorar que las fechas señaladas y las campañas de pago distorsionan los datos",
+    "Medir solo instalaciones y no lo que pasa después dentro de la app"
+  ],
+  "criterios_calidad": [
+    "Cada variante está descrita con suficiente detalle para producirla sin preguntar",
+    "Si el tráfico no da para una prueba fiable, decirlo claramente y proponer otra vía"
+  ]
+}

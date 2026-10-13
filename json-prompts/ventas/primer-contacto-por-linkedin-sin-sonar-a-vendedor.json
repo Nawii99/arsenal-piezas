@@ -1,0 +1,35 @@
+{
+  "tarea": "Redactar un primer contacto por LinkedIn: nota de conexión, mensaje inicial y dos seguimientos",
+  "entradas": {
+    "contacto": "[NOMBRE Y CARGO]",
+    "empresa": "[EMPRESA Y SECTOR]",
+    "detalle_del_perfil": "[ALGO REAL QUE HAS VISTO: UNA PUBLICACIÓN, UN CAMBIO DE PUESTO, UN PROYECTO]",
+    "que_ofrezco": "[TU SERVICIO EN UNA FRASE]",
+    "objetivo": "[CONVERSACIÓN, LLAMADA DE 15 MINUTOS O ENVÍO DE UN RECURSO]",
+    "mi_credibilidad": "[POR QUÉ DEBERÍA HACERTE CASO: EXPERIENCIA, CLIENTES, CONTACTO EN COMÚN]"
+  },
+  "pasos": [
+    "Escribir la nota de conexión partiendo del detalle real del perfil, sin mencionar la venta",
+    "Escribir el primer mensaje tras aceptar: una observación concreta y una pregunta abierta fácil de contestar",
+    "Escribir el seguimiento 1 aportando algo de valor (un dato, un ejemplo, una idea aplicable)",
+    "Escribir el seguimiento 2 de cierre, sin insistir ni culpabilizar",
+    "Añadir tres respuestas preparadas: interés, 'mándame información' y 'ahora no es el momento'"
+  ],
+  "restricciones": [
+    "Nota de conexión: máximo 280 caracteres",
+    "Mensajes: máximo 90 palabras cada uno, sin enlaces en el primero",
+    "Prohibido pedir la venta o la reunión en el primer mensaje",
+    "Sin halagos vacíos ni frases tipo 'me encanta tu perfil'",
+    "Nada de audios ni adjuntos en los dos primeros pasos"
+  ],
+  "formato_salida": {
+    "tabla": "paso | día | canal | texto literal listo para copiar",
+    "respuestas_preparadas": "Tres réplicas cortas según lo que conteste",
+    "senal_de_parada": "Cuándo dejar de escribir a este contacto"
+  },
+  "criterios_calidad": [
+    "El mensaje sería imposible de enviar a otra persona sin cambiarlo",
+    "La pregunta del primer mensaje se contesta en una línea",
+    "Ningún mensaje presiona ni da por hecho el interés"
+  ]
+}

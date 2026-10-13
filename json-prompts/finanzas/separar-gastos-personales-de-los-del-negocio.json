@@ -1,0 +1,36 @@
+{
+  "tarea": "Separar gastos personales y de la actividad en una cuenta mezclada, y decir qué justificante falta en cada movimiento",
+  "contexto": {
+    "perfil": "autónomo o autónoma en España",
+    "actividad": "[QUÉ HACES Y CÓMO FACTURAS]",
+    "trabajas_desde_casa": "[SÍ O NO; SI ES SÍ, METROS DEL DESPACHO Y METROS TOTALES]",
+    "vehiculo": "[USAS COCHE PARA TRABAJAR: SÍ, NO, O A MEDIAS]",
+    "periodo": "[TRIMESTRE O MES ANALIZADO]"
+  },
+  "entradas": {
+    "movimientos": "[PEGA LOS MOVIMIENTOS: FECHA, CONCEPTO, IMPORTE]",
+    "justificantes": "[DE CUÁLES TIENES FACTURA A TU NOMBRE Y CON TU NIF, DE CUÁLES SOLO TICKET, DE CUÁLES NADA]"
+  },
+  "procedimiento": [
+    "Clasificar cada movimiento como ACTIVIDAD, PERSONAL o MIXTO",
+    "En los mixtos, explicar qué parte se suele imputar a la actividad y con qué criterio (por ejemplo, suministros de casa según metros del despacho)",
+    "Comprobar el justificante: factura completa con tus datos, ticket simple o nada, y decir qué hay que pedir al proveedor",
+    "Marcar los gastos que suelen dar problemas en una revisión: comidas sin cliente identificado, ropa, combustible sin uso exclusivo, móvil compartido, regalos",
+    "Detectar gastos de la actividad pagados con la cuenta personal que te estás dejando fuera",
+    "Al final, sugerir tres reglas prácticas para no volver a mezclar (tarjeta separada, foto del ticket el mismo día, concepto escrito en la transferencia)"
+  ],
+  "restricciones": [
+    "No afirmar que un gasto es deducible: decir si es defendible, dudoso o difícil de justificar, y recomendar confirmarlo con la asesoría",
+    "No inventar porcentajes de imputación: usar los que indique el usuario o dejarlos como POR DECIDIR",
+    "Nada de trucos ni de forzar la interpretación"
+  ],
+  "formato_salida": {
+    "tabla": ["fecha", "concepto", "importe", "clasificacion", "parte_actividad", "justificante", "nivel_de_riesgo", "que_hacer"],
+    "bloques": ["Total actividad y total personal del periodo", "Lista de justificantes que hay que pedir, con proveedor", "Gastos de la actividad pagados desde la cuenta personal", "Tres reglas para dejar de mezclar"]
+  },
+  "criterios_calidad": [
+    "Ningún movimiento queda sin clasificar",
+    "Cada gasto de riesgo dice exactamente qué le falta para sostenerse",
+    "La respuesta recuerda que la última palabra la tiene tu asesoría"
+  ]
+}

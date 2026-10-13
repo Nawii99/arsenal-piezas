@@ -1,0 +1,54 @@
+{
+  "tarea": "Auditar y preparar un modelo 3D para impresión: comprobaciones de malla, grosores mínimos, orientación, soportes, y cálculo de coste y precio por pieza.",
+  "contexto": "Persona que imprime en filamento o resina y quiere vender la pieza. La mayoría de fallos no son de la impresora, son del modelo o de la orientación.",
+  "entradas": {
+    "modelo": "[QUÉ PIEZA Y DE DÓNDE SALE: PROPIA, DESCARGADA, ESCANEADA]",
+    "tecnologia": "[FILAMENTO FDM | RESINA]",
+    "tamano_deseado": "[ALTURA EN MM DE LA PIEZA FINAL]",
+    "uso": "[DECORATIVO | FUNCIONAL CON ESFUERZO | PIEZA DE ENCAJE | JUGUETE]",
+    "materiales_y_precios": "[MATERIAL Y PRECIO POR KILO O LITRO]",
+    "licencia_del_modelo": "[SI ES DESCARGADO, QUÉ LICENCIA TIENE]"
+  },
+  "procedimiento": [
+    "1. Comprueba la licencia si el modelo no es tuyo: muchas prohíben vender la pieza impresa. Si no permite uso comercial, para aquí.",
+    "2. Audita la malla: sólido cerrado sin agujeros, sin caras invertidas, sin geometría interna suelta, sin caras solapadas.",
+    "3. Comprueba escala y unidades y calcula el tamaño real a la altura deseada.",
+    "4. Verifica grosores mínimos según la tecnología: paredes finas y detalles pequeños se pierden o se rompen; señala las zonas en riesgo de la pieza.",
+    "5. Revisa voladizos: marca las zonas con más de 45 grados que necesitarán soporte y valora si se pueden evitar girando la pieza.",
+    "6. Elige orientación óptima según el criterio dominante: resistencia en la dirección del esfuerzo, o cara visible sin marcas de soporte.",
+    "7. Decide si conviene cortar la pieza en partes para imprimir mejor y define el sistema de unión (espigas, encaje, pegado).",
+    "8. En resina, planifica huecos de vaciado y agujeros de drenaje; en filamento, define relleno y número de perímetros según el uso.",
+    "9. Calcula el coste por pieza: gramos de material por precio, más horas de impresora por su coste horario, más electricidad, más porcentaje de fallos, más postprocesado.",
+    "10. Fija el precio de venta con margen y compara con lo que se vende en el mercado, sin prometer cifras.",
+    "11. Define la impresión de prueba: una pieza pequeña de las zonas críticas antes de tirar la pieza entera."
+  ],
+  "restricciones": [
+    "No proponer vender piezas cuya licencia lo prohíba.",
+    "Nada de recomendaciones sin especificar la tecnología a la que aplican.",
+    "Grosores y tolerancias siempre en milímetros.",
+    "Incluir siempre el porcentaje de fallos en el coste.",
+    "Español de España, tuteando, sin dar por sabido el vocabulario de impresión."
+  ],
+  "formato_salida": {
+    "bloque_1": "Semáforo de licencia y viabilidad comercial.",
+    "bloque_2": "Informe de auditoría de malla: comprobación, resultado, cómo se arregla.",
+    "bloque_3": "Zonas de riesgo de la pieza con el grosor mínimo recomendado.",
+    "bloque_4": "Orientación recomendada, soportes previstos y propuesta de corte en partes.",
+    "bloque_5": "Parámetros sugeridos: altura de capa, perímetros, relleno o vaciado y drenajes.",
+    "bloque_6": "Tabla de coste por pieza y precio sugerido con margen."
+  },
+  "criterios_calidad": [
+    "La malla queda cerrada y con normales correctas.",
+    "Ninguna zona visible queda por debajo del grosor mínimo.",
+    "La orientación está justificada por resistencia o por acabado.",
+    "El coste incluye material, horas de máquina, fallos y postprocesado.",
+    "Hay una impresión de prueba antes de la pieza completa."
+  ],
+  "errores_frecuentes": [
+    "Escalar la pieza y dejar detalles por debajo del grosor imprimible.",
+    "Imprimir una pieza funcional con las capas en la dirección del esfuerzo y que se parta.",
+    "Resina sin agujeros de drenaje: se queda líquido dentro y la pieza revienta.",
+    "No contar las horas de impresora al poner precio.",
+    "Vender piezas de modelos descargados sin permiso comercial."
+  ]
+}

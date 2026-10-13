@@ -1,0 +1,36 @@
+{
+  "tarea": "Definir las reglas de parada, aviso y traspaso a una persona del agente [NOMBRE DEL AGENTE]",
+  "contexto": {
+    "que_hace": "[TAREA DEL AGENTE]",
+    "con_quien_habla": "[CLIENTES, PROVEEDORES, EQUIPO, NADIE]",
+    "temas_delicados_de_mi_sector": "[SALUD, DINERO, MENORES, LEGAL, DATOS PERSONALES...]",
+    "quien_recibe_los_avisos": "[NOMBRE O PUESTO]",
+    "canal_de_aviso": "[EMAIL, WHATSAPP, SLACK, HOJA DE CALCULO]",
+    "horario_de_atencion": "[HORARIO EN EL QUE HAY ALGUIEN]"
+  },
+  "metodo": [
+    "1. Lista las situaciones en las que equivocarse sale caro o hace daño",
+    "2. Para cada una, decide si el agente para del todo, avisa y sigue, o pide permiso y espera",
+    "3. Escribe la señal concreta que dispara cada regla, sin frases vagas",
+    "4. Redacta el mensaje exacto que ve la persona afectada cuando el agente se para",
+    "5. Redacta el aviso interno con lo minimo para que alguien pueda retomarlo",
+    "6. Define que pasa fuera del horario de atencion"
+  ],
+  "formato_salida": {
+    "reglas": "Lista numerada en formato: SI ocurre [señal] ENTONCES [parar / avisar / pedir permiso] Y [mensaje que envia]",
+    "tabla_prioridad": "Tabla con columnas: Situacion, Gravedad, Quien lo atiende, Plazo de respuesta",
+    "mensajes": "Los textos literales de cara al cliente y de aviso interno, listos para usar",
+    "registro": "Que debe apuntar el agente de cada parada para poder revisarlo despues"
+  },
+  "restricciones": [
+    "Minimo 8 reglas y todas con una señal observable",
+    "El agente nunca promete plazos, descuentos ni compensaciones por su cuenta",
+    "En temas legales, medicos o financieros siempre traspasa a una persona",
+    "Los mensajes al cliente no echan la culpa a la IA ni suenan a robot"
+  ],
+  "criterios_calidad": [
+    "Ninguna regla depende de que el agente adivine la intencion",
+    "Un caso parado se puede retomar solo con lo que deja apuntado",
+    "Las reglas no se solapan ni se contradicen entre si"
+  ]
+}

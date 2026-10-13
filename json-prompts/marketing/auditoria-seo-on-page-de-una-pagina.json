@@ -1,0 +1,40 @@
+{
+  "tarea": "Auditar el SEO on-page de una página concreta y devolver los problemas priorizados por impacto con la corrección ya redactada",
+  "contexto": {
+    "url": "[URL DE LA PÁGINA]",
+    "keyword_objetivo": "[PALABRA CLAVE]",
+    "tipo_pagina": "[HOME / SERVICIO / PRODUCTO / ARTÍCULO / CATEGORÍA]",
+    "situacion": "[NO POSICIONA / HA BAJADO / RECIBE VISITAS PERO NO CONVIERTE]"
+  },
+  "entradas": {
+    "contenido": "[PEGA EL TEXTO O EL HTML DE LA PÁGINA]",
+    "datos_search_console": "[IMPRESIONES, CLICS, POSICIÓN MEDIA Y CONSULTAS PRINCIPALES, SI LOS TIENES]"
+  },
+  "revisa": [
+    "Título SEO y meta descripción: longitud, keyword, atractivo",
+    "Un único H1 y jerarquía correcta de H2 y H3 sin saltos",
+    "Correspondencia entre la intención de búsqueda y lo que ofrece la página",
+    "Presencia natural de la keyword y de términos relacionados; detecta sobreoptimización",
+    "Primeros 100 palabras: responden o marean",
+    "Enlaces internos que salen y entran, y textos de enlace usados",
+    "Imágenes: texto alternativo, nombre de archivo y peso aproximado",
+    "Legibilidad: longitud de párrafos y frases, uso de listas y tablas",
+    "Señales de confianza: autor, fecha de actualización, datos de contacto, casos",
+    "Llamada a la acción y su ubicación",
+    "Riesgo de canibalización con otras páginas del sitio"
+  ],
+  "formato_salida": {
+    "tipo": "tabla priorizada más anexo de textos corregidos",
+    "columnas": ["problema", "gravedad alta/media/baja", "por qué afecta", "corrección concreta", "esfuerzo en minutos"],
+    "anexo": "Título, meta descripción y esquema de encabezados ya reescritos, listos para copiar"
+  },
+  "restricciones": [
+    "Máximo 12 hallazgos: solo lo que de verdad mueve posiciones",
+    "Nada de recomendaciones genéricas tipo 'mejora el contenido': di qué frase cambiar y por cuál",
+    "Si falta información para juzgar algo, dilo en vez de suponer"
+  ],
+  "criterios_calidad": [
+    "Las tres primeras acciones se pueden hacer hoy en menos de una hora",
+    "Cada corrección viene escrita, no descrita"
+  ]
+}

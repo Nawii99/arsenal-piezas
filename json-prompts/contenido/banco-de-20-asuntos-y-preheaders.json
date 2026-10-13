@@ -1,0 +1,36 @@
+{
+  "tarea": "Generar 20 asuntos y sus preheaders para un correo ya escrito, clasificados por tipo de gancho, y recomendar cuáles probar",
+  "entradas": {
+    "resumen_del_correo": "[PEGA AQUÍ EL CORREO COMPLETO O SU RESUMEN EN 5 LÍNEAS]",
+    "a_quien_va": "[PERFIL DE LA LISTA O SEGMENTO]",
+    "accion_deseada": "[ABRIR Y LEER, CLICAR, RESPONDER, COMPRAR]",
+    "asuntos_que_funcionaron": "[2 O 3 ASUNTOS TUYOS CON BUENA APERTURA]",
+    "asuntos_que_fallaron": "[2 O 3 ASUNTOS TUYOS CON MALA APERTURA]",
+    "marca_o_producto": "[NOMBRE QUE APARECE COMO REMITENTE]"
+  },
+  "tipos_de_gancho_obligatorios": [
+    "Curiosidad con dato concreto",
+    "Beneficio directo y medible",
+    "Pregunta que el lector se hace de verdad",
+    "Error o cosa que está haciendo mal",
+    "Noticia o novedad",
+    "Personal o confesión",
+    "Lista o número",
+    "Urgencia real, solo si existe una fecha de verdad"
+  ],
+  "reglas": [
+    "Entre 25 y 50 caracteres; marca el recuento de cada uno",
+    "El preheader complementa, nunca repite el asunto (máx 90 caracteres)",
+    "Nada de MAYÚSCULAS enteras, ni 'RE:' ni 'FWD:' falsos",
+    "Evita palabras que disparan filtros de spam: gratis total, urgente, dinero rápido, 100% garantizado",
+    "Máximo un emoji y solo en 3 de los 20",
+    "Prohibido prometer algo que el correo no cumple"
+  ],
+  "formato_salida": "Tabla markdown con columnas: Nº | Tipo de gancho | Asunto | Caracteres | Preheader | Riesgo de spam (bajo/medio/alto)",
+  "recomendacion_final": "Elige las 2 mejores para una prueba A/B, explica en 2 líneas por qué compiten bien entre sí y qué métrica mirar para decidir",
+  "criterios_calidad": [
+    "Los 20 son claramente distintos, no variaciones de la misma frase",
+    "Todos son verdad respecto al contenido del correo",
+    "Se entienden en el móvil, donde solo se ven los primeros 35 caracteres"
+  ]
+}

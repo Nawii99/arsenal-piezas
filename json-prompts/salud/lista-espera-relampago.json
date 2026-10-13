@@ -1,0 +1,55 @@
+{
+  "tarea": "Montar un sistema de lista de espera para cubrir cancelaciones de última hora en un centro de salud o bienestar, con criterio de prioridad, mensajes automáticos y reglas de reparto",
+  "contexto": {
+    "tipo_de_centro": "[FISIOTERAPIA / DENTAL / PELUQUERÍA-ESTÉTICA / NUTRICIÓN / PSICOLOGÍA]",
+    "profesionales": "[NOMBRE Y ESPECIALIDAD DE CADA PROFESIONAL]",
+    "duracion_tipica_cita": "[30 / 45 / 60 MINUTOS]",
+    "cancelaciones_semana": "[Nº APROXIMADO DE CANCELACIONES DE ÚLTIMA HORA POR SEMANA]",
+    "herramientas": "[AGENDA QUE USAS: PAPEL / GOOGLE CALENDAR / SOFTWARE X]"
+  },
+  "entradas": {
+    "franja_horaria": "[HORARIO DE APERTURA POR DÍA]",
+    "radio_de_desplazamiento": "[MINUTOS QUE TARDA UN CLIENTE MEDIO EN LLEGAR]",
+    "tipos_de_cita_que_encajan": "[QUÉ SERVICIOS CABEN EN UN HUECO DE ESA DURACIÓN]",
+    "personas_en_espera": "[NOMBRE, SERVICIO, PROFESIONAL PREFERIDO, DISPONIBILIDAD REAL, URGENCIA DECLARADA POR EL CLIENTE]"
+  },
+  "procedimiento": [
+    "1. Define los tres campos que hay que apuntar sí o sí al meter a alguien en la lista: qué servicio, qué días y horas puede de verdad, y con qué antelación necesita el aviso",
+    "2. Ordena la lista con esta prioridad: quien lleva más tiempo esperando, quien encaja exactamente en la duración del hueco, quien vive o trabaja cerca, y quien ya confirmó que puede en esa franja",
+    "3. Escribe el mensaje de oferta del hueco: qué día, qué hora, con qué profesional, y una respuesta de una palabra para aceptarlo",
+    "4. Fija la regla del reloj: se ofrece a la primera persona y se espera un tiempo corto antes de pasar a la siguiente, y ese tiempo se ajusta a lo cerca que esté la hora del hueco",
+    "5. Decide si se ofrece a una sola persona por turno o a un grupo pequeño a la vez, y escribe qué se le dice a quien llegue tarde para que no se sienta engañado",
+    "6. Escribe el mensaje de confirmación final con dirección, hora y qué traer",
+    "7. Define qué se hace si nadie coge el hueco: a qué se dedica ese tiempo para que no se pierda del todo",
+    "8. Escribe el guion de recepción para meter a alguien en la lista sin prometerle una fecha",
+    "9. Define el registro semanal: huecos aparecidos, huecos cubiertos y minutos hasta cubrirlos"
+  ],
+  "restricciones": [
+    "No priorices por gravedad de síntomas ni valores la urgencia clínica de nadie: la prioridad es administrativa, por orden y encaje de agenda",
+    "Nunca ofrezcas la misma hora a dos personas dándola por confirmada a las dos",
+    "No escribas en el mensaje el motivo de consulta ni datos de salud",
+    "No aceptes en la lista a quien no dé una disponibilidad concreta: llena la lista de nombres inservibles",
+    "Los avisos salen solo dentro del horario de apertura"
+  ],
+  "errores_tipicos": [
+    "Lista de espera sin campo de disponibilidad real: llamas a diez personas y ninguna puede",
+    "Esperar demasiado la respuesta de la primera persona y quedarte sin margen para la segunda",
+    "No borrar de la lista a quien ya ha sido atendido, y acabar ofreciendo huecos a gente que ya no los quiere",
+    "Ofrecer un hueco de 30 minutos para un servicio que necesita 60",
+    "No avisar al profesional del cambio y que se encuentre a alguien inesperado"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha de alta en lista de espera con los campos exactos a rellenar",
+    "bloque_2": "Regla de prioridad explicada en cinco líneas, aplicable sin discutir",
+    "bloque_3": "Los tres mensajes: oferta de hueco, confirmación y aviso de hueco ya ocupado",
+    "bloque_4": "Protocolo minuto a minuto desde que entra la cancelación",
+    "bloque_5": "Plantilla de registro semanal de huecos y resultados"
+  },
+  "criterios_calidad": [
+    "El protocolo cabe en una hoja pegada junto al mostrador",
+    "Una persona nueva en recepción lo ejecuta el primer día sin ayuda",
+    "Ningún mensaje incluye datos de salud",
+    "El sistema deja claro qué hacer cuando nadie responde",
+    "Se puede medir el porcentaje de huecos cubiertos sin llevar cuentas complicadas"
+  ]
+}

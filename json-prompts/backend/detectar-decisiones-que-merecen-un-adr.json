@@ -1,0 +1,43 @@
+{
+  "tarea": "Detectar las decisiones de arquitectura ocultas dentro de una propuesta y determinar cuáles merecen un ADR propio",
+  "entradas": {
+    "propuesta": "[PEGA LA DESCRIPCIÓN DE LA FUNCIONALIDAD, TICKET, PROPUESTA TÉCNICA O RESUMEN DEL CAMBIO]",
+    "stack_actual": "[LO QUE YA USÁIS HOY]",
+    "tamano_equipo": "[NÚMERO DE PERSONAS]",
+    "apetito_documental": "[CUÁNTOS ADRS AL MES ESTÁIS DISPUESTOS A MANTENER]"
+  },
+  "criterios_para_merecer_adr": [
+    "Es difícil o caro de revertir una vez en producción",
+    "Afecta a más de un equipo, servicio o integración",
+    "Te ata a un proveedor, formato de datos o contrato externo",
+    "Cambia dónde viven los datos o quién puede verlos",
+    "Introduce un coste recurrente nuevo",
+    "Establece un patrón que otros copiarán después",
+    "Contradice una decisión anterior"
+  ],
+  "pasos": [
+    "1. Extrae todas las decisiones implícitas de la propuesta, incluidas las que se dan por supuestas",
+    "2. Marca cada una como PUERTA DE IDA Y VUELTA (fácil de deshacer) o PUERTA SIN RETORNO",
+    "3. Puntúa cada decisión contra los criterios y decide: merece ADR, basta un comentario en el código, o no hace falta nada",
+    "4. Para las que merecen ADR, redacta el título y la pregunta que ese ADR debe responder",
+    "5. Ordena las decisiones por urgencia: cuáles bloquean el inicio del desarrollo",
+    "6. Señala qué se puede empezar a programar ya sin esperar a ninguna decisión"
+  ],
+  "restricciones": [
+    "Respeta el apetito documental: si salen más ADRs de los que se pueden mantener, quédate con los de mayor impacto",
+    "No conviertas en ADR una preferencia de estilo de código",
+    "Si una decisión es reversible en menos de un día de trabajo, no merece ADR y hay que decirlo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: decisión detectada, reversible sí/no, criterios que cumple, veredicto",
+    "bloque_2": "Lista de títulos de ADR propuestos con su pregunta central",
+    "bloque_3": "Qué bloquea el inicio del desarrollo y qué no",
+    "bloque_4": "Las 3 decisiones que más te pueden costar si se toman a la ligera, con el motivo"
+  },
+  "criterios_calidad": [
+    "Aparecen decisiones que no estaban escritas en la propuesta pero se deducen de ella",
+    "Ningún veredicto es 'depende': cada decisión tiene su respuesta",
+    "El equipo puede empezar a trabajar el mismo día con lo que no está bloqueado"
+  ],
+  "tono": "Práctico, orientado a desbloquear trabajo"
+}

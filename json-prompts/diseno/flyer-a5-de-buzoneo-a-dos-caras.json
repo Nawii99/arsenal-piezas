@@ -1,0 +1,42 @@
+{
+  "tarea": "Escribir y estructurar un flyer A5 a dos caras para buzoneo o reparto en mano",
+  "negocio": {
+    "nombre": "[NOMBRE DE TU NEGOCIO]",
+    "que_vendes": "[PRODUCTO O SERVICIO PRINCIPAL]",
+    "zona": "[BARRIO O PUEBLO DONDE REPARTES]",
+    "oferta": "[DESCUENTO, REGALO O PROMOCIÓN]",
+    "plazo": "[FECHA LÍMITE DE LA OFERTA]",
+    "contacto": "[TELÉFONO, WHATSAPP, WEB Y DIRECCIÓN]",
+    "horario": "[HORARIO DE APERTURA]"
+  },
+  "principio": "Quien recoge el buzón decide en dos segundos si lo tira. La cara A tiene que ganar esos dos segundos",
+  "estructura_cara_a": [
+    "Titular con el beneficio concreto, no el nombre del negocio",
+    "Una imagen o producto que se reconozca al instante",
+    "La oferta destacada con su condición en una línea",
+    "Logo pequeño abajo y zona a la que sirves"
+  ],
+  "estructura_cara_b": [
+    "Tres razones para elegirte, una línea cada una",
+    "Lista corta de servicios o productos con precios desde",
+    "Prueba de confianza: años abiertos, reseñas o clientes de la zona",
+    "Datos de contacto, horario, mapa sencillo y cupón recortable si procede"
+  ],
+  "restricciones": [
+    "Máximo 90 palabras por cara",
+    "Nada de texto a menos de 5 mm del borde",
+    "Prohibido usar más de dos tipografías",
+    "La oferta debe indicar siempre su fecha de caducidad"
+  ],
+  "formato_salida": {
+    "textos": "Todos los textos finales separados por cara y por bloque",
+    "reparto_visual": "Porcentaje de espacio de cada bloque en cada cara",
+    "variantes_titular": "3 titulares alternativos para probar en dos tandas de reparto",
+    "cupon": "Texto del cupón con código y condiciones en una línea"
+  },
+  "criterios_calidad": [
+    "Se entiende qué vendes sin leer la letra pequeña",
+    "Hay una única acción pedida y es fácil de hacer desde casa",
+    "El cupón permite saber cuántos flyers han funcionado"
+  ]
+}

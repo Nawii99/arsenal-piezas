@@ -1,0 +1,38 @@
+{
+  "tarea": "Generar un endpoint REST completo en Spring Boot siguiendo arquitectura por capas",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL PROYECTO]",
+    "version_spring_boot": "[EJ: 3.3]",
+    "version_java": "[EJ: 21]",
+    "persistencia": "[SPRING DATA JPA / MYBATIS / JDBC]",
+    "base_paquetes": "[EJ: com.miempresa.pedidos]"
+  },
+  "entradas": {
+    "funcionalidad": "[QUÉ TIENE QUE HACER, EN UNA FRASE]",
+    "metodo_y_ruta": "[EJ: POST /api/v1/pedidos]",
+    "entidad": "[PEGA LA ENTIDAD O SUS CAMPOS]",
+    "reglas_validacion": "[QUÉ CAMPOS SON OBLIGATORIOS, RANGOS, FORMATOS]",
+    "seguridad": "[PÚBLICO / ROL REQUERIDO]"
+  },
+  "ficheros_a_generar": [
+    "Controller con la anotación de ruta y los códigos HTTP correctos",
+    "DTO de entrada con anotaciones de validación jakarta",
+    "DTO de salida como record, sin exponer la entidad",
+    "Servicio con la lógica y las transacciones",
+    "Repositorio con la consulta si hace falta",
+    "Excepción propia y su manejo en @RestControllerAdvice"
+  ],
+  "restricciones": [
+    "Nunca devolver la entidad JPA directamente en la respuesta",
+    "Nada de lógica de negocio dentro del controlador",
+    "@Transactional solo en el servicio, y de solo lectura si no escribe",
+    "Inyección por constructor, sin @Autowired en campos",
+    "Errores en formato ProblemDetail, sin filtrar trazas al cliente"
+  ],
+  "formato_salida": {
+    "1_arbol_ficheros": "rutas de los ficheros que se crean o tocan",
+    "2_codigo": "un bloque por fichero, completo y con imports",
+    "3_ejemplo_llamada": "petición curl de ejemplo y respuesta esperada",
+    "4_codigos_http": "tabla con situación y código devuelto"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Auditar si un agente de IA usa bien sus herramientas conectadas en una conversacion registrada",
+  "contexto": {
+    "que_hace_el_agente": "[QUE HACE TU AGENTE EN UNA FRASE]",
+    "herramientas": "[LISTA CADA HERRAMIENTA CON: NOMBRE, PARA QUE SIRVE, CUANDO SE DEBE USAR Y CUANDO NO]",
+    "acciones_que_exigen_confirmacion": "[QUE NO PUEDE HACER SIN QUE EL CLIENTE DIGA QUE SI: RESERVAR, COBRAR, CANCELAR, ENVIAR]",
+    "coste_o_riesgo": "[QUE HERRAMIENTAS CUESTAN DINERO O CAMBIAN DATOS REALES]"
+  },
+  "entradas": {
+    "registro": "[PEGA LA CONVERSACION CON LAS LLAMADAS A HERRAMIENTAS, SUS PARAMETROS Y SUS RESULTADOS]"
+  },
+  "metodo": [
+    "Reconstruye la secuencia paso a paso: mensaje del usuario, decision del agente, herramienta usada y parametros",
+    "Marca cada llamada como CORRECTA, INNECESARIA, EQUIVOCADA, MAL PARAMETRIZADA o REPETIDA",
+    "Detecta las llamadas que faltan: momentos en los que debio consultar algo y respondio de memoria",
+    "Comprueba si actuo sin confirmacion en alguna accion que la exigia",
+    "Comprueba si uso el resultado de la herramienta o lo ignoro al responder"
+  ],
+  "restricciones": [
+    "Juzga solo con las reglas declaradas en el contexto",
+    "Si una regla no esta clara, senalalo como regla ambigua en vez de inventar el criterio"
+  ],
+  "formato_salida": {
+    "tipo": "informe corto",
+    "secciones": [
+      "Tabla paso a paso con: numero, herramienta, parametros clave, veredicto y motivo",
+      "Llamadas que faltaban y que dato se invento en su lugar",
+      "Acciones hechas sin confirmacion",
+      "Tres reglas nuevas que anadir al prompt del agente, escritas tal cual para copiar y pegar"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada veredicto cita el parametro o la frase que lo justifica",
+    "Las reglas propuestas son cortas, en imperativo y sin ambiguedad",
+    "Se distingue entre error del agente y regla mal definida"
+  ]
+}

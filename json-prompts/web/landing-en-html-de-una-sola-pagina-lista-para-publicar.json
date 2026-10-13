@@ -1,0 +1,43 @@
+{
+  "tarea": "Generar el código HTML completo de una página de aterrizaje de una sola pantalla larga, autocontenido y listo para publicar",
+  "entradas": {
+    "negocio": "[NOMBRE Y A QUÉ SE DEDICA]",
+    "textos": "[TITULAR, SUBTITULAR, BENEFICIOS, TESTIMONIOS, PRECIO Y FAQ SI LOS TIENES]",
+    "objetivo": "[FORMULARIO DE CONTACTO / BOTÓN DE WHATSAPP / RESERVA]",
+    "destino_formulario": "[EMAIL O URL DEL SERVICIO DE FORMULARIOS]",
+    "whatsapp": "[NÚMERO CON PREFIJO, EJEMPLO 34600000000]",
+    "colores": "[COLOR PRINCIPAL Y COLOR DE ACENTO EN HEXADECIMAL]",
+    "datos_legales": "[NOMBRE FISCAL, NIF, EMAIL DE CONTACTO]"
+  },
+  "requisitos_tecnicos": [
+    "Un único archivo .html con el CSS dentro de una etiqueta style y sin librerías externas",
+    "Diseño adaptado a móvil primero, con botones de al menos 44 píxeles de alto",
+    "Botón flotante de WhatsApp visible al hacer scroll en móvil",
+    "Formulario accesible con etiquetas, campos obligatorios y casilla de privacidad sin marcar",
+    "Etiquetas title, meta description y Open Graph rellenadas",
+    "Textos alternativos en las imágenes y contraste suficiente para leer bien",
+    "Imágenes referenciadas con nombres de archivo claros y comentario de qué poner en cada hueco",
+    "Pie con aviso legal, privacidad y datos fiscales"
+  ],
+  "estructura_de_la_pagina": [
+    "Cabecera mínima sin menú que distraiga",
+    "Héroe con titular, subtitular y botón principal",
+    "Bloque de beneficios en tres columnas que se apilan en móvil",
+    "Cómo funciona en tres pasos",
+    "Testimonios",
+    "Oferta y precio",
+    "Preguntas frecuentes desplegables",
+    "Formulario y cierre"
+  ],
+  "formato_salida": {
+    "codigo": "El HTML completo en un único bloque de código, sin explicaciones dentro",
+    "instrucciones": "Después del código, pasos numerados para publicarlo gratis y conectar un dominio",
+    "personalizacion": "Lista de las líneas que hay que tocar para cambiar textos, colores y número de WhatsApp"
+  },
+  "restricciones": [
+    "No uses fuentes ni scripts externos ni servicios que requieran cuenta de pago",
+    "No inventes textos legales completos: deja el hueco y avisa de que hay que revisarlos",
+    "Nada de animaciones que retrasen la carga"
+  ],
+  "criterios_calidad": ["El archivo abre bien con doble clic y se ve correcto en un móvil sin tocar nada más"]
+}

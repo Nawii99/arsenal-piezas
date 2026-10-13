@@ -1,0 +1,53 @@
+{
+  "tarea": "Escribir el guion minutado de la sesión en directo [TÍTULO] de [DURACIÓN] minutos, con bloques, dinámicas, preguntas de control y planes B.",
+  "contexto": {
+    "tema": "[TEMA]",
+    "asistentes": "[NÚMERO APROXIMADO Y QUIÉNES SON]",
+    "canal": "[ZOOM / MEET / PRESENCIAL / DIRECTO EN INSTAGRAM]",
+    "objetivo_de_la_sesion": "[QUÉ SABRÁN HACER AL SALIR]",
+    "llamada_a_la_accion_final": "[SI LA HAY: INSCRIPCIÓN, CONSULTA, COMPRA]",
+    "materiales_disponibles": "[DIAPOSITIVAS, PANTALLA COMPARTIDA, PIZARRA, NADA]"
+  },
+  "entradas": {
+    "contenido_que_quiero_contar": "[PEGA TUS NOTAS O ESQUEMA]",
+    "nivel_del_publico": "[QUÉ SE PUEDE DAR POR SABIDO]",
+    "restricciones_de_tiempo": "[SI HAY PAUSA, SI EMPIEZA TARDE, ETC.]"
+  },
+  "procedimiento": [
+    "1. Recorta el contenido a tres ideas como mucho: en una sesión en directo no entra más y todo lo demás es material de apoyo.",
+    "2. Reparte el tiempo con la regla 20-60-20: apertura y contexto, práctica guiada, cierre y dudas.",
+    "3. Escribe la apertura con una pregunta o un caso, nunca con quién soy yo: la presentación va en el minuto tres, en dos frases.",
+    "4. Divide el bloque central en tramos de 12 a 15 minutos y coloca al final de cada tramo una interacción: chat, mano levantada, encuesta o pareja.",
+    "5. Para cada tramo escribe: idea, ejemplo concreto, error típico que vas a mostrar, y la frase de transición al siguiente.",
+    "6. Prepara dos preguntas de control por tramo para saber si te siguen, con la respuesta que esperas oír.",
+    "7. Escribe planes B: nadie habla en el chat, se cae la conexión, alguien monopoliza, vas 10 minutos tarde, terminas 10 minutos antes.",
+    "8. Escribe el cierre: resumen en tres líneas, la tarea de 10 minutos para hoy y la llamada a la acción dicha una sola vez y sin rodeos.",
+    "9. Prepara la lista de comprobación de los 15 minutos previos: audio, luz, ventanas cerradas, enlace, grabación, material a mano."
+  ],
+  "restricciones": [
+    "Ningún bloque de más de 15 minutos hablando seguido.",
+    "El guion se lee de un vistazo: viñetas, no párrafos.",
+    "Nada de dinámicas que necesiten material que no está en la lista de disponibles.",
+    "Español de España, tuteando al público."
+  ],
+  "errores_a_evitar": [
+    "Preparar contenido para 90 minutos y tener 60: se nota y se corre el final, que es lo que más importa.",
+    "Dejar las dudas para el final sin haber generado ninguna interacción antes: nadie pregunta.",
+    "Enseñar teoría sin mostrar el error típico, que es lo que la gente recuerda.",
+    "Repetir la llamada a la acción tres veces: quema la confianza que acabas de construir."
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha de la sesión: objetivo, tres ideas, promesa de una frase.",
+    "bloque_2": "Tabla minutada: minuto de inicio, bloque, qué haces, qué dice el público, material.",
+    "bloque_3": "Guion literal solo de la apertura (60 segundos) y del cierre (90 segundos).",
+    "bloque_4": "Preguntas de control con la respuesta esperada.",
+    "bloque_5": "Planes B en tabla: qué pasa, qué haces, qué dices.",
+    "bloque_6": "Lista de comprobación previa y mensajes para el chat listos para pegar."
+  },
+  "criterios_calidad": [
+    "Los minutos suman exactamente la duración indicada, con 5 minutos de colchón.",
+    "Hay una interacción como mínimo cada 15 minutos.",
+    "El cierre se puede dar aunque hayas ido 10 minutos tarde, recortando un tramo marcado como prescindible.",
+    "Alguien que no eres tú podría dar la sesión leyendo el guion."
+  ]
+}

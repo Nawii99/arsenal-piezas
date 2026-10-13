@@ -1,0 +1,44 @@
+{
+  "rol": "Fotografo de producto y director de arte que escribe prompts para generadores de imagen",
+  "tarea": "Escribir prompts de imagen listos para copiar que generen un mockup realista del envase descrito",
+  "envase": {
+    "tipo": "[TARRO DE VIDRIO, BOLSA DOYPACK, CAJA DE CARTON, LATA, BOTELLA, TUBO...]",
+    "medidas_aproximadas": "[ALTO x ANCHO EN CM PARA QUE LA PROPORCION SEA CREIBLE]",
+    "material_y_acabado": "[MATE, BRILLO, KRAFT SIN PLASTIFICAR, VIDRIO AMBAR, ALUMINIO CEPILLADO]",
+    "colores": "[COLORES PRINCIPALES DEL ENVASE, EN NOMBRE O HEX]",
+    "etiqueta": "[QUE APARECE EN LA ETIQUETA: DESCRIBELO SIN PEDIR TEXTO LARGO]",
+    "producto": "[QUE CONTIENE]"
+  },
+  "uso_final": "[FICHA DE PRODUCTO, INSTAGRAM, PORTADA DE WEB, PRESENTACION A UN CLIENTE]",
+  "estilo_de_marca": "[MINIMALISTA, ARTESANAL, LUJO, NATURAL, TECNICO]",
+  "variantes_a_entregar": [
+    "Plano frontal limpio sobre fondo neutro, tipo ficha de ecommerce",
+    "Plano tres cuartos con sombra suave y superficie de textura",
+    "Bodegon con dos elementos de contexto relacionados con el producto",
+    "Detalle macro del material y el acabado del envase",
+    "Plano cenital para redes, con espacio libre para poner texto encima"
+  ],
+  "cada_prompt_debe_incluir": [
+    "Sujeto y material del envase",
+    "Tipo de plano y angulo de camara",
+    "Lente equivalente y profundidad de campo",
+    "Esquema de luz: fuente principal, difusion y relleno",
+    "Fondo, superficie y paleta",
+    "Relacion de aspecto y nivel de detalle",
+    "Lista de elementos a evitar"
+  ],
+  "restricciones": [
+    "Nada de texto largo dentro de la imagen: los generadores lo deforman, describir la etiqueta por composicion",
+    "Sombras y reflejos coherentes con una sola fuente de luz principal",
+    "Proporciones realistas del envase segun las medidas indicadas",
+    "Evitar manos y personas salvo que se pidan"
+  ],
+  "formato_salida": {
+    "por_variante": "titulo, prompt en ingles en una sola linea para copiar, prompt en espanol, ajustes recomendados y que revisar en el resultado"
+  },
+  "criterios_calidad": [
+    "El envase parece fotografiado, no ilustrado",
+    "Las cinco variantes son claramente distintas entre si",
+    "El prompt se puede reutilizar cambiando solo el color o el material"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar una encuesta breve post-servicio y el protocolo de actuación según la respuesta",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "servicio": "[QUÉ ACABA DE RECIBIR EL CLIENTE]",
+    "canal": "[WHATSAPP / EMAIL / SMS / QR]",
+    "momento_envio": "[CUÁNTAS HORAS O DÍAS DESPUÉS]",
+    "quien_atiende": "[NOMBRE Y HORARIO]",
+    "margen_para_arreglarlo": "[QUÉ PUEDES OFRECER SIN CONSULTAR]"
+  },
+  "proceso": [
+    "Diseña 3 preguntas como máximo: una de nota de 0 a 10, una abierta y una de intención de volver",
+    "Define los tres tramos de nota y qué pasa en cada uno: aviso interno, llamada o petición de reseña pública",
+    "Escribe los mensajes de cada tramo, incluida la llamada de recuperación",
+    "Fija el plazo de reacción para una nota baja, en horas, no en días",
+    "Define qué se apunta de cada caso para detectar patrones al cabo de un mes"
+  ],
+  "restricciones": [
+    "Prohibido bloquear la reseña pública o condicionarla a la nota: la encuesta sirve para reaccionar antes, no para filtrar quién puede opinar",
+    "La encuesta se responde en menos de 30 segundos",
+    "Un único recordatorio y sin insistir",
+    "Español de España, tuteando, sin jerga de satisfacción del cliente"
+  ],
+  "formato_salida": {
+    "encuesta": "Las preguntas exactas con sus opciones",
+    "mensaje_envio": "Texto del mensaje que acompaña la encuesta",
+    "protocolo": "Tramo de nota | Qué se hace | Quién | En cuánto tiempo | Mensaje literal",
+    "guion_llamada": "Guion de 6 líneas para llamar a un cliente descontento",
+    "registro": "Columnas de la hoja donde apuntar cada caso"
+  },
+  "criterios_calidad": [
+    "El cliente descontento recibe respuesta antes de 24 horas",
+    "Todo el circuito lo puede llevar una persona sin herramientas de pago"
+  ]
+}

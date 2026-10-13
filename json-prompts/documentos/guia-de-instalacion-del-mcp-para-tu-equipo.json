@@ -1,0 +1,42 @@
+{
+  "tarea": "Escribe la guía paso a paso para que una persona sin perfil técnico de mi equipo instale y conecte este servidor MCP, lo verifique y sepa qué hacer si falla",
+  "contexto": {
+    "servidor_mcp": "[NOMBRE Y ENLACE]",
+    "cliente": "[EJ: CLAUDE DESKTOP, CLAUDE CODE, OTRO]",
+    "sistemas_del_equipo": "[WINDOWS / MAC / AMBOS]",
+    "credenciales_necesarias": "[EJ: CLAVE API DEL SERVICIO, USUARIO Y CONTRASEÑA]",
+    "quien_entrega_las_credenciales": "[PERSONA O DEPARTAMENTO]",
+    "nivel_de_los_usuarios": "sin conocimientos técnicos"
+  },
+  "instrucciones": [
+    "Empieza con una lista de lo que hay que tener antes de empezar y cuánto tarda todo",
+    "Numera los pasos, uno por acción, y di exactamente dónde hay que hacer clic o qué escribir",
+    "Incluye el bloque de configuración completo con los valores a sustituir entre corchetes en mayúsculas",
+    "Explica dónde va ese bloque y cómo guardar y reiniciar para que surta efecto",
+    "Añade una comprobación final: una frase concreta que escribir al agente y la respuesta que debería dar si todo va bien",
+    "Cierra con los cinco fallos más habituales y su solución en una línea cada uno",
+    "Añade las reglas de uso: qué se puede pedir y qué está prohibido pedirle al agente con este conector"
+  ],
+  "restricciones": [
+    "Nunca pongas credenciales reales en la guía: siempre marcador entre corchetes y aviso de no compartirlas por chat",
+    "Nada de pasos que asuman conocimientos previos",
+    "Cada paso, una sola acción"
+  ],
+  "formato_salida": {
+    "tipo": "markdown imprimible",
+    "secciones": [
+      "Qué vas a conseguir y en cuánto tiempo",
+      "Antes de empezar: lo que necesitas",
+      "Instalación paso a paso numerada",
+      "Bloque de configuración con los valores a rellenar",
+      "Comprobación: escribe esto y deberías ver esto",
+      "Si algo falla: 5 problemas y su solución",
+      "Reglas de uso y a quién avisar si algo va mal"
+    ]
+  },
+  "criterios_calidad": [
+    "Alguien que no ha visto nunca un MCP lo consigue siguiendo la guía",
+    "La comprobación final es inequívoca",
+    "No aparece ninguna credencial real ni ruta personal de nadie"
+  ]
+}

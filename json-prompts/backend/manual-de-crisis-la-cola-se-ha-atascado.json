@@ -1,0 +1,32 @@
+{
+  "tarea": "Escribir el manual de incidencia (runbook) para cuando la cola de trabajos de [NOMBRE DE TU APLICACIÓN] se atasca: los mensajes se acumulan y los procesos no dan abasto",
+  "entradas": {
+    "colas": "[NOMBRES DE TUS COLAS Y QUÉ HACE CADA UNA]",
+    "trabajos_criticos": "[LOS QUE SI SE RETRASAN AFECTAN A CLIENTES O A COBROS]",
+    "guardia": "[QUIÉN RESPONDE Y EN QUÉ HORARIO]",
+    "herramientas": "[PANEL DE COLAS, MONITORIZACIÓN, DÓNDE VEIS LOS REGISTROS]",
+    "umbral_alarma": "[A PARTIR DE CUÁNTOS MENSAJES O MINUTOS DE RETRASO ES INCIDENCIA]"
+  },
+  "estructura_pasos": [
+    "Detectar y confirmar: qué mirar en el primer minuto para saber si es real",
+    "Contener: reducir daño (parar lo no urgente, avisar a atención al cliente, activar aviso en la web)",
+    "Diagnosticar por causas en orden de probabilidad: procesos caídos, un trabajo lento que bloquea, servicio externo que no responde, avalancha de mensajes, error que reintenta en bucle, base de datos saturada",
+    "Actuar: la acción concreta para cada causa, con el riesgo de cada acción",
+    "Recuperar: cómo vaciar el atasco sin duplicar efectos y cómo comprobar que se ha normalizado",
+    "Cerrar: qué anotar y qué revisar al día siguiente"
+  ],
+  "restricciones": [
+    "Cada paso empieza con un verbo y cabe en una línea",
+    "Marcar con aviso las acciones peligrosas (borrar mensajes, subir procesos de golpe, reintentar todo)",
+    "Incluir siempre el mensaje tipo para avisar a clientes y el mensaje interno para el equipo"
+  ],
+  "formato_salida": {
+    "tipo": "runbook en Markdown, imprimible en 2 páginas",
+    "secciones": ["Cuándo aplica", "Primeros 5 minutos", "Árbol de causas y acciones", "Acciones peligrosas", "Cómo confirmar que se ha resuelto", "Mensajes tipo", "Qué revisar después"]
+  },
+  "criterios_calidad": [
+    "Una persona de guardia con sueño puede seguirlo sin pensar",
+    "Todas las causas del árbol tienen una comprobación concreta asociada",
+    "No hay ningún paso que dependa de conocer el historial del proyecto"
+  ]
+}

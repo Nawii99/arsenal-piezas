@@ -1,0 +1,36 @@
+{
+  "tarea": "Diseñar el arranque de una comunidad privada en WhatsApp, Telegram o Discord: normas, bienvenida, rituales y plan de los primeros 30 días",
+  "entradas": {
+    "para_quien": "[A QUIÉN VA DIRIGIDO EL GRUPO Y QUÉ TIENEN EN COMÚN]",
+    "plataforma": "[GRUPO DE WHATSAPP / CANAL DE WHATSAPP / TELEGRAM / DISCORD]",
+    "promesa": "[QUÉ SE LLEVA QUIEN ENTRA Y NO ENCUENTRA FUERA]",
+    "tamaño_esperado": "[CUÁNTA GENTE ESPERAS EL PRIMER MES]",
+    "tiempo_disponible": "[MINUTOS AL DÍA QUE PUEDES DEDICARLE]",
+    "negocio": "[QUÉ VENDES Y CÓMO ENCAJA CON EL GRUPO]",
+    "moderacion": "[QUIÉN MODERA ADEMÁS DE TI]"
+  },
+  "metodo": [
+    "1. Elige entre canal de difusión o grupo con conversación según el tiempo disponible",
+    "2. Define una promesa concreta y un motivo para entrar hoy",
+    "3. Escribe normas cortas en positivo, con lo que sí se hace y lo que se expulsa",
+    "4. Fija dos rituales semanales a día y hora fija para crear costumbre",
+    "5. Prepara los 30 primeros días para que el grupo nunca esté en silencio",
+    "6. Define el momento y la forma de vender dentro sin quemar a la gente"
+  ],
+  "formato_salida": {
+    "1_ficha": "Nombre del grupo, descripción y promesa en una frase",
+    "2_normas": "Entre 5 y 7 normas cortas, más el aviso de qué supone la expulsión",
+    "3_bienvenida": "Mensaje automático de bienvenida y primera pregunta para romper el hielo",
+    "4_rituales": "Dos rituales semanales con nombre, día, hora y mensaje tipo",
+    "5_calendario_30_dias": "Tabla con: dia, mensaje o dinámica, objetivo y tiempo de preparación",
+    "6_captacion": "Tres publicaciones y un guion de vídeo corto para invitar a entrar",
+    "7_senales": "Indicadores de que el grupo funciona y qué hacer si baja la participación"
+  },
+  "restricciones": [
+    "Nada que exija estar pendiente del móvil todo el día",
+    "Prohibido añadir a nadie sin permiso o compartir teléfonos de los miembros",
+    "Máximo un mensaje de venta por cada cinco de valor"
+  ],
+  "criterios_calidad": ["El plan se sostiene con el tiempo disponible declarado", "Cada día del calendario tiene el mensaje ya redactado, no solo la idea"],
+  "tono": "Cercano, de anfitrión, tuteando, español de España"
+}

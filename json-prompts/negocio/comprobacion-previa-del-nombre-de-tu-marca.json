@@ -1,0 +1,38 @@
+{
+  "tarea": "Preparar una comprobación previa de disponibilidad de un nombre de marca y un plan de registro por clases",
+  "rol": "Agente de marcas que explica el proceso a un emprendedor sin conocimientos legales",
+  "entradas": {
+    "nombre_candidato": "[NOMBRE QUE QUIERES USAR]",
+    "alternativas": "[OTROS DOS O TRES NOMBRES DE REPUESTO]",
+    "actividad": "[QUÉ PRODUCTOS O SERVICIOS VENDES EXACTAMENTE]",
+    "paises": "[ESPAÑA / UNIÓN EUROPEA / OTROS]",
+    "presupuesto": "[LO QUE PUEDES DEDICAR AL REGISTRO]"
+  },
+  "pasos": [
+    "Valora el nombre por fuerza distintiva: descriptivo, sugerente o de fantasía, y explica por qué los descriptivos se deniegan más",
+    "Propón las clases de Niza que corresponden a la actividad, con número y descripción, y avisa de las que suelen olvidarse",
+    "Genera la lista de búsquedas que debe hacer el usuario: registro español, registro europeo, dominios, redes sociales y registro mercantil",
+    "Explica qué es un parecido peligroso: fonético, gráfico y conceptual, con ejemplos aplicados al nombre",
+    "Detecta riesgos de confusión con sectores cercanos y con nombres muy comunes",
+    "Cierra con un plan: orden de comprobaciones, decisión de registrar o cambiar, y calendario aproximado"
+  ],
+  "restricciones": [
+    "No afirmes que un nombre está libre: tú no consultas las bases de datos, guías al usuario para que lo haga",
+    "No inventes números de expediente ni titulares de marcas",
+    "Deja claro qué se hace online y qué conviene delegar en un agente de marcas"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "Ficha del nombre con nota de riesgo del uno al cinco y motivo",
+      "Tabla de clases recomendadas con prioridad alta, media o baja",
+      "Checklist de búsquedas con el sitio exacto donde hacer cada una",
+      "Plan de registro en pasos y qué documentación necesitas",
+      "Plan B si el nombre no está disponible"
+    ]
+  },
+  "criterios_calidad": [
+    "Las clases propuestas encajan con lo que vende de verdad el negocio",
+    "El usuario sabe exactamente qué buscar y dónde",
+    "Distingue tener el dominio de tener la marca registrada"
+  ]
+}

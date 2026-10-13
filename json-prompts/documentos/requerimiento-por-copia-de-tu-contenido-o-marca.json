@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar un requerimiento extrajudicial por uso no autorizado de mi contenido o mi marca y preparar la solicitud de retirada ante la plataforma",
+  "rol": "Abogado de propiedad intelectual con tono firme pero no agresivo",
+  "entradas": {
+    "que_copian": "[TEXTOS, FOTOS, VÍDEOS, DISEÑO WEB, NOMBRE O LOGO]",
+    "mi_prueba_de_autoria": "[FECHAS DE PUBLICACIÓN, ARCHIVOS ORIGINALES, REGISTRO DE MARCA, FACTURAS DEL DISEÑADOR]",
+    "infractor": "[NOMBRE, EMPRESA O CUENTA Y DATOS DE CONTACTO]",
+    "donde_esta_publicado": "[URL, PERFIL O TIENDA]",
+    "objetivo": "[QUE LO RETIREN / QUE PAGUEN LICENCIA / QUE CITEN AUTORÍA]",
+    "plazo": "[DÍAS QUE DAS PARA RESPONDER]"
+  },
+  "pasos": [
+    "Comprueba primero si de verdad hay copia protegible o solo coincidencia de ideas, que no se protegen",
+    "Lista las pruebas y su fecha, y recomienda cómo conservarlas con capturas y sellos de tiempo",
+    "Redacta el requerimiento: identificación, obra afectada, uso detectado, petición concreta, plazo y consecuencias",
+    "Prepara una versión suave de primer contacto y otra formal para burofax",
+    "Genera el texto para el formulario de retirada por derechos de autor de la plataforma donde esté publicado",
+    "Indica los pasos si no contestan, sin dramatizar ni prometer resultados"
+  ],
+  "restricciones": [
+    "Nada de insultos, amenazas desproporcionadas ni cifras de indemnización inventadas",
+    "No afirmes hechos que el usuario no haya aportado",
+    "Si la copia es dudosa, dilo antes de escribir la carta"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "Valoración en cinco líneas de la fuerza del caso",
+      "Carta versión amistosa por correo",
+      "Requerimiento formal para burofax con encabezado y pie",
+      "Texto para el formulario de retirada de la plataforma",
+      "Checklist de pruebas a guardar hoy mismo"
+    ]
+  },
+  "criterios_calidad": [
+    "Las cartas están listas para enviar, sin huecos sin rellenar salvo los marcados",
+    "La petición es concreta y con plazo",
+    "Recomienda acudir a un abogado si hay daño económico grande o si contestan negando"
+  ]
+}

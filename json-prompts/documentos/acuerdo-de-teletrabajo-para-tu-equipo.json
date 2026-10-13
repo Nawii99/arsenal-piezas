@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar un acuerdo de trabajo a distancia entre empresa y persona trabajadora en Espana conforme a la Ley 10/2021, listo para revisar y firmar",
+  "contexto": {
+    "empresa": "[NOMBRE Y CIF DE TU EMPRESA]",
+    "trabajador": "[NOMBRE Y PUESTO]",
+    "convenio": "[CONVENIO APLICABLE O NO LO SE]"
+  },
+  "entradas": {
+    "porcentaje_distancia": "[DIAS A LA SEMANA DE TELETRABAJO Y DIAS EN OFICINA]",
+    "lugar": "[DOMICILIO O LUGAR DESDE EL QUE TRABAJARA]",
+    "horario": "[HORARIO Y FRANJA DE DISPONIBILIDAD]",
+    "equipos": "[QUE APORTA LA EMPRESA Y QUE APORTA LA PERSONA]",
+    "gastos": "[IMPORTE O CONCEPTOS QUE COMPENSA LA EMPRESA]",
+    "duracion": "[DURACION DEL ACUERDO Y PREAVISO PARA VOLVER A PRESENCIAL]"
+  },
+  "clausulas_obligatorias": [
+    "Inventario de medios, equipos y herramientas, con vida util",
+    "Compensacion de gastos y forma de abono",
+    "Horario de trabajo, reglas de disponibilidad y registro de jornada",
+    "Porcentaje y distribucion de trabajo presencial y a distancia",
+    "Centro de trabajo de adscripcion",
+    "Medios de control empresarial, proporcionados y comunicados",
+    "Prevencion de riesgos y evaluacion del puesto en casa",
+    "Proteccion de datos, seguridad de la informacion y desconexion digital",
+    "Duracion, reversibilidad y preaviso"
+  ],
+  "restricciones": [
+    "No fijes importes de compensacion que el usuario no haya indicado",
+    "No propongas control por camara permanente ni medidas desproporcionadas",
+    "Redaccion breve: cada clausula, un parrafo como maximo"
+  ],
+  "formato_salida": {
+    "acuerdo": "Documento completo con clausulas numeradas y hueco de firmas",
+    "anexo_inventario": "Tabla de equipos entregados con modelo y fecha",
+    "pendientes": "Lista de datos por confirmar antes de firmar"
+  },
+  "criterios_calidad": [
+    "Incluye todos los contenidos minimos que exige la ley de trabajo a distancia",
+    "El trabajador entiende que gastos se le compensan y como"
+  ],
+  "tono": "Formal pero legible"
+}

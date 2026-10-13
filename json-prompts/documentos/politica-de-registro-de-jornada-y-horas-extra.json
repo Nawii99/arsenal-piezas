@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar la politica interna de registro de jornada, horas extra y desconexion digital de una empresa pequena en Espana, para entregar y firmar por la plantilla",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "plantilla": "[NUMERO DE EMPLEADOS Y PUESTOS]",
+    "convenio": "[CONVENIO APLICABLE O NO LO SE]",
+    "modalidad": "[PRESENCIAL, HIBRIDO O A DISTANCIA]"
+  },
+  "entradas": {
+    "horarios": "[HORARIO O HORARIOS HABITUALES]",
+    "sistema_fichaje": "[APP, HOJA DE CALCULO, RELOJ O PAPEL]",
+    "pausas": "[PAUSAS QUE SE FICHAN Y CUALES NO]",
+    "horas_extra": "[SE PAGAN, SE COMPENSAN CON DESCANSO O AMBAS]",
+    "responsable": "[QUIEN APRUEBA Y REVISA LOS REGISTROS]",
+    "flexibilidad": "[HAY FLEXIBILIDAD DE ENTRADA Y SALIDA? EXPLICALA]"
+  },
+  "contenido_obligatorio": [
+    "Quien debe fichar y desde cuando",
+    "Como se registra el inicio, el fin y las pausas, con ejemplos del dia a dia",
+    "Que hacer si se olvida fichar o hay un error, y plazo para corregirlo",
+    "Procedimiento de autorizacion previa de horas extra por escrito",
+    "Como se compensan o abonan las horas extra y su limite anual",
+    "Conservacion de los registros durante cuatro anos y acceso de la plantilla y sus representantes",
+    "Desconexion digital fuera del horario",
+    "Consecuencias del incumplimiento, proporcionadas"
+  ],
+  "restricciones": [
+    "No propongas fichajes automaticos que no reflejen la jornada real",
+    "No incluyas control por geolocalizacion permanente ni medidas invasivas",
+    "Maximo dos paginas y frases cortas"
+  ],
+  "formato_salida": {
+    "politica": "Documento con apartados numerados",
+    "hoja_firma": "Texto de acuse de recibo para que cada persona firme",
+    "plantilla_registro": "Columnas minimas de una hoja de fichaje: fecha, hora inicio, pausas, hora fin, total y observaciones",
+    "email_comunicacion": "Email breve para anunciar la politica al equipo"
+  },
+  "criterios_calidad": [
+    "Cualquier empleado sabe que hacer tras leerlo una vez",
+    "Incluye aviso de revisar el convenio y de que no sustituye asesoramiento legal"
+  ]
+}

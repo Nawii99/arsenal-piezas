@@ -1,0 +1,48 @@
+{
+  "tarea": "Genera un conjunto de datos inventados siguiendo esta especificación al pie de la letra. Devuelve solo el resultado en el formato indicado en salida, sin explicaciones antes ni después.",
+  "contexto": {
+    "pais": "España",
+    "idioma": "es-ES",
+    "uso": "[PARA QUÉ: probar importación en CRM / secuencia de email / flujo de n8n / demo a cliente]",
+    "herramienta_destino": "[HUBSPOT / BREVO / GOOGLE SHEETS / AIRTABLE / SHOPIFY / OTRA]"
+  },
+  "filas": "[NÚMERO, MÁXIMO 500]",
+  "campos": [
+    { "nombre": "nombre", "tipo": "texto", "regla": "Nombres de pila habituales en España, con acentos. Un 15 % compuestos." },
+    { "nombre": "apellidos", "tipo": "texto", "regla": "Dos apellidos españoles separados por espacio." },
+    { "nombre": "email", "tipo": "email", "regla": "Construido a partir del nombre, en minúsculas y sin acentos. Dominio obligatorio: example.com o example.es. Nunca dominios reales." },
+    { "nombre": "telefono", "tipo": "texto", "regla": "Formato +34 6XX 555 XXX. El bloque 555 es obligatorio para que no exista." },
+    { "nombre": "empresa", "tipo": "texto", "regla": "Nombres de empresa inventados y verosímiles con forma jurídica (S.L., S.A., autónomo). No usar marcas reales." },
+    { "nombre": "ciudad", "tipo": "texto", "regla": "Ciudades reales de España, repartidas entre grandes y medianas." },
+    { "nombre": "fecha_alta", "tipo": "fecha", "regla": "Formato AAAA-MM-DD, entre [FECHA INICIO] y [FECHA FIN]." },
+    { "nombre": "importe_base", "tipo": "decimal", "regla": "Euros con dos decimales, entre [MÍNIMO] y [MÁXIMO]." },
+    { "nombre": "tipo_iva", "tipo": "entero", "regla": "21, 10 o 4. La mayoría 21." },
+    { "nombre": "total", "tipo": "decimal", "regla": "importe_base más el IVA aplicado, redondeado a dos decimales. Debe cuadrar siempre." },
+    { "nombre": "origen", "tipo": "lista", "valores": ["[CANAL 1]", "[CANAL 2]", "[CANAL 3]"], "regla": "Reparto aproximado 50/30/20." }
+  ],
+  "casos_raros": {
+    "activar": true,
+    "porcentaje_filas_afectadas": 10,
+    "tipos": [
+      "email con espacio al final o sin arroba",
+      "telefono vacío",
+      "nombre en mayúsculas completas",
+      "fila duplicada exacta de otra",
+      "apellido con ñ o diéresis"
+    ],
+    "marcar": "Añade una última columna llamada caso_raro con el tipo de trampa, o vacía si la fila es normal."
+  },
+  "prohibido": [
+    "Datos de personas reales, incluidas figuras públicas",
+    "Dominios de email reales",
+    "Teléfonos sin el bloque 555",
+    "Marcas o empresas existentes",
+    "Añadir columnas que no estén en campos"
+  ],
+  "salida": {
+    "formato": "[CSV / JSON]",
+    "separador_csv": ",",
+    "cabecera": true,
+    "nombres_columna": "Usa los nombres exactos que espera herramienta_destino si los conoces; si no, usa los de campos y avísalo en una línea antes del bloque."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "tarea": "Auditar el curso [NOMBRE] para localizar los puntos donde los alumnos abandonan y proponer arreglos ordenados por esfuerzo e impacto.",
+  "contexto": {
+    "formato": "[GRABADO / EN DIRECTO / MIXTO]",
+    "numero_de_lecciones": "[NÚMERO]",
+    "alumnos_matriculados": "[NÚMERO]",
+    "porcentaje_que_termina": "[SI LO SABES; SI NO, PON DESCONOCIDO]",
+    "plataforma": "[DÓNDE ESTÁ ALOJADO]"
+  },
+  "entradas": {
+    "listado_de_lecciones": "[TÍTULO, DURACIÓN Y SI TIENE EJERCICIO, UNA POR LÍNEA]",
+    "datos_de_visionado": "[SI TIENES: % DE ALUMNOS QUE VE CADA LECCIÓN Y MINUTO MEDIO DE ABANDONO]",
+    "dudas_recibidas": "[PEGA LAS PREGUNTAS MÁS REPETIDAS POR EMAIL O GRUPO]",
+    "motivos_de_baja": "[LO QUE TE HAN DICHO LOS QUE SE FUERON]"
+  },
+  "procedimiento": [
+    "1. Dibuja el embudo del alumno por etapas: compra, primer acceso, primera lección terminada, primer ejercicio entregado, mitad del curso, final.",
+    "2. Si no hay datos de visionado, usa señales indirectas: dudas repetidas, mensajes que dejan de llegar, ejercicios sin entregar.",
+    "3. Marca los tres puntos con mayor caída y clasifica la causa: fricción técnica, salto de dificultad, lección demasiado larga, falta de motivo para continuar o vida del alumno.",
+    "4. Revisa la lección anterior a cada caída: casi siempre el problema está antes del punto donde se ve la caída.",
+    "5. Comprueba la curva de duración: dos lecciones seguidas de más de 20 minutos suelen romper el ritmo.",
+    "6. Comprueba que cada lección termina con una acción de 10 minutos y con un motivo explícito para volver.",
+    "7. Propón para cada punto de fuga dos arreglos: uno barato (menos de una hora de trabajo) y uno de fondo (regrabar, partir, reordenar).",
+    "8. Ordena los arreglos en una tabla de impacto contra esfuerzo y elige los tres primeros.",
+    "9. Define cómo medirás si ha funcionado y en cuánto tiempo."
+  ],
+  "restricciones": [
+    "No proponer rehacer el curso entero; el plan debe empezar por cambios de menos de una hora.",
+    "Nada de conclusiones sin apoyarlas en un dato o en una señal concreta de las entradas.",
+    "Si falta información clave, decirlo y proponer cómo conseguirla en una semana.",
+    "Español de España, tuteando, sin jerga de consultoría."
+  ],
+  "errores_a_evitar": [
+    "Culpar a la falta de compromiso del alumno y no tocar el curso.",
+    "Confundir la lección menos vista con la peor lección: puede ser simplemente la más tardía.",
+    "Añadir contenido nuevo cuando el problema es exceso de contenido.",
+    "Cambiar diez cosas a la vez y no poder saber cuál funcionó."
+  ],
+  "formato_salida": {
+    "bloque_1": "Embudo por etapas con el número o la estimación en cada una y el porcentaje de caída.",
+    "bloque_2": "Tabla lección a lección: título, duración, señal de problema, causa probable.",
+    "bloque_3": "Los tres puntos de fuga principales explicados en un párrafo cada uno.",
+    "bloque_4": "Tabla de arreglos: arreglo, punto de fuga, esfuerzo, impacto esperado, orden.",
+    "bloque_5": "Plan de las dos próximas semanas con los tres arreglos elegidos y cómo se mide cada uno."
+  },
+  "criterios_calidad": [
+    "Cada causa propuesta se puede desmentir con un dato: no vale la explicación que siempre encaja.",
+    "Los tres arreglos prioritarios se pueden hacer sin volver a grabar nada.",
+    "Hay una métrica y una fecha para cada arreglo.",
+    "El informe cabe en dos páginas."
+  ]
+}

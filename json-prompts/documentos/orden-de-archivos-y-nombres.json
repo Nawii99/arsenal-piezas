@@ -1,0 +1,56 @@
+{
+  "tarea": "Disenar un sistema de carpetas y de nomenclatura de archivos para mi negocio y darme el plan de migracion de lo que ya tengo",
+  "contexto": {
+    "negocio": "[A QUÉ ME DEDICO]",
+    "donde_guardo": "[ORDENADOR, GOOGLE DRIVE, DROPBOX, MEZCLA]",
+    "quien_mas_entra": "[SOLO YO, GESTORÍA, SOCIO, EMPLEADOS]",
+    "volumen": "[APROXIMADO DE ARCHIVOS O DE GIGAS]"
+  },
+  "entradas": {
+    "listado_actual": "[PEGA UN LISTADO DE CARPETAS Y ALGUNOS NOMBRES DE ARCHIVO REALES]",
+    "tipos_de_documento": "[FACTURAS, PRESUPUESTOS, CONTRATOS, FOTOS, ENTREGAS...]",
+    "como_busco": "[POR CLIENTE, POR FECHA, POR PROYECTO, POR TIPO]",
+    "obligaciones": "[AÑOS QUE DEBO CONSERVAR SEGÚN LA GESTORÍA]"
+  },
+  "pasos": [
+    "Elige el criterio principal de la primera carpeta: cliente, proyecto o ano, segun como busco de verdad, no como me gustaria buscar.",
+    "Limita la profundidad a tres niveles; todo lo demas se resuelve con el nombre del archivo.",
+    "Define un patron de nombre unico: fecha AAAA-MM-DD, guion bajo, cliente o proyecto, guion bajo, tipo, guion bajo, version.",
+    "Prohibe tildes, enes, espacios y caracteres raros en los nombres, y explica por que rompen enlaces y copias.",
+    "Define el versionado: v01, v02 y una unica carpeta o sufijo FINAL, con la regla de que solo hay un final.",
+    "Define donde va lo que no encaja: una carpeta de entrada temporal y la regla de vaciarla cada semana.",
+    "Define archivo muerto: carpeta por ano cerrado, solo lectura, con el ano de caducidad segun las obligaciones.",
+    "Escribe el plan de migracion por lotes, empezando por el ano en curso y sin tocar lo antiguo hasta el final.",
+    "Escribe las reglas de nombres para los documentos que salen fuera, que son los que ve el cliente."
+  ],
+  "que_mirar": [
+    "Rutas demasiado largas que dan error al copiar o al sincronizar.",
+    "Archivos duplicados con nombre copia de copia de.",
+    "Nombres que solo entiende quien los puso, tipo cosas o definitivo2.",
+    "Permisos: que carpeta puede ver la gestoria y cual no."
+  ],
+  "errores_tipicos": [
+    "Crear veinte carpetas de primer nivel y no usar ninguna.",
+    "Poner la fecha como 12-04-2026, que no ordena bien; siempre ano primero.",
+    "Reordenar todo un sabado y romper enlaces compartidos.",
+    "Guardar lo importante solo en el ordenador sin copia."
+  ],
+  "restricciones": [
+    "El sistema tiene que funcionar sin programas de pago.",
+    "Nada de mover archivos automaticamente: el plan es manual y por lotes.",
+    "Maximo tres niveles de carpeta y una sola regla de nombre."
+  ],
+  "formato_salida": {
+    "bloque_1_arbol": "El arbol de carpetas propuesto en texto indentado con un ejemplo real dentro de cada rama",
+    "bloque_2_regla_nombres": "El patron, la explicacion de cada parte y 6 ejemplos reales de mi negocio",
+    "bloque_3_donde_va_cada_cosa": "Tabla: tipo de documento | carpeta | ejemplo de nombre | cuanto lo conservo",
+    "bloque_4_migracion": "Plan en 5 lotes con tiempo estimado y que hacer antes de empezar",
+    "bloque_5_reglas_diarias": "Cinco reglas cortas para pegar en la pared"
+  },
+  "criterios_calidad": [
+    "Puedo decir en menos de tres segundos donde va un archivo nuevo.",
+    "Los nombres ordenan solos por fecha al mirar la carpeta.",
+    "El plan de migracion se puede parar a mitad sin dejar el desastre peor que antes.",
+    "Otra persona entiende el sistema leyendo una pagina."
+  ]
+}

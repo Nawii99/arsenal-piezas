@@ -1,0 +1,39 @@
+{
+  "tarea": "Enseñarme a hacer retratos con aspecto profesional usando solo mi móvil y cosas que tengo en casa",
+  "situacion": {
+    "movil": "[MODELO DE MÓVIL]",
+    "lugar": "[SALÓN CON VENTANA / OFICINA / PORTAL / EXTERIOR CERCA]",
+    "hora": "[FRANJA HORARIA EN LA QUE PUEDES DISPARAR]",
+    "quien_sale": "[TÚ MISMO / UN COMPAÑERO / VARIOS DEL EQUIPO]",
+    "uso": "[WEB / REDES / FICHA DE GOOGLE / PERFIL PROFESIONAL]",
+    "tengo_ayuda": "[SÍ, ALGUIEN DISPARA / NO, ESTOY SOLO]"
+  },
+  "metodo": [
+    "Colocar a la persona mirando a la ventana y a un paso y medio del fondo",
+    "Usar la lente principal, nunca el gran angular, para no deformar la cara",
+    "Alejarse y acercar el encuadre con el zoom óptico si el móvil lo tiene",
+    "Bloquear enfoque y exposición tocando la cara y bajar un poco la luz si la piel se quema",
+    "Desactivar el embellecedor y el modo retrato si recorta mal el pelo o las gafas",
+    "Improvisar reflector con cartulina blanca, folio grande o la tapa de una caja",
+    "Estabilizar con un montón de libros y disparar con temporizador o auriculares si estoy solo"
+  ],
+  "restricciones": [
+    "Coste cero: nada de comprar accesorios",
+    "Instrucciones ejecutables sin ayuda técnica",
+    "Nada de apps de pago; si recomiendas app, que sea gratuita"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "MONTAJE EN 5 PASOS con distancias y alturas concretas",
+      "AJUSTES DEL MÓVIL: qué activar y qué desactivar, uno por uno",
+      "3 ENCUADRES a hacer siempre: vertical de perfil, cuadrado de cara, horizontal con espacio para texto",
+      "EDICIÓN RÁPIDA: 4 ajustes en el editor del propio móvil, en orden y con el valor aproximado",
+      "ERRORES A EVITAR: 6 fallos típicos del retrato con móvil"
+    ]
+  },
+  "criterios_calidad": [
+    "Todo se puede hacer en 20 minutos y sin comprar nada",
+    "Las fotos sirven tal cual para el uso indicado",
+    "La cara no queda deformada ni con piel de plástico"
+  ]
+}

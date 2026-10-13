@@ -1,0 +1,36 @@
+{
+  "tarea": "extraer_clips_cortos_para_redes",
+  "contexto": {
+    "video_original": "[DESCRIPCIÓN O ENLACE DEL VÍDEO LARGO]",
+    "duracion_original_minutos": "[NÚMERO]",
+    "tema_general": "[TEMA DEL VÍDEO]",
+    "transcripcion_completa": "[PEGA AQUÍ LA TRANSCRIPCIÓN CON MARCAS DE TIEMPO]"
+  },
+  "objetivo": {
+    "numero_de_clips": "[NÚMERO DE CLIPS QUE QUIERES, EJ. 5]",
+    "duracion_por_clip_segundos": {
+      "minimo": 20,
+      "maximo": 60
+    },
+    "plataforma_destino": "[REELS / TIKTOK / SHORTS]"
+  },
+  "criterios_de_seleccion": [
+    "momento con una idea completa y autoconclusiva, sin depender de lo dicho antes",
+    "frase con gancho claro en los primeros 2 segundos",
+    "cierre natural, no cortado a mitad de frase"
+  ],
+  "formato_de_respuesta": {
+    "por_cada_clip": [
+      "timestamp_inicio",
+      "timestamp_fin",
+      "transcripcion_del_fragmento",
+      "titulo_gancho_propuesto",
+      "motivo_de_la_seleccion"
+    ]
+  },
+  "restricciones": [
+    "no inventar frases que no estén en la transcripción original",
+    "no proponer clips que corten una frase a la mitad",
+    "avisar si no hay suficientes fragmentos autoconclusivos para llegar al número de clips pedido"
+  ]
+}

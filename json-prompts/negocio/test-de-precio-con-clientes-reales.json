@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar un test de sensibilidad al precio para [PRODUCTO O SERVICIO] y explicar cómo interpretar los resultados para fijar el precio final",
+  "contexto": {
+    "que_vendo": "[DESCRIPCIÓN Y QUÉ INCLUYE]",
+    "coste_directo": "[LO QUE TE CUESTA PRODUCIRLO O PRESTARLO, EN EUROS]",
+    "precio_que_barajo": "[PRECIO QUE TENÍAS PENSADO]",
+    "precios_competencia": "[RANGO DE PRECIOS DE LA COMPETENCIA QUE CONOCES]",
+    "a_quien_pregunto": "[PERFIL Y NÚMERO DE PERSONAS DISPONIBLES]"
+  },
+  "metodo": [
+    "Usar las cuatro preguntas clásicas de percepción de precio: a partir de qué precio es demasiado caro, caro pero me lo pensaría, barato y tan barato que dudaría de la calidad",
+    "Añadir una prueba de disposición real: ofrecer tres paquetes a distinto precio y ver cuál eligen",
+    "Preguntar siempre después de haber descrito el valor, nunca antes",
+    "Comparar el resultado con el coste directo para descartar precios que no dejan margen"
+  ],
+  "restricciones": [
+    "Nada de preguntar cuánto pagarías a secas, sin contexto ni descripción del producto",
+    "Mínimo [NÚMERO MÍNIMO DE RESPUESTAS, POR EJEMPLO 20] respuestas para dar el resultado por válido",
+    "No mencionar el precio que yo tenía pensado durante el test"
+  ],
+  "formato_salida": {
+    "descripcion_neutra": "Texto de 5 líneas describiendo el producto para leer antes de preguntar, sin adjetivos vendedores",
+    "preguntas": "Las preguntas exactas, en el orden exacto en que hay que hacerlas",
+    "paquetes": "Tres paquetes propuestos (básico, medio, completo) con qué incluye cada uno y qué precio de prueba",
+    "hoja_de_registro": "Estructura de tabla para apuntar las respuestas persona a persona",
+    "como_interpretar": "Instrucciones paso a paso para calcular el rango de precio aceptable y el punto óptimo a partir de la tabla",
+    "errores_frecuentes": "Cuatro errores que invalidan este test y cómo evitarlos"
+  },
+  "criterios_calidad": [
+    "El resultado es un rango de precios con un número recomendado, no un depende",
+    "El precio recomendado deja margen sobre el coste directo",
+    "Las preguntas se pueden hacer por teléfono en 5 minutos"
+  ],
+  "tono": "Práctico y numérico"
+}

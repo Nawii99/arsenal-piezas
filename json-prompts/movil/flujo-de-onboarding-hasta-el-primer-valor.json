@@ -1,0 +1,43 @@
+{
+  "tarea": "Diseñar el flujo de onboarding de una app móvil pantalla a pantalla, desde la primera apertura hasta el primer resultado útil para el usuario",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "que_resuelve": "[QUÉ PROBLEMA RESUELVE EN UNA FRASE]",
+    "usuario_tipo": "[A QUIÉN VA DIRIGIDA]",
+    "plataforma": "[iOS, ANDROID O AMBAS]",
+    "primer_valor": "[LA PRIMERA COSA ÚTIL QUE DEBE CONSEGUIR EL USUARIO]",
+    "datos_minimos": "[DATOS QUE NECESITAS SÍ O SÍ AL PRINCIPIO]",
+    "permisos_necesarios": "[NOTIFICACIONES, UBICACIÓN, CÁMARA O NINGUNO]"
+  },
+  "reglas_de_oficio": [
+    "Máximo 3 pantallas antes de dejar usar la app",
+    "Una sola petición por pantalla",
+    "Registro diferido siempre que se pueda: dejar probar antes de crear cuenta",
+    "Los permisos se piden en contexto, con una pantalla previa que explique el porqué en lenguaje de usuario",
+    "Salida visible (Saltar) en toda pantalla informativa"
+  ],
+  "pasos": [
+    "1. Listar lo imprescindible para llegar al primer valor y descartar todo lo demás",
+    "2. Ordenar las pantallas de menor a mayor esfuerzo pedido",
+    "3. Definir por pantalla: objetivo, contenido, acción principal, acción secundaria y qué ocurre si se salta",
+    "4. Marcar los puntos donde la gente suele abandonar y proponer alternativa",
+    "5. Definir cómo se ve la app la primera vez, cuando aún no hay datos"
+  ],
+  "formato_salida": {
+    "tipo": "tabla y luego listas",
+    "columnas_tabla": ["Nº", "Pantalla", "Objetivo", "Titular", "Botón principal", "Salida alternativa", "Riesgo de abandono"],
+    "despues_de_la_tabla": [
+      "Diagrama del flujo en texto con flechas, incluyendo caminos alternativos",
+      "3 variantes del titular de la primera pantalla para probar",
+      "Lista de lo que se ha decidido NO pedir en el onboarding y por qué"
+    ]
+  },
+  "criterios_calidad": [
+    "Se llega al primer valor en 60 segundos o menos",
+    "Ninguna pantalla pide datos que la app no use de inmediato",
+    "Cada permiso tiene su justificación escrita",
+    "Un diseñador podría dibujar las pantallas solo con esta salida"
+  ],
+  "tono": "Directo, sin jerga, español de España",
+  "si_falta_informacion": "Haz como máximo 3 preguntas antes de empezar"
+}

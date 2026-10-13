@@ -1,0 +1,51 @@
+{
+  "tarea": "Diseñar [NÚMERO] ejercicios prácticos para la lección [NOMBRE], con enunciado, datos de partida, pistas escalonadas, solución comentada y variantes de dificultad.",
+  "contexto": {
+    "tema_de_la_leccion": "[TEMA]",
+    "lo_que_ya_sabe_el_alumno": "[CONTENIDOS PREVIOS]",
+    "tiempo_por_ejercicio": "[MINUTOS]",
+    "herramientas_que_usara": "[HOJA DE CÁLCULO, MÓVIL, PAPEL, UNA APP CONCRETA]",
+    "modalidad": "[EN CASA / EN CLASE / EN PAREJAS]"
+  },
+  "entradas": {
+    "contenido_de_la_leccion": "[PEGA EL GUION O LOS APUNTES]",
+    "situaciones_reales_del_oficio": "[CASOS QUE TE HAS ENCONTRADO TÚ O TUS CLIENTES]",
+    "errores_que_comete_la_gente": "[LISTA]"
+  },
+  "procedimiento": [
+    "1. Define para cada ejercicio la única decisión o habilidad que entrena. Si entrena tres cosas, pártelo.",
+    "2. Escribe el caso con datos concretos y con algo de ruido: información que sobra, como en la vida real.",
+    "3. Ordena los ejercicios de guiado a libre: el primero casi resuelto, el último sin andamios.",
+    "4. Escribe tres pistas por ejercicio, en escalera: la primera reorienta, la segunda da el método, la tercera da medio resultado.",
+    "5. Redacta la solución comentada explicando el porqué de cada paso, no solo el resultado, y señalando dónde suele torcerse.",
+    "6. Añade a cada ejercicio un fallo típico ya cometido para que el alumno lo detecte y lo corrija: se aprende más corrigiendo que empezando de cero.",
+    "7. Crea una variante fácil y una difícil de cada ejercicio para atender ritmos distintos sin preparar otra tanda.",
+    "8. Escribe la comprobación que el propio alumno puede hacer para saber si lo tiene bien sin mirar la solución."
+  ],
+  "restricciones": [
+    "Cada ejercicio cabe en el tiempo indicado; si no, se parte.",
+    "Nada de ejercicios que solo se pueden hacer con datos que el alumno no tiene.",
+    "Ni un ejercicio de rellenar huecos ni de repetir la definición.",
+    "Español de España, tuteando, enunciados de menos de 120 palabras."
+  ],
+  "errores_a_evitar": [
+    "Casos irreales y redondos que no se parecen a nada del oficio.",
+    "Dar la solución completa como única pista: mata el intento.",
+    "Que todos los ejercicios tengan la misma forma y se resuelvan en piloto automático.",
+    "Olvidar el criterio de autocomprobación y generar cien mensajes preguntando si está bien."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: ejercicio, habilidad que entrena, tiempo, nivel.",
+    "bloque_2": "Para cada ejercicio: enunciado, datos de partida, qué se entrega.",
+    "bloque_3": "Pistas 1, 2 y 3 de cada ejercicio, agrupadas al final para que no se vean antes de tiempo.",
+    "bloque_4": "Solución comentada paso a paso con el porqué de cada decisión.",
+    "bloque_5": "Ejercicio de detectar el fallo, con el fallo escondido y su explicación.",
+    "bloque_6": "Variantes fácil y difícil de cada ejercicio en una línea."
+  },
+  "criterios_calidad": [
+    "Un alumno que ha visto la lección puede empezar sin preguntar nada.",
+    "La solución explica al menos un porqué que no estaba explícito en la teoría.",
+    "El autocontrol permite saber si está bien sin ver la solución.",
+    "Los ejercicios se parecen a lo que el alumno hará al día siguiente en su trabajo."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "tarea": "Construir el presupuesto del próximo año mes a mes con la estacionalidad real del negocio y marcar los meses que hay que financiar por adelantado",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "anos_de_actividad": "[CUÁNTOS AÑOS LLEVAS]",
+    "objetivo_del_ano": "[CRECER, ESTABILIZAR, SACAR MÁS SUELDO, CONTRATAR]"
+  },
+  "entradas": {
+    "ingresos_por_mes_del_ano_pasado": "[DOCE IMPORTES; SI NO LOS TIENES, INDICA LOS MESES FUERTES Y FLOJOS]",
+    "gastos_fijos_actuales": "[IMPORTE MENSUAL POR CONCEPTO]",
+    "gastos_que_van_a_subir": "[ALQUILER, SEGUROS, PROVEEDORES: CUÁNTO Y CUÁNDO]",
+    "gastos_puntuales_previstos": "[SEGUROS ANUALES, RENOVACIONES, IMPUESTOS, VACACIONES, COMPRAS PLANEADAS: IMPORTE Y MES]",
+    "sueldo_objetivo": "[LO QUE QUIERES SACAR AL MES]",
+    "cambios_previstos": "[SUBIDA DE PRECIOS, NUEVO PRODUCTO, CONTRATACIÓN, CIERRE POR VACACIONES: QUÉ Y EN QUÉ MES]",
+    "caja_inicial": "[SALDO CON EL QUE EMPIEZAS EL AÑO]"
+  },
+  "procedimiento": [
+    "1. Reparte los ingresos del año anterior mes a mes y calcula el peso de cada mes sobre el total: eso es tu estacionalidad",
+    "2. Proyecta el año nuevo aplicando esos pesos al total que crees alcanzable, con tres escenarios: prudente, esperado y bueno",
+    "3. Sé conservador con lo nuevo: un producto o servicio que aún no vendes empieza a aportar tarde y poco",
+    "4. Coloca los gastos en el mes en que se pagan de verdad, incluidos los anuales y los trimestrales de impuestos",
+    "5. Añade el sueldo objetivo como salida mensual para ver si el año lo aguanta",
+    "6. Calcula el saldo acumulado mes a mes partiendo de la caja inicial y marca los meses en negativo",
+    "7. Para cada mes en negativo, di cuánto hay que haber ahorrado antes y en qué meses buenos se guarda",
+    "8. Fija tres o cuatro objetivos por trimestre en números sencillos, no en intenciones",
+    "9. Define cuándo se revisa el presupuesto y qué desviación obliga a rehacerlo"
+  ],
+  "restricciones": [
+    "Trabaja con dinero cobrado y pagado, no con facturación teórica",
+    "No proyectes crecimiento constante mes tras mes sin una razón concreta escrita",
+    "El escenario prudente no puede depender de ningún cliente que aún no exista",
+    "Nada de objetivos motivacionales sin número"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Repartir el año en doce partes iguales cuando el negocio tiene temporada",
+    "Olvidar el mes de vacaciones en el que ni facturas ni dejas de pagar",
+    "Meter los pagos de impuestos prorrateados en vez de en su mes",
+    "Presupuestar el escenario bueno y gastar en función de él"
+  ],
+  "formato_salida": {
+    "1_tabla_anual": "Doce columnas con ingresos, gastos, resultado y saldo acumulado, escenario esperado",
+    "2_escenarios": "Resumen de los tres escenarios con total del año y saldo final",
+    "3_meses_criticos": "Meses en negativo con el importe a ahorrar antes y desde qué meses",
+    "4_objetivos": "Tres o cuatro números por trimestre",
+    "5_csv": "Bloque CSV con la tabla anual para pegar en la hoja de cálculo",
+    "estilo": "Español llano, tuteando, sin optimismo de más"
+  },
+  "criterios_calidad": [
+    "La estacionalidad del año proyectado se parece a la del año real",
+    "Los gastos anuales aparecen en su mes, no repartidos",
+    "Cada mes en negativo tiene una solución con importe y origen",
+    "El escenario prudente sigue permitiendo pagar los gastos fijos"
+  ]
+}

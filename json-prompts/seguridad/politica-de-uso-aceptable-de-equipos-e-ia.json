@@ -1,0 +1,38 @@
+{
+  "tarea": "Redacta una Politica de Uso Aceptable de sistemas, dispositivos y herramientas de IA, lista para firmar por el personal de una empresa pequena en Espana",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR: p. ej. clinica dental, agencia de marketing, taller]",
+    "personas": "[NUMERO DE PERSONAS EN PLANTILLA]",
+    "herramientas_en_uso": "[LISTA: p. ej. Gmail, Drive, WhatsApp Business, ChatGPT, Holded]",
+    "tipo_de_datos_que_tratais": "[p. ej. datos de clientes, datos de salud, datos de pago]",
+    "quien_aprueba": "[NOMBRE Y CARGO]",
+    "fecha_entrada_en_vigor": "[DD/MM/AAAA]"
+  },
+  "secciones_obligatorias": [
+    "Objeto y a quien aplica, incluyendo becarios y colaboradores externos",
+    "Uso de equipos de la empresa y de equipos personales",
+    "Correo, mensajeria y redes sociales en nombre de la empresa",
+    "Contrasenas y doble factor: reglas minimas",
+    "Uso de herramientas de IA: que datos se pueden pegar y cuales nunca",
+    "Instalacion de programas y uso de memorias USB",
+    "Trabajo fuera de la oficina y redes wifi publicas",
+    "Que hacer si pierdes un dispositivo o sospechas de un correo raro",
+    "Consecuencias del incumplimiento, con lenguaje proporcionado",
+    "Aceptacion: linea de fecha, nombre y firma"
+  ],
+  "restricciones": [
+    "Espanol de Espana, tuteando al empleado, frases cortas",
+    "Nada de jerga tecnica sin explicar; si usas un termino, aclaralo entre parentesis la primera vez",
+    "Cada norma debe ser comprobable: prohibido escribir buenas practicas vagas",
+    "Maximo 3 folios; si algo no cabe, va a un anexo",
+    "No inventes obligaciones legales concretas ni cites articulos si no estas seguro"
+  ],
+  "formato_salida": "Documento en Markdown con titulo, version 1.0, fecha, indice numerado y apartados numerados 1, 1.1, 1.2. Al final, tabla de dos columnas: Norma / Como se comprueba",
+  "criterios_calidad": [
+    "Una persona sin perfil tecnico lo entiende de una sola lectura",
+    "Cada seccion incluye al menos un ejemplo concreto del sector indicado",
+    "No hay ninguna norma imposible de cumplir con las herramientas listadas"
+  ],
+  "antes_de_empezar": "Si falta algun dato del contexto, hazme como maximo 3 preguntas y luego redacta"
+}

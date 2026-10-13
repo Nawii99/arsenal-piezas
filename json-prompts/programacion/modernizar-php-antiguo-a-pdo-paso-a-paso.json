@@ -1,0 +1,42 @@
+{
+  "tarea": "Migrar codigo PHP antiguo a PHP moderno con PDO y consultas preparadas, manteniendo exactamente el mismo comportamiento",
+  "contexto": {
+    "version_actual": "[EJEMPLO: PHP 5.6]",
+    "version_destino": "[EJEMPLO: PHP 8.2]",
+    "base_de_datos": "[MYSQL O MARIADB]",
+    "puedo_probar": "[TENGO COPIA DE PRUEBAS / SOLO TENGO LA WEB EN PRODUCCION]"
+  },
+  "entradas": {
+    "codigo_antiguo": "[PEGA AQUI EL CODIGO PHP A MIGRAR]",
+    "fichero_conexion": "[PEGA AQUI TU FICHERO DE CONEXION ACTUAL SI LO TIENES]"
+  },
+  "pasos": [
+    "1. Listar todo lo que hay que cambiar: funciones mysql_*, variables sin comprobar, sintaxis retirada en PHP 8",
+    "2. Crear un unico fichero de conexion PDO con charset utf8mb4 y modo de errores en excepciones",
+    "3. Convertir cada consulta a prepare y execute con parametros con nombre, sin concatenar variables",
+    "4. Sustituir mysql_fetch_array por fetch con PDO::FETCH_ASSOC y ajustar los bucles",
+    "5. Envolver escrituras en try/catch y registrar el error en log sin mostrarlo al visitante",
+    "6. Revisar tipos: comparaciones ==, cadenas numericas y parametros opcionales que fallan en PHP 8"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "1. Tabla de cambios: linea original | por que hay que cambiarla | que pasa si no se cambia",
+      "2. Nuevo fichero de conexion PDO completo",
+      "3. Codigo migrado completo, listo para pegar",
+      "4. Diferencias de comportamiento a vigilar, si las hay",
+      "5. Plan de pruebas: 5 comprobaciones concretas que debe hacer una persona en la web antes de dar por buena la migracion"
+    ]
+  },
+  "restricciones": [
+    "Mismo resultado visible que el codigo original: no cambies textos, ni el HTML, ni la logica",
+    "Ninguna consulta puede quedar con variables concatenadas",
+    "No introduzcas librerias externas ni composer si el original no las usaba",
+    "Si algo del codigo original ya estaba mal, arreglalo y avisa en una nota aparte"
+  ],
+  "criterios_calidad": [
+    "El codigo migrado no lanza avisos ni errores en la version de destino",
+    "Cada consulta usa parametros preparados",
+    "El plan de pruebas lo puede seguir alguien que no programa"
+  ]
+}

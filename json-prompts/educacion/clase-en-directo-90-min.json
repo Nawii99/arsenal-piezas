@@ -1,0 +1,54 @@
+{
+  "tarea": "Preparar el guion minutado de una clase o taller en directo, con participación activa, ejercicio guiado y plan B ante imprevistos.",
+  "contexto": {
+    "titulo": "[TÍTULO DEL TALLER]",
+    "duracion": "[MINUTOS TOTALES]",
+    "formato": "[ONLINE POR VIDEOLLAMADA / PRESENCIAL / HÍBRIDO]",
+    "numero_de_asistentes": "[APROXIMADO]",
+    "nivel_mezclado": "[SÍ O NO Y CÓMO DE DISPAR]",
+    "objetivo_de_la_sesion": "[QUÉ SE LLEVAN HECHO AL SALIR]",
+    "que_pasa_despues": "[NADA / OFERTA DE CURSO / SIGUIENTE SESIÓN]"
+  },
+  "entradas": {
+    "contenido": "[TEMAS O PASOS QUE QUIERES CUBRIR]",
+    "materiales": "[PLANTILLAS, CUADERNO, ARCHIVOS QUE REPARTES]",
+    "limitaciones": "[SIN SALAS PEQUEÑAS / SIN MICRÓFONO PARA TODOS / SALA CON MALA WIFI]"
+  },
+  "proceso": [
+    "1. Fija el entregable de la sesión: qué tiene escrito o hecho cada asistente al salir. Si no hay entregable, es una charla, no un taller.",
+    "2. Reparte el tiempo con la regla 30-50-20: 30% explicar, 50% que trabajen, 20% resolver dudas y cerrar.",
+    "3. Diseña la entrada de los 10 primeros minutos: pregunta de arranque que se responde en el chat o en voz alta y que te dice el nivel de la sala.",
+    "4. Corta el contenido en bloques de máximo 12 minutos de explicación, cada uno seguido de una acción del asistente.",
+    "5. Escribe las consignas del ejercicio literales, tal y como las vas a decir, con el tiempo en pantalla y el ejemplo resuelto a la vista.",
+    "6. Prepara 3 preguntas de sondeo para lanzar si la sala está callada y 2 recursos para los que van rápidos.",
+    "7. Escribe el plan B: qué haces si falla la pantalla compartida, si llegan la mitad tarde o si el ejercicio lleva el doble de tiempo (qué bloque se sacrifica).",
+    "8. Define el cierre: repaso del entregable, siguiente paso concreto y, si procede, la oferta dicha en 2 minutos y sin presión.",
+    "9. Prepara el correo posterior: material, grabación si la hay y la tarea de la semana."
+  ],
+  "restricciones": [
+    "Nunca más de 12 minutos hablando seguido.",
+    "Cada ejercicio con tiempo anunciado y aviso a mitad.",
+    "No dependas de que todos tengan cámara, micro o una herramienta instalada.",
+    "Si hay venta, va al final y ocupa menos del 10% de la sesión."
+  ],
+  "formato_salida": {
+    "minutado": "Tabla: Minuto | Bloque | Qué hago yo | Qué hacen ellos | Material.",
+    "consignas": "Texto literal de cada ejercicio, listo para leer o pegar en el chat.",
+    "preguntas_de_sondeo": "Lista.",
+    "plan_b": "Tabla: Qué falla | Qué hago | Qué recorto.",
+    "lista_previa": "Comprobaciones de 15 minutos antes: sonido, enlaces, archivos, sala.",
+    "correo_posterior": "Borrador de 8 líneas."
+  },
+  "criterios_calidad": [
+    "Al menos la mitad del tiempo lo pasan los asistentes haciendo algo.",
+    "El minutado suma exactamente la duración con 10 minutos de colchón.",
+    "Cada bloque se puede eliminar sin romper el resto (por si vas tarde).",
+    "El entregable se puede enseñar en pantalla al final."
+  ],
+  "errores_tipicos": [
+    "Preparar 40 diapositivas para 60 minutos.",
+    "Dejar el ejercicio para el final y quedarse sin tiempo.",
+    "Preguntar '¿alguna duda?' al vacío en vez de lanzar una pregunta concreta.",
+    "No tener plan B y perder 15 minutos con un problema técnico."
+  ]
+}

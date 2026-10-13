@@ -1,0 +1,32 @@
+{
+  "tarea": "Escribir el guion de un vídeo tutorial que enseñe a montar o usar un producto correctamente",
+  "producto": {
+    "nombre": "[NOMBRE DEL PRODUCTO]",
+    "pasos_reales": "[LISTA DE PASOS TAL Y COMO SE HACEN]",
+    "herramientas_necesarias": "[QUÉ HACE FALTA]",
+    "tiempo_estimado": "[MINUTOS]",
+    "avisos_de_seguridad": "[LO QUE NO SE DEBE HACER NUNCA]",
+    "errores_frecuentes_de_clientes": "[FALLOS QUE VES A MENUDO]"
+  },
+  "principios_didacticos": [
+    "Se enseña el resultado montado al principio para que el cliente sepa a dónde va",
+    "Un paso por plano, numerado en pantalla",
+    "Antes de cada paso difícil se avisa del error típico",
+    "Las piezas se nombran igual que en las instrucciones escritas",
+    "Se graba desde el punto de vista del que lo está haciendo, no de frente"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "Plano de piezas y herramientas sobre la mesa con rótulos",
+      "Tabla por pasos: Nº, Qué se ve, Locución, Rótulo, Duración",
+      "Sección de errores frecuentes con el plano que los muestra",
+      "Cierre con comprobación final y a quién escribir si algo falla"
+    ],
+    "extra": "Capítulos con marcas de tiempo para YouTube y versión resumida en texto para meter en la caja"
+  },
+  "criterios_calidad": [
+    "Alguien que no conoce el producto lo monta siguiendo solo el vídeo",
+    "Todos los avisos de seguridad aparecen antes del paso al que afectan",
+    "Ningún paso se explica con palabras sin enseñarlo en imagen"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "tarea": "Convertir un encargo de imagenes 3D en una lista de planos cerrada y ordenada de rodaje virtual",
+  "contexto": {
+    "que_se_renderiza": "[PRODUCTO / INTERIOR / EXTERIOR / PERSONAJE / PIEZA TECNICA]",
+    "donde_se_usan": "[FICHA DE PRODUCTO / ANUNCIO / CATALOGO IMPRESO / REDES / PRESENTACION A INVERSORES]",
+    "formato_de_salida": "[VERTICAL 4:5 / CUADRADO / HORIZONTAL 16:9 / A4 IMPRESO]",
+    "motor": "[CYCLES / EEVEE / VRAY / UNREAL / KEYSHOT]"
+  },
+  "entradas": {
+    "descripcion_del_objeto": "[QUE ES, MEDIDAS Y MATERIALES]",
+    "argumentos_de_venta": "[LAS 3 COSAS QUE EL CLIENTE QUIERE QUE SE VEAN]",
+    "referencias": "[IMAGENES O MARCAS QUE LE GUSTAN]",
+    "numero_de_imagenes_pactado": "[NUMERO O A DECIDIR]",
+    "tiempo_de_render_por_imagen": "[MINUTOS APROXIMADOS O NO LO SE]"
+  },
+  "pasos": [
+    "1. Ordena las tomas de mas a menos importante: la que vende, la que explica y la que decora",
+    "2. Para cada toma define plano, altura de camara, distancia focal y encuadre, y di que aporta esa toma y no otra",
+    "3. Define la luz de cada toma: luz principal, relleno, contraluz y de donde viene, en palabras de estudio",
+    "4. Indica fondo, superficie y atrezo, y si hay elementos de escala como una mano o un objeto conocido",
+    "5. Marca que tomas comparten escena e iluminacion para agruparlas y ahorrar montaje",
+    "6. Anade una toma de detalle por cada argumento de venta",
+    "7. Estima tiempo de montaje y de render por toma y suma el total",
+    "8. Senala las tres tomas minimas si hay que recortar el encargo"
+  ],
+  "restricciones": [
+    "Ninguna toma repetida: si dos se parecen, fusionalas o justifica la diferencia",
+    "Focales coherentes: nada de gran angular pegado a un producto pequeno salvo que se busque distorsion",
+    "Composicion pensada para el formato final indicado, con aire para textos si va a llevar"
+  ],
+  "formato_salida": {
+    "tabla": ["Numero", "Que muestra", "Plano y angulo", "Focal", "Luz", "Fondo y atrezo", "Formato", "Minutos de montaje", "Minutos de render"],
+    "cierre": ["Agrupacion por escena", "Total de horas", "Las tres tomas imprescindibles"]
+  },
+  "criterios_calidad": [
+    "Cada argumento de venta tiene al menos una toma que lo ensena",
+    "El cliente puede aprobar la lista sin ver todavia ninguna imagen",
+    "Las agrupaciones por escena reducen de verdad el trabajo de montaje"
+  ]
+}

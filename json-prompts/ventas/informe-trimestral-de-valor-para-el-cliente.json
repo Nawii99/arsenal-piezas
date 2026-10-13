@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar el informe trimestral de valor de un cliente: qué ha recibido, qué ha conseguido, qué queda pendiente y qué proponemos para el siguiente trimestre",
+  "contexto": {
+    "mi_empresa": "[NOMBRE DE TU EMPRESA]",
+    "cliente": "[NOMBRE DEL CLIENTE]",
+    "periodo": "[TRIMESTRE Y AÑO]",
+    "quien_lo_lee": "[CARGO DE QUIEN LO VA A LEER Y SI ES QUIEN FIRMA]",
+    "lo_que_le_importa_a_esa_persona": "[AHORRO, VENTAS, TIEMPO, TRANQUILIDAD, CUMPLIMIENTO]"
+  },
+  "entradas": {
+    "trabajo_realizado": "[LISTA DE ENTREGAS, ACCIONES Y HORAS DEL TRIMESTRE]",
+    "numeros": "[MÉTRICAS ANTES Y DESPUÉS: VENTAS, VISITAS, TIEMPOS, INCIDENCIAS, LO QUE MIDAS]",
+    "problemas": "[QUÉ SALIÓ MAL Y CÓMO SE RESOLVIÓ]",
+    "plan_siguiente": "[LO QUE PROPONES PARA EL PRÓXIMO TRIMESTRE]"
+  },
+  "metodo": [
+    "1. Traduce cada acción a un beneficio en el idioma de quien lo lee",
+    "2. Enseña los números en comparación con el trimestre anterior o con el punto de partida",
+    "3. Reconoce los problemas antes de que los saque él, con la solución al lado",
+    "4. Cierra con 3 decisiones que necesitas de él y una fecha para cada una"
+  ],
+  "restricciones": [
+    "Cabe en una página; nada de anexos interminables",
+    "Nada de tecnicismos internos ni nombres de herramientas que él no use",
+    "No maquilles: si un número ha bajado, se dice y se explica",
+    "Sin porcentajes inventados: solo los datos que te he dado"
+  ],
+  "formato_salida": {
+    "tipo": "Informe de una página en markdown",
+    "apartados": ["Titular con el resultado del trimestre en una frase", "Tabla de 4 a 6 números con antes, ahora y comentario", "Qué hemos hecho (máx. 6 puntos)", "Qué no ha ido bien y qué hemos cambiado", "Plan del próximo trimestre", "Decisiones que necesito de ti"],
+    "extra": "Guion de 5 minutos para presentarlo en la reunión"
+  },
+  "criterios_calidad": [
+    "Alguien que no conoce el proyecto entiende qué se ha pagado y qué se ha recibido",
+    "Cada afirmación va con un dato o un entregable detrás"
+  ],
+  "tono": "Profesional, claro y sin autobombo"
+}

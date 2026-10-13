@@ -1,0 +1,43 @@
+{
+  "tarea": "Generar 25 ganchos de apertura (0-3 segundos) para anuncios en video de TikTok, Reels y Shorts, con su plano y su texto en pantalla",
+  "contexto": {
+    "producto": "[PRODUCTO O SERVICIO]",
+    "cliente_ideal": "[A QUIEN SE LO VENDES, EDAD Y SITUACION]",
+    "problema_que_resuelve": "[EL DOLOR CONCRETO]",
+    "objecion_principal": "[LO QUE LE FRENA A COMPRAR]",
+    "tono_marca": "[CERCANO | GRACIOSO | EXPERTO | SIN FILTROS]",
+    "recursos": "[ME GRABO YO | ACTOR UGC | SOLO PRODUCTO | SOLO IMAGENES]"
+  },
+  "tipos_de_gancho_a_cubrir": [
+    "Pregunta directa al nicho",
+    "Error comun que casi todos cometen",
+    "Antes y despues en la primera imagen",
+    "Contraste de precio o de tiempo",
+    "Confesion o cambio de opinion",
+    "Demostracion sin hablar",
+    "Objecion dicha en voz alta antes que el cliente",
+    "Comparativa entre dos opciones",
+    "Dato o cifra sorprendente del sector",
+    "Escena cotidiana reconocible"
+  ],
+  "instrucciones": [
+    "Cada gancho debe ser pronunciable en 3 segundos o menos: maximo 12 palabras",
+    "Empieza siempre con la accion o el problema, nunca con saludos ni con el nombre de la marca",
+    "Describe que se ve en el primer fotograma, porque el 60 por ciento se ve sin sonido",
+    "Escribe el texto en pantalla en mayuscula inicial y con menos de 7 palabras",
+    "Reparte los 25 entre los 10 tipos de gancho de la lista",
+    "Marca cuales encajan mejor en publico frio y cuales en retargeting"
+  ],
+  "restricciones": [
+    "Sin promesas de resultados garantizados ni afirmaciones medicas",
+    "Sin palabras que TikTok penaliza en anuncios como curar, adelgazar sin esfuerzo o ganancias aseguradas",
+    "Nada de referencias directas a caracteristicas personales del espectador"
+  ],
+  "formato_salida": "Tabla numerada con columnas: nº | tipo de gancho | frase hablada | texto en pantalla | que se ve | publico recomendado",
+  "extra_final": "Elige los 5 mas prometedores y explica en una linea por que, y propone el orden de test",
+  "criterios_calidad": [
+    "Ningun gancho repite la misma idea con otras palabras",
+    "Se entienden sin conocer la marca",
+    "Suenan a persona hablando, no a folleto"
+  ]
+}

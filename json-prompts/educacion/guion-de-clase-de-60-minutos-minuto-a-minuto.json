@@ -1,0 +1,43 @@
+{
+  "tarea": "Escribir el guion cronometrado de una sesión formativa, con tiempos, actividades y transiciones",
+  "contexto": {
+    "tema_sesion": "[TEMA DE LA SESIÓN]",
+    "duracion_minutos": "[60 / 90 / 120]",
+    "numero_alumnos": "[Nº DE ALUMNOS]",
+    "modalidad": "[PRESENCIAL / ZOOM / MEET]",
+    "resultado_de_la_sesion": "[QUÉ SABRÁ HACER AL SALIR]",
+    "material_disponible": "[PIZARRA, PROYECTOR, ORDENADORES, NADA]"
+  },
+  "estructura_obligatoria": [
+    "Apertura con gancho: un caso real, un dato o una pregunta incómoda (5-8 min)",
+    "Activación: qué saben ya del tema, recogido en voz alta o en chat (5 min)",
+    "Bloques de contenido de máximo 12 minutos seguidos de explicación",
+    "Después de cada bloque, una práctica corta del alumno",
+    "Cierre con recapitulación hecha por los alumnos, no por ti",
+    "Tarea puente hacia la siguiente sesión"
+  ],
+  "para_cada_tramo_indica": [
+    "Minuto de inicio y fin",
+    "Qué hace el formador",
+    "Qué hace el alumno",
+    "Frase literal de arranque del tramo",
+    "Qué se ve en pantalla o pizarra",
+    "Señal de alarma: cómo notas que se te está yendo el tiempo y qué recortas"
+  ],
+  "extras": [
+    "3 preguntas para lanzar si el grupo está callado",
+    "2 actividades de repuesto por si sobran 10 minutos",
+    "Qué eliminar si vas 15 minutos tarde, en orden de sacrificio"
+  ],
+  "restricciones": [
+    "Nunca más de 12 minutos de formador hablando seguido",
+    "Adapta las dinámicas al número de alumnos y a la modalidad indicada",
+    "Sin dinámicas que exijan material no disponible"
+  ],
+  "formato_salida": "Tabla cronometrada más un apartado de notas del formador de máximo 10 líneas",
+  "criterios_calidad": [
+    "Los minutos suman exactamente la duración indicada",
+    "Al menos el 40 por ciento del tiempo es actividad del alumno",
+    "Otro formador podría dar la clase leyendo el guion"
+  ]
+}

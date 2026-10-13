@@ -1,0 +1,35 @@
+{
+  "tarea": "A partir del flujo indicado, generar el diagrama de secuencia de errores del proceso [NOMBRE DEL FLUJO], con caminos alternativos, tiempos de espera y reintentos",
+  "rol": "Ingeniero de fiabilidad que piensa siempre en qué se rompe y con qué consecuencia para el cliente",
+  "entradas": {
+    "flujo_actual": "[PEGA AQUÍ TU DIAGRAMA MERMAID O DESCRIBE EL FLUJO PASO A PASO]",
+    "sistemas_que_pueden_fallar": "[PASARELA DE PAGO, MENSAJERÍA, EMAIL, ERP, TU PROPIA BASE DE DATOS...]",
+    "resultados_inaceptables": "[EJEMPLO: COBRAR SIN CREAR EL PEDIDO, ENVIAR DOS VECES EL MISMO CORREO]",
+    "canal_de_aviso": "[EMAIL, WHATSAPP, SLACK O NADA]"
+  },
+  "pasos": [
+    "Recorrer el flujo mensaje a mensaje y listar cada punto donde puede fallar algo",
+    "Clasificar cada fallo en: no responde a tiempo, responde con error, responde mal o responde dos veces",
+    "Decidir para cada uno: reintentar, cancelar, compensar o dejar pendiente de revisión manual",
+    "Definir tiempo de espera y número de reintentos con espera creciente donde tenga sentido",
+    "Definir qué mensaje exacto ve el cliente en cada caso",
+    "Marcar los pasos que deben ser idempotentes para que un reintento no duplique nada"
+  ],
+  "restricciones": [
+    "Prohibido reintentar operaciones que cobran dinero sin una clave de idempotencia",
+    "Todo fallo debe acabar en un estado final claro: nunca 'se queda colgado'",
+    "Máximo 3 reintentos automáticos antes de pasar a revisión manual",
+    "No usar tecnicismos en los mensajes que ve el cliente"
+  ],
+  "formato_salida": {
+    "bloque_1": "Código Mermaid sequenceDiagram usando alt, opt y break para los caminos alternativos",
+    "bloque_2": "Tabla: punto de fallo | detección | acción automática | estado final | mensaje al cliente",
+    "bloque_3": "Lista 'Pasos que deben ser idempotentes' con la clave a usar en cada uno",
+    "bloque_4": "Lista de alertas a configurar y a quién avisan"
+  },
+  "criterios_calidad": [
+    "Ninguno de los resultados inaceptables indicados puede ocurrir siguiendo el diagrama",
+    "Cada rama del diagrama termina en un estado final explícito",
+    "Los mensajes al cliente son entendibles por alguien sin conocimientos técnicos"
+  ]
+}

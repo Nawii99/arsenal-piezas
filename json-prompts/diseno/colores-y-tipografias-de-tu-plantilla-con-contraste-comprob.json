@@ -1,0 +1,31 @@
+{
+  "tarea": "Crear el sistema de color y tipografía de la plantilla de presentaciones, listo para copiar y pegar",
+  "entradas": {
+    "marca": "[NOMBRE DE TU EMPRESA]",
+    "colores_actuales": "[HEX QUE YA USAS O DESCRIBE LOS COLORES DEL LOGO]",
+    "personalidad": "[3 ADJETIVOS, POR EJEMPLO SERIA, CERCANA, TÉCNICA]",
+    "tipografias_disponibles": "[LAS QUE TENGAS, O ESCRIBE SOLO GRATUITAS DE GOOGLE FONTS]",
+    "herramienta": "[POWERPOINT / GOOGLE SLIDES / CANVA / FIGMA]"
+  },
+  "entregables": [
+    "Paleta de 6 a 8 colores con HEX y RGB: fondo claro, fondo oscuro, texto principal, texto secundario, acento, acento suave y dos neutros",
+    "Tabla de usos: qué color va en fondo, titular, texto, llamada a la acción y fondo de tabla",
+    "5 combinaciones aprobadas de fondo y texto con su ratio de contraste calculado",
+    "Lista de combinaciones prohibidas y el motivo de cada una",
+    "Pareja tipográfica para titulares y texto, con alternativa gratuita equivalente",
+    "Escala de tamaños en puntos para 16:9: portada, titular, subtítulo, cuerpo, pie y nota",
+    "6 colores para gráficos, ordenados y distinguibles también en escala de grises"
+  ],
+  "restricciones": [
+    "Contraste mínimo 4.5:1 en texto de cuerpo y 3:1 en texto grande",
+    "El color de acento no se usa como fondo de párrafos largos",
+    "Como mucho dos tipografías en todo el sistema",
+    "El cuerpo de texto nunca baja de 16 puntos en una presentación proyectada"
+  ],
+  "formato_salida": "Tablas en Markdown con los HEX en mayúsculas y, al final, un bloque de texto plano para pegar en la configuración de tema de la herramienta indicada",
+  "criterios_calidad": [
+    "Cada ratio de contraste viene calculado, no puesto a ojo",
+    "La paleta funciona igual en diapositiva clara y en diapositiva oscura",
+    "Explica en una frase por qué encaja con los tres adjetivos"
+  ]
+}

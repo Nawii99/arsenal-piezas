@@ -1,0 +1,54 @@
+{
+  "tarea": "Escribir una landing de una sola página en un único archivo HTML autónomo, lista para subir a un hosting gratuito, que venda [PRODUCTO O SERVICIO].",
+  "contexto": {
+    "negocio": "[QUÉ VENDES EN UNA FRASE]",
+    "cliente_ideal": "[A QUIÉN LE SIRVE Y QUÉ PROBLEMA TIENE]",
+    "accion_deseada": "[WHATSAPP / FORMULARIO / LLAMADA / COMPRA]",
+    "nivel_tecnico": "el usuario no programa: solo sabe arrastrar un archivo a Netlify, Cloudflare Pages o GitHub Pages"
+  },
+  "entradas": {
+    "propuesta_de_valor": "[FRASE DE 12 PALABRAS COMO MUCHO]",
+    "precio_u_oferta": "[PRECIO, PLAZO O 'PRESUPUESTO SIN COMPROMISO']",
+    "pruebas": "[TESTIMONIOS REALES, CASOS, AÑOS EN EL OFICIO, Nº DE CLIENTES]",
+    "objeciones_top3": "[LAS 3 DUDAS QUE MÁS FRENAN LA COMPRA]",
+    "datos_contacto": "[TELÉFONO, EMAIL, WHATSAPP, CIUDAD]",
+    "colores": "[COLOR PRINCIPAL EN HEX O 'ELIGE TÚ UNO SOBRIO']",
+    "imagenes": "[URLS DISPONIBLES O 'NINGUNA, USA BLOQUES DE COLOR']"
+  },
+  "pasos": [
+    "1. Fijar la promesa: qué gana el cliente, en cuánto tiempo y para quién no es.",
+    "2. Ordenar la página: titular y subtitular con botón, prueba social corta, problema, solución en 3 bloques, cómo funciona en 3 pasos, precio u oferta, preguntas frecuentes que respondan las objeciones, botón final y pie con datos fiscales y enlaces legales.",
+    "3. Escribir todo el texto antes de tocar el diseño; un solo mensaje por bloque.",
+    "4. Repetir el mismo botón, con el mismo texto y el mismo destino, al menos tres veces a lo largo de la página.",
+    "5. Montar el HTML con el CSS dentro de una etiqueta style, sin librerías externas ni frameworks.",
+    "6. Revisar primero en móvil: texto de 16px o más, botones de 44px de alto, nada que obligue a desplazarse en horizontal.",
+    "7. Añadir title, meta description, favicon y etiquetas Open Graph para que se vea bien al compartir por WhatsApp."
+  ],
+  "restricciones": [
+    "Un único archivo .html: sin carpetas, sin npm, sin CDN de JavaScript.",
+    "Prohibido inventar cifras, premios, clientes o testimonios: si no hay dato, se elimina el bloque.",
+    "Español de España, tuteando, frases cortas, sin relleno tipo 'soluciones integrales'.",
+    "El botón de WhatsApp usa el formato https://wa.me/34XXXXXXXXX?text=... con el mensaje ya escrito.",
+    "Si falta un dato, se deja [ENTRE CORCHETES] visible en el HTML en lugar de rellenarlo a ojo."
+  ],
+  "formato_salida": {
+    "bloque_1": "Mapa de la página: secciones en orden y el mensaje de cada una, en 10 líneas.",
+    "bloque_2": "El archivo HTML completo en un bloque de código, listo para copiar y pegar.",
+    "bloque_3": "Cómo publicarlo, en 5 pasos numerados, y qué revisar antes de enseñárselo a nadie.",
+    "bloque_4": "Tres titulares alternativos para ir probando."
+  },
+  "criterios_calidad": [
+    "En 5 segundos se entiende qué es, para quién y qué hay que hacer después.",
+    "El archivo se abre bien haciendo doble clic, sin conexión a internet.",
+    "Ningún texto se corta ni se sale de pantalla a 360px de ancho.",
+    "Todos los botones llevan a un destino real, ninguno apunta a '#'.",
+    "El pie enlaza aviso legal y política de privacidad."
+  ],
+  "errores_frecuentes": [
+    "Titular que habla de la empresa ('somos líderes') en vez de hablar del cliente.",
+    "Un menú con ocho enlaces que se lleva al visitante fuera de la página de venta.",
+    "Formulario de nueve campos cuando bastan nombre, contacto y mensaje.",
+    "Fotos de 4 MB que hacen que la página tarde una eternidad con datos móviles.",
+    "Esconder el precio al final o no ponerlo en ninguna parte."
+  ]
+}

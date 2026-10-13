@@ -1,0 +1,64 @@
+{
+  "tarea": "Revisar un presupuesto de desarrollo web recibido de una agencia o freelance y preparar las preguntas y contrapropuestas antes de firmar",
+  "contexto": {
+    "que_necesitas": "[WEB NUEVA, REDISEÑO, TIENDA, RESERVAS]",
+    "tu_presupuesto": "[RANGO QUE PUEDES ASUMIR]",
+    "plazo_deseado": "[CUÁNDO LA NECESITAS]",
+    "quien_la_mantendra_luego": "[YO / ELLOS / NO LO SÉ]",
+    "nivel_tecnico": "[NINGUNO]"
+  },
+  "entradas": {
+    "presupuesto_recibido": "[PEGA EL TEXTO COMPLETO DE LA PROPUESTA]",
+    "otras_ofertas": "[SI TIENES MÁS DE UNA, PÉGALAS TAMBIÉN]",
+    "lo_que_te_prometieron_de_palabra": "[LO QUE TE DIJERON EN LA REUNIÓN]"
+  },
+  "que_comprobar": [
+    "Alcance: cuántas páginas, cuántas rondas de cambios y qué pasa a partir de ahí",
+    "Propiedad: quién es el dueño del dominio, del código, del diseño y de los contenidos al terminar",
+    "Accesos: si te entregan usuario administrador y las claves del hosting y del dominio a tu nombre",
+    "Tecnología: con qué está hecha y si otra persona podría continuarla o quedas atado a ellos",
+    "Contenidos: quién escribe los textos y quién consigue las fotos, que es donde se atascan casi todos los proyectos",
+    "Mantenimiento: qué incluye exactamente la cuota mensual y qué pasa si la cancelas",
+    "Plazos y pagos: hitos, porcentajes y qué ocurre si se retrasa",
+    "Formación y entrega: si te enseñan a editarla y si hay documentación",
+    "Extras que suelen faltar: analítica, aviso de cookies, textos legales, formulario, velocidad, copias de seguridad, correo del dominio",
+    "Qué pasa al año: renovaciones, licencias de plantillas o plugins y su coste real"
+  ],
+  "banderas_rojas": [
+    "El dominio se registra a nombre de la agencia",
+    "Pago del cien por cien por adelantado",
+    "Cuota mensual obligatoria sin detallar qué incluye",
+    "Alcance descrito en una sola línea genérica",
+    "Sin plazos ni entregables intermedios",
+    "Promesas de aparecer el primero en Google",
+    "No te dan acceso de administrador a tu propia web",
+    "No hay presupuesto por escrito, solo un correo con un número"
+  ],
+  "pasos": [
+    "1. Reconstruye qué incluye realmente la propuesta, partida por partida, en lenguaje de persona.",
+    "2. Marca lo que falta comparándolo con la lista de comprobación.",
+    "3. Señala lo ambiguo y conviértelo en pregunta concreta.",
+    "4. Estima si el precio encaja con el alcance descrito, sin dar cifras de mercado inventadas: razona por horas y complejidad.",
+    "5. Prepara la contrapropuesta: qué recortar para entrar en presupuesto y qué es innegociable.",
+    "6. Redacta el correo de respuesta, educado y concreto."
+  ],
+  "restricciones": [
+    "No des cifras de mercado como si fueran datos ciertos",
+    "No es asesoramiento legal: recomienda revisar el contrato si el importe es alto",
+    "Tono profesional y cordial, sin acusar a nadie"
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen en 5 líneas: qué te están vendiendo de verdad",
+    "bloque_2": "Tabla: Partida, Qué significa, Está claro sí o no, Pregunta pendiente",
+    "bloque_3": "Lo que falta y debería estar",
+    "bloque_4": "Banderas rojas detectadas, ordenadas por gravedad",
+    "bloque_5": "Las 10 preguntas que enviar antes de firmar",
+    "bloque_6": "Correo de respuesta listo para enviar"
+  },
+  "criterios_calidad": [
+    "Queda clarísimo quién será el dueño de la web y del dominio",
+    "Cada pregunta se puede responder con un sí, un no o una cifra",
+    "No se descalifica al proveedor sin motivo objetivo",
+    "El correo final se puede enviar sin retocar"
+  ]
+}

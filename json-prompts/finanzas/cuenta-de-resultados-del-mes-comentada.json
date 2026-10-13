@@ -1,0 +1,39 @@
+{
+  "tarea": "Montar la cuenta de resultados mensual de un negocio pequeño, comentada, con porcentajes sobre ventas y comparación con periodos anteriores",
+  "contexto": {
+    "negocio": "[TIPO DE NEGOCIO]",
+    "mes_analizado": "[MES Y AÑO]",
+    "comparativa": "[MES ANTERIOR Y MISMO MES DEL AÑO PASADO SI SE TIENEN]"
+  },
+  "entradas": {
+    "ingresos": "[LISTA POR LÍNEA DE NEGOCIO O CANAL, SIN IVA]",
+    "gastos": "[LISTA DE GASTOS CON CONCEPTO E IMPORTE, SIN IVA]",
+    "personal": "[SUELDOS BRUTOS, SEGURIDAD SOCIAL, CUOTA DE AUTÓNOMO]",
+    "prestamos_y_leasing": "[CUOTA MENSUAL Y PARTE DE INTERESES SI SE CONOCE]"
+  },
+  "pasos": [
+    "Clasifica cada gasto en: coste de ventas, personal, estructura, marketing, financieros u otros; si un gasto es dudoso, ponlo en otros y márcalo",
+    "Calcula margen bruto, resultado de explotación y resultado final, cada uno en euros y en porcentaje sobre ventas",
+    "Compara cada línea con los periodos anteriores en euros y en puntos porcentuales",
+    "Señala las tres partidas que más han crecido y calcula cuánto dinero suponen al año si siguen igual",
+    "Avisa de las señales de alarma habituales: margen bruto que baja, personal por encima del [LÍMITE %] sobre ventas, gastos de estructura que crecen más rápido que las ventas",
+    "Separa el beneficio contable del dinero que realmente ha entrado en el banco y explica la diferencia en una frase",
+    "Termina con las tres decisiones más rentables para el mes siguiente, cada una con su impacto estimado en euros"
+  ],
+  "restricciones": [
+    "No des consejo fiscal ni calcules impuestos exactos; recuerda que eso lo confirma la gestoría",
+    "No incluyas el IVA en ingresos ni en gastos",
+    "Si un gasto es una inversión que dura varios años, dilo y no lo cargues entero al mes"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de cuenta de resultados + comentario",
+    "columnas": ["Concepto", "Importe €", "% sobre ventas", "Mes anterior", "Diferencia"],
+    "secciones": ["Resumen en 5 líneas", "Tabla completa", "Señales de alarma", "3 decisiones para el mes que viene"]
+  },
+  "criterios_calidad": [
+    "Los totales cuadran y los porcentajes están calculados sobre las ventas del mes",
+    "El resumen se entiende sin haber estudiado contabilidad",
+    "Cada alarma indica el número que la dispara y su umbral"
+  ],
+  "tono": "Como un director financiero que te lo explica en la barra del bar, pero con los números exactos"
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Maquetar el componente [NOMBRE DEL COMPONENTE: TARJETA DE PRECIO / BARRA DE NAVEGACIÓN / VENTANA MODAL] en HTML y CSS listo para usar",
+  "contexto": {
+    "donde_se_usa": "[EN QUÉ PÁGINA O PANTALLA VA]",
+    "tecnologia": "[CSS NORMAL / TAILWIND / BOOTSTRAP]",
+    "colores": "[PEGA TUS HEX: PRINCIPAL, FONDO, TEXTO]",
+    "tipografia": "[NOMBRE DE LA FUENTE O ESCRIBE LA DEL SISTEMA]"
+  },
+  "entradas": {
+    "contenido_real": "[PON EL TEXTO E IMÁGENES REALES QUE VA A MOSTRAR]",
+    "variantes": "[POR EJEMPLO: NORMAL Y DESTACADA]",
+    "modo_oscuro": "[SÍ / NO]"
+  },
+  "requisitos_tecnicos": [
+    "Un solo archivo HTML autocontenido, con el CSS dentro y sin librerías externas salvo la fuente",
+    "Variables CSS al principio para cambiar colores y medidas en un sitio",
+    "Etiquetas semánticas correctas y atributos de accesibilidad donde hagan falta",
+    "Responsive real con una sola columna por debajo de 768 px",
+    "Estados encima, pulsado, foco visible y desactivado incluidos"
+  ],
+  "restricciones": [
+    "Nada de posiciones absolutas para colocar el diseño: usa flexbox o rejilla",
+    "Nada de tamaños fijos que rompan el diseño con textos más largos",
+    "Comentarios en español señalando qué se puede cambiar sin miedo"
+  ],
+  "formato_salida": {
+    "tipo": "bloque de código más instrucciones",
+    "secciones": ["Código completo en un bloque", "Cómo probarlo guardándolo como archivo html", "Qué 5 valores tocar para adaptarlo a tu marca", "Qué NO tocar para no romperlo"]
+  },
+  "criterios_calidad": [
+    "Se copia, se guarda y se ve bien sin tocar nada más",
+    "Aguanta textos el doble de largos sin descuadrarse",
+    "Se ve correcto en móvil y con el teclado se puede recorrer entero"
+  ],
+  "tono": "claro para alguien que no programa, con instrucciones paso a paso"
+}

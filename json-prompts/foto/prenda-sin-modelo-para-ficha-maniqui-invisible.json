@@ -1,0 +1,38 @@
+{
+  "tarea": "Preparar los prompts de las fotos de ficha de [PRENDA] sin modelo, con efecto maniqui invisible y version plana",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "prenda": "[PRENDA] en [TEJIDO] color [COLOR EXACTO]",
+    "talla_expuesta": "[TALLA QUE FOTOGRAFIAS]",
+    "fondo_obligatorio": "[BLANCO PURO / GRIS CLARO / HUESO]"
+  },
+  "vistas_requeridas": [
+    "frontal completa centrada",
+    "espalda completa",
+    "detalle de cuello o cintura",
+    "detalle de tejido a distancia corta",
+    "plano cenital de la prenda doblada sobre fondo liso"
+  ],
+  "reglas_de_consistencia": {
+    "encuadre": "misma distancia y mismo tamano de prenda en el cuadro en todas las referencias",
+    "luz": "dos luces suaves simetricas mas relleno inferior para que no se cierre el bajo",
+    "forma": "volumen natural de cuerpo, hombros con caida real y mangas con aire dentro",
+    "interior": "cuello y bocamangas con interior visible y oscurecido de forma realista"
+  },
+  "restricciones": [
+    "Nada de maniqui, brazos, manos ni sombras de persona",
+    "Sin arrugas marcadas que parezcan prenda mal planchada",
+    "Sin recortes duros ni bordes con halo blanco",
+    "Color y estampado fieles al original, sin inventar patrones"
+  ],
+  "formato_salida": {
+    "por_vista": ["prompt en ingles", "prompt negativo", "relacion de aspecto", "nota de encuadre"],
+    "extra": "lista final de comprobacion de 6 puntos para validar la ficha antes de subirla"
+  },
+  "criterios_calidad": [
+    "Las cinco vistas parecen tomadas el mismo dia con la misma luz",
+    "El fondo es uniforme y se puede recortar sin restos",
+    "El cliente entiende el largo y el corte reales de la prenda",
+    "Ninguna vista aporta informacion contradictoria sobre el color"
+  ]
+}

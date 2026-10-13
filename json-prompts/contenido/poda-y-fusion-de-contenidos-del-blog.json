@@ -1,0 +1,36 @@
+{
+  "tarea": "Decidir qué contenidos antiguos se conservan, se fusionan, se actualizan o se retiran antes de migrar la web",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "temas_clave": "[LOS 5 TEMAS POR LOS QUE QUIERES QUE TE ENCUENTREN]",
+    "antiguedad_del_blog": "[DESDE CUÁNDO PUBLICAS Y CUÁNTOS ARTÍCULOS TIENES]"
+  },
+  "entradas": {
+    "listado_contenidos": "[PEGA TÍTULO, URL, FECHA Y VISITAS DE CADA ARTÍCULO O PÁGINA]",
+    "contenidos_que_convierten": "[LOS QUE GENERAN CONTACTOS O VENTAS]"
+  },
+  "criterios_de_decision": [
+    "CONSERVAR: trae visitas o contactos y sigue siendo correcto",
+    "ACTUALIZAR: buen tema pero datos, precios o capturas caducados",
+    "FUSIONAR: varios artículos hablan de lo mismo y compiten entre ellos",
+    "RETIRAR: sin visitas, sin enlaces y sin relación con lo que vendes hoy",
+    "REESCRIBIR: tema importante pero contenido flojo o sin sustancia"
+  ],
+  "reglas": [
+    "Todo lo que se retire o se fusione necesita una redirección a la página que ocupa su lugar",
+    "Al fusionar, quedarse con la URL que tenga más visitas o más enlaces externos",
+    "No retirar noticias con valor histórico o legal: archivarlas y marcarlo",
+    "No proponer retirar más del 30 por ciento del contenido sin avisar del riesgo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla con columnas Título, URL, Fecha, Visitas, Decisión, Fusiona con, Redirección y Motivo",
+    "bloque_2": "Lista de fusiones propuestas con el título del artículo resultante",
+    "bloque_3": "Los 10 contenidos a actualizar primero y qué hay que tocar en cada uno",
+    "bloque_4": "Huecos: temas importantes para el negocio sobre los que no tienes nada"
+  },
+  "criterios_calidad": [
+    "Cada decisión va acompañada de su motivo en una línea",
+    "Ningún contenido con visitas se retira sin destino de redirección",
+    "Las fusiones no mezclan temas que en realidad son distintos"
+  ]
+}

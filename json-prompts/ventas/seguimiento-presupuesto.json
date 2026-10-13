@@ -1,0 +1,52 @@
+{
+  "tarea": "Diseña la secuencia de seguimiento de un presupuesto enviado que no ha tenido respuesta: cinco contactos con su fecha, su canal, su mensaje exacto y el criterio para cerrar el caso.",
+  "contexto": {
+    "que_presupuesté": "[TRABAJO O PRODUCTO]",
+    "importe": "[IMPORTE]",
+    "fecha_de_envio": "[FECHA]",
+    "canal_habitual_con_ese_cliente": "[EMAIL / WHATSAPP / TELÉFONO]",
+    "ciclo_normal_de_decision": "[DÍAS O SEMANAS QUE SUELE TARDAR ESTE TIPO DE CLIENTE]"
+  },
+  "entradas": {
+    "lo_ultimo_que_hablamos": "[RESUMEN DE LA ÚLTIMA CONVERSACIÓN Y COMPROMISO QUE QUEDÓ]",
+    "dudas_que_mostro": "[SI DUDABA DE ALGO EN CONCRETO]",
+    "algo_util_que_puedo_aportar": "[CASO PARECIDO, ARTÍCULO, PLANTILLA, DATO DE SU SECTOR]",
+    "limite_de_validez": "[HASTA CUÁNDO MANTENGO EL PRECIO Y POR QUÉ MOTIVO REAL]"
+  },
+  "metodo": [
+    "1. Reparte cinco contactos en tres semanas, alternando canal, y que cada uno aporte algo nuevo: nunca un simple te escribo para ver si has podido verlo.",
+    "2. Contacto 1 a las 48 horas: confirmar que llegó y ofrecer aclarar una partida concreta del presupuesto.",
+    "3. Contacto 2 al día 5: aportar valor (caso parecido o dato de su sector) sin pedir nada.",
+    "4. Contacto 3 al día 10: llamada corta o nota de voz con una pregunta directa sobre qué le falta para decidir.",
+    "5. Contacto 4 al día 15: opción intermedia (fase reducida, empezar por lo urgente, pago fraccionado) manteniendo el precio unitario.",
+    "6. Contacto 5 al día 21: mensaje de cierre educado que da permiso a decir que no y deja la puerta abierta.",
+    "7. Después: pasarlo a una lista de recontacto a los tres meses."
+  ],
+  "errores_a_evitar": [
+    "Escribir solo para preguntar si lo ha visto: eso es ruido y entrena al cliente a ignorarte.",
+    "Poner urgencias falsas o descuentos que caducan sin motivo real.",
+    "Bajar el precio en el tercer mensaje por nervios.",
+    "Escribir mensajes largos; a partir del segundo contacto, cuanto más cortos mejor.",
+    "Desaparecer tú también y dejar el presupuesto muerto sin cerrarlo."
+  ],
+  "formato_salida": {
+    "calendario": "Tabla con DÍA, CANAL, OBJETIVO DEL MENSAJE y ASUNTO.",
+    "mensajes": "Los cinco mensajes escritos y listos para copiar, cada uno con su versión email y su versión WhatsApp.",
+    "nota_de_voz": "Guion de 20 segundos para el contacto 3 si prefiero mandar audio.",
+    "cierre": "Mensaje de cierre que permite responder solo con una palabra.",
+    "registro": "Mini plantilla de seguimiento con columnas: cliente, importe, día del último contacto, respuesta, próximo paso."
+  },
+  "restricciones": [
+    "Español de España, tuteo salvo que te diga que ese cliente es de usted.",
+    "Máximo 90 palabras por mensaje de email y 40 por WhatsApp.",
+    "Sin emoticonos si el cliente no los usa.",
+    "Nada de culpabilizar ni de reproches por no contestar."
+  ],
+  "criterios_calidad": [
+    "Cada uno de los cinco mensajes aporta algo distinto y se entiende suelto.",
+    "El de cierre se puede contestar con un sí o un no en cinco segundos.",
+    "Ningún mensaje regala descuento.",
+    "Si los leo seguidos, no parecen escritos por un robot ni repetitivos."
+  ],
+  "si_faltan_datos": "Si no te digo el ciclo de decisión, usa tres semanas y avísame de que puede alargarse en sectores con varios decisores."
+}

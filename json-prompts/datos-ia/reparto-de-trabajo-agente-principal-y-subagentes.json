@@ -1,0 +1,33 @@
+{
+  "tarea": "Dividir el proceso [PROCESO COMPLETO A AUTOMATIZAR] en un agente coordinador y los subagentes especialistas necesarios",
+  "contexto": {
+    "resultado_final_esperado": "[QUE TIENE QUE SALIR AL FINAL DEL PROCESO]",
+    "pasos_actuales": "[LISTA LOS PASOS TAL Y COMO SE HACEN HOY]",
+    "personas_implicadas": "[QUIEN TOCA CADA PASO]",
+    "tiempo_actual": "[CUANTO SE TARDA HOY DE PRINCIPIO A FIN]"
+  },
+  "reglas_de_reparto": [
+    "Un subagente por cada cambio claro de oficio, de fuente de datos o de criterio de calidad",
+    "Si dos pasos se hacen siempre juntos y con la misma informacion, van en el mismo subagente",
+    "Ningun subagente puede llamar a otro subagente: solo el coordinador reparte y junta",
+    "Maximo 6 subagentes; si salen mas, agrupa y explica el criterio",
+    "Marca que subagentes pueden trabajar a la vez y cuales dependen del anterior"
+  ],
+  "para_cada_subagente_define": ["nombre", "que resuelve en una frase", "que recibe", "que devuelve", "criterio de exito", "que NO le corresponde"],
+  "formato_salida": {
+    "1_mapa": "Esquema en texto con el coordinador arriba y los subagentes debajo, indicando el orden y lo que se pasan",
+    "2_tabla": "Tabla markdown con una fila por subagente y las columnas: Nombre, Que resuelve, Recibe, Devuelve, Exito, No le toca",
+    "3_coordinador": "Parrafo con las reglas del coordinador: en que orden llama, que hace si un subagente falla y como junta el resultado",
+    "4_puntos_humanos": "Lista de los momentos exactos en que debe intervenir una persona"
+  },
+  "restricciones": [
+    "Nada de subagentes decorativos: si uno no aporta un resultado que se pueda revisar, fuera",
+    "Explica cada decision de reparto en una linea",
+    "No propongas herramientas ni plataformas concretas, solo el reparto de trabajo"
+  ],
+  "criterios_calidad": [
+    "Puedo probar cada subagente por separado y ver si su salida esta bien",
+    "Queda claro que pasa cuando un paso falla a mitad",
+    "El mapa cabe en una hoja y se entiende sin explicaciones"
+  ]
+}

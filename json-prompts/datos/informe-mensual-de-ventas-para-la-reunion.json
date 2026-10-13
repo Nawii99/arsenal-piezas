@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar el informe mensual de ventas de una pyme a partir de una exportación de datos, listo para presentar",
+  "entradas": {
+    "datos": "[PEGA AQUÍ EL CSV O LA TABLA: FECHA, PEDIDO, CLIENTE, PRODUCTO, CANAL, UNIDADES, IMPORTE, ESTADO]",
+    "mes_analizado": "[MES Y AÑO]",
+    "mes_comparacion": "[MES ANTERIOR Y MISMO MES DEL AÑO PASADO SI LO TIENES]",
+    "objetivo_mes": "[OBJETIVO DE FACTURACIÓN EN EUROS]",
+    "audiencia": "[SOCIO | EQUIPO | GESTOR | INVERSOR]"
+  },
+  "metricas_obligatorias": [
+    "Facturación neta sin IVA, excluyendo pedidos cancelados y devueltos",
+    "Número de pedidos y ticket medio",
+    "Clientes nuevos frente a clientes que repiten, y peso de cada grupo en la facturación",
+    "Top 5 productos por facturación y top 5 por unidades",
+    "Reparto por canal y variación respecto al mes anterior en euros y en porcentaje",
+    "Concentración: porcentaje de facturación que aportan los 3 mayores clientes"
+  ],
+  "reglas_de_calculo": [
+    "Comparar siempre en euros y en porcentaje, nunca solo en porcentaje",
+    "Si un mes tiene menos días hábiles, avisarlo antes de sacar conclusiones",
+    "Marcar como no fiable cualquier métrica con menos de 30 pedidos",
+    "No inventar datos: si falta una columna, escribir NO DISPONIBLE"
+  ],
+  "formato_salida": {
+    "titular": "Una frase con la cifra del mes y si sube o baja",
+    "tabla_kpis": "Tabla con columnas: métrica, mes actual, mes anterior, variación en euros, variación en porcentaje",
+    "que_ha_pasado": "Máximo 5 viñetas explicando los movimientos, cada una con su número",
+    "señales_de_alerta": "Hasta 3 riesgos detectados en los datos",
+    "tres_decisiones": "Tres acciones concretas para el mes siguiente, con responsable y métrica que debería moverse",
+    "apendice": "Supuestos, filtros aplicados y filas descartadas"
+  },
+  "restricciones": [
+    "Máximo una página equivalente, sin relleno ni lenguaje motivacional",
+    "Cada afirmación va acompañada del número que la sostiene",
+    "Nada de proyecciones ni promesas de resultados futuros"
+  ],
+  "criterios_calidad": [
+    "Se entiende en dos minutos de lectura",
+    "Las variaciones cuadran con los totales de la tabla",
+    "Las tres decisiones se pueden empezar mañana"
+  ]
+}

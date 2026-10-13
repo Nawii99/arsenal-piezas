@@ -1,0 +1,41 @@
+{
+  "tarea": "Preparar y analizar una sesion de playtest presencial o por videollamada con cinco jugadores",
+  "contexto": {
+    "juego": "[NOMBRE Y GENERO]",
+    "que_se_prueba": "[TUTORIAL / PRIMEROS 10 MINUTOS / UN NIVEL / EL BUCLE PRINCIPAL]",
+    "perfil_de_jugador": "[QUIEN DEBERIA JUGARLO Y QUE EXPERIENCIA PREVIA TIENE]",
+    "formato": "[PRESENCIAL / VIDEOLLAMADA COMPARTIENDO PANTALLA]",
+    "duracion": "[MINUTOS POR SESION]"
+  },
+  "entradas": {
+    "hipotesis": "[LAS TRES COSAS QUE CREES QUE FUNCIONAN Y QUIERES CONFIRMAR]",
+    "miedos": "[LAS TRES COSAS QUE SOSPECHAS QUE NO SE ENTIENDEN]",
+    "controles": "[TECLADO / MANDO / TACTIL]",
+    "lo_que_falta": "[PARTES SIN ACABAR QUE EL JUGADOR VA A ENCONTRAR]"
+  },
+  "pasos": [
+    "1. Escribe el guion de bienvenida: que se prueba el juego y no a la persona, que piense en alto y que no vas a ayudar",
+    "2. Define las tareas que se le piden sin decirle como hacerlas",
+    "3. Convierte cada hipotesis y cada miedo en algo observable: un momento concreto y un tiempo maximo",
+    "4. Lista las senales a apuntar: donde se para, que dice al abrir el menu, cuando mira el teclado, cuando suspira, donde repite",
+    "5. Escribe las preguntas de despues, abiertas y sin sugerir la respuesta, incluida que le contarias a un amigo del juego",
+    "6. Da la plantilla de notas para rellenar durante la partida sin perder de vista la pantalla",
+    "7. Explica como juntar las cinco sesiones: un problema que aparece en tres de cinco es real, en una es ruido",
+    "8. Convierte los hallazgos en lista de arreglos ordenada por dano al jugador frente a esfuerzo de arreglo"
+  ],
+  "restricciones": [
+    "Prohibido ayudar durante la partida salvo bloqueo total; entonces se apunta el minuto y se ayuda lo minimo",
+    "Prohibido preguntar si te gusta o si lo comprarias",
+    "No se defiende el diseno delante del jugador",
+    "Grabar solo con permiso explicito"
+  ],
+  "formato_salida": {
+    "bloques": ["Guion de bienvenida palabra por palabra", "Tareas", "Que observar", "Plantilla de notas", "Preguntas finales", "Metodo de analisis", "Lista de arreglos priorizada"],
+    "tabla_arreglos": ["Problema observado", "Cuantos de 5", "Dano al jugador", "Esfuerzo", "Que se cambia"]
+  },
+  "criterios_calidad": [
+    "Cada hipotesis tiene una senal observable, no una opinion",
+    "Las preguntas finales no contienen la respuesta esperada",
+    "La lista de arreglos separa lo que confunde de lo que simplemente no gusta"
+  ]
+}

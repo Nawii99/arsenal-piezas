@@ -1,0 +1,37 @@
+{
+  "tarea": "Crear una encuesta corta de satisfacción para mis clientes y, con las respuestas que te pegue, sacar un plan de acción por cliente",
+  "contexto": {
+    "mi_empresa": "[NOMBRE DE TU EMPRESA]",
+    "servicio": "[QUÉ SERVICIO O PRODUCTO EVALÚAS]",
+    "a_quien_pregunto": "[PERFIL DE LOS CLIENTES Y CUÁNTOS SON]",
+    "canal": "[EMAIL, WHATSAPP O FORMULARIO WEB]"
+  },
+  "parte_1_encuesta": {
+    "requisitos": ["Máximo 6 preguntas", "Una pregunta de 0 a 10 sobre si me recomendaría", "Una pregunta abierta sobre qué mejoraría", "Una pregunta sobre qué le falta y estaría dispuesto a pagar"],
+    "entregables": ["Las preguntas", "Email de invitación de menos de 90 palabras", "Recordatorio a los 5 días"]
+  },
+  "parte_2_analisis": {
+    "respuestas": "[PEGA AQUÍ LAS RESPUESTAS: CLIENTE, NOTA, COMENTARIOS]",
+    "metodo": [
+      "1. Agrupa los comentarios en temas y di cuántos clientes mencionan cada uno",
+      "2. Separa detractores (0-6), pasivos (7-8) y promotores (9-10) y calcula cuánto dinero hay en cada grupo",
+      "3. Para cada detractor, propón una llamada con el motivo concreto a tratar",
+      "4. Para cada promotor, propón una petición: reseña, recomendación o caso de éxito",
+      "5. Marca los 3 arreglos internos que más quejas quitarían"
+    ]
+  },
+  "restricciones": [
+    "Nada de preguntas que dirijan la respuesta ni escalas raras",
+    "No inventes conclusiones si hay menos de 5 respuestas: dilo y trátalas una a una",
+    "Cada acción con nombre de cliente y plazo"
+  ],
+  "formato_salida": {
+    "tipo": "Dos bloques: encuesta lista para enviar y, si pego respuestas, informe de acciones",
+    "informe": ["Resumen en 5 líneas", "Tabla de temas y menciones", "Acciones por cliente", "3 arreglos internos"]
+  },
+  "criterios_calidad": [
+    "La encuesta se contesta en menos de dos minutos",
+    "Del análisis sale una lista de llamadas, no una reflexión"
+  ],
+  "tono": "Sencillo y honesto"
+}

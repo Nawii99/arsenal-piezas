@@ -1,0 +1,58 @@
+{
+  "tarea": "Planificar y estructurar una web pequeña en dos idiomas, decidiendo qué se traduce, cómo se organizan las direcciones y cómo se cambia de idioma",
+  "contexto": {
+    "web": "[URL]",
+    "idiomas": "[ESPAÑOL MÁS: INGLÉS, CATALÁN, FRANCÉS...]",
+    "a_quien_te_diriges_en_el_segundo_idioma": "[PAÍS Y TIPO DE CLIENTE]",
+    "paginas_actuales": "[LISTA DE PÁGINAS]",
+    "quien_traduce": "[YO CON AYUDA DE IA / TRADUCTOR PROFESIONAL / MIXTO]"
+  },
+  "entradas": {
+    "textos_originales": "[PEGA LOS TEXTOS O INDICA DÓNDE ESTÁN]",
+    "donde_esta_alojada": "[GITHUB PAGES, NETLIFY, HOSTING CLÁSICO, GESTOR]",
+    "presupuesto_traduccion": "[0 EUROS / HASTA X EUROS]"
+  },
+  "decisiones_previas": [
+    "Qué páginas se traducen de verdad: empieza por portada, servicio principal, precios y contacto",
+    "Qué no se traduce: blog antiguo, avisos legales muy locales, casos de clientes sin interés fuera",
+    "Estructura de direcciones: carpetas por idioma es la opción más sencilla de mantener",
+    "Si el segundo idioma tendrá su propio formulario, su moneda y su forma de contacto"
+  ],
+  "pasos": [
+    "1. Elige la estructura: una carpeta por idioma, con el idioma principal en la raíz o también en carpeta, pero siempre coherente.",
+    "2. Declara el idioma correcto en cada página en la etiqueta html.",
+    "3. Añade en cada página las etiquetas hreflang que enlazan la versión española con la inglesa y viceversa, más la versión por defecto.",
+    "4. Selector de idioma visible arriba, escrito en el idioma de destino (English, Español), que lleve a la misma página traducida y no a la portada.",
+    "5. No redirijas por país de forma automática y sin salida: es la forma más rápida de irritar a un visitante.",
+    "6. Traduce con criterio de venta, no palabra por palabra: adapta ejemplos, precios, formas de pago y llamadas a la acción.",
+    "7. Revisa lo que casi siempre se queda sin traducir: textos de botones, mensajes de error del formulario, aviso de cookies, pie de página, textos alternativos de imágenes y el título de la pestaña.",
+    "8. Ajusta el diseño: en inglés los textos suelen ser más cortos y en alemán más largos, cuidado con los botones.",
+    "9. Define cómo se mantiene: cada cambio en una versión abre una tarea para la otra."
+  ],
+  "errores_tipicos": [
+    "Traducir automáticamente toda la web y publicarla sin revisar",
+    "Enlazar el selector siempre a la portada del otro idioma",
+    "Mezclar los dos idiomas en la misma página",
+    "Olvidar traducir el formulario y el correo de respuesta automática",
+    "Prometer atención en un idioma que luego no puedes atender",
+    "Duplicar la web sin hreflang y competir contra ti mismo en buscadores"
+  ],
+  "restricciones": [
+    "Solución mantenible por una sola persona sin perfil técnico",
+    "Sin plugins de pago",
+    "Marca claramente cada texto que necesita revisión humana"
+  ],
+  "formato_salida": {
+    "bloque_1": "Mapa de direcciones: página, versión ES, versión EN, prioridad de traducción",
+    "bloque_2": "Fragmento de código con lang, hreflang y selector listo para pegar",
+    "bloque_3": "Lista de microtextos a traducir que se suelen olvidar",
+    "bloque_4": "Textos traducidos y adaptados de las páginas prioritarias",
+    "bloque_5": "Rutina de mantenimiento cuando cambias algo"
+  },
+  "criterios_calidad": [
+    "Cada página tiene su equivalente enlazado en ambos sentidos",
+    "No queda ningún botón ni mensaje en el idioma equivocado",
+    "El visitante puede cambiar de idioma en un clic desde cualquier página",
+    "La traducción suena a persona del país, no a traductor automático"
+  ]
+}

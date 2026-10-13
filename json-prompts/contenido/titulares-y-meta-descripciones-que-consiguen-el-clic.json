@@ -1,0 +1,40 @@
+{
+  "tarea": "Generar 10 opciones de titular y meta descripción para un artículo de blog y recomendar la mejor combinación",
+  "entradas": {
+    "tema_del_articulo": "[DE QUÉ VA EL ARTÍCULO EN 2 LÍNEAS]",
+    "palabra_clave": "[PALABRA CLAVE]",
+    "lector": "[A QUIÉN VA DIRIGIDO]",
+    "lo_mas_valioso_del_texto": "[QUÉ SE LLEVA EL LECTOR]",
+    "titulo_actual": "[TÍTULO QUE TIENES AHORA O DÉJALO VACÍO]",
+    "titulares_de_la_competencia": "[PEGA LOS 3 PRIMEROS RESULTADOS DE GOOGLE]"
+  },
+  "angulos_a_cubrir": [
+    "Directo y descriptivo",
+    "Con número o lista",
+    "En forma de pregunta que se hace el lector",
+    "Con el error que hay que evitar",
+    "Con el resultado concreto que se consigue",
+    "Con marco temporal o de esfuerzo",
+    "Comparativo o de alternativa",
+    "Para principiantes",
+    "De guía completa",
+    "Con contraste frente a lo que todo el mundo dice"
+  ],
+  "reglas": [
+    "Título entre 50 y 60 caracteres, con la palabra clave lo más al principio posible",
+    "Meta descripción entre 140 y 155 caracteres, con la palabra clave y una razón para entrar",
+    "Nada de clickbait ni de prometer lo que el artículo no da",
+    "Prohibidas las palabras definitiva, brutal, increíble y revoluciona",
+    "Contar los caracteres reales y mostrarlos"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown",
+    "columnas": ["n", "angulo", "titulo", "caracteres", "meta_descripcion", "caracteres_meta", "por_que_funciona"],
+    "cierre": "recomendación final con el titular elegido, un segundo para probar y qué mirar para decidir"
+  },
+  "criterios_calidad": [
+    "Los 10 titulares son distintos de verdad, no la misma frase reordenada",
+    "Ninguno promete algo que el artículo no cumple",
+    "Se diferencian de los titulares de la competencia aportados"
+  ]
+}

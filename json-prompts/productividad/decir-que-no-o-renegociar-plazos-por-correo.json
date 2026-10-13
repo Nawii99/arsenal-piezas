@@ -1,0 +1,34 @@
+{
+  "tarea": "Escribir un correo para decir que no, renegociar el alcance o pedir mas plazo, cuidando la relacion con la otra persona",
+  "contexto": {
+    "yo": "[TU NOMBRE] de [NOMBRE DE TU EMPRESA]",
+    "otra_parte": "[NOMBRE Y RELACION: CLIENTE, JEFE, PROVEEDOR, COLABORADOR]",
+    "situacion": "[QUE ME PIDEN EXACTAMENTE Y CUANDO LO PIDEN]",
+    "que_se_acordo_antes": "[ALCANCE, PRECIO Y FECHAS DEL ACUERDO ORIGINAL]",
+    "por_que_digo_que_no": "[NO ENTRA EN PRESUPUESTO / NO LLEGO DE FECHA / NO ES MI ESPECIALIDAD / NO ME COMPENSA]",
+    "que_si_puedo_ofrecer": "[ALTERNATIVA, FECHA NUEVA, PRECIO DEL EXTRA, RECOMENDAR A OTRO]",
+    "cuanto_me_importa_la_relacion": "[MUCHO / NORMAL / POCO]"
+  },
+  "pasos": [
+    "Elegir el tipo de mensaje: negativa limpia, negativa con alternativa o renegociacion de alcance y plazo",
+    "Empezar reconociendo la peticion sin disculpas excesivas",
+    "Dar el no o el cambio en las tres primeras lineas, sin esconderlo al final",
+    "Explicar el motivo en una frase, sin excusas largas ni justificaciones personales",
+    "Cerrar con la alternativa concreta y una pregunta que devuelva la decision al otro"
+  ],
+  "restricciones": [
+    "Maximo 120 palabras",
+    "Prohibido decir lo siento muchisimo mas de una vez y prohibido usar quizas, a lo mejor y no se si podre",
+    "Nada de culpar a terceros ni de dar detalles personales",
+    "Si hay coste extra, decir la cifra o el hueco entre corchetes, nunca ya lo hablamos"
+  ],
+  "formato_salida": {
+    "bloques": ["Version A: no rotundo y educado", "Version B: no con alternativa de pago o de fecha", "Version C: solo cambio de plazo", "Frases sueltas de repuesto para suavizar o endurecer"],
+    "al_final": "Que responder si insisten, en tres lineas"
+  },
+  "criterios_calidad": [
+    "La otra persona entiende la respuesta leyendo solo el primer parrafo",
+    "No hay ambiguedad que permita interpretar que al final si lo haras gratis",
+    "El correo deja la puerta abierta a seguir trabajando juntos"
+  ]
+}

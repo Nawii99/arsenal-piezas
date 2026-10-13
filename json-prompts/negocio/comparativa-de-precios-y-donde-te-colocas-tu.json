@@ -1,0 +1,38 @@
+{
+  "tarea": "Comparar los precios de mi competencia con los míos y recomendarme un precio defendible",
+  "contexto": {
+    "mi_oferta": "[QUÉ INCLUYE TU PRODUCTO O SERVICIO, CON DETALLE]",
+    "mi_precio_actual": "[PRECIO EN EUROS Y SI ES POR HORA, PROYECTO O MES]",
+    "mi_coste_directo": "[LO QUE TE CUESTA ENTREGARLO EN EUROS]",
+    "cliente": "[TIPO DE CLIENTE Y SU PRESUPUESTO HABITUAL]",
+    "competidores": [
+      {"nombre": "[COMPETIDOR 1]", "precio": "[PRECIO PÚBLICO]", "que_incluye": "[QUÉ ENTREGA POR ESE PRECIO]"},
+      {"nombre": "[COMPETIDOR 2]", "precio": "[PRECIO PÚBLICO]", "que_incluye": "[QUÉ ENTREGA POR ESE PRECIO]"},
+      {"nombre": "[COMPETIDOR 3]", "precio": "[PRECIO PÚBLICO]", "que_incluye": "[QUÉ ENTREGA POR ESE PRECIO]"}
+    ]
+  },
+  "pasos": [
+    "Normaliza todos los precios a la misma unidad para que sean comparables (por hora, por mes o por proyecto tipo)",
+    "Calcula precio por unidad de valor: qué recibe el cliente por cada euro en cada opción",
+    "Sitúa a cada competidor en una banda: económico, medio o premium, y explica qué justifica su banda",
+    "Detecta lo que ellos cobran aparte y yo regalo, y lo que yo cobro y ellos incluyen",
+    "Comprueba mi margen actual y el margen con el precio propuesto"
+  ],
+  "errores_a_evitar": [
+    "Comparar precios sin comparar lo que incluye cada uno",
+    "Recomendar bajar precio como primera salida",
+    "Ignorar costes ocultos como desplazamientos, revisiones o impagos"
+  ],
+  "formato_salida": {
+    "1_tabla_precios": "Tabla con competidor, precio normalizado, qué incluye, banda y a quién apunta",
+    "2_donde_estoy": "Un párrafo diciendo si estoy caro, barato o alineado y por qué",
+    "3_precio_recomendado": "Precio o rango propuesto, con margen resultante y los 3 argumentos para defenderlo ante el cliente",
+    "4_paquetes": "Propuesta de tres paquetes (básico, recomendado y premium) con precio y qué entra en cada uno",
+    "5_riesgos": "Qué puede salir mal al cambiar el precio y cómo lo pruebo sin jugármela"
+  },
+  "criterios_calidad": [
+    "Toda cifra recomendada sale de un cálculo que se muestra",
+    "Los argumentos de venta son frases que puedo decir tal cual",
+    "No se promete aumento de ventas ni porcentajes inventados"
+  ]
+}

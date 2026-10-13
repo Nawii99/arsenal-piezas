@@ -1,0 +1,54 @@
+{
+  "tarea": "Definir el encargo, la toma de datos y el paquete de vistas 3D de un espacio interior para un cliente de reformas, interiorismo o venta inmobiliaria.",
+  "contexto": "Cliente local que necesita enseñar cómo quedará un espacio para vender la obra o el piso. No quiere arte: quiere que su cliente diga sí.",
+  "entradas": {
+    "cliente": "[REFORMISTA | INTERIORISTA | INMOBILIARIA | PARTICULAR]",
+    "espacio": "[TIPO DE ESTANCIA Y METROS APROXIMADOS]",
+    "material_recibido": "[PLANOS, MEDIDAS, FOTOS DEL ESTADO ACTUAL, MUESTRAS DE ACABADOS]",
+    "objetivo": "[VENDER LA REFORMA | ALQUILAR O VENDER EL INMUEBLE | DECIDIR ACABADOS]",
+    "numero_de_vistas": "[CUÁNTAS IMÁGENES INCLUYE EL ENCARGO]",
+    "plazo": "[FECHA DE ENTREGA]"
+  },
+  "procedimiento": [
+    "1. Haz la lista de toma de datos mínima: medidas de la estancia, altura del techo, posición y tamaño de ventanas y puertas, orientación, radiadores, enchufes visibles y elementos que no se pueden mover.",
+    "2. Pide fotos del estado actual desde las cuatro esquinas y una del techo, para reconstruir sin volver a ir.",
+    "3. Traduce el objetivo a decisiones de imagen: vender reforma pide antes y después; alquilar pide amplitud y luz; decidir acabados pide la misma vista con variantes.",
+    "4. Elige las vistas: una general desde la esquina que más metros abarca, una a la altura de los ojos desde la entrada, y un detalle del punto que justifica el presupuesto.",
+    "5. Fija la cámara en términos comprensibles: altura de 1,50 a 1,60 metros, lente amplia sin deformar (equivalente a 24 a 35 mm), líneas verticales rectas.",
+    "6. Define la luz: hora del día coherente con la orientación real, luz de ventana como principal y luz artificial de apoyo solo si la escena es de tarde.",
+    "7. Establece los acabados con referencia real: marca y modelo del suelo, del alicatado, del color de pared, para que la obra pueda parecerse a la imagen.",
+    "8. Añade objetos de vida en dosis pequeñas: no llenes de decoración lo que la reforma no incluye.",
+    "9. Marca lo que NO se promete en el render: mobiliario no incluido, textiles, plantas, obra fuera del presupuesto.",
+    "10. Define entregables: resolución, formato, versión para redes sociales en vertical y versión con marca de agua para revisión.",
+    "11. Cierra con dos rondas de revisión y precio de vista adicional."
+  ],
+  "restricciones": [
+    "Las proporciones tienen que salir de medidas reales, nunca de un ojo.",
+    "No enseñar acabados que el cliente no pueda comprar de verdad.",
+    "Verticales rectas: nada de perspectivas caídas.",
+    "Nada de renders que prometan mobiliario no presupuestado sin avisarlo por escrito.",
+    "Español de España, tuteando, explicando lo técnico con palabras normales."
+  ],
+  "formato_salida": {
+    "bloque_1": "Hoja de toma de datos para la visita, en lista con casillas.",
+    "bloque_2": "Guion de vistas: número, desde dónde, altura, qué se ve y qué vende esa imagen.",
+    "bloque_3": "Ficha de acabados: elemento, referencia real, color, acabado.",
+    "bloque_4": "Ajustes de cámara y de luz por vista.",
+    "bloque_5": "Entregables: formatos, resoluciones, versiones y nombres de archivo.",
+    "bloque_6": "Aviso legal breve de lo que la imagen no garantiza y condiciones de revisión."
+  },
+  "criterios_calidad": [
+    "Alguien podría reconstruir la estancia solo con la hoja de toma de datos.",
+    "Cada vista tiene un motivo comercial, no es decorativa.",
+    "Los acabados se corresponden con productos comprables.",
+    "Las verticales están rectas y la altura de cámara es humana.",
+    "Está por escrito lo que la imagen no promete."
+  ],
+  "errores_frecuentes": [
+    "Modelar de memoria y que el sofá no quepa en la realidad.",
+    "Lente demasiado ancha que hace parecer el salón el doble de grande y luego decepciona.",
+    "Decoración de revista que no forma parte del presupuesto.",
+    "Luz de mediodía en una habitación orientada al norte.",
+    "Entregar sin marca de agua antes de cobrar."
+  ]
+}

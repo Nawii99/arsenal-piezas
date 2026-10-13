@@ -1,0 +1,44 @@
+{
+  "tarea": "Preparar una reunión de decisión de arquitectura para que termine con un ADR aprobado o con un plan claro para aprobarlo",
+  "contexto": {
+    "decision": "[LA DECISIÓN A TOMAR, EN UNA FRASE]",
+    "duracion": "[MINUTOS DISPONIBLES]",
+    "formato": "[PRESENCIAL O VIDEOLLAMADA]",
+    "historial": "[SE HA HABLADO YA DE ESTO? CUÁNTAS VECES Y POR QUÉ NO SE DECIDIÓ]"
+  },
+  "entradas": {
+    "asistentes": "[NOMBRE O ROL DE CADA UNO Y QUÉ APORTA]",
+    "quien_decide": "[UNA SOLA PERSONA O ROL CON LA ÚLTIMA PALABRA]",
+    "material_existente": "[BORRADORES, PRUEBAS, PRESUPUESTOS QUE YA HAY]"
+  },
+  "pasos": [
+    "1. Escribe el objetivo de la reunión como una frase que empieza por 'Al terminar habremos decidido...'",
+    "2. Define el material de lectura previa y el tiempo que exige leerlo",
+    "3. Acuerda los criterios de decisión ANTES de mirar las opciones, y ponlos en la agenda como primer punto",
+    "4. Monta la agenda con minutos por bloque, dejando la mitad del tiempo para debate",
+    "5. Prepara las preguntas que fuerzan el avance, no las que abren temas nuevos",
+    "6. Define qué se hace si no hay acuerdo: quién desempata y con qué plazo",
+    "7. Prepara la plantilla de acta con los huecos que se rellenan en directo"
+  ],
+  "restricciones": [
+    "Un solo tema por reunión: si aparece otro, va a la lista de aparcados",
+    "Nada de presentaciones largas: máximo 10 minutos de exposición",
+    "Si el material previo no está listo 24 horas antes, la recomendación es aplazar",
+    "La reunión no termina sin decisión o sin fecha y responsable para tomarla"
+  ],
+  "formato_salida": {
+    "bloque_1": "Objetivo en una frase",
+    "bloque_2": "Lista de material previo con tiempo de lectura",
+    "bloque_3": "Agenda con minutos por bloque",
+    "bloque_4": "Preguntas clave, agrupadas por bloque",
+    "bloque_5": "Regla de desempate",
+    "bloque_6": "Plantilla de acta: decisión, motivos, aparcados, acciones con responsable y fecha",
+    "bloque_7": "Mensaje de convocatoria listo para enviar, máximo 100 palabras"
+  },
+  "criterios_calidad": [
+    "La suma de minutos de la agenda no supera la duración disponible",
+    "Cada bloque de la agenda produce algo, no solo se habla",
+    "El acta se puede rellenar en directo sin reescribir nada después"
+  ],
+  "tono": "Facilitador, firme con el tiempo"
+}

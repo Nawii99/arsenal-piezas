@@ -1,0 +1,34 @@
+{
+  "tarea": "Convertir las diez categorías de riesgo web más habituales en una lista de comprobación concreta y verificable sobre una aplicación real, explicada para una persona sin perfil técnico",
+  "contexto": {
+    "aplicacion": "[QUÉ HACE TU WEB]",
+    "pantallas_clave": "[LISTA DE PANTALLAS: LOGIN, PERFIL, PAGO, PANEL ADMIN...]",
+    "roles": "[VISITANTE, CLIENTE, EMPLEADO, ADMINISTRADOR]",
+    "funciones_sensibles": "[PAGOS, SUBIDA DE ARCHIVOS, EXPORTAR DATOS, INVITAR USUARIOS]",
+    "quien_mantiene": "[AGENCIA, FREELANCE, EQUIPO INTERNO]"
+  },
+  "pasos": [
+    "Para cada una de las diez categorías, explicar en dos frases qué significa y qué pasaría en este negocio concreto si ocurriera",
+    "Traducir la categoría a entre 2 y 4 comprobaciones aplicadas a las pantallas indicadas, no en abstracto",
+    "Para cada comprobación, indicar el resultado esperado si todo va bien y la señal de alarma si algo falla",
+    "Marcar cada comprobación como puede hacerla el dueño del negocio o necesita a un técnico",
+    "Añadir el error típico que se comete al intentar arreglar esa categoría",
+    "Ordenar el resultado por impacto en el negocio, no por orden de la lista original"
+  ],
+  "restricciones": [
+    "No incluir cargas de ataque, comandos ni código explotable: descripciones de comprobación, no instrucciones de explotación",
+    "Nada de comprobaciones genéricas tipo revisar la seguridad: cada línea debe decir dónde se mira y qué se espera ver",
+    "Solo sobre sistemas propios y con autorización; incluir ese aviso al principio"
+  ],
+  "formato_salida": {
+    "tipo": "tabla",
+    "columnas": ["Riesgo", "Qué significa aquí", "Comprobación concreta", "Resultado correcto", "Señal de alarma", "Quién lo hace", "Prioridad"],
+    "cierre": "resumen de las 5 comprobaciones que harías primero si solo tuvieras una tarde"
+  },
+  "criterios_calidad": [
+    "Cada comprobación menciona una pantalla o función real de las indicadas",
+    "Un no técnico entiende qué está mirando y por qué importa",
+    "Ninguna fila es copia teórica de la definición del riesgo"
+  ],
+  "tono": "didáctico y práctico"
+}

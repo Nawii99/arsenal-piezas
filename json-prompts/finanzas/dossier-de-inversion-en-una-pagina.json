@@ -1,0 +1,44 @@
+{
+  "tarea": "Redactar un dossier de inversion de una pagina (one-pager) para enviar a inversores privados o business angels",
+  "contexto_empresa": {
+    "nombre": "[NOMBRE DE TU EMPRESA]",
+    "que_vendes_y_a_quien": "[QUE VENDES Y A QUE TIPO DE CLIENTE]",
+    "anos_en_marcha": "[ANOS FUNCIONANDO]",
+    "facturacion_ultimos_12_meses": "[EUROS]",
+    "margen_bruto": "[PORCENTAJE]",
+    "clientes_activos": "[NUMERO]",
+    "crecimiento": "[COMO HA CRECIDO LA FACTURACION RESPECTO AL ANO ANTERIOR]",
+    "equipo": "[QUIENES SOIS Y QUE HABEIS HECHO ANTES]"
+  },
+  "peticion": {
+    "importe_buscado": "[IMPORTE EN EUROS]",
+    "uso_de_los_fondos": "[EN QUE LO VAS A GASTAR]",
+    "instrumento": "[AMPLIACION DE CAPITAL / PRESTAMO CONVERTIBLE / PRESTAMO PARTICIPATIVO]",
+    "valoracion_o_rango": "[VALORACION QUE PIDES O ESCRIBE A NEGOCIAR]"
+  },
+  "estructura_obligatoria": [
+    "Titular: empresa, sector y una frase de que hace",
+    "Problema y solucion en tres lineas",
+    "Traccion: cuatro numeros reales con su fecha (ingresos, clientes, repeticion, margen)",
+    "Mercado: tamano estimado y por que hay hueco",
+    "Modelo de negocio: como entra el dinero y cuanto cuesta captar un cliente",
+    "Uso de los fondos: reparto en porcentaje y que hito concreto desbloquea cada partida",
+    "Equipo: dos lineas por socio",
+    "La pregunta: importe, instrumento, valoracion y que buscas ademas del dinero"
+  ],
+  "restricciones": [
+    "Maximo 500 palabras en total",
+    "Prohibido usar revolucionario, disruptivo, lider del mercado o unico en Espana",
+    "Cada afirmacion de negocio va acompanada de un numero o se elimina",
+    "Si falta un dato, escribe DATO PENDIENTE en vez de inventarlo",
+    "Nada de proyecciones a cinco anos: horizonte maximo 18 meses"
+  ],
+  "formato_salida": "Texto plano con titulos cortos en cada bloque, listo para maquetar en un PDF de una sola pagina",
+  "criterios_calidad": [
+    "Un inversor entiende el negocio en 30 segundos de lectura",
+    "Aparecen al menos seis cifras concretas y verificables",
+    "El reparto del uso de fondos suma 100 por ciento",
+    "Queda claro que pasa con el negocio si la ronda no se cierra"
+  ],
+  "tono": "Directo, sobrio, sin lenguaje publicitario"
+}

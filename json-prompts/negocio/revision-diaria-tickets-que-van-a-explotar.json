@@ -1,0 +1,45 @@
+{
+  "tarea": "Revisar la lista de incidencias abiertas y señalar cuáles van camino de escalar, con el motivo y la acción de hoy para cada una",
+  "contexto": {
+    "negocio": "[QUÉ HACES]",
+    "volumen_diario": "[CUÁNTAS CONSULTAS RECIBES AL DÍA APROXIMADAMENTE]",
+    "compromiso_respuesta": "[EN CUÁNTO TIEMPO PROMETES CONTESTAR]",
+    "capacidad_hoy": "[CUÁNTAS ACCIONES REALES PUEDES HACER HOY]"
+  },
+  "entradas": {
+    "casos_abiertos": "[PEGA LA LISTA: REFERENCIA, CLIENTE, FECHA DE APERTURA, ESTADO, ÚLTIMO MENSAJE Y QUIÉN LO ESCRIBIÓ]"
+  },
+  "señales_de_riesgo": [
+    "Han pasado más días sin respuesta que el compromiso declarado",
+    "El cliente ha escrito dos o más veces seguidas sin recibir contestación",
+    "Aparecen palabras como cancelar, devolver, denuncia, abogado, reseña, factura, competencia",
+    "El caso ha cambiado de manos más de una vez",
+    "Hay una promesa hecha cuya fecha ya ha pasado",
+    "El tono del cliente ha bajado de amable a seco entre mensajes",
+    "Es un cliente clave o de contrato recurrente"
+  ],
+  "pasos": [
+    "Marca en cada caso qué señales de riesgo se cumplen",
+    "Puntúa el riesgo de 1 a 5 sumando señales y peso del cliente",
+    "Ordena de mayor a menor riesgo y corta la lista por la capacidad_hoy",
+    "Para cada caso prioritario indica la acción concreta de hoy y quién la hace",
+    "Redacta el mensaje corto de hoy para los tres casos más calientes",
+    "Aparta los casos que se pueden cerrar en un minuto y agrúpalos",
+    "Señala patrones: si tres casos son del mismo motivo, avisa de que hay un problema de fondo"
+  ],
+  "restricciones": [
+    "No inventes datos que no estén en la lista; si falta la fecha, márcalo como dato ausente",
+    "No propongas más acciones de las que caben en capacidad_hoy",
+    "Cada mensaje sugerido, máximo 60 palabras"
+  ],
+  "formato_salida": {
+    "tipo": "tabla priorizada + acciones",
+    "tabla_columnas": ["Referencia", "Cliente", "Días abierto", "Señales detectadas", "Riesgo 1-5", "Acción de hoy", "Responsable"],
+    "bloques": ["Los 3 mensajes a enviar hoy", "Cierres rápidos agrupados", "Patrón de fondo detectado"]
+  },
+  "criterios_calidad": [
+    "Cada puntuación de riesgo se justifica con señales concretas de la lista",
+    "Las acciones son ejecutables hoy, no proyectos",
+    "El resultado cabe en una pantalla"
+  ]
+}

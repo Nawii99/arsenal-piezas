@@ -1,0 +1,37 @@
+{
+  "tarea": "Crear el inventario de accesos y contraseñas del negocio, detectar los riesgos y entregar un plan de saneamiento ordenado por prioridad",
+  "rol": "Responsable de seguridad de la información con experiencia en pymes y autónomos españoles",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR]",
+    "personas_con_acceso": "[NÚMERO DE PERSONAS Y SUS ROLES]",
+    "como_se_guardan_hoy": "[EXCEL, PAPEL, NAVEGADOR, DE MEMORIA, GESTOR DE CONTRASEÑAS...]"
+  },
+  "entradas": {
+    "herramientas_criticas": "[LISTA: BANCO, CORREO, WEB, HOSTING, REDES SOCIALES, FACTURACIÓN, CRM, TPV...]",
+    "cuentas_compartidas_conocidas": "[CUENTAS QUE USA MÁS DE UNA PERSONA]",
+    "gente_que_ya_no_esta": "[EXEMPLEADOS, EXSOCIOS O PROVEEDORES ANTIGUOS]"
+  },
+  "pasos": [
+    "Agrupar las herramientas en cuatro niveles de criticidad: dinero, identidad y correo, datos de clientes, y resto",
+    "Por cada cuenta, registrar propietario, quién accede, tipo de acceso, si tiene verificación en dos pasos, si la contraseña se reutiliza y dónde está guardada",
+    "Marcar riesgo alto en toda cuenta de dinero o de correo sin verificación en dos pasos, compartida, o con acceso de alguien que ya no está",
+    "Detectar cuentas huérfanas: sin propietario claro o ligadas al correo personal de una persona concreta",
+    "Ordenar las acciones por impacto y esfuerzo, no por orden alfabético"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla en markdown más lista de acciones",
+    "columnas_tabla": ["Herramienta", "Para qué se usa", "Criticidad", "Propietario", "Quién accede", "Dos pasos", "Dónde está la contraseña", "Riesgo detectado"],
+    "secciones_extra": ["Cinco agujeros a tapar esta semana", "Acciones del primer mes", "Acciones del trimestre", "Preguntas que necesito que me respondas"]
+  },
+  "restricciones": [
+    "No pidas nunca contraseñas reales ni las escribas: trabaja solo con nombres de cuenta",
+    "Lenguaje llano, sin jerga y sin siglas sin explicar",
+    "Máximo 25 filas en la tabla; si hay más cuentas, agrúpalas por familias"
+  ],
+  "criterios_calidad": [
+    "Toda cuenta de riesgo alto lleva una acción concreta con responsable y plazo",
+    "Ninguna acción dice solo mejorar la seguridad: dice qué hacer y en qué pantalla",
+    "El plan se puede ejecutar sin contratar a nadie ni comprar software caro"
+  ]
+}

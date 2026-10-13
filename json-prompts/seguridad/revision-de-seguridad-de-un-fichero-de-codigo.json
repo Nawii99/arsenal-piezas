@@ -1,0 +1,38 @@
+{
+  "tarea": "Revisar código buscando vulnerabilidades explotables y devolver el arreglo concreto de cada una",
+  "contexto": {
+    "lenguaje_y_framework": "[EJ: PHP 8 CON LARAVEL, NODE CON EXPRESS, PYTHON CON DJANGO]",
+    "que_hace_este_codigo": "[EJ: FORMULARIO DE REGISTRO, SUBIDA DE FACTURAS, LOGIN]",
+    "quien_puede_llamarlo": "[CUALQUIERA SIN LOGIN / USUARIO REGISTRADO / SOLO ADMIN]",
+    "datos_que_toca": "[EJ: EMAILS Y CONTRASEÑAS, DATOS BANCARIOS, NADA CRÍTICO]"
+  },
+  "entradas": {
+    "codigo": "[PEGA AQUÍ EL CÓDIGO COMPLETO]"
+  },
+  "que_buscar": [
+    "Inyección SQL y de comandos: consultas concatenadas, llamadas al sistema con datos del usuario",
+    "Cross-site scripting: datos del usuario pintados en HTML sin escapar",
+    "Autorización rota: comprueba identidad pero no permisos sobre el recurso concreto",
+    "Referencias directas a objetos: identificadores en la URL sin validar propiedad",
+    "Secretos, claves de API o contraseñas escritas dentro del código",
+    "Gestión de ficheros subidos: extensión, tipo real, tamaño y ruta de guardado",
+    "Criptografía mal usada: MD5 o SHA1 para contraseñas, aleatoriedad no segura",
+    "Errores que muestran rutas, consultas o trazas al usuario final",
+    "Falta de límite de intentos en login o en envío de formularios"
+  ],
+  "restricciones": [
+    "Solo señala fallos que veas en el código pegado; no supongas lo que hace el resto del sistema",
+    "Si necesitas ver otro fichero para confirmarlo, dilo en la sección DUDAS en vez de inventar",
+    "No reescribas el fichero entero: da solo el fragmento antes y después"
+  ],
+  "formato_salida": {
+    "por_cada_hallazgo": ["título corto", "gravedad crítica/alta/media/baja", "línea o función afectada", "cómo se explotaría en la práctica, en 2 frases", "código corregido", "cómo comprobar que ya está arreglado"],
+    "al_final": ["Tabla resumen ordenada por gravedad", "Los 3 arreglos que harías primero", "DUDAS: qué te falta ver"]
+  },
+  "criterios_calidad": [
+    "Cero hallazgos genéricos del tipo validar las entradas: cada uno apunta a una línea real",
+    "Cada explotación descrita es plausible con este código, no teórica",
+    "Si el código está bien en un apartado, dilo en una línea en vez de inventar un fallo"
+  ],
+  "tono": "técnico pero explicado para que lo entienda el dueño del negocio"
+}

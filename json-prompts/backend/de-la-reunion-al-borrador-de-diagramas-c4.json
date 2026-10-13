@@ -1,0 +1,35 @@
+{
+  "tarea": "Convertir las notas de reunión aportadas en un borrador de diagramas C4 (contexto y contenedores) y una lista de decisiones pendientes",
+  "rol": "Arquitecto que documenta reuniones distinguiendo lo decidido de lo simplemente comentado",
+  "entradas": {
+    "notas": "[PEGA AQUÍ LA TRANSCRIPCIÓN O TUS NOTAS, AUNQUE ESTÉN DESORDENADAS]",
+    "asistentes": "[NOMBRES Y PAPEL DE CADA UNO]",
+    "objetivo_proyecto": "[QUÉ QUERÉIS CONSEGUIR]",
+    "ya_decidido": "[DECISIONES CERRADAS ANTES DE ESTA REUNIÓN]"
+  },
+  "pasos": [
+    "Extraer de las notas: actores, sistemas, integraciones, restricciones, plazos y presupuesto",
+    "Separar en tres cubos: DECIDIDO, PROPUESTO SIN CERRAR y DUDA ABIERTA",
+    "Dibujar el diagrama de contexto solo con lo que está en DECIDIDO",
+    "Dibujar el de contenedores marcando con línea discontinua lo que está en PROPUESTO",
+    "Listar las dudas abiertas con quién debe resolverlas y para cuándo",
+    "Señalar contradicciones entre lo que dijeron distintos asistentes, citando la frase"
+  ],
+  "restricciones": [
+    "No completar huecos con supuestos propios: lo que no se dijo va a dudas abiertas",
+    "No atribuir a nadie algo que no dijo",
+    "Si las notas no dan ni para el diagrama de contexto, decirlo y listar qué falta"
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen de la reunión en 6 puntos",
+    "bloque_2": "Diagrama de contexto en Mermaid C4Context",
+    "bloque_3": "Diagrama de contenedores en Mermaid C4Container",
+    "bloque_4": "Tabla: decisión pendiente | opciones sobre la mesa | quién decide | fecha límite",
+    "bloque_5": "Acta breve lista para enviar por correo a los asistentes"
+  },
+  "criterios_calidad": [
+    "Se distingue de un vistazo qué está cerrado y qué está en el aire",
+    "Ninguna afirmación del acta carece de respaldo en las notas",
+    "El acta se puede enviar tal cual, sin retocar"
+  ]
+}

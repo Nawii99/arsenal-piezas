@@ -1,0 +1,46 @@
+{
+  "tarea": "Revisar compatibilidad entre los dispositivos que se quieren comprar y devolver una lista de compra cerrada",
+  "contexto": {
+    "objetivo": "[QUE SE QUIERE CONSEGUIR EN UNA FRASE]",
+    "ya_tengo": "[HUB, ALTAVOZ, ROUTER, DISPOSITIVOS EXISTENTES CON MARCA Y MODELO]",
+    "candidatos": "[LISTA DE PRODUCTOS QUE SE ESTAN MIRANDO, CON ENLACE O MODELO EXACTO]",
+    "presupuesto": "[EUROS TOTALES]",
+    "exige_funcionar_sin_internet": "[SI/NO]",
+    "quien_lo_manejara": "[PERFIL: NADA TECNICO / SE DEFIENDE / TECNICO]"
+  },
+  "metodo": [
+    "1. Clasifica cada candidato por protocolo: Wi-Fi 2.4 GHz, Zigbee, Z-Wave, Thread, Matter, Bluetooth o cable",
+    "2. Comprueba que existe un coordinador o hub para cada protocolo que aparezca; si hay tres protocolos y un solo hub, sobra material",
+    "3. Marca que dispositivos dejan de funcionar si cae internet y cuales siguen en local",
+    "4. Revisa el requisito electrico de cada interruptor: si necesita neutro en la caja y la vivienda es antigua, avisalo",
+    "5. Comprueba alimentacion: pila (que modelo y duracion estimada) o corriente",
+    "6. Descarta duplicados y propon la combinacion mas barata que cumpla el objetivo",
+    "7. Marca un plan B por cada pieza critica por si esta agotada"
+  ],
+  "restricciones": [
+    "No afirmes compatibilidad si no la puedes justificar: escribe COMPROBAR EN LA FICHA DEL FABRICANTE",
+    "Matter no significa que todas las funciones esten disponibles: indica cuales suelen quedarse fuera",
+    "Ningun dispositivo de seguridad o acceso puede depender solo de la nube si el usuario pidio funcionamiento local",
+    "Precios como orden de magnitud, siempre marcados como aproximados"
+  ],
+  "errores_frecuentes": [
+    "Comprar bombillas Zigbee sin coordinador y descubrir que hace falta un hub",
+    "Router en 5 GHz cuando el dispositivo solo admite 2.4 GHz y no consigue emparejar",
+    "Interruptores inteligentes en instalaciones sin neutro",
+    "Mezclar marcas que solo se hablan a traves de un asistente de voz y quedarse sin automatizaciones",
+    "Sensores de puerta a pila en exterior, donde la pila dura una fraccion de lo prometido"
+  ],
+  "formato_salida": {
+    "tabla_compatibilidad": "Producto | Protocolo | Necesita hub | Funciona sin internet | Alimentacion | Veredicto",
+    "lista_de_compra": "Cantidad | Producto | Precio aproximado | Por que este",
+    "descartados": "Producto y motivo concreto del descarte",
+    "a_comprobar": "Dudas que hay que confirmar antes de pagar, en forma de pregunta concreta",
+    "orden_de_montaje": "Que instalar primero para que lo siguiente sea mas facil"
+  },
+  "criterios_calidad": [
+    "El total no pasa del presupuesto o se explica que se deja para una segunda fase",
+    "No queda ningun protocolo sin su hub correspondiente",
+    "Cada descarte tiene un motivo tecnico, no una opinion",
+    "La lista se puede pedir tal cual sin volver a investigar"
+  ]
+}

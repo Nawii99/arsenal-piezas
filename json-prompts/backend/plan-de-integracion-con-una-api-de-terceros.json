@@ -1,0 +1,35 @@
+{
+  "tarea": "Analizar la documentación de la API de [NOMBRE DE LA HERRAMIENTA] y devolver un plan de integración realista",
+  "objetivo_de_negocio": "[QUÉ QUIERES CONSEGUIR: que los pedidos entren solos en el ERP, cobrar con tarjeta, avisar por WhatsApp]",
+  "entradas": {
+    "documentacion": "[PEGA AQUÍ LA DOCUMENTACIÓN O EL ENLACE]",
+    "sistema_actual": "[QUÉ TIENES HOY: web en WordPress, tienda en Shopify, ERP X, hoja de cálculo]",
+    "quien_lo_va_a_hacer": "[TÚ, UN FREELANCE, UNA AGENCIA, UNA HERRAMIENTA NO CODE]"
+  },
+  "analiza": [
+    "Qué operaciones cubre la API y cuáles de las que necesitas NO cubre",
+    "Tipo de autenticación, cómo se obtienen las credenciales y si caducan",
+    "Límites de uso: llamadas por minuto, cuotas y qué pasa al superarlas",
+    "Si hay webhooks o hay que consultar cada X tiempo",
+    "Si existe entorno de pruebas y cómo se consigue",
+    "Coste: plan mínimo necesario, comisiones y si la API está en un plan superior",
+    "Estabilidad: versión actual, historial de cambios y avisos de funciones que van a desaparecer"
+  ],
+  "formato_salida": {
+    "veredicto": "Verde, ámbar o rojo con dos frases de motivo",
+    "cubre_no_cubre": "Tabla: necesidad | lo cubre | endpoint | comentario",
+    "flujo_propuesto": "Los pasos de la integración numerados, indicando qué sistema llama a cuál",
+    "riesgos": "Lista de riesgos ordenada por gravedad, cada uno con su plan B",
+    "esfuerzo": "Estimación en jornadas por fases y qué hace falta para empezar",
+    "preguntas_al_proveedor": "Entre 5 y 8 preguntas concretas para su soporte"
+  },
+  "restricciones": [
+    "No inventes endpoints ni campos que no aparezcan en la documentación aportada",
+    "Si un dato no está, escríbelo como pendiente de confirmar en vez de suponerlo",
+    "Nada de jerga sin explicar: una frase llana por cada término técnico"
+  ],
+  "criterios_calidad": [
+    "Con este documento se puede decidir si seguir adelante o no",
+    "Cada afirmación se apoya en un punto concreto de la documentación"
+  ]
+}

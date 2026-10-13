@@ -1,0 +1,39 @@
+{
+  "tarea": "Preparar [NOMBRE DE TU WEB O TIENDA] para un pico de tráfico previsto y dejar un plan de actuación para ese día",
+  "contexto": {
+    "evento": "[QUÉ PASA: CAMPAÑA, LANZAMIENTO, SALIDA EN PRENSA...]",
+    "fecha_y_hora": "[DÍA Y FRANJA DEL PICO]",
+    "trafico_normal": "[VISITAS O PEDIDOS AL DÍA HOY]",
+    "trafico_esperado": "[CUÁNTAS VECES MÁS ESPERAS]",
+    "tecnologia": "[LENGUAJE, FRAMEWORK, BASE DE DATOS Y ALOJAMIENTO]"
+  },
+  "entradas": {
+    "camino_critico": "[LO QUE NO PUEDE FALLAR: EJEMPLO PÁGINA DE PRODUCTO, CARRITO Y PAGO]",
+    "partes_prescindibles": "[LO QUE SE PUEDE APAGAR SI HACE FALTA: RECOMENDADOS, BUSCADOR, INFORMES]",
+    "limites_conocidos": "[LÍMITES DE TU HOSTING, BASE DE DATOS O PASARELA DE PAGO]",
+    "presupuesto_extra": "[EUROS QUE PUEDES GASTAR ESOS DÍAS]"
+  },
+  "metodo": [
+    "Calcula la carga esperada en peticiones por segundo a partir del tráfico previsto y del reparto por hora",
+    "Identifica el primer cuello de botella probable: conexiones a base de datos, hilos del servidor, ancho de banda o límites de un servicio externo",
+    "Propón medidas por orden: cachear y servir estático, ampliar recursos, y solo después cambiar código",
+    "Define válvulas de escape: cola de espera, límite de peticiones por usuario, apagar funciones prescindibles y página de aviso",
+    "Escribe un guion del día con umbrales numéricos que disparan cada acción y quién la ejecuta"
+  ],
+  "restricciones": [
+    "Nada que requiera más de [DÍAS QUE FALTAN] días de trabajo",
+    "Todos los cambios deben poder deshacerse en minutos",
+    "No tocar el proceso de pago a menos de 48 horas del evento"
+  ],
+  "formato_salida": {
+    "tipo": "documento operativo",
+    "secciones": ["Carga estimada y supuestos", "Cuellos de botella por orden de riesgo", "Preparativos con fechas límite", "Guion del día hora a hora", "Umbrales y acciones", "Plan B si se cae", "Revisión del día siguiente"],
+    "checklist_final": "lista de verificación de 10 puntos para la víspera"
+  },
+  "criterios_calidad": [
+    "Cada acción del guion tiene un umbral numérico que la dispara",
+    "Distingue lo que hay que hacer antes, durante y después",
+    "Incluye cómo volver a la configuración normal y dejar de pagar de más"
+  ],
+  "tono": "operativo, frases cortas, pensado para leer con prisa"
+}

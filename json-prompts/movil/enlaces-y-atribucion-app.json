@@ -1,0 +1,40 @@
+{
+  "tarea": "Montar el sistema de enlaces, QR y códigos de campaña de una app para saber de qué canal viene cada instalación y cada usuario activo.",
+  "contexto": {
+    "app": "[NOMBRE]",
+    "donde_esta": "[APP STORE / GOOGLE PLAY / PWA EN MI DOMINIO / VARIAS]",
+    "canales_que_uso": "[INSTAGRAM, TIKTOK, WHATSAPP, EMAIL, CARTEL EN TIENDA, BOCA A BOCA, ANUNCIOS...]",
+    "tengo_web": "[SÍ, EN ESTA URL / NO]",
+    "herramientas_de_medicion": "[LAS QUE YA USES O NINGUNA]"
+  },
+  "pasos": [
+    "1. Crea un enlace único por canal, no uno solo para todo. Si el enlace es el mismo, no hay forma de saber nada.",
+    "2. Para Google Play, añade al enlace de la ficha los parámetros de campaña utm_source, utm_medium y utm_campaign: la consola de Play te dirá las instalaciones por origen.",
+    "3. Para App Store, usa los enlaces de campaña de la propia consola de Apple: sirven para lo mismo pero se generan aparte.",
+    "4. Nombra las campañas con un criterio fijo y escríbelo: fuente en minúscula, medio, y campaña con fecha, por ejemplo instagram / historias / lanzamiento-2026-04.",
+    "5. Monta una página puente en tu web que detecte el móvil y mande a la tienda que toque; así repartes un solo enlace y mides desde tu lado.",
+    "6. Genera un QR por soporte físico distinto (cartel del escaparate, tarjeta, ticket) apuntando a enlaces distintos, para saber qué soporte tira.",
+    "7. Añade dentro de la app una pregunta opcional de una línea en la primera apertura: cómo nos has conocido, con 4 opciones. Es tosco pero rellena lo que la medición técnica pierde.",
+    "8. Revisa una vez por semana: instalaciones por canal, y cuántas de esas siguen activas a los 7 días. Un canal con muchas instalaciones y nadie activo es ruido."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de enlaces: canal, soporte, URL completa con parámetros, dónde se publica, QR sí o no",
+    "bloque_2": "Convención de nombres de campaña escrita como norma",
+    "bloque_3": "Código de la página puente que reparte a cada tienda según el móvil",
+    "bloque_4": "Texto y opciones de la pregunta cómo nos has conocido",
+    "bloque_5": "Plantilla del cuadro semanal: canal, instalaciones, activos a 7 días, coste si lo hay, decisión"
+  },
+  "criterios_calidad": [
+    "Cada canal y cada soporte físico tiene su propio enlace distinguible.",
+    "Los nombres de campaña siguen todos el mismo patrón, sin mayúsculas ni tildes ni espacios.",
+    "Los enlaces se abren y llevan a la ficha correcta en iPhone y en Android.",
+    "El cuadro semanal mide usuarios que siguen ahí, no solo descargas.",
+    "Cada fila del cuadro termina en una decisión: repetir, ajustar o dejarlo."
+  ],
+  "errores_frecuentes": [
+    "Compartir siempre el mismo enlace y luego no saber qué funcionó.",
+    "Imprimir un QR que apunta a una URL provisional que luego cambias.",
+    "Mezclar mayúsculas y variantes en los nombres de campaña y acabar con datos partidos en cinco filas.",
+    "Celebrar un pico de descargas sin mirar cuántos abrieron la app una segunda vez."
+  ]
+}

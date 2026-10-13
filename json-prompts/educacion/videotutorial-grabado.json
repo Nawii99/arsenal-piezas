@@ -1,0 +1,50 @@
+{
+  "tarea": "Preparar el guion y el plan de grabacion de un videotutorial de pantalla, con locucion, rotulos y accesibilidad",
+  "contexto": {
+    "herramienta_o_proceso": "[QUE SE ENSENA A HACER]",
+    "resultado_final": "[QUE TENDRA HECHO EL ALUMNO AL ACABAR EL VIDEO]",
+    "duracion_objetivo": "[MINUTOS, EJ 7]",
+    "nivel_del_espectador": "[NUNCA LO HA ABIERTO / YA LO USA]",
+    "idioma_de_la_interfaz": "[ESPANOL / INGLES]"
+  },
+  "entradas": {
+    "pasos_reales": "[ENUMERA LOS PASOS TAL Y COMO LOS HACES TU]",
+    "donde_se_atasca_la_gente": "[SI LO SABES]"
+  },
+  "proceso": [
+    "1. Divide el proceso en pasos que terminen en algo visible en pantalla: si un paso no cambia nada visible, junta o parte",
+    "2. Elimina de la grabacion todo lo que no lleve al resultado: nada de tours por el menu",
+    "3. Escribe para cada paso lo que se ve, lo que se dice y el rotulo en pantalla, en columnas separadas",
+    "4. Marca los momentos de riesgo: ventanas emergentes, datos personales en pantalla, esperas de carga que hay que cortar",
+    "5. Prepara el estado inicial: que pestanas cerrar, que cuenta usar, que datos de ejemplo tener listos antes de darle a grabar",
+    "6. Escribe el gancho de 15 segundos que ensena el resultado final antes de empezar el proceso",
+    "7. Anade el plan de accesibilidad: subtitulos, tamano de fuente, zoom en las zonas de clic y descripcion hablada de lo que se pulsa",
+    "8. Define el material de apoyo: guia escrita de los mismos pasos para quien no puede ver el video"
+  ],
+  "restricciones": [
+    "Nunca se dice pincha aqui sin nombrar el boton en voz alta",
+    "Ningun paso deja datos personales o credenciales visibles",
+    "Frases habladas de menos de 15 palabras, para poder locutar sin trabarse",
+    "Nada de pedir que el espectador pause para leer texto pequeno"
+  ],
+  "errores_a_evitar": [
+    "Grabar de una tirada sin estado inicial preparado y tener que repetir todo",
+    "Explicar mientras cargas: se hacen silencios muertos que hay que cortar",
+    "Ratones que se mueven en circulos mientras hablas",
+    "Grabar en una version de la herramienta distinta a la que usara el alumno sin avisarlo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Checklist de preparacion antes de grabar, punto por punto",
+    "bloque_2": "Tabla de guion: Paso | Que se ve | Locucion literal | Rotulo | Aviso o riesgo",
+    "bloque_3": "Guion literal del gancho inicial y del cierre",
+    "bloque_4": "Puntos de corte sugeridos y capitulos con su minutaje aproximado",
+    "bloque_5": "Guia escrita equivalente, paso a paso, para acompanar al video",
+    "bloque_6": "Checklist de accesibilidad a revisar antes de publicar"
+  },
+  "criterios_calidad": [
+    "Alguien que nunca ha usado la herramienta llega al resultado siguiendo solo el video",
+    "La locucion leida en voz alta dura aproximadamente la duracion objetivo",
+    "Cada paso tiene una senal visible de que ha salido bien",
+    "La guia escrita sirve por si sola, sin ver el video"
+  ]
+}

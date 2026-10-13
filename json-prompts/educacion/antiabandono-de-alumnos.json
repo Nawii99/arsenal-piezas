@@ -1,0 +1,49 @@
+{
+  "tarea": "Disenar un sistema de seguimiento antiabandono con senales de riesgo, hitos y mensajes de recuperacion para un curso",
+  "contexto": {
+    "curso": "[NOMBRE Y DURACION]",
+    "como_se_consume": "[VIDEOS GRABADOS / DIRECTOS SEMANALES / MIXTO]",
+    "donde_estan_los_alumnos": "[PLATAFORMA, GRUPO DE WHATSAPP, EMAIL]",
+    "cuanta_gente_hay": "[NUMERO DE ALUMNOS POR EDICION]",
+    "tiempo_que_puedo_dedicar": "[HORAS A LA SEMANA]"
+  },
+  "entradas": {
+    "modulos_y_entregas": "[LISTA DE MODULOS Y QUE HAY QUE HACER EN CADA UNO]",
+    "donde_se_atascan_hoy": "[SI YA LO SABES, DILO; SI NO, ESCRIBE NO LO SE]"
+  },
+  "proceso": [
+    "1. Marca los hitos del curso: los tres o cuatro momentos en los que se decide si el alumno sigue o se cae",
+    "2. Define para cada hito una senal de riesgo observable sin herramientas caras: no ha entrado en X dias, no ha entregado, no ha aparecido en el directo",
+    "3. Escribe el mensaje de bienvenida y de primera victoria, para que el alumno haga algo util en las primeras 48 horas",
+    "4. Redacta un mensaje de recuperacion por cada senal, distinto segun la causa probable: falta de tiempo, atasco tecnico, verguenza o perdida de interes",
+    "5. Define la escalada: primer aviso automatico, segundo aviso personal, tercer contacto por otro canal, y cuando dejar de insistir",
+    "6. Anade el ritual semanal: que revisas cada lunes en 20 minutos para saber a quien escribir",
+    "7. Define el cierre de edicion: que se envia a quien termino y a quien no"
+  ],
+  "restricciones": [
+    "Nada de culpabilizar ni de mensajes pasivo agresivos",
+    "Cada mensaje ofrece una salida facil: retomar por donde iba o pedir ayuda concreta",
+    "El sistema debe funcionar con hoja de calculo y mensajeria, sin software de pago",
+    "Maximo 6 lineas por mensaje"
+  ],
+  "errores_a_evitar": [
+    "Recordatorios genericos de sigue avanzando que nadie contesta",
+    "Escribir solo al final del curso, cuando ya no hay margen",
+    "Confundir inactividad de tres dias con abandono",
+    "Perseguir a todos por igual y quemarte la primera semana"
+  ],
+  "formato_salida": {
+    "bloque_1": "Mapa de hitos: Hito | Cuando ocurre | Senal de riesgo | Que significa normalmente",
+    "bloque_2": "Los mensajes completos, etiquetados por senal y por momento, listos para copiar",
+    "bloque_3": "Escalada en pasos con el plazo entre cada contacto",
+    "bloque_4": "Guion del ritual semanal de 20 minutos, paso a paso",
+    "bloque_5": "Columnas exactas de la hoja de seguimiento y como se rellenan",
+    "bloque_6": "Dos indicadores a mirar por edicion y que hacer si empeoran"
+  },
+  "criterios_calidad": [
+    "Cada senal de riesgo se puede comprobar en menos de un minuto por alumno",
+    "Ningun mensaje sirve igual para dos senales distintas",
+    "El ritual semanal cabe en el tiempo declarado con el numero de alumnos declarado",
+    "Un ayudante podria ejecutar el sistema leyendo solo esta salida"
+  ]
+}

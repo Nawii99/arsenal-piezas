@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir un guion de respuesta a la objeción de precio, ramificado según el motivo real",
+  "contexto": {
+    "oferta": "[QUÉ VENDES Y A QUÉ PRECIO]",
+    "que_incluye": "[TODO LO QUE ENTRA EN EL PRECIO]",
+    "competencia_barata": "[CON QUIÉN O CON QUÉ TE COMPARAN]",
+    "coste_de_no_comprar": "[QUÉ LE PASA AL CLIENTE SI NO LO HACE]"
+  },
+  "entrada": {
+    "frase_del_cliente": "[COPIA LA FRASE EXACTA QUE TE DIJO]"
+  },
+  "metodo": [
+    "Paso 1: no rebatir de golpe. Escribe una frase que reconozca la objeción sin darle la razón ni pedir perdón por el precio",
+    "Paso 2: una pregunta que separe los tres motivos posibles: no hay dinero ahora, no ve el valor, o lo compara con algo más barato",
+    "Paso 3: una respuesta distinta para cada uno de los tres motivos",
+    "Paso 4: en el motivo 'no ve el valor', traduce el precio a coste por mes, por uso o comparado con lo que ya está perdiendo",
+    "Paso 5: en el motivo 'lo compara', explica la diferencia concreta sin hablar mal del competidor",
+    "Paso 6: en el motivo 'no hay dinero ahora', ofrece alcance reducido o calendario, nunca el mismo trabajo más barato",
+    "Paso 7: cierra con la pregunta que hace avanzar a un siguiente paso con fecha"
+  ],
+  "restricciones": [
+    "Prohibido ofrecer descuento sin contrapartida (menos alcance, pago por adelantado, compromiso más largo)",
+    "Nada de frases agresivas ni de manipulación por culpa o miedo",
+    "Frases cortas, tal y como se dicen en voz alta, en español de España y tuteando"
+  ],
+  "formato_salida": {
+    "bloque_1": "Guion en formato TÚ DICES / SI RESPONDE X / ENTONCES DICES, con las tres ramas",
+    "bloque_2": "Tres errores típicos al responder a esta objeción y qué hacer en su lugar",
+    "bloque_3": "Versión resumida en 5 líneas para tener delante durante la llamada"
+  },
+  "criterios_calidad": [
+    "Ninguna respuesta empieza justificando el precio con tus costes internos",
+    "Todas las frases se pueden decir sin sonar a vendedor de manual",
+    "El guion siempre acaba proponiendo un paso concreto, no un 'ya me dirás'"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar la estrategia para consumir la API de [PROVEEDOR] y sincronizar [QUÉ DATOS] sin superar sus límites",
+  "contexto": {
+    "limites_documentados": "[PEGA LO QUE DIGA SU DOCUMENTACIÓN SOBRE LÍMITES Y CUOTAS]",
+    "volumen": "[CUÁNTOS REGISTROS EN TOTAL Y CUÁNTOS CAMBIAN AL DÍA]",
+    "frescura": "[CADA CUÁNTO TIENEN QUE ESTAR ACTUALIZADOS: tiempo real, cada hora, cada noche]",
+    "donde_se_guardan": "[BASE DE DATOS, HOJA DE CÁLCULO, ALMACÉN DE DATOS]"
+  },
+  "decide": [
+    "Carga inicial completa y luego solo cambios, o recarga completa cada vez",
+    "Cómo detectar lo que cambió: fecha de modificación, cursor, webhooks o comparación",
+    "Tipo de paginación y cómo continuar si el proceso se corta a la mitad",
+    "Ritmo de llamadas por segundo y si conviene lanzar varias en paralelo",
+    "Qué se guarda en caché, cuánto tiempo y cuándo se invalida",
+    "Qué campos pedir de verdad, para no traer datos que no usas"
+  ],
+  "formato_salida": {
+    "plan": "Fase inicial y fase incremental, con el ritmo y la duración estimada de cada una",
+    "pseudocodigo": "Bucle de paginación con control de ritmo, reanudación desde el último punto y trato del 429",
+    "presupuesto_de_llamadas": "Cálculo de llamadas por ciclo y por día frente a la cuota disponible",
+    "tabla_de_cache": "Dato | dónde se guarda | cuánto dura | qué lo invalida",
+    "vigilancia": "Qué medir: llamadas gastadas, porcentaje de 429, retraso de la sincronización",
+    "plan_b": "Qué hacer si el proveedor corta el acceso o cambia los límites"
+  },
+  "restricciones": [
+    "Respetar siempre la cabecera de reintento que envíe el proveedor",
+    "Nunca lanzar todas las peticiones a la vez para acabar antes",
+    "El proceso debe poder pararse y reanudarse sin duplicar registros",
+    "No descargar datos personales que no necesites guardar"
+  ],
+  "criterios_calidad": [
+    "Los números del presupuesto de llamadas cuadran con los límites indicados",
+    "Una interrupción a mitad de proceso no obliga a empezar de cero"
+  ]
+}

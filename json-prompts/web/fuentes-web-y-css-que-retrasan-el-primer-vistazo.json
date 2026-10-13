@@ -1,0 +1,44 @@
+{
+  "tarea": "Optimizar la carga de tipografías y de CSS de una web para que el contenido se vea antes",
+  "contexto": {
+    "url": "[URL DE LA PÁGINA]",
+    "plataforma": "[WORDPRESS / SHOPIFY / WEBFLOW / A MEDIDA]",
+    "identidad_visual": "[TIPOGRAFÍAS OBLIGATORIAS DE MARCA, SI LAS HAY]"
+  },
+  "entradas": {
+    "fuentes_actuales": "[NOMBRE DE CADA TIPOGRAFÍA, GROSORES Y ESTILOS CARGADOS, ORIGEN LOCAL O GOOGLE FONTS Y PESO]",
+    "hojas_de_estilo": "[LISTA DE ARCHIVOS CSS CON SU PESO Y DE DÓNDE VIENEN: TEMA, PLUGINS, MAQUETADOR]",
+    "avisos_pagespeed": "[PEGA LOS AVISOS DE RECURSOS QUE BLOQUEAN EL PINTADO Y DE CSS SIN USAR]",
+    "fcp_actual": "[X segundos en móvil]"
+  },
+  "reglas_del_oficio": [
+    "Cada grosor y cada estilo de una tipografía es un archivo aparte: carga solo los que usas de verdad",
+    "Sirve las fuentes desde tu propio dominio en formato woff2 y precárgalas si son de la primera pantalla",
+    "Usa intercambio de fuente para que el texto se lea desde el principio con una fuente de sistema parecida",
+    "Elige una fuente de reserva con métricas parecidas para que el cambio no mueva el diseño",
+    "Dos familias tipográficas suelen bastar; a partir de ahí solo sumas peso"
+  ],
+  "proceso": [
+    "Lista las fuentes y grosores realmente usados en la página y márcalos frente a los cargados",
+    "Propón el recorte concreto y el ahorro en kilobytes",
+    "Indica qué CSS se puede cargar después, cuál se puede quitar y cuál viene de plugins que no se usan en esa página",
+    "Escribe las etiquetas y reglas listas para pegar, incluida la precarga de la fuente principal",
+    "Estima la mejora en el primer pintado y en el LCP si el elemento principal es texto"
+  ],
+  "restricciones": [
+    "Respeta las tipografías de marca obligatorias y trabaja sobre grosores y formatos",
+    "Avisa si algún recorte de CSS puede afectar a otras páginas de la web"
+  ],
+  "formato_salida": {
+    "tipo": "informe corto con código",
+    "secciones": [
+      "Tabla de fuentes: cargada, usada, decisión y ahorro",
+      "Tabla de CSS: archivo, origen, decisión y riesgo",
+      "Bloque de código listo para pegar y dónde va"
+    ]
+  },
+  "criterios_calidad": [
+    "El texto de la primera pantalla se ve legible desde el primer instante",
+    "Ningún cambio propuesto altera el aspecto de la marca"
+  ]
+}

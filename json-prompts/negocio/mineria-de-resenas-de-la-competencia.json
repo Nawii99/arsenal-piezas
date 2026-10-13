@@ -1,0 +1,34 @@
+{
+  "tarea": "Analizar reseñas de clientes del sector [SECTOR] para extraer patrones de queja, motivos de elogio y oportunidades de diferenciación para [TU NEGOCIO]",
+  "entradas": {
+    "reseñas": "[PEGA AQUÍ LAS RESEÑAS TAL CUAL, INDICANDO DE QUÉ NEGOCIO O PRODUCTO ES CADA BLOQUE]",
+    "origen": "[GOOGLE MAPS, AMAZON, TRUSTPILOT, APP STORE U OTRO]",
+    "periodo": "[FECHAS APROXIMADAS DE LAS RESEÑAS]"
+  },
+  "metodo": [
+    "Clasificar cada reseña por tema: producto, precio, plazos, atención, expectativas y postventa",
+    "Contar cuántas veces aparece cada tema y separar quejas de una estrella de decepciones de tres y cuatro estrellas, que suelen ser las más útiles",
+    "Extraer citas literales representativas de cada tema, sin corregir el estilo del cliente",
+    "Distinguir problemas estructurales del sector de fallos concretos de una empresa",
+    "Detectar peticiones explícitas: cosas que los clientes dicen echar en falta"
+  ],
+  "restricciones": [
+    "Trabajar solo con las reseñas aportadas, sin buscar ni inventar más",
+    "No incluir nombres propios de personas ni datos personales en las citas",
+    "Indicar el número de menciones de cada patrón, no adjetivos como muchas"
+  ],
+  "formato_salida": {
+    "tabla_patrones": "Tabla con: patrón, número de menciones, valoración media asociada, cita literal representativa e interpretación",
+    "top_quejas": "Las cinco quejas más repetidas ordenadas por frecuencia",
+    "top_elogios": "Los cinco motivos de satisfacción más repetidos, que marcan el mínimo que debo cumplir",
+    "peticiones_no_cubiertas": "Lista de lo que los clientes piden y nadie ofrece",
+    "oportunidades": "Tres oportunidades para mi negocio, cada una con la queja de la que nace y cómo la resolvería",
+    "frases_para_marketing": "Cinco frases usando el vocabulario literal de los clientes, listas para web o anuncios"
+  },
+  "criterios_calidad": [
+    "Ningún patrón aparece sin su recuento y su cita",
+    "Se separa lo anecdótico de lo repetido en al menos tres reseñas",
+    "Las oportunidades son accionables con los recursos de un negocio pequeño"
+  ],
+  "tono": "Objetivo, sin suavizar las críticas"
+}

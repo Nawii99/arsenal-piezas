@@ -1,0 +1,38 @@
+{
+  "tarea": "Auditar las dependencias de un proyecto y devolver un plan de actualización ordenado por riesgo",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL PROYECTO]",
+    "lenguaje_y_version": "[LENGUAJE Y VERSIÓN ACTUAL]",
+    "entorno": "[DÓNDE SE EJECUTA: servidor propio, nube, contenedores]",
+    "ultima_actualizacion": "[CUÁNDO SE ACTUALIZÓ POR ÚLTIMA VEZ]",
+    "tolerancia_a_parones": "[PUEDE HABER MANTENIMIENTO PROGRAMADO / NO PUEDE PARAR]"
+  },
+  "entradas": {
+    "archivo_de_dependencias": "[PEGA package.json, requirements.txt, composer.json, pom.xml O EQUIVALENTE]",
+    "avisos_recibidos": "[AVISOS DE SEGURIDAD O DE FIN DE SOPORTE QUE TE HAYAN LLEGADO]",
+    "pruebas_disponibles": "[QUÉ PRUEBAS AUTOMÁTICAS TIENES PARA DETECTAR ROTURAS]"
+  },
+  "analisis": [
+    "Clasifica cada dependencia: crítica de seguridad, sin mantenimiento, muy desactualizada, al día",
+    "Marca las que están abandonadas o sin versiones recientes y propón sustituto",
+    "Detecta dependencias que se solapan o que se podrían quitar sin sustituto",
+    "Señala los saltos de versión mayor y qué suele romperse en cada uno",
+    "Ordena las actualizaciones para que unas no bloqueen a otras"
+  ],
+  "restricciones": [
+    "No inventes números de versión ni fechas concretas: si no lo sabes, indica que hay que comprobarlo y cómo",
+    "Separa lo urgente por seguridad de lo que es solo higiene",
+    "Cada actualización debe poder desplegarse por separado"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown + plan por tandas",
+    "columnas": ["dependencia", "uso en el proyecto", "riesgo", "tipo de salto", "qué puede romperse", "cómo verificarlo", "prioridad"],
+    "plan": "Tandas: urgente ahora, este mes, este trimestre; con qué probar después de cada una",
+    "comandos": "Comandos de comprobación local para cada gestor de paquetes usado"
+  },
+  "criterios_calidad": [
+    "Toda dependencia con aviso de seguridad aparece en la primera tanda",
+    "Cada fila dice cómo comprobar que no se ha roto nada",
+    "Queda claro qué se puede posponer sin riesgo"
+  ]
+}

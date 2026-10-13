@@ -1,0 +1,46 @@
+{
+  "tarea": "Diseñar un sistema de vigilancia de temperatura con sensores, alertas y registro automatico para un negocio",
+  "contexto": {
+    "negocio": "[BAR / OBRADOR / TIENDA / FARMACIA / ALMACEN]",
+    "puntos_a_vigilar": "[LISTA: CAMARA DE CONGELADO, NEVERA EXPOSITORA, ALMACEN SECO, VITRINA]",
+    "rangos_exigidos": "[POR PUNTO, EJEMPLO -18 A -20 C, 0 A 4 C, 15 A 25 C]",
+    "quien_recibe_avisos": "[NOMBRES Y CANAL: WHATSAPP, LLAMADA, EMAIL]",
+    "horario_sin_personal": "[FRANJAS EN LAS QUE NO HAY NADIE]",
+    "cobertura": "[HAY WIFI DENTRO DE LA CAMARA? SI/NO/NO SE]"
+  },
+  "metodo": [
+    "1. Un sensor por punto de control, colocado donde esta el producto, no pegado a la puerta ni al evaporador",
+    "2. Elige tecnologia segun cobertura: dentro de camaras metalicas el Wi-Fi suele no salir, plantea sonda con cable pasante o repetidor Zigbee fuera",
+    "3. Define umbral y tiempo: no avises al primer pico, avisa si se pasa del rango durante [MINUTOS DE TOLERANCIA] minutos, para no saltar en cada apertura de puerta",
+    "4. Define tres niveles: aviso, alarma y alarma critica con llamada, cada uno con su destinatario",
+    "5. Añade vigilancia del propio sistema: si un sensor deja de enviar datos [MINUTOS SIN DATOS] minutos, eso tambien es una alarma",
+    "6. Fija registro cada [MINUTOS ENTRE LECTURAS] minutos y conservacion de [MESES DE HISTORICO] meses, con exportacion a PDF o CSV",
+    "7. Escribe el protocolo de comprobacion: contraste con termometro calibrado cada [MESES] meses y prueba de alarma mensual"
+  ],
+  "restricciones": [
+    "El sistema registra y avisa: no sustituye los controles obligatorios ni las decisiones del responsable",
+    "Nada de alertas solo dentro de una app: siempre un canal que suene en el movil",
+    "Sensores a pila con aviso de bateria baja obligatorio",
+    "No inventes requisitos legales concretos: indica que hay que confirmarlos con el tecnico de higiene o la normativa aplicable"
+  ],
+  "errores_frecuentes": [
+    "Sonda pegada a la pared del fondo, que mide el frio del evaporador y no el del producto",
+    "Umbrales tan justos que el sistema avisa veinte veces al dia y nadie le hace caso",
+    "No detectar el sensor mudo: la nevera se estropea y nadie se entera porque no llega ninguna alerta",
+    "Guardar el historico solo en el movil de una persona",
+    "Poner la pasarela en un enchufe que se apaga con el interruptor general al cerrar"
+  ],
+  "formato_salida": {
+    "mapa_de_sensores": "Punto | Sensor propuesto | Colocacion exacta | Alimentacion | Riesgo de cobertura",
+    "tabla_umbrales": "Punto | Rango normal | Umbral de aviso | Umbral de alarma | Minutos de tolerancia | A quien avisa",
+    "registro": "Frecuencia, sitio donde se guarda y como se exporta el informe",
+    "plan_de_pruebas": "Pruebas mensuales y trimestrales con pasos y resultado esperado",
+    "presupuesto": "Material con cantidades, coste aproximado y horas de instalacion"
+  },
+  "criterios_calidad": [
+    "Ninguna alarma importante depende de que alguien mire una pantalla",
+    "Cada punto de control tiene umbral, tolerancia y responsable con nombre",
+    "El sistema avisa tambien cuando es el propio sistema el que falla",
+    "El informe de temperaturas se saca en menos de dos minutos"
+  ]
+}

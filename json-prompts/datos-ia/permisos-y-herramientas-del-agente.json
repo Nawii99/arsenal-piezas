@@ -1,0 +1,34 @@
+{
+  "tarea": "Definir las herramientas, los permisos y las aprobaciones del agente [NOMBRE DEL AGENTE] antes de conectarlo a mis cuentas",
+  "contexto": {
+    "mision_del_agente": "[QUE HACE EL AGENTE]",
+    "herramientas_que_quiero_conectar": "[CORREO, CALENDARIO, HOJA DE CALCULO, CRM, TIENDA, REDES...]",
+    "datos_que_toca": "[DATOS DE CLIENTES, PRECIOS, FACTURAS, STOCK...]",
+    "quien_aprueba": "[TU NOMBRE O PUESTO]"
+  },
+  "metodo": [
+    "1. Para cada paso de la mision, di que herramienta necesita de verdad",
+    "2. Clasifica cada acceso en solo lectura, escritura con revision o escritura directa",
+    "3. Descarta toda herramienta que no sea imprescindible y explica por que sobra",
+    "4. Marca las acciones irreversibles: enviar, publicar, pagar, borrar, compartir fuera",
+    "5. Asigna a cada accion irreversible una aprobacion humana o un limite (importe, numero al dia)",
+    "6. Señala que datos personales aparecen y como reducirlos al minimo"
+  ],
+  "formato_salida": {
+    "tabla_permisos": "Tabla markdown con columnas: Herramienta, Para que la usa, Nivel de acceso, Reversible (si/no), Aprobacion necesaria, Limite",
+    "lista_roja": "Acciones que el agente no debe poder hacer bajo ningun concepto",
+    "plan_de_arranque": "Como empezar en modo solo lectura y que tiene que cumplirse para ampliarle permisos",
+    "revision": "Que revisar cada semana y cada mes para saber si se esta portando bien"
+  },
+  "restricciones": [
+    "Principio de permiso minimo: ante la duda, el nivel mas bajo",
+    "Toda accion que cueste dinero o llegue a un cliente pasa por aprobacion en las primeras semanas",
+    "Nada de contraseñas ni claves dentro del texto del agente",
+    "Si una herramienta no aporta a la mision, dilo claro en vez de justificarla"
+  ],
+  "criterios_calidad": [
+    "Cada linea de la tabla se entiende sin saber informatica",
+    "Puedo explicarle a un cliente que datos suyos toca el agente y para que",
+    "Existe un plan claro para quitarle permisos si algo va mal"
+  ]
+}

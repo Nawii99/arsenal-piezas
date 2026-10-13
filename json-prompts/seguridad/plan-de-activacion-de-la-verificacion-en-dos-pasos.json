@@ -1,0 +1,39 @@
+{
+  "tarea": "Priorizar en qué cuentas activar la verificación en dos pasos y entregar un plan de activación con custodia de códigos de recuperación",
+  "rol": "Técnico de seguridad que explica pasos a personas no técnicas",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "cuentas": "[LISTA DE CUENTAS: BANCO, CORREO, HOSTING, REDES, FACTURACIÓN, TIENDA, PASARELA DE PAGO...]",
+    "quien_usa_cada_una": "[PERSONAS POR CUENTA]",
+    "metodo_disponible": "[APP DE AUTENTICACIÓN, SMS, LLAVE FÍSICA, NO LO SÉ]",
+    "moviles": "[MÓVILES DE EMPRESA O PERSONALES]"
+  },
+  "reglas_de_prioridad": [
+    "Primero la cuenta de correo que recupera todas las demás",
+    "Después dinero: banco, pasarela de pago y facturación",
+    "Después identidad pública: redes sociales, dominio y hosting",
+    "Después datos de clientes",
+    "Preferir app de autenticación o llave física antes que SMS, y explicar por qué en una frase"
+  ],
+  "riesgos_a_prevenir": [
+    "Activar el doble factor en el móvil de una sola persona y perder el acceso si se va o pierde el teléfono",
+    "No guardar los códigos de recuperación en ningún sitio",
+    "Cuentas compartidas donde el código llega solo a un teléfono"
+  ],
+  "formato_salida": {
+    "tabla_plan": ["Cuenta", "Prioridad", "Método recomendado", "Quién lo activa", "Dónde se guardan los códigos de recuperación", "Suplente"],
+    "guia_pasos": "Para las tres cuentas más críticas, los pasos concretos tal como se ven en pantalla",
+    "plan_codigos": "Cómo guardar y custodiar los códigos de recuperación, con una alternativa en papel",
+    "prueba_final": "Cómo comprobar que funciona sin bloquearte, antes de cerrar sesión"
+  },
+  "restricciones": [
+    "No pidas ni muestres códigos reales",
+    "Si no conoces la pantalla exacta de un servicio, dilo y describe el camino general en lugar de inventarlo",
+    "Máximo dos horas de trabajo para completar la lista prioritaria"
+  ],
+  "criterios_calidad": [
+    "Ninguna cuenta queda con un único punto de fallo humano",
+    "Toda cuenta compartida tiene una solución explícita para el segundo factor",
+    "El plan incluye qué hacer si pierdes el móvil"
+  ]
+}

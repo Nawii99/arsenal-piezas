@@ -1,0 +1,43 @@
+{
+  "tarea": "Especificar al detalle una plantilla o calculadora descargable que sirva de lead magnet, lista para montarla en una hoja de cálculo o en Notion",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU EMPRESA Y SECTOR]",
+    "problema_a_resolver": "[QUÉ CÁLCULO O CONTROL LE CUESTA A TU CLIENTE]",
+    "publico": "[QUIÉN LA VA A USAR Y CON QUÉ NIVEL]",
+    "herramienta": "[GOOGLE SHEETS / EXCEL / NOTION]",
+    "frecuencia_de_uso": "[UNA VEZ / CADA SEMANA / CADA MES]",
+    "servicio_relacionado": "[QUÉ VENDES TÚ SOBRE ESTE MISMO TEMA]"
+  },
+  "pasos": [
+    "Definir qué datos mete el usuario y qué resultados debe ver sin tocar nada más",
+    "Separar la hoja de entrada de datos de la hoja de resultados",
+    "Escribir las fórmulas exactas con referencias de celda, listas para pegar",
+    "Añadir avisos automáticos cuando un valor esté fuera de lo razonable",
+    "Preparar un ejemplo relleno con datos ficticios para que se entienda de un vistazo"
+  ],
+  "restricciones": [
+    "Máximo 4 pestañas y 12 campos de entrada",
+    "Sin macros, sin complementos de pago y sin fórmulas que se rompan al copiar",
+    "Cada celda de entrada lleva una nota de una línea explicando qué poner",
+    "Nada de cálculos fiscales concretos sin marcarlos como [REVISAR CON TU ASESOR]",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "tipo": "especificación técnica en lenguaje llano",
+    "secciones": [
+      "1. Nombre de la plantilla y promesa en una frase",
+      "2. Pestañas: nombre y para qué sirve cada una",
+      "3. Tabla de campos: celda | etiqueta | tipo de dato | ejemplo | nota de ayuda",
+      "4. Fórmulas: celda de destino y fórmula exacta, con qué significa el resultado",
+      "5. Formato visual: qué colorear, qué bloquear y qué dejar editable",
+      "6. Hoja de instrucciones: 6 pasos para usarla",
+      "7. Ejemplo relleno con datos de muestra",
+      "8. Dónde y cómo mencionar tu servicio dentro de la plantilla, sin molestar"
+    ]
+  },
+  "criterios_calidad": [
+    "Alguien sin conocimientos la usa sin preguntarte nada",
+    "Ninguna fórmula depende de datos que el usuario no tiene",
+    "El resultado principal se ve en la primera pantalla, sin desplazarse"
+  ]
+}

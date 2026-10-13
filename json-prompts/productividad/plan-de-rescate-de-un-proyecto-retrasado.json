@@ -1,0 +1,38 @@
+{
+  "tarea": "Diagnosticar por qué un proyecto va retrasado y construir un plan de recuperación con opciones y su coste, más el guion de la conversación con el cliente",
+  "contexto": {
+    "proyecto": "[NOMBRE Y OBJETIVO]",
+    "fecha_comprometida": "[DD/MM/AAAA]",
+    "retraso_actual": "[DÍAS O SEMANAS DE DESVÍO Y CÓMO LO SABES]",
+    "avance_real": "[QUÉ ESTÁ TERMINADO DE VERDAD Y QUÉ FALTA]",
+    "tareas_pendientes": "[LISTA CON HORAS ESTIMADAS QUE QUEDAN]",
+    "equipo_disponible": "[PERSONAS Y HORAS REALES DE AQUÍ A LA FECHA]",
+    "intocable": "[QUÉ NO SE PUEDE RECORTAR NI RETRASAR BAJO NINGÚN CONCEPTO]",
+    "penalizaciones": "[QUÉ PASA POR CONTRATO SI SE ENTREGA TARDE]"
+  },
+  "metodo": [
+    "Calcula primero el hueco: horas pendientes menos horas disponibles hasta la fecha, en números",
+    "Identifica las 3 causas reales del retraso distinguiendo causa de síntoma",
+    "Propón tres escenarios: recortar alcance, mover la fecha o meter más recursos, cada uno con lo que cuesta y lo que se pierde",
+    "Dentro del recorte de alcance, ordena lo pendiente por valor para el cliente y marca qué se entrega en una segunda fase",
+    "Descarta las medidas placebo: horas extra sostenidas, meter gente nueva a última hora o saltarse las revisiones",
+    "Recomienda un escenario y justifica en tres líneas por qué"
+  ],
+  "restricciones": [
+    "Nada de planes que asuman que a partir de mañana el equipo rinde el doble",
+    "Si ninguna opción salva la fecha, dilo con claridad en vez de maquillarlo",
+    "Respeta lo marcado como intocable"
+  ],
+  "formato_salida": {
+    "bloque_1": "Diagnóstico: el hueco en horas y las 3 causas reales",
+    "bloque_2": "Tabla de escenarios con columnas Opción, Qué implica, Fecha resultante, Coste, Riesgo",
+    "bloque_3": "Plan recomendado día a día para las próximas 2 semanas",
+    "bloque_4": "Guion de la llamada al cliente: cómo abrir, qué ofrecer y qué pedir"
+  },
+  "criterios_calidad": [
+    "Las cifras cuadran: horas pendientes, disponibles y fecha resultante son coherentes",
+    "Cada escenario dice explícitamente qué se pierde, no solo qué se gana",
+    "El guion de la llamada empieza reconociendo el retraso, sin rodeos"
+  ],
+  "tono": "franco y resolutivo, de quien da malas noticias con solución debajo"
+}

@@ -1,0 +1,50 @@
+{
+  "tarea": "Generar un banco de [NÚMERO] preguntas de evaluación sobre [TEMA], con distractores plausibles, explicación de cada opción y etiquetas para poder montar exámenes distintos.",
+  "contexto": {
+    "formacion": "[NOMBRE DEL CURSO]",
+    "uso": "[AUTOEVALUACIÓN POR LECCIÓN / EXAMEN FINAL / SIMULACRO DE PRUEBA OFICIAL]",
+    "nivel": "[PRINCIPIANTE / INTERMEDIO / AVANZADO]",
+    "formato_de_pregunta": "[OPCIÓN MÚLTIPLE DE 4 / VERDADERO-FALSO RAZONADO / CASO CORTO]",
+    "plataforma": "[GOOGLE FORMS / MOODLE / HOTMART / PAPEL]"
+  },
+  "entradas": {
+    "material_fuente": "[PEGA APUNTES, GUION DE CLASE O TRANSCRIPCIÓN]",
+    "objetivos_de_aprendizaje": "[QUÉ DEBE SABER HACER EL ALUMNO AL TERMINAR]",
+    "confusiones_habituales": "[LOS ERRORES QUE MÁS REPITE LA GENTE]"
+  },
+  "procedimiento": [
+    "1. Reparte las preguntas por objetivo: ninguna pregunta sin objetivo asociado y ningún objetivo sin al menos dos preguntas.",
+    "2. Clasifica cada pregunta por nivel cognitivo: recordar, aplicar o decidir. Al menos la mitad deben ser de aplicar o decidir.",
+    "3. Redacta el enunciado como una situación real del oficio, con datos concretos y una única pregunta al final.",
+    "4. Construye los distractores a partir de las confusiones habituales: cada opción falsa debe ser lo que creería alguien que ha entendido mal algo concreto.",
+    "5. Comprueba la homogeneidad: todas las opciones con longitud parecida, misma estructura gramatical y sin pistas como siempre o nunca.",
+    "6. Escribe la explicación de la correcta y, por separado, por qué falla cada distractor y qué hay que repasar.",
+    "7. Etiqueta cada pregunta con tema, objetivo, nivel y dificultad estimada para poder montar versiones A y B equilibradas.",
+    "8. Marca las preguntas que caducan si cambia una herramienta o una normativa, para revisarlas cada [PERIODO]."
+  ],
+  "restricciones": [
+    "Nada de preguntas con doble negación ni con la opción todas las anteriores.",
+    "Ninguna pregunta que se responda solo por sentido común sin haber hecho el curso.",
+    "Prohibido copiar frases literales del material como enunciado.",
+    "Español de España, redacción neutra y sin ironías."
+  ],
+  "errores_a_evitar": [
+    "Distractores absurdos: convierten la pregunta en un regalo y no miden nada.",
+    "Preguntas de fecha o de dato memorístico que no cambian nada en el trabajo real.",
+    "Que la opción correcta sea sistemáticamente la más larga o la más detallada.",
+    "Repetir el mismo objetivo en diez preguntas y dejar otro sin evaluar."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla resumen: objetivo, número de preguntas, reparto por nivel cognitivo.",
+    "bloque_2": "Las preguntas numeradas con enunciado, cuatro opciones, correcta marcada y explicación de cada opción.",
+    "bloque_3": "Etiquetas de cada pregunta en línea aparte: tema | objetivo | nivel | dificultad.",
+    "bloque_4": "Dos exámenes propuestos (versión A y versión B) equilibrados, indicando qué preguntas lleva cada uno.",
+    "bloque_5": "Bloque de texto separado por punto y coma listo para importar en la plataforma indicada."
+  },
+  "criterios_calidad": [
+    "Un alumno que ha hecho el curso acierta al menos el 70% y uno que no lo ha hecho no pasa del 40%.",
+    "Cada distractor se puede explicar con la frase: esto lo elige quien cree que...",
+    "Las versiones A y B tienen la misma dificultad media y cubren los mismos objetivos.",
+    "Ninguna pregunta se puede responder mirando solo las opciones."
+  ]
+}

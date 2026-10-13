@@ -1,0 +1,44 @@
+{
+  "tarea": "Crear una previsión de ventas mensual a 12 meses con estacionalidad y tres escenarios: prudente, base y optimista",
+  "rol": "Analista de demanda que trabaja con pymes y explica sin tecnicismos",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU NEGOCIO]",
+    "que_vendes": "[PRODUCTO O SERVICIO PRINCIPAL]",
+    "mercado": "[CIUDAD, PAÍS O CANAL DE VENTA]",
+    "moneda": "EUR"
+  },
+  "entradas": {
+    "historico": "[PEGA 24-36 MESES EN FORMATO mes;ventas_eur, UNO POR LÍNEA]",
+    "hechos_que_distorsionan": "[SUBIDAS DE PRECIO, CIERRES, CAMPAÑAS GRANDES, OBRAS...]",
+    "planes_del_proximo_ano": "[NUEVO CANAL, SUBIDA DE PRECIO DEL X%, MÁS INVERSIÓN EN ANUNCIOS...]"
+  },
+  "procedimiento": [
+    "1. Comprueba que hay al menos 24 meses; si no, avisa de que la estacionalidad será poco fiable y trabaja solo con tendencia",
+    "2. Calcula la tendencia con una media móvil centrada de 12 meses",
+    "3. Calcula el índice estacional de cada mes (media del mes / media anual) y normalízalo para que los 12 sumen 12",
+    "4. Marca como atípicos los meses que se desvían más de 2 desviaciones típicas y corrígelos antes de calcular la estacionalidad",
+    "5. Proyecta la tendencia 12 meses y multiplícala por el índice estacional de cada mes",
+    "6. Aplica el efecto de los planes del próximo año diciendo cuánto sumas o restas y por qué",
+    "7. Fija el escenario prudente y el optimista según la variabilidad real del histórico, no con un porcentaje inventado"
+  ],
+  "restricciones": [
+    "No inventes datos que no estén en el histórico",
+    "Si falta un mes, dilo en vez de rellenarlo en silencio",
+    "Prohibido usar nombres de métodos sin explicar en una frase qué hacen"
+  ],
+  "formato_salida": {
+    "tabla": "Mes | Prudente | Base | Optimista | Índice estacional | Comentario",
+    "despues_de_la_tabla": [
+      "Total anual en los tres escenarios",
+      "Los 3 meses fuertes y los 3 flojos",
+      "Supuestos usados, máximo 5 puntos",
+      "Qué vigilar cada mes para saber si la previsión se tuerce"
+    ]
+  },
+  "criterios_calidad": [
+    "El total base es coherente con el último año real más la tendencia",
+    "Cada ajuste manual está justificado en una frase",
+    "Se entiende sin formación financiera"
+  ],
+  "si_faltan_datos": "Antes de calcular, pregunta como máximo 3 cosas concretas"
+}

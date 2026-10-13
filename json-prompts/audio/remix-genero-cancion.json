@@ -1,0 +1,31 @@
+{
+  "tarea": "remezclar_cancion_a_otro_genero",
+  "descripcion": "Adaptar una cancion propia existente a un genero musical distinto, conservando melodia y letra, con una herramienta de generacion musical con IA.",
+  "entrada": {
+    "cancion_original": {
+      "archivo": "[RUTA O URL DEL ARCHIVO DE AUDIO PROPIO]",
+      "autoria": "[NOMBRE DEL AUTOR O CONFIRMACION DE QUE ES OBRA PROPIA]",
+      "duracion_segundos": "[DURACION EN SEGUNDOS]"
+    },
+    "letra": "[LETRA ORIGINAL, SI SE QUIERE CONSERVAR TAL CUAL]"
+  },
+  "transformacion": {
+    "genero_destino": "[GENERO, EJ: REGGAETON, BALADA ACUSTICA, ELECTRO POP]",
+    "tempo_bpm": "[BPM OBJETIVO]",
+    "tonalidad": "[TONALIDAD, EJ: DO MAYOR, O 'MANTENER ORIGINAL']",
+    "instrumentacion_deseada": ["[INSTRUMENTO 1]", "[INSTRUMENTO 2]"],
+    "conservar_voz_original": false,
+    "conservar_melodia_principal": true
+  },
+  "restricciones": {
+    "duracion_maxima_segundos": "[DURACION MAXIMA]",
+    "uso_previsto": "[USO, EJ: PUBLICACION EN REDES, DEMO PARA UN SELLO, USO PRIVADO]",
+    "requiere_licencia_comercial_de_la_herramienta": true,
+    "titularidad_confirmada": "[SI/NO: EL USUARIO CONFIRMA QUE LA CANCION ES SUYA O TIENE PERMISO PARA ADAPTARLA]"
+  },
+  "salida": {
+    "formato_archivo": "wav",
+    "numero_de_variantes": "[NUMERO DE VERSIONES A GENERAR, EJ: 3]",
+    "entregar_tambien": ["pista_instrumental", "pista_voz_si_existe"]
+  }
+}

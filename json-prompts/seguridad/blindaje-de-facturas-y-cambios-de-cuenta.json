@@ -1,0 +1,44 @@
+{
+  "tarea": "Auditar el circuito de recepción y pago de facturas de una pyme y diseñar los controles antifraude para facturas falsas y cambios de cuenta bancaria",
+  "rol": "Auditor de procesos administrativos especializado en fraude de suplantación de proveedor",
+  "entradas": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "como_llegan_las_facturas": "[CORREO, PORTAL, PAPEL, WHATSAPP]",
+    "quien_las_valida": "[NOMBRE Y CARGO]",
+    "quien_las_paga": "[NOMBRE Y CARGO]",
+    "numero_de_proveedores": "[APROXIMADO]",
+    "herramientas": "[PROGRAMA DE CONTABILIDAD, GESTORÍA, BANCA ONLINE]",
+    "proceso_actual": "[CUENTA EN 5 LÍNEAS CÓMO SE HACE HOY, DE LA FACTURA AL PAGO]"
+  },
+  "puntos_debiles_a_buscar": [
+    "Una sola persona valida y paga sin que nadie lo revise",
+    "El IBAN se copia de la factura recibida en vez de de una ficha maestra",
+    "No existe una lista de cuentas bancarias autorizadas por proveedor",
+    "Los cambios de cuenta se aceptan por correo sin llamada de confirmación",
+    "Facturas de importes justo por debajo del umbral que exige autorización",
+    "Proveedores nuevos dados de alta sin comprobar existencia real ni datos fiscales",
+    "Correos de proveedor con dominio parecido pero no idéntico"
+  ],
+  "entregables": [
+    "Diagnóstico del proceso actual con los riesgos ordenados por gravedad",
+    "Ficha maestra de proveedor: qué campos guardar y quién puede modificarlos",
+    "Procedimiento de cambio de IBAN en 6 pasos, con el guion de la llamada de confirmación",
+    "Checklist de 12 comprobaciones para revisar una factura antes de pagarla",
+    "Correo tipo de respuesta cuando un proveedor comunica un cambio de cuenta",
+    "Revisión mensual: qué cuadrar y en cuánto tiempo"
+  ],
+  "restricciones": [
+    "Los controles no pueden retrasar los pagos legítimos más de un día",
+    "Sin comprar software nuevo: usar correo, hoja de cálculo y teléfono",
+    "No dar por válida ninguna verificación hecha con datos que vengan del propio mensaje sospechoso"
+  ],
+  "formato_salida": {
+    "tipo": "Informe corto con tablas y checklists",
+    "extension": "Entre 700 y 1200 palabras"
+  },
+  "criterios_calidad": [
+    "Cada control indica quién lo hace, cuándo y qué evidencia deja",
+    "El checklist se puede aplicar en menos de 3 minutos por factura",
+    "El diagnóstico señala como mínimo un riesgo que la empresa no había mencionado"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "tarea": "Convertir las notas internas de una incidencia en curso en una cronología pública de actualizaciones, coherente y con estados claros",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "servicio_afectado": "[QUÉ PRODUCTO O SERVICIO ESTÁ FALLANDO]",
+    "donde_se_publica": "[WEB, CANAL DE WHATSAPP, EMAIL, REDES]",
+    "publico": "[CLIENTES FINALES / EMPRESAS / AMBOS]"
+  },
+  "entradas": {
+    "notas_internas": "[PEGA AQUÍ LAS NOTAS DEL EQUIPO CON HORA: QUÉ SE HA VISTO, QUÉ SE HA PROBADO, QUÉ HA FALLADO]",
+    "estado_actual": "[INVESTIGANDO / IDENTIFICADO / APAÑO APLICADO / RESUELTO / VIGILANDO]",
+    "alcance": "[QUIÉN ESTÁ AFECTADO AHORA MISMO]",
+    "actualizaciones_ya_publicadas": "[PEGA LAS QUE YA HAS ENVIADO PARA NO CONTRADECIRTE]"
+  },
+  "estados_permitidos": ["Investigando", "Causa identificada", "Solución en marcha", "Resuelto", "En vigilancia"],
+  "pasos": [
+    "Ordena los hechos por hora y descarta los detalles internos que no aportan al cliente",
+    "Traduce cada nota técnica a una frase que entienda alguien de fuera",
+    "Comprueba que ninguna entrada contradice las actualizaciones ya publicadas y señala si alguna hay que corregir",
+    "Escribe cada entrada con hora, estado y qué cambia respecto a la anterior",
+    "Añade en cada entrada la hora del siguiente aviso",
+    "Cierra con la entrada de resolución: qué se ha arreglado, qué hace el cliente ahora y qué pasa con lo perdido durante el fallo"
+  ],
+  "restricciones": [
+    "Cada entrada debe aportar algo nuevo; si no hay novedad, la entrada dice exactamente eso y cuándo la habrá",
+    "Nada de horas de resolución inventadas ni de porcentajes de avance",
+    "Sin nombres de personas del equipo ni de proveedores",
+    "Máximo 60 palabras por entrada"
+  ],
+  "formato_salida": {
+    "tipo": "lista cronológica de más reciente a más antigua",
+    "cada_entrada": ["Fecha y hora", "Estado", "Texto público", "Próxima actualización"],
+    "extras": ["Aviso de contradicción detectada, si la hay", "Resumen de una línea para el titular de la página"]
+  },
+  "criterios_calidad": [
+    "Leyendo solo la primera entrada se entiende la situación actual",
+    "Ninguna entrada se contradice con otra ni con lo ya publicado",
+    "Todos los estados son de la lista permitida"
+  ]
+}

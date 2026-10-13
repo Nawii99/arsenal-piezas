@@ -1,0 +1,36 @@
+{
+  "tarea": "Planificar la migración de una base de datos de un servidor a otro con el mínimo tiempo de parada, usando una copia inicial más réplica o sincronización final, e incluyendo plan de marcha atrás",
+  "contexto": {
+    "origen": "[PROVEEDOR, MOTOR Y VERSIÓN ACTUALES]",
+    "destino": "[PROVEEDOR, MOTOR Y VERSIÓN NUEVOS]",
+    "tamano_gb": "[TAMAÑO DE LA BASE EN GB]",
+    "aplicaciones_conectadas": "[WEB, TIENDA, APP, INFORMES, INTEGRACIONES]",
+    "ventana_de_parada_aceptable": "[MINUTOS U HORAS Y EN QUÉ FRANJA]",
+    "quien_ejecuta": "[TÚ, TU DESARROLLADOR O EL SOPORTE DEL PROVEEDOR]",
+    "fecha_objetivo": "[DÍA PREVISTO]"
+ },
+  "instrucciones": [
+    "Divide el plan en tres bloques: preparación en días previos, día de la mudanza hora a hora y verificación posterior",
+    "En preparación incluye: copia de seguridad completa verificada, ensayo de la migración en pruebas, revisión de diferencias de versión y bajada del tiempo de caché de DNS si aplica",
+    "Explica la estrategia de parada mínima: carga inicial de datos, sincronización continua y corte breve para el cambio final de conexión",
+    "Lista todos los sitios donde hay que cambiar la cadena de conexión y quién los toca",
+    "Define el punto de no retorno y el plan de marcha atrás: en qué condiciones se vuelve al servidor viejo y cómo",
+    "Incluye las comprobaciones posteriores: número de filas por tabla, últimos registros, pruebas de compra o alta reales y revisión de rendimiento a las 24 horas",
+    "Indica cuánto tiempo mantener el servidor antiguo encendido antes de darlo de baja"
+  ],
+  "restricciones": [
+    "El servidor antiguo no se apaga ni se cancela hasta pasar las comprobaciones y el periodo de vigilancia",
+    "Nada de migrar sin haber ensayado antes en un entorno de pruebas",
+    "Cada tarea del día lleva hora estimada y responsable"
+  ],
+  "formato_salida": {
+    "tipo": "plan de proyecto con cronograma",
+    "secciones": ["Resumen y riesgos", "Checklist de días previos", "Cronograma del día hora a hora", "Cambio de conexiones", "Marcha atrás", "Verificación a 24 y 72 horas"]
+  },
+  "criterios_calidad": [
+    "La parada estimada cabe en la ventana indicada o se dice por qué no",
+    "Existe un plan de marcha atrás ejecutable en menos de 30 minutos",
+    "Ninguna tarea queda sin responsable"
+  ],
+  "tono": "de jefe de proyecto, ordenado y sin sorpresas"
+}

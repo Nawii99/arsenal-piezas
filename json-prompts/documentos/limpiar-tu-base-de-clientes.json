@@ -1,0 +1,54 @@
+{
+  "tarea": "Limpiar y normalizar una lista de clientes o contactos y devolver un fichero listo para usar mas un registro de lo que se ha tocado",
+  "contexto": {
+    "origen": "[DE DONDE SALE: EXCEL PROPIO, EXPORTACION DEL TPV, FORMULARIO WEB, DOS LISTAS MEZCLADAS]",
+    "para_que": "[EMAIL MASIVO, WHATSAPP, IMPORTAR A CRM, ENVIO POSTAL]",
+    "pais_principal": "España",
+    "campo_que_identifica_a_una_persona": "[EMAIL, TELEFONO O NIF]"
+  },
+  "entradas": {
+    "lista": "[PEGA LA LISTA EN CSV O TABLA, CON SU CABECERA TAL CUAL ESTA]",
+    "campos_obligatorios": "[QUE CAMPOS NO PUEDEN QUEDAR VACIOS]",
+    "consentimiento": "[TIENES PERMISO PARA ESCRIBIRLES: SI, NO, SOLO ALGUNOS]"
+  },
+  "pasos": [
+    "1. Detecta que representa cada columna aunque la cabecera este mal puesta y propon nombres de columna estandar",
+    "2. Nombres y apellidos: primera letra en mayuscula y el resto en minuscula, sin espacios de mas, respetando particulas como de la o del",
+    "3. Emails: todo a minusculas, quita espacios, marca los que no tienen arroba o dominio como INVALIDO",
+    "4. Telefonos: deja solo digitos, añade prefijo +34 a los españoles de nueve cifras, marca los que no tengan longitud correcta",
+    "5. Separa direccion en calle, numero, codigo postal, poblacion y provincia; el codigo postal español lleva cinco digitos, con cero delante si hace falta",
+    "6. Busca duplicados exactos y tambien parecidos: mismo email, mismo telefono, o mismo nombre con la misma poblacion",
+    "7. Para cada grupo de duplicados quedate con el registro mas completo y con la fecha mas reciente, y anota cual se fusiona con cual",
+    "8. Marca como NO CONTACTAR los que no tengan consentimiento o esten dados de baja",
+    "9. Deja los registros irrecuperables en una lista aparte, no los borres sin dejar rastro"
+  ],
+  "que_mirar": [
+    "Filas de prueba con nombres tipo asdf o correos de tu propio dominio",
+    "Empresas metidas en el campo de nombre de persona",
+    "Telefonos con el nueve inicial comido por el programa",
+    "Codigos postales que han perdido el cero delante",
+    "Fechas en formato americano mes/dia/año"
+  ],
+  "errores_tipicos": [
+    "Borrar duplicados sin mirar cual tiene mas informacion",
+    "Cambiar mayusculas de golpe y dejar apellidos ridiculos",
+    "Fusionar dos personas distintas de la misma familia que comparten telefono fijo"
+  ],
+  "restricciones": [
+    "No inventes datos que falten ni completes direcciones a ojo",
+    "No cambies el contenido de un campo si solo estas dudando: marcalo para revision",
+    "Toda fila eliminada tiene que aparecer en el registro de cambios"
+  ],
+  "formato_salida": {
+    "bloque_1": "CSV limpio con cabecera: id;nombre;apellidos;empresa;email;telefono;calle;numero;cp;poblacion;provincia;origen;consentimiento;estado",
+    "bloque_2": "CSV de fusiones: id_conservado;id_eliminado;motivo",
+    "bloque_3": "CSV de dudosos con el motivo de la duda",
+    "bloque_4": "Resumen: registros de entrada, de salida, duplicados fusionados, invalidos y campos completados"
+  },
+  "criterios_calidad": [
+    "La suma de salida mas fusionados mas descartados es igual a la entrada",
+    "Ningun email aparece dos veces en el fichero limpio",
+    "Todos los telefonos siguen el mismo formato",
+    "El fichero se importa en una herramienta de email sin errores de columna"
+  ]
+}

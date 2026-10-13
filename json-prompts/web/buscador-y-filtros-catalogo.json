@@ -1,0 +1,57 @@
+{
+  "tarea": "Añadir buscador y filtros instantáneos a una página de catálogo estática, sin servidor ni base de datos",
+  "contexto": {
+    "que_se_lista": "[PRODUCTOS, SERVICIOS, INMUEBLES, PLATOS, CURSOS]",
+    "cuantos_elementos": "[NÚMERO APROXIMADO]",
+    "donde_estan_los_datos": "[EN EL PROPIO HTML, EN UN ARCHIVO JSON, EN UNA HOJA DE CÁLCULO]",
+    "quien_actualiza": "[YO, SIN SABER PROGRAMAR]"
+  },
+  "entradas": {
+    "campos_de_cada_ficha": "[NOMBRE, CATEGORÍA, PRECIO, ZONA, ETIQUETAS, IMAGEN]",
+    "filtros_deseados": "[POR QUÉ CAMPOS QUIERES FILTRAR]",
+    "orden_por_defecto": "[NOVEDADES, PRECIO, ALFABÉTICO]",
+    "ejemplo_de_datos": "[PEGA 3 FICHAS DE EJEMPLO]"
+  },
+  "decisiones": [
+    "Buscar mientras se escribe frente a buscar al pulsar: con menos de 500 elementos, mientras se escribe",
+    "Filtros de una sola opción (categoría) frente a varios a la vez (etiquetas)",
+    "Si el filtro se refleja en la dirección para poder compartir el enlace filtrado"
+  ],
+  "pasos": [
+    "1. Separa los datos del diseño: todas las fichas en un array de objetos, y las tarjetas se dibujan a partir de ahí.",
+    "2. Normaliza el texto al buscar: minúsculas y sin tildes, para que camion encuentre camión.",
+    "3. Busca en varios campos a la vez y da más peso al nombre que a la descripción.",
+    "4. Aplica primero los filtros y después el texto buscado, y muestra el número de resultados.",
+    "5. Chips de filtros activos con una equis para quitarlos y un botón de limpiar todo.",
+    "6. Estado sin resultados útil: di qué se ha buscado y ofrece quitar filtros o ver todo.",
+    "7. Rendimiento: espera unos 200 milisegundos tras dejar de teclear antes de filtrar y, si hay muchas fichas, muestra por tandas con un botón de ver más.",
+    "8. Accesibilidad: el campo de búsqueda con etiqueta, los filtros manejables con teclado y aviso del número de resultados para lectores de pantalla.",
+    "9. Deja escrito en tres líneas cómo añadir una ficha nueva sin romper nada."
+  ],
+  "errores_tipicos": [
+    "Que la búsqueda distinga tildes o mayúsculas y no encuentre nada",
+    "Ocultar tarjetas con CSS pero seguir contándolas en los resultados",
+    "Filtros que se pisan entre sí y dejan la lista vacía sin explicar por qué",
+    "Cargar 400 imágenes a tamaño completo de golpe",
+    "Perder el filtro al volver atrás desde una ficha",
+    "Que el buscador solo mire el título y no la categoría"
+  ],
+  "restricciones": [
+    "JavaScript sencillo, sin librerías externas",
+    "Un solo archivo HTML autocontenido si es posible",
+    "Comentarios en español en las zonas donde el usuario tenga que tocar",
+    "Que funcione bien en móvil"
+  ],
+  "formato_salida": {
+    "bloque_1": "Estructura de datos propuesta con una ficha de ejemplo comentada",
+    "bloque_2": "Código HTML, CSS y JS completo y funcional",
+    "bloque_3": "Instrucciones para añadir, editar y borrar fichas",
+    "bloque_4": "Lista de pruebas: buscar con tilde, filtro sin resultados, móvil, teclado"
+  },
+  "criterios_calidad": [
+    "Funciona al abrir el archivo en el navegador sin instalar nada",
+    "Buscar con y sin tildes da el mismo resultado",
+    "El contador de resultados siempre coincide con lo que se ve",
+    "Añadir una ficha nueva es copiar, pegar y cambiar textos"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Crear el catálogo oficial de métricas de un negocio: definición en español, regla de cálculo y consulta SQL de referencia",
+  "contexto": {
+    "negocio": "[TIPO DE NEGOCIO: ECOMMERCE, SERVICIOS, SUSCRIPCIÓN, LOCAL]",
+    "motor": "[MySQL | PostgreSQL | SQL Server | BigQuery]",
+    "esquema": "[PEGA TABLAS Y COLUMNAS RELEVANTES]"
+  },
+  "entradas": {
+    "metricas_a_definir": "[LISTA: EJ. FACTURACIÓN NETA, TICKET MEDIO, CLIENTES ACTIVOS, TASA DE REPETICIÓN, MARGEN]",
+    "reglas_propias": "[IVA INCLUIDO O NO, DEVOLUCIONES, QUÉ CUENTA COMO CLIENTE ACTIVO, CIERRE DE MES]"
+  },
+  "para_cada_metrica_incluir": [
+    "Nombre único y sin sinónimos",
+    "Definición en una frase que entienda alguien de ventas",
+    "Fórmula en palabras: numerador, denominador y unidad",
+    "Qué se incluye y qué se excluye de forma explícita",
+    "Ventana temporal y momento de corte",
+    "Consulta SQL de referencia comentada",
+    "Errores típicos al calcularla",
+    "Rango razonable y cuándo hay que sospechar del dato"
+  ],
+  "restricciones": [
+    "Una métrica, una definición: prohibido dejar dos versiones válidas",
+    "Nada de métricas de vanidad sin decisión asociada",
+    "Si una métrica no se puede calcular con el esquema dado, decirlo y proponer la alternativa más cercana"
+  ],
+  "formato_salida": {
+    "tabla_resumen": "Tabla con columnas: métrica, definición corta, unidad, frecuencia de revisión, responsable",
+    "fichas": "Una ficha por métrica con todos los apartados anteriores",
+    "conflictos": "Lista de términos que la gente usa como sinónimos y cuál queda como oficial",
+    "orden_de_revision": "Qué métricas mirar cada semana y cuáles cada mes"
+  },
+  "criterios_calidad": [
+    "Dos personas distintas calculan la misma cifra siguiendo la ficha",
+    "Cada métrica lleva asociada una decisión que cambia si sube o baja"
+  ]
+}

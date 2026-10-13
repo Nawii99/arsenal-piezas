@@ -1,0 +1,54 @@
+{
+  "tarea": "Disenar la encuesta de fin de tratamiento de un centro de salud o bienestar y el ciclo de mejora asociado: preguntas, momento de envio, tratamiento de las respuestas y peticion de resena o recomendacion",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CENTRO Y SERVICIO PRINCIPAL]",
+    "cuando_termina": "[QUE SE CONSIDERA FIN DE TRATAMIENTO EN TU CASO]",
+    "altas_mes": "[CUANTAS PERSONAS TERMINAN AL MES]",
+    "canal_envio": "[WHATSAPP, EMAIL, QR EN RECEPCION, TABLET]",
+    "herramienta": "[FORMULARIO DE GOOGLE, TYPEFORM, ENCUESTA EN PAPEL]"
+  },
+  "entradas": {
+    "resenas_actuales": "[CUANTAS RESENAS TIENES Y QUE NOTA MEDIA]",
+    "dudas_recurrentes": "[QUEJAS O COMENTARIOS QUE YA TE SUENAN]"
+  },
+  "pasos": [
+    "1. Elige el momento exacto del envio: entre 24 y 72 horas tras la ultima sesion, cuando el recuerdo esta fresco y el trato ha terminado",
+    "2. Escribe como maximo cuatro preguntas: una de recomendacion de 0 a 10, una abierta sobre lo mejor, una abierta sobre lo mejorable y una sobre si el resultado se ajusto a lo que le explicaste al principio",
+    "3. Prohibe preguntas que induzcan la respuesta y las escalas de mas de once puntos",
+    "4. Escribe el mensaje de envio: agradecimiento, tiempo estimado de la encuesta, y por que le sirve a otros pacientes",
+    "5. Define el semaforo de respuestas: quien puntua alto entra en el circuito de resena, quien puntua medio recibe una pregunta de que faltaba, y quien puntua bajo recibe una llamada en 48 horas",
+    "6. Escribe la peticion de resena en Google solo para el tramo alto, con el enlace corto y una frase que no dicte lo que tiene que decir",
+    "7. Escribe el guion de la llamada de recuperacion para el tramo bajo: escuchar, no justificar, resumir, proponer solucion y agradecer",
+    "8. Define el ciclo de mejora mensual: agrupar los comentarios en temas, elegir uno solo, decidir el cambio, aplicarlo y comprobar el mes siguiente",
+    "9. Anade el tablon interno donde se comunica al equipo el cambio hecho gracias a las respuestas"
+  ],
+  "restricciones": [
+    "Nada de incentivos ni regalos a cambio de resenas",
+    "La encuesta no pregunta por datos de salud ni por diagnosticos",
+    "Nunca se filtran las opiniones malas ni se pide la resena solo tras comprobar que es buena de forma encubierta: la peticion de resena publica se hace a quien ya ha expresado satisfaccion, y siempre puede opinar libremente",
+    "La encuesta debe completarse en menos de dos minutos",
+    "Las respuestas se guardan sin cruzarlas con la ficha clinica"
+  ],
+  "errores_tipicos": [
+    "Enviar la encuesta semanas despues, cuando ya no se acuerdan",
+    "Poner doce preguntas y no recibir ninguna respuesta",
+    "Pedir resena a todo el mundo en el mismo mensaje que la encuesta",
+    "Recoger comentarios y no cambiar nunca nada",
+    "No avisar al equipo de lo que dicen los pacientes y que se enteren por Google"
+  ],
+  "formato_salida": {
+    "bloque_1": "Las cuatro preguntas con su formato de respuesta",
+    "bloque_2": "Mensajes de envio y de recordatorio unico",
+    "bloque_3": "Semaforo de respuestas con la accion y el plazo de cada tramo",
+    "bloque_4": "Mensaje de peticion de resena y guion de llamada de recuperacion",
+    "bloque_5": "Plantilla del ciclo de mejora mensual con un ejemplo relleno",
+    "idioma": "Espanol de Espana, tuteando, tono agradecido y breve"
+  },
+  "criterios_calidad": [
+    "La encuesta se responde en menos de dos minutos",
+    "Ninguna pregunta sugiere la respuesta esperada",
+    "Cada tramo del semaforo tiene una accion con plazo y responsable",
+    "No hay incentivos por resena en ningun mensaje",
+    "Al mes siguiente se puede senalar un cambio concreto nacido de las respuestas"
+  ]
+}

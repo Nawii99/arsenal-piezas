@@ -1,0 +1,46 @@
+{
+  "tarea": "Convertir la explicación en bruto de un experto interno en un procedimiento de trabajo que otra persona pueda seguir sin ayuda",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "proceso": "[NOMBRE DE LA TAREA, EJ: PREPARAR Y ENVIAR UN PEDIDO]",
+    "quien_lo_hace_hoy": "[NOMBRE Y PUESTO]",
+    "quien_lo_va_a_aprender": "[PERFIL DE QUIEN LO LEERÁ]",
+    "frecuencia": "[CADA CUÁNTO SE HACE]"
+  },
+  "entradas": {
+    "explicacion_en_bruto": "[PEGA AQUÍ LO QUE TE HA CONTADO LA PERSONA, TAL CUAL, AUNQUE ESTÉ DESORDENADO]",
+    "herramientas": "[PROGRAMAS, MÁQUINAS O DOCUMENTOS QUE INTERVIENEN]",
+    "errores_tipicos": "[FALLOS QUE HABÉIS VISTO ALGUNA VEZ]",
+    "resultado_correcto": "[CÓMO SE SABE QUE HA SALIDO BIEN]"
+  },
+  "procedimiento": [
+    "Ordena la explicación en pasos numerados en el orden real de ejecución, sin saltos",
+    "Cada paso empieza por un verbo en infinitivo y describe una sola acción comprobable",
+    "Marca los pasos críticos donde un fallo cuesta dinero o tiempo y explica qué mirar antes de seguir",
+    "Añade las decisiones tipo si pasa X haz Y como bifurcaciones claras, no como texto corrido",
+    "Detecta lo que el experto da por sabido y no ha explicado, y sácalo a una lista de preguntas pendientes",
+    "Cierra con una prueba de que el manual funciona: una tarea real que el aprendiz debe completar solo"
+  ],
+  "restricciones": [
+    "Frases cortas, sin jerga interna sin explicar y sin suponer experiencia previa",
+    "No inventes pasos ni datos que no aparezcan en la explicación en bruto",
+    "Máximo 20 pasos: si son más, parte el procedimiento en dos documentos"
+  ],
+  "formato_salida": {
+    "tipo": "documento markdown listo para imprimir",
+    "secciones": [
+      "Para qué sirve y cuándo se hace",
+      "Qué necesitas antes de empezar",
+      "Pasos numerados con avisos en los puntos críticos",
+      "Errores frecuentes y cómo se corrigen",
+      "Prueba final de que ya sabes hacerlo",
+      "Preguntas pendientes para el experto"
+    ]
+  },
+  "criterios_calidad": [
+    "Alguien que nunca ha hecho la tarea la completa siguiendo solo el documento",
+    "Cada paso crítico dice qué comprobar, no solo qué hacer",
+    "Cabe en dos folios o está partido en documentos de dos folios"
+  ],
+  "tono": "instructivo y llano, sin adornos"
+}

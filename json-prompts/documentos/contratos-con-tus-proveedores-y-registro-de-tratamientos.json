@@ -1,0 +1,25 @@
+{
+  "tarea": "Generar el registro de actividades de tratamiento de una tienda online y el modelo de contrato de encargado del tratamiento para sus proveedores",
+  "responsable": {"nombre": "[NOMBRE FISCAL]", "nif": "[NIF]", "direccion": "[DIRECCIÓN]", "contacto": "[EMAIL]"},
+  "proveedores": "[LISTA: NOMBRE, PARA QUÉ LO USAS, QUÉ DATOS RECIBE Y PAÍS O REGIÓN DONDE ALOJA LOS DATOS]",
+  "tratamientos_habituales": ["gestión de pedidos y facturación", "envíos y logística", "atención al cliente", "marketing por email", "publicidad y medición", "gestión de personal si tienes empleados"],
+  "pasos": [
+    "1. Montar una ficha por tratamiento con finalidad, categorías de interesados, categorías de datos, base jurídica, plazo de supresión, destinatarios y medidas de seguridad",
+    "2. Clasificar cada proveedor como encargado del tratamiento, responsable independiente o corresponsable",
+    "3. Señalar los proveedores fuera del Espacio Económico Europeo y qué garantía habría que comprobar",
+    "4. Redactar el contrato de encargado con las obligaciones del artículo 28 del RGPD",
+    "5. Elaborar la lista de documentos a pedir a cada proveedor y un email breve para solicitarlos"
+  ],
+  "contenido_contrato": ["objeto y duración", "instrucciones del responsable", "confidencialidad del personal", "medidas de seguridad", "subencargados y autorización", "asistencia en derechos y brechas", "devolución o supresión al finalizar", "auditorías y régimen de responsabilidad"],
+  "restricciones": [
+    "No afirmes que un proveedor concreto cumple: indica qué hay que verificar en su documentación",
+    "No inventes ubicaciones de servidores ni certificaciones",
+    "Marca como [PENDIENTE DE COMPROBAR] todo lo que dependa del proveedor"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "bloques": ["Tabla del registro de actividades", "Tabla de proveedores con rol y país", "Contrato de encargado en cláusulas numeradas", "Email tipo para pedir documentación", "Checklist de revisión anual"]
+  },
+  "criterios_calidad": ["Cada proveedor aportado aparece clasificado y con acción pendiente", "El registro sirve tal cual para enseñarlo en una inspección"],
+  "aviso": "Modelos orientativos; valida el contrato final con asesoría legal."
+}

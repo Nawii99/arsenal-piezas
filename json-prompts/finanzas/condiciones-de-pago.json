@@ -1,0 +1,54 @@
+{
+  "tarea": "Escribir mis condiciones de pago y de alcance para incluirlas en presupuestos y contratos, adaptadas a mi tipo de cliente",
+  "contexto": {
+    "pais": "España",
+    "actividad": "[QUÉ VENDES Y CÓMO LO ENTREGAS]",
+    "tipo_de_cliente": "[PARTICULARES / PYMES / EMPRESAS GRANDES / ADMINISTRACIÓN]",
+    "aviso": "Texto comercial de uso habitual; para contratos importantes lo revisa un abogado"
+  },
+  "entradas": {
+    "ticket_medio": "[IMPORTE HABITUAL DE UN ENCARGO]",
+    "duracion_del_trabajo": "[DÍAS O SEMANAS DESDE QUE EMPIEZAS HASTA QUE ENTREGAS]",
+    "costes_por_adelantado": "[MATERIAL O SUBCONTRATAS QUE PAGAS ANTES DE COBRAR]",
+    "problemas_vividos": "[QUÉ TE HA PASADO: IMPAGOS, CAMBIOS SIN FIN, ENTREGAS PARADAS POR EL CLIENTE, DEVOLUCIONES]",
+    "formas_de_cobro": "[TRANSFERENCIA, TARJETA, BIZUM, DOMICILIACIÓN: CUÁLES ACEPTAS Y CON QUÉ COMISIÓN]",
+    "plazo_actual": "[LO QUE PONES HOY EN TUS PRESUPUESTOS, SI PONES ALGO]"
+  },
+  "procedimiento": [
+    "1. Define el calendario de cobro según el importe y la duración: para trabajos cortos, anticipo alto; para largos, hitos con entregable asociado",
+    "2. Ata cada pago a un hito verificable, no a una fecha suelta, y deja claro que la entrega final se libera con el pago final",
+    "3. Cubre los costes que pagas por adelantado con el primer cobro: el anticipo nunca puede ser menor que el material que compras",
+    "4. Escribe el alcance en positivo y en negativo: qué incluye el precio, cuántas revisiones y qué se factura aparte",
+    "5. Define la cláusula de parón: qué pasa si el cliente desaparece o no entrega lo que le pides, y a partir de cuántos días se refactura o se cierra",
+    "6. Fija el plazo de pago de la factura y qué ocurre al vencer: recordatorio, suspensión del servicio y reclamación",
+    "7. Adapta el texto al tipo de cliente: con empresas grandes hay número de pedido, portal de proveedores y plazos administrativos que conviene preguntar antes",
+    "8. Añade la parte práctica: datos de facturación, IBAN, quién es el interlocutor de administración y a qué email va la factura",
+    "9. Entrega dos versiones: la larga para el contrato y la corta para el pie del presupuesto"
+  ],
+  "restricciones": [
+    "No cites artículos ni leyes concretas ni des el texto como validado jurídicamente",
+    "Nada de penalizaciones desproporcionadas ni de lenguaje agresivo",
+    "La versión corta no pasa de 120 palabras",
+    "Todo en lenguaje que entienda un cliente sin abogado"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Empezar a trabajar sin anticipo y sin nada firmado ni aceptado por escrito",
+    "No poner número de revisiones incluidas",
+    "Entregar los archivos finales antes de cobrar",
+    "Aceptar el plazo de pago del cliente sin haberlo preguntado antes de presupuestar"
+  ],
+  "formato_salida": {
+    "1_calendario": "Los hitos de cobro con porcentaje, momento y qué se entrega en cada uno",
+    "2_version_larga": "Condiciones completas por apartados con títulos",
+    "3_version_corta": "Párrafo para el pie del presupuesto",
+    "4_alcance": "Dos listas: incluye y no incluye",
+    "5_como_usarlo": "Dónde pegar cada versión y qué preguntar al cliente antes de presupuestar",
+    "estilo": "Claro y profesional, sin jerga legal, tuteando al usuario en las instrucciones"
+  },
+  "criterios_calidad": [
+    "El anticipo cubre los costes que se pagan antes de cobrar",
+    "Cada pago está atado a un hito comprobable",
+    "Un cliente lo lee y no le queda ninguna duda de cuándo paga qué",
+    "La versión corta cabe en un presupuesto sin desmontar el diseño"
+  ]
+}

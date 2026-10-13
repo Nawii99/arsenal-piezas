@@ -1,0 +1,36 @@
+{
+  "tarea": "Hacer un análisis de brechas (gap analysis) del Anexo A de ISO/IEC 27001:2022 y devolver un plan de cierre priorizado",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR]",
+    "plantilla": "[NÚMERO DE PERSONAS]",
+    "alcance_sgsi": "[QUÉ ENTRA: SERVICIOS, SEDES Y SISTEMAS]",
+    "situacion_actual": "[QUÉ TIENES YA: POLÍTICAS, COPIAS DE SEGURIDAD, ANTIVIRUS, PROVEEDOR DE INFORMÁTICA, NUBE QUE USAS]",
+    "fecha_objetivo": "[MES Y AÑO EN QUE QUIERES CERTIFICARTE]"
+  },
+  "instrucciones": [
+    "Recorre los 93 controles del Anexo A agrupados en los cuatro temas: Organizativos (5.1-5.37), Personas (6.1-6.8), Físicos (7.1-7.14) y Tecnológicos (8.1-8.34)",
+    "Para cada control asigna estado CUMPLE, PARCIAL, NO CUMPLE o NO APLICA y justifícalo en una línea con la información aportada",
+    "Si falta información para decidir, marca PENDIENTE DE EVIDENCIA e indica qué documento, captura o registro concreto hay que ver",
+    "No des un control por bueno solo porque exista una herramienta: exige política escrita, responsable con nombre y registro de que se ejecuta de verdad",
+    "Prioriza el cierre combinando riesgo real para el negocio y esfuerzo de implantación, nunca por orden de numeración",
+    "Recuerda que los controles del Anexo A no bastan: señala también los requisitos de las cláusulas 4 a 10 que falten (contexto, liderazgo, riesgos, auditoría interna, revisión por la dirección)"
+  ],
+  "restricciones": [
+    "No inventes evidencias ni supongas nada que no se haya dicho",
+    "Lenguaje llano; si usas un término técnico, explícalo entre paréntesis la primera vez",
+    "No prometas ni insinúes que la certificación se aprobará"
+  ],
+  "formato_salida": {
+    "1_resumen": "5 líneas con el grado de madurez estimado en porcentaje y los tres agujeros más graves",
+    "2_tabla_controles": "Columnas: Control | Nombre | Estado | Evidencia aportada | Qué falta | Prioridad 1-3 | Esfuerzo bajo/medio/alto | Responsable sugerido",
+    "3_quick_wins": "10 acciones que se cierran en menos de una semana",
+    "4_plan_90_dias": "Mes 1, mes 2 y mes 3 con entregables concretos y fecha límite"
+  },
+  "criterios_calidad": [
+    "Todo control PARCIAL o NO CUMPLE lleva una acción concreta asociada",
+    "Ninguna acción usa verbos vagos como mejorar o reforzar: dice qué documento se crea o qué se configura",
+    "Los NO APLICA llevan una justificación defendible ante un auditor externo"
+  ],
+  "tono": "Directo y práctico, como un consultor que ya ha pasado varias auditorías"
+}

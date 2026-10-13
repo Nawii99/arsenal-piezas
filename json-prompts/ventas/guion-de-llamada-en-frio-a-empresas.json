@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir un guion completo de llamada en frío B2B para conseguir una primera reunión",
+  "contexto": {
+    "quien_llama": "[TU NOMBRE Y TU EMPRESA]",
+    "a_quien_llamas": "[CARGO Y TIPO DE EMPRESA]",
+    "que_vendes": "[PRODUCTO O SERVICIO]",
+    "dolor_tipico": "[PROBLEMA QUE SUELE TENER ESE CARGO]",
+    "motivo_creible": "[POR QUÉ LLAMAS HOY A ESA EMPRESA EN CONCRETO]",
+    "peticion": "[REUNIÓN DE 20 MINUTOS U OTRA COSA]"
+  },
+  "pasos": [
+    "Escribe la frase para superar a recepción o secretaría sin mentir",
+    "Escribe la apertura de 20 segundos: nombre, motivo, permiso para seguir",
+    "Añade 4 preguntas de diagnóstico ordenadas de menos a más comprometida",
+    "Prepara respuestas de 2 frases para: 'no tengo tiempo', 'mándame un email', 'ya trabajamos con otro', 'no me interesa', 'no soy yo quien decide'",
+    "Cierra proponiendo dos huecos concretos de agenda y confirmando email"
+  ],
+  "restricciones": [
+    "La apertura no supera las 45 palabras",
+    "Nada de preguntas que se respondan con un sí automático ni de halagos falsos",
+    "No leer características del producto: solo problema, consecuencia y petición",
+    "Si la persona dice claramente que no, se cierra con elegancia y se pide permiso para volver en [MESES]"
+  ],
+  "formato_salida": {
+    "guion": "Bloques numerados con lo que dices tú y entre paréntesis lo que suele contestar",
+    "objeciones": "Tabla: Objeción | Qué respondes | Qué pides después",
+    "ficha_de_registro": "Lista de 6 datos a anotar tras la llamada",
+    "variante": "Versión reducida de 30 segundos para buzón de voz"
+  },
+  "criterios_calidad": [
+    "El guion se puede leer en voz alta sin sonar leído",
+    "Toda respuesta a una objeción acaba en una pregunta o en una propuesta de hueco",
+    "No aparece ni una palabra de jerga técnica sin explicar"
+  ],
+  "tono": "Seguro, educado y directo, de tú a tú"
+}

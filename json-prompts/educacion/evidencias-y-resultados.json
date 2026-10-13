@@ -1,0 +1,54 @@
+{
+  "tarea": "Diseñar el sistema de medición de resultados de [NOMBRE DE LA FORMACIÓN] y el proceso para convertirlos en testimonios y casos de éxito con permiso.",
+  "contexto": {
+    "promesa_de_la_formacion": "[QUÉ PROMETES QUE CONSIGUE EL ALUMNO]",
+    "duracion": "[SEMANAS]",
+    "numero_de_alumnos": "[NÚMERO]",
+    "canal_para_encuestas": "[EMAIL / FORMULARIO / WHATSAPP]",
+    "donde_publicaras": "[WEB, REDES, PROPUESTAS A EMPRESAS]"
+  },
+  "entradas": {
+    "objetivos_de_aprendizaje": "[LO QUE DEBE SABER HACER AL TERMINAR]",
+    "entregas_que_ya_pides": "[EJERCICIOS, PROYECTO FINAL]",
+    "comentarios_sueltos_que_ya_tienes": "[PEGA MENSAJES DE ALUMNOS]"
+  },
+  "procedimiento": [
+    "1. Elige tres tipos de evidencia y no más: lo que el alumno sabe hacer (entrega antes y después), lo que consigue en su negocio o trabajo, y lo que opina.",
+    "2. Define la medida de partida: una pregunta o una mini tarea al inicio que se repite igual al final. Sin punto de partida no hay resultado que enseñar.",
+    "3. Escribe la encuesta final con 7 preguntas máximo: una de recomendación de 0 a 10, dos abiertas de qué ha cambiado y qué faltó, y cuatro cerradas ligadas a los objetivos.",
+    "4. Añade la pregunta clave para testimonios: qué hacías antes con este problema y qué haces ahora, con un dato o un ejemplo.",
+    "5. Prepara la petición de permiso por escrito: qué frase se publica, dónde, con nombre y foto o solo iniciales, y cómo se retira el permiso.",
+    "6. Convierte cada respuesta útil en un caso de tres párrafos: situación de partida, qué hizo durante la formación, resultado concreto y verificable.",
+    "7. Marca lo que no se puede publicar: cifras que no puedes comprobar, promesas implícitas de ingresos, datos de terceros.",
+    "8. Define el seguimiento a 60 o 90 días con dos preguntas, que es cuando aparecen los resultados de verdad.",
+    "9. Monta el cuadro de mando: tres números que revisas cada edición y qué decisión tomas con cada uno."
+  ],
+  "restricciones": [
+    "Nunca publicar un testimonio sin permiso explícito y guardado.",
+    "No usar cifras de ingresos de alumnos como reclamo si no puedes probarlas.",
+    "Encuesta de menos de 3 minutos.",
+    "Español de España, tuteando, y respeta la protección de datos: solo lo necesario y con finalidad explicada."
+  ],
+  "errores_a_evitar": [
+    "Medir solo la satisfacción: la gente puede quedar encantada y no haber aprendido nada.",
+    "Pedir el testimonio el último día por sorpresa y en frío.",
+    "Preguntas abiertas de diez líneas que nadie contesta.",
+    "Guardar los permisos en un mensaje de WhatsApp que luego se pierde.",
+    "Enseñar solo los casos brillantes y no aprender de los que no funcionaron."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de evidencias: qué mides, cómo, cuándo, con qué herramienta.",
+    "bloque_2": "Medida de partida y su versión final, palabra por palabra.",
+    "bloque_3": "Encuesta final completa con las 7 preguntas y sus opciones.",
+    "bloque_4": "Texto de petición de permiso listo para enviar y modelo de registro de permisos.",
+    "bloque_5": "Plantilla de caso de éxito en tres párrafos con un ejemplo relleno con datos de muestra claramente marcados.",
+    "bloque_6": "Mensaje de seguimiento a 90 días.",
+    "bloque_7": "Cuadro de mando: tres números, umbral y decisión asociada."
+  },
+  "criterios_calidad": [
+    "Cada evidencia se puede enseñar a un tercero sin explicaciones tuyas.",
+    "Hay al menos una medida objetiva además de la opinión.",
+    "El permiso queda por escrito y con fecha.",
+    "Ningún caso publicado contiene una cifra que no puedas respaldar."
+  ]
+}

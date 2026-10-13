@@ -1,0 +1,43 @@
+{
+  "tarea": "Definir las reglas de configuracion, las exclusiones y los textos de un codigo de descuento para una tienda online, protegiendo el margen",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "plataforma": "[SHOPIFY, WOOCOMMERCE, PRESTASHOP U OTRA]",
+    "motivo_del_cupon": "[BIENVENIDA, RECUPERAR CARRITO, CLIENTE FIEL, COLABORACION O CAMPANA]",
+    "publico": "[A QUIEN SE LO VAS A DAR]"
+  },
+  "entradas": {
+    "tipo_de_descuento": "[PORCENTAJE, IMPORTE FIJO, ENVIO GRATIS O REGALO]",
+    "valor": "[EJ 10% O 5 EUR]",
+    "margen_medio_del_catalogo_pct": "[MARGEN MEDIO]",
+    "productos_sin_margen_para_descontar": "[LISTA DE EXCLUSIONES]",
+    "ticket_medio_eur": "[IMPORTE MEDIO POR PEDIDO]",
+    "vigencia": "[FECHAS O DIAS DESDE LA ENTREGA DEL CODIGO]"
+  },
+  "pasos": [
+    "Calcular el coste real del cupon por pedido y el margen que queda tras aplicarlo, contando envio y comisiones",
+    "Fijar el pedido minimo para que el cupon no deje margen negativo",
+    "Definir las exclusiones: productos rebajados, packs, marcas con margen bajo y tarjetas regalo",
+    "Establecer las reglas antiabuso: un uso por cliente, sin acumulacion con otras promociones, limite total de usos y caducidad",
+    "Decidir si el descuento se aplica antes o despues de los gastos de envio y como afecta al umbral de envio gratis",
+    "Redactar el nombre del codigo, el aviso visible en la web y las condiciones completas",
+    "Definir como medir si el cupon ha traido ventas nuevas o solo ha rebajado ventas que ya ibas a hacer"
+  ],
+  "restricciones": [
+    "Ningun cupon puede dejar el pedido por debajo del coste completo",
+    "Las condiciones deben ser claras, en espanol llano y visibles antes de comprar",
+    "No prometer descuentos que la plataforma no puede aplicar de forma automatica",
+    "Codigos cortos, en mayusculas y sin caracteres que se confundan"
+  ],
+  "formato_salida": {
+    "ficha_de_configuracion": "Tabla: parametro | valor recomendado | motivo",
+    "calculo": "Margen por pedido antes y despues del cupon en tres importes de cesta",
+    "textos": "Codigo, aviso corto para la web, texto para email y condiciones completas",
+    "medicion": "3 indicadores para saber si el cupon compensa"
+  },
+  "criterios_calidad": [
+    "La ficha se puede copiar campo a campo en el panel de la tienda",
+    "Las condiciones cubren acumulacion, caducidad, exclusiones y limite de usos",
+    "Se ve con numeros que queda margen en el peor escenario"
+  ]
+}

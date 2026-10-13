@@ -1,0 +1,34 @@
+{
+  "tarea": "Redactar el guion de audiodescripción de un vídeo, encajado en los silencios disponibles",
+  "contexto": {
+    "tipo_video": "[FORMACIÓN / DEMOSTRACIÓN DE PRODUCTO / INSTITUCIONAL / PROMOCIONAL]",
+    "duracion": "[DURACIÓN TOTAL]",
+    "publico": "[PERSONAS CIEGAS O CON BAJA VISIÓN, PERFIL Y NIVEL DE CONOCIMIENTO]"
+  },
+  "entradas": {
+    "descripcion_visual": "[QUÉ SE VE, TRAMO A TRAMO, CON TIEMPOS APROXIMADOS]",
+    "transcripcion_audio": "[LO QUE SE OYE: DIÁLOGOS, VOZ EN OFF, MÚSICA]",
+    "huecos_de_silencio": "[LISTA DE TRAMOS SIN VOZ, CON INICIO, FIN Y SEGUNDOS DISPONIBLES]",
+    "informacion_imprescindible": "[DATOS QUE SOLO APARECEN EN PANTALLA: CIFRAS, RÓTULOS, PRECIOS, URL]"
+  },
+  "reglas": [
+    "Describe solo lo necesario para seguir la historia o la explicación",
+    "Nunca pises el diálogo ni la voz en off: la audiodescripción va en los silencios",
+    "Calcula unas 3 palabras por segundo y ajusta el texto al hueco real",
+    "Usa presente de indicativo, frases cortas y voz activa",
+    "Describe lo que se ve, no lo que interpretas: nada de adjetivos de opinión",
+    "Lee en voz alta los rótulos, cifras y datos que solo aparecen escritos",
+    "Presenta a cada persona la primera vez que aparece y luego usa su nombre",
+    "Evita términos de cine como plano o zoom salvo que sean relevantes"
+  ],
+  "formato_salida": {
+    "tabla": "columnas: inicio, fin, segundos disponibles, texto de la audiodescripción, palabras y segundos estimados de lectura",
+    "guion_locucion": "el mismo texto seguido, con indicaciones de ritmo para quien lo grabe",
+    "avisos": "tramos donde no cabe todo lo importante y propuesta de solución"
+  },
+  "criterios_calidad": [
+    "Cada intervención cabe en su hueco con un margen de al menos medio segundo",
+    "Sin la imagen se entiende qué pasa, quién actúa y qué datos se muestran",
+    "No se describe nada que ya se explique en el audio"
+  ]
+}

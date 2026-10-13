@@ -1,0 +1,39 @@
+{
+  "tarea": "Construir una prevision de tesoreria a 12 meses para presentar en el banco al solicitar financiacion",
+  "datos_del_negocio": {
+    "actividad": "[A QUE TE DEDICAS]",
+    "facturacion_ano_anterior_por_mes": "[LISTA DE 12 IMPORTES O LA MEDIA MENSUAL]",
+    "estacionalidad": "[MESES FUERTES Y MESES FLOJOS]",
+    "plazo_medio_de_cobro": "[DIAS]",
+    "plazo_medio_de_pago_a_proveedores": "[DIAS]",
+    "saldo_inicial_en_banco": "[EUROS]"
+  },
+  "gastos": {
+    "fijos_mensuales": "[ALQUILER, NOMINAS, SEGUROS, CUOTAS, SUMINISTROS CON IMPORTES]",
+    "variables": "[PORCENTAJE SOBRE VENTAS O IMPORTE POR UNIDAD]",
+    "pagos_puntuales": "[IMPUESTOS TRIMESTRALES, SEGUROS ANUALES, PAGAS EXTRA CON SU MES]"
+  },
+  "operacion_solicitada": {
+    "importe": "[EUROS]",
+    "plazo": "[MESES]",
+    "cuota_estimada": "[EUROS AL MES]",
+    "mes_de_entrada_del_dinero": "[MES]"
+  },
+  "reglas_de_calculo": [
+    "Trabajar con cobros y pagos reales por fecha, no con facturacion emitida",
+    "Incluir el IVA como entrada y salida y el pago trimestral en su mes",
+    "Incluir los pagos a Hacienda y Seguridad Social en el mes que tocan",
+    "Incluir la cuota del prestamo desde el mes siguiente a su entrada",
+    "Marcar en rojo cualquier mes con saldo final negativo"
+  ],
+  "formato_salida": "Tabla de 12 columnas (una por mes) con las filas: saldo inicial, cobros de clientes, otras entradas, entrada de financiacion, pagos a proveedores, nominas y seguridad social, gastos fijos, impuestos, cuota del prestamo, saldo final. Debajo, un resumen de tres puntos y una lista de los meses criticos",
+  "analisis_final": [
+    "Mes con menor saldo y de cuanto es",
+    "Colchon minimo recomendado y si se cumple",
+    "Que pasa si las ventas caen un 20 por ciento",
+    "Dos ajustes concretos para evitar los meses en negativo"
+  ],
+  "restricciones": ["No maquillar las cifras al alza", "Indicar los supuestos usados debajo de la tabla", "Si falta un dato, listarlo aparte como dato pendiente"],
+  "criterios_calidad": ["Las columnas cuadran: saldo final de un mes igual al inicial del siguiente", "Los supuestos estan escritos y son revisables", "Se ve con claridad si el negocio puede pagar la cuota"],
+  "tono": "Profesional y numerico, apto para leer por un analista de riesgos"
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Revisar críticamente una decisión de arquitectura antes de tomarla y dejarla documentada como registro de decisión",
+  "contexto": {
+    "decision_propuesta": "[QUÉ QUIERES HACER: separar en servicios, cambiar de base de datos, usar colas...]",
+    "motivo": "[POR QUÉ CREES QUE HACE FALTA]",
+    "sistema_actual": "[CÓMO FUNCIONA HOY, EN 5 LÍNEAS]",
+    "escala_esperada": "[USUARIOS, PEDIDOS O DATOS QUE ESPERÁIS EN 12 MESES]",
+    "equipo": "[CUÁNTAS PERSONAS Y CON QUÉ EXPERIENCIA]",
+    "presupuesto_infraestructura": "[EUROS AL MES DISPONIBLES]"
+  },
+  "entradas": {
+    "alternativas_consideradas": "[QUÉ OTRAS OPCIONES HAS MIRADO]",
+    "restricciones": "[LEGALES, DE CLIENTE, DE PROVEEDOR O DE PLAZO]"
+  },
+  "preguntas_obligatorias": [
+    "¿Qué problema real resuelve y cómo sabremos que lo ha resuelto?",
+    "¿Qué pasa si simplemente no lo hacemos y mejoramos lo actual?",
+    "¿Qué complejidad operativa añade: despliegue, monitorización, copias de seguridad, personas de guardia?",
+    "¿Cuánta deuda técnica crea esta decisión y cuándo se pagará?",
+    "¿Es reversible? ¿Cuánto costaría dar marcha atrás en 6 meses?",
+    "¿Encaja con el tamaño y la experiencia del equipo?"
+  ],
+  "restricciones": [
+    "Defiende siempre la opción más simple que cumple los requisitos",
+    "Señala cuándo la decisión es prematura para la escala indicada",
+    "Nada de recomendar tecnología por estar de moda"
+  ],
+  "formato_salida": {
+    "tipo": "registro de decisión (ADR) en markdown",
+    "secciones": ["Contexto", "Opciones evaluadas con pros, contras y coste", "Riesgos y qué haría fallar la decisión", "Deuda que genera y cuándo revisarla", "Decisión recomendada", "Cómo mediremos si acertamos", "Fecha de revisión"]
+  },
+  "criterios_calidad": [
+    "Cada opción incluye su coste operativo, no solo el técnico",
+    "Queda escrito qué evidencia haría cambiar de opinión",
+    "La recomendación es una sola y está justificada en 3 frases"
+  ]
+}

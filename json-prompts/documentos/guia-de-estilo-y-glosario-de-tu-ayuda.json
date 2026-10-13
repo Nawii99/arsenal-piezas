@@ -1,0 +1,37 @@
+{
+  "tarea": "Crear la guía de estilo y el glosario de la base de conocimiento de un negocio, para que todo el equipo escriba igual",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD]",
+    "personas_que_escriben": "[CUÁNTAS Y CON QUÉ PERFIL]",
+    "tono_deseado": "[CERCANO / NEUTRO / FORMAL]",
+    "tratamiento": "[TÚ / USTED]"
+  },
+  "entradas": {
+    "ejemplos_reales": "[PEGA 5 O 10 RESPUESTAS QUE YA ENVÍAS, BUENAS Y MALAS]",
+    "nombres_de_producto": "[CÓMO SE LLAMAN OFICIALMENTE TUS PRODUCTOS Y PLANES]",
+    "jerga_interna": "[PALABRAS QUE USÁIS DENTRO Y EL CLIENTE NO ENTIENDE]"
+  },
+  "procedimiento": [
+    "Sacar de los ejemplos reales lo que ya funciona y lo que chirría, con cita textual",
+    "Definir 10 reglas de escritura concretas y comprobables, cada una con un antes y un después real",
+    "Fijar estructura obligatoria de una respuesta: respuesta directa, detalle, siguiente paso",
+    "Construir el glosario: término correcto, términos prohibidos, definición en una línea para el cliente",
+    "Definir cómo se escriben fechas, precios, plazos, horarios y números de pedido",
+    "Añadir una lista negra de frases vacías con su alternativa útil"
+  ],
+  "restricciones": [
+    "Reglas verificables: nada de sé cercano o escribe bonito",
+    "Máximo una página y media, tiene que caber en la cabeza",
+    "Ejemplos siempre del negocio real, no genéricos"
+  ],
+  "formato_salida": {
+    "tipo": "guía markdown",
+    "secciones": ["Cómo suena nuestra ayuda en 5 líneas", "10 reglas con antes y después", "Estructura de una respuesta", "Glosario", "Frases prohibidas y su alternativa", "Formatos de fechas, precios y datos"],
+    "extras": ["Lista de comprobación de 7 puntos para revisar cualquier respuesta antes de publicarla"]
+  },
+  "criterios_calidad": [
+    "Dos personas distintas aplicando la guía escriben respuestas casi idénticas",
+    "Cada regla se puede comprobar leyendo un texto",
+    "El glosario elimina la jerga interna declarada"
+  ]
+}

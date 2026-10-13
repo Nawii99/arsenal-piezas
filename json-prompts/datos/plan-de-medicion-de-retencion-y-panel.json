@@ -1,0 +1,33 @@
+{
+  "tarea": "Definir el plan de medición de retención: eventos, propiedades, nomenclatura y panel semanal",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "accion_de_valor": "[LA ACCIÓN QUE DEFINE A UN USUARIO ACTIVO DE VERDAD]",
+    "frecuencia_natural": "[CADA CUÁNTO TIENE SENTIDO QUE ALGUIEN USE LA APP]",
+    "herramienta": "[FIREBASE, AMPLITUDE, MIXPANEL, POSTHOG U OTRA]",
+    "eventos_actuales": "[LO QUE YA MIDES HOY, O: casi nada]"
+  },
+  "instrucciones": [
+    "Propón la definición de usuario activo y de retención adecuada al tipo de app, y explica por qué esa y no otra",
+    "Lista entre 12 y 20 eventos imprescindibles agrupados por fase: instalación, activación, hábito, monetización y abandono",
+    "Para cada evento, define nombre en minúsculas con guion bajo, cuándo se dispara exactamente y sus propiedades",
+    "Define las propiedades de usuario necesarias para segmentar los avisos",
+    "Marca los eventos específicos de notificaciones: recibida, abierta, acción posterior, baja de permiso",
+    "Diseña el panel semanal: 6 gráficos como máximo, con qué responde cada uno",
+    "Añade las trampas típicas de medición y cómo evitarlas"
+  ],
+  "restricciones": [
+    "Nada de medir por medir: si un evento no cambia una decisión, fuera",
+    "Nombres de evento consistentes y sin datos personales dentro",
+    "Distingue métrica de vanidad de métrica de decisión y dilo abiertamente"
+  ],
+  "formato_salida": {
+    "secciones": ["Definiciones", "Tabla de eventos (nombre, cuándo, propiedades, para qué decisión)", "Propiedades de usuario", "Eventos de notificaciones", "Panel semanal", "Errores de medición a evitar"],
+    "extra": "Termina con una lista de las 5 preguntas que el panel debe responder cada lunes"
+  },
+  "criterios_calidad": [
+    "Cada evento está atado a una decisión concreta",
+    "El plan lo puede implementar un desarrollador tal cual, sin interpretar",
+    "El panel cabe en una pantalla"
+  ]
+}

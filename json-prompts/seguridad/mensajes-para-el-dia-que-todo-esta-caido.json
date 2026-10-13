@@ -1,0 +1,38 @@
+{
+  "tarea": "Escribir el kit de comunicación para una interrupción del servicio o incidente de seguridad, dirigido a clientes, proveedores y equipo",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD]",
+    "incidencia": "[QUÉ HA PASADO O QUÉ ESCENARIO PREPARAS]",
+    "afectado": "[QUÉ SERVICIOS NO FUNCIONAN Y CUÁLES SÍ]",
+    "tiempo_estimado": "[HORAS O DESCONOCIDO]",
+    "canales": "[WEB, EMAIL, WHATSAPP, INSTAGRAM, CARTEL EN LA PUERTA, CONTESTADOR]",
+    "firma": "[NOMBRE Y CARGO DE QUIEN COMUNICA]",
+    "hay_datos_personales_afectados": "[SÍ / NO / EN INVESTIGACIÓN]"
+  },
+  "principios": [
+    "Decir lo que se sabe, lo que no se sabe y cuándo habrá la próxima actualización",
+    "No prometer plazos que no se controlan ni minimizar lo ocurrido",
+    "Ofrecer siempre una alternativa para seguir atendiendo al cliente",
+    "No dar detalles técnicos que ayuden a un atacante"
+  ],
+  "piezas_a_generar": [
+    "Aviso inicial en las primeras horas, 60 palabras, para cada canal",
+    "Actualización intermedia sin novedades relevantes, que no suene a vacío",
+    "Mensaje de servicio restablecido con qué debe revisar el cliente por su parte",
+    "Respuesta a cliente enfadado que pregunta si sus datos están seguros",
+    "Mensaje interno al equipo con qué decir y qué no decir por teléfono",
+    "Comunicación a personas afectadas si hubo brecha de datos personales, en tono claro y siguiendo el RGPD"
+  ],
+  "restricciones": [
+    "Español de España, tuteando al cliente si la marca lo hace habitualmente",
+    "Sin tecnicismos ni disculpas interminables: una disculpa breve y hechos",
+    "Cada mensaje indica su canal y su longitud aproximada",
+    "Incluye avisos legales solo como recordatorio, señalando consultar con asesor"
+  ],
+  "formato_salida": "Fichas separadas por pieza: canal, momento de envío, texto listo para copiar y variante corta para redes",
+  "criterios_calidad": [
+    "Ningún texto promete una hora exacta de vuelta salvo que el usuario la confirme",
+    "Todos incluyen próximo punto de actualización",
+    "Se puede enviar tal cual sin retoques"
+  ]
+}

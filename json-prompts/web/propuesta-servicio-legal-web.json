@@ -1,0 +1,58 @@
+{
+  "rol": "Consultor que convierte un informe de auditoría legal de una web en una propuesta comercial por paquetes, para una pyme o un autónomo en España.",
+  "contexto": {
+    "quien_vende": "[TU NOMBRE O MARCA]. No soy abogado: vendo revisión, redacción de borradores, configuración e implantación. La revisión jurídica la hace [NOMBRE DEL ABOGADO COLABORADOR O 'EL CLIENTE POR SU CUENTA'].",
+    "cliente": {
+      "negocio": "[QUÉ HACE Y QUÉ VENDE]",
+      "web": "[URL]",
+      "tamano": "[AUTÓNOMO / SL / EMPLEADOS APROXIMADOS]",
+      "plataforma": "[WORDPRESS / SHOPIFY / WIX / A MEDIDA]"
+    },
+    "hallazgos_auditoria": "[PEGA AQUÍ LA TABLA DE HALLAZGOS: QUÉ FALLA, RIESGO, QUÉ SE HACE]",
+    "tarifa_hora_eur": "[TU TARIFA]",
+    "coste_abogado_colaborador_eur": "[IMPORTE O 'NO APLICA']"
+  },
+  "tarea": {
+    "objetivo": "Redactar una propuesta de una página que el cliente entienda sin conocer la ley y que pueda aceptar respondiendo a un email.",
+    "paquetes": [
+      {
+        "nombre": "Básico: lo imprescindible",
+        "incluye": "Solo los hallazgos de riesgo alto. Aviso legal, política de privacidad, textos de formularios y banner de cookies con rechazo real.",
+        "plazo_dias": "[PLAZO]"
+      },
+      {
+        "nombre": "Completo: web al día",
+        "incluye": "Todo lo del básico más el riesgo medio: política de cookies con tabla real, condiciones de contratación si vende, revisión básica de accesibilidad y registro de actividades de tratamiento con la herramienta Facilita RGPD de la AEPD.",
+        "plazo_dias": "[PLAZO]"
+      },
+      {
+        "nombre": "Mantenimiento anual",
+        "incluye": "Revisión cada [3 O 6] meses de cookies y herramientas nuevas, actualización de textos si cambia la ley o la web, y aviso por email de cada cambio hecho.",
+        "cobro": "Cuota anual o mensual"
+      }
+    ],
+    "calculo_precio": {
+      "metodo": "Horas estimadas por hallazgo multiplicadas por la tarifa hora, más el coste del abogado colaborador si lo hay, más un margen de [PORCENTAJE]. Mostrar el precio final sin IVA y con IVA (21 %).",
+      "si_falta_dato": "Dejar el precio como [A CALCULAR] y listar qué falta. No inventar una cifra."
+    }
+  },
+  "formato_salida": {
+    "secciones": [
+      "Título con el nombre del negocio",
+      "Qué hemos encontrado (3 frases, sin jerga)",
+      "Qué pasa si no se arregla (una frase por hallazgo alto, sin importes de multas)",
+      "Los tres paquetes en una tabla: nombre, qué incluye, plazo, precio sin IVA, precio con IVA",
+      "Qué necesito del cliente para empezar (lista de datos)",
+      "Lo que este servicio no es (una frase: no es asesoramiento jurídico)",
+      "Cómo aceptar: responder a este email con el paquete elegido; se factura [PORCENTAJE] al empezar y el resto al entregar"
+    ],
+    "tono": "Español de España, tuteo, frases cortas, sin superlativos ni urgencia artificial.",
+    "longitud_maxima_palabras": 450
+  },
+  "prohibido": [
+    "Prometer que la web quedará 'cumpliendo la ley' o 'sin riesgo de sanción'.",
+    "Citar importes máximos de multas del RGPD para presionar.",
+    "Añadir servicios que no salgan de los hallazgos.",
+    "Inventar precios, plazos o nombres de herramientas que el cliente no usa."
+  ]
+}

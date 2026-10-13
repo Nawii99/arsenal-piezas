@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar una secuencia de seguimiento de 7 contactos para un presupuesto enviado y no contestado",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_vendes": "[QUÉ VENDES Y PRECIO MEDIO]",
+    "cliente": "[TIPO DE CLIENTE Y CARGO DE QUIEN DECIDE]",
+    "canales_disponibles": "[EMAIL, WHATSAPP, TELÉFONO, LINKEDIN]",
+    "ciclo_habitual": "[DÍAS QUE SUELE TARDAR EN DECIDIRSE]"
+  },
+  "entradas": {
+    "presupuesto_enviado": "[QUÉ OFRECISTE Y A QUÉ PRECIO]",
+    "ultima_conversacion": "[QUÉ SE HABLÓ Y QUÉ QUEDÓ PENDIENTE]",
+    "fecha_envio": "[FECHA]"
+  },
+  "instrucciones": [
+    "Reparte los 7 contactos en 21 días: días 2, 4, 7, 11, 15, 21 y cierre final",
+    "Cada contacto aporta algo nuevo (un caso parecido, un dato, una duda resuelta, una fecha real): prohibido el '¿alguna novedad?'",
+    "Alterna canales y no repitas el mismo dos veces seguidas",
+    "Máximo 90 palabras por mensaje escrito y una sola pregunta al final, cerrada y fácil de contestar",
+    "Para los contactos telefónicos, escribe qué decir en 20 segundos y qué dejar en el buzón",
+    "El contacto 7 es un cierre educado que da permiso explícito a decir que no"
+  ],
+  "restricciones": [
+    "Sin urgencias falsas, descuentos inventados ni frases de manual como 'te escribo para hacer seguimiento'",
+    "Tuteo, español de España, sin tecnicismos",
+    "No ofrecer rebaja de precio antes del contacto 5"
+  ],
+  "formato_salida": {
+    "primero": "Tabla con columnas: nº, día, canal, objetivo del contacto, asunto o primera línea",
+    "despues": "El texto completo y listo para copiar de los 7 mensajes, numerados"
+  },
+  "criterios_calidad": [
+    "Cada mensaje se entiende sin haber leído los anteriores",
+    "Ningún mensaje pide una respuesta sin dar antes algo de valor",
+    "El tono no suena ni a pesado ni a súplica"
+  ]
+}

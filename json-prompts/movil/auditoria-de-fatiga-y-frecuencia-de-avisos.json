@@ -1,0 +1,34 @@
+{
+  "tarea": "Auditar todos los envíos activos y proponer un plan de higiene de frecuencia",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "equipos_que_envian": "[QUIÉN PUEDE MANDAR MENSAJES: marketing, producto, soporte...]",
+    "sintomas": "[SUBIDA DE BAJAS, DESINSTALACIONES, QUEJAS EN RESEÑAS...]"
+  },
+  "entradas": {
+    "inventario_envios": "[PEGA LA LISTA: nombre, canal, disparador, frecuencia, audiencia, apertura]",
+    "datos_disponibles": "[% DE BAJA DE PUSH, DESINSTALACIONES POR SEMANA, RESEÑAS NEGATIVAS]"
+  },
+  "instrucciones": [
+    "Clasifica cada envío en imprescindible, útil o prescindible, y justifica en una línea",
+    "Calcula cuántos mensajes recibe en el peor caso un usuario muy activo y uno inactivo en una semana",
+    "Detecta solapamientos: mensajes que dicen lo mismo o caen el mismo día",
+    "Propón fusiones y bajas concretas, indicando qué se deja de enviar y qué se pierde con ello",
+    "Define topes: máximo diario, máximo semanal, tiempo mínimo entre mensajes y horas de silencio",
+    "Separa transaccional de promocional y aplica los topes solo al promocional",
+    "Propón un centro de preferencias con 3 o 4 categorías para que el usuario elija en vez de darse de baja del todo"
+  ],
+  "restricciones": [
+    "No recortes avisos transaccionales ni de seguridad",
+    "Toda recomendación debe decir qué se gana y qué se arriesga",
+    "Si faltan datos para juzgar un envío, márcalo como pendiente de medir en vez de opinar"
+  ],
+  "formato_salida": {
+    "secciones": ["Semáforo por envío (tabla)", "Peor caso semanal por tipo de usuario", "Solapamientos detectados", "Recortes y fusiones propuestos", "Reglas de tope y horas de silencio", "Centro de preferencias propuesto", "Qué vigilar las 4 semanas siguientes"]
+  },
+  "criterios_calidad": [
+    "El plan reduce el número total de impactos sin tocar lo transaccional",
+    "Cada recorte lleva su justificación con datos o con el hueco de datos señalado",
+    "Las reglas de tope son números concretos, no principios generales"
+  ]
+}

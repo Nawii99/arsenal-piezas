@@ -1,0 +1,37 @@
+{
+  "tarea": "Calcular el umbral de envío gratis óptimo para mi tienda y preparar los mensajes de la web que empujan al cliente a alcanzarlo",
+  "datos": {
+    "ticket_medio": "[EUROS]",
+    "distribucion_pedidos": "[% DE PEDIDOS POR TRAMO: MENOS DE 20, 20-40, 40-60, 60-100, MÁS DE 100]",
+    "coste_medio_envio": "[EUROS QUE TE CUESTA A TI, CON EMBALAJE]",
+    "margen_bruto_pct": "[MARGEN BRUTO EN %]",
+    "precio_envio_actual": "[LO QUE COBRAS HOY]",
+    "umbral_actual": "[SI YA TIENES UNO]",
+    "competencia": "[UMBRALES QUE OFRECEN TUS COMPETIDORES]",
+    "productos_complemento": "[3 PRODUCTOS BARATOS Y CON BUEN MARGEN PARA SUBIR EL CARRITO]"
+  },
+  "analisis": [
+    "1. Calcula el margen en euros que deja un pedido en cada tramo y comprueba en cuáles el envío gratis todavía deja beneficio",
+    "2. Propón tres umbrales candidatos y estima para cada uno: porcentaje de pedidos que lo alcanzarían hoy, coste de envío asumido y efecto esperado sobre el ticket medio",
+    "3. Recomienda uno y explica el razonamiento en lenguaje llano",
+    "4. Comprueba que el umbral queda por encima del ticket medio pero alcanzable añadiendo un producto complemento",
+    "5. Indica en qué zonas no debe aplicarse el envío gratis y por qué"
+  ],
+  "entregables_de_marketing": [
+    "Mensaje de la barra superior de la web",
+    "Aviso dinámico del carrito del tipo te faltan X euros para el envío gratis",
+    "Bloque de sugerencia de productos complemento en el carrito",
+    "Frase para la ficha de producto y para la newsletter"
+  ],
+  "restricciones": [
+    "No prometer aumentos de ventas con cifras concretas: hablar de tendencia y de qué medir",
+    "El umbral final debe ser una cifra redonda y creíble",
+    "Marcar como supuesto cualquier dato que yo no haya aportado"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de los tres umbrales candidatos con sus números",
+    "bloque_2": "Recomendación y razonamiento en 5 líneas",
+    "bloque_3": "Textos de marketing listos para pegar",
+    "bloque_4": "Qué medir durante las 4 semanas siguientes para saber si funciona"
+  }
+}

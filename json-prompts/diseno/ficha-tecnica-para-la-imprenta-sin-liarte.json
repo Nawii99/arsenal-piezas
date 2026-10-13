@@ -1,0 +1,35 @@
+{
+  "tarea": "Preparar la ficha técnica de impresión de una pieza de cartelería y el email de petición de presupuesto",
+  "pieza": {
+    "tipo": "[CARTEL, FLYER, ROLL-UP, LONA, VINILO, PEGATINA...]",
+    "medidas": "[ANCHO x ALTO EN CM]",
+    "caras": "[UNA O DOS]",
+    "cantidad": "[UNIDADES]",
+    "uso": "[INTERIOR O EXTERIOR, CUÁNTO TIEMPO EXPUESTO]",
+    "presupuesto": "[LO QUE QUIERES GASTAR COMO MÁXIMO]",
+    "plazo": "[PARA CUÁNDO LO NECESITAS]"
+  },
+  "explica_en_llano": ["sangrado", "marcas de corte", "CMYK frente a RGB", "resolución en ppp", "gramaje del papel", "acabado mate, brillo o soft touch", "trazado de textos"],
+  "metodo": [
+    "Calcula el tamaño del documento con sangrado de 3 mm por lado y el margen de seguridad interior",
+    "Recomienda papel, gramaje y acabado según el uso y el presupuesto, con una opción barata y una buena",
+    "Indica la resolución mínima de las imágenes y cómo comprobarla",
+    "Avisa de los tintes que cambian al imprimir: fluorescentes, dorados y negros ricos",
+    "Lista los pasos de exportación a PDF listos para imprenta"
+  ],
+  "formato_salida": {
+    "ficha": "Tabla con cada especificación y su valor exacto",
+    "checklist_archivo": "Lista de comprobación de 8 puntos antes de subir el PDF",
+    "email": "Email breve de petición de presupuesto listo para enviar a dos o tres imprentas",
+    "preguntas_a_la_imprenta": "4 preguntas que conviene hacer antes de pagar"
+  },
+  "restricciones": [
+    "Sin jerga: cada término técnico se explica en la misma frase",
+    "No inventes precios concretos, habla de rangos y de qué encarece"
+  ],
+  "criterios_calidad": [
+    "Alguien sin conocimientos puede rellenar el pedido online con esta ficha",
+    "Queda claro qué pasa si no se respeta el sangrado o la resolución",
+    "El email cabe en pantalla y contiene todo lo que la imprenta necesita"
+  ]
+}

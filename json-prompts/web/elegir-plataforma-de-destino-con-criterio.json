@@ -1,0 +1,36 @@
+{
+  "tarea": "Comparar plataformas candidatas para rehacer la web y recomendar una con argumentos, riesgos y plan B",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "situacion_actual": "[PLATAFORMA ACTUAL Y QUÉ TE MOLESTA DE ELLA]",
+    "quien_mantiene": "[TÚ SIN CONOCIMIENTOS, UN EMPLEADO, UNA AGENCIA, UN FREELANCE]",
+    "presupuesto": "[PRESUPUESTO DE PUESTA EN MARCHA Y CUÁNTO PUEDES PAGAR AL MES]",
+    "plazo": "[EN CUÁNTAS SEMANAS QUIERES ESTAR PUBLICADO]"
+  },
+  "necesidades": {
+    "imprescindibles": "[EJ: TIENDA CON 300 PRODUCTOS, RESERVA DE CITAS, FACTURACIÓN, MULTIIDIOMA, BLOG]",
+    "deseables": "[LO QUE ESTARÍA BIEN PERO PUEDES VIVIR SIN ELLO]",
+    "integraciones": "[TPV, CRM, EMAIL MARKETING, ERP, PASARELA DE PAGO, FACTURACIÓN]"
+  },
+  "candidatas": "[LISTA LAS PLATAFORMAS QUE ESTÁS VALORANDO]",
+  "criterios_de_comparacion": [
+    "Coste real a 3 años: licencia, plantilla, plugins, mantenimiento y horas de alguien",
+    "Facilidad para que la actualices tú sin llamar a nadie",
+    "Si cubre los imprescindibles de serie o hace falta apaño",
+    "Velocidad y control de SEO: URLs, redirecciones, etiquetas y sitemap",
+    "Facilidad para sacar tus datos y contenidos si un día te vas",
+    "Quién te da soporte cuando algo se rompe un viernes por la tarde"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla comparativa con una fila por criterio y una columna por plataforma, con nota de 1 a 5 y frase corta",
+    "bloque_2": "Coste estimado a 3 años por plataforma, separando alta y gasto recurrente",
+    "bloque_3": "Recomendación en un párrafo, con los tres motivos principales",
+    "bloque_4": "Plan B: qué elegir si cambia el presupuesto o el plazo",
+    "bloque_5": "Las cinco preguntas que debes hacer a quien te la vaya a montar"
+  },
+  "restricciones": [
+    "No recomendar nada que incumpla un requisito marcado como imprescindible",
+    "No dar cifras de coste como si fueran presupuestos cerrados: indicar que son estimaciones y de qué dependen",
+    "Avisar siempre de la dificultad de salir de cada plataforma"
+  ]
+}

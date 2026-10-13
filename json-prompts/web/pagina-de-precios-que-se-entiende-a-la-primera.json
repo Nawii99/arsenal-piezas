@@ -1,0 +1,33 @@
+{
+  "tarea": "Diseñar el contenido y el texto de una página o sección de precios que facilite la elección y aumente el ticket medio",
+  "entradas": {
+    "planes": "[LISTA CADA PLAN O PACK CON SU PRECIO Y LO QUE INCLUYE]",
+    "plan_que_quiero_vender_mas": "[NOMBRE DEL PLAN]",
+    "modelo": "[PAGO ÚNICO / CUOTA MENSUAL / POR PROYECTO / POR HORAS]",
+    "iva": "[PRECIOS CON IVA O SIN IVA]",
+    "objeciones_de_precio": "[LO QUE TE DICEN CUANDO VEN EL PRECIO]",
+    "alternativas_del_cliente": "[COMPETENCIA O HACERLO ÉL MISMO]"
+  },
+  "reglas_de_presentacion": [
+    "Máximo 3 planes visibles y un cuarto a medida si hace falta",
+    "Nombra los planes por el tipo de cliente, no Básico, Pro y Premium",
+    "Destaca uno como recomendado y explica en una línea para quién es",
+    "Ordena las características por lo que le importa al cliente, no por lo que te cuesta a ti",
+    "Usa el mismo orden de filas en los tres planes para poder comparar de un vistazo",
+    "Ancla el precio contra el coste de no hacer nada o de la alternativa",
+    "Deja claro qué NO incluye para evitar discusiones después"
+  ],
+  "formato_salida": {
+    "tabla_comparativa": "Filas de características y columnas de planes, con sí, no o detalle",
+    "por_plan": "Nombre, para quién es, precio, 5 puntos incluidos, botón y una línea de cierre",
+    "bajo_la_tabla": "Texto de garantía o devolución, formas de pago y qué pasa tras contratar",
+    "faq_precio": "6 preguntas y respuestas: permanencia, extras, cambios de plan, facturación, descuentos y cancelación",
+    "nota_final": "Aviso al usuario si algún plan parece poco rentable según los costes que ha dado"
+  },
+  "restricciones": [
+    "No inventes precios ni descuentos que el usuario no haya indicado",
+    "Indica siempre si el precio es con IVA o sin IVA",
+    "Nada de urgencia falsa ni contadores que se reinician"
+  ],
+  "criterios_calidad": ["Alguien ajeno al negocio sabe en 30 segundos qué plan le corresponde y cuánto pagará"]
+}

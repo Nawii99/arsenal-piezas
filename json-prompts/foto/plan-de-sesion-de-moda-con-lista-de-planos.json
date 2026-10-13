@@ -1,0 +1,33 @@
+{
+  "tarea": "Planificar la sesion de fotos de la coleccion [NOMBRE DE LA COLECCION] y entregar la lista de planos hora a hora",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "looks": "[NUMERO DE LOOKS] compuestos por [PRENDAS Y COMPLEMENTOS]",
+    "tiempo_disponible": "[HORAS] el dia [FECHA]",
+    "localizacion": "[ESTUDIO / PISO / CALLE DE TU CIUDAD]",
+    "equipo": "[QUIEN VA: modelo, fotografo, estilista, tu]",
+    "canales_destino": "[FICHA DE PRODUCTO, INSTAGRAM, NEWSLETTER, ANUNCIOS]"
+  },
+  "metodo": [
+    "Calcular cuantas fotos utiles caben en el tiempo real, descontando cambios de look de 10 minutos",
+    "Ordenar los looks por luz disponible y por complejidad de peinado o maquillaje",
+    "Para cada look definir plano de catalogo, plano de detalle y plano libre de redes",
+    "Marcar los planos imprescindibles y los prescindibles si se va la luz o el tiempo"
+  ],
+  "formato_salida": {
+    "bloque_1": "tabla de planos con columnas: hora, look, plano, encuadre, pose, complemento en foco, canal, imprescindible si o no",
+    "bloque_2": "lista de material a llevar, incluida plancha de vapor, pinzas, rodillo quitapelusas y cambio de calzado",
+    "bloque_3": "guion de 5 indicaciones de pose faciles de dar a una modelo no profesional",
+    "bloque_4": "plan B si llueve o si la localizacion no esta disponible"
+  },
+  "restricciones": [
+    "No proponer mas planos de los que caben en el tiempo indicado",
+    "Cada plano debe decir para que canal sirve, sin fotos que no se van a usar",
+    "Nada de equipo caro que no esta en la lista de material disponible"
+  ],
+  "criterios_calidad": [
+    "Al terminar la sesion hay al menos una foto valida por look y por canal",
+    "El plan cabe en una hoja y se puede seguir sin explicaciones",
+    "Los tiempos incluyen cambios de ropa, descansos y desplazamientos"
+  ]
+}

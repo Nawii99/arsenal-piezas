@@ -1,0 +1,39 @@
+{
+  "tarea": "Escribe la politica de fallos y reintentos de mi flujo de agentes: que hacer en cada tipo de error y cuando avisar a una persona",
+  "contexto": {
+    "agentes": "[LISTA DE AGENTES Y QUE HACE CADA UNO]",
+    "herramientas_externas": "[EJ: EMAIL, HOJA DE CALCULO, API DE PAGOS]",
+    "espera_maxima": "[EJ: 60 SEGUNDOS POR PASO]",
+    "a_quien_se_avisa": "[PERSONA Y CANAL, EJ: WHATSAPP DE MARIA]"
+  },
+  "tipos_de_fallo": [
+    "El agente no responde o tarda mas de lo permitido",
+    "El agente devuelve un formato distinto al esperado",
+    "El agente se inventa datos que no estaban en la entrada",
+    "La herramienta externa da error o esta caida",
+    "Dos agentes se contradicen",
+    "El flujo entra en bucle repitiendo el mismo paso"
+  ],
+  "para_cada_fallo_define": [
+    "Como se detecta, con una senal concreta y observable",
+    "Cuantos reintentos y con que cambio en la peticion, nunca identica",
+    "Que se hace si los reintentos se agotan: camino alternativo o parada",
+    "Que se guarda en el registro para poder investigarlo despues",
+    "Si se avisa a la persona y con que mensaje exacto"
+  ],
+  "reglas_duras": [
+    "Nunca mas de 2 reintentos por paso",
+    "Un fallo que afecte a dinero o a datos de clientes para el flujo y avisa siempre",
+    "Al parar, se entrega lo hecho hasta el momento, no se descarta"
+  ],
+  "formato_salida": {
+    "tabla": ["fallo", "senal de deteccion", "reintentos", "plan B", "aviso a persona"],
+    "mensajes_de_aviso": "3 plantillas cortas listas para enviar por WhatsApp o email",
+    "registro": "lista de los campos minimos que hay que guardar en cada ejecucion"
+  },
+  "criterios_calidad": [
+    "Ningun fallo se queda sin respuesta definida",
+    "Las senales de deteccion son comprobables, no impresiones",
+    "Se entiende sin saber programar"
+  ]
+}

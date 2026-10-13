@@ -1,0 +1,39 @@
+{
+  "tarea": "Comparar dos versiones de un agente de IA sobre los mismos casos y recomendar si se publica la nueva",
+  "contexto": {
+    "que_hace_el_agente": "[QUE HACE TU AGENTE EN UNA FRASE]",
+    "que_he_cambiado": "[QUE HAS TOCADO: PROMPT, MODELO, INFORMACION, HERRAMIENTAS]",
+    "objetivo_del_cambio": "[QUE QUERIAS MEJORAR]"
+  },
+  "entradas": {
+    "casos": "[PEGA LA LISTA DE CASOS DE PRUEBA CON SU ID Y EL MENSAJE DEL CLIENTE]",
+    "respuestas_version_A": "[PEGA LAS RESPUESTAS DE LA VERSION ACTUAL, CON EL ID DE CADA CASO]",
+    "respuestas_version_B": "[PEGA LAS RESPUESTAS DE LA VERSION NUEVA, CON EL ID DE CADA CASO]"
+  },
+  "metodo": [
+    "Compara caso por caso sin saber cual es la version preferida por el autor del cambio",
+    "Clasifica cada caso como MEJORA, IGUAL, EMPEORA o ROTURA, entendiendo ROTURA como un caso que antes se resolvia bien y ahora falla",
+    "Explica cada MEJORA y cada ROTURA con una cita de las dos respuestas",
+    "Comprueba si el objetivo del cambio se ha cumplido de verdad o solo de forma aparente",
+    "Cuenta cuantos casos hay en cada categoria y calcula el saldo"
+  ],
+  "restricciones": [
+    "Una respuesta mas larga o mas amable no es automaticamente mejor",
+    "No inventes casos que no esten en la lista",
+    "Si las dos versiones fallan igual, marca IGUAL y dilo, no elijas ganador por elegir"
+  ],
+  "formato_salida": {
+    "tipo": "informe",
+    "secciones": [
+      "Resumen en 3 lineas y recomendacion: PUBLICAR, PUBLICAR CON ARREGLOS o NO PUBLICAR",
+      "Tabla por caso con ID, veredicto y motivo en una linea",
+      "Roturas detectadas, ordenadas por gravedad, con cita de ambas versiones",
+      "Que arreglar antes de publicar, en lista de tareas concretas"
+    ]
+  },
+  "criterios_calidad": [
+    "Toda ROTURA lleva las dos citas enfrentadas",
+    "La recomendacion final es coherente con el recuento",
+    "Se dice claramente si el objetivo del cambio se ha cumplido"
+  ]
+}

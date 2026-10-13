@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar un recurso gratuito de captación de contactos y escribir su página de suscripción y los correos de bienvenida",
+  "entradas": {
+    "negocio": "[QUÉ VENDES]",
+    "cliente_ideal": "[A QUIÉN Y EN QUÉ MOMENTO ESTÁ]",
+    "problema_urgente": "[EL PROBLEMA CONCRETO QUE LE QUITA EL SUEÑO]",
+    "producto_de_pago": "[LO QUE QUIERES VENDERLE DESPUÉS Y SU PRECIO]",
+    "canal_de_difusion": "[DÓNDE PONDRÁS EL ENLACE: BIO, ANUNCIOS, WEB, FIRMA...]",
+    "formato_preferido": "[PDF, PLANTILLA, CHECKLIST, MINI VÍDEO, CALCULADORA, RETO]"
+  },
+  "pasos": [
+    "Proponer 5 ideas de recurso gratuito que resuelvan un trozo pequeño y rápido del problema y que lleven de forma natural al producto de pago",
+    "Elegir una y justificar por qué gana: rapidez de creación, valor percibido y conexión con la venta",
+    "Definir su índice o contenido concreto",
+    "Escribir la página de captación completa",
+    "Escribir 3 correos de bienvenida: entrega, uso rápido del recurso y puente hacia la oferta"
+  ],
+  "estructura_pagina": ["titular con el resultado", "subtítulo con el cómo y el tiempo", "3 viñetas de lo que se lleva", "quién eres en 2 líneas", "formulario con texto del botón", "aviso de privacidad en lenguaje llano", "pregunta frecuente que quita el miedo al spam"],
+  "restricciones": [
+    "El recurso debe poder crearse en menos de 6 horas",
+    "Nada de 'guía definitiva' ni de 200 páginas: se busca resultado en 20 minutos",
+    "Cumplir RGPD: consentimiento claro, finalidad y enlace a política de privacidad",
+    "Máximo 400 palabras en la página de captación"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["5 ideas y la elegida", "Índice del recurso", "Página de captación lista para copiar", "3 correos de bienvenida con asuntos", "Dónde y cómo difundirlo la primera semana"]
+  },
+  "criterios_calidad": [
+    "El titular promete un resultado, no un documento",
+    "El recurso resuelve algo que ya intentó el cliente por su cuenta",
+    "El tercer correo lleva a la oferta sin sonar a cambio de tema"
+  ],
+  "tono": "útil y directo, cero relleno"
+}

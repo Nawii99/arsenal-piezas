@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñarme 4 esquemas de iluminación de retrato que pueda montar con el material y el espacio que tengo, explicados paso a paso",
+  "mi_material_de_luz": "[VENTANA GRANDE / FLEXO / FOCO LED / FLASH DE ZAPATA / PARAGUAS / SOFTBOX / NADA MÁS QUE LA VENTANA]",
+  "mi_espacio": {
+    "tamano": "[METROS APROXIMADOS DE LA SALA]",
+    "color_de_paredes": "[BLANCAS / OSCURAS / MADERA]",
+    "ventanas": "[CUÁNTAS Y HACIA DÓNDE DAN]",
+    "hora_de_la_sesion": "[MAÑANA / MEDIODÍA / TARDE / NOCHE]"
+  },
+  "estilo_buscado": "[LIMPIO Y CORPORATIVO / SUAVE Y NATURAL / DRAMÁTICO CON SOMBRAS / LUMINOSO PARA REDES]",
+  "tipo_de_persona": "[RETRATO DE UNA PERSONA / DOS / EQUIPO PEQUEÑO]",
+  "metodo": [
+    "Usar una sola luz principal como base y decidir después si hace falta relleno",
+    "Colocar la luz por altura y ángulo respecto a la cara, no por marcas de equipo",
+    "Aprovechar paredes claras, cartón pluma o una sábana como reflector y una cartulina negra como bandera",
+    "Separar a la persona del fondo para que no se pegue la sombra",
+    "Indicar dónde se ve el reflejo de la luz en los ojos como señal de que está bien colocada"
+  ],
+  "para_cada_esquema": [
+    "Nombre y para qué sirve",
+    "Croquis descrito en texto: dónde va la luz, la persona, el reflector y la cámara, con distancias en pasos o metros",
+    "Qué se ve en la cara y a quién favorece",
+    "Error típico al montarlo y cómo detectarlo",
+    "Variante de 30 segundos si el sitio es peor de lo previsto"
+  ],
+  "restricciones": [
+    "No proponer material que no he dicho que tengo",
+    "Nada de esquemas de tres o cuatro focos si solo tengo uno",
+    "Lenguaje llano: nada de nombres técnicos sin explicar en una frase"
+  ],
+  "formato_salida": "Cuatro fichas numeradas con los apartados anteriores y, al final, una lista de compras opcional de menos de 60 euros ordenada por lo que más mejora la foto",
+  "criterios_calidad": [
+    "Puedo montar cualquiera de los cuatro en menos de 10 minutos",
+    "Los cuatro dan resultados visiblemente distintos",
+    "Sé mirar la foto y saber si la luz está bien puesta"
+  ]
+}

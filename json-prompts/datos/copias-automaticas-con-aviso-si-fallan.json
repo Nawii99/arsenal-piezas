@@ -1,0 +1,36 @@
+{
+  "tarea": "Crear un sistema de copias automáticas de la base de datos: script programado, subida a un destino externo, borrado de copias caducadas y aviso cuando algo falla",
+  "contexto": {
+    "motor_y_version": "[MySQL, PostgreSQL, MongoDB... Y VERSIÓN]",
+    "servidor": "[SISTEMA OPERATIVO Y TIPO DE ACCESO: SSH, panel del hosting, Docker]",
+    "destino_externo": "[S3, Backblaze B2, Google Drive, otro servidor por SFTP]",
+    "hora_preferida": "[HORA DE MENOS ACTIVIDAD, p. ej. 04:00]",
+    "retencion": "[p. ej. 7 diarias, 4 semanales, 6 mensuales]",
+    "canal_de_avisos": "[EMAIL, TELEGRAM, SLACK O WHATSAPP]",
+    "nivel_tecnico": "[NINGUNO, ME DEFIENDO O TENGO A ALGUIEN TÉCNICO]"
+  },
+  "instrucciones": [
+    "Genera el script completo y comentado para el motor y el sistema indicados, con volcado, compresión, nombre con fecha y subida al destino",
+    "Incluye el borrado automático de copias que superen la retención indicada",
+    "Incluye una verificación después de cada copia: que el fichero existe, que pesa más que un mínimo razonable y que se abre sin error",
+    "Añade el aviso al canal indicado tanto si falla como un resumen semanal de que todo va bien, para detectar el silencio sospechoso",
+    "Explica cómo programarlo y cómo comprobar que se ejecutó, con la línea de programación exacta",
+    "Advierte de dónde NO guardar la contraseña de la base de datos y da la alternativa correcta",
+    "Termina con la prueba de aceptación: ejecutar a mano, provocar un fallo a propósito y comprobar que llega el aviso"
+  ],
+  "restricciones": [
+    "Ninguna contraseña escrita dentro del script: usa fichero de credenciales con permisos restringidos o variables de entorno",
+    "El script debe parar y avisar si el volcado devuelve error, nunca subir un fichero incompleto",
+    "Explica cada bloque del script en una línea antes del código"
+  ],
+  "formato_salida": {
+    "tipo": "guía con bloques de código",
+    "partes": ["Qué vas a montar en 5 líneas", "Requisitos previos", "Script comentado", "Programación horaria", "Configurar el aviso", "Prueba de aceptación"]
+  },
+  "criterios_calidad": [
+    "El script funciona copiado tal cual cambiando solo los valores entre corchetes",
+    "Un fallo nunca pasa desapercibido",
+    "La retención se aplica sola sin intervención"
+  ],
+  "tono": "práctico, primero funcionar y luego afinar"
+}

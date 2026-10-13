@@ -1,0 +1,43 @@
+{
+  "tarea": "Planificar un lanzamiento de 14 días con audiencia pequeña, basado en conversaciones y plazas limitadas, no en anuncios",
+  "entradas": {
+    "producto": "[QUÉ VAS A LANZAR, AUNQUE NO ESTÉ TERMINADO]",
+    "precio_previsto": "[PRECIO EN EUROS]",
+    "plazas": "[CUÁNTOS CLIENTES PUEDES ATENDER]",
+    "audiencia": "[SUSCRIPTORES, SEGUIDORES Y CONTACTOS DE WHATSAPP APROX]",
+    "fecha_inicio": "[DÍA EN QUE EMPIEZAS]",
+    "tiempo_diario": "[HORAS AL DÍA QUE PUEDES DEDICAR]",
+    "canal_favorito": "[EMAIL, WHATSAPP, INSTAGRAM, LINKEDIN...]"
+  },
+  "fases": [
+    "Días 1-3: encuesta corta a la audiencia para confirmar el problema y el precio, con las preguntas exactas",
+    "Días 4-7: contenido de calentamiento que enseña el problema y anuncia que preparas algo",
+    "Días 8-9: apertura de plazas con oferta de fundadores y condiciones claras",
+    "Días 10-13: conversaciones uno a uno con los interesados y respuesta a objeciones",
+    "Día 14: cierre de plazas y decisión de seguir o ajustar"
+  ],
+  "entregables": [
+    "Calendario día a día con la tarea del día y el tiempo estimado",
+    "Las 6 preguntas de la encuesta previa",
+    "5 publicaciones de calentamiento con su idea y su primera frase",
+    "3 mensajes directos: primer contacto, seguimiento y cierre amable",
+    "El mensaje de apertura de plazas",
+    "Criterio de decisión: cuántas ventas hacen que merezca la pena construirlo"
+  ],
+  "restricciones": [
+    "Nada de anuncios de pago ni de herramientas nuevas",
+    "Las tareas de cada día caben en el tiempo diario declarado",
+    "Los mensajes uno a uno no pueden sonar a plantilla ni a copiar y pegar",
+    "Escasez real: las plazas indicadas y ninguna más"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con tabla de calendario y bloques de texto copiables",
+    "columnas_calendario": ["Día", "Fase", "Tarea", "Canal", "Tiempo", "Señal de que va bien"]
+  },
+  "criterios_calidad": [
+    "Se puede ejecutar sin producto terminado el día 1",
+    "Hay un momento claro para abandonar la idea si no hay interés",
+    "Cada mensaje se puede enviar tal cual cambiando el nombre"
+  ],
+  "tono": "realista y sin épica, de quien empieza con pocos contactos"
+}

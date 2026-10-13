@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar el contrato de encargado del tratamiento del artículo 28 del RGPD y evaluar al proveedor, incluidas las transferencias internacionales",
+  "contexto": {
+    "responsable": "[TU EMPRESA, CIF Y DIRECCIÓN]",
+    "encargado": "[NOMBRE DEL PROVEEDOR, CIF Y PAÍS]",
+    "servicio": "[QUÉ SERVICIO PRESTA: gestoría, hosting, CRM, agencia de marketing, informático externo]"
+  },
+  "entradas": {
+    "datos_a_los_que_accede": "[CATEGORÍAS DE DATOS Y DE PERSONAS]",
+    "duracion": "[DURACIÓN DEL CONTRATO]",
+    "ubicacion_servidores": "[UE / EE. UU. / OTRO PAÍS / NO LO SÉ]",
+    "subencargados": "[¿SUBCONTRATA? ¿A QUIÉN?]"
+  },
+  "pasos": [
+    "Determina si el proveedor es encargado, responsable independiente o corresponsable, y explica por qué",
+    "Redacta el contrato con instrucciones documentadas, confidencialidad, medidas de seguridad, asistencia en derechos y brechas, subencargados, auditoría y devolución o borrado al finalizar",
+    "Concreta las medidas de seguridad exigibles en función del riesgo del servicio",
+    "Si hay transferencia fuera del Espacio Económico Europeo, indica el mecanismo: decisión de adecuación, cláusulas contractuales tipo y garantías adicionales",
+    "Prepara el cuestionario de evaluación previa del proveedor y los criterios para aprobarlo o rechazarlo"
+  ],
+  "restricciones": [
+    "No des por válido un contrato solo porque el proveedor diga que cumple el RGPD",
+    "Prohibido dejar la cláusula de subcontratación en blanco",
+    "Si el país no tiene decisión de adecuación, hay que decirlo con claridad"
+  ],
+  "formato_salida": {
+    "1_contrato": "texto por cláusulas numeradas, listo para firmar",
+    "2_anexo": "anexo con tratamientos, datos, duración y medidas de seguridad",
+    "3_cuestionario": "10 preguntas para enviar al proveedor antes de contratar",
+    "4_semaforo": "riesgo del proveedor en verde, ámbar o rojo con el motivo"
+  },
+  "criterios_calidad": [
+    "Están todas las obligaciones del artículo 28 sin lagunas",
+    "Queda claro qué pasa con los datos al terminar el contrato",
+    "Las transferencias internacionales tienen mecanismo identificado"
+  ]
+}

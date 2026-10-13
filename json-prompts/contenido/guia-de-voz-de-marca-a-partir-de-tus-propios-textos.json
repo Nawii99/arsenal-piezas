@@ -1,0 +1,44 @@
+{
+  "tarea": "Extraer la voz real de [NOMBRE DE TU EMPRESA] a partir de textos que ya existen y convertirla en una guía de estilo que pueda usar cualquiera que escriba en su nombre",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR]",
+    "que_vende": "[PRODUCTO O SERVICIO PRINCIPAL]",
+    "cliente_ideal": "[A QUIÉN VENDES: PERFIL Y PROBLEMA QUE TIENE]",
+    "mercado": "España, castellano peninsular"
+  },
+  "entradas": {
+    "textos_de_referencia": "[PEGA AQUÍ DE 3 A 10 TEXTOS TUYOS: POSTS, EMAILS, PÁGINA DE INICIO, RESPUESTAS A CLIENTES]",
+    "textos_que_te_gustan_de_otros": "[PEGA 1 O 2 EJEMPLOS Y DI QUÉ TE GUSTA DE ELLOS]",
+    "texto_que_no_te_representa": "[PEGA 1 EJEMPLO QUE SUENE MAL PARA TU MARCA]"
+  },
+  "proceso": [
+    "Separar lo que es voz (constante) de lo que es tono (cambia según la situación)",
+    "Medir patrones reales: longitud media de frase, tuteo o usted, tecnicismos, humor, emojis, exclamaciones, muletillas repetidas",
+    "Marcar contradicciones entre piezas y decidir cuál representa mejor a la marca",
+    "Definir 4 o 5 rasgos de voz, cada uno con su límite: hasta dónde sí y a partir de dónde no",
+    "Escribir ejemplos calibrados: la misma frase en versión correcta y versión incorrecta"
+  ],
+  "restricciones": [
+    "No inventar valores de marca que no aparezcan en los textos aportados",
+    "Prohibido usar adjetivos vacíos como cercano, innovador o profesional sin explicar cómo se nota eso en una frase concreta",
+    "Cada regla debe poder comprobarse leyendo un texto, sin opinar"
+  ],
+  "formato_salida": {
+    "tipo": "documento en markdown con tablas",
+    "secciones": [
+      "1. La voz en 3 frases",
+      "2. Tabla de rasgos: rasgo, qué significa, en qué se nota, límite",
+      "3. Reglas mecánicas: tuteo, longitud de frase, emojis, mayúsculas, signos, anglicismos",
+      "4. Palabras que sí usamos y palabras que no",
+      "5. Diez pares de ejemplos así sí / así no",
+      "6. Test de 5 preguntas para revisar cualquier texto antes de publicar"
+    ]
+  },
+  "criterios_calidad": [
+    "Una persona nueva podría escribir un email aceptable solo con esta guía",
+    "Todos los ejemplos salen de los textos aportados o son adaptaciones directas",
+    "Ninguna regla es ambigua: da números, palabras concretas o señales observables",
+    "Lo que falte se lista al final como dudas, nunca se rellena inventando"
+  ]
+}

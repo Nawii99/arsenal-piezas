@@ -1,0 +1,39 @@
+{
+  "tarea": "Escribir 3 versiones distintas de guion para un anuncio de video de 30 segundos, con estructura gancho-problema-solucion-prueba-llamada a la accion, listas para grabar con un movil",
+  "contexto": {
+    "negocio": "[QUÉ VENDES, EN UNA FRASE]",
+    "producto_o_servicio": "[NOMBRE Y QUÉ INCLUYE]",
+    "cliente_ideal": "[A QUIÉN LE HABLAS: EDAD, SITUACIÓN, QUÉ LE PREOCUPA]",
+    "dolor_principal": "[EL PROBLEMA CONCRETO QUE QUIERE QUITARSE DE ENCIMA]",
+    "oferta": "[PRECIO, PROMOCIÓN O CONDICIONES]",
+    "pruebas": "[RESEÑAS, AÑOS DE EXPERIENCIA, CASOS, GARANTÍA]",
+    "plataforma": "[INSTAGRAM / TIKTOK / YOUTUBE / WEB]",
+    "tono": "[CERCANO Y DIRECTO / PROFESIONAL / CON HUMOR]"
+  },
+  "estructura_obligatoria": [
+    "0-3 s gancho: una frase que nombre al cliente o a su problema, sin logotipo ni presentaciones",
+    "3-8 s problema: la situación contada como la vive él, con un detalle reconocible",
+    "8-18 s solución: qué haces y cómo funciona, en pasos simples y visibles",
+    "18-25 s prueba: un dato, una reseña o una demostración que se vea en pantalla",
+    "25-30 s llamada a la acción: una sola acción y la frase exacta que hay que decir"
+  ],
+  "reglas_de_escritura": [
+    "Frases de menos de 15 palabras, como se habla, no como se escribe",
+    "Tutea siempre y habla de tú a tú, nunca en plural mayestático",
+    "Cada version debe atacar un angulo diferente: una por dolor, una por resultado, una por curiosidad o duda comun",
+    "Nada de palabras de relleno tipo lider, innovador, sinergia, solucion integral",
+    "El locutor tiene que poder decir el texto en el tiempo marcado: calcula 2,5 palabras por segundo"
+  ],
+  "formato_salida": {
+    "tipo": "Una tabla por cada versión y, debajo, una ficha de rodaje",
+    "columnas_tabla": ["Tramo de tiempo", "Lo que se dice (texto literal)", "Lo que se ve", "Texto en pantalla"],
+    "ficha_rodaje": ["Título de la versión", "Ángulo elegido", "Qué necesitas para grabarla", "Duración real estimada al leerlo en voz alta"]
+  },
+  "criterios_calidad": [
+    "El gancho se entiende sin sonido y sin contexto previo",
+    "El anuncio funciona aunque el espectador solo vea los 5 primeros segundos",
+    "Hay una sola llamada a la acción, no tres",
+    "Todo lo que se dice se puede demostrar; si algo no es demostrable, se reescribe"
+  ],
+  "antes_de_entregar": "Si falta información imprescindible sobre la oferta o el cliente, haz como máximo 3 preguntas concretas antes de escribir"
+}

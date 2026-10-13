@@ -1,0 +1,52 @@
+{
+  "tarea": "Diseñar y revisar el sistema que recibe los avisos (webhooks) de mi pasarela de pago para que cada pago cobrado provoque exactamente una entrega, ni cero ni dos",
+  "contexto": {
+    "pasarela": "[STRIPE / PAYPAL / REDSYS / LEMON SQUEEZY / OTRA]",
+    "que_pasa_al_cobrar": "[DAR ACCESO A UN CURSO / ENVIAR UN ARCHIVO / CREAR EL PEDIDO / ACTIVAR SUSCRIPCIÓN]",
+    "donde_corre_mi_backend": "[VERCEL / RAILWAY / VPS / N8N / MAKE / NO LO SÉ]",
+    "volumen": "[PAGOS AL MES APROXIMADOS]"
+  },
+  "entradas": {
+    "eventos_que_me_importan": "[PAGO COMPLETADO, SUSCRIPCIÓN RENOVADA, PAGO FALLIDO, REEMBOLSO, CANCELACIÓN]",
+    "codigo_actual": "[PEGA AQUÍ TU ENDPOINT ACTUAL O ESCRIBE: NO TENGO NADA AÚN]",
+    "que_ha_fallado": "[SI YA TE HA PASADO ALGO: PAGOS SIN ENTREGA, ENTREGAS DUPLICADAS, NADA]"
+  },
+  "pasos": [
+    "1. Lista los eventos de esa pasarela que debo escuchar y cuáles debo ignorar explícitamente",
+    "2. Explica y programa la verificación de firma del webhook usando el cuerpo crudo de la petición, no el JSON ya parseado",
+    "3. Guarda cada aviso recibido en una tabla eventos_pago con el id del evento de la pasarela como clave única: si llega repetido, se descarta sin trabajo extra (idempotencia)",
+    "4. Responde 200 en menos de 2 segundos y haz el trabajo pesado después, en segundo plano o en un segundo paso",
+    "5. Trata cada evento como una máquina de estados del pedido: pendiente, pagado, entregado, reembolsado, y prohíbe saltos hacia atrás",
+    "6. Contempla el desorden: el aviso de renovación puede llegar antes que el de alta; usa la fecha del evento para no pisar un estado más nuevo",
+    "7. Define qué hacer con los fallos: reintentos de la pasarela, cuántos aguanta tu endpoint y qué eventos acaban en una cola de revisión manual",
+    "8. Añade un aviso a mi email o Telegram cuando un evento lleve más de 15 minutos sin procesarse",
+    "9. Escribe la comprobación diaria: pagos cobrados en la pasarela frente a pedidos entregados en mi base de datos, y que me avise si no cuadran",
+    "10. Dame el plan de pruebas con los eventos de prueba de la pasarela, incluido enviar el mismo evento dos veces"
+  ],
+  "restricciones": [
+    "No confíes nunca en el importe o el estado que venga en la redirección del navegador; solo en el webhook verificado o en una consulta a la API de la pasarela",
+    "No borres eventos recibidos: se guardan siempre, aunque se descarten",
+    "Nada de secretos escritos en el código: van en variables de entorno",
+    "Si mi montaje es sin código (Make, n8n), adapta los pasos a esa herramienta en vez de darme código"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "Qué falla o falta hoy, en lenguaje llano y ordenado por gravedad",
+    "2_tabla_eventos": "Tabla markdown: evento, qué hago con él, qué cambia en la base de datos",
+    "3_esquema_bd": "SQL de la tabla eventos_pago y de los campos de estado del pedido",
+    "4_codigo": "Endpoint completo comentado en [LENGUAJE] con firma, idempotencia y respuesta rápida",
+    "5_alertas_y_cuadre": "Consulta o script de conciliación diaria y texto del aviso",
+    "6_pruebas": "Lista numerada de pruebas y qué debe pasar en cada una"
+  },
+  "criterios_calidad": [
+    "Enviar el mismo evento tres veces produce una sola entrega",
+    "Un webhook con firma inválida se rechaza con 400 y queda registrado",
+    "Si la base de datos está caída, el evento no se da por procesado",
+    "El cuadre diario da cero diferencias con los datos de prueba"
+  ],
+  "errores_tipicos": [
+    "Hacer el trabajo pesado dentro del webhook y que la pasarela lo dé por caído y lo reintente",
+    "Verificar la firma sobre el cuerpo ya transformado y que nunca valide",
+    "Fiarse del parámetro de la URL de gracias para dar acceso",
+    "No manejar reembolsos y dejar acceso a quien ya recuperó su dinero"
+  ]
+}

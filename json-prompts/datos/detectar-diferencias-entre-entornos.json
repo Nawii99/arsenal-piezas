@@ -1,0 +1,35 @@
+{
+  "tarea": "Comparar el esquema de dos entornos, explicar la desviacion y generar las migraciones que faltan",
+  "contexto": {
+    "motor_bd": "[POSTGRESQL / MYSQL / SQL SERVER / MARIADB]",
+    "entorno_a": "[NOMBRE, EJEMPLO: PREPRODUCCION]",
+    "entorno_b": "[NOMBRE, EJEMPLO: PRODUCCION]",
+    "cual_manda": "[CUAL DE LOS DOS SE CONSIDERA CORRECTO]"
+  },
+  "entradas": {
+    "esquema_a": "[PEGA EL VOLCADO DE ESTRUCTURA O LA LISTA DE TABLAS, COLUMNAS, TIPOS E INDICES]",
+    "esquema_b": "[PEGA LO MISMO DEL OTRO ENTORNO]",
+    "migraciones_aplicadas": "[PEGA LA TABLA DE HISTORICO DE MIGRACIONES DE CADA ENTORNO SI LA TIENES]"
+  },
+  "instrucciones": [
+    "Lista las diferencias agrupadas en: solo en A, solo en B, y presentes en ambos pero distintas",
+    "Marca cuales se explican por una migracion pendiente y cuales parecen cambios hechos a mano",
+    "Ordena las diferencias por riesgo para el funcionamiento de la aplicacion",
+    "Genera las migraciones que igualan el entorno desviado al entorno que manda",
+    "Senala las diferencias que NO hay que igualar, como indices propios de produccion o datos de prueba",
+    "Propone dos medidas para que la desviacion no vuelva a ocurrir"
+  ],
+  "restricciones": [
+    "No propongas borrar nada en produccion sin renombrar antes a respaldo",
+    "Si un dato no aparece en los volcados, dilo en vez de suponerlo",
+    "Ignora diferencias irrelevantes como el orden de las columnas o el nombre de restricciones autogeneradas, pero mencionalo"
+  ],
+  "formato_salida": {
+    "tipo": "tabla + bloques de SQL",
+    "columnas_tabla": ["Objeto", "Diferencia", "Causa probable", "Riesgo", "Accion"]
+  },
+  "criterios_calidad": [
+    "Ninguna diferencia se queda sin clasificar",
+    "El SQL generado es ejecutable tal cual en el motor indicado"
+  ]
+}

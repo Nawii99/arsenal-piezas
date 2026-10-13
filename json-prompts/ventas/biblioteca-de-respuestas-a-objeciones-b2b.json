@@ -1,0 +1,33 @@
+{
+  "tarea": "Crear una biblioteca de respuestas a objeciones en venta a empresas",
+  "contexto": {
+    "que_vendes": "[PRODUCTO O SERVICIO]",
+    "precio_y_modelo": "[IMPORTE Y SI ES CUOTA, PROYECTO O LICENCIA]",
+    "competidores": "[QUIÉNES SON Y EN QUÉ SON MEJORES O PEORES]",
+    "objeciones_reales": "[LAS 5 FRASES QUE MÁS TE DICEN, TAL CUAL LAS DICEN]",
+    "pruebas_disponibles": "[CASOS, CIFRAS, GARANTÍAS, PILOTOS O REFERENCIAS QUE PUEDES ENSEÑAR]"
+  },
+  "pasos": [
+    "Clasifica cada objeción en real, excusa o falta de información",
+    "Para cada una escribe: pregunta de aclaración, respuesta de 3 frases, prueba que la sostiene y pregunta para reconducir",
+    "Añade las clásicas del B2B aunque no estén en la lista: es caro, ya tenemos proveedor, no es prioridad este año, no hay presupuesto, tengo que consultarlo, mándame información",
+    "Marca cuándo conviene ceder o retirarse en vez de insistir"
+  ],
+  "restricciones": [
+    "Nunca criticar al competidor por su nombre: comparar por criterios",
+    "Prohibido bajar el precio como primera respuesta a la objeción de precio",
+    "Cada respuesta cabe en 45 palabras y se puede decir en voz alta",
+    "No usar promesas absolutas ni garantías que la empresa no pueda cumplir"
+  ],
+  "formato_salida": {
+    "tabla": "Objeción | Tipo | Pregunta de aclaración | Respuesta | Prueba a enseñar | Pregunta de reconducción",
+    "guion_precio": "Secuencia paso a paso para la conversación de precio",
+    "señales_de_retirada": "Lista de 5 señales de que toca dejarlo y qué decir al despedirse"
+  },
+  "criterios_calidad": [
+    "Ninguna respuesta empieza discutiendo con el cliente",
+    "Cada respuesta lleva una prueba concreta o admite que no la hay",
+    "Se distingue lo que es una excusa de lo que es un problema real de encaje"
+  ],
+  "tono": "Firme, honesto y sin ponerse a la defensiva"
+}

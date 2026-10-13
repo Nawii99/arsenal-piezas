@@ -1,0 +1,37 @@
+{
+  "tarea": "Definir el tipo de dato, la longitud y las restricciones de integridad de cada columna del esquema indicado",
+  "entradas": {
+    "tablas_y_campos": "[PEGA TUS TABLAS Y SUS CAMPOS, AUNQUE SEA EN LENGUAJE NORMAL]",
+    "motor": "[PostgreSQL | MySQL | SQL Server]",
+    "pais_de_operacion": "[Espana | OTRO]",
+    "idiomas_de_los_datos": "[ES | ES+EN | OTROS]"
+  },
+  "reglas_de_dominio": [
+    "Importes en decimal(12,2) y guarda siempre la moneda si puede haber mas de una",
+    "Porcentajes de IVA como decimal(5,2), nunca como texto",
+    "NIF/CIF: texto de 9 con validacion de formato y letra de control",
+    "IBAN: texto de 34 en mayusculas y sin espacios",
+    "Codigo postal espanol: texto de 5, nunca numero, para no perder el cero inicial",
+    "Telefono: texto con prefijo internacional, nunca numerico",
+    "Email en minusculas y unico cuando identifique a un usuario",
+    "Fechas con zona horaria si son instantes; fecha simple si son dias naturales",
+    "Estados y categorias: tabla de catalogo o CHECK con la lista cerrada de valores"
+  ],
+  "restricciones": [
+    "Ni un solo campo de texto sin longitud justificada",
+    "Prohibido float o double para dinero",
+    "Marca explicitamente que campos admiten NULL y por que",
+    "Indica el valor por defecto de cada campo cuando tenga sentido"
+  ],
+  "formato_salida": {
+    "1_ficha_por_tabla": "Tabla markdown con columnas: campo, tipo, nulo, valor_por_defecto, restriccion, ejemplo valido, ejemplo invalido",
+    "2_sql": "CREATE TABLE con NOT NULL, UNIQUE, CHECK y DEFAULT ya aplicados",
+    "3_avisos": "Campos donde has tenido que suponer algo y conviene que confirmes"
+  },
+  "criterios_calidad": [
+    "Cada campo tiene un ejemplo valido y uno invalido que la restriccion rechazaria",
+    "Los tipos son sintaxis real del motor indicado, no generica",
+    "Ningun dato que identifique a una persona queda sin restriccion de formato"
+  ],
+  "tono": "Preciso y concreto, espanol de Espana"
+}

@@ -1,0 +1,31 @@
+{
+  "tarea": "Convertir amenazas identificadas en historias de abuso y requisitos de seguridad listos para el backlog",
+  "entradas": {
+    "amenazas": "[PEGA AQUÍ LAS AMENAZAS PRIORIZADAS]",
+    "funcionalidad": "[QUÉ PARTE DEL PRODUCTO SE VA A TOCAR]",
+    "tecnologia": "[WORDPRESS, SHOPIFY, APP A MEDIDA, NO LO SÉ]",
+    "quien_desarrolla": "[AGENCIA, FREELANCE, EQUIPO INTERNO]",
+    "herramienta_backlog": "[TRELLO, JIRA, NOTION, LISTA EN EXCEL]"
+  },
+  "instrucciones": [
+    "Escribe cada historia con el formato: como [ATACANTE] quiero [ACCIÓN] para [BENEFICIO], y debajo el requisito que lo impide",
+    "Añade criterios de aceptación verificables, con casos válidos y casos que deben fallar",
+    "Incluye qué debe quedar registrado en los logs y qué mensaje ve el usuario cuando se bloquea",
+    "Estima el tamaño en pequeño, mediano o grande y marca las dependencias entre historias",
+    "Señala qué historias son imprescindibles antes de salir a producción"
+  ],
+  "restricciones": [
+    "Los criterios de aceptación deben poder probarse a mano por alguien sin perfil técnico o con una prueba automática sencilla",
+    "Nada de requisitos vagos como el sistema será seguro",
+    "Entre 8 y 15 historias"
+  ],
+  "formato_salida": {
+    "por_historia": ["Título", "Historia de abuso", "Requisito de seguridad", "Criterios de aceptación (lista de casos que deben pasar y fallar)", "Qué se registra en el log", "Tamaño", "Imprescindible antes de lanzar (sí/no)"],
+    "extra": "Bloque final en texto plano listo para pegar como tarjetas en el gestor de tareas"
+  },
+  "criterios_calidad": [
+    "Cada historia se puede dar por terminada o no sin discusión",
+    "Se cubren autorización, validación de entradas, límites de intentos y trazabilidad",
+    "El lenguaje sirve tanto para el desarrollador como para mí"
+  ]
+}

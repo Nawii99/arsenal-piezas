@@ -1,0 +1,48 @@
+{
+  "tarea": "Revisar la seguridad y la privacidad de los dispositivos conectados de un inmueble y devolver un plan de arreglo priorizado",
+  "contexto": {
+    "inmueble": "[VIVIENDA / LOCAL / OFICINA], [DIRECCION O ZONA SI HACE FALTA]",
+    "dispositivos": "[LISTA CON MARCA Y MODELO: CAMARAS, TIMBRE, ALTAVOZ, ENCHUFES, TELE, IMPRESORA, ROBOT]",
+    "router": "[MARCA, MODELO, OPERADOR], red de invitados [SI/NO], VLAN [SI/NO]",
+    "quien_administra": "[PERSONA Y SI TIENE LAS CLAVES]",
+    "hay_camaras_con_gente": "[SI/NO], si es negocio indicar si graban a clientes o empleados",
+    "donde_se_guarda_el_video": "[NUBE DEL FABRICANTE / TARJETA SD / GRABADOR LOCAL]"
+  },
+  "metodo": [
+    "1. Inventario primero: sin lista de aparatos y de cuentas asociadas no hay revision posible",
+    "2. Cuentas: comprueba contraseñas unicas, verificacion en dos pasos y quien mas tiene acceso compartido de antiguos inquilinos, ex empleados o instaladores",
+    "3. Contraseñas de fabrica: marca los aparatos que siguen con la clave por defecto o con el usuario admin",
+    "4. Actualizaciones: anota version de firmware, si hay actualizacion pendiente y si el modelo ya no recibe soporte",
+    "5. Exposicion a internet: comprueba si hay puertos abiertos o UPnP activo en el router; lo correcto es acceder por la app o por VPN, no abriendo puertos",
+    "6. Separacion de red: propon meter camaras y cacharros en red de invitados o VLAN aparte del ordenador de trabajo",
+    "7. Privacidad: comprueba a donde apuntan las camaras, si captan via publica o zonas de descanso, si hay microfonos activos y cuanto tiempo se guardan las grabaciones",
+    "8. Prioriza los arreglos por daño posible y esfuerzo"
+  ],
+  "restricciones": [
+    "Solo comprobaciones sobre aparatos propios y con permiso del titular: nada de escanear redes ajenas ni de probar accesos",
+    "No uses herramientas de ataque ni intentes entrar en ningun dispositivo",
+    "En negocios con camaras, indica que hay obligaciones legales de cartel informativo y de plazos de conservacion y que hay que confirmarlas con un asesor",
+    "Si un aparato ya no recibe actualizaciones, la recomendacion es aislarlo o sustituirlo, y hay que decirlo"
+  ],
+  "errores_frecuentes": [
+    "Camara con la clave que venia en la caja, accesible desde fuera",
+    "Abrir puertos en el router para ver la camara desde el movil",
+    "Cuenta compartida con el instalador que sigue teniendo acceso años despues",
+    "Camara apuntando a la calle o a la mesa de un empleado sin ningun cartel",
+    "Robot aspirador o tele en la misma red que el ordenador con la contabilidad",
+    "Tarjeta SD como unica copia del video en el sitio que se quiere vigilar"
+  ],
+  "formato_salida": {
+    "inventario": "Dispositivo | Modelo | Cuenta asociada | Firmware | Riesgo detectado",
+    "hallazgos": "Hallazgo | Gravedad alta media baja | Que puede pasar | Como se arregla | Tiempo estimado",
+    "plan_de_red": "Como quedaria la separacion de redes y que aparato va en cada una",
+    "privacidad": "Camaras y microfonos, que captan, cuanto se guarda y que hay que cambiar o señalizar",
+    "plan_30_dias": "Que hacer hoy, esta semana y este mes, con responsable"
+  },
+  "criterios_calidad": [
+    "Ningun hallazgo se queda sin instruccion concreta de arreglo",
+    "Las recomendaciones no exigen conocimientos de informatica para ejecutarse",
+    "Se distingue lo urgente de lo deseable",
+    "No se propone ninguna accion que toque equipos de terceros"
+  ]
+}

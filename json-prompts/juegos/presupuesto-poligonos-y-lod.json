@@ -1,0 +1,59 @@
+{
+  "tarea": "Definir el presupuesto tecnico de una escena o juego por plataforma y el plan de niveles de detalle, con acciones concretas de recorte",
+  "contexto": {
+    "quien_lo_usa": "Persona sin perfil tecnico que monta escenas o juegos con assets comprados o generados y ve que va a tirones",
+    "momento": "Antes de comprar o encargar assets, o cuando el rendimiento ya es un problema",
+    "motor": "[UNITY / UNREAL / GODOT / WEB CON THREE JS]"
+  },
+  "entradas": {
+    "plataforma_objetivo": "[MOVIL / PC MEDIO / CONSOLA / NAVEGADOR WEB / GAFAS VR]",
+    "tipo_de_escena": "[SALA CERRADA / EXTERIOR ABIERTO / NIVEL DE PASILLO / CONFIGURADOR DE UN OBJETO]",
+    "que_ve_el_jugador": "[CAMARA CERCANA, LEJANA, CENITAL, PRIMERA PERSONA]",
+    "lo_que_ya_tienes": "[NUMERO DE OBJETOS, TRIANGULOS TOTALES, MATERIALES, TEXTURAS Y SU RESOLUCION]",
+    "sintoma": "[VA LENTO SIEMPRE / SOLO AL GIRAR / SOLO EN MOVIL / SE QUEDA SIN MEMORIA]"
+  },
+  "conocimiento_del_oficio": {
+    "lo_que_pesa_de_verdad": "En proyectos pequeños casi nunca son los triangulos: son el numero de materiales distintos, la resolucion de las texturas y las luces y sombras dinamicas",
+    "ordenes_de_magnitud": "Un prop de escenario suele estar entre 500 y 5.000 triangulos, un personaje jugable entre 15.000 y 60.000, y una escena de movil suele moverse por debajo del millon visible",
+    "resolucion_de_textura": "Se decide por tamaño en pantalla: objeto pequeño y lejano 512 pixeles, objeto de mano 1024, heroe que se ve de cerca 2048. Poner 4K a un cubo del fondo es tirar memoria",
+    "lod": "LOD0 el original, LOD1 alrededor del 50 por ciento, LOD2 alrededor del 25 y LOD3 una silueta. Los cambios se notan si la distancia esta mal puesta",
+    "materiales": "Cada material distinto es trabajo extra por fotograma. Juntar texturas en un atlas y reutilizar materiales suele dar mas mejora que reducir malla",
+    "luz": "Luz calculada y horneada donde se pueda, sombras dinamicas solo en lo que se mueve",
+    "como_medir": "Mirar milisegundos por fotograma y no solo los fps, y comprobar en el aparato mas flojo que quieras soportar, no en tu ordenador"
+  },
+  "pasos": [
+    "1. Fijar el objetivo en milisegundos por fotograma segun plataforma y anotarlo",
+    "2. Repartir el presupuesto por categorias: escenario, personajes, efectos e interfaz",
+    "3. Asignar a cada tipo de objeto su limite de triangulos y su resolucion de textura",
+    "4. Contar los materiales unicos y proponer agrupaciones",
+    "5. Definir los LOD por tipo de objeto, con porcentaje y distancia de cambio",
+    "6. Revisar luces y sombras y marcar cuales pueden hornearse",
+    "7. Ordenar los recortes por relacion entre mejora y esfuerzo",
+    "8. Indicar como medir antes y despues para saber si ha funcionado"
+  ],
+  "errores_tipicos": [
+    "Bajar poligonos a mano durante horas cuando el problema eran ocho texturas en 4K",
+    "Poner LOD a todo, incluidos objetos que nunca se ven de lejos",
+    "Probar el rendimiento solo en el ordenador de desarrollo",
+    "Duplicar materiales identicos con nombres distintos",
+    "Dejar sombras dinamicas en todo el escenario estatico"
+  ],
+  "restricciones": [
+    "Da siempre numeros concretos, nunca la palabra optimizar sin accion detras",
+    "Ordena las acciones por lo que mas mejora con menos trabajo",
+    "Si falta el dato de plataforma, pidelo: sin el las cifras no valen"
+  ],
+  "formato_salida": {
+    "1_objetivo": "Plataforma, milisegundos por fotograma y fps objetivo",
+    "2_tabla_presupuesto": "Tipo de objeto | triangulos maximos | textura | materiales | numero en escena",
+    "3_plan_lod": "Objeto | LOD0 a LOD3 | porcentaje | distancia de cambio",
+    "4_acciones": "Lista ordenada por mejora estimada y esfuerzo",
+    "5_como_medir": "Que mirar antes y despues y en que aparato"
+  },
+  "criterios_calidad": [
+    "Todas las cifras estan atadas a la plataforma indicada",
+    "La primera accion de la lista es la de mas mejora y menos esfuerzo",
+    "El plan de LOD indica distancias, no solo porcentajes",
+    "Se puede comprobar el resultado con una medida objetiva"
+  ]
+}

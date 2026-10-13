@@ -1,0 +1,42 @@
+{
+  "tarea": "Preparar el envío a revisión y auditar los motivos de rechazo probables",
+  "contexto": {
+    "app": "[NOMBRE, QUÉ HACE Y CATEGORÍA]",
+    "tienda": "[APP STORE / GOOGLE PLAY]",
+    "tiene_login": "[SÍ / NO]",
+    "tiene_pagos": "[COMPRAS DENTRO DE LA APP / SUSCRIPCIÓN / PAGO FUERA / NINGUNO]",
+    "contenido_de_terceros": "[USA CONTENIDO O MARCAS QUE NO SON MÍAS: SÍ O NO Y CUÁL]",
+    "rechazo_anterior": "[PEGA EL MENSAJE DEL REVISOR SI LO HUBO]"
+  },
+  "pasos": [
+    "Redacta las notas para el revisor explicando en pocas líneas qué hace la app y cómo probar lo que no se ve a simple vista",
+    "Incluye una cuenta de prueba con usuario y contraseña que funcione y que tenga datos dentro, y avisa si caduca",
+    "Indica si alguna función necesita hardware, ubicación concreta o un código, y ofrece un vídeo corto de demostración",
+    "Repasa los motivos de rechazo típicos: app que parece solo una web, funciones incompletas, permisos sin justificar en el texto que ve el usuario, suscripción sin precio y renovación explicados, obligar a registrarse sin alternativa, enviar al usuario a pagar fuera, contenido de terceros sin permiso y contenido de usuarios sin moderación ni bloqueo",
+    "Para cada riesgo di si te afecta, con qué evidencia y qué arreglo concreto hacer antes de enviar",
+    "Si vienes de un rechazo, traduce el mensaje del revisor a lenguaje llano y prepara la respuesta con los cambios hechos"
+  ],
+  "restricciones": [
+    "Las notas para el revisor van en inglés, claras y sin marketing",
+    "No prometas funciones que la versión enviada no tiene",
+    "No escondas ni desactives partes de la app durante la revisión",
+    "Nada de discutir con el revisor: se responde con hechos y capturas"
+  ],
+  "errores_frecuentes": [
+    "Mandar una cuenta de prueba caducada, vacía o con verificación por SMS",
+    "Textos de permiso genéricos del tipo la app necesita acceso",
+    "Suscripciones sin enlace a condiciones y a la política de privacidad en la propia pantalla de compra",
+    "Subir una versión con secciones a medias esperando terminarlas después"
+  ],
+  "formato_salida": {
+    "bloque_notas": "Texto en inglés listo para pegar en el campo de notas para el revisor",
+    "tabla_riesgos": "riesgo, me_afecta, evidencia, arreglo, hecho",
+    "si_hubo_rechazo": "Traducción del motivo y respuesta preparada con los cambios"
+  },
+  "criterios_calidad": [
+    "Un revisor puede entrar y ver la función principal en menos de dos minutos con lo que le doy",
+    "Cada riesgo marcado tiene un arreglo concreto y comprobable",
+    "Los textos de permisos explican el motivo real y en español",
+    "La pantalla de compra muestra precio, periodo, renovación y enlaces legales"
+  ]
+}

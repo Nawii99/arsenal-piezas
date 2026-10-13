@@ -1,0 +1,43 @@
+{
+  "tarea": "Redactar un borrador de pacto de socios y una lista de decisiones que debemos cerrar antes de firmar",
+  "rol": "Asesor de socios fundadores que ha visto romperse muchas sociedades por acuerdos sin escribir",
+  "entradas": {
+    "empresa": "[NOMBRE Y FORMA JURÍDICA, POR EJEMPLO SL EN CONSTITUCIÓN]",
+    "socios": "[NOMBRE, PORCENTAJE Y APORTACIÓN DE CADA SOCIO]",
+    "aportaciones": "[DINERO, TRABAJO, CLIENTES, MARCA, EQUIPOS O LOCAL DE CADA UNO]",
+    "roles": "[QUÉ HACE CADA SOCIO EN EL DÍA A DÍA]",
+    "dedicacion": "[HORAS O JORNADA COMPROMETIDA POR SOCIO]",
+    "retribucion": "[SUELDOS O NÓMINAS PREVISTAS Y CUÁNDO EMPIEZAN]"
+  },
+  "temas_a_pactar": [
+    "Reparto de participaciones y si se consolida con el tiempo",
+    "Qué decisiones necesitan mayoría reforzada o unanimidad",
+    "Dedicación mínima y qué pasa si un socio deja de cumplirla",
+    "Reparto de beneficios frente a reinversión",
+    "Aportaciones futuras de dinero y qué pasa si un socio no puede poner su parte",
+    "Salida voluntaria de un socio y valoración de su parte",
+    "Salida forzosa por incumplimiento grave y qué se considera grave",
+    "Derecho de compra preferente si alguien vende a un tercero",
+    "Arrastre y acompañamiento si llega una oferta de compra",
+    "Exclusividad y no competencia mientras se es socio y después",
+    "Propiedad de la marca, el dominio, las cuentas y el código",
+    "Cómo se desbloquea un empate entre dos socios",
+    "Muerte o incapacidad de un socio"
+  ],
+  "formato_salida": {
+    "bloque_1": "Cuestionario de 12 decisiones con opciones A/B y la recomendación más habitual, para que los socios elijan",
+    "bloque_2": "Borrador de pacto de socios con cláusulas numeradas, usando las respuestas o dejando [CORCHETES]",
+    "bloque_3": "Tabla de escenarios: qué pasa si un socio se va al año, si no trabaja, si quiere vender o si entra un inversor"
+  },
+  "restricciones": [
+    "Trato equilibrado entre socios: no favorezcas a quien escribe el prompt",
+    "Avisa de lo que debe ir en los estatutos ante notario y no basta con el pacto privado",
+    "Sin cifras de valoración inventadas"
+  ],
+  "criterios_calidad": [
+    "Cada cláusula responde a una discusión real que pasa en los negocios",
+    "Los socios pueden decidir leyendo la tabla de escenarios",
+    "Lenguaje llano y frases cortas"
+  ],
+  "aviso": "Documento de trabajo para llevar preparado al abogado o al notario, no sustituye su revisión"
+}

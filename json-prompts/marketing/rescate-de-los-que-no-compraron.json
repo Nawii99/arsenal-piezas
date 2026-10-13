@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar una oferta de rescate para quienes mostraron interés y no compraron, con los mensajes de seguimiento",
+  "entradas": {
+    "oferta_original": "[QUÉ VENDÍAS Y A QUÉ PRECIO]",
+    "resultado_lanzamiento": "[INTERESADOS, PAGOS EMPEZADOS Y VENTAS]",
+    "motivos_de_no_compra": "[LO QUE TE HAN DICHO O LO QUE SOSPECHAS]",
+    "versiones_posibles": "[QUÉ PUEDES OFRECER MÁS PEQUEÑO, MÁS CORTO O A PLAZOS]",
+    "margen_minimo": "[PRECIO POR DEBAJO DEL CUAL NO TE COMPENSA]",
+    "canal": "[EMAIL, WHATSAPP O LLAMADA]"
+  },
+  "pasos": [
+    "Clasificar a los no compradores en tres grupos: no tenía dinero ahora, no era el momento, no le convenció el encaje",
+    "Asignar a cada grupo la salida adecuada: pago fraccionado, entrada por una versión reducida, o aviso para la próxima edición",
+    "Definir la oferta de rescate respetando el margen mínimo y sin desprestigiar a quien pagó el precio completo",
+    "Escribir un mensaje por grupo, con asunto y llamada a la acción",
+    "Añadir una pregunta abierta que sirva para aprender de los que sigan diciendo que no",
+    "Definir cuándo dejar de insistir y pasar el contacto a la lista general"
+  ],
+  "restricciones": [
+    "Nunca rebajar el precio del producto completo poco después del cierre: se cambia lo que incluye, no el valor prometido",
+    "Máximo 2 mensajes por grupo",
+    "Prohibida la culpabilización y las frases de presión emocional",
+    "Si se ofrece pago a plazos, indicar importe total y número de cuotas con claridad"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["Los 3 grupos y qué se le ofrece a cada uno", "Oferta de rescate y su precio", "Mensajes listos por grupo", "Pregunta de aprendizaje", "Regla para dejar de insistir"]
+  },
+  "criterios_calidad": [
+    "Quien compró al precio completo no se sentiría engañado si leyera estos mensajes",
+    "Cada oferta respeta el margen mínimo indicado",
+    "Los mensajes reconocen el 'no' antes de proponer nada"
+  ],
+  "tono": "respetuoso, adulto, sin insistencia pegajosa"
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Convertir la descripción de un proyecto en un desglose de trabajo (fases, tareas y subtareas) con dependencias, responsables y horas estimadas",
+  "contexto": {
+    "proyecto": "[NOMBRE Y DESCRIPCIÓN DEL PROYECTO EN 3 O 4 FRASES]",
+    "resultado_esperado": "[QUÉ SE ENTREGA AL FINAL, EN UNA FRASE]",
+    "fecha_inicio": "[DD/MM/AAAA]",
+    "fecha_limite": "[DD/MM/AAAA]",
+    "equipo": "[PERSONAS, ROL Y HORAS DISPONIBLES, EJ: ANA - DISEÑO 20H/SEMANA; LUIS - DESARROLLO 30H/SEMANA]",
+    "presupuesto_horas": "[HORAS TOTALES VENDIDAS O 'SIN LÍMITE DEFINIDO']"
+  },
+  "metodo": [
+    "Divide el proyecto en 3 a 6 fases, cada una con un entregable que se pueda enseñar",
+    "Baja cada fase a tareas de entre 2 y 16 horas: si una tarea pasa de 16 horas, pártela",
+    "Indica para cada tarea de qué otra tarea depende, usando los IDs, para poder ordenarlas",
+    "Estima en tres cifras (optimista, probable, pesimista) y calcula la esperada como (optimista + 4 x probable + pesimista) / 6",
+    "Añade las tareas que casi todo el mundo olvida: revisiones del cliente, correcciones, reuniones, entrega, formación y cierre",
+    "Reserva un colchón del 15% al 25% del total y decláralo aparte, nunca escondido dentro de las tareas"
+  ],
+  "restricciones": [
+    "Prohibidas las tareas vagas tipo 'desarrollar' o 'mejorar': cada tarea empieza por un verbo y dice qué queda terminado",
+    "No asignes a una persona más horas de las que tiene disponibles en el periodo",
+    "Si falta información para estimar, escríbelo en 'supuestos' en vez de inventarlo"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown seguida de dos bloques de texto",
+    "columnas": ["ID", "Fase", "Tarea", "Depende de", "Responsable", "Horas esperadas", "Riesgo (bajo/medio/alto)"],
+    "bloques_finales": ["Supuestos que he dado por buenos", "Total de horas por persona, total del proyecto y colchón"]
+  },
+  "criterios_calidad": [
+    "Ninguna tarea supera las 16 horas",
+    "Todas las tareas tienen responsable y dependencia rellenados",
+    "La suma de horas por persona cabe en el calendario disponible hasta la fecha límite",
+    "Si el total supera el presupuesto de horas, se avisa con un aviso claro al final"
+  ],
+  "tono": "directo y práctico, sin jerga de consultoría"
+}

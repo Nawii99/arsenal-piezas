@@ -1,0 +1,28 @@
+{
+  "tarea": "Analizar los presupuestos enviados en un periodo para entender por qué se pierden y qué cambiar",
+  "entradas": {
+    "periodo": "[MES O TRIMESTRE ANALIZADO]",
+    "listado": "[PARA CADA PRESUPUESTO: CLIENTE, SERVICIO, IMPORTE, FECHA DE ENVÍO, CANAL DE ENTRADA, RESULTADO (GANADO, PERDIDO O SIN RESPUESTA) Y MOTIVO SI LO SABES]",
+    "objetivo": "[QUÉ QUIERES CONSEGUIR: MÁS CIERRE, MEJOR TICKET O MENOS TIEMPO PRESUPUESTANDO]"
+  },
+  "analisis_requerido": [
+    "Tasa de cierre total y por tipo de servicio",
+    "Ticket medio de los ganados frente al de los perdidos",
+    "Días medios entre envío y respuesta, y si tardar más se relaciona con perder",
+    "Qué canal de entrada trae los clientes que sí cierran",
+    "Patrón de los perdidos: importe, tipo de cliente, cómo llegaron o motivo alegado",
+    "Presupuestos sin respuesta que todavía se pueden recuperar"
+  ],
+  "restricciones": [
+    "Trabaja solo con los datos aportados, sin inventar cifras",
+    "Si la muestra es pequeña, dilo y trata los patrones como hipótesis",
+    "Máximo tres conclusiones y tres acciones",
+    "Cada acción con responsable, plazo e indicador para medirla"
+  ],
+  "formato_salida": "Tabla resumen con las métricas, lista de patrones detectados y plan de tres acciones para el próximo periodo",
+  "criterios_calidad": [
+    "Cada conclusión se apoya en un número del listado",
+    "Las acciones se pueden empezar esta misma semana",
+    "Se distingue entre perder por precio y perder por una propuesta mal explicada"
+  ]
+}

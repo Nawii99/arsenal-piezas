@@ -1,0 +1,40 @@
+{
+  "tarea": "Limpiar y estandarizar un catálogo de productos para publicarlo o importarlo sin errores",
+  "contexto": {
+    "sector": "[SECTOR: MODA, ALIMENTACIÓN, FERRETERÍA, COSMÉTICA...]",
+    "destino": "[DÓNDE SE VA A SUBIR: SHOPIFY, WOOCOMMERCE, AMAZON, ERP]",
+    "patron_nombre": "[CÓMO QUIERES EL NOMBRE, EJ: MARCA + MODELO + ATRIBUTO + FORMATO]"
+  },
+  "entradas": {
+    "catalogo": "[PEGA EN CSV: SKU, NOMBRE, CATEGORIA, MARCA, PRECIO, UNIDAD, PESO, STOCK, DESCRIPCION]"
+  },
+  "reglas": [
+    "Nombres siguiendo el patrón indicado, sin MAYÚSCULAS COMPLETAS, sin exclamaciones y sin palabras de promoción como oferta o rebajado",
+    "Unificar categorías equivalentes en una sola (camisetas, camiseta, t-shirt pasan a una única)",
+    "Unidades siempre en el sistema métrico y con el mismo símbolo: g, kg, ml, l, cm, m",
+    "Precios con dos decimales y punto decimal, sin símbolo de moneda dentro del campo",
+    "SKU en mayúsculas, sin espacios ni caracteres raros; detectar SKU repetidos y SKU que solo cambian en mayúsculas",
+    "Descripciones sin restos de HTML, sin dobles espacios y con la primera letra en mayúscula"
+  ],
+  "errores_a_detectar": [
+    "Mismo producto cargado dos veces con SKU distinto",
+    "Precio a cero, negativo o con separador de miles mal interpretado",
+    "Peso o medidas en la unidad equivocada (un producto de 2 kg guardado como 2 g)",
+    "Categoría vacía o categoría cajón de sastre tipo otros",
+    "Marca escrita de varias formas"
+  ],
+  "formato_salida": {
+    "tipo": "dos bloques",
+    "bloque_1": "CSV limpio con las mismas columnas de entrada más una columna cambios",
+    "bloque_2": "Lista de incidencias que necesitan decisión humana, agrupadas por tipo y con el SKU afectado"
+  },
+  "restricciones": [
+    "No cambies precios ni stock, solo su formato",
+    "No inventes atributos que no estén en el nombre o en la descripción",
+    "Si dudas entre dos categorías, deja la original y márcalo como incidencia"
+  ],
+  "criterios_calidad": [
+    "El CSV de salida se puede importar sin tocar nada más",
+    "Cada fila modificada dice qué se le cambió"
+  ]
+}

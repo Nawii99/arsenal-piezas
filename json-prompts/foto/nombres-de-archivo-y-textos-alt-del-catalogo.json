@@ -1,0 +1,36 @@
+{
+  "tarea": "Generar nombre de archivo, texto alternativo y titulo de imagen para cada foto del catalogo de [NOMBRE DE TU MARCA]",
+  "entradas": {
+    "productos": "[LISTA: NOMBRE, CATEGORIA, COLOR, TALLA O VARIANTE]",
+    "tomas_por_producto": "[PRINCIPAL, TRES CUARTOS, DETALLE, ESCALA, USO, PACK]",
+    "palabras_clave": "[COMO BUSCA LA GENTE TU PRODUCTO EN GOOGLE]",
+    "idioma": "espanol de Espana"
+  },
+  "reglas_para_el_nombre_de_archivo": [
+    "Todo en minusculas, sin acentos, sin enes con virgulilla y sin caracteres raros",
+    "Palabras separadas por guiones medios, nunca espacios ni guiones bajos",
+    "Estructura: marca-producto-variante-tipo-de-toma-numero",
+    "Maximo 60 caracteres y sin repetir la misma palabra clave dos veces"
+  ],
+  "reglas_para_el_texto_alternativo": [
+    "Describir lo que se ve en la foto, no repetir el titulo del producto tal cual",
+    "Entre 8 y 16 palabras, frase natural, sin amontonar palabras clave",
+    "Incluir color, material y contexto cuando aporten informacion",
+    "No empezar con imagen de ni foto de",
+    "Debe servirle a alguien que no puede ver la foto"
+  ],
+  "formato_salida": {
+    "tipo": "tabla lista para copiar en una hoja de calculo",
+    "columnas": ["producto", "variante", "tipo de toma", "nombre de archivo", "texto alternativo", "titulo de la imagen"],
+    "extra": "Al final, la convencion de nombres explicada en 5 lineas para usarla siempre igual"
+  },
+  "criterios_calidad": [
+    "Ningun nombre de archivo se repite",
+    "Cada texto alternativo describe una foto distinta de forma reconocible",
+    "Nada de listas de palabras clave separadas por comas en el alt"
+  ],
+  "errores_a_evitar": [
+    "Nombres tipo IMG-2043 o captura de pantalla",
+    "Meter la marca en todas las palabras hasta que suene forzado"
+  ]
+}

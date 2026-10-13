@@ -1,0 +1,41 @@
+{
+  "tarea": "Auditar la documentación de un negocio y decidir qué entra en la base de conocimiento de un agente de IA, qué hay que arreglar antes y qué se queda fuera",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD DE TU NEGOCIO]",
+    "uso_previsto_del_agente": "[RESPONDER DUDAS DE CLIENTES / SOPORTE INTERNO / AYUDA A VENTAS]",
+    "quien_pregunta": "[CLIENTES, EMPLEADOS O AMBOS]",
+    "idioma": "español de España"
+  },
+  "entradas": {
+    "inventario_documentos": "[LISTA: NOMBRE, TIPO (PDF, WEB, EXCEL, EMAIL), FECHA, DÓNDE ESTÁ, QUIÉN LO MANTIENE]",
+    "preguntas_reales": "[10-20 PREGUNTAS QUE OS HACEN DE VERDAD]"
+  },
+  "procedimiento": [
+    "Clasifica cada documento como fuente de verdad, apoyo, obsoleto o prohibido (datos personales, contratos, precios negociados).",
+    "Marca duplicados y versiones que se contradicen; di cuál manda y por qué.",
+    "Comprueba si cada pregunta real tiene documento que la responda y lista los huecos.",
+    "Separa la información volátil (precios, stock, horarios) que debería consultarse en vivo en lugar de guardarse como texto.",
+    "Propón para cada documento aprobado un título normalizado, un responsable y cada cuánto revisarlo."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Volcar el Drive entero sin filtrar y acabar respondiendo con tarifas de hace tres años",
+    "Incluir PDFs escaneados sin texto seleccionable, que no se pueden buscar",
+    "Guardar documentos sin fecha ni versión",
+    "Meter datos personales de clientes en la base de conocimiento"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown más listas cortas",
+    "columnas_tabla": ["Documento", "Tipo", "Decisión", "Motivo en una frase", "Responsable", "Revisar cada"],
+    "secciones_extra": ["Huecos de conocimiento", "Riesgos y datos sensibles", "Plan de trabajo en 5 pasos"]
+  },
+  "restricciones": [
+    "No inventes documentos que no aparezcan en el inventario",
+    "Si falta un dato para decidir, escribe FALTA DATO y qué hay que preguntar",
+    "Lenguaje llano, sin jerga técnica innecesaria"
+  ],
+  "criterios_calidad": [
+    "Cada pregunta real queda cubierta o marcada como hueco",
+    "Toda decisión lleva su motivo",
+    "El plan de trabajo se puede empezar hoy sin comprar herramientas nuevas"
+  ]
+}

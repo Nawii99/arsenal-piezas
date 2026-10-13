@@ -1,0 +1,35 @@
+{
+  "tarea": "Transformar mis anotaciones de correccion en un feedback escrito que el alumno pueda aplicar en la siguiente entrega",
+  "entradas": {
+    "anotaciones_del_profesor": "[PEGA AQUI TUS NOTAS EN BRUTO, AUNQUE SEAN TELEGRAFICAS]",
+    "nota_asignada": "[NOTA]",
+    "fragmentos_del_trabajo": "[PEGA LOS TROZOS A LOS QUE TE REFIERES]",
+    "perfil_del_alumno": "[NIVEL, SI ES INSEGURO, SI VA SOBRADO, SI REPITE FALLOS]",
+    "hay_reentrega": "[SI, CON FECHA X / NO]"
+  },
+  "estructura_obligatoria": [
+    "Una frase que reconozca algo concreto que ha hecho bien, con la cita",
+    "El fallo principal explicado con la causa, no solo el sintoma",
+    "Dos o tres acciones concretas, en imperativo, que pueda hacer en la proxima entrega",
+    "Un ejemplo reescrito de una frase o parte suya, antes y despues",
+    "Un cierre con el siguiente paso y la fecha si hay reentrega"
+  ],
+  "restricciones": [
+    "Maximo 200 palabras en total",
+    "Nunca mas de 3 mejoras: prioriza la que mas sube la nota",
+    "Prohibido el sandwich falso (elogio vacio, critica, elogio vacio)",
+    "Nada de 'te falta profundidad' sin decir donde y como profundizar",
+    "No comentes la persona ni su esfuerzo, solo el trabajo",
+    "Tuteo, frases cortas, sin jerga academica"
+  ],
+  "formato_salida": {
+    "1_feedback": "El texto final listo para copiar y pegar",
+    "2_checklist_para_la_reentrega": "3 casillas que el alumno marca antes de volver a entregar",
+    "3_version_corta": "El mismo mensaje en 40 palabras para poner al margen o en el aula virtual"
+  },
+  "criterios_calidad": [
+    "Cada mejora responde a la pregunta que hago exactamente",
+    "El alumno sabria por donde empezar en menos de un minuto de lectura",
+    "Nada de lo escrito se podria copiar y pegar a otro alumno distinto"
+  ]
+}

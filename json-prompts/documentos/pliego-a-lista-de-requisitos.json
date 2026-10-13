@@ -1,0 +1,56 @@
+{
+  "tarea": "Leer un documento largo de bases o condiciones y convertirlo en una lista de requisitos verificables con su referencia de pagina",
+  "contexto": {
+    "documento": "[BASES DE SUBVENCIÓN, PLIEGO, CONTRATO MARCO, CONVENIO, NORMATIVA]",
+    "quien_soy": "[AUTÓNOMO O EMPRESA, ACTIVIDAD, TAMAÑO]",
+    "objetivo": "[PRESENTARME, DECIDIR SI ME PRESENTO, CUMPLIR SI YA ME LO HAN DADO]",
+    "fecha_de_hoy": "[FECHA]"
+  },
+  "entradas": {
+    "texto_documento": "[PEGA EL DOCUMENTO O ADJUNTA EL PDF, INDICANDO NÚMEROS DE PÁGINA]",
+    "mi_situacion": "[LO QUE YA TENGO: ALTA, SEGUROS, CERTIFICADOS, FACTURACIÓN, PERSONAL]",
+    "dudas_previas": "[LO QUE NO ENTIENDO DEL DOCUMENTO]"
+  },
+  "pasos": [
+    "Localiza y extrae primero lo eliminatorio: quien puede presentarse, plazos, importes y forma de presentacion.",
+    "Recorre el documento entero y convierte cada obligacion en una linea que empiece por un verbo y se pueda marcar como hecha o no hecha.",
+    "Anota junto a cada requisito el apartado y la pagina donde aparece, para poder volver a comprobarlo.",
+    "Distingue tres tipos: requisito para poder presentarse, documento que hay que aportar y criterio que da puntos.",
+    "Para los criterios que dan puntos, indica cuantos puntos y que hace falta para conseguirlos.",
+    "Extrae todas las fechas y montalas en un calendario hacia atras desde la fecha limite.",
+    "Contrasta cada requisito con mi situacion y clasifica en CUMPLO, NO CUMPLO o NO SÉ.",
+    "Para cada NO CUMPLO y cada NO SÉ, indica que gestion concreta hace falta y cuanto suele tardar.",
+    "Termina con un veredicto de si merece la pena presentarse con el tiempo que queda."
+  ],
+  "que_mirar": [
+    "Condiciones escondidas en anexos y notas al pie.",
+    "Diferencia entre presentar y registrar: sede electronica, certificado digital, horario de cierre.",
+    "Obligaciones posteriores: justificacion, plazos de conservacion, permanencia.",
+    "Incompatibilidades con otras ayudas ya recibidas."
+  ],
+  "errores_tipicos": [
+    "Leer solo el resumen de la convocatoria y no las bases completas.",
+    "Confundir la fecha de publicacion con el inicio del plazo.",
+    "Dejar para el final los certificados de estar al corriente, que tardan dias.",
+    "Dar por hecho que un documento vale cuando esta caducado."
+  ],
+  "restricciones": [
+    "No interpretes lo que no dice el texto: si es ambiguo, marcalo como AMBIGUO y di a quien preguntar.",
+    "Cita apartado y pagina en cada linea, sin excepcion.",
+    "No es asesoramiento juridico: es una lectura ordenada del documento."
+  ],
+  "formato_salida": {
+    "bloque_1_ficha": "Quien convoca, importe, plazo limite, forma de presentacion y una frase de para quien es",
+    "bloque_2_eliminatorio": "Lista de requisitos que dejan fuera si no se cumplen, con pagina",
+    "bloque_3_checklist": "Tabla: requisito | tipo | pagina | cumplo | que me falta | quien lo emite | dias estimados",
+    "bloque_4_calendario": "Cuenta atras desde la fecha limite con hitos por semana",
+    "bloque_5_puntos": "Criterios puntuables ordenados por puntos y que puedo hacer para sumarlos",
+    "bloque_6_veredicto": "Me presento, me presento con esfuerzo o no llego, con el motivo"
+  },
+  "criterios_calidad": [
+    "Cada linea del checklist se puede responder con si o no, sin matices.",
+    "Todas las referencias de pagina existen en el documento aportado.",
+    "No queda ninguna obligacion del texto sin convertir en linea.",
+    "El calendario cuenta dias reales, contando festivos y horario de cierre."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Generar el prompt de imagen para una foto de lookbook con modelo luciendo [PRENDA] de [NOMBRE DE TU MARCA]",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "prenda": "[PRENDA: tejido, corte, color exacto, detalles visibles]",
+    "temporada": "[TEMPORADA]",
+    "cliente_ideal": "[A QUIEN LE VENDES: edad, estilo, ciudad]",
+    "uso_final": "[FICHA DE PRODUCTO / INSTAGRAM / CATALOGO IMPRESO]"
+  },
+  "decisiones_tecnicas": {
+    "plano": "cuerpo entero con aire arriba y abajo, o plano medio si el detalle esta en el torso",
+    "lente": "85 mm para moda, 50 mm si quieres ver el entorno, nunca gran angular en cuerpo entero",
+    "diafragma": "f/4 a f/5.6 para que el tejido quede nitido de arriba abajo",
+    "altura_camara": "a la altura de la cintura de la modelo para no acortar las piernas",
+    "luz": "[VENTANA GRANDE LATERAL / SOFTBOX DE 120 CM A 45 GRADOS / DIA NUBLADO]",
+    "fondo": "[FONDO LISO DE COLOR / PARED CON TEXTURA / LOCALIZACION]",
+    "pose": "peso en una pierna, hombros ligeramente girados, manos con intencion, mirada [A CAMARA / FUERA DE CUADRO]"
+  },
+  "restricciones": [
+    "La prenda manda: ningun accesorio ni fondo que compita con ella",
+    "Respetar el color exacto indicado, sin virar a otro tono",
+    "Tejido con caida y arrugas naturales, no pegado al cuerpo ni con aspecto plastico",
+    "Manos y dedos correctos, sin deformaciones",
+    "Sin logos inventados ni texto dentro de la imagen"
+  ],
+  "formato_salida": {
+    "tipo": "un bloque por variante, listo para pegar en el generador",
+    "variantes": 3,
+    "cada_variante": ["prompt en ingles", "prompt negativo", "relacion de aspecto", "que cambia respecto a las otras"]
+  },
+  "criterios_calidad": [
+    "Se entiende el corte de la prenda sin leer la descripcion",
+    "La textura del tejido se aprecia al ampliar la imagen",
+    "Sombras y caida de la tela coherentes con la luz descrita",
+    "Sirve como foto principal de ficha sin recortar informacion importante"
+  ]
+}

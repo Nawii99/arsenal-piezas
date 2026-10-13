@@ -1,0 +1,40 @@
+{
+  "tarea": "Diseñar el plan de troceado (chunking) y de etiquetado de una base de conocimiento para que un agente encuentre siempre el fragmento correcto",
+  "contexto": {
+    "herramienta": "[DONDE LO VAS A CARGAR: GPTS, PROYECTO DE CLAUDE, NOTEBOOKLM, N8N, DIFY...]",
+    "tipo_de_preguntas": "[CORTAS Y CONCRETAS / COMPARATIVAS / DE PROCEDIMIENTO PASO A PASO]",
+    "volumen": "[NÚMERO APROXIMADO DE DOCUMENTOS Y PÁGINAS]"
+  },
+  "entradas": {
+    "tipos_documento": "[EJ: MANUAL DE 80 PÁGINAS, TARIFAS EN EXCEL, FAQ WEB, CONTRATOS TIPO, EMAILS DE SOPORTE]",
+    "muestra": "[PEGA AQUÍ UN TROZO REAL DE UNO DE ELLOS]"
+  },
+  "procedimiento": [
+    "Para cada tipo de documento propón la unidad natural de corte (apartado, artículo, pregunta-respuesta, fila, ticket) antes de pensar en tamaños.",
+    "Indica tamaño orientativo del trozo y solape, y justifica por qué en una frase.",
+    "Define las etiquetas obligatorias de cada trozo: titulo, documento_origen, apartado, fecha, version, publico (cliente o interno), vigencia.",
+    "Añade a cada trozo una cabecera de contexto de una o dos líneas para que se entienda leído por separado.",
+    "Marca qué contenidos NO se trocean y se guardan enteros (tablas de precios, listas de pasos).",
+    "Propón dos pruebas rápidas para comprobar que el troceado funciona."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Cortar por número de caracteres partiendo tablas y listas por la mitad",
+    "Trozos gigantes que mezclan cinco temas y confunden a la IA",
+    "Trozos sueltos sin título ni fecha, imposibles de citar",
+    "Perder la jerarquía de apartados de los manuales"
+  ],
+  "formato_salida": {
+    "1_tabla": ["Tipo de documento", "Unidad de corte", "Tamaño y solape", "Etiquetas", "Motivo"],
+    "2_ejemplo": "un trozo de ejemplo ya montado con su cabecera y sus etiquetas, sacado de la muestra pegada",
+    "3_checklist": "lista de comprobación de 6 puntos antes de cargar"
+  },
+  "restricciones": [
+    "Explica cada término técnico la primera vez, entre paréntesis y en una frase",
+    "Nada de código: instrucciones que se puedan aplicar a mano o con la herramienta indicada"
+  ],
+  "criterios_calidad": [
+    "Cualquier trozo se entiende leído fuera de su documento",
+    "Todo trozo permite citar de dónde sale",
+    "El plan distingue contenido estable de contenido que caduca"
+  ]
+}

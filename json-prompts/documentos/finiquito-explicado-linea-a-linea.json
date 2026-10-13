@@ -1,0 +1,35 @@
+{
+  "tarea": "Explicar y desglosar los conceptos que debe incluir el finiquito de un trabajador en Espana y revisar si falta o sobra algo",
+  "entradas": {
+    "fecha_alta": "[FECHA DE INICIO DEL CONTRATO]",
+    "fecha_baja": "[ULTIMO DIA TRABAJADO]",
+    "salario_bruto_mensual": "[SALARIO BRUTO MENSUAL Y NUMERO DE PAGAS]",
+    "motivo_salida": "[BAJA VOLUNTARIA, FIN DE CONTRATO, DESPIDO OBJETIVO, DESPIDO DISCIPLINARIO O NO SUPERAR LA PRUEBA]",
+    "vacaciones_disfrutadas": "[DIAS DE VACACIONES YA DISFRUTADOS ESTE ANO]",
+    "pagas_extra": "[PRORRATEADAS O NO]",
+    "preaviso": "[SE HA RESPETADO EL PREAVISO? SI O NO Y DIAS]",
+    "pendientes": "[HORAS EXTRA, COMISIONES O GASTOS PENDIENTES O NINGUNO]",
+    "convenio": "[CONVENIO APLICABLE O NO LO SE]"
+  },
+  "pasos": [
+    "Listar los conceptos que corresponden segun el motivo de salida: salario de los dias trabajados, vacaciones no disfrutadas, parte proporcional de pagas extra, horas extra, comisiones y descuento por falta de preaviso",
+    "Explicar cada concepto en una frase sencilla y con la formula de calculo",
+    "Aclarar la diferencia entre finiquito e indemnizacion y cuando corresponde cada uno",
+    "Senalar los datos que faltan para poder cerrar la cifra",
+    "Avisar de las trampas habituales: firmar recibo de saldo y finiquito sin leer, mezclar indemnizacion dentro del finiquito o descontar conceptos no pactados"
+  ],
+  "restricciones": [
+    "No des una cifra final cerrada si falta algun dato: usa formulas y ejemplos",
+    "No inventes cuantias de indemnizacion sin que el usuario confirme el motivo real de la salida",
+    "Recuerda que el trabajador puede firmar con la mencion NO CONFORME"
+  ],
+  "formato_salida": {
+    "tabla": "Tabla con columnas Concepto, Corresponde si, Como se calcula, Dato que necesitas",
+    "explicacion": "Resumen en 5 lineas para explicar al trabajador",
+    "checklist_firma": "Lista de comprobaciones antes de firmar"
+  },
+  "criterios_calidad": [
+    "Se entiende sin conocimientos de nomina",
+    "Deja claro que la cifra final la debe validar la gestoria"
+  ]
+}

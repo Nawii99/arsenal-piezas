@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar el informe y el acta de la revisión por la dirección del SGSI conforme a la cláusula 9.3 de ISO/IEC 27001",
+  "contexto": {
+    "organizacion": "[NOMBRE DE TU EMPRESA]",
+    "periodo": "[PERIODO REVISADO, POR EJEMPLO AÑO 2026]",
+    "asistentes": "[NOMBRES Y CARGOS DE LOS ASISTENTES]",
+    "incidentes": "[INCIDENTES DE SEGURIDAD DEL PERIODO Y CÓMO SE RESOLVIERON]",
+    "auditorias": "[RESULTADOS DE AUDITORÍA INTERNA Y EXTERNA Y ESTADO DE LOS HALLAZGOS]",
+    "objetivos": "[OBJETIVOS DE SEGURIDAD FIJADOS Y SU GRADO DE CUMPLIMIENTO]",
+    "indicadores": "[DATOS DISPONIBLES: FORMACIÓN, PARCHES, COPIAS RESTAURADAS, PHISHING SIMULADO, ACCESOS REVISADOS]",
+    "cambios": "[CAMBIOS EN EL NEGOCIO, PROVEEDORES, LEGISLACIÓN O TECNOLOGÍA]",
+    "peticiones": "[RECURSOS O PRESUPUESTO QUE SE VA A SOLICITAR]"
+  },
+  "instrucciones": [
+    "Cubre uno por uno todos los puntos de entrada que exige la cláusula 9.3.2, sin saltarte ninguno, aunque en alguno haya que escribir sin novedades en el periodo",
+    "Convierte los datos aportados en indicadores con valor, objetivo y tendencia respecto al periodo anterior",
+    "Interpreta cada indicador en una frase: qué significa para el negocio, no solo el número",
+    "Cierra con salidas de la revisión: decisiones tomadas, oportunidades de mejora, cambios en el SGSI y recursos aprobados o denegados, cada uno con responsable y fecha",
+    "Si falta un dato, escribe DATO NO DISPONIBLE y proponlo como acción para el próximo periodo en vez de inventarlo"
+  ],
+  "restricciones": [
+    "No inventes cifras ni tendencias",
+    "Máximo 4 páginas equivalentes",
+    "Evita la jerga: el acta la firma la dirección, no el departamento técnico"
+  ],
+  "formato_salida": {
+    "1_cabecera": "Fecha, lugar, asistentes, periodo revisado y nº de acta",
+    "2_entradas": "Un apartado por cada punto de la cláusula 9.3.2 con su contenido",
+    "3_cuadro_indicadores": "Indicador | Valor | Objetivo | Tendencia | Lectura en una frase",
+    "4_salidas": "Tabla de decisiones y acciones: Decisión | Justificación | Responsable | Fecha | Recursos",
+    "5_firmas": "Bloque de aprobación por la dirección"
+  },
+  "criterios_calidad": [
+    "Están cubiertos todos los puntos de entrada exigidos por la norma",
+    "Cada decisión tiene responsable y fecha",
+    "El documento se entiende leyéndolo sin conocer la norma"
+  ],
+  "tono": "Formal de acta, claro y breve"
+}

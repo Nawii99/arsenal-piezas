@@ -1,0 +1,46 @@
+{
+  "tarea": "Diseñar la proteccion contra fugas de agua, humo y gas con sensores, corte automatico y rutina de pruebas",
+  "contexto": {
+    "inmueble": "[VIVIENDA HABITUAL / SEGUNDA RESIDENCIA / PISO ALQUILADO / LOCAL], [M2] y [PLANTAS]",
+    "puntos_de_agua": "[LAVADORA, LAVAVAJILLAS, TERMO, CALDERA, BAÑOS, RIEGO]",
+    "gas": "[GAS NATURAL / BUTANO / NINGUNO]",
+    "tiempo_vacio": "[DIAS AL AÑO SIN NADIE]",
+    "llave_general_agua": "[DONDE ESTA Y SI ES ACCESIBLE]",
+    "quien_recibe_avisos": "[NOMBRES Y TELEFONOS], vecino o persona de confianza [SI/NO]"
+  },
+  "metodo": [
+    "1. Prioriza por daño esperado: primero fugas bajo lavadora, lavavajillas y termo, que son las que inundan pisos enteros",
+    "2. Coloca los sensores de agua en el suelo, en el punto mas bajo, pegados al aparato, no dentro del mueble alto",
+    "3. Decide si hay corte automatico: electrovalvula o motor sobre la llave general; sin corte, el sensor solo sirve si hay alguien cerca",
+    "4. Humo: detectores en pasillos, dormitorios y cocina (en cocina, mejor detector de calor para evitar falsas alarmas al freir)",
+    "5. Gas: sensor a la altura correcta segun el gas, arriba para gas natural, abajo para butano o propano",
+    "6. Define la cadena de avisos: sirena local, aviso al movil, aviso a la segunda persona pasados [MINUTOS] minutos sin reaccion",
+    "7. Escribe la prueba trimestral: mojar el sensor con un trapo humedo, pulsar el boton de test del detector, comprobar que cierra la valvula y que llegan los avisos"
+  ],
+  "restricciones": [
+    "Estos sensores no sustituyen a los sistemas obligatorios ni a una revision profesional de la instalacion de gas",
+    "El corte de agua debe poder abrirse a mano siempre",
+    "Detectores de humo con pila que avise de bateria baja y sirena propia, no solo notificacion en el movil",
+    "Si el inmueble esta alquilado, indica que se debe informar al inquilino de que hay sensores"
+  ],
+  "errores_frecuentes": [
+    "Sensor de agua colocado a media altura o encima del mueble: no toca el agua hasta que ya es tarde",
+    "Detector de humo en la cocina justo encima de la sarten: falsas alarmas y acaba desmontado",
+    "Valvula motorizada que necesita corriente y falla justo en un apagon",
+    "No probar nunca el sistema y descubrir a los dos años que la pila estaba muerta",
+    "Avisar solo al movil de una persona que ese fin de semana esta sin cobertura"
+  ],
+  "formato_salida": {
+    "mapa": "Estancia | Riesgo | Sensor propuesto | Colocacion exacta | Alimentacion",
+    "automatismos": "Evento | Accion inmediata | Aviso | Escalado si no hay respuesta",
+    "material": "Lista de compra con cantidades, coste aproximado y que exige fontanero o electricista",
+    "protocolo_pruebas": "Tabla con prueba, frecuencia, como se hace y resultado esperado",
+    "que_hacer_si_salta": "Instrucciones cortas para pegar dentro del armario del contador"
+  },
+  "criterios_calidad": [
+    "Cada riesgo grave tiene sensor y una accion, no solo una notificacion",
+    "El sistema sigue avisando aunque no haya internet o aunque falle la pasarela, o se indica claramente que no",
+    "Las pruebas se pueden hacer en menos de quince minutos",
+    "Las instrucciones de emergencia caben en media hoja"
+  ]
+}

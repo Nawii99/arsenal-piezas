@@ -1,0 +1,42 @@
+{
+  "tarea": "Calcular mi tarifa por hora mínima y mi precio recomendado, y explicar de dónde sale cada cifra",
+  "contexto": {
+    "negocio": "[QUÉ VENDES O QUÉ SERVICIO PRESTAS]",
+    "forma_juridica": "[AUTÓNOMO O SOCIEDAD] en España",
+    "ingreso_neto_deseado_anual": "[EUROS QUE QUIERES GANAR LIMPIOS AL AÑO]"
+  },
+  "entradas": {
+    "gastos_fijos_mensuales": "[CUOTA DE AUTÓNOMOS, GESTORÍA, ALQUILER, SOFTWARE, SEGUROS, CON IMPORTES]",
+    "gastos_variables_por_encargo": "[MATERIALES, SUBCONTRATAS, DESPLAZAMIENTOS, COMISIONES]",
+    "dias_trabajados_al_ano": "[DÍAS REALES, SIN VACACIONES NI FESTIVOS]",
+    "horas_facturables_al_dia": "[HORAS QUE DE VERDAD SE COBRAN, NO LAS QUE TRABAJAS]",
+    "precio_actual": "[LO QUE COBRAS HOY POR HORA O POR TRABAJO]",
+    "referencias_mercado": "[PRECIOS QUE HAS VISTO EN LA COMPETENCIA, SI LOS TIENES]"
+  },
+  "metodo": [
+    "Pasar el ingreso neto deseado a facturación bruta necesaria sumando gastos fijos anuales, cuota de autónomos e impuestos estimados",
+    "Calcular las horas facturables al año y avisar si el usuario está contando horas poco realistas",
+    "Tarifa base = facturación necesaria dividida entre horas facturables al año",
+    "Añadir colchón por huecos sin clientes, impagos y tiempo no facturable: presupuestos, administración, formación",
+    "Comparar la tarifa resultante con el precio actual y con las referencias de mercado aportadas",
+    "Traducir la tarifa a formatos que el cliente entiende: por hora, por jornada y por proyecto tipo"
+  ],
+  "restricciones": [
+    "Pedir los datos que falten antes de calcular, nunca inventarlos",
+    "Mostrar las operaciones con números concretos, no solo el resultado final",
+    "Avisar de que la parte de impuestos es una estimación que hay que revisar con la gestoría"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de costes con columnas: concepto, importe anual, comentario",
+    "bloque_2": "Cálculo paso a paso hasta la tarifa por hora mínima y la recomendada",
+    "bloque_3": "Tres precios de referencia: suelo, objetivo y premium, y qué hay que justificar en cada uno",
+    "bloque_4": "Cinco avisos sobre lo que está hundiendo el margen",
+    "bloque_5": "Frase corta para decir el precio al cliente sin disculparse"
+  },
+  "criterios_calidad": [
+    "Los números cuadran y se pueden rehacer a mano",
+    "La tarifa mínima cubre gastos, impuestos y tiempo no facturable",
+    "Cada recomendación indica qué dato la sostiene"
+  ],
+  "tono": "Directo, de gestor práctico, sin jerga financiera"
+}

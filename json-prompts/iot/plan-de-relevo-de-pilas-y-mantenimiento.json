@@ -1,0 +1,48 @@
+{
+  "tarea": "Crear el plan de mantenimiento de todos los dispositivos a pilas de una instalación: tipo de pila, vida esperada, aviso previo y calendario de relevo",
+  "contexto": {
+    "perfil": "Persona sin perfil técnico que mantiene sensores repartidos por una vivienda o un local",
+    "instalacion": "[VIVIENDA / LOCAL / VARIAS CASAS DE CLIENTES]"
+  },
+  "entradas": {
+    "dispositivos": "[LISTA: nombre, ubicación, marca y modelo, tipo de pila si lo sabes, fecha del último cambio]",
+    "criticidad": "[CUÁLES SON CRÍTICOS: cerradura, detector de humo, alarma, fuga de agua]",
+    "acceso": "[CUÁLES ESTÁN EN ALTO, EN FALSO TECHO O DETRÁS DE MUEBLES]",
+    "clima": "[HAY DISPOSITIVOS EN EXTERIOR, GARAJE O CÁMARA FRIGORÍFICA]"
+  },
+  "pasos": [
+    "1. Agrupa por tipo de pila real (CR2032, CR2450, AA, AAA, 18650, batería interna) y avisa de los modelos que llevan una pila rara y cara: conviene tener repuesto en casa.",
+    "2. Estima la vida útil por uso, no por catálogo: un sensor de puerta muy transitada dura mucho menos que uno de una ventana que casi no se abre. Divide por dos la duración del fabricante en los muy usados.",
+    "3. Aplica el factor frío: en garaje, exterior o cámara de congelado, las pilas alcalinas caen en picado. Marca esos puntos como candidatos a pila de litio.",
+    "4. Define para cada dispositivo el aviso previo de batería baja y en qué porcentaje o voltios saltará, y qué pasa si nadie lo atiende.",
+    "5. Agrupa los cambios en campañas: una o dos veces al año se cambian todas las del mismo grupo aunque alguna aguantase más. Es más barato que ir una a una.",
+    "6. Marca los dispositivos críticos, que se cambian por calendario sin esperar al aviso, y los que además exigen prueba de funcionamiento después.",
+    "7. Añade a la ronda lo que no es pila pero se hace a la vez: limpiar la lente del sensor de movimiento, comprobar que el adhesivo aguanta, ajustar el imán de un contacto de puerta que se ha descolocado.",
+    "8. Deja anotado el consumo de repuestos por año para poder comprarlas a granel y no de urgencia."
+  ],
+  "restricciones": [
+    "No prometas duraciones exactas: da rangos y di de qué depende",
+    "Nunca mezclar pilas nuevas y usadas en el mismo aparato ni tipos distintos",
+    "Recuerda dónde se reciclan y que las de botón son peligrosas con niños o mascotas",
+    "El plan debe caber en un calendario, no en un manual"
+  ],
+  "errores_tipicos": [
+    "Confiar en el aviso de batería baja de sensores que pasan del 30 % a muerto en un día",
+    "Comprar pilas de botón baratas y a granel de origen dudoso para un detector crítico",
+    "Cambiar la pila y no comprobar que el dispositivo ha vuelto a conectarse",
+    "Olvidar los dispositivos que están en falso techo hasta que fallan"
+  ],
+  "formato_salida": {
+    "1_tabla_dispositivos": "Columnas: dispositivo | zona | tipo de pila | crítico sí/no | último cambio | próximo cambio | grupo de campaña",
+    "2_campanas": "Fechas propuestas al año y qué se toca en cada una",
+    "3_compra": "Lista de repuestos anual con cantidades",
+    "4_ronda": "Checklist de la visita, en orden de recorrido físico por la casa o local",
+    "5_criticos": "Qué se prueba tras cambiar y cómo se comprueba que ha vuelto a estar en línea"
+  },
+  "criterios_calidad": [
+    "Ningún dispositivo se queda sin tipo de pila identificado o marcado como pendiente",
+    "Los críticos tienen cambio por calendario, no por aviso",
+    "La ronda sigue un recorrido físico lógico, sin ir y volver",
+    "La lista de compra anual es concreta y con cantidades"
+  ]
+}

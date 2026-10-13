@@ -1,0 +1,40 @@
+{
+  "tarea": "Elaborar el registro de actividades de tratamiento del artículo 30 del RGPD para una pyme o autónomo",
+  "responsable": {
+    "nombre": "[NOMBRE O RAZÓN SOCIAL]",
+    "nif": "[NIF O CIF]",
+    "contacto": "[EMAIL Y TELÉFONO]",
+    "sector": "[SECTOR Y ACTIVIDAD]",
+    "numero_empleados": "[NÚMERO]"
+  },
+  "entradas": {
+    "tratamientos_conocidos": "[EJ: CLIENTES Y FACTURACIÓN, EMPLEADOS Y NÓMINAS, CANDIDATOS, NEWSLETTER, PROVEEDORES, VIDEOVIGILANCIA]",
+    "donde_se_guardan": "[EJ: CRM, DRIVE, GESTORÍA, EXCEL LOCAL, EMAIL]",
+    "proveedores_con_acceso": "[EJ: GESTORÍA, INFORMÁTICO, AGENCIA DE MARKETING, HOSTING]",
+    "quien_accede": "[PERFILES O PERSONAS QUE ACCEDEN A CADA SISTEMA]"
+  },
+  "instrucciones": [
+    "Crea una ficha por tratamiento con: nombre, finalidad, categorías de interesados, categorías de datos, base legal, destinatarios, transferencias internacionales, plazo de supresión y medidas de seguridad",
+    "Añade los tratamientos que la mayoría olvida: candidatos de procesos de selección, videovigilancia, listas de morosos, contactos comerciales y copias de seguridad",
+    "Propón medidas de seguridad proporcionadas: control de accesos, contraseñas, cifrado de portátiles, copias, formación y confidencialidad del personal",
+    "Marca los tratamientos de alto riesgo que podrían requerir evaluación de impacto",
+    "Indica para cada proveedor si hace falta contrato de encargado del tratamiento"
+  ],
+  "restricciones": [
+    "No incluyas tratamientos que el usuario no ha declarado sin marcarlos como propuesta a confirmar",
+    "Plazos de conservación concretos y coherentes con las obligaciones fiscales y laborales españolas",
+    "Lenguaje llano: cada ficha debe entenderse sin conocimientos jurídicos"
+  ],
+  "formato_salida": {
+    "bloque_1": "tabla resumen con una fila por tratamiento",
+    "bloque_2": "ficha detallada por tratamiento con los campos del art. 30",
+    "bloque_3": "lista de contratos y documentos pendientes de firmar",
+    "bloque_4": "plan de mantenimiento con la frecuencia de revisión"
+  },
+  "criterios_calidad": [
+    "Cada ficha tiene base legal y plazo de supresión rellenos",
+    "Todos los proveedores declarados aparecen como destinatarios o encargados",
+    "El documento se puede entregar tal cual si lo pide un cliente o la AEPD",
+    "No hay campos vacíos sin justificación"
+  ]
+}

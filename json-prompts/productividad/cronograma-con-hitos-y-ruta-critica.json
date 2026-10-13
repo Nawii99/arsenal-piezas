@@ -1,0 +1,36 @@
+{
+  "tarea": "Convertir una lista de tareas con dependencias en un cronograma por semanas con hitos, y señalar la ruta crítica y el margen de cada tarea",
+  "contexto": {
+    "tareas": "[LISTA: ID, TAREA, HORAS, DEPENDE DE, RESPONSABLE]",
+    "inicio": "[DD/MM/AAAA]",
+    "fecha_limite": "[DD/MM/AAAA]",
+    "jornada": "[HORAS ÚTILES AL DÍA POR PERSONA, EJ: 6]",
+    "no_laborables": "[FESTIVOS, VACACIONES, DÍAS DE CIERRE]",
+    "esperas_externas": "[PLAZOS QUE NO CONTROLAS: ENTREGA DE PROVEEDOR, VALIDACIÓN DEL CLIENTE, TRÁMITES]"
+  },
+  "metodo": [
+    "Ordena las tareas respetando sus dependencias y calcula fecha de inicio y fin de cada una en días laborables",
+    "Incluye las esperas externas como tareas propias, con su duración, aunque no consuman horas del equipo",
+    "Calcula la cadena más larga de tareas encadenadas: esa es la ruta crítica y define la fecha final",
+    "Para el resto de tareas indica cuántos días de margen tienen antes de convertirse en críticas",
+    "Define entre 3 y 6 hitos, cada uno con la fecha y qué se puede enseñar ese día",
+    "Compara la fecha final calculada con la fecha límite y di si se llega, por cuánto y qué habría que cambiar si no"
+  ],
+  "restricciones": [
+    "Cuenta solo días laborables y descuenta los no laborables indicados",
+    "No solapes dos tareas del mismo responsable en el mismo día",
+    "No comprimas una tarea para que cuadre la fecha: si no cabe, se dice"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla con columnas ID, Tarea, Responsable, Inicio, Fin, Días de margen, Crítica (sí/no)",
+    "bloque_2": "Calendario por semanas: qué está en marcha en cada semana",
+    "bloque_3": "Lista de hitos con fecha y entregable visible",
+    "bloque_4": "Veredicto: fecha final calculada, si se llega a la fecha límite y las 3 tareas que hay que vigilar como si fueran de oro"
+  },
+  "criterios_calidad": [
+    "Ninguna tarea empieza antes de que termine aquella de la que depende",
+    "La ruta crítica es una cadena continua desde el inicio hasta la entrega",
+    "El veredicto da una fecha concreta, no un 'depende'"
+  ],
+  "tono": "preciso y numérico, explicando cada conclusión en una línea"
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar las etapas del embudo de ventas de mi negocio para configurarlas en el CRM, con criterio de salida objetivo, campos obligatorios y probabilidad orientativa por etapa",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_vendo": "[PRODUCTO O SERVICIO]",
+    "tipo_de_venta": "[A EMPRESAS / A PARTICULARES / MIXTA]",
+    "ticket_medio": "[IMPORTE EN EUROS]",
+    "ciclo_de_venta": "[DÍAS O SEMANAS DESDE EL PRIMER CONTACTO HASTA LA FIRMA]",
+    "equipo": "[CUÁNTAS PERSONAS VENDEN Y QUÉ HACE CADA UNA]"
+  },
+  "entradas": {
+    "como_vendo_hoy": "[DESCRIBE TU PROCESO ACTUAL PASO A PASO, TAL CUAL ES]",
+    "etapas_actuales": "[LAS QUE USAS HOY, O ESCRIBE NINGUNA]",
+    "motivos_de_perdida_habituales": "[POR QUÉ SUELES PERDER OPERACIONES]"
+  },
+  "reglas_de_diseño": [
+    "Entre 4 y 7 etapas, ni una más",
+    "Cada etapa se nombra por lo que ha hecho el cliente, no por lo que hemos hecho nosotros",
+    "El criterio de salida debe ser un hecho verificable, no una sensación del comercial",
+    "Incluir una etapa de cualificación con criterios de descarte claros",
+    "Definir también los estados finales: ganada, perdida y aparcada con fecha de revisión"
+  ],
+  "formato_salida": {
+    "tabla_etapas": "nº | nombre | qué significa | criterio de salida verificable | campos obligatorios en el CRM | días máximos en etapa | probabilidad orientativa",
+    "motivos_de_perdida": "Lista cerrada de 6 a 8 motivos para el desplegable del CRM",
+    "automatismos": "3 avisos automáticos sencillos que conviene configurar",
+    "nota_final": "Cómo explicar el nuevo embudo al equipo en 5 líneas"
+  },
+  "restricciones": [
+    "Nada de etapas ambiguas como interesado, en seguimiento o pendiente",
+    "No proponer campos que nadie vaya a rellenar",
+    "Las probabilidades deben sumar una progresión lógica y realista"
+  ],
+  "criterios_calidad": [
+    "Dos personas distintas colocarían la misma oportunidad en la misma etapa",
+    "Se puede configurar en cualquier CRM sin desarrollo a medida"
+  ]
+}

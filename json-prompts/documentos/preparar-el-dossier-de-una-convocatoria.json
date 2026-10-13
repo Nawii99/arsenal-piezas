@@ -1,0 +1,57 @@
+{
+  "tarea": "Preparar y revisar el expediente documental de una convocatoria antes de presentarlo",
+  "contexto": {
+    "tipo": "[SUBVENCION, LICITACION PUBLICA, ALTA DE PROVEEDOR, CONCURSO PRIVADO]",
+    "convocante": "[ORGANISMO O EMPRESA]",
+    "plazo_limite": "[FECHA Y HORA DE CIERRE]",
+    "forma_de_presentacion": "[SEDE ELECTRONICA, PLATAFORMA, EMAIL, PRESENCIAL]",
+    "quien_firma": "[PERSONA Y SI TIENE CERTIFICADO DIGITAL]"
+  },
+  "entradas": {
+    "bases": "[PEGA LAS BASES O EL PLIEGO, SOBRE TODO EL APARTADO DE DOCUMENTACION]",
+    "documentos_que_ya_tengo": "[LISTA DE ARCHIVOS CON SU FECHA DE EMISION]",
+    "datos_del_solicitante": "[NOMBRE FISCAL, NIF, DOMICILIO, ACTIVIDAD, ANTIGUEDAD]"
+  },
+  "pasos": [
+    "1. Extrae de las bases la lista literal de documentos exigidos, citando el apartado de cada uno",
+    "2. Separa lo obligatorio de lo que solo suma puntos",
+    "3. Para cada documento anota: quien lo emite, cuanto tarda en conseguirse, cuanto tiempo vale y en que formato lo piden",
+    "4. Cruza con lo que ya tengo y marca cada documento como listo, caducado, incompleto o por conseguir",
+    "5. Comprueba los requisitos de forma: firma electronica, tamaño maximo, nombre de los archivos, modelos oficiales obligatorios",
+    "6. Detecta los criterios de valoracion y di que documento demuestra cada uno",
+    "7. Construye el calendario hacia atras desde la fecha limite, dejando margen para los certificados que tardan",
+    "8. Señala los motivos de exclusion automatica que aparezcan en las bases",
+    "9. Escribe la revision final punto por punto para hacer el dia antes de enviar"
+  ],
+  "que_mirar": [
+    "Certificados de estar al corriente con Hacienda y Seguridad Social, que caducan",
+    "Modelos oficiales que hay que usar tal cual, sin rehacerlos",
+    "Limite de tamaño o de numero de archivos de la plataforma",
+    "Declaraciones responsables que hay que firmar aunque parezcan tramite",
+    "Horas de cierre: muchas convocatorias cierran a media tarde, no a medianoche"
+  ],
+  "errores_tipicos": [
+    "Dejar la firma electronica para el ultimo dia",
+    "Presentar un certificado emitido hace demasiado tiempo",
+    "Escanear torcido o en un formato que no admiten",
+    "Rellenar el formulario y no adjuntar la memoria"
+  ],
+  "restricciones": [
+    "No inventes requisitos que no esten en el texto de las bases",
+    "Cita el apartado exacto en cada requisito",
+    "Si las bases no dicen algo, escribe NO ESPECIFICADO y sugiere preguntarlo al organismo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha: convocante, objeto, plazo, forma de presentacion, quien firma",
+    "bloque_2": "Tabla de documentos: documento | obligatorio o puntua | apartado de las bases | quien lo emite | dias de gestion | estado",
+    "bloque_3": "Calendario hacia atras con fechas concretas",
+    "bloque_4": "Lista de motivos de exclusion automatica",
+    "bloque_5": "Revision final del dia anterior, en casillas"
+  },
+  "criterios_calidad": [
+    "Todo documento de la tabla remite a un apartado de las bases",
+    "Ningun documento aparece sin estado",
+    "El calendario deja al menos tres dias de margen antes del cierre",
+    "La revision final se hace en menos de quince minutos"
+  ]
+}

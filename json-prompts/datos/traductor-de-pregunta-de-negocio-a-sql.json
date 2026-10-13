@@ -1,0 +1,44 @@
+{
+  "tarea": "Traducir una pregunta de negocio escrita en español a una consulta SQL lista para copiar, pegar y ejecutar",
+  "contexto": {
+    "negocio": "[QUÉ VENDE TU NEGOCIO]",
+    "motor": "[MySQL | PostgreSQL | SQL Server | SQLite | BigQuery]",
+    "herramienta": "[phpMyAdmin | Metabase | DBeaver | Supabase | Looker Studio]",
+    "perfil_usuario": "No sabe SQL: necesita copiar, pegar y entender el resultado"
+  },
+  "entradas": {
+    "pregunta": "[TU PREGUNTA TAL CUAL, EJ: CUÁNTO FACTURÉ POR PRODUCTO EL MES PASADO]",
+    "esquema": "[PEGA AQUÍ TABLAS Y COLUMNAS, O EL CREATE TABLE SI LO TIENES]",
+    "periodo": "[FECHA DESDE] a [FECHA HASTA]",
+    "zona_horaria": "Europe/Madrid",
+    "moneda": "EUR"
+  },
+  "proceso": [
+    "Reformular la pregunta en una frase medible: qué se suma, qué se cuenta y por qué se agrupa",
+    "Elegir solo las tablas necesarias y declarar la clave de unión entre ellas",
+    "Decidir si los importes llevan IVA, descuentos o devoluciones y dejarlo escrito",
+    "Excluir pedidos cancelados, pruebas internas y registros duplicados",
+    "Filtrar fechas por rango cerrado-abierto, nunca aplicando funciones sobre la columna de fecha",
+    "Proponer una comprobación rápida para validar que el total cuadra con otra fuente"
+  ],
+  "restricciones": [
+    "Solo lectura: prohibido generar UPDATE, DELETE, DROP, TRUNCATE o ALTER",
+    "Nada de SELECT asterisco: nombrar cada columna",
+    "Sintaxis exacta del motor indicado, sin mezclar dialectos",
+    "Si el esquema no permite responder, decirlo y pedir la columna que falta"
+  ],
+  "formato_salida": {
+    "bloque_1": "La pregunta reformulada en una sola frase",
+    "bloque_2": "Consulta SQL en bloque de código, con comentarios en español en cada línea clave",
+    "bloque_3": "Qué devuelve: nombre de cada columna del resultado y su significado",
+    "bloque_4": "Supuestos que he tenido que asumir, en lista corta",
+    "bloque_5": "Prueba de cordura: consulta breve para comprobar que el total cuadra",
+    "bloque_6": "Tres variantes útiles cambiando solo el filtro: por mes, por cliente y por canal"
+  },
+  "criterios_calidad": [
+    "La consulta se ejecuta sin errores a la primera en el motor indicado",
+    "Los importes excluyen cancelados y devoluciones, o se avisa de lo contrario",
+    "Alguien sin SQL entiende qué devuelve leyendo solo el bloque 3"
+  ],
+  "tono": "Claro, directo, sin jerga técnica innecesaria"
+}

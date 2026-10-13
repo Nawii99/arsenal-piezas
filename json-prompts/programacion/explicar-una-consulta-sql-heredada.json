@@ -1,0 +1,36 @@
+{
+  "tarea": "Explicar en lenguaje llano qué calcula una consulta SQL heredada, cómo lo hace y en qué puede estar engañando",
+  "perfil_lector": "Dueño de un negocio sin formación técnica que tiene que fiarse de este número",
+  "entradas": {
+    "consulta": "[PEGA AQUÍ LA CONSULTA SQL QUE NO ENTIENDES]",
+    "motor_sql": "[POSTGRESQL / MYSQL / SQL SERVER / BIGQUERY]",
+    "lo_que_crees_que_hace": "[QUÉ TE HAN DICHO QUE CALCULA]",
+    "estructura_tablas": "[CREATE TABLE O DESCRIPCIÓN DE LAS TABLAS, SI LA TIENES]"
+  },
+  "procedimiento": [
+    "1. Resumir en una frase qué devuelve la consulta y con qué granularidad (una fila por qué cosa)",
+    "2. Desmontarla en bloques (FROM, JOIN, WHERE, GROUP BY, HAVING, funciones de ventana) y explicar cada bloque sin jerga",
+    "3. Traducir la métrica a una fórmula de negocio en una línea",
+    "4. Señalar filtros ocultos que dejan datos fuera y JOIN que pueden duplicar o perder filas",
+    "5. Comparar lo que hace de verdad con lo que el usuario cree que hace y marcar las diferencias"
+  ],
+  "puntos_a_vigilar": [
+    "LEFT JOIN con condición en el WHERE, que lo convierte en un INNER JOIN silencioso",
+    "DISTINCT que tapa duplicados en lugar de resolverlos",
+    "Rangos de fechas con BETWEEN que pierden el último día",
+    "COUNT sobre una columna con nulos, que no cuenta lo mismo que COUNT(*)",
+    "Divisiones sin protección contra cero y medias que ignoran nulos"
+  ],
+  "formato_salida": {
+    "1_en_una_frase": "Qué devuelve",
+    "2_paso_a_paso": "Tabla de dos columnas: bloque de SQL y su traducción",
+    "3_formula": "La métrica escrita como fórmula de negocio",
+    "4_avisos": "Diferencias entre lo que crees y lo que hace, ordenadas por gravedad",
+    "5_preguntas": "Qué preguntarle a quien la escribió"
+  },
+  "tono": "Directo y sin jerga; si aparece un término técnico, explicarlo entre paréntesis la primera vez",
+  "criterios_calidad": [
+    "Alguien sin perfil técnico puede repetir en voz alta qué calcula la consulta",
+    "No se afirma nada que no se deduzca de la consulta aportada"
+  ]
+}

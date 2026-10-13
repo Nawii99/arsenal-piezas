@@ -1,0 +1,39 @@
+{
+  "tarea": "Facilitar y documentar la retrospectiva de un proyecto cerrado y sacar mejoras aplicables",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL PROYECTO O CAMPAÑA]",
+    "periodo": "[FECHA INICIO - FECHA FIN]",
+    "equipo": ["[NOMBRE - ROL]"],
+    "objetivo_inicial": "[QUÉ SE QUERÍA CONSEGUIR]",
+    "resultado_real": "[QUÉ SE CONSIGUIÓ, CON DATOS SI LOS TIENES]"
+  },
+  "entradas": {
+    "lo_que_funciono": ["[HECHO CONCRETO]"],
+    "lo_que_fallo": ["[HECHO CONCRETO]"],
+    "comentarios_equipo": "[PEGA LO QUE TE HAYA DICHO LA GENTE]",
+    "comentarios_cliente": "[QUEJAS O ELOGIOS RECIBIDOS]",
+    "desviacion_plazo_y_coste": "[DÍAS Y EUROS DE MÁS O DE MENOS]"
+  },
+  "procedimiento": [
+    "Ordenar los hechos en una línea de tiempo del proyecto antes de opinar",
+    "Agrupar los fallos por causa: alcance mal definido, comunicación, estimación, dependencias externas o herramientas",
+    "Para cada fallo importante preguntar por qué tres veces hasta llegar a la causa de proceso, nunca a la culpa de una persona",
+    "Separar lo que está en tu mano cambiar de lo que no",
+    "Elegir solo tres mejoras para el próximo proyecto y definir cómo se notará que se aplican",
+    "Proponer las preguntas de la sesión en vivo con el equipo y cuánto durar cada bloque"
+  ],
+  "restricciones": [
+    "Nunca nombrar culpables: se habla de procesos y decisiones",
+    "Máximo tres mejoras; si salen más, priorizarlas y aparcar el resto",
+    "Cada mejora debe tener dueño y una señal medible de que se está aplicando"
+  ],
+  "formato_salida": {
+    "secciones": ["Línea de tiempo con los hitos y los puntos de dolor", "Qué mantener", "Qué dejar de hacer", "Tabla de fallos con causa raíz", "Las 3 mejoras con dueño, fecha y señal de éxito", "Guion de 45 minutos para hacer la sesión con el equipo"]
+  },
+  "criterios_calidad": [
+    "Toda conclusión se apoya en un hecho de las entradas",
+    "Las mejoras se pueden aplicar en el próximo proyecto sin presupuesto extra",
+    "El documento se lee en cinco minutos"
+  ],
+  "tono": "constructivo y sin buscar culpables"
+}

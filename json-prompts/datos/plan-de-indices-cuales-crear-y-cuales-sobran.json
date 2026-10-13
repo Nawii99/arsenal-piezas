@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar un plan de índices para un conjunto de consultas frecuentes: qué crear, qué fusionar y qué eliminar",
+  "entradas": {
+    "motor": "[MOTOR Y VERSIÓN]",
+    "tablas": "[ESQUEMA: TABLAS, COLUMNAS, TIPOS Y CLAVES PRIMARIAS]",
+    "indices_actuales": "[LISTA DE ÍNDICES EXISTENTES]",
+    "consultas_frecuentes": "[PEGA LAS 5 O 10 CONSULTAS MÁS EJECUTADAS]",
+    "perfil_de_uso": "[SE LEE MUCHO Y SE ESCRIBE POCO / SE ESCRIBE CONSTANTEMENTE]",
+    "tamano_tablas": "[FILAS APROXIMADAS POR TABLA]"
+  },
+  "metodo": [
+    "Extraer de cada consulta las columnas de WHERE, JOIN, ORDER BY y GROUP BY",
+    "Ordenar las columnas del índice compuesto: primero igualdad, luego rango, luego ordenación",
+    "Detectar índices redundantes: los que ya son prefijo de otro índice más amplio",
+    "Detectar índices que ninguna consulta usa y marcarlos como candidatos a borrar",
+    "Valorar índices que cubren la consulta entera para evitar ir a la tabla",
+    "Avisar de columnas con muy poca variedad de valores donde el índice apenas ayuda"
+  ],
+  "formato_salida": {
+    "tabla_propuesta": "Tabla con columnas Índice, Tabla, Columnas y orden, Consultas que acelera, Coste en escrituras, Prioridad",
+    "sentencias": "Bloque de código con los CREATE INDEX y DROP INDEX, cada uno con un comentario de una línea",
+    "a_no_hacer": "Índices que parecían buena idea y por qué no compensan",
+    "orden_de_despliegue": "En qué orden aplicarlos y cuándo hacerlo para molestar lo mínimo",
+    "medicion": "Cómo comprobar antes y después que cada índice sirve"
+  },
+  "restricciones": [
+    "Máximo los índices imprescindibles: justificar cada uno con una consulta concreta",
+    "Avisar si crear el índice puede bloquear la tabla en ese motor y cómo evitarlo",
+    "No proponer borrar un índice que sostiene una clave única o foránea"
+  ],
+  "criterios_calidad": [
+    "Cada índice propuesto se enlaza con al menos una consulta de la lista",
+    "El orden de las columnas está explicado, no puesto al azar"
+  ]
+}

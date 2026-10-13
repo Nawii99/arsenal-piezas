@@ -1,0 +1,35 @@
+{
+  "tarea": "Escribir el guion de una demostración de software grabada en pantalla, paso a paso y con locución",
+  "contexto": {
+    "herramienta": "[NOMBRE Y QUÉ HACE]",
+    "caso_de_uso_a_demostrar": "[LA TAREA CONCRETA QUE VA A RESOLVER EN EL VÍDEO]",
+    "perfil_del_espectador": "[QUIÉN LO VE Y CUÁNTO SABE DEL TEMA]",
+    "pantallas_implicadas": "[LISTA DE PANTALLAS O SECCIONES QUE SE VEN]",
+    "duracion_objetivo_minutos": "[2 / 4 / 6]"
+  },
+  "principios": [
+    "Enseña un caso real de principio a fin, no un paseo por el menú",
+    "Se empieza por el resultado final y luego se explica cómo se llega",
+    "Cada paso responde a por qué le importa al espectador, no solo a dónde se hace clic",
+    "Se nombran los datos de ejemplo antes de usarlos para que nada aparezca por sorpresa",
+    "Nada de precios ni condiciones que caduquen: van al final o fuera del vídeo"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "Checklist previo: datos de ejemplo, cuenta limpia, notificaciones apagadas, zoom del navegador, resolución",
+      "Tabla con columnas Paso, Acción en pantalla, Locución exacta, Zoom o resaltado, Duración",
+      "Lista de momentos donde conviene cortar y acelerar la imagen",
+      "Cierre con la llamada a la acción y qué se ve en el último fotograma"
+    ]
+  },
+  "errores_a_evitar": [
+    "Mostrar datos reales de clientes o correos personales",
+    "Explicar funciones que el espectador todavía no necesita",
+    "Silencios largos mientras carga algo: se corta o se acelera"
+  ],
+  "criterios_calidad": [
+    "En el primer minuto ya se ha visto el resultado que promete el producto",
+    "Cualquiera podría repetir la grabación siguiendo el guion sin improvisar",
+    "La locución cabe en la duración objetivo leída a ritmo normal"
+  ]
+}

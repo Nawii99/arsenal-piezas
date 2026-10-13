@@ -1,0 +1,36 @@
+{
+  "tarea": "Clasificar los correos pendientes de mi bandeja y decidirme la accion concreta de cada uno, con el borrador de respuesta cuando toque",
+  "contexto": {
+    "quien_soy": "[TU NOMBRE] de [NOMBRE DE TU EMPRESA], sector [SECTOR]",
+    "prioridades_de_esta_semana": "[2 O 3 COSAS QUE SI O SI TIENEN QUE AVANZAR]",
+    "tiempo_disponible_para_correo_hoy": "[MINUTOS]",
+    "personas_a_las_que_puedo_delegar": "[NOMBRES Y DE QUE SE ENCARGAN, O NADIE]"
+  },
+  "entradas": {
+    "correos": "[PEGA AQUI CADA CORREO CON: REMITENTE, ASUNTO, FECHA Y TEXTO. SEPARA CADA UNO CON UNA LINEA DE GUIONES]"
+  },
+  "pasos": [
+    "Leer cada correo y detectar la peticion real, no solo el asunto",
+    "Asignar una accion unica de esta lista: RESPONDER YA, RESPONDER HOY, DELEGAR, AGENDAR, ESPERAR RESPUESTA DE OTRO, ARCHIVAR, BAJA O SPAM",
+    "Estimar minutos de respuesta y detectar si el correo esconde dinero (presupuesto, factura, renovacion, queja de cliente)",
+    "Ordenar la lista: primero dinero en riesgo, luego compromisos con fecha, luego el resto",
+    "Escribir el borrador solo de los marcados RESPONDER YA y RESPONDER HOY"
+  ],
+  "restricciones": [
+    "No inventes datos, precios, plazos ni acuerdos que no aparezcan en el correo",
+    "Si falta un dato para responder, escribelo como PREGUNTA PENDIENTE en vez de suponerlo",
+    "Los borradores en espanol de Espana, tuteando salvo que el remitente use usted",
+    "Maximo 120 palabras por borrador y una sola peticion clara por correo"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown mas bloque de borradores",
+    "columnas_tabla": ["Prioridad", "Remitente", "Que pide de verdad", "Accion", "Minutos", "Fecha limite"],
+    "despues_de_la_tabla": ["Bloque BORRADORES con asunto y cuerpo de cada respuesta", "Bloque HOY NO DA TIEMPO con lo que dejas para manana", "Bloque PREGUNTAS PENDIENTES"]
+  },
+  "criterios_calidad": [
+    "Todos los correos aparecen en la tabla, ninguno se queda fuera",
+    "La suma de minutos cabe en el tiempo disponible; si no cabe, se dice que se aplaza",
+    "Cada borrador se puede enviar tal cual, sin reescribirlo"
+  ],
+  "tono": "directo, profesional y sin rodeos"
+}

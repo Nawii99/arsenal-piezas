@@ -1,0 +1,38 @@
+{
+  "tarea": "Generar 15 titulares con subtitular para la parte superior de una página de aterrizaje y priorizarlos",
+  "contexto": {
+    "producto": "[PRODUCTO O SERVICIO]",
+    "cliente": "[QUIÉN LO COMPRA Y QUÉ INTENTA CONSEGUIR]",
+    "problema": "[LO QUE LE QUITA EL SUEÑO HOY]",
+    "resultado_concreto": "[QUÉ CONSIGUE, CON QUÉ MEDIDA Y EN QUÉ PLAZO]",
+    "diferencia": "[QUÉ HACES DISTINTO A LAS ALTERNATIVAS]",
+    "titular_actual": "[TU TITULAR DE AHORA O 'NINGUNO']",
+    "nivel_de_consciencia": "[NO SABE QUE TIENE EL PROBLEMA / BUSCA SOLUCIÓN / COMPARA PROVEEDORES]"
+  },
+  "angulos_a_cubrir": [
+    "Resultado medible",
+    "Tiempo o rapidez",
+    "Evitar una pérdida o un error caro",
+    "Para quién es exactamente",
+    "Contraste con el método habitual",
+    "Objeción convertida en titular",
+    "Pregunta directa al lector",
+    "Prueba o cifra real del negocio"
+  ],
+  "reglas": [
+    "Máximo 12 palabras en el titular y 20 en el subtitular",
+    "Nada de 'soluciones innovadoras', 'llevamos tu negocio al siguiente nivel' ni superlativos vacíos",
+    "Cada titular debe poder entenderlo alguien que no conoce la marca",
+    "Si un titular usa una cifra, márcala como [DATO A CONFIRMAR] salvo que la haya aportado el usuario"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla",
+    "columnas": ["Nº", "Titular", "Subtitular", "Ángulo", "A quién le habla", "Riesgo de sonar exagerado (bajo/medio/alto)"],
+    "cierre": "Los 3 que probaría primero, con una frase de por qué y qué esperar medir en cada uno"
+  },
+  "criterios_calidad": [
+    "Los 15 son distintos de verdad, no la misma idea reescrita",
+    "Ninguno se podría poner en la web de un competidor sin que cante"
+  ],
+  "idioma": "Español de España, tuteando"
+}

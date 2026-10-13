@@ -1,0 +1,36 @@
+{
+  "tarea": "Auditar la pantalla [NOMBRE DE LA PANTALLA] y devolver los problemas de interfaz ordenados por gravedad",
+  "contexto": {
+    "producto": "[QUÉ HACE TU PRODUCTO]",
+    "pantalla": "[DESCRÍBELA O ADJUNTA LA CAPTURA]",
+    "objetivo_del_usuario": "[QUÉ VIENE A HACER AQUÍ]",
+    "objetivo_del_negocio": "[QUÉ QUIERES QUE PASE: COMPRAR, REGISTRARSE, PEDIR CITA]",
+    "sospecha": "[QUÉ TE CHIRRÍA, SI TIENES ALGUNA IDEA]"
+  },
+  "puntos_a_revisar": [
+    "Jerarquía visual: se ve en 3 segundos qué es lo más importante",
+    "Acción principal: hay una sola, destaca y su texto dice lo que hace",
+    "Contraste y tamaño de letra: mínimo 4.5:1 y 16 px en texto de lectura",
+    "Espaciado: los elementos relacionados están juntos y separados de los demás",
+    "Consistencia: mismos estilos para las mismas cosas en toda la pantalla",
+    "Carga cognitiva: número de opciones y de textos que compiten",
+    "Móvil: áreas táctiles mínimas de 44 px y nada pegado a los bordes",
+    "Confianza: se entiende el precio, las condiciones y qué pasa al pulsar"
+  ],
+  "restricciones": [
+    "No opines de gustos personales: cada problema debe apoyarse en un principio o en una medida",
+    "Máximo 12 problemas, sin inventar lo que no se ve en la pantalla",
+    "Cada problema lleva su arreglo concreto, no solo la queja"
+  ],
+  "formato_salida": {
+    "tipo": "tabla priorizada más resumen",
+    "columnas": ["gravedad alta/media/baja", "dónde", "qué falla", "por qué importa", "cómo se arregla", "esfuerzo"],
+    "extras": ["Los 3 arreglos que más impacto tendrían esta misma semana", "Qué está bien y conviene no tocar"]
+  },
+  "criterios_calidad": [
+    "Cada arreglo se puede ejecutar sin más preguntas",
+    "La prioridad va por impacto en el objetivo del negocio",
+    "Se reconoce también lo que ya funciona"
+  ],
+  "tono": "honesto y directo, sin suavizar los problemas"
+}

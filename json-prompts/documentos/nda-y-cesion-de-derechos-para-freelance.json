@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar un acuerdo de confidencialidad con cesion de derechos de propiedad intelectual para un colaborador externo en Espana, y valorar si procede un pacto de no competencia",
+  "partes": {
+    "empresa": "[NOMBRE Y CIF DE TU EMPRESA]",
+    "colaborador": "[NOMBRE Y NIF DEL FREELANCE O EMPRESA]"
+  },
+  "entradas": {
+    "proyecto": "[PROYECTO O SERVICIO EN EL QUE VA A TRABAJAR]",
+    "informacion_protegida": "[QUE INFORMACION LE VAS A ENSENAR: CLIENTES, PRECIOS, CODIGO, RECETAS, DATOS]",
+    "entregables": "[QUE CREARA: DISENOS, TEXTOS, SOFTWARE, FOTOS]",
+    "duracion_confidencialidad": "[ANOS DE CONFIDENCIALIDAD TRAS TERMINAR]",
+    "no_competencia": "[QUIERES PACTO DE NO COMPETENCIA? SI O NO Y QUE COMPENSACION OFRECES]",
+    "datos_personales": "[VA A TRATAR DATOS DE CLIENTES? SI O NO]"
+  },
+  "pasos": [
+    "Definir con precision que se considera informacion confidencial y que queda excluido",
+    "Redactar obligaciones de uso, custodia, devolucion y destruccion al terminar",
+    "Incluir cesion en exclusiva de los derechos de explotacion sobre los entregables, con alcance temporal, territorial y de medios, condicionada al pago",
+    "Anadir clausula de encargado de tratamiento si va a tratar datos personales",
+    "Valorar el pacto de no competencia: solo si hay interes comercial real, limite temporal razonable y compensacion economica, y avisar si no se cumplen",
+    "Fijar consecuencias del incumplimiento de forma proporcionada"
+  ],
+  "restricciones": [
+    "No pongas penalizaciones desorbitadas ni plazos indefinidos",
+    "Los derechos morales de autor no se ceden: indicalo",
+    "Si el usuario no ofrece compensacion, explica que el pacto de no competencia seria discutible"
+  ],
+  "formato_salida": {
+    "acuerdo": "Texto completo con clausulas numeradas",
+    "resumen_1_pagina": "Resumen en lenguaje llano para enviar por email al colaborador",
+    "avisos": "Maximo 5 puntos de riesgo o decisiones que debe tomar el usuario"
+  },
+  "criterios_calidad": [
+    "El alcance de la cesion de derechos esta escrito sin ambiguedad",
+    "El colaborador puede entender el resumen sin abogado"
+  ]
+}

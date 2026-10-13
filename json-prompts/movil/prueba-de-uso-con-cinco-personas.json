@@ -1,0 +1,43 @@
+{
+  "tarea": "Preparar y analizar una prueba de uso en el móvil con cinco personas",
+  "contexto": {
+    "producto": "[APP O WEB MÓVIL Y QUÉ HACE]",
+    "perfil_de_usuario": "[QUIÉN DEBERÍA USARLA: EDAD, SITUACIÓN, SOLTURA CON EL MÓVIL]",
+    "acciones_clave": "[LAS 3 O 4 COSAS QUE DEBERÍAN SABER HACER]",
+    "donde_hago_la_prueba": "[EN PERSONA / POR VIDEOLLAMADA]",
+    "version": "[PROTOTIPO / APP PUBLICADA]"
+  },
+  "pasos": [
+    "Escribe el criterio de reclutamiento y un mensaje corto para invitar a cinco personas del perfil, ninguna de ellas amiga que quiera quedar bien",
+    "Convierte cada acción clave en una tarea con contexto y sin decir dónde tocar, por ejemplo tienes que conseguir X para mañana",
+    "Prepara la introducción: se prueba la app y no a la persona, se pide pensar en voz alta y se pide permiso para grabar la pantalla",
+    "Escribe qué anotar en cada tarea: si la termina sola, dónde duda, qué dice, cuánto tarda y en qué palabra se atasca",
+    "Prepara las preguntas de cierre, incluida qué le contarías a un amigo sobre esto y qué te ha sobrado",
+    "Define la regla de decisión: lo que le pasa a tres de cinco es un problema real y va arriba en la lista",
+    "Prepara la plantilla del informe con problemas ordenados por gravedad y arreglo propuesto"
+  ],
+  "restricciones": [
+    "Nunca ayudes durante la tarea aunque se atasque: cuenta hasta veinte antes de intervenir",
+    "Nada de preguntar te gusta, se pregunta qué esperabas que pasara",
+    "Sesiones de veinte minutos como máximo y cuatro tareas como mucho",
+    "Grabar solo con permiso y sin recoger datos personales de la persona"
+  ],
+  "errores_frecuentes": [
+    "Explicar la app antes de empezar y arruinar la prueba",
+    "Hacerlo solo con gente del sector que ya entiende el vocabulario",
+    "Apuntar opiniones en vez de comportamientos",
+    "Cambiar la app después de la primera sesión y perder la comparación"
+  ],
+  "formato_salida": {
+    "guion": "Sesión minutada con introducción, tareas y cierre, con el texto exacto que digo",
+    "hoja_registro": "Tabla con tarea, completada sin ayuda, tiempo, punto de duda, frase textual",
+    "informe": "Plantilla con problema, cuántos de cinco lo sufren, gravedad y arreglo propuesto",
+    "mensaje_invitacion": "Texto para reclutar a los cinco participantes"
+  },
+  "criterios_calidad": [
+    "Las tareas están escritas como objetivos y no como instrucciones de dónde tocar",
+    "La hoja de registro recoge hechos observables, no opiniones",
+    "La regla de tres de cinco aparece aplicada en el informe",
+    "Cada problema sale con un arreglo concreto y con su gravedad"
+  ]
+}

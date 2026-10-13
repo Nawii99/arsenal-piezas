@@ -1,0 +1,36 @@
+{
+  "tarea": "Diseña mi política de incentivos para recuperar carritos abandonados: a quién dar descuento, cuánto y cuándo",
+  "datos_del_negocio": {
+    "ticket_medio": "[TICKET MEDIO EN EUROS]",
+    "margen_bruto": "[MARGEN BRUTO EN % SOBRE EL PRECIO DE VENTA]",
+    "coste_de_captar_cliente": "[CUÁNTO TE CUESTA TRAER UN CLIENTE NUEVO]",
+    "coste_de_envio_real": "[COSTE QUE TE SUPONE A TI EL ENVÍO]",
+    "compra_repetida": "[¿EL CLIENTE SUELE REPETIR? SÍ/NO Y CADA CUÁNTO]",
+    "incentivos_actuales": "[QUÉ OFRECES HOY EN LOS EMAILS DE CARRITO]"
+  },
+  "segmentos_a_definir": [
+    "cliente que ya compró antes",
+    "cliente nuevo con carrito por debajo del ticket medio",
+    "cliente nuevo con carrito por encima del ticket medio",
+    "carrito abandonado varias veces en el mismo mes",
+    "quien abandonó justo en la pantalla de pago"
+  ],
+  "reglas_que_debes_aplicar": [
+    "Nunca ofrecer un descuento que deje el pedido por debajo de [MARGEN MÍNIMO ACEPTABLE EN %]",
+    "Probar primero incentivos que no tocan el precio: envío gratis, garantía ampliada, muestra, pago fraccionado",
+    "No dar descuento en el primer contacto",
+    "Descuento con caducidad real y no repetible de forma indefinida",
+    "Evitar que el cliente aprenda a abandonar el carrito para recibir cupón"
+  ],
+  "formato_salida": {
+    "tabla_de_decision": ["segmento", "contacto_1", "contacto_2", "contacto_3", "incentivo_maximo", "caducidad", "por_que"],
+    "calculo": "Para cada incentivo, muestra el margen que queda por pedido con el ticket medio indicado y las cuentas hechas",
+    "reglas_antiabuso": "Lista de 4 reglas concretas para que no se convierta en un cupón permanente",
+    "resumen": "La política en 5 frases, para pegar en el manual del equipo"
+  },
+  "criterios_calidad": [
+    "Ningún incentivo propuesto deja el margen por debajo del mínimo indicado",
+    "Se ve el número, no solo la recomendación",
+    "Hay al menos dos alternativas al descuento en euros"
+  ]
+}

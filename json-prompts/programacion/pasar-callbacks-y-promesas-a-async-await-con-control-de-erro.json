@@ -1,0 +1,39 @@
+{
+  "tarea": "Convertir codigo asincrono con callbacks o cadenas de then a async/await, con manejo de errores robusto",
+  "contexto": {
+    "entorno": "[NODE / NAVEGADOR]",
+    "version_node_o_navegadores": "[EJ: NODE 20 / NAVEGADORES MODERNOS]",
+    "criticidad": "[SI FALLA SE PIERDE UN PEDIDO / SOLO ES UN AVISO INTERNO]"
+  },
+  "entradas": {
+    "codigo_actual": "[PEGA AQUI EL CODIGO CON CALLBACKS O THEN]",
+    "que_pasa_si_falla_cada_paso": "[REINTENTAR / ABORTAR TODO / SEGUIR SIN ESE DATO]",
+    "el_orden_importa": "[SI, CADA PASO NECESITA EL ANTERIOR / NO, PUEDEN IR A LA VEZ]"
+  },
+  "reglas_de_conversion": [
+    "Si los pasos son independientes, ejecutarlos en paralelo con Promise.all o Promise.allSettled",
+    "No poner await dentro de un bucle cuando las iteraciones no dependan entre si",
+    "Cada await que pueda fallar va cubierto por un try catch con mensaje util",
+    "Los errores se propagan con contexto: que operacion fallo y con que dato",
+    "Toda llamada de red lleva tiempo maximo de espera con AbortController",
+    "Reintentos solo en errores temporales de red o codigos 5xx, con espera creciente",
+    "Nada de tragarse errores con un catch vacio"
+  ],
+  "errores_frecuentes_a_evitar": [
+    "Usar forEach con funciones async y creer que espera",
+    "Olvidar el await y trabajar con una promesa en vez de con el valor",
+    "Mezclar then y await en la misma funcion",
+    "Reintentar operaciones que no se pueden repetir sin duplicar, como un cobro"
+  ],
+  "formato_salida": {
+    "1_codigo_nuevo": "Version final en async/await lista para pegar",
+    "2_comparativa": "Tabla: antes | despues | que mejora",
+    "3_diagrama_texto": "Orden de ejecucion en formato lista, marcando lo que va en paralelo",
+    "4_pruebas": "Tres escenarios a probar: todo bien, falla la red, respuesta lenta"
+  },
+  "criterios_calidad": [
+    "El comportamiento visible no cambia salvo en el manejo de errores",
+    "Ningun error queda silenciado",
+    "Se indica explicitamente que se ejecuta en paralelo y que en serie"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Crear la secuencia completa de mensajes de seguimiento de una devolucion, uno por cada estado del proceso",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "canal": "[WHATSAPP / EMAIL / SMS]",
+    "transportista": "[EMPRESA DE TRANSPORTE]",
+    "plazo_recogida": "[DIAS HABITUALES HASTA QUE RECOGEN]",
+    "plazo_revision": "[DIAS QUE TARDAS EN REVISAR EL PRODUCTO]",
+    "plazo_reembolso": "[DIAS HASTA QUE EL BANCO LO ABONA]"
+  },
+  "estados": [
+    "1. Solicitud recibida",
+    "2. Devolucion aprobada con instrucciones de envio",
+    "3. Recordatorio si no ha enviado el paquete en [X] dias",
+    "4. Paquete recibido y en revision",
+    "5. Revision correcta y reembolso emitido",
+    "6. Reembolso ya visible en su cuenta",
+    "7. Incidencia: producto incompleto, danado o distinto al declarado",
+    "8. Cambio en lugar de reembolso: nuevo pedido en camino"
+  ],
+  "reglas": [
+    "Cada mensaje da un dato nuevo, nunca repite lo mismo con otras palabras",
+    "Siempre incluye el numero de pedido y la siguiente fecha concreta",
+    "Nada de plazos vagos tipo en breve o lo antes posible",
+    "El mensaje 7 explica el problema con una foto y ofrece dos salidas"
+  ],
+  "formato_salida": "Tabla con columnas: Estado | Cuando se envia | Mensaje | Variables a rellenar",
+  "longitud": "Maximo 45 palabras por mensaje en WhatsApp y 90 en email",
+  "tono": "Tranquilo y resolutivo, tuteando, sin disculpas repetidas",
+  "criterios_calidad": [
+    "El cliente no necesita escribir para saber por donde va",
+    "Los mensajes se pueden automatizar sustituyendo solo variables entre llaves",
+    "Ningun mensaje genera una pregunta nueva"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "tarea": "Calcular el margen neto real por unidad y por mes de un producto vendido en marketplace y recomendar un precio de venta",
+  "moneda": "EUR",
+  "entradas": {
+    "producto": "[NOMBRE Y SKU]",
+    "precio_venta_con_iva": "[PRECIO]",
+    "tipo_iva": "[21 / 10 / 4]",
+    "coste_fabrica_unidad": "[COSTE]",
+    "transporte_y_aduana_unidad": "[COSTE]",
+    "embalaje_y_etiquetado_unidad": "[COSTE]",
+    "comision_marketplace_pct": "[% DE LA CATEGORÍA]",
+    "tarifa_logistica_unidad": "[FBA / ENVÍO PROPIO]",
+    "almacenaje_mensual_unidad": "[COSTE]",
+    "tasa_devoluciones_pct": "[% DE PEDIDOS DEVUELTOS]",
+    "coste_por_devolucion": "[LOGÍSTICA INVERSA + MERCANCÍA NO REVENDIBLE]",
+    "gasto_publicidad_por_venta": "[ACOS EN % O EUROS POR PEDIDO]",
+    "unidades_mes": "[UNIDADES]",
+    "margen_objetivo_pct": "[% QUE QUIERES GANAR]"
+  },
+  "metodo": [
+    "Quita primero el IVA del precio para trabajar con el ingreso neto",
+    "Resta en este orden: comisión, logística, almacenaje, coste del producto, coste medio de devoluciones y publicidad",
+    "Calcula margen por unidad, margen en porcentaje y beneficio mensual",
+    "Calcula el punto de equilibrio: cuántas unidades al mes cubren los costes fijos indicados",
+    "Calcula el precio mínimo necesario para alcanzar el margen objetivo",
+    "Haz tres escenarios: pesimista (devoluciones y publicidad un 50% peores), realista y optimista"
+  ],
+  "formato_salida": {
+    "tabla_desglose": "Concepto | euros por unidad | % sobre el precio sin IVA",
+    "resumen": "Margen por unidad, margen %, beneficio mensual y punto de equilibrio",
+    "escenarios": "Tabla de los tres escenarios con el margen resultante",
+    "precio_recomendado": "Precio sugerido con IVA y explicación en dos líneas",
+    "alertas": "Lista de los costes que más se comen el margen y qué palanca tocar en cada uno"
+  },
+  "criterios_calidad": [
+    "Muestra las operaciones, no solo el resultado final",
+    "Si el margen sale por debajo del 15% sin IVA, avisa de que el producto es frágil ante cualquier subida de tarifas",
+    "No redondees a tu favor y señala qué dato falta si alguna entrada viene vacía"
+  ],
+  "aviso": "Las tarifas cambian: comprueba la comisión y la tarifa logística vigentes en tu panel de vendedor antes de decidir"
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar el guion de diapositivas de una sesión formativa con notas de lo que dice el formador",
+  "entradas": {
+    "tema": "[TEMA DE LA SESIÓN]",
+    "duracion_min": "[MINUTOS TOTALES]",
+    "publico": "[QUIÉN ASISTE Y QUÉ ESPERA]",
+    "objetivo": "[QUÉ TIENEN QUE SABER HACER AL SALIR]",
+    "contenido_base": "[PEGA AQUÍ TUS APUNTES O EL TEMARIO]"
+  },
+  "reglas_de_ritmo": [
+    "Calcula una diapositiva cada 2 minutos aproximadamente y ajusta el número al tiempo dado",
+    "Cada 10 minutos hay una diapositiva de interacción: pregunta al grupo, mini ejercicio o votación a mano alzada",
+    "La primera diapositiva plantea el problema real del asistente, no la agenda",
+    "La agenda, si la pones, va en la segunda y en una sola línea por bloque"
+  ],
+  "reglas_de_pantalla": [
+    "Máximo 6 palabras en el titular y máximo 4 viñetas de una línea",
+    "Una idea por diapositiva: si hay dos, se parte en dos",
+    "Indica qué apoyo visual pide cada diapositiva: esquema, tabla, foto, captura o gráfico"
+  ],
+  "formato_salida": "Tabla con columnas: número, titular en pantalla, contenido en pantalla, apoyo visual sugerido, notas del formador (lo que dices, 40-70 palabras) y minutos",
+  "extras": [
+    "Al final, lista de 5 preguntas que probablemente hará el público con su respuesta corta",
+    "Diapositiva de cierre con los 3 puntos que deben recordar y la siguiente acción"
+  ],
+  "restricciones": [
+    "Nada de diapositivas de 'gracias' ni de citas célebres de relleno",
+    "No inventes estadísticas: si hace falta un dato escribe [DATO A COMPROBAR]"
+  ],
+  "criterios_calidad": [
+    "La suma de minutos coincide con la duración indicada",
+    "Otra persona podría dar la clase leyendo solo las notas del formador",
+    "Ninguna diapositiva se lee en voz alta tal cual"
+  ]
+}

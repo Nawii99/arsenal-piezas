@@ -1,0 +1,39 @@
+{
+  "tarea": "Comparar la rentabilidad de cada canal de captación calculando coste por cliente, margen aportado y retorno, y proponer cómo repartir el presupuesto",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y TICKET MEDIO]",
+    "periodo": "[ÚLTIMOS 3, 6 O 12 MESES]",
+    "presupuesto_mensual_marketing": "[EUROS]"
+  },
+  "entradas": {
+    "canales": "[LISTA: NOMBRE DEL CANAL, GASTO TOTAL, CLIENTES NUEVOS CONSEGUIDOS, VENTAS GENERADAS SIN IVA]",
+    "margen_bruto_medio": "[PORCENTAJE DE MARGEN SOBRE LA VENTA]",
+    "permanencia_media_cliente": "[MESES O NÚMERO DE COMPRAS REPETIDAS]",
+    "coste_interno_por_canal": "[HORAS PROPIAS O DE TU EQUIPO DEDICADAS A CADA CANAL]"
+  },
+  "pasos": [
+    "Calcula por canal el coste de captación: gasto total más coste de las horas internas, dividido entre clientes nuevos",
+    "Calcula el margen que deja un cliente en su primera compra y el margen a lo largo de toda su vida como cliente",
+    "Calcula la relación entre valor del cliente y coste de captación, y márcala en verde si supera [RATIO OBJETIVO, POR EJEMPLO 3]",
+    "Calcula los meses que tarda cada canal en recuperar lo invertido; avisa si supera lo que aguanta tu caja",
+    "Señala los canales donde el coste de captación se come el margen entero",
+    "Propón un reparto nuevo del presupuesto mensual, canal por canal, en euros, sin aumentar el total",
+    "Indica qué dato falta medir para que el próximo análisis sea más fiable"
+  ],
+  "restricciones": [
+    "No confundas facturación con margen: el canal que más factura puede ser el menos rentable",
+    "Si un canal tiene menos de [MÍNIMO DE CLIENTES] clientes, avisa de que los datos no son concluyentes",
+    "No recomiendes apagar del todo el canal que más clientes trae sin proponer una prueba controlada primero"
+  ],
+  "formato_salida": {
+    "tipo": "tabla comparativa + plan de reparto",
+    "columnas": ["Canal", "Gasto", "Clientes nuevos", "Coste por cliente", "Margen primer pedido", "Valor de vida", "Ratio valor/coste", "Meses de recuperación", "Semáforo"],
+    "plan": "Reparto propuesto del presupuesto en euros por canal, con el motivo en una línea cada uno"
+  },
+  "criterios_calidad": [
+    "Cada canal tiene semáforo verde, ámbar o rojo con su umbral numérico explícito",
+    "El reparto propuesto suma exactamente el presupuesto disponible",
+    "Se distingue entre canal caro pero rentable y canal barato pero inútil"
+  ],
+  "tono": "Directo, orientado a decidir dónde poner el dinero el mes que viene"
+}

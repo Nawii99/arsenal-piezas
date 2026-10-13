@@ -1,0 +1,49 @@
+{
+  "tarea": "imagen principal de producto para ficha de tienda",
+  "producto": {
+    "nombre": "[PRODUCTO]",
+    "material": "[MATERIAL PRINCIPAL]",
+    "color": "[COLOR EXACTO O CODIGO]",
+    "medidas_reales_cm": "[ALTO x ANCHO x FONDO]",
+    "detalle_que_no_se_puede_perder": "[COSTURA, LOGO, TEXTURA...]"
+  },
+  "encuadre": {
+    "plano": "producto completo, sin recortar ninguna parte",
+    "angulo": "tres cuartos, camara a la altura del centro del producto",
+    "lente_equivalente_mm": 85,
+    "aire_libre_por_lado_porcentaje": 12,
+    "producto_centrado": true
+  },
+  "luz": {
+    "esquema": "ventana grande suave a 45 grados por la izquierda",
+    "relleno": "reflector blanco a la derecha",
+    "sombra": "suave y corta bajo el producto, nunca sombra dura",
+    "prohibido": ["flash directo", "brillos quemados sin detalle", "dos sombras cruzadas"]
+  },
+  "fondo": {
+    "tipo": "blanco liso continuo",
+    "valor_rgb": [255, 255, 255],
+    "separacion_producto_fondo_cm": 60,
+    "nota": "si el producto es blanco, usa gris muy claro para que no desaparezca el borde"
+  },
+  "salida": {
+    "proporcion": "1:1",
+    "lado_px": 2000,
+    "formato": "JPG calidad alta",
+    "peso_max_kb": 500,
+    "variantes": ["frontal", "tres cuartos", "detalle macro", "con referencia de escala"]
+  },
+  "errores_a_evitar": [
+    "cambiar el color real del producto al retocar",
+    "quitar el fondo dejando halo blanco en los bordes",
+    "inventar piezas, botones o acabados que el producto no tiene",
+    "escalar una foto pequena y publicarla pastosa",
+    "que el reflejo del suelo invente una base que no existe"
+  ],
+  "control": {
+    "revision_humana": "obligatoria antes de publicar: comparar con el producto fisico a la vista",
+    "si_aparecen_personas": "hace falta permiso escrito de quien aparece; no generes caras reconocibles sin el",
+    "aviso_imagen_generada": "si la imagen es generada o el producto se ve distinto al real, indicalo en la ficha",
+    "legal": "en venta a consumidor la imagen debe corresponderse con lo que se entrega; una foto enganosa es publicidad enganosa"
+  }
+}

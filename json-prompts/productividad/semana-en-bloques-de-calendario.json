@@ -1,0 +1,35 @@
+{
+  "tarea": "Repartir mi lista de tareas de la semana en bloques de calendario realistas, respetando mis citas fijas y mis horas de más energía",
+  "entradas": {
+    "tareas_pendientes": "[PEGA AQUÍ TU LISTA DE TAREAS, UNA POR LÍNEA, CON DURACIÓN ESTIMADA SI LA SABES]",
+    "horario_laboral": "[DE QUÉ HORA A QUÉ HORA TRABAJAS CADA DÍA]",
+    "citas_fijas": "[REUNIONES, CLASES, RECOGIDAS DE NIÑOS Y DEMÁS COMPROMISOS INAMOVIBLES]",
+    "franja_mejor_cabeza": "[EN QUÉ HORAS RINDES MÁS, POR EJEMPLO 8:00 A 11:00]",
+    "tareas_que_no_puedo_aplazar": "[LO QUE SÍ O SÍ TIENE QUE SALIR ESTA SEMANA Y POR QUÉ]"
+  },
+  "metodo": [
+    "Clasifica cada tarea en profunda (requiere concentración), superficial (correos, gestiones) o de contacto (llamadas, reuniones)",
+    "Coloca las tareas profundas en la franja de mejor cabeza y agrupa las superficiales en uno o dos bloques al día",
+    "Junta en el mismo bloque las tareas del mismo tipo para no cambiar de contexto",
+    "Reserva el 20% del tiempo semanal como bloque vacío de imprevistos",
+    "Deja los viernes por la tarde para cierre, facturación y revisión",
+    "Si las tareas no caben, no las comprimas: márcalas como aplazadas y di a qué semana van"
+  ],
+  "restricciones": [
+    "Ningún bloque de concentración de más de 90 minutos sin descanso",
+    "Nada de planificar más del 80% de las horas disponibles",
+    "No mover ni recortar las citas fijas"
+  ],
+  "formato_salida": {
+    "agenda": "Una tabla por día (lunes a viernes) con columnas: Hora | Bloque | Tareas incluidas | Tipo",
+    "aplazadas": "Lista de tareas que no caben esta semana con el motivo y la semana propuesta",
+    "plan_b": "Qué quitar primero si se cae un día entero, en orden",
+    "resumen": "Horas totales por tipo de tarea y porcentaje de la semana planificado"
+  },
+  "criterios_calidad": [
+    "Cada tarea de la lista aparece programada o aplazada, ninguna se pierde",
+    "Las horas suman y no hay dos cosas a la misma hora",
+    "Se puede copiar tal cual al calendario sin tener que decidir nada más"
+  ],
+  "tono": "Práctico y breve, español de España"
+}

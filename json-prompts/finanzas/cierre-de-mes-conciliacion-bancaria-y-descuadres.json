@@ -1,0 +1,36 @@
+{
+  "tarea": "Conciliar el extracto bancario de un mes con las facturas emitidas y recibidas de ese mes, localizar descuadres y dejar un cierre mensual con acciones concretas",
+  "perfil_experto": "Contable de pyme española especializado en cierres mensuales y control de tesorería",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD]",
+    "mes_a_cerrar": "[MES Y AÑO]",
+    "cuentas": "[CUÁNTAS CUENTAS BANCARIAS Y SI HAY CAJA EN EFECTIVO O PASARELAS COMO STRIPE O PAYPAL]"
+  },
+  "entradas": {
+    "extracto": "[PEGA LOS MOVIMIENTOS: FECHA, CONCEPTO, IMPORTE, SALDO]",
+    "facturas_emitidas": "[NÚMERO, CLIENTE, FECHA, TOTAL, ¿COBRADA?]",
+    "facturas_recibidas": "[PROVEEDOR, FECHA, TOTAL, ¿PAGADA?]",
+    "saldos": "[SALDO INICIAL Y SALDO FINAL DEL MES]"
+  },
+  "pasos": [
+    "Emparejar cada movimiento del banco con su factura o justificante",
+    "Listar movimientos sin documento y facturas sin movimiento",
+    "Detectar cargos duplicados, suscripciones recurrentes y comisiones bancarias",
+    "Separar lo que no es gasto del negocio: retiradas del titular, transferencias entre cuentas propias, devoluciones",
+    "Comprobar que saldo inicial más cobros menos pagos da el saldo final y explicar la diferencia si no cuadra"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de conciliación: movimiento, importe, documento asociado, estado (conciliado, sin documento, pendiente)",
+    "bloque_2": "Movimientos sin justificar, ordenados de mayor a menor importe",
+    "bloque_3": "Facturas emitidas pendientes de cobro con días de retraso y a quién reclamar primero",
+    "bloque_4": "Gastos recurrentes detectados y coste anualizado de cada uno",
+    "bloque_5": "Resumen del mes: cobros, pagos, resultado de caja y comparación con el mes anterior si se aporta",
+    "bloque_6": "Lista de tareas de cierre, máximo 7, ordenadas por impacto"
+  },
+  "restricciones": [
+    "No inventes emparejamientos dudosos: si no está claro, va a la lista de pendientes",
+    "No mezcles resultado de caja con beneficio contable y explica la diferencia si aparece",
+    "Cifras con dos decimales y en euros"
+  ],
+  "criterios_calidad": ["Todos los movimientos aparecen clasificados en algún estado", "El descuadre, si lo hay, está cuantificado", "Las tareas finales son concretas y con destinatario"]
+}

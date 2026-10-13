@@ -1,0 +1,41 @@
+{
+  "tarea": "Preparar la migración de mis datos comerciales a un CRM nuevo: mapeo campo a campo, orden de importación, limpieza previa y comprobaciones posteriores",
+  "contexto": {
+    "origen": "[HOJA DE CÁLCULO / CRM ANTIGUO / AGENDA DE CORREO]",
+    "destino": "[CRM AL QUE MIGRAS]",
+    "volumen": "[Nº DE CONTACTOS, EMPRESAS Y OPORTUNIDADES]",
+    "quien_lo_hace": "[TÚ SOLO / CON AYUDA]",
+    "fecha_objetivo": "[CUÁNDO QUIERES ESTAR TRABAJANDO EN EL CRM NUEVO]"
+  },
+  "entradas": {
+    "cabeceras_origen": "[PEGA LAS COLUMNAS ACTUALES TAL CUAL SE LLAMAN]",
+    "muestra_filas": "[PEGA 10 FILAS DE EJEMPLO]",
+    "objetos_destino": "[CONTACTOS, EMPRESAS, OPORTUNIDADES, ACTIVIDADES Y CAMPOS DISPONIBLES]",
+    "imprescindible_conservar": "[QUÉ INFORMACIÓN NO PUEDES PERDER BAJO NINGÚN CONCEPTO]"
+  },
+  "pasos": [
+    "Clasificar cada columna de origen en el objeto que le corresponde en el destino",
+    "Proponer el campo destino exacto, o un campo personalizado si no existe equivalente",
+    "Señalar las columnas que no hay que migrar y por qué",
+    "Definir las transformaciones necesarias: formatos de fecha, importes con coma o punto, teléfonos, sí o no a verdadero o falso",
+    "Establecer el orden de importación para que las relaciones no se rompan",
+    "Definir la clave única de cada objeto para poder reimportar sin duplicar"
+  ],
+  "formato_salida": {
+    "tabla_mapeo": "columna origen | ejemplo de valor | objeto destino | campo destino | transformación | obligatorio | notas",
+    "orden_importacion": "Lista numerada de ficheros a subir y en qué orden",
+    "limpieza_previa": "Checklist de lo que hay que arreglar en el origen antes de importar",
+    "errores_tipicos": "6 fallos habituales en migraciones y cómo evitarlos",
+    "verificacion": "Comprobaciones a hacer después de importar, con el número esperado en cada una",
+    "plan_b": "Cómo dejar copia de seguridad y cómo volver atrás si algo sale mal"
+  },
+  "restricciones": [
+    "No propongas campos personalizados si existe uno estándar equivalente",
+    "Marca cualquier columna ambigua como pendiente de decisión en vez de adivinar",
+    "Nada de scripts ni programación: todo con exportar, editar en hoja de cálculo e importar"
+  ],
+  "criterios_calidad": [
+    "Se puede seguir sin saber nada de bases de datos",
+    "Después de la migración, los totales de registros e importes cuadran con el origen"
+  ]
+}

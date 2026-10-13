@@ -1,0 +1,32 @@
+{
+  "tarea": "Auditar el contraste y la accesibilidad de una paleta y devolver correcciones concretas",
+  "contexto": {
+    "colores": "[LISTA DE HEX CON SU NOMBRE, POR EJEMPLO primario #1F6FEB, fondo #FFFFFF, texto #333333]",
+    "combinaciones_en_uso": "[TEXTO SOBRE FONDO, BOTON Y SU TEXTO, ENLACES, AVISOS]",
+    "nivel_objetivo": "[AA NORMAL O AAA SI ES SECTOR PUBLICO]",
+    "tamanos_de_texto": "[TAMANOS EN LOS QUE USAS CADA COLOR]"
+  },
+  "proceso": [
+    "Calcula la ratio de contraste de cada pareja y compara con 4,5 para texto normal, 3,0 para texto grande y 3,0 para bordes e iconos",
+    "Marca cada pareja como pasa, justo o falla",
+    "Para cada fallo propon el HEX corregido mas cercano al original que si cumple, cambiando solo la luminosidad",
+    "Detecta apoyos solo en color, por ejemplo errores marcados unicamente en rojo, y propon icono o texto de apoyo",
+    "Simula daltonismo (protanopia, deuteranopia) y avisa si dos colores se confunden",
+    "Revisa el estado de foco del teclado y el color de los enlaces dentro de texto"
+  ],
+  "restricciones": [
+    "No cambies el tono de marca: ajusta solo claridad y saturacion",
+    "No propongas gris claro sobre blanco para texto",
+    "Da siempre el HEX corregido, nunca un consejo vago"
+  ],
+  "formato_salida": {
+    "tipo": "informe de auditoria",
+    "secciones": ["Resumen en 3 lineas", "Tabla de parejas con ratio y veredicto", "Tabla de correcciones con HEX antes y despues", "Problemas de daltonismo", "Lista de arreglos ordenada por urgencia"]
+  },
+  "criterios_calidad": [
+    "Cada fallo lleva su solucion con codigo exacto",
+    "Los numeros de contraste aparecen con un decimal",
+    "Se distingue lo urgente de lo cosmetico"
+  ],
+  "tono": "Tecnico pero explicado; nada de sermones sobre accesibilidad"
+}

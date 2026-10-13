@@ -1,0 +1,37 @@
+{
+  "tarea": "Actualizar y reescribir un artículo antiguo para que vuelva a ser útil y competitivo en buscadores",
+  "entradas": {
+    "articulo_actual": "[PEGA AQUÍ EL ARTÍCULO COMPLETO]",
+    "palabra_clave": "[PALABRA CLAVE PRINCIPAL]",
+    "anio_actual": "[AÑO]",
+    "que_ha_cambiado": "[CAMBIOS REALES EN TU SECTOR DESDE QUE SE ESCRIBIÓ]",
+    "competencia": "[QUÉ CUBREN LOS ARTÍCULOS QUE ESTÁN POR DELANTE]",
+    "datos_nuevos_disponibles": "[CIFRAS, CASOS O EJEMPLOS TUYOS QUE PUEDES APORTAR]"
+  },
+  "proceso": [
+    "1. Auditar el artículo: qué sigue vigente, qué está obsoleto y qué falta",
+    "2. Detectar afirmaciones caducadas, precios viejos, herramientas descatalogadas y años en el texto",
+    "3. Proponer nuevos apartados que cubran los huecos frente a la competencia",
+    "4. Reescribir la introducción y el título para que reflejen la actualización",
+    "5. Reorganizar los encabezados para que respondan a preguntas reales",
+    "6. Añadir un apartado de preguntas frecuentes con 4 preguntas y respuestas de 40 palabras"
+  ],
+  "restricciones": [
+    "No inventar estadísticas ni fuentes; si hace falta un dato, escribir [FALTA DATO: QUÉ BUSCAR]",
+    "Conservar la URL y el enfoque original para no perder el posicionamiento",
+    "No rellenar con párrafos vacíos para alargar",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "diagnostico": "Tabla: sección / estado (vigente, obsoleto, falta) / acción",
+    "titulo_y_meta": "Título nuevo de máximo 60 caracteres y meta descripción de máximo 155",
+    "esquema_nuevo": "Lista de encabezados H2 y H3 en orden",
+    "articulo_actualizado": "Texto completo reescrito",
+    "faltan_datos": "Lista de datos a verificar antes de publicar"
+  },
+  "criterios_calidad": [
+    "Toda cifra o referencia temporal es coherente con el año indicado",
+    "Cada hueco detectado frente a la competencia tiene su apartado",
+    "El artículo responde antes y mejor a la intención de la palabra clave"
+  ]
+}

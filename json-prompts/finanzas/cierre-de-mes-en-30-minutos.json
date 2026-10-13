@@ -1,0 +1,55 @@
+{
+  "tarea": "Ejecutar el cierre mensual del negocio en media hora y dejar un cuadro de seis números con su lectura",
+  "contexto": {
+    "negocio": "[QUÉ VENDES]",
+    "nivel": "El dueño no sabe contabilidad y no quiere aprenderla",
+    "herramientas": "[BANCO ONLINE, HOJA DE CÁLCULO, PASARELA DE COBRO, PROGRAMA DE FACTURACIÓN SI HAY]"
+  },
+  "entradas": {
+    "mes": "[MES Y AÑO QUE SE CIERRA]",
+    "movimientos_banco": "[EXTRACTO DEL MES O RESUMEN DE ENTRADAS Y SALIDAS]",
+    "cobros_por_pasarela": "[TOTAL BRUTO Y COMISIONES]",
+    "facturas_emitidas": "[NÚMERO E IMPORTE TOTAL]",
+    "facturas_pendientes_de_cobro": "[LISTA CON IMPORTE Y DÍAS DE ANTIGÜEDAD]",
+    "clientes_nuevos": "[CUÁNTOS Y DE DÓNDE VINIERON]",
+    "gasto_en_captacion": "[ANUNCIOS Y ACCIONES DE VENTA DEL MES]",
+    "meses_anteriores": "[LOS MISMOS NÚMEROS DE LOS 3 MESES PREVIOS SI EXISTEN]"
+  },
+  "procedimiento": [
+    "1. Empieza por el dinero cobrado, no por lo facturado: suma lo que entró de verdad y réstale comisiones",
+    "2. Suma lo que salió y sepáralo en tres bloques: coste directo de lo vendido, gastos fijos y captación",
+    "3. Aparta mentalmente el IVA cobrado del saldo: lo que quede es lo disponible de verdad",
+    "4. Calcula los seis números: cobrado, margen aproximado, gastos fijos, caja a fin de mes, pendiente de cobro y clientes nuevos",
+    "5. Calcula el coste de conseguir un cliente: gasto en captación dividido entre clientes nuevos del mes",
+    "6. Compara cada número con los tres meses anteriores y marca la tendencia con una flecha",
+    "7. Revisa las alarmas: un cliente por encima del 30% de los ingresos, facturas de más de 60 días, gastos fijos creciendo más rápido que los ingresos",
+    "8. Escribe la lectura del mes en tres frases: qué funcionó, qué falló y qué se hace distinto el mes que viene",
+    "9. Deja la lista de tareas del cierre para repetirla igual el mes que viene"
+  ],
+  "restricciones": [
+    "Nada de terminología contable: ni amortizaciones, ni devengo, ni cuentas de mayor",
+    "Los números aproximados valen, pero deben calcularse igual todos los meses para poder compararse",
+    "Máximo seis números en el cuadro; si aparece un séptimo, elimina otro",
+    "No sustituye a la gestoría ni a las declaraciones"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Mirar solo el saldo del banco y creer que ese dinero es todo tuyo",
+    "Contar como ingreso lo facturado y no lo cobrado",
+    "Cambiar el método de cálculo cada mes y perder la comparación",
+    "Dejar el cierre para cuando haya tiempo"
+  ],
+  "formato_salida": {
+    "1_cuadro": "Tabla con los seis números del mes, el mes anterior y la flecha de tendencia",
+    "2_alarmas": "Las que se hayan disparado, con el dato que las dispara",
+    "3_lectura": "Tres frases: funcionó, falló, cambio",
+    "4_acciones": "Máximo tres tareas para el mes siguiente con fecha",
+    "5_checklist": "Los pasos del cierre en orden, para repetirlo en 30 minutos",
+    "estilo": "Telegráfico, sin adornos, tuteando"
+  },
+  "criterios_calidad": [
+    "Los seis números se pueden sacar de un extracto bancario y una hoja de cálculo",
+    "La comparación con meses previos usa el mismo criterio de cálculo",
+    "Las acciones salen de un número concreto del cuadro",
+    "El cierre completo se hace en menos de 30 minutos"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "tarea": "Revisar un lote de imagenes generadas con IA y decidir cuales se publican, cuales se regeneran y cuales se descartan.",
+  "contexto": {
+    "quien_lo_usa": "Persona que genera fotos de producto o de ambiente con IA para su tienda, sus anuncios o sus redes.",
+    "momento": "Ya hay un lote de imagenes elegidas a ojo y falta el filtro final antes de publicar.",
+    "objetivo": "Que ninguna imagen delate que es de IA por un fallo tonto ni cause un problema legal."
+  },
+  "entradas": {
+    "imagenes": "[ADJUNTA O DESCRIBE LAS IMAGENES A REVISAR]",
+    "uso_previsto": "[FICHA DE PRODUCTO, ANUNCIO DE PAGO, INSTAGRAM, CARTELERIA IMPRESA]",
+    "producto_real": "[DESCRIPCION EXACTA DEL PRODUCTO: COLOR, MATERIAL, TAMAÑO, ETIQUETAS]",
+    "normas_de_marca": "[COLORES, TIPOGRAFIA, TONO, QUE NUNCA APARECE]",
+    "formatos_necesarios": "[CUADRADO, VERTICAL 9:16, HORIZONTAL, TAMAÑO MINIMO EN PIXELES]"
+  },
+  "pasos": [
+    "1. Mira cada imagen al 100 por cien y luego en miniatura: muchos fallos solo se ven en uno de los dos tamaños.",
+    "2. Revisa anatomia y objetos: manos, dedos, dientes, orejas, gafas, asas, cremalleras y patas de sillas.",
+    "3. Revisa todo el texto que aparezca: letras inventadas, palabras mal escritas, logos deformados.",
+    "4. Comprueba la fidelidad al producto real: color, acabado, numero de piezas, etiqueta y proporciones.",
+    "5. Revisa fisica y luz: sombras que no cuadran, reflejos imposibles, liquidos que flotan, escala rara.",
+    "6. Revisa el fondo: caras a medias, objetos fundidos, patrones repetidos, ropa que cambia de color.",
+    "7. Comprueba el encuadre para cada formato necesario: que al recortar no se corte el producto ni el texto.",
+    "8. Marca los riesgos: marcas ajenas visibles, personas reconocibles, elementos que puedan parecer una promesa de resultado.",
+    "9. Decide: publicar, regenerar con instruccion concreta, o descartar."
+  ],
+  "que_mirar": [
+    "Resolucion suficiente para el uso: lo que vale en movil no vale impreso.",
+    "Ruido o piel de plastico tipico de IA en primeros planos.",
+    "Coherencia entre imagenes del mismo lote: misma luz, mismo fondo, misma epoca.",
+    "Zona segura de texto para historias y anuncios.",
+    "Peso del archivo para que la ficha de producto no vaya lenta.",
+    "Que la imagen no muestre algo que el cliente no va a recibir."
+  ],
+  "errores_tipicos": [
+    "Enamorarse de una imagen preciosa que no se parece al producto que envias.",
+    "Revisar solo en el movil y descubrir el fallo cuando ya esta impresa.",
+    "Publicar un lote con luces distintas que rompe la ficha de la tienda.",
+    "Colar sin querer un logotipo de otra marca en el fondo."
+  ],
+  "restricciones": [
+    "No apruebes una imagen que muestra caracteristicas que el producto real no tiene.",
+    "Si dudas de un derecho de imagen o de marca, marca ambar y explica por que.",
+    "Cada regeneracion propuesta incluye la frase exacta a añadir o quitar del prompt."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: Imagen | Fallos detectados | Gravedad | Decision (publicar, regenerar, descartar).",
+    "bloque_2": "Para cada regenerar, el ajuste concreto del prompt o del retoque.",
+    "bloque_3": "Aviso de riesgos legales o de expectativa del cliente.",
+    "bloque_4": "Lista final de imagenes aprobadas y para que formato sirve cada una."
+  },
+  "criterios_calidad": [
+    "Ninguna imagen aprobada tiene texto ilegible o anatomia rara.",
+    "El lote aprobado es coherente entre si.",
+    "Cada decision se justifica en una linea.",
+    "Se indica que imagen sirve para cada formato sin recortes que estropeen el encuadre."
+  ]
+}

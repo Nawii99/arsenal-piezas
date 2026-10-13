@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar un manual de gestión de comunidad con banco de respuestas listas para copiar y reglas de escalado",
+  "contexto_negocio": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_vendes": "[PRODUCTO O SERVICIO Y PRECIO DE PARTIDA]",
+    "plazos_y_condiciones": "[ENVÍOS, CITAS, DEVOLUCIONES, GARANTÍA]",
+    "tono_de_marca": "[CERCANO Y CON HUMOR / SOBRIO Y PROFESIONAL / TÉCNICO]",
+    "preguntas_repetidas": "[LAS 10 DUDAS QUE MÁS TE LLEGAN]",
+    "lo_que_no_puedo_prometer": "[RESULTADOS, PLAZOS O DESCUENTOS QUE NO DEBEN DARSE POR ESCRITO]",
+    "quien_responde": "[TÚ, UN EMPLEADO O ALGUIEN EXTERNO]"
+  },
+  "categorias_a_cubrir": [
+    "Duda de precio o presupuesto",
+    "Duda técnica o de uso del producto",
+    "Interesado caliente que pide cita o compra",
+    "Queja pública en comentarios",
+    "Queja privada por mensaje",
+    "Comentario gracioso o troleo leve",
+    "Insulto o ataque personal",
+    "Spam, competencia disfrazada o venta de servicios",
+    "Elogio o cliente contento",
+    "Mención o etiqueta de un cliente"
+  ],
+  "reglas": [
+    "Responder en público lo que sirva a más gente y llevar a privado solo datos personales o dinero",
+    "Nunca discutir en público: reconocer, aportar dato y ofrecer solución en un mensaje",
+    "Tiempo objetivo de respuesta: [X HORAS] en horario laboral",
+    "Cada respuesta termina con una pregunta o un paso siguiente concreto"
+  ],
+  "formato_salida": {
+    "tabla_respuestas": "Columnas: categoria, ejemplo_de_mensaje, respuesta_publica, respuesta_privada, siguiente_paso",
+    "variantes": "Tres versiones de cada respuesta para no sonar a robot",
+    "escalado": "Reglas de cuándo avisar al dueño, cuándo ocultar y cuándo bloquear",
+    "lista_de_frases_prohibidas": "Expresiones que nunca se usan en esta marca",
+    "chuleta": "Resumen de una página para pegar junto al ordenador"
+  },
+  "criterios_calidad": ["Ninguna respuesta supera las 60 palabras", "Ninguna promete algo de la lista de lo que no se puede prometer", "Se puede copiar y pegar sin retocar salvo el nombre"],
+  "tono": "El indicado en tono_de_marca, siempre en español de España y tuteando"
+}

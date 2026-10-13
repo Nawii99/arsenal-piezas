@@ -1,0 +1,61 @@
+{
+  "tarea": "Auditar la accesibilidad básica de una web y devolver arreglos concretos con el código corregido",
+  "contexto": {
+    "url_o_codigo": "[URL O PEGA EL HTML]",
+    "tipo_de_pagina": "[PORTADA, PÁGINA DE VENTA, FORMULARIO, CATÁLOGO]",
+    "publico": "[EDAD APROXIMADA, SI HAY USUARIOS MAYORES O CON POCA VISTA]",
+    "nivel_tecnico_de_quien_arregla": "[NINGUNO / BÁSICO]"
+  },
+  "entradas": {
+    "paleta_de_colores": "[CÓDIGOS DE COLOR DE TEXTO Y FONDO]",
+    "tipografia_y_tamanos": "[FUENTE Y TAMAÑOS EN PÍXELES]",
+    "elementos_interactivos": "[BOTONES, MENÚS, ACORDEONES, VENTANAS EMERGENTES]"
+  },
+  "que_revisar": [
+    "Contraste: texto normal al menos 4.5 a 1 y texto grande 3 a 1 frente a su fondo",
+    "Imágenes: cada imagen con significado necesita texto alternativo que diga lo que muestra; las decorativas van con alt vacío",
+    "Encabezados: un solo H1 y jerarquía sin saltos, porque es el índice por el que se navega a ciegas",
+    "Formularios: cada campo con su etiqueta visible asociada, no solo texto dentro del campo",
+    "Teclado: se puede recorrer toda la página con el tabulador y siempre se ve dónde está el foco",
+    "Zonas de toque: botones y enlaces de al menos 44 por 44 píxeles en móvil",
+    "Enlaces: el texto dice a dónde lleva, nada de pincha aquí",
+    "Color: la información no se transmite solo por color (por ejemplo el error de un campo)",
+    "Idioma declarado en la etiqueta html",
+    "Vídeos y audios: subtítulos o transcripción",
+    "Movimiento: nada que parpadee o se mueva sin poder pararlo",
+    "Zoom: al ampliar al 200 por ciento no se rompe ni se pierde contenido"
+  ],
+  "pasos": [
+    "1. Recorre la lista de revisión punto por punto sobre la página indicada.",
+    "2. Por cada fallo, indica dónde está, por qué molesta a una persona real y cómo se nota.",
+    "3. Da el arreglo con el fragmento de código antes y después.",
+    "4. Ordena los fallos por gravedad: bloquea el uso, dificulta el uso, mejora deseable.",
+    "5. Propón dos pruebas manuales que pueda hacer cualquiera: navegar con el tabulador y ampliar al 200 por ciento."
+  ],
+  "errores_tipicos": [
+    "Texto gris claro sobre blanco porque queda elegante",
+    "Quitar el borde de foco porque afea, dejando la web inutilizable con teclado",
+    "Poner el nombre del archivo como texto alternativo de la imagen",
+    "Usar iconos sin texto y sin etiqueta accesible",
+    "Marcar solo en rojo los campos con error, sin mensaje",
+    "Ventanas emergentes que no se cierran con la tecla escape"
+  ],
+  "restricciones": [
+    "Un fallo por línea, sin párrafos largos",
+    "Nada de citar normas sin explicar qué hay que hacer",
+    "Si un arreglo cambia el diseño, avisa y ofrece alternativa"
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen: cuántos fallos y de qué gravedad",
+    "bloque_2": "Tabla: Elemento, Problema, A quién afecta, Arreglo, Gravedad",
+    "bloque_3": "Código corregido de los fallos graves",
+    "bloque_4": "Paleta de colores corregida con las parejas que sí cumplen contraste",
+    "bloque_5": "Dos pruebas manuales explicadas en 3 líneas cada una"
+  },
+  "criterios_calidad": [
+    "Cada fallo tiene arreglo copiable, no solo diagnóstico",
+    "No se propone nada que rompa el aspecto sin avisar",
+    "Las parejas de color propuestas cumplen el contraste indicado",
+    "Una persona sin conocimientos puede aplicar al menos la mitad de los arreglos"
+  ]
+}

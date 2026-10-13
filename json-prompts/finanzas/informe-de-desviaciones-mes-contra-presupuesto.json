@@ -1,0 +1,41 @@
+{
+  "tarea": "Comparar el gasto real del mes con el presupuesto o con el mes anterior, explicar las desviaciones importantes y proponer una acción para cada una",
+  "contexto": {
+    "negocio": "[QUÉ HACE TU NEGOCIO]",
+    "mes_analizado": "[MES Y AÑO]",
+    "comparar_contra": "[PRESUPUESTO O MES ANTERIOR O MISMO MES DEL AÑO PASADO]"
+  },
+  "entradas": {
+    "gasto_real": "[GASTO DEL MES POR CATEGORÍA]",
+    "referencia": "[PRESUPUESTO O GASTO DE LA REFERENCIA ELEGIDA, POR CATEGORÍA]",
+    "facturacion_del_mes": "[IMPORTE FACTURADO]",
+    "hechos_del_mes": "[QUÉ PASÓ: CAMPAÑA, CONTRATACIÓN, AVERÍA, PICO DE PEDIDOS, VACACIONES]"
+  },
+  "procedimiento": [
+    "Calcular para cada categoría la desviación en euros y en porcentaje",
+    "Marcar como relevante toda desviación que supere 200 euros o el 15%, lo que ocurra antes",
+    "Separar las desviaciones buenas (gastaste menos) de las malas y no celebrar las buenas sin mirar si esconden algo, como una factura que llegará el mes que viene",
+    "Distinguir tres causas: más actividad (gasto que sube porque vendes más), subida de precio del proveedor, o descontrol real",
+    "Calcular también el gasto como porcentaje sobre facturación, para ver si el negocio se está encareciendo aunque vendas más",
+    "Relacionar cada desviación con los hechos del mes antes de sacar conclusiones",
+    "Proponer una acción por desviación mala, con responsable y fecha"
+  ],
+  "restricciones": [
+    "No inventar explicaciones: si no hay dato que la sustente, escribir CAUSA POR CONFIRMAR y decir qué mirar",
+    "No mezclar gastos puntuales con gastos recurrentes en la misma conclusión",
+    "Máximo 6 desviaciones destacadas para que el informe sea accionable"
+  ],
+  "formato_salida": {
+    "titular": "Una frase con el resultado del mes en gasto",
+    "tabla": ["categoria", "real", "referencia", "desviacion_euros", "desviacion_porcentaje", "causa", "tipo_de_causa"],
+    "bloque_analisis": "Las desviaciones relevantes explicadas en un párrafo corto cada una",
+    "acciones": "Tabla de acciones: qué hacer, quién, para cuándo, ahorro esperado",
+    "vigilancia": "Qué categorías vigilar el mes que viene y con qué umbral"
+  },
+  "criterios_calidad": [
+    "Las cifras cuadran con las entradas, sin redondeos que cambien el total",
+    "Cada desviación relevante tiene causa y acción, o dice claramente qué falta por confirmar",
+    "El informe se lee entero en menos de cinco minutos"
+  ],
+  "tono": "claro y sin dramatismo"
+}

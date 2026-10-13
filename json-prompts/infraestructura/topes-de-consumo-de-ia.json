@@ -1,0 +1,60 @@
+{
+  "tarea": "Diseñar los límites de consumo, el control de abuso y el comportamiento degradado de un producto que usa APIs de IA de pago",
+  "contexto": {
+    "producto": "[QUÉ HACE Y QUÉ RECIBE EL USUARIO A CAMBIO]",
+    "modelo_de_negocio": "[GRATIS / FREEMIUM / SUSCRIPCIÓN DE X EUROS / PAGO POR USO]",
+    "proveedores_ia": "[QUÉ APIS USA Y PARA QUÉ TAREA CADA UNA]",
+    "volumen_previsto": "[USUARIOS Y USOS AL DÍA ESPERADOS]",
+    "perfil": "sin perfil técnico: la solución debe poder montarse con las opciones del panel o con ayuda de una IA que escriba el código"
+  },
+  "entradas": {
+    "coste_por_uso": "[LO QUE CUESTA UNA GENERACIÓN MEDIA SEGÚN MIS PRUEBAS, EN EUROS]",
+    "precio_al_cliente": "[LO QUE COBRO Y CADA CUÁNTO]",
+    "margen_objetivo": "[QUÉ PARTE DEL PRECIO QUIERO QUE SEA MARGEN]",
+    "identificacion": "[HAY LOGIN, CORREO VERIFICADO O ES ANÓNIMO]"
+  },
+  "procedimiento": [
+    "1. Mide antes de limitar: haz 10 usos reales y apunta el coste medio y el peor caso; el peor caso es el que manda",
+    "2. Calcula cuántos usos al mes puede hacer un cliente sin comerse el margen, y deja un colchón",
+    "3. Define límites en tres niveles: por usuario y día, por usuario y mes, y global de la aplicación por día",
+    "4. Define el tope global de emergencia: importe diario que si se supera apaga la función y deja el resto del producto en pie",
+    "5. Limita la entrada, no solo la salida: longitud máxima del texto o tamaño de archivo aceptado, porque el gasto empieza en lo que entra",
+    "6. Diseña el degradado: cuando se llega al límite, en vez de un error feo, usar respuesta guardada, modelo más barato, cola de espera o mensaje claro con la hora de reinicio",
+    "7. Añade defensas contra abuso: verificación por correo, límite por dirección IP, caché de peticiones repetidas idénticas y detección de usos en ráfaga",
+    "8. Guarda un registro por uso: quién, cuándo, qué tarea, coste estimado; sin eso no puedes cobrar bien ni detectar abusos",
+    "9. Redacta los mensajes al usuario para cada límite, honestos y sin culpar al usuario",
+    "10. Prueba los límites tú mismo hasta agotarlos y comprueba que el producto no se rompe"
+  ],
+  "que_mirar": [
+    "Coste del peor caso, no del caso medio: los usuarios encuentran el peor caso enseguida",
+    "Reintentos automáticos: un fallo mal gestionado puede repetir la misma llamada de pago decenas de veces",
+    "Funciones que llaman a la IA en cada tecla o en cada carga de página",
+    "Usuarios que automatizan tu producto contra tu API sin que te enteres",
+    "Diferencia entre lo que cuesta un usuario gratis y lo que cuesta uno de pago"
+  ],
+  "errores_tipicos": [
+    "Abrir gratis y sin registro para captar usuarios, y descubrir la factura una semana después",
+    "Poner el límite solo en el navegador, donde cualquiera lo salta",
+    "Mostrar un error genérico y perder al cliente que sí habría pagado por más usos",
+    "No guardar registro de consumo y no poder demostrar nada ante una disputa"
+  ],
+  "restricciones": [
+    "Los límites se aplican en el servidor, nunca solo en el navegador",
+    "No guardar en el registro el contenido de lo que escribe el usuario más allá de lo necesario",
+    "Cifras siempre calculadas a partir de mediciones reales aportadas"
+  ],
+  "formato_salida": {
+    "1_economia_por_uso": "tabla: tarea | coste medio | coste peor caso | usos incluidos en el precio | margen resultante",
+    "2_tabla_de_limites": "nivel | límite | qué ocurre al alcanzarlo | mensaje al usuario",
+    "3_degradado": "orden de alternativas antes de decir que no",
+    "4_defensas": "lista de medidas contra abuso con esfuerzo de implantación",
+    "5_registro": "campos exactos a guardar por cada uso",
+    "6_pruebas": "guion para verificar que cada límite funciona de verdad"
+  },
+  "criterios_calidad": [
+    "Existe un tope global que apaga el gasto sin tirar todo el producto",
+    "Ningún límite se puede saltar desde el navegador",
+    "El usuario siempre entiende qué ha pasado y cuándo podrá seguir",
+    "Con el registro se puede calcular el coste real por cliente al mes"
+  ]
+}

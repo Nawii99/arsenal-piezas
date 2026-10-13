@@ -1,0 +1,55 @@
+{
+  "tarea": "Comparar dos versiones de un mismo documento y explicarme en lenguaje llano que ha cambiado y como me afecta",
+  "contexto": {
+    "tipo_documento": "[CONTRATO, PRESUPUESTO, PROPUESTA, CONDICIONES, PLIEGO]",
+    "quien_hizo_los_cambios": "[YO, EL CLIENTE, EL PROVEEDOR, SU ABOGADO]",
+    "mi_posicion": "[SOY QUIEN PRESTA EL SERVICIO O QUIEN LO CONTRATA]",
+    "que_me_juego": "[IMPORTE, PLAZO, RESPONSABILIDAD]"
+  },
+  "entradas": {
+    "version_a": "[PEGA LA VERSIÓN ANTIGUA COMPLETA]",
+    "version_b": "[PEGA LA VERSIÓN NUEVA COMPLETA]",
+    "puntos_criticos": "[LO QUE NO ESTOY DISPUESTO A CEDER]"
+  },
+  "pasos": [
+    "Alinea las dos versiones por apartados, aunque hayan cambiado de numero o de orden.",
+    "Clasifica cada diferencia en anadido, eliminado, modificado o movido.",
+    "Ignora los cambios de estilo que no alteran el significado y agrupalos en una sola linea de cambios menores.",
+    "Para cada cambio con fondo, escribe que decia antes, que dice ahora y que significa para mi en una frase.",
+    "Valora el impacto como a favor, en contra o neutro desde mi posicion.",
+    "Presta atencion especial a importes, plazos, penalizaciones, prorrogas automaticas, propiedad del trabajo, exclusividad, confidencialidad y forma de pago.",
+    "Detecta lo que ha desaparecido, que suele pasar mas desapercibido que lo anadido.",
+    "Detecta definiciones cambiadas que alteran el sentido de otros apartados.",
+    "Propon para los tres cambios peores una redaccion alternativa que pueda enviar."
+  ],
+  "que_mirar": [
+    "Numeros cambiados dentro de una frase larga: dias de pago, porcentajes, unidades incluidas.",
+    "Cambios de podra por debera y de razonable por inmediato.",
+    "Apartados nuevos colados al final o dentro de un anexo.",
+    "Referencias cruzadas que ahora apuntan a otro apartado."
+  ],
+  "errores_tipicos": [
+    "Fiarse de la sensacion de que es igual porque el documento parece el mismo.",
+    "Revisar solo lo que viene marcado en control de cambios.",
+    "Firmar el anexo sin leerlo porque el contrato principal ya estaba pactado.",
+    "Discutir diez cambios menores y dejar pasar el importante."
+  ],
+  "restricciones": [
+    "Cita siempre el texto literal de las dos versiones en los cambios con fondo.",
+    "No des por hecho el motivo del cambio: describe el efecto.",
+    "Esto no es asesoramiento juridico; senala cuando conviene consultar a un profesional."
+  ],
+  "formato_salida": {
+    "bloque_1_titular": "Tres lineas: cuantos cambios hay, cuantos me afectan y el mas grave",
+    "bloque_2_semaforo": "Tabla: apartado | antes | ahora | que significa | impacto (a favor, en contra, neutro)",
+    "bloque_3_desaparecidos": "Lo que estaba y ya no esta",
+    "bloque_4_menores": "Una sola linea agrupando los cambios de forma",
+    "bloque_5_contrapropuesta": "Redaccion alternativa de los tres peores y un email breve para enviarla"
+  },
+  "criterios_calidad": [
+    "Ningun cambio con efecto economico o legal queda dentro del bloque de menores.",
+    "Cada fila deja claro que pierdo o que gano, no solo que hay cambio.",
+    "Las citas literales coinciden exactamente con los textos aportados.",
+    "La contrapropuesta es enviable tal cual, sin retoques."
+  ]
+}

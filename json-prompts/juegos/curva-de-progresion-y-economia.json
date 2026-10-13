@@ -1,0 +1,42 @@
+{
+  "tarea": "Disenar la curva de progresion, economia y dificultad de un juego y entregarla como tabla lista para hoja de calculo",
+  "contexto": {
+    "juego": "[NOMBRE Y GENERO]",
+    "modelo": "[PAGO UNICO / GRATIS CON ANUNCIOS / GRATIS CON COMPRAS / SIN MONETIZAR]",
+    "duracion_objetivo": "[HORAS O SESIONES QUE QUIERES QUE DURE]",
+    "sesion_tipica": "[MINUTOS QUE JUEGA ALGUIEN DE UNA SENTADA]"
+  },
+  "entradas": {
+    "bucle_principal": "[QUE HACE EL JUGADOR UNA Y OTRA VEZ]",
+    "recursos": "[MONEDAS, ENERGIA, EXPERIENCIA, MATERIALES]",
+    "cosas_que_se_compran_o_desbloquean": "[LISTA CON SU EFECTO]",
+    "fuentes_de_ingreso_del_jugador": "[CUANTO GANA POR PARTIDA O POR NIVEL]",
+    "numero_de_niveles": "[NUMERO O A DECIDIR]",
+    "sensacion_buscada": "[TRANQUILO / EXIGENTE / DE PICOS]"
+  },
+  "pasos": [
+    "1. Fija el ritmo: cada cuantos minutos el jugador consigue algo pequeno y cada cuantos algo gordo",
+    "2. Elige el tipo de curva de coste y explica en una linea que se siente con cada una: lineal se hace plana, exponencial se atasca pronto",
+    "3. Rellena la tabla nivel a nivel con coste, ingreso esperado, minutos de espera y que se desbloquea",
+    "4. Marca los tres momentos de riesgo de abandono y que se pone justo ahi para sostener al jugador",
+    "5. Coloca la dificultad en dientes de sierra: subida, respiro y pico, y di donde va cada uno",
+    "6. Comprueba que ninguna mejora hace inutiles las anteriores ni rompe el juego al comprarla",
+    "7. Si hay compras o anuncios, di donde encajan sin bloquear al que no paga y que ofrecen exactamente",
+    "8. Da tres palancas para retocar todo despues sin rehacer la tabla"
+  ],
+  "restricciones": [
+    "No inventes datos de retencion ni de ingresos de otros juegos",
+    "Nada de esperas obligatorias largas para desbloquear cosas basicas",
+    "Toda cifra de la tabla tiene que salir de las entradas o de una regla explicada"
+  ],
+  "formato_salida": {
+    "tabla_principal": ["Nivel", "Minutos acumulados", "Ingreso del jugador", "Coste del siguiente desbloqueo", "Que desbloquea", "Dificultad de 1 a 5", "Momento clave"],
+    "formato": "tabla separada por punto y coma para pegar en una hoja de calculo",
+    "extras": ["Reglas de la curva usadas", "Momentos de riesgo", "Palancas de ajuste"]
+  },
+  "criterios_calidad": [
+    "Los minutos acumulados cuadran con la duracion objetivo",
+    "Ninguna fila obliga a repetir lo mismo mas de lo que dura la sesion tipica",
+    "Se explica que se siente en cada tramo, no solo los numeros"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "tarea": "Comparar cuatro formas de cubrir una carga de trabajo y recomendar una con números",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "facturacion_mensual": "[EUROS]",
+    "margen_bruto_aproximado": "[PORCENTAJE]",
+    "caja_disponible": "[EUROS]",
+    "pais": "España"
+  },
+  "entradas": {
+    "tareas_a_cubrir": ["[TAREA 1]", "[TAREA 2]", "[TAREA 3]"],
+    "horas_semanales_estimadas": "[HORAS]",
+    "urgencia": "[YA / EN 3 MESES / CUANDO PUEDA]",
+    "salario_bruto_anual_que_barajas": "[EUROS]",
+    "presupuesto_maximo_mensual": "[EUROS]"
+  },
+  "opciones_a_comparar": [
+    "Contratar en plantilla (jornada completa o parcial)",
+    "Colaborador autónomo por horas o por entregable",
+    "Agencia o servicio externo",
+    "No contratar: automatizar, subir precios o dejar de hacer esa tarea"
+  ],
+  "pasos": [
+    "Estimar para plantilla el coste de empresa sumando al bruto la seguridad social a cargo de la empresa, pagas, vacaciones e indemnización previsible",
+    "Añadir a cada opción los costes ocultos: formación, tiempo de supervisión, equipo, licencias y tiempo hasta ser productivo",
+    "Calcular cuánto tiene que aportar esa persona en ingresos o en horas liberadas para que salga a cuenta",
+    "Marcar el punto de no retorno: qué facturación o volumen justifica pasar a plantilla"
+  ],
+  "restricciones": [
+    "Presentar las cifras como estimaciones y recomendar confirmar con la gestoría",
+    "No dar consejo legal ni fiscal cerrado",
+    "Si el coste supera el presupuesto indicado, decirlo claramente en la primera línea"
+  ],
+  "formato_salida": {
+    "tabla": "Una fila por opción con coste mensual, coste anual, tiempo hasta ser productivo, flexibilidad para dar marcha atrás y riesgo",
+    "punto_equilibrio": "Cuánto hay que facturar de más al mes para que la opción recomendada se pague sola",
+    "recomendacion": "Opción elegida, por qué, y qué tendría que pasar para cambiar de opinión",
+    "siguiente_paso": "Tres acciones concretas para esta semana"
+  },
+  "criterios_calidad": [
+    "Todas las cifras salen de los datos aportados y se ve el cálculo",
+    "La recomendación es una sola, no un 'depende'"
+  ]
+}

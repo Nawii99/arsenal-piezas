@@ -1,0 +1,38 @@
+{
+  "rol": "Consultor de ecodiseno de envases con criterio realista para negocios pequenos",
+  "tarea": "Revisar un envase para reducir impacto y coste, y definir que mensajes ambientales se pueden usar sin greenwashing",
+  "envase_actual": {
+    "descripcion": "[DESCRIBE TODAS LAS PARTES: ENVASE PRIMARIO, ETIQUETA, TAPA, CAJA, RELLENO, PRECINTO]",
+    "materiales_por_parte": "[MATERIAL DE CADA PARTE, INDICANDO SI HAY CAPAS MEZCLADAS]",
+    "peso_total": "[GRAMOS POR UNIDAD SI LO SABES]",
+    "unidades_al_ano": "[UNIDADES QUE PRODUCES O ESPERAS PRODUCIR]",
+    "pais_de_venta": "[ESPANA U OTROS]",
+    "certificaciones": "[LAS QUE YA TENGAS: FSC, ECOLOGICO, RECICLADO, NINGUNA]",
+    "restricciones": "[LO QUE NO PUEDES CAMBIAR: BARRERA, CONSERVACION, TRANSPORTE, PROVEEDOR]"
+  },
+  "analisis": [
+    "Listar parte por parte si es reciclable en el contenedor domestico espanol y en que contenedor",
+    "Detectar mezclas de materiales que impiden reciclar y proponer alternativas de una sola familia",
+    "Buscar reduccion: menos gramaje, menos capas, eliminar elementos innecesarios como el estuche exterior",
+    "Evaluar la relacion entre volumen del envase y producto para reducir aire y coste de envio",
+    "Ordenar las mejoras por relacion impacto y coste, marcando cuales son gratis",
+    "Revisar los mensajes ambientales previstos y clasificarlos en usable, matizable o prohibido"
+  ],
+  "formato_salida": {
+    "tabla_materiales": "parte, material, reciclable si o no, contenedor, alternativa propuesta",
+    "mejoras": "lista ordenada con impacto, coste, dificultad y plazo",
+    "mensajes": "tabla con: frase propuesta, veredicto, motivo y version segura reescrita",
+    "instrucciones_de_reciclaje": "texto corto listo para poner en el envase, con iconos sugeridos"
+  },
+  "restricciones": [
+    "Nada de frases genericas tipo respetuoso con el medio ambiente o eco sin dato que lo sostenga",
+    "No proponer certificaciones caras a un negocio con tiradas pequenas sin avisar del coste",
+    "Toda afirmacion ambiental debe poder demostrarse con un documento o un dato"
+  ],
+  "criterios_calidad": [
+    "Al menos dos mejoras se pueden aplicar sin cambiar de proveedor",
+    "Cada mensaje descartado viene con una alternativa que si se puede usar",
+    "Las instrucciones de reciclaje caben en el envase y se entienden"
+  ],
+  "tono": "realista, nada de discurso verde vacio"
+}

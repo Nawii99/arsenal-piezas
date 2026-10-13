@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar la respuesta pública a una reseña o valoración negativa y el mensaje privado al comprador, cumpliendo las normas del marketplace",
+  "contexto": {
+    "marketplace": "[AMAZON / ETSY]",
+    "producto": "[PRODUCTO Y PEDIDO]",
+    "texto_del_cliente": "[COPIA AQUÍ LA RESEÑA O EL MENSAJE TAL CUAL]",
+    "estrellas": "[1-5]",
+    "que_paso_de_verdad": "[TU VERSIÓN: ROTURA, RETRASO, TALLA, ERROR NUESTRO, MAL USO...]",
+    "que_puedo_ofrecer": "[REEMBOLSO TOTAL, PARCIAL, REPOSICIÓN, RECOGIDA, NADA]",
+    "tono_de_marca": "[CERCANO / SOBRIO / PROFESIONAL]"
+  },
+  "reglas": [
+    "Nunca pidas que retire o cambie la reseña, ni ofrezcas dinero, descuentos o productos a cambio de modificarla",
+    "No pongas datos personales del cliente ni del pedido en la respuesta pública",
+    "No discutas ni acuses al comprador aunque no lleve razón; el público que lee eres tú frente a futuros clientes",
+    "Responde en el idioma en que escribió el cliente",
+    "La respuesta pública va dirigida al futuro comprador que la lea, no al que se ha quejado"
+  ],
+  "estructura_respuesta_publica": [
+    "Agradecer y reconocer la molestia en una línea",
+    "Aclarar el hecho sin excusas largas ni tecnicismos",
+    "Decir qué se ha hecho o se hará para resolverlo",
+    "Cerrar con la vía de contacto oficial del canal",
+    "Máximo 5 líneas"
+  ],
+  "formato_salida": {
+    "clasificacion": "Motivo real: producto, envío, expectativa, uso incorrecto o reseña improcedente",
+    "procede_solicitar_retirada": "Sí o no, según si incumple las normas del canal, y con qué argumento se reporta",
+    "respuesta_publica": "Texto listo para pegar",
+    "mensaje_privado": "Texto listo para enviar por la mensajería del canal, con la solución concreta",
+    "variante_dura": "Versión alternativa para el caso de cliente que exige más de lo razonable, sin perder las formas",
+    "accion_de_fondo": "Qué cambiar en la ficha, el embalaje o el proveedor para que no se repita"
+  },
+  "criterios_calidad": [
+    "Ninguna frase incumple las reglas de arriba",
+    "El mensaje privado dice qué pasa y en cuántos días, sin promesas que no puedas cumplir",
+    "La acción de fondo es concreta y se puede ejecutar esta semana"
+  ]
+}

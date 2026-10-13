@@ -1,0 +1,33 @@
+{
+  "tarea": "Convierte la transcripción de mi vídeo en subtítulos accesibles en formato SRT, una transcripción legible y un guion de audiodescripción",
+  "contexto": {
+    "transcripcion": "[PEGA AQUÍ EL TEXTO O LA TRANSCRIPCIÓN AUTOMÁTICA CON TIEMPOS]",
+    "duracion": "[MM:SS]",
+    "tipo_de_video": "[DEMO DE PRODUCTO / TESTIMONIO / TUTORIAL / ANUNCIO]",
+    "voces": "[CUÁNTAS PERSONAS HABLAN Y CÓMO SE LLAMAN]",
+    "sonidos_y_textos_en_pantalla": "[MÚSICA, RISAS, TIMBRE, RÓTULOS, CIFRAS QUE APARECEN]"
+  },
+  "reglas_de_subtitulado": [
+    "Máximo 2 líneas por subtítulo y unos 37 caracteres por línea",
+    "Cada subtítulo entre 1 y 6 segundos en pantalla, a velocidad cómoda de lectura",
+    "Corta las frases por sentido, nunca a mitad de una expresión",
+    "Identifica quién habla cuando hay más de una voz",
+    "Anota entre corchetes los sonidos que aportan información",
+    "Corrige muletillas y errores del transcriptor automático sin cambiar el mensaje",
+    "Español de España, con tildes y signos de apertura"
+  ],
+  "entregables": [
+    "Archivo SRT completo con numeración y marcas de tiempo",
+    "Transcripción en texto corrido con títulos por bloques, para publicar bajo el vídeo",
+    "Guion de audiodescripción: qué se ve y no se dice, con el momento en que cabe decirlo",
+    "Lista de textos en pantalla que hay que leer en voz alta o repetir en el audio"
+  ],
+  "formato_salida": {
+    "orden": ["SRT", "Transcripción", "Audiodescripción", "Avisos"],
+    "avisos": "Marca los tramos donde los tiempos son aproximados y hay que ajustarlos viendo el vídeo"
+  },
+  "criterios_calidad": [
+    "Ningún subtítulo obliga a leer a más velocidad de la normal",
+    "Quien no oiga nada entiende el vídeo entero solo con los subtítulos"
+  ]
+}

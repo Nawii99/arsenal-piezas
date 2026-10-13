@@ -1,0 +1,42 @@
+{
+  "tarea": "Comparar opciones de financiacion para una necesidad concreta y recomendar una, con su coste real total",
+  "necesidad": {
+    "importe": "[IMPORTE NECESARIO EN EUROS]",
+    "destino": "[MAQUINARIA / STOCK / CIRCULANTE / OBRA / VEHICULO / CONTRATACION]",
+    "plazo_deseado": "[MESES DE DEVOLUCION]",
+    "urgencia": "[EN CUANTAS SEMANAS LO NECESITAS]"
+  },
+  "perfil": {
+    "forma_juridica": "[AUTONOMO / SL]",
+    "antiguedad": "[ANOS DE ACTIVIDAD]",
+    "facturacion_anual": "[EUROS]",
+    "beneficio_antes_de_impuestos": "[EUROS]",
+    "deuda_viva_y_cuota_mensual": "[EUROS Y CUOTA]",
+    "garantias_disponibles": "[AVAL PERSONAL / INMUEBLE / NINGUNA]",
+    "tipo_de_interes_orientativo": "[SI TIENES ALGUNA OFERTA, INDICA EL TIN]"
+  },
+  "opciones_a_evaluar": ["Prestamo bancario a plazo", "Linea ICO", "Leasing", "Renting", "Factoring o confirming", "Crowdlending", "Poliza o linea de credito", "Aval de SGR", "Aplazamiento del proveedor", "No financiar y retrasar la compra"],
+  "para_cada_opcion_calcula": [
+    "Cuota mensual estimada con el tipo indicado",
+    "Coste total en intereses mas comisiones durante toda la vida",
+    "Comisiones tipicas de apertura, estudio, cancelacion anticipada y seguro vinculado",
+    "Garantias o avales que suelen exigir",
+    "Plazo realista hasta tener el dinero en cuenta",
+    "Impacto en la caja del primer ano",
+    "Riesgo personal que asumes tu o tu familia",
+    "Tratamiento contable y fiscal basico (gasto deducible o amortizacion)"
+  ],
+  "restricciones": [
+    "Marca claramente que cifras son estimaciones y con que tipo de interes se han calculado",
+    "No des por cerrada ninguna condicion: las fija la entidad",
+    "Descarta expresamente las opciones que no encajan y explica por que en una linea",
+    "Avisa si la cuota total supera el 30 por ciento del beneficio mensual"
+  ],
+  "formato_salida": "Primero una tabla comparativa con una fila por opcion y las columnas cuota, coste total, garantias, plazo y encaje. Despues una recomendacion de tres parrafos y una lista de preguntas exactas que hacer al banco",
+  "criterios_calidad": [
+    "La recomendacion se justifica con numeros, no con opiniones",
+    "Aparece el coste total, no solo la cuota",
+    "Se avisa de al menos dos letras pequenas habituales del producto recomendado"
+  ],
+  "tono": "Practico y sin tecnicismos; si usas un termino financiero, explicalo entre parentesis"
+}

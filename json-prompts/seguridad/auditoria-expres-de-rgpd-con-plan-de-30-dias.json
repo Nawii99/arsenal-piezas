@@ -1,0 +1,38 @@
+{
+  "tarea": "Hacer una auditoría rápida del estado de cumplimiento del RGPD de una empresa pequeña y entregar un plan de acción priorizado a 30 días",
+  "contexto": {
+    "empresa": "[NOMBRE Y ACTIVIDAD]",
+    "empleados": "[Nº DE EMPLEADOS]",
+    "presupuesto": "[BAJO / MEDIO / ALTO]",
+    "tiempo_disponible": "[HORAS A LA SEMANA QUE PUEDES DEDICAR]"
+  },
+  "entradas": {
+    "documentos_que_tienes": "[REGISTRO DE TRATAMIENTOS, POLÍTICA DE PRIVACIDAD, CONTRATOS CON PROVEEDORES, CLÁUSULAS DE EMPLEADOS, NINGUNO]",
+    "datos_que_tratas": "[CLIENTES, EMPLEADOS, PACIENTES, MENORES, DATOS BANCARIOS]",
+    "herramientas": "[LISTA DE PROGRAMAS Y SERVICIOS EN LA NUBE]",
+    "incidentes_previos": "[BRECHAS, RECLAMACIONES O AVISOS RECIBIDOS]"
+  },
+  "pasos": [
+    "Evalúa diez bloques: registro de tratamientos, bases legítimas, información a los interesados, consentimientos, derechos, proveedores y contratos, seguridad técnica, empleados y confidencialidad, cookies y web, y brechas y copias",
+    "Puntúa cada bloque de 0 a 10 y asigna verde, ámbar o rojo con la evidencia que lo sustenta",
+    "Ordena las carencias por riesgo real de sanción y por daño a las personas, no por facilidad",
+    "Convierte cada carencia en una tarea concreta con esfuerzo estimado y si se puede hacer en casa o hace falta ayuda externa",
+    "Reparte las tareas en cuatro semanas equilibrando el tiempo disponible"
+  ],
+  "restricciones": [
+    "Nada de recomendaciones genéricas del tipo cumple el RGPD: cada tarea debe indicar qué documento o ajuste se produce",
+    "No prometer inmunidad ante sanciones",
+    "Si falta información para valorar un bloque, pídela en lugar de suponerla"
+  ],
+  "formato_salida": {
+    "1_semaforo": "tabla de bloques con nota, color y motivo",
+    "2_top5": "las cinco cosas urgentes de esta semana",
+    "3_plan": "calendario semana 1 a semana 4 con tareas y entregable de cada una",
+    "4_preguntas": "datos que faltan para afinar el diagnóstico"
+  },
+  "criterios_calidad": [
+    "Cada color va acompañado de un hecho comprobable",
+    "Las tareas caben en el tiempo declarado",
+    "Se distingue lo obligatorio de lo recomendable"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "tarea": "Dar las instrucciones exactas para preparar los datos y montar un gráfico bien terminado en una hoja de cálculo",
+  "contexto": {
+    "programa": "[EXCEL DE ESCRITORIO / EXCEL WEB / GOOGLE SHEETS]",
+    "nivel": "[NUNCA HE HECHO UNA TABLA DINÁMICA / ME DEFIENDO]",
+    "uso_final": "[INFORME MENSUAL / SEGUIMIENTO INTERNO / ENVÍO A CLIENTE]"
+  },
+  "entradas": {
+    "estructura_de_la_hoja": "[NOMBRES DE LAS COLUMNAS Y EN QUÉ FILA EMPIEZAN LOS DATOS]",
+    "muestra": "[PEGA 5 FILAS DE EJEMPLO]",
+    "grafico_deseado": "[QUÉ QUIERES COMPARAR O VER: EVOLUCIÓN MENSUAL, TOP PRODUCTOS, REPARTO POR CANAL...]",
+    "periodo": "[QUÉ RANGO DE FECHAS ENTRA]"
+  },
+  "metodo": [
+    "Comprobar primero la limpieza de los datos: fechas reconocidas como fecha, números sin texto, celdas vacías, duplicados",
+    "Indicar las fórmulas o la tabla dinámica necesarias para llegar a la tabla de apoyo del gráfico, con la sintaxis del programa elegido",
+    "Explicar dónde está cada menú y qué botón pulsar, paso numerado a paso numerado",
+    "Ajustar formato: título, etiquetas de datos, escala del eje, orden de categorías, formato de número en euros",
+    "Dejarlo preparado para actualizarse solo al añadir filas nuevas",
+    "Añadir una comprobación final: comparar el total del gráfico con el total de la columna original"
+  ],
+  "restricciones": [
+    "Nada de macros ni de complementos de pago",
+    "Nombres de menús y funciones en la versión en español del programa, con el nombre en inglés entre paréntesis",
+    "Separador decimal con coma y de miles con punto",
+    "Si el gráfico pedido no es el adecuado para esos datos, proponer el correcto antes de empezar"
+  ],
+  "formato_salida": {
+    "tipo": "guía numerada",
+    "secciones": [
+      "A. Limpieza previa: qué revisar y cómo arreglarlo",
+      "B. Tabla de apoyo: fórmulas exactas listas para copiar",
+      "C. Montaje del gráfico: pasos numerados con el menú de cada uno",
+      "D. Acabado: formato, títulos y colores",
+      "E. Comprobación: cómo saber que las cifras cuadran",
+      "F. Errores frecuentes en este caso y su solución"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada paso se puede seguir sin buscar nada en internet",
+    "Las fórmulas están escritas para copiar y pegar tal cual",
+    "Al terminar, el gráfico se actualiza solo al añadir datos nuevos"
+  ],
+  "tono": "paciente y muy concreto, tuteando"
+}

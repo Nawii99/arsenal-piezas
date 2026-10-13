@@ -1,0 +1,42 @@
+{
+  "tarea": "Diseñar la estructura de carpetas, las convenciones de nombres y las normas mínimas de una documentación interna.",
+  "contexto": {
+    "empresa": "[NOMBRE Y ACTIVIDAD]",
+    "herramienta": "[GOOGLE DRIVE, NOTION, SHAREPOINT, CARPETA LOCAL...]",
+    "personas": "[NÚMERO DE PERSONAS Y PERFILES]",
+    "areas": "[VENTAS, OPERACIONES, ADMINISTRACIÓN, ETC.]"
+  },
+  "entradas": {
+    "tipos_de_documento": "[PROCEDIMIENTOS, PLANTILLAS, CONTRATOS, ACTAS, PRESUPUESTOS...]",
+    "problemas_actuales": "[QUÉ PIERDES O DUPLICAS HOY]"
+  },
+  "instrucciones": [
+    "Propón un árbol de máximo 3 niveles de profundidad.",
+    "Cada carpeta lleva una frase que explica qué entra y qué NO entra en ella.",
+    "Define una convención de nombres con fecha en formato AAAA-MM-DD y versión.",
+    "Establece dónde vive el borrador y dónde la versión aprobada.",
+    "Asigna un responsable por área y una fecha de revisión periódica.",
+    "Incluye qué hacer con lo viejo: carpeta de archivo, nunca borrar sin más.",
+    "Añade 5 ejemplos reales de nombres de fichero bien puestos."
+  ],
+  "restricciones": [
+    "Nada de estructuras que exijan un administrador técnico.",
+    "No más de 8 carpetas en el primer nivel.",
+    "Sirve tanto para carpetas como para páginas de Notion."
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "Árbol de carpetas en bloque de texto indentado",
+      "Tabla: carpeta | qué contiene | qué no | responsable",
+      "Reglas de nombres con ejemplos correctos e incorrectos",
+      "Norma de versiones y archivado en 5 puntos",
+      "Plan de migración desde el desorden actual en 4 pasos"
+    ]
+  },
+  "criterios_calidad": [
+    "Cualquier documento del negocio tiene un único sitio evidente.",
+    "Las reglas caben en media página y se pueden colgar en la pared."
+  ],
+  "tono": "Práctico, de sentido común"
+}

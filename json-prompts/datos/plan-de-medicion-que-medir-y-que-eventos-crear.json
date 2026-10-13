@@ -1,0 +1,40 @@
+{
+  "tarea": "Diseñar el plan de medición de analítica web y de producto para [NOMBRE DEL NEGOCIO], definiendo qué se mide, con qué evento y para responder a qué pregunta",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "web_o_producto": "[URL O NOMBRE DEL PRODUCTO]",
+    "herramienta": "[GA4 / MATOMO / POSTHOG / MIXPANEL]",
+    "objetivo_de_negocio": "[EJ: PASAR DE 30 A 60 PEDIDOS AL MES]",
+    "quien_mira_los_datos": "[YO SOLO / EQUIPO DE 3 / AGENCIA]"
+  },
+  "entradas": {
+    "paginas_o_pantallas_clave": ["[EJ: HOME]", "[EJ: FICHA DE PRODUCTO]", "[EJ: CHECKOUT]"],
+    "acciones_que_dan_dinero": ["[EJ: COMPRA]", "[EJ: SOLICITUD DE PRESUPUESTO]"],
+    "limitaciones": "[EJ: NO TENGO DESARROLLADOR, SOLO GESTOR DE ETIQUETAS]"
+  },
+  "pasos": [
+    "Traducir el objetivo de negocio en 1 KPI principal y 3 o 4 KPIs de apoyo, con su fórmula exacta",
+    "Dibujar el recorrido del usuario por etapas y marcar el evento que confirma cada etapa",
+    "Definir cada evento: nombre en snake_case, momento exacto del disparo y parámetros",
+    "Separar macroconversiones (dinero) de microconversiones (señales de intención)",
+    "Indicar para cada evento cómo implementarlo sin tocar código cuando sea posible",
+    "Cerrar un mínimo viable: los 8 eventos imprescindibles del primer mes"
+  ],
+  "restricciones": [
+    "Máximo 15 eventos: si sobran, prioriza y manda el resto a una fase 2",
+    "Nada de métricas vanidosas salvo que sirvan para tomar una decisión concreta",
+    "No inventes funciones de la herramienta; si algo exige desarrollo, dilo claramente",
+    "Señala qué eventos dependen del consentimiento de cookies y qué se pierde sin él"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown + bloques de texto",
+    "columnas_tabla": ["nombre_evento", "pregunta_que_responde", "cuando_se_dispara", "parametros", "macro_o_micro", "como_implementarlo", "dificultad_1_5"],
+    "bloques_extra": ["KPIs con su fórmula", "Fase 1 y fase 2", "Huecos de medición y riesgos"]
+  },
+  "criterios_calidad": [
+    "Cada evento tiene escrita la pregunta de negocio que responde",
+    "Los nombres son consistentes entre sí y no se solapan",
+    "Una persona sin perfil técnico puede leerlo y saber qué pedir a quien lo implemente"
+  ],
+  "tono": "Directo y llano; si usas un término técnico, explícalo en cinco palabras"
+}

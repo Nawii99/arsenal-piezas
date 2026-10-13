@@ -1,0 +1,38 @@
+{
+  "tarea": "Definir un presupuesto de velocidad para [DIRECCIÓN DE TU WEB] y listar los arreglos que hacen falta para cumplirlo",
+  "contexto": {
+    "tipo_web": "[TIENDA, LANDING, BLOG O APLICACIÓN]",
+    "paginas_clave": ["[PÁGINA 1]", "[PÁGINA 2]"],
+    "publico": "[DESDE DÓNDE Y CON QUÉ MÓVILES TE VISITAN]",
+    "plataforma": "[WORDPRESS, SHOPIFY, CÓDIGO PROPIO U OTRA]"
+  },
+  "entradas": {
+    "metricas_actuales": "[RESULTADOS DE PAGESPEED O SIMILAR SI LOS TIENES]",
+    "scripts_externos": "[CHATS, PÍXELES, ANALÍTICA, RESEÑAS, BANNERS DE COOKIES]",
+    "imagenes": "[CUÁNTAS Y DE QUÉ PESO APROXIMADO]"
+  },
+  "metodo": [
+    "Propón límites numéricos por página para: peso total, número de peticiones, tamaño de JavaScript, tiempo hasta ver el contenido principal y estabilidad visual",
+    "Ajusta los límites al público real: red móvil normal, no fibra de oficina",
+    "Señala qué elemento concreto rompe cada límite hoy y cuánto pesa",
+    "Ordena los arreglos por lo que ganan: imágenes en formato moderno y del tamaño justo, retrasar scripts de terceros, quitar tipografías extra, reservar espacio para banners y evitar cargar en la primera pantalla lo que nadie ve",
+    "Marca qué scripts externos se pueden cargar tarde o eliminar y qué se pierde al hacerlo"
+  ],
+  "restricciones": [
+    "No romper la analítica ni el consentimiento de cookies",
+    "El diseño visual no puede cambiar",
+    "Soluciones aplicables en [TU PLATAFORMA] sin desarrollador si es posible"
+  ],
+  "formato_salida": {
+    "tipo": "tabla + plan",
+    "tabla_presupuesto": "columnas: métrica | límite propuesto | valor actual | cumple sí o no",
+    "plan": "lista de arreglos con esfuerzo, quién puede hacerlo y ganancia estimada",
+    "regla_futura": "una regla de una frase para no volver a romper el presupuesto al añadir cosas"
+  },
+  "criterios_calidad": [
+    "Todos los límites son números medibles con una herramienta gratuita",
+    "Cada arreglo indica en qué archivo o ajuste se toca",
+    "Distingue lo que se hace en 10 minutos de lo que necesita a un técnico"
+  ],
+  "tono": "claro para alguien que gestiona la web pero no programa"
+}

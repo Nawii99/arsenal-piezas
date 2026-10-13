@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar un procedimiento de recobro escalonado para facturas vencidas, con calendario de acciones y las plantillas de cada paso",
+  "entradas": {
+    "negocio": "[A QUÉ TE DEDICAS Y TICKET MEDIO DE FACTURA]",
+    "cartera_vencida": "[LISTA: CLIENTE, Nº DE FACTURA, IMPORTE Y DÍAS DE RETRASO]",
+    "condiciones_de_pago": "[PLAZO PACTADO, INTERESES Y RECARGOS SI LOS HAY]",
+    "quien_reclama": "[TÚ, ADMINISTRACIÓN O UNA GESTORÍA]",
+    "canales": "[EMAIL, TELÉFONO, WHATSAPP, BUROFAX]",
+    "umbral_para_abogado": "[IMPORTE A PARTIR DEL CUAL COMPENSA RECLAMAR JUDICIALMENTE]"
+  },
+  "pasos": [
+    "Clasificar cada deuda en tres grupos: despiste, problema de tesorería y cliente que no quiere pagar",
+    "Asignar a cada grupo una secuencia distinta de contactos",
+    "Definir el calendario por días desde el vencimiento: 3, 10, 20, 30, 45 y 60",
+    "Escribir la plantilla de cada contacto, corta y con el importe y la fecha límite",
+    "Fijar el punto de corte: cuándo se para de insistir y se pasa a burofax o a abogado",
+    "Proponer dos medidas para que no vuelva a pasar: anticipo y aviso automático antes del vencimiento"
+  ],
+  "restricciones": [
+    "Nada de prácticas de presión indebida: ni llamar fuera de horario laboral, ni contactar con terceros, ni exponer al deudor",
+    "No aplicar recargos que no estén pactados por escrito",
+    "Los mensajes de WhatsApp, máximo 4 líneas",
+    "Todo en español de España"
+  ],
+  "formato_salida": {
+    "1_calendario": "tabla con día, acción, canal, responsable y objetivo",
+    "2_plantillas": "un texto por cada contacto del calendario",
+    "3_guion_llamada": "guion de 6 frases con dos objeciones típicas y su respuesta",
+    "4_priorizacion": "orden de ataque de la cartera vencida, del cobro más fácil al más difícil",
+    "5_prevencion": "dos cambios en tu forma de facturar"
+  },
+  "criterios_calidad": [
+    "Cada paso tiene día, canal y responsable, se puede ejecutar sin pensar",
+    "Las plantillas incluyen importe, factura y fecha límite",
+    "El punto de corte a acciones legales está definido con un número"
+  ],
+  "aviso_legal": "Orientativo; para intereses de demora y reclamación judicial consulta con tu asesor o abogado"
+}

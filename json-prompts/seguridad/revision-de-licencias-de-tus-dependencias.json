@@ -1,0 +1,36 @@
+{
+  "tarea": "Revisar las licencias de las dependencias y señalar incompatibilidades con el modelo de distribución del producto",
+  "contexto": {
+    "producto": "[NOMBRE Y QUÉ HACE]",
+    "como_se_distribuye": "[SAAS EN LA NUBE / SOFTWARE QUE EL CLIENTE INSTALA / APP MÓVIL / USO INTERNO]",
+    "codigo_propio": "[CERRADO Y PROPIETARIO / ABIERTO CON LICENCIA X]",
+    "donde_vendemos": "[ESPAÑA, UNIÓN EUROPEA, INTERNACIONAL]"
+  },
+  "entradas": {
+    "listado": "[PEGA LA SALIDA DE license-checker, pip-licenses O LA TABLA DE PAQUETE Y LICENCIA]"
+  },
+  "procedimiento": [
+    "Agrupa las licencias en familias: permisivas, con obligación de compartir cambios y con obligación fuerte que alcanza a tu código",
+    "Marca en rojo las que obligan a publicar tu código en tu modelo de distribución concreto",
+    "Marca en ámbar las que solo obligan si modificas la librería o si el cliente instala el software",
+    "Señala paquetes sin licencia declarada, con licencia dual o con licencia desconocida",
+    "Indica qué obligaciones de aviso tienes que cumplir aunque la licencia sea permisiva"
+  ],
+  "restricciones": [
+    "Esto es orientación práctica, no asesoramiento legal: dilo en una línea al final",
+    "No des por hecha una licencia si no aparece en la entrada",
+    "Distingue siempre entre usar la librería tal cual y modificarla"
+  ],
+  "formato_salida": {
+    "semaforo": "Tabla con: paquete, licencia, familia, semáforo, qué te obliga a hacer",
+    "acciones": "Lista de paquetes a sustituir, con alternativa de licencia permisiva para cada uno",
+    "fichero_de_avisos": "Borrador de texto de AVISOS DE TERCEROS listo para incluir en el producto",
+    "resumen_para_el_cliente": "Párrafo de 5 líneas que puedes enviar a un cliente o inversor que pregunte"
+  },
+  "criterios_calidad": [
+    "Ninguna licencia se clasifica sin nombrarla",
+    "Cada rojo lleva su alternativa concreta",
+    "El resumen es entendible por un abogado que no programa"
+  ],
+  "tono": "prudente y claro, sin dramatizar"
+}

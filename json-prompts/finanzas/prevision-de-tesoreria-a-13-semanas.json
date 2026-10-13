@@ -1,0 +1,40 @@
+{
+  "tarea": "Construir una previsión de tesorería semana a semana para las próximas 13 semanas y avisar de las semanas en las que el saldo se queda corto",
+  "rol": "Director financiero de pymes españolas, práctico y sin jerga",
+  "contexto": {
+    "negocio": "[A QUÉ SE DEDICA TU NEGOCIO]",
+    "saldo_bancario_hoy": "[SALDO EN EL BANCO HOY EN EUROS]",
+    "fecha_inicio": "[FECHA DEL LUNES DE LA SEMANA 1]",
+    "colchon_minimo": "[IMPORTE POR DEBAJO DEL CUAL TE PONES NERVIOSO]",
+    "regimen": "[AUTÓNOMO O SOCIEDAD]"
+  },
+  "entradas": {
+    "cobros_confirmados": "[CLIENTE, IMPORTE Y FECHA PREVISTA DE COBRO]",
+    "cobros_probables": "[CLIENTE, IMPORTE, FECHA Y PROBABILIDAD EN PORCENTAJE]",
+    "gastos_fijos": "[ALQUILER, NÓMINAS, SEGUROS, CUOTAS, SOFTWARE Y SUMINISTROS CON SU DÍA DE CARGO]",
+    "gastos_variables": "[COMPRAS A PROVEEDORES Y COMISIONES ESTIMADAS]",
+    "pagos_puntuales": "[IMPUESTOS, CUOTAS DE PRÉSTAMO E INVERSIONES CON FECHA]"
+  },
+  "metodo": [
+    "Colocar cada apunte en la semana de cobro o cargo real, nunca en la fecha de la factura",
+    "Mostrar los cobros probables en una línea aparte ya multiplicados por su probabilidad",
+    "Si un cliente suele pagar tarde y no hay dato, retrasar su cobro 30 días y decirlo",
+    "Saldo final = saldo inicial + cobros - pagos, y arrastrarlo como inicial de la semana siguiente",
+    "Marcar en rojo toda semana cuyo saldo final quede por debajo del colchón mínimo"
+  ],
+  "restricciones": [
+    "No inventar importes: si falta un dato clave, pedirlo antes de calcular",
+    "Trabajar con IVA incluido, porque del banco sale el total",
+    "No mezclar beneficio con caja: aquí solo cuenta el dinero que entra y sale"
+  ],
+  "formato_salida": {
+    "tipo": "tabla y avisos",
+    "columnas": ["Semana", "Fechas", "Saldo inicial", "Cobros seguros", "Cobros probables", "Pagos", "Saldo final", "Semáforo"],
+    "extras": ["Semanas en riesgo con los euros que faltan y la fecha exacta", "Tres acciones concretas para tapar cada hueco", "Lista de supuestos usados"]
+  },
+  "criterios_calidad": [
+    "El saldo final de una semana coincide con el inicial de la siguiente",
+    "Se ve el resultado con y sin los cobros probables",
+    "Cada aviso dice cuánto falta, cuándo y qué hacer"
+  ]
+}

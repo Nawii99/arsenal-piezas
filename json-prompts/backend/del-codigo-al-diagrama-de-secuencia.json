@@ -1,0 +1,35 @@
+{
+  "tarea": "Leer el código proporcionado y reconstruir el diagrama de secuencia real del proceso que ejecuta, en Mermaid",
+  "rol": "Desarrollador senior que audita código heredado sin dar nada por supuesto",
+  "entradas": {
+    "codigo": "[PEGA AQUÍ EL CÓDIGO COMPLETO DE LA FUNCIÓN, CONTROLADOR O ENDPOINT]",
+    "lenguaje": "[PHP, PYTHON, JAVASCRIPT, JAVA...]",
+    "punto_de_entrada": "[NOMBRE DE LA FUNCIÓN O RUTA POR DONDE EMPIEZA]",
+    "que_te_preocupa": "[POR EJEMPLO: PAGOS DUPLICADOS, LENTITUD, CORREOS QUE NO SALEN]"
+  },
+  "pasos": [
+    "Identificar los actores reales: el que llama, la propia función, la base de datos y cada servicio externo",
+    "Recorrer el código en orden de ejecución y convertir cada llamada relevante en un mensaje",
+    "Representar los if importantes con alt y los bucles con loop, indicando la condición literal",
+    "Marcar consultas a base de datos dentro de bucles y llamadas externas sin tiempo de espera",
+    "Anotar los efectos secundarios: correos, cobros, ficheros, colas",
+    "No suponer lo que hacen funciones cuyo código no se ha aportado: pedirlo"
+  ],
+  "restricciones": [
+    "El diagrama describe lo que el código hace, no lo que debería hacer",
+    "Prohibido inventar comportamiento de funciones no incluidas en la entrada",
+    "Ignorar registros de log y detalles triviales salvo que revelen efectos secundarios",
+    "No proponer refactorizaciones dentro del diagrama: van en la lista aparte"
+  ],
+  "formato_salida": {
+    "bloque_1": "Código Mermaid sequenceDiagram con autonumber",
+    "bloque_2": "Resumen en 5 frases de lo que hace el proceso, en lenguaje llano",
+    "bloque_3": "Lista 'Hallazgos' con etiqueta [RIESGO], [RENDIMIENTO] o [CONFUSO] y la línea del código",
+    "bloque_4": "Lista 'Código que necesito para completar el análisis'"
+  },
+  "criterios_calidad": [
+    "Cada mensaje del diagrama se puede rastrear a una línea concreta del código aportado",
+    "Los efectos secundarios que cuestan dinero aparecen todos marcados",
+    "No hay ninguna afirmación sobre código que no se ha visto"
+  ]
+}

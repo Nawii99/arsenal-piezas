@@ -1,0 +1,32 @@
+{
+  "tarea": "Definir el lote completo de fotos de local, sala, barra y equipo para el perfil de Google y la web de un negocio de hosteleria",
+  "contexto": {
+    "negocio": "[NOMBRE Y TIPO DE LOCAL]",
+    "zona": "[CIUDAD Y BARRIO]",
+    "espacios": "[FACHADA, SALA, BARRA, TERRAZA, RESERVADO, COCINA VISTA]",
+    "franja_con_mejor_luz": "[HORA A LA QUE ENTRA MEJOR LA LUZ]",
+    "personas": "[QUIEN PUEDE SALIR EN FOTO Y QUIEN NO]"
+  },
+  "lote_minimo": [
+    "Fachada de dia con el rotulo legible y sin coches tapando",
+    "Fachada de noche con las luces encendidas",
+    "Sala vacia ordenada y sala con ambiente en servicio",
+    "Barra o mostrador como plano principal del local",
+    "Terraza si la hay, con mesas montadas",
+    "Equipo trabajando, mirando a camara y sin mirar a camara",
+    "Detalle de mesa montada y detalle de un plato estrella",
+    "Aseos y accesos si son un punto fuerte del local"
+  ],
+  "por_cada_foto": {
+    "encuadre": "Horizontal o vertical, altura de camara y desde donde se dispara",
+    "hora": "Momento del dia recomendado",
+    "preparacion": "Que hay que recoger, encender o mover antes",
+    "uso": "Google, web, redes o los tres"
+  },
+  "avisos_legales": [
+    "Pedir consentimiento por escrito al personal y a los clientes que salgan reconocibles",
+    "Evitar matriculas y caras de terceros sin permiso"
+  ],
+  "formato_salida": "Tabla en markdown con las fotos numeradas, mas orden de subida a Google y texto alternativo sugerido para cada una",
+  "criterios_calidad": ["El lote se puede hacer en una sola jornada", "Ninguna foto necesita retoque para ser publicable", "Se entiende que se come y como es el sitio solo con las fotos"]
+}

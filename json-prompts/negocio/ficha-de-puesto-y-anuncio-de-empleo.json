@@ -1,0 +1,44 @@
+{
+  "tarea": "Redactar la ficha interna del puesto y el anuncio publicable de una vacante",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "a_que_se_dedica": "[QUÉ VENDÉIS Y A QUIÉN]",
+    "tamano_equipo": "[Nº DE PERSONAS HOY]",
+    "puesto": "[NOMBRE DEL PUESTO]",
+    "motivo_vacante": "[NUEVA POSICIÓN O SUSTITUCIÓN DE ALGUIEN]",
+    "jornada_y_lugar": "[COMPLETA O PARCIAL, PRESENCIAL/HÍBRIDO/REMOTO, CIUDAD]",
+    "banda_salarial_bruta_anual": "[MÍNIMO] a [MÁXIMO] EUR",
+    "a_quien_reporta": "[NOMBRE Y ROL]"
+  },
+  "entradas": {
+    "resultados_esperados_6_meses": ["[RESULTADO 1]", "[RESULTADO 2]", "[RESULTADO 3]"],
+    "tareas_del_dia_a_dia": ["[TAREA 1]", "[TAREA 2]", "[TAREA 3]"],
+    "herramientas": ["[HERRAMIENTA 1]", "[HERRAMIENTA 2]"],
+    "imprescindibles": ["[REQUISITO 1]", "[REQUISITO 2]"],
+    "deseables": ["[DESEABLE 1]"]
+  },
+  "pasos": [
+    "Convertir cada tarea en un resultado medible con plazo, no en responsabilidades vagas",
+    "Separar imprescindibles de deseables y eliminar todo requisito que nadie vaya a comprobar",
+    "Escribir el anuncio tuteando y empezando por el problema que resolverá la persona",
+    "Cerrar con salario, jornada, ubicación y proceso de selección con fases y plazos"
+  ],
+  "restricciones": [
+    "Nada de lenguaje discriminatorio por edad, sexo, origen, aspecto o situación familiar",
+    "Prohibido 'buscamos un crack', 'somos una familia' y 'ambiente joven'",
+    "Máximo 6 imprescindibles: si salen más, probablemente sean dos puestos distintos",
+    "No prometer beneficios que la empresa no tenga ya funcionando hoy"
+  ],
+  "formato_salida": {
+    "bloque_1_ficha_interna": "Misión del puesto en una frase, 3 resultados a 6 meses, tareas, imprescindibles, deseables y banda salarial",
+    "bloque_2_anuncio": "350-500 palabras: titular, quiénes somos, qué harás, qué necesitamos, qué ofrecemos y cómo apuntarse",
+    "bloque_3_titulares": "Tres titulares alternativos para portales de empleo",
+    "bloque_4_criba": "Cinco preguntas cortas para el formulario de candidatura"
+  },
+  "criterios_calidad": [
+    "Un desconocido entiende en 30 segundos qué hará la persona y si encaja",
+    "Todos los requisitos se pueden comprobar en una entrevista o en una prueba",
+    "El anuncio no promete nada que no aparezca en la ficha interna"
+  ],
+  "tono": "Claro y directo, sin jerga de recursos humanos"
+}

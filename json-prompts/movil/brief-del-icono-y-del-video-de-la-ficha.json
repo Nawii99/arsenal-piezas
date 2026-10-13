@@ -1,0 +1,45 @@
+{
+  "tarea": "Preparar el brief del icono de mi app y el guion del vídeo de vista previa de la ficha, listos para pasar a un diseñador o grabarlos yo",
+  "contexto": {
+    "app": "[NOMBRE DE TU APP]",
+    "categoria": "[CATEGORÍA EN LA TIENDA]",
+    "que_hace": "[QUÉ RESUELVE, EN UNA FRASE]",
+    "publico": "[A QUIÉN VA DIRIGIDA]",
+    "iconos_competencia": "[DESCRIBE LOS ICONOS DE 3 COMPETIDORES: COLORES Y SÍMBOLOS]",
+    "marca": "[COLORES, TIPOGRAFÍA Y PERSONALIDAD]",
+    "pantallas_para_el_video": "[QUÉ PANTALLAS O ACCIONES QUIERES ENSEÑAR]"
+  },
+  "parte_1_icono": {
+    "entregar": "3 conceptos distintos de icono",
+    "por_concepto": [
+      "idea en una frase",
+      "símbolo y por qué se entiende a 60 píxeles",
+      "paleta de 2 o 3 colores y contraste con los competidores",
+      "qué evitar en ese concepto",
+      "prompt para generarlo con una IA de imagen"
+    ],
+    "reglas": [
+      "Nada de texto dentro del icono salvo una letra de marca",
+      "Legible sobre fondo claro y sobre fondo oscuro",
+      "Un solo elemento protagonista, sin escenas complejas"
+    ]
+  },
+  "parte_2_video": {
+    "duracion": "entre 15 y 25 segundos",
+    "reglas": [
+      "Se ve sin sonido: todo lo importante va en imagen y rótulos",
+      "Los 3 primeros segundos muestran el resultado, no el logotipo",
+      "Solo grabaciones reales de la app, sin funciones que no existen",
+      "Máximo 6 rótulos en todo el vídeo"
+    ],
+    "formato": "Tabla plano a plano con: segundo, qué se ve en pantalla, rótulo, acción del dedo y nota de montaje"
+  },
+  "formato_salida": {
+    "tipo": "Documento en dos partes, icono y vídeo, con las tablas dentro",
+    "cierre": "Lista de entregables y medidas que hay que pedir al diseñador para cada tienda"
+  },
+  "criterios_calidad": [
+    "Los 3 iconos deben diferenciarse claramente de los de la competencia descrita",
+    "El guion del vídeo se entiende leyendo solo la columna de rótulos"
+  ]
+}

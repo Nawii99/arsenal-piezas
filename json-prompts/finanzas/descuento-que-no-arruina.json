@@ -1,0 +1,53 @@
+{
+  "tarea": "Evaluar si un descuento o promoción concreta sale a cuenta, calcular el volumen extra necesario para mantener el beneficio y proponer alternativas al descuento.",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y POR QUÉ CANAL]",
+    "motivo_de_la_promo": "[VACIAR STOCK / CAPTAR CLIENTES NUEVOS / CLIENTE PIDE REBAJA / FECHA COMERCIAL]",
+    "duracion": "[DÍAS O SEMANAS QUE DURA]"
+  },
+  "entradas": {
+    "producto_o_servicio": "[NOMBRE, PRECIO SIN IVA, COSTE DIRECTO POR UNIDAD]",
+    "descuento_propuesto": "[PORCENTAJE O IMPORTE, Y SI SE APLICA A TODO O A PARTE DEL CATÁLOGO]",
+    "ventas_normales": "[UNIDADES QUE VENDES EN UN PERIODO IGUAL SIN PROMO]",
+    "costes_de_la_promo": "[PUBLICIDAD, ENVÍOS GRATIS, COMISIONES DE PLATAFORMA, HORAS DE PREPARACIÓN]",
+    "capacidad": "[CUÁNTAS UNIDADES O SERVICIOS PUEDES ATENDER SIN ROMPERTE]",
+    "valor_de_repeticion": "[SI EL CLIENTE SUELE REPETIR, CADA CUÁNTO Y CON QUÉ IMPORTE MEDIO]"
+  },
+  "metodo": [
+    "1. Calcula el margen por unidad antes y después del descuento. Recuerda que un 20 por ciento de descuento se come mucho más del 20 por ciento del margen y enséñalo con números.",
+    "2. Calcula el volumen extra necesario: cuántas unidades más hay que vender para llegar al mismo beneficio total. Exprésalo en unidades y en porcentaje de aumento.",
+    "3. Contrasta ese volumen con la capacidad real: si no cabe en la agenda o en el stock, la promo no se sostiene.",
+    "4. Suma los costes de la promo al cálculo: publicidad, envío gratis y comisiones cambian el resultado más que el propio descuento.",
+    "5. Mira el efecto en clientes actuales: cuántos habrían comprado igual a precio completo. Ese es el descuento regalado, y hay que restarlo.",
+    "6. Si el cliente repite, calcula el margen del segundo y tercer pedido a precio normal y di si eso justifica captar barato una primera vez.",
+    "7. Propón cinco alternativas al descuento con su efecto en margen: regalar un extra de coste bajo, lote de dos unidades, pago anual por adelantado, entrega prioritaria, servicio adicional o segunda unidad rebajada.",
+    "8. Fija las reglas de protección: fecha de fin clara, unidades limitadas, no aplicable a presupuestos ya enviados y suelo de precio que no se cruza.",
+    "9. Deja definido cómo se mide al terminar: unidades, margen total, clientes nuevos y cuántos repiten a los 60 días."
+  ],
+  "restricciones": [
+    "Cifras sin IVA y con el coste directo completo, comisiones incluidas.",
+    "No prometas aumentos de ventas: el volumen extra es un requisito, no una previsión.",
+    "No propongas vender por debajo del coste directo en ningún caso.",
+    "Si el negocio es de servicios con agenda limitada, avisa de que el descuento no se compensa con volumen porque las horas no se estiran."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Descontar sobre el precio y pensar que el margen baja lo mismo.",
+    "Regalar el descuento a quien iba a comprar igual.",
+    "Sumar el envío gratis sin meterlo en la cuenta.",
+    "Repetir la promoción tantas veces que el cliente ya nunca compra a precio normal.",
+    "No poner fecha de fin ni límite de unidades."
+  ],
+  "formato_salida": {
+    "bloque_1": "Margen antes y después, con la cuenta escrita.",
+    "bloque_2": "Volumen extra necesario en unidades y en porcentaje, y si cabe en tu capacidad.",
+    "bloque_3": "Veredicto en una frase: sale, sale con condiciones, o no sale.",
+    "bloque_4": "Cinco alternativas al descuento ordenadas por impacto en margen.",
+    "bloque_5": "Reglas de protección y qué medir al acabar.",
+    "estilo": "Español de España, tuteando, sin tono de agencia"
+  },
+  "criterios_calidad": [
+    "El cálculo del volumen extra es correcto y verificable a mano.",
+    "El veredicto no se esconde detrás de matices.",
+    "Las alternativas son aplicables al negocio concreto descrito, no genéricas."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "tarea": "Limpiar, normalizar y deduplicar una lista de contactos o clientes, y devolver un fichero listo para importar mas un informe de cambios",
+  "contexto": {
+    "origen_datos": "[EXPORTACIÓN DE, EJ: EXCEL, GMAIL, TPV, FORMULARIO WEB]",
+    "destino": "[CRM, MAILCHIMP, HOJA, AGENDA DE WHATSAPP]",
+    "pais_principal": "España",
+    "uso_previsto": "[EMAIL, LLAMADA, WHATSAPP, FACTURACIÓN]"
+  },
+  "entradas": {
+    "lista": "[PEGA EL CSV O LA TABLA COMPLETA]",
+    "campos_obligatorios_destino": "[EJ: NOMBRE, EMAIL, TELÉFONO]",
+    "criterio_de_duplicado": "[POR DEFECTO: MISMO EMAIL, O MISMO TELÉFONO, O MISMO NIF]",
+    "que_hacer_con_duplicados": "[FUSIONAR O SOLO MARCAR]"
+  },
+  "pasos": [
+    "Detecta las columnas reales aunque las cabeceras esten mal escritas y proponme un mapeo a los campos del destino.",
+    "Normaliza nombres: quita mayusculas completas, corrige espacios dobles y separa nombre y apellidos si vienen juntos.",
+    "Normaliza telefonos al formato +34XXXXXXXXX, quita espacios, guiones y prefijos 0034; marca los que no tengan 9 digitos.",
+    "Normaliza emails a minusculas, quita espacios y detecta errores tipicos: gmail.con, hotmial, dos arrobas, tildes.",
+    "Valida el NIF o CIF: longitud, letra de control y formato; marca los invalidos sin corregirlos.",
+    "Normaliza provincias y codigos postales de cinco digitos con cero inicial.",
+    "Busca duplicados exactos y luego parecidos: mismo telefono con nombre distinto, mismo nombre y misma direccion, emails que solo difieren en un punto.",
+    "Al fusionar, conserva el registro mas completo y el dato mas reciente, y guarda los valores descartados en una columna de historico.",
+    "Marca los registros que no cumplen los campos obligatorios del destino."
+  ],
+  "que_mirar": [
+    "Empresas y personas mezcladas en la misma columna de nombre.",
+    "Bajas y bloqueos previos: nunca fusiones una baja dentro de un contacto activo.",
+    "Filas basura: pruebas, asdf, correos internos, contactos sin ningun dato de contacto.",
+    "Codificacion rota: caracteres raros en lugar de tildes y enes."
+  ],
+  "errores_tipicos": [
+    "Borrar duplicados sin guardar que se ha borrado y perder el telefono bueno.",
+    "Considerar duplicado a dos personas de la misma familia con el mismo telefono fijo.",
+    "Poner el movil en la columna de fijo y romper el envio por WhatsApp.",
+    "Perder el cero inicial de los codigos postales al pasar por la hoja de calculo."
+  ],
+  "restricciones": [
+    "No inventes ni completes datos que no esten en la lista.",
+    "No elimines ninguna fila sin dejar constancia en el informe.",
+    "Respeta las bajas y los contactos marcados como no contactar."
+  ],
+  "formato_salida": {
+    "fichero_limpio": "CSV con separador punto y coma y las columnas del destino en el orden indicado",
+    "columna_extra": "estado_registro con valores OK, REVISAR o FUSIONADO",
+    "informe_cambios": "Tabla: fila original | campo | valor antes | valor despues | motivo",
+    "bloque_descartes": "Filas apartadas y por que, para que yo decida",
+    "resumen": "Registros de entrada, de salida, fusionados y descartados"
+  },
+  "criterios_calidad": [
+    "Entrada menos descartes menos fusiones es igual a la salida, y el numero cuadra.",
+    "Ningun telefono ni email queda en formato mixto.",
+    "Cada fusion se puede deshacer con la informacion del informe.",
+    "El fichero importa sin errores en el destino indicado."
+  ]
+}

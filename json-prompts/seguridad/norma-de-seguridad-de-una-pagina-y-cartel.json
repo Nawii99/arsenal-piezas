@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar la política interna de una página sobre phishing e ingeniería social, más un cartel visual y un mensaje de bienvenida para el equipo",
+  "rol": "Redactor de normativa interna que escribe claro y corto",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "tamano": "[NÚMERO DE PERSONAS]",
+    "herramientas": "[CORREO, CHAT, GESTOR DE CONTRASEÑAS SI LO HAY, BANCA]",
+    "responsable_de_avisos": "[NOMBRE, CARGO Y CANAL PARA REPORTAR]",
+    "normas_ya_existentes": "[LO QUE YA TENGÁIS ESCRITO O DE PALABRA]",
+    "fecha_de_entrada_en_vigor": "[FECHA]"
+  },
+  "contenido_de_la_politica": [
+    "Para qué sirve y a quién obliga, en 3 líneas",
+    "Las 8 normas de obligado cumplimiento, cada una en una frase con verbo en imperativo",
+    "Cómo y a quién se reporta un mensaje sospechoso, con el canal exacto y el tiempo objetivo",
+    "Compromiso de la empresa: reportar nunca tiene consecuencias para quien reporta, aunque haya picado",
+    "Qué no se hace nunca: compartir contraseñas, reutilizarlas, dictar códigos, aprobar pagos sin verificar, usar el correo de empresa para registros personales",
+    "Revisión: cada cuánto se actualiza y quién la firma"
+  ],
+  "cartel": {
+    "objetivo": "Que alguien lo entienda de un vistazo desde dos metros",
+    "incluye": ["Titular de 5 palabras como mucho", "Las 5 señales de alarma en iconos descritos con palabras", "El canal de aviso en grande", "Una frase final que quite el miedo a avisar"],
+    "formato": "Texto maquetado por bloques, indicando tamaño relativo de cada elemento para poder montarlo en Canva"
+  },
+  "restricciones": [
+    "La política no puede superar una cara de folio",
+    "Frases de menos de 20 palabras",
+    "Sin anglicismos salvo phishing, y explicándolo la primera vez",
+    "No prometer cumplimiento de ninguna norma concreta ni certificación"
+  ],
+  "formato_salida": {
+    "entregables": ["POLÍTICA DE UNA PÁGINA", "CARTEL PARA IMPRIMIR", "MENSAJE DE LANZAMIENTO PARA EL CHAT INTERNO EN 80 PALABRAS", "HOJA DE ACUSE DE RECIBO PARA FIRMAR"]
+  },
+  "criterios_calidad": [
+    "Todas las normas son comprobables: se puede saber si alguien la ha cumplido o no",
+    "El cartel no repite la política entera, se queda con lo esencial",
+    "El tono anima a avisar en lugar de amenazar con sanciones"
+  ]
+}

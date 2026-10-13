@@ -1,0 +1,35 @@
+{
+  "tarea": "Analizar los datos de retención por cohortes y proponer un plan de acción priorizado",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "tipo_de_uso_esperado": "[DIARIO, SEMANAL O PUNTUAL]",
+    "periodo_analizado": "[MESES O SEMANAS QUE CUBREN LOS DATOS]",
+    "cambios_recientes": "[CAMBIOS EN LA APP O EN LOS ANUNCIOS DURANTE ESE PERIODO]"
+  },
+  "entradas": {
+    "tabla_cohortes": "[PEGA AQUÍ TUS DATOS: cohorte, usuarios, % D1, % D7, % D30]",
+    "por_canal": "[RETENCIÓN POR ORIGEN: orgánico, Meta, TikTok, ASO... si lo tienes]",
+    "por_plataforma": "[IOS Y ANDROID POR SEPARADO SI LO TIENES]"
+  },
+  "instrucciones": [
+    "Localiza el mayor escalón de caída y di si el problema es de expectativa, de primer uso o de hábito",
+    "Compara cohortes entre sí y señala si algún cambio o campaña coincide con una caída o subida",
+    "Descarta explicaciones falsas: cohortes con muy pocos usuarios, estacionalidad o cambios de medición",
+    "Separa el problema de captación (traes gente equivocada) del problema de producto (la gente buena tampoco vuelve)",
+    "Propón 5 acciones concretas ordenadas por impacto esperado frente a esfuerzo, indicando cuáles son de notificaciones y cuáles de producto",
+    "Para cada acción, define cómo sabrás en 4 semanas si ha funcionado"
+  ],
+  "restricciones": [
+    "No inventes cifras que no estén en las entradas; si falta un dato, dilo y sigue",
+    "Nada de recomendaciones genéricas tipo mejorar la experiencia",
+    "Marca el nivel de confianza de cada conclusión: alta, media o baja"
+  ],
+  "formato_salida": {
+    "secciones": ["Resumen en 5 líneas", "Dónde se rompe (con los números que lo demuestran)", "Hipótesis ordenadas por probabilidad", "Plan de 5 acciones con impacto, esfuerzo y métrica", "Datos que te faltan para decidir mejor"]
+  },
+  "criterios_calidad": [
+    "Cada afirmación va acompañada del número que la respalda",
+    "Se distingue correlación de causa",
+    "El plan cabe en un mes de trabajo de un equipo pequeño"
+  ]
+}

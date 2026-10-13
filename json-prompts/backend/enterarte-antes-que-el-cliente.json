@@ -1,0 +1,52 @@
+{
+  "tarea": "Montar el mínimo imprescindible de registro de errores, medidas y alertas para enterarme de los fallos de mi aplicación antes que mis clientes",
+  "contexto": {
+    "que_es_la_aplicacion": "[TIENDA / PANEL / AUTOMATIZACIÓN / API]",
+    "donde_corre": "[VERCEL / RAILWAY / VPS / MAKE / N8N]",
+    "como_me_entero_hoy": "[ME ESCRIBE UN CLIENTE / MIRO YO / NO ME ENTERO]",
+    "presupuesto": "[GRATIS / HASTA X EUROS AL MES]"
+  },
+  "entradas": {
+    "operaciones_criticas": "[COBRAR, ENTREGAR EL PEDIDO, ENVIAR EL EMAIL DE ALTA, GUARDAR EL FORMULARIO]",
+    "canal_donde_quiero_el_aviso": "[EMAIL / TELEGRAM / WHATSAPP / SLACK]",
+    "horario_en_que_puedo_reaccionar": "[EJ: DE 9 A 21 ENTRE SEMANA]"
+  },
+  "pasos": [
+    "1. Define las tres señales que de verdad importan: el servicio responde, las operaciones críticas terminan bien y no hay una avalancha de errores",
+    "2. Establece el formato de registro: una línea por evento en JSON con momento, nivel, operación, identificador de petición, usuario si aplica y resultado",
+    "3. Prohíbe registrar datos sensibles: nada de contraseñas, tarjetas, tokens ni el contenido completo de datos personales",
+    "4. Añade un identificador de petición que viaje por todo el proceso para poder seguir un caso concreto de principio a fin",
+    "5. Define qué es error (rompe algo) y qué es aviso (raro pero no rompe), y qué se ignora directamente para no acostumbrarme al ruido",
+    "6. Monta un chequeo de vida cada minuto desde fuera que compruebe una página real y no solo que el servidor contesta",
+    "7. Añade el chequeo de negocio: si en el último periodo esperado no ha entrado ningún pedido o ninguna alta, avisa",
+    "8. Define reglas de alerta con umbral y ventana para no recibir 200 mensajes por el mismo fallo, y qué avisa fuera de horario",
+    "9. Elige herramienta gratuita o barata para cada pieza y explica qué pasa si dejo de pagarla",
+    "10. Escribe qué mirar cuando llega una alerta: los cuatro sitios a abrir por orden"
+  ],
+  "restricciones": [
+    "Máximo 6 alertas distintas: si son más, dejaré de mirarlas",
+    "Cada alerta debe decir qué ha pasado, desde cuándo y qué hacer, no solo un código",
+    "No propongas montar un sistema de observabilidad completo: solo lo que puedo mantener yo",
+    "Guardar registros con límite de retención y de tamaño para que no crezcan sin control"
+  ],
+  "formato_salida": {
+    "1_que_vigilar": "Tabla markdown: señal, cómo se mide, umbral, gravedad, canal de aviso",
+    "2_formato_log": "Ejemplo de línea de registro con todos los campos",
+    "3_codigo": "Función de registro y captura de errores comentada en [LENGUAJE]",
+    "4_configuracion": "Pasos exactos para dejar montados chequeo externo y avisos",
+    "5_textos_alerta": "Plantilla del mensaje de aviso",
+    "6_primeros_pasos": "Checklist de qué mirar cuando salta una alerta"
+  },
+  "criterios_calidad": [
+    "Apagando la aplicación a propósito, la alerta llega en menos de 5 minutos",
+    "Con el identificador de petición puedo reconstruir un caso concreto",
+    "Ningún registro contiene contraseñas ni datos de tarjeta",
+    "En una semana normal no llegan alertas falsas"
+  ],
+  "errores_tipicos": [
+    "Vigilar solo que el servidor responde y no que el pedido se entrega",
+    "Alertas tan frecuentes que acabas silenciando el canal",
+    "Guardar en el registro el cuerpo completo con datos personales",
+    "Registrar todo a nivel error y no poder distinguir lo grave"
+  ]
+}

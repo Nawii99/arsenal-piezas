@@ -1,0 +1,37 @@
+{
+  "tarea": "Redacta el procedimiento de copias de seguridad y el guion de la prueba de restauracion de una empresa pequena",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sistemas_y_datos_criticos": "[p. ej. facturacion, base de clientes, web, fotos de obra, contabilidad]",
+    "donde_se_copia_hoy": "[p. ej. disco USB, Google Drive, nube del proveedor, no lo se]",
+    "responsable": "[NOMBRE O ROL]",
+    "cuanto_tiempo_puedo_estar_parado": "[p. ej. 4 horas, 1 dia]",
+    "cuanta_informacion_puedo_perder": "[p. ej. como mucho lo de hoy]"
+  },
+  "el_procedimiento_debe_incluir": [
+    "Tabla de que se copia, con que frecuencia, donde y cuantas versiones se guardan",
+    "Regla de tener al menos una copia fuera de la oficina y una desconectada",
+    "Quien comprueba cada semana que la copia se ha hecho y como lo apunta",
+    "Que hacer si una copia falla dos veces seguidas",
+    "Quien tiene acceso a las copias y como se protegen",
+    "Que NO esta cubierto por la copia, dicho de forma explicita"
+  ],
+  "guion_prueba_restauracion": [
+    "Frecuencia recomendada y quien la ejecuta",
+    "Pasos para restaurar un archivo suelto",
+    "Pasos para simular la perdida de un sistema completo sin romper el real",
+    "Como cronometrar cuanto se tarda y comparar con el tiempo de parada admisible",
+    "Acta de la prueba: fecha, que se restauro, cuanto tardo, que fallo, que se corrige"
+  ],
+  "restricciones": [
+    "Espanol de Espana, pasos ejecutables por alguien sin perfil tecnico o encargables al informatico",
+    "Nada de nombres de productos concretos salvo que aparezcan en el contexto",
+    "Si un paso es arriesgado, marcalo con AVISO y explica como hacerlo sin tocar produccion"
+  ],
+  "formato_salida": "Markdown: apartado 1 procedimiento con tabla, apartado 2 guion de prueba en lista numerada, apartado 3 plantilla de acta de prueba",
+  "criterios_calidad": [
+    "El procedimiento responde a cuanto puedo perder y cuanto puedo tardar en volver",
+    "La prueba de restauracion se puede hacer en menos de media jornada",
+    "Queda claro quien se entera si la copia lleva dias fallando"
+  ]
+}

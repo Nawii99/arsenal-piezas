@@ -1,0 +1,37 @@
+{
+  "tarea": "Auditar la coherencia visual de los materiales de una marca y entregar un plan de corrección priorizado",
+  "estandar_de_referencia": {
+    "colores_oficiales": "[HEX DE TUS COLORES]",
+    "tipografias_oficiales": "[TÍTULOS Y TEXTOS]",
+    "logo_oficial": "[VERSIÓN CORRECTA Y VERSIONES PERMITIDAS]",
+    "estilo_de_imagen": "[CÓMO DEBEN SER TUS FOTOS]"
+  },
+  "materiales_a_revisar": "[LISTA: WEB, FICHA DE GOOGLE, INSTAGRAM, TARJETA, RÓTULO, FACTURA, FURGONETA, ROPA, PRESUPUESTOS]",
+  "como_los_aporto": "[CAPTURAS ADJUNTAS O DESCRIPCIÓN ESCRITA]",
+  "presupuesto": "[BAJO, MEDIO O ALTO]",
+  "que_revisar_en_cada_material": [
+    "Versión del logo usada y si respeta área y tamaño mínimo",
+    "Colores empleados frente a los oficiales",
+    "Tipografías empleadas y número de familias distintas",
+    "Estilo de imagen y tratamiento de fotos",
+    "Legibilidad y contraste",
+    "Datos de contacto y su formato"
+  ],
+  "clasificacion": {
+    "gravedad": ["grave: daña la confianza o no se lee", "media: rompe la coherencia", "leve: detalle a pulir"],
+    "esfuerzo": ["5 minutos", "una tarde", "encargo a profesional"]
+  },
+  "formato_salida": {
+    "tipo": "tabla markdown",
+    "columnas": "material | problema detectado | gravedad | por qué importa | cómo arreglarlo | esfuerzo",
+    "cierre": "plan en tres bloques: esta semana, este mes y cuando haya presupuesto"
+  },
+  "restricciones": [
+    "No opinar sobre gustos: solo sobre coherencia con el estándar y legibilidad",
+    "Si un material no se puede evaluar con lo aportado, decirlo en vez de suponer"
+  ],
+  "criterios_calidad": [
+    "Cada problema lleva una solución concreta y accionable",
+    "El plan empieza por lo que más se ve y menos cuesta"
+  ]
+}

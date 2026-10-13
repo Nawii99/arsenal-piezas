@@ -1,0 +1,41 @@
+{
+  "tarea": "Redactar la respuesta pública a una reseña negativa, el mensaje privado de resolución y la recomendación de compensación",
+  "entradas": {
+    "texto_resena": "[PEGA AQUÍ LA RESEÑA TAL CUAL, SIN CORREGIR]",
+    "puntuacion": "[1 A 5 ESTRELLAS]",
+    "plataforma": "[GOOGLE / TRUSTPILOT / FICHA DE PRODUCTO / MARKETPLACE]",
+    "que_paso_realmente": "[TU VERSIÓN DE LOS HECHOS, CON FECHAS Y Nº DE PEDIDO SI LO TIENES]",
+    "margen_de_compensacion": "[NADA / DESCUENTO / REENVÍO / DEVOLUCIÓN TOTAL]",
+    "nombre_que_firma": "[NOMBRE REAL DE QUIEN RESPONDE]"
+  },
+  "clasificacion_previa": [
+    "Clasificar la queja en: fallo logístico, producto defectuoso, expectativa no cumplida, atención al cliente, precio, error del propio cliente, o reseña sospechosa de ser falsa",
+    "Indicar si la culpa es de la tienda, compartida o del cliente, y ajustar el tono a eso"
+  ],
+  "estructura_respuesta_publica": [
+    "Agradecer y nombrar al cliente si aparece su nombre",
+    "Reconocer el hecho concreto sin excusas ni jerga corporativa",
+    "Explicar en una frase qué ha pasado o qué se está comprobando",
+    "Decir la acción concreta que ya se ha puesto en marcha",
+    "Cerrar invitando a seguir por privado con un canal directo"
+  ],
+  "restricciones": [
+    "Máximo 90 palabras la respuesta pública",
+    "No discutir, no ironizar, no culpar al cliente aunque tenga parte de culpa",
+    "No publicar datos personales, nº de pedido completo, teléfono ni dirección",
+    "No prometer nada que no esté dentro del margen de compensación indicado",
+    "No usar frases hechas tipo lamentamos las molestias ocasionadas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tipo de queja detectado y a quién corresponde la responsabilidad",
+    "bloque_2": "Respuesta pública lista para copiar",
+    "bloque_3": "Mensaje privado al cliente, más largo, con la solución paso a paso",
+    "bloque_4": "Compensación recomendada y por qué esa y no otra",
+    "bloque_5": "Arreglo interno para que no vuelva a pasar, en una sola frase accionable"
+  },
+  "criterios_calidad": [
+    "Un lector neutral que lea la reseña y la respuesta debe quedarse con mejor impresión de la tienda que antes",
+    "La respuesta no suena a plantilla ni a texto de departamento legal",
+    "Ninguna afirmación que no se pueda sostener con los hechos aportados"
+  ]
+}

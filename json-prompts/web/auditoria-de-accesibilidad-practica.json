@@ -1,0 +1,60 @@
+{
+  "tarea": "Auditar la accesibilidad real de [URL_WEB] y entregar las correcciones concretas, priorizadas",
+  "contexto": {
+    "web": "[URL Y OBJETIVO PRINCIPAL DE LA PÁGINA]",
+    "publico": "[EDAD Y PERFIL DE TUS CLIENTES]",
+    "paginas_a_revisar": "[PORTADA, PÁGINA DE SERVICIO, FORMULARIO, CHECKOUT]",
+    "perfil_lector": "Sin conocimientos técnicos, puede tocar colores, textos y HTML sencillo"
+  },
+  "entradas": {
+    "html_o_capturas": "[PEGA EL HTML O DESCRIBE CADA PANTALLA]",
+    "colores_de_marca": "[CÓDIGOS HEXADECIMALES DE TEXTO, FONDO Y BOTONES]",
+    "tipografia_y_tamanos": "[FUENTE Y TAMAÑO BASE EN PX]",
+    "elementos_especiales": "[CARRUSELES, VÍDEOS, VENTANAS EMERGENTES, CHAT]"
+  },
+  "procedimiento": [
+    "1. Comprueba el contraste de cada combinación de texto y fondo y de los botones",
+    "2. Recorre la página entera solo con el tabulador y anota dónde se pierde el foco o se queda atrapado",
+    "3. Revisa que cada campo de formulario tenga etiqueta visible asociada, no solo texto dentro del campo",
+    "4. Comprueba textos alternativos: descriptivos en imágenes con información, vacíos en las decorativas",
+    "5. Verifica la jerarquía de titulares: un solo título principal y sin saltos de nivel",
+    "6. Mira los enlaces: 'pincha aquí' y 'leer más' no dicen a dónde llevan",
+    "7. Comprueba el tamaño de las zonas pulsables en móvil y la separación entre ellas",
+    "8. Revisa que nada se comunique solo por color, ni errores solo en rojo",
+    "9. Amplía el navegador al doscientos por ciento y comprueba que no se rompe ni obliga a desplazar en horizontal",
+    "10. Revisa vídeos y audios: subtítulos y control para parar cualquier movimiento automático"
+  ],
+  "que_mirar": [
+    "Contraste mínimo de 4,5 a 1 en texto normal y 3 a 1 en texto grande",
+    "El indicador de foco debe verse claramente, nunca eliminarlo por estética",
+    "El texto gris claro sobre blanco es el fallo más repetido en webs bonitas",
+    "Los mensajes de error deben decir qué campo falla y cómo arreglarlo",
+    "Los carruseles automáticos son un problema para casi todo el mundo"
+  ],
+  "errores_tipicos": [
+    "Confiar en el corrector automático y dar por buena la web con la puntuación alta",
+    "Usar el texto de ayuda dentro del campo como única etiqueta: desaparece al escribir",
+    "Poner iconos sin texto y sin descripción",
+    "Botones hechos con imágenes de texto",
+    "Ventanas emergentes que no se pueden cerrar con el teclado"
+  ],
+  "restricciones": [
+    "Cada hallazgo lleva su corrección exacta, no una recomendación genérica",
+    "No rediseñes la marca: propón el ajuste mínimo de color que cumpla",
+    "Ordena por impacto en las ventas, no por gravedad teórica"
+  ],
+  "formato_salida": {
+    "1_resumen": "5 líneas con el estado general y los tres fallos que más clientes te cuestan",
+    "2_tabla_hallazgos": "Problema | dónde | a quién afecta | gravedad | corrección concreta | esfuerzo",
+    "3_paleta_corregida": "Colores originales y sustitutos con su ratio de contraste calculado",
+    "4_html_corregido": "Fragmentos antes y después de formularios, botones e imágenes",
+    "5_guion_de_prueba": "Cómo repetir la prueba con teclado y con zoom en 10 minutos",
+    "6_plan": "Qué arreglar hoy, esta semana y este mes"
+  },
+  "criterios_calidad": [
+    "Se puede completar el objetivo principal de la web usando solo el teclado",
+    "Todos los textos cumplen el contraste mínimo y se indica el ratio",
+    "Cada hallazgo incluye el código corregido listo para pegar",
+    "No se propone ninguna solución que cambie la identidad visual del negocio"
+  ]
+}

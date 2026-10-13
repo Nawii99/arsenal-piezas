@@ -1,0 +1,42 @@
+{
+  "tarea": "Convertir una clase Java a Kotlin idiomático y explicar cada cambio",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL PROYECTO]",
+    "version_kotlin": "[VERSIÓN DE KOTLIN, EJ: 2.0]",
+    "framework": "[SPRING BOOT / ANDROID / NINGUNO]",
+    "convive_con_codigo_java": true
+  },
+  "entradas": {
+    "codigo_java": "[PEGA AQUÍ EL CÓDIGO JAVA COMPLETO]",
+    "clases_que_la_usan": "[NOMBRES DE CLASES QUE LA LLAMAN, O 'NO LO SÉ']"
+  },
+  "pasos": [
+    "Decidir la nulabilidad real de cada campo y parámetro antes de convertir",
+    "Sustituir getters y setters por propiedades, y los POJO por data class",
+    "Cambiar Optional por tipos nulables con ?. y ?:",
+    "Pasar los static a companion object o funciones de nivel superior",
+    "Usar val por defecto y var solo si de verdad se reasigna",
+    "Añadir @JvmStatic, @JvmOverloads o @JvmField solo donde Java siga llamando"
+  ],
+  "restricciones": [
+    "No cambiar el comportamiento ni la firma pública sin avisarlo",
+    "No usar !! salvo justificación escrita en una línea",
+    "No introducir librerías nuevas"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Convertir en data class una entidad JPA con identidad propia",
+    "Perder la inicialización perezosa al pasar a val",
+    "Dejar tipos de plataforma (String!) sin decidir nulabilidad"
+  ],
+  "formato_salida": {
+    "1_codigo_kotlin": "bloque de código completo y compilable",
+    "2_tabla_cambios": "tabla con columnas: elemento original | cambio | motivo",
+    "3_riesgos": "lista con nivel alto, medio o bajo",
+    "4_que_probar": "comprobaciones y tests a ejecutar antes de subirlo"
+  },
+  "criterios_calidad": [
+    "Compila sin avisos de nulabilidad",
+    "Ninguna llamada desde el Java existente se rompe"
+  ],
+  "tono": "directo, explicaciones de una línea"
+}

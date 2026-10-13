@@ -1,0 +1,33 @@
+{
+  "tarea": "Convierte las politicas internas de la empresa en un plan de auditoria interna y redacta el informe de hallazgos a partir de los resultados",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "politicas_vigentes": "[LISTA: p. ej. uso aceptable, contrasenas, copias, altas y bajas]",
+    "sistemas": "[LISTA DE HERRAMIENTAS Y CUENTAS]",
+    "quien_audita": "[NOMBRE Y CARGO]",
+    "fecha_limite": "[DD/MM/AAAA]",
+    "resultados_observados": "[PEGA AQUI LO QUE HAYAS COMPROBADO, O DEJA VACIO PARA GENERAR SOLO EL PLAN]"
+  },
+  "fase_1_plan": {
+    "salida": "lista de comprobaciones, una por norma auditable",
+    "cada_comprobacion_lleva": ["norma que verifica", "que mirar exactamente", "donde mirarlo", "evidencia que hay que guardar", "tiempo estimado"],
+    "limite": "maximo 25 comprobaciones, ordenadas de mayor a menor riesgo"
+  },
+  "fase_2_informe": {
+    "solo_si": "hay resultados_observados",
+    "cada_hallazgo_lleva": ["que se ha encontrado", "norma incumplida", "gravedad alta media o baja con justificacion", "consecuencia realista si no se corrige", "accion correctora concreta", "responsable propuesto", "plazo propuesto"],
+    "cierre": "resumen ejecutivo de 6 lineas y las 3 acciones a hacer primero"
+  },
+  "restricciones": [
+    "Espanol de Espana, tono neutro, sin senalar personas por su nombre",
+    "No inventes hallazgos: si no hay dato observado, escribe -sin evidencia, pendiente de comprobar-",
+    "La gravedad se justifica siempre, nunca se afirma sin motivo",
+    "Nada de recomendar comprar herramientas como primera solucion"
+  ],
+  "formato_salida": "Markdown. Fase 1 en tabla de comprobaciones. Fase 2 con una ficha por hallazgo mas una tabla resumen Hallazgo / Gravedad / Responsable / Plazo",
+  "criterios_calidad": [
+    "Toda comprobacion se puede hacer sin herramientas tecnicas especiales",
+    "Cada hallazgo se apoya en una evidencia concreta y citada",
+    "El plan de correccion cabe en el tiempo real de una empresa pequena"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "tarea": "Diseñar el plan de acompañamiento entre sesiones de [PROGRAMA O TRATAMIENTO] para mejorar el cumplimiento y evitar abandonos",
+  "contexto": {
+    "tipo_de_servicio": "[REHABILITACIÓN / NUTRICIÓN / ENTRENAMIENTO / COACHING DE HÁBITOS / PSICOLOGÍA]",
+    "duracion_del_plan": "[NÚMERO DE SESIONES Y SEMANAS]",
+    "quien_manda_los_mensajes": "[EL PROFESIONAL / RECEPCIÓN / AUTOMÁTICO]",
+    "canal": "[WHATSAPP / EMAIL / APP]",
+    "momento_de_abandono": "[EN QUÉ SESIÓN SUELE CAERSE LA GENTE]"
+  },
+  "entradas": {
+    "pautas_en_casa": "[QUÉ SE LE PIDE HACER ENTRE SESIONES, TAL CUAL SE LO EXPLICA EL PROFESIONAL]",
+    "barreras_frecuentes": "[LO QUE MÁS DICEN CUANDO NO LO HAN HECHO]",
+    "tiempo_disponible": "[MINUTOS AL DÍA QUE PUEDES DEDICAR AL SEGUIMIENTO]"
+  },
+  "pasos": [
+    "1. Reduce la pauta de casa a tres acciones como máximo y escríbelas en frases de menos de doce palabras que el paciente pueda repetir de memoria.",
+    "2. Convierte cada acción en algo medible con un sí o un no diario, sin escalas ni porcentajes.",
+    "3. Coloca los puntos de contacto en el calendario: día 2 tras la sesión, mitad de semana y víspera de la siguiente cita. Ni uno más.",
+    "4. Escribe cada mensaje con una sola pregunta y opción de responder con un número o una palabra.",
+    "5. Prepara las respuestas a las tres barreras más comunes: falta de tiempo, dolor o molestia al hacerlo, y olvido. Cada una lleva una salida práctica, no ánimo genérico.",
+    "6. Define la señal de alarma de abandono: dos mensajes sin contestar o una cita movida dos veces, y qué se hace entonces.",
+    "7. Escribe el guion de la llamada de rescate, de tres minutos, que no juzga y ofrece rebajar el plan antes que perderlo.",
+    "8. Cierra el circuito: cómo llega al profesional el resumen de cumplimiento antes de la siguiente sesión, en cuatro líneas."
+  ],
+  "restricciones": [
+    "Los mensajes no cambian ni interpretan la pauta clínica: solo recuerdan y recogen lo que ya indicó el profesional.",
+    "Si el paciente cuenta un síntoma nuevo, no se responde con consejo: se ofrece hablar con el profesional.",
+    "Nada de culpa ni de sermones: el mensaje nunca reprocha.",
+    "Se pide permiso al inicio del plan para este seguimiento y se puede parar cuando quiera."
+  ],
+  "formato_salida": {
+    "1_pauta_simplificada": "Las tres acciones en lenguaje de paciente",
+    "2_calendario_de_contacto": "Día, hora, canal y objetivo de cada mensaje",
+    "3_mensajes": "Todos los mensajes del ciclo, listos para copiar",
+    "4_respuestas_a_barreras": "Qué contestar ante las cinco excusas más frecuentes",
+    "5_guion_de_rescate": "La llamada de tres minutos, línea a línea",
+    "6_resumen_para_el_profesional": "Plantilla de cuatro líneas antes de cada sesión"
+  },
+  "criterios_calidad": [
+    "El paciente puede contestar cada mensaje en menos de diez segundos.",
+    "El profesional entra a la sesión sabiendo qué se ha cumplido sin preguntar tres veces.",
+    "Hay un dato comparable: cuántos llegan a la última sesión antes y después.",
+    "Ningún mensaje contiene una indicación de salud nueva."
+  ],
+  "errores_tipicos": [
+    "Mandar mensajes diarios hasta que el paciente silencia el chat.",
+    "Pedir que rellene una tabla larga que nadie rellena.",
+    "Contestar dudas clínicas por escrito para ahorrar una consulta.",
+    "Dar por perdido a quien falla una semana en vez de rebajarle el plan."
+  ]
+}

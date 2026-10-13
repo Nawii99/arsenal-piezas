@@ -1,0 +1,41 @@
+{
+  "tarea": "Guiar el cierre mensual de gastos con una lista de comprobación y devolver un informe de una página con las decisiones del mes siguiente",
+  "contexto": {
+    "negocio": "[QUÉ HACE TU NEGOCIO]",
+    "mes_a_cerrar": "[MES Y AÑO]",
+    "quien_lo_hace": "[TÚ, TU SOCIO O LA PERSONA DE ADMINISTRACIÓN]"
+  },
+  "entradas": {
+    "extracto": "[MOVIMIENTOS DEL BANCO Y DE LA TARJETA DEL MES]",
+    "facturas_recibidas": "[LISTA DE FACTURAS: PROVEEDOR, FECHA, IMPORTE]",
+    "pagos_en_efectivo": "[GASTOS PAGADOS EN METÁLICO O DESDE OTRA CUENTA]",
+    "pendientes": "[FACTURAS RECIBIDAS QUE AÚN NO HAS PAGADO Y SUS VENCIMIENTOS]",
+    "cierre_anterior": "[TOTALES POR CATEGORÍA DEL MES PASADO]"
+  },
+  "procedimiento": [
+    "Cuadrar movimientos con facturas: marcar facturas sin cargo en el banco y cargos sin factura",
+    "Buscar cobros duplicados, cargos de proveedores que ya cancelaste y comisiones bancarias nuevas",
+    "Incorporar los pagos en efectivo y desde otras cuentas para que el gasto del mes sea el real",
+    "Separar el gasto pagado del gasto comprometido pendiente de pago, con sus vencimientos",
+    "Comparar los totales por categoría con el mes anterior y destacar solo lo que se mueve de verdad",
+    "Calcular tres indicadores: gasto fijo mensual, gasto sobre facturación y meses de gasto fijo cubiertos con la caja actual",
+    "Cerrar con tres decisiones concretas para el mes siguiente y la fecha del próximo cierre"
+  ],
+  "restricciones": [
+    "No dar el cierre por bueno si hay descuadres: listarlos en un apartado propio",
+    "No incluir en el gasto del mes las facturas del mes siguiente aunque ya estén pagadas; señalarlas aparte",
+    "Informe de una sola página, sin relleno"
+  ],
+  "formato_salida": {
+    "checklist": "Lista de comprobación marcada con hecho o pendiente",
+    "descuadres": "Tabla: qué no cuadra, importe, qué hacer y a quién reclamar",
+    "informe": ["Gasto total del mes", "Gasto por categoría con la variación frente al mes anterior", "Gasto fijo mensual", "Gasto sobre facturación", "Pagos comprometidos de los próximos 30 días", "Meses de gasto fijo que cubre tu caja"],
+    "decisiones": "Tres acciones para el mes siguiente con responsable y fecha"
+  },
+  "criterios_calidad": [
+    "Cada factura tiene su cargo o aparece en descuadres",
+    "Los indicadores se calculan con las cifras del propio informe y se puede rehacer la cuenta a mano",
+    "El cierre se puede repetir igual el mes que viene sin cambiar nada del proceso"
+  ],
+  "tono": "de lista de tareas, ordenado y breve"
+}

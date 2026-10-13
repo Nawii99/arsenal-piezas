@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar los textos de una pagina de categoria de tienda online optimizados para buscadores y para el comprador",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "categoria": "[NOMBRE DE LA CATEGORIA]",
+    "palabra_clave_principal": "[COMO SE BUSCA EN GOOGLE]",
+    "n_productos_en_la_categoria": "[NUMERO]",
+    "rango_de_precios": "[DESDE X HASTA Y EUROS]"
+  },
+  "entradas": {
+    "subcategorias": "[LISTA DE SUBCATEGORIAS O FILTROS PRINCIPALES]",
+    "productos_destacados": "[3 O 4 PRODUCTOS QUE QUIERES EMPUJAR]",
+    "dudas_del_comprador": "[QUE PREGUNTAN ANTES DE ELEGIR]"
+  },
+  "estructura_pedida": [
+    "Texto de arriba: 2 o 3 frases, encima del listado, sin empujar los productos fuera de la pantalla",
+    "Texto de abajo: 300 a 450 palabras con subtitulos H2",
+    "Un bloque de como elegir con 3 o 4 criterios de decision",
+    "Enlaces internos a subcategorias y a los productos destacados, con texto de enlace descriptivo",
+    "3 preguntas frecuentes propias de la categoria, no del producto"
+  ],
+  "restricciones": [
+    "La palabra clave aparece de forma natural, sin repetirla mas de 4 veces en todo el texto",
+    "No copiar descripciones de producto ni textos del fabricante",
+    "No prometer stock, plazos ni precios concretos",
+    "Espanol de Espana, tuteando"
+  ],
+  "formato_salida": {
+    "h1_propuesto": "una linea",
+    "texto_superior": "parrafo corto",
+    "texto_inferior": "texto con H2 y enlaces marcados como [texto de enlace] hacia [destino]",
+    "faq_categoria": "3 preguntas con respuesta breve"
+  },
+  "criterios_calidad": [
+    "El texto ayuda a elegir, no solo repite el nombre de la categoria",
+    "Cada enlace interno tiene sentido para el comprador y no es relleno",
+    "El texto de arriba se lee en menos de 10 segundos"
+  ]
+}

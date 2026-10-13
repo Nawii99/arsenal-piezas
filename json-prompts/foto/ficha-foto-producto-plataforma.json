@@ -1,0 +1,39 @@
+{
+  "tarea": "foto_de_producto",
+  "encargo": {
+    "producto": "[PRODUCTO, MATERIAL Y COLOR]",
+    "marca": "[NOMBRE DE LA MARCA]",
+    "uso_final": ["tienda", "instagram", "catalogo"],
+    "a_quien_le_habla": "[CLIENTE TIPO, EDAD Y QUE BUSCA]"
+  },
+  "escena": {
+    "fondo": { "tipo": "liso", "color": "[COLOR DE FONDO]", "alternativa": "superficie de piedra clara" },
+    "superficie": "[MESA, TELA, MARMOL, MADERA]",
+    "atrezo": { "permitido": true, "maximo_elementos": 2, "nunca": ["marcas ajenas", "texto inventado", "manos borrosas"] }
+  },
+  "camara": {
+    "plano": "producto entero con aire alrededor",
+    "angulo": "tres cuartos a la altura del producto",
+    "lente_equivalente_mm": 85,
+    "profundidad_de_campo": "media, etiqueta legible"
+  },
+  "luz": {
+    "principal": { "tipo": "ventana grande a 45 grados", "dureza": "suave" },
+    "relleno": "rebote blanco al lado opuesto",
+    "contraluz": { "activo": true, "intensidad": "baja", "para": "separar del fondo" },
+    "sombra": "corta y definida bajo el producto"
+  },
+  "salidas": [
+    { "nombre": "principal_tienda", "proporcion": "1:1", "pixeles": "2000x2000", "fondo": "blanco puro", "margen_por_ciento": 12 },
+    { "nombre": "instagram_feed", "proporcion": "4:5", "pixeles": "1080x1350", "fondo": "ambientado" },
+    { "nombre": "historia", "proporcion": "9:16", "pixeles": "1080x1920", "fondo": "ambientado", "espacio_para_texto": "tercio superior" },
+    { "nombre": "detalle", "proporcion": "1:1", "pixeles": "2000x2000", "enfoque": "textura y etiqueta" }
+  ],
+  "variantes": { "cantidad": 4, "cambiar_solo": ["angulo", "atrezo"], "mantener": ["producto", "color", "luz"] },
+  "limites": {
+    "personas": { "caras_visibles": false, "motivo": "una cara generada o retocada necesita permiso de esa persona y aviso de que la imagen es generada" },
+    "texto_en_imagen": "solo el que exista de verdad en el envase; si no lo tienes, dejalo liso",
+    "fidelidad": "el producto debe verse como el real; si cambia forma, color o etiqueta, se descarta"
+  },
+  "revision": { "quien": "el cliente", "comprobar": ["color real", "proporciones", "etiqueta legible", "sin objetos raros"], "rondas_incluidas": 1 }
+}

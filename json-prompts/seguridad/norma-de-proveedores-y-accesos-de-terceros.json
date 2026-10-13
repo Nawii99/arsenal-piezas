@@ -1,0 +1,36 @@
+{
+  "tarea": "Redacta la norma interna de gestion de proveedores con acceso a sistemas o datos, mas un cuestionario de evaluacion previa",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "proveedores_tipicos": "[p. ej. informatico externo, gestoria, agencia de marketing, desarrollador web, limpieza]",
+    "a_que_acceden": "[p. ej. servidor, correo, CRM, oficina fuera de horario]",
+    "datos_implicados": "[p. ej. datos de clientes, nominas, facturacion]",
+    "quien_autoriza": "[NOMBRE Y CARGO]"
+  },
+  "la_norma_debe_cubrir": [
+    "Clasificacion de proveedores por riesgo: alto, medio y bajo, con criterio claro",
+    "Que se pide antes de contratar segun el riesgo",
+    "Contrato: clausulas minimas de confidencialidad y tratamiento de datos, en lenguaje llano",
+    "Como se concede el acceso: usuario propio y nominal, nunca la cuenta del jefe",
+    "Acceso temporal con fecha de caducidad y revision periodica",
+    "Registro de quien tiene acceso a que, y quien lo revisa",
+    "Cierre al terminar el servicio: retirada de accesos y devolucion o borrado de datos",
+    "Que exigir al proveedor si sufre el un incidente que te afecta"
+  ],
+  "cuestionario_evaluacion": {
+    "numero_de_preguntas": 12,
+    "estilo": "preguntas cerradas que un proveedor pequeno pueda responder por email en 10 minutos",
+    "cada_pregunta_lleva": ["la pregunta", "que respuesta seria aceptable", "senal de alarma"]
+  },
+  "restricciones": [
+    "Espanol de Espana, llano, sin plantillas juridicas copiadas",
+    "Marca con [CONSULTAR CON ASESOR] lo que deba revisar un abogado",
+    "Nada de exigencias desproporcionadas a un proveedor de bajo riesgo"
+  ],
+  "formato_salida": "Markdown: norma en apartados numerados, cuestionario en tabla de 3 columnas y registro de accesos en tabla Proveedor / Acceso concedido / Desde / Caduca / Responsable interno",
+  "criterios_calidad": [
+    "El nivel de exigencia es proporcional al riesgo de cada proveedor",
+    "El cierre de accesos tiene responsable y plazo concretos",
+    "Cada proveedor del contexto queda clasificado con un ejemplo"
+  ]
+}

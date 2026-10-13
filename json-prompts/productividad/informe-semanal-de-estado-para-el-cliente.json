@@ -1,0 +1,35 @@
+{
+  "tarea": "Redactar el informe semanal de estado de un proyecto para el cliente, en formato correo breve, a partir de notas sueltas",
+  "contexto": {
+    "proyecto": "[NOMBRE DEL PROYECTO]",
+    "semana": "[DEL DD/MM AL DD/MM]",
+    "hito_mas_cercano": "[HITO Y FECHA COMPROMETIDA]",
+    "notas_de_la_semana": "[PEGA AQUÍ TUS NOTAS EN BRUTO: HECHO, EN CURSO, PROBLEMAS]",
+    "bloqueos": "[QUÉ ESTÁ PARADO Y POR CULPA DE QUÉ O DE QUIÉN]",
+    "necesito_del_cliente": "[DECISIONES, MATERIALES O ACCESOS PENDIENTES]"
+  },
+  "metodo": [
+    "Empieza con un semáforo del proyecto: verde (según plan), ámbar (riesgo de retraso) o rojo (retraso confirmado) y una frase que lo justifique",
+    "Traduce las notas técnicas a resultados que el cliente entienda y valore",
+    "Agrupa en: terminado esta semana, en curso, lo que viene la semana que viene",
+    "Convierte cada bloqueo en una petición concreta con nombre y fecha límite",
+    "Si hay desvío de plazo, dilo en el primer párrafo, nunca escondido al final"
+  ],
+  "restricciones": [
+    "Máximo 300 palabras en el cuerpo del correo",
+    "Nada de excusas largas: un bloqueo se explica en una línea y se pide lo que hace falta",
+    "No prometas fechas nuevas que no estén en las notas",
+    "Sin jerga técnica: si aparece un término raro, se explica entre paréntesis"
+  ],
+  "formato_salida": {
+    "asunto": "[PROYECTO] Estado semana [DD/MM] - [VERDE/ÁMBAR/ROJO]",
+    "cuerpo": "Párrafo de estado, luego listas cortas de Hecho / En curso / La semana que viene",
+    "cierre": "Bloque 'Necesito de vosotros' con tabla de petición, responsable y fecha tope"
+  },
+  "criterios_calidad": [
+    "El cliente sabe en 20 segundos si el proyecto va bien o mal",
+    "Toda petición al cliente tiene fecha tope y consecuencia si no llega",
+    "Ningún punto de la lista es una tarea interna sin valor para el cliente"
+  ],
+  "tono": "claro, tranquilo y honesto, sin adornos"
+}

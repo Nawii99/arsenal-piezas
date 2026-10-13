@@ -1,0 +1,42 @@
+{
+  "tarea": "Diseña el equipo minimo de agentes de IA para automatizar un proceso de mi negocio, y explica quien hace que y quien habla con quien",
+  "contexto": {
+    "negocio": "[A QUE SE DEDICA TU NEGOCIO]",
+    "proceso": "[PROCESO A AUTOMATIZAR, EJ: RESPONDER PETICIONES DE PRESUPUESTO]",
+    "veces_al_mes": "[NUMERO APROXIMADO]",
+    "herramientas": "[EJ: GMAIL, GOOGLE SHEETS, WHATSAPP, CRM]",
+    "quien_lo_hace_hoy": "[PERSONA O EQUIPO]",
+    "nivel_tecnico": "[BAJO, MEDIO O ALTO]"
+  },
+  "metodo": [
+    "Parte el proceso en pasos observables, desde el disparador hasta el resultado final",
+    "Agrupa pasos en roles: uno por responsabilidad clara, nunca uno por herramienta",
+    "Empieza por el equipo mas pequeno posible y justifica cada agente extra",
+    "Marca para cada rol la entrada que recibe y la salida exacta que entrega",
+    "Define un unico agente orquestador que reparte y cierra, sin hacer el trabajo",
+    "Senala los pasos que deben seguir en manos de una persona"
+  ],
+  "restricciones": [
+    "Maximo 5 agentes; si crees que hacen falta mas, di que se puede quitar",
+    "Ningun agente depende de otros dos a la vez sin pasar por el orquestador",
+    "Cada agente entrega un resultado que un humano revisa en menos de 2 minutos",
+    "Sin jerga tecnica sin explicar y sin nombres en ingles"
+  ],
+  "errores_a_evitar": [
+    "Crear un agente por cada tarea minuscula y acabar con un lio imposible de depurar",
+    "Dejar la salida de un agente en texto libre en vez de un formato fijo",
+    "Que dos agentes escriban en el mismo sitio y se pisen",
+    "Automatizar un proceso que ni siquiera esta escrito en papel"
+  ],
+  "formato_salida": {
+    "tabla_roles": ["nombre del agente", "para que sirve en una frase", "que recibe", "que entrega", "herramientas", "que pasa si falla"],
+    "esquema_flujo": "lista numerada con el formato agente A -> agente B: que le pasa",
+    "extra": ["3 riesgos del montaje", "que hacer la primera semana antes de automatizar nada"]
+  },
+  "criterios_calidad": [
+    "Alguien sin perfil tecnico entiende el reparto en una sola lectura",
+    "Cada agente entrega algo concreto, no una intencion",
+    "El flujo tiene principio, final y un responsable humano con nombre"
+  ],
+  "tono": "claro, directo, tuteando"
+}

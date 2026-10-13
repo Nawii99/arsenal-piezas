@@ -1,0 +1,41 @@
+{
+  "tarea": "Diagnosticar por qué un artículo del blog ha perdido posiciones y entregar una versión actualizada mejor que la original",
+  "entradas": {
+    "articulo_actual": "[PEGA AQUÍ EL TEXTO COMPLETO DEL ARTÍCULO]",
+    "url": "[URL DEL ARTÍCULO]",
+    "palabra_clave": "[PALABRA CLAVE OBJETIVO]",
+    "fecha_publicacion": "[MES Y AÑO]",
+    "evolucion_visitas": "[VISITAS ANTES] al mes, ahora [VISITAS AHORA]",
+    "posicion_actual": "[POSICIÓN MEDIA EN GOOGLE]",
+    "que_hacen_los_que_estan_arriba": "[QUÉ VES EN LOS 3 PRIMEROS RESULTADOS]"
+  },
+  "analisis_obligatorio": [
+    "Contenido caducado: precios, fechas, herramientas, normativa o capturas antiguas",
+    "Intención de búsqueda: si lo que busca la gente hoy ya no es lo que responde el artículo",
+    "Huecos de contenido: preguntas que responden los competidores y este artículo no",
+    "Estructura: títulos poco claros, párrafos largos, falta de respuesta directa al principio",
+    "Canibalización: si hay otro artículo tuyo compitiendo por lo mismo",
+    "Señales de confianza: falta de autor, de experiencia real, de ejemplos propios"
+  ],
+  "pasos": [
+    "Listar los problemas encontrados y ordenarlos por impacto probable",
+    "Decidir la acción: actualizar, reescribir a fondo, fusionar con otro artículo o dejarlo como está",
+    "Entregar el artículo reescrito completo con los cambios aplicados"
+  ],
+  "restricciones": [
+    "Conservar la URL y no cambiar el enfoque si la intención de búsqueda sigue siendo la misma",
+    "No inventar datos actualizados: marcar como [ACTUALIZAR CON DATO REAL] lo que haya que comprobar",
+    "Mantener lo que ya funcionaba del texto original en vez de tirarlo todo"
+  ],
+  "formato_salida": {
+    "1_diagnostico": "tabla con columnas problema, gravedad (alta/media/baja) y arreglo propuesto",
+    "2_decision": "una frase con la acción recomendada y el motivo",
+    "3_articulo_reescrito": "texto completo en markdown, listo para pegar",
+    "4_lista_de_cambios": "máximo 10 puntos explicando qué se ha tocado"
+  },
+  "criterios_calidad": [
+    "El diagnóstico señala causas concretas del texto, no consejos genéricos de SEO",
+    "La versión nueva responde la pregunta principal en las tres primeras líneas",
+    "Se nota que aporta algo que los resultados de arriba no tienen"
+  ]
+}

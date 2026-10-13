@@ -1,0 +1,40 @@
+{
+  "tarea": "Analizar reseñas reales de clientes y convertir sus hallazgos en textos concretos para la ficha de producto",
+  "entradas": {
+    "producto": "[NOMBRE DEL PRODUCTO]",
+    "resenas": "[PEGA AQUÍ ENTRE 20 Y 200 RESEÑAS, BUENAS Y MALAS, CON SU PUNTUACIÓN]",
+    "ficha_actual": "[PEGA EL TÍTULO, BULLETS Y DESCRIPCIÓN ACTUALES]",
+    "precio": "[PRECIO DE VENTA]"
+  },
+  "analisis_requerido": [
+    "Agrupar los elogios en temas y ordenarlos por número de menciones",
+    "Agrupar las quejas en temas y separar las que son del producto de las que son de envío o atención",
+    "Extraer las frases textuales más potentes, sin retocarlas, indicando la puntuación de la reseña de origen",
+    "Detectar el uso real del producto cuando difiera del uso que la tienda imagina",
+    "Detectar las comparaciones con otras marcas o con la alternativa que el cliente tenía antes",
+    "Listar las dudas previas a la compra que los clientes confiesan haber tenido"
+  ],
+  "salida_accionable": [
+    "3 propuestas de título de producto que usen el vocabulario real de los clientes",
+    "5 bullets de beneficio, cada uno respaldado por una cita textual entre comillas",
+    "Bloque de preguntas frecuentes con las 6 dudas más repetidas y su respuesta honesta",
+    "Lista de objeciones que la ficha aún no responde, ordenadas por urgencia",
+    "3 frases de reseña recomendadas para destacar junto al botón de comprar"
+  ],
+  "restricciones": [
+    "No inventar ni retocar citas: si una frase no aparece en las reseñas aportadas, no se usa",
+    "No maquillar las quejas: si un defecto se repite, aparece en el informe aunque incomode",
+    "No prometer resultados ni usar afirmaciones de salud o rendimiento no sostenibles",
+    "Señalar cuándo una conclusión se apoya en muy pocas menciones y no es fiable"
+  ],
+  "formato_salida": {
+    "tipo": "informe corto + textos listos para pegar",
+    "tabla_temas": "Columnas: tema, menciones, positivo o negativo, cita representativa",
+    "orden": "Primero el análisis, después los textos, al final las objeciones sin resolver"
+  },
+  "criterios_calidad": [
+    "Cada afirmación del informe se puede rastrear hasta reseñas concretas",
+    "Los bullets nuevos son más específicos que los actuales, no más floridos",
+    "El resultado incluye al menos una cosa incómoda que la tienda debería arreglar"
+  ]
+}

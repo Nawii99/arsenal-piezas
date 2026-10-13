@@ -1,0 +1,52 @@
+{
+  "tarea": "Escribir la ficha completa de una app para App Store y Google Play, optimizada para que la encuentren buscando y para que quien llega se la instale.",
+  "contexto": {
+    "nombre_app": "[NOMBRE DE LA APP]",
+    "que_hace": "[QUÉ RESUELVE Y PARA QUIÉN, EN UNA FRASE]",
+    "publico": "[EDAD, SITUACIÓN Y PAÍS DEL USUARIO IDEAL]",
+    "modelo": "[GRATIS / GRATIS CON COMPRAS / PAGO ÚNICO / SUSCRIPCIÓN]",
+    "competidores_en_la_tienda": ["[APP 1]", "[APP 2]", "[APP 3]"],
+    "diferencia_real": "[EN QUÉ ERES DISTINTO DE VERDAD, SIN HUMO]",
+    "idioma": "español de España"
+  },
+  "limites_que_no_se_pueden_saltar": {
+    "app_store_titulo": "30 caracteres",
+    "app_store_subtitulo": "30 caracteres",
+    "app_store_campo_keywords": "100 caracteres, separadas por comas SIN espacios, sin repetir palabras que ya están en título o subtítulo",
+    "app_store_texto_promocional": "170 caracteres, se puede cambiar sin pasar revisión",
+    "app_store_descripcion": "4000 caracteres, NO cuenta para la búsqueda: sirve para convencer",
+    "google_play_titulo": "30 caracteres",
+    "google_play_descripcion_corta": "80 caracteres, se ve antes de desplegar",
+    "google_play_descripcion_larga": "4000 caracteres, SÍ cuenta para la búsqueda"
+  },
+  "pasos": [
+    "1. Lista 15 a 25 términos que escribiría el usuario en el buscador de la tienda, no palabras de marketing: problemas, sinónimos y errores de escritura frecuentes.",
+    "2. Escribe cada término en el buscador de la tienda desde el móvil y anota qué autocompletados propone: eso es demanda real, cópiala.",
+    "3. Clasifica los términos en tres grupos: muy buscados y muy competidos, medios y realistas, y de nicho con poca competencia. Apuesta por medios y de nicho.",
+    "4. Escribe el título con el nombre de marca más 2 o 3 palabras clave: [MARCA]: [PALABRA CLAVE PRINCIPAL].",
+    "5. Escribe el subtítulo (iOS) y la descripción corta (Android) como beneficio concreto, no como categoría.",
+    "6. Rellena el campo de keywords de iOS aprovechando los 100 caracteres al máximo, en singular, sin repetir, sin la palabra app y sin nombres de marcas ajenas.",
+    "7. Escribe la descripción larga: los 3 primeros renglones venden, luego bloque de beneficios en viñetas, luego para quién es, luego cómo funciona en 3 pasos y cierre.",
+    "8. En Android reparte la palabra clave principal 3 a 5 veces por la descripción larga de forma natural. Si suena forzado, has pasado.",
+    "9. Prepara 2 variantes alternativas de subtítulo y descripción corta para ir probando cada 3 o 4 semanas."
+  ],
+  "formato_salida": {
+    "tipo": "tabla de campos y luego los textos completos",
+    "campos": ["titulo_ios", "subtitulo_ios", "keywords_ios", "texto_promocional_ios", "titulo_android", "descripcion_corta_android", "descripcion_larga", "variantes_para_probar"],
+    "obligatorio": "junto a cada campo, el recuento exacto de caracteres entre paréntesis"
+  },
+  "criterios_calidad": [
+    "Ningún campo se pasa del límite de caracteres ni desaprovecha más del 15 por ciento del espacio.",
+    "Alguien que no conozca la app entiende qué hace en los 2 primeros renglones de la descripción.",
+    "Cada beneficio es comprobable dentro de la app; nada de funciones que no existen.",
+    "No se prometen resultados ni cifras: las tiendas rechazan afirmaciones no demostrables.",
+    "El texto está en español de España, tuteando, sin traducciones raras del inglés."
+  ],
+  "errores_frecuentes": [
+    "Meter la palabra app o gratis en el campo de keywords de iOS: se ignoran y gastan espacio.",
+    "Repetir en keywords palabras que ya están en el título: ya indexan, es espacio tirado.",
+    "Usar el nombre de un competidor: motivo de rechazo.",
+    "Empezar la descripción con la historia de la empresa en lugar del beneficio.",
+    "Cambiar título y keywords cada semana: no da tiempo a medir nada."
+  ]
+}

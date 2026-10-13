@@ -1,0 +1,44 @@
+{
+  "tarea": "Inventario de datos personales y revision RGPD basica para un negocio pequeno",
+  "contexto": {
+    "negocio": {
+      "nombre": "[NOMBRE DEL NEGOCIO]",
+      "actividad": "[A QUE SE DEDICA]",
+      "pais": "Espana",
+      "personas_en_plantilla": "[NUMERO]"
+    },
+    "alcance": {
+      "incluye": ["web", "formularios", "correo", "facturacion", "redes sociales", "videovigilancia"],
+      "excluye": ["cualquier sistema que el cliente no haya autorizado por escrito"]
+    },
+    "autorizacion": {
+      "documento": "[NOMBRE DEL ENCARGO FIRMADO]",
+      "fecha": "[AAAA-MM-DD]",
+      "firmante": "[NOMBRE Y CARGO]"
+    }
+  },
+  "entradas": {
+    "herramientas_en_uso": ["[LISTA DE PROGRAMAS Y SERVICIOS]"],
+    "proveedores_externos": ["[GESTORIA, ALOJAMIENTO, CORREO, CRM]"],
+    "formularios_publicos": ["[DIRECCION DE CADA FORMULARIO]"]
+  },
+  "salida": {
+    "formato": "tablas en markdown mas lista de acciones",
+    "secciones": [
+      {"id": "inventario", "columnas": ["dato", "de quien", "donde se guarda", "quien accede", "cuanto tiempo", "base legal"]},
+      {"id": "riesgos", "columnas": ["hallazgo", "impacto", "esfuerzo", "prioridad"]},
+      {"id": "acciones", "columnas": ["accion", "responsable", "plazo", "coste estimado"]}
+    ],
+    "limite_hallazgos": 15
+  },
+  "reglas": [
+    "No inventes datos: lo que no se sepa se marca como PENDIENTE DE COMPROBAR",
+    "No redactes clausulas ni politicas de privacidad listas para publicar",
+    "Separa siempre obligacion legal de buena practica recomendada",
+    "Marca con REVISION HUMANA todo lo que toque menores, salud, biometria o camaras"
+  ],
+  "aviso": {
+    "texto": "Este informe es un punto de partida tecnico, no asesoramiento juridico. Antes de firmar contratos de encargado de tratamiento o de publicar politicas, lo revisa un abogado o un consultor de proteccion de datos.",
+    "obligatorio_en_entrega": true
+  }
+}

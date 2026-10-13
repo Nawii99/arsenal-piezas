@@ -1,0 +1,57 @@
+{
+  "tarea": "Definir el conjunto mínimo de alertas útiles para un negocio digital pequeño y eliminar el ruido de avisos",
+  "contexto": {
+    "sistema": "[QUÉ TIENES FUNCIONANDO Y QUÉ PARTE GENERA INGRESOS]",
+    "situacion": "[NO ME ENTERO DE NADA / ME LLEGAN CIENTOS DE AVISOS / MEZCLA DE AMBAS]",
+    "disponibilidad": "[HORAS EN QUE PUEDO REACCIONAR Y QUÉ PASA DE NOCHE Y EN FIN DE SEMANA]",
+    "presupuesto": "[0 EUROS / HASTA X EUROS AL MES EN HERRAMIENTAS DE VIGILANCIA]"
+  },
+  "entradas": {
+    "camino_del_dinero": "[PASOS DESDE QUE LLEGA UN VISITANTE HASTA QUE PAGA Y RECIBE]",
+    "fallos_pasados": "[QUÉ SE HA ROTO ANTES Y CÓMO TE ENTERASTE]",
+    "canales": "[DÓNDE QUIERO LOS AVISOS: MÓVIL, CORREO, GRUPO DE MENSAJERÍA]"
+  },
+  "procedimiento": [
+    "1. Empieza por el camino del dinero, no por la máquina: vigila que se puedan hacer las acciones que generan ingresos, no la memoria del servidor",
+    "2. Para cada paso del camino define una comprobación desde fuera: la web responde, el formulario envía, el pago se completa, el correo de confirmación llega, el pedido aparece en el panel",
+    "3. Añade las comprobaciones silenciosas: la tarea programada se ejecutó, el archivo diario se generó, la copia de seguridad terminó; aquí la alerta es la AUSENCIA de señal",
+    "4. Fija umbrales con datos, no a ojo: mira tus cifras normales y avisa cuando se salga claramente, por ejemplo cero pedidos en una franja en la que siempre hay",
+    "5. Clasifica cada alerta en despiértame, revísalo hoy y solo para el informe semanal, y asigna canal distinto a cada nivel",
+    "6. Aplica antirruido: agrupa avisos repetidos, exige que el fallo persista dos comprobaciones seguidas y silencia durante los mantenimientos planificados",
+    "7. Escribe cada alerta con lo que hay que hacer al recibirla: sin instrucción, la alerta es solo ansiedad",
+    "8. Provoca cada alerta a propósito una vez y comprueba que llega al canal correcto y con el texto útil",
+    "9. Revisa cada mes: elimina las que nunca saltan y las que saltan siempre sin que hagas nada"
+  ],
+  "que_mirar": [
+    "Regla de oro: si al recibirla no vas a hacer nada, no debe ser una alerta",
+    "Vigilar desde fuera y desde otra red, no desde el propio servidor que puede estar caído",
+    "Alertas que dependen del correo del mismo dominio que puede fallar",
+    "Falta de señal como síntoma: nadie avisa de que una automatización dejó de ejecutarse",
+    "Coste de tener a alguien pendiente de noche frente al coste real del fallo"
+  ],
+  "errores_tipicos": [
+    "Activar todas las alertas que ofrece la herramienta por defecto",
+    "Alertar sobre métricas técnicas que no significan nada para el negocio",
+    "Mandar todo al mismo grupo hasta que se silencia el grupo entero",
+    "No probar nunca si la alerta llega de verdad"
+  ],
+  "restricciones": [
+    "Máximo 6 alertas de nivel despiértame",
+    "Cada alerta lleva su acción escrita en una frase",
+    "Priorizar herramientas con plan gratuito suficiente para este tamaño"
+  ],
+  "formato_salida": {
+    "1_camino_del_dinero": "pasos numerados con el fallo posible de cada uno",
+    "2_tabla_de_alertas": "qué vigila | cómo se comprueba | umbral | nivel | canal | acción al recibirla",
+    "3_montaje": "cómo dejar cada comprobación funcionando, paso a paso y con opción gratuita",
+    "4_antirruido": "reglas de agrupación, repetición y silencio programado",
+    "5_prueba": "cómo provocar cada alerta para verificar que llega",
+    "6_revision_mensual": "preguntas para decidir qué alerta se queda y cuál se elimina"
+  },
+  "criterios_calidad": [
+    "Toda alerta de nivel alto corresponde a algo que impide facturar",
+    "Cada alerta ha sido provocada y verificada al menos una vez",
+    "Se detecta también la ausencia de señal, no solo los errores",
+    "El total de avisos semanales es bajo y todos se leen"
+  ]
+}

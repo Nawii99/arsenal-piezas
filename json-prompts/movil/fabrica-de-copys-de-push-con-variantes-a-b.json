@@ -1,0 +1,39 @@
+{
+  "tarea": "Escribir 8 variantes de una notificación push para probar cuál funciona mejor",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "objetivo_del_mensaje": "[QUÉ QUIERES QUE HAGA EL USUARIO AL ABRIR]",
+    "segmento": "[A QUIÉN SE ENVÍA: usuarios nuevos, carrito abandonado, inactivos 14 días...]",
+    "que_ha_hecho_el_usuario": "[ÚLTIMA ACCIÓN CONOCIDA O ACCIÓN PENDIENTE]",
+    "pantalla_destino": "[PANTALLA A LA QUE LLEVA EL DEEP LINK]",
+    "tono": "[CERCANO, PROFESIONAL, DIVERTIDO...]"
+  },
+  "angulos_obligatorios": [
+    "Beneficio directo",
+    "Curiosidad con dato concreto",
+    "Recordatorio útil sin culpa",
+    "Progreso o racha del usuario",
+    "Novedad o cambio real en la app",
+    "Prueba social honesta",
+    "Pregunta corta",
+    "Urgencia real (solo si existe una fecha límite verdadera)"
+  ],
+  "restricciones": [
+    "Título máximo 40 caracteres, cuerpo máximo 120, contando espacios",
+    "Personaliza con el nombre solo en 2 de las 8 variantes",
+    "Máximo un emoji y solo si aporta; nunca en el primer carácter",
+    "Prohibido inventar descuentos, plazos o cifras que no estén en el contexto",
+    "Nada de clickbait: lo que promete el título debe estar en la pantalla de destino"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown",
+    "columnas": ["#", "Ángulo", "Título", "Caracteres título", "Cuerpo", "Caracteres cuerpo", "Hipótesis que prueba"],
+    "extra": "Al final: qué dos variantes enfrentarías primero, con qué tamaño mínimo de muestra aproximado y qué métrica decide (apertura y acción posterior)"
+  },
+  "criterios_calidad": [
+    "Ninguna variante supera los límites de caracteres",
+    "Las 8 dicen cosas distintas, no son la misma frase reordenada",
+    "Cada una se entiende leída en la pantalla de bloqueo, sin contexto previo",
+    "Se mide el éxito por la acción dentro de la app, no solo por la apertura"
+  ]
+}

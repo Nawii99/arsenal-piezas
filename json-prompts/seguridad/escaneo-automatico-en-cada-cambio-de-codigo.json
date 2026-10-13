@@ -1,0 +1,42 @@
+{
+  "tarea": "Diseñar y escribir la configuración de un escaneo de seguridad automático en cada cambio de código",
+  "contexto": {
+    "donde_esta_el_codigo": "[GITHUB, GITLAB, BITBUCKET]",
+    "lenguaje_y_gestor": "[EJ: NODE CON NPM, PYTHON CON PIP]",
+    "equipo": "[NÚMERO DE PERSONAS QUE TOCAN EL CÓDIGO]",
+    "presupuesto": "[SOLO GRATIS / HASTA X EUROS AL MES]",
+    "tolerancia": "[QUEREMOS QUE BLOQUEE LA SUBIDA / SOLO QUE AVISE]"
+  },
+  "cobertura_deseada": [
+    "Vulnerabilidades conocidas en dependencias",
+    "Secretos y claves en el código",
+    "Análisis estático del código propio",
+    "Actualizaciones automáticas de dependencias con propuesta de cambio",
+    "Licencias no permitidas"
+  ],
+  "procedimiento": [
+    "Elige una herramienta por apartado priorizando las gratuitas y las que ya vienen con la plataforma",
+    "Define qué severidad bloquea el cambio y cuál solo avisa, para que el equipo no acabe ignorando las alertas",
+    "Escribe el fichero de configuración completo listo para copiar y pegar",
+    "Añade una lista de excepciones con caducidad para los falsos positivos",
+    "Define quién revisa las alertas y con qué frecuencia"
+  ],
+  "restricciones": [
+    "Nada de configuraciones que tarden más de 5 minutos en ejecutarse",
+    "No pongas todo en modo bloqueo el primer día: propón dos semanas en modo aviso",
+    "Indica claramente qué es gratis y qué se paga"
+  ],
+  "formato_salida": {
+    "paso_1": "Tabla de herramientas elegidas: apartado, herramienta, coste, qué detecta, qué no detecta",
+    "paso_2": "Fichero de configuración completo con comentarios explicando cada bloque",
+    "paso_3": "Instrucciones de instalación paso a paso, incluyendo dónde pegar cada cosa",
+    "paso_4": "Rutina semanal de 15 minutos para revisar alertas",
+    "paso_5": "Qué hacer el día que una alerta bloquee un despliegue urgente"
+  },
+  "criterios_calidad": [
+    "La configuración funciona tal cual, sin partes a completar salvo las marcadas",
+    "Se explica cada decisión en una línea",
+    "El sistema no genera tanto ruido que el equipo lo desactive"
+  ],
+  "tono": "manual de instalación: numerado y sin pasos implícitos"
+}

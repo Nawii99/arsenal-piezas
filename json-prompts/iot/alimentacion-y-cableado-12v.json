@@ -1,0 +1,58 @@
+{
+  "tarea": "Dimensionar la alimentacion y el cableado de un montaje de baja tension (5, 12 o 24 V): fuente, seccion de cable, caida de tension, protecciones y puntos de inyeccion.",
+  "contexto": {
+    "montaje": "[TIRA LED BAJO MUEBLE / CUADRO CON VARIOS MODULOS / SENSORES EN NAVE / CARTEL LUMINOSO]",
+    "tension": "[5 V / 12 V / 24 V]",
+    "ubicacion": "[INTERIOR SECO / BANO / EXTERIOR / CUADRO ELECTRICO]",
+    "quien_lo_monta": "[YO MISMO / UN ELECTRICISTA]"
+  },
+  "entradas": {
+    "consumos": "[LISTA: ELEMENTO | CONSUMO EN W O EN A | CANTIDAD | DISTANCIA DESDE LA FUENTE EN METROS]",
+    "tira_led": "[W POR METRO Y METROS TOTALES, SI APLICA]",
+    "cable_disponible": "[SECCION EN mm2 SI YA TIENES CABLE]",
+    "caida_maxima_admitida": "[HABITUALMENTE 3 POR CIENTO EN ILUMINACION, 5 EN OTROS]"
+  },
+  "formulas": [
+    "Corriente A = potencia W / tension V",
+    "Caida de tension en V = 2 x longitud en m x corriente en A x 0,0175 dividido por la seccion en mm2, para cable de cobre",
+    "Porcentaje de caida = caida en V / tension nominal x 100",
+    "Potencia de la fuente = suma de consumos x 1,3 como margen de seguridad",
+    "Regla practica: en 12 V la caida duele el doble que en 24 V para la misma potencia"
+  ],
+  "procedimiento": [
+    "1. Suma consumos reales y aplica el margen: nunca uses una fuente al 100 por cien de su capacidad.",
+    "2. Calcula la corriente total y la de cada ramal.",
+    "3. Calcula la caida con la seccion prevista; si supera el limite, sube seccion, acorta el recorrido o inyecta por los dos extremos.",
+    "4. En tiras LED largas define los puntos de inyeccion: alimentar por ambos extremos o por el centro segun la longitud.",
+    "5. Elige protecciones: fusible o portafusibles en el positivo cerca de la fuente, dimensionado justo por encima del consumo.",
+    "6. Comprueba el grado de proteccion IP segun la ubicacion y si la fuente necesita ventilacion.",
+    "7. Comprueba polaridad, tipo de conector y si hace falta masa comun entre modulos que se comunican entre si.",
+    "8. Indica la prueba de verificacion con un polimetro barato: tension en el extremo mas lejano con todo encendido."
+  ],
+  "errores_tipicos": [
+    "Dimensionar la fuente exacta al consumo y que se caliente y muera en verano.",
+    "Usar cable de altavoz finisimo para 8 metros de tira LED y que el fondo quede amarillento.",
+    "Alimentar por un solo extremo una tira de 10 metros.",
+    "Meter una fuente sin ventilacion dentro de un mueble cerrado o de escayola.",
+    "Olvidar el negativo comun entre la fuente y la placa de control.",
+    "Fuentes genericas sin marcado CE ni datos del fabricante."
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen: consumo total en W y A, fuente recomendada con margen",
+    "bloque_2": "Tabla por ramal: RAMAL | CORRIENTE | LONGITUD | SECCION | CAIDA EN V | CAIDA EN PORCENTAJE | VEREDICTO",
+    "bloque_3": "Esquema en texto: fuente, fusible, ramales y puntos de inyeccion",
+    "bloque_4": "Lista de material con seccion de cable, conectores, fusible y caja",
+    "bloque_5": "Comprobaciones antes de dar tension y prueba con polimetro despues",
+    "bloque_6": "Aviso de seguridad y que parte debe hacer un electricista"
+  },
+  "restricciones": [
+    "Todo lo que toque los 230 V lo conecta un electricista: aqui solo se calcula la parte de baja tension.",
+    "Muestra el calculo paso a paso con los numeros sustituidos, no solo el resultado.",
+    "Si falta un dato de consumo, pidelo y no lo estimes a ojo."
+  ],
+  "criterios_calidad": [
+    "Ningun ramal supera la caida maxima admitida o se explica como corregirlo.",
+    "La fuente elegida existe en potencias comerciales reales.",
+    "Los calculos se pueden repetir con una calculadora y salen igual."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "tarea": "Extraer los datos de tickets y facturas de compra y devolver una tabla de gastos homogenea, con marca de confianza y lista de documentos ilegibles",
+  "contexto": {
+    "pais": "España",
+    "regimen": "[AUTÓNOMO O SOCIEDAD]",
+    "periodo": "[TRIMESTRE O MES]",
+    "destino": "[GESTORÍA, HOJA DE CÁLCULO PROPIA O AMBAS]"
+  },
+  "entradas": {
+    "documentos": "[ADJUNTA O PEGA EL TEXTO DE CADA TICKET O FACTURA, NUMERADOS 1, 2, 3...]",
+    "categorias_permitidas": "[EJ: SUMINISTROS, SOFTWARE, DIETAS, COMBUSTIBLE, MATERIAL, PUBLICIDAD, CUOTAS]",
+    "proveedores_habituales": "[LISTA DE NOMBRES Y CIF QUE YA CONOZCO, O NINGUNO]"
+  },
+  "pasos": [
+    "Para cada documento identifica: fecha, proveedor, CIF o NIF, numero de documento, base imponible, tipo de IVA, cuota de IVA y total.",
+    "Distingue ticket simplificado (sin mis datos fiscales) de factura completa (con mi nombre y NIF).",
+    "Si solo aparece el total, calcula base y cuota segun el tipo de IVA visible; si el tipo no se ve, marcalo como no determinado.",
+    "Comprueba la aritmetica: base mas cuota debe dar el total con margen de un centimo.",
+    "Asigna una categoria de la lista permitida; si ninguna encaja, usa OTROS y explica por que.",
+    "Asigna confianza ALTA si has leido todos los campos, MEDIA si has deducido alguno, BAJA si el documento esta borroso o cortado.",
+    "Detecta duplicados: mismo proveedor, misma fecha y mismo total.",
+    "Ordena la tabla por fecha ascendente y numera las filas."
+  ],
+  "que_mirar": [
+    "Tickets con varios tipos de IVA en la misma compra: hay que desglosar en varias lineas.",
+    "Facturas en moneda distinta del euro: anota importe original y tipo de cambio si aparece.",
+    "Gastos de uso mixto personal y profesional: marcarlos, no decidir tu el porcentaje.",
+    "Documentos que son en realidad presupuestos o albaranes, no facturas."
+  ],
+  "errores_tipicos": [
+    "Confundir la fecha de compra con la fecha de impresion del ticket.",
+    "Leer mal 1 por 7 o 3 por 8 en tickets termicos descoloridos y no marcarlo como duda.",
+    "Dar por deducible un ticket simplificado sin avisar de que le faltan tus datos fiscales.",
+    "Meter el total en la columna de base imponible."
+  ],
+  "restricciones": [
+    "No inventes CIF, numeros de factura ni importes: si no se lee, escribe ILEGIBLE.",
+    "No decidas si un gasto es deducible; solo senala lo que le falta al documento.",
+    "Respeta las categorias de la lista, no crees nuevas salvo OTROS."
+  ],
+  "formato_salida": {
+    "tabla_csv": "n;fecha;proveedor;cif;num_documento;concepto;categoria;base;tipo_iva;cuota_iva;total;tipo_documento;confianza",
+    "separador": "punto y coma, decimales con coma, sin cabeceras repetidas",
+    "bloque_totales": "Total base, total IVA soportado y total gasto, y el mismo desglose por categoria",
+    "bloque_revisar": "Lista numerada de documentos ilegibles, duplicados sospechosos y campos deducidos"
+  },
+  "criterios_calidad": [
+    "Cada linea de la tabla se puede rastrear al numero de documento original.",
+    "La suma de las columnas cuadra con el bloque de totales.",
+    "Ningun campo esta relleno a ojo sin marca de confianza MEDIA o BAJA.",
+    "El CSV se abre en la hoja de calculo sin columnas descolocadas."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar el sistema de solicitud de reseñas de un negocio y escribir todos los mensajes",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "que_vendes": "[PRODUCTO O SERVICIO PRINCIPAL]",
+    "clientes_al_mes": "[NÚMERO APROXIMADO]",
+    "momento_final_del_servicio": "[CUÁNDO ACABA EL TRATO: al pagar, al entregar, a los X días]",
+    "canales_disponibles": "[WHATSAPP / EMAIL / SMS / QR EN MOSTRADOR / EN PERSONA]",
+    "enlace_resena": "[TU ENLACE CORTO DE GOOGLE U OTRA PLATAFORMA]"
+  },
+  "proceso": [
+    "Define el momento de máxima satisfacción del cliente y sitúa ahí la petición",
+    "Elige a quién SÍ pedir y a quién no, para no provocar reseñas malas evitables",
+    "Reparte el volumen a lo largo del mes: nada de pedir 40 reseñas el mismo día",
+    "Escribe los mensajes: uno en persona, uno por WhatsApp, uno por email y un recordatorio único",
+    "Define quién pide, cómo se registra lo pedido y qué se hace si el cliente no responde"
+  ],
+  "restricciones": [
+    "Prohibido ofrecer descuentos, regalos o sorteos a cambio de reseñas",
+    "Nunca pedir que la reseña sea positiva ni sugerir el número de estrellas",
+    "Un solo recordatorio y se acabó",
+    "Mensajes de menos de 45 palabras, con el enlace al final y sin adjuntos",
+    "Español de España, tuteando, sin lenguaje corporativo"
+  ],
+  "formato_salida": {
+    "tabla_momentos": "Momento | Canal | Quién lo hace | Qué dice en una frase",
+    "mensajes": "Texto literal de cada mensaje, listo para copiar",
+    "frase_en_persona": "Lo que dice el equipo de viva voz, en 2 versiones",
+    "rutina_semanal": "Checklist de 5 pasos para mantenerlo vivo",
+    "medicion": "3 datos a apuntar cada mes y qué significa que suban o bajen"
+  },
+  "criterios_calidad": [
+    "Cualquier empleado puede ejecutarlo sin formación previa",
+    "Los mensajes no suenan a plantilla ni a robot",
+    "El sistema funciona igual con 20 clientes al mes que con 300"
+  ]
+}

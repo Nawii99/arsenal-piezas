@@ -1,0 +1,55 @@
+{
+  "tarea": "Audita mi gasto recurrente en infraestructura y herramientas, detecta lo que no aporta y dame un plan de recorte por fases sin romper nada que esté en uso",
+  "contexto": {
+    "negocio": "[QUÉ VENDO Y QUÉ SISTEMAS LO SOSTIENEN]",
+    "tamano": "[CUÁNTA GENTE USA ESTAS HERRAMIENTAS]",
+    "objetivo": "[CUÁNTO QUIERO BAJAR AL MES O QUÉ TECHO DE GASTO ME PONGO]"
+  },
+  "entradas": {
+    "suscripciones": "[LISTA: herramienta, importe, mensual o anual, con qué tarjeta se paga, quién la pidió]",
+    "cuentas_de_nube": "[PROVEEDORES Y ÚLTIMA FACTURA DESGLOSADA]",
+    "uso_real": "[LO QUE SEPAS: cuántos usuarios activos, cuánto tráfico, cuántos proyectos vivos]"
+  },
+  "pasos": [
+    "1. Junta todo el gasto recurrente de los últimos tres meses mirando extracto bancario y tarjeta, no solo la memoria",
+    "2. Clasifica cada línea: imprescindible, útil, duplicada, olvidada o de un proyecto muerto",
+    "3. Busca duplicados funcionales: dos herramientas que hacen lo mismo, o algo que ya viene incluido en un plan que pagas",
+    "4. En las nubes, revisa lo que cuesta sin dar servicio: discos sueltos sin servidor, copias antiguas acumuladas, IP fijas reservadas, entornos de pruebas encendidos, servidores parados que siguen facturando almacenamiento",
+    "5. Comprueba planes por usuario con licencias de gente que ya no está",
+    "6. Compara mensual contra anual solo en lo que seguro vas a usar doce meses",
+    "7. Antes de cancelar nada, exporta los datos y anota qué depende de ello",
+    "8. Aplica el recorte por fases y activa un aviso de presupuesto en cada proveedor que lo permita"
+  ],
+  "que_mirar": [
+    "la fecha de la última actividad real en cada herramienta",
+    "si el plan gratuito cubre tu uso actual sin quedarte sin funciones críticas",
+    "el coste por transferencia de datos, que suele ser el que se dispara sin avisar",
+    "pruebas gratuitas convertidas en plan de pago que nunca cancelaste",
+    "dominios y servicios de clientes antiguos que sigues pagando tú"
+  ],
+  "errores_tipicos": [
+    "cancelar sin exportar y perder el histórico",
+    "bajar de plan y quedarte sin la función que sostiene el negocio",
+    "apagar un servidor que resulta ser el que manda los correos automáticos",
+    "pagar anual algo que aún estás probando",
+    "no dejar por escrito quién autoriza nuevas altas"
+  ],
+  "restricciones": [
+    "no propongas cancelar nada de lo que dependa el cobro a clientes sin decir antes qué lo sustituye",
+    "cada recorte lleva su riesgo y su forma de revertirlo",
+    "nada de cifras inventadas: si no te doy el importe, márcalo como pendiente de comprobar"
+  ],
+  "formato_salida": {
+    "1_tabla_gasto": "servicio | importe mes | quién lo usa | última actividad | veredicto | ahorro estimado | riesgo de cortarlo",
+    "2_recortes_inmediatos": "lo que se puede cancelar hoy sin consecuencias, con el paso exacto",
+    "3_recortes_con_trabajo": "lo que requiere migrar algo antes, con el orden",
+    "4_no_tocar": "lo que hay que seguir pagando y por qué",
+    "5_controles": "topes de gasto y avisos a configurar en cada proveedor"
+  },
+  "criterios_calidad": [
+    "cada línea de la factura tiene un responsable y un veredicto",
+    "el ahorro se presenta como estimación con su supuesto, sin prometer cifras",
+    "ningún recorte propuesto deja al negocio sin cobrar, sin web o sin correo",
+    "queda una regla escrita para no volver a acumular suscripciones"
+  ]
+}

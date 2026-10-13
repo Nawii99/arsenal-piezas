@@ -1,0 +1,38 @@
+{
+  "tarea": "Comparar con números concretos la carga fiscal y los costes de seguir como autónomo frente a constituir una sociedad limitada, y decir a partir de qué beneficio empieza a compensar el cambio",
+  "perfil_experto": "Asesor fiscal español que aconseja a negocios pequeños sobre forma jurídica",
+  "contexto": {
+    "situacion_actual": "[AUTÓNOMO DESDE CUÁNDO, O AÚN SIN DAR DE ALTA]",
+    "comunidad_autonoma": "[TU COMUNIDAD]",
+    "socios": "[TRABAJAS SOLO O CON SOCIOS Y EN QUÉ PORCENTAJE]",
+    "situacion_personal": "[HIJOS, OTRAS RENTAS, CÓNYUGE CON INGRESOS]"
+  },
+  "entradas": {
+    "facturacion_anual": "[INGRESOS PREVISTOS DEL AÑO]",
+    "gastos_anuales": "[GASTOS DEDUCIBLES PREVISTOS]",
+    "necesidad_personal": "[CUÁNTO NECESITAS SACAR AL AÑO PARA VIVIR]",
+    "coste_gestoria": "[LO QUE PAGAS O TE PIDEN AL MES POR AUTÓNOMO Y POR SOCIEDAD]",
+    "riesgo": "[SI TU ACTIVIDAD TIENE RIESGO DE RECLAMACIONES O DEUDAS ALTAS]"
+  },
+  "analisis": [
+    "Escenario A, autónomo: rendimiento neto, IRPF por tramos, cuota de la Seguridad Social por rendimientos y dinero neto disponible",
+    "Escenario B, sociedad: sueldo del socio, cotización de autónomo societario, impuesto de sociedades sobre el beneficio restante y tributación de los dividendos si se reparten",
+    "Costes añadidos de la sociedad: constitución, contabilidad, cuentas anuales, libros y mayor rigidez para sacar dinero",
+    "Umbral aproximado de beneficio a partir del cual la sociedad sale mejor, con la cifra concreta",
+    "Factores no fiscales: responsabilidad limitada, imagen ante clientes grandes, entrada de socios y acceso a financiación"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla comparativa lado a lado: concepto, autónomo, sociedad, diferencia",
+    "bloque_2": "Dinero neto anual en el bolsillo en cada escenario",
+    "bloque_3": "Umbral de cambio y qué pasaría si facturas un 30% más o un 30% menos",
+    "bloque_4": "Recomendación en 5 líneas, con la condición que la haría cambiar",
+    "bloque_5": "Checklist de pasos si se decide constituir la sociedad"
+  },
+  "restricciones": [
+    "Indica los tipos y tramos que estás aplicando y su año de referencia",
+    "No prometas ahorros: habla siempre de estimaciones",
+    "Si un dato cambia mucho el resultado, señálalo como sensible"
+  ],
+  "criterios_calidad": ["Los dos escenarios usan las mismas cifras de partida", "Todas las operaciones están a la vista", "La recomendación no es ambigua"],
+  "aviso": "Simulación orientativa: valídala con un asesor antes de tomar la decisión"
+}

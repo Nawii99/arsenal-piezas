@@ -1,0 +1,47 @@
+{
+  "tarea": "Definir que datos registrar, con que frecuencia y que alertas configurar en un sistema de dispositivos conectados",
+  "contexto": {
+    "instalacion": "[DESCRIPCION: QUE SE VIGILA Y DONDE]",
+    "sensores_actuales": "[LISTA CON QUE MIDE CADA UNO Y CADA CUANTO ENVIA]",
+    "quien_mira_el_panel": "[PERFIL Y CUANTAS VECES AL DIA]",
+    "quien_recibe_alertas": "[NOMBRES, CANAL Y HORARIO EN QUE SE LES PUEDE MOLESTAR]",
+    "decisiones_que_dependen_de_esto": "[QUE SE HACE DISTINTO SEGUN EL DATO]",
+    "herramienta": "[HOME ASSISTANT / GOOGLE SHEETS / PANEL DEL FABRICANTE / OTRA]"
+  },
+  "metodo": [
+    "1. Empieza por las decisiones, no por los sensores: si un dato no cambia ninguna decision, no va al panel",
+    "2. Separa tres tipos de dato: estado ahora, tendencia (ultimas horas o dias) y acumulado (mes)",
+    "3. Fija frecuencia de registro por dato: temperaturas cada [MINUTOS] minutos, consumos cada [MINUTOS], estados de puerta solo cuando cambian",
+    "4. Define retencion: detalle [DIAS] dias, resumen por hora [MESES] meses, resumen diario [AÑOS] años",
+    "5. Para cada alerta escribe: condicion, tiempo minimo de permanencia, a quien avisa, en que horario y cuando se repite",
+    "6. Aplica silencio inteligente: una alerta no se repite antes de [MINUTOS DE SILENCIO] minutos y se agrupa si varias vienen del mismo fallo",
+    "7. Añade alertas de salud del sistema: sensor mudo, bateria baja, pasarela caida y disco lleno",
+    "8. Diseña el panel en tres bloques: semaforo arriba, graficas de tendencia en medio, historico abajo"
+  ],
+  "restricciones": [
+    "Maximo [NUMERO MAXIMO DE ALERTAS] tipos de alerta activos: si hay mas, nadie las lee",
+    "Toda alerta lleva escrito que hay que hacer cuando salta, si no, no es alerta",
+    "Nada de guardar datos personales sin motivo",
+    "El panel se entiende en diez segundos desde el movil"
+  ],
+  "errores_frecuentes": [
+    "Registrar cada segundo y llenar la memoria para nada",
+    "Alertas por umbral instantaneo que saltan con cualquier pico",
+    "Doce graficas bonitas y ninguna decision detras",
+    "No avisar cuando un sensor deja de enviar, que es el fallo mas peligroso",
+    "Mandarlo todo al mismo canal donde llegan las notificaciones de publicidad"
+  ],
+  "formato_salida": {
+    "tabla_metricas": "Metrica | Sensor | Frecuencia | Retencion | Decision que soporta",
+    "tabla_alertas": "Alerta | Condicion | Permanencia | Destinatario | Horario | Repeticion | Que hacer",
+    "salud_del_sistema": "Lista de comprobaciones automaticas del propio sistema",
+    "panel": "Descripcion de los bloques y que aparece en cada uno, en orden de arriba abajo",
+    "revision": "Que revisar al mes: alertas que saltaron, cuales se ignoraron y umbrales a ajustar"
+  },
+  "criterios_calidad": [
+    "Cada metrica esta atada a una decision concreta",
+    "Ninguna alerta puede saltar mas de lo definido en un dia normal",
+    "El sistema detecta su propio silencio",
+    "Al mes se puede saber que alertas sobran, con datos"
+  ]
+}

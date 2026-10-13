@@ -1,0 +1,32 @@
+{
+  "tarea": "Escribir la página de gracias y el email automático que recibe quien rellena el formulario de [NOMBRE DEL FORMULARIO] en la web de [TU NEGOCIO]",
+  "contexto": {
+    "que_ha_pedido": "[PRESUPUESTO, DESCARGA, CITA O INFORMACIÓN]",
+    "quien_responde": "[TU NOMBRE Y CARGO]",
+    "plazo_real": "[EN CUÁNTO RESPONDES DE VERDAD]",
+    "siguiente_paso": "[QUE RESERVE HUECO, QUE MANDE FOTOS, QUE ESPERE TU LLAMADA]",
+    "tono": "[CERCANO, PROFESIONAL O DIRECTO]"
+  },
+  "pagina_de_gracias": {
+    "debe_incluir": [
+      "Confirmación clara de que ha llegado, sin tecnicismos",
+      "Cuándo y por qué canal le vas a contestar",
+      "Qué puede ir preparando mientras tanto",
+      "Una acción extra opcional: reservar hueco, ver casos o seguirte",
+      "Aviso de revisar la carpeta de spam"
+    ],
+    "longitud": "Máximo 120 palabras"
+  },
+  "email_automatico": {
+    "asunto": "3 opciones cortas, sin mayúsculas gritonas ni emojis",
+    "cuerpo": ["saludo con nombre", "resumen de lo que ha pedido", "plazo de respuesta", "una pregunta que te ahorre ida y vuelta", "firma con teléfono o WhatsApp"],
+    "longitud": "Máximo 150 palabras, frases cortas, sin adjuntos pesados"
+  },
+  "extra": "Propón el texto de un mensaje interno de aviso para ti con los datos del contacto ordenados para atenderlo rápido",
+  "formato_salida": "1) Texto de la página de gracias. 2) Tres asuntos. 3) Email completo. 4) Aviso interno. 5) Nota de 3 líneas sobre dónde configurarlo si usas un formulario normal de web.",
+  "restricciones": [
+    "No prometas plazos que no vayas a cumplir",
+    "Nada de lenguaje corporativo vacío",
+    "Español de España, tuteando"
+  ]
+}

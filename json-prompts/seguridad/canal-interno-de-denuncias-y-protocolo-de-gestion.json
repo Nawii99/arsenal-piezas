@@ -1,0 +1,41 @@
+{
+  "tarea": "Redacta el procedimiento interno del canal de denuncias o comunicaciones internas de una empresa pequena en Espana",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "plantilla": "[NUMERO DE PERSONAS]",
+    "responsable_del_canal": "[NOMBRE Y CARGO]",
+    "suplente": "[NOMBRE]",
+    "medios_habilitados": "[p. ej. formulario web, buzon de correo, cita presencial]",
+    "admite_anonimas": "[si / no]"
+  },
+  "contenido_del_procedimiento": [
+    "Que se puede comunicar por el canal y que asuntos van por otra via",
+    "Quien puede usarlo: plantilla, ex empleados, proveedores, candidatos",
+    "Como se presenta la comunicacion y que datos minimos se piden",
+    "Acuse de recibo: plazo y forma",
+    "Instruccion: quien la lleva, que se puede pedir y como se documenta",
+    "Plazo maximo de respuesta y que hacer si se necesita mas tiempo",
+    "Confidencialidad y proteccion frente a represalias, en lenguaje claro",
+    "Conflicto de interes: que pasa si la denuncia afecta al responsable del canal",
+    "Registro: que se anota, donde se guarda y cuanto tiempo",
+    "Archivo o cierre del expediente y comunicacion a la persona informante"
+  ],
+  "materiales_adicionales": [
+    "Texto de 10 lineas para anunciar el canal al equipo",
+    "Formulario de recogida con 8 campos",
+    "Plantilla de acuse de recibo",
+    "Plantilla de acta de cierre del expediente"
+  ],
+  "restricciones": [
+    "Espanol de Espana, neutro y respetuoso, sin sesgar a favor de nadie",
+    "No cites articulos concretos de leyes salvo que estes seguro; describe la obligacion",
+    "Marca con [CONSULTAR CON ASESOR] lo que dependa del tamano de la empresa o del sector",
+    "Deja claro que este documento es una base y debe validarse legalmente"
+  ],
+  "formato_salida": "Markdown con procedimiento en apartados numerados, tabla de plazos Hito / Plazo / Responsable y los cuatro materiales adicionales como bloques separados listos para copiar",
+  "criterios_calidad": [
+    "Todos los plazos estan indicados en dias concretos, sin ambiguedad",
+    "El procedimiento funciona igual si la denuncia es anonima",
+    "Queda resuelto quien actua si el denunciado es el responsable del canal"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "tarea": "Definir el plan de medición de [URL] y dejar configurados los eventos de conversión en GA4 mediante Google Tag Manager, respetando el consentimiento de cookies.",
+  "contexto": {
+    "objetivo_del_negocio": "[CONTACTOS / RESERVAS / VENTAS / DESCARGAS]",
+    "plataforma": "[WORDPRESS / HTML / SHOPIFY / OTRA]",
+    "canales_de_captacion": "[SEO, ANUNCIOS, INSTAGRAM, EMAIL, BOCA A BOCA]"
+  },
+  "entradas": {
+    "acciones_valiosas": "[ENVIAR FORMULARIO, PULSAR WHATSAPP, LLAMAR, RESERVAR, COMPRAR]",
+    "valor_estimado": "[LO QUE VALE DE MEDIA UN CONTACTO O UN PEDIDO]",
+    "herramientas_ya_instaladas": "[GA4, GTM, PÍXEL DE META, NINGUNA]"
+  },
+  "pasos": [
+    "1. Elegir un único indicador principal y como mucho tres secundarios; el resto es ruido.",
+    "2. Escribir el plan de medición: nombre del evento, cuándo se dispara, qué parámetros lleva y qué decisión permite tomar.",
+    "3. Nombrar los eventos en minúsculas y con guion bajo, siempre con el mismo criterio.",
+    "4. Crear en GTM los activadores: clic en enlaces que empiezan por wa.me o tel:, envío de formulario, visita a la página de gracias.",
+    "5. Enviar esos eventos a GA4 y marcarlos como conversión, con el valor estimado cuando tenga sentido.",
+    "6. Configurar el modo de consentimiento para que no se recoja nada antes de aceptar cookies.",
+    "7. Añadir parámetros UTM a los enlaces de campañas y redes para saber de dónde viene cada contacto.",
+    "8. Probar en modo vista previa, hacer una conversión de prueba y marcarla para excluirla luego."
+  ],
+  "restricciones": [
+    "Nada de enviar datos personales (email, teléfono, nombre) dentro de los eventos.",
+    "No medir más de seis eventos al principio.",
+    "No dar por buena una conversión hasta verla en tiempo real en GA4.",
+    "Explicar cada clic del panel: el usuario no ha entrado nunca en GTM."
+  ],
+  "formato_salida": {
+    "bloque_1": "Plan de medición en tabla: acción | nombre del evento | activador | parámetros | decisión que permite.",
+    "bloque_2": "Configuración en GTM paso a paso, con el nombre exacto de cada pantalla y campo.",
+    "bloque_3": "Configuración en GA4 para marcar conversiones y crear el informe.",
+    "bloque_4": "Plantilla de UTMs con ejemplos por canal.",
+    "bloque_5": "Cómo comprobar que funciona y errores típicos si no aparece nada."
+  },
+  "criterios_calidad": [
+    "Cada evento se ve en tiempo real al hacer la acción de prueba.",
+    "Los nombres de eventos son coherentes entre sí y no se repiten con distinto significado.",
+    "Sin consentimiento no se envía ningún dato de medición.",
+    "Se puede responder en un minuto a: cuántos contactos hubo este mes y de qué canal.",
+    "El tráfico propio queda excluido."
+  ],
+  "errores_frecuentes": [
+    "Medirlo todo y no mirar nunca ningún informe.",
+    "Contar como conversión la visita a una página en vez de la acción real.",
+    "Instalar dos veces la etiqueta y duplicar todas las cifras.",
+    "Enviar campañas sin UTMs y luego no saber qué funcionó.",
+    "Confundir sesiones con personas y tomar decisiones con eso."
+  ]
+}

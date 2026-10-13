@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar un presupuesto profesional por partidas listo para enviar a un cliente",
+  "contexto": {
+    "emisor": "[NOMBRE O EMPRESA, NIF, DIRECCIÓN, TELÉFONO, EMAIL]",
+    "cliente": "[NOMBRE, NIF Y DIRECCIÓN DEL CLIENTE]",
+    "trabajo": "[DESCRIPCIÓN DEL TRABAJO A PRESUPUESTAR]",
+    "pais": "España, presupuesto en euros e IVA español"
+  },
+  "entradas": {
+    "partidas": "[LISTA DE TRABAJOS O MATERIALES CON CANTIDAD, UNIDAD Y PRECIO UNITARIO]",
+    "plazo_ejecucion": "[DÍAS O SEMANAS DESDE LA ACEPTACIÓN]",
+    "forma_de_pago": "[ANTICIPO, HITOS, PAGO FINAL, DÍAS DE PAGO]",
+    "tipo_iva": "[21, 10 O EL QUE CORRESPONDA]",
+    "exclusiones": "[LO QUE NO ESTÁ INCLUIDO: LICENCIAS, MATERIALES DEL CLIENTE, DESPLAZAMIENTOS]"
+  },
+  "metodo": [
+    "Agrupar las partidas por bloques lógicos para que se entienda el orden del trabajo",
+    "Calcular importe por partida, subtotal por bloque, base imponible, IVA y total",
+    "Marcar como opcional cualquier partida prescindible, con su precio aparte y fuera del total",
+    "Redactar el alcance en positivo y las exclusiones en negativo, sin ambigüedades",
+    "Añadir cláusula de precio para trabajos no previstos y de revisión si el cliente cambia el encargo"
+  ],
+  "formato_salida": {
+    "cabecera": "Número de presupuesto, fecha, validez en días, datos de emisor y cliente",
+    "tabla_partidas": "Columnas: código, descripción, cantidad, unidad, precio unitario, importe",
+    "resumen_economico": "Base imponible, descuento si lo hay, IVA y total a pagar",
+    "opcionales": "Bloque aparte con mejoras y su precio",
+    "condiciones": "Plazo, forma de pago, garantía, qué necesitas del cliente, exclusiones",
+    "aceptacion": "Línea de firma y fecha, y frase de cómo aceptar por email"
+  },
+  "restricciones": [
+    "No inventar precios ni cantidades: si falta un dato, dejarlo marcado como pendiente y preguntarlo",
+    "Nada de partidas tipo varios o imprevistos sin explicar",
+    "Redondear siempre a dos decimales y comprobar que las sumas cuadran"
+  ],
+  "criterios_calidad": [
+    "El cliente sabe exactamente qué recibe por cada euro",
+    "Las exclusiones cierran las discusiones típicas de ese oficio",
+    "El documento se puede firmar tal cual, sin añadir nada"
+  ],
+  "tono": "Claro y formal, frases cortas, sin adornos comerciales"
+}

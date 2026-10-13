@@ -1,0 +1,41 @@
+{
+  "tarea": "Preparar y cuadrar el modelo 303 de IVA de un trimestre antes de presentarlo, casilla a casilla, y detectar los errores que más requerimientos provocan",
+  "perfil_experto": "Asesor fiscal español especializado en IVA de autónomos y pymes",
+  "contexto": {
+    "forma_juridica": "[AUTÓNOMO O SOCIEDAD]",
+    "periodo": "[TRIMESTRE Y AÑO]",
+    "tipo_actividad": "[VENTA DE PRODUCTOS / SERVICIOS / AMBOS]",
+    "operaciones_especiales": "[VENTAS A OTROS PAÍSES DE LA UE, EXPORTACIONES, INVERSIÓN DEL SUJETO PASIVO, ALQUILER, NINGUNA]",
+    "prorrata": "[NO APLICA / SÍ, INDICA EL PORCENTAJE]"
+  },
+  "entradas": {
+    "facturas_emitidas": "[BASE Y CUOTA POR TIPO: 21%, 10%, 4% Y EXENTAS]",
+    "facturas_recibidas": "[BASE Y CUOTA SEPARANDO GASTOS CORRIENTES DE BIENES DE INVERSIÓN]",
+    "pendiente_de_compensar": "[SALDO A COMPENSAR DE TRIMESTRES ANTERIORES, SI LO HAY]"
+  },
+  "pasos": [
+    "Separar las ventas por tipo impositivo y comprobar que la cuota cuadra con la base",
+    "Separar el IVA soportado de gastos corrientes del de bienes de inversión, porque van en casillas distintas",
+    "Tratar, si procede, las operaciones intracomunitarias y la inversión del sujeto pasivo, que se declaran a la vez como IVA repercutido y soportado",
+    "Restar el saldo a compensar de trimestres anteriores",
+    "Calcular el resultado y decidir entre ingresar, compensar o pedir devolución"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de casillas: número de casilla, concepto explicado en una frase e importe propuesto",
+    "bloque_2": "Resultado del trimestre y qué opción marcar en el formulario",
+    "bloque_3": "Checklist de 10 comprobaciones antes de enviar",
+    "bloque_4": "Incoherencias detectadas y qué revisar en tus libros registro",
+    "bloque_5": "Plazo de presentación del trimestre y aviso sobre la domiciliación"
+  },
+  "restricciones": [
+    "Si falta un dato para una casilla, pídelo de forma concreta en vez de estimarlo",
+    "No des por buena una cifra que no cuadre: señálala en rojo",
+    "Nada de jerga sin explicar"
+  ],
+  "criterios_calidad": [
+    "Las sumas se muestran y cuadran entre sí",
+    "Cada aviso dice exactamente qué hacer",
+    "Los importes se pueden copiar al formulario de la AEAT sin dudar"
+  ],
+  "aviso": "Ayuda orientativa: la presentación y su contenido son responsabilidad tuya o de tu asesor"
+}

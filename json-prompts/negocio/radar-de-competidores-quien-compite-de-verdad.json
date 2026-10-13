@@ -1,0 +1,35 @@
+{
+  "tarea": "Mapear a mis competidores y entregar una tabla comparativa que me diga contra quién compito de verdad",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU NEGOCIO]",
+    "que_vendo": "[PRODUCTO O SERVICIO EN UNA FRASE]",
+    "cliente_ideal": "[A QUIÉN SE LO VENDES]",
+    "zona": "[CIUDAD, PROVINCIA O ONLINE ESPAÑA]",
+    "precio_medio": "[PRECIO O RANGO EN EUROS]",
+    "competidores_que_conozco": ["[COMPETIDOR 1]", "[COMPETIDOR 2]", "[COMPETIDOR 3]"]
+  },
+  "pasos": [
+    "Clasifica cada competidor en directo (mismo cliente y misma solución), indirecto (mismo problema, otra solución) o sustituto (el cliente lo resuelve por su cuenta o no hace nada)",
+    "Añade hasta 5 competidores que yo no haya mencionado y explica por qué entran",
+    "Rellena la ficha de cada uno solo con lo que se pueda ver en fuentes públicas: web, redes, tarifas publicadas, reseñas",
+    "Escribe 'sin dato' en lo que no puedas verificar, en lugar de suponerlo",
+    "Ordena la tabla por amenaza real para mi negocio, no por tamaño de la empresa"
+  ],
+  "ficha_por_competidor": ["nombre", "tipo (directo/indirecto/sustituto)", "propuesta de valor en una frase", "rango de precios", "cliente al que apunta", "canales donde capta clientes", "punto fuerte principal", "punto débil aprovechable", "nivel de amenaza alta/media/baja y por qué"],
+  "restricciones": [
+    "No inventes facturación, plantilla ni cuota de mercado",
+    "Nada de adjetivos vacíos: cada punto fuerte o débil con un ejemplo concreto",
+    "Español de España, tuteando, sin jerga de consultoría"
+  ],
+  "formato_salida": {
+    "1_tabla": "Tabla markdown con una fila por competidor y las columnas de la ficha",
+    "2_amenazas": "Los 3 competidores que más clientes me quitan y por qué",
+    "3_huecos": "3 huecos que nadie cubre bien, cada uno con la frase de posicionamiento que yo podría usar",
+    "4_deberes": "5 cosas que debería comprobar yo a mano esta semana"
+  },
+  "criterios_calidad": [
+    "Que pueda decidir a quién vigilar sin leer nada más",
+    "Cada hueco apunta a algo que puedo hacer con mis medios actuales",
+    "Ningún dato se presenta como cierto sin fuente pública comprobable"
+  ]
+}

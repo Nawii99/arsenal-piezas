@@ -1,0 +1,48 @@
+{
+  "tarea": "Auditar todos los gastos recurrentes del negocio y devolver una decisión por gasto con el ahorro anual asociado y el orden en que ejecutarlas.",
+  "contexto": {
+    "negocio": "[QUÉ HACES Y CUÁNTA GENTE SOIS]",
+    "motivo": "[LA CAJA VA JUSTA / REVISIÓN TRIMESTRAL / HE PERDIDO UN CLIENTE GRANDE]"
+  },
+  "entradas": {
+    "lista_de_gastos": "[NOMBRE, IMPORTE MENSUAL O ANUAL, FECHA DE RENOVACIÓN, TARJETA O CUENTA DE CARGO]",
+    "uso_real": "[CADA CUÁNTO USAS CADA COSA: A DIARIO, AL MES, NUNCA, NO LO SÉ]",
+    "ingresos_mensuales": "[FACTURACIÓN MEDIA SIN IVA]",
+    "fuentes": "[EXTRACTO BANCARIO Y DE LA TARJETA DE LOS ÚLTIMOS 3 MESES, PARA NO OLVIDAR CARGOS]"
+  },
+  "metodo": [
+    "1. Normaliza todo a coste mensual y a coste anual, con el IVA aparte porque en muchos casos es deducible: consúltalo con el gestor.",
+    "2. Clasifica cada gasto en cuatro cajas: imprescindible para facturar, mejora el trabajo, comodidad, y fantasma (no lo usas o está duplicado).",
+    "3. Calcula el peso: porcentaje que suponen los gastos fijos sobre los ingresos. Por encima del 30 por ciento el negocio pierde flexibilidad.",
+    "4. Busca duplicidades típicas: dos herramientas de facturación, dos de almacenamiento, dos de email marketing, plan de móvil con datos que no gastas.",
+    "5. Revisa planes sobredimensionados: número de usuarios, gigas, plan anual pagado mensual, plan de empresa cuando basta el básico.",
+    "6. Para cada gasto decide: cortar, bajar de plan, pasar a pago anual si el descuento supera el 15 por ciento y la caja lo aguanta, renegociar o mantener.",
+    "7. En renegociar, escribe la frase concreta a decir a la aseguradora, al banco, al proveedor de internet o al alquiler, apoyada en un dato o en una oferta de la competencia.",
+    "8. Ordena las acciones por ahorro anual dividido entre esfuerzo, y pon fecha límite en las que dependen de una fecha de renovación.",
+    "9. Termina con el nuevo coste fijo mensual y cuántos días del mes trabajas solo para cubrirlo, antes y después."
+  ],
+  "restricciones": [
+    "No propongas cancelar seguros obligatorios ni la parte legal o fiscal del negocio.",
+    "Antes de recortar gestoría o herramientas de facturación, avisa del riesgo de perder control contable.",
+    "Nada de estimaciones de ahorro sin importe real de la factura delante.",
+    "Si un gasto es la vía principal de conseguir clientes, no entra en el recorte sin mirar antes qué facturación trae."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Auditar solo la cuenta del banco y olvidar los cargos en la tarjeta o en PayPal.",
+    "Cancelar una herramienta sin exportar antes los datos ni tener sustituto.",
+    "Pasar todo a plan anual y quedarse sin caja en el mes de la renovación.",
+    "Recortar en lo que produce ingresos y mantener lo que solo da comodidad."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: gasto, mensual, anual, uso real, caja, decisión, ahorro anual.",
+    "bloque_2": "Total de ahorro anual y nuevo coste fijo mensual.",
+    "bloque_3": "Lista ordenada de acciones con fecha, incluidas las que dependen de la renovación.",
+    "bloque_4": "Tres frases listas para copiar en las renegociaciones.",
+    "estilo": "Español de España, tuteando, sin culpabilizar"
+  },
+  "criterios_calidad": [
+    "Ningún gasto de la lista se queda sin decisión.",
+    "El ahorro se calcula con los importes reales aportados, no con medias del sector.",
+    "Las acciones distinguen lo que se hace en cinco minutos de lo que exige una llamada."
+  ]
+}

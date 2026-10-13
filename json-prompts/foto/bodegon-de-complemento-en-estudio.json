@@ -1,0 +1,38 @@
+{
+  "tarea": "Escribir el prompt de imagen para un bodegon de estudio de [COMPLEMENTO] de [NOMBRE DE TU MARCA]",
+  "entradas": {
+    "producto": "[COMPLEMENTO: bolso, cinturon, gafas, panuelo...]",
+    "material": "[PIEL / ANTE / METAL / TEJIDO] en color [COLOR EXACTO]",
+    "detalle_que_vende": "[COSTURA, HERRAJE, TRAMA O CIERRE QUE HAY QUE VER]",
+    "paleta": "[2 O 3 COLORES DE TU MARCA]",
+    "superficie": "[PIEDRA MATE / MADERA CLARA / PAPEL DE COLOR / METACRILATO]"
+  },
+  "receta_de_luz": {
+    "principal": "softbox grande arriba y ligeramente atras para dibujar el volumen",
+    "relleno": "panel blanco a la izquierda al 30 por ciento para abrir sombras",
+    "materiales_brillantes": "usar luz envolvente tipo caja para que el metal refleje gris suave, no puntos quemados",
+    "sombra": "[SOMBRA CORTA Y SUAVE BAJO EL PRODUCTO / SOMBRA DURA DE SOL DE VENTANA]"
+  },
+  "encuadre": {
+    "angulo": "tres cuartos a la altura del producto, mas un cenital de apoyo",
+    "lente": "macro de 100 mm o teleobjetivo corto para no deformar el contorno",
+    "diafragma": "f/8 a f/11 para que todo el producto quede nitido",
+    "aire": "dejar margen a los cuatro lados para recortes a cuadrado y vertical"
+  },
+  "errores_a_evitar": [
+    "Reflejos de focos como puntos blancos sobre el herraje",
+    "El producto flotando sin sombra de contacto",
+    "Fondo de un color que tine el material y falsea el tono real",
+    "Atrezo que tapa la costura o el cierre"
+  ],
+  "formato_salida": {
+    "entrega": ["prompt en ingles", "prompt negativo", "variante cenital", "variante con atrezo minimo"],
+    "relaciones_aspecto": ["1:1 para la tienda", "4:5 para redes"]
+  },
+  "criterios_calidad": [
+    "El color del material coincide con el real y se puede comprar sin sorpresas",
+    "Se distingue la textura del material al ampliar",
+    "Hay sombra de contacto y el producto se apoya de verdad",
+    "Las cuatro variantes parecen de la misma sesion"
+  ]
+}

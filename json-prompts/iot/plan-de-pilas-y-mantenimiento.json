@@ -1,0 +1,51 @@
+{
+  "tarea": "Elaborar el plan de mantenimiento preventivo de una instalacion IoT: pilas, limpieza, comprobaciones y calendario, con reparto de responsabilidades.",
+  "contexto": {
+    "instalacion": "[DIRECCION O NOMBRE DEL CLIENTE Y TIPO DE INMUEBLE]",
+    "fecha_de_puesta_en_marcha": "[DD/MM/AAAA]",
+    "quien_mantiene": "[YO CON CONTRATO / EL CLIENTE SOLO / MIXTO]"
+  },
+  "entradas": {
+    "inventario": "[TABLA: DISPOSITIVO | UBICACION | TIPO DE PILA O ALIMENTACION | FECHA DE INSTALACION | NIVEL ACTUAL]",
+    "condiciones": "[CUALES ESTAN EN EXTERIOR, EN FRIO, EN HUMEDAD O EN ALTURA]",
+    "historial_de_cambios": "[SI YA HAS CAMBIADO ALGUNA PILA, CUANDO]"
+  },
+  "reglas_del_oficio": [
+    "CR2032 en sensor de puerta de interior con poca actividad: 12 a 18 meses; en exterior frio puede bajar a 4 o 6 meses.",
+    "AAA o AA en sensor de movimiento: 12 a 24 meses segun el retardo configurado; un retardo corto multiplica el consumo.",
+    "La curva de las pilas de litio es plana: pasa del 100 al 20 por ciento de golpe, no te fies del porcentaje.",
+    "El frio hunde la tension aparente: un sensor de nevera parece agotado a 4 grados y revive a temperatura ambiente.",
+    "Cambia por lotes en una sola visita, no de uno en uno.",
+    "No mezcles marcas ni pilas viejas con nuevas en el mismo aparato.",
+    "Las pilas recargables de 1,2 V no valen para muchos sensores que esperan 1,5 V.",
+    "Cerraduras y valvulas termostaticas gastan mucho mas que un sensor: van en su propio ciclo."
+  ],
+  "procedimiento": [
+    "1. Estima la vida util de cada dispositivo segun tipo de pila, actividad y temperatura, y da un rango, no un numero exacto.",
+    "2. Calcula la fecha prevista de cambio y agrupa los que caen en un margen de dos meses.",
+    "3. Define el umbral de aviso por dispositivo: mejor avisar al 30 por ciento en criticos y al 15 en el resto.",
+    "4. Anade tareas que no son de pila: limpiar lente de sensor, revisar alineacion de imanes, soplar polvo de rejillas, comprobar juntas en exterior.",
+    "5. Anade tareas de software: copia de configuracion, revision de firmware, comprobar que los avisos siguen llegando.",
+    "6. Monta el calendario anual con visitas agrupadas y lo que el cliente puede hacer solo.",
+    "7. Calcula el stock de pilas a comprar y su coste.",
+    "8. Redacta la prueba trimestral de 10 minutos que confirma que todo sigue vivo."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: DISPOSITIVO | PILA | VIDA ESTIMADA | FECHA PREVISTA DE CAMBIO | CRITICIDAD",
+    "bloque_2": "Calendario anual por meses con las tareas de cada visita",
+    "bloque_3": "Lista de compra de pilas y consumibles con cantidades y coste",
+    "bloque_4": "Checklist imprimible de la visita, con casillas",
+    "bloque_5": "Prueba trimestral de 10 minutos paso a paso",
+    "bloque_6": "Reparto: que hace el cliente y que hago yo"
+  },
+  "restricciones": [
+    "Da rangos honestos y di que la estimacion se corrige con los datos reales del primer ano.",
+    "Nada de recomendar abrir aparatos precintados o en garantia.",
+    "Recuerda el punto limpio para las pilas usadas."
+  ],
+  "criterios_calidad": [
+    "Ningun sensor critico se queda sin umbral de aviso.",
+    "Las visitas estan agrupadas: como maximo dos o tres al ano.",
+    "El checklist se puede rellenar con boligrafo en el sitio."
+  ]
+}

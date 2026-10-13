@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar la guía de estilo de las respuestas a clientes de mi negocio, para que todo el equipo escriba igual",
+  "contexto": {
+    "negocio": "[NOMBRE DEL NEGOCIO]",
+    "tipo_de_cliente": "[PARTICULARES / EMPRESAS / AMBOS]",
+    "personalidad_deseada": "[EJ: CERCANO PERO SERIO, RESOLUTIVO, SIN FLORITURAS]",
+    "trato": "[TÚ / USTED / TÚ EN REDES Y USTED EN EMAIL]",
+    "tamano_equipo": "[Nº DE PERSONAS QUE RESPONDEN]"
+  },
+  "entradas": {
+    "ejemplos_reales": ["[MENSAJE QUE YA HAS ENVIADO 1]", "[MENSAJE 2]", "[MENSAJE 3]"],
+    "cosas_que_odias_leer": "[FRASES QUE NO QUIERES VER NUNCA]"
+  },
+  "secciones_de_la_guia": [
+    "Cómo sonamos y cómo no sonamos, con tres adjetivos y sus contrarios",
+    "Saludos y despedidas aprobados por canal",
+    "Tabla de frases prohibidas y su sustituto (ej: 'lamentamos las molestias' pasa a 'entiendo que esto te ha fastidiado el día')",
+    "Reglas de formato: longitud, párrafos, emojis, mayúsculas, signos de exclamación",
+    "Cómo dar una mala noticia y cómo dar un no",
+    "Qué no se dice nunca por escrito: datos personales, culpas, temas legales, opiniones sobre proveedores",
+    "Cuándo escalar a la persona responsable en vez de contestar",
+    "Cinco ejemplos antes y después con el fallo señalado"
+  ],
+  "restricciones": [
+    "Reglas accionables: nada de 'sé empático', sí 'nombra el problema concreto en la primera frase'",
+    "Máximo dos páginas, para que alguien nuevo se la lea en 10 minutos",
+    "Todo ejemplo debe estar sacado o inspirado en los mensajes reales que te he dado"
+  ],
+  "formato_salida": {
+    "tipo": "documento con títulos y tablas",
+    "anexo": "Checklist de 7 puntos para revisar un mensaje antes de darle a enviar"
+  },
+  "criterios_calidad": [
+    "Alguien que entre mañana puede responder un email decente solo con esta guía",
+    "Cada regla se puede comprobar leyendo el mensaje, sin interpretar"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "tarea": "Preparar un guion de entrevista de descubrimiento de 20 minutos con clientes potenciales de [SECTOR O NEGOCIO] y una rejilla para analizar las respuestas",
+  "contexto": {
+    "a_quien_entrevisto": "[PERFIL: CARGO, EDAD, TIPO DE NEGOCIO O SITUACIÓN]",
+    "hipotesis_a_comprobar": "[LO QUE CREES QUE LES PASA Y QUIERES CONFIRMAR]",
+    "numero_de_entrevistas": "[CUÁNTAS PIENSAS HACER, POR EJEMPLO 8]",
+    "formato": "[VIDEOLLAMADA, TELÉFONO O PRESENCIAL]"
+  },
+  "metodo": [
+    "Aplicar la regla de no hablar del producto: preguntar por la vida y los hechos del entrevistado, no por la idea",
+    "Pedir siempre la última vez concreta que pasó algo, con fecha, contexto y qué hizo después",
+    "Buscar tres señales de dolor real: que ya haya gastado dinero, tiempo o haya montado un apaño casero",
+    "Preparar repreguntas de profundidad para cuando la respuesta sea vaga"
+  ],
+  "restricciones": [
+    "Prohibido preguntar pagarías por esto o te gustaría que existiera",
+    "Máximo 10 preguntas principales, ninguna cerrada de sí o no",
+    "El guion debe caber en 20 minutos incluyendo presentación y cierre"
+  ],
+  "formato_salida": {
+    "apertura": "Frases exactas para presentarte, pedir permiso para grabar y quitar presión al entrevistado",
+    "preguntas": "Tabla con: pregunta principal, qué quiero descubrir, dos repreguntas de profundidad y señal de alarma si la respuesta es vaga",
+    "cierre": "Cómo pedir referencias de otras dos personas y cómo dejar la puerta abierta",
+    "rejilla_analisis": "Tabla vacía para rellenar por entrevistado con: problema descrito, solución actual, gasto actual, frase textual destacada y nivel de dolor del 1 al 5",
+    "resumen_final": "Instrucciones para sacar conclusiones tras todas las entrevistas: qué patrón debe repetirse y en cuántas personas para darlo por válido"
+  },
+  "criterios_calidad": [
+    "Todas las preguntas van del pasado al presente, nunca al futuro hipotético",
+    "La rejilla permite comparar entrevistas de un vistazo",
+    "Se recogen frases literales del cliente para reutilizarlas en textos de venta"
+  ],
+  "tono": "Conversacional y humano, sin sonar a interrogatorio"
+}

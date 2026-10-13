@@ -1,0 +1,49 @@
+{
+  "tarea": "Montar el paquete completo de documentos de una operación, con orden, responsables, comprobaciones y el email de envío a firma.",
+  "contexto": {
+    "operacion": "[CONTRATO CON CLIENTE / ALQUILER / ALTA DE PROVEEDOR / SOLICITUD DE AYUDA / ALTA DE TRABAJADOR]",
+    "partes": "[QUIÉNES INTERVIENEN Y EN QUÉ CALIDAD]",
+    "metodo_de_firma": "[MANUSCRITA / FIRMA ELECTRÓNICA / PLATAFORMA CONCRETA]",
+    "fecha_limite": "[CUÁNDO TIENE QUE ESTAR FIRMADO]"
+  },
+  "entradas": {
+    "documentos_que_ya_tengo": "[LISTA DE LO QUE ESTÁ PREPARADO]",
+    "documento_principal": "[PEGA EL CONTRATO O EL TEXTO PRINCIPAL SI LO TIENES]",
+    "requisitos_recibidos": "[LO QUE LA OTRA PARTE O EL ORGANISMO ME HA PEDIDO]"
+  },
+  "pasos": [
+    "Lista todos los documentos que compone el paquete, numerados en el orden en que se leen y se firman.",
+    "Por cada documento indica quién lo aporta, quién lo firma, si necesita fecha y si necesita anexo.",
+    "Comprueba que los datos identificativos coinciden en todos los documentos: nombres, NIF, dirección, importes y fechas.",
+    "Señala los documentos que caducan y desde cuándo cuentan.",
+    "Define la nomenclatura de archivo de cada pieza y el orden dentro del PDF final.",
+    "Prepara la lista de comprobación previa al envío, con lo que se mira una a una.",
+    "Escribe el email de envío: qué mando, qué tiene que hacer cada parte, dónde firma y para cuándo.",
+    "Define el recordatorio: cuándo insisto y con qué texto si no hay respuesta.",
+    "Indica qué hago con los originales firmados y dónde los guardo."
+  ],
+  "restricciones": [
+    "No des por hecho ningún documento: si no está en mi lista, va como pendiente.",
+    "No incluyas datos personales de terceros que no hagan falta para la operación.",
+    "Nada de consejo legal: solo orden, coherencia y comprobaciones."
+  ],
+  "errores_tipicos": [
+    "Mandar a firmar la versión anterior del contrato.",
+    "Anexos citados en el contrato que no viajan en el envío.",
+    "Importe en letra y en número que no coinciden.",
+    "Firmar solo la última página cuando el documento pide todas rubricadas.",
+    "Guardar el firmado encima del borrador y perder la trazabilidad."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla del paquete: número, documento, quién lo aporta, quién firma, estado, nombre de archivo.",
+    "bloque_2": "Lista de incoherencias detectadas entre documentos.",
+    "bloque_3": "Checklist previa al envío, máximo doce puntos.",
+    "bloque_4": "Email de envío a firma, listo para copiar.",
+    "bloque_5": "Texto del recordatorio y cuándo mandarlo."
+  },
+  "criterios_calidad": [
+    "En la tabla se ve de un vistazo qué falta y de quién depende.",
+    "Todos los datos repetidos coinciden entre documentos o están marcados como discrepancia.",
+    "Puedo mandar el email sin escribir nada más."
+  ]
+}

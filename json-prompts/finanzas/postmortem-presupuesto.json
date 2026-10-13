@@ -1,0 +1,53 @@
+{
+  "tarea": "Hacer el análisis posterior de un trabajo terminado comparando presupuesto contra realidad, localizar el origen de la desviación y reescribir el presupuesto tipo para el siguiente.",
+  "contexto": {
+    "negocio": "[QUÉ HACES]",
+    "trabajo_analizado": "[NOMBRE DEL PROYECTO O ENCARGO Y FECHAS DE INICIO Y FIN]",
+    "sensacion": "[SE ALARGÓ / HUBO MUCHOS CAMBIOS / SALIÓ BIEN PERO NO SÉ SI GANÉ]"
+  },
+  "entradas": {
+    "presupuesto_original": "[PARTIDAS, HORAS PREVISTAS POR PARTIDA, PRECIO CERRADO SIN IVA]",
+    "horas_reales": "[HORAS DEDICADAS POR PARTIDA, INCLUYENDO REUNIONES, ESPERAS Y CORRECCIONES]",
+    "gastos_reales": "[MATERIALES, SUBCONTRATAS, DESPLAZAMIENTOS, LICENCIAS]",
+    "cambios_pedidos": "[LISTA DE CAMBIOS O AÑADIDOS Y SI SE COBRARON O NO]",
+    "incidencias": "[RETRASOS DEL CLIENTE, MATERIAL QUE NO LLEGÓ, REHACER POR ERROR PROPIO]",
+    "coste_hora_empresa": "[SI NO LO TIENES, CALCÚLALO CON GASTOS FIJOS Y HORAS VENDIBLES]"
+  },
+  "metodo": [
+    "1. Cuadra el resultado: precio cobrado menos gastos reales menos horas reales por coste de hora-empresa. Di el margen final en euros y por hora.",
+    "2. Tabla de desviación por partida: horas previstas, horas reales, diferencia y porcentaje. Ordena de mayor a menor desviación.",
+    "3. Clasifica el origen de cada desviación en cinco cajas: alcance mal definido, cambios no cobrados, cliente lento, error propio, o estimación optimista de origen.",
+    "4. Cuantifica el coste del alcance regalado: horas de cambios no cobrados por coste de hora-empresa. Enséñalo como dinero perdido, no como esfuerzo.",
+    "5. Detecta el patrón: qué partida se pasa siempre. Si hay trabajos anteriores, comprueba si es la misma.",
+    "6. Reescribe el presupuesto tipo: nuevas horas por partida con el factor de corrección que sale de los datos, y no un margen inventado.",
+    "7. Añade las cláusulas que faltaban: número de revisiones incluidas, precio de la revisión extra, plazos de respuesta del cliente y qué pasa si se incumplen, y qué queda fuera escrito de forma explícita.",
+    "8. Define la instrucción de facturación de cambios: presupuesto adicional por escrito antes de tocar nada, aunque sea una línea por email.",
+    "9. Cierra con las tres reglas concretas para el próximo trabajo igual."
+  ],
+  "restricciones": [
+    "Sin buscar culpables: el objetivo es corregir el precio y el proceso.",
+    "Cifras sin IVA y con el coste de hora-empresa del usuario, no una tarifa de mercado.",
+    "Si faltan las horas reales, di que sin ellas el análisis es una estimación y propón cómo apuntarlas la próxima vez.",
+    "No propongas subir precio sin antes revisar si el problema era el alcance."
+  ],
+  "errores_tipicos_a_evitar": [
+    "No contar las horas de reuniones, correos y esperas.",
+    "Dar por buenos los cambios gratis para mantener el buen ambiente.",
+    "Presupuestar el caso ideal y no el habitual.",
+    "Cerrar el proyecto sin apuntar nada y repetir el mismo error al siguiente.",
+    "Confundir que el cliente esté contento con que el trabajo haya sido rentable."
+  ],
+  "formato_salida": {
+    "bloque_1": "Resultado del trabajo: margen en euros, margen por hora y comparación con tu coste de hora-empresa.",
+    "bloque_2": "Tabla de desviación por partida ordenada de peor a mejor, con el origen de cada una.",
+    "bloque_3": "Coste en euros del alcance regalado.",
+    "bloque_4": "Presupuesto tipo corregido, partida a partida, listo para reutilizar.",
+    "bloque_5": "Cláusulas nuevas y tres reglas para el próximo encargo.",
+    "estilo": "Español de España, tuteando, tono de aprendizaje y no de reproche"
+  },
+  "criterios_calidad": [
+    "El nuevo presupuesto tipo sale de los datos reales aportados y se puede reutilizar tal cual.",
+    "Cada desviación tiene un origen identificado y una medida asociada.",
+    "El alcance regalado aparece convertido en euros."
+  ]
+}

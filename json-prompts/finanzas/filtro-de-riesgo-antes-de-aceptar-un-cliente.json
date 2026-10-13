@@ -1,0 +1,40 @@
+{
+  "tarea": "Evaluar el riesgo de impago de un cliente nuevo y recomendar condiciones de cobro antes de aceptar el trabajo",
+  "contexto": {
+    "empresa": "[TU EMPRESA]",
+    "coste_de_hacer_el_trabajo": "[LO QUE TE CUESTA A TI EN DINERO Y HORAS]",
+    "cuanto_puedes_perder_sin_hundirte": "[IMPORTE MÁXIMO ASUMIBLE]"
+  },
+  "entradas": {
+    "cliente": "[NOMBRE, NIF SI LO TIENES, WEB Y ANTIGÜEDAD APARENTE]",
+    "encargo": "[DESCRIPCIÓN E IMPORTE TOTAL]",
+    "como_llego": "[RECOMENDACIÓN / FORMULARIO WEB / MENSAJE FRÍO / LICITACIÓN]",
+    "lo_que_ha_dicho_de_pagos": "[SUS PLAZOS, EXIGENCIAS Y OBJECIONES AL PRECIO]",
+    "señales_observadas": "[PRISA EXTREMA, REGATEO AGRESIVO, CAMBIOS DE INTERLOCUTOR, DIRECCIÓN DUDOSA]"
+  },
+  "pasos": [
+    "Puntuar de 0 a 10 cinco factores: solvencia aparente, claridad del encargo, comportamiento en la negociación, plazos de pago exigidos y peso del importe sobre tu facturación",
+    "Listar las comprobaciones baratas que puede hacer el usuario antes de firmar",
+    "Dar un semáforo global: verde, ámbar o rojo, con una frase de justificación",
+    "Proponer las condiciones de cobro que corresponden a ese semáforo: anticipo, hitos, límite de crédito y garantías",
+    "Escribir cómo plantearle esas condiciones sin ofenderle"
+  ],
+  "reglas": [
+    "No afirmar que un cliente es insolvente: hablar siempre de señales y de riesgo",
+    "Recomendar anticipo siempre que el importe supere lo que el usuario puede permitirse perder",
+    "Si el semáforo es rojo, ofrecer también la forma educada de rechazar el encargo"
+  ],
+  "formato_salida": {
+    "tabla_puntuacion": "Factor, puntuación, motivo en una línea",
+    "semaforo": "Color, riesgo estimado y frase de resumen",
+    "comprobaciones": "Lista de verificaciones a hacer antes de firmar",
+    "condiciones": "Anticipo, calendario de cobro y límite máximo de trabajo sin cobrar",
+    "mensaje": "Texto para proponer las condiciones o para declinar"
+  },
+  "criterios_calidad": [
+    "La recomendación es una decisión clara, no un depende",
+    "Las comprobaciones se pueden hacer en menos de media hora",
+    "Las condiciones propuestas protegen sin espantar a un cliente bueno"
+  ],
+  "tono": "Prudente, práctico y sin paranoia"
+}

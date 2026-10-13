@@ -1,0 +1,39 @@
+{
+  "tarea": "Auditar y corregir un archivo de subtítulos SRT existente, explicando cada cambio",
+  "contexto": {
+    "origen_subtitulos": "[AUTOMÁTICOS DE YOUTUBE / CAPCUT / TRANSCRIPTOR IA / HECHOS A MANO]",
+    "plataforma": "[DÓNDE SE VA A PUBLICAR]",
+    "idioma": "español de España"
+  },
+  "entradas": {
+    "srt": "[PEGA AQUÍ EL CONTENIDO COMPLETO DEL ARCHIVO .SRT]",
+    "terminos_protegidos": "[NOMBRES, MARCAS Y TÉRMINOS QUE DEBEN ESCRIBIRSE ASÍ]"
+  },
+  "errores_a_buscar": [
+    "Velocidad de lectura por encima de 17 caracteres por segundo",
+    "Líneas de más de 42 caracteres o subtítulos de más de 2 líneas",
+    "Subtítulos de menos de 1 segundo o de más de 7 segundos",
+    "Tiempos solapados, invertidos o sin separación entre bloques",
+    "Cortes de línea que rompen una unidad de sentido",
+    "Faltas de ortografía, tildes ausentes y puntuación inconsistente",
+    "Nombres propios escritos de varias formas distintas",
+    "Números, cifras y unidades mal formateados o mezclando criterios",
+    "Muletillas y titubeos transcritos que no aportan nada",
+    "Texto que tapa rótulos o aparece cuando ya no se habla"
+  ],
+  "restricciones": [
+    "No cambies el sentido de lo que se dice ni añadas contenido nuevo",
+    "Mantén la numeración correlativa y el formato SRT válido",
+    "Si un arreglo obliga a mover tiempos, hazlo sin invadir el subtítulo vecino"
+  ],
+  "formato_salida": {
+    "bloque_1": "tabla con columnas: número de subtítulo, tipo de error, texto original, corrección propuesta",
+    "bloque_2": "resumen con el número de errores por tipo y los 3 problemas más repetidos",
+    "bloque_3": "archivo SRT completo ya corregido, listo para copiar y guardar"
+  },
+  "criterios_calidad": [
+    "Cada error señalado indica el número exacto de subtítulo",
+    "El SRT final es válido y no ha perdido ninguna intervención del original",
+    "Las correcciones se justifican en una regla concreta, no en gustos"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "tarea": "Construir un banco de preguntas de repaso y un calendario de repeticion espaciada para consolidar lo aprendido",
+  "contexto": {
+    "formacion": "[NOMBRE DEL CURSO O TEMARIO]",
+    "horizonte": "[SEMANAS DURANTE LAS QUE HAY QUE RECORDARLO, EJ 8]",
+    "canal_de_envio": "[EMAIL / WHATSAPP / FICHAS EN PAPEL / APP DE FICHAS]",
+    "minutos_de_repaso_al_dia": "[EJ: 5]"
+  },
+  "entradas": {
+    "contenido": "[PEGA EL TEMARIO, LOS APUNTES O LA TRANSCRIPCION]",
+    "que_es_imprescindible_recordar": ["[CLAVE 1]", "[CLAVE 2]", "[CLAVE 3]"]
+  },
+  "proceso": [
+    "1. Separa el contenido en hechos que hay que recordar y procedimientos que hay que saber ejecutar: se repasan distinto",
+    "2. Para los hechos escribe preguntas de recuerdo activo: pregunta breve, respuesta de una o dos frases, sin opciones",
+    "3. Para los procedimientos escribe mini casos: una situacion y la pregunta que hace tomar la decision",
+    "4. Marca cada pregunta con su dificultad estimada y el tema al que pertenece",
+    "5. Monta el calendario de repeticion: dia 1, dia 3, dia 7, dia 16 y dia 35 desde que se vio el tema, ajustandolo al horizonte declarado",
+    "6. Define la regla de reenvio: la pregunta fallada vuelve al principio del calendario, la acertada salta al siguiente intervalo",
+    "7. Prepara el mensaje tipo de repaso diario con dos o tres preguntas y las respuestas al final, no al lado"
+  ],
+  "restricciones": [
+    "Nada de preguntas que se contesten con si o no",
+    "Cada respuesta cabe en dos frases",
+    "Ninguna pregunta pide memorizar datos que en la vida real se consultan",
+    "El repaso diario cabe en los minutos declarados"
+  ],
+  "errores_a_evitar": [
+    "Convertir el banco en un examen tipo test: releer opciones no fija nada",
+    "Poner la respuesta pegada a la pregunta, que invita a no pensar",
+    "Preguntas ambiguas con varias respuestas defendibles",
+    "Repasar todo cada dia: se abandona a la semana"
+  ],
+  "formato_salida": {
+    "bloque_1": "Banco en tabla: Numero | Pregunta | Respuesta corta | Tema | Tipo hecho o procedimiento | Dificultad",
+    "bloque_2": "Calendario de repaso por semanas indicando que numeros de pregunta tocan cada dia",
+    "bloque_3": "Reglas de acierto y fallo explicadas para aplicarlas a mano",
+    "bloque_4": "Plantilla del mensaje diario de repaso lista para copiar",
+    "bloque_5": "Fichero en texto separado por punto y coma para importarlo en una app de fichas"
+  },
+  "criterios_calidad": [
+    "Toda pregunta se responde de memoria, sin volver al material",
+    "Cada clave imprescindible aparece en al menos tres preguntas distintas",
+    "El calendario cubre el horizonte declarado sin dias sobrecargados",
+    "Un alumno que acierte todo el banco sabria hacer el trabajo real"
+  ]
+}

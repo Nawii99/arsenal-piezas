@@ -1,0 +1,35 @@
+{
+  "tarea": "Definir el sistema de estilos base de una web (colores, tipografia, espaciados, bordes y sombras) y entregarlo como variables CSS",
+  "contexto": {
+    "marca": "[NOMBRE DE TU NEGOCIO]",
+    "sector": "[SECTOR]",
+    "sensacion": "[CONFIANZA / CERCANIA / LUJO / ENERGIA]",
+    "color_de_marca": "[#HEXADECIMAL O 'PROPON TU']"
+  },
+  "entradas": {
+    "tipografia": "[NOMBRE DE GOOGLE FONTS O 'PROPON DOS OPCIONES']",
+    "modo_oscuro": "[SI / NO]"
+  },
+  "instrucciones": [
+    "Crea una paleta con marca, marca oscura, marca clara, texto, texto suave, fondo, superficie, borde, exito, aviso y error",
+    "Comprueba y anota el contraste de cada color de texto sobre su fondo, minimo 4.5:1",
+    "Escala tipografica de seis pasos con clamp para que se adapte sola a la pantalla",
+    "Escala de espaciado de 4px con seis pasos, sin valores intermedios inventados",
+    "Como maximo tres radios de borde y tres sombras: mas variedad ensucia el diseno",
+    "Nombra las variables por su funcion, no por su color, para poder cambiar la paleta sin tocar el HTML"
+  ],
+  "restricciones": [
+    "Nombres de variable en espanol y en minusculas, por ejemplo --color-texto-suave",
+    "Nada de degradados ni efectos de moda: solo la base del sistema"
+  ],
+  "formato_salida": {
+    "1_css": "bloque :root con todas las variables comentadas por grupos y, si procede, el bloque de modo oscuro",
+    "2_tabla_de_uso": "tabla con variable, para que sirve y ejemplo concreto de donde usarla",
+    "3_muestra": "HTML pequeno que pinta la paleta, los seis tamanos de letra y los espaciados para verlo de un vistazo"
+  },
+  "criterios_calidad": [
+    "Ningun par texto-fondo baja de 4.5:1",
+    "Cambiando solo el color de marca la web entera cambia de aspecto sin romperse",
+    "No hay dos variables que hagan lo mismo"
+  ]
+}

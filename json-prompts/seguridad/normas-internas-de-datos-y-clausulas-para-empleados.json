@@ -1,0 +1,38 @@
+{
+  "tarea": "Crear el protocolo interno de manejo de datos personales para el equipo, las cláusulas de confidencialidad para los contratos y un guion de formación breve",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "sector": "[SECTOR]",
+    "equipo": "[PUESTOS Y CUÁNTAS PERSONAS EN CADA UNO]",
+    "modalidad": "[PRESENCIAL / TELETRABAJO / MIXTO]"
+  },
+  "entradas": {
+    "datos_por_puesto": "[QUÉ DATOS MANEJA CADA PUESTO]",
+    "herramientas": "[EMAIL, WHATSAPP, CRM, DRIVE, USB, IMPRESORA, MÓVILES PERSONALES]",
+    "riesgos_conocidos": "[LO QUE YA HA PASADO O TE PREOCUPA]"
+  },
+  "pasos": [
+    "Define quién accede a qué según el principio de mínimo necesario y refleja los permisos por puesto",
+    "Escribe reglas concretas de uso: correo y copia oculta en envíos masivos, contraseñas y doble factor, dispositivos personales, papel y mesas limpias, WhatsApp con clientes y borrado seguro",
+    "Añade el protocolo de qué hacer si sospechas una fuga, con a quién avisar y en cuánto tiempo",
+    "Redacta la cláusula de confidencialidad y deber de secreto para el contrato laboral, con vigencia posterior a la salida",
+    "Prepara el checklist de alta y de baja de una persona: accesos que se dan y accesos que se retiran el mismo día",
+    "Diseña una formación de 60 minutos con casos reales del sector y diez preguntas de comprobación"
+  ],
+  "restricciones": [
+    "Reglas en imperativo y comprobables, nada de recomendaciones difusas",
+    "Máximo dos páginas para el protocolo del día a día",
+    "No proponer medidas de vigilancia del empleado que excedan lo permitido"
+  ],
+  "formato_salida": {
+    "1_protocolo": "documento de dos páginas con reglas por bloques",
+    "2_clausula": "texto legal listo para anexar al contrato",
+    "3_checklists": "alta y baja de personal en formato lista",
+    "4_formacion": "guion de 60 minutos con casos y cuestionario final"
+  },
+  "criterios_calidad": [
+    "Cualquier persona nueva sabe qué puede y qué no puede hacer tras leerlo una vez",
+    "Existe un responsable con nombre para avisar ante incidentes",
+    "El checklist de baja cierra todos los accesos abiertos en el alta"
+  ]
+}

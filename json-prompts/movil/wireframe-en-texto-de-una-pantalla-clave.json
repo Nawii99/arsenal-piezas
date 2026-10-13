@@ -1,0 +1,38 @@
+{
+  "tarea": "Describir el wireframe de una pantalla de app móvil bloque a bloque, de arriba abajo, con textos reales y jerarquía visual, listo para dibujarlo",
+  "entradas": {
+    "pantalla": "[NOMBRE DE LA PANTALLA]",
+    "accion_principal": "[QUÉ DEBE HACER EL USUARIO AQUÍ]",
+    "datos_a_mostrar": "[QUÉ INFORMACIÓN APARECE]",
+    "acciones_secundarias": "[OTRAS COSAS QUE PUEDE HACER]",
+    "de_donde_viene": "[PANTALLA ANTERIOR]",
+    "a_donde_va": "[PANTALLA SIGUIENTE AL COMPLETAR]",
+    "estilo": "[SOBRIO, COLORIDO, MINIMALISTA U OTRO]"
+  },
+  "reglas_de_maquetacion": [
+    "Móvil de 390 por 844 puntos como referencia, márgenes laterales de 16 puntos",
+    "Lo importante en el primer pantallazo, sin necesidad de desplazar",
+    "Un solo botón principal, ancho completo y en la zona baja",
+    "Máximo 3 niveles de jerarquía tipográfica: titular, subtítulo y cuerpo",
+    "Espacios en múltiplos de 8 puntos",
+    "Los iconos siempre acompañados de texto cuando el significado no sea obvio"
+  ],
+  "formato_salida": {
+    "bloque_1": "Esquema en texto tipo caja, de arriba abajo, con el nombre de cada bloque y su altura aproximada",
+    "bloque_2_tabla": ["Bloque", "Contenido y texto real", "Tipo de elemento", "Tamaño o peso", "Nota de comportamiento"],
+    "bloque_3": "Qué se ve al desplazar hacia abajo",
+    "bloque_4": "Variante de la misma pantalla en su estado vacío",
+    "bloque_5": "Instrucción de una frase para el diseñador sobre lo que no se debe tocar"
+  },
+  "restricciones": [
+    "Textos reales, nada de texto de relleno tipo lorem ipsum",
+    "No proponer elementos decorativos que no aporten",
+    "Nada de menús ocultos para la acción principal"
+  ],
+  "criterios_calidad": [
+    "Se puede dibujar la pantalla en papel siguiendo la salida sin dudar",
+    "Los textos caben en el ancho indicado",
+    "La acción principal se distingue a simple vista del resto"
+  ],
+  "tono": "Concreto y visual, español de España"
+}

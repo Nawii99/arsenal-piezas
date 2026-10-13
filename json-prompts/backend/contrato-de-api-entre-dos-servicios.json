@@ -1,0 +1,28 @@
+{
+  "tarea": "Escribir el contrato de comunicación entre el servicio [SERVICIO QUE LLAMA] y el servicio [SERVICIO QUE RESPONDE] de [NOMBRE DE TU EMPRESA], para que ambos equipos puedan trabajar en paralelo sin sorpresas",
+  "entradas": {
+    "que_necesita_el_que_llama": "[QUÉ INFORMACIÓN O ACCIÓN NECESITA Y PARA QUÉ]",
+    "quien_manda_los_datos": "[QUIÉN ES EL DUEÑO DE ESE DATO EN TU NEGOCIO]",
+    "volumen": "[LLAMADAS POR MINUTO EN HORA PUNTA]",
+    "si_esta_caido": "[QUÉ DEBE PASAR SI EL OTRO SERVICIO NO RESPONDE: ESPERAR, USAR DATO ANTIGUO, FALLAR]"
+  },
+  "decisiones_previas": [
+    "Elegir si la comunicación es sincrónica (petición y respuesta al momento) o por mensaje en cola, y justificarlo con el caso de uso",
+    "Si hay más de 2 llamadas encadenadas para una acción del usuario, avisar de que es señal de mal reparto de responsabilidades"
+  ],
+  "debe_especificar": ["Nombre de cada operación", "Datos de entrada con tipo y si son obligatorios", "Datos de salida", "Lista cerrada de errores con código y significado de negocio", "Tiempo máximo de respuesta", "Límite de peticiones", "Qué hace quien llama ante cada error"],
+  "reglas_de_cambio": [
+    "Añadir campos nunca rompe; quitar o renombrar sí: eso obliga a versión nueva",
+    "Convivencia mínima de la versión anterior y aviso previo al equipo que consume",
+    "Ningún campo con nombre ambiguo tipo estado o tipo sin lista de valores posibles"
+  ],
+  "formato_salida": {
+    "tipo": "documento en Markdown con ejemplos en JSON de petición y respuesta para cada operación",
+    "secciones": ["Resumen para no técnicos", "Operaciones", "Errores", "Tiempos y límites", "Comportamiento ante caídas", "Política de versiones", "Ejemplos completos"]
+  },
+  "criterios_calidad": [
+    "Cada error tiene una acción concreta asociada para quien llama",
+    "Los ejemplos JSON son realistas y usan datos del negocio descrito, no foo y bar",
+    "Dos equipos distintos podrían implementar cada lado sin hablarse"
+  ]
+}

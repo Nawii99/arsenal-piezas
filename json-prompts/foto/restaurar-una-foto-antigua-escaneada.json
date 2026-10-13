@@ -1,0 +1,41 @@
+{
+  "tarea": "Planificar la restauración de una fotografía antigua escaneada, del escaneo a la entrega",
+  "contexto": {
+    "origen": "[PAPEL / NEGATIVO / DIAPOSITIVA / POLAROID]",
+    "tipo": "[BLANCO Y NEGRO / SEPIA / COLOR DESCOLORIDO]",
+    "epoca_aproximada": "[DÉCADA]",
+    "escaneo": "[RESOLUCIÓN EN PPP Y FORMATO; O ESCANEADA CON EL MÓVIL]",
+    "destino": "[IMPRESIÓN ENMARCADA / ÁLBUM / ARCHIVO DIGITAL / REGALO]"
+  },
+  "entradas": {
+    "danos": "[ARAÑAZOS, DOBLECES, TROZOS QUE FALTAN, MOHO, MANCHAS, DESENFOQUE, AMARILLEO]",
+    "zonas_criticas": "[CARAS, MANOS Y ELEMENTOS QUE NO SE PUEDEN PERDER]",
+    "quiere_color": "[SÍ / NO / SOLO SI QUEDA CREÍBLE]"
+  },
+  "procedimiento": [
+    "Escanear a 600 ppp mínimo en TIFF si es para imprimir, y guardar ese archivo intacto como original",
+    "Recortar bordes deteriorados y enderezar",
+    "Quitar polvo y arañazos finos con pincel corrector, empezando por las zonas lisas",
+    "Reconstruir zonas perdidas clonando de partes simétricas de la propia foto",
+    "Corregir el amarilleo y recuperar el rango tonal con curvas, sin llegar a blanco y negro puros",
+    "Reducir ruido de grano con cuidado y recuperar detalle en las caras al final",
+    "Colorear solo si se pidió, con tonos apagados propios de la época",
+    "Entregar dos archivos: la restaurada y el escaneo original sin tocar"
+  ],
+  "errores_a_evitar": [
+    "Escanear con el móvil a poca resolución y con reflejo del cristal",
+    "Reconstruir caras inventando rasgos que no estaban",
+    "Colores de coloreado saturados y modernos que delatan el retoque",
+    "Exceso de reducción de ruido que borra las facciones",
+    "Borrar el original escaneado"
+  ],
+  "formato_salida": {
+    "bloque_1": "Plan de restauración por pasos con herramienta y nivel de dificultad de cada uno",
+    "bloque_2": "Qué es recuperable, qué es dudoso y qué no tiene arreglo",
+    "bloque_3": "Tiempo estimado y precio orientativo si lo haces como servicio"
+  },
+  "criterios_calidad": [
+    "La foto restaurada sigue pareciendo de su época",
+    "No se ha añadido nada que no estuviera en la original"
+  ]
+}

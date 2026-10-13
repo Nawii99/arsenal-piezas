@@ -1,0 +1,48 @@
+{
+  "tarea": "Generar un informe de preparación de lanzamiento para vender como servicio a un estudio de videojuegos",
+  "contexto": {
+    "juego": {
+      "nombre": "[NOMBRE DEL JUEGO]",
+      "genero": "[GÉNERO]",
+      "plataformas": ["[PLATAFORMA_1]", "[PLATAFORMA_2]"],
+      "fecha_prevista_lanzamiento": "[FECHA O 'SIN CONFIRMAR']"
+    },
+    "assets": [
+      {
+        "nombre": "[NOMBRE DEL ASSET]",
+        "tipo": "[arte|sonido|musica|fuente|plugin|codigo]",
+        "licencia": "[TIPO DE LICENCIA]",
+        "permite_uso_comercial": "[SI|NO|NO CONFIRMADO]"
+      }
+    ],
+    "precio": {
+      "rango_comparables_eur": {
+        "minimo": 0,
+        "medio": 0,
+        "maximo": 0
+      },
+      "precio_propuesto_eur": 0
+    },
+    "demo": {
+      "existe": false,
+      "duracion_minutos": 0
+    }
+  },
+  "instrucciones": [
+    "Revisa cada asset del array assets y clasificalo en verde, amarillo o rojo segun su licencia",
+    "Con los datos de precio, propone un precio final y justificalo en dos frases",
+    "Si demo.existe es false, indica si conviene lanzar con demo o sin ella segun el genero",
+    "Señala expresamente cualquier dato marcado entre corchetes que falte antes de dar el informe por definitivo"
+  ],
+  "formato_salida": {
+    "resumen_ejecutivo": "texto de 3 a 4 frases",
+    "tabla_licencias": "tabla con columnas asset, tipo, licencia, estado, accion",
+    "recomendacion_precio": "texto con el precio final y su justificacion",
+    "recomendacion_demo": "texto",
+    "bloqueantes_para_lanzar": ["lista de puntos que impiden publicar ya"]
+  },
+  "uso_como_servicio": {
+    "entregable": "PDF de 2 a 3 paginas con las cuatro secciones de formato_salida",
+    "aviso_legal": "Este informe no sustituye asesoria legal ni fiscal, es una revision de riesgo, no una certificacion"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "tarea": "Diseñar una prueba de nivel de 10-12 preguntas para clasificar a los alumnos de [NOMBRE DE LA FORMACIÓN] en tres itinerarios (base, medio, avanzado) y decidir qué contenido ve cada uno.",
+  "contexto": {
+    "tema_central": "[TEMA]",
+    "perfil_del_alumno": "[OFICIO, EDAD APROXIMADA, POR QUÉ SE APUNTA]",
+    "duracion_total": "[HORAS O SEMANAS]",
+    "modalidad": "[EN DIRECTO / GRABADO / PRESENCIAL / MIXTA]",
+    "donde_se_pasa_el_test": "[GOOGLE FORMS / TYPEFORM / PAPEL EN CLASE]",
+    "tiempo_maximo_del_test": "[8 MINUTOS RECOMENDADO]"
+  },
+  "entradas": {
+    "temario_actual": "[PEGA AQUÍ LOS MÓDULOS O LECCIONES]",
+    "tareas_reales_del_oficio": "[5 A 10 COSAS QUE EL ALUMNO DEBE SABER HACER AL TERMINAR]",
+    "problemas_de_ediciones_anteriores": "[OPCIONAL: DÓNDE SE ATASCÓ LA GENTE]"
+  },
+  "procedimiento": [
+    "1. Convierte cada punto del temario en una tarea observable: en vez de 'saber X', escribe 'es capaz de hacer X en Y minutos sin ayuda'.",
+    "2. Ordena esas tareas de menos a más difícil y marca cuáles son requisito previo de cuáles (eso es el mapa de prerrequisitos).",
+    "3. Escribe 4 preguntas de base, 4 de nivel medio y 4 de nivel alto. Cada una debe medir una tarea concreta, no memoria de definiciones.",
+    "4. Usa preguntas de situación: describe un caso corto y pide elegir qué haría el alumno, no qué significa una palabra.",
+    "5. Añade 2 preguntas de autopercepción (cuántas veces has hecho esto ya, con qué herramienta) para cruzarlas con el resultado.",
+    "6. Define el baremo: cuántos aciertos hacen falta para cada itinerario y qué pasa con los casos raros (acierta las difíciles y falla las fáciles).",
+    "7. Escribe el mensaje de resultado para cada itinerario: qué empieza a ver, qué se salta y qué se lleva de repaso.",
+    "8. Escribe la nota de aviso para los que salen muy por debajo del nivel mínimo, ofreciéndoles alternativa en vez de dejarles entrar a sufrir."
+  ],
+  "restricciones": [
+    "Máximo 12 preguntas y 8 minutos de test; si es más largo, la gente lo abandona o lo rellena al azar.",
+    "Ninguna pregunta con respuesta obvia por descarte ni con opciones de longitud muy distinta.",
+    "Nada de nota ni de suspenso: el mensaje siempre es de colocación, no de examen.",
+    "Español de España, tuteando, frases cortas."
+  ],
+  "errores_a_evitar": [
+    "Preguntar por herramientas concretas cuando lo que importa es el criterio.",
+    "Meter jerga que solo entiende quien ya sabe: falsea el nivel hacia abajo.",
+    "Hacer tres itinerarios que en realidad son el mismo contenido con distinto nombre.",
+    "Clasificar solo por autopercepción: la gente se infravalora o se sobrevalora sistemáticamente."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de tareas observables ordenadas por dificultad con sus prerrequisitos.",
+    "bloque_2": "Las 12 preguntas numeradas, con opciones, respuesta correcta y a qué tarea corresponde cada una.",
+    "bloque_3": "Baremo de corrección en tabla: rango de aciertos, itinerario asignado y contenidos que ve o se salta.",
+    "bloque_4": "Los tres mensajes de resultado listos para copiar, más el mensaje para el caso de nivel insuficiente.",
+    "bloque_5": "Instrucciones de montaje en la herramienta elegida, paso a paso."
+  },
+  "criterios_calidad": [
+    "Cada pregunta se puede rastrear hasta una tarea del oficio: si no, sobra.",
+    "Un conocido del sector debería clasificar igual a tres alumnos de ejemplo que tú con el baremo.",
+    "Los tres itinerarios se diferencian en al menos un 40% del contenido o del ritmo.",
+    "El test se completa en menos de 8 minutos leyéndolo en voz alta."
+  ]
+}

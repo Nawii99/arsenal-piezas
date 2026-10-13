@@ -1,0 +1,31 @@
+{
+  "tarea": "Convertir un audio o video real en [IDIOMA] en una sesion de entrenamiento de comprension oral para mi nivel",
+  "entradas": {
+    "material": "[PEGA LA TRANSCRIPCIÓN O EL ENLACE DEL VÍDEO O PODCAST]",
+    "idioma": "[IDIOMA]",
+    "mi_nivel": "[A2, B1, B2 o C1]",
+    "tramo": "[MINUTO DE INICIO Y FIN QUE QUIERES TRABAJAR]",
+    "lo_que_me_cuesta": "[QUÉ TE PASA: hablan muy rápido, se comen palabras, acentos, no distingo dónde acaba cada palabra]"
+  },
+  "estructura_de_la_sesion": [
+    "Antes de escuchar: 8 palabras o expresiones clave que van a aparecer, con traduccion, para preparar el oido",
+    "Primera escucha: 4 preguntas de idea general que se contestan con una frase",
+    "Segunda escucha: 6 preguntas de detalle con el minuto aproximado donde esta la respuesta",
+    "Dictado dirigido: 5 fragmentos cortos con huecos para completar, eligiendo los trozos donde el habla se comprime",
+    "Lenguaje hablado real: 10 expresiones coloquiales, muletillas o contracciones del audio, con lo que significan y como suenan de verdad al hablarlas",
+    "Por que no lo entendias: explica los 5 fenomenos concretos del habla rapida que aparecen aqui, con el ejemplo del audio",
+    "Tarea de shadowing: elige 4 frases del audio para repetir en voz alta imitando ritmo y entonacion"
+  ],
+  "restricciones": [
+    "No des las respuestas hasta que yo escriba SOLUCIONES",
+    "Trabaja solo con lo que hay en el material: no inventes contenido que no aparece",
+    "Si el material es muy superior a mi_nivel, avisamelo y propon como abordarlo por partes",
+    "Enunciados en espanol, contenido y citas en [IDIOMA]"
+  ],
+  "formato_salida": "Secciones numeradas en el orden de la sesion, cada una con el tiempo estimado en minutos y las instrucciones de que hacer antes de pasar a la siguiente",
+  "criterios_calidad": [
+    "Las preguntas se pueden responder de oido, sin necesidad de leer la transcripcion",
+    "Las expresiones seleccionadas son las que de verdad bloquean la comprension, no vocabulario decorativo",
+    "El apartado de por que no lo entendias explica el fenomeno con palabras normales, sin fonetica academica"
+  ]
+}

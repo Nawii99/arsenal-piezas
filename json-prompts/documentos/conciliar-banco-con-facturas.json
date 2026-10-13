@@ -1,0 +1,58 @@
+{
+  "tarea": "Conciliar el extracto bancario con las facturas emitidas y devolver tres listas: cobrado, pendiente de cobro e ingresos sin factura asociada",
+  "contexto": {
+    "negocio": "[QUÉ VENDO Y A QUIÉN]",
+    "periodo": "[MES O TRIMESTRE, EJ: 3T 2026]",
+    "banco": "[NOMBRE DEL BANCO]",
+    "moneda": "EUR",
+    "perfil_lector": "autónomo sin formación contable"
+  },
+  "entradas": {
+    "extracto_bancario": "[PEGA CSV O TEXTO: FECHA, CONCEPTO, IMPORTE, SALDO]",
+    "facturas_emitidas": "[PEGA LISTA: NÚMERO, FECHA, CLIENTE, BASE, IVA, TOTAL, VENCIMIENTO]",
+    "cobros_ya_confirmados": "[NÚMEROS DE FACTURA QUE YA SÉ COBRADAS, O NINGUNO]",
+    "tolerancia_centimos": "[MARGEN DE DESCUADRE ACEPTADO, POR DEFECTO 2]",
+    "comisiones_pasarela": "[STRIPE, PAYPAL, TPV O NINGUNA]"
+  },
+  "pasos": [
+    "Normaliza fechas a AAAA-MM-DD e importes a numero con dos decimales y punto decimal.",
+    "Separa el extracto en entradas (importe positivo) y salidas; para cobros usa solo entradas.",
+    "Empareja por importe exacto dentro de la tolerancia y fecha del apunte entre el dia de emision y 90 dias despues.",
+    "Si hay pasarela de pago, prueba tambien el importe neto: total menos comision tipica, y marca el emparejamiento como probable.",
+    "Cuando un apunte coincide con varias facturas, busca la suma de dos o tres facturas del mismo cliente (cobro agrupado).",
+    "Usa el concepto del apunte para confirmar el cliente: nombre, NIF o numero de factura dentro del texto.",
+    "Clasifica cada emparejamiento en seguro (importe y cliente coinciden) o probable (solo importe).",
+    "Lo que quede sin pareja en facturas va a PENDIENTE; lo que quede sin pareja en entradas va a INGRESO SIN FACTURA.",
+    "Calcula dias de retraso de cada pendiente respecto a su vencimiento y ordena de mas antiguo a mas reciente."
+  ],
+  "que_mirar": [
+    "Devoluciones y recibos retrocedidos: entrada y salida del mismo importe con pocos dias de diferencia.",
+    "Transferencias entre cuentas propias: no son ingresos, marcalas aparte.",
+    "Anticipos y pagos a cuenta: cobro parcial de una factura, hay que dejar saldo pendiente.",
+    "Facturas rectificativas o abonos con importe negativo."
+  ],
+  "errores_tipicos": [
+    "Dar por cobrada una factura solo porque el importe cuadra, sin mirar el cliente.",
+    "Olvidar la comision de la pasarela y dejar 30 facturas como impagadas.",
+    "Mezclar base imponible con total: empareja siempre contra el TOTAL con IVA.",
+    "Contar como ingreso el dinero que entra de un prestamo o de una devolucion de Hacienda."
+  ],
+  "restricciones": [
+    "No inventes ningun apunte ni ningun numero de factura.",
+    "Si un dato falta, escribe DATO NO DISPONIBLE en esa celda.",
+    "No des consejo fiscal: limitate a lo que dicen los documentos."
+  ],
+  "formato_salida": {
+    "bloque_1_resumen": "5 lineas: total facturado, total cobrado, total pendiente, numero de facturas impagadas, importe de ingresos sin factura",
+    "bloque_2_tabla_cobradas": "Factura | Cliente | Total | Fecha apunte | Concepto banco | Confianza (segura/probable)",
+    "bloque_3_tabla_pendientes": "Factura | Cliente | Total | Vencimiento | Dias de retraso | Accion sugerida",
+    "bloque_4_tabla_sin_factura": "Fecha | Concepto | Importe | Posible origen | Que comprobar",
+    "bloque_5_dudas": "Lista de casos que no he podido decidir y que dato me falta para cerrarlos"
+  },
+  "criterios_calidad": [
+    "La suma de cobrado mas pendiente cuadra con el total facturado, o se explica la diferencia.",
+    "Ningun apunte del extracto aparece emparejado con dos facturas distintas.",
+    "Cada pendiente lleva una accion concreta: recordatorio amable, segunda reclamacion o llamada.",
+    "Las dudas estan listadas, no escondidas dentro de una tabla."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar la respuesta a un cliente que pide una devolucion fuera de plazo o fuera de politica, manteniendo la relacion",
+  "caso": {
+    "producto_y_precio": "[PRODUCTO E IMPORTE]",
+    "dias_fuera_de_plazo": "[NUMERO DE DIAS DE RETRASO]",
+    "motivo_del_cliente": "[LO QUE ALEGA]",
+    "tono_del_cliente": "[EDUCADO / MOLESTO / AMENAZANTE]",
+    "historial_cliente": "[PEDIDOS PREVIOS E IMPORTE TOTAL GASTADO]",
+    "alternativas_disponibles": "[VALE, CAMBIO, DESCUENTO, REPARACION, ENVIO GRATIS, NADA]",
+    "limite": "[MAXIMO QUE ESTAS DISPUESTO A CEDER]"
+  },
+  "metodo": [
+    "Paso 1: nombrar lo que el cliente quiere para que se sienta entendido, en una frase",
+    "Paso 2: dar el no de forma clara y sin rodeos, con el motivo concreto",
+    "Paso 3: puente inmediato a lo que si puedes hacer",
+    "Paso 4: una sola alternativa principal, con su valor en euros",
+    "Paso 5: cierre con una pregunta cerrada para que responda si o no"
+  ],
+  "errores_a_evitar": [
+    "Pedir perdon tres veces y luego negarse",
+    "Esconder el no al final del mensaje",
+    "Justificarse con la politica interna como unica razon",
+    "Ofrecer tres alternativas a la vez y crear indecision",
+    "Responder al enfado con formalidad fria"
+  ],
+  "formato_salida": {
+    "version_a": "Respuesta firme y breve, 90 palabras",
+    "version_b": "Respuesta con gesto comercial, 120 palabras",
+    "comparativa": "Cuando usar cada una y que coste tiene cada opcion",
+    "si_insiste": "Segunda respuesta para cuando el cliente vuelve a insistir",
+    "si_amenaza": "Respuesta serena si menciona hoja de reclamaciones, banco o redes sociales"
+  },
+  "tono": "Amable pero sin miedo, tuteando, sin sonar a departamento juridico",
+  "criterios_calidad": [
+    "El no se entiende a la primera lectura",
+    "La alternativa cuesta menos que el reembolso completo",
+    "El mensaje no da pie a negociar el mismo punto otra vez"
+  ]
+}

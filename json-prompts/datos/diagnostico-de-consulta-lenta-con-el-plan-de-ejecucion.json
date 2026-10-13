@@ -1,0 +1,37 @@
+{
+  "tarea": "Diagnosticar por qué una consulta SQL es lenta leyendo su plan de ejecución y proponer arreglos ordenados por impacto",
+  "entradas": {
+    "motor": "[MOTOR Y VERSIÓN]",
+    "consulta": "[PEGA AQUÍ LA CONSULTA LENTA]",
+    "plan_ejecucion": "[PEGA LA SALIDA DE EXPLAIN O EXPLAIN ANALYZE]",
+    "tiempo_actual": "[SEGUNDOS QUE TARDA HOY]",
+    "tiempo_objetivo": "[SEGUNDOS QUE TE VALDRÍAN]",
+    "indices_existentes": "[ÍNDICES DE LAS TABLAS IMPLICADAS]",
+    "filas_por_tabla": "[TAMAÑO APROXIMADO DE CADA TABLA]"
+  },
+  "que_revisar": [
+    "Escaneos completos de tabla sobre tablas grandes y a qué filtro corresponden",
+    "Diferencia grande entre filas estimadas y filas reales: señal de estadísticas desactualizadas",
+    "Filtros que aplican una función sobre la columna y anulan el índice",
+    "Ordenaciones y agrupaciones que van a disco en vez de a memoria",
+    "JOIN sin condición o con tipos de dato distintos entre las columnas unidas",
+    "Subconsultas que se ejecutan una vez por fila",
+    "Traer muchas más columnas o filas de las que se usan después"
+  ],
+  "formato_salida": {
+    "veredicto": "Una frase: cuál es el cuello de botella principal",
+    "tabla_hallazgos": "Tabla con columnas Problema, Dónde ocurre, Por qué frena, Impacto estimado alto-medio-bajo",
+    "plan_de_accion": "Lista numerada de arreglos, del más rentable al menos, indicando el esfuerzo de cada uno",
+    "sql_propuesto": "Consulta reescrita o sentencias de índice, en bloque de código",
+    "como_comprobarlo": "Qué medir antes y después para saber si ha mejorado de verdad"
+  },
+  "restricciones": [
+    "No proponer cambios de hardware ni de configuración del servidor como primera opción",
+    "Cada arreglo debe indicar su contrapartida (por ejemplo, un índice más ralentiza las escrituras)",
+    "Si el plan pegado no basta para concluir, decir exactamente qué información falta"
+  ],
+  "criterios_calidad": [
+    "Las causas se apoyan en datos del plan pegado, no en suposiciones genéricas",
+    "Ningún consejo del tipo optimiza la consulta sin decir qué línea cambiar"
+  ]
+}

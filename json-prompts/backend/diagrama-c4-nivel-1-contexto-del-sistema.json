@@ -1,0 +1,36 @@
+{
+  "tarea": "Dibujar el diagrama C4 de Nivel 1 (Contexto de sistema) de [NOMBRE DEL SISTEMA] y entregarlo como código Mermaid listo para pegar",
+  "rol": "Arquitecto de software que explica sistemas a personas no técnicas sin perder rigor",
+  "contexto": {
+    "que_hace_el_sistema": "[EXPLICA EN 3 FRASES QUÉ HACE TU SISTEMA]",
+    "negocio": "[SECTOR Y TIPO DE NEGOCIO]",
+    "usuarios": "[TIPOS DE USUARIO: CLIENTE, ADMINISTRADOR, REPARTIDOR...]",
+    "sistemas_externos": "[PASARELA DE PAGO, ERP, CRM, EMAIL, MENSAJERÍA, FACTURACIÓN...]",
+    "fuera_de_alcance": "[LO QUE NO QUIERES QUE APAREZCA EN ESTE DIAGRAMA]"
+  },
+  "entradas": ["La descripción anterior", "[PEGA AQUÍ NOTAS, CORREOS O DOCUMENTOS SI LOS TIENES]"],
+  "pasos": [
+    "Colocar el sistema central como una única caja, sin detalles internos",
+    "Listar las personas (roles humanos) que interactúan con él, agrupando las que hacen lo mismo",
+    "Listar los sistemas externos con los que habla e indicar de quién es cada uno",
+    "Escribir cada relación como verbo + objeto + medio, por ejemplo: 'Envía facturas vía API REST'",
+    "Marcar con (?) las relaciones deducidas que no estén confirmadas por el usuario"
+  ],
+  "restricciones": [
+    "Máximo 12 cajas en total: si salen más, agrupa por familias",
+    "Prohibido mencionar bases de datos, microservicios, frameworks o lenguajes en este nivel",
+    "Toda flecha lleva etiqueta: ninguna conexión sin texto",
+    "No inventar sistemas externos que no aparezcan en las entradas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Código Mermaid con sintaxis C4Context (Person, System, System_Ext, Rel) en un bloque de código",
+    "bloque_2": "Tabla: elemento | tipo | responsabilidad en una frase | responsable",
+    "bloque_3": "Lista 'Supuestos que he hecho' y lista 'Preguntas que necesito que me contestes'"
+  },
+  "criterios_calidad": [
+    "Alguien ajeno al proyecto entiende para qué sirve el sistema en menos de 60 segundos",
+    "El código Mermaid renderiza sin errores al primer intento",
+    "Cada relación dice qué se intercambia, no solo que hay conexión"
+  ],
+  "tono": "Claro y directo, sin jerga innecesaria"
+}

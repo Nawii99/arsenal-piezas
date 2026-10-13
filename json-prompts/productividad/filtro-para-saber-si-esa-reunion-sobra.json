@@ -1,0 +1,39 @@
+{
+  "tarea": "Auditar una reunión recurrente y decidir si mantenerla, acortarla, reducir asistentes o eliminarla",
+  "entradas": {
+    "nombre_reunion": "[NOMBRE DE LA REUNIÓN]",
+    "frecuencia": "[DIARIA / SEMANAL / QUINCENAL / MENSUAL]",
+    "duracion_minutos": "[MINUTOS]",
+    "asistentes": ["[NOMBRE - ROL - COSTE HORA APROXIMADO O NO LO SÉ]"],
+    "proposito_declarado": "[PARA QUÉ SE CREÓ]",
+    "que_pasa_de_verdad": "[QUÉ SUELE OCURRIR EN ELLA]",
+    "decisiones_ultimas_4_veces": ["[DECISIÓN O NINGUNA]"],
+    "que_pasaria_si_no_existiera": "[TU RESPUESTA HONESTA]"
+  },
+  "criterios_de_evaluacion": [
+    "¿Hay una decisión real que solo se puede tomar hablando a la vez?",
+    "¿Cada asistente habla o solo escucha?",
+    "¿La información que se comparte podría ir en un mensaje o en un panel?",
+    "¿Existe un dueño claro y un orden del día previo?",
+    "¿Se hace seguimiento de lo acordado o se empieza de cero cada vez?"
+  ],
+  "procedimiento": [
+    "Puntuar la reunión de 0 a 5 en cada criterio y explicar cada nota en una línea",
+    "Estimar el coste en horas-persona al mes de mantenerla tal cual",
+    "Elegir un veredicto entre mantener, acortar, reducir asistentes, cambiar frecuencia, sustituir por mensaje o eliminar",
+    "Diseñar la versión mejorada con duración, asistentes imprescindibles y agenda fija",
+    "Redactar el mensaje para comunicar el cambio al equipo sin que suene a reproche"
+  ],
+  "restricciones": [
+    "No proponer sustituir por otra reunión",
+    "Si faltan datos, decir qué falta en vez de suponer",
+    "Nada de cifras de ahorro inventadas: solo horas-persona calculadas con los datos dados"
+  ],
+  "formato_salida": {
+    "secciones": ["Tabla de puntuación por criterio", "Coste mensual en horas-persona", "Veredicto en una frase", "Diseño de la reunión mejorada", "Mensaje al equipo listo para enviar"]
+  },
+  "criterios_calidad": [
+    "El veredicto es una sola opción, no un quizá",
+    "La propuesta de mejora es aplicable la semana que viene sin permisos extra"
+  ]
+}

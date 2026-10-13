@@ -1,0 +1,56 @@
+{
+  "tarea": "Auditar los textos publicitarios de un centro de salud o bienestar para detectar promesas indebidas, afirmaciones no sostenibles y testimonios problematicos, y reescribir cada frase en una version honesta y defendible",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CENTRO Y TITULACION DE QUIEN ATIENDE]",
+    "pais": "Espana",
+    "servicios": "[LISTA DE SERVICIOS QUE ANUNCIAS]",
+    "canales_auditados": "[WEB, FICHA DE GOOGLE, FOLLETO, INSTAGRAM, ANUNCIOS DE PAGO]",
+    "es_actividad_sanitaria": "[SI ES UN CENTRO SANITARIO REGISTRADO O UN SERVICIO DE BIENESTAR NO SANITARIO]"
+  },
+  "entradas": {
+    "textos": "[PEGA AQUI TODOS LOS TEXTOS A REVISAR, INDICANDO DE QUE CANAL SALE CADA UNO]",
+    "testimonios": "[TESTIMONIOS O RESENAS QUE USAS EN LA WEB]",
+    "imagenes": "[DESCRIBE LAS FOTOS DE ANTES Y DESPUES SI LAS USAS]"
+  },
+  "pasos": [
+    "1. Marca cada frase con un semaforo: verde si es defendible, ambar si es ambigua y roja si promete resultado, curacion, ausencia de riesgo o superioridad no demostrable",
+    "2. Busca especificamente estos patrones: verbos de curacion, plazos garantizados, cifras de exito sin fuente, comparativas con otros centros, el termino unico o mejor, y el uso de miedo",
+    "3. Revisa si se atribuyen competencias fuera de la titulacion declarada o si se usan terminos reservados a profesiones sanitarias",
+    "4. Revisa los testimonios: si describen resultados concretos, si son verificables, si hay consentimiento por escrito y si aparecen datos identificables",
+    "5. Revisa las fotos de antes y despues: mismo encuadre, misma luz, sin retoque, con consentimiento y sin sugerir resultado tipico",
+    "6. Reescribe cada frase roja o ambar en una version equivalente que hable de proceso, acompanamiento y objetivo, no de resultado garantizado",
+    "7. Comprueba que aparecen los datos obligatorios visibles: identidad del titular, direccion, titulacion del profesional y, si procede, numero de registro sanitario",
+    "8. Genera la lista de frases permitidas de la casa para que el equipo escriba futuras publicaciones sin volver a caer",
+    "9. Prioriza las correcciones por riesgo y por visibilidad de la pagina"
+  ],
+  "restricciones": [
+    "No des asesoramiento juridico ni cites articulos concretos como si fueran verdad verificada; senala el riesgo y recomienda confirmar con un profesional o con el colegio correspondiente",
+    "No inventes numeros de registro ni requisitos administrativos",
+    "Toda reescritura debe mantener el sentido comercial del original, no vaciarlo",
+    "Nada de diagnosticar ni de valorar la eficacia clinica de las tecnicas",
+    "Marca claramente lo que es criterio general y lo que depende de la comunidad autonoma"
+  ],
+  "errores_tipicos": [
+    "Copiar los textos de la web de otro centro sin comprobar si esa profesion puede afirmar eso",
+    "Usar porcentajes de exito sin ninguna fuente detras",
+    "Publicar testimonios con nombre y foto sin consentimiento escrito",
+    "Confundir bienestar con sanitario y usar vocabulario clinico en un servicio que no lo es",
+    "Corregir la web y dejar el folleto y el Instagram con las frases viejas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla con: frase original, canal, semaforo, motivo del riesgo y version reescrita",
+    "bloque_2": "Lista de patrones detectados con cuantas veces aparece cada uno",
+    "bloque_3": "Revision de testimonios e imagenes con veredicto y accion",
+    "bloque_4": "Checklist de datos obligatorios visibles, marcando cual falta",
+    "bloque_5": "Diez frases permitidas de la casa para futuras publicaciones",
+    "bloque_6": "Plan de correccion ordenado por riesgo con responsable",
+    "idioma": "Espanol de Espana"
+  },
+  "criterios_calidad": [
+    "Cada frase roja tiene su version reescrita, no solo el aviso",
+    "Las reescrituras siguen siendo atractivas y concretas",
+    "Se distingue lo que es riesgo alto de lo que es matiz de estilo",
+    "No se afirma nada juridico como certeza",
+    "El equipo puede escribir manana sin repetir los mismos fallos"
+  ]
+}

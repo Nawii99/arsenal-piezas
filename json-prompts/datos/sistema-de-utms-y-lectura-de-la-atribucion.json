@@ -1,0 +1,36 @@
+{
+  "tarea": "Definir el sistema de etiquetado UTM de [NEGOCIO] y explicar cómo leer después la atribución de las ventas",
+  "entradas": {
+    "canales_activos": ["[EJ: META ADS]", "[EJ: NEWSLETTER]", "[EJ: INSTAGRAM ORGÁNICO]", "[EJ: COLABORACIONES]"],
+    "campanas_previstas": "[EJ: REBAJAS ENERO, LANZAMIENTO PRODUCTO X]",
+    "url_destino_tipo": "[https://TUWEB.COM/PAGINA]",
+    "herramienta": "[GA4 / MATOMO / OTRA]"
+  },
+  "reglas": [
+    "Todo en minúsculas, sin acentos, sin espacios y separando palabras con guiones",
+    "utm_source es el sitio concreto, utm_medium el tipo de tráfico y utm_campaign la campaña con fecha",
+    "Usar siempre la misma palabra para lo mismo: nada de facebook, fb y meta mezclados",
+    "No etiquetar enlaces internos de tu propia web: rompe la sesión y falsea el origen",
+    "Etiquetar sí o sí newsletters, códigos QR, biografías de redes y enlaces de colaboradores",
+    "Guardar cada enlace creado en un registro compartido para no reinventar nombres"
+  ],
+  "entrega": [
+    "Diccionario cerrado de valores permitidos para source y medium",
+    "Tabla con un ejemplo de URL completa y montada para cada canal aportado",
+    "Plantilla de nombre de campaña con fecha y tipo",
+    "Guía de lectura: qué significa directo, no asignado y referencia en tus informes",
+    "Explicación llana de por qué la suma de canales no cuadra con tus pedidos totales"
+  ],
+  "restricciones": [
+    "Máximo 8 valores distintos de medium en todo el sistema",
+    "No propongas parámetros de más que ensucien las URLs sin aportar",
+    "Advierte de que las UTMs son visibles para el usuario: nada de datos internos o sensibles ahí"
+  ],
+  "formato_salida": {
+    "tipo": "tablas markdown copiables",
+    "tabla_urls": ["canal", "utm_source", "utm_medium", "utm_campaign", "url_final_completa"],
+    "bloque_final": "5 errores que arruinan la atribución y cómo evitarlos"
+  },
+  "criterios_calidad": ["Las URLs de ejemplo están completas y se pueden copiar y pegar tal cual", "El sistema es tan simple que se puede mantener sin ayuda"],
+  "tono": "Instructivo y muy concreto"
+}

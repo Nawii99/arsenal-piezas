@@ -1,0 +1,38 @@
+{
+  "tarea": "Escribir un artículo de centro de ayuda que explique paso a paso un proceso para que el cliente lo complete sin ayuda",
+  "contexto": {
+    "proceso": "[QUÉ PROCESO SE EXPLICA, EJ: DEVOLVER UN PEDIDO]",
+    "quien_lo_hace": "[CLIENTE NUEVO / CLIENTE HABITUAL / EMPRESA]",
+    "nivel_tecnico": "[NINGUNO / BÁSICO / AVANZADO]",
+    "donde_se_hace": "[WEB, APP, TELÉFONO, EN TIENDA]"
+  },
+  "entradas": {
+    "pasos_reales": "[DESCRIBE LOS PASOS TAL Y COMO SON HOY]",
+    "requisitos_previos": "[QUÉ NECESITA TENER ANTES: NÚMERO DE PEDIDO, CUENTA, PLAZO]",
+    "fallos_tipicos": "[DÓNDE SE ATASCA LA GENTE]",
+    "limites": "[PLAZOS, EXCEPCIONES, CASOS QUE NO ENTRAN]"
+  },
+  "procedimiento": [
+    "Empezar con una frase que diga qué consigue el lector y cuánto tarda",
+    "Listar los requisitos previos antes del primer paso, para que nadie empiece sin tenerlos",
+    "Numerar los pasos, uno por acción, empezando cada uno por un verbo y diciendo qué se ve en pantalla al terminarlo",
+    "Insertar avisos donde estén los fallos típicos, con la señal de que algo va mal y el arreglo",
+    "Cerrar con un bloque de problemas frecuentes y con la vía de contacto si nada funciona"
+  ],
+  "restricciones": [
+    "Un paso no puede contener dos acciones distintas",
+    "Nada de suponer conocimientos que el nivel_tecnico declarado no tiene",
+    "No usar nombres internos de sistemas ni siglas sin explicar",
+    "No inventar botones ni pantallas que no aparezcan en pasos_reales"
+  ],
+  "formato_salida": {
+    "tipo": "artículo markdown",
+    "estructura": ["Título en forma de tarea", "Resumen de 2 líneas", "Antes de empezar", "Pasos numerados", "Si algo falla", "Contacto"],
+    "extras": ["Sugerencia de dónde hace falta una captura de pantalla", "Versión resumida de 5 líneas para pegar en un chat"]
+  },
+  "criterios_calidad": [
+    "Alguien sin contexto llega al final sin preguntar nada",
+    "Cada paso tiene una señal clara de que ha salido bien",
+    "Los límites y excepciones aparecen antes de que el lector pierda el tiempo"
+  ]
+}

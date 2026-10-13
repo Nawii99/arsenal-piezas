@@ -1,0 +1,36 @@
+{
+  "tarea": "Determinar el RPO (cuántos datos puede perder el negocio) y el RTO (cuánto puede estar parado) y recomendar la estrategia de copias y réplicas que corresponde a esos números",
+  "contexto": {
+    "negocio": "[A QUÉ TE DEDICAS Y CÓMO ENTRAN LOS PEDIDOS O CITAS]",
+    "horario_de_actividad": "[HORARIO Y DÍAS EN QUE ENTRAN DATOS]",
+    "ingreso_medio_por_hora": "[EUROS APROXIMADOS QUE FACTURAS POR HORA DE ACTIVIDAD]",
+    "procesos_dependientes": "[QUÉ SE PARA SI LA BASE NO ESTÁ: web, TPV, reservas, facturación...]",
+    "alternativa_manual": "[PUEDES SEGUIR EN PAPEL O NO PUEDES SEGUIR]",
+    "obligaciones": "[FACTURACIÓN, RGPD, CONTRATOS CON CLIENTES QUE EXIJAN DISPONIBILIDAD]",
+    "presupuesto_maximo_mensual": "[EUROS AL MES]"
+  },
+  "instrucciones": [
+    "Explica RPO y RTO con un ejemplo del negocio descrito, sin siglas sueltas",
+    "Estima el coste de una hora de parada y el coste de perder un día de datos, con el razonamiento a la vista",
+    "Propón un RPO y un RTO objetivo y justifícalos con esos costes, no con opiniones",
+    "Compara 4 opciones: copia diaria, copias frecuentes con histórico de transacciones, réplica en otro servidor y alta disponibilidad con conmutación automática",
+    "Para cada opción indica el RPO y el RTO que consigue, el coste mensual orientativo y la complejidad de mantenerla",
+    "Recomienda una y di qué haría falta para pasar al siguiente nivel más adelante"
+  ],
+  "restricciones": [
+    "No prometas cifras de disponibilidad ni ahorros concretos: usa rangos y márcalos como estimación",
+    "Descarta explícitamente lo que sea desproporcionado para el tamaño del negocio",
+    "Habla de euros al mes, no de arquitecturas abstractas"
+  ],
+  "formato_salida": {
+    "tipo": "informe corto con una tabla comparativa",
+    "secciones": ["Qué se pierde si esto se cae", "Tu RPO y RTO objetivo", "Tabla de 4 opciones", "Recomendación y por qué", "Qué revisar dentro de 12 meses"]
+  },
+  "criterios_calidad": [
+    "El RPO y el RTO salen en horas o minutos concretos",
+    "La tabla permite comparar de un vistazo coste frente a protección",
+    "La recomendación encaja con el presupuesto indicado",
+    "Se explica qué señales indicarán que hay que subir de nivel"
+  ],
+  "tono": "de asesor prudente, con números encima de la mesa"
+}

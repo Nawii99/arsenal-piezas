@@ -1,0 +1,36 @@
+{
+  "tarea": "Ponerme un simulacro de la parte [PARTE DEL EXAMEN] del examen [EXAMEN Y NIVEL] y corregirlo con los criterios oficiales de evaluacion",
+  "contexto": {
+    "examen": "[EXAMEN Y NIVEL: Cambridge B2 First, DELF B1, DELE C1, Goethe B2, TOEFL iBT, IELTS]",
+    "parte": "[PARTE A SIMULAR: expresión escrita, comprensión lectora, expresión oral, uso de la lengua]",
+    "fecha_examen": "[FECHA EN LA QUE TE PRESENTAS]",
+    "mis_puntos_flojos": "[LO QUE SABES QUE LLEVAS PEOR]",
+    "intentos_previos": "[SI YA TE PRESENTASTE Y CON QUÉ NOTA, O NINGUNO]"
+  },
+  "desarrollo": [
+    "Explicame primero en 5 lineas como se puntua esa parte y cuantos puntos vale sobre el total",
+    "Dame la prueba con el formato, el numero de tareas y el limite de tiempo reales de ese examen",
+    "Cronometra: dime el tiempo por tarea y avisame si me paso cuando te entregue la respuesta",
+    "No corrijas nada hasta que te entregue todas las tareas",
+    "Corrige aplicando la rubrica oficial, banda por banda, no una opinion general"
+  ],
+  "correccion": {
+    "por_criterio": "puntuacion en cada criterio oficial (contenido, logro comunicativo, organizacion, lenguaje o los que apliquen) con la banda y por que esa y no la siguiente",
+    "nota_estimada": "nota global aproximada y si eso es aprobado, con margen de error declarado",
+    "evidencias": "citas literales de mi respuesta que justifican cada puntuacion",
+    "que_me_habria_subido_de_banda": "3 cambios concretos en mi propio texto o respuesta, reescritos",
+    "plan_hasta_el_examen": "que entrenar cada semana desde hoy hasta fecha_examen, priorizando donde mas puntos se ganan por hora invertida"
+  },
+  "restricciones": [
+    "Respeta el formato real del examen: numero de palabras, tipos de tarea y tiempos, sin inventarte apartados",
+    "Si no estas seguro del formato vigente, dilo claramente en vez de improvisar",
+    "No infles la nota: es preferible pasarse de estricto",
+    "Enunciados de la prueba en [IDIOMA DEL EXAMEN], correccion y explicaciones en espanol"
+  ],
+  "formato_salida": "Primero la prueba sola. Cuando yo entregue, un informe de correccion con tabla de criterios, nota estimada, mis fragmentos citados y el plan semanal hasta la fecha",
+  "criterios_calidad": [
+    "La correccion se puede rastrear hasta la rubrica: cada punto quitado tiene su motivo",
+    "El plan hasta el examen cabe en las semanas que quedan de verdad",
+    "Las mejoras propuestas estan escritas sobre mi texto, no son consejos genericos"
+  ]
+}

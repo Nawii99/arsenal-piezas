@@ -1,0 +1,35 @@
+{
+  "tarea": "Priorizar mi lista de pendientes por impacto en el objetivo del mes y esfuerzo, y decidir qué hago, qué delego, qué aplazo y qué elimino",
+  "entradas": {
+    "lista_pendientes": "[PEGA TODAS TUS TAREAS PENDIENTES, UNA POR LÍNEA]",
+    "objetivo_del_mes": "[EL RESULTADO CONCRETO QUE PERSIGUES ESTE MES]",
+    "horas_libres_semana": "[HORAS QUE TE QUEDAN LIBRES ESTA SEMANA]",
+    "puedo_delegar_en": "[PERSONAS O SERVICIOS EN LOS QUE PUEDES DELEGAR, O NADIE]",
+    "fechas_limite": "[TAREAS CON FECHA TOPE REAL Y CUÁL ES]"
+  },
+  "metodo": [
+    "Puntúa cada tarea de 1 a 5 en impacto sobre el objetivo del mes y de 1 a 5 en esfuerzo",
+    "Distingue fecha límite real (hay consecuencia si no se cumple) de urgencia inventada",
+    "Clasifica cada tarea en HACER YA, PROGRAMAR, DELEGAR o ELIMINAR",
+    "Detecta tareas que en realidad son proyectos y pártelas en el primer paso concreto",
+    "Marca las tareas que están bloqueadas esperando a otra persona y qué hay que pedirle"
+  ],
+  "restricciones": [
+    "Como mucho 5 tareas en HACER YA, y su esfuerzo sumado debe caber en las horas libres",
+    "Toda tarea que se elimine lleva una frase de por qué se puede eliminar sin consecuencias",
+    "No inventes tareas que no estén en la lista"
+  ],
+  "formato_salida": {
+    "1_tabla": "Tabla con columnas: Tarea | Impacto | Esfuerzo | Fecha límite real | Decisión | Motivo en una línea",
+    "2_las_cinco": "Las 5 tareas de esta semana en orden de ejecución, con el primer paso concreto de cada una",
+    "3_delegar": "Qué delegar, a quién y el mensaje listo para enviar pidiéndolo",
+    "4_bloqueadas": "Tareas paradas por terceros y a quién hay que perseguir",
+    "5_eliminar": "Lista de lo que se tira con su justificación"
+  },
+  "criterios_calidad": [
+    "Cada tarea de la lista original aparece exactamente una vez con una decisión",
+    "Las 5 elegidas caben en las horas declaradas",
+    "Los primeros pasos empiezan por un verbo y se pueden hacer en menos de una hora"
+  ],
+  "tono": "Franco, sin rodeos, español de España"
+}

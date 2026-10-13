@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribe una secuencia de mensajes de WhatsApp para recuperar carritos abandonados, con respuestas preparadas a las dudas más comunes",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "producto": "[PRODUCTO O CATEGORÍA]",
+    "ticket_medio": "[TICKET MEDIO EN EUROS]",
+    "quien_firma": "[NOMBRE DE PERSONA REAL DEL EQUIPO]",
+    "consentimiento": "[SÍ, MARCARON LA CASILLA / NO LO SÉ]",
+    "incentivo_maximo": "[% MÁXIMO QUE PUEDES DESCONTAR O ENVÍO GRATIS]",
+    "horario_de_atencion": "[HORARIO]"
+  },
+  "secuencia": [
+    {"mensaje": 1, "envio": "2 horas despues, dentro del horario de atención", "intencion": "ayudar, no vender: preguntar si le surgió alguna duda"},
+    {"mensaje": 2, "envio": "al dia siguiente", "intencion": "resolver la objeción más habitual y facilitar el enlace de pago"},
+    {"mensaje": 3, "envio": "a los 3 dias", "intencion": "cierre amable con incentivo y opción clara de decir que no"}
+  ],
+  "restricciones": [
+    "Máximo 40 palabras por mensaje y nada de bloques de texto",
+    "Que parezca escrito por una persona: sin mayúsculas gritando ni cadenas de emojis",
+    "Nunca escribir fuera del horario indicado ni más de 3 veces",
+    "Incluir siempre una salida fácil: si no te interesa, dímelo y no te escribo más",
+    "Si el consentimiento es NO LO SÉ, avisar de que hay que pedirlo antes de enviar nada",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "bloque_1": "Los 3 mensajes con su momento de envío",
+    "bloque_2": "Tabla de respuestas rápidas: objecion | respuesta lista para copiar",
+    "objeciones_a_cubrir": ["me parece caro", "cuánto tarda el envío", "y si no me sirve", "me lo estoy pensando", "ya lo compré en otro sitio"],
+    "bloque_3": "Una variante en tono más formal por si el cliente es de empresa"
+  },
+  "criterios_calidad": [
+    "Ningún mensaje empieza con una oferta",
+    "Se entiende quién escribe y desde qué tienda en el primer mensaje",
+    "Las respuestas rápidas caben en dos frases y no prometen nada que no esté en el contexto"
+  ]
+}

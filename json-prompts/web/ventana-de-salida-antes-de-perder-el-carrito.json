@@ -1,0 +1,34 @@
+{
+  "tarea": "Escribe el contenido de una ventana de salida (exit intent) para el carrito y las reglas de cuándo mostrarla",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "producto": "[PRODUCTO O CATEGORÍA DEL CARRITO]",
+    "motivo_principal_de_abandono": "[PRECIO / ENVÍO / DUDAS / SOLO MIRABA]",
+    "objetivo": "[CERRAR LA VENTA AHORA / CAPTAR EL EMAIL PARA ESCRIBIRLE DESPUÉS]",
+    "oferta": "[QUÉ OFRECES: ENVÍO GRATIS, % DESCUENTO, GUÍA DE TALLAS, ASESORAMIENTO...]",
+    "trafico_movil": "[% DE TRÁFICO MÓVIL]"
+  },
+  "entrega_3_versiones": [
+    {"version": "A", "angulo": "resolver la duda que frena (sin descuento)"},
+    {"version": "B", "angulo": "incentivo directo con caducidad real"},
+    {"version": "C", "angulo": "guardar el carrito y enviárselo por email"}
+  ],
+  "campos_de_cada_version": ["titular_max_8_palabras", "subtitulo_max_20_palabras", "texto_del_boton_principal", "texto_del_enlace_de_rechazo", "microcopy_de_confianza", "mensaje_de_confirmacion"],
+  "reglas_de_activacion": [
+    "En ordenador: al mover el ratón hacia la barra del navegador",
+    "En móvil: al pulsar atrás o tras [SEGUNDOS] de inactividad, nunca nada más entrar",
+    "Una vez por sesión y máximo una vez cada [DÍAS] por persona",
+    "No mostrarla si ya ha iniciado el pago",
+    "Debe poder cerrarse con un botón visible en la esquina"
+  ],
+  "restricciones": [
+    "El enlace de rechazo no debe ridiculizar al cliente (nada de: no, prefiero pagar de más)",
+    "Un solo campo si pides email",
+    "Nada de cuentas atrás falsas",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "por_version": "Un bloque con todos los campos y una línea explicando cuándo conviene usar esa versión",
+    "final": "Checklist de 6 puntos para revisarla en móvil antes de publicarla"
+  }
+}

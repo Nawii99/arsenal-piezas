@@ -1,0 +1,40 @@
+{
+  "tarea": "Detectar riesgos de cadena de suministro en las dependencias de un proyecto",
+  "contexto": {
+    "proyecto": "[NOMBRE]",
+    "origen": "[LO HEMOS HECHO NOSOTROS / LO HEREDAMOS DE UN FREELANCE / LO GENERÓ UNA IA]",
+    "gestor": "[NPM, YARN, PNPM, PIP, COMPOSER...]",
+    "registro": "[REGISTRO OFICIAL / ESPEJO INTERNO / MEZCLA]"
+  },
+  "entradas": {
+    "dependencias": "[PEGA package.json O EQUIVALENTE]",
+    "fichero_de_bloqueo": "[PEGA package-lock.json, yarn.lock O poetry.lock, O UN FRAGMENTO]",
+    "scripts": "[PEGA LA SECCIÓN scripts O LOS COMANDOS DE INSTALACIÓN Y ARRANQUE]"
+  },
+  "que_buscar": [
+    "Nombres sospechosamente parecidos a paquetes famosos: letras cambiadas, guiones de más, plural o singular",
+    "Paquetes con nombre de módulo interno de la empresa que podrían venir del registro público",
+    "Dependencias apuntando a una URL, a un repositorio de git o a una rama en vez de a una versión publicada",
+    "Versiones abiertas con asterisco o rangos amplios que permiten instalar cualquier cosa nueva",
+    "Scripts que se ejecutan solos al instalar y qué hacen: descargar, compilar, escribir fuera del proyecto",
+    "Dependencias en el fichero de bloqueo que no aparecen en el fichero de dependencias",
+    "Paquetes publicados hace muy poco, con muy pocas versiones o con un solo autor sin historial"
+  ],
+  "restricciones": [
+    "No acuses a un paquete legítimo: si dudas, clasifícalo como A VERIFICAR con el paso exacto de verificación",
+    "No propongas ejecutar código de un paquete sospechoso para ver qué hace",
+    "Trabaja solo con lo pegado; no supongas el resto del árbol de dependencias"
+  ],
+  "formato_salida": {
+    "hallazgos": "Tabla con: paquete, señal detectada, riesgo alto/medio/bajo, cómo verificarlo en 2 minutos",
+    "acciones_inmediatas": "Lista numerada de qué hacer hoy, empezando por lo más grave",
+    "blindaje": "Reglas para el futuro: fijar versiones exactas, desactivar scripts de instalación, revisar el fichero de bloqueo en cada revisión de código",
+    "si_hay_compromiso": "Pasos si se confirma un paquete malicioso: aislar, rotar claves, revisar registros de acceso"
+  },
+  "criterios_calidad": [
+    "Cada señal se explica con la evidencia concreta del fichero pegado",
+    "Las verificaciones son ejecutables por alguien con poca experiencia",
+    "No hay alarmismo genérico sin hallazgo asociado"
+  ],
+  "tono": "investigador, frío y concreto"
+}

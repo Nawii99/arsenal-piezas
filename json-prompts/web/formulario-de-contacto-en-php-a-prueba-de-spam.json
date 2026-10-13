@@ -1,0 +1,47 @@
+{
+  "tarea": "Escribir el fichero PHP que recibe un formulario de contacto web: validacion, antispam, envio de email y respuesta al navegador",
+  "contexto": {
+    "web": "[NOMBRE Y DIRECCION DE TU WEB]",
+    "hosting": "[HOSTING COMPARTIDO / VPS - INDICA SI PUEDES USAR COMPOSER]",
+    "version_php": "[EJEMPLO: 8.1]",
+    "envio": "[FUNCION MAIL DEL SERVIDOR / SMTP CON PHPMailer]"
+  },
+  "entradas": {
+    "campos_del_formulario": "[NOMBRE, EMAIL, TELEFONO, MENSAJE, ACEPTA PRIVACIDAD]",
+    "email_destino": "[TU@EMAIL.COM]",
+    "asunto": "[NUEVO CONTACTO DESDE LA WEB]",
+    "mensaje_de_gracias": "[TEXTO QUE VE EL VISITANTE AL ENVIAR]",
+    "guardar_contactos": "[NO / SI, EN UN CSV / SI, EN BASE DE DATOS]"
+  },
+  "requisitos": [
+    "Aceptar solo peticiones POST y rechazar el resto",
+    "Validar en servidor: campos obligatorios, email con filter_var, longitud maxima y casilla de privacidad marcada",
+    "Antispam sin captcha: campo trampa oculto y control de tiempo minimo desde que se carga el formulario",
+    "Limitar envios por IP para evitar avalanchas",
+    "Token CSRF generado en la pagina del formulario y comprobado aqui",
+    "Limpiar los datos antes de meterlos en el email para evitar inyeccion de cabeceras",
+    "Responder en JSON para envio con javascript y tambien funcionar sin javascript con redireccion",
+    "Registrar errores en un log del servidor y no mostrarlos nunca al visitante",
+    "Poner Reply-To con el email del visitante y From con un correo del propio dominio"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con bloques de codigo",
+    "secciones": [
+      "1. Fichero contacto.php completo y comentado en espanol",
+      "2. HTML del formulario que encaja con ese PHP, con el campo trampa y el token",
+      "3. Javascript minimo para enviar sin recargar y mostrar el mensaje de gracias",
+      "4. Que subir, donde y que permisos poner",
+      "5. Como probarlo y que hacer si los emails acaban en spam"
+    ]
+  },
+  "restricciones": [
+    "Nada de claves ni contrasenas dentro del codigo publicado en la web",
+    "Sin dependencias externas si el hosting no permite composer",
+    "Textos de cara al visitante en espanol de Espana"
+  ],
+  "criterios_calidad": [
+    "Ningun dato del visitante llega al email sin limpiar",
+    "El formulario sigue funcionando con javascript desactivado",
+    "Los mensajes de error dicen que hacer, no solo que ha fallado"
+  ]
+}

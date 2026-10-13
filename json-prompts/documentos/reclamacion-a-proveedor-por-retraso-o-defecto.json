@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar una reclamación formal a un proveedor por entrega defectuosa, incompleta o fuera de plazo, con cuantificación del perjuicio",
+  "entradas": {
+    "tu_empresa": "[NOMBRE, CIF Y PERSONA DE CONTACTO]",
+    "proveedor": "[NOMBRE, CIF Y CONTACTO COMERCIAL]",
+    "pedido": {"numero": "[Nº DE PEDIDO]", "fecha": "[DD/MM/AAAA]", "importe": "[IMPORTE]", "plazo_pactado": "[FECHA O DÍAS COMPROMETIDOS]"},
+    "que_ha_fallado": "[RETRASO, UNIDADES QUE FALTAN, DEFECTOS O REFERENCIA EQUIVOCADA]",
+    "fecha_de_deteccion": "[DD/MM/AAAA EN QUE LO DETECTASTE]",
+    "pruebas": "[FOTOS, ALBARÁN FIRMADO CON RESERVAS, CORREOS, INFORME TÉCNICO]",
+    "perjuicio": "[PEDIDOS QUE NO HAS PODIDO SERVIR, HORAS PERDIDAS, PORTES EXTRA]",
+    "peticion": "[REPOSICIÓN, ABONO, DESCUENTO O RESOLUCIÓN DEL PEDIDO]"
+  },
+  "pasos": [
+    "Comprobar que la reclamación se comunica sin demora desde la detección y decirlo en la carta",
+    "Describir el fallo con datos objetivos: referencias, unidades, medidas y fechas",
+    "Cuantificar el perjuicio en una tabla con concepto e importe, solo con lo que se pueda justificar",
+    "Formular una petición principal y una alternativa aceptable",
+    "Fijar plazo de respuesta y anunciar la retención del pago solo si el contrato lo permite"
+  ],
+  "restricciones": [
+    "No amenazar con dejar de pagar facturas ajenas a este pedido",
+    "No incluir importes estimados sin marcarlos como estimación",
+    "Tono comercial firme: el objetivo es cobrar la compensación, no romper la relación salvo que se indique",
+    "Máximo 400 palabras en el cuerpo"
+  ],
+  "formato_salida": {
+    "email": "asunto y cuerpo listos para enviar",
+    "tabla_perjuicio": "conceptos, importes y total reclamado",
+    "anexo": "lista de pruebas a adjuntar",
+    "siguiente_paso": "qué hacer si no contestan en el plazo"
+  },
+  "criterios_calidad": [
+    "Cualquier persona del proveedor entiende en un minuto qué pasó y qué se pide",
+    "Todos los importes están justificados o marcados como estimación",
+    "La petición es concreta y con fecha límite"
+  ],
+  "aviso_legal": "Texto comercial orientativo, no sustituye el asesoramiento jurídico"
+}

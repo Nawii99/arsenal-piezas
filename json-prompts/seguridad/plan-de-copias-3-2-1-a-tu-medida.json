@@ -1,0 +1,36 @@
+{
+  "tarea": "Diseñar un plan de copias de seguridad realista siguiendo la regla 3-2-1 para un negocio pequeño sin personal técnico",
+  "contexto": {
+    "negocio": "[NOMBRE Y ACTIVIDAD]",
+    "activos_criticos": "[LISTA DE LO QUE NO PUEDES PERDER]",
+    "herramientas_actuales": "[NUBE, NAS, DISCOS, PROGRAMAS DE COPIA QUE YA USÁIS]",
+    "presupuesto_mensual": "[EUROS AL MES QUE PUEDES DEDICAR]",
+    "quien_lo_hara": "[NOMBRE Y CUÁNTO TIEMPO A LA SEMANA]",
+    "instalaciones": "[LOCAL FÍSICO, TELETRABAJO O MIXTO]"
+  },
+  "regla_aplicada": "3 copias de cada dato, en 2 soportes distintos, 1 de ellas fuera del negocio y desconectada o inmutable",
+  "decisiones_a_resolver": [
+    "Frecuencia por activo (continua, diaria, semanal) según cuánto trabajo puedes permitirte rehacer",
+    "Retención: cuántos días, semanas y meses de versiones se guardan y cuándo se borran",
+    "Cifrado de la copia y dónde se guarda la clave o contraseña de recuperación",
+    "Copia protegida frente a borrado (inmutable, fuera de línea o en cuenta separada) para resistir un ransomware",
+    "Quién recibe el aviso si una copia falla y en cuánto tiempo se responde"
+  ],
+  "restricciones": [
+    "Máximo tres herramientas distintas: si se complica, no se cumple",
+    "Nada que exija línea de comandos ni administrar servidores",
+    "Respeta el presupuesto indicado y di el coste estimado de cada pieza",
+    "Incluye los datos que viven solo en SaaS (correo, tienda, facturación) y cómo se exportan"
+  ],
+  "formato_salida": {
+    "apartado_1": "Tabla: Activo | Frecuencia | Destino 1 | Destino 2 | Copia externa | Retención | Cifrado",
+    "apartado_2": "Calendario semanal y mensual de tareas con responsable y minutos estimados",
+    "apartado_3": "Coste mensual total desglosado",
+    "apartado_4": "Plan de puesta en marcha en 7 días, un paso por día"
+  },
+  "criterios_calidad": [
+    "Todo activo crítico tiene al menos una copia fuera del negocio",
+    "Se explica en una frase qué se pierde como máximo si falla cada activo",
+    "El plan se puede mantener en menos de 30 minutos a la semana"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "tarea": "Diseñar el aislamiento de datos y los permisos de mi aplicación multicliente para que ningún cliente pueda ver ni tocar los datos de otro, con pruebas que lo demuestren",
+  "contexto": {
+    "que_es_la_app": "[PANEL, HERRAMIENTA, TIENDA, CRM]",
+    "quienes_entran": "[CLIENTES EMPRESA CON VARIOS USUARIOS / USUARIOS SUELTOS / MI EQUIPO TAMBIÉN]",
+    "base_de_datos": "[POSTGRES / SUPABASE / MYSQL / OTRA]",
+    "numero_de_clientes_previsto": "[CUÁNTOS EN UN AÑO]"
+  },
+  "entradas": {
+    "roles": "[EJ: DUEÑO DE LA CUENTA, EMPLEADO, INVITADO DE SOLO LECTURA, YO COMO ADMINISTRADOR]",
+    "acciones_sensibles": "[VER FACTURACIÓN, EXPORTAR DATOS, INVITAR USUARIOS, BORRAR REGISTROS]",
+    "datos_compartidos": "[LO QUE SÍ ES COMÚN A TODOS: CATÁLOGOS, PLANTILLAS, NADA]"
+  },
+  "pasos": [
+    "1. Elige el modelo de separación y justifícalo: una base de datos por cliente, un esquema por cliente o columna de cliente en cada tabla, según número de clientes y presupuesto",
+    "2. Si es columna de cliente, obliga a que TODAS las tablas de datos la tengan y a que ninguna consulta se escriba sin ella",
+    "3. Define la matriz de permisos: filas con roles, columnas con acciones, y marca permitido, propio o prohibido",
+    "4. Separa autenticación (quién eres) de autorización (qué puedes) y comprueba siempre la pertenencia al cliente ANTES que el rol",
+    "5. Aplica la comprobación en el servidor en todos los casos, incluidos endpoints de descarga, exportación y archivos subidos",
+    "6. Si la base de datos lo soporta, activa seguridad a nivel de fila como red de seguridad y escribe las políticas",
+    "7. Evita identificadores correlativos adivinables en las URLs y explica por qué",
+    "8. Define el acceso de administrador de soporte: acceso limitado, registrado y con motivo, no una puerta abierta",
+    "9. Diseña el borrado y la exportación por cliente completa, incluidos archivos y copias",
+    "10. Escribe la batería de pruebas de fuga: con la sesión del cliente A intentar leer, modificar y exportar datos del cliente B por cada ruta"
+  ],
+  "restricciones": [
+    "Ninguna comprobación de permisos puede vivir solo en el navegador",
+    "Nada de un rol superusuario para el uso diario",
+    "Toda tabla nueva debe nacer con su columna de cliente y su política",
+    "Si propones seguridad a nivel de fila, dame las políticas escritas, no la idea"
+  ],
+  "formato_salida": {
+    "1_decision": "Modelo de separación elegido y por qué, con lo que descartas",
+    "2_matriz_permisos": "Tabla markdown de roles por acciones",
+    "3_sql": "Cambios de esquema y políticas de seguridad listos para ejecutar",
+    "4_codigo": "Función de comprobación de acceso comentada y ejemplo de uso en una ruta",
+    "5_pruebas_de_fuga": "Lista numerada de intentos de acceso cruzado y resultado esperado",
+    "6_riesgos": "Puntos donde es más fácil que se me escape una fuga"
+  },
+  "criterios_calidad": [
+    "Todas las pruebas de acceso cruzado devuelven 403 o 404, ninguna devuelve datos",
+    "No existe ninguna consulta a tablas de datos sin filtro de cliente",
+    "Las descargas y exportaciones comprueban permisos igual que las pantallas",
+    "Los accesos de soporte quedan registrados con motivo"
+  ],
+  "errores_tipicos": [
+    "Filtrar por cliente en la pantalla pero no en el endpoint que la alimenta",
+    "Dejar los archivos subidos en una carpeta pública con URL adivinable",
+    "Comprobar el rol y olvidar comprobar que el registro es de su cliente",
+    "Añadir una tabla nueva meses después y olvidar la política"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Generar el bloque de preguntas frecuentes sobre devoluciones y garantia para web, WhatsApp y chatbot",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "productos": "[QUE VENDES]",
+    "politica_resumen": "[PEGA TU POLITICA ACTUAL O RESUMELA EN 5 LINEAS]",
+    "plazos": "[DIAS PARA DEVOLVER Y DIAS DE REEMBOLSO]",
+    "excepciones": "[LO QUE NO ADMITES DEVOLVER]",
+    "dudas_reales": "[LAS PREGUNTAS QUE MAS TE HACEN HOY]"
+  },
+  "requisitos": [
+    "15 preguntas escritas tal y como las escribe un cliente, no como las escribiria la empresa",
+    "Mezclar preguntas de antes de comprar y de despues de comprar",
+    "Incluir las incomodas: y si lo he usado, y si perdi el ticket, y si tarda mas de lo dicho, quien paga el envio",
+    "Cada respuesta empieza por si, no o depende y luego explica"
+  ],
+  "formato_salida": {
+    "por_pregunta": [
+      "pregunta: como la escribiria el cliente",
+      "respuesta_web: 40 a 60 palabras",
+      "respuesta_chat: 25 palabras maximo para bot o WhatsApp",
+      "palabras_clave: 4 formas distintas de preguntar lo mismo para entrenar el bot",
+      "escalar_a_humano: si o no"
+    ],
+    "entrega": "Tabla y ademas el mismo contenido en JSON para importar al chatbot"
+  },
+  "tono": "Claro y tranquilizador, tuteando, sin condiciones escondidas",
+  "restricciones": [
+    "Ninguna respuesta puede contradecir la garantia legal",
+    "Nada de enlaces inventados: usar [ENLACE A TU POLITICA]",
+    "Prohibido responder consulte nuestras condiciones sin explicar"
+  ],
+  "criterios_calidad": [
+    "Un cliente indeciso termina de leer mas tranquilo que antes",
+    "El bot puede responder sin que el usuario tenga que repreguntar"
+  ]
+}

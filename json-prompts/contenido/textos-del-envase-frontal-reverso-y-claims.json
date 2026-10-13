@@ -1,0 +1,41 @@
+{
+  "rol": "Redactor de packaging especializado en textos de envase que venden sin exagerar",
+  "tarea": "Escribir todos los textos del envase de un producto, ajustados al espacio disponible y con opciones para elegir",
+  "producto": {
+    "nombre": "[NOMBRE DEL PRODUCTO]",
+    "que_es": "[QUE ES, EN UNA FRASE LLANA]",
+    "beneficio_principal": "[EL MOTIVO NUMERO UNO POR EL QUE ALGUIEN LO COMPRA]",
+    "caracteristicas": "[INGREDIENTES, MATERIALES O DATOS RELEVANTES]",
+    "modo_de_empleo": "[COMO SE USA, PASO A PASO]",
+    "historia_o_origen": "[DE DONDE VIENE, QUIEN LO HACE, SI APORTA ALGO]",
+    "publico": "[A QUIEN VA DIRIGIDO]",
+    "tono_de_marca": "[CERCANO, TECNICO, ELEGANTE, GAMBERRO...]"
+  },
+  "espacios": {
+    "reclamo_frontal": "maximo [NUMERO] caracteres",
+    "subtitulo_frontal": "maximo [NUMERO] caracteres",
+    "texto_reverso": "maximo [NUMERO] caracteres",
+    "modo_de_empleo": "maximo [NUMERO] caracteres"
+  },
+  "entregables": [
+    "Cinco opciones de reclamo para el frontal, cada una con su numero de caracteres",
+    "Tres subtitulos que completen el reclamo sin repetirlo",
+    "Dos versiones del texto de reverso: una emocional y una informativa",
+    "Modo de empleo en pasos numerados, con verbos en imperativo",
+    "Bloque corto de marca de 20 a 30 palabras para el lateral o la base",
+    "Version en ingles del frontal por si vendes fuera"
+  ],
+  "restricciones": [
+    "Prohibido prometer resultados medicos o de salud que no se puedan demostrar",
+    "Nada de superlativos vacios: el mejor, revolucionario, unico en el mundo",
+    "Frases cortas: ninguna de mas de 15 palabras en el frontal",
+    "Respetar el limite de caracteres indicado y mostrarlo entre parentesis en cada opcion"
+  ],
+  "criterios_calidad": [
+    "El reclamo se entiende sin conocer la marca",
+    "El reverso responde a las tres dudas mas probables del comprador",
+    "Ninguna frase necesita releerse dos veces"
+  ],
+  "formato_salida": "lista por bloques, cada opcion numerada y con su recuento de caracteres entre parentesis",
+  "tono": "el indicado en tono_de_marca, manteniendolo en todos los bloques"
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Explicar la desviación entre la previsión del mes y el resultado real, descomponiéndola en causas cuantificadas",
+  "contexto": {
+    "mes_analizado": "[MES Y AÑO]",
+    "negocio": "[NOMBRE Y SECTOR]",
+    "quien_lo_lee": "[YO, MI SOCIO, EL BANCO, EL EQUIPO]"
+  },
+  "entradas": {
+    "previsto": "[LÍNEA;UNIDADES PREVISTAS;PRECIO MEDIO PREVISTO;EUROS PREVISTOS]",
+    "real": "[LÍNEA;UNIDADES REALES;PRECIO MEDIO REAL;EUROS REALES]",
+    "sucesos_del_mes": "[PROMOCIÓN, AVERÍA, BAJA DE UN COMERCIAL, CLIENTE GRANDE QUE ENTRA O SE VA, FESTIVOS EXTRA...]",
+    "meses_anteriores": "[EUROS REALES DE LOS 6 MESES PREVIOS, PARA VER SI ES TENDENCIA O PUNTUAL]"
+  },
+  "procedimiento": [
+    "1. Calcula la desviación total en euros y en porcentaje",
+    "2. Descomponla en efecto volumen (unidades), efecto precio (precio medio) y efecto mix (cambio de peso entre líneas)",
+    "3. Comprueba que los tres efectos suman exactamente la desviación total",
+    "4. Identifica las 3 líneas o clientes que más aportan a la desviación, en positivo y en negativo",
+    "5. Cruza con los sucesos del mes y con los 6 meses previos para clasificar cada causa como puntual o estructural",
+    "6. Ajusta la previsión de los próximos meses solo por las causas estructurales, y di el nuevo número"
+  ],
+  "restricciones": [
+    "No atribuyas nada a la 'situación del mercado' sin un dato que lo respalde",
+    "Si un suceso no explica más de un 2% de la desviación, no lo listes",
+    "Máximo 5 causas: las que expliquen el grueso"
+  ],
+  "formato_salida": {
+    "titular": "Una frase con la desviación y la causa principal",
+    "tabla_puente": "Concepto | Euros | % de la desviación (previsto -> efecto volumen -> efecto precio -> efecto mix -> real)",
+    "tabla_causas": "Causa | Euros | Puntual o estructural | Evidencia",
+    "acciones": "3 acciones para el mes que viene, cada una con el responsable y la fecha",
+    "revision_de_prevision": "Nuevo número para los 3 meses siguientes y qué ha cambiado"
+  },
+  "criterios_calidad": [
+    "El puente cuadra al euro",
+    "Cada causa tiene un importe, no solo una explicación"
+  ]
+}

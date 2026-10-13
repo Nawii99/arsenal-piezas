@@ -1,0 +1,36 @@
+{
+  "tarea": "Cruzar las medidas del Anexo II del ENS con los controles del Anexo A de ISO/IEC 27001:2022 y devolver un plan único de evidencias",
+  "contexto": {
+    "organizacion": "[NOMBRE DE TU EMPRESA]",
+    "punto_de_partida": "[QUÉ TIENES YA: ISO 27001, ENS O NINGUNA]",
+    "categoria_ens": "[BÁSICA, MEDIA O ALTA]",
+    "alcance": "[SISTEMAS Y SERVICIOS AFECTADOS]",
+    "documentacion_actual": "[POLÍTICAS, PROCEDIMIENTOS Y REGISTROS QUE YA EXISTEN]",
+    "proxima_auditoria": "[FECHA]"
+  },
+  "instrucciones": [
+    "Agrupa las medidas del ENS por sus tres marcos: Marco organizativo (org), Marco operacional (op) y Medidas de protección (mp), filtrando solo las exigidas por la categoría indicada",
+    "Para cada medida ENS indica el control o controles de ISO 27001 equivalentes y el grado de solape: total, parcial o sin equivalente",
+    "Señala explícitamente lo que el ENS exige y la ISO no obliga: perfiles de responsable de la información, del servicio, de seguridad y del sistema; categorización del sistema; declaración o certificación de conformidad; uso de productos certificados; y las obligaciones de notificación al CCN-CERT",
+    "Señala también lo que la ISO exige y el ENS no detalla igual: contexto de la organización, partes interesadas, objetivos medibles y revisión por la dirección",
+    "Propón un juego único de documentos que valga para las dos auditorías, diciendo qué apartado extra hay que añadir a cada documento",
+    "Ordena el trabajo pendiente por fecha de auditoría más cercana"
+  ],
+  "restricciones": [
+    "No afirmes que una certificación convalida la otra: son marcos distintos y así hay que decirlo",
+    "No inventes numeraciones de medidas si no estás seguro: describe la medida por su nombre",
+    "Todo solape parcial debe explicar qué falta para cubrir la parte no solapada"
+  ],
+  "formato_salida": {
+    "1_tabla_cruce": "Marco ENS | Medida | Exigida en tu categoría | Control ISO equivalente | Solape total/parcial/ninguno | Documento único que lo cubre | Estado",
+    "2_solo_ens": "Lista de obligaciones exclusivas del ENS con acción concreta",
+    "3_solo_iso": "Lista de requisitos exclusivos de ISO con acción concreta",
+    "4_plan": "Calendario de trabajo hasta la fecha de auditoría, por semanas"
+  },
+  "criterios_calidad": [
+    "Cada fila deja claro si hay que hacer algo nuevo o basta con lo existente",
+    "El plan cabe en el tiempo disponible hasta la auditoría",
+    "Un responsable no técnico entiende qué documento tiene que preparar"
+  ],
+  "tono": "Práctico, orientado a ahorrar trabajo"
+}

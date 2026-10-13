@@ -1,0 +1,57 @@
+{
+  "tarea": "Crear un entorno de pruebas separado del real, poblado con datos falsos realistas, y las reglas para no mezclarlos nunca",
+  "contexto": {
+    "sistema": "[QUÉ QUIERO PODER PROBAR: WEB, TIENDA, AUTOMATIZACIÓN, BOT, CRM]",
+    "riesgos_actuales": "[QUÉ HE ROTO O CASI ROMPO PROBANDO EN REAL]",
+    "integraciones": "[PAGOS, CORREOS, WHATSAPP, HOJAS, CALENDARIO]",
+    "presupuesto": "[0 EUROS / HASTA X EUROS AL MES]"
+  },
+  "entradas": {
+    "volumen_real": "[CUÁNTOS CLIENTES, PEDIDOS O REGISTROS TENGO HOY]",
+    "datos_sensibles": "[QUÉ DATOS PERSONALES HAY: NOMBRES, CORREOS, TELÉFONOS, DIRECCIONES, PAGOS]",
+    "quien_prueba": "[YO SOLO / TAMBIÉN UN COLABORADOR O CLIENTE]"
+  },
+  "procedimiento": [
+    "1. Decide el alcance: qué partes necesitan copia de pruebas y cuáles se pueden simular con una pantalla falsa",
+    "2. Crea el entorno separado con nombres inequívocos: subdominio pruebas, proyecto aparte, color o banner distinto en pantalla para que se vea a simple vista dónde estás",
+    "3. Genera datos falsos realistas en vez de copiar los reales: nombres inventados, correos a un buzón de pruebas propio, teléfonos no asignables, direcciones ficticias",
+    "4. Si necesitas partir de datos reales, anonimízalos antes: sustituye nombre, correo, teléfono y dirección, y elimina cualquier dato de pago",
+    "5. Cubre los casos incómodos en los datos: nombres con tildes y ñ, apellidos compuestos, correos larguísimos, textos vacíos, importes de cero y de miles, fechas en cambio de mes",
+    "6. Desactiva o redirige todas las salidas al mundo exterior: correos a un buzón de captura, mensajes a tu propio número, pagos en modo prueba con las tarjetas de test del proveedor",
+    "7. Usa claves de API distintas en pruebas y en real, y nunca la misma cuenta de envío",
+    "8. Escribe el guion de comprobación: la lista de acciones que hay que probar antes de llevar un cambio al sistema real",
+    "9. Fija la caducidad: cada cuánto se borra y se regenera el entorno para que no acumule basura ni coste"
+  ],
+  "que_mirar": [
+    "El riesgo número uno es enviar correos o mensajes de prueba a personas reales",
+    "Copiar la base de datos real a pruebas convierte el entorno de pruebas en un problema legal si se filtra",
+    "Formularios de pruebas indexados por Google: bloquear la indexación y poner contraseña",
+    "Automatizaciones compartidas que siguen apuntando al sistema real",
+    "Coste del entorno duplicado: apagarlo cuando no se use"
+  ],
+  "errores_tipicos": [
+    "Probar con tu propio correo de negocio y ensuciar tu bandeja y tu reputación de envío",
+    "Dejar el entorno de pruebas abierto y sin contraseña",
+    "Usar la clave de pagos real en pruebas y generar cobros de verdad",
+    "Olvidar borrar los datos falsos del sistema real cuando se hicieron pruebas allí"
+  ],
+  "restricciones": [
+    "Ningún dato personal real sin anonimizar puede acabar en pruebas",
+    "Todo envío al exterior queda desactivado o redirigido por defecto",
+    "Solución con herramientas gratuitas siempre que sea posible"
+  ],
+  "formato_salida": {
+    "1_diseno": "qué se duplica, qué se simula y por qué",
+    "2_pasos_de_montaje": "instrucciones numeradas con clics o comandos exactos",
+    "3_juego_de_datos": "tabla con 15 registros falsos listos para importar, incluyendo casos raros",
+    "4_bloqueos_de_salida": "lista de integraciones con la configuración de prueba de cada una",
+    "5_guion_de_comprobacion": "checklist previo a llevar cambios al sistema real",
+    "6_mantenimiento": "cada cuánto se regenera y cómo se apaga para no pagar de más"
+  },
+  "criterios_calidad": [
+    "Es imposible confundir a simple vista pruebas y real",
+    "Ningún correo, mensaje o cobro de prueba puede llegar a una persona real",
+    "Los datos falsos incluyen los casos que suelen romper el sistema",
+    "El entorno se puede regenerar desde cero siguiendo el documento"
+  ]
+}

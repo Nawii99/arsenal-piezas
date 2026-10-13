@@ -1,0 +1,34 @@
+{
+  "tarea": "Construir una biblioteca de objeciones de venta con respuestas listas para usar",
+  "contexto": {
+    "sector": "[TU SECTOR]",
+    "oferta": "[QUÉ VENDES Y A QUÉ PRECIO]",
+    "cliente_ideal": "[A QUIÉN SE LO VENDES]",
+    "canal_de_venta": "[LLAMADA, VISITA, WHATSAPP, EMAIL, TIENDA]",
+    "objeciones_ya_oidas": "[LAS QUE YA TE HAN DICHO, SEPARADAS POR COMAS]"
+  },
+  "instrucciones": [
+    "Genera 12 objeciones: incluye las ya oídas y completa hasta 12 con las típicas del sector",
+    "Cúbrelas de las cuatro familias: precio, confianza, momento y necesidad",
+    "Para cada una, escribe el miedo real que hay detrás, no la frase literal",
+    "Respuesta corta de 2 o 3 frases, tal como se diría en voz alta",
+    "Añade una prueba concreta que la apoye (caso, garantía, dato, prueba gratuita)",
+    "Termina cada objeción con una pregunta que devuelva la conversación al cliente",
+    "Marca cada objeción como REAL (hay que resolverla) o CORTINA (suele esconder otra cosa)"
+  ],
+  "restricciones": [
+    "Nada de respuestas defensivas ni de discutir con el cliente",
+    "No prometas resultados ni cifras que no puedas demostrar",
+    "Español de España, tuteo, frases habladas"
+  ],
+  "formato_salida": {
+    "tipo": "tabla",
+    "columnas": ["familia", "objeción tal cual la dicen", "qué hay detrás", "real o cortina", "respuesta corta", "prueba que la apoya", "pregunta para seguir"],
+    "extra": "Debajo de la tabla, las 3 objeciones que más ventas te tiran abajo y qué cambiar en tu oferta o en tu web para que ni siquiera aparezcan"
+  },
+  "criterios_calidad": [
+    "Ninguna respuesta pasa de 45 palabras",
+    "Las 12 objeciones son distintas entre sí, no variantes de la misma",
+    "Un comercial nuevo podría usar la tabla el primer día sin más formación"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir el guion completo de un vídeo demostración de producto de 60 a 90 segundos, listo para grabar",
+  "contexto": {
+    "producto": "[NOMBRE DEL PRODUCTO Y QUÉ ES EN UNA FRASE]",
+    "cliente_ideal": "[A QUIÉN SE LO VENDES]",
+    "problema_principal": "[PROBLEMA QUE RESUELVE]",
+    "diferencia_clave": "[EN QUÉ ERES MEJOR QUE LA ALTERNATIVA]",
+    "precio_u_oferta": "[PRECIO O PROMOCIÓN ACTUAL]",
+    "donde_se_publica": "[WEB, YOUTUBE, FICHA DE PRODUCTO O ANUNCIO]"
+  },
+  "estructura_obligatoria": [
+    "0-3 s gancho: se ve el producto funcionando o el problema, sin logo ni intro",
+    "3-12 s problema concreto en una situación reconocible del cliente",
+    "12-45 s demostración real: tres momentos de uso, uno por beneficio, enseñando el resultado",
+    "45-60 s prueba: dato, garantía, reseña o comparación antes y después",
+    "60-90 s cierre con una sola llamada a la acción y el siguiente paso"
+  ],
+  "reglas_de_guion": [
+    "Frases de menos de 15 palabras que se leen en voz alta sin tropezar",
+    "Cada frase de voz en off va emparejada con lo que se ve en pantalla",
+    "Prohibidos los adjetivos vacíos: innovador, revolucionario, único",
+    "Un beneficio por plano; si no se puede enseñar, no entra en el guion"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown",
+    "columnas": ["Tiempo", "Qué se ve (plano)", "Voz en off", "Texto en pantalla", "Sonido"],
+    "extras": ["Lista del material que hay que grabar", "Tres ganchos alternativos", "Versión recortada de 15 segundos del mismo guion"]
+  },
+  "criterios_calidad": [
+    "Se entiende el producto sin sonido, solo con el texto en pantalla",
+    "La demostración ocupa más de la mitad del tiempo total",
+    "Hay una sola llamada a la acción y es concreta"
+  ],
+  "tono": "[CERCANO Y DIRECTO / TÉCNICO / DIVERTIDO]",
+  "idioma": "español de España"
+}

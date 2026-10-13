@@ -1,0 +1,40 @@
+{
+  "tarea": "Crear el diccionario de datos y las reglas de validación de una tabla para evitar que se vuelva a ensuciar",
+  "contexto": {
+    "tabla": "[NOMBRE DE LA TABLA O HOJA, EJ: CLIENTES]",
+    "quien_mete_datos": "[COMERCIALES, FORMULARIO WEB, IMPORTACIÓN AUTOMÁTICA, TÚ MISMO]",
+    "herramienta": "[EXCEL, GOOGLE SHEETS, AIRTABLE, NOTION, MYSQL, POSTGRES]",
+    "reglas_de_negocio": "[REGLAS QUE YA SABES, EJ: TODO CLIENTE DE EMPRESA NECESITA CIF]"
+  },
+  "entradas": {
+    "campos": "[LISTA DE COLUMNAS ACTUALES CON UN EJEMPLO DE VALOR CADA UNA]"
+  },
+  "para_cada_campo_define": [
+    "Nombre técnico en minúsculas y con guion bajo",
+    "Nombre en cristiano para el equipo",
+    "Para qué sirve y quién lo usa",
+    "Tipo de dato y formato exacto con un ejemplo bueno y otro malo",
+    "Obligatorio, opcional o condicional (y de qué depende)",
+    "Valores permitidos si es una lista cerrada",
+    "Regla de validación en lenguaje llano",
+    "Qué hacer si el valor llega vacío o mal"
+  ],
+  "añade_ademas": [
+    "Qué campo es la clave única y por qué",
+    "Tres controles automáticos recomendados para la herramienta indicada (validación de datos, lista desplegable, formato condicional o restricción)",
+    "Una rutina mensual de revisión en 5 pasos"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown más apartados finales",
+    "columnas": ["campo", "nombre_visible", "tipo", "obligatorio", "valores_permitidos", "ejemplo_bueno", "ejemplo_malo", "regla", "si_falla"]
+  },
+  "restricciones": [
+    "Nada de tecnicismos sin explicar",
+    "Máximo una regla por línea para que se pueda pegar en un manual interno",
+    "No propongas campos nuevos salvo que falte algo imprescindible, y entonces sepáralo en un apartado propuestas"
+  ],
+  "criterios_calidad": [
+    "Una persona nueva podría rellenar la tabla solo con este documento",
+    "Cada regla se puede comprobar sin programar"
+  ]
+}

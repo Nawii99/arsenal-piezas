@@ -1,0 +1,88 @@
+{
+  "tarea": "auditoria_huella_publica",
+  "rol": "Reclutador tecnico espanol con diez anos filtrando candidaturas junior en InfoJobs, LinkedIn y Tecnoempleo",
+  "idioma_salida": "espanol de Espana, tuteando, frases cortas",
+  "candidato": {
+    "nombre": "[TU NOMBRE Y APELLIDOS]",
+    "puesto_objetivo": "[PUESTO EXACTO AL QUE APUNTAS]",
+    "experiencia_en_tecnologia": "[NINGUNA / MENOS DE 1 ANO / 1-2 ANOS]",
+    "ciudad": "[CIUDAD]",
+    "modalidad": "[PRESENCIAL / HIBRIDO / REMOTO]",
+    "disponibilidad": "[INMEDIATA / 15 DIAS / FECHA]"
+  },
+  "material": {
+    "linkedin": {
+      "titular": "[PEGA TU TITULAR TAL CUAL]",
+      "acerca_de": "[PEGA TU ACERCA DE TAL CUAL]",
+      "experiencia": "[PEGA LOS PUESTOS CON SUS DESCRIPCIONES]",
+      "formacion": "[CURSOS, FP, CERTIFICADOS, CON FECHAS]",
+      "foto": "[DESCRIBELA: FONDO, ROPA, ENCUADRE, O ESCRIBE NO TENGO]",
+      "url_personalizada": "[SI Y CUAL / NO]",
+      "recomendaciones": "[CUANTAS Y DE QUIEN]"
+    },
+    "github": {
+      "usuario": "[USUARIO]",
+      "tiene_readme_de_perfil": "[SI / NO]",
+      "repositorios": [
+        {
+          "nombre": "[REPO 1]",
+          "que_hace": "[UNA FRASE]",
+          "origen": "[PROPIO / CURSO GUIADO / FORK]",
+          "tiene_readme": "[SI / NO]",
+          "tiene_captura": "[SI / NO]",
+          "ultimo_commit": "[MES Y ANO]"
+        },
+        {
+          "nombre": "[REPO 2]",
+          "que_hace": "[UNA FRASE]",
+          "origen": "[PROPIO / CURSO GUIADO / FORK]",
+          "tiene_readme": "[SI / NO]",
+          "tiene_captura": "[SI / NO]",
+          "ultimo_commit": "[MES Y ANO]"
+        }
+      ],
+      "actividad_ultimos_90_dias": "[NADA / POCA / SEMANAL]"
+    },
+    "resto_de_internet": {
+      "portfolio": "[URL O NINGUNO]",
+      "otras_redes_publicas": "[X, INSTAGRAM, TIKTOK, FOROS... O NINGUNA]",
+      "buscar_mi_nombre_en_google": "[QUE SALE EN LOS 10 PRIMEROS RESULTADOS]",
+      "correo_que_uso_para_postular": "[CORREO]"
+    }
+  },
+  "criterios": {
+    "escala": "0 a 10",
+    "bloques": [
+      { "id": "primer_vistazo", "pregunta": "En seis segundos se entiende que puesto busca y que sabe hacer", "peso": 3 },
+      { "id": "prueba", "pregunta": "Hay algo clicable que demuestre lo que dice el perfil", "peso": 3 },
+      { "id": "coherencia", "pregunta": "LinkedIn y GitHub cuentan la misma historia o se contradicen", "peso": 2 },
+      { "id": "higiene", "pregunta": "Foto, URL, faltas de ortografia, correo, actividad reciente, contacto", "peso": 1 },
+      { "id": "riesgo", "pregunta": "Que hay publico que le puede costar la entrevista o el puesto", "peso": 1 }
+    ]
+  },
+  "reglas": {
+    "obligatorio": [
+      "Senalar cada incoherencia entre lo que promete LinkedIn y lo que sostiene GitHub",
+      "Marcar todo lo que no podria defender en una entrevista de 30 minutos",
+      "Decir cuando el problema no se arregla escribiendo, sino haciendo un proyecto"
+    ],
+    "prohibido": [
+      "Prometer entrevistas o puestos",
+      "Inventar datos que el candidato no ha dado",
+      "Usar palabras en ingles evitables como resume, skills, cover letter o job",
+      "Adornar el resultado para que se sienta mejor"
+    ]
+  },
+  "formato_salida": {
+    "tipo": "markdown",
+    "limite_palabras": 900,
+    "secciones": [
+      { "titulo": "Nota global", "contenido": "Puntuacion sobre 10 y una sola frase explicando por que" },
+      { "titulo": "Bloque por bloque", "contenido": "Tabla con: bloque, nota, que falla, que hacer" },
+      { "titulo": "Los cinco arreglos de hoy", "contenido": "Ordenados por impacto. Cada uno con el texto ya escrito para copiar y pegar" },
+      { "titulo": "Lo que te van a preguntar", "contenido": "Tres preguntas de entrevista que salen directamente de lo que has publicado" },
+      { "titulo": "Banderas rojas", "contenido": "Lo publico que te puede costar el puesto, incluido lo que hay fuera de LinkedIn" },
+      { "titulo": "Para el mes que viene", "contenido": "Maximo tres cosas, las que necesitan trabajo real y no solo redaccion" }
+    ]
+  }
+}

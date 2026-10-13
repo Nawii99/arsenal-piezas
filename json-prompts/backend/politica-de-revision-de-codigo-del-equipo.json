@@ -1,0 +1,36 @@
+{
+  "tarea": "Redactar la política de revisión de código de un equipo pequeño, con reglas aplicables desde mañana",
+  "contexto": {
+    "equipo": "[NÚMERO DE PERSONAS Y NIVELES]",
+    "herramientas": "[GITHUB, GITLAB, BITBUCKET U OTRA; LINTER Y PRUEBAS QUE YA USÁIS]",
+    "ritmo": "[CADA CUÁNTO ENTREGÁIS]",
+    "problemas_actuales": "[PR ETERNOS, APROBACIONES SIN MIRAR, PELEAS DE ESTILO, CUELLOS DE BOTELLA]"
+  },
+  "debe_definir": [
+    "Qué se revisa siempre y qué se puede saltar",
+    "Tamaño máximo recomendable de un pull request y cómo partirlo",
+    "Plazo máximo para dar la primera respuesta",
+    "Quién revisa qué y qué pasa si no hay nadie disponible",
+    "Qué bloquea la fusión y qué es solo sugerencia",
+    "Qué debe automatizarse (formato, linter, pruebas) para no discutirlo en la revisión",
+    "Cómo se escriben los comentarios y cómo se resuelven los desacuerdos",
+    "Qué se hace con la deuda técnica detectada durante la revisión"
+  ],
+  "restricciones": [
+    "Reglas verificables: nada de buenas intenciones tipo escribir código limpio",
+    "Como mucho 12 reglas en total",
+    "Debe funcionar aunque solo haya dos personas en el equipo",
+    "Incluye qué hacer cuando hay una urgencia real en producción"
+  ],
+  "formato_salida": {
+    "tipo": "documento markdown para el repositorio",
+    "secciones": ["Objetivo", "Reglas numeradas", "Checklist del autor antes de pedir revisión", "Checklist del revisor", "Cómo comentar (con ejemplos de buen y mal comentario)", "Excepciones y urgencias", "Cómo revisaremos esta política"],
+    "extra": "Plantilla de descripción de pull request lista para copiar"
+  },
+  "tono": "Claro y breve, en segunda persona, sin sermones",
+  "criterios_calidad": [
+    "Cada regla se puede cumplir o incumplir de forma observable",
+    "El documento se lee en menos de cinco minutos",
+    "Nada de reglas que la automatización ya puede resolver"
+  ]
+}

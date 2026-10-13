@@ -1,0 +1,34 @@
+{
+  "tarea": "Diseñar la estrategia de solicitud del permiso de notificaciones (pre-permiso, momento y recuperación)",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "plataformas": "[IOS, ANDROID O AMBAS]",
+    "valor_de_los_avisos": "[QUÉ GANA EL USUARIO SI ACEPTA, EN CONCRETO]",
+    "momento_actual_de_peticion": "[EN QUÉ PANTALLA LO PIDES HOY]",
+    "aceptacion_actual": "[PORCENTAJE APROXIMADO O: no lo sé]"
+  },
+  "instrucciones": [
+    "Propón 3 momentos alternativos para pedir el permiso, siempre después de que el usuario haya recibido valor, y ordénalos de mejor a peor",
+    "Escribe la pantalla de pre-permiso: titular, dos líneas de beneficio concreto, botón de aceptar y botón de ahora no",
+    "Explica por qué el pre-permiso protege el permiso real del sistema, que solo se puede pedir una vez",
+    "Define el plan para quien pulsa ahora no: cuándo volver a intentarlo y con qué mensaje",
+    "Define el plan para quien lo deniega en el sistema: cómo llevarle a los ajustes del móvil y con qué excusa útil",
+    "Indica qué avisos ofrecer por categorías si la app tiene varios tipos de contenido"
+  ],
+  "errores_a_evitar": [
+    "Pedir el permiso en el primer segundo de la primera sesión",
+    "Prometer avisos que luego no se envían o que son solo publicidad",
+    "Bloquear el uso de la app hasta que acepte",
+    "Repetir la petición en cada apertura"
+  ],
+  "formato_salida": {
+    "secciones": ["Momento recomendado y por qué", "Texto de la pantalla de pre-permiso", "Plan para el ahora no", "Plan para el permiso denegado", "Categorías de aviso a ofrecer", "Qué medir"],
+    "estilo": "Frases cortas, listo para copiar en la app"
+  },
+  "criterios_calidad": [
+    "El beneficio del aviso está dicho en lenguaje del usuario, no en lenguaje de producto",
+    "El permiso del sistema solo se pide a quien ya ha dicho que sí en la pantalla previa",
+    "Hay una salida digna para quien no quiere avisos",
+    "Se indica la métrica a vigilar: aceptación y bajas posteriores"
+  ]
+}

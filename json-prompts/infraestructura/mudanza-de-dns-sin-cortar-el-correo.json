@@ -1,0 +1,59 @@
+{
+  "tarea": "Prepara un plan de mudanza de DNS o de dominio con orden exacto, tiempos de espera y comprobaciones, de forma que la web y el correo no se corten",
+  "contexto": {
+    "situacion": "[QUÉ MUEVO: hosting nuevo, registrador nuevo, dominio apuntando a otra plataforma, subdominio nuevo]",
+    "origen": "[DÓNDE ESTÁ HOY EL DOMINIO Y LA WEB]",
+    "destino": "[A DÓNDE VA]",
+    "correo": "[QUIÉN GESTIONA EL CORREO DEL DOMINIO: Google Workspace, Microsoft 365, el propio hosting, ninguno]",
+    "servicios_colgando_del_dominio": "[TIENDA, CALENDARIO DE CITAS, HERRAMIENTA DE EMAILS, VERIFICACIONES DE TERCEROS]",
+    "perfil": "no soy técnico: dime dónde hago clic y qué escribo exactamente en cada casilla"
+  },
+  "entradas": {
+    "registros_actuales": "[PEGA AQUÍ LA LISTA DE REGISTROS DNS ACTUALES O UNA CAPTURA DESCRITA]",
+    "fecha_objetivo": "[CUÁNDO QUIERO HACER EL CAMBIO]",
+    "horario_de_menos_movimiento": "[DÍA Y HORA CON MENOS CLIENTES]"
+  },
+  "pasos": [
+    "1. Copia literal de todos los registros actuales a un documento antes de tocar nada: A, AAAA, CNAME, MX, TXT, SRV, CAA",
+    "2. Identifica cuáles son de correo (MX y los TXT de SPF, DKIM y DMARC) y cuáles de verificación de terceros: esos se copian tal cual, no se inventan",
+    "3. Baja el TTL a 300 segundos entre 24 y 48 horas antes del cambio para que la vuelta atrás sea rápida",
+    "4. Prepara el destino y compruébalo por una URL temporal antes de mover el dominio",
+    "5. Haz el cambio en la ventana de menos movimiento y solo los registros necesarios",
+    "6. Comprueba propagación desde varias zonas y desde el móvil con datos móviles, no solo desde tu ordenador",
+    "7. Envía y recibe un correo de prueba en las dos direcciones y comprueba que no llega a spam",
+    "8. Deja el hosting antiguo activo entre siete y catorce días antes de cancelarlo",
+    "9. Cuando todo esté estable, sube el TTL otra vez a un valor normal"
+  ],
+  "que_mirar": [
+    "que el panel nuevo no cree por su cuenta registros MX propios y borre los de tu correo",
+    "que el certificado HTTPS se emita en el destino y la web no salga con aviso de 'no seguro'",
+    "que el dominio con www y sin www lleven al mismo sitio",
+    "que la renovación automática del dominio siga activa y con una tarjeta válida",
+    "si cambias de registrador, el código de autorización y el bloqueo de sesenta días posterior al traslado"
+  ],
+  "errores_tipicos": [
+    "cambiar los servidores de nombres sin haber copiado antes los registros de correo",
+    "tener dos registros SPF en el mismo dominio, lo que rompe la entrega",
+    "cancelar el hosting viejo el mismo día",
+    "probar solo desde tu navegador, que tiene la versión antigua en caché",
+    "hacer la mudanza un viernes por la tarde"
+  ],
+  "restricciones": [
+    "no propongas borrar ningún registro que no sepas identificar",
+    "cada paso debe tener su forma de deshacerlo",
+    "nada de tocar el correo y la web a la vez si se pueden separar en dos días"
+  ],
+  "formato_salida": {
+    "1_tabla_antes_despues": "tipo | nombre | valor actual | valor nuevo | quién lo usa | se toca sí/no",
+    "2_cronograma": "tareas por franjas: 48 h antes, día del cambio, 2 h después, 7 días después",
+    "3_comprobaciones": "lista de pruebas con el resultado esperado de cada una",
+    "4_plan_de_vuelta_atras": "qué valores restaurar y cuánto tarda en surtir efecto",
+    "5_avisos_a_clientes": "mensaje corto por si hay corte, en español llano"
+  },
+  "criterios_calidad": [
+    "ningún registro del listado original queda sin decisión",
+    "el correo se prueba en los dos sentidos antes de dar por buena la mudanza",
+    "existe un momento concreto en el que puedo cancelar el proveedor viejo, con fecha",
+    "puedo ejecutar el plan solo, sin llamar a un técnico"
+  ]
+}

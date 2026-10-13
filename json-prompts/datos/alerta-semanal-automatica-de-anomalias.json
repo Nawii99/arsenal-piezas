@@ -1,0 +1,34 @@
+{
+  "tarea": "Diseñar un aviso periódico que detecte desviaciones en las métricas del negocio y las comunique en un mensaje corto",
+  "entradas": {
+    "metricas_vigiladas": "[EJ: FACTURACIÓN DIARIA, PEDIDOS, TICKET MEDIO, DEVOLUCIONES, ALTAS DE CLIENTES]",
+    "esquema": "[TABLAS Y COLUMNAS DISPONIBLES]",
+    "motor": "[MySQL | PostgreSQL | SQL Server | BigQuery]",
+    "frecuencia": "[DIARIA | SEMANAL LOS LUNES | MENSUAL]",
+    "canal_aviso": "[EMAIL | WHATSAPP | SLACK | PANEL]",
+    "umbral_personal": "[QUÉ VARIACIÓN TE PARECE PREOCUPANTE, EJ: CAÍDA MAYOR DEL 20 POR CIENTO]"
+  },
+  "reglas_de_deteccion": [
+    "Comparar el periodo contra la media de las 4 semanas anteriores del mismo día de la semana",
+    "Avisar solo si la desviación supera el umbral y el volumen mínimo para ser fiable",
+    "Distinguir caída real de día festivo, cierre o campaña puntual conocida",
+    "Ignorar métricas con menos de [NÚMERO] registros en el periodo",
+    "No repetir la misma alerta más de dos semanas seguidas sin cambiar el mensaje"
+  ],
+  "formato_salida": {
+    "consulta_alerta": "SQL comentado que devuelve una fila por métrica desviada, con valor actual, valor esperado y desviación",
+    "mensaje_tipo": "Plantilla del aviso: un titular, hasta 3 líneas de métricas afectadas y una pregunta concreta a revisar",
+    "ejemplo_real": "Cómo se vería el mensaje un lunes con dos alertas activas",
+    "como_automatizarlo": "Pasos sin programar, con la opción de tarea programada, Metabase, Looker Studio o Make o Zapier",
+    "que_hacer_con_cada_alerta": "Tabla: alerta, primera comprobación, responsable, plazo"
+  },
+  "restricciones": [
+    "El mensaje cabe en una pantalla de móvil",
+    "Si no hay nada raro, el aviso lo dice en una línea y no rellena",
+    "Prohibido alarmar con porcentajes sobre cifras minúsculas"
+  ],
+  "criterios_calidad": [
+    "Cada alerta indica qué mirar primero, no solo que algo ha bajado",
+    "En cuatro semanas de uso no debería haber más de dos falsas alarmas por semana"
+  ]
+}

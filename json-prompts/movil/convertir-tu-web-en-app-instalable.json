@@ -1,0 +1,48 @@
+{
+  "tarea": "Convertir una web existente en una aplicación instalable en el móvil, definiendo qué archivos hacen falta, qué debe funcionar sin conexión y cómo probar la instalación",
+  "contexto": {
+    "web": "[DIRECCIÓN ACTUAL]",
+    "tecnologia": "[HTML SUELTO / WORDPRESS / SHOPIFY / OTRA]",
+    "para_que_la_usan": "[CONSULTAR, RESERVAR, COMPRAR, FICHAR, VER CATÁLOGO]",
+    "pantallas_clave": "[LAS 3 PANTALLAS QUE MÁS SE USAN]",
+    "necesita_offline": "[QUÉ DEBE VERSE SIN CONEXIÓN, SI ALGO]",
+    "colores_y_logo": "[COLOR PRINCIPAL Y ARCHIVO DEL LOGOTIPO]"
+  },
+  "piezas_necesarias": [
+    "Manifiesto con nombre, nombre corto, icono, color de fondo, color de barra y modo de apertura",
+    "Iconos exportados en los tamaños que piden los sistemas, incluido uno cuadrado grande y uno adaptable",
+    "Trabajador de servicio que guarde una copia de lo esencial para abrir sin conexión",
+    "Certificado seguro activo, porque sin https no se instala",
+    "Pantalla de aviso propia cuando no hay conexión, con lo que sí puede hacer",
+    "Mensaje o botón que invite a instalar, distinto en Android y en iPhone"
+  ],
+  "metodo": [
+    "1. Decidir qué parte de la web tiene sentido como app: si solo se lee una vez, no compensa",
+    "2. Preparar el logotipo en cuadrado con margen y exportar los tamaños",
+    "3. Escribir el manifiesto y enlazarlo desde todas las páginas",
+    "4. Definir la lista de archivos que se guardan para el modo sin conexión y el resto se pide a la red",
+    "5. Probar la instalación en Android desde el menú del navegador y en iPhone con la opción de añadir a pantalla de inicio",
+    "6. Comprobar que al abrir desde el icono no se ve la barra del navegador y que la pantalla de carga usa tus colores",
+    "7. Escribir las instrucciones de instalación para tus clientes, con capturas, una por sistema"
+  ],
+  "limites_a_avisar": [
+    "En iPhone el aviso de instalación no aparece solo: hay que explicarlo al usuario",
+    "Las notificaciones push funcionan distinto en cada sistema y requieren que el usuario la instale primero",
+    "No aparece en App Store ni en Google Play: la difusión depende de tus canales",
+    "El almacenamiento del navegador se puede borrar: no guardes ahí nada crítico"
+  ],
+  "formato_salida": {
+    "lista_de_archivos": "Qué archivo, dónde va y para qué sirve",
+    "codigo": "Manifiesto y registro del trabajador de servicio listos para pegar, con los huecos marcados",
+    "iconos": "Tabla de tamaños a exportar y nombre de cada archivo",
+    "prueba": "10 pasos de comprobación en Android y en iPhone, con lo que debe verse en cada uno",
+    "instrucciones_cliente": "Texto corto para enviar por WhatsApp explicando cómo instalarla, uno para cada sistema",
+    "cuando_no_hacerlo": "Señales de que te conviene una app nativa en su lugar"
+  },
+  "criterios_calidad": [
+    "Al abrir desde el icono no se ve ninguna barra de navegador",
+    "El icono se ve nítido y no recortado en la pantalla de inicio",
+    "Sin conexión se ve una pantalla propia y no el error del navegador",
+    "Un cliente sin conocimientos la instala siguiendo tus instrucciones sin preguntarte"
+  ]
+}

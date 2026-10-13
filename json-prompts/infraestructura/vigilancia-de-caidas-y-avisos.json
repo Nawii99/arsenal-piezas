@@ -1,0 +1,47 @@
+{
+  "tarea": "Definir qué vigilar, con qué frecuencia y a quién avisar cuando algo deja de funcionar",
+  "contexto": {
+    "servicios": "[WEB, TIENDA, LANDING, API, BOT DE WHATSAPP, AUTOMATIZACIÓN...]",
+    "horario_critico": "[FRANJA EN LA QUE UNA CAÍDA DUELE DE VERDAD]",
+    "quien_recibe_el_aviso": "[TÚ / SOCIO / PROVEEDOR EXTERNO]",
+    "presupuesto": "prioriza planes gratuitos",
+    "perfil_usuario": "sin perfil técnico; nombra herramientas concretas y qué se rellena en cada campo"
+  },
+  "entradas": {
+    "urls": "[LISTA DE DIRECCIONES A VIGILAR]",
+    "que_significa_ok": "[QUÉ TEXTO O RESPUESTA APARECE CUANDO TODO VA BIEN]"
+  },
+  "pasos": [
+    "1. Distingue tres niveles: está viva la página, funciona lo que da dinero, y está fresco el dato (una tarea que debería haber corrido).",
+    "2. Para cada servicio define la señal de vida concreta: código 200 más una palabra que debe aparecer en la página.",
+    "3. Añade una comprobación del camino de dinero: ficha de producto, botón de compra o formulario de contacto.",
+    "4. Fija frecuencia y umbral: avisa tras dos fallos seguidos, no al primero, para no vivir de falsas alarmas.",
+    "5. Configura canal de aviso por gravedad: móvil para lo crítico, correo para lo menor.",
+    "6. Añade vigilancia de caducidades: certificado SSL y dominio, con aviso 30 días antes.",
+    "7. Escribe qué hacer al recibir cada aviso, en tres pasos, y a quién escalar si no se arregla en una hora.",
+    "8. Provoca una caída a propósito para comprobar que el aviso llega de verdad."
+  ],
+  "restricciones": [
+    "Máximo [NÚMERO] avisos al día: si llegan más, el umbral está mal puesto.",
+    "No vigilar páginas que cambian solas y disparan falsos positivos.",
+    "Nada que requiera instalar agentes en un servidor."
+  ],
+  "errores_tipicos": [
+    "Vigilar solo la portada mientras el carrito o el formulario están rotos.",
+    "Dar por buena una página que carga con un error dentro y devuelve 200.",
+    "Avisos solo por correo, que se leen al día siguiente.",
+    "Silenciar el canal de avisos por ruido y no volver a activarlo.",
+    "No comprobar nunca que el sistema de avisos sigue funcionando."
+  ],
+  "formato_salida": {
+    "tabla_vigilancia": "columnas: servicio | qué se comprueba | cada cuánto | qué es fallo | canal de aviso | quién responde",
+    "configuracion": "pasos de alta en la herramienta elegida, campo por campo",
+    "guia_de_respuesta": "para cada tipo de aviso, tres acciones en orden",
+    "prueba": "cómo simular la caída y qué deberías recibir"
+  },
+  "criterios_calidad": [
+    "Al menos una comprobación cubre el paso que genera ingresos.",
+    "Cada aviso tiene dueño y acción, no solo una notificación.",
+    "El plan cabe en el presupuesto indicado."
+  ]
+}

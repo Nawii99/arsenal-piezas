@@ -1,0 +1,34 @@
+{
+  "tarea": "Analizar los datos de una edición de curso y proponer cambios concretos en el temario para la siguiente edición",
+  "entradas": {
+    "temario_actual": "[PEGA EL TEMARIO DE LA EDICIÓN QUE ACABA]",
+    "comentarios_alumnos": "[PEGA LOS COMENTARIOS Y RESPUESTAS DE ENCUESTA TAL CUAL]",
+    "datos_de_avance": "[PORCENTAJE DE FINALIZACIÓN, LECCIONES MENOS VISTAS, ENTREGAS NO HECHAS]",
+    "dudas_repetidas": "[LAS PREGUNTAS QUE MÁS TE HAN HECHO]",
+    "notas": "[RESULTADOS DE EVALUACIÓN SI LOS HAY]"
+  },
+  "analisis": [
+    "Clasifica cada comentario en: contenido, ritmo, formato, plataforma, formador o expectativas mal puestas antes de comprar",
+    "Separa lo que es problema del curso de lo que es problema de a quién se le vendió",
+    "Cruza las dudas repetidas con el temario: una duda repetida señala una lección incompleta o mal colocada",
+    "Cruza las lecciones menos vistas con su posición: distingue abandono general de rechazo a esa lección concreta",
+    "Ignora los comentarios aislados que contradicen a la mayoría, pero anótalos aparte"
+  ],
+  "formato_salida": {
+    "1_resumen": "5 conclusiones en una frase cada una, ordenadas por número de alumnos afectados",
+    "2_tabla": "Problema | Evidencia que lo sustenta | Módulo afectado | Cambio propuesto | Esfuerzo (bajo/medio/alto)",
+    "3_no_tocar": "Qué funciona bien y no hay que cambiar, con la evidencia",
+    "4_plan": "Los 5 cambios para la próxima edición ordenados por impacto entre esfuerzo",
+    "5_venta": "Qué corregir en la página de ventas para evitar alumnos con expectativas equivocadas",
+    "6_medicion": "Qué medir en la próxima edición para saber si el cambio ha funcionado"
+  },
+  "restricciones": [
+    "Cada cambio propuesto debe apoyarse en una evidencia citada de las entradas",
+    "No inventes datos que no estén en el material aportado",
+    "Si la información es insuficiente para concluir algo, dilo"
+  ],
+  "criterios_calidad": [
+    "Se distingue con claridad opinión suelta de patrón repetido",
+    "El plan cabe en una edición, no son 30 cambios"
+  ]
+}

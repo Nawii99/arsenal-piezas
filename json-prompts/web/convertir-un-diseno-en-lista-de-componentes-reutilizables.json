@@ -1,0 +1,32 @@
+{
+  "tarea": "Descomponer un diseno de web en componentes reutilizables y devolver el inventario ordenado para construirlo",
+  "entradas": {
+    "diseno": "[ADJUNTA CAPTURA, PEGA LA URL DE REFERENCIA O DESCRIBE LA PAGINA]",
+    "paginas_previstas": ["[PAGINA 1]", "[PAGINA 2]", "[PAGINA 3]"],
+    "quien_lo_monta": "[YO CON IA / UN PROGRAMADOR / UNA AGENCIA]"
+  },
+  "instrucciones": [
+    "Separa en tres niveles: piezas basicas (boton, campo, etiqueta), bloques (tarjeta, formulario, menu) y secciones de pagina (hero, listado, pie)",
+    "Detecta lo que se repite aunque cambie de color o de tamano: eso es una variante, no un componente nuevo",
+    "Para cada componente define nombre en espanol, para que sirve, sus variantes, sus estados y sus datos configurables",
+    "Marca que componente aparece en que pagina para ver cual se amortiza antes",
+    "Senala solapamientos: dos cosas que hacen lo mismo y deberian unificarse",
+    "Ordena la construccion: primero lo que usa todo el mundo, luego lo especifico de una sola pagina"
+  ],
+  "restricciones": [
+    "Maximo 15 componentes: si salen mas, es que estas troceando demasiado",
+    "Nombres cortos, sin ingles innecesario y sin numeros",
+    "No escribas codigo todavia: esto es el plan"
+  ],
+  "formato_salida": {
+    "1_tabla_inventario": "tabla con componente, nivel, variantes, estados, paginas donde aparece y dificultad (baja/media/alta)",
+    "2_orden_de_construccion": "lista numerada con el motivo de cada posicion",
+    "3_avisos": "lo que se repite, lo que sobra y lo que falta en el diseno",
+    "4_siguiente_paso": "la frase exacta para pedir el codigo del primer componente"
+  },
+  "criterios_calidad": [
+    "Cualquiera puede leer la tabla y entender que hay que construir",
+    "Ningun componente aparece dos veces con nombres distintos",
+    "El orden permite ver algo funcionando pronto"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Disenar un plan de pruebas creativas de 30 dias para anuncios de pago, con matriz de angulos por formatos y reglas de corte",
+  "contexto": {
+    "producto": "[PRODUCTO O SERVICIO]",
+    "plataforma": "[META | TIKTOK | AMBAS]",
+    "angulos_ya_probados": "[QUE HAS PROBADO Y QUE TAL FUE]",
+    "formatos_que_puedes_producir": "[VIDEO MOVIL | UGC | FOTO DE PRODUCTO | CARRUSEL | TESTIMONIO | TEXTO SOBRE FONDO]",
+    "presupuesto_test_dia_eur": "[PRESUPUESTO DIARIO PARA PRUEBAS]",
+    "cpa_objetivo_eur": "[LO MAXIMO QUE PUEDES PAGAR POR VENTA O LEAD]",
+    "capacidad_produccion_semanal": "[CUANTAS CREATIVIDADES NUEVAS PUEDES HACER POR SEMANA]"
+  },
+  "instrucciones": [
+    "Propon 6 angulos de venta distintos (problema, ahorro, tiempo, estatus, miedo a equivocarse, prueba social, comparativa) adaptados al producto",
+    "Cruza angulos y formatos en una matriz y marca solo las casillas que merece la pena producir con la capacidad indicada",
+    "Ordena las pruebas por coste de produccion y probabilidad de acierto: primero lo barato y prometedor",
+    "Define el presupuesto y los dias minimos por creatividad para que el dato sea fiable, usando como referencia gastar al menos entre una y dos veces el CPA objetivo antes de juzgar",
+    "Establece reglas de corte por fases: primero por CTR y coste por clic, despues por coste por evento intermedio, y solo al final por CPA",
+    "Indica que hacer con la ganadora: iteraciones que conviene hacer (mismo gancho otro cuerpo, mismo cuerpo otro gancho, otro formato)"
+  ],
+  "restricciones": [
+    "No probar mas de una variable por creatividad",
+    "No apagar una creatividad antes de alcanzar el gasto minimo definido",
+    "No mezclar el presupuesto de pruebas con el de las campanas que ya funcionan"
+  ],
+  "formato_salida": {
+    "1_matriz": "Tabla angulos en filas y formatos en columnas, con SI o NO en cada casilla",
+    "2_calendario": "4 semanas con las creatividades a lanzar cada semana y su presupuesto",
+    "3_reglas_de_corte": "Tabla: fase | metrica | umbral | decision",
+    "4_plantilla_nombres": "Nomenclatura para nombrar las creatividades y poder analizarlas despues",
+    "5_hoja_de_seguimiento": "Columnas que debe tener tu hoja de calculo para registrar resultados"
+  },
+  "criterios_calidad": [
+    "El numero de pruebas encaja con el presupuesto y con la capacidad de produccion indicados",
+    "Cada regla de corte tiene un numero y un plazo",
+    "La nomenclatura permite saber angulo, formato y version de un vistazo"
+  ]
+}

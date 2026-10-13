@@ -1,0 +1,55 @@
+{
+  "tarea": "Auditar un texto generado con IA para detectar afirmaciones inventadas, desactualizadas o no comprobables, y devolver una version segura.",
+  "contexto": {
+    "quien_lo_usa": "Persona que publica textos escritos con IA en su web, sus redes o sus propuestas a clientes.",
+    "momento": "El texto esta escrito y gusta, pero todavia no se ha publicado ni enviado.",
+    "riesgo": "Las IA rellenan huecos con datos verosimiles pero falsos: cifras, estudios, articulos de ley, enlaces y citas."
+  },
+  "entradas": {
+    "texto": "[PEGA AQUI EL TEXTO COMPLETO]",
+    "donde_se_publica": "[WEB, LINKEDIN, PROPUESTA A CLIENTE, EMAIL, FOLLETO]",
+    "sector": "[SECTOR O TEMA]",
+    "datos_que_si_son_ciertos": "[DATOS PROPIOS QUE TU PUEDES CONFIRMAR: PRECIOS, AÑOS, CLIENTES]",
+    "nivel_de_riesgo": "[ALTO SI HAY SALUD, DINERO, LEYES O SEGURIDAD; NORMAL EN EL RESTO]"
+  },
+  "pasos": [
+    "1. Trocea el texto en afirmaciones sueltas y descarta las opiniones: solo se audita lo que se puede comprobar.",
+    "2. Etiqueta cada afirmacion por tipo: cifra, porcentaje, fecha, nombre propio, cita textual, norma legal, precio, enlace, premio o certificacion.",
+    "3. Clasifica cada una en verde comprobable con fuente conocida, ambar plausible sin fuente, rojo probablemente inventado.",
+    "4. Marca en rojo automatico: estudios sin autor ni año, expresiones del tipo segun un estudio reciente, porcentajes redondos sospechosos y enlaces que no puedas ver.",
+    "5. Para cada ambar y rojo, propone tres salidas: quitar la frase, suavizarla sin dato, o sustituirla por un dato propio real.",
+    "6. Reescribe el texto completo aplicando la opcion mas conservadora en lo rojo.",
+    "7. Deja una lista corta de deberes: que dos o tres datos merece la pena buscar de verdad porque suman mucho."
+  ],
+  "que_mirar": [
+    "Cifras con decimales que aparentan precision, como el 73,4 por ciento de las empresas.",
+    "Nombres de expertos, libros o informes que suenan reales pero no se pueden localizar.",
+    "Referencias a leyes o plazos que pueden haber cambiado.",
+    "Superlativos comerciales que en publicidad son problematicos: el mejor, el unico, garantizado.",
+    "Afirmaciones de resultados de clientes sin caso real detras.",
+    "Enlaces inventados o que apuntan a la portada en vez de a la fuente."
+  ],
+  "errores_tipicos": [
+    "Preguntar a la misma IA si el dato es cierto y aceptar su si por respuesta.",
+    "Dejar el dato porque suena bien y nadie lo va a comprobar.",
+    "Quitar las cifras y dejar el texto vacio de contenido en lugar de sustituirlas por lo propio.",
+    "Confundir opinion con dato y perder tiempo auditando frases que no lo necesitan."
+  ],
+  "restricciones": [
+    "No inventes fuentes para tapar el hueco: si no hay fuente, la frase se cae.",
+    "No cambies el tono ni la estructura del texto original mas de lo necesario.",
+    "Marca claramente lo que solo puede confirmar la persona porque son datos suyos."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla con columnas: Afirmacion | Tipo | Semaforo | Por que | Que hacer.",
+    "bloque_2": "Texto reescrito y seguro, listo para publicar.",
+    "bloque_3": "Lista de dos o tres datos que vale la pena buscar en fuentes oficiales, indicando donde buscarlos.",
+    "bloque_4": "Aviso final con el riesgo residual en una linea."
+  },
+  "criterios_calidad": [
+    "Ninguna afirmacion en rojo sobrevive en el texto reescrito.",
+    "El texto reescrito sigue teniendo sentido comercial y no queda descafeinado.",
+    "Cada semaforo lleva su motivo en una frase.",
+    "Se distingue lo que es falso de lo que simplemente no esta comprobado."
+  ]
+}

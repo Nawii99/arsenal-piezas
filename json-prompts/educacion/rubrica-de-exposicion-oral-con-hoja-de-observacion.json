@@ -1,0 +1,36 @@
+{
+  "tarea": "Disenar una rubrica de evaluacion de exposicion oral y su hoja de observacion para puntuar en directo",
+  "contexto": {
+    "tipo_de_exposicion": "[PRESENTACION DE PROYECTO, DEFENSA, PITCH, EXPOSICION DE TEMA]",
+    "duracion": "[MINUTOS DE EXPOSICION Y DE PREGUNTAS]",
+    "individual_o_grupo": "[INDIVIDUAL O GRUPO DE X PERSONAS]",
+    "nivel_del_alumnado": "[NIVEL]",
+    "hay_soporte_visual": "[SI O NO]"
+  },
+  "criterios_obligatorios": ["contenido y dominio del tema", "estructura y claridad", "comunicacion no verbal y voz", "gestion del tiempo", "respuesta a preguntas"],
+  "criterios_extra_del_profesor": "[ANADE LOS TUYOS O ESCRIBE NINGUNO]",
+  "metodo": [
+    "Escala de 4 niveles con descriptores observables en directo, sin necesidad de revisar la grabacion",
+    "Cada descriptor debe poder marcarse en menos de 10 segundos",
+    "Incluye indicadores contables cuando se pueda: muletillas por minuto, segundos de desviacion sobre el tiempo",
+    "Diferencia lo que evalua al grupo de lo que evalua a cada persona si la exposicion es colectiva",
+    "Prevé como puntuar si alguien se queda en blanco o se pasa de tiempo"
+  ],
+  "restricciones": [
+    "No evaluar acento, aspecto fisico ni nerviosismo como rasgo",
+    "Nada que requiera cronometrar dos cosas a la vez",
+    "La hoja de observacion debe caber en una cara de folio"
+  ],
+  "formato_salida": {
+    "1_rubrica": "Tabla con criterios, pesos y 4 niveles descritos",
+    "2_hoja_de_observacion": "Cuadricula para marcar con cruces durante la exposicion, con hueco para 3 notas rapidas",
+    "3_banco_de_preguntas": "6 preguntas tipo para el turno de preguntas, de menor a mayor exigencia",
+    "4_guion_de_devolucion": "Estructura de 90 segundos para dar feedback oral al terminar",
+    "5_normas_para_el_alumno": "Las reglas del juego en 8 puntos, entregables antes de preparar la exposicion"
+  },
+  "criterios_calidad": [
+    "Se puede rellenar entera sin dejar de escuchar",
+    "Los descriptores no dependen de la simpatia del evaluador",
+    "Queda claro que pasa con el tiempo excedido"
+  ]
+}

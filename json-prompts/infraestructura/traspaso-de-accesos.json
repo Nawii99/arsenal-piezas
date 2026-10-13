@@ -1,0 +1,58 @@
+{
+  "tarea": "Redactar el manual de traspaso: quién puede seguir manteniendo el negocio digital si yo no estoy disponible",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y QUÉ TIENE QUE SEGUIR FUNCIONANDO SÍ O SÍ]",
+    "montaje": "[QUÉ HAY: WEB, TIENDA, AUTOMATIZACIONES, BOT, CORREO, PASARELA DE PAGO, HOJAS]",
+    "persona_receptora": "[SOCIO / FAMILIAR / COLABORADOR TÉCNICO / CLIENTE] con nivel técnico [NINGUNO / MEDIO / ALTO]",
+    "escenarios": "ausencia corta, baja larga, salida del negocio o fallecimiento"
+  },
+  "entradas": {
+    "proveedores": "[LISTA DE PROVEEDORES CON TITULAR DE LA CUENTA Y CORREO DE ALTA]",
+    "pagos": "[TARJETA O CUENTA CON LA QUE SE PAGAN LOS SERVICIOS Y A NOMBRE DE QUIÉN]",
+    "gestor_de_contrasenas": "[CUÁL USO Y SI TIENE FUNCIÓN DE ACCESO DE EMERGENCIA]",
+    "clientes_afectados": "[A QUIÉN HAY QUE AVISAR SI ALGO SE PARA]"
+  },
+  "procedimiento": [
+    "1. Mapa de dependencias: dibuja en texto la cadena desde que un cliente entra hasta que paga y recibe, marcando cada servicio que participa",
+    "2. Por cada servicio anota: para qué sirve, titular de la cuenta, correo de alta, quién paga, qué pasa si se cae y cuánto se aguanta sin él",
+    "3. Identifica los puntos de fallo único: correo personal como cuenta de recuperación, un solo móvil con el segundo factor, un dominio a nombre de un tercero",
+    "4. Traslada la titularidad de dominio y cuentas críticas a un correo de la empresa que más de una persona pueda abrir",
+    "5. Configura los accesos de emergencia que ofrezcan los proveedores: contactos de recuperación, acceso de emergencia del gestor de contraseñas, códigos de respaldo del segundo factor guardados en papel",
+    "6. Escribe el manual con tres niveles: qué hacer en la primera hora, qué se puede posponer una semana y qué requiere ayuda profesional",
+    "7. Añade el listado de tareas recurrentes con su periodicidad: renovaciones, revisiones, respuestas a clientes, envíos",
+    "8. Haz una prueba real: pide a la persona receptora que, solo con el documento, entre en dos servicios y realice una tarea, y apunta dónde se atasca",
+    "9. Corrige lo que falló y fija una revisión cada [6] meses"
+  ],
+  "que_mirar": [
+    "Dominio y correo son la llave maestra: quien controla el correo recupera casi todo lo demás",
+    "Segundo factor solo en una app de un móvil: si se pierde el móvil se pierde el negocio",
+    "Servicios contratados a nombre personal que no se pueden traspasar sin trámite",
+    "Automatizaciones que corren en el ordenador de una persona en vez de en un servidor",
+    "Contratos y datos de clientes: quién puede acceder legalmente y con qué base"
+  ],
+  "errores_tipicos": [
+    "Dejar el documento con las contraseñas escritas dentro en vez de indicar dónde están",
+    "Escribirlo en jerga que la persona receptora no entiende",
+    "No probarlo nunca y descubrir el fallo justo el día que hace falta",
+    "Olvidar la parte de dinero: quién paga las facturas si tu tarjeta deja de funcionar"
+  ],
+  "restricciones": [
+    "No incluir contraseñas ni claves en el documento: solo dónde están y cómo se accede a ellas",
+    "Lenguaje llano, frases cortas, sin siglas sin explicar",
+    "Cada instrucción debe ser accionable por alguien que no conoce el sistema"
+  ],
+  "formato_salida": {
+    "1_una_pagina": "la hoja de emergencia: 10 líneas con lo primero que hay que hacer y a quién llamar",
+    "2_mapa": "esquema en texto del recorrido del cliente y los servicios implicados",
+    "3_tabla_servicios": "servicio | para qué | titular | correo de alta | quién paga | urgencia si cae",
+    "4_puntos_de_fallo_unico": "tabla: riesgo | consecuencia | arreglo | fecha",
+    "5_manual": "instrucciones por bloques: primera hora, primera semana, mantenimiento mensual",
+    "6_prueba": "guion de la prueba de traspaso y resultado, con lo que hubo que corregir"
+  },
+  "criterios_calidad": [
+    "La persona receptora ha completado la prueba sin llamarme",
+    "Ningún servicio crítico depende de un único dispositivo o de un correo personal",
+    "El documento cabe en pocas páginas y la hoja de emergencia en una",
+    "Tiene fecha de última revisión y responsable"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Auditar una factura española, detectar los datos obligatorios que faltan o están mal, y devolver una plantilla corregida lista para usar",
+  "perfil_experto": "Asesor fiscal español experto en el reglamento de facturación y en los requisitos de los sistemas de facturación",
+  "contexto": {
+    "forma_juridica": "[AUTÓNOMO O SOCIEDAD, CON NOMBRE FISCAL Y NIF]",
+    "tipo_cliente": "[EMPRESAS, PARTICULARES, ADMINISTRACIÓN PÚBLICA O MEZCLA]",
+    "retencion_irpf": "[SÍ, PORCENTAJE / NO APLICA]",
+    "casos_especiales": "[OPERACIONES EXENTAS, INVERSIÓN DEL SUJETO PASIVO, CLIENTES DE OTROS PAÍSES, NINGUNO]",
+    "programa": "[CON QUÉ FACTURAS: EXCEL, WORD, HOLDED, FACTURADIRECTA, OTRO]"
+  },
+  "entradas": {
+    "factura_actual": "[PEGA EL TEXTO DE UNA FACTURA REAL O DESCRIBE QUÉ CAMPOS INCLUYE]"
+  },
+  "comprobaciones": [
+    "Número y serie correlativos, sin saltos ni repeticiones",
+    "Fecha de expedición y, si es distinta, fecha de la operación",
+    "Nombre fiscal completo, NIF y domicilio de quien emite y de quien recibe",
+    "Descripción de lo vendido con detalle suficiente, no un simple servicios prestados",
+    "Base imponible, tipo de IVA, cuota y total, y desglose si hay varios tipos",
+    "Retención de IRPF cuando proceda y su cálculo",
+    "Menciones obligatorias en operaciones exentas, inversión del sujeto pasivo o régimen especial",
+    "Condiciones de pago, vencimiento, cuenta o método de cobro",
+    "Si tu sistema de facturación debe cumplir los requisitos de registro y trazabilidad vigentes, y qué preguntar a tu proveedor de software"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de auditoría: requisito, ¿cumple?, qué falta, gravedad",
+    "bloque_2": "Plantilla de factura corregida en texto, con los campos entre corchetes",
+    "bloque_3": "Reglas de numeración y series recomendadas para tu caso",
+    "bloque_4": "Errores frecuentes que te harían perder la deducción o retrasar el cobro",
+    "bloque_5": "Preguntas concretas para tu gestoría o tu proveedor de software"
+  },
+  "restricciones": [
+    "Si la obligación depende de una fecha de entrada en vigor o del tipo de contribuyente, dilo en lugar de afirmar sin matices",
+    "No inventes datos fiscales del usuario",
+    "Ordena los fallos por gravedad, primero lo que invalida la factura"
+  ],
+  "criterios_calidad": ["La plantilla final incluye todos los campos obligatorios", "Cada fallo indica cómo corregirlo", "Sirve tal cual para configurar el programa de facturación"],
+  "aviso": "Orientativo: confirma con tu asesor los requisitos aplicables a tu caso y a tu fecha"
+}

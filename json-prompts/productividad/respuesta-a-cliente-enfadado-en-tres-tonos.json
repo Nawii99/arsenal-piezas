@@ -1,0 +1,36 @@
+{
+  "tarea": "Redactar la respuesta a un correo de queja o reclamacion de un cliente en tres versiones de tono distinto",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "quien_firma": "[TU NOMBRE Y CARGO]",
+    "relacion_con_el_cliente": "[CLIENTE NUEVO / CLIENTE DE ANOS / CLIENTE GRANDE QUE NO QUIERO PERDER]",
+    "que_paso_de_verdad": "[EXPLICA LOS HECHOS: FECHAS, QUE FALLO Y DE QUIEN FUE EL FALLO]",
+    "que_puedo_ofrecer": "[POR EJEMPLO: REPETIR EL TRABAJO, DESCUENTO, PLAZO NUEVO]",
+    "lo_que_no_voy_a_conceder": "[POR EJEMPLO: DEVOLUCION TOTAL, TRABAJO GRATIS]"
+  },
+  "entradas": {
+    "correo_recibido": "[PEGA AQUI EL CORREO DEL CLIENTE TAL CUAL]"
+  },
+  "pasos": [
+    "Resumir en una linea la queja concreta y separar el hecho objetivo del enfado",
+    "Marcar que parte de la queja es cierta y cual no, segun los hechos que te doy",
+    "Construir la respuesta con este orden: acuse de recibo, reconocimiento de lo que si es culpa nuestra, explicacion breve sin excusas largas, solucion con fecha, y cierre con siguiente paso",
+    "Generar tres versiones: CERCANA, NEUTRA FORMAL y FIRME (cuando el cliente no tiene razon)"
+  ],
+  "restricciones": [
+    "Nunca admitir culpas ni importes que no aparezcan en el contexto",
+    "Prohibido usar lamentamos las molestias, en breve, a la mayor brevedad posible y le pedimos disculpas por las molestias ocasionadas",
+    "Nada de ironia ni de responder al mal tono con mal tono",
+    "Maximo 180 palabras por version y siempre una fecha concreta en la solucion"
+  ],
+  "formato_salida": {
+    "tipo": "tres bloques mas analisis",
+    "cada_bloque": ["Nombre de la version", "Asunto", "Cuerpo del correo listo para enviar"],
+    "al_final": ["Riesgos: frases del cliente que podrian acabar en reclamacion formal o resena negativa", "Que hacer si vuelve a contestar enfadado, en dos lineas"]
+  },
+  "criterios_calidad": [
+    "Cada version se puede copiar y enviar sin retocar",
+    "Ninguna promete algo fuera de lo que puedo ofrecer",
+    "El cliente sabe al terminar de leer que va a pasar y cuando"
+  ]
+}

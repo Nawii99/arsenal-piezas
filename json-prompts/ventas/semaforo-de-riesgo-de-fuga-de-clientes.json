@@ -1,0 +1,43 @@
+{
+  "tarea": "Revisar mi cartera de clientes y clasificar cada cuenta en verde, ámbar o roja según su riesgo de fuga, explicando la señal que lo delata y la acción concreta de esta semana",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_vendo": "[QUÉ VENDES Y CADA CUÁNTO SE PAGA: SUSCRIPCIÓN MENSUAL, IGUALA, PEDIDOS RECURRENTES]",
+    "mi_papel": "[DUEÑO, COMERCIAL O RESPONSABLE DE CUENTAS]"
+  },
+  "entradas": {
+    "cartera": "[PEGA LA LISTA: CLIENTE, FACTURACIÓN MENSUAL, FECHA DE ALTA, FECHA DE RENOVACIÓN, ÚLTIMO CONTACTO, PERSONA DE CONTACTO, INCIDENCIAS ABIERTAS, PEDIDOS O USO ÚLTIMOS 90 DÍAS]",
+    "notas_sueltas": "[LO QUE RECUERDES: QUEJAS, CAMBIOS DE PERSONAL, RETRASOS EN PAGOS]"
+  },
+  "senales_a_puntuar": [
+    "Caída de uso, pedidos o consumo respecto a su propia media",
+    "Silencio: sin contacto ni respuesta en más de [DÍAS] días",
+    "Cambio de la persona de contacto o del jefe que firmó",
+    "Incidencias repetidas o sin cerrar",
+    "Facturas pagadas tarde o discutidas",
+    "Renovación a menos de 90 días sin conversación iniciada",
+    "Solo conozco a una persona dentro del cliente"
+  ],
+  "metodo": [
+    "1. Puntúa cada señal de 0 a 3 y suma; muestra la puntuación",
+    "2. Roja si suma 8 o más o si hay renovación cercana con silencio; ámbar entre 4 y 7; verde por debajo",
+    "3. Ordena la tabla por dinero en riesgo, no por puntuación",
+    "4. Para cada roja y ámbar propón UNA acción concreta con fecha límite",
+    "5. Marca como 'sin datos' las cuentas de las que falte información en vez de suponer"
+  ],
+  "restricciones": [
+    "No inventes datos: lo que falte, pídemelo en una lista al final",
+    "Prohibido escribir 'hacer seguimiento' sin decir de qué se habla",
+    "Máximo 3 acciones por cuenta"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla en markdown más lista de acciones",
+    "columnas": ["Cliente", "Dinero en riesgo", "Riesgo", "Puntuación", "Señal principal", "Acción de esta semana", "Fecha límite"],
+    "extras": ["Resumen del estado de la cartera en 3 líneas", "Las 5 cuentas que debo tocar primero", "Datos que me faltan"]
+  },
+  "criterios_calidad": [
+    "Puedo empezar a llamar sin tener que pensar nada más",
+    "El dinero en riesgo total cuadra con la suma de rojas y ámbar"
+  ],
+  "tono": "Directo, tuteando, sin jerga de consultoría"
+}

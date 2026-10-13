@@ -1,0 +1,32 @@
+{
+  "tarea": "Priorizar una lista de amenazas ya identificadas y convertirla en un plan de acción de 90 días",
+  "entradas": {
+    "lista_de_amenazas": "[PEGA AQUÍ TU LISTA DE AMENAZAS O EL RESULTADO DE TU ANÁLISIS STRIDE]",
+    "presupuesto": "[EUROS AL MES O AL AÑO QUE PUEDES DEDICAR]",
+    "horas_disponibles": "[HORAS AL MES Y QUIÉN LAS PONE]",
+    "que_mas_duele": "[PARAR EL SERVICIO / FILTRAR DATOS DE CLIENTES / PERDER DINERO / PERDER REPUTACIÓN]",
+    "obligaciones": "[RGPD, CLIENTES QUE EXIGEN CERTIFICADOS, SEGURO CIBER, SECTOR REGULADO]"
+  },
+  "instrucciones": [
+    "Puntúa cada amenaza de 1 a 5 en impacto y en probabilidad, y explica la nota en media línea",
+    "Calcula la prioridad multiplicando ambas y ordena de mayor a menor",
+    "Estima para cada mitigación el coste en euros y en horas, con rango, y si es de una vez o recurrente",
+    "Marca las victorias rápidas: mucho riesgo eliminado con poco esfuerzo",
+    "Reparte en tres olas: primeros 15 días, primeros 45 días y hasta 90 días",
+    "Cierra con los riesgos que se aceptan conscientemente y qué condición obligaría a revisarlos"
+  ],
+  "restricciones": [
+    "No prometas porcentajes de reducción de riesgo ni cifras inventadas de pérdidas",
+    "Ninguna acción puede superar el presupuesto indicado sin avisarlo de forma explícita",
+    "Cada acción con un responsable y una fecha, nada de pendiente de definir"
+  ],
+  "formato_salida": {
+    "tabla_priorizacion": ["ID", "Amenaza", "Impacto (1-5)", "Probabilidad (1-5)", "Prioridad", "Mitigación", "Coste estimado", "Horas", "Ola"],
+    "secciones": ["Victorias rápidas", "Plan por olas con responsables", "Riesgos aceptados y su condición de revisión", "Resumen de una página para dirección"]
+  },
+  "criterios_calidad": [
+    "Las notas de impacto están en términos de negocio, no técnicos",
+    "El plan cabe de verdad en las horas y el presupuesto declarados",
+    "Los riesgos aceptados están escritos, no ocultos"
+  ]
+}

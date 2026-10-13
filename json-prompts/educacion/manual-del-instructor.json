@@ -1,0 +1,55 @@
+{
+  "tarea": "Escribir el manual del instructor de la sesión o módulo [NOMBRE] para que otra persona pueda impartirlo con el mismo resultado.",
+  "contexto": {
+    "programa": "[NOMBRE DEL PROGRAMA]",
+    "perfil_del_instructor_que_lo_dara": "[EXPERIENCIA QUE SE LE SUPONE Y LA QUE NO]",
+    "duracion_de_la_sesion": "[MINUTOS]",
+    "modalidad": "[PRESENCIAL / ONLINE]",
+    "materiales_existentes": "[DIAPOSITIVAS, EJERCICIOS, GRABACIONES]"
+  },
+  "entradas": {
+    "guion_o_notas_de_la_sesion": "[PEGA LO QUE TENGAS]",
+    "como_lo_explicas_tu": "[TUS EJEMPLOS, METÁFORAS Y ANÉCDOTAS HABITUALES]",
+    "preguntas_que_siempre_salen": "[LISTA]",
+    "cosas_que_nunca_hay_que_decir": "[LÍMITES, COMPROMISOS QUE NO SE PUEDEN PROMETER]"
+  },
+  "procedimiento": [
+    "1. Empieza por el resultado: qué sabe hacer el alumno al salir y cómo se comprueba en la propia sesión.",
+    "2. Escribe el minutado con lo que hace el instructor y lo que hace el alumno en cada tramo, en dos columnas.",
+    "3. Para cada concepto clave, incluye la explicación en tres niveles: la frase corta, la explicación con ejemplo y la analogía de rescate para cuando no lo pillan.",
+    "4. Marca lo intocable y lo adaptable: qué se dice siempre igual y dónde el instructor puede meter sus propios ejemplos.",
+    "5. Incluye el listado de errores del alumno con la corrección exacta que debe dar el instructor.",
+    "6. Incluye el listado de preguntas frecuentes con respuesta modelo y con las tres respuestas prohibidas.",
+    "7. Añade el guion de las dinámicas: instrucciones literales, tiempos, cómo se forman los grupos y qué se pone en común.",
+    "8. Añade la lista de material y la preparación de la víspera y de los 15 minutos previos.",
+    "9. Añade el protocolo de incidencias: alumno que domina más que el instructor, alumno que bloquea, retraso, fallo técnico.",
+    "10. Cierra con la lista de comprobación posterior: qué se envía al alumno, qué se registra y qué se reporta."
+  ],
+  "restricciones": [
+    "Escrito en imperativo dirigido al instructor, no en teoría.",
+    "Ninguna instrucción que dependa de conocer al autor: si hace falta un contexto, se escribe.",
+    "Cada tramo indica el tiempo y la señal de que se puede pasar al siguiente.",
+    "Español de España, tuteando al instructor."
+  ],
+  "errores_a_evitar": [
+    "Entregar solo las diapositivas y llamarlo manual.",
+    "No decir qué es negociable: el instructor cambia lo que no debe.",
+    "Olvidar las preguntas incómodas y dejar al instructor improvisando compromisos.",
+    "Escribir la teoría entera en vez de las instrucciones de impartición."
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha de la sesión: resultado, requisitos previos, materiales, aforo recomendado.",
+    "bloque_2": "Minutado en dos columnas: instructor / alumno, con tiempos y señal de avance.",
+    "bloque_3": "Fichas de conceptos clave con las tres explicaciones y la analogía de rescate.",
+    "bloque_4": "Tabla de errores del alumno y corrección exacta.",
+    "bloque_5": "Preguntas frecuentes con respuesta modelo y respuestas prohibidas.",
+    "bloque_6": "Guion literal de las dinámicas.",
+    "bloque_7": "Protocolo de incidencias y listas de comprobación previa y posterior."
+  },
+  "criterios_calidad": [
+    "Un formador con el perfil indicado puede impartirla sin hablar contigo.",
+    "Cada tramo tiene tiempo y criterio de avance.",
+    "Está claro qué se puede adaptar y qué no.",
+    "Las dinámicas están escritas con las palabras exactas que se dicen en voz alta."
+  ]
+}

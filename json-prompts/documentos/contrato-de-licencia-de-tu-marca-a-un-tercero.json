@@ -1,0 +1,41 @@
+{
+  "tarea": "Redactar un contrato de licencia de marca y de materiales propios a favor de un tercero, con canon y control de calidad",
+  "rol": "Abogado mercantil con experiencia en licencias de marca para pymes",
+  "entradas": {
+    "licenciante": "[TU EMPRESA, CIF Y DATOS DE LA MARCA REGISTRADA CON SU NÚMERO SI LO TIENES]",
+    "licenciatario": "[QUIÉN VA A USAR LA MARCA]",
+    "alcance": "[PARA QUÉ PRODUCTOS O SERVICIOS PODRÁ USARLA]",
+    "materiales_cedidos": "[LOGO, MANUAL DE MARCA, PLANTILLAS, MÉTODO, FORMACIÓN, SOFTWARE]",
+    "zona": "[CIUDAD, PROVINCIA, PAÍS]",
+    "duracion": "[AÑOS Y SI HAY PRÓRROGA AUTOMÁTICA]",
+    "canon": "[ENTRADA INICIAL Y PORCENTAJE O CUOTA PERIÓDICA]",
+    "exclusividad": "[SÍ / NO]"
+  },
+  "pasos": [
+    "Deja claro que se licencia el uso y que la titularidad de la marca no se transmite en ningún caso",
+    "Delimita productos, canales, zona, plazo y exclusividad con valores concretos",
+    "Fija el control de calidad: qué debe cumplir, qué materiales debe aprobar el licenciante antes de publicar y con qué plazo de respuesta",
+    "Regula el canon: base de cálculo, cuándo se paga, qué información contable debe entregar y derecho de comprobación",
+    "Prohíbe registrar la marca o dominios y nombres parecidos, y obliga a cederlos si lo hiciera",
+    "Establece causas de resolución inmediata y qué ocurre al terminar: retirada de rótulos, webs, redes y stock",
+    "Añade obligación de comunicar copias o usos indebidos que detecte y de colaborar en su defensa"
+  ],
+  "restricciones": [
+    "Distingue esta licencia de un contrato de franquicia y avisa si el caso planteado se parece más a una franquicia",
+    "No inventes datos registrales de la marca",
+    "Redacción clara, con cláusulas numeradas y sin párrafos de más de seis líneas"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "Contrato completo listo para revisar y firmar",
+      "Anexo de manual de uso de marca con lo que puede y no puede hacer",
+      "Tabla de importes y calendario de pagos",
+      "Checklist de comprobaciones anuales del licenciante"
+    ]
+  },
+  "criterios_calidad": [
+    "Alcance, zona, plazo y canon aparecen sin huecos genéricos",
+    "El control de calidad es comprobable y no una declaración de intenciones",
+    "Recomienda revisión por un abogado antes de firmar y registrar la licencia si procede"
+  ]
+}

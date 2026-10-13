@@ -1,0 +1,39 @@
+{
+  "tarea": "Construir el mapa de redirecciones permanentes de la web antigua a la nueva y escribir las reglas listas para aplicar",
+  "contexto": {
+    "dominio_origen": "[DOMINIO O RUTA ANTIGUA]",
+    "dominio_destino": "[DOMINIO O RUTA NUEVA]",
+    "cambia_dominio": "[SÍ O NO]",
+    "entorno": "[APACHE .HTACCESS, NGINX, WORDPRESS CON PLUGIN, SHOPIFY, CLOUDFLARE, WEBFLOW...]"
+  },
+  "entradas": {
+    "urls_antiguas": "[PEGA EL LISTADO DE URLS ACTUALES]",
+    "urls_nuevas": "[PEGA EL LISTADO O LA ESTRUCTURA DE URLS DE LA WEB NUEVA]",
+    "paginas_sin_equivalente": "[PÁGINAS QUE DESAPARECEN Y NO TIENEN SUSTITUTA]"
+  },
+  "reglas_de_emparejamiento": [
+    "Emparejar por intención y contenido, no por parecido del texto de la URL",
+    "Si no hay equivalente exacto, redirigir a la categoría padre más cercana, nunca todo a la home",
+    "Agrupar patrones repetidos en una sola regla con comodín en vez de mil líneas sueltas",
+    "Usar 301 permanente salvo que sea un cambio temporal, y entonces explicar por qué"
+  ],
+  "casos_a_resolver": [
+    "Barra final de la URL, mayúsculas y acentos",
+    "Versiones con y sin www y paso de http a https",
+    "Parámetros de campaña y filtros de tienda",
+    "Paginación del blog y páginas de etiquetas",
+    "Cadenas de redirección: si A va a B y B a C, dejar A directo a C",
+    "Bucles de redirección"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla en Markdown con columnas Origen, Destino, Tipo, Regla o excepción y Comentario",
+    "bloque_2": "Fichero de reglas listo para pegar en [ENTORNO ELEGIDO], con las reglas comodín arriba y las excepciones abajo",
+    "bloque_3": "Lista de comprobación de 10 URLs de muestra para probar antes y después del cambio"
+  },
+  "criterios_calidad": [
+    "Ninguna URL antigua con tráfico se queda sin destino",
+    "Cero cadenas de redirección y cero bucles",
+    "Cada regla comodín viene con un ejemplo de URL que la cumple"
+  ],
+  "avisos": "Señalar de forma destacada cualquier redirección que pueda romper enlaces de campañas activas o de facturas y presupuestos enviados"
+}

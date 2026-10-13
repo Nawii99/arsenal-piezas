@@ -1,0 +1,43 @@
+{
+  "tarea": "Redactar un informe de estado de seguridad del código y las dependencias, dirigido a un lector no técnico que decide",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "producto": "[NOMBRE Y QUÉ HACE EN UNA FRASE]",
+    "destinatario": "[CLIENTE CORPORATIVO, INVERSOR, ASEGURADORA, AUDITOR]",
+    "que_le_preocupa": "[EJ: QUE SUS DATOS DE CLIENTES ESTÉN SEGUROS]",
+    "periodo": "[EJ: PRIMER SEMESTRE DE 2026]"
+  },
+  "entradas": {
+    "resultados_tecnicos": "[PEGA LOS HALLAZGOS DE TUS AUDITORÍAS DE DEPENDENCIAS, CÓDIGO Y SECRETOS]",
+    "ya_arreglado": "[LISTA DE LO QUE YA HABÉIS CORREGIDO Y CUÁNDO]",
+    "controles_existentes": "[EJ: REVISIÓN DE CÓDIGO OBLIGATORIA, COPIAS DE SEGURIDAD DIARIAS, DOBLE FACTOR]"
+  },
+  "procedimiento": [
+    "Traduce cada hallazgo técnico a impacto de negocio: qué pasaría, a quién afecta y cuánto duraría",
+    "Agrupa por temas en vez de por herramienta: dependencias, código propio, secretos, proceso",
+    "Muestra la evolución: qué había, qué se ha arreglado y qué queda con fecha de compromiso",
+    "Incluye lo que hacéis bien, sin exagerar",
+    "Cierra con los compromisos concretos y quién responde de cada uno"
+  ],
+  "restricciones": [
+    "Prohibido prometer que el sistema es seguro o inviolable",
+    "Prohibido inventar certificaciones, auditorías externas o cumplimiento normativo que no estén en las entradas",
+    "Nada de detalles que sirvan para atacar el sistema: sin rutas, versiones vulnerables ni fragmentos de código",
+    "Máximo 2 páginas"
+  ],
+  "formato_salida": {
+    "1_resumen": "5 líneas: estado general, riesgo principal y qué se está haciendo",
+    "2_alcance": "Qué se ha revisado y qué no, con honestidad",
+    "3_estado": "Tabla por temas con: riesgo, nivel actual, tendencia, acción en curso",
+    "4_corregido": "Lista de lo resuelto en el periodo, con mes",
+    "5_pendiente": "Lista con responsable y fecha objetivo",
+    "6_practicas": "Controles permanentes que tenéis puestos",
+    "7_nota": "Aviso de que es un informe de estado interno y no una certificación"
+  },
+  "criterios_calidad": [
+    "Un director financiero lo entiende sin preguntar nada",
+    "Cada afirmación se apoya en un dato de las entradas",
+    "No hay ninguna frase de relleno ni de marketing"
+  ],
+  "tono": "profesional, sobrio y honesto; transmite control, no perfección"
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar el informe posterior a un incidente de seguridad con analisis de causa raiz y plan de mejora priorizado",
+  "rol": "Consultor de seguridad que escribe informes utiles para negocio, sin culpar a personas",
+  "entradas": {
+    "empresa_y_tamano": "[NOMBRE Y NUMERO DE PERSONAS]",
+    "resumen_del_incidente": "[QUE PASO, CUANDO EMPEZO Y CUANDO SE CERRO]",
+    "cronologia": "[PEGA LA LINEA DE TIEMPO SI LA TIENES]",
+    "causa_sospechada": "[CONTRASENA DEBIL, CORREO DE PHISHING, PLUGIN SIN ACTUALIZAR, EQUIPO SIN ANTIVIRUS, PROVEEDOR COMPROMETIDO, NO LO SE]",
+    "impacto": "[HORAS DE PARON, VENTAS PERDIDAS, DATOS AFECTADOS, HORAS DEDICADAS, FACTURAS PAGADAS]",
+    "decisiones_tomadas": "[QUE HICISTEIS Y EN QUE ORDEN]",
+    "recursos": "[PRESUPUESTO APROXIMADO Y SI HAY INFORMATICO INTERNO O EXTERNO]"
+  },
+  "instrucciones": [
+    "Escribe un resumen ejecutivo de 8 lineas que entienda alguien que no estuvo",
+    "Aplica los cinco porques para llegar a la causa raiz y distingue causa raiz de causa aparente",
+    "Separa los factores que contribuyeron: tecnicos, de proceso y de habitos, sin nombrar culpables",
+    "Haz una seccion de que funciono bien, otra de que fallo y otra de lo que fue pura suerte",
+    "Cuantifica el impacto en horas y euros con las cifras aportadas, y marca lo que sea estimacion",
+    "Propon un plan de mejora en tres bloques: esta semana sin coste, este mes con coste bajo, este trimestre con inversion",
+    "Cada mejora lleva responsable, fecha, coste aproximado y como se comprueba que esta hecha",
+    "Cierra con tres indicadores simples para vigilar que la mejora se mantiene"
+  ],
+  "restricciones": [
+    "Sin culpar a personas concretas: se habla de procesos y de decisiones",
+    "No inventes cifras: si no te las doy, escribe pendiente de dato",
+    "Maximo dos paginas"
+  ],
+  "formato_salida": {
+    "tipo": "Informe en markdown listo para enviar",
+    "secciones": ["Resumen ejecutivo", "Que paso", "Causa raiz y factores contribuyentes", "Impacto", "Que funciono y que fallo", "Plan de mejora priorizado", "Indicadores de seguimiento"]
+  },
+  "criterios_calidad": [
+    "La causa raiz explica el incidente, no lo describe",
+    "Al menos tres mejoras se pueden aplicar esta semana sin gastar dinero",
+    "El informe sirve tal cual para el seguro o para un cliente que pregunte"
+  ],
+  "tono": "Profesional, honesto, sin autocomplacencia"
+}

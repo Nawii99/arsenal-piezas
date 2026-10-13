@@ -1,0 +1,50 @@
+{
+  "tarea": "Diseñar un panel de control en una hoja de cálculo a partir de mis datos en bruto, con métricas útiles, fórmulas exactas y rutina de actualización.",
+  "contexto": {
+    "negocio": "[A QUÉ ME DEDICO Y CÓMO COBRO]",
+    "decisiones_que_quiero_tomar": "[SUBIR PRECIOS, DEJAR UN SERVICIO, CONTRATAR, INVERTIR EN ANUNCIOS]",
+    "herramienta": "[EXCEL / GOOGLE SHEETS]",
+    "cada_cuanto_lo_miro": "[SEMANAL / MENSUAL]"
+  },
+  "entradas": {
+    "datos_en_bruto": "[PEGA LA CABECERA Y 15 FILAS REALES DE TU HOJA]",
+    "periodo_disponible": "[DESDE CUÁNDO TENGO DATOS]",
+    "costes_conocidos": "[COSTES FIJOS Y VARIABLES QUE PUEDO IMPUTAR]"
+  },
+  "pasos": [
+    "Comprueba primero si los datos permiten calcular lo que quiero decidir; si falta una columna, dilo antes de seguir.",
+    "Propón como mucho ocho indicadores, cada uno atado a una decisión concreta de mi lista.",
+    "Por cada indicador define: qué mide, con qué columnas se calcula, cada cuánto se mira y qué valor sería una señal de alarma.",
+    "Escribe la fórmula exacta para mi herramienta, con los rangos de mi muestra, usando referencias estructuradas o rangos completos para que no se rompa al añadir filas.",
+    "Diseña la pestaña Panel: dónde van las cifras grandes, dónde la evolución por mes y dónde el top de clientes o productos.",
+    "Define la tabla dinámica o las fórmulas de agregación necesarias, con los campos en filas, columnas y valores.",
+    "Añade dos gráficos como mucho y di qué tipo y qué muestra cada uno.",
+    "Escribe la rutina de actualización paso a paso, con el tiempo estimado.",
+    "Añade tres comprobaciones de cuadre para detectar si el panel miente."
+  ],
+  "restricciones": [
+    "Nada de macros ni de complementos de pago.",
+    "Los datos en bruto no se tocan nunca: el panel solo lee de ellos.",
+    "Cero indicadores de vanidad: si no cambia una decisión, fuera.",
+    "No inventes datos ni promedios del sector."
+  ],
+  "errores_tipicos": [
+    "Mezclar importes con IVA y sin IVA en el mismo total.",
+    "Contar como ingreso lo facturado y no lo cobrado, y creerte que hay caja.",
+    "Rangos fijos que se quedan cortos al añadir filas nuevas.",
+    "Meses sin datos que aparecen como cero y ensucian la media.",
+    "Un panel con veinte números que nadie mira."
+  ],
+  "formato_salida": {
+    "bloque_1": "Qué se puede calcular con mis datos y qué falta para el resto.",
+    "bloque_2": "Tabla de indicadores: nombre, qué decide, cómo se calcula, frecuencia, umbral de alarma.",
+    "bloque_3": "Fórmulas listas para pegar, indicando la celda de destino.",
+    "bloque_4": "Croquis del panel escrito en texto, zona por zona.",
+    "bloque_5": "Rutina de actualización y tres comprobaciones de cuadre."
+  },
+  "criterios_calidad": [
+    "Cada indicador está atado a una decisión concreta.",
+    "Las fórmulas funcionan al pegarlas sin retocar rangos.",
+    "Actualizar el panel me lleva menos de diez minutos."
+  ]
+}

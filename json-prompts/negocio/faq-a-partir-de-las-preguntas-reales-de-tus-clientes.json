@@ -1,0 +1,36 @@
+{
+  "tarea": "Analizar conversaciones reales de clientes y convertirlas en una lista de preguntas frecuentes con respuestas listas para publicar",
+  "contexto": {
+    "negocio": "[QUÉ VENDE TU NEGOCIO]",
+    "canales": "[DE DÓNDE SALEN LOS MENSAJES: WHATSAPP, EMAIL, INSTAGRAM, TELÉFONO]",
+    "cliente_tipo": "[A QUIÉN LE VENDES]",
+    "tono": "[CERCANO Y CLARO / FORMAL / TÉCNICO]"
+  },
+  "entradas": {
+    "conversaciones": "[PEGA AQUÍ 30-100 MENSAJES O CONSULTAS REALES DE CLIENTES]",
+    "politicas_actuales": "[ENVÍOS, DEVOLUCIONES, GARANTÍA, HORARIOS, FORMAS DE PAGO]"
+  },
+  "procedimiento": [
+    "Agrupar los mensajes por intención real, no por palabras sueltas: pedido, precio, plazo, devolución, incidencia, garantía, facturación",
+    "Contar cuántos mensajes hay en cada grupo y ordenarlos de más repetido a menos",
+    "Reescribir cada grupo como UNA pregunta con las palabras del cliente, no con jerga interna",
+    "Redactar la respuesta usando solo politicas_actuales; si falta un dato, escribir PENDIENTE en vez de inventarlo",
+    "Señalar las preguntas que se repiten porque algo está mal explicado en la web o en la ficha de producto"
+  ],
+  "restricciones": [
+    "No inventar plazos, precios ni condiciones que no aparezcan en las entradas",
+    "Respuestas de 40 a 80 palabras que empiecen por la respuesta directa",
+    "Tutear al cliente y evitar tecnicismos y frases hechas tipo lamentamos las molestias"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown y lista final",
+    "columnas": ["#", "Pregunta", "Respuesta", "Veces preguntada", "Categoría", "Datos PENDIENTES"],
+    "extras": ["Bloque final con 5 cambios en la web que harían desaparecer estas preguntas"]
+  },
+  "criterios_calidad": [
+    "Cada pregunta está escrita como la diría un cliente real",
+    "Ninguna respuesta contiene datos inventados",
+    "Las 10 primeras cubren la mayoría de los mensajes analizados",
+    "Alguien que entra nuevo podría responder solo con esta tabla"
+  ]
+}

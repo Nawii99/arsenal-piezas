@@ -1,0 +1,35 @@
+{
+  "tarea": "Crear la bateria de pruebas de aceptacion del agente [NOMBRE DEL AGENTE] antes de ponerlo a trabajar solo",
+  "contexto": {
+    "mision": "[QUE DEBE HACER EL AGENTE]",
+    "entradas": "[QUE RECIBE Y DE DONDE]",
+    "salida_esperada": "[QUE DEBE DEVOLVER Y EN QUE FORMATO]",
+    "limites": "[LO QUE TIENE PROHIBIDO HACER]",
+    "casos_dificiles_reales": "[EJEMPLOS QUE YA TE HAN DADO PROBLEMAS]"
+  },
+  "tipos_de_prueba_obligatorios": [
+    "Caso normal: todo llega bien y completo",
+    "Falta informacion: debe pedirla o marcarla, no inventarla",
+    "Informacion contradictoria: debe detectarla y avisar",
+    "Caso limite: volumen grande, texto muy corto, idioma distinto, formato raro",
+    "Peticion fuera de su alcance: debe rechazarla con educacion",
+    "Intento de saltarse los limites: alguien le pide hacer algo prohibido",
+    "Repeticion: dos veces la misma entrada debe dar una respuesta equivalente"
+  ],
+  "cantidad": "Entre 12 y 15 pruebas, al menos una de cada tipo",
+  "formato_salida": {
+    "tabla": "Tabla markdown con columnas: Nº, Tipo, Entrada exacta que pego, Resultado correcto, Señal de fallo, Gravedad (alta/media/baja)",
+    "despues_de_la_tabla": "Regla de aprobado: cuantas pruebas deben pasar y cuales son eliminatorias",
+    "hoja_de_registro": "Plantilla corta para ir anotando fecha, version del agente y resultado de cada prueba"
+  },
+  "restricciones": [
+    "Las entradas deben estar escritas enteras, listas para copiar y pegar",
+    "El resultado correcto se describe de forma observable, sin usar palabras como adecuado o correcto a secas",
+    "Nada de pruebas que solo valgan para un caso irrepetible"
+  ],
+  "criterios_calidad": [
+    "Puedo ejecutar la bateria yo solo en menos de una hora",
+    "Cualquiera diria lo mismo al juzgar si una prueba pasa o falla",
+    "Hay al menos 3 pruebas eliminatorias bien justificadas"
+  ]
+}

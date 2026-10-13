@@ -1,0 +1,33 @@
+{
+  "tarea": "Proponer una lista de tomas de recurso generadas con IA para cubrir la voz en off de un video, con el prompt de cada una",
+  "entradas": {
+    "tema_del_video": "[DE QUE VA]",
+    "voz_en_off": "[PEGA EL TEXTO O LOS PUNTOS QUE SE CUENTAN]",
+    "segundos_a_cubrir": "[CUANTOS]",
+    "estilo": "[DOCUMENTAL REAL / PUBLICITARIO LIMPIO / ANIMACION]",
+    "formato": "[9:16 / 16:9]"
+  },
+  "metodo": [
+    "1. Localizar en la voz en off los momentos abstractos, que son los que mas necesitan imagen concreta",
+    "2. Para cada momento, elegir un objeto o gesto literal que lo represente sin explicarlo",
+    "3. Repartir tamanos de plano: al menos tres detalles macro, tres planos medios y dos generales",
+    "4. Preferir tomas sin cara reconocible ni manos en primer plano, que son las que mas fallan",
+    "5. Anadir a cada toma un margen de un segundo por lado para poder cortar comodo en el montaje"
+  ],
+  "formato_salida": {
+    "tabla": "diez filas con: numero, frase de la voz en off que acompana, que se ve, tamano de plano, segundos",
+    "prompts": "prompt en ingles de cada toma, con movimiento de camara lento y un solo sujeto",
+    "orden_sugerido": "como alternarlas para que no se repita el ritmo",
+    "reserva": "dos tomas comodin que sirven para cualquier hueco"
+  },
+  "restricciones": [
+    "Sin texto ni logotipos en imagen",
+    "Sin personas hablando: el b-roll va bajo la voz en off",
+    "Misma luz y misma paleta en las diez tomas"
+  ],
+  "criterios_calidad": [
+    "Cada toma ilustra algo que se dice, no decora",
+    "Ninguna toma repite el mismo encuadre que la anterior",
+    "La suma de segundos cubre el hueco declarado"
+  ]
+}

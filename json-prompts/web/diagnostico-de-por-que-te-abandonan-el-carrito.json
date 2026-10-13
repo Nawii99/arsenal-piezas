@@ -1,0 +1,41 @@
+{
+  "tarea": "Audita mi proceso de compra y localiza las causas reales de abandono de carrito, ordenadas por impacto",
+  "rol": "Especialista en optimización de conversión de tiendas online en España",
+  "entradas": {
+    "plataforma": "[SHOPIFY / WOOCOMMERCE / PRESTASHOP / OTRA]",
+    "pasos_del_checkout": "[DESCRIBE CADA PANTALLA DESDE EL CARRITO HASTA EL PAGO]",
+    "campos_del_formulario": "[LISTA DE CAMPOS QUE PIDES]",
+    "registro_obligatorio": "[SÍ / NO]",
+    "metodos_de_pago": "[TARJETA, BIZUM, PAYPAL, CONTRA REEMBOLSO...]",
+    "gastos_de_envio": "[CUÁNDO Y DÓNDE SE VEN POR PRIMERA VEZ]",
+    "plazo_de_entrega": "[PLAZO REAL]",
+    "devoluciones_y_garantia": "[QUÉ OFRECES Y DÓNDE SE VE]",
+    "movil_vs_ordenador": "[% DE TRÁFICO MÓVIL SI LO SABES]",
+    "datos_de_caida": "[VISITAS AL CARRITO, INICIOS DE PAGO Y PEDIDOS, SI LOS TIENES]"
+  },
+  "revisa_estas_causas": [
+    "costes sorpresa (envío, impuestos o recargos que aparecen al final)",
+    "obligar a crear cuenta",
+    "formulario largo o con campos innecesarios",
+    "falta del método de pago que espera el cliente",
+    "plazo de entrega poco claro o demasiado largo",
+    "dudas de confianza: devoluciones, contacto, sellos, reseñas",
+    "experiencia en móvil: botones, teclado, pasos, velocidad",
+    "errores técnicos: cupones que fallan, pagos rechazados, sesión perdida"
+  ],
+  "metodo": [
+    "1. Recorre el checkout paso a paso y marca en cuál se pierde más gente",
+    "2. Para cada fuga, indica la causa probable y en qué te basas",
+    "3. Estima el impacto (alto/medio/bajo) y el esfuerzo de arreglarlo (alto/medio/bajo)",
+    "4. Ordena por impacto alto y esfuerzo bajo primero"
+  ],
+  "formato_salida": {
+    "tabla": ["paso", "fuga_detectada", "causa_probable", "arreglo_concreto", "impacto", "esfuerzo", "como_medir_si_funciono"],
+    "despues_de_la_tabla": "Un plan de 5 acciones para esta semana y las 3 preguntas que necesitarías responder para afinar el diagnóstico"
+  },
+  "restricciones": [
+    "No supongas datos que no te he dado: si falta, pídelo en la lista de preguntas",
+    "Cada arreglo debe ser accionable sin saber programar o decir claramente que hace falta ayuda técnica",
+    "Nada de recomendaciones genéricas tipo mejorar la experiencia de usuario"
+  ]
+}

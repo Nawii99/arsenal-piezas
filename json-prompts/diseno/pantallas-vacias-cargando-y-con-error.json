@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar los estados vacío, de carga y de error de la pantalla [NOMBRE DE LA PANTALLA] de [NOMBRE DEL PRODUCTO]",
+  "contexto": {
+    "que_muestra_normalmente": "[QUÉ SE VE CUANDO TODO VA BIEN]",
+    "usuario": "[QUIÉN ENTRA AQUÍ Y QUÉ VIENE A HACER]",
+    "accion_deseada": "[QUÉ QUIERES QUE HAGA SI NO HAY NADA TODAVÍA]"
+  },
+  "estados_a_disenar": [
+    "Primera vez: la persona acaba de entrar y aún no ha creado nada",
+    "Vacío por filtro: ha buscado o filtrado y no hay resultados",
+    "Cargando: primera carga y carga de más elementos",
+    "Error de conexión o del servidor",
+    "Sin permisos para ver este contenido"
+  ],
+  "pasos": [
+    "Para cada estado, definir qué se ve: ilustración o icono, titular, texto de apoyo y botones",
+    "Escribir los textos literales, cortos y sin jerga técnica",
+    "Indicar qué se puede hacer desde cada estado para salir de él",
+    "Definir el esqueleto de carga que imita la forma del contenido real",
+    "Indicar cuánto tiempo se espera antes de mostrar el indicador de carga"
+  ],
+  "restricciones": [
+    "El estado vacío de primera vez debe llevar siempre una acción principal clara",
+    "El error nunca muestra códigos técnicos al usuario, aunque sí ofrece reintentar",
+    "Titulares de menos de 8 palabras y textos de apoyo de menos de 2 líneas",
+    "Nada de mensajes graciosos que no ayuden a resolver"
+  ],
+  "formato_salida": {
+    "tipo": "ficha por estado",
+    "campos_por_estado": ["cuándo aparece", "elemento visual", "titular", "texto de apoyo", "botón principal", "botón secundario", "qué pasa al pulsar"]
+  },
+  "criterios_calidad": [
+    "Ningún estado deja a la persona en un callejón sin salida",
+    "Los textos están listos para copiar y pegar",
+    "Se distingue el vacío por ser nuevo del vacío por filtrar"
+  ],
+  "tono": "tranquilizador y útil, nunca alarmista"
+}

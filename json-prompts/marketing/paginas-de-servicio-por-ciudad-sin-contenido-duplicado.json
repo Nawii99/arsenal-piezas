@@ -1,0 +1,38 @@
+{
+  "tarea": "Crear una plantilla de página de servicio por localidad y generar las versiones para varias ciudades sin caer en contenido duplicado",
+  "contexto": {
+    "servicio": "[SERVICIO QUE OFRECES]",
+    "empresa": "[NOMBRE Y AÑOS DE EXPERIENCIA]",
+    "contacto": "[TELÉFONO, WHATSAPP Y FORMULARIO]",
+    "cobertura": ["[CIUDAD O BARRIO 1]", "[CIUDAD O BARRIO 2]", "[CIUDAD O BARRIO 3]"]
+  },
+  "entradas_por_localidad": {
+    "detalles_reales": "[POR CADA ZONA: TRABAJOS HECHOS, TIEMPO DE DESPLAZAMIENTO, BARRIOS QUE CUBRES, REFERENCIAS O PARTICULARIDADES]",
+    "precio_o_tarifa": "[DESDE CUÁNTO O 'presupuesto sin compromiso']"
+  },
+  "estructura_pagina": [
+    "H1: [SERVICIO] en [CIUDAD]",
+    "Primer párrafo con la zona, el servicio y el tiempo de respuesta",
+    "Qué incluye el servicio, en lista",
+    "Cómo trabajamos, en 3 o 4 pasos",
+    "Zonas y barrios cubiertos",
+    "Prueba local: caso, reseña o trabajo real de esa zona",
+    "Precios o cómo se presupuesta",
+    "FAQ con 4 preguntas específicas de esa localidad",
+    "Llamada a la acción con teléfono y formulario"
+  ],
+  "restricciones": [
+    "Mínimo el 40% del texto de cada página debe ser propio de esa localidad: prohibido cambiar solo el nombre de la ciudad",
+    "Nada de inventar casos, reseñas ni referencias: si no hay dato real, deja [PENDIENTE: CASO LOCAL]",
+    "No crees página de una ciudad donde no puedas dar servicio de verdad",
+    "Una sola página por localidad y servicio, con URL del tipo /servicio-ciudad"
+  ],
+  "formato_salida": {
+    "bloques": ["Plantilla con las variables marcadas", "Páginas completas en markdown, una por localidad", "Tabla con URL, título SEO y meta descripción de cada página", "Sugerencias de enlace interno entre localidades y hacia la página madre del servicio"]
+  },
+  "criterios_calidad": [
+    "Al comparar dos páginas cualquiera, los párrafos de prueba local y FAQ son distintos",
+    "Cada página responde a la búsqueda 'servicio + ciudad' en el primer párrafo",
+    "Los datos de contacto y la llamada a la acción aparecen arriba y abajo"
+  ]
+}

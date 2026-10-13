@@ -1,0 +1,51 @@
+{
+  "tarea": "Preparar el guion de una llamada de descubrimiento de 25 minutos y los criterios para seguir o descartar al cliente",
+  "contexto": {
+    "quien_llama": "[TU NOMBRE], de [TU NEGOCIO]",
+    "que_vendes": "[SERVICIO O PRODUCTO, EN UNA FRASE]",
+    "precio_habitual": "[RANGO DE PRECIO Y FORMA DE COBRO]",
+    "con_quien_hablas": "[CARGO O SITUACIÓN DE LA PERSONA]",
+    "como_llegó": "[RECOMENDACIÓN / ANUNCIO / FORMULARIO WEB / EVENTO]"
+  },
+  "entradas": {
+    "lo_que_ya_sabes": "[LO QUE ESCRIBIÓ AL CONTACTAR, LITERAL]",
+    "tu_cliente_ideal": "[3 RASGOS DE LOS CLIENTES CON LOS QUE TRABAJAS BIEN]",
+    "tus_lineas_rojas": "[LO QUE NO HACES NUNCA: PLAZOS, PAGOS, TIPO DE TRABAJO]",
+    "duracion": "[MINUTOS DISPONIBLES]"
+  },
+  "pasos": [
+    "1. Escribe la apertura de 40 segundos: quién eres, cuánto va a durar, qué vais a decidir al final y permiso para tomar notas",
+    "2. Genera 12 preguntas agrupadas en cinco bloques: situación actual, problema y coste del problema, intentos previos, decisión y dinero, plazos",
+    "3. Para cada pregunta añade en una línea qué señal buena y qué señal mala puedes oír en la respuesta",
+    "4. Marca las 4 preguntas irrenunciables: si no las respondes, no hay presupuesto",
+    "5. Define el semáforo de cualificación: 3 condiciones para seguir, 3 para descartar y 2 para aparcar y volver en [PLAZO]",
+    "6. Escribe el cierre de la llamada: resumen en 3 frases con las palabras del cliente, siguiente paso con fecha y qué le vas a enviar",
+    "7. Escribe la frase exacta para decir que no, con elegancia, sin dejar mal a nadie"
+  ],
+  "restricciones": [
+    "El cliente debe hablar al menos el 70 por ciento del tiempo",
+    "Nada de presentar tu servicio hasta el minuto [X], y solo si ha pasado el semáforo",
+    "Prohibido dar precio cerrado en la llamada si falta alguna pregunta irrenunciable",
+    "Preguntas abiertas, una a una, sin encadenar dos en la misma frase"
+  ],
+  "errores_tipicos": [
+    "Soltar el catálogo entero antes de saber qué le duele",
+    "No preguntar por el presupuesto por vergüenza y descubrirlo tras dos semanas de trabajo",
+    "Hablar con quien no decide y no preguntarlo hasta el final",
+    "Salir de la llamada sin fecha concreta para el siguiente paso",
+    "Apuntar tus conclusiones en vez de las frases literales del cliente"
+  ],
+  "formato_salida": {
+    "bloque_1": "Guion en orden cronológico con minutos aproximados por bloque",
+    "bloque_2": "Las 12 preguntas con su señal buena y señal mala",
+    "bloque_3": "Semáforo de cualificación en 3 listas: seguir, aparcar, descartar",
+    "bloque_4": "Ficha de notas para rellenar durante la llamada, con 8 campos",
+    "bloque_5": "Frases literales de cierre y de rechazo"
+  },
+  "criterios_calidad": [
+    "Puedes leer el guion en pantalla y seguir la conversación sin perderte",
+    "Cada pregunta busca un hecho o una cifra, no una opinión",
+    "Al terminar tienes datos suficientes para poner precio sin volver a preguntar",
+    "El semáforo permite descartar sin dudar y sin culpa"
+  ]
+}

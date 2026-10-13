@@ -1,0 +1,36 @@
+{
+  "tarea": "Definir el contrato de traspaso entre el agente coordinador [NOMBRE DEL COORDINADOR] y el subagente [NOMBRE DEL SUBAGENTE]",
+  "contexto": {
+    "que_hace_el_subagente": "[SU TRABAJO EN UNA FRASE]",
+    "informacion_disponible": "[QUE DATOS TIENE EL COORDINADOR PARA DARLE]",
+    "resultado_esperado": "[QUE TIENE QUE DEVOLVER PARA QUE EL SIGUIENTE PASO FUNCIONE]",
+    "siguiente_paso": "[QUIEN USA ESE RESULTADO Y PARA QUE]"
+  },
+  "debes_definir": [
+    "El encargo: como se le pide el trabajo, en una frase fija con huecos",
+    "Entrada obligatoria: campos que siempre deben llegar y que pasa si falta alguno",
+    "Entrada opcional: campos que ayudan pero no bloquean",
+    "Salida: campos exactos, con nombre, tipo y ejemplo relleno",
+    "Estado final: hecho, hecho a medias o no se puede, con el motivo",
+    "Que NO debe devolver nunca: opiniones, texto de relleno, datos inventados",
+    "Que hace el coordinador ante cada estado final"
+  ],
+  "formato_salida": {
+    "1": "Ejemplo de encargo completo, ya relleno con datos de muestra",
+    "2": "Ejemplo de respuesta correcta del subagente, ya relleno",
+    "3": "Ejemplo de respuesta cuando faltan datos y no puede terminar",
+    "4": "Tabla de campos con: Nombre, Obligatorio, Que es, Ejemplo",
+    "5": "Reglas de fallo: 4 lineas de si pasa esto, entonces el coordinador hace esto otro"
+  },
+  "restricciones": [
+    "El subagente nunca pide informacion al usuario final: se la pide al coordinador",
+    "Prohibido rellenar huecos con suposiciones: si falta, se marca como faltante",
+    "Los nombres de los campos van en español, en minusculas y sin espacios",
+    "La salida no lleva saludos, disculpas ni explicaciones fuera de los campos"
+  ],
+  "criterios_calidad": [
+    "Con los ejemplos puedo probar el traspaso sin montar nada",
+    "Ningun campo de salida queda abierto a interpretacion",
+    "Esta claro que ocurre en los tres casos: bien, a medias y mal"
+  ]
+}

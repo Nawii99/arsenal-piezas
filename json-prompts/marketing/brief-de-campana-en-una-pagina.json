@@ -1,0 +1,36 @@
+{
+  "tarea": "Convertir una idea de campaña en un brief de una página que sirva para ejecutarla o encargarla",
+  "entradas": {
+    "idea_en_bruto": "[LA CAMPAÑA QUE TIENES EN LA CABEZA, EN 3 LÍNEAS]",
+    "producto_y_precio": "[QUÉ SE VENDE Y A QUÉ PRECIO]",
+    "publico": "[A QUIÉN LE HABLAS Y QUÉ SABE YA DE TI]",
+    "fechas": "[INICIO Y FIN]",
+    "presupuesto": "[CUÁNTO PUEDES GASTAR EN TOTAL]",
+    "canales_disponibles": "[REDES, EMAIL, WHATSAPP, TIENDA FÍSICA, ANUNCIOS...]",
+    "quien_ejecuta": "[TÚ SOLO, EQUIPO O FREELANCE]"
+  },
+  "secciones_del_brief": [
+    "Objetivo: una sola cifra y una fecha (ventas, citas o registros), nada de 'dar a conocer la marca'",
+    "Público prioritario: a quién se le habla primero y por qué es el que más rápido compra",
+    "Promesa central: una frase que diga qué gana el cliente y en cuánto tiempo",
+    "Mensajes de apoyo: tres razones para creer esa promesa, con la prueba de cada una",
+    "Objeciones: las tres pegas más probables y la respuesta a cada una",
+    "Canales y reparto: qué peso lleva cada canal y por qué",
+    "Piezas a producir: lista cerrada con responsable y fecha de entrega",
+    "Calendario: hitos por semana desde hoy hasta el cierre",
+    "Presupuesto: reparto por partidas y cuánto queda de colchón",
+    "Cómo sabremos si ha ido bien: métrica principal y dos de apoyo",
+    "Qué no vamos a hacer en esta campaña"
+  ],
+  "reglas": [
+    "Si falta un dato, escribe una pregunta concreta en vez de inventarlo",
+    "El objetivo tiene que ser coherente con el presupuesto y el tiempo disponible; si no lo es, dilo y propón uno realista",
+    "Máximo una página; frases cortas y español llano de España"
+  ],
+  "formato_salida": "Documento en markdown con las secciones en ese orden y, al final, un bloque 'Dudas por resolver' con las preguntas pendientes",
+  "criterios_calidad": [
+    "Un diseñador o un freelance podría empezar a trabajar solo con este documento",
+    "El objetivo se puede comprobar con un número el día del cierre",
+    "No aparecen adjetivos vacíos como innovador, disruptivo o único"
+  ]
+}

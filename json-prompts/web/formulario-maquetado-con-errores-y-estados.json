@@ -1,0 +1,37 @@
+{
+  "tarea": "Maquetar un formulario web completo con validacion visual, mensajes de error y estados de envio",
+  "contexto": {
+    "para_que_es": "[CONTACTO / PRESUPUESTO / RESERVA / ALTA EN LA LISTA]",
+    "quien_lo_rellena": "[TIPO DE CLIENTE]",
+    "que_pasa_al_enviar": "[TE LLEGA UN EMAIL / SE ABRE WHATSAPP / MENSAJE DE GRACIAS]"
+  },
+  "entradas": {
+    "campos": ["[NOMBRE, OBLIGATORIO]", "[EMAIL, OBLIGATORIO]", "[TELEFONO, OPCIONAL]", "[MENSAJE, OBLIGATORIO]"],
+    "texto_del_boton": "[ENVIAR CONSULTA]",
+    "aviso_legal": "[TEXTO DE LA CASILLA DE PRIVACIDAD]"
+  },
+  "instrucciones": [
+    "Una sola columna, etiquetas siempre visibles encima del campo, nunca dentro como placeholder",
+    "Cada campo con label asociada por for e id, y texto de ayuda debajo cuando haga falta",
+    "Usa el tipo correcto en cada campo (email, tel) para que salga el teclado adecuado en movil",
+    "Valida al salir del campo, no mientras se escribe, y muestra el error debajo en rojo con icono y texto claro",
+    "El error explica como arreglarlo, no solo que esta mal",
+    "Estados del boton: normal, enviando con texto 'Enviando...' y deshabilitado, y mensaje de exito que sustituye al formulario",
+    "Marca los obligatorios y anuncia los errores con aria-live para lectores de pantalla"
+  ],
+  "restricciones": [
+    "HTML, CSS y JS propio en un archivo, sin librerias",
+    "Pide solo los campos indicados: cada campo de mas reduce los envios",
+    "Sin captcha ni servicios externos"
+  ],
+  "formato_salida": {
+    "1_codigo": "archivo completo funcionando con validacion simulada",
+    "2_textos": "tabla con campo, etiqueta, ayuda y mensaje de error",
+    "3_conectarlo": "tres lineas explicando donde poner la direccion a la que se envia"
+  },
+  "criterios_calidad": [
+    "Se rellena entero con el teclado y siempre se ve donde estas",
+    "Los errores aparecen junto al campo, no todos juntos arriba",
+    "En movil no hay que hacer zoom para leer nada"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "tarea": "Auditar el coste de mi infraestructura y de mis llamadas a IA, calcular el coste por cliente y por operación, y montar topes, alertas y ahorros sin degradar el servicio",
+  "contexto": {
+    "servicios_que_pago": "[HOSTING, BASE DE DATOS, ALMACENAMIENTO, EMAIL, API DE IA, OTROS]",
+    "factura_mensual_actual": "[IMPORTE TOTAL Y DESGLOSE SI LO TIENES]",
+    "clientes_activos": "[NÚMERO]",
+    "precio_que_cobro": "[PRECIO MENSUAL O POR USO A MI CLIENTE]"
+  },
+  "entradas": {
+    "operaciones_que_gastan": "[GENERAR UN TEXTO CON IA, GUARDAR UN ARCHIVO, ENVIAR UN EMAIL, PROCESAR UNA IMAGEN]",
+    "volumen_mensual": "[CUÁNTAS VECES SE HACE CADA UNA AL MES]",
+    "datos_de_facturas": "[PEGA EL DESGLOSE DE LA FACTURA O DEL PANEL DE USO]",
+    "crecimiento_previsto": "[SI ESPERAS MULTIPLICAR CLIENTES POR X EN X MESES]"
+  },
+  "pasos": [
+    "1. Ordena el gasto de mayor a menor y separa lo fijo (suscripciones) de lo variable (por uso)",
+    "2. Calcula el coste unitario de cada operación variable y el coste medio por cliente activo al mes",
+    "3. Compara coste por cliente con precio de venta y di si el margen aguanta o si hay operaciones que dan pérdidas",
+    "4. Proyecta la factura si multiplico los clientes por 3 y por 10, señalando qué servicio se dispara primero y por qué",
+    "5. Busca ahorros por orden de esfuerzo: apagar entornos parados, ajustar tamaños sobredimensionados, borrar almacenamiento muerto y revisar el plan contratado",
+    "6. En la parte de IA, revisa lo que de verdad mueve la aguja: modelo elegido por tarea, longitud de contexto enviado, caché de respuestas repetidas y trabajos por lotes",
+    "7. Detecta el gasto silencioso: reintentos, bucles, tareas programadas que ya nadie usa, registros que crecen sin límite",
+    "8. Define topes duros por servicio y una alerta al llegar al 50, 80 y 100 por ciento del presupuesto mensual",
+    "9. Propón medir el gasto por cliente dentro de la aplicación, para saber quién sale caro",
+    "10. Ordena todas las medidas por euros ahorrados frente a riesgo de romper algo"
+  ],
+  "restricciones": [
+    "No inventes precios: si no conoces la tarifa exacta, pídeme el dato o marca el cálculo como estimación",
+    "Ningún ahorro puede empeorar la seguridad ni eliminar las copias de seguridad",
+    "Antes de proponer cambiar de proveedor, agota los ahorros dentro del actual",
+    "Habla en euros al mes, no en unidades técnicas sueltas"
+  ],
+  "formato_salida": {
+    "1_foto_actual": "Tabla markdown: servicio, fijo o variable, euros al mes, porcentaje del total",
+    "2_coste_unitario": "Tabla: operación, coste por unidad, veces al mes, coste mensual",
+    "3_margen": "Coste por cliente frente a precio de venta y conclusión clara",
+    "4_proyeccion": "Factura estimada con 3x y 10x clientes",
+    "5_plan_de_ahorro": "Tabla: medida, ahorro estimado, esfuerzo, riesgo, orden de ejecución",
+    "6_controles": "Topes, alertas y qué medir dentro de la aplicación"
+  },
+  "criterios_calidad": [
+    "Los números cuadran con las facturas que he pegado",
+    "Cada medida de ahorro dice cuánto ahorra y qué puede romper",
+    "Sé decir cuánto me cuesta un cliente al mes con una cifra",
+    "Quedan configurados topes que impiden una factura sorpresa"
+  ],
+  "errores_tipicos": [
+    "Optimizar céntimos en lo pequeño y no tocar el servicio que se lleva el 70 por ciento",
+    "Olvidar el coste de transferencia de datos y de almacenamiento acumulado",
+    "Dejar entornos de pruebas encendidos meses",
+    "Cambiar a un modelo de IA más barato sin comprobar que la calidad sigue siendo aceptable"
+  ]
+}

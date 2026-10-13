@@ -1,0 +1,49 @@
+{
+  "tarea": "Preparar la presentación y el documento del plan de tratamiento de [SERVICIO] para que el paciente decida con información clara",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CLÍNICA O CENTRO]",
+    "quien_presenta": "[EL PROFESIONAL / RECEPCIÓN / AMBOS]",
+    "importe_tipico": "[RANGO DE PRECIO DEL PLAN COMPLETO]",
+    "formas_de_pago": "[PAGO ÚNICO, FRACCIONADO, FINANCIACIÓN, BONOS]"
+  },
+  "entradas": {
+    "plan_tipo": "[NÚMERO DE SESIONES, DURACIÓN Y QUÉ INCLUYE CADA FASE]",
+    "objeciones_reales": "[LO QUE TE DICEN CUANDO NO ACEPTAN: PRECIO, TIEMPO, DUDA, CONSULTARLO EN CASA]",
+    "alternativas": "[QUÉ OPCIÓN MÁS CORTA O ESCALONADA EXISTE]"
+  },
+  "pasos": [
+    "1. Estructura la explicación en cuatro bloques: dónde estamos hoy, a dónde queremos llegar, qué hacemos para eso y qué pasa si no se hace nada.",
+    "2. Traduce cada fase del plan a lenguaje de paciente: qué notará, cuánto durará y cada cuánto vendrá.",
+    "3. Presenta el precio de tres formas en la misma frase: total, por sesión y por mes si se fracciona. El silencio después del precio lo rompe el paciente, no tú.",
+    "4. Prepara siempre dos opciones reales: el plan completo y una versión por fases con su primer paso. Nunca una sola opción a tomar o dejar.",
+    "5. Escribe la respuesta a las cuatro objeciones habituales, cada una en tres frases: reconocer, aportar el dato que falta y proponer el siguiente paso.",
+    "6. Diseña el documento de una página: qué incluye, qué no incluye, número de sesiones, precio, validez del presupuesto y qué pasa si hay que ajustarlo.",
+    "7. Define el cierre: se pregunta si quiere empezar por la opción A o la B y se reserva la primera cita en ese momento.",
+    "8. Escribe el seguimiento a las 72 horas para quien se lo lleva a casa, sin insistir y con una puerta abierta."
+  ],
+  "restricciones": [
+    "Nada de urgencia falsa, de descuentos que caducan hoy ni de miedo sobre lo que puede pasarle a su salud.",
+    "No se promete un resultado clínico concreto ni un plazo de curación.",
+    "El presupuesto se entrega por escrito siempre, aunque el paciente diga que sí de palabra.",
+    "Si el paciente no puede pagarlo, se ofrece la alternativa por fases sin hacerle sentir mal."
+  ],
+  "formato_salida": {
+    "1_guion": "La conversación completa por bloques, con las frases textuales",
+    "2_documento": "El presupuesto de una página, con todos los apartados",
+    "3_objeciones": "Cuatro objeciones con su respuesta de tres frases",
+    "4_seguimiento": "Mensaje de las 72 horas y segundo aviso a la semana",
+    "5_registro": "Qué apuntar de cada plan presentado para medir la aceptación"
+  },
+  "criterios_calidad": [
+    "El paciente puede repetir en casa, con sus palabras, en qué consiste el plan.",
+    "El documento cabe en una página y no tiene ninguna palabra técnica sin traducir.",
+    "Ninguna frase presiona ni asusta.",
+    "Se sabe cuántos planes se presentan y cuántos se aceptan cada mes."
+  ],
+  "errores_tipicos": [
+    "Soltar el precio total sin haber explicado antes el objetivo.",
+    "Hablar en términos técnicos que el paciente no repetirá a su pareja.",
+    "Presentar una sola opción y quedarse sin margen.",
+    "No entregar nada por escrito y perder el caso a los tres días."
+  ]
+}

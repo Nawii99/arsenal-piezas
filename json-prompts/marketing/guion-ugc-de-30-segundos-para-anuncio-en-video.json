@@ -1,0 +1,40 @@
+{
+  "tarea": "Escribir el guion completo de un anuncio en video vertical de 30 segundos con estilo UGC (parece contenido, no publicidad)",
+  "contexto": {
+    "producto": "[PRODUCTO O SERVICIO]",
+    "precio": "[PRECIO O RANGO]",
+    "quien_graba": "[YO MISMO | CLIENTE REAL | ACTOR | SOLO MANOS Y PRODUCTO]",
+    "problema_del_cliente": "[EL DOLOR CONCRETO]",
+    "prueba_disponible": "[RESULTADOS, ANOS, CLIENTES, RESENAS, DEMOSTRACION EN CAMARA]",
+    "oferta": "[OFERTA O MOTIVO PARA ACTUAR AHORA]",
+    "llamada_a_la_accion": "[COMPRAR | RESERVAR | ESCRIBIR POR WHATSAPP | DEJAR EMAIL]",
+    "plataforma": "[REELS | TIKTOK | AMBAS]"
+  },
+  "estructura": [
+    "0-3 s gancho: problema o escena reconocible, sin saludo ni logo",
+    "3-8 s contexto: quien habla y por que le hace caso el espectador",
+    "8-18 s demostracion: se ve el producto funcionando o el resultado",
+    "18-25 s prueba y objecion: se responde al 'ya, pero...'",
+    "25-30 s llamada a la accion clara y unica"
+  ],
+  "instrucciones": [
+    "Escribe el guion en tabla por tramos de tiempo con cuatro columnas: segundos, lo que se dice, lo que se ve y texto en pantalla",
+    "Lenguaje hablado real: frases cortas, sin subordinadas, como se lo contarias a un amigo",
+    "El video debe entenderse sin sonido: el texto en pantalla cuenta la historia por su cuenta",
+    "Anade indicaciones de grabacion sencillas: donde poner el movil, luz natural, plano vertical y sonido",
+    "Incluye 3 variantes alternativas solo del gancho para poder probar",
+    "Anade el texto principal del anuncio y 3 titulares para acompanar el video"
+  ],
+  "restricciones": [
+    "Sin musica con derechos ni marcas de terceros a la vista",
+    "Sin promesas de resultados garantizados ni afirmaciones de salud",
+    "Nada de mencionar redes sociales de la competencia ni pedir que compartan",
+    "Una sola llamada a la accion en todo el video"
+  ],
+  "formato_salida": "Tabla del guion por tramos, despues la lista de tomas a grabar, luego las 3 variantes de gancho y por ultimo los textos del anuncio",
+  "criterios_calidad": [
+    "El guion leido en voz alta cabe en 30 segundos a ritmo normal",
+    "Se entiende el producto en los primeros 10 segundos",
+    "Las indicaciones de grabacion se pueden seguir con un movil y luz de ventana"
+  ]
+}

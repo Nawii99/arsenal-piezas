@@ -1,0 +1,34 @@
+{
+  "tarea": "Diseñar un reto de 7 días para activar la comunidad de un negocio, con misión diaria, mensajes y mecánica de premio",
+  "entradas": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "promesa_del_reto": "[QUÉ PEQUEÑO RESULTADO CONSIGUE QUIEN LO HACE EN 7 DÍAS]",
+    "canal": "[INSTAGRAM, GRUPO DE WHATSAPP, TELEGRAM, DISCORD, EMAIL]",
+    "premio": "[QUÉ PUEDES REGALAR SIN QUE TE DUELA]",
+    "fechas": "[DÍA DE INICIO Y DÍA DE FIN]",
+    "oferta_posterior": "[QUÉ VENDES AL ACABAR, SI VENDES ALGO]",
+    "tiempo_diario_del_participante": "[10, 20 O 30 MINUTOS]"
+  },
+  "principios": [
+    "La misión del día 1 se completa en menos de 5 minutos para que nadie abandone al principio",
+    "Cada misión produce algo visible que se pueda compartir o comentar",
+    "La dificultad sube poco a poco y el día 5 es el de mayor esfuerzo",
+    "El día 7 cierra con celebración pública y con la puerta abierta a tu oferta, sin presionar",
+    "Todo se puede hacer desde el móvil y sin comprar nada"
+  ],
+  "formato_salida": {
+    "resumen": "Nombre del reto, promesa en una frase y regla de participación",
+    "tabla_dias": "Columnas: dia, mision, por_que_importa, tiempo_estimado, prueba_de_que_lo_has_hecho",
+    "mensajes": "Para cada día: mensaje de la mañana, recordatorio de la tarde y respuesta tipo a quien participa",
+    "captacion": "Tres publicaciones de anuncio previo y un mensaje de recordatorio la víspera",
+    "bases_del_premio": "Reglas claras de participación, plazo y forma de elegir ganador",
+    "cierre": "Guion del día 7 y mensaje de la oferta posterior"
+  },
+  "restricciones": [
+    "Nada de sorteos que obliguen a comprar",
+    "Nada de misiones que expongan datos personales de los participantes",
+    "Las bases deben decir quién organiza, plazo y cómo se avisa al ganador"
+  ],
+  "criterios_calidad": ["Se puede llevar dedicando menos de 30 minutos al día por parte del organizador", "Cada misión deja material publicable de la propia comunidad"],
+  "tono": "Motivador pero realista, tuteando, español de España"
+}

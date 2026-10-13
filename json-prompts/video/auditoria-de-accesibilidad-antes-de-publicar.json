@@ -1,0 +1,36 @@
+{
+  "tarea": "Auditar la accesibilidad de un vídeo antes de publicarlo y devolver un informe con acciones concretas",
+  "contexto": {
+    "video": "[TÍTULO Y DE QUÉ VA]",
+    "duracion": "[DURACIÓN]",
+    "donde_se_publica": "[WEB PROPIA / YOUTUBE / INTRANET / REDES]",
+    "nivel_exigido": "[BÁSICO / REQUISITO DE CLIENTE / WCAG 2.1 NIVEL AA]"
+  },
+  "entradas": {
+    "que_tiene_ya": "[SUBTÍTULOS, TRANSCRIPCIÓN, AUDIODESCRIPCIÓN, LENGUA DE SIGNOS: LO QUE HAYA]",
+    "descripcion_del_montaje": "[RÓTULOS, GRÁFICOS, MÚSICA, DESTELLOS, VOZ EN OFF, COLORES]",
+    "reproductor": "[YOUTUBE / VIMEO / REPRODUCTOR DE TU WEB]"
+  },
+  "puntos_a_revisar": [
+    "Existen subtítulos sincronizados y revisados, no solo automáticos",
+    "Hay transcripción disponible junto al vídeo",
+    "La información importante no se transmite solo por imagen sin audio ni solo por audio sin imagen",
+    "Contraste suficiente entre rótulos y fondo",
+    "Tamaño de texto legible en móvil y tiempo en pantalla suficiente para leerlo",
+    "No hay destellos rápidos ni parpadeos que puedan provocar crisis",
+    "El audio se entiende: música por debajo de la voz y sin saturación",
+    "El vídeo no se reproduce solo con sonido al cargar la página",
+    "El reproductor se maneja con teclado y tiene controles etiquetados",
+    "El título y la descripción explican el contenido sin depender del vídeo"
+  ],
+  "formato_salida": {
+    "tabla": "columnas: punto revisado, cumple sí o no, gravedad (bloqueante, importante, mejora), qué falla exactamente, cómo arreglarlo y tiempo estimado",
+    "semaforo": "valoración global en verde, ámbar o rojo con una frase de justificación",
+    "plan": "lista ordenada de las 5 acciones prioritarias antes de publicar"
+  },
+  "criterios_calidad": [
+    "Cada fallo indica la solución concreta, no un consejo genérico",
+    "Se distingue lo que impide publicar de lo que es una mejora deseable",
+    "El plan se puede ejecutar sin conocimientos técnicos"
+  ]
+}

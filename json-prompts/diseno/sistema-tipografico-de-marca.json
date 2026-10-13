@@ -1,0 +1,35 @@
+{
+  "tarea": "Definir el sistema tipográfico de una marca: qué tipografías usar, en qué tamaños y para qué",
+  "entradas": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "sector": "[SECTOR]",
+    "personalidad": "[EJ. CERCANA Y SERIA / TÉCNICA / ARTESANAL]",
+    "solo_gratuitas": "[SÍ O NO]",
+    "usos": "[WEB, PRESENTACIONES, FACTURAS, REDES, CARTELERÍA]",
+    "idiomas": "[ESPAÑOL, INGLÉS, OTROS]"
+  },
+  "propuestas": {
+    "cantidad": 3,
+    "cada_propuesta": ["tipografía de títulos", "tipografía de textos", "por qué encaja con la personalidad", "dónde descargarla y su licencia", "alternativa de sistema si falla"]
+  },
+  "escala_recomendada": {
+    "web": "tamaños en píxeles para H1, H2, H3, cuerpo, texto pequeño y botón, con interlineado",
+    "impreso": "tamaños en puntos para titular, subtítulo, cuerpo y pie de página",
+    "pesos": "qué pesos usar y cuáles no descargar para no cargar la web"
+  },
+  "reglas_de_uso": [
+    "Máximo dos familias tipográficas en la marca",
+    "Longitud de línea recomendada en textos largos",
+    "Cuándo usar mayúsculas y cuándo no",
+    "Qué hacer cuando la tipografía no está disponible, por ejemplo en un email"
+  ],
+  "formato_salida": {
+    "tipo": "tres fichas de propuesta + tabla de escala + lista de reglas",
+    "extra": "bloque de código CSS con la escala y las familias, con fallbacks"
+  },
+  "criterios_calidad": [
+    "Las dos tipografías se distinguen bien entre sí pero conviven",
+    "Todo el sistema se puede aplicar sin pagar licencias si se pidió solo gratuitas",
+    "Los tamaños son legibles en móvil"
+  ]
+}

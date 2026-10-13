@@ -1,0 +1,57 @@
+{
+  "tarea": "Revisa y diseña la autenticación de correo de mi dominio (SPF, DKIM, DMARC) y dame los registros exactos y el plan de puesta en marcha por fases",
+  "contexto": {
+    "dominio": "[MI DOMINIO]",
+    "quien_envia": "[TODAS LAS HERRAMIENTAS QUE MANDAN CORREO EN MI NOMBRE: gestor de correo, tienda, facturación, boletines, formularios, CRM]",
+    "volumen": "[CUÁNTOS CORREOS AL DÍA O AL MES]",
+    "problema": "[QUÉ PASA HOY: a spam, no llegan, rebotan, avisan de remitente sospechoso]",
+    "perfil": "sin conocimientos técnicos: dime qué pego y en qué casilla del panel de DNS"
+  },
+  "entradas": {
+    "registros_actuales": "[PEGA LOS TXT Y MX QUE YA TENGO]",
+    "cabeceras_de_un_correo_fallido": "[PEGA AQUÍ LAS CABECERAS SI PUEDES OBTENERLAS]",
+    "direccion_remitente": "[LA DIRECCIÓN DESDE LA QUE ENVÍO]"
+  },
+  "pasos": [
+    "1. Haz la lista completa de remitentes: cualquier herramienta que envíe en tu nombre y no esté autorizada te tira la reputación",
+    "2. Construye un único registro SPF que incluya a todos, vigilando el límite de consultas encadenadas",
+    "3. Activa DKIM en cada plataforma de envío y añade sus registros de firma",
+    "4. Publica DMARC en modo solo observación al principio, con una dirección donde recibir los informes",
+    "5. Comprueba la alineación: el dominio que se ve en el remitente debe coincidir con el que firma",
+    "6. Manda correos de prueba a Gmail, Outlook y a un correo corporativo, y revisa dónde caen",
+    "7. Con los informes en la mano, endurece DMARC por fases hasta rechazar la suplantación",
+    "8. Cuida el contenido: enlace de baja visible, sin acortadores raros, sin todo el mensaje metido en una imagen"
+  ],
+  "que_mirar": [
+    "que exista un solo registro SPF, nunca dos",
+    "que no envíes poniendo como remitente una dirección de un correo gratuito ajeno",
+    "si el dominio es nuevo, empezar con poco volumen y subir poco a poco",
+    "listas compradas o direcciones antiguas que generan rebotes y quejas",
+    "que los correos importantes de negocio salgan por una vía distinta a los boletines"
+  ],
+  "errores_tipicos": [
+    "pasar a rechazo total sin haber mirado antes los informes y cortar tus propias facturas",
+    "olvidar la herramienta de facturación o el formulario de la web al hacer la lista de remitentes",
+    "copiar registros de un tutorial sin cambiar el dominio",
+    "probar solo con tu propio correo, que casi siempre te acepta",
+    "mandar mil correos el primer día desde un dominio recién creado"
+  ],
+  "restricciones": [
+    "no toques los MX salvo que lo indiques expresamente y con marcha atrás",
+    "dame los valores listos para copiar y pegar, con el nombre del campo tal cual aparece en el panel",
+    "si falta información de algún remitente, márcalo como bloqueante antes de endurecer nada"
+  ],
+  "formato_salida": {
+    "1_inventario_remitentes": "herramienta | para qué envía | autorizada sí/no | qué falta",
+    "2_registros_a_publicar": "tipo | nombre | valor | dónde se pega",
+    "3_plan_por_fases": "semana 1 observar, semana 3 endurecer, semana 6 rechazar, con condición para pasar de fase",
+    "4_pruebas": "qué enviar, a qué buzones y qué resultado esperar",
+    "5_señales_de_alarma": "qué indica que hay que dar marcha atrás"
+  },
+  "criterios_calidad": [
+    "todos los remitentes reales están contemplados, incluidos formularios y facturación",
+    "cada valor está listo para copiar sin editar más que el dominio",
+    "hay una condición clara para avanzar de fase, no un plazo a ojo",
+    "queda escrito cómo volver atrás en diez minutos"
+  ]
+}

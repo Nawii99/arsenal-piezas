@@ -1,0 +1,32 @@
+{
+  "tarea": "Adaptar un material didáctico existente a tres niveles de dificultad manteniendo el mismo objetivo de aprendizaje",
+  "entradas": {
+    "tema": "[TEMA]",
+    "material_original": "[PEGA AQUÍ EL MATERIAL QUE YA USAS]",
+    "perfil_grupo": "[QUIÉN VA ATASCADO Y QUIÉN VA SOBRADO EN TU GRUPO]",
+    "tiempo_clase_min": "[MINUTOS DE CLASE]"
+  },
+  "principio": "El objetivo de aprendizaje es el mismo para los tres niveles; lo que cambia es el andamiaje, no la meta",
+  "niveles": {
+    "refuerzo": "Menos pasos por vez, vocabulario más simple, ejemplo ya empezado, plantilla con huecos y pista disponible",
+    "estandar": "El material tal cual, con un ejemplo resuelto y otro por resolver",
+    "ampliacion": "Mismo contenido con un caso abierto, un dato que falta o una restricción añadida que obligue a decidir"
+  },
+  "para_cada_nivel_entrega": [
+    "Explicación adaptada del concepto",
+    "Una actividad con instrucciones claras",
+    "Criterio de paso: qué tiene que conseguir el alumno para pasar al nivel siguiente",
+    "Señal de alarma: qué observas en clase si ese nivel le queda grande o pequeño"
+  ],
+  "formato_salida": "Tabla comparativa de los tres niveles y, debajo, un apartado desarrollado por nivel listo para fotocopiar",
+  "restricciones": [
+    "El nivel de refuerzo no puede ser una versión recortada que deje al alumno sin llegar al objetivo",
+    "El nivel de ampliación no introduce temario nuevo, profundiza el mismo",
+    "Ningún material puede etiquetar al alumno: usa nombres neutros como Ruta A, B y C en la versión que se entrega"
+  ],
+  "criterios_calidad": [
+    "Las tres versiones se pueden trabajar a la vez en la misma aula y en el mismo tiempo",
+    "Un alumno de refuerzo termina sabiendo hacer lo mismo que uno estándar",
+    "El profesor sabe en 30 segundos a quién dar cada versión"
+  ]
+}

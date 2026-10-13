@@ -1,0 +1,38 @@
+{
+  "tarea": "Priorizar las facturas pendientes de cobro, estimar cuánto se puede recuperar en las próximas semanas y redactar los mensajes de reclamación por tramos de retraso",
+  "rol": "Responsable de cobros firme y educado, que reclama sin perder al cliente",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "persona_que_firma": "[TU NOMBRE Y CARGO]",
+    "condiciones_actuales": "[PLAZO DE PAGO QUE OFRECES HOY]",
+    "tono": "Profesional, directo y sin agresividad"
+  },
+  "entradas": {
+    "facturas_pendientes": "[CLIENTE, NÚMERO DE FACTURA, IMPORTE, FECHA DE VENCIMIENTO Y DÍAS DE RETRASO]",
+    "historial_cliente": "[SI SUELE PAGAR TARDE, SI ES CLIENTE RECURRENTE Y CUÁNTO FACTURA AL AÑO]",
+    "contacto": "[PERSONA Y CANAL POR EL QUE LE ESCRIBES]"
+  },
+  "metodo": [
+    "Ordenar por importe y días de retraso, marcando lo que más caja libera con menos riesgo",
+    "Agrupar en tramos: por vencer, 1 a 15 días, 16 a 45 días y más de 45 días",
+    "Escribir un mensaje distinto por tramo, subiendo el nivel de firmeza sin amenazar",
+    "Incluir en cada mensaje número de factura, importe, fecha de vencimiento, forma de pago y una fecha concreta de respuesta",
+    "Proponer salidas cuando el cliente no puede pagar: pago parcial, calendario o parón del servicio",
+    "Sugerir dos cambios en las condiciones para que esto no se repita"
+  ],
+  "restricciones": [
+    "Nada de amenazas legales sin fundamento ni de tono humillante",
+    "Mensajes de menos de 120 palabras y con una sola petición clara",
+    "No ofrecer descuentos por pronto pago sin avisar de lo que cuestan"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de prioridades más mensajes listos para enviar",
+    "columnas": ["Cliente", "Factura", "Importe", "Días de retraso", "Tramo", "Acción", "Fecha de seguimiento"],
+    "extras": ["Cuatro mensajes, uno por tramo", "Dinero recuperable estimado en 15 y en 30 días", "Cambios propuestos en las condiciones de pago"]
+  },
+  "criterios_calidad": [
+    "Cada factura tiene acción y fecha de seguimiento",
+    "Los mensajes se pueden enviar sin retocar salvo los datos",
+    "La estimación de recuperación distingue lo probable de lo dudoso"
+  ]
+}

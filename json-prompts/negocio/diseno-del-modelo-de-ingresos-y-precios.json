@@ -1,0 +1,29 @@
+{
+  "tarea": "Diseñar y comparar modelos de ingresos para mi negocio y recomendar el más adecuado, con precios concretos y plan de transición",
+  "contexto": {
+    "que_vendo": "[PRODUCTO O SERVICIO, EN DETALLE]",
+    "como_cobro_hoy": "[POR HORAS / POR PROYECTO / PAGO ÚNICO / CUOTA / NADA AÚN]",
+    "ticket_medio": "[IMPORTE MEDIO POR VENTA]",
+    "coste_de_entregar": "[HORAS Y MATERIALES QUE TE CUESTA CADA ENTREGA]",
+    "frecuencia_de_compra": "[CUÁNTAS VECES AL AÑO TE COMPRA UN CLIENTE]",
+    "competencia": "[QUÉ COBRAN Y CÓMO LO COBRAN 2 O 3 COMPETIDORES]"
+  },
+  "modelos_a_evaluar": ["pago único", "suscripción o cuota mensual", "iguala con horas incluidas", "packs o bonos prepago", "pago por uso o por resultado", "comisión sobre venta", "gratis con extras de pago", "mixto: cuota base más extras"],
+  "instrucciones": [
+    "Descarta rápido los modelos que no encajan con mi negocio y explica en una línea por qué",
+    "Para los 3 que mejor encajen, calcula margen por cliente, previsibilidad del ingreso, esfuerzo de venta y riesgo de impago",
+    "Propón para cada uno una escalera de 3 niveles de precio con lo que incluye cada nivel",
+    "Ancla los precios: el nivel del medio debe ser el que quiero vender",
+    "Trabaja siempre con precios sin IVA y dilo explícitamente"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "partes": ["Tabla comparativa de los 3 modelos finalistas", "Recomendación con 3 razones", "Tabla de precios de los 3 niveles con lo incluido y lo excluido", "Frase para explicarle el cambio a un cliente actual sin que se sienta engañado", "Plan de transición en 60 días"]
+  },
+  "criterios_calidad": [
+    "Cada precio propuesto queda justificado por coste, valor para el cliente y referencia de mercado",
+    "Se indica el margen bruto estimado de cada nivel",
+    "No se recomienda un modelo de cuota si el cliente compra una vez en la vida",
+    "Incluye qué hacer con los clientes que están en el precio antiguo"
+  ]
+}

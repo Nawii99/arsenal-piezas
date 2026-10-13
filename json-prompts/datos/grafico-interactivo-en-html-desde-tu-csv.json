@@ -1,0 +1,40 @@
+{
+  "tarea": "Generar un único archivo HTML autónomo con un gráfico interactivo a partir de unos datos, listo para abrir en el navegador",
+  "contexto": {
+    "conclusion_a_destacar": "[LA IDEA QUE QUIERES QUE SE VEA A LA PRIMERA]",
+    "publico": "[CLIENTE / EQUIPO / VISITANTES DE MI WEB]",
+    "marca": "[NOMBRE DE TU EMPRESA Y COLORES HEX SI LOS TIENES]"
+  },
+  "entradas": {
+    "datos_csv": "[PEGA AQUÍ TUS DATOS EN CSV, CON LA PRIMERA FILA DE ENCABEZADOS]",
+    "tipo_de_grafico": "[BARRAS / LÍNEAS / ÁREA / DISPERSIÓN / COMBINADO / DECIDE TÚ]",
+    "unidades": "[EUROS, UNIDADES, PORCENTAJE...]",
+    "idioma_de_los_textos": "español de España"
+  },
+  "requisitos_tecnicos": [
+    "Un solo archivo HTML, sin instalar nada y sin depender de servidores propios",
+    "Los datos van incrustados dentro del archivo, no en un fichero aparte",
+    "Usar una librería de gráficos por CDN indicando la versión exacta, o SVG puro si basta",
+    "Formato español de números: punto para miles y coma para decimales, y el símbolo del euro cuando toque",
+    "Se ve bien en móvil y en pantalla grande, sin barras de desplazamiento horizontales",
+    "Etiqueta emergente al pasar el ratón con el valor exacto y su categoría",
+    "Título que dice la conclusión y subtítulo con la fuente y el periodo"
+  ],
+  "restricciones": [
+    "Nada de efectos 3D, sombras ni animaciones largas",
+    "Máximo seis series; si hay más, agrupar el resto como Otros y explicarlo",
+    "No inventar ni completar datos que falten: si hay huecos, mostrarlos como huecos",
+    "Todo el texto en español de España"
+  ],
+  "formato_salida": {
+    "1": "El código HTML completo dentro de un bloque, listo para copiar y pegar en un archivo",
+    "2": "Instrucciones en tres pasos para guardarlo y abrirlo",
+    "3": "Lista de qué cambiar en el código si añades más datos o cambias de colores"
+  },
+  "criterios_calidad": [
+    "Se abre haciendo doble clic y funciona sin conexión salvo la librería",
+    "Los números coinciden exactamente con los datos entregados",
+    "El gráfico se entiende sin leer ninguna explicación adicional"
+  ],
+  "tono": "instrucciones claras para alguien sin perfil técnico"
+}

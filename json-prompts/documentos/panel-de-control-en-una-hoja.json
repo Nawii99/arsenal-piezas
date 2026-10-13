@@ -1,0 +1,56 @@
+{
+  "tarea": "Convertir una exportacion en bruto en una hoja de control con pocos indicadores utiles y las instrucciones exactas para montarla",
+  "contexto": {
+    "negocio": "[A QUÉ ME DEDICO]",
+    "origen_datos": "[TIENDA ONLINE, TPV, RESERVAS, BANCO, HOJA MANUAL]",
+    "herramienta": "[EXCEL O GOOGLE SHEETS]",
+    "decision_que_quiero_tomar": "[EJ: QUÉ PRODUCTO IMPULSAR, SI SUBO PRECIOS, SI CONTRATO A ALGUIEN]"
+  },
+  "entradas": {
+    "muestra_datos": "[PEGA LAS 20 PRIMERAS FILAS CON SUS CABECERAS]",
+    "periodo_disponible": "[DESDE CUÁNDO HASTA CUÁNDO]",
+    "costes_conocidos": "[COSTE POR UNIDAD, COMISIONES, ENVÍO, SI LOS TENGO]",
+    "cada_cuanto_lo_miro": "[SEMANAL O MENSUAL]"
+  },
+  "pasos": [
+    "Revisa las cabeceras y dime que columnas sirven, cuales sobran y cuales faltan para la decision que quiero tomar.",
+    "Propon como maximo cinco indicadores, cada uno atado a una decision concreta; descarta los que no cambian nada.",
+    "Define cada indicador con su formula en palabras y su formula real de hoja de calculo.",
+    "Indica las columnas auxiliares que hay que anadir a los datos en bruto: mes, semana, categoria, margen unitario.",
+    "Da las instrucciones de tabla dinamica paso a paso: que va en filas, que en columnas, que en valores y que filtro.",
+    "Anade una comparativa contra el periodo anterior y contra la media, no solo el dato suelto.",
+    "Manda ordenar de mayor a menor y aplicar la regla del 20 por ciento que trae el grueso del resultado.",
+    "Anade dos alertas simples con formato condicional: cuando un numero baja de X, se pone rojo.",
+    "Escribe la rutina de actualizacion: pegar la nueva exportacion, actualizar, mirar cuatro numeros, en menos de diez minutos."
+  ],
+  "que_mirar": [
+    "Devoluciones y pedidos cancelados que inflan las ventas.",
+    "Ventas sin coste asociado que hacen creer que el margen es enorme.",
+    "Fechas en texto que rompen el agrupamiento por meses.",
+    "Un cliente o un pedido gigante que distorsiona la media."
+  ],
+  "errores_tipicos": [
+    "Montar un panel con quince graficos que nadie mira.",
+    "Mirar facturacion en vez de margen y celebrar meses que dan perdidas.",
+    "Comparar un mes de 30 dias con uno de 28 sin decirlo.",
+    "Rehacer la hoja entera cada mes en vez de pegar y actualizar."
+  ],
+  "restricciones": [
+    "Solo funciones basicas: SUMAR.SI.CONJUNTO, CONTAR.SI, BUSCARX, tablas dinamicas y formato condicional.",
+    "Nada de macros ni de complementos de pago.",
+    "Como maximo cinco indicadores y un solo grafico."
+  ],
+  "formato_salida": {
+    "bloque_1_indicadores": "Tabla: indicador | que decision me ayuda a tomar | formula en palabras | formula de hoja | donde va",
+    "bloque_2_preparacion": "Columnas auxiliares a anadir, con su formula lista para copiar",
+    "bloque_3_montaje": "Pasos numerados para crear la tabla dinamica y el grafico en la herramienta indicada",
+    "bloque_4_lectura": "Como interpretar cada numero y a partir de que valor tengo que actuar",
+    "bloque_5_rutina": "La rutina de actualizacion en 6 pasos"
+  },
+  "criterios_calidad": [
+    "Cada indicador esta unido a una decision; si no, se elimina.",
+    "Las formulas se pueden copiar y pegar y funcionan con las cabeceras reales de mi exportacion.",
+    "El panel se actualiza pegando datos nuevos, sin rehacer nada.",
+    "Un mes cualquiera se puede comprobar a mano y da el mismo resultado."
+  ]
+}

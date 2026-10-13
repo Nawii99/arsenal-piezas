@@ -1,0 +1,51 @@
+{
+  "tarea": "Redactar el protocolo operativo diario de recepción y salas de [NOMBRE DEL CENTRO], listo para que lo siga alguien en su primer día",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CLÍNICA O CENTRO]",
+    "horario": "[APERTURA Y CIERRE POR DÍA]",
+    "personas": "[QUIÉN ABRE, QUIÉN CIERRA Y QUIÉN SUSTITUYE]",
+    "salas_y_equipos": "[SALAS, CAMILLAS, APARATOS Y MATERIAL QUE HAY QUE PREPARAR]"
+  },
+  "entradas": {
+    "tareas_actuales": "[LO QUE SE HACE HOY AL ABRIR Y AL CERRAR, AUNQUE ESTÉ SOLO EN LA CABEZA DE ALGUIEN]",
+    "fallos_recientes": "[QUÉ SE HA OLVIDADO O SALIDO MAL EN LOS ÚLTIMOS MESES]",
+    "proveedores": "[MATERIAL, LAVANDERÍA, LIMPIEZA, MANTENIMIENTO Y SUS TELÉFONOS]"
+  },
+  "pasos": [
+    "1. Divide el día en cuatro bloques: apertura, entre pacientes, cierre y viernes o fin de semana.",
+    "2. Escribe cada tarea como una acción con verbo y resultado comprobable, no como un recordatorio vago.",
+    "3. Ordena la apertura por recorrido físico, de la puerta hacia dentro, para que no haya que volver sobre los pasos.",
+    "4. Define el bloque entre pacientes: preparar sala, revisar la agenda de la siguiente hora, avisar de retrasos de más de diez minutos y reponer material.",
+    "5. Escribe el cierre incluyendo caja, copia de seguridad, mensajes sin contestar, agenda del día siguiente revisada y apagado de equipos.",
+    "6. Añade el bloque semanal: pedidos de material, revisión de caducidades, limpieza a fondo y comprobación de aparatos.",
+    "7. Crea la ficha de incidencias: qué se hace si falla la luz, si un aparato no enciende, si un paciente se marea, si no aparece el profesional o si alguien se enfada en recepción. Para la parte sanitaria, quién es la persona responsable a la que se avisa.",
+    "8. Marca las cinco tareas críticas que no se pueden saltar nunca y ponlas en una tarjeta aparte.",
+    "9. Define quién revisa que el protocolo se cumple y con qué frecuencia."
+  ],
+  "restricciones": [
+    "Ninguna tarea que implique valoración clínica se asigna a personal no sanitario.",
+    "Las historias y documentos de pacientes no se dejan a la vista ni en pantallas desbloqueadas.",
+    "Cada bloque tiene que caber en una hoja: si no cabe, hay tareas de más.",
+    "No se escriben tareas que dependan de la memoria de una persona concreta."
+  ],
+  "formato_salida": {
+    "1_checklist_apertura": "Lista con casillas, en orden de recorrido y con el tiempo estimado",
+    "2_checklist_cierre": "Igual, con la caja y las copias de seguridad",
+    "3_rutina_entre_pacientes": "Las cinco acciones de cada cambio de paciente",
+    "4_bloque_semanal": "Tareas con día asignado",
+    "5_incidencias": "Tabla de qué pasa, qué haces y a quién avisas, con teléfonos",
+    "6_tarjeta_critica": "Las cinco cosas que no se saltan nunca, en formato de tarjeta"
+  },
+  "criterios_calidad": [
+    "Alguien que entra hoy puede abrir el centro mañana con esta hoja.",
+    "Cada tarea se puede marcar como hecha o no hecha, sin interpretación.",
+    "La apertura completa se ejecuta en menos de [X] minutos.",
+    "Las incidencias tienen nombre y teléfono de quien decide."
+  ],
+  "errores_tipicos": [
+    "Escribir un manual de veinte páginas que nadie lee.",
+    "Poner tareas sin dueño y que se queden en tierra de nadie.",
+    "No incluir el apagado y la revisión de equipos y encontrarse una avería el lunes.",
+    "Dejar la agenda del día siguiente sin revisar la noche antes."
+  ]
+}

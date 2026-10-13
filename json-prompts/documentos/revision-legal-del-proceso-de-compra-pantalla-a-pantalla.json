@@ -1,0 +1,30 @@
+{
+  "tarea": "Auditar el proceso de compra de una tienda online paso a paso y devolver correcciones concretas con el texto exacto que debe mostrarse",
+  "entradas": {
+    "plataforma": "[SHOPIFY / WOOCOMMERCE / OTRA]",
+    "pantallas": "[DESCRIBE O PEGA EL CONTENIDO DE: FICHA DE PRODUCTO, CARRITO, DATOS, ENVÍO, PAGO, CONFIRMACIÓN]",
+    "casillas": "[QUÉ CASILLAS APARECEN Y SI VIENEN MARCADAS]",
+    "boton_final": "[TEXTO ACTUAL DEL BOTÓN DE PAGO]",
+    "email_confirmacion": "[PEGA EL EMAIL QUE RECIBE EL CLIENTE]"
+  },
+  "puntos_de_control": [
+    "Precio total con impuestos visible antes de pedir datos personales",
+    "Gastos de envío mostrados antes del pago, nunca como sorpresa final",
+    "Plazo de entrega indicado en la ficha y en el resumen",
+    "Resumen del pedido justo antes de confirmar, con posibilidad de corregir errores",
+    "Botón final que exprese la obligación de pago, por ejemplo Pagar pedido",
+    "Aceptación de condiciones con casilla propia sin premarcar y enlace que abra el documento",
+    "Consentimiento de newsletter separado de la compra",
+    "Confirmación del pedido por email en soporte duradero, con condiciones y formulario de desistimiento",
+    "Información sobre garantía legal y atención al cliente accesible desde el checkout",
+    "Enlace a la plataforma europea de resolución de litigios en línea"
+  ],
+  "metodo": ["Recorre las pantallas en orden", "Por cada punto indica ESTADO y evidencia", "Propón la corrección con el texto literal a pegar", "Ordena por riesgo y por esfuerzo"],
+  "formato_salida": {
+    "tipo": "tabla en markdown más anexo de textos",
+    "columnas": ["Pantalla", "Punto de control", "Estado", "Qué falla", "Texto o cambio propuesto", "Riesgo"]
+  },
+  "restricciones": ["No propongas rediseños de marca: solo lo que afecta al cumplimiento y a la claridad", "Cada corrección debe poderse aplicar desde el panel de la plataforma indicada"],
+  "criterios_calidad": ["Ningún punto se marca correcto sin evidencia en las pantallas aportadas", "Los textos propuestos están listos para copiar y pegar"],
+  "aviso": "Revisión orientativa sobre la información aportada."
+}

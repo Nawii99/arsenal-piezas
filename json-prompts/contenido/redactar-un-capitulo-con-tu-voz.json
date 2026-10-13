@@ -1,0 +1,46 @@
+{
+  "tarea": "Escribir el borrador completo de un capítulo de un libro o guía práctica manteniendo la voz del autor",
+  "contexto": {
+    "titulo_obra": "[TÍTULO DEL LIBRO O GUÍA]",
+    "capitulo": "[NÚMERO Y TÍTULO DEL CAPÍTULO]",
+    "lugar_en_el_indice": "[QUÉ CAPÍTULO VA ANTES Y CUÁL DESPUÉS]",
+    "promesa_del_capitulo": "[QUÉ SABRÁ HACER EL LECTOR AL TERMINARLO]",
+    "extension": "[Nº DE PALABRAS: 800, 1500, 3000]",
+    "nivel_del_lector": "[EMPIEZA DE CERO / YA TIENE NOCIONES]"
+  },
+  "entradas": {
+    "puntos_obligatorios": "[LOS 3 A 6 APARTADOS QUE DEBE TOCAR]",
+    "muestra_de_voz": "[PEGA AQUÍ 200 PALABRAS TUYAS YA ESCRITAS]",
+    "ejemplos_propios": "[CASOS, CIFRAS O SITUACIONES REALES QUE PUEDES CONTAR]",
+    "prohibido_decir": "[TEMAS, PALABRAS O PROMESAS QUE NO QUIERES USAR]"
+  },
+  "pasos": [
+    "Analizar la muestra de voz y describir en 5 rasgos cómo escribe el autor antes de empezar",
+    "Abrir el capítulo con una escena o situación reconocible, nunca con una definición",
+    "Desarrollar cada apartado con explicación, ejemplo y aplicación inmediata",
+    "Incluir al menos un cuadro de 'error típico' y uno de 'atajo que funciona'",
+    "Cerrar con un resumen de 5 líneas y un ejercicio para hacer hoy"
+  ],
+  "restricciones": [
+    "Párrafos de 4 líneas como máximo",
+    "Nada de datos, estudios o citas inventadas; marcar como [DATO A VERIFICAR] lo que haga falta comprobar",
+    "Sin lenguaje de manual académico ni listas huecas de ventajas",
+    "Respetar el vocabulario del autor de la muestra de voz",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con jerarquía de títulos",
+    "incluye": [
+      "Texto del capítulo con subtítulos",
+      "Cuadros destacados marcados como > RECUADRO",
+      "Ejercicio final numerado",
+      "Lista al final de lo que el autor debe rellenar o verificar",
+      "Sugerencia de 2 imágenes o esquemas y qué debería mostrar cada uno"
+    ]
+  },
+  "criterios_calidad": [
+    "Se lee como escrito por una persona con oficio, no como un resumen de internet",
+    "Cada apartado incluye un ejemplo concreto",
+    "Cumple la extensión pedida con margen del 10%"
+  ]
+}

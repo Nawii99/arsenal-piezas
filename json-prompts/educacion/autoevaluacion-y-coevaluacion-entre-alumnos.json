@@ -1,0 +1,35 @@
+{
+  "tarea": "Crear un sistema de autoevaluacion y coevaluacion para [NOMBRE DEL PROYECTO O TRABAJO EN GRUPO]",
+  "contexto": {
+    "nivel_del_alumnado": "[NIVEL]",
+    "tamano_de_los_grupos": "[NUMERO DE PERSONAS]",
+    "duracion_del_proyecto": "[SEMANAS O SESIONES]",
+    "peso_en_la_nota": "[PORCENTAJE QUE APORTA LA COEVALUACION]",
+    "experiencia_previa_del_grupo": "[PRIMERA VEZ O YA LO HAN HECHO]"
+  },
+  "metodo": [
+    "Usa 4 o 5 indicadores de aportacion al grupo, todos observables por los companeros",
+    "Escala de 4 puntos con descriptores en primera persona para la autoevaluacion",
+    "Anade una pregunta abierta obligatoria que pida un ejemplo concreto por cada valoracion alta o baja",
+    "Incluye reglas antitrampa: valoraciones sin ejemplo no cuentan, no se puede dar el maximo a todo el grupo sin justificar",
+    "Define como se combina con la nota del profesor y cuando el profesor puede anular una valoracion"
+  ],
+  "restricciones": [
+    "La coevaluacion nunca decide sola mas del peso indicado",
+    "Nada de puntuar simpatia, amistad ni comportamiento fuera de la tarea",
+    "Los formularios deben rellenarse en menos de 10 minutos",
+    "Lenguaje adaptado a la edad indicada"
+  ],
+  "formato_salida": {
+    "1_ficha_autoevaluacion": "Formulario listo para imprimir o copiar en un formulario online",
+    "2_ficha_coevaluacion": "Formulario para valorar a cada companero, con la pregunta de ejemplo obligatoria",
+    "3_formula_de_nota": "Como se calcula el coeficiente individual y ejemplo numerico con un grupo de 4",
+    "4_protocolo_del_profesor": "Que hacer ante notas infladas, represalias o un grupo que se hunde",
+    "5_guion_de_presentacion": "Lo que dices en clase el primer dia para que se lo tomen en serio, en 10 lineas"
+  },
+  "criterios_calidad": [
+    "Un alumno de la edad indicada entiende cada indicador sin preguntar",
+    "El sistema detecta al que no aporta sin depender de la denuncia directa",
+    "El calculo de nota se puede hacer a mano"
+  ]
+}

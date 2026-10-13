@@ -1,0 +1,38 @@
+{
+  "tarea": "Construir el inventario de la superficie expuesta a internet de una empresa pequena y decidir, servicio por servicio, si se cierra, se protege o se mantiene",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "dominios": "[DOMINIOS Y SUBDOMINIOS QUE CONOCES]",
+    "ips_publicas": "[IPS FIJAS SI LAS TIENES, O NO LO SE]",
+    "proveedores": "[HOSTING, NUBE, CORREO, TIENDA, CRM...]",
+    "paneles_y_accesos": "[PANELES DE ADMINISTRACION, FTP, ESCRITORIO REMOTO, CAMARAS, NAS...]",
+    "responsables": "[QUIEN SE ENCARGA DE CADA COSA]"
+  },
+  "procedimiento": [
+    "1. Listar todo lo publicado agrupado por tipo: webs, correo, paneles, acceso remoto, ficheros, dispositivos",
+    "2. Para cada elemento pedir o deducir: para que sirve hoy, quien lo usa, si tiene doble factor, si esta actualizado y quien lo mantiene",
+    "3. Marcar los clasicos peligrosos: paneles de administracion publicos, FTP sin cifrar, escritorio remoto abierto, bases de datos accesibles, entornos de pruebas olvidados, camaras y NAS publicados",
+    "4. Decidir por cada uno: CERRAR, RESTRINGIR (por VPN o por lista de IPs), PROTEGER (doble factor, contrasena fuerte, actualizacion) o MANTENER",
+    "5. Proponer orden de ejecucion empezando por lo que no usa nadie"
+  ],
+  "restricciones": [
+    "Solo activos propios: no analizar ni sugerir escanear sistemas de terceros",
+    "No usar ni describir herramientas de intrusion; el trabajo es de inventario y configuracion",
+    "Si falta informacion, marcarlo como PENDIENTE DE COMPROBAR con la pregunta exacta a hacer al proveedor"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de inventario mas plan de accion",
+    "columnas": ["activo", "para que sirve", "quien lo usa", "riesgo (alto/medio/bajo)", "decision", "responsable", "fecha limite"],
+    "extras": [
+      "Lista de los 5 elementos mas peligrosos con explicacion de una linea cada uno",
+      "Correo listo para enviar al proveedor de hosting pidiendo los datos que faltan",
+      "Recordatorio de revision semestral"
+    ]
+  },
+  "criterios_calidad": [
+    "Ningun activo queda sin decision ni sin responsable",
+    "El riesgo se justifica con lo que podria pasar, no con etiquetas genericas",
+    "El plan es ejecutable por una persona no tecnica con ayuda de su proveedor"
+  ],
+  "tono": "ordenado y sin alarmismo"
+}

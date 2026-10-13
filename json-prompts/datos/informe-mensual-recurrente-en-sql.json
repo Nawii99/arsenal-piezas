@@ -1,0 +1,39 @@
+{
+  "tarea": "Crear un paquete de consultas SQL reutilizables que produzca el informe mensual de un negocio cambiando solo el mes",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "motor_sql": "[POSTGRESQL / MYSQL / SQL SERVER / BIGQUERY]",
+    "mes_referencia": "[MES A ANALIZAR, EJ: 2026-08]"
+  },
+  "entradas": {
+    "tablas": "[TABLAS DE PEDIDOS, LÍNEAS, CLIENTES Y PRODUCTOS CON SUS COLUMNAS]",
+    "metricas": "[EJ: FACTURACIÓN, PEDIDOS, TICKET MEDIO, CLIENTES NUEVOS, CLIENTES QUE REPITEN, TOP 10 PRODUCTOS, VENTAS POR CANAL]",
+    "definicion_cliente_nuevo": "[EJ: PRIMER PEDIDO PAGADO EN ESE MES]",
+    "que_excluir": "[EJ: PEDIDOS CANCELADOS, DEVUELTOS, PRUEBAS INTERNAS]",
+    "moneda_e_impuestos": "[IMPORTES CON O SIN IVA]"
+  },
+  "procedimiento": [
+    "1. Definir un bloque inicial de parámetros de fecha para que solo haya que cambiar dos valores",
+    "2. Crear una CTE base de pedidos válidos que apliquen las exclusiones una sola vez",
+    "3. Escribir una consulta independiente por métrica, cada una con su nombre de bloque",
+    "4. Añadir comparación con el mes anterior y con el mismo mes del año pasado, en valor y en variación",
+    "5. Cerrar con una consulta resumen de una sola fila lista para pegar en el informe"
+  ],
+  "restricciones": [
+    "Rangos de fecha cerrado-abierto para no perder ni duplicar el último día",
+    "Cada importe redondeado a dos decimales y con nombre de columna en español",
+    "Nada de calcular el ticket medio dividiendo dos medias: se divide facturación total entre pedidos",
+    "Si una métrica no se puede calcular con las tablas dadas, decirlo en vez de aproximarla"
+  ],
+  "formato_salida": {
+    "1_parametros": "Bloque con las dos fechas a cambiar cada mes",
+    "2_consultas": "Una consulta por métrica, numerada y con título",
+    "3_resumen": "Consulta única con todas las métricas en una fila",
+    "4_lectura": "Qué mirar primero en el informe y qué señales de alarma buscar",
+    "5_rutina": "Pasos para ejecutarlo cada mes en cinco minutos"
+  },
+  "criterios_calidad": [
+    "Las cifras del resumen coinciden con las de las consultas individuales",
+    "Cambiar el mes no obliga a tocar ninguna otra parte del SQL"
+  ]
+}

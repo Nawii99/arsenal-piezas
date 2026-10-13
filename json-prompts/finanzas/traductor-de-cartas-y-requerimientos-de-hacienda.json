@@ -1,0 +1,36 @@
+{
+  "tarea": "Explicar en lenguaje llano una notificación de la Agencia Tributaria o de una hacienda autonómica, identificar qué se pide y con qué plazo, y preparar un borrador de respuesta",
+  "perfil_experto": "Asesor fiscal español con experiencia en procedimientos de comprobación y en escritos de alegaciones",
+  "contexto": {
+    "forma_juridica": "[AUTÓNOMO O SOCIEDAD]",
+    "fecha_notificacion": "[FECHA EN QUE LA RECIBISTE O EN QUE ACCEDISTE A LA NOTIFICACIÓN]",
+    "tiene_asesor": "[SÍ O NO]",
+    "historial": "[SI HA HABIDO NOTIFICACIONES ANTERIORES SOBRE LO MISMO]"
+  },
+  "entradas": {
+    "texto_notificacion": "[PEGA AQUÍ EL TEXTO COMPLETO DE LA CARTA O REQUERIMIENTO]",
+    "documentacion_disponible": "[QUÉ DOCUMENTOS TIENES YA A MANO]"
+  },
+  "analisis_requerido": [
+    "Qué tipo de comunicación es: requerimiento de información, propuesta de liquidación, inicio de sanción, simple aviso o diligencia",
+    "Qué impuesto y qué ejercicio o periodo afecta",
+    "Qué te piden exactamente, punto por punto",
+    "Cuál es el plazo y desde cuándo cuenta, señalando si son días hábiles o naturales",
+    "Qué pasa si no contestas y qué opciones tienes: aportar documentación, alegar, conformarse o recurrir"
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen en 5 líneas: qué quieren, de qué año y para cuándo",
+    "bloque_2": "Semáforo de gravedad (informativo, hay que actuar, urgente) con el motivo",
+    "bloque_3": "Lista numerada de documentos a reunir, con quién te los puede dar",
+    "bloque_4": "Calendario: fecha límite y dos fechas de recordatorio previas",
+    "bloque_5": "Borrador de escrito de respuesta con encabezado, exposición de hechos, alegaciones y solicitud, con huecos entre corchetes",
+    "bloque_6": "Cuándo conviene parar y llamar a un asesor o abogado"
+  },
+  "restricciones": [
+    "No afirmes plazos ni artículos que no aparezcan en el texto aportado: si no consta, dilo y di dónde comprobarlo",
+    "Tono sereno, sin dramatizar y sin minimizar",
+    "El borrador debe ser respetuoso y basarse solo en hechos que el usuario pueda acreditar"
+  ],
+  "criterios_calidad": ["El usuario sabe en 2 minutos qué hacer hoy", "Ningún documento pedido queda sin asignar responsable", "El borrador se puede presentar tras rellenar los corchetes"],
+  "aviso": "Orientación general; ante liquidaciones o sanciones conviene revisión profesional antes de presentar nada"
+}

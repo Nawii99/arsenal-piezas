@@ -1,0 +1,40 @@
+{
+  "tarea": "Puntuar y priorizar mi lista de prospectos y convertirla en un plan de prospección semanal realista",
+  "entradas": {
+    "lista": "[PEGA AQUÍ TU LISTA: EMPRESA, CONTACTO, ORIGEN, ÚLTIMO CONTACTO Y NOTAS]",
+    "cliente_ideal": "[RESUMEN DE TU CLIENTE IDEAL]",
+    "horas_semanales": "[HORAS QUE PUEDES DEDICAR A PROSPECTAR]",
+    "canales_disponibles": "[EMAIL, TELÉFONO, LINKEDIN, VISITA, WHATSAPP]",
+    "objetivo_del_mes": "[REUNIONES, PRESUPUESTOS O VENTAS QUE NECESITAS]"
+  },
+  "sistema_de_puntuacion": [
+    "Encaje con el cliente ideal (0-5)",
+    "Temperatura: frío, tibio por señal reciente, o caliente por interacción previa (0-5)",
+    "Facilidad de contacto: tengo el nombre y el canal directo (0-5)",
+    "Tamaño estimado del negocio para mí (0-5)",
+    "Coste de intentarlo: tiempo que me llevará (resta hasta 3)"
+  ],
+  "pasos": [
+    "Puntuar cada prospecto y ordenarlos de mayor a menor",
+    "Repartirlos en tres grupos: A (atacar esta semana), B (esta quincena), C (aparcar o descartar)",
+    "Asignar canal y primer paso a cada prospecto del grupo A",
+    "Montar el calendario semanal encajando la prospección en bloques de tiempo",
+    "Definir los números que hay que apuntar cada día para saber si funciona"
+  ],
+  "restricciones": [
+    "No inventes datos que no estén en la lista: marca los huecos",
+    "El plan debe caber en las horas indicadas, sin optimismo",
+    "Deja siempre un bloque para responder a quien conteste"
+  ],
+  "formato_salida": {
+    "tabla_prioridad": "prospecto | puntuación | grupo | canal | primer paso | día previsto",
+    "calendario": "De lunes a viernes con bloques de hora y qué hacer en cada uno",
+    "panel_de_seguimiento": "5 números a apuntar: contactos nuevos, respuestas, reuniones, presupuestos, cierres",
+    "descartes": "Prospectos del grupo C con el motivo"
+  },
+  "criterios_calidad": [
+    "Cada prospecto del grupo A tiene un primer paso concreto y un día asignado",
+    "El plan se puede ejecutar aunque la semana se tuerza a la mitad",
+    "El panel se rellena en menos de dos minutos al día"
+  ]
+}

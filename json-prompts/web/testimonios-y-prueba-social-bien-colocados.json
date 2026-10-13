@@ -1,0 +1,34 @@
+{
+  "tarea": "Convertir opiniones reales de clientes en bloques de prueba social para una página de aterrizaje y decidir su ubicación",
+  "entradas": {
+    "opiniones_en_bruto": "[PEGA AQUÍ RESEÑAS, MENSAJES DE WHATSAPP O EMAILS DE CLIENTES]",
+    "que_vendo": "[PRODUCTO O SERVICIO]",
+    "objeciones_principales": "[LAS 3 DUDAS QUE MÁS FRENAN LA COMPRA]",
+    "permisos": "[PUEDO PUBLICAR NOMBRE COMPLETO / SOLO INICIAL / CON FOTO / SIN FOTO]",
+    "otras_pruebas": "[Nº DE CLIENTES, AÑOS, CERTIFICADOS, MEDIOS, LOGOS]"
+  },
+  "metodo": [
+    "Asigna cada opinión a la objeción que desmonta",
+    "Reescribe cada testimonio con la estructura situación de partida, qué hizo, resultado y frase textual del cliente",
+    "Conserva las palabras del cliente y no las suavices ni las adornes",
+    "Descarta las opiniones que solo dicen 'muy buenos profesionales'",
+    "Detecta objeciones sin cubrir y propón a quién pedirle testimonio y con qué preguntas"
+  ],
+  "colocacion": [
+    "Una frase corta de confianza justo debajo del titular",
+    "El testimonio que rompe la objeción de precio junto al bloque de oferta",
+    "El caso más completo antes del cierre final",
+    "Cifras y logos en una franja discreta, nunca como bloque protagonista"
+  ],
+  "formato_salida": {
+    "testimonios": "Ficha por testimonio: texto final, nombre a mostrar, foto sí o no, objeción que cubre y ubicación",
+    "caso_destacado": "Un mini caso de 120 palabras con antes, proceso y después",
+    "peticion": "Plantilla de mensaje de WhatsApp o email para pedir testimonio con 4 preguntas concretas"
+  },
+  "restricciones": [
+    "Prohibido inventar o completar opiniones que no estén en las entradas",
+    "No cambies cifras ni resultados aportados por el cliente",
+    "Si no hay permiso para el nombre, propón alternativa honesta como 'Marta G., Valencia'"
+  ],
+  "criterios_calidad": ["Cada testimonio suena a persona real y responde a una duda concreta de compra"]
+}

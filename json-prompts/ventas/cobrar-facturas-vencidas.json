@@ -1,0 +1,51 @@
+{
+  "tarea": "Preparar la secuencia de reclamación de una factura vencida, del recordatorio amable al último aviso, con guion de llamada",
+  "contexto": {
+    "acreedor": "[TU NOMBRE O EMPRESA], autónomo o pyme en España",
+    "deudor": "[CLIENTE], relación [NUEVA / ANTIGUA / RECURRENTE]",
+    "aviso": "Esto es gestión comercial de cobro, no asesoría jurídica; para reclamaciones formales consulta con un profesional"
+  },
+  "entradas": {
+    "factura": "[NÚMERO, IMPORTE, FECHA DE EMISIÓN, FECHA DE VENCIMIENTO]",
+    "condiciones_pactadas": "[PLAZO DE PAGO, FORMA DE PAGO, SI HAY PRESUPUESTO O CONTRATO FIRMADO]",
+    "que_ha_pasado": "[SILENCIO / PROMESAS SIN CUMPLIR / DISCUSIÓN SOBRE EL TRABAJO]",
+    "trabajo_en_curso": "[QUÉ LE ESTÁS HACIENDO AHORA MISMO]",
+    "interlocutores": "[QUIÉN TE CONTRATÓ Y QUIÉN PAGA EN ADMINISTRACIÓN]"
+  },
+  "pasos": [
+    "1. Comprueba primero lo tuyo: factura correcta, datos fiscales, enviada a la dirección buena y con el pedido o presupuesto adjunto",
+    "2. Diseña la escalera con fechas: día 1 tras vencimiento recordatorio neutro, día 7 mensaje con datos de pago y pregunta por el trámite, día 14 llamada, día 21 aviso de suspensión, día 30 último aviso escrito",
+    "3. Redacta cada mensaje: asunto con número de factura, importe visible, fecha vencida, datos de pago y una petición concreta con fecha",
+    "4. Escribe el guion de la llamada a administración: cómo pedir el número de registro de la factura y la fecha prevista de pago",
+    "5. Define cuándo paras el trabajo y cómo lo comunicas sin insultar a nadie",
+    "6. Prepara la opción de acuerdo: pago fraccionado con fechas y compromiso por escrito",
+    "7. Escribe el aviso final indicando que pasas el asunto a reclamación formal, sin amenazas ni descalificaciones"
+  ],
+  "restricciones": [
+    "Tono firme y educado siempre, incluso en el último aviso",
+    "Prohibido amenazar con cosas que no vas a hacer",
+    "Prohibido reclamar por canales públicos o a terceros",
+    "Cada mensaje repite importe, número de factura y fecha de vencimiento",
+    "Toda promesa del cliente se confirma por escrito el mismo día"
+  ],
+  "errores_tipicos": [
+    "Pedir disculpas por reclamar lo tuyo",
+    "Escribir solo a tu contacto y nunca a quien tramita los pagos",
+    "Seguir entregando trabajo mientras la deuda crece",
+    "Aceptar ya te pago la semana que viene sin fecha ni confirmación escrita",
+    "Perder el rastro: no guardar los envíos y las respuestas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Lista de comprobación previa de la factura",
+    "bloque_2": "Calendario de la escalera con fecha, canal y objetivo de cada paso",
+    "bloque_3": "Los mensajes completos, uno por paso",
+    "bloque_4": "Guion de llamada con preguntas y respuestas a las excusas típicas",
+    "bloque_5": "Modelo de acuerdo de pago fraccionado y registro para anotar cada contacto"
+  },
+  "criterios_calidad": [
+    "Ningún mensaje deja dudas sobre cuánto, por qué y para cuándo",
+    "La escalera sube de firmeza sin perder la educación en ningún paso",
+    "Queda por escrito cada promesa y cada envío",
+    "Sabes en qué día exacto dejas de trabajar para ese cliente"
+  ]
+}

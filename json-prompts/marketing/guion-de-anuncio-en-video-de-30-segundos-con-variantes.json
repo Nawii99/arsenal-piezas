@@ -1,0 +1,35 @@
+{
+  "tarea": "Escribir 3 guiones distintos de anuncio en vídeo de 30 segundos para [PRODUCTO O SERVICIO] en [PLATAFORMA: META / TIKTOK / YOUTUBE]",
+  "contexto": {
+    "oferta": "[QUÉ SE OFRECE Y A QUÉ PRECIO O CONDICIÓN]",
+    "publico": "[A QUIÉN VA DIRIGIDO Y QUÉ LE FRENA A COMPRAR]",
+    "problema": "[EL PROBLEMA CONCRETO QUE RESUELVE]",
+    "prueba": "[TESTIMONIOS, DATOS O GARANTÍAS REALES QUE TENGAS]",
+    "destino": "[A DÓNDE LLEVA EL ANUNCIO]"
+  },
+  "angulos_obligatorios": [
+    "Versión A - problema y solución: la escena del problema en los 3 primeros segundos",
+    "Versión B - testimonio o UGC: alguien real contando su antes y después, grabado con móvil",
+    "Versión C - demostración: se ve el producto funcionando sin apenas hablar"
+  ],
+  "reglas": [
+    "Marca y producto visibles antes del segundo 5",
+    "Una sola idea por anuncio y una sola llamada a la acción",
+    "Sin superlativos ni promesas de resultados: solo lo que esté en [PRUEBA]",
+    "Respeta las normas de publicidad: nada de afirmaciones de salud, ingresos o antes/después engañosos",
+    "Se entiende sin sonido: todo lo importante va también en rótulo"
+  ],
+  "formato_salida": {
+    "por_version": "Tabla con Segundo | Guion hablado | Plano y acción | Rótulo en pantalla",
+    "extras": [
+      "Texto principal y titular del anuncio para cada versión",
+      "3 ganchos alternativos por versión para los primeros 3 segundos",
+      "Lista de material que hay que grabar o conseguir",
+      "Qué mirar para decidir cuál gana: retención a 3 s y clics"
+    ]
+  },
+  "criterios_calidad": [
+    "Las tres versiones no se parecen entre sí ni en el gancho ni en el formato",
+    "El guion cabe en 30 segundos leído a ritmo natural (unas 75 palabras)"
+  ]
+}

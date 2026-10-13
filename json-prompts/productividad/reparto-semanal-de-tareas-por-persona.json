@@ -1,0 +1,33 @@
+{
+  "tarea": "Repartir las tareas pendientes de un proyecto entre las personas del equipo para la semana, respetando capacidad real, habilidades, prioridades y dependencias",
+  "contexto": {
+    "semana": "[DEL DD/MM AL DD/MM]",
+    "tareas_pendientes": "[LISTA: TAREA, HORAS ESTIMADAS, PRIORIDAD ALTA/MEDIA/BAJA, DE QUÉ DEPENDE]",
+    "personas": "[NOMBRE, HABILIDADES, HORAS DISPONIBLES ESTA SEMANA]",
+    "ausencias": "[VACACIONES, MEDIAS JORNADAS, REUNIONES FIJAS]",
+    "entregas_de_la_semana": "[QUÉ HAY QUE TENER SÍ O SÍ EL VIERNES]"
+  },
+  "metodo": [
+    "Reserva un 20% de la jornada de cada persona para imprevistos, correos y reuniones: nadie se planifica al 100%",
+    "Coloca primero lo que bloquea a otras personas, aunque no sea lo más urgente para el cliente",
+    "Agrupa tareas parecidas en la misma persona y el mismo día para evitar saltos de contexto",
+    "Evita que dos personas dependan la una de la otra el mismo día: pon el trabajo del que bloquea antes",
+    "Si la carga no cabe, no la comprimas: mueve tareas a la lista de 'no entra esta semana' por orden de prioridad"
+  ],
+  "restricciones": [
+    "Nadie supera sus horas disponibles menos el 20% de colchón",
+    "Cada persona tiene como mucho 3 tareas grandes por semana",
+    "No asignes a alguien una tarea para la que no tiene la habilidad indicada"
+  ],
+  "formato_salida": {
+    "bloque_1": "Un apartado por persona: tareas, horas asignadas, horas disponibles y porcentaje de carga",
+    "bloque_2": "Lista 'No entra esta semana' con el motivo",
+    "bloque_3": "Avisos: sobrecargas, dependencias frágiles y qué decidir el lunes por la mañana"
+  },
+  "criterios_calidad": [
+    "La suma de horas asignadas por persona nunca supera su disponibilidad",
+    "Las entregas obligatorias del viernes están cubiertas y con margen",
+    "Ninguna tarea depende de otra que se hace más tarde en la semana"
+  ],
+  "tono": "operativo y breve, pensado para pegar en el chat del equipo"
+}

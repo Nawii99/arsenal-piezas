@@ -1,0 +1,39 @@
+{
+  "tarea": "Escribir el guion completo, palabra por palabra, de un vídeo de YouTube de [DURACIÓN: 8-12 MIN] sobre [TEMA DEL VÍDEO]",
+  "contexto": {
+    "canal": "[NOMBRE DEL CANAL Y DE QUÉ VA]",
+    "publico": "[A QUIÉN LE HABLAS: QUÉ SABE YA Y QUÉ PROBLEMA TIENE]",
+    "promesa": "[QUÉ SE LLEVA QUIEN LO VE ENTERO]",
+    "tono": "[CERCANO / DIDÁCTICO / DIRECTO]",
+    "cta_final": "[QUÉ QUIERES QUE HAGA AL TERMINAR]"
+  },
+  "estructura_obligatoria": [
+    "0-15 s gancho: resultado concreto o afirmación incómoda; sin saludo, sin careta, sin 'bienvenidos al canal'",
+    "15-45 s contexto y bucle abierto: por qué importa ahora y qué se va a ver, sin destriparlo",
+    "Cuerpo en 3 a 5 bloques: cada bloque es idea + ejemplo real + frase puente al siguiente",
+    "Microgancho cada 60-90 s: pregunta, dato, cambio de plano, anécdota o adelanto de lo que viene",
+    "Cierre: resumen en 3 frases y una sola llamada a la acción"
+  ],
+  "reglas": [
+    "Lenguaje hablado, frases cortas, tuteo, español de España",
+    "Prohibido el relleno: si un párrafo no aporta información nueva, se elimina",
+    "Marca las indicaciones visuales entre corchetes: [B-ROLL], [GRÁFICO EN PANTALLA], [PLANO DETALLE]",
+    "Nada de datos inventados: si falta un dato, escribe [DATO A COMPROBAR]"
+  ],
+  "formato_salida": {
+    "tipo": "documento en markdown",
+    "secciones": [
+      "Titulos: 5 opciones de menos de 60 caracteres",
+      "Guion: tabla con columnas Minuto | Bloque | Texto locutado | Indicación visual",
+      "Capitulos: lista de marcas de tiempo con su nombre",
+      "Descripcion: 120 palabras con la promesa y el CTA",
+      "Notas_de_grabacion: 5 avisos prácticos para el día de grabar"
+    ]
+  },
+  "criterios_calidad": [
+    "El gancho se entiende sin contexto previo y no promete nada que el vídeo no cumpla",
+    "Cada bloque se puede resumir en una sola frase",
+    "Leído en voz alta a ritmo normal dura la duración pedida (unas 140 palabras por minuto)",
+    "No hay dos bloques que digan lo mismo con otras palabras"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Analizar el embudo de conversión de [WEB O PRODUCTO], cuantificar la fuga de cada paso y priorizar dónde actuar",
+  "entradas": {
+    "pasos_del_embudo": ["[PASO 1: EJ VISITA FICHA] = [NÚMERO]", "[PASO 2: EJ AÑADIR AL CARRITO] = [NÚMERO]", "[PASO 3: EJ INICIAR PAGO] = [NÚMERO]", "[PASO 4: EJ COMPRA] = [NÚMERO]"],
+    "periodo": "[FECHAS]",
+    "valor_medio_pedido": "[IMPORTE EN EUROS]",
+    "segmento": "[TODO EL TRÁFICO / SOLO MÓVIL / SOLO PAGO / NUEVOS]",
+    "referencia_sector": "[SI TIENES ALGÚN DATO DE TU SECTOR, PÉGALO; SI NO, ESCRIBE NO TENGO]"
+  },
+  "calculos": [
+    "Tasa de paso entre cada par de escalones y tasa global de principio a fin",
+    "Número de personas perdidas en cada tramo y su valor económico usando el valor medio de pedido",
+    "Detección del tramo con mayor pérdida absoluta, no solo el de peor porcentaje",
+    "Comparación entre segmentos si se aportan datos de más de uno"
+  ],
+  "analisis": [
+    "Para el tramo peor, listar las causas típicas de fuga en ese punto del recorrido",
+    "Separar causas de expectativa (lo prometido no coincide), de fricción (formularios, pasos, velocidad) y de confianza (precios ocultos, envíos, devoluciones)",
+    "Proponer 5 mejoras concretas ordenadas por impacto entre esfuerzo"
+  ],
+  "restricciones": [
+    "Si algún paso tiene menos de 100 personas, avisa de que la conclusión es frágil",
+    "Nada de recomendaciones genéricas: cada mejora debe decir qué se cambia y dónde",
+    "No prometas porcentajes de mejora; habla de rango y de supuestos"
+  ],
+  "formato_salida": {
+    "tabla_embudo": ["paso", "personas", "tasa_de_paso", "perdidos", "valor_perdido_estimado"],
+    "diagnostico": "Párrafo corto señalando el cuello de botella y por qué",
+    "acciones": "Tabla con accion, hipotesis, esfuerzo, impacto_estimado y como_medir_si_funciona"
+  },
+  "criterios_calidad": [
+    "Los números cuadran entre sí y se muestran los cálculos",
+    "La acción número 1 ataca el tramo de mayor pérdida en euros"
+  ],
+  "tono": "Práctico, orientado a decidir"
+}

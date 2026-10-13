@@ -1,0 +1,37 @@
+{
+  "tarea": "Construir el mapa de palabras clave de un producto de marketplace y repartirlas entre título, bullets, backend y campañas de anuncios",
+  "contexto": {
+    "producto": "[PRODUCTO Y VARIANTE]",
+    "como_lo_llama_la_gente": "[2 O 3 NOMBRES COLOQUIALES]",
+    "marketplace_y_pais": "[AMAZON.ES / ETSY / OTRO]",
+    "competidores": "[3 PRODUCTOS PARECIDOS O ASIN/ENLACES]",
+    "keywords_que_ya_uso": "[LISTA ACTUAL, SI TIENES]",
+    "precio": "[PRECIO]"
+  },
+  "metodo": [
+    "Genera candidatas por 6 vías: nombre del producto, problema que resuelve, uso u ocasión, para quién es (regalo, bebé, profesional), características físicas (material, tamaño, color) y compatibilidad",
+    "Añade sinónimos regionales de España y errores de escritura habituales",
+    "Marca cada palabra con intención: navegación (busca una marca), investigación (compara) o compra (busca ya el producto)",
+    "Estima volumen relativo y competencia en escala alta/media/baja y explica en qué te basas, sin inventar cifras exactas",
+    "Descarta las que no encajan con lo que vendes de verdad: atraen clics que no compran y hunden la conversión"
+  ],
+  "reglas": [
+    "No incluyas marcas registradas de terceros en ningún bloque",
+    "El backend no repite palabras del título ni de los bullets y no lleva comas",
+    "Prioriza cola larga cuando el producto es nuevo o tiene pocas reseñas"
+  ],
+  "formato_salida": {
+    "tabla_principal": "Columnas: palabra clave | intención | volumen estimado | competencia | dónde la coloco | por qué",
+    "bloque_titulo": "Las 3 a 5 que deben ir sí o sí en el título",
+    "bloque_bullets": "Las 8 a 12 para bullets y descripción",
+    "bloque_backend": "Cadena lista para copiar, máximo 249 bytes",
+    "bloque_anuncios": "10 palabras para campaña exacta y 10 negativas que deberías bloquear desde el día uno",
+    "descartadas": "Lista de las rechazadas con el motivo en media línea"
+  },
+  "criterios_calidad": [
+    "Ninguna palabra aparece en dos bloques a la vez",
+    "Al menos el 40% de la lista es de cola larga de 3 o más palabras",
+    "Cada negativa propuesta tiene un motivo claro (otro producto, otra talla, búsqueda informativa)"
+  ],
+  "aviso": "Los volúmenes son estimaciones para priorizar, no datos oficiales; confírmalos con el informe de términos de búsqueda de tu cuenta"
+}

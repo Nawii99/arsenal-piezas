@@ -1,0 +1,38 @@
+{
+  "tarea": "Revisar la accesibilidad de los componentes de interfaz de [NOMBRE DEL PRODUCTO] y devolver las correcciones necesarias",
+  "contexto": {
+    "producto": "[QUÉ ES Y QUIÉN LO USA]",
+    "nivel_objetivo": "[AA POR DEFECTO / AAA SI TE LO EXIGEN]",
+    "motivo": "[LICITACIÓN PÚBLICA / CLIENTE GRANDE / CONVICCIÓN PROPIA]",
+    "colores": "[PEGA TUS COLORES PRINCIPALES EN HEX]"
+  },
+  "entradas": {
+    "componentes": "[LISTA: BOTONES, CAMPOS, MENÚ, VENTANA MODAL, PESTAÑAS, TABLA, AVISOS]"
+  },
+  "revisar_en_cada_componente": [
+    "Contraste de texto, de iconos y de bordes de campos",
+    "Se puede llegar y usar solo con el teclado, en un orden lógico",
+    "El foco se ve claramente y no se pierde al abrir o cerrar",
+    "Tiene nombre y rol comprensibles para un lector de pantalla",
+    "La información no depende solo del color: hay texto o icono que la acompañe",
+    "Los errores se anuncian y se asocian al campo correcto",
+    "El área táctil llega a 44 px y hay espacio entre elementos pulsables",
+    "Las animaciones se pueden reducir y nada parpadea de forma agresiva"
+  ],
+  "restricciones": [
+    "Nada de recomendaciones genéricas: cada punto se refiere a un componente concreto de la lista",
+    "Indica siempre el criterio que se incumple en lenguaje llano, sin códigos crípticos",
+    "Separa lo que es obligatorio de lo que es mejora recomendable"
+  ],
+  "formato_salida": {
+    "tipo": "lista de comprobación por componente",
+    "columnas": ["componente", "comprobación", "cumple sí/no/dudoso", "qué corregir exactamente", "prioridad"],
+    "extras": ["Resumen de los 5 fallos más repetidos", "Cómo comprobarlo tú mismo en 10 minutos con el teclado"]
+  },
+  "criterios_calidad": [
+    "Cada fallo lleva la corrección concreta y no una descripción del problema",
+    "Se puede repasar la lista sin conocimientos técnicos",
+    "Las prioridades distinguen lo que bloquea el uso de lo que solo molesta"
+  ],
+  "tono": "riguroso pero explicado para alguien no técnico"
+}

@@ -1,0 +1,33 @@
+{
+  "tarea": "Diseñar un plan por fases (patrón strangler fig) para extraer [PARTE QUE QUIERES SEPARAR: PAGOS, EMAILS, INFORMES...] del monolito de [NOMBRE DE TU EMPRESA] y convertirla en un servicio aparte, sin parar el servicio ni congelar el desarrollo",
+  "entradas": {
+    "parte_a_extraer": "[QUÉ HACE ESA PARTE HOY]",
+    "motivo": "[POR QUÉ LA SEPARAS: SE CAE, ES LENTA, LA TOCAN VARIOS EQUIPOS, NECESITA ESCALAR SOLA]",
+    "datos_que_toca": "[TABLAS O DATOS QUE USA Y QUIÉN MÁS LOS USA]",
+    "personas": "[CUÁNTOS PROGRAMADORES Y CUÁNTAS HORAS A LA SEMANA]",
+    "plazo": "[SEMANAS DISPONIBLES]"
+  },
+  "metodo": [
+    "Fase 0: medir el comportamiento actual (tiempos, errores, volumen) para poder comparar después",
+    "Fase 1: aislar la parte dentro del monolito como módulo con una única puerta de entrada, sin sacarla todavía",
+    "Fase 2: montar el servicio nuevo vacío y desviar solo lectura o un porcentaje pequeño de tráfico",
+    "Fase 3: mover la escritura y decidir la estrategia de datos (base compartida temporal, copia sincronizada o base propia)",
+    "Fase 4: apagar el código viejo y borrarlo de verdad, no dejarlo comentado"
+  ],
+  "riesgos_a_cubrir": ["Datos que quedan a medias entre los dos lados", "Transacciones que antes eran una y ahora son dos", "Latencia extra por llamadas de red", "Dependencias ocultas de otras partes del monolito"],
+  "restricciones": [
+    "Cada fase debe caber en 2 semanas o menos y poder desplegarse sola",
+    "Toda fase incluye interruptor de activación y pasos exactos de vuelta atrás",
+    "Prohibido un corte único de tipo apagamos el viejo y encendemos el nuevo"
+  ],
+  "formato_salida": {
+    "tipo": "plan en Markdown con una tabla por fase",
+    "columnas_tabla": ["Fase", "Objetivo", "Tareas", "Quién", "Duración", "Cómo sabemos que ha ido bien", "Vuelta atrás"],
+    "extra": "Lista final de 10 preguntas que el equipo debe responder antes de empezar"
+  },
+  "criterios_calidad": [
+    "Cada fase deja el sistema funcionando aunque se pare el proyecto ahí",
+    "Se dice explícitamente qué pasa con los datos en cada fase",
+    "Ninguna tarea es vaga: nada de migrar la lógica sin decir qué lógica"
+  ]
+}

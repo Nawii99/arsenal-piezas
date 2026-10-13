@@ -1,0 +1,35 @@
+{
+  "tarea": "Construir una previsión financiera a 3 años (ingresos, costes, resultado y caja) partiendo de hipótesis explícitas y revisables",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "inicio": "[MES Y AÑO DE ARRANQUE DE LA PREVISIÓN]",
+    "forma_juridica": "[AUTÓNOMO / SL]"
+  },
+  "entradas": {
+    "lineas_de_ingreso": "[POR CADA UNA: NOMBRE, PRECIO SIN IVA, COSTE DIRECTO POR UNIDAD]",
+    "ventas_previstas": "[UNIDADES O CLIENTES QUE ESPERAS EL PRIMER MES Y CÓMO CREES QUE CRECERÁ]",
+    "costes_fijos_mes": "[ALQUILER, SUELDOS Y SEGUROS SOCIALES, CUOTA DE AUTÓNOMOS, GESTORÍA, SOFTWARE, SUMINISTROS, MARKETING]",
+    "inversion_inicial": "[EQUIPOS, OBRA, STOCK, FIANZAS, ALTAS Y LICENCIAS]",
+    "cobros_y_pagos": "[DÍAS QUE TARDAS EN COBRAR Y DÍAS QUE TE DAN PARA PAGAR]",
+    "financiacion": "[APORTACIÓN PROPIA, PRÉSTAMO, CUOTA MENSUAL Y PLAZO]"
+  },
+  "instrucciones": [
+    "Empieza escribiendo una tabla de hipótesis numeradas: cada supuesto, su valor y por qué lo das por bueno",
+    "Calcula el año 1 mes a mes y los años 2 y 3 por totales anuales",
+    "Separa siempre margen bruto (ingresos menos costes directos) de resultado tras costes fijos",
+    "Trabaja sin IVA en ingresos y gastos, pero calcula aparte el efecto del IVA en la caja",
+    "Incluye una fila de caja acumulada y señala el mes de caja mínima",
+    "Haz tres escenarios: prudente (ventas al 60%), base y optimista (ventas al 130%)"
+  ],
+  "formato_salida": {
+    "tipo": "tablas en markdown listas para copiar a una hoja de cálculo",
+    "tablas": ["Hipótesis", "Año 1 mes a mes: ingresos, coste directo, margen bruto, costes fijos, resultado, caja acumulada", "Resumen años 1-3 por escenario"],
+    "cierre": "Media página de conclusiones en lenguaje llano: cuándo llega el punto de equilibrio, cuánta caja hace falta y qué hipótesis es la más peligrosa"
+  },
+  "criterios_calidad": [
+    "Todos los totales cuadran y las sumas se pueden comprobar a mano",
+    "Ninguna cifra aparece sin estar en la tabla de hipótesis",
+    "Los costes de la Seguridad Social y la gestoría no se olvidan",
+    "El crecimiento no es una línea recta sin explicación"
+  ]
+}

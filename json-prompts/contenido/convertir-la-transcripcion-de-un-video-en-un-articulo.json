@@ -1,0 +1,37 @@
+{
+  "tarea": "Convertir una transcripción hablada en un artículo escrito bien estructurado, conservando el contenido y las ideas del autor",
+  "entradas": {
+    "transcripcion": "[PEGA AQUÍ LA TRANSCRIPCIÓN COMPLETA]",
+    "tema": "[DE QUÉ VA]",
+    "autor": "[QUIÉN HABLA Y QUÉ AUTORIDAD TIENE]",
+    "destino": "[BLOG / NEWSLETTER / LINKEDIN / GUÍA EN PDF]",
+    "extension": "[NÚMERO DE PALABRAS OBJETIVO]"
+  },
+  "proceso": [
+    "1. Limpiar muletillas, repeticiones, titubeos y frases empezadas y no terminadas",
+    "2. Agrupar el contenido por temas, aunque en el audio aparezcan desordenados",
+    "3. Crear encabezados que anuncien lo que viene, no adornos",
+    "4. Convertir las enumeraciones habladas en listas y los datos en tablas",
+    "5. Escribir una entradilla de 3 frases que diga qué se lleva quien lea",
+    "6. Mantener las frases propias del autor que suenen bien, marcándolas como cita",
+    "7. Señalar los momentos donde el audio se entiende mal o queda incompleto"
+  ],
+  "restricciones": [
+    "No añadir ideas, datos ni opiniones que no estén en la transcripción",
+    "No pulir tanto que se pierda la forma de hablar del autor",
+    "Nada de conclusiones vacías tipo en definitiva, la clave está en",
+    "Español de España"
+  ],
+  "formato_salida": {
+    "titulo": "Titular de menos de 60 caracteres",
+    "entradilla": "3 frases",
+    "articulo": "Texto con H2 y H3, listas y citas destacadas",
+    "citas_destacadas": "3 frases textuales del autor listas para usar en redes",
+    "lagunas": "Lista de partes inaudibles o incompletas que hay que revisar"
+  },
+  "criterios_calidad": [
+    "Se lee como un artículo, no como una transcripción ordenada",
+    "Todo lo que se afirma aparece en el audio original",
+    "Los encabezados permiten entender el artículo leyéndolos solo a ellos"
+  ]
+}

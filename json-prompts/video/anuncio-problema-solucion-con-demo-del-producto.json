@@ -1,0 +1,45 @@
+{
+  "tarea": "Escribir un anuncio en video de 45 segundos con estructura problema-agitacion-solucion-demostracion-oferta, con voz en off y demo real del producto",
+  "contexto": {
+    "producto": "[PRODUCTO O SERVICIO]",
+    "como_se_usa": "[PASOS DE USO, DEL 1 AL 4]",
+    "problema": "[QUE LE PASA AL CLIENTE HOY]",
+    "alternativa_actual": "[QUE HACE AHORA PARA APANARSE]",
+    "diferencia_clave": "[QUE HACES TU QUE LA ALTERNATIVA NO]",
+    "precio_y_oferta": "[PRECIO Y PROMOCION SI LA HAY]",
+    "donde_se_compra": "[WEB, TIENDA O TELEFONO]"
+  },
+  "reglas_de_oficio": [
+    "La demostracion ocupa al menos la mitad del anuncio",
+    "Cada beneficio que se dice se ve al mismo tiempo en pantalla",
+    "Se ensena el momento incomodo del problema antes de la solucion",
+    "Se graba en plano cenital o plano detalle cuando importan las manos",
+    "La voz en off va medio segundo por delante de la imagen que describe",
+    "El precio se dice en voz alta y se pone en rotulo a la vez"
+  ],
+  "estructura": [
+    "0-4 s Problema en imagen, sin explicarlo todavia",
+    "4-10 s Agitacion: por que es un fastidio y cuanto cuesta no arreglarlo",
+    "10-14 s Presentacion del producto y promesa en una frase",
+    "14-32 s Demostracion paso a paso, un paso por plano",
+    "32-38 s Prueba: opinion de cliente, dato o garantia",
+    "38-45 s Oferta y llamada a la accion"
+  ],
+  "restricciones": [
+    "Voz en off de maximo 110 palabras en total",
+    "Nada de efectos de sonido descritos que no puedas grabar",
+    "Sin comparaciones con marcas competidoras por su nombre",
+    "Espanol de Espana, frases cortas, tuteando"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla plano a plano",
+    "columnas": ["Plano", "Segundos", "Encuadre y movimiento de camara", "Accion en escena", "Voz en off literal", "Rotulo"],
+    "extras": ["Lista de material y atrezzo", "Plan de rodaje por orden de grabacion, no por orden del guion", "Version reducida de 20 segundos con los planos que se mantienen"]
+  },
+  "criterios_calidad": [
+    "Se puede grabar en una sola localizacion",
+    "Alguien que no conoce el producto entiende como funciona al terminar",
+    "La voz en off cabe en el tiempo indicado leyendola a ritmo normal",
+    "La version de 20 segundos sigue teniendo sentido por si sola"
+  ]
+}

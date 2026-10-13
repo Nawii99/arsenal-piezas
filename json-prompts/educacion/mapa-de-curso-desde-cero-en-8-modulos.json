@@ -1,0 +1,43 @@
+{
+  "tarea": "Diseñar el temario completo de un curso partiendo del resultado final que debe conseguir el alumno, no de la lista de contenidos que sabe el formador",
+  "contexto": {
+    "tema_del_curso": "[TEMA DEL CURSO]",
+    "alumno_objetivo": "[QUIÉN ES TU ALUMNO: PROFESIÓN, EDAD, SITUACIÓN]",
+    "nivel_de_partida": "[CERO / BÁSICO / INTERMEDIO]",
+    "transformacion_prometida": "[QUÉ SABRÁ HACER AL TERMINAR QUE HOY NO SABE]",
+    "duracion_total": "[HORAS O SEMANAS]",
+    "formato": "[VÍDEO GRABADO / DIRECTO ONLINE / PRESENCIAL / MIXTO]"
+  },
+  "metodo": [
+    "Escribe primero el resultado final observable del curso en una frase que empiece por un verbo de acción",
+    "Descompón ese resultado en 5 a 8 hitos intermedios ordenados: cada hito es un módulo",
+    "Para cada módulo, define qué sabe hacer el alumno al acabarlo y qué necesitaba saber antes",
+    "Dentro de cada módulo, corta en lecciones de 6 a 12 minutos si es vídeo, o de 20 a 45 minutos si es directo",
+    "Cada lección termina en una micro-acción que el alumno ejecuta, no solo escucha",
+    "Revisa el orden: ninguna lección puede depender de algo que se explica más adelante"
+  ],
+  "restricciones": [
+    "Nada de módulos llamados Introducción o Conceptos básicos sin resultado concreto",
+    "Máximo 6 lecciones por módulo",
+    "El alumno debe conseguir su primer resultado visible antes de acabar el módulo 2",
+    "Usa lenguaje del alumno, no jerga del sector"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown más fichas por módulo",
+    "tabla": "Módulo | Título | Resultado que consigue el alumno | Nº lecciones | Duración estimada",
+    "ficha_por_modulo": [
+      "Título del módulo en lenguaje de beneficio",
+      "Requisito previo",
+      "Lecciones numeradas con título y minutos",
+      "Ejercicio o entregable del módulo",
+      "Error típico que comete el alumno en este punto"
+    ],
+    "cierre": "Lista de los 3 módulos más difíciles de producir y por qué"
+  },
+  "criterios_calidad": [
+    "Cada módulo se puede resumir en una frase con verbo de acción",
+    "La suma de duraciones cuadra con la duración total indicada",
+    "Un desconocido puede leer el temario y saber si el curso es para él"
+  ],
+  "tono": "claro, directo, sin humo comercial"
+}

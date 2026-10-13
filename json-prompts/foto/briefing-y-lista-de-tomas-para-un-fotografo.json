@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar el briefing y la lista de tomas para encargar la sesion de catalogo de [NOMBRE DE TU MARCA] a un fotografo externo",
+  "contexto": {
+    "productos": "[CUANTAS REFERENCIAS Y DE QUE TIPO]",
+    "fotos_por_producto": "[NUMERO Y TIPOS DE TOMA]",
+    "estilo": "[FONDO BLANCO / FONDO DE COLOR / LIFESTYLE / MEZCLA]",
+    "fecha_limite": "[FECHA EN QUE NECESITAS LAS IMAGENES]",
+    "presupuesto_orientativo": "[RANGO QUE PUEDES ASUMIR]",
+    "uso_previsto": "[WEB, ANUNCIOS DE PAGO, CATALOGO IMPRESO, REDES]"
+  },
+  "secciones_del_briefing": [
+    "Quien es la marca y a quien le vende, en 4 lineas",
+    "Objetivo de la sesion y donde se van a usar las imagenes",
+    "Referencias visuales: 3 ejemplos de lo que si quieres y 2 de lo que no",
+    "Lista de tomas producto a producto con numero y tipo de plano",
+    "Requisitos tecnicos: proporciones, resolucion minima, formato de entrega y color de fondo",
+    "Quien aporta atrezzo, modelos, superficies y transporte de producto",
+    "Calendario: entrega de producto, dia de sesion, seleccion, entrega final",
+    "Condiciones: numero de retoques incluidos, rondas de cambios y coste de tomas extra",
+    "Derechos de uso de las imagenes y plazo, en lenguaje claro",
+    "Forma de pago y que pasa si hay que repetir tomas"
+  ],
+  "restricciones": [
+    "Todo el documento debe caber en 2 paginas",
+    "Nada de tecnicismos innecesarios: si aparece uno, se explica entre parentesis",
+    "Los entregables se cuentan en numero exacto de imagenes finales"
+  ],
+  "formato_salida": {
+    "bloque_1": "Briefing listo para enviar por email",
+    "bloque_2": "Tabla de la lista de tomas con columnas producto, toma, plano, fondo, prioridad",
+    "bloque_3": "Email corto de peticion de presupuesto con las 5 preguntas que debes hacer",
+    "bloque_4": "Lista de comprobacion del dia de la sesion"
+  },
+  "criterios_calidad": [
+    "Dos fotografos distintos podrian presupuestar lo mismo leyendo el documento",
+    "No queda ninguna ambiguedad sobre cuantas imagenes se entregan y en que formato",
+    "Los derechos de uso quedan escritos, no dados por supuestos"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Convertir una hoja de calculo en un modelo de base de datos limpio y generar la migracion inicial de carga",
+  "contexto": {
+    "motor_bd_destino": "[POSTGRESQL / MYSQL / SQL SERVER / SQLITE]",
+    "origen": "[EXCEL / GOOGLE SHEETS / CSV EXPORTADO]",
+    "filas": "[NUMERO APROXIMADO DE FILAS]",
+    "uso_previsto": "[QUE VAS A HACER CON ESOS DATOS: FACTURAR, INFORMES, WEB...]"
+  },
+  "entradas": {
+    "columnas_y_ejemplos": "[PEGA LA FILA DE CABECERAS Y CINCO O DIEZ FILAS DE EJEMPLO REALES]",
+    "reglas_del_negocio": "[QUE CAMPOS SON OBLIGATORIOS, QUE IDENTIFICA A UN REGISTRO COMO UNICO]"
+  },
+  "pasos": [
+    "Detecta el tipo real de cada columna y avisa de las mezclas: fechas en texto, importes con coma y punto, telefonos con formatos distintos",
+    "Propon separar en varias tablas lo que en la hoja esta repetido, con sus claves",
+    "Define la clave que identifica cada registro y como detectar duplicados",
+    "Escribe las reglas de limpieza y normalizacion antes de cargar, campo por campo",
+    "Genera el CREATE TABLE definitivo con tipos, obligatoriedad e indices",
+    "Genera la carga en dos fases: tabla temporal en bruto y despues insercion validada",
+    "Define que pasa con las filas invalidas: tabla de rechazos con el motivo"
+  ],
+  "restricciones": [
+    "Nada de guardar importes ni fechas como texto en la tabla final",
+    "No inventes columnas que no aparezcan en el ejemplo aportado",
+    "La carga tiene que poder repetirse sin duplicar registros"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["Problemas detectados en los datos", "Modelo propuesto", "Reglas de limpieza", "Script de creacion", "Script de carga", "Comprobaciones de calidad"]
+  },
+  "criterios_calidad": [
+    "Cada problema detectado cita la columna y el ejemplo concreto que lo delata",
+    "Las comprobaciones finales incluyen conteos que deben cuadrar con el origen"
+  ]
+}

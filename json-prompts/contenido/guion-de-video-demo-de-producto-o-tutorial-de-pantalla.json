@@ -1,0 +1,34 @@
+{
+  "tarea": "Escribir el guion de un vídeo de demostración con grabación de pantalla de [PRODUCTO O HERRAMIENTA], de [DURACIÓN: 2-5 MIN]",
+  "contexto": {
+    "que_se_demuestra": "[TAREA CONCRETA QUE SE VA A ENSEÑAR]",
+    "publico": "[NIVEL DE QUIEN LO VE: NUNCA LO HA USADO / YA ES CLIENTE]",
+    "pasos_reales": "[LISTA DE PASOS TAL Y COMO SE HACEN EN LA HERRAMIENTA]",
+    "objetivo": "[QUE SE REGISTRE / QUE DEJE DE PREGUNTAR / QUE COMPRE]"
+  },
+  "metodo": [
+    "Primero el resultado final: enseña en 10 segundos cómo queda antes de explicar cómo se hace",
+    "Un paso por bloque, con la acción exacta ('haz clic en X') y el porqué en una frase",
+    "Avisa de los dos errores típicos justo en el paso donde ocurren",
+    "Nada de explorar el menú entero: solo lo necesario para la tarea",
+    "Cierra recordando el resultado y el siguiente paso"
+  ],
+  "restricciones": [
+    "No inventes funciones ni botones que no estén en [PASOS REALES]",
+    "Máximo 150 palabras por minuto para que se pueda seguir",
+    "Evita jerga: si usas un término técnico, defínelo en cinco palabras"
+  ],
+  "formato_salida": {
+    "tabla": "Columnas: Nº | Voz en off | Acción en pantalla | Zoom o resalte | Rótulo",
+    "extras": [
+      "Guion de los primeros 15 segundos palabra por palabra",
+      "Lista de capturas o pantallas que hay que tener preparadas antes de grabar",
+      "3 preguntas frecuentes que conviene responder al final del vídeo",
+      "Versión corta de 45 segundos del mismo contenido para redes"
+    ]
+  },
+  "criterios_calidad": [
+    "Alguien que no conoce la herramienta podría repetir los pasos siguiendo solo el vídeo",
+    "Ningún paso mezcla dos acciones distintas"
+  ]
+}

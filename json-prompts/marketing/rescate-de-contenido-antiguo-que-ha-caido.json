@@ -1,0 +1,36 @@
+{
+  "tarea": "Diagnosticar por qué un contenido publicado ha perdido posiciones y devolver un plan de actualización concreto para recuperarlas",
+  "contexto": {
+    "url": "[URL DEL CONTENIDO]",
+    "keyword_objetivo": "[PALABRA CLAVE]",
+    "fecha_publicacion": "[MES Y AÑO]",
+    "cambios_en_el_sector": "[QUÉ HA CAMBIADO DESDE ENTONCES: PRECIOS, NORMATIVA, HERRAMIENTAS, TENDENCIAS]"
+  },
+  "entradas": {
+    "contenido_actual": "[PEGA EL ARTÍCULO COMPLETO]",
+    "metricas": "[POSICIÓN ANTES Y AHORA, CLICS E IMPRESIONES ÚLTIMOS 6 MESES]",
+    "consultas_reales": "[CONSULTAS POR LAS QUE APARECE SEGÚN SEARCH CONSOLE]",
+    "quien_ocupa_el_top": "[TÍTULOS Y URLS DE LOS 3 PRIMEROS RESULTADOS HOY]"
+  },
+  "pasos": [
+    "Compara las consultas reales con el contenido: si atrae búsquedas que no responde, corrige el enfoque",
+    "Marca lo desactualizado: cifras, precios, capturas, herramientas, normativa y años",
+    "Detecta lo que cubren los que ahora están arriba y aquí falta",
+    "Señala lo que sobra: relleno, secciones que nadie lee, repeticiones",
+    "Decide si conviene actualizar, dividir en dos contenidos o fusionar con otro",
+    "Propón el nuevo esquema de encabezados y los párrafos nuevos ya redactados",
+    "Indica si cambia el título, la meta y la fecha visible de actualización"
+  ],
+  "restricciones": [
+    "No cambies la URL salvo que sea imprescindible; si lo propones, avisa de la redirección 301 necesaria",
+    "Conserva las secciones que siguen atrayendo consultas",
+    "No inventes datos actualizados: marca [VERIFICAR DATO] donde haga falta comprobarlo"
+  ],
+  "formato_salida": {
+    "bloques": ["Diagnóstico en 5 líneas", "Tabla: sección | acción (mantener, reescribir, ampliar, eliminar) | motivo", "Párrafos y secciones nuevas ya escritas", "Título y meta actualizados", "Checklist de publicación y qué vigilar a los 30 días"]
+  },
+  "criterios_calidad": [
+    "El diagnóstico se apoya en las métricas y consultas aportadas, no en suposiciones",
+    "El plan se puede ejecutar en una sola sesión de trabajo"
+  ]
+}

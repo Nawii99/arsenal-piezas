@@ -1,0 +1,41 @@
+{
+  "tarea": "Preparar un guion de desescalado para una conversación con un cliente muy enfadado, con frases literales, límites y salida a solución",
+  "contexto": {
+    "negocio": "[QUÉ VENDES O QUÉ SERVICIO DAS]",
+    "canal": "[TELÉFONO / WHATSAPP / PRESENCIAL / EMAIL]",
+    "quien_atiende": "[ROL Y MARGEN DE DECISIÓN QUE TIENE]",
+    "lo_que_puedes_ofrecer": "[REPETIR SERVICIO, DEVOLVER, DESCUENTO HASTA X, CAMBIO, PLAZO PREFERENTE]",
+    "lo_que_no_puedes_ofrecer": "[LÍNEAS ROJAS INNEGOCIABLES]"
+  },
+  "entradas": {
+    "que_ha_pasado": "[RESUMEN DE LA INCIDENCIA]",
+    "palabras_del_cliente": "[PEGA LO QUE HA DICHO O ESCRITO, TAL CUAL]",
+    "tiene_razon": "[SÍ / EN PARTE / NO, Y POR QUÉ]",
+    "valor_cliente": "[ANTIGÜEDAD, GASTO, SI QUIERES CONSERVARLO]"
+  },
+  "pasos": [
+    "Identifica qué pide de verdad: dinero, que le arreglen algo, disculpa, o que le tomen en serio",
+    "Escribe la apertura: nombre, reconocimiento del problema y una disculpa concreta por el hecho, no genérica",
+    "Prepara tres frases de contención para cuando suba el tono, sin repetir tranquilícese",
+    "Formula la pregunta que le pasa de desahogarse a resolver",
+    "Prepara la propuesta con dos opciones reales dentro de lo_que_puedes_ofrecer",
+    "Prepara la respuesta a cuatro objeciones: quiero hablar con el jefe, os voy a denunciar, os voy a poner a parir en Google, quiero todo el dinero",
+    "Define el punto en el que se escala de verdad y qué se le dice al pasar la llamada",
+    "Escribe el cierre con compromiso concreto, fecha y quién le contacta"
+  ],
+  "restricciones": [
+    "Nada de discutir quién tiene razón antes de que baje el tono",
+    "Prohibido usar entiendo su frustración, lo siento por las molestias y otras muletillas de manual",
+    "No admitas responsabilidad legal ni negligencia; reconoce hechos, no culpas",
+    "Si el cliente insulta o amenaza a una persona, ofrece la fórmula para cerrar la conversación con educación"
+  ],
+  "formato_salida": {
+    "tipo": "guion por turnos",
+    "bloques": ["Qué pide de verdad", "Apertura literal", "Frases de contención", "Pregunta que reconduce", "Propuesta A y B", "Respuestas a 4 objeciones", "Cuándo escalar y frase de traspaso", "Cierre con compromiso", "Nota interna de seguimiento"]
+  },
+  "criterios_calidad": [
+    "Todas las frases se pueden decir en voz alta sin sonar a robot",
+    "Ninguna propuesta se sale de lo_que_puedes_ofrecer",
+    "El guion termina siempre en un compromiso con fecha, nunca en ya le diremos algo"
+  ]
+}

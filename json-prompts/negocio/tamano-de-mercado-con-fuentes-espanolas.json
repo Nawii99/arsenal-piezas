@@ -1,0 +1,27 @@
+{
+  "tarea": "Estimar el tamaño de mercado de mi negocio en España con un cálculo transparente, paso a paso y con fuentes citadas",
+  "contexto": {
+    "producto": "[QUÉ VENDES]",
+    "zona": "[CIUDAD, PROVINCIA, COMUNIDAD O TODA ESPAÑA]",
+    "perfil_cliente": "[PARTICULARES CON QUÉ CARACTERÍSTICAS, O EMPRESAS DE QUÉ TIPO Y TAMAÑO]",
+    "precio_medio": "[IMPORTE MEDIO POR CLIENTE Y AÑO]",
+    "frecuencia": "[COMPRAS AL AÑO POR CLIENTE]"
+  },
+  "instrucciones": [
+    "Calcula el mercado en tres niveles: total (todos los que podrían comprar esto), alcanzable (los que están en mi zona y encajan en mi perfil) y realista (los que puedo conseguir en 3 años con mis medios)",
+    "Haz el cálculo de abajo arriba: número de clientes potenciales por precio medio por frecuencia. Nunca partas de un porcentaje de un mercado global",
+    "Busca los datos de población, empresas o consumo en fuentes públicas españolas (INE, DIRCE, Eurostat, informes sectoriales, datos del ayuntamiento o de la asociación del sector) y cita la fuente y el año de cada dato",
+    "Si un dato no lo encuentras, dilo claramente y propón una aproximación explicando el razonamiento",
+    "Haz también una comprobación de arriba abajo para ver si los dos cálculos se parecen; si no, explica la diferencia"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "partes": ["Tabla del cálculo paso a paso con: concepto, cifra, fuente y año", "Los tres niveles de mercado en euros al año", "Escenario prudente y optimista del mercado realista", "Lista de fuentes con enlace", "Apartado 'Lo que no sé' con los datos que faltan y cómo conseguirlos"]
+  },
+  "criterios_calidad": [
+    "Ninguna cifra aparece sin fuente o sin marca de estimación",
+    "El cálculo se puede rehacer cambiando un solo número",
+    "Las cifras de datos antiguos indican el año",
+    "No se presenta el mercado total como si fuera facturación posible"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tarea": "Modelar las amenazas que llegan a través de proveedores, integraciones y cadena de suministro",
+  "entradas": {
+    "proveedores": "[LISTA: HOSTING, GESTORÍA, AGENCIA, CRM, EMAIL MARKETING, PASARELA, MENSAJERÍA, INFORMÁTICO EXTERNO]",
+    "datos_que_tocan": "[QUÉ DATOS VE O GUARDA CADA UNO]",
+    "accesos_concedidos": "[USUARIO ADMIN, CLAVES DE API, ACCESO REMOTO, ACCESO AL CORREO, ACCESO AL BANCO]",
+    "criticidad": "[CUÁNTO AGUANTA MI NEGOCIO SIN CADA UNO: HORAS O DÍAS]",
+    "contratos": "[TENGO CONTRATO DE ENCARGADO DE TRATAMIENTO, SLA O NADA]"
+  },
+  "instrucciones": [
+    "Clasifica cada proveedor por datos que toca y por dependencia operativa",
+    "Para cada uno plantea tres escenarios: le roban los datos, deja de funcionar y alguien abusa del acceso que le di",
+    "Analiza también el riesgo de suplantación del proveedor: facturas falsas, cambios de número de cuenta y soporte falso",
+    "Revisa los accesos: qué permisos sobran, cuáles no caducan nunca y quién los revisa",
+    "Propón para cada proveedor un plan B mínimo y una prueba para comprobar que funciona"
+  ],
+  "restricciones": [
+    "No supongas que un proveedor grande es seguro por serlo: evalúa la exposición, no la marca",
+    "Todo control propuesto tiene que poder aplicarlo yo, sin depender de su buena voluntad"
+  ],
+  "formato_salida": {
+    "tabla_proveedores": ["Proveedor", "Datos que toca", "Acceso que tiene", "Si cae, aguanto", "Riesgo principal", "Control por mi parte", "Plan B"],
+    "secciones": ["Accesos a retirar esta semana", "10 preguntas para enviar a cada proveedor crítico", "Cláusulas mínimas a exigir por contrato", "Cómo verificar un cambio de cuenta bancaria antes de pagar"]
+  },
+  "criterios_calidad": [
+    "Se identifican los accesos permanentes olvidados y las claves compartidas",
+    "Las preguntas al proveedor se pueden enviar tal cual por correo",
+    "Cada plan B indica cuánto tarda en activarse y qué cuesta"
+  ]
+}

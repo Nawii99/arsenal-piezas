@@ -1,0 +1,41 @@
+{
+  "tarea": "Redactar la pagina de Politica de Devoluciones y Garantia de una tienda, lista para publicar",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_vende": "[QUE VENDES: PRODUCTO FISICO, DIGITAL, SERVICIO]",
+    "canal_venta": "[WEB PROPIA / MARKETPLACE / TIENDA FISICA]",
+    "mercado": "Espana, consumidores particulares",
+    "plazo_desistimiento": "[14 DIAS O EL QUE OFREZCAS SI ES MAYOR]",
+    "quien_paga_envio_devolucion": "[EL CLIENTE / LA EMPRESA / GRATIS EN DEFECTUOSOS]",
+    "metodo_reembolso": "[MISMO MEDIO DE PAGO / VALE / A ELEGIR]",
+    "excepciones": "[PRODUCTOS PERSONALIZADOS, PRECINTADOS, PERECEDEROS, ETC]"
+  },
+  "marco_legal_a_respetar": [
+    "Derecho de desistimiento de 14 dias naturales sin justificacion en ventas a distancia",
+    "Garantia legal de conformidad de 3 anos en productos y 2 anos en contenidos digitales",
+    "El reembolso incluye el envio inicial estandar y se hace en 14 dias desde que se recibe la devolucion",
+    "No inventar clausulas que quiten derechos al consumidor: si dudas, marcalo como AVISO LEGAL A REVISAR"
+  ],
+  "estructura_salida": [
+    "1. Resumen en 5 lineas: lo que el cliente necesita saber en 20 segundos",
+    "2. Devoluciones por arrepentimiento: plazo, estado del producto, quien paga el envio",
+    "3. Como iniciar la devolucion: pasos numerados con el canal exacto",
+    "4. Reembolsos: importe, plazo y medio",
+    "5. Productos defectuosos y garantia: que cubre, que no, plazos de reparacion o sustitucion",
+    "6. Excepciones y casos no admitidos, explicados sin sonar a amenaza",
+    "7. Preguntas frecuentes: 6 preguntas reales con respuesta de 2 lineas",
+    "8. Contacto y datos de la empresa"
+  ],
+  "tono": "Cercano, directo, tuteando, frases cortas, sin jerga juridica innecesaria",
+  "restricciones": [
+    "Nada de mayusculas gritando ni de tono defensivo",
+    "Cada apartado, maximo 120 palabras",
+    "Usar tablas solo si aclaran plazos"
+  ],
+  "formato_salida": "Texto en Markdown con titulos H2 y H3, listo para pegar en la web",
+  "criterios_calidad": [
+    "Un cliente sabe en 30 segundos si puede devolver y cuanto le cuesta",
+    "No hay ninguna clausula que contradiga la ley de consumo espanola",
+    "Incluye al final una lista de 3 decisiones que el dueno debe confirmar"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Construir la carpeta de evidencias para una auditoría de certificación ISO 27001 (Fase 1 y Fase 2) o para una auditoría de conformidad ENS",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "norma": "[ISO 27001:2022 O ENS CATEGORÍA MEDIA/ALTA]",
+    "fecha_auditoria": "[FECHA]",
+    "entidad": "[ENTIDAD DE CERTIFICACIÓN]",
+    "alcance": "[ALCANCE DECLARADO]",
+    "documentos_existentes": "[LISTA DE LO QUE YA TIENES]",
+    "responsables": "[QUIÉN SE ENCARGA DE CADA ÁREA]"
+  },
+  "instrucciones": [
+    "Separa lo que se revisa en Fase 1 (documentación, alcance, SoA, análisis de riesgos, política, auditoría interna y revisión por la dirección) de lo que se comprueba en Fase 2 (implantación real y registros)",
+    "Lista documentos obligatorios y, para cada uno, los registros que demuestran que se ejecuta: actas, tickets, formularios de alta y baja, informes de copias restauradas, resultados de formación, revisiones de accesos",
+    "Exige registros de al menos tres meses de funcionamiento y avisa si algún registro no tendrá antigüedad suficiente en la fecha de auditoría",
+    "Propón una estructura de carpetas numerada, con convención de nombres de archivo y control de versiones",
+    "Marca semáforo por evidencia: lista, incompleta o inexistente, con acción y fecha para las dos últimas",
+    "Incluye los errores típicos que provocan hallazgos: SoA desalineado con el análisis de riesgos, documentos sin aprobar, formación sin registro de asistencia, revisión de accesos nunca hecha y proveedores sin acuerdo de seguridad firmado"
+  ],
+  "restricciones": [
+    "No incluyas documentos que no aporten evidencia real: la auditoría no premia el volumen",
+    "Cada evidencia lleva un único responsable",
+    "No propongas crear registros con fecha retroactiva"
+  ],
+  "formato_salida": {
+    "1_arbol_carpetas": "Estructura numerada de carpetas y subcarpetas con convención de nombres",
+    "2_tabla_evidencias": "Nº | Documento o registro | Cláusula o control que evidencia | Fase 1 o 2 | Estado | Responsable | Fecha límite",
+    "3_cuenta_atras": "Plan por semanas desde hoy hasta la fecha de auditoría",
+    "4_checklist_vispera": "15 comprobaciones del día anterior: accesos, sala, pantallas, personas disponibles"
+  },
+  "criterios_calidad": [
+    "Cada evidencia se enlaza con el requisito que demuestra",
+    "Ninguna tarea queda sin responsable ni sin fecha",
+    "El plan es realista con el tiempo que queda"
+  ],
+  "tono": "Operativo, de lista de control"
+}

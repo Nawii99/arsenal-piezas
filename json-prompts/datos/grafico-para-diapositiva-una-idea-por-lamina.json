@@ -1,0 +1,40 @@
+{
+  "tarea": "Convertir un gráfico denso en una secuencia de diapositivas legibles, con una sola idea por lámina",
+  "contexto": {
+    "ocasion": "[REUNIÓN CON CLIENTE / COMITÉ / BANCO / EQUIPO INTERNO]",
+    "mensaje_de_la_presentacion": "[LO QUE QUIERES QUE SE LLEVEN DE LA SESIÓN]",
+    "tiempo_por_lamina": "[SEGUNDOS QUE VAS A DEDICAR A CADA UNA]",
+    "condiciones_de_lectura": "[PROYECTOR EN SALA GRANDE / PANTALLA COMPARTIDA / PDF QUE LEEN SOLOS]"
+  },
+  "entradas": {
+    "grafico_actual": "[DESCRIBE O ADJUNTA EL GRÁFICO QUE TIENES HOY]",
+    "datos": "[PEGA LOS DATOS O LAS CIFRAS PRINCIPALES]",
+    "objeciones_esperadas": "[QUÉ TE VAN A PREGUNTAR O DISCUTIR]"
+  },
+  "metodo": [
+    "Separar el contenido del gráfico en ideas independientes y quedarse con las que sostienen el mensaje",
+    "Asignar una idea por lámina y ordenarlas como argumento: situación, problema, causa, propuesta",
+    "Para cada lámina, indicar qué serie se destaca y cuáles pasan a gris de contexto",
+    "Simplificar cifras: redondear, usar miles o millones, quitar decimales innecesarios",
+    "Definir tamaños mínimos: título, etiquetas y cifras destacadas",
+    "Preparar una lámina de respaldo con el detalle completo para las preguntas"
+  ],
+  "restricciones": [
+    "Máximo cinco láminas de gráfico",
+    "Nada de leyendas laterales: etiquetar directamente las series junto a la línea o la barra",
+    "Fuera cuadrículas densas, bordes y ejes secundarios",
+    "Ningún texto por debajo de un tamaño legible a distancia; indicar el tamaño recomendado en puntos",
+    "Una sola cifra protagonista por lámina"
+  ],
+  "formato_salida": {
+    "tipo": "guion de láminas",
+    "por_lamina": ["Número", "Titular de la lámina", "Qué se ve", "Qué se destaca y qué se atenúa", "Frase que dices en voz alta", "Duración"],
+    "extras": ["Lámina de respaldo con el detalle", "Respuestas preparadas a las objeciones esperadas"]
+  },
+  "criterios_calidad": [
+    "Cada lámina se entiende en menos de cinco segundos",
+    "El orden de las láminas construye un argumento, no una lista de datos",
+    "Las cifras de la voz coinciden con las de la pantalla"
+  ],
+  "tono": "de presentación profesional, sin humo"
+}

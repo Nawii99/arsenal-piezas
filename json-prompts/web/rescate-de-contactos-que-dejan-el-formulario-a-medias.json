@@ -1,0 +1,32 @@
+{
+  "tarea": "Diseñar un sistema de recuperación de contactos incompletos o sin respuesta del formulario de [TU NEGOCIO], con los mensajes ya escritos",
+  "contexto": {
+    "tipo_de_formulario": "[PRESUPUESTO, CITA, DESCARGA O PEDIDO]",
+    "dato_que_ya_tengo": "[EMAIL, TELÉFONO O AMBOS]",
+    "canal": "[EMAIL, WHATSAPP O LLAMADA]",
+    "ciclo_de_venta": "[DÍAS QUE SUELE TARDAR UN CLIENTE EN DECIDIRSE]",
+    "objecion_habitual": "[LO QUE MÁS TE DICEN PARA NO CERRAR]"
+  },
+  "como_capturar_el_abandono": [
+    "Guarda el email en cuanto se rellena ese campo, antes del envío final, avisando de ello",
+    "Formulario por pasos: cada paso completado se registra",
+    "Marca en tu hoja o CRM el estado: incompleto, enviado sin respuesta, presupuesto sin cerrar"
+  ],
+  "secuencia": {
+    "mensaje_1": "Mismo día: recuerdo útil y sin presión, con enlace para terminar",
+    "mensaje_2": "A los 2 días: resuelve la objeción habitual con un caso real o una prueba",
+    "mensaje_3": "A los 5 días: facilita el sí con una alternativa más pequeña o una llamada corta",
+    "mensaje_4": "A los 12 días: cierre amable dando por cerrado el tema y dejando la puerta abierta"
+  },
+  "reglas_de_escritura": [
+    "Máximo 90 palabras por mensaje y una sola pregunta al final",
+    "Nada de urgencia falsa ni de reproches por no contestar",
+    "En WhatsApp, mensajes de 3 líneas y sin enlaces raros",
+    "Salida clara para pedir que no se le escriba más"
+  ],
+  "formato_salida": "1) Esquema del sistema en 5 pasos. 2) Los 4 mensajes completos para el canal elegido. 3) Variante corta de los 4 para el otro canal. 4) Tabla de seguimiento con las columnas mínimas que debes llevar.",
+  "criterios_calidad": [
+    "Se puede poner en marcha con una hoja de cálculo y el correo de siempre",
+    "Ningún mensaje suena a plantilla automática"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "tarea": "Preparar el plan de prueba de carga y de capacidad de [NOMBRE DE TU APLICACIÓN] antes de [CAMPAÑA O EVENTO], para saber si aguanta el pico y qué hay que tocar si no aguanta",
+  "entradas": {
+    "evento": "[QUÉ ES Y QUÉ DÍA]",
+    "trafico_normal": "[VISITAS Y PEDIDOS EN UN DÍA CUALQUIERA]",
+    "pico_esperado": "[CUÁNTO ESPERAS Y CONCENTRADO EN CUÁNTOS MINUTOS]",
+    "recorridos_criticos": "[LOS 3 O 4 QUE NO PUEDEN FALLAR: BUSCAR, AÑADIR AL CARRITO, PAGAR, REGISTRARSE]",
+    "arquitectura": "[MONOLITO, SERVICIOS, SI HAY COLAS Y CUÁNTOS SERVIDORES]"
+  },
+  "metodo": [
+    "Fijar objetivos medibles antes de probar: tiempo de respuesta aceptable, porcentaje máximo de errores y retraso máximo de la cola",
+    "Diseñar escenarios realistas con la mezcla de acciones que hace la gente de verdad, no solo la página de inicio",
+    "Probar en tres niveles: tráfico normal, pico esperado y el doble del pico para ver dónde se rompe",
+    "Medir por separado web, base de datos, cola y servicios externos, para saber quién es el cuello de botella",
+    "Comprobar que la cola se vacía después del pico y en cuánto tiempo"
+  ],
+  "restricciones": [
+    "No probar contra el sistema real en horario de clientes: usar copia o ventana acordada",
+    "Avisar de los límites de los servicios externos, que pueden cortarte antes que tu propio sistema",
+    "Cada conclusión debe traer una acción concreta con esfuerzo estimado"
+  ],
+  "formato_salida": {
+    "tipo": "plan en Markdown",
+    "secciones": ["Objetivos numéricos", "Escenarios de prueba", "Calendario hasta la fecha del evento", "Qué medir y dónde", "Plantilla de resultados", "Plan B si no aguanta: qué apagar, qué encolar, qué escalar", "Checklist del día D"]
+  },
+  "criterios_calidad": [
+    "Los objetivos están en números, no en frases como que vaya rápido",
+    "El plan B se puede ejecutar en menos de una hora",
+    "Aparece qué funciones se pueden desactivar temporalmente sin dejar de vender"
+  ]
+}

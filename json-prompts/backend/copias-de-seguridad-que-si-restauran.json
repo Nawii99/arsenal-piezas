@@ -1,0 +1,53 @@
+{
+  "tarea": "Definir y montar mi plan de copias de seguridad y de restauración, incluyendo el ensayo periódico que demuestra que las copias funcionan",
+  "contexto": {
+    "que_guardo": "[BASE DE DATOS / ARCHIVOS SUBIDOS POR CLIENTES / CONFIGURACIÓN / TODO]",
+    "donde_esta_alojado": "[SUPABASE / RAILWAY / VPS / HOSTING COMPARTIDO / OTRO]",
+    "tamano_aproximado": "[MB O GB DE DATOS]",
+    "presupuesto": "[GRATIS / HASTA X EUROS AL MES]"
+  },
+  "entradas": {
+    "cuanto_puedo_perder": "[MINUTOS, HORAS O UN DÍA DE DATOS COMO MÁXIMO]",
+    "cuanto_puedo_estar_parado": "[MINUTOS U HORAS HASTA VOLVER A FUNCIONAR]",
+    "copias_actuales": "[LAS QUE HAGA MI PROVEEDOR, LAS QUE HAGA YO, NINGUNA]",
+    "quien_ejecuta": "[YO SOLO, SIN CONOCIMIENTOS DE SISTEMAS]"
+  },
+  "pasos": [
+    "1. Traduce mis dos límites a objetivos claros: cada cuánto hay que copiar y cuánto puede tardar la vuelta al servicio",
+    "2. Inventaria todo lo que hay que copiar, incluidas las cosas que se olvidan: archivos subidos, variables de entorno, claves de terceros, configuración de dominio",
+    "3. Aplica la regla 3-2-1 adaptada a mi presupuesto: al menos dos copias en sitios distintos y una fuera del proveedor principal",
+    "4. Distingue las copias automáticas del proveedor (cómodas pero atadas a él) de una copia propia exportada que puedas llevarte a otro sitio",
+    "5. Dame los comandos exactos de volcado y de restauración para mi base de datos, con el cifrado del archivo y dónde se guarda",
+    "6. Define la retención: diarias 7 días, semanales 4 semanas, mensuales 6 meses, y el borrado automático de lo viejo",
+    "7. Protege contra el borrado malicioso o accidental: la copia no puede poder borrarse con las mismas credenciales que la aplicación",
+    "8. Escribe el ensayo de restauración paso a paso: restaurar en un sitio aparte, comprobar tres cifras de negocio y anotar cuánto se ha tardado",
+    "9. Programa recordatorio trimestral del ensayo y una alerta si un día no se genera la copia",
+    "10. Deja una hoja de una página con qué hacer el día que haga falta restaurar de verdad"
+  ],
+  "restricciones": [
+    "Una copia que nunca se ha restaurado no cuenta como copia: dilo así de claro",
+    "Nada de subir volcados sin cifrar a carpetas públicas",
+    "Prioriza opciones gratuitas o de pocos euros al mes y avisa del coste real de cada una",
+    "Los comandos deben ser copiables tal cual, con los huecos entre corchetes"
+  ],
+  "formato_salida": {
+    "1_resumen": "Qué perdería hoy si pasa lo peor, en una frase",
+    "2_inventario": "Tabla markdown: elemento, dónde vive, cómo se copia, dónde va la copia, cada cuánto",
+    "3_comandos": "Bloques de comandos de copia y de restauración comentados",
+    "4_automatizacion": "Cómo programarlo (cron, tarea del proveedor o acción programada) con el fichero listo",
+    "5_ensayo": "Guion de restauración de prueba con las comprobaciones que deben salir bien",
+    "6_ficha_emergencia": "Una página con los pasos del día malo"
+  },
+  "criterios_calidad": [
+    "El ensayo de restauración se completa siguiendo solo el documento, sin conocimientos extra",
+    "Después de restaurar cuadran número de clientes, número de pedidos y facturación del último mes",
+    "Existe al menos una copia fuera del proveedor principal",
+    "Hay aviso cuando falla la copia, no solo cuando funciona"
+  ],
+  "errores_tipicos": [
+    "Confiar solo en las copias del proveedor y descubrir que solo cubren 7 días o que se pierden al cerrar la cuenta",
+    "Copiar la base de datos y olvidar los archivos subidos por los clientes",
+    "Guardar la copia en el mismo servidor que se va a estropear",
+    "No cifrar un volcado que contiene datos personales"
+  ]
+}

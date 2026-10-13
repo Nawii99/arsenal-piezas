@@ -1,0 +1,47 @@
+{
+  "tarea": "Crear un test diagnostico breve que mida el nivel real de partida del alumnado y proponga un itinerario para cada nivel",
+  "contexto": {
+    "formacion": "[NOMBRE DEL CURSO]",
+    "perfil_esperado": "[QUIEN SE APUNTA: EJ AUTONOMOS SIN PERFIL TECNICO]",
+    "duracion_del_test": "[MINUTOS, RECOMENDADO 8 A 12]",
+    "canal": "[FORMULARIO WEB / PAPEL / WHATSAPP]"
+  },
+  "entradas": {
+    "requisitos_previos_reales": ["[LO QUE HACE FALTA SABER 1]", "[LO QUE HACE FALTA SABER 2]"],
+    "temario": "[LISTA DE MODULOS O TEMAS DEL CURSO]",
+    "numero_de_niveles": "[EJ: 3 GRUPOS]"
+  },
+  "proceso": [
+    "1. Separa lo que hay que medir en dos bloques: saber previo imprescindible y experiencia practica declarada",
+    "2. Escribe entre 8 y 12 preguntas: mezcla opcion multiple de aplicacion, un mini caso practico y dos preguntas de autopercepcion",
+    "3. Cada pregunta de opcion multiple lleva distractores plausibles que corresponden a un error tipico real, no opciones absurdas",
+    "4. Asigna a cada pregunta el tema del temario que evalua, para poder leer resultados por tema y no solo por nota",
+    "5. Define los cortes de nivel con criterio, por ejemplo por dominio de los requisitos previos y no por nota total",
+    "6. Redacta para cada nivel un mensaje de resultado con recomendacion de itinerario y que modulos puede saltar o reforzar"
+  ],
+  "restricciones": [
+    "Nada de preguntas de memoria o de vocabulario tecnico por el vocabulario en si",
+    "Cada pregunta se responde en menos de un minuto",
+    "Lenguaje llano, sin siglas sin explicar",
+    "El test no puede humillar a quien no sabe: el mensaje de nivel bajo es acogedor y util"
+  ],
+  "errores_a_evitar": [
+    "Preguntar solo por autopercepcion: la gente se puntua a ojo y falla",
+    "Test tan largo que la mitad lo abandona",
+    "Preguntas con dos respuestas correctas por descuido",
+    "Cortes de nivel inventados que dejan un grupo con dos personas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Listado de preguntas numeradas con sus opciones y la respuesta correcta marcada",
+    "bloque_2": "Tabla: Pregunta | Tema del temario | Que error revela si falla",
+    "bloque_3": "Reglas de clasificacion por nivel, explicadas para poder aplicarlas a mano",
+    "bloque_4": "Mensaje de resultado para cada nivel, listo para enviar, con itinerario recomendado",
+    "bloque_5": "Que hacer con los resultados agregados: que tema reforzar en clase si falla mas del 40 por ciento del grupo"
+  },
+  "criterios_calidad": [
+    "Se completa en el tiempo declarado sin prisa",
+    "Cada pregunta se puede rastrear a un tema del temario",
+    "Los tres niveles reparten al grupo de forma razonable, no todos en uno",
+    "Alguien ajeno al tema entiende todas las preguntas sin preguntarte nada"
+  ]
+}

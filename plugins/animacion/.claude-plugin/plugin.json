@@ -1,0 +1,18 @@
+{
+  "name": "arsenal-animacion",
+  "version": "1.0.0",
+  "description": "Webs animadas: 1 skill, 1 subagente en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "animacion",
+    "arsenal-del-marketer"
+  ]
+}

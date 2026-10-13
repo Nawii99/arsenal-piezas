@@ -1,0 +1,41 @@
+{
+  "tarea": "Disenar el sistema de evaluacion completo de la formacion [NOMBRE DEL CURSO] impartida en [NOMBRE DE TU EMPRESA]",
+  "contexto": {
+    "perfil_de_los_asistentes": "[PUESTO Y NUMERO DE PERSONAS]",
+    "duracion": "[HORAS Y FORMATO: PRESENCIAL, ONLINE, MIXTO]",
+    "objetivo_de_negocio": "[QUE QUIERE CONSEGUIR LA EMPRESA: MENOS ERRORES, MAS VENTA CRUZADA, MENOS INCIDENCIAS]",
+    "indicadores_que_ya_medis": "[LISTA LOS KPI DISPONIBLES O ESCRIBE NINGUNO]",
+    "presupuesto_o_coste_del_curso": "[IMPORTE APROXIMADO]"
+  },
+  "niveles_a_evaluar": [
+    "Reaccion: que les ha parecido, medido al terminar",
+    "Aprendizaje: que saben o saben hacer ahora, medido antes y despues",
+    "Conducta: que hacen distinto en el puesto, medido a las 6 u 8 semanas",
+    "Resultado: que ha cambiado en los indicadores del negocio"
+  ],
+  "metodo": [
+    "Para cada nivel define instrumento, momento exacto, responsable y umbral de exito",
+    "En reaccion evita preguntas de cortesia: pregunta por utilidad y por lo que van a aplicar el lunes",
+    "En aprendizaje disena la misma prueba antes y despues para poder comparar",
+    "En conducta usa observacion o una pregunta al responsable directo, no autopercepcion sola",
+    "En resultado relaciona con los indicadores existentes y di honestamente que no se puede atribuir solo a la formacion"
+  ],
+  "restricciones": [
+    "El cuestionario de reaccion no pasa de 8 preguntas",
+    "Nada de escalas de 1 a 10 sin ancla escrita en cada extremo",
+    "No prometas retorno de la inversion calculado, presenta el dato con sus limitaciones",
+    "Todo debe poder gestionarse con hoja de calculo y formularios gratuitos"
+  ],
+  "formato_salida": {
+    "1_plan_de_evaluacion": "Tabla: Nivel | Instrumento | Cuando | Quien | Umbral de exito",
+    "2_cuestionario_de_reaccion": "Las 8 preguntas redactadas y listas para copiar",
+    "3_prueba_antes_y_despues": "10 items que miden los objetivos del curso",
+    "4_seguimiento_a_8_semanas": "Guion de 5 preguntas al participante y 3 a su responsable",
+    "5_informe_para_direccion": "Plantilla de una pagina con los datos, la lectura y la recomendacion de repetir o no"
+  },
+  "criterios_calidad": [
+    "Cada instrumento se puede pasar en menos de 10 minutos",
+    "Los umbrales de exito estan puestos antes de empezar, no despues",
+    "El informe distingue lo que se puede atribuir a la formacion de lo que no"
+  ]
+}

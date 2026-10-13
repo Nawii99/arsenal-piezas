@@ -1,0 +1,39 @@
+{
+  "tarea": "Generar una API mínima en ASP.NET Core con EF Core, lista para ejecutar",
+  "contexto": {
+    "version_dotnet": "[EJ: .NET 8]",
+    "base_datos": "[SQLITE / POSTGRESQL / SQL SERVER]",
+    "nombre_solucion": "[NOMBRE DEL PROYECTO]"
+  },
+  "entradas": {
+    "que_gestiona": "[EJ: CLIENTES Y SUS PRESUPUESTOS]",
+    "entidades": "[NOMBRE Y CAMPOS DE CADA ENTIDAD, UNA POR LÍNEA]",
+    "operaciones": "[LISTAR, CREAR, EDITAR, BORRAR, BUSCAR POR...]",
+    "autenticacion": "[NINGUNA / CLAVE DE API / JWT]"
+  },
+  "a_generar": [
+    "Program.cs con los endpoints agrupados por MapGroup",
+    "clases de entidad y DbContext con su configuración",
+    "DTO de entrada y salida separados de la entidad",
+    "validación de la entrada y respuestas de error uniformes",
+    "cadena de conexión en appsettings y comandos de migración",
+    "fichero .http con una llamada de ejemplo por endpoint"
+  ],
+  "restricciones": [
+    "Endpoints asíncronos y con CancellationToken",
+    "AsNoTracking en todas las consultas de solo lectura",
+    "Paginación obligatoria en cualquier listado",
+    "Nada de secretos escritos en el código",
+    "Sin capas ni patrones que no aporten nada a este tamaño"
+  ],
+  "formato_salida": {
+    "1_comandos": "comandos dotnet en orden para crear el proyecto y los paquetes",
+    "2_codigo": "un bloque por fichero con su ruta encima",
+    "3_arranque": "pasos exactos para ejecutarlo y probarlo en local",
+    "4_siguientes_pasos": "tres mejoras concretas para cuando crezca"
+  },
+  "criterios_calidad": [
+    "Compila y arranca siguiendo solo los pasos indicados",
+    "Cada endpoint devuelve el código HTTP correcto"
+  ]
+}

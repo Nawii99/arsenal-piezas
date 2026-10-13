@@ -1,0 +1,35 @@
+{
+  "tarea": "Especificar las aplicaciones impresas de una marca con todos los datos técnicos que pide una imprenta",
+  "marca": {
+    "nombre": "[NOMBRE DE TU MARCA]",
+    "colores": "[HEX DE TUS COLORES]",
+    "tipografias": "[TÍTULOS Y TEXTOS]",
+    "datos_contacto": "[TELÉFONO, WEB, DIRECCIÓN, REDES]",
+    "registro_legal": "[CIF Y DATOS FISCALES SI APLICA]"
+  },
+  "piezas": ["[PIEZA 1, EJ. TARJETA DE VISITA]", "[PIEZA 2, EJ. ETIQUETA DE PRODUCTO]", "[PIEZA 3, EJ. FACTURA]", "[PIEZA 4, EJ. RÓTULO DE FACHADA]"],
+  "presupuesto_por_pieza": "[AJUSTADO, NORMAL O SIN LÍMITE]",
+  "para_cada_pieza": {
+    "medidas": "formato final en milímetros y orientación",
+    "sangrado_y_margenes": "sangrado en mm y margen de seguridad interior",
+    "resolucion_y_modo": "ppp y modo de color",
+    "tintas": "número de tintas y equivalencia aproximada de cada color de marca",
+    "soporte": "tipo de papel o material y gramaje recomendado",
+    "acabados": "opción económica y opción cuidada",
+    "contenido": "qué texto y qué elementos van en cada cara, ordenados por jerarquía",
+    "errores_frecuentes": "dos fallos típicos en esa pieza y cómo evitarlos"
+  },
+  "formato_salida": {
+    "tipo": "una ficha por pieza con los campos anteriores",
+    "extra": "email breve listo para enviar a la imprenta con el pedido de cada pieza"
+  },
+  "restricciones": [
+    "Todas las medidas en milímetros y todos los gramajes en gramos",
+    "Avisar cuando un color de marca vaya a variar en impresión y proponer alternativa",
+    "No proponer acabados que disparen el coste si el presupuesto es ajustado"
+  ],
+  "criterios_calidad": [
+    "La imprenta no necesita hacer ninguna pregunta adicional",
+    "Cada pieza mantiene la misma jerarquía visual que el resto"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar un brief de colaboración con un creador de contenido pequeño, listo para enviar, con guion orientativo, entregables y condiciones",
+  "entradas": {
+    "marca": "[NOMBRE DE TU EMPRESA Y EN UNA FRASE QUÉ HACE]",
+    "producto": "[PRODUCTO O SERVICIO, PRECIO Y QUÉ LO HACE DISTINTO]",
+    "creador": "[NOMBRE, RED, NÚMERO DE SEGUIDORES Y TIPO DE AUDIENCIA]",
+    "objetivo": "[DAR A CONOCER, CONSEGUIR VENTAS CON CÓDIGO, CONSEGUIR MATERIAL PARA ANUNCIOS]",
+    "contraprestacion": "[PAGO, PRODUCTO GRATIS, COMISIÓN O MEZCLA]",
+    "mensajes_clave": "[LAS 3 COSAS QUE SÍ O SÍ DEBE DECIR]",
+    "prohibiciones": "[LO QUE NO PUEDE DECIRSE POR NORMATIVA O POR MARCA]",
+    "fechas": "[FECHA DE ENTREGA Y FECHA DE PUBLICACIÓN]"
+  },
+  "secciones_del_brief": [
+    "Quiénes somos y por qué te hemos elegido a ti",
+    "Objetivo de la colaboración en una frase",
+    "Idea creativa: 2 conceptos propuestos, con libertad para que aporte el suyo",
+    "Guion orientativo: gancho, uso real del producto, motivo de compra y llamada a la acción",
+    "Entregables: número de piezas, duración, formato vertical, material en bruto sí o no",
+    "Obligaciones legales: identificar la publicidad de forma visible desde el primer segundo",
+    "Derechos de uso: dónde y durante cuánto tiempo puede usar la marca el vídeo",
+    "Proceso: envío de producto, revisión, una ronda de cambios, publicación",
+    "Cómo se mide el éxito y qué datos hay que pasar tras 7 días"
+  ],
+  "restricciones": [
+    "Nada de guiones palabra por palabra: se marcan puntos obligatorios y se deja su estilo",
+    "No pedir exclusividad indefinida ni derechos perpetuos sin pagarlos",
+    "No prometer resultados de salud, dinero o adelgazamiento"
+  ],
+  "formato_salida": {
+    "documento": "Brief de máximo dos páginas con las secciones anteriores",
+    "email_de_contacto": "Mensaje corto de primer contacto con el creador",
+    "checklist_de_aceptacion": "Lista de comprobación para dar por válida la entrega",
+    "tabla_condiciones": "Columnas: concepto, detalle, fecha"
+  },
+  "criterios_calidad": ["El creador podría grabar sin hacer ni una pregunta", "Los derechos de uso y el pago están escritos sin ambigüedad"],
+  "tono": "Profesional y cercano, respetando la libertad creativa del creador"
+}

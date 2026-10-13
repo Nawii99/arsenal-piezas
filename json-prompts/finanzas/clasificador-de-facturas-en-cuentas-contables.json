@@ -1,0 +1,35 @@
+{
+  "tarea": "Convertir una lista de facturas recibidas y emitidas en asientos contables españoles, con cuenta del Plan General Contable, debe y haber cuadrados",
+  "perfil_experto": "Contable español con experiencia en pymes y en el PGC de pymes",
+  "contexto": {
+    "tipo_contabilidad": "[LIBROS DE AUTÓNOMO / CONTABILIDAD DE SOCIEDAD]",
+    "actividad": "[A QUÉ SE DEDICA EL NEGOCIO]",
+    "plan_de_cuentas": "[PGC PYMES ESTÁNDAR / PEGA TU LISTA DE CUENTAS SI USAS UNA PROPIA]",
+    "programa_destino": "[HOLDED, CONTASOL, A3, EXCEL U OTRO]"
+  },
+  "entradas": {
+    "facturas": "[PEGA: FECHA, TIPO (RECIBIDA O EMITIDA), PROVEEDOR O CLIENTE, CONCEPTO, BASE, TIPO DE IVA, TOTAL, FORMA DE PAGO]"
+  },
+  "reglas": [
+    "Usa 600 y 62x para compras y servicios exteriores, 4720 para IVA soportado, 4770 para IVA repercutido, 400 y 430 para proveedores y clientes, 572 para banco y 570 para caja",
+    "Las compras de bienes que duran más de un año van a inmovilizado (21x), no a gasto, e indícalo",
+    "Separa la parte no deducible del IVA cuando el gasto sea de afectación parcial",
+    "Si la factura lleva retención de IRPF, añade la cuenta 4751",
+    "Todo asiento debe cuadrar: suma del debe igual a suma del haber"
+  ],
+  "formato_salida": {
+    "tipo": "tabla CSV con cabecera, una línea por apunte",
+    "columnas": ["fecha", "asiento", "cuenta", "nombre_cuenta", "concepto", "debe", "haber", "documento"],
+    "anexos": ["Lista de facturas que no has podido clasificar y qué dato falta", "Cuentas nuevas que conviene abrir y por qué", "Totales de control: suma del debe, suma del haber, IVA soportado e IVA repercutido"]
+  },
+  "restricciones": [
+    "No inventes facturas ni importes; si un concepto es ambiguo, colócalo en la lista de pendientes",
+    "Un asiento por documento, sin agrupar facturas distintas",
+    "Respeta los dos decimales y no redondees a tu gusto"
+  ],
+  "criterios_calidad": [
+    "Todos los asientos cuadran y los totales de control coinciden con los de las facturas",
+    "La cuenta elegida se justifica en una frase cuando no sea evidente",
+    "El CSV se puede importar sin retocar cabeceras"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "tarea": "Escribir el guion de un vídeo personalizado de 2 a 3 minutos que demuestre el producto aplicado al caso de un cliente concreto",
+  "cliente": {
+    "empresa_y_sector": "[NOMBRE Y A QUÉ SE DEDICA]",
+    "persona_y_cargo": "[QUIÉN LO VA A VER]",
+    "problema_que_te_conto": "[LO QUE TE DIJO CON SUS PALABRAS]",
+    "objeciones_probables": "[PRECIO, TIEMPO, CAMBIO DE HÁBITOS, PERMISOS...]",
+    "siguiente_paso_deseado": "[LLAMADA, PRUEBA, FIRMA DE PRESUPUESTO]"
+  },
+  "tu_producto": {
+    "que_es": "[DESCRIPCIÓN]",
+    "funciones_relevantes_para_este_cliente": "[SOLO LAS QUE LE AFECTAN]",
+    "lo_que_no_hace": "[LÍMITES QUE CONVIENE DECIR]"
+  },
+  "estructura": [
+    "Saludo por su nombre y referencia a lo que hablasteis, máximo 15 segundos",
+    "Repetir su problema con sus propias palabras para demostrar que has escuchado",
+    "Demostración en pantalla o con el producto en mano usando datos parecidos a los suyos",
+    "Responder de frente a la objeción más probable",
+    "Siguiente paso concreto con fecha propuesta"
+  ],
+  "reglas": [
+    "Nada de presentación corporativa ni historia de la empresa",
+    "No enseñar funciones que él no ha pedido",
+    "Usar datos de ejemplo inventados pero realistas para su sector, nunca de otro cliente",
+    "Tuteo o usted según [TRATO ACORDADO]"
+  ],
+  "formato_salida": {
+    "bloques": [
+      "Guion con locución literal y notas de qué se ve en cada momento",
+      "Email corto de acompañamiento con asunto y dos líneas",
+      "Tres variantes de los primeros 15 segundos"
+    ]
+  },
+  "criterios_calidad": [
+    "El vídeo sería inservible para otro cliente distinto, de tan personalizado",
+    "Se cumple la duración leído a ritmo normal",
+    "El siguiente paso es una sola acción fácil de aceptar"
+  ]
+}

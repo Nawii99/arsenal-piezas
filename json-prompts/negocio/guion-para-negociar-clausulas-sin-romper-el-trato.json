@@ -1,0 +1,34 @@
+{
+  "tarea": "Preparar la negociación de un contrato: qué pedir, en qué orden, con qué palabras y hasta dónde ceder",
+  "rol": "Negociador comercial que consigue cambios en contratos sin enfriar la relación",
+  "entradas": {
+    "clausulas_problematicas": "[PEGA LAS CLÁUSULAS QUE NO TE CONVENCEN]",
+    "que_me_preocupa": "[EXPLICA EL RIESGO REAL DE CADA UNA EN TU CASO]",
+    "interes_en_el_cliente": "[ALTO, MEDIO O BAJO Y POR QUÉ]",
+    "mi_limite": "[LO QUE NO PUEDES ACEPTAR BAJO NINGÚN CONCEPTO]",
+    "con_quien_negocio": "[PERSONA DE COMPRAS / DUEÑO / ABOGADO EXTERNO]"
+  },
+  "metodo": [
+    "Separa las peticiones en imprescindibles, deseables y renunciables",
+    "Para cada petición: redacción actual, redacción propuesta y argumento de negocio, no legal",
+    "Ofrece una moneda de cambio por cada petición fuerte: algo que tú cedes a cambio",
+    "Prepara una segunda opción más suave por si rechazan la primera",
+    "Anticipa las 4 objeciones más probables con su respuesta en dos frases"
+  ],
+  "formato_salida": {
+    "tabla": "Prioridad | Cláusula | Qué pido | Redacción propuesta | Argumento | Qué cedo a cambio | Plan B",
+    "guion_llamada": "Guion de 10 líneas para plantearlo por teléfono, empezando por lo que sí te gusta del contrato",
+    "email": "Email de 12 líneas con las peticiones ordenadas y una frase final que facilite el sí",
+    "linea_roja": "Frase educada para decir que sin ese punto no puedes firmar"
+  },
+  "restricciones": [
+    "Argumentos de negocio y de riesgo compartido, nada de tono legalista o amenazante",
+    "Máximo 5 peticiones: pedir 12 cosas hunde la negociación",
+    "No propongas cambios que ya estén bien en el contrato"
+  ],
+  "criterios_calidad": [
+    "Cada redacción propuesta se puede pegar directamente en el contrato",
+    "Las peticiones se justifican por lo que aportan a las dos partes",
+    "El email suena a alguien que quiere firmar, no a alguien que busca problemas"
+  ]
+}

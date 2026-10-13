@@ -1,0 +1,36 @@
+{
+  "tarea": "Diseñar la segmentación de una lista de correo y el plan de contenidos para cada segmento",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUÉ PRECIOS]",
+    "catalogo": "[LISTA DE PRODUCTOS O SERVICIOS PRINCIPALES]",
+    "datos_disponibles": "[QUÉ SABES DE CADA CONTACTO: COMPRAS, ORIGEN, FECHA DE ALTA, CLICS, CIUDAD]",
+    "origenes": "[DE DÓNDE ENTRAN: WEB, TIENDA FÍSICA, ANUNCIOS, EVENTOS, RECOMENDACIÓN]",
+    "etiquetas_actuales": "[ETIQUETAS O LISTAS QUE YA USAS, O NINGUNA]",
+    "herramienta": "[TU GESTOR DE EMAIL]"
+  },
+  "instrucciones": [
+    "Propón entre 4 y 6 segmentos, ni uno más, usando solo datos que el negocio ya tiene",
+    "Para cada segmento define la regla exacta que hay que meter en la herramienta",
+    "Indica qué hacer con los contactos que no encajan en ningún segmento",
+    "Evita segmentos que se solapen: di qué prioridad manda si un contacto cumple dos reglas"
+  ],
+  "por_cada_segmento": [
+    "nombre y en una frase quién es",
+    "regla técnica de filtrado",
+    "tamaño estimado y cómo comprobarlo",
+    "qué le preocupa y qué NO hay que contarle",
+    "tipo de emails y frecuencia recomendada",
+    "la oferta más lógica para ese grupo",
+    "un asunto de ejemplo escrito para él"
+  ],
+  "formato_salida": {
+    "tabla_resumen": ["segmento", "regla", "frecuencia", "mensaje_principal", "oferta"],
+    "plan_90_dias": "Qué segmento activar primero y en qué orden montar el resto",
+    "datos_que_faltan": "Qué información deberías empezar a recoger y cómo pedirla sin molestar"
+  },
+  "criterios_calidad": [
+    "Se puede montar en una tarde con una herramienta de email normal",
+    "Ningún segmento exige datos que el negocio no tiene ni puede conseguir",
+    "Cada segmento recibe un mensaje distinto de verdad, no el mismo con otro nombre"
+  ]
+}

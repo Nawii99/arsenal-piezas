@@ -1,0 +1,39 @@
+{
+  "tarea": "Comparar mi ficha con la de mis competidores y detectar por dónde me ganan, qué palabras clave están libres y qué debo cambiar",
+  "contexto": {
+    "mi_app": "[NOMBRE Y QUÉ HACE]",
+    "mi_ficha": "[TÍTULO, SUBTÍTULO, DESCRIPCIÓN CORTA Y RESUMEN DE TUS CAPTURAS]",
+    "mercado": "[PAÍS E IDIOMA]",
+    "competidor_1": "[NOMBRE, TÍTULO, SUBTÍTULO, DESCRIPCIÓN Y CAPTURAS]",
+    "competidor_2": "[NOMBRE, TÍTULO, SUBTÍTULO, DESCRIPCIÓN Y CAPTURAS]",
+    "competidor_3": "[NOMBRE, TÍTULO, SUBTÍTULO, DESCRIPCIÓN Y CAPTURAS]",
+    "datos_publicos": "[VALORACIÓN, NÚMERO DE RESEÑAS Y ANTIGÜEDAD DE CADA UNO, SI LOS TIENES]"
+  },
+  "analisis": [
+    "Extraer las palabras clave que cada competidor coloca en título y subtítulo",
+    "Detectar términos que repiten los tres: ahí está la competencia dura",
+    "Detectar términos que no usa ninguno pero que tu público sí buscaría: ese es el hueco",
+    "Comparar promesa principal de cada ficha y ver cuál está sin ocupar",
+    "Leer el patrón de sus capturas: qué enseñan primero y qué objeción atacan",
+    "Revisar sus reseñas negativas típicas para convertir sus fallos en tus argumentos"
+  ],
+  "formato_salida": {
+    "tipo": "Informe comparativo",
+    "secciones": [
+      "Tabla comparativa: elemento de ficha frente a las cuatro apps",
+      "Mapa de palabras: disputadas, defendibles y libres",
+      "Hueco de posicionamiento: la frase que puedes ocupar tú y nadie más",
+      "Qué copiar (y por qué funciona) y qué no copiar (y por qué)",
+      "5 cambios concretos en tu ficha ordenados por impacto"
+    ]
+  },
+  "restricciones": [
+    "No proponer usar el nombre de un competidor en tus palabras clave",
+    "No inventar datos de descargas ni ingresos que no estén en las entradas",
+    "Distinguir siempre entre lo observado y lo que es una suposición"
+  ],
+  "criterios_calidad": [
+    "El hueco propuesto debe ser creíble para el público descrito y sostenible por la app",
+    "Cada cambio propuesto va con el texto ya redactado"
+  ]
+}

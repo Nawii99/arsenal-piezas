@@ -1,0 +1,35 @@
+{
+  "tarea": "Decidir qué compromisos, clientes, canales y tareas dejo de hacer este trimestre y preparar cómo comunicarlo",
+  "contexto": {
+    "compromisos_actuales": "[LISTA DE LO QUE HACES HOY: PROYECTOS, CLIENTES, CANALES, REUNIONES FIJAS, SUSCRIPCIONES]",
+    "horas_y_retorno": "[HORAS AL MES Y LO QUE APORTA CADA UNO, AUNQUE SEA A OJO]",
+    "objetivo_trimestre": "[LO QUE QUIERES CONSEGUIR EN LOS PRÓXIMOS 3 MESES]",
+    "intocable": "[LO QUE NO SE PUEDE TOCAR PASE LO QUE PASE]"
+  },
+  "metodo": [
+    "Puntúa cada compromiso en aporte al objetivo, coste en horas, coste emocional y coste de salir",
+    "Clasifica en: mantener, reducir, aparcar 3 meses o abandonar",
+    "Ten en cuenta el compromiso adquirido: si hay contrato o palabra dada, propón salida ordenada, no corte seco",
+    "Calcula cuántas horas al mes se liberan en total",
+    "Propón a qué dedicar esas horas liberadas, ligado al objetivo del trimestre",
+    "Avisa de los efectos secundarios de cada abandono (ingresos que se van, contactos que se enfrían)"
+  ],
+  "restricciones": [
+    "No propongas abandonar nada marcado como intocable",
+    "Cada abandono lleva su coste asumido escrito, sin maquillar",
+    "Los mensajes de cancelación son cortos, educados y sin excusas largas"
+  ],
+  "formato_salida": {
+    "1_tabla_decisiones": "Tabla con columnas: Compromiso | Horas/mes | Aporte al objetivo | Decisión | Coste de dejarlo",
+    "2_horas_liberadas": "Total de horas al mes recuperadas y a qué se destinan",
+    "3_orden_de_salida": "En qué orden y en qué semanas soltar cada cosa",
+    "4_mensajes": "Un mensaje listo para enviar por cada abandono o reducción que afecte a otra persona",
+    "5_regla_de_entrada": "La regla que aplicarás para aceptar cosas nuevas de ahora en adelante"
+  },
+  "criterios_calidad": [
+    "Cada decisión se justifica con horas y aporte, no con opiniones",
+    "Los mensajes se pueden enviar tal cual, sin retoques",
+    "La regla de entrada es concreta y se puede aplicar sin pensarlo"
+  ],
+  "tono": "Firme y educado, español de España"
+}

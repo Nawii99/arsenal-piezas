@@ -1,0 +1,36 @@
+{
+  "tarea": "Diseñar la plantilla de informe mensual de resultados en diapositivas, con reglas fijas de gráficos",
+  "entradas": {
+    "negocio": "[NOMBRE DE TU EMPRESA Y A QUÉ SE DEDICA]",
+    "audiencia": "[JEFE, SOCIO, CLIENTE O INVERSOR]",
+    "metricas": "[LAS 4 O 6 CIFRAS QUE DE VERDAD IMPORTAN]",
+    "fuente_datos": "[DE DÓNDE SALEN LOS NÚMEROS]",
+    "periodicidad": "[MENSUAL / TRIMESTRAL]"
+  },
+  "estructura_fija": [
+    "1 Resumen: 3 frases con lo que ha pasado y la decisión que se pide",
+    "2 Cuadro de cifras clave con valor, comparación con el periodo anterior y con el objetivo",
+    "3 Una diapositiva por métrica importante: gráfico y una frase de lectura",
+    "4 Qué ha funcionado y qué no",
+    "5 Riesgos y qué vigilamos",
+    "6 Plan del próximo periodo con responsable y fecha"
+  ],
+  "reglas_de_graficos": [
+    "Evolución en el tiempo: línea. Comparar categorías: barras horizontales. Partes de un total: barra apilada, nunca una tarta de más de 3 trozos",
+    "Los gráficos de barras empiezan el eje en cero",
+    "Máximo 5 series por gráfico, el resto agrupado como Otros",
+    "Etiquetar el dato que importa en lugar de poner leyenda",
+    "El titular del gráfico dice la conclusión, no el nombre de la métrica"
+  ],
+  "restricciones": [
+    "Prohibido inventar datos: lo que falte se escribe como [DATO PENDIENTE]",
+    "Cada cifra lleva unidad y periodo",
+    "Máximo 10 diapositivas"
+  ],
+  "formato_salida": "Ficha por diapositiva con titular, qué gráfico va, qué datos necesita y la frase de lectura; al final, la lista de datos a recopilar cada mes",
+  "criterios_calidad": [
+    "Se puede rellenar en menos de una hora cada mes",
+    "Quien lo lee sabe qué decisión tomar",
+    "Los titulares se sostienen solos aunque se quiten los gráficos"
+  ]
+}

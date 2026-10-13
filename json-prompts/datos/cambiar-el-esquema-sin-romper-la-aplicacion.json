@@ -1,0 +1,36 @@
+{
+  "tarea": "Convertir un cambio de esquema en migraciones versionadas, seguras y reversibles, con el orden de despliegue",
+  "entradas": {
+    "esquema_actual": "[PEGA LAS TABLAS AFECTADAS]",
+    "cambio_deseado": "[QUE QUIERES CAMBIAR: EJ: SEPARAR NOMBRE COMPLETO EN NOMBRE Y APELLIDOS]",
+    "filas_afectadas": "[Nº APROXIMADO]",
+    "puedo_parar_el_servicio": "[SI | NO | SOLO DE MADRUGADA]",
+    "motor": "[PostgreSQL | MySQL]"
+  },
+  "metodo": [
+    "Descomponer el cambio en pasos pequenos que se puedan desplegar por separado",
+    "Aplicar el patron ampliar, migrar, contraer: primero anadir lo nuevo, luego copiar los datos, luego retirar lo viejo",
+    "Numerar cada migracion con un script de aplicacion y otro de vuelta atras",
+    "Marcar las operaciones que bloquean la tabla y ofrecer alternativa si no se puede parar el servicio",
+    "Definir el momento exacto en que hay que desplegar el codigo de la aplicacion respecto a cada migracion"
+  ],
+  "restricciones": [
+    "Nunca renombrar ni borrar una columna en el mismo despliegue en que se anade su sustituta",
+    "Toda migracion debe poder ejecutarse dos veces sin romper nada",
+    "Antes de cualquier paso destructivo, indica la copia de seguridad y como restaurarla",
+    "Nada de scripts que dependan de datos concretos de tu entorno"
+  ],
+  "formato_salida": {
+    "1_plan": "Tabla markdown con columnas: nº, que hace, bloquea la tabla, requiere despliegue de codigo antes o despues",
+    "2_scripts": "Para cada numero, bloque SQL de aplicacion y bloque SQL de vuelta atras",
+    "3_copia_de_datos": "Consulta que rellena los campos nuevos a partir de los antiguos, por lotes si hay muchas filas",
+    "4_verificacion": "Consultas que confirman que los datos migrados coinciden con los originales",
+    "5_plan_b": "Que hacer si algo falla a mitad, paso a paso"
+  },
+  "criterios_calidad": [
+    "Cada migracion tiene su vuelta atras real, no un comentario diciendo que no se puede",
+    "Ningun paso deja la aplicacion en un estado en el que no funcione",
+    "Las consultas de verificacion devuelven cero diferencias si todo ha ido bien"
+  ],
+  "tono": "Prudente y operativo, espanol de Espana"
+}

@@ -1,0 +1,38 @@
+{
+  "tarea": "Convertir un guion de video en un storyboard plano a plano, con la informacion tecnica de cada plano y un prompt de imagen para dibujar cada viñeta",
+  "entradas": {
+    "guion": "[PEGA AQUÍ TU GUION COMPLETO]",
+    "duracion_total": "[SEGUNDOS TOTALES DEL VÍDEO]",
+    "formato": "[VERTICAL 9:16 / HORIZONTAL 16:9 / CUADRADO 1:1]",
+    "estilo_visual": "[REALISTA CON MÓVIL / ESTUDIO LIMPIO / DOCUMENTAL / ANIMACIÓN 2D]",
+    "marca": "[COLORES, TIPOGRAFÍA Y DÓNDE APARECE EL LOGO]",
+    "medios_disponibles": "[MÓVIL Y LUZ NATURAL / CÁMARA Y FOCOS / SOLO BANCO DE IMÁGENES]"
+  },
+  "proceso": [
+    "Divide el guion en planos: un plano nuevo cada vez que cambia la idea, el lugar o quien habla",
+    "Asigna a cada plano una duracion realista; ningun plano de menos de 1 s ni de mas de 6 s salvo que se justifique",
+    "Elige encuadre y movimiento de camara segun lo que tiene que entender el espectador en ese plano",
+    "Marca en que planos aparece texto en pantalla y cuantas palabras caben sin tapar la imagen",
+    "Comprueba que la suma de duraciones cuadra con la duracion total y ajusta"
+  ],
+  "vocabulario_permitido": {
+    "encuadres": ["plano detalle", "primer plano", "plano medio", "plano americano", "plano general", "cenital"],
+    "movimientos": ["cámara fija", "paneo lateral", "travelling de acercamiento", "cámara en mano", "zoom lento"],
+    "transiciones": ["corte seco", "corte al ritmo del audio", "encadenado", "corte con movimiento"]
+  },
+  "formato_salida": {
+    "tipo": "Tabla en Markdown, una fila por plano, mas un resumen final",
+    "columnas": ["Nº", "Segundos", "Encuadre", "Movimiento", "Qué se ve", "Audio o locución", "Texto en pantalla", "Prompt de imagen en inglés"],
+    "resumen_final": ["Número total de planos", "Lista de localizaciones", "Lista de objetos y personas necesarios", "Planos que se pueden resolver con banco de imágenes"]
+  },
+  "reglas_del_prompt_de_imagen": [
+    "En ingles, una sola frase larga, describiendo sujeto, accion, entorno, encuadre, luz y estilo",
+    "Incluye siempre el formato de pantalla y el mismo estilo visual en todos los planos para que las viñetas parezcan del mismo video",
+    "Nada de nombres de marcas reales ni de personas famosas"
+  ],
+  "criterios_calidad": [
+    "Un desconocido puede grabar el vídeo solo con esta tabla",
+    "Cada plano aporta información nueva; si dos planos dicen lo mismo, se fusionan",
+    "El primer plano funciona como miniatura del vídeo"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Escribir un artículo comparativa entre dos opciones que ayude a decidir de verdad y no quede en un empate cómodo",
+  "entradas": {
+    "opcion_a": "[NOMBRE Y DESCRIPCIÓN DE LA OPCIÓN A]",
+    "opcion_b": "[NOMBRE Y DESCRIPCIÓN DE LA OPCIÓN B]",
+    "criterios": ["[CRITERIO 1: p.ej. precio]", "[CRITERIO 2: p.ej. facilidad de uso]", "[CRITERIO 3]", "[CRITERIO 4]"],
+    "datos_reales_que_aporto": "[PRECIOS, CARACTERÍSTICAS Y EXPERIENCIA PROPIA CON CADA UNA]",
+    "mi_relacion_con_ellas": "[VENDO UNA / USO LAS DOS / SOY NEUTRAL]",
+    "lector": "[PERFIL DE QUIEN ESTÁ DUDANDO]"
+  },
+  "estructura": [
+    "Respuesta rápida en 4 líneas: para quién es cada opción",
+    "Tabla comparativa por criterios",
+    "Sección por criterio explicando quién gana y por qué",
+    "Cuándo elegir la opción A, con 3 situaciones concretas",
+    "Cuándo elegir la opción B, con 3 situaciones concretas",
+    "Errores frecuentes al elegir",
+    "Veredicto y siguiente paso"
+  ],
+  "restricciones": [
+    "Reconocer al menos dos puntos fuertes reales de cada opción",
+    "Si vendo una de las dos, decirlo abiertamente en el primer tercio del artículo",
+    "No inventar precios ni características: usar solo los datos aportados y marcar el resto como [COMPROBAR]",
+    "Nada de conclusiones tipo depende de tus necesidades sin más: hay que mojarse"
+  ],
+  "formato_salida": {
+    "formato": "markdown con H2 y H3",
+    "incluir": ["tabla_comparativa", "cuadro_resumen_para_quien_es_cada_una", "faq_de_4_preguntas", "meta_descripcion"],
+    "longitud": "[NÚMERO] palabras"
+  },
+  "criterios_calidad": [
+    "Alguien que dude puede decidir solo con la tabla y el primer bloque",
+    "El texto no parece un folleto de una de las dos opciones",
+    "Cada afirmación fuerte va acompañada de un motivo concreto"
+  ],
+  "tono": "honesto, práctico, tuteando"
+}

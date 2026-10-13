@@ -1,0 +1,51 @@
+{
+  "tarea": "Calcular la subida de precios óptima para la cartera actual, el punto de bajas que se puede asumir y redactar la comunicación a cada tipo de cliente.",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y BAJO QUÉ MODALIDAD: CUOTA MENSUAL, PROYECTO O UNIDAD]",
+    "ultima_subida": "[FECHA DE LA ÚLTIMA VEZ QUE SUBISTE, O NUNCA]",
+    "situacion_de_demanda": "[TENGO LISTA DE ESPERA / VOY AL DÍA / ME SOBRA HUECO]"
+  },
+  "entradas": {
+    "clientes_y_tarifas": "[LISTA: CLIENTE, TARIFA ACTUAL SIN IVA, ANTIGÜEDAD, MARGEN ACTUAL]",
+    "subida_de_costes": "[CUÁNTO HAN SUBIDO TUS COSTES DIRECTOS Y FIJOS DESDE LA ÚLTIMA TARIFA]",
+    "mejoras_aportadas": "[QUÉ HACES HOY QUE NO HACÍAS ANTES: RAPIDEZ, SOPORTE, HERRAMIENTAS, RESULTADOS]",
+    "capacidad_libre": "[CUÁNTAS HORAS O PLAZAS LIBRES TIENES AL MES]"
+  },
+  "metodo": [
+    "1. Calcula la subida mínima que solo repone costes: la que deja el margen igual que antes. Ese es el suelo.",
+    "2. Calcula la subida objetivo según demanda: con lista de espera, entre el 10 y el 20 por ciento; al día, entre el 5 y el 10; con hueco libre, sube solo a los que dan menos margen.",
+    "3. Calcula el punto de indiferencia: cuántos clientes pueden irse tras la subida y seguir ingresando lo mismo. Enséñalo como número de clientes, no como porcentaje abstracto.",
+    "4. Segmenta la cartera en tres grupos: antiguos y rentables (subida suave o congelada un tiempo), medios (subida objetivo), y los que están por debajo de coste (subida fuerte o salida).",
+    "5. Fija el calendario: avisar con 30 a 60 días, fecha de entrada en vigor limpia, y respetar los proyectos ya presupuestados con el precio antiguo.",
+    "6. Añade una escalera de salida para quien se resista: mantener el precio bajando alcance, pasar a paquete menor, o pago anual por adelantado con descuento.",
+    "7. Redacta la comunicación en tres versiones: cliente antiguo, cliente medio y cliente que ya se quejó otras veces. Estructura: agradecimiento breve, qué ha mejorado, nueva tarifa, fecha, qué no cambia, puerta abierta a hablarlo.",
+    "8. Prepara respuestas a las tres objeciones más probables: es mucho, tengo otro presupuesto más barato, y ahora mismo no puedo.",
+    "9. Simula el resultado: ingresos antes, ingresos si nadie se va, ingresos si se va el porcentaje que el usuario teme."
+  ],
+  "restricciones": [
+    "No prometas que nadie se irá ni pongas porcentajes de retención inventados.",
+    "Respeta los contratos y presupuestos ya firmados: la subida entra al renovar.",
+    "Nada de subidas encubiertas recortando servicio sin decirlo.",
+    "No justifiques la subida solo con la inflación: apoya en mejoras concretas."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Subir a todos por igual sin mirar el margen de cada uno.",
+    "Avisar por WhatsApp el mismo mes de aplicarla.",
+    "Pedir perdón en el mensaje: quita autoridad y abre negociación.",
+    "Subir cuando tienes la agenda vacía y sin plan de captación.",
+    "Olvidar actualizar la tarifa en la web, el presupuesto tipo y la pasarela de pago."
+  ],
+  "formato_salida": {
+    "bloque_1": "Suelo, subida objetivo y punto de indiferencia en clientes, con la cuenta a la vista.",
+    "bloque_2": "Tabla por cliente: tarifa actual, nueva tarifa, variación, grupo, riesgo de baja.",
+    "bloque_3": "Calendario de comunicación con fechas concretas.",
+    "bloque_4": "Los tres emails listos para enviar y las respuestas a objeciones.",
+    "bloque_5": "Simulación de ingresos en tres escenarios.",
+    "estilo": "Español de España, tuteando al usuario, usted en los emails a cliente empresa"
+  },
+  "criterios_calidad": [
+    "Ningún cliente queda sin tarifa nueva asignada.",
+    "El punto de indiferencia está expresado en número de clientes concretos.",
+    "Los emails no piden disculpas y caben en una pantalla de móvil."
+  ]
+}

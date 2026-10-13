@@ -1,0 +1,43 @@
+{
+  "tarea": "Definir los eventos, el embudo y el panel semanal de mi app",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "accion_de_valor": "[LA ACCIÓN QUE DEMUESTRA QUE LA APP LE SIRVE AL USUARIO]",
+    "modelo_de_ingresos": "[GRATIS, SUSCRIPCIÓN, PAGO ÚNICO, SERVICIOS]",
+    "herramienta": "[LA QUE USO O NINGUNA]",
+    "volumen_actual": "[USUARIOS AL MES APROXIMADO]"
+  },
+  "pasos": [
+    "Escribe la acción de valor y a partir de ella el embudo: instalación, primera apertura, alta, primera acción de valor, acción repetida en siete días y pago si lo hay",
+    "Define diez eventos como mucho, con nombre en minúsculas y con la forma objeto y acción, más las propiedades imprescindibles de cada uno",
+    "Marca qué eventos son de negocio y cuáles son de diagnóstico, y descarta los que no van a cambiar ninguna decisión",
+    "Define la retención por grupos semanales: cuántos de los que entraron una semana siguen a los uno, siete y treinta días",
+    "Fija para cada paso del embudo un umbral de alarma y qué mirar si se cruza",
+    "Monta el panel semanal con cinco números como mucho y el día fijo de revisión",
+    "Indica dónde pedir consentimiento de analítica y qué no se debe medir nunca"
+  ],
+  "restricciones": [
+    "Nada de medirlo todo: si un dato no cambia una decisión, fuera",
+    "Nombres de evento consistentes y escritos una sola vez para siempre",
+    "No metas datos personales dentro de las propiedades de los eventos",
+    "Los umbrales se ponen ahora, no cuando ya ha bajado el número"
+  ],
+  "errores_frecuentes": [
+    "Medir descargas y aperturas y nada más, sin saber qué hace la gente dentro",
+    "Cambiar los nombres de los eventos por el camino y romper la comparación con meses anteriores",
+    "Mirar el total acumulado en vez de la retención por grupos de entrada",
+    "Sacar conclusiones con veinte usuarios como si fueran mil"
+  ],
+  "formato_salida": {
+    "tabla_eventos": "nombre_evento, cuando_se_dispara, propiedades, decision_que_permite",
+    "embudo": "Pasos en orden con el porcentaje que espero en cada uno y el umbral de alarma",
+    "retencion": "Definición de los grupos semanales y de los días a medir",
+    "panel": "Cinco números del panel semanal, día de revisión y qué hago si uno se sale del umbral"
+  },
+  "criterios_calidad": [
+    "Cada evento tiene escrita la decisión que permite tomar",
+    "El embudo empieza en la instalación y acaba en el uso repetido o el pago",
+    "Hay umbrales concretos y una acción asociada a cada uno",
+    "El panel cabe en una pantalla y se revisa un día fijo de la semana"
+  ]
+}

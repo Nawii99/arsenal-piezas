@@ -1,0 +1,32 @@
+{
+  "tarea": "Analizar los productos mejor posicionados en una búsqueda de marketplace y proponer un hueco concreto por el que entrar",
+  "contexto": {
+    "busqueda_principal": "[PALABRA CLAVE POR LA QUE QUIERES SALIR]",
+    "marketplace": "[AMAZON.ES / ETSY]",
+    "mi_producto": "[QUÉ VENDES Y QUÉ INCLUYE]",
+    "mi_precio": "[PRECIO]",
+    "mi_coste": "[COSTE UNITARIO PUESTO EN ALMACÉN]",
+    "competidores": "[PARA CADA UNO: NOMBRE, PRECIO, Nº DE RESEÑAS, NOTA MEDIA, QUÉ PROMETE EL TÍTULO, CUÁNTAS FOTOS Y SI TIENE VÍDEO]"
+  },
+  "analisis": [
+    "Rellena una tabla comparativa con precio, unidades por pack, precio por unidad, reseñas, nota, calidad del título y calidad de las fotos",
+    "Lee las quejas repetidas en las reseñas de 1 a 3 estrellas de cada competidor y agrúpalas en motivos",
+    "Detecta qué promesa hacen todos igual (terreno saturado) y qué necesidad no cubre nadie (tu hueco)",
+    "Sitúa a cada competidor en una rejilla de precio frente a calidad percibida y marca dónde quedas tú",
+    "Calcula la barrera de entrada: reseñas acumuladas del top 5 y hueco de precio disponible"
+  ],
+  "formato_salida": {
+    "tabla_comparativa": "Una fila por competidor y una final con tu producto",
+    "quejas_repetidas": "Top 5 motivos de queja del sector con el porcentaje aproximado que representan",
+    "mapa_posicionamiento": "Descripción en texto de la rejilla precio/calidad y tu casilla libre",
+    "hueco_recomendado": "Una frase de posicionamiento y los 3 argumentos que la sostienen",
+    "plan_de_ataque": "5 acciones ordenadas por esfuerzo y efecto: qué cambiar en precio, fotos, texto o pack",
+    "semaforo": "Verde, ámbar o rojo sobre entrar en esta categoría, con el motivo en dos líneas"
+  },
+  "criterios_calidad": [
+    "El hueco propuesto sale de las quejas reales, no de una idea genérica",
+    "Si la categoría no es viable con tu coste, dilo claramente en vez de forzar un plan",
+    "Cada acción del plan indica qué se espera que mejore: visibilidad, conversión o margen"
+  ],
+  "prohibido": "Inventar datos de ventas o de facturación de los competidores; trabaja solo con lo que se ve en la ficha"
+}

@@ -1,0 +1,57 @@
+{
+  "tarea": "Disenar la estructura de bonos y planes de sesiones de un centro de salud o bienestar, con precios por tramo, condiciones de uso y el texto de condiciones que acepta el cliente",
+  "contexto": {
+    "servicio": "[SERVICIO Y DURACION DE LA SESION]",
+    "precio_sesion_suelta": "[PRECIO ACTUAL DE UNA SESION]",
+    "coste_por_sesion": "[COSTE REAL: SUELDO O TIEMPO, MATERIAL Y PARTE DE GASTOS FIJOS]",
+    "sesiones_tipicas": "[CUANTAS SESIONES SUELE NECESITAR UN CLIENTE]",
+    "ocupacion": "[PORCENTAJE DE AGENDA OCUPADA HOY]",
+    "formas_de_pago": "[EFECTIVO, TARJETA, BIZUM, TRANSFERENCIA, PAGO APLAZADO]"
+  },
+  "entradas": {
+    "problemas_actuales": "[LO QUE TE PASA HOY: CANCELACIONES, BONOS ETERNOS, DEVOLUCIONES, DISCUSIONES]",
+    "competencia_zona": "[QUE BONOS OFRECEN OTROS CENTROS DE TU ZONA, SI LO SABES]"
+  },
+  "pasos": [
+    "1. Calcula el margen por sesion suelta restando el coste real al precio, y deja claro cuanto margen puedes ceder en un bono sin trabajar gratis",
+    "2. Define tres tramos de bono coherentes con el tratamiento real, no con numeros redondos porque si, y con un descuento creciente pero contenido",
+    "3. Calcula el precio por sesion de cada tramo y el margen resultante, y descarta cualquier tramo que baje del minimo aceptable",
+    "4. Anade valor no monetario a los tramos altos en vez de mas descuento: prioridad de horario, informe de seguimiento o acompanamiento entre sesiones",
+    "5. Fija la caducidad del bono en funcion de la frecuencia recomendada, con margen razonable, y explica el motivo al cliente en una frase",
+    "6. Escribe las reglas de uso: aviso minimo para cancelar, que pasa si no avisa, si el bono es transferible, si se puede pausar por causa justificada y como se documenta",
+    "7. Define la politica de devolucion por sesiones no usadas, distinguiendo abandono voluntario de causa de fuerza mayor, y el plazo de devolucion",
+    "8. Escribe el texto de condiciones en lenguaje claro, con las clausulas numeradas y un hueco de firma o de aceptacion digital",
+    "9. Escribe el guion de dos frases para presentar el bono al final de la primera visita, sin presionar",
+    "10. Define el registro de bonos: cliente, tramo, fecha de compra, sesiones consumidas, caducidad y saldo"
+  ],
+  "restricciones": [
+    "El pago anticipado no puede condicionar el criterio profesional ni obligar a completar sesiones innecesarias",
+    "Nada de clausulas abusivas: la caducidad debe ser razonable y estar avisada antes de pagar",
+    "Prohibido vender bonos prometiendo un resultado concreto",
+    "No inventes obligaciones fiscales; recuerda emitir factura y consultar con la gestoria",
+    "El texto de condiciones se entrega y se acepta antes del cobro, no despues"
+  ],
+  "errores_tipicos": [
+    "Descontar tanto en el bono grande que el margen desaparece",
+    "No poner caducidad y arrastrar sesiones pendientes de hace tres anos",
+    "Explicar las condiciones cuando el cliente ya quiere devolver el dinero",
+    "Contar el dinero del bono como ingreso del mes y quedarte sin caja para las sesiones pendientes",
+    "Vender el bono antes de saber cuantas sesiones necesita esa persona"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de tramos: sesiones, precio total, precio por sesion, descuento, margen por sesion",
+    "bloque_2": "Extras no monetarios por tramo",
+    "bloque_3": "Texto de condiciones con clausulas numeradas, listo para imprimir",
+    "bloque_4": "Frases para presentar el bono en consulta",
+    "bloque_5": "Tabla de control de bonos con columnas",
+    "bloque_6": "Aviso de las decisiones que conviene consultar con gestoria o asesor legal",
+    "idioma": "Espanol de Espana, lenguaje claro sin jerga legal innecesaria"
+  },
+  "criterios_calidad": [
+    "Todos los tramos mantienen un margen positivo calculado con los datos del usuario",
+    "Las condiciones responden a cancelacion, caducidad, pausa, transferencia y devolucion",
+    "El cliente entiende las condiciones en una lectura",
+    "El bono no obliga a nada que choque con el criterio profesional",
+    "Se puede saber en cualquier momento cuantas sesiones pendientes hay comprometidas"
+  ]
+}

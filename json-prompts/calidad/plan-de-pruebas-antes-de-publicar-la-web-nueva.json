@@ -1,0 +1,32 @@
+{
+  "tarea": "Elaborar el plan de pruebas de la web nueva antes de publicarla, con casos concretos y resultado esperado",
+  "contexto": {
+    "tipo_de_web": "[WEB DE SERVICIOS, TIENDA ONLINE, RESERVAS, CATÁLOGO...]",
+    "plataforma": "[PLATAFORMA DE LA WEB NUEVA]",
+    "funciones_criticas": "[FORMULARIOS, CARRITO Y PAGO, RESERVA DE CITA, ÁREA DE CLIENTES, BUSCADOR, DESCARGAS]",
+    "integraciones": "[PASARELA DE PAGO, CRM, EMAIL MARKETING, WHATSAPP, ANALÍTICA, PÍXELES DE PUBLICIDAD]",
+    "quien_prueba": "[TÚ SOLO, TU EQUIPO, LA AGENCIA]"
+  },
+  "bloques_de_prueba": [
+    "Funciones críticas de principio a fin, incluido un pedido o solicitud real de prueba",
+    "Formularios: envío, aviso de error, correo de aviso al negocio y correo al cliente",
+    "Móvil: menú, botones, textos, formularios y velocidad de carga",
+    "Navegadores: Chrome, Safari, Firefox y Edge, en ordenador y en móvil",
+    "Contenido: faltas, imágenes que no cargan, textos de relleno olvidados, enlaces rotos",
+    "SEO técnico: títulos, descripciones, sitemap, y que la web deje de estar bloqueada a buscadores al publicar",
+    "Legal: cookies, aviso legal, privacidad y casilla de consentimiento en los formularios",
+    "Medición: que la analítica y los píxeles registran visitas y conversiones",
+    "Accesibilidad básica: contraste, textos alternativos en imágenes y navegación con teclado"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de casos de prueba",
+    "columnas": ["ID", "Bloque", "Qué se prueba", "Pasos", "Resultado esperado", "Dispositivo", "Prioridad", "Responsable", "Estado"],
+    "extras": ["Lista de bloqueantes que impiden publicar si fallan", "Fallos que se pueden arreglar después de publicar"]
+  },
+  "restricciones": [
+    "Los pasos deben poder seguirse sin conocimientos técnicos",
+    "Cada caso crítico incluye cómo comprobar que el aviso llega de verdad al correo o al móvil",
+    "Recordar quitar el bloqueo a buscadores del entorno de pruebas antes de publicar"
+  ],
+  "criterios_calidad": ["Ninguna función crítica se queda sin caso de prueba", "Cada resultado esperado es comprobable a simple vista"]
+}

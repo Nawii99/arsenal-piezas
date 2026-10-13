@@ -1,0 +1,36 @@
+{
+  "tarea": "Auditar una newsletter existente a partir de sus métricas y un envío real, y entregar un informe con diagnóstico y plan de mejora priorizado",
+  "entradas": {
+    "objetivo_del_canal": "[VENDER, FIDELIZAR, LLEVAR TRÁFICO, CONSEGUIR CITAS]",
+    "tamano_lista": "[NÚMERO DE SUSCRIPTORES Y CRECIMIENTO MENSUAL]",
+    "frecuencia": "[CADA CUÁNTO ENVÍAS Y DESDE CUÁNDO]",
+    "metricas_ultimos_envios": "[PEGA 5 ENVÍOS: ASUNTO, ENVIADOS, ABIERTOS %, CLICS %, BAJAS %, SPAM %]",
+    "correo_de_ejemplo": "[PEGA AQUÍ EL TEXTO COMPLETO DE UN ENVÍO REPRESENTATIVO]",
+    "origen_de_los_suscriptores": "[FORMULARIO WEB, COMPRAS, SORTEO, LISTA COMPRADA, EVENTOS]"
+  },
+  "analisis_a_realizar": [
+    "Salud de la lista: crecimiento frente a bajas, origen y calidad de las altas",
+    "Asuntos: longitud, claridad, repetición de fórmulas y correlación con la apertura",
+    "Contenido: si hay una idea o varias, densidad de texto, escaneabilidad, exceso de imágenes",
+    "Llamada a la acción: cuántas hay, dónde están y si el clic está bien repartido",
+    "Ritmo y consistencia de envío",
+    "Señales de riesgo de spam: palabras, ratio texto/imagen, enlaces acortados, bajas altas"
+  ],
+  "como_interpretar": [
+    "Compara cada métrica contra los propios envíos del negocio, no contra medias de internet",
+    "Si la apertura es baja, mira asunto, remitente y salud de la lista antes que el contenido",
+    "Si la apertura es buena y el clic bajo, el problema está en el cuerpo o en la llamada a la acción",
+    "Si las bajas suben tras un envío concreto, señala ese envío y qué tenía de distinto"
+  ],
+  "formato_salida": "1) Semáforo con 6 apartados en verde, ámbar o rojo. 2) Tabla de métricas con la lectura de cada una en una frase. 3) Cinco mejoras ordenadas por impacto y esfuerzo, cada una con qué cambiar exactamente y cómo medir si funcionó. 4) Reescritura del asunto y de los dos primeros párrafos del correo de ejemplo",
+  "restricciones": [
+    "No inventes datos que no estén en las entradas: si falta algo, dilo y sigue con lo que hay",
+    "Nada de recomendaciones genéricas tipo 'segmenta más': cada consejo debe ser accionable esta semana",
+    "Explica cualquier término técnico entre paréntesis la primera vez"
+  ],
+  "criterios_calidad": [
+    "Cada conclusión se apoya en un dato concreto de las entradas",
+    "Las 5 mejoras se pueden hacer sin contratar a nadie",
+    "El informe cabe en dos folios"
+  ]
+}

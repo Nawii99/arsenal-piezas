@@ -1,0 +1,38 @@
+{
+  "tarea": "Escribir la secuencia de 5 emails que recibe un suscriptor después de descargar un lead magnet, hasta presentar la oferta de pago",
+  "contexto": {
+    "marca": "[NOMBRE DE TU EMPRESA]",
+    "recurso_descargado": "[NOMBRE DE LA GUÍA O CHECKLIST]",
+    "promesa_del_recurso": "[QUÉ PROMETÍA LA DESCARGA]",
+    "oferta_de_pago": "[SERVICIO O PRODUCTO QUE QUIERES VENDER]",
+    "precio": "[PRECIO O RANGO]",
+    "objeciones": "[LAS 3 PEGAS QUE MÁS TE PONEN]",
+    "pruebas": "[CASOS, RESEÑAS O RESULTADOS QUE PUEDES ENSEÑAR]",
+    "ritmo": "[DÍA 0, 1, 3, 5 Y 7 U OTRO]"
+  },
+  "estructura_por_email": [
+    "Email 1 (día 0): entrega el archivo, recuerda la promesa y dice qué hacer con la primera página",
+    "Email 2: enseña el error más caro relacionado con el tema y cómo se corrige",
+    "Email 3: caso real de un cliente, con situación de partida, qué hicisteis y resultado",
+    "Email 4: presenta la oferta, explica qué incluye, qué no incluye y para quién no es",
+    "Email 5: resuelve las objeciones una a una y cierra con último recordatorio"
+  ],
+  "restricciones": [
+    "Máximo 200 palabras por email, frases cortas, un solo enlace por correo salvo el email 1",
+    "Asuntos de menos de 45 caracteres, sin emojis ni mayúsculas gritadas",
+    "Nada de cuentas atrás falsas ni escasez inventada",
+    "No prometer ingresos ni resultados garantizados",
+    "Español de España, tuteando, tono de persona que escribe a mano"
+  ],
+  "formato_salida": {
+    "tipo": "tabla más desarrollo",
+    "tabla": "Nº | día de envío | objetivo | asunto | asunto alternativo | llamada a la acción",
+    "desarrollo": "Texto completo de cada email con línea de preencabezado, cuerpo, despedida firmada por [TU NOMBRE] y posdata",
+    "extra": "Regla de corte: qué hacer con quien no abre ningún email y con quien hace clic pero no compra"
+  },
+  "criterios_calidad": [
+    "Cada email aporta algo aunque el lector no compre nunca",
+    "La oferta no aparece hasta que se ha dado valor real",
+    "Se entiende quién es el remitente sin mirar la firma"
+  ]
+}

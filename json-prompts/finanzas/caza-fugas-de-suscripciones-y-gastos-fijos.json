@@ -1,0 +1,57 @@
+{
+  "tarea": "Auditar todos mis pagos recurrentes, calcular su coste anual real y decidir uno por uno si se corta, se baja de plan, se renegocia o se mantiene.",
+  "contexto": {
+    "negocio": "[QUÉ HAGO Y CUÁNTO FACTURO AL MES APROXIMADAMENTE]",
+    "forma_juridica": "[AUTÓNOMO / SOCIEDAD LIMITADA]",
+    "objetivo": "[BAJAR GASTO FIJO / HACER SITIO PARA OTRA HERRAMIENTA / PREPARAR UN MES FLOJO]",
+    "herramientas_criticas": "[LAS QUE NO PUEDO PERDER PASE LO QUE PASE]"
+  },
+  "entradas": {
+    "lista_de_suscripciones": "[NOMBRE | IMPORTE | MENSUAL O ANUAL | CON O SIN IVA | PAÍS DEL PROVEEDOR | ÚLTIMA VEZ QUE LO USÉ]",
+    "otros_gastos_fijos": "[ALQUILER, SEGUROS, CUOTA DE AUTÓNOMOS, GESTORÍA, TELÉFONO, DOMINIOS, HOSTING]",
+    "ingresos_medios_mes": "[IMPORTE]"
+  },
+  "conocimiento_a_aplicar": [
+    "Todo se compara en coste anual: un cargo de 19 euros al mes son 228 al año y ahí se ve de verdad.",
+    "Clasifica cada gasto en: genera ingreso directo, evita un problema grave, comodidad, o inercia. La inercia se corta.",
+    "Duplicidades habituales: dos herramientas de email, dos de facturación, dos almacenamientos en la nube, dos suscripciones de IA con lo mismo dentro.",
+    "El pago anual suele salir entre un 15 y un 20 por ciento más barato, pero solo compensa si el uso es estable y hay caja para el desembolso.",
+    "Proveedores fuera de España sin IVA en factura pueden implicar inversión del sujeto pasivo y alta en el ROI: marcarlos para la asesoría.",
+    "Los planes por usuario y los créditos de IA suben solos: hay que revisar el consumo real, no el plan contratado.",
+    "Antes de cortar algo, comprobar si guarda datos que hay que exportar y si la baja tiene preaviso."
+  ],
+  "pasos": [
+    "1. Normalizar todo a coste anual y a coste mensual equivalente, con y sin IVA.",
+    "2. Ordenar de mayor a menor coste anual y calcular qué porcentaje de mis ingresos se lleva el total.",
+    "3. Etiquetar cada línea: IMPRESCINDIBLE, ÚTIL, DUPLICADO, DORMIDO (sin uso en 60 días) o DESCONOCIDO.",
+    "4. Proponer para cada uno una acción: CORTAR YA, BAJAR DE PLAN, PASAR A ANUAL, RENEGOCIAR o MANTENER.",
+    "5. Para cada CORTAR, indicar qué exportar antes y si hay permanencia o preaviso.",
+    "6. Sumar el ahorro mensual y anual del plan y decir en qué mes se nota.",
+    "7. Proponer una regla de control para el futuro con fecha fija de revisión."
+  ],
+  "errores_tipicos": [
+    "Cortar la herramienta que sostiene los cobros o las facturas por ahorrar poco dinero.",
+    "Pasar a anual algo que aún estás probando.",
+    "Olvidar las tarjetas secundarias y los cargos en dólares que no aparecen con nombre reconocible.",
+    "Cancelar sin exportar y perder la lista de clientes o el histórico de facturas."
+  ],
+  "restricciones": [
+    "No propongas cortar nada marcado como crítico sin dar una alternativa concreta.",
+    "No inventes precios de herramientas: si no te doy el importe, pídelo.",
+    "Nada de recomendaciones genéricas de ahorro: solo acciones sobre las líneas de mi lista."
+  ],
+  "formato_salida": {
+    "1_foto_actual": "Gasto fijo mensual total, anual total y porcentaje sobre ingresos",
+    "2_tabla": "CONCEPTO | COSTE MES | COSTE AÑO | ETIQUETA | ACCIÓN | AHORRO ANUAL | RIESGO DE CORTARLO",
+    "3_plan_de_bajas": "Lista ordenada de qué cancelar esta semana, con el paso previo de exportación",
+    "4_resultado": "Ahorro mensual y anual estimado y nuevo gasto fijo",
+    "5_regla_futura": "Una frase con la norma que aplicaré antes de contratar nada nuevo"
+  },
+  "criterios_calidad": [
+    "Cada línea de mi lista tiene acción, ninguna queda sin decidir.",
+    "El ahorro total sale de sumar la columna, no de una estimación al aire.",
+    "Las bajas están ordenadas de mayor ahorro y menor riesgo a menor ahorro y mayor riesgo.",
+    "Se avisa de al menos un gasto que conviene NO tocar y por qué."
+  ],
+  "si_faltan_datos": "Pídeme la lista completa de cargos recurrentes de los últimos 3 meses antes de opinar."
+}

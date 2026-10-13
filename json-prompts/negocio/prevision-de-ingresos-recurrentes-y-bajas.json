@@ -1,0 +1,38 @@
+{
+  "tarea": "Prever a 12 meses los ingresos recurrentes mensuales partiendo de altas, bajas, subidas y bajadas de cuota",
+  "contexto": {
+    "negocio": "[NOMBRE Y TIPO DE SUSCRIPCIÓN O CUOTA]",
+    "moneda": "EUR",
+    "permanencia": "[¿HAY COMPROMISO DE PERMANENCIA? CUÁNTOS MESES]"
+  },
+  "entradas": {
+    "historico": "[MES;CLIENTES ACTIVOS;INGRESO RECURRENTE EUR;ALTAS;BAJAS, MÍNIMO 12 MESES]",
+    "cuota_media": "[EUROS AL MES POR CLIENTE]",
+    "altas_previstas": "[CUÁNTAS ALTAS AL MES ESPERAS Y POR QUÉ]",
+    "cambios_de_precio": "[SUBIDA DEL X% EN [MES], O NINGUNO]"
+  },
+  "procedimiento": [
+    "1. Calcula por mes la tasa de baja (bajas / clientes activos al inicio) y su media de los últimos 6 meses",
+    "2. Calcula el crecimiento neto: altas menos bajas, y señala los meses en que fue negativo",
+    "3. Estima la vida media del cliente y el ingreso total esperado por cliente",
+    "4. Proyecta 12 meses encadenando: activos al inicio + altas previstas - bajas según la tasa media",
+    "5. Aplica los cambios de precio en el mes indicado y súmales una subida de la tasa de baja si el histórico lo respalda; si no hay dato, dilo como supuesto",
+    "6. Calcula el punto de equilibrio: cuántas altas al mes necesitas solo para no decrecer",
+    "7. Genera un escenario pesimista subiendo la tasa de baja en un tercio"
+  ],
+  "restricciones": [
+    "No cuentes como ingreso recurrente los cobros puntuales ni las altas de instalación",
+    "No supongas que las altas crecen solas: usa las que te he dado",
+    "Distingue bajas voluntarias de impagos si el dato existe"
+  ],
+  "formato_salida": {
+    "tabla": "Mes | Activos inicio | Altas | Bajas | Activos fin | Ingreso recurrente | Variación %",
+    "indicadores": "Tasa de baja media, vida media del cliente, ingreso por cliente y altas necesarias para no decrecer",
+    "escenarios": "Ingreso recurrente al mes 12 en base y en pesimista",
+    "alertas": "Mes en el que el crecimiento neto se vuelve negativo, si ocurre"
+  },
+  "criterios_calidad": [
+    "Los activos de fin de mes son los de inicio del siguiente",
+    "Todo supuesto que no venga del histórico aparece marcado como supuesto"
+  ]
+}

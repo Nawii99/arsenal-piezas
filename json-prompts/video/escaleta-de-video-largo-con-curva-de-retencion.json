@@ -1,0 +1,40 @@
+{
+  "tarea": "Diseñar la escaleta completa de un video largo de YouTube, con bloques, minutaje, capitulos y puntos de reenganche",
+  "contexto": {
+    "tema": "[TEMA EXACTO DEL VÍDEO]",
+    "publico": "[QUIÉN LO VE Y QUÉ SABE YA DEL TEMA]",
+    "promesa": "[QUÉ SABRÁ O PODRÁ HACER AL TERMINAR]",
+    "tu_ventaja": "[EXPERIENCIA, DATOS O CASOS QUE SOLO TIENES TÚ]",
+    "duracion_objetivo": "[MINUTOS]",
+    "objetivo_final": "[SUSCRIPCIÓN / LEAD / VENTA / SOLO AUTORIDAD]"
+  },
+  "estructura": [
+    "Gancho de 0 a 30 s: promesa concreta y motivo para quedarse, sin intro ni careta",
+    "Contrato de 30 a 60 s: que vas a contar y en que orden, en tres puntos",
+    "Cuerpo: entre 3 y 5 bloques, cada uno con una idea, un ejemplo real y una conclusion utilizable",
+    "Reenganches: cada 90-120 s una frase de anticipacion, un cambio de plano o una pregunta abierta",
+    "Cierre: resumen en 3 frases y una unica llamada a la accion"
+  ],
+  "para_cada_bloque_indica": [
+    "Título del bloque",
+    "Minuto de inicio y de fin",
+    "Idea central en una frase",
+    "Ejemplo, historia o dato que lo sostiene",
+    "Qué se ve en pantalla mientras hablas (b-roll, pantalla compartida, gráfico)",
+    "Frase de transición al bloque siguiente"
+  ],
+  "formato_salida": {
+    "tipo": "Escaleta en lista numerada, mas tres extras al final",
+    "extras": ["Capítulos con marca de tiempo listos para pegar en la descripción", "3 títulos posibles de menos de 60 caracteres", "Idea de miniatura en una frase"]
+  },
+  "restricciones": [
+    "Nada de presentaciones largas ni de 'hola a todos, bienvenidos un dia mas'",
+    "Cada bloque debe poder verse suelto y seguir teniendo sentido",
+    "Escribe frases de locucion reales en el gancho y en el cierre; el resto puede ir en puntos"
+  ],
+  "criterios_calidad": [
+    "En los 30 primeros segundos hay una razón clara para no cerrar el vídeo",
+    "Cada bloque termina con algo que el espectador puede aplicar hoy",
+    "El total de minutos de los bloques cuadra con la duración objetivo"
+  ]
+}

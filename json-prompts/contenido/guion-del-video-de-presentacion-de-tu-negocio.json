@@ -1,0 +1,34 @@
+{
+  "tarea": "Escribir el guion de un vídeo de presentación de [NOMBRE DEL NEGOCIO] de [DURACIÓN: 60-90 S] para la web",
+  "contexto": {
+    "actividad": "[A QUÉ OS DEDICÁIS, EN UNA FRASE]",
+    "cliente_tipo": "[QUIÉN OS CONTRATA Y PARA QUÉ]",
+    "diferencia": "[QUÉ HACÉIS DISTINTO DE LA COMPETENCIA]",
+    "pruebas": "[AÑOS, NÚMERO DE CLIENTES, CERTIFICACIONES O CASOS REALES]",
+    "quien_habla": "[FUNDADOR / EQUIPO / VOZ EN OFF]",
+    "cta": "[PIDE PRESUPUESTO / RESERVA UNA LLAMADA / VISÍTANOS]"
+  },
+  "estructura": [
+    "0-8 s: el problema del cliente dicho con sus palabras, no la historia de la empresa",
+    "8-25 s: qué hacéis y para quién, en lenguaje llano",
+    "25-50 s: por qué fiarse, con las pruebas reales aportadas",
+    "50-70 s: cómo es trabajar con vosotros en 3 pasos",
+    "70-90 s: llamada a la acción única, dicha y escrita en pantalla"
+  ],
+  "reglas": [
+    "Prohibidas las frases vacías: 'somos líderes', 'soluciones a medida', 'pasión por lo que hacemos'",
+    "Habla de tú al espectador, no de 'nuestros clientes'",
+    "Solo se afirma lo que esté en [PRUEBAS]; el resto se marca como [PENDIENTE DE CONFIRMAR]",
+    "Frases de menos de 20 palabras para que se puedan decir a cámara"
+  ],
+  "formato_salida": {
+    "guion": "Tabla con Segundo | Texto | Plano sugerido | Rótulo en pantalla",
+    "plan_de_rodaje": "Lista de escenas a grabar con localización y personas necesarias",
+    "variantes": "Versión reducida de 30 segundos para redes y versión de 15 para anuncio",
+    "texto_web": "Titular y dos frases que acompañan al vídeo en la página"
+  },
+  "criterios_calidad": [
+    "Alguien ajeno entiende en 15 segundos qué vendéis y a quién",
+    "Ninguna frase serviría igual para un negocio de otro sector"
+  ]
+}

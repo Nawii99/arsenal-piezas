@@ -1,0 +1,44 @@
+{
+  "tarea": "Diseñar el plan de acogida y formación de los primeros 30 días de una incorporación, día a día y con responsables",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_hace": "[QUÉ VENDE O HACE LA EMPRESA EN UNA FRASE]",
+    "puesto": "[PUESTO QUE SE INCORPORA]",
+    "responsable_acogida": "[NOMBRE Y CARGO]",
+    "modalidad": "[PRESENCIAL, HÍBRIDO O EN REMOTO]"
+  },
+  "entradas": {
+    "tareas_del_puesto": "[5 TAREAS PRINCIPALES]",
+    "herramientas_y_accesos": "[PROGRAMAS, LLAVES, CORREO, MÓVIL]",
+    "personas_clave": "[CON QUIÉN TIENE QUE HABLAR SÍ O SÍ]",
+    "material_existente": "[MANUALES, VÍDEOS O PROCEDIMIENTOS QUE YA TENÉIS]",
+    "exito_a_30_dias": "[QUÉ DEBE SABER HACER SOLO AL MES]"
+  },
+  "procedimiento": [
+    "Divide los 30 días en tres bloques: días 1 a 5 orientarse, días 6 a 15 hacer acompañado, días 16 a 30 hacer solo con revisión",
+    "Para cada día indica actividad, quién la hace con la persona, cuánto dura y qué se lleva aprendido",
+    "Coloca antes del primer día todos los trámites, accesos y material que deben estar listos",
+    "Incluye una tarea real y pequeña que aporte valor ya en la primera semana",
+    "Define tres puntos de control (día 5, 15 y 30) con preguntas concretas y señales de alarma"
+  ],
+  "restricciones": [
+    "Máximo 3 horas de formación al día: el resto es trabajo real",
+    "Nada de reuniones de bienvenida sin objetivo ni vídeos de más de 15 minutos",
+    "Si un material no existe, márcalo como pendiente de crear en vez de darlo por hecho"
+  ],
+  "formato_salida": {
+    "tipo": "checklist por días y tabla de seguimiento",
+    "secciones": [
+      "Checklist previo a la incorporación",
+      "Agenda hora a hora de la semana 1",
+      "Plan de las semanas 2, 3 y 4",
+      "Tabla de puntos de control con preguntas y señales de alarma"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada día tiene un responsable con nombre y un resultado comprobable",
+    "El plan se puede ejecutar sin comprar nada nuevo",
+    "A los 30 días se puede decir con hechos si la incorporación va bien"
+  ],
+  "tono": "cercano y organizado, tuteando"
+}

@@ -1,0 +1,48 @@
+{
+  "tarea": "Diseñar el guion pantalla a pantalla de la primera sesión de una app para que el usuario llegue a su primer resultado útil en menos de 60 segundos sin ayuda de nadie",
+  "contexto": {
+    "app": "[NOMBRE DE LA APP]",
+    "que_resuelve": "[QUÉ PROBLEMA RESUELVE, UNA FRASE]",
+    "usuario_tipo": "[QUIÉN LA USA, EN QUÉ MOMENTO DEL DÍA Y CON QUÉ PRISA]",
+    "primer_resultado_util": "[LO PRIMERO QUE LE HACE DECIR ESTO ME SIRVE: EJ. VER SU PRIMER PRESUPUESTO CALCULADO]",
+    "plataforma": "[IOS / ANDROID / WEB MÓVIL]",
+    "pantallas_actuales": "[LISTA DE LAS PANTALLAS QUE HAY AHORA, EN ORDEN]",
+    "abandono_conocido": "[DÓNDE SE CAE LA GENTE, SI LO SABES]"
+  },
+  "metodo": [
+    "1. Escribir el resultado útil en una frase que empiece por un verbo y sea comprobable en pantalla",
+    "2. Listar todo lo que la app pide antes de ese resultado y marcar cada cosa como imprescindible, aplazable o eliminable",
+    "3. Mover a después del resultado todo lo aplazable: registro, correo, permisos, foto de perfil, preferencias",
+    "4. Rellenar la app con datos de ejemplo o una plantilla para que nunca se vea una pantalla vacía",
+    "5. Escribir el guion de máximo 4 pantallas: qué se ve, qué texto, qué botón, qué pasa al pulsarlo",
+    "6. Cronometrar el recorrido leyendo el guion en voz alta y contando 3 segundos por lectura y 1 por toque",
+    "7. Definir la salida de emergencia: qué ve quien no quiere rellenar nada"
+  ],
+  "restricciones": [
+    "Máximo 4 pantallas antes del resultado y máximo 2 campos de texto en total",
+    "Nada de registro obligatorio antes del resultado salvo que sea legalmente imprescindible",
+    "Ningún carrusel de bienvenida de 5 diapositivas explicando lo bonita que es la app",
+    "Cada texto de pantalla: título de máximo 6 palabras y una línea de apoyo de máximo 14",
+    "Botón principal siempre en la zona baja de la pantalla, alcanzable con el pulgar"
+  ],
+  "errores_a_evitar": [
+    "Pedir el correo o el pago antes de que la persona haya visto que la app funciona",
+    "Pantalla vacía con un dibujo y el texto aún no tienes nada",
+    "Tutorial con flechas señalando botones en vez de dejar que el usuario haga la acción real",
+    "Pedir permisos del sistema en la primera pantalla",
+    "Escribir textos de marca en lugar de instrucciones concretas"
+  ],
+  "formato_salida": {
+    "tabla_pantallas": "Una fila por pantalla con: número, objetivo, qué se ve, texto exacto, texto del botón, qué ocurre al pulsar, segundos estimados",
+    "guion_microcopy": "Lista con todos los textos exactos listos para copiar y pegar",
+    "linea_de_tiempo": "Suma de segundos del recorrido completo y aviso si pasa de 60",
+    "que_quitar": "Lista de lo que se mueve a después del primer resultado y en qué momento se pedirá",
+    "prueba_de_pasillo": "5 instrucciones para probarlo con 3 personas que no conozcan la app"
+  },
+  "criterios_calidad": [
+    "Una persona ajena llega al resultado sin preguntar nada y en menos de 60 segundos cronometrados",
+    "Ningún texto explica la app: todos dicen qué hacer ahora",
+    "Se puede llegar al resultado sin dar correo, sin pagar y sin conceder permisos",
+    "Cada pantalla tiene una sola acción principal clara"
+  ]
+}

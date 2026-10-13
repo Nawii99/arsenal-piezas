@@ -1,0 +1,60 @@
+{
+  "tarea": "Montar una zona privada de entrega en [URL_WEB] para que [TIPO_DE_CLIENTE] acceda a sus archivos o contenidos",
+  "contexto": {
+    "negocio": "[NOMBRE Y QUÉ ENTREGA A SUS CLIENTES]",
+    "que_se_entrega": "[FOTOS, INFORMES, VÍDEOS, PLANTILLAS, CURSO]",
+    "cuantos_clientes": "[NÚMERO APROXIMADO Y SI CRECE]",
+    "sensibilidad": "[PÚBLICO PERO NO LISTADO / PRIVADO / DATOS CONFIDENCIALES]",
+    "perfil_lector": "Sin programación, mantiene la web con copiar y pegar"
+  },
+  "entradas": {
+    "hosting": "[GITHUB PAGES / NETLIFY / CLOUDFLARE PAGES / HOSTING TRADICIONAL]",
+    "peso_de_los_archivos": "[TAMAÑO TÍPICO DE CADA ENTREGA]",
+    "caducidad_deseada": "[SIN CADUCIDAD / 30 DÍAS / HASTA FIN DE PROYECTO]",
+    "quieres_avisar_por_email": "[SÍ / NO]"
+  },
+  "procedimiento": [
+    "1. Elige el nivel de protección honesto según la sensibilidad: enlace secreto largo, contraseña de carpeta del hosting o acceso con usuario",
+    "2. Explica con claridad qué protege y qué no protege cada opción",
+    "3. Define la estructura de carpetas: una por cliente o proyecto, con nombre imposible de adivinar",
+    "4. Crea la página de entrega con: qué recibe, cómo se descarga, hasta cuándo y a quién escribir si falla",
+    "5. Evita servir archivos enormes desde el hosting: enlaza al almacenamiento en la nube desde la página privada",
+    "6. Bloquea la indexación de esas páginas y quítalas del sitemap",
+    "7. Prepara el email de entrega con el enlace, la contraseña por otra vía y las instrucciones",
+    "8. Define el proceso de baja: cómo se retira el acceso cuando acaba el proyecto",
+    "9. Prueba desde una ventana privada y desde un móvil sin sesión iniciada"
+  ],
+  "que_mirar": [
+    "Una contraseña en JavaScript no protege nada: cualquiera ve el código",
+    "Los enlaces secretos se comparten: valen para lo no crítico, no para datos personales",
+    "Los archivos muy pesados deben poder descargarse desde móvil con datos",
+    "El cliente tiene que saber qué hacer si el enlace no funciona",
+    "Los buscadores pueden indexar carpetas si algún enlace queda público"
+  ],
+  "errores_tipicos": [
+    "Mandar la contraseña en el mismo correo que el enlace",
+    "Usar el mismo enlace para todos los clientes",
+    "Subir material con datos personales a una carpeta pública",
+    "No avisar de la caducidad y recibir quejas meses después",
+    "Dejar la zona privada enlazada desde el menú de la web"
+  ],
+  "restricciones": [
+    "Solo soluciones gratuitas propias del hosting indicado",
+    "Sé explícito sobre el nivel de seguridad real de cada opción",
+    "No propongas ninguna protección falsa hecha solo con JavaScript"
+  ],
+  "formato_salida": {
+    "1_comparativa": "Tabla: opción | qué protege | qué no protege | esfuerzo | coste | recomendada para este caso",
+    "2_estructura": "Esquema de carpetas y URLs con ejemplo de nombre no adivinable",
+    "3_codigo": "HTML y CSS de la página de entrega, más el archivo de configuración de protección del hosting elegido",
+    "4_bloqueo_buscadores": "Etiquetas y reglas exactas para que no se indexe",
+    "5_emails": "Email de entrega y email de aviso de caducidad, listos para usar",
+    "6_rutina": "Pasos para dar de alta y de baja a un cliente en menos de 5 minutos"
+  },
+  "criterios_calidad": [
+    "El nivel de protección se corresponde con la sensibilidad declarada",
+    "La página no aparece al buscarla en Google ni desde el menú",
+    "Un cliente sin conocimientos descarga su archivo al primer intento",
+    "Existe un procedimiento escrito para retirar el acceso"
+  ]
+}

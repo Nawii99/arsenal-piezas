@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir el guion de un simulacro de restauración de copias de seguridad y su acta de resultados",
+  "contexto": {
+    "sistema_de_copias": "[QUÉ HERRAMIENTAS Y DESTINOS USÁIS HOY]",
+    "activos_a_probar": "[EJ. CORREO, FACTURACIÓN, WEB, CARPETA DE CLIENTES]",
+    "quien_prueba": "[NOMBRE Y NIVEL TÉCNICO]",
+    "fecha_y_ventana": "[DÍA Y HORAS DISPONIBLES]",
+    "objetivo_de_tiempo": "[EN CUÁNTO DEBERÍA ESTAR TODO OPERATIVO]"
+  },
+  "metodo": [
+    "Elige un escenario concreto y anúncialo: se ha perdido el portátil principal, se ha borrado la carpeta de clientes o el proveedor está caído",
+    "Restaura en un sitio de pruebas, nunca encima de los datos buenos",
+    "Cronometra desde que empieza hasta que alguien puede trabajar de verdad",
+    "Abre los archivos restaurados y verifica contenido, no solo que exista el fichero",
+    "Comprueba también lo invisible: permisos, contactos, plantillas, conexiones entre programas y accesos",
+    "Anota cada tropiezo: contraseña que nadie sabía, copia incompleta, versión demasiado antigua"
+  ],
+  "fallos_tipicos_a_buscar": [
+    "La copia existe pero está vacía o corrupta",
+    "Falta la clave de cifrado o el segundo factor de la cuenta",
+    "Solo se copiaba una carpeta y el resto llevaba meses fuera",
+    "Nadie sabe entrar en el panel del proveedor"
+  ],
+  "formato_salida": {
+    "parte_1": "Guion del simulacro numerado, con minutos previstos por paso",
+    "parte_2": "Hoja de comprobación con casillas para marcar OK o KO",
+    "parte_3": "Acta final: fecha, escenario, tiempo real hasta volver a trabajar, dato más antiguo recuperado, incidencias y responsable",
+    "parte_4": "Lista de arreglos con fecha límite"
+  },
+  "criterios_calidad": [
+    "El guion lo puede seguir alguien sin conocimientos técnicos",
+    "Se mide tiempo real de recuperación y cuánto trabajo se habría perdido",
+    "Cada fallo detectado acaba en una tarea con responsable y fecha"
+  ],
+  "tono": "Práctico, de checklist, sin florituras"
+}

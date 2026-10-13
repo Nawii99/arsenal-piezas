@@ -1,0 +1,36 @@
+{
+  "tarea": "Redactar una secuencia escalonada de correos para reclamar una factura vencida e impagada",
+  "contexto": {
+    "acreedor": "[TU NOMBRE Y NOMBRE DE TU EMPRESA]",
+    "cliente_deudor": "[EMPRESA Y PERSONA DE CONTACTO]",
+    "factura": "[NUMERO, IMPORTE CON IVA, FECHA DE EMISION Y FECHA DE VENCIMIENTO]",
+    "que_se_entrego": "[TRABAJO O PRODUCTO ENTREGADO Y CUANDO]",
+    "forma_de_pago_acordada": "[TRANSFERENCIA A LA CUENTA X, RECIBO, PLAZOS]",
+    "historial": "[SIEMPRE PAGA TARDE / PRIMERA VEZ QUE FALLA / YA DEBE OTRAS FACTURAS]",
+    "relacion_futura": "[QUIERO SEGUIR TRABAJANDO CON EL / ME DA IGUAL PERDERLO]"
+  },
+  "pasos": [
+    "Correo 1, recordatorio neutro asumiendo despiste, con los datos de la factura y el numero de cuenta",
+    "Correo 2, seguimiento pidiendo fecha concreta de pago y a quien hay que dirigirse en administracion",
+    "Correo 3, aviso firme recordando la deuda, el retraso acumulado y la suspension de nuevos trabajos",
+    "Correo 4, ultimo aviso antes de pasar el asunto a reclamacion, con plazo de dias habiles",
+    "Anadir para cada correo la version corta de WhatsApp o llamada de apoyo"
+  ],
+  "restricciones": [
+    "No amenazar con acciones concretas ni citar articulos de ley: decir que se pasara el asunto a reclamacion sin dar por hecho el resultado",
+    "Nada de insultos, ironia ni acusaciones de mala fe",
+    "Siempre incluir numero de factura, importe y fecha de vencimiento en todos los correos",
+    "Maximo 130 palabras por correo"
+  ],
+  "formato_salida": {
+    "tipo": "cuatro fichas mas tabla",
+    "cada_ficha": ["Momento de envio en dias desde el vencimiento", "Asunto", "Cuerpo del correo", "Mensaje corto de apoyo"],
+    "tabla_final": ["Dia", "Accion", "Canal", "Tono"],
+    "aviso": "Anadir una nota final recordando que para deudas grandes conviene consultar con un asesor o abogado"
+  },
+  "criterios_calidad": [
+    "El tono endurece paso a paso sin perder la educacion",
+    "Cada correo pide una respuesta concreta: una fecha de pago",
+    "Todo el hilo sirve como prueba escrita ordenada de la reclamacion"
+  ]
+}

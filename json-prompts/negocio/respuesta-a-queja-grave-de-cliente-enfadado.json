@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar la respuesta a un cliente enfadado por una incidencia, con reconocimiento, solución y compensación",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU NEGOCIO]",
+    "canal": "[EMAIL / WHATSAPP / RESEÑA / TELÉFONO]",
+    "quien_firma": "[TU NOMBRE Y CARGO]",
+    "gravedad": "[LEVE / SERIA / MUY GRAVE]"
+  },
+  "entradas": {
+    "mensaje_del_cliente": "[PEGA AQUÍ EL MENSAJE TAL CUAL]",
+    "que_paso_de_verdad": "[VERSIÓN INTERNA DE LOS HECHOS]",
+    "de_quien_fue": "[NUESTRA / DEL TRANSPORTISTA / DEL CLIENTE / NO ESTÁ CLARO]",
+    "tipo_de_cliente": "[NUEVO / RECURRENTE / CUENTA GRANDE]",
+    "que_puedo_ofrecer": "[REEMBOLSO, REENVÍO, DESCUENTO, REPETIR EL SERVICIO...]",
+    "limite_compensacion": "[IMPORTE O GESTO MÁXIMO]"
+  },
+  "pasos": [
+    "Detecta qué pide de verdad el cliente: dinero, rapidez, que le escuchen o una explicación",
+    "Abre reconociendo el hecho concreto, sin condicionales ni excusas",
+    "Explica en una frase qué ha pasado sin echar la culpa a nadie por escrito",
+    "Da la solución con fecha o plazo concreto y di quién la ejecuta",
+    "Ofrece la compensación dentro del límite y explica por qué es esa",
+    "Cierra con una vía de contacto directa y sin pedirle nada al cliente"
+  ],
+  "restricciones": [
+    "Prohibido 'lamentamos las molestias', 'según nuestra política' y 'como ya le comentaron'",
+    "No admitir responsabilidades legales ni hablar de indemnizaciones",
+    "Máximo 160 palabras en WhatsApp y 220 en email",
+    "Nunca discutir la versión del cliente: si se equivoca, corrígelo con datos y sin reproche"
+  ],
+  "formato_salida": {
+    "1_respuesta_lista": "texto para copiar y pegar",
+    "2_variante_dura": "misma respuesta para cuando ya ha amenazado con reseña o reclamación",
+    "3_nota_interna": "tres líneas con qué hacer por dentro y para cuándo",
+    "4_semaforo": "verde, ámbar o rojo según el riesgo de que el caso se agrave, con el motivo"
+  },
+  "criterios_calidad": [
+    "El cliente sabe qué va a pasar y cuándo antes de la quinta línea",
+    "Ninguna frase se puede leer como que la culpa es suya",
+    "Se puede enviar tal cual sin riesgo legal"
+  ]
+}

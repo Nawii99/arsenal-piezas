@@ -1,0 +1,31 @@
+{
+  "tarea": "Comparar el coste mensual total de tres arquitecturas para [NOMBRE DE TU EMPRESA] (monolito sencillo, monolito modular con cola de tareas, y microservicios) incluyendo servidores y horas de personas, y decir cuál sale a cuenta hoy",
+  "entradas": {
+    "trafico_actual": "[PETICIONES O PEDIDOS AL DÍA Y PICO EN HORA PUNTA]",
+    "trafico_previsto": "[QUÉ ESPERAS DENTRO DE 12 MESES]",
+    "proveedor": "[AWS, GOOGLE CLOUD, AZURE, HETZNER, RENDER, VPS PROPIO...]",
+    "equipo": "[NÚMERO DE PROGRAMADORES Y COSTE MEDIO POR HORA]",
+    "factura_actual": "[LO QUE PAGAS HOY AL MES]"
+  },
+  "debe_incluir_en_el_coste": ["Servidores de aplicación", "Base de datos y copias de seguridad", "Sistema de colas", "Balanceador y tráfico de red", "Monitorización y registro de errores", "Horas de mantenimiento y despliegue", "Horas de guardia y de resolver incidencias"],
+  "metodo": [
+    "Escribir los supuestos antes que los números y marcar cuáles son los que más mueven el resultado",
+    "Dar los precios como rangos y decir la fecha de referencia, avisando de que hay que verificarlos en la web del proveedor",
+    "Calcular el punto en el que la opción más barata deja de serlo"
+  ],
+  "restricciones": [
+    "Nada de inventarse precios exactos como si fueran oficiales: siempre rango y aviso",
+    "Contar las horas de personas como coste real, no como si fueran gratis",
+    "No recomendar la opción más barata si no aguanta el tráfico previsto"
+  ],
+  "formato_salida": {
+    "tipo": "tabla comparativa + conclusión",
+    "columnas": ["Concepto", "Monolito", "Monolito con colas", "Microservicios", "Comentario"],
+    "cierre": "Recomendación en 5 líneas y lista de supuestos que habría que confirmar"
+  },
+  "criterios_calidad": [
+    "Se ve claramente qué parte del coste es máquinas y qué parte es personas",
+    "Aparece el volumen a partir del cual conviene cambiar de opción",
+    "Ningún número aparece sin explicar de dónde sale"
+  ]
+}

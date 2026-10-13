@@ -1,0 +1,43 @@
+{
+  "tarea": "Escribir 3 prompts de imagen distintos para generar un packshot de catalogo sobre fondo blanco de [PRODUCTO], listos para pegar en el generador sin retocar nada",
+  "contexto": {
+    "producto": "[PRODUCTO: QUE ES, MATERIAL Y COLOR EXACTO]",
+    "marca": "[NOMBRE DE TU MARCA]",
+    "canal": "[FICHA EN TIENDA PROPIA / AMAZON / ETSY / MARKETPLACE]",
+    "publico": "[A QUIEN SE LO VENDES]",
+    "formato_final": "[CUADRADO 1:1 / VERTICAL 4:5 / 3:4]"
+  },
+  "reglas_de_oficio": [
+    "Fondo blanco limpio y parejo, sin manchas grises ni degradados sucios en las esquinas",
+    "Sombra de contacto suave justo debajo del producto para que no parezca flotando",
+    "Luz principal grande y difusa a unos 45 grados y rebote blanco por el lado opuesto para abrir sombras",
+    "Lente equivalente a 85-100 mm y camara a la altura del producto para no deformar la forma",
+    "El producto ocupa entre el 80 y el 90 por ciento del encuadre, centrado y con aire por los cuatro lados",
+    "Etiqueta, logotipo y frontal del envase legibles y bien orientados a camara",
+    "Sin manos, sin texto inventado, sin accesorios que no vendes y sin reflejos con formas extranas"
+  ],
+  "variantes_pedidas": [
+    "Variante 1: frontal puro, la foto principal de la ficha",
+    "Variante 2: tres cuartos ligeramente elevada para ver volumen y tapa o cierre",
+    "Variante 3: detalle macro de la textura o del acabado mas vendedor"
+  ],
+  "entradas_opcionales": {
+    "foto_de_referencia": "[SI SUBES UNA FOTO REAL, DESCRIBELA O ADJUNTALA]",
+    "detalles_que_no_puedes_cambiar": "[LOGO, COLOR PANTONE, FORMA DEL ENVASE]"
+  },
+  "formato_salida": {
+    "tipo": "tabla en texto plano con una fila por variante",
+    "columnas": ["variante", "prompt completo en ingles", "prompt completo en espanol", "proporcion", "que revisar en el resultado"],
+    "extra": "Al final, una lista de 5 palabras a excluir o prompt negativo"
+  },
+  "criterios_calidad": [
+    "Cada prompt nombra plano, angulo, lente, esquema de luz, fondo, sombra y proporcion",
+    "Los tres prompts describen el mismo producto con las mismas palabras clave de forma y color",
+    "El resultado se podria recortar a cuadrado sin cortar el producto"
+  ],
+  "errores_a_evitar": [
+    "Prompts vagos del tipo foto profesional de producto",
+    "Anadir texto o etiquetas inventadas sobre el envase",
+    "Cambiar el color o la forma del producto real"
+  ]
+}

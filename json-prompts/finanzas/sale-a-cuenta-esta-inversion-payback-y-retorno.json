@@ -1,0 +1,39 @@
+{
+  "tarea": "Evaluar si una inversion concreta merece la pena para un negocio pequeno y calcular en cuanto tiempo se recupera",
+  "inversion": {
+    "que_es": "[QUE VAS A COMPRAR O CONTRATAR]",
+    "precio_sin_iva": "[EUROS]",
+    "gastos_de_puesta_en_marcha": "[INSTALACION, FORMACION, TRANSPORTE EN EUROS]",
+    "gastos_recurrentes": "[MANTENIMIENTO, SEGURO, LICENCIAS AL MES]",
+    "vida_util_estimada": "[ANOS]",
+    "forma_de_pago": "[CONTADO / PRESTAMO / LEASING CON CUOTA X]"
+  },
+  "beneficio_esperado": {
+    "ingresos_extra_al_mes": "[EUROS Y DE DONDE SALEN]",
+    "ahorro_de_costes_al_mes": "[EUROS Y EN QUE]",
+    "horas_ahorradas_al_mes": "[HORAS Y A QUE PRECIO VALORAS TU HORA]",
+    "tiempo_hasta_notarlo": "[MESES DE RODAJE]"
+  },
+  "situacion_actual": {
+    "caja_disponible": "[EUROS]",
+    "beneficio_mensual_medio": "[EUROS]",
+    "meses_de_colchon": "[CUANTOS MESES AGUANTAS SIN INGRESAR]"
+  },
+  "pasos": [
+    "Calcular la inversion total real sumando compra, puesta en marcha e IVA a adelantar",
+    "Calcular el beneficio neto mensual que genera, restando los gastos recurrentes",
+    "Calcular el periodo de retorno en meses y compararlo con la vida util",
+    "Calcular el retorno en el primer ano y en el total de la vida util",
+    "Hacer tres escenarios: pesimista con la mitad del beneficio, realista y optimista",
+    "Calcular el punto muerto: cuanto tiene que generar al mes para no perder dinero",
+    "Revisar el efecto en la caja mes a mes durante el primer ano"
+  ],
+  "errores_a_detectar": ["Olvidar el IVA que hay que adelantar", "Contar ingresos que dependen de clientes aun no confirmados", "Ignorar el coste de la formacion y del tiempo de aprendizaje", "Comparar la cuota del prestamo con el ingreso bruto en vez de con el neto", "No contar el coste de oportunidad de dejar la caja a cero"],
+  "formato_salida": "Tabla de los tres escenarios con retorno en meses, un semaforo verde ambar o rojo con una frase de justificacion, y tres condiciones concretas que deberian cumplirse para dar el si",
+  "criterios_calidad": [
+    "Se muestran las cuentas paso a paso para poder revisarlas",
+    "El escenario pesimista es realmente pesimista",
+    "Se dice claramente que pasa con la caja el peor mes del ano"
+  ],
+  "tono": "Honesto: si no sale a cuenta, decirlo sin rodeos"
+}

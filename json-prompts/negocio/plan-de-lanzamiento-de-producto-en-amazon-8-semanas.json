@@ -1,0 +1,35 @@
+{
+  "tarea": "Diseñar un plan de lanzamiento de 8 semanas para un producto nuevo en Amazon, con acciones, presupuesto y métricas por semana",
+  "contexto": {
+    "producto": "[PRODUCTO Y VARIANTES]",
+    "fecha_llegada_stock": "[FECHA]",
+    "unidades_disponibles": "[UNIDADES]",
+    "coste_unitario_total": "[COSTE PUESTO EN ALMACÉN]",
+    "precio_objetivo": "[PRECIO AL QUE QUIERES VENDER]",
+    "presupuesto_publicidad_mes": "[EUROS]",
+    "logistica": "[FBA / ENVÍO PROPIO]",
+    "competencia": "[PRECIO Y RESEÑAS DEL TOP 3]",
+    "marca_registrada": "[SÍ/NO, PARA SABER SI TIENES A+ Y VINE]"
+  },
+  "principios": [
+    "Nada de anuncios hasta tener ficha completa, imágenes definitivas y stock confirmado en almacén",
+    "Precio de salida por debajo del objetivo solo si el margen aguanta, y con fecha de subida decidida de antemano",
+    "Conseguir reseñas solo por vías permitidas: programas oficiales del canal y solicitud automática de valoración; nunca comprarlas ni regalar producto a cambio",
+    "No cambies precio, fotos y anuncios la misma semana o no sabrás qué funcionó",
+    "Vigila la cobertura de stock: quedarte sin existencias en el lanzamiento tira por tierra el posicionamiento ganado"
+  ],
+  "formato_salida": {
+    "tabla_semanal": "Semana | objetivo | acciones concretas | presupuesto | métrica que decide si va bien",
+    "fase_0": "Checklist previo a publicar: ficha, imágenes, código de barras, plan de envío, precio y stock",
+    "plan_publicidad": "Estructura de campañas por fases: automática, exacta y de defensa de marca, con presupuesto y ACOS objetivo por fase",
+    "plan_resenas": "Vías permitidas, cuándo activarlas y qué esperar",
+    "tabla_decisiones": "Si pasa X (pocas impresiones, muchos clics sin ventas, ventas sin margen) entonces haz Y",
+    "cuadro_semanal": "Las 6 cifras que miras cada lunes y su valor de alarma"
+  },
+  "criterios_calidad": [
+    "La suma de los presupuestos semanales no supera el presupuesto indicado",
+    "Cada semana tiene un objetivo distinto y medible, no 'seguir vendiendo'",
+    "El plan avisa de la fecha en la que hay que reponer stock según el ritmo de ventas previsto"
+  ],
+  "prohibido": "Proponer tácticas contra las normas del canal: reseñas incentivadas, cuentas múltiples o clics artificiales"
+}

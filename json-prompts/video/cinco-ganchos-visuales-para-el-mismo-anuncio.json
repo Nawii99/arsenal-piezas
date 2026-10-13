@@ -1,0 +1,34 @@
+{
+  "tarea": "Generar cinco ganchos visuales distintos de 3 segundos para el mismo anuncio, cada uno con su prompt de video",
+  "entradas": {
+    "producto": "[QUE VENDES]",
+    "publico": "[A QUIEN, EN UNA FRASE]",
+    "promesa": "[EL BENEFICIO PRINCIPAL]",
+    "plataforma": "[TIKTOK / REELS / YOUTUBE SHORTS / META FEED]",
+    "resto_del_anuncio": "[DESCRIBE LAS TOMAS QUE YA TIENES Y QUE NO CAMBIAN]"
+  },
+  "tipos_de_gancho": [
+    "Contraste antes y despues comprimido en un gesto",
+    "Detalle macro sorprendente del producto en accion",
+    "Persona mirando a camara justo antes de decir algo",
+    "Movimiento inesperado: algo cae, se abre, se derrama o se enciende",
+    "Situacion cotidiana reconocible del problema que resuelves"
+  ],
+  "reglas": [
+    "El gancho ocurre en el segundo cero: nada de logotipo ni de plano de establecimiento",
+    "Debe entenderse sin sonido",
+    "Vertical con el sujeto en el tercio superior, dejando aire abajo para los rotulos de la plataforma",
+    "Cada gancho conecta visualmente con la segunda toma del anuncio que ya existe"
+  ],
+  "formato_salida": {
+    "tabla": "una fila por gancho con: nombre, que se ve, por que retiene, riesgo",
+    "prompts": "los cinco prompts en ingles, listos para generar",
+    "rotulo_sugerido": "el texto corto que iria encima de cada gancho, anadido en edicion",
+    "como_medir": "que mirar a las 48 horas: retencion a 3 segundos y coste por reproduccion, y cuando parar una variante"
+  },
+  "criterios_calidad": [
+    "Los cinco ganchos son distintos de verdad, no el mismo plano con otra luz",
+    "Ninguno promete algo que el producto no hace",
+    "Todos encajan con el resto del anuncio ya montado"
+  ]
+}

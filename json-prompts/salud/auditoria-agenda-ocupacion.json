@@ -1,0 +1,49 @@
+{
+  "tarea": "Auditar la agenda de [NOMBRE DEL CENTRO] para encontrar tiempo de sala perdido y proponer una plantilla de horarios mejor",
+  "contexto": {
+    "salas_y_profesionales": "[NÚMERO DE SALAS Y DE PROFESIONALES, CON SUS HORARIOS]",
+    "horario_de_apertura": "[DÍAS Y FRANJAS]",
+    "tipo_de_centro": "[TIPO DE CLÍNICA O CENTRO DE BIENESTAR]"
+  },
+  "entradas": {
+    "citas_de_4_semanas": "[EXPORTA: FECHA, HORA INICIO, HORA FIN, SERVICIO, PROFESIONAL, SALA, PRECIO, ESTADO]",
+    "costes_fijos": "[ALQUILER, SUMINISTROS Y SUELDOS AL MES]",
+    "tiempos_reales": "[CUÁNTO DURA DE VERDAD CADA SERVICIO, INCLUIDO LIMPIAR Y PREPARAR]"
+  },
+  "pasos": [
+    "1. Calcula las horas de sala disponibles al mes: salas por horas de apertura por días abiertos. Es el denominador de todo.",
+    "2. Calcula la ocupación real por sala y por franja horaria y píntala en una tabla de días por horas.",
+    "3. Calcula el precio por hora de sala de cada servicio: precio dividido entre la duración real, no la teórica.",
+    "4. Mide los huecos muertos: huecos de menos de 30 minutos entre citas que no se pueden vender. Suma sus horas al mes.",
+    "5. Detecta los desajustes de duración: servicios que se reservan a 30 minutos y ocupan 45. Corrige la duración en la agenda.",
+    "6. Calcula la hora de coste: costes fijos entre horas de sala disponibles. Marca los servicios que no cubren esa hora de coste.",
+    "7. Propón la nueva plantilla de agenda: bloques por tipo de servicio, franjas protegidas para primeras visitas y una franja de descanso real.",
+    "8. Simula la nueva plantilla sobre las cuatro semanas analizadas y di cuántas horas vendibles gana.",
+    "9. Lista los cambios en orden de facilidad: los que se hacen mañana y los que necesitan avisar a pacientes."
+  ],
+  "restricciones": [
+    "No se recorta el tiempo clínico de la sesión para meter más citas: solo se ajustan los huecos y los tiempos muertos.",
+    "Se respetan los descansos del profesional; una agenda sin pausas se cae sola en un mes.",
+    "Todos los números salen de los datos aportados; si falta un dato se dice y no se inventa."
+  ],
+  "formato_salida": {
+    "1_tabla_ocupacion": "Días por franjas horarias con el porcentaje de ocupación",
+    "2_ranking_servicios": "Servicio, duración real, precio, euros por hora de sala",
+    "3_horas_perdidas": "Cuántas horas al mes se van en huecos muertos y en qué franjas",
+    "4_hora_de_coste": "El número y qué servicios quedan por debajo",
+    "5_nueva_plantilla": "Cuadrícula semanal propuesta",
+    "6_plan_de_cambios": "Lista ordenada con el impacto estimado en horas vendibles"
+  },
+  "criterios_calidad": [
+    "Cada conclusión va acompañada del número del que sale.",
+    "La nueva plantilla cabe en el mismo horario de apertura y con el mismo personal.",
+    "Se puede explicar el resultado en tres frases a alguien que no ve la tabla.",
+    "Los cambios propuestos se pueden probar dos semanas y volver atrás."
+  ],
+  "errores_tipicos": [
+    "Mirar la facturación total y no la facturación por hora de sala.",
+    "Usar la duración teórica del servicio en vez de la real.",
+    "Llenar las franjas buenas con servicios baratos y dejar fuera las primeras visitas.",
+    "Cambiar toda la agenda de golpe sin avisar a los pacientes recurrentes."
+  ]
+}

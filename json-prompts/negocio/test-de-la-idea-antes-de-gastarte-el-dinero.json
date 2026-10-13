@@ -1,0 +1,29 @@
+{
+  "tarea": "Convertir mi idea de negocio en una lista de suposiciones críticas y diseñar un experimento barato y rápido para validar cada una",
+  "contexto": {
+    "idea": "[EXPLICA TU IDEA EN 3 FRASES]",
+    "cliente_supuesto": "[QUIÉN CREES QUE PAGARÍA]",
+    "problema_supuesto": "[QUÉ LE RESUELVES Y CÓMO LO SOLUCIONA HOY]",
+    "precio_supuesto": "[CUÁNTO PIENSAS COBRAR]",
+    "presupuesto_para_validar": "[EUROS QUE PUEDES GASTAR EN PROBARLO]",
+    "tiempo_disponible": "[HORAS A LA SEMANA Y SEMANAS TOTALES]"
+  },
+  "instrucciones": [
+    "Extrae todas las suposiciones implícitas de mi idea y clasifícalas en: de deseabilidad (lo quieren), de viabilidad (sale a cuenta) y de factibilidad (puedo hacerlo)",
+    "Ordénalas por riesgo: primero las que, si son falsas, hacen inútil todo lo demás",
+    "Para las 5 más peligrosas, diseña un experimento que cueste menos que mi presupuesto y dure menos de 14 días",
+    "Cada experimento debe tener un criterio de decisión numérico fijado ANTES de hacerlo",
+    "Prioriza pruebas con dinero real o compromiso real (reserva, señal, preventa, lista con pago) por encima de encuestas de opinión"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown",
+    "columnas": ["Suposición", "Tipo", "Riesgo (alto/medio/bajo)", "Experimento concreto", "Coste", "Días", "Señal de que es VERDAD", "Señal de que es FALSA"],
+    "extras": ["Calendario de 2 semanas con qué hacer cada día", "Guion de 8 preguntas para hablar con 10 clientes potenciales, sin preguntas que induzcan la respuesta", "Regla de parada: qué resultado me hace abandonar la idea"]
+  },
+  "criterios_calidad": [
+    "Ningún experimento requiere tener el producto terminado",
+    "Los criterios de decisión son números, no impresiones",
+    "Las preguntas al cliente van sobre lo que ya hace y ha pagado, no sobre lo que haría",
+    "Se incluye al menos una prueba en la que alguien pone dinero"
+  ]
+}

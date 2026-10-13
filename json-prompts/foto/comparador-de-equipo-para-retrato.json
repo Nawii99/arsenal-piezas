@@ -1,0 +1,35 @@
+{
+  "tarea": "Recomendarme qué cámara y qué objetivo comprar para hacer retratos, comparando 3 opciones reales dentro de mi presupuesto y explicándolo sin jerga",
+  "contexto": {
+    "presupuesto_total_euros": "[PRESUPUESTO EN EUROS, EQUIPO COMPLETO]",
+    "uso_principal": "[RETRATO CORPORATIVO / BODAS / FAMILIA / MODA / FOTOS PARA MI NEGOCIO]",
+    "equipo_actual": "[QUÉ TIENES YA: CÁMARA, OBJETIVOS, FLASH, TRÍPODE O NADA]",
+    "donde_disparo": "[ESTUDIO / CASA DEL CLIENTE / OFICINAS / EXTERIOR]",
+    "nivel": "[PRINCIPIANTE / HE HECHO ALGUNAS SESIONES / SEMIPROFESIONAL]",
+    "mercado": "España, con opción de segunda mano"
+  },
+  "metodo": [
+    "Elegir primero el objetivo y después el cuerpo: en retrato la focal y la apertura cambian más la foto que los megapíxeles",
+    "Proponer 3 combinaciones: ajustada, equilibrada y con margen para crecer",
+    "Incluir en cada una: cuerpo, objetivo principal, objetivo secundario opcional, luz, tarjetas y batería de repuesto",
+    "Explicar qué hace cada focal en la cara: 35 mm ambiente, 50 mm medio cuerpo, 85 mm primer plano, 70-200 mm trabajo a distancia",
+    "Avisar de compatibilidad de montura y de si el objetivo es para sensor recortado o completo",
+    "Marcar qué conviene comprar de segunda mano y qué no"
+  ],
+  "restricciones": [
+    "No superar el presupuesto sumando todo, accesorios incluidos",
+    "Nada de jerga sin traducir: si dices f/1.8, explica qué se ve en la foto",
+    "Si con el equipo que ya tengo es suficiente, decirlo claramente",
+    "Si no conoces el precio actual, dar un rango y avisar de que hay que comprobarlo"
+  ],
+  "formato_salida": {
+    "tipo": "tabla comparativa y veredicto",
+    "columnas": ["Opción", "Cuerpo", "Objetivo(s)", "Luz y accesorios", "Coste aproximado", "Para qué es buena", "Su punto débil"],
+    "despues_de_la_tabla": ["Mi recomendación y por qué", "Qué comprar ya y qué puede esperar", "Tres errores de compra habituales en retrato"]
+  },
+  "criterios_calidad": [
+    "Las tres opciones son realmente distintas, no la misma con variaciones",
+    "Cada pieza se justifica con el uso que le voy a dar",
+    "Queda claro qué aporta cada elemento a la foto final"
+  ]
+}

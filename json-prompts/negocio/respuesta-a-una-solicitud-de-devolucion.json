@@ -1,0 +1,40 @@
+{
+  "tarea": "Redactar la respuesta al cliente sobre su solicitud de devolucion, en tres versiones segun la decision",
+  "entradas": {
+    "cliente": "[NOMBRE DEL CLIENTE]",
+    "pedido": "[NUMERO DE PEDIDO Y FECHA DE COMPRA]",
+    "producto": "[PRODUCTO Y PRECIO]",
+    "motivo_declarado": "[LO QUE DICE EL CLIENTE, PEGADO TAL CUAL]",
+    "dias_desde_entrega": "[NUMERO]",
+    "estado_producto": "[SIN ABRIR / USADO / DANADO / FALTAN PIEZAS]",
+    "decision": "[ACEPTAR / ACEPTAR PARCIAL / RECHAZAR]",
+    "condiciones": "[QUIEN PAGA EL ENVIO, PLAZO DE REEMBOLSO, VALE O DINERO]",
+    "empresa": "[NOMBRE DE TU EMPRESA] y firma [TU NOMBRE Y CARGO]"
+  },
+  "reglas_de_redaccion": [
+    "Empezar reconociendo el caso concreto, nunca con formula generica de plantilla",
+    "Dar la decision en las tres primeras lineas, sin rodeos",
+    "Explicar el motivo en una frase entendible, apoyado en la politica, no en 'las normas son asi'",
+    "Terminar siempre con el siguiente paso concreto y quien lo hace",
+    "Si se rechaza, ofrecer una alternativa real: reparacion, cambio, descuento o consejo de uso"
+  ],
+  "formato_salida": {
+    "tipo": "Tres bloques separados",
+    "bloques": [
+      "EMAIL: asunto de maximo 55 caracteres y cuerpo de 120 a 180 palabras",
+      "WHATSAPP: misma decision en 4 lineas, tono mas informal",
+      "NOTA INTERNA: 3 lineas para el registro del caso con la decision y el motivo"
+    ]
+  },
+  "tono": "[CERCANO / NEUTRO PROFESIONAL], tuteando, sin excusas largas ni disculpas repetidas",
+  "restricciones": [
+    "No admitir culpa legal ni prometer plazos que no controlas",
+    "No usar palabras como lamentablemente, procedemos o rogamos",
+    "Nada de emojis salvo que se indique lo contrario"
+  ],
+  "criterios_calidad": [
+    "El cliente entiende que pasa ahora y que tiene que hacer el",
+    "Se puede enviar sin retocar mas de dos palabras",
+    "El tono aguanta que el cliente lo publique en redes"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "tarea": "Escribir el guion paso a paso del día que se publica la web nueva, con responsables, tiempos y plan de vuelta atrás",
+  "contexto": {
+    "dominio": "[DOMINIO]",
+    "proveedores": "[DÓNDE ESTÁ EL DOMINIO, EL HOSTING ACTUAL, EL NUEVO Y EL CORREO]",
+    "fecha_y_hora": "[DÍA Y FRANJA HORARIA ELEGIDA]",
+    "equipo": "[QUIÉN PARTICIPA Y QUÉ SABE HACER CADA UNO]",
+    "funciones_criticas": "[LO QUE NO PUEDE DEJAR DE FUNCIONAR: PAGOS, FORMULARIOS, CORREO, RESERVAS]"
+  },
+  "fases": [
+    "Antes: copia de seguridad completa, congelar cambios de contenido, bajar el tiempo de caché del dominio, avisar al equipo",
+    "Durante: publicar, activar redirecciones, revisar certificado de seguridad, comprobar correo y funciones críticas",
+    "Después: enviar el mapa del sitio a buscadores, revisar errores 404, vigilar analítica y pedidos las primeras 48 horas"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla cronológica con columnas Hora, Paso, Responsable, Cómo se comprueba y Tiempo estimado",
+    "bloque_2": "Comprobaciones obligatorias antes de dar por buena la publicación",
+    "bloque_3": "Plan de vuelta atrás: en qué momento se decide abortar, quién lo decide y los pasos exactos para volver a la web antigua",
+    "bloque_4": "Vigilancia de los 7 días siguientes: qué mirar cada día y qué señal es motivo de alarma",
+    "bloque_5": "Contactos de emergencia y accesos necesarios"
+  },
+  "restricciones": [
+    "No publicar en viernes por la tarde ni en vísperas de festivo",
+    "Nada de tocar los registros del correo sin haberlos copiado antes tal cual están",
+    "Cada paso indica cómo saber que ha salido bien antes de pasar al siguiente",
+    "El plan de vuelta atrás debe poder ejecutarse en menos de una hora"
+  ],
+  "criterios_calidad": [
+    "Una persona que no montó la web puede seguir el guion",
+    "Están cubiertos dominio, hosting, certificado, correo, redirecciones y medición",
+    "Hay un responsable con nombre en cada paso"
+  ]
+}

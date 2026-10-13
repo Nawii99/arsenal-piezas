@@ -1,0 +1,43 @@
+{
+  "tarea": "Crear un set de vocabulario tecnico de [SECTOR O PROFESIÓN] en [IDIOMA] y entregarlo como tarjetas listas para importar en Anki o Quizlet",
+  "contexto": {
+    "idioma": "[IDIOMA]",
+    "sector_o_puesto": "[TU SECTOR O PUESTO: hostelería, fisioterapia, comercial de software, obra]",
+    "situaciones_de_uso": "[DÓNDE LO VAS A USAR: emails a proveedores, atender clientes en tienda, llamadas de venta]",
+    "mi_nivel": "[A2, B1, B2 o C1]",
+    "numero_de_terminos": "[CUÁNTOS TÉRMINOS QUIERES, por ejemplo 40]",
+    "variante": "[VARIANTE DEL IDIOMA: inglés británico, inglés de EEUU, alemán de Austria...]"
+  },
+  "criterios_de_seleccion": [
+    "Elige solo terminos que aparezcan de verdad en el dia a dia de ese trabajo, no palabras de diccionario tecnico que nadie dice",
+    "Incluye colocaciones y frases hechas del oficio, no solo palabras sueltas",
+    "Marca los falsos amigos con el espanol y los errores tipicos de un hispanohablante",
+    "Ordena de mas util a menos util segun las situaciones_de_uso",
+    "Evita sinonimos redundantes: si dos palabras valen igual, quedate con la mas usada e indicalo"
+  ],
+  "formato_salida": {
+    "tipo": "bloque CSV separado por punto y coma, dentro de un bloque de codigo, sin texto alrededor",
+    "cabecera": "anverso;reverso;ejemplo;pronunciacion;nota",
+    "detalle_columnas": {
+      "anverso": "el termino en [IDIOMA]",
+      "reverso": "la traduccion al espanol de Espana",
+      "ejemplo": "una frase real de trabajo con el termino en contexto y su traduccion entre parentesis",
+      "pronunciacion": "como se pronuncia aproximado, escrito para un espanol, sin alfabeto fonetico",
+      "nota": "falso amigo, registro formal o informal, error tipico o vacio"
+    }
+  },
+  "restricciones": [
+    "Ningun campo puede contener punto y coma ni saltos de linea",
+    "Nada de inventar terminos: si dudas de que se use, no lo pongas",
+    "Las frases de ejemplo deben ser de trabajo real, no de manual escolar"
+  ],
+  "despues_del_csv": [
+    "Lista aparte de los 5 terminos que mas se confunden entre si y como distinguirlos",
+    "Instrucciones en 4 pasos para importar el CSV en Anki"
+  ],
+  "criterios_calidad": [
+    "El CSV se importa sin errores y cada fila tiene las 5 columnas",
+    "Un profesional del sector reconoceria estos terminos como los que usa a diario",
+    "Las notas avisan de los fallos concretos que comete un hispanohablante"
+  ]
+}

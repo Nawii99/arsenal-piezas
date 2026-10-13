@@ -1,0 +1,38 @@
+{
+  "tarea": "Analizar los resultados de las últimas campañas de email y proponer un plan de mejora concreto",
+  "contexto": {
+    "negocio": "[SECTOR Y QUÉ VENDES]",
+    "tamano_lista": "[SUSCRIPTORES ACTIVOS]",
+    "periodo": "[MES O TRIMESTRE ANALIZADO]",
+    "objetivo_principal": "[VENTAS, CITAS, VISITAS A LA WEB O RESPUESTAS]"
+  },
+  "datos": {
+    "formato": "Una fila por envío",
+    "columnas": ["fecha", "asunto", "tipo_de_email", "segmento", "enviados", "aperturas", "clics", "bajas", "quejas_spam", "ventas", "ingresos"],
+    "pegar_aqui": "[PEGA TUS DATOS, UNA LÍNEA POR ENVÍO]"
+  },
+  "analisis_requerido": [
+    "Calcula tasa de apertura, de clic, clic sobre apertura, baja e ingreso por email enviado",
+    "Ordena los envíos de mejor a peor según el objetivo principal, no según la apertura",
+    "Detecta patrones por tipo de email, día, hora, segmento y estilo de asunto",
+    "Señala los envíos que abrieron mucho pero vendieron poco y explica la causa probable",
+    "Avisa si algún dato es inconsistente o si la muestra es demasiado pequeña para concluir"
+  ],
+  "formato_salida": {
+    "semaforo": "Verde, ámbar o rojo para apertura, clic, bajas y quejas, con una frase de por qué",
+    "tabla_ranking": "Los envíos ordenados con sus métricas calculadas",
+    "hallazgos": "Máximo 5, cada uno con el dato que lo respalda",
+    "acciones": "3 cambios concretos para el próximo mes, con el resultado que deberías ver si funciona",
+    "prueba_del_mes": "Una sola prueba A/B propuesta, con qué se compara y cómo se decide"
+  },
+  "restricciones": [
+    "No inventes datos de referencia del sector: si citas una media, di que es orientativa",
+    "Lenguaje llano, explica cada métrica la primera vez que la uses",
+    "Nada de recomendaciones genéricas tipo mejora el copy: di qué frase y qué cambiar"
+  ],
+  "criterios_calidad": [
+    "Un emprendedor sin formación en marketing entiende el informe entero",
+    "Cada conclusión se apoya en un número visible en la tabla",
+    "Las 3 acciones se pueden ejecutar antes del próximo envío"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "tarea": "Diseñar el montaje segundo a segundo de un vídeo vertical corto, con la cadencia de cortes y el contenido de cada plano",
+  "contexto": {
+    "tema": "[DE QUÉ VA EL REEL]",
+    "duracion": "[20 / 30 / 45 / 60 SEGUNDOS]",
+    "formato": "vertical 9:16, se ve sin sonido en la mitad de los casos",
+    "llamada_a_la_accion": "[QUÉ QUIERES QUE HAGAN AL FINAL]"
+  },
+  "entradas": {
+    "material_disponible": "[LISTA DE CLIPS GRABADOS O QUE PUEDES GRABAR]",
+    "musica": "[TIPO DE MÚSICA O BPM APROXIMADO]"
+  },
+  "reglas_de_ritmo": [
+    "Primer plano de 1 a 2 segundos como máximo antes del primer corte",
+    "Duración media de plano entre 1,5 y 3 segundos en la parte central",
+    "Alternar tamaños de plano: nunca dos planos iguales seguidos",
+    "Un cambio visible (corte, zoom, rótulo o movimiento) cada 3 segundos como mucho",
+    "El plano final se sostiene 2-3 segundos para que se lea la llamada a la acción"
+  ],
+  "procedimiento": [
+    "Escribir el texto hablado o los rótulos y cronometrarlo a 2,5 palabras por segundo",
+    "Repartir ese texto en planos y asignar a cada uno una imagen concreta",
+    "Marcar dónde cae el corte respecto a la música",
+    "Revisar que el vídeo se entiende con el sonido quitado"
+  ],
+  "formato_salida": {
+    "tipo": "tabla markdown",
+    "columnas": ["segundo de entrada", "duración", "qué se ve", "tamaño de plano", "texto en pantalla", "audio", "tipo de corte"],
+    "extras": ["Lista de rótulos lista para copiar", "Aviso de qué clips faltan por grabar"]
+  },
+  "restricciones": [
+    "Sin transiciones de plantilla: cortes secos, salvo un motivo escrito",
+    "Texto en pantalla de 6 palabras o menos por plano",
+    "Nada de texto en el 15% inferior ni superior de la pantalla"
+  ],
+  "criterios_calidad": [
+    "La suma de duraciones da exactamente la duración pedida",
+    "Se entiende el mensaje viendo solo los rótulos"
+  ]
+}

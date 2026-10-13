@@ -1,0 +1,39 @@
+{
+  "tarea": "Crear la política de divulgación responsable de vulnerabilidades de una web, el contenido del archivo security.txt y las respuestas tipo para gestionar los avisos que lleguen de fuera",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "dominio": "[TUDOMINIO.COM]",
+    "email_seguridad": "[SEGURIDAD@TUDOMINIO.COM]",
+    "alcance": "[QUÉ DOMINIOS Y APPS ENTRAN]",
+    "fuera_de_alcance": "[QUÉ NO: PROVEEDORES EXTERNOS, WEBS ANTIGUAS...]",
+    "recompensa": "[NINGUNA, AGRADECIMIENTO PÚBLICO, IMPORTE VARIABLE]",
+    "idiomas": "[ESPAÑOL E INGLÉS]"
+  },
+  "pasos": [
+    "Redactar la política: qué pueden probar, qué está prohibido, cómo enviar el aviso y qué información pedir",
+    "Fijar compromisos realistas de plazo: acuse de recibo, primera valoración y aviso de arreglo",
+    "Redactar el compromiso de no emprender acciones legales contra quien siga la política de buena fe",
+    "Generar el contenido del archivo security.txt con los campos de contacto, política, idiomas y fecha de caducidad, indicando dónde subirlo",
+    "Redactar tres respuestas tipo: aviso recibido, hallazgo confirmado con plan de arreglo, hallazgo descartado con explicación",
+    "Redactar la respuesta para un mensaje que exige dinero antes de dar detalles, sin ceder ni insultar, y explicar cuándo acudir a las autoridades",
+    "Definir el registro interno de avisos: quién lo recibe, dónde se apunta y cómo se prioriza",
+    "Definir el criterio para avisar a clientes afectados si el fallo tocó datos personales"
+  ],
+  "restricciones": [
+    "No prometer recompensas si no hay presupuesto asignado",
+    "No prometer plazos que no se puedan cumplir con el equipo actual",
+    "Los textos legales son plantillas: recomendar revisión por un abogado antes de publicar"
+  ],
+  "formato_salida": {
+    "bloque_1": "política lista para publicar en /security",
+    "bloque_2": "contenido exacto del archivo security.txt y su ruta",
+    "bloque_3": "cuatro respuestas tipo listas para copiar",
+    "bloque_4": "tabla de registro interno de avisos"
+  },
+  "criterios_calidad": [
+    "La política deja claro el alcance y evita malentendidos",
+    "Las respuestas suenan humanas y profesionales, sin plantilla fría",
+    "Los plazos comprometidos son sostenibles para un equipo pequeño"
+  ],
+  "tono": "cordial, firme y profesional"
+}

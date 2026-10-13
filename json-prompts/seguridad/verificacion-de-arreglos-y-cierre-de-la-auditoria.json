@@ -1,0 +1,38 @@
+{
+  "tarea": "Preparar el proceso de verificación de correcciones tras una prueba de intrusión web y el acta de cierre que documenta el estado final de cada hallazgo",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "auditor": "[EMPRESA QUE HIZO LA AUDITORÍA]",
+    "fecha_informe": "[FECHA]",
+    "fecha_arreglos": "[FECHA EN QUE SE DIERON POR HECHOS]",
+    "destinatario_del_acta": "[CLIENTE, SEGURO, DIRECCIÓN, USO INTERNO]"
+  },
+  "entradas": {
+    "hallazgos_y_estado": "[PEGA LA LISTA CON LO QUE DICE EL DESARROLLADOR DE CADA UNO]"
+  },
+  "pasos": [
+    "Clasificar cada hallazgo en corregido, corregido parcialmente, mitigado, riesgo aceptado o pendiente",
+    "Para cada uno, indicar qué evidencia hay que pedir: captura de la comprobación, fecha, versión desplegada o confirmación del proveedor",
+    "Redactar la petición formal de re-test al auditor, indicando qué hallazgos deben volver a comprobarse y en qué entorno",
+    "Definir qué hallazgos exigen re-test externo obligatorio y cuáles se pueden verificar internamente",
+    "Definir qué se hace si el re-test descubre que el arreglo abrió otro problema",
+    "Redactar el texto del riesgo aceptado para los hallazgos que no se van a arreglar, con motivo, plazo de revisión y quién lo asume",
+    "Montar el acta de cierre con la tabla final y el apartado de recomendaciones para la próxima auditoría"
+  ],
+  "restricciones": [
+    "No dar por corregido nada sin evidencia asociada",
+    "No incluir datos técnicos sensibles en el acta destinada a terceros: versión resumida",
+    "No afirmar que la aplicación es segura; hablar siempre de estado a una fecha concreta"
+  ],
+  "formato_salida": {
+    "bloque_1": "tabla de verificación: Nº, hallazgo, estado, evidencia requerida, quién verifica, fecha",
+    "bloque_2": "email de petición de re-test",
+    "bloque_3": "acta de cierre en una página, apta para enviar a un cliente"
+  },
+  "criterios_calidad": [
+    "Cada línea de la tabla tiene evidencia y responsable",
+    "El acta se entiende sin haber leído el informe técnico",
+    "Los riesgos aceptados quedan firmados y con fecha de revisión"
+  ],
+  "tono": "formal y verificable"
+}

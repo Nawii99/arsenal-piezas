@@ -1,0 +1,39 @@
+{
+  "tarea": "Diseñar la campaña completa de una fecha comercial fuerte: oferta, mensajes, calendario de cuenta atrás y reparto del presupuesto",
+  "contexto": {
+    "fecha_campana": "[BLACK FRIDAY, REBAJAS, NAVIDAD, ANIVERSARIO...]",
+    "dias_de_duracion": "[CUÁNTOS DÍAS ESTARÁ ACTIVA]",
+    "productos": "[QUÉ ENTRA EN LA PROMOCIÓN Y QUÉ MARGEN DEJA CADA UNO]",
+    "descuento_maximo": "[HASTA DÓNDE PUEDES BAJAR SIN PERDER DINERO]",
+    "presupuesto_anuncios": "[CUÁNTO VAS A INVERTIR]",
+    "canales": "[REDES, EMAIL, WHATSAPP, TIENDA, ANUNCIOS]",
+    "stock_o_plazas": "[CUÁNTO PUEDES SERVIR SIN MORIR DE ÉXITO]"
+  },
+  "pasos": [
+    "1. Propón tres formatos de oferta distintos (descuento, lote, regalo o plazo) y recomienda uno con su motivo",
+    "2. Comprueba que la oferta recomendada respeta el descuento máximo y el stock",
+    "3. Divide la campaña en cuatro momentos: aviso previo, apertura, mitad y últimas horas",
+    "4. Asigna a cada día del calendario canal, mensaje y pieza necesaria",
+    "5. Reparte el presupuesto de anuncios entre calentamiento, venta y recordatorio a los que ya te conocen",
+    "6. Escribe los cinco mensajes clave de la campaña, incluido el de última hora",
+    "7. Añade el plan para el día siguiente al cierre: qué hacer con quien no compró"
+  ],
+  "formato_salida": {
+    "1_oferta": "Las tres opciones comparadas y la recomendada con su justificación",
+    "2_calendario": "Tabla con Día, Momento, Canal, Acción, Mensaje",
+    "3_presupuesto": "Tabla con Fase, Importe, Objetivo de esa fase",
+    "4_mensajes": "Los cinco mensajes clave escritos y listos",
+    "5_despues": "Plan del día después y del seguimiento a quienes no compraron"
+  },
+  "restricciones": [
+    "Los descuentos anunciados deben compararse con el precio real anterior, sin precios inflados antes de la promoción",
+    "No propongas ofertas por debajo del margen indicado",
+    "La urgencia debe ser cierta: solo si el plazo o el stock son reales",
+    "Español de España, tuteando"
+  ],
+  "criterios_calidad": [
+    "La oferta recomendada se sostiene con los márgenes y el stock declarados",
+    "El calendario cubre todos los días de la campaña más los 5 previos",
+    "El reparto del presupuesto suma exactamente el importe indicado"
+  ]
+}

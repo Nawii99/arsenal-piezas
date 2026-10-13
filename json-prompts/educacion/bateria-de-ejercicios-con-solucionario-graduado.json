@@ -1,0 +1,36 @@
+{
+  "tarea": "Crear una batería de ejercicios graduados con solucionario explicado sobre un tema concreto",
+  "entradas": {
+    "tema": "[TEMA EXACTO A PRACTICAR]",
+    "nivel": "[PRINCIPIANTE / INTERMEDIO / AVANZADO]",
+    "numero_ejercicios": "[CUÁNTOS EN TOTAL]",
+    "tipos_permitidos": "[CÁLCULO / CASO PRÁCTICO / COMPLETAR / VERDADERO-FALSO RAZONADO]",
+    "contexto_enunciados": "[SECTOR O SITUACIÓN REAL DONDE AMBIENTAR LOS ENUNCIADOS]",
+    "tiempo_disponible_min": "[MINUTOS QUE TIENE EL ALUMNO]"
+  },
+  "graduacion": {
+    "nivel_1_calentamiento": "40% de los ejercicios, un solo paso, datos dados",
+    "nivel_2_aplicacion": "40%, dos o tres pasos, algún dato hay que deducirlo",
+    "nivel_3_reto": "20%, situación realista con un dato sobrante o ausente que el alumno debe detectar"
+  },
+  "reglas": [
+    "Cada ejercicio prueba una sola cosa y se indica cuál al final del solucionario",
+    "Los enunciados usan datos verosímiles y unidades del sistema métrico y euros",
+    "Prohibido repetir la misma estructura de enunciado dos veces seguidas",
+    "Ningún ejercicio depende de haber resuelto el anterior"
+  ],
+  "formato_salida": {
+    "bloque_1": "HOJA DEL ALUMNO: enunciados numerados, sin pistas, con espacio indicado para responder",
+    "bloque_2": "SOLUCIONARIO: por ejercicio, resultado, resolución paso a paso, error típico que se comete y pista de 1 línea para dar en clase",
+    "bloque_3": "Tabla resumen con ejercicio, nivel, concepto evaluado y minutos estimados"
+  },
+  "restricciones": [
+    "No uses datos de personas reales ni marcas concretas",
+    "Si el tema admite varias soluciones válidas, dilo explícitamente en el solucionario"
+  ],
+  "criterios_calidad": [
+    "La suma de minutos estimados encaja con el tiempo disponible",
+    "Todo ejercicio del solucionario se resuelve solo con lo explicado en el tema",
+    "Los errores típicos son concretos, no genéricos"
+  ]
+}

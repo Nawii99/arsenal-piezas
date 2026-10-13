@@ -1,0 +1,51 @@
+{
+  "tarea": "Comprobar, antes de comprar, si un dispositivo domotico sera compatible con el sistema del usuario y que hara falta para integrarlo.",
+  "contexto": {
+    "lo_que_ya_tengo": {
+      "sistema_central": "[HOME ASSISTANT / ALEXA / GOOGLE HOME / APPLE CASA / SMARTTHINGS / NADA]",
+      "puentes_o_hubs": "[HUE BRIDGE, COORDINADOR ZIGBEE, HUB AQARA, NINGUNO]",
+      "router": "[MARCA Y MODELO, INDICA SI 2,4 Y 5 GHz COMPARTEN NOMBRE]",
+      "moviles_de_la_casa": "[ANDROID / IPHONE / MEZCLA]"
+    },
+    "lo_que_quiero_comprar": {
+      "producto": "[NOMBRE EXACTO Y MODELO]",
+      "enlace_o_ficha": "[PEGA AQUI LA DESCRIPCION O LAS ESPECIFICACIONES DEL ANUNCIO]",
+      "precio": "[EUROS]",
+      "vendedor": "[TIENDA ESPANOLA / AMAZON / ALIEXPRESS]"
+    }
+  },
+  "procedimiento": [
+    "1. Extrae de la ficha estos datos y marca los que falten: protocolo, banda de radio, si necesita hub propio, si necesita nube, app oficial, alimentacion y voltaje.",
+    "2. Distingue Matter de solo compatible con Alexa: un producto puede funcionar con Alexa y no exponerse en Home Assistant.",
+    "3. Comprueba la banda: casi todo lo barato es solo 2,4 GHz y falla si la red mezcla bandas con un unico nombre.",
+    "4. Detecta dependencia de nube: si la marca cierra el servidor, el aparato se queda muerto. Marcalo como riesgo.",
+    "5. Revisa el enchufe y el voltaje: 220-240 V y clavija tipo F europea; ojo con la clavija americana y con los 110 V.",
+    "6. Si es de empotrar detras del interruptor, comprueba si exige neutro y si cabe en caja de mecanismo de 60 mm.",
+    "7. Si es camara, comprueba si exige suscripcion para grabar y si permite RTSP u ONVIF para grabar en local.",
+    "8. Da un veredicto y, si es NO, propon dos alternativas equivalentes que si encajen."
+  ],
+  "senales_de_alarma": [
+    "La ficha no dice el protocolo, solo pone inteligente o wifi smart.",
+    "Requiere una app que solo existe en un pais o que pide numero de telefono chino.",
+    "Pone compatible con Matter pero no indica version ni tipo de dispositivo Matter.",
+    "El fabricante no aparece en ningun sitio y no hay firmware ni soporte.",
+    "Necesita hub propio que se vende aparte y no viene en el precio."
+  ],
+  "formato_salida": {
+    "bloque_1": "Semaforo: VERDE compra tranquilo, AMBAR compra con condiciones, ROJO no compres",
+    "bloque_2": "Tabla de datos extraidos: DATO | VALOR | DE DONDE SALE | SI FALTA, PREGUNTA AL VENDEDOR",
+    "bloque_3": "Que hara falta ademas para que funcione, con precio estimado",
+    "bloque_4": "Riesgos a dos anos vista en tres vinetas",
+    "bloque_5": "Dos alternativas concretas si el veredicto es AMBAR o ROJO"
+  },
+  "restricciones": [
+    "No afirmes compatibilidad si la ficha no lo dice: marcalo como no confirmado y di que preguntar.",
+    "Precios en euros y con IVA.",
+    "Explica cada sigla la primera vez que aparezca."
+  ],
+  "criterios_calidad": [
+    "Ningun dato aparece afirmado sin decir de donde sale.",
+    "El veredicto se entiende sin leer el resto.",
+    "Las alternativas propuestas existen en tiendas que envian a Espana."
+  ]
+}

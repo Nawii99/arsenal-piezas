@@ -1,0 +1,46 @@
+{
+  "tarea": "Ordenar el manejo de claves de API y preparar el protocolo de fuga",
+  "contexto": {
+    "servicios_con_clave": "[IA, PASARELA DE PAGO, EMAIL, AUTOMATIZACIONES, REDES, HOSTING]",
+    "donde_estan_ahora": "[NOTAS, CHAT, CÓDIGO, HERRAMIENTA NOCODE, CAPTURAS]",
+    "quien_las_ha_visto": "[PERSONAS Y HERRAMIENTAS]",
+    "perfil_usuario": "sin perfil técnico; explica dónde se pulsa en cada panel"
+  },
+  "entradas": {
+    "sospecha_de_fuga": "[SÍ O NO, Y QUÉ TE HACE SOSPECHAR]",
+    "gasto_mensual_normal": "[EUROS AL MES HABITUALES POR SERVICIO]"
+  },
+  "pasos": [
+    "1. Haz el inventario: una fila por clave, con servicio, para qué se usa, dónde está guardada y qué permisos tiene.",
+    "2. Reduce permisos: una clave por uso, con el alcance mínimo, y separa la de pruebas de la de producción.",
+    "3. Saca las claves de sitios inseguros: chats, capturas, documentos compartidos y campos de texto de webs.",
+    "4. Pon límite de gasto y alerta de consumo en cada servicio que lo permita.",
+    "5. Escribe el protocolo de fuga: revocar primero, crear la nueva después, actualizar donde se use y revisar consumo.",
+    "6. Ordena en qué sitios hay que actualizar la clave nueva para que nada se quede colgado.",
+    "7. Revisa el consumo de las últimas 72 horas buscando picos, países raros u horarios imposibles.",
+    "8. Fija rotación periódica de las claves críticas y anótala en el calendario."
+  ],
+  "restricciones": [
+    "Revocar siempre antes de investigar: primero se corta el grifo.",
+    "Nunca pegues una clave en un chat, en una captura ni en un documento compartido.",
+    "Si el servicio permite restringir por dominio o por IP, actívalo."
+  ],
+  "errores_tipicos": [
+    "Crear la clave nueva y olvidarse de borrar la vieja, que sigue viva.",
+    "Usar una única clave de administrador para todo.",
+    "Dejar la clave dentro del código de una web publicada, visible para cualquiera.",
+    "No tener límite de gasto en el proveedor de IA.",
+    "Rotar la clave y romper tres automatizaciones por no saber dónde estaba puesta."
+  ],
+  "formato_salida": {
+    "tabla_claves": "columnas: servicio | uso | dónde está guardada | permisos | límite de gasto | última rotación",
+    "protocolo_de_fuga": "lista numerada con la primera hora minuto a minuto",
+    "lista_de_actualizacion": "todos los sitios donde hay que pegar la clave nueva, en orden",
+    "revision_de_danos": "qué mirar en consumo y facturación y qué es señal de abuso"
+  },
+  "criterios_calidad": [
+    "Ninguna clave crítica vive fuera del gestor de contraseñas.",
+    "Cada clave tiene límite de gasto o alerta cuando el servicio lo permite.",
+    "El protocolo de fuga se puede ejecutar en menos de treinta minutos."
+  ]
+}

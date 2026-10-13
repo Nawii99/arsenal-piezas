@@ -1,0 +1,39 @@
+{
+  "tarea": "Escribir un artículo de blog completo, optimizado para posicionar en Google y pensado para que lo lea una persona real",
+  "contexto": {
+    "keyword_principal": "[PALABRA CLAVE]",
+    "keywords_secundarias": ["[VARIANTE 1]", "[VARIANTE 2]", "[VARIANTE 3]"],
+    "lector": "[A QUIÉN LE HABLAS Y QUÉ PROBLEMA TIENE]",
+    "negocio": "[TU EMPRESA Y QUÉ VENDE]",
+    "experiencia_real": "[DATOS, CASOS O APRENDIZAJES PROPIOS QUE PUEDES CONTAR]",
+    "objetivo": "[QUÉ QUIERES QUE HAGA EL LECTOR AL TERMINAR]"
+  },
+  "estructura": [
+    "H1 con la palabra clave, natural y con beneficio claro",
+    "Entradilla de 3 a 5 líneas: problema, promesa de lo que va a resolver y a quién sirve, sin rodeos ni 'en el mundo actual'",
+    "Respuesta directa a la búsqueda en los dos primeros párrafos, en menos de 60 palabras, para optar al fragmento destacado",
+    "Cuerpo en H2 y H3 siguiendo el orden lógico en que el lector se hace las preguntas",
+    "Al menos una tabla comparativa o una lista de pasos numerados",
+    "Sección de errores frecuentes con cómo evitarlos",
+    "FAQ final con 4 a 6 preguntas reales y respuestas de 2 a 4 líneas",
+    "Cierre con la llamada a la acción del objetivo"
+  ],
+  "restricciones": [
+    "Párrafos de 3 líneas como máximo y frases cortas; nada de subordinadas encadenadas",
+    "La keyword principal aparece en H1, en el primer párrafo, en un H2 y en el cierre; densidad natural, prohibido repetirla forzando",
+    "Nada de datos, cifras ni estudios inventados: si hace falta un dato, escribe [VERIFICAR DATO] en su lugar",
+    "Prohibidas las frases de relleno tipo 'en el vertiginoso mundo de' o 'no cabe duda de que'",
+    "Tuteo, español de España, voz activa"
+  ],
+  "formato_salida": {
+    "tipo": "markdown listo para pegar en el gestor de la web",
+    "extension": "[NÚMERO] palabras aproximadas",
+    "incluye_al_final": ["Título SEO de máximo 60 caracteres", "Meta descripción de 150 a 155 caracteres con llamada a la acción", "URL amigable propuesta", "3 sugerencias de enlace interno marcadas como [ENLAZAR A: tema]", "Texto alternativo para 2 imágenes"]
+  },
+  "criterios_calidad": [
+    "Un lector con prisa entiende la respuesta en los primeros 30 segundos",
+    "Cada H2 aporta información nueva y no repite lo dicho antes",
+    "El artículo incluye al menos un detalle concreto de la experiencia real aportada",
+    "No suena a texto generado: sin adjetivos vacíos ni conclusiones obvias"
+  ]
+}

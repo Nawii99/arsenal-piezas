@@ -1,0 +1,40 @@
+{
+  "tarea": "Diseñar un plan de reducción de gastos a 90 días, ordenado por ahorro conseguido y por riesgo para el negocio",
+  "contexto": {
+    "negocio": "[QUÉ HACE TU NEGOCIO]",
+    "motivo": "[POR QUÉ RECORTAS: CAÍDA DE VENTAS, PÉRDIDA DE UN CLIENTE, MARGEN BAJO, PREPARAR UNA INVERSIÓN]",
+    "objetivo_de_ahorro": "[CUÁNTO NECESITAS AHORRAR AL MES EN EUROS]",
+    "plazo": "90 días"
+  },
+  "entradas": {
+    "gasto_mensual": "[GASTO POR CATEGORÍA Y POR PROVEEDOR PRINCIPAL]",
+    "intocable": "[LO QUE NO SE PUEDE TOCAR BAJO NINGÚN CONCEPTO Y POR QUÉ]",
+    "ataduras": "[CONTRATOS CON PERMANENCIA, PRÉSTAMOS, ALQUILER Y SUS FECHAS]",
+    "equipo": "[PERSONAS Y COSTE APROXIMADO DE PERSONAL]"
+  },
+  "procedimiento": [
+    "Ordenar todo el gasto de mayor a menor y quedarse con las líneas que suman el 80% del total: ahí está el dinero",
+    "Puntuar cada línea de 1 a 5 en ahorro mensual, en rapidez para conseguirlo y en riesgo de dañar ventas, calidad o equipo",
+    "Descartar de entrada los recortes que reducen tu capacidad de vender o de entregar",
+    "Agrupar las medidas en tres olas: días 1 a 15 lo inmediato y sin coste, días 16 a 45 lo que requiere negociar, días 46 a 90 lo estructural",
+    "Para cada medida, indicar ahorro mensual, coste de aplicarla, quién la ejecuta y cómo se sabe que está hecha",
+    "Sumar el ahorro acumulado al final de cada ola y compararlo con el objetivo",
+    "Si el plan no llega al objetivo, decirlo claramente y plantear las medidas duras que quedarían, con sus consecuencias"
+  ],
+  "restricciones": [
+    "No proponer impagos, retrasar impuestos ni incumplir contratos",
+    "Las medidas sobre personas se plantean al final y con aviso de que requieren asesoramiento laboral",
+    "Nada de porcentajes genéricos tipo recortar un 10% en todo"
+  ],
+  "formato_salida": {
+    "tabla_medidas": ["medida", "categoria", "ahorro_mensual", "esfuerzo", "riesgo", "ola", "responsable", "señal_de_hecho"],
+    "cronograma": "Las tres olas con sus fechas y su ahorro acumulado",
+    "resumen": ["Ahorro mensual total del plan", "Distancia respecto al objetivo", "Las 3 medidas que empiezan hoy"],
+    "aviso": "Qué se rompe si se hacen todos los recortes a la vez"
+  },
+  "criterios_calidad": [
+    "Cada medida es ejecutable por una persona concreta en una semana concreta",
+    "El ahorro total es la suma real de las medidas, sin optimismo añadido",
+    "Queda claro qué NO se debe recortar"
+  ]
+}

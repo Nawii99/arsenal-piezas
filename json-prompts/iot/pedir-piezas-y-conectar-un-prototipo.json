@@ -1,0 +1,47 @@
+{
+  "tarea": "Convertir una idea de dispositivo con microcontrolador en lista de material y tabla de conexionado revisada",
+  "contexto": {
+    "que_debe_hacer": "[DESCRIPCION EN UNA FRASE, EJEMPLO MEDIR HUMEDAD Y ENVIARLA AL MOVIL]",
+    "donde_vivira": "[INTERIOR / EXTERIOR / NAVE HUMEDA / NEVERA], temperatura y humedad esperadas",
+    "alimentacion_disponible": "[ENCHUFE / PILAS / BATERIA / PANEL SOLAR]",
+    "autonomia_necesaria": "[MESES O DIAS SIN TOCARLO]",
+    "conectividad": "[WIFI / BLUETOOTH / LORA / SIN CONEXION]",
+    "nivel_del_montador": "[NUNCA HE SOLDADO / SE SOLDAR / TENGO TALLER]"
+  },
+  "metodo": [
+    "1. Elige placa segun consumo y conectividad, y justifica la eleccion en una linea",
+    "2. Elige sensores con su tension de trabajo y su forma de hablar (analogico, I2C, un solo cable) y comprueba que no chocan direcciones I2C",
+    "3. Comprueba niveles: la mayoria de placas modernas trabajan a 3,3 V y se dañan con 5 V en sus pines; marca donde hace falta adaptador de nivel",
+    "4. Dimensiona la alimentacion: consumo en marcha, consumo en reposo y calculo aproximado de dias de bateria",
+    "5. Nada de mover cargas de 230 V directamente desde la placa: usa modulo de rele o enchufe inteligente y avisalo",
+    "6. Haz la tabla de conexiones pin a pin usando los nombres serigrafiados en la placa, no numeros internos",
+    "7. Escribe la revision antes de dar corriente: polaridad, cortos, resistencias necesarias y primer encendido sin sensores"
+  ],
+  "restricciones": [
+    "Nada de instrucciones que impliquen manipular 230 V sin electricista",
+    "Si el montador no sabe soldar, propon version con conectores o bornes de tornillo",
+    "Cada componente con modelo concreto y alternativa equivalente",
+    "No inventes pines de una placa que no se ha indicado: pide el modelo exacto"
+  ],
+  "errores_frecuentes": [
+    "Alimentar sensores de 5 V y meter su salida directa a un pin de 3,3 V",
+    "Olvidar la masa comun entre placa y modulo externo",
+    "Usar pines que la placa necesita al arrancar y que impiden encenderla",
+    "Alimentar reles o motores desde el pin de la placa en vez de una fuente aparte",
+    "Caja sin prensaestopas en exterior y agua dentro a la primera lluvia"
+  ],
+  "formato_salida": {
+    "lista_material": "Cantidad | Componente | Modelo concreto | Para que sirve | Precio aproximado | Alternativa",
+    "tabla_conexiones": "Componente | Pin del componente | Pin de la placa | Notas (resistencia, adaptador de nivel)",
+    "alimentacion": "Consumo estimado en marcha y reposo, y autonomia calculada con supuestos",
+    "caja_y_montaje": "Tipo de caja, grado de proteccion recomendado y como salen los cables",
+    "checklist_antes_de_enchufar": "Lista numerada de comprobaciones con el multimetro y orden de primer encendido",
+    "pruebas": "Como saber que cada sensor da valores creibles y no ruido"
+  },
+  "criterios_calidad": [
+    "Se puede hacer el pedido completo sin volver a buscar nada",
+    "Ningun paso pone en riesgo a la persona ni a la placa",
+    "Cada conexion tiene su fila en la tabla, sin cables sueltos sin explicar",
+    "Hay una prueba que distingue un sensor bien montado de uno que devuelve basura"
+  ]
+}

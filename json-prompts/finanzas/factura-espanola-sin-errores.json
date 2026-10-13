@@ -1,0 +1,44 @@
+{
+  "tarea": "Preparar el contenido completo de una factura española y avisar de los errores antes de enviarla",
+  "contexto": {
+    "emisor": "[NOMBRE FISCAL O RAZÓN SOCIAL]",
+    "nif_emisor": "[NIF O CIF]",
+    "regimen": "[AUTÓNOMO O SOCIEDAD]"
+  },
+  "entradas": {
+    "cliente": "[NOMBRE FISCAL DEL CLIENTE]",
+    "nif_cliente": "[NIF O CIF DEL CLIENTE]",
+    "ubicacion_cliente": "[ESPAÑA / OTRO PAÍS DE LA UE / FUERA DE LA UE]",
+    "serie_y_numero": "[SERIE Y NÚMERO CORRELATIVO]",
+    "fecha_emision": "[FECHA]",
+    "conceptos": "[LÍNEAS: DESCRIPCIÓN, CANTIDAD, PRECIO UNITARIO SIN IVA]",
+    "tipo_iva": "[21 / 10 / 4 / EXENTA]",
+    "retencion_irpf": "[0 / 7 / 15]",
+    "cobro": "[FORMA DE PAGO, IBAN O ENLACE, Y VENCIMIENTO EN DÍAS]"
+  },
+  "pasos": [
+    "Comprobar los datos obligatorios: número correlativo, fecha, datos fiscales de ambas partes, descripción, base, tipo y cuota de IVA y total",
+    "Calcular la base por línea, sumar, aplicar el IVA y restar la retención de IRPF si procede",
+    "Detectar si el caso pide mención especial: operación intracomunitaria, inversión del sujeto pasivo, exención o factura simplificada",
+    "Redactar cada línea para que se entienda qué se entregó y en qué fechas",
+    "Listar los avisos: datos que faltan, importes que no cuadran y motivos por los que el cliente podría devolver la factura"
+  ],
+  "reglas": [
+    "No inventar NIF, direcciones ni numeración: si falta un dato, marcarlo como PENDIENTE",
+    "La retención de IRPF se calcula sobre la base imponible, nunca sobre el total con IVA",
+    "Si el cliente es empresa de otro país de la UE, recordar que hay que verificar su VIES antes de facturar sin IVA",
+    "Indicar que un asesor fiscal debe validar los casos dudosos"
+  ],
+  "formato_salida": {
+    "tabla_lineas": "Concepto, cantidad, precio unitario y base por línea",
+    "totales": "Base imponible, IVA, retención de IRPF y total a pagar",
+    "textos": "Condiciones de pago y menciones legales listas para copiar",
+    "avisos": "Lista de datos pendientes y errores, ordenados por gravedad"
+  },
+  "criterios_calidad": [
+    "Los importes cuadran al céntimo",
+    "Se entiende qué se ha facturado sin tener que preguntar",
+    "Ningún campo obligatorio queda vacío sin aviso"
+  ],
+  "tono": "Claro, directo y sin jerga fiscal innecesaria"
+}

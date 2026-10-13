@@ -1,0 +1,32 @@
+{
+  "tarea": "Generar el marcado de datos estructurados en JSON-LD para una página concreta, válido y coherente con lo que se ve en pantalla",
+  "contexto": {
+    "tipo_pagina": "[NEGOCIO LOCAL / PRODUCTO / ARTÍCULO / SERVICIO / PÁGINA DE PREGUNTAS]",
+    "url": "[URL DE LA PÁGINA]",
+    "idioma": "es-ES"
+  },
+  "entradas": {
+    "negocio": {"nombre": "[NOMBRE]", "direccion": "[CALLE, CP, CIUDAD, PROVINCIA]", "telefono": "[TELÉFONO]", "horario": "[HORARIO POR DÍAS]", "web": "[URL]", "redes": ["[PERFIL 1]", "[PERFIL 2]"]},
+    "producto_o_servicio": {"nombre": "[NOMBRE]", "descripcion": "[DESCRIPCIÓN CORTA]", "precio": "[PRECIO]", "moneda": "EUR", "disponibilidad": "[EN STOCK / BAJO PEDIDO]", "valoraciones": "[NOTA MEDIA Y NÚMERO DE RESEÑAS REALES O 'ninguna']"},
+    "faq": "[LISTA DE PREGUNTAS Y RESPUESTAS QUE APARECEN EN LA PÁGINA]",
+    "articulo": {"titulo": "[TÍTULO]", "autor": "[NOMBRE DEL AUTOR]", "fecha_publicacion": "[AAAA-MM-DD]", "fecha_actualizacion": "[AAAA-MM-DD]", "imagen": "[URL DE LA IMAGEN]"}
+  },
+  "pasos": [
+    "Elige los tipos de schema adecuados y explica en una línea por qué cada uno",
+    "Genera un único bloque JSON-LD con los tipos enlazados entre sí mediante @id cuando proceda",
+    "Rellena solo con los datos aportados; omite las propiedades sin dato en lugar de inventarlas",
+    "Indica dónde pegar el código y cómo comprobarlo en la prueba de resultados enriquecidos de Google"
+  ],
+  "restricciones": [
+    "Prohibido marcar valoraciones, precios o preguntas que no aparezcan visibles en la página: es motivo de penalización manual",
+    "Nada de reseñas inventadas ni de agregados sin origen real",
+    "El JSON debe ser válido: sin comentarios, sin comas finales y con comillas dobles"
+  ],
+  "formato_salida": {
+    "bloques": ["Tipos elegidos y motivo", "Bloque de código JSON-LD completo dentro de una etiqueta script", "Dónde colocarlo según el gestor (WordPress, Shopify o HTML plano)", "Cómo validarlo paso a paso", "Errores típicos a evitar"]
+  },
+  "criterios_calidad": [
+    "El código pasa el validador de Google sin errores ni avisos críticos",
+    "Todos los datos marcados existen en la página visible"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Generar 12 ganchos distintos para los 3 primeros segundos de un mismo video y elegir los 3 mejores para probar",
+  "entradas": {
+    "tema_del_video": "[DE QUÉ VA EL VÍDEO]",
+    "publico": "[A QUIÉN LE HABLAS]",
+    "problema": "[QUÉ LE DUELE O QUÉ QUIERE CONSEGUIR]",
+    "plataforma": "[TIKTOK / REELS / SHORTS / YOUTUBE]",
+    "gancho_actual": "[EL QUE USAS AHORA, SI TIENES UNO]"
+  },
+  "tipos_de_gancho_obligatorios": [
+    "Pregunta directa al publico objetivo",
+    "Error comun que casi todos cometen",
+    "Resultado o antes y despues visible",
+    "Opinion contraria a lo que se dice siempre",
+    "Dato o numero sorprendente y verificable",
+    "Historia personal en primera persona",
+    "Demostracion en marcha, empezando por la mitad de la accion",
+    "Aviso o coste de no hacerlo"
+  ],
+  "reglas": [
+    "Maximo 12 palabras por gancho y que se pueda decir en 3 segundos",
+    "Nada de 'hola', 'bienvenidos', 'en el video de hoy' ni presentarte",
+    "Cada gancho debe tener sentido tambien leido en silencio como texto en pantalla",
+    "Nada de promesas que el video no cumpla despues"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla de 12 filas mas una seccion de recomendacion",
+    "columnas": ["Nº", "Tipo de gancho", "Frase literal", "Primera imagen que se ve", "Texto en pantalla", "Por qué frena el scroll"],
+    "recomendacion": "Los 3 ganchos con más posibilidades, con el motivo y el orden en que conviene probarlos"
+  },
+  "criterios_calidad": [
+    "Los 12 son de verdad distintos, no la misma frase reformulada",
+    "Ninguno necesita contexto previo para entenderse",
+    "Cada uno se puede grabar con lo que ya tienes a mano"
+  ]
+}

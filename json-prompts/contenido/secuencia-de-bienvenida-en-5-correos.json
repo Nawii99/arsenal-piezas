@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar y redactar una secuencia automática de bienvenida de 5 correos para suscriptores nuevos",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "iman_de_suscripcion": "[QUÉ RECIBIÓ AL APUNTARSE: GUÍA, DESCUENTO, PLANTILLA, CLASE]",
+    "oferta_principal": "[PRODUCTO O SERVICIO QUE QUIERES VENDER Y SU PRECIO]",
+    "objeciones_habituales": "[LAS 3 EXCUSAS QUE MÁS TE DICEN PARA NO COMPRAR]",
+    "prueba_social": "[CASOS, RESEÑAS O NÚMEROS REALES QUE PUEDES CITAR]",
+    "canal_de_respuesta": "[EMAIL, WHATSAPP O FORMULARIO DONDE QUIERES QUE ESCRIBAN]"
+  },
+  "plan_de_la_secuencia": [
+    "Correo 1 (inmediato): entrega lo prometido en el primer tercio del texto, di quién eres en 3 frases y anticipa qué llegará",
+    "Correo 2 (día 2): la historia de origen o el error que cometías antes; sin vender, pide una respuesta con una pregunta concreta",
+    "Correo 3 (día 4): enseña algo útil que se pueda aplicar sin comprarte nada; menciona tu oferta solo al final en una línea",
+    "Correo 4 (día 6): caso real o testimonio con antes y después; rebate la objeción principal sin nombrarla como objeción",
+    "Correo 5 (día 8): oferta clara, qué incluye, para quién NO es, precio y enlace; cierra con qué pasa si no hace nada"
+  ],
+  "para_cada_correo_devuelve": [
+    "Día de envío y condición de salida",
+    "Dos asuntos alternativos (máx 45 caracteres) y un preheader",
+    "Cuerpo entre 180 y 350 palabras",
+    "Llamada a la acción única con el texto exacto del enlace o botón",
+    "Una nota de una línea sobre qué mide el éxito de ese correo"
+  ],
+  "restricciones": [
+    "Tutea, español de España, sin tecnicismos de marketing",
+    "Nada de cuentas atrás falsas ni escasez inventada",
+    "No prometas resultados concretos ni cifras que no te hayan dado",
+    "Cada correo debe entenderse aunque el lector no haya abierto el anterior"
+  ],
+  "formato_salida": "Una tabla resumen con: nº, día, objetivo, asunto elegido y llamada a la acción. Después los 5 correos completos separados por títulos",
+  "criterios_calidad": [
+    "Los correos 1 a 4 aportan valor aunque nadie compre",
+    "La oferta aparece solo una vez de forma clara, no colada en cada correo",
+    "Si falta información del negocio, se pide al final en una lista de 3 preguntas como máximo"
+  ]
+}

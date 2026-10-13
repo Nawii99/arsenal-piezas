@@ -1,0 +1,53 @@
+{
+  "tarea": "Auditar una hoja de calculo ajena y listar sus riesgos antes de fiarme de sus resultados",
+  "contexto": {
+    "origen": "[QUIÉN HIZO LA HOJA Y CUÁNDO]",
+    "para_que_la_uso": "[EJ: DECIDIR PRECIOS, PAGAR COMISIONES, PEDIR UN CRÉDITO]",
+    "nivel_usuario": "sé usar la hoja pero no entiendo fórmulas complejas"
+  },
+  "entradas": {
+    "contenido": "[PEGA LAS PESTAÑAS RELEVANTES O LA EXPORTACIÓN CON FÓRMULAS VISIBLES]",
+    "celdas_clave": "[LAS CELDAS O TOTALES DE LOS QUE DEPENDE MI DECISIÓN]",
+    "version_hoja": "[EXCEL, GOOGLE SHEETS O LIBREOFFICE]"
+  },
+  "pasos": [
+    "Haz un mapa de la hoja: pestañas, que contiene cada una y cual alimenta a cual.",
+    "Localiza las celdas clave y reconstruye su cadena de calculo hacia atras hasta llegar a datos de entrada.",
+    "Marca los numeros escritos a mano dentro de una formula, por ejemplo un 1,21 o un 0,15 metidos a pelo.",
+    "Busca rangos que se han quedado cortos: una suma que abarca hasta la fila 100 cuando hay datos hasta la 140.",
+    "Busca errores visibles: REF, VALOR, DIV/0, N/A y celdas de texto que deberian ser numero.",
+    "Detecta filas o columnas ocultas y filtros aplicados que cambian lo que se ve.",
+    "Detecta duplicidad de fuentes: el mismo dato copiado en dos sitios que ya no coinciden.",
+    "Haz tres pruebas de contraste: recalcula a mano un total, cambia un dato de entrada y comprueba si el resultado se mueve como deberia, y suma por otra via una columna clave.",
+    "Puntua cada hallazgo como CRITICO, IMPORTANTE o MENOR segun si afecta a las celdas clave."
+  ],
+  "que_mirar": [
+    "Redondeos aplicados a mitad de camino que descuadran los totales.",
+    "Fechas guardadas como texto que no se ordenan bien.",
+    "Formatos que muestran dos decimales pero guardan cinco.",
+    "Formulas copiadas sin fijar referencias, que se desplazan al arrastrar."
+  ],
+  "errores_tipicos": [
+    "Fiarse del total de arriba sin comprobar que la suma abarca todas las filas.",
+    "Cambiar un dato sin ver que otra pestaña ya no se actualiza.",
+    "Confundir un filtro con un borrado de datos.",
+    "Corregir una formula rota sin avisar a quien la hizo."
+  ],
+  "restricciones": [
+    "No modifiques la hoja: solo describe que esta mal y donde.",
+    "Cita siempre la pestaña y la referencia de celda de cada hallazgo.",
+    "Si no puedes ver la formula, dilo en vez de suponerla."
+  ],
+  "formato_salida": {
+    "bloque_1_veredicto": "Una frase: me puedo fiar, me puedo fiar con reservas o no me puedo fiar, y por que",
+    "bloque_2_hallazgos": "Tabla: gravedad | pestaña!celda | que pasa | consecuencia en euros o en decision | como arreglarlo paso a paso",
+    "bloque_3_pruebas": "Las tres pruebas de contraste con el resultado esperado y el obtenido",
+    "bloque_4_mejoras": "Maximo 5 mejoras de estructura para que la hoja no vuelva a romperse"
+  },
+  "criterios_calidad": [
+    "Cada hallazgo tiene una referencia de celda concreta, no una descripcion vaga.",
+    "El veredicto es coherente con la gravedad de los hallazgos.",
+    "Las instrucciones de arreglo las puede seguir alguien que no sabe formulas avanzadas.",
+    "No se propone rehacer la hoja entera si basta con arreglar cuatro celdas."
+  ]
+}

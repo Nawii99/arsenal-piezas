@@ -1,0 +1,39 @@
+{
+  "tarea": "Redactar un acuerdo de confidencialidad (NDA) claro y proporcionado, listo para firmar",
+  "rol": "Asesor legal de startups en España que redacta NDAs cortos y realistas",
+  "entradas": {
+    "parte_que_revela": "[TU NOMBRE O EMPRESA Y NIF]",
+    "parte_que_recibe": "[NOMBRE Y NIF DE LA OTRA PARTE]",
+    "tipo": "[UNILATERAL O MUTUO]",
+    "informacion_protegida": "[QUÉ VAS A ENSEÑAR: NÚMEROS, CLIENTES, PROCESOS, CÓDIGO, RECETAS...]",
+    "finalidad_permitida": "[PARA QUÉ PUEDE USARLA: VALORAR UNA INVERSIÓN, HACER UN PRESUPUESTO, COLABORAR...]",
+    "duracion": "[AÑOS DE OBLIGACIÓN, POR EJEMPLO 3 AÑOS DESDE LA FIRMA]",
+    "penalizacion": "[IMPORTE DE LA PENALIZACIÓN POR INCUMPLIMIENTO O DEJARLO EN DAÑOS Y PERJUICIOS]"
+  },
+  "contenido_minimo": [
+    "Definición precisa de información confidencial y de lo que NO lo es",
+    "Excepciones estándar: información ya pública, ya conocida, obtenida de un tercero legítimo o exigida por ley o juzgado",
+    "Obligaciones de la parte receptora: no divulgar, no usar para otro fin, custodiar y limitar el acceso a personas necesarias",
+    "Extensión a empleados, socios y subcontratistas de la parte receptora",
+    "Devolución o destrucción de la información al terminar",
+    "Duración de la obligación y qué pasa si no se llega a firmar el acuerdo principal",
+    "Que el NDA no otorga licencia ni derechos sobre la propiedad intelectual",
+    "Consecuencias del incumplimiento y medidas urgentes",
+    "Ley española y tribunales de [TU CIUDAD]"
+  ],
+  "formato_salida": {
+    "documento": "Contrato de máximo 2 páginas con cláusulas numeradas y espacio de firma para ambas partes",
+    "anexo": "Tabla resumen: qué protejo, durante cuánto, qué pasa si se incumple"
+  },
+  "restricciones": [
+    "Nada de cláusulas desproporcionadas que la otra parte no vaya a firmar",
+    "No incluyas no competencia disfrazada dentro del NDA; si hace falta, dilo aparte",
+    "Marca en [CORCHETES] los datos que falten"
+  ],
+  "criterios_calidad": [
+    "Se puede leer y firmar en una reunión sin abogados",
+    "Las excepciones están bien delimitadas para que el acuerdo sea defendible",
+    "Queda claro desde qué momento empieza a contar la confidencialidad"
+  ],
+  "extra": "Añade un email corto de 4 líneas para enviarlo sin que suene a desconfianza"
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Generar texto alternativo, nombre de archivo y orden de galeria para las imagenes de una ficha de producto",
+  "contexto": {
+    "producto": "[NOMBRE DEL PRODUCTO]",
+    "marca": "[MARCA]",
+    "variante": "[COLOR, TALLA O MODELO]",
+    "idioma": "espanol"
+  },
+  "entradas": {
+    "imagenes": "[LISTA: FOTO 1 QUE SE VE, FOTO 2 QUE SE VE, ETC]",
+    "detalles_que_quieres_destacar": "[COSTURAS, CIERRE, MEDIDAS, ACCESORIOS...]"
+  },
+  "reglas": [
+    "Texto alternativo de 8 a 14 palabras que describa lo que se ve, no lo que quieres vender",
+    "Incluir marca, producto y variante cuando aporten, sin amontonar palabras clave",
+    "No empezar nunca con imagen de o foto de",
+    "Nombre de archivo en minusculas, sin acentos ni enes, separado por guiones y acabado en el numero de foto",
+    "Cada texto alternativo distinto del resto de la galeria"
+  ],
+  "orden_recomendado_de_galeria": [
+    "Producto entero sobre fondo limpio",
+    "Producto en uso o puesto",
+    "Detalle del material o del acabado",
+    "Escala o medidas junto a un objeto conocido",
+    "Contenido de la caja"
+  ],
+  "formato_salida": {
+    "tipo": "tabla",
+    "columnas": ["posicion", "que_muestra", "nombre_de_archivo", "texto_alternativo", "pie_de_foto_opcional"],
+    "extra": "lista de fotos que faltan para completar la galeria recomendada"
+  },
+  "criterios_calidad": [
+    "Una persona que no ve la imagen entiende el producto solo con el texto alternativo",
+    "Ningun nombre de archivo lleva espacios, acentos ni mayusculas",
+    "El orden lleva de lo general al detalle"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Auditar la calidad de un fichero de datos y entregar un informe de problemas priorizado antes de tocar nada",
+  "contexto": {
+    "negocio": "[QUÉ HACE TU NEGOCIO EN UNA FRASE]",
+    "fichero": "[DE DÓNDE SALE: EXPORT DE SHOPIFY, CRM, TPV, EXCEL RELLENADO A MANO...]",
+    "para_que_sirven_los_datos": "[DECISIÓN O INFORME QUE QUIERES SACAR CON ELLOS]",
+    "volumen_aproximado": "[NÚMERO DE FILAS Y DE COLUMNAS]"
+  },
+  "entradas": {
+    "muestra": "[PEGA AQUÍ LAS PRIMERAS 30 FILAS, INCLUYENDO LA FILA DE CABECERA]",
+    "columnas_criticas": "[COLUMNAS QUE NO PUEDEN FALLAR: IMPORTE, FECHA, EMAIL, REFERENCIA...]"
+  },
+  "pasos": [
+    "Deducir el tipo real de cada columna y compararlo con el tipo que debería tener",
+    "Contar por columna: celdas vacías, valores repetidos, valores únicos y valores raros",
+    "Buscar los fallos típicos de export: números guardados como texto, dos formatos de fecha mezclados, decimales con coma y con punto, espacios delante o detrás, mayúsculas inconsistentes, acentos rotos por codificación, filas de totales metidas entre los datos y cabeceras repetidas a mitad del fichero",
+    "Detectar duplicados de la clave de negocio y explicar con qué criterio los has detectado",
+    "Clasificar cada problema en: bloquea el análisis, lo distorsiona o es solo estético"
+  ],
+  "restricciones": [
+    "No inventes valores ni rellenes huecos: en este paso solo se diagnostica",
+    "Si la muestra no basta para afirmar algo, márcalo como sospecha a verificar",
+    "Nada de tecnicismos sin explicar: una frase llana por problema"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "Semáforo general: apto, apto con reservas o no usable, con el motivo",
+      "Tabla por columna: columna | tipo detectado | tipo esperado | vacíos | problema principal",
+      "Lista de problemas ordenada por gravedad, cada uno con un ejemplo real de la muestra y cómo se arregla",
+      "Qué pedir a quien genera el fichero para que no vuelva a pasar"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada problema va acompañado de al menos un ejemplo textual sacado de la muestra",
+    "Ningún problema se describe sin decir qué decisión estropea",
+    "El informe cabe en una página"
+  ]
+}

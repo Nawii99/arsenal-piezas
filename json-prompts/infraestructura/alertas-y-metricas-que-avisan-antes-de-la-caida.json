@@ -1,0 +1,38 @@
+{
+  "tarea": "Definir las métricas, umbrales y alertas de rendimiento de [NOMBRE DE TU SERVICIO]",
+  "contexto": {
+    "servicio": "[QUÉ HACE Y QUIÉN LO USA]",
+    "horario_critico": "[FRANJA EN LA QUE NO PUEDE FALLAR]",
+    "herramientas": "[LO QUE TIENES: GRAFANA, DATADOG, UPTIME ROBOT, LOS PANELES DE TU HOSTING O NADA]",
+    "quien_recibe": "[PERSONA O EQUIPO Y CANAL: MÓVIL, CORREO, SLACK]"
+  },
+  "entradas": {
+    "rutas_criticas": ["[RUTA O FUNCIÓN 1]", "[RUTA O FUNCIÓN 2]"],
+    "objetivo_de_servicio": "[TIEMPO DE RESPUESTA Y DISPONIBILIDAD QUE QUIERES CUMPLIR]",
+    "incidentes_pasados": "[QUÉ TE HA FALLADO ANTES]"
+  },
+  "metodo": [
+    "Empieza por lo que nota el cliente: tiempo de respuesta en percentil 95, porcentaje de errores, y peticiones por minuto; después las métricas del servidor",
+    "Añade una métrica de negocio por servicio, por ejemplo pedidos por hora, porque a veces cae sin que nada dé error",
+    "Convierte el objetivo de servicio en umbrales de alerta con duración: avisa solo si se mantiene X minutos",
+    "Separa alertas que despiertan a alguien de alertas informativas que solo se revisan por la mañana",
+    "Añade señales tempranas que preceden a la caída: cola creciendo, conexiones de base de datos al límite, disco llenándose, memoria subiendo sin bajar y aciertos de caché desplomándose",
+    "Evita el ruido: sin alertas duplicadas, sin alertar de cosas sobre las que nadie puede actuar"
+  ],
+  "restricciones": [
+    "Máximo [NÚMERO] alertas que despierten a alguien",
+    "Toda alerta debe tener una acción concreta escrita",
+    "Solo herramientas disponibles o gratuitas"
+  ],
+  "formato_salida": {
+    "tipo": "catálogo de alertas",
+    "tabla": "columnas: alerta | métrica | umbral | duración | gravedad | canal | primera acción",
+    "extras": ["Panel recomendado con 6 gráficas y por qué esas", "Revisión semanal de 15 minutos: qué mirar"]
+  },
+  "criterios_calidad": [
+    "Ninguna alerta sin primera acción escrita en una frase",
+    "Los umbrales salen del objetivo de servicio, no de la intuición",
+    "Incluye cómo silenciar durante despliegues y mantenimientos"
+  ],
+  "tono": "práctico, pensado para un equipo pequeño sin guardias 24 horas"
+}

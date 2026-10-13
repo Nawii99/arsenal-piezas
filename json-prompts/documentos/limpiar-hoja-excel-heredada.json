@@ -1,0 +1,48 @@
+{
+  "tarea": "Diagnosticar y limpiar una hoja de cálculo desordenada dejándola fiable para filtrar, sumar y hacer tablas dinámicas.",
+  "contexto": {
+    "para_que_uso_la_hoja": "[FACTURACIÓN / CLIENTES / STOCK / HORAS / GASTOS]",
+    "quien_la_rellena": "[YO SOLO / VARIAS PERSONAS / SE EXPORTA DE OTRA HERRAMIENTA]",
+    "herramienta": "[EXCEL / GOOGLE SHEETS / LIBREOFFICE]",
+    "tamano": "[FILAS Y COLUMNAS APROXIMADAS]"
+  },
+  "entradas": {
+    "muestra": "[PEGA LA CABECERA Y 15 FILAS REALES, INCLUYENDO ALGUNA QUE SEPAS QUE ESTÁ MAL]",
+    "clave_de_negocio": "[QUÉ CAMPO IDENTIFICA A CADA REGISTRO: NIF, EMAIL, REFERENCIA...]",
+    "que_necesito_calcular": "[TOTALES POR MES, POR CLIENTE, POR PRODUCTO...]"
+  },
+  "pasos": [
+    "Clasifica cada columna por tipo real observado: texto, número, fecha, sí/no, o mezcla, e indica el porcentaje de celdas que no encajan.",
+    "Detecta duplicados usando la clave de negocio y también coincidencias parecidas por nombre o email con distinta escritura.",
+    "Detecta fechas guardadas como texto o como número y propone la conversión concreta.",
+    "Detecta importes con símbolo, con punto de miles o con espacio, y propone cómo dejarlos como número puro.",
+    "Detecta columnas que mezclan dos informaciones y propone partirlas en dos.",
+    "Detecta filas de subtotal, notas o cabeceras repetidas metidas en medio de los datos.",
+    "Propone la estructura final: una fila por registro, una columna por dato, sin celdas combinadas ni filas vacías.",
+    "Da las fórmulas o los pasos exactos de menú para cada arreglo, en la herramienta indicada."
+  ],
+  "restricciones": [
+    "Nunca borres filas sin dejar una copia marcada como apartada y el motivo.",
+    "No inventes valores para huecos: márcalos como pendientes.",
+    "Trabaja siempre sobre una copia y dilo en el primer paso."
+  ],
+  "errores_tipicos": [
+    "Celdas combinadas que impiden ordenar y filtrar.",
+    "Formato de fecha americano mezclado con el español: 03/04 puede ser marzo o abril.",
+    "Ceros a la izquierda perdidos en códigos postales y referencias.",
+    "Espacios invisibles que hacen que dos clientes iguales cuenten como dos.",
+    "Comparar textos con mayúsculas y minúsculas distintas y creer que son distintos."
+  ],
+  "formato_salida": {
+    "bloque_1": "Informe por columna: nombre, tipo real, problemas encontrados, arreglo propuesto.",
+    "bloque_2": "Lista de duplicados y de filas sospechosas con el motivo.",
+    "bloque_3": "Fórmulas o pasos de menú, numerados y listos para copiar.",
+    "bloque_4": "Cabecera y estructura final recomendada.",
+    "bloque_5": "Tres comprobaciones para saber si la limpieza ha salido bien."
+  },
+  "criterios_calidad": [
+    "Cada arreglo viene con su instrucción exacta, no con un consejo genérico.",
+    "El total de filas antes y después cuadra y las diferencias están explicadas.",
+    "Después de aplicarlo puedo ordenar por fecha y sumar importes sin errores."
+  ]
+}

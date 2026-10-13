@@ -1,0 +1,34 @@
+{
+  "tarea": "Auditar un cartel o flyer ya diseñado y devolver los fallos concretos ordenados por gravedad",
+  "entradas": {
+    "pieza": "[ADJUNTA LA IMAGEN DEL CARTEL O DESCRÍBELO ELEMENTO A ELEMENTO]",
+    "objetivo": "[QUÉ QUIERES QUE HAGA QUIEN LO VE]",
+    "donde_se_coloca": "[ESCAPARATE, FAROLA, INTERIOR, TABLÓN, REDES]",
+    "distancia_lectura": "[EN METROS]",
+    "tirada_y_soporte": "[CUÁNTAS UNIDADES Y EN QUÉ PAPEL O MATERIAL]"
+  },
+  "puntos_a_revisar": [
+    "Prueba del entrecerrado: qué se sigue leyendo si desenfocas la vista",
+    "Jerarquía: si hay un único elemento dominante o compiten dos",
+    "Contraste real entre texto y fondo, sobre todo texto sobre foto",
+    "Tamaño de letra frente a la distancia de lectura indicada",
+    "Datos críticos completos: fecha, hora, lugar, precio, contacto",
+    "Llamada a la acción única, visible y fácil de cumplir",
+    "Márgenes, aire y elementos pegados al borde",
+    "Exceso de tipografías, colores o efectos",
+    "Erratas, mayúsculas mal usadas y separaciones de línea que cortan sentido",
+    "Cómo se ve a tamaño miniatura y en blanco y negro"
+  ],
+  "formato_salida": {
+    "veredicto": "Una frase: listo para imprimir, cambios menores o rehacer",
+    "tabla_hallazgos": "Columnas: gravedad (alta, media, baja), qué falla, por qué importa y arreglo concreto",
+    "top_3": "Los 3 cambios que más mejoran la pieza con el menor esfuerzo",
+    "reescritura": "Propuesta de titular y datos reescritos si el mensaje falla"
+  },
+  "tono": "Directo y concreto, sin halagos de relleno. Cada crítica va con su solución",
+  "criterios_calidad": [
+    "Ningún hallazgo genérico: siempre señala el elemento exacto",
+    "Los arreglos se pueden aplicar sin rehacer el diseño entero",
+    "Se indica claramente si algún fallo impide imprimir"
+  ]
+}

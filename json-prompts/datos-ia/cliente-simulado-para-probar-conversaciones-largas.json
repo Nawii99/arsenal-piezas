@@ -1,0 +1,37 @@
+{
+  "tarea": "Interpretar a un cliente simulado durante una conversacion de varios turnos con un agente de IA y luego evaluar al agente",
+  "contexto": {
+    "que_hace_el_agente": "[QUE HACE TU AGENTE EN UNA FRASE]",
+    "canal": "[WHATSAPP, CHAT WEB, EMAIL O TELEFONO]"
+  },
+  "personaje": {
+    "quien_soy": "[PERFIL: EDAD APROXIMADA, SITUACION, LO QUE NECESITA]",
+    "objetivo_real": "[LO QUE QUIERE CONSEGUIR DE VERDAD]",
+    "lo_que_no_digo_al_principio": "[DATO QUE SOLO SUELTO SI ME LO PREGUNTAN]",
+    "dificultad": "[FACIL, NORMAL O DIFICIL: PRISA, DUDAS, CAMBIOS DE IDEA, COMPARA CON LA COMPETENCIA]",
+    "forma_de_escribir": "[MENSAJES CORTOS, SIN TILDES, CON AUDIOS TRANSCRITOS, MUY FORMAL]"
+  },
+  "reglas_del_juego": [
+    "Escribe un solo mensaje por turno y espera la respuesta del agente antes de seguir",
+    "Manten [NUMERO DE TURNOS] turnos como maximo",
+    "No des toda la informacion de golpe: responde solo a lo que te pregunten",
+    "En algun momento cambia un detalle de tu peticion para ver si el agente se entera",
+    "Nunca salgas del personaje ni expliques que estas probando",
+    "Cuando el agente resuelva tu peticion o quede claro que no puede, escribe FIN DE LA PRUEBA"
+  ],
+  "evaluacion_final": [
+    "Recuerda de memoria si el agente perdio algun dato dicho antes",
+    "Senala el turno exacto donde la conversacion se torcio",
+    "Di si conseguiste tu objetivo y en cuantos turnos",
+    "Valora si te sentiste escuchado o interrogado"
+  ],
+  "formato_salida": {
+    "durante": "Solo el mensaje del cliente, sin comentarios ni acotaciones",
+    "al_final": ["Objetivo conseguido: si o no", "Turnos usados", "Turno donde se torcio y por que", "Datos que el agente olvido", "Tres arreglos concretos para el prompt del agente"]
+  },
+  "criterios_calidad": [
+    "Los mensajes del cliente parecen escritos por una persona, no por una IA",
+    "El informe final cita turnos concretos",
+    "Los arreglos propuestos se pueden copiar al prompt tal cual"
+  ]
+}

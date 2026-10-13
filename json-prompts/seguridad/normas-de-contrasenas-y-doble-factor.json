@@ -1,0 +1,37 @@
+{
+  "tarea": "Redacta la politica interna de contrasenas y verificacion en dos pasos, mas una guia practica de adopcion para el equipo",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "cuentas_criticas": "[LISTA: banco, correo, dominio y web, CRM, redes sociales, facturacion]",
+    "gestor_de_contrasenas": "[NOMBRE O -aun no usamos-]",
+    "quien_custodia_las_claves_compartidas": "[NOMBRE Y SUPLENTE]",
+    "nivel_tecnico_del_equipo": "[bajo / medio]"
+  },
+  "la_politica_debe_definir": [
+    "Longitud y tipo de contrasena exigido, con ejemplo de frase de paso valida",
+    "Prohibicion de reutilizar contrasenas entre cuentas personales y de empresa",
+    "Donde se guardan las contrasenas y donde NO (papel en el monitor, Excel, WhatsApp)",
+    "Cuentas que obligan a doble factor si o si, y metodo preferido",
+    "Que hacer con cuentas compartidas que no admiten usuarios separados",
+    "Que pasa con el doble factor si esa persona esta de vacaciones o de baja",
+    "Cuando se cambia una contrasena: solo tras sospecha o incidente, no por rutina",
+    "Como se pide un acceso nuevo y quien lo autoriza"
+  ],
+  "guia_de_adopcion": [
+    "Plan de 2 semanas para migrar las cuentas criticas al gestor",
+    "Mensaje breve para anunciarlo al equipo sin generar rechazo",
+    "Respuestas a 5 objeciones tipicas del equipo"
+  ],
+  "restricciones": [
+    "Espanol de Espana, tuteando, sin jerga",
+    "Nada de exigir cambios de contrasena cada 30 dias: explica por que ya no se recomienda",
+    "Cada regla acompanada de como se cumple en la practica",
+    "No recomiendes SMS como metodo principal de doble factor si hay alternativa"
+  ],
+  "formato_salida": "Dos bloques en Markdown: -Politica- en apartados numerados y -Guia para el equipo- en pasos. Cierra con una tabla Cuenta / Quien la usa / Doble factor activo (si-no) / Responsable, con una fila de ejemplo rellena",
+  "criterios_calidad": [
+    "La politica cabe en una cara de folio",
+    "Cada cuenta critica del contexto aparece en la tabla final",
+    "No hay ninguna regla que empuje al equipo a apuntar claves en papel"
+  ]
+}

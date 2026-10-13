@@ -1,0 +1,57 @@
+{
+  "tarea": "Reorganizar la agenda semanal de un centro de salud o bienestar por bloques de servicio, segun margen por hora y demanda real de cada franja, sin ampliar el horario de apertura",
+  "contexto": {
+    "servicios": "[LISTA DE SERVICIOS CON DURACION, PRECIO Y MATERIAL QUE CONSUME CADA UNO]",
+    "profesionales": "[QUIEN PUEDE HACER CADA SERVICIO Y SUS HORAS DISPONIBLES]",
+    "salas": "[NUMERO DE SALAS Y SI ALGUN SERVICIO NECESITA UNA CONCRETA]",
+    "horario": "[HORARIO DE APERTURA POR DIA]",
+    "demanda_por_franja": "[EN QUE HORAS TE PIDEN CITA Y EN CUALES TIENES HUECOS]",
+    "tiempos_muertos": "[MINUTOS DE LIMPIEZA, PREPARACION O DESCANSO ENTRE SESIONES]"
+  },
+  "entradas": {
+    "agenda_actual": "[DESCRIBE COMO ESTA REPARTIDA HOY UNA SEMANA TIPO]",
+    "restricciones_personales": "[DIAS U HORAS QUE NO QUIERES TRABAJAR]"
+  },
+  "pasos": [
+    "1. Calcula el margen por hora de cada servicio: precio menos coste directo, dividido entre el tiempo total que ocupa incluyendo preparacion y limpieza",
+    "2. Ordena los servicios por margen por hora y marca cuales son ademas puerta de entrada de clientes nuevos aunque den menos margen",
+    "3. Cruza margen y demanda por franja: la franja de mas demanda se reserva al servicio de mayor margen que la gente pide en ese momento",
+    "4. Agrupa por bloques los servicios que comparten preparacion o material, para reducir tiempos muertos y cambios de sala",
+    "5. Reserva franjas fijas para primeras visitas, que son las que traen tratamientos nuevos, en horas de buena disponibilidad del profesional",
+    "6. Coloca las tareas sin paciente en las franjas de baja demanda: informes, llamadas, pedidos, contenidos y formacion",
+    "7. Deja al menos un hueco de reserva al dia para urgencias de agenda y reajustes",
+    "8. Revisa que la propuesta respeta descansos, comidas y las restricciones personales indicadas",
+    "9. Calcula el resultado esperado: margen semanal antes y despues del cambio, con los mismos precios y las mismas horas",
+    "10. Define como se prueba: cuatro semanas, que se mide y con que criterio se vuelve atras"
+  ],
+  "restricciones": [
+    "No se amplia el horario de apertura ni se suben precios en esta propuesta",
+    "Ningun cambio puede reducir el tiempo clinico necesario de una sesion ni saltarse la limpieza entre pacientes",
+    "Respetar descansos reales del profesional; una agenda sin huecos no es viable",
+    "Si un servicio necesita sala o equipo concreto, no se programan dos a la vez",
+    "Los calculos se hacen solo con los datos aportados, sin inventar precios ni demanda"
+  ],
+  "errores_tipicos": [
+    "Calcular el margen sin contar los minutos de preparacion y limpieza",
+    "Llenar las mejores horas con el servicio mas barato porque es el que mas se pide",
+    "Eliminar el servicio de menos margen sin ver que es el que trae clientes nuevos",
+    "Programar la agenda al 100 por cien y no poder absorber ni un imprevisto",
+    "Cambiar la agenda entera de golpe y no saber que ha funcionado"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de servicios: duracion total, precio, coste directo, margen por hora, papel de captacion",
+    "bloque_2": "Mapa de demanda por franja y dia",
+    "bloque_3": "Propuesta de semana tipo en cuadricula por dia y franja, con el servicio asignado",
+    "bloque_4": "Comparativa de margen semanal antes y despues, con los calculos a la vista",
+    "bloque_5": "Lista de cambios concretos a aplicar, ordenados por facilidad",
+    "bloque_6": "Plan de prueba de cuatro semanas con la metrica de decision",
+    "idioma": "Espanol de Espana"
+  },
+  "criterios_calidad": [
+    "El margen por hora se calcula incluyendo los tiempos muertos declarados",
+    "La semana propuesta cabe en el horario actual y respeta los descansos",
+    "Se conserva espacio para primeras visitas y para imprevistos",
+    "La comparativa antes y despues usa solo datos del usuario",
+    "Hay un criterio escrito para saber en cuatro semanas si el cambio ha valido la pena"
+  ]
+}

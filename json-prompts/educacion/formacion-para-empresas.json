@@ -1,0 +1,57 @@
+{
+  "tarea": "Preparar la detección de necesidades y la propuesta de formación in-company para [EMPRESA] sobre [TEMA], con objetivos medibles y condiciones claras.",
+  "contexto": {
+    "empresa": "[NOMBRE Y SECTOR]",
+    "quien_pide_la_formacion": "[CARGO: RRHH, JEFE DE EQUIPO, GERENTE]",
+    "personas_a_formar": "[NÚMERO Y PUESTOS]",
+    "formato_posible": "[PRESENCIAL EN SUS OFICINAS / ONLINE EN DIRECTO / MIXTO]",
+    "horas_disponibles": "[TOTAL Y CÓMO SE PUEDEN REPARTIR]",
+    "bonificacion": "[SI QUIEREN BONIFICARLA POR FUNDAE O NO LO SABEN]"
+  },
+  "entradas": {
+    "lo_que_han_pedido_literalmente": "[PEGA EL EMAIL O LO QUE TE DIJERON]",
+    "problema_de_negocio_declarado": "[QUÉ LES ESTÁ PASANDO]",
+    "tu_experiencia_relevante": "[CASOS, AÑOS, RESULTADOS PROPIOS]",
+    "tu_tarifa_por_hora_o_por_jornada": "[IMPORTE]"
+  },
+  "procedimiento": [
+    "1. Separa lo que piden de lo que necesitan: escribe el problema de negocio en una frase con su consecuencia medible.",
+    "2. Redacta 8 preguntas de detección de necesidades para la reunión previa: quién decide, qué han probado ya, qué hacen mal hoy, cómo sabrán que ha funcionado, qué pasa si no se hace nada.",
+    "3. Traduce el problema a entre 3 y 5 objetivos de desempeño: qué hará distinto el equipo el lunes siguiente, con qué indicador.",
+    "4. Diseña el programa por sesiones, con el reparto teoría-práctica y con casos tomados de la propia empresa, no genéricos.",
+    "5. Define qué necesitas de ellos: sala, ordenadores, accesos, permisos, un caso real, un responsable interno.",
+    "6. Define la medición: prueba antes y después, entregable por participante y una revisión a los 30 días.",
+    "7. Prepara el presupuesto por partidas: preparación, impartición, materiales, desplazamiento, seguimiento posterior. Precio cerrado por grupo, no por asistente.",
+    "8. Escribe las condiciones: número máximo de asistentes, política de cancelación, quién graba y quién puede reutilizar el material, forma de pago.",
+    "9. Añade el apartado de bonificación FUNDAE indicando qué documentación hace falta y quién la gestiona, sin prometer que se aprueba.",
+    "10. Cierra con dos opciones de alcance: una mínima y una completa, para que la conversación sea cuál y no si."
+  ],
+  "restricciones": [
+    "Nada de prometer resultados de negocio que dependen de ellos.",
+    "El precio siempre por grupo cerrado y con lo que incluye y lo que no.",
+    "La propuesta cabe en dos páginas más un anexo de programa.",
+    "Español de España, trato de tú o de usted según indique [TRATAMIENTO]."
+  ],
+  "errores_a_evitar": [
+    "Aceptar el tema tal cual lo piden sin preguntar qué problema hay detrás.",
+    "Cobrar por asistente en un grupo cerrado: te penaliza si vienen menos.",
+    "Dejar el material y los derechos de grabación sin escribir.",
+    "Prometer bonificación FUNDAE como si fuera automática.",
+    "Programar 8 horas seguidas de teoría: el equipo se descuelga a la tercera hora."
+  ],
+  "formato_salida": {
+    "bloque_1": "Problema de negocio en una frase y objetivos de desempeño con su indicador.",
+    "bloque_2": "Guion de la reunión de detección con las 8 preguntas.",
+    "bloque_3": "Programa por sesiones en tabla: sesión, duración, contenidos, práctica, entregable.",
+    "bloque_4": "Requisitos que aporta la empresa.",
+    "bloque_5": "Plan de medición antes, durante y a los 30 días.",
+    "bloque_6": "Presupuesto por partidas con las dos opciones de alcance y las condiciones.",
+    "bloque_7": "Email de envío de la propuesta, corto, con la siguiente acción y una fecha."
+  },
+  "criterios_calidad": [
+    "Cada objetivo se puede comprobar sin entrar en la cabeza de nadie.",
+    "Al menos un caso del programa es de la empresa cliente.",
+    "El presupuesto deja claro qué no incluye.",
+    "La propuesta se entiende leyéndola sin ti delante."
+  ]
+}

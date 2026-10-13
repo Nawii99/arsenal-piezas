@@ -1,0 +1,46 @@
+{
+  "tarea": "Escribir el guion segundo a segundo de un vídeo de vista previa de app para la ficha de la tienda, grabable con la grabación de pantalla del propio móvil",
+  "contexto": {
+    "app": "[NOMBRE]",
+    "promesa": "[LO QUE CONSIGUE EL USUARIO, UNA FRASE]",
+    "tienda": "[APP STORE / GOOGLE PLAY / AMBAS]",
+    "duracion_objetivo": "[15 A 30 SEGUNDOS]",
+    "pantallas_disponibles": "[LISTA DE PANTALLAS QUE YA FUNCIONAN Y SE PUEDEN GRABAR]",
+    "orientacion": "[VERTICAL / HORIZONTAL]"
+  },
+  "reglas_del_formato": [
+    "Se reproduce solo y muchas veces sin sonido: todo lo importante va en rótulos",
+    "En App Store el vídeo debe ser captura real de la app, sin manos ni cámara externa",
+    "Los 3 primeros segundos deciden si lo ven: se empieza por el resultado, no por el logotipo",
+    "Un rótulo por plano, máximo 5 palabras, en el tercio superior para que no lo tape la interfaz"
+  ],
+  "metodo": [
+    "1. Elegir las 4 o 5 acciones que demuestran la promesa y ordenarlas como un recorrido real",
+    "2. Repartir los segundos: 3 de gancho con el resultado, 15 a 20 de recorrido, 4 de cierre con la acción",
+    "3. Escribir para cada plano: qué se toca, qué se ve, rótulo y duración exacta",
+    "4. Preparar los datos de la app antes de grabar para que no salgan pantallas vacías ni nombres de prueba",
+    "5. Grabar con la grabación de pantalla del móvil, en modo avión y con la batería llena para que la barra superior quede limpia",
+    "6. Cortar tiempos muertos: nunca se muestra una carga ni una espera",
+    "7. Revisar en el móvil, sin sonido y a tamaño real de ficha"
+  ],
+  "errores_a_evitar": [
+    "Empezar con el logotipo animado y gastar los segundos que importan",
+    "Locución que solo se entiende con sonido",
+    "Mostrar la pantalla de registro o el formulario de pago",
+    "Grabar con notificaciones activadas o con datos personales visibles",
+    "Enseñar seis funciones a toda prisa en vez de un recorrido creíble"
+  ],
+  "formato_salida": {
+    "tabla_planos": "Una fila por plano con: segundo de inicio y fin, acción en pantalla, rótulo exacto, motivo de que esté ahí",
+    "lista_de_preparacion": "Qué dejar cargado en la app antes de grabar y ajustes del móvil",
+    "instrucciones_de_grabacion": "Pasos exactos para grabar la pantalla en iOS y en Android",
+    "guion_alternativo": "Una segunda versión de 15 segundos para redes sociales",
+    "comprobacion_final": "Lista de 8 puntos a revisar antes de subirlo"
+  },
+  "criterios_calidad": [
+    "Se entiende de qué va la app en los 3 primeros segundos sin sonido",
+    "Todo lo que aparece es la app real funcionando",
+    "No hay ni una pantalla de carga ni un texto de relleno",
+    "Los rótulos se leen en un móvil pequeño sin acercarse"
+  ]
+}

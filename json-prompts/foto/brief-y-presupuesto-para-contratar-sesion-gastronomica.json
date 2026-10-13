@@ -1,0 +1,35 @@
+{
+  "tarea": "Redactar el brief y la peticion de presupuesto para contratar una sesion de fotografia gastronomica",
+  "contexto": {
+    "negocio": "[NOMBRE, TIPO DE LOCAL Y CIUDAD]",
+    "alcance": "[NUMERO DE PLATOS Y NUMERO DE FOTOS FINALES POR PLATO]",
+    "extras": "[FOTOS DE LOCAL, EQUIPO O VIDEO VERTICAL SI SE NECESITA]",
+    "fecha": "[FECHA O SEMANA PREFERIDA Y HORARIO DISPONIBLE]",
+    "presupuesto": "[PRESUPUESTO MAXIMO EN EUROS]",
+    "usos_previstos": "[CARTA, WEB, REDES, PUBLICIDAD DE PAGO, DELIVERY, CARTELERIA]"
+  },
+  "debe_incluir": [
+    "Estilo de referencia descrito con palabras y con 3 ejemplos de cuentas o webs parecidas",
+    "Quien pone el atrezzo, la vajilla y los fondos, y quien paga los ingredientes",
+    "Si hay estilista de comida o lo hace la cocina del local",
+    "Plazo de entrega, numero de fotos retocadas y formatos de entrega",
+    "Derechos de uso por escrito: canales, territorio, duracion y si incluye publicidad de pago",
+    "Politica de revisiones y que pasa si hay que repetir alguna toma",
+    "Forma de pago, senal y factura"
+  ],
+  "formato_salida": {
+    "documento_1": "Brief de una pagina para enviar a los fotografos",
+    "documento_2": "Email corto de peticion de presupuesto, listo para enviar",
+    "documento_3": "Tabla comparativa vacia para puntuar las ofertas que lleguen"
+  },
+  "preguntas_para_el_fotografo": [
+    "Trabajas con estilista o emplatamos nosotros",
+    "Cuantas fotos finales entregas por jornada",
+    "Los derechos para anuncios de pago van incluidos o se pagan aparte"
+  ],
+  "criterios_calidad": [
+    "Dos fotografos distintos pueden presupuestar exactamente lo mismo",
+    "No queda ningun uso previsto sin cubrir por los derechos",
+    "El documento cabe en una pagina"
+  ]
+}

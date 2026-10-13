@@ -1,0 +1,41 @@
+{
+  "tarea": "Detectar y corregir las marcas típicas de texto generado por IA en un borrador, dejándolo con ritmo y concreción humanos",
+  "entradas": {
+    "texto": "[PEGA AQUÍ EL TEXTO GENERADO CON IA]",
+    "canal": "[DÓNDE SE PUBLICA]",
+    "muestra_humana": "[PEGA 100 PALABRAS ESCRITAS POR TI A MANO]"
+  },
+  "senales_a_corregir": [
+    "Frases de apertura vacías tipo en el mundo actual o en la era digital",
+    "Tríadas constantes: tres adjetivos o tres elementos en cada enumeración",
+    "Conectores repetidos: además, asimismo, en definitiva, en resumen",
+    "Párrafos todos de la misma longitud y frases todas de la misma extensión",
+    "Afirmaciones generales sin ejemplo, cifra ni nombre propio",
+    "Cierres que resumen lo ya dicho sin aportar nada",
+    "Metáforas gastadas y superlativos sin apoyo",
+    "Guiones largos y listas donde bastaría una frase"
+  ],
+  "proceso": [
+    "1. Marcar en el texto cada señal detectada indicando cuál es",
+    "2. Reescribir alternando frases largas y cortas y variando la longitud de los párrafos",
+    "3. Sustituir cada generalidad por un ejemplo concreto, y si no hay, escribir [PON AQUÍ TU EJEMPLO]",
+    "4. Eliminar la introducción y el cierre si no aportan información nueva",
+    "5. Ajustar el resultado al estilo de la muestra humana"
+  ],
+  "restricciones": [
+    "No inventar anécdotas, cifras ni experiencias personales",
+    "No meter erratas ni coloquialismos falsos para parecer humano",
+    "Mantener toda la información útil del original",
+    "Español de España"
+  ],
+  "formato_salida": {
+    "diagnostico": "Lista de señales encontradas con la frase concreta de ejemplo",
+    "texto_corregido": "Versión final",
+    "huecos": "Puntos donde hace falta un ejemplo o dato real tuyo"
+  },
+  "criterios_calidad": [
+    "Ninguna de las señales de la lista sobrevive en el texto final",
+    "La longitud de frases y párrafos varía de forma visible",
+    "Cada afirmación importante va acompañada de algo concreto"
+  ]
+}

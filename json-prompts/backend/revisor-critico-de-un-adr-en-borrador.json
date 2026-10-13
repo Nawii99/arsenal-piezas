@@ -1,0 +1,44 @@
+{
+  "tarea": "Revisar críticamente un ADR en borrador y devolver hallazgos accionables antes de su aprobación",
+  "rol": "Arquitecto sénior externo que no tiene nada que ganar con la decisión",
+  "entradas": {
+    "adr_borrador": "[PEGA AQUÍ EL TEXTO COMPLETO DEL ADR]",
+    "restricciones_reales": "[PRESUPUESTO, PLAZO, PERSONAS Y NORMATIVA QUE APLICAN DE VERDAD]",
+    "quien_lo_escribe": "[ROL DE QUIEN LO PROPONE, PARA DETECTAR SESGOS DE INTERÉS]"
+  },
+  "revisiones_obligatorias": [
+    "Contexto: ¿hay hechos y números, o solo adjetivos?",
+    "Opciones: ¿se ha considerado no hacer nada y la opción más aburrida y barata?",
+    "Opciones de paja: ¿hay alternativas descritas de forma injusta para que gane la favorita?",
+    "Justificación: ¿cada motivo enlaza con una restricción real o son preferencias personales?",
+    "Consecuencias negativas: ¿están, y son proporcionadas a las positivas?",
+    "Coste de operación: ¿quién la mantiene, la monitoriza y la actualiza?",
+    "Reversibilidad: ¿es una puerta de ida y vuelta o de ida sin retorno? ¿está dicho?",
+    "Alcance: ¿hay varias decisiones metidas en un mismo ADR?",
+    "Datos: ¿hay cifras sin fuente presentadas como verdad?",
+    "Encaje: ¿contradice algún ADR anterior sin decirlo?"
+  ],
+  "pasos": [
+    "1. Repasa el borrador contra cada punto de revisiones_obligatorias",
+    "2. Clasifica cada hallazgo como BLOQUEANTE, IMPORTANTE o MENOR",
+    "3. Para cada hallazgo escribe la frase exacta del ADR que falla y una reescritura propuesta",
+    "4. Formula 5 preguntas incómodas que deberían responderse en la reunión de aprobación",
+    "5. Emite un veredicto: APROBAR, APROBAR CON CAMBIOS o DEVOLVER"
+  ],
+  "restricciones": [
+    "No reescribas el ADR entero: señala y propone cambios puntuales",
+    "Nada de elogios de relleno; si algo está bien, una línea y a lo siguiente",
+    "Si el ADR no da información suficiente para juzgar un punto, dilo en vez de suponer"
+  ],
+  "formato_salida": {
+    "bloque_1": "Veredicto en una línea con su motivo principal",
+    "bloque_2": "Tabla de hallazgos: gravedad, sección afectada, problema, cambio propuesto",
+    "bloque_3": "Las 5 preguntas incómodas",
+    "bloque_4": "Lo que sí está bien resuelto, máximo 3 puntos"
+  },
+  "criterios_calidad": [
+    "Todo hallazgo bloqueante viene con un cambio concreto, no con una queja",
+    "El veredicto es coherente con la gravedad de los hallazgos"
+  ],
+  "tono": "Franco y respetuoso: se critica el documento, no a la persona"
+}

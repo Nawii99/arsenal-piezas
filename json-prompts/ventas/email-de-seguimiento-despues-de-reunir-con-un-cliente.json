@@ -1,0 +1,39 @@
+{
+  "tarea": "Escribir el email de seguimiento de una reunión con cliente que confirme lo acordado y empuje el siguiente paso",
+  "contexto": {
+    "mi_empresa": "[NOMBRE DE TU EMPRESA]",
+    "cliente": "[NOMBRE DE LA PERSONA Y EMPRESA]",
+    "relacion": "[PRIMER CONTACTO / PROPUESTA EN CURSO / CLIENTE ACTUAL]",
+    "tuteo": "[TÚ / USTED]"
+  },
+  "entradas": {
+    "resumen_reunion": "[QUÉ SE HABLÓ, EN TUS PALABRAS]",
+    "necesidad_detectada": "[EL PROBLEMA REAL DEL CLIENTE]",
+    "objeciones_o_dudas": ["[DUDA QUE PLANTEÓ]"],
+    "mis_compromisos": ["[QUÉ ENVÍAS Y CUÁNDO]"],
+    "compromisos_del_cliente": ["[QUÉ TIENE QUE DARTE O DECIDIR]"],
+    "siguiente_paso_deseado": "[FIRMAR / REUNIÓN DE CIERRE / PRUEBA PILOTO]"
+  },
+  "procedimiento": [
+    "Abrir agradeciendo en una línea y recordando el problema del cliente con sus propias palabras",
+    "Resumir lo acordado en 3 o 4 viñetas, sin repetir toda la conversación",
+    "Separar visualmente lo que haces tú de lo que necesitas de él, con fechas",
+    "Responder de forma breve a la duda que quedó en el aire",
+    "Cerrar con una única llamada a la acción con dos opciones de fecha concretas"
+  ],
+  "restricciones": [
+    "Máximo 180 palabras en el cuerpo del correo",
+    "Nada de fórmulas vacías tipo quedo a su entera disposición",
+    "No prometer plazos ni precios que no estén en las entradas",
+    "Una sola llamada a la acción"
+  ],
+  "formato_salida": {
+    "entregables": ["3 opciones de asunto de menos de 50 caracteres", "Cuerpo del email listo para enviar", "Versión corta de 60 palabras para WhatsApp", "Recordatorio sugerido si no contesta, con el texto y a cuántos días enviarlo"]
+  },
+  "criterios_calidad": [
+    "El cliente sabe exactamente qué tiene que hacer y para cuándo",
+    "Se lee entero en menos de 30 segundos",
+    "No hay ninguna afirmación inventada sobre la reunión"
+  ],
+  "tono": "cercano y profesional, sin peloteo"
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Normalizar campos españoles de un fichero de clientes y marcar los valores inválidos",
+  "contexto": {
+    "uso_destino": "[FACTURACIÓN, ENVÍOS, IMPORTAR EN OTRA HERRAMIENTA, ANÁLISIS POR ZONA]",
+    "sistema_destino": "[NOMBRE DEL PROGRAMA O PLANTILLA DONDE VAS A CARGARLO]"
+  },
+  "entradas": {
+    "columnas_a_normalizar": "[NIF/CIF, TELÉFONO, CÓDIGO POSTAL, PROVINCIA, DIRECCIÓN, EMAIL, NOMBRE]",
+    "muestra": "[PEGA 30 FILAS CON LOS VALORES TAL CUAL ESTÁN, CON SUS ERRORES]"
+  },
+  "reglas": {
+    "nif_cif": "Quitar espacios, puntos y guiones, pasar a mayúsculas, comprobar la letra de control del DNI y el dígito del CIF, y marcar como inválido lo que no cuadre en vez de corregirlo por tu cuenta",
+    "telefono": "Dejar solo dígitos, quitar prefijo 34 duplicado, guardar en formato +34XXXXXXXXX, marcar los que no tengan 9 dígitos y distinguir fijo de móvil por la primera cifra",
+    "codigo_postal": "Cinco dígitos con el cero inicial que Excel se come, comprobar que las dos primeras cifras corresponden a una provincia española real",
+    "provincia": "Nombre oficial en castellano, sin abreviaturas ni acentos rotos, y coherente con las dos primeras cifras del código postal",
+    "direccion": "Separar tipo de vía, nombre, número, piso y puerta; mayúscula inicial en cada palabra y sin dobles espacios",
+    "nombre": "Corregir TODO EN MAYÚSCULAS y todo en minúsculas, respetar partículas como de, del y la, y separar nombre y apellidos si vienen juntos",
+    "email": "Minúsculas, sin espacios, comprobar que hay una arroba y un dominio con punto"
+  },
+  "restricciones": [
+    "Nunca cambies un dato dudoso en silencio: corrige solo lo evidente y marca el resto",
+    "Conserva siempre el valor original en una columna aparte",
+    "No inventes provincias ni códigos postales que falten"
+  ],
+  "formato_salida": {
+    "tipo": "tabla csv",
+    "columnas": "fila | campo | valor_original | valor_normalizado | estado | motivo",
+    "estados_posibles": "correcto, corregido, sospechoso, inválido, vacío",
+    "resumen_final": "Conteo por estado y las tres causas de error más repetidas"
+  },
+  "criterios_calidad": [
+    "Todo valor marcado como inválido lleva motivo en lenguaje llano",
+    "Ningún dato original se pierde"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Convertir el temario de un curso en apuntes de alumno, sesión a sesión, listos para imprimir",
+  "contexto": {
+    "curso": "[NOMBRE DEL CURSO]",
+    "perfil_alumno": "[QUIÉN ASISTE Y QUÉ SABE YA]",
+    "duracion_sesion_min": "[MINUTOS POR SESIÓN]",
+    "numero_sesiones": "[NÚMERO DE SESIONES]",
+    "temario_bruto": "[PEGA AQUÍ TU TEMARIO O ÍNDICE]",
+    "modalidad": "[PRESENCIAL / ONLINE / MIXTA]"
+  },
+  "reglas_pedagogicas": [
+    "Cada sesión arranca con un objetivo redactado con verbo observable (identificar, calcular, redactar), nunca 'conocer' ni 'entender'",
+    "Máximo 3 ideas nuevas por sesión: si el temario trae más, repártelas en sesiones extra y avísalo",
+    "Explica el concepto antes de nombrarlo con su palabra técnica y luego marca esa palabra en negrita",
+    "Incluye siempre un ejemplo del sector del alumno y un contraejemplo de error habitual",
+    "Deja huecos de trabajo: no des todo escrito, el alumno tiene que completar algo"
+  ],
+  "estructura_por_sesion": [
+    "Título y objetivo de la sesión",
+    "Qué necesitas saber antes (dos líneas de repaso)",
+    "Desarrollo en bloques de 10-12 minutos con subtítulos",
+    "Ejemplo resuelto paso a paso",
+    "Tres errores frecuentes y cómo evitarlos",
+    "Ejercicio en clase con espacio para responder",
+    "Resumen en 5 puntos y glosario de la sesión"
+  ],
+  "formato_salida": "Markdown con un encabezado H2 por sesión, listas numeradas, tablas para comparar opciones y una línea separadora entre sesiones",
+  "restricciones": [
+    "Frases de menos de 25 palabras y lenguaje llano",
+    "Nada de relleno motivacional ni introducciones largas",
+    "No inventes normativa, cifras ni fuentes: si falta un dato escribe [COMPLETAR: qué falta]"
+  ],
+  "criterios_calidad": [
+    "Un alumno que faltó a clase entiende la sesión solo con los apuntes",
+    "Cada sesión cabe en 2 o 3 páginas A4",
+    "Cada objetivo se puede comprobar con el ejercicio de esa misma sesión"
+  ],
+  "antes_de_empezar": "Si el temario es ambiguo o falta el nivel del alumno, haz como máximo 3 preguntas y espera respuesta"
+}

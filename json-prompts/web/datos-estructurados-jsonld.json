@@ -1,0 +1,53 @@
+{
+  "tarea": "Generar el marcado JSON-LD correcto para [PÁGINA O TIPO DE NEGOCIO] y explicar dónde pegarlo y cómo validarlo.",
+  "contexto": {
+    "tipo_de_pagina": "[HOME DE NEGOCIO LOCAL / FICHA DE PRODUCTO / PÁGINA DE SERVICIO / ARTÍCULO / PREGUNTAS FRECUENTES]",
+    "plataforma": "[HTML / WORDPRESS / SHOPIFY / OTRA]",
+    "idioma_y_pais": "español de España"
+  },
+  "entradas": {
+    "nombre": "[NOMBRE COMERCIAL]",
+    "direccion": "[CALLE, CP, CIUDAD, PROVINCIA]",
+    "telefono": "[TELÉFONO CON PREFIJO +34]",
+    "horarios": "[DÍAS Y HORAS REALES]",
+    "precios_o_rango": "[PRECIO EXACTO O RANGO]",
+    "perfiles": "[URLS DE REDES Y DE LA FICHA DE GOOGLE]",
+    "preguntas_frecuentes": "[PREGUNTAS Y RESPUESTAS QUE YA ESTÁN VISIBLES EN LA PÁGINA]"
+  },
+  "pasos": [
+    "1. Elegir el tipo correcto: LocalBusiness (o su subtipo), Product, Service, Article, FAQPage o BreadcrumbList.",
+    "2. Rellenar solo propiedades que se correspondan con contenido visible en la página.",
+    "3. Usar formatos exactos: horarios en formato openingHoursSpecification, precios con priceCurrency EUR, fechas ISO.",
+    "4. Enlazar entidades con @id para no duplicar el mismo negocio en varias páginas.",
+    "5. Añadir sameAs con los perfiles reales verificables.",
+    "6. Incluir el bloque en una etiqueta script de tipo application/ld+json dentro del head.",
+    "7. Validar con la prueba de resultados enriquecidos y con el validador de schema.org.",
+    "8. Vigilar en Search Console la sección de mejoras durante las semanas siguientes."
+  ],
+  "restricciones": [
+    "Prohibido marcar reseñas, valoraciones o precios que no existan de verdad en la página.",
+    "Nada de FAQPage con preguntas que el visitante no puede leer en la propia página.",
+    "No copiar el mismo bloque a todas las páginas sin adaptar la URL y el contenido.",
+    "Un solo bloque por tipo y por página."
+  ],
+  "formato_salida": {
+    "bloque_1": "Qué tipos corresponden a esta página y por qué.",
+    "bloque_2": "El JSON-LD completo listo para pegar, en un bloque de código.",
+    "bloque_3": "Dónde pegarlo exactamente según la plataforma indicada.",
+    "bloque_4": "Cómo validarlo en 3 pasos y qué avisos se pueden ignorar.",
+    "bloque_5": "Qué esperar y en cuánto tiempo, sin prometer posiciones."
+  },
+  "criterios_calidad": [
+    "El JSON valida sin errores en la prueba de resultados enriquecidos.",
+    "Toda propiedad marcada tiene su reflejo visible en la página.",
+    "Los datos coinciden con la ficha de Google y con el pie de la web.",
+    "No hay campos inventados ni de relleno."
+  ],
+  "errores_frecuentes": [
+    "Inventar una valoración media de 4,9 sin reseñas publicadas.",
+    "Poner horarios que no coinciden con los del perfil de Google.",
+    "Marcar como Product una página que en realidad es una categoría.",
+    "Dejar comas de más y que el bloque no valide.",
+    "Meter el script dentro de un comentario o fuera del head y que no se lea."
+  ]
+}

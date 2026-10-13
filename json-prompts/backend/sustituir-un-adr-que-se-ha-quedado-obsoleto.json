@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir el ADR sucesor que sustituye a una decisión anterior y el bloque de estado que marca el ADR antiguo como superado",
+  "entradas": {
+    "adr_antiguo": "[PEGA EL ADR QUE VAS A SUSTITUIR, O RESÚMELO]",
+    "que_ha_cambiado": "[QUÉ HA PASADO DESDE ENTONCES: ESCALA, EQUIPO, PRECIOS, NORMATIVA, INCIDENTES]",
+    "nueva_direccion": "[HACIA DÓNDE QUERÉIS IR AHORA]",
+    "que_depende_de_lo_viejo": "[MÓDULOS, INTEGRACIONES O CLIENTES QUE USAN LA SOLUCIÓN ACTUAL]",
+    "ventana_de_cambio": "[CUÁNTO TIEMPO Y CUÁNTA GENTE PUEDES DEDICAR]"
+  },
+  "pasos": [
+    "1. Resume en 3 líneas qué decía el ADR antiguo y por qué tenía sentido entonces",
+    "2. Enumera los cambios concretos que lo han invalidado, con la evidencia de cada uno",
+    "3. Comprueba si basta con enmendar el ADR antiguo en vez de sustituirlo, y dilo si es el caso",
+    "4. Redacta el ADR sucesor completo con la nueva decisión",
+    "5. Diseña la migración en fases, con una fase de convivencia de ambas soluciones y su fecha de fin",
+    "6. Define el punto de no retorno y qué hacer si la migración se atasca a mitad",
+    "7. Lista lo que hay que borrar o apagar cuando termine, para que no quede nada zombi"
+  ],
+  "restricciones": [
+    "No desprecies la decisión antigua: explica por qué era razonable con la información de entonces",
+    "La fase de convivencia debe tener fecha de caducidad explícita",
+    "Si el coste de migrar supera el dolor actual, recomienda no migrar y explica por qué"
+  ],
+  "formato_salida": {
+    "bloque_1": "Texto exacto para pegar en la cabecera del ADR antiguo: Estado: Superado por ADR-[NÚMERO], fecha y motivo en una línea",
+    "bloque_2": "ADR sucesor completo en markdown, con apartado 'Qué ha cambiado desde el ADR anterior'",
+    "bloque_3": "Plan de migración en tabla: fase, qué se hace, quién, duración, señal de que ha ido bien",
+    "bloque_4": "Lista de apagado: qué se elimina al final y quién lo confirma"
+  },
+  "criterios_calidad": [
+    "Se entiende la historia completa leyendo solo el ADR nuevo",
+    "Ninguna fase deja el sistema en un estado imposible de desplegar",
+    "La convivencia de las dos soluciones tiene fin fijado, no 'cuando se pueda'"
+  ],
+  "tono": "Sereno y práctico, sin dramatizar el cambio"
+}

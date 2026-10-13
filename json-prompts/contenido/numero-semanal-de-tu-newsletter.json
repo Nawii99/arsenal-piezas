@@ -1,0 +1,40 @@
+{
+  "tarea": "Redactar el número semanal completo de una newsletter de email, listo para copiar y pegar en la herramienta de envio",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "nombre_newsletter": "[NOMBRE DE TU NEWSLETTER]",
+    "quien_lee": "[PERFIL DEL SUSCRIPTOR: TRABAJO, PROBLEMA PRINCIPAL, NIVEL]",
+    "como_se_apuntaron": "[DESCARGA GRATUITA, COMPRA, FORMULARIO WEB, EVENTO]",
+    "tema_de_esta_semana": "[TEMA, NOTICIA O ANÉCDOTA DE ESTA SEMANA]",
+    "accion_final": "[QUÉ QUIERES QUE HAGAN: RESPONDER, RESERVAR, COMPRAR, LEER]",
+    "tono": "[CERCANO Y DIRECTO / TÉCNICO / CON HUMOR]"
+  },
+  "estructura_obligatoria": [
+    "Asunto de 30 a 45 caracteres, concreto, sin mayúsculas gritadas ni signos de exclamación",
+    "Preheader de 60 a 90 caracteres que amplíe el asunto en vez de repetirlo",
+    "Apertura de 2 o 3 frases que nombre el problema concreto de esta semana",
+    "Cuerpo de 250 a 400 palabras con UNA sola idea, partido en párrafos de 2 o 3 líneas",
+    "Un ejemplo real, cifra o caso que respalde la idea",
+    "Sección fija 'Para aplicar hoy' con 3 acciones en imperativo",
+    "Una única llamada a la acción, en su propia línea, con el texto del enlace escrito",
+    "Despedida breve con firma personal"
+  ],
+  "reglas_de_escritura": [
+    "Tutea siempre y escribe en español de España",
+    "Frases de menos de 20 palabras de media; nada de párrafos de 8 líneas",
+    "Prohibido: 'en el mundo actual', 'no te lo pierdas', 'revolucionario', 'sin duda'",
+    "Nada de emojis en el asunto salvo que se indique lo contrario",
+    "Una sola llamada a la acción por correo: si hay dos, el lector no hace ninguna"
+  ],
+  "errores_a_evitar": [
+    "Meter tres temas distintos en el mismo envío",
+    "Empezar hablando de tu empresa en vez del problema del lector",
+    "Asuntos tipo 'Newsletter nº 24' que no dicen nada"
+  ],
+  "formato_salida": "Bloque 1: tres opciones de asunto con su preheader. Bloque 2: el correo completo en texto plano con los saltos de línea marcados. Bloque 3: nota de 2 líneas explicando por qué has elegido ese enfoque",
+  "criterios_calidad": [
+    "Se entiende de qué va el correo leyendo solo asunto y primera frase",
+    "El lector puede hacer algo concreto en menos de 10 minutos tras leerlo",
+    "No hay ninguna afirmación inventada sobre el negocio: si falta un dato, se marca como [DATO PENDIENTE]"
+  ]
+}

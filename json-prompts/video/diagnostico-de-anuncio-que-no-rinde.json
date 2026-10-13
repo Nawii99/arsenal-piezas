@@ -1,0 +1,44 @@
+{
+  "tarea": "Diagnosticar por que un anuncio en video no esta funcionando y devolver un plan de correccion ordenado por impacto",
+  "contexto": {
+    "descripcion_del_anuncio": "[QUE SE VE Y QUE SE DICE, O PEGA EL GUION]",
+    "plataforma": "[META / TIKTOK / YOUTUBE]",
+    "publico": "[A QUIEN SE LO ESTAS ENSENANDO]",
+    "presupuesto_y_dias": "[CUANTO GASTAS AL DIA Y DESDE CUANDO]",
+    "metricas": {
+      "impresiones": "[NUMERO]",
+      "reproducciones_3_segundos": "[NUMERO O PORCENTAJE]",
+      "reproducciones_completas": "[PORCENTAJE]",
+      "clics_en_enlace": "[NUMERO]",
+      "ctr": "[PORCENTAJE]",
+      "cpm": "[EUROS]",
+      "conversiones": "[NUMERO]",
+      "coste_por_conversion": "[EUROS]",
+      "precio_del_producto": "[EUROS]"
+    },
+    "que_pasa_tras_el_clic": "[DESCRIBE LA PAGINA DE DESTINO]"
+  },
+  "metodo_de_analisis": [
+    "Calcula retencion a 3 segundos sobre impresiones: si es baja, el problema es el gancho o el publico",
+    "Compara reproducciones completas con retencion inicial: si cae en medio, el problema es el cuerpo del video",
+    "Si retiene bien pero no hay clics, el problema es la oferta o la llamada a la accion",
+    "Si hay clics pero no conversiones, el problema esta despues del clic, no en el video",
+    "Un CPM muy alto apunta a publico saturado o creatividad rechazada, no a mal guion",
+    "Si el coste por conversion supera tu margen, di claramente que hay que pararlo"
+  ],
+  "restricciones": [
+    "No inventes cifras que no se han dado: si falta un dato, pidelo",
+    "No propongas mas de tres cambios a la vez, para poder saber cual funciono",
+    "Nada de recomendaciones genericas tipo mejora el copy: di la frase nueva"
+  ],
+  "formato_salida": {
+    "tipo": "Informe corto",
+    "secciones": ["Semaforo por fase: gancho, cuerpo, cierre, pagina", "Diagnostico en 3 lineas", "Los 3 cambios a hacer esta semana, ordenados", "Que metrica tiene que moverse para saber que funciono", "Cuando pararlo y cambiar de creatividad"]
+  },
+  "criterios_calidad": [
+    "Senala una sola causa principal, no una lista de todo lo posible",
+    "Cada cambio propuesto viene con el texto o el plano nuevo ya escrito",
+    "Distingue si el fallo es del video o de lo que hay despues del clic",
+    "Dice con que numero se comprueba el resultado"
+  ]
+}

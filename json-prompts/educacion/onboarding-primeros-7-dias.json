@@ -1,0 +1,53 @@
+{
+  "tarea": "Diseñar la secuencia de bienvenida y los primeros 7 días de [NOMBRE DE LA FORMACIÓN], con mensajes, hitos y puntos de rescate.",
+  "contexto": {
+    "modalidad": "[GRABADO CON ACCESO INMEDIATO / COHORTE CON FECHA DE INICIO / MENTORÍA]",
+    "canal_principal": "[EMAIL / WHATSAPP / GRUPO DE TELEGRAM / PLATAFORMA]",
+    "dias_hasta_el_inicio": "[NÚMERO O CERO SI ES INMEDIATO]",
+    "garantia_de_devolucion": "[DÍAS, SI TIENES]",
+    "quien_atiende_dudas": "[TÚ / UN AYUDANTE / NADIE]"
+  },
+  "entradas": {
+    "que_recibe_el_alumno_al_comprar": "[ACCESOS, ARCHIVOS, ENLACES]",
+    "primera_accion_util": "[LO PRIMERO QUE DEBERÍA HACER Y QUE YA LE SIRVE]",
+    "dudas_tipicas_del_primer_dia": "[LISTA]",
+    "normas_del_grupo": "[SI HAY COMUNIDAD]"
+  },
+  "procedimiento": [
+    "1. Define la primera victoria: algo útil que el alumno pueda conseguir en menos de 30 minutos el mismo día que entra.",
+    "2. Escribe el mensaje de confirmación inmediata: qué ha comprado, cómo entra, qué hace ahora y a quién escribe si algo falla. Un solo enlace visible.",
+    "3. Reparte los 7 días en hitos pequeños, uno por día, con esfuerzo creciente y ningún día con más de una tarea.",
+    "4. Escribe el mensaje de cada día: asunto, tres líneas de contexto, la tarea y la señal de que está hecha.",
+    "5. Coloca dos puntos de rescate: día 3 y día 6, con mensaje distinto para quien no ha empezado y para quien va bien.",
+    "6. Prepara la ficha de reglas del aula: horarios de respuesta, dónde se preguntan las dudas, qué no se hace, cuánto tarda la corrección.",
+    "7. Prepara las respuestas a las dudas típicas del primer día como preguntas frecuentes, para no contestarlas una por una.",
+    "8. Añade la petición de contexto: dos preguntas al alumno sobre su caso, que te sirven para personalizar y para futuros testimonios.",
+    "9. Define qué miras el día 7 para saber si el onboarding funciona."
+  ],
+  "restricciones": [
+    "Máximo un mensaje al día y ninguno de más de 120 palabras.",
+    "Un solo botón o enlace por mensaje.",
+    "Nada de vender otra cosa durante los 7 primeros días.",
+    "Español de España, tuteando, tono de persona, no de plataforma."
+  ],
+  "errores_a_evitar": [
+    "Mandar el día uno un email con todos los accesos, el temario y cinco enlaces: paraliza.",
+    "Empezar por lo teórico y dejar lo útil para la semana tres.",
+    "No tener mensaje distinto para el que no ha entrado todavía.",
+    "Prometer respuesta inmediata y tardar tres días: destruye la confianza justo al principio."
+  ],
+  "formato_salida": {
+    "bloque_1": "Definición de la primera victoria y por qué esa.",
+    "bloque_2": "Calendario de 7 días en tabla: día, hito, tarea del alumno, mensaje que envías, canal.",
+    "bloque_3": "Los mensajes escritos y listos para copiar, con asunto cuando sea email.",
+    "bloque_4": "Los dos mensajes de rescate en sus dos versiones.",
+    "bloque_5": "Ficha de reglas del aula en menos de 15 líneas.",
+    "bloque_6": "Preguntas frecuentes del primer día con sus respuestas."
+  },
+  "criterios_calidad": [
+    "Un alumno con 30 minutos libres consigue la primera victoria el mismo día.",
+    "Ningún mensaje obliga a leer otro mensaje anterior para entenderse.",
+    "Los mensajes de rescate no culpan y ofrecen una salida en un clic.",
+    "Puedes medir el resultado del día 7 con un dato que ya tienes."
+  ]
+}

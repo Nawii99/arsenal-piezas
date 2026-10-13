@@ -1,0 +1,38 @@
+{
+  "tarea": "Disenar la segmentacion de la red de un negocio en redes separadas y redactar la matriz de comunicaciones permitidas y el orden de las reglas del cortafuegos",
+  "contexto": {
+    "negocio": "[NOMBRE Y TIPO DE NEGOCIO]",
+    "dispositivos": "[LISTA Y CANTIDAD: ORDENADORES, SERVIDOR, NAS, TPV, CAMARAS, IMPRESORAS, DOMOTICA, MOVILES]",
+    "equipo_de_red": "[ROUTER O FIREWALL Y SI SOPORTA VLAN, SWITCH GESTIONABLE SI/NO, PUNTOS DE ACCESO WIFI]",
+    "necesidades_reales": "[QUE TIENE QUE HABLAR CON QUE: EJ, LOS PCS IMPRIMEN Y ACCEDEN AL NAS]",
+    "acceso_de_proveedores": "[QUIEN ENTRA DE FUERA Y A QUE]",
+    "quien_lo_configura": "[YO / TECNICO EXTERNO]"
+  },
+  "procedimiento": [
+    "1. Proponer las redes separadas con nombre, proposito, rango de direcciones y que dispositivo va en cada una",
+    "2. Construir la matriz origen-destino: para cada par, permitido o denegado, con puertos o servicios y la justificacion de negocio",
+    "3. Traducir la matriz a reglas ordenadas de arriba a abajo, terminando en denegar todo lo demas",
+    "4. Indicar reglas especiales: salida a internet por red, resolucion de nombres, acceso de administracion solo desde la red de trabajo",
+    "5. Plan de puesta en marcha por fases con modo de observacion antes de bloquear, para no cortar el negocio",
+    "6. Lista de sintomas tipicos tras segmentar (la impresora no aparece, el TPV no cobra) y como resolverlos",
+    "7. Alternativa realista si el equipo de red actual no admite VLAN, con lo que costaria el que si"
+  ],
+  "restricciones": [
+    "Principio de denegar por defecto y permitir solo lo justificado",
+    "Cada regla permitida debe tener una razon de negocio escrita",
+    "No dejar la administracion del router accesible desde la red de invitados ni desde internet"
+  ],
+  "formato_salida": {
+    "tipo": "diseno de red",
+    "secciones": [
+      "Tabla de redes: nombre | proposito | rango | wifi asociado | dispositivos",
+      "Matriz de comunicaciones origen x destino con puertos y justificacion",
+      "Lista de reglas del cortafuegos en orden de aplicacion",
+      "Plan de implantacion en 3 fases con marcha atras",
+      "Guia de averias tipicas tras segmentar",
+      "Revision semestral: que comprobar"
+    ]
+  },
+  "criterios_calidad": ["La ultima regla es denegar todo", "Ninguna comunicacion permitida esta sin justificar", "El plan permite volver atras en 10 minutos si el negocio se para"],
+  "tono": "tecnico pero explicado, apto para ensenarselo a tu informatico"
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Disenar el modelo de datos multiempresa (multi-tenant) de una aplicacion, eligiendo la estrategia de aislamiento y sus salvaguardas",
+  "contexto": {
+    "aplicacion": "[QUE HACE TU APLICACION EN 3 FRASES]",
+    "clientes_previstos": "[Nº DE EMPRESAS CLIENTE EN 12 MESES]",
+    "tamano_dispar": "[HAY CLIENTES MUCHO MAS GRANDES QUE OTROS: SI | NO]",
+    "requisitos": "[EJ: DATOS EN LA UE, COPIAS POR CLIENTE, EXPORTAR Y BORRAR AL DARSE DE BAJA]",
+    "motor": "[PostgreSQL | MySQL]"
+  },
+  "metodo": [
+    "Comparar las tres estrategias: columna empresa_id compartida, esquema por cliente y base de datos por cliente",
+    "Recomendar una segun volumen, requisitos legales y coste de mantenimiento",
+    "Definir donde va empresa_id, que tablas son globales y cuales son por cliente",
+    "Definir el mecanismo que impide leer datos de otra empresa incluso si la aplicacion tiene un fallo",
+    "Definir como se da de alta y de baja una empresa, incluido el borrado y la exportacion de sus datos"
+  ],
+  "restricciones": [
+    "Toda tabla con datos de cliente lleva empresa_id y forma parte de sus claves unicas",
+    "Nada de confiar solo en el filtro WHERE de la aplicacion como unica proteccion",
+    "Los identificadores publicos no deben ser numeros correlativos adivinables",
+    "No propongas una estrategia sin decir su punto debil"
+  ],
+  "formato_salida": {
+    "1_recomendacion": "Estrategia elegida y tres razones",
+    "2_comparativa": "Tabla markdown con las tres opciones: coste, aislamiento, complejidad, cuando elegirla",
+    "3_modelo": "Tablas con sus campos, marcando cuales son globales y cuales por empresa",
+    "4_sql": "CREATE TABLE mas las reglas de seguridad a nivel de fila si el motor las soporta",
+    "5_operativa": "Pasos de alta, baja, exportacion y borrado de una empresa",
+    "6_pruebas": "3 pruebas concretas para demostrar que una empresa no puede ver datos de otra"
+  },
+  "criterios_calidad": [
+    "Ninguna clave unica olvida empresa_id",
+    "Las pruebas propuestas fallarian si el aislamiento estuviera mal hecho",
+    "La operativa cubre el borrado por peticion del cliente"
+  ],
+  "tono": "Claro y prudente, espanol de Espana"
+}

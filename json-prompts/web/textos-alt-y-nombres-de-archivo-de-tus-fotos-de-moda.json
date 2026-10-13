@@ -1,0 +1,37 @@
+{
+  "tarea": "Generar nombres de archivo y textos alternativos para las fotos de [PRODUCTO] de [NOMBRE DE TU MARCA]",
+  "entradas": {
+    "referencia": "[CODIGO O SKU DEL PRODUCTO]",
+    "producto": "[TIPO DE PRENDA O COMPLEMENTO]",
+    "atributos": "[COLOR, MATERIAL, CORTE, TEMPORADA]",
+    "busquedas_objetivo": "[2 O 3 BUSQUEDAS POR LAS QUE QUIERES APARECER]",
+    "fotos": "[ADJUNTA LAS FOTOS O DESCRIBE CADA UNA EN UNA LINEA]"
+  },
+  "reglas_nombre_archivo": [
+    "Minusculas, sin acentos, palabras separadas por guiones",
+    "Orden: marca, producto, atributo principal, color, vista",
+    "Maximo 60 caracteres y sin numeros sueltos tipo img1234"
+  ],
+  "reglas_texto_alternativo": [
+    "Describir lo que se ve, no repetir palabras clave sin sentido",
+    "Entre 8 y 16 palabras, en espanol natural",
+    "Incluir color y material solo si son visibles en esa foto",
+    "No empezar por imagen de ni foto de",
+    "Cada foto con un texto distinto, sin copiar y pegar"
+  ],
+  "formato_salida": {
+    "tabla_csv": "vista;nombre_archivo;texto_alternativo;titulo_de_la_imagen",
+    "extra_1": "una linea de texto para el pie de foto en la ficha cuando el tema lo permita",
+    "extra_2": "aviso si alguna foto no aporta nada nuevo y conviene no subirla"
+  },
+  "restricciones": [
+    "Nada de promesas ni adjetivos de venta en el texto alternativo",
+    "No inventar caracteristicas que no se ven en la foto",
+    "Mismo criterio para todas las referencias del catalogo"
+  ],
+  "criterios_calidad": [
+    "Una persona que no ve la imagen entiende que hay en ella",
+    "Los nombres de archivo se ordenan solos por producto al listarlos",
+    "El CSV se puede pegar directo en la hoja de carga de la tienda"
+  ]
+}

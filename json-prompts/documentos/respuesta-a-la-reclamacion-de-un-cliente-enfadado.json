@@ -1,0 +1,36 @@
+{
+  "tarea": "Analizar la reclamación escrita de un cliente y redactar una respuesta profesional que resuelva sin asumir responsabilidades que no corresponden",
+  "entradas": {
+    "texto_de_la_reclamacion": "[PEGA AQUÍ EL EMAIL, MENSAJE O ESCRITO DEL CLIENTE]",
+    "que_paso_realmente": "[TU VERSIÓN CON FECHAS Y HECHOS COMPROBABLES]",
+    "condiciones_aplicables": "[TUS CONDICIONES DE VENTA, GARANTÍA O PRESUPUESTO FIRMADO]",
+    "tipo_de_cliente": "[CONSUMIDOR PARTICULAR / EMPRESA]",
+    "limite_de_compensacion": "[LO MÁXIMO QUE ESTÁS DISPUESTO A DAR]",
+    "quiero_mantener_al_cliente": "[SÍ / NO]"
+  },
+  "analisis_previo": [
+    "Separar lo que el cliente afirma de lo que puede probar",
+    "Marcar cada punto como fundado, discutible o infundado",
+    "Detectar si hay plazos legales en juego, como garantía o desistimiento, y avisar de ellos",
+    "Valorar el riesgo real: reputación, reclamación de consumo o reclamación judicial"
+  ],
+  "reglas_de_redaccion": [
+    "Empezar reconociendo la molestia sin admitir culpa que no exista",
+    "Responder punto por punto en el mismo orden que el cliente",
+    "Ofrecer una solución concreta con fecha y condiciones",
+    "Cerrar con una vía de contacto única y un plazo de respuesta",
+    "Nada de sarcasmo, de culpar al cliente ni de frases defensivas tipo 'como ya le dijimos'"
+  ],
+  "formato_salida": {
+    "1_semaforo": "tabla con cada punto reclamado, su valoración y el riesgo",
+    "2_respuesta": "email listo para enviar, máximo 250 palabras",
+    "3_alternativa_dura": "versión más firme por si rechaza la primera oferta",
+    "4_registro_interno": "tres líneas de resumen para guardar en tu carpeta del cliente"
+  },
+  "criterios_calidad": [
+    "La respuesta no admite hechos que el usuario no haya confirmado",
+    "La oferta nunca supera el límite de compensación indicado",
+    "El cliente sabe qué va a pasar y cuándo al terminar de leer"
+  ],
+  "aviso_legal": "Orientativo; si el cliente es consumidor y anuncia acciones legales, consulta con un abogado antes de responder"
+}

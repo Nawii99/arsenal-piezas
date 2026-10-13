@@ -1,0 +1,49 @@
+{
+  "tarea": "Diagnosticar por qué los correos de un negocio no llegan a la bandeja de entrada y devolver un plan de arreglo paso a paso para alguien sin perfil técnico.",
+  "contexto": {
+    "negocio": "[NEGOCIO]",
+    "desde_donde_envias": "[GMAIL, OUTLOOK, BREVO, MAILERLITE, LA PROPIA WEB, WORDPRESS]",
+    "dominio": "[TUDOMINIO.ES O ESCRIBE: ENVÍO DESDE GMAIL]",
+    "tipos_de_correo": "[CONFIRMACIÓN DE PEDIDO, PRESUPUESTO, RECORDATORIO DE CITA, NEWSLETTER]"
+  },
+  "entradas": {
+    "sintoma": "[QUÉ TE CUENTAN LOS CLIENTES Y DESDE CUÁNDO]",
+    "ejemplo_de_correo": "[PEGA ASUNTO Y CUERPO DE UNO QUE NO LLEGA]",
+    "volumen": "[CUÁNTOS ENVÍAS AL DÍA O AL MES]"
+  },
+  "metodo": [
+    "1. Prueba de mesa: envía el mismo correo a una cuenta de Gmail, una de Outlook/Hotmail, una de Yahoo y una corporativa, todas ajenas a tu equipo.",
+    "2. Anota dónde cae cada uno: principal, promociones, spam o no llega. Esa tabla es el diagnóstico.",
+    "3. Revisa el remitente: nombre reconocible, dirección del dominio propio y respuesta que va a un buzón que alguien lee.",
+    "4. Comprueba los tres ajustes de dominio (SPF, DKIM y DMARC) explicando en cristiano dónde se tocan y a quién pedirle ayuda si no aparecen.",
+    "5. Audita el contenido: proporción de texto e imagen, enlaces acortados, palabras de reclamo, mayúsculas, exceso de signos, adjuntos pesados.",
+    "6. Revisa la lista: direcciones antiguas, compradas o con errores tipográficos, y si hay forma de darse de baja en un clic.",
+    "7. Ordena la prueba después de cada cambio: un cambio, una prueba, para saber qué lo arregló.",
+    "8. Deja una rutina mensual de comprobación en 10 minutos."
+  ],
+  "errores_tipicos": [
+    "Enviar desde una dirección de Gmail pero poniendo tu dominio como remitente.",
+    "Probar solo con tu propio correo, que siempre te llega.",
+    "Meter un correo comercial dentro de la confirmación de pedido.",
+    "Enviar de golpe a una lista vieja y quemar la reputación del dominio.",
+    "No poner enlace de baja visible."
+  ],
+  "restricciones": [
+    "Explica cada paso técnico con palabras llanas y di exactamente en qué panel se hace.",
+    "No recomiendes herramientas de pago sin decir qué se consigue gratis."
+  ],
+  "formato_salida": {
+    "tabla_prueba": "Proveedor, dónde cayó, hora, captura pendiente sí/no",
+    "diagnostico": "Las 3 causas más probables ordenadas por probabilidad",
+    "plan_de_arreglo": "Pasos numerados con quién lo hace, dónde y cuánto tarda",
+    "correo_reescrito": "Asunto y cuerpo corregidos",
+    "rutina_mensual": "Checklist de 6 puntos"
+  },
+  "criterios_calidad": [
+    "El diagnóstico se apoya en la tabla de prueba, no en suposiciones.",
+    "Cada paso indica el panel concreto donde se toca.",
+    "El correo reescrito conserva la información obligatoria.",
+    "Alguien sin perfil técnico puede ejecutarlo en una tarde."
+  ],
+  "si_falta_informacion": "Pregunta primero desde qué herramienta se envía y si el dominio es propio; sin eso el diagnóstico no vale."
+}

@@ -1,0 +1,45 @@
+{
+  "tarea": "Escribir el título, el subtítulo y las anotaciones de un gráfico para que se entienda la conclusión sin explicarla de viva voz",
+  "contexto": {
+    "publico": "[QUIÉN LO LEE Y QUÉ LE PREOCUPA]",
+    "decision": "[QUÉ QUIERES QUE HAGA DESPUÉS DE VERLO]",
+    "soporte": "[INFORME / PRESENTACIÓN / EMAIL / WEB]"
+  },
+  "entradas": {
+    "descripcion_del_grafico": "[TIPO DE GRÁFICO, QUÉ HAY EN CADA EJE Y QUÉ SERIES APARECEN]",
+    "datos": "[PEGA LOS DATOS O LOS VALORES CLAVE: MÁXIMOS, MÍNIMOS, TOTALES, VARIACIONES]",
+    "hechos_relevantes": "[QUÉ PASÓ EN ESE PERIODO: CAMPAÑAS, SUBIDAS DE PRECIO, VACACIONES, INCIDENCIAS]"
+  },
+  "metodo": [
+    "Extraer de los datos el hallazgo principal, en una frase con la cifra y la dirección del cambio",
+    "Escribir un título afirmativo que contenga ese hallazgo, no el tema del gráfico",
+    "Escribir un subtítulo con la unidad, el periodo y la fuente",
+    "Proponer de dos a cuatro anotaciones sobre puntos concretos del gráfico, indicando a qué punto se ancla cada una",
+    "Redactar la frase de cierre que conecta el gráfico con la decisión que hay que tomar",
+    "Preparar una versión corta del título por si el espacio es reducido"
+  ],
+  "restricciones": [
+    "El título no supera 12 palabras y no lleva signos de exclamación",
+    "Toda cifra citada tiene que estar en los datos entregados; si no está, no se menciona",
+    "Prohibido afirmar causas que los datos no demuestran: usar coincide con o se produce tras",
+    "Nada de palabras de relleno como impresionante, brutal o histórico",
+    "Anotaciones de una línea, máximo 15 palabras cada una"
+  ],
+  "formato_salida": {
+    "tipo": "lista con opciones",
+    "bloques": [
+      "Hallazgo principal en una frase",
+      "Tres títulos alternativos, ordenados de más directo a más prudente",
+      "Subtítulo recomendado",
+      "Anotaciones con su punto de anclaje",
+      "Frase de cierre orientada a la decisión",
+      "Aviso de lo que los datos NO permiten afirmar"
+    ]
+  },
+  "criterios_calidad": [
+    "Leyendo solo el título ya se sabe la conclusión",
+    "Ningún dato inventado ni redondeo que cambie el sentido",
+    "El aviso final evita que alguien saque una conclusión de más"
+  ],
+  "tono": "sobrio y profesional, tuteando"
+}

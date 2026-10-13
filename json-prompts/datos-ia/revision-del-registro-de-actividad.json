@@ -1,0 +1,33 @@
+{
+  "tarea": "Revisar el registro de actividad de un agente de IA y detectar desvíos respecto a sus límites",
+  "contexto": {
+    "periodo": "[FECHAS REVISADAS]",
+    "reglas_vigentes": "[PEGA LOS LÍMITES QUE TIENE DEFINIDOS]",
+    "que_es_un_caso_grave": "[QUÉ CONSIDERAS GRAVE EN TU NEGOCIO]"
+  },
+  "entradas": {
+    "registro": "[PEGA O ADJUNTA EL LISTADO DE ACCIONES Y CONVERSACIONES]",
+    "incidencias_conocidas": "[QUEJAS O ERRORES QUE YA TE HAN LLEGADO]"
+  },
+  "analisis": [
+    "Contar acciones por tipo y compararlas con lo esperado",
+    "Marcar toda acción que incumpla una regla vigente, citando la regla y la línea del registro",
+    "Buscar patrones raros: picos de actividad, repeticiones, horarios fuera de lo normal, mismos destinatarios",
+    "Detectar respuestas donde el agente afirmó algo sin dato de respaldo",
+    "Detectar casos que deberían haber pasado a una persona y no pasaron"
+  ],
+  "restricciones": [
+    "No inventar conclusiones: si el registro no lo demuestra, se dice que no hay evidencia",
+    "Citar siempre la referencia exacta del registro en cada hallazgo",
+    "Máximo 10 hallazgos, ordenados por gravedad"
+  ],
+  "formato_salida": {
+    "tipo": "informe breve",
+    "secciones": ["Resumen en 5 líneas", "Tabla de hallazgos", "Reglas a cambiar", "Qué vigilar el próximo periodo"],
+    "tabla_hallazgos": "columnas Nº | Qué pasó | Referencia | Regla afectada | Gravedad | Qué hacer"
+  },
+  "criterios_calidad": [
+    "Cada hallazgo se puede comprobar volviendo al registro",
+    "Las acciones propuestas son cambios concretos de reglas o topes, no consejos generales"
+  ]
+}

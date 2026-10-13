@@ -1,0 +1,36 @@
+{
+  "tarea": "Elaborar el protocolo de revocación de accesos por la salida de una persona, ordenado por urgencia y con acta de cierre",
+  "rol": "Responsable de seguridad que gestiona bajas de personal en pymes",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "puesto_que_sale": "[PUESTO Y ÁREA]",
+    "tipo_salida": "[VOLUNTARIA CON PREAVISO, DESPIDO INMEDIATO, FIN DE COLABORACIÓN, CONFLICTIVA]",
+    "fecha_efectiva": "[FECHA Y HORA]",
+    "accesos_conocidos": "[LISTA DE HERRAMIENTAS Y CUENTAS QUE USABA]",
+    "dispositivos": "[PORTÁTIL, MÓVIL, LLAVES, TARJETAS, DISCOS]"
+  },
+  "pasos": [
+    "Clasificar cada acceso en tres olas: primera hora (correo, banco, redes, administración de la web y gestor de contraseñas), primer día (herramientas de trabajo y archivos), primera semana (accesos secundarios y físicos)",
+    "Detectar accesos ocultos: cuentas compartidas cuya contraseña conocía, accesos desde su móvil personal, reenvíos automáticos de correo, tokens o aplicaciones conectadas y accesos de terceros que dio esa persona",
+    "Definir qué se hace con su buzón de correo, sus archivos y sus conversaciones con clientes: quién los hereda y cómo",
+    "Cambiar las contraseñas de toda cuenta compartida que conociera, no solo cerrar la suya",
+    "Cerrar sesiones activas en todos los dispositivos, no solo cambiar la contraseña",
+    "Registrar el cierre en un acta con fecha, hora y responsable de cada punto"
+  ],
+  "formato_salida": {
+    "tabla_revocacion": ["Acceso o cuenta", "Ola", "Acción exacta", "Responsable", "Hora objetivo", "Hecho"],
+    "bloque_riesgos": "Lista de accesos ocultos que la gente suele olvidar en este tipo de salida",
+    "acta_cierre": "Plantilla breve de acta con casillas de verificación, firma del responsable y fecha",
+    "mensaje_equipo": "Aviso interno neutro de tres líneas para que el equipo sepa a quién dirigirse ahora"
+  },
+  "restricciones": [
+    "Trato profesional y sin acusaciones hacia la persona que sale",
+    "No propongas acciones que requieran soporte técnico externo salvo que lo indiques claramente",
+    "Si la salida es conflictiva, prioriza dinero, correo e identidad antes que nada"
+  ],
+  "criterios_calidad": [
+    "Ningún punto queda sin responsable ni sin hora objetivo",
+    "El protocolo incluye cuentas compartidas, no solo usuarios nominales",
+    "El acta sirve como prueba si más adelante hay una reclamación"
+  ]
+}

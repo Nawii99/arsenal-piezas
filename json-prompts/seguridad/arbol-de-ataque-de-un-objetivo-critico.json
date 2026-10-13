@@ -1,0 +1,31 @@
+{
+  "tarea": "Construir un árbol de ataque para un objetivo crítico concreto y señalar el camino más fácil para el atacante",
+  "objetivo_del_atacante": "[QUÉ QUIERES EVITAR: ROBAR LA BASE DE CLIENTES, DESVIAR UNA TRANSFERENCIA, PARAR LA PRODUCCIÓN, SECUESTRAR TU CUENTA]",
+  "contexto": {
+    "donde_esta_el_activo": "[SERVIDOR, SAAS, ORDENADOR DE OFICINA, MÓVIL]",
+    "quien_tiene_acceso": "[PERSONAS Y ROLES]",
+    "defensas_actuales": "[CONTRASEÑAS, DOBLE FACTOR, COPIAS, ANTIVIRUS, PERMISOS, FORMACIÓN]",
+    "perfil_de_atacante": "[OPORTUNISTA POR INTERNET, EMPLEADO DESCONTENTO, COMPETENCIA, BANDA DE RANSOMWARE]"
+  },
+  "instrucciones": [
+    "Pon el objetivo en la raíz y despliega tres niveles de sub-objetivos hasta acciones concretas",
+    "Distingue ramas Y (hacen falta todas) de ramas O (basta con una)",
+    "Incluye caminos no técnicos: llamada suplantando a un proveedor, correo con factura falsa, acceso físico, contraseña reutilizada, empleado que se va",
+    "Valora cada hoja con esfuerzo, coste y conocimiento necesario para el atacante",
+    "Señala el camino de menor resistencia y qué única defensa lo cortaría"
+  ],
+  "restricciones": [
+    "Describe pasos a nivel de escenario, sin comandos, herramientas ni instrucciones operativas de ataque",
+    "Entre 12 y 25 hojas: prioriza realismo sobre cantidad"
+  ],
+  "formato_salida": {
+    "bloque_1": "Árbol en lista indentada con marcas [Y] y [O]",
+    "bloque_2": "Tabla de hojas con columnas: Camino, Esfuerzo, Coste para el atacante, Detectable (sí/no), Defensa que lo corta",
+    "bloque_3": "Los 3 caminos más baratos para el atacante y qué hacer esta semana con cada uno"
+  },
+  "criterios_calidad": [
+    "Aparecen caminos humanos, no solo técnicos",
+    "Cada defensa propuesta dice a qué rama concreta corta",
+    "El resultado se entiende leyendo solo el bloque 3"
+  ]
+}

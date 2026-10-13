@@ -1,0 +1,48 @@
+{
+  "tarea": "Auditar un texto generado con IA para detectar datos inventados, cifras sin fuente y afirmaciones arriesgadas, y devolver una versión defendible.",
+  "contexto": {
+    "tipo_de_texto": "[ARTÍCULO / PROPUESTA / FICHA DE PRODUCTO / EMAIL / GUION]",
+    "donde_se_publica": "[WEB, LINKEDIN, PDF PARA CLIENTE, ANUNCIO]",
+    "sector": "[SECTOR]",
+    "riesgo": "[BAJO / MEDIO / ALTO: SALUD, DINERO, LEGAL O INFANCIA SON ALTO]"
+  },
+  "entradas": {
+    "texto": "[PEGA EL TEXTO COMPLETO]",
+    "datos_que_si_son_ciertos": "[DATOS TUYOS VERIFICADOS: AÑOS, PRECIOS, PLAZOS, CLIENTES]",
+    "fuentes_permitidas": "[WEB OFICIAL, TU CONTABILIDAD, ESTUDIOS PÚBLICOS...]"
+  },
+  "metodo": [
+    "1. Subraya toda frase que contenga: número, porcentaje, fecha, nombre propio, ley, premio, comparación con la competencia o superlativo.",
+    "2. Clasifica cada una en VERIFICADO (está en mis datos), VERIFICABLE (se puede comprobar y dónde) o INVENTADO/NO COMPROBABLE.",
+    "3. Marca aparte las afirmaciones de resultado (garantizamos, en 30 días, el mejor de España) porque además son riesgo legal en publicidad.",
+    "4. Para cada INVENTADO propón tres salidas: quitarlo, sustituirlo por un dato tuyo real o convertirlo en opinión clara.",
+    "5. Detecta el humo: frases que suenan a dato pero no dicen nada (miles de clientes, resultados espectaculares).",
+    "6. Comprueba coherencia interna: que la cifra del titular sea la misma que la del cuerpo y la del cierre.",
+    "7. Reescribe el texto conservando el tono, sustituyendo cada afirmación problemática.",
+    "8. Deja una lista corta de qué tiene que confirmar el humano antes de publicar."
+  ],
+  "errores_tipicos": [
+    "Fiarse porque el texto cita un estudio con nombre y año que no existe.",
+    "Dejar cifras de mercado copiadas sin saber de dónde salen.",
+    "Confundir estimación propia con dato del sector.",
+    "Quitar el dato y dejar la frase igual de rotunda.",
+    "Revisar solo el titular y no los pies de foto ni el CTA."
+  ],
+  "restricciones": [
+    "No añadas fuentes ni enlaces que no puedas verificar; si no hay fuente, dilo.",
+    "No suavices tanto el texto que se quede sin mensaje."
+  ],
+  "formato_salida": {
+    "tabla_afirmaciones": "Tabla: frase literal, tipo de dato, clasificación, riesgo (bajo/medio/alto), qué hacer",
+    "pendiente_de_confirmar": "Lista numerada de comprobaciones para el humano, con dónde mirar",
+    "texto_corregido": "El texto reescrito completo, listo para publicar",
+    "semaforo": "VERDE publicable, ÁMBAR publicable tras confirmar, ROJO no publicar"
+  },
+  "criterios_calidad": [
+    "Ninguna cifra sobrevive sin origen identificado.",
+    "El texto corregido mantiene la longitud y el tono del original.",
+    "Las afirmaciones de resultado quedan condicionadas o eliminadas.",
+    "La lista de pendientes se puede resolver en menos de 20 minutos."
+  ],
+  "si_falta_informacion": "Pide los datos reales antes de inventar sustitutos; nunca rellenes huecos con cifras plausibles."
+}

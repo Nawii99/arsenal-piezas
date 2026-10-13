@@ -1,0 +1,38 @@
+{
+  "tarea": "Analizar un caso de garantia y proponer la resolucion tecnica y comercial",
+  "caso": {
+    "producto": "[PRODUCTO, MARCA Y MODELO]",
+    "precio": "[PRECIO PAGADO]",
+    "fecha_compra": "[FECHA]",
+    "fecha_aviso": "[FECHA EN QUE EL CLIENTE AVISA]",
+    "sintoma": "[QUE FALLA, DESCRITO POR EL CLIENTE]",
+    "uso_declarado": "[COMO Y CUANTO LO HA USADO]",
+    "pruebas": "[FOTOS, VIDEO, TICKET, NUMERO DE SERIE, NADA]",
+    "historial": "[REPARACIONES O INCIDENCIAS ANTERIORES]"
+  },
+  "marco": [
+    "Garantia legal de conformidad de 3 anos para bienes comprados en Espana desde 2022",
+    "Los dos primeros anos se presume que el defecto ya existia en la entrega salvo prueba en contra",
+    "El cliente elige entre reparacion y sustitucion salvo que una sea desproporcionada",
+    "Rebaja del precio o resolucion del contrato si la reparacion falla o se demora en exceso",
+    "No cubre desgaste normal, mal uso, manipulacion por terceros ni danos accidentales"
+  ],
+  "analisis_requerido": [
+    "Calcular el tiempo transcurrido y en que tramo de garantia cae",
+    "Clasificar el fallo: defecto de fabricacion, desgaste esperable, mal uso o dano externo",
+    "Listar las 3 hipotesis mas probables de la averia y como distinguirlas",
+    "Decir que informacion falta y como pedirsela al cliente sin ofenderle"
+  ],
+  "formato_salida": {
+    "veredicto": "CUBIERTO / NO CUBIERTO / NECESITA COMPROBACION",
+    "confianza": "alta, media o baja con el motivo",
+    "resolucion_propuesta": "reparar, sustituir, rebajar precio o devolver, con el porque",
+    "coste_estimado": "orden de magnitud y alternativa mas barata razonable",
+    "mensaje_al_cliente": "borrador de 100 palabras explicando la decision",
+    "si_reclama": "2 argumentos que usara el cliente y como responderlos"
+  },
+  "restricciones": [
+    "No afirmar nada como certeza legal absoluta: marcar lo que conviene consultar",
+    "Si el caso es dudoso, recomendar la opcion que menos coste reputacional tiene"
+  ]
+}

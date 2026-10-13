@@ -1,0 +1,37 @@
+{
+  "tarea": "Diagnosticar problemas de entregabilidad de email y entregar un plan de corrección priorizado",
+  "contexto": {
+    "herramienta_envio": "[MAILCHIMP, BREVO, ACTIVECAMPAIGN, MAILERLITE U OTRA]",
+    "dominio_remitente": "[DOMINIO DESDE EL QUE ENVÍAS]",
+    "tipo_remitente": "[DOMINIO PROPIO / GMAIL O HOTMAIL GRATUITO]",
+    "origen_de_la_lista": "[CÓMO CONSEGUISTE LOS CONTACTOS]",
+    "tamano_lista": "[NÚMERO DE SUSCRIPTORES]",
+    "frecuencia": "[CUÁNTOS ENVÍOS AL MES]",
+    "metricas": "[APERTURA %, CLIC %, REBOTES %, BAJAS %, QUEJAS DE SPAM %]",
+    "email_de_ejemplo": "[PEGA AQUÍ EL ASUNTO Y EL TEXTO DE UN ENVÍO RECIENTE]"
+  },
+  "revisar_en_este_orden": [
+    "Autenticación del dominio: SPF, DKIM y DMARC, explicado sin tecnicismos",
+    "Reputación del remitente: dominio propio frente a correo gratuito, calentamiento si es nuevo",
+    "Permiso y origen de los contactos: listas compradas, importadas o sin confirmación",
+    "Higiene de lista: rebotes acumulados, direcciones antiguas, inactivos",
+    "Contenido: palabras de alarma, exceso de mayúsculas, ratio texto-imagen, enlaces acortados",
+    "Estructura técnica del email: enlace de baja visible, versión solo texto, peso del correo",
+    "Ritmo de envío: picos bruscos tras meses sin enviar"
+  ],
+  "formato_salida": {
+    "tabla_hallazgos": ["problema", "gravedad_alta_media_baja", "por_que_afecta", "como_se_arregla_paso_a_paso", "tiempo_estimado", "quien_lo_hace"],
+    "plan": "Qué hacer hoy, esta semana y este mes, en tres listas separadas",
+    "comprobacion": "Cómo verificar en 10 días si ha mejorado, con qué números mirar"
+  },
+  "restricciones": [
+    "Explicar SPF, DKIM y DMARC con una analogía sencilla antes de dar el paso técnico",
+    "No recomendar comprar listas ni trucos para saltarse los filtros",
+    "Si falta un dato para juzgar algo, decirlo claramente en vez de suponer"
+  ],
+  "criterios_calidad": [
+    "Cada arreglo se puede hacer sin programador",
+    "Los problemas están ordenados por impacto, no por facilidad",
+    "Se distingue lo que es urgente de lo que es mejora a largo plazo"
+  ]
+}

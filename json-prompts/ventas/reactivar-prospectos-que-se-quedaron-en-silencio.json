@@ -1,0 +1,34 @@
+{
+  "tarea": "Escribir una secuencia corta para reactivar prospectos que dejaron de contestar",
+  "entradas": {
+    "historial": "[QUÉ PASÓ: PIDIÓ PRESUPUESTO, TUVIMOS UNA LLAMADA, DIJO QUE LO MIRABA...]",
+    "tiempo_de_silencio": "[SEMANAS O MESES SIN RESPUESTA]",
+    "ultima_oferta": "[LO QUE LE OFRECISTE Y EL PRECIO]",
+    "novedad_real": "[ALGO NUEVO QUE PUEDAS CONTAR: HUECO EN AGENDA, NUEVO CASO, CAMBIO DE PRECIO, MEJORA]",
+    "canal": "[EMAIL, WHATSAPP O LINKEDIN]"
+  },
+  "pasos": [
+    "Elegir el ángulo de reentrada según el motivo probable del silencio: precio, prioridades, se le pasó, encontró otro",
+    "Mensaje 1: reaparecer con una novedad útil, sin reprochar la falta de respuesta",
+    "Mensaje 2 (a los 5 días): dar una salida fácil con una pregunta de tres opciones",
+    "Mensaje 3 (a los 10 días): cierre definitivo, cerrar el expediente y dejar la puerta abierta",
+    "Indicar qué prospectos NO merecen reactivación y por qué"
+  ],
+  "restricciones": [
+    "Prohibido 'te escribo para hacer seguimiento', 'solo quería saber si viste mi email' y 'sigo a la espera'",
+    "Nada de culpar al prospecto ni de fingir urgencia falsa",
+    "Máximo 80 palabras por mensaje",
+    "Sin descuentos inventados: si no hay una novedad real, dilo y propón otro ángulo"
+  ],
+  "formato_salida": {
+    "secuencia": "mensaje | día | asunto (si es email) | texto literal",
+    "variante_precio": "Versión alternativa si el silencio fue por precio",
+    "pregunta_de_tres_opciones": "El texto exacto de la pregunta que facilita contestar",
+    "criterio_de_archivo": "Cuándo marcar el prospecto como cerrado y por qué"
+  },
+  "criterios_calidad": [
+    "El primer mensaje aporta algo aunque el prospecto no compre",
+    "El cierre da tranquilidad y no suena a rendición dolida",
+    "Ningún mensaje repite el mismo argumento de la oferta original"
+  ]
+}

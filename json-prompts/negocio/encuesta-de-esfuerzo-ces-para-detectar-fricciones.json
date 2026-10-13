@@ -1,0 +1,32 @@
+{
+  "tarea": "Crear una encuesta de esfuerzo del cliente (CES) sobre un proceso concreto y su plan de lectura",
+  "contexto": {
+    "negocio": "[NOMBRE DE TU NEGOCIO]",
+    "proceso_a_medir": "[COMPRAR ONLINE / PEDIR CITA / DEVOLVER UN PRODUCTO / DARSE DE ALTA]",
+    "pasos_del_proceso": "[ENUMERA LOS PASOS TAL Y COMO SON HOY]",
+    "momento_de_preguntar": "[JUSTO AL TERMINAR EL PROCESO / A LAS 24 HORAS]",
+    "canal": "[WEB / EMAIL / WHATSAPP]"
+  },
+  "diseño": {
+    "pregunta_principal": "Grado de acuerdo con: el negocio me puso fácil [PROCESO], en escala de 1 a 7 con etiquetas en los extremos",
+    "pregunta_2": "Cerrada: en qué paso concreto costó más, con la lista de pasos reales del proceso",
+    "pregunta_3": "Abierta opcional: qué habría hecho más fácil ese paso",
+    "limite": "Tres preguntas, ni una más"
+  },
+  "reglas": [
+    "Nombrar el proceso con las palabras que usa el cliente, no con las internas",
+    "No preguntar por satisfacción general: aquí solo interesa el esfuerzo",
+    "Las opciones de la pregunta 2 deben coincidir una a una con los pasos reales",
+    "Nada de escalas sin etiquetas ni caritas mezcladas con números"
+  ],
+  "analisis": [
+    "Puntuación media y porcentaje de respuestas de 1 a 3, que son las de alarma",
+    "Paso con más votos como cuello de botella",
+    "Tres hipótesis de por qué ese paso cuesta y cómo comprobar cada una"
+  ],
+  "formato_salida": "1) Texto de la encuesta listo para copiar. 2) Mensaje de envío. 3) Plantilla de lectura de resultados en tabla",
+  "criterios_calidad": [
+    "Se responde en menos de 30 segundos",
+    "El resultado señala un paso concreto, no una sensación general"
+  ]
+}

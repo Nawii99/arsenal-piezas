@@ -1,0 +1,36 @@
+{
+  "tarea": "Diseñar el diagrama de secuencia de la integración entre [TU SISTEMA] y el proveedor externo [NOMBRE DEL PROVEEDOR], incluyendo webhooks y confirmaciones",
+  "rol": "Desarrollador con experiencia integrando APIs de terceros y lidiando con sus fallos",
+  "contexto": {
+    "para_que": "[QUÉ QUIERES CONSEGUIR CON ESTE PROVEEDOR]",
+    "documentacion": "[PEGA LOS ENDPOINTS RELEVANTES O EL RESUMEN DE LA DOCUMENTACIÓN]",
+    "tiene_webhooks": "[SÍ / NO / NO LO SÉ]",
+    "datos_que_le_envias": "[QUÉ DATOS SALEN DE TU SISTEMA, INDICANDO SI SON PERSONALES]",
+    "entorno_pruebas": "[SANDBOX DISPONIBLE SÍ / NO]"
+  },
+  "pasos": [
+    "Separar el diagrama en tres fases: autenticación, operación principal y confirmación asíncrona",
+    "Mostrar cómo se obtiene y se renueva la credencial o token",
+    "Mostrar la petición principal con sus campos clave y la respuesta inmediata",
+    "Mostrar la llegada del webhook, la verificación de su firma y la respuesta 200 al proveedor",
+    "Añadir el mecanismo de comprobación por si el webhook nunca llega",
+    "Señalar qué datos personales salen de tu sistema y con qué base legal"
+  ],
+  "restricciones": [
+    "Nunca confiar solo en la respuesta inmediata para dar una operación por buena",
+    "Todo webhook debe verificarse antes de tocar la base de datos",
+    "Las credenciales nunca aparecen en el diagrama ni en los ejemplos",
+    "Si la documentación no aclara algo, decirlo en vez de inventarlo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Código Mermaid sequenceDiagram con las tres fases separadas por rect o Note",
+    "bloque_2": "Tabla: llamada | método y ruta | datos que van | qué se guarda al volver",
+    "bloque_3": "Checklist de integración con lo que hay que pedir al proveedor antes de empezar",
+    "bloque_4": "Lista 'Dudas para el soporte del proveedor' redactadas y listas para enviar"
+  },
+  "criterios_calidad": [
+    "El diagrama funciona aunque el webhook se retrase o llegue dos veces",
+    "Se distingue con claridad qué parte construyes tú y cuál es del proveedor",
+    "Nadie tiene que abrir la documentación para entender el orden de las llamadas"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Convertir un programa formativo presencial en un curso online manteniendo el aprendizaje y la interacción",
+  "entradas": {
+    "programa_presencial": "[PEGA EL PROGRAMA ACTUAL CON SUS BLOQUES Y HORAS]",
+    "horas_de_aula": "[TOTAL DE HORAS PRESENCIALES]",
+    "dinamicas_actuales": "[DINÁMICAS DE GRUPO, PRÁCTICAS Y MATERIALES QUE USAS]",
+    "formato_online_deseado": "[GRABADO / DIRECTOS / MIXTO]",
+    "plataforma": "[HOTMART, TEACHABLE, MOODLE, ZOOM, LO QUE SEA]"
+  },
+  "criterio_de_reparto": [
+    "A vídeo grabado: explicación estable, demostraciones, teoría que no cambia",
+    "A directo: dudas, corrección de trabajos, debate, casos de los propios alumnos",
+    "A tarea asíncrona: todo lo que en aula era práctica individual",
+    "A material descargable: plantillas, checklists y guías que en aula dabas en papel",
+    "A rediseñar: dinámicas de grupo que no funcionan por pantalla"
+  ],
+  "reglas_de_conversion": [
+    "Una hora de aula equivale aproximadamente a 20-25 minutos de vídeo grabado más práctica",
+    "Ningún vídeo pasa de 12 minutos: si pasa, se parte por subtema",
+    "Cada semana debe tener al menos un punto de contacto humano",
+    "Añade puntos de control para detectar abandono antes de que ocurra"
+  ],
+  "formato_salida": {
+    "1": "Tabla: Bloque presencial | Destino online | Duración nueva | Qué se pierde | Cómo se compensa",
+    "2": "Calendario del curso online semana a semana con entregas y directos",
+    "3": "Lista de vídeos a grabar con título y minutos objetivo",
+    "4": "Lista de materiales descargables a preparar",
+    "5": "Dinámicas presenciales que hay que rediseñar, con su alternativa online concreta",
+    "6": "Riesgos de abandono y en qué semana vigilar"
+  },
+  "criterios_calidad": [
+    "Todos los bloques presenciales tienen destino asignado",
+    "El alumno produce algo cada semana",
+    "La propuesta es realista para grabarla en el tiempo que tiene el formador"
+  ]
+}

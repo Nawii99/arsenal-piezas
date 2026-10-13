@@ -1,0 +1,41 @@
+{
+  "tarea": "Construir el mapa anual de fechas comerciales de un sector concreto, con una idea de campaña por fecha y un orden de prioridad",
+  "contexto": {
+    "sector": "[SECTOR Y TIPO DE NEGOCIO]",
+    "zona": "[PAÍS, COMUNIDAD O CIUDAD, PARA LAS FIESTAS LOCALES]",
+    "temporada_alta": "[MESES EN LOS QUE MÁS VENDES]",
+    "temporada_baja": "[MESES FLOJOS]",
+    "producto_estrella": "[LO QUE MÁS MARGEN TE DEJA]",
+    "historico": "[FECHAS QUE FUNCIONARON O FALLARON OTROS AÑOS]"
+  },
+  "tipos_de_fecha_a_incluir": [
+    "Fiestas y campañas generales: rebajas, vuelta al cole, Black Friday, Navidad",
+    "Fechas propias del sector: ferias, temporadas, renovaciones, normativa o plazos",
+    "Fiestas locales y puentes de la zona indicada",
+    "Fechas del propio negocio: aniversario, cierre de trimestre, vacaciones",
+    "Huecos: meses sin ninguna fecha, donde hay que inventarse un motivo"
+  ],
+  "pasos": [
+    "1. Lista las fechas del año con su mes y su ventana de preparación",
+    "2. Marca cuánta antelación necesita cada una para prepararla sin agobios",
+    "3. Propón para cada fecha una idea de campaña en una frase y el gancho",
+    "4. Puntúa cada fecha de 1 a 5 según encaje con el producto estrella y esfuerzo necesario",
+    "5. Selecciona las 6 fechas del año en las que merece la pena volcarse",
+    "6. Propón un motivo comercial propio para los meses vacíos"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown ordenada por mes",
+    "columnas": ["Mes", "Fecha", "Tipo", "Idea de campaña", "Gancho", "Empezar a preparar el", "Prioridad 1-5"],
+    "anexo": "Lista final 'Las 6 del año' con lo que hay que reservar de presupuesto y tiempo en cada una"
+  },
+  "restricciones": [
+    "Solo fechas reales y comprobables; si dudas de una, márcala como 'verificar'",
+    "Nada de rellenar con días mundiales absurdos que no venden",
+    "Español de España"
+  ],
+  "criterios_calidad": [
+    "Cada mes tiene al menos una fila, aunque sea un motivo inventado por el negocio",
+    "Las prioridades altas coinciden con la temporada alta y el producto estrella",
+    "Las ideas de campaña son distintas entre sí, no la misma promoción repetida"
+  ]
+}

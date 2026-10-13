@@ -1,0 +1,45 @@
+{
+  "tarea": "Montar el sistema de valoraciones de una app: cuándo pedir la reseña, a quién, con qué texto, y cómo responder a las reseñas existentes.",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "nota_actual": "[ESTRELLAS Y NÚMERO DE VALORACIONES EN CADA TIENDA]",
+    "quejas_repetidas": "[LO QUE MÁS SE REPITE EN LAS RESEÑAS MALAS]",
+    "momentos_de_exito": "[ACCIONES DENTRO DE LA APP QUE DEJAN AL USUARIO CONTENTO]",
+    "reseñas_a_responder": "[PEGA AQUÍ LAS RESEÑAS PENDIENTES, CON SU NOTA]"
+  },
+  "reglas_que_imponen_las_tiendas": [
+    "Hay que usar el aviso oficial de valoración del sistema; en iOS el sistema limita cuántas veces se puede mostrar al mismo usuario al año y en Android la cuota también es limitada, así que cada intento cuenta.",
+    "No se puede filtrar a quién se le muestra según lo contento que esté, ni ofrecer premios a cambio de estrellas.",
+    "Sí se puede preguntar antes, dentro de la app, si todo va bien, y ofrecer soporte a quien diga que no.",
+    "En Google Play se puede responder públicamente a cada reseña y el usuario recibe aviso de tu respuesta."
+  ],
+  "pasos": [
+    "1. Elige 2 o 3 momentos de éxito: justo después de que el usuario complete algo que le ha salido bien, nunca después de un error, un pago o una espera.",
+    "2. Añade una condición previa: al menos 3 sesiones, más de 5 días desde la instalación y ningún fallo en la última sesión.",
+    "3. Antes del aviso oficial, muestra una pregunta propia de una línea: qué tal te va con [APP]. A quien responde bien se le lanza el aviso oficial; a quien responde mal se le abre el formulario de soporte.",
+    "4. Limita el intento: como mucho dos veces al año por usuario, y nunca dos veces seguidas en el mismo mes.",
+    "5. Recoge lo que dicen las reseñas malas y ordénalo por número de veces que aparece: eso es tu lista de arreglos.",
+    "6. Responde a todas las reseñas de 1 a 3 estrellas en menos de 48 horas y a las de 5 con una línea corta de agradecimiento.",
+    "7. Cuando arregles un fallo del que se quejaban, vuelve a esa reseña y contesta que ya está resuelto y en qué versión."
+  ],
+  "formato_salida": {
+    "bloque_1": "Momentos elegidos y condiciones previas para lanzar el aviso",
+    "bloque_2": "Textos de la pregunta propia y de las dos ramas, contento y descontento",
+    "bloque_3": "Respuestas redactadas para cada reseña pegada en el contexto, listas para copiar, máximo 60 palabras cada una",
+    "bloque_4": "Lista de arreglos ordenada por número de quejas",
+    "bloque_5": "Rutina semanal de 15 minutos para mantener esto vivo"
+  },
+  "criterios_calidad": [
+    "Ninguna respuesta es un copia y pega: cada una menciona lo que dijo esa persona.",
+    "En las respuestas a reseñas malas hay disculpa breve, explicación concreta y una vía de contacto.",
+    "No se discute ni se culpa al usuario, aunque tenga parte de razón la app.",
+    "El aviso de valoración nunca se dispara tras un error o una pantalla de pago.",
+    "No se ofrecen premios ni descuentos a cambio de valorar."
+  ],
+  "errores_frecuentes": [
+    "Pedir la valoración en la primera apertura.",
+    "Insistir cada vez que el usuario abre la app y quemar los intentos disponibles.",
+    "Responder solo a las buenas.",
+    "Responder a una reseña de una estrella con un mensaje genérico de gracias por tu opinión."
+  ]
+}

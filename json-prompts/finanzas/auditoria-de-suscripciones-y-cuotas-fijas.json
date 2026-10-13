@@ -1,0 +1,36 @@
+{
+  "tarea": "Auditar todas las suscripciones y cuotas fijas del negocio y decidir cuáles cancelar, bajar de plan, renegociar o mantener",
+  "contexto": {
+    "negocio": "[QUÉ HACE TU NEGOCIO]",
+    "personas_en_el_equipo": "[NÚMERO DE PERSONAS]",
+    "facturacion_mensual_media": "[IMPORTE APROXIMADO EN EUROS]"
+  },
+  "entradas": {
+    "suscripciones": "[LISTA: NOMBRE, IMPORTE, MENSUAL O ANUAL, QUIÉN LA USA, PARA QUÉ SIRVE, ÚLTIMA VEZ QUE SE USÓ]",
+    "cuotas_no_software": "[GESTORÍA, SEGUROS, CUOTAS DE ASOCIACIONES, ALQUILERES DE EQUIPOS, DOMINIOS Y HOSTING]"
+  },
+  "procedimiento": [
+    "Pasar todo a coste anual para comparar peras con peras",
+    "Clasificar cada línea como IMPRESCINDIBLE (el negocio se para sin ella), ÚTIL (mejora el trabajo pero hay alternativa) o PRESCINDIBLE (no se usa o se solapa con otra)",
+    "Detectar solapamientos: dos herramientas que hacen lo mismo, licencias de gente que ya no está, planes con más asientos de los necesarios",
+    "Buscar el ahorro fácil: pasar de mensual a anual donde compense, bajar de plan, quitar extras contratados",
+    "Avisar de los costes de salida antes de recomendar una baja: permanencia, pérdida de datos, migración, subida de precio al volver",
+    "Ordenar las acciones por ahorro anual dividido entre el lío que supone hacerlas"
+  ],
+  "restricciones": [
+    "No recomendar cancelar nada relacionado con obligaciones legales, facturación, copias de seguridad o seguridad sin avisar del riesgo",
+    "Si falta el dato de uso real de una herramienta, pedirlo en vez de suponer",
+    "Nada de prometer porcentajes de ahorro: solo sumar los importes reales aportados"
+  ],
+  "formato_salida": {
+    "tabla": ["herramienta", "coste_mensual", "coste_anual", "uso_real", "veredicto", "accion_concreta", "ahorro_anual", "riesgo_de_cortar"],
+    "resumen": ["Gasto fijo anual total", "Ahorro anual si se hace todo lo propuesto", "Las 3 bajas que haría esta misma semana", "Qué revisar dentro de 3 meses"],
+    "extra": "Un aviso de las renovaciones anuales que caen en los próximos 60 días"
+  },
+  "criterios_calidad": [
+    "Cada línea tiene una acción concreta, no un consejo genérico",
+    "El ahorro total es la suma exacta de las acciones propuestas",
+    "Ninguna baja se propone sin decir qué se pierde al hacerla"
+  ],
+  "tono": "práctico, como un socio que mira la cuenta contigo"
+}

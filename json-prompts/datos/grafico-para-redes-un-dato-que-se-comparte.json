@@ -1,0 +1,44 @@
+{
+  "tarea": "Convertir un dato en una pieza visual para redes: gráfico simplificado, titular, texto del post y descripción para diseñarlo",
+  "contexto": {
+    "marca": "[NOMBRE DE TU NEGOCIO Y A QUIÉN SIRVES]",
+    "red_social": "[INSTAGRAM / LINKEDIN / X / TIKTOK]",
+    "formato": "[CUADRADO 1080x1080 / VERTICAL 1080x1350 / HORIZONTAL]",
+    "objetivo": "[QUE ME SIGAN / QUE ME ESCRIBAN / POSICIONARME COMO EXPERTO]"
+  },
+  "entradas": {
+    "dato": "[EL DATO CONCRETO CON SUS CIFRAS]",
+    "fuente": "[DE DÓNDE SALE: TUS PROPIOS DATOS, UN INFORME, UN ORGANISMO]",
+    "periodo_y_muestra": "[DE CUÁNDO ES Y SOBRE CUÁNTOS CASOS]",
+    "colores_de_marca": "[CÓDIGOS HEX]"
+  },
+  "metodo": [
+    "Reducir el dato a una sola comparación: dos o tres valores como mucho",
+    "Elegir la forma visual más rápida de leer: barras cortas, una cifra gigante con contexto, o pictograma de iconos",
+    "Escribir un titular de menos de nueve palabras que ya diga la conclusión",
+    "Añadir la fuente y el periodo en letra pequeña, siempre visibles",
+    "Redactar el texto del post: gancho en la primera línea, explicación en tres frases, y una pregunta o llamada final",
+    "Escribir el prompt de imagen para generar o diseñar la pieza, indicando composición, colores y jerarquía de textos"
+  ],
+  "restricciones": [
+    "El gráfico tiene que entenderse en el móvil sin ampliar",
+    "Máximo tres valores en la pieza principal",
+    "Nunca exagerar la escala ni cortar el eje para inflar diferencias",
+    "Prohibido usar un dato sin decir su fuente y su periodo",
+    "Nada de porcentajes sin base: indicar sobre cuántos casos se calcula",
+    "Texto en español de España, sin superlativos vacíos"
+  ],
+  "formato_salida": {
+    "1": "Titular de la imagen y subtítulo con fuente",
+    "2": "Descripción del gráfico: tipo, valores, orden, colores y qué se destaca",
+    "3": "Prompt de imagen listo para pegar en un generador o instrucciones para Canva",
+    "4": "Texto del post con su primera línea como gancho",
+    "5": "Cinco variantes de titular por si quieres probar cuál funciona mejor"
+  },
+  "criterios_calidad": [
+    "Se entiende pasando el dedo rápido por el feed",
+    "El dato es verificable y la fuente aparece en la imagen",
+    "El post invita a una conversación, no solo a un me gusta"
+  ],
+  "tono": "cercano y con criterio, tuteando"
+}

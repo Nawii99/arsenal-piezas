@@ -1,0 +1,57 @@
+{
+  "tarea": "Evaluar la dependencia de [PROVEEDOR O PLATAFORMA] y preparar un plan de salida realista antes de necesitarlo",
+  "contexto": {
+    "plataforma": "[QUÉ PROVEEDOR Y QUÉ PARTE DEL NEGOCIO VIVE ALLÍ]",
+    "antiguedad": "[CUÁNTO LLEVO Y CUÁNTO PAGO AL MES]",
+    "situacion": "[ESTOY ELIGIENDO / YA DEPENDO / ME HAN SUBIDO EL PRECIO / TEMO UN CIERRE DE CUENTA]",
+    "activos": "[QUÉ TENGO DENTRO: CLIENTES, PEDIDOS, CONTENIDOS, ARCHIVOS, AUTOMATIZACIONES, HISTORIAL]"
+  },
+  "entradas": {
+    "contrato": "[CONDICIONES: PERMANENCIA, PREAVISO, PROPIEDAD DE LOS DATOS, DÓNDE SE ALOJAN]",
+    "integraciones": "[QUÉ OTRAS HERRAMIENTAS DEPENDEN DE ESTA]",
+    "alternativas": "[OPCIONES QUE HE VISTO, SI TENGO ALGUNA]"
+  },
+  "procedimiento": [
+    "1. Mide la dependencia en cuatro ejes: datos que solo existen allí, funciones sin equivalente fuera, dominio o audiencia que controla el proveedor y trabajo hecho a medida sobre su sistema",
+    "2. Prueba la exportación HOY, no cuando haga falta: descarga todo lo exportable y comprueba que se abre y que contiene lo que dice",
+    "3. Detecta lo que NO se exporta: historial de conversaciones, valoraciones, plantillas, automatizaciones, estadísticas, enlaces de pago activos, suscripciones recurrentes",
+    "4. Presta atención especial a las suscripciones y pagos recurrentes: migrar cobros activos entre pasarelas suele requerir solicitud formal y a veces no es posible",
+    "5. Valora el coste de salida en tres monedas: euros, horas de trabajo y riesgo de perder clientes en el proceso",
+    "6. Define tus señales de alarma: subida de precio superior a un porcentaje, cambio de condiciones, caídas repetidas, soporte que no responde o cambio de propietario del proveedor",
+    "7. Reduce la dependencia sin migrar todavía: copia periódica de los datos a un sitio tuyo, correos y dominio bajo tu control, y contactos de clientes en una lista propia",
+    "8. Documenta el plan de salida en fases, con lo que se puede hacer en un fin de semana y lo que requiere semanas",
+    "9. Si estás eligiendo, mete la exportación como criterio de compra y pide ver el formato antes de contratar"
+  ],
+  "que_mirar": [
+    "Quién es el titular del dominio y de la lista de clientes: si es el proveedor, no tienes negocio, tienes alquiler",
+    "Formato de exportación: un PDF o una captura no es una exportación, un CSV o JSON completo sí",
+    "Cláusulas de suspensión de cuenta y si te dan acceso a los datos tras la suspensión",
+    "Dónde se alojan los datos y qué implica para el cumplimiento de protección de datos",
+    "Comisiones por transacción frente a cuota fija: cómo cambia el coste si creces"
+  ],
+  "errores_tipicos": [
+    "Descubrir el día del cierre que la exportación tarda 30 días o no existe",
+    "Confundir tener una copia con poder usarla: exportar datos que ninguna otra herramienta sabe leer",
+    "Construir toda la audiencia dentro de una plataforma que puede cerrarte la cuenta",
+    "Migrar por rabia sin haber probado la alternativa con datos reales"
+  ],
+  "restricciones": [
+    "No recomendar migrar sin comparar coste total de salida con el ahorro esperado",
+    "Distinguir claramente entre lo comprobado y lo que hay que verificar con el proveedor",
+    "Nada de consejos legales: señalar cuándo conviene revisar el contrato con un profesional"
+  ],
+  "formato_salida": {
+    "1_puntuacion": "nivel de dependencia por eje con una frase de justificación cada uno",
+    "2_inventario_de_datos": "tabla: activo | ¿se exporta? | formato | ¿reutilizable fuera? | qué se pierde",
+    "3_coste_de_salida": "euros, horas y riesgos, con el peor caso",
+    "4_senales_de_alarma": "lista de disparadores que activarían el plan",
+    "5_reduccion_de_riesgo": "acciones a hacer este mes sin migrar nada",
+    "6_plan_de_salida": "fases con duración y orden, y qué se hace primero si hay urgencia"
+  },
+  "criterios_calidad": [
+    "La exportación se ha probado de verdad y se dice qué contiene",
+    "Están identificados los activos que no se pueden sacar",
+    "Hay acciones concretas para reducir la dependencia sin migrar",
+    "El coste de salida está en horas y euros, no en adjetivos"
+  ]
+}

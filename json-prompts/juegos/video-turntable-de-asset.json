@@ -1,0 +1,63 @@
+{
+  "tarea": "Escribir el guion tecnico del video de presentacion de un modelo 3D, plano a plano, con ajustes de camara, luz y exportacion",
+  "contexto": {
+    "para_que": "Vender el asset en un marketplace y usarlo como pieza de portfolio y de redes",
+    "quien_lo_ejecuta": "Persona sin perfil tecnico usando el software 3D donde ya tiene el modelo",
+    "duracion_objetivo": "Entre 15 y 30 segundos"
+  },
+  "entradas": {
+    "modelo": "[QUE ES Y ESTILO]",
+    "software": "[BLENDER / OTRO]",
+    "destino_del_video": "[FICHA DE MARKETPLACE / INSTAGRAM Y TIKTOK / PORTFOLIO WEB / EMAIL A CLIENTE]",
+    "tiene_animacion": "[SI / NO]",
+    "mapas_disponibles": "[BASE COLOR, NORMAL, ROUGHNESS, METALLIC, AO]",
+    "ordenador": "[POTENTE / JUSTITO]"
+  },
+  "conocimiento_del_oficio": {
+    "giro": "Un giro completo de 360 grados en 8 a 12 segundos. Mas rapido marea y no deja ver el detalle",
+    "cuanto_gira": "Gira la camara alrededor del objeto, no el objeto: asi la luz y las sombras se mantienen coherentes",
+    "luz": "Un HDRI de estudio neutro mas una luz de contorno detras para separar el modelo del fondo",
+    "fondo": "Gris medio liso o degradado muy suave. El negro puro se come las siluetas oscuras y el blanco puro quema los bordes",
+    "encuadre": "El modelo ocupa entre el 70 y el 80 por ciento de la altura del cuadro, con aire arriba y abajo",
+    "bloques_del_video": "Giro completo, plano de detalle a media distancia, wireframe medio segundo por encima, desglose de mapas y plano final con el modelo en su contexto",
+    "formatos": "1080x1080 para ficha, 1080x1920 para redes, 1920x1080 para portfolio. Se renderiza una vez en el mas alto y se recorta",
+    "exportacion": "H.264, 30 fotogramas por segundo, calidad alta, y peso por debajo del limite del sitio de destino",
+    "audio": "Sin musica con derechos. Si el destino es redes, sube sin audio y pon el sonido en la propia aplicacion"
+  },
+  "pasos": [
+    "1. Fijar duracion total y repartirla entre los bloques",
+    "2. Colocar el modelo en el centro, con el origen en la base y la escala aplicada",
+    "3. Montar la iluminacion base y comprobar que ninguna zona queda quemada ni negra",
+    "4. Crear la camara orbital y fijar el numero de fotogramas del giro",
+    "5. Añadir los planos de detalle apuntando a las tres zonas mas trabajadas del modelo",
+    "6. Preparar el plano de wireframe y el desglose de mapas en cuadricula",
+    "7. Renderizar a resolucion final con una prueba corta previa de 20 fotogramas",
+    "8. Montar, recortar a los formatos de destino y comprobar en movil"
+  ],
+  "errores_tipicos": [
+    "Giro demasiado rapido: no se aprecia el modelo y parece un fallo",
+    "Fondo negro con modelo oscuro: se pierde la silueta",
+    "Renderizar 600 fotogramas sin hacer antes una prueba de 20 y descubrir el fallo cinco horas despues",
+    "Meter texto pequeño que en movil no se lee",
+    "Poner musica de moda y que la plataforma silencie o retire el video"
+  ],
+  "restricciones": [
+    "Solo herramientas gratuitas o el software que el usuario ya tiene",
+    "Ajustes concretos: numero de fotogramas, distancia de camara y resolucion, nada de sugerencias vagas",
+    "Si el ordenador es justito, recorta resolucion antes que calidad de luz"
+  ],
+  "formato_salida": {
+    "1_escaleta": "Tabla: bloque | segundos | que se ve | movimiento de camara",
+    "2_ajustes_de_escena": "Luces, fondo, camara y lente en valores concretos",
+    "3_ajustes_de_render": "Resolucion, fotogramas por segundo, muestras y formato",
+    "4_montaje": "Orden de los clips y cortes",
+    "5_versiones_de_salida": "Formatos, medidas y peso maximo por destino",
+    "6_prueba_final": "Cinco comprobaciones antes de subirlo"
+  },
+  "criterios_calidad": [
+    "La suma de los segundos de la escaleta da la duracion objetivo",
+    "Se puede ejecutar sin instalar nada nuevo",
+    "En el fotograma congelado del segundo 1 ya se entiende que es el objeto",
+    "El video se ve bien en un movil sin sonido"
+  ]
+}

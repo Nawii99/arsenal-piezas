@@ -1,0 +1,36 @@
+{
+  "tarea": "Auditar en qué se me va el tiempo durante una semana normal y proponer qué recortar, automatizar o delegar",
+  "entradas": {
+    "registro_semana": "[PEGA TU AGENDA O TU REGISTRO DE LA SEMANA: DÍA, HORA, QUÉ HICISTE]",
+    "tarifa_hora": "[LO QUE VALE UNA HORA TUYA, AUNQUE SEA APROXIMADO]",
+    "objetivo_actual": "[EL RESULTADO QUE PERSIGUES ESTE MES O TRIMESTRE]",
+    "tareas_que_odio": "[TAREAS QUE TE GUSTARÍA DEJAR DE HACER]",
+    "presupuesto_para_ayuda": "[EUROS AL MES QUE PODRÍAS DEDICAR A DELEGAR O A HERRAMIENTAS]"
+  },
+  "metodo": [
+    "Agrupa cada hora en categorías: venta, entrega al cliente, administración, marketing, formación, interrupciones y tiempo perdido",
+    "Calcula horas y porcentaje por categoría y compara con un reparto sano para el objetivo declarado",
+    "Marca las tareas cuyo coste por hora tuya es mayor que el coste de que la haga otro",
+    "Detecta tareas repetidas más de tres veces en la semana: candidatas a plantilla o automatización",
+    "Identifica las interrupciones más frecuentes y su origen",
+    "Si el registro está incompleto, indícalo y trabaja solo con lo que hay"
+  ],
+  "restricciones": [
+    "No inventes horas que no aparecen en el registro",
+    "Toda recomendación de delegar lleva coste estimado y horas que libera",
+    "Máximo 5 recomendaciones, ordenadas por horas liberadas"
+  ],
+  "formato_salida": {
+    "1_reparto": "Tabla con columnas: Categoría | Horas | % de la semana | Reparto recomendado | Diferencia",
+    "2_fugas": "Las 3 mayores fugas de tiempo con horas semanales que se van en cada una",
+    "3_plan_de_recorte": "Tabla con columnas: Tarea | Acción (recortar, automatizar, delegar) | Cómo | Coste | Horas liberadas al mes",
+    "4_semana_ideal": "Cómo quedaría el reparto de horas si se aplica el plan",
+    "5_primer_movimiento": "El único cambio que haría esta semana y por qué ese"
+  },
+  "criterios_calidad": [
+    "Las horas de las tablas cuadran con el registro aportado",
+    "Cada recomendación se puede poner en marcha en menos de dos semanas",
+    "No se propone delegar nada que supere el presupuesto declarado"
+  ],
+  "tono": "Analítico pero llano, español de España"
+}

@@ -1,0 +1,44 @@
+{
+  "tarea": "Crear un calendario editorial de 30 días listo para publicar, con fecha, canal, formato, gancho y llamada a la acción",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "cliente_ideal": "[EDAD, TRABAJO Y PROBLEMA QUE LE QUITA EL SUEÑO]",
+    "canales": "[INSTAGRAM, TIKTOK, LINKEDIN, NEWSLETTER...]",
+    "objetivo_del_mes": "[EJ: CONSEGUIR 40 CITAS O VENDER EL CURSO DE OCTUBRE]",
+    "mes_y_ano": "[MES Y AÑO]"
+  },
+  "reglas_de_reparto": {
+    "pilares": ["educar", "demostrar con casos y resultados", "entre bastidores", "vender"],
+    "proporcion": "40% educar, 25% demostrar, 20% entre bastidores, 15% vender",
+    "descanso_comercial": "Máximo una publicación de venta directa cada 6 días",
+    "repeticion": "Ningún gancho se repite; un tema puede repetirse solo si cambia el formato"
+  },
+  "entradas": {
+    "temas_obligatorios": "[LANZAMIENTOS, FECHAS O PROMOS QUE SÍ O SÍ TIENEN QUE ESTAR]",
+    "fechas_bloqueadas": "[DÍAS EN LOS QUE NO PUEDES PUBLICAR]",
+    "contenido_que_ya_funciono": "[2 O 3 PUBLICACIONES CON BUENOS RESULTADOS]"
+  },
+  "pasos": [
+    "1. Reparte los 30 días entre los pilares respetando la proporción",
+    "2. Coloca primero los temas obligatorios y respeta las fechas bloqueadas",
+    "3. Asigna a cada día canal y formato según lo que mejor funciona en ese canal",
+    "4. Escribe un gancho concreto de una línea por día, nada de 'consejos útiles'",
+    "5. Cierra cada publicación con una llamada a la acción coherente con el objetivo del mes",
+    "6. Marca las 4 publicaciones prioritarias por si esa semana falta tiempo"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown",
+    "columnas": ["Día", "Canal", "Formato", "Pilar", "Gancho", "Idea visual", "Llamada a la acción", "Prioridad"],
+    "anexo": "Debajo de la tabla, lista de lo que hay que grabar o preparar, agrupada por semana"
+  },
+  "restricciones": [
+    "Español de España, tuteando, sin palabras de moda vacías",
+    "No prometas resultados ni cifras que el negocio no pueda demostrar",
+    "Cada gancho debe entenderse sin leer el resto del calendario"
+  ],
+  "criterios_calidad": [
+    "Alguien de fuera podría grabar el contenido leyendo solo esa fila",
+    "La proporción de pilares se cumple con un margen de un día arriba o abajo",
+    "Ninguna fila dice 'contenido de valor' sin concretar el tema"
+  ]
+}

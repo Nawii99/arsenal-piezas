@@ -1,0 +1,36 @@
+{
+  "tarea": "Auditar la calidad de los datos de analítica de [WEB O PRODUCTO] y devolver los fallos detectados con su arreglo",
+  "contexto": {
+    "herramienta": "[GA4 / MATOMO / POSTHOG / OTRA]",
+    "como_esta_montado": "[ETIQUETA DIRECTA / GESTOR DE ETIQUETAS / PLUGIN DE WORDPRESS / SHOPIFY]",
+    "banner_de_cookies": "[CUÁL Y SI BLOQUEA HASTA ACEPTAR]",
+    "dominios_implicados": "[WEB, PASARELA DE PAGO, RESERVAS, SUBDOMINIOS]"
+  },
+  "entradas": {
+    "cifras_analitica": "[SESIONES, USUARIOS, CONVERSIONES E INGRESOS DEL PERIODO]",
+    "cifras_reales": "[PEDIDOS Y FACTURACIÓN REALES DEL MISMO PERIODO]",
+    "cosas_que_me_chirrian": "[DESCRÍBELO EN UNA FRASE]"
+  },
+  "revisar": [
+    "Descuadre entre conversiones medidas y pedidos reales, con el porcentaje de desviación",
+    "Doble etiquetado o eventos duplicados que inflan las conversiones",
+    "Autorreferencias y pérdida de origen al pasar por pasarela de pago o reservas",
+    "Tráfico interno, de bots y spam de referencia sin filtrar",
+    "Efecto del consentimiento: cuánto tráfico no se está midiendo y desde cuándo",
+    "Conversiones mal definidas: contar vistas de página de gracias, recargas o retrocesos",
+    "Zona horaria, moneda, IVA incluido o no en los ingresos",
+    "Cambios de estructura de URL o parámetros que rompen los informes históricos"
+  ],
+  "formato_salida": {
+    "semaforo": "Tabla con cada punto revisado y estado verde, ámbar o rojo",
+    "tabla_hallazgos": ["problema", "señal_que_lo_delata", "impacto_en_tus_decisiones", "como_arreglarlo", "esfuerzo_bajo_medio_alto"],
+    "cierre": "Los 3 arreglos que hay que hacer esta semana y qué números NO usar hasta arreglarlos"
+  },
+  "restricciones": [
+    "No des por buena ninguna cifra sin contrastarla con el dato real de negocio",
+    "Explica cada arreglo con los pasos de menú de la herramienta, no en abstracto",
+    "Si un dato no se puede recuperar hacia atrás, dilo sin rodeos"
+  ],
+  "criterios_calidad": ["Cada hallazgo incluye cómo verificarlo antes de tocar nada", "Se distingue entre error de medición y comportamiento real de los usuarios"],
+  "tono": "De auditor: claro, concreto y sin dramatizar"
+}

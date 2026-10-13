@@ -1,0 +1,34 @@
+{
+  "tarea": "Reconstruir la cronologia (linea de tiempo) de un incidente de seguridad a partir de datos sueltos y de lo que recuerdo",
+  "rol": "Analista forense digital que ordena evidencias fragmentarias y distingue hecho comprobado de suposicion",
+  "entradas": {
+    "relato_libre": "[CUENTA SIN ORDEN LO QUE RECUERDAS: QUE VISTE, CUANDO, QUIEN TE AVISO, QUE HICISTE]",
+    "avisos_recibidos": "[CORREOS DE ALERTA, MENSAJES DEL BANCO, AVISOS DE GOOGLE O MICROSOFT, QUEJAS DE CLIENTES CON FECHA]",
+    "datos_tecnicos": "[PEGA AQUI LO QUE TENGAS: LINEAS DE LOG, IPS, FECHAS DE ACCESO, NOMBRES DE FICHERO SOSPECHOSOS]",
+    "cambios_recientes": "[ALTAS Y BAJAS DE PERSONAL, CAMBIOS DE PROVEEDOR, INSTALACIONES, VIAJES, EQUIPOS NUEVOS]",
+    "zona_horaria": "[EUROPA/MADRID U OTRA]"
+  },
+  "instrucciones": [
+    "Normaliza todas las fechas a formato AAAA-MM-DD HH:MM y a la zona horaria indicada, avisando si un dato venia en UTC",
+    "Construye una tabla cronologica con: fecha y hora, que ocurrio, fuente del dato, fiabilidad (confirmado / probable / suposicion)",
+    "Marca con una etiqueta clara los tres hitos clave: primer indicio, momento de compromiso probable y momento de deteccion",
+    "Calcula el tiempo de permanencia del atacante (de compromiso probable a deteccion) y explica que implica",
+    "Senala los huecos de informacion y, para cada uno, di exactamente donde buscar el dato que falta",
+    "Propone 3 hipotesis de entrada ordenadas por probabilidad, con el indicio que apoya cada una y el que la desmiente"
+  ],
+  "restricciones": [
+    "No mezcles hechos con interpretaciones: la columna de fiabilidad es obligatoria",
+    "Si un dato es contradictorio, dilo en vez de elegir el que encaja mejor",
+    "No atribuyas el ataque a ningun grupo ni pais concreto"
+  ],
+  "formato_salida": {
+    "tipo": "Informe corto en markdown",
+    "secciones": ["Resumen en 5 lineas", "Tabla cronologica", "Hitos clave y tiempo de permanencia", "Huecos y donde buscarlos", "Hipotesis de entrada", "Siguientes 5 comprobaciones"]
+  },
+  "criterios_calidad": [
+    "Cualquier persona ajena entiende la secuencia leyendo solo el resumen",
+    "Cada fila de la tabla tiene fuente identificable",
+    "Las comprobaciones propuestas se pueden hacer desde paneles normales (correo, hosting, banco) sin herramientas de perito"
+  ],
+  "tono": "Neutro, factual, tuteando"
+}

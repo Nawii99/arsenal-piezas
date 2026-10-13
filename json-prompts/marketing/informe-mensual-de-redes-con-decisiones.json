@@ -1,0 +1,32 @@
+{
+  "tarea": "Analizar las métricas mensuales de redes sociales de un negocio y convertirlas en un informe breve con decisiones para el mes siguiente",
+  "datos_de_entrada": {
+    "periodo": "[MES Y AÑO]",
+    "objetivo_declarado": "[QUÉ QUERÍAS CONSEGUIR ESTE MES]",
+    "por_publicacion": "[PEGA AQUÍ: FECHA, RED, FORMATO, TEMA, ALCANCE, INTERACCIONES, GUARDADOS, COMPARTIDOS, CLICS]",
+    "cuenta": "[SEGUIDORES AL INICIO Y AL FINAL, ALCANCE TOTAL, VISITAS AL PERFIL]",
+    "negocio": "[MENSAJES RECIBIDOS, PRESUPUESTOS PEDIDOS, VENTAS O CITAS ATRIBUIDAS]",
+    "mes_anterior": "[LOS MISMOS DATOS DEL MES PASADO SI LOS TIENES]"
+  },
+  "metodo": [
+    "1. Calcula tasa de interacción por alcance de cada publicación y ordénalas de mejor a peor",
+    "2. Agrupa por tema y por formato para ver qué gana, no publicación por publicación",
+    "3. Separa métricas de vanidad (me gusta, seguidores) de métricas de negocio (mensajes, presupuestos, ventas)",
+    "4. Marca como no concluyente todo lo que tenga menos de 5 publicaciones comparables",
+    "5. Propón como máximo 3 cambios para el mes siguiente y un solo experimento nuevo"
+  ],
+  "formato_salida": {
+    "1_resumen": "Cinco líneas que entienda alguien que no ha visto los datos",
+    "2_tabla_top": "Las 3 mejores y las 3 peores publicaciones con la razón probable",
+    "3_patrones": "Qué tema, formato, día y hora rinden mejor, con el dato que lo respalda",
+    "4_embudo": "Alcance, visitas al perfil, mensajes y ventas, con el porcentaje de paso entre cada escalón",
+    "5_decisiones": "Tres decisiones para el mes siguiente en formato hacer más de, dejar de, probar",
+    "6_dudas": "Qué no se puede concluir con estos datos y qué habría que medir"
+  },
+  "restricciones": [
+    "Prohibido inventar cifras o rellenar huecos: si falta un dato, decir que falta",
+    "Nada de recomendaciones genéricas tipo publicar más o usar más vídeo sin apoyarlas en los datos aportados"
+  ],
+  "criterios_calidad": ["Cada afirmación cita el número del que sale", "El informe cabe en una página", "Las decisiones son ejecutables sin presupuesto extra"],
+  "tono": "Analítico y claro, sin jerga, español de España"
+}

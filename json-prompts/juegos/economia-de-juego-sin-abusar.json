@@ -1,0 +1,53 @@
+{
+  "tarea": "Diseñar la economía y la monetización de un juego: monedas, fuentes y sumideros, catálogo de tienda, precios y controles anti-abuso.",
+  "contexto": "Juego pequeño o mediano hecho por una persona o un equipo diminuto. El objetivo es ingresar de forma sostenible sin mecánicas que exploten a jugadores vulnerables.",
+  "entradas": {
+    "juego": "[NOMBRE, GÉNERO Y DURACIÓN MEDIA DE PARTIDA]",
+    "modelo": "[GRATIS CON COMPRAS | PAGO ÚNICO | PAGO ÚNICO CON EXPANSIONES | ANUNCIOS]",
+    "publico": "[EDAD Y TIPO DE JUGADOR]",
+    "progresion_actual": "[QUÉ SE DESBLOQUEA Y CADA CUÁNTO]",
+    "plataforma": "[MÓVIL | PC | WEB | CONSOLA]"
+  },
+  "procedimiento": [
+    "1. Define qué vende el juego de verdad: comodidad, personalización, contenido nuevo o tiempo. Descarta vender poder de combate si hay competición entre jugadores.",
+    "2. Diseña como mucho dos monedas: una que se gana jugando y otra premium, y explica en una frase para qué sirve cada una.",
+    "3. Haz la tabla de fuentes (de dónde sale la moneda) y sumideros (dónde se gasta), y comprueba que están equilibradas para que no haya inflación ni sequía.",
+    "4. Calcula cuánto tarda un jugador que no paga en conseguir un objeto de la tienda y comprueba que no resulta insultante.",
+    "5. Monta el catálogo con niveles de precio: un artículo de entrada barato, dos intermedios y uno grande, más un pase o expansión si encaja.",
+    "6. Ajusta precios a la plataforma y a la percepción en España, evitando paquetes que dejan monedas sobrantes a propósito.",
+    "7. Define el momento del juego en el que aparece cada oferta, siempre después de que el jugador haya disfrutado algo, nunca en el primer minuto.",
+    "8. Añade la lista de mecánicas prohibidas en tu juego: cajas aleatorias de pago, cuentas atrás agresivas, precios que solo se ven tras varios clics, moneda sobrante forzada.",
+    "9. Establece la protección de menores y la información clara de precio en euros con impuestos.",
+    "10. Define las tres métricas que vas a mirar: porcentaje de jugadores que compran algo, ingreso medio por jugador activo y abandono en las 48 horas siguientes a ver la oferta.",
+    "11. Escribe la prueba de olfato: si el diseño te daría vergüenza explicárselo a un jugador a la cara, cámbialo."
+  ],
+  "restricciones": [
+    "Prohibidas las cajas de botín pagadas con dinero real y las mecánicas que imitan el juego de azar.",
+    "No propongas vender ventaja competitiva en juegos con enfrentamiento entre jugadores.",
+    "Precios en euros, con IVA incluido en la comunicación.",
+    "Nada de proyecciones de ingresos inventadas.",
+    "Toda mecánica propuesta debe tener su efecto en el jugador que no paga escrito al lado."
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen de la propuesta de monetización en 5 líneas.",
+    "bloque_2": "Tabla de monedas: nombre, cómo se gana, en qué se gasta, si se puede comprar.",
+    "bloque_3": "Tabla de fuentes y sumideros con cantidades por hora de juego.",
+    "bloque_4": "Catálogo de tienda: artículo, qué da, precio, a quién va dirigido.",
+    "bloque_5": "Momentos de aparición de cada oferta dentro de la progresión.",
+    "bloque_6": "Lista de mecánicas prohibidas y métricas a vigilar con su valor de alarma."
+  },
+  "criterios_calidad": [
+    "El jugador que no paga sigue teniendo un juego completo y digno.",
+    "Cada moneda tiene una función clara y no se solapan.",
+    "Los precios están en escalones y no hay paquetes con sobrantes forzados.",
+    "Hay una métrica de alarma que detecta si la monetización está espantando gente.",
+    "Ninguna mecánica dependería de esconder información al jugador."
+  ],
+  "errores_frecuentes": [
+    "Tres o cuatro monedas distintas que nadie entiende.",
+    "Enseñar la tienda antes de que el jugador se haya divertido.",
+    "Vender poder y romper el equilibrio competitivo.",
+    "Sumideros insuficientes y economía inflada donde nada tiene valor.",
+    "Medir solo ingresos y no mirar el abandono que provocan."
+  ]
+}

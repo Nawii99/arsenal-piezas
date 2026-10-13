@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar el bloque de instrucciones de fiabilidad de un agente: cómo debe usar los documentos, cómo citar la fuente, cuándo decir que no lo sabe y cuándo derivar a una persona",
+  "entradas": {
+    "agente": "[QUÉ HACE Y CON QUIÉN HABLA]",
+    "fuentes": "[QUÉ DOCUMENTOS TIENE Y CÓMO SE LLAMAN]",
+    "temas_delicados": "[PRECIOS, PLAZOS, GARANTÍAS, TEMAS LEGALES O MÉDICOS...]",
+    "a_quien_deriva": "[NOMBRE, CANAL Y HORARIO]"
+  },
+  "procedimiento": [
+    "Escribe la regla base: si la respuesta no está en los documentos, no se responde.",
+    "Define el formato de cita: nombre del documento y apartado, siempre al final y en una línea.",
+    "Escribe la frase exacta para cuando no hay información, y la frase exacta para derivar a una persona.",
+    "Añade la regla de conflicto: si dos documentos se contradicen, gana el más reciente y se avisa al usuario.",
+    "Añade la regla de datos que caducan: si el documento tiene más de [MESES], avisar de que conviene confirmarlo.",
+    "Cierra con tres ejemplos completos: una respuesta correcta con cita, una de no lo sé y una derivación."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Decirle solo no te inventes nada sin darle la salida alternativa",
+    "Citas tan largas que ahogan la respuesta",
+    "Permitir que rellene huecos con conocimiento general de internet",
+    "No definir qué hacer cuando el cliente insiste"
+  ],
+  "formato_salida": {
+    "tipo": "bloque de instrucciones listo para pegar",
+    "secciones": ["Qué puedes usar", "Cómo citar", "Cuándo callar", "Cuándo derivar", "Conflictos y fechas", "Ejemplos"],
+    "longitud": "máximo 500 palabras"
+  },
+  "restricciones": [
+    "Órdenes en imperativo y en segunda persona, sin explicaciones para el lector humano",
+    "Nada de reglas imposibles de comprobar"
+  ],
+  "criterios_calidad": [
+    "Un lector sabría en 10 segundos qué hará el agente si no encuentra el dato",
+    "Las frases de no lo sé y de derivación están escritas literales",
+    "Los ejemplos usan las fuentes indicadas por el usuario"
+  ]
+}

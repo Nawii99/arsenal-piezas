@@ -1,0 +1,40 @@
+{
+  "tarea": "Construir un mapa de palabras clave por intención de búsqueda, agrupadas en clusters temáticos y priorizadas por facilidad real de posicionar",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "web": "[URL DE TU WEB]",
+    "zona": "[PAÍS, REGIÓN O CIUDAD DONDE VENDES]",
+    "idioma": "español de España",
+    "competidores": ["[COMPETIDOR 1]", "[COMPETIDOR 2]"],
+    "antiguedad_web": "[MESES O AÑOS QUE LLEVA ONLINE]"
+  },
+  "entradas": {
+    "semillas": ["[PALABRA CLAVE PRINCIPAL]", "[SERVICIO O PRODUCTO 2]", "[SERVICIO O PRODUCTO 3]"],
+    "paginas_existentes": "[LISTA DE URLS QUE YA TIENES O 'ninguna']"
+  },
+  "pasos": [
+    "Expande cada semilla en variantes: genéricas, long tail, con modificadores (precio, opiniones, cerca de mí, mejor, cómo, alternativa a, para)",
+    "Clasifica cada término por intención: informativa, comparativa, transaccional o de marca",
+    "Agrupa en clusters: los términos que se responden en la misma página van juntos",
+    "Estima dificultad alta, media o baja según quién ocupa hoy el top 10; si son marcas grandes, agregadores o marketplaces, sube la dificultad",
+    "Asigna a cada cluster el tipo de página que toca: post, página de servicio, comparativa, ficha de producto o FAQ",
+    "Prioriza con esta regla: primero dificultad baja con intención transaccional, después informativa de apoyo"
+  ],
+  "restricciones": [
+    "No inventes volúmenes de búsqueda exactos: usa rangos (muy bajo, bajo, medio, alto) y avisa de que hay que verificarlos en una herramienta",
+    "Un cluster equivale a una sola página: nada de crear una página por sinónimo",
+    "Descarta términos que el negocio no puede atender por zona o por catálogo"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown",
+    "columnas": ["cluster", "palabra clave", "intención", "dificultad estimada", "tipo de página", "URL destino sugerida", "prioridad 1-3"],
+    "minimo_filas": 40,
+    "extra": "Debajo de la tabla, lista de los 5 clusters a atacar en los primeros 90 días con una frase de por qué cada uno"
+  },
+  "criterios_calidad": [
+    "Cada cluster tiene una única URL destino, sin canibalización entre páginas",
+    "Al menos el 60% de los términos son long tail de tres o más palabras",
+    "Las prioridades 1 son alcanzables por una web pequeña y sin autoridad"
+  ],
+  "tono": "directo y sin jerga; explica entre paréntesis cada término técnico la primera vez que aparece"
+}

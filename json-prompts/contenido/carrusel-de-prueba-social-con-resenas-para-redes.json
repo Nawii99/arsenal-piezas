@@ -1,0 +1,40 @@
+{
+  "tarea": "Transformar reseñas reales de clientes en un carrusel de prueba social para redes sociales, con copy por diapositiva e indicaciones visuales",
+  "entradas": {
+    "producto": "[PRODUCTO O SERVICIO]",
+    "resenas_seleccionadas": "[PEGA DE 5 A 12 RESEÑAS REALES]",
+    "red_social": "[INSTAGRAM / LINKEDIN / TIKTOK / FACEBOOK]",
+    "publico": "[A QUIÉN LE HABLAS: EDAD, SITUACIÓN, PROBLEMA]",
+    "estilo_visual": "[COLORES Y ESTILO DE TU MARCA]",
+    "objetivo": "[VISITAS A LA FICHA / GUARDADOS / MENSAJES DIRECTOS]"
+  },
+  "estructura_carrusel": [
+    "Diapositiva 1: gancho basado en la objeción más repetida, no en la marca",
+    "Diapositiva 2: el problema contado como lo cuenta un cliente en su reseña",
+    "Diapositivas 3 a 6: una reseña por diapositiva, cada una cubriendo una objeción distinta",
+    "Penúltima: qué tienen en común todos esos clientes",
+    "Última: llamada a la acción concreta acorde al objetivo"
+  ],
+  "por_cada_diapositiva": [
+    "Titular de máximo 8 palabras",
+    "Texto de apoyo de máximo 25 palabras",
+    "Cita textual recortada sin cambiar el sentido, con el nombre de pila y la inicial",
+    "Idea visual descrita en una frase, con qué se ve y qué transmite"
+  ],
+  "restricciones": [
+    "No inventar reseñas ni añadir palabras dentro de las comillas",
+    "Puedes recortar una cita con puntos suspensivos, nunca cambiar su sentido",
+    "No mostrar apellidos completos, fotos ni datos personales sin permiso",
+    "Texto legible en móvil: nada de párrafos dentro de la imagen"
+  ],
+  "formato_salida": {
+    "tipo": "tabla por diapositiva + pie de publicación",
+    "tabla": "Columnas: nº, titular, texto de apoyo, cita, idea visual",
+    "pie": "Texto de la publicación de máximo 120 palabras, con la llamada a la acción y 8 hashtags"
+  },
+  "criterios_calidad": [
+    "Cada diapositiva resuelve una duda distinta: cero repetición de argumento",
+    "El carrusel se entiende sin sonido y sin leer el pie",
+    "El gancho funcionaría aunque no se supiera de qué marca es"
+  ]
+}

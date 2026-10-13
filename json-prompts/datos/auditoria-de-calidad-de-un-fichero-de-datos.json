@@ -1,0 +1,43 @@
+{
+  "tarea": "Auditar la calidad de un fichero de datos y entregar un informe de diagnóstico priorizado",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "fichero": "[NOMBRE DEL FICHERO O TABLA]",
+    "origen": "[DE DÓNDE SALE: CRM, TPV, EXCEL, FORMULARIO WEB]",
+    "uso_previsto": "[PARA QUÉ SE VA A USAR: FACTURAR, ENVIAR EMAILS, INFORMES]",
+    "volumen_aproximado": "[NÚMERO DE FILAS]"
+  },
+  "entradas": {
+    "muestra_datos": "[PEGA AQUÍ 30-50 FILAS EN CSV, INCLUYENDO LA CABECERA]",
+    "columnas_criticas": "[COLUMNAS QUE NO PUEDEN FALLAR, EJ: EMAIL, NIF, IMPORTE]"
+  },
+  "pasos": [
+    "Inferir el tipo real de cada columna y compararlo con el tipo que debería tener",
+    "Medir por columna: porcentaje de vacíos, valores distintos, mínimo, máximo y los 5 valores más frecuentes",
+    "Detectar mezclas de formato dentro de una misma columna: fechas en varios formatos, decimales con coma y con punto, espacios sobrantes, mayúsculas inconsistentes",
+    "Detectar valores imposibles: fechas futuras, importes negativos, códigos postales de 4 dígitos, teléfonos con letras",
+    "Detectar filas duplicadas y casi duplicadas",
+    "Clasificar cada problema por impacto en el uso previsto y por esfuerzo de arreglo"
+  ],
+  "restricciones": [
+    "No inventes datos ni rellenes huecos por tu cuenta",
+    "Cita siempre un ejemplo real de la muestra, con el valor tal cual aparece",
+    "Si no entiendes para qué sirve una columna, ponlo en dudas en vez de suponer"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "Resumen en 5 líneas para alguien que no es técnico",
+      "Tabla por columna: columna | tipo detectado | % vacíos | problemas | ejemplo real",
+      "Top 10 de problemas ordenados por impacto (alto, medio, bajo) y esfuerzo",
+      "Plan de limpieza en pasos numerados y en el orden correcto",
+      "Dudas que necesito que me confirmes antes de tocar nada"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada problema lleva un ejemplo real y una acción concreta",
+    "El resumen se entiende sin saber de bases de datos",
+    "No se propone borrar nada sin decir a cuántas filas afecta"
+  ],
+  "tono": "claro, directo, sin jerga"
+}

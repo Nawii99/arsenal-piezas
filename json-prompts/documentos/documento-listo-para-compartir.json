@@ -1,0 +1,55 @@
+{
+  "tarea": "Revisar un documento antes de enviarlo fuera, detectar todo lo que no deberia salir y devolver la version depurada mas las instrucciones para limpiar el archivo",
+  "contexto": {
+    "documento": "[QUÉ ES: PRESUPUESTO, MEMORIA, INFORME, CONTRATO, CASO DE ÉXITO]",
+    "destinatario": "[CLIENTE, BANCO, ADMINISTRACIÓN, PUBLICACIÓN EN WEB]",
+    "formato_archivo": "[WORD, PDF, HOJA DE CÁLCULO, PRESENTACIÓN]",
+    "origen": "[REUTILIZADO DE OTRO CLIENTE, INTERNO, MIXTO]"
+  },
+  "entradas": {
+    "texto": "[PEGA EL CONTENIDO COMPLETO DEL DOCUMENTO]",
+    "que_puede_verse": "[DATOS QUE SÍ PUEDEN SALIR]",
+    "nivel": "[ANONIMIZAR DEL TODO O SOLO QUITAR LO INTERNO]"
+  },
+  "pasos": [
+    "Recorre el texto y marca datos personales: nombres, apellidos, DNI, telefonos, emails, direcciones, matriculas, IBAN.",
+    "Marca datos de terceros: nombres de otros clientes, precios pactados con ellos, condiciones particulares.",
+    "Marca lenguaje interno: notas al margen, pendiente de revisar, XXX, poner precio, lorem ipsum, marcadores de plantilla.",
+    "Marca cifras sensibles: margenes, costes de proveedor, comisiones.",
+    "Propon para cada marca una sustitucion coherente: iniciales, Cliente A, importe redondeado o eliminacion.",
+    "Comprueba la coherencia despues de sustituir: que no queden generos, plurales ni referencias cruzadas rotas.",
+    "Escribe las instrucciones del programa para eliminar comentarios, control de cambios, texto oculto, versiones anteriores y propiedades del archivo.",
+    "Recuerda comprobar el nombre del archivo, la ruta impresa en el pie y el autor que aparece en las propiedades.",
+    "Si el destino es un PDF, indica que exportar de nuevo y no renombrar el antiguo, y que un tachon negro encima no borra el texto de debajo."
+  ],
+  "que_mirar": [
+    "Encabezados, pies, notas al pie y cuadros de texto: ahi se esconden los restos del cliente anterior.",
+    "Nombres de archivo tipo presupuesto_juanjo_definitivo_v3_copia.docx.",
+    "Imagenes y capturas con datos legibles dentro.",
+    "Hojas ocultas, filtros y celdas fuera del area visible en hojas de calculo."
+  ],
+  "errores_tipicos": [
+    "Enviar el Word en vez del PDF y que el destinatario vea el historial de cambios.",
+    "Tapar datos con un rectangulo de color en vez de borrarlos.",
+    "Dejar el nombre del cliente anterior en una sola frase del medio del documento.",
+    "Anonimizar tanto que el documento pierde el sentido."
+  ],
+  "restricciones": [
+    "No alteres el contenido tecnico ni las condiciones: solo lo que identifica o compromete.",
+    "Marca cada cambio, nunca sustituyas en silencio.",
+    "Si dudas de si un dato puede salir, preguntamelo en vez de decidir."
+  ],
+  "formato_salida": {
+    "bloque_1_semaforo": "Rojo, ambar o verde segun si el documento se puede enviar tal cual",
+    "bloque_2_hallazgos": "Tabla: fragmento tal cual | tipo de riesgo | sustitucion propuesta",
+    "bloque_3_documento": "El texto ya depurado, listo para copiar",
+    "bloque_4_limpieza_archivo": "Pasos numerados en el programa concreto para quitar comentarios, cambios y metadatos",
+    "bloque_5_check_envio": "Ocho comprobaciones finales antes de pulsar enviar"
+  },
+  "criterios_calidad": [
+    "No queda ningun nombre propio ajeno ni ningun dato de contacto no autorizado.",
+    "El documento depurado se lee natural, sin huecos ni frases cojas.",
+    "Las instrucciones de limpieza sirven para el programa que uso de verdad.",
+    "Cada sustitucion es rastreable en la tabla de hallazgos."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Auditar la consistencia de tono de [NOMBRE DE TU MARCA] en varios canales y entregar un plan de corrección priorizado",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "canal_de_referencia": "[EL CANAL QUE MEJOR REPRESENTA A TU MARCA HOY]",
+    "quien_escribe_hoy": "[PERSONAS, AGENCIAS O HERRAMIENTAS QUE PRODUCEN ESTOS TEXTOS]"
+  },
+  "entradas": {
+    "rasgos_de_voz": "[3 A 5 RASGOS CON SU DEFINICIÓN]",
+    "piezas": "[PEGA DE 5 A 15 TEXTOS INDICANDO CANAL Y FECHA DE CADA UNO]"
+  },
+  "proceso": [
+    "Puntuar cada pieza de 0 a 5 en cada rasgo de voz y justificar la nota con una cita literal del texto",
+    "Medir señales objetivas por pieza: longitud media de frase, tuteo o usted, emojis, exclamaciones, tecnicismos, voz pasiva",
+    "Comparar cada canal con el canal de referencia y calcular la desviación",
+    "Agrupar los fallos en patrones repetidos en vez de listar errores sueltos",
+    "Ordenar las correcciones por impacto en el cliente y por esfuerzo de arreglo"
+  ],
+  "restricciones": [
+    "Toda valoración debe apoyarse en una cita literal de la pieza",
+    "No reescribir las piezas enteras: solo ejemplos de arreglo en las tres peores",
+    "No usar valoraciones subjetivas del tipo suena mejor sin señalar la señal concreta"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de puntuaciones: pieza, canal, nota por rasgo, nota media",
+    "bloque_2": "Tabla de señales objetivas por canal",
+    "bloque_3": "Los 5 patrones de incoherencia más repetidos, con dos ejemplos cada uno",
+    "bloque_4": "Plan de corrección: qué arreglar, en qué orden, esfuerzo alto medio o bajo",
+    "bloque_5": "Tres piezas reescritas como ejemplo de cómo debería sonar"
+  },
+  "criterios_calidad": [
+    "Cada nota tiene su cita: se puede comprobar sin fiarse",
+    "El plan cabe en una página y empieza por lo que más ve el cliente",
+    "Las mediciones son números, no impresiones",
+    "Los patrones son accionables: dicen qué dejar de hacer y qué hacer en su lugar"
+  ]
+}

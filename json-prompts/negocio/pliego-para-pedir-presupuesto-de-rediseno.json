@@ -1,0 +1,37 @@
+{
+  "tarea": "Redactar un pliego de rediseño web para enviar a agencias y freelances y recibir presupuestos comparables",
+  "contexto": {
+    "empresa": "[NOMBRE, SECTOR Y TAMAÑO]",
+    "web_actual": "[DOMINIO Y PLATAFORMA]",
+    "problema": "[QUÉ NO FUNCIONA HOY: NO ENTRAN CLIENTES, ES LENTA, NO SE PUEDE ACTUALIZAR, DA VERGÜENZA ENSEÑARLA...]",
+    "objetivo_negocio": "[QUÉ QUIERES CONSEGUIR: MÁS PRESUPUESTOS, MÁS VENTAS ONLINE, MENOS LLAMADAS DE DUDAS...]"
+  },
+  "alcance": {
+    "incluido": "[EJ: DISEÑO, MAQUETACIÓN, MIGRACIÓN DE CONTENIDOS, REDIRECCIONES, FORMACIÓN]",
+    "no_incluido": "[EJ: FOTOGRAFÍA, TEXTOS, CAMPAÑAS DE PUBLICIDAD]",
+    "paginas_estimadas": "[NÚMERO Y TIPOS DE PÁGINA]",
+    "contenidos": "[QUIÉN APORTA TEXTOS E IMÁGENES]"
+  },
+  "requisitos": [
+    "Debe verse bien en móvil y cargar rápido",
+    "Debe poder actualizarlo una persona sin conocimientos técnicos",
+    "Debe incluir mapa de redirecciones desde las URLs actuales",
+    "Debe cumplir la normativa española de cookies y protección de datos",
+    "[AÑADE TUS REQUISITOS PROPIOS]"
+  ],
+  "lo_que_debe_incluir_la_propuesta": [
+    "Desglose de partidas con precio por cada una",
+    "Calendario con fases y fecha de publicación",
+    "Qué se espera de nosotros y cuándo",
+    "Qué pasa con el mantenimiento y a qué precio",
+    "Dos o tres trabajos parecidos con enlace",
+    "Quién se queda la propiedad de la web y de los accesos"
+  ],
+  "formato_salida": "Documento en Markdown con portada, contexto, objetivos, alcance, requisitos, entregables, calendario, criterios de elección, presupuesto orientativo y datos de contacto",
+  "criterios_calidad": [
+    "Un proveedor puede presupuestar sin hacer más de tres preguntas",
+    "Está claro qué queda fuera del precio",
+    "Los objetivos son medibles y no adjetivos vacíos"
+  ],
+  "tono": "profesional, breve y sin palabrería"
+}

@@ -1,0 +1,45 @@
+{
+  "tarea": "Convertir una idea de app en una especificación funcional lista para montarse en una herramienta sin programar, o para encargarla a un tercero.",
+  "contexto": {
+    "idea": "[QUÉ QUIERES QUE HAGA LA APP]",
+    "para_quien": "[USUARIOS FINALES Y CUÁNTOS ESPERAS]",
+    "quien_la_usa_por_dentro": "[TÚ, TU EQUIPO, CLIENTES, PROVEEDORES]",
+    "proceso_que_sustituye": "[LO QUE HOY HACES CON WHATSAPP, EXCEL O PAPEL]",
+    "presupuesto_mensual": "[EUROS AL MES QUE PUEDES ASUMIR]",
+    "plazo": "[CUÁNDO LA NECESITAS FUNCIONANDO]"
+  },
+  "pasos": [
+    "1. Escribe la app como una frase: permite a [QUIÉN] hacer [QUÉ] para conseguir [QUÉ RESULTADO].",
+    "2. Define el modelo de datos: cada tabla con su nombre, sus campos, el tipo de cada campo y con qué otra tabla se relaciona. Empieza siempre por aquí, no por las pantallas.",
+    "3. Define los roles y qué puede ver y tocar cada uno. Sé explícito con lo que NO puede ver cada rol.",
+    "4. Lista las pantallas: para cada una, qué datos muestra, qué filtros tiene, qué acciones ofrece y a dónde lleva cada acción.",
+    "5. Define los automatismos: cuando pasa X, entonces Y. Correos, avisos, cambios de estado.",
+    "6. Marca el mínimo indispensable de la primera versión y aparta el resto a una lista de después. Si el mínimo tiene más de 6 pantallas, recórtalo.",
+    "7. Elige la herramienta según el caso: catálogo o directorio sencillo sobre una hoja de cálculo, panel interno para equipo, portal de clientes con zona privada o app con lógica compleja. Justifica la elección con el modelo de datos y el presupuesto.",
+    "8. Calcula el coste mensual real incluyendo el precio por usuario o por editor, que es donde se disparan estas herramientas.",
+    "9. Anota los límites conocidos de la herramienta elegida: número de filas, usuarios, si funciona sin conexión y si se puede exportar todo si un día te vas."
+  ],
+  "formato_salida": {
+    "bloque_1": "Frase de la app y lista de las 3 cosas que debe resolver sí o sí",
+    "bloque_2": "Modelo de datos en tabla: tabla, campo, tipo, obligatorio, relación",
+    "bloque_3": "Roles y matriz de permisos por pantalla",
+    "bloque_4": "Ficha por pantalla: nombre, datos que muestra, acciones, destino de cada acción y estado vacío",
+    "bloque_5": "Automatismos en formato cuando... entonces...",
+    "bloque_6": "Versión mínima y lista de después, separadas",
+    "bloque_7": "Herramienta recomendada con motivo, coste mensual estimado y límites a vigilar"
+  },
+  "criterios_calidad": [
+    "El modelo de datos está antes que las pantallas y ninguna pantalla muestra un campo que no exista en el modelo.",
+    "Cada acción de cada pantalla dice qué pasa después.",
+    "Los permisos están escritos también en negativo: qué no puede ver cada rol.",
+    "La versión mínima se puede montar en el plazo indicado.",
+    "Se dice cómo sacar los datos de la herramienta si hay que cambiar.",
+    "No se propone ninguna función que la herramienta elegida no soporte."
+  ],
+  "errores_frecuentes": [
+    "Diseñar pantallas bonitas sin haber decidido qué se guarda.",
+    "Meter en la primera versión el chat, el panel de estadísticas y los pagos.",
+    "Elegir la herramienta por moda y descubrir el precio por usuario cuando ya hay 30 usuarios dentro.",
+    "No pensar qué ve un usuario cuando no hay datos todavía."
+  ]
+}

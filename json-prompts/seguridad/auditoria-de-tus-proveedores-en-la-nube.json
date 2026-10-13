@@ -1,0 +1,33 @@
+{
+  "tarea": "Auditar los proveedores en la nube de un negocio para saber qué copian ellos, qué debe copiar el usuario y cómo exportar los datos",
+  "contexto": {
+    "proveedores": "[LISTA CON PLAN CONTRATADO: EJ. GOOGLE WORKSPACE, SHOPIFY, HOLDED, MAILCHIMP, HOSTING]",
+    "datos_en_cada_uno": "[QUÉ INFORMACIÓN VIVE EN CADA HERRAMIENTA]",
+    "administradores": "[QUIÉN TIENE LA CUENTA PRINCIPAL DE CADA UNA]",
+    "pais_del_negocio": "España"
+  },
+  "a_revisar_por_proveedor": [
+    "Qué guarda el proveedor por defecto y durante cuánto tiempo",
+    "Qué pasa si borras algo por error o si alguien borra la cuenta: papelera, plazo y recuperación",
+    "Qué pasa si dejas de pagar o suspenden la cuenta y en cuántos días se borra todo",
+    "Cómo se exportan los datos: formato, si es completo o parcial y cuánto tarda",
+    "Si la exportación se puede automatizar o programar",
+    "Segundo factor, cuentas de administrador de repuesto y correo de recuperación",
+    "Dónde están alojados los datos y si hay contrato de encargado del tratamiento firmado"
+  ],
+  "restricciones": [
+    "Si no conoces con certeza la política actual de un proveedor, dilo y deja una tarea de comprobación con la ruta del panel donde mirarlo",
+    "No inventes plazos ni cláusulas",
+    "Distingue lo que protege al proveedor de lo que protege al cliente"
+  ],
+  "formato_salida": {
+    "tabla": ["Proveedor", "Datos que aloja", "Qué copia el proveedor", "Riesgo real", "Qué debo copiar yo", "Cómo exportar", "Cada cuánto", "Responsable"],
+    "plan": "Rutina de exportaciones periódicas con calendario",
+    "pendientes": "Preguntas exactas que enviar al soporte de cada proveedor"
+  },
+  "criterios_calidad": [
+    "Ningún proveedor queda con la casilla de exportación en blanco",
+    "Se identifica al menos un escenario de pérdida por cada herramienta",
+    "Las rutas de exportación son accionables o incluyen la comprobación pendiente"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Diseñar el circuito de alta de un cliente nuevo, desde que acepta hasta que el trabajo está en marcha",
+  "rol": "Responsable de operaciones que diseña recorridos de cliente en negocios de servicios",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "tipo_de_venta": "[PROYECTO PUNTUAL, CUOTA MENSUAL, PEDIDO DE PRODUCTO...]",
+    "quien_atiende": "[TÚ SOLO O QUIÉN MÁS INTERVIENE]",
+    "canales": "[EMAIL, WHATSAPP, TELÉFONO, PRESENCIAL]"
+  },
+  "entradas": {
+    "que_necesito_del_cliente": "[DATOS, DOCUMENTOS, ACCESOS, MEDIDAS, LO QUE SEA]",
+    "forma_de_cobro": "[SEÑAL, PAGO ÍNTEGRO, PLAZOS, MÉTODOS ACEPTADOS]",
+    "plazo_de_arranque": "[CUÁNTO DEBERÍA TARDAR DESDE EL SÍ HASTA EMPEZAR]",
+    "problemas_habituales": "[LO QUE SIEMPRE SE ATASCA EN LOS ARRANQUES]"
+  },
+  "instrucciones": [
+    "Divide el alta en hitos claros, cada uno con lo que tiene que ocurrir para pasar al siguiente",
+    "Para cada hito indica quién actúa, por qué canal, en cuánto tiempo y qué documento o mensaje se envía",
+    "Escribe el texto listo para copiar de los mensajes clave: confirmación, petición de datos, aviso de cobro y aviso de arranque",
+    "Incluye qué hacer si el cliente no responde: cuándo insistir, cuántas veces y con qué mensaje",
+    "Define el punto de no retorno: qué debe estar cobrado o firmado antes de empezar a trabajar",
+    "Añade una checklist de alta que se pueda marcar cliente a cliente",
+    "Señala qué se puede automatizar con un formulario o mensajes preparados"
+  ],
+  "restricciones": [
+    "Los mensajes al cliente en tono cercano pero profesional, tuteando, sin plantillas frías",
+    "Nada de pedir al cliente datos que no se vayan a usar",
+    "Máximo 7 hitos"
+  ],
+  "formato_salida": {
+    "tipo": "documento en markdown",
+    "secciones": ["Esquema del recorrido en una línea", "Hitos detallados", "Mensajes listos para copiar", "Qué hacer si no contesta", "Checklist de alta", "Qué automatizar"]
+  },
+  "criterios_calidad": [
+    "Cada hito tiene responsable y plazo",
+    "El cobro está colocado en un punto concreto y justificado",
+    "La checklist cabe en media página"
+  ]
+}

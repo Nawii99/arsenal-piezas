@@ -1,0 +1,35 @@
+{
+  "tarea": "Analizar un historico de devoluciones, encontrar las causas raiz y proponer acciones para reducir la tasa",
+  "entradas": {
+    "periodo": "[MES O TRIMESTRE ANALIZADO]",
+    "pedidos_totales": "[NUMERO]",
+    "devoluciones_totales": "[NUMERO]",
+    "listado": "[PEGA AQUI: PRODUCTO, MOTIVO, IMPORTE, FECHA, CANAL, UNA LINEA POR DEVOLUCION]",
+    "coste_gestion": "[COSTE MEDIO DE GESTIONAR UNA DEVOLUCION]",
+    "margen_medio": "[MARGEN MEDIO POR PEDIDO]"
+  },
+  "analisis": [
+    "Calcular la tasa de devolucion global y por producto",
+    "Agrupar los motivos en categorias: expectativa fallida, talla o medida, defecto, envio danado, error de pedido, arrepentimiento puro",
+    "Detectar productos con tasa muy por encima de la media y decir cuanto margen se llevan",
+    "Distinguir motivos evitables por ti de los inevitables",
+    "Estimar el dinero perdido por categoria: producto, portes y horas"
+  ],
+  "salida": {
+    "1_resumen": "5 conclusiones en una linea cada una, ordenadas por dinero en juego",
+    "2_tabla_causas": "Categoria | Casos | Porcentaje | Coste estimado | Evitable si o no",
+    "3_top_productos": "Los 5 productos que mas devoluciones generan y la hipotesis de por que",
+    "4_acciones": "8 acciones concretas ordenadas por esfuerzo bajo e impacto alto",
+    "5_cambios_ficha": "Que anadir exactamente a la descripcion, fotos o tabla de medidas de los 3 peores productos",
+    "6_medicion": "Que 3 numeros vigilar el proximo mes para saber si ha funcionado"
+  },
+  "restricciones": [
+    "No inventar datos que no esten en el listado: si faltan, decir que campo hay que empezar a registrar",
+    "Cada accion debe indicar quien la hace y en cuanto tiempo",
+    "Nada de recomendaciones genericas tipo mejorar la comunicacion"
+  ],
+  "criterios_calidad": [
+    "Las conclusiones se apoyan en numeros del listado",
+    "Se puede empezar la primera accion hoy mismo"
+  ]
+}

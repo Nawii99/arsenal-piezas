@@ -1,0 +1,18 @@
+{
+  "tarea": "Escribir tests en Go para un código dado, con estilo de tabla y foco en los casos que de verdad fallan",
+  "rol": "Ingeniero de Go que escribe tests que encuentran fallos, no tests que solo suben el porcentaje",
+  "entradas": {
+    "codigo": "[PEGA EL CÓDIGO GO A TESTEAR]",
+    "comportamiento_critico": "[QUÉ NO PUEDE FALLAR NUNCA EN ESTE CÓDIGO]",
+    "dependencias_externas": "[BASE DE DATOS, API EXTERNA, RELOJ, SISTEMA DE FICHEROS O NINGUNA]",
+    "cobertura_actual": "[PORCENTAJE APROXIMADO O 'NO LO SÉ']"
+  },
+  "estilo_obligatorio": ["tests de tabla: un slice de structs con nombre, entrada y salida esperada, recorrido con t.Run(tc.nombre, ...)", "nombres de caso descriptivos en español que digan el escenario, no 'caso1'", "usa t.Parallel() cuando los casos sean independientes", "usa t.Helper() en las funciones auxiliares de aserción", "usa httptest para HTTP y t.TempDir() para ficheros; nada de red real ni de base de datos real", "inyecta el reloj como dependencia en vez de llamar a time.Now() dentro de la lógica", "comprueba errores con errors.Is y errors.As, no comparando el texto del error"],
+  "casos_a_cubrir": ["camino feliz", "entrada vacía, nil y cero", "límites: primero, último, uno más del máximo", "caracteres especiales, acentos y emojis si hay texto", "errores de la dependencia externa: timeout, respuesta 500, JSON inválido", "concurrencia si el código se usa desde varias goroutines", "casos de dinero y redondeo si hay importes"],
+  "reglas": ["No testees métodos privados triviales ni getters: céntrate en el comportamiento observable", "Si detectas que el código es difícil de testear, propón el cambio mínimo de diseño que lo arregla", "Marca qué casos son de regresión de un fallo probable y por qué"],
+  "formato_salida": {
+    "orden": ["lista de casos elegidos con una frase de justificación cada uno", "fichero de test completo, listo para pegar", "dobles de prueba o interfaces necesarias", "comandos: go test ./... -race -cover y go test -coverprofile", "qué NO cubren estos tests y qué haría falta para cubrirlo"]
+  },
+  "criterios_calidad": ["los tests compilan y pasan contra el código dado", "al menos un test fallaría si se introduce un fallo típico en la lógica", "no hay tests que dependan del orden de ejecución ni de esperas con sleep"],
+  "tono": "pragmático"
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Descomponer un objetivo grande en un plan de 90 días con hitos quincenales, entregables verificables y el primer paso de esta semana",
+  "contexto": {
+    "objetivo": "[EL OBJETIVO GRANDE, LO MÁS CONCRETO POSIBLE]",
+    "fecha_limite": "[FECHA EN LA QUE TIENE QUE ESTAR HECHO]",
+    "punto_de_partida": "[QUÉ TIENES YA HECHO O EN MARCHA]",
+    "recursos": "[HORAS POR SEMANA, PRESUPUESTO Y PERSONAS]",
+    "intentos_previos": "[QUÉ HAS PROBADO ANTES Y POR QUÉ NO FUNCIONÓ]",
+    "restriccion_gorda": "[LA LIMITACIÓN QUE MÁS TE CONDICIONA: DINERO, TIEMPO, CONOCIMIENTO...]"
+  },
+  "metodo": [
+    "Define primero cómo sabremos que el objetivo está conseguido, con un dato observable",
+    "Trabaja hacia atrás desde la fecha límite en 6 hitos quincenales",
+    "Cada hito termina en algo que se puede enseñar: un documento, una página publicada, una venta, una prueba",
+    "Marca las dependencias: qué hito no puede empezar hasta que otro esté cerrado",
+    "Señala el hito más arriesgado y adelanta lo que se pueda para probarlo antes",
+    "Baja solo el primer hito a tareas semanales; el resto queda a nivel de entregable"
+  ],
+  "restricciones": [
+    "Las horas comprometidas por quincena nunca superan las horas disponibles declaradas",
+    "Nada de hitos tipo investigar o pensar: cada uno produce algo tangible",
+    "Si el objetivo no cabe en 90 días con esos recursos, dilo al principio y propón una versión reducida"
+  ],
+  "formato_salida": {
+    "definicion_de_exito": "Una frase con el dato que confirma que el objetivo está logrado",
+    "tabla_hitos": "Tabla con columnas: Quincena | Hito | Entregable | Cómo se comprueba | Depende de | Horas estimadas",
+    "semana_1": "Las tareas de esta semana con duración y orden",
+    "riesgos": "3 riesgos con su plan de mitigación",
+    "veredicto": "¿Cabe en 90 días? Sí, ajustado o no, con explicación en dos líneas"
+  },
+  "criterios_calidad": [
+    "Cada entregable se puede enseñar a otra persona",
+    "Las dependencias son coherentes: nada depende de algo posterior",
+    "El primer paso se puede empezar hoy mismo"
+  ],
+  "tono": "Realista, sin optimismo de folleto, español de España"
+}

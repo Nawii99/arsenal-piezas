@@ -1,0 +1,35 @@
+{
+  "tarea": "Rellenar el lienzo de modelo de negocio (Business Model Canvas) de mi negocio con contenido concreto, y auditar qué bloques están flojos",
+  "contexto": {
+    "negocio": "[DESCRIBE TU NEGOCIO EN 3 O 4 FRASES]",
+    "cliente_principal": "[A QUIÉN LE VENDES HOY O A QUIÉN QUIERES VENDER]",
+    "como_cobras": "[PAGO ÚNICO / CUOTA / POR HORAS / COMISIÓN / MIXTO]",
+    "canales_actuales": "[BOCA A BOCA, INSTAGRAM, TIENDA FÍSICA, MARKETPLACE...]",
+    "tres_costes_mayores": "[LOS TRES GASTOS MÁS GRANDES AL MES]"
+  },
+  "bloques_a_rellenar": [
+    "Segmentos de clientes: máximo 3, cada uno con quién es, qué le duele y cuánto puede pagar",
+    "Propuesta de valor: una frase por segmento, con el resultado que se lleva el cliente",
+    "Canales: cómo te descubren, cómo compran y cómo reciben el servicio",
+    "Relación con clientes: cómo captas, cómo fidelizas y cómo recuperas al que se va",
+    "Fuentes de ingresos: cada vía con su precio, su frecuencia y su peso estimado sobre el total",
+    "Recursos clave: personas, herramientas, permisos, local o stock imprescindibles",
+    "Actividades clave: las 4 o 5 cosas que sí o sí hay que hacer cada semana",
+    "Socios clave: proveedores, colaboradores, prescriptores y qué pasa si uno falla",
+    "Estructura de costes: fijos y variables separados, marcando cuáles crecen con las ventas"
+  ],
+  "instrucciones": [
+    "Nada de frases genéricas: si un bloque no lo puedes concretar con mis datos, escribe 'sin resolver' y explica qué hay que averiguar",
+    "Marca cada bloque con un semáforo: verde (resuelto y probado), ámbar (supuesto sin comprobar), rojo (sin resolver)",
+    "Al final, señala las 2 incoherencias más graves entre bloques, por ejemplo canal caro para un ticket bajo"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown con columnas: Bloque | Contenido concreto | Semáforo | Qué falta comprobar",
+    "extras": ["Apartado 'Incoherencias detectadas' con 2 o 3 puntos", "Apartado 'Los 3 deberes de esta semana' con acciones de menos de 2 horas cada una"]
+  },
+  "criterios_calidad": [
+    "Cada bloque menciona datos míos, no ejemplos de manual",
+    "Los ingresos y los costes usan las mismas unidades y periodos",
+    "Ningún bloque queda en blanco: o tiene contenido o dice qué falta"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Definir un regalo de suscripción (lead magnet) y escribir todos los textos del alta: formulario, página de gracias y correo de entrega",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "cliente_ideal": "[PERFIL, SITUACIÓN Y NIVEL DE CONOCIMIENTO]",
+    "problema_urgente": "[EL PROBLEMA QUE LE QUITA EL SUEÑO HOY]",
+    "oferta_de_pago": "[LO QUE LE VENDERÁS DESPUÉS]",
+    "donde_ira_el_formulario": "[PORTADA, BLOG, VENTANA EMERGENTE, BIO DE INSTAGRAM, TIENDA]",
+    "formato_preferido": "[PDF, PLANTILLA, CHECKLIST, MINICURSO POR EMAIL, DESCUENTO, CALCULADORA]"
+  },
+  "paso_1_ideas": "Propón 5 regalos distintos. Para cada uno: nombre comercial, qué resuelve en una frase, tiempo que le cuesta al lector consumirlo, esfuerzo para crearlo (bajo/medio/alto) y cómo conecta con la oferta de pago",
+  "paso_2_eleccion": "Recomienda uno y justifica en 3 líneas por qué es el que más conecta con lo que vendes después",
+  "paso_3_textos": [
+    "Titular del formulario (máx 60 caracteres) centrado en el resultado, no en el formato",
+    "Subtítulo de una frase con lo que recibe y en cuánto tiempo",
+    "Tres viñetas de beneficio concreto",
+    "Texto del botón en primera persona, por ejemplo 'Quiero la plantilla'",
+    "Línea de confianza bajo el botón: qué le enviarás, cada cuánto y que puede darse de baja cuando quiera",
+    "Texto de la casilla de consentimiento y aviso de privacidad resumido en 2 líneas",
+    "Página de gracias: qué acaba de pasar, qué revise la carpeta de promociones y una acción extra",
+    "Correo de entrega: asunto, preheader y cuerpo con el enlace de descarga en el primer tercio"
+  ],
+  "restricciones": [
+    "El regalo debe resolver un problema pequeño y completo, no ser un catálogo disfrazado",
+    "Nada de 'apúntate a mi newsletter' como única promesa",
+    "Sin promesas de resultados garantizados",
+    "Cumple RGPD: finalidad, responsable y derecho de baja indicados de forma clara"
+  ],
+  "formato_salida": "Sección 1: tabla con las 5 ideas. Sección 2: la elegida y el porqué. Sección 3: todos los textos listos para copiar, cada uno con su etiqueta",
+  "criterios_calidad": [
+    "El titular se entiende en 3 segundos sin conocer la marca",
+    "El regalo se puede crear en menos de una jornada de trabajo",
+    "Todos los textos usan las mismas palabras que usaría el cliente, no jerga interna"
+  ]
+}

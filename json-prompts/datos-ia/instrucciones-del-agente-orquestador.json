@@ -1,0 +1,35 @@
+{
+  "tarea": "Escribe las instrucciones de sistema completas del agente orquestador que coordina a mi equipo de agentes",
+  "contexto": {
+    "objetivo_del_flujo": "[QUE TIENE QUE CONSEGUIRSE, EJ: UN PRESUPUESTO ENVIADO AL CLIENTE]",
+    "agentes_disponibles": "[LISTA: NOMBRE - QUE SABE HACER - QUE DEVUELVE]",
+    "entrada_inicial": "[QUE LLEGA AL EMPEZAR, EJ: UN EMAIL DEL CLIENTE]",
+    "limite_de_pasos": "[NUMERO MAXIMO DE TURNOS, EJ: 12]",
+    "definicion_de_terminado": "[CUANDO SE CONSIDERA ACABADO]"
+  },
+  "debe_incluir": [
+    "Un parrafo de identidad: el orquestador reparte y decide, no hace el trabajo de los especialistas",
+    "Reglas de eleccion: que agente se llama en cada situacion y con que pregunta exacta",
+    "Como resume el resultado de un agente antes de pasarselo al siguiente",
+    "Regla de un solo agente por turno salvo tareas independientes declaradas",
+    "Contador de pasos y que hacer al llegar al limite: parar y entregar lo que haya",
+    "Frase literal con la que cierra el flujo y entrega el resultado"
+  ],
+  "reglas_duras": [
+    "No inventar datos que solo puede aportar un agente o el humano",
+    "No llamar dos veces al mismo agente con la misma peticion; si hace falta, cambiar la peticion",
+    "Si dos agentes se contradicen, pedir la fuente a cada uno y decidir explicando por que",
+    "Si falta un dato de entrada, preguntar al humano antes de arrancar"
+  ],
+  "formato_salida": {
+    "bloque_1": "texto de sistema listo para copiar y pegar",
+    "bloque_2": "tabla de decision: situacion -> agente a llamar -> peticion exacta",
+    "bloque_3": "ejemplo de una ejecucion completa, turno a turno, con un caso real de mi negocio",
+    "bloque_4": "lista de 5 pruebas para comprobar que el orquestador se comporta"
+  },
+  "criterios_calidad": [
+    "Ante la misma entrada, el orquestador elige siempre el mismo camino",
+    "Nunca se queda dando vueltas: siempre acaba en entrega o en pregunta al humano",
+    "El texto es autosuficiente, sin depender de lo hablado en el chat"
+  ]
+}

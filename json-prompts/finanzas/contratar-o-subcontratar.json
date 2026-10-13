@@ -1,0 +1,53 @@
+{
+  "tarea": "Comparar tres formas de ampliar capacidad (contratar, subcontratar o reorganizar sin ampliar) con coste real por hora, punto de equilibrio y riesgo de cada una.",
+  "contexto": {
+    "negocio": "[QUÉ HACES Y QUÉ PARTE DEL TRABAJO QUIERES SOLTAR]",
+    "situacion": "[RECHAZO TRABAJO / TRABAJO 60 HORAS / TENGO UN PICO DE 3 MESES]",
+    "aviso": "Los costes de Seguridad Social, convenio y tipo de contrato los confirma la gestoría antes de firmar nada"
+  },
+  "entradas": {
+    "tareas_a_delegar": "[LISTA DE TAREAS, HORAS AL MES DE CADA UNA Y SI SON REPETITIVAS O REQUIEREN CRITERIO]",
+    "salario_bruto_previsto": "[BRUTO ANUAL O MENSUAL DEL PUESTO Y JORNADA]",
+    "tarifa_freelance": "[PRECIO POR HORA O POR ENTREGA DEL PROVEEDOR]",
+    "facturacion_actual": "[MEDIA MENSUAL SIN IVA Y ESTABILIDAD: CUÁNTA ES RECURRENTE]",
+    "margen_medio": "[MARGEN POR HORA DE TU TRABAJO FACTURABLE]",
+    "capacidad_de_supervision": "[HORAS AL MES QUE PUEDES DEDICAR A FORMAR Y REVISAR]"
+  },
+  "metodo": [
+    "1. Separa las tareas en dos montones: las repetitivas y explicables por escrito (delegables ya) y las que dependen de tu criterio (delegables más tarde o nunca).",
+    "2. Coste real de contratar: bruto más cotización de la empresa, más equipo, software, formación y las horas tuyas de supervisión valoradas a tu margen por hora. Divide entre horas productivas reales, que nunca son todas las de jornada.",
+    "3. Coste real de subcontratar: tarifa más el tiempo tuyo de briefing y revisión, más el riesgo de disponibilidad si el freelance se cae en temporada alta.",
+    "4. Coste de no ampliar: horas que sigues echando, trabajos rechazados y desgaste. Ponle número aunque sea aproximado.",
+    "5. Punto de equilibrio: facturación adicional estable al mes necesaria para cubrir el coste real de cada opción, expresada también en número de clientes o pedidos.",
+    "6. Prueba de estabilidad: mira qué parte de la facturación es recurrente. Si el pico dura menos de seis meses, la contratación indefinida no es la opción.",
+    "7. Camino recomendado por fases: primero subcontratar una tarea concreta durante dos o tres meses con entregables medibles, luego ampliar y solo entonces contratar si la demanda aguanta.",
+    "8. Define lo que hay que dejar preparado antes de delegar: procedimiento escrito, accesos, plantilla de entrega y criterio de revisión.",
+    "9. Señales para parar: si tras dos meses tu tiempo de revisión no baja, el problema es el proceso y no las manos."
+  ],
+  "restricciones": [
+    "No des importes de cotizaciones ni bonificaciones sin marcarlos como aproximados y remitir a la gestoría.",
+    "No propongas contratar como falso autónomo ni disfrazar una relación laboral.",
+    "Nada de suponer que el nuevo ocupará el cien por cien de su jornada facturando desde el primer día.",
+    "Si la facturación recurrente no cubre el coste, dilo claro aunque el usuario quiera contratar."
+  ],
+  "errores_tipicos_a_evitar": [
+    "Comparar el salario bruto con la tarifa del freelance como si fueran lo mismo.",
+    "Olvidar que las primeras semanas la persona resta tiempo en vez de sumarlo.",
+    "Contratar por un pico de trabajo puntual.",
+    "Delegar la parte que te gusta y quedarte con la administrativa.",
+    "No tener escrito el procedimiento antes de que llegue nadie."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: opción, coste mensual real, coste por hora productiva, facturación adicional necesaria, riesgo.",
+    "bloque_2": "Qué tareas se delegan en la primera fase, con horas al mes.",
+    "bloque_3": "Plan por fases con duración y criterio de paso a la siguiente.",
+    "bloque_4": "Checklist de lo que hay que preparar antes de delegar.",
+    "bloque_5": "Tres señales de que hay que parar o dar marcha atrás.",
+    "estilo": "Español de España, tuteando, sin vender la contratación como éxito automático"
+  },
+  "criterios_calidad": [
+    "El coste por hora productiva está calculado, no copiado del salario.",
+    "El punto de equilibrio se expresa también en clientes o pedidos concretos.",
+    "La recomendación tiene en cuenta la estabilidad de los ingresos, no solo el volumen."
+  ]
+}

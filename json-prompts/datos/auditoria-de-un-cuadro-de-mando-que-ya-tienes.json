@@ -1,0 +1,36 @@
+{
+  "tarea": "Audita mi cuadro de mando actual y dime qué está mal, qué sobra y qué falta, con el arreglo concreto de cada punto",
+  "entradas": {
+    "descripcion_del_panel": "[ENUMERA CADA GRÁFICO Y CADA NÚMERO QUE APARECE, DE ARRIBA ABAJO]",
+    "herramienta": "[EXCEL, SHEETS, LOOKER STUDIO, POWER BI, PANEL DE LA TIENDA...]",
+    "quien_lo_usa": "[PERSONAS Y CON QUÉ FRECUENCIA LO ABREN]",
+    "decisiones_que_soporta": "[QUÉ SE DECIDE MIRÁNDOLO]",
+    "problemas_notados": "[CIFRAS QUE NO CUADRAN, LENTITUD, NADIE LO MIRA...]"
+  },
+  "revisar": [
+    "Métricas que no cambian ninguna decisión y por tanto sobran",
+    "Definiciones ambiguas o duplicadas que dan cifras distintas para lo mismo",
+    "Comparaciones ausentes: un número sin objetivo ni periodo anterior no dice nada",
+    "Gráficos engañosos: ejes que no empiezan en cero, tartas con demasiadas porciones, escalas mezcladas, colores sin significado",
+    "Datos sin filtro de calidad: duplicados, devoluciones incluidas, pruebas internas, periodos incompletos",
+    "Sobrecarga visual y orden de lectura: lo importante debe estar arriba a la izquierda",
+    "Actualización: cada cuánto se refresca y si se nota en pantalla la fecha del último dato"
+  ],
+  "formato_salida": {
+    "tabla_de_hallazgos": "Columnas: elemento del panel | problema | gravedad alta media baja | por qué importa | arreglo concreto | esfuerzo",
+    "quitar": "Lista de elementos a eliminar y qué se gana quitándolos",
+    "anadir": "Lo que falta para que el panel responda a las decisiones indicadas",
+    "panel_reordenado": "Propuesta de nuevo orden de la pantalla explicada por filas",
+    "plan": "Qué arreglar hoy, esta semana y este mes"
+  },
+  "restricciones": [
+    "Ordena siempre por gravedad, no por el orden en que aparecen en pantalla",
+    "Cada crítica va acompañada de su solución",
+    "No propongas cambiar de herramienta salvo que el problema sea imposible de resolver con la actual"
+  ],
+  "criterios_calidad": [
+    "Cada hallazgo se entiende sin ver el panel",
+    "Los arreglos de gravedad alta se pueden hacer sin ayuda técnica",
+    "El panel resultante tiene menos elementos que el original"
+  ]
+}

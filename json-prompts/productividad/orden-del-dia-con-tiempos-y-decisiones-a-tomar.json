@@ -1,0 +1,36 @@
+{
+  "tarea": "Diseñar el orden del día de una reunión con bloques de tiempo y una decisión concreta por punto",
+  "contexto": {
+    "motivo": "[POR QUÉ CONVOCAS LA REUNIÓN]",
+    "duracion_total_minutos": "[30 / 45 / 60 / 90]",
+    "formato": "[PRESENCIAL / VIDEOLLAMADA / MIXTA]",
+    "asistentes": ["[NOMBRE - ROL - QUÉ APORTA]", "[NOMBRE - ROL - QUÉ APORTA]"]
+  },
+  "entradas": {
+    "decisiones_a_cerrar": ["[DECISIÓN 1]", "[DECISIÓN 2]"],
+    "temas_informativos": ["[TEMA QUE SOLO HAY QUE CONTAR]"],
+    "antecedentes": "[QUÉ SE HABLÓ LA ÚLTIMA VEZ O QUÉ HAY PENDIENTE]"
+  },
+  "procedimiento": [
+    "Reservar los 5 primeros minutos para repasar tareas pendientes de la reunión anterior",
+    "Ordenar los puntos poniendo primero lo que exige decidir y dejando lo informativo al final",
+    "Asignar minutos a cada bloque hasta cubrir como mucho el 85 por ciento del tiempo total",
+    "Para cada punto indicar quién lo lidera, qué decisión se busca y qué pasa si no se decide",
+    "Mover a un correo previo todo tema informativo que no necesite debate",
+    "Cerrar con 5 minutos de reparto de tareas y fechas"
+  ],
+  "restricciones": [
+    "Máximo 5 puntos en la agenda; si hay más, proponer partir la reunión",
+    "Ningún bloque de más de 20 minutos sin una pregunta concreta que responder",
+    "No incluir puntos cuyo dueño no esté en la lista de asistentes"
+  ],
+  "formato_salida": {
+    "bloques": ["Objetivo de la reunión en una frase", "Tabla Hora | Punto | Responsable | Decisión a tomar | Minutos", "Preparación previa por persona", "Qué NO se va a tratar hoy", "Texto de la convocatoria listo para pegar en el calendario"]
+  },
+  "criterios_calidad": [
+    "La suma de minutos no supera la duración disponible",
+    "Cada punto termina en una decisión, una tarea o un dato compartido",
+    "Alguien que reciba la convocatoria sabe qué llevar preparado sin preguntar"
+  ],
+  "tono": "claro y ejecutivo, tuteando al equipo"
+}

@@ -1,0 +1,47 @@
+{
+  "tarea": "Diseñar una rubrica de evaluacion y aplicarla para corregir la entrega de un alumno con feedback util y homogeneo",
+  "contexto": {
+    "formacion": "[NOMBRE DEL CURSO O TALLER]",
+    "entregable": "[QUE ENTREGAN: EJERCICIO, PROYECTO, VIDEO, ARCHIVO]",
+    "nivel_alumnado": "[PRINCIPIANTE / INTERMEDIO / AVANZADO]",
+    "minutos_maximos_por_correccion": "[EJ: 10]"
+  },
+  "entradas": {
+    "objetivos_de_aprendizaje": ["[OBJETIVO 1]", "[OBJETIVO 2]", "[OBJETIVO 3]"],
+    "entrega_del_alumno": "[PEGA AQUI LA ENTREGA O DESCRIBELA CON DETALLE]",
+    "nota_minima_para_aprobar": "[EJ: 60 SOBRE 100]"
+  },
+  "proceso": [
+    "1. Convierte cada objetivo de aprendizaje en un criterio observable: algo que se pueda ver en la entrega, no una intencion",
+    "2. Limita la rubrica a 4 o 5 criterios como maximo y reparte 100 puntos entre ellos segun su peso real",
+    "3. Para cada criterio escribe 4 niveles con descripcion concreta: Excelente, Bien, Justo, No logrado, indicando que se ve en cada nivel",
+    "4. Puntua la entrega criterio a criterio citando la parte exacta de la entrega que justifica el nivel",
+    "5. Escribe el feedback con la regla dos aciertos, una mejora prioritaria, un paso siguiente concreto",
+    "6. Marca si aprueba o no y, si no aprueba, indica que tiene que rehacer exactamente para volver a entregar"
+  ],
+  "restricciones": [
+    "Nada de adjetivos vacios tipo buen trabajo o mejorable: cada valoracion se apoya en algo visible en la entrega",
+    "La mejora prioritaria es UNA sola, la que mas nota le sube",
+    "Tono de tu a tu, sin sarcasmo y sin comparar con otros alumnos",
+    "Maximo 200 palabras de feedback por alumno"
+  ],
+  "errores_a_evitar": [
+    "Criterios que dependen del gusto del corrector, como creatividad, sin describir que se ve",
+    "Rubricas de 10 criterios: nadie las usa dos veces",
+    "Poner nota alta por esfuerzo cuando el objetivo no se ha cumplido",
+    "Feedback que solo enumera fallos y deja al alumno sin saber que hacer"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de rubrica: Criterio | Peso en puntos | Excelente | Bien | Justo | No logrado",
+    "bloque_2": "Tabla de correccion: Criterio | Nivel asignado | Puntos | Prueba citada de la entrega",
+    "bloque_3": "Nota final sobre 100 y veredicto apto o a rehacer",
+    "bloque_4": "Feedback para el alumno listo para copiar y pegar, maximo 200 palabras",
+    "bloque_5": "Frases reutilizables para los fallos mas repetidos, para acelerar las siguientes correcciones"
+  },
+  "criterios_calidad": [
+    "Dos personas distintas puntuarian la misma entrega con menos de 10 puntos de diferencia",
+    "Cada punto restado se puede rastrear a una frase de la entrega",
+    "El alumno sabe, al leerlo, que hacer manana para subir nota",
+    "La correccion completa se hace en el tiempo maximo declarado"
+  ]
+}

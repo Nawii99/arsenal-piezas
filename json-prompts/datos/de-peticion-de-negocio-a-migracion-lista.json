@@ -1,0 +1,35 @@
+{
+  "tarea": "Traducir una necesidad de negocio en un cambio de modelo de datos y su migracion correspondiente",
+  "contexto": {
+    "negocio": "[QUE HACE TU EMPRESA EN UNA FRASE]",
+    "motor_bd": "[POSTGRESQL / MYSQL / SQL SERVER / MARIADB]",
+    "esquema_actual": "[PEGA LAS TABLAS RELACIONADAS O DESCRIBELAS CON SUS CAMPOS]"
+  },
+  "entradas": {
+    "peticion_en_lenguaje_de_negocio": "[EJEMPLO: QUIERO PODER PONER VARIOS DESCUENTOS A UN PEDIDO Y SABER QUIEN LOS APLICO]",
+    "quien_lo_pide": "[DEPARTAMENTO O CLIENTE]",
+    "para_que_se_usara": "[INFORMES, PANTALLA, FACTURA, INTEGRACION...]",
+    "volumen_esperado": "[CUANTOS REGISTROS AL MES APROXIMADAMENTE]"
+  },
+  "pasos": [
+    "Reformula la peticion en tres preguntas concretas de datos y respondelas",
+    "Decide si es un campo nuevo, una tabla nueva o una relacion, y justifica en dos lineas",
+    "Descarta expresamente la solucion facil pero mala si la hay, por ejemplo guardar una lista separada por comas",
+    "Define tipos de dato, obligatoriedad, valores por defecto e indices necesarios",
+    "Escribe la migracion de subida y de vuelta atras",
+    "Lista que consultas, informes o pantallas habra que tocar despues"
+  ],
+  "restricciones": [
+    "Prefiere el diseno mas simple que cubra los casos reales descritos, no el mas flexible imaginable",
+    "No propongas cambiar tablas que no aparecen en el esquema aportado",
+    "Si la peticion es ambigua, haz como maximo tres preguntas antes de proponer nada"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["Que se ha entendido", "Diseno propuesto y alternativa descartada", "Migracion de subida", "Vuelta atras", "Impacto en el resto del sistema"]
+  },
+  "criterios_calidad": [
+    "Se explica el diseno en una frase que entienda quien hizo la peticion",
+    "Los tipos de dato son adecuados para importes, fechas y textos segun el motor indicado"
+  ]
+}

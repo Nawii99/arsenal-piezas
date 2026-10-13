@@ -1,0 +1,39 @@
+{
+  "tarea": "Diseñar el plan de guardia fuera de horario y el checklist de los primeros 15 minutos de una incidencia grave",
+  "contexto": {
+    "negocio": "[QUÉ HACES Y QUÉ PASA SI ESTÁ PARADO UNA NOCHE]",
+    "horario_normal": "[DÍAS Y HORAS]",
+    "personas": "[NOMBRE, ROL, DISPONIBILIDAD REAL Y CÓMO CONTACTAR CON CADA UNO]",
+    "servicios_criticos": "[WEB, TPV, PASARELA DE PAGO, RESERVAS, TELÉFONO, LO QUE APLIQUE]",
+    "proveedores_urgencia": "[SOPORTE DEL HOSTING, BANCO, MENSAJERÍA, SEGURO: TELÉFONO Y HORARIO]"
+  },
+  "entradas": {
+    "que_es_urgencia_real": "[LISTA LO QUE JUSTIFICA LLAMAR DE NOCHE]",
+    "que_puede_esperar": "[LISTA LO QUE SE MIRA AL DÍA SIGUIENTE]",
+    "presupuesto_guardia": "[SI PAGAS ALGO POR ESTAR DISPONIBLE Y CUÁNTO]"
+  },
+  "pasos": [
+    "Define qué se considera urgencia con criterios comprobables y qué no lo es, aunque el cliente lo llame urgente",
+    "Establece cómo entra el aviso fuera de horario y quién lo ve primero",
+    "Monta la cadena de llamada: primera persona, segunda si no contesta en X minutos, tercera y última",
+    "Escribe el checklist de los primeros 15 minutos: confirmar que es real, medir alcance, aplicar apaño, avisar a clientes, registrar hora",
+    "Define qué se puede decidir de madrugada sin consultar y qué espera a la mañana",
+    "Añade la lista de teléfonos y accesos que hay que tener a mano",
+    "Añade el traspaso de la mañana siguiente: qué se cuenta y a quién",
+    "Propón un simulacro sencillo para probar el plan sin romper nada"
+  ],
+  "restricciones": [
+    "El plan debe funcionar con las personas reales del contexto, sin inventar equipos que no existen",
+    "Nada de pedir disponibilidad 24 horas a alguien sin compensación si el presupuesto_guardia es cero: propón alternativa realista",
+    "Todos los plazos en minutos u horas concretas"
+  ],
+  "formato_salida": {
+    "tipo": "documento operativo",
+    "secciones": ["Qué es urgencia y qué no (dos listas enfrentadas)", "Cadena de aviso con tiempos", "Checklist imprimible de los primeros 15 minutos", "Qué se decide solo y qué se consulta", "Teléfonos y accesos críticos", "Traspaso de la mañana siguiente", "Guion de simulacro de 30 minutos"]
+  },
+  "criterios_calidad": [
+    "El checklist cabe en una hoja y se puede seguir medio dormido",
+    "Ningún paso depende de una persona que no aparezca en el contexto",
+    "Queda claro en qué momento se avisa a los clientes y con qué mensaje"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Convertir un encargo en una lista de criterios de aceptación comprobables, y usarla para revisar la entrega y responder con un aceptado, una lista de cambios o un rechazo justificado",
+  "contexto": {
+    "que_he_encargado": "[WEB, LOGO, VÍDEO, TEXTO, AUTOMATIZACIÓN, FOTOS...]",
+    "a_quien": "[UNA IA / UN FREELANCE / UNA AGENCIA / YO MISMO]",
+    "para_que_sirve": "[QUÉ TIENE QUE CONSEGUIR: PEDIR CITA, VENDER, EXPLICAR]",
+    "presupuesto_y_plazo": "[IMPORTE, FECHA Y REVISIONES INCLUIDAS]"
+  },
+  "pasos": [
+    "1. Escribe en una frase qué debe pasar cuando esto exista, medido en algo observable: por ejemplo «un desconocido pide cita desde el móvil sin preguntarme nada».",
+    "2. Convierte esa frase en criterios de aceptación con la forma: se acepta SI ocurre esto, comprobado ASÍ, medido POR ESTO.",
+    "3. Separa los criterios en imprescindibles (sin ellos no se paga) y deseables (se anotan para la siguiente versión).",
+    "4. Añade siempre criterios de formato: qué archivos entrego, en qué tamaños, con qué fuentes y quién se queda los accesos y los derechos.",
+    "5. Añade criterios de prueba: en qué dispositivo y navegador se comprueba, con qué datos de ejemplo y quién lo revisa.",
+    "6. Pacta la lista ANTES de empezar y déjala por escrito en el mismo hilo del encargo.",
+    "7. Al recibir la entrega, recorre la lista uno a uno y marca cumple, no cumple o no se puede comprobar.",
+    "8. Redacta la respuesta: si falta algo imprescindible, cita el criterio y describe el fallo con un ejemplo reproducible, no con adjetivos.",
+    "9. Fija plazo para la corrección y qué pasa si tampoco se cumple."
+  ],
+  "errores_tipicos": [
+    "Pedir «que quede profesional», que no se puede comprobar ni discutir.",
+    "Escribir los criterios después de ver la entrega: entonces parecen exigencias nuevas.",
+    "Olvidar los archivos de origen y los accesos, y quedarte atado al proveedor.",
+    "Mezclar gustos con fallos: el color que no te gusta no es lo mismo que un botón que no funciona.",
+    "No decir dónde se prueba y discutir sobre pantallas distintas."
+  ],
+  "formato_salida": {
+    "lista_criterios": "Número, criterio en formato se acepta si..., cómo se comprueba, imprescindible o deseable",
+    "entregables": "Archivos, formatos, accesos y derechos que deben venir con la entrega",
+    "acta_de_revision": "Criterio, resultado, evidencia (captura o pasos para reproducir)",
+    "mensaje_al_proveedor": "Texto listo para enviar: qué se acepta, qué falta, con qué plazo"
+  },
+  "criterios_calidad": [
+    "Cada criterio lo puede verificar alguien ajeno sin preguntarte nada.",
+    "Ningún criterio usa palabras como bonito, moderno o profesional.",
+    "Los fallos se describen con pasos para reproducirlos.",
+    "El mensaje al proveedor es firme, educado y sin adjetivos de gusto personal."
+  ]
+}

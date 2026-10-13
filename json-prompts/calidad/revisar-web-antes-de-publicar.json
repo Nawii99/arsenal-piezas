@@ -1,0 +1,57 @@
+{
+  "tarea": "Revisar una página web terminada antes de publicarla y devolver un parte de pruebas con cada fallo, su gravedad y el arreglo concreto.",
+  "contexto": {
+    "quien_lo_usa": "Persona sin perfil tecnico que ha montado una landing o una web pequeña con IA o con un editor visual.",
+    "momento": "La pagina esta terminada pero todavia no se ha enseñado a clientes ni se ha invertido en publicidad.",
+    "objetivo": "Que ningun visitante se encuentre un enlace roto, un texto cortado, un boton que no hace nada o un formulario que no llega."
+  },
+  "entradas": {
+    "url_o_codigo": "[URL DE LA PAGINA O PEGA AQUI EL HTML COMPLETO]",
+    "accion_deseada": "[QUE QUIERES QUE HAGA EL VISITANTE: COMPRAR, RESERVAR, DEJAR EL EMAIL, LLAMAR]",
+    "publico": "[A QUIEN VA DIRIGIDA Y QUE SABE YA DEL TEMA]",
+    "dispositivos_prioritarios": "[POR EJEMPLO: MOVIL ANDROID, IPHONE, PORTATIL WINDOWS]",
+    "tiene_textos_legales": "[SI / NO / CUALES: AVISO LEGAL, PRIVACIDAD, COOKIES, DEVOLUCIONES]"
+  },
+  "pasos": [
+    "1. Lee solo lo que se ve sin bajar y responde: se entiende que se vende, a quien y que hay que hacer. Si falta alguna de las tres, es fallo grave.",
+    "2. Lista todos los enlaces y botones. Marca cual esta vacio, apunta a almohadilla, a localhost, a un dominio de ejemplo o repite destino.",
+    "3. Comprueba cada formulario: campos obligatorios, mensaje de exito, a que correo llega y si hay casilla de privacidad sin marcar por defecto.",
+    "4. Revisa el texto con ojos de corrector: faltas, frases de relleno de IA, precios y horarios contradictorios entre secciones.",
+    "5. Simula pantalla estrecha de 360 pixeles: busca texto que se sale, imagenes que tapan botones y menus que no se abren.",
+    "6. Comprueba imagenes: alguna que no carga, alguna de varios megas, alguna sin texto alternativo.",
+    "7. Revisa lo legal y lo de confianza: aviso legal, privacidad, cookies, datos fiscales, forma de contacto visible.",
+    "8. Cierra con las tres cosas que mas dinero cuestan si se publican asi."
+  ],
+  "que_mirar": [
+    "Titulo de la pestaña y descripcion: no pueden decir Documento sin titulo ni Tu titulo aqui.",
+    "Icono de la pestaña, favicon, presente y no el del editor.",
+    "Boton principal repetido al menos dos veces en paginas largas.",
+    "Telefono pinchable y correo pinchable en movil.",
+    "Placeholders olvidados del tipo Lorem ipsum, texto de ejemplo o nombre de marca sin sustituir.",
+    "Enlaces a redes sociales que llevan a la portada de la red y no al perfil.",
+    "Velocidad percibida: si tarda mas de tres segundos en verse algo, apuntalo."
+  ],
+  "errores_tipicos": [
+    "Dar por bueno el movil solo estrechando la ventana del ordenador, sin abrirlo en un telefono de verdad.",
+    "Probar el formulario y no comprobar despues la bandeja de correo, incluida la carpeta de spam.",
+    "Publicar con la pagina de gracias sin hacer, de modo que el visitante se queda en blanco.",
+    "Dejar el enlace de politica de privacidad apuntando a una pagina que no existe."
+  ],
+  "restricciones": [
+    "No propongas rediseños ni cambios de estilo: solo fallos que rompen la experiencia o la venta.",
+    "Cada fallo tiene que ser reproducible: di donde esta y que hay que hacer para verlo.",
+    "No inventes fallos si no los ves en el material entregado; escribe No comprobable y por que."
+  ],
+  "formato_salida": {
+    "bloque_1": "Veredicto en una linea: Se puede publicar / Se puede publicar con arreglos rapidos / No publicar todavia.",
+    "bloque_2": "Tabla con columnas: Nº | Donde esta | Que falla | Gravedad (Bloqueante, Grave, Menor) | Arreglo concreto | Tiempo estimado.",
+    "bloque_3": "Lista de comprobaciones que no has podido hacer y como las hace la persona en cinco minutos.",
+    "bloque_4": "Las tres cosas a arreglar antes de gastar un euro en anuncios."
+  },
+  "criterios_calidad": [
+    "Todo fallo bloqueante lleva arreglo concreto, no un consejo general.",
+    "Ningun punto de la tabla mezcla dos problemas distintos.",
+    "La lista cabe en una hoja y se puede ir tachando.",
+    "Si la pagina esta bien, lo dice claro en vez de rellenar con fallos menores."
+  ]
+}

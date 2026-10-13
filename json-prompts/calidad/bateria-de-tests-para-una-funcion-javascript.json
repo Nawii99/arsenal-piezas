@@ -1,0 +1,39 @@
+{
+  "tarea": "Escribir una bateria completa de tests automaticos para una funcion JavaScript o TypeScript",
+  "contexto": {
+    "framework": "[VITEST / JEST / NODE:TEST]",
+    "lenguaje": "[JAVASCRIPT / TYPESCRIPT]",
+    "nivel_actual_de_tests": "[NINGUNO / ALGUNOS / SUITE MADURA]"
+  },
+  "entradas": {
+    "codigo_funcion": "[PEGA AQUI LA FUNCION COMPLETA]",
+    "regla_de_negocio": "[QUE DEBE HACER EXACTAMENTE, EN CRISTIANO]",
+    "ejemplos_reales": "[2 O 3 ENTRADAS REALES Y SU RESULTADO ESPERADO]"
+  },
+  "cobertura_obligatoria": [
+    "Caso feliz con datos normales",
+    "Limites: cero, negativo, cadena vacia, array vacio, valor maximo",
+    "Tipos inesperados: null, undefined, texto donde se espera numero",
+    "Decimales y redondeo si hay dinero de por medio",
+    "Zona horaria y cambio de dia si hay fechas de por medio",
+    "Errores: que se lanza y con que mensaje",
+    "Asincronia: promesa rechazada y tiempo de espera agotado, si aplica"
+  ],
+  "restricciones": [
+    "Un test comprueba una sola cosa",
+    "Nombres de test en español que describan el comportamiento esperado",
+    "Nada de tests que dependan de la hora actual o de internet: usar datos fijos",
+    "No modificar la funcion original; si tiene un fallo, senalarlo aparte"
+  ],
+  "formato_salida": {
+    "archivo_test": "Codigo completo del archivo de tests listo para ejecutar",
+    "comando": "Comando exacto para lanzarlos",
+    "tabla_casos": "Caso | Entrada | Resultado esperado | Por que importa",
+    "huecos": "Que partes de la funcion no quedan cubiertas y por que",
+    "bugs_detectados": "Fallos encontrados en la funcion mientras escribia los tests"
+  },
+  "criterios_calidad": [
+    "Los tests pasan en verde si la funcion es correcta y fallan si la rompo a proposito",
+    "Minimo 8 casos y ninguno duplicado"
+  ]
+}

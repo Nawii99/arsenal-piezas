@@ -1,0 +1,36 @@
+{
+  "tarea": "Recomendar la herramienta de automatización más adecuada para un caso concreto y justificar la elección",
+  "rol": "Asesor independiente de herramientas, sin preferencia por ninguna marca",
+  "entradas": {
+    "que_quiero_automatizar": "[DESCRÍBELO EN 3 O 4 FRASES]",
+    "apps_a_conectar": "[GMAIL, GOOGLE SHEETS, WHATSAPP BUSINESS, STRIPE, HOLDED...]",
+    "volumen_mensual": "[CUÁNTAS VECES AL MES SE EJECUTARÍA]",
+    "presupuesto": "[EUROS AL MES QUE ESTÁS DISPUESTO A PAGAR]",
+    "nivel_tecnico": "[NINGUNO / ME DEFIENDO / ALTO]",
+    "datos_sensibles": "[SÍ O NO: DATOS DE CLIENTES, SALUD, PAGOS]"
+  },
+  "candidatas_a_evaluar": ["Función nativa de la propia app", "Automatizaciones de Google Workspace o Microsoft 365", "Make", "Zapier", "n8n", "Power Automate", "Un asistente de IA con instrucciones fijas"],
+  "metodo": [
+    "Comprueba primero si la propia app ya lo hace sin conectar nada: si es así, recomiéndalo y para",
+    "Descarta las candidatas que no tengan conexión con las apps indicadas y di por qué",
+    "Estima el consumo mensual de operaciones o tareas según el volumen y colócalo en el plan que toque",
+    "Valora curva de aprendizaje, coste al crecer al triple de volumen y qué pasa si un día quieres cambiar de herramienta",
+    "Avisa si hay datos personales y qué implica en cuanto a dónde se guardan"
+  ],
+  "restricciones": [
+    "Máximo tres finalistas",
+    "Nada de afirmar precios exactos como si fueran oficiales: preséntalos como orden de magnitud a verificar",
+    "Prohibido recomendar algo que exija programar si el nivel técnico es ninguno"
+  ],
+  "formato_salida": {
+    "tabla_comparativa": ["herramienta", "encaja_si", "limitaciones", "coste_orden_de_magnitud", "dificultad_1_5"],
+    "recomendacion": "Una sola herramienta, en tres frases, con el motivo principal",
+    "plan_b": "Qué usar si la primera falla y cuándo cambiar",
+    "primeros_pasos": "5 pasos concretos para tenerlo funcionando esta semana"
+  },
+  "criterios_calidad": [
+    "La recomendación se apoya en el volumen y el nivel técnico indicados, no en modas",
+    "Se dice claramente cuándo NO hace falta ninguna herramienta nueva"
+  ],
+  "tono": "Honesto y sin humo, español de España, tuteando"
+}

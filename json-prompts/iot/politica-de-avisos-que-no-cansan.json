@@ -1,0 +1,47 @@
+{
+  "tarea": "Disenar la politica de avisos de una instalacion IoT: que se notifica, a quien, por que canal, con que urgencia y que se silencia.",
+  "contexto": {
+    "instalacion": "[CASA / TIENDA / ALMACEN / ALQUILER TURISTICO / TALLER]",
+    "quien_recibe": "[YO / EL DUENO / EL ENCARGADO DE TURNO / EL VECINO / NADIE POR LA NOCHE]",
+    "eventos_actuales": "[LISTA DE TODO LO QUE AVISA HOY]",
+    "quejas": "[EJ: SUENA 40 VECES AL DIA, NO ME ENTERE DE LA FUGA]"
+  },
+  "clasificacion_obligatoria": {
+    "critico": "Hay dano en curso o riesgo: agua, humo, gas, camara frigorifica fuera de rango, intrusion confirmada",
+    "importante": "Va a haber un problema si nadie actua hoy: pila baja de sensor critico, puerta abierta 30 minutos, congelador subiendo",
+    "informativo": "Esta bien saberlo pero no requiere accion: se ha encendido la calefaccion, ha llegado el repartidor",
+    "solo_registro": "No se notifica nunca, queda en el historial para consultarlo"
+  },
+  "procedimiento": [
+    "1. Coge la lista de eventos actuales y asigna a cada uno una de las cuatro categorias. Si dudas, baja de nivel.",
+    "2. Para cada aviso escribe la accion que se espera de quien lo recibe. Si no hay accion posible, degradalo a solo registro.",
+    "3. Define condiciones de disparo con retardo y umbral: no puerta abierta, sino puerta abierta mas de 3 minutos entre las 22:00 y las 7:00.",
+    "4. Agrupa: varios eventos del mismo tipo en 10 minutos generan un unico aviso con el recuento.",
+    "5. Define ventanas de silencio por franja horaria y por modo de la casa: fuera, en casa, dormido, vacaciones.",
+    "6. Define el escalado: si un critico no se atiende en 10 minutos, avisa al segundo contacto y luego con llamada o sirena.",
+    "7. Elige canal por nivel: critico con sonido que se salta el modo silencio; informativo sin sonido o resumen diario.",
+    "8. Escribe el texto de cada aviso: que ha pasado, donde, desde cuando y que hacer, en una frase.",
+    "9. Define el antirrebote: un sensor que dispara mas de N veces en una hora se marca como averiado y deja de avisar."
+  ],
+  "errores_tipicos": [
+    "Notificar cada apertura de puerta en un comercio: nadie lo lee a la tercera hora.",
+    "Avisar de pila baja al 20 por ciento sin decir que pila es ni donde esta el sensor.",
+    "Enviar todo por el mismo canal, con lo que lo urgente se pierde.",
+    "No prever el modo vacaciones y llenar el movil desde la playa.",
+    "No tener plan para cuando el que recibe los avisos no contesta."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla: EVENTO | NIVEL | CONDICION EXACTA CON UMBRAL Y RETARDO | DESTINATARIO | CANAL | TEXTO DEL AVISO",
+    "bloque_2": "Ventanas de silencio por franja y por modo",
+    "bloque_3": "Reglas de agrupado y antirrebote",
+    "bloque_4": "Cadena de escalado con tiempos",
+    "bloque_5": "Resumen diario: que incluye y a que hora se envia",
+    "bloque_6": "Lista de eventos que se han degradado a solo registro y por que"
+  },
+  "criterios_calidad": [
+    "En un dia normal sin incidencias no llegan mas de 3 notificaciones.",
+    "Todo aviso critico dice en la primera linea que hacer.",
+    "Cada regla se puede traducir a una automatizacion sin decisiones pendientes.",
+    "Ningun aviso depende de que el movil tenga la app abierta."
+  ]
+}

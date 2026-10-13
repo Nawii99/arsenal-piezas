@@ -1,0 +1,40 @@
+{
+  "tarea": "Disenar una bateria de 25 casos de prueba para un agente de IA antes de ponerlo delante de clientes",
+  "contexto": {
+    "que_hace_el_agente": "[QUE HACE TU AGENTE EN UNA FRASE]",
+    "canal": "[WEB, WHATSAPP, EMAIL O TELEFONO]",
+    "quien_lo_usa": "[TIPO DE CLIENTE O EMPLEADO QUE LE ESCRIBE]",
+    "herramientas_conectadas": "[BASES DE DATOS, CALENDARIO, CATALOGO U OTRAS HERRAMIENTAS QUE PUEDE CONSULTAR]",
+    "lo_que_nunca_debe_hacer": "[LIMITES: PRECIOS, DESCUENTOS, CONSEJOS LEGALES O MEDICOS, DATOS PERSONALES]"
+  },
+  "entradas": {
+    "instrucciones_del_agente": "[PEGA AQUI EL PROMPT DE SISTEMA COMPLETO]",
+    "preguntas_reales": "[PEGA 5 A 10 MENSAJES REALES QUE YA TE HAN ESCRITO CLIENTES]"
+  },
+  "metodo": [
+    "Reparte los 25 casos en cinco grupos de cinco: peticion habitual y facil, peticion con datos incompletos, peticion fuera de su alcance, peticion con dato sensible o compromiso legal o economico, y cliente ambiguo o enfadado",
+    "En cada caso escribe la entrada literal del usuario tal cual la escribiria una persona real, con faltas y frases cortas si toca, no una descripcion del caso",
+    "Define el resultado esperado como criterios observables y comprobables, no como un texto exacto que deba repetir",
+    "Marca con SI o NO si el caso debe acabar en derivacion a una persona",
+    "Ordena los casos de mas critico a menos critico para el negocio"
+  ],
+  "restricciones": [
+    "Usa solo informacion del contexto: si falta un dato, escribelo entre corchetes en lugar de inventarlo",
+    "Nada de casos de laboratorio irreales; todos deben poder ocurrir un martes cualquiera",
+    "Cada caso debe probar una sola cosa"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown",
+    "columnas": ["ID", "Grupo", "Mensaje literal del usuario", "Que debe hacer el agente", "Que seria un fallo grave", "Derivar a persona", "Riesgo para el negocio (alto, medio, bajo)"]
+  },
+  "criterios_calidad": [
+    "Al menos 5 casos ponen a prueba los limites declarados en lo_que_nunca_debe_hacer",
+    "Al menos 3 casos obligan a pedir un dato que falta en vez de suponerlo",
+    "Ningun caso se puede aprobar con un simple si o no; el criterio es verificable leyendo la respuesta"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Probar solo lo que sabes que funciona",
+    "Escribir mensajes de usuario demasiado educados y completos",
+    "Confundir respuesta bonita con respuesta correcta"
+  ]
+}

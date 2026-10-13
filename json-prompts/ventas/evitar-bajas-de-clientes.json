@@ -1,0 +1,50 @@
+{
+  "tarea": "Detectar clientes recurrentes en riesgo de baja y preparar la conversación y la oferta de continuidad",
+  "contexto": {
+    "negocio": "[TU NEGOCIO], cobra [CUOTA / IGUALA / MANTENIMIENTO] de [IMPORTE] cada [PERIODO]",
+    "relacion": "[CONTRATO CON PERMANENCIA / SIN PERMANENCIA / RENOVACIÓN ANUAL]",
+    "tono": "español de España, honesto, sin retener a la fuerza"
+  },
+  "entradas": {
+    "cartera": "[CLIENTE, IMPORTE, ANTIGÜEDAD, ÚLTIMA VEZ QUE HABLASTEIS, USO O RESULTADOS RECIENTES, INCIDENCIAS]",
+    "cambios_recientes": "[CAMBIO DE PERSONA DE CONTACTO, RECORTES, SILENCIO, PAGOS TARDÍOS]",
+    "valor_entregado": "[QUÉ HAS CONSEGUIDO PARA CADA UNO EN LOS ÚLTIMOS MESES]",
+    "margen_de_maniobra": "[QUÉ PUEDES CAMBIAR: ALCANCE, PRECIO, PLAZO, PAUSA TEMPORAL]"
+  },
+  "pasos": [
+    "1. Define las señales de aviso observables de tu negocio: días sin contacto, respuestas de una línea, pagos con retraso, cambio de interlocutor, dejar de pedir cosas",
+    "2. Puntúa a cada cliente con esas señales y clasifícalo en riesgo alto, medio o bajo",
+    "3. Para el riesgo alto escribe el mensaje que pide una llamada corta sin sonar a alarma",
+    "4. Escribe el guion de la llamada de rescate: preguntar antes de proponer, con tres preguntas para saber si el problema es resultado, precio, atención o cambio interno",
+    "5. Prepara tres salidas dignas: ajustar alcance a un precio menor, pausar unos meses con fecha de vuelta, o terminar bien con entrega ordenada",
+    "6. Redacta el resumen escrito posterior con lo acordado y la fecha de revisión",
+    "7. Convierte lo aprendido en una rutina: qué revisas cada mes para que no vuelva a pillarte por sorpresa"
+  ],
+  "restricciones": [
+    "Prohibido ofrecer descuento como primera reacción",
+    "Prohibido usar la permanencia como argumento para retener",
+    "Prohibido prometer mejoras que no puedas cumplir en el plazo dicho",
+    "La llamada empieza preguntando, no defendiéndote",
+    "Si el cliente se va, se entrega todo lo suyo sin obstáculos"
+  ],
+  "errores_tipicos": [
+    "Enterarte de la baja el día que llega el correo de cancelación",
+    "Confundir cliente silencioso con cliente contento",
+    "Bajar el precio y quedarte con un cliente que sigue insatisfecho",
+    "No enseñar nunca lo que has hecho y que parezca que no haces nada",
+    "Discutir la decisión y perder también la recomendación futura"
+  ],
+  "formato_salida": {
+    "bloque_1": "Lista de señales de aviso con cómo se miden en tu negocio",
+    "bloque_2": "Tabla de cartera con puntuación y nivel de riesgo",
+    "bloque_3": "Mensaje para pedir la llamada y guion completo de la llamada de rescate",
+    "bloque_4": "Las tres salidas dignas con precio y alcance de cada una",
+    "bloque_5": "Rutina mensual de revisión en cinco puntos"
+  },
+  "criterios_calidad": [
+    "Las señales son observables, no intuiciones",
+    "El guion dedica más tiempo a escuchar que a defender",
+    "Cada salida es aceptable para ti económicamente",
+    "Después de la llamada queda un escrito con acuerdos y fecha"
+  ]
+}

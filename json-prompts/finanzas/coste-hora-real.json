@@ -1,0 +1,54 @@
+{
+  "tarea": "Calcular mi coste real por hora trabajada y fijar la tarifa mínima interna por debajo de la cual no acepto trabajo",
+  "contexto": {
+    "actividad": "[QUÉ HACES Y CÓMO ENTREGAS]",
+    "uso": "Este número es interno, no es el precio que se le dice al cliente",
+    "pais": "España"
+  },
+  "entradas": {
+    "gastos_del_negocio": "[TODOS LOS GASTOS FIJOS Y RECURRENTES ANUALES: CUOTA DE AUTÓNOMOS, GESTORÍA, SOFTWARE, LOCAL, MATERIAL, SEGUROS, FORMACIÓN]",
+    "sueldo_objetivo": "[LO QUE QUIERES GANAR LIMPIO AL AÑO]",
+    "dias_trabajados": "[DÍAS AL AÑO DESCONTANDO VACACIONES, FESTIVOS Y DÍAS DE BAJA PREVISIBLES]",
+    "horas_al_dia": "[HORAS QUE TRABAJAS DE MEDIA]",
+    "reparto_de_tiempo": "[PORCENTAJE APROXIMADO DEDICADO A: TRABAJO FACTURABLE, VENTA Y PRESUPUESTOS, ADMINISTRACIÓN, FORMACIÓN, MARKETING]",
+    "equipo": "[COLABORADORES Y LO QUE TE CUESTAN AL AÑO, SI HAY]",
+    "impuestos_estimados": "[PORCENTAJE QUE APARTAS PARA IRPF; SI NO LO SABES, USA UN RANGO]"
+  },
+  "procedimiento": [
+    "1. Suma gastos anuales del negocio y sueldo objetivo bruto, teniendo en cuenta que el sueldo objetivo es neto y hay que subirlo por los impuestos",
+    "2. Calcula las horas totales del año: días trabajados por horas al día",
+    "3. Aplica el reparto de tiempo y quédate solo con las horas facturables reales; en servicios suele quedar entre el 50% y el 65% del total",
+    "4. Coste por hora facturable = total a cubrir dividido entre horas facturables",
+    "5. Añade un margen de seguridad para imprevistos, rehacer trabajo y clientes que pagan tarde, y explica el porcentaje que aplicas y por qué",
+    "6. El resultado es la tarifa mínima interna: si un encargo cae por debajo, pierdes dinero",
+    "7. Traduce esa tarifa a los formatos que usas: precio mínimo por proyecto tipo, por sesión, por cuota mensual",
+    "8. Prueba el número contra tres encargos reales pasados y di cuáles habrían estado por debajo del suelo",
+    "9. Explica en dos líneas cuándo se puede bajar del suelo de forma consciente y con qué contrapartida"
+  ],
+  "restricciones": [
+    "No confundir este coste con el precio de venta: el precio se pone por valor, esto es el suelo",
+    "No usar el 100% de las horas como facturables bajo ningún concepto",
+    "Trabajar en euros sin IVA",
+    "Si el usuario no sabe su reparto de tiempo, ofrécele tramos y usa el más conservador"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Dividir el sueldo deseado entre 1.800 horas y quedarse tan ancho",
+    "Olvidar las vacaciones, los festivos y los días enfermo",
+    "No contar el tiempo de presupuestos, reuniones y administración",
+    "Poner el sueldo neto sin subirlo por impuestos y cuota"
+  ],
+  "formato_salida": {
+    "1_cuenta": "La operación completa paso a paso con los números del usuario",
+    "2_resultado": "Coste por hora y tarifa mínima interna, en una línea cada uno",
+    "3_traduccion": "Tabla con el precio mínimo de tus tres formatos de venta habituales",
+    "4_prueba": "Los tres encargos pasados con veredicto: por encima o por debajo del suelo",
+    "5_regla": "Una frase para acordarse cuando llegue un encargo barato",
+    "estilo": "Español llano, cuentas visibles, tuteando"
+  },
+  "criterios_calidad": [
+    "Las horas facturables nunca superan el 70% de las totales",
+    "El sueldo objetivo aparece en bruto y en neto, sin confundirlos",
+    "El suelo está expresado en el formato en que el usuario vende de verdad",
+    "Queda claro que este número no se le enseña al cliente"
+  ]
+}

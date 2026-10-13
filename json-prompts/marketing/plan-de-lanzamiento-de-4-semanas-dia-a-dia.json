@@ -1,0 +1,41 @@
+{
+  "tarea": "Diseñar el calendario día a día de un lanzamiento de 4 semanas, con fase, canal, acción y mensaje",
+  "contexto": {
+    "que_lanzo": "[PRODUCTO O SERVICIO Y PARA QUIÉN ES]",
+    "precio": "[PRECIO Y FORMA DE PAGO]",
+    "fecha_apertura": "[DÍA EN QUE SE PUEDE COMPRAR]",
+    "fecha_cierre": "[DÍA EN QUE SE CIERRA O SUBE EL PRECIO]",
+    "audiencia": "[SEGUIDORES POR RED Y SUSCRIPTORES DE EMAIL]",
+    "oferta_de_lanzamiento": "[DESCUENTO, REGALO O PLAZAS LIMITADAS]",
+    "pruebas": "[TESTIMONIOS, CASOS O RESULTADOS QUE PUEDES ENSEÑAR]"
+  },
+  "fases": {
+    "semana_1": "Calentar: hablar del problema y recoger interés, sin vender aún",
+    "semana_2": "Demostrar: casos, método y respuesta a objeciones",
+    "semana_3": "Abrir: apertura, oferta clara y recordatorios",
+    "semana_4": "Cerrar: urgencia real, últimas dudas y cierre"
+  },
+  "pasos": [
+    "1. Fija los tres hitos fijos: aviso previo, apertura y cierre",
+    "2. Reparte los 28 días entre las cuatro fases sin saltarte ningún día",
+    "3. Asigna a cada día como mucho dos acciones para que sea sostenible",
+    "4. Escribe el mensaje central de cada acción en una frase",
+    "5. Añade al menos tres emails: aviso, apertura y últimas horas",
+    "6. Señala los días en los que hay que responder mensajes y dudas en privado"
+  ],
+  "formato_salida": {
+    "tipo": "tabla en markdown de 28 filas",
+    "columnas": ["Día", "Fase", "Canal", "Acción", "Mensaje central", "Tiempo estimado"],
+    "anexo": "Lista de material a preparar antes de empezar y un plan B si a mitad de campaña la respuesta es floja"
+  },
+  "restricciones": [
+    "La urgencia debe ser real: solo menciona plazos o plazas si de verdad existen",
+    "Nada de cuentas atrás falsas ni de inventar testimonios",
+    "Español de España, tuteando"
+  ],
+  "criterios_calidad": [
+    "Ningún día queda vacío y ningún día tiene más de dos tareas",
+    "Las tres acciones de más peso están señaladas como imprescindibles",
+    "El plan se puede ejecutar con los canales y la audiencia declarados"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "tarea": "Priorizar una lista de hallazgos de una prueba de intrusión web combinando la gravedad técnica con el impacto real en el negocio y el esfuerzo de arreglo",
+  "contexto": {
+    "empresa": "[NOMBRE Y SECTOR]",
+    "aplicacion": "[QUÉ HACE Y QUÉ DATOS GUARDA]",
+    "dependencia": "[QUÉ PARTE DE TUS INGRESOS PASA POR ESTA WEB]",
+    "recursos": "[HORAS DE DESARROLLO DISPONIBLES AL MES Y PRESUPUESTO]",
+    "obligaciones": "[RGPD, EXIGENCIAS DE CLIENTES, CERTIFICACIONES]"
+  },
+  "entradas": {
+    "hallazgos": "[PEGA AQUÍ LA LISTA DE HALLAZGOS CON SU GRAVEDAD Y ZONA AFECTADA]"
+  },
+  "pasos": [
+    "Para cada hallazgo, reescribir en una frase qué podría hacer un atacante, sin tecnicismos",
+    "Puntuar de 1 a 5 el impacto en el negocio: datos de clientes, dinero, parada del servicio, reputación y obligaciones legales",
+    "Puntuar de 1 a 5 la facilidad de aprovechamiento según lo indicado en el informe: expuesto a internet, requiere cuenta, requiere ser administrador",
+    "Estimar el esfuerzo de arreglo en bajo, medio o alto y decir de quién depende",
+    "Calcular una prioridad final y explicar en una línea por qué queda por delante o por detrás de su nota técnica",
+    "Proponer una medida de contención inmediata para los tres primeros, mientras llega el arreglo definitivo",
+    "Agrupar el resto en tres olas: esta semana, este mes y este trimestre",
+    "Marcar los hallazgos que se pueden aceptar como riesgo asumido y qué habría que documentar para asumirlos"
+  ],
+  "restricciones": [
+    "No inventar hallazgos que no estén en la lista aportada",
+    "No prometer porcentajes de reducción de riesgo ni cifras de pérdidas",
+    "Si un hallazgo no se entiende, decirlo y proponer la pregunta exacta para el auditor"
+  ],
+  "formato_salida": {
+    "bloque_1": "tabla ordenada con columnas: Nº, hallazgo en cristiano, impacto, facilidad, esfuerzo, prioridad, responsable",
+    "bloque_2": "plan en tres olas con fechas propuestas",
+    "bloque_3": "resumen de 5 líneas para dirección"
+  },
+  "criterios_calidad": [
+    "El orden final se puede defender en una reunión con argumentos de negocio",
+    "Cada hallazgo tiene un responsable, no queda huérfano",
+    "Las medidas de contención son realizables en menos de una semana"
+  ],
+  "tono": "ejecutivo y sin dramatismo"
+}

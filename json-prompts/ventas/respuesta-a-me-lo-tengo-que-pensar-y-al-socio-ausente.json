@@ -1,0 +1,33 @@
+{
+  "tarea": "Preparar la respuesta al aplazamiento de decisión y al 'lo tengo que consultar', y asegurar un siguiente paso con fecha",
+  "contexto": {
+    "oferta": "[QUÉ PROPUSISTE Y A QUÉ PRECIO]",
+    "interlocutor": "[CON QUIÉN HABLAS Y QUÉ CARGO TIENE]",
+    "quien_decide": "[QUIÉN FIRMA DE VERDAD, SI LO SABES]",
+    "frase_del_cliente": "[COPIA LO QUE TE DIJO]",
+    "pendiente": "[LO QUE QUEDÓ SIN RESOLVER EN LA REUNIÓN]"
+  },
+  "instrucciones": [
+    "Escribe la respuesta en el momento: aceptar el aplazamiento y a la vez preguntar qué es exactamente lo que se va a pensar",
+    "Ofrece dos o tres opciones típicas para que el cliente elija ('¿es el precio, el calendario o quieres verlo con alguien más?')",
+    "Si hay un tercero que decide, propón estar en esa conversación o dale al cliente el material para defenderla por ti",
+    "Cierra siempre con una fecha concreta: día y hora del siguiente contacto, no 'la semana que viene'",
+    "Prepara además el resumen de una página que el cliente pueda enseñar a su socio o jefe"
+  ],
+  "restricciones": [
+    "Nada de presionar, de cerrar a la fuerza ni de insinuar que perderá una oportunidad falsa",
+    "No aceptar un 'ya te llamo yo' sin fecha",
+    "Español de España, tuteo, frases dichas en voz alta"
+  ],
+  "formato_salida": {
+    "1_en_la_reunion": "3 frases para decir en el momento, en orden",
+    "2_resumen_para_el_tercero": "Guion del documento de una página: problema, propuesta, precio, qué pasa si no se hace, plazos",
+    "3_mensaje_posterior": "Mensaje de menos de 80 palabras para enviar ese mismo día con la fecha acordada",
+    "4_si_no_contesta": "Qué escribir 7 días después"
+  },
+  "criterios_calidad": [
+    "Toda salida termina con una fecha concreta sobre la mesa",
+    "El resumen para el tercero se entiende sin haber estado en la reunión",
+    "El cliente no se siente acorralado en ningún momento"
+  ]
+}

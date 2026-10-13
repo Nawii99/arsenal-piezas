@@ -1,0 +1,26 @@
+{
+  "tarea": "Crear el procedimiento interno de una tienda online para atender derechos de protección de datos y gestionar brechas de seguridad, con plantillas de respuesta",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "responsable_interno": "[QUIÉN SE ENCARGA]",
+    "donde_estan_los_datos": "[PLATAFORMA DE TIENDA, EMAIL MARKETING, HOJAS DE CÁLCULO, CRM, COPIAS DE SEGURIDAD]",
+    "email_de_derechos": "[EMAIL PÚBLICO PARA EJERCER DERECHOS]"
+  },
+  "parte_1_derechos": {
+    "derechos": ["acceso", "rectificación", "supresión", "oposición", "limitación", "portabilidad", "decisiones automatizadas"],
+    "reglas": ["Plazo de un mes, ampliable a tres avisando en el primer mes", "Verificar identidad sin pedir más datos de los necesarios", "Gratuito salvo solicitudes manifiestamente excesivas", "Conservar lo necesario por obligación fiscal aunque se pida el borrado, explicándolo", "Dejar registro escrito de cada solicitud y su respuesta"],
+    "entregables": ["Diagrama de pasos desde que llega el email", "Plantilla de acuse de recibo", "Plantilla de respuesta concediendo el derecho", "Plantilla de denegación parcial motivada", "Hoja de registro de solicitudes"]
+  },
+  "parte_2_brechas": {
+    "reglas": ["Notificar a la AEPD en 72 horas si hay riesgo para los afectados", "Comunicar a los afectados sin dilación si el riesgo es alto", "Documentar toda brecha aunque no se notifique"],
+    "entregables": ["Checklist de primeras 24 horas", "Ficha de evaluación de riesgo con criterios", "Plantilla de comunicación a clientes afectados", "Registro interno de incidentes"]
+  },
+  "restricciones": [
+    "No prometas plazos ni resultados a los que la ley no obliga",
+    "Las plantillas deben ser claras y sin tecnicismos, para que las use cualquiera del equipo",
+    "Marca los huecos con corchetes en mayúsculas para rellenar en cada caso"
+  ],
+  "formato_salida": {"tipo": "manual interno en markdown con pasos numerados y plantillas separadas listas para copiar"},
+  "criterios_calidad": ["Cualquier persona del equipo puede seguirlo sin saber de derecho", "Cada plantilla indica el plazo máximo de respuesta"],
+  "aviso": "Procedimiento orientativo; en incidentes graves consulta con un especialista."
+}

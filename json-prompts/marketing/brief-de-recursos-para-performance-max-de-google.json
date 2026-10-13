@@ -1,0 +1,40 @@
+{
+  "tarea": "Preparar el brief completo de un grupo de recursos para una campana de Maximo Rendimiento (Performance Max) de Google Ads",
+  "contexto": {
+    "negocio": "[NOMBRE Y QUE HACE]",
+    "producto_estrella": "[QUE VAS A EMPUJAR]",
+    "publico": "[A QUIEN LE SIRVE Y QUE BUSCA EN GOOGLE]",
+    "ventajas": "[3 A 5 VENTAJAS REALES]",
+    "oferta": "[OFERTA O MOTIVO PARA ACTUAR AHORA]",
+    "zona": "[ZONA GEOGRAFICA]",
+    "url_final": "[URL]",
+    "material_grafico": "[QUE FOTOS Y VIDEOS TIENES YA]"
+  },
+  "entregables": {
+    "titulos_cortos": "5 de hasta 30 caracteres",
+    "titulos_largos": "5 de hasta 90 caracteres",
+    "descripciones": "1 de hasta 60 y 4 de hasta 90 caracteres",
+    "nombre_empresa": "Hasta 25 caracteres",
+    "llamada_a_la_accion": "Cual elegir y por que",
+    "senales_de_audiencia": "Listas propias, datos personalizados, intereses y busquedas que sugerir a Google"
+  },
+  "instrucciones": [
+    "Escribe los textos pensando en que se combinan solos: cada linea debe funcionar aislada",
+    "Cubre angulos distintos en los titulos: que es, para quien, ventaja principal, prueba de confianza y oferta",
+    "Indica el listado exacto de imagenes a preparar con sus proporciones (cuadrada, horizontal y vertical) y que debe verse en cada una",
+    "Define el guion de un video corto vertical de 15 segundos por si no tienes video, para que Google no genere uno automatico malo",
+    "Propon las senales de audiencia concretas y advierte de que son una pista, no una segmentacion cerrada",
+    "Anade que exclusiones de marca y de ubicaciones conviene configurar"
+  ],
+  "restricciones": [
+    "Nada de texto que supere los limites de caracteres indicados",
+    "No prometer nada que no aparezca en la pagina de destino",
+    "Evitar imagenes con mucho texto encima"
+  ],
+  "formato_salida": "Bloques titulados por tipo de recurso, cada texto con su contador de caracteres, y al final una lista de tareas de produccion grafica",
+  "criterios_calidad": [
+    "Todos los huecos del grupo de recursos quedan cubiertos",
+    "Ningun titulo repite la idea de otro",
+    "La lista de imagenes indica proporcion, cantidad y contenido"
+  ]
+}

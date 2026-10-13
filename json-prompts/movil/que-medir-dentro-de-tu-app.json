@@ -1,0 +1,50 @@
+{
+  "tarea": "Definir el mapa mínimo de eventos y cifras de una app: qué se registra, cómo se nombra, qué informe sale de ahí y qué decisión provoca cada número",
+  "contexto": {
+    "app": "[NOMBRE Y QUÉ HACE]",
+    "objetivo_del_negocio": "[LO QUE TIENE QUE PASAR PARA QUE GANES DINERO]",
+    "accion_valiosa": "[LA ACCIÓN QUE MÁS SE PARECE A GANAR DINERO]",
+    "recorrido": "[LOS PASOS DESDE ABRIR HASTA ESA ACCIÓN]",
+    "herramienta": "[LA QUE USAS O VAS A USAR PARA MEDIR]",
+    "quien_lo_implementa": "[TÚ, UN PROGRAMADOR O UNA AGENCIA]"
+  },
+  "principios": [
+    "Menos de 20 eventos: si hay más, nadie los mira",
+    "Un evento es una acción del usuario, no una pantalla que se pinta sola",
+    "Nombres en minúsculas, en inglés o en español pero siempre igual, con verbo y objeto: por ejemplo pedido_creado",
+    "Cada evento lleva 2 o 3 propiedades como mucho, y ninguna con datos personales",
+    "Un evento solo entra en la lista si alguien va a decidir algo con él"
+  ],
+  "metodo": [
+    "1. Dibujar el embudo del recorrido con 4 a 6 pasos, de abrir hasta la acción valiosa",
+    "2. Poner un evento en cada paso y ninguno más de momento",
+    "3. Añadir los eventos de dinero: pantalla de pago vista, compra iniciada, compra completada, cancelación",
+    "4. Añadir los eventos de problema: error mostrado, sin conexión, cierre inesperado",
+    "5. Definir para cada evento el nombre exacto, cuándo se dispara y sus propiedades",
+    "6. Definir las 5 cifras de cabecera: usuarios activos, paso a paso del embudo, retención al día 7, acción valiosa por usuario, ingresos",
+    "7. Escribir para cada cifra qué decisión provoca si sube o baja",
+    "8. Probar los eventos en un móvil real antes de publicar y comprobar que no se disparan dos veces"
+  ],
+  "errores_a_evitar": [
+    "Medir cada botón de la app y no mirar nunca los datos",
+    "Nombres inconsistentes que luego no se pueden agrupar",
+    "Guardar correo, teléfono o dirección dentro de las propiedades del evento",
+    "Contar aperturas de app como si fueran resultados",
+    "Cambiar los nombres de los eventos y romper el histórico"
+  ],
+  "formato_salida": {
+    "tabla_eventos": "Nombre del evento, cuándo se dispara, propiedades, para qué cifra sirve, prioridad de implementación",
+    "embudo": "Los pasos en orden con el evento de cada paso y el porcentaje que se espera perder en cada uno",
+    "cuadro_semanal": "Las 5 cifras a revisar cada lunes, con dónde se miran y en cuánto tiempo",
+    "decisiones": "Por cifra: si baja de X hago esto, si sube hago esto otro",
+    "instrucciones_para_quien_lo_monta": "Texto claro para pasar al programador, evento por evento",
+    "prueba": "Cómo comprobar en el móvil que cada evento llega una sola vez"
+  },
+  "criterios_calidad": [
+    "No hay más de 20 eventos y todos tienen dueño y decisión asociada",
+    "Los nombres siguen un patrón único y se pueden ordenar alfabéticamente por familia",
+    "Ninguna propiedad contiene datos personales",
+    "El embudo permite ver en qué paso concreto se pierde la gente",
+    "Cualquiera puede leer el cuadro semanal en 10 minutos y saber qué hacer"
+  ]
+}

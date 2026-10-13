@@ -1,0 +1,43 @@
+{
+  "tarea": "Crear el plan de retoque de un retrato paso a paso para conseguir piel natural, sin efecto plástico",
+  "rol": "Retocador de retrato con experiencia en editorial y fotografía corporativa",
+  "contexto": {
+    "uso_final": "[USO FINAL: LINKEDIN / WEB CORPORATIVA / REVISTA / REDES]",
+    "sujeto": "[EDAD APROXIMADA Y SEXO DE LA PERSONA RETRATADA]",
+    "condiciones_de_luz": "[VENTANA / FLASH / EXTERIOR EN SOMBRA / SOL DURO]",
+    "software": "[PHOTOSHOP / LIGHTROOM / CAPTURE ONE / AFFINITY / GIMP]"
+  },
+  "entradas": {
+    "problemas_detectados": "[QUÉ NO TE GUSTA: OJERAS, BRILLOS, GRANOS, PELOS SUELTOS, PIEL ROJA]",
+    "tiempo_disponible": "[MINUTOS POR FOTO]"
+  },
+  "procedimiento": [
+    "Revelado base: exposición, balance de blancos tomando la piel como referencia y recuperación de altas luces",
+    "Limpieza puntual: quitar solo lo temporal (granos, pelos sueltos); nunca lunares, cicatrices ni pecas",
+    "Igualar manchas y tonos con curvas o pincel de baja opacidad ANTES de suavizar nada",
+    "Textura y volumen con dodge and burn a flujo 5-10% o separación de frecuencias si hay tiempo",
+    "Ojos y dientes: aclarar como mucho media parada y bajar saturación amarilla, sin llegar a blanco puro",
+    "Enfoque final solo en ojos, cejas y labios con máscara, nunca enfoque global fuerte",
+    "Recorte y exportación según el uso final"
+  ],
+  "errores_a_evitar": [
+    "Piel sin poros por exceso de suavizado o filtros de desenfoque",
+    "Halos claros alrededor de la cabeza por aclarar con pincel grande",
+    "Pieles naranjas o magenta por ajustar el balance de blancos mirando el fondo",
+    "Modificar rasgos o adelgazar a la persona sin que lo haya pedido"
+  ],
+  "restricciones": [
+    "Todo reversible: capas y máscaras, nunca tocar el archivo original",
+    "Se quita lo temporal, se respeta lo permanente"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de pasos",
+    "columnas": ["paso", "qué hago", "herramienta y valores orientativos", "cómo sé que está bien", "minutos"],
+    "cierre": "Lista de 3 pasos que puedes saltarte si vas justo de tiempo y qué pierdes en cada uno"
+  },
+  "criterios_calidad": [
+    "Se sigue viendo textura de piel al 100% de zoom",
+    "Los valores se dan como rango, no como número mágico"
+  ],
+  "tono": "Directo, de taller, tuteando"
+}

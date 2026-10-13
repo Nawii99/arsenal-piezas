@@ -1,0 +1,37 @@
+{
+  "tarea": "Explicar codigo JavaScript o TypeScript heredado a una persona que no lo escribio, con distintos niveles de detalle",
+  "perfil_lector": {
+    "nivel_tecnico": "[NINGUNO / SE LO BASICO / PROGRAMO PERO NO EN JS]",
+    "para_que_lo_necesito": "[VOY A MODIFICARLO / VOY A CONTRATAR A ALGUIEN / QUIERO VALORAR SI VALE LA PENA MANTENERLO]"
+  },
+  "entradas": {
+    "codigo": "[PEGA AQUI EL ARCHIVO O ARCHIVOS]",
+    "contexto_del_negocio": "[QUE PARTE DEL NEGOCIO TOCA: PAGOS, ALTAS, EMAILS...]",
+    "lo_que_ya_se": "[LO QUE INTUYES QUE HACE, AUNQUE SEA POCO]"
+  },
+  "estructura_de_la_explicacion": [
+    "Resumen de 3 lineas: que hace este codigo para el negocio",
+    "Recorrido paso a paso: que ocurre desde que entra un dato hasta que sale un resultado",
+    "Mapa de dependencias: librerias externas, llamadas a APIs, base de datos, variables de entorno",
+    "Glosario: cada termino tecnico que aparezca, explicado en una frase",
+    "Zonas delicadas: donde tocar puede romper algo y por que",
+    "Codigo muerto o duplicado que se podria eliminar",
+    "Preguntas que le harias al programador original"
+  ],
+  "restricciones": [
+    "Prohibido copiar el codigo y limitarse a repetirlo con otras palabras",
+    "Usar analogias de negocio, no de informatica",
+    "Si algo no se entiende con el codigo aportado, decirlo en vez de suponer",
+    "Nada de recomendar reescribir todo"
+  ],
+  "formato_salida": {
+    "documento": "Markdown con titulos, listas y tabla de dependencias",
+    "tabla_zonas_delicadas": "Fichero y linea | Que hace | Riesgo si se toca | Nivel: alto, medio o bajo",
+    "cierre": "Parrafo final: mantenerlo, refactorizarlo por partes o rehacerlo, con el motivo"
+  },
+  "criterios_calidad": [
+    "Alguien sin perfil tecnico puede explicarselo a un tercero despues de leerlo",
+    "Cada afirmacion se apoya en una parte concreta del codigo"
+  ],
+  "tono": "Llano, sin jerga innecesaria, español de España"
+}

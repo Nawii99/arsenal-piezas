@@ -1,0 +1,33 @@
+{
+  "tarea": "Definir la política de errores, reintentos e idempotencia de la integración entre [TU SISTEMA] y [SISTEMA EXTERNO]",
+  "contexto": {
+    "operaciones": "[LISTA DE LLAMADAS QUE HACES: crear pedido, cobrar, consultar stock]",
+    "cuales_mueven_dinero": "[CUÁLES DE ELLAS COBRAN, REEMBOLSAN O EMITEN FACTURA]",
+    "que_pasa_hoy": "[QUÉ FALLA AHORA MISMO Y CADA CUÁNTO]",
+    "tolerancia": "[CUÁNTO PUEDE TARDAR UNA OPERACIÓN EN COMPLETARSE COMO MÁXIMO]"
+  },
+  "clasifica_cada_error": [
+    "Fallo temporal de red o del proveedor: se reintenta",
+    "Error de datos o de permisos: no se reintenta nunca, se avisa",
+    "Límite de uso alcanzado: se espera lo que indique el proveedor y se reintenta",
+    "Respuesta ambigua o tiempo agotado sin saber si se ejecutó: se consulta el estado antes de repetir"
+  ],
+  "formato_salida": {
+    "tabla_de_errores": "Código o síntoma | qué significa | se reintenta | cuántas veces | qué se registra | qué ve el usuario",
+    "idempotencia": "Cómo se genera la clave única por operación, dónde se guarda y cuánto tiempo",
+    "esperas": "Tabla de reintentos con espera creciente y algo de aleatoriedad para no saturar",
+    "cola_de_fallos": "Qué pasa con lo que agota reintentos y cómo se reprocesa a mano",
+    "mensajes_al_usuario": "Texto exacto para cada tipo de fallo, sin tecnicismos ni culpar al cliente",
+    "registro": "Qué se guarda en cada intento y qué NO se debe guardar nunca"
+  },
+  "restricciones": [
+    "Nunca reintentar a ciegas una operación que mueve dinero",
+    "Nunca guardar tarjetas, contraseñas ni tokens completos en los registros",
+    "Todo reintento lleva la misma clave de idempotencia que el intento original",
+    "Un fallo del proveedor no puede dejar tu base de datos a medias"
+  ],
+  "criterios_calidad": [
+    "Cada error posible tiene una decisión escrita",
+    "Repetir la misma petición diez veces produce un único efecto"
+  ]
+}

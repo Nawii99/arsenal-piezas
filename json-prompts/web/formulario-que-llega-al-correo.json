@@ -1,0 +1,53 @@
+{
+  "tarea": "Montar un formulario de contacto en una web sin servidor propio, que entregue los mensajes en [EMAIL DE DESTINO], con antispam, consentimiento de privacidad y página de gracias.",
+  "contexto": {
+    "donde_va": "[LANDING HTML / WORDPRESS / SHOPIFY / OTRO]",
+    "servicio_preferido": "[FORMSPREE / NETLIFY FORMS / WEB3FORMS / EL QUE RECOMIENDES]",
+    "volumen_esperado": "[MENSAJES AL MES APROXIMADOS]"
+  },
+  "entradas": {
+    "campos_necesarios": "[NOMBRE, EMAIL, TELÉFONO, MENSAJE, PRESUPUESTO...]",
+    "campos_obligatorios": "[CUÁLES NO PUEDEN QUEDAR VACÍOS]",
+    "que_pasa_despues": "[LE LLAMO EN 24 H / LE MANDO PRESUPUESTO / LE DOY CITA]",
+    "responsable_datos": "[NOMBRE O RAZÓN SOCIAL Y NIF]",
+    "url_politica_privacidad": "[URL]"
+  },
+  "pasos": [
+    "1. Reducir los campos al mínimo: cada campo extra baja el número de mensajes recibidos.",
+    "2. Elegir el servicio de recepción y explicar el alta paso a paso, incluida la verificación del correo de destino.",
+    "3. Escribir el HTML del formulario con etiquetas label asociadas, tipos correctos (email, tel), autocomplete y required.",
+    "4. Añadir antispam sin captcha molesto: campo trampa oculto (honeypot) y control de tiempo mínimo de envío.",
+    "5. Añadir la casilla de consentimiento con enlace a la política de privacidad; sin marcar por defecto.",
+    "6. Crear la página de gracias con lo que va a pasar ahora y un enlace de vuelta.",
+    "7. Preparar el mensaje de error visible si el envío falla, para que nadie se quede sin saber si ha salido.",
+    "8. Hacer una prueba de extremo a extremo y revisar también la carpeta de spam del correo de destino."
+  ],
+  "restricciones": [
+    "Nada de PHP, servidores ni bases de datos.",
+    "No usar el correo en un enlace mailto como solución principal.",
+    "No pedir DNI, dirección ni datos sensibles en un formulario de contacto.",
+    "La casilla de consentimiento nunca viene premarcada.",
+    "Todos los textos en español de España y tuteando."
+  ],
+  "formato_salida": {
+    "bloque_1": "Servicio recomendado y por qué, con su límite gratuito real.",
+    "bloque_2": "Alta del servicio en pasos numerados.",
+    "bloque_3": "HTML completo del formulario en un bloque de código, con comentarios en español señalando qué hay que sustituir.",
+    "bloque_4": "HTML de la página de gracias.",
+    "bloque_5": "Lista de comprobación de la prueba: qué enviar, qué debe llegar y dónde mirar si no llega."
+  },
+  "criterios_calidad": [
+    "Un mensaje de prueba llega a la bandeja de entrada en menos de un minuto.",
+    "El formulario se rellena bien con el teclado y desde el móvil.",
+    "Si falta un campo obligatorio, el aviso se ve y dice qué falta.",
+    "El remitente y el asunto del email permiten responder directamente al cliente.",
+    "El spam se queda fuera sin obligar al visitante a resolver un puzle."
+  ],
+  "errores_frecuentes": [
+    "No verificar el correo de destino y perder todos los mensajes.",
+    "Que el aviso de éxito aparezca pero el servicio no esté configurado.",
+    "Meter un captcha pesado que espanta a la mitad de los interesados.",
+    "No mirar nunca la carpeta de spam del buzón receptor.",
+    "Olvidar avisar por dónde y cuándo vas a responder."
+  ]
+}

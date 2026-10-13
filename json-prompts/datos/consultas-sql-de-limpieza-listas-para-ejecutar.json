@@ -1,0 +1,40 @@
+{
+  "tarea": "Generar consultas SQL para diagnosticar y corregir problemas de calidad en una tabla, de forma reversible",
+  "contexto": {
+    "motor": "[MYSQL, POSTGRESQL, SQL SERVER O SQLITE]",
+    "tabla": "[NOMBRE DE LA TABLA]",
+    "estructura": "[PEGA EL CREATE TABLE O LA LISTA DE COLUMNAS CON SU TIPO]",
+    "volumen": "[NÚMERO APROXIMADO DE FILAS]",
+    "permisos": "[PUEDO CREAR TABLAS AUXILIARES: SÍ O NO]"
+  },
+  "problemas_a_corregir": "[EJ: ESPACIOS SOBRANTES, EMAILS EN MAYÚSCULAS, TELÉFONOS CON PREFIJO, VACÍOS COMO CADENA VACÍA, DUPLICADOS POR EMAIL]",
+  "entrega_para_cada_problema": [
+    "Una consulta SELECT que cuenta cuántas filas están afectadas",
+    "Una consulta SELECT que muestra 10 ejemplos reales",
+    "La sentencia UPDATE o DELETE correspondiente, siempre con WHERE",
+    "Una consulta SELECT de verificación posterior que debe devolver cero"
+  ],
+  "orden_de_trabajo": [
+    "Copia de seguridad de la tabla antes de tocar nada",
+    "Diagnóstico completo",
+    "Correcciones de formato, que son las menos arriesgadas",
+    "Correcciones de contenido",
+    "Duplicados al final, cuando el resto ya está normalizado"
+  ],
+  "restricciones": [
+    "Ningún UPDATE ni DELETE sin cláusula WHERE",
+    "Nada de DROP ni TRUNCATE sobre la tabla original",
+    "Usa transacciones si el motor las admite y explica cómo deshacer",
+    "Recomienda ejecutar primero sobre una copia y con LIMIT cuando el motor lo permita",
+    "Usa solo funciones que existan en el motor indicado y avisa si algo cambia entre motores"
+  ],
+  "formato_salida": {
+    "tipo": "markdown con bloques de código SQL",
+    "estructura": "Un apartado por problema con el título del problema, qué hace, la consulta de diagnóstico, la de corrección y la de verificación, más una frase de riesgo"
+  },
+  "criterios_calidad": [
+    "Cada bloque de código se puede copiar y pegar sin editar más que el nombre de la tabla",
+    "Ninguna consulta destructiva aparece sin su verificación previa",
+    "Se avisa en negrita de los pasos irreversibles"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tarea": "Preparar un video de caso de exito: guion de entrevista al cliente, estructura de montaje y planos de apoyo",
+  "contexto": {
+    "servicio": "[QUÉ HICISTE PARA ESE CLIENTE]",
+    "cliente": "[SECTOR, TAMAÑO Y CARGO DE QUIEN HABLA]",
+    "problema_previo": "[CÓMO ESTABAN ANTES]",
+    "resultado": "[QUÉ CONSIGUIERON Y EN CUÁNTO TIEMPO]",
+    "duracion_video": "[SEGUNDOS O MINUTOS]",
+    "uso": "[WEB / PROPUESTAS COMERCIALES / ANUNCIOS / REDES]"
+  },
+  "parte_1_entrevista": {
+    "instrucciones": "Escribe entre 10 y 14 preguntas abiertas, ordenadas de facil a comprometida, para que el cliente cuente la historia sin darse cuenta de que sigue un guion",
+    "bloques": ["Quién es y a qué se dedica", "Cómo estaban antes y qué les preocupaba", "Qué otras opciones valoraron y qué les frenaba", "Cómo fue trabajar contigo, con un momento concreto", "Qué cambió, con cifras si las hay", "A quién se lo recomendaría"],
+    "reglas": ["Nada de preguntas de sí o no", "Ninguna pregunta debe sugerir la respuesta", "Pide siempre que responda con una frase completa que se entienda sin oír la pregunta"]
+  },
+  "parte_2_montaje": {
+    "estructura": ["Abrir con la frase más contundente del cliente", "Situación de partida", "La duda o el punto de inflexión", "Lo que se hizo, en concreto", "El resultado con datos", "Recomendación final y cierre de marca"],
+    "por_bloque": ["Idea que debe transmitir", "Qué respuesta de la entrevista lo cubre", "Planos de apoyo que hacen falta", "Rótulo en pantalla"]
+  },
+  "parte_3_planos_de_apoyo": [
+    "Lista de b-roll a grabar en las instalaciones del cliente",
+    "Capturas, graficos o documentos que demuestren el resultado",
+    "Rotulo de nombre y cargo, y momento en que aparece"
+  ],
+  "restricciones": [
+    "No pongas palabras en boca del cliente: el guion son preguntas, no respuestas",
+    "Ninguna cifra puede aparecer si no la ha dado el cliente o no esta documentada",
+    "Incluye un recordatorio de pedir permiso de imagen por escrito antes de grabar"
+  ],
+  "criterios_calidad": [
+    "Con estas preguntas sale material suficiente aunque el cliente sea poco hablador",
+    "El vídeo se entiende sin voz en off de la marca",
+    "Hay al menos un dato concreto y verificable"
+  ]
+}

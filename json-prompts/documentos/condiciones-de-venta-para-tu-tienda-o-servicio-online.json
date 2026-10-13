@@ -1,0 +1,43 @@
+{
+  "tarea": "Redactar las condiciones generales de contratación y la política de devoluciones de una venta online en España",
+  "rol": "Especialista en comercio electrónico y consumo que escribe condiciones legibles y cumplidoras",
+  "entradas": {
+    "titular": "[NOMBRE O RAZÓN SOCIAL], NIF [NIF], domicilio [DIRECCIÓN], email [EMAIL]",
+    "que_vendo": "[PRODUCTO FÍSICO / SERVICIO / CURSO O CONTENIDO DIGITAL / SUSCRIPCIÓN]",
+    "precios": "[SI LOS PRECIOS INCLUYEN IVA Y QUÉ GASTOS SE AÑADEN]",
+    "envio": "[ZONAS, PLAZOS Y COSTES DE ENVÍO]",
+    "pagos": "[TARJETA, BIZUM, TRANSFERENCIA, PASARELA UTILIZADA]",
+    "devoluciones": "[TU POLÍTICA: PLAZO, ESTADO DEL PRODUCTO, QUIÉN PAGA EL RETORNO]",
+    "cliente_tipo": "[CONSUMIDOR PARTICULAR / EMPRESAS / AMBOS]"
+  },
+  "apartados_obligatorios": [
+    "Identificación del vendedor y datos de contacto",
+    "Objeto y ámbito: qué se vende y a quién",
+    "Proceso de compra paso a paso y confirmación del pedido",
+    "Precios, impuestos, gastos de envío y formas de pago",
+    "Plazos de entrega y qué ocurre si hay retraso o falta de stock",
+    "Derecho de desistimiento de 14 días para consumidores, con sus excepciones y el formulario de desistimiento",
+    "Devoluciones, cambios y reembolsos: plazos y medio de devolución del dinero",
+    "Garantía legal de los productos y cómo reclamar",
+    "Atención al cliente, plazo de respuesta y resolución de reclamaciones",
+    "Protección de datos y remisión a la política de privacidad",
+    "Ley aplicable y derecho del consumidor a acudir a su propio fuero"
+  ],
+  "formato_salida": {
+    "documento": "Texto en secciones numeradas con títulos claros, listo para pegar en una página web",
+    "extra_1": "Resumen de 6 puntos en lenguaje llano para poner arriba de la página",
+    "extra_2": "Formulario de desistimiento tipo, listo para copiar",
+    "extra_3": "Lista de lo que además debes tener en la web: aviso legal, política de privacidad y de cookies"
+  },
+  "restricciones": [
+    "No prometas condiciones mejores de las que el usuario ha indicado",
+    "Si un producto o servicio queda fuera del derecho de desistimiento, explícalo con su motivo",
+    "Marca con [CORCHETES] cualquier dato fiscal o de contacto que falte"
+  ],
+  "criterios_calidad": [
+    "Un cliente entiende qué pasa si quiere devolver algo sin leer 10 páginas",
+    "Coherencia total entre el resumen llano y el texto legal",
+    "Sin cláusulas abusivas contra el consumidor"
+  ],
+  "aviso": "Base sólida para revisar con un profesional antes de publicarla"
+}

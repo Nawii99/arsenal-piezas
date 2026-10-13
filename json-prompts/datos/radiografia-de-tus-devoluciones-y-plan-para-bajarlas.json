@@ -1,0 +1,38 @@
+{
+  "tarea": "Analizar los datos de devoluciones de mi tienda, encontrar las causas que más dinero me cuestan y proponer un plan de reducción con acciones concretas y medibles",
+  "entradas": {
+    "periodo_analizado": "[EJ: ÚLTIMOS 6 MESES]",
+    "pedidos_totales": "[NÚMERO]",
+    "devoluciones_totales": "[NÚMERO]",
+    "coste_medio_devolucion": "[PORTE VUELTA + REVISIÓN + REACONDICIONADO EN EUROS]",
+    "listado": "[PEGA AQUÍ TU EXPORTACIÓN: PEDIDO, PRODUCTO, VARIANTE, MOTIVO, COMENTARIO DEL CLIENTE, FECHA]",
+    "catalogo": "[PRODUCTOS ESTRELLA Y SU PRECIO]"
+  },
+  "analisis_solicitado": [
+    "1. Tasa de devolución global y por producto, variante y canal, señalando cuáles están por encima de la media",
+    "2. Agrupación de los motivos en categorías reales: talla o medida, expectativa frente a foto o descripción, calidad, daño en transporte, error de picking, retraso, arrepentimiento",
+    "3. Coste total de cada categoría, no solo el número de casos: ordena por dinero perdido",
+    "4. Detección de patrones: una variante concreta, un proveedor, una agencia, un mes o una campaña",
+    "5. Lectura de los comentarios de clientes para sacar las tres frases que más se repiten"
+  ],
+  "plan_pedido": [
+    "Tres acciones de impacto alto y esfuerzo bajo, listas para aplicar esta semana",
+    "Tres acciones de fondo: ficha de producto, guía de tallas, embalaje, proveedor o transportista",
+    "Para cada acción: qué hago, quién lo hace, en cuánto tiempo y qué métrica debe moverse"
+  ],
+  "reglas": [
+    "No mezclar devolución por desistimiento con devolución por defecto: se arreglan de forma distinta",
+    "Si la muestra de un producto es menor de [MÍNIMO DE CASOS] casos, avisar de que la conclusión es débil",
+    "No proponer endurecer la política de devoluciones como primera solución"
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen en 5 puntos con las cifras clave",
+    "bloque_2": "Tabla de causas ordenada por dinero perdido",
+    "bloque_3": "Plan de acción en tabla con responsable, plazo y métrica",
+    "bloque_4": "Qué datos me faltan para afinar el análisis"
+  },
+  "criterios_calidad": [
+    "Cada conclusión cita el número de casos en que se apoya",
+    "No hay recomendaciones genéricas del tipo mejorar la comunicación"
+  ]
+}

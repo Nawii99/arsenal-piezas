@@ -1,0 +1,44 @@
+{
+  "tarea": "Escribir prompts de video generativo para los planos de recurso de un anuncio, con movimiento de camara, luz y duracion definidos clip a clip",
+  "contexto": {
+    "producto": "[PRODUCTO, MATERIAL, COLOR Y TAMANO REAL]",
+    "ambiente_deseado": "[COCINA LUMINOSA / CALLE URBANA / ESTUDIO NEUTRO / NATURALEZA]",
+    "sensacion": "[LIMPIO Y CARO / CALIDO Y CASERO / ENERGICO Y JOVEN]",
+    "numero_de_clips": "[ENTRE 5 Y 10]",
+    "duracion_por_clip": "[3 A 8 SEGUNDOS]",
+    "formato": "[9:16 / 16:9 / 1:1]",
+    "generador": "[VEO / KLING / RUNWAY / SORA / LUMA]"
+  },
+  "reglas_de_oficio": [
+    "Un solo movimiento de camara por clip: o travelling, o giro, o zoom lento, nunca los tres",
+    "Describe el movimiento con velocidad: lento, muy lento, constante",
+    "Cierra siempre luz, hora del dia y direccion de la sombra",
+    "Evita manos manipulando objetos pequenos y texto legible: es donde falla la IA",
+    "Pide plano fijo cuando el clip vaya debajo de una voz en off",
+    "Escribe el prompt en ingles y en una sola frase larga, ordenando: sujeto, accion, camara, lente, luz, ambiente, estilo"
+  ],
+  "para_cada_clip_devuelve": [
+    "Para que sirve dentro del anuncio",
+    "Prompt en ingles listo para pegar",
+    "Prompt negativo o que evitar",
+    "Duracion recomendada",
+    "Plan B grabable con movil si la IA no lo consigue"
+  ],
+  "restricciones": [
+    "Nada de marcas reales, logotipos ni personas reconocibles",
+    "Sin texto ni etiquetas legibles dentro del video generado",
+    "No mezclar mas de dos acciones en un mismo clip",
+    "Coherencia de color y luz entre todos los clips"
+  ],
+  "formato_salida": {
+    "tipo": "Tabla de clips",
+    "columnas": ["Clip", "Funcion en el anuncio", "Prompt en ingles", "Evitar", "Segundos", "Plan B con movil"],
+    "cierre": "Orden de montaje sugerido y nota de que clip usar como plano de apertura"
+  },
+  "criterios_calidad": [
+    "Cada prompt describe una sola escena clara y realizable",
+    "Los clips encajan entre si en color, luz y estilo",
+    "Ninguno depende de manos, texto o caras en primer plano",
+    "Se puede montar un anuncio completo solo con estos clips y una voz en off"
+  ]
+}

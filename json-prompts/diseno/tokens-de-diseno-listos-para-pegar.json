@@ -1,0 +1,35 @@
+{
+  "tarea": "Convertir las decisiones de marca en un sistema de tokens de diseno reutilizable",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "colores": "[HEX CON SU ROL: primario, acento, texto, fondo, borde, exito, error]",
+    "fuentes": "[FUENTE DE TITULARES Y FUENTE DE TEXTO]",
+    "tamano_base": "[16 px POR DEFECTO]",
+    "estilo_bordes": "[ESQUINAS RECTAS, SUAVES O MUY REDONDEADAS]",
+    "modo_oscuro": "[SI O NO]"
+  },
+  "proceso": [
+    "Nombra cada token por su funcion y no por su aspecto: usa color-texto-suave, no gris-claro",
+    "Crea las familias: color, tipografia, espaciado, radio, sombra, borde y tiempo de animacion",
+    "Construye el espaciado sobre una base de 4 px con 8 pasos",
+    "Define 3 niveles de sombra y explica cuando usar cada uno",
+    "Si hay modo oscuro, duplica solo los tokens de color manteniendo los mismos nombres",
+    "Anade una tabla que traduzca cada token a lenguaje normal"
+  ],
+  "restricciones": [
+    "Nombres en minusculas y con guiones, siempre en el mismo idioma",
+    "Ningun valor suelto fuera del sistema",
+    "Maximo 40 tokens en total para que sea manejable",
+    "Sin dependencias ni librerias externas"
+  ],
+  "formato_salida": {
+    "tipo": "bloque de codigo mas tabla explicativa",
+    "partes": ["Bloque CSS con :root y todas las variables", "Bloque de modo oscuro si procede", "Tabla token, valor y para que sirve", "Ejemplo de boton y de tarjeta usando solo tokens"]
+  },
+  "criterios_calidad": [
+    "Se puede pegar tal cual y funciona sin tocar nada",
+    "Ningun nombre de token describe el color, solo su uso",
+    "El ejemplo final no usa ni un valor fuera del sistema"
+  ],
+  "tono": "Seco y ordenado; el codigo manda, el texto acompana"
+}

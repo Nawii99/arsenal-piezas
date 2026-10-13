@@ -1,0 +1,49 @@
+{
+  "tarea": "Revisar todas las operaciones abiertas, dar una previsión realista de cierre del mes y fijar la siguiente acción de cada una con fecha",
+  "rol": "Jefe de ventas de ti mismo: media hora el lunes para decidir qué se trabaja, qué se aparca y qué se entierra",
+  "contexto": {
+    "fases": "[TUS FASES: POR EJEMPLO CONTACTO, LLAMADA HECHA, PRESUPUESTO ENVIADO, NEGOCIANDO, FIRMADO]",
+    "ciclo_medio": "[DÍAS QUE TARDAS DE MEDIA DESDE EL PRIMER CONTACTO HASTA EL SÍ]",
+    "objetivo_del_mes": "[FACTURACIÓN QUE NECESITAS ESTE MES]",
+    "tiempo_comercial_semanal": "[HORAS QUE PUEDES DEDICAR A VENDER ESTA SEMANA]"
+  },
+  "entradas": {
+    "operaciones": "[UNA POR LÍNEA: CLIENTE, IMPORTE, FASE, FECHA DEL ÚLTIMO CONTACTO, QUIÉN MOVIÓ FICHA LA ÚLTIMA VEZ, SIGUIENTE PASO ACORDADO Y FECHA PREVISTA DE CIERRE]",
+    "fecha_de_hoy": "[DD/MM]"
+  },
+  "pasos": [
+    "Marca cada operación como viva o estancada: está estancada si el último movimiento supera la mitad de tu ciclo medio o si no hay siguiente paso con fecha",
+    "Marca quién tiene la pelota: si la tienes tú, es acción tuya inmediata; si la tiene el cliente sin fecha, es una operación mal cerrada",
+    "Asigna probabilidad por fase y ajústala por señales: fecha acordada por el cliente sube, silencio de más de dos semanas baja, decisor no confirmado baja",
+    "Calcula la previsión: suma ponderada de importe por probabilidad, y aparte la suma solo de las de probabilidad alta",
+    "Compara con el objetivo del mes y di cuánto falta y cuántas operaciones nuevas harían falta al importe medio",
+    "Ordena por importe multiplicado por probabilidad y quédate con las cinco a las que dedicar tu tiempo comercial de la semana",
+    "Escribe la siguiente acción concreta de cada una: qué haces, por qué canal y qué día",
+    "Marca las que hay que enterrar hoy y escribe el mensaje de cierre limpio para cada una"
+  ],
+  "restricciones": [
+    "Ninguna operación puede quedar sin siguiente acción con día concreto o sin ser enterrada",
+    "No infles probabilidades por optimismo: solo suben con una señal escrita en las entradas",
+    "Las cinco prioritarias tienen que caber en las horas comerciales declaradas",
+    "Español de España, formato de lista, nada de análisis largos"
+  ],
+  "formato_salida": {
+    "tabla": [{"cliente": "...", "importe": 0, "fase": "...", "dias_sin_movimiento": 0, "quien_tiene_la_pelota": "tú | cliente", "probabilidad_pct": 0, "estado": "viva | estancada | a enterrar"}],
+    "prevision": {"suma_ponderada": 0, "solo_alta_probabilidad": 0, "objetivo": 0, "diferencia": 0, "operaciones_nuevas_necesarias": 0},
+    "top_5_de_la_semana": [{"cliente": "...", "accion": "...", "canal": "...", "dia": "...", "tiempo_estimado_min": 0}],
+    "resto_de_acciones": [{"cliente": "...", "accion": "...", "dia": "..."}],
+    "a_enterrar": [{"cliente": "...", "motivo": "...", "mensaje_de_cierre": "..."}],
+    "aviso": "la señal más preocupante de esta semana, en una frase"
+  },
+  "criterios_calidad": [
+    "Cada operación sale con acción y día o con mensaje de cierre",
+    "La previsión ponderada y la de alta probabilidad aparecen separadas",
+    "Las acciones del top 5 suman menos horas que el tiempo comercial disponible",
+    "Toda subida de probabilidad cita la señal concreta que la justifica"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Mantener meses una operación que el cliente ya descartó",
+    "Contar como probable todo lo presupuestado",
+    "Dedicar la semana a la operación más simpática en vez de a la más grande y probable"
+  ]
+}

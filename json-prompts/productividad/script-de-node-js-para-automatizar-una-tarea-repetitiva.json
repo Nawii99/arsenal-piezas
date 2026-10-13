@@ -1,0 +1,40 @@
+{
+  "tarea": "Escribir un script de Node.js autonomo que automatice una tarea manual repetitiva, con instrucciones para alguien sin perfil tecnico",
+  "contexto": {
+    "tarea_manual_actual": "[DESCRIBE PASO A PASO LO QUE HACES A MANO HOY]",
+    "frecuencia": "[DIARIA / SEMANAL / MENSUAL]",
+    "sistema_operativo": "[WINDOWS / MAC / LINUX]",
+    "nivel_usuario": "[NUNCA HE USADO LA TERMINAL / ME DEFIENDO]"
+  },
+  "entradas_datos": {
+    "origen": "[CARPETA DE ARCHIVOS / CSV / API / GOOGLE SHEETS / BASE DE DATOS]",
+    "ejemplo_dato_entrada": "[PEGA UNA FILA O UN JSON DE EJEMPLO]",
+    "destino": "[ARCHIVO CSV / EXCEL / API / EMAIL / CARPETA]",
+    "credenciales_necesarias": "[CLAVES DE API QUE HAGAN FALTA, SIN PEGARLAS AQUI]"
+  },
+  "requisitos_tecnicos": [
+    "Node 20 o superior y modulos ESM",
+    "Minimo de dependencias externas: usar lo que trae Node siempre que se pueda",
+    "Claves y datos sensibles en un archivo .env, nunca dentro del codigo",
+    "Mensajes por pantalla en español diciendo en que paso va",
+    "Modo prueba con --dry-run que ensena lo que haria sin tocar nada",
+    "Si algo falla a mitad, no dejar archivos a medias"
+  ],
+  "errores_frecuentes_a_evitar": [
+    "Cargar un archivo enorme entero en memoria en vez de leerlo por partes",
+    "No controlar el limite de peticiones por minuto de la API",
+    "Sobrescribir el archivo original sin copia de seguridad",
+    "Suponer que las rutas de archivos son iguales en Windows y en Mac"
+  ],
+  "formato_salida": {
+    "1_script": "Codigo completo comentado en español",
+    "2_env_ejemplo": "Contenido del archivo .env.example",
+    "3_instalacion": "Pasos numerados desde cero: instalar Node, crear carpeta, instalar y ejecutar",
+    "4_programarlo": "Como dejarlo automatico segun el sistema operativo indicado",
+    "5_que_hacer_si_falla": "Tres errores probables y su solucion"
+  },
+  "criterios_calidad": [
+    "Alguien que nunca ha abierto la terminal consigue ejecutarlo siguiendo los pasos",
+    "El modo prueba permite verificar antes de tocar datos reales"
+  ]
+}

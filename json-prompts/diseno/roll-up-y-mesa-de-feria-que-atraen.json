@@ -1,0 +1,38 @@
+{
+  "tarea": "Diseñar el contenido de la cartelería de un estand de feria: roll-up, mantel o fondo, cartel de mesa y material de mano",
+  "contexto": {
+    "feria": "[NOMBRE DE LA FERIA O MERCADILLO]",
+    "publico": "[QUIÉN PASA POR ALLÍ: PARTICULARES, PROFESIONALES, DISTRIBUIDORES]",
+    "que_vendes": "[PRODUCTO O SERVICIO Y PRECIO ORIENTATIVO]",
+    "estand": "[MEDIDAS Y SI ES ESQUINA O EN LÍNEA]",
+    "roll_up": "[MEDIDAS, POR DEFECTO 85x200 CM]",
+    "oferta_de_feria": "[DESCUENTO O REGALO SOLO ESE DÍA]",
+    "captacion": "[CÓMO RECOGES CONTACTOS: QR, SORTEO, LISTA]"
+  },
+  "zona_util_del_rollup": "Lo importante va entre 100 y 180 cm de altura: lo de abajo lo tapan las personas y las mesas",
+  "metodo": [
+    "Escribe la frase de pasillo: qué haces y para quién, legible a 5 metros",
+    "Coloca debajo tres beneficios en tres palabras cada uno",
+    "Reserva la parte baja para logo, web y QR grande",
+    "Define el cartel de mesa con la oferta del día y su plazo",
+    "Prepara el material de mano: tarjeta o folleto con un solo siguiente paso",
+    "Añade la frase de apertura que dirá tu equipo al que se para"
+  ],
+  "restricciones": [
+    "El roll-up no lleva párrafos, solo titulares y palabras sueltas",
+    "El QR mínimo de 5 cm y con texto que diga qué hay al escanearlo",
+    "Ninguna información importante por debajo de 90 cm de altura"
+  ],
+  "formato_salida": {
+    "rollup": "Contenido por franjas de altura, con texto y tamaño relativo",
+    "mesa": "Texto del cartel de mesa y del cartel de precios",
+    "mano": "Contenido de la tarjeta o folleto, cara por cara",
+    "guion_estand": "Frase de apertura y dos preguntas para calificar al visitante",
+    "checklist": "Qué llevar el día de la feria además de la cartelería"
+  },
+  "criterios_calidad": [
+    "Alguien que pasa por el pasillo entiende qué vendes sin pararse",
+    "Hay una forma clara de dejar el contacto sin dar la tarjeta a ciegas",
+    "El roll-up sirve para la próxima feria sin reimprimirlo"
+  ]
+}

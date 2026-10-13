@@ -1,0 +1,37 @@
+{
+  "tarea": "Definir el perfil de cliente ideal (ICP) B2B y puntuar una lista de empresas objetivo",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "que_vendes": "[PRODUCTO O SERVICIO EN UNA FRASE]",
+    "precio_medio_contrato": "[IMPORTE MEDIO ANUAL EN EUROS]",
+    "mejores_clientes": "[3 CLIENTES QUE MÁS TE INTERESAN Y POR QUÉ]",
+    "clientes_que_salieron_mal": "[1 O 2 CLIENTES QUE SE FUERON O DIERON PÉRDIDAS]",
+    "zona_y_sectores": "[PAÍS O PROVINCIA Y SECTORES DONDE VENDES]"
+  },
+  "entradas": {
+    "lista_empresas": "[PEGA NOMBRES DE EMPRESAS CON SECTOR, TAMAÑO APROXIMADO Y WEB]"
+  },
+  "pasos": [
+    "Deduce el ICP a partir de los mejores clientes: sector, empleados, facturación estimada, madurez digital, evento detonante y dolor concreto",
+    "Escribe también el anti-ICP: señales claras de que una empresa no encaja",
+    "Define 6 criterios de puntuación con peso: encaje de sector, tamaño, dolor visible, presupuesto probable, acceso al decisor y urgencia",
+    "Puntúa cada empresa de 0 a 100 y clasifícala en nivel A, B o C",
+    "Para cada empresa de nivel A propone el cargo exacto al que abordar y un gancho de entrada de una frase"
+  ],
+  "restricciones": [
+    "No inventes datos de facturación ni de plantilla: si no constan, escribe 'por verificar' e indica dónde comprobarlo",
+    "Prohibido usar categorías vagas tipo 'pymes': concreta actividad y tamaño",
+    "Máximo 3 líneas de justificación por empresa"
+  ],
+  "formato_salida": {
+    "bloque_1": "Ficha de ICP y anti-ICP en lista de puntos",
+    "bloque_2": "Tabla: Empresa | Sector | Tamaño | Puntuación | Nivel | Cargo objetivo | Gancho de entrada | Dato por verificar",
+    "bloque_3": "Las 10 cuentas A ordenadas por prioridad de ataque para esta semana"
+  },
+  "criterios_calidad": [
+    "Cada criterio se puede comprobar mirando la web o LinkedIn de la empresa en menos de 2 minutos",
+    "El gancho menciona algo concreto de esa empresa, no una ventaja genérica del producto",
+    "Queda claro quién NO es cliente"
+  ],
+  "tono": "Directo, comercial y sin adornos"
+}

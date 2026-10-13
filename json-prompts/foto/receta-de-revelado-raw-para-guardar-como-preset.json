@@ -1,0 +1,44 @@
+{
+  "tarea": "Crear una receta de revelado RAW con valores concretos, lista para guardarla como preset reutilizable",
+  "contexto": {
+    "programa": "[LIGHTROOM CLASSIC / LIGHTROOM MÓVIL / CAMERA RAW / CAPTURE ONE / DARKTABLE]",
+    "camara": "[MARCA Y MODELO]",
+    "tipo_de_sesion": "[PRODUCTO / RETRATO / PAISAJE / INTERIORES / CALLE / COMIDA]",
+    "look_deseado": "[LIMPIO Y NEUTRO / CÁLIDO Y SUAVE / CONTRASTADO Y OSCURO / PASTEL / CINE]"
+  },
+  "entradas": {
+    "como_se_ve_el_raw": "[PLANO Y GRIS / SUBEXPUESTO UN PASO / CIELO QUEMADO / MUY CONTRASTADO]",
+    "referencia": "[FOTOS O CUENTAS QUE TE GUSTAN, SI TIENES ALGUNA]",
+    "destino": "[INSTAGRAM / WEB / IMPRESIÓN]"
+  },
+  "orden_de_trabajo": [
+    "Perfil de cámara y correcciones de objetivo",
+    "Balance de blancos y exposición",
+    "Altas luces, sombras, blancos y negros",
+    "Curva de tonos y contraste",
+    "HSL por color y calibración",
+    "Textura, claridad y neblina",
+    "Viñeteo y grano",
+    "Enfoque y reducción de ruido"
+  ],
+  "requisitos": [
+    "Dar un valor con rango para cada deslizador, por ejemplo Claridad +8 a +15",
+    "Explicar en una frase por qué se toca cada uno",
+    "Indicar qué ajustes NO deben guardarse en el preset por depender de cada foto",
+    "Entregar dos versiones del mismo look: suave y fuerte"
+  ],
+  "errores_a_evitar": [
+    "Subir claridad y saturación a la vez hasta que la foto cruje",
+    "Preset con exposición y recorte dentro, que estropea el resto del lote",
+    "Sombras totalmente levantadas que dejan la foto lavada",
+    "Enfoque alto sin máscara, que saca ruido en cielos y paredes"
+  ],
+  "formato_salida": {
+    "tabla": ["ajuste", "valor suave", "valor fuerte", "para qué sirve"],
+    "extra": "Nombre sugerido para el preset y en qué fotos NO conviene aplicarlo"
+  },
+  "criterios_calidad": [
+    "Los nombres de los controles coinciden con los del programa indicado",
+    "El look se sostiene tanto en una foto clara como en una oscura"
+  ]
+}

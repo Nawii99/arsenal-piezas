@@ -1,0 +1,48 @@
+{
+  "tarea": "Construye mi biblioteca de objeciones: para cada pega que me ponen los clientes, la traducción de lo que significa de verdad, la respuesta que doy y la pregunta con la que devuelvo la conversación.",
+  "contexto": {
+    "que_vendo": "[PRODUCTO O SERVICIO]",
+    "precio": "[PRECIO Y FORMA DE PAGO]",
+    "a_quien": "[TIPO DE CLIENTE]",
+    "canal_donde_surgen": "[LLAMADA / WHATSAPP / EMAIL / MOSTRADOR]",
+    "mi_diferencia_real": "[POR QUÉ ME COMPRAN LOS QUE ME COMPRAN]"
+  },
+  "entradas": {
+    "objeciones_literales": ["[PEGA 1 TAL CUAL LA DICEN]", "[PEGA 2]", "[PEGA 3]", "[PEGA 4]", "[PEGA 5]"],
+    "competencia_habitual": "[CON QUIÉN ME COMPARAN O CON QUÉ ALTERNATIVA]",
+    "pruebas_que_tengo": "[CASOS, GARANTÍA, RESEÑAS, DATOS, AÑOS DE OFICIO]"
+  },
+  "metodo": [
+    "1. Clasifica cada objeción en una de estas cuatro: no lo veo claro (valor), no me fío (riesgo), no es el momento (prioridad), no decido yo (autoridad).",
+    "2. Escribe qué está pensando de verdad el cliente detrás de esa frase.",
+    "3. Construye la respuesta con esta secuencia: reconocer sin dar la razón, preguntar para concretar, aportar prueba, proponer un siguiente paso pequeño.",
+    "4. Añade la versión corta de WhatsApp (máximo 45 palabras) y la versión hablada.",
+    "5. Marca cuándo NO hay que rebatir, sino aceptar el no y dejar puerta abierta."
+  ],
+  "errores_a_evitar": [
+    "Bajar el precio en la primera pega en vez de preguntar caro comparado con qué.",
+    "Contestar con un discurso largo; a más palabras, menos credibilidad.",
+    "Discutir o dejar mal a la competencia.",
+    "Insistir cuando la objeción es real y sincera: eso quema al cliente para siempre.",
+    "Inventar garantías o casos que no existen."
+  ],
+  "formato_salida": {
+    "tabla": "Una ficha por objeción con estos apartados: LA FRASE, LO QUE SIGNIFICA, MI RESPUESTA HABLADA, MI RESPUESTA POR ESCRITO, PREGUNTA QUE DEVUELVO, PRUEBA QUE ENSEÑO, CUÁNDO ME RETIRO.",
+    "extra_1": "Tres objeciones que aún no me han puesto pero me pondrán, con su ficha.",
+    "extra_2": "Lista de cinco frases mías que provocan objeciones sin querer y cómo decirlas mejor.",
+    "extra_3": "Chuleta de una página con solo las frases, para tener al lado del teléfono."
+  },
+  "restricciones": [
+    "Español de España, tuteo, tono tranquilo y sin agresividad.",
+    "Cada respuesta hablada, máximo tres frases.",
+    "Prohibido prometer resultados o cifras que no me hayas confirmado.",
+    "Nada de frases hechas de manual de ventas."
+  ],
+  "criterios_calidad": [
+    "Leo la respuesta en voz alta y no me da vergüenza decirla.",
+    "Cada ficha termina en una pregunta o en un paso concreto, no en un monólogo.",
+    "Hay al menos una ficha donde la recomendación es aceptar el no.",
+    "La prueba que se usa existe de verdad entre las que te he dado."
+  ],
+  "si_faltan_datos": "Si no te doy objeciones literales, deduce las cinco más probables para mi tipo de cliente y avísame de que son supuestas."
+}

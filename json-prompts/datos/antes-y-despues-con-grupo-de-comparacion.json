@@ -1,0 +1,35 @@
+{
+  "tarea": "Evaluar el efecto de un cambio ya implantado cuando no hubo test A/B, usando comparación antes-después con un grupo de control natural y control de estacionalidad",
+  "entradas": {
+    "cambio_realizado": "[QUÉ CAMBIASTE Y CUÁNDO EXACTAMENTE]",
+    "metrica": "[VENTAS, LEADS, RESERVAS, TICKET MEDIO]",
+    "serie_antes": "[VALORES POR SEMANA O MES, AL MENOS 8 PERIODOS]",
+    "serie_despues": "[VALORES POR SEMANA O MES, AL MENOS 4 PERIODOS]",
+    "grupo_de_comparacion": "[OTRA TIENDA, OTRA CIUDAD, OTRO CANAL O OTRA LÍNEA DE PRODUCTO SIN EL CAMBIO, CON SUS VALORES]",
+    "otros_hechos_del_periodo": "[CAMPAÑAS, FESTIVOS, ROTURAS DE STOCK, PRENSA, CAMBIOS DE PRECIO]"
+  },
+  "procedimiento": [
+    "1. Dibujar en texto la evolución de ambas series y localizar el momento del cambio",
+    "2. Calcular la variación del grupo tratado y la del grupo de comparación en el mismo periodo",
+    "3. Aplicar diferencia de diferencias: efecto estimado igual a variación del tratado menos variación del comparable",
+    "4. Comprobar el supuesto clave: antes del cambio ambas series se movían en paralelo; si no, avisar de que el método no es válido aquí",
+    "5. Contrastar el efecto con la variabilidad normal previa; si cabe dentro del vaivén habitual, declarar efecto no distinguible del ruido",
+    "6. Listar explicaciones alternativas y decir cuál de ellas se descarta y cuál no"
+  ],
+  "restricciones": [
+    "Prohibido concluir causalidad si no hay grupo de comparación o si las series no eran paralelas antes",
+    "No comparar periodos de distinta longitud ni mezclar semanas con festivos sin señalarlo",
+    "Expresar siempre el efecto como rango, nunca como número exacto"
+  ],
+  "formato_salida": {
+    "resumen": "3 líneas: efecto estimado en rango, nivel de confianza cualitativo (alto, medio o bajo) y por qué",
+    "tabla_diferencias": "Grupo, media antes, media después, variación, y la resta final",
+    "supuestos": "Lista de supuestos con marca de cumplido o dudoso",
+    "explicaciones_alternativas": "Tabla: explicación, evidencia a favor, evidencia en contra, veredicto",
+    "que_haria_falta": "Qué dato o qué prueba adicional convertiría esto en una conclusión sólida"
+  },
+  "criterios_calidad": [
+    "El informe distingue con claridad entre coincidió con y fue causado por",
+    "El grado de confianza está justificado, no es una etiqueta puesta al azar"
+  ]
+}

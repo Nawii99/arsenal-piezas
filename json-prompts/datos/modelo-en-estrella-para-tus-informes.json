@@ -1,0 +1,37 @@
+{
+  "tarea": "Disenar un modelo dimensional en estrella para analitica a partir de un esquema operativo, con tablas de hechos, dimensiones y consultas de carga",
+  "entradas": {
+    "esquema_operativo": "[PEGA TUS TABLAS ACTUALES]",
+    "metricas": ["[EJ: IMPORTE VENDIDO]", "[EJ: UNIDADES]", "[EJ: MARGEN]"],
+    "cortes_de_analisis": ["[EJ: POR MES]", "[EJ: POR PRODUCTO]", "[EJ: POR COMERCIAL]", "[EJ: POR CANAL]"],
+    "frecuencia_actualizacion": "[DIARIA | HORARIA | SEMANAL]",
+    "herramienta_de_informes": "[Looker Studio | Power BI | Metabase | HOJA DE CALCULO]"
+  },
+  "metodo": [
+    "Definir el grano de la tabla de hechos en una frase, del tipo 'una fila por linea de pedido'",
+    "Separar hechos (numeros que se suman) de dimensiones (por lo que se filtra y agrupa)",
+    "Crear una dimension de fecha completa con ano, trimestre, mes, semana, dia y festivo",
+    "Decidir para cada dimension si conserva historico de cambios o se sobrescribe",
+    "Definir claves sustitutas en las dimensiones y su enlace con la tabla de hechos"
+  ],
+  "restricciones": [
+    "Un unico grano por tabla de hechos: si hay dos, crea dos tablas",
+    "No metas textos largos en la tabla de hechos",
+    "Las metricas calculadas que dependen del filtro se definen en la herramienta, no se guardan precalculadas",
+    "Evita mas de un nivel de tablas encadenadas colgando de una dimension"
+  ],
+  "formato_salida": {
+    "1_grano": "Frase que define el grano y la lista de metricas que encajan en el",
+    "2_modelo": "Tabla de hechos y dimensiones con sus campos y tipos",
+    "3_diagrama": "Diagrama Mermaid con la estrella",
+    "4_sql_creacion": "CREATE TABLE del almacen analitico",
+    "5_sql_carga": "Consultas INSERT ... SELECT que llenan hechos y dimensiones desde el esquema operativo",
+    "6_informes": "3 consultas de ejemplo que responden preguntas de negocio tipicas"
+  },
+  "criterios_calidad": [
+    "Todos los cortes de analisis pedidos existen como dimension",
+    "Las sumas del modelo cuadran con el esquema operativo: incluye una consulta de cuadre",
+    "Ninguna metrica se puede sumar dos veces por error de grano"
+  ],
+  "tono": "Analitico y aterrizado, espanol de Espana"
+}

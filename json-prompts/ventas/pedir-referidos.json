@@ -1,0 +1,50 @@
+{
+  "tarea": "Monta mi sistema de recomendaciones: cuándo pedirlas, a quién, con qué palabras exactas, y cómo convertir la recomendación en una primera conversación con el nuevo cliente.",
+  "contexto": {
+    "que_vendo": "[SERVICIO O PRODUCTO]",
+    "momento_de_maxima_satisfaccion": "[EN QUÉ PUNTO DEL TRABAJO EL CLIENTE ESTÁ MÁS CONTENTO]",
+    "canal_con_clientes": "[WHATSAPP / EMAIL / EN PERSONA]",
+    "donde_me_interesa_la_resena": "[GOOGLE / REDES / WEB]"
+  },
+  "entradas": {
+    "clientes_contentos": "[NOMBRE Y QUÉ LES RESOLVÍ]",
+    "tipo_de_cliente_que_quiero": "[DESCRIPCIÓN CONCRETA PARA QUE SEPAN A QUIÉN RECOMENDARME]",
+    "que_puedo_dar_a_cambio": "[NADA / DETALLE / DESCUENTO EN SU SIGUIENTE COMPRA / SERVICIO EXTRA]"
+  },
+  "metodo": [
+    "1. Define los dos momentos exactos para pedir: al entregar con buen resultado y cuando el cliente te felicita espontáneamente.",
+    "2. Separa tres peticiones distintas y no las mezcles nunca en el mismo mensaje: reseña pública, recomendación a una persona concreta y permiso para usar su caso.",
+    "3. Escribe la petición con nombre y apellidos del favor: no digas si conoces a alguien, di conoces a alguien que tenga este problema concreto.",
+    "4. Baja el esfuerzo: dale el texto ya escrito para reenviar y el enlace directo a la reseña.",
+    "5. Prepara la presentación a tres bandas: mensaje que el cliente reenvía y mensaje mío al nuevo contacto.",
+    "6. Define el recordatorio único a los cinco días y ahí se acaba: no se insiste dos veces.",
+    "7. Añade cómo agradecer después, hayan recomendado o no."
+  ],
+  "errores_a_evitar": [
+    "Pedirlo por email masivo en vez de uno a uno.",
+    "Pedir referido y reseña en el mismo mensaje.",
+    "Preguntar de forma vaga si conoce a alguien.",
+    "Ofrecer comisiones sin decirlo claro o sin poder cumplirlas.",
+    "Pedirlo cuando el trabajo ha ido regular por quedar bien."
+  ],
+  "formato_salida": {
+    "momentos": "Los dos momentos con la señal que me indica que ha llegado.",
+    "mensajes": "Tres mensajes listos: reseña, recomendación y permiso para caso de éxito, en versión mensaje y versión hablada.",
+    "texto_para_reenviar": "El texto que el cliente puede copiar y mandar a su contacto, escrito como si lo escribiera él.",
+    "presentacion": "Mi primer mensaje al contacto recomendado, sin vender, solo para acordar una llamada.",
+    "seguimiento": "Recordatorio único y mensajes de agradecimiento."
+  },
+  "restricciones": [
+    "Español de España, tuteo, natural y agradecido, sin peloteo.",
+    "Máximo 60 palabras por mensaje.",
+    "No prometer ni sugerir recompensas que yo no haya autorizado.",
+    "Las reseñas deben ser opinión libre del cliente, nunca redactadas por mí."
+  ],
+  "criterios_calidad": [
+    "La petición describe a la persona ideal con tanto detalle que al cliente le viene alguien a la cabeza.",
+    "El cliente puede resolverlo en menos de un minuto.",
+    "Hay un solo recordatorio y luego se para.",
+    "Ningún mensaje pone al cliente en compromiso ni le hace sentir en deuda."
+  ],
+  "si_faltan_datos": "Si no te describo a mi cliente ideal, hazme tres preguntas para concretarlo antes de escribir nada."
+}

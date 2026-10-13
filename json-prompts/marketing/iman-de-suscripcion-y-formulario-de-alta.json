@@ -1,0 +1,37 @@
+{
+  "tarea": "Diseñar un imán de suscripción, el formulario de alta y el email de confirmación para hacer crecer una lista de correo",
+  "contexto": {
+    "negocio": "[QUÉ VENDES]",
+    "cliente_ideal": "[QUIÉN ES Y EN QUÉ MOMENTO ESTÁ]",
+    "problema_urgente": "[EL PROBLEMA QUE MÁS LE QUEMA AHORA]",
+    "donde_se_capta": "[WEB, TIENDA FÍSICA, INSTAGRAM, ANUNCIOS, EVENTOS]",
+    "recursos": "[QUÉ PUEDES PREPARAR: PDF, PLANTILLA, DESCUENTO, MINICURSO, CALCULADORA]",
+    "herramienta": "[TU GESTOR DE EMAIL]"
+  },
+  "instrucciones": [
+    "Propón 5 ideas de imán, cada una resolviendo un problema pequeño y concreto en menos de 20 minutos",
+    "Descarta las que sean pura teoría o exijan mucho trabajo de mantenimiento y explica por qué",
+    "Elige la mejor y desarróllala: índice, extensión y qué debe contener",
+    "Redacta el formulario y la página de gracias",
+    "Escribe el email de confirmación de doble opt-in y el de entrega"
+  ],
+  "formato_salida": {
+    "ideas": "Tabla con imán, a quién atrae, esfuerzo de creación y calidad del suscriptor que traerá",
+    "imán_elegido": "Título, subtítulo, índice y descripción de cada apartado",
+    "formulario": ["titular", "dos_lineas_de_apoyo", "campos_que_pedir", "texto_del_boton", "aviso_de_privacidad_en_una_linea"],
+    "pagina_de_gracias": "Qué decir y qué pedir a continuación",
+    "emails": "Email de confirmación y email de entrega, con asunto y cuerpo",
+    "tres_sitios": "Dónde colocar el formulario y con qué texto adaptado en cada sitio"
+  },
+  "restricciones": [
+    "Pedir el mínimo de datos posible, justificar cualquier campo extra",
+    "Mencionar el consentimiento y la baja fácil sin dar consejo legal",
+    "Decir siempre qué va a recibir y cada cuánto antes de que pulse el botón",
+    "Español de España, tuteo, sin promesas de resultados"
+  ],
+  "criterios_calidad": [
+    "El imán atrae a compradores potenciales, no a curiosos que nunca comprarán",
+    "Todo el texto está listo para pegar en la web sin retoques",
+    "El imán se puede crear en menos de un día de trabajo"
+  ]
+}

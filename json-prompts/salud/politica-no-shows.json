@@ -1,0 +1,52 @@
+{
+  "tarea": "Diseñar la política de cancelaciones, señal y faltas de asistencia de [NOMBRE DEL CENTRO] y todos los textos para comunicarla",
+  "contexto": {
+    "tipo_de_centro": "[TIPO DE CLÍNICA O CENTRO]",
+    "precio_medio_sesion": "[IMPORTE EN EUROS]",
+    "duracion_media": "[MINUTOS DE SALA POR CITA]",
+    "faltas_actuales": "[CUÁNTAS FALTAS SIN AVISAR TIENES A LA SEMANA]",
+    "tipo_de_paciente": "[PRIVADO / MUTUA / MIXTO]"
+  },
+  "entradas": {
+    "cobro_actual": "[SE COBRA ALGO HOY POR FALTAR? CÓMO?]",
+    "medios_de_cobro": "[TPV, BIZUM, TRANSFERENCIA, PASARELA ONLINE]",
+    "servicios_criticos": "[SERVICIOS LARGOS O CAROS DONDE UNA FALTA DUELE MÁS]"
+  },
+  "pasos": [
+    "1. Calcula lo que cuesta una falta: precio de la sesión más el coste de sala y profesional ya comprometido. Ese número justifica toda la política.",
+    "2. Decide el plazo de cancelación libre: 24 o 48 horas según lo que tardes en rellenar un hueco.",
+    "3. Define los tres niveles: cancela a tiempo sin coste, cancela tarde con parte del importe, no aparece con el importe acordado.",
+    "4. Elige qué servicios llevan señal por adelantado y de cuánto: primera visita, servicios de más de 45 minutos y los de más de [IMPORTE] euros.",
+    "5. Escribe la política en menos de 120 palabras y en lenguaje llano, sin jerga legal, para web, ficha de Google y cartel de recepción.",
+    "6. Escribe el texto de aceptación que el paciente confirma al reservar y decide dónde queda registrado.",
+    "7. Redacta los cuatro mensajes: recordatorio con la regla, aviso de cancelación tardía, mensaje después de una falta y perdón por primera vez.",
+    "8. Define las excepciones por escrito para que recepción no tenga que improvisar: enfermedad, ingreso, primera falta y avería de transporte.",
+    "9. Fija cómo medir: faltas por semana antes y después, y cuántas señales se han aplicado."
+  ],
+  "restricciones": [
+    "Nada de importes desproporcionados ni de cobros sin aviso previo aceptado por el paciente.",
+    "La política se comunica antes de reservar, nunca después de la falta.",
+    "El primer aviso a un paciente fiel es siempre un perdón, no un cobro.",
+    "No se retiene documentación ni informes por una deuda de falta de asistencia."
+  ],
+  "formato_salida": {
+    "1_numero_del_coste": "El cálculo de lo que cuesta una falta, paso a paso",
+    "2_politica_publica": "Texto final de menos de 120 palabras",
+    "3_tabla_de_aplicacion": "Situación, qué se cobra y quién decide",
+    "4_mensajes": "Los cuatro mensajes listos para copiar",
+    "5_guion_mostrador": "Ocho líneas para explicar el cobro cara a cara a alguien enfadado",
+    "6_medicion": "Qué apuntar cada semana para saber si funciona"
+  },
+  "criterios_calidad": [
+    "Un paciente entiende la regla la primera vez que la lee y sin releer.",
+    "Recepción sabe qué hacer en cada caso sin llamar al jefe.",
+    "La señal se puede pagar en menos de un minuto desde el móvil.",
+    "A las cuatro semanas hay un número de faltas comparable con el de antes."
+  ],
+  "errores_tipicos": [
+    "Anunciar la política y no aplicarla nunca: entonces deja de existir.",
+    "Aplicarla a rajatabla el primer día a pacientes de diez años de antigüedad.",
+    "Poner una señal tan alta que la gente no reserva.",
+    "Esconder la política en la letra pequeña de la web."
+  ]
+}

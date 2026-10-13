@@ -1,0 +1,34 @@
+{
+  "tarea": "Generar la batería de pruebas de la integración [NOMBRE DE LA INTEGRACIÓN] antes de pasarla a producción",
+  "entradas": {
+    "endpoints": "[PEGA LOS ENDPOINTS QUE USAS O EL FICHERO OPENAPI]",
+    "flujo_principal": "[DESCRIBE EL CAMINO FELIZ EN 3 O 4 FRASES]",
+    "peor_escenario": "[QUÉ ES LO PEOR QUE PUEDE PASAR SI ESTO FALLA]",
+    "entorno_de_pruebas": "[TIENES SANDBOX SÍ O NO]"
+  },
+  "cubre_estas_familias": [
+    "Camino feliz completo de principio a fin",
+    "Datos inválidos: campos vacíos, tipos equivocados, textos larguísimos, caracteres raros y acentos",
+    "Autenticación: sin credencial, credencial caducada, sin permisos suficientes",
+    "Fallos del proveedor: error 500, tiempo agotado, respuesta a medias",
+    "Límites de uso y respuestas 429",
+    "Duplicados: la misma operación enviada dos veces",
+    "Casos de negocio propios de España: NIF y CIF, IVA, códigos postales con cero delante, IBAN"
+  ],
+  "formato_salida": {
+    "tabla_de_casos": "ID | familia | qué se envía | resultado esperado | prioridad",
+    "peticiones_listas": "Comando curl por cada caso, con datos de ejemplo",
+    "coleccion": "Colección de Postman en JSON con los casos prioritarios",
+    "criterio_de_paso": "Qué casos deben pasar sí o sí para salir a producción",
+    "prueba_de_humo": "Los 5 casos a repetir cada vez que se toque algo"
+  },
+  "restricciones": [
+    "Datos de prueba ficticios, nunca clientes ni tarjetas reales",
+    "Cada caso tiene un resultado esperado concreto, incluido el código HTTP",
+    "Nada de casos que dependan del orden en que se ejecuten"
+  ],
+  "criterios_calidad": [
+    "Un caso fallido señala exactamente qué está roto",
+    "Al menos la mitad de los casos son de error, no del camino feliz"
+  ]
+}

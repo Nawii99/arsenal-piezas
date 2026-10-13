@@ -1,0 +1,39 @@
+{
+  "tarea": "Preparar un programa de concienciación en seguridad de 4 semanas para el equipo de una pyme, con simulacro de correo trampa incluido",
+  "contexto": {
+    "empresa": "[NOMBRE DE LA EMPRESA]",
+    "equipo": "[NÚMERO DE PERSONAS Y PUESTOS]",
+    "nivel_informatico": "[BAJO / MEDIO]",
+    "tiempo_disponible": "[MINUTOS POR SEMANA QUE PODÉIS DEDICAR]"
+  },
+  "entradas": {
+    "herramientas": "[CORREO, WHATSAPP, NUBE, PROGRAMA DE GESTIÓN, REDES SOCIALES]",
+    "riesgos_prioritarios": "[FRAUDE DE PAGOS, ROBO DE CUENTA DE CORREO, MÓVILES PERDIDOS, DATOS DE CLIENTES]",
+    "quien_imparte": "[NOMBRE Y PUESTO DE QUIEN DARÁ LAS SESIONES]"
+  },
+  "metodo": [
+    "Semana 1: contraseñas y verificación en dos pasos, con ejercicio práctico en el móvil de cada uno",
+    "Semana 2: reconocer correos y mensajes falsos, con 6 ejemplos reales adaptados al sector",
+    "Semana 3: simulacro de correo trampa enviado por la dirección, sin avisar y sin señalar a nadie",
+    "Semana 4: resultados del simulacro, dudas y protocolo de aviso cuando alguien sospeche",
+    "Para cada semana definir objetivo, guion de 15 minutos, ejercicio y cómo se mide que ha calado",
+    "Definir la política de no castigo: quien avisa de que ha picado siempre queda bien, porque avisar rápido es lo que salva la empresa"
+  ],
+  "restricciones": [
+    "Cada sesión dura 15 minutos y no necesita diapositivas ni sala",
+    "El correo trampa debe ser realista pero inofensivo y no puede pedir credenciales reales ni datos personales",
+    "Prohibido publicar quién ha picado: los resultados se dan siempre en conjunto",
+    "Adaptar los ejemplos al día a día del sector indicado, con nombres y situaciones creíbles"
+  ],
+  "formato_salida": {
+    "tipo": "plan semanal en markdown",
+    "por_semana": ["Objetivo", "Guion hablado de 15 minutos", "Ejercicio práctico", "Mensaje de recordatorio para el grupo", "Cómo se mide"],
+    "anexos": ["Texto del correo trampa y su página de aviso", "Los 6 ejemplos de correo falso con las pistas señaladas", "Cartel de 5 señales para la pared", "Cómo avisar de una sospecha en 2 pasos"]
+  },
+  "criterios_calidad": [
+    "Cualquier responsable puede impartirlo leyendo el guion, sin saber de informática",
+    "El simulacro incluye qué decir a quien pica para que no se sienta humillado",
+    "Al final del mes existe un canal claro para avisar de sospechas"
+  ],
+  "tono": "cercano y motivador, tuteando"
+}

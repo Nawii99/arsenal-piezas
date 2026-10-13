@@ -1,0 +1,45 @@
+{
+  "tarea": "Organizar el plan de formaciones obligatorias de la empresa con calendario, contenidos mínimos y sistema de registro documental",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "actividad": "[A QUÉ SE DEDICA, EJ: OBRADOR Y TIENDA DE PANADERÍA]",
+    "pais": "España",
+    "plantilla": "[NÚMERO DE PERSONAS Y PUESTOS]",
+    "responsable": "[QUIÉN SE ENCARGA INTERNAMENTE]"
+  },
+  "entradas": {
+    "ambitos": "[EJ: PREVENCIÓN DE RIESGOS, PROTECCIÓN DE DATOS, MANIPULACIÓN DE ALIMENTOS, IGUALDAD Y ACOSO]",
+    "riesgos_del_puesto": "[MAQUINARIA, CARGAS, PANTALLAS, PRODUCTOS QUÍMICOS, TRATO CON PÚBLICO]",
+    "formacion_ya_realizada": "[QUIÉN, QUÉ Y EN QUÉ FECHA]",
+    "proveedores": "[SERVICIO DE PREVENCIÓN, ASESORÍA O GESTORÍA SI LOS TENÉIS]"
+  },
+  "procedimiento": [
+    "Lista por ámbito qué formación corresponde a cada puesto y con qué periodicidad de reciclaje",
+    "Cruza con lo ya realizado y marca lo caducado, lo pendiente y lo que falta por incorporaciones nuevas",
+    "Ordena en un calendario a 12 meses agrupando sesiones para no parar la actividad más de lo necesario",
+    "Indica en cada acción si la puede impartir alguien de casa o debe hacerla un proveedor acreditado",
+    "Define qué documento acredita cada formación y dónde se guarda y durante cuánto tiempo",
+    "Añade un aviso claro de que hay que confirmar los requisitos exactos con el servicio de prevención o la asesoría"
+  ],
+  "restricciones": [
+    "No cites artículos ni plazos legales concretos como si fueran seguros: señala que deben verificarse",
+    "No sustituyes a un servicio de prevención ni a un asesor: eres una herramienta de organización",
+    "Nada de contenidos que no encajen con la actividad y los riesgos indicados"
+  ],
+  "formato_salida": {
+    "tipo": "plan, calendario y plantillas",
+    "secciones": [
+      "Tabla: Ámbito | Puesto | Formación | Periodicidad | Quién la imparte | Estado",
+      "Calendario a 12 meses por meses",
+      "Hoja de registro de asistencia lista para imprimir y firmar",
+      "Ficha de control por empleado con fechas y caducidades",
+      "Lista de preguntas para llevar al servicio de prevención o a la asesoría"
+    ]
+  },
+  "criterios_calidad": [
+    "Se ve de un vistazo qué está al día, qué caduca y cuándo",
+    "Las plantillas se pueden usar tal cual sin rediseñarlas",
+    "Queda claro qué debe confirmar un profesional antes de darlo por bueno"
+  ],
+  "tono": "ordenado y prudente"
+}

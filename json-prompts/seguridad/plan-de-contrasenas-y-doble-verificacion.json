@@ -1,0 +1,39 @@
+{
+  "tarea": "Diseñar el plan de contraseñas y verificación en dos pasos de una pyme y dejarlo aplicable servicio por servicio",
+  "contexto": {
+    "empresa": "[NOMBRE DE LA EMPRESA]",
+    "personas_con_cuentas": "[NÚMERO DE PERSONAS]",
+    "gestor_de_contrasenas": "[NINGUNO / EL NAVEGADOR / NOMBRE DEL GESTOR]",
+    "moviles_de_empresa": "[SÍ / NO / SOLO ALGUNOS]"
+  },
+  "entradas": {
+    "servicios": "[LISTA DE SERVICIOS CON USUARIO Y CONTRASEÑA: CORREO, BANCO, GESTORÍA, HOSTING, REDES SOCIALES, TIENDA, FACTURACIÓN]",
+    "cuentas_compartidas": "[CUENTAS QUE USAN VARIAS PERSONAS A LA VEZ]",
+    "quien_recibe_los_codigos": "[PERSONA Y NÚMERO QUE RECIBE HOY LOS SMS O CÓDIGOS]"
+  },
+  "metodo": [
+    "Clasificar cada servicio en crítico (mueve dinero o guarda datos de clientes), importante o secundario",
+    "Definir el orden de activación: primero el correo del dominio, después banca y hosting, luego el resto",
+    "Elegir el segundo factor por servicio prefiriendo app de códigos o llave física, y dejar el SMS solo si no hay otra opción",
+    "Resolver las cuentas compartidas: convertirlas en cuentas individuales o, si no se puede, meterlas en el gestor con acceso compartido y registro de quién entra",
+    "Definir los códigos de recuperación: dónde se imprimen, quién los custodia y cuándo se renuevan",
+    "Resumir las normas en 8 reglas cortas que quepan en una hoja para el equipo"
+  ],
+  "restricciones": [
+    "Nada de obligar a cambiar la contraseña cada mes: se cambia si hay sospecha o filtración",
+    "Contraseñas largas tipo frase, distintas en cada servicio y guardadas solo en el gestor",
+    "El plan no puede dejar el acceso dependiendo de un único móvil ni de una única persona",
+    "Explicar cada paso como a alguien que solo sabe usar el correo"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de acciones más hoja de normas",
+    "columnas": ["Servicio", "Criticidad", "Quién lo usa", "Segundo factor recomendado", "Pasos exactos para activarlo", "Dónde guardar el código de recuperación", "Hecho"],
+    "anexos": ["Hoja con las 8 normas para el equipo", "Guion de 10 líneas para explicarlo en la reunión", "Qué hacer si alguien pierde el móvil"]
+  },
+  "criterios_calidad": [
+    "Los pasos de activación son literales: menú, botón y nombre de la opción",
+    "Nadie se queda bloqueado fuera de una cuenta crítica si pierde el teléfono",
+    "El plan entero se puede ejecutar en dos tardes"
+  ],
+  "tono": "claro y paso a paso, tuteando"
+}

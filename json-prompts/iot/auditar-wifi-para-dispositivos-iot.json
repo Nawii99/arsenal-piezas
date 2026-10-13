@@ -1,0 +1,51 @@
+{
+  "tarea": "Auditar por qué se desconectan los dispositivos conectados de una instalación y entregar un plan de arreglo ordenado por coste e impacto",
+  "contexto": {
+    "perfil": "Persona sin formación técnica que instala y mantiene dispositivos inteligentes en su casa o en casa de clientes",
+    "problema": "[QUÉ FALLA, CADA CUÁNTO, DESDE CUÁNDO Y SI SE RECUPERA SOLO]",
+    "local": "[PISO / CASA DE DOS PLANTAS / LOCAL / NAVE], superficie [M2], paredes de [PLADUR / LADRILLO / HORMIGÓN]"
+  },
+  "entradas": {
+    "router": "[MARCA, MODELO Y OPERADORA]",
+    "amplificacion": "[NINGUNA / REPETIDOR / SISTEMA MALLA CON N NODOS]",
+    "dispositivos": "[LISTA: nombre, marca, si es de 2,4 GHz o 5 GHz, dónde está, si va a pilas o enchufado]",
+    "sintomas": "[QUÉ DISPOSITIVO FALLA, A QUÉ HORA, QUÉ DICE LA APP]",
+    "datos_router": "[CAPTURAS DE LA LISTA DE CLIENTES CONECTADOS, CANAL ACTUAL, FIRMWARE]"
+  },
+  "pasos": [
+    "1. Clasifica cada síntoma en una de tres familias: cobertura (lejos del router), saturación (demasiados dispositivos o vecinos en el mismo canal) o identidad de red (el aparato no ve la red porque las bandas 2,4 y 5 GHz comparten nombre).",
+    "2. Marca qué dispositivos son solo de 2,4 GHz: casi todos los enchufes, bombillas, sensores y robots lo son. Una red con un único nombre para las dos bandas es la causa más habitual de que no den de alta.",
+    "3. Cuenta los dispositivos conectados: por debajo de 30 un router doméstico aguanta; por encima de 50 hay que plantear un punto de acceso aparte.",
+    "4. Revisa el canal de 2,4 GHz: solo el 1, el 6 y el 11 no se solapan. Si hay vecinos, fija a mano el menos ocupado en lugar de dejarlo en automático.",
+    "5. Localiza obstáculos duros entre router y dispositivo: microondas, espejos grandes, suelo radiante, armarios metálicos, cuadro eléctrico y el mueble cerrado donde suele esconderse el router.",
+    "6. Descarta que el problema sea de alimentación y no de red: un sensor a pilas que falla siempre de madrugada suele tener la pila baja, no mala cobertura.",
+    "7. Comprueba el reparto horario: si las caídas coinciden con la tele en streaming o con la copia de seguridad, es saturación, no alcance.",
+    "8. Ordena las acciones por coste: primero cambios de configuración gratis, luego mover cosas de sitio, y solo al final comprar equipo.",
+    "9. Define para cada arreglo una prueba de verificación y un plazo mínimo de 72 horas de uso normal antes de darlo por bueno."
+  ],
+  "restricciones": [
+    "Explica cada paso como si se lo contaras a alguien que solo sabe entrar en la app del router",
+    "No propongas cambiar de operadora ni contratar más megas: casi nunca es el problema",
+    "No recomiendes marcas concretas de hardware sin decir antes qué se arregla gratis",
+    "Si falta un dato clave para decidir, pídelo en lugar de suponerlo"
+  ],
+  "errores_tipicos": [
+    "Culpar a la fibra cuando el fallo está en la wifi interna",
+    "Colocar el repetidor donde ya no llega señal, con lo que repite una señal mala",
+    "Dejar el canal en automático y que el router salte de canal cada noche",
+    "Dar por hecho que un dispositivo soporta 5 GHz porque el móvil sí"
+  ],
+  "formato_salida": {
+    "1_resumen": "Tres líneas: qué está pasando, por qué y qué cuesta arreglarlo",
+    "2_tabla_diagnostico": "Columnas: dispositivo | síntoma | causa más probable | confianza (alta/media/baja)",
+    "3_plan_de_accion": "Lista numerada; cada acción con: qué hacer, dónde se toca, tiempo estimado, coste (0 € o importe aproximado) y qué debería mejorar",
+    "4_pruebas": "Cómo comprobar que ha funcionado y cuánto esperar",
+    "5_si_sigue_fallando": "Plan B con la siguiente causa más probable"
+  },
+  "criterios_calidad": [
+    "Toda causa señalada se apoya en un dato de las entradas, no en una intuición",
+    "Al menos la mitad de las acciones cuestan 0 €",
+    "Cada acción se puede hacer sin cable de red ni línea de comandos",
+    "El plan cabe en una hoja y se entiende sin vocabulario técnico"
+  ]
+}

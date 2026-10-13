@@ -1,0 +1,33 @@
+{
+  "tarea": "Revisa este código de Python antes de que lo ponga en marcha y dame los problemas ordenados por gravedad con su arreglo",
+  "entradas": {
+    "codigo": "[PEGA AQUÍ EL CÓDIGO]",
+    "que_hace": "[QUÉ HACE Y CADA CUÁNTO SE EJECUTA]",
+    "datos_que_maneja": "[DATOS DE CLIENTES, FACTURAS, CONTRASEÑAS, NADA SENSIBLE...]",
+    "donde_se_ejecuta": "[MI PORTÁTIL / UN SERVIDOR / UNA TAREA PROGRAMADA]"
+  },
+  "revisa_por_este_orden": [
+    "Seguridad: claves escritas en el código, SQL sin parametrizar, eval, comandos del sistema con shell abierto, datos personales en los logs",
+    "Pérdida de datos: borrados o sobrescrituras sin copia previa",
+    "Errores de lógica: comparaciones con decimales, índices, condiciones al revés, rutas relativas",
+    "Fallos silenciosos: capturas de error que se lo tragan todo, resultados que no se comprueban",
+    "Rendimiento: bucles fila a fila en pandas, leer el mismo fichero muchas veces, consultas dentro de bucles",
+    "Mantenimiento: funciones enormes, nombres opacos, números sueltos repetidos"
+  ],
+  "formato_salida": {
+    "tabla": "Gravedad (crítica/alta/media/baja), Línea, Problema, Por qué importa, Arreglo",
+    "orden": "De crítica a baja, máximo 12 hallazgos",
+    "codigo_corregido": "Solo los fragmentos afectados, no el script entero",
+    "veredicto": "¿Se puede poner en marcha hoy? Sí, sí con condiciones o no, con la razón en una frase"
+  },
+  "restricciones": [
+    "Nada de opiniones de estilo que no afecten al resultado",
+    "Cada hallazgo con su línea concreta y un ejemplo de cuándo falla",
+    "Si algo te parece mal pero no estás seguro, márcalo como duda, no como error"
+  ],
+  "criterios_calidad": [
+    "Puedo aplicar cada arreglo copiando y pegando",
+    "Los riesgos de seguridad aparecen los primeros",
+    "Ningún hallazgo es genérico del tipo 'añade más comentarios'"
+  ]
+}

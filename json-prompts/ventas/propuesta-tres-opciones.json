@@ -1,0 +1,52 @@
+{
+  "tarea": "Convertir un servicio en tres paquetes escalonados con precio, contenido, límites claros y el guion para presentarlos",
+  "rol": "Consultor de precios que sabe que la opción de en medio se vende sola cuando las otras dos están bien construidas",
+  "contexto": {
+    "servicio": "[QUÉ HACES EXACTAMENTE]",
+    "precio_actual": "[LO QUE COBRAS HOY Y CÓMO LO COBRAS]",
+    "horas_reales": "[HORAS QUE TE LLEVA DE MEDIA]",
+    "lo_que_mas_te_piden_de_extra": "[EXTRAS QUE ACABAS REGALANDO]",
+    "lo_que_mas_te_cuesta_hacer": "[LA PARTE PESADA O CARA DEL TRABAJO]"
+  },
+  "entradas": {
+    "cliente_tipo": "[A QUIÉN SE LO VENDES]",
+    "competencia_conocida": "[PRECIOS QUE HAS VISTO EN TU ZONA O SECTOR]",
+    "margen_minimo": "[LO MÍNIMO QUE TE TIENE QUE QUEDAR PARA QUE TE COMPENSE]"
+  },
+  "pasos": [
+    "Lista todo lo que entregas hoy y sepáralo en tres columnas: imprescindible, lo que ahorra tiempo al cliente y lo que le da tranquilidad o velocidad",
+    "Construye el paquete Recomendado primero: es el que quieres vender y lleva lo imprescindible más lo que ahorra tiempo",
+    "Construye el Básico quitando cosas al Recomendado, nunca añadiendo trabajo barato; el Básico debe resolver, pero con menos manos y menos plazo",
+    "Construye el Completo añadiendo lo que da tranquilidad o velocidad: plazo más corto, más revisiones, acompañamiento posterior, prioridad",
+    "Pon precios con una separación clara: Básico en torno al 60-70 % del Recomendado y Completo en torno al 160-200 %; ajusta para respetar el margen mínimo",
+    "Escribe los límites de cada paquete en números: número de revisiones, plazo, canales de contacto, qué no incluye",
+    "Escribe una frase de anclaje para presentar los tres en orden Completo, Recomendado, Básico",
+    "Añade la respuesta preparada para 'me quedo el básico pero con lo del completo'"
+  ],
+  "restricciones": [
+    "Los tres paquetes se diferencian en alcance, plazo y nivel de acompañamiento, nunca en calidad del trabajo",
+    "Nada de servicios inventados que no puedas prestar con tus manos y tu tiempo",
+    "Cada paquete lleva su lista de 'no incluye' escrita, no sobreentendida",
+    "Español de España, tuteando, sin palabras como premium, elite o exclusivo"
+  ],
+  "formato_salida": {
+    "paquetes": [
+      {"nombre": "...", "para_quien_es": "una frase", "incluye": ["..."], "no_incluye": ["..."], "plazo": "...", "revisiones": 0, "precio": "... EUR + IVA", "forma_de_pago": "..."}
+    ],
+    "tabla_comparativa": "filas de características y una marca por paquete",
+    "guion_de_presentacion": "texto literal para decir por teléfono o escribir en el email",
+    "respuesta_al_regateo": "qué quitas si te piden bajar el precio",
+    "comprobacion_de_margen": {"paquete": "...", "horas_estimadas": 0, "euros_por_hora": 0}
+  },
+  "criterios_calidad": [
+    "Se entiende en 30 segundos por qué el de en medio compensa más",
+    "Ningún paquete deja tu margen por debajo del mínimo indicado",
+    "Si el cliente pide bajar precio, tienes claro qué quitas en vez de descontar",
+    "Los límites están en números, no en adjetivos"
+  ],
+  "errores_tipicos_a_evitar": [
+    "Hacer el básico tan pelado que nadie lo compra ni sirve de referencia",
+    "Diferenciar los paquetes solo por horas de dedicación",
+    "Poner precios demasiado juntos: si la diferencia es del 10 %, el cliente no elige, duda"
+  ]
+}

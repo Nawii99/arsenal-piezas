@@ -1,0 +1,32 @@
+{
+  "tarea": "Escribir el email con el que envío la propuesta al cliente",
+  "entradas": {
+    "cliente": "[NOMBRE DE LA PERSONA]",
+    "contexto_de_la_conversacion": "[DÓNDE Y CUÁNDO HABLASTEIS Y QUÉ TE DIJO]",
+    "resumen_propuesta": "[QUÉ PROPONES, EN UNA FRASE]",
+    "precio": "[IMPORTE O RANGO]",
+    "validez": "[FECHA LÍMITE DEL PRECIO]",
+    "siguiente_paso": "[LLAMADA, FIRMA O RESPONDER A ESTE EMAIL]"
+  },
+  "estructura": [
+    "Asunto de menos de 50 caracteres que nombre el proyecto",
+    "Primera línea: referencia concreta a algo que dijo el cliente",
+    "Segunda: qué va a encontrar en el documento y cuánto tarda en leerlo",
+    "Tercera: el precio dicho sin rodeos y qué incluye",
+    "Cuarta: el siguiente paso, con dos huecos concretos de agenda si procede",
+    "Cierre corto y firma"
+  ],
+  "restricciones": [
+    "Máximo 120 palabras en el cuerpo",
+    "Nada de disculpas ni de espero que sea de tu agrado",
+    "Una sola llamada a la acción",
+    "Menciona el documento como enlace o PDF adjunto, sin explicaciones largas"
+  ],
+  "formato_salida": "Asunto y cuerpo del email listos para copiar, y al final tres variantes alternativas de asunto",
+  "criterios_calidad": [
+    "Se lee entero en menos de veinte segundos",
+    "El precio no queda escondido",
+    "El siguiente paso se resuelve con un clic o una respuesta de una línea"
+  ],
+  "tono": "Cercano y seguro, sin presión"
+}

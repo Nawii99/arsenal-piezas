@@ -1,0 +1,35 @@
+{
+  "tarea": "Diagnosticar una migracion que ha fallado a medias y proponer la recuperacion mas segura",
+  "prioridad": "No perder datos por encima de recuperar rapido",
+  "contexto": {
+    "motor_bd": "[POSTGRESQL / MYSQL / SQL SERVER]",
+    "entorno": "[PRODUCCION / PREPRODUCCION]",
+    "sistema_en_uso_ahora": "[SI, HAY USUARIOS ENTRANDO / NO, ESTA PARADO]",
+    "copia_de_seguridad": "[FECHA Y HORA DE LA ULTIMA COPIA Y SI SABES RESTAURARLA]"
+  },
+  "entradas": {
+    "script_que_fallo": "[PEGA EL SQL COMPLETO]",
+    "mensaje_de_error": "[PEGA EL ERROR TAL CUAL, SIN RESUMIR]",
+    "hasta_donde_llego": "[QUE SENTENCIAS CREES QUE SE EJECUTARON, O NO LO SE]",
+    "sintomas": "[QUE ESTA FALLANDO AHORA EN LA APLICACION]"
+  },
+  "instrucciones": [
+    "Primero dame consultas de solo lectura para averiguar el estado real del esquema y del historico de migraciones",
+    "No propongas ningun cambio hasta enumerar que hay que comprobar antes",
+    "Explica en castellano llano que ha pasado y por que",
+    "Ofrece dos caminos: completar hacia adelante o revertir, con ventajas, riesgos y cuando elegir cada uno",
+    "Da el SQL del camino recomendado paso a paso, con una comprobacion despues de cada paso",
+    "Indica que hacer con la tabla de historico de migraciones para que quede coherente",
+    "Termina con la correccion del script original para que no vuelva a fallar"
+  ],
+  "restricciones": [
+    "Nada de sentencias destructivas mientras no se confirme el estado real",
+    "Si con la informacion dada no se puede decidir, di exactamente que dato falta",
+    "Avisa siempre antes de cualquier paso irreversible"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": ["Comprobaciones inmediatas", "Que ha pasado", "Opciones y recomendacion", "Pasos de recuperacion", "Verificacion final", "Como evitar que se repita"]
+  },
+  "tono": "Calmado y ordenado, primero estabilizar y luego arreglar"
+}

@@ -1,0 +1,36 @@
+{
+  "tarea": "Disenar la imagen informativa de [PRODUCTO] que muestra medidas, materiales y contenido, para incluirla en la ficha de producto",
+  "entradas": {
+    "producto": "[PRODUCTO]",
+    "medidas_reales": "[ALTO x ANCHO x FONDO Y PESO]",
+    "materiales": "[MATERIALES Y ACABADOS]",
+    "contenido_del_pack": "[QUE VIENE DENTRO DE LA CAJA]",
+    "dudas_frecuentes": "[LAS 3 PREGUNTAS QUE MAS TE HACEN ANTES DE COMPRAR]",
+    "colores_de_marca": "[COLORES O HEX]"
+  },
+  "reglas_de_diseno": [
+    "Foto del producto limpia sobre fondo neutro como base",
+    "Lineas de cota finas con las medidas en centimetros y su equivalente si vendes fuera",
+    "Maximo 5 etiquetas de texto para que no se sature",
+    "Cada etiqueta responde a una duda real, no describe lo obvio",
+    "Referencia de escala junto al producto: mano, moneda o objeto cotidiano",
+    "Texto legible en movil: nada por debajo de un tamano que se lea en miniatura",
+    "Contraste suficiente entre texto y fondo"
+  ],
+  "formato_salida": {
+    "bloque_1": "Boceto descrito zona por zona indicando que va en cada parte del lienzo",
+    "bloque_2": "Texto exacto de cada etiqueta, ya redactado y contado en caracteres",
+    "bloque_3": "Medidas del lienzo y proporcion recomendada para la ficha",
+    "bloque_4": "Instrucciones paso a paso para montarla en Canva sin saber diseno",
+    "bloque_5": "Version alternativa en formato vertical para movil"
+  },
+  "criterios_calidad": [
+    "Alguien que ve la imagen 5 segundos sabe cuanto mide y que incluye",
+    "No hay ninguna afirmacion que no puedas cumplir",
+    "Funciona igual de bien vista en miniatura"
+  ],
+  "errores_a_evitar": [
+    "Llenarla de iconos y adornos que tapan el producto",
+    "Poner medidas aproximadas o redondeadas de mas"
+  ]
+}

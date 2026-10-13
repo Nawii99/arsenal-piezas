@@ -1,0 +1,42 @@
+{
+  "tarea": "Redactar los microtextos de prueba social y confianza para cada punto del recorrido de compra de una tienda online",
+  "entradas": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "producto": "[PRODUCTO O CATEGORÍA]",
+    "datos_reales": {
+      "clientes_totales": "[NÚMERO DE CLIENTES O PEDIDOS]",
+      "nota_media_y_resenas": "[NOTA Y Nº DE RESEÑAS]",
+      "plazo_envio": "[PLAZO REAL DE ENTREGA]",
+      "devoluciones": "[PLAZO Y CONDICIONES]",
+      "garantia": "[GARANTÍA OFRECIDA]",
+      "soporte": "[CANAL Y HORARIO DE ATENCIÓN]"
+    },
+    "miedos_detectados": "[QUÉ TE PREGUNTAN ANTES DE COMPRAR O POR QUÉ TE DICEN QUE NO COMPRAN]"
+  },
+  "puntos_del_recorrido": [
+    "Debajo del titular de la página de inicio",
+    "Junto al precio en la ficha de producto",
+    "Justo encima y debajo del botón de añadir al carrito",
+    "En la ventana del carrito",
+    "En el formulario de pago, al lado del botón final",
+    "En la página de gracias tras la compra",
+    "En el email de confirmación de pedido"
+  ],
+  "reglas_de_redaccion": [
+    "Máximo 12 palabras por microtexto",
+    "Cada microtexto responde a un miedo concreto, no repite el anterior",
+    "Preferir el dato concreto al adjetivo: number y plazo antes que excelente o rápido",
+    "Nada de urgencia falsa, contadores inventados ni escasez que no sea real",
+    "Solo usar cifras que aparezcan en datos reales"
+  ],
+  "formato_salida": {
+    "tabla": "Columnas: punto del recorrido, miedo que resuelve, microtexto, variante alternativa para probar",
+    "extra_1": "Lista de los datos que aún te faltan para poder usar ciertos microtextos",
+    "extra_2": "Orden sugerido para probar los cambios, del más fácil al más laborioso"
+  },
+  "criterios_calidad": [
+    "Todo microtexto se puede sostener con una prueba si un cliente la pide",
+    "Ninguno suena a eslogan: suenan a información útil",
+    "La tabla se puede aplicar sin tocar código más allá de editar textos"
+  ]
+}

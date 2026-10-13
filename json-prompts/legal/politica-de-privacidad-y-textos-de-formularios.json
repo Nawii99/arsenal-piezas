@@ -1,0 +1,38 @@
+{
+  "tarea": "Redactar la política de privacidad de una web y las cláusulas informativas por capas que acompañan a cada formulario, conforme al artículo 13 del RGPD y a la LOPDGDD",
+  "contexto": {
+    "empresa": "[NOMBRE FISCAL, CIF Y DIRECCIÓN]",
+    "web": "[DOMINIO]",
+    "email_privacidad": "[EMAIL DE CONTACTO]",
+    "actividad": "[QUÉ VENDES O QUÉ SERVICIO PRESTAS]"
+  },
+  "entradas": {
+    "formularios": "[LISTA: contacto, presupuesto, newsletter, registro de cliente, reserva de cita, carrito]",
+    "proveedores": "[QUIÉN VE LOS DATOS: hosting, email marketing, pasarela de pago, analítica, gestoría]",
+    "fuera_ue": "[PROVEEDORES FUERA DE LA UE, SI LOS HAY]",
+    "conservacion": "[CUÁNTO GUARDAS CADA COSA, SI LO SABES]"
+  },
+  "pasos": [
+    "Escribe primero la capa corta que va junto al formulario: quién trata los datos, para qué, base legítima, destinatarios y dónde ejercer derechos, en menos de 80 palabras",
+    "Desarrolla la política completa con secciones separadas por finalidad, no un bloque único",
+    "Explica los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad con el procedimiento concreto y el plazo de un mes",
+    "Indica la reclamación ante la AEPD como última vía",
+    "Añade el aviso de que el consentimiento para publicidad es separado y revocable"
+  ],
+  "restricciones": [
+    "Tuteo o usted según [TRATAMIENTO PREFERIDO], pero coherente en todo el texto",
+    "Prohibido usar casillas premarcadas o consentimiento agrupado con la aceptación de condiciones",
+    "Nada de frases vacías del tipo tratamos sus datos con la máxima seguridad"
+  ],
+  "formato_salida": {
+    "bloque_1": "política de privacidad completa en HTML sencillo con encabezados",
+    "bloque_2": "cláusula corta lista para copiar debajo de cada formulario",
+    "bloque_3": "texto de las casillas de verificación, indicando cuáles son obligatorias",
+    "bloque_4": "lista de datos que aún faltan por confirmar"
+  },
+  "criterios_calidad": [
+    "Un cliente sin formación jurídica entiende para qué se usan sus datos",
+    "Cada finalidad tiene su base legítima explícita",
+    "No hay referencias a leyes derogadas ni a la LOPD de 1999"
+  ]
+}

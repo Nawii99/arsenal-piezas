@@ -1,0 +1,35 @@
+{
+  "tarea": "Crear un calendario editorial de 30 días para las redes de un negocio pequeño, con pilares, formatos y el gancho de cada publicación",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "cliente_ideal": "[EDAD, SITUACIÓN Y PROBLEMA PRINCIPAL DE TU CLIENTE]",
+    "redes": "[INSTAGRAM, TIKTOK, LINKEDIN, FACEBOOK...]",
+    "frecuencia_sostenible": "[PUBLICACIONES POR SEMANA QUE PUEDES MANTENER DE VERDAD]",
+    "recursos": "[QUIÉN GRABA, CON QUÉ, CUÁNTAS HORAS A LA SEMANA]",
+    "objetivo_del_mes": "[VENDER X, LLENAR AGENDA, CAPTAR SUSCRIPTORES]",
+    "fechas_clave": "[EVENTOS, REBAJAS, TEMPORADA O FESTIVOS DEL MES]"
+  },
+  "metodo": [
+    "1. Reparte el contenido en cuatro pilares: autoridad 40%, cercanía 30%, prueba social 20% y oferta 10%",
+    "2. Asigna a cada pilar los formatos que mejor funcionan en cada red y descarta los que no se puedan producir con los recursos declarados",
+    "3. Agrupa la producción en dos sesiones de grabación al mes para que sea realista",
+    "4. Coloca cada publicación de oferta después de al menos tres de valor sobre el mismo tema",
+    "5. Reserva dos huecos por semana para contenido reactivo: dudas de clientes, novedades o comentarios"
+  ],
+  "restricciones": [
+    "Nada de ideas que exijan equipo, presupuesto o personal no declarados en recursos",
+    "Prohibidas las frases motivacionales genéricas sin relación con el negocio",
+    "Cada idea debe poder grabarse o escribirse en menos de 30 minutos"
+  ],
+  "formato_salida": {
+    "tipo": "tabla",
+    "columnas": ["dia", "red", "pilar", "formato", "gancho", "llamada_a_la_accion", "material_necesario"],
+    "extras": ["dos sesiones de grabación con la lista de lo que hay que rodar en cada una", "cinco ideas de reserva para días flojos"]
+  },
+  "criterios_calidad": [
+    "Cada gancho se entiende en menos de tres segundos y menciona el problema del cliente",
+    "Ninguna idea se repite en el mes con las mismas palabras",
+    "El reparto por pilares cuadra con los porcentajes indicados"
+  ],
+  "tono": "Cercano, de tú a tú, español de España, sin tecnicismos de marketing"
+}

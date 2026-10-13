@@ -1,0 +1,35 @@
+{
+  "tarea": "Preparar el guion de una reunión de descubrimiento B2B y calificar la oportunidad",
+  "contexto": {
+    "empresa_cliente": "[NOMBRE Y ACTIVIDAD DE LA EMPRESA]",
+    "interlocutor": "[NOMBRE Y CARGO]",
+    "que_vendes": "[PRODUCTO O SERVICIO]",
+    "duracion": "[MINUTOS DISPONIBLES]",
+    "lo_que_ya_sabes": "[CÓMO LLEGÓ EL CONTACTO Y QUÉ TE HA CONTADO YA]"
+  },
+  "pasos": [
+    "Propón una apertura de 2 minutos que fije objetivo, tiempo y siguiente paso posible",
+    "Agrupa las preguntas en 5 bloques: situación actual, problema y su coste, quién decide y cómo compran, presupuesto y plazos, criterios para elegir proveedor",
+    "Marca en cada bloque la señal de alarma que indica que la oportunidad no es real",
+    "Añade una pregunta de cierre para acordar el siguiente paso con fecha",
+    "Genera una plantilla de email de resumen posterior para enviar el mismo día"
+  ],
+  "restricciones": [
+    "Máximo 14 preguntas en total y ninguna de más de 20 palabras",
+    "No se presenta el producto hasta haber confirmado un problema concreto",
+    "Prohibido preguntar 'cuál es tu presupuesto' de forma directa: usa rangos u órdenes de magnitud",
+    "Todo lo que el cliente no diga se anota como desconocido, nunca como supuesto"
+  ],
+  "formato_salida": {
+    "guion": "Bloques con preguntas numeradas y hueco para anotar la respuesta",
+    "tabla_calificacion": "Criterio | Qué has confirmado | Semáforo verde, ámbar o rojo",
+    "veredicto": "Seguir, aparcar o descartar, con el motivo en una frase",
+    "email_resumen": "Texto listo para enviar con problema, impacto, acuerdos y siguiente paso con fecha"
+  },
+  "criterios_calidad": [
+    "Al menos 3 preguntas obligan al cliente a poner cifras o plazos",
+    "El veredicto se apoya solo en lo que el cliente ha dicho",
+    "El email de resumen cabe en la pantalla de un móvil"
+  ],
+  "tono": "Consultivo, tranquilo y sin presionar"
+}

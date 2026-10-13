@@ -1,0 +1,36 @@
+{
+  "tarea": "Escribir el guion de un video vertical de 45 segundos con formato de reseña honesta de cliente, para grabar en plano frontal con movil",
+  "contexto": {
+    "producto": "[QUÉ ES Y PARA QUÉ SIRVE]",
+    "precio": "[PRECIO O RANGO]",
+    "quien_habla": "[PERFIL DE LA PERSONA QUE GRABA: EDAD, OCUPACIÓN, SITUACIÓN]",
+    "como_lo_descubrio": "[CÓMO LLEGÓ AL PRODUCTO]",
+    "duda_inicial": "[QUÉ LE FRENÓ ANTES DE COMPRAR]",
+    "resultado": "[QUÉ CAMBIÓ Y EN CUÁNTO TIEMPO]",
+    "pega_honesta": "[UN DEFECTO REAL Y ASUMIBLE DEL PRODUCTO]"
+  },
+  "estructura": [
+    "Apertura hablando ya a mitad de frase, como si continuara una conversacion",
+    "La duda inicial contada sin adornos",
+    "Que hizo exactamente y en que momento noto el cambio",
+    "Demostracion: enseña el producto o el resultado en pantalla",
+    "La pega honesta, dicha sin dramatizar",
+    "Cierre en lenguaje de persona, no de marca: a quien se lo recomendaria y a quien no"
+  ],
+  "reglas_de_voz": [
+    "Escribe como se habla: frases cortas, repeticiones, alguna muletilla natural",
+    "Nada de eslogan, ni del nombre de la marca repetido, ni de 'no te lo pierdas'",
+    "Prohibido decir 'este producto revoluciona' o similares",
+    "Español de España, tuteando"
+  ],
+  "formato_salida": {
+    "tipo": "Guion en dos columnas mas notas de grabacion",
+    "columnas": ["Segundos", "Lo que dice (literal, para leer del teleprompter)", "Qué hace o enseña delante de la cámara"],
+    "notas_grabacion": ["Dónde grabar y con qué luz", "Qué objetos hacen falta", "Rótulos sugeridos y en qué segundo", "Aviso legal si se trata de contenido pagado"]
+  },
+  "criterios_calidad": [
+    "Leído en voz alta suena a persona, no a anuncio",
+    "Hay al menos un detalle concreto que solo diría alguien que lo ha usado",
+    "La pega honesta hace más creíble el resto, no hunde la venta"
+  ]
+}

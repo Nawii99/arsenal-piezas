@@ -1,0 +1,37 @@
+{
+  "tarea": "Analizar mi cartera de clientes recurrentes para detectar riesgo de baja, priorizar las renovaciones próximas y darme un plan de contacto para cada caso",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "modelo": "[CUOTA MENSUAL / MANTENIMIENTO ANUAL / IGUALA / CONTRATO POR PROYECTO RECURRENTE]",
+    "ingreso_recurrente_actual": "[IMPORTE MENSUAL O ANUAL]",
+    "horizonte": "[PRÓXIMOS 90 DÍAS U OTRO PLAZO]"
+  },
+  "entradas": {
+    "cartera": "[PEGA: cliente, importe anual, fecha de renovación, antigüedad, última actividad, incidencias abiertas, uso o consumo, persona de contacto]",
+    "señales_de_baja_conocidas": "[QUÉ HACÍAN LOS CLIENTES QUE YA SE FUERON, SI LO SABES]"
+  },
+  "señales_a_evaluar": [
+    "Caída de uso o de pedidos frente a su media",
+    "Silencio: sin contacto por nuestra parte ni por la suya en un periodo largo",
+    "Cambio de la persona de contacto o del responsable de la cuenta en el cliente",
+    "Incidencias sin resolver o quejas recientes",
+    "Retrasos en el pago de las últimas facturas",
+    "Renovación cercana sin conversación previa iniciada"
+  ],
+  "formato_salida": {
+    "tabla_riesgo": "cliente | importe anual | fecha renovación | nivel de riesgo (alto/medio/bajo) | señales detectadas | acción y fecha límite",
+    "resumen_economico": "Importe total en riesgo alto, medio y bajo, y porcentaje sobre el recurrente total",
+    "calendario": "Orden de contacto por semanas dentro del horizonte indicado",
+    "mensajes": "Para los tres clientes de mayor riesgo, un mensaje de contacto de menos de 100 palabras que no suene a que vienes a cobrar",
+    "oportunidades": "Clientes sanos donde tiene sentido proponer una ampliación, y con qué argumento"
+  },
+  "restricciones": [
+    "El nivel de riesgo debe apoyarse en señales concretas de los datos, no en intuiciones",
+    "No propongas descuentos como primera respuesta al riesgo",
+    "Si un dato clave falta, indícalo como información a recoger antes de actuar"
+  ],
+  "criterios_calidad": [
+    "Los clientes de mayor importe con riesgo alto salen los primeros",
+    "Cada acción cabe en 15 minutos de trabajo"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tarea": "Generar el prompt de vídeo, en inglés, para un plano publicitario de producto de 5 a 8 segundos",
+  "producto": {
+    "objeto": "[QUÉ ES EL PRODUCTO]",
+    "material_y_acabado": "[CRISTAL, PLÁSTICO MATE, METAL, TELA...]",
+    "color_principal": "[COLOR]",
+    "detalle_que_debe_verse": "[ETIQUETA, TAPÓN, TEXTURA, PANTALLA...]"
+  },
+  "escena": {
+    "fondo": "[FONDO LISO / MÁRMOL / MADERA / COCINA REAL / EXTERIOR]",
+    "luz": "[LUZ SUAVE DE VENTANA / ESTUDIO CON REFLECTOR / LUZ DURA CON SOMBRA MARCADA]",
+    "ambiente": "[CÁLIDO Y HOGAREÑO / FRÍO Y TÉCNICO / LUJO OSCURO]"
+  },
+  "camara": {
+    "plano": "[PRIMER PLANO DE DETALLE / PLANO MEDIO DE PRODUCTO / CENITAL]",
+    "lente": "[MACRO 100MM / 50MM / 35MM]",
+    "movimiento": "[ÓRBITA LENTA / ACERCAMIENTO SUAVE / TRAVELLING LATERAL / CÁMARA FIJA]",
+    "profundidad_campo": "fondo desenfocado, producto siempre enfocado"
+  },
+  "accion_en_el_plano": "[QUÉ PASA: SE ABRE, CAE UNA GOTA, UNA MANO LO COGE, GIRA SOBRE SÍ MISMO]",
+  "salida": {
+    "formato": "[VERTICAL 9:16 / CUADRADO 1:1 / HORIZONTAL 16:9]",
+    "duracion_segundos": "[5 A 8]",
+    "estilo": "anuncio de producto realista, sin texto ni logos generados"
+  },
+  "instrucciones_al_modelo": [
+    "Devuelve el prompt final en inglés, en un solo párrafo denso y ordenado: sujeto, acción, cámara, luz, ambiente, formato",
+    "Añade después una lista de negative prompt: texto ilegible, manos deformes, logos inventados, producto que cambia de forma",
+    "Da tres variantes del mismo plano cambiando solo el movimiento de cámara",
+    "Explica en español, en dos líneas, qué cambia cada variante"
+  ],
+  "criterios_calidad": [
+    "El producto se describe con material y color, no solo con su nombre",
+    "Hay un único movimiento de cámara por plano",
+    "No se piden textos ni marcas dentro del vídeo"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "tarea": "Puntuar un currículum frente al filtro automático (ATS) de una oferta concreta y decir qué arreglar primero",
+  "que_es_un_ats": "El programa que usa la empresa para guardar los currículums que llegan, buscarlos por palabras y ordenarlos antes de que los vea una persona",
+  "contexto": {
+    "pais": "España",
+    "idioma_de_salida": "español de España",
+    "portal": "[INFOJOBS | LINKEDIN | TECNOEMPLEO | MANFRED | WEB DE LA EMPRESA]",
+    "perfil_del_candidato": {
+      "puesto_objetivo": "[PUESTO AL QUE POSTULO]",
+      "anos_experiencia_reales": "[NÚMERO O 0]",
+      "ciudad": "[CIUDAD]",
+      "disponible_para_presencial": true
+    }
+  },
+  "entradas": {
+    "curriculum_en_texto_plano": "[PEGA AQUÍ EL TEXTO COPIADO DEL PDF, TAL CUAL SALE]",
+    "oferta_completa": "[PEGA AQUÍ EL ANUNCIO ENTERO]"
+  },
+  "apartados": [
+    {
+      "id": "legibilidad",
+      "nombre": "El robot puede leerlo",
+      "peso": 25,
+      "revisa": ["texto seleccionable y no imagen", "una sola columna", "sin tablas ni cuadros de texto", "sin iconos como etiqueta de un dato", "datos de contacto en el cuerpo y no en el encabezado o pie"]
+    },
+    {
+      "id": "palabras_clave",
+      "nombre": "Coincidencia con la oferta",
+      "peso": 30,
+      "revisa": ["tecnologías exactas del anuncio", "sinónimos y siglas puestos los dos", "título del puesto tal como lo escribe la empresa", "densidad razonable sin repetir a lo tonto"]
+    },
+    {
+      "id": "estructura",
+      "nombre": "Apartados con nombres estándar",
+      "peso": 15,
+      "revisa": ["Experiencia", "Formación", "Habilidades", "Proyectos", "nada de títulos creativos tipo Mi viaje"]
+    },
+    {
+      "id": "fechas_y_datos",
+      "nombre": "Fechas y datos que el sistema entiende",
+      "peso": 15,
+      "revisa": ["formato mm/aaaa", "sin huecos sin explicar", "email y teléfono en formato normal", "ciudad y provincia"]
+    },
+    {
+      "id": "logros",
+      "nombre": "Resultados con número",
+      "peso": 10,
+      "revisa": ["qué hiciste, con qué y qué salió", "nada de funciones copiadas de un manual"]
+    },
+    {
+      "id": "fichero",
+      "nombre": "Archivo y envío",
+      "peso": 5,
+      "revisa": ["PDF salvo que pidan Word", "nombre Nombre-Apellido-Puesto.pdf", "sin contraseña", "menos de 2 MB"]
+    }
+  ],
+  "reglas": [
+    "Cita literalmente la línea del currículum que falla antes de proponer el cambio",
+    "No inventes experiencia, tecnologías ni certificaciones que no aparezcan en el texto",
+    "Una palabra clave solo se propone si el candidato puede defenderla en una entrevista",
+    "Si un apartado está bien, dilo y no lo toques",
+    "Habla en español de España, tuteando, con frases cortas"
+  ],
+  "formato_de_salida": {
+    "tipo": "json",
+    "esquema": {
+      "puntuacion_total": "número de 0 a 100",
+      "veredicto": "pasa | dudoso | no pasa",
+      "resumen_en_una_linea": "texto",
+      "apartados": [
+        {
+          "id": "id del apartado",
+          "puntos": "número",
+          "sobre": "peso del apartado",
+          "fallos": ["frase corta por fallo"],
+          "evidencia": "cita literal del currículum o vacío si no aplica"
+        }
+      ],
+      "arreglar_primero": [
+        {
+          "orden": "1, 2, 3...",
+          "que_cambiar": "texto",
+          "como": "instrucción concreta, con el texto nuevo si procede",
+          "minutos": "número",
+          "puntos_que_ganas": "número"
+        }
+      ],
+      "palabras_clave_que_faltan": [
+        {
+          "palabra": "tal como aparece en la oferta",
+          "donde_ponerla": "titular | habilidades | experiencia | proyectos",
+          "solo_si_es_verdad": true
+        }
+      ],
+      "riesgos": ["cosas que pueden salirte mal en la entrevista si las metes"]
+    }
+  },
+  "prohibido": [
+    "Texto blanco o invisible con palabras clave: los ATS modernos lo detectan y te descartan por hacer trampas",
+    "Dar por hecho que pasar el filtro es conseguir la entrevista",
+    "Prometer resultados o porcentajes de éxito",
+    "Devolver nada que no sea el JSON del esquema"
+  ]
+}
