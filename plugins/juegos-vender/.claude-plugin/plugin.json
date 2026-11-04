@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-juegos-vender",
+  "version": "1.0.0",
+  "description": "Videojuegos y 3D · Publicar y vender juegos: 14 comandos /, 8 subagentes, 3 skills en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "juegos",
+    "arsenal-del-marketer",
+    "vender"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-ventas-cerrar-1",
+  "version": "1.0.0",
+  "description": "Ventas · Cerrar ventas (1): 16 skills, 9 comandos / en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "ventas",
+    "arsenal-del-marketer",
+    "cerrar-1"
+  ]
+}

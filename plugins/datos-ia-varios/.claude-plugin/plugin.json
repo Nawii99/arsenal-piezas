@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-datos-ia-varios",
+  "version": "1.0.0",
+  "description": "Datos e IA · Más de datos e ia: 5 subagentes, 5 comandos /, 1 skill en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "datos-ia",
+    "arsenal-del-marketer",
+    "varios"
+  ]
+}

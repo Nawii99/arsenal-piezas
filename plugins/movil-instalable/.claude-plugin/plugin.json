@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-movil-instalable",
+  "version": "1.0.0",
+  "description": "Móvil · Apps web instalables: 5 comandos /, 3 skills, 3 subagentes en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "movil",
+    "arsenal-del-marketer",
+    "instalable"
+  ]
+}

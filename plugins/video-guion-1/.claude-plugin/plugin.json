@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-video-guion-1",
+  "version": "1.0.0",
+  "description": "Vídeo · Guion e ideas (1): 20 comandos /, 3 subagentes, 2 skills en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "video",
+    "arsenal-del-marketer",
+    "guion-1"
+  ]
+}

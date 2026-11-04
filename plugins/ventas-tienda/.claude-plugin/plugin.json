@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-ventas-tienda",
+  "version": "1.0.0",
+  "description": "Ventas · Venta por internet: 17 skills, 5 subagentes, 1 comando / en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "ventas",
+    "arsenal-del-marketer",
+    "tienda"
+  ]
+}

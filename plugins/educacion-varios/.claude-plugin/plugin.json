@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-educacion-varios",
+  "version": "1.0.0",
+  "description": "Formación · Más de formación: 5 skills, 4 subagentes en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "educacion",
+    "arsenal-del-marketer",
+    "varios"
+  ]
+}

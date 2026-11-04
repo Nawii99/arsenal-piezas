@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-educacion-cursos-1",
+  "version": "1.0.0",
+  "description": "Formación · Cursos y materiales (1): 19 comandos /, 13 skills en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "educacion",
+    "arsenal-del-marketer",
+    "cursos-1"
+  ]
+}

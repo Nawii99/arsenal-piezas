@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-juegos-encargos",
+  "version": "1.0.0",
+  "description": "Videojuegos y 3D · Encargos para clientes: 3 subagentes, 3 comandos /, 2 skills en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "juegos",
+    "arsenal-del-marketer",
+    "encargos"
+  ]
+}

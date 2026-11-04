@@ -15,7 +15,7 @@ One plugin per area, so you only install what you need:
 
 ```
 /plugin marketplace add Nawii99/arsenal-piezas
-/plugin install arsenal-marketing@arsenal
+/plugin install arsenal-ventas-embudo@arsenal
 ```
 
 | Area | Plugin |
@@ -26,28 +26,99 @@ One plugin per area, so you only install what you need:
 | Quality & testing | `arsenal-calidad` |
 | Content | `arsenal-contenido` |
 | Data | `arsenal-datos` |
-| Data & AI | `arsenal-datos-ia` |
-| Design | `arsenal-diseno` |
+| Data & AI | `arsenal-datos-ia-agentes` |
+| Data & AI | `arsenal-datos-ia-datos` |
+| Data & AI | `arsenal-datos-ia-varios` |
+| Design | `arsenal-diseno-impresion` |
+| Design | `arsenal-diseno-marca` |
+| Design | `arsenal-diseno-varios` |
 | Documents | `arsenal-documentos` |
 | E-commerce | `arsenal-ecommerce` |
-| Education | `arsenal-educacion` |
-| Jobs & résumé | `arsenal-empleo` |
-| Finance | `arsenal-finanzas` |
-| Photo & image | `arsenal-foto` |
+| Education | `arsenal-educacion-alumnos` |
+| Education | `arsenal-educacion-cursos-1` |
+| Education | `arsenal-educacion-cursos-2` |
+| Education | `arsenal-educacion-evaluacion` |
+| Education | `arsenal-educacion-negocio` |
+| Education | `arsenal-educacion-varios` |
+| Jobs & résumé | `arsenal-empleo-cv-1` |
+| Jobs & résumé | `arsenal-empleo-cv-2` |
+| Jobs & résumé | `arsenal-empleo-entrevistas` |
+| Jobs & résumé | `arsenal-empleo-varios` |
+| Finance | `arsenal-finanzas-cobros` |
+| Finance | `arsenal-finanzas-gastos` |
+| Finance | `arsenal-finanzas-impuestos` |
+| Finance | `arsenal-finanzas-varios` |
+| Photo & image | `arsenal-foto-archivos` |
+| Photo & image | `arsenal-foto-ia-1` |
+| Photo & image | `arsenal-foto-ia-2` |
+| Photo & image | `arsenal-foto-producto` |
+| Photo & image | `arsenal-foto-retrato` |
+| Photo & image | `arsenal-foto-varios` |
 | Infrastructure | `arsenal-infraestructura` |
-| IoT & hardware | `arsenal-iot` |
-| Games & 3D | `arsenal-juegos` |
+| IoT & hardware | `arsenal-iot-domotica-1` |
+| IoT & hardware | `arsenal-iot-domotica-2` |
+| IoT & hardware | `arsenal-iot-instalaciones` |
+| IoT & hardware | `arsenal-iot-sensores-1` |
+| IoT & hardware | `arsenal-iot-sensores-2` |
+| IoT & hardware | `arsenal-iot-varios` |
+| Games & 3D | `arsenal-juegos-assets-1` |
+| Games & 3D | `arsenal-juegos-assets-2` |
+| Games & 3D | `arsenal-juegos-desarrollo` |
+| Games & 3D | `arsenal-juegos-encargos` |
+| Games & 3D | `arsenal-juegos-varios-1` |
+| Games & 3D | `arsenal-juegos-varios-2` |
+| Games & 3D | `arsenal-juegos-vender` |
 | Legal & contracts | `arsenal-legal` |
-| Marketing | `arsenal-marketing` |
-| Mobile | `arsenal-movil` |
-| Business | `arsenal-negocio` |
+| Marketing | `arsenal-marketing-campanas-1` |
+| Marketing | `arsenal-marketing-campanas-2` |
+| Marketing | `arsenal-marketing-clientes` |
+| Marketing | `arsenal-marketing-contenido` |
+| Marketing | `arsenal-marketing-medicion` |
+| Marketing | `arsenal-marketing-mensajes` |
+| Marketing | `arsenal-marketing-varios` |
+| Mobile | `arsenal-movil-calidad` |
+| Mobile | `arsenal-movil-experiencia` |
+| Mobile | `arsenal-movil-instalable` |
+| Mobile | `arsenal-movil-tiendas-1` |
+| Mobile | `arsenal-movil-tiendas-2` |
+| Mobile | `arsenal-movil-varios` |
+| Business | `arsenal-negocio-clientes` |
+| Business | `arsenal-negocio-cobros-1` |
+| Business | `arsenal-negocio-cobros-2` |
+| Business | `arsenal-negocio-estrategia-1` |
+| Business | `arsenal-negocio-estrategia-2` |
+| Business | `arsenal-negocio-estrategia-3` |
+| Business | `arsenal-negocio-operaciones` |
+| Business | `arsenal-negocio-precios` |
+| Business | `arsenal-negocio-varios` |
 | Productivity | `arsenal-productividad` |
 | Programming | `arsenal-programacion` |
-| Health & fitness | `arsenal-salud` |
+| Health & fitness | `arsenal-salud-agenda-1` |
+| Health & fitness | `arsenal-salud-agenda-2` |
+| Health & fitness | `arsenal-salud-centro-1` |
+| Health & fitness | `arsenal-salud-centro-2` |
+| Health & fitness | `arsenal-salud-comunicacion` |
+| Health & fitness | `arsenal-salud-habitos` |
+| Health & fitness | `arsenal-salud-varios` |
 | Cybersecurity | `arsenal-seguridad` |
-| Sales | `arsenal-ventas` |
-| Video | `arsenal-video` |
-| Web | `arsenal-web` |
+| Sales | `arsenal-ventas-captar-1` |
+| Sales | `arsenal-ventas-captar-2` |
+| Sales | `arsenal-ventas-captar-3` |
+| Sales | `arsenal-ventas-cerrar-1` |
+| Sales | `arsenal-ventas-cerrar-2` |
+| Sales | `arsenal-ventas-embudo` |
+| Sales | `arsenal-ventas-fidelizar` |
+| Sales | `arsenal-ventas-tienda` |
+| Sales | `arsenal-ventas-varios` |
+| Video | `arsenal-video-grabar` |
+| Video | `arsenal-video-guion-1` |
+| Video | `arsenal-video-guion-2` |
+| Video | `arsenal-video-montaje` |
+| Video | `arsenal-video-subtitulos` |
+| Video | `arsenal-video-varios` |
+| Web | `arsenal-web-legal` |
+| Web | `arsenal-web-mantenimiento` |
+| Web | `arsenal-web-varios` |
 
 Single skill: `npx skills add https://github.com/Nawii99/arsenal-piezas --skill skill-name`. Manual: download the ZIP and copy the folders into
 `~/.claude/skills/`, `~/.claude/commands/` or `~/.claude/agents/` (or run `scripts/instalar.sh marketing`).
