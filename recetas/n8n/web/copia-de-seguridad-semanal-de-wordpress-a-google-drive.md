@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Cada domingo de madrugada exporta la base de datos y los archivos de tu WordPress, los sube a Google Drive y borra las copias de más de 30 días.
+Cada domingo de madrugada exporta la base de datos y los archivos de tu WordPress, los sube a Google Drive y borra las copias de más de 30 días. Para quien tiene su negocio en una web.
 
 ## Qué es y qué hace
 
@@ -21,7 +21,7 @@ Cada domingo se conecta por SSH al hosting, vuelca la base de datos con WP-CLI, 
 
 ## Cómo ganar dinero con ella
 
-Sustituye plugins de backup de pago (60-90 €/año) y el rescate de emergencia de un técnico (150-400 € por incidente).
+Sustituye plugins de backup de pago (60-90 €/año) y el rescate de emergencia de un técnico (150-400 € por incidente). El almacenamiento cabe en los 15 GB de Google.
 
 - Copias de seguridad semanales para tiendas WordPress que no tienen copias del hosting.
 - Restauración de prueba mensual para webs de clientes con contenido que se actualiza a menudo.

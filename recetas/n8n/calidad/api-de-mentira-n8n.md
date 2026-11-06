@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
-Flujo de n8n que imita un servicio externo (CRM, pasarela de pago, email) con un webhook que devuelve respuestas inventadas.
+Un flujo de n8n que se hace pasar por el CRM, la pasarela de pago o el servicio de email que aún no quieres tocar, y devuelve respuestas inventadas para probar tu flujo sin gastar.
 
 ## Qué es y qué hace
 
@@ -18,11 +18,11 @@ Flujo de n8n que imita un servicio externo (CRM, pasarela de pago, email) con un
 
 ## Cuándo usarla
 
-Cuando estás montando un flujo que llama a un servicio de pago o con límite de peticiones y cada prueba cuesta dinero, gasta cuota o crea basura en la cuenta real.
+Cuando estás montando un flujo que llama a un servicio de pago o con límite de peticiones y cada prueba cuesta dinero o crea basura en la cuenta real. También si el cliente aún no te da acceso.
 
 ## Cómo ganar dinero con ella
 
-Te permite construir y enseñar flujos antes de tener las credenciales del cliente.
+Te permite construir y enseñar flujos antes de tener las credenciales del cliente. Reduce el tiempo de implantación y evita costes de API durante el desarrollo.
 
 - Entorno de pruebas para integrar pagos sin cobrar durante el desarrollo…
 - Simulador de API para equipos que aún no tienen credenciales del cliente…

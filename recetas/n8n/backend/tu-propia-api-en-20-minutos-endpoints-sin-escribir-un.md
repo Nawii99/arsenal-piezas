@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
-Convierte n8n en una pequeña API que devuelve JSON: consulta tu base de datos o tus hojas, aplica una clave de acceso y responde a tu web o a tu app.
+Convierte n8n en una pequeña API que devuelve JSON: consulta tu base de datos o tus hojas, aplica una clave de acceso y responde a tu web o a tu app. Para quien necesita un endpoint.
 
 ## Qué es y qué hace
 

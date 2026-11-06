@@ -13,7 +13,7 @@ Ventas · Cerrar ventas (2): 17 subagentes, 2 skills en español, del Arsenal de
 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
-| rutinas-con-supervision | Skill | Qué es y qué hace: lista las tareas repetidas de un negocio (publicar, revisar métricas, enviar informes), clasifica cada una por riesgo y redacta una ficha por rutina con límites, semáforo de salud y botón de parada. | se activa sola cuando hace falta |
+| rutinas-con-supervision | Skill | Te ayuda a listar las tareas repetidas de tu negocio, decidir cuáles automatizar con poco riesgo y supervisión, y diseñar cada rutina con límites, semáforo de salud y botón de parada. | se activa sola cuando hace falta |
 | tarifas-y-canales-alojamientos | Skill | Analiza tus datos de ocupación y precios, propone cambios de tarifa por fechas según demanda y competencia, y compara cuánto te deja de verdad cada canal de venta. | se activa sola cuando hace falta |
 | atencion-al-cliente | Subagente | Clasifica mensajes de clientes y redacta respuestas con el tono de tu marca, versiones firme y pública, respuestas rápidas y FAQ, y escala a una persona lo delicado. | pídele a Claude «usa el subagente atencion-al-cliente» |
 | atencion-cliente-con-seguimiento | Subagente | Ordena la atención al cliente de un negocio pequeño: motivos de consulta, respuestas modelo, qué contesta una persona y qué una máquina, y avisos proactivos tras la compra. | pídele a Claude «usa el subagente atencion-cliente-con-seguimiento» |

@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Compara las entregas de un mismo ejercicio entre todos los alumnos, calcula el parecido y te avisa de las parejas sospechosas con los fragmentos coincidentes subrayados.
+Compara las entregas de un mismo ejercicio entre todos los alumnos, calcula el parecido y te avisa de las parejas sospechosas con los fragmentos coincidentes subrayados. Para academias.
 
 ## Qué es y qué hace
 

@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
-Mide el nivel de sonido de tu local y avisa al encargado antes de que un vecino llame a la policía, dejando además un registro horario que te sirve para defenderte.
+Mide el nivel de sonido de tu local y avisa al encargado antes de que un vecino llame a la policía, dejando además un registro horario que te sirve para defenderte. Para bares y pubs.
 
 ## Qué es y qué hace
 

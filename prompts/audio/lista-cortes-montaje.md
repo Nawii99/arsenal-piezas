@@ -2,7 +2,7 @@
 
 **Tipo:** Prompt · **Área:** Música y audio · **Licencia:** CC BY 4.0
 
-Prompt de texto para editar un episodio a partir de su transcripción en bruto con marcas de tiempo.
+Prompt que convierte la transcripción en bruto en una lista de cortes con minutos: muletillas largas, falsos comienzos, digresiones y tramos flojos, para ir directo al editor.
 
 ## Qué es y qué hace
 

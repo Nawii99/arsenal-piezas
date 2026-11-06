@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 
-Copia automáticamente las fotos que vuelcas de la tarjeta a una segunda nube, las apunta en una hoja de control y te avisa por Telegram si algo no ha llegado.
+Copia automáticamente las fotos que vuelcas de la tarjeta a una segunda nube, las apunta en una hoja de control y te avisa por Telegram si algo no ha llegado. Para fotógrafos.
 
 ## Qué es y qué hace
 

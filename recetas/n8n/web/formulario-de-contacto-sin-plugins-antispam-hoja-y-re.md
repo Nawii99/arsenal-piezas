@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Recoge los envíos del formulario de tu web en n8n, filtra el spam, los guarda en una hoja, te avisa al móvil y manda al cliente una respuesta inmediata.
+Recoge los envíos del formulario de tu web en n8n, filtra el spam, los guarda en una hoja, te avisa al móvil y manda al cliente una respuesta inmediata. Para webs estáticas o WordPress.
 
 ## Qué es y qué hace
 
@@ -21,7 +21,7 @@ Tu formulario envía los datos a una URL de n8n, que filtra el spam (campo tramp
 
 ## Cómo ganar dinero con ella
 
-Sustituye plugins de formulario de pago (50-100 €/año) y un CRM básico.
+Sustituye plugins de formulario de pago (50-100 €/año) y un CRM básico. Contestar al instante multiplica por 2-3 los presupuestos cerrados frente a responder tarde.
 
 - Formularios de contacto con filtro de spam para webs de clínicas, reformas y talleres.
 - Gestión de leads con respuesta automática en minutos para agencias pequeñas.

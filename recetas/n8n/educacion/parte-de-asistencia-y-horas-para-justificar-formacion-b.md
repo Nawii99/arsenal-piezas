@@ -21,7 +21,7 @@ Cada noche llama a la API de Zoom, trae los informes de participantes del día y
 
 ## Cómo ganar dinero con ella
 
-Una justificación mal hecha te obliga a devolver el crédito entero del curso.
+Una justificación mal hecha te obliga a devolver el crédito entero del curso. Esto convierte 4 horas de Excel al mes en cero y te avisa a tiempo de quien no llega al 75%.
 
 - Implantación de control de asistencia y listados mensuales para entidades que imparten formación bonificada, por curso.
 - Cierre mensual de horas y revisión de justificaciones para academias con subvenciones, por cuota.

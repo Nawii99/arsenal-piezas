@@ -33,7 +33,7 @@ Legal y contratos: 9 skills, 7 comandos /, 6 subagentes en español, del Arsenal
 | gestor-servicio-registro-marca | Subagente | Coordina de principio a fin un encargo de cliente para comprobar y, si procede, iniciar el registro de una marca en España. | pídele a Claude «usa el subagente gestor-servicio-registro-marca» |
 | revision-inicial-de-contrato-subagente-revisor | Subagente | Pásale un contrato y te devuelve resumen de cláusulas, riesgos identificados, preguntas para negociar y qué revise un abogado. | pídele a Claude «usa el subagente revision-inicial-de-contrato-subagente-revisor» |
 | revisor-contratos | Subagente | Lee el contrato de servicios que te manda un cliente o plataforma y te dice en llano qué cláusulas te perjudican, qué pedir que cambien y cuándo ir a un abogado. | pídele a Claude «usa el subagente revisor-contratos» |
-| revisor-contratos-2 | Subagente | Lee un contrato o unas condiciones de servicio y te dice, cláusula por cláusula, qué te expone, qué falta y qué pedir que cambien antes de firmar. | pídele a Claude «usa el subagente revisor-contratos-2» |
+| revisor-contratos-2 | Subagente | Lee un contrato o unas condiciones de servicio y te dice, cláusula por cláusula, qué te expone, qué falta y qué pedir que cambien antes de firmar. Sirve para los tuyos y para ofrecerlo. | pídele a Claude «usa el subagente revisor-contratos-2» |
 | vigia-colision-marcas | Subagente | Revisa cada semana el Boletín Oficial de la Propiedad Industrial buscando marcas nuevas parecidas a la tuya, para avisarte antes de que se cierre el plazo de dos meses para oponerte. | pídele a Claude «usa el subagente vigia-colision-marcas» |
 
 Licencia: [CC BY 4.0](../../LICENSE). Cítanos si lo usas o lo compartes: «Arsenal del Marketer».

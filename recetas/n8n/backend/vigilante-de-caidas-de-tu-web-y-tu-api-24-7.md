@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
-Comprueba cada 5 minutos que tu web y tus endpoints responden bien y rápido, y te avisa por Telegram en cuanto algo falla y cuando vuelve.
+Comprueba cada 5 minutos que tu web y tus endpoints responden bien y rápido, y te avisa por Telegram en cuanto algo falla y cuando vuelve. Para quien tiene una web, una tienda o una API.
 
 ## Qué es y qué hace
 
@@ -21,7 +21,7 @@ Pide cada 5 minutos a una lista de URLs (web, login, API, pasarela de pago) y co
 
 ## Cómo ganar dinero con ella
 
-Sustituye a un plan de monitorización tipo UptimeRobot Pro o Better Stack (20-50 euros al mes) y recorta las caídas de horas a minutos, que es lo que de verdad cuesta din…
+Sustituye a un plan de monitorización tipo UptimeRobot Pro o Better Stack (20-50 euros al mes) y recorta las caídas de horas a minutos, que es lo que cuesta dinero.
 
 - Monitorización para tiendas online con alertas inmediatas si cae la pasarela de pago.
 - Vigilancia de APIs para startups que dependen de un proveedor externo.

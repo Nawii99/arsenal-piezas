@@ -36,12 +36,12 @@ Foto e imagen · Imágenes con IA (1): 21 comandos /, 9 skills en español, del 
 | riesgo-legal-imagen | Comando / | Revisa tus imágenes antes de publicarlas: caras, marcas ajenas, obras protegidas, licencias y cuándo hay que avisar de que son de IA. | `/riesgo-legal-imagen` |
 | antes-despues-servicio | Skill | Monta imágenes de antes y después creíbles y honestas para servicios: reformas, limpieza, jardinería, taller, peluquería o diseño. | se activa sola cuando hace falta |
 | control-calidad-imagen | Skill | Revisa una imagen generada con IA antes de publicarla y detecta los fallos que se te escapan y que el cliente sí ve. | se activa sola cuando hace falta |
-| derechos-de-imagen | Skill | Comprueba si puedes usar legalmente una foto: bancos de imágenes, fotos de terceros, personas que salen, marcas e imágenes generadas con IA. | se activa sola cuando hace falta |
-| derechos-imagen | Skill | Te aclara qué imágenes puedes usar y publicar sin meterte en un lío: bancos gratis, marcas ajenas, caras, y qué pasa con lo generado por IA. | se activa sola cuando hace falta |
+| derechos-de-imagen-skill | Skill | Comprueba si puedes usar legalmente una foto: bancos de imágenes, fotos de terceros, personas que salen, marcas e imágenes generadas con IA. | se activa sola cuando hace falta |
+| derechos-imagen-skill | Skill | Te aclara qué imágenes puedes usar y publicar sin meterte en un lío: bancos gratis, marcas ajenas, caras, y qué pasa con lo generado por IA. | se activa sola cuando hace falta |
 | ficha-estilo-visual | Skill | Crea la ficha de estilo visual de tu marca: un bloque fijo de prompt para que todas tus imágenes de IA parezcan de la misma casa. | se activa sola cuando hace falta |
 | fotos-producto-ia | Skill | Aplica el lenguaje de la fotografía profesional a tus prompts de imagen: plano, ángulo, lente, luz, estilo y medida según dónde se publica, con plantilla y ejemplo. | se activa sola cuando hace falta |
 | guia-visual-de-marca | Skill | Crea la ficha de estilo visual de tu marca y el bloque de prompt que hace que todas tus imágenes parezcan de la misma casa. | se activa sola cuando hace falta |
-| imagenes-rapidas-web | Skill | Deja las imágenes de tu web ligeras y bien nombradas para que cargue rápido y Google las entienda, sin tocar código complicado. | se activa sola cuando hace falta |
+| imagenes-rapidas-web-skill | Skill | Deja las imágenes de tu web ligeras y bien nombradas para que cargue rápido y Google las entienda, sin tocar código complicado. | se activa sola cuando hace falta |
 | lote-catalogo-imagenes | Skill | Monta el sistema para producir en serie las imágenes de 30, 50 o 200 productos sin perderte ni repetir trabajo. | se activa sola cuando hace falta |
 
 Licencia: [CC BY 4.0](../../LICENSE). Cítanos si lo usas o lo compartes: «Arsenal del Marketer».

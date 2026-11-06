@@ -21,7 +21,7 @@ Cuando vayas a pedir a una IA que automatice copias de seguridad o recuperación
 
 ## Cómo ganar dinero con ella
 
-Ofreces a pymes con web o tienda en un servidor una puesta en marcha de copias de seguridad con prueba de restauración documentada: [PRECIO] por la instalación y [PRECIO…
+Ofreces a pymes con web o tienda en un servidor copias de seguridad con prueba de restauración documentada: [PRECIO] por la instalación y [PRECIO AL MES].
 
 - Puesta en marcha de copias de seguridad con prueba de restauración documentada para pymes con web.
 - Auditoría de copias de servidores para una tienda o un WordPress de cliente.

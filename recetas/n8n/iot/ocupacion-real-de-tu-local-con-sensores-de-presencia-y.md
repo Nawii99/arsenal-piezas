@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
-Cuenta las horas de ocupación reales de cada sala o zona con sensores de presencia mmWave y te dice qué espacios sobran, cuáles se saturan y a qué horas.
+Cuenta las horas de ocupación reales de cada sala o zona con sensores de presencia mmWave y te dice qué espacios sobran, cuáles se saturan y a qué horas. Para coworkings y clínicas.
 
 ## Qué es y qué hace
 

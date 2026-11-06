@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
-Flujo de n8n que vigila una carpeta compartida de Google Drive, pasa los CV nuevos por OCR si hace falta, extrae los datos con un modelo de lenguaje y los deja como fila en una hoja de Google Sheets que puede entregarse al cliente.
+Flujo de n8n que vigila una carpeta de Google Drive, pasa los CVs nuevos por OCR y un modelo de extracción, y deja los datos listos en una hoja de cálculo para facturar el servicio.
 
 ## Qué es y qué hace
 

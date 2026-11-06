@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Cada email nuevo de la etiqueta Soporte se analiza con un modelo de IA para identificar cliente, tipo de petición (error, cambio o ampliación), urgencia y si entra en el contrato de mantenimiento.
+Lee los emails que llegan a tu buzón de soporte, clasifica cada uno con IA (error, cambio pequeño, ampliación fuera de presupuesto), crea la tarea en Notion o Trello y confirma.
 
 ## Qué es y qué hace
 

@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
-Lee el saldo y los movimientos de tu cuenta cada mañana con la API de open banking de GoCardless Bank Account Data, compara el saldo con el colchón mínimo que fijes y revisa los cargos del día frente a tu media.
+Se conecta a tu banco por la vía oficial de open banking, mira el saldo y los movimientos cada mañana y te avisa por Telegram si bajas de tu colchón mínimo o si hay un cargo raro.
 
 ## Qué es y qué hace
 

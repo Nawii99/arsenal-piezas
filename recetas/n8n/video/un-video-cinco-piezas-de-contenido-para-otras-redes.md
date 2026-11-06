@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
-A partir de la transcripción de cada vídeo genera automáticamente un post de LinkedIn, un carrusel de Instagram, un hilo, un email para tu lista y tres ideas de Short, y lo deja todo en una…
+A partir de la transcripción de cada vídeo genera automáticamente un post de LinkedIn, un carrusel de Instagram, un hilo, un email para tu lista y tres ideas de Short.
 
 ## Qué es y qué hace
 

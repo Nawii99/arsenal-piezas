@@ -2,7 +2,7 @@
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
-Prompt para cualquier chat de IA que revisa publicaciones de salud antes de publicarlas.
+Prompt que revisa tus publicaciones sobre salud y bienestar antes de publicarlas y las reescribe para que sean claras, útiles y prudentes, sin promesas ni afirmaciones dudosas.
 
 ## Qué es y qué hace
 

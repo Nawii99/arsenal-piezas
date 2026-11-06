@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Receta de n8n que recibe las respuestas de un formulario de Tally con los datos del negocio, pide a Claude los tres textos legales, los guarda en un Google Doc con el nombre del cliente y envía un correo con el enlace y los huecos pendientes.
+El cliente rellena un formulario con los datos de su negocio, n8n genera con IA el borrador de aviso legal, privacidad y cookies, lo guarda en un Google Doc y te avisa para revisarlo.
 
 ## Qué es y qué hace
 

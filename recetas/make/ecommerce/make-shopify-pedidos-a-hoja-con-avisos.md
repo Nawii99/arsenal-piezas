@@ -21,7 +21,7 @@ Escenario de Make (make.com) que copia cada pedido pagado de tu tienda Shopify a
 
 ## Cómo ganar dinero con ella
 
-Cobra [TU PRECIO] por montarla con la tienda del cliente y definir con él los umbrales de aviso.
+Cobra [TU PRECIO] por montarla con la tienda del cliente y definir con él los umbrales de aviso. Ofrece [TU PRECIO] al mes por revisar que los pedidos llegan a la hoja.
 
 - Registro automático de pedidos para tiendas online que llevan el control a mano en hojas.
 - Mantenimiento mensual de la integración con revisión de pedidos que no llegaron a la hoja.

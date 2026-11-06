@@ -21,7 +21,7 @@ Cuando das clases en grupo (yoga, pilates, funcional, espalda sana) y a veces se
 
 ## Cómo ganar dinero con ella
 
-Cancelar a tiempo una clase de 3 personas te ahorra los 25 euros del profesor; llenarla con 4 más te suma 60 euros.
+Cancelar a tiempo una clase de 3 personas te ahorra los 25 euros del profesor; llenarla con 4 más te suma 60 euros. Dos o tres veces por semana son 500 euros al mes.
 
 - Automatización de ocupación para estudios de pilates o yoga con avisos al equipo.
 - Campaña de invitaciones a clases con poca asistencia para un gimnasio boutique.

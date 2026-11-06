@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
-Receta de n8n que recoge la solicitud de un cliente por formulario, normaliza sus datos, genera el informe de auditoría con una IA de texto (Claude, Codex, Gemini o una IA local) y lo envía en PDF con un enlace de cobro.
+Receta de n8n que recoge la solicitud de un cliente por formulario, genera el informe con IA, lo envía en PDF y ofrece el cobro, para operar la auditoría de seguridad móvil como servicio.
 
 ## Qué es y qué hace
 

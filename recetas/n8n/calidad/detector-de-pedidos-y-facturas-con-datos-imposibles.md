@@ -21,7 +21,7 @@ Flujo de n8n que cada noche descarga los pedidos y facturas del día desde tu ti
 
 ## Cómo ganar dinero con ella
 
-Un cupón mal puesto puede regalarte el catálogo en una noche.
+Un cupón mal puesto puede regalarte el catálogo en una noche. Detectarlo a las pocas horas, y no en el cierre del mes, evita pérdidas directas y correcciones fiscales.
 
 - Control diario de facturación para tiendas online que emiten muchas facturas al mes.
 - Revisión mensual de pedidos y cupones para negocios con promociones frecuentes.

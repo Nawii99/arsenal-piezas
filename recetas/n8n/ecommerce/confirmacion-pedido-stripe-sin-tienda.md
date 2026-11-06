@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 
-Es una receta de n8n que, al recibir un pago en Stripe, registra el pedido en una hoja de cálculo, avisa al vendedor si el importe es alto y envía la confirmación al cliente, sin plataforma de tienda con cuota.
+Workflow de n8n que, al recibir un pago en Stripe, registra el pedido en una hoja de cálculo, avisa al vendedor si es grande y envía la confirmación al cliente, sin plataforma de tienda.
 
 ## Qué es y qué hace
 

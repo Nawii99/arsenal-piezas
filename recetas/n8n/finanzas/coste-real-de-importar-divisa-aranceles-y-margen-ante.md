@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
-Cada día consulta el tipo de cambio oficial del BCE en la API gratuita de Frankfurter y recalcula en euros el coste desembarcado de cada producto importado: divisa, transporte, arancel e IVA de importación.
+Vigila el tipo de cambio y te calcula el coste final en euros de una compra a proveedor extranjero incluyendo divisa, transporte, arancel e IVA de importación, y avisa si baja el margen.
 
 ## Qué es y qué hace
 

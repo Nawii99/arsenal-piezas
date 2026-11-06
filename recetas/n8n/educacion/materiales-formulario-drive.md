@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Rellenas un formulario desde el móvil (tema, curso, tipo de material) y en dos minutos tienes el documento en tu Drive y un aviso por correo.
+Rellenas un formulario desde el móvil (tema, curso, tipo de material) y en dos minutos tienes el documento en tu Drive y un aviso por correo. Sirve para fichas, cuestionarios y guiones.
 
 ## Qué es y qué hace
 

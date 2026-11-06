@@ -27,11 +27,11 @@ Salud y deporte · Gestión del centro (1): 12 comandos /, 7 skills, 1 subagente
 | revisar-publicidad-sanitaria | Comando / | Revisa tus textos de salud y bienestar para quitar promesas de curación, testimonios problemáticos y afirmaciones que te pueden meter en un lío. | `/revisar-publicidad-sanitaria` |
 | adherencia-ejercicios-casa | Skill | Cómo hacer que el paciente cumpla la pauta de casa: recordatorios, registro y revisión. | se activa sola cuando hace falta |
 | consentimiento-y-datos-clinica | Skill | Prepara los textos de consentimiento y protección de datos de una clínica pequeña en España, y la lista de lo que hay que tener guardado y firmado. | se activa sola cuando hace falta |
-| cuadro-mando-clinica | Skill | Monta el panel de cinco números que dice de verdad cómo va una clínica, con la fórmula de cada uno y qué hacer si sale mal. | se activa sola cuando hace falta |
+| cuadro-mando-clinica-skill | Skill | Monta el panel de cinco números que dice de verdad cómo va una clínica, con la fórmula de cada uno y qué hacer si sale mal. | se activa sola cuando hace falta |
 | protocolo-de-alta | Skill | Diseña cómo se da el alta y qué pasa después: la sesión de cierre, el plan de mantenimiento y los contactos de seguimiento a 1, 3 y 12 meses. | se activa sola cuando hace falta |
 | protocolo-sala-y-material | Skill | Escribe el protocolo diario de apertura, entre pacientes y cierre de la sala, con higiene, material y control de stock. | se activa sola cuando hace falta |
 | resenas-clinica-sin-datos | Skill | Responde reseñas de una clínica sin confirmar que esa persona es paciente ni dar un solo dato de salud, y monta el sistema para pedir reseñas legalmente. | se activa sola cuando hace falta |
-| revisar-publicidad-sanitaria | Skill | Revisa tus textos de web, redes y folletos para quitar promesas prohibidas y dejarlos correctos sin que pierdan fuerza comercial. | se activa sola cuando hace falta |
+| revisar-publicidad-sanitaria-skill | Skill | Revisa tus textos de web, redes y folletos para quitar promesas prohibidas y dejarlos correctos sin que pierdan fuerza comercial. | se activa sola cuando hace falta |
 | analista-resenas-centro | Subagente | Lee tus reseñas, saca el patrón de quejas y elogios, te deja respuestas sin revelar datos de salud. | pídele a Claude «usa el subagente analista-resenas-centro» |
 
 Licencia: [CC BY 4.0](../../LICENSE). Cítanos si lo usas o lo compartes: «Arsenal del Marketer».

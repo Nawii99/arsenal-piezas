@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Cada semana recorre la API REST de WordPress página a página y descarga entradas, páginas, categorías y la lista de medios, incluidos borradores, como archivos JSON con fecha.
+Cada semana descarga entradas, páginas, categorías y la lista de medios de tu WordPress vía API y los guarda como archivos JSON con fecha en Google Drive, borrando las copias antiguas.
 
 ## Qué es y qué hace
 

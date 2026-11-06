@@ -17,7 +17,7 @@ Flujo de n8n que cada lunes lee un historial de sesiones en Google Sheets, detec
 
 ## Cuándo usarla
 
-Cuando llevas más de un año abierto y tienes una base de clientes antiguos que se fueron apagando sin que nadie los llamara.
+Cuando llevas más de un año abierto y tienes una base de clientes antiguos que se fueron apagando sin que nadie los llamara. Vale para gimnasios, nutrición, masajes u osteopatía.
 
 ## Cómo ganar dinero con ella
 

@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
-Flujo de n8n que cada semana lee el porcentaje de batería de cada sensor inalámbrico, calcula a qué ritmo baja y estima cuándo llegará al 15%.
+Vigila el nivel de batería de todos tus sensores inalámbricos, predice cuándo se van a agotar y te prepara la lista de compra por tipo de pila, más una tarea en el calendario.
 
 ## Qué es y qué hace
 

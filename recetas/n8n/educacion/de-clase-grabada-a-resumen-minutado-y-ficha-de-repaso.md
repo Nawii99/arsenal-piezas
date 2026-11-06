@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Flujo de n8n que coge una grabación de clase de una carpeta de Drive, la transcribe con Whisper y devuelve un resumen con puntos clave, un minutado por temas con el minuto exacto, los deberes detectados y ocho preguntas de repaso.
+Sube la grabación de la clase, la transcribe, y devuelve un resumen con los puntos clave, el minutado por temas, los deberes detectados y una ficha de repaso en PDF que se envía al alumnado.
 
 ## Qué es y qué hace
 

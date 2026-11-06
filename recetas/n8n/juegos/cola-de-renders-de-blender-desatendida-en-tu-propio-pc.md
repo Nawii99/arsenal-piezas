@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
-Apuntas los trabajos de render en una hoja de cálculo y tu ordenador los va renderizando uno a uno por la noche, sube el resultado a Drive y te avisa cuando termina.
+Apuntas los trabajos de render en una hoja de cálculo y tu ordenador los va renderizando uno a uno por la noche, sube el resultado a Drive y te avisa cuando termina. Para el artista 3D.
 
 ## Qué es y qué hace
 

@@ -21,7 +21,7 @@ Escenario de Make (make.com) que lee los correos de una etiqueta de Gmail, pide 
 
 ## Cómo ganar dinero con ella
 
-Cobra [TU PRECIO] por montarla y por redactar con el cliente el documento de información del negocio que usa la IA.
+Cobra [TU PRECIO] por montarla y redactar con el cliente el documento de información del negocio que usa la IA. Ofrece [TU PRECIO] al mes por mantener esa información.
 
 - Atención a consultas repetidas (horarios, precios, reservas) para clínicas, tiendas o academias por correo.
 - Plantilla de respuestas para el buzón de info de una empresa, con revisión semanal del texto de referencia.

@@ -21,7 +21,7 @@ Cuando tengas colas de trabajos, crons o procesos que se quedan a medias y solo 
 
 ## Cómo ganar dinero con ella
 
-Convierte incidencias de medio día en incidencias de dos minutos sin que estés tú mirando; equivale a una guardia básica que cobrando fuera te costaría cientos de euros a…
+Convierte incidencias de medio día en incidencias de dos minutos sin que estés tú mirando; equivale a una guardia básica que cobrando fuera te costaría cientos de euros.
 
 - Guardia técnica básica para apps con procesos de fondo que se atascan a menudo.
 - Mantenimiento de colas para agencias que gestionan importaciones de clientes.

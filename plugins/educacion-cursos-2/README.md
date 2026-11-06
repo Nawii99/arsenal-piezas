@@ -13,8 +13,8 @@ Formación · Cursos y materiales (2): 18 subagentes, 4 skills en español, del 
 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
-| pack-materiales-clase-cliente | Skill | Convierte el encargo de un profesor o academia en un pack completo (presentación, ficha, rúbrica y juego) con formato de entrega profesional. | se activa sola cuando hace falta |
-| plantilla-leccion | Skill | Genera una plantilla de lección para clase con objetivos, actividades y materiales a partir de un tema y nivel. | se activa sola cuando hace falta |
+| pack-materiales-clase-cliente | Skill | Convierte el encargo de un profesor o academia en un pack completo (presentación, ficha, rúbrica y juego) con formato de entrega profesional. Sirve para cobrar por el material. | se activa sola cuando hace falta |
+| plantilla-leccion-skill | Skill | Genera una plantilla de lección para clase con objetivos, actividades y materiales a partir de un tema y nivel. | se activa sola cuando hace falta |
 | taller-presencial-2h | Skill | Cada minuto de tu taller listo: dinámicas, tiempo, material y qué haces si se descuadra. | se activa sola cuando hace falta |
 | taller-presencial-3h | Skill | Guion minuto a minuto de un taller presencial o por videollamada: dinámicas, tiempos, materiales y plan B si el grupo no participa. | se activa sola cuando hace falta |
 | arquitecto-curriculo | Subagente | Convierte «quiero enseñar X» en un curso ordenado por competencias: resultados de aprendizaje, módulos, prácticas y criterios de evaluación. | pídele a Claude «usa el subagente arquitecto-curriculo» |

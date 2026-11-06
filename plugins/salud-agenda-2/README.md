@@ -13,13 +13,13 @@ Salud y deporte · Agenda y pacientes (2): 10 subagentes, 3 skills en español, 
 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
-| rescate-huecos-agenda | Skill | Convierte las cancelaciones de última hora en huecos rellenados: lista de espera activa, mensaje de aviso y orden de a quién llamas primero. | se activa sola cuando hace falta |
+| rescate-huecos-agenda-skill | Skill | Convierte las cancelaciones de última hora en huecos rellenados: lista de espera activa, mensaje de aviso y orden de a quién llamas primero. | se activa sola cuando hace falta |
 | triaje-de-mensajes | Skill | Define qué se contesta y qué no por WhatsApp o email en una clínica: categorías de mensaje, respuestas tipo y cuándo derivar a urgencias. | se activa sola cuando hace falta |
 | triaje-recepcion-clinica | Skill | Crea el guion de recepción para saber qué preguntar al que llama, cuándo NO dar cita y cuándo mandar al médico, sin diagnosticar nada. | se activa sola cuando hace falta |
 | auditor-agenda-huecos | Subagente | Analiza tu agenda de clínica y detecta dónde se pierden citas: huecos, no-shows, franjas flojas. | pídele a Claude «usa el subagente auditor-agenda-huecos» |
 | auditor-de-huecos-de-agenda | Subagente | Analiza tu agenda y devuelve un plan para llenar huecos sueltos, ataques de ausencias y horarios flojos. | pídele a Claude «usa el subagente auditor-de-huecos-de-agenda» |
 | auditor-huecos-agenda | Subagente | Analiza dónde pierdes horas en la agenda: huecos muertos, ausencias mal puestas, franjas sin vender. | pídele a Claude «usa el subagente auditor-huecos-agenda» |
-| derechos-paciente-rgpd | Subagente | Es un subagente que analiza un mensaje de un paciente que pide acceso, copia, rectificación, supresión, portabilidad u oposición sobre sus datos, y redacta la respuesta dentro del plazo legal. | pídele a Claude «usa el subagente derechos-paciente-rgpd» |
+| derechos-paciente-rgpd | Subagente | Redacta la respuesta a un paciente que pide acceso, copia, rectificación o borrado de sus datos o de su historia clínica, dentro del plazo legal y sin negar lo que no se puede negar. | pídele a Claude «usa el subagente derechos-paciente-rgpd» |
 | instrucciones-claras-paciente | Subagente | Subagente que convierte las indicaciones que dicta el profesional en una hoja de instrucciones que el paciente entiende y cumple, sin añadir nada clínico. | pídele a Claude «usa el subagente instrucciones-claras-paciente» |
 | manual-recepcion-clinica | Subagente | Subagente que escribe el manual de atención de recepción: qué decir al teléfono, por WhatsApp y en mostrador, con guiones, límites y triaje administrativo. | pídele a Claude «usa el subagente manual-recepcion-clinica» |
 | protocolo-huecos-ultima-hora | Subagente | Monta tu sistema para rellenar cancelaciones de última hora: lista de espera, mensajes, orden y reglas. | pídele a Claude «usa el subagente protocolo-huecos-ultima-hora» |

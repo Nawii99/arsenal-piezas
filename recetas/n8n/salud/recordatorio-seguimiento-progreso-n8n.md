@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
-Flujo de n8n que cada semana lee una hoja de Google Sheets con el registro de peso, medidas y cargas, calcula los días sin registrar y, si ha pasado una semana, avisa por Telegram.
+Automatización de n8n que avisa por Telegram cuando llevas una semana sin registrar tu progreso (peso, medidas, cargas), para evitar el error más común: dejar de anotar.
 
 ## Qué es y qué hace
 

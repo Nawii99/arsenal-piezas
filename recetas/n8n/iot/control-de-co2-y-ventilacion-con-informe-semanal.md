@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
-Mide el CO2 de tu local o aula, avisa cuando hay que ventilar y te deja un informe semanal con las horas en las que el aire estaba peor.
+Mide el CO2 de tu local o aula, avisa cuando hay que ventilar y te deja un informe semanal con las horas en las que el aire estaba peor. Para academias, gimnasios y salas de reuniones.
 
 ## Qué es y qué hace
 

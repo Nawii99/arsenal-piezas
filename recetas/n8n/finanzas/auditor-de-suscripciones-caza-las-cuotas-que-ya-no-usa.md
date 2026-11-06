@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
-Cada día 1 busca en tu Gmail los recibos de suscripción del mes anterior, extrae el servicio y el importe con IA, los compara con el histórico y te envía un informe con el gasto recurrente, las subidas de precio y las suscripciones sin movimiento.
+Una vez al mes rastrea tu correo buscando recibos de suscripciones, compara los importes con los del mes anterior y te enseña una lista con lo que pagas, lo que ha subido y lo que sobra.
 
 ## Qué es y qué hace
 

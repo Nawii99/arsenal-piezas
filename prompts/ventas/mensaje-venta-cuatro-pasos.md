@@ -16,11 +16,11 @@ Prompt para Claude, Codex, Gemini o una IA local que redacta un mensaje de venta
 
 ## Cuándo usarla
 
-Cuando tienes que convencer a un cliente por email, anuncio, web o mensaje directo y quieres un texto con orden que evite prometer lo que no puedas cumplir, con una lista para revisarlo antes de envia…
+Cuando tienes que convencer a un cliente por email, anuncio, web o mensaje y quieres un texto con orden que evite prometer lo que no puedas cumplir, con una lista para revisarlo antes de enviarlo.
 
 ## Cómo ganar dinero con ella
 
-Escribe mensajes de venta para negocios pequeños (emails, anuncios, páginas de captación) y cobra por pieza o por paquete: [TU PRECIO].
+Escribe mensajes de venta para negocios pequeños (emails, anuncios, páginas de captación) y cobra por pieza o por paquete: [TU PRECIO]. Vende el proceso.
 
 - Redacción de mensajes de venta para emails, anuncios y webs de pequeños negocios locales.
 - Pack de textos de venta con revisión de afirmaciones para autónomos que venden servicios.

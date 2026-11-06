@@ -21,7 +21,7 @@ Escenario de Make (make.com) que cada lunes lee tu hoja de facturas de Google Sh
 
 ## Cómo ganar dinero con ella
 
-Cobra [TU PRECIO] por montar la hoja de facturas con sus fórmulas y el escenario.
+Cobra [TU PRECIO] por montar la hoja de facturas con el escenario. Ofrece [TU PRECIO] al mes por revisar con el cliente la lista semanal y cambiar el texto del aviso.
 
 - Control de cobros para autónomos que llevan facturas en una hoja y olvidan reclamar pagos pendientes.
 - Panel de facturas vencidas para una pyme, con revisión semanal de la lista de impagos.

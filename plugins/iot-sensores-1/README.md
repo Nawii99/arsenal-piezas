@@ -31,6 +31,6 @@ IoT y hardware · Sensores y cámaras (1): 11 skills, 8 comandos / en español, 
 | importar-hardware-iot | Skill | Calcula el coste real de traer placas y sensores de fuera (IVA, aduanas, plazos) y qué responsabilidad asumes al importar. | se activa sola cuando hace falta |
 | montaje-proyecto-iot | Skill | Te planifica de principio a fin una estación meteorológica, un riego automático, una alarma o una cámara de vigilancia: qué comprar, cómo montarlo y qué te ahorra cada día. | se activa sola cuando hace falta |
 | piloto-de-sensores-skill-guiada | Skill | Piloto de sensores repetible: mismos criterios de éxito cada prueba. | se activa sola cuando hace falta |
-| presupuesto-proyecto-iot | Skill | Es una skill que convierte un proyecto IoT (riego, alarma, cámara o estación meteorológica) en un presupuesto y propuesta para enviar a un cliente: material, horas, cuota mensual, IVA y lo que legalmente toca. | se activa sola cuando hace falta |
+| presupuesto-proyecto-iot | Skill | Convierte un proyecto de riego, alarma, cámara o estación meteorológica en un presupuesto y propuesta que se pueda enviar a un cliente: material, horas, cuota mensual, IVA y lo que toca. | se activa sola cuando hace falta |
 
 Licencia: [CC BY 4.0](../../LICENSE). Cítanos si lo usas o lo compartes: «Arsenal del Marketer».

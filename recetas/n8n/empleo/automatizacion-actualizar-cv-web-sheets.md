@@ -17,11 +17,11 @@ Flujo de n8n que, cada vez que añades una fila nueva a una hoja de Google Sheet
 
 ## Cuándo usarla
 
-Cada vez que terminas un proyecto o cambias de puesto: en vez de entrar en el código de la web y editar el HTML a mano, añades una fila en una hoja de cálculo desde el móvil y la automatización te dej…
+Cada vez que terminas un proyecto o cambias de puesto: en vez de editar el HTML a mano, añades una fila en una hoja de cálculo desde el móvil y la automatización te deja el texto listo.
 
 ## Cómo ganar dinero con ella
 
-Se puede montar como servicio de "CV web que se mantiene sola" para autónomos, cobrando el montaje inicial, por ejemplo [50-100 EUR], y avisando de que el uso de la IA ti…
+Se puede montar como servicio de 'CV web que se mantiene sola' para autónomos, cobrando el montaje inicial, por ejemplo [50-100 EUR], y avisando de que la IA tiene coste.
 
 - Mantenimiento automático de CV web para autónomos que cambian de proyecto…
 - Actualizaciones de portfolio para creativos que publican trabajos cada mes…

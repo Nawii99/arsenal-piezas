@@ -26,7 +26,7 @@ Formación · Cursos y materiales (1): 19 comandos /, 13 skills en español, del
 | guion-leccion | Comando / | Escribe el guion palabra por palabra de una lección grabada de 5 a 12 minutos, con gancho, demostración en pantalla y tarea final. | `/guion-leccion` |
 | minutado-sesion | Comando / | Prepara el guion minutado de una clase o taller en directo: qué haces cada bloque, qué dinámica usas y el plan B si algo falla. | `/minutado-sesion` |
 | orden-del-temario | Comando / | Ordena tu temario por dependencias reales para que nadie se pierda y detecta el punto donde la gente abandona. | `/orden-del-temario` |
-| plantilla-leccion | Comando / | Comando que genera la plantilla de una lección con objetivos, contenido, actividad y cierre, aplicando un checklist: objetivos medibles, contenido que cabe en el tiempo real y un momento de comprobación del aprendizaje. | `/plantilla-leccion` |
+| plantilla-leccion | Comando / | Comando que genera la plantilla de una lección con el checklist que evita los errores más habituales: objetivos que no se pueden medir, más contenido del que cabe en el tiempo real. | `/plantilla-leccion` |
 | presupuesto-materiales | Comando / | Convierte la petición de un profesor, academia o centro en un presupuesto claro: alcance, entregables, plazo, precio y condiciones. Pensado para autónomos en España. | `/presupuesto-materiales` |
 | repaso-espaciado | Comando / | Monta el plan de repasos posteriores al curso para que tus alumnos no olviden lo aprendido y vuelvan a la plataforma. | `/repaso-espaciado` |
 | taller-dos-horas | Comando / | Monta el guion minutado de un taller en directo de 1 a 3 horas, con prácticas, cortes de tiempo y plan B. | `/taller-dos-horas` |

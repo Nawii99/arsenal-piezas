@@ -20,7 +20,7 @@ Cuando vayas a generar un vídeo con una herramienta de texto a vídeo y quieras
 
 ## Cómo ganar dinero con ella
 
-Preparas plantillas rellenables por tipo de vídeo (anuncio local, tutorial, videoclip) y las vendes como extra a quien ya edita vídeo o lleva las redes de pequeños negoci…
+Preparas plantillas rellenables por tipo de vídeo (anuncio local, tutorial, videoclip) y las vendes como extra a quien ya edita vídeo o lleva redes de pequeños negocios.
 
 - Plantillas de prompts de vídeo para anuncios de negocios locales, vendidas como extra a quien ya gestiona sus redes.
 - Sesión de preparación de vídeos con IA para creadores que quieren ahorrar intentos antes de generar.

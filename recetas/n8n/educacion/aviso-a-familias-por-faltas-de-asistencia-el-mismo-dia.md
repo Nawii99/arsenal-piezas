@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Flujo de n8n que recibe la asistencia de cada grupo desde un formulario o un QR y, a las 18:30, compara la lista de matriculados con quién ha marcado presencia.
+Registra la asistencia con un formulario o un QR, detecta quién ha faltado sin justificar y avisa a la familia o al alumno por WhatsApp o email antes de que acabe la tarde.
 
 ## Qué es y qué hace
 

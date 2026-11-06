@@ -19,7 +19,7 @@ Finanzas · Facturas y cobros: 18 comandos /, 7 subagentes, 3 skills en español
 | cobrar-impagados | Comando / | Monta el plan completo para cobrar una factura que no te pagan: qué escribir, cuándo, con qué tono y hasta dónde puedes llegar por la vía legal. | `/cobrar-impagados` |
 | conciliar-banco | Comando / | Cuadra el extracto del banco con tus facturas y gastos del periodo y te saca la lista exacta de apuntes que no encajan y qué hacer con cada uno. | `/conciliar-banco` |
 | condiciones-de-cobro | Comando / | Diseña tus condiciones de pago y las escribe: anticipo, hitos, plazos, recargos y qué pasa si el cliente se retrasa o cancela. | `/condiciones-de-cobro` |
-| factura | Comando / | Genera en 1 minuto el texto de una factura válida en España: número correlativo, datos de ambas partes, partidas, IVA y retención calculados, total y email de envío. | `/factura` |
+| factura | Comando / | Genera en 1 minuto el texto de una factura válida en España: número correlativo, datos de ambas partes, partidas, IVA y retención calculados, total y correo de envío. | `/factura` |
 | hucha-impuestos | Comando / | Calcula qué porcentaje de cada cobro tienes que apartar para IVA, IRPF y cuota, y monta el sistema de cuentas separadas. | `/hucha-impuestos` |
 | presupuesto-cliente | Comando / | Redacta un presupuesto en tabla con partidas, IVA y total, tres opciones de precio, condiciones, el email de envío y respuestas si te piden rebaja. | `/presupuesto-cliente` |
 | presupuesto-condiciones | Comando / | Convierte una descripción rápida de un trabajo en un presupuesto listo para enviar, con alcance cerrado, lo que no entra, forma de pago, validez y condiciones de cambios y cancelación. | `/presupuesto-condiciones` |

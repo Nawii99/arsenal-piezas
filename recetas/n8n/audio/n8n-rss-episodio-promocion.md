@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Música y audio · **Licencia:** CC BY 4.0
 
-Receta de n8n que, al publicar un episodio nuevo en tu alojamiento, genera la descripción para YouTube y tres posts de promoción con una IA de texto (Claude, Codex, Gemini o una IA local) y los guarda en un Google Doc.
+Receta de n8n: cuando publicas un episodio nuevo en tu alojamiento de podcast, genera solo el borrador de descripción para YouTube y los posts de promoción, los guarda en Docs y avisa.
 
 ## Qué es y qué hace
 

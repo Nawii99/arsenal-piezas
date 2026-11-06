@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
-Cruza la previsión y los datos de AEMET con la humedad medida en el suelo para decidir cada día cuántos minutos regar, o si no regar nada.
+Cruza la previsión y los datos de AEMET con la humedad medida en el suelo para decidir cada día cuántos minutos regar, o si no regar nada. Para viveros, huertos y jardines de comunidades.
 
 ## Qué es y qué hace
 

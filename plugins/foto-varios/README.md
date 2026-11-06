@@ -17,7 +17,7 @@ Foto e imagen · Más de foto e imagen: 9 subagentes, 5 skills, 3 comandos / en 
 | antes-y-despues | Comando / | Monta comparativas de antes y después creíbles y honestas para servicios: reformas, estética, limpieza, restauración o formación. | `/antes-y-despues` |
 | rescatar-fotos-movil | Comando / | Diagnostica una foto mala hecha con el móvil, te dice si tiene arreglo y te da el plan de retoque paso a paso con herramientas gratis. | `/rescatar-fotos-movil` |
 | antes-despues-honesto | Skill | Monta comparativas de antes y después creíbles y legales para servicios: reformas, estética, peluquería, limpieza, talleres o entrenamiento. | se activa sola cuando hace falta |
-| cartel-con-texto | Skill | Genera carteles, promos y portadas donde el texto sale bien escrito dentro de la imagen, con jerarquía y contraste legibles. | se activa sola cuando hace falta |
+| cartel-con-texto-skill | Skill | Genera carteles, promos y portadas donde el texto sale bien escrito dentro de la imagen, con jerarquía y contraste legibles. | se activa sola cuando hace falta |
 | modelo-recurrente-ia | Skill | Consigue que el mismo personaje, modelo o mascota de marca aparezca reconocible en todas tus imágenes generadas. | se activa sola cuando hace falta |
 | reencuadre-multiformato | Skill | Adapta una misma imagen a todos los formatos (1:1, 4:5, 9:16, 16:9, banner) sin cortar lo importante ni deformar nada. | se activa sola cuando hace falta |
 | rescatar-foto-mala | Skill | Diagnostica una foto mala y te dice qué se puede arreglar, cómo hacerlo gratis y cuándo sale más a cuenta repetirla. | se activa sola cuando hace falta |

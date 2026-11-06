@@ -21,7 +21,7 @@ Cuando vayas a escribir las instrucciones de un asistente, por ejemplo uno de so
 
 ## Cómo ganar dinero con ella
 
-Formación para equipos técnicos o de soporte: enseñas a leer, redactar y probar prompts de sistema, con ejemplos propios o públicos.
+Formación para equipos técnicos o de soporte: enseñas a leer, redactar y probar prompts de sistema, con ejemplos propios o públicos. Cobra por sesión o por revisión.
 
 - Formación para equipos de soporte sobre cómo leer y redactar instrucciones de asistentes, a precio por sesión.
 - Revisión de las instrucciones de un asistente de atención al cliente antes de publicarlo.

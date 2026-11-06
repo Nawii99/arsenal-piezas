@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Flujo de n8n que cuando alguien compra o se inscribe en tu curso, lo da de alta en una hoja de alumnos de Google Sheets, le envía un email de bienvenida con sus accesos y lo añade al calendario de clases en directo.
+Cuando alguien se apunta a tu curso por un formulario o por Stripe, se le da de alta en tu hoja de alumnos, se le envía el email de bienvenida con sus accesos y se le añade al calendario.
 
 ## Qué es y qué hace
 

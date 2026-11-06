@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
-Lleva la cuenta de a quién le diste una key de tu juego, comprueba sola si ese canal ya ha publicado algo y te avisa de quién no ha dado señales.
+Lleva la cuenta de a quién le diste una key de tu juego, comprueba sola si ese canal ya ha publicado algo y te avisa de quién no ha dado señales. Para lanzamientos indie con claves.
 
 ## Qué es y qué hace
 

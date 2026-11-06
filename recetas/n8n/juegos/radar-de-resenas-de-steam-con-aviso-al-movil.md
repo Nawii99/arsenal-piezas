@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
-Vigila cada hora las reseñas nuevas de tu juego en Steam, las guarda en una hoja y te avisa por Telegram cuando entra una negativa.
+Vigila cada hora las reseñas nuevas de tu juego en Steam, las guarda en una hoja y te avisa por Telegram cuando entra una negativa. Pensado para estudios indie.
 
 ## Qué es y qué hace
 

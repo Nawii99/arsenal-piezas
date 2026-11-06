@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
-Cada noche revisa las citas de las próximas 48 horas y calcula una puntuación de riesgo de plantón por paciente a partir de su historial.
+Puntúa a cada paciente según su historial de plantones, cancelaciones tardías y antigüedad de la reserva, y refuerza el recordatorio solo con los de riesgo alto, pidiéndoles confirmación.
 
 ## Qué es y qué hace
 

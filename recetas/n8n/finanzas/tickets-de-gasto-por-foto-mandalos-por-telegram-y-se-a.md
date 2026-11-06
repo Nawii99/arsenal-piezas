@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
-Envías la foto de un ticket a un bot privado de Telegram; un modelo con visión lee comercio, fecha, base, IVA y total, lo clasifica en una categoría, guarda la imagen en Drive y añade la fila a tu hoja de gastos.
+Haces una foto al ticket del bar, la gasolina o la ferretería, se la mandas a un bot de Telegram y en segundos está guardada en Drive y apuntada en tu hoja con importe, IVA y categoría.
 
 ## Qué es y qué hace
 

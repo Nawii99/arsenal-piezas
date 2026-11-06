@@ -20,7 +20,7 @@ Cuando tengas que explicar un proyecto en una entrevista o escribir su README y 
 
 ## Cómo ganar dinero con ella
 
-Ayudas a otras personas a documentar y contar sus proyectos de portfolio: README, relato de 90 segundos y preguntas de entrevista.
+Ayudas a otras personas a documentar y contar sus proyectos de portfolio: README, relato de 90 segundos y preguntas de entrevista. Cobra por proyecto: [TU PRECIO].
 
 - Documentación de proyectos de portfolio para personas que se presentan a puestos técnicos o creativos, por proyecto.
 - Sesión para explicar un proyecto en entrevista con relato y preguntas de práctica.

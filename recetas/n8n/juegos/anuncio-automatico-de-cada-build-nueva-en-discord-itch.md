@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
-En cuanto publicas una release en GitHub, tu comunidad se entera: post en Discord con las notas de la versión, aviso en la devlog y correo a tu lista.
+En cuanto publicas una release en GitHub, tu comunidad se entera: post en Discord con las notas de la versión, aviso en la devlog y correo a tu lista. Para quien publica builds.
 
 ## Qué es y qué hace
 

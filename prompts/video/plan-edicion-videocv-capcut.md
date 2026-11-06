@@ -2,7 +2,7 @@
 
 **Tipo:** Prompt · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
-Prompt para pegar en Claude que explica, paso a paso y para quien nunca ha editado, cómo montar las tomas de un vídeo currículum en CapCut en el móvil: cortes, subtítulos, exportación y dónde subir el archivo.
+Pega este prompt y te devuelve, paso a paso y para alguien que nunca ha editado, cómo montar las tomas de tu vídeo currículum en CapCut en el móvil: cortes, subtítulos y exportación.
 
 ## Qué es y qué hace
 

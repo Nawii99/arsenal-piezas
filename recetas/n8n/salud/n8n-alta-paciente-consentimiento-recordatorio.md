@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
-Flujo en n8n que recoge el alta de un paciente nuevo, le envía la hoja de datos y el consentimiento antes de la cita, registra la aceptación y manda el recordatorio.
+Flujo en n8n que recoge el alta de un paciente nuevo, le envía la hoja de datos y el consentimiento antes de la cita, registra la aceptación y manda el recordatorio. Se monta una vez.
 
 ## Qué es y qué hace
 

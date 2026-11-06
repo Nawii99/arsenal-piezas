@@ -21,7 +21,7 @@ Cuando tengas un local con gente dentro: consulta, aula, gimnasio, sala de reuni
 
 ## Cómo ganar dinero con ella
 
-Un local con 1.500 ppm de CO2 baja la concentración y el humor del cliente.
+Un local con 1.500 ppm de CO2 baja la concentración y el humor del cliente. Además evita ventilar de más en invierno, que es tirar la calefacción por la ventana.
 
 - Instalación de medición de CO2 y control de extractor para gimnasios, aulas o peluquerías, con puesta en marcha.
 - Informe semanal de calidad del aire por local para cadenas pequeñas o coworkings, por cuota.

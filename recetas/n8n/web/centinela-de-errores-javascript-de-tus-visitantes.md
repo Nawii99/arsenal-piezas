@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Recoge los errores de JavaScript y las promesas no capturadas de los visitantes reales y los centraliza con un webhook de n8n.
+Un fragmento de código en tu web envía a n8n cualquier error de JavaScript que sufra un visitante real; el flujo los agrupa por huella, ignora el ruido conocido y avisa solo la primera vez.
 
 ## Qué es y qué hace
 

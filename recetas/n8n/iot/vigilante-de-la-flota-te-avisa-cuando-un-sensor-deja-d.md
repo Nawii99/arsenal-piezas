@@ -21,7 +21,7 @@ Cuando ya tengas cuatro o más cacharros (sensores, enchufes, cámaras, báscula
 
 ## Cómo ganar dinero con ella
 
-Evita el escenario clásico: descubrir que el sensor de la cámara frigorífica llevaba un mes caído justo el día que se estropea el motor.
+Evita el escenario clásico: descubrir que el sensor de la cámara frigorífica llevaba un mes caído justo el día que se estropea el motor. Ahí hay 500-2.000 € de género.
 
 - Configuración de monitorización para negocios con sensores y cámaras, con panel de estado y aviso por Telegram.
 - Mantenimiento mensual de la flota IoT del cliente, con revisión de batería y firmware, cobrado por cuota.

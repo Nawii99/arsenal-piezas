@@ -17,7 +17,7 @@ Automatiza el envío del cuestionario de salud y el consentimiento RGPD a cada p
 
 ## Cuándo usarla
 
-Cuando trabajas con primeras visitas (fisio, nutrición, psicología, entrenamiento personal) y pierdes 15 minutos de sesión rellenando papeles o descubres alergias y limitaciones cuando el cliente ya e…
+Cuando trabajas con primeras visitas (fisio, nutrición, psicología, entrenamiento personal) y pierdes 15 minutos de sesión rellenando papeles o descubres alergias y limitaciones demasiado tarde.
 
 ## Cómo ganar dinero con ella
 

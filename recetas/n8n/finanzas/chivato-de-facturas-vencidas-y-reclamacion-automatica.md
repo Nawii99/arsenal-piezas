@@ -21,7 +21,7 @@ Cada mañana a las 9:00 revisa la hoja de facturas emitidas de Google Sheets, bu
 
 ## Cómo ganar dinero con ella
 
-Recuperas antes el dinero que ya has facturado y te ahorras entre 2 y 4 horas al mes persiguiendo cobros.
+Recuperas antes el dinero que ya has facturado y te ahorras entre 2 y 4 horas al mes persiguiendo cobros. Cada factura cobrada 20 días antes es tesorería propia.
 
 - Seguimiento de cobros para despachos y estudios que facturan a empresas a 30 o 60 días.
 - Reclamación escalonada mensual para autónomos con varios impagados abiertos.

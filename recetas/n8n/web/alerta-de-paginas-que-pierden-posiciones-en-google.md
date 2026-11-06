@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Cada lunes compara los últimos 28 días con los 28 anteriores en Search Console y te avisa de las páginas que han perdido clics o posiciones.
+Cada lunes compara los últimos 28 días con los 28 anteriores en Search Console y te avisa de las páginas que han perdido clics o posiciones. Para quien vive del tráfico orgánico.
 
 ## Qué es y qué hace
 

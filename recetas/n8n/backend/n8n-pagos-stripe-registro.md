@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
-Receta de n8n: cuando Stripe cobra una factura, la apunta en una hoja de Google con número, cliente, NIF, base, IVA, total y enlace al PDF, y te avisa por Telegram.
+Receta de n8n: cuando Stripe cobra una factura, la apunta en una hoja de Google con número, cliente, NIF, base, IVA, total y enlace al PDF, y te avisa por Telegram si un cobro falla.
 
 ## Qué es y qué hace
 

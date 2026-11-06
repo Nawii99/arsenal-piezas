@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Cada domingo recorre una hoja con los enlaces, vídeos, PDFs y normativa de tus cursos, comprueba cuáles responden y cuánto tiempo llevan sin revisarse.
+Revisa cada semana todos los enlaces, vídeos y documentos de tus cursos, detecta los que ya no funcionan o llevan demasiado tiempo sin actualizar, y te manda la lista de arreglos.
 
 ## Qué es y qué hace
 

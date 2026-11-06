@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
-Cada modelo que terminas se convierte solo en un vídeo giratorio de 8 segundos con fondo de estudio, listo para Instagram, ArtStation o tu tienda.
+Cada modelo que terminas se convierte solo en un vídeo giratorio de 8 segundos con fondo de estudio, listo para Instagram, ArtStation o tu tienda. Para el artista 3D.
 
 ## Qué es y qué hace
 

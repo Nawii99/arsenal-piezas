@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 
-Coges una foto de una carpeta, la IA escribe el pie y los hashtags según tu estilo y se publica sola a la hora buena.
+Coges una foto de una carpeta, la IA escribe el pie y los hashtags según tu estilo y se publica sola a la hora buena. Para fotógrafos y marcas que quieren presencia en Instagram.
 
 ## Qué es y qué hace
 

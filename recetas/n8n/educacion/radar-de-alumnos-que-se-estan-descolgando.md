@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Cada lunes revisa quién no entra a la plataforma ni entrega desde hace días, calcula un semáforo de riesgo y avisa al tutor con la lista y un email de rescate ya redactado.
+Cada lunes revisa quién no entra a la plataforma ni entrega desde hace días, calcula un semáforo de riesgo y avisa al tutor con la lista y un email de rescate ya redactado. Para academias.
 
 ## Qué es y qué hace
 

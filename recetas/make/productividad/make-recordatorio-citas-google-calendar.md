@@ -21,7 +21,7 @@ Escenario de Make (make.com) que cada hora busca en Google Calendar las citas qu
 
 ## Cómo ganar dinero con ella
 
-Cobra [TU PRECIO] por montarla y por redactar con el cliente el texto del recordatorio.
+Cobra [TU PRECIO] por montarla y redactar con el cliente el texto del recordatorio. Ofrece [TU PRECIO] al mes por revisar que los recordatorios salen y ajustar horarios.
 
 - Recordatorios de cita para peluquerías, consultas o talleres que pierden clientes por olvidos.
 - Mantenimiento mensual de los avisos, con revisión del texto y de los horarios de envío.

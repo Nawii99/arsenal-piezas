@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
-Receta de n8n que recoge los datos de un cliente por formulario, calcula su plan de calorías y macros, genera menú y lista de la compra, y los envía solo si el pago se ha confirmado.
+Receta de n8n que recoge los datos de un cliente por formulario, calcula su plan de calorías y macros, genera el menú y la lista de la compra, y solo los envía si el pago se ha confirmado.
 
 ## Qué es y qué hace
 

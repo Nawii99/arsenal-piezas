@@ -20,7 +20,7 @@ Cuando ya tienes o vas a montar un riego con relé WiFi y quieres dejar de pensa
 
 ## Cómo ganar dinero con ella
 
-Automatización que puedes instalar y cobrar a comunidades, huertos, segundas residencias.
+Automatización que puedes instalar y cobrar a comunidades, huertos y segundas residencias. El material es del cliente; tú cobras montaje, configuración y una cuota fija.
 
 - Riego automático para huertos y jardines de comunidades pequeñas, por instalación…
 - Mantenimiento mensual del riego y revisión de avisos, por mes…

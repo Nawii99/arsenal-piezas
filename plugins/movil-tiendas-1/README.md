@@ -28,16 +28,16 @@ Móvil · Publicar en las tiendas (1): 13 skills, 13 comandos /, 2 subagentes en
 | suscripcion-app | Comando / | Define los planes, precios y textos de las suscripciones o compras dentro de tu app, contando la comisión de las tiendas y sus reglas. | `/suscripcion-app` |
 | apelar-rechazo-app | Skill | Descifra el rechazo de Apple o Google, te dice qué hay que cambiar de verdad y redacta la respuesta al equipo de revisión para desbloquear tu app. | se activa sola cuando hace falta |
 | beta-cerrada-testers | Skill | Monta tu fase de pruebas con usuarios reales antes de publicar: a quién invitar, cómo enviarles la app y cómo recoger opiniones que sirvan. | se activa sola cuando hace falta |
-| capturas-tienda | Skill | Diseña las capturas y el texto que las acompaña para la ficha de tu app, que es lo que de verdad decide si la instalan. | se activa sola cuando hace falta |
 | capturas-tienda-apps | Skill | Diseña el juego de capturas y el vídeo de la ficha de tu app: orden, textos encima, medidas exactas y prompts para montarlas aunque no sepas diseñar. | se activa sola cuando hace falta |
+| capturas-tienda-skill | Skill | Diseña las capturas y el texto que las acompaña para la ficha de tu app, que es lo que de verdad decide si la instalan. | se activa sola cuando hace falta |
 | ficha-tienda-apps | Skill | Escribe la ficha de tu app para App Store y Google Play: título, subtítulo, palabras clave y descripciones, con los límites y trucos reales de cada tienda. | se activa sola cuando hace falta |
 | paywall-suscripcion | Skill | Monta el muro de pago de tu app: qué se cobra, qué precios, qué prueba gratis y qué pantalla enseñar, contando la comisión de la tienda. | se activa sola cuando hace falta |
 | paywall-suscripcion-app | Skill | Diseña el modelo de cobro de tu app y la pantalla de pago: qué es gratis, qué se paga, precios, prueba y el texto exacto del paywall. | se activa sola cuando hace falta |
 | privacidad-permisos-app | Skill | Prepara la parte legal y de privacidad de tu app: qué datos declaras en cada tienda, la política de privacidad y cómo pedir permisos sin que te rechacen. | se activa sola cuando hace falta |
 | pruebas-antes-publicar-app | Skill | La checklist de pruebas que haces a mano antes de publicar tu app o actualización. | se activa sola cuando hace falta |
 | publicar-google-play | Skill | Te lleva de la mano para publicar tu app en Google Play: cuenta, verificación, periodo de pruebas cerradas obligatorio, ficha y envío. | se activa sola cuando hace falta |
-| rechazo-tienda-apps | Skill | Descifra el rechazo de Apple o Google, te dice qué arreglar de verdad y te escribe la respuesta al revisor para desatascarlo. | se activa sola cuando hace falta |
-| resenas-app | Skill | Consigue valoraciones buenas en las tiendas y responde bien a las malas, con el momento y los textos exactos. | se activa sola cuando hace falta |
+| rechazo-tienda-apps-skill | Skill | Descifra el rechazo de Apple o Google, te dice qué arreglar de verdad y te escribe la respuesta al revisor para desatascarlo. | se activa sola cuando hace falta |
+| resenas-app-skill | Skill | Consigue valoraciones buenas en las tiendas y responde bien a las malas, con el momento y los textos exactos. | se activa sola cuando hace falta |
 | web-a-app-pwa | Skill | Convierte tu web o landing en una app instalable en el móvil (PWA) sin pasar por las tiendas: icono en la pantalla de inicio, pantalla completa y modo sin conexión. | se activa sola cuando hace falta |
 | analista-resenas-app | Subagente | Lee todas las reseñas de tu app, saca los problemas reales ordenados por impacto y te escribe las respuestas. | pídele a Claude «usa el subagente analista-resenas-app» |
 | arquitecto-paywall-movil | Subagente | Diseña la pantalla de suscripción o compra dentro de tu app: precios, textos, requisitos obligatorios y cómo evitar el rechazo. | pídele a Claude «usa el subagente arquitecto-paywall-movil» |

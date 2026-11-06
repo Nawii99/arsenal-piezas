@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
-Cuando subes código a la rama principal, ejecuta los tests, despliega en tu servidor, comprueba que la web sigue viva y, si no, vuelve atrás sola.
+Cuando subes código a la rama principal, ejecuta los tests, despliega en tu servidor, comprueba que la web sigue viva y, si no, vuelve atrás sola. Para quien despliega a mano por FTP o SSH.
 
 ## Qué es y qué hace
 

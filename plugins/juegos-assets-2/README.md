@@ -15,7 +15,7 @@ Videojuegos y 3D · Modelos, texturas y assets (2): 10 subagentes, 7 skills en e
 |---|---|---|---|
 | publicar-build-web-itch | Skill | Empaqueta tu juego para navegador y lo publica en itch.io: ajustes de exportación, tamaño de ventana, compresión y los fallos que dejan la pantalla en negro. | se activa sola cuando hace falta |
 | publicar-pack-assets-3d | Skill | Prepara y publica un pack de modelos 3D para venderlo en tiendas de assets, con los requisitos técnicos que piden. | se activa sola cuando hace falta |
-| revisar-licencias-assets | Skill | Revisa si los assets (arte, música, sonido, fuentes, código) que usas en tu juego tienen licencia para venderlo, y qué exige cada tipo. | se activa sola cuando hace falta |
+| revisar-licencias-assets | Skill | Revisa si los assets (arte, música, sonido, fuentes, código) que usas en tu juego tienen licencia para venderlo, y qué exige cada tipo. Para quien empieza y no distingue licencias. | se activa sola cuando hace falta |
 | revisor-licencias-assets | Skill | Revisa las licencias de los assets (arte, musica, sonido, codigo, fuentes) que usa tu juego y te dice si puedes venderlo sin riesgo legal. | se activa sola cuando hace falta |
 | rig-personaje-para-animar | Skill | Prepara un personaje 3D para que se anime solo con Mixamo o animaciones compradas, y arregla los fallos típicos de deformación. | se activa sola cuando hace falta |
 | stl-impresion-3d | Skill | Prepara un modelo 3D para que se imprima bien y se pueda vender como archivo: grosores, escala, cortes, soportes y comprobaciones. | se activa sola cuando hace falta |

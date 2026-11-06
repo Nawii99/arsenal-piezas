@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Recoge las entregas de tus alumnos, las pasa por una rúbrica que tú defines, devuelve una nota justificada y un comentario personalizado por email, y deja todo registrado.
+Recoge las entregas de tus alumnos, las pasa por una rúbrica que tú defines, devuelve una nota justificada y un comentario personalizado por email, y deja todo registrado. Para formadores.
 
 ## Qué es y qué hace
 

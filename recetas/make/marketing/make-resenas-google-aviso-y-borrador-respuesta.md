@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Marketing · **Licencia:** CC BY 4.0
 
-Escenario de Make (make.com) que detecta reseñas nuevas de tu ficha de Google, las anota en una hoja, te avisa por correo y, si tienen de 1 a 3 estrellas, prepara una propuesta de respuesta con una IA de texto.
+Un escenario de Make (make.com) que detecta reseñas nuevas de tu ficha de Google, las apunta en una hoja, te avisa por correo y prepara un borrador de respuesta para las de 1 a 3 estrellas.
 
 ## Qué es y qué hace
 
@@ -21,7 +21,7 @@ Escenario de Make (make.com) que detecta reseñas nuevas de tu ficha de Google, 
 
 ## Cómo ganar dinero con ella
 
-Cobra [TU PRECIO] por montarla y por escribir con el cliente la guía de tono para las respuestas.
+Cobra [TU PRECIO] por montarla y por escribir con el cliente la guía de tono para las respuestas. Ofrece [TU PRECIO] al mes por revisar los avisos y mantener la conexión.
 
 - Gestión de reseñas para restaurantes, talleres o clínicas con respuestas revisadas antes de publicar.
 - Informe mensual de reseñas por local para cadenas pequeñas: valoración media y temas repetidos.

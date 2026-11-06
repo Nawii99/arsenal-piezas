@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Un formulario público recoge el briefing del proyecto, calcula el precio con tus reglas y envía al cliente un PDF con la propuesta en menos de un minuto.
+Un formulario público recoge el briefing del proyecto, calcula el precio con tus reglas y envía al cliente un PDF con la propuesta en menos de un minuto. Para freelances y agencias.
 
 ## Qué es y qué hace
 

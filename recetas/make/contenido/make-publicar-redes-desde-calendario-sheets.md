@@ -21,7 +21,7 @@ Escenario de Make (make.com) que cada día publica en Facebook e Instagram los p
 
 ## Cómo ganar dinero con ella
 
-Cobra [TU PRECIO] por montar la hoja de calendario y el escenario con las cuentas del cliente.
+Cobra [TU PRECIO] por montar la hoja de calendario y el escenario. Ofrece [TU PRECIO] al mes por llevar el calendario y revisar que las publicaciones salen.
 
 - Calendario de redes de un bar, tienda o estudio con posts aprobados por el dueño antes de publicar.
 - Mantenimiento mensual de la programación: preparar textos, revisar imágenes y comprobar publicaciones.

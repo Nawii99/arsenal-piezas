@@ -8,7 +8,7 @@
 
 The pieces are written in Spanish; Claude understands them and can answer in English if you ask it to.
 
-**147 of the best pieces are already translated into English**: see [en/](en/README.md), or install them in Claude Code with `/plugin install arsenal-en@arsenal`.
+**147 of the best pieces are already translated into English**: see [en/](en/README.md), or install them in Claude Code with the small `arsenal-en-…` plugins listed there.
 Every piece has an English one-line description in [`catalogo.json`](catalogo.json) (`description_en`).
 
 ## Install in Claude Code

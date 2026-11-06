@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
-Flujo de n8n que cada noche compara el consumo medio de una máquina con la media de las cuatro semanas anteriores del mismo día de la semana.
+Mide el consumo de una máquina y avisa cuando su gasto sube de forma sostenida respecto a semanas anteriores, que suele ser la señal de un rodamiento, un filtro o un motor que falla.
 
 ## Qué es y qué hace
 

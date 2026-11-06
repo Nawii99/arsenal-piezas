@@ -21,7 +21,7 @@ Cuando tu base de datos crezca sin control, las consultas empiecen a ir lentas o
 
 ## Cómo ganar dinero con ella
 
-Retrasa años el salto al siguiente plan de base de datos (de 25 a 100 euros al mes) y mantiene las consultas rápidas, que es lo que hace que tu web no dé sensación de len…
+Retrasa años el salto al siguiente plan de base de datos (de 25 a 100 euros al mes) y mantiene las consultas rápidas, que es lo que hace que tu web no vaya lenta.
 
 - Mantenimiento de bases de datos para apps con crecimiento descontrolado de logs.
 - Optimización de consultas para tiendas online lentas por tablas de carritos.

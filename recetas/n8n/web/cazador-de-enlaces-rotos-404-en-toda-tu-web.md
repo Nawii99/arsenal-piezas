@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Rastrea tu sitemap, extrae todos los enlaces de cada página y comprueba uno a uno cuáles dan error, apuntando en qué página está cada enlace roto.
+Rastrea tu sitemap, extrae todos los enlaces de cada página y comprueba uno a uno cuáles dan error, apuntando en qué página está cada enlace roto. Para webs con blog, catálogo.
 
 ## Qué es y qué hace
 

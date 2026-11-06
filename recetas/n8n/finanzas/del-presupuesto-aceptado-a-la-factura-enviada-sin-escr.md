@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
-Cuando un cliente acepta tu presupuesto desde un formulario, se genera la factura en PDF con su numeración correlativa, se guarda en Drive y se le envía por correo.
+Cuando un cliente acepta tu presupuesto desde un formulario, se genera la factura en PDF con su numeración correlativa, se guarda en Drive y se le envía por correo. Todo en un minuto.
 
 ## Qué es y qué hace
 

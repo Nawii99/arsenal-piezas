@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
-Flujo de n8n que cada semana recorre tu red en un rango de IPs, pregunta a cada dispositivo conocido su modelo y versión de firmware y actualiza una hoja de inventario.
+Mantiene solo la lista de todos tus cacharros conectados, con su modelo, versión de firmware y dónde está cada uno, y te avisa cuando sale una actualización o un fallo de seguridad.
 
 ## Qué es y qué hace
 

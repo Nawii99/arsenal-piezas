@@ -2,7 +2,7 @@
 
 **Tipo:** Prompt · **Área:** Música y audio · **Licencia:** CC BY 4.0
 
-Texto para pegar en un generador de música con IA como Suno o Udio que pide una pista instrumental de fondo para un vídeo: estilo, ánimo, tempo, instrumentos, duración en bucle y sin picos que tapen una voz en off.
+Prompt para pegar en un generador de música con IA (Suno, Udio) y conseguir una pista instrumental de fondo para un vídeo, sin contratar a un compositor ni usar bancos de música.
 
 ## Qué es y qué hace
 

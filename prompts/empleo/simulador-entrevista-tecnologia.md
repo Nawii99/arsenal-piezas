@@ -20,7 +20,7 @@ Cuando la oferta pida una tecnología o herramienta concreta (SQL, Python, Excel
 
 ## Cómo ganar dinero con ella
 
-Das sesiones de práctica por tecnología: preparas la sesión con este prompt, la haces con la persona y le entregas el informe final revisado por ti.
+Das sesiones de práctica por tecnología: preparas la sesión con este prompt, la haces con la persona y le entregas el informe revisado. Cobra por sesión [TU PRECIO].
 
 - Sesiones de práctica de entrevistas técnicas por tecnología para personas que se presentan a puestos digitales.
 - Informe de preparación entregado tras revisar la sesión, a precio por sesión.

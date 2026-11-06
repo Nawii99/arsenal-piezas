@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
-Recibe reportes de un formulario de Tally con texto, versión, sistema y captura, crea una tarjeta en Trello con esos datos y agrupa los reportes repetidos.
+Los jugadores rellenan un formulario con el bug, se crea la tarjeta en tu tablero con la versión y el hardware, se agrupan los reportes repetidos y te avisa por Discord si un bug se repite.
 
 ## Qué es y qué hace
 

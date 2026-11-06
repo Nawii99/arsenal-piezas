@@ -22,7 +22,7 @@ Calcula con tus facturas emitidas y tus gastos del trimestre en curso cuánto IV
 
 ## Cómo ganar dinero con ella
 
-Evita recargos por aplazamiento (que empiezan en un 5% y llegan al 20%) y el clásico agujero de tesorería del trimestre.
+Evita recargos por aplazamiento (que empiezan en un 5% y llegan al 20%) y el clásico agujero de tesorería del trimestre. En 40.000 € de facturación son 400-1.600 €.
 
 - Previsión fiscal trimestral como servicio para autónomos en estimación directa…
 - Control de la hucha de impuestos para microempresas que facturan con IVA…

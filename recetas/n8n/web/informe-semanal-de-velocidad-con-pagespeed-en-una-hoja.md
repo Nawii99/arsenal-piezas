@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Cada lunes mide tus páginas clave con la API oficial de Google PageSpeed, guarda las puntuaciones en una hoja y te avisa si alguna cae por debajo de 70.
+Cada lunes mide tus páginas clave con la API oficial de Google PageSpeed, guarda las puntuaciones en una hoja y te avisa si alguna cae por debajo de 70. Para quien cuida la velocidad.
 
 ## Qué es y qué hace
 

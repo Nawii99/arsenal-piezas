@@ -21,7 +21,7 @@ Cuando un alumno aparece como finalizado en la hoja, n8n duplica una plantilla d
 
 ## Cómo ganar dinero con ella
 
-Cinco minutos por diploma que desaparecen.
+Cinco minutos por diploma que desaparecen. Con 30 alumnos por convocatoria son 2,5 horas, y encima el alumno lo recibe al instante y lo comparte en LinkedIn (gratis).
 
 - Montaje de diplomas automáticos para academias y escuelas de idiomas, con plantilla y prueba incluida.
 - Emisión mensual de certificados para formadores que trabajan por convocatoria, cobrada por lote.

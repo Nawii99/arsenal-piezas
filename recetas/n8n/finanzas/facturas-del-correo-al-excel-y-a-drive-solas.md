@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
-Cada factura que llega a tu correo se guarda en una carpeta de Drive y se apunta sola en una hoja de cálculo con proveedor, fecha, base, IVA y total.
+Cada factura que llega a tu correo se guarda en una carpeta de Drive y se apunta sola en una hoja de cálculo con proveedor, fecha, base, IVA y total. Para autónomos y negocios pequeños.
 
 ## Qué es y qué hace
 

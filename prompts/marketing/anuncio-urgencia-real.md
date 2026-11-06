@@ -21,7 +21,7 @@ Cuando tienes una oferta con fecha o plazas limitadas de verdad y necesitas text
 
 ## Cómo ganar dinero con ella
 
-Vende packs de textos de campaña a tiendas online, academias o autónomos con ofertas por temporada, a un precio por pack ([TU TARIFA]).
+Vende packs de textos de campaña a tiendas online, academias o autónomos con ofertas por temporada, a un precio por pack ([TU TARIFA]), con la tabla de comprobación.
 
 - Escribir textos de campaña de temporada para tiendas online con plazas o fechas verificables…
 - Preparar anuncios de lanzamiento para academias que tienen plazas limitadas de verdad…

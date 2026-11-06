@@ -21,7 +21,7 @@ Dos días después de terminar el curso envía una encuesta de satisfacción con
 
 ## Cómo ganar dinero con ella
 
-Multiplica las reseñas positivas, que es lo que trae matrículas nuevas, y evita las malas atendiendo antes.
+Multiplica las reseñas positivas, que es lo que trae matrículas nuevas, y evita las malas atendiendo antes. Una reseña mala en una academia local cuesta matrículas.
 
 - Puesta en marcha de encuesta y reseñas para academias, con NPS mensual en una hoja.
 - Gestión mensual de reseñas y alertas para un centro que recibe valoraciones de varios cursos.

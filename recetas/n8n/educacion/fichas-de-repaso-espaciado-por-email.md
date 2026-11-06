@@ -21,7 +21,7 @@ Cuando tus alumnos se olvidan de lo aprendido en dos semanas y quieres que el co
 
 ## Cómo ganar dinero con ella
 
-Multiplica la retención y convierte tu curso en algo que se recuerda, lo que se traduce en mejores reseñas y más recomendaciones.
+Multiplica la retención y convierte tu curso en algo que se recuerda, lo que se traduce en mejores reseñas y más recomendaciones. Sustituye a herramientas de pago.
 
 - Repaso espaciado para academias de idiomas, oposiciones o formación sanitaria con mucho concepto.
 - Material de fijación para formadores de empresa que quieren que la formación se recuerde.

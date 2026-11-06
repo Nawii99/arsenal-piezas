@@ -21,7 +21,7 @@ Cuando tengas un local o nave donde la luz se va de vez en cuando, tengas un SAI
 
 ## Cómo ganar dinero con ella
 
-Un NAS o un ordenador apagados a lo bruto pierden datos y acaban en 200-800 € de recuperación.
+Un NAS o un ordenador apagados a lo bruto pierden datos y acaban en 200-800 € de recuperación. Y el registro escrito de los cortes es lo que exige la distribuidora.
 
 - Instalación de apagado ordenado y registro de cortes para oficinas o naves con NAS, cobrada por equipo.
 - Revisión trimestral de los SAI y pruebas del apagado automático para pymes, por cuota.

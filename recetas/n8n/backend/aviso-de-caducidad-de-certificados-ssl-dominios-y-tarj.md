@@ -21,7 +21,7 @@ Cuando gestiones más de un dominio o web, tuya o de clientes, y no lleves un co
 
 ## Cómo ganar dinero con ella
 
-Un día de web caída por un certificado caducado te cuesta ventas y confianza; el aviso vale cero euros y sustituye herramientas de monitorización de certificados de 10-30…
+Un día de web caída por un certificado caducado te cuesta ventas y confianza; el aviso vale cero euros y sustituye herramientas de monitorización de certificados de pago.
 
 - Control de renovaciones para agencias con webs de clientes.
 - Vigilancia de certificados para tiendas con varios subdominios.

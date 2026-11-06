@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
-Vigila la potencia total que estás consumiendo y, antes de llegar a la contratada, apaga por orden de prioridad las cargas que no son críticas.
+Vigila la potencia total que estás consumiendo y, antes de llegar a la contratada, apaga por orden de prioridad las cargas que no son críticas. Para talleres, obradores y locales.
 
 ## Qué es y qué hace
 

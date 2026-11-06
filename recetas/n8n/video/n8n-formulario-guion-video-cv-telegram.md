@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
-El cliente rellena un formulario con su CV y la oferta, Claude escribe el guion, se guarda en Google Docs y te llega al móvil por Telegram para revisarlo.
+El cliente rellena un formulario con su CV y la oferta, Claude escribe el guion, se guarda en Google Docs y te llega al móvil por Telegram para revisarlo. Para quien ofrece vídeo currículum.
 
 ## Qué es y qué hace
 

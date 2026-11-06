@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Cuando un alumno termina un tema, le programa automáticamente tres emails de repaso (a los 2, 7 y 21 días) con preguntas de ese tema y el enlace para repasar.
+Cuando un alumno termina un tema, le programa automáticamente tres emails de repaso (a los 2, 7 y 21 días) con preguntas de ese tema y el enlace para repasar. Para academias de oposiciones.
 
 ## Qué es y qué hace
 

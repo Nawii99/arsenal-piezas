@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
-Consulta cada día el precio horario de la luz (PVPC) y programa tus aparatos de consumo alto para que se enciendan en el tramo más barato.
+Consulta cada día el precio horario de la luz (PVPC) y programa tus aparatos de consumo alto para que se enciendan en el tramo más barato. Para talleres, obradores y lavanderías.
 
 ## Qué es y qué hace
 

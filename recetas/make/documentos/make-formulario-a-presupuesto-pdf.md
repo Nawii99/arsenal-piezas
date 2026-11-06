@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Documentos · **Licencia:** CC BY 4.0
 
-Escenario de Make (make.com) que convierte cada respuesta de un Google Form de presupuesto en un documento de Google Docs desde tu plantilla, lo pasa a PDF, busca el precio en una hoja de tarifas y deja un borrador en Gmail.
+Un escenario de Make (make.com) que convierte cada respuesta de Google Form en un documento de presupuesto desde una plantilla, lo pasa a PDF y deja borrador en Gmail para que lo revises.
 
 ## Qué es y qué hace
 

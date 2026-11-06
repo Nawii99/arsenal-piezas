@@ -23,7 +23,7 @@ IoT y hardware · Sensores y cámaras (2): 10 subagentes, 3 skills en español, 
 | detective-falsas-alarmas | Subagente | Subagente que investiga por qué tu automatización se dispara sola o no se dispara, y te devuelve la regla corregida. | pídele a Claude «usa el subagente detective-falsas-alarmas» |
 | diagnostico-iot | Subagente | Tu cámara, sensor o riego dejó de funcionar. Te guía paso a paso antes de que compres nada: alimentación, WiFi, configuración. | pídele a Claude «usa el subagente diagnostico-iot» |
 | escritor-esphome | Subagente | Escribe la configuración YAML de ESPHome para tu sensor o control, ya calibrada y comentada. | pídele a Claude «usa el subagente escritor-esphome» |
-| revisor-riego-automatico | Subagente | Es un subagente que revisa la lista de piezas, el esquema y el código de un riego automático casero (ESP32, sensor de humedad, relé, bomba) antes de dejarlo funcionando solo. | pídele a Claude «usa el subagente revisor-riego-automatico» |
+| revisor-riego-automatico | Subagente | Revisa la lista de piezas, el esquema y el código de un riego automático casero (ESP32, sensor de humedad, relé, bomba) y dice qué es peligroso, qué va a fallar y qué está bien. | pídele a Claude «usa el subagente revisor-riego-automatico» |
 | seleccionador-componentes | Subagente | Subagente que elige los componentes de tu prototipo electrónico, saca la lista de compra con alternativas y detecta lo que no encaja. | pídele a Claude «usa el subagente seleccionador-componentes» |
 | traductor-de-datasheet | Subagente | Lee la hoja de datos de un sensor y te da conexionado, avisos de tensión y código mínimo que funciona. | pídele a Claude «usa el subagente traductor-de-datasheet» |
 

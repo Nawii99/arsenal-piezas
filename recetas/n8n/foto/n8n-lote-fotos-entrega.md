@@ -20,7 +20,7 @@ Cuando entregas sesiones de 50 o 200 fotos a negocios pequeños y se te va la ta
 
 ## Cómo ganar dinero con ella
 
-No se vende sola: es tu margen. Te ahorra 1-2 horas por entrega.
+No se vende sola: es tu margen. Te ahorra 1-2 horas por entrega. Si la montas para otro fotógrafo o tienda, 250-400 euros de instalación y 30-50 euros al mes.
 
 - Entrega automática de sesiones de 50 a 200 fotos para negocios pequeños.
 - Servicio de revelado y entrega para otros fotógrafos que no quieren perder la tarde.

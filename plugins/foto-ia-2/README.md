@@ -13,8 +13,8 @@ Foto e imagen · Imágenes con IA (2): 14 subagentes, 3 skills en español, del 
 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
-| optimizar-imagenes-web | Skill | Convierte tus fotos en imágenes web ligeras y nítidas: tamaños, formatos, compresión y el HTML correcto para que la página cargue rápida. | se activa sola cuando hace falta |
-| seo-imagenes | Skill | Prepara nombres de archivo, textos alternativos y datos de tus imágenes para que aparezcan en Google Imágenes y ayuden a posicionar la página. | se activa sola cuando hace falta |
+| optimizar-imagenes-web-skill | Skill | Convierte tus fotos en imágenes web ligeras y nítidas: tamaños, formatos, compresión y el HTML correcto para que la página cargue rápida. | se activa sola cuando hace falta |
+| seo-imagenes-skill | Skill | Prepara nombres de archivo, textos alternativos y datos de tus imágenes para que aparezcan en Google Imágenes y ayuden a posicionar la página. | se activa sola cuando hace falta |
 | texto-legible-en-imagen | Skill | Consigue imágenes con texto que se lea de verdad: carteles, promos, precios y portadas, sin faltas de ortografía ni letras inventadas. | se activa sola cuando hace falta |
 | auditor-imagenes-web | Subagente | Revisa todas las imágenes de tu web o tienda y te dice cuáles pesan de más, están mal cortadas o sin texto alternativo, con la lista de arreglos. | pídele a Claude «usa el subagente auditor-imagenes-web» |
 | ficha-estilo-visual | Subagente | De tus mejores fotos al documento que le das al fotógrafo o generador IA para que repita. | pídele a Claude «usa el subagente ficha-estilo-visual» |

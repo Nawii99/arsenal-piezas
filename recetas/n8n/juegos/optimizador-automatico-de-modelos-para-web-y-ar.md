@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
-Cada GLB que sueltas en una carpeta sale comprimido con Draco y texturas KTX2, con un informe de cuánto ha adelgazado y aviso si pierde calidad.
+Cada GLB que sueltas en una carpeta sale comprimido con Draco y texturas KTX2, con un informe de cuánto ha adelgazado y aviso si pierde calidad. Para quien publica 3D en webs o AR.
 
 ## Qué es y qué hace
 

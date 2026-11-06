@@ -20,7 +20,7 @@ Cuando ningún prompt de las colecciones encaja con tu caso y tienes que escribi
 
 ## Cómo ganar dinero con ella
 
-Sirve de temario para un taller en directo de «escribe tus propios prompts» (por ejemplo, dos horas). Cobra por plaza o por grupo: [TU PRECIO].
+Sirve de temario para un taller de «escribe tus propios prompts» (por ejemplo, dos horas). Cobra por plaza o grupo: [TU PRECIO]. Cada asistente trae un caso.
 
 - Taller en directo de dos horas de «escribe tus propios prompts» para pymes o asociaciones, con precio por plaza.
 - Revisión de prompts de un equipo con un temario de cuatro piezas, a precio por sesión.

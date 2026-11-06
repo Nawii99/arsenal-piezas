@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 
-Receta de n8n que genera un contrato desde tu plantilla de Google Docs: el cliente rellena un formulario con sus datos, el flujo sustituye los huecos de nombre, NIF, precio y fechas, y te envía el PDF por email para revisar.
+Receta de n8n: el cliente rellena un formulario con sus datos, se genera el contrato desde tu plantilla de Google Docs con los huecos rellenos, y te llega por email en PDF para revisar.
 
 ## Qué es y qué hace
 

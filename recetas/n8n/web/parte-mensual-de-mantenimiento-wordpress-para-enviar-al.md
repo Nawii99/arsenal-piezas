@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-El día 1 de cada mes revisa por SSH todas las webs WordPress que gestionas, actualiza los plugins menores y envía a cada cliente un informe con lo hecho.
+El día 1 de cada mes revisa por SSH todas las webs WordPress que gestionas, actualiza los plugins menores y envía a cada cliente un informe con lo hecho. Para agencias, freelances.
 
 ## Qué es y qué hace
 

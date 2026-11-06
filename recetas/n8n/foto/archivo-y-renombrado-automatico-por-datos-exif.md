@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 
-Renombra cada foto con la fecha, la cámara y un número, y la guarda en carpetas por año y mes leyendo los datos que la propia cámara graba.
+Renombra cada foto con la fecha, la cámara y un número, y la guarda en carpetas por año y mes leyendo los datos que la propia cámara graba. Para quien tiene el disco lleno de DSC_0043.
 
 ## Qué es y qué hace
 

@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
-Receta de n8n que cada lunes lee una hoja de Google Sheets con la última copia confirmada de cada cliente y envía un aviso por Telegram a quien lleve más de siete días sin copia.
+Automatización de n8n que revisa cada semana, en una hoja de Google Sheets, si la copia de seguridad de cada cliente se ha confirmado, y manda un aviso por Telegram si lleva más de 7 días.
 
 ## Qué es y qué hace
 
@@ -21,7 +21,7 @@ Para un servicio que gestiona la copia de seguridad de varios móviles de client
 
 ## Cómo ganar dinero con ella
 
-Ahorra la revisión manual semanal de cada cliente; es lo que permite ofrecer copia de seguridad gestionada a varias personas sin que el tiempo se dispare con cada cliente…
+Ahorra la revisión manual semanal de cada cliente; es lo que permite ofrecer copia de seguridad gestionada a varias personas sin que el tiempo se dispare.
 
 - Copia de seguridad gestionada para varios clientes particulares, con aviso automático de retrasos.
 - Seguimiento de copias para una pyme con varios móviles de empleados.

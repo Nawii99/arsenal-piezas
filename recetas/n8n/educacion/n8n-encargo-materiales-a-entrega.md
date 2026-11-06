@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Receta de n8n: un profesor rellena un formulario, la IA genera el borrador del pack, se guarda en Google Drive y te llega un aviso para revisarlo antes de que se envíe al cliente.
+Receta de n8n: un profesor rellena un formulario, la IA genera el borrador del pack, se guarda en Google Drive y te llega un aviso para revisarlo antes de enviarlo. Nada sale solo.
 
 ## Qué es y qué hace
 

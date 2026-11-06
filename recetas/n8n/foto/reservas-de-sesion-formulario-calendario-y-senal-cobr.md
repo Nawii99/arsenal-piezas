@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 
-El cliente rellena un formulario, elige hueco, paga la señal con Stripe y se le crea la cita en tu calendario con el email de confirmación.
+El cliente rellena un formulario, elige hueco, paga la señal con Stripe y se le crea la cita en tu calendario con el email de confirmación. Para fotógrafos que pierden tiempo con fechas.
 
 ## Qué es y qué hace
 

@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Vigila una hoja de cálculo o un CMS que alimenta una web estática y, solo cuando cambia su contenido, lanza un build hook de Netlify, Vercel o Cloudflare Pages.
+Detecta cambios en la hoja de cálculo o el CMS que alimenta tu web estática, dispara la compilación en Netlify, Vercel o Cloudflare Pages, espera a que termine y te confirma si salió bien.
 
 ## Qué es y qué hace
 

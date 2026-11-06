@@ -15,7 +15,7 @@ Ventas · Captar clientes (3): 14 subagentes, 5 skills en español, del Arsenal 
 |---|---|---|---|
 | recontacto-clientes-finerworks | Skill | Revisa en solo lectura los clientes y pedidos de tu cuenta de Finerworks, te dice a quién toca escribir y te deja los mensajes en borrador sin enviar nada. | se activa sola cuando hace falta |
 | revision-gasto-google-ads | Skill | Lee los datos de tu cuenta de Google Ads, señala qué campañas y búsquedas gastan sin traer ventas y te deja una lista de cambios numerada para que decidas tú cuáles se aplican. | se activa sola cuando hace falta |
-| revision-paginas-captacion-formularios | Skill | Skill para Claude Code o cualquier IA que revisa una página de captación y su formulario, en Callpage u otra herramienta. | se activa sola cuando hace falta |
+| revision-paginas-captacion-formularios | Skill | Revisa una página de captación y su formulario (Callpage u otra): claridad, campos, avisos legales y que los datos lleguen donde deben, y propone pocos cambios que se puedan medir. | se activa sola cuando hace falta |
 | salesforce-consulta-y-cambios | Skill | Te deja preguntar a tu Salesforce en lenguaje normal, escribe las consultas por ti y prepara los cambios en una tabla que apruebas antes de aplicarlos. | se activa sola cuando hace falta |
 | zoho-crm-sin-picar-datos | Skill | Crea y actualiza leads, contactos, cuentas y tratos en Zoho CRM, propone conversiones y tareas de seguimiento, y no aplica nada sin tu visto bueno. | se activa sola cuando hace falta |
 | anti-noshow | Subagente | Monta el sistema para que no falten a las reuniones de venta que ya tienen agendadas. | pídele a Claude «usa el subagente anti-noshow» |

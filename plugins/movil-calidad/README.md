@@ -19,7 +19,7 @@ Móvil · Pruebas, permisos y privacidad: 6 skills, 6 subagentes, 4 comandos / e
 | reclutar-betas | Comando / | Monta la prueba beta de tu app: a quién invitas, qué les pides que hagan, qué les escribes y cómo recoges lo que te cuentan. | `/reclutar-betas` |
 | auditar-permisos-movil | Skill | Revisa los permisos de las apps del móvil (Android o iPhone) y dice cuáles quitar, para quien no ha tocado esto nunca. | se activa sola cuando hace falta |
 | auditoria-movil-web | Skill | Por qué tu web pierde gente en el móvil y qué arreglas primero. | se activa sola cuando hace falta |
-| auditoria-seguridad-movil | Skill | Skill de Claude Code que sigue un checklist fijo de cuatro bloques (permisos de apps, copias de seguridad, cifrado y borrado seguro) para auditar un móvil y generar un informe en lenguaje llano. | se activa sola cuando hace falta |
+| auditoria-seguridad-movil | Skill | Skill de Claude Code que guía la auditoría de seguridad y privacidad de un móvil (permisos, copias de seguridad, cifrado, borrado seguro) y genera el informe que se entrega como servicio. | se activa sola cuando hace falta |
 | configurar-copia-seguridad-movil | Skill | Skill que deja un móvil Android o iPhone con copia de seguridad automática y cifrada activada en una sola sesión, incluyendo el caso aparte de WhatsApp. | se activa sola cuando hace falta |
 | permisos-privacidad-app | Skill | Escribe los textos de permisos, la ficha de datos de las tiendas y la política de privacidad de tu app, sin quedarte corto ni pasarte. | se activa sola cuando hace falta |
 | plan-pruebas-movil | Skill | Cómo probar a mano tu app o web en móvil antes de publicarla (sin ser técnico). | se activa sola cuando hace falta |

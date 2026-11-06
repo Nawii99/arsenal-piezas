@@ -2,7 +2,7 @@
 
 **Tipo:** Prompt · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 
-Prompt que te prepara, tras unas preguntas previas, un prompt a medida para Claude, Codex, Gemini o una IA local sobre tu tienda online: análisis de datos, textos de producto, plantillas o decisiones difíciles.
+Te prepara, con unas preguntas previas, un prompt a medida para Claude sobre tu tienda online (datos, textos, plantillas o decisiones), con los datos separados de las instrucciones.
 
 ## Qué es y qué hace
 
@@ -21,7 +21,7 @@ Cuando las respuestas de Claude te salen genéricas o flojas y no sabes cómo pe
 
 ## Cómo ganar dinero con ella
 
-Preparas a tiendas online pequeñas un paquete de [NÚMERO] prompts a medida (fichas de producto, análisis de ventas, respuestas a clientes), cada uno probado con sus datos…
+Preparas a tiendas pequeñas un paquete de [NÚMERO] prompts a medida (fichas de producto, análisis de ventas, respuestas a clientes), cada uno probado con sus datos.
 
 - Paquete de prompts a medida para tiendas pequeñas: fichas, análisis de ventas y respuestas.
 - Sesión de diseño de prompts para un comercio online que quiere respuestas más útiles.

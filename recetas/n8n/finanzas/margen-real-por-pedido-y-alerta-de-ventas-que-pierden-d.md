@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
-Cada noche descarga los pedidos del día de tu tienda con la API de WooCommerce o Shopify, busca el coste de cada producto en Google Sheets y resta comisión de pasarela, envío y embalaje.
+Calcula el margen verdadero de cada pedido restando coste del producto, comisión de la pasarela, envío, embalaje y descuentos, y te avisa de los pedidos que te dejan menos de lo que crees.
 
 ## Qué es y qué hace
 

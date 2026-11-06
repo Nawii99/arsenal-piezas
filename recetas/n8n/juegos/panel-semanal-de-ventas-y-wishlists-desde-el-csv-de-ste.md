@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
-Entra un CSV de ventas o de wishlists descargado de Steamworks y sale una hoja histórica con ingresos netos, devoluciones y wishlists, más un email semanal con el resumen.
+Coges el CSV de ventas que descargas de Steamworks, lo sueltas en una carpeta de Drive y solo con eso se actualiza tu panel de ingresos, devoluciones y wishlists, y te llega un resumen.
 
 ## Qué es y qué hace
 

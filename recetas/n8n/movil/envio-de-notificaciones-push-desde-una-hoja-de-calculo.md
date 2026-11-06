@@ -20,7 +20,7 @@ Receta de n8n que lee una hoja de Google Sheets donde escribes título, mensaje,
 
 ## Cómo ganar dinero con ella
 
-Convierte una tarea de desarrollador en una tarea de dos minutos para cualquiera del equipo.
+Convierte una tarea de desarrollador en una tarea de dos minutos para cualquiera del equipo. Una push bien enviada recupera usuarios que ya tienes, y es lo más barato.
 
 - Avisos de promociones para una app de un comercio con clientes fieles…
 - Notificaciones de novedades para una app de reservas de un gimnasio…

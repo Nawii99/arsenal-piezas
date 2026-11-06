@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Cuando un alumno cancela, detecta el hueco y lo ofrece automáticamente a la lista de espera por orden, con un enlace para aceptarlo, hasta que alguien lo coge.
+Cuando un alumno cancela, detecta el hueco y lo ofrece automáticamente a la lista de espera por orden, con un enlace para aceptarlo, hasta que alguien lo coge. Para profesores particulares.
 
 ## Qué es y qué hace
 

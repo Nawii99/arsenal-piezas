@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
-Cada mañana lee el saldo de tu banco por open banking, suma las facturas pendientes en su fecha prevista y resta gastos fijos y variables de una hoja de Google Sheets.
+Proyecta día a día cuánto dinero vas a tener en el banco durante los próximos dos meses juntando saldo actual, cobros previstos y gastos fijos, y te avisa si bajas del colchón mínimo.
 
 ## Qué es y qué hace
 

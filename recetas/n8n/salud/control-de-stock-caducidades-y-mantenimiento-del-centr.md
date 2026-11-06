@@ -20,7 +20,7 @@ Cuando te quedas sin guantes, aceite o vendas en mitad de la jornada, tiras prod
 
 ## Cómo ganar dinero con ella
 
-Un centro tira fácil 60-150 € al mes en producto caducado y pierde ventas por roturas de stock.
+Un centro tira fácil 60-150 € al mes en producto caducado y pierde ventas por roturas de stock. Y una máquina sin revisar es una avería de 400 € o un problema de seguro.
 
 - Control de stock y caducidades para un centro de estética con material fungible.
 - Calendario de revisiones de aparatos para una clínica de fisioterapia.

@@ -20,7 +20,7 @@ Cuando usas Claude Code a diario y te cansas de repetir peticiones, de respuesta
 
 ## Cómo ganar dinero con ella
 
-Esto no te da ningún título ni certificado. Lo que vale es lo que sepas hacer después.
+Esto no te da ningún título ni certificado. Lo que vale es lo que sepas hacer después. Úsalo para dar sesiones de práctica a equipos o autónomos, con tarifa por sesión.
 
 - Sesiones de práctica de prompts para equipos o autónomos, con tarifa por sesión.
 - Plan de formación de cinco lecciones para una empresa que quiere usar IA de forma más eficaz.

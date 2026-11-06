@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
-Escucha lo que pasa en tu Stripe y, según sea un cobro bueno, un pago fallido o una disputa, lo apunta en tu hoja, avisa al cliente o te avisa a ti con urgencia.
+Escucha lo que pasa en tu Stripe y, según sea un cobro bueno, un pago fallido o una disputa, lo apunta en tu hoja, avisa al cliente o te avisa a ti con urgencia. Para quien vende online.
 
 ## Qué es y qué hace
 

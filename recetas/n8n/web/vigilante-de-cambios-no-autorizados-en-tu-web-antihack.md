@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Cada media hora compara el HTML de tus páginas clave con la última versión conocida y te avisa si alguien ha metido código, enlaces raros o redirecciones.
+Cada media hora compara el HTML de tus páginas clave con la última versión conocida y te avisa si alguien ha metido código, enlaces raros o redirecciones. Para webs con WordPress.
 
 ## Qué es y qué hace
 

@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Hace una petición a cada web cada cinco minutos y, si falla, espera un minuto y reintenta antes de avisar, para evitar falsos positivos.
+Comprueba cada 5 minutos que tus webs responden, confirma la caída con un segundo intento antes de avisarte, y apunta en una hoja el minuto exacto de caída y de recuperación.
 
 ## Qué es y qué hace
 

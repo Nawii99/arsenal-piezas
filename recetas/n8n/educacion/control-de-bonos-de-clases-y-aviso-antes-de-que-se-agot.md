@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Lleva la cuenta de las sesiones consumidas de cada bono, avisa al alumno cuando le quedan dos y te avisa a ti para ofrecer la renovación en el momento justo.
+Lleva la cuenta de las sesiones consumidas de cada bono, avisa al alumno cuando le quedan dos y te avisa a ti para ofrecer la renovación en el momento justo. Para profesores particulares.
 
 ## Qué es y qué hace
 

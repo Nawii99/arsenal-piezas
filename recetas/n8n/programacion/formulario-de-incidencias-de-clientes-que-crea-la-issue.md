@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
-Es una automatización en n8n que recibe un formulario público de incidencias (Tally, Typeform o Google Forms) mediante webhook.
+Tus clientes reportan errores en un formulario sencillo, y el flujo crea la issue en GitHub con la información técnica ordenada, la etiqueta y le da un número de seguimiento.
 
 ## Qué es y qué hace
 

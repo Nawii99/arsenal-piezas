@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Cada semana pide a cada WordPress la lista de plugins y temas con sus versiones, la compara con la última publicada y consulta vulnerabilidades conocidas en la base de WPScan.
+Consulta cada semana los plugins y temas instalados en tus WordPress, compara versiones con el repositorio oficial y cruza con la base de vulnerabilidades de WPScan y avisa de lo urgente.
 
 ## Qué es y qué hace
 

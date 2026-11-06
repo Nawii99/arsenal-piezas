@@ -14,7 +14,7 @@ Empleo y currículum · Currículum y candidaturas (1): 22 comandos /, 5 skills 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
 | adaptar-curriculum | Comando / | Coge el anuncio que pegas y reescribe tu curriculum para esa oferta concreta: reordena, prioriza y usa sus palabras. Sin inventar nada. | `/adaptar-curriculum` |
-| candidatura-guiada-con-paradas | Comando / | Comando de Claude Code que lleva una oferta de empleo por seis etapas con parada en cada una: filtrar, investigar, adaptar el currículum, escribir la carta, preparar el envío y seguimiento. | `/candidatura-guiada-con-paradas` |
+| candidatura-guiada-con-paradas | Comando / | Lleva una oferta de empleo de principio a fin en seis etapas (filtrar, investigar, adaptar el currículum, carta, preparar el envío y seguimiento), parando en cada una y sin enviar nada. | `/candidatura-guiada-con-paradas` |
 | carta-con-tu-voz | Comando / | Genera una carta de presentación desde la oferta y tu perfil, y la reescribe con tu forma de escribir, sin inventar nada. | `/carta-con-tu-voz` |
 | carta-oferta | Comando / | Pegas la oferta, sueltas tu experiencia y salen tres versiones de carta: larga, corta y mensaje de portal. | `/carta-oferta` |
 | carta-presentacion | Comando / | Comando que genera una carta de presentación corta a partir del CV del usuario y una oferta de trabajo concreta. | `/carta-presentacion` |

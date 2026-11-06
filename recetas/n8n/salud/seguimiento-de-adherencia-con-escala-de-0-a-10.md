@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
-Cada semana envía un email con diez enlaces numerados del 0 al 10 sobre cómo se ha sentido el paciente y si ha cumplido sus pautas.
+Manda a los pacientes en tratamiento una pregunta semanal de un clic sobre cómo llevan sus pautas y su bienestar general, guarda la serie y avisa al profesional cuando alguien empeora.
 
 ## Qué es y qué hace
 

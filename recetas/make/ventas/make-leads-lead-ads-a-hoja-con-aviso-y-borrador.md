@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Ventas · **Licencia:** CC BY 4.0
 
-Escenario de Make (make.com) que guarda cada contacto de un anuncio de formulario de Facebook o Instagram en Google Sheets, te avisa por Gmail y, si hay email, deja un borrador de primera respuesta.
+Un escenario de Make (make.com) que guarda en Google Sheets cada contacto de un anuncio de formulario de Facebook o Instagram, te avisa y, si el contacto deja su email, prepara un borrador.
 
 ## Qué es y qué hace
 
@@ -21,7 +21,7 @@ Escenario de Make (make.com) que guarda cada contacto de un anuncio de formulari
 
 ## Cómo ganar dinero con ella
 
-Cobra [TU PRECIO] por montarla con las cuentas del cliente y dejarla probada.
+Cobra [TU PRECIO] por montarla con las cuentas del cliente y dejarla probada. Si quieres, ofrece [TU PRECIO] al mes por revisar que la conexión con Meta sigue activa.
 
 - Montaje de captación de leads por anuncios para un negocio local que hoy copia los contactos a mano.
 - Revisión mensual de la conexión con Meta y de los leads sin atender, con informe para el cliente.

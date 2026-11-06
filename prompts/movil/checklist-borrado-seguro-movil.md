@@ -2,7 +2,7 @@
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
-Prompt que genera, a partir de los datos exactos del móvil, el orden de pasos para venderlo, regalarlo o reciclarlo sin dejar datos recuperables.
+Prompt para pegar en la app de Claude del móvil que genera, con los datos exactos del dispositivo, el orden de pasos para vender, regalar o reciclar un móvil sin dejar datos recuperables.
 
 ## Qué es y qué hace
 

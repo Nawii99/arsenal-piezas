@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
-Tu juego envía eventos a un webhook, se acumulan en una hoja y cada día recibes un aviso si un nivel dispara los abandonos o las muertes.
+Tu juego envía eventos a un webhook, se acumulan en una hoja y cada día recibes un aviso si un nivel dispara los abandonos o las muertes. Para desarrolladores con playtest sin presupuesto.
 
 ## Qué es y qué hace
 

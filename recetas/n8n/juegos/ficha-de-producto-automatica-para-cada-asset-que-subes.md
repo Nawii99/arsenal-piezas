@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
-Al detectar un pack terminado en Drive, Blender extrae polígonos, materiales, tamaño de texturas y si hay UVs o esqueleto.
+Cuando terminas un asset 3D, genera solo su descripción de venta, las etiquetas, el recuento de polígonos y las publicaciones para redes, y te lo deja todo listo para pegar en Gumroad o Fab.
 
 ## Qué es y qué hace
 
@@ -21,7 +21,7 @@ Cuando vendes modelos o packs 3D y cada vez que subes uno pierdes una hora escri
 
 ## Cómo ganar dinero con ella
 
-Una hora por asset. Si publicas 4 al mes, son 4 horas; y una ficha con especificaciones completas y etiquetas correctas vende bastante más que un «modelo de silla, 3 text…
+Una hora por asset. Si publicas 4 al mes, son 4 horas; y una ficha con especificaciones completas y etiquetas correctas vende bastante más que un «modelo de silla».
 
 - Escribir fichas técnicas para artistas 3D que venden en marketplaces, cobrando por pack.
 - Ofrecer a tiendas de assets un flujo que genera descripciones y especificaciones coherentes.

@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
-Cada madrugada saca un volcado comprimido de tu base de datos, lo sube a Google Drive, borra las copias viejas y te avisa si algo falla.
+Cada madrugada saca un volcado comprimido de tu base de datos, lo sube a Google Drive, borra las copias viejas y te avisa si algo falla. Para cualquiera que tenga una tienda, una app o CRM.
 
 ## Qué es y qué hace
 
@@ -21,7 +21,7 @@ Cuando tengas una base de datos MySQL o PostgreSQL en un VPS o en un hosting y d
 
 ## Cómo ganar dinero con ella
 
-Evita el desastre de perder la base de datos (recuperarla cuesta miles de euros o directamente el negocio) y sustituye servicios de backup gestionado de 15-40 euros al me…
+Evita el desastre de perder la base de datos (recuperarla cuesta miles de euros o directamente el negocio) y sustituye servicios de backup gestionado de 15-40 € al mes.
 
 - Copias de seguridad gestionadas para tiendas y apps pequeñas que hoy confían en el hosting.
 - Configuración y prueba de restauración para agencias con clientes en VPS.

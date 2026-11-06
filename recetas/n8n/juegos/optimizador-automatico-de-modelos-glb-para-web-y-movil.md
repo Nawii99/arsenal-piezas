@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
-Sueltas un .glb en una carpeta y te devuelve una versión comprimida lista para web, con el informe de cuántos megas y polígonos ha ahorrado.
+Sueltas un .glb en una carpeta y te devuelve una versión comprimida lista para web, con el informe de cuántos megas y polígonos ha ahorrado. Para quien vende o publica modelos 3D.
 
 ## Qué es y qué hace
 

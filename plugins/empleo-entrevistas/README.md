@@ -13,7 +13,7 @@ Empleo y currículum · Entrevistas y sueldo: 4 comandos /, 3 subagentes, 2 skil
 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
-| mi-busqueda-empleo | Comando / | Comando de Claude Code (un archivo .md en .claude/commands) con cinco modos: nueva, estado, semana, entrevista y sueldo. | `/mi-busqueda-empleo` |
+| mi-busqueda-empleo | Comando / | Un único comando con cinco modos (nueva, estado, semana, entrevista y sueldo) que registra cada candidatura, te dice qué toca cada semana y prepara entrevistas y sueldo. | `/mi-busqueda-empleo` |
 | negociar-sueldo | Comando / | Pegas la oferta y te devuelve la contrapropuesta lista: cifra, frase para decirla, email de respuesta y hasta dónde aguantar. | `/negociar-sueldo` |
 | preparar-entrevista | Comando / | Te prepara para una entrevista técnica y de recursos humanos: 30 preguntas con respuesta, la pregunta del sueldo, qué preguntar tú y un ensayo simulado. | `/preparar-entrevista` |
 | simulacro-entrevista | Comando / | Lanza un simulacro de entrevista completo, cronometrado y con informe final, para el puesto que le digas. | `/simulacro-entrevista` |

@@ -21,7 +21,7 @@ Cuando sospechas que un cliente te está saliendo caro pero no puedes demostrarl
 
 ## Cómo ganar dinero con ella
 
-Sacar a la luz un cliente que te paga a 18 €/hora cuando tu objetivo son 45 €/hora.
+Sacar a la luz un cliente que te paga a 18 €/hora cuando tu objetivo son 45 €/hora. Renegociarlo o soltarlo cambia el resultado del año más que cualquier recorte.
 
 - Análisis de rentabilidad por cliente para agencias y consultores que facturan por proyecto.
 - Revisión mensual de tarifas por hora para freelancers que quieren decidir a quién subir precio.

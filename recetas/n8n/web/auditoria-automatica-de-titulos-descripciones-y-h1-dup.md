@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
-Recorre las URLs del sitemap, descarga el HTML de cada una y extrae title, meta description, h1, canonical y robots.
+Recorre todas las páginas de tu sitemap y saca un informe de metatítulos y descripciones que faltan, están duplicados o se salen de la longitud recomendada, además de H1 repetidos.
 
 ## Qué es y qué hace
 

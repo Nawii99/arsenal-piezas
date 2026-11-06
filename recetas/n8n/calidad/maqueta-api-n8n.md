@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
-Receta de n8n: un webhook que hace de servicio de mentira (pasarela, envíos, SMS) y responde lo que tú decidas, guardando cada llamada en una hoja.
+Receta de n8n: un webhook que hace de servicio de mentira (pasarela, envíos, SMS) y responde lo que decidas, guardando cada llamada en una hoja. Para probar flujos sin cobrar ni enviar nada.
 
 ## Qué es y qué hace
 

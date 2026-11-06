@@ -13,11 +13,11 @@ Marketing · Medir y mejorar: 7 subagentes, 5 skills en español, del Arsenal de
 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
-| avisos-por-sms-con-azure | Skill | Skill para Claude Code que monta el envío de SMS con Azure Communication Services para avisos de pedido, recordatorios de cita y códigos de verificación. | se activa sola cuando hace falta |
+| avisos-por-sms-con-azure | Skill | Prepara el envío de SMS con Azure Communication Services (avisos de pedido, recordatorios de cita y códigos de verificación) con prueba en tu móvil, tope de gasto y las reglas españolas. | se activa sola cuando hace falta |
 | avisos-sms-azure | Skill | Prepara el envío de SMS desde Azure Communication Services (avisos, recordatorios y códigos) con pruebas, tope de gasto y control del consentimiento. | se activa sola cuando hace falta |
 | chatbot-web-botpress-con-limites | Skill | Diseña, prueba y publica de forma controlada un chatbot de atención para tu web con Botpress: qué responde, qué no, cuándo pasa a una persona y qué hace con los datos. | se activa sola cuando hace falta |
 | informe-flujos-campanas-klaviyo | Skill | Revisa los resultados de tus campañas y flujos de Klaviyo (ingresos, clics, bajas, quejas), señala qué mejorar y deja borradores de emails y pruebas A/B, sin enviar ni activar nada. | se activa sola cuando hace falta |
-| informe-seo-con-datos-de-semrush | Skill | Subagente que convierte datos de Semrush, por conector o por archivos exportados, en un informe SEO que se entiende sin saber SEO: qué falla en la web, qué palabras clave están cerca de subir y qué contenidos tocar. | se activa sola cuando hace falta |
+| informe-seo-con-datos-de-semrush | Skill | Convierte datos de Semrush, por conector o archivos exportados, en un informe SEO que se entiende sin saber SEO: qué falla en la web, qué palabras clave están por subir y qué hacer primero. | se activa sola cuando hace falta |
 | afinador-pruebas-gratuitas | Subagente | Diseña o revisa una prueba gratuita completa, con duración, avisos, ampliaciones y un paso a pago claro para el cliente. | pídele a Claude «usa el subagente afinador-pruebas-gratuitas» |
 | ajustes-tras-lanzamiento | Subagente | Ordena los resultados y los comentarios reales tras un lanzamiento y propone un único ajuste, con qué medir y cuándo parar. | pídele a Claude «usa el subagente ajustes-tras-lanzamiento» |
 | credibilidad-con-pruebas | Subagente | Cambia los «soy experto» de tus textos por pruebas reales y un tono seguro que no suene arrogante. | pídele a Claude «usa el subagente credibilidad-con-pruebas» |

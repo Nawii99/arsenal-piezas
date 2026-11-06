@@ -37,6 +37,6 @@ Ventas · Cerrar ventas (1): 16 skills, 9 comandos / en español, del Arsenal de
 | montar-chatwoot-para-clientes | Skill | Instala y configura Chatwoot para que un negocio pequeño atienda a sus clientes por chat, email o WhatsApp, y deja montado el cobro de instalación y mantenimiento. | se activa sola cuando hace falta |
 | preparar-negociacion-contrato-tecnologico-europeo | Skill | Prepara tu postura para negociar un contrato de software, nube o servicios IT con una empresa europea, con mapa de cláusulas, líneas rojas y contrapropuestas en borrador. | se activa sola cuando hace falta |
 | reparto-anuncios-tienda-online | Skill | Convierte los márgenes de tu tienda en un límite de gasto por venta y monta un plan de anuncios de pago con canales, reparto del dinero, pruebas, reglas de parada y panel semanal. | se activa sola cuando hace falta |
-| revision-tienda-lemon-squeezy | Skill | Subagente que lee ventas, suscripciones, clientes y licencias de una tienda en Lemon Squeezy y señala lo que necesita atención: pagos fallidos, dudas y renovaciones. | se activa sola cuando hace falta |
+| revision-tienda-lemon-squeezy | Skill | Lee ventas, suscripciones, clientes y licencias de Lemon Squeezy, señala lo que necesita atención y prepara reembolsos, cancelaciones o descuentos que solo se ejecutan si los confirmas. | se activa sola cuando hace falta |
 
 Licencia: [CC BY 4.0](../../LICENSE). Cítanos si lo usas o lo compartes: «Arsenal del Marketer».

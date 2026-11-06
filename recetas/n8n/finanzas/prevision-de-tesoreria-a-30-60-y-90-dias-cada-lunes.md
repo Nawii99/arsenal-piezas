@@ -2,7 +2,7 @@
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
-Todos los lunes recibes un correo que te dice cuánto dinero tendrás dentro de un mes, dos y tres, sumando cobros previstos y restando gastos fijos e impuestos.
+Todos los lunes recibes un correo que te dice cuánto dinero tendrás dentro de un mes, dos y tres, sumando cobros previstos y restando gastos fijos e impuestos. Para dormir tranquilo.
 
 ## Qué es y qué hace
 
@@ -22,7 +22,7 @@ Cada lunes lee tres pestañas de una hoja (saldo actual, cobros previstos y pago
 
 ## Cómo ganar dinero con ella
 
-Ver un agujero con 6 semanas de margen te permite adelantar cobros o retrasar compras en vez de pedir un descubierto al 12% TAE.
+Ver un agujero con 6 semanas de margen te permite adelantar cobros o retrasar compras en vez de pedir un descubierto al 12% TAE. Evita 300-1.000 € al año en intereses.
 
 - Previsión de caja mensual como servicio para pymes con ingresos irregulares…
 - Panel de tesorería para autónomos que preparan una financiación…

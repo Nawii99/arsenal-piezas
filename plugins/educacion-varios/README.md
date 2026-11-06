@@ -13,7 +13,7 @@ Formación · Más de formación: 5 skills, 4 subagentes en español, del Arsena
 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
-| caso-practico | Skill | Convierte tu tema en un caso práctico realista con datos, decisiones y solución comentada, para que el alumno practique en vez de escuchar. | se activa sola cuando hace falta |
+| caso-practico-skill | Skill | Convierte tu tema en un caso práctico realista con datos, decisiones y solución comentada, para que el alumno practique en vez de escuchar. | se activa sola cuando hace falta |
 | casos-practicos-y-role-play | Skill | Escribe casos prácticos realistas y simulaciones de rol para que tus alumnos practiquen decisiones, no solo teoría. | se activa sola cuando hace falta |
 | de-presencial-a-online | Skill | Rediseña un taller o curso presencial para darlo online sin que se convierta en una charla aburrida de tres horas. | se activa sola cuando hace falta |
 | formar-a-alguien-de-tu-equipo | Skill | De tu cabeza al papel: lo que haces cada día convertido en un plan que alguien pueda aprender. | se activa sola cuando hace falta |
