@@ -1,0 +1,32 @@
+{
+  "tarea": "Generate a complete tutorial to create a simple app that works in the browser of an Android phone",
+  "quien_lo_pide": {
+    "nivel": "zero, I have never programmed",
+    "herramientas": ["computer with Claude Code", "Android phone with Chrome"],
+    "idioma": "English, friendly and addressing me directly as 'you'"
+  },
+  "app": {
+    "tipo": "[QUIZ / TO-DO LIST / COUNTER / MEMORY GAME]",
+    "nombre": "[APP NAME]",
+    "para_que_la_quiero": "[EXPLAIN IT IN ONE SENTENCE]",
+    "requisitos": {
+      "un_solo_archivo_html": true,
+      "funciona_sin_internet": true,
+      "guarda_los_datos_al_cerrar": true,
+      "botones_grandes_para_dedo": true
+    }
+  },
+  "formato_de_respuesta": {
+    "primero": "list of steps, one sentence per step",
+    "codigo": "complete and in one piece, never in chunks",
+    "explicacion": "what each block does, one sentence per block, no jargon",
+    "final": "how to open it on the phone and how to pin it to the home screen",
+    "practica": "three easy changes I can make, with the exact line"
+  },
+  "prohibido": [
+    "giving the code in parts",
+    "using libraries that have to be installed",
+    "assuming I know how to program",
+    "suggesting publishing on Google Play as a first step"
+  ]
+}

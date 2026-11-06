@@ -1,0 +1,71 @@
+{
+  "tarea": "audit_ai_answer_against_its_sources",
+  "idioma": "en-US",
+  "contexto": {
+    "pregunta_original": "[PASTE HERE THE QUESTION YOU ASKED]",
+    "respuesta_a_auditar": "[PASTE HERE THE ANSWER THE AI GAVE]",
+    "fuentes_permitidas": [
+      "[PASTE HERE FRAGMENT 1 THAT THE AI WAS SUPPOSED TO USE]",
+      "[PASTE HERE FRAGMENT 2, OR DELETE THIS LINE IF THERE ARE NO MORE]"
+    ],
+    "uso_previsto": "[internal | send to client | publish | decide about a person]"
+  },
+  "reglas": {
+    "solo_fuentes": true,
+    "conocimiento_propio_prohibido": true,
+    "si_no_aparece_en_fuentes": "mark as unverifiable, never fill in from memory",
+    "prohibido_reescribir": "do not improve the answer, only audit it"
+  },
+  "revision": {
+    "pasos": [
+      "Split the answer into individual claims, one per sentence with content.",
+      "Look for each claim in the permitted sources.",
+      "Copy the literal quote that supports it, without paraphrasing.",
+      "If there is no literal quote, the verdict is unverifiable even if it sounds reasonable."
+    ],
+    "senales_de_invencion": [
+      "exact figures, percentages, or prices that do not appear in any source",
+      "specific dates, deadlines, or articles of law without backing",
+      "names of people, companies, or products that are not in the sources",
+      "links or bibliographic references",
+      "filler phrases like 'according to experts' or 'studies show'",
+      "overly confident answers about something the sources only hint at"
+    ]
+  },
+  "salida": {
+    "formato": "json",
+    "esquema": {
+      "afirmaciones": [
+        {
+          "texto": "literal sentence from the answer",
+          "veredicto": "supported | contradicted | unverifiable",
+          "cita_literal": "exact text from the source, or empty string",
+          "gravedad": "high | medium | low"
+        }
+      ],
+      "recuento": {
+        "apoyadas": 0,
+        "contradichas": 0,
+        "no_verificables": 0
+      },
+      "apto_para_enviar": false,
+      "motivo": "one line explaining the decision",
+      "requiere_revision_humana": true,
+      "que_arreglar": [
+        "concrete, short instruction"
+      ]
+    }
+  },
+  "criterios_de_corte": {
+    "no_apto_si": [
+      "there is at least one contradicted claim",
+      "there is an unverifiable claim of high severity",
+      "the intended use is publish and any unverifiable claim remains"
+    ]
+  },
+  "limites": {
+    "datos_personales": "If the answer or the sources contain data about identifiable people, do not paste them into any third-party service without permission from whoever is responsible for that data; in that case, use a local model.",
+    "decisiones_sobre_personas": "If the intended use is deciding about a person, requiere_revision_humana is always true and this audit does not replace whoever makes the decision.",
+    "alcance": "This audit checks that the answer is supported by the given sources. It does not check that the sources are correct or up to date."
+  }
+}

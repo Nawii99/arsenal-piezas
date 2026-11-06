@@ -1,0 +1,34 @@
+{
+  "tarea": "calculate_nutrition_plan",
+  "instrucciones": "Calculate a person's calorie expenditure and macro split from their data, and return only the output JSON object, with no additional text.",
+  "entrada_requerida": {
+    "peso_kg": "number",
+    "altura_cm": "number",
+    "edad": "number",
+    "sexo": "hombre|mujer",
+    "nivel_actividad": "sedentario|ligero|moderado|alto|muy_alto",
+    "objetivo": "perder_grasa|mantener|ganar_musculo",
+    "condiciones_medicas": "array of strings, empty if none"
+  },
+  "reglas_de_calculo": {
+    "formula_metabolismo_basal": "Mifflin-St Jeor",
+    "deficit_maximo_porcentaje": 25,
+    "superavit_maximo_porcentaje": 15,
+    "minimo_kcal_mujer": 1200,
+    "minimo_kcal_hombre": 1500
+  },
+  "reglas_de_seguridad": {
+    "si_hay_condicion_medica": "set salida.requiere_revision_humana to true and do not calculate a final plan",
+    "si_faltan_datos": "set salida.datos_incompletos to true and list the missing fields"
+  },
+  "formato_salida": {
+    "kcal_totales": "number",
+    "proteina_g": "number",
+    "grasa_g": "number",
+    "hidratos_g": "number",
+    "requiere_revision_humana": "boolean",
+    "datos_incompletos": "boolean",
+    "nota": "string, brief explanation of the split in one sentence"
+  },
+  "aviso_legal": "This output is an indicative calculation and does not replace the assessment of a licensed dietitian-nutritionist."
+}

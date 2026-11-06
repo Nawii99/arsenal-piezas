@@ -1,0 +1,37 @@
+{
+  "tipo_recurso": "video_project_brief",
+  "cliente": {
+    "nombre": "[CLIENT NAME]",
+    "email": "[CONTACT EMAIL]",
+    "plataforma_destino": "[INSTAGRAM_REELS|TIKTOK|YOUTUBE|CORPORATE_WEBSITE]"
+  },
+  "proyecto": {
+    "tipo_video": "[REEL|LONG_YOUTUBE|WEDDING|CORPORATE|ADVERTISING]",
+    "duracion_bruto_minutos": "[NUMBER]",
+    "duracion_final_objetivo_segundos": "[NUMBER]",
+    "numero_clips": "[NUMBER]",
+    "software_edicion": "[DAVINCI_RESOLVE|CAPCUT|KDENLIVE]"
+  },
+  "requisitos_tecnicos": {
+    "subtitulos": false,
+    "correccion_color": false,
+    "motion_graphics": false,
+    "musica_con_licencia_comercial": true,
+    "formato_salida": "[MP4_H264|MOV_PRORES]",
+    "proporcion": "[9:16|1:1|16:9]"
+  },
+  "condiciones_comerciales": {
+    "plazo_entrega_dias_laborables": "[NUMBER]",
+    "numero_revisiones_incluidas": 2,
+    "precio_paquete_euros": "[NUMBER]",
+    "iva_aplicable": true,
+    "forma_pago": "50_upfront_50_on_delivery"
+  },
+  "instrucciones_para_el_agente": {
+    "tarea": "generate_quote_and_editing_plan",
+    "no_hacer": [
+      "do not invent a price if duracion_bruto_minutos is missing",
+      "do not assume a music license without explicit confirmation from the client"
+    ]
+  }
+}

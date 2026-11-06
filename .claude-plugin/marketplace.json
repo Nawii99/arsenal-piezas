@@ -1097,6 +1097,16 @@
         "español",
         "web"
       ]
+    },
+    {
+      "name": "arsenal-en",
+      "source": "./plugins/en",
+      "description": "Best of Arsenal del Marketer in English: 40 skills, 30 slash commands and 30 subagents for marketing, sales, design and small business.",
+      "version": "1.0.0",
+      "category": "english",
+      "keywords": [
+        "english"
+      ]
     }
   ]
 }

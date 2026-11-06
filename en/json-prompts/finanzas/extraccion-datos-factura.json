@@ -1,0 +1,27 @@
+{
+  "tarea": "extract_spanish_invoice_data",
+  "instruccion": "Read the text or image of a Spanish invoice and extract the data in the indicated format. If a piece of data does not appear, put null, do not invent it.",
+  "contexto": "The user is a freelancer (autónomo) or small business and wants to keep a record of their expense or sales invoices without using accounting software.",
+  "esquema_salida": {
+    "tipo_factura": "sale or expense, depending on who issues it",
+    "numero_factura": "string or null",
+    "fecha_emision": "format YYYY-MM-DD or null",
+    "emisor": { "nombre": "string or null", "nif": "string or null (Spanish tax ID)" },
+    "receptor": { "nombre": "string or null", "nif": "string or null (Spanish tax ID)" },
+    "lineas": [ { "concepto": "string", "base_imponible": "number", "tipo_iva": "number, for example 21, 10, 4 or 0", "cuota_iva": "number" } ],
+    "retencion_irpf": { "aplica": "true or false", "porcentaje": "number or null", "importe": "number or null" },
+    "total_factura": "number",
+    "avisos": ["list of short texts if any mandatory data is missing or something looks odd"]
+  },
+  "reglas": [
+    "Do not invent tax IDs (NIF), dates, or amounts that are not in the original text.",
+    "If the total does not match the sum of base plus VAT minus withholding, say so in avisos instead of correcting it yourself.",
+    "If the invoice has no number or is missing mandatory data, say so in avisos; do not treat it as valid.",
+    "Amounts are always in euros with a decimal point, without a currency symbol."
+  ],
+  "no_hacer": [
+    "Do not calculate taxes that are not reflected in the original invoice.",
+    "Do not assume the VAT rate if it is not written: put null and flag it.",
+    "Do not use this result as a final tax return without human review."
+  ]
+}

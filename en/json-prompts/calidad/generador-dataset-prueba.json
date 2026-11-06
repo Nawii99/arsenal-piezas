@@ -1,0 +1,48 @@
+{
+  "tarea": "Generate a made-up dataset following this specification to the letter. Return only the result in the format indicated in salida, with no explanations before or after.",
+  "contexto": {
+    "pais": "Spain",
+    "idioma": "es-ES",
+    "uso": "[WHAT FOR: testing a CRM import / email sequence / n8n flow / client demo]",
+    "herramienta_destino": "[HUBSPOT / BREVO / GOOGLE SHEETS / AIRTABLE / SHOPIFY / OTHER]"
+  },
+  "filas": "[NUMBER, MAXIMUM 500]",
+  "campos": [
+    { "nombre": "nombre", "tipo": "text", "regla": "Common first names in Spain, with accents. 15% compound names." },
+    { "nombre": "apellidos", "tipo": "text", "regla": "Two Spanish surnames separated by a space." },
+    { "nombre": "email", "tipo": "email", "regla": "Built from the name, lowercase and without accents. Required domain: example.com or example.es. Never real domains." },
+    { "nombre": "telefono", "tipo": "text", "regla": "Format +34 6XX 555 XXX. The 555 block is required so that it does not exist." },
+    { "nombre": "empresa", "tipo": "text", "regla": "Made-up, plausible company names with a legal form (S.L., S.A., freelancer (autónomo)). Do not use real brands." },
+    { "nombre": "ciudad", "tipo": "text", "regla": "Real cities in Spain, spread across large and mid-sized ones." },
+    { "nombre": "fecha_alta", "tipo": "date", "regla": "Format YYYY-MM-DD, between [START DATE] and [END DATE]." },
+    { "nombre": "importe_base", "tipo": "decimal", "regla": "Euros with two decimals, between [MINIMUM] and [MAXIMUM]." },
+    { "nombre": "tipo_iva", "tipo": "integer", "regla": "21, 10 or 4. Mostly 21." },
+    { "nombre": "total", "tipo": "decimal", "regla": "importe_base plus the applied VAT (IVA), rounded to two decimals. It must always add up." },
+    { "nombre": "origen", "tipo": "list", "valores": ["[CHANNEL 1]", "[CHANNEL 2]", "[CHANNEL 3]"], "regla": "Approximate split 50/30/20." }
+  ],
+  "casos_raros": {
+    "activar": true,
+    "porcentaje_filas_afectadas": 10,
+    "tipos": [
+      "email with a trailing space or without an at sign",
+      "empty phone",
+      "name in all capitals",
+      "exact duplicate of another row",
+      "surname with ñ or diaeresis"
+    ],
+    "marcar": "Add a last column called caso_raro with the type of trap, or empty if the row is normal."
+  },
+  "prohibido": [
+    "Data of real people, including public figures",
+    "Real email domains",
+    "Phones without the 555 block",
+    "Existing brands or companies",
+    "Adding columns that are not in campos"
+  ],
+  "salida": {
+    "formato": "[CSV / JSON]",
+    "separador_csv": ",",
+    "cabecera": true,
+    "nombres_columna": "Use the exact names that herramienta_destino expects if you know them; if not, use those in campos and say so in one line before the block."
+  }
+}

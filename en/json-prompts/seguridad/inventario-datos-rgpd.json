@@ -1,0 +1,44 @@
+{
+  "tarea": "Personal data inventory and basic GDPR (RGPD) review for a small business",
+  "contexto": {
+    "negocio": {
+      "nombre": "[BUSINESS NAME]",
+      "actividad": "[WHAT IT DOES]",
+      "pais": "Spain",
+      "personas_en_plantilla": "[NUMBER]"
+    },
+    "alcance": {
+      "incluye": ["website", "forms", "email", "invoicing", "social media", "video surveillance"],
+      "excluye": ["any system the client has not authorized in writing"]
+    },
+    "autorizacion": {
+      "documento": "[NAME OF THE SIGNED ENGAGEMENT]",
+      "fecha": "[YYYY-MM-DD]",
+      "firmante": "[NAME AND POSITION]"
+    }
+  },
+  "entradas": {
+    "herramientas_en_uso": ["[LIST OF PROGRAMS AND SERVICES]"],
+    "proveedores_externos": ["[ACCOUNTING/TAX ADVISORY FIRM, HOSTING, EMAIL, CRM]"],
+    "formularios_publicos": ["[ADDRESS OF EACH FORM]"]
+  },
+  "salida": {
+    "formato": "markdown tables plus action list",
+    "secciones": [
+      {"id": "inventario", "columnas": ["data", "whose", "where it is stored", "who has access", "how long", "legal basis"]},
+      {"id": "riesgos", "columnas": ["finding", "impact", "effort", "priority"]},
+      {"id": "acciones", "columnas": ["action", "owner", "deadline", "estimated cost"]}
+    ],
+    "limite_hallazgos": 15
+  },
+  "reglas": [
+    "Do not invent data: whatever is not known is marked as PENDING VERIFICATION",
+    "Do not draft clauses or privacy policies ready to publish",
+    "Always separate legal obligation from recommended good practice",
+    "Mark with HUMAN REVIEW everything involving minors, health, biometrics, or cameras"
+  ],
+  "aviso": {
+    "texto": "This report is a technical starting point, not legal advice. Before signing data processor agreements or publishing policies, have it reviewed by a lawyer or a data protection consultant.",
+    "obligatorio_en_entrega": true
+  }
+}

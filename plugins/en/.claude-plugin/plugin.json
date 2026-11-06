@@ -1,0 +1,18 @@
+{
+  "name": "arsenal-en",
+  "version": "1.0.0",
+  "description": "Best of Arsenal del Marketer in English: 40 skills, 30 slash commands and 30 subagents for marketing, sales, design and small business.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "english",
+    "arsenal-del-marketer",
+    "marketing",
+    "small-business"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "tarea": "Compare payment gateways for a small online store with no monthly fee and return a decision table, without inventing fees.",
+  "contexto": {
+    "pais_venta": "[COUNTRY OR COUNTRIES WHERE YOU SELL]",
+    "volumen_mensual_ventas": "[APPROXIMATE NUMBER OF SALES PER MONTH]",
+    "tipo_de_negocio": "[FREELANCER / COMPANY]",
+    "moneda_principal": "[EUR / OTHER]"
+  },
+  "pasarelas_a_comparar": ["Stripe", "PayPal", "Redsys"],
+  "criterios": [
+    {"nombre": "rapidez_de_alta", "pregunta": "How long does it take to have the account ready to accept payments?"},
+    {"nombre": "requisitos", "pregunta": "What paperwork or contracts does it require (company tax ID, bank contract, identity verification)?"},
+    {"nombre": "cuando_llega_el_dinero", "pregunta": "How many days does it take for the money to reach the actual bank account?"},
+    {"nombre": "donde_consultar_comision", "pregunta": "Link or pointer to where the current fee can be checked, without inventing the figure"}
+  ],
+  "reglas": [
+    "Do not invent fee percentages: if they are not known, write 'check the official website'.",
+    "Do not recommend any gateway without knowing the sales volume and the country.",
+    "Always warn that the money does not arrive instantly in the bank account."
+  ],
+  "formato_salida": {
+    "tipo": "table",
+    "columnas": ["pasarela", "rapidez_de_alta", "requisitos", "cuando_llega_el_dinero", "donde_consultar_comision"],
+    "cierre": "A final recommendation in one sentence, conditioned on the given context."
+  }
+}

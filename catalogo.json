@@ -63112,7 +63112,8 @@
     "Bono de cinco adaptaciones para candidatos que postulan a varios puestos a la vez.",
     "Entrega de currículum en PDF con informe de cambios para perfiles de tecnología en reconversión."
    ],
-   "precio_orientativo": "25–40 € por oferta"
+   "precio_orientativo": "25–40 € por oferta",
+   "en": "plugins/en/commands/adaptar-curriculum.md"
   },
   {
    "nombre": "Requisitos de verdad…",
@@ -64048,7 +64049,8 @@
     "Pack de perfil con publicación de anuncio y titular, incluido en un servicio de LinkedIn.",
     "Mensaje de búsqueda para personas que vuelven al mercado tras una pausa larga."
    ],
-   "precio_orientativo": "25–25 € por texto"
+   "precio_orientativo": "25–25 € por texto",
+   "en": "en/prompts/empleo/abierto-a-ofertas-sin-desesperar.md"
   },
   {
    "nombre": "Auditoria de tu huella publica…",
@@ -64066,7 +64068,8 @@
     "Puerta de entrada a servicios de CV y perfil: diagnóstico inicial que lleva a un encargo.",
     "Revisión de perfiles para orientadores laborales que preparan a sus usuarios para reclutadores."
    ],
-   "precio_orientativo": "60–80 € por auditoría"
+   "precio_orientativo": "60–80 € por auditoría",
+   "en": "en/json-prompts/empleo/auditoria-huella-publica.json"
   },
   {
    "nombre": "Publicar cada semana sin que te coma la vida…",
@@ -64192,7 +64195,8 @@
     "Pack de cinco adaptaciones de CV para personas que postulan en paralelo a varios puestos.",
     "Revisión de versiones de CV con el cliente para confirmar que todo lo que aparece es cierto."
    ],
-   "precio_orientativo": "20–35 € por CV adaptado"
+   "precio_orientativo": "20–35 € por CV adaptado",
+   "en": "plugins/en/skills/adaptar-curriculum-oferta/SKILL.md"
   },
   {
    "nombre": "Revisar CV para filtros ATS…",
@@ -64264,7 +64268,8 @@
     "Servicio de CV a medida para mandos intermedios que cambian de función dentro de su empresa.",
     "Biblioteca de versiones de CV para un candidato, con cada adaptación guardada por oferta."
    ],
-   "precio_orientativo": "20–35 € por CV adaptado"
+   "precio_orientativo": "20–35 € por CV adaptado",
+   "en": "plugins/en/skills/adaptar-cv-a-oferta/SKILL.md"
   },
   {
    "nombre": "Revisar mi CV contra una oferta antes de enviarlo…",
@@ -64390,7 +64395,8 @@
     "Confirmación automática de pedido y pago para consultores de empleo que cobran por adelantado.",
     "Mantenimiento mensual de la automatización de pedidos y revisión de avisos fallidos."
    ],
-   "precio_orientativo": "120–200 € por instalación"
+   "precio_orientativo": "120–200 € por instalación",
+   "en": "en/recipes/empleo/alta-cobro-encargo-cv-n8n.md"
   },
   {
    "nombre": "Corrige los errores de CV que tira el ATS…",
@@ -64444,7 +64450,8 @@
     "Revisión de cartas para bolsas de empleo que quieren subir la calidad de sus envíos.",
     "Taller de cartas para orientadores laborales que trabajan con grupos de desempleados."
    ],
-   "precio_orientativo": "15–25 € por carta revisada"
+   "precio_orientativo": "15–25 € por carta revisada",
+   "en": "plugins/en/agents/critico-carta-presentacion.md"
   },
   {
    "nombre": "Comparador de palabras clave CV-oferta…",
@@ -64606,7 +64613,8 @@
     "Puesta en marcha de apps para clientes con estructura estándar y avisos de finalización.",
     "Mantenimiento de plantillas de app y revisión del flujo cada trimestre."
    ],
-   "precio_orientativo": "100–180 € por montaje"
+   "precio_orientativo": "100–180 € por montaje",
+   "en": "en/recipes/movil/crear-repo-app-nueva-desde-plantilla.md"
   },
   {
    "nombre": "Andamiaje de app para cliente…",
@@ -64624,7 +64632,8 @@
     "Proyecto base por fases para estudios que entregan la app en tramos al cliente.",
     "Arranque de apps para negocios que quieren notificaciones push desde el primer día."
    ],
-   "precio_orientativo": "150–300 € por arranque de proyecto"
+   "precio_orientativo": "150–300 € por arranque de proyecto",
+   "en": "plugins/en/skills/andamiaje-app-cliente/SKILL.md"
   },
   {
    "nombre": "Auditor de entrega de app…",
@@ -64642,7 +64651,8 @@
     "Checklist de publicación para freelancers que quieren evitar rechazos de la tienda.",
     "Auditoría de app antes de traspasarla al cliente, con lista de lo que debe completar."
    ],
-   "precio_orientativo": "60–100 € por revisión"
+   "precio_orientativo": "60–100 € por revisión",
+   "en": "plugins/en/agents/auditor-entrega-app.md"
   },
   {
    "nombre": "Cotizador de apps móviles…",
@@ -64858,7 +64868,8 @@
     "Resumen de grupo con puntos débiles para academias que quieren un informe por clase.",
     "Feedback individual por alumno para formadores online con muchas entregas."
    ],
-   "precio_orientativo": "30–150 € por lote"
+   "precio_orientativo": "30–150 € por lote",
+   "en": "plugins/en/skills/corregir-lote-ejercicios/SKILL.md"
   },
   {
    "nombre": "Generador de exámenes con variantes…",
@@ -64930,7 +64941,8 @@
     "Mantenimiento mensual del flujo de pedidos y entregas para academias.",
     "Panel de pedidos en hoja de cálculo para autónomos que venden formación."
    ],
-   "precio_orientativo": "150–400 € por instalación"
+   "precio_orientativo": "150–400 € por instalación",
+   "en": "en/recipes/educacion/automatizacion-venta-paquetes-curso.md"
   },
   {
    "nombre": "Revisor de exámenes…",
@@ -64966,7 +64978,8 @@
     "Pack de evaluación con rúbricas por curso para formadores de empresa.",
     "Rúbricas de presentaciones para academias que preparan a sus alumnos para exponer."
    ],
-   "precio_orientativo": "20–60 € por rúbrica"
+   "precio_orientativo": "20–60 € por rúbrica",
+   "en": "plugins/en/agents/disenador-rubricas.md"
   },
   {
    "nombre": "Plantilla de lección…",
@@ -65110,7 +65123,8 @@
     "Mantenimiento mensual del flujo de altas para pequeños estudios de entrenamiento.",
     "Panel de clientes en hoja de cálculo para estudios online sin software de gestión."
    ],
-   "precio_orientativo": "200–500 € por instalación"
+   "precio_orientativo": "200–500 € por instalación",
+   "en": "en/recipes/salud/alta-cobro-automatico-cliente-entrenamiento.md"
   },
   {
    "nombre": "Seguimiento de progreso del cliente…",
@@ -65182,7 +65196,8 @@
     "Calculadora de progresión para aficionados al levantamiento que quieren seguir su fuerza.",
     "Plantilla de porcentajes para entrenadores que trabajan con planes de fuerza."
    ],
-   "precio_orientativo": "15–40 € por tabla"
+   "precio_orientativo": "15–40 € por tabla",
+   "en": "plugins/en/agents/calculador-cargas.md"
   },
   {
    "nombre": "Plan de entrenamiento por objetivo sin plantilla genérica…",
@@ -65200,7 +65215,8 @@
     "Rutinas personalizadas de partida para gimnasios que ofrecen planes a socios.",
     "Base de planes para monitores de iniciación deportiva en clubes locales."
    ],
-   "precio_orientativo": "10–30 € por borrador de plan"
+   "precio_orientativo": "10–30 € por borrador de plan",
+   "en": "en/prompts/salud/plan-entrenamiento-por-objetivo.md"
   },
   {
    "nombre": "Recordatorio semanal de seguimiento de progreso por Telegram…",
@@ -68512,7 +68528,8 @@
     "Informe previo a un rediseño de tienda para detectar fallos legales antes de publicar.",
     "Segunda fase de corrección: redacción de los textos que el informe marca como faltantes."
    ],
-   "precio_orientativo": "90–200 € por informe"
+   "precio_orientativo": "90–200 € por informe",
+   "en": "plugins/en/skills/auditoria-legal-tienda-online/SKILL.md"
   },
   {
    "nombre": "Redactor de condiciones de venta y devoluciones…",
@@ -68674,7 +68691,8 @@
     "Respuesta a cláusulas problemáticas en negociaciones de colaboración con marcas.",
     "Servicio ligero por consulta de cláusula para freelancers sin abogado de confianza."
    ],
-   "precio_orientativo": "10–25 € por cláusula"
+   "precio_orientativo": "10–25 € por cláusula",
+   "en": "plugins/en/commands/clausula.md"
   },
   {
    "nombre": "Generador de borrador de contrato de colaboración…",
@@ -68782,7 +68800,8 @@
     "Instalación del proceso completo con seguimiento de firmas y avisos para freelancers.",
     "Mantenimiento mensual del alta de clientes, con revisión de plantillas cada año."
    ],
-   "precio_orientativo": "200–400 € por instalación"
+   "precio_orientativo": "200–400 € por instalación",
+   "en": "en/recipes/legal/n8n-alta-cliente-contrato-firma.md"
   },
   {
    "nombre": "Elegir plantilla de CV sin liarte…",
@@ -69034,7 +69053,8 @@
     "Sesiones de lectura de código para principiantes de academias de programación, por sesión…",
     "Auditoría previa de plantillas de terceros antes de que una pyme las adapte, por revisión…"
    ],
-   "precio_orientativo": "30–80 € por proyecto"
+   "precio_orientativo": "30–80 € por proyecto",
+   "en": "plugins/en/commands/explica-codigo.md"
   },
   {
    "nombre": "Tutorial de mi primera app desde cero…",
@@ -69070,7 +69090,8 @@
     "Pack de tres apps sencillas para un negocio pequeño, por entrega…",
     "Ajustes posteriores de una app ya entregada, por hora de cambios…"
    ],
-   "precio_orientativo": "150–400 € por app"
+   "precio_orientativo": "150–400 € por app",
+   "en": "en/json-prompts/movil/brief-app-sencilla-android.json"
   },
   {
    "nombre": "/mini-app…",
@@ -69124,7 +69145,8 @@
     "Mantenimiento mensual de mini-apps de academias, por cuota…",
     "Diagnóstico previo a un encargo para decidir si conviene reparar o rehacer, por revisión…"
    ],
-   "precio_orientativo": "30–80 € por arreglo"
+   "precio_orientativo": "30–80 € por arreglo",
+   "en": "plugins/en/agents/arregla-mi-app.md"
   },
   {
    "nombre": "Juego de repaso con tus apuntes en un solo HTML…",
@@ -69178,7 +69200,8 @@
     "Plantilla de propuesta cerrada para freelancers de desarrollo web, por venta…",
     "Filtro previo de clientes para no regalar horas en encargos mal definidos, por consulta…"
    ],
-   "precio_orientativo": "40–100 € por presupuesto"
+   "precio_orientativo": "40–100 € por presupuesto",
+   "en": "plugins/en/commands/alcance-mini-app.md"
   },
   {
    "nombre": "Brief de mini-app para Claude Code…",
@@ -69250,7 +69273,8 @@
     "Plantillas de evaluación para academias que corrigen exposiciones, por plantilla…",
     "Ajuste de rúbricas a la programación de un departamento, por rúbrica…"
    ],
-   "precio_orientativo": "5–15 € por rúbrica"
+   "precio_orientativo": "5–15 € por rúbrica",
+   "en": "plugins/en/commands/comando-rubrica.md"
   },
   {
    "nombre": "Guion de presentación para una clase…",
@@ -69268,7 +69292,8 @@
     "Unidades didácticas completas con presentaciones para profesores, por unidad…",
     "Presentaciones a medida para ponentes de formación interna, por charla…"
    ],
-   "precio_orientativo": "15–40 € por presentación"
+   "precio_orientativo": "15–40 € por presentación",
+   "en": "en/prompts/educacion/prompt-presentacion-clase.md"
   },
   {
    "nombre": "Generador de juego de repaso (quiz, bingo o memory)",
@@ -69340,7 +69365,8 @@
     "Paquetes de preguntas para formación de empleados en empresas pequeñas, por paquete…",
     "Banco de preguntas por asignatura para profesores particulares, por trimestre…"
    ],
-   "precio_orientativo": "10–25 € por cuestionario"
+   "precio_orientativo": "10–25 € por cuestionario",
+   "en": "en/json-prompts/educacion/cuestionario-repaso-json.json"
   },
   {
    "nombre": "Materiales de clase por formulario y a Google Drive…",
@@ -69538,7 +69564,8 @@
     "Plantilla de factura para profesionales sanitarios que empiezan, por venta…",
     "Revisión de la mención de IVA por servicio para un gestor, por revisión…"
    ],
-   "precio_orientativo": "20–50 € por configuración"
+   "precio_orientativo": "20–50 € por configuración",
+   "en": "plugins/en/commands/factura-consulta-sanitaria.md"
   },
   {
    "nombre": "Respuesta a solicitudes de derechos de pacientes…",
@@ -69556,7 +69583,8 @@
     "Cuota mensual de respuesta a derechos para clínicas pequeñas, por mes…",
     "Plantillas de respuesta por tipo de derecho para una cadena de consultas, por lote…"
    ],
-   "precio_orientativo": "30–80 € por solicitud"
+   "precio_orientativo": "30–80 € por solicitud",
+   "en": "plugins/en/agents/derechos-paciente-rgpd.md"
   },
   {
    "nombre": "Recordatorio de cita por correo el día antes…",
@@ -69664,7 +69692,8 @@
     "Talleres de iniciación a sensores para familias o centros educativos, por taller…",
     "Montaje de estaciones para cooperativas agrícolas pequeñas, por unidad…"
    ],
-   "precio_orientativo": "60–150 € por proyecto"
+   "precio_orientativo": "60–150 € por proyecto",
+   "en": "plugins/en/skills/estacion-meteorologica-esp32/SKILL.md"
   },
   {
    "nombre": "Revisor de riego automático antes de montar…",
@@ -69718,7 +69747,8 @@
     "Instalación de cámaras de vigilancia para comunidades de vecinos pequeñas, por instalación…",
     "Auditoría de privacidad de cámaras de particulares, por revisión…"
    ],
-   "precio_orientativo": "30–60 € por plan"
+   "precio_orientativo": "30–60 € por plan",
+   "en": "en/prompts/iot/prompt-camara-vigilancia-esp32-cam.md"
   },
   {
    "nombre": "Montaje de proyecto IoT casero sin programar…",
@@ -69772,7 +69802,8 @@
     "Soporte técnico de primer nivel para aficionados que venden sus proyectos, por hora…",
     "Revisión periódica de aparatos IoT instalados, por visita…"
    ],
-   "precio_orientativo": "30–80 € por diagnóstico"
+   "precio_orientativo": "30–80 € por diagnóstico",
+   "en": "plugins/en/agents/diagnostico-iot.md"
   },
   {
    "nombre": "Reglas de alertas para cámara y alarma sin falsas alarmas…",
@@ -69862,7 +69893,8 @@
     "Plantilla de visita para técnicos que cobran por desplazamiento, por visita…",
     "Preparación de visitas para comunidades de vecinos, por proyecto…"
    ],
-   "precio_orientativo": "20–50 € por visita"
+   "precio_orientativo": "20–50 € por visita",
+   "en": "en/json-prompts/iot/json-ficha-visita-tecnica-iot.json"
   },
   {
    "nombre": "Factura legal para autónomo en España…",
@@ -69880,7 +69912,8 @@
     "Configuración de plantilla de facturación para pymes pequeñas, por configuración…",
     "Formación de un mes sobre facturas válidas, por sesión…"
    ],
-   "precio_orientativo": "20–50 € por configuración"
+   "precio_orientativo": "20–50 € por configuración",
+   "en": "plugins/en/skills/factura-legal-espana/SKILL.md"
   },
   {
    "nombre": "Presupuesto con condiciones que te protejan…",
@@ -70186,7 +70219,8 @@
     "Auditoría del entorno de pruebas de tiendas y CRM antes de un lanzamiento…",
     "Garantía de implantación con pruebas documentadas para pymes que cobran online…"
    ],
-   "precio_orientativo": "60–200 € por proyecto"
+   "precio_orientativo": "60–200 € por proyecto",
+   "en": "plugins/en/skills/entorno-de-pruebas/SKILL.md"
   },
   {
    "nombre": "Generador de dataset de prueba…",
@@ -70204,7 +70238,8 @@
     "Set de datos inventados para formar a empleados en una herramienta nueva…",
     "Generador de datos de prueba como herramienta interna para agencias de automatización…"
    ],
-   "precio_orientativo": "20–50 € por proyecto"
+   "precio_orientativo": "20–50 € por proyecto",
+   "en": "en/json-prompts/calidad/generador-dataset-prueba.json"
   },
   {
    "nombre": "API de mentira en n8n…",
@@ -70240,7 +70275,8 @@
     "Preparación de tiendas Shopify con catálogo de ejemplo antes del lanzamiento…",
     "Juego de pruebas para validar la facturación de un programa nuevo…"
    ],
-   "precio_orientativo": "30–90 € por proyecto"
+   "precio_orientativo": "30–90 € por proyecto",
+   "en": "plugins/en/commands/datos-de-prueba.md"
   },
   {
    "nombre": "Entornos de prueba para clientes…",
@@ -70276,7 +70312,8 @@
     "Plan de pruebas en lenguaje llano para clientes que no programan…",
     "Cierre formal de entregas para agencias pequeñas con gestión de incidencias…"
    ],
-   "precio_orientativo": "30–80 € por proyecto"
+   "precio_orientativo": "30–80 € por proyecto",
+   "en": "en/prompts/calidad/plan-de-pruebas-acta.md"
   },
   {
    "nombre": "Maqueta de API con n8n…",
@@ -70438,7 +70475,8 @@
     "Seguimiento a siete días como servicio de prensa para estudios pequeños…",
     "Lista de creadores hecha a mano junto con correos personalizados…"
    ],
-   "precio_orientativo": "40–150 € por lote"
+   "precio_orientativo": "40–150 € por lote",
+   "en": "en/json-prompts/marketing/pitch-prensa-creadores-juego.json"
   },
   {
    "nombre": "Auditoría de licencias de assets…",
@@ -70456,7 +70494,8 @@
     "Informe en semáforo con lista de tareas para publishers…",
     "Revisión de contenido generado con IA y música en juegos antes de subirlos…"
    ],
-   "precio_orientativo": "150–400 € por auditoría"
+   "precio_orientativo": "150–400 € por auditoría",
+   "en": "plugins/en/skills/auditoria-licencias-assets/SKILL.md"
   },
   {
    "nombre": "Página de tienda para Steam o itch.io…",
@@ -70528,7 +70567,8 @@
     "Lista de obligaciones legales como informe previo a la redacción de textos…",
     "Diagnóstico inicial que deriva en la redacción de borradores legales…"
    ],
-   "precio_orientativo": "40–120 € por consulta"
+   "precio_orientativo": "40–120 € por consulta",
+   "en": "en/json-prompts/web/diagnostico-legal-web-desde-cero.json"
   },
   {
    "nombre": "/textos-legales-web…",
@@ -70564,7 +70604,8 @@
     "Auditoría de cookies y corrección del banner como servicio puntual…",
     "Mantenimiento del banner al añadir nuevas herramientas de terceros…"
    ],
-   "precio_orientativo": "60–180 € por web"
+   "precio_orientativo": "60–180 € por web",
+   "en": "en/prompts/web/banner-cookies-aepd.md"
   },
   {
    "nombre": "Revisión legal básica de una web publicada…",
@@ -70618,7 +70659,8 @@
     "Revisión previa a la entrega de una web a un cliente…",
     "Diagnóstico de cumplimiento para agencias que entregan webs…"
    ],
-   "precio_orientativo": "50–150 € por auditoría"
+   "precio_orientativo": "50–150 € por auditoría",
+   "en": "plugins/en/skills/auditoria-legal-web/SKILL.md"
   },
   {
    "nombre": "Política de cookies y banner desde la lista de cookies reale…",
@@ -70672,7 +70714,8 @@
     "Informe de riesgos para dueños de webs que sospechan incumplimiento…",
     "Propuesta de adecuación derivada de cada hallazgo del informe…"
    ],
-   "precio_orientativo": "50–150 € por informe"
+   "precio_orientativo": "50–150 € por informe",
+   "en": "plugins/en/commands/auditoria-legal-web.md"
   },
   {
    "nombre": "Textos legales de una web española…",
@@ -70744,7 +70787,8 @@
     "Integración de Stripe con suscripciones para pequeños negocios de servicios…",
     "Puesta a punto de pagos y facturas tras cambiar de pasarela…"
    ],
-   "precio_orientativo": "200–600 € por proyecto"
+   "precio_orientativo": "200–600 € por proyecto",
+   "en": "plugins/en/skills/cobrar-con-stripe/SKILL.md"
   },
   {
    "nombre": "/webhook-stripe: crear y probar el webhook de pagos…",
@@ -70852,7 +70896,8 @@
     "Lista de preguntas para el gestor preparada antes de cada reunión fiscal…",
     "Revisión de recibos de pasarela para negocios que facturan a mano…"
    ],
-   "precio_orientativo": "30–80 € por revisión"
+   "precio_orientativo": "30–80 € por revisión",
+   "en": "en/prompts/backend/prompt-revisar-factura-legal-espana.md"
   },
   {
    "nombre": "Diseñar un modelo de suscripciones para Stripe antes de escr…",
@@ -70924,7 +70969,8 @@
     "Revisión de webhooks generados con IA antes de cobrar de verdad…",
     "Informe de riesgos de pago para startups que lanzan suscripciones…"
    ],
-   "precio_orientativo": "150–400 € por auditoría"
+   "precio_orientativo": "150–400 € por auditoría",
+   "en": "plugins/en/agents/auditor-webhooks-pago.md"
   },
   {
    "nombre": "Diseñar los planes y precios de un servicio para cobrarlo co…",
@@ -70942,7 +70988,8 @@
     "Tabla de planes lista para crear en Stripe como entregable…",
     "Revisión de precios y IVA antes de publicarlos en una web…"
    ],
-   "precio_orientativo": "60–200 € por consultoría"
+   "precio_orientativo": "60–200 € por consultoría",
+   "en": "en/json-prompts/backend/diseno-planes-suscripcion-stripe.json"
   },
   {
    "nombre": "Guion de vídeo currículum en 90 segundos…",
@@ -70960,7 +71007,8 @@
     "Guion de presentación para autónomos que se presentan en vídeo…",
     "Versiones del guion para tres ofertas distintas de un mismo candidato…"
    ],
-   "precio_orientativo": "25–60 € por guion"
+   "precio_orientativo": "25–60 € por guion",
+   "en": "plugins/en/commands/guion-video-cv.md"
   },
   {
    "nombre": "Revisor de tomas del vídeo currículum…",
@@ -71050,7 +71098,8 @@
     "Guía de grabación para empresas que graban a sus empleados…",
     "Revisión técnica de un vídeo ya grabado con correcciones de luz y audio…"
    ],
-   "precio_orientativo": "40–100 € por sesión"
+   "precio_orientativo": "40–100 € por sesión",
+   "en": "plugins/en/skills/grabar-videocv-movil/SKILL.md"
   },
   {
    "nombre": "Plan de edición del vídeo currículum en CapCut…",
@@ -71284,7 +71333,8 @@
     "Revisión extra cada vez que el cliente añade un método de pago, un país de envío o una categoría.",
     "Paquete de puesta en marcha legal y técnica de tiendas para autónomos que venden por internet."
    ],
-   "precio_orientativo": "200–600 € por tienda"
+   "precio_orientativo": "200–600 € por tienda",
+   "en": "plugins/en/skills/asiento-tienda-legal/SKILL.md"
   },
   {
    "nombre": "Condiciones de venta · borrador para revisar…",
@@ -71302,7 +71352,8 @@
     "Preparación de textos legales a partir de una ficha de negocio, para reducir horas de abogado.",
     "Paquete de documentación previa para autónomos que abren tienda online con presupuesto cerrado."
    ],
-   "precio_orientativo": "80–150 € por documento"
+   "precio_orientativo": "80–150 € por documento",
+   "en": "en/prompts/legal/asiento-condiciones-venta.md"
   },
   {
    "nombre": "Revisor de tienda · el subagente que busca el fallo caro…",
@@ -71320,7 +71371,8 @@
     "Auditoría trimestral de tiendas ya activas para detectar lo que se rompe con el tiempo.",
     "Diagnóstico de conversión para tiendas pequeñas que pierden carritos sin saber por qué."
    ],
-   "precio_orientativo": "200–500 € por revisión"
+   "precio_orientativo": "200–500 € por revisión",
+   "en": "plugins/en/agents/asiento-revisor-tienda.md"
   },
   {
    "nombre": "Diagnóstico de cumplimiento · JSON prompt…",
@@ -71338,7 +71390,8 @@
     "Informe comparable por sitio que el cliente recibe junto a la propuesta de arreglos.",
     "Revisión anual de textos legales de webs ya publicadas, con aviso de lo que haya cambiado."
    ],
-   "precio_orientativo": "100–250 € por sitio"
+   "precio_orientativo": "100–250 € por sitio",
+   "en": "en/json-prompts/legal/asiento-json-cumplimiento.json"
   },
   {
    "nombre": "/precio-producto · poner precio con cabeza…",
@@ -71356,7 +71409,8 @@
     "Revisión de precios de una tienda ya activa que no deja beneficio tras comisiones y devoluciones.",
     "Hoja de precios por producto que el cliente actualiza cada vez que cambia un coste."
    ],
-   "precio_orientativo": "30–60 € por producto"
+   "precio_orientativo": "30–60 € por producto",
+   "en": "plugins/en/commands/asiento-cmd-precio.md"
   },
   {
    "nombre": "/analizar-devoluciones · por qué te devuelven…",
@@ -71374,7 +71428,8 @@
     "Revisión de fichas de producto para reducir devoluciones por talla o por foto engañosa.",
     "Seguimiento mensual de causas de devolución para tiendas que quieren medir cada cambio."
    ],
-   "precio_orientativo": "150–400 € por análisis"
+   "precio_orientativo": "150–400 € por análisis",
+   "en": "plugins/en/commands/asiento-cmd-devoluciones.md"
   },
   {
    "nombre": "Limpiar una grabación · skill de audio paso a paso…",
@@ -71392,7 +71447,8 @@
     "Arreglo de vídeos corporativos con música de fondo que tapa la voz del ponente.",
     "Recuperación de grabaciones antiguas que el cliente daba por perdidas."
    ],
-   "precio_orientativo": "50–200 € por pieza"
+   "precio_orientativo": "50–200 € por pieza",
+   "en": "plugins/en/skills/asiento-skill-audio/SKILL.md"
   },
   {
    "nombre": "Extraer datos de un currículum…",
@@ -71410,7 +71466,8 @@
     "Base de datos ordenada de currículums para una agencia de selección pequeña.",
     "Preparación de preguntas de entrevista a partir de la tabla de cada candidato."
    ],
-   "precio_orientativo": "30–60 € por proceso de selección"
+   "precio_orientativo": "30–60 € por proceso de selección",
+   "en": "plugins/en/commands/extraer-datos-cv.md"
   },
   {
    "nombre": "IA en tu propio ordenador desde cero…",
@@ -71500,7 +71557,8 @@
     "Revisión trimestral de un asistente interno con cuota fija para el cliente.",
     "Banco de 30 preguntas como entregable para demostrar que el chat responde bien."
    ],
-   "precio_orientativo": "300–600 € por auditoría"
+   "precio_orientativo": "300–600 € por auditoría",
+   "en": "plugins/en/agents/auditor-rag-documentos.md"
   },
   {
    "nombre": "Diagnóstico de IA en local para un cliente…",
@@ -71608,7 +71666,8 @@
     "Revisión de fuentes como paso añadido dentro de un servicio de chat para clientes.",
     "Auditoría puntual de una respuesta sensible antes de publicarla en una web."
    ],
-   "precio_orientativo": "20–50 € por revisión"
+   "precio_orientativo": "20–50 € por revisión",
+   "en": "en/json-prompts/datos-ia/auditor-respuestas-invenciones.json"
   },
   {
    "nombre": "Revisión de seguridad básica del negocio…",
@@ -71644,7 +71703,8 @@
     "Gancho gratuito en un boletín que lleva a un paquete de formación de pago.",
     "Filtro previo antes de una revisión de seguridad más completa."
    ],
-   "precio_orientativo": ""
+   "precio_orientativo": "",
+   "en": "en/prompts/seguridad/analizar-correo-sospechoso.md"
   },
   {
    "nombre": "Aviso semanal de copias de seguridad en n8n…",
@@ -71680,7 +71740,8 @@
     "Puerta de entrada de la consultoría de seguridad, con revisión trimestral de accesos.",
     "Ordenación de accesos al entrar un empleado o salir uno del equipo."
    ],
-   "precio_orientativo": "90–150 € por sesión"
+   "precio_orientativo": "90–150 € por sesión",
+   "en": "plugins/en/skills/contrasenas-y-accesos-desde-cero/SKILL.md"
   },
   {
    "nombre": "Revisión antisuplantación de correo…",
@@ -71734,7 +71795,8 @@
     "Revisión trimestral del inventario como cuota fija para clientes pequeños.",
     "Informe de riesgos entregado al cliente junto a la lista de acciones con plazos."
    ],
-   "precio_orientativo": "300–600 € por sesión e informe"
+   "precio_orientativo": "300–600 € por sesión e informe",
+   "en": "en/json-prompts/seguridad/inventario-datos-rgpd.json"
   },
   {
    "nombre": "Vigía de copias y certificados en n8n…",
@@ -71788,7 +71850,8 @@
     "Revisión trimestral dentro de un mantenimiento web para clientes pequeños.",
     "Búsqueda de claves de API olvidadas en repositorios de agencias con muchos proyectos."
    ],
-   "precio_orientativo": "150–400 € por auditoría"
+   "precio_orientativo": "150–400 € por auditoría",
+   "en": "plugins/en/agents/auditor-secretos-dependencias.md"
   },
   {
    "nombre": "Plan de copias de seguridad que se prueban…",
@@ -71860,7 +71923,8 @@
     "Imagen principal para fichas de producto de marketplace con normas de fondo.",
     "Variantes de foto por plataforma para pequeños fabricantes que venden en varios canales."
    ],
-   "precio_orientativo": "120–180 € por pack de 10 imágenes"
+   "precio_orientativo": "120–180 € por pack de 10 imágenes",
+   "en": "en/prompts/foto/foto-producto-estudio.md"
   },
   {
    "nombre": "Plan de revelado por lotes…",
@@ -71932,7 +71996,8 @@
     "Catálogo de diez o más productos con precio por referencia y estilo común.",
     "Ficha de encargo repetible que se entrega junto al presupuesto a cada cliente."
    ],
-   "precio_orientativo": "80–120 € por lote de 6 imágenes"
+   "precio_orientativo": "80–120 € por lote de 6 imágenes",
+   "en": "en/json-prompts/foto/ficha-foto-producto-plataforma.json"
   },
   {
    "nombre": "Revelado y entrega de fotos por lotes con n8n…",
@@ -72112,7 +72177,8 @@
     "Paquete de textos básicos para una tienda, con el borrador listo para la revisión legal.",
     "Plantilla adaptada a cada país de envío que vende la tienda."
    ],
-   "precio_orientativo": "40–80 € por texto"
+   "precio_orientativo": "40–80 € por texto",
+   "en": "en/prompts/ecommerce/borrador-envios-devoluciones.md"
   },
   {
    "nombre": "Comparador estructurado de pasarelas de pago…",
@@ -72130,7 +72196,8 @@
     "Tabla comparativa como entregable de una consultoría de pagos para pymes.",
     "Revisión de la elección de pasarela al pasar de pocas a muchas ventas al mes."
    ],
-   "precio_orientativo": "40–80 € por informe"
+   "precio_orientativo": "40–80 € por informe",
+   "en": "en/json-prompts/ecommerce/comparador-pasarelas-pago.json"
   },
   {
    "nombre": "Aviso automático de venta con Stripe Payment Links…",
@@ -72148,7 +72215,8 @@
     "Registro de cobros para infoproductores que venden pocas unidades al mes.",
     "Montaje del aviso como extra en servicios de tienda pequeña, con mantenimiento opcional."
    ],
-   "precio_orientativo": "60–150 € por montaje"
+   "precio_orientativo": "60–150 € por montaje",
+   "en": "en/recipes/ecommerce/aviso-venta-stripe-payment-links.md"
   },
   {
    "nombre": "Ficha de producto para ecommerce…",
@@ -72382,7 +72450,8 @@
     "Pack de vigilancia de marca y dominio para pymes que lanzan producto…",
     "Informe orientativo de nombre para agencias de branding que entregan propuestas…"
    ],
-   "precio_orientativo": "25–60 € por nombre comprobado"
+   "precio_orientativo": "25–60 € por nombre comprobado",
+   "en": "plugins/en/skills/comprobar-disponibilidad-marca/SKILL.md"
   },
   {
    "nombre": "Asesor para registrar una marca en España…",
@@ -72400,7 +72469,8 @@
     "Guía de trámites y checklist para estudios creativos que registran su marca…",
     "Sesión de orientación para pequeños negocios locales que quieren proteger su nombre…"
    ],
-   "precio_orientativo": "80–200 € por acompañamiento"
+   "precio_orientativo": "80–200 € por acompañamiento",
+   "en": "plugins/en/agents/asesor-registro-marca-espana.md"
   },
   {
    "nombre": "/comprobar-marca…",
@@ -72598,7 +72668,8 @@
     "Pack de comprobación de varios nombres para agencias que proponen marcas…",
     "Auditoría de marca y dominio para tiendas que van a cambiar de nombre…"
    ],
-   "precio_orientativo": "35–80 € por nombre comprobado"
+   "precio_orientativo": "35–80 € por nombre comprobado",
+   "en": "plugins/en/skills/comprobar-marca-nombre-dominio/SKILL.md"
   },
   {
    "nombre": "Gestor del servicio de registro de marca…",
@@ -72742,7 +72813,8 @@
     "Letra de himno o jingle para empresas que celebran un aniversario…",
     "Canciones a medida para parejas y familias como servicio de regalo…"
    ],
-   "precio_orientativo": "40–90 € por letra con una ronda de cam"
+   "precio_orientativo": "40–90 € por letra con una ronda de cam",
+   "en": "plugins/en/agents/compositor-letras-canciones.md"
   },
   {
    "nombre": "Prompt para pedir una remezcla o versión distinta de una can…",
@@ -72850,7 +72922,8 @@
     "Adaptación de jingles de marca para campañas en otro idioma…",
     "Doblaje cantado de vídeos corporativos o formativos…"
    ],
-   "precio_orientativo": "50–120 € por canción adaptada"
+   "precio_orientativo": "50–120 € por canción adaptada",
+   "en": "plugins/en/agents/adaptador-letras-doblaje.md"
   },
   {
    "nombre": "Música de fondo con IA para un vídeo…",
@@ -72904,7 +72977,8 @@
     "Transcripción de letras para academias de canto y coros…",
     "Entrega de pistas y letra por encargo para grupos que suben muchos temas…"
    ],
-   "precio_orientativo": "150–300 € por montaje"
+   "precio_orientativo": "150–300 € por montaje",
+   "en": "en/recipes/audio/automatizacion-separar-pistas-transcribir-letra.md"
   },
   {
    "nombre": "Montar un servicio de música con IA…",
@@ -72994,7 +73068,8 @@
     "Chat de presupuestos orientativos para una web de servicios musicales…",
     "Atención previa a la venta para agencias de publicidad sonora…"
    ],
-   "precio_orientativo": "150–300 € por configuración"
+   "precio_orientativo": "150–300 € por configuración",
+   "en": "en/json-prompts/audio/ficha-asistente-comercial-musica-ia.json"
   },
   {
    "nombre": "De pedido a entrega en un servicio de música con IA…",
@@ -73264,7 +73339,8 @@
     "Auditorías de portfolio para diseñadores que buscan clientes…",
     "Informes de mejora para academias que entregan webs a sus alumnos…"
    ],
-   "precio_orientativo": "15–25 € por diagnóstico"
+   "precio_orientativo": "15–25 € por diagnóstico",
+   "en": "plugins/en/agents/auditor-cv-web.md"
   },
   {
    "nombre": "Presupuesto exprés de currículum web…",
@@ -73354,7 +73430,8 @@
     "Servicio para pequeñas oficinas que revisa los móviles de trabajo cada trimestre.",
     "Charla de 30 minutos en una asociación de vecinos sobre privacidad y permisos del móvil."
    ],
-   "precio_orientativo": "20–40 € por revisión"
+   "precio_orientativo": "20–40 € por revisión",
+   "en": "plugins/en/skills/auditar-permisos-movil/SKILL.md"
   },
   {
    "nombre": "Plan de copia de seguridad del móvil…",
@@ -73498,7 +73575,8 @@
     "Recogida y borrado de móviles de empresa al dar de baja a un empleado, con justificante.",
     "Último paso de la renovación de móviles para particulares que quieren venderlos."
    ],
-   "precio_orientativo": "15–30 € por móvil"
+   "precio_orientativo": "15–30 € por móvil",
+   "en": "en/prompts/movil/checklist-borrado-seguro-movil.md"
   },
   {
    "nombre": "Clasificador de riesgo de permisos por app…",
@@ -73660,7 +73738,8 @@
     "Estimación de macros para lectores de un blog de hábitos, con respuesta por correo.",
     "Primera sesión de nutrición para entrenadores personales, con un informe de una página."
    ],
-   "precio_orientativo": "15–30 € por cálculo"
+   "precio_orientativo": "15–30 € por cálculo",
+   "en": "plugins/en/skills/calculo-calorias-macros/SKILL.md"
   },
   {
    "nombre": "Planificador de menú semanal…",
@@ -73768,7 +73847,8 @@
     "Revisión mensual de objetivos para clientes de un entrenador personal.",
     "Calculadora de macros en una página web para captar clientes de un gimnasio."
    ],
-   "precio_orientativo": "15–35 € por cálculo"
+   "precio_orientativo": "15–35 € por cálculo",
+   "en": "plugins/en/skills/calculadora-macros-tdee/SKILL.md"
   },
   {
    "nombre": "Lista de la compra desde un menú…",
@@ -73912,7 +73992,8 @@
     "Motor de cálculo de macros para una app de hábitos que vende planes personalizados.",
     "Integración de los planes de nutrición con la facturación de un pequeño servicio online."
    ],
-   "precio_orientativo": "20–40 € por lote de planes"
+   "precio_orientativo": "20–40 € por lote de planes",
+   "en": "en/json-prompts/salud/esquema-plan-nutricional.json"
   },
   {
    "nombre": "Servicio automático de plan de nutrición con cobro incluido…",
@@ -73984,7 +74065,8 @@
     "Recordatorios trimestrales de modelos para freelancers que no tienen gestor.",
     "Taller de una hora sobre qué modelos presenta un autónomo y cuándo."
    ],
-   "precio_orientativo": "15–30 € por calendario"
+   "precio_orientativo": "15–30 € por calendario",
+   "en": "en/prompts/finanzas/calendario-fiscal-autonomo.md"
   },
   {
    "nombre": "Extracción de datos de factura española…",
@@ -74002,7 +74084,8 @@
     "Registro de gastos para una pyme pequeña que todavía lleva las facturas en papel.",
     "Preparación de datos para una gestoría que recibe muchas facturas de sus clientes."
    ],
-   "precio_orientativo": "20–40 € por lote mensual"
+   "precio_orientativo": "20–40 € por lote mensual",
+   "en": "en/json-prompts/finanzas/extraccion-datos-factura.json"
   },
   {
    "nombre": "Registro automático de facturas de gastos por email…",
@@ -74074,7 +74157,8 @@
     "Repaso de facturas para una pyme antes de cada fecha de presentación trimestral.",
     "Método de trabajo para un asesor que atiende a varios autónomos a la vez."
    ],
-   "precio_orientativo": "40–100 € por cierre"
+   "precio_orientativo": "40–100 € por cierre",
+   "en": "plugins/en/commands/cierre-trimestral.md"
   },
   {
    "nombre": "Email de cierre trimestral para la gestoría…",
@@ -74128,7 +74212,8 @@
     "Preparación de los modelos 303 y 130 para un cliente que delega toda la parte de facturas.",
     "Paquete de cierre con entrega de cifras para revisar con su gestor."
    ],
-   "precio_orientativo": "40–100 € por trimestre"
+   "precio_orientativo": "40–100 € por trimestre",
+   "en": "plugins/en/skills/cierre-trimestral-autonomo/SKILL.md"
   },
   {
    "nombre": "Auditor de facturas deducibles…",
@@ -74146,7 +74231,8 @@
     "Control de calidad interno para una gestoría que atiende a varios clientes.",
     "Revisión de gastos de un freelancer que trabaja desde casa y usa el coche para su actividad."
    ],
-   "precio_orientativo": "30–70 € por lote"
+   "precio_orientativo": "30–70 € por lote",
+   "en": "plugins/en/agents/auditor-facturas-deducibles.md"
   },
   {
    "nombre": "Presupuesto para servicio contable…",
@@ -74362,7 +74448,8 @@
     "Fichas multiplataforma para un juego que llega a Steam y Google Play a la vez.",
     "Actualización de textos de tienda cada vez que el juego saca una nueva versión."
    ],
-   "precio_orientativo": "20–50 € por ficha"
+   "precio_orientativo": "20–50 € por ficha",
+   "en": "plugins/en/commands/ficha-tienda.md"
   },
   {
    "nombre": "Agente de precio de lanzamiento…",
@@ -74380,7 +74467,8 @@
     "Revisión de precio antes de cada rebaja de temporada para un estudio con varios títulos.",
     "Informe comparativo de precios para un juego que sale en PC y en consola."
    ],
-   "precio_orientativo": "40–100 € por sesión"
+   "precio_orientativo": "40–100 € por sesión",
+   "en": "plugins/en/agents/agente-precio-lanzamiento.md"
   },
   {
    "nombre": "Generador de descripcion corta y larga para Steam…",
@@ -74434,7 +74522,8 @@
     "Vender el mantenimiento mensual del flujo y la revisión de la hoja de licencias a un estudio…",
     "Adaptar la misma automatización a productoras que gestionan licencias de música o stock…"
    ],
-   "precio_orientativo": "80–250 € por flujo montado"
+   "precio_orientativo": "80–250 € por flujo montado",
+   "en": "en/recipes/juegos/n8n-aviso-caducidad-licencias-assets.md"
   },
   {
    "nombre": "Auditor de licencias de assets para videojuegos…",
@@ -74452,7 +74541,8 @@
     "Revisión de assets antes de publicar en Steam para desarrolladores que usan tiendas de packs…",
     "Informe de riesgo legal de assets como paso previo a una firma de publicación…"
    ],
-   "precio_orientativo": "150–300 € por proyecto"
+   "precio_orientativo": "150–300 € por proyecto",
+   "en": "plugins/en/skills/auditor-licencias-assets/SKILL.md"
   },
   {
    "nombre": "Redactor de ficha de tienda…",
@@ -74506,7 +74596,8 @@
     "Documento de demo con lo que entra, lo que se corta y cómo termina…",
     "Revisión de la demo antes de subirla a Steam o itch.io…"
    ],
-   "precio_orientativo": "60–150 € por demo planificada"
+   "precio_orientativo": "60–150 € por demo planificada",
+   "en": "en/prompts/juegos/plan-demo-juego.md"
   },
   {
    "nombre": "Informe de preparación de lanzamiento…",
@@ -74722,7 +74813,8 @@
     "Plantilla de montaje para marcas que repiten el mismo tipo de vídeo…",
     "Documento de estilo de edición para equipos que publican cada semana…"
    ],
-   "precio_orientativo": "15–30 € por brief"
+   "precio_orientativo": "15–30 € por brief",
+   "en": "en/prompts/video/brief-edicion-formato-recurrente.md"
   },
   {
    "nombre": "Extractor de clips cortos desde vídeo largo…",
@@ -74848,7 +74940,8 @@
     "Ficha de alcance para evitar malentendidos en proyectos de vídeo…",
     "Entrada de datos para automatizar presupuestos y planes de montaje…"
    ],
-   "precio_orientativo": "20–40 € por ficha"
+   "precio_orientativo": "20–40 € por ficha",
+   "en": "en/json-prompts/video/brief-proyecto-video.json"
   },
   {
    "nombre": "Automatizar solicitudes de presupuesto de edición de vídeo…",
@@ -74884,7 +74977,8 @@
     "Base de datos de candidatos para autónomos de RRHH…",
     "Preparación de fichas para procesos de contratación de pymes…"
    ],
-   "precio_orientativo": "20–60 € por lote pequeño"
+   "precio_orientativo": "20–60 € por lote pequeño",
+   "en": "plugins/en/skills/extraer-datos-cv/SKILL.md"
   },
   {
    "nombre": "Revisor de datos extraídos de un CV…",
@@ -75010,7 +75104,8 @@
     "Servicio de preselección de CV para agencias con varias ofertas abiertas…",
     "Informe de encaje de candidatos para autónomos de selección…"
    ],
-   "precio_orientativo": "25–60 € por lote"
+   "precio_orientativo": "25–60 € por lote",
+   "en": "plugins/en/agents/cribador-candidatos.md"
   },
   {
    "nombre": "Experiencia laboral del CV en tabla cronológica…",
@@ -75082,7 +75177,8 @@
     "Mantenimiento mensual del flujo y de la hoja para una agencia…",
     "Adaptación del flujo para procesos de selección con varias ofertas…"
    ],
-   "precio_orientativo": "150–300 € por montaje"
+   "precio_orientativo": "150–300 € por montaje",
+   "en": "en/recipes/datos-ia/cv-drive-a-sheets.md"
   },
   {
    "nombre": "Extracción de datos de CV como servicio…",
@@ -75100,7 +75196,8 @@
     "Procesamiento de CV para autónomos de RRHH que reciben muchos candidatos…",
     "Cuota mensual de extracción de CV para pymes con contratación continua…"
    ],
-   "precio_orientativo": "40–150 € por lote"
+   "precio_orientativo": "40–150 € por lote",
+   "en": "plugins/en/skills/extraccion-datos-cv/SKILL.md"
   },
   {
    "nombre": "Revisor de extracción de CV…",
@@ -75154,7 +75251,8 @@
     "Extracción de datos para autónomos de RRHH con un chat de IA…",
     "Plantilla de ficha para entrevistas de selección sencillas…"
    ],
-   "precio_orientativo": ""
+   "precio_orientativo": "",
+   "en": "en/prompts/datos-ia/prompt-extraer-cv-texto.md"
   },
   {
    "nombre": "Esquema de extracción estructurada de CV…",
@@ -75370,7 +75468,8 @@
     "Mantenimiento mensual de despliegues, actualizaciones y copias…",
     "Puesta en marcha de webs de academias y asesorías en un servidor propio…"
    ],
-   "precio_orientativo": "200–500 € por montaje"
+   "precio_orientativo": "200–500 € por montaje",
+   "en": "plugins/en/skills/montar-coolify-para-clientes/SKILL.md"
   },
   {
    "nombre": "Monta Frappe LMS para un cliente…",
@@ -75406,7 +75505,8 @@
     "Storyboards y planos para agencias que producen vídeo corto…",
     "Paquete de b-roll generado con IA para negocios locales…"
    ],
-   "precio_orientativo": "80–250 € por vídeo"
+   "precio_orientativo": "80–250 € por vídeo",
+   "en": "plugins/en/skills/cine-con-ia/SKILL.md"
   },
   {
    "nombre": "Estructura de anuncios que convierten…",
@@ -75460,7 +75560,8 @@
     "Imágenes para anuncios y redes de marcas pequeñas…",
     "Pack de dos o tres variantes de concepto por encargo…"
    ],
-   "precio_orientativo": "40–120 € por encargo"
+   "precio_orientativo": "40–120 € por encargo",
+   "en": "plugins/en/skills/fotos-producto-ia/SKILL.md"
   },
   {
    "nombre": "Clientes para tu negocio local…",
@@ -75532,7 +75633,8 @@
     "Vender un posicionamiento revisado por trimestre a negocios locales con tres competidores…",
     "Preparar el informe de diferenciación que una agencia entrega como primer entregable…"
    ],
-   "precio_orientativo": "80–250 € por análisis"
+   "precio_orientativo": "80–250 € por análisis",
+   "en": "plugins/en/commands/analisis-competencia.md"
   },
   {
    "nombre": "/angulos-foto · 8 ángulos para fotos de producto…",
@@ -75550,7 +75652,8 @@
     "Preparar la foto principal de un catálogo de Amazon con ángulos probados por categoría…",
     "Ofrecer a marcas pequeñas un tablero de encuadres para usar en redes durante un trimestre…"
    ],
-   "precio_orientativo": "40–120 € por producto"
+   "precio_orientativo": "40–120 € por producto",
+   "en": "plugins/en/commands/angulos-foto.md"
   },
   {
    "nombre": "/auditoria-seguridad-web · Revisa la seguridad de tu web…",
@@ -75568,7 +75671,8 @@
     "Dejar a una tienda la lista de cabeceras, copias y accesos revisada y documentada cada trimestre…",
     "Preparar a una agencia el checklist de entrega de webs antes de pasarlas al cliente…"
    ],
-   "precio_orientativo": "60–200 € por revisión"
+   "precio_orientativo": "60–200 € por revisión",
+   "en": "plugins/en/commands/auditoria-seguridad-web.md"
   },
   {
    "nombre": "/brief-logo · Brief de logo y marca…",
@@ -75586,7 +75690,8 @@
     "Preparar el encargo de logo que un freelance manda a su diseñador para evitar rondas de cambios…",
     "Generar tres propuestas de identidad con IA como primera fase de un proyecto de marca…"
    ],
-   "precio_orientativo": "60–250 € por brief"
+   "precio_orientativo": "60–250 € por brief",
+   "en": "plugins/en/commands/brief-logo.md"
   },
   {
    "nombre": "/calendario-contenidos · Plan de 30 días para redes…",
@@ -75658,7 +75763,8 @@
     "Montar el correo de lanzamiento de una tienda online para una temporada concreta…",
     "Vender secuencias de cinco emails a autónomos que venden un curso o un servicio digital…"
    ],
-   "precio_orientativo": "80–250 € por secuencia"
+   "precio_orientativo": "80–250 € por secuencia",
+   "en": "plugins/en/commands/email-ventas.md"
   },
   {
    "nombre": "/faq-negocio · Preguntas frecuentes y respuestas…",
@@ -75676,7 +75782,8 @@
     "Preparar respuestas rápidas para una tienda online que recibe las mismas dudas de envío y devolución…",
     "Revisar la atención de un negocio local y dejar un listado de preguntas que deben pasar a una persona…"
    ],
-   "precio_orientativo": "60–200 € por negocio"
+   "precio_orientativo": "60–200 € por negocio",
+   "en": "plugins/en/commands/faq-negocio.md"
   },
   {
    "nombre": "/ficha-google · optimiza tu ficha de Google Maps…",
@@ -75748,7 +75855,8 @@
     "Preparar dos guiones al mes para un negocio local que quiere presencia en TikTok o Reels…",
     "Entregar a creadores pequeños un guion y ganchos para cada producto que promocionan…"
    ],
-   "precio_orientativo": "30–120 € por guion"
+   "precio_orientativo": "30–120 € por guion",
+   "en": "plugins/en/commands/guion-tiktok.md"
   },
   {
    "nombre": "/guion-youtube · guion completo de YouTube…",
@@ -75910,7 +76018,8 @@
     "Preparar tres niveles de precio para una agencia que lanza un paquete nuevo…",
     "Vender una sesión de precios de una hora a pequeños negocios con cuota de seguimiento…"
    ],
-   "precio_orientativo": "80–250 € por análisis"
+   "precio_orientativo": "80–250 € por análisis",
+   "en": "plugins/en/commands/precio-servicio.md"
   },
   {
    "nombre": "/preparar-entrevista · ensaya tu entrevista…",
@@ -76036,7 +76145,8 @@
     "Convertir un webinar grabado en piezas para una semana de publicaciones…",
     "Vender a creadores la reutilización de su contenido para cada red…"
    ],
-   "precio_orientativo": "40–120 € por contenido"
+   "precio_orientativo": "40–120 € por contenido",
+   "en": "plugins/en/commands/reutilizar-contenido.md"
   },
   {
    "nombre": "/seo-articulo · artículo de blog para Google…",
@@ -76072,7 +76182,8 @@
     "Preparar un flujo de borradores de respuesta para una clínica o un negocio de servicios…",
     "Ofrecer a pymes un servicio de borradores de atención con revisión semanal…"
    ],
-   "precio_orientativo": "100–300 € por instalación"
+   "precio_orientativo": "100–300 € por instalación",
+   "en": "plugins/en/agents/atencion-al-cliente.md"
   },
   {
    "nombre": "Agente director de fotografía…",
@@ -76090,7 +76201,8 @@
     "Ahorrar sesiones de fotos a una tienda que lanza cinco productos al mes…",
     "Vender sets de imagen por producto a tiendas pequeñas…"
    ],
-   "precio_orientativo": "40–150 € por set"
+   "precio_orientativo": "40–150 € por set",
+   "en": "plugins/en/agents/director-de-fotografia.md"
   },
   {
    "nombre": "Agente editor de vídeo…",
@@ -76108,7 +76220,8 @@
     "Preparar tres versiones de un vídeo para varias redes en un solo encargo…",
     "Cobrar por edición de vídeos cortos a marcas y creadores con plan de montaje incluido…"
    ],
-   "precio_orientativo": "30–120 € por vídeo"
+   "precio_orientativo": "30–120 € por vídeo",
+   "en": "plugins/en/agents/editor-de-video.md"
   },
   {
    "nombre": "/aclarar-encargo: de idea vaga a especificación…",
@@ -76126,7 +76239,8 @@
     "Preparar especificaciones para clientes de desarrollo web que llegan con ideas a medias…",
     "Ofrecer a consultoras una plantilla de especificación con preguntas por sector…"
    ],
-   "precio_orientativo": "60–200 € por especificación"
+   "precio_orientativo": "60–200 € por especificación",
+   "en": "plugins/en/commands/aclarar-encargo-especificacion.md"
   },
   {
    "nombre": "Anuncio con urgencia real: textos que no engañan…",
@@ -76144,7 +76258,8 @@
     "Preparar anuncios de lanzamiento para academias que tienen plazas limitadas de verdad…",
     "Vender packs de textos revisados por campaña a autónomos con ofertas puntuales…"
    ],
-   "precio_orientativo": "30–80 € por pack"
+   "precio_orientativo": "30–80 € por pack",
+   "en": "en/prompts/marketing/anuncio-urgencia-real.md"
   },
   {
    "nombre": "Voz del cliente: qué quieren de verdad, según lo que ya te h…",
@@ -76162,7 +76277,8 @@
     "Analizar reseñas de un hotel o restaurante para priorizar mejoras de servicio…",
     "Preparar la base de textos de una web nueva con las frases reales de sus clientes…"
    ],
-   "precio_orientativo": "80–250 € por informe"
+   "precio_orientativo": "80–250 € por informe",
+   "en": "en/prompts/negocio/voz-del-cliente-analisis.md"
   },
   {
    "nombre": "Propuesta de valor: por qué te eligen a ti y no a otro…",
@@ -76360,7 +76476,8 @@
     "Preparar una revisión trimestral de gastos legales para un departamento jurídico pequeño…",
     "Vender una auditoría puntual de un conjunto de facturas con borrador de preguntas…"
    ],
-   "precio_orientativo": "150–400 € por conjunto de facturas"
+   "precio_orientativo": "150–400 € por conjunto de facturas",
+   "en": "plugins/en/skills/auditar-facturas-abogados/SKILL.md"
   },
   {
    "nombre": "Entrenador de escucha activa para llamadas comerciales…",
@@ -76396,7 +76513,8 @@
     "Revisar la configuración de un método de pago en una tienda ya activa…",
     "Cobrar la puesta en marcha con textos y pruebas incluidos a comercios de moda o decoración…"
    ],
-   "precio_orientativo": "200–600 € por instalación"
+   "precio_orientativo": "200–600 € por instalación",
+   "en": "plugins/en/agents/agente-pago-a-plazos.md"
   },
   {
    "nombre": "Plan de arranque para clientes empresa…",
@@ -76450,7 +76568,8 @@
     "Ofrecer una cuota mensual de gestión de episodios a pequeños podcasts de empresa…",
     "Vender la puesta a punto del flujo de publicación a estudios de audio…"
    ],
-   "precio_orientativo": "30–100 € por episodio"
+   "precio_orientativo": "30–100 € por episodio",
+   "en": "plugins/en/commands/episodio-podcast.md"
   },
   {
    "nombre": "Comando /guion-video-presentacion, con ejemplo de cómo se es…",
@@ -76504,7 +76623,8 @@
     "Dar una sesión de explicación y un informe a empresas de software sanitario…",
     "Ofrecer un plan de barreras y registro para proyectos que ya usan Claude Code…"
    ],
-   "precio_orientativo": "200–600 € por revisión"
+   "precio_orientativo": "200–600 € por revisión",
+   "en": "plugins/en/commands/barreras-agente-pacientes.md"
   },
   {
    "nombre": "/cambios-juego…",
@@ -76522,7 +76642,8 @@
     "Montar el flujo de Pull Requests de un equipo pequeño de desarrollo de juegos…",
     "Ofrecer a estudios una guía de commits adaptada a su motor…"
    ],
-   "precio_orientativo": "60–200 € por revisión"
+   "precio_orientativo": "60–200 € por revisión",
+   "en": "plugins/en/commands/cambios-juego-commit-pr-contexto.md"
   },
   {
    "nombre": "/carta-con-tu-voz…",
@@ -76558,7 +76679,8 @@
     "Dar seguimiento a varias ofertas a la vez con un calendario de recordatorios…",
     "Vender paquetes de candidaturas preparadas y revisadas por el candidato…"
    ],
-   "precio_orientativo": "20–60 € por candidatura"
+   "precio_orientativo": "20–60 € por candidatura",
+   "en": "plugins/en/commands/candidatura-guiada-con-paradas.md"
   },
   {
    "nombre": "Triaje de ofertas: ¿merece la pena aplicar?",
@@ -76612,7 +76734,8 @@
     "Sesión de preparación de vídeos con IA para creadores que quieren ahorrar intentos antes de generar.",
     "Banda sonora y ambiente por escena para vídeos cortos de tiendas o restaurantes, entregada como guion de sonido."
    ],
-   "precio_orientativo": "25–80 € por proyecto"
+   "precio_orientativo": "25–80 € por proyecto",
+   "en": "en/prompts/audio/director-planos-sonido-video-ia.md"
   },
   {
    "nombre": "Simulador de entrevista técnica por tecnología…",
@@ -76684,7 +76807,8 @@
     "Revisión de las instrucciones de un asistente de atención al cliente antes de publicarlo.",
     "Taller de buenas prácticas de instrucciones para empresas que montan su primer chatbot."
    ],
-   "precio_orientativo": "80–200 € por sesión"
+   "precio_orientativo": "80–200 € por sesión",
+   "en": "en/prompts/infraestructura/radiografia-prompts-de-sistema.md"
   },
   {
    "nombre": "Del proyecto al README y a la entrevista…",
@@ -76756,7 +76880,8 @@
     "Vídeo currículum para candidatos a un puesto concreto, adaptado a cada red social.",
     "Paquete de guiones para una agencia que presenta a sus profesionales en vídeo."
    ],
-   "precio_orientativo": "40–120 € por guion"
+   "precio_orientativo": "40–120 € por guion",
+   "en": "plugins/en/agents/guionista-video-corto-presentacion.md"
   },
   {
    "nombre": "Preparador de caso de producto y requisitos…",
@@ -77206,7 +77331,8 @@
     "Seguimiento de leads y gasto en anuncios frente a lo previsto para un negocio local.",
     "Ajuste de presupuestos trimestrales para una tienda que se desvía cada mes."
    ],
-   "precio_orientativo": "60–150 € por informe"
+   "precio_orientativo": "60–150 € por informe",
+   "en": "plugins/en/agents/prevision-vs-realidad.md"
   },
   {
    "nombre": "Detalles con clientes…",
@@ -77404,7 +77530,8 @@
     "Tres versiones de mensaje para una web de servicios probadas con clientes reales.",
     "Revisión de la propuesta de valor de una marca antes de un lanzamiento."
    ],
-   "precio_orientativo": "100–250 € por taller"
+   "precio_orientativo": "100–250 € por taller",
+   "en": "plugins/en/agents/afilar-propuesta-de-valor.md"
   },
   {
    "nombre": "Beneficios en euros para tu propuesta…",
@@ -77548,7 +77675,8 @@
     "Puesta en marcha de flujos de limpieza y publicación para podcasters, cobrada por montaje.",
     "Revisión de comandos de terceros antes de que un equipo de audio los use."
    ],
-   "precio_orientativo": "50–150 € por paquete"
+   "precio_orientativo": "50–150 € por paquete",
+   "en": "plugins/en/commands/buscar-comandos-audio.md"
   },
   {
    "nombre": "Buscador y revisor de comandos de cobros y facturas…",
@@ -77566,7 +77694,8 @@
     "Filtro de herramientas de exportación de pagos para una pyme con tienda online.",
     "Revisión de comandos de facturación antes de automatizar la contabilidad de un autónomo."
    ],
-   "precio_orientativo": "80–200 € por revisión"
+   "precio_orientativo": "80–200 € por revisión",
+   "en": "plugins/en/commands/buscar-comandos-cobros-facturas.md"
   },
   {
    "nombre": "Constructor de prompts para Claude en tu tienda online…",
@@ -77638,7 +77767,8 @@
     "Búsqueda de herramientas de rúbricas para un centro educativo, con revisión de licencias.",
     "Formación de una hora para profesores que quieren automatizar fichas y presentaciones."
    ],
-   "precio_orientativo": "40–100 € por hora"
+   "precio_orientativo": "40–100 € por hora",
+   "en": "plugins/en/skills/buscar-skill-para-tarea-de-clase/SKILL.md"
   },
   {
    "nombre": "Kit de skills para la comunidad de un juego…",
@@ -77674,7 +77804,8 @@
     "Igualado de volumen para academias que graban lecciones o cursos en audio.",
     "Preparación técnica de audios para locuciones corporativas y formación interna."
    ],
-   "precio_orientativo": "15–40 € por episodio"
+   "precio_orientativo": "15–40 € por episodio",
+   "en": "plugins/en/skills/audio-ffmpeg-sin-tocar-originales/SKILL.md"
   },
   {
    "nombre": "Plugins oficiales primero, con ficha de verificación…",
@@ -78052,7 +78183,8 @@
     "Análisis de mapeo para integradores de Odoo que quieren reducir errores de implantación.",
     "Revisión de guías de facturación EDI con casos de prueba para proveedores."
    ],
-   "precio_orientativo": "800–2500 € por especificación"
+   "precio_orientativo": "800–2500 € por especificación",
+   "en": "plugins/en/skills/especificacion-edi-odoo/SKILL.md"
   },
   {
    "nombre": "Fábrica de vídeos cortos por lote…",
@@ -78214,7 +78346,8 @@
     "Revisión de presentaciones de ventas para directivos y clientes.",
     "Plantillas de cuadro de mando para autónomos con gráficos adecuados."
    ],
-   "precio_orientativo": "80–250 € por informe"
+   "precio_orientativo": "80–250 € por informe",
+   "en": "plugins/en/skills/elegir-y-revisar-graficos/SKILL.md"
   },
   {
    "nombre": "Campaña de anuncios que abren WhatsApp…",
@@ -78448,7 +78581,8 @@
     "Revisión de mensaje para pymes con anuncios o presentaciones poco claras.",
     "Versiones de propuesta de valor para lanzar un servicio nuevo."
    ],
-   "precio_orientativo": "200–500 € por taller"
+   "precio_orientativo": "200–500 € por taller",
+   "en": "plugins/en/agents/afinador-propuesta-de-valor.md"
   },
   {
    "nombre": "Prioriza las empresas que visitan tu web…",
@@ -78898,7 +79032,8 @@
     "Auditoría de ideas para emprendedores que van a gastar ahorros: pruebas baratas priorizadas.",
     "Taller de pensamiento crítico para equipos que necesitan validar un proyecto nuevo."
    ],
-   "precio_orientativo": "100–250 € por proyecto"
+   "precio_orientativo": "100–250 € por proyecto",
+   "en": "plugins/en/skills/autopsia-previa-plan/SKILL.md"
   },
   {
    "nombre": "Cuaderno de traspaso entre sesiones…",
@@ -79222,7 +79357,8 @@
     "Informes mensuales de resultados en presentación para clientes con poco tiempo.",
     "Material de formación interno para equipos pequeños, con notas del ponente."
    ],
-   "precio_orientativo": "60–180 € por presentación"
+   "precio_orientativo": "60–180 € por presentación",
+   "en": "plugins/en/skills/presentaciones-powerpoint-notas-plantilla/SKILL.md"
   },
   {
    "nombre": "Semáforo para documentos legales antes de usar una IA…",
@@ -79618,7 +79754,8 @@
     "Asistente de llamadas fuera de horario para restaurantes con reservas.",
     "Puesta en marcha de un asistente de voz con prueba de una semana y revisión de guion."
    ],
-   "precio_orientativo": "400–1000 € por proyecto"
+   "precio_orientativo": "400–1000 € por proyecto",
+   "en": "plugins/en/skills/asistente-telefonico-voz-ia/SKILL.md"
   },
   {
    "nombre": "Atención por WhatsApp Business sin estar pegado al móvil…",
@@ -79762,7 +79899,8 @@
     "Limpieza de listas de clientes y productos desordenadas, con informe de cambios.",
     "Plantilla de seguimiento de proyectos con gráficos automáticos para pymes."
    ],
-   "precio_orientativo": "60–250 € por hoja"
+   "precio_orientativo": "60–250 € por hoja",
+   "en": "plugins/en/skills/hojas-de-calculo-revisables/SKILL.md"
   },
   {
    "nombre": "Bigin ordenado y sincronizado…",
@@ -79942,7 +80080,8 @@
     "Revisión de formularios de alta para SaaS pequeños que pierden usuarios en el paso de pago.",
     "Plan de pruebas A/B sencillas para embudos de venta de cursos y servicios de consultoría."
    ],
-   "precio_orientativo": "200–600 € por proyecto"
+   "precio_orientativo": "200–600 € por proyecto",
+   "en": "plugins/en/agents/diseno-que-ayuda-a-decidir.md"
   },
   {
    "nombre": "Beneficios contrastados con clientes…",
@@ -80392,7 +80531,8 @@
     "Plantillas de presupuesto de dos hogares para mediadores familiares y trabajadores sociales.",
     "Taller de organización de documentos para colectivos que atienden a familias en separación."
    ],
-   "precio_orientativo": "50–150 € por sesión"
+   "precio_orientativo": "50–150 € por sesión",
+   "en": "plugins/en/agents/acompanante-practico-separacion.md"
   },
   {
    "nombre": "Presupuestador de proyectos con control de cambios…",
@@ -81238,7 +81378,8 @@
     "Brief de microinteracciones para apps pequeñas de reservas.",
     "Revisión de estados de carga y error para web de servicios locales."
    ],
-   "precio_orientativo": "200–600 € por auditoría"
+   "precio_orientativo": "200–600 € por auditoría",
+   "en": "plugins/en/agents/afinador-movimiento-respuesta-pantalla.md"
   },
   {
    "nombre": "Brújula de giro profesional…",
@@ -81256,7 +81397,8 @@
     "Plan de pruebas a 90 días para autónomos que quieren cambiar de nicho.",
     "Guion para la primera reunión de orientación laboral o de mentoría."
    ],
-   "precio_orientativo": "80–250 € por sesión"
+   "precio_orientativo": "80–250 € por sesión",
+   "en": "plugins/en/agents/brujula-giro-profesional.md"
   },
   {
    "nombre": "Mapa de ingresos repartidos…",
@@ -82102,7 +82244,8 @@
     "Ficha de voz y guía de estilo para la web de un despacho o pyme, reutilizable en todos sus textos.",
     "Revisión de artículos antiguos del blog de un cliente, con datos corregidos y fuentes añadidas."
    ],
-   "precio_orientativo": "120–300 € por artículo"
+   "precio_orientativo": "120–300 € por artículo",
+   "en": "plugins/en/skills/articulos-blog-voz-y-fuentes/SKILL.md"
   },
   {
    "nombre": "Parte diario de reservas y devoluciones en Booqable…",
@@ -82246,7 +82389,8 @@
     "Revisión trimestral de campañas acumuladas para detectar gasto sin control.",
     "Limpieza de cuentas heredadas de un cliente antes de asignar un nuevo presupuesto."
    ],
-   "precio_orientativo": "150–400 € por proyecto"
+   "precio_orientativo": "150–400 € por proyecto",
+   "en": "plugins/en/skills/auditoria-campanas-duplicadas-paradas/SKILL.md"
   },
   {
    "nombre": "CRM al día: contactos, empresas y tareas de seguimiento…",
@@ -82426,7 +82570,8 @@
     "Guion y lista de avisos para un gimnasio o academia en temporada de cambios.",
     "Plan de avisos de servicio para negocios locales con cierre por obras o vacaciones."
    ],
-   "precio_orientativo": "150–400 € por campaña"
+   "precio_orientativo": "150–400 € por campaña",
+   "en": "plugins/en/skills/avisos-llamada-automatica-con-permiso/SKILL.md"
   },
   {
    "nombre": "Secuencia de emails para clientes nuevos…",
@@ -82660,7 +82805,8 @@
     "Apuntes de reuniones con recordatorios para consultoras que tienen muchas llamadas.",
     "Mapa de campos y duplicados para empresas que migran contactos a folk desde hojas de cálculo."
    ],
-   "precio_orientativo": "150–400 € por proyecto"
+   "precio_orientativo": "150–400 € por proyecto",
+   "en": "plugins/en/skills/agenda-contactos-folk/SKILL.md"
   },
   {
    "nombre": "Formulario de contacto a tu email con Formcarry…",
@@ -83444,7 +83590,8 @@
     "Panel de facturas vencidas para una pyme, con revisión semanal de la lista de impagos.",
     "Plantillas de recordatorio de pago en tres tonos, revisadas con el cliente antes de activar el escenario."
    ],
-   "precio_orientativo": "150–300 € por montaje"
+   "precio_orientativo": "150–300 € por montaje",
+   "en": "en/recipes/finanzas/make-recordatorio-facturas-vencidas-sheets.md"
   },
   {
    "nombre": "Make (make.com): aviso de reseñas nuevas de Google con borra…",

@@ -7,6 +7,8 @@ quien empieza, con qué hace cada una, cómo se usa, cuándo conviene y cómo ga
 
 [English version](README.en.md) · Licencia del contenido: [CC BY 4.0](LICENSE) · Código: [MIT](LICENSE-CODE)
 
+**Ya en inglés:** 147 de las mejores piezas, en [en/](en/README.md) y en el plugin `arsenal-en`.
+
 ## Qué es cada cosa
 
 | Tipo | Qué es | Dónde se usa |

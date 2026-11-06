@@ -1,0 +1,39 @@
+{
+  "tarea": "product_photo",
+  "encargo": {
+    "producto": "[PRODUCT, MATERIAL AND COLOR]",
+    "marca": "[BRAND NAME]",
+    "uso_final": ["store", "instagram", "catalog"],
+    "a_quien_le_habla": "[TYPICAL CUSTOMER, AGE AND WHAT THEY ARE LOOKING FOR]"
+  },
+  "escena": {
+    "fondo": { "tipo": "plain", "color": "[BACKGROUND COLOR]", "alternativa": "light stone surface" },
+    "superficie": "[TABLE, FABRIC, MARBLE, WOOD]",
+    "atrezo": { "permitido": true, "maximo_elementos": 2, "nunca": ["other brands", "made-up text", "blurry hands"] }
+  },
+  "camara": {
+    "plano": "whole product with space around it",
+    "angulo": "three-quarter view at product height",
+    "lente_equivalente_mm": 85,
+    "profundidad_de_campo": "medium, label legible"
+  },
+  "luz": {
+    "principal": { "tipo": "large window at 45 degrees", "dureza": "soft" },
+    "relleno": "white bounce on the opposite side",
+    "contraluz": { "activo": true, "intensidad": "low", "para": "separate from the background" },
+    "sombra": "short and defined under the product"
+  },
+  "salidas": [
+    { "nombre": "main_store", "proporcion": "1:1", "pixeles": "2000x2000", "fondo": "pure white", "margen_por_ciento": 12 },
+    { "nombre": "instagram_feed", "proporcion": "4:5", "pixeles": "1080x1350", "fondo": "styled setting" },
+    { "nombre": "story", "proporcion": "9:16", "pixeles": "1080x1920", "fondo": "styled setting", "espacio_para_texto": "top third" },
+    { "nombre": "detail", "proporcion": "1:1", "pixeles": "2000x2000", "enfoque": "texture and label" }
+  ],
+  "variantes": { "cantidad": 4, "cambiar_solo": ["angle", "props"], "mantener": ["product", "color", "light"] },
+  "limites": {
+    "personas": { "caras_visibles": false, "motivo": "a generated or retouched face needs that person's permission and a notice that the image is generated" },
+    "texto_en_imagen": "only text that actually exists on the packaging; if you don't have it, leave it plain",
+    "fidelidad": "the product must look like the real one; if shape, color, or label changes, it is discarded"
+  },
+  "revision": { "quien": "the client", "comprobar": ["real color", "proportions", "legible label", "no strange objects"], "rondas_incluidas": 1 }
+}
