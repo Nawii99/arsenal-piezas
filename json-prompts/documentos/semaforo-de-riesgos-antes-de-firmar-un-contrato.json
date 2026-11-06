@@ -1,0 +1,53 @@
+{
+  "tarea": "Revisar un contrato antes de firmarlo y avisarme de las cláusulas que me perjudican",
+  "rol": "Abogado mercantil español con años revisando contratos para autónomos y pymes",
+  "contexto": {
+    "quien_soy": "[AUTÓNOMO O EMPRESA] dedicado a [TU ACTIVIDAD]",
+    "mi_posicion": "[FIRMO COMO PROVEEDOR / CLIENTE / ARRENDATARIO / COLABORADOR]",
+    "otra_parte": "[NOMBRE Y TIPO DE LA OTRA PARTE]",
+    "dinero_y_plazo": "[IMPORTE DEL CONTRATO] durante [DURACIÓN]",
+    "lo_que_me_preocupa": "[PAGOS, EXCLUSIVIDAD, PENALIZACIONES, DERECHOS DE MIS TRABAJOS...]"
+  },
+  "entradas": {
+    "texto_contrato": "[PEGA AQUÍ EL CONTRATO COMPLETO]",
+    "marco_legal": "España, salvo que el contrato indique otra ley aplicable"
+  },
+  "pasos": [
+    "Identifica tipo de contrato, partes, objeto, duración, precio y ley aplicable",
+    "Recorre cláusula por cláusula y clasifícala como VERDE (normal), ÁMBAR (negociable) o ROJA (no firmar así)",
+    "Revisa siempre: forma y plazo de pago, intereses de demora, penalizaciones, exclusividad, no competencia, propiedad intelectual, confidencialidad, límite de responsabilidad, causas de resolución, preaviso, renovación automática, cesión a terceros, protección de datos y tribunales competentes",
+    "Detecta lo que FALTA y debería estar, no solo lo que está escrito",
+    "Para cada punto rojo o ámbar redacta una alternativa concreta lista para copiar"
+  ],
+  "errores_tipicos_a_cazar": [
+    "Renovación automática con preaviso de cancelación muy largo",
+    "Penalizaciones que solo se aplican a una de las partes",
+    "Cesión total e ilimitada de la propiedad intelectual de tu trabajo",
+    "Pago condicionado a que el cliente esté satisfecho, sin criterio objetivo",
+    "Responsabilidad sin límite de importe",
+    "Tribunales de una ciudad lejana o arbitraje caro"
+  ],
+  "formato_salida": {
+    "tipo": "informe en markdown",
+    "secciones": [
+      "Resumen en 5 líneas: qué firmo y a qué me obligo",
+      "Tabla semáforo: cláusula | color | por qué | qué pedir",
+      "Los 3 puntos que negociaría sí o sí",
+      "Cláusulas que faltan y deberían estar",
+      "Redacciones alternativas listas para enviar",
+      "Preguntas que debo hacer a la otra parte"
+    ]
+  },
+  "restricciones": [
+    "No inventes cláusulas: si algo no aparece, señálalo como ausencia",
+    "Cita siempre el número de cláusula que comentas",
+    "Lenguaje llano; si usas un término jurídico, explícalo en la misma frase"
+  ],
+  "criterios_calidad": [
+    "Cada riesgo explica su consecuencia práctica en dinero o en tiempo",
+    "Toda alternativa propuesta se puede copiar y pegar en un correo a la otra parte",
+    "Los tres puntos a negociar son los que más dinero o riesgo concentran",
+    "Se señalan también las cláusulas que faltan, no solo las escritas"
+  ],
+  "aviso": "Esto no sustituye a un abogado: las cláusulas en rojo y las ámbar con mucho dinero en juego deben revisarlas un profesional antes de firmar"
+}

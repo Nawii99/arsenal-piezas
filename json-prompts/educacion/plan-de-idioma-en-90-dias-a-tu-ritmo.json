@@ -1,0 +1,45 @@
+{
+  "tarea": "Diseñar un plan de estudio realista de 90 dias para pasar de mi nivel actual de [IDIOMA] al nivel objetivo, adaptado a los minutos reales que puedo dedicar",
+  "contexto": {
+    "idioma": "[IDIOMA]",
+    "nivel_actual_mcer": "[A1, A2, B1, B2 o C1]",
+    "nivel_objetivo_mcer": "[NIVEL AL QUE QUIERES LLEGAR]",
+    "motivo_real": "[PARA QUÉ LO NECESITAS: reuniones con clientes, viajar, examen oficial, mudanza]",
+    "minutos_dia": "[MINUTOS AL DÍA QUE PUEDES DEDICAR DE VERDAD]",
+    "dias_semana": "[DÍAS A LA SEMANA]",
+    "recursos_que_ya_tengo": "[APPS, LIBROS, PODCASTS, PROFESOR, SERIES]",
+    "puntos_flojos": "[LO QUE PEOR SE TE DA: hablar, entender de oído, gramática, vocabulario]"
+  },
+  "metodo": [
+    "Reparte cada sesion en cuatro bloques: entrada comprensible (escuchar o leer), vocabulario con repaso espaciado, produccion (hablar o escribir) y repaso de errores propios",
+    "Fija objetivos por semana y no por dia, para que un dia perdido no rompa el plan",
+    "Sube la dificultad solo cuando entiendas alrededor del 80 por ciento del material actual sin traducir",
+    "Reserva al menos el 30 por ciento del tiempo a produccion oral, aunque sea hablando solo o grabandote",
+    "Divide los 90 dias en tres bloques de 30 con un hito comprobable al final de cada uno"
+  ],
+  "restricciones": [
+    "No propongas mas minutos de los indicados en minutos_dia ni actividades que exijan comprar nada nuevo salvo que lo digas como opcional y gratuito",
+    "Nada de listas de 500 palabras: maximo 15 palabras nuevas por sesion",
+    "Prohibido recomendar solo apps de gamificacion como plan completo",
+    "Escribe en espanol de Espana, tuteando y sin tecnicismos de didactica"
+  ],
+  "formato_salida": {
+    "tipo": "documento con secciones y tablas en texto",
+    "secciones": [
+      "Diagnostico de partida y que significa tu nivel objetivo en la practica",
+      "Tabla de las 13 semanas con: semana, foco, objetivo medible y material",
+      "Plantilla de la sesion tipo minuto a minuto para tus [MINUTOS AL DÍA]",
+      "Los tres hitos de comprobacion (dia 30, 60 y 90) con la prueba concreta que debes superar",
+      "Plan B para semanas malas: version de 10 minutos que mantiene el habito",
+      "Errores tipicos que te haran abandonar y como evitarlos"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada semana tiene un objetivo que se puede comprobar con un si o un no",
+    "El total de minutos semanales cuadra con lo que he declarado que puedo dedicar",
+    "Las actividades son concretas: no vale poner practicar escucha, hay que decir con que y cuanto rato",
+    "Cada bloque de 30 días termina con una prueba que se supera o no se supera",
+    "El plan B de 10 minutos existe y mantiene el hábito en semanas malas"
+  ],
+  "si_falta_informacion": "Si no se indica el nivel actual, el objetivo o los minutos diarios, pregúntalo antes de generar el plan y no lo supongas"
+}

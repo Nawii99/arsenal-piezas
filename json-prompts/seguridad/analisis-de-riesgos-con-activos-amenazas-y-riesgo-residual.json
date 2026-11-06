@@ -1,0 +1,45 @@
+{
+  "tarea": "Elaborar el análisis y tratamiento de riesgos de seguridad de la información para un SGSI ISO 27001 o un sistema ENS",
+  "contexto": {
+    "organizacion": "[NOMBRE DE TU EMPRESA]",
+    "alcance": "[PROCESOS Y SISTEMAS INCLUIDOS]",
+    "activos": "[LISTA DE ACTIVOS: APLICACIONES, SERVIDORES, PORTÁTILES, MÓVILES, BASES DE DATOS, WEB, CORREO, DOCUMENTACIÓN EN PAPEL, PERSONAS CLAVE]",
+    "proveedores": "[PROVEEDORES CRÍTICOS Y QUÉ TOCAN]",
+    "incidentes_pasados": "[QUÉ OS HA PASADO YA: PHISHING, CAÍDAS, PÉRDIDA DE PORTÁTIL, RANSOMWARE...]",
+    "criterio_aceptacion": "[A PARTIR DE QUÉ NIVEL DE RIESGO HAY QUE ACTUAR]",
+    "presupuesto": "[PRESUPUESTO ANUAL DISPONIBLE PARA SEGURIDAD]"
+  },
+  "instrucciones": [
+    "Agrupa los activos por tipo siguiendo un enfoque tipo MAGERIT: información, servicios, aplicaciones, equipos, redes, soportes, instalaciones y personas",
+    "Asigna a cada activo un propietario y valóralo en confidencialidad, integridad, disponibilidad, autenticidad y trazabilidad de 1 a 5",
+    "Asocia a cada activo sus amenazas realistas (errores, fallos técnicos, ataques deliberados, desastres) y descarta las que no apliquen explicando por qué",
+    "Calcula riesgo inherente = probabilidad x impacto en escala 1-5, aplica los controles ya existentes y calcula el riesgo residual",
+    "Para cada riesgo por encima del criterio de aceptación, propón tratamiento: mitigar, transferir, evitar o aceptar, con el control del Anexo A o la medida ENS que lo cubre",
+    "Prioriza acciones por reducción de riesgo conseguida frente a coste estimado, y respeta el presupuesto indicado"
+  ],
+  "restricciones": [
+    "No listes más de 30 riesgos: agrupa los que comparten causa",
+    "Nada de riesgos genéricos de manual: cada uno debe reconocerse en el negocio descrito",
+    "Toda aceptación de riesgo debe indicar quién la aprueba"
+  ],
+  "formato_salida": {
+    "1_inventario": "Tabla: Activo | Tipo | Propietario | Valoración CIDAT",
+    "2_riesgos": "Tabla: ID | Activo | Amenaza | Vulnerabilidad | Probabilidad | Impacto | Riesgo inherente | Controles actuales | Riesgo residual | Tratamiento",
+    "3_plan_tratamiento": "Acción | Control ISO o medida ENS | Responsable | Fecha | Coste estimado | Riesgo residual esperado",
+    "4_mapa": "Descripción del mapa de calor por zonas: crítico, alto, medio y bajo"
+  },
+  "criterios_calidad": [
+    "Todo riesgo por encima del umbral tiene tratamiento y responsable",
+    "El sumatorio de costes no supera el presupuesto indicado",
+    "La metodología queda explicada en un párrafo, para poder defenderla ante el auditor o ante la dirección",
+    "Las escalas de probabilidad e impacto tienen una descripción concreta de cada nivel",
+    "El riesgo residual nunca sale peor que el inherente sin explicarlo"
+  ],
+  "errores_a_evitar": [
+    "Copiar amenazas de un catálogo sin comprobar si existen en el negocio",
+    "Aceptar riesgos altos sin firma de quien responde",
+    "Proponer medidas que superan el presupuesto indicado"
+  ],
+  "tono": "Riguroso, ordenado y comprensible para dirección",
+  "aviso": "El análisis es una base para el SGSI o el ENS. Debe revisarlo un consultor o auditor cualificado y aprobarlo la dirección antes de usarse en una certificación."
+}

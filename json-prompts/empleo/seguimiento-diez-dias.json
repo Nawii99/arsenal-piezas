@@ -1,0 +1,120 @@
+{
+  "tarea": "Escribir el correo de seguimiento a los diez dias de haber enviado la candidatura o de haber pasado una entrevista, para un puesto de tecnologia en Espana.",
+  "idioma": "espanol de Espana",
+  "contexto": {
+    "candidato": {
+      "nombre": "[TU NOMBRE Y APELLIDO]",
+      "telefono": "[TU TELEFONO]",
+      "perfil_linkedin": "[URL DE TU LINKEDIN]",
+      "situacion_actual": "[TRABAJANDO / EN BUSQUEDA / ESTUDIANDO]",
+      "disponibilidad": "[INMEDIATA / 15 DIAS / A PARTIR DEL X]"
+    },
+    "empresa": {
+      "nombre": "[NOMBRE DE LA EMPRESA]",
+      "persona_de_contacto": "[NOMBRE DE QUIEN TE ESCRIBIO O 'no lo se']",
+      "cargo_del_contacto": "[RECURSOS HUMANOS / RESPONSABLE TECNICO / FUNDADOR]",
+      "portal_de_origen": "[LINKEDIN / INFOJOBS / TECNOEMPLEO / MANFRED / WEB DE LA EMPRESA]"
+    },
+    "proceso": {
+      "puesto": "[NOMBRE EXACTO DEL PUESTO]",
+      "fecha_ultimo_contacto": "[DD/MM/AAAA]",
+      "dias_transcurridos": 10,
+      "fase": "[CANDIDATURA ENVIADA / ENTREVISTA CON RRHH / ENTREVISTA TECNICA / PRUEBA TECNICA ENTREGADA]",
+      "plazo_que_te_dieron": "[LO QUE TE DIJERON, O 'ninguno']",
+      "detalle_concreto_de_la_conversacion": "[ALGO REAL QUE SE HABLO: UNA HERRAMIENTA, UN PROYECTO, UN PROBLEMA QUE TIENEN]"
+    },
+    "novedad_desde_entonces": {
+      "hay_novedad": "[SI / NO]",
+      "cual": "[CURSO TERMINADO, PROYECTO PUBLICADO, CERTIFICACION, OTRA OFERTA EN MARCHA]",
+      "enlace": "[URL O 'ninguno']"
+    }
+  },
+  "reglas_de_escritura": {
+    "longitud_maxima_palabras": 110,
+    "tono": "cercano, seguro, sin disculpas",
+    "tuteo": "tutea si la empresa te ha tuteado; si no, trata de usted",
+    "prohibido": [
+      "disculparse por escribir ('perdon por las molestias', 'siento insistir')",
+      "frases hechas como 'quedo a la espera de su pronta respuesta'",
+      "presionar con plazos falsos o inventar otra oferta que no existe",
+      "repetir el curriculum entero",
+      "mas de una pregunta en todo el correo"
+    ],
+    "obligatorio": [
+      "asunto que continue el hilo anterior si lo hay",
+      "una sola pregunta clara al final",
+      "aportar algo nuevo, no solo recordar que existes"
+    ]
+  },
+  "estructura": {
+    "asunto": {
+      "si_hay_hilo_previo": "responder en el mismo hilo, sin cambiar el asunto",
+      "si_no_hay_hilo": "[PUESTO] - seguimiento de mi candidatura",
+      "longitud_maxima_caracteres": 60
+    },
+    "cuerpo": [
+      {
+        "bloque": "apertura",
+        "lineas": 1,
+        "contenido": "saludo por el nombre y referencia concreta a la fecha y a la fase del proceso"
+      },
+      {
+        "bloque": "aportacion",
+        "lineas": 2,
+        "contenido": "la novedad del candidato o un detalle util sobre el problema que comento la empresa; si no hay novedad, un apunte breve sobre como abordaria algo que se hablo"
+      },
+      {
+        "bloque": "pregunta",
+        "lineas": 1,
+        "contenido": "preguntar por el estado del proceso y por los plazos, en una sola frase"
+      },
+      {
+        "bloque": "cierre",
+        "lineas": 1,
+        "contenido": "disponibilidad y despedida corta con nombre y telefono"
+      }
+    ]
+  },
+  "variantes_a_generar": [
+    {
+      "id": "estandar",
+      "cuando": "no te dieron plazo y no hay novedad",
+      "objetivo": "recordar sin molestar"
+    },
+    {
+      "id": "con_novedad",
+      "cuando": "has terminado algo o publicado un proyecto desde el ultimo contacto",
+      "objetivo": "dar una excusa real para escribir"
+    },
+    {
+      "id": "con_otra_oferta",
+      "cuando": "tienes de verdad otro proceso avanzado",
+      "objetivo": "pedir una fecha sin amenazar",
+      "aviso": "usar solo si es cierto; si te piden detalles y no existe, se cae"
+    },
+    {
+      "id": "ultimo_toque",
+      "cuando": "es el segundo seguimiento y siguen sin contestar",
+      "objetivo": "cerrar la puerta con elegancia y dejarla entornada para el futuro"
+    }
+  ],
+  "salida": {
+    "formato": "texto plano listo para copiar en el correo",
+    "por_cada_variante": [
+      "asunto",
+      "cuerpo del correo",
+      "una linea de aviso con el riesgo o la condicion de uso"
+    ],
+    "extra_final": {
+      "titulo": "Cuando enviarlo y cuando no",
+      "contenido": "una linea por variante: el dia exacto para enviarla (por ejemplo, dia 10 laborable, nunca fin de semana ni lunes a primera hora) y la condicion para no enviarla (por ejemplo, si la empresa ya te dijo que contestaria en una fecha futura)"
+    }
+  },
+  "si_faltan_datos": "Si falta el nombre del contacto, el puesto o la fase del proceso, no los inventes: dejalos entre corchetes y avisa en una linea. Si no hay detalle concreto de la conversacion, usa la variante estandar sin fingir que lo hay.",
+  "comprobaciones_antes_de_entregar": [
+    "Ningun correo supera las 110 palabras",
+    "Cada correo tiene una sola pregunta",
+    "No hay disculpas ni frases hechas prohibidas",
+    "La variante con_otra_oferta lleva el aviso de uso solo si es cierto"
+  ]
+}

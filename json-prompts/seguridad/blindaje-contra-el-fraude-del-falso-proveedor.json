@@ -1,0 +1,45 @@
+{
+  "tarea": "Crear el protocolo antifraude de pagos de una pyme para evitar el fraude del CEO y el cambio de cuenta bancaria de proveedores",
+  "contexto": {
+    "empresa": "[NOMBRE DE LA EMPRESA]",
+    "quien_puede_pagar": "[PERSONAS QUE PUEDEN ORDENAR O EJECUTAR PAGOS]",
+    "importe_habitual": "[IMPORTE MEDIO Y MÁXIMO DE UNA TRANSFERENCIA]",
+    "canales_de_facturas": "[CORREO, PORTAL DE PROVEEDOR, PAPEL, WHATSAPP]"
+  },
+  "entradas": {
+    "proceso_actual": "[CÓMO SE APRUEBA Y SE PAGA HOY UNA FACTURA, PASO A PASO]",
+    "proveedores_frecuentes": "[LISTA DE PROVEEDORES Y PERSONA DE CONTACTO]",
+    "intentos_previos": "[CORREOS SOSPECHOSOS O INTENTOS DE FRAUDE RECIBIDOS]"
+  },
+  "metodo": [
+    "Definir la regla de oro: ningún cambio de cuenta bancaria se acepta por correo, se verifica llamando al teléfono que ya teníais fichado antes",
+    "Fijar el doble ojo por importe: a partir de [IMPORTE] toda transferencia la aprueban dos personas distintas",
+    "Escribir las señales de alarma del correo fraudulento: urgencia, secreto, cambio de cuenta, dominio parecido con una letra cambiada, respuesta que se desvía a otra dirección",
+    "Preparar el guion de verificación telefónica de 6 preguntas y quién lo usa",
+    "Definir la ventana de enfriamiento: los pagos nuevos o fuera de lo habitual esperan un mínimo de horas antes de ejecutarse",
+    "Detallar el aviso al banco y los pasos de la primera hora si el pago ya ha salido"
+  ],
+  "restricciones": [
+    "El protocolo cabe en un folio y se entiende sin formación previa",
+    "Ninguna regla puede saltarse por urgencia: la urgencia es precisamente la señal de alarma",
+    "Nada de herramientas de pago: solo reglas y pasos humanos verificables",
+    "Incluir siempre qué hacer cuando el que presiona es el propio jefe"
+  ],
+  "formato_salida": {
+    "tipo": "protocolo de una página más guion y correo tipo",
+    "secciones": ["Las 5 reglas innegociables", "Semáforo de señales de alarma", "Guion de la llamada de verificación", "Qué hacer en la primera hora si el dinero ya ha salido", "Cartel para colgar junto al puesto que paga"],
+    "extras": ["Correo tipo para pedir confirmación al proveedor", "Frase de cortesía para decir que no a una petición urgente sin quedar mal"]
+  },
+  "criterios_calidad": [
+    "Cualquier empleado sabe en 10 segundos qué hacer ante un correo que pide cambiar una cuenta",
+    "El protocolo no depende de detectar bien un correo falso, sino de verificar por otro canal",
+    "Incluye a la gestoría y a quien sustituye al responsable en vacaciones"
+  ],
+  "tono": "tajante y claro, tuteando",
+  "errores_a_evitar": [
+    "Confiar en la dirección del remitente sin llamar al teléfono ya fichado",
+    "Aceptar un cambio de cuenta porque viene con una factura que parece real",
+    "Dejar que una sola persona prepare y apruebe la transferencia"
+  ],
+  "aviso": "El protocolo es un borrador de control interno. Si ya ha salido un pago fraudulento, avisa a tu banco y denuncia; consulta con un abogado o asesor antes de reclamar."
+}

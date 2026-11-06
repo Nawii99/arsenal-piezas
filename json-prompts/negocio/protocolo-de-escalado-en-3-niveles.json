@@ -1,0 +1,51 @@
+{
+  "tarea": "Escribir el protocolo de escalado de incidencias de atención al cliente en tres niveles, listo para colgar en la pared y para meter en el manual del equipo",
+  "contexto": {
+    "negocio": "[QUÉ HACES Y CUÁNTOS CLIENTES ATIENDES AL MES APROXIMADAMENTE]",
+    "personas": "[NOMBRE, ROL Y HORARIO DE CADA PERSONA QUE TOCA CLIENTES]",
+    "quien_decide_dinero": "[QUIÉN PUEDE AUTORIZAR DEVOLUCIONES O DESCUENTOS Y HASTA QUÉ IMPORTE]",
+    "proveedores_criticos": "[MENSAJERÍA, PASARELA DE PAGO, HOSTING, TALLER, LO QUE APLIQUE]",
+    "canales": "[POR DÓNDE ENTRAN LAS INCIDENCIAS]"
+  },
+  "entradas": {
+    "incidencias_frecuentes": "[LISTA LOS 8-12 PROBLEMAS QUE MÁS SE REPITEN]",
+    "casos_que_se_te_han_ido_de_las_manos": "[2 O 3 EJEMPLOS REALES Y QUÉ FALLÓ]"
+  },
+  "estructura_niveles": {
+    "N1": "Primera línea: responde, resuelve lo repetitivo con respuestas guardadas y recoge datos",
+    "N2": "Persona con conocimiento técnico o de operaciones que puede tocar el pedido, el sistema o hablar con el proveedor",
+    "N3": "Responsable del negocio: decisiones de dinero, excepciones a la política, riesgo legal o cliente clave"
+  },
+  "pasos": [
+    "Reparte cada incidencia frecuente en el nivel más bajo capaz de cerrarla del todo",
+    "Define para cada nivel: qué puede decidir sin preguntar, qué NO puede decidir y qué necesita autorización",
+    "Fija disparadores de escalado objetivos y comprobables, no opiniones",
+    "Fija plazos: primera respuesta, tiempo máximo en cada nivel y aviso automático al siguiente si se pasa",
+    "Define qué información obligatoria viaja con el caso al escalar",
+    "Añade qué se le dice al cliente en cada salto para que no sienta que empieza de cero",
+    "Añade la ruta de fuera de horario y fines de semana"
+  ],
+  "disparadores_tipo": [
+    "El caso lleva más de X horas sin avanzar",
+    "El cliente lo pide por segunda vez o menciona abogado, denuncia, OCU o reseña pública",
+    "Hay que devolver dinero por encima del límite del nivel",
+    "Afecta a más de un cliente a la vez",
+    "Hay datos personales, salud o seguridad de por medio"
+  ],
+  "restricciones": [
+    "Nada de niveles imposibles: si solo hay dos personas, adapta el protocolo a dos personas",
+    "Cada plazo tiene que ser cumplible con el horario declarado",
+    "Lenguaje llano, sin jerga de consultoría ni siglas sin explicar"
+  ],
+  "formato_salida": {
+    "tipo": "documento con secciones",
+    "secciones": ["Tabla resumen por nivel", "Tabla de incidencias frecuentes con su nivel y plazo", "Disparadores de escalado", "Checklist de traspaso", "Frases a usar con el cliente en cada salto", "Ruta fuera de horario y fines de semana"]
+  },
+  "criterios_calidad": [
+    "Cabe en una sola página",
+    "Cada disparador se puede comprobar sin interpretación",
+    "Todo plazo es cumplible con el horario declarado",
+    "Cualquier persona nueva sabe a quién pasar un caso en menos de un minuto"
+  ],
+  "aviso": "Los casos con datos personales, riesgo para la salud o amenaza legal deben revisarse con un profesional; revisa con un abogado los importes de devolución y las obligaciones de consumo"
+}

@@ -1,0 +1,45 @@
+{
+  "tarea": "Crear la guía de configuración segura de los ordenadores, móviles y red wifi de una pyme sin personal técnico",
+  "contexto": {
+    "empresa": "[NOMBRE DE LA EMPRESA]",
+    "equipos": "[CUÁNTOS ORDENADORES Y CON QUÉ SISTEMA: WINDOWS, MAC]",
+    "moviles": "[CUÁNTOS Y SI SON DE EMPRESA O PERSONALES]",
+    "salen_de_la_oficina": "[SÍ / NO / ALGUNOS]"
+  },
+  "entradas": {
+    "red": "[ROUTER DEL OPERADOR O PROPIO, SI HAY WIFI DE INVITADOS, SI HAY CÁMARAS O IMPRESORAS CONECTADAS]",
+    "programas_criticos": "[GESTIÓN, TPV, DISEÑO, CONTABILIDAD]",
+    "usuarios_por_equipo": "[SI VARIAS PERSONAS COMPARTEN EL MISMO ORDENADOR Y LA MISMA SESIÓN]"
+  },
+  "metodo": [
+    "Ordenador: cifrado del disco activado, usuario sin permisos de administrador para el trabajo diario, bloqueo automático de pantalla, antivirus del sistema activo y actualizaciones automáticas",
+    "Móvil: código o huella, cifrado, buscar mi dispositivo y borrado remoto, apps solo de tiendas oficiales y separación del uso personal si el móvil es del trabajador",
+    "Red: cambiar la contraseña de administración del router, cifrado moderno del wifi, red de invitados separada para clientes y equipos raros, y desactivar el acceso remoto que venga abierto de fábrica",
+    "Impresoras y cámaras: cambiar contraseñas por defecto y no dejarlas accesibles desde internet",
+    "Definir qué se revisa al recibir un equipo nuevo y qué se hace antes de tirar o vender uno viejo",
+    "Para cada punto indicar los pasos exactos por sistema, cuánto se tarda y cómo comprobar que ha quedado activado"
+  ],
+  "restricciones": [
+    "Solo ajustes que trae el propio equipo o el router: nada de comprar software salvo que se indique como opcional",
+    "Antes de cifrar un disco, avisar de guardar la clave de recuperación y dónde",
+    "Advertir de lo que puede dejar de funcionar tras cada cambio y cómo revertirlo",
+    "Pasos numerados con el nombre literal de los menús, sin captura de pantalla necesaria"
+  ],
+  "formato_salida": {
+    "tipo": "guía por dispositivo con checklist final",
+    "bloques": ["Ordenadores Windows", "Ordenadores Mac", "Móviles Android e iPhone", "Router y wifi", "Impresoras, cámaras y otros aparatos", "Equipo nuevo y equipo que se retira"],
+    "columnas_checklist": ["Ajuste", "Dispositivo", "Tiempo", "Cómo comprobar que está activo", "Hecho"]
+  },
+  "criterios_calidad": [
+    "Cada ajuste se puede completar en menos de 10 minutos y sin ayuda externa",
+    "Nadie pierde acceso a sus datos por seguir la guía",
+    "Al final queda una hoja para marcar equipo por equipo"
+  ],
+  "tono": "Práctico y paso a paso, tuteando y sin jerga",
+  "errores_a_evitar": [
+    "Cifrar un disco sin guardar la clave de recuperación",
+    "Dejar la contraseña de fábrica del router o de las cámaras",
+    "Mezclar clientes y equipos de la empresa en la misma red wifi"
+  ],
+  "aviso": "Haz copia de seguridad antes de cambiar ajustes importantes. Si tienes datos de clientes, salud o pagos, que lo revise un profesional de seguridad o un asesor de protección de datos."
+}

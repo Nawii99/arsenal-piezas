@@ -1,0 +1,45 @@
+{
+  "tarea": "Crear el procedimiento de alta y baja de accesos para el personal de una pyme, con checklist marcable",
+  "contexto": {
+    "empresa": "[NOMBRE DE LA EMPRESA]",
+    "puestos": "[LISTA DE PUESTOS: ADMINISTRACIÓN, COMERCIAL, TALLER, TIENDA, DIRECCIÓN]",
+    "quien_administra_las_cuentas": "[PERSONA O EMPRESA EXTERNA]",
+    "rotacion": "[ALTAS Y BAJAS APROXIMADAS AL AÑO, INCLUIDOS TEMPORALES Y BECARIOS]"
+  },
+  "entradas": {
+    "servicios": "[CORREO, NUBE, PROGRAMA DE GESTIÓN, CRM, TIENDA, REDES SOCIALES, BANCO, VPN, FICHAJE]",
+    "dispositivos_entregados": "[PORTÁTIL, MÓVIL, LLAVES, TARJETA, TPV]",
+    "accesos_fisicos": "[ALARMA, LLAVES, CÓDIGOS DE PUERTA]"
+  },
+  "metodo": [
+    "Definir para cada puesto el paquete mínimo de accesos, siguiendo la idea de dar solo lo necesario para trabajar",
+    "Preparar el checklist de alta: crear cuentas, activar la verificación en dos pasos, entregar equipo, firmar normas de uso y explicar el protocolo de avisos",
+    "Preparar el checklist de baja con plazos: bloquear el correo y la sesión el mismo día, redirigir mensajes, recuperar equipos y cambiar contraseñas compartidas",
+    "Incluir los accesos que se olvidan siempre: redes sociales, dominios, hosting, banca, plataformas de reseñas, grupos de WhatsApp y accesos de proveedores",
+    "Definir qué pasa con los ficheros y el correo de la persona que se va y quién los hereda",
+    "Fijar una revisión trimestral que compare la lista de personal con la lista de cuentas activas"
+  ],
+  "restricciones": [
+    "Los pasos de la baja se ordenan por urgencia: lo primero, todo lo que da acceso a dinero o a datos de clientes",
+    "Cada línea tiene un responsable y un plazo en horas o días",
+    "Respetar el derecho a la intimidad: acceder al correo del empleado que se va solo por motivos laborales y avisándolo",
+    "Nada de herramientas de administración avanzada: pasos posibles desde el panel normal de cada servicio"
+  ],
+  "formato_salida": {
+    "tipo": "dos checklists marcables más tabla de accesos por puesto",
+    "columnas_checklist": ["Acción", "Servicio o equipo", "Responsable", "Plazo", "Hecho", "Fecha"],
+    "anexos": ["Tabla de accesos por puesto", "Correo tipo de aviso al equipo cuando alguien se va", "Hoja de entrega y devolución de equipos para firmar"]
+  },
+  "criterios_calidad": [
+    "Un exempleado no puede entrar a nada al día siguiente de su baja",
+    "El checklist se puede rellenar en papel o en el móvil sin depender de una herramienta",
+    "Contempla despidos rápidos y salidas conflictivas"
+  ],
+  "tono": "ordenado y operativo, tuteando",
+  "errores_a_evitar": [
+    "Dejar activas las cuentas de quien se fue por falta de un responsable de la baja",
+    "Olvidar redes sociales, dominios y contraseñas compartidas",
+    "Dar a todos los puestos los mismos accesos 'por si acaso'"
+  ],
+  "aviso": "La revisión de cuentas y correos de empleados afecta a su intimidad y a la protección de datos: valida el procedimiento con un asesor laboral o jurídico antes de aplicarlo."
+}

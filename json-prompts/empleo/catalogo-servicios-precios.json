@@ -1,0 +1,146 @@
+{
+  "tarea": "Genera el catalogo comercial completo de un servicio de ayuda a candidatos tech en Espana: paquetes, precios, alcance, entregables y condiciones.",
+  "idioma": "espanol de Espana, tuteando al cliente",
+  "contexto_del_negocio": {
+    "quien_lo_presta": "Persona sola, no programadora, que usa Claude Code y n8n para trabajar mas rapido",
+    "publico": [
+      "Junior sin experiencia que busca su primer puesto tech",
+      "Persona que cambia de sector hacia tecnologia",
+      "Perfil con experiencia que lleva meses sin respuestas"
+    ],
+    "canal_de_venta": "Pagina de ventas propia + LinkedIn + boca a boca",
+    "horas_semanales_disponibles": 12,
+    "promesa": "Se vende el trabajo hecho y la revision, nunca el resultado de la busqueda"
+  },
+  "paquetes": [
+    {
+      "id": "revision-express",
+      "nombre": "Revision express de curriculum",
+      "precio_eur_sin_iva": 49,
+      "iva_21_incluido_eur": 59.29,
+      "plazo_dias_habiles": 2,
+      "revisiones_incluidas": 1,
+      "horas_estimadas": 1.5,
+      "para_quien": "Quien ya tiene curriculum y solo quiere saber que falla",
+      "incluye": [
+        "Lectura del curriculum contra una oferta real que envia el cliente",
+        "Informe de 1 pagina con los 10 arreglos por orden de impacto",
+        "Comprobacion de lectura por filtros ATS: formato, columnas, fuentes, palabras clave"
+      ],
+      "entregables": ["informe-revision.pdf", "checklist-arreglos.md"],
+      "no_incluye": ["Reescritura del curriculum", "Carta de presentacion", "Postular por el cliente"]
+    },
+    {
+      "id": "curriculum-y-carta",
+      "nombre": "Curriculum y carta adaptados",
+      "precio_eur_sin_iva": 120,
+      "iva_21_incluido_eur": 145.2,
+      "plazo_dias_habiles": 4,
+      "revisiones_incluidas": 2,
+      "horas_estimadas": 4,
+      "para_quien": "Quien tiene claro el puesto y quiere el material listo",
+      "incluye": [
+        "Videollamada de 30 minutos para sacar logros medibles",
+        "Curriculum reescrito en version ATS (docx) y version bonita (pdf)",
+        "Carta de presentacion base mas dos variantes cortas para InfoJobs y LinkedIn",
+        "Titular y extracto de LinkedIn reescritos"
+      ],
+      "entregables": [
+        "curriculum-ats.docx",
+        "curriculum.pdf",
+        "carta-presentacion.md",
+        "linkedin-titular-y-extracto.md"
+      ],
+      "no_incluye": ["Postular por el cliente", "Simulacros de entrevista", "Inventar experiencia que no existe"]
+    },
+    {
+      "id": "candidatura-completa",
+      "nombre": "Candidatura completa",
+      "precio_eur_sin_iva": 250,
+      "iva_21_incluido_eur": 302.5,
+      "plazo_dias_habiles": 7,
+      "revisiones_incluidas": 2,
+      "horas_estimadas": 8,
+      "para_quien": "Quien empieza de cero y no sabe ni por donde atacar",
+      "incluye": [
+        "Todo el paquete curriculum-y-carta",
+        "Portfolio web de una pagina publicado gratis en GitHub Pages o Cloudflare Pages",
+        "Lista de 40 empresas y portales donde postular, con el orden y el mensaje para cada uno",
+        "Plantilla de seguimiento de candidaturas en hoja de calculo"
+      ],
+      "entregables": [
+        "curriculum-ats.docx",
+        "curriculum.pdf",
+        "carta-presentacion.md",
+        "portfolio-url.txt",
+        "lista-empresas.csv",
+        "seguimiento-candidaturas.xlsx"
+      ],
+      "no_incluye": ["Automatizar el envio masivo en LinkedIn", "Garantia de entrevistas o de puesto"]
+    },
+    {
+      "id": "acompanamiento-4-semanas",
+      "nombre": "Acompanamiento 4 semanas",
+      "precio_eur_sin_iva": 490,
+      "iva_21_incluido_eur": 592.9,
+      "plazo_dias_habiles": 28,
+      "revisiones_incluidas": 4,
+      "horas_estimadas": 14,
+      "para_quien": "Quien necesita que alguien le empuje cada semana",
+      "incluye": [
+        "Todo el paquete candidatura-completa",
+        "Una videollamada de 45 minutos por semana, cuatro en total",
+        "Dos simulacros de entrevista con informe de mejora",
+        "Revision semanal de las candidaturas enviadas y ajuste del mensaje",
+        "Guion de negociacion de sueldo con la horquilla bruta anual real del puesto en Espana"
+      ],
+      "entregables": [
+        "curriculum-ats.docx",
+        "curriculum.pdf",
+        "carta-presentacion.md",
+        "portfolio-url.txt",
+        "lista-empresas.csv",
+        "seguimiento-candidaturas.xlsx",
+        "informe-simulacros.pdf",
+        "guion-negociacion-sueldo.md"
+      ],
+      "no_incluye": ["Garantia de entrevistas o de puesto", "Postular por el cliente", "Inventar experiencia que no existe"]
+    }
+  ],
+  "extras": [
+    {"id": "simulacro-extra", "nombre": "Simulacro de entrevista adicional", "precio_eur_sin_iva": 40, "iva_21_incluido_eur": 48.4, "horas_estimadas": 1.5},
+    {"id": "revision-extra", "nombre": "Ronda de cambios adicional", "precio_eur_sin_iva": 25, "iva_21_incluido_eur": 30.25, "horas_estimadas": 0.75},
+    {"id": "carta-por-oferta", "nombre": "Carta adaptada a una oferta concreta", "precio_eur_sin_iva": 20, "iva_21_incluido_eur": 24.2, "horas_estimadas": 0.5},
+    {"id": "entrega-urgente", "nombre": "Entrega en 24 horas", "precio_eur_sin_iva": 30, "iva_21_incluido_eur": 36.3, "horas_estimadas": 0}
+  ],
+  "condiciones": {
+    "pago": "50 % al contratar y 50 % al entregar; en el paquete de 49 euros, el 100 % por adelantado",
+    "inicio": "El plazo empieza a contar cuando llegan el pago y el material que pide el cliente",
+    "revisiones": "Las rondas incluidas se usan en los 10 dias habiles siguientes a la entrega; despues se cobran como extra",
+    "cancelacion": "Si el cliente cancela antes de empezar, se devuelve el pago; si el trabajo ya ha empezado, se factura lo hecho",
+    "confidencialidad": "Los datos y documentos del cliente se usan solo para este servicio y se borran a los 90 dias de la entrega",
+    "datos_personales": "Tratamiento conforme al RGPD y la LOPDGDD; el cliente puede pedir acceso o borrado cuando quiera",
+    "uso_de_ia": "Se informa al cliente de que se usan herramientas de IA como apoyo y de que todo entregable lo revisa una persona"
+  },
+  "fiscalidad_espana": {
+    "iva": "21 % general sobre el precio sin IVA; confirmar con la gestoria si algun cliente (empresa de la UE, cliente fuera de Espana) cambia el tratamiento",
+    "irpf": "Si el cliente es empresa o profesional, la factura puede llevar retencion de IRPF; el porcentaje depende de tu situacion",
+    "factura": "Numeracion correlativa, datos fiscales de ambas partes y desglose de base, IVA y total",
+    "alta": "Hace falta estar dado de alta como autonomo antes de facturar de forma habitual"
+  },
+  "limites_de_la_promesa": [
+    "No se garantiza ninguna entrevista, oferta ni sueldo",
+    "No se escribe nada falso en el curriculum ni en el perfil",
+    "No se postula en nombre del cliente ni se usa su cuenta de LinkedIn",
+    "Las tarifas son un punto de partida y no incluyen comisiones de plataformas de pago"
+  ],
+  "salida": {
+    "formato": "JSON unico con las claves paquetes, extras, condiciones, fiscalidad_espana y limites_de_la_promesa, mas una tabla resumen en texto para la web",
+    "comprobaciones": [
+      "iva_21_incluido_eur es el precio sin IVA por 1,21 en cada paquete y extra",
+      "Las horas estimadas de un mes completo no superan las 12 horas semanales disponibles",
+      "Ningun paquete promete un resultado de busqueda"
+    ]
+  },
+  "aviso": "Los precios, el IVA, el IRPF y las condiciones son un borrador: revisalos con tu gestoria y, si usas condiciones generales, con un abogado antes de publicarlos."
+}

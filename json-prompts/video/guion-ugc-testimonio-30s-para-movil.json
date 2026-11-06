@@ -1,0 +1,48 @@
+{
+  "tarea": "Escribir 3 guiones distintos de anuncio UGC en formato testimonio de 30 segundos, pensados para grabarse con un movil en vertical",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "producto": "[PRODUCTO O SERVICIO Y QUE HACE, EN UNA FRASE]",
+    "precio": "[PRECIO O RANGO DE PRECIO]",
+    "cliente_ideal": "[EDAD, SITUACION Y QUE LE PREOCUPA]",
+    "problema_principal": "[EL PROBLEMA QUE RESUELVE]",
+    "prueba_real": "[RESULTADO, GARANTIA O DATO QUE PUEDES DEMOSTRAR]",
+    "plataforma": "[TIKTOK / REELS / SHORTS]",
+    "objetivo": "[VENTAS EN WEB / CONTACTOS / VISITAS A TIENDA]"
+  },
+  "reglas_de_oficio": [
+    "El segundo 0 empieza con la persona hablando y el producto ya en pantalla: nada de logo, intro ni musica sola",
+    "El gancho es una frase hablada, no un rotulo: se entiende aunque el movil este en silencio gracias al subtitulo",
+    "Habla en primera persona y de una sola persona: yo, mi, me paso esto",
+    "Cada plano dura entre 2 y 4 segundos y cambia el encuadre o la accion para que no canse",
+    "El producto se ve en uso al menos en dos planos, no solo sobre la mesa",
+    "La llamada a la accion es una sola y concreta, con el nombre de la marca dicho en voz alta"
+  ],
+  "estructura_por_guion": [
+    "Gancho (0-3 s): frase que nombra el problema o un resultado sorprendente",
+    "Contexto (3-8 s): quien soy y por que me importaba",
+    "Giro (8-14 s): como encontre el producto y que dudaba",
+    "Demostracion (14-24 s): que hago con el, paso a paso, en imagen",
+    "Resultado y prueba (24-27 s): que cambio, con el dato concreto",
+    "Llamada a la accion (27-30 s): que tiene que hacer quien mira"
+  ],
+  "variedad_obligatoria": "Guion 1 en tono cercano y de confesion, guion 2 comparando el antes y el despues, guion 3 respondiendo a una objecion tipica del cliente",
+  "restricciones": [
+    "Nada de promesas de resultados garantizados ni afirmaciones de salud sin respaldo",
+    "Sin palabras de folleto: revolucionario, unico, lider del mercado",
+    "Frases habladas de maximo 12 palabras para que se puedan decir de una tirada",
+    "Espanol de Espana, tuteando, sin anglicismos innecesarios"
+  ],
+  "formato_salida": {
+    "tipo": "Una tabla por guion",
+    "columnas": ["Plano", "Segundos", "Que se ve (encuadre y accion)", "Que se dice (texto literal)", "Rotulo en pantalla"],
+    "extras_por_guion": ["Titulo del guion", "Angulo que prueba", "Lista de material necesario para grabarlo", "3 variantes solo del gancho"]
+  },
+  "criterios_calidad": [
+    "Se puede grabar en una tarde con un movil y luz natural",
+    "Se entiende el mensaje con el sonido apagado gracias a los rótulos",
+    "Los tres guiones son distintos de verdad, no el mismo con palabras cambiadas",
+    "Cada frase hablada suena a conversación, no a texto de anuncio"
+  ],
+  "aviso": "Los testimonios deben basarse en experiencias reales y la publicidad debe estar identificada como tal; si el producto toca salud, finanzas u otros sectores regulados, que lo revise un profesional antes de publicar"
+}

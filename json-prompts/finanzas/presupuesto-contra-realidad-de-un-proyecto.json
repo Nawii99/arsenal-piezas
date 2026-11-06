@@ -1,0 +1,43 @@
+{
+  "tarea": "Comparar el presupuesto de un proyecto con su coste real, explicar dónde se perdió margen y dejar reglas concretas para el siguiente presupuesto",
+  "contexto": {
+    "proyecto": "[NOMBRE Y DESCRIPCIÓN EN UNA LÍNEA]",
+    "cliente": "[NOMBRE O TIPO DE CLIENTE]",
+    "duracion_prevista_vs_real": "[SEMANAS PREVISTAS / SEMANAS REALES]"
+  },
+  "entradas": {
+    "presupuesto_aprobado": "[IMPORTE SIN IVA Y PARTIDAS QUE INCLUÍA]",
+    "horas_previstas_por_fase": "[LISTA DE FASES Y HORAS ESTIMADAS]",
+    "horas_reales_por_fase": "[LISTA DE FASES Y HORAS REALES]",
+    "coste_hora_interno": "[EUROS/HORA POR PERFIL]",
+    "gastos_externos": "[SUBCONTRATAS, LICENCIAS, MATERIALES, VIAJES]",
+    "cambios_pedidos": "[LISTA DE CAMBIOS Y SI SE FACTURARON O NO]",
+    "importe_finalmente_facturado": "[IMPORTE SIN IVA]"
+  },
+  "pasos": [
+    "Calcula el coste real total: horas reales por coste hora más gastos externos",
+    "Calcula margen previsto y margen real, en euros y en porcentaje, y la desviación entre ambos",
+    "Desglosa la desviación por fase y ordena las fases de mayor a menor pérdida",
+    "Cuantifica en euros el trabajo extra no facturado provocado por los cambios del cliente",
+    "Identifica la causa raíz de cada desviación entre estas: estimación optimista, alcance mal cerrado, cambios gratis, retrasos del cliente, retrabajo interno o precio bajo de partida",
+    "Calcula qué precio debería haber tenido el proyecto para llegar al [MARGEN OBJETIVO %]",
+    "Escribe las cláusulas y condiciones concretas que habrían evitado cada fuga"
+  ],
+  "restricciones": [
+    "Nada de culpar a personas; habla de procesos y de acuerdos mal cerrados",
+    "Si faltan horas reales, pide la estimación al usuario antes de calcular y no rellenes por tu cuenta",
+    "Distingue siempre entre pérdida por mal precio y pérdida por mala ejecución"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de desviaciones + informe breve",
+    "columnas": ["Fase", "Horas previstas", "Horas reales", "Desviación h", "Coste previsto", "Coste real", "Desviación €", "Causa"],
+    "secciones": ["Margen previsto vs real", "Las 3 fugas más caras", "Precio correcto para este tipo de proyecto", "5 reglas para el próximo presupuesto", "Cláusulas listas para copiar"]
+  },
+  "criterios_calidad": [
+    "Las desviaciones suman exactamente la diferencia entre margen previsto y real",
+    "Cada fuga lleva una acción preventiva concreta, no un consejo genérico",
+    "Las cláusulas propuestas se pueden pegar tal cual en el próximo presupuesto"
+  ],
+  "tono": "Analítico y constructivo, enfocado en no repetir errores y no en señalar culpables",
+  "aviso": "Las cláusulas propuestas son un punto de partida; que un abogado las revise antes de incluirlas en contratos, y contrasta los costes con tu gestoría"
+}

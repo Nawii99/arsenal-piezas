@@ -1,0 +1,49 @@
+{
+  "tarea": "Decidir qué compensación ofrecer a un cliente afectado por una incidencia y redactar el mensaje con el que se le ofrece",
+  "contexto": {
+    "negocio": "[QUÉ VENDES]",
+    "politica_actual": "[LO QUE PONE TU WEB O TUS CONDICIONES SOBRE DEVOLUCIONES Y GARANTÍA]",
+    "margen_aproximado": "[MARGEN EN % O EN EUROS POR VENTA]",
+    "opciones_disponibles": "[DEVOLUCIÓN TOTAL, PARCIAL, REPETIR SERVICIO, ENVÍO GRATIS, DESCUENTO FUTURO, MESES GRATIS, DETALLE FÍSICO]",
+    "limite_sin_autorizacion": "[IMPORTE MÁXIMO QUE PUEDE DECIDIR QUIEN ATIENDE]"
+  },
+  "entradas": {
+    "que_fallo": "[DESCRIBE LA INCIDENCIA]",
+    "culpa": "[NUESTRA / DEL PROVEEDOR / DEL CLIENTE / COMPARTIDA / NO SE SABE]",
+    "daño_real": "[QUÉ HA PERDIDO EL CLIENTE: TIEMPO, DINERO, UNA FECHA, UNA OPORTUNIDAD]",
+    "importe_pagado": "[CUÁNTO PAGÓ]",
+    "historial": "[ES LA PRIMERA VEZ O YA HA RECLAMADO OTRAS VECES]",
+    "lo_que_pide": "[QUÉ ESTÁ PIDIENDO EL CLIENTE]"
+  },
+  "reglas_decision": [
+    "Si la culpa es nuestra y el cliente no pudo usar lo pagado, la base es devolver o repetir",
+    "Si el fallo solo causó molestia y se pudo usar, la base es gesto de valor bajo y coste bajo para ti",
+    "Si la culpa es del cliente, no hay compensación económica pero sí ayuda para arreglarlo",
+    "Si es reincidente en reclamar sin motivo, valora cerrar la relación con elegancia en vez de compensar",
+    "Nunca ofrezcas compensación cuyo coste supere el margen de varios pedidos futuros de ese cliente"
+  ],
+  "pasos": [
+    "Valora el daño real en euros o en tiempo, sin contar el enfado",
+    "Aplica las reglas_decision y propón tres niveles: mínimo digno, recomendado y máximo aceptable",
+    "Calcula el coste real para ti de cada nivel usando el margen",
+    "Elige el recomendado y explica en dos líneas por qué",
+    "Marca si supera el limite_sin_autorizacion y a quién hay que pedírselo",
+    "Redacta el mensaje: disculpa concreta, qué ofreces, qué has cambiado y cómo lo cobra o lo recibe"
+  ],
+  "restricciones": [
+    "No ofrezcas descuentos futuros como única compensación cuando el cliente ha perdido dinero hoy",
+    "No condiciones la compensación a que retire una reseña o a que firme nada",
+    "El mensaje no puede sonar a favor: es una reparación, no un regalo"
+  ],
+  "formato_salida": {
+    "tipo": "ficha de decisión + mensaje",
+    "bloques": ["Daño estimado", "Tabla de 3 niveles con coste para ti", "Recomendación y motivo", "¿Necesita autorización?", "Mensaje al cliente listo para enviar (máx 120 palabras)", "Nota para registrar en el historial"]
+  },
+  "criterios_calidad": [
+    "La recomendación se justifica con el daño real y con el coste en euros",
+    "La alternativa más barata es realista y se ofrece con el mismo tono",
+    "El mensaje se puede enviar sin editarlo y no suena a favor",
+    "Se indica con claridad si hace falta autorización y de quién"
+  ],
+  "aviso": "Las devoluciones y garantías deben respetar la normativa de consumo; que un profesional revise la política antes de aplicar esta compensación"
+}

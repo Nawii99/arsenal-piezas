@@ -1,0 +1,47 @@
+{
+  "tarea": "Redactar la política de privacidad de un negocio español a partir del inventario real de datos que recoge",
+  "responsable": {
+    "nombre": "[NOMBRE O RAZÓN SOCIAL]",
+    "nif": "[NIF O CIF]",
+    "direccion": "[DIRECCIÓN]",
+    "email_privacidad": "[EMAIL PARA EJERCER DERECHOS]",
+    "tiene_dpd": "[SÍ / NO]"
+  },
+  "entradas": {
+    "formularios_y_canales": "[EJ: FORMULARIO DE CONTACTO, NEWSLETTER, RESERVA DE CITA, WHATSAPP, TIENDA ONLINE]",
+    "datos_que_pides": "[EJ: NOMBRE, EMAIL, TELÉFONO, DIRECCIÓN, DATOS DE FACTURACIÓN]",
+    "herramientas_terceros": "[EJ: MAILCHIMP, STRIPE, GOOGLE ANALYTICS, HOSTING, CRM]",
+    "hay_datos_sensibles": "[SÍ / NO: SALUD, IDEOLOGÍA, BIOMÉTRICOS]",
+    "hay_menores": "[SÍ / NO]",
+    "perfilado_o_publicidad": "[SÍ / NO Y CÓMO]"
+  },
+  "instrucciones": [
+    "Convierte cada canal en un tratamiento con finalidad concreta, base legal, datos, plazo de conservación y destinatarios",
+    "Elige la base legal correcta: contrato para pedidos, consentimiento para newsletter, obligación legal para facturación, interés legítimo justificado si procede",
+    "Identifica qué herramientas son encargados del tratamiento y si implican transferencias fuera de la UE",
+    "Redacta después el texto seguido: quién trata, para qué, por cuánto tiempo, a quién se cede, derechos y reclamación ante la AEPD",
+    "Explica cómo ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad",
+    "Señala con AVISO los tratamientos que necesitan revisión: menores, datos de salud, videovigilancia o decisiones automatizadas"
+  ],
+  "restricciones": [
+    "No copies plantillas genéricas: cada tratamiento debe corresponder a un canal declarado",
+    "No uses interés legítimo para el marketing por email sin explicar la relación previa con el cliente",
+    "Plazos concretos en años, nada de 'el tiempo necesario' a secas",
+    "Español llano, sin latinajos innecesarios"
+  ],
+  "formato_salida": {
+    "bloque_1": "tabla de tratamientos con columnas finalidad, base legal, datos, plazo y destinatarios",
+    "bloque_2": "política de privacidad completa por secciones, lista para publicar",
+    "bloque_3": "texto corto de información básica en capas para poner debajo de cada formulario",
+    "bloque_4": "lista de puntos a revisar con un profesional"
+  },
+  "criterios_calidad": [
+    "Cada finalidad tiene una sola base legal y un plazo concreto",
+    "Aparecen todas las herramientas declaradas y sus transferencias internacionales",
+    "Incluye el derecho a reclamar ante la Agencia Española de Protección de Datos",
+    "Los tratamientos de menores, salud o videovigilancia aparecen marcados con AVISO",
+    "La información en capas coincide con la tabla de tratamientos",
+    "Todo dato no facilitado queda entre corchetes en vez de inventarse"
+  ],
+  "aviso": "Documento orientativo generado con IA: antes de publicarlo debe revisarlo un abogado o un delegado de protección de datos. No sustituye el asesoramiento jurídico."
+}

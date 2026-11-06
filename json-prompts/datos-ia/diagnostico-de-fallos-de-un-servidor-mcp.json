@@ -1,0 +1,51 @@
+{
+  "tarea": "Diagnostica por qué falla mi servidor MCP: dame las causas probables ordenadas, cómo comprobar cada una y cómo arreglarla, empezando por lo más fácil de descartar",
+  "sintoma": {
+    "que_pasa": "[DESCRIBE EL FALLO: NO APARECEN LAS HERRAMIENTAS, ERROR AL LLAMAR, SE QUEDA COLGADO...]",
+    "que_le_pedi_al_agente": "[LA FRASE EXACTA QUE ESCRIBISTE]",
+    "que_respondio": "[LA RESPUESTA O EL ERROR TAL CUAL]",
+    "mensaje_o_registro": "[PEGA AQUÍ EL LOG SI LO TIENES, SIN CREDENCIALES]",
+    "desde_cuando": "[SIEMPRE / DESDE HOY / DESDE UN CAMBIO]",
+    "que_cambie_antes": "[ACTUALIZACIÓN, CAMBIO DE CLAVE, NUEVO ORDENADOR, NADA]",
+    "funciona_en_otro_equipo": "[SÍ / NO / NO LO SÉ]",
+    "entorno": "[CLIENTE, SISTEMA OPERATIVO, SERVIDOR MCP Y VERSIÓN]"
+  },
+  "familias_de_causa_a_revisar": [
+    "Configuración: el servidor no está declarado, ruta o comando mal escritos, falta reiniciar el cliente",
+    "Arranque: el servidor no llega a levantarse por una dependencia o versión",
+    "Credenciales: clave caducada, sin permisos suficientes o mal copiada",
+    "Conexión: sin internet, cortafuegos, proxy o servicio del proveedor caído",
+    "Uso: el agente no encuentra la herramienta porque la descripción no encaja con lo que pediste",
+    "Datos: parámetros mal formados, formato de fecha, acentos, identificadores inexistentes",
+    "Límites: demasiadas peticiones, respuesta demasiado grande o tiempo de espera agotado"
+  ],
+  "instrucciones": [
+    "Ordena las causas de más a menos probable según el síntoma y lo que cambió antes",
+    "Para cada causa da una comprobación de menos de 2 minutos y qué verás si es esa",
+    "Da el arreglo concreto paso a paso y cómo confirmar que quedó resuelto",
+    "Si el fallo puede venir de dos sitios, di cómo distinguirlos",
+    "Termina con el mensaje exacto que debo enviar al soporte o al desarrollador si nada funciona"
+  ],
+  "restricciones": [
+    "No supongas datos que no te he dado: si falta algo, pídelo en una lista corta al principio",
+    "No propongas reinstalar todo como primera opción",
+    "Avisa antes de cualquier paso que borre configuración"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "Qué me falta saber (si aplica)",
+      "Tabla: Causa | Probabilidad | Comprobación en 2 minutos | Arreglo | Cómo confirmar",
+      "Orden recomendado de pruebas",
+      "Mensaje listo para copiar al soporte"
+    ]
+  },
+  "criterios_calidad": [
+    "La primera causa propuesta encaja con el síntoma descrito",
+    "Cada comprobación se puede hacer sin tocar código",
+    "Ningún paso expone credenciales, claves ni datos personales en el texto que se pega en el chat",
+    "El orden de pruebas evita cualquier cambio destructivo hasta agotar las comprobaciones sencillas",
+    "El mensaje para el soporte se entiende sin haber leído el resto de la conversación"
+  ],
+  "aviso": "Antes de pegar registros o configuraciones, borra claves, tokens y datos personales; si el fallo afecta a datos de clientes o a sistemas en producción, consulta a un profesional de seguridad o de sistemas"
+}

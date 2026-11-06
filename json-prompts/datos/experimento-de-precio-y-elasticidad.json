@@ -1,0 +1,44 @@
+{
+  "tarea": "Diseñar un experimento de precio controlado y su análisis posterior, para estimar la elasticidad y decidir el precio con mejor margen total",
+  "contexto": {
+    "producto_o_servicio": "[NOMBRE Y QUÉ ES]",
+    "canal_del_experimento": "[TIENDA ONLINE / LANDING / PRESUPUESTOS / TIENDA FÍSICA]",
+    "tipo_de_compra": "[IMPULSO / RECURRENTE / DECISIÓN LARGA]"
+  },
+  "entradas": {
+    "precio_actual": "[EUROS]",
+    "coste_unitario_total": "[EUROS, INCLUYE ENVÍO Y COMISIONES]",
+    "unidades_mes": "[NÚMERO]",
+    "precios_a_probar": "[EJ. 39, 45 Y 49 EUROS]",
+    "trafico_o_clientes_mes": "[NÚMERO]",
+    "restricciones_comerciales": "[CLIENTES ANTIGUOS, CONTRATOS, PROMESA DE PRECIO, COMPETENCIA]"
+  },
+  "procedimiento": [
+    "1. Elegir el método de asignación menos dañino para la marca: por franja temporal, por zona o canal, por segmento de clientes nuevos, o por variante de landing",
+    "2. Descartar de entrada asignar precios distintos a clientes iguales en el mismo momento y sitio, por el riesgo reputacional y legal",
+    "3. Fijar la métrica principal en margen bruto total del periodo, no en unidades ni en conversión sueltas",
+    "4. Calcular el volumen necesario por rama y la duración mínima, cubriendo al menos un ciclo de compra completo",
+    "5. Definir la regla de parada por daño: caída de unidades superior al umbral acordado durante dos semanas seguidas",
+    "6. Para el análisis: calcular margen por rama, elasticidad aproximada entre pares de precios y punto de indiferencia (cuánto volumen puedes perder sin perder margen)"
+  ],
+  "restricciones": [
+    "No proponer precios psicológicos sin comprobar antes que el margen aguanta",
+    "Avisar siempre de los efectos que el test no mide: recompra, imagen de marca y reacción de la competencia",
+    "No concluir con menos de un ciclo de compra completo por rama",
+    "Nada de recomendaciones vagas: cada opción debe llevar precio, margen esperado y riesgo"
+  ],
+  "formato_salida": {
+    "diseno": "Ficha del experimento: método de asignación, ramas, precios, duración, volumen mínimo por rama y regla de parada",
+    "tabla_de_escenarios": "Precio, margen unitario, unidades necesarias para igualar el margen actual, pérdida de volumen tolerable en porcentaje",
+    "plan_de_medicion": "Qué apuntar cada semana y dónde",
+    "analisis_final": "Plantilla de lectura con la fórmula de elasticidad y cómo interpretar el signo y el valor",
+    "riesgos": "Lista de 5 riesgos y cómo mitigarlos"
+  },
+  "criterios_calidad": [
+    "La recomendación se apoya en margen total, no en el precio que más vende",
+    "Los precios se prueban sin tratar de forma distinta a clientes iguales en el mismo momento y sitio",
+    "Cada opción lleva precio, margen esperado y riesgo",
+    "El análisis cubre al menos un ciclo de compra completo por rama"
+  ],
+  "aviso": "Antes de aplicar precios distintos revisa con un profesional la normativa de consumo, la información de precios y las condiciones de tus contratos vigentes"
+}

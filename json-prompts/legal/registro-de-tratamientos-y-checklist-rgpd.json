@@ -1,0 +1,49 @@
+{
+  "tarea": "Elaborar el registro de actividades de tratamiento y el checklist de cumplimiento básico de protección de datos de una pyme española",
+  "contexto": {
+    "empresa": "[NOMBRE, CIF Y DIRECCIÓN]",
+    "actividad": "[A QUÉ SE DEDICA]",
+    "plantilla": "[NÚMERO DE EMPLEADOS]",
+    "tiene_dpd": "[SÍ / NO / NO SÉ]",
+    "trata_datos_especiales": "[SALUD, MENORES, ANTECEDENTES, BIOMETRÍA: SÍ O NO]"
+  },
+  "entradas": {
+    "tratamientos": "[CLIENTES, PROVEEDORES, NÓMINAS, CANDIDATOS, NEWSLETTER, VIDEOVIGILANCIA, LISTA DE ESPERA]",
+    "donde_se_guardan": "[PROGRAMA DE GESTIÓN, NUBE, EXCEL, PAPEL, CORREO]",
+    "proveedores_que_acceden": "[GESTORÍA, AGENCIA DE MARKETING, HOSTING, PLATAFORMA DE CITAS]",
+    "web_y_formularios": "[FORMULARIOS, COOKIES, CHAT, TIENDA]"
+  },
+  "metodo": [
+    "Listar un tratamiento por cada finalidad distinta, no por cada fichero",
+    "Para cada uno indicar finalidad, categorías de personas y de datos, base legal, plazo de conservación, destinatarios y medidas de seguridad aplicadas",
+    "Marcar los tratamientos que necesitan consentimiento expreso y separarlos de los que van por contrato u obligación legal",
+    "Revisar los deberes básicos: cláusulas informativas, contratos de encargado con los proveedores, atención a los derechos de acceso y borrado, aviso de brechas en 72 horas y formación del personal",
+    "Señalar los puntos donde hace falta un abogado o asesor especializado, sin fingir que el documento sustituye su revisión",
+    "Proponer un plan de subsanación de lo que falte, ordenado por riesgo"
+  ],
+  "restricciones": [
+    "Explicar cada concepto legal con una frase en lenguaje llano justo después del término",
+    "No afirmar que la empresa cumple: el resultado es un borrador de trabajo que debe validar un profesional",
+    "No inventar bases legales: si hay duda, ofrecer las dos opciones y explicar cuándo aplica cada una",
+    "Ceñirse al marco español y europeo vigente y avisar si algo debe verificarse por posibles cambios"
+  ],
+  "formato_salida": {
+    "tipo": "tabla de registro más checklist y plan",
+    "columnas_registro": ["Tratamiento", "Finalidad", "Personas afectadas", "Datos tratados", "Base legal", "Conservación", "Quién más lo ve", "Medidas de seguridad"],
+    "anexos": ["Checklist de deberes con estado cumplido, a medias o pendiente", "Plan de subsanación por orden de riesgo", "Preguntas para llevar al asesor"]
+  },
+  "criterios_calidad": [
+    "El registro se entiende sin ser jurista y sirve para enseñarlo tal cual",
+    "Cada pendiente tiene acción, responsable y plazo",
+    "Se distinguen los tratamientos por consentimiento de los que van por contrato u obligación legal",
+    "Los proveedores con acceso a datos aparecen con su contrato de encargado",
+    "No se afirma cumplimiento: se marca lo pendiente"
+  ],
+  "errores_a_evitar": [
+    "Hacer un registro por herramienta en lugar de por finalidad",
+    "Olvidar candidatos, cámaras y lista de espera",
+    "Copiar plazos de conservación sin norma que los respalde"
+  ],
+  "tono": "Claro, llano y tuteando, sin jerga jurídica",
+  "aviso": "Es un borrador de trabajo. Debe revisarlo un abogado o el delegado de protección de datos antes de darlo por válido, y verificarse con la normativa vigente."
+}

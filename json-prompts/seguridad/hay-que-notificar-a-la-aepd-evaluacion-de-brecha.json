@@ -1,0 +1,46 @@
+{
+  "tarea": "Evaluar si un incidente de seguridad es una brecha de datos personales notificable segun el RGPD y preparar la documentacion",
+  "rol": "Especialista en proteccion de datos que asesora a pymes espanolas y conoce el procedimiento de la AEPD",
+  "entradas": {
+    "responsable": "[NOMBRE FISCAL DE TU EMPRESA Y NIF]",
+    "que_ha_ocurrido": "[DESCRIBE EL INCIDENTE EN 3 O 4 FRASES]",
+    "fecha_conocimiento": "[FECHA Y HORA EN QUE TUVISTE CONSTANCIA DEL INCIDENTE]",
+    "tipos_de_datos": "[NOMBRE, EMAIL, TELEFONO, DIRECCION, DNI, DATOS BANCARIOS, SALUD, MENORES, CONTRASENAS]",
+    "personas_afectadas": "[NUMERO APROXIMADO Y DE QUE COLECTIVO: CLIENTES, EMPLEADOS, PACIENTES]",
+    "estaban_cifrados": "[SI / NO / NO LO SE]",
+    "tipo_de_afectacion": "[PERDIDA DE ACCESO, ROBO O COPIA, PUBLICACION, ALTERACION]",
+    "medidas_ya_tomadas": "[QUE HAS HECHO PARA CONTENERLO]",
+    "hay_encargados": "[PROVEEDORES QUE TRATAN ESOS DATOS: HOSTING, GESTORIA, CRM, EMAIL MARKETING]"
+  },
+  "instrucciones": [
+    "Determina primero si hay datos personales implicados y si actuo como responsable o como encargado del tratamiento",
+    "Valora el riesgo para los derechos y libertades usando cuatro factores: sensibilidad de los datos, volumen, facilidad de identificacion y consecuencias probables",
+    "Concluye con una de tres opciones: no notificable (solo registro interno), notificable a la AEPD en 72 horas, o notificable ademas a las personas afectadas",
+    "Calcula la fecha y hora limite exacta de las 72 horas desde la fecha de conocimiento",
+    "Redacta el borrador de notificacion con los apartados que pide la AEPD: naturaleza, categorias y numero de afectados, consecuencias probables, medidas adoptadas y datos de contacto",
+    "Redacta tambien la entrada del registro interno de brechas, obligatoria aunque no se notifique",
+    "Lista las preguntas que debo trasladar a mis proveedores implicados y en que plazo"
+  ],
+  "restricciones": [
+    "Deja claro que esto es una guia de preparacion y no sustituye al asesoramiento juridico ni al DPD si lo tengo",
+    "No inventes articulos ni numeros de expediente; cita solo lo que sea seguro y en lenguaje llano",
+    "Si falta un dato clave para decidir, pidemelo antes de concluir"
+  ],
+  "formato_salida": {
+    "tipo": "Documento en markdown listo para copiar",
+    "secciones": ["Decision y motivo en 3 lineas", "Fecha limite de notificacion", "Valoracion del riesgo por factores", "Borrador de notificacion a la AEPD", "Borrador de comunicacion a los afectados si procede", "Entrada del registro interno", "Preguntas a proveedores y plazos", "Aviso de revision profesional"]
+  },
+  "criterios_calidad": [
+    "La conclusion se deduce de los cuatro factores de riesgo y no de una impresion general",
+    "La fecha limite de 72 horas esta calculada con dia y hora, indicando desde cuando cuenta",
+    "El borrador de notificacion se puede copiar sin reescribirlo",
+    "Lo que se desconoce figura como pendiente, no como dato inventado"
+  ],
+  "errores_a_evitar": [
+    "Esperar a tener toda la informacion antes de notificar: la normativa permite notificar por fases",
+    "Dar por no notificable una brecha solo porque no hubo robo de datos",
+    "No anotar en el registro interno las brechas que no se notifican"
+  ],
+  "tono": "Preciso, sereno y en lenguaje llano, tuteando",
+  "aviso": "Esta evaluacion es una guia de preparacion. La decision final sobre notificar a la AEPD y a los afectados debe revisarla un abogado o el delegado de proteccion de datos."
+}

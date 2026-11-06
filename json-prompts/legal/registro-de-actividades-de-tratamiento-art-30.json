@@ -1,0 +1,45 @@
+{
+  "tarea": "Elaborar el Registro de Actividades de Tratamiento (RAT) del artículo 30 del RGPD, tratamiento por tratamiento, listo para enseñar en una inspección de la AEPD",
+  "contexto": {
+    "responsable": "[NOMBRE FISCAL DE TU EMPRESA]",
+    "cif_y_direccion": "[CIF Y DIRECCIÓN COMPLETA]",
+    "contacto_privacidad": "[EMAIL PARA ASUNTOS DE PRIVACIDAD]",
+    "sector": "[SECTOR: p. ej. clínica dental, tienda online, asesoría]",
+    "empleados": "[Nº DE EMPLEADOS]"
+  },
+  "entradas": {
+    "actividades": "[LISTA LIBRE DE LO QUE HACES CON DATOS: clientes, empleados, currículums, newsletter, cámaras, proveedores, videollamadas]",
+    "herramientas": "[HERRAMIENTAS Y PROVEEDORES: CRM, gestor de email, hosting, gestoría, pasarela de pago]",
+    "datos_sensibles": "[¿TRATAS SALUD, DATOS DE MENORES, IDEOLOGÍA O ANTECEDENTES? SÍ/NO Y CUÁLES]"
+  },
+  "pasos": [
+    "Agrupa la operativa en tratamientos reales, no en herramientas: cada tratamiento tiene una finalidad propia",
+    "Para cada uno define finalidad, interesados, categorías de datos, base legítima del art. 6 (y art. 9 si hay datos especiales), destinatarios, transferencias fuera de la UE, plazo de conservación y medidas de seguridad",
+    "Justifica la base legítima en una frase; si eliges interés legítimo, resume la ponderación",
+    "Fija plazos de conservación citando la norma que los impone (fiscal, laboral, contable) o el criterio propio",
+    "Marca los tratamientos que podrían necesitar Evaluación de Impacto (art. 35) y los que exigen contrato de encargado (art. 28)"
+  ],
+  "restricciones": [
+    "No inventes datos: lo que falte se escribe como PENDIENTE DE CONFIRMAR indicando qué hay que preguntar",
+    "No uses consentimiento como base legítima cuando hay contrato u obligación legal",
+    "Lenguaje claro, sin copiar artículos enteros del reglamento"
+  ],
+  "formato_salida": {
+    "estructura": "una ficha por tratamiento y una tabla resumen al final",
+    "campos_ficha": ["nombre", "finalidad", "interesados", "categorías de datos", "base legítima", "destinatarios", "transferencias internacionales", "conservación", "medidas de seguridad", "riesgo bajo/medio/alto"],
+    "cierre": "lista de tareas pendientes ordenadas por urgencia"
+  },
+  "criterios_calidad": [
+    "Cada tratamiento tiene una finalidad clara y una base legítima defendible",
+    "Ningún plazo de conservación dice indefinido",
+    "Aparecen todos los proveedores que ven datos personales"
+  ],
+  "errores_frecuentes": [
+    "Confundir herramienta con tratamiento",
+    "Olvidar los datos de empleados y de candidatos a un puesto",
+    "Elegir el consentimiento como base legítima por costumbre, sin comprobar si hay contrato u obligación legal",
+    "Dejar plazos de conservación sin definir"
+  ],
+  "tono": "Claro, preciso y sin jerga jurídica innecesaria",
+  "aviso": "El registro es un borrador de trabajo: debe revisarlo un abogado o el delegado de protección de datos antes de considerarlo definitivo. Verifica los artículos y plazos citados con la normativa vigente."
+}

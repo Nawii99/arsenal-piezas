@@ -1,0 +1,42 @@
+{
+  "tarea": "Diseñar la tabla de tarifas de envío de mi tienda online por zona y tramo de peso, de forma que cada pedido cubra su coste real de transporte y embalaje sin espantar al cliente",
+  "contexto": {
+    "tienda": "[NOMBRE DE TU TIENDA]",
+    "que_vendo": "[QUÉ VENDES Y EN QUÉ CAJA SUELE IR]",
+    "peso_medio_pedido_kg": "[PESO MEDIO EN KG]",
+    "medidas_caja_habitual_cm": "[LARGO x ANCHO x ALTO]",
+    "ticket_medio_eur": "[TICKET MEDIO CON IVA]",
+    "margen_bruto_pct": "[MARGEN BRUTO EN %]",
+    "zonas": "[PENÍNSULA, BALEARES, CANARIAS, CEUTA Y MELILLA, PORTUGAL, RESTO UE]",
+    "tarifas_negociadas": "[PEGA AQUÍ: AGENCIA, TRAMO DE PESO, PRECIO SIN IVA, RECARGOS]",
+    "coste_embalaje_por_pedido_eur": "[CAJA + RELLENO + PRECINTO + ETIQUETA]"
+  },
+  "pasos": [
+    "1. Calcula el peso facturable de la caja habitual: compara peso real con peso volumétrico (largo x ancho x alto en cm dividido entre el divisor de la agencia, normalmente 5000 o 6000) y quédate con el mayor",
+    "2. Suma al precio de la agencia todos los recargos que suelen olvidarse: combustible, entrega en zona de difícil acceso, isla, reintento de entrega y seguro",
+    "3. Suma el coste de embalaje y el tiempo de preparación del pedido valorado a [COSTE HORA] euros",
+    "4. Propón tres modelos de tarifa (tarifa plana por zona, tramos de peso, y gratis a partir de un umbral) con el coste medio que asume la tienda en cada uno",
+    "5. Marca en rojo cualquier combinación zona-peso donde el envío se coma más del [PORCENTAJE MÁXIMO ACEPTABLE] % del margen del pedido",
+    "6. Indica qué zonas conviene no servir o servir solo con recogida en punto de conveniencia"
+  ],
+  "errores_a_evitar": [
+    "Olvidar el peso volumétrico en productos ligeros y voluminosos",
+    "Anunciar precio de envío con IVA distinto al que se cobra en el carrito",
+    "Tratar Canarias, Ceuta y Melilla como península: hay despacho de aduana y trámites aparte",
+    "Poner envío gratis sin comprobar que el ticket medio lo aguanta"
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla en markdown: zona | tramo de peso | coste real de la tienda | precio a cobrar | margen que queda",
+    "bloque_2": "Comparativa de los tres modelos de tarifa con ventajas e inconvenientes en dos líneas cada uno",
+    "bloque_3": "Texto exacto para la página de Gastos de envío de la web, en frases cortas",
+    "bloque_4": "Lista de avisos: casos donde pierdo dinero y qué hacer"
+  },
+  "criterios_calidad": [
+    "Cada precio va acompañado del cálculo que lo justifica",
+    "No se inventa ninguna tarifa: si falta un dato, se pide de forma expresa antes de calcular",
+    "Los costes de la tienda y el precio al cliente se muestran por separado y con el IVA aclarado",
+    "Canarias, Ceuta y Melilla aparecen con su propia fila y sus trámites aparte",
+    "La tabla final se puede copiar a la web sin editarla"
+  ],
+  "aviso": "Las tarifas son orientativas y dependen de los precios reales de tu agencia. El tratamiento de IVA y aduanas en Canarias, Ceuta y Melilla conviene confirmarlo con tu gestoría."
+}

@@ -1,0 +1,45 @@
+{
+  "tarea": "Dimensionar un test A/B antes de lanzarlo: calcular tamaño de muestra por variante, duración estimada y regla de decisión, explicando cada número en lenguaje llano",
+  "contexto": {
+    "negocio": "[QUÉ VENDES Y A QUIÉN]",
+    "donde_se_hace_el_test": "[WEB / LANDING / EMAIL / ANUNCIOS / FICHA DE PRODUCTO]",
+    "que_cambia_la_variante_B": "[DESCRIBE EL CAMBIO EN UNA FRASE]"
+  },
+  "entradas": {
+    "metrica_principal": "[CONVERSIÓN A COMPRA / ALTAS / CLICS / RESERVAS]",
+    "valor_actual_metrica": "[POR EJEMPLO 2,4 %]",
+    "mejora_minima_que_me_compensa": "[EN PUNTOS O EN % RELATIVO, EJ. PASAR DE 2,4 % A 3,0 %]",
+    "trafico_semanal_total": "[VISITAS, ENVÍOS O USUARIOS POR SEMANA]",
+    "reparto_del_trafico": "[50/50 U OTRO]",
+    "nivel_de_confianza": "95 %",
+    "potencia": "80 %",
+    "metricas_de_control": "[TICKET MEDIO, DEVOLUCIONES, BAJAS, MÁRGENES]"
+  },
+  "procedimiento": [
+    "1. Comprobar que la métrica principal es una sola y es la que de verdad mueve el dinero; si el usuario da varias, elegir una y bajar el resto a secundarias",
+    "2. Calcular el tamaño de muestra por variante para el efecto mínimo indicado, con la fórmula de proporciones, y mostrar el número redondeado hacia arriba",
+    "3. Dividir entre el tráfico semanal para estimar semanas necesarias; redondear siempre a semanas completas para no mezclar días laborables y fines de semana",
+    "4. Si la duración supera 6 semanas, avisar de que el test no es viable y proponer alternativas: efecto mínimo mayor, métrica más frecuente o cambio más agresivo",
+    "5. Definir la regla de decisión escrita antes de empezar y las condiciones de parada por daño"
+  ],
+  "restricciones": [
+    "No mirar resultados ni tomar decisiones antes de alcanzar la muestra planificada",
+    "No cambiar la variante, el reparto de tráfico ni la métrica una vez arrancado el test",
+    "No lanzar el test en semanas atípicas (rebajas, festivos, campaña puntual) salvo que se indique",
+    "Explicar cada concepto estadístico con una frase de andar por casa, sin jerga sin traducir"
+  ],
+  "formato_salida": {
+    "bloque_1": "Resumen en 5 líneas: métrica, efecto mínimo, muestra por variante, semanas necesarias y veredicto viable o no viable",
+    "bloque_2": "Tabla con columnas: parámetro, valor, qué significa en cristiano",
+    "bloque_3": "Ficha del test lista para pegar: hipótesis, variante A, variante B, métrica principal, métricas de control, fecha de inicio y fecha mínima de fin",
+    "bloque_4": "Regla de decisión: qué haré si gana B, si gana A y si queda en empate",
+    "bloque_5": "Tabla con 3 riesgos del test y cómo vigilarlos (efecto novedad, tráfico atípico, errores de medición)"
+  },
+  "criterios_calidad": [
+    "El tamaño de muestra se muestra con la fórmula y los valores usados",
+    "Cada concepto estadístico va explicado en una frase llana",
+    "La duración se redondea a semanas completas",
+    "El veredicto viable o no viable es claro y se justifica con números"
+  ],
+  "aviso": "Es un cálculo orientativo: verifica el tamaño de muestra con una calculadora estadística o con un analista antes de lanzar el test"
+}

@@ -1,0 +1,47 @@
+{
+  "rol": "Director de arte especializado en packaging de gran consumo, con experiencia en marcas pequeñas y tiradas cortas",
+  "tarea": "Redactar el brief completo de packaging de un producto para que un disenador o una IA pueda disenar el envase sin volver a preguntar nada",
+  "contexto": {
+    "empresa": "[NOMBRE DE TU EMPRESA]",
+    "producto_y_formato": "[PRODUCTO Y FORMATO: p. ej. crema facial 50 ml en tarro de vidrio]",
+    "categoria": "[CATEGORIA: alimentacion, bebida, cosmetica, suplemento, textil, artesania]",
+    "pvp": "[PRECIO DE VENTA AL PUBLICO]",
+    "canal_de_venta": "[DONDE SE VENDE: tienda propia, supermercado, herbolario, Amazon, ferias]",
+    "publico": "[A QUIEN SE LO VENDES: edad, situacion y que le preocupa]",
+    "competidores": ["[COMPETIDOR 1]", "[COMPETIDOR 2]", "[COMPETIDOR 3]"],
+    "posicionamiento": "[EN UNA FRASE: por que te compran a ti y no a ellos]",
+    "presupuesto_impresion": "[BAJO, MEDIO O ALTO]",
+    "elementos_fijos": "[LOGO, COLORES O TIPOGRAFIA QUE YA TIENES Y NO SE TOCAN]"
+  },
+  "pasos": [
+    "Resumir en una frase que tiene que sentir alguien al ver el envase en el lineal o en una foto de movil",
+    "Definir la jerarquia del frontal: que se lee primero, segundo y tercero, y con cuantas palabras",
+    "Proponer paleta de color con justificacion de categoria y de diferenciacion frente a los competidores citados",
+    "Proponer dos rutas tipograficas distintas y decir cual encaja mejor con el precio y el canal",
+    "Decidir material y acabado coherentes con el presupuesto indicado, sin proponer troqueles caros si el presupuesto es bajo",
+    "Listar todos los textos e iconos que deben caber en el envase, separando obligatorios y opcionales"
+  ],
+  "formato_salida": {
+    "tipo": "documento por secciones con titulos, sin parrafos de mas de cuatro lineas",
+    "secciones": ["Resumen en una frase", "Publico y momento de compra", "Mensaje del frontal por jerarquia", "Color y tipografia con justificacion", "Material, formato y acabados", "Inventario de textos e iconos", "Tres cosas que el disenador NO debe hacer", "Como sabremos que esta bien"]
+  },
+  "restricciones": [
+    "Nada de adjetivos vacios tipo innovador o disruptivo: describe decisiones concretas",
+    "Toda propuesta de color o tipografia va acompanada de un porque en una linea",
+    "Si falta un dato clave, marcalo como PENDIENTE en vez de inventarlo"
+  ],
+  "criterios_calidad": [
+    "El frontal se entiende en menos de tres segundos y a 30 cm de distancia",
+    "El brief distingue el envase del de los competidores citados por algo mas que el color ni la tipografia",
+    "Un disenador que no conoce el producto sabe que hacer con cada elemento sin escribirte",
+    "Todo lo que no se puede tocar aparece listado de forma explicita",
+    "Los textos obligatorios caben en el formato indicado sin letra ilegible"
+  ],
+  "errores_a_evitar": [
+    "Pedir al disenador que 'se vea premium' sin decir que decisiones lo demuestran",
+    "Meter mas de tres mensajes en el frontal",
+    "Proponer acabados o troqueles que el presupuesto indicado no cubre"
+  ],
+  "tono": "Claro, concreto y tuteando, como un director de arte que habla con un cliente sin formacion en diseno",
+  "aviso": "Los textos obligatorios por ley (ingredientes, alergenos, lote, caducidad, etiquetado de cosmetica o suplementos, simbolos de reciclaje) dependen de la categoria: el brief los lista como pendientes de validar y deben comprobarse con un profesional o con la normativa vigente antes de imprimir"
+}

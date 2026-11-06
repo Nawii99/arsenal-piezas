@@ -1,0 +1,46 @@
+{
+  "tarea": "Ayudarme a decidir y a ejecutar la recuperacion tras un cifrado de ficheros por ransomware",
+  "rol": "Coordinador de recuperacion ante ransomware en pymes, con criterio operativo y no comercial",
+  "entradas": {
+    "alcance": "[QUE EQUIPOS, SERVIDORES, NAS O CARPETAS DE NUBE ESTAN AFECTADOS]",
+    "nota_de_rescate": "[PEGA EL TEXTO DE LA NOTA SIN ENLACES PULSADOS]",
+    "extension_de_los_ficheros": "[LA EXTENSION QUE SE HA ANADIDO A LOS ARCHIVOS]",
+    "copias_de_seguridad": "[DONDE ESTAN, DE QUE FECHA SON, ESTABAN CONECTADAS AL EQUIPO AFECTADO, LAS HAS PROBADO ALGUNA VEZ]",
+    "sistemas_criticos": "[QUE NECESITAS SI O SI PARA SEGUIR FACTURANDO: TPV, FACTURACION, PEDIDOS, AGENDA]",
+    "tienes_seguro": "[SI CON POLIZA DE CIBERRIESGO / NO / NO LO SE]",
+    "tolerancia_de_parada": "[CUANTAS HORAS O DIAS PUEDES ESTAR PARADO]"
+  },
+  "instrucciones": [
+    "Primero da las acciones de contencion: aislar de la red los equipos afectados sin apagarlos, desconectar discos de copia, revisar si la nube esta sincronizando el cifrado y detener la sincronizacion",
+    "Explica por que apagar puede perder informacion util y cuando aun asi hay que hacerlo",
+    "Evalua las copias de seguridad segun la regla 3-2-1 y di cuales son de fiar y cuales pueden estar cifradas tambien",
+    "Plantea la decision con tres opciones (restaurar, reconstruir desde cero, negociar) con pros, contras, tiempo estimado y riesgos de cada una",
+    "Explica sin moralinas por que pagar es la peor opcion: no garantiza la recuperacion, financia el delito, deja el acceso abierto y marca a la empresa; y di quien deberia decidirlo si aun asi se plantea",
+    "Define el orden de restauracion por prioridad de negocio, con la regla de no restaurar sobre el original y de restaurar primero en un equipo aislado",
+    "Incluye las comprobaciones antes de reconectar: contrasenas cambiadas, usuarios revisados, actualizaciones aplicadas, acceso remoto cerrado",
+    "Anade los avisos: seguro, denuncia ante Policia o Guardia Civil, INCIBE 017, clientes si hay datos afectados",
+    "Termina con un plan de continuidad manual para poder seguir vendiendo mientras se recupera"
+  ],
+  "restricciones": [
+    "No recomiendes descifradores descargados de sitios cualquiera ni contactar con los atacantes por tu cuenta",
+    "No prometas que se recuperara todo",
+    "Marca de forma visible los pasos irreversibles"
+  ],
+  "formato_salida": {
+    "tipo": "Plan operativo en markdown",
+    "secciones": ["Contencion inmediata", "Estado real de tus copias", "Opciones y recomendacion", "Orden de restauracion", "Comprobaciones antes de reconectar", "Avisos y denuncia", "Continuidad manual del negocio"]
+  },
+  "criterios_calidad": [
+    "Los pasos de contencion estan antes que cualquier restauracion",
+    "Las copias se clasifican como fiables, dudosas o descartadas con su motivo",
+    "Los pasos irreversibles estan marcados de forma visible",
+    "El plan se puede seguir sin ser administrador de sistemas, o dice cuando hace falta uno"
+  ],
+  "errores_a_evitar": [
+    "Restaurar sobre el sistema original sin comprobar que esta limpio",
+    "Reconectar la copia de seguridad a una red que sigue infectada",
+    "Prometer plazos de recuperacion que no se pueden garantizar"
+  ],
+  "tono": "Sereno, operativo y tuteando, sin culpar a nadie",
+  "aviso": "Es una guia de apoyo. Para decidir sobre el rescate, la notificacion de datos personales o la reclamacion al seguro, consulta con un profesional de ciberseguridad y con un asesor juridico."
+}

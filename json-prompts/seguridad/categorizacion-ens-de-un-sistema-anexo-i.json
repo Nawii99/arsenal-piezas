@@ -1,0 +1,46 @@
+{
+  "tarea": "Categorizar un sistema de información según el Esquema Nacional de Seguridad (Real Decreto 311/2022, Anexo I) y justificar el nivel resultante",
+  "contexto": {
+    "organizacion": "[NOMBRE DE TU EMPRESA]",
+    "sistema": "[NOMBRE DEL SISTEMA O SERVICIO A CATEGORIZAR]",
+    "que_hace": "[QUÉ SERVICIO PRESTA Y A QUIÉN]",
+    "informacion_tratada": "[TIPOS DE INFORMACIÓN: DATOS PERSONALES, DATOS ESPECIALMENTE PROTEGIDOS, DATOS DE ADMINISTRACIÓN, ETC.]",
+    "usuarios": "[NÚMERO Y TIPO DE USUARIOS]",
+    "impacto_caida": "[QUÉ PASA SI EL SISTEMA ESTÁ CAÍDO 1 HORA, 1 DÍA Y 1 SEMANA]",
+    "impacto_fuga": "[QUÉ PASA SI LA INFORMACIÓN SE FILTRA O SE ALTERA]",
+    "relacion_administracion": "[QUÉ ORGANISMO PÚBLICO ES CLIENTE Y QUÉ EXIGE EN EL PLIEGO]"
+  },
+  "instrucciones": [
+    "Valora por separado las cinco dimensiones: Confidencialidad, Integridad, Trazabilidad, Autenticidad y Disponibilidad",
+    "Asigna a cada dimensión nivel BAJO, MEDIO o ALTO o la marca de no aplicable, siguiendo los criterios de perjuicio del Anexo I: sobre las funciones del organismo, sobre los activos, sobre terceros y sobre el cumplimiento legal",
+    "Justifica cada nivel con un escenario concreto de daño, no con una frase teórica",
+    "La categoría del sistema es la del nivel más alto entre las cinco dimensiones: explícalo para que se entienda",
+    "Advierte de qué implica esa categoría en número aproximado de medidas del Anexo II y en tipo de auditoría (autoevaluación en BÁSICA, auditoría formal bienal en MEDIA y ALTA)",
+    "Señala si el pliego del cliente público exige un nivel superior al que sale del análisis"
+  ],
+  "restricciones": [
+    "No infles los niveles por prudencia: cada subida debe tener justificación de daño real",
+    "No confundas el ENS con el RGPD, aunque los datos personales influyan en la valoración",
+    "Si falta información para valorar una dimensión, dilo y pide el dato exacto"
+  ],
+  "formato_salida": {
+    "1_ficha_sistema": "Nombre, responsable de la información, responsable del servicio, responsable de seguridad y alcance",
+    "2_tabla_dimensiones": "Dimensión | Nivel | Escenario de daño | Criterio del Anexo I aplicado",
+    "3_categoria": "Categoría final del sistema y frase de justificación para el acta",
+    "4_consecuencias": "Qué obligaciones y tipo de auditoría trae ese nivel y qué preparar en los próximos 3 meses"
+  },
+  "criterios_calidad": [
+    "Las cinco dimensiones están valoradas y justificadas por separado",
+    "La categoría final se deduce correctamente del nivel más alto",
+    "El texto sirve tal cual para el acta de categorización y para el expediente de certificación",
+    "Cada nivel se explica con un daño que la organización reconocería como suyo",
+    "Se aclara si el pliego exige una categoría superior a la calculada"
+  ],
+  "errores_a_evitar": [
+    "Poner ALTO en todo por prudencia",
+    "Valorar el sistema como un todo sin separar las cinco dimensiones",
+    "Mezclar la categoría del sistema con el nivel de las medidas de seguridad"
+  ],
+  "tono": "Formal, claro y justificado, listo para firmar por el responsable",
+  "aviso": "La categorización la firma el responsable de la información y del servicio; contrasta el resultado con el texto vigente del RD 311/2022 y, si es necesario, con un auditor o consultor ENS."
+}

@@ -1,0 +1,54 @@
+{
+  "tarea": "Audita este servidor MCP antes de que lo instale y dime con un semáforo si es prudente conectarlo, qué permisos recortar y qué vigilar después",
+  "servidor_a_auditar": {
+    "nombre": "[NOMBRE DEL SERVIDOR MCP]",
+    "enlace_o_repositorio": "[URL]",
+    "autor_o_empresa": "[QUIÉN LO PUBLICA]",
+    "forma_de_ejecucion": "[EN MI ORDENADOR / EN UN SERVIDOR REMOTO]",
+    "credenciales_que_pide": "[EJ: CLAVE API DE STRIPE, ACCESO A MI GMAIL]",
+    "sistema_que_conecta": "[QUÉ SISTEMA Y QUÉ DATOS CONTIENE]",
+    "hay_datos_personales": "[SÍ / NO / NO LO SÉ]"
+  },
+  "revisiones_obligatorias": [
+    "Permisos: cada herramienta que expone, si solo lee o también crea, modifica o borra, y si alguna ejecuta comandos o código",
+    "Alcance de las credenciales: si pide una clave de administrador cuando bastaría una de solo lectura",
+    "Recorrido de los datos: si salen de mi equipo, hacia qué servicios y si quedan guardados en algún sitio",
+    "Confianza del origen: quién lo mantiene, actividad reciente, licencia, si es el conector oficial del fabricante",
+    "Dependencias y actualizaciones automáticas que podrían cambiar el comportamiento sin avisar",
+    "Riesgo de instrucciones ocultas: si el agente lee contenido de fuera (correos, webs, tickets) que podría contener órdenes maliciosas",
+    "Qué pasa si el agente se equivoca: acciones irreversibles, envíos a clientes, cobros, borrados"
+  ],
+  "escala": {
+    "verde": "conectar con normalidad",
+    "ambar": "conectar solo con permisos recortados y estas condiciones",
+    "rojo": "no conectar hasta resolver esto"
+  },
+  "instrucciones": [
+    "Recorre las revisiones obligatorias una a una y asigna color con una frase de justificación",
+    "Propón la versión mínima de permisos con la que la tarea seguiría funcionando",
+    "Indica qué debería probar primero en una cuenta de pruebas o con datos falsos",
+    "Añade tres preguntas concretas para hacer al autor o al proveedor si algo no queda claro"
+  ],
+  "restricciones": [
+    "No des por buena una afirmación del propio proyecto sin contrastarla",
+    "Si falta información para juzgar un punto, márcalo en ámbar y di qué falta",
+    "Explica cada riesgo con un ejemplo de qué podría pasar en un negocio como el mío"
+  ],
+  "formato_salida": {
+    "tipo": "markdown",
+    "secciones": [
+      "Veredicto: verde, ámbar o rojo, en una frase",
+      "Tabla: Revisión | Color | Qué he encontrado | Qué hacer",
+      "Permisos mínimos recomendados",
+      "Plan de prueba segura antes de usarlo con datos reales",
+      "Qué revisar cada mes una vez conectado"
+    ]
+  },
+  "criterios_calidad": [
+    "Cada color tiene una justificación concreta, no una frase genérica",
+    "Los permisos recomendados son los mínimos con los que la tarea sigue funcionando",
+    "Se distingue lo comprobado de lo que solo afirma el autor del proyecto",
+    "El plan de prueba usa datos falsos o una cuenta de pruebas"
+  ],
+  "aviso": "Esta auditoría es orientativa y no sustituye a un análisis de seguridad hecho por un profesional; si el servidor va a tocar datos personales, financieros o de clientes, que lo revise un especialista antes de conectarlo con datos reales"
+}

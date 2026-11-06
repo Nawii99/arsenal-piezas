@@ -1,0 +1,60 @@
+{
+  "tarea": "Auditar la ficha de mi app en las tiendas y devolver un informe con puntuación, problemas ordenados por impacto y las correcciones ya redactadas",
+  "rol": "Especialista en ASO con experiencia en apps publicadas en el mercado español",
+  "contexto": {
+    "app": "[NOMBRE DE TU APP]",
+    "que_hace": "[QUÉ RESUELVE TU APP EN UNA FRASE]",
+    "tiendas": "[APP STORE, GOOGLE PLAY O AMBAS]",
+    "pais_e_idioma": "[PAÍS E IDIOMA DE LA FICHA]",
+    "categoria": "[CATEGORÍA EN LA TIENDA]",
+    "publico": "[A QUIÉN VA DIRIGIDA]",
+    "competidores": "[3 APPS CON LAS QUE COMPITES]"
+  },
+  "entradas": {
+    "titulo_actual": "[TÍTULO ACTUAL]",
+    "subtitulo_o_descripcion_corta": "[SUBTÍTULO O DESCRIPCIÓN CORTA ACTUAL]",
+    "campo_keywords": "[LOS 100 CARACTERES DE PALABRAS CLAVE DE APP STORE, SI LOS TIENES]",
+    "descripcion_larga": "[PEGA AQUÍ TU DESCRIPCIÓN LARGA]",
+    "capturas": "[DESCRIBE TUS CAPTURAS: CUÁNTAS SON, QUÉ SE VE Y SI LLEVAN TEXTO]",
+    "valoraciones": "[NOTA MEDIA Y NÚMERO DE VALORACIONES]",
+    "metricas": "[IMPRESIONES, VISITAS A LA FICHA E INSTALACIONES DEL ÚLTIMO MES, SI LAS TIENES]"
+  },
+  "que_revisar": [
+    "Título: si incluye la palabra clave principal y si se corta en la lista de resultados",
+    "Subtítulo o descripción corta: si repite el título en vez de sumar palabras nuevas",
+    "Palabras clave: repeticiones inútiles, plurales innecesarios y términos que ya están en el título",
+    "Primeras 3 líneas de la descripción larga: si convencen antes de pulsar Más",
+    "Capturas: si las dos primeras se entienden sin ampliar y si el texto es legible en pantalla pequeña",
+    "Icono: si se distingue del resto de la categoría a tamaño real",
+    "Valoraciones y respuestas a reseñas negativas",
+    "Coherencia entre lo que promete la ficha y lo que hace la app al abrirla"
+  ],
+  "errores_frecuentes": [
+    "Meter el nombre de la marca varias veces y desperdiciar caracteres",
+    "Escribir la descripción para la tienda y no para la persona que decide en 5 segundos",
+    "Usar la misma ficha en todos los idiomas sin adaptar las palabras",
+    "Poner nombres de competidores en las palabras clave, que las tiendas pueden rechazar"
+  ],
+  "formato_salida": {
+    "tipo": "Informe en secciones con tablas en texto",
+    "secciones": [
+      "Nota global sobre 100 y nota por bloque: texto, visual, reputación",
+      "Tabla de problemas: problema, impacto (alto, medio, bajo), esfuerzo y qué pasa si no lo tocas",
+      "Textos corregidos listos para copiar, con el recuento de caracteres al lado",
+      "Plan de 3 acciones para esta semana, ordenadas por impacto y esfuerzo",
+      "Qué medir en 30 días para saber si la ficha ha mejorado: impresiones, visitas a la ficha e instalaciones"
+    ]
+  },
+  "restricciones": [
+    "No inventes volúmenes de búsqueda ni posiciones: si no tienes el dato, dilo",
+    "Respeta los límites de caracteres de cada tienda y no uses nombres de marcas ajenas",
+    "No prometas posiciones ni instalaciones concretas",
+    "Si falta información de contexto, pídela antes de puntuar"
+  ],
+  "criterios_calidad": [
+    "Cada problema indica dónde está, por qué importa y cómo se arregla",
+    "Los textos corregidos caben en los límites de la tienda y llevan el recuento de caracteres",
+    "La nota global se puede justificar con las notas por bloque",
+    "El plan de 3 acciones se puede ejecutar en una semana"
+  ]
+}

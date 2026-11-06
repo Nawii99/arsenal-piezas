@@ -1,0 +1,45 @@
+{
+  "tarea": "Redactar los términos y condiciones de un servicio por suscripción o membresía dirigido a consumidores en España",
+  "proveedor": {
+    "razon_social": "[NOMBRE O RAZÓN SOCIAL]",
+    "nif": "[NIF O CIF]",
+    "email_soporte": "[EMAIL DE SOPORTE]"
+  },
+  "entradas": {
+    "que_incluye": "[DESCRIPCIÓN DEL SERVICIO Y QUÉ NO INCLUYE]",
+    "planes_y_precios": "[PLANES, PRECIOS E IVA]",
+    "periodo_de_cobro": "[MENSUAL / ANUAL] Y [DÍA DE COBRO]",
+    "prueba_gratuita": "[SÍ / NO Y DURACIÓN]",
+    "permanencia": "[SÍ / NO Y DURACIÓN]",
+    "politica_de_baja": "[CÓMO SE DA DE BAJA Y CON CUÁNTA ANTELACIÓN]",
+    "reembolsos": "[POLÍTICA DE DEVOLUCIONES]",
+    "soporte": "[HORARIO Y TIEMPO DE RESPUESTA COMPROMETIDO]"
+  },
+  "instrucciones": [
+    "Estructura en cláusulas: objeto, alta y cuenta, planes y precios, facturación y renovación automática, subidas de precio con preaviso, prueba gratuita y su conversión, cancelación, reembolsos, uso aceptable, disponibilidad y soporte, propiedad intelectual, datos personales, responsabilidad y ley aplicable",
+    "Explica el desistimiento de 14 días para servicios digitales y cuándo se pierde por haber empezado a usar el servicio con consentimiento expreso",
+    "Deja claro qué pasa con los datos y contenidos del cliente al cancelar: plazo de exportación y borrado",
+    "Regula el impago: reintentos de cobro, suspensión y baja, sin penalizaciones desproporcionadas",
+    "Exige recordatorio previo antes de cada renovación anual y una vía de baja tan fácil como el alta",
+    "Añade al final un resumen en tabla de lo que más pregunta el cliente: precio, cuándo se cobra, cómo se cancela y qué se devuelve"
+  ],
+  "restricciones": [
+    "Prohibido dificultar la baja o exigir llamada telefónica como único medio",
+    "Nada de renovaciones sin aviso ni subidas de precio sin preaviso razonable",
+    "No prometer disponibilidad ni tiempos de respuesta que no se hayan declarado",
+    "Lenguaje claro: cláusulas de menos de cinco líneas"
+  ],
+  "formato_salida": {
+    "bloque_1": "términos completos con cláusulas numeradas",
+    "bloque_2": "tabla resumen en lenguaje claro para mostrar antes de contratar",
+    "bloque_3": "texto de la pantalla de contratación con el aviso de renovación automática",
+    "bloque_4": "lista de puntos que conviene revisar con un abogado"
+  },
+  "criterios_calidad": [
+    "Renovación, precio y cancelación se entienden sin releer",
+    "Ninguna cláusula impide ejercer derechos del consumidor",
+    "El resumen coincide exactamente con el articulado",
+    "Todos los datos no facilitados quedan entre corchetes y no se inventan"
+  ],
+  "aviso": "Texto orientativo generado con IA: antes de publicarlo debe revisarlo un abogado, en especial las cláusulas de renovación, subida de precio y reembolso. No sustituye el asesoramiento jurídico."
+}

@@ -1,0 +1,64 @@
+{
+  "tarea": "Diseñar y ejecutar la bateria de pruebas del proceso de cobro de una tienda o pagina de venta, desde que el cliente pulsa comprar hasta que recibe su factura.",
+  "contexto": {
+    "quien_lo_usa": "Persona sin perfil tecnico que vende un producto o servicio con una pasarela de pago conectada a su pagina.",
+    "momento": "La pasarela ya esta conectada y todavia no ha entrado ningun pedido real.",
+    "objetivo": "Que ningun cliente pague sin recibir lo suyo y que ningun pedido entre sin que el vendedor se entere."
+  },
+  "entradas": {
+    "pasarela": "[STRIPE / PAYPAL / REDSYS / OTRA]",
+    "que_vendes": "[PRODUCTO FISICO, DIGITAL, SERVICIO, SUSCRIPCION]",
+    "precio_e_impuestos": "[PRECIO CON O SIN IVA Y TIPO APLICADO]",
+    "paises_a_los_que_vendes": "[ESPAÑA, UE, RESTO DEL MUNDO]",
+    "que_pasa_tras_pagar": "[REDIRECCION, EMAIL CON ENLACE, ENVIO FISICO, CITA]",
+    "correos_implicados": "[CORREO DEL CLIENTE Y CORREO DONDE TE AVISA A TI]"
+  },
+  "pasos": [
+    "1. Separa claramente modo prueba y modo real: indica como se activa cada uno y como se comprueba en que modo esta la pagina ahora mismo.",
+    "2. En modo prueba, ejecuta un pago correcto y describe todo lo que deberia ocurrir despues, minuto a minuto.",
+    "3. Repite con tarjeta rechazada y comprueba que el cliente ve un mensaje claro y puede reintentar sin perder el carrito.",
+    "4. Prueba el pago que pide autenticacion del banco y comprueba que vuelve bien a la pagina de gracias.",
+    "5. Haz una compra real de importe minimo con tu propia tarjeta y comprueba el apunte en el banco y en el panel de la pasarela.",
+    "6. Solicita el reembolso de esa compra real y cronometra cuanto tarda y que correo recibe el cliente.",
+    "7. Repite la compra completa desde el movil con datos moviles, no con wifi de casa.",
+    "8. Cierra con la lista de lo que quedo pendiente de comprobar y quien deberia hacerlo."
+  ],
+  "que_mirar": [
+    "El importe cobrado coincide con el mostrado, incluidos gastos de envio e impuestos.",
+    "El cliente recibe correo de confirmacion y llega a bandeja de entrada, no a spam.",
+    "Tu recibes aviso del pedido y sabes que hay que preparar.",
+    "La factura o justificante lleva tus datos fiscales, numero correlativo, base, IVA y total.",
+    "El producto digital se entrega solo, sin que tengas que enviarlo a mano.",
+    "Un doble clic en el boton de pagar no genera dos cobros.",
+    "Cerrar el navegador a mitad del pago no deja un pedido pagado sin registrar.",
+    "El cupon de descuento se aplica y no se puede reutilizar mas de lo previsto.",
+    "La direccion de envio se guarda entera, con codigo postal y telefono."
+  ],
+  "errores_tipicos": [
+    "Dejar la pasarela en modo prueba el dia del lanzamiento: se ven pedidos pero no entra dinero.",
+    "Probar solo con tarjeta que funciona y no ver nunca el mensaje de error real.",
+    "No comprobar el correo del cliente y descubrir semanas despues que iba a spam.",
+    "Vender a la UE sin decidir como se aplica el IVA y tener que rehacer facturas.",
+    "Probar todo desde el ordenador cuando la mayoria comprara desde el movil."
+  ],
+  "restricciones": [
+    "No pidas ni escribas numeros de tarjeta reales en el resultado.",
+    "No des consejo fiscal cerrado: señala lo que hay que confirmar con la gestoria.",
+    "Cada prueba debe caber en un paso que la persona pueda repetir sola."
+  ],
+  "formato_salida": {
+    "bloque_1": "Tabla de pruebas con columnas: Nº | Escenario | Como se hace | Resultado esperado | Resultado obtenido | Estado (OK, Falla, Pendiente).",
+    "bloque_2": "Lista de fallos encontrados ordenados por dinero en riesgo, con el arreglo propuesto.",
+    "bloque_3": "Semaforo final: se puede abrir la tienda, se abre con vigilancia, o no se abre.",
+    "bloque_4": "Recordatorio de las dos comprobaciones que hay que repetir cada vez que se toque el precio o la pasarela."
+  },
+  "criterios_calidad": [
+    "Hay al menos una prueba de pago fallido y una de reembolso.",
+    "Cada escenario indica que correo o que pantalla demuestra que ha ido bien.",
+    "Ninguna prueba requiere saber programar.",
+    "El semaforo final no se declara verde si queda alguna prueba pendiente de pago, reembolso o correo.",
+    "Cada fallo encontrado tiene un arreglo propuesto y una persona responsable"
+  ],
+  "si_faltan_datos": "Si no sabes que pasarela usas, que vendes o como se entrega el producto, pregunta antes de escribir el guion de pruebas. No supongas el modo de la pasarela.",
+  "aviso": "Esto es una guia de pruebas, no asesoramiento fiscal ni de pagos. Confirma con tu gestoria como facturar y aplicar el IVA, y con tu pasarela las condiciones de reembolso, antes de aceptar el primer pedido real."
+}

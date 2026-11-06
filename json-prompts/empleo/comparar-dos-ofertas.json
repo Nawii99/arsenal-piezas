@@ -1,0 +1,155 @@
+{
+  "tarea": "Comparar dos ofertas de trabajo en Espana y decir cual compensa de verdad, no cual suena mejor",
+  "idioma": "espanol de Espana, tuteando, frases cortas",
+  "moneda": "EUR",
+  "unidad_de_sueldo": "bruto anual",
+  "candidato": {
+    "situacion_actual": "[EN PARO / TRABAJANDO / PRIMER EMPLEO EN TECNOLOGIA]",
+    "bruto_anual_actual_eur": "[NUMERO O 0]",
+    "ciudad": "[CIUDAD]",
+    "valor_de_una_hora_libre_eur": "[CUANTO VALE PARA TI UNA HORA DE TU TIEMPO, P.EJ. 12]",
+    "prioridades_ordenadas": [
+      "[P.EJ. APRENDER]",
+      "[P.EJ. DINERO]",
+      "[P.EJ. TIEMPO LIBRE]"
+    ]
+  },
+  "ofertas": [
+    {
+      "id": "A",
+      "empresa": "[NOMBRE]",
+      "puesto": "[PUESTO]",
+      "contrato": {
+        "tipo": "[INDEFINIDO / TEMPORAL / PRACTICAS / FORMACION EN ALTERNANCIA]",
+        "periodo_prueba_meses": "[NUMERO]",
+        "convenio_y_categoria": "[LO QUE PONGA O 'NO LO SE']",
+        "empresa_final_o_consultora": "[EMPRESA FINAL / CONSULTORA QUE ME CEDE A UN CLIENTE]"
+      },
+      "retribucion": {
+        "bruto_anual_fijo_eur": "[NUMERO]",
+        "numero_de_pagas": "[12 O 14]",
+        "variable": {
+          "importe_maximo_eur": "[NUMERO O 0]",
+          "de_que_depende": "[OBJETIVOS MIOS / RESULTADOS DE EMPRESA / DECISION DEL JEFE]",
+          "porcentaje_que_se_pago_el_ano_pasado": "[LO QUE TE DIJERON O 'NO ME LO DIJERON']",
+          "esta_por_escrito": "[SI / NO]"
+        },
+        "en_especie": {
+          "ticket_restaurante_eur_dia": "[NUMERO O 0]",
+          "seguro_medico": "[SI / NO]",
+          "otros": "[LO QUE SEA O 'NADA']"
+        }
+      },
+      "jornada": {
+        "horas_semana": "[NUMERO]",
+        "intensiva_en_verano": "[SI / NO]",
+        "vacaciones_dias_laborables": "[NUMERO]",
+        "guardias": {
+          "hay": "[SI / NO]",
+          "frecuencia": "[P.EJ. UNA SEMANA DE CADA CUATRO]",
+          "pago_eur_por_semana": "[NUMERO O 0]",
+          "se_compensan_con_dias_libres": "[SI / NO]"
+        }
+      },
+      "ubicacion": {
+        "modalidad": "[PRESENCIAL / HIBRIDO / REMOTO]",
+        "dias_de_oficina_por_semana": "[NUMERO]",
+        "minutos_de_trayecto_solo_ida": "[NUMERO]",
+        "coste_transporte_eur_mes": "[NUMERO O 0]",
+        "acuerdo_de_teletrabajo_por_escrito": "[SI / NO / NO LO SE]"
+      },
+      "desarrollo": {
+        "presupuesto_formacion_eur_ano": "[NUMERO O 0]",
+        "horas_de_formacion_dentro_de_jornada": "[NUMERO O 0]",
+        "pacto_de_permanencia": "[SI / NO / NO LO SE]",
+        "que_aprendes_y_con_quien": "[TECNOLOGIAS Y SI HAY ALGUIEN CON EXPERIENCIA QUE TE ENSENE]",
+        "revision_salarial_prometida": "[CUANDO Y SI ESTA POR ESCRITO]"
+      },
+      "senales": {
+        "rotacion_que_has_visto": "[LO QUE VISTE EN LINKEDIN O GLASSDOOR]",
+        "trato_durante_el_proceso": "[CLARO Y RAPIDO / LENTO / RARO]"
+      }
+    },
+    {
+      "id": "B",
+      "empresa": "[NOMBRE]",
+      "puesto": "[PUESTO]",
+      "contrato": {
+        "tipo": "[INDEFINIDO / TEMPORAL / PRACTICAS / FORMACION EN ALTERNANCIA]",
+        "periodo_prueba_meses": "[NUMERO]",
+        "convenio_y_categoria": "[LO QUE PONGA O 'NO LO SE']",
+        "empresa_final_o_consultora": "[EMPRESA FINAL / CONSULTORA QUE ME CEDE A UN CLIENTE]"
+      },
+      "retribucion": {
+        "bruto_anual_fijo_eur": "[NUMERO]",
+        "numero_de_pagas": "[12 O 14]",
+        "variable": {
+          "importe_maximo_eur": "[NUMERO O 0]",
+          "de_que_depende": "[OBJETIVOS MIOS / RESULTADOS DE EMPRESA / DECISION DEL JEFE]",
+          "porcentaje_que_se_pago_el_ano_pasado": "[LO QUE TE DIJERON O 'NO ME LO DIJERON']",
+          "esta_por_escrito": "[SI / NO]"
+        },
+        "en_especie": {
+          "ticket_restaurante_eur_dia": "[NUMERO O 0]",
+          "seguro_medico": "[SI / NO]",
+          "otros": "[LO QUE SEA O 'NADA']"
+        }
+      },
+      "jornada": {
+        "horas_semana": "[NUMERO]",
+        "intensiva_en_verano": "[SI / NO]",
+        "vacaciones_dias_laborables": "[NUMERO]",
+        "guardias": {
+          "hay": "[SI / NO]",
+          "frecuencia": "[P.EJ. UNA SEMANA DE CADA CUATRO]",
+          "pago_eur_por_semana": "[NUMERO O 0]",
+          "se_compensan_con_dias_libres": "[SI / NO]"
+        }
+      },
+      "ubicacion": {
+        "modalidad": "[PRESENCIAL / HIBRIDO / REMOTO]",
+        "dias_de_oficina_por_semana": "[NUMERO]",
+        "minutos_de_trayecto_solo_ida": "[NUMERO]",
+        "coste_transporte_eur_mes": "[NUMERO O 0]",
+        "acuerdo_de_teletrabajo_por_escrito": "[SI / NO / NO LO SE]"
+      },
+      "desarrollo": {
+        "presupuesto_formacion_eur_ano": "[NUMERO O 0]",
+        "horas_de_formacion_dentro_de_jornada": "[NUMERO O 0]",
+        "pacto_de_permanencia": "[SI / NO / NO LO SE]",
+        "que_aprendes_y_con_quien": "[TECNOLOGIAS Y SI HAY ALGUIEN CON EXPERIENCIA QUE TE ENSENE]",
+        "revision_salarial_prometida": "[CUANDO Y SI ESTA POR ESCRITO]"
+      },
+      "senales": {
+        "rotacion_que_has_visto": "[LO QUE VISTE EN LINKEDIN O GLASSDOOR]",
+        "trato_durante_el_proceso": "[CLARO Y RAPIDO / LENTO / RARO]"
+      }
+    }
+  ],
+  "calculo": {
+    "ingreso_anual_realista": "fijo + variable ponderado por el porcentaje que se pago el ano pasado (si no hay dato, cuenta solo el 50 % del maximo) + guardias pagadas + valor anual de lo recibido en especie",
+    "coste_anual_de_tiempo": "(minutos de trayecto ida y vuelta x dias de oficina x 46 semanas / 60) x valor de una hora libre, mas el transporte anual",
+    "horas_extra_por_guardias": "contar las semanas de guardia al ano y valorarlas al valor de una hora libre si no se compensan con dias libres",
+    "valor_neto_anual": "ingreso anual realista - coste anual de tiempo - coste de las guardias no compensadas",
+    "formacion": "sumar el presupuesto anual de formacion como valor solo si encaja con las prioridades; restar riesgo si hay pacto de permanencia"
+  },
+  "reglas": [
+    "Usa solo los datos que te doy. Si falta uno, di cual falta y calcula con la hipotesis mas prudente, indicandola.",
+    "No cuentes como dinero el variable sin escribir ni sin historial de pago.",
+    "Si una oferta es de consultora que te cede a un cliente, avisa de que el trabajo real depende del cliente final.",
+    "El sueldo bruto no es el neto: no calcules el neto exacto, solo compara en bruto y avisa de que el neto depende de tu situacion.",
+    "Ordena la recomendacion segun las prioridades del candidato, no segun el sueldo."
+  ],
+  "salida": {
+    "formato": "texto con tablas",
+    "bloques": [
+      "veredicto en una linea: A, B o empate, y por que",
+      "tabla comparativa con cada concepto en euros anuales y la diferencia",
+      "la cuenta anual de cada oferta, paso a paso",
+      "tres riesgos de cada oferta",
+      "tres preguntas que hacer a cada empresa antes de decidir",
+      "que tendria que cambiar en cada oferta para que sea la ganadora"
+    ]
+  },
+  "aviso": "Es una comparacion orientativa. Revisa el contrato, el convenio, el periodo de prueba y las clausulas de permanencia o exclusividad con un profesional (abogado laboralista o sindicato) antes de firmar."
+}

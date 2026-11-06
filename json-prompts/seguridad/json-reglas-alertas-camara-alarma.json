@@ -1,0 +1,94 @@
+{
+  "rol": "Eres un instalador de alarmas y cámaras domésticas con experiencia en España. Tu especialidad es que el sistema avise poco y bien: solo cuando de verdad hay que mirar el móvil. Hablas en español de España, claro, sin tecnicismos innecesarios.",
+  "objetivo": "Diseñar las reglas de alerta de mi cámara y mi alarma para eliminar las falsas alarmas sin dejar de avisarme cuando importa. El resultado tiene que poder configurarse en la app del fabricante o en Home Assistant/n8n sin programar.",
+  "contexto": {
+    "vivienda": {
+      "tipo": "[PISO / CASA CON JARDÍN / LOCAL / SEGUNDA RESIDENCIA]",
+      "accesos": "[PUERTA PRINCIPAL, PUERTA DE GARAJE, TERRAZA, VENTANAS BAJAS...]",
+      "vista_de_las_camaras": "[QUÉ SE VE EN CADA CÁMARA: PORTAL, JARDÍN, PASILLO, ¿SE VE ALGO DE CALLE O DE VECINOS?]"
+    },
+    "personas": {
+      "quien_vive": "[ADULTOS, NIÑOS, PERSONA MAYOR, NADIE ENTRE SEMANA]",
+      "visitas_habituales": "[LIMPIEZA MARTES 10-12, REPARTIDORES, JARDINERO, NINGUNA]",
+      "mascotas": "[PERRO GRANDE / GATO / NINGUNA]"
+    },
+    "horarios": {
+      "casa_vacia": "[LUNES A VIERNES 8:30-18:00]",
+      "noche": "[23:30-7:00]",
+      "fin_de_semana": "[VARIABLE / SIEMPRE ALGUIEN / SIEMPRE FUERA]",
+      "ausencias_largas": "[VACACIONES DE AGOSTO, PUENTES]"
+    },
+    "aparatos": [
+      {
+        "tipo": "camara",
+        "marca_o_tipo": "[MARCA O 'CÁMARA WIFI CON DETECCIÓN DE PERSONA']",
+        "ubicacion": "[ENTRADA]",
+        "puede_detectar": ["movimiento", "persona", "[VEHÍCULO / MASCOTA / SONIDO SI LO TIENE]"],
+        "tiene_zonas_de_deteccion": "[SÍ / NO / NO LO SÉ]",
+        "graba_en": "[TARJETA SD / NUBE / LAS DOS]"
+      },
+      {
+        "tipo": "sensor_puerta_o_ventana",
+        "marca_o_tipo": "[MARCA]",
+        "ubicacion": "[PUERTA PRINCIPAL]"
+      },
+      {
+        "tipo": "sensor_movimiento_interior",
+        "marca_o_tipo": "[MARCA]",
+        "ubicacion": "[PASILLO]",
+        "inmune_a_mascotas": "[SÍ / NO / NO LO SÉ]"
+      },
+      {
+        "tipo": "sirena",
+        "marca_o_tipo": "[MARCA / NO TENGO]"
+      }
+    ],
+    "como_recibo_avisos": "[APP DEL FABRICANTE / TELEGRAM / HOME ASSISTANT / N8N]",
+    "movil": "Android",
+    "falsas_alarmas_actuales": [
+      "[EJEMPLO: LA CÁMARA AVISA CADA VEZ QUE PASA UN COCHE POR LA CALLE]",
+      "[EJEMPLO: EL SENSOR DEL PASILLO SALTA POR EL GATO DE NOCHE]",
+      "[EJEMPLO: ME AVISA CUANDO LLEGO YO A CASA]"
+    ],
+    "lo_que_no_quiero_perderme": [
+      "[EJEMPLO: ALGUIEN EN EL JARDÍN DE NOCHE]",
+      "[EJEMPLO: PUERTA ABIERTA CUANDO NO HAY NADIE]"
+    ]
+  },
+  "restricciones_obligatorias": {
+    "legales_espana": [
+      "La cámara no puede grabar vía pública ni propiedad de vecinos salvo una franja mínima imprescindible para el acceso. Si en 'vista_de_las_camaras' se ve calle o vecinos, lo primero es proponer reencuadre o zona de privacidad, antes que cualquier regla.",
+      "Si graba a personas, hace falta cartel de zona videovigilada visible. Grabaciones un mes máximo salvo incidente denunciado. Referencia: guía de videovigilancia de la AEPD.",
+      "Una alarma casera no puede conectarse a policía ni a una central receptora; eso solo lo hacen empresas de seguridad homologadas. No proponer llamadas automáticas al 112 ni a la policía.",
+      "Si es un local con empleados, hay que informarles por escrito de las cámaras. Señalarlo si aplica."
+    ],
+    "tecnicas": [
+      "Cada regla debe poder configurarse con lo que ya tengo. No proponer aparatos nuevos salvo que sea la única salida, y en ese caso decirlo aparte.",
+      "Siempre tiene que quedar una forma manual de armar y desarmar (botón, teclado, NFC). El armado por ubicación del móvil es un extra, no la base.",
+      "No inventar funciones que la marca indicada quizá no tenga. Si no estás seguro de que mi cámara detecta vehículos, márcalo como 'comprobar en la app'."
+    ]
+  },
+  "tareas": [
+    "1. Detectar en mi contexto qué causa cada falsa alarma actual y decir la causa en una frase.",
+    "2. Definir tres modos: en casa, fuera, noche. Para cada uno, qué sensores están activos y qué hace cada cámara.",
+    "3. Escribir la tabla de reglas: disparador, condiciones (modo, horario, zona, persona o mascota detectada), acción y a quién avisa.",
+    "4. Para cada falsa alarma actual, dar la regla concreta que la elimina: zona de detección, sensibilidad, retardo de entrada, filtro de persona o modo.",
+    "5. Para cada cosa que no quiero perderme, indicar la regla que la cubre y cómo se comprueba que avisa.",
+    "6. Definir tres niveles de aviso: silencioso (solo registro), notificación normal y notificación urgente con sirena; indicar qué eventos van a cada uno.",
+    "7. Proponer una prueba semanal de cinco minutos para comprobar que los avisos siguen llegando."
+  ],
+  "formato_salida": {
+    "diagnostico": "Tabla: falsa alarma, causa probable, regla que la elimina.",
+    "modos": "Tabla de los tres modos con sensores y cámaras activos.",
+    "reglas": "Tabla: disparador, condiciones, acción, nivel de aviso, dónde se configura en mi app.",
+    "pendientes": "Lista de lo que hay que comprobar en la app o en el manual porque no puedes saberlo.",
+    "prueba": "Guion de la prueba semanal en cinco pasos."
+  },
+  "criterios_de_calidad": [
+    "Cada regla se puede configurar con los aparatos que declaro.",
+    "No hay avisos por la calle ni por los vecinos y la privacidad se trata antes que las reglas.",
+    "Ningún aviso propone llamar a la policía de forma automática.",
+    "Lo que no sabes de mi marca va marcado como 'comprobar en la app'."
+  ],
+  "aviso": "Esto es una guía de configuración, no un servicio de seguridad homologado. Para protección de personas o bienes de valor, o si dudas de la normativa de videovigilancia, consulta a una empresa de seguridad autorizada."
+}

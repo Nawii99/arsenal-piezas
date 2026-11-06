@@ -1,0 +1,50 @@
+{
+  "tarea": "Diagnosticar por qué el LCP es lento en una página concreta y devolver un plan de arreglo ordenado",
+  "contexto": {
+    "url": "[URL DE LA PÁGINA MÁS IMPORTANTE]",
+    "tipo_pagina": "[HOME / FICHA DE PRODUCTO / LANDING DE CAMPAÑA]",
+    "plataforma": "[WORDPRESS / SHOPIFY / WEBFLOW / A MEDIDA]",
+    "hosting": "[NOMBRE DEL HOSTING Y PLAN CONTRATADO]"
+  },
+  "entradas": {
+    "lcp_movil": "[X segundos]",
+    "elemento_lcp": "[QUÉ ELEMENTO SEÑALA PAGESPEED: IMAGEN DE CABECERA, TITULAR, VÍDEO O BANNER]",
+    "desglose": "TTFB [X ms], espera hasta pedir el recurso [X ms], descarga del recurso [X ms], retardo de pintado [X ms]",
+    "detalle_tecnico": "[PEGA EL HTML DE LA CABECERA O LA LISTA DE RECURSOS QUE BLOQUEAN EL PINTADO]"
+  },
+  "causas_frecuentes": [
+    "La imagen principal lleva carga diferida y por eso el navegador la pide tarde",
+    "La imagen pesa de más, no está en WebP o AVIF y no tiene tamaños adaptados a móvil",
+    "Un carrusel o un banner decide con JavaScript qué imagen mostrar después de cargar la página",
+    "Fuentes o CSS que bloquean el pintado y retrasan la aparición del titular",
+    "TTFB alto por hosting lento, falta de caché de página o demasiadas consultas a la base de datos"
+  ],
+  "proceso": [
+    "Di en qué fase se pierde más tiempo según el desglose y ataca solo esa fase primero",
+    "Confirma si el elemento LCP es imagen o texto, porque el arreglo cambia por completo",
+    "Propón arreglos con el atributo o la línea exacta a tocar, por ejemplo quitar la carga diferida, marcar prioridad alta o precargar la imagen",
+    "Indica por arreglo el ahorro estimado en milisegundos y de dónde sale esa estimación",
+    "Cierra con la comprobación: qué medir, con qué herramienta y en cuántos días se refleja en datos de usuarios reales"
+  ],
+  "restricciones": [
+    "No propongas cambiar de plataforma ni rehacer la web salvo que el problema sea el TTFB y no tenga arreglo en el plan actual",
+    "Marca qué se toca desde el panel de la plataforma y qué necesita tocar código",
+    "Si falta el desglose por fases, dilo y explica cómo obtenerlo antes de continuar"
+  ],
+  "formato_salida": {
+    "tipo": "diagnóstico en markdown",
+    "secciones": [
+      "Veredicto en una frase sobre dónde se va el tiempo",
+      "Tabla con columnas: arreglo, fase que mejora, ahorro estimado, dificultad y quién lo hace",
+      "Instrucciones paso a paso del primer arreglo",
+      "Cómo comprobar que ha funcionado"
+    ]
+  },
+  "criterios_calidad": [
+    "Ninguna recomendación que no afecte al LCP de esta página concreta",
+    "Cada arreglo indica el ahorro estimado y de dónde sale esa estimación",
+    "Se distingue entre datos de laboratorio y datos de usuarios reales",
+    "El primer arreglo se puede aplicar siguiendo los pasos sin ayuda externa"
+  ],
+  "si_falta_informacion": "Si faltan el desglose por fases o el elemento LCP, pídelos antes de proponer arreglos y explica cómo obtenerlos"
+}

@@ -1,0 +1,43 @@
+{
+  "tarea": "Escribir la ficha completa de un producto para Amazon (título, bullets, descripción y términos de búsqueda backend) optimizada para posicionar y para convertir",
+  "contexto": {
+    "marca": "[NOMBRE DE TU MARCA]",
+    "producto": "[PRODUCTO, MODELO Y VARIANTE]",
+    "marketplace": "[AMAZON.ES / AMAZON.IT / AMAZON.DE]",
+    "categoria": "[CATEGORÍA EN LA QUE LO PUBLICAS]",
+    "precio_con_iva": "[PRECIO]",
+    "cliente_objetivo": "[QUIÉN LO COMPRA Y PARA QUÉ LO USA]",
+    "diferencias_reales": "[3 COSAS QUE TE HACEN DISTINTO, CON DATO CONCRETO]",
+    "palabras_clave": "[5 A 10 BÚSQUEDAS QUE HACE TU CLIENTE]",
+    "datos_tecnicos": "[MEDIDAS, MATERIAL, PESO, CONTENIDO DE LA CAJA, GARANTÍA]"
+  },
+  "reglas_del_canal": [
+    "Título de 150 a 200 caracteres: marca + producto + rasgo clave + material o medida + cantidad + uso principal",
+    "Sin emojis, sin palabras enteras en mayúsculas, sin precio, sin 'oferta', 'envío gratis' ni referencias a promociones",
+    "5 bullets de 150 a 250 caracteres; cada uno empieza con un beneficio de 2 a 4 palabras en mayúsculas seguido de dos puntos",
+    "Cada bullet une beneficio y prueba: primero qué gana el cliente, después el dato técnico que lo sostiene",
+    "Prohibido decir 'el mejor', citar marcas ajenas o hacer promesas de salud, curación o adelgazamiento",
+    "Términos de búsqueda backend: máximo 249 bytes, separados por espacios, sin comas, sin repetir palabras ya usadas en el título ni marcas de terceros"
+  ],
+  "pasos": [
+    "Agrupa las palabras clave en principales (van al título), secundarias (a los bullets) y de cola larga (al backend)",
+    "Escribe el título colocando la búsqueda principal dentro de los primeros 80 caracteres",
+    "Ordena los bullets del beneficio que más pesa en la decisión al que menos; deja el de garantía o postventa el último",
+    "Escribe la descripción en 3 o 4 párrafos cortos: para qué sirve, cómo se usa, qué incluye y qué pasa si algo falla",
+    "Rellena el backend solo con sinónimos, errores de escritura frecuentes y usos que no hayan salido antes"
+  ],
+  "formato_salida": {
+    "bloque_1": "TÍTULO + recuento de caracteres",
+    "bloque_2": "Los 5 bullets numerados, cada uno con su recuento de caracteres",
+    "bloque_3": "Descripción en texto plano",
+    "bloque_4": "Términos de búsqueda backend en una línea + bytes usados",
+    "bloque_5": "Tabla de 6 ideas de imagen: número de foto, qué se ve y qué texto lleva encima"
+  },
+  "criterios_calidad": [
+    "La búsqueda principal aparece en el título y en al menos dos bullets, sin repetirse de forma forzada",
+    "Cada bullet une un beneficio con un dato verificable del producto",
+    "Ningún texto supera los límites de caracteres ni usa términos prohibidos",
+    "No hay afirmaciones que el producto no pueda cumplir"
+  ],
+  "aviso": "Comprueba las reglas vigentes de tu categoría en Seller Central antes de publicar. Las categorías de salud, cosmética, alimentación o juguetes tienen requisitos legales propios que debe revisar un profesional."
+}

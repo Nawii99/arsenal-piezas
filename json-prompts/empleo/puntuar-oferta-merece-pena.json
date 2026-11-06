@@ -1,0 +1,159 @@
+{
+  "tarea": "Puntuar una oferta de trabajo de tecnología y decidir si merece la pena que le dedique tiempo",
+  "idioma_de_salida": "español de España, tuteando, frases cortas",
+  "instrucciones_generales": [
+    "Puntúa solo con lo que aparece en la oferta y en el perfil. Si un dato falta, márcalo como 'no dice' y penaliza, no lo inventes.",
+    "No animes ni desanimes por cortesía. Si la oferta es mala, dilo.",
+    "El objetivo no es postular a todo, es gastar bien las horas.",
+    "Sueldos siempre en euros brutos anuales."
+  ],
+  "entrada": {
+    "candidato": {
+      "situacion": "[TU SITUACION: p.ej. sin experiencia previa en tecnologia, autodidacta, buscando primer puesto]",
+      "puesto_objetivo": "[PUESTO AL QUE APUNTAS]",
+      "habilidades_demostrables": [
+        "[HABILIDAD 1 QUE PUEDES ENSEÑAR EN UN PROYECTO]",
+        "[HABILIDAD 2]",
+        "[HABILIDAD 3]"
+      ],
+      "habilidades_en_curso": [
+        "[LO QUE ESTAS APRENDIENDO AHORA]"
+      ],
+      "sueldo_bruto_anual_minimo_eur": "[NUMERO, p.ej. 21000]",
+      "ciudad": "[TU CIUDAD]",
+      "modalidades_aceptadas": ["presencial", "hibrido", "remoto"],
+      "desplazamiento_maximo_minutos": "[NUMERO]",
+      "horas_semanales_para_procesos": "[NUMERO, p.ej. 8]"
+    },
+    "oferta": {
+      "titulo": "[TITULO DE LA OFERTA]",
+      "empresa": "[EMPRESA O 'confidencial']",
+      "tipo_de_empresa": "[producto | consultora | agencia | startup | administracion publica | no se sabe]",
+      "portal": "[InfoJobs | LinkedIn | Tecnoempleo | Manfred | web de la empresa | otro]",
+      "fecha_publicacion": "[AAAA-MM-DD o 'no dice']",
+      "fecha_de_hoy": "[AAAA-MM-DD]",
+      "ubicacion": "[CIUDAD O 'remoto']",
+      "modalidad": "[presencial | hibrido | remoto | no dice]",
+      "salario_publicado": "[RANGO EN EUROS BRUTOS ANUALES O 'no publicado']",
+      "tipo_de_contrato": "[indefinido | temporal | practicas | formacion en alternancia | no dice]",
+      "periodo_de_prueba": "[MESES O 'no dice']",
+      "inscritos_visibles": "[NUMERO O 'no visible']",
+      "texto_requisitos": "[PEGA AQUI LOS REQUISITOS TAL CUAL]",
+      "texto_descripcion": "[PEGA AQUI EL RESTO DE LA OFERTA TAL CUAL]"
+    }
+  },
+  "criterios": [
+    {
+      "clave": "encaje_real",
+      "peso": 25,
+      "pregunta": "¿Cumples lo imprescindible, no lo deseable?",
+      "escala": {
+        "0": "Piden años de experiencia profesional que no tienes y no hay puerta de entrada junior.",
+        "5": "Cumples la mitad de los imprescindibles y el resto se aprende en semanas.",
+        "10": "Cumples todo lo imprescindible y algo de lo deseable."
+      }
+    },
+    {
+      "clave": "puerta_para_junior",
+      "peso": 15,
+      "pregunta": "¿La oferta contempla a alguien que empieza?",
+      "escala": {
+        "0": "Exige autonomía total desde el primer día y no menciona acompañamiento.",
+        "5": "No dice nada del nivel, pero las tareas son abarcables.",
+        "10": "Dice junior, becario, trainee, plan de formación, mentor o equipo que acompaña."
+      }
+    },
+    {
+      "clave": "transparencia_salarial",
+      "peso": 15,
+      "pregunta": "¿Publica rango en euros brutos anuales y llega a tu mínimo?",
+      "escala": {
+        "0": "Sin rango, o por debajo de tu mínimo.",
+        "5": "Rango amplio y vago del tipo 'según valía', pero el suelo llega a tu mínimo.",
+        "10": "Rango concreto y el suelo supera tu mínimo."
+      }
+    },
+    {
+      "clave": "condiciones_del_contrato",
+      "peso": 10,
+      "pregunta": "¿Contrato, periodo de prueba y jornada están claros y son razonables?",
+      "escala": {
+        "0": "Falso autónomo, obra y servicio encubierto o periodo de prueba de más de 6 meses.",
+        "5": "Temporal con opción a indefinido, o no dice nada.",
+        "10": "Indefinido, periodo de prueba normal (2 meses o menos si no es titulado, 6 si lo es), jornada clara."
+      }
+    },
+    {
+      "clave": "frescura_de_la_oferta",
+      "peso": 10,
+      "pregunta": "¿Cuánto lleva publicada y cuánta gente se ha inscrito?",
+      "escala": {
+        "0": "Más de 45 días abierta, o más de 300 inscritos.",
+        "5": "Entre 15 y 45 días, o entre 100 y 300 inscritos.",
+        "10": "Publicada hace menos de 15 días y con menos de 100 inscritos."
+      }
+    },
+    {
+      "clave": "claridad_de_la_descripcion",
+      "peso": 10,
+      "pregunta": "¿Se entiende qué harás cada día y con qué herramientas?",
+      "escala": {
+        "0": "Lista de siglas sin tareas, o descripción que no cuadra con el título.",
+        "5": "Tareas genéricas pero coherentes con el puesto.",
+        "10": "Tareas concretas, herramientas nombradas y equipo descrito."
+      }
+    },
+    {
+      "clave": "modalidad_y_ubicacion",
+      "peso": 10,
+      "pregunta": "¿La modalidad y el desplazamiento encajan con lo que aceptas?",
+      "escala": {
+        "0": "Modalidad o ubicación fuera de lo que aceptas.",
+        "5": "Encaja con algún sacrificio, o no lo dice.",
+        "10": "Encaja del todo y está por escrito."
+      }
+    },
+    {
+      "clave": "senales_de_empresa",
+      "peso": 5,
+      "pregunta": "¿La empresa da señales de ser seria?",
+      "escala": {
+        "0": "Confidencial sin explicación, oferta repetida en bucle o promesas de ingresos.",
+        "5": "Empresa identificable, sin más datos.",
+        "10": "Empresa identificable, con web y proceso de selección descrito."
+      }
+    }
+  ],
+  "calculo": "nota = suma de (puntuación del criterio / 10 x peso). Si falta un dato, puntúa 0 en ese criterio y anótalo en datos_que_no_dice.",
+  "banderas_rojas": [
+    "Piden pagar por formación, material o 'acceso' para empezar",
+    "Ingresos prometidos sin contrato laboral",
+    "Falso autónomo para un puesto con horario y jefe",
+    "Comisiones puras presentadas como sueldo",
+    "Requisitos imposibles para el nivel (años de experiencia en tecnologías que no los tienen)",
+    "Proceso por mensajería con petición de DNI o cuenta bancaria antes de cualquier entrevista"
+  ],
+  "veredicto": {
+    "80-100": "Prioridad: dedícale una hora y personaliza la candidatura.",
+    "60-79": "Vale la pena si adaptas el currículum en 15 minutos.",
+    "40-59": "Solo si no tienes nada mejor; usa la versión rápida.",
+    "0-39": "Descártala en dos minutos."
+  },
+  "reglas": [
+    "Cada puntuación lleva una frase con la evidencia exacta de la oferta.",
+    "Si hay una bandera roja grave (cobro por empezar, ingresos sin contrato), el veredicto es descartar aunque la nota sea alta.",
+    "No inventes el salario ni la antigüedad de la empresa."
+  ],
+  "salida": {
+    "formato": "JSON unicamente, sin texto alrededor",
+    "esquema": {
+      "nota_total": "numero 0-100",
+      "veredicto": "string",
+      "desglose": [{"criterio": "string", "puntuacion": "0-10", "evidencia": "string"}],
+      "banderas_rojas_detectadas": ["string"],
+      "datos_que_no_dice": ["string"],
+      "preguntas_para_el_proceso": ["string"],
+      "tiempo_recomendado": "2 minutos | 15 minutos | 1 hora"
+    }
+  }
+}
