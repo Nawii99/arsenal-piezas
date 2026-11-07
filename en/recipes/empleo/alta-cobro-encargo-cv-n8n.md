@@ -13,10 +13,10 @@ An n8n automation that collects a customer's order, generates the payment in Str
 # Automation: onboarding and payment for a CV order in n8n
 
 ## What it solves
-When someone wants to hire the CV and cover letter service, this automation collects their details, generates the payment, notifies Nahuel of the paid order, and confirms to the customer, without Nahuel having to watch his phone all day.
+When someone wants to hire the CV and cover letter service, this automation collects their details, generates the payment, notifies whoever provides the service of the paid order, and confirms to the customer, without them having to watch their phone all day.
 
 ## Accounts needed
-- n8n (the free plan on n8n Cloud has a monthly execution limit; check the current limit before launching in production, or use self-hosted n8n, which is free but has to be maintained).
+- n8n (n8n Cloud offers a temporary free trial and then paid plans; the free option is self-hosted n8n, which you have to maintain yourself).
 - Google, for Drive and Sheets, free with a regular Gmail account.
 - Stripe, free to create the account, charges a fee on each payment (check the current rate for Spain on its website before setting prices).
 - Telegram (free bot) or Gmail for notifications.
@@ -26,15 +26,16 @@ When someone wants to hire the CV and cover letter service, this automation coll
 2. Google Drive node: creates a folder named after the customer and uploads the received CV into it.
 3. HTTP Request node to the Stripe API (or the Stripe node if available): creates a payment link with the amount according to the chosen service.
 4. Gmail node: sends the customer the payment link and explains the next step.
-5. Second trigger, in a separate workflow or with a different Webhook node: receives the Stripe event when the payment is confirmed (checkout.session.completed).
+5. Second trigger, in a separate workflow: a Stripe Trigger node (it verifies the webhook signature) with the checkout.session.completed event. If you use a generic Webhook, first verify the Stripe-Signature header with the endpoint's "signing secret". Check that payment_status is paid and store the event id so the work is not repeated if it arrives twice.
 6. Google Sheets node: adds a row with customer, service hired, amount, date, and status "paid".
-7. Telegram node (or Gmail): sends Nahuel an alert with the customer's name, what they bought, and the link to the Drive folder, so he can start the job.
+7. Telegram node (or Gmail): sends whoever provides the service an alert with the customer's name, what they bought, and the link to the Drive folder, so they can start the job.
 8. Gmail node: sends the customer a confirmation email with the delivery time and what they will receive.
 
 ## How to test it without messing up
 Turn on Stripe's test mode before touching anything real: generate fake payments with the test cards from its documentation. Fill in the form with made-up data and check that the folder is created correctly in Drive, that the alert reaches Telegram, and that the row in Sheets has the correct data. Only when all of that works without errors, switch the Stripe keys from test to live.
 
 ## What NOT to do
+Do not accept a payment as good if the Stripe notification is not verified: without a signature, anyone could simulate a payment and trigger the work.
 Do not enable the live Stripe keys until you have tested the complete flow with the test keys.
 Do not store the customer's card details in any node: Stripe handles that, and n8n must never see them.
-Do not promise the customer an immediate automatic delivery: the alert to Nahuel is what actually triggers the human work.
+Do not promise the customer an immediate automatic delivery: the alert to whoever provides the service is what actually triggers the human work.

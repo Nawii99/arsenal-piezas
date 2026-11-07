@@ -77,4 +77,4 @@ Cambia `HORAS_BARATAS` según la carga: un termo suele necesitar 3-4 horas, un c
 - **Shelly Cloud tiene límites** de llamadas; una por hora está muy lejos del límite, pero el control local por IP es más rápido y no depende de internet.
 
 ## Cuánto cuesta
-0 € de software: la API de precios es gratuita, n8n autoalojado es gratis y en n8n Cloud son 24 ejecuciones al día, dentro del plan gratuito. Hardware: 20-35 € por enchufe Shelly.
+0 € de software: la API de precios es gratuita, n8n autoalojado es gratis y en n8n Cloud son 24 ejecuciones al día, que tras la prueba gratuita temporal exigen un plan de pago. Hardware: 20-35 € por enchufe Shelly.

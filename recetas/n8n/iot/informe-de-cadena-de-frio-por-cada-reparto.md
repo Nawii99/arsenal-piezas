@@ -41,12 +41,12 @@ Para distribuidores de alimentación, pescaderías, obradores que reparten y tra
 - Carpeta en Google Drive «Informes frío», con la credencial de Google Drive conectada en n8n.
 - Gmail conectado.
 ## Los nodos, flujo 1: recoger lecturas
-1. **Webhook** — Method POST, Path `frio`, Respond Immediately.
+1. **Webhook** — Method POST, Path `frio`, Respond Immediately. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. El dispositivo manda un JSON así: `{"albaran":"2026-1043","temp":2.4,"lat":39.47,"lon":-0.37}`.
 3. **Code** «Sellar hora» — Run Once for Each Item: `const b = $json.body; const h = new Date().toLocaleString('sv-SE', { timeZone: 'Europe/Madrid' }); return { json: { albaran: b.albaran, fecha_hora: h, temp: b.temp, lat: b.lat, lon: b.lon } };`
 4. **Google Sheets** — Append Row en `lecturas`.
 ## Los nodos, flujo 2: cerrar reparto y enviar informe
-1. **Webhook** — Method GET, Path `cerrar-reparto`. Se llama desde el móvil abriendo `https://tu-n8n.com/webhook/cerrar-reparto?albaran=2026-1043`. Guárdate el enlace en una nota o crea un acceso directo.
+1. **Webhook** — Method GET, Path `cerrar-reparto`. Se llama desde el móvil abriendo `https://tu-n8n.com/webhook/cerrar-reparto?albaran=2026-1043`. Guárdate el enlace en una nota o crea un acceso directo. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Google Sheets** — Get Row(s) de `envios` con filtro por `albaran` igual a `{{ $json.query.albaran }}`, para sacar cliente, email y límite.
 3. **Google Sheets** — Get Row(s) de `lecturas` con filtro por `albaran`.
 4. **Code** «Montar informe» — Run Once for All Items:

@@ -1,5 +1,5 @@
 ---
-name: alcance-mini-app
+name: alcance-mini-app-en
 description: Turns a client's vague request ("I want an app") into a closed scope for a web mini-app built with Claude Code, with what is included, what is not, estimated hours, and three prices.
 argument-hint: what the client told you, verbatim, and what their business does
 ---
@@ -30,3 +30,7 @@ Give me:
 Format: clear headings and short lists, ready to paste into a document or an email.
 
 Do not do this: don't add features the client hasn't asked for, don't give prices without the rate, don't say "native app" or "published in the store" anywhere, and don't use words like "revolutionary", "premium", or "tailor-made" in the message to the client.
+
+## Also needs
+
+- The skill `mini-app-para-cliente` is in the plugin `arsenal-movil-mini-apps` (in Spanish): `/plugin install arsenal-movil-mini-apps@arsenal`

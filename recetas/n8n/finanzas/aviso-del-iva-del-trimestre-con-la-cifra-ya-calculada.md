@@ -51,7 +51,7 @@ Para autónomos y pymes en régimen general de IVA que llevan sus facturas en un
 5. **Code** («Calcular IVA») — Mode: `Run Once for All Items`. En vez de usar el Merge, el código lee directamente de cada nodo por su nombre, así que puedes prescindir del Merge y conectar el Code después de «Gastos». Código abajo.
 6. **IF** («¿Sale a pagar?») — Condition `Number`, izquierda `{{ $json.a_pagar }}`, operación `larger`, derecha `0`. Solo para cambiar el asunto del correo; puedes usar un nodo **Switch** si quieres tres mensajes (a pagar, a compensar, a cero).
 7. **Gmail** («Aviso IVA») — To: tu email. Subject: `{{ $json.asunto }}`. Message: `{{ $json.cuerpo }}`. Email Type: `Text`.
-8. Opcional: **Google Sheets** («Histórico IVA») — Operation: `Append Row` en una pestaña `IVA_trimestres` con `trimestre`, `repercutido`, `soportado`, `a_pagar`. Así ves la evolución año a año.
+8. Opcional, y colócalo ANTES del Gmail (reserva el registro antes de enviar): **Google Sheets** («Histórico IVA») — primero `Get Row(s)` en la pestaña `IVA_trimestres` filtrando por `trimestre`; si ya existe, no lo vuelvas a añadir (así una repetición del flujo no duplica el registro). Si no existe, `Append Row` con `trimestre`, `repercutido`, `soportado`, `a_pagar`. Así ves la evolución año a año. Si usas un contador o registro de avisos enviados, se escribe antes del envío, no después.
 
 ## El código del nodo Code
 ```javascript

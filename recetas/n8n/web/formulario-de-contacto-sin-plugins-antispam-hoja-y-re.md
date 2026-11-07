@@ -32,7 +32,7 @@ Sustituye plugins de formulario de pago (50-100 €/año) y un CRM básico. Cont
 ## La receta, paso a paso
 
 ## Qué hace y para quién
-Tu formulario envía los datos a una URL secreta de n8n. Allí se comprueban campo por campo, se descarta el spam (campo trampa, envíos en menos de 3 segundos, palabras y enlaces sospechosos) y lo bueno se guarda en una hoja.
+Tu formulario envía los datos a una URL de n8n (pública: cualquiera que lea el HTML de tu web la verá, y ningún secreto la protege; las defensas son el antispam, el CORS y, si hace falta, Turnstile). Allí se comprueban campo por campo, se descarta el spam (campo trampa, envíos en menos de 3 segundos, palabras y enlaces sospechosos) y lo bueno se guarda en una hoja.
 Además te llega un Telegram con el nombre y el teléfono para llamar en caliente, y al cliente le llega un correo tuyo de «te he recibido, te contesto hoy» con tus datos.
 
 ## Lo que necesitas antes
@@ -49,7 +49,7 @@ Además te llega un Telegram con el nombre y el teléfono para llamar en calient
 ```
 
 ## Los nodos, en orden
-1. **Webhook** — HTTP Method: POST; Path: `contacto`; Authentication: None; Respond: `Using Respond to Webhook node`; Options > Allowed Origins (CORS): `https://tudominio.com`.
+1. **Webhook** — HTTP Method: POST; Path: `contacto`; Authentication: None (es un formulario público; si algún día recibiera pagos, una ruta difícil de adivinar no los autentica: habría que verificar la firma del proveedor, p. ej. la cabecera `Stripe-Signature`); Respond: `Using Respond to Webhook node`; Options > Allowed Origins (CORS): `https://tudominio.com`.
 2. **Code** (renómbralo «Filtro antispam») — ver código.
 3. **IF** — Boolean: `={{ $json.spam }}` is false.
 4. **Google Sheets** (rama true) — Operation: Append Row; hoja «Leads web»; mapeo manual de todos los campos.
@@ -100,5 +100,5 @@ return [{ json: {
 
 ## Cuánto cuesta
 - Gratis: Sheets, Telegram, Gmail (500 envíos/día).
-- n8n Cloud gratuito aguanta si recibes menos de unos cientos de contactos al mes; auto-alojado, sin límite.
+- la prueba gratuita temporal de n8n Cloud (luego es de pago) aguanta si recibes menos de unos cientos de contactos al mes; auto-alojado, sin límite.
 - Cloudflare Turnstile, gratis y sin límite práctico.

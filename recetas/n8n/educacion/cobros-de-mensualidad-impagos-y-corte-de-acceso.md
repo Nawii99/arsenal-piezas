@@ -6,7 +6,7 @@ Controla las cuotas mensuales de tus alumnos: avisa antes del cobro, reintenta l
 
 ## Qué es y qué hace
 
-Flujo de n8n que escucha los eventos de pago de suscripciones de Stripe y gestiona el ciclo de la cuota: aviso previo al cobro, confirmación, secuencia de recuperación si falla el recibo y suspensión del acceso tras diez días sin pago. Entra el producto de suscripción y la hoja Suscripciones; sale el estado de cada alumno y los avisos.
+Flujo de n8n que escucha los eventos de pago de suscripciones de Stripe y gestiona el ciclo de la cuota: aviso previo al cobro, confirmación, secuencia de recuperación si falla el recibo y suspensión del acceso tras diez días sin pago. Entra el producto de suscripción y la hoja Suscripciones; sale el estado de cada alumno y los avisos. Se apoya en el nodo Stripe Trigger, que verifica la firma del webhook, y solo da por cobrada una factura en estado pagado.
 
 ## Cómo usarla
 
@@ -43,10 +43,10 @@ Credencial Google OAuth2 (Sheets y Gmail) y webhook de Slack.
 Un método para cortar el acceso: quitar el permiso de la carpeta de Drive, sacar del grupo de Telegram o llamar a la API de tu plataforma con **HTTP Request**.
 
 ## Los nodos, en orden
-**1. Stripe Trigger**. Eventos a marcar: `invoice.upcoming`, `invoice.paid`, `invoice.payment_failed`, `customer.subscription.deleted`.
+**1. Stripe Trigger** (comprueba la firma del webhook por ti; si usas un **Webhook** genérico, verifica la cabecera `Stripe-Signature` con el «signing secret» del endpoint). Eventos a marcar: `invoice.upcoming`, `invoice.paid`, `invoice.payment_failed`, `customer.subscription.deleted`.
 **2. Switch**. Campo: `{{ $json.type }}`. Cuatro salidas, una por evento.
 **3a.** (`invoice.upcoming`, llega 3 días antes) **Gmail**. Subject: `El {{ $json.fecha }} se pasa tu cuota de {{ $json.importe }} €`. Cuerpo: recordatorio amable, enlace al portal de cliente de Stripe para cambiar la tarjeta y qué incluye este mes. Evita sorpresas y reduce reclamaciones.
-**3b.** (`invoice.paid`) **Gmail** con la factura adjunta (`{{ $json.data.object.invoice_pdf }}` descargado con un nodo **HTTP Request** en modo File) y **Google Sheets** «Update Row»: estado `activo`, `intentos_fallidos` = 0, `fecha_proximo_cobro` = `{{ $json.data.object.lines.data[0].period.end }}` convertido a fecha.
+**3b.** (`invoice.paid`, comprobando que `{{ $json.data.object.status }}` sea `paid`) **Gmail** con la factura adjunta (`{{ $json.data.object.invoice_pdf }}` descargado con un nodo **HTTP Request** en modo File) y **Google Sheets** «Update Row»: estado `activo`, `intentos_fallidos` = 0, `fecha_proximo_cobro` = `{{ $json.data.object.lines.data[0].period.end }}` convertido a fecha.
 **3c.** (`invoice.payment_failed`) es la parte importante: **Google Sheets** «Update Row» suma 1 a `intentos_fallidos` y, si es el primero, guarda `fecha_primer_fallo`. Luego un **Switch** por número de intento.
 Intento 1: **Gmail** con asunto `No hemos podido cobrar tu cuota` y un botón grande al portal de Stripe (`https://billing.stripe.com/p/login/xxxx`, se genera en Configuración > Portal de clientes). Tono neutro, culpa al banco, no al alumno.
 Intento 2 (a los 3 días): **Gmail** recordando que el acceso se mantiene hasta el día 10 y ofreciendo cambiar la fecha de cobro.

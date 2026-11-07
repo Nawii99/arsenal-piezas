@@ -39,12 +39,12 @@ Consulta cada 10 minutos la sonda de temperatura de tu nevera o congelador y, si
 - Cuenta gratuita en **Shelly Cloud**. Entra en control.shelly.cloud, arriba a la derecha en tu usuario tienes **Configuración de usuario > Autorización para la nube**: ahí sacas la *auth key* y el *servidor* (por ejemplo `shelly-53-eu.shelly.cloud`).
 - El **ID del dispositivo**: en la app Shelly, dentro del aparato, *Ajustes > Información del dispositivo*.
 - Un bot de **Telegram**: escribe a @BotFather, `/newbot`, te da un token. Luego escríbele tú al bot y entra en `https://api.telegram.org/bot<TOKEN>/getUpdates` para ver tu `chat_id`.
-- **n8n** gratis: instalado en tu ordenador o en un Raspberry Pi con Docker, o el plan gratuito de n8n Cloud.
+- **n8n** gratis: autoalojado (Community Edition) en tu ordenador o en un Raspberry Pi con Docker. n8n Cloud solo tiene prueba gratuita temporal y después es de pago.
 - Una hoja de **Google Sheets** llamada `Frio` con las columnas: `fecha`, `equipo`, `temperatura`, `humedad`, `estado`.
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — modo *Interval*, cada **10** minutos. En *Settings* del workflow pon la zona horaria `Europe/Madrid`.
-2. **HTTP Request** — método **POST**, URL `https://TU-SERVIDOR.shelly.cloud/device/status`. En *Body Content Type* elige **Form Urlencoded** y añade dos campos: `id` con el ID del dispositivo y `auth_key` con tu clave.
+2. **HTTP Request** — método **POST**, URL `https://TU-SERVIDOR.shelly.cloud/device/status`. En *Body Content Type* elige **Form Urlencoded** y añade dos campos: `id` con el ID del dispositivo y `auth_key` desde una credencial de n8n en lugar de escrito en el nodo (Authentication: Generic Credential Type > Custom Auth, con el JSON `{"body": {"auth_key": "tu clave"}}`): un flujo exportado se llevaría la clave.
 3. **Code** — modo *Run Once for All Items*. Saca la temperatura, decide si está fuera de rango y evita que te bombardee con 6 mensajes por hora.
 ```js
 const d = $json.data.device_status;
@@ -76,4 +76,4 @@ return [{ json: { temp, hum, estado, MAX, fecha, equipo: 'Congelador cocina', av
 - **Límite de la API de Shelly Cloud:** 1 petición por segundo. Cada 10 minutos vas sobradísimo.
 
 ## Cuánto cuesta
-El sensor Shelly, 20-35 € una vez. Shelly Cloud, Telegram, Google Sheets y n8n auto-alojado: **0 €**. Si prefieres no montar servidor, el plan Starter de n8n Cloud son unos 20 €/mes; en Make esto son unas 4.300 operaciones al mes, o sea plan de 9 €/mes.
+El sensor Shelly, 20-35 € una vez. Shelly Cloud, Telegram, Google Sheets y n8n auto-alojado: **0 €**. Si prefieres no montar servidor, n8n Cloud (de pago tras la prueba gratuita) son unos 20 €/mes; en Make esto son unas 4.300 operaciones al mes, o sea plan de 9 €/mes.

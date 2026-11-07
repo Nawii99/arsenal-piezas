@@ -46,7 +46,7 @@ Para el fotógrafo con archivo grande, la tienda online que necesita alt text, y
 1. **Google Drive Trigger** — Event: `File Created`, Watch: `Specific Folder` → `CATALOGAR`.
 2. **Google Drive** — Operation: `Download`, File ID: `{{ $json.id }}`, campo binario `data`.
 3. **Code** (`Preparar imagen`) — convierte el binario a base64 y recorta si hace falta. Código abajo.
-4. **HTTP Request** (`Analizar con IA`) — Method: `POST`. URL: `https://api.anthropic.com/v1/messages`. Headers: `x-api-key` con tu clave, `anthropic-version` con `2023-06-01`, `content-type` con `application/json`. Body: `JSON` y pega el cuerpo del bloque de abajo.
+4. **HTTP Request** (`Analizar con IA`) — Method: `POST`. URL: `https://api.anthropic.com/v1/messages`. Headers: `x-api-key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `x-api-key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría), `anthropic-version` con `2023-06-01`, `content-type` con `application/json`. Body: `JSON` y pega el cuerpo del bloque de abajo.
 5. **Code** (`Leer respuesta`) — extrae el JSON que devuelve el modelo. Código abajo.
 6. **Google Sheets** — Operation: `Append Row`, documento `Fototeca`, hoja `Hoja 1`. Mapea cada columna con su campo: `titulo` → `{{ $json.titulo }}`, y así con todas.
 7. **Google Drive** — Operation: `Update File`, File ID: `{{ $('Google Drive Trigger').item.json.id }}`, New Name: `{{ $json.titulo_archivo }}.jpg`. Así el archivo pasa a llamarse algo legible.

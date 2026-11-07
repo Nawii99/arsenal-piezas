@@ -45,7 +45,7 @@ Solo te escribe si algo ha empeorado por encima del margen que tú decidas: es u
 1. **Schedule Trigger** — `Weeks`, lunes, 06:00, timezone `Europe/Madrid`.
 2. **Google Sheets** — `Get Row(s)` de la pestaña `urls`.
 3. **Split In Batches** — Batch Size `1` (la API tarda 20-40 s por URL).
-4. **HTTP Request** — GET a `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={{ encodeURIComponent($json.url) }}&strategy=mobile&category=performance&key=TU_CLAVE`. En Options pon `Timeout: 120000` y `Retry On Fail` con 3 intentos y 5000 ms de espera.
+4. **HTTP Request** — GET a `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={{ encodeURIComponent($json.url) }}&strategy=mobile&category=performance`. Authentication: Generic Credential Type > Query Auth, con una credencial de n8n (Name `key`, Value tu clave de API de Google). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. En Options pon `Timeout: 120000` y `Retry On Fail` con 3 intentos y 5000 ms de espera.
 5. **Code** — extrae las métricas del JSON gigante (código abajo).
 6. **Google Sheets** — `Append Row` en `historico`.
 7. **Google Sheets** — `Get Row(s)` en `historico` con filtro por `url`, para leer las mediciones anteriores.
@@ -86,4 +86,4 @@ return salida;
 - **Móvil vs escritorio**: mide en `mobile`, que es lo que usa Google para posicionar. Si quieres las dos, duplica el HTTP Request con `strategy=desktop`.
 
 ## Cuánto cuesta
-Todo gratis: la API de PageSpeed no se cobra, Sheets y Gmail tampoco. Si lo montas en n8n Cloud, unas 40 ejecuciones semanales caben en el plan de entrada.
+Gratis con n8n auto-alojado: la API de PageSpeed no se cobra, Sheets y Gmail tampoco. n8n Cloud es de pago tras la prueba gratuita temporal; unas 40 ejecuciones semanales caben en el plan de entrada.

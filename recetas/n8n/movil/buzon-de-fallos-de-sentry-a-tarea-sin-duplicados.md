@@ -42,7 +42,7 @@ Bot de Telegram con su token y tu chat_id (con @BotFather).
 Una hoja `Fallos` con columnas: fingerprint, titulo, veces, primera_vez, url_sentry.
 
 ## Los nodos, en orden
-1. **Webhook**: Method POST, Path `sentry-fallos`. Copia la URL de producción que te da n8n.
+1. **Webhook**: Method POST, Path `sentry-fallos`. Copia la URL de producción que te da n8n. Protégelo: verifica la cabecera `Sentry-Hook-Signature` (HMAC-SHA256 del cuerpo con el Client Secret de la integración, leído de una variable de entorno) en un nodo Code y descarta lo que no cuadre.
 2. En Sentry, ve a Settings > Integrations > Webhooks (o Alerts > Create Alert Rule > Send a notification via webhook) y pega esa URL. Marca el evento «issue created» y «issue alert».
 3. **Code**: normaliza el mensaje de Sentry y crea una huella (fingerprint) del fallo. Código abajo.
 4. **Google Sheets** (Get Row(s)) con filtro: columna `fingerprint` igual a `{{ $json.fingerprint }}`.

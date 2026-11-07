@@ -34,7 +34,7 @@ Instálala como servicio de mantenimiento para estudios pequeños con muchos ass
 Automatización: recordatorio mensual para revisar las licencias de los assets antes de publicar una actualización del juego.
 
 Cuentas necesarias:
-- Cuenta de n8n (la versión gratuita de n8n Cloud tiene límite de ejecuciones al mes; si prefieres no tener límite, se puede instalar n8n gratis en tu propio ordenador o servidor).
+- Cuenta de n8n (n8n Cloud tiene una prueba gratuita temporal y después es de pago; lo gratis es instalar n8n autoalojado en tu propio ordenador o servidor).
 - Cuenta de Google con Google Sheets, gratis, para llevar la lista de assets.
 - Una cuenta de Gmail o Telegram para recibir el aviso, ambas gratis.
 

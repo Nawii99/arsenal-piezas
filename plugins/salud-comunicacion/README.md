@@ -1,6 +1,6 @@
 # arsenal-salud-comunicacion · Salud y deporte · Comunicación con pacientes
 
-Salud y deporte · Comunicación con pacientes: 6 comandos /, 1 subagente en español, del Arsenal del Marketer.
+Salud y deporte · Comunicación con pacientes: 4 subagentes, 3 skills, 2 comandos / en español, del Arsenal del Marketer.
 
 ## Instalar
 
@@ -13,12 +13,14 @@ Salud y deporte · Comunicación con pacientes: 6 comandos /, 1 subagente en esp
 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
-| campana-resenas-clinica | Comando / | Monta el sistema para conseguir reseñas de forma limpia: a quién pedirlas, cuándo, con qué frase y cómo responderlas. | `/campana-resenas-clinica` |
-| onboarding-primera-visita | Comando / | Prepara todo lo que pasa entre que alguien reserva y entra por la puerta: qué recibe, cuándo y qué se le dice al llegar. | `/onboarding-primera-visita` |
-| reactivar-pacientes | Comando / | Diseña una campaña para recuperar clientes o pacientes que llevan meses sin volver, segmentada por motivo real de abandono. | `/reactivar-pacientes` |
-| red-derivacion | Comando / | Monta una red de derivación con otros profesionales de tu zona: a quién buscar, qué proponerle y cómo llevar la cuenta. | `/red-derivacion` |
-| resenas-sin-exponer | Comando / | Sistema para pedir reseñas en un negocio de salud y responder a las malas sin revelar jamás que alguien fue tu cliente. | `/resenas-sin-exponer` |
-| revisar-promesas-salud | Comando / | Revisa tus textos de salud y bienestar y reescribe las frases que prometen curación o resultados, dejándolas veraces y vendedoras. | `/revisar-promesas-salud` |
-| analista-resenas-experiencia | Subagente | Lee reseñas de tu centro, saca los temas reales y redacta respuestas cuidadosas sobre privacidad de salud. | pídele a Claude «usa el subagente analista-resenas-experiencia» |
+| protocolo-derivacion | Comando / | Crea el protocolo escrito para que tu equipo sepa cuándo parar, no opinar y derivar a un profesional sanitario, con las frases exactas. | `/protocolo-derivacion` o `/arsenal-salud-comunicacion:protocolo-derivacion` |
+| revisar-publicidad-sanitaria | Comando / | Revisa tus textos de salud y bienestar para quitar promesas de curación, testimonios problemáticos y afirmaciones que te pueden meter en un lío. | `/revisar-publicidad-sanitaria` o `/arsenal-salud-comunicacion:revisar-publicidad-sanitaria` |
+| carta-derivacion-profesional | Skill | Redacta la carta con la que derivas un paciente a otro profesional, con los datos que este necesita y sin meterte en su terreno. | se activa sola cuando hace falta |
+| resenas-clinica-sin-datos | Skill | Responde reseñas de una clínica sin confirmar que esa persona es paciente ni dar un solo dato de salud, y monta el sistema para pedir reseñas legalmente. | se activa sola cuando hace falta |
+| resumen-salud-para-consulta | Skill | Ordena las analíticas, los síntomas y la medicación que tú le das en un resumen claro, con preguntas para tu médico y sin diagnosticar. | se activa sola cuando hace falta |
+| analista-resenas-centro | Subagente | Lee tus reseñas, saca el patrón de quejas y elogios, te deja respuestas sin revelar datos de salud. | pídele a Claude «usa el subagente analista-resenas-centro» |
+| encuestas-y-cuadro-de-satisfaccion | Subagente | Diseña la encuesta corta que sí contestan y convierte respuestas en decisiones, no en gráficos bonitos. | pídele a Claude «usa el subagente encuestas-y-cuadro-de-satisfaccion» |
+| instrucciones-claras-paciente | Subagente | Subagente que convierte las indicaciones que dicta el profesional en una hoja de instrucciones que el paciente entiende y cumple, sin añadir nada clínico. | pídele a Claude «usa el subagente instrucciones-claras-paciente» |
+| redactor-informes-progreso | Subagente | Convierte tus notas de seguimiento en un informe de evolución que el cliente entiende en dos minutos. | pídele a Claude «usa el subagente redactor-informes-progreso» |
 
 Licencia: [CC BY 4.0](../../LICENSE). Cítanos si lo usas o lo compartes: «Arsenal del Marketer».

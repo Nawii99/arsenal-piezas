@@ -1,6 +1,6 @@
 ---
 name: pagina-tienda-juego
-description: Genera el borrador de la página de tienda de un juego (itch.io o Steam) a partir de una descripción corta. Se activa con /pagina-tienda seguido de la descripción del juego y la tienda elegida.
+description: Genera el borrador de la página de tienda de un juego (itch.io o Steam) a partir de una descripción corta. Se activa con /pagina-tienda-juego seguido de la descripción del juego y la tienda elegida.
 ---
 
 # Qué hace

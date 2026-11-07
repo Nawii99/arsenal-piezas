@@ -41,14 +41,14 @@ Recibe los reportes de un formulario público, extrae versión, sistema y graved
 - Google Sheet `bugs` con columnas: `id`, `fecha`, `resumen`, `firma`, `gravedad`, `version`, `sistema`, `reportes`, `card_url`.
 
 ## Los nodos, en orden
-1. **Webhook** — POST, Path: `bug-playtest`, Respond: `Immediately`.
+1. **Webhook** — POST, Path: `bug-playtest`, Respond: `Immediately`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** (`Normalizar reporte`) — Tally manda los campos dentro de `data.fields` como array; este código los convierte en un objeto plano y calcula una firma de texto para detectar duplicados. Código abajo.
 3. **Google Sheets** (`Buscar parecidos`) — Get Row(s) con Filter: columna `firma` equals `{{ $json.firma }}`.
 4. **IF** (`¿Ya existía?`) — Number, `{{ $items().length }}` mayor que `0`. Más fiable: usa un Code que compruebe `$input.all().length`.
 5. **Rama nueva (no existía)** — **Trello** > Resource: `Card`, Operation: `Create`. List ID: el de `Entrantes`. Name: `[{{ $json.gravedad }}] {{ $json.resumen }}`. Description: el texto completo con pasos, versión y sistema. Labels: usa el ID de la etiqueta roja para bloqueantes.
-6. **HTTP Request** (`Adjuntar captura`) — POST a `https://api.trello.com/1/cards/{{ $json.id }}/attachments?key=TU_KEY&token=TU_TOKEN`, Body Content Type `Form-Data`, campo `url` = la URL del fichero que Tally aloja.
+6. **HTTP Request** (`Adjuntar captura`) — POST a `https://api.trello.com/1/cards/{{ $json.id }}/attachments`, Authentication: Predefined Credential Type > Trello API (la clave y el token van en esa credencial de n8n), Body Content Type `Form-Data`, campo `url` = la URL del fichero que Tally aloja. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 7. **Google Sheets** (`Guardar bug`) — Append Row con `reportes` = 1 y el `card_url`.
-8. **Rama existente** — **Google Sheets** > Update Row: `reportes` = `{{ $json.reportes + 1 }}`. Y **HTTP Request** a Trello para añadir un comentario: POST `https://api.trello.com/1/cards/{{ $json.card_id }}/actions/comments?key=...&token=...&text=Reporte%20adicional%20de%20{{ $json.contacto }}`.
+8. **Rama existente** — **Google Sheets** > Update Row: `reportes` = `{{ $json.reportes + 1 }}`. Y **HTTP Request** a Trello para añadir un comentario: POST `https://api.trello.com/1/cards/{{ $json.card_id }}/actions/comments?text=Reporte%20adicional%20de%20{{ $json.contacto }}`, con la misma credencial Trello API. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 9. **IF** (`¿Es grave o repetido?`) — condición OR: `gravedad` equals `bloqueante`, o `reportes` mayor o igual que `3`.
 10. **HTTP Request** (`Discord`) — `{ "content": "🔴 **{{ $json.resumen }}**\nGravedad: {{ $json.gravedad }} · Reportes: {{ $json.reportes }} · Build {{ $json.version }} · {{ $json.sistema }}\n{{ $json.card_url }}" }`.
 11. **Gmail** (opcional) — respuesta automática al jugador: «Gracias, lo hemos apuntado con el número {{ $json.id }}». Un jugador que recibe respuesta reporta más veces.

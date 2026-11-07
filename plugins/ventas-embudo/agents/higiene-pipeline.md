@@ -1,6 +1,6 @@
 ---
 name: higiene-pipeline
-description: Audits a sales pipeline export (CSV or spreadsheet), flags zombie and duplicate deals, re-scores each opportunity, and returns a realistic weighted forecast plus a prioritized action list. Use this agent when the user's CRM or spreadsheet of opportunities is messy, stale, or gives an unrealistic picture of what will actually close.
+description: Audita una exportación del pipeline de ventas (CSV u hoja de cálculo), señala oportunidades zombi y duplicadas, vuelve a puntuar cada oportunidad y devuelve una previsión ponderada realista junto con una lista priorizada de acciones. Úsalo cuando el CRM o la hoja de oportunidades del usuario esté desordenado, desactualizado o ofrezca una imagen poco realista de lo que realmente se cerrará.
 tools: Read, Write, Bash
 ---
 

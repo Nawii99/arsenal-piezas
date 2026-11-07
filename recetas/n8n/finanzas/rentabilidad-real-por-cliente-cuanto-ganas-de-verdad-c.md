@@ -48,7 +48,7 @@ Credencial de Google en n8n para Sheets y Gmail.
 
 ## Los nodos, en orden
 **Schedule Trigger**: Cron `0 9 1 * *`, timezone Europe/Madrid.
-**HTTP Request** (renombra a `Horas`): GET a `=https://api.clockify.me/api/v1/workspaces/TU_WORKSPACE_ID/reports/summary`. Ojo, los informes van por POST en la API de reports; usa Method POST a `https://reports.api.clockify.me/v1/workspaces/TU_WORKSPACE_ID/reports/summary`. Headers: `X-Api-Key` con tu clave. Body JSON:
+**HTTP Request** (renombra a `Horas`): GET a `=https://api.clockify.me/api/v1/workspaces/TU_WORKSPACE_ID/reports/summary`. Ojo, los informes van por POST en la API de reports; usa Method POST a `https://reports.api.clockify.me/v1/workspaces/TU_WORKSPACE_ID/reports/summary`. Headers: `X-Api-Key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `X-Api-Key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría). Body JSON:
 `={{ JSON.stringify({ dateRangeStart: new Date(new Date().getFullYear(), new Date().getMonth()-1, 1).toISOString(), dateRangeEnd: new Date(new Date().getFullYear(), new Date().getMonth(), 0, 23, 59).toISOString(), summaryFilter: { groups: ["PROJECT"] } }) }}`
 **Google Sheets** (renombra a `Facturado`): Get Row(s) en «Facturas emitidas», Return All.
 **Google Sheets** (renombra a `Objetivo`): Get Row(s) en pestaña Objetivo.

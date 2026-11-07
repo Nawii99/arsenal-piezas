@@ -38,7 +38,7 @@ Vigila una carpeta de Google Drive donde los alumnos suben su ejercicio. Cada ar
 
 ## Lo que necesitas antes
 - n8n instalado.
-- Carpeta de Drive compartida con los alumnos (permiso: cualquiera con el enlace puede subir archivos, vía formulario o carpeta pública).
+- Carpeta de Drive `Entregas` para las entregas. Mantén la carpeta con acceso restringido (nada de enlace público): hay trabajos y nombres de alumnos (datos personales). Compártela solo con los correos de los alumnos, o recibe las entregas con un Google Form con subida de archivos que las deja en la carpeta.
 - Credencial Google Drive OAuth2 en n8n (Google Cloud Console, activar Drive API).
 - Clave de API de OpenAI: `platform.openai.com` > API keys > Create new secret key. Guárdala en n8n como credencial `OpenAi`.
 - Google Sheet `Correcciones` con columnas: `archivo`, `alumno_email`, `nota`, `feedback`, `fecha`, `aprobado_por_mi`, `enviado`.

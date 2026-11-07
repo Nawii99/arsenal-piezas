@@ -21,7 +21,7 @@ Para quien recibe CVs por email o los va guardando en una carpeta de Drive y qui
 
 ## Cómo ganar dinero con ella
 
-n8n (self-hosted gratis, o plan cloud con límite de ejecuciones gratis), Google Drive, Google Sheets, OCR y una API de IA…
+n8n (self-hosted gratis, o n8n Cloud de pago tras la prueba gratuita), Google Drive, Google Sheets, OCR y una API de IA…
 
 - Flujo de captura de CV para agencias de selección que reciben candidatos por email…
 - Montaje de una hoja de candidatos automática para autónomos de RRHH…
@@ -32,7 +32,7 @@ n8n (self-hosted gratis, o plan cloud con límite de ejecuciones gratis), Google
 ## La receta, paso a paso
 
 Cuentas necesarias antes de empezar:
-- n8n: puedes usar la versión self-hosted (gratis, la instalas tú en un servidor o en tu ordenador) o el plan cloud gratuito de n8n, que tiene un límite de ejecuciones al mes, mira el límite vigente en su web antes de depender de esto para trabajo real.
+- n8n: puedes usar la versión self-hosted (gratis, la instalas tú en un servidor o en tu ordenador) o n8n Cloud, que tiene una prueba gratuita temporal y después es de pago (mira las condiciones vigentes en su web antes de depender de esto para trabajo real).
 - Cuenta de Google (Drive y Sheets), gratis.
 - Un servicio de OCR: Google Cloud Vision tiene un nivel gratuito mensual limitado (revisa la cifra actual en su web, cambia con el tiempo), o puedes montar Tesseract OCR (gratis, open source) en un contenedor Docker si no quieres depender de una cuenta de pago.
 - Una API de IA para estructurar el texto (OpenAI, Anthropic o similar): esto no es gratis, cobra por texto procesado, calcula el coste antes de dejarlo corriendo solo.

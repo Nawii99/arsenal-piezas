@@ -39,7 +39,7 @@ Para desarrolladores en solitario, equipos de dos y agencias que entregan códig
 - Clave de API de Anthropic (console.anthropic.com) u OpenAI. Con 5 € de saldo tienes para cientos de PRs.
 - n8n accesible desde internet para recibir el webhook.
 ## Los nodos, en orden
-1) **Webhook**: POST, path `revisa-pr`. En el repo: Settings > Webhooks, evento «Pull requests».
+1) **Webhook**: POST, path `revisa-pr`. En el repo: Settings > Webhooks, evento «Pull requests». Protégelo: configura un *Secret* en el webhook de GitHub, valida la cabecera `X-Hub-Signature-256` en un nodo Code con ese secreto leído de una variable de entorno y descarta entregas repetidas por `X-GitHub-Delivery`.
 2) **IF**: String `{{ $json.body.action }}` «is equal to» `opened`. Si quieres revisar también las actualizaciones, añade una condición OR con `synchronize`.
 3) **HTTP Request** (traer el diff): GET `{{ $json.body.pull_request.url }}`, Header Auth `Authorization: Bearer TU_TOKEN` y además la cabecera `Accept: application/vnd.github.v3.diff`. En Options > Response, Format `Text`.
 4) **Code** (recortar diffs enormes y quitar ruido):
@@ -51,7 +51,7 @@ let texto = utiles.map(b => 'diff --git ' + b).join('');
 if (texto.length > 60000) texto = texto.slice(0, 60000) + '\n[...diff recortado...]';
 return [{ json: { diff: texto, pr: $('Webhook').first().json.body.number, repo: $('Webhook').first().json.body.repository.full_name, titulo: $('Webhook').first().json.body.pull_request.title } }];
 ```
-5) **HTTP Request** (la IA): POST `https://api.anthropic.com/v1/messages`. Cabeceras: `x-api-key: TU_CLAVE`, `anthropic-version: 2023-06-01`, `content-type: application/json`. Body:
+5) **HTTP Request** (la IA): POST `https://api.anthropic.com/v1/messages`. Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name `x-api-key`, Value tu clave de Anthropic); el nodo usa esa credencial. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Cabeceras normales: `anthropic-version: 2023-06-01`, `content-type: application/json`. Body:
 ```json
 { "model": "claude-sonnet-5-5", "max_tokens": 1500, "messages": [{"role": "user", "content": "Eres un revisor de código senior. Revisa este diff del PR '{{ $json.titulo }}'. Responde en español de España y en Markdown, con tres apartados: 1) Bugs probables (con el archivo y la línea), 2) Seguridad (secretos, inyección, validación), 3) Simplificaciones. Máximo 8 puntos, ordenados de más grave a menos. Si no ves problemas, dilo en una línea y no te inventes nada.\n\n{{ $json.diff }}"}] }
 ```

@@ -21,7 +21,7 @@ Una vez por semana recorre la lista de pacientes, calcula los días desde la úl
 
 ## Cómo ganar dinero con ella
 
-Recuperar 8 pacientes dormidos al mes a 45 € de media son 360 € que ya estaban en tu base; el sistema cuesta 0 € si usas n8n gratis.
+Recuperar 8 pacientes dormidos al mes a 45 € de media son 360 € que ya estaban en tu base; el sistema cuesta 0 € si lo montas en n8n autoalojado, que es gratis.
 
 - Montar el recall de revisiones para clínicas dentales y de podología, cobrando la configuración.
 - Ofrecer el mantenimiento mensual del recall a una clínica de fisioterapia.

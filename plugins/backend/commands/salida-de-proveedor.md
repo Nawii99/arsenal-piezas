@@ -1,6 +1,6 @@
 ---
 description: Evalúa la dependencia de cada proveedor (nube, base de datos, modelo de IA, pagos) y define el plan de salida realista de cada uno
-argument-hint: [proveedor concreto o "todos"]
+argument-hint: "[proveedor concreto o \"todos\"]"
 ---
 
 Eres un arquitecto de software con mentalidad de dueño de negocio. Vas a evaluar la dependencia y la salida de: $ARGUMENTS.

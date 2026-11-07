@@ -6,7 +6,7 @@ Workflow de n8n que corrige exámenes tipo test recogidos con Google Forms y env
 
 ## Qué es y qué hace
 
-Flujo de n8n que corrige un examen tipo test recogido en Google Forms. Cada fila nueva de la hoja de respuestas se compara con una pestaña Clave con la respuesta correcta, un nodo Code en JavaScript calcula la nota y Gmail envía a cada alumno su resultado. Requiere cuentas de Google y de n8n; el plan gratuito de n8n Cloud tiene límite de ejecuciones al mes.
+Flujo de n8n que corrige un examen tipo test recogido en Google Forms. Cada fila nueva de la hoja de respuestas se compara con una pestaña Clave con la respuesta correcta, un nodo Code en JavaScript calcula la nota y Gmail envía a cada alumno su resultado. Requiere cuentas de Google y de n8n; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago; autoalojado es gratis.
 
 ## Cómo usarla
 
@@ -33,7 +33,7 @@ Ofrece a academias y formadores montarles este sistema de corrección, cobrando 
 
 Qué necesitas antes de montarlo:
 - Una cuenta de Google (gratis): para el Formulario, la hoja de respuestas y el envío de emails con Gmail.
-- Una cuenta de n8n, self-hosted o en la nube (el plan gratuito de n8n cloud tiene límite de ejecuciones al mes, revísalo antes de usarlo con muchos alumnos).
+- Una cuenta de n8n, self-hosted (gratis, Community Edition) o en la nube (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago; revisa el plan vigente antes de usarlo con muchos alumnos).
 - Un Google Form con las preguntas del examen, conectado a una hoja de cálculo de respuestas.
 - Una segunda pestaña en esa hoja, llamada Clave, con la respuesta correcta de cada pregunta.
 

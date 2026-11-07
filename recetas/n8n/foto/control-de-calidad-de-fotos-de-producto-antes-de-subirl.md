@@ -46,10 +46,11 @@ Para tiendas y agencias que preparan catálogos: analiza cada imagen de una carp
 1. **Schedule Trigger** — cada 15 minutos.
 2. **Google Drive** — Search en `QC ENTRADA`, Query String: `'ID_QC_ENTRADA' in parents and mimeType contains 'image/' and trashed=false`, Return All.
 3. **Loop Over Items** — Batch Size: 1.
+3b. **Code «Nombre seguro»** (modo «Run Once for Each Item») — `const ext = String($json.name).split('.').pop().toLowerCase(); if (!['jpg','jpeg','png','webp','tif','tiff','gif','heic','bmp'].includes(ext) || !/^[A-Za-z0-9_-]+$/.test($json.id)) throw new Error('Formato no admitido: ' + $json.name); return { json: { ...$json, archivo: $json.id + '.' + ext } };`. En /tmp y en los comandos solo se usa `archivo`.
 4. **Google Drive** — Download, campo binario `data`.
-5. **Read/Write Files from Disk** — Write File to Disk, File Path `=/tmp/qc/{{ $json.name }}` (crea antes /tmp/qc con un Execute Command `mkdir -p /tmp/qc`).
-6. **Execute Command «Medir»** — Command: `magick identify -format '{"ancho":%w,"alto":%h,"peso":%b,"formato":"%m","perfil":"%[colorspace]"}' "/tmp/qc/{{ $('Loop Over Items').item.json.name }}"`.
-7. **Execute Command «Esquinas»** — Command: `magick "/tmp/qc/{{ $('Loop Over Items').item.json.name }}" -format '%[fx:int(255*p{2,2}.r)],%[fx:int(255*p{w-3,2}.r)],%[fx:int(255*p{2,h-3}.r)],%[fx:int(255*p{w-3,h-3}.r)]' info:`.
+5. **Read/Write Files from Disk** — Write File to Disk, File Path `=/tmp/qc/{{ $('Nombre seguro').item.json.archivo }}` (crea antes /tmp/qc con un Execute Command `mkdir -p /tmp/qc`).
+6. **Execute Command «Medir»** — Command: `magick identify -format '{"ancho":%w,"alto":%h,"peso":%b,"formato":"%m","perfil":"%[colorspace]"}' "/tmp/qc/{{ $('Nombre seguro').item.json.archivo }}"`.
+7. **Execute Command «Esquinas»** — Command: `magick "/tmp/qc/{{ $('Nombre seguro').item.json.archivo }}" -format '%[fx:int(255*p{2,2}.r)],%[fx:int(255*p{w-3,2}.r)],%[fx:int(255*p{2,h-3}.r)],%[fx:int(255*p{w-3,h-3}.r)]' info:`.
 8. **Code «Evaluar»** — aplica las reglas (código abajo).
 9. **IF** — Boolean: `{{ $json.apta }}` is true.
 10. Rama verdadera: **Google Drive** Operation: Move a `QC APTAS`. Rama falsa: **Google Drive** Move a `QC RECHAZADAS`.
@@ -64,8 +65,8 @@ const MAX_MB = 10;
 const PROPORCIONES = [1, 4/5, 3/4]; // 1:1, 4:5, 3:4 admitidas
 const salida = [];
 for (const item of $input.all()) {
-  const m = JSON.parse($('Execute Command «Medir»').item.json.stdout);
-  const esquinas = $('Execute Command «Esquinas»').item.json.stdout.trim().split(',').map(Number);
+  const m = JSON.parse($('Medir').item.json.stdout);
+  const esquinas = $('Esquinas').item.json.stdout.trim().split(',').map(Number);
   const nombre = $('Loop Over Items').item.json.name;
   const pesoMb = parseFloat(String(m.peso).replace(/[^0-9.]/g, '')) / (String(m.peso).includes('K') ? 1024 : 1);
   const prop = m.ancho / m.alto;
@@ -91,6 +92,8 @@ return salida;
 - **Unidad de peso**: `%b` devuelve KB o MB según el tamaño; el código ya lo contempla, pero verifica con una foto de 200 KB.
 - **PNG con transparencia**: las esquinas transparentes se leen como negro. Añade `-background white -flatten` antes del `-format` en el comando de esquinas.
 - **Fotos que se quedan en /tmp**: si el flujo falla a mitad, el `rm` final no se ejecuta. Añade un Error Workflow en Settings del workflow que lo limpie.
+- **Nombres con trampa**: una foto llamada `$(id).jpg` o con comillas ejecutaría órdenes en ImageMagick. En /tmp va como `ID-de-Drive.extensión` y el nombre original solo se apunta en la hoja; si llega otra extensión, el flujo para hasta que la saques de `QC ENTRADA`.
+- **El Code «Evaluar» no encuentra los datos**: cita los nodos por su nombre, `$('Medir')` y `$('Esquinas')`; si los renombras, cambia también esas dos líneas.
 - **Requisitos que cambian**: pon MIN_LADO, MAX_MB y PROPORCIONES en variables del workflow (Settings > Variables) o en una hoja de configuración, para no tocar el código.
 
 ## Cuánto cuesta

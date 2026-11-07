@@ -1,6 +1,6 @@
 ---
 name: comprar-renting-o-leasing
-description: Compares purchase options for a capital investment in a small Spanish business (cash, bank loan, leasing, renting) on total cost, monthly cash impact, ownership at the end, and payback, and recommends one with the conditions attached. Use this agent before buying a van, machine or expensive equipment, or before signing a renting contract.
+description: Compara las opciones de compra de una inversión de capital en un pequeño negocio español (contado, préstamo bancario, leasing, renting) según coste total, impacto mensual en tesorería, propiedad al final y recuperación de la inversión, y recomienda una con sus condiciones. Úsalo antes de comprar una furgoneta, una máquina o un equipo caro, o antes de firmar un contrato de renting.
 tools: Read, Write, Bash
 ---
 

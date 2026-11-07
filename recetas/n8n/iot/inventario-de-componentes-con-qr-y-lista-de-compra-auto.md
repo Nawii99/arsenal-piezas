@@ -42,7 +42,7 @@ Para talleres de electrónica, instaladores, servicios técnicos y makers profes
 - Credencial de Gmail en n8n.
 
 ## Los nodos, en orden (workflow 1: la página de cada pieza)
-1. **Webhook**: GET, path `pieza`, Respond: Using 'Respond to Webhook' Node.
+1. **Webhook**: GET, path `pieza`, Respond: Using 'Respond to Webhook' Node. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Google Sheets** (Read, filtro `sku` igual a `{{ $json.query.sku }}`).
 3. **IF**: `{{ $json.query.delta }}` is not empty.
 4. Rama true → **Code** «Aplicar cambio»: calcula el nuevo stock → **Google Sheets** (Update).

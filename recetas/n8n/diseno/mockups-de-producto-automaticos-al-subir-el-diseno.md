@@ -46,7 +46,7 @@ Detecta el diseño nuevo en Drive, lo manda a un servicio de renderizado de mock
 3. **Google Drive** — Operation: Share, Item By ID `={{ $json.id }}`, Role Reader, Type Anyone. La API necesita una URL pública del arte.
 4. **Code** — Mode: Run Once for All Items. Genera una entrada por cada mockup que quieras (código abajo).
 5. **Split In Batches** («Loop Over Items») — Batch Size: 1.
-6. **HTTP Request** (renombra a «Renderizar mockup») — Method: POST, URL `https://app.dynamicmockups.com/api/v1/renders`. Headers: `x-api-key` con tu clave y `Content-Type: application/json`. Body JSON: ver abajo.
+6. **HTTP Request** (renombra a «Renderizar mockup») — Method: POST, URL `https://app.dynamicmockups.com/api/v1/renders`. Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name `x-api-key`, Value tu clave; no escribas la clave en el nodo: un flujo exportado o compartido se la llevaría). Header: `Content-Type: application/json`. Body JSON: ver abajo.
 7. **HTTP Request** (renombra a «Descargar render») — Method: GET, URL `={{ $json.data.export_path }}`, Options > Response Format: File, campo `data`.
 8. **Google Drive** — Operation: Upload, File Name `={{ $('Loop Over Items').item.json.nombre }}.jpg`, carpeta «Mockups listos».
 9. Salida de vuelta a **Loop Over Items**.
@@ -87,4 +87,4 @@ Empieza con UNA sola plantilla en el array del Code. Sube un PNG con transparenc
 - **Límite del plan gratuito**: pocas exportaciones al mes. Ejecuta la automatización solo con los diseños definitivos, no con los bocetos.
 
 ## Cuánto cuesta
-n8n y Drive gratis. Dynamic Mockups tiene plan gratuito con marca de agua o límite de renders; los planes de pago arrancan sobre 19 $/mes. Alternativa sin coste: monta tus propias plantillas con ImageMagick en un nodo Execute Command en n8n auto-alojado.
+n8n autoalojado y Drive gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago). Dynamic Mockups tiene plan gratuito con marca de agua o límite de renders; los planes de pago arrancan sobre 19 $/mes. Alternativa sin coste: monta tus propias plantillas con ImageMagick en un nodo Execute Command en n8n auto-alojado.

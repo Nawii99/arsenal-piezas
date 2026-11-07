@@ -1,6 +1,6 @@
 ---
 name: plan-de-cobros
-description: Builds a receivables aging report for a small Spanish business and writes a full escalation sequence (friendly reminder, firm claim, late-interest notice, pre-legal letter) per overdue invoice, with dates and channels. Use this agent when the user has unpaid invoices, does not know which client to chase first, or needs the exact wording to claim money without losing the client.
+description: Elabora un informe de antigüedad de cuentas a cobrar para un pequeño negocio español y redacta una secuencia completa de escalada (recordatorio amistoso, reclamación firme, aviso de intereses de demora, carta prejudicial) por cada factura vencida, con fechas y canales. Úsalo cuando el usuario tenga facturas impagadas, no sepa a qué cliente reclamar primero o necesite el texto exacto para reclamar un cobro sin perder al cliente.
 tools: Read, Write, Bash
 ---
 

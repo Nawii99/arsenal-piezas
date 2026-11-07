@@ -44,13 +44,14 @@ Dos carpetas de Drive: «3D-ORIGINALES» y «3D-WEB». Una hoja «Optimizaciones
 ## Los nodos, en orden
 **Google Drive Trigger** — Event: File Created en «3D-ORIGINALES», Poll: cada 10 minutos.
 **IF** — `{{$json.name}}` Regex Match `\.(glb|gltf)$`.
+**Code** («Nombre seguro», modo «Run Once for Each Item») — `const ext = String($json.name).split('.').pop().toLowerCase(); if (!['glb','gltf'].includes(ext) || !/^[A-Za-z0-9_-]+$/.test($json.id)) throw new Error('Formato no admitido: ' + $json.name); return { json: { ...$json, archivo: $json.id + '.' + ext } };`. En disco y en los comandos solo se usa `archivo`.
 **Google Drive** — Download, Binary Property `data`.
-**Read/Write Files from Disk** — Write, `/data/glb/{{$json.name}}`.
-**Execute Command** — `gltf-transform optimize "/data/glb/{{ $('Google Drive Trigger').item.json.name }}" "/data/glb/opt_{{ $('Google Drive Trigger').item.json.name }}" --compress draco --texture-compress webp --texture-size 1024`. Timeout: 300 s.
-**Execute Command** — `stat -c%s "/data/glb/{{ $('Google Drive Trigger').item.json.name }}" && stat -c%s "/data/glb/opt_{{ $('Google Drive Trigger').item.json.name }}"` para leer los dos tamaños.
+**Read/Write Files from Disk** — Write, `/data/glb/{{ $('Nombre seguro').item.json.archivo }}`.
+**Execute Command** — `gltf-transform optimize "/data/glb/{{ $('Nombre seguro').item.json.archivo }}" "/data/glb/opt_{{ $('Nombre seguro').item.json.archivo }}" --compress draco --texture-compress webp --texture-size 1024`. Timeout: 300 s.
+**Execute Command** — `stat -c%s "/data/glb/{{ $('Nombre seguro').item.json.archivo }}" && stat -c%s "/data/glb/opt_{{ $('Nombre seguro').item.json.archivo }}"` para leer los dos tamaños.
 **Code** — calcula porcentajes y decide si hay aviso (código abajo).
-**Read/Write Files from Disk** — Read del archivo optimizado, propiedad binaria `opt`.
-**Google Drive** — Upload a «3D-WEB», Input Binary Field: `opt`.
+**Read/Write Files from Disk** — Read del archivo optimizado (`/data/glb/opt_{{ $('Nombre seguro').item.json.archivo }}`), propiedad binaria `opt`.
+**Google Drive** — Upload a «3D-WEB», Input Binary Field: `opt`, File Name `{{ $('Google Drive Trigger').item.json.name }}`.
 **Google Sheets** — Append Row en «Optimizaciones».
 **IF** — `{{$json.aviso}}` no está vacío.
 **Telegram** (rama true) — Operation: Send Message, Chat ID el tuyo, Text: `⚠️ {{$json.archivo}}: {{$json.aviso}} ({{$json.mb_antes}} MB → {{$json.mb_despues}} MB)`.
@@ -79,6 +80,7 @@ Draco rompe modelos con animaciones de esqueleto complejas: para esos usa `--com
 Si el visor web no muestra el modelo, casi siempre falta cargar el decodificador Draco en la web; en model-viewer va incluido, en Three.js hay que añadir DRACOLoader.
 Las texturas con canal alfa mal convertidas se ven con bordes sucios: quita `--texture-compress webp` para ese modelo concreto.
 gltf-transform puede tardar mucho con texturas de 4K; sube el timeout del nodo y procesa de uno en uno con **Split In Batches** (Batch Size 1) si te llegan tandas.
+Un archivo llamado `$(id).glb` o con comillas ejecutaría órdenes si su nombre entrara en el comando: en disco va como `ID-de-Drive.extensión` y el nombre original solo se usa en la hoja, el aviso y la subida a Drive.
 
 ## Cuánto cuesta
 gltf-transform, KTX-Software y n8n auto-alojado son gratis. Telegram es gratis.

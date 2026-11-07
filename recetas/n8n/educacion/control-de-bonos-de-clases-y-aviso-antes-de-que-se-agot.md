@@ -96,5 +96,5 @@ return res;
 - **Eventos recurrentes**: sin Single Events activado, Calendar devuelve la serie y no las ocurrencias.
 
 ## Cuánto cuesta
-- Todo gratis salvo el alojamiento de n8n. En Make cabe de sobra en el plan gratuito.
+- Todo gratis salvo el alojamiento de n8n autoalojado (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago). En Make cabe de sobra en el plan gratuito.
 - Si quieres cobrar el bono desde el propio email, un enlace de pago de Stripe cuesta 1,5% + 0,25 € por cobro y no tiene cuota.

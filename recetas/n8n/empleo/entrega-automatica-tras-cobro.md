@@ -53,7 +53,7 @@ ANTES DE EMPEZAR
 2. En Drive crea la carpeta CLIENTES y dentro una carpeta PLANTILLAS con un Google Doc
    por paquete (plantilla-revision, plantilla-curriculum, plantilla-completa).
 3. Crea una hoja de calculo VENTAS con columnas: fecha, nombre, email, NIF, paquete,
-   base, IVA, total, num_factura, estado.
+   base, IVA, total, num_factura, estado, id_sesion.
 4. Monta el formulario de datos (Tally) con: nombre, NIF o DNI, direccion fiscal, puesto
    que busca, enlace a la oferta, y subida del curriculum actual.
 
@@ -63,6 +63,14 @@ NODO 1 - Disparador: Stripe Trigger
 - Credencial: tu clave de API de Stripe (empieza en modo prueba por sk_test_).
 - Evento: checkout.session.completed
 - Este nodo te da el email, el nombre, el importe y el price_id de lo comprado.
+
+NODO 1b - IF + Google Sheets "Comprobar pago y duplicados"
+- El Stripe Trigger ya verifica la firma del webhook.
+- IF: sigue solo si payment_status es paid. checkout.session.completed tambien salta
+  con metodos de pago diferidos que aun no han cobrado.
+- Busca en la hoja VENTAS el id de la sesion (el id del objeto del evento). Si ya
+  existe, el flujo se para: Stripe puede enviar el mismo evento mas de una vez y no
+  quieres dos carpetas ni dos emails.
 
 NODO 2 - Switch "Que paquete es"
 - Modo: Rules. Campo a evaluar: el price_id que llega del nodo 1.
@@ -83,7 +91,7 @@ NODO 5 - Google Drive: Copy File
 - Destino: la carpeta que acaba de crear el nodo 4.
 
 NODO 6 - HTTP Request a la API de Claude (opcional pero es donde esta el ahorro)
-- Metodo POST, URL de mensajes de la API de Anthropic, cabecera con tu clave.
+- Metodo POST, URL de mensajes de la API de Anthropic, clave en una credencial Header Auth de n8n (no la escribas en el nodo: un flujo exportado se la llevaría).
 - En el mensaje mete el paquete y los datos que ya tengas y pide el borrador inicial
   del entregable. Es un BORRADOR: no se envia al cliente sin que tu lo leas.
 
@@ -98,7 +106,7 @@ NODO 8 - Gmail: Send Message
 - Anade siempre la frase de honestidad: se entrega el trabajo y las revisiones, no el puesto.
 
 NODO 9 - Google Sheets: Append Row
-- Hoja VENTAS. Rellena fecha, nombre, email, paquete, base, IVA, total, estado=PENDIENTE_FACTURA.
+- Hoja VENTAS. Rellena fecha, nombre, email, paquete, base, IVA, total, id_sesion, estado=PENDIENTE_FACTURA.
 - La factura NO la automatices el primer mes. La haces tu o tu gestoria mirando esta hoja.
   Una factura mal numerada te da mas problemas que el tiempo que ahorras.
 

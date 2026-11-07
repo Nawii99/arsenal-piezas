@@ -1,6 +1,6 @@
 ---
 name: cuestionario-inicial-habitos
-description: Designs the pre-session intake questionnaire for a wellness, nutrition, sleep or training professional: sections, exact question wording, scoring, and red-flag rules that stop the process and redirect to a doctor. Never diagnoses or interprets symptoms. Use when preparing a first session with a new client and deciding what to ask beforehand.
+description: "Diseña el cuestionario previo a la sesión para un profesional de bienestar, nutrición, sueño o entrenamiento: secciones, redacción exacta de las preguntas, puntuación y reglas de alerta que detienen el proceso y derivan a un médico. Nunca diagnostica ni interpreta síntomas. Úsala al preparar una primera sesión con un cliente nuevo y decidir qué preguntar de antemano."
 ---
 
 # Cuestionario inicial de hábitos

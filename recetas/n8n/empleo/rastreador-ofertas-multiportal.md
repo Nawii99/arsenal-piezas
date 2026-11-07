@@ -68,12 +68,14 @@ NODO 2 - Set, llámalo Mis criterios
 NODO 3 - HTTP Request, llámalo Adzuna
 - Método GET.
 - URL: https://api.adzuna.com/v1/api/jobs/es/search/1
-- Query parameters: app_id (el tuyo), app_key (la tuya), results_per_page = 50, what = {{ $json.busqueda }}, where = {{ $json.ciudad }}, distance = {{ $json.radio_km }}, max_days_old = {{ $json.dias_max_antiguedad }}, content-type = application/json
+- Authentication: Generic Credential Type > Custom Auth, con una credencial de n8n cuyo contenido sea {"qs": {"app_id": "TU_APP_ID", "app_key": "TU_APP_KEY"}}. Las claves van solo en la credencial, nunca escritas en el nodo: un flujo exportado se llevaría las claves.
+- Query parameters: results_per_page = 50, what = {{ $json.busqueda }}, where = {{ $json.ciudad }}, distance = {{ $json.radio_km }}, max_days_old = {{ $json.dias_max_antiguedad }}, content-type = application/json
 - En Settings del nodo activa "Always Output Data" y "Continue On Fail": si un portal se cae, el resto sigue.
 
 NODO 4 - HTTP Request, llámalo Jooble
 - Método POST.
-- URL: https://es.jooble.org/api/TU_CLAVE
+- URL: https://es.jooble.org/api/{{ $env.JOOBLE_KEY }}
+- La clave de Jooble va en la variable de entorno JOOBLE_KEY del servidor (puede hacer falta N8N_BLOCK_ENV_ACCESS_IN_NODE=false), no escrita en la URL del nodo: un flujo exportado se llevaría la clave.
 - Body como JSON: {"keywords": "{{ $('Mis criterios').item.json.busqueda }}", "location": "{{ $('Mis criterios').item.json.ciudad }}", "page": "1"}
 - Continue On Fail activado también.
 
@@ -156,7 +158,7 @@ NODO 14 - Google Sheets
 - Esta hoja es la que alimenta la receta del detector de anuncios fantasma.
 
 NODO 15 - Telegram
-- Credencial: el token que te da @BotFather.
+- Credencial: crea una credencial «Telegram API» de n8n y pega ahí el token que te da @BotFather (nunca en el nodo ni en una URL).
 - Tu chat id: escribe a @userinfobot y te lo dice. Habla primero tú con tu bot o no podrá escribirte.
 - Operación: Send Message. Parse Mode: HTML.
 - Texto: <b>{{ $json.titulo }}</b>\n{{ $json.empresa }} · {{ $json.ubicacion }}\nNota {{ $json.nota }}/10 · {{ $json.salario_min ? $json.salario_min + '-' + $json.salario_max + ' €' : 'sin salario publicado' }}\n{{ $json.url }}

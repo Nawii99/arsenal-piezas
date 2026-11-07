@@ -44,15 +44,15 @@ Para clínicas, gabinetes de psicología, nutricionistas, fisios, entrenadores p
 - Gmail y Google Drive conectados en n8n.
 
 ## Los nodos, en orden
-1. **Google Sheets Trigger** – Event: Row Added, Document: la hoja de respuestas del formulario, Poll Times: cada 2 minutos. (Alternativa instantánea: un **Webhook** de n8n al que llame un Apps Script del formulario con el evento onFormSubmit.)
+1. **Google Sheets Trigger** – Event: Row Added, Document: la hoja de respuestas del formulario, Poll Times: cada 2 minutos. (Alternativa instantánea: un **Webhook** de n8n al que llame un Apps Script del formulario con el evento onFormSubmit; protégelo con Authentication > Header Auth y una credencial con un token largo que solo conozca quien lo llama; sin eso, cualquiera que sepa la URL lo dispara, y guarda ese token en las propiedades del script, no en el código.)
 2. **Code** – normaliza los datos: nombre en formato Título, teléfono sin espacios, email en minúsculas, y monta un `id_cliente` con apellido y año. Código abajo.
 3. **Google Drive** – Resource: Folder, Operation: Create. Name: `={{ $json.id_cliente }} - {{ $json.nombre }}`, Parent Folder: tu carpeta `Clientes`.
 4. **Google Drive** – Create Folder tres veces más (o un nodo con **Split Out** de una lista): `Consentimientos`, `Sesiones`, `Documentos`, cada una con Parent Folder `={{ $('Google Drive').item.json.id }}`.
 5. **Google Drive** – Operation: Copy File. File: tu `Consentimiento base`. Name: `Consentimiento - {{ $json.nombre }}`. Parent: la subcarpeta `Consentimientos`.
 6. **HTTP Request** – POST a `https://docs.googleapis.com/v1/documents/{{ $json.id }}:batchUpdate` con credencial Google OAuth2 y el body de reemplazo de texto (abajo). Rellena los marcadores del documento.
-7. **Google Drive** – Operation: Share. File: el consentimiento copiado. Permissions: Role `reader`, Type `anyone with link`. Guarda el `webViewLink`.
+7. **Google Drive** – Operation: Share. File: el consentimiento copiado. Permissions: Role `reader`, Type `user`, Email Address `={{ $json.email }}`: solo lo ve ese cliente. Deja el acceso del documento en «Restringido»: lleva sus datos personales. Si el cliente no tiene cuenta de Google, exporta el consentimiento a PDF y envíalo como adjunto en el paso 9. Guarda el `webViewLink`.
 8. **Google Sheets** – Append en tu hoja `Clientes` con todos los datos, el enlace a la carpeta y el enlace al consentimiento.
-9. **Gmail** – Send al cliente: bienvenida, qué traer a la primera sesión, el enlace al consentimiento y tu enlace de reserva (Calendly, Cal.com o tu propio hueco).
+9. **Gmail** – Send al cliente: bienvenida, qué traer a la primera sesión, el enlace al consentimiento (solo se abre con su correo) y tu enlace de reserva (Calendly, Cal.com o tu propio hueco).
 10. **Gmail** – Send a ti: asunto `Cliente nuevo: {{ $json.nombre }}` con la ficha resumida y los enlaces.
 11. **IF** – si la casilla de privacidad no está marcada, ni crees carpeta ni mandes nada: manda un email pidiendo que la acepte. Ponlo justo después del paso 2.
 
@@ -83,14 +83,14 @@ return [{ json: {
 
 ## Cómo probarla
 - Rellena tú mismo el formulario con tu email. En dos minutos debe aparecer la carpeta con las tres subcarpetas y el consentimiento con tu nombre puesto.
-- Abre el enlace del consentimiento en una ventana de incógnito: tiene que abrirse sin pedir permiso.
+- Abre el enlace del consentimiento en una ventana de incógnito o con otra cuenta de Google: tiene que pedir permiso; solo debe abrirse con el correo del cliente.
 - Rellena el formulario sin marcar la casilla de privacidad: no debe crearse nada.
 - Repite el mismo nombre dos veces: verás que el `id_cliente` choca. Añade un contador o el mes al identificador si te pasa a menudo.
 
 ## Qué puede salir mal
 - **Nombres de columna larguísimos**: Google Forms pone la pregunta entera como cabecera. Copia y pega los nombres exactos desde el output del trigger, con tildes y signos de interrogación incluidos.
 - **Permisos de Drive**: la credencial de n8n necesita el scope `drive` completo, no solo `drive.file`, si quieres copiar plantillas y crear carpetas fuera de lo que crea la propia app.
-- **Documento compartido con cualquiera**: el enlace de solo lectura para firmar está bien, pero no metas datos de salud en ese documento. El consentimiento debe pedir los datos, no contenerlos.
+- **Documento compartido solo con el cliente**: el consentimiento lleva sus datos personales, por eso se comparte solo con su correo, con el acceso restringido. Y no metas datos de salud en ese documento: el consentimiento debe pedir los datos, no contenerlos.
 - **RGPD**: guarda solo lo necesario, ten tu registro de actividades de tratamiento y no metas diagnósticos en hojas de cálculo compartidas. Si tratas datos de salud, lo suyo es un gestor específico, no Sheets.
 - **El trigger de Sheets se pierde filas si n8n está apagado**: al arrancar recupera desde la última fila vista, pero si borras filas se lía. Nunca borres filas de la hoja de respuestas.
 

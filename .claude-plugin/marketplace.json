@@ -23,7 +23,18 @@
     {
       "name": "arsenal-audio",
       "source": "./plugins/audio",
-      "description": "Música y audio: 10 skills, 9 comandos /, 7 subagentes en español, del Arsenal del Marketer.",
+      "description": "Música y audio: 8 skills, 7 subagentes, 6 comandos / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "audio",
+      "keywords": [
+        "español",
+        "audio"
+      ]
+    },
+    {
+      "name": "arsenal-audio-alternativas",
+      "source": "./plugins/audio-alternativas",
+      "description": "Música y audio · Alternativas: 3 comandos /, 2 skills en español que se parecen a otras piezas de música y audio; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "audio",
       "keywords": [
@@ -34,7 +45,18 @@
     {
       "name": "arsenal-backend",
       "source": "./plugins/backend",
-      "description": "Backend: 24 comandos /, 4 skills, 3 subagentes en español, del Arsenal del Marketer.",
+      "description": "Backend: 20 comandos /, 4 skills, 2 subagentes en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "backend",
+      "keywords": [
+        "español",
+        "backend"
+      ]
+    },
+    {
+      "name": "arsenal-backend-alternativas",
+      "source": "./plugins/backend-alternativas",
+      "description": "Backend · Alternativas: 4 comandos /, 4 skills en español que se parecen a otras piezas de backend; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "backend",
       "keywords": [
@@ -45,7 +67,7 @@
     {
       "name": "arsenal-calidad",
       "source": "./plugins/calidad",
-      "description": "Calidad y tests: 4 skills, 2 comandos /, 1 subagente en español, del Arsenal del Marketer.",
+      "description": "Calidad y tests: 4 skills, 1 subagente en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "calidad",
       "keywords": [
@@ -56,7 +78,7 @@
     {
       "name": "arsenal-contenido",
       "source": "./plugins/contenido",
-      "description": "Contenido: 13 subagentes, 4 skills, 1 comando / en español, del Arsenal del Marketer.",
+      "description": "Contenido: 10 subagentes, 3 skills, 1 comando / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "contenido",
       "keywords": [
@@ -78,7 +100,7 @@
     {
       "name": "arsenal-datos-ia-agentes",
       "source": "./plugins/datos-ia-agentes",
-      "description": "Datos e IA · Agentes y chatbots: 14 comandos /, 7 subagentes, 1 skill en español, del Arsenal del Marketer.",
+      "description": "Datos e IA · Agentes y chatbots: 6 comandos /, 4 skills, 3 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "datos-ia",
       "keywords": [
@@ -87,9 +109,53 @@
       ]
     },
     {
-      "name": "arsenal-datos-ia-datos",
-      "source": "./plugins/datos-ia-datos",
-      "description": "Datos e IA · Datos y documentos: 11 comandos /, 6 subagentes, 6 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-datos-ia-alternativas",
+      "source": "./plugins/datos-ia-alternativas",
+      "description": "Datos e IA · Alternativas: 10 comandos /, 4 subagentes, 4 skills en español que se parecen a otras piezas de datos e ia; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "datos-ia",
+      "keywords": [
+        "español",
+        "datos-ia"
+      ]
+    },
+    {
+      "name": "arsenal-datos-ia-automatizacion",
+      "source": "./plugins/datos-ia-automatizacion",
+      "description": "Datos e IA · Automatizar con IA: 4 comandos /, 2 subagentes en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "datos-ia",
+      "keywords": [
+        "español",
+        "datos-ia"
+      ]
+    },
+    {
+      "name": "arsenal-datos-ia-calidad-ia",
+      "source": "./plugins/datos-ia-calidad-ia",
+      "description": "Datos e IA · Calidad y seguridad de la IA: 3 subagentes, 3 comandos / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "datos-ia",
+      "keywords": [
+        "español",
+        "datos-ia"
+      ]
+    },
+    {
+      "name": "arsenal-datos-ia-extraer-cv",
+      "source": "./plugins/datos-ia-extraer-cv",
+      "description": "Datos e IA · Extraer datos de currículums: 3 comandos /, 3 subagentes en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "datos-ia",
+      "keywords": [
+        "español",
+        "datos-ia"
+      ]
+    },
+    {
+      "name": "arsenal-datos-ia-pruebas-ia",
+      "source": "./plugins/datos-ia-pruebas-ia",
+      "description": "Datos e IA · Pruebas y evaluación de la IA: 3 subagentes, 1 comando /, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "datos-ia",
       "keywords": [
@@ -100,7 +166,7 @@
     {
       "name": "arsenal-datos-ia-varios",
       "source": "./plugins/datos-ia-varios",
-      "description": "Datos e IA · Más de datos e ia: 5 subagentes, 5 comandos /, 1 skill en español, del Arsenal del Marketer.",
+      "description": "Datos e IA · Más de datos e ia: 5 skills, 3 comandos /, 1 subagente en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "datos-ia",
       "keywords": [
@@ -109,9 +175,31 @@
       ]
     },
     {
+      "name": "arsenal-diseno-alternativas",
+      "source": "./plugins/diseno-alternativas",
+      "description": "Diseño · Alternativas: 3 comandos /, 2 skills en español que se parecen a otras piezas de diseño; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "diseno",
+      "keywords": [
+        "español",
+        "diseno"
+      ]
+    },
+    {
       "name": "arsenal-diseno-impresion",
       "source": "./plugins/diseno-impresion",
-      "description": "Diseño · Impresión y producto: 3 subagentes, 3 comandos /, 1 skill en español, del Arsenal del Marketer.",
+      "description": "Diseño · Impresión y producto: 3 subagentes, 2 comandos / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "diseno",
+      "keywords": [
+        "español",
+        "diseno"
+      ]
+    },
+    {
+      "name": "arsenal-diseno-interfaz",
+      "source": "./plugins/diseno-interfaz",
+      "description": "Diseño · Interfaces de web y app: 4 subagentes, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "diseno",
       "keywords": [
@@ -122,7 +210,7 @@
     {
       "name": "arsenal-diseno-marca",
       "source": "./plugins/diseno-marca",
-      "description": "Diseño · Marca y sistema visual: 12 subagentes, 9 comandos /, 4 skills en español, del Arsenal del Marketer.",
+      "description": "Diseño · Marca y sistema visual: 9 subagentes, 8 comandos /, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "diseno",
       "keywords": [
@@ -133,7 +221,7 @@
     {
       "name": "arsenal-diseno-varios",
       "source": "./plugins/diseno-varios",
-      "description": "Diseño · Más de diseño: 8 subagentes, 3 comandos /, 2 skills en español, del Arsenal del Marketer.",
+      "description": "Diseño · Más de diseño: 3 comandos /, 1 subagente, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "diseno",
       "keywords": [
@@ -142,9 +230,9 @@
       ]
     },
     {
-      "name": "arsenal-documentos",
-      "source": "./plugins/documentos",
-      "description": "Documentos: 25 subagentes, 4 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-documentos-datos-hojas",
+      "source": "./plugins/documentos-datos-hojas",
+      "description": "Documentos · Datos, facturas y hojas de cálculo: 6 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "documentos",
       "keywords": [
@@ -153,9 +241,53 @@
       ]
     },
     {
-      "name": "arsenal-ecommerce",
-      "source": "./plugins/ecommerce",
-      "description": "Tienda por internet: 8 skills, 7 comandos /, 5 subagentes en español, del Arsenal del Marketer.",
+      "name": "arsenal-documentos-informes",
+      "source": "./plugins/documentos-informes",
+      "description": "Documentos · Informes, plantillas y presentaciones: 4 subagentes, 1 skill en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "documentos",
+      "keywords": [
+        "español",
+        "documentos"
+      ]
+    },
+    {
+      "name": "arsenal-documentos-pdf-archivo",
+      "source": "./plugins/documentos-pdf-archivo",
+      "description": "Documentos · Escaneos, PDF y archivo: 6 subagentes en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "documentos",
+      "keywords": [
+        "español",
+        "documentos"
+      ]
+    },
+    {
+      "name": "arsenal-documentos-revision-docs",
+      "source": "./plugins/documentos-revision-docs",
+      "description": "Documentos · Revisar y comparar documentos: 5 subagentes en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "documentos",
+      "keywords": [
+        "español",
+        "documentos"
+      ]
+    },
+    {
+      "name": "arsenal-documentos-varios",
+      "source": "./plugins/documentos-varios",
+      "description": "Documentos · Más de documentos: 5 skills, 1 subagente en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "documentos",
+      "keywords": [
+        "español",
+        "documentos"
+      ]
+    },
+    {
+      "name": "arsenal-ecommerce-alternativas",
+      "source": "./plugins/ecommerce-alternativas",
+      "description": "Tienda por internet · Alternativas: 3 skills, 2 comandos /, 1 subagente en español que se parecen a otras piezas de tienda por internet; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "ecommerce",
       "keywords": [
@@ -164,9 +296,97 @@
       ]
     },
     {
+      "name": "arsenal-ecommerce-legal",
+      "source": "./plugins/ecommerce-legal",
+      "description": "Tienda por internet · Textos legales y devoluciones: 4 skills, 1 comando / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "ecommerce",
+      "keywords": [
+        "español",
+        "ecommerce"
+      ]
+    },
+    {
+      "name": "arsenal-ecommerce-optimizacion",
+      "source": "./plugins/ecommerce-optimizacion",
+      "description": "Tienda por internet · Optimizar y vender más en la tienda: 6 skills, 2 subagentes, 1 comando / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "ecommerce",
+      "keywords": [
+        "español",
+        "ecommerce"
+      ]
+    },
+    {
+      "name": "arsenal-ecommerce-plataformas",
+      "source": "./plugins/ecommerce-plataformas",
+      "description": "Tienda por internet · Plataformas y herramientas de tienda: 6 skills, 1 subagente en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "ecommerce",
+      "keywords": [
+        "español",
+        "ecommerce"
+      ]
+    },
+    {
+      "name": "arsenal-ecommerce-sin-cuota",
+      "source": "./plugins/ecommerce-sin-cuota",
+      "description": "Tienda por internet · Tienda sin cuota mensual: 3 subagentes, 2 comandos /, 1 skill en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "ecommerce",
+      "keywords": [
+        "español",
+        "ecommerce"
+      ]
+    },
+    {
+      "name": "arsenal-ecommerce-varios",
+      "source": "./plugins/ecommerce-varios",
+      "description": "Tienda por internet · Más de tienda por internet: 5 skills, 1 comando / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "ecommerce",
+      "keywords": [
+        "español",
+        "ecommerce"
+      ]
+    },
+    {
+      "name": "arsenal-educacion-alternativas-1",
+      "source": "./plugins/educacion-alternativas-1",
+      "description": "Formación · Alternativas (1): 23 comandos /, 7 skills en español que se parecen a otras piezas de formación; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "educacion",
+      "keywords": [
+        "español",
+        "educacion"
+      ]
+    },
+    {
+      "name": "arsenal-educacion-alternativas-2",
+      "source": "./plugins/educacion-alternativas-2",
+      "description": "Formación · Alternativas (2): 13 skills, 3 subagentes en español que se parecen a otras piezas de formación; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "educacion",
+      "keywords": [
+        "español",
+        "educacion"
+      ]
+    },
+    {
+      "name": "arsenal-educacion-alternativas-3",
+      "source": "./plugins/educacion-alternativas-3",
+      "description": "Formación · Alternativas (3): 17 subagentes en español que se parecen a otras piezas de formación; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "educacion",
+      "keywords": [
+        "español",
+        "educacion"
+      ]
+    },
+    {
       "name": "arsenal-educacion-alumnos",
       "source": "./plugins/educacion-alumnos",
-      "description": "Formación · Alumnos y seguimiento: 10 skills, 8 comandos /, 7 subagentes en español, del Arsenal del Marketer.",
+      "description": "Formación · Alumnos y seguimiento: 4 subagentes, 3 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "educacion",
       "keywords": [
@@ -175,20 +395,9 @@
       ]
     },
     {
-      "name": "arsenal-educacion-cursos-1",
-      "source": "./plugins/educacion-cursos-1",
-      "description": "Formación · Cursos y materiales (1): 19 comandos /, 13 skills en español, del Arsenal del Marketer.",
-      "version": "1.0.0",
-      "category": "educacion",
-      "keywords": [
-        "español",
-        "educacion"
-      ]
-    },
-    {
-      "name": "arsenal-educacion-cursos-2",
-      "source": "./plugins/educacion-cursos-2",
-      "description": "Formación · Cursos y materiales (2): 18 subagentes, 4 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-educacion-cursos",
+      "source": "./plugins/educacion-cursos",
+      "description": "Formación · Cursos y materiales: 9 subagentes, 7 skills, 7 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "educacion",
       "keywords": [
@@ -199,7 +408,7 @@
     {
       "name": "arsenal-educacion-evaluacion",
       "source": "./plugins/educacion-evaluacion",
-      "description": "Formación · Evaluación y corrección: 10 comandos /, 9 skills, 9 subagentes en español, del Arsenal del Marketer.",
+      "description": "Formación · Evaluación y corrección: 4 subagentes, 4 comandos /, 3 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "educacion",
       "keywords": [
@@ -210,7 +419,7 @@
     {
       "name": "arsenal-educacion-negocio",
       "source": "./plugins/educacion-negocio",
-      "description": "Formación · Vender formación: 3 skills, 1 comando / en español, del Arsenal del Marketer.",
+      "description": "Formación · Vender formación: 4 skills, 3 comandos /, 1 subagente en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "educacion",
       "keywords": [
@@ -221,7 +430,7 @@
     {
       "name": "arsenal-educacion-varios",
       "source": "./plugins/educacion-varios",
-      "description": "Formación · Más de formación: 5 skills, 4 subagentes en español, del Arsenal del Marketer.",
+      "description": "Formación · Más de formación: 7 skills, 3 subagentes, 1 comando / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "educacion",
       "keywords": [
@@ -230,9 +439,9 @@
       ]
     },
     {
-      "name": "arsenal-empleo-cv-1",
-      "source": "./plugins/empleo-cv-1",
-      "description": "Empleo y currículum · Currículum y candidaturas (1): 22 comandos /, 5 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-empleo-alternativas",
+      "source": "./plugins/empleo-alternativas",
+      "description": "Empleo y currículum · Alternativas: 11 comandos /, 6 skills, 3 subagentes en español que se parecen a otras piezas de empleo y currículum; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "empleo",
       "keywords": [
@@ -241,9 +450,20 @@
       ]
     },
     {
-      "name": "arsenal-empleo-cv-2",
-      "source": "./plugins/empleo-cv-2",
-      "description": "Empleo y currículum · Currículum y candidaturas (2): 14 skills, 9 subagentes en español, del Arsenal del Marketer.",
+      "name": "arsenal-empleo-busqueda",
+      "source": "./plugins/empleo-busqueda",
+      "description": "Empleo y currículum · Búsqueda y candidaturas: 5 comandos /, 4 skills, 3 subagentes en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "empleo",
+      "keywords": [
+        "español",
+        "empleo"
+      ]
+    },
+    {
+      "name": "arsenal-empleo-cv",
+      "source": "./plugins/empleo-cv",
+      "description": "Empleo y currículum · Currículum y candidaturas: 6 skills, 3 subagentes, 3 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "empleo",
       "keywords": [
@@ -254,7 +474,18 @@
     {
       "name": "arsenal-empleo-entrevistas",
       "source": "./plugins/empleo-entrevistas",
-      "description": "Empleo y currículum · Entrevistas y sueldo: 4 comandos /, 3 subagentes, 2 skills en español, del Arsenal del Marketer.",
+      "description": "Empleo y currículum · Entrevistas y sueldo: 3 comandos /, 2 subagentes, 1 skill en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "empleo",
+      "keywords": [
+        "español",
+        "empleo"
+      ]
+    },
+    {
+      "name": "arsenal-empleo-portfolio",
+      "source": "./plugins/empleo-portfolio",
+      "description": "Empleo y currículum · Portfolio, web y perfiles online: 4 comandos /, 4 skills, 1 subagente en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "empleo",
       "keywords": [
@@ -265,7 +496,7 @@
     {
       "name": "arsenal-empleo-varios",
       "source": "./plugins/empleo-varios",
-      "description": "Empleo y currículum · Más de empleo y currículum: 3 comandos /, 2 skills en español, del Arsenal del Marketer.",
+      "description": "Empleo y currículum · Más de empleo y currículum: 5 subagentes, 3 comandos /, 2 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "empleo",
       "keywords": [
@@ -274,9 +505,9 @@
       ]
     },
     {
-      "name": "arsenal-finanzas-cobros",
-      "source": "./plugins/finanzas-cobros",
-      "description": "Finanzas · Facturas y cobros: 18 comandos /, 7 subagentes, 3 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-finanzas-alternativas-1",
+      "source": "./plugins/finanzas-alternativas-1",
+      "description": "Finanzas · Alternativas (1): 19 comandos /, 6 skills, 4 subagentes en español que se parecen a otras piezas de finanzas; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "finanzas",
       "keywords": [
@@ -285,9 +516,20 @@
       ]
     },
     {
-      "name": "arsenal-finanzas-gastos",
-      "source": "./plugins/finanzas-gastos",
-      "description": "Finanzas · Gastos y precios: 12 comandos /, 11 subagentes, 1 skill en español, del Arsenal del Marketer.",
+      "name": "arsenal-finanzas-alternativas-2",
+      "source": "./plugins/finanzas-alternativas-2",
+      "description": "Finanzas · Alternativas (2): 16 subagentes en español que se parecen a otras piezas de finanzas; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "finanzas",
+      "keywords": [
+        "español",
+        "finanzas"
+      ]
+    },
+    {
+      "name": "arsenal-finanzas-cobros",
+      "source": "./plugins/finanzas-cobros",
+      "description": "Finanzas · Facturas y cobros: 4 subagentes, 3 comandos /, 3 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "finanzas",
       "keywords": [
@@ -298,7 +540,29 @@
     {
       "name": "arsenal-finanzas-impuestos",
       "source": "./plugins/finanzas-impuestos",
-      "description": "Finanzas · Impuestos: 7 subagentes, 5 skills, 4 comandos / en español, del Arsenal del Marketer.",
+      "description": "Finanzas · Impuestos: 4 comandos /, 2 subagentes en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "finanzas",
+      "keywords": [
+        "español",
+        "finanzas"
+      ]
+    },
+    {
+      "name": "arsenal-finanzas-personales",
+      "source": "./plugins/finanzas-personales",
+      "description": "Finanzas · Finanzas personales e inversión: 5 subagentes, 1 skill en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "finanzas",
+      "keywords": [
+        "español",
+        "finanzas"
+      ]
+    },
+    {
+      "name": "arsenal-finanzas-rentabilidad",
+      "source": "./plugins/finanzas-rentabilidad",
+      "description": "Finanzas · Rentabilidad y costes: 3 subagentes, 3 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "finanzas",
       "keywords": [
@@ -309,7 +573,7 @@
     {
       "name": "arsenal-finanzas-varios",
       "source": "./plugins/finanzas-varios",
-      "description": "Finanzas · Más de finanzas: 10 subagentes, 7 comandos / en español, del Arsenal del Marketer.",
+      "description": "Finanzas · Más de finanzas: 4 subagentes, 4 comandos /, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "finanzas",
       "keywords": [
@@ -318,9 +582,31 @@
       ]
     },
     {
+      "name": "arsenal-foto-alternativas-1",
+      "source": "./plugins/foto-alternativas-1",
+      "description": "Foto e imagen · Alternativas (1): 16 comandos /, 7 skills, 1 subagente en español que se parecen a otras piezas de foto e imagen; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "foto",
+      "keywords": [
+        "español",
+        "foto"
+      ]
+    },
+    {
+      "name": "arsenal-foto-alternativas-2",
+      "source": "./plugins/foto-alternativas-2",
+      "description": "Foto e imagen · Alternativas (2): 12 subagentes en español que se parecen a otras piezas de foto e imagen; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "foto",
+      "keywords": [
+        "español",
+        "foto"
+      ]
+    },
+    {
       "name": "arsenal-foto-archivos",
       "source": "./plugins/foto-archivos",
-      "description": "Foto e imagen · Archivos y publicación: 6 comandos /, 4 subagentes, 1 skill en español, del Arsenal del Marketer.",
+      "description": "Foto e imagen · Archivos y publicación: 7 subagentes, 1 comando / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "foto",
       "keywords": [
@@ -329,9 +615,9 @@
       ]
     },
     {
-      "name": "arsenal-foto-ia-1",
-      "source": "./plugins/foto-ia-1",
-      "description": "Foto e imagen · Imágenes con IA (1): 21 comandos /, 9 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-foto-estilo",
+      "source": "./plugins/foto-estilo",
+      "description": "Foto e imagen · Estilo visual de marca: 3 subagentes, 1 skill, 1 comando / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "foto",
       "keywords": [
@@ -340,9 +626,20 @@
       ]
     },
     {
-      "name": "arsenal-foto-ia-2",
-      "source": "./plugins/foto-ia-2",
-      "description": "Foto e imagen · Imágenes con IA (2): 14 subagentes, 3 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-foto-ia",
+      "source": "./plugins/foto-ia",
+      "description": "Foto e imagen · Imágenes con IA: 5 comandos /, 2 skills, 2 subagentes en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "foto",
+      "keywords": [
+        "español",
+        "foto"
+      ]
+    },
+    {
+      "name": "arsenal-foto-marketplace",
+      "source": "./plugins/foto-marketplace",
+      "description": "Foto e imagen · Fotos para marketplaces: 3 comandos /, 2 subagentes, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "foto",
       "keywords": [
@@ -353,7 +650,7 @@
     {
       "name": "arsenal-foto-producto",
       "source": "./plugins/foto-producto",
-      "description": "Foto e imagen · Fotos de producto: 10 subagentes, 9 comandos /, 4 skills en español, del Arsenal del Marketer.",
+      "description": "Foto e imagen · Fotos de producto: 3 comandos /, 2 skills, 2 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "foto",
       "keywords": [
@@ -364,7 +661,18 @@
     {
       "name": "arsenal-foto-retrato",
       "source": "./plugins/foto-retrato",
-      "description": "Foto e imagen · Retrato y marca: 7 comandos /, 2 skills, 2 subagentes en español, del Arsenal del Marketer.",
+      "description": "Foto e imagen · Retrato y marca: 5 comandos /, 1 skill en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "foto",
+      "keywords": [
+        "español",
+        "foto"
+      ]
+    },
+    {
+      "name": "arsenal-foto-revision",
+      "source": "./plugins/foto-revision",
+      "description": "Foto e imagen · Revisar calidad antes de publicar: 2 subagentes, 2 comandos /, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "foto",
       "keywords": [
@@ -375,7 +683,18 @@
     {
       "name": "arsenal-foto-varios",
       "source": "./plugins/foto-varios",
-      "description": "Foto e imagen · Más de foto e imagen: 9 subagentes, 5 skills, 3 comandos / en español, del Arsenal del Marketer.",
+      "description": "Foto e imagen · Más de foto e imagen: 7 skills, 7 comandos /, 6 subagentes en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "foto",
+      "keywords": [
+        "español",
+        "foto"
+      ]
+    },
+    {
+      "name": "arsenal-foto-web-imagenes",
+      "source": "./plugins/foto-web-imagenes",
+      "description": "Foto e imagen · Imágenes para la web y SEO: 3 subagentes, 3 comandos /, 2 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "foto",
       "keywords": [
@@ -395,9 +714,9 @@
       ]
     },
     {
-      "name": "arsenal-iot-domotica-1",
-      "source": "./plugins/iot-domotica-1",
-      "description": "IoT y hardware · Domótica (1): 15 skills, 9 comandos / en español, del Arsenal del Marketer.",
+      "name": "arsenal-iot-alternativas-1",
+      "source": "./plugins/iot-alternativas-1",
+      "description": "IoT y hardware · Alternativas (1): 16 comandos /, 9 skills en español que se parecen a otras piezas de iot y hardware; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "iot",
       "keywords": [
@@ -406,9 +725,53 @@
       ]
     },
     {
-      "name": "arsenal-iot-domotica-2",
-      "source": "./plugins/iot-domotica-2",
-      "description": "IoT y hardware · Domótica (2): 16 subagentes, 3 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-iot-alternativas-2",
+      "source": "./plugins/iot-alternativas-2",
+      "description": "IoT y hardware · Alternativas (2): 9 subagentes, 6 skills en español que se parecen a otras piezas de iot y hardware; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "iot",
+      "keywords": [
+        "español",
+        "iot"
+      ]
+    },
+    {
+      "name": "arsenal-iot-alternativas-3",
+      "source": "./plugins/iot-alternativas-3",
+      "description": "IoT y hardware · Alternativas (3): 14 subagentes en español que se parecen a otras piezas de iot y hardware; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "iot",
+      "keywords": [
+        "español",
+        "iot"
+      ]
+    },
+    {
+      "name": "arsenal-iot-domotica",
+      "source": "./plugins/iot-domotica",
+      "description": "IoT y hardware · Domótica: 3 skills, 2 subagentes, 2 comandos / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "iot",
+      "keywords": [
+        "español",
+        "iot"
+      ]
+    },
+    {
+      "name": "arsenal-iot-electronica",
+      "source": "./plugins/iot-electronica",
+      "description": "IoT y hardware · Electrónica, firmware y montaje: 6 subagentes, 3 comandos /, 2 skills en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "iot",
+      "keywords": [
+        "español",
+        "iot"
+      ]
+    },
+    {
+      "name": "arsenal-iot-energia",
+      "source": "./plugins/iot-energia",
+      "description": "IoT y hardware · Energía, baterías y consumo: 3 skills, 2 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "iot",
       "keywords": [
@@ -419,7 +782,7 @@
     {
       "name": "arsenal-iot-instalaciones",
       "source": "./plugins/iot-instalaciones",
-      "description": "IoT y hardware · Instalaciones para clientes: 12 comandos /, 6 subagentes, 3 skills en español, del Arsenal del Marketer.",
+      "description": "IoT y hardware · Instalaciones para clientes: 5 comandos /, 2 skills, 2 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "iot",
       "keywords": [
@@ -428,9 +791,9 @@
       ]
     },
     {
-      "name": "arsenal-iot-sensores-1",
-      "source": "./plugins/iot-sensores-1",
-      "description": "IoT y hardware · Sensores y cámaras (1): 11 skills, 8 comandos / en español, del Arsenal del Marketer.",
+      "name": "arsenal-iot-proyectos",
+      "source": "./plugins/iot-proyectos",
+      "description": "IoT y hardware · Proyectos caseros con ESP32: 4 skills, 2 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "iot",
       "keywords": [
@@ -439,9 +802,9 @@
       ]
     },
     {
-      "name": "arsenal-iot-sensores-2",
-      "source": "./plugins/iot-sensores-2",
-      "description": "IoT y hardware · Sensores y cámaras (2): 10 subagentes, 3 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-iot-red",
+      "source": "./plugins/iot-red",
+      "description": "IoT y hardware · Redes y conectividad IoT: 4 skills, 3 comandos /, 1 subagente en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "iot",
       "keywords": [
@@ -450,9 +813,9 @@
       ]
     },
     {
-      "name": "arsenal-iot-varios",
-      "source": "./plugins/iot-varios",
-      "description": "IoT y hardware · Más de iot y hardware: 5 subagentes, 4 comandos /, 3 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-iot-sensores",
+      "source": "./plugins/iot-sensores",
+      "description": "IoT y hardware · Sensores y cámaras: 5 skills, 2 comandos /, 1 subagente en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "iot",
       "keywords": [
@@ -461,9 +824,9 @@
       ]
     },
     {
-      "name": "arsenal-juegos-assets-1",
-      "source": "./plugins/juegos-assets-1",
-      "description": "Videojuegos y 3D · Modelos, texturas y assets (1): 13 comandos /, 11 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-juegos-alternativas-1",
+      "source": "./plugins/juegos-alternativas-1",
+      "description": "Videojuegos y 3D · Alternativas (1): 28 comandos /, 5 skills en español que se parecen a otras piezas de videojuegos y 3d; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "juegos",
       "keywords": [
@@ -472,9 +835,31 @@
       ]
     },
     {
-      "name": "arsenal-juegos-assets-2",
-      "source": "./plugins/juegos-assets-2",
-      "description": "Videojuegos y 3D · Modelos, texturas y assets (2): 10 subagentes, 7 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-juegos-alternativas-2",
+      "source": "./plugins/juegos-alternativas-2",
+      "description": "Videojuegos y 3D · Alternativas (2): 14 skills, 6 subagentes en español que se parecen a otras piezas de videojuegos y 3d; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "juegos",
+      "keywords": [
+        "español",
+        "juegos"
+      ]
+    },
+    {
+      "name": "arsenal-juegos-alternativas-3",
+      "source": "./plugins/juegos-alternativas-3",
+      "description": "Videojuegos y 3D · Alternativas (3): 19 subagentes en español que se parecen a otras piezas de videojuegos y 3d; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "juegos",
+      "keywords": [
+        "español",
+        "juegos"
+      ]
+    },
+    {
+      "name": "arsenal-juegos-assets",
+      "source": "./plugins/juegos-assets",
+      "description": "Videojuegos y 3D · Modelos, texturas y assets: 9 skills, 3 subagentes, 2 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "juegos",
       "keywords": [
@@ -485,7 +870,7 @@
     {
       "name": "arsenal-juegos-desarrollo",
       "source": "./plugins/juegos-desarrollo",
-      "description": "Videojuegos y 3D · Desarrollo y pruebas: 7 comandos /, 4 skills, 2 subagentes en español, del Arsenal del Marketer.",
+      "description": "Videojuegos y 3D · Desarrollo y pruebas: 6 subagentes, 5 skills, 4 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "juegos",
       "keywords": [
@@ -494,31 +879,9 @@
       ]
     },
     {
-      "name": "arsenal-juegos-encargos",
-      "source": "./plugins/juegos-encargos",
-      "description": "Videojuegos y 3D · Encargos para clientes: 3 subagentes, 3 comandos /, 2 skills en español, del Arsenal del Marketer.",
-      "version": "1.0.0",
-      "category": "juegos",
-      "keywords": [
-        "español",
-        "juegos"
-      ]
-    },
-    {
-      "name": "arsenal-juegos-varios-1",
-      "source": "./plugins/juegos-varios-1",
-      "description": "Videojuegos y 3D · Más de videojuegos y 3d (1): 16 skills, 3 comandos / en español, del Arsenal del Marketer.",
-      "version": "1.0.0",
-      "category": "juegos",
-      "keywords": [
-        "español",
-        "juegos"
-      ]
-    },
-    {
-      "name": "arsenal-juegos-varios-2",
-      "source": "./plugins/juegos-varios-2",
-      "description": "Videojuegos y 3D · Más de videojuegos y 3d (2): 17 subagentes, 1 skill en español, del Arsenal del Marketer.",
+      "name": "arsenal-juegos-varios",
+      "source": "./plugins/juegos-varios",
+      "description": "Videojuegos y 3D · Más de videojuegos y 3d: 5 skills, 2 comandos /, 1 subagente en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "juegos",
       "keywords": [
@@ -529,7 +892,18 @@
     {
       "name": "arsenal-juegos-vender",
       "source": "./plugins/juegos-vender",
-      "description": "Videojuegos y 3D · Publicar y vender juegos: 14 comandos /, 8 subagentes, 3 skills en español, del Arsenal del Marketer.",
+      "description": "Videojuegos y 3D · Publicar y vender juegos: 3 skills, 3 subagentes, 3 comandos / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "juegos",
+      "keywords": [
+        "español",
+        "juegos"
+      ]
+    },
+    {
+      "name": "arsenal-juegos-visores-3d",
+      "source": "./plugins/juegos-visores-3d",
+      "description": "Videojuegos y 3D · Visores y configuradores 3D: 2 skills, 2 subagentes, 1 comando / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "juegos",
       "keywords": [
@@ -540,7 +914,7 @@
     {
       "name": "arsenal-legal",
       "source": "./plugins/legal",
-      "description": "Legal y contratos: 9 skills, 7 comandos /, 6 subagentes en español, del Arsenal del Marketer.",
+      "description": "Legal y contratos: 9 skills, 7 subagentes, 6 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "legal",
       "keywords": [
@@ -549,9 +923,20 @@
       ]
     },
     {
-      "name": "arsenal-marketing-campanas-1",
-      "source": "./plugins/marketing-campanas-1",
-      "description": "Marketing · Campañas y anuncios (1): 13 skills, 4 comandos / en español, del Arsenal del Marketer.",
+      "name": "arsenal-legal-alternativas",
+      "source": "./plugins/legal-alternativas",
+      "description": "Legal y contratos · Alternativas: 4 skills, 1 comando /, 1 subagente en español que se parecen a otras piezas de legal y contratos; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "legal",
+      "keywords": [
+        "español",
+        "legal"
+      ]
+    },
+    {
+      "name": "arsenal-marketing-alternativas",
+      "source": "./plugins/marketing-alternativas",
+      "description": "Marketing · Alternativas: 7 subagentes, 3 comandos /, 2 skills en español que se parecen a otras piezas de marketing; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "marketing",
       "keywords": [
@@ -560,9 +945,9 @@
       ]
     },
     {
-      "name": "arsenal-marketing-campanas-2",
-      "source": "./plugins/marketing-campanas-2",
-      "description": "Marketing · Campañas y anuncios (2): 9 subagentes, 6 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-marketing-campanas",
+      "source": "./plugins/marketing-campanas",
+      "description": "Marketing · Campañas y anuncios: 13 skills, 4 subagentes, 2 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "marketing",
       "keywords": [
@@ -573,7 +958,7 @@
     {
       "name": "arsenal-marketing-clientes",
       "source": "./plugins/marketing-clientes",
-      "description": "Marketing · Clientes y reseñas: 11 subagentes, 6 skills en español, del Arsenal del Marketer.",
+      "description": "Marketing · Clientes y reseñas: 8 subagentes, 2 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "marketing",
       "keywords": [
@@ -584,7 +969,29 @@
     {
       "name": "arsenal-marketing-contenido",
       "source": "./plugins/marketing-contenido",
-      "description": "Marketing · Contenido y redes: 10 subagentes, 5 skills, 2 comandos / en español, del Arsenal del Marketer.",
+      "description": "Marketing · Contenido y redes: 7 subagentes, 5 skills, 2 comandos / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "marketing",
+      "keywords": [
+        "español",
+        "marketing"
+      ]
+    },
+    {
+      "name": "arsenal-marketing-formularios",
+      "source": "./plugins/marketing-formularios",
+      "description": "Marketing · Formularios y encuestas: 6 skills en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "marketing",
+      "keywords": [
+        "español",
+        "marketing"
+      ]
+    },
+    {
+      "name": "arsenal-marketing-marca",
+      "source": "./plugins/marketing-marca",
+      "description": "Marketing · Marca y propuesta de valor: 12 subagentes, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "marketing",
       "keywords": [
@@ -595,7 +1002,7 @@
     {
       "name": "arsenal-marketing-medicion",
       "source": "./plugins/marketing-medicion",
-      "description": "Marketing · Medir y mejorar: 7 subagentes, 5 skills en español, del Arsenal del Marketer.",
+      "description": "Marketing · Medir y mejorar: 5 skills, 3 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "marketing",
       "keywords": [
@@ -606,7 +1013,7 @@
     {
       "name": "arsenal-marketing-mensajes",
       "source": "./plugins/marketing-mensajes",
-      "description": "Marketing · Email y mensajes: 18 skills, 7 subagentes, 2 comandos / en español, del Arsenal del Marketer.",
+      "description": "Marketing · Email y mensajes: 18 skills, 1 comando /, 1 subagente en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "marketing",
       "keywords": [
@@ -615,20 +1022,64 @@
       ]
     },
     {
-      "name": "arsenal-marketing-varios",
-      "source": "./plugins/marketing-varios",
-      "description": "Marketing · Más de marketing: 3 skills, 2 comandos / en español, del Arsenal del Marketer.",
+      "name": "arsenal-marketing-seo",
+      "source": "./plugins/marketing-seo",
+      "description": "Marketing · SEO y visibilidad en Google: 4 skills, 2 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "marketing",
       "keywords": [
         "español",
         "marketing"
+      ]
+    },
+    {
+      "name": "arsenal-movil-alternativas-1",
+      "source": "./plugins/movil-alternativas-1",
+      "description": "Móvil · Alternativas (1): 25 comandos /, 5 skills en español que se parecen a otras piezas de móvil; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "movil",
+      "keywords": [
+        "español",
+        "movil"
+      ]
+    },
+    {
+      "name": "arsenal-movil-alternativas-2",
+      "source": "./plugins/movil-alternativas-2",
+      "description": "Móvil · Alternativas (2): 8 subagentes, 7 skills en español que se parecen a otras piezas de móvil; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "movil",
+      "keywords": [
+        "español",
+        "movil"
+      ]
+    },
+    {
+      "name": "arsenal-movil-alternativas-3",
+      "source": "./plugins/movil-alternativas-3",
+      "description": "Móvil · Alternativas (3): 15 subagentes en español que se parecen a otras piezas de móvil; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "movil",
+      "keywords": [
+        "español",
+        "movil"
       ]
     },
     {
       "name": "arsenal-movil-calidad",
       "source": "./plugins/movil-calidad",
-      "description": "Móvil · Pruebas, permisos y privacidad: 6 skills, 6 subagentes, 4 comandos / en español, del Arsenal del Marketer.",
+      "description": "Móvil · Pruebas, permisos y privacidad: 3 skills, 2 subagentes, 2 comandos / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "movil",
+      "keywords": [
+        "español",
+        "movil"
+      ]
+    },
+    {
+      "name": "arsenal-movil-desarrollo",
+      "source": "./plugins/movil-desarrollo",
+      "description": "Móvil · Desarrollo de apps: 4 skills, 2 comandos /, 1 subagente en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "movil",
       "keywords": [
@@ -639,7 +1090,7 @@
     {
       "name": "arsenal-movil-experiencia",
       "source": "./plugins/movil-experiencia",
-      "description": "Móvil · Pantallas y experiencia: 11 comandos /, 10 skills, 9 subagentes en español, del Arsenal del Marketer.",
+      "description": "Móvil · Pantallas y experiencia: 3 subagentes, 1 comando /, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "movil",
       "keywords": [
@@ -648,9 +1099,9 @@
       ]
     },
     {
-      "name": "arsenal-movil-instalable",
-      "source": "./plugins/movil-instalable",
-      "description": "Móvil · Apps web instalables: 5 comandos /, 3 skills, 3 subagentes en español, del Arsenal del Marketer.",
+      "name": "arsenal-movil-mini-apps",
+      "source": "./plugins/movil-mini-apps",
+      "description": "Móvil · Mini-apps y juegos de un archivo: 3 skills, 2 comandos /, 1 subagente en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "movil",
       "keywords": [
@@ -659,20 +1110,9 @@
       ]
     },
     {
-      "name": "arsenal-movil-tiendas-1",
-      "source": "./plugins/movil-tiendas-1",
-      "description": "Móvil · Publicar en las tiendas (1): 13 skills, 13 comandos /, 2 subagentes en español, del Arsenal del Marketer.",
-      "version": "1.0.0",
-      "category": "movil",
-      "keywords": [
-        "español",
-        "movil"
-      ]
-    },
-    {
-      "name": "arsenal-movil-tiendas-2",
-      "source": "./plugins/movil-tiendas-2",
-      "description": "Móvil · Publicar en las tiendas (2): 20 subagentes en español, del Arsenal del Marketer.",
+      "name": "arsenal-movil-tiendas",
+      "source": "./plugins/movil-tiendas",
+      "description": "Móvil · Publicar en las tiendas: 4 subagentes, 3 skills, 1 comando / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "movil",
       "keywords": [
@@ -683,7 +1123,7 @@
     {
       "name": "arsenal-movil-varios",
       "source": "./plugins/movil-varios",
-      "description": "Móvil · Más de móvil: 7 comandos /, 3 skills, 2 subagentes en español, del Arsenal del Marketer.",
+      "description": "Móvil · Más de móvil: 6 skills, 5 subagentes, 2 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "movil",
       "keywords": [
@@ -692,9 +1132,42 @@
       ]
     },
     {
+      "name": "arsenal-movil-web-movil",
+      "source": "./plugins/movil-web-movil",
+      "description": "Móvil · Web y formularios en el móvil: 2 subagentes, 2 comandos /, 1 skill en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "movil",
+      "keywords": [
+        "español",
+        "movil"
+      ]
+    },
+    {
+      "name": "arsenal-negocio-alcance",
+      "source": "./plugins/negocio-alcance",
+      "description": "Negocio · Alcance y especificación de proyectos: 5 subagentes, 1 comando / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "negocio",
+      "keywords": [
+        "español",
+        "negocio"
+      ]
+    },
+    {
+      "name": "arsenal-negocio-alternativas",
+      "source": "./plugins/negocio-alternativas",
+      "description": "Negocio · Alternativas: 7 subagentes, 6 comandos /, 3 skills en español que se parecen a otras piezas de negocio; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "negocio",
+      "keywords": [
+        "español",
+        "negocio"
+      ]
+    },
+    {
       "name": "arsenal-negocio-clientes",
       "source": "./plugins/negocio-clientes",
-      "description": "Negocio · Clientes y atención: 3 subagentes, 3 skills en español, del Arsenal del Marketer.",
+      "description": "Negocio · Clientes y atención: 10 skills, 8 subagentes, 3 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "negocio",
       "keywords": [
@@ -703,9 +1176,9 @@
       ]
     },
     {
-      "name": "arsenal-negocio-cobros-1",
-      "source": "./plugins/negocio-cobros-1",
-      "description": "Negocio · Cobros y facturas (1): 20 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-negocio-cobros",
+      "source": "./plugins/negocio-cobros",
+      "description": "Negocio · Cobros y facturas: 8 skills, 2 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "negocio",
       "keywords": [
@@ -714,42 +1187,9 @@
       ]
     },
     {
-      "name": "arsenal-negocio-cobros-2",
-      "source": "./plugins/negocio-cobros-2",
-      "description": "Negocio · Cobros y facturas (2): 19 subagentes, 2 skills en español, del Arsenal del Marketer.",
-      "version": "1.0.0",
-      "category": "negocio",
-      "keywords": [
-        "español",
-        "negocio"
-      ]
-    },
-    {
-      "name": "arsenal-negocio-estrategia-1",
-      "source": "./plugins/negocio-estrategia-1",
-      "description": "Negocio · Plan y estrategia (1): 19 skills, 3 comandos / en español, del Arsenal del Marketer.",
-      "version": "1.0.0",
-      "category": "negocio",
-      "keywords": [
-        "español",
-        "negocio"
-      ]
-    },
-    {
-      "name": "arsenal-negocio-estrategia-2",
-      "source": "./plugins/negocio-estrategia-2",
-      "description": "Negocio · Plan y estrategia (2): 17 subagentes, 4 skills en español, del Arsenal del Marketer.",
-      "version": "1.0.0",
-      "category": "negocio",
-      "keywords": [
-        "español",
-        "negocio"
-      ]
-    },
-    {
-      "name": "arsenal-negocio-estrategia-3",
-      "source": "./plugins/negocio-estrategia-3",
-      "description": "Negocio · Plan y estrategia (3): 22 subagentes en español, del Arsenal del Marketer.",
+      "name": "arsenal-negocio-estrategia",
+      "source": "./plugins/negocio-estrategia",
+      "description": "Negocio · Plan y estrategia: 8 subagentes, 2 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "negocio",
       "keywords": [
@@ -760,7 +1200,18 @@
     {
       "name": "arsenal-negocio-operaciones",
       "source": "./plugins/negocio-operaciones",
-      "description": "Negocio · Operaciones y equipo: 4 subagentes, 2 skills en español, del Arsenal del Marketer.",
+      "description": "Negocio · Operaciones y equipo: 7 subagentes, 6 skills en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "negocio",
+      "keywords": [
+        "español",
+        "negocio"
+      ]
+    },
+    {
+      "name": "arsenal-negocio-pasarelas",
+      "source": "./plugins/negocio-pasarelas",
+      "description": "Negocio · Pasarelas y medios de pago: 4 subagentes, 4 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "negocio",
       "keywords": [
@@ -771,7 +1222,40 @@
     {
       "name": "arsenal-negocio-precios",
       "source": "./plugins/negocio-precios",
-      "description": "Negocio · Precios y oferta: 10 subagentes, 4 skills, 1 comando / en español, del Arsenal del Marketer.",
+      "description": "Negocio · Precios y oferta: 6 subagentes, 6 skills, 5 comandos / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "negocio",
+      "keywords": [
+        "español",
+        "negocio"
+      ]
+    },
+    {
+      "name": "arsenal-negocio-revisar-plan",
+      "source": "./plugins/negocio-revisar-plan",
+      "description": "Negocio · Revisar un plan y decidir mejor: 9 skills, 3 subagentes en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "negocio",
+      "keywords": [
+        "español",
+        "negocio"
+      ]
+    },
+    {
+      "name": "arsenal-negocio-software",
+      "source": "./plugins/negocio-software",
+      "description": "Negocio · Vender software y SaaS: 12 subagentes, 1 skill en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "negocio",
+      "keywords": [
+        "español",
+        "negocio"
+      ]
+    },
+    {
+      "name": "arsenal-negocio-validacion",
+      "source": "./plugins/negocio-validacion",
+      "description": "Negocio · Validar ideas y mercado: 3 skills, 3 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "negocio",
       "keywords": [
@@ -782,7 +1266,18 @@
     {
       "name": "arsenal-negocio-varios",
       "source": "./plugins/negocio-varios",
-      "description": "Negocio · Más de negocio: 5 subagentes, 2 skills en español, del Arsenal del Marketer.",
+      "description": "Negocio · Más de negocio: 3 skills, 1 comando / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "negocio",
+      "keywords": [
+        "español",
+        "negocio"
+      ]
+    },
+    {
+      "name": "arsenal-negocio-vida-personal",
+      "source": "./plugins/negocio-vida-personal",
+      "description": "Negocio · Vida personal, trabajo y comunidad: 10 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "negocio",
       "keywords": [
@@ -793,7 +1288,7 @@
     {
       "name": "arsenal-productividad",
       "source": "./plugins/productividad",
-      "description": "Productividad: 1 skill, 1 subagente en español, del Arsenal del Marketer.",
+      "description": "Productividad: 7 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "productividad",
       "keywords": [
@@ -804,7 +1299,7 @@
     {
       "name": "arsenal-programacion",
       "source": "./plugins/programacion",
-      "description": "Programación: 1 skill, 1 subagente en español, del Arsenal del Marketer.",
+      "description": "Programación: 3 skills, 1 subagente en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "programacion",
       "keywords": [
@@ -813,9 +1308,9 @@
       ]
     },
     {
-      "name": "arsenal-salud-agenda-1",
-      "source": "./plugins/salud-agenda-1",
-      "description": "Salud y deporte · Agenda y pacientes (1): 14 comandos /, 8 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-salud-agenda",
+      "source": "./plugins/salud-agenda",
+      "description": "Salud y deporte · Agenda y pacientes: 7 skills, 5 comandos /, 3 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "salud",
       "keywords": [
@@ -824,9 +1319,9 @@
       ]
     },
     {
-      "name": "arsenal-salud-agenda-2",
-      "source": "./plugins/salud-agenda-2",
-      "description": "Salud y deporte · Agenda y pacientes (2): 10 subagentes, 3 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-salud-alternativas-1",
+      "source": "./plugins/salud-alternativas-1",
+      "description": "Salud y deporte · Alternativas (1): 22 comandos /, 12 skills en español que se parecen a otras piezas de salud y deporte; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "salud",
       "keywords": [
@@ -835,9 +1330,9 @@
       ]
     },
     {
-      "name": "arsenal-salud-centro-1",
-      "source": "./plugins/salud-centro-1",
-      "description": "Salud y deporte · Gestión del centro (1): 12 comandos /, 7 skills, 1 subagente en español, del Arsenal del Marketer.",
+      "name": "arsenal-salud-alternativas-2",
+      "source": "./plugins/salud-alternativas-2",
+      "description": "Salud y deporte · Alternativas (2): 20 subagentes en español que se parecen a otras piezas de salud y deporte; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "salud",
       "keywords": [
@@ -846,9 +1341,9 @@
       ]
     },
     {
-      "name": "arsenal-salud-centro-2",
-      "source": "./plugins/salud-centro-2",
-      "description": "Salud y deporte · Gestión del centro (2): 13 subagentes en español, del Arsenal del Marketer.",
+      "name": "arsenal-salud-centro",
+      "source": "./plugins/salud-centro",
+      "description": "Salud y deporte · Gestión del centro: 3 subagentes, 2 skills, 2 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "salud",
       "keywords": [
@@ -859,7 +1354,29 @@
     {
       "name": "arsenal-salud-comunicacion",
       "source": "./plugins/salud-comunicacion",
-      "description": "Salud y deporte · Comunicación con pacientes: 6 comandos /, 1 subagente en español, del Arsenal del Marketer.",
+      "description": "Salud y deporte · Comunicación con pacientes: 4 subagentes, 3 skills, 2 comandos / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "salud",
+      "keywords": [
+        "español",
+        "salud"
+      ]
+    },
+    {
+      "name": "arsenal-salud-datos",
+      "source": "./plugins/salud-datos",
+      "description": "Salud y deporte · Datos, consentimientos y RGPD: 2 skills, 2 comandos /, 1 subagente en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "salud",
+      "keywords": [
+        "español",
+        "salud"
+      ]
+    },
+    {
+      "name": "arsenal-salud-entrenamiento",
+      "source": "./plugins/salud-entrenamiento",
+      "description": "Salud y deporte · Entrenamiento físico: 3 skills, 3 subagentes, 1 comando / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "salud",
       "keywords": [
@@ -870,7 +1387,18 @@
     {
       "name": "arsenal-salud-habitos",
       "source": "./plugins/salud-habitos",
-      "description": "Salud y deporte · Hábitos y entrenamiento: 8 subagentes, 7 skills, 6 comandos / en español, del Arsenal del Marketer.",
+      "description": "Salud y deporte · Hábitos y entrenamiento: 6 subagentes, 2 skills en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "salud",
+      "keywords": [
+        "español",
+        "salud"
+      ]
+    },
+    {
+      "name": "arsenal-salud-precios",
+      "source": "./plugins/salud-precios",
+      "description": "Salud y deporte · Precios, bonos y cobros: 2 skills, 2 subagentes, 1 comando / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "salud",
       "keywords": [
@@ -881,7 +1409,7 @@
     {
       "name": "arsenal-salud-varios",
       "source": "./plugins/salud-varios",
-      "description": "Salud y deporte · Más de salud y deporte: 9 subagentes, 7 skills, 2 comandos / en español, del Arsenal del Marketer.",
+      "description": "Salud y deporte · Más de salud y deporte: 5 comandos /, 2 subagentes, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "salud",
       "keywords": [
@@ -892,7 +1420,7 @@
     {
       "name": "arsenal-seguridad",
       "source": "./plugins/seguridad",
-      "description": "Ciberseguridad: 5 comandos /, 3 skills, 3 subagentes en español, del Arsenal del Marketer.",
+      "description": "Ciberseguridad: 7 comandos /, 5 skills, 4 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "seguridad",
       "keywords": [
@@ -901,9 +1429,20 @@
       ]
     },
     {
-      "name": "arsenal-ventas-captar-1",
-      "source": "./plugins/ventas-captar-1",
-      "description": "Ventas · Captar clientes (1): 18 skills, 3 comandos / en español, del Arsenal del Marketer.",
+      "name": "arsenal-varias-alternativas",
+      "source": "./plugins/varias-alternativas",
+      "description": "Alternativas de varias áreas: 6 subagentes, 3 comandos /, 2 skills en español que se parecen a otras piezas de áreas pequeñas; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "calidad",
+      "keywords": [
+        "español",
+        "calidad"
+      ]
+    },
+    {
+      "name": "arsenal-ventas-alternativas",
+      "source": "./plugins/ventas-alternativas",
+      "description": "Ventas · Alternativas: 8 subagentes, 6 comandos /, 2 skills en español que se parecen a otras piezas de ventas; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "ventas",
       "keywords": [
@@ -912,9 +1451,9 @@
       ]
     },
     {
-      "name": "arsenal-ventas-captar-2",
-      "source": "./plugins/ventas-captar-2",
-      "description": "Ventas · Captar clientes (2): 19 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-ventas-captar",
+      "source": "./plugins/ventas-captar",
+      "description": "Ventas · Captar clientes: 10 subagentes, 3 skills, 2 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "ventas",
       "keywords": [
@@ -923,9 +1462,9 @@
       ]
     },
     {
-      "name": "arsenal-ventas-captar-3",
-      "source": "./plugins/ventas-captar-3",
-      "description": "Ventas · Captar clientes (3): 14 subagentes, 5 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-ventas-cerrar",
+      "source": "./plugins/ventas-cerrar",
+      "description": "Ventas · Cerrar ventas: 13 subagentes, 4 comandos /, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "ventas",
       "keywords": [
@@ -934,20 +1473,9 @@
       ]
     },
     {
-      "name": "arsenal-ventas-cerrar-1",
-      "source": "./plugins/ventas-cerrar-1",
-      "description": "Ventas · Cerrar ventas (1): 16 skills, 9 comandos / en español, del Arsenal del Marketer.",
-      "version": "1.0.0",
-      "category": "ventas",
-      "keywords": [
-        "español",
-        "ventas"
-      ]
-    },
-    {
-      "name": "arsenal-ventas-cerrar-2",
-      "source": "./plugins/ventas-cerrar-2",
-      "description": "Ventas · Cerrar ventas (2): 17 subagentes, 2 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-ventas-crm",
+      "source": "./plugins/ventas-crm",
+      "description": "Ventas · CRM y herramientas comerciales: 19 skills, 1 comando / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "ventas",
       "keywords": [
@@ -958,7 +1486,7 @@
     {
       "name": "arsenal-ventas-embudo",
       "source": "./plugins/ventas-embudo",
-      "description": "Ventas · Embudo y seguimiento: 9 skills, 4 comandos /, 3 subagentes en español, del Arsenal del Marketer.",
+      "description": "Ventas · Embudo y seguimiento: 5 subagentes, 5 skills, 3 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "ventas",
       "keywords": [
@@ -969,7 +1497,7 @@
     {
       "name": "arsenal-ventas-fidelizar",
       "source": "./plugins/ventas-fidelizar",
-      "description": "Ventas · Fidelizar y vender más: 7 subagentes, 7 comandos /, 4 skills en español, del Arsenal del Marketer.",
+      "description": "Ventas · Fidelizar y vender más: 3 subagentes, 3 comandos /, 2 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "ventas",
       "keywords": [
@@ -978,9 +1506,9 @@
       ]
     },
     {
-      "name": "arsenal-ventas-tienda",
-      "source": "./plugins/ventas-tienda",
-      "description": "Ventas · Venta por internet: 17 skills, 5 subagentes, 1 comando / en español, del Arsenal del Marketer.",
+      "name": "arsenal-ventas-prospeccion",
+      "source": "./plugins/ventas-prospeccion",
+      "description": "Ventas · Prospección y listas B2B: 19 skills, 1 subagente, 1 comando / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "ventas",
       "keywords": [
@@ -989,20 +1517,31 @@
       ]
     },
     {
-      "name": "arsenal-ventas-varios",
-      "source": "./plugins/ventas-varios",
-      "description": "Ventas · Más de ventas: 3 skills, 1 comando / en español, del Arsenal del Marketer.",
+      "name": "arsenal-video-alternativas",
+      "source": "./plugins/video-alternativas",
+      "description": "Vídeo · Alternativas: 13 comandos /, 11 subagentes en español que se parecen a otras piezas de vídeo; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
-      "category": "ventas",
+      "category": "video",
       "keywords": [
         "español",
-        "ventas"
+        "video"
+      ]
+    },
+    {
+      "name": "arsenal-video-clientes",
+      "source": "./plugins/video-clientes",
+      "description": "Vídeo · Servicios de vídeo para clientes: 3 subagentes, 3 comandos /, 1 skill en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "video",
+      "keywords": [
+        "español",
+        "video"
       ]
     },
     {
       "name": "arsenal-video-grabar",
       "source": "./plugins/video-grabar",
-      "description": "Vídeo · Grabar: 9 comandos /, 4 subagentes, 2 skills en español, del Arsenal del Marketer.",
+      "description": "Vídeo · Grabar: 3 comandos /, 2 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "video",
       "keywords": [
@@ -1011,9 +1550,9 @@
       ]
     },
     {
-      "name": "arsenal-video-guion-1",
-      "source": "./plugins/video-guion-1",
-      "description": "Vídeo · Guion e ideas (1): 20 comandos /, 3 subagentes, 2 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-video-guion",
+      "source": "./plugins/video-guion",
+      "description": "Vídeo · Guion e ideas: 5 comandos /, 2 subagentes, 2 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "video",
       "keywords": [
@@ -1022,9 +1561,9 @@
       ]
     },
     {
-      "name": "arsenal-video-guion-2",
-      "source": "./plugins/video-guion-2",
-      "description": "Vídeo · Guion e ideas (2): 15 subagentes en español, del Arsenal del Marketer.",
+      "name": "arsenal-video-ia-video",
+      "source": "./plugins/video-ia-video",
+      "description": "Vídeo · Vídeo con IA: 3 subagentes, 2 comandos /, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "video",
       "keywords": [
@@ -1035,7 +1574,18 @@
     {
       "name": "arsenal-video-montaje",
       "source": "./plugins/video-montaje",
-      "description": "Vídeo · Montaje: 6 subagentes, 6 comandos /, 3 skills en español, del Arsenal del Marketer.",
+      "description": "Vídeo · Montaje: 8 subagentes, 2 comandos /, 2 skills en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "video",
+      "keywords": [
+        "español",
+        "video"
+      ]
+    },
+    {
+      "name": "arsenal-video-publicar",
+      "source": "./plugins/video-publicar",
+      "description": "Vídeo · Revisar y publicar: 4 comandos /, 3 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "video",
       "keywords": [
@@ -1057,7 +1607,7 @@
     {
       "name": "arsenal-video-varios",
       "source": "./plugins/video-varios",
-      "description": "Vídeo · Más de vídeo: 11 subagentes, 4 comandos / en español, del Arsenal del Marketer.",
+      "description": "Vídeo · Más de vídeo: 6 subagentes, 5 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "video",
       "keywords": [
@@ -1066,9 +1616,20 @@
       ]
     },
     {
-      "name": "arsenal-web-legal",
-      "source": "./plugins/web-legal",
-      "description": "Web · Legal, privacidad y accesibilidad: 11 comandos /, 4 subagentes, 4 skills en español, del Arsenal del Marketer.",
+      "name": "arsenal-video-videocv",
+      "source": "./plugins/video-videocv",
+      "description": "Vídeo · Vídeo currículum: 3 subagentes, 2 skills, 2 comandos / en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "video",
+      "keywords": [
+        "español",
+        "video"
+      ]
+    },
+    {
+      "name": "arsenal-web",
+      "source": "./plugins/web",
+      "description": "Web: 13 subagentes, 11 comandos /, 2 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "web",
       "keywords": [
@@ -1077,20 +1638,9 @@
       ]
     },
     {
-      "name": "arsenal-web-mantenimiento",
-      "source": "./plugins/web-mantenimiento",
-      "description": "Web · Mantenimiento de la web: 9 comandos /, 3 subagentes, 1 skill en español, del Arsenal del Marketer.",
-      "version": "1.0.0",
-      "category": "web",
-      "keywords": [
-        "español",
-        "web"
-      ]
-    },
-    {
-      "name": "arsenal-web-varios",
-      "source": "./plugins/web-varios",
-      "description": "Web · Más de web: 8 comandos /, 7 subagentes, 1 skill en español, del Arsenal del Marketer.",
+      "name": "arsenal-web-alternativas",
+      "source": "./plugins/web-alternativas",
+      "description": "Web · Alternativas: 17 comandos /, 3 skills, 1 subagente en español que se parecen a otras piezas de web; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "web",
       "keywords": [

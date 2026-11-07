@@ -38,14 +38,14 @@ Para gimnasios, centros de yoga o pilates, clínicas con bonos mensuales y cualq
 
 ## Lo que necesitas antes
 - Cuenta de Stripe con suscripciones activas, o una hoja donde apuntes las devoluciones que te da el banco.
-- La clave secreta de Stripe (Desarrolladores > Claves API) y un webhook en Stripe apuntando a la URL de producción de tu nodo Webhook de n8n, suscrito a los eventos `invoice.payment_failed` e `invoice.paid`.
+- La clave secreta de Stripe (Desarrolladores > Claves API) y una credencial de Stripe en n8n: el nodo Stripe Trigger da de alta él solo el webhook en Stripe con los eventos `invoice.payment_failed` e `invoice.paid`.
 - Google Sheet `Impagos`: fecha, cliente, email, importe, factura_id, estado, avisos, enlace_pago.
 - Gmail y un bot de Telegram.
 - n8n con URL pública (si es auto-alojado, detrás de un dominio con HTTPS).
 
 ## Los nodos, en orden
-1. **Webhook** – HTTP Method: POST, Path: `stripe-pagos`, Respond: Immediately. Copia la URL de producción y pégala en Stripe.
-2. **Switch** – Mode: Rules sobre `={{ $json.body.type }}`. Salida A: equal `invoice.payment_failed`. Salida B: equal `invoice.paid`.
+1. **Stripe Trigger** – Events: `invoice.payment_failed` e `invoice.paid`, con tu credencial de Stripe. Este nodo comprueba la firma de cada aviso; no uses un Webhook genérico para cobros, porque cualquiera que sepa la URL podría mandarte avisos falsos. Justo detrás, un **Google Sheets** (Get Row(s)) en la pestaña `Eventos` buscando `={{ $json.id }}` y un **IF** que pare si ya existe; si es nuevo, guárdalo con un Append Row. Stripe reenvía avisos y sin esto mandarías dos correos.
+2. **Switch** – Mode: Rules sobre `={{ $json.type }}`. Salida A: equal `invoice.payment_failed`. Salida B: equal `invoice.paid`.
 3. **Code** (salida A) – extrae cliente, email, importe y el `hosted_invoice_url` que Stripe genera y que sirve como enlace de pago. Código abajo.
 4. **Google Sheets** – Append or Update en `Impagos`, Matching Column `factura_id`, con estado `pendiente` y avisos `1`.
 5. **Gmail** – Send al cliente. Asunto: «No ha podido pasarse tu cuota de este mes». Texto: pasa a veces, no es nada, aquí tienes el enlace para arreglarlo en 30 segundos. Botón grande con `={{ $json.enlace_pago }}`.
@@ -60,7 +60,7 @@ Para gimnasios, centros de yoga o pilates, clínicas con bonos mensuales y cualq
 
 ## El código del nodo Code (paso 3)
 ```
-const inv = $json.body.data.object;
+const inv = $json.data.object;
 return [{ json: {
   factura_id: inv.id,
   cliente: inv.customer_name || (inv.customer_email || '').split('@')[0],
@@ -97,10 +97,10 @@ return salida;
 - Cambia a mano la fecha de una fila a hace 6 días y ejecuta el workflow 2: debe salir el segundo aviso una sola vez.
 
 ## Qué puede salir mal
-- **Webhook sin verificar la firma**: cualquiera que sepa tu URL puede mandarte datos falsos. Añade un nodo **Code** al principio que compruebe la cabecera `stripe-signature` con tu secreto del webhook, o al menos usa un path largo y aleatorio.
+- **Avisos falsos o repetidos**: por eso el flujo empieza con el Stripe Trigger, que comprueba la firma, y descarta los `id` de evento ya vistos. Si lo cambias por un Webhook genérico, verifica la cabecera `Stripe-Signature` con el signing secret del endpoint: una URL larga o secreta no autentica nada.
 - **Reintentos automáticos de Stripe**: Stripe ya reintenta el cobro varios días. Si tienes eso activo, deja pasar 2 días antes del primer email o el cliente pagará solo y le habrás dado la lata.
 - **Emails que suenan a bufete**: la primera vez no es morosidad, es una tarjeta caducada. Escribe como si le hubieras visto el jueves, porque así es.
-- **Domiciliación bancaria sin Stripe**: cambia el Webhook por un **Schedule Trigger** que lea el fichero de devoluciones que te manda el banco (súbelo a Drive) con **Google Drive** + **Extract From File**, y el resto del flujo es idéntico.
+- **Domiciliación bancaria sin Stripe**: cambia el Stripe Trigger por un **Schedule Trigger** que lea el fichero de devoluciones que te manda el banco (súbelo a Drive) con **Google Drive** + **Extract From File**, y el resto del flujo es idéntico.
 - **Duplicados**: usa siempre `factura_id` como llave; el mismo impago puede generar varios eventos.
 
 ## Cuánto cuesta

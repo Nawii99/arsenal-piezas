@@ -45,7 +45,7 @@ Rellena solo las primeras columnas y deja `estado` vacío. El flujo pone `hecho`
 1) **Schedule Trigger** — cada hora, o usa un **Manual Trigger** si prefieres lanzarlo tú.
 2) **Google Sheets** (`Get Row(s)`) — pestaña `catalogo`, con filtro `estado` igual a vacío. Activa `Return All`.
 3) **Split In Batches** — tamaño 1, para que cada modelo vaya por separado y no se mezclen textos.
-4) **HTTP Request** — POST a `https://api.anthropic.com/v1/messages`. Cabeceras: `x-api-key` con tu clave, `anthropic-version` con `2023-06-01`, `content-type` con `application/json`. Cuerpo en JSON (ver abajo).
+4) **HTTP Request** — POST a `https://api.anthropic.com/v1/messages`. Cabeceras: `x-api-key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `x-api-key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría), `anthropic-version` con `2023-06-01`, `content-type` con `application/json`. Cuerpo en JSON (ver abajo).
 5) **Code** — extrae el JSON de la respuesta.
 6) **Google Sheets** (`Update Row`) — busca por la columna `modelo` y escribe todas las columnas de textos más `estado` = `hecho`.
 7) Conecta de vuelta al **Split In Batches**.
@@ -83,5 +83,5 @@ Cada tienda tiene su límite de caracteres en el título: comprueba el de Fab y 
 No publiques la descripción palabra por palabra idéntica en las tres tiendas: cambia el primer párrafo en cada una para no competir contigo mismo en Google.
 
 ## Cuánto cuesta
-n8n y Google Sheets: gratis.
+n8n autoalojado (Community Edition) y Google Sheets: gratis (n8n Cloud: prueba gratuita temporal y después de pago).
 La API de Anthropic se paga por uso. Una ficha completa en tres idiomas cuesta alrededor de 1-2 céntimos, así que 100 modelos salen por menos de 2 €.

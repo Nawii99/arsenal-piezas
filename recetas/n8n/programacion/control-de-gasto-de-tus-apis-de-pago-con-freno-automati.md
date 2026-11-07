@@ -95,4 +95,4 @@ Pon el presupuesto de un proveedor en 0,01 euros y ejecuta: debe avisar y cerrar
 - **Frecuencia**: cada hora es un equilibrio razonable; cada minuto puede chocar con los límites de las propias APIs de facturación.
 
 ## Cuánto cuesta
-La automatización es gratis; lo que ahorra es dinero real. Con n8n auto-alojado, 720 ejecuciones mensuales no cuestan nada; en el plan gratuito de la nube se comería casi todo el cupo, así que baja la frecuencia a cada 3 horas si vas por ahí.
+La automatización es gratis; lo que ahorra es dinero real. Con n8n auto-alojado, 720 ejecuciones mensuales no cuestan nada; n8n Cloud no tiene plan gratuito permanente (solo prueba temporal y después planes de pago con límite de ejecuciones), así que si vas por ahí baja la frecuencia a cada 3 horas.

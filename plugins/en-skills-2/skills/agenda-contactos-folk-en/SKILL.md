@@ -1,6 +1,6 @@
 ---
 name: agenda-contactos-folk-en
-description: Keeps your folk CRM up to date: finds duplicates and gaps, proposes fixes, logs meeting notes, and creates follow-up reminders, always showing the changes before saving them. Use it when your contact list is messy or right after a meeting or call.
+description: "Keeps your folk CRM up to date: finds duplicates and gaps, proposes fixes, logs meeting notes, and creates follow-up reminders, always showing the changes before saving them. Use it when your contact list is messy or right after a meeting or call."
 ---
 # Keep Your folk Contacts Up to Date
 folk is a CRM where several people can work on the same contact list. That is why this skill works carefully: it reads first, then proposes, and only writes what someone has approved.

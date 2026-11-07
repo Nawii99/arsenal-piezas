@@ -6,12 +6,12 @@ Controla quién ha pagado la mensualidad, avisa con antelación al que le toca r
 
 ## Qué es y qué hace
 
-Escucha los avisos de Stripe de pago correcto, pago fallido y cancelación de suscripción, actualiza la hoja de cuotas del alumno y lanza el correo adecuado: recibo, aviso de tarjeta rechazada o corte de acceso. Entran eventos de Stripe y salen correos y estados en una hoja. Para academias con cuota mensual y membresías de formación, con n8n y Gmail.
+Escucha los avisos de Stripe de pago correcto, pago fallido y cancelación de suscripción, actualiza la hoja de cuotas del alumno y lanza el correo adecuado: recibo, aviso de tarjeta rechazada o corte de acceso. Entran eventos de Stripe y salen correos y estados en una hoja. Para academias con cuota mensual y membresías de formación, con n8n y Gmail. Verifica la firma del webhook de Stripe y descarta los eventos repetidos antes de actuar.
 
 ## Cómo usarla
 
 1. Crea el producto recurrente en Stripe
-2. Configura el webhook con los tres eventos
+2. Configura el webhook con los tres eventos y verifica su firma con el signing secret
 3. Escribe los tres correos escalonados
 4. Que lo revise un profesional
 
@@ -38,11 +38,25 @@ Para academias con cuota mensual, membresías de formación y clubes de estudio.
 ## Lo que necesitas antes
 - Cuenta de Stripe (gratis abrirla) con un producto de precio recurrente creado en el panel.
 - Una hoja «Cuotas» con: alumno | email | producto | importe | estado | ultimo_pago | intentos_fallidos
-- El webhook de Stripe: en dashboard.stripe.com > Desarrolladores > Webhooks > Añadir endpoint, pega la URL de producción de tu nodo Webhook de n8n y selecciona los eventos `invoice.paid`, `invoice.payment_failed` y `customer.subscription.deleted`.
+- El webhook de Stripe: en dashboard.stripe.com > Desarrolladores > Webhooks > Añadir endpoint, pega la URL de producción de tu nodo Webhook de n8n y selecciona los eventos `invoice.paid`, `invoice.payment_failed` y `customer.subscription.deleted`. Copia también el «signing secret» (`whsec_...`) del endpoint y guárdalo como variable de entorno de n8n (`STRIPE_WEBHOOK_SECRET`), no escrito en el nodo. Alternativa más simple: sustituye el Webhook y el Code de verificación por un nodo **Stripe Trigger**, que comprueba la firma por ti (el evento llega entonces en `$json` y no en `$json.body`).
 - Credenciales de Google Sheets y Gmail en n8n.
 
 ## Los nodos, en orden
 1) **Webhook**. HTTP Method: POST. Path: `stripe-cuotas`. Response Mode: «Immediately». Copia la URL de producción y pégala en Stripe.
+1b) **Code** («Verificar firma de Stripe»), justo después del Webhook y antes del Switch. No te fíes de ningún aviso sin este paso. En el Webhook activa antes Options > **Raw Body**; en n8n auto-alojado necesitas `NODE_FUNCTION_ALLOW_BUILTIN=crypto`:
+```js
+const crypto = require('crypto');
+const secret = $env.STRIPE_WEBHOOK_SECRET;
+const item = $input.first();
+const cabecera = item.json.headers['stripe-signature'] || '';
+const partes = Object.fromEntries(cabecera.split(',').map(p => p.split('=')));
+const raw = (await this.helpers.getBinaryDataBuffer(0, 'data')).toString('utf8');
+const esperada = crypto.createHmac('sha256', secret || '').update(`${partes.t}.${raw}`).digest('hex');
+const ok = !!partes.v1 && partes.v1.length === esperada.length && crypto.timingSafeEqual(Buffer.from(partes.v1), Buffer.from(esperada));
+const reciente = Math.abs(Date.now() / 1000 - Number(partes.t)) < 300;
+if (!secret || !ok || !reciente) throw new Error('Firma de Stripe no válida: evento descartado');
+return [{ json: { body: JSON.parse(raw) } }];
+```
 2) **Switch**. Modo Rules sobre `{{ $json.body.type }}`. Salida 0: `invoice.paid`. Salida 1: `invoice.payment_failed`. Salida 2: `customer.subscription.deleted`.
 3) **Code** (común a las tres ramas, ponlo justo después de cada salida o usa un Merge antes). Extrae lo que importa:
 ```js
@@ -58,7 +72,7 @@ return [{ json: {
   fecha: new Date().toISOString().slice(0,10)
 }}];
 ```
-4) Rama pago correcto: **Google Sheets** (Update Row) filtrando por `email`, pon `estado` = `al_dia`, `ultimo_pago` = fecha, `intentos_fallidos` = 0. Luego **Gmail** (Send) con el recibo y el enlace `{{ $json.factura }}`.
+4) Rama pago correcto (comprueba antes que `body.data.object.status` sea `paid`): **Google Sheets** (Update Row) filtrando por `email`, pon `estado` = `al_dia`, `ultimo_pago` = fecha, `intentos_fallidos` = 0. Luego **Gmail** (Send) con el recibo y el enlace `{{ $json.factura }}`.
 5) Rama pago fallido: **Google Sheets** (Get Row(s)) por email para leer `intentos_fallidos`, luego **Code** que sume 1, luego **IF** con tres caminos según el número.
 6) Intento 1: **Gmail** con asunto `Tu tarjeta ha sido rechazada, {{ $json.nombre }}` y el enlace al portal de cliente para actualizarla. Tono tranquilo, sin drama.
 7) Intento 2 (Stripe reintenta solo a los 3 días): **Gmail** recordatorio y **Slack**/email a ti para que decidas si llamas.
@@ -73,7 +87,7 @@ return [{ json: {
 ## Qué puede salir mal
 - **El webhook no llega**: en n8n, la URL de test solo escucha mientras pulsas «Listen». Activa el workflow y usa la URL de producción.
 - **El email viene vacío**: en Stripe algunas facturas no traen `customer_email`. Guarda el `customer_id` en la hoja al matricular y busca por ahí.
-- **Duplicados**: Stripe reintenta el webhook si no respondes 200. Con Response Mode «Immediately» respondes al momento y no se repite.
+- **Duplicados**: Stripe reintenta el webhook si no respondes 200. Con Response Mode «Immediately» respondes al momento y no se repite. Aun así Stripe puede enviar el mismo evento dos veces: guarda el `id` del evento (`body.id`) en la hoja y descarta los repetidos.
 - **Zona horaria**: los timestamps de Stripe son UTC. Ojo con las facturas de medianoche.
 - **Legal**: guarda el consentimiento de domiciliación y conserva las facturas; en España Stripe emite el recibo pero la factura la haces tú.
 

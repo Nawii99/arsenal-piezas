@@ -85,7 +85,7 @@ Mete un lote con caducidad dentro de 59 días y verifica que salta el aviso de 6
 Si el mostrador no apunta los consumos, el sistema no sirve: haz el formulario de tres campos como mucho y ponlo como icono en la pantalla de inicio del móvil.
 Productos nuevos sin histórico dan cobertura 999; es correcto, ya se corregirá al mes.
 Fechas de caducidad en formato distinto rompen la comparación: fija el formato de la columna a fecha en el propio Sheet.
-Google Sheets Trigger consume una ejecución por sondeo en n8n Cloud; en el plan gratuito pon poll cada 5 minutos.
+Google Sheets Trigger consume una ejecución por sondeo en n8n Cloud; en n8n Cloud, que tras la prueba gratuita temporal es de pago, pon el poll cada 5 minutos para gastar menos.
 
 ## Cuánto cuesta
 Todo gratis con n8n auto-alojado y cuenta de Google normal.

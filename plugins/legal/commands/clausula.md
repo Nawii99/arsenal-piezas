@@ -1,6 +1,6 @@
 ---
 name: clausula
-description: Explica en lenguaje llano una cláusula de contrato que el usuario pega, dice a quién beneficia y propone una redacción alternativa. Uso: /clausula seguido del texto de la cláusula.
+description: "Explica en lenguaje llano una cláusula de contrato que el usuario pega, dice a quién beneficia y propone una redacción alternativa. Uso: /clausula seguido del texto de la cláusula."
 ---
 
 El usuario te pega una cláusula de un contrato (normalmente de colaboración o de servicios, en España). Tu trabajo es traducirla y darle munición para negociar. No es asesoramiento legal: dilo al final, en una línea, sin dramatizar.

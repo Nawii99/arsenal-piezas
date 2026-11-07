@@ -59,11 +59,11 @@ return [{ json: { marca, mensaje: 'Mensaje automático de comprobación, ignóra
 Ejecuta a mano con «Test workflow». Debe llegarte el email de prueba a tu bandeja y NO debe llegar el Telegram. Después rompe el formulario a propósito (cambia el nombre de un campo en el HTTP Request) y vuelve a ejecutar: ahora sí tiene que llegar el Telegram.
 
 ## Qué puede salir mal
-- **reCAPTCHA o Turnstile**: si el formulario tiene captcha, la petición fallará siempre. Solución: en el plugin del formulario crea una copia del formulario sin captcha en una URL secreta tipo `/qa-form-9f2b/` y prueba esa; comparte el mismo SMTP, que es lo que quieres vigilar.
+- **reCAPTCHA o Turnstile**: si el formulario tiene captcha, la petición fallará siempre. Solución: en el plugin del formulario crea una copia del formulario sin captcha en otra página y prueba esa; comparte el mismo SMTP, que es lo que quieres vigilar. Una URL escondida no es una protección: limita esa página a la IP de tu n8n (regla del servidor o del WAF) o exige una cabecera con un token guardado en una credencial Header Auth de n8n, para que ningún bot pueda usarla para mandar spam.
 - **Honeypot antispam**: algunos formularios exigen que un campo oculto vaya vacío. Déjalo vacío, no lo rellenes.
 - **El email tarda más de 5 minutos**: sube el Wait a 10 y baja la frecuencia a una vez al día.
 - **Llenas tu CRM de leads falsos**: usa siempre el mismo email `qa@tudominio.es` y crea una regla en el CRM para descartarlo.
 - **Te bloquea el WAF** por peticiones repetidas: mete la IP de tu n8n en la lista blanca.
 
 ## Cuánto cuesta
-Gratis: n8n auto-alojado, Gmail dentro de tu cuenta, Telegram gratis. En n8n Cloud son 30 ejecuciones al mes, entra hasta en el plan más pequeño.
+Gratis: n8n auto-alojado, Gmail dentro de tu cuenta, Telegram gratis. n8n Cloud no tiene plan gratuito permanente: solo una prueba gratuita temporal y después planes de pago. La receta hace unas 30 ejecuciones al mes.

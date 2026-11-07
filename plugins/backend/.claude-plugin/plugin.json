@@ -1,7 +1,7 @@
 {
   "name": "arsenal-backend",
   "version": "1.0.0",
-  "description": "Backend: 24 comandos /, 4 skills, 3 subagentes en español, del Arsenal del Marketer.",
+  "description": "Backend: 20 comandos /, 4 skills, 2 subagentes en español, del Arsenal del Marketer.",
   "author": {
     "name": "Arsenal del Marketer",
     "url": "https://github.com/Nawii99/arsenal-piezas"

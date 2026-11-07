@@ -42,9 +42,9 @@ Para tiendas y webs con caché de CDN activada.
 - Una hoja `purgas` para el registro (opcional pero útil cuando algo no se refresca).
 
 ## Los nodos, en orden
-1. **Webhook** — Method POST, Path `cambio-contenido`, Respond: Immediately. Pega la URL en tu plataforma.
+1. **Webhook** — Method POST, Path `cambio-contenido`, Respond: Immediately. Pega la URL en tu plataforma. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** — traduce el objeto recibido a la lista de URLs a purgar.
-3. **HTTP Request** — POST `https://api.cloudflare.com/client/v4/zones/TU_ZONE_ID/purge_cache`, cabecera `Authorization: Bearer TU_TOKEN`, body JSON `{ "files": {{ JSON.stringify($json.urls) }} }`.
+3. **HTTP Request** — POST `https://api.cloudflare.com/client/v4/zones/TU_ZONE_ID/purge_cache`, Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name «Authorization», Value «Bearer TU_TOKEN»); el nodo usa esa credencial. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Body JSON `{ "files": {{ JSON.stringify($json.urls) }} }`.
 4. **Wait** — Amount: 3, Unit: Seconds. Da tiempo a que la purga se propague por los nodos de la red.
 5. **Split In Batches** — Batch Size: 1.
 6. **HTTP Request** — GET a `={{ $json.url }}` con cabecera `User-Agent: precalentador-n8n`. Activa «Never Error».

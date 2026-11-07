@@ -46,7 +46,7 @@ Levanta un contenedor de base de datos vacío, restaura dentro la última copia,
 1. **Schedule Trigger** — Custom (Cron) `0 5 * * 0` (domingos a las 5:00).
 2. **Execute Command** (renómbralo «Levantar contenedor»):
 ```
-docker rm -f prueba-restore 2>/dev/null; docker run -d --name prueba-restore -e POSTGRES_PASSWORD=prueba -e POSTGRES_DB=verificacion -p 55432:5432 postgres:16-alpine && sleep 20 && echo LISTO
+docker rm -f prueba-restore 2>/dev/null; docker run -d --name prueba-restore -e POSTGRES_PASSWORD="$(od -An -N16 -tx1 /dev/urandom | tr -d ' \n')" -e POSTGRES_DB=verificacion -p 127.0.0.1:55432:5432 postgres:16-alpine && sleep 20 && echo LISTO
 ```
 3. **Execute Command** (renómbralo «Restaurar»):
 ```
@@ -77,7 +77,7 @@ return [{ json: {
 } }];
 ```
 6. **Google Sheets** — Append Row en «Pruebas restauracion».
-7. **Telegram** — Send Message con `={{ $json.mensaje }}`.
+7. **Telegram** — Send Message con `={{ $('Dictamen').item.json.mensaje }}` (tras Google Sheets, `$json` es la fila escrita).
 8. **Execute Command** (renómbralo «Limpiar») — `docker rm -f prueba-restore && echo BORRADO`. Marca en este nodo «Always Output Data» y en Settings del nodo «On Error: Continue», para que se ejecute pase lo que pase.
 
 ## Cómo probarla
@@ -90,7 +90,9 @@ return [{ json: {
 - **Puerto ocupado**: el 55432 es raro a propósito. Si lo tienes usado, cambia a otro.
 - **Errores «tolerables» de psql**: restaurar suele soltar avisos de roles o extensiones que no existen. Por eso el dictamen mira tablas y filas, no solo el código de salida.
 - **Disco lleno**: el contenedor ocupa lo que ocupe la base. Añade antes un `df -h` y aborta si queda menos del 20 % libre.
-- **Datos reales en un contenedor abierto**: el contenedor tiene datos de clientes. No lo publiques hacia fuera (el `-p` solo escucha en localhost si lo pones como `127.0.0.1:55432:5432`, mejor hazlo así) y bórralo siempre al final.
+- **Datos reales en un contenedor abierto**: el contenedor tiene datos de clientes. No lo publiques hacia fuera: el `-p` ya escucha solo en `127.0.0.1` y la contraseña es aleatoria en cada prueba (`psql` entra por `docker exec`, no la necesitas). Bórralo siempre al final.
+- **Contraseña fija en el comando**: `prueba` quedaba escrita en el nodo y con el puerto abierto a todos; ahora se genera al vuelo y no se guarda en ningún sitio.
+- **Telegram vacío**: Google Sheets devuelve la fila escrita, sin `mensaje`; por eso se lee de `$('Dictamen')`.
 
 ## Cuánto cuesta
-0 € en herramientas: Docker, n8n, Sheets y Telegram son gratis. Solo consume CPU y disco durante unos minutos a la semana.
+0 € en herramientas: Docker, n8n autoalojado (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago), Sheets y Telegram son gratis. Solo consume CPU y disco durante unos minutos a la semana.

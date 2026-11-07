@@ -15,7 +15,7 @@ Accounts needed and free limit: Stripe (free account, no monthly fee, charges a 
 1. In Stripe, create a Payment Link for your product (Stripe Dashboard > Payment Links > Create). You don't need to program anything for this.
 2. In n8n, add a Webhook node as the trigger. Copy the URL it generates.
 3. In Stripe, go to Developers > Webhooks, add an endpoint with that URL and select the event 'checkout.session.completed'.
-4. Go back to n8n and add an IF node after the Webhook: check that the 'type' field of the event equals 'checkout.session.completed', to discard other events that Stripe may send.
+4. Go back to n8n and add an IF node after the Webhook: check that the 'type' field of the event equals 'checkout.session.completed' and that the payment status ('payment_status') is 'paid'. Before the IF, verify that the notice comes from Stripe: compute the signature of the `Stripe-Signature` header with the endpoint's "signing secret" (whsec_...), stored in n8n credentials or in an environment variable and never pasted into a node (or use the Stripe Trigger node directly, which already checks it). Also store the event id and, if it is already in the sheet, repeat nothing: Stripe may send the same event twice.
 5. Add a Google Sheets node (Append Row operation) connected to the true output of the IF: save date, buyer's email, amount, and product, reading that data from the webhook body.
 6. Add a Gmail node (Send Email) to confirm the purchase to the customer's email, using the email field from the webhook.
 7. Add a Telegram node (Send Message) pointing to your own chat, so it alerts you on every sale, with the amount and the product.

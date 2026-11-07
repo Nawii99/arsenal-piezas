@@ -39,7 +39,7 @@ Móntala para dietistas o entrenadores que mandan menús a sus clientes, de modo
 Cada semana, en el día y hora que elijas, lee tu menú semanal de una hoja de Google Sheets, genera la lista de la compra agrupada por secciones y te la manda por Telegram para que la tengas en el móvil al ir al súper.
 
 ## Cuentas que hacen falta
-- Cuenta de n8n (la versión self-hosted es gratis; n8n Cloud tiene un plan gratuito limitado a un número de ejecuciones al mes, revisa el límite actual en su web).
+- Cuenta de n8n (la versión self-hosted es gratis; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago, revisa los planes actuales en su web).
 - Cuenta de Google gratuita, con un Google Sheet donde escribas tu menú semanal (una fila por comida, con columna de ingredientes).
 - Un bot de Telegram creado con @BotFather, gratis, y tu chat_id (se consigue hablando con @userinfobot).
 

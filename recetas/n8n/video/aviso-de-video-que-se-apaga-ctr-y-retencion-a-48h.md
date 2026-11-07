@@ -74,4 +74,4 @@ Ejecuta con «Test workflow» y mira el output del nodo 4: si devuelve `rows` va
 - **Horas**: si no fijas Europe/Madrid, en verano el aviso te llegará a las 11.
 
 ## Cuánto cuesta
-Gratis del todo: n8n auto-alojado o su plan gratis, las APIs de YouTube no se cobran y Gmail tampoco. Solo pagas si necesitas más de 5 workflows activos en n8n Cloud (unos 20 €/mes).
+Gratis del todo con n8n auto-alojado (Community Edition); las APIs de YouTube no se cobran y Gmail tampoco. Si prefieres n8n Cloud, tiene una prueba gratuita temporal y después planes de pago (unos 20 €/mes).

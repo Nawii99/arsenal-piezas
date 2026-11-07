@@ -42,7 +42,7 @@ Para quien mantiene un frontend en producción y quiere presupuesto de rendimien
 - Una hoja de Google Sheets «Bundle» con columnas: `rama`, `commit`, `bytes`, `fecha`.
 
 ### Los nodos, en orden
-1. **Webhook** — Method `POST`, Path `bundle-size`, Response Mode `When Last Node Finishes`. Copia la Production URL.
+1. **Webhook** — Method `POST`, Path `bundle-size`, Response Mode `When Last Node Finishes`. Copia la Production URL. Protégelo: configura un *Secret* en el webhook de GitHub, valida la cabecera `X-Hub-Signature-256` en un nodo Code con ese secreto leído de una variable de entorno y descarta entregas repetidas por `X-GitHub-Delivery`.
 2. **Google Sheets** (nombre: «Base de referencia») — Operation `Get Row(s)`, filtro `rama = main`, Sort por fecha descendente, Limit 1.
 3. **Code** (nombre: «Comparar») — calcula diferencia absoluta y porcentual y monta el comentario.
 4. **IF** — Condition: String `{{ $json.rama }}` `equals` `main`. Rama true → guardar nueva referencia; rama false → comentar en la PR.
@@ -56,6 +56,7 @@ Para quien mantiene un frontend en producción y quiere presupuesto de rendimien
     BYTES=$(du -sb dist | cut -f1)
     curl -X POST https://TU-N8N/webhook/bundle-size \
       -H 'Content-Type: application/json' \
+      -H "X-Webhook-Key: ${{ secrets.N8N_WEBHOOK_KEY }}" \
       -d "{\"bytes\":$BYTES,\"rama\":\"${GITHUB_HEAD_REF:-main}\",\"commit\":\"$GITHUB_SHA\",\"pr\":\"${{ github.event.number }}\",\"repo\":\"${{ github.repository }}\"}"
 ```
 
@@ -81,11 +82,11 @@ return [{ json: { ...d, base, dif, pct, comentario } }];
 ### Qué puede salir mal
 - **`du -sb` no existe en macOS**: en el runner de GitHub (Ubuntu) sí; si usas runner propio de Mac, usa `du -sk dist | cut -f1` y multiplica por 1024.
 - **Comentarios acumulados**: en vez de crear uno nuevo cada push, busca el comentario anterior con `GET .../issues/{pr}/comments` y usa `PATCH .../issues/comments/{id}`.
-- **PRs de forks**: los secretos no están disponibles; usa la URL del webhook con un token corto en la ruta y acepta que solo funcione en ramas internas.
-- **Webhook sin proteger**: añade en n8n autenticación `Header Auth` al nodo Webhook y manda esa cabecera desde el curl.
+- **PRs de forks**: los secretos no están disponibles; el paso no puede mandar la cabecera de autenticación del webhook, así que acepta que solo funcione en ramas internas. No pongas ningún token en la ruta de la URL del webhook.
+- **Webhook sin proteger**: añade en n8n autenticación `Header Auth` al nodo Webhook (credencial de n8n, Name `X-Webhook-Key`) y guarda ese valor como secreto del repositorio de GitHub (`N8N_WEBHOOK_KEY`); el `curl` lo lee de ahí. No lo escribas en el YAML ni en un nodo: un flujo o un repo exportado se llevaría la clave.
 - **Primera ejecución sin referencia**: el código ya lo contempla poniendo base 0, pero el primer comentario será poco útil hasta que `main` guarde un valor.
 
 ### Cuánto cuesta
 - GitHub Actions: 2.000 minutos/mes gratis en repos privados, ilimitado en públicos. Este paso añade segundos.
-- n8n auto-alojado 0 €; en n8n Cloud gratuito ojo si tienes muchas PRs al día, el límite de ejecuciones se come rápido.
+- n8n auto-alojado 0 €; en n8n Cloud (de pago tras la prueba gratuita) ojo si tienes muchas PRs al día, el límite de ejecuciones del plan se come rápido.
 - Google Sheets gratis.

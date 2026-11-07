@@ -42,7 +42,7 @@ Una hoja «Localización» con columnas: clave, es, en, fr, de, pt, contexto, es
 Decide un glosario de términos que NO se traducen (nombres propios, habilidades, marcas): apúntalos en una pestaña «glosario».
 
 ## Los nodos, en orden
-**Schedule Trigger** — Cron: `0 7 * * 1` (lunes a las 7:00, Timezone Europe/Madrid). También puedes usar un **Webhook** para lanzarlo a mano.
+**Schedule Trigger** — Cron: `0 7 * * 1` (lunes a las 7:00, Timezone Europe/Madrid). También puedes usar un **Webhook** para lanzarlo a mano: protégelo con Authentication > Header Auth y una credencial con un token largo que solo conozca quien lo llama; sin eso, cualquiera que sepa la URL lo dispara.
 **Google Sheets** — Get Row(s) de «Localización», Return All activado.
 **Filter** — `{{$json.en}}` está vacío (o `{{$json.estado}}` distinto de `traducido`).
 **Split In Batches** — Batch Size: 40. Así mandas 40 cadenas por petición y no agotas la cuota.

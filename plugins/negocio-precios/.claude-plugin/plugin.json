@@ -1,7 +1,7 @@
 {
   "name": "arsenal-negocio-precios",
   "version": "1.0.0",
-  "description": "Negocio · Precios y oferta: 10 subagentes, 4 skills, 1 comando / en español, del Arsenal del Marketer.",
+  "description": "Negocio · Precios y oferta: 6 subagentes, 6 skills, 5 comandos / en español, del Arsenal del Marketer.",
   "author": {
     "name": "Arsenal del Marketer",
     "url": "https://github.com/Nawii99/arsenal-piezas"

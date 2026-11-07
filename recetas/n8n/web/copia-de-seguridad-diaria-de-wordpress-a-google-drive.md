@@ -21,7 +21,7 @@ Cada madrugada pide a WordPress, mediante el plugin WPvivid o UpdraftPlus, un ZI
 
 ## Cómo ganar dinero con ella
 
-Un servicio de backup gestionado cuesta 5-15 €/mes por web; esto es gratis y usa los 15 GB gratuitos de Drive. Perder la web sin copia cuesta reconstruirla entera.
+Un servicio de backup gestionado cuesta 5-15 €/mes por web; esto es gratis con n8n autoalojado y usa los 15 GB gratuitos de Drive (n8n Cloud tiene prueba temporal y luego es de pago). Perder la web sin copia cuesta reconstruirla entera.
 
 - Copias de seguridad automáticas para webs WordPress de pymes que no tienen plan de backup gestionado.
 - Paquete de backup mensual con prueba de restauración para tiendas WooCommerce.
@@ -44,7 +44,7 @@ Para negocios con WordPress: tiendas WooCommerce, blogs con tráfico y webs de s
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Cron `0 3 * * *` (las 3 de la madrugada, cuando tu web no tiene tráfico), zona `Europe/Madrid`.
-2. **HTTP Request** («Lanzar backup») — POST a `https://tudominio.es/wp-json/wpvivid/v1/backup` con cabecera `Authorization` de tu usuario de aplicación de WordPress (Usuarios > Perfil > Contraseñas de aplicación; se usa como Basic Auth con usuario y esa contraseña). Options: Timeout `300000`.
+2. **HTTP Request** («Lanzar backup») — POST a `https://tudominio.es/wp-json/wpvivid/v1/backup` con cabecera `Authorization` de tu usuario de aplicación de WordPress (Usuarios > Perfil > Contraseñas de aplicación; se usa como Basic Auth con usuario y esa contraseña, guardadas en una credencial de n8n y no escritas en el nodo). Options: Timeout `300000`.
 3. **Wait** — 10 minutos. Los backups grandes tardan; si tu web es pequeña, con 3 minutos vale.
 4. **HTTP Request** («Listar backups») — GET al endpoint de listado del plugin, devuelve la URL del ZIP más reciente.
 5. **Code** — se queda con la URL del ZIP y le pone nombre con la fecha (código abajo).

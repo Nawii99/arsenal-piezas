@@ -39,7 +39,7 @@ Recibe errores por webhook desde tu aplicación, los normaliza (quita ids, núme
 - Hoja `errores` con columnas: `huella`, `mensaje`, `primera_vez`, `ultima_vez`, `veces`, `issue_numero`, `estado`.
 - En tu aplicación, un bloque que capture las excepciones y haga un POST a la URL del webhook con `{ mensaje, stack, entorno, usuario_id, url }`. Son 5 líneas en cualquier framework.
 **Los nodos, en orden**
-1. `Webhook` — POST, Path `error`, Respond `Immediately` con Response Code 204 (tu app no debe esperar; si el logger tarda, degradas la app por culpa del monitor).
+1. `Webhook` — POST, Path `error`, Respond `Immediately` con Response Code 204 (tu app no debe esperar; si el logger tarda, degradas la app por culpa del monitor). Verifica la firma `Sentry-Hook-Signature` con el Client Secret de la integración en un nodo Code.
 2. `Code` (*Huella*) — Mode `Run Once for Each Item`:
 ```js
 const crypto = require('crypto');

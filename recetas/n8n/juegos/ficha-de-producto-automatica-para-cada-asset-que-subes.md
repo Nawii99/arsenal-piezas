@@ -43,8 +43,9 @@ Detecta un pack terminado en Drive, saca con Blender los datos técnicos reales 
 
 ## Los nodos, en orden
 1. **Google Drive Trigger** — carpeta `assets-terminados`, File Created, poll cada 30 minutos.
-2. **Google Drive** > **Read/Write Files from Disk** — descarga y guarda en `/datos/assets/{{ $json.name }}`.
-3. **Execute Command** (`Inspeccionar`) — Command: `ASSET="/datos/assets/{{ $('Google Drive Trigger').item.json.name }}" blender -b --python /datos/assets/inspeccionar.py`. El script imprime una línea JSON que empieza por `DATOS:`.
+1b. **Code** (`Nombre seguro`, modo «Run Once for Each Item») — `const ext = String($json.name).split('.').pop().toLowerCase(); if (!['blend','glb'].includes(ext) || !/^[A-Za-z0-9_-]+$/.test($json.id)) throw new Error('Formato no admitido: ' + $json.name); return { json: { ...$json, archivo: $json.id + '.' + ext } };`. En disco y en el comando solo se usa `archivo`; el nombre original queda para el prompt.
+2. **Google Drive** > **Read/Write Files from Disk** — descarga y guarda en `/datos/assets/{{ $('Nombre seguro').item.json.archivo }}`.
+3. **Execute Command** (`Inspeccionar`) — Command: `ASSET="/datos/assets/{{ $('Nombre seguro').item.json.archivo }}" blender -b --python /datos/assets/inspeccionar.py`. El script imprime una línea JSON que empieza por `DATOS:`.
 4. **Code** (`Extraer JSON`) — busca la línea `DATOS:` en el stdout y la parsea: `const linea = $input.first().json.stdout.split('\n').find(l => l.startsWith('DATOS:')); return [{ json: JSON.parse(linea.replace('DATOS:', '')) }];`
 5. **HTTP Request** (`Redactar ficha`) — POST a `https://openrouter.ai/api/v1/chat/completions`. Body con el prompt: `Eres redactor de fichas de assets 3D. Con estos datos técnicos: {{ JSON.stringify($json) }} y el nombre del pack "{{ $('Google Drive Trigger').item.json.name }}", devuelve un JSON con las claves: descripcion (150-200 palabras en inglés, orientada a compradores de Unity y Unreal, mencionando polígonos, texturas PBR y usos típicos), descripcion_es (la versión en español de España), etiquetas (20 etiquetas separadas por comas, en inglés, sin almohadilla), post_x (un tuit de menos de 240 caracteres), precio_sugerido (número en euros, coherente con packs similares). Responde solo el JSON, sin texto alrededor.` Añade `"response_format": {"type": "json_object"}` si tu modelo lo admite.
 6. **Code** (`Parsear respuesta`) — `const txt = $input.first().json.choices[0].message.content.replace(/```json|```/g, '').trim(); return [{ json: JSON.parse(txt) }];`
@@ -98,6 +99,7 @@ print('DATOS:' + json.dumps(datos))
 - **JSON mal formado**: los modelos a veces envuelven la respuesta en bloques de código. El Code del paso 6 ya los limpia; si aun así falla, activa Continue On Fail y manda el texto crudo a Notion para arreglarlo tú.
 - **Etiquetas prohibidas**: cada tienda tiene sus normas (Fab limita el número, Sketchfab no acepta ciertas palabras). Revisa antes de pegar.
 - **Blender abre el .blend con scripts**: si el fichero venía de fuera, `open_mainfile` puede ejecutar código embebido. Usa solo ficheros tuyos, o añade `use_scripts=False`.
+- **Nombres con trampa**: un pack llamado `$(id).glb` o con comillas ejecutaría órdenes si su nombre entrara en el comando. En disco se guarda como `ID-de-Drive.extensión` y el nombre original solo va al prompt y a Notion.
 - **Descripción demasiado genérica**: si todos tus packs suenan igual, añade al prompt tres ejemplos de fichas tuyas que funcionen bien; el resultado mejora muchísimo.
 
 ## Cuánto cuesta

@@ -11,7 +11,7 @@ Flujo de n8n que recibe la petición de un cliente por formulario, lo cobra con 
 ## Cómo usarla
 
 1. Crea el formulario y el enlace de Stripe
-2. Monta el webhook que confirma el pago
+2. Monta el webhook que confirma el pago (con la firma de Stripe verificada)
 3. Comprueba el dominio y deja la revisión de la OEPM a mano
 4. Que lo revise un profesional
 
@@ -45,7 +45,7 @@ Recibe la petición de un cliente que quiere comprobar si puede usar un nombre, 
 
 ## Nodo por nodo
 1. Disparador: nodo Webhook o Typeform Trigger, que se activa cuando el cliente rellena el formulario con el nombre a comprobar y su email.
-2. Nodo Stripe (Create Payment Link o comprobación de pago): antes de seguir, exige que el pago esté hecho; si no lo está, el flujo termina y envía un correo con el enlace de pago pendiente.
+2. Confirmación del pago: envía al cliente el Payment Link de Stripe y escucha el aviso de Stripe con un nodo Stripe Trigger (comprueba la firma) o, con un Webhook genérico, verifica la cabecera `Stripe-Signature` con el «signing secret» del endpoint, guardado en las credenciales o en una variable de entorno. Sigue solo si el evento es `checkout.session.completed` con `payment_status` = `paid` y el id del evento no se había procesado antes; si no, el flujo termina y envía un correo con el enlace de pago pendiente.
 3. Nodo HTTP Request a la API de comprobación de dominios: consulta si el .es y el .com del nombre están libres.
 4. Nodo Set: prepara un campo 'tarea_pendiente_oepm' marcado como true, porque la búsqueda en la OEPM no tiene API pública y la tienes que hacer tú a mano en la sede electrónica.
 5. Nodo Slack o Telegram (opcional): te avisa a ti de que hay una comprobación de OEPM pendiente de hacer a mano, con el nombre y el email del cliente.

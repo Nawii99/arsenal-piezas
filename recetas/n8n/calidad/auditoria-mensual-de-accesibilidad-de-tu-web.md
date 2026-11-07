@@ -44,7 +44,7 @@ Una auditoría de accesibilidad cuesta 600-2.000 €. Esto te da el 80% de los f
 **1. Schedule Trigger** — Months, día 1 a las 4:00. Timezone `Europe/Madrid`.
 **2. Google Sheets** — Get Row(s) de `urls`.
 **3. Loop Over Items** — Batch Size 1 (el análisis es lento, entre 20 y 60 segundos).
-**4. HTTP Request** («Analizar») — GET `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={{ encodeURIComponent($json.url) }}&category=ACCESSIBILITY&category=BEST_PRACTICES&strategy=mobile&key=TU_CLAVE`. Options: Timeout `120000`, Never Error activado. Settings: Retry On Fail 2 intentos, 10.000 ms de espera.
+**4. HTTP Request** («Analizar») — GET `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={{ encodeURIComponent($json.url) }}&category=ACCESSIBILITY&category=BEST_PRACTICES&strategy=mobile`, con Authentication: Generic > Query Auth con una credencial de n8n (Name `key`, Value tu clave). Options: Timeout `120000`, Never Error activado. Settings: Retry On Fail 2 intentos, 10.000 ms de espera. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 **5. Code** («Traducir fallos»):
 ```js
 const r = $json;

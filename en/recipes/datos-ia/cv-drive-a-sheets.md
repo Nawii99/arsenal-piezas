@@ -17,7 +17,7 @@ Every time a new CV is uploaded to a Google Drive folder, the automation convert
 
 ## Accounts needed
 - Google account (Drive, Docs, and Sheets): free, with the normal limits of a personal or Workspace account.
-- n8n: free if you install it yourself (self-hosted); paid if you use n8n's cloud beyond the free trial plan.
+- n8n: free if you install it yourself (self-hosted); paid if you use n8n Cloud, once its temporary free trial has ended.
 - An AI model with an API (for example OpenAI): not free, charges per use; processing a CV costs cents, but it adds up if there are many.
 
 ## Node by node

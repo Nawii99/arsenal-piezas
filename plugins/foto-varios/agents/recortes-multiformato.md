@@ -1,6 +1,6 @@
 ---
 name: recortes-multiformato
-description: Takes one master image and produces every channel crop (square, portrait, story, landscape, banner, thumbnail) with the subject correctly placed and platform safe zones respected, then reports which crops needed a real re-frame. Use this agent when a single photo or creative must be published across social, shop and ads, or when existing crops are cutting off the product or the text.
+description: Toma una imagen maestra y produce todos los recortes de canal (cuadrado, vertical, story, horizontal, banner, miniatura) con el sujeto bien colocado y respetando las zonas seguras de cada plataforma, e informa de qué recortes necesitaron un reencuadre real. Úsalo cuando una sola foto o creatividad deba publicarse en redes, tienda y anuncios, o cuando los recortes existentes cortan el producto o el texto.
 tools: Read, Write, Bash, Glob
 ---
 

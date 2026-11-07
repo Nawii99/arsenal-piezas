@@ -61,9 +61,9 @@ return [{ json: { ...$json, url: `https://drive.google.com/uc?export=download&id
 {"post_info":{"title":"={{ $json.pie }}","privacy_level":"SELF_ONLY","disable_comment":false},"source_info":{"source":"PULL_FROM_URL","video_url":"={{ $json.url }}"}}
 ```
 Cuando esté todo probado, cambia `SELF_ONLY` por `PUBLIC_TO_EVERYONE`.
-6. **HTTP Request** (Instagram, crear contenedor) — POST `https://graph.facebook.com/v21.0/{IG_USER_ID}/media` con Query: `media_type` = `REELS`, `video_url` = `{{ $json.url }}`, `caption` = `{{ $json.pie }}`, `access_token` = tu token.
+6. **HTTP Request** (Instagram, crear contenedor) — POST `https://graph.facebook.com/v21.0/{IG_USER_ID}/media` con Query: `media_type` = `REELS`, `video_url` = `{{ $json.url }}`, `caption` = `{{ $json.pie }}`; el token va en Authentication: Generic > Query Auth con una credencial de n8n (Name `access_token`, Value tu token), no en el nodo. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 7. **Wait** — 60 segundos (Instagram necesita procesar el vídeo).
-8. **HTTP Request** (Instagram, publicar) — POST `https://graph.facebook.com/v21.0/{IG_USER_ID}/media_publish` con `creation_id` = `{{ $('HTTP Request1').item.json.id }}` y el token.
+8. **HTTP Request** (Instagram, publicar) — POST `https://graph.facebook.com/v21.0/{IG_USER_ID}/media_publish` con `creation_id` = `{{ $('HTTP Request1').item.json.id }}` y la misma credencial Query Auth.
 9. **Google Drive** (Download File) + **YouTube** (Upload) — Title `{{ $json.titulo }}`, Options → Description con el pie y `#Shorts`, Privacy `public`. Un vídeo vertical de menos de 3 minutos entra solo como Short.
 10. **Google Drive** (Share File) — vuelve a poner el permiso restringido: Operation `Share`, Permissions → borra el acceso público. Alternativa: mueve el archivo a una carpeta `Publicados` no compartida.
 11. **Google Sheets** (Append Row) — registra qué red aceptó y qué red falló.

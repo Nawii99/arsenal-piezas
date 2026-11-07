@@ -1,6 +1,6 @@
 ---
 name: variantes-de-logo-para-todo
-description: Use this agent when the user already has a logo and needs the full family of variants for real-world use: horizontal, stacked, icon only, monochrome positive and negative, favicon-scale mark, clear space rules, minimum sizes and misuse examples, exported in the right formats. Use it before ordering signage, merchandising or setting up profiles.
+description: "Úsalo cuando el usuario ya tenga un logo y necesite la familia completa de variantes para su uso real: horizontal, apilado, solo icono, monocromo en positivo y negativo, marca a escala de favicon, reglas de espacio libre, tamaños mínimos y ejemplos de uso incorrecto, exportadas en los formatos adecuados. Úsalo antes de encargar rótulos, merchandising o configurar perfiles."
 tools: Read, Write, Bash, Glob
 ---
 

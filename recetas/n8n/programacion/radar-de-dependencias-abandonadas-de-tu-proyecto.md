@@ -36,7 +36,7 @@ Cada lunes lee el package.json de tus repos, pregunta al registro de npm cuándo
 Está pensado para el desarrollador o el estudio pequeño que mantiene varios proyectos de clientes y no tiene tiempo de mirar dependencia por dependencia.
 
 ## Lo que necesitas antes
-- Una cuenta de n8n: la Community Edition auto-alojada es gratis, o el plan gratuito de n8n Cloud.
+- Una cuenta de n8n: la Community Edition auto-alojada es gratis, o n8n Cloud (prueba gratuita temporal y después de pago).
 - Un token de GitHub: entra en github.com/settings/tokens, «Generate new token (classic)», marca solo el permiso `repo` si tus repositorios son privados (si son públicos no hace falta ni token). Cópialo, solo se ve una vez.
 - Nada de claves para npm: el registro público `https://registry.npmjs.org` no pide autenticación.
 - Una hoja de Google Sheets llamada «Salud dependencias» con las columnas: fecha, repo, paquete, version_usada, ultima_version, meses_sin_publicar, semaforo.
@@ -92,4 +92,4 @@ Ejecuta el workflow con el botón «Test workflow» pero con un solo repositorio
 - **Duplicados en la hoja**: si ejecutas dos veces el mismo lunes tendrás filas repetidas. Añade antes del Append un nodo **Google Sheets** con operación «Lookup» filtrando por fecha y paquete, y un **IF** que descarte lo ya escrito.
 
 ## Cuánto cuesta
-Todo gratis: n8n auto-alojado en un VPS de 5 euros al mes (o gratis en tu propio ordenador), el registro de npm es público y sin coste, Google Sheets y Gmail entran en la cuenta gratuita. Solo pagarías si usas n8n Cloud y superas las 2.500 ejecuciones mensuales del plan de entrada, cosa difícil con una ejecución semanal.
+Todo gratis: n8n auto-alojado en un VPS de 5 euros al mes (o gratis en tu propio ordenador), el registro de npm es público y sin coste, Google Sheets y Gmail entran en la cuenta gratuita. Solo pagarías si usas n8n Cloud, que tras la prueba gratuita temporal es de pago; con una ejecución semanal el consumo de ejecuciones es mínimo.

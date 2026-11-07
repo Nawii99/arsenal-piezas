@@ -98,5 +98,5 @@ return [{ json: {
 
 ## Cuánto cuesta
 - Google Docs, Drive, Sheets y Gmail: gratis con cuenta personal.
-- n8n: el Form Trigger funciona en el plan gratuito de la nube y en auto-alojado.
-- Coste 0 €. Solo tu tiempo montando la plantilla, una hora bien invertida.
+- n8n: el Form Trigger funciona en n8n autoalojado (gratis). n8n Cloud no tiene plan gratuito permanente: solo prueba temporal y después planes de pago.
+- Coste 0 € con n8n autoalojado. Solo tu tiempo montando la plantilla, una hora bien invertida.

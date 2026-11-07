@@ -35,7 +35,7 @@ Evita rehacer una identidad entera por un fallo de contraste: una auditoría man
 Recorre todos los pares de colores de tu paleta (texto sobre fondo) y calcula el ratio de contraste según la fórmula oficial WCAG 2.1. Cada lunes te llega un correo con la tabla de combinaciones seguras y las prohibidas, para diseñadores y estudios que entregan manuales de marca.
 
 ## Lo que necesitas antes
-- Cuenta de n8n (n8n.cloud tiene plan gratuito, o auto-alojado con Docker: `docker run -p 5678:5678 n8nio/n8n`).
+- Cuenta de n8n (n8n.cloud solo tiene prueba gratuita temporal, o auto-alojado con Docker: `docker run -p 5678:5678 n8nio/n8n`).
 - Una hoja de Google Sheets llamada `Paleta` con columnas: `nombre`, `hex`, `uso` (una fila por color, hex con almohadilla, por ejemplo `#0F4C81`).
 - Credencial de Google Sheets en n8n: se crea en console.cloud.google.com, APIs y servicios, activar Google Sheets API, crear ID de cliente OAuth tipo Aplicación web y pegar el Redirect URI que te da n8n.
 - Credencial de Gmail en n8n (mismo proyecto de Google Cloud, activando Gmail API).
@@ -71,6 +71,6 @@ return salida;
 - **Paleta grande**: con 15 colores salen 210 pares y el correo se hace ilegible. Filtra en el paso 4 añadiendo condición `uso` contiene `texto`.
 
 ## Cuánto cuesta
-- n8n auto-alojado: 0 euros. Plan gratuito de n8n Cloud: suficiente (4 ejecuciones al mes).
+- n8n auto-alojado: 0 euros. n8n Cloud: tras la prueba gratuita temporal es de pago (no tiene plan gratuito permanente).
 - Google Sheets y Gmail: gratis con cuenta personal. Si usas Google Workspace ya lo pagas igual.
 - Coste real: 0 euros al mes.

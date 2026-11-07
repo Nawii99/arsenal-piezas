@@ -42,7 +42,7 @@ Para mantenedores de proyectos abiertos y para equipos internos con un repo de s
 - n8n con URL pública para recibir el webhook.
 
 ## Los nodos, en orden
-**1. Webhook** — `POST`, Path `issue-nueva`, Respond `Immediately`. En GitHub, Settings > Webhooks, evento individual **Issues**.
+**1. Webhook** — `POST`, Path `issue-nueva`, Respond `Immediately`. En GitHub, Settings > Webhooks, evento individual **Issues**. Valida la firma `X-Hub-Signature-256` con el Secret del webhook de GitHub y descarta entregas repetidas por `X-GitHub-Delivery`.
 **2. IF** («Solo issues abiertas por humanos») — Condición 1: `{{ $json.body.action }}` igual a `opened`. Condición 2: `{{ $json.body.issue.user.type }}` igual a `User`. Combinador `AND`.
 **3. HTTP Request** («Clasificar») — `POST` `https://api.anthropic.com/v1/messages`, headers `x-api-key`, `anthropic-version: 2023-06-01`, `content-type: application/json`, body JSON con el prompt de abajo.
 **4. Code** («Parsear respuesta») — extrae el JSON del texto devuelto.

@@ -70,4 +70,4 @@ Prueba primero con un vídeo puesto «No listado». Ejecuta hasta el nodo 6 y le
 - **Cuota de YouTube**: cada `videos.update` cuesta 50 unidades de las 10.000 diarias. Sobra, pero no lo pongas cada 5 minutos.
 
 ## Cuánto cuesta
-n8n y YouTube, gratis. La IA: un SRT de 20 minutos son unos 6.000 tokens, menos de 0,02 € por vídeo. Con 5 € tienes para meses.
+n8n autoalojado (Community Edition) y YouTube, gratis (n8n Cloud: prueba gratuita temporal y después de pago). La IA: un SRT de 20 minutos son unos 6.000 tokens, menos de 0,02 € por vídeo. Con 5 € tienes para meses.

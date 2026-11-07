@@ -38,7 +38,7 @@ Cada lunes revisa tu histórico de sesiones, calcula quién lleva más de 90 dí
 Para cualquier negocio de salud y bienestar con clientes recurrentes y una hoja o export de sesiones realizadas.
 
 ## Lo que necesitas antes
-- n8n instalado (auto-alojado gratis o plan gratuito en cloud).
+- n8n instalado (auto-alojado gratis; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).
 - Una hoja de Google Sheets «Historial» con columnas: Nombre, Email, Servicio, Fecha sesion, Importe. Puedes exportarla de tu software de citas una vez a la semana o volcarla a mano.
 - Una segunda pestaña «Reactivados» que hará de registro para no repetir envíos.
 - Cuenta de Gmail o Google Workspace. Credencial en n8n: «Gmail OAuth2».

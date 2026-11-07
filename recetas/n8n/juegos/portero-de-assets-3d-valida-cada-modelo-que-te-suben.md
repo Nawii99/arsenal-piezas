@@ -45,9 +45,10 @@ Un archivo de texto con tus normas decidido de antemano: por ejemplo máximo 30.
 ## Los nodos, en orden
 **Google Drive Trigger** — Resource: File, Event: «File Created», Folder: 01-ENTRADA-ASSETS, Poll Times: cada 5 minutos. Devuelve el id y el nombre del archivo.
 **IF** — Condición String → «Operation: Regex Match» sobre `{{$json.name}}` con el patrón `\.(fbx|obj|glb|blend)$`. La rama false no hace nada (así ignoras readme y capturas).
+**Code** («Nombre seguro», modo «Run Once for Each Item») — `const ext = String($json.name).split('.').pop().toLowerCase(); if (!['fbx','obj','glb','blend'].includes(ext) || !/^[A-Za-z0-9_-]+$/.test($json.id)) throw new Error('Formato no admitido: ' + $json.name); return { json: { ...$json, archivo: $json.id + '.' + ext } };`. En disco y en el comando solo se usa `archivo`.
 **Google Drive** — Resource: File, Operation: Download, File ID: `{{$json.id}}`. En Options activa «Binary Property» con nombre `data`.
-**Read/Write Files from Disk** — Operation: Write File to Disk, File Path: `/data/assets/{{$json.name}}`, Input Binary Field: `data`.
-**Execute Command** — Command: `blender -b -P /data/scripts/validar.py -- "/data/assets/{{ $('Google Drive Trigger').item.json.name }}"`. Marca «Execute Once» desactivado.
+**Read/Write Files from Disk** — Operation: Write File to Disk, File Path: `/data/assets/{{ $('Nombre seguro').item.json.archivo }}`, Input Binary Field: `data`.
+**Execute Command** — Command: `blender -b -P /data/scripts/validar.py -- "/data/assets/{{ $('Nombre seguro').item.json.archivo }}"`. Marca «Execute Once» desactivado.
 **Code** — modo «Run Once for Each Item», recoge la salida de la consola y saca el JSON (código completo más abajo).
 **Google Sheets** — Operation: Append Row, documento «Control assets», hoja «Hoja 1», mapeo manual de cada columna con los campos del Code.
 **IF** — Boolean: `{{$json.veredicto}}` igual a `RECHAZADO`.
@@ -101,6 +102,7 @@ Blender tarda mucho con escenas pesadas: sube el «Timeout» del nodo Execute Co
 El disparador de Drive puede repetir un archivo si la subida es lenta. Añade un nodo **Remove Duplicates** con «Keep Items Where: Value Is New» sobre `{{$json.id}}`.
 Los .fbx exportados de Maya a veces traen unidades en centímetros y la escala saldrá siempre mal: ajusta el umbral en el script o aplica un factor conocido.
 Si n8n corre en Docker, la carpeta `/data` tiene que estar montada como volumen o los archivos desaparecen entre nodos.
+Un archivo llamado `$(id).glb` o con comillas ejecutaría órdenes si su nombre entrara en el comando: por eso en disco va como `ID-de-Drive.extensión` y el nombre original solo se apunta en la hoja y el correo.
 
 ## Cuánto cuesta
 Blender es gratis. n8n auto-alojado es gratis, solo pagas el servidor (5-6 €/mes en Hetzner o similar, o 0 € si lo dejas en tu propio PC).

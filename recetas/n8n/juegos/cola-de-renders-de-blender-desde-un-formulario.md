@@ -44,19 +44,27 @@ Para artistas 3D y estudios pequeños con un PC potente que quieren usarlo como 
 ## Los nodos, en orden
 1. **Form Trigger** (n8n Form) — Campos: «archivo» (tipo File), «fotograma» (número, por defecto 1), «ancho» (por defecto 1920), «alto» (1080), «muestras» (128), «email_aviso» (opcional).
 2. **Read/Write Files from Disk** (operación «Write») — Guarda el .blend recibido en `/data/renders/entrada/{{ $execution.id }}.blend`.
-3. **Execute Command** — El comando de render (abajo, entero).
-4. **IF** — Comprueba `{{ $json.exitCode }}` igual a `0`. Si no, salta a la rama de error.
-5. **Read/Write Files from Disk** (operación «Read») — Lee `/data/renders/salida/{{ $execution.id }}_0001.png` como binario.
-6. **Google Drive** («Upload File») — Sube el PNG a una carpeta «Renders» y activa «Share → Anyone with the link» en las opciones para obtener un enlace público.
-7. **Telegram** («Send Message») — `✅ Render listo ({{ $('Form Trigger').item.json.ancho }}x{{ $('Form Trigger').item.json.alto }}): {{ $json.webViewLink }}`.
-8. **Telegram** (rama de error) — `❌ El render ha fallado. Salida: {{ $json.stderr }}`.
+3. **Code** (renómbralo «Validar fotograma») — Mode: Run Once for Each Item. Convierte «fotograma» en número entero y para el flujo si no lo es (código abajo). Es el único dato del formulario que entra en el comando.
+4. **Execute Command** — El comando de render (abajo, entero).
+5. **IF** — Comprueba `{{ $json.exitCode }}` igual a `0`. Si no, salta a la rama de error.
+6. **Read/Write Files from Disk** (operación «Read») — Lee `/data/renders/salida/{{ $execution.id }}_{{ String($('Validar fotograma').item.json.fotograma).padStart(4, '0') }}.png` como binario.
+7. **Google Drive** («Upload File») — Sube el PNG a una carpeta «Renders» privada. No actives «Anyone with the link»: el render es trabajo de un cliente y no debe quedar público. Si el formulario trae `email_aviso`, añade un nodo **Google Drive** (Operation: Share) con Role `reader`, Type `user` y Email Address ese correo, para que solo esa persona lo abra; sin correo, el archivo queda solo para ti.
+8. **Telegram** («Send Message») — `✅ Render listo ({{ $('Form Trigger').item.json.ancho }}x{{ $('Form Trigger').item.json.alto }}): {{ $json.webViewLink }}`.
+9. **Telegram** (rama de error) — `❌ El render ha fallado. Salida: {{ $json.stderr }}`.
+
+## El código de «Validar fotograma»
+```js
+const n = Number($('Form Trigger').item.json.fotograma);
+if (!Number.isInteger(n) || n < 0 || n > 1048574) throw new Error('Fotograma no válido');
+return { json: { fotograma: n } };
+```
 
 ## El comando del nodo Execute Command
 ```bash
-blender -b "/data/renders/entrada/{{ $execution.id }}.blend" \
+blender -b --disable-autoexec "/data/renders/entrada/{{ $execution.id }}.blend" \
   -o "/data/renders/salida/{{ $execution.id }}_" \
   -F PNG \
-  -f {{ $('Form Trigger').item.json.fotograma }} \
+  -f {{ $('Validar fotograma').item.json.fotograma }} \
   -- --cycles-device CUDA
 ```
 Si quieres forzar resolución y muestras sin tocar el archivo, añade un script Python de Blender con `-P /data/renders/ajustes.py` que contenga:
@@ -76,9 +84,11 @@ e.cycles.samples = 128
 ## Qué puede salir mal
 - **Rutas con espacios**: pon siempre comillas alrededor de las rutas en el comando.
 - **Timeout**: un render largo puede pasar del límite por defecto. En «Settings» del workflow sube «Execution Timeout» a 7200 segundos.
-- **Nombre del archivo de salida**: Blender añade el número de fotograma con ceros (`_0001.png`). Si renderizas el fotograma 250 será `_0250.png`; usa una expresión que rellene con ceros.
+- **Nombre del archivo de salida**: Blender añade el número de fotograma con ceros (`_0001.png`). Si renderizas el fotograma 250 será `_0250.png`; por eso la lectura del paso 6 rellena con ceros el fotograma validado.
 - **GPU**: si el servidor no tiene tarjeta gráfica, quita `--cycles-device CUDA` o tardará una eternidad.
 - **Dos renders a la vez**: pon en Settings «Concurrency» a 1 para que no se peleen por la GPU.
+- **Datos del formulario dentro del comando**: quien rellena el formulario puede mandar cualquier texto aunque el campo sea numérico; por eso el .blend se guarda con el ID de ejecución y «fotograma» pasa antes por «Validar fotograma».
+- **Un .blend con scripts dentro**: el archivo lo sube otra persona y puede llevar Python que se ejecuta al abrirlo si Blender tiene activada la ejecución automática; `--disable-autoexec` lo impide.
 
 ## Cuánto cuesta
 Gratis: Blender es libre, n8n auto-alojado es gratis, Drive gratis hasta 15 GB y Telegram gratis. El único coste real es la luz de tu equipo o el VPS con GPU si lo alquilas (desde unos 0,30 €/hora y solo mientras renderiza).

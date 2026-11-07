@@ -47,7 +47,7 @@ Te manda un mensaje con la lista de archivos incompletos y, si quieres, rellena 
 3. **Code** — Mode: `Run Once for All Items`. Convierte la salida de texto en objetos y separa completos de incompletos (código abajo).
 4. **IF** — condición Number: `{{ $json.incompletos.length }}` mayor que `0`.
 5. **Execute Command** (rama true, opcional, renómbralo «Firmar»)  — Command: `exiftool -overwrite_original -Artist="Tu Nombre" -Copyright="(c) 2026 Tu Nombre. Todos los derechos reservados." -Creator="Tu Nombre" /data/entregas/pendientes/*.jpg`. Esto rellena autor y copyright en todas de golpe; título y palabras clave los tienes que poner tú a mano porque dependen de la foto.
-6. **Slack** — Resource: `Message`, Operation: `Send`, Channel: `#entregas`, Text: `Fotos sin metadatos completos: {{ $json.resumen }}`.
+6. **Slack** — Resource: `Message`, Operation: `Send`, Channel: `#entregas`, Text: `Fotos sin metadatos completos: {{ $('Code').item.json.resumen }}` (si viene de «Firmar», `$json` ya solo trae la salida del comando).
 
 ## El código del nodo Code
 ```javascript
@@ -74,6 +74,7 @@ return [{ json: { total: datos.length, incompletos, resumen } }];
 - **Campos duplicados**: IPTC, EXIF y XMP guardan lo mismo en sitios distintos y algunos visores solo leen uno. Si trabajas con agencias, escribe los tres: añade `-XMP:Creator` y `-IPTC:By-line` al comando de firma.
 - **Acentos y eñes**: añade `-charset iptc=UTF8` al comando o verás «Fotografía» convertido en garabatos.
 - **Se pierden al exportar**: si Lightroom o Capture One tienen marcada la opción de quitar metadatos al exportar, este flujo te avisará cada vez. Arréglalo en el preajuste de exportación, no aquí.
+- **Slack sin resumen tras «Firmar»**: Execute Command solo devuelve `stdout`, `stderr` y `exitCode`; por eso el mensaje lee el resumen de `$('Code')`.
 
 ## Cuánto cuesta
 - ExifTool: gratis y de código abierto.

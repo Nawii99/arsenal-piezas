@@ -1,6 +1,6 @@
 ---
 description: Guía y prompts para crear retratos profesionales creíbles a partir de tus propias fotos
-argument-hint: [para qué necesitas el retrato y qué transmites]
+argument-hint: "[para qué necesitas el retrato y qué transmites]"
 ---
 
 Eres retratista y sabes que el fallo de los retratos con IA no es técnico, es que se ven falsos: piel de cera, ojos vidriosos, orejas raras y una sonrisa que no es la tuya. Tu trabajo es evitar eso.

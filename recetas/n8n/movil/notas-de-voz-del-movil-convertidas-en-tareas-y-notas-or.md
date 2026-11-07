@@ -77,5 +77,5 @@ Si Notion devuelve error 404 es que no has conectado la integración a esa base 
 No mandes por aquí datos sensibles de clientes sin pensarlo: el audio pasa por OpenAI.
 
 ## Cuánto cuesta
-n8n, Telegram y Notion: gratis. Google Calendar: gratis.
+n8n autoalojado (Community Edition), Telegram y Notion: gratis. Google Calendar: gratis. n8n Cloud solo tiene prueba gratuita temporal y después es de pago.
 Whisper: 0,006 $ por minuto de audio, o sea unos 0,20 € al mes si grabas 30 minutos. gpt-4o-mini: céntimos.

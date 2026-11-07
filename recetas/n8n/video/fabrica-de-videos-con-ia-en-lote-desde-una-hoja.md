@@ -36,7 +36,7 @@ Lee prompts de una hoja, lanza cada generación contra la API de un proveedor de
 Para quien hace anuncios, b-roll o contenido de redes con vídeo generado y necesita volumen.
 
 ## Lo que necesitas antes
-- n8n (vale cloud, aquí no hace falta ffmpeg).
+- n8n auto-alojado o n8n Cloud (aquí no hace falta ffmpeg; Cloud tiene una prueba gratuita temporal y después es de pago).
 - Cuenta en **fal.ai** con saldo y una clave de API (fal.ai/dashboard/keys). Si prefieres Runway o Kling directamente, la estructura es la misma: un POST que crea la tarea y un GET que consulta el estado.
 - Credenciales Google Sheets y Google Drive, y un bot de Telegram.
 - Hoja `Prompts` con columnas: `id`, `prompt`, `duracion`, `formato`, `estado`, `url_video`, `request_id`.
@@ -76,5 +76,5 @@ Para quien hace anuncios, b-roll o contenido de redes con vídeo generado y nece
 - **Reintentos**: activa en el nodo HTTP Request `Retry On Fail` con 3 intentos y 5 segundos de espera.
 
 ## Cuánto cuesta
-- n8n, Sheets, Drive y Telegram: 0 €.
+- n8n auto-alojado, Sheets, Drive y Telegram: 0 €. n8n Cloud es de pago tras la prueba gratuita temporal.
 - La generación es lo que se paga: entre 0,25 € y 1,50 € por clip de 5 segundos según el modelo. Cuenta el gasto por adelantado: 20 clips ≈ 10-25 €.

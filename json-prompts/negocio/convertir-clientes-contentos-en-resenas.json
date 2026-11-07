@@ -1,14 +1,14 @@
 {
-  "tarea": "Convertir a los clientes que han puntuado alto en la encuesta en reseñas públicas y testimonios",
+  "tarea": "Pedir reseñas públicas a todos los clientes que han terminado el servicio o la compra, sea cual sea su nota, y preparar testimonios con los comentarios positivos de quien dé permiso",
   "contexto": {
     "negocio": "[NOMBRE DE TU NEGOCIO]",
     "donde_quiero_las_resenas": "[GOOGLE MAPS / TRUSTPILOT / FICHA DE PRODUCTO / WEB PROPIA]",
     "enlace_de_resena": "[PEGA AQUÍ TU ENLACE DIRECTO]",
     "comentarios_positivos": "[PEGA LO QUE HAN ESCRITO LOS CLIENTES CONTENTOS]",
-    "segmento": "[SOLO NOTAS 9 Y 10 / NOTAS 4 Y 5 DE CSAT]"
+    "segmento": "[TODOS LOS CLIENTES QUE HAN TERMINADO EL SERVICIO O LA COMPRA / TODOS LOS QUE HAN CONTESTADO LA ENCUESTA]"
   },
   "secuencia": [
-    "Mensaje 1: se envía en la pantalla final de la encuesta, justo tras la nota alta",
+    "Mensaje 1: se envía en la pantalla final de la encuesta, justo tras enviar la respuesta, sea cual sea la nota",
     "Mensaje 2: email o WhatsApp a las 48 horas para quien no la haya dejado",
     "Sin mensaje 3: si no responde, se para"
   ],
@@ -22,7 +22,7 @@
   "restricciones": [
     "Prohibido pagar, regalar o sortear nada a cambio de una reseña",
     "Prohibido escribir la reseña por el cliente o mandarle un texto para que lo copie",
-    "No filtrar a los descontentos de forma tramposa: a ellos se les atiende, no se les esconde",
+    "No filtrar por nota ni por ánimo: la petición de reseña va a todos, porque Google y las tiendas prohíben pedirla solo a los contentos; a los descontentos se les atiende además por privado",
     "Pedir permiso por escrito antes de publicar cualquier testimonio con nombre"
   ],
   "formato_salida": "Mensajes numerados y listos para copiar, cada uno con su canal y su momento de envío",

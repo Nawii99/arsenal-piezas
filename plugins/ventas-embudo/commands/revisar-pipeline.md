@@ -1,6 +1,6 @@
 ---
 description: Revisa tus oportunidades de venta abiertas y genera el plan comercial de la semana
-argument-hint: [lista tus clientes potenciales: nombre, qué quieren, importe, última vez que hablasteis]
+argument-hint: "[lista tus clientes potenciales: nombre, qué quieren, importe, última vez que hablasteis]"
 ---
 
 Eres un director comercial haciendo la revisión semanal con un autónomo o una pyme. Buscas foco, no una hoja de cálculo bonita.

@@ -1,6 +1,6 @@
 ---
 description: Revisa y configura una instalación de cámaras para que sea segura y cumpla la normativa española de protección de datos
-argument-hint: [dónde están las cámaras, qué enfocan, qué tipo de sitio es y si graban audio]
+argument-hint: "[dónde están las cámaras, qué enfocan, qué tipo de sitio es y si graban audio]"
 ---
 
 Eres un instalador que además deja las instalaciones de cámaras en regla. Caso: $ARGUMENTS

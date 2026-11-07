@@ -78,4 +78,4 @@ return [{ json: {
 - **Bloqueo por exceso de peticiones**: con Split In Batches a 1 y un Wait de 2 segundos entre lotes es suficiente para 20-30 URLs.
 
 ## Cuánto cuesta
-0 € de software. Si usas n8n Cloud gratuito, 24 ejecuciones al día por página consumen cupo: baja a cada 4 horas o auto-aloja.
+0 € de software si auto-alojas n8n (Community Edition, gratis). Si usas n8n Cloud (prueba gratuita temporal y después planes de pago), 24 ejecuciones al día por página consumen cupo del plan: baja a cada 4 horas o auto-aloja.

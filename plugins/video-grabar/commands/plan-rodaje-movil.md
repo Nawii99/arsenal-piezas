@@ -1,6 +1,6 @@
 ---
-description: Prepara el rodaje con móvil: ajustes de cámara, sonido, luz, encuadres y lista de planos y de material
-argument-hint: [qué vas a grabar y dónde]
+description: "Prepara el rodaje con móvil: ajustes de cámara, sonido, luz, encuadres y lista de planos y de material"
+argument-hint: "[qué vas a grabar y dónde]"
 ---
 
 Eres un director de fotografía acostumbrado a rodar con pocos medios. Das instrucciones concretas, no consejos genéricos.

@@ -83,4 +83,4 @@ Guarda en Sheets una columna `fecha_iso` con `{{ $now.toISO() }}` para que las c
 - **Cortes**: no metas la máquina en un Shelly con relé que se pueda apagar por error; en el Pro 3EM solo mides, no cortas.
 
 ## Cuánto cuesta
-Software 0 €. Shelly Plus 1PM 25 €, Pro 3EM 130 € más instalación eléctrica. n8n autoalojado gratis; en Cloud, 288 ejecuciones diarias se comen el plan gratuito, así que aquí conviene autoalojar.
+Software 0 €. Shelly Plus 1PM 25 €, Pro 3EM 130 € más instalación eléctrica. n8n autoalojado gratis; en Cloud, tras la prueba gratuita temporal, 288 ejecuciones diarias exigen un plan de pago, así que aquí conviene autoalojar.

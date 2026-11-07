@@ -62,7 +62,7 @@ public class Telemetria : MonoBehaviour {
 ```
 
 ## Los nodos, en orden (flujo 1: recogida)
-**Webhook** — HTTP Method: POST, Path: `telemetria`, Respond: Immediately, Response Code: 200.
+**Webhook** — HTTP Method: POST, Path: `telemetria`, Respond: Immediately, Response Code: 200. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 **IF** — `{{$json.headers['x-secreto']}}` igual a tu secreto. La rama false no hace nada.
 **Code** — normaliza y añade la marca de tiempo: `return {json:{ts:new Date().toISOString(), sesion:$json.body.sesion, evento:$json.body.evento, nivel:$json.body.nivel, valor:$json.body.valor, version:$json.body.version, plataforma:$json.body.plataforma}};`
 **Google Sheets** — Append Row en la pestaña «eventos», mapeo manual columna a columna.

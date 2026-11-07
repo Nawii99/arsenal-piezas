@@ -1,6 +1,6 @@
 ---
 name: critica-de-diseno-antes-de-publicar
-description: Use this agent when the user has a nearly finished design (landing page, poster, social post, slide, packaging mockup, menu) and wants a structured professional critique that names what is wrong, why, and the smallest change that fixes it, ranked by impact. Use it right before publishing or printing.
+description: Úsalo cuando el usuario tenga un diseño casi terminado (landing page, cartel, publicación social, diapositiva, maqueta de packaging, carta) y quiera una crítica profesional estructurada que diga qué está mal, por qué y el cambio más pequeño que lo arregla, ordenado por impacto. Úsalo justo antes de publicar o imprimir.
 tools: Read, Write, Bash, WebFetch, Glob
 ---
 

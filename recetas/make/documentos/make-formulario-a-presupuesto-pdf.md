@@ -52,7 +52,7 @@ Módulo 2 · Google Sheets › Search Rows (o Search Rows (Advanced)).
 - Filter: columna Servicio, Equal to, la respuesta «Servicio» del módulo 1. Maximum number of returned rows: 1.
 - Si el servicio no coincide con ninguna fila de la hoja, Make se para aquí y no crea nada. Mira el historial si un formulario no genera presupuesto.
 Módulo 3 · Tools › Set multiple variables.
-- numero: {{formatDate(now; "YYYYMMDD-HHmmss"; "Europe/Madrid")}} Es una referencia, no una numeración correlativa. Si necesitas una serie correlativa, llévala tú.
+- numero: {{formatDate(now; "YYYYMMDD-HHmmss"; "Europe/Madrid")}} Es una referencia, no una numeración correlativa. Si necesitas una serie correlativa, llévala tú (reserva el número antes de enviar y comprueba que no existe ya).
 - fecha: {{formatDate(now; "DD/MM/YYYY"; "Europe/Madrid")}}
 - validez: {{formatDate(addDays(now; 30); "DD/MM/YYYY"; "Europe/Madrid")}} Cambia el 30 por los días que quieras.
 Módulo 4 · Google Docs › Create a Document from a Template.
@@ -66,7 +66,7 @@ Módulo 6 · Gmail › Create a Draft.
 - Content: «Hola [nombre]. Te adjunto el presupuesto que nos has pedido. Tiene validez hasta el [validez]. Si tienes dudas, escríbeme. Un saludo, [TU NOMBRE]».
 - Attachments: añade un adjunto. En el nombre pon el del PDF, que debe acabar en .pdf, y en Data pon los datos del PDF del módulo 5.
 Módulo 7 · Gmail › Send an Email.
-- To: tu correo. Subject: «Presupuesto nuevo para revisar». Content: nombre del cliente, servicio y enlace al documento de Drive. Si el módulo 4 no te da el enlace, escribe https://docs.google.com/document/d/ y detrás el ID del documento.
+- To: tu correo. Subject: «Presupuesto nuevo para revisar». Content: nombre del cliente, servicio y enlace al documento de Drive. Si el módulo 4 no te da el enlace, escribe https://docs.google.com/document/d/ y detrás el ID del documento. Ese enlace solo abrirá para ti (documento privado).
 CÓMO PROBARLA
 Rellena el formulario UNA vez con datos inventados y tu propio correo.
 Pulsa Run once. Abre el documento creado y comprueba que ningún marcador se ha quedado sin rellenar.
@@ -80,7 +80,7 @@ QUÉ NO HACER
 No envíes el PDF sin que una persona haya revisado importes, IVA, condiciones y datos del cliente.
 No metas cláusulas legales sin que las haya mirado tu gestor o abogado. Un presupuesto no es asesoramiento legal ni fiscal.
 No pidas en el formulario DNI ni datos bancarios si no hacen falta.
-No compartas la carpeta Presupuestos con «cualquier persona con el enlace».
+No compartas la carpeta ni los documentos con acceso por enlace público: llevan datos personales del cliente. Si hay que dar acceso, hazlo solo a personas concretas (su correo) o envía el PDF adjunto.
 QUÉ REVISAR A MANO ANTES DE ACTIVARLA
 Que las tarifas están al día y que los servicios de la hoja coinciden con el formulario.
 Que el IVA y las condiciones de pago son correctos para ese servicio. Que lo confirme tu gestor.

@@ -6,7 +6,7 @@ Días después de la compra el cliente recibe un email pidiéndole un vídeo cor
 
 ## Qué es y qué hace
 
-Toma la lista de clientes de una hoja y, 14 días después de la entrega, envía un correo pidiendo un vídeo de 30 segundos con tres preguntas y un enlace de subida a Drive. Al recibirlo avisa, registra el vídeo y envía un agradecimiento; a los 7 días hace un único recordatorio. Entran clientes y fechas de entrega; sale una hoja con los testimonios recibidos. Para tiendas, servicios y formadores.
+Toma la lista de clientes de una hoja y, 14 días después de la entrega, envía un correo pidiendo un vídeo de 30 segundos con tres preguntas y un formulario de subida que guarda en una carpeta privada de Drive. Al recibirlo avisa, registra el vídeo y envía un agradecimiento; a los 7 días hace un único recordatorio. Entran clientes y fechas de entrega; sale una hoja con los testimonios recibidos. Para tiendas, servicios y formadores.
 
 ## Cómo usarla
 
@@ -38,7 +38,7 @@ Toma la lista de clientes de una hoja de cálculo y, 14 días después de la ent
 ## Lo que necesitas antes
 - n8n.
 - Hoja `Clientes` con columnas: `nombre`, `email`, `producto`, `fecha_entrega`, `peticion_enviada`, `recordatorio_enviado`, `video_recibido`, `fecha_video`, `permiso`.
-- Carpeta de Drive `TESTIMONIOS` compartida con permiso de escritura para «cualquier persona con el enlace».
+- Carpeta de Drive `TESTIMONIOS` privada, con acceso restringido (solo tú): contiene vídeos con la cara de tus clientes (datos personales). Los clientes suben por el formulario de n8n, no por la carpeta.
 - Gmail conectado en n8n.
 - Un formulario n8n para la subida (Form Trigger con campo de archivo), que es más limpio que dar el enlace de Drive directamente.
 
@@ -104,10 +104,10 @@ return salida;
 
 ## Qué puede salir mal
 - **Límite de Gmail**: 500 correos al día en cuentas normales. El Split In Batches con Wait de 30 segundos también evita que Google te marque como envío masivo.
-- **Vídeos de móvil enormes**: un minuto en 4K son 300-400 MB. En n8n cloud puede petar por memoria; si te pasa, en vez del formulario da directamente el enlace de la carpeta de Drive con permiso de escritura.
+- **Vídeos de móvil enormes**: un minuto en 4K son 300-400 MB. En n8n cloud puede petar por memoria; si te pasa, en vez del formulario usa un Google Form con subida de archivos (el cliente inicia sesión con Google) que guarde en la carpeta, que sigue siendo privada.
 - **Permiso legal**: guarda siempre la respuesta del desplegable de permiso. Publicar la cara de alguien sin consentimiento expreso es un problema con el RGPD, no un detalle.
 - **Vídeo en vertical cuando lo querías horizontal**: dilo en el correo, en negrita, o acepta ambos y planifica el uso.
 - **Correos que caen en spam**: usa tu dominio propio en Gmail con SPF y DKIM configurados, no una cuenta gratuita recién creada.
 
 ## Cuánto cuesta
-Cero euros de herramientas: n8n gratuito, Sheets, Gmail y Drive. El único coste real es el descuento del 10% que ofreces, y sale mucho más barato que producir un testimonio. Ojo con el espacio de Drive si acumulas vídeos: pásalos a un disco cada trimestre.
+Cero euros de herramientas: n8n autoalojado gratuito (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago), Sheets, Gmail y Drive. El único coste real es el descuento del 10% que ofreces, y sale mucho más barato que producir un testimonio. Ojo con el espacio de Drive si acumulas vídeos: pásalos a un disco cada trimestre.

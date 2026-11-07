@@ -20,13 +20,13 @@ A flow designed to sell the 'create your course package' service without having 
 - An account with access to the Claude API or similar, to generate the material (paid by usage, check the current price before setting your rate).
 - Gmail or an SMTP server, to send the material by email (the free Gmail plan allows about 500 sends per day).
 - Google Sheets, to keep the order record (free).
-- n8n, on its free self-hosted plan or in the cloud with the execution limit your plan has.
+- n8n self-hosted (free, you maintain it) or n8n Cloud (temporary free trial, then paid plans).
 
 ## Nodes, in order
 1. Trigger: Webhook or Tally/Google Forms node, which fires when someone submits the order (course topic, level, number of students, email).
 2. Stripe node (Create Payment Link or Checkout Session): generates a payment link with the price calculated according to what the customer selected in the form.
 3. Send Email node: sends the payment link to the customer, and the flow stops there until they pay.
-4. Stripe Webhook node: listens for the 'checkout.session.completed' event, which confirms that the customer has paid.
+4. Stripe Trigger node (it verifies the webhook signature): listens for the 'checkout.session.completed' event. If you use a generic Webhook, first verify the Stripe-Signature header with the endpoint's "signing secret". Before continuing, check that payment_status is paid and store the event id so the material is not generated or sent twice if it arrives repeated.
 5. HTTP Request node: calls the AI's API with the course package generation prompt, using the JSON product sheet with the form data.
 6. Function or Code node: formats the text the AI returns and prepares it to be converted into a PDF.
 7. PDF conversion node (an external service or a template): generates the final document that is delivered.

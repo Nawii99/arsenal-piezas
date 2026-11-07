@@ -1,6 +1,6 @@
 ---
 name: postmortem-de-contenido
-description: Reviews a period of published content against its performance data, separates signal from noise, identifies the patterns behind what worked and what did not, and returns a keep-fix-drop plan with the next month's editorial bets. Use this agent monthly or quarterly when the user has been publishing and needs to decide what to continue.
+description: Revisa un periodo de contenido publicado frente a sus datos de rendimiento, separa la señal del ruido, identifica los patrones detrás de lo que funcionó y lo que no, y devuelve un plan de mantener, arreglar o descartar con las apuestas editoriales del mes siguiente. Úsalo cada mes o trimestre cuando el usuario haya estado publicando y necesite decidir qué continuar.
 tools: Read, Write, Glob, Grep, Bash
 ---
 

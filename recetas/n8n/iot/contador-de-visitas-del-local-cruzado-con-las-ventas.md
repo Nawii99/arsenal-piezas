@@ -42,7 +42,7 @@ Cada vez que alguien cruza la puerta, un sensor dispara un webhook y n8n apunta 
 - Los **tickets del día**: los metes tú a mano en una tercera pestaña `Ventas` (`fecha`, `tickets`, `importe`) o los saca tu TPV si tiene exportación.
 
 ## Los nodos, en orden
-1. **Webhook** — GET, path `paso`. Configura la acción del Shelly (*Ajustes > Acciones > Entrada activada*) apuntando a esa URL.
+1. **Webhook** — GET, path `paso`. Configura la acción del Shelly (*Ajustes > Acciones > Entrada activada*) apuntando a esa URL. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** — normaliza y antirrebote:
 ```js
 const st = $getWorkflowStaticData('global');

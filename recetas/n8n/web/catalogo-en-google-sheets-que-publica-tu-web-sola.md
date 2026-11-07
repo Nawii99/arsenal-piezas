@@ -98,4 +98,4 @@ return [{ json: {
 ## Cuánto cuesta
 - Cloudflare Pages: gratis (500 builds al mes) y hosting sin límite de tráfico. Netlify: 300 minutos de build gratis.
 - GitHub, Google Sheets y Telegram: gratis.
-- n8n auto-alojado gratis; en la nube gratuita, 24 ejecuciones al día son demasiadas: pon el Schedule cada 6 horas o usa el disparador manual con formulario.
+- n8n auto-alojado gratis; n8n Cloud tiene una prueba gratuita temporal y después es de pago, y 24 ejecuciones al día gastan mucho de tu cuota: pon el Schedule cada 6 horas o usa el disparador manual con formulario.

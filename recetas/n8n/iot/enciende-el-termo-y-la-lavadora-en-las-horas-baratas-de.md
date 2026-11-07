@@ -44,7 +44,7 @@ Para autónomos y pequeños negocios con tarifa PVPC o indexada y algún aparato
 1. **Schedule Trigger** — Cron Expression: `2 * * * *` (minuto 2 de cada hora, para no pillar la API justo en el cambio).
 2. **HTTP Request** — Method GET, URL `https://api.preciodelaluz.org/v1/prices/all?zone=PCB`. Options > Response > Never Error activado.
 3. **Code** (llámalo «Elegir horas») — Run Once for All Items, código abajo.
-4. **HTTP Request** (llámalo «Mandar a Shelly») — Method POST, URL `https://shelly-53-eu.shelly.cloud/device/relay/control` (tu servidor). Body Form Urlencoded con: `id` = tu device id, `auth_key` = tu clave, `channel` = `0`, `turn` = `{{ $json.accion }}`.
+4. **HTTP Request** (llámalo «Mandar a Shelly») — Method POST, URL `https://shelly-53-eu.shelly.cloud/device/relay/control` (tu servidor). Body Form Urlencoded con: `id` = tu device id, `auth_key` desde una credencial de n8n en lugar de escrito en el nodo (Authentication: Generic Credential Type > Custom Auth, con el JSON `{"body": {"auth_key": "tu clave"}}`: un flujo exportado se llevaría la clave), `channel` = `0`, `turn` = `{{ $json.accion }}`.
 5. **Google Sheets** — Append Row en «Luz»: fecha `{{ $json.fecha }}`, hora `{{ $json.hora }}`, precio `{{ $json.precio }}`, decision `{{ $json.accion }}`.
 ## El código del nodo Code
 ```js

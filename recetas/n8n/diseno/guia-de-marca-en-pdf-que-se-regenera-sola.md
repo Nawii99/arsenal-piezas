@@ -49,7 +49,7 @@ Lee la definición de la marca desde Google Sheets, monta un HTML con muestras d
 5. **Code** — Mode: Run Once for All Items. Construye el HTML completo (código abajo) y lo deja como archivo binario `index.html`.
 6. **HTTP Request** (renombra a «HTML a PDF») — Method: POST, URL `http://localhost:3000/forms/chromium/convert/html`. Body Content Type: Form-Data, un parámetro de tipo n8n Binary File llamado `files` con Input Data Field Name `data`. Options > Response Format: File, campo `data`.
 7. **Google Drive** — Operation: Upload. File Name: `Guia-de-marca-{{ $now.format('yyyy-MM-dd') }}.pdf`. Carpeta «Marca».
-8. **Google Drive** — Operation: Share, Role Reader, Type Anyone with link.
+8. **Google Drive** — Operation: Share, Role Reader, Type User, con el correo de cada persona del equipo (o Type Domain con el dominio de tu empresa). No uses «Anyone with link»: la guía es interna y un enlace público se reenvía sin control.
 9. **Slack** — Send Message al canal del equipo: `Guía de marca actualizada: {{ $json.webViewLink }}`.
 
 ## El nodo Code

@@ -1,6 +1,6 @@
 ---
 name: rescate-abandono-curso
-description: Use this agent when the user has student progress data (CSV export from a course platform, spreadsheet or list) and wants to find where students drop off, why, and get a concrete re-engagement plan with ready-to-send messages. Use this agent when they say "nadie termina mi curso", "tengo alumnos parados" or "exportar datos de la plataforma".
+description: Úsalo cuando el usuario tenga datos de progreso de los alumnos (exportación CSV de una plataforma de cursos, hoja de cálculo o lista) y quiera encontrar dónde abandonan los alumnos y por qué, y obtener un plan de reactivación concreto con mensajes listos para enviar. Úsalo cuando diga "nadie termina mi curso", "tengo alumnos parados" o "exportar datos de la plataforma".
 tools: Read, Write, Bash
 ---
 

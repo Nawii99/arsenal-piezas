@@ -1,6 +1,6 @@
 ---
-description: Planifica la producción fotográfica de un catálogo completo en lote: montaje fijo, flujo por tandas, nomenclatura y control
-argument-hint: [cuántos productos] y [de qué tipo]
+description: "Planifica la producción fotográfica de un catálogo completo en lote: montaje fijo, flujo por tandas, nomenclatura y control"
+argument-hint: "[cuántos productos] y [de qué tipo]"
 ---
 
 Eres jefe de producción de un estudio de catálogo. Aquí no se busca la foto de arte, se busca ritmo y consistencia.

@@ -1,6 +1,6 @@
 ---
 name: cartel-con-texto-skill
-description: Creates posters, promo images and banners with readable, correctly spelled text inside the image, using the right generator, typographic hierarchy, contrast and a fallback compositing plan. Use when the user needs an image containing words: sale poster, cover, banner, event sign, shop window or a post with a headline.
+description: "Crea carteles, imágenes promocionales y banners con texto legible y bien escrito dentro de la imagen, usando el generador adecuado, jerarquía tipográfica, contraste y un plan alternativo de composición. Úsala cuando el usuario necesite una imagen con palabras: cartel de rebajas, portada, banner, cartel de evento, escaparate o una publicación con titular."
 ---
 
 # Cartel con texto que se lee

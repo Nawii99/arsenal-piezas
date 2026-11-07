@@ -60,7 +60,7 @@ ffmpeg -y -i /tmp/entrada.mp4 -i /data/logo.png -filter_complex "[1:v]scale=iw*0
 7. **Execute Command** (opcional, dato para el correo) — `du -h /tmp/revision.mp4 | cut -f1`.
 8. **Read/Write Files from Disk** (Read File) — `/tmp/revision.mp4`, propiedad `salida`.
 9. **Google Drive** (Upload File) — Parent Folder: `{{ $('Google Sheets').item.json.carpeta_destino_id }}`, File Name `{{ $('Code').item.json.cliente }}_{{ proyecto }}_{{ version }}_REVISION.mp4`.
-10. **Google Drive** (Share File) — Role `reader`, Type `anyone with the link` (o `user` con el email del cliente, más seguro).
+10. **Google Drive** (Share File) — Role `reader`, Type `user` con el email del cliente (no uses «cualquiera con el enlace»: es material del cliente aún sin pagar).
 11. **Gmail** (Send Message) — To: `{{ $('Google Sheets').item.json.email }}`. Asunto: `{{ proyecto }} — versión para revisión`. Cuerpo: enlace, instrucciones («apunta los cambios con el minuto exacto, en un solo mensaje») y la nota de que la versión final sin marca de agua se entrega tras el pago.
 12. **Google Sheets** (Update Row) — `estado` = `enviado a revisión` con la fecha.
 13. **Execute Command** — `rm -f /tmp/entrada.mp4 /tmp/revision.mp4`.
@@ -74,7 +74,7 @@ ffmpeg -y -i /tmp/entrada.mp4 -i /data/logo.png -filter_complex "[1:v]scale=iw*0
 - **Vídeos verticales**: el `scale=-2:1080` los deja altísimos. Usa `scale='if(gt(a,1),-2,1080)':'if(gt(a,1),1080,-2)'` para adaptarse a la orientación.
 - **Sin audio**: si el vídeo no tiene pista de audio, ffmpeg falla con `-c:a aac`. Añade `-shortest` y prueba con `-map 0:v -map 0:a?`.
 - **Vídeos largos**: una hora a crf 26 puede tardar 10-20 minutos; sube el timeout del flujo y usa `-preset veryfast` si te corre prisa.
-- **Enlaces públicos**: si el contenido es sensible, comparte solo con el email del cliente en vez de «cualquiera con el enlace».
+- **Enlaces públicos**: comparte siempre solo con el email del cliente, nunca con «cualquiera con el enlace»: es un trabajo privado y un enlace público se reenvía sin control.
 - **Nombres mal puestos**: si el archivo no sigue la convención, el Code devuelve valores vacíos; mete un **IF** que te avise en lugar de entregar mal.
 
 ## Cuánto cuesta

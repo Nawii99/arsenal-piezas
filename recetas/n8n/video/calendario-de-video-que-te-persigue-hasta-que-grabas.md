@@ -108,4 +108,4 @@ return [{ json: { mensaje: m } }];
 - **Telegram no envía**: tienes que haber escrito tú primero al bot, si no rechaza el mensaje.
 
 ## Cuánto cuesta
-Cero euros. Sheets, Calendar, Telegram y n8n gratuito cubren todo esto de sobra sin ningún límite que vayas a rozar.
+Cero euros. Sheets, Calendar, Telegram y n8n autoalojado (gratis; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago) cubren todo esto de sobra sin ningún límite que vayas a rozar.

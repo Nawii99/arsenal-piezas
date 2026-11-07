@@ -19,7 +19,7 @@ An n8n flow that watches a Google Drive folder of incoming audio, filters the au
 7. HTTP Request node to the Whisper API (OpenAI): transcribes the vocal track to get the lyrics as text. Account: OpenAI, pay per use; Whisper is cheap but has no free tier.
 8. Google Sheets node: adds a row with the file name, date, link to the Drive folder with the tracks, and the transcribed lyrics, and status 'done'.
 9. Notification node (Telegram or Email): notifies that the song is ready, with the link to the folder. Account: Telegram bot, free, or the email you already use.
-10. Accounts needed in total: Google (Drive and Sheets, free), the chosen track separation tool (check its specific free limit), OpenAI for Whisper (pay per use) and, if you notify through Telegram, a free bot.
+10. Accounts needed in total: n8n (self-hosted, free with the Community Edition; n8n Cloud only has a temporary free trial and is paid afterwards), Google (Drive and Sheets, free), the chosen track separation tool (check its specific free limit), OpenAI for Whisper (pay per use) and, if you notify through Telegram, a free bot.
 11. How to test it without messing up: first test it with a short, unimportant audio (about 15 seconds), run it node by node with 'Execute step' instead of activating it entirely, and check the Drive folder and the Sheets row before turning on the trigger automatically.
 12. Don't activate the trigger in production mode until you have tested it with 2 or 3 real audio files: a silent failure here means processing real customers' audio incorrectly.
 13. Cost warning: each processed song consumes paid minutes or credits in the separation API and in Whisper; before offering it as a service, calculate the real cost per song so you don't charge less than you spend.

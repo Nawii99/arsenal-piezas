@@ -40,7 +40,7 @@ Cada mañana consulta el RSS de los canales que le indiques, detecta los vídeos
 - n8n.
 - Los IDs de canal de tus 5-15 competidores. Para sacarlos: abre el canal, botón derecho «Ver código fuente», busca `channelId` y copia el valor que empieza por `UC`. O usa la web `commentpicker.com/youtube-channel-id.php`.
 - Credencial de Google con YouTube Data API v3.
-- Clave de OpenAI.
+- Clave de OpenAI, guardada como credencial de n8n (nunca escrita dentro de un nodo).
 - Bot de Telegram: escribe a `@BotFather`, `/newbot`, copia el token; escribe algo a tu bot y saca tu `chat_id` en `https://api.telegram.org/botTU_TOKEN/getUpdates`.
 - Hoja `Competencia` con columnas: `fecha`, `canal`, `titulo`, `url`, `vistas`, `tema`, `gancho`, `revisado`.
 
@@ -102,4 +102,4 @@ return salida;
 - **Retraso del RSS**: puede tardar hasta 1 hora en reflejar un vídeo nuevo. Si necesitas inmediatez, ejecuta cada 2 horas en vez de una vez al día.
 
 ## Cuánto cuesta
-Gratis salvo OpenAI, que con 15 canales y unos 60 vídeos al mes sale por menos de 0,50 €. YouTube API, RSS, Sheets, Telegram y n8n gratuito no cuestan nada.
+Gratis salvo OpenAI, que con 15 canales y unos 60 vídeos al mes sale por menos de 0,50 €. YouTube API, RSS, Sheets, Telegram y n8n autoalojado (Community Edition) no cuestan nada; n8n Cloud tiene una prueba gratuita temporal y después planes de pago.

@@ -45,11 +45,12 @@ Cuando un cliente nuevo paga por su plan de entrenamiento, se genera el plan aut
 
 ## Nodos, en orden
 1. Disparador: 'Stripe Trigger' con el evento 'checkout.session.completed', para arrancar solo cuando el pago esta confirmado, no antes.
+   Justo despues añade un IF que siga solo si `payment_status` es `paid` (con pagos diferidos el evento llega antes del cobro) y una busqueda en la hoja por el id de la sesion de Stripe: si ya existe, el flujo se para, porque Stripe puede reenviar el mismo evento y no quieres dos planes ni dos emails. El Stripe Trigger ya verifica la firma del webhook.
 2. Nodo HTTP Request a Typeform (o el nodo nativo de Typeform) para traer las respuestas del cuestionario de alta que relleno el cliente antes de pagar, cruzando por su email.
 3. Nodo de IA (HTTP Request a la API de Claude, o el nodo de IA de n8n) al que le pasas los datos del cliente con el prompt de la skill 'plan-entrenamiento-vendible' para generar el plan.
 4. Nodo 'Convert to File' o 'HTML to PDF' para pasar el texto del plan a un PDF con tu logo.
 5. Nodo Gmail, 'Send Email', con el PDF adjunto y un mensaje de bienvenida al cliente.
-6. Nodo Google Sheets, 'Append Row', para guardar en tu hoja de clientes: nombre, email, fecha de alta, importe pagado y fecha del siguiente pago si es una suscripcion.
+6. Nodo Google Sheets, 'Append Row', para guardar en tu hoja de clientes: nombre, email, fecha de alta, importe pagado, id de la sesion de Stripe y fecha del siguiente pago si es una suscripcion.
 7. Nodo Gmail o Telegram para avisarte a ti de que ha entrado un cliente nuevo.
 
 ## Como probarla sin liarla

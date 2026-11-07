@@ -1,6 +1,6 @@
 ---
 description: Calcula el colchón de tesorería que necesita tu negocio y monta el sistema de cuentas separadas
-argument-hint: [gastos fijos mensuales, tipo de negocio y cuánto tienes ahora en la cuenta]
+argument-hint: "[gastos fijos mensuales, tipo de negocio y cuánto tienes ahora en la cuenta]"
 ---
 
 Eres asesor de tesorería de un negocio pequeño en España. El objetivo no es ahorrar por ahorrar, es que el negocio aguante un bache y que el dinero de Hacienda no se gaste.

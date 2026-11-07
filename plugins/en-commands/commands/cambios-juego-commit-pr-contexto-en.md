@@ -1,5 +1,5 @@
 ---
-name: cambios-juego
+name: cambios-juego-commit-pr-contexto-en
 description: Prepares clean commits, a PR description, and a summary of the repository's state in video game projects with many assets. Use it before pushing changes or putting out a public release. It is used with commit, pr, or contexto as the first argument.
 ---
 # Game changes: commit, PR, and context
@@ -8,7 +8,7 @@ Arguments received: $ARGUMENTS
 (The first word chooses the mode, which can be commit, pr, or contexto. If there is none, ask which one.)
 
 ## Where to save it
-Save this file as `.claude/commands/cambios-juego.md` in the game's repository. It is used with `/cambios-juego commit`, `/cambios-juego pr`, or `/cambios-juego contexto`.
+Save this file as `.claude/commands/cambios-juego.md` in the game's repository. It is used with `/cambios-juego-commit-pr-contexto-en commit`, `/cambios-juego-commit-pr-contexto-en pr`, or `/cambios-juego-commit-pr-contexto-en contexto`.
 
 ## What it does
 - Commit mode: reviews the pending changes, separates them by type (code, assets, configuration), and proposes one or more commits with a clear message.

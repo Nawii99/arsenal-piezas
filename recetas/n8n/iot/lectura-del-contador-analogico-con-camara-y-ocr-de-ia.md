@@ -44,11 +44,11 @@ Compara con la lectura anterior, calcula el consumo del día y avisa si se dispa
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Cron `0 7 * * *`, zona Europe/Madrid.
-2. **HTTP Request** «foto» — GET a `http://192.168.1.80:8080/snapshot`. En Options → Response, pon Response Format «File» y nombre del campo binario `data`.
-3. **HTTP Request** «OCR» — POST a `https://api.openai.com/v1/chat/completions`. Authentication: Generic → Header Auth, header `Authorization` con valor `Bearer TU_CLAVE`. Body JSON con el modelo de visión, la imagen en base64 y el prompt (ver abajo). Alternativa más cómoda: el nodo **OpenAI** de n8n, operación «Analyze Image», con el binario del paso anterior.
+2. **HTTP Request** «foto» — GET a `http://192.168.1.80:8080/snapshot`. Justo antes, un nodo **Google Sheets** llamado «Google Sheets Anterior» (Get Row(s), última fila de «contador») que da `lectura` y `media_consumo`. En Options → Response, pon Response Format «File» y nombre del campo binario `data`.
+3. **HTTP Request** «OCR» — POST a `https://api.openai.com/v1/chat/completions`. Authentication: Generic → Header Auth, header `Authorization` con el valor `Bearer ` + tu clave escritos solo en la credencial Header Auth de n8n (nunca en el propio nodo: un flujo exportado se llevaría la clave). Body JSON con el modelo de visión, la imagen en base64 y el prompt (ver abajo). Alternativa más cómoda: el nodo **OpenAI** de n8n, operación «Analyze Image», con el binario del paso anterior.
 4. **Code** «validar lectura» — limpia la respuesta, comprueba que es un número plausible y calcula el consumo. Código abajo.
 5. **IF** — `{{ $json.valida }}` igual a `true`.
-6. **Google Sheets** — «Append» en hoja «contador»: fecha, lectura, consumo_dia, confianza.
+6. **Google Sheets** — antes de añadir, comprueba que no existe ya una fila con la fecha de hoy (Get Row(s) filtrando por fecha; si existe, termina) y solo entonces «Append» en hoja «contador»: fecha, lectura, consumo_dia, confianza.
 7. **IF** — `{{ $json.consumo_dia }}` mayor que `{{ $json.umbral }}`.
 8. **Telegram** — `💧 Consumo de ayer: {{ $json.consumo_dia }} unidades, muy por encima de tu media de {{ $json.media }}. Revisa si hay una fuga.`
 9. Rama de lectura no válida: **Telegram** con la foto adjunta (Operation «Send Photo», binario `data`) y el texto `No he podido leer el contador, mira si se ha movido la cámara o falta luz.`
@@ -99,6 +99,7 @@ return [{ json: {
 - **Reflejos en el cristal**: pon el LED en ángulo, nunca de frente, o un difusor de papel vegetal.
 - **La cámara se mueve**: fíjala con brida o silicona. Un giro de 5 grados y el OCR se vuelve loco.
 - **Coste desbocado**: una foto al día son céntimos. Si te tienta hacer una cada 5 minutos, la factura de la API se multiplica por 288. No lo hagas.
+- **Dos ejecuciones a la vez**: si lanzas una prueba a mano mientras corre la programada, ambas leen la misma lectura anterior y apuntan dos filas. Deja el flujo ejecutándose de uno en uno (concurrencia 1) y no lances pruebas mientras está activo.
 - **Contadores de aguja pura**: si son esferas con manecillas, el acierto baja mucho. Ahí es mejor un sensor de pulsos magnético.
 
 ## Cuánto cuesta

@@ -1,6 +1,6 @@
 ---
 name: minar-resenas-rivales
-description: Mines competitor app reviews to extract recurring complaints, missing features and the exact words customers use, then turns them into a prioritised feature list and marketing angles. Use when the user is deciding what to build, looking for a gap against established apps, or needs real customer language for their listing and ads.
+description: Analiza las reseñas de apps de la competencia para extraer quejas recurrentes, funciones que faltan y las palabras exactas que usan los clientes, y las convierte en una lista priorizada de funciones y ángulos de marketing. Úsala cuando el usuario esté decidiendo qué construir, busque un hueco frente a apps consolidadas, o necesite el lenguaje real de los clientes para su ficha y anuncios.
 ---
 
 # Minar las reseñas de la competencia

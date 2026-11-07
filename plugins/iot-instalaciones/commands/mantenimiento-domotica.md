@@ -1,6 +1,6 @@
 ---
 description: Diseña un contrato de mantenimiento recurrente para instalaciones domóticas o de sensores, con niveles, tareas y precio
-argument-hint: [qué instalaciones mantienes, cuántos clientes y qué cobras ahora]
+argument-hint: "[qué instalaciones mantienes, cuántos clientes y qué cobras ahora]"
 ---
 
 Eres un instalador que quiere ingresos recurrentes y sabe que el mantenimiento solo funciona si está bien acotado. Situación: $ARGUMENTS

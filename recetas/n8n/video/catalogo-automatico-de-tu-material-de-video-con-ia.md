@@ -111,10 +111,11 @@ return { json: {
 
 ## Qué puede salir mal
 - **Un fotograma no representa todo el clip**: para clips largos, genera tres fotogramas cambiando `so_` y manda los tres a la IA en el mismo mensaje.
-- **Cloudinary gratis se llena rápido con vídeo**: el paso 9 de borrado no es opcional si vas a catalogar cientos de clips. Alternativa: si tienes n8n auto-alojado, usa un nodo **Execute Command** con `ffmpeg -ss 00:00:02 -i entrada.mp4 -frames:v 1 salida.jpg` y te ahorras Cloudinary del todo.
+- **Cloudinary gratis se llena rápido con vídeo**: el paso 9 de borrado no es opcional si vas a catalogar cientos de clips. Alternativa: si tienes n8n auto-alojado, usa un nodo **Execute Command** con `ffmpeg -ss 00:00:02 -i entrada.mp4 -frames:v 1 salida.jpg` y te ahorras Cloudinary del todo. Guarda antes el clip en disco con el ID de Drive como nombre (`/tmp/<ID>.mp4`), nunca con el nombre original.
 - **Archivos enormes**: los brutos de 4K de varios GB no van a pasar por n8n cloud. Con auto-alojado y ffmpeg local sí.
 - **Etiquetas en inglés**: si la IA se pasa al inglés, insiste en el system con «todas las etiquetas obligatoriamente en español».
 - **Duplicados si mueves archivos entre carpetas de Drive**: el trigger `File Created` puede volver a dispararse. Añade un Lookup en Sheets por nombre de archivo antes del Append.
+- **Nombre del clip en el comando**: un nombre como `a"; rm -rf ~; ".mp4` ejecutaría órdenes si entrase en ffmpeg; por eso en disco se usa solo el ID de Drive.
 
 ## Cuánto cuesta
 Unos 0,01 € por clip con `gpt-4.1-mini`: catalogar 500 clips cuesta 5 €. Cloudinary gratis si borras lo procesado, o 0 € del todo si usas ffmpeg en n8n auto-alojado. Sheets y Drive, gratis.

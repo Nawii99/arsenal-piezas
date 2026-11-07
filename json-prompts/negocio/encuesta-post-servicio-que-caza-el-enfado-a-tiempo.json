@@ -10,13 +10,14 @@
   },
   "proceso": [
     "Diseña 3 preguntas como máximo: una de nota de 0 a 10, una abierta y una de intención de volver",
-    "Define los tres tramos de nota y qué pasa en cada uno: aviso interno, llamada o petición de reseña pública",
+    "Define los tres tramos de nota y qué pasa en cada uno: aviso interno, llamada de recuperación o seguimiento; la petición de reseña pública no depende del tramo",
     "Escribe los mensajes de cada tramo, incluida la llamada de recuperación",
+    "Escribe aparte la petición de reseña pública, igual para todos los clientes que terminan el servicio y enviada con independencia de la nota",
     "Fija el plazo de reacción para una nota baja, en horas, no en días",
     "Define qué se apunta de cada caso para detectar patrones al cabo de un mes"
   ],
   "restricciones": [
-    "Prohibido bloquear la reseña pública o condicionarla a la nota: la encuesta sirve para reaccionar antes, no para filtrar quién puede opinar",
+    "Prohibido bloquear la reseña pública o condicionarla a la nota: la encuesta sirve para reaccionar antes, no para filtrar quién puede opinar (Google y las tiendas lo prohíben)",
     "La encuesta se responde en menos de 30 segundos",
     "Un único recordatorio y sin insistir",
     "Español de España, tuteando, sin jerga de satisfacción del cliente"

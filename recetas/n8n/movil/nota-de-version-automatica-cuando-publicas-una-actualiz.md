@@ -62,7 +62,7 @@ return [{ json: { version, novedades } }];
 5. «IF». Condición: {{ $json.version }} distinto de la última guardada, y version no vacía.
 6. «OpenAI» (Message a model), modelo gpt-4o-mini. Prompt: «Reescribe estas novedades de app para usuarios normales, español de España, tuteando. Devuelve un JSON con tres campos: email_asunto, email_cuerpo (3 párrafos cortos en HTML simple), post_social (máximo 240 caracteres con 2 emojis). Novedades: {{ $json.novedades }}». Activa «Output Content as JSON».
 7. «Brevo» (Send transactional email) o el nodo «Email» si prefieres SMTP propio. Asunto {{ $json.email_asunto }}, cuerpo {{ $json.email_cuerpo }}. Para enviar a toda la lista usa «Create an email campaign» de Brevo y luego «Send campaign».
-8. «HTTP Request» a Buffer: POST https://api.bufferapp.com/1/updates/create.json con parámetros text igual a {{ $json.post_social }}, profile_ids[] tu perfil y access_token.
+8. «HTTP Request» a Buffer: POST https://api.bufferapp.com/1/updates/create.json con parámetros text igual a {{ $json.post_social }} y profile_ids[] tu perfil. El access_token de Buffer no lo escribas en el nodo: usa Authentication: Generic Credential Type > Query Auth con una credencial de n8n (Name `access_token`, Value tu token), porque un flujo exportado se llevaría la clave.
 9. «Google Docs» (Update a document, operación Insert) añadiendo al changelog: «v{{ $json.version }} — {{ $fecha }} — {{ $json.post_social }}».
 10. «Google Sheets» (Append or Update) guardando la versión nueva.
 
@@ -76,5 +76,5 @@ Puede que Google te devuelva la página en otro idioma o te pida captcha si hace
 Si el flujo se ejecuta dos veces el mismo día podría duplicar el email. Guarda la versión en la hoja antes de enviar, no después, si prefieres pecar de prudente.
 
 ## Cuánto cuesta
-n8n, Google Docs y Sheets: gratis. Brevo: 300 emails al día gratis. Buffer: plan gratuito con 3 canales.
+n8n autoalojado (Community Edition), Google Docs y Sheets: gratis; n8n Cloud tiene una prueba gratuita temporal y después planes de pago. Brevo: 300 emails al día gratis. Buffer: plan gratuito con 3 canales.
 OpenAI: céntimos, se ejecuta solo cuando hay versión nueva.

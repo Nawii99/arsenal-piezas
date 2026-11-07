@@ -35,9 +35,9 @@ Consulta cada día la búsqueda de la App Store para una lista de palabras clave
 Es para cualquiera con una app en iOS que quiera medir si tocar el título, el subtítulo o las capturas mueve algo, sin herramientas de pago.
 
 ## Lo que necesitas antes
-Una cuenta de n8n (el plan gratuito de n8n Cloud o auto-alojado con Docker, da igual).
+Una cuenta de n8n (auto-alojado gratis con Docker, o n8n Cloud con su prueba gratuita temporal).
 Una cuenta de Google para Google Sheets: en n8n, Credentials > Google Sheets OAuth2, se conecta con dos clics.
-Un bot de Telegram: escribe a @BotFather, comando /newbot, te da un token. Luego escríbele algo a tu bot y abre https://api.telegram.org/bot<TU_TOKEN>/getUpdates para ver tu chat_id.
+Un bot de Telegram: escribe a @BotFather, comando /newbot, te da un token. Luego escríbele algo a tu bot y consulta getUpdates de la API de Telegram desde tu navegador o con curl en tu ordenador para ver tu chat_id (es la única vez que el token va en una URL; no la pegues en ningún nodo). El token se guarda solo en una credencial «Telegram API» de n8n: un flujo exportado con el token escrito en un nodo se llevaría la clave.
 El identificador numérico de tu app (el número que sale en su URL de la App Store, por ejemplo 1234567890). No hace falta ninguna clave de Apple: la API de búsqueda de iTunes es pública.
 Una hoja de cálculo llamada `ASO` con dos pestañas: `keywords` (columnas: keyword, pais) y `historico` (columnas: fecha, keyword, pais, posicion, posicion_anterior).
 
@@ -49,7 +49,7 @@ Una hoja de cálculo llamada `ASO` con dos pestañas: `keywords` (columnas: keyw
 5. **Code** (modo «Run Once for All Items»): busca tu app en los resultados y calcula la posición. Código completo más abajo.
 6. **Google Sheets** (operación Append): pestaña `historico`, mapea fecha, keyword, pais, posicion.
 7. **IF**: condición Number, valor 1 = `{{ Math.abs($json.diferencia) }}`, operación «larger or equal», valor 2 = `3`.
-8. **Telegram** (rama true): operación Send Message, tu chat_id, texto `{{ $json.keyword }} ({{ $json.pais }}): puesto {{ $json.posicion }} (antes {{ $json.posicion_anterior }})`.
+8. **Telegram** (rama true): credencial «Telegram API» (token fuera del nodo), operación Send Message, tu chat_id, texto `{{ $json.keyword }} ({{ $json.pais }}): puesto {{ $json.posicion }} (antes {{ $json.posicion_anterior }})`.
 9. Conecta la salida del IF de vuelta al **Split In Batches** para que siga con la siguiente palabra clave.
 
 ## El nodo Code

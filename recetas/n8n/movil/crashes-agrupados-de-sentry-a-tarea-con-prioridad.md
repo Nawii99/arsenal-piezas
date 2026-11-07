@@ -42,7 +42,7 @@ Escucha los avisos de errores de tu app (Sentry o Firebase Crashlytics vía webh
 - Workspace de Slack y la credencial de Slack en n8n, o un bot de Telegram si prefieres.
 
 ## Los nodos, en orden
-1. **Webhook** — HTTP Method: POST, Path: `crash-in`, Respond: Immediately. La URL completa la pegas en Sentry.
+1. **Webhook** — HTTP Method: POST, Path: `crash-in`, Respond: Immediately. La URL completa la pegas en Sentry. Protégelo: verifica la cabecera `Sentry-Hook-Signature` (HMAC-SHA256 del cuerpo con el Client Secret de la integración, leído de una variable de entorno) en un nodo Code y descarta lo que no cuadre.
 2. **IF** — Condition: String `{{ $json.query.token }}` «is equal to» tu secreto. Si no, se descarta.
 3. **Code** (nombre: Normalizar) — saca de la carga de Sentry el título, el fichero, la pantalla y construye una huella estable. Código abajo.
 4. **Google Sheets** (o Redis si lo tienes) — Operation: Get Row(s) sobre la hoja `crashes`, Filter: huella igual a la actual.

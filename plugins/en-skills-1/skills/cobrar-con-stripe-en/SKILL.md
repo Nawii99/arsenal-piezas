@@ -27,15 +27,15 @@ If the user does not know how to answer 2 or 3, tell them to discuss it with the
 
 ## Step by step
 
-1. Account and keys. Ask the user for the test secret key (`sk_test_...`). It goes in `.env`, never in the code or the repo. Check that `.env` is in `.gitignore`.
+1. Account and keys. Do not ask them to paste the test secret key (`sk_test_...`) to you: they should copy it themselves from the dashboard into their `.env` (variable `STRIPE_SECRET_KEY`), never in the code, the chat, or the repo. Check that `.env` is in `.gitignore`.
 2. Products. Explain how to create the product and the price in the Stripe dashboard (test mode). Ask for the `price_id` (`price_...`).
 3. Checkout. Create a route that opens a Checkout session with that `price_id`, `mode` `payment` or `subscription`, `success_url`, and `cancel_url`. For businesses, enable `tax_id_collection` to ask for the tax ID (NIF). Enable `customer_creation` so that a customer always exists in Stripe.
 4. Portal. Create a route that generates a link to the Customer Portal for the logged-in customer.
-5. Webhook. An endpoint that verifies the signature with `STRIPE_WEBHOOK_SECRET`, stores the `event.id` so the same event is not processed twice, and responds 200 in under 5 seconds. Minimum events: `checkout.session.completed`, `invoice.paid`, `invoice.payment_failed`, `customer.subscription.updated`, `customer.subscription.deleted`. To set it up and test it use the `/webhook-stripe` command.
+5. Webhook. An endpoint that verifies the signature with `STRIPE_WEBHOOK_SECRET`, stores the `event.id` so the same event is not processed twice, and responds 200 in under 5 seconds. Minimum events: `checkout.session.completed`, `invoice.paid`, `invoice.payment_failed`, `customer.subscription.updated`, `customer.subscription.deleted`. In `checkout.session.completed`, grant access only if `payment_status == 'paid'` (with deferred payment methods the event arrives before the money: wait for `checkout.session.async_payment_succeeded`). To set it up and test it use the `/webhook-stripe` command.
 6. Database. Store per user: `stripe_customer_id`, `stripe_subscription_id`, `estado` (status: active, unpaid, canceled), and `fin_periodo_actual` (end of the current period). Access to the product is decided with `estado`, never with the result of the success page.
 7. VAT (IVA). If you only sell in Spain to individuals: price with VAT included (`tax_behavior: inclusive`) and a 21% tax rate created in the dashboard. If you sell to the EU or to businesses: propose Stripe Tax and warn that it has a per-transaction cost [check the current rate].
 8. Invoices. In the dashboard: sequential numbering at the account level, the user's tax details in the header, and the customer's tax ID (NIF) on the invoice. Before accepting the first invoice as good, run it through the `revisor-facturas` subagent.
-9. Moving to production. Swap the test keys for the real ones, create the production webhook in the dashboard with the public URL, and copy the new `whsec_`. Make a real payment of 1 € and refund it.
+9. Moving to production. Swap the test keys for the real ones, create the production webhook in the dashboard with the public URL, and put the new `whsec_` in the hosting's environment variable (never in the code or the chat). Make a real payment of 1 € and refund it.
 
 ## What to return
 

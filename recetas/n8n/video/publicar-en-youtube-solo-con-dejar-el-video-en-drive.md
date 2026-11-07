@@ -35,7 +35,7 @@ Ahorra unos 15-20 minutos por vídeo de subida y espera, y evita el clásico «s
 Vigila una carpeta de Google Drive y, en cuanto aparece un vídeo nuevo, lo sube a tu canal de YouTube como **privado** con título, descripción y etiquetas sacadas del nombre del archivo. Pensado para creadores, academias y negocios que publican vídeo de forma habitual y quieren que subir deje de ser una tarea manual.
 
 ## Lo que necesitas antes
-- Cuenta de n8n (plan gratuito en la nube o auto-alojado con Docker).
+- n8n: auto-alojado con Docker (gratis, Community Edition) o n8n Cloud (prueba gratuita temporal y después de pago).
 - Cuenta de Google con Drive y un canal de YouTube ya verificado (sin verificar no puedes subir vídeos de más de 15 minutos).
 - Credenciales de Google OAuth: entra en console.cloud.google.com, crea un proyecto, en «APIs y servicios» activa **Google Drive API** y **YouTube Data API v3**, ve a «Credenciales» → «Crear credenciales» → «ID de cliente OAuth» → tipo «Aplicación web», y pega como URI de redirección la que te muestra n8n al crear la credencial de Google.
 - Una carpeta en Drive llamada por ejemplo `01-SUBIR-A-YOUTUBE` y otra `02-SUBIDOS`.
@@ -79,4 +79,4 @@ return { json: { titulo, descripcion, tags } };
 - **Zona horaria**: pon en Settings del workflow el timezone `Europe/Madrid` o las fechas de la hoja saldrán con dos horas menos.
 
 ## Cuánto cuesta
-Gratis: n8n gratuito, Drive, Sheets y la cuota diaria de YouTube. Se paga solo si superas los 15 GB de Drive (2 €/mes por 100 GB) o si pasas de las ejecuciones del plan gratis de n8n (desde 20 €/mes, o 0 € auto-alojando en un VPS de 5 €/mes).
+Gratis: n8n auto-alojado (Community Edition), Drive, Sheets y la cuota diaria de YouTube. Se paga solo si superas los 15 GB de Drive (2 €/mes por 100 GB) o si usas n8n Cloud, que tras la prueba gratuita temporal es de pago (desde unos 20 €/mes; 0 € auto-alojando en un VPS de 5 €/mes).

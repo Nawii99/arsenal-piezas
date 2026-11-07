@@ -74,7 +74,7 @@ return nuevos;
 1. **Schedule Trigger** — una vez al día a las 09:00 (`Europe/Madrid`).
 2. **Google Sheets** (Get Row(s)) — Filters: `visitas_48h` vacío.
 3. **Code** — se queda con los que ya tienen más de 48 h y junta los IDs de 50 en 50.
-4. **HTTP Request** — GET `https://www.googleapis.com/youtube/v3/videos?part=statistics&id={{ $json.ids }}&key=TU_CLAVE`.
+4. **HTTP Request** — GET `https://www.googleapis.com/youtube/v3/videos?part=statistics&id={{ $json.ids }}`, con Authentication: Generic > Query Auth con una credencial de n8n (Name `key`, Value tu clave). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 5. **Google Sheets** (Update Row) — escribe `visitas_48h` con `{{ $json.statistics.viewCount }}`.
 
 ## Cómo probarla

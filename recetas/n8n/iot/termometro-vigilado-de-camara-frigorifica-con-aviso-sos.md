@@ -41,7 +41,7 @@ Para hostelería, fruterías, carnicerías, obradores, floristerías y cualquier
 - Bot de Telegram con su token y tu chat_id (@BotFather y `/getUpdates`, igual que en cualquier receta de avisos).
 - Decidido el límite: nevera 8 °C, congelador -15 °C, obrador 22 °C… lo que aplique.
 ## Los nodos, en orden
-1. **Webhook** — HTTP Method: GET, Path: `sensor-temp`, Respond: Immediately. Copia la URL de producción, algo como `https://tu-n8n.com/webhook/sensor-temp`.
+1. **Webhook** — HTTP Method: GET, Path: `sensor-temp`, Respond: Immediately. Copia la URL de producción, algo como `https://tu-n8n.com/webhook/sensor-temp`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. En el sensor: entra a su IP desde el navegador (o app Shelly > Ajustes > Acciones/Webhooks), crea una acción sobre el evento de reporte y pon como URL: `https://tu-n8n.com/webhook/sensor-temp?id=camara1&t=${status["temperature:0"].tC}&h=${status["humidity:0"].rh}&bat=${status["devicepower:0"].battery.percent}`. Esas llaves con `${}` son plantillas propias de Shelly, se copian tal cual.
 3. **Code** (llámalo «Evaluar») — Run Once for All Items, código abajo. Ahí pones el límite.
 4. **Google Sheets** — Operation: Append Row, hoja «Temperaturas». fecha `{{ $json.hora }}`, sensor `{{ $json.id }}`, temperatura `{{ $json.t }}`, humedad `{{ $json.h }}`, bateria `{{ $json.bat }}`.

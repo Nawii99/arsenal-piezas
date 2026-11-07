@@ -1,6 +1,6 @@
 ---
 name: rescate-abandono
-description: Diagnoses where students drop out of a course and produces a re-engagement plan with specific messages, structural fixes and a measurable target. Use when a live course has stalled students, low completion or a dead community.
+description: Diagnostica dónde abandonan los alumnos de un curso y produce un plan de reactivación con mensajes concretos, arreglos estructurales y un objetivo medible. Úsala cuando un curso en marcha tenga alumnos estancados, baja tasa de finalización o una comunidad muerta.
 ---
 
 # Rescate de alumnos parados

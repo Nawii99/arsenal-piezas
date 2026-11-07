@@ -43,7 +43,7 @@ Es para el programador o el equipo pequeño que despliega varias veces al día y
 - n8n con URL pública (n8n Cloud, o auto-alojado con un dominio o un túnel). GitHub necesita poder llamarte.
 
 ## Los nodos, en orden
-**1. Webhook** — HTTP Method `POST`, Path `deploy-fallo`, Respond `Immediately`. Copia la Production URL.
+**1. Webhook** — HTTP Method `POST`, Path `deploy-fallo`, Respond `Immediately`. Copia la Production URL. Valida la firma `X-Hub-Signature-256` con el Secret del webhook de GitHub y descarta entregas repetidas por `X-GitHub-Delivery`.
 En GitHub: Settings > Webhooks > Add webhook > Payload URL esa, Content type `application/json`, «Let me select individual events» > marca solo **Workflow runs**.
 **2. IF** (nombre: «¿Ha fallado?») — Condición 1 (String): valor `{{ $json.body.action }}` igual a `completed`. Condición 2 (String): `{{ $json.body.workflow_run.conclusion }}` igual a `failure`. Combinador `AND`.
 **3. HTTP Request** («Listar jobs») — Method `GET`, URL `https://api.github.com/repos/{{ $json.body.repository.full_name }}/actions/runs/{{ $json.body.workflow_run.id }}/jobs`. Authentication `Generic Credential Type` > `Header Auth`, nombre `Authorization`, valor `Bearer TU_TOKEN`. Añade header `User-Agent: n8n`.
@@ -84,4 +84,4 @@ return [{ json: { mensaje: texto } }];
 - **Límite de la API**: 5.000 llamadas/hora con token. Este flujo gasta 2 por fallo, ni te acercas.
 
 ## Cuánto cuesta
-GitHub Actions, la API, Telegram y n8n auto-alojado: 0 €. Si no quieres montar servidor, n8n Cloud arranca en unos 20 €/mes; el plan gratuito de n8n Cloud te da suficientes ejecuciones para esto.
+GitHub Actions, la API, Telegram y n8n auto-alojado: 0 €. Si no quieres montar servidor, n8n Cloud arranca en unos 20 €/mes; n8n Cloud no tiene plan gratuito permanente, solo una prueba temporal.

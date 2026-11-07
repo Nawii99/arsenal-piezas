@@ -42,7 +42,7 @@ Para el desarrollador o el equipo pequeño que publica versiones y siempre deja 
 - Opcional: cuenta de X/Twitter con acceso a la API, o Buffer.
 
 ## Los nodos, en orden
-1. **Webhook** — POST, ruta `release`. En GitHub: Settings → Webhooks → Add webhook, `Content type: application/json`, evento `Releases`.
+1. **Webhook** — POST, ruta `release`. En GitHub: Settings → Webhooks → Add webhook, `Content type: application/json`, evento `Releases`. Protégelo: configura un *Secret* en el webhook de GitHub, valida la cabecera `X-Hub-Signature-256` en un nodo Code con ese secreto leído de una variable de entorno y descarta entregas repetidas por `X-GitHub-Delivery`.
 2. **IF** — `{{ $json.body.action }}` igual a `published`.
 3. **HTTP Request** — GET `https://api.github.com/repos/USUARIO/REPO/compare/{{ $json.body.release.target_commitish }}...{{ $json.body.release.tag_name }}` con credencial GitHub. Devuelve los commits desde la versión anterior.
 4. **Code** («Limpiar commits») — quita los merges y los commits de mantenimiento.

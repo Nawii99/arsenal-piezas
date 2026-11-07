@@ -38,8 +38,8 @@ Para el desarrollador o la microempresa que no tiene un gestor de secretos corpo
 
 ### Lo que necesitas antes
 - n8n.
-- Hoja «Secretos» con columnas: `nombre`, `servicio`, `donde_vive`, `creado`, `caduca`, `rotar_cada_dias`, `responsable`, `token_prueba` (solo para GitHub, y opcional).
-- Importante: **no guardes el secreto entero en la hoja**. Guarda solo los 4 últimos caracteres como referencia.
+- Hoja «Secretos» con columnas: `nombre`, `servicio`, `donde_vive`, `creado`, `caduca`, `rotar_cada_dias`, `responsable`, `verificar_github` (sí/no; solo para filas de GitHub).
+- Importante: **no guardes el secreto entero en la hoja**. Guarda solo los 4 últimos caracteres como referencia. El token de GitHub de la comprobación en vivo va únicamente en una credencial de n8n (Header Auth): nunca en la hoja, en un nodo Code ni escrito a mano en el nodo, porque un flujo exportado se llevaría la clave.
 - Credencial Google OAuth2 y Gmail en n8n.
 
 ### Los nodos, en orden
@@ -75,7 +75,7 @@ return [{ json: { total: pendientes.length, pendientes, tabla: pendientes.map(p 
 ### Cómo probarla
 - Rellena tres filas: una con caducidad dentro de 5 días, otra dentro de 100 y otra sin fecha pero creada hace dos años.
 - Ejecuta a mano: solo deben salir la primera y la tercera.
-- Comprueba la cabecera de GitHub llamando desde terminal: `curl -I -H "Authorization: Bearer TU_TOKEN" https://api.github.com/user | grep expiration`.
+- Comprueba la cabecera de GitHub llamando desde terminal con el token en una variable que solo existe en esa sesión (`read -s GH_TOKEN`, sin escribirlo en el comando ni dejarlo en el historial): `curl -I -H "Authorization: Bearer $GH_TOKEN" https://api.github.com/user | grep expiration`.
 
 ### Qué puede salir mal
 - **Tentación de guardar los secretos en la hoja**: no lo hagas. La hoja es un mapa, no una caja fuerte; los valores reales van en las credenciales de n8n o en el gestor de secretos de tu hosting.

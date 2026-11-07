@@ -45,7 +45,7 @@ Para dueños de webs con blog, catálogo o directorio que no quieren pagar una h
 1. **Schedule Trigger** — Days, Trigger at Day of Week: Monday, Hour: 6.
 2. **HTTP Request** — GET a tu sitemap. Options > Response > Response Format: Text.
 3. **XML** — Mode: XML to JSON, Property Name: data.
-4. **Code** (nombre: «URLs del sitemap»). Run Once for All Items. Aplana el sitemap (soporta índice de sitemaps simple).
+4. **Code** (nombre: «URLs del sitemap»). Run Once for All Items. Aplana el sitemap (solo lee sitemaps de páginas con `urlset`; si tu web usa un índice de sitemaps, apunta al sitemap concreto de páginas, por ejemplo `post-sitemap.xml`).
 ```js
 const d = $input.first().json.data;
 const nodos = d.urlset?.url || [];

@@ -1,6 +1,6 @@
 ---
 name: negociar-sueldo
-description: Toma una oferta concreta y devuelve la contrapropuesta lista para enviar: cifra, frase, email y límite de abandono. Se usa cuando hay que contestar a una oferta ya recibida.
+description: "Toma una oferta concreta y devuelve la contrapropuesta lista para enviar: cifra, frase, email y límite de abandono. Se usa cuando hay que contestar a una oferta ya recibida."
 ---
 
 # /negociar-sueldo

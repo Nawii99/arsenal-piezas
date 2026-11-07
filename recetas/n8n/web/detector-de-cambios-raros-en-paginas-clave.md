@@ -90,4 +90,4 @@ return salida;
 - Si la web está caída, `data` vendrá vacío y la huella cambiará. Añade un IF previo que descarte respuestas de menos de 500 caracteres.
 
 **Cuánto cuesta**
-- Gratis del todo. 4 ejecuciones al día por página; en n8n Cloud son unas 120 ejecuciones al mes, cabe en planes bajos.
+- Gratis con n8n auto-alojado. 4 ejecuciones al día por página; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago (unas 120 ejecuciones al mes caben en el plan más bajo).

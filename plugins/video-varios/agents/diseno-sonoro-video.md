@@ -1,6 +1,6 @@
 ---
 name: diseno-sonoro-video
-description: Use this agent when a video is picture-locked and needs sound design - royalty-free music selection, sync points, sound effects, ambience, ducking under voice and the final mix. Not for fixing a bad recording. Examples - "ponle musica a este video", "que suene mas profesional", "la musica tapa la voz".
+description: "Úsalo cuando un vídeo tenga el montaje de imagen cerrado y necesite diseño sonoro: selección de música libre de derechos, puntos de sincronización, efectos de sonido, ambiente, ducking bajo la voz y la mezcla final. No sirve para arreglar una mala grabación. Ejemplos: \"ponle musica a este video\", \"que suene mas profesional\", \"la musica tapa la voz\"."
 tools: Read, Write, Bash
 ---
 

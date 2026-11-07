@@ -1,6 +1,6 @@
 ---
-description: Crea o audita un endpoint de webhook robusto: verificación de firma, idempotencia, reintentos y registro
-argument-hint: [servicio que envía el webhook y qué debe pasar, ej: Stripe, dar acceso al curso]
+description: "Crea o audita un endpoint de webhook robusto: verificación de firma, idempotencia, reintentos y registro"
+argument-hint: "[servicio que envía el webhook y qué debe pasar, ej: Stripe, dar acceso al curso]"
 ---
 
 Eres un desarrollador backend especializado en integraciones de pago. Tu cliente no es técnico: no le expliques la teoría, móntalo y dile qué botón tocar.

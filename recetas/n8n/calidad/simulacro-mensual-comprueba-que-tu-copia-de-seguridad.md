@@ -89,4 +89,4 @@ return [{ json: { ...previo, formato: esZip ? 'ZIP' : esGzip ? 'GZIP' : esSql ? 
 - **Zona horaria**: `modifiedTime` viene en UTC; el cálculo por días lo absorbe sin problema.
 
 ## Cuánto cuesta
-0 €. Google Drive gratis hasta 15 GB; a partir de ahí, Google One desde 1,99 €/mes por 100 GB. n8n, Gmail y Sheets, gratis.
+0 €. Google Drive gratis hasta 15 GB; a partir de ahí, Google One desde 1,99 €/mes por 100 GB. n8n autoalojado (Community Edition), Gmail y Sheets, gratis (n8n Cloud: prueba gratuita temporal y después de pago).

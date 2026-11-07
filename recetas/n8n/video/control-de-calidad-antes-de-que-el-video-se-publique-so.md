@@ -79,4 +79,4 @@ Sube un vídeo de prueba en privado, sin miniatura y sin tags, y lanza el workfl
 - **Falsos avisos con Shorts**: los Shorts no llevan capítulos. Filtra por duración menor de 70 segundos en contentDetails.
 
 ## Cuánto cuesta
-Cero euros. YouTube API, Telegram y n8n en su plan gratuito lo cubren de sobra.
+Cero euros con n8n autoalojado (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago); la API de YouTube y Telegram en su capa gratuita lo cubren de sobra.

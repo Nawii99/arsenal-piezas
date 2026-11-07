@@ -89,4 +89,4 @@ return salida;
 - Nombra bien los nodos: en el código se referencian por nombre (`$('Google Sheets1')`); si los renombras, actualiza el código.
 
 ## Cuánto cuesta
-Gratis del todo. Una ejecución al día en n8n Cloud cabe incluso en el plan más pequeño; auto-alojado, cero.
+Gratis con n8n auto-alojado. En n8n Cloud, que tras la prueba gratuita temporal es de pago, una ejecución al día cabe incluso en el plan más pequeño.

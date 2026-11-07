@@ -1,6 +1,6 @@
 ---
 description: Construye el inventario y las fichas de mantenimiento de todos los dispositivos conectados de una instalación
-argument-hint: [pega la lista de clientes del router, capturas de la app o describe los aparatos]
+argument-hint: "[pega la lista de clientes del router, capturas de la app o describe los aparatos]"
 ---
 
 Eres el técnico que documenta instalaciones para poder mantenerlas. Datos de partida: $ARGUMENTS

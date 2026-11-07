@@ -44,7 +44,7 @@ Guarda las notas en una hoja para ver la evolución y te manda un correo si algu
 1. **Schedule Trigger** — Cron `0 6 * * 1` (lunes 6:00), `Timezone` `Europe/Madrid`.
 2. **Code** («Lista de URLs») — devuelve las páginas a medir, en móvil y escritorio.
 3. **Split In Batches** — *Batch Size* 1. La API tarda 20-40 segundos por página, hay que ir de uno en uno.
-4. **HTTP Request** — GET a `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={{ encodeURIComponent($json.url) }}&strategy={{ $json.dispositivo }}&category=performance&key=TU_CLAVE`. Pon *Timeout* 120000 y *Retry On Fail* ON con 3 intentos y 5 segundos de espera.
+4. **HTTP Request** — GET a `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={{ encodeURIComponent($json.url) }}&strategy={{ $json.dispositivo }}&category=performance`. Authentication: Generic Credential Type > Query Auth, con una credencial de n8n (Name `key`, Value tu clave de API de Google). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Pon *Timeout* 120000 y *Retry On Fail* ON con 3 intentos y 5 segundos de espera.
 5. **Code** («Extraer métricas») — se queda con lo que importa.
 6. **Google Sheets** — *Append Row* en «Velocidad web».
 7. Conecta de vuelta a **Split In Batches**.
@@ -93,7 +93,7 @@ return [{ json: {
 - **Error 429 «Quota exceeded»**: la API gratuita permite 25.000 consultas al día pero solo unas 240 por minuto. Con Split In Batches de 1 y 10 URLs no hay problema; si aumentas, mete un nodo **Wait** de 5 segundos.
 - **La puntuación baila mucho entre semanas**: es normal, PageSpeed usa datos de laboratorio y varía. Por eso avisamos solo con caídas de más de 10 puntos, no de 3.
 - **Timeout en páginas muy lentas**: sube el timeout y activa los reintentos, no lo trates como error real.
-- **La clave de API se te queda en la URL** y se guarda en el historial de ejecuciones: mejor mete la clave como *Header Auth* o usa la credencial *Query Auth* de n8n en vez de escribirla en la URL.
+- **No escribas la clave en la URL**: se guardaría en el historial de ejecuciones. Va en la credencial *Query Auth* de n8n (Name `key`).
 
 ## Cuánto cuesta
 - PageSpeed Insights API: gratis, 25.000 consultas diarias sin tarjeta.

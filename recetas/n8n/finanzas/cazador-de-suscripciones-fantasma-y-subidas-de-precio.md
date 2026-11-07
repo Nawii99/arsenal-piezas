@@ -94,4 +94,4 @@ return salida.length ? salida.map((s, i) => ({ json: { ...s.json, total: salida.
 - La API devuelve como máximo lo que el banco guarde (a veces 90 días). Si es tu caso, guarda cada mes los movimientos en Sheets y haz el análisis sobre la hoja.
 
 **Cuánto cuesta**
-Todo gratis: GoCardless para uso propio, Sheets, Gmail y una ejecución mensual en n8n. Si usas n8n Cloud gratuito, esto consume 1 ejecución al mes.
+Todo gratis con n8n auto-alojado: GoCardless para uso propio, Sheets, Gmail y una ejecución mensual en n8n. Si usas n8n Cloud (de pago tras la prueba gratuita), esto consume solo 1 ejecución al mes.

@@ -40,7 +40,7 @@ Un sensor magnético en la puerta dispara un webhook en n8n; si el suceso cae fu
 - Un bot de **Telegram** con su token y tu `chat_id`.
 
 ## Los nodos, en orden
-1. **Webhook** — método **GET**, path `puerta-local`. Copia la *Production URL*.
+1. **Webhook** — método **GET**, path `puerta-local`. Copia la *Production URL*. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. En la app Shelly, dentro del sensor, ve a **Ajustes > Acciones (Actions) > Sensor abierto** y pega esa URL añadiendo `?estado=abierta&sitio=almacen`. Guarda y activa la acción.
 3. **Code** — decide si estamos fuera de horario:
 ```js

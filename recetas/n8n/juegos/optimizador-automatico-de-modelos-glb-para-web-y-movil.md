@@ -45,18 +45,19 @@ Vigila una carpeta de Drive, descarga cada .glb nuevo, le aplica compresión Dra
 ## Los nodos, en orden
 1. **Google Drive Trigger** — Trigger On: `Changes Involving a Specific Folder`, Folder: `modelos-crudos`, Watch For: `File Created`, Poll: cada 15 minutos.
 2. **IF** (llamado `¿Es GLB?`) — String `{{ $json.name }}` `ends with` `.glb`. Así ignoras los .txt y las miniaturas que la gente sube por error.
+2b. **Code** (`Nombre seguro`, modo «Run Once for Each Item») — `const ext = String($json.name).split('.').pop().toLowerCase(); if (ext !== 'glb' || !/^[A-Za-z0-9_-]+$/.test($json.id)) throw new Error('Formato no admitido: ' + $json.name); return { json: { ...$json, archivo: $json.id + '.glb' } };`. En disco y en el comando solo se usa `archivo`; el nombre original queda para la hoja, el aviso y el archivo subido.
 3. **Google Drive** (`Descargar`) — Operation: `Download`, File ID `{{ $json.id }}`, Options > Put Output File in Field: `data`.
-4. **Read/Write Files from Disk** (`Guardar en local`) — Operation: `Write File to Disk`, File Name: `/datos/glb/entrada/{{ $('Google Drive Trigger').item.json.name }}`, Input Binary Field: `data`.
+4. **Read/Write Files from Disk** (`Guardar en local`) — Operation: `Write File to Disk`, File Name: `/datos/glb/entrada/{{ $('Nombre seguro').item.json.archivo }}`, Input Binary Field: `data`.
 5. **Execute Command** (`Optimizar`) — Command exacto abajo. Activa Continue On Fail.
 6. **Code** (`Leer informe`) — parsea el JSON que escupe el inspector para sacar tamaños y triángulos.
-7. **Read/Write Files from Disk** (`Leer optimizado`) — File(s) Selector: `/datos/glb/salida/{{ $('Google Drive Trigger').item.json.name }}`.
+7. **Read/Write Files from Disk** (`Leer optimizado`) — File(s) Selector: `/datos/glb/salida/{{ $('Nombre seguro').item.json.archivo }}`.
 8. **Google Drive** (`Subir`) — Operation: `Upload`, carpeta `modelos-web`, nombre `{{ $('Google Drive Trigger').item.json.name.replace('.glb','') }}_web.glb`.
 9. **Google Sheets** — Append Row con fecha, nombre, MB antes, MB después, porcentaje y `{{ $json.webViewLink }}`.
-10. **HTTP Request** (`Slack`) — POST al webhook con body `{ "text": "🧊 {{ $('Code').item.json.fichero }}: {{ $('Code').item.json.mb_antes }} MB → {{ $('Code').item.json.mb_despues }} MB (-{{ $('Code').item.json.ahorro_pct }} %)" }`.
+10. **HTTP Request** (`Slack`) — POST al webhook con body `{ "text": "🧊 {{ $('Leer informe').item.json.fichero }}: {{ $('Leer informe').item.json.mb_antes }} MB → {{ $('Leer informe').item.json.mb_despues }} MB (-{{ $('Leer informe').item.json.ahorro_pct }} %)" }`.
 
 ## El comando del nodo Execute Command
 ```bash
-F="{{ $('Google Drive Trigger').item.json.name }}" && gltf-transform optimize "/datos/glb/entrada/$F" "/datos/glb/salida/$F" --compress draco --texture-compress webp --texture-size 2048 --simplify true --simplify-error 0.001 && stat -c%s "/datos/glb/entrada/$F" && stat -c%s "/datos/glb/salida/$F"
+F="{{ $('Nombre seguro').item.json.archivo }}" && gltf-transform optimize "/datos/glb/entrada/$F" "/datos/glb/salida/$F" --compress draco --texture-compress webp --texture-size 2048 --simplify true --simplify-error 0.001 && stat -c%s "/datos/glb/entrada/$F" && stat -c%s "/datos/glb/salida/$F"
 ```
 
 ## El código de `Leer informe`
@@ -84,7 +85,8 @@ return [{ json: {
 - **Texturas que se ven borrosas**: `--texture-size 2048` reescala todo. Para modelos de héroe sube a 4096 o quita la opción.
 - **WebP no soportado**: si tu visor es antiguo, usa `--texture-compress jpeg` en su lugar.
 - **Draco y three.js**: hay que cargar el decodificador Draco en el visor o el modelo no se verá. En model-viewer y en Babylon ya viene incluido.
-- **Nombres con espacios o acentos**: rompen el comando. Añade un Code previo que renombre a minúsculas sin acentos y sin espacios.
+- **Nombres con espacios, acentos o trampa**: un modelo llamado `$(id).glb` o con comillas ejecutaría órdenes si su nombre entrara en el comando. Por eso en disco va como `ID-de-Drive.glb` (`Nombre seguro`) y el nombre original solo se usa en la hoja, el aviso y la subida a Drive.
+- **El aviso de Slack sale vacío**: el Code se llama `Leer informe`, así que el cuerpo lo cita con `$('Leer informe')`; si lo renombras, cambia también esas expresiones.
 - **Drive Trigger se pierde ficheros** si subes 30 de golpe. Sube en tandas o cambia el trigger por un Schedule + `Search Files` filtrando por fecha de creación.
 
 ## Cuánto cuesta

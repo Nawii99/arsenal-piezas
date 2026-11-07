@@ -35,7 +35,7 @@ Móntaselo a autónomos y negocios pequeños con web propia que reciben consulta
 Cuando alguien rellena el formulario de contacto de tu web de portfolio, guarda sus datos en una hoja de Google Sheets y te avisa por Telegram, sin que tengas que revisar el email a cada rato.
 
 ## Cuentas que hacen falta
-- Cuenta de n8n (self-hosted gratis, o n8n Cloud con periodo de prueba; revisa el límite de ejecuciones del plan gratuito antes de depender de esto para trabajo real).
+- Cuenta de n8n (self-hosted gratis, o n8n Cloud con periodo de prueba; la prueba de Cloud es temporal y después es de pago: revisa el precio antes de depender de esto para trabajo real).
 - Cuenta de Google con Google Sheets (gratis).
 - Un bot de Telegram creado con @BotFather (gratis, sin límite práctico para uso personal).
 

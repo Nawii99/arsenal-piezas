@@ -46,13 +46,13 @@ Para negocios de cuota: mantenimientos informáticos, gimnasios, gestorías, mem
 
 **Los nodos, en orden**
 1. **Stripe Trigger** — eventos `invoice.payment_failed` y `customer.subscription.deleted`.
-2. **Switch** — separa los dos eventos.
-3. **HTTP Request** (rama fallo) — POST a `https://api.stripe.com/v1/billing_portal/sessions` con `customer={{ $json.data.object.customer }}` y `return_url`, cabecera `Authorization: Bearer sk_live_...`. Te devuelve un enlace para que el cliente cambie la tarjeta sin llamarte.
+2. **IF** — antes de seguir, busca el `id` del evento (`{{ $json.id }}`) en la pestaña `Fallos`; si ya está, para aquí, porque Stripe puede reenviar el mismo evento y el cliente recibiría dos emails. Después, un **Switch** que separa los dos eventos.
+3. **HTTP Request** (rama fallo) — POST a `https://api.stripe.com/v1/billing_portal/sessions` con `customer={{ $json.data.object.customer }}` y `return_url`, autenticación con una credencial de n8n (Authentication: Generic Credential Type > Header Auth; en la credencial, Name `Authorization` y Value `Bearer sk_live_...`), nunca con la clave escrita en el nodo. Te devuelve un enlace para que el cliente cambie la tarjeta sin llamarte.
 4. **Gmail** — email al cliente: asunto sin drama («No hemos podido renovar tu cuota»), explicación en dos líneas y el botón con el enlace del portal.
 5. **Wait** — 3 días.
 6. **HTTP Request** — GET a `https://api.stripe.com/v1/invoices/{{ $json.invoice_id }}` para ver si ya está pagada.
 7. **IF** — si sigue impagada: **Gmail** segundo aviso y **Telegram** a ti para que llames por teléfono. Una llamada recupera más que diez emails.
-8. **Google Sheets** — «Append» a una pestaña `Fallos` para saber qué clientes fallan a menudo.
+8. **Google Sheets** — «Append» a una pestaña `Fallos` para saber qué clientes fallan a menudo; guarda también el `id` del evento para la comprobación del paso 2.
 9. Segundo disparador **Schedule Trigger** — día 1 a las 8:00 + **HTTP Request** a `https://api.stripe.com/v1/subscriptions?status=active&limit=100` + **Code** (abajo) + **Google Sheets** + **IF** + **Telegram**.
 
 **El trozo de código (nodo Code de MRR)**
@@ -96,10 +96,10 @@ return [{ json: {
 - Ejecuta a mano el flujo del MRR y compara con el panel de Stripe.
 
 **Qué puede salir mal**
-- El Wait de 3 días mantiene la ejecución abierta: en n8n auto-alojado no hay problema; en el plan gratuito de Cloud puede contar como ejecución larga. Alternativa: guarda la fecha en Sheets y usa un Schedule diario que revise pendientes.
-- Usa `sk_test_` mientras pruebas y no olvides cambiar a `sk_live_`. Guarda la clave como credencial de n8n, nunca escrita en el nodo.
+- El Wait de 3 días mantiene la ejecución abierta: en n8n auto-alojado no hay problema; en n8n Cloud (prueba gratuita temporal y después planes de pago) puede contar como ejecución larga. Alternativa: guarda la fecha en Sheets y usa un Schedule diario que revise pendientes.
+- Usa `sk_test_` mientras pruebas y no olvides cambiar a `sk_live_`. Guarda la clave como credencial de n8n (en los nodos HTTP Request, la credencial Header Auth), nunca escrita en el nodo ni en un Set: un flujo exportado se llevaría la clave.
 - El portal de cliente hay que activarlo antes en Stripe (Configuración > Portal de clientes) o la llamada da error.
 - Reintentos: Stripe ya reintenta solo. No dupliques la lógica; tú añades la parte humana (email claro y llamada).
 
 **Cuánto cuesta**
-n8n gratis. Stripe no cobra por la API ni por el portal, solo su comisión por cobro. Gmail y Sheets gratis.
+n8n auto-alojado gratis (Cloud: prueba gratuita temporal y después planes de pago). Stripe no cobra por la API ni por el portal, solo su comisión por cobro. Gmail y Sheets gratis.

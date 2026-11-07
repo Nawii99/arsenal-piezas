@@ -36,10 +36,10 @@ Vigila la carpeta de Google Drive donde vuelcas las tarjetas y replica cada arch
 Está pensado para el fotógrafo que trabaja solo y no tiene un sistema de copias formal: es el seguro de vida de tu material.
 
 ## Lo que necesitas antes
-- n8n gratis: plan Starter en n8n.io o autoalojado con Docker (`docker run -it -p 5678:5678 n8nio/n8n`).
+- n8n gratis: autoalojado con Docker (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago) (`docker run -it -p 5678:5678 n8nio/n8n`).
 - Cuenta de Google. En console.cloud.google.com creas un proyecto, activas Google Drive API y Google Sheets API, generas credenciales OAuth (tipo Aplicación web) y pones como URI de redirección la que te muestra n8n al crear la credencial.
-- Cuenta de Dropbox. En dropbox.com/developers/apps: Create app, Scoped access, Full Dropbox, permisos files.content.write y files.content.read, y generas el token en la pestaña Settings.
-- Bot de Telegram: escribe a @BotFather, comando /newbot, te da el token. Escribe algo a tu bot y abre api.telegram.org/bot TU_TOKEN /getUpdates para ver tu chat id.
+- Cuenta de Dropbox. En dropbox.com/developers/apps: Create app, Scoped access, Full Dropbox, permisos files.content.write y files.content.read, y generas el token en la pestaña Settings; pégalo solo en una credencial «Dropbox» de n8n, nunca escrito en un nodo (un flujo exportado se llevaría la clave).
+- Bot de Telegram: escribe a @BotFather, comando /newbot, te da el token, que va solo en una credencial «Telegram API» de n8n (nunca en un nodo ni en una URL). Para ver tu chat id, escribe algo a tu bot, pon un nodo **Telegram Trigger** temporal con esa credencial y lee `message.chat.id` en la ejecución de prueba (o escribe a @userinfobot).
 - Una hoja de Google Sheets llamada Registro copias con columnas: Fecha, Sesion, Archivo, TamanoMB, DropboxOK.
 
 ## Los nodos, en orden
@@ -52,7 +52,7 @@ Está pensado para el fotógrafo que trabaja solo y no tiene un sistema de copia
 
 ## Cómo probarla
 Sube tres fotos de prueba a la carpeta de entrada y pulsa Test Workflow. Comprueba que aparecen en Dropbox con el mismo nombre y que la hoja tiene tres filas. Después activa el interruptor Active arriba a la derecha.
-Prueba también el fallo: cambia a propósito el token de Dropbox por uno inválido y verifica que te llega el aviso de Telegram.
+Prueba también el fallo: estropea a propósito la credencial de Dropbox en n8n (token inválido) y verifica que te llega el aviso de Telegram.
 
 ## Qué puede salir mal
 - **Archivos enormes**: los RAW de 60 MB pueden agotar la memoria de n8n. En Settings del workflow sube el timeout y, si autoalojas, arranca con `NODE_OPTIONS=--max-old-space-size=2048`.
@@ -61,4 +61,4 @@ Prueba también el fallo: cambia a propósito el token de Dropbox por uno invál
 - **Zona horaria**: en Settings del workflow pon Timezone: Europe/Madrid o las horas de la hoja saldrán con dos horas menos.
 
 ## Cuánto cuesta
-n8n autoalojado: 0 €. n8n Cloud gratis da 5 flujos activos, suficiente. Google Drive incluye 15 GB gratis; a partir de ahí Google One 100 GB son 1,99 €/mes. Dropbox gratis son 2 GB, el plan Plus 2 TB unos 11,99 €/mes. Telegram es gratis siempre.
+n8n autoalojado: 0 €. n8n Cloud es de pago tras la prueba gratuita temporal. Google Drive incluye 15 GB gratis; a partir de ahí Google One 100 GB son 1,99 €/mes. Dropbox gratis son 2 GB, el plan Plus 2 TB unos 11,99 €/mes. Telegram es gratis siempre.

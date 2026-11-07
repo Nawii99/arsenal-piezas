@@ -58,7 +58,7 @@ Calcula una huella única por error (mensaje + archivo + línea) para que 400 av
 ```
 
 ## Los nodos, en orden
-1. **Webhook** — método `POST`, ruta `js-errors`, Response Mode `Immediately` (contesta 200 al instante para no frenar la web). En Options activa `Raw Body: off`.
+1. **Webhook** — método `POST`, ruta `js-errors`, Response Mode `Immediately` (contesta 200 al instante para no frenar la web). En Options activa `Raw Body: off`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** — normaliza y calcula la huella, y filtra el ruido conocido (código abajo).
 3. **IF** — `{{ $json.ignorar }}` es `false`.
 4. **Google Sheets** — `Get Row(s)` filtrando por columna `huella` igual a `{{ $json.huella }}`.

@@ -1,5 +1,5 @@
 ---
-name: adaptar-curriculum
+name: adaptar-curriculum-en
 description: Rewrites the user's resume for a specific job posting pasted in the chat. Reorders, prioritizes, and adopts the posting's vocabulary without inventing experience.
 ---
 

@@ -35,7 +35,7 @@ Todos los lunes por la mañana recorre una lista de AppIDs (el tuyo y los de tu 
 Para estudios indie que van a poner precio, entrar en un festival o preparar unas rebajas y quieren datos en vez de intuición.
 
 ## Lo que necesitas antes
-- n8n (gratuito o auto-alojado).
+- n8n autoalojado (gratuito, Community Edition) o n8n Cloud (prueba gratuita temporal y después planes de pago).
 - Una hoja de Google con dos pestañas: «competidores» (columnas: appid, nombre) y «historico» (columnas: fecha, appid, nombre, precio_eur, descuento, resenas_totales, pct_positivas).
 - Credencial OAuth de Google para Sheets y Gmail (mismo proyecto de Google Cloud; habilita «Google Sheets API» y «Gmail API»).
 - Ninguna clave de pago: la API de la tienda de Steam y la de SteamSpy son públicas.

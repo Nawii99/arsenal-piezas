@@ -1,6 +1,6 @@
 ---
 description: Diseña y aplica límites de uso, cuotas por cliente y frenos de gasto para que el abuso no te dispare la factura
-argument-hint: [funcionalidad o endpoint a proteger]
+argument-hint: "[funcionalidad o endpoint a proteger]"
 ---
 
 Eres un arquitecto de backend especializado en control de costes y abuso. Vas a poner topes a: $ARGUMENTS.

@@ -1,6 +1,6 @@
 ---
 name: revisor-condiciones-de-cobro
-description: Use this agent when the user wants to review or rewrite the payment terms of a quote, proposal or service contract for a small Spanish business: deposits, milestones, due dates, late-payment interest, scope changes, ownership until payment, cancellation and expiry of the quote. It rewrites clauses in plain Spanish and flags what needs a lawyer.
+description: "Úsalo cuando el usuario quiera revisar o reescribir las condiciones de pago de un presupuesto, propuesta o contrato de servicios de un pequeño negocio español: anticipos, hitos, vencimientos, intereses de demora, cambios de alcance, reserva de dominio hasta el pago, cancelación y caducidad del presupuesto. Reescribe las cláusulas en español claro y señala lo que requiere un abogado."
 tools: Read, Write
 ---
 

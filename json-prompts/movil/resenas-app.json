@@ -10,13 +10,13 @@
   "reglas_que_imponen_las_tiendas": [
     "Hay que usar el aviso oficial de valoración del sistema; en iOS el sistema limita cuántas veces se puede mostrar al mismo usuario al año y en Android la cuota también es limitada, así que cada intento cuenta.",
     "No se puede filtrar a quién se le muestra según lo contento que esté, ni ofrecer premios a cambio de estrellas.",
-    "Sí se puede preguntar antes, dentro de la app, si todo va bien, y ofrecer soporte a quien diga que no.",
+    "Se puede ofrecer soporte dentro de la app, pero por separado: no se puede preguntar antes qué tal va para decidir quién ve el aviso de valoración.",
     "En Google Play se puede responder públicamente a cada reseña y el usuario recibe aviso de tu respuesta."
   ],
   "pasos": [
     "1. Elige 2 o 3 momentos de éxito: justo después de que el usuario complete algo que le ha salido bien, nunca después de un error, un pago o una espera.",
     "2. Añade una condición previa: al menos 3 sesiones, más de 5 días desde la instalación y ningún fallo en la última sesión.",
-    "3. Antes del aviso oficial, muestra una pregunta propia de una línea: qué tal te va con [APP]. A quien responde bien se le lanza el aviso oficial; a quien responde mal se le abre el formulario de soporte.",
+    "3. Lanza el aviso oficial de valoración a todos los usuarios que cumplan las condiciones del paso 2, sin preguntar antes qué tal les va. Ofrece el soporte aparte (en ajustes o en la ayuda), con un acceso visible para cualquiera.",
     "4. Limita el intento: como mucho dos veces al año por usuario, y nunca dos veces seguidas en el mismo mes.",
     "5. Recoge lo que dicen las reseñas malas y ordénalo por número de veces que aparece: eso es tu lista de arreglos.",
     "6. Responde a todas las reseñas de 1 a 3 estrellas en menos de 48 horas y a las de 5 con una línea corta de agradecimiento.",
@@ -24,7 +24,7 @@
   ],
   "formato_salida": {
     "bloque_1": "Momentos elegidos y condiciones previas para lanzar el aviso",
-    "bloque_2": "Textos de la pregunta propia y de las dos ramas, contento y descontento",
+    "bloque_2": "Texto previo al aviso oficial, igual para todos, y texto del acceso a soporte que se ofrece aparte",
     "bloque_3": "Respuestas redactadas para cada reseña pegada en el contexto, listas para copiar, máximo 60 palabras cada una",
     "bloque_4": "Lista de arreglos ordenada por número de quejas",
     "bloque_5": "Rutina semanal de 15 minutos para mantener esto vivo"

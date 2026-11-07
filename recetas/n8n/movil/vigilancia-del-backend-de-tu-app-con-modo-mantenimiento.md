@@ -49,7 +49,7 @@ Cada cinco minutos llama a un punto de salud de tu API y mide si responde y cuá
 6. **IF** (nombre: ¿Caída confirmada?) — Conditions (AND): estado actual `caido` Y el estado anterior también `caido`. Con dos fallos seguidos evitas avisar por un hipo de red.
 7. **Telegram** — Send Message: `🔴 API caída. Código {{$json.codigo}}, {{$json.ms}} ms. Desde {{$json.desde}}.`
 8. **Gmail** — Send a tu correo y al del proveedor de hosting si procede.
-9. **HTTP Request** (nombre: Activar mantenimiento) — Method: PATCH, URL: `https://api.github.com/gists/TU_GIST_ID`, Headers: `Authorization` = `Bearer TU_TOKEN`, `Accept` = `application/vnd.github+json`. Body JSON: `{ "files": { "config.json": { "content": "{\"mantenimiento\":true,\"mensaje\":\"Estamos arreglando una incidencia, vuelve en unos minutos.\"}" } } }`.
+9. **HTTP Request** (nombre: Activar mantenimiento) — Method: PATCH, URL: `https://api.github.com/gists/TU_GIST_ID`, Authentication: Generic > Header Auth con una credencial de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`), Headers: `Accept` = `application/vnd.github+json`. No pegues el token en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Body JSON: `{ "files": { "config.json": { "content": "{\"mantenimiento\":true,\"mensaje\":\"Estamos arreglando una incidencia, vuelve en unos minutos.\"}" } } }`.
 10. Rama de recuperación: otro **IF** que detecte estado `ok` tras una caída → mismo PATCH con `mantenimiento: false` → **Telegram** `✅ API recuperada tras {{$json.minutos}} minutos.`
 11. Opcional, **Schedule Trigger** mensual + **Code** que calcule el porcentaje de disponibilidad del mes desde la hoja y te lo mande por correo.
 

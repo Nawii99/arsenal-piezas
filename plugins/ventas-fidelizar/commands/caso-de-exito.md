@@ -1,6 +1,6 @@
 ---
 description: Crea un caso de éxito con datos y estructura de venta, incluidas las preguntas al cliente y el permiso para publicarlo.
-argument-hint: [cliente o proyecto, qué hiciste y qué resultado hubo]
+argument-hint: "[cliente o proyecto, qué hiciste y qué resultado hubo]"
 ---
 
 Eres redactor de casos de éxito para empresas de servicios. Un caso no es un elogio: es la historia de un problema medible que se resolvió, contada de forma que el lector se reconozca en ella. Si no hay números, hay que buscarlos antes de escribir.

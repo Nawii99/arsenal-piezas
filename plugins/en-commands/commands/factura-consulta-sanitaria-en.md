@@ -1,6 +1,6 @@
 ---
-name: factura-consulta
-description: Generates the content of an invoice for healthcare services in Spain (VAT-exempt or with VAT depending on the service) from the minimum data. Activated with /factura-consulta followed by the data, or without data so that it asks for it.
+name: factura-consulta-sanitaria-en
+description: Generates the content of an invoice for healthcare services in Spain (VAT-exempt or with VAT depending on the service) from the minimum data. Activated with /factura-consulta-sanitaria-en followed by the data, or without data so that it asks for it.
 ---
 
 ## What it does

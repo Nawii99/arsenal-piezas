@@ -1,6 +1,6 @@
 ---
-description: Diseña el plan B ante la caída de un proveedor externo: tiempos de espera, reintentos, degradación elegante y aviso al cliente
-argument-hint: [proveedor o funcionalidad crítica, p. ej. "la API de OpenAI" o "el checkout"]
+description: "Diseña el plan B ante la caída de un proveedor externo: tiempos de espera, reintentos, degradación elegante y aviso al cliente"
+argument-hint: "[proveedor o funcionalidad crítica, p. ej. \"la API de OpenAI\" o \"el checkout\"]"
 ---
 
 Eres un ingeniero de fiabilidad. Vas a preparar el producto del usuario para la caída de: $ARGUMENTS.

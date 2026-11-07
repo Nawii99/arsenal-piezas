@@ -46,10 +46,10 @@ Para desarrolladores freelance y pequeños equipos con webs estáticas o de Word
 1. **Webhook** — Method `POST`, Path `deploy-github`. Copia la Production URL.
 2. En GitHub: Settings del repo > Webhooks > Add webhook, pega la URL, Content type `application/json`, evento «Just the push event».
 3. **IF** — `{{ $json.body.ref }}` *is equal to* `refs/heads/main`. Así los push a otras ramas no despliegan.
-4. **HTTP Request** («Lanzar build») — POST a la URL del Build Hook de Netlify, sin cuerpo.
+4. **HTTP Request** («Lanzar build») — POST a la URL del Build Hook de Netlify, sin cuerpo. Esa URL es un secreto (quien la tenga lanza builds): guárdala en una variable de entorno de n8n y úsala como `{{ $env.NETLIFY_BUILD_HOOK }}` en vez de pegarla en el nodo.
 5. **Wait** — 45 segundos.
-6. **HTTP Request** («Estado del deploy») — GET `https://api.netlify.com/api/v1/sites/TU_SITE_ID/deploys?per_page=1`, cabecera `Authorization: Bearer TU_TOKEN`.
-7. **IF** — `{{ $json[0].state }}` *is equal to* `ready`. Si no, va a un **Wait** de 30 segundos que vuelve al nodo de estado (máximo 10 vueltas, lo controlas con un contador en un Code).
+6. **HTTP Request** («Estado del deploy») — GET `https://api.netlify.com/api/v1/sites/TU_SITE_ID/deploys?per_page=1`, autenticación `Generic Credential Type` > `Header Auth` con una credencial (Name `Authorization`, Value `Bearer TU_TOKEN`); el token va solo en la credencial, no escrito en el nodo.
+7. **IF** — `{{ $json.state }}` *is equal to* `ready` (n8n convierte la lista que devuelve Netlify en un item por elemento). Si no, va a un **Wait** de 30 segundos que vuelve al nodo de estado (máximo 10 vueltas, lo controlas con un contador en un Code).
 8. **HTTP Request** («Comprobar web») — GET a tu dominio, Response Format `Text`, `Never Error` y `Full Response` activados.
 9. **Code** — verifica código 200 y que el HTML contiene una frase que sabes que está en tu portada (código abajo).
 10. **Telegram** (*Send Message*) — mensaje con el resultado, el autor y el texto del commit.
@@ -58,7 +58,7 @@ Para desarrolladores freelance y pequeños equipos con webs estáticas o de Word
 ```javascript
 const resp = $('Comprobar web').first().json;
 const push = $('Webhook').first().json.body;
-const estado = $('Estado del deploy').first().json[0] || {};
+const estado = $('Estado del deploy').first().json || {};
 const html = typeof resp.body === 'string' ? resp.body : '';
 const codigo = resp.statusCode;
 const marcador = 'Contacta con nosotros'; // un texto que siempre esta en tu portada
@@ -83,9 +83,10 @@ return [{ json: { ok, mensaje } }];
 ## Qué puede salir mal
 - **El build tarda más de lo que esperas**: por eso está el bucle de espera. Si tu build tarda 8 minutos, sube el Wait inicial a 3 minutos.
 - **Caché de CDN**: Netlify sirve la versión nueva enseguida, pero si tienes Cloudflare delante puedes estar comprobando la versión vieja. Añade `?nocache={{ $now.toMillis() }}` a la URL de comprobación.
-- **Secretos en el flujo**: guarda el token de Netlify como credencial de tipo Header Auth en n8n, no escrito a pelo en el nodo.
-- **Webhook público**: cualquiera que sepa tu URL puede dispararlo. Configura en GitHub un *Secret* y valida la cabecera `X-Hub-Signature-256` con un nodo Code, o al menos usa un path largo y aleatorio.
+- **Secretos en el flujo**: guarda el token de Netlify como credencial de tipo Header Auth en n8n, no escrito a pelo en el nodo ni en un Code: un flujo exportado se llevaría el token.
+- **Webhook público**: cualquiera que sepa tu URL puede dispararlo. Configura en GitHub un *Secret* y valida la cabecera `X-Hub-Signature-256` con un nodo Code (el secreto léelo de una variable de entorno, p. ej. `$env.GITHUB_WEBHOOK_SECRET`, nunca lo escribas dentro del código); si la firma no vale, responde 401 y para. Un path largo o secreto no sustituye a la firma. GitHub puede reenviar la misma entrega: guarda la cabecera `X-GitHub-Delivery` y no despliegues dos veces la misma.
 - **Despliegues encadenados**: si haces cinco push seguidos se lanzan cinco flujos. Añade en Settings del workflow un límite de concurrencia o comprueba al inicio si ya hay uno corriendo.
+- **`state` siempre vacío**: el HTTP Request parte la lista de Netlify en items, así que `$json[0]` no existe; se lee `$json.state`.
 
 ## Cuánto cuesta
 - Netlify: plan gratuito con 300 minutos de build al mes, suficiente para una web pequeña.

@@ -75,4 +75,4 @@ Si dos archivos caen en el mismo minuto, el trigger los procesa como items separ
 Los IDs de carpeta de cliente hay que mantenerlos: guarda el mapa cliente-carpeta en Airtable en vez de a fuego en el código.
 La extensión se pone en mayúsculas con `toUpperCase()`; si lo prefieres en minúsculas, aplica el toUpperCase solo a la parte del nombre.
 ## Cuánto cuesta
-Gratis: Drive con tu cuenta habitual, Airtable plan gratuito, n8n auto-alojado. Si usas n8n Cloud gratuito, ojo: un trigger que sondea cada minuto consume muchas ejecuciones, ponlo cada 15 minutos.
+Gratis: Drive con tu cuenta habitual, Airtable plan gratuito, n8n auto-alojado. Si usas n8n Cloud (prueba gratuita temporal y después de pago), ojo: un trigger que sondea cada minuto consume muchas ejecuciones, ponlo cada 15 minutos.

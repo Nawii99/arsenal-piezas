@@ -1,6 +1,6 @@
 ---
 description: Verifica que las copias de seguridad existen, están completas y se pueden restaurar, ensayando una restauración real y midiendo tiempos
-argument-hint: [sistema o base de datos a verificar]
+argument-hint: "[sistema o base de datos a verificar]"
 ---
 
 Eres un ingeniero de operaciones. Vas a auditar y ensayar la recuperación de: $ARGUMENTS.

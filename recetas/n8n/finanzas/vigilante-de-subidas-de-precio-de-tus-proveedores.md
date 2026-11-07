@@ -45,7 +45,7 @@ Hoja de Google Sheets `Compras` con pestaña `Lineas`: `fecha`, `proveedor`, `ar
 ## Los nodos, en orden
 **1. Gmail Trigger** — Evento `Message Received`, `Poll Times` cada hora, filtro `Label IDs` = `Facturas proveedor`, y en Options activa `Download Attachments` = true.
 **2. Extract from File** — Operación `Extract From PDF`, campo binario `attachment_0`. Devuelve el texto en `text`.
-**3. HTTP Request** (`Leer con IA`) — `POST` a `https://api.anthropic.com/v1/messages`. Headers: `x-api-key` con tu clave, `anthropic-version` = `2023-06-01`, `content-type` = `application/json`. Body JSON: `{"model":"claude-sonnet-5-5","max_tokens":2000,"messages":[{"role":"user","content":"Devuelve SOLO un JSON con esta forma {\"proveedor\":\"\",\"factura\":\"\",\"fecha\":\"yyyy-mm-dd\",\"lineas\":[{\"articulo\":\"\",\"cantidad\":0,\"precio_unitario\":0}]} para esta factura:\n\n{{ $json.text }}"}]}`.
+**3. HTTP Request** (`Leer con IA`) — `POST` a `https://api.anthropic.com/v1/messages`. Headers: `x-api-key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `x-api-key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría), `anthropic-version` = `2023-06-01`, `content-type` = `application/json`. Body JSON: `{"model":"claude-sonnet-5-5","max_tokens":2000,"messages":[{"role":"user","content":"Devuelve SOLO un JSON con esta forma {\"proveedor\":\"\",\"factura\":\"\",\"fecha\":\"yyyy-mm-dd\",\"lineas\":[{\"articulo\":\"\",\"cantidad\":0,\"precio_unitario\":0}]} para esta factura:\n\n{{ $json.text }}"}]}`.
 **4. Google Sheets** (`Historico`) — `Get Row(s)`, pestaña `Lineas`.
 **5. Code** (`Comparar precios`) — `Run Once for All Items`. Código abajo.
 **6. Google Sheets** (`Guardar lineas`) — `Append`, pestaña `Lineas`.

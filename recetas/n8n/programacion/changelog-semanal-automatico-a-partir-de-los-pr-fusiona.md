@@ -45,7 +45,7 @@ Es para quien mantiene un producto con clientes y necesita comunicar avances sin
 **2. Code** («Fecha de corte») — calcula la fecha de hace 7 días en formato `YYYY-MM-DD`.
 **3. HTTP Request** («Buscar PR») — `GET` `https://api.github.com/search/issues`, Send Query Parameters activado, parámetro `q` con valor `repo:TU_USUARIO/TU_REPO is:pr is:merged merged:>={{ $json.desde }}` y parámetro `per_page` = `100`. Header Auth `Authorization: Bearer TU_TOKEN` y `User-Agent: n8n`.
 **4. Code** («Ordenar por tipo») — clasifica por el prefijo del título o por las etiquetas.
-**5. HTTP Request** («Redactar con IA») — `POST` `https://api.anthropic.com/v1/messages`. Headers: `x-api-key: TU_CLAVE`, `anthropic-version: 2023-06-01`, `content-type: application/json`. Body Content Type `JSON`, con el modelo, `max_tokens` 1500 y el prompt del apartado siguiente.
+**5. HTTP Request** («Redactar con IA») — `POST` `https://api.anthropic.com/v1/messages`. Authentication: Generic > Header Auth con una credencial de n8n (Name `x-api-key`, Value tu clave). Headers: `anthropic-version: 2023-06-01`, `content-type: application/json`. Body Content Type `JSON`, con el modelo, `max_tokens` 1500 y el prompt del apartado siguiente. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 **6. Code** («Sacar el texto») — devuelve `$json.content[0].text`.
 **7. Google Docs** — Operation `Update a Document` sobre un documento fijo que crees tú («Changelog»), acción `Insert` del texto al principio. Alternativa más simple: Operation `Create` con título `Changelog semana {{ $now.format('yyyy-MM-dd') }}`.
 **8. Gmail** — Operation `Send`, To tu lista, Subject `Novedades de la semana`, Message el texto, Email Type `Text`.

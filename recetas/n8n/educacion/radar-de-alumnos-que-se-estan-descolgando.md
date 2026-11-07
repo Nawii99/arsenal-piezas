@@ -38,7 +38,7 @@ Cada lunes a las 8:00 mira la última actividad de cada alumno (último acceso y
 Además redacta un email personalizado de rescate para cada alumno en rojo y lo deja en borradores para que tú lo revises y lo envíes.
 
 ## Lo que necesitas antes
-- n8n (auto-alojado gratis con Docker, o su plan gratuito de prueba en cloud).
+- n8n (auto-alojado gratis con Docker, o n8n Cloud, que tras una prueba gratuita temporal es de pago).
 - Una hoja de Google Sheets llamada `Alumnos` con columnas: `email`, `nombre`, `curso`, `fecha_alta`, `ultimo_acceso`, `ultima_entrega`, `progreso_pct`, `estado`.
 - Si usas Moodle, exporta el informe de actividad a esa hoja (Informes > Registros > Descargar). Si usas Thinkific/Hotmart, exporta el CSV de progreso y pégalo en la misma hoja. Con hacerlo una vez por semana vale.
 - Cuenta de Google conectada en n8n: Credentials > Google Sheets OAuth2 y Gmail OAuth2 (se crean en console.cloud.google.com, APIs y servicios > Credenciales > ID de cliente OAuth, tipo Aplicación web, y añades la URL de callback que te da n8n).

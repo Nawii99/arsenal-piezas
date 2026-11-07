@@ -52,7 +52,7 @@ Cuenta de Twilio con WhatsApp; necesitas Account SID, Auth Token y el número em
 6. **Code** (matching) — filtra por servicio igual, franja compatible y estado distinto de `ofrecido` u `off`; ordena por `prioridad` y devuelve solo el mejor candidato de cada hueco (código abajo).
 7. **Twilio** — WhatsApp a `{{$json.telefono}}` con el texto: `Hola {{$json.nombre}}, se ha liberado un hueco el {{$json.fecha}} a las {{$json.hora_inicio}}. Responde SI en los próximos 20 minutos y te lo reservo.`
 8. **Google Sheets** — `Update Row`, matching `id`, pon `estado` = `ofrecido` y `ofrecido_hasta` = `{{$now.plus(20,'minutes').toISO()}}`.
-9. **Webhook** (workflow aparte) — Method `POST`, path `wa-respuesta`; pega esa URL en Twilio, en la configuración del número, campo `A message comes in`.
+9. **Webhook** (workflow aparte) — Method `POST`, path `wa-respuesta`; pega esa URL en Twilio, en la configuración del número, campo `A message comes in`. Protégelo: verifica la cabecera `X-Twilio-Signature` con tu Auth Token de Twilio (leído de una variable de entorno) en un nodo Code y descarta lo que no cuadre; sin eso, cualquiera que sepa la URL puede mandarte respuestas falsas.
 10. **IF** — comprueba que el cuerpo del mensaje contiene `SI` y que `ofrecido_hasta` sigue en el futuro.
 11. **Google Calendar** — Operation `Create`, título `{{$json.servicio}} - {{$json.nombre}}`, Start y End del hueco; y **Google Sheets** para poner `estado` = `confirmado`.
 

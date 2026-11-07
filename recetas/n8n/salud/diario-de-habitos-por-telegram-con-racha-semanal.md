@@ -39,8 +39,8 @@ Es gestión de hábitos, no consejo médico: registra lo que tú declaras y te d
 
 ## Lo que necesitas antes
 - n8n instalado y accesible desde internet si quieres los botones (con n8n cloud ya lo es; auto-alojado necesita una URL pública, por ejemplo con un túnel de Cloudflare gratis).
-- Bot de Telegram: escribe a @BotFather, /newbot, copia el token. Credencial «Telegram API» en n8n.
-- Tu chat id: escribe a tu bot y abre https://api.telegram.org/bot TU_TOKEN /getUpdates.
+- Bot de Telegram: escribe a @BotFather, /newbot, copia el token y pégalo solo en la credencial «Telegram API» de n8n (nunca en un nodo ni en una URL: un flujo exportado se llevaría la clave).
+- Tu chat id: escribe a tu bot, activa un **Telegram Trigger** temporal con esa credencial y lee `message.chat.id` (o escribe a @userinfobot); no pongas el token en ninguna URL.
 - Hoja «Habitos» en Google Sheets con columnas: Fecha, Chat id, Agua, Pasos, Entreno, Sueno, Nota.
 
 ## Los nodos, en orden

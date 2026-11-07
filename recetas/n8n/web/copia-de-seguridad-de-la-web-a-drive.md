@@ -38,12 +38,17 @@ Para quien tiene una o varias webs (WordPress, PrestaShop, Laravel) en un VPS o 
 - Acceso SSH al hosting: usuario, host y contraseña o clave privada. Si tu hosting no da SSH, esta receta no te vale; usa la variante con `wget` a un script PHP protegido por token.
 - Credencial SSH en n8n: Credentials > New > SSH Password o SSH Private Key.
 - Credencial Google Drive OAuth2 en n8n; crea en Drive una carpeta `Backups/<nombre-web>` y copia su ID de la URL.
-- Saber los datos de la base de datos: en WordPress están en `wp-config.php` (`DB_NAME`, `DB_USER`, `DB_PASSWORD`).
+- Saber los datos de la base de datos: en WordPress están en `wp-config.php` (`DB_NAME`, `DB_USER`, `DB_PASSWORD`). El usuario y la contraseña van en el servidor, no en n8n: crea `~/.my.cnf` con estas líneas y dale permisos con `chmod 600 ~/.my.cnf`:
+```ini
+[mysqldump]
+user=USUARIO
+password=CONTRASENA
+```
 - Espacio: 15 GB gratis en Drive dan de sobra para webs pequeñas.
 
 **Los nodos, en orden**
 1. **Schedule Trigger** — Days, Hour 3, Minute 30 (de madrugada, cuando nadie compra).
-2. **SSH** (`Volcar BD`) — Resource: Command. Command: `cd /tmp && mysqldump -u USUARIO -p'CONTRASENA' NOMBREBD --single-transaction --quick | gzip > bd-$(date +%F).sql.gz && ls -l /tmp/bd-$(date +%F).sql.gz`.
+2. **SSH** (`Volcar BD`) — Resource: Command. Command: `cd /tmp && mysqldump NOMBREBD --single-transaction --quick | gzip > bd-$(date +%F).sql.gz && ls -l /tmp/bd-$(date +%F).sql.gz`.
 3. **SSH** (`Comprimir ficheros`) — Command: `cd /var/www/tuweb && tar -czf /tmp/uploads-$(date +%F).tar.gz wp-content/uploads --warning=no-file-changed || true`.
 4. **SSH** (`Descargar BD`) — Resource: File, Operation: Download, Path `/tmp/bd-{{ $now.format('yyyy-LL-dd') }}.sql.gz`, Put Output in Field `data`.
 5. **Google Drive** (`Subir BD`) — Operation: Upload, Input Data Field Name `data`, File Name `bd-{{ $now.format('yyyy-LL-dd') }}.sql.gz`, Parent Folder: la carpeta `Backups`.
@@ -61,7 +66,7 @@ Para quien tiene una o varias webs (WordPress, PrestaShop, Laravel) en un VPS o 
 - Prueba de verdad la restauración una vez: monta la web en local con ese volcado. Un backup que no has restaurado nunca no es un backup.
 
 **Qué puede salir mal**
-- La contraseña de la BD con caracteres raros rompe el comando: enciérrala en comillas simples como en el ejemplo y evita comillas simples dentro.
+- La contraseña de la BD escrita en el comando (`-p'...'`) quedaría en el historial de ejecuciones y se iría con el flujo si lo exportas o compartes; por eso `mysqldump` la lee de `~/.my.cnf` (permisos 600) en el servidor. Si el volcado sale vacío, revisa ese archivo.
 - Si la carpeta `uploads` pesa más de 1 GB, n8n puede quedarse sin memoria al descargarla. Solución: haz el `tar` partido por años (`wp-content/uploads/2026`) o usa `rclone` en el servidor y que n8n solo lo dispare.
 - El aviso `file changed as we read it` de tar es normal en webs vivas; por eso está el `|| true`.
 - Zona horaria: si el nombre del fichero sale con el día anterior, pon `Europe/Madrid` en Settings del workflow.

@@ -1,6 +1,6 @@
 ---
 name: plan-entre-sesiones
-description: Turns the instructions a health professional already gave in session into a home plan the patient will actually follow: habit design, realistic minimum dose, reminders, a simple log and a check-in script for the next visit. Use when patients do not comply between sessions and progress stalls.
+description: "Convierte las indicaciones que un profesional sanitario ya dio en consulta en un plan para casa que el paciente realmente seguirá: diseño de hábitos, dosis mínima realista, recordatorios, un registro sencillo y un guion de revisión para la siguiente visita. Úsala cuando los pacientes no cumplan entre sesiones y el progreso se estanque."
 ---
 
 # Plan de hábitos entre sesiones

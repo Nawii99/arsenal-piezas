@@ -38,7 +38,7 @@ Todas las noches hace un volcado de PostgreSQL o MySQL, lo comprime y cifra, lo 
 - En el contenedor de n8n, los clientes instalados: en el Dockerfile añade `RUN apk add --no-cache postgresql-client gnupg` (o `mysql-client`).
 - Usuario de base de datos con permiso de solo lectura para el volcado.
 - Credencial de Google Drive en n8n y una carpeta creada, por ejemplo `Backups/BD`. Apunta su ID (está en la URL de la carpeta).
-- Una contraseña larga para cifrar, guardada donde tú sepas (si la pierdes, la copia no sirve de nada). Ponla como variable de entorno `BACKUP_PASS` de n8n.
+- Una contraseña larga para cifrar, guardada donde tú sepas (si la pierdes, la copia no sirve de nada). Ponla como variable de entorno `BACKUP_PASS` de n8n, y la contraseña de la base como variable `PGPASS` (el comando la lee de ahí; no la escribas en el nodo).
 - Una hoja `historico_backups` en Sheets con columnas `fecha`, `archivo`, `bytes`, `estado`.
 **Los nodos, en orden**
 1. `Schedule Trigger` — Days, Trigger at Hour `3`, Minute `15`. Evita las horas en punto: a esa hora arranca todo el mundo.
@@ -81,7 +81,7 @@ return $input.all().filter(i => new Date(i.json.createdTime).getTime() < limite)
 **Qué puede salir mal**
 - *Espacio en disco*: un volcado grande puede llenar `/tmp`. Comprueba con `df -h` y, si vas justo, monta un volumen para `/tmp` en el contenedor.
 - *Cuota de Google Drive*: 15 GB gratis compartidos con Gmail y Fotos. Con retención de 30 días y volcados de 200 MB vas justo; baja la retención o usa Backblaze B2 (0,006 $/GB/mes) vía `HTTP Request`.
-- *La contraseña de cifrado en el comando*: úsala siempre desde variable de entorno, nunca escrita en el nodo, o quedará en el historial de ejecuciones.
+- *La contraseña de cifrado en el comando*: úsala siempre desde variable de entorno, nunca escrita en el nodo, o quedará en el historial de ejecuciones y se iría con el flujo si lo exportas. Lo mismo para `PGPASS`: si falta la variable, `pg_dump` falla por autenticación.
 - *Bloqueos en la base de datos*: `pg_dump` no bloquea escrituras, pero si tu base es grande hazlo contra una réplica de lectura.
 - *Zonas horarias*: usa `date -u` como en el comando; así los nombres de archivo ordenan bien siempre.
 **Cuánto cuesta**

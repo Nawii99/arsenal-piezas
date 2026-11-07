@@ -81,4 +81,4 @@ Fotos con mucho blanco o negro dominan la paleta y no aportan: añade un filtro 
 Ojo con los derechos: las referencias de Pinterest no se pueden republicar. El moodboard es de uso interno o para presentación, cítalas.
 Si subes muchas imágenes pesadas, Cloudinary consume tu cuota de almacenamiento: borra los assets del proyecto cuando termines con un nodo HTTP Request de `destroy`.
 ## Cuánto cuesta
-n8n y Drive gratis. Cloudinary tiene un plan gratuito con 25 créditos al mes (miles de subidas pequeñas). PDFShift es opcional. Un moodboard de 20 imágenes no cuesta nada.
+Drive gratis y n8n autoalojado gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago). Cloudinary tiene un plan gratuito con 25 créditos al mes (miles de subidas pequeñas). PDFShift es opcional. Un moodboard de 20 imágenes no cuesta nada.

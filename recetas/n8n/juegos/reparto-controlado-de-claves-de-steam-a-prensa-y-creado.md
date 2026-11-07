@@ -47,7 +47,7 @@ Para estudios que reparten claves en lanzamiento, festivales o campañas con cre
 2. **Google Sheets** («Get Row(s)», pestaña «solicitudes») — Para detectar repetidos.
 3. **Code** — Extrae el ID o el handle del canal de la URL y comprueba si el correo ya pidió (código abajo).
 4. **IF** «¿Repetido?» — Si `ya_pidio` es true → **Gmail** con un «ya te enviamos una clave» y fin.
-5. **HTTP Request** — GET `https://www.googleapis.com/youtube/v3/channels?part=statistics,snippet&forHandle={{ $json.handle }}&key=TU_API_KEY`.
+5. **HTTP Request** — GET `https://www.googleapis.com/youtube/v3/channels?part=statistics,snippet&forHandle={{ $json.handle }}`, con Authentication: Generic > Query Auth con una credencial de n8n (Name `key`, Value tu clave). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 6. **IF** «¿Cumple mínimos?» — `{{ $json.items[0].statistics.subscriberCount }}` mayor que `500` **Y** `videoCount` mayor que `10`.
 7. **Google Sheets** («Get Row(s)», pestaña «claves», filtro estado = libre, límite 1) — Coge la siguiente clave.
 8. **Google Sheets** («Update Row») — Marca esa fila como estado `asignada`, `asignada_a` = correo, `fecha` = hoy. **Hazlo ANTES de enviar el correo**.

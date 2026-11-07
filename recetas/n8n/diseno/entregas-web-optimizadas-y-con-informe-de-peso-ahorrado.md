@@ -79,4 +79,4 @@ Si mandas muchas imágenes a la vez sin Split In Batches, recibirás errores 429
 Las 500 compresiones mensuales gratuitas se agotan rápido si conviertes también a WebP: cada conversión cuenta como una operación más.
 Si un logo con transparencia sale con bordes sucios, es que el original tenía canal alfa mal exportado, no la compresión.
 ## Cuánto cuesta
-n8n, Drive y Gmail gratis. TinyPNG: 500 operaciones al mes gratis y después unos 0,009 $ por imagen adicional; una entrega típica de 40 imágenes no llega a 40 céntimos.
+n8n autoalojado (Community Edition), Drive y Gmail gratis; n8n Cloud tiene una prueba gratuita temporal y después planes de pago. TinyPNG: 500 operaciones al mes gratis y después unos 0,009 $ por imagen adicional; una entrega típica de 40 imágenes no llega a 40 céntimos.

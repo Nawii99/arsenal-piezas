@@ -27,7 +27,7 @@ If the user can't answer, don't get blocked: audit with what there is and flag t
 5. Events. For one-time payments: `checkout.session.completed` and `payment_intent.payment_failed`. For subscriptions: `invoice.paid`, `invoice.payment_failed`, `customer.subscription.updated`, `customer.subscription.deleted`. What happens when a monthly charge fails? Is access cut? When? If it hasn't been decided, point it out as a pending business decision, not as a bug.
 6. Payment status. Is it checked that the payment is really paid (`payment_status == 'paid'`) and not just that the event arrived? With bank transfers or deferred methods the event arrives before the money.
 7. Amounts. Is the amount Stripe says used, or the one your database says? If someone manipulates the price on the client, the amount charged and the service delivered don't match. Compare.
-8. Secrets. Is there any `sk_live_` or `whsec_` key written in the code? If it is in the repository, it must be rotated in the Stripe dashboard; deleting it is not enough.
+8. Secrets. Is there any `sk_live_` or `whsec_` key written in the code? If it is in the repository, it must be rotated in the Stripe dashboard; deleting it is not enough. In the report, mask the value (only `sk_live_…` or the first and last 4 characters): never copy the full key.
 9. Errors. If something fails midway (the invoice is issued but the database is not updated), is there a trail to fix it by hand? A log with `event.id` and which step failed is enough.
 10. Refunds and disputes. Are `charge.refunded` and `charge.dispute.created` handled? If not, a refunded customer keeps access and no credit note is issued.
 
@@ -42,6 +42,7 @@ A short report in this format, without jargon:
 
 ## What NOT to do
 
+- Never copy the full value of a key or secret into the report: only file and line.
 - Do not rewrite the code. You point out; someone else fixes. If the user asks for the fix, they should ask for it afterwards with the report in front of them.
 - Do not approve a webhook without signature verification 'because it's a small project'. Small projects also receive automated malicious traffic.
 - Do not make up how Stripe behaves. If you are not sure about an event or a retry window, say so and put [check in Stripe's documentation].

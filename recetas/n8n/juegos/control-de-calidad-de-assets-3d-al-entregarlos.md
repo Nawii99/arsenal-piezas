@@ -43,14 +43,23 @@ Para directores de arte, jefes de equipo y freelancers que quieren entregar siem
 ## Los nodos, en orden
 1. **Google Drive Trigger** — «File Created» en «entregas».
 2. **Wait** — 45 segundos, para que Drive termine de subir el archivo entero.
-3. **Google Drive** («Download File») y **Read/Write Files from Disk** («Write») a `/data/qa/{{ $json.name }}`.
-4. **Execute Command** — `blender -b --python /data/scripts/qa.py -- "/data/qa/{{ $json.name }}"`.
-5. **Read/Write Files from Disk** («Read») — Lee `/data/qa/resultado.json`.
-6. **Code** — Convierte el JSON en una lista de fallos legible.
-7. **IF** — `{{ $json.fallos.length }}` igual a `0`.
-8. **Google Drive** («Move File») — A «aprobados» o a «rechazados» según la rama.
-9. **Google Sheets** («Append Row») — Registro: fecha, archivo, artista, triángulos, veredicto, fallos.
-10. **Slack** — Mensaje al canal #arte: `✅ SM_silla.fbx aprobado (8.412 tris)` o `❌ silla_final2.fbx rechazado: nombre sin prefijo SM_, escala sin aplicar, textura de 4096 px`.
+3. **Code** (renómbralo «Nombre seguro») — Mode: Run Once for Each Item. Comprueba la extensión contra la lista permitida (`fbx`, `obj`, `glb`, `gltf`) y prepara el nombre interno `ID_de_Drive.extensión`. Ver código abajo.
+4. **Google Drive** («Download File», File ID `{{ $json.id }}`) y **Read/Write Files from Disk** («Write») a `/data/qa/{{ $('Nombre seguro').item.json.archivo }}`.
+5. **Execute Command** — `blender -b --python /data/scripts/qa.py -- "/data/qa/{{ $('Nombre seguro').item.json.archivo }}"`.
+6. **Read/Write Files from Disk** («Read») — Lee `/data/qa/resultado.json`.
+7. **Code** — Convierte el JSON en una lista de fallos legible y añade las comprobaciones del nombre original, que ya no llega al script: con `$('Nombre seguro').item.json.nombre`, falla si no empieza por `SM_` o `SK_` o si tiene espacios.
+8. **IF** — `{{ $json.fallos.length }}` igual a `0`.
+9. **Google Drive** («Move File») — A «aprobados» o a «rechazados» según la rama.
+10. **Google Sheets** («Append Row») — Registro: fecha, archivo, artista, triángulos, veredicto, fallos.
+11. **Slack** — Mensaje al canal #arte: `✅ SM_silla.fbx aprobado (8.412 tris)` o `❌ silla_final2.fbx rechazado: nombre sin prefijo SM_, escala sin aplicar, textura de 4096 px`.
+
+## El código de «Nombre seguro»
+```js
+const ext = String($json.name || '').toLowerCase().split('.').pop();
+if (!['fbx', 'obj', 'glb', 'gltf'].includes(ext)) throw new Error('Formato no admitido: ' + ext);
+if (!/^[A-Za-z0-9_-]+$/.test($json.id)) throw new Error('ID de Drive inesperado');
+return { json: { id: $json.id, nombre: $json.name, archivo: `${$json.id}.${ext}` } };
+```
 
 ## El script de comprobación
 Guárdalo como `/data/scripts/qa.py`:
@@ -64,8 +73,7 @@ if ext == 'fbx': bpy.ops.import_scene.fbx(filepath=ruta)
 elif ext == 'obj': bpy.ops.wm.obj_import(filepath=ruta)
 else: bpy.ops.import_scene.gltf(filepath=ruta)
 fallos = []
-if not nombre.startswith(('SM_', 'SK_')): fallos.append('el nombre no empieza por SM_ o SK_')
-if ' ' in nombre: fallos.append('el nombre tiene espacios')
+# El nombre original (prefijo SM_/SK_, espacios) se comprueba en el nodo Code de n8n: aquí llega el nombre interno
 tris = 0
 for o in bpy.data.objects:
     if o.type != 'MESH': continue
@@ -94,6 +102,7 @@ json.dump({'archivo': nombre, 'triangulos': tris, 'fallos': fallos},
 - **Formatos raros**: .blend, .max o .ma no los cubre este script. Añade un IF que los mande directamente a revisión manual.
 - **Falsos rechazos**: un personaje con esqueleto tendrá objetos fuera del origen. Haz dos variantes del script y elige según el prefijo (SM_ o SK_).
 - **Artista desconocido**: Drive no siempre dice quién subió el archivo. Pide que el nombre incluya iniciales (`SM_silla_JG.fbx`) y sácalas con una expresión.
+- **Nombres con comillas o `$( )`**: el nombre que sube el artista nunca entra en la ruta ni en el comando de Blender; en disco va el ID de Drive con la extensión validada y el nombre original solo se comprueba en el nodo Code.
 
 ## Cuánto cuesta
 0 €: Blender y n8n auto-alojado son gratis, Drive y Slack tienen plan gratuito suficiente. El único coste sería un VPS si no quieres tener tu equipo encendido.

@@ -39,7 +39,7 @@ Pensado para autónomos y pymes que facturan a otras empresas y no tienen a nadi
 
 ## Lo que necesitas antes
 - Una cuenta de Google (gratis) con Gmail y Google Sheets.
-- n8n: o bien auto-alojado con Docker en tu ordenador o un VPS de 5 €/mes, o el plan gratuito de n8n Cloud.
+- n8n: o bien auto-alojado con Docker en tu ordenador o un VPS de 5 €/mes, o n8n Cloud (prueba gratuita temporal y después de pago).
 - En n8n, credencial **Google Sheets OAuth2** y credencial **Gmail OAuth2**. Se sacan en console.cloud.google.com: creas un proyecto, activas las APIs «Google Sheets API» y «Gmail API», vas a «Credenciales» > «Crear credenciales» > «ID de cliente de OAuth» tipo «Aplicación web», y pegas en «URI de redirección autorizados» la URL que te muestra el propio n8n al crear la credencial.
 - Una hoja de Google llamada `Facturas` con estas columnas exactas en la fila 1: `numero`, `cliente`, `email`, `importe`, `fecha_emision`, `fecha_vencimiento`, `estado`, `ultimo_aviso`, `avisos_enviados`. En `estado` escribe `pendiente` o `cobrada`. Las fechas en formato `AAAA-MM-DD`.
 
@@ -99,6 +99,6 @@ return salida;
 - **Reintentos**: en el nodo Gmail activa Settings > Retry On Fail, con 3 intentos y 5000 ms de espera.
 
 ## Cuánto cuesta
-- n8n auto-alojado: gratis (te cuesta el VPS, 4-6 €/mes, o cero si lo dejas en tu ordenador encendido). El plan gratuito de n8n Cloud te da ejecuciones limitadas y este flujo consume 1 al día.
+- n8n auto-alojado: gratis (te cuesta el VPS, 4-6 €/mes, o cero si lo dejas en tu ordenador encendido). n8n Cloud no tiene plan gratuito permanente (solo prueba temporal y luego de pago); este flujo consume 1 ejecución al día.
 - Google Sheets y Gmail: gratis con cuenta personal. Google Workspace desde 6 €/usuario/mes si quieres enviar desde tu dominio.
 - En Make se monta igual con módulos Google Sheets + Gmail y entra en el plan gratuito de 1.000 operaciones al mes. En Zapier el plan gratuito no permite varios pasos con filtro; necesitarías el plan Professional (unos 20 €/mes).

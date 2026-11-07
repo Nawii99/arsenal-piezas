@@ -39,10 +39,10 @@ Para el programador freelance o la agencia que mantiene webs y apps de clientes 
 ## Lo que necesitas antes
 - Cuenta de Sentry (plan Developer gratis: 5.000 errores al mes). El SDK ya instalado en tu proyecto.
 - n8n: auto-alojado con Docker (gratis) o n8n Cloud (prueba gratuita). Necesitas que tu n8n sea accesible desde internet para recibir el webhook.
-- Bot de Telegram: escribe a @BotFather en Telegram, comando /newbot, te da el token. Luego escribe algo a tu bot y abre https://api.telegram.org/bot<TU_TOKEN>/getUpdates para ver tu chat id.
+- Bot de Telegram: escribe a @BotFather en Telegram, comando /newbot, te da el token. Luego escribe algo a tu bot y abre https://api.telegram.org/bot<TU_TOKEN>/getUpdates para ver tu chat id. Esa URL se abre solo en el navegador: en n8n el token va en la credencial de Telegram, nunca escrito en un nodo, porque un flujo exportado se llevaría la clave.
 - Opcional: clave de API de OpenAI (platform.openai.com > API keys) para el resumen en español. Sin ella, el aviso va igual pero más técnico.
 ## Los nodos, en orden
-1) **Webhook**: método POST, path `sentry-errores`, Respond: `Immediately`. Copia la Production URL.
+1) **Webhook**: método POST, path `sentry-errores`, Respond: `Immediately`. Copia la Production URL. Protégelo: verifica la cabecera `Sentry-Hook-Signature` (HMAC-SHA256 del cuerpo con el Client Secret de la integración, leído de una variable de entorno) en un nodo Code y descarta lo que no cuadre.
 2) En Sentry, ve a Settings > tu proyecto > Alerts > Create Alert > Issues, condición «A new issue is created», acción «Send a notification via an integration > Webhook» y pega la URL del paso 1.
 3) **IF**: condición String, valor 1 `{{ $json.body.action }}`, operación «is equal to», valor 2 `created`. Así ignoras eventos de resolución o asignación.
 4) **Code** (rama true): normaliza los datos del error. Código completo abajo.

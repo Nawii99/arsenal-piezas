@@ -9,7 +9,7 @@ Un negocio local no compite en internet en general: compite en un radio de pocos
 
 ## 1. Los cuatro canales que traen clientes de verdad (en orden de coste/resultado)
 1. **Ficha de Google (Google Business Profile)**: categoría correcta, fotos reales, horario exacto, reseñas contestadas. Es gratis y es el 50 % del trabajo. Comando: `/ficha-google`.
-2. **Reseñas**: pedirlas siempre, en el momento de más satisfacción, con enlace directo; contestarlas todas en 48 h. Comando: `/respuestas-clientes`.
+2. **Reseñas**: pedirlas a todos los clientes por igual al terminar el servicio, con enlace directo (nunca solo a los contentos ni según la nota: Google y las tiendas lo prohíben); contestarlas todas en 48 h. Comando: `/respuestas-clientes`.
 3. **WhatsApp Business**: catálogo, respuestas rápidas, mensaje de bienvenida, etiquetas de clientes. Es el CRM de un negocio pequeño.
 4. **Contenido local**: fotos del local, del equipo y de clientes (con permiso), publicadas en la ficha de Google e Instagram. No hace falta viralidad: hace falta constancia.
 
@@ -18,7 +18,7 @@ Un negocio local no compite en internet en general: compite en un radio de pocos
 - Lista de clientes con fecha de última visita → mensaje a los que llevan más de X meses sin venir.
 - Programa simple: tarjeta de sellos, descuento por traer a un amigo, pack de sesiones.
 
-## 3. Lo que SÍ automatizar (con n8n, gratis) y lo que no
+## 3. Lo que SÍ automatizar (con n8n autoalojado, gratis; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago) y lo que no
 Sí: recordatorios, petición de reseña tras la visita, respuesta inicial fuera de horario, aviso de nueva reseña al móvil, informe mensual de la ficha.
 No: responder quejas (siempre persona), negociar precios, todo lo que necesite empatía.
 

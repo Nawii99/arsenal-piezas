@@ -9,10 +9,10 @@
   "entradas": {
     "clientes_contentos": "[NOMBRE Y QUÉ LES RESOLVÍ]",
     "tipo_de_cliente_que_quiero": "[DESCRIPCIÓN CONCRETA PARA QUE SEPAN A QUIÉN RECOMENDARME]",
-    "que_puedo_dar_a_cambio": "[NADA / DETALLE / DESCUENTO EN SU SIGUIENTE COMPRA / SERVICIO EXTRA]"
+    "que_puedo_dar_a_cambio": "[NADA / DETALLE / DESCUENTO EN SU SIGUIENTE COMPRA / SERVICIO EXTRA, SOLO POR RECOMENDAR A ALGUIEN, NUNCA POR LA RESEÑA]"
   },
   "metodo": [
-    "1. Define los dos momentos exactos para pedir: al entregar con buen resultado y cuando el cliente te felicita espontáneamente.",
+    "1. Define los dos momentos exactos para pedir una recomendación: al entregar con buen resultado y cuando el cliente te felicita espontáneamente. La reseña pública es distinta: se pide a todos los clientes al terminar el trabajo, sin mirar lo contentos que estén, porque filtrar a quién se le pide está prohibido por Google y las plataformas.",
     "2. Separa tres peticiones distintas y no las mezcles nunca en el mismo mensaje: reseña pública, recomendación a una persona concreta y permiso para usar su caso.",
     "3. Escribe la petición con nombre y apellidos del favor: no digas si conoces a alguien, di conoces a alguien que tenga este problema concreto.",
     "4. Baja el esfuerzo: dale el texto ya escrito para reenviar y el enlace directo a la reseña.",
@@ -25,7 +25,7 @@
     "Pedir referido y reseña en el mismo mensaje.",
     "Preguntar de forma vaga si conoce a alguien.",
     "Ofrecer comisiones sin decirlo claro o sin poder cumplirlas.",
-    "Pedirlo cuando el trabajo ha ido regular por quedar bien."
+    "Pedir una recomendación cuando el trabajo ha ido regular por quedar bien."
   ],
   "formato_salida": {
     "momentos": "Los dos momentos con la señal que me indica que ha llegado.",
@@ -38,7 +38,8 @@
     "Español de España, tuteo, natural y agradecido, sin peloteo.",
     "Máximo 60 palabras por mensaje.",
     "No prometer ni sugerir recompensas que yo no haya autorizado.",
-    "Las reseñas deben ser opinión libre del cliente, nunca redactadas por mí."
+    "Las reseñas deben ser opinión libre del cliente, nunca redactadas por mí.",
+    "Nada de descuentos, regalos ni favores a cambio de una reseña, y la petición de reseña va a todos los clientes sea cual sea su nota: ambas cosas están prohibidas por Google y las plataformas."
   ],
   "criterios_calidad": [
     "La petición describe a la persona ideal con tanto detalle que al cliente le viene alguien a la cabeza.",

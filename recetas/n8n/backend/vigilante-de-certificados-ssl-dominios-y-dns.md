@@ -21,7 +21,7 @@ Cada día recorre tus dominios y comprueba tres cosas: días que quedan al certi
 
 ## Cómo ganar dinero con ella
 
-Un día con la web marcada como insegura hunde las ventas y la confianza. Evitarlo cuesta 0 € y sustituye a monitores de 10-20 €/mes.
+Un día con la web marcada como insegura hunde las ventas y la confianza. Evitarlo cuesta 0 € con n8n autoalojado y sustituye a monitores de 10-20 €/mes.
 
 - Vigilancia de webs para agencias con clientes que tienen varios dominios.
 - Control de DNS para tiendas que cambian de hosting o de proveedor de correo.
@@ -82,4 +82,4 @@ return { json: { dominio: fila.dominio, dias_ssl: diasSsl, caduca_dominio: caduc
 - *Dominios `.es`*: RDAP puede no responder; el código lo deja a `null` y no rompe el flujo.
 - *CDN por medio (Cloudflare)*: la IP del DNS será la de Cloudflare, no la de tu servidor. Pon en `ip_esperada` la que corresponda o deja la celda vacía para saltarte esa comprobación.
 **Cuánto cuesta**
-Cero. Todas las APIs usadas son públicas y gratuitas, y una ejecución diaria no consume nada relevante. Un servicio equivalente (UptimeRobot Pro, BetterStack) cuesta 8-25 €/mes.
+Cero con n8n autoalojado (Community Edition; n8n Cloud tiene una prueba gratuita temporal y después planes de pago). Todas las APIs usadas son públicas y gratuitas, y una ejecución diaria no consume nada relevante. Un servicio equivalente (UptimeRobot Pro, BetterStack) cuesta 8-25 €/mes.

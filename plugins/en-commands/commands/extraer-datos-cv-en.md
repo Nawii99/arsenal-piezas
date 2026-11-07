@@ -1,5 +1,5 @@
 ---
-name: extraer-datos-cv
+name: extraer-datos-cv-en
 description: Extracts the key data from a person's resume or document and leaves it in a table, with privacy limits and mandatory human review.
 ---
 

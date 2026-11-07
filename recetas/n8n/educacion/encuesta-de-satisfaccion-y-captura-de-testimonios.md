@@ -2,17 +2,17 @@
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Al terminar cada módulo se manda una encuesta corta; las respuestas buenas se convierten en petición de reseña y testimonio, y las malas te llegan al momento para que las arregles.
+Al terminar cada módulo se manda una encuesta corta; al acabar el curso todos reciben la misma petición de reseña, a los contentos se les pide además permiso para su testimonio, y las respuestas malas te llegan al momento para que las arregles.
 
 ## Qué es y qué hace
 
-Flujo de n8n que tras cada módulo envía una encuesta de dos preguntas de recomendación. Las respuestas buenas reciben una petición de reseña pública y de testimonio; las malas llegan a tu bandeja marcadas para actuar. Entra el formulario y la hoja de progreso de módulos; sale el envío y el aviso de respuestas negativas.
+Flujo de n8n que tras cada módulo envía una encuesta de dos preguntas de recomendación. Al terminar el último módulo todos los alumnos reciben la misma petición de reseña pública, sea cual sea su nota; a los contentos se les pide además permiso de testimonio, y las respuestas malas llegan a tu bandeja marcadas para actuar. Entra el formulario y la hoja de progreso de módulos; sale el envío y el aviso de respuestas negativas.
 
 ## Cómo usarla
 
 1. Crea el formulario de recomendación y la hoja Encuestas
 2. Prepara las plantillas de reseña y testimonio
-3. Define el umbral de contento y descontento
+3. Define el umbral de aviso para los descontentos
 4. Revisa cada semana las respuestas negativas
 
 ## Cuándo usarla
@@ -21,7 +21,7 @@ Cuando no tienes testimonios que enseñar y encima te enteras tarde de que un al
 
 ## Cómo ganar dinero con ella
 
-Genera reseñas y testimonios sin perseguir a nadie y evita malas valoraciones públicas al detectarlas antes. Cada testimonio bueno vale ventas.
+Genera reseñas y testimonios sin perseguir a nadie y te deja atender antes a quien está descontento, para que lo resuelva una persona y no se quede sin respuesta. Cada testimonio bueno vale ventas.
 
 - Captación de reseñas para academias y cursos online que dependen de la reputación.
 - Gestión de testimonios para formadores que quieren prueba social en sus webs de venta.
@@ -32,7 +32,7 @@ Genera reseñas y testimonios sin perseguir a nadie y evita malas valoraciones p
 ## La receta, paso a paso
 
 ## Qué hace y para quién
-Envía una encuesta NPS de dos preguntas al acabar cada módulo, separa a los contentos de los descontentos y actúa distinto con cada grupo: a unos les pide reseña pública y testimonio, a los otros los pone en tu bandeja de entrada marcados en rojo.
+Envía una encuesta NPS de dos preguntas al acabar cada módulo, y actúa según la nota: a todos los alumnos les pide la misma reseña pública al terminar el curso, sea cual sea su nota (filtrar quién puede reseñar según su satisfacción lo prohíben Google y las plataformas); a los contentos les pide además permiso para usar su frase como testimonio, y a los descontentos los pone en tu bandeja de entrada marcados en rojo para que les llames.
 Es para academias, cursos online y formadores que necesitan prueba social y quieren detectar problemas antes de que se conviertan en devoluciones.
 
 ## Lo que necesitas antes
@@ -50,10 +50,11 @@ Credencial Google OAuth2 (Sheets, Gmail) y webhook de Slack.
 **5. Google Sheets** «Marcar enviada». Update Row: `encuesta_enviada` = fecha de hoy.
 **6. Google Sheets Trigger** (flujo aparte). Evento: «Row Added» en la hoja «Encuestas».
 **7. Set** «Normalizar respuesta». `nota` = número de la primera pregunta, `bueno`, `mejora`, `email`.
+**7b. IF** «¿Último módulo?» (rama en paralelo al Switch, sin mirar la nota). Si `modulo` es el último del curso, un **Wait** de 2 días y un **Gmail** con el asunto `{{ $json.nombre }}, ¿nos cuentas tu experiencia?` y el enlace de reseña. Sale el mismo correo a todos los alumnos, sea cual sea su nota.
 **8. Switch**. Campo: `{{ $json.nota }}`. Salida 0 si es mayor o igual que 9 (promotores), salida 1 si está entre 7 y 8 (pasivos), salida 2 si es menor o igual que 6 (detractores).
-**9a. Gmail** (promotores). Subject: `Nos alegra mucho, {{ $json.nombre }}`. Pide reseña con el enlace directo y, en un segundo párrafo, permiso para usar su frase como testimonio: «¿Podemos publicar esto que has escrito, con tu nombre y tu foto?».
+**9a. Gmail** (promotores). Subject: `Nos alegra mucho, {{ $json.nombre }}`. Agradece y pide permiso para usar su frase como testimonio: «¿Podemos publicar esto que has escrito, con tu nombre y tu foto?».
 **10a. Google Sheets** «Testimonios». Append Row en una hoja aparte con la frase literal del campo `bueno`, el nombre y el estado `pendiente de permiso`. Ahí tienes tu banco de testimonios.
-**9b. Gmail** (pasivos). Pregunta abierta: «¿Qué nos falta para que sea un 10?». Sin pedir reseña.
+**9b. Gmail** (pasivos). Pregunta abierta: «¿Qué nos falta para que sea un 10?».
 **9c. Slack** (detractores). Mensaje al canal #alerta con la nota, el email, lo que ha escrito y la frase «responder hoy».
 **10c. Gmail** (detractores). Correo tuyo, escrito en primera persona, ofreciendo una llamada de 15 minutos. Sale a los 30 minutos con un nodo **Wait** para que no parezca automático.
 **11. Google Sheets** «NPS mensual». Un **Schedule Trigger** mensual que calcula el NPS (porcentaje de promotores menos porcentaje de detractores) y te lo manda por email con la evolución.
@@ -84,7 +85,8 @@ Verifica que el email llega precargado en el formulario: si no, el resto del flu
 
 ## Qué puede salir mal
 Si el alumno cambia el email precargado o el formulario no lo pasa, tendrás respuestas huérfanas. Añade un **IF** que, si falta el email, te avise a ti.
-No pidas reseña y testimonio en el mismo párrafo: dos peticiones juntas bajan la respuesta. Sepáralas visualmente.
+No pidas reseña y testimonio en el mismo correo: dos peticiones juntas bajan la respuesta. Por eso salen en correos separados (7b y 9a).
+La petición de reseña no puede depender de la nota (nodo 7b): pídela una sola vez por alumno, no tras cada módulo.
 No incentives reseñas con descuentos en Google: va contra sus políticas y te pueden borrar la ficha.
 Guarda el permiso por escrito antes de publicar el nombre o la foto de un alumno: es un dato personal.
 Si nadie contesta, el problema suele ser el asunto del correo, no el flujo. Prueba dos versiones durante dos semanas.

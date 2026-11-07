@@ -61,7 +61,7 @@ LO QUE TIENES QUE HACER:
 7. Crea el formulario de informe de fallo con sus campos y un ejemplo relleno que sirva de modelo.
 8. Dame la tabla de seguimiento de probadores: quién, móvil, instalado, activo, informes enviados.
 9. Explica cómo priorizar lo que llegue: qué es bloqueante, qué es mejora y qué es opinión personal que hay que aparcar.
-10. Escribe el mensaje de cierre de la beta y el aviso de que la app ya está publicada, pidiendo valoración a quienes tuvieron buena experiencia.
+10. Escribe el mensaje de cierre de la beta y el aviso de que la app ya está publicada, pidiendo valoración a todos los probadores por igual, sea buena o mala su experiencia: filtrar quién puede valorar según su satisfacción está prohibido por Google Play y App Store.
 RESTRICCIONES:
 - Nada de pedir valoraciones a cambio de regalos.
 - Mensajes cortos: el de WhatsApp, máximo 5 líneas.

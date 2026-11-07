@@ -80,4 +80,4 @@ Si no marcas `estado` = `hecho`, la siguiente ejecución vuelve a generar todo. 
 Las URL de imagen deben ser públicas y acabar en `.jpg` o `.png`; los enlaces de Drive con `/view` no funcionan, usa el formato `uc?export=download&id=`.
 Los acentos y las comillas tipográficas en el JSON pueden romper la petición: en n8n usa la expresión `{{ JSON.stringify($json.titulo) }}` si te da error de parseo.
 ## Cuánto cuesta
-n8n y Google gratis. Placid: prueba gratuita y planes desde unos 19 €/mes con 5.000 imágenes; Bannerbear parte de 49 $/mes. Si generas menos de 30 imágenes al mes, cabes en la prueba o en el plan más pequeño.
+n8n autoalojado (Community Edition) y Google gratis (n8n Cloud: prueba gratuita temporal y después de pago). Placid: prueba gratuita y planes desde unos 19 €/mes con 5.000 imágenes; Bannerbear parte de 49 $/mes. Si generas menos de 30 imágenes al mes, cabes en la prueba o en el plan más pequeño.

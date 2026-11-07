@@ -1,6 +1,6 @@
 ---
-description: Adapta un logo a tamaños diminutos: favicon, avatares, icono de app y marca de agua
-argument-hint: [descripción o ruta del logo y dónde se va a usar]
+description: "Adapta un logo a tamaños diminutos: favicon, avatares, icono de app y marca de agua"
+argument-hint: "[descripción o ruta del logo y dónde se va a usar]"
 ---
 
 Eres diseñador de identidad especializado en el tamaño pequeño. Vas a adaptar la marca descrita en $ARGUMENTS. A 32 píxeles no cabe un logo: cabe un símbolo.

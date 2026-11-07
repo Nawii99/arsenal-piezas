@@ -6,11 +6,11 @@ Descarga cada lunes los datos de App Store Connect y Google Play, los mete en un
 
 ## Qué es y qué hace
 
-Flujo de n8n que cada lunes descarga los informes de ventas y descargas de App Store Connect y de Google Play, los consolida en una hoja de métricas y envía un correo con instalaciones, ingresos y variación frente a la semana anterior. Entran la clave de API de Apple y el acceso al bucket de Google Play; sale una tabla semanal y el correo. Requiere la clave .p8 de Apple y una cuenta de servicio de Google.
+Flujo de n8n que cada lunes descarga los informes de ventas y descargas de App Store Connect y de Google Play, los consolida en una hoja de métricas y envía un correo con instalaciones, ingresos y variación frente a la semana anterior. Entran la clave de API de Apple y el acceso al bucket de Google Play; sale una tabla semanal y el correo. Requiere la clave .p8 de Apple, guardada en una variable de entorno o en las credenciales de n8n (nunca pegada en el nodo), y una cuenta de servicio de Google.
 
 ## Cómo usarla
 
-1. 1. Crea la clave de API de Apple con rol Sales and Reports
+1. 1. Crea la clave de API de Apple con rol Sales and Reports y guarda el .p8 en una variable de entorno
 2. 2. Da acceso a tu cuenta de servicio al bucket de Google Play
 3. 3. Compara el primer correo con las consolas
 4. Que lo revise un profesional
@@ -37,6 +37,7 @@ Para el fundador que quiere una foto semanal del negocio sin abrir App Store Con
 
 ## Lo que necesitas antes
 - App Store Connect: Usuarios y accesos → Integraciones → Claves de API App Store Connect. Crea una con rol `Sales and Reports`. Apunta el `Key ID`, el `Issuer ID` y descarga el `.p8` (solo se descarga una vez).
+- Guarda el contenido del `.p8` en una variable de entorno del servidor de n8n (p. ej. `APPSTORE_P8`, con los saltos de línea escritos como `\n`) o en las credenciales de n8n. Nunca lo pegues dentro del nodo Code.
 - Google Play: en Play Console → Descargar informes → Ventas, verás un bucket de Google Cloud Storage tipo `pubsite_prod_xxxx`. Da acceso de lectura a tu cuenta de servicio.
 - Hoja `Metricas` con: `semana`, `tienda`, `instalaciones`, `ingresos_eur`, `desinstalaciones`.
 - Gmail conectado.
@@ -57,7 +58,8 @@ Para el fundador que quiere una foto semanal del negocio sin abrir App Store Con
 const jwt = require('jsonwebtoken');
 const KEY_ID = 'ABC123DEFG';
 const ISSUER_ID = '69a6de00-1111-2222-3333-444444444444';
-const PRIVATE_KEY = `-----BEGIN PRIVATE KEY-----\n...pega aquí tu .p8...\n-----END PRIVATE KEY-----`;
+const PRIVATE_KEY = ($env.APPSTORE_P8 || '').replace(/\\n/g, '\n'); // la clave se lee de la variable de entorno, no se pega aquí
+if (!PRIVATE_KEY) throw new Error('Falta la variable de entorno APPSTORE_P8');
 const token = jwt.sign({
   iss: ISSUER_ID,
   exp: Math.floor(Date.now() / 1000) + 1000,
@@ -72,7 +74,8 @@ return [{ json: { token } }];
 - Si el CSV llega vacío, cambia `reportDate` a la semana anterior: Apple tarda 1-2 días en publicar.
 
 ## Qué puede salir mal
-- En n8n auto-alojado hay que permitir el módulo `jsonwebtoken`: arranca el contenedor con `NODE_FUNCTION_ALLOW_EXTERNAL=jsonwebtoken`. En n8n Cloud usa en su lugar el nodo `Crypto` + una plantilla de JWT, o un servicio externo de firma.
+- **Clave privada en el código**: si pegas el `.p8` en el nodo Code, un flujo exportado como JSON (o compartido, o copiado a una plantilla) se llevaría la clave con él. Déjala siempre en una variable de entorno o en las credenciales de n8n.
+- En n8n auto-alojado hay que permitir el módulo `jsonwebtoken`: arranca el contenedor con `NODE_FUNCTION_ALLOW_EXTERNAL=jsonwebtoken` y define `APPSTORE_P8` en su entorno (si tu versión bloquea el acceso a variables de entorno desde los nodos, ajusta `N8N_BLOCK_ENV_ACCESS_IN_NODE`). En n8n Cloud usa en su lugar el nodo `Crypto` + una plantilla de JWT, o un servicio externo de firma.
 - Los informes semanales de Apple solo existen los domingos como fecha de corte. Usa siempre un domingo en `reportDate`.
 - Los ingresos vienen en la divisa de cada mercado. Si vendes fuera de la zona euro, añade un HTTP Request a `https://api.frankfurter.app/latest?from=USD&to=EUR` y multiplica.
 - Play Console cambia a veces la ruta de los CSV; si falla, entra al bucket y copia el nombre exacto del fichero del mes.

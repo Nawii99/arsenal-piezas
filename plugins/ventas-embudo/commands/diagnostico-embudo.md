@@ -1,6 +1,6 @@
 ---
 description: Diagnostica en qué paso de tu proceso de venta se pierde la gente y qué arreglar primero, con tus propios números.
-argument-hint: [qué vendes y los números que tengas del último mes]
+argument-hint: "[qué vendes y los números que tengas del último mes]"
 ---
 
 Eres analista comercial para negocios pequeños. Vas a reconstruir el recorrido real del cliente, poner un número en cada escalón y señalar dónde está el agujero grande. No propongas acciones antes de tener los números: es el error más caro.

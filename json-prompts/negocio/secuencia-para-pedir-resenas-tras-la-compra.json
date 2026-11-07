@@ -7,19 +7,19 @@
     "canal_disponible": "[EMAIL / WHATSAPP / SMS / VARIOS]",
     "dias_hasta_entrega": "[DÍAS MEDIOS DESDE PEDIDO HASTA ENTREGA]",
     "tiempo_para_notar_resultado": "[DÍAS QUE TARDA EL CLIENTE EN VALORAR EL PRODUCTO]",
-    "incentivo": "[NINGUNO / DESCUENTO PRÓXIMA COMPRA / SORTEO / PUNTOS]",
+    "incentivo": "NINGUNO (prohibido ofrecer descuentos, sorteos, puntos o regalos a cambio de reseñas; solo se agradece sin premio)",
     "tono": "[CERCANO Y DIRECTO / FORMAL / DIVERTIDO]"
   },
   "pasos": [
     "Calcular el momento óptimo de cada envío: nunca antes de la entrega, y sumando el tiempo real que tarda el cliente en formarse una opinión",
-    "Escribir un primer mensaje de confirmación de satisfacción antes de pedir nada, que permita detectar clientes descontentos y desviarlos a atención al cliente",
-    "Escribir la petición principal de reseña, con enlace directo y una sola acción",
+    "Escribir un primer mensaje de confirmación de que el pedido ha llegado bien, que ofrezca atención al cliente a quien tenga algún problema, sin que de ello dependa que reciba después la petición de reseña",
+    "Escribir la petición principal de reseña, con enlace directo y una sola acción, enviada a todos los clientes con pedido entregado, sea cual sea su respuesta al primer mensaje",
     "Escribir un recordatorio suave para quien no respondió, con ángulo distinto al primero",
-    "Escribir una petición específica de foto o vídeo para los clientes que ya puntuaron alto",
+    "Escribir una petición específica de foto o vídeo para los clientes que ya han dejado su reseña",
     "Adaptar cada mensaje a los canales indicados respetando su longitud natural"
   ],
   "restricciones": [
-    "No condicionar el incentivo a que la reseña sea positiva: se ofrece por reseñar, sea cual sea la nota",
+    "No ofrecer ningún incentivo (descuento, sorteo, puntos, cupón o regalo) a cambio de reseñar, ni siquiera «sea cual sea la nota»: Google y las tiendas lo prohíben. Solo se puede agradecer sin premio",
     "Cumplir la normativa española y europea de reseñas: nada de comprar opiniones ni filtrar solo las buenas",
     "Máximo 90 palabras por email y 45 por mensaje de WhatsApp o SMS",
     "Un solo enlace y una sola llamada a la acción por mensaje",
@@ -34,8 +34,8 @@
   "criterios_calidad": [
     "Cada mensaje se entiende y se responde en menos de 15 segundos de lectura",
     "Ningún mensaje repite el argumento del anterior",
-    "El cliente descontento tiene siempre una salida clara que no es la reseña pública",
+    "El cliente con un problema tiene siempre una salida clara a atención al cliente, además de la reseña, que se le pide igual que a todos",
     "Los tiempos de envío están justificados con una frase que explique el porqué"
   ],
-  "aviso": "Pide reseñas sin condicionar la nota ni filtrar solo las positivas: la normativa de consumo y las reglas de cada plataforma lo prohíben. Si usas incentivos o WhatsApp, confirma con un profesional que cumples la normativa de protección de datos y comunicaciones comerciales."
+  "aviso": "Pide reseñas sin condicionar la nota ni filtrar solo las positivas: la normativa de consumo y las reglas de cada plataforma lo prohíben. Nunca ofrezcas descuentos, sorteos ni regalos por reseñar: lo prohíben Google y las tiendas aunque no se condicione a la nota. Si usas WhatsApp, confirma con un profesional que cumples la normativa de protección de datos y comunicaciones comerciales."
 }

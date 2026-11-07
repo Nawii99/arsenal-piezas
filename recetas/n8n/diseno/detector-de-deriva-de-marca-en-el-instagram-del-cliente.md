@@ -43,7 +43,7 @@ Cada mes descarga las últimas 25 publicaciones de una cuenta de Instagram profe
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Interval: Months, día 1, hora 09:00, Timezone `Europe/Madrid`.
-2. **HTTP Request** (`Posts`) — GET `https://graph.facebook.com/v20.0/{{ $vars.IG_USER_ID }}/media`. Query Parameters: `fields` = `id,media_url,permalink,media_type,timestamp`, `limit` = `25`, `access_token` = tu token (guárdalo en Settings, Variables).
+2. **HTTP Request** (`Posts`) — GET `https://graph.facebook.com/v20.0/{{ $vars.IG_USER_ID }}/media`. Query Parameters: `fields` = `id,media_url,permalink,media_type,timestamp`, `limit` = `25`, `access_token` desde una credencial de n8n (Generic Credential Type > Query Auth, Name `access_token`, Value tu token; no la escribas en el nodo: un flujo exportado se la llevaría).
 3. **Code** (`Aplanar`) — `return ($input.first().json.data || []).filter(p => p.media_type === 'IMAGE').map(p => ({ json: p }));`
 4. **HTTP Request** (`Colores`) — GET `https://api.imagga.com/v2/colors`. Authentication: Generic, Basic Auth, User: tu API Key, Password: tu API Secret. Query Parameters: `image_url` = `{{ $json.media_url }}`, `extract_object_colors` = `0`.
 5. **Code** (`Comparar con paleta`) — Mode: Run Once for Each Item. Código abajo.

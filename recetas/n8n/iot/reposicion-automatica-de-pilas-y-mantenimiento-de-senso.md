@@ -44,7 +44,7 @@ Con eso agrupa por tipo de pila, te manda la lista de compra y te crea un evento
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Cron `0 9 * * 1` (lunes a las 9:00), zona Europe/Madrid.
-2. **HTTP Request** — si usas Home Assistant: GET a `http://homeassistant.local:8123/api/states`, en Headers `Authorization: Bearer TU_TOKEN_LARGA_DURACION` (se genera en tu perfil de HA, abajo del todo, «Tokens de acceso de larga duración»). Si usas Zigbee2MQTT puro, sustituye por un nodo **MQTT** que publique en `zigbee2mqtt/bridge/request/networkmap` y otro **MQTT Trigger** que escuche la respuesta.
+2. **HTTP Request** — si usas Home Assistant: GET a `http://homeassistant.local:8123/api/states`, con Authentication: Generic > Header Auth con una credencial de n8n (Name `Authorization`, Value `Bearer TU_TOKEN_LARGA_DURACION`) (el token se genera en tu perfil de HA, abajo del todo, «Tokens de acceso de larga duración»). Si usas Zigbee2MQTT puro, sustituye por un nodo **MQTT** que publique en `zigbee2mqtt/bridge/request/networkmap` y otro **MQTT Trigger** que escuche la respuesta. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 3. **Code** «filtrar baterías» — se queda solo con las entidades cuyo `entity_id` acabe en `_battery` o cuyo atributo `device_class` sea `battery`.
 4. **Google Sheets** — «Append» en hoja «historico_bateria»: fecha, sensor, porcentaje.
 5. **Google Sheets** — «Get Row(s)» de «historico_bateria» (todo el histórico).

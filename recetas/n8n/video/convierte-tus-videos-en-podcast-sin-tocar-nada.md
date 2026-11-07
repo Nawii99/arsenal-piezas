@@ -45,11 +45,11 @@ Detecta el vídeo nuevo, lo convierte a MP3 con bitrate de voz, lo sube a un alm
 ## Los nodos, en orden
 1. **Google Drive Trigger** — File Created en `VIDEOS-PODCAST`, cada 15 minutos.
 2. **Google Drive** — `Share` con Role `reader`, Type `anyone`, para que CloudConvert pueda descargarlo.
-3. **HTTP Request** — POST a `https://api.cloudconvert.com/v2/jobs` con Header `Authorization: Bearer TU_TOKEN`. Body: tareas `import/url` (la URL de descarga de Drive), `convert` a `mp3` con `audio_bitrate` 96 y `audio_codec` `mp3`, y `export/url`.
+3. **HTTP Request** — POST a `https://api.cloudconvert.com/v2/jobs` con Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name «Authorization», Value «Bearer TU_TOKEN»); el nodo usa esa credencial. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Body: tareas `import/url` (la URL de descarga de Drive), `convert` a `mp3` con `audio_bitrate` 96 y `audio_codec` `mp3`, y `export/url`.
 4. **Wait** — 120 segundos.
 5. **HTTP Request1** — GET del job para recoger la URL y los metadatos (tamaño y duración vienen en el resultado de la tarea de conversión).
 6. **HTTP Request2** — GET de esa URL con Response Format `File` para tener el MP3 como binario.
-7. **HTTP Request3** (subir a R2) — Method: PUT. URL: `https://TU_ENDPOINT_R2/podcast/{{ $json.nombre_archivo }}`. Authentication: Generic → según la configuración de tu bucket (con R2 lo más simple es un token de API en cabecera o una URL prefirmada). Body: Binary File, campo `data`. Content-Type: `audio/mpeg`.
+7. **HTTP Request3** (subir a R2) — Method: PUT. URL: `https://TU_ENDPOINT_R2/podcast/{{ $json.nombre_archivo }}`. Authentication: Generic → según la configuración de tu bucket (con R2 lo más simple es un token de API guardado en una credencial Header Auth de n8n o una URL prefirmada). Body: Binary File, campo `data`. Content-Type: `audio/mpeg`.
 8. **Google Sheets** — Append con todos los datos del episodio.
 9. **Google Sheets1** — `Read` de todas las filas, ordenadas por número descendente.
 10. **Code** — Genera el XML completo del feed RSS con todos los episodios (ver código).
@@ -104,4 +104,4 @@ return { json: { xml } };
 - **Cloudflare R2 cobra por egreso cero**, pero si usas otro hosting revisa el coste de tráfico: un podcast que crece es mucho ancho de banda.
 
 ## Cuánto cuesta
-CloudConvert gratis hasta 25 conversiones al día. Cloudflare R2: 10 GB de almacenamiento gratis y salida de datos sin coste (unos 300 episodios de 1 hora). Dar de alta el podcast en Spotify y Apple es gratis. Total realista: 0 €/mes hasta que crezcas mucho.
+CloudConvert gratis hasta 25 conversiones al día. Cloudflare R2: 10 GB de almacenamiento gratis y salida de datos sin coste (unos 300 episodios de 1 hora). Dar de alta el podcast en Spotify y Apple es gratis. Con n8n autoalojado (gratis; n8n Cloud solo ofrece una prueba gratuita temporal y después son planes de pago, así que no cuentes con él como gratuito), total realista: 0 €/mes hasta que crezcas mucho.

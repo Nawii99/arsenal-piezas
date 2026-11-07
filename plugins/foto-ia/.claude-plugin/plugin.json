@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-foto-ia",
+  "version": "1.0.0",
+  "description": "Foto e imagen · Imágenes con IA: 5 comandos /, 2 skills, 2 subagentes en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "foto",
+    "arsenal-del-marketer",
+    "ia"
+  ]
+}

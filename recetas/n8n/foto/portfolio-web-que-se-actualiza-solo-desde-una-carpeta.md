@@ -48,7 +48,7 @@ Para fotógrafos, ilustradores y estudios que quieren una web propia (no un perf
 4) **Google Drive1** (Search fotos). Query String: `'{{ $json.id }}' in parents and mimeType contains 'image/' and trashed = false`. Options > Fields: `id,name,imageMediaMetadata`. Order By: `name`.
 5) **Google Drive2** (Share). Type: anyone, Role: reader. Así las URLs funcionan en la web.
 6) **Code** (Montar el HTML). Ver abajo.
-7) **HTTP Request** (Subir a GitHub). Method: PUT. URL: `https://api.github.com/repos/TU_USUARIO/portfolio/contents/index.html`. Header Auth: `Authorization: Bearer TU_TOKEN` y `Accept: application/vnd.github+json`. Body JSON: `{ "message": "Actualiza portfolio", "content": "{{ $json.htmlBase64 }}", "sha": "{{ $json.shaActual }}" }`.
+7) **HTTP Request** (Subir a GitHub). Method: PUT. URL: `https://api.github.com/repos/TU_USUARIO/portfolio/contents/index.html`. Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`); en Headers solo `Accept: application/vnd.github+json`. No pegues el token en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Body JSON: `{ "message": "Actualiza portfolio", "content": "{{ $json.htmlBase64 }}", "sha": "{{ $json.shaActual }}" }`.
 8) Antes del 7, un **HTTP Request1** con GET a la misma URL para obtener el `sha` del archivo actual (GitHub lo exige para sobrescribir). Ponlo con Continue On Fail por si el archivo aún no existe.
 9) **Gmail** avisándote de que la web está publicada con el número de fotos.
 

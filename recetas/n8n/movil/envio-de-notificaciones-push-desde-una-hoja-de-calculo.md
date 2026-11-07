@@ -11,7 +11,7 @@ Receta de n8n que lee una hoja de Google Sheets donde escribes título, mensaje,
 ## Cómo usarla
 
 1. Crea la hoja con las columnas exactas
-2. Conecta OneSignal y la hoja
+2. Guarda la REST API Key en una credencial de n8n y conecta la hoja
 3. Programa una fila de prueba y comprueba el envío
 
 ## Cuándo usarla
@@ -36,7 +36,7 @@ Es para negocios con app propia donde el marketing lo lleva alguien que no es pr
 
 ## Lo que necesitas antes
 n8n.
-Cuenta de OneSignal (gratis hasta 10.000 suscriptores web y push móvil ilimitada en el plan free). Del panel, Settings > Keys & IDs, copia el App ID y la REST API Key.
+Cuenta de OneSignal (gratis hasta 10.000 suscriptores web y push móvil ilimitada en el plan free). Del panel, Settings > Keys & IDs, copia el App ID y la REST API Key (la REST API Key va solo en una credencial de n8n).
 Tu app tiene que tener el SDK de OneSignal integrado. Esto lo hace una vez tu desarrollador, es media hora de trabajo.
 Una hoja de Google Sheets con estas columnas exactas en la fila 1: titulo, mensaje, segmento, fecha_hora, url_destino, enviar, estado.
 
@@ -59,7 +59,7 @@ for (const item of $input.all()) {
 }
 return out;
 ```
-4. «HTTP Request» (OneSignal). Method POST. URL https://api.onesignal.com/notifications . En Headers: Authorization con valor «Key TU_REST_API_KEY» y Content-Type application/json. Body Content Type JSON, y en Body pones:
+4. «HTTP Request» (OneSignal). Method POST. URL https://api.onesignal.com/notifications . En Authentication elige Generic Credential Type > Header Auth y crea una credencial (Name `Authorization`, Value `Key ` seguido de tu REST API Key). No escribas la clave directamente en el nodo ni en las cabeceras: porque un flujo exportado se llevaría la clave. En Headers solo Content-Type application/json. Body Content Type JSON, y en Body pones:
 ```json
 { "app_id": "TU_APP_ID", "included_segments": ["{{ $json.segmento }}"], "headings": { "es": "{{ $json.titulo }}" }, "contents": { "es": "{{ $json.mensaje }}" }, "url": "{{ $json.url_destino }}" }
 ```
@@ -79,5 +79,5 @@ No mandes más de una push al día al mismo usuario o te desinstalan. Añade una
 Error 400 «no subscribers»: tu segmento está vacío o la app todavía no tiene usuarios reales.
 
 ## Cuánto cuesta
-n8n y Google Sheets: gratis. OneSignal: push a móvil ilimitadas y gratis en el plan free, con límite de 10.000 suscriptores web. Slack: gratis.
+n8n autoalojado (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago) y Google Sheets: gratis. OneSignal: push a móvil ilimitadas y gratis en el plan free, con límite de 10.000 suscriptores web. Slack: gratis.
 Si superas el free de OneSignal, su plan de pago arranca sobre 9 $ al mes.

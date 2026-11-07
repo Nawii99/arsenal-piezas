@@ -34,13 +34,13 @@ Evita perder pedidos o altas por caídas de terceros. Un pedido rescatado al mes
 **Qué hace y para quién**
 Recibe un evento de tu web o app, lo intenta enviar al sistema de destino y, si falla, lo aparca en una hoja de cálculo con la hora del próximo intento. Un segundo flujo repasa la cola cada 5 minutos y reintenta con esperas cada vez más largas (1, 2, 4, 8, 16 minutos) hasta 6 intentos.
 **Lo que necesitas antes**
-- n8n (auto-alojado gratis con Docker, o el plan gratuito de n8n Cloud).
+- n8n (auto-alojado gratis con Docker, o n8n Cloud, que tras la prueba gratuita temporal es de pago).
 - Una hoja de Google Sheets llamada `cola_reintentos` con estas columnas exactas en la fila 1: `id`, `payload`, `url_destino`, `intentos`, `proximo_intento`, `estado`, `ultimo_error`.
 - Credencial de Google Sheets en n8n (OAuth2: Google Cloud Console > API y servicios > Credenciales > ID de cliente OAuth, tipo Aplicación web, con la URL de callback que te da n8n).
 - Credencial de Gmail (mismo proceso OAuth2) o usa el nodo `Send Email` con SMTP si prefieres.
 - La URL y la clave del sistema al que envías (tu CRM, tu API interna...).
 **Flujo 1: recibir e intentar (nodos en orden)**
-1. `Webhook` — Método POST, Path `entrada-pedidos`, Respond: `Using Respond to Webhook node`. Copia la URL de producción, es la que llamará tu web.
+1. `Webhook` — Método POST, Path `entrada-pedidos`, Respond: `Using Respond to Webhook node`. Copia la URL de producción, es la que llamará tu web. Protégelo con Header Auth y un token largo que solo conozca el servidor de tu web (nunca en el navegador).
 2. `HTTP Request` — Method POST, URL la del sistema destino, Authentication `Generic Credential Type` > `Header Auth` (nombre `Authorization`, valor `Bearer TU_CLAVE`), Body Content Type `JSON`, Body: `={{ JSON.stringify($json.body) }}`. En **Settings** del nodo activa `Continue On Fail` (imprescindible: si no, el flujo muere y pierdes el dato) y pon `Timeout` 15000 ms.
 3. `IF` — Condición Boolean: valor 1 `={{ $json.error === undefined }}`, operación `is true`.
 4. Rama **true** > `Respond to Webhook` — Respond With `Text`, Response Code 200, Body `ok`.

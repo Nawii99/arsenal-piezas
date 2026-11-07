@@ -43,7 +43,7 @@ Pensado para bares, obradores, tiendas y talleres pequeños que dejan equipos fu
 - MUY IMPORTANTE: n8n tiene que estar FUERA del local. n8n Cloud o un VPS de 5 €/mes. Si lo pones en el mismo local, se cae con la luz y no te avisa nadie.
 ## Los nodos, en orden
 1. **Schedule Trigger** — modo Interval, cada 5 minutos.
-2. **HTTP Request** (llámalo «Estado Shelly») — Method POST, URL `https://shelly-53-eu.shelly.cloud/device/status` (pon tu servidor). Body Content Type: Form Urlencoded. Parámetros: `id` = tu ID de dispositivo, `auth_key` = tu clave. En Settings marca «Always Output Data» y en Options > Response activa «Never Error», para que un fallo de red no rompa el flujo sino que lo interpretemos como caída.
+2. **HTTP Request** (llámalo «Estado Shelly») — Method POST, URL `https://shelly-53-eu.shelly.cloud/device/status` (pon tu servidor). Body Content Type: Form Urlencoded. Parámetros: `id` = tu ID de dispositivo, `auth_key` desde una credencial de n8n en lugar de escrito en el nodo (Authentication: Generic Credential Type > Custom Auth, con el JSON `{"body": {"auth_key": "tu clave"}}`: un flujo exportado se llevaría la clave). En Settings marca «Always Output Data» y en Options > Response activa «Never Error», para que un fallo de red no rompa el flujo sino que lo interpretemos como caída.
 3. **Code** (llámalo «Decidir») — modo Run Once for All Items, con el código de abajo.
 4. **IF** — condición: `{{ $json.aviso }}` **is not equal to** `ninguno` (tipo String).
 5. Rama true > **Telegram** — Resource: Message, Operation: Send Message, Chat ID el tuyo, Text: `{{ $json.aviso === 'caida' ? '🔴 El local NO responde desde las ' + $json.hora + '. Revisa luz o router.' : '🟢 Todo ha vuelto a la normalidad a las ' + $json.hora }}`.

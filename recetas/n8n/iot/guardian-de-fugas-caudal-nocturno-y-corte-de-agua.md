@@ -41,7 +41,7 @@ Pensado para autónomos con local, nave o pisos alquilados, donde nadie está po
 - En ESPHome, un sensor de tipo pulse_meter con `total:` que exponga los litros acumulados, y la API web activada (`web_server: port: 80`). Comprueba en el navegador que `http://192.168.1.50/sensor/agua_total` devuelve un JSON con el valor.
 - Una electroválvula normalmente abierta de 3/4" (30-50 €) y un relé Shelly Plus 1 alimentado a 230 V para abrirla y cerrarla. Fontanero para montarla: la parte de fontanería no es de aficionado.
 - Cuenta de Google (Google Sheets) y un bot de Telegram: escribe a @BotFather, `/newbot`, copia el token y escribe a @userinfobot para tu chat ID.
-- n8n gratis, autoalojado en un Raspberry Pi o mini PC de la propia red, o n8n Cloud (entonces necesitas acceso remoto al ESP32; en ese caso mejor autoalojado).
+- n8n autoalojado (Community Edition, gratis) en un Raspberry Pi o mini PC de la propia red, o n8n Cloud, de pago tras la prueba gratuita (entonces necesitas acceso remoto al ESP32; en ese caso mejor autoalojado).
 
 ## Los nodos, en orden
 1. **Schedule Trigger**: modo Interval, cada 30 minutes. En Settings del workflow pon Timezone Europe/Madrid.
@@ -78,4 +78,4 @@ Ajusta el umbral de 5 litros: si tienes riego automático o una máquina de hiel
 - **Válvula**: usa una normalmente abierta, así un corte de luz deja el agua pasando y no te quedas sin suministro por un apagón.
 
 ## Cuánto cuesta
-n8n autoalojado, Google Sheets y Telegram: 0 €. Hardware: 60-110 € entre ESP32, sensor, electroválvula y Shelly, más la mano de obra del fontanero. Si usas n8n Cloud, el plan gratuito cubre de sobra las 48 ejecuciones diarias.
+n8n autoalojado, Google Sheets y Telegram: 0 €. Hardware: 60-110 € entre ESP32, sensor, electroválvula y Shelly, más la mano de obra del fontanero. Si usas n8n Cloud, tras la prueba gratuita necesitas un plan de pago y conviene comprobar que su cupo de ejecuciones cubre las 48 diarias.

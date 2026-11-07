@@ -42,12 +42,20 @@ Para cada dominio de una lista consulta la fecha de caducidad del certificado TL
 ## Los nodos, en orden
 1. **Schedule Trigger** — Interval: Weeks, día: lunes, hora 8:00 (recuerda fijar Timezone `Europe/Madrid` en Settings).
 2. **Google Sheets** — Get Row(s) de «Dominios», Return All: on.
-3. **Split In Batches** — Batch Size 1.
-4. **Execute Command** — Command:
+3. **Code** (renómbralo «Validar dominio») — Run Once for All Items. El dominio sale de la hoja y va a `openssl` y `whois`: solo pasan los que cumplen una regex estricta; el resto se descarta.
+```javascript
+const re = /^(?=.{1,253}$)([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$/i;
+return $input.all()
+  .map(i => String(i.json.dominio || '').trim().toLowerCase())
+  .filter(d => re.test(d))
+  .map(dominio => ({ json: { dominio } }));
+```
+4. **Split In Batches** — Batch Size 1.
+5. **Execute Command** — Command:
 ```
 echo | openssl s_client -servername {{ $json.dominio }} -connect {{ $json.dominio }}:443 2>/dev/null | openssl x509 -noout -enddate; whois {{ $json.dominio }} | grep -iE 'expir' | head -1
 ```
-5. **Code** (renómbralo «Días restantes») — Run Once for Each Item:
+6. **Code** (renómbralo «Días restantes») — Run Once for Each Item:
 ```javascript
 const dominio = $('Split In Batches').first().json.dominio;
 const out = $input.item.json.stdout || '';
@@ -69,8 +77,8 @@ return { json: {
   alerta
 } };
 ```
-6. Conecta de vuelta a **Split In Batches**; en su salida «done» sigue el resto.
-7. **Code** (renómbralo «Montar informe») — Run Once for All Items:
+7. Conecta de vuelta a **Split In Batches**; en su salida «done» sigue el resto.
+8. **Code** (renómbralo «Montar informe») — Run Once for All Items:
 ```javascript
 const filas = $input.all().map(i => i.json);
 const criticos = filas.filter(f => f.alerta);
@@ -81,8 +89,8 @@ return [{ json: {
   texto: lineas.join('\n') || 'Todo en orden'
 } }];
 ```
-8. **IF** — `{{ $json.hay }}` is true.
-9. Rama true → **Gmail** — Send, To: tu correo, Subject: `={{ $json.asunto }}`, Message: `={{ $json.texto }}`.
+9. **IF** — `{{ $json.hay }}` is true.
+10. Rama true → **Gmail** — Send, To: tu correo, Subject: `={{ $json.asunto }}`, Message: `={{ $json.texto }}`.
 
 ## Cómo probarla
 - Ejecuta a mano con un dominio conocido y mira la salida del Code: `dias_ssl` debe ser un número razonable (Let's Encrypt renueva a 90 días).
@@ -94,6 +102,7 @@ return [{ json: {
 - **Formatos de fecha distintos por TLD**: el `.es` no siempre publica la caducidad. Por eso el código tolera `null` y pone «no leído».
 - **Dominios sin HTTPS**: el openssl devuelve vacío, `dias_ssl` sale `null` y no alerta. Añádelo a mano a tu lista de revisión.
 - **Alertas repetidas**: solo avisa en los días exactos 30, 14 y 3 (más los últimos días críticos), no todas las semanas.
+- **Dominio de la hoja dentro del comando**: un valor como `x.es; rm -rf ~` o `$(id)` ejecutaría órdenes en `openssl`/`whois`; «Validar dominio» lo descarta y no sale en el informe, así que revisa la hoja si falta alguno.
 
 ## Cuánto cuesta
 Gratis del todo salvo el VPS que ya tienes. En n8n Cloud no funciona el Execute Command; ahí sustituye ese nodo por un **HTTP Request** a una API pública de comprobación SSL, que suele tener un plan gratuito de unas 100 consultas al mes.

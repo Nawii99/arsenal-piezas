@@ -46,7 +46,7 @@ Para equipos pequeños donde quien decide el mensaje no es quien sabe usar la co
 2. **Google Sheets** — `Get Row(s)` de la hoja `Push`.
 3. **Code** («Toca enviar») — se queda con las filas con estado vacío y cuya `fecha_hora` ya ha pasado (y no hace más de 2 horas).
 4. **Split In Batches** — Batch Size 1.
-5. **HTTP Request** — POST a `https://api.onesignal.com/notifications`. Headers: `Authorization: Key TU_REST_API_KEY` y `Content-Type: application/json`. Body JSON (modo Raw): ver abajo.
+5. **HTTP Request** — POST a `https://api.onesignal.com/notifications`. Authentication: `Generic Credential Type` > `Header Auth`, con una credencial de n8n (Name `Authorization`, Value `Key ` + tu REST API Key); la clave solo vive en la credencial, nunca escrita en el nodo: un flujo exportado se llevaría la clave. Header `Content-Type: application/json`. Body JSON (modo Raw): ver abajo.
 6. **Google Sheets** — `Update Row`, poniendo `estado` a `enviada` y añadiendo el `id` que devuelve OneSignal.
 7. **Slack** — mensaje al canal: `📲 Push enviada a {{$json.recipients}} personas: {{$json.titulo}}`.
 8. **IF** — si la respuesta trae `errors`, marca la fila como `error` y avisa por Slack.

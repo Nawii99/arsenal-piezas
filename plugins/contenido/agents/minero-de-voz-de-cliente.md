@@ -1,6 +1,6 @@
 ---
 name: minero-de-voz-de-cliente
-description: Mines raw customer language from reviews, comments, WhatsApp threads, support emails and sales calls, then extracts the verbatim phrases, objections, desired outcomes and vocabulary the user should reuse in their copy. Use this agent when the user needs to write a page, ad or email and wants it grounded in real customer words instead of invented marketing language.
+description: Extrae el lenguaje real de los clientes de reseñas, comentarios, hilos de WhatsApp, correos de soporte y llamadas de ventas, y saca las frases literales, objeciones, resultados deseados y vocabulario que el usuario debería reutilizar en sus textos. Úsalo cuando el usuario necesite escribir una página, un anuncio o un correo y quiera basarlo en palabras reales de clientes en lugar de lenguaje de marketing inventado.
 tools: Read, Glob, Grep, Write
 ---
 

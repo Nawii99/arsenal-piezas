@@ -36,9 +36,9 @@ Lanza peticiones HTTP cada 5 minutos contra una lista de URLs tuyas (portada, lo
 Si algo falla dos veces seguidas te manda un mensaje a Telegram, y cuando se recupera te manda otro con cuánto duró la caída; todo queda registrado en una hoja de cálculo para tener histórico.
 
 ## Lo que necesitas antes
-- n8n funcionando (plan Starter gratuito en n8n.cloud, o auto-alojado con Docker en un VPS de 5 euros al mes).
+- n8n funcionando (n8n.cloud en su prueba gratuita temporal, o auto-alojado con Docker en un VPS de 5 euros al mes).
 - Una cuenta de Telegram y un bot: escribe a @BotFather, comando /newbot, te da un token tipo 123456:AAF... Guárdalo.
-- Tu chat ID: escribe algo a tu bot y abre https://api.telegram.org/bot<TU_TOKEN>/getUpdates en el navegador; el número que ves en "chat":{"id": es tu chat ID.
+- Tu chat ID: escribe algo a tu bot y consulta `getUpdates` de la API de Telegram desde tu navegador o con curl en tu ordenador (es la única vez que el token va en una URL; no la pegues en ningún nodo ni la compartas); el número que ves en "chat":{"id": es tu chat ID. El token se guarda solo en una credencial «Telegram API» de n8n: un flujo exportado con el token escrito en un nodo se llevaría la clave.
 - Una hoja de Google Sheets llamada "monitor" con dos pestañas: "estado" (columnas: url, estado, desde, fallos_seguidos) y "historial" (columnas: fecha, url, evento, codigo, ms, mensaje).
 - Credenciales de Google en n8n: Credentials, Google Sheets OAuth2, seguir el asistente.
 
@@ -52,7 +52,7 @@ Si algo falla dos veces seguidas te manda un mensaje a Telegram, y cuando se rec
 7. **Code** (nombre: Decidir aviso) — compara el estado nuevo con el guardado y marca `avisar: true` solo en el cambio (dos fallos seguidos para entrar en caída, un OK para salir).
 8. **Google Sheets** (nombre: Guardar estado) — Operation: Append or Update Row, columna clave: url.
 9. **IF** — Condition: Boolean, Value 1 `={{ $json.avisar }}`, is true.
-10. **Telegram** — Operation: Send Message, Chat ID: el tuyo, Text: `={{ $json.mensaje }}`, Parse Mode: HTML.
+10. **Telegram** — Credencial «Telegram API» (el token no se escribe en el nodo). Operation: Send Message, Chat ID: el tuyo, Text: `={{ $json.mensaje }}`, Parse Mode: HTML.
 11. **Google Sheets** (nombre: Historial) — Operation: Append Row en la pestaña historial.
 
 ## El código del nodo "Lista de URLs"
@@ -99,7 +99,7 @@ return [{ json: { url: $json.url, estado, fallos_seguidos: nuevosFallos, desde: 
 - **Te avisa cuando no toca (falsos positivos)**: por eso hay dos fallos seguidos antes de avisar. Si tu servidor es lento, sube el Timeout a 15000 y el maxMs.
 - **Telegram deja de responder**: los bots tienen límite de 30 mensajes por segundo, no lo vas a tocar; si el nodo falla, activa Retry On Fail con 3 intentos y 5 segundos de espera.
 - **Zona horaria**: pon la del workflow en Settings, Timezone: Europe/Madrid, o las horas del historial saldrán en UTC (dos horas menos en verano).
-- **Se te acaban las ejecuciones**: cada 5 minutos son 8.640 ejecuciones al mes. En n8n Cloud gratuito no cabe: o lo pones a 15 minutos, o lo auto-alojas (ejecuciones ilimitadas).
+- **Se te acaban las ejecuciones**: cada 5 minutos son 8.640 ejecuciones al mes. En la prueba gratuita de n8n Cloud no cabe: o lo pones a 15 minutos, o lo auto-alojas (ejecuciones ilimitadas).
 
 ## Cuánto cuesta
 - n8n auto-alojado: gratis, salvo el VPS (5-6 euros al mes en Hetzner o Contabo).

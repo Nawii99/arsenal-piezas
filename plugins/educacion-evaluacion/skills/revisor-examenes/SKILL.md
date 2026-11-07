@@ -1,6 +1,6 @@
 ---
 name: revisor-examenes
-description: Revisa un examen ya redactado (preguntas, opciones y clave) y detecta los fallos más comunes antes de publicarlo: preguntas ambiguas, opciones absurdas fáciles de descartar, falta de variedad de dificultad, desajuste con lo que se ha enseñado y clave de corrección incompleta. Se activa cuando el usuario pide revisar, pulir o validar un examen.
+description: "Revisa un examen ya redactado (preguntas, opciones y clave) y detecta los fallos más comunes antes de publicarlo: preguntas ambiguas, opciones absurdas fáciles de descartar, falta de variedad de dificultad, desajuste con lo que se ha enseñado y clave de corrección incompleta. Se activa cuando el usuario pide revisar, pulir o validar un examen."
 ---
 
 ## Qué hace

@@ -35,7 +35,7 @@ Ahorra media hora de comprobaciones manuales por proyecto y evita rehacer pantal
 Coge la lista de colores de tu marca desde una hoja de cálculo, calcula el contraste de todas las parejas texto/fondo y te manda un correo con las que fallan según WCAG 2.1 (niveles AA y AAA).
 Es para diseñadores de marca y freelance que entregan identidades o webs y no quieren comprobar cuarenta combinaciones a mano cada vez que cambia un color.
 ## Lo que necesitas antes
-Una cuenta de n8n: sirve el plan gratuito de n8n Cloud o auto-alojado con Docker (`docker run -it --rm -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n`).
+Una cuenta de n8n: sirve la prueba gratuita temporal de n8n Cloud o, para uso continuado gratis, auto-alojado con Docker (Community Edition) (`docker run -it --rm -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n`).
 Una cuenta de Google. En n8n crea las credenciales «Google Sheets OAuth2 API» y «Gmail OAuth2»: se sacan en console.cloud.google.com > APIs y servicios > Credenciales > Crear ID de cliente OAuth (tipo Aplicación web), pegando como URL de redirección la que te muestra n8n al crear la credencial. Activa también las APIs «Google Sheets API» y «Gmail API» en ese mismo panel.
 Una hoja de Google llamada `Paleta` con tres columnas en la fila 1: `nombre`, `hex`, `uso`. En `uso` pon `texto`, `fondo` o `ambos`.
 ## Los nodos, en orden
@@ -77,4 +77,4 @@ Colores escritos sin almohadilla o con nombre (`rojo`, `rgb(...)`): el código s
 Si la hoja tiene filas vacías al final, Google Sheets devuelve items con `hex` vacío y el cálculo da NaN. Añade `if (!f.hex) continue;` o borra las filas.
 La zona horaria del workflow es UTC por defecto: si quieres el correo a las 8 de la mañana en España, fija `Europe/Madrid` en Settings.
 ## Cuánto cuesta
-Gratis del todo: n8n auto-alojado no tiene límite de ejecuciones; el plan gratuito de n8n Cloud da unas 200 ejecuciones al mes y esto gasta 4. Google Sheets y Gmail son gratis con tu cuenta normal (Gmail tiene un tope de 500 envíos diarios, aquí mandas uno).
+Gratis del todo: n8n auto-alojado no tiene límite de ejecuciones; n8n Cloud solo tiene prueba gratuita temporal y después es de pago, y esto gasta solo 4 ejecuciones al mes. Google Sheets y Gmail son gratis con tu cuenta normal (Gmail tiene un tope de 500 envíos diarios, aquí mandas uno).

@@ -10,7 +10,7 @@ Recorre una hoja de textos en español, traduce con DeepL solo las celdas vacía
 
 ## Cómo usarla
 
-1. Crear la hoja textos y la clave de DeepL
+1. Crear la hoja textos y guardar la clave de DeepL en una credencial de n8n
 2. Conectar Sheets y GitHub en n8n
 3. Probar con 20 líneas
 4. Revisar las traducciones antes de publicar
@@ -46,7 +46,7 @@ Recorre una hoja de textos, traduce con DeepL solo las celdas vacías, protege l
 3. **Code** (`Preparar pendientes`) — genera un item por cada combinación de fila e idioma que aún esté vacía, y sustituye variables por marcadores. Código abajo.
 4. **Split In Batches / Loop Over Items** — Batch Size: `40`. DeepL admite hasta 50 textos por petición.
 5. **Code** (`Agrupar por idioma`) — junta el lote en un único cuerpo con array `text`.
-6. **HTTP Request** (`DeepL`) — Method: `POST`. URL: `https://api-free.deepl.com/v2/translate`. Headers: `Authorization: DeepL-Auth-Key TU_CLAVE`, `Content-Type: application/json`. Body JSON: `{ "text": {{ JSON.stringify($json.textos) }}, "source_lang": "ES", "target_lang": "{{ $json.idioma }}", "tag_handling": "xml", "ignore_tags": ["x"], "preserve_formatting": true }`. En Settings activa Retry On Fail con 3 intentos y 5000 ms de espera.
+6. **HTTP Request** (`DeepL`) — Method: `POST`. URL: `https://api-free.deepl.com/v2/translate`. Authentication: Generic Credential Type > Header Auth con una credencial (Name `Authorization`, Value `DeepL-Auth-Key ` seguido de tu clave); la clave va solo en la credencial, nunca escrita en el nodo, porque un flujo exportado se llevaría la clave. Header `Content-Type: application/json`. Body JSON: `{ "text": {{ JSON.stringify($json.textos) }}, "source_lang": "ES", "target_lang": "{{ $json.idioma }}", "tag_handling": "xml", "ignore_tags": ["x"], "preserve_formatting": true }`. En Settings activa Retry On Fail con 3 intentos y 5000 ms de espera.
 7. **Code** (`Restaurar variables`) — devuelve los marcadores `<x>...</x>` a su forma original `{jugador}`.
 8. **Google Sheets** (`Escribir traducción`) — Operation: `Update Row`, Column to Match On: `clave`, y la columna del idioma correspondiente. Usa expresión en el nombre de columna si tu versión lo permite; si no, duplica esta rama por idioma con un Switch.
 9. Conecta de vuelta al Loop Over Items.

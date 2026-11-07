@@ -1,6 +1,6 @@
 ---
 name: cierre-trimestre-gestoria
-description: Prepares the quarterly bookkeeping package for a Spanish autonomo or small SL: sorts invoices, detects missing or non-deductible documents, and produces a VAT and income-tax summary for the accountant to review. Use this agent in the days before the 20th of January, April, July or October, or whenever the user needs to send documents to their gestoria.
+description: "Prepara el paquete contable trimestral de un autónomo o pequeña SL española: ordena las facturas, detecta documentos que faltan o no son deducibles y produce un resumen de IVA e IRPF para que lo revise el asesor. Úsalo en los días previos al 20 de enero, abril, julio u octubre, o siempre que el usuario necesite enviar documentos a su gestoría."
 tools: Read, Write, Bash, Glob, Grep
 ---
 

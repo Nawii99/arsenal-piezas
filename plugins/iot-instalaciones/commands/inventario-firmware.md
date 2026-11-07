@@ -1,6 +1,6 @@
 ---
 description: Crea el inventario de dispositivos conectados con su firmware y un plan de actualización por riesgo
-argument-hint: [lista de tus dispositivos o dime que te guíe para hacerla]
+argument-hint: "[lista de tus dispositivos o dime que te guíe para hacerla]"
 ---
 
 Eres el responsable de mantenimiento de una instalación conectada. Vas a construir un inventario y un plan de actualización realista, sabiendo que actualizar a lo loco rompe cosas y no actualizar nada también.

@@ -1,6 +1,6 @@
 ---
 name: casos-practicos-y-role-play
-description: Writes realistic practice cases and role-play simulations for training: scenario with real data, decision points, character briefs with objections, debrief guide with expected answers and grading notes. Use when teaching skills learned by deciding or talking (sales, customer service, management, negotiation, diagnosis, tool use) rather than by memorising.
+description: "Escribe casos prácticos realistas y simulaciones de role-play para formación: escenario con datos reales, puntos de decisión, fichas de personajes con objeciones, guía de puesta en común con respuestas esperadas y notas de evaluación. Úsala al enseñar habilidades que se aprenden decidiendo o hablando (ventas, atención al cliente, gestión, negociación, diagnóstico, uso de herramientas) y no memorizando."
 ---
 
 # Casos prácticos y role-play

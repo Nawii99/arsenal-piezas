@@ -38,7 +38,7 @@ Cada mañana a las 9 te manda a Slack el top 5 de errores del día anterior con 
 ## Lo que necesitas antes
 - n8n con una URL pública (auto-alojado o Cloud).
 - PostgreSQL (Supabase gratis vale).
-- Un canal de Slack y un webhook entrante: api.slack.com/apps, Create New App, Incoming Webhooks, Add New Webhook to Workspace. Copia la URL https://hooks.slack.com/services/...
+- Un canal de Slack y un webhook entrante: api.slack.com/apps, Create New App, Incoming Webhooks, Add New Webhook to Workspace. Copia la URL https://hooks.slack.com/services/... Es secreta (quien la tenga puede escribir en tu canal): guárdala en una credencial o en la variable de entorno `SLACK_WEBHOOK_URL`, nunca escrita en un nodo.
 - Poder tocar tu backend para añadir el envío. En cualquier lenguaje son 5 líneas: un POST con JSON.
 
 ## Las tablas
@@ -58,19 +58,19 @@ CREATE TABLE errores_eventos (huella TEXT, usuario TEXT, ts TIMESTAMPTZ DEFAULT 
 process.on('uncaughtException', enviar);
 async function enviar(err, ctx = {}) {
   await fetch('https://tu-n8n.com/webhook/error', {
-    method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Token': 'TU_TOKEN_SECRETO' },
+    method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Token': process.env.X_TOKEN_ERRORES },
     body: JSON.stringify({ mensaje: err.message, stack: err.stack, entorno: process.env.NODE_ENV, usuario: ctx.userId || 'anonimo', url: ctx.url || '' })
   }).catch(() => {});
 }
 ```
 
 ## Flujo 1: recepción (los nodos, en orden)
-1. **Webhook** — POST, Path: `error`, Authentication: Header Auth (crea una credencial Header Auth con Name `X-Token` y Value tu token), Respond: Immediately con código 202.
+1. **Webhook** — POST, Path: `error`, Authentication: Header Auth (crea una credencial Header Auth con Name `X-Token` y Value tu token), Respond: Immediately con código 202. El mismo token va en una variable de entorno (`X_TOKEN_ERRORES`) que el nodo Code lee con `$env.X_TOKEN_ERRORES`, sin escribirlo en el código. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 2. **Code** (nombre: Huella) — normaliza el mensaje y saca fichero y línea del stack.
 3. **Postgres** (nombre: Upsert) — Execute Query con el UPSERT de abajo.
 4. **Postgres** (nombre: Evento) — `INSERT INTO errores_eventos (huella, usuario, contexto) VALUES ($1,$2,$3::jsonb);`
 5. **IF** (nombre: ¿Aviso?) — `={{ $json.veces === 1 || ($json.veces % 50 === 0) }}` is true.
-6. **Slack** — Resource: Message, Operation: Send, Channel: #errores, Text con formato de abajo.
+6. **Slack** — con la credencial Slack API de n8n: Resource: Message, Operation: Send, Channel: #errores, Text con formato de abajo. (Si prefieres el webhook entrante, usa un HTTP Request con la URL en `$env.SLACK_WEBHOOK_URL`, no pegada en el nodo.)
 
 ## El código del nodo "Huella"
 ```javascript
@@ -104,7 +104,7 @@ RETURNING huella, mensaje, fichero, linea, veces, array_length(usuarios,1) AS af
 5. **Slack** — Send Message al canal #errores.
 
 ## Cómo probarla
-- Con curl: `curl -X POST https://tu-n8n.com/webhook/error -H 'X-Token: TU_TOKEN' -H 'Content-Type: application/json' -d '{"mensaje":"Cannot read property id of undefined","stack":"Error\n  at /app/src/pedidos.js:42:10","usuario":"u1"}'`
+- Con curl (el token sale de la variable de entorno; no lo escribas en el comando, quedaría en el historial de la terminal): `curl -X POST https://tu-n8n.com/webhook/error -H "X-Token: $X_TOKEN_ERRORES" -H 'Content-Type: application/json' -d '{"mensaje":"Cannot read property id of undefined","stack":"Error\n  at /app/src/pedidos.js:42:10","usuario":"u1"}'`
 - Mándalo 3 veces cambiando solo el usuario: debe llegarte un único aviso a Slack y la fila debe marcar veces=3, afectados=3.
 - Cambia el número de la línea del stack y comprueba que se crea una huella distinta.
 

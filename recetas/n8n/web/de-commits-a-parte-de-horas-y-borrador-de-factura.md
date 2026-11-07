@@ -46,7 +46,7 @@ Para desarrollador web freelance que trabaja con varios clientes a la vez.
 2. **Google Sheets** — Get Row(s) de `Clientes`.
 3. **GitHub** (`Commits`) — Resource: Repository, Operation: Get Issues no; usa **HTTP Request** con Predefined Credential Type GitHub: GET `https://api.github.com/repos/{{ $json.repo }}/commits`, Query Parameters: `since` = `{{ $now.minus({ days: 7 }).startOf('day').toISO() }}`, `author` = tu usuario de GitHub, `per_page` = `100`. Header `Accept: application/vnd.github+json`.
 4. **Code** (`Agrupar y estimar`) — Mode: Run Once for All Items. Código abajo.
-5. **Google Sheets** (`Guardar parte`) — Append Row en `Partes` con cada línea generada.
+5. **Google Sheets** (`Guardar parte`) — Append Row en `Partes` con cada línea generada (antes, comprueba que no existe ya una fila con la misma semana, cliente, día y repo, para no duplicar si el flujo se ejecuta dos veces).
 6. **Schedule Trigger** aparte (segundo workflow o rama con **IF** sobre `{{ $now.day }}` igual a `1`) — el día 1 lee `Partes` del mes anterior.
 7. **Code** (`Montar factura`) — suma horas por cliente y calcula importe con la tarifa. Código abajo.
 8. **Gmail** — To: tú (no al cliente directamente), Subject `Borrador factura {{ $json.cliente }} - {{ $json.mes }}`, Email Type HTML, Message `{{ $json.html }}`.
@@ -96,7 +96,7 @@ return Object.entries(clientes).map(([cliente, d]) => ({ json: { cliente, mes: $
 - Commits de merge o de bots inflan la cuenta: filtra en el Code los mensajes que empiecen por `Merge` o cuyo autor sea `dependabot`.
 - La API de GitHub pagina de 100 en 100: si haces más de 100 commits por semana en un repo, añade el parámetro `page`.
 - Nunca mandes esto al cliente tal cual: es tu ayuda de memoria, no un documento contractual. Tú revisas y ajustas.
-- La factura de verdad, con IVA, IRPF y numeración, hazla en tu programa de facturación; esto solo prepara las partidas.
+- La factura de verdad, con IVA, IRPF y numeración, hazla en tu programa de facturación; esto solo prepara las partidas y NO asigna número. Si algún día calculas el número aquí (último número + 1 leyendo una hoja), reserva el número antes de enviar el correo, ejecuta el flujo de uno en uno (concurrencia 1) y comprueba que ese número no existe ya, para que dos ejecuciones no repitan número.
 
 **Cuánto cuesta**
 - GitHub API, Sheets y Gmail: gratis. n8n autoalojado: gratis.

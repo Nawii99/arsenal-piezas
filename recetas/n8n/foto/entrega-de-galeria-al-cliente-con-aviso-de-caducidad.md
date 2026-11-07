@@ -107,7 +107,7 @@ return salida;
 
 ## Qué puede salir mal
 - **Zona horaria.** Si el Schedule dispara a las 12:00 en vez de a las 10:00, es que n8n está en UTC. Cámbialo en Settings o pon `0 8 * * *` en invierno y `0 8 * * *` con el ajuste correspondiente en verano.
-- **El cliente no tiene cuenta de Google.** El permiso `user` le pedirá iniciar sesión. Si te da problemas, usa Type `anyone` con Role `reader` y manda solo el enlace.
+- **El cliente no tiene cuenta de Google.** El permiso `user` le pedirá iniciar sesión. No lo cambies a `anyone`: son fotos personales del cliente. Pídele una cuenta de Google (puede crearla con su correo de siempre) o entrégale las fotos con un servicio de galerías con contraseña y caducidad.
 - **Emails duplicados.** Pasa si el Schedule se solapa con una ejecución larga. Con Split In Batches a 1 y marcando la fila justo después del envío, no ocurre.
 - **Se te olvida borrar de verdad.** Añade un tercer workflow con `Google Drive` Operation `Delete` que corra cuando `fecha_borrado` sea anterior a hoy, pero pruébalo con una carpeta de mentira primero.
 

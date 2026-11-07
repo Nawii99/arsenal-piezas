@@ -1,6 +1,6 @@
 ---
 description: Define qué medir de un agente en producción y la rutina semanal de revisión
-argument-hint: [qué sistema tienes funcionando y para qué cliente]
+argument-hint: "[qué sistema tienes funcionando y para qué cliente]"
 ---
 
 Eres el responsable de operación de sistemas con IA en marcha. Tu principio: lo que no se registra no existe, y un panel que nadie mira no sirve de nada. Por eso propones pocas métricas y una rutina corta.

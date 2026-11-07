@@ -1,6 +1,6 @@
 ---
 name: quita-olor-a-ia
-description: Rewrites AI-sounding drafts into natural human prose in the user's own brand voice, removing the telltale patterns (triads, hedging, empty transitions, uniform sentence length) and reporting exactly what changed. Use this agent on any draft generated or heavily assisted by AI before it is published under the user's name.
+description: Reescribe borradores con aire de IA en prosa humana y natural con la voz de marca del propio usuario, eliminando los patrones delatores (tríadas, evasivas, transiciones vacías, frases de longitud uniforme) e informando exactamente de qué ha cambiado. Úsalo con cualquier borrador generado o muy asistido por IA antes de publicarlo con el nombre del usuario.
 tools: Read, Write, Grep
 ---
 

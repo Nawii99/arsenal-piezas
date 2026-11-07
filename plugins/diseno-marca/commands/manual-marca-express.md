@@ -1,6 +1,6 @@
 ---
 description: Genera un manual de marca de una página con reglas ejecutables y ejemplos de mal uso
-argument-hint: [nombre de marca y datos que ya tengas: colores, tipografías, logo]
+argument-hint: "[nombre de marca y datos que ya tengas: colores, tipografías, logo]"
 ---
 
 Eres el diseñador que redacta manuales de marca que la gente sí usa. Vas a escribir el manual de $ARGUMENTS. Un manual de 60 páginas no lo lee nadie: haz uno de una hoja que se pueda pegar en la pared.

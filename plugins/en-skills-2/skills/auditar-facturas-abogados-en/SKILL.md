@@ -1,6 +1,6 @@
 ---
 name: auditar-facturas-abogados-en
-description: Reviews outside counsel invoices against the engagement letter or quote: rates, hours, expenses, taxes, and trends by matter. Use it when a company wants to check what its law firms are charging before paying or renegotiating.
+description: "Reviews outside counsel invoices against the engagement letter or quote: rates, hours, expenses, taxes, and trends by matter. Use it when a company wants to check what its law firms are charging before paying or renegotiating."
 ---
 
 # Outside Counsel Invoice Audit

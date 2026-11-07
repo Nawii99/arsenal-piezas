@@ -1,6 +1,6 @@
 ---
 name: primeros-7-dias-del-alumno
-description: Designs the onboarding sequence for a new student in a course, membership or training program: welcome, first quick win, day-by-day messages, activation milestone and the metric to watch. Use when people buy or enrol but never start, or start and stall in the first week.
+description: "Diseña la secuencia de incorporación de un alumno nuevo en un curso, membresía o programa de formación: bienvenida, primera victoria rápida, mensajes día a día, hito de activación y la métrica a vigilar. Úsala cuando la gente compre o se inscriba pero nunca empiece, o empiece y se estanque la primera semana."
 ---
 
 # Primeros 7 días del alumno

@@ -36,7 +36,7 @@ Vigila una carpeta de Google Drive; cuando aparece un PNG nuevo, lo manda a un s
 Es para diseñadores gráficos que hacen merchandising, packaging o propuestas visuales y repiten el mismo montaje una y otra vez.
 ## Lo que necesitas antes
 Dos carpetas en Google Drive: `01-artes-finales` y `02-mockups`. Apunta el ID de cada una (está en la URL después de `/folders/`).
-Cuenta en dynamicmockups.com (también valen Placid o Mediamodifier, la lógica es igual). En su panel crea un «Mockup Set» con las plantillas que uses y copia el `mockup_uuid` y el `smart_object_uuid` de cada una. La API key está en Settings > API.
+Cuenta en dynamicmockups.com (también valen Placid o Mediamodifier, la lógica es igual). En su panel crea un «Mockup Set» con las plantillas que uses y copia el `mockup_uuid` y el `smart_object_uuid` de cada una. La API key está en Settings > API: guárdala solo en la credencial «Header Auth» de n8n, nunca escrita en un nodo Code, Set o HTTP Request (un flujo exportado se llevaría la clave).
 En n8n: credencial «Google Drive OAuth2 API» y credencial «Header Auth» con Name `x-api-key` y Value tu clave de Dynamic Mockups. Credencial de Slack opcional.
 ## Los nodos, en orden
 **1. «Google Drive Trigger»** — Trigger On: Specific Folder, Folder: `01-artes-finales`, Event: File Created, Poll Times: Every Minute.
@@ -44,7 +44,7 @@ En n8n: credencial «Google Drive OAuth2 API» y credencial «Header Auth» con 
 **3. «Set»** (Edit Fields) — crea el campo `url_diseno` con valor `https://drive.google.com/uc?export=download&id={{ $('Google Drive Trigger').first().json.id }}` y `nombre` con `{{ $('Google Drive Trigger').first().json.name }}`.
 **4. «Code»** — genera un item por cada plantilla que quieras (código abajo).
 **5. «Split In Batches»** — Batch Size 1.
-**6. «HTTP Request»** (nómbralo Render) — POST a `https://app.dynamicmockups.com/api/v1/renders`, Authentication: Header Auth. Body Content Type: JSON, Specify Body: Using JSON, con: `{ "mockup_uuid": "{{ $json.mockup_uuid }}", "export_label": "{{ $json.etiqueta }}", "export_options": { "image_format": "jpg", "image_size": 1500 }, "smart_objects": [ { "uuid": "{{ $json.smart_object_uuid }}", "asset": { "url": "{{ $json.url_diseno }}" } } ] }`. Settings: Retry On Fail, 3 intentos.
+**6. «HTTP Request»** (nómbralo Render) — POST a `https://app.dynamicmockups.com/api/v1/renders`, Authentication: Generic Credential Type > Header Auth, con la credencial creada antes (no pongas la cabecera `x-api-key` a mano en el nodo). Body Content Type: JSON, Specify Body: Using JSON, con: `{ "mockup_uuid": "{{ $json.mockup_uuid }}", "export_label": "{{ $json.etiqueta }}", "export_options": { "image_format": "jpg", "image_size": 1500 }, "smart_objects": [ { "uuid": "{{ $json.smart_object_uuid }}", "asset": { "url": "{{ $json.url_diseno }}" } } ] }`. Settings: Retry On Fail, 3 intentos.
 **7. «HTTP Request»** (nómbralo Descargar) — GET a `{{ $json.data.export_path }}`, Response Format: File, Put Output in Field `data`.
 **8. «Google Drive»** — Operation: Upload, File Name `{{ $('Split In Batches').first().json.nombre_salida }}`, Parent Folder: `02-mockups`, Input Data Field Name `data`.
 **9. «Slack»** — mensaje al canal: `Listos los mockups de {{ $('Set').first().json.nombre }}`.
@@ -70,4 +70,4 @@ Si el arte final pesa más de 25 MB, la descarga desde Drive puede fallar. Traba
 Los enlaces públicos de Drive son públicos de verdad: usa una carpeta dedicada y no metas ahí nada confidencial. Alternativa: sube el archivo a un bucket temporal.
 Si el arte es un PDF o AI, no vale: el servicio necesita PNG o JPG. Añade un paso previo de conversión o exporta tú el PNG.
 ## Cuánto cuesta
-n8n y Drive gratis. Dynamic Mockups tiene un plan gratuito con unos 10-20 renders al mes; los planes de pago arrancan sobre 19-29 $/mes con cientos de renders. Sale a cuenta desde la segunda propuesta del mes.
+n8n autoalojado (Community Edition) y Drive gratis; n8n Cloud tiene una prueba gratuita temporal y después planes de pago. Dynamic Mockups tiene un plan gratuito con unos 10-20 renders al mes; los planes de pago arrancan sobre 19-29 $/mes con cientos de renders. Sale a cuenta desde la segunda propuesta del mes.

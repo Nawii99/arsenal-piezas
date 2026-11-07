@@ -57,7 +57,7 @@ return [{ json: { fecha, bytes, mb: Math.round(bytes / 1048576 * 100) / 100, rut
 ```
 4. **IF** («¿Volcado vacío?») — `{{ $json.bytes }}` menor que 1024. Si se cumple, va directo a un **Telegram** de alerta roja y para.
 5. **Read/Write Files from Disk** — Operation: Read File, File Selector `{{ $json.ruta }}`, «Property Name» `data`.
-6. **Google Drive** — Operation: Upload, Input Data Field `data`, Name `backup_{{ $json.fecha }}.dump.gz`, carpeta «Backups BD».
+6. **Google Drive** — Operation: Upload, Input Data Field `data`, Name `backup_{{ $('Leer tamaño').item.json.fecha }}.dump.gz`, carpeta «Backups BD».
 7. **Google Drive** («Listar copias») — Operation: Search en esa carpeta, pidiendo los campos `name`, `size`, `createdTime`.
 8. **Code** («Verificar y rotar»)
 ```javascript
@@ -77,7 +77,7 @@ return [{ json: { alerta, hoy_mb: Math.round(hoy / 1048576), media_mb: Math.roun
 ```
 9. **Item Lists** (Split Out sobre `borrar`) y **Google Drive** (Operation: Delete File) para la rotación.
 10. **Execute Command** («Limpiar temporal») — `rm -f /tmp/backup_*.dump.gz`.
-11. **Telegram** — mensaje diario corto: `✅ Copia {{ $json.hoy_mb }} MB subida` o `⚠️ La copia de hoy ({{ $json.hoy_mb }} MB) es mucho menor que la media ({{ $json.media_mb }} MB), revisa`.
+11. **Telegram** — mensaje diario corto: `✅ Copia {{ $('Verificar y rotar').first().json.hoy_mb }} MB subida` o `⚠️ La copia de hoy ({{ $('Verificar y rotar').first().json.hoy_mb }} MB) es mucho menor que la media ({{ $('Verificar y rotar').first().json.media_mb }} MB), revisa`. Va detrás del Execute Command, que solo devuelve `stdout`, `stderr` y `exitCode`, así que los datos se leen de «Verificar y rotar».
 
 ## Cómo probarla
 Ejecuta a mano y baja el archivo de Drive. La prueba de verdad es la restauración: en tu máquina crea una base vacía y ejecuta `pg_restore --no-owner -d pruebas backup_FECHA.dump.gz` tras descomprimir con `gunzip`. Si no restauras nunca, no tienes copia, tienes un archivo. Hazlo al menos una vez cada trimestre y apúntalo en el calendario.
@@ -87,6 +87,7 @@ Ejecuta a mano y baja el archivo de Drive. La prueba de verdad es la restauraci�
 - **Versiones incompatibles**: si el servidor es PostgreSQL 16 y tu cliente es el 13, `pg_dump` se niega. Instala el cliente de la misma versión mayor o superior.
 - **Disco lleno**: los volcados en `/tmp` se acumulan si falla la subida. El nodo de limpieza y un `df -h` de vez en cuando lo evitan.
 - **Datos personales**: una copia con datos de clientes en tu Drive entra dentro del RGPD. Cífrala añadiendo `| gpg --symmetric --batch --passphrase "$CLAVE_BACKUP"` a la tubería, y guarda esa clave en un gestor de contraseñas, no en n8n.
+- **Mensajes con «undefined MB» o archivo `backup_undefined`**: tras leer el disco o ejecutar un comando, `$json` pierde los campos anteriores; por eso el nombre sale de «Leer tamaño» y el aviso de «Verificar y rotar».
 - **Supabase**: usa la cadena de conexión de «Session pooler» del panel, no la directa, si tu servidor no tiene IPv6.
 
 ## Cuánto cuesta

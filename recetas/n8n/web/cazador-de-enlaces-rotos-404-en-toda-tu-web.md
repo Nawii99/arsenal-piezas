@@ -38,8 +38,8 @@ Los que devuelven 404, 410, 500 o no responden se guardan en una hoja indicando 
 ## Lo que necesitas antes
 - La URL de tu sitemap: casi siempre `https://tudominio.com/sitemap.xml` o `/sitemap_index.xml` (Yoast y Rank Math usan el segundo). Ábrela en el navegador para confirmarlo.
 - Hoja de Google «Enlaces rotos» con columnas: fecha, enlace_roto, codigo, pagina_origen, texto_ancla.
-- n8n (nube gratuita o auto-alojado) y credencial de Google Sheets.
-- Si tu web es grande (más de 300 páginas), auto-alojado: la nube gratuita se queda corta de tiempo de ejecución.
+- n8n (auto-alojado gratis, o n8n Cloud con su prueba gratuita temporal) y credencial de Google Sheets.
+- Si tu web es grande (más de 300 páginas), auto-alojado: la prueba gratuita de la nube se queda corta de tiempo de ejecución.
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Months, Trigger at Day of Month: 1, Hour: 4.
@@ -95,4 +95,4 @@ return salida;
 
 ## Cuánto cuesta
 - Todo gratis: n8n auto-alojado, Google Sheets y Gmail.
-- Si lo pones en n8n Cloud gratuito, cada enlace comprobado no cuenta como ejecución (solo el flujo entero), pero sí el límite de 5 minutos de ejecución del plan gratuito: ahí conviene auto-alojar.
+- Si lo pones en la prueba gratuita de n8n Cloud, cada enlace comprobado no cuenta como ejecución (solo el flujo entero), pero sí el límite de 5 minutos de ejecución de la prueba gratuita: ahí conviene auto-alojar.

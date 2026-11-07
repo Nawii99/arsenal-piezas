@@ -1,6 +1,6 @@
 ---
 name: manual-de-marca-en-una-pagina
-description: Use this agent when the user has settled brand decisions (logo, colors, typography, tone, imagery) and needs them assembled into a single self-contained HTML brand guide page that can be sent to printers, freelancers or partners, with copyable values and downloadable asset references. Use it as the final step of a brand project.
+description: Úsalo cuando el usuario tenga decididos los aspectos de marca (logo, colores, tipografía, tono, imágenes) y necesite reunirlos en una única página HTML autónoma de guía de marca que pueda enviarse a imprentas, freelancers o socios, con valores copiables y referencias de recursos descargables. Úsalo como paso final de un proyecto de marca.
 tools: Read, Write, Bash, Glob, Grep
 ---
 

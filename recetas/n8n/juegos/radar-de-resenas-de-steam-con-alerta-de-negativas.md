@@ -35,7 +35,7 @@ Consulta la API pública de reseñas de Steam cada 30 minutos, guarda cada rese�
 Pensado para desarrolladores solitarios y estudios de 2-5 personas que acaban de publicar y necesitan reaccionar rápido a los fallos que reporta la gente.
 
 ## Lo que necesitas antes
-- Una cuenta de n8n: el plan gratuito de n8n Cloud o, mejor, n8n auto-alojado con Docker en tu propio ordenador o en un VPS de 5 €/mes.
+- Una cuenta de n8n: n8n Cloud (prueba gratuita temporal, luego de pago) o, mejor, n8n auto-alojado con Docker en tu propio ordenador o en un VPS de 5 €/mes.
 - El AppID de tu juego: es el número de la URL de tu ficha, por ejemplo store.steampowered.com/app/**1234560**/ → el AppID es 1234560.
 - Una cuenta de Google para Google Sheets. La credencial se crea en console.cloud.google.com: proyecto nuevo → APIs y servicios → Habilitar «Google Sheets API» → Credenciales → ID de cliente OAuth → pegas el «OAuth Redirect URL» que te da n8n.
 - Un webhook de Discord: en tu servidor, Ajustes del canal → Integraciones → Webhooks → Nuevo webhook → Copiar URL.
@@ -84,4 +84,4 @@ return salida;
 - **Steam te corta**: si consultas muy seguido puede devolver vacío un rato. Con 30 minutos no pasa nunca; y con «Never Error» activado el flujo simplemente no añade nada esa vez.
 
 ## Cuánto cuesta
-Gratis de principio a fin: API de Steam pública, Google Sheets gratis, Discord gratis. n8n auto-alojado es 0 € (más el VPS si lo pones fuera de tu equipo). En n8n Cloud gratuito, 48 ejecuciones al día caben de sobra en el límite mensual.
+Gratis de principio a fin: API de Steam pública, Google Sheets gratis, Discord gratis. n8n auto-alojado es 0 € (más el VPS si lo pones fuera de tu equipo). En la prueba gratuita de n8n Cloud, 48 ejecuciones al día pueden agotar el cupo; después es de pago.

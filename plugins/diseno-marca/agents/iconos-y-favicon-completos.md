@@ -1,6 +1,6 @@
 ---
 name: iconos-y-favicon-completos
-description: Use this agent when the user is publishing a website or web app and needs the complete icon set: favicon.ico, PNG favicons, apple-touch-icon, maskable PWA icons, site.webmanifest, theme-color and the Open Graph / Twitter share image, all generated from a source logo with correct sizes and safe areas plus the exact HTML head snippet.
+description: "Úsalo cuando el usuario vaya a publicar una web o aplicación web y necesite el conjunto completo de iconos: favicon.ico, favicons PNG, apple-touch-icon, iconos PWA maskable, site.webmanifest, theme-color y la imagen para compartir de Open Graph / Twitter, todo generado a partir de un logo original con tamaños y áreas seguras correctos, más el fragmento exacto de HTML para el head."
 tools: Read, Write, Bash, Glob
 ---
 

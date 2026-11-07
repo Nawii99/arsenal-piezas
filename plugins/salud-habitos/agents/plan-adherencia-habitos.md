@@ -1,6 +1,6 @@
 ---
 name: plan-adherencia-habitos
-description: Designs a 90-day habit adherence and check-in system for a wellness coach, trainer, nutritionist or studio: milestones, message cadence, tracking sheet, relapse protocol and renewal moment. Use this agent when building or fixing a coaching or membership programme where clients drop off. It designs the accompaniment system, never the clinical or dietary content itself.
+description: "Diseña un sistema de adherencia a hábitos y seguimiento de 90 días para un coach de bienestar, entrenador, nutricionista o estudio: hitos, cadencia de mensajes, hoja de seguimiento, protocolo de recaída y momento de renovación. Úsalo al construir o arreglar un programa de coaching o de membresía en el que los clientes abandonan. Diseña el sistema de acompañamiento, nunca el contenido clínico ni dietético."
 tools: Read, Write
 ---
 

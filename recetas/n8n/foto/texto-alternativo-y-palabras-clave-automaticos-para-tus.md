@@ -49,11 +49,11 @@ Para tiendas online, blogs y fotógrafos con portfolio: cada vez que sube una im
 4. **Loop Over Items** — Batch Size: 1.
 5. **HTTP Request «Descargar imagen»** — GET a `={{ $json.source_url }}`, Response Format: File, campo `data`.
 6. **Extract From File** — Operation: Move File to Base64 String, Input Binary Field: `data`, Destination Output Field: `b64`. (Gemini necesita la imagen en base64.)
-7. **HTTP Request «Gemini describe»** — Method: POST, URL: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent`. Headers: `x-goog-api-key` con tu clave. Body Content Type: JSON, Specify Body: Using JSON, con el cuerpo de abajo.
+7. **HTTP Request «Gemini describe»** — Method: POST, URL: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent`. Headers: `x-goog-api-key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `x-goog-api-key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría). Body Content Type: JSON, Specify Body: Using JSON, con el cuerpo de abajo.
 8. **Code «Leer respuesta»** — extrae el JSON que devuelve Gemini (código abajo).
 9. **HTTP Request «Actualizar WordPress»** — Method: POST, URL `=https://tuweb.com/wp-json/wp/v2/media/{{ $('Loop Over Items').item.json.id }}`, Authentication WordPress, Body JSON: `{ "alt_text": "{{ $json.alt }}", "title": "{{ $json.titulo }}", "caption": "{{ $json.pie }}" }`.
-10. Opcional en auto-alojado: **Execute Command** con `exiftool -overwrite_original -IPTC:Caption-Abstract="..." -IPTC:Keywords="..." ...` sobre una copia local del archivo.
-11. **Google Sheets** — Append con id, alt, titulo, keywords, para tener registro de lo generado.
+10. Opcional en auto-alojado: **Code «Limpiar para IPTC»** (modo «Run Once for Each Item») — el alt y las palabras clave los escribe la IA mirando una imagen de fuera, así que antes de la terminal solo se dejan letras, números, espacios, comas, puntos y guiones, y el ID de WordPress tiene que ser un número; si no, el flujo para: `const id = String($('Loop Over Items').item.json.id); if (!/^\d+$/.test(id)) throw new Error('ID de medio no válido: ' + id); const limpio = t => String(t || '').replace(/[^\p{L}\p{N} ,.-]/gu, '').slice(0, 200); return { json: { id, alt_iptc: limpio($('Leer respuesta').item.json.alt), keywords_iptc: limpio($('Leer respuesta').item.json.keywords) } };`. Después, un **HTTP Request** que vuelva a descargar `{{ $('Loop Over Items').item.json.source_url }}` como archivo, un **Read/Write Files from Disk** que lo escriba en `/tmp/medios/{{ $('Limpiar para IPTC').item.json.id }}.jpg` (crea antes la carpeta con `mkdir -p /tmp/medios`; solo para JPEG) y un **Execute Command** con `exiftool -overwrite_original -IPTC:Caption-Abstract="{{ $('Limpiar para IPTC').item.json.alt_iptc }}" -sep ", " -IPTC:Keywords="{{ $('Limpiar para IPTC').item.json.keywords_iptc }}" "/tmp/medios/{{ $('Limpiar para IPTC').item.json.id }}.jpg"`.
+11. **Google Sheets** — Append con id, alt, titulo, keywords (tómalos de `$('Loop Over Items')` y `$('Leer respuesta')`: tras los nodos anteriores, `$json` ya no los trae), para tener registro de lo generado.
 
 ## El cuerpo JSON del nodo Gemini
 ```json
@@ -91,6 +91,7 @@ return $input.all().map(item => {
 - **Fotos de personas**: pide en el prompt que no describa etnia, edad ni estado de ánimo si no quieres problemas de sesgo; describe la escena y el producto.
 - **Límite de peticiones de Gemini**: si te devuelve error 429, añade en el nodo HTTP Settings > Batching una petición cada 4000 ms y Retry On Fail.
 - **Imágenes muy grandes**: por encima de unos 15-20 MB en base64 fallará. Descarga la versión `medium_large` de WordPress en vez del original (`{{ $json.media_details.sizes.large.source_url }}`).
+- **Texto de la IA en la terminal**: una imagen puede llevar escrito algo que la IA copie al alt, como `$(id)` o comillas; si llegara a exiftool se ejecutaría. Por eso «Limpiar para IPTC» deja solo letras, números y puntuación básica, y la copia local se llama por el ID numérico de WordPress.
 - **Textos duplicados**: si todas las fotos son del mismo producto, añade al prompt el nombre del producto desde WordPress para que varíe el enfoque.
 
 ## Cuánto cuesta

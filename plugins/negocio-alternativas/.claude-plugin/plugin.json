@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-negocio-alternativas",
+  "version": "1.0.0",
+  "description": "Negocio · Alternativas: 7 subagentes, 6 comandos /, 3 skills en español que se parecen a otras piezas de negocio; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "negocio",
+    "arsenal-del-marketer",
+    "alternativas"
+  ]
+}

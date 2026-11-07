@@ -42,16 +42,16 @@ Una cuenta gratuita en GoCardless Bank Account Data (antes Nordigen): te registr
 Haber vinculado tu cuenta bancaria una vez desde su panel: eso te devuelve un `account_id` (lo copias, es el que usarás en el flujo). El acceso caduca a los 90 días y hay que renovar el consentimiento.
 Una hoja de Google Sheets llamada `Suscripciones` con las columnas: `fecha`, `concepto`, `importe`, `estado`.
 Un bot de Telegram: hablas con @BotFather, `/newbot`, te da un token; y tu `chat_id` lo sacas escribiendo al bot y abriendo `https://api.telegram.org/bot<TOKEN>/getUpdates`.
-n8n instalado (Docker en tu ordenador o servidor, o el plan gratuito de n8n Cloud).
+n8n instalado (Docker en tu ordenador o servidor, o n8n Cloud, de pago tras la prueba gratuita temporal).
 
 ## Los nodos, en orden
 **1. Schedule Trigger** — Modo `Days`, cada 1 día, hora 07:00. Ojo: en Settings del flujo pon la zona horaria `Europe/Madrid`.
-**2. HTTP Request** (nómbralo `Token`) — Método `POST`, URL `https://bankaccountdata.gocardless.com/api/v2/token/new/`, Body Content Type `JSON`, body: `{"secret_id": "TU_SECRET_ID", "secret_key": "TU_SECRET_KEY"}`. Devuelve un campo `access`.
+**2. HTTP Request** (nómbralo `Token`) — Método `POST`, URL `https://bankaccountdata.gocardless.com/api/v2/token/new/`, en Authentication elige `Generic Credential Type` > `Custom Auth` y crea una credencial «GoCardless» cuyo JSON sea `{"body": {"secret_id": "TU_SECRET_ID", "secret_key": "TU_SECRET_KEY"}}` (los valores reales van solo en esa credencial, nunca escritos en el nodo; un flujo exportado se llevaría la clave si estuviera dentro). Devuelve un campo `access`.
 **3. HTTP Request** (nómbralo `Movimientos`) — Método `GET`, URL `https://bankaccountdata.gocardless.com/api/v2/accounts/TU_ACCOUNT_ID/transactions/`. En Headers añade `Authorization` con valor `=Bearer {{ $json.access }}`. En Query Parameters añade `date_from` con valor `={{ $now.minus(400, 'days').toFormat('yyyy-MM-dd') }}`.
 **4. Code** (nómbralo `Detectar recurrentes`) — Modo `Run Once for All Items`. Código abajo.
 **5. Google Sheets** — Operación `Append`, documento `Suscripciones`, hoja `Hoja 1`, mapeo manual de `fecha`, `concepto`, `importe`, `estado`.
 **6. IF** — Condición: `{{ $json.estado }}` `is not equal to` `igual`. Rama true sigue al aviso.
-**7. Telegram** — Operación `Send Message`, chat ID el tuyo, texto: `={{ $json.estado === 'nueva' ? '🆕 Suscripción nueva' : '⚠️ Ha subido' }}: {{ $json.concepto }} — {{ $json.importe }} € (antes {{ $json.anterior }} €)`.
+**7. Telegram** — Operación `Send Message`, con la credencial «Telegram API» (ahí va el token del bot), chat ID el tuyo, texto: `={{ $json.estado === 'nueva' ? '🆕 Suscripción nueva' : '⚠️ Ha subido' }}: {{ $json.concepto }} — {{ $json.importe }} € (antes {{ $json.anterior }} €)`.
 
 ## El código del nodo Code
 ```javascript
@@ -92,6 +92,7 @@ Cuando el listado te cuadre, activa el flujo con el interruptor de arriba a la d
 ## Qué puede salir mal
 El consentimiento bancario caduca a los 90 días: el nodo `Movimientos` empieza a dar error 401. Solución: renueva el enlace desde el panel de GoCardless y pon un recordatorio trimestral.
 Conceptos con números variables (referencias de factura) rompen la agrupación: por eso el código quita dígitos. Si aun así se te duplica un proveedor, baja el `slice(0, 25)` a 15.
+Claves: no pegues `secret_id`, `secret_key` ni el token del bot dentro de un nodo; si compartes o exportas el flujo, irían con él.
 Límite de la API: 4 llamadas por cuenta y día en el plan gratuito. Con una ejecución diaria vas sobrado; no lo pongas cada hora.
 Avisos repetidos del mismo cargo: si te molesta, añade un nodo Google Sheets `Get Rows` antes del Telegram y filtra los conceptos ya avisados este mes.
 

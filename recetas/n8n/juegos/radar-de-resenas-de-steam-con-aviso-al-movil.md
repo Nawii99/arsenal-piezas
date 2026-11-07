@@ -34,7 +34,7 @@ Sustituye la revisión manual diaria (unos 20-30 min/día) y te permite reaccion
 Cada hora consulta la API pública de reseñas de Steam de tu juego, guarda las nuevas en una Google Sheet y te manda un mensaje de Telegram con las negativas. Es para el desarrollador o el community manager de un juego ya publicado que necesita reaccionar rápido a quejas repetidas.
 
 ## Lo que necesitas antes
-- Cuenta de n8n (nube gratuita o auto-alojado con Docker).
+- Cuenta de n8n (auto-alojado con Docker, gratis; n8n Cloud solo tiene prueba gratuita temporal y luego es de pago).
 - El **AppID** de tu juego: es el número que aparece en la URL de tu ficha de Steam, `store.steampowered.com/app/**1234560**/`. No hace falta clave de API: el endpoint de reseñas es público.
 - Cuenta de Google para Sheets: en n8n, Credentials > Google Sheets OAuth2, y autorizas con tu cuenta.
 - Un bot de Telegram: escribe a `@BotFather`, comando `/newbot`, te da un token. Luego escribe algo a tu bot y abre `https://api.telegram.org/bot<TOKEN>/getUpdates` para sacar tu `chat_id`.
@@ -86,4 +86,4 @@ return salida;
 - La API de reseñas de Steam: **gratis** y sin clave.
 - Telegram: **gratis**.
 - Google Sheets: **gratis** con cuenta personal.
-- n8n: gratis si lo auto-alojas (un VPS de 5 €/mes te sobra) o con el plan gratuito de prueba de n8n Cloud; su plan de pago empieza sobre 20-24 €/mes si prefieres no mantener servidor. Con una ejecución por hora son ~720 ejecuciones al mes.
+- n8n: gratis si lo auto-alojas (un VPS de 5 €/mes te sobra) o con la prueba gratuita temporal de n8n Cloud; su plan de pago empieza sobre 20-24 €/mes si prefieres no mantener servidor. Con una ejecución por hora son ~720 ejecuciones al mes.

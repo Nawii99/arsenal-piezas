@@ -1,6 +1,6 @@
 ---
 description: Calculates a product's selling price starting from its real costs, VAT, the payment gateway fee, shipping cost, and return rate, and shows the margin that actually remains in each scenario.
-argument-hint: [product] [cost] [price you had in mind]
+argument-hint: "[product] [cost] [price you had in mind]"
 ---
 
 Calculate the selling price of: $ARGUMENTS

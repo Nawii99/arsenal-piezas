@@ -39,14 +39,15 @@ Escucha cada pago cobrado (Stripe, o una fila nueva en tu hoja de facturas) y se
 Para autónomos y micro-SL en estimación directa que cobran de forma irregular.
 
 **Lo que necesitas antes**
-- Cuenta de Stripe (si cobras por tarjeta) y su clave secreta en Dashboard > Desarrolladores > Claves API. Si no usas Stripe, sustituye el disparador por un **Google Sheets Trigger** sobre tu hoja de facturas.
-- Google Sheets con la hoja `Hucha` (columnas: fecha, concepto, base, iva, irpf_estimado, trimestre).
+- Cuenta de Stripe (si cobras por tarjeta) y la credencial de Stripe API de n8n (la clave va solo ahí, nunca escrita en un nodo ni en un Code: un flujo exportado se llevaría la clave). Si no usas Stripe, sustituye el disparador por un **Google Sheets Trigger** sobre tu hoja de facturas.
+- Google Sheets con la hoja `Hucha` (columnas: fecha, concepto, base, iva, irpf_estimado, trimestre, id_cobro).
 - Gmail conectado.
 - Decidir tu porcentaje de provisión de IRPF: si no lo sabes, aparta un 15 % del beneficio estimado.
 
 **Los nodos, en orden**
 1. **Stripe Trigger** — evento `charge.succeeded`. Alternativa sin Stripe: **Google Sheets Trigger** con «Row Added» sobre tu hoja `Facturas`.
-2. **Code** — desglosa base, IVA e IRPF a partir del importe total cobrado (código abajo).
+1b. **Google Sheets** (renombra a `Cobros ya anotados`) — Get Row(s) de `Hucha`, con Always Output Data. El Stripe Trigger ya verifica la firma del webhook; el Code siguiente comprueba que el cobro está pagado y que su id no está ya en `id_cobro`, porque Stripe puede enviar el mismo evento dos veces. Para que dos cobros simultáneos no lean la hoja a la vez y se pisen, deja el workflow ejecutándose de uno en uno (en n8n, cola o sub-flujo con concurrencia 1) y vuelve a comprobar el id justo antes del Append.
+2. **Code** — comprueba pago y duplicado, y desglosa base, IVA e IRPF a partir del importe total cobrado (código abajo).
 3. **Google Sheets** — «Append» a `Hucha`.
 4. **Google Sheets** (Leer trimestre) — lee toda la hoja `Hucha`.
 5. **Code** (Acumular) — filtra por el trimestre en curso y suma la columna `iva` y la `irpf_estimado`.
@@ -56,7 +57,13 @@ Para autónomos y micro-SL en estimación directa que cobran de forma irregular.
 
 **El trozo de código (nodo Code)**
 ```javascript
-const totalCobrado = Number($json.amount ? $json.amount / 100 : $json.importe);
+let o;
+try { o = $('Stripe Trigger').first().json.data.object; } catch (e) { o = $json; }
+const idCobro = String(o.id || '');
+const yaAnotado = $('Cobros ya anotados').all().some(i => idCobro && i.json.id_cobro === idCobro);
+const pagado = !o.status || o.status === 'succeeded' || o.paid === true;
+if (yaAnotado || !pagado) return [];
+const totalCobrado = Number(o.amount ? o.amount / 100 : o.importe);
 const tipoIVA = 0.21;
 const pctIRPF = 0.15;
 const base = totalCobrado / (1 + tipoIVA);
@@ -66,7 +73,8 @@ const d = new Date();
 const trimestre = `${d.getFullYear()}-T${Math.floor(d.getMonth() / 3) + 1}`;
 return [{ json: {
   fecha: d.toISOString().slice(0, 10),
-  concepto: $json.description || $json.concepto || 'Cobro',
+  id_cobro: idCobro,
+  concepto: o.description || o.concepto || 'Cobro',
   total: totalCobrado.toFixed(2),
   base: base.toFixed(2),
   iva: iva.toFixed(2),
@@ -78,6 +86,7 @@ return [{ json: {
 
 **Cómo probarla**
 - En Stripe activa el modo test y haz un pago de 121 € con la tarjeta 4242 4242 4242 4242. En la hoja debe aparecer base 100, IVA 21, IRPF 15.
+- Reenvía el mismo evento desde el panel de Stripe y comprueba que no se anota dos veces.
 - Comprueba el trimestre calculado: un cobro de abril debe salir como `T2`.
 - Ejecuta a mano el workflow del día 15 cambiando el Schedule Trigger por «Execute Workflow».
 

@@ -49,7 +49,7 @@ Si detecta trabajos zombis los devuelve a "pendiente" para que se reintenten, y 
 4. **Code** (nombre: Evaluar) — junta las dos fuentes y decide qué acciones hay que tomar.
 5. **IF** (nombre: ¿Hay zombis?) — `={{ $json.zombis > 0 }}` is true.
 6. **Postgres** (nombre: Resucitar) — `UPDATE trabajos SET estado='pendiente', iniciado_en=NULL, intentos=intentos+1 WHERE estado='procesando' AND iniciado_en < now() - interval '20 minutes' AND intentos < 3;`
-7. **IF** (nombre: ¿Servicio caído?) — `={{ $json.servicio_caido }}` is true.
+7. **IF** (nombre: ¿Servicio caído?) — `={{ $('Evaluar').item.json.servicio_caido }}` is true (tras el Postgres, `$json` ya no trae ese campo).
 8. **SSH** (nombre: Reiniciar) — Command: `sudo /bin/systemctl restart miworker && sleep 5 && systemctl is-active miworker`.
 9. **Wait** — Amount: 30, Unit: Seconds. Para dar tiempo a que arranque.
 10. **SSH** (nombre: Verificar) — Command: `systemctl is-active miworker`.
@@ -98,8 +98,9 @@ return [{ json: { zombis: Number(d.zombis||0), servicio_caido: servicioCaido, ha
 - **Resucitar trabajos que no deben resucitarse**: por eso está el `intentos < 3`. Si un trabajo cobra dinero o manda un correo, asegúrate de que es idempotente antes de reintentarlo.
 - **El umbral de 20 minutos**: ajústalo a tu trabajo más lento por 3. Si generar un informe tarda 15 minutos normalmente, 20 es muy poco.
 - **Permisos de sudo demasiado abiertos**: nunca des `NOPASSWD: ALL`. Solo los comandos exactos.
+- **El IF de servicio caído nunca salta**: detrás de «Resucitar» el `$json` es la respuesta de Postgres; por eso lee el dato de «Evaluar».
 - **Colas en Redis**: si usas BullMQ, sustituye la consulta por el nodo Redis con Operation: Info, y mira las claves `bull:cola:active` y `bull:cola:wait` con `LLEN`.
 
 ## Cuánto cuesta
 - Gratis entero. Solo pagas el VPS donde ya tienes n8n y tu aplicación.
-- Cada 10 minutos son 4.320 ejecuciones al mes: solo viable auto-alojado, no en el plan gratuito de n8n Cloud.
+- Cada 10 minutos son 4.320 ejecuciones al mes: solo viable auto-alojado, no en la prueba gratuita de n8n Cloud.

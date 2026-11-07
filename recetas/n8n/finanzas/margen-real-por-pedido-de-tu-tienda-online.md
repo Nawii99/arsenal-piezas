@@ -45,10 +45,10 @@ Para tiendas online pequeñas de producto físico o digital que ya venden pero n
 - Credenciales en n8n: **Shopify Access Token** (o **WooCommerce API**), **Google Sheets OAuth2**, **Telegram API**.
 
 ## Los nodos, en orden
-1. **Shopify Trigger** — Topic: `orders/create`. (Si usas WooCommerce: **Webhook** en n8n con Method `POST`, copias la URL de producción y la das de alta en WooCommerce > Ajustes > Avanzado > Webhooks, tema `Pedido creado`.)
+1. **Shopify Trigger** — Topic: `orders/create`. (Si usas WooCommerce: **Webhook** en n8n con Method `POST`, copias la URL de producción y la das de alta en WooCommerce > Ajustes > Avanzado > Webhooks, tema `Pedido creado`.) El Shopify Trigger verifica la firma por ti; con el Webhook de WooCommerce rellena el campo «Secreto» y verifica la cabecera `X-WC-Webhook-Signature` (HMAC-SHA256 del cuerpo, en base64) antes de fiarte del pedido.
 2. **Google Sheets** («Costes») — Operation: `Get Row(s)`, Sheet: `Costes`. Sin filtro, traemos toda la tabla de costes (si tienes más de 500 SKUs, filtra por lote o usa un nodo por SKU).
 3. **Code** («Calcular margen») — Mode: `Run Once for All Items`. Código abajo. Ajusta arriba las constantes de comisión y de coste de envío según tu transportista.
-4. **Google Sheets** («Guardar») — Operation: `Append Row`, Sheet: `Margenes`. Mapea todos los campos.
+4. **Google Sheets** («Guardar») — Operation: `Append or Update Row` (columna de coincidencia `pedido`, para no duplicar si el webhook llega dos veces), Sheet: `Margenes`. Mapea todos los campos.
 5. **IF** («¿Margen bajo?») — Condition `Number`, izquierda `{{ $json.margen_pct }}`, operación `smaller`, derecha `20`.
 6. **Telegram** («Alerta») — Chat ID: el tuyo. Text: `⚠️ Pedido {{ $json.pedido }} con margen de solo {{ $json.margen_pct }}% ({{ $json.margen }} €). Productos: {{ $json.productos }}`.
 
@@ -117,5 +117,5 @@ return salida;
 ## Cuánto cuesta
 - n8n auto-alojado y Google Sheets: gratis. Telegram: gratis.
 - Shopify y WooCommerce: sus APIs no cuestan extra sobre lo que ya pagas.
-- Si vendes más de 400-500 pedidos al mes, en n8n Cloud te quedarías corto de ejecuciones en el plan gratuito; con auto-alojado no hay límite.
+- Si vendes más de 400-500 pedidos al mes, n8n Cloud solo ofrece una prueba gratuita temporal y después planes de pago con un número limitado de ejecuciones; con n8n auto-alojado (gratis) no tienes ese límite.
 - En Make cada pedido consume 3-4 operaciones: con 250 pedidos al mes te pasas del plan gratuito (1.000 ops) y necesitarías el plan Core, unos 9 €/mes.

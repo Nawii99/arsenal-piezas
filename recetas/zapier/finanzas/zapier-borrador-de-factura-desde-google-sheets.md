@@ -60,6 +60,10 @@ Paso 2 · Action · Filter by Zapier · Only continue if
 - Primera condición: Listo, (Text) Exactly matches, Sí (con tilde, igual que en la hoja).
 - Segunda condición, con AND: Enlace borrador, (Text) Does not exist.
 - Así no se crea un segundo documento de la misma fila.
+Paso 2b · Action · Google Sheets · Lookup Spreadsheet Rows
+- Worksheet: la misma hoja. Lookup Column: Nº factura. Lookup Value: el Nº factura del Paso 1.
+- Añade un segundo Filter by Zapier: continúa solo si el lookup devuelve UNA sola fila (la propia). Si aparece más de una, el número ya existe: el Zap se detiene y revisas el número a mano.
+- El número de factura debe estar escrito (reservado) en la fila ANTES de marcar Listo y, desde luego, antes de que se envíe ningún correo: nunca se actualiza un contador después de enviar.
 Paso 3 · Action · Google Docs · Create Document from Template
 - Template: tu plantilla de factura.
 - Document Name: BORRADOR, el Nº factura y el cliente.
@@ -89,7 +93,7 @@ No envíes el documento al cliente desde el Zap. Lo revisas, lo conviertes en la
 No uses este Zap como sustituto de tu programa de facturación. Si la normativa te exige un programa o un formato concreto, pregunta a tu gestor antes de usar un documento suelto.
 No compartas la carpeta ni la hoja con enlace público. Contienen NIF y direcciones, que son datos personales.
 Zapier recibe esos datos para poder trabajar con ellos. Mira en su web su acuerdo de tratamiento de datos.
-No dejes que el Zap invente el número de factura. La numeración la controlas tú. Mira que no haya dos filas con el mismo número.
+No dejes que el Zap invente el número de factura. La numeración la controlas tú: si lo calculas como «último número + 1» leyendo la hoja, hazlo de una factura cada vez (no marques dos filas como Listo a la vez), reserva el número antes de enviar nada y comprueba que no existe ya, como hace el Paso 2b.
 QUÉ REVISAR A MANO ANTES DE ACTIVARLA
 Una persona (tú, o tu gestor) revisa los datos obligatorios, el tipo de IVA, las retenciones, la numeración y el concepto antes de emitir nada.
 Que las fórmulas de la hoja usan el tipo de IVA y la retención que te corresponden. Si dudas, pregunta a tu gestor.

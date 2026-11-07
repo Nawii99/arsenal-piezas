@@ -6,7 +6,7 @@ Avisa por Telegram cuando pasan 7 días sin respuesta a una candidatura registra
 
 ## Qué es y qué hace
 
-Flujo de n8n que lee una hoja de Google Sheets con las candidaturas enviadas y, si una lleva 7 días o más sin marcarse como Respondido, te manda un aviso a Telegram para hacer seguimiento. Entra la hoja con fecha de envío y estado, y sale un mensaje por cada candidatura vencida. Requiere cuenta de Google, un bot de Telegram y n8n; revisa el límite de ejecuciones del plan gratuito de n8n Cloud antes de usarlo a diario.
+Flujo de n8n que lee una hoja de Google Sheets con las candidaturas enviadas y, si una lleva 7 días o más sin marcarse como Respondido, te manda un aviso a Telegram para hacer seguimiento. Entra la hoja con fecha de envío y estado, y sale un mensaje por cada candidatura vencida. Requiere cuenta de Google, un bot de Telegram y n8n; revisa el límite de ejecuciones de tu plan de n8n Cloud (tiene prueba gratuita temporal y después es de pago) antes de usarlo a diario.
 
 ## Cómo usarla
 
@@ -38,7 +38,7 @@ Qué hace: cada vez que se revisa una hoja de Google Sheets con las candidaturas
 Cuentas necesarias:
 - Cuenta de Google, para Google Sheets. Gratis.
 - Cuenta de Telegram y un bot creado con @BotFather. Gratis.
-- Cuenta de n8n, self-hosted o n8n.cloud. El plan gratuito de n8n.cloud tiene un límite de ejecuciones, revisa el límite actual antes de depender de esto para el día a día.
+- Cuenta de n8n, self-hosted (Community Edition, gratis) o n8n.cloud (prueba gratuita temporal y después planes de pago; revisa el límite de ejecuciones de tu plan antes de depender de esto para el día a día).
 
 Nodos, en orden:
 1. Google Sheets Trigger: revisa la hoja de candidaturas cada [INTERVALO, POR EJEMPLO CADA HORA] y dispara el flujo si hay cambios.
@@ -54,4 +54,4 @@ Cómo probarla sin liarla:
 - Cambia el estado de esa fila de prueba a "Respondido" y vuelve a ejecutar a mano para comprobar que ya no te avisa.
 - Cuando funcione con la fila de prueba, bórrala de la hoja y activa el disparador automático.
 
-Riesgos y qué NO hacer: no compartas el token del bot de Telegram con nadie ni lo subas a un repositorio público. Si usas el plan gratuito de n8n.cloud, revisa el límite de ejecuciones: si lo superas, la automatización deja de avisarte sin que te enteres.
+Riesgos y qué NO hacer: no compartas el token del bot de Telegram con nadie ni lo subas a un repositorio público. Si usas n8n.cloud, revisa el límite de ejecuciones de tu plan: si lo superas, la automatización deja de avisarte sin que te enteres.

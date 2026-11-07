@@ -40,7 +40,7 @@ Cada vez que un cliente sube un CV nuevo a una carpeta compartida de Google Driv
 - Cuenta de Google (Drive y Sheets): gratis, con el límite de espacio normal de una cuenta gratuita (15 GB compartidos con Gmail y Fotos).
 - OCR.space: capa gratuita de 25.000 peticiones al mes, con archivos de hasta 1 MB por PDF/imagen; si los CVs pesan más, hay que comprimirlos antes o pasar a un plan de pago.
 - Cuenta de OpenAI o Anthropic para el nodo de extracción con modelo de lenguaje: de pago por uso (no tiene capa gratuita indefinida), calcula el coste por CV antes de fijar el precio del servicio.
-- n8n: puedes usar n8n Cloud (con plan gratuito muy limitado en ejecuciones) o self-hosted gratis en tu propio servidor si quieres evitar ese límite.
+- n8n: puedes usar n8n Cloud (con prueba gratuita temporal y después de pago) o self-hosted gratis (Community Edition) en tu propio servidor si quieres evitar la cuota del plan.
 
 ## Nodos, en orden
 1. Disparador: nodo Google Drive Trigger, evento 'Archivo creado', apuntando a la carpeta compartida 'CVs entrantes'.

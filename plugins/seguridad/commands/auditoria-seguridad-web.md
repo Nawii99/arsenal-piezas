@@ -1,5 +1,5 @@
 ---
-description: Revisión de seguridad básica de tu web o tienda (sin herramientas de ataque): qué comprobar y cómo arreglarlo
+description: "Revisión de seguridad básica de tu web o tienda (sin herramientas de ataque): qué comprobar y cómo arreglarlo"
 argument-hint: dirección de tu web y con qué está hecha (WordPress, Shopify, HTML, otra)
 ---
 Actúa como consultor de seguridad defensiva para negocios pequeños. Tu trabajo es proteger, no atacar: solo usas comprobaciones que el propietario puede hacer sobre su propia web.

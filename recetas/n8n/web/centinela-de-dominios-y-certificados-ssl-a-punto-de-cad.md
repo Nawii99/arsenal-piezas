@@ -38,7 +38,7 @@ Calcula los días que faltan y solo te escribe cuando quedan 30, 14, 7, 3 o 1 d�
 ## Lo que necesitas antes
 - Hoja de Google «Dominios» con columnas: dominio, cliente, registrador, notas. Una fila por dominio, sin `https://` ni `www.`.
 - Bot de Telegram y tu chat ID (con @BotFather).
-- n8n auto-alojado si quieres usar `openssl` (nodo Execute Command). Si estás en la nube, usa la variante con API que explico en el paso 5.
+- n8n auto-alojado si quieres usar `openssl` (nodo Execute Command). Si estás en la nube, usa la variante con API que explico en el paso 6.
 - Credencial Google Sheets OAuth2.
 
 ## Los nodos, en orden
@@ -46,12 +46,20 @@ Calcula los días que faltan y solo te escribe cuando quedan 30, 14, 7, 3 o 1 d�
 2. **Google Sheets** — Operation: Get Row(s); Document: «Dominios»; Sheet: `Hoja 1`.
 3. **Loop Over Items** — Batch Size: 1.
 4. **HTTP Request** (renómbralo «RDAP dominio») — GET `https://rdap.org/domain/{{ $json.dominio }}`; Options > Response > Never Error: activado; Timeout 15000; Settings: `On Error: Continue`.
-5. **Execute Command** (renómbralo «Fecha SSL») — Command: `echo | openssl s_client -connect {{ $('Loop Over Items').item.json.dominio }}:443 -servername {{ $('Loop Over Items').item.json.dominio }} 2>/dev/null | openssl x509 -noout -enddate`. En n8n Cloud sustitúyelo por un **HTTP Request** GET a `https://ssl-checker.io/api/v1/check/{{ $('Loop Over Items').item.json.dominio }}` y ajusta el campo en el código.
-6. **Code** (renómbralo «Calcular días») — ver código.
-7. **IF** — Boolean: `={{ $json.avisar }}` is true.
-8. **Telegram** (rama true) — Text: `={{ $json.mensaje }}`.
-9. **Google Sheets** (rama true, opcional) — Append Row a una pestaña `historial` para dejar registro.
-10. La salida vuelve al **Loop Over Items** para el siguiente dominio.
+5. **Code** (renómbralo «Validar dominio») — Mode: Run Once for Each Item. Para el flujo si el dominio de la hoja no es un nombre de dominio limpio. Ver código.
+6. **Execute Command** (renómbralo «Fecha SSL») — Command: `echo | openssl s_client -connect {{ $('Validar dominio').item.json.dominio }}:443 -servername {{ $('Validar dominio').item.json.dominio }} 2>/dev/null | openssl x509 -noout -enddate`. En n8n Cloud sustitúyelo por un **HTTP Request** GET a `https://ssl-checker.io/api/v1/check/{{ $('Loop Over Items').item.json.dominio }}` y ajusta el campo en el código.
+7. **Code** (renómbralo «Calcular días») — ver código.
+8. **IF** — Boolean: `={{ $json.avisar }}` is true.
+9. **Telegram** (rama true) — Text: `={{ $json.mensaje }}`.
+10. **Google Sheets** (rama true, opcional) — Append Row a una pestaña `historial` para dejar registro.
+11. La salida vuelve al **Loop Over Items** para el siguiente dominio.
+
+## El código de «Validar dominio»
+```js
+const d = String($('Loop Over Items').item.json.dominio || '');
+if (!/^(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z][a-z0-9-]{0,61}[a-z0-9]$/i.test(d)) throw new Error('Dominio no válido en la hoja: ' + d.slice(0, 80));
+return { json: { dominio: d } };
+```
 
 ## El código de «Calcular días»
 ```js
@@ -89,8 +97,10 @@ return [{ json: {
 - **Certificados Let's Encrypt**: se renuevan solos cada 60 días; si te avisa a 30 días es normal, pon el umbral en 10 para estos.
 - **Zona horaria**: las fechas RDAP vienen en UTC; con días enteros la diferencia no importa.
 - **Muchos dominios**: añade un nodo Wait de 2 segundos en el bucle para no saturar rdap.org.
+- **Una celda con algo que no es un dominio**: el dominio va dentro del comando `openssl`; por eso «Validar dominio» para el flujo si no son solo letras, números, guiones y puntos, y nadie puede colar órdenes desde la hoja.
+- **El comando lee el valor sin validar**: «Fecha SSL» toma el dominio de «Validar dominio», no de «Loop Over Items», para que solo entre en `openssl` el valor ya comprobado.
 
 ## Cuánto cuesta
 - RDAP: gratis y público.
 - openssl: gratis, ya está en tu servidor.
-- n8n, Sheets y Telegram: gratis. Una ejecución al día entra en cualquier plan.
+- n8n autoalojado (Community Edition), Sheets y Telegram: gratis. n8n Cloud solo tiene prueba gratuita temporal y después es de pago. Una ejecución al día entra en cualquier plan de pago.

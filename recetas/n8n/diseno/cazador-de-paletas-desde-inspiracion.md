@@ -76,4 +76,4 @@ return [{ json: fila }];
 
 **Cuánto cuesta**
 - Menos de 0,01 € por imagen con Claude Haiku o similar.
-- Drive, Sheets y n8n: gratis. Notion: plan gratuito suficiente.
+- Drive, Sheets y n8n autoalojado: gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago). Notion: plan gratuito suficiente.

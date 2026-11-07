@@ -1,6 +1,6 @@
 # arsenal-negocio-precios · Negocio · Precios y oferta
 
-Negocio · Precios y oferta: 10 subagentes, 4 skills, 1 comando / en español, del Arsenal del Marketer.
+Negocio · Precios y oferta: 6 subagentes, 6 skills, 5 comandos / en español, del Arsenal del Marketer.
 
 ## Instalar
 
@@ -13,20 +13,22 @@ Negocio · Precios y oferta: 10 subagentes, 4 skills, 1 comando / en español, d
 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
-| carta-menu | Comando / | Revisa la carta de tu restaurante, bar o tienda: qué destacar, reescribe nombres y descripciones, propone orden y diseño, textos para Google y redes, y reglas para mostrar precios. | `/carta-menu` |
-| choque-de-dominios | Skill | Cruza tu negocio o problema con un campo que no tiene nada que ver para sacar propiedades nuevas y convertirlas en ideas que se pueden probar barato. | se activa sola cuando hace falta |
-| prueba-de-compra-del-cliente | Skill | Revisa tu oferta poniéndose en el lugar de tu cliente objetivo y responde si pagaría hoy ese precio por esa solución. | se activa sola cuando hace falta |
-| prueba-de-extremos-negocio | Skill | Lleva un proceso, un precio o un servicio a escalas extremas (mucho menos y mucho más) para ver qué se rompe, qué sobra y qué depende de una sola persona. | se activa sola cuando hace falta |
-| tipos-cambio-facturas-tarifas | Skill | Consulta tipos de cambio en Fixer y los aplica a facturas, presupuestos y tarifas, anotando el tipo, la fecha y la fuente de cada cifra. | se activa sola cuando hace falta |
-| alianzas-que-suman | Subagente | Diseña una colaboración entre negocios en la que ganan los dos, con mensaje de contacto, prueba de 30 a 60 días y acuerdo de una página para revisar. | pídele a Claude «usa el subagente alianzas-que-suman» |
+| asiento-cmd-precio | Comando / | Calcula precio de venta restando hacia atrás: IVA, pasarela, envío, embalaje, devoluciones, enseña margen que queda de verdad. | `/asiento-cmd-precio` o `/arsenal-negocio-precios:asiento-cmd-precio` |
+| descuento-seguro | Comando / | Calcula hasta qué descuento puedes hacer sin perder dinero y cuánto más tendrías que vender para compensarlo, con la respuesta lista para el regateo. | `/descuento-seguro` o `/arsenal-negocio-precios:descuento-seguro` |
+| precio-servicio | Comando / | Calcula tu precio mínimo con la cuenta, el rango de mercado y el precio por valor. Te propone 3 niveles y cómo defenderlos cuando te digan que es caro. | `/precio-servicio` o `/arsenal-negocio-precios:precio-servicio` |
+| presupuesto-condiciones | Comando / | Convierte una descripción rápida de un trabajo en un presupuesto listo para enviar, con alcance cerrado, lo que no entra, forma de pago, validez y condiciones de cambios y cancelación. | `/presupuesto-condiciones` o `/arsenal-negocio-precios:presupuesto-condiciones` |
+| presupuesto-servicio-contable | Comando / | Genera un presupuesto por tramos para vender un servicio de llevanza contable y fiscal a un autónomo o pyme española, según su volumen de facturas y los modelos que necesita. | `/presupuesto-servicio-contable` o `/arsenal-negocio-precios:presupuesto-servicio-contable` |
+| calendario-precios-alquiler-turistico | Skill | Te prepara un calendario de precios noche a noche para una vivienda de alquiler de corta duración, con un precio mínimo calculado con tus costes y reglas de ajuste que aplicas tú. | se activa sola cuando hace falta |
+| cuentas-claras-margen-producto | Skill | Ordena ingresos, gastos y precios de tu tienda a partir de exportaciones (Stripe, banco, hoja de cálculo) y estima cuánto te queda por producto, antes de impuestos. | se activa sola cuando hace falta |
+| disenar-planes-de-suscripcion | Skill | Cuántos planes, qué llevan, precio: cuentas de suscriptores que hacen falta para cuadrar. | se activa sola cuando hace falta |
+| plan-precios-cobro-y-bajas | Skill | Diseña los precios, el cobro con Stripe y el plan contra las bajas de un producto o servicio de pago recurrente, partiendo de tus costes reales. | se activa sola cuando hace falta |
+| revisor-estudios-de-precio | Skill | Comprueba si un estudio de sensibilidad al precio es fiable, calcula el rango de precios que sostienen los datos y propone una prueba real antes de cambiar nada. | se activa sola cuando hace falta |
+| tarifas-y-canales-alojamientos | Skill | Analiza tus datos de ocupación y precios, propone cambios de tarifa por fechas según demanda y competencia, y compara cuánto te deja de verdad cada canal de venta. | se activa sola cuando hace falta |
 | calculadora-cambio-de-precio | Subagente | Calcula con tus números qué pasa con el beneficio si subes, bajas o reposicionas un precio, y cuántas ventas puedes perder antes de salir perdiendo. | pídele a Claude «usa el subagente calculadora-cambio-de-precio» |
-| desatascador-de-problemas-dificiles | Subagente | Toma un problema concreto en el que estás bloqueado, lo reformula, genera opciones con varios métodos creativos y te devuelve las tres mejores con una prueba barata para cada una. | pídele a Claude «usa el subagente desatascador-de-problemas-dificiles» |
-| entrenador-comunicacion-ensayos | Subagente | Prepara tu comunicación con ensayo escrito: revisa tus mensajes, escribe las réplicas y objeciones de la otra parte con huecos para que respondas, y te da comentarios y un plan de práctica. | pídele a Claude «usa el subagente entrenador-comunicacion-ensayos» |
-| fichas-de-venta-por-sector | Subagente | Prepara una ficha de venta por sector que traduce tu producto a los problemas, el lenguaje y los frenos de cada uno. | pídele a Claude «usa el subagente fichas-de-venta-por-sector» |
-| presupuesto-proyecto-con-cambios | Subagente | Convierte un briefing en un presupuesto con rango de horas, precio, fechas y supuestos, y lo actualiza con registro cuando el cliente cambia algo. | pídele a Claude «usa el subagente presupuesto-proyecto-con-cambios» |
-| programa-marca-blanca-socios | Subagente | Diseña un programa para que socios y distribuidores revendan tu producto con su propia marca: modelo, qué lleva marca, registro de licencias y puntos del contrato para llevar al abogado. | pídele a Claude «usa el subagente programa-marca-blanca-socios» |
+| plan-subida-de-precios | Subagente | Subagente que planifica una subida de precios: a quién, cuánto, cuándo, con qué carta y qué pasa si se te va parte de la cartera. | pídele a Claude «usa el subagente plan-subida-de-precios» |
 | radiografia-rentabilidad-catalogo | Subagente | Calcula cuánto deja cada producto o servicio de tu catálogo después de costes, comisiones y devoluciones, y propone qué subir, agrupar, vigilar o dejar de reponer. | pídele a Claude «usa el subagente radiografia-rentabilidad-catalogo» |
+| revisor-ingresos-precios-promos | Subagente | Analiza tus ventas, costes y descuentos para decir qué productos y clientes dejan beneficio real y qué pruebas de precio merecen la pena. | pídele a Claude «usa el subagente revisor-ingresos-precios-promos» |
 | revisor-precios-paquetes | Subagente | Precios revisados: mínimo sin perder dinero, paquetes, respuestas para negociar descuentos. | pídele a Claude «usa el subagente revisor-precios-paquetes» |
-| vigilante-peticiones-extra | Subagente | Compara lo que te piden con lo que se acordó, marca qué es un cambio de alcance, estima su impacto y redacta un borrador de respuesta que envías tú. | pídele a Claude «usa el subagente vigilante-peticiones-extra» |
+| revisor-precios-prueba-controlada | Subagente | Calcula cuánto ganas de verdad por venta en cada canal y tipo de cliente, y te propone una prueba pequeña de precios antes de cambiar nada. | pídele a Claude «usa el subagente revisor-precios-prueba-controlada» |
 
 Licencia: [CC BY 4.0](../../LICENSE). Cítanos si lo usas o lo compartes: «Arsenal del Marketer».

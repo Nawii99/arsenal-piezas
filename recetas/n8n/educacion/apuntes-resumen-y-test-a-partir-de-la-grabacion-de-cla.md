@@ -38,7 +38,7 @@ Vigila una carpeta de Drive, transcribe cada grabación nueva, y con esa transcr
 Es para profesores, formadores y creadores de cursos que ya graban pero no reaprovechan.
 
 ## Lo que necesitas antes
-n8n (mejor auto-alojado: los archivos de audio pesan y el plan gratuito de la nube tiene límites).
+n8n (mejor auto-alojado: los archivos de audio pesan, y n8n Cloud solo tiene una prueba gratuita temporal y después es de pago, con límites de ejecuciones y memoria).
 Carpeta en Drive «Grabaciones entrada» y otra «Material generado». Anota los dos IDs.
 Credencial Google OAuth2 con Drive, Docs y Gmail. Activa la API de Google Docs en tu proyecto de Google Cloud.
 API key de OpenAI (platform.openai.com) para Whisper y para el modelo de texto.
@@ -47,7 +47,7 @@ Recomendado: ffmpeg instalado en el servidor de n8n para extraer el audio del v�
 ## Los nodos, en orden
 **1. Google Drive Trigger**. Evento: «File Created» en la carpeta «Grabaciones entrada». Poll: cada 15 minutos.
 **2. Google Drive** «Descargar». Operación: «Download», File ID: `{{ $json.id }}`.
-**3. Execute Command** (opcional pero recomendable). Comando: `ffmpeg -i /tmp/entrada.mp4 -vn -ac 1 -ar 16000 -b:a 32k /tmp/salida.mp3-y`. Antes escribe el binario a disco con un nodo **Read/Write Files from Disk**. Esto convierte una clase de 800 MB en un audio de 15 MB.
+**3. Execute Command** (opcional pero recomendable). Comando: `ffmpeg -y -i /tmp/entrada.mp4 -vn -ac 1 -ar 16000 -b:a 32k /tmp/salida.mp3`. Antes escribe el binario a disco con un nodo **Read/Write Files from Disk**. Esto convierte una clase de 800 MB en un audio de 15 MB.
 **4. Code** «Trocear si hace falta». Whisper acepta hasta 25 MB por petición. Si el audio es mayor, usa ffmpeg con `-f segment -segment_time 900` para partirlo en trozos de 15 minutos y luego un **Loop Over Items**.
 **5. OpenAI** «Transcribe a Recording». Resource: Audio, Operation: Transcribe. Model: `whisper-1`. Language: `es`. Input Data Field Name: `data`.
 **6. Aggregate**. Une los trozos de transcripción en un único campo `transcripcion` con `Concatenate`.

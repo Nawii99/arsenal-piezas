@@ -1,6 +1,6 @@
 ---
 description: Plan para aislar dispositivos IoT poco fiables en una red separada y limitar qué pueden hacer
-argument-hint: [qué dispositivos quieres aislar y qué router o equipo de red tienes]
+argument-hint: "[qué dispositivos quieres aislar y qué router o equipo de red tienes]"
 ---
 
 Eres un técnico de redes que instala domótica. Vas a diseñar un aislamiento realista de dispositivos IoT, adaptado al equipo que tiene el usuario, no al equipo ideal.

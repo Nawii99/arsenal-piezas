@@ -39,7 +39,7 @@ Si el procesado falla, el registro queda como `error` con el número de intentos
 - n8n (auto-alojado recomendado, porque el webhook tiene que estar siempre despierto).
 - Una base de datos PostgreSQL (la del propio n8n vale, o una gratis en Supabase o Neon).
 - La URL de webhook de producción que te dará n8n, para pegarla en el panel del proveedor (Stripe: Developers, Webhooks, Add endpoint).
-- El secreto de firma del proveedor (Stripe te da uno tipo whsec_...) para verificar que el webhook es auténtico.
+- El secreto de firma del proveedor (Stripe te da uno tipo whsec_...) para verificar que el webhook es auténtico. Guárdalo como variable de entorno de n8n (`STRIPE_WEBHOOK_SECRET`) y nunca escrito en el nodo Code: un flujo exportado se llevaría la clave. En n8n autoalojado el nodo Code necesita `NODE_FUNCTION_ALLOW_BUILTIN=crypto` y acceso permitido a las variables de entorno.
 - Un webhook entrante de Slack (api.slack.com, Incoming Webhooks) o un bot de Telegram.
 
 ## La tabla
@@ -80,7 +80,7 @@ CREATE INDEX idx_cola_pend ON webhooks_cola (estado, proximo_intento);
 ## El código del nodo "Verificar firma" (Stripe)
 ```javascript
 const crypto = require('crypto');
-const secreto = 'whsec_PON_AQUI_EL_TUYO';
+const secreto = $env.STRIPE_WEBHOOK_SECRET; // variable de entorno de n8n: no escribas aquí el whsec_...
 const cabecera = $json.headers['stripe-signature'] || '';
 const raw = $json.body.toString();
 const partes = Object.fromEntries(cabecera.split(',').map(p => p.split('=')));

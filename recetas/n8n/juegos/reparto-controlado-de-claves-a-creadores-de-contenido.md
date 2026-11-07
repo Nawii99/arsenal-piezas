@@ -45,7 +45,7 @@ Decide tus mínimos antes: por ejemplo 1.000 suscriptores y al menos un vídeo e
 ## Los nodos, en orden
 1) **n8n Form Trigger** — con los cuatro campos y un texto legal de que guardas los datos.
 2) **Code** — saca el identificador del canal a partir de la URL que ha pegado (soporta `/channel/UC...`, `/@usuario` y `/c/nombre`).
-3) **HTTP Request** — GET a `https://www.googleapis.com/youtube/v3/channels?part=statistics,snippet&id={{ $json.id }}&key=TU_CLAVE`. Si el usuario dio un `@handle`, usa `&forHandle={{ $json.handle }}` en vez de `id`.
+3) **HTTP Request** — GET a `https://www.googleapis.com/youtube/v3/channels?part=statistics,snippet&id={{ $json.id }}`, con Authentication: Generic > Query Auth con una credencial de n8n (Name `key`, Value tu clave). Si el usuario dio un `@handle`, usa `&forHandle={{ $json.handle }}` en vez de `id`. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 4) **IF** — condiciones combinadas: `{{ $json.items[0].statistics.subscriberCount }}` mayor que `1000`.
 5) Rama falsa: **Gmail** con un «gracias, esta vez no» amable y **Google Sheets** (`Append`) en `solicitudes` con veredicto `rechazada`.
 6) Rama verdadera: **Google Sheets** (`Get Row(s)`) en la pestaña `claves` filtrando `estado` igual a `libre`, con `Return All` desactivado y `Limit` a 1.

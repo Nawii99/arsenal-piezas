@@ -1,6 +1,6 @@
 ---
 name: envios-regulares-bigmailer
-description: Planifica newsletters y promociones periódicas de una marca en BigMailer: revisa la lista, la personalización y el ritmo de envío, lo deja en borrador y pide tu confirmación antes de cada tanda. Úsala cuando vayas a escribir a muchos contactos de forma repetida.
+description: "Planifica newsletters y promociones periódicas de una marca en BigMailer: revisa la lista, la personalización y el ritmo de envío, lo deja en borrador y pide tu confirmación antes de cada tanda. Úsala cuando vayas a escribir a muchos contactos de forma repetida."
 ---
 # Envíos regulares por marca en BigMailer
 ## Qué hace

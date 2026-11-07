@@ -49,8 +49,8 @@ Detecta un vídeo vertical nuevo en Drive junto a un archivo de texto con el mis
 5. **Extract From File** — Operation: `Text File`. Binary Property: `data`, Destination Key: `copy`.
 6. **Code** — Parte el texto en título, descripción y hashtags y arma la versión de cada red.
 7. **Google Drive2** — Operation: `Share` sobre el MP4, Role `reader`, Type `anyone`. Necesitas URL pública porque TikTok e Instagram descargan el vídeo ellos.
-8. **HTTP Request** (TikTok) — POST a `https://open.tiktokapis.com/v2/post/publish/video/init/`. Header `Authorization: Bearer TU_TOKEN`. Body JSON: `{"post_info":{"title":"{{ $json.tiktok }}","privacy_level":"SELF_ONLY"},"source_info":{"source":"PULL_FROM_URL","video_url":"{{ $json.url_publica }}"}}`. Empieza con `SELF_ONLY` (solo tú) hasta que confíes; luego cámbialo a `PUBLIC_TO_EVERYONE`.
-9. **HTTP Request1** (Instagram, crear contenedor) — POST a `https://graph.facebook.com/v21.0/{{ $json.ig_user_id }}/media` con query `media_type` = `REELS`, `video_url` = `{{ $json.url_publica }}`, `caption` = `{{ $json.instagram }}`, `access_token` = tu token.
+8. **HTTP Request** (TikTok) — POST a `https://open.tiktokapis.com/v2/post/publish/video/init/`. Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name «Authorization», Value «Bearer TU_TOKEN»); el nodo usa esa credencial. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Body JSON: `{"post_info":{"title":"{{ $json.tiktok }}","privacy_level":"SELF_ONLY"},"source_info":{"source":"PULL_FROM_URL","video_url":"{{ $json.url_publica }}"}}`. Empieza con `SELF_ONLY` (solo tú) hasta que confíes; luego cámbialo a `PUBLIC_TO_EVERYONE`.
+9. **HTTP Request1** (Instagram, crear contenedor) — POST a `https://graph.facebook.com/v21.0/{{ $json.ig_user_id }}/media` con query `media_type` = `REELS`, `video_url` = `{{ $json.url_publica }}`, `caption` = `{{ $json.instagram }}`. El token de Instagram va en una credencial de n8n Query Auth (Name `access_token`, Value tu token de larga duración), no escrito en el nodo. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 10. **Wait** — 60 segundos. Instagram necesita procesar el vídeo antes de publicarlo.
 11. **HTTP Request2** (Instagram, publicar) — POST a `https://graph.facebook.com/v21.0/{{ ig_user_id }}/media_publish` con `creation_id` = `{{ $('HTTP Request1').item.json.id }}`.
 12. **Google Drive3** — `Download` del MP4 para tenerlo como binario.
@@ -90,4 +90,4 @@ return { json: {
 - **Vídeo público olvidado en Drive**: el paso 14 quita el permiso, no lo elimines.
 
 ## Cuánto cuesta
-Gratis: las tres APIs no cobran por publicar. n8n y Drive, también. Si mueves los vídeos a Cloudflare R2, su capa gratuita cubre 10 GB. El único gasto realista es pasar a n8n de pago si superas las ejecuciones.
+Gratis: las tres APIs no cobran por publicar. Drive, también, y n8n si lo autoalojas (Community Edition). Si mueves los vídeos a Cloudflare R2, su capa gratuita cubre 10 GB. El único gasto realista sería usar n8n Cloud (prueba gratuita temporal y después planes de pago) en vez de autoalojar.

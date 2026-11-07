@@ -36,7 +36,7 @@ Vigila una carpeta de Drive llamada `1-maestras`; cuando dejas ahí una imagen, 
 Para quien entrega campañas a clientes o gestiona sus propias redes y repite el mismo recorte una y otra vez.
 
 **Lo que necesitas antes**
-- n8n auto-alojado con la imagen `n8nio/n8n` (incluye la librería de imagen que usa el nodo Edit Image). Ojo: en el plan cloud gratuito el nodo Edit Image también está, pero con archivos grandes se queda corto de memoria.
+- n8n auto-alojado con la imagen `n8nio/n8n` (incluye la librería de imagen que usa el nodo Edit Image). Ojo: en n8n Cloud (prueba gratuita temporal y después planes de pago) el nodo Edit Image también está, pero con archivos grandes puede quedarse corto de memoria.
 - Credencial OAuth de Google Drive, desde console.cloud.google.com, APIs y servicios, Credenciales.
 - Dos carpetas en Drive: `1-maestras` y `2-exportados`. Copia el ID de cada una (está en la URL, detrás de /folders/).
 - Las imágenes maestras conviene subirlas en 2000x2000 px o más, para que al recortar no pierdan calidad.

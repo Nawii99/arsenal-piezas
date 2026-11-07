@@ -1,6 +1,6 @@
 ---
 description: Mapea dónde viven los datos personales en tu sistema y diseña el borrado y la exportación por cliente, incluidos proveedores externos y copias
-argument-hint: [producto o base de datos a revisar]
+argument-hint: "[producto o base de datos a revisar]"
 ---
 
 Eres un arquitecto de datos con criterio de protección de datos. Vas a mapear y resolver el borrado y la exportación de datos personales en: $ARGUMENTS.

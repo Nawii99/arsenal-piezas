@@ -44,12 +44,12 @@ Lista de correo: una hoja «Suscriptores» con columna email, o tu cuenta de Bre
 
 ## Los nodos, en orden
 **GitHub Trigger** — Repository el tuyo, Events: `release`. (Si prefieres, un **Schedule Trigger** que consulte `/releases/latest` cada hora también vale.)
-**HTTP Request** — GET a `https://api.github.com/repos/USUARIO/REPO/tags` con Header Auth `Bearer TU_TOKEN`, para saber cuál era la etiqueta anterior.
+**HTTP Request** — GET a `https://api.github.com/repos/USUARIO/REPO/tags` con una credencial «Header Auth» de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`; no pegues el token en el nodo: un flujo exportado se llevaría la clave), para saber cuál era la etiqueta anterior.
 **Code** — coge la etiqueta anterior a la actual de la lista.
 **HTTP Request** — GET a `https://api.github.com/repos/USUARIO/REPO/compare/{{$json.anterior}}...{{$json.actual}}`.
 **Code** — clasifica los commits y redacta la nota (código abajo).
 **Discord** — Resource: Message, Operation: Send, conexión por Webhook, Content: `{{$json.discord}}`. Ojo: Discord corta a 2.000 caracteres, el Code ya lo recorta.
-**HTTP Request** — POST a `https://TU-INSTANCIA/api/v1/statuses` con Header Auth `Bearer TOKEN`, Body JSON: `{"status": "{{$json.social}}"}`.
+**HTTP Request** — POST a `https://TU-INSTANCIA/api/v1/statuses` con una credencial «Header Auth» de n8n (Name `Authorization`, Value `Bearer TOKEN`), Body JSON: `{"status": "{{$json.social}}"}`.
 **Google Sheets** — Get Row(s) de «Suscriptores», Return All.
 **Gmail** — Send, To: `{{$json.email}}`, Subject: `NOMBRE DEL JUEGO {{$json.version}} ya está aquí`, Message: `{{$json.email_html}}`, Options → Email Type: HTML. Antes de este nodo pon un **Split In Batches** de 20 y un **Wait** de 5 segundos.
 **Google Sheets** — Append Row en «Notas de parche» con la versión y el texto plano, listo para pegar en Steam.

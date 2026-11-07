@@ -36,7 +36,7 @@ Recorre una lista de URLs tuyas, pide a Google la puntuación de rendimiento en 
 Si alguna página baja de 70 puntos o empeora más de 10 puntos respecto a la semana anterior, te llega un correo con la lista de páginas afectadas y qué métrica se ha estropeado.
 
 ## Lo que necesitas antes
-- Clave de API de PageSpeed: entra en `console.cloud.google.com`, crea un proyecto, ve a «APIs y servicios > Biblioteca», activa «PageSpeed Insights API», y en «Credenciales > Crear credenciales > Clave de API» copia la clave. Es gratis.
+- Clave de API de PageSpeed: entra en `console.cloud.google.com`, crea un proyecto, ve a «APIs y servicios > Biblioteca», activa «PageSpeed Insights API», y en «Credenciales > Crear credenciales > Clave de API» copia la clave (la guardarás solo en una credencial de n8n). Es gratis.
 - Hoja de Google llamada «Velocidad web» con dos pestañas: `urls` (columna `url`) y `medidas` (columnas: fecha, url, score, lcp, cls, inp).
 - En la pestaña `urls` mete entre 5 y 15 páginas: portada, categoría principal, ficha de producto, artículo top, página de contacto.
 - Credencial Google Sheets OAuth2 en n8n y una credencial Gmail OAuth2 (o usa el nodo Send Email con tu SMTP).
@@ -45,7 +45,7 @@ Si alguna página baja de 70 puntos o empeora más de 10 puntos respecto a la se
 1. **Schedule Trigger** — Weeks, Trigger on Weekdays: Monday, Hour: 7, Minute: 0.
 2. **Google Sheets** (renómbralo «Leer URLs») — Operation: Get Row(s); Document: «Velocidad web»; Sheet: `urls`.
 3. **Split In Batches** (en n8n nuevo se llama **Loop Over Items**) — Batch Size: 1. La salida «loop» va al paso 4; la salida «done» va al paso 8.
-4. **HTTP Request** (renómbralo «PageSpeed») — Method: GET; URL: `https://www.googleapis.com/pagespeedonline/v5/runPagespeed`; Send Query Parameters: activado, con `url` = `={{ $json.url }}`, `strategy` = `mobile`, `category` = `performance`, `key` = TU_CLAVE. Options: Timeout 120000 ms; Settings del nodo: `On Error: Continue`, `Retry On Fail`: 2 intentos, `Wait Between Tries`: 5000.
+4. **HTTP Request** (renómbralo «PageSpeed») — Method: GET; URL: `https://www.googleapis.com/pagespeedonline/v5/runPagespeed`; Send Query Parameters: activado, con `url` = `={{ $json.url }}`, `strategy` = `mobile`, `category` = `performance`. Authentication: Generic Credential Type > Query Auth con una credencial (Name `key`, Value tu clave de API); no escribas la clave en el nodo, porque un flujo exportado se llevaría la clave. Options: Timeout 120000 ms; Settings del nodo: `On Error: Continue`, `Retry On Fail`: 2 intentos, `Wait Between Tries`: 5000.
 5. **Code** (renómbralo «Extraer métricas») — ver código abajo.
 6. **Google Sheets** (renómbralo «Guardar») — Operation: Append Row; Sheet: `medidas`; mapeo manual de fecha, url, score, lcp, cls, inp.
 7. **Wait** — Amount: 8, Unit: Seconds. Su salida vuelve al nodo Loop Over Items (paso 3).
@@ -91,4 +91,4 @@ return [{ json: { total: malas.length, html: `<p>Páginas lentas esta semana:</p
 ## Cuánto cuesta
 - API de PageSpeed: gratis, sin tarjeta.
 - Google Sheets y Gmail: gratis.
-- n8n: entra de sobra en el plan gratuito (unas 60 ejecuciones al mes).
+- n8n: gratis si lo auto-alojas (Community Edition); n8n Cloud solo tiene una prueba gratuita temporal y después es de pago. Son unas 60 ejecuciones al mes.

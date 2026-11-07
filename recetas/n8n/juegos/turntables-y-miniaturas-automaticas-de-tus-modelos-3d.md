@@ -44,15 +44,26 @@ Para artistas que venden en Sketchfab, CGTrader o ArtStation y para estudios que
 1. **Google Drive Trigger** — Evento «File Created», carpeta «entrada_modelos», comprobación cada minuto.
 2. **IF** — `{{ $json.name.toLowerCase() }}` termina en `.fbx`, `.obj` o `.glb`. Si no, se descarta.
 3. **Google Drive** («Download File») — Descarga el modelo.
-4. **Read/Write Files from Disk** («Write») — Lo deja en `/data/modelos/{{ $json.name }}`.
-5. **Execute Command** — Lanza Blender con el script Python de abajo pasándole la ruta del modelo.
-6. **Read/Write Files from Disk** («Read») — Lee el JSON de estadísticas que ha escrito el script.
-7. **Google Drive** («Create Folder») — Crea `catalogo/{{ nombre_modelo }}`.
-8. **Loop Over Items** + **Google Drive** («Upload File») — Sube los 4 PNG y el MP4 uno por uno.
-9. **Google Sheets** («Append Row») — Añade fila: nombre, poligonos, vertices, materiales, alto_cm, ancho_cm, fondo_cm, enlace_carpeta, fecha.
+4. **Code** (renómbralo «Nombre seguro») — Mode: Run Once for Each Item. Comprueba la extensión contra la lista permitida y el ID de Drive, y prepara el nombre interno `ID_de_Drive.extensión`. Ver código abajo.
+5. **Read/Write Files from Disk** («Write») — Lo deja en `/data/modelos/{{ $('Nombre seguro').item.json.archivo }}`. En disco el archivo se llama con su ID de Drive, no con el nombre que trae.
+6. **Execute Command** — Lanza Blender con el script Python de abajo pasándole la ruta interna: `blender -b /data/estudio.blend -P /data/scripts/fichar.py -- "/data/modelos/{{ $('Nombre seguro').item.json.archivo }}"`.
+7. **Read/Write Files from Disk** («Read») — Lee el JSON de estadísticas que ha escrito el script: `/data/salida/{{ $('Nombre seguro').item.json.id }}.json`.
+8. **Google Drive** («Create Folder») — Crea `catalogo/{{ $('Nombre seguro').item.json.nombre_modelo }}`. El nombre original solo se usa aquí, en Drive y en la hoja.
+9. **Loop Over Items** + **Google Drive** («Upload File») — Sube uno por uno los 4 PNG y el MP4 de `/data/salida` que empiezan por `{{ $('Nombre seguro').item.json.id }}_`.
+10. **Google Sheets** («Append Row») — Añade fila: nombre (`{{ $('Nombre seguro').item.json.nombre_modelo }}`), poligonos, vertices, materiales, alto_cm, ancho_cm, fondo_cm, enlace_carpeta, fecha.
+
+## El código de «Nombre seguro»
+```js
+const f = $('Google Drive Trigger').item.json;
+const nombre = String(f.name || '');
+const ext = (nombre.toLowerCase().match(/\.(fbx|obj|glb)$/) || [])[1];
+if (!ext) throw new Error('Formato no admitido: ' + nombre.slice(0, 80));
+if (!/^[A-Za-z0-9_-]+$/.test(String(f.id || ''))) throw new Error('ID de Drive inesperado');
+return { json: { id: f.id, archivo: `${f.id}.${ext}`, nombre_modelo: nombre.replace(/\.[^.]+$/, '') }, binary: $input.item.binary };
+```
 
 ## El script de Blender
-Guárdalo como `/data/scripts/fichar.py` y llámalo con: `blender -b /data/estudio.blend -P /data/scripts/fichar.py -- /data/modelos/silla.fbx`
+Guárdalo como `/data/scripts/fichar.py` y llámalo con: `blender -b /data/estudio.blend -P /data/scripts/fichar.py -- /data/modelos/ID_DE_DRIVE.fbx` (en el flujo, la ruta del paso 6). Como el archivo se llama con el ID, los PNG y el JSON salen como `ID_frente.png` e `ID.json`.
 ```python
 import bpy, sys, json, os, math
 ruta = sys.argv[sys.argv.index('--') + 1]
@@ -90,6 +101,7 @@ open(f'/data/salida/{nombre}.json', 'w').write(json.dumps(stats))
 - **Escenas que no se limpian**: si no reinicias entre modelos, se acumulan objetos. Al ejecutar Blender siempre desde `estudio.blend` en modo `-b` cada ejecución arranca limpia.
 - **Modelos gigantes**: un .fbx de 500 MB puede tumbar la memoria. Añade un IF que descarte archivos de más de 200 MB y te avise.
 - **El Drive Trigger dispara antes de tiempo**: con archivos grandes, Drive avisa cuando la subida aún no ha terminado. Mete un nodo **Wait** de 30 segundos antes de descargar.
+- **Nombres de archivo con trampa**: un modelo llamado `x$(id).fbx` o con comillas ejecutaría órdenes si su nombre entrase en la ruta o en el comando; por eso en disco y en Blender solo va el ID de Drive con la extensión validada, y el nombre original solo va a la carpeta de Drive y a la hoja.
 - **Turntable**: para el MP4, añade en el script una animación de 90 fotogramas rotando el pivote y renderiza con `-a`; ocupa más tiempo, así que hazlo solo para los modelos que vayas a publicar.
 
 ## Cuánto cuesta

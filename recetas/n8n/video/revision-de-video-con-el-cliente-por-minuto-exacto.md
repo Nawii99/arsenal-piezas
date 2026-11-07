@@ -99,4 +99,4 @@ return [{ json: {
 - **Cliente pesado**: pon un límite mental (por ejemplo dos rondas) y refléjalo en el presupuesto; el sistema no negocia por ti.
 
 ## Cuánto cuesta
-Gratis: el Form Trigger viene incluido en n8n, Trello tiene plan gratuito de sobra para esto, Sheets y Gmail también. Si usas n8n Cloud, cada envío del formulario cuenta como una ejecución.
+Gratis: el Form Trigger viene incluido en n8n, Trello tiene plan gratuito de sobra para esto, Sheets y Gmail también. Si usas n8n Cloud, cada envío del formulario cuenta como una ejecución; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago (lo gratis es n8n autoalojado).

@@ -96,4 +96,4 @@ return [{ json: { fijos, ventasMes, cobertura, diaCobertura, proyeccion, semafor
 - Costes fijos olvidados: mete también tu propio sueldo. Si no te lo pagas, no es un negocio, es un hobby.
 
 **Cuánto cuesta**
-Gratis. Ocho ejecuciones al mes: entra hasta en el plan gratuito de n8n Cloud.
+Gratis con n8n auto-alojado. Ocho ejecuciones al mes: consumo mínimo incluso en n8n Cloud (prueba gratuita temporal y después de pago).

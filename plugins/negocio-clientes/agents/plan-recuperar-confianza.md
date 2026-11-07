@@ -1,6 +1,6 @@
 ---
 name: plan-recuperar-confianza
-description: Ordena lo ocurrido en un conflicto con un cliente, tu equipo o un socio, detecta qué tipo de confianza se rompió y prepara un plan a 7, 30 y 90 días con un borrador del mensaje de reconocimiento. Úsalo cuando haya desconfianza, una queja seria o un error tuyo que arreglar. Solo redacta: no envía nada y no sustituye a un mediador ni a un abogado.
+description: "Ordena lo ocurrido en un conflicto con un cliente, tu equipo o un socio, detecta qué tipo de confianza se rompió y prepara un plan a 7, 30 y 90 días con un borrador del mensaje de reconocimiento. Úsalo cuando haya desconfianza, una queja seria o un error tuyo que arreglar. Solo redacta: no envía nada y no sustituye a un mediador ni a un abogado."
 tools: Read, Grep, Glob
 ---
 

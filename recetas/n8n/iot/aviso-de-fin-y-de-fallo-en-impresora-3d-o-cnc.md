@@ -42,7 +42,7 @@ Vigila el estado de la máquina cada 2 minutos y te manda a Telegram una foto de
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — cada **2** minutos.
-2. **HTTP Request** — GET a `http://IP-OCTOPRINT/api/job`. En *Options > Headers* añade `X-Api-Key` con tu clave.
+2. **HTTP Request** — GET a `http://IP-OCTOPRINT/api/job`. En *Options > Headers* añade `X-Api-Key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `X-Api-Key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría).
 3. **Code** — detecta el cambio de estado (que es la clave: no queremos avisar 30 veces del mismo estado):
 ```js
 const j = $json;

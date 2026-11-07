@@ -43,10 +43,10 @@ Consulta cada tres horas las reproducciones de tus reels de los últimos siete d
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Cron `0 9,12,15,18,21 * * *`, cinco veces al día, Europe/Madrid.
-2. **HTTP Request** («Últimos reels») — GET `https://graph.facebook.com/v21.0/{IG_ID}/media` con `fields=id,caption,media_product_type,permalink,timestamp` y `access_token=TU_TOKEN`, `limit=25`.
+2. **HTTP Request** («Últimos reels») — GET `https://graph.facebook.com/v21.0/{IG_ID}/media` con `fields=id,caption,media_product_type,permalink,timestamp` y `limit=25`; el token va en Authentication: Generic > Query Auth con una credencial de n8n (Name `access_token`, Value tu token). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 3. **Code** («Solo reels de 7 días») — filtra por `media_product_type = REELS` y fecha.
 4. **Split In Batches** — Batch Size 1.
-5. **HTTP Request** («Insights») — GET `https://graph.facebook.com/v21.0/{{ $json.mediaId }}/insights` con `metric=plays,reach,likes,comments,shares,saved` y el token. Activa Continue On Fail.
+5. **HTTP Request** («Insights») — GET `https://graph.facebook.com/v21.0/{{ $json.mediaId }}/insights` con `metric=plays,reach,likes,comments,shares,saved` y la misma credencial Query Auth. Activa Continue On Fail.
 6. **Code** («Calcular ritmo y media») — reproducciones por hora de vida y comparación con la media.
 7. **IF** — `{{ $json.despega }}` is true.
 8. **Google Sheets** — Append or Update sobre «Reels», clave `mediaId`.

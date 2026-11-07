@@ -6,7 +6,7 @@ Mide cada día la velocidad real de tus páginas con la API de PageSpeed de Goog
 
 ## Qué es y qué hace
 
-Flujo de n8n que cada madrugada pide a la API de PageSpeed Insights la puntuación y las métricas Core Web Vitals de una lista de URLs. Guarda los resultados en una hoja, los compara con la media de los últimos siete días y envía un aviso por Telegram con la URL, la métrica y la caída cuando supera un umbral. Funciona en n8n auto-alojado o en la nube.
+Flujo de n8n que cada madrugada pide a la API de PageSpeed Insights la puntuación y las métricas Core Web Vitals de una lista de URLs. Guarda los resultados en una hoja, los compara con la media de los últimos siete días y envía un aviso por Telegram con la URL, la métrica y la caída cuando supera un umbral. Funciona en n8n auto-alojado o en n8n Cloud (de pago tras la prueba).
 
 ## Cómo usarla
 
@@ -36,9 +36,9 @@ Cada madrugada pide a Google la puntuación de rendimiento y las métricas Core 
 Para quien desarrolla y mantiene webs de clientes y necesita una prueba objetiva de que la web va bien, o de que dejó de ir bien justo cuando el cliente tocó algo.
 
 ## Lo que necesitas antes
-- Cuenta de n8n (gratis, auto-alojada o plan gratuito de la nube).
+- Cuenta de n8n (gratis si la auto-alojas con la Community Edition; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).
 - Clave de la API de PageSpeed Insights: entra en console.cloud.google.com, crea un proyecto, ve a «APIs y servicios» → «Biblioteca», activa «PageSpeed Insights API», y luego en «Credenciales» → «Crear credenciales» → «Clave de API». Es gratuita, con 25.000 consultas al día.
-- Un bot de Telegram: escribe a @BotFather, comando `/newbot`, te da un token. Luego escribe algo a tu bot y abre `https://api.telegram.org/bot<TOKEN>/getUpdates` para ver tu `chat_id`.
+- Un bot de Telegram: escribe a @BotFather, comando `/newbot`, te da un token. Luego escribe algo a tu bot y consulta `getUpdates` de la API de Telegram desde tu navegador o con curl en tu ordenador para ver tu `chat_id` (es la única vez que el token va en una URL; no la pegues en ningún nodo). El token se guarda solo en una credencial «Telegram API» de n8n.
 - Una hoja de Google Sheets «Velocidad web» con columnas: fecha, url, dispositivo, puntuacion, lcp_ms, cls, inp_ms.
 
 ## Los nodos, en orden
@@ -46,7 +46,7 @@ Para quien desarrolla y mantiene webs de clientes y necesita una prueba objetiva
 2. **Set** («URLs a medir») — campo `urls` tipo Array, por ejemplo `["https://tudominio.es","https://tudominio.es/tienda","https://tudominio.es/contacto"]`.
 3. **Item Lists** (Split Out, campo `urls`).
 4. **Split In Batches** — Batch Size 1: la API de PageSpeed tarda entre 10 y 30 segundos por URL y no conviene paralelizar.
-5. **HTTP Request** — GET a `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={{ encodeURIComponent($json.urls) }}&strategy=mobile&category=performance&key=TU_CLAVE`. En Settings sube el «Timeout» a 60000 ms y activa «Retry On Fail» (2 intentos, 5000 ms).
+5. **HTTP Request** — GET a `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url={{ encodeURIComponent($json.urls) }}&strategy=mobile&category=performance`, con Authentication: Generic > Query Auth con una credencial de n8n (Name `key`, Value tu clave). En Settings sube el «Timeout» a 60000 ms y activa «Retry On Fail» (2 intentos, 5000 ms). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 6. **Code** («Extraer métricas») — te quedas solo con lo que importa.
 ```javascript
 const salida = [];
@@ -83,7 +83,7 @@ for (const fila of hoy) {
 return avisos;
 ```
 10. **IF** — condición «Number of items» mayor que 0, o directamente deja que el Code no devuelva nada y el flujo se pare solo.
-11. **Telegram** — Operation: Send Message, Chat ID el tuyo, Text `{{ $json.texto }}`.
+11. **Telegram** — Credencial «Telegram API» (el token no se escribe en el nodo). Operation: Send Message, Chat ID el tuyo, Text `{{ $json.texto }}`.
 
 ## Cómo probarla
 Lanza el workflow a mano con una sola URL. Para forzar una alerta, edita en la hoja unas cuantas puntuaciones antiguas subiéndolas a 95 y vuelve a ejecutar: debe llegarte el mensaje. Comprueba también una URL con `strategy=desktop` para ver la diferencia.
@@ -95,4 +95,4 @@ Lanza el workflow a mano con una sola URL. Para forzar una alerta, edita en la h
 - **Ejecuciones largas**: con 20 URLs el flujo puede tardar 10 minutos; en n8n Cloud eso cuenta como una sola ejecución, no pasa nada, pero sube el timeout general del workflow en Settings.
 
 ## Cuánto cuesta
-Cero euros. La API de PageSpeed es gratuita hasta 25.000 consultas diarias, Telegram es gratis, Google Sheets también. El único gasto posible es el alojamiento de n8n si no lo tienes ya.
+Cero euros. La API de PageSpeed es gratuita hasta 25.000 consultas diarias, Telegram es gratis, Google Sheets también. El único gasto posible es el alojamiento de n8n si no lo tienes ya (o un plan de pago de n8n Cloud si prefieres no alojarlo).

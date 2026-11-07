@@ -50,7 +50,7 @@ Para quien promociona su app fuera de internet (carteles, packaging, ferias) o c
 6. **Google Sheets** — `Update Row` con el `slug`, el enlace corto y la URL del QR.
 
 ## Los nodos, en orden — flujo 2: el redirector
-1. **Webhook** — método GET, ruta `ir`, `Response Mode: Using Respond to Webhook`.
+1. **Webhook** — método GET, ruta `ir`, `Response Mode: Using Respond to Webhook`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Google Sheets** — `Get Row(s)` de `Enlaces` filtrando `slug` igual a `{{ $json.query.s }}`.
 3. **Code** («Elegir destino») — mira el User-Agent y decide adónde mandarlo.
 4. **Google Sheets** — `Append` en `Clics` (ponlo con `Always Output Data` para que no bloquee la respuesta).

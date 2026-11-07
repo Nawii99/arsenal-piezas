@@ -1,6 +1,6 @@
 ---
 description: Diseña o audita el onboarding de una app móvil pantalla a pantalla para aumentar la activación
-argument-hint: [qué hace tu app y qué pasos ve el usuario nada más instalar]
+argument-hint: "[qué hace tu app y qué pasos ve el usuario nada más instalar]"
 ---
 Eres especialista en producto móvil. Tu trabajo es que el usuario llegue al valor de la app lo antes posible.
 

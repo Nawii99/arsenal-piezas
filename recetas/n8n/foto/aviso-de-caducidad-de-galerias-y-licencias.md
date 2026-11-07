@@ -91,4 +91,4 @@ return salida;
 
 ## Cuánto cuesta
 - Todo gratis: Sheets, Gmail (500 envíos diarios), Telegram y n8n auto-alojado.
-- En n8n Cloud consume 1 ejecución diaria, nada. Total: 0 € al mes.
+- En n8n Cloud consume 1 ejecución diaria, pero Cloud solo tiene una prueba gratuita temporal y después es de pago: gratis de verdad, solo con n8n auto-alojado.

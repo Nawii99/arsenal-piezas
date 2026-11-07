@@ -39,7 +39,7 @@ Para el freelance o la agencia que mantiene varias webs y quiere un canal único
 - Personal Access Token de GitHub con permiso de escritura en `Issues` de los repos implicados.
 - Cuenta de Gmail conectada en n8n (credencial OAuth2 de Google: console.cloud.google.com > APIs > Gmail API > pantalla de consentimiento > credenciales OAuth de aplicación web, con la Redirect URL que te muestra n8n).
 ## Los nodos, en orden
-1) **Webhook**: POST, path `soporte`, Respond `Immediately`. Copia la URL.
+1) **Webhook**: POST, path `soporte`, Respond `Immediately`. Copia la URL. Protégelo: configura un *Secret* en el webhook de GitHub, valida la cabecera `X-Hub-Signature-256` en un nodo Code con ese secreto leído de una variable de entorno y descarta entregas repetidas por `X-GitHub-Delivery`.
 2) En Tally: Integrations > Webhooks > pega la URL. Envía un formulario de prueba para que n8n vea la estructura.
 3) **Code**: aplana la respuesta de Tally (llega como array de campos) y decide repo y etiqueta.
 ```javascript

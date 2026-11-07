@@ -43,7 +43,7 @@ Para el freelance que mantiene varias webs de clientes y necesita un chequeo per
 ## Los nodos, en orden
 **1. Schedule Trigger** — `Weeks`, lunes, hora 8. Timezone `Europe/Madrid` en Settings del workflow.
 **2. Code** («Repos a revisar») — un item por repo con `repo` y `ruta` del fichero.
-**3. HTTP Request** («Bajar lockfile») — `GET` `https://api.github.com/repos/{{ $json.repo }}/contents/{{ $json.ruta }}`, headers `Authorization: Bearer TU_TOKEN`, `Accept: application/vnd.github.raw`, `User-Agent: n8n`. Options > Response Format `Text`.
+**3. HTTP Request** («Bajar lockfile») — `GET` `https://api.github.com/repos/{{ $json.repo }}/contents/{{ $json.ruta }}`, con Authentication: Generic > Header Auth con una credencial de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`), headers `Accept: application/vnd.github.raw`, `User-Agent: n8n`. Options > Response Format `Text`. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 **4. Code** («Extraer paquetes») — saca nombre y versión de cada dependencia.
 **5. Split In Batches** — Batch Size `100`. La API de OSV acepta lotes.
 **6. HTTP Request** («Consultar OSV») — `POST` `https://api.osv.dev/v1/querybatch`, Body Content Type `JSON`, Specify Body `Using JSON`, con `={{ JSON.stringify({queries: $json.queries}) }}`.

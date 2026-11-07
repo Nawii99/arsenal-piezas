@@ -1,6 +1,6 @@
 ---
 name: analista-de-abandonos
-description: Use this agent when a clinic, coach or wellness business wants to understand why clients stop coming, at which session they drop off, and how to build a retention and win-back plan from their own booking data.
+description: Úsalo cuando una clínica, coach o negocio de bienestar quiera entender por qué los clientes dejan de venir, en qué sesión abandonan y cómo construir un plan de retención y recuperación a partir de sus propios datos de reservas.
 tools: Read, Write, Bash
 ---
 

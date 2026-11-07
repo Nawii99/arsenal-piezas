@@ -36,8 +36,8 @@ Recorre una lista de URLs tuyas, comprueba código de respuesta y tiempo de carg
 
 ## Lo que necesitas antes
 - Un bot de Telegram: escribe a **@BotFather** en Telegram, `/newbot`, elige nombre y te da un token tipo `123456:AAF...`.
-- Tu chat ID: escribe algo a tu bot y abre `https://api.telegram.org/bot<TU_TOKEN>/getUpdates`; el número de `chat.id` es el tuyo.
-- En n8n: Credentials → New → «Telegram API» y pega el token.
+- Tu chat ID: escribe algo a tu bot, añade un nodo **Telegram Trigger** temporal con tu credencial y lee `message.chat.id` (o escribe a @userinfobot). No pongas el token en ninguna URL.
+- En n8n: Credentials → New → «Telegram API» y pega el token ahí (nunca en un nodo: un flujo exportado se llevaría la clave).
 - Una hoja de Google Sheets «Monitor» con columnas: nombre, url, metodo, texto_esperado, fallos_seguidos, estado. Rellena una fila por servicio, con `fallos_seguidos` a 0 y `estado` a `OK`.
 
 ## Los nodos, en orden
@@ -87,4 +87,4 @@ return { json: {
 - **Certificado caducado**: HTTP Request dará error de TLS, no un código. El campo `codigo` saldrá 0 y se contará como fallo, que es lo que quieres.
 
 ## Cuánto cuesta
-Todo gratis: n8n auto-alojado 0 €, Telegram 0 €, Sheets 0 €. En n8n Cloud, 288 ejecuciones al día se comen el plan gratuito, así que aquí el auto-alojado gana claramente.
+Todo gratis: n8n auto-alojado 0 €, Telegram 0 €, Sheets 0 €. En n8n Cloud (prueba gratuita temporal y después planes de pago con cupo de ejecuciones), 288 ejecuciones al día se comen buena parte del cupo, así que aquí el auto-alojado gana claramente.

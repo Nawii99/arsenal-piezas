@@ -42,7 +42,7 @@ Llama a la API de PageSpeed Insights para tus URLs importantes, guarda la nota y
 ## Los nodos, en orden
 1. **Schedule Trigger** — Days, Day of Week: Monday, Hour: 5.
 2. **Code** (nombre: «URLs»). `return ['https://tudominio.es/','https://tudominio.es/producto/estrella','https://tudominio.es/contacto'].map(u => ({ json: { url: u } }));`
-3. **HTTP Request** — GET `=https://www.googleapis.com/pagespeedonline/v5/runPagespeed`. En Options > Query Parameters añade: `url` = `={{ $json.url }}`, `strategy` = `mobile`, `category` = `performance`, `key` = tu clave. Timeout: 120000 (tarda de verdad). Never Error: on. En Settings del nodo activa Retry On Fail: 3 intentos, Wait Between Tries 5000 ms.
+3. **HTTP Request** — GET `=https://www.googleapis.com/pagespeedonline/v5/runPagespeed`. En Options > Query Parameters añade: `url` = `={{ $json.url }}`, `strategy` = `mobile`, `category` = `performance`. La clave no va en los parámetros: Authentication > Generic Credential Type > Query Auth, con una credencial de n8n (Name `key`, Value tu clave), para que un flujo exportado no se la lleve. Timeout: 120000 (tarda de verdad). Never Error: on. En Settings del nodo activa Retry On Fail: 3 intentos, Wait Between Tries 5000 ms.
 4. **Code** (nombre: «Extraer métricas»). Run Once for Each Item.
 ```js
 const lr = $json.lighthouseResult || {};

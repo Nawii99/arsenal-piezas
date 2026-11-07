@@ -38,7 +38,7 @@ Cuando un alumno entrega un examen o ejercicio por un formulario online, este fl
 
 ## Cuentas que hacen falta
 - Cuenta de Google (Gmail y Google Sheets, gratis)
-- Cuenta de n8n (self-hosted gratis; n8n Cloud tiene un plan gratuito limitado a un número de ejecuciones al mes, revisa el límite actual antes de usarlo con muchos alumnos)
+- Cuenta de n8n (self-hosted gratis; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago, revisa los planes actuales antes de usarlo con muchos alumnos)
 - Cuenta en Anthropic o OpenAI con clave de API (de pago por uso, revisa el precio por token antes de lanzarlo a muchos alumnos, no hay plan gratuito ilimitado)
 
 ## Nodos, en orden

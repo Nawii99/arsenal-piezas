@@ -11,7 +11,7 @@ Recibe webhooks de proveedores como Stripe o Shopify, responde al instante, veri
 ## Cómo usarla
 
 1. Pon n8n con HTTPS delante de tu backend
-2. Copia el secreto whsec de Stripe a n8n
+2. Guarda el secreto whsec de Stripe como variable de entorno de n8n (no en el nodo)
 3. Crea la hoja Cola webhooks
 4. Simula un fallo del backend para comprobar los reintentos
 
@@ -36,7 +36,7 @@ Hace de buzón: acepta el webhook en menos de un segundo, responde 200 al provee
 
 ## Lo que necesitas antes
 - n8n accesible desde internet con HTTPS (con un dominio y Caddy o Nginx delante, o n8n Cloud).
-- El secreto de firma del proveedor: en Stripe, Developers → Webhooks → tu endpoint → Signing secret (`whsec_...`). Guárdalo en n8n como variable de entorno o en un nodo **Set** fijo.
+- El secreto de firma del proveedor: en Stripe, Developers → Webhooks → tu endpoint → Signing secret (`whsec_...`). Guárdalo como variable de entorno de n8n (`STRIPE_WEBHOOK_SECRET`) y léelo con `$env.STRIPE_WEBHOOK_SECRET`; no lo pegues en el nodo Code ni en un nodo Set: un flujo exportado se llevaría la clave. Si tu n8n bloquea `$env` en los nodos, usa el nodo Stripe Trigger, que comprueba la firma con una credencial.
 - Una hoja «Cola webhooks» con columnas: id, recibido, evento, payload, intentos, estado, ultimo_error.
 - La URL interna de tu backend que procesa el evento.
 
@@ -45,7 +45,7 @@ Hace de buzón: acepta el webhook en menos de un segundo, responde 200 al provee
 2. **Code** (renómbralo «Validar firma») — Mode: Run Once for Each Item:
 ```javascript
 const crypto = require('crypto');
-const secreto = 'whsec_PON_AQUI_EL_TUYO';
+const secreto = $env.STRIPE_WEBHOOK_SECRET; // nunca escribas aquí el whsec_
 const cabeceras = $input.item.json.headers || {};
 const firma = cabeceras['stripe-signature'] || '';
 const bruto = $input.item.json.body ? $input.item.json.body.toString() : '';

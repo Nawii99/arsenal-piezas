@@ -87,4 +87,4 @@ return [{ json: { avisar: avisos.length > 0, diasSsl, diasDom, mensaje: avisos.j
 
 ## Cuánto cuesta
 - Gratis del todo. Dos peticiones al día a servicios públicos.
-- Cabe sin problema en el plan gratuito de n8n Cloud, Make o Zapier.
+- Cabe sin problema en n8n auto-alojado (Community Edition, gratis) o en los planes gratuitos de Make o Zapier. n8n Cloud solo tiene una prueba gratuita temporal y después es de pago.

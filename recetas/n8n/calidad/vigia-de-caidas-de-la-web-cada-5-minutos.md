@@ -36,10 +36,10 @@ Cada 5 minutos pide tu página como lo haría un visitante y mira si responde bi
 Si falla dos veces seguidas te manda un aviso a Telegram; cuando vuelve a funcionar, te manda el «ya está arreglado».
 
 ## Lo que necesitas antes
-- n8n funcionando (n8n.io plan gratuito, o auto-alojado en tu ordenador o en un VPS de 5 €/mes).
+- n8n funcionando, auto-alojado en tu ordenador o en un VPS de 5 €/mes (lo gratuito es el auto-alojado; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).
 - La URL exacta que quieres vigilar, por ejemplo `https://tunegocio.es` y también `https://tunegocio.es/tienda` si tienes tienda.
 - Una cuenta de Telegram y un bot: abre @BotFather en Telegram, escribe `/newbot`, ponle nombre y copia el token que te da.
-- Tu chat ID: escribe cualquier cosa a tu bot y abre en el navegador `https://api.telegram.org/bot<TU_TOKEN>/getUpdates`; el número que aparece en `chat.id` es el tuyo.
+- Tu chat ID: escribe cualquier cosa a tu bot y abre en el navegador `https://api.telegram.org/bot<TU_TOKEN>/getUpdates`; el número que aparece en `chat.id` es el tuyo. Ese token solo se usa en el navegador: en n8n va en la credencial de Telegram, nunca escrito en un nodo ni en una URL del flujo, porque un flujo exportado se llevaría la clave.
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — modo *Custom (Cron)*, expresión `*/5 * * * *`. Así se ejecuta cada 5 minutos.

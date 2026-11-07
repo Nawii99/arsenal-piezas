@@ -46,8 +46,8 @@ Si algo baja de 30, 14 o 3 días te manda un correo y un Telegram con la lista o
 1. **Schedule Trigger** — Cron: `0 8 * * 1`, Timezone Europe/Madrid.
 2. **Google Sheets** (nombre: Leer lista) — Operation: Get Row(s), documento Renovaciones, Return All activado.
 3. **Switch** — Mode: Rules sobre `={{ $json.tipo }}`: salida 0 `ssl`, salida 1 `dominio`, salida 2 `manual`.
-4. **HTTP Request** (rama ssl, nombre: TLS) — Method: GET, URL: `=https://ssl-checker.io/api/v1/check/{{ $json.dominio }}`. Alternativa auto-alojada sin API externa: nodo **Execute Command** con `echo | openssl s_client -servername {{ $json.dominio }} -connect {{ $json.dominio }}:443 2>/dev/null | openssl x509 -noout -enddate`.
-5. **HTTP Request** (rama dominio, nombre: WHOIS) — GET `=https://api.whoisjson.com/api/v1/whois?domain={{ $json.dominio }}`, Header: `Authorization: Token TU_API_KEY`.
+4. **HTTP Request** (rama ssl, nombre: TLS) — Method: GET, URL: `=https://ssl-checker.io/api/v1/check/{{ $json.dominio }}`. Alternativa auto-alojada sin API externa: nodo **Code** («Validar dominio», modo «Run Once for Each Item») que para el flujo si la celda no es un dominio limpio — `const d = String($json.dominio).trim().toLowerCase(); if (!/^(?=.{1,253}$)([a-z0-9]([a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$/.test(d)) throw new Error('Dominio no válido: ' + $json.dominio); return { json: { ...$json, dominio: d } };` — y detrás **Execute Command** con `echo | openssl s_client -servername {{ $('Validar dominio').item.json.dominio }} -connect {{ $('Validar dominio').item.json.dominio }}:443 2>/dev/null | openssl x509 -noout -enddate`.
+5. **HTTP Request** (rama dominio, nombre: WHOIS) — GET `=https://api.whoisjson.com/api/v1/whois?domain={{ $json.dominio }}`, con Authentication: Generic > Header Auth con una credencial de n8n (Name `Authorization`, Value `Token TU_API_KEY`). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 6. **Code** (nombre: Normalizar) — deja todo con la misma forma: dominio, tipo, fecha de caducidad y días restantes.
 7. **Merge** — Mode: Append, Number of Inputs: 3, para juntar las tres ramas.
 8. **Filter** — Condition: Number, `={{ $json.dias }}` smaller or equal 30.
@@ -56,13 +56,16 @@ Si algo baja de 30, 14 o 3 días te manda un correo y un Telegram con la lista o
 11. **Code** (nombre: Redactar) — monta el HTML del correo.
 12. **IF** (nombre: ¿Hay algo?) — `={{ $json.total > 0 }}` is true.
 13. **Gmail** — Operation: Send, To: tu correo, Subject: `=⚠️ {{ $json.total }} renovaciones pendientes`, Email Type: HTML, Message: `={{ $json.html }}`.
-14. **IF** (nombre: ¿Urgente?) — `={{ $json.urgentes > 0 }}` is true, y detrás **Telegram** con el resumen corto.
+14. **IF** (nombre: ¿Urgente?) — `={{ $('Redactar').item.json.urgentes > 0 }}` is true, y detrás **Telegram** con el resumen corto (`={{ $('Redactar').item.json.corto }}`). Va detrás del Gmail, cuya salida ya no trae esos campos.
 
 ## El código del nodo "Normalizar"
 ```javascript
 const salida = [];
-for (const item of $input.all()) {
-  const j = item.json;
+for (const [i, item] of $input.all().entries()) {
+  // Execute Command y HTTP Request no devuelven la fila: se recupera de «Leer lista»
+  let o = {};
+  try { o = $('Leer lista').itemMatching(i).json; } catch (e) {}
+  const j = { ...item.json, dominio: item.json.dominio || o.dominio, tipo: item.json.tipo || o.tipo, responsable: item.json.responsable || o.responsable };
   let fecha = null;
   if (j.result?.valid_till) fecha = j.result.valid_till;                 // ssl-checker
   else if (j.expires) fecha = j.expires;                                  // whoisjson
@@ -97,9 +100,12 @@ return [{ json: { total: filas.length, urgentes: urg.length, html: '<h3>Renovaci
 - **Los WHOIS de .es son tacaños**: muchos registros españoles no devuelven fecha de caducidad por privacidad. Para esos, apunta la renovación como tipo `manual`.
 - **Límite de la API de WHOIS**: si tienes 50 dominios y consultas semanalmente son 200 al mes, cabe de sobra en el plan gratuito. Si tienes más, pásalo a mensual para el tipo `dominio` y deja el TLS semanal.
 - **Certificados de Let's Encrypt**: caducan cada 90 días y se renuevan solos, así que a 30 días es normal verlos. Si a 14 días siguen ahí, ahí sí hay un problema real con certbot.
+- **Dominio con trampa en la hoja** (vía openssl): la celda va directa al comando; algo como `a.com; rm -rf ~` se ejecutaría. Por eso «Validar dominio» solo deja pasar letras, números, puntos y guiones.
+- **El Telegram urgente no salta nunca**: tras el Gmail, `$json` es la respuesta del envío; por eso «¿Urgente?» lee de «Redactar».
+- **Dominio vacío en el correo**: Execute Command y HTTP Request solo devuelven su respuesta; por eso «Normalizar» recupera dominio, tipo y responsable de «Leer lista».
 - **Zona horaria**: los días se calculan en UTC, con margen de un día. Es suficiente para avisos.
 
 ## Cuánto cuesta
-- n8n, Sheets, Gmail y Telegram: gratis.
+- n8n autoalojado, Sheets, Gmail y Telegram: gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).
 - API de WHOIS: gratis hasta 500-1.000 consultas al mes; a partir de ahí unos 10 dólares al mes.
 - Comprobación TLS: gratis y sin límites si usas el nodo Execute Command con openssl.

@@ -1,5 +1,5 @@
 ---
-name: candidatura-guiada
+name: candidatura-guiada-con-paradas-en
 description: Takes a job posting from start to finish in six stages with a stop at each one (screening, research, tailoring the résumé, writing the cover letter, preparing the application, and following up). It never sends anything for you.
 ---
 # Guided job application, with stops
@@ -8,7 +8,7 @@ Arguments received: $ARGUMENTS
 (This is the job posting, pasted, in a file, or as a link. Or the word "seguimiento" (follow-up) to review pending applications.)
 
 ## Where to save it
-Save this file as `.claude/commands/candidatura-guiada.md` in your job-search folder and type `/candidatura-guiada` followed by the job posting.
+Save this file as `.claude/commands/candidatura-guiada.md` in your job-search folder and type `/candidatura-guiada-con-paradas-en` followed by the job posting.
 
 ## What it does
 It chains all the work of a job application into a single command. It prepares the documents and hands them to you so you can review and send them yourself. Between one stage and the next it stops and waits for your "ok".
@@ -57,7 +57,7 @@ Do one stage, show the result, and wait for "ok" or changes.
 - The follow-up date is the submission date plus [WAITING DAYS] business days. Suggest 7 and let the person decide.
 
 ### 6. Follow up
-- It is launched with `/candidatura-guiada seguimiento`. Read the CSV and list the applications whose date has passed and that still have no reply.
+- It is launched with `/candidatura-guiada-con-paradas-en seguimiento`. Read the CSV and list the applications whose date has passed and that still have no reply.
 - For each one, draft a short, friendly message for the person to send. Only one reminder per application. If there is no reply after the reminder, suggest closing it.
 - If the person says they have already received a reply, update the status.
 

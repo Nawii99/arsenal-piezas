@@ -57,7 +57,7 @@ LO QUE TIENES QUE DISEÑARME
 8. Un presupuesto de material orientativo por puntos de medida, con opción económica y opción fiable, y qué diferencia hay de verdad entre las dos.
 
 RESTRICCIONES
-- No propongas soluciones que dependan solo de una app en la nube gratuita sin plan B: si el fabricante cierra el servicio, el negocio se queda ciego. Dilo.
+- No propongas soluciones que dependan solo de la aplicación o el servicio online de un fabricante, sin plan B: si el fabricante cierra el servicio, el negocio se queda ciego. Dilo.
 - No prometas que el sistema cumple una normativa concreta: puedes decir qué datos suele pedirse en un registro de temperaturas y recomendar que lo confirme con su asesor o con sanidad.
 - Nada de instalar sensores perforando cámaras frigoríficas: explica cómo pasar el cable por el desagüe o por la junta y qué NO se debe taladrar.
 - No sustituyas el termostato del equipo de frío: esto es vigilancia, no control.

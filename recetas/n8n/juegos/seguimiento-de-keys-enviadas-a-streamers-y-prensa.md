@@ -47,7 +47,7 @@ El nombre exacto de tu juego tal y como lo pondrían en un título, y una o dos 
 **Google Sheets** — Get Row(s) de «Keys enviadas», Return All.
 **Filter** — `{{$json.estado}}` distinto de `publicado` Y distinto de `revocada`.
 **Split In Batches** — Batch Size: 1 (para controlar la cuota de la API y poder esperar entre llamadas).
-**HTTP Request** — GET a `https://www.googleapis.com/youtube/v3/search` con Query Parameters: `key` = tu API key, `channelId` = `{{$json.canal_id}}`, `q` = `NOMBRE DE TU JUEGO`, `part` = `snippet`, `type` = `video`, `publishedAfter` = `{{ new Date($json.fecha_envio).toISOString() }}`, `maxResults` = `5`. En Settings activa «Always Output Data» y «Retry On Fail» con 3 intentos.
+**HTTP Request** — GET a `https://www.googleapis.com/youtube/v3/search` con Query Parameters: `key` desde una credencial de n8n (Generic Credential Type > Query Auth, Name `key`, Value tu api key; no la escribas en el nodo: un flujo exportado se la llevaría), `channelId` = `{{$json.canal_id}}`, `q` = `NOMBRE DE TU JUEGO`, `part` = `snippet`, `type` = `video`, `publishedAfter` = `{{ new Date($json.fecha_envio).toISOString() }}`, `maxResults` = `5`. En Settings activa «Always Output Data» y «Retry On Fail» con 3 intentos.
 **Code** — decide el estado y qué hacer (abajo).
 **Switch** — Mode: Rules sobre `{{$json.accion}}`: salida 1 `marcar`, salida 2 `recordar`, salida 3 `nada`.
 **Google Sheets** (salida 1) — Update Row: `estado` = publicado, `url_video`.

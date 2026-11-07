@@ -45,7 +45,7 @@ Para dueños de tiendas online, blogs con tráfico y agencias que mantienen webs
 1. **Schedule Trigger** — Cron `0 7 * * 1` (lunes a las 7:00), zona horaria `Europe/Madrid`.
 2. **Code** — devuelve la lista de URLs a medir y los dos dispositivos (código abajo, bloque 1).
 3. **Split In Batches** — Batch Size `1`. Importante: la API se enfada si le mandas todo de golpe.
-4. **HTTP Request** — Method `GET`, URL: `https://www.googleapis.com/pagespeedonline/v5/runPagespeed`. En *Query Parameters* añade: `url` = `={{ $json.url }}`, `strategy` = `={{ $json.dispositivo }}`, `category` = `performance`, `key` = tu clave. En *Options* pon `Timeout` = `120000` y activa `Retry On Fail` (3 intentos, 5 segundos de espera).
+4. **HTTP Request** — Method `GET`, URL: `https://www.googleapis.com/pagespeedonline/v5/runPagespeed`. En *Query Parameters* añade: `url` = `={{ $json.url }}`, `strategy` = `={{ $json.dispositivo }}`, `category` = `performance`. La clave no va en los parámetros: Authentication > Generic Credential Type > Query Auth, con una credencial de n8n (Name `key`, Value tu clave), para que un flujo exportado no se la lleve. En *Options* pon `Timeout` = `120000` y activa `Retry On Fail` (3 intentos, 5 segundos de espera).
 5. **Code** — extrae solo los números que importan (bloque 2).
 6. **Google Sheets** (operación *Append Row*) — hoja «Velocidad web», mapea las columnas.
 7. **Wait** — 2 segundos, y de ahí vuelve al **Split In Batches** para la siguiente URL.

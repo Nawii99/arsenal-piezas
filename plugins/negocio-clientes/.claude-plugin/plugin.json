@@ -1,7 +1,7 @@
 {
   "name": "arsenal-negocio-clientes",
   "version": "1.0.0",
-  "description": "Negocio · Clientes y atención: 3 subagentes, 3 skills en español, del Arsenal del Marketer.",
+  "description": "Negocio · Clientes y atención: 10 skills, 8 subagentes, 3 comandos / en español, del Arsenal del Marketer.",
   "author": {
     "name": "Arsenal del Marketer",
     "url": "https://github.com/Nawii99/arsenal-piezas"

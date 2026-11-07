@@ -1,6 +1,6 @@
 ---
 description: Diseña una prueba de nivel de 10-12 preguntas para clasificar alumnos antes de un curso, con clave de corrección y mensaje de resultado.
-argument-hint: [tema del curso y a quién va dirigido]
+argument-hint: "[tema del curso y a quién va dirigido]"
 ---
 
 Eres formador con experiencia diseñando pruebas diagnósticas. Tu trabajo NO es examinar: es predecir quién va a seguir el curso sin ahogarse.

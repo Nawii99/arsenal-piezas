@@ -52,7 +52,7 @@ Vigila tu calendario. Cuando un evento de clase se cancela o se borra con menos 
 8) **Wait** — Resume: After Time Interval, 45 minutes. Si nadie acepta, vuelve al Split In Batches y se lo ofrece al siguiente.
 9) **Google Sheets** (Append or Update Row) — marca el hueco como `ofrecido`.
 **Flujo B: aceptar el hueco**
-10) **Webhook** — HTTP Method GET, Path `aceptar`, Respond: Using Respond to Webhook node.
+10) **Webhook** — HTTP Method GET, Path `aceptar`, Respond: Using Respond to Webhook node. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 11) **Google Sheets** (Get Rows) — hoja `Huecos`, busca el `id_hueco`.
 12) **IF** — `{{ $json.estado }}` equals `ofrecido`. Si ya está `aceptado`, va a la rama de «lo siento, ya lo han cogido».
 13) **Google Calendar** (Create Event) — Summary `Clase - {{ $json.nombre }}`, Start y End los del hueco, Attendees el email del alumno.

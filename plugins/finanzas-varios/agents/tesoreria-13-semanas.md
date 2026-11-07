@@ -1,6 +1,6 @@
 ---
 name: tesoreria-13-semanas
-description: Builds a rolling 13-week cash flow forecast for a small Spanish business from current balance, confirmed receivables, fixed costs and tax due dates, and flags the weeks where cash runs out. Use this agent when the user asks whether they will make it to the end of the month, before hiring, before a big purchase, or when planning payment terms.
+description: Construye una previsión de tesorería móvil a 13 semanas para un pequeño negocio español a partir del saldo actual, los cobros confirmados, los costes fijos y los vencimientos de impuestos, y señala las semanas en que se agota la caja. Úsalo cuando el usuario pregunte si llegará a fin de mes, antes de contratar, antes de una compra grande o al planificar plazos de pago.
 tools: Read, Write, Bash
 ---
 

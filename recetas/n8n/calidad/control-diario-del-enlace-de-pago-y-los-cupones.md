@@ -102,5 +102,5 @@ return [{ json: {
 
 ## Cuánto cuesta
 - Stripe API: gratis, solo pagas comisión por cobro real.
-- n8n: 3-4 ejecuciones de nodo al día, entra de sobra en cualquier plan gratuito.
+- n8n: 3-4 ejecuciones de nodo al día, un consumo mínimo. Autoalojado (Community Edition) es gratis; n8n Cloud tiene una prueba gratuita temporal y después planes de pago.
 - En Make o Zapier son unas 5 operaciones al día, unas 150 al mes: cabe en el plan gratuito de Make.

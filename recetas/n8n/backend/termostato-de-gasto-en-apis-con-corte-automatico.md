@@ -39,7 +39,7 @@ Al 80% te avisa; al 100% llama a un endpoint de tu backend que enciende el «mod
 ## Lo que necesitas antes
 - Una hoja de Google Sheets llamada `presupuestos` con columnas: servicio, url_consulta, presupuesto_mes, avisado_80, cortado.
 - Las claves de lectura de cada proveedor. Ejemplos: Twilio usa autenticación básica con Account SID y Auth Token; Stripe, una clave restringida de solo lectura desde Desarrolladores > Claves de API > Crear clave restringida.
-- Un endpoint propio tipo `POST https://tuweb.com/admin/modo-ahorro` protegido con una cabecera secreta. Si no tienes backend, sustitúyelo por desactivar el flujo consumidor con la API de n8n.
+- Un endpoint propio tipo `POST https://tuweb.com/admin/modo-ahorro` protegido con una cabecera secreta (p. ej. `X-Admin-Key`) que en n8n va en una credencial Header Auth, nunca escrita en el nodo (un flujo exportado se llevaría la clave). Si no tienes backend, sustitúyelo por desactivar el flujo consumidor con la API de n8n.
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Hours, cada 1 hora.
@@ -48,9 +48,9 @@ Al 80% te avisa; al 100% llama a un endpoint de tu backend que enciende el «mod
 4. **HTTP Request** — GET a `={{ $json.url_consulta }}` con las credenciales del proveedor. Activa «Retry On Fail», 3 intentos.
 5. **Code** — normaliza la respuesta de cada proveedor a euros y calcula el porcentaje.
 6. **IF** — porcentaje mayor o igual a 100 y `cortado` distinto de «si».
-7. **HTTP Request** — POST a tu endpoint de modo ahorro.
-8. **Google Sheets** — Operation: Update Row, marca `cortado` = si.
-9. **Gmail** — aviso con el detalle. En la rama del 80% haz lo mismo pero solo avisando.
+7. **Google Sheets** — Operation: Update Row, marca `cortado` = `si` ANTES de llamar al endpoint (reservar el corte), y vuelve a leer la fila: solo sigue si ese cambio lo has hecho tú.
+8. **HTTP Request** — POST a tu endpoint de modo ahorro. Si falla, vuelve a dejar `cortado` vacío y avisa.
+9. **Gmail** — aviso con el detalle. En la rama del 80% haz lo mismo: marca `avisado_80` = `si` antes de enviar y solo avisa.
 
 ## El código del nodo Code
 ```js
@@ -73,6 +73,7 @@ return [{ json: { servicio: fila.servicio, gastado: gastado.toFixed(2), presupue
 - **Los proveedores dan el gasto con retraso** (hasta 24 horas en algunos). El termostato es una red de seguridad, no un contador exacto: pon el aviso al 70% si el retraso es grande.
 - **Cambio de mes.** Añade una rama en el Schedule que el día 1 a las 00:05 ponga `avisado_80` y `cortado` a vacío en todas las filas.
 - **Divisa.** Casi todos facturan en dólares. El 0,92 del código es un cambio aproximado: ajústalo o usa una API de tipos de cambio.
+- **Ejecuciones solapadas.** Si una ejecución tarda más de una hora, la siguiente empezaría con la fila aún sin marcar. Deja el flujo ejecutándose de uno en uno (concurrencia 1) y reserva la marca antes de actuar, como en los pasos 7 y 9.
 - **Cortar de más.** Que el modo ahorro degrade el servicio, no lo apague. Nunca cortes cobros ni envío de pedidos.
 
 ## Cuánto cuesta

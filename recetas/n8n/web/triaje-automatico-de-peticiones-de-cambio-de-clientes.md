@@ -38,14 +38,14 @@ Se crea la tarea con esos campos y se responde al cliente confirmando recepción
 ## Lo que necesitas antes
 - n8n.
 - Gmail conectado (credencial OAuth de Google) con una etiqueta `Soporte` a la que llegan las peticiones mediante un filtro.
-- Una base de datos en Notion llamada `Peticiones` con propiedades: `Título` (title), `Cliente` (select), `Tipo` (select: error, cambio, ampliación, duda), `Urgencia` (select: alta, media, baja), `En contrato` (checkbox), `Horas estimadas` (number), `Email` (text). Crea una integración en notion.so/my-integrations, copia el token y comparte la base con esa integración.
-- Una clave de API de Anthropic (console.anthropic.com) para el nodo de clasificación. Alternativamente, el nodo `Basic LLM Chain` con cualquier proveedor.
+- Una base de datos en Notion llamada `Peticiones` con propiedades: `Título` (title), `Cliente` (select), `Tipo` (select: error, cambio, ampliación, duda), `Urgencia` (select: alta, media, baja), `En contrato` (checkbox), `Horas estimadas` (number), `Email` (text). Crea una integración en notion.so/my-integrations, copia el token en la credencial Notion API de n8n (nunca en un nodo) y comparte la base con esa integración.
+- Una clave de API de Anthropic (console.anthropic.com) para el nodo de clasificación; guárdala solo en una credencial de n8n. Alternativamente, el nodo `Basic LLM Chain` con cualquier proveedor.
 - Una lista, en un nodo Set o en Sheets, de qué incluye tu contrato de mantenimiento.
 
 ## Los nodos, en orden
 1. **Gmail Trigger** — Poll cada 5 minutos, filtro `Label: Soporte`, opción `Simplify: off` para tener el cuerpo completo.
 2. **Code** — limpia el email: quita las firmas y el hilo anterior cortando por `El ... escribió:` y por `-- `.
-3. **HTTP Request (Claude)** — POST a `https://api.anthropic.com/v1/messages`, headers `x-api-key: TU_CLAVE`, `anthropic-version: 2023-06-01`, `content-type: application/json`. Body JSON con `model` (un modelo Claude actual), `max_tokens: 500` y el prompt de abajo. Activa `Retry On Fail`.
+3. **HTTP Request (Claude)** — POST a `https://api.anthropic.com/v1/messages`, Authentication: Generic Credential Type > Header Auth con una credencial (Name `x-api-key`, Value tu clave de Anthropic; nunca escrita en el nodo, porque un flujo exportado se llevaría la clave), y headers `anthropic-version: 2023-06-01`, `content-type: application/json`. Body JSON con `model` (un modelo Claude actual), `max_tokens: 500` y el prompt de abajo. Activa `Retry On Fail`.
 4. **Code** — extrae el JSON de la respuesta con seguridad (código abajo).
 5. **Notion** — `Create Database Page` en `Peticiones`, mapeando cada campo.
 6. **IF** — `{{ $json.en_contrato }}` es `false`.
@@ -84,4 +84,4 @@ return salida;
 - **Coste descontrolado**: pon `max_tokens: 500` y recorta el cuerpo del email a 4.000 caracteres en el paso 2.
 
 ## Cuánto cuesta
-n8n, Gmail y Notion en sus planes gratuitos: 0 €. La API de Claude se paga por uso: con emails cortos, clasificar 300 al mes cuesta menos de 1 €. El único gasto real es ese.
+Gmail y Notion en sus planes gratuitos y n8n autoalojado (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago): 0 €. La API de Claude se paga por uso: con emails cortos, clasificar 300 al mes cuesta menos de 1 €. El único gasto real es ese.

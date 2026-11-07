@@ -85,5 +85,5 @@ Si mandas más de 100 emails de golpe, mete un nodo **Loop Over Items** (Split I
 Pon siempre enlace de baja en los emails: es obligatorio con el RGPD para comunicaciones comerciales.
 
 ## Cuánto cuesta
-n8n, Sheets, Gmail y Slack: 0 € en sus planes gratuitos.
+n8n autoalojado (Community Edition), Sheets, Gmail y Slack: 0 € en sus planes gratuitos. n8n Cloud solo tiene prueba gratuita temporal y después es de pago.
 Si superas los 500 correos diarios de Gmail, pasa a Brevo (300/día gratis) o a un plan de Workspace desde 6 €/mes.

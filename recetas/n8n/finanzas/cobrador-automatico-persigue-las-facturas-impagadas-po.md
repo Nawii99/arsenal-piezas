@@ -43,7 +43,7 @@ Es para autónomos y pymes que facturan a otras empresas y no tienen un departam
 Una hoja de Google Sheets «Facturas emitidas» con columnas: NumFactura, Cliente, EmailCliente, FechaFactura, FechaVencimiento, Total, Estado, UltimoAvisoDias.
 El Estado se rellena a mano con `pendiente` o `cobrada`. UltimoAvisoDias déjalo vacío.
 Credencial de Google (Sheets y Gmail) en n8n, igual que en cualquier receta con Google.
-Un bot de Telegram: habla con @BotFather, `/newbot`, te da un token. Escríbele algo a tu bot y saca tu chat ID entrando en `https://api.telegram.org/bot<TU_TOKEN>/getUpdates`.
+Un bot de Telegram: habla con @BotFather, `/newbot`, te da un token. Guarda el token solo en la credencial de Telegram de n8n; no lo pegues en URLs ni en nodos. Para sacar tu chat ID, escríbele algo a tu bot y mira `message.chat.id` en la salida de un **Telegram Trigger** en modo test (o pídeselo a un bot como @userinfobot).
 
 ## Los nodos, en orden
 **Schedule Trigger**: Trigger Interval «Days», Days Between Triggers 1, Trigger at Hour 9. En Settings del workflow pon Timezone «Europe/Madrid».

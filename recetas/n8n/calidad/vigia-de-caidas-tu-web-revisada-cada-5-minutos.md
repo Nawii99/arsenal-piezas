@@ -37,7 +37,7 @@ Para autónomos y tiendas pequeñas que no tienen a nadie mirando la web todo el
 
 ## Lo que necesitas antes
 - n8n. Gratis auto-alojado con Docker (`docker run -it --rm -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n`) o el plan de pago más barato de n8n Cloud si no quieres servidor.
-- Un bot de Telegram: en Telegram escribe a @BotFather, manda `/newbot`, ponle nombre y copia el token. Después escribe cualquier cosa a tu bot y abre `https://api.telegram.org/bot<TU_TOKEN>/getUpdates` en el navegador: ahí ves tu `chat_id`.
+- Un bot de Telegram: en Telegram escribe a @BotFather, manda `/newbot`, ponle nombre y copia el token. Después escribe cualquier cosa a tu bot y consulta `getUpdates` de la API de Telegram desde tu navegador o con curl en tu ordenador (es la única vez que el token va en una URL; no la pegues en ningún nodo ni la compartas): ahí ves tu `chat_id`. El token se guarda solo en una credencial «Telegram API» de n8n; un flujo exportado con el token escrito en un nodo se llevaría la clave.
 - Una hoja de Google Sheets llamada «Incidencias web» con las columnas: fecha, url, estado, ms, mensaje.
 - La lista de 3 a 6 URLs que de verdad importan. No vigiles 80 páginas, vigila las que dan dinero.
 
@@ -60,7 +60,7 @@ const ok = code >= 200 && code < 400;
 return { json: { nombre: $('Lista de URLs').item.json.nombre, url: $('Lista de URLs').item.json.url, code, ok, fecha: new Date().toISOString() } };
 ```
 5. **IF** — Condition: Boolean, `={{ $json.ok }}` is false. Rama true (o sea, ha fallado) sigue al aviso.
-6. **Telegram** — Resource: Message, Operation: Send Message, Chat ID: el tuyo, Text: `=🔴 {{ $json.nombre }} no responde. Código {{ $json.code }}. {{ $json.url }}`.
+6. **Telegram** — Credencial «Telegram API» (el token no se escribe en el nodo). Resource: Message, Operation: Send Message, Chat ID: el tuyo, Text: `=🔴 {{ $json.nombre }} no responde. Código {{ $json.code }}. {{ $json.url }}`.
 7. **Google Sheets** — Operation: Append Row, hoja «Incidencias web», mapeando fecha, url, estado y mensaje.
 
 ## Evitar el aviso doble y el falso positivo

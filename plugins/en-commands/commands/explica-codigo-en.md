@@ -1,6 +1,6 @@
 ---
-name: explica-codigo
-description: Explains in plain language the code of a tutorial or sample project, for someone who doesn't program. Usage - /explica-codigo file-or-folder
+name: explica-codigo-en
+description: Explains in plain language the code of a tutorial or sample project, for someone who doesn't program. Usage - /explica-codigo-en file-or-folder
 ---
 
 ## What it does

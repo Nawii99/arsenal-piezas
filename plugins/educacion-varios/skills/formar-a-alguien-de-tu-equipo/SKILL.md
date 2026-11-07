@@ -1,6 +1,6 @@
 ---
 name: formar-a-alguien-de-tu-equipo
-description: Turns the owner's know-how into an internal training plan for a new employee, freelancer or intern: task map, written procedures, four-step practice method, 30-day autonomy checklist and handover criteria. Use when hiring, delegating part of the work, onboarding an intern or briefing a subcontractor.
+description: "Convierte el saber hacer del dueño en un plan de formación interno para un nuevo empleado, autónomo colaborador o becario: mapa de tareas, procedimientos escritos, método de práctica en cuatro pasos, lista de autonomía a 30 días y criterios de traspaso. Úsala al contratar, delegar parte del trabajo, incorporar a un becario o dar instrucciones a un subcontratista."
 ---
 
 # Formar a alguien de tu equipo

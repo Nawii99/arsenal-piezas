@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-educacion-alternativas-2",
+  "version": "1.0.0",
+  "description": "Formación · Alternativas (2): 13 skills, 3 subagentes en español que se parecen a otras piezas de formación; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "educacion",
+    "arsenal-del-marketer",
+    "alternativas-2"
+  ]
+}

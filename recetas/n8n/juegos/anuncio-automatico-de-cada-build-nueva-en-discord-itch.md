@@ -42,13 +42,13 @@ Escucha el evento de nueva release en tu repositorio de GitHub, convierte las no
 - n8n accesible desde internet para recibir el webhook (n8n Cloud, o auto-alojado con dominio y HTTPS; con `ngrok` vale para probar).
 
 ## Los nodos, en orden
-1. **Webhook** — HTTP Method: `POST`. Path: `github-release`. Respond: `Immediately`. Copia la Production URL.
-2. En GitHub: Settings > Webhooks > Add webhook. Payload URL: la de n8n. Content type: `application/json`. Secret: inventa uno largo. Which events: `Let me select individual events` > solo **Releases**.
+1. **Webhook** — HTTP Method: `POST`. Path: `github-release`. Respond: `Immediately`. Copia la Production URL. Protégelo: configura un *Secret* en el webhook de GitHub, valida la cabecera `X-Hub-Signature-256` en un nodo Code con ese secreto leído de una variable de entorno y descarta entregas repetidas por `X-GitHub-Delivery`.
+2. En GitHub: Settings > Webhooks > Add webhook. Payload URL: la de n8n. Content type: `application/json`. Secret: inventa uno largo y guárdalo en una variable de entorno de n8n (por ejemplo `GITHUB_WEBHOOK_SECRET`), nunca escrito en un nodo. Which events: `Let me select individual events` > solo **Releases**.
 3. **IF** (llamado `¿Publicada y no borrador?`) — condición 1: `{{ $json.body.action }}` equals `published`; condición 2 (AND): `{{ $json.body.release.draft }}` is false; condición 3: `{{ $json.body.release.prerelease }}` is false.
 4. **Code** (llamado `Formatear notas`) — pasa el Markdown de GitHub a un texto que se lea bien en Discord, en email HTML y en 300 caracteres para Bluesky. Código completo abajo.
-5. **HTTP Request** (llamado `Discord`) — Method: `POST`. URL: la del webhook de Discord. Body Content Type: `JSON`. Body: `{ "content": "@everyone {{ $json.titular }}", "embeds": [ { "title": "{{ $json.version }}", "description": "{{ $json.discord }}", "url": "{{ $json.url }}", "color": 5814783 } ] }`.
-6. **HTTP Request** (llamado `Brevo campaña`) — Method: `POST`. URL: `https://api.brevo.com/v3/emailCampaigns`. Headers: `api-key: TU_CLAVE`, `content-type: application/json`. Body: `{ "name": "Build {{ $json.version }}", "subject": "{{ $json.titular }}", "sender": { "name": "Tu Estudio", "email": "hola@tuestudio.com" }, "type": "classic", "htmlContent": "{{ $json.html }}", "recipients": { "listIds": [2] }, "scheduledAt": "{{ $now.plus(10, 'minutes').toISO() }}" }`. Los 10 minutos de margen te dan tiempo a cancelarla si algo va mal.
-7. **HTTP Request** (llamado `Bluesky sesión`) — POST a `https://bsky.social/xrpc/com.atproto.server.createSession`, body `{ "identifier": "tuusuario.bsky.social", "password": "TU_APP_PASSWORD" }`.
+5. **HTTP Request** (llamado `Discord`) — Method: `POST`. URL: la del webhook de Discord, que también es un secreto: guárdala en la variable de entorno `DISCORD_WEBHOOK_URL` y pon `{{ $env.DISCORD_WEBHOOK_URL }}` (o usa un nodo Discord con su credencial). Body Content Type: `JSON`. Body: `{ "content": "@everyone {{ $json.titular }}", "embeds": [ { "title": "{{ $json.version }}", "description": "{{ $json.discord }}", "url": "{{ $json.url }}", "color": 5814783 } ] }`.
+6. **HTTP Request** (llamado `Brevo campaña`) — Method: `POST`. URL: `https://api.brevo.com/v3/emailCampaigns`. Authentication: Generic Credential Type > Header Auth, con una credencial cuyo Name es `api-key` y cuyo Value es tu clave de Brevo (la clave va en la credencial, no escrita en el nodo). Header: `content-type: application/json`. Body: `{ "name": "Build {{ $json.version }}", "subject": "{{ $json.titular }}", "sender": { "name": "Tu Estudio", "email": "hola@tuestudio.com" }, "type": "classic", "htmlContent": "{{ $json.html }}", "recipients": { "listIds": [2] }, "scheduledAt": "{{ $now.plus(10, 'minutes').toISO() }}" }`. Los 10 minutos de margen te dan tiempo a cancelarla si algo va mal.
+7. **HTTP Request** (llamado `Bluesky sesión`) — POST a `https://bsky.social/xrpc/com.atproto.server.createSession`, body `{ "identifier": "tuusuario.bsky.social", "password": "{{ $env.BSKY_APP_PASSWORD }}" }`, con la App Password guardada en esa variable de entorno (no escrita en el nodo).
 8. **HTTP Request** (llamado `Bluesky post`) — POST a `https://bsky.social/xrpc/com.atproto.repo.createRecord`. Header `Authorization: Bearer {{ $json.accessJwt }}`. Body: `{ "repo": "{{ $json.did }}", "collection": "app.bsky.feed.post", "record": { "text": "{{ $('Formatear notas').item.json.corto }}", "createdAt": "{{ $now.toISO() }}" } }`.
 
 ## El código de `Formatear notas`
@@ -69,6 +69,9 @@ return [{ json: {
   corto: ('Parche ' + r.tag_name + ': ' + primera).slice(0, 280) + ' ' + r.html_url
 } }];
 ```
+
+## Secretos
+Ninguna clave va escrita dentro de un nodo: la de Brevo en una credencial Header Auth, y el secreto del webhook de GitHub, la URL de Discord y la App Password de Bluesky en variables de entorno. Un flujo exportado con la clave dentro se llevaría la clave a quien lo reciba.
 
 ## Cómo probarla
 - Crea una release de prueba con tag `v0.0.1-test` en un repositorio privado apuntando al mismo webhook y mira la pestaña Executions de n8n.

@@ -1,6 +1,6 @@
 ---
 name: rescatar-foto-mala
-description: Diagnoses a bad photograph, says what can and cannot be fixed, gives free step-by-step corrections and calls out when reshooting is cheaper. Use when the user has dark, blurry, yellow, noisy or low-resolution photos and no better ones.
+description: Diagnostica una mala fotografía, dice qué se puede y qué no se puede arreglar, da correcciones gratuitas paso a paso y avisa cuando repetir la foto sale más barato. Úsala cuando el usuario tenga fotos oscuras, borrosas, amarillentas, con ruido o de baja resolución y no tenga otras mejores.
 ---
 
 # Rescatar una foto mala

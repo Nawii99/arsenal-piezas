@@ -43,27 +43,30 @@ Detecta cada archivo de vídeo nuevo en una carpeta de tu ordenador o servidor, 
 ## Los nodos, en orden
 1. **Local File Trigger** — Trigger On: Changes to a Specific Folder, Folder `/files/entrada`, activa «Watch for: File Added» y en Options pon **Awaits Write Finish** en true (clave: si no, procesa el archivo mientras se está copiando).
 2. **IF** — comprueba que la extensión está permitida: `{{ ['mp4','mov','mxf','mkv','avi'].includes($json.path.split('.').pop().toLowerCase()) }}` is true.
+2b. **Code** («Validar ruta», modo «Run Once for Each Item») — la ruta entra en ffprobe, ffmpeg y mv, así que solo pasa si es limpia; si no, el flujo para: `const p = $json.path; if (!/^\/files\/entrada\/[\p{L}\p{N} ._\/-]+$/u.test(p) || p.includes('..')) throw new Error('Ruta con caracteres no permitidos: ' + p); return { json: $json };`
 3. **Wait** — 20 segundos, colchón extra para copias grandes desde tarjeta.
 4. **Execute Command** («ffprobe») — comando: `ffprobe -v quiet -print_format json -show_format -show_streams "{{ $json.path }}"`.
 5. **Code** («Leer metadatos») — parsea la salida y monta el nombre nuevo.
 6. **Execute Command** («Miniatura») — `ffmpeg -ss 3 -i "{{ $json.ruta_origen }}" -frames:v 1 -vf scale=640:-1 -y "/files/miniaturas/{{ $json.archivo_nuevo }}.jpg"`.
-7. **Execute Command** («Mover y renombrar») — `mkdir -p "/files/ordenado/{{ $json.proyecto }}" && mv "{{ $json.ruta_origen }}" "/files/ordenado/{{ $json.proyecto }}/{{ $json.archivo_nuevo }}"`.
-8. **Google Sheets** — Append a «Inventario».
-9. **Telegram** — mensaje resumen: `Nuevo bruto: {{ $json.archivo_nuevo }} · {{ $json.duracion }} · {{ $json.resolucion }} · {{ $json.tamaño_mb }} MB`.
+7. **Execute Command** («Mover y renombrar») — `mkdir -p "/files/ordenado/{{ $('Leer metadatos').item.json.proyecto }}" && mv "{{ $('Leer metadatos').item.json.ruta_origen }}" "/files/ordenado/{{ $('Leer metadatos').item.json.proyecto }}/{{ $('Leer metadatos').item.json.archivo_nuevo }}"`.
+8. **Google Sheets** — Append a «Inventario», con los campos de `{{ $('Leer metadatos').item.json }}`.
+9. **Telegram** — mensaje resumen: `Nuevo bruto: {{ $('Leer metadatos').item.json.archivo_nuevo }} · {{ $('Leer metadatos').item.json.duracion }} · {{ $('Leer metadatos').item.json.resolucion }} · {{ $('Leer metadatos').item.json.tamaño_mb }} MB`.
 
 ## El código de «Leer metadatos»
 ```js
 const j = JSON.parse(items[0].json.stdout);
-const ruta = $('Local File Trigger').first().json.path;
+const ruta = $('Validar ruta').first().json.path;
 const v = j.streams.find(s => s.codec_type === 'video') || {};
 const dur = Math.round(parseFloat(j.format.duration || 0));
 const mm = String(Math.floor(dur / 60)).padStart(2, '0');
 const ss = String(dur % 60).padStart(2, '0');
 const fpsRaw = (v.r_frame_rate || '0/1').split('/');
 const fps = Math.round((+fpsRaw[0]) / (+fpsRaw[1] || 1));
-const fecha = (j.format.tags?.creation_time || new Date().toISOString()).slice(0, 10);
-const proyecto = ruta.split('/').slice(-2, -1)[0] || 'sin_proyecto';
-const base = ruta.split('/').pop();
+// creation_time lo escribe la cámara (o quien grabó el archivo): solo vale si es una fecha AAAA-MM-DD.
+const fechaMeta = String(j.format.tags?.creation_time || '').slice(0, 10);
+const fecha = /^\d{4}-\d{2}-\d{2}$/.test(fechaMeta) ? fechaMeta : new Date().toISOString().slice(0, 10);
+const proyecto = (ruta.split('/').slice(-2, -1)[0] || 'sin_proyecto').replace(/[^A-Za-z0-9._-]/g, '_');
+const base = ruta.split('/').pop().replace(/[^A-Za-z0-9._-]/g, '_');
 const ext = base.split('.').pop();
 return [{ json: {
   fecha, proyecto,
@@ -86,9 +89,12 @@ return [{ json: {
 ## Qué puede salir mal
 - **Archivos procesados a medias**: pasa siempre con tarjetas lentas. Solución: Awaits Write Finish + el Wait de 20 s, y si copias por red, súbelo a 120 s.
 - **Rutas con espacios o acentos**: mantén las comillas dobles en todos los comandos, tal cual están escritas.
+- **Nombres con trampa**: un archivo llamado `$(id).mp4` o con comillas ejecutaría órdenes en ffprobe, ffmpeg o mv. «Validar ruta» para el flujo si la ruta trae otros símbolos (renómbralo) y el nombre nuevo y el proyecto se limpian con `replace`.
 - **Nombres duplicados**: dos cámaras generan C0001.MP4. El nombre nuevo incluye fecha y duración, lo que ya casi elimina el choque; si quieres cero riesgo, añade `_${Date.now()}`.
 - **Permisos**: si `mv` falla, el contenedor no tiene escritura en el volumen; arranca el docker con `--user root` o ajusta permisos de la carpeta.
 - **Sin creation_time**: algunas cámaras no lo escriben; el código cae a la fecha de hoy.
+- **Metadatos con trampa**: un MKV puede traer `$(id)` en `creation_time`, y esa fecha acaba en el nombre nuevo, en ffmpeg y en mv. «Leer metadatos» solo la acepta si es `AAAA-MM-DD`; si no, usa la fecha de hoy.
+- **Campos vacíos tras la miniatura**: la salida de un Execute Command solo trae `stdout`, `stderr` y `exitCode`; por eso «Mover y renombrar», la hoja y Telegram leen de `$('Leer metadatos')`.
 
 ## Cuánto cuesta
 Cero euros de software: n8n auto-alojado, ffmpeg y Google Sheets son gratis. El único gasto es el disco donde guardas el material y, si lo pones en un servidor, unos 5 €/mes de VPS (aunque para vídeo lo suyo es tenerlo en tu propio equipo o NAS).

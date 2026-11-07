@@ -93,4 +93,4 @@ return salida;
 - **Idiomas**: si vendes fuera, pásale el campo idioma al prompt o contestarás en español a un alemán.
 
 ## Cuánto cuesta
-La API de Google Play es gratis. n8n auto-alojado en un VPS de 5 €/mes o el plan gratuito de n8n Cloud (limitado en ejecuciones). Telegram y Sheets, gratis. La IA, con gpt-4o-mini y 300 reseñas al mes, no llega a 0,50 €. Total realista: 0 a 6 € al mes.
+La API de Google Play es gratis. n8n auto-alojado en un VPS de 5 €/mes o n8n Cloud (prueba gratuita temporal y después de pago). Telegram y Sheets, gratis. La IA, con gpt-4o-mini y 300 reseñas al mes, no llega a 0,50 €. Total realista auto-alojando n8n (n8n Cloud suma su cuota de pago): 0 a 6 € al mes.

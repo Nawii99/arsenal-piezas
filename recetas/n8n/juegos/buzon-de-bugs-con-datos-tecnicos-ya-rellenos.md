@@ -36,14 +36,14 @@ Pone un endpoint al que tu juego (o un formulario web) manda el reporte: descrip
 Para cualquier estudio en pruebas públicas que quiera que un reporte pase de mensaje suelto a tarjeta accionable sin intervención humana.
 
 ## Lo que necesitas antes
-- n8n (vale la nube gratuita: aquí no hace falta ejecutar comandos).
+- n8n (vale n8n Cloud en su prueba gratuita temporal, luego de pago: aquí no hace falta ejecutar comandos).
 - Tablero de Trello con listas «Entrada», «Confirmado», «Arreglado» y etiquetas «crítico», «medio», «cosmético». Clave y token de API en trello.com/power-ups/admin (crear Power-Up → API key → generar token).
 - Credencial de Google Drive.
 - Webhook de Discord del canal #bugs.
 - En el juego: una función que haga un POST con `multipart/form-data`. Si no quieres tocar código, usa un **Form Trigger** de n8n y comparte la URL con los testers.
 
 ## Los nodos, en orden
-1. **Webhook** — Method POST, Path `/bug`, Response Mode «Using Respond to Webhook», y en Options activa «Binary Property» para recibir la captura.
+1. **Webhook** — Method POST, Path `/bug`, Response Mode «Using Respond to Webhook», y en Options activa «Binary Property» para recibir la captura. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Set** («Edit Fields») — Normaliza los campos: `descripcion`, `version`, `so`, `gpu`, `pasos`, `jugador`. Pon valores por defecto («desconocido») para que nunca lleguen vacíos.
 3. **Code** — Asigna gravedad según palabras clave (código abajo).
 4. **Google Drive** («Upload File») — Sube la captura a la carpeta «bugs/capturas» con nombre `{{ $execution.id }}_{{ $json.version }}.png` y compártela por enlace.
@@ -76,4 +76,4 @@ return [{ json: { ...$json, gravedad } }];
 - **Logs con datos personales**: si mandas rutas de archivo, aparecerá el nombre de usuario del jugador. Recórtalo en el Code antes de guardar.
 
 ## Cuánto cuesta
-Gratis: Trello gratuito permite tableros ilimitados con 10 colaboradores, Drive y Discord gratis. En n8n Cloud gratuito cuidado si recibes cientos de reportes al mes; con auto-alojado no hay límite.
+Gratis: Trello gratuito permite tableros ilimitados con 10 colaboradores, Drive y Discord gratis. En la prueba gratuita de n8n Cloud cuidado si recibes cientos de reportes al mes; con auto-alojado no hay límite.

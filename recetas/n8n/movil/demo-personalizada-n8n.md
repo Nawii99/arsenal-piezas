@@ -75,7 +75,7 @@ Convierte «Academia Sol & Luna» en `academia-sol-luna`. Sirve de nombre de arc
 ### 3. HTTP Request (llamada a Claude)
 
 - Método: POST. URL: `https://api.anthropic.com/v1/messages`
-- Cabeceras: `x-api-key` con tu clave, `anthropic-version` con `2023-06-01`, `content-type` con `application/json`.
+- Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name `x-api-key`, Value tu clave). No escribas la clave en el nodo: un flujo exportado o compartido se la llevaría. Cabeceras: `anthropic-version` con `2023-06-01` y `content-type` con `application/json`.
 - Cuerpo JSON: modelo `[MODELO QUE USES]`, `max_tokens` 2000, y un único mensaje de usuario con este texto:
 
 «Eres redactor de contenidos educativos. Escribe 8 preguntas tipo test para un quiz del negocio {{ $json.negocio }} (sector: {{ $json.sector }}). Tema: {{ $json.tema }}. Español de España, tono cercano, cada pregunta con 4 opciones y una explicación de una línea. Responde SOLO con un JSON válido con esta forma exacta y nada más, sin comillas triples ni texto alrededor: {"titulo": "...", "preguntas": [{"pregunta": "...", "opciones": ["...","...","...","..."], "correcta": 0, "explicacion": "..."}]}»

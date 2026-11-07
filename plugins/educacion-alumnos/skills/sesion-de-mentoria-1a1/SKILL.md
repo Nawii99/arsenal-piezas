@@ -1,6 +1,6 @@
 ---
 name: sesion-de-mentoria-1a1
-description: Structures a one-to-one mentoring or tutoring session: pre-session intake, minute-by-minute agenda, questioning technique, written minutes with committed actions, and between-session follow-up. Use before a 1:1 coaching, mentoring or tutoring call, or when sessions drift and produce no concrete progress.
+description: "Estructura una sesión individual de mentoría o tutoría: formulario previo, agenda minuto a minuto, técnica de preguntas, acta escrita con acciones comprometidas y seguimiento entre sesiones. Úsala antes de una llamada 1:1 de coaching, mentoría o tutoría, o cuando las sesiones se dispersen y no produzcan avances concretos."
 ---
 
 # Sesión de mentoría 1 a 1

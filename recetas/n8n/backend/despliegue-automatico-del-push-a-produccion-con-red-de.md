@@ -62,17 +62,25 @@ Hazlo ejecutable con `chmod +x /home/deploy/desplegar.sh`.
 ## Los nodos, en orden
 1. **GitHub Trigger** — Authentication: tu credencial, Repository Owner y Name, Events: `push`. n8n crea el webhook en GitHub solo.
 2. **IF** (nombre: ¿Es main?) — String: `={{ $json.ref }}` equals `refs/heads/main`.
-3. **HTTP Request** (nombre: Estado de los tests) — GET `=https://api.github.com/repos/{{ $json.repository.full_name }}/commits/{{ $json.after }}/check-runs`, Header `Authorization: Bearer TU_TOKEN` y `Accept: application/vnd.github+json`. Antes pon un **Wait** de 2 minutos para dar tiempo a que corran.
+3. **HTTP Request** (nombre: Estado de los tests) — GET `=https://api.github.com/repos/{{ $json.repository.full_name }}/commits/{{ $json.after }}/check-runs`, con Authentication: Generic > Header Auth con una credencial de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`) y header `Accept: application/vnd.github+json`. Antes pon un **Wait** de 2 minutos para dar tiempo a que corran. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 4. **IF** (nombre: ¿Tests verdes?) — `={{ $json.check_runs.every(c => c.conclusion === 'success') }}` is true.
-5. **Slack** (nombre: Empiezo) — "Desplegando `{{ $json.after.slice(0,7) }}` en producción...".
-6. **SSH** (nombre: Desplegar) — Command: `=/home/deploy/desplegar.sh {{ $('GitHub Trigger').first().json.after }}`, Settings: On Error, Continue (using error output).
-7. **Wait** — Amount: 20, Unit: Seconds.
-8. **HTTP Request** (nombre: Salud) — GET `https://tudominio.com/health`, Timeout 8000, Settings: Retry On Fail activado con Max Tries 3 y Wait Between Tries 5000, On Error: Continue.
-9. **Code** (nombre: ¿Va bien?) — comprueba código 200 y que la versión que devuelve coincide con el commit desplegado.
-10. **IF** — `={{ $json.ok }}` is true.
-11. (rama sí) **Slack** — mensaje de éxito con la lista de commits.
-12. (rama no) **SSH** (nombre: Revertir) — Command: `=/home/deploy/desplegar.sh {{ $json.anterior }}`.
-13. **Slack** — "🔴 Despliegue revertido. Motivo: {{ $json.motivo }}".
+5. **Code** (nombre: Validar commit) — comprueba que el commit que llega es un SHA de 40 caracteres hexadecimales y para el flujo si no lo es. Código abajo.
+6. **Slack** (nombre: Empiezo) — "Desplegando `{{ $json.after.slice(0,7) }}` en producción...".
+7. **SSH** (nombre: Desplegar) — Command: `=/home/deploy/desplegar.sh {{ $('Validar commit').first().json.after }}`, Settings: On Error, Continue (using error output).
+8. **Wait** — Amount: 20, Unit: Seconds.
+9. **HTTP Request** (nombre: Salud) — GET `https://tudominio.com/health`, Timeout 8000, Settings: Retry On Fail activado con Max Tries 3 y Wait Between Tries 5000, On Error: Continue.
+10. **Code** (nombre: ¿Va bien?) — comprueba código 200 y que la versión que devuelve coincide con el commit desplegado.
+11. **IF** — `={{ $json.ok }}` is true.
+12. (rama sí) **Slack** — mensaje de éxito con la lista de commits.
+13. (rama no) **SSH** (nombre: Revertir) — Command: `=/home/deploy/desplegar.sh {{ $json.anterior }}`.
+14. **Slack** — "🔴 Despliegue revertido. Motivo: {{ $('¿Va bien?').item.json.motivo }}".
+
+## El código del nodo "Validar commit"
+```javascript
+const sha = String($('GitHub Trigger').first().json.after || '');
+if (!/^[0-9a-f]{40}$/.test(sha)) throw new Error('Commit con formato inesperado, no despliego: ' + sha.slice(0, 50));
+return [{ json: { after: sha } }];
+```
 
 ## El código del nodo "¿Va bien?"
 ```javascript
@@ -104,6 +112,8 @@ En el nodo Slack, Text: `=✅ Desplegado {{ $('GitHub Trigger').first().json.aft
 - **Los tests aún no han terminado** cuando consultas: el Wait de 2 minutos es un apaño; mejor usa el evento `check_suite` en el GitHub Trigger si tus tests tardan más.
 - **npm ci se queda sin memoria** en VPS pequeños: compila en local o en GitHub Actions y sube solo el resultado.
 - **Ventana de caída**: el `systemctl restart` corta unos segundos. Si te importa, monta despliegue con dos carpetas y un enlace simbólico que cambies al final.
+- **Datos del webhook dentro del comando SSH**: el commit llega de fuera y va directo a la shell del servidor; por eso «Validar commit» solo deja pasar 40 caracteres hexadecimales. La versión anterior ya viene filtrada por `[0-9a-f]+` en «¿Va bien?».
+- **Motivo vacío en el aviso de revertido**: tras el SSH «Revertir» solo llegan `stdout`, `stderr` y `exitCode`; por eso el Slack lee el motivo de «¿Va bien?».
 
 ## Cuánto cuesta
 - Gratis: GitHub (repos privados incluidos), n8n auto-alojado, Slack plan gratuito.

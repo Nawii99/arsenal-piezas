@@ -36,7 +36,7 @@ Vigila una carpeta de Google Drive llamada `1-ENTRADA`. Cuando aparece una foto 
 Pensado para el fotógrafo, el diseñador o la tienda online que repite el mismo retoque mecánico decenas de veces por semana.
 
 ## Lo que necesitas antes
-- Cuenta de Google (Drive) y n8n. Vale n8n Cloud plan gratuito o n8n auto-alojado con Docker en tu ordenador o en un VPS de 5 €/mes.
+- Cuenta de Google (Drive) y n8n. Vale n8n auto-alojado (Community Edition, gratis) con Docker en tu ordenador o en un VPS de 5 €/mes, o n8n Cloud durante su prueba gratuita temporal.
 - Cuenta gratuita en Cloudinary: cloudinary.com. En el panel, arriba, tienes `Cloud name`, `API Key` y `API Secret`. Cópialos.
 - Tu logo en PNG con fondo transparente. Súbelo a Cloudinary a mano y ponle de nombre público `marca_agua` (Media Library > Upload > pestaña Advanced > Public ID).
 - En Drive crea cuatro carpetas: `1-ENTRADA`, `2-WEB`, `3-REDES`, `4-ORIGINAL-CON-LOGO`. Apunta el ID de cada una (está en la URL, después de `/folders/`).
@@ -85,6 +85,6 @@ return {
 - **Error 420 o 429 de Cloudinary.** Has pasado el límite del minuto. Añade un nodo **Wait** de 2 segundos antes del paso 4.
 
 ## Cuánto cuesta
-- n8n auto-alojado: 0 €. n8n Cloud tiene plan gratuito de pruebas y luego arranca sobre 20 €/mes.
+- n8n auto-alojado: 0 €. n8n Cloud tiene una prueba gratuita temporal y luego arranca sobre 20 €/mes.
 - Cloudinary gratis: 25 créditos al mes, que dan de sobra para unas 20.000 transformaciones o 25 GB de tráfico. Si entregas bodas enteras te quedarás corto y el siguiente plan ronda los 89 $/mes; en ese caso pásate a un n8n auto-alojado con el nodo **Edit Image** nativo, que es gratis del todo aunque da menos calidad de marca de agua.
 - Google Drive: gratis hasta 15 GB.

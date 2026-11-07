@@ -35,7 +35,7 @@ Evita perder clientes y posiciones en Google por páginas muertas. Sustituye una
 **Para quién no es**: si tu web tiene 5 páginas, lo compruebas antes a mano.
 
 ### Lo que necesitas antes
-- **n8n**: plan gratuito en n8n.cloud (te da unas 2.500 ejecuciones al mes en la prueba) o auto-alojado con Docker en tu ordenador o en un VPS de 5 €/mes (Hetzner, Contabo). Gratis para siempre si te lo auto-alojas.
+- **n8n**: prueba gratuita temporal en n8n.cloud (después es de pago) o auto-alojado con Docker en tu ordenador o en un VPS de 5 €/mes (Hetzner, Contabo). Gratis para siempre solo si te lo auto-alojas.
 - **La URL de tu sitemap**: normalmente `tudominio.com/sitemap.xml` o `sitemap_index.xml`. Ábrela en el navegador antes de empezar y confirma que carga y que ves etiquetas `<loc>`.
 - **Google Sheets**: crea una hoja llamada «Enlaces rotos» con la pestaña `registro` y las columnas en la fila 1: `fecha`, `pagina_origen`, `enlace_roto`, `codigo`.
 - **Credenciales en n8n**: Credentials > New > «Google Sheets OAuth2 API» y «Gmail OAuth2 API». n8n te lleva paso a paso a la pantalla de Google; autorizas con tu propia cuenta. No cuesta nada.

@@ -1,6 +1,6 @@
 ---
 name: de-presencial-a-online
-description: Redesigns an in-person workshop or course for online delivery: splits content into asynchronous and live, rebuilds activities for video calls, sets participation rules, tech checklist and facilitation script. Use when moving face-to-face training online, or when live online sessions have low participation and people switch off.
+description: "Rediseña un taller o curso presencial para impartirlo online: divide el contenido en asíncrono y en directo, reconstruye las actividades para videollamada y define normas de participación, checklist técnica y guion de facilitación. Úsala al pasar formación presencial a online, o cuando las sesiones online en directo tengan poca participación y la gente desconecte."
 ---
 
 # De presencial a online

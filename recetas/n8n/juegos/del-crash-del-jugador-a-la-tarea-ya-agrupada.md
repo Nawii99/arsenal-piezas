@@ -43,7 +43,7 @@ Webhook de Slack: api.slack.com/apps → Create App → Incoming Webhooks → ac
 Una hoja «Crashes» con columnas: fingerprint, titulo, usuarios, version, plataforma, issue_url, estado, primera_vez, ultima_vez.
 
 ## Los nodos, en orden
-**Webhook** — POST, Path: `sentry`, Respond: Immediately.
+**Webhook** — POST, Path: `sentry`, Respond: Immediately. Protégelo: verifica la cabecera `Sentry-Hook-Signature` (HMAC-SHA256 del cuerpo con el Client Secret de la integración, leído de una variable de entorno) en un nodo Code y descarta lo que no cuadre.
 **Code** — extrae lo importante del payload de Sentry (abajo).
 **Google Sheets** — Get Row(s) filtrando por `fingerprint` igual a `{{$json.fingerprint}}`. Settings: «Always Output Data» activado.
 **IF** — `{{$json.issue_url}}` está vacío (no lo habíamos visto nunca).
@@ -87,4 +87,4 @@ No mandes datos personales: revisa que el SDK tenga `SendDefaultPii = false`.
 ## Cuánto cuesta
 Sentry gratis hasta 5.000 errores al mes y 1 usuario; el siguiente plan son unos 26 $/mes.
 GitHub, Slack (plan gratis) y n8n auto-alojado: 0 €.
-Alternativa gratuita total: en vez de Sentry, monta un endpoint propio con el nodo Webhook y captura las excepciones tú mismo, aunque pierdes el agrupado automático.
+Alternativa gratuita total: en vez de Sentry, monta un endpoint propio con el nodo Webhook (protégelo con Header Auth y valida los datos en un nodo Code) y captura las excepciones tú mismo, aunque pierdes el agrupado automático.

@@ -1,6 +1,6 @@
 ---
 name: rescate-de-alumnos-parados
-description: Use this agent when a course, cohort or membership is running and the creator wants to find which students have stalled, understand why they stalled, and send targeted re-engagement messages before refund requests or churn happen. Works from a CSV export of platform progress data, from a manual list, or from community activity logs.
+description: Úsalo cuando un curso, cohorte o membresía esté en marcha y el creador quiera encontrar qué alumnos se han estancado, entender por qué y enviar mensajes de reactivación dirigidos antes de que lleguen las peticiones de reembolso o las bajas. Trabaja a partir de una exportación CSV de datos de progreso de la plataforma, de una lista manual o de registros de actividad de la comunidad.
 tools: Read, Write, Bash
 ---
 

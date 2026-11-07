@@ -45,11 +45,11 @@ Para fotógrafos y estudios: detecta carpetas nuevas en tu unidad de trabajo, la
 ## Los nodos, en orden
 1. **Schedule Trigger** — Trigger Interval: Days, Trigger at Hour: 2.
 2. **Execute Command «Listar sesiones nuevas»** — Command: `find /fotos/TRABAJO -maxdepth 1 -mindepth 1 -type d -newermt '-2 days' -printf '%f\n'`.
-3. **Code «A items»** — parte el stdout por saltos de línea y devuelve un item por carpeta: `return ($input.first().json.stdout || '').split('\n').filter(Boolean).map(s => ({ json: { sesion: s.trim() } }));`
+3. **Code «A items»** — parte el stdout por saltos de línea, para el flujo si algún nombre de carpeta trae símbolos que la shell interpreta y devuelve un item por carpeta: `const sesiones = ($input.first().json.stdout || '').split('\n').map(s => s.trim()).filter(Boolean); const mala = sesiones.find(s => !/^[\p{L}\p{N}][\p{L}\p{N} ._-]*$/u.test(s)); if (mala) throw new Error('Carpeta con caracteres no permitidos: ' + mala); return sesiones.map(s => ({ json: { sesion: s } }));`
 4. **Loop Over Items** — Batch Size: 1.
 5. **Execute Command «Copia local»** — Command: `rclone copy "/fotos/TRABAJO/{{ $json.sesion }}" "/discos/ESPEJO/{{ $json.sesion }}" --checksum --transfers 4 --stats-one-line --log-level NOTICE 2>&1`.
-6. **Execute Command «Copia nube»** — Command: `rclone copy "/fotos/TRABAJO/{{ $json.sesion }}" "b2:mi-bucket-fotos/{{ $json.sesion }}" --checksum --transfers 8 --fast-list --stats-one-line --log-level NOTICE 2>&1`. En Settings del nodo sube el Timeout a 3600000 ms.
-7. **Execute Command «Verificar nube»** — Command: `rclone check "/fotos/TRABAJO/{{ $json.sesion }}" "b2:mi-bucket-fotos/{{ $json.sesion }}" --one-way --combined - 2>&1 | grep -c '^=' ; echo '---' ; find "/fotos/TRABAJO/{{ $json.sesion }}" -type f | wc -l ; echo '---' ; du -sh "/fotos/TRABAJO/{{ $json.sesion }}" | cut -f1`.
+6. **Execute Command «Copia nube»** — Command: `rclone copy "/fotos/TRABAJO/{{ $('Loop Over Items').item.json.sesion }}" "b2:mi-bucket-fotos/{{ $('Loop Over Items').item.json.sesion }}" --checksum --transfers 8 --fast-list --stats-one-line --log-level NOTICE 2>&1`. En Settings del nodo sube el Timeout a 3600000 ms.
+7. **Execute Command «Verificar nube»** — Command: `rclone check "/fotos/TRABAJO/{{ $('Loop Over Items').item.json.sesion }}" "b2:mi-bucket-fotos/{{ $('Loop Over Items').item.json.sesion }}" --one-way --combined - 2>&1 | grep -c '^=' ; echo '---' ; find "/fotos/TRABAJO/{{ $('Loop Over Items').item.json.sesion }}" -type f | wc -l ; echo '---' ; du -sh "/fotos/TRABAJO/{{ $('Loop Over Items').item.json.sesion }}" | cut -f1`.
 8. **Code «Comparar»** — con el código de abajo.
 9. **IF** — Boolean `{{ $json.ok }}` is true.
 10. Rama falsa: **Telegram** Send Message con `⚠️` y el detalle, y **Gmail** de aviso. Rama verdadera: solo se acumula.
@@ -90,6 +90,8 @@ return salida;
 - **Costes de descarga**: B2 cobra por sacar datos, no por meterlos. No uses la copia en la nube para trabajar, solo para desastres.
 - **Ficheros abiertos**: si Lightroom está escribiendo el catálogo, la copia puede salir corrupta. Programa el backup de madrugada y excluye `.lrcat` con `--exclude '*.lrcat*'`.
 - **No es 3-2-1 de verdad si el disco espejo está en la misma habitación**: por eso la copia en nube es obligatoria.
+- **Carpetas con nombres raros**: el nombre de cada sesión entra en rclone, find y du; una carpeta con comillas, `$` o acento grave ejecutaría órdenes. «A items» para el flujo si ve una así: renómbrala con letras, números, espacios, puntos o guiones.
+- **La sesión llega vacía a la nube**: la salida de un Execute Command solo trae `stdout`, `stderr` y `exitCode`, así que «Copia nube» y «Verificar nube» leen la sesión de `$('Loop Over Items')`, no de `$json`.
 - **Nunca borres el origen automáticamente**: usa `copy`, jamás `sync` con `--delete`, salvo que sepas exactamente lo que haces.
 
 ## Cuánto cuesta

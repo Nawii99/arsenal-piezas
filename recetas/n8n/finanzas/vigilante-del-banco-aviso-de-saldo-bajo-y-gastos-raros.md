@@ -48,7 +48,7 @@ Una hoja «Movimientos banco» en Sheets para llevar histórico.
 
 ## Los nodos, en orden
 **Schedule Trigger**: cada día a las 8:00, Europe/Madrid.
-**HTTP Request** (renombra a `Token`): POST a `https://bankaccountdata.gocardless.com/api/v2/token/new/`, Body JSON: `{"secret_id":"TU_SECRET_ID","secret_key":"TU_SECRET_KEY"}`. Devuelve un campo `access`.
+**HTTP Request** (renombra a `Token`): POST a `https://bankaccountdata.gocardless.com/api/v2/token/new/`, Body JSON en modo expresión: `{"secret_id":"{{ $env.GOCARDLESS_SECRET_ID }}","secret_key":"{{ $env.GOCARDLESS_SECRET_KEY }}"}`, con los dos valores guardados como variables de entorno de n8n y no escritos en el nodo: un flujo exportado se llevaría la clave. Devuelve un campo `access`.
 **HTTP Request** (renombra a `Saldo`): GET a `https://bankaccountdata.gocardless.com/api/v2/accounts/TU_ACCOUNT_ID/balances/`. En Headers añade `Authorization` con valor `=Bearer {{ $('Token').item.json.access }}`.
 **HTTP Request** (renombra a `Movimientos`): GET a `https://bankaccountdata.gocardless.com/api/v2/accounts/TU_ACCOUNT_ID/transactions/`, mismo header de Authorization.
 **Code**: modo «Run Once for All Items».

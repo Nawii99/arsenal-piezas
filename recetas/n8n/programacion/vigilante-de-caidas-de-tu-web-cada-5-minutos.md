@@ -35,7 +35,7 @@ Sustituye un Uptime Robot de pago (unos 8-25 €/mes) y evita horas de caída si
 Cada 5 minutos hace una petición a cada URL de tu lista, mide el tiempo de respuesta y comprueba el código HTTP. Si algo falla, espera 30 segundos, lo reintenta (para evitar falsos positivos) y solo entonces avisa por Telegram. Cuando vuelve a estar bien, manda el aviso de recuperación con la duración de la caída.
 Para el desarrollador o la agencia que mantiene webs de clientes y quiere enterarse antes que ellos.
 ## Lo que necesitas antes
-- n8n auto-alojado (importante: en n8n Cloud gratis las ejecuciones cada 5 minutos se te comen la cuota).
+- n8n auto-alojado (importante: en n8n Cloud, de pago tras la prueba gratuita, las ejecuciones cada 5 minutos se te comen la cuota del plan).
 - Bot de Telegram con su token y tu chat id (@BotFather).
 - Una hoja de Google Sheets llamada `estado-webs` con columnas: `url`, `estado`, `desde`. Credencial de Google Sheets OAuth2 en n8n.
 ## Los nodos, en orden

@@ -48,7 +48,7 @@ Guarda el resultado en una hoja para que lo revises y, cuando das el visto bueno
 4. **Split In Batches** — Batch Size: `1`.
 5. **HTTP Request** (renómbralo «Bajar imagen») — Method: `GET`, URL: `{{ $json.url_imagen }}`, Response Format: `File`, campo de salida `data`.
 6. **Extract From File** — Operation: `Binary to Property`... o más simple: usa un **Code** para pasar el binario a base64, que es lo que pide la API. Código abajo.
-7. **HTTP Request** (renómbralo «Describir») — Method: `POST`, URL: `https://api.anthropic.com/v1/messages`. Headers: `x-api-key` con tu clave, `anthropic-version` = `2023-06-01`, `content-type` = `application/json`. Body: JSON, con el cuerpo del segundo bloque de código.
+7. **HTTP Request** (renómbralo «Describir») — Method: `POST`, URL: `https://api.anthropic.com/v1/messages`. Headers: `x-api-key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `x-api-key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría), `anthropic-version` = `2023-06-01`, `content-type` = `application/json`. Body: JSON, con el cuerpo del segundo bloque de código.
 8. **Code** — extrae el JSON de la respuesta del modelo.
 9. **Google Sheets** — Operation: `Update Row`, Column to Match On: `url_imagen`, escribe `alt_propuesto` y `nombre_archivo`. Conecta de vuelta al **Split In Batches**.
 10. (Fase 2, cuando ya has revisado) Otro flujo con **Google Sheets** filtrando `aprobado = si` y un **WooCommerce** — Resource: `Product`, Operation: `Update`, o un **HTTP Request** a la API REST de WordPress `POST /wp-json/wp/v2/media/{id}` con el campo `alt_text`.
@@ -94,5 +94,5 @@ return { json: {
 
 ## Cuánto cuesta
 - API de Anthropic: unos céntimos por imagen con el modelo intermedio; 300 imágenes salen por menos de 2 €.
-- n8n, Sheets y WooCommerce: gratis.
+- n8n auto-alojado (Community Edition), Sheets y WooCommerce: gratis (n8n Cloud: prueba gratuita temporal y después de pago).
 - Total realista de un catálogo entero de 500 fotos: unos 3 € y una tarde de revisión.

@@ -2,11 +2,11 @@
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
-Prompt para crear la encuesta corta que se envía al terminar el proceso, el sistema para leer las respuestas y el guion para pedir reseña en el momento justo y solo a quien toca.
+Prompt para crear la encuesta corta que se envía al terminar el proceso, el sistema para leer las respuestas y el guion para pedir reseña a todos los que terminan, en el momento justo.
 
 ## Qué es y qué hace
 
-Prompt para cualquier chat de IA que actúa como responsable de experiencia de cliente. Diseña una encuesta de cinco preguntas que se contesta en menos de un minuto, el modo de leer las respuestas y el guion para pedir una reseña en Google en el momento justo y solo a quien corresponde.
+Prompt para cualquier chat de IA que actúa como responsable de experiencia de cliente. Diseña una encuesta de cinco preguntas que se contesta en menos de un minuto, el modo de leer las respuestas y el guion para pedir una reseña en Google en el momento justo, a todos los que terminan el proceso y sin depender de su nota.
 
 ## Cómo usarla
 
@@ -49,13 +49,14 @@ LO QUE TIENES QUE HACER
 3. Explica por qué la pregunta de esfuerzo predice mejor la repetición que la de satisfacción.
 4. Define el momento de envío: cuántas horas después de la última sesión, por qué ese momento y qué días de la semana no enviar.
 5. Escribe el mensaje de envío de menos de 40 palabras, con el nombre de quien pregunta y sin sonar automático.
-6. Diseña el circuito según la respuesta: nota de 9 a 10, invitación a reseña; de 7 a 8, agradecer y preguntar qué falta; de 0 a 6, llamada personal en 48 horas con guion de escucha, sin defenderse y sin pedir reseña.
+6. Diseña el circuito según la respuesta: nota de 9 a 10, agradecer; de 7 a 8, agradecer y preguntar qué falta; de 0 a 6, llamada personal en 48 horas con guion de escucha y sin defenderse. La invitación a reseña no depende de este circuito: va a todos, sea cual sea la nota.
 7. Escribe ese guion de llamada de recuperación, con la estructura escuchar, resumir, disculparse por lo que sea cierto, proponer una solución concreta y cerrar.
-8. Escribe la petición de reseña para Google en dos versiones, WhatsApp y en persona, con la frase que facilita escribirla: sugerir de qué puede hablar sin dictar el texto.
-9. Explica de forma clara qué NO se puede hacer: pagar por reseñas, regalar algo a cambio, filtrar para que solo dejen reseña los contentos de forma encubierta, escribir reseñas propias o pedirlas a familiares.
+8. Escribe la petición de reseña para Google en dos versiones, WhatsApp y en persona, con la frase que facilita escribirla: sugerir de qué puede hablar sin dictar el texto. La petición es la misma para todos los pacientes que terminan el proceso, con independencia de su nota.
+9. Explica de forma clara qué NO se puede hacer: pagar por reseñas, regalar algo a cambio, filtrar quién puede dejar reseña según su nota o su ánimo (pedirla solo a los contentos), que Google y las tiendas prohíben, escribir reseñas propias o pedirlas a familiares.
 10. Añade la respuesta pública tipo a una reseña de 5 estrellas y a una de 1 estrella, sin mencionar nunca si esa persona ha sido paciente ni ningún dato de su proceso.
 11. Termina con el panel mensual: qué se anota, cómo se calcula la nota media, y qué tres cambios internos se deciden con esos datos.
 RESTRICCIONES
+La petición de reseña va a todos los pacientes que terminan el proceso, nunca según su nota o su ánimo.
 La respuesta pública a una reseña nunca puede confirmar que alguien es paciente ni referirse a su caso.
 No hagas preguntas sobre síntomas, resultados clínicos o evolución: la encuesta es sobre el servicio.
 No incentives las reseñas con descuentos, sorteos ni regalos.

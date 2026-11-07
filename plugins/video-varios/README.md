@@ -1,6 +1,6 @@
 # arsenal-video-varios · Vídeo · Más de vídeo
 
-Vídeo · Más de vídeo: 11 subagentes, 4 comandos / en español, del Arsenal del Marketer.
+Vídeo · Más de vídeo: 6 subagentes, 5 comandos / en español, del Arsenal del Marketer.
 
 ## Instalar
 
@@ -13,20 +13,16 @@ Vídeo · Más de vídeo: 11 subagentes, 4 comandos / en español, del Arsenal d
 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
-| pack-publicacion-video | Comando / | A partir de un vídeo ya montado, escribe el título, la descripción, los capítulos, las etiquetas, el comentario fijado y las versiones de texto para cada red. | `/pack-publicacion-video` |
-| presupuesto-video | Comando / | Calcula y redacta el presupuesto de un vídeo para un cliente: partidas, horas reales, precio, qué incluye, qué no, y las condiciones que evitan problemas. | `/presupuesto-video` |
-| revision-antes-de-publicar | Comando / | Revisa el vídeo terminado antes de subirlo: formato, zonas seguras, volumen, subtítulos, marca y el fallo tonto que se ve al minuto de publicar. | `/revision-antes-de-publicar` |
-| testimonio-cliente | Comando / | Prepara la entrevista para grabar el testimonio de un cliente: las preguntas exactas, el orden, cómo sacarle frases usables y cómo montarlo después. | `/testimonio-cliente` |
-| analista-de-videos-de-la-competencia | Subagente | Subagente que desmonta los vídeos que mejor funcionan en tu sector y te devuelve su estructura, sus ganchos y el hueco que ellos no están cubriendo. | pídele a Claude «usa el subagente analista-de-videos-de-la-competencia» |
-| archivero-de-tu-videoteca | Subagente | Subagente que ordena, renombra y respalda todo tu material de vídeo, crea copias ligeras para editar y deja un índice donde encuentras cualquier toma en segundos. | pídele a Claude «usa el subagente archivero-de-tu-videoteca» |
-| buscador-de-metraje-y-musica-libres | Subagente | Encuentra vídeos y música gratis que realmente puedas usar sin que te tumben el anuncio ni demanden derechos. | pídele a Claude «usa el subagente buscador-de-metraje-y-musica-libres» |
-| control-calidad-video | Subagente | Revisa un vídeo antes de publicar: formato, resolución, audio, zonas seguras, duración sin sorpresas. | pídele a Claude «usa el subagente control-calidad-video» |
-| cortador-silencios | Subagente | Analiza un vídeo hablado, quita silencios largos, muletillas y falsas tomas, genera montaje limpio. | pídele a Claude «usa el subagente cortador-silencios» |
-| demo-en-pantalla | Subagente | Prepara un vídeo de tu herramienta: qué mostrar, en qué orden, zooms y qué decir para que se entienda. | pídele a Claude «usa el subagente demo-en-pantalla» |
+| audio-limpio | Comando / | Diagnostica y arregla el sonido de un vídeo con ffmpeg: ruido de fondo, volumen bajo, zumbido eléctrico, voz apagada o eco. | `/audio-limpio` o `/arsenal-video-varios:audio-limpio` |
+| auditoria-retencion | Comando / | Analiza los datos de un vídeo que ya publicaste y te dice dónde se va la gente, por qué, y qué cambiar en el siguiente. | `/auditoria-retencion` o `/arsenal-video-varios:auditoria-retencion` |
+| clips-de-video-largo | Comando / | Saca de un vídeo largo o un directo los 6 trozos que funcionan solos en vertical, con su minutaje, su gancho reescrito y su recorte. | `/clips-de-video-largo` o `/arsenal-video-varios:clips-de-video-largo` |
+| ganchos-3-segundos | Comando / | Genera 12 aperturas distintas para el mismo vídeo (texto, imagen y primera frase) y te dice cuáles probar primero y cómo comparar resultados. | `/ganchos-3-segundos` o `/arsenal-video-varios:ganchos-3-segundos` |
+| locucion-ia | Comando / | Prepara tu texto para voz artificial: lo marca con pausas, énfasis y pronunciaciones, elige el tipo de voz y te dice cómo montarlo con el vídeo. | `/locucion-ia` o `/arsenal-video-varios:locucion-ia` |
+| auditor-retencion | Subagente | Analiza la curva de retención de tus vídeos y te dice los segundos donde se va la gente y qué cambiar. | pídele a Claude «usa el subagente auditor-retencion» |
+| despiece-directos | Subagente | Extrae de un vídeo largo los 5-10 clips verticales que funcionan solos, ya recortados. | pídele a Claude «usa el subagente despiece-directos» |
 | diseno-sonoro-video | Subagente | Diseña la banda sonora: música, efectos, ambiente para que la voz no se tape y suene profesional. | pídele a Claude «usa el subagente diseno-sonoro-video» |
-| jefe-de-produccion-de-rodaje-con-movil | Subagente | Ordena los planos de un rodaje móvil por posición de cámara: sin cambiar la luz cada vez, grabas varios vídeos en un día. | pídele a Claude «usa el subagente jefe-de-produccion-de-rodaje-con-movil» |
-| publicacion-multiplataforma | Subagente | Prepara todo lo de subir el vídeo: versiones, títulos, descripciones, capítulos por plataforma. | pídele a Claude «usa el subagente publicacion-multiplataforma» |
-| supervisor-de-continuidad-en-video-con-ia | Subagente | Detecta dónde rompe la coherencia en tus planos generados con IA: personaje, luz, color, movimiento. | pídele a Claude «usa el subagente supervisor-de-continuidad-en-video-con-ia» |
-| testimonial-de-cliente | Subagente | Subagente que dirige un vídeo testimonial de cliente: las preguntas, cómo guiar a quien no sabe hablar a cámara y el permiso por escrito. | pídele a Claude «usa el subagente testimonial-de-cliente» |
+| laboratorio-de-ganchos | Subagente | Subagente que reescribe los 3 primeros segundos de tu vídeo en 10 versiones distintas y te monta el plan para probarlas. | pídele a Claude «usa el subagente laboratorio-de-ganchos» |
+| reencuadre-vertical | Subagente | Convierte un vídeo horizontal en vertical de verdad: recorta plano a plano sin cabezas cortadas. | pídele a Claude «usa el subagente reencuadre-vertical» |
+| tecnico-de-audio-de-video | Subagente | Subagente que arregla el sonido de tus vídeos con ffmpeg: normaliza volumen a la norma de cada plataforma, quita zumbidos y deja el audio listo para publicar. | pídele a Claude «usa el subagente tecnico-de-audio-de-video» |
 
 Licencia: [CC BY 4.0](../../LICENSE). Cítanos si lo usas o lo compartes: «Arsenal del Marketer».

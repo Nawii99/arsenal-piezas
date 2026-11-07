@@ -40,7 +40,7 @@ Cada domingo por la tarde lee el menú de la semana que hayas apuntado en una ho
 
 ## Cuentas necesarias
 - Cuenta de Google con una hoja de cálculo (Google Sheets) donde apuntas el menú de la semana. Google Sheets es gratis; el límite lo pone tu cuota de la API de Google, que para uso personal no se llega a tocar.
-- Cuenta de n8n (self-hosted gratis, o n8n Cloud con plan gratuito de [NÚMERO DE EJECUCIONES] ejecuciones al mes: revisa el límite actual en n8n.io antes de dar por hecho la cifra).
+- Cuenta de n8n (self-hosted gratis, o n8n Cloud con prueba gratuita temporal y después de pago: revisa los planes actuales en n8n.io antes de dar por hecho ningún precio o límite).
 - Una API de IA para redactar la lista agrupada (por ejemplo OpenAI o Anthropic). Tiene coste por uso, normalmente céntimos por ejecución semanal, pero es coste real y hay que darla de alta con una clave (API key).
 - Un bot de Telegram gratis, creado con @BotFather, y tu chat_id para que el mensaje te llegue a ti.
 

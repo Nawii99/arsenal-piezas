@@ -45,15 +45,16 @@ Para cualquier fotógrafo que archiva a mano: coge lo que sueltes en una carpeta
 1. **Schedule Trigger** — Trigger Interval: Minutes, Minutes Between Triggers: 30.
 2. **Google Drive** — Operation: Search. Query String: `'ID_BUZON' in parents and trashed=false`. Return All activado. Fields: `id,name,mimeType`.
 3. **Loop Over Items** — Batch Size: 1.
+3b. **Code «Nombre seguro»** (modo «Run Once for Each Item») — `const ext = String($json.name).split('.').pop().toLowerCase(); if (!['jpg','jpeg','png','tif','tiff','heic','dng','cr2','cr3','nef','arw','raf','orf','rw2'].includes(ext) || !/^[A-Za-z0-9_-]+$/.test($json.id)) throw new Error('Formato no admitido: ' + $json.name); return { json: { ...$json, archivo: $json.id + '.' + ext } };`. En /tmp y en los comandos solo se usa `archivo`.
 4. **Google Drive** — Operation: Download. File ID `={{ $json.id }}`. Put Output File in Field: `data`. En Options activa «File Name» para conservar el nombre.
-5. **Read/Write Files from Disk** — Operation: Write File to Disk. File Path: `=/tmp/foto/{{ $json.name }}`. Input Binary Field: `data`. (Antes crea la carpeta con un Execute Command: `mkdir -p /tmp/foto`.)
-6. **Execute Command «Leer EXIF»** — Command: `exiftool -json -DateTimeOriginal -Model -LensModel -ISO -FNumber -ImageWidth -ImageHeight "/tmp/foto/{{ $('Loop Over Items').item.json.name }}"`.
+5. **Read/Write Files from Disk** — Operation: Write File to Disk. File Path: `=/tmp/foto/{{ $('Nombre seguro').item.json.archivo }}`. Input Binary Field: `data`. (Antes crea la carpeta con un Execute Command: `mkdir -p /tmp/foto`.)
+6. **Execute Command «Leer EXIF»** — Command: `exiftool -json -DateTimeOriginal -Model -LensModel -ISO -FNumber -ImageWidth -ImageHeight "/tmp/foto/{{ $('Nombre seguro').item.json.archivo }}"`.
 7. **Code «Parsear y nombrar»** — convierte el JSON de salida y compone el nombre nuevo (código abajo).
-8. **Execute Command «Sellar IPTC»** — Command: `exiftool -overwrite_original -Artist="Tu Nombre" -Copyright="(c) 2026 Tu Nombre. Todos los derechos reservados" -XMP-dc:Rights="(c) 2026 Tu Nombre" -XMP-xmpRights:WebStatement="https://tuweb.com/licencias" -IPTC:Credit="Tu Nombre" -IPTC:Source="tuweb.com" "/tmp/foto/{{ $json.nombre_original }}"`.
+8. **Execute Command «Sellar IPTC»** — Command: `exiftool -overwrite_original -Artist="Tu Nombre" -Copyright="(c) 2026 Tu Nombre. Todos los derechos reservados" -XMP-dc:Rights="(c) 2026 Tu Nombre" -XMP-xmpRights:WebStatement="https://tuweb.com/licencias" -IPTC:Credit="Tu Nombre" -IPTC:Source="tuweb.com" "/tmp/foto/{{ $json.archivo }}"`.
 9. **Read/Write Files from Disk** — Operation: Read File from Disk, File Path el mismo, campo binario `data`.
-10. **Google Drive** — Operation: Folder > Create. Name `={{ $json.anio }}`, Parent: ARCHIVO. En Options activa «Return existing folder if it exists» o encadena una búsqueda previa para no duplicar carpetas.
+10. **Google Drive** — Operation: Folder > Create. Name `={{ $('Parsear y nombrar').item.json.anio }}`, Parent: ARCHIVO. En Options activa «Return existing folder if it exists» o encadena una búsqueda previa para no duplicar carpetas.
 11. Repite el paso anterior para el mes dentro del año.
-12. **Google Drive** — Operation: Upload. Input Data Field Name: `data`. File Name `={{ $json.nombre_nuevo }}`. Parent Folder: el ID que devolvió el nodo del mes.
+12. **Google Drive** — Operation: Upload. Input Data Field Name: `data`. File Name `={{ $('Parsear y nombrar').item.json.nombre_nuevo }}`. Parent Folder: el ID que devolvió el nodo del mes.
 13. **Google Drive** — Operation: Delete File (el original del BUZÓN) o mejor Operation: Move, para no perder nada.
 14. **Google Sheets** — Operation: Append con todos los campos del inventario.
 15. Rama de error: **IF** con `{{ $json.fecha }}` Is Empty > **Google Drive** Move a la carpeta ERRORES y **Gmail** de aviso.
@@ -71,6 +72,7 @@ for (const item of $input.all()) {
   const ext = original.split('.').pop().toLowerCase();
   salida.push({ json: {
     nombre_original: original,
+    archivo: $('Nombre seguro').item.json.archivo,
     nombre_nuevo: fecha ? `${fecha}_${camara}_${original.replace(/\.[^.]+$/, '')}.${ext}` : original,
     anio: partes[0] || 'sin-fecha',
     mes: partes[1] || '00',
@@ -93,7 +95,8 @@ return salida;
 - **Zona horaria**: el EXIF guarda la hora de la cámara, no la del servidor. Si tu cámara está desajustada, corrige en bloque con `exiftool -AllDates+=1:0:0 0` antes de archivar.
 - **Carpetas duplicadas**: Drive permite dos carpetas con el mismo nombre. Antes de crear, busca con Google Drive > Search y Query `name='2026' and 'ID_ARCHIVO' in parents and mimeType='application/vnd.google-apps.folder'`.
 - **Archivos enormes**: los RAW de 50 MB pueden agotar la memoria de n8n. Sube `N8N_DEFAULT_BINARY_DATA_MODE=filesystem` en las variables de entorno.
-- **Se llena /tmp**: añade un Execute Command final con `rm -f "/tmp/foto/{{ ... }}"`.
+- **Se llena /tmp**: añade un Execute Command final con `rm -f "/tmp/foto/{{ $('Nombre seguro').item.json.archivo }}"`.
+- **Nombres con trampa**: una foto llamada `$(id).jpg` o con comillas ejecutaría órdenes en ExifTool. En /tmp va como `ID-de-Drive.extensión` y el nombre original solo sirve para el nombre nuevo y la hoja; si llega otra extensión, el flujo para: muévela a ERRORES.
 - **Perder originales**: usa Move en lugar de Delete hasta que lleves un mes sin fallos.
 
 ## Cuánto cuesta

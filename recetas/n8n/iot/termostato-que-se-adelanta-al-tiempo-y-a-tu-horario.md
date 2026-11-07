@@ -70,7 +70,7 @@ return plan.map(p => ({ json: p }));
 ```
 5. **Google Sheets** (o el nodo **Edit Fields (Set)** guardando en una hoja `Termostato`) — *Append or Update Row* con `fecha`, `hora`, `consigna`. Guardar el plan permite que un segundo workflow lo ejecute.
 6. Segundo workflow: **Schedule Trigger** `5 * * * *` (cada hora al minuto 5), **Google Sheets** *Get Row(s)* filtrando por fecha y hora actual.
-7. **HTTP Request** — POST a `http://192.168.1.20:8123/api/services/climate/set_temperature`, cabecera `Authorization: Bearer TU_TOKEN`, cuerpo JSON: `{ "entity_id": "climate.local", "temperature": {{ $json.consigna }} }`.
+7. **HTTP Request** — POST a `http://192.168.1.20:8123/api/services/climate/set_temperature`, Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name «Authorization», Value «Bearer TU_TOKEN»); el nodo usa esa credencial. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Cuerpo JSON: `{ "entity_id": "climate.local", "temperature": {{ $json.consigna }} }`.
 8. Opcional: un tercer **Schedule Trigger** mensual que lea el consumo del Shelly EM de la climatización y te mande por Telegram la comparación con el mes anterior.
 
 ## Cómo probarla

@@ -1,6 +1,6 @@
 ---
 name: adaptador-de-mercado
-description: Adapts existing content for another country, language or audience segment, replacing examples, currency, legal references, cultural touchpoints and register rather than translating word for word, and flagging what cannot be reused. Use this agent when the user wants to sell the same offer in Latin America, in English, or to a clearly different audience.
+description: Adapta contenido existente a otro país, idioma o segmento de audiencia, sustituyendo ejemplos, moneda, referencias legales, referentes culturales y registro en lugar de traducir palabra por palabra, y señalando lo que no se puede reutilizar. Úsalo cuando el usuario quiera vender la misma oferta en Latinoamérica, en inglés o a una audiencia claramente distinta.
 tools: Read, Write, Glob, Grep, WebSearch
 ---
 

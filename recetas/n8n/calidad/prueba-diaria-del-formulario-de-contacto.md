@@ -74,6 +74,6 @@ return [{ json: {
 - **Se te llena la base de datos de leads falsos** si el formulario guarda en un CRM: usa siempre el mismo email de prueba y crea un filtro en tu CRM que los descarte.
 
 ## Cuánto cuesta
-- Gratis: una ejecución al día en cualquier plan, incluido el gratuito de n8n Cloud, Make (1.000 operaciones/mes) o Zapier (100 tareas/mes).
+- Gratis: una ejecución al día en n8n auto-alojado (Community Edition), sin límite de ejecuciones. n8n Cloud solo tiene una prueba gratuita temporal y después es de pago. También cabe en los planes gratuitos de Make (1.000 operaciones/mes) o Zapier (100 tareas/mes).
 - Gmail API gratis con cuenta normal o Workspace.
 - El nodo Wait en n8n auto-alojado no consume nada mientras espera.

@@ -46,7 +46,7 @@ Para cualquiera que haya metido IA en su producto y no quiera enterarse del gast
 1. **Schedule Trigger** — `Every Day`, hora `7`, timezone `Europe/Madrid`.
 2. **Code** (nombre: «Rango del mes») — calcula el primer segundo del mes actual en formato Unix.
 3. **HTTP Request** (nombre: «Coste OpenAI») — `GET https://api.openai.com/v1/organization/costs?start_time={{$json.inicioMes}}&bucket_width=1d&limit=31`, Header Auth `Authorization: Bearer TU_ADMIN_KEY`.
-4. **HTTP Request** (nombre: «Coste Anthropic») — `GET https://api.anthropic.com/v1/organizations/cost_report?starting_at={{$json.inicioISO}}`, headers `x-api-key: TU_ADMIN_KEY` y `anthropic-version: 2023-06-01`. Settings: `Continue On Fail` por si no usas Anthropic.
+4. **HTTP Request** (nombre: «Coste Anthropic») — `GET https://api.anthropic.com/v1/organizations/cost_report?starting_at={{$json.inicioISO}}`, Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name `x-api-key`, Value tu Admin key de Anthropic) y la cabecera normal `anthropic-version: 2023-06-01`. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Settings: `Continue On Fail` por si no usas Anthropic.
 5. **Code** (nombre: «Sumar y comparar») — suma ambos proveedores y compara con el presupuesto.
 6. **Google Sheets** — Operation `Append`, guarda la foto del día.
 7. **IF** — Condition: Boolean `{{ $json.hayAviso }}` `is true`.
@@ -90,5 +90,5 @@ return [{ json: { total: Number(total.toFixed(2)), pct: Number(pct.toFixed(1)), 
 
 ### Cuánto cuesta
 - Consultar los endpoints de costes no se factura.
-- n8n, Sheets y Telegram gratis.
+- Sheets y Telegram gratis. n8n autoalojado gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).
 - La receta se paga sola la primera vez que corta un bucle descontrolado.

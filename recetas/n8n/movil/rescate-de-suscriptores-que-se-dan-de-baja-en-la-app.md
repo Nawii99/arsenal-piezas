@@ -83,4 +83,4 @@ Ojo con escribir a quien cancela y vuelve a suscribirse el mismo día: filtra po
 Cumple el RGPD: este es un email de servicio, pero si aprovechas para vender necesitas base legal. Incluye siempre enlace de baja.
 
 ## Cuánto cuesta
-n8n y Airtable: gratis (Airtable free llega a 1.000 registros por base). Brevo: 300 emails al día gratis. RevenueCat gratis hasta 2.500 $ al mes. OpenAI: céntimos.
+n8n autoalojado (Community Edition) y Airtable: gratis (Airtable free llega a 1.000 registros por base); n8n Cloud tiene una prueba gratuita temporal y después planes de pago. Brevo: 300 emails al día gratis. RevenueCat gratis hasta 2.500 $ al mes. OpenAI: céntimos.

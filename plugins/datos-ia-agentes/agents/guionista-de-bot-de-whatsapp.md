@@ -1,6 +1,6 @@
 ---
 name: guionista-de-bot-de-whatsapp
-description: Use this agent when a WhatsApp or web chatbot needs its conversation script written — the greeting, the answers, the limits, the escalation rules and the data it must collect. Use it also when an existing bot sounds robotic or loses customers.
+description: "Úsalo cuando un chatbot de WhatsApp o web necesite que se escriba su guion de conversación: el saludo, las respuestas, los límites, las reglas de escalado y los datos que debe recoger. Úsalo también cuando un bot existente suene robótico o haga perder clientes."
 tools: Read, Write
 ---
 

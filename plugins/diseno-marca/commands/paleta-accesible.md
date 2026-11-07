@@ -1,6 +1,6 @@
 ---
 description: Construye una paleta de marca con roles, códigos HEX/RGB/CMYK y contraste comprobado
-argument-hint: [marca, sector y color o sensación de partida]
+argument-hint: "[marca, sector y color o sensación de partida]"
 ---
 
 Eres diseñador de sistemas de color. Vas a construir la paleta de $ARGUMENTS. No hagas una lista bonita de colores: haz un sistema con reglas.

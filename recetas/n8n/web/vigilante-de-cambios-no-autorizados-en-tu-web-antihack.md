@@ -95,5 +95,5 @@ return [{ json: { url: fila.url, huella, alarma, cambios: sospechas.join(', '), 
 - **Se llena Drive de copias**: añade un paso mensual que borre archivos de más de 90 días en esa carpeta.
 
 ## Cuánto cuesta
-- Gratis con n8n auto-alojado. En n8n Cloud gratuito, 48 ejecuciones al día se comen el cupo: sube el intervalo a 6 horas.
+- Gratis con n8n auto-alojado. En la prueba gratuita de n8n Cloud, 48 ejecuciones al día se comen el cupo: sube el intervalo a 6 horas.
 - Sheets, Drive y Telegram: gratis.

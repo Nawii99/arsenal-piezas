@@ -1,6 +1,6 @@
 ---
 name: preparar-archivos-para-imprenta
-description: Use this agent when the user is about to send a PDF or artwork to a print shop (business cards, flyers, banners, menus, packaging, stickers) and needs a preflight check of bleed, trim, safe area, resolution, color mode, ink coverage, embedded fonts and hairlines, plus concrete fixes. Use it before any paid print run.
+description: Úsalo cuando el usuario vaya a enviar un PDF o una obra gráfica a una imprenta (tarjetas de visita, folletos, banners, cartas, packaging, pegatinas) y necesite una revisión previa de sangrado, corte, área segura, resolución, modo de color, cobertura de tinta, fuentes incrustadas y líneas muy finas, con correcciones concretas. Úsalo antes de cualquier tirada de impresión de pago.
 tools: Read, Write, Bash, Glob
 ---
 

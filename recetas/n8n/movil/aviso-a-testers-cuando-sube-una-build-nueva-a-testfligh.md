@@ -42,7 +42,7 @@ Consulta cada 20 minutos la API de App Store Connect, ve si hay una build nueva 
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Interval: Minutes, Minutes Between Triggers: 20.
-2. **Code** (nombre: Firmar JWT) — genera el token ES256 que exige Apple. Código completo abajo. Pega el contenido del `.p8` en una credencial de tipo variable de entorno o en el propio Code (si el n8n es solo tuyo).
+2. **Code** (nombre: Firmar JWT) — genera el token ES256 que exige Apple. Código completo abajo. Guarda el contenido del `.p8` en las credenciales de n8n o en una variable de entorno del servidor (`APPSTORE_P8`) y léelo desde ahí; NUNCA lo pegues en el código del nodo: un flujo exportado como JSON se llevaría la clave dentro.
 3. **HTTP Request** (nombre: Listar builds) — GET `https://api.appstoreconnect.apple.com/v1/builds`. Headers: `Authorization` = `Bearer {{ $json.token }}`. Query Parameters: `filter[app]` = tu appId numérico, `sort` = `-uploadedDate`, `limit` = `5`, `fields[builds]` = `version,uploadedDate,processingState,expired`.
 4. **Code** (nombre: Quedarme con la última procesada) — filtra `processingState === 'VALID'` y `expired === false`, y devuelve la primera.
 5. **Google Sheets** — Get Row(s) de `builds`, Filter: build_id igual al de la build.
@@ -56,9 +56,9 @@ Consulta cada 20 minutos la API de App Store Connect, ve si hay una build nueva 
 const crypto = require('crypto');
 const KEY_ID = 'ABCD123456';
 const ISSUER_ID = '69a6de70-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
-const P8 = `-----BEGIN PRIVATE KEY-----
-AQUI_PEGAS_EL_CONTENIDO_DEL_FICHERO_P8
------END PRIVATE KEY-----`;
+// La clave .p8 se lee de una variable de entorno del servidor (o de las credenciales de n8n); nunca se pega aquí.
+// Si usas una variable, que conserve los saltos de línea del .p8. Puede hacer falta N8N_BLOCK_ENV_ACCESS_IN_NODE=false.
+const P8 = $env.APPSTORE_P8;
 const b64 = (o) => Buffer.from(JSON.stringify(o)).toString('base64url');
 const ahora = Math.floor(Date.now() / 1000);
 const header = b64({ alg: 'ES256', kid: KEY_ID, typ: 'JWT' });

@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-foto-revision",
+  "version": "1.0.0",
+  "description": "Foto e imagen · Revisar calidad antes de publicar: 2 subagentes, 2 comandos /, 1 skill en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "foto",
+    "arsenal-del-marketer",
+    "revision"
+  ]
+}

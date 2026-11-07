@@ -43,7 +43,7 @@ Todas las noches lee los kWh producidos por tu inversor y los compara con la rad
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — *Cron* `0 22 * * *` (22:00, ya de noche), zona `Europe/Madrid`.
-2. **HTTP Request** (*Producción*) — la URL de tu inversor. Si es SolarEdge: `https://monitoringapi.solaredge.com/site/TU_ID/energy?timeUnit=DAY&startDate={{ $now.format('yyyy-MM-dd') }}&endDate={{ $now.format('yyyy-MM-dd') }}&api_key=TU_CLAVE`.
+2. **HTTP Request** (*Producción*) — la URL de tu inversor. Si es SolarEdge: `https://monitoringapi.solaredge.com/site/TU_ID/energy?timeUnit=DAY&startDate={{ $now.format('yyyy-MM-dd') }}&endDate={{ $now.format('yyyy-MM-dd') }}`. Authentication: Generic Credential Type > Query Auth, con una credencial de n8n (Name `api_key`, Value tu clave de SolarEdge). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 3. **HTTP Request** (*Radiación*) — GET a `https://api.open-meteo.com/v1/forecast?latitude=40.41&longitude=-3.70&daily=shortwave_radiation_sum&past_days=1&forecast_days=1&timezone=Europe%2FMadrid`.
 4. **Merge** — modo *Combine > All Possible Combinations*, para tener los dos datos en el mismo ítem.
 5. **Code** — calcula lo esperado y decide:

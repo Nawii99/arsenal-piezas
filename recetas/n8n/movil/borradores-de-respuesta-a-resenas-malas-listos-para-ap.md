@@ -50,7 +50,7 @@ Para quien tiene app en Google Play y quiere contestar a todo el mundo sin dedic
 4. **OpenAI** (nodo `Message a Model`, modelo `gpt-4o-mini`) o **HTTP Request** a la API de Anthropic. Prompt de sistema: «Eres el responsable de atención al cliente de {NOMBRE APP}. Escribe una respuesta pública de máximo 350 caracteres a esta reseña. Tono cercano, tuteando, español de España. Reconoce el problema, di qué vais a hacer y ofrece escribir a soporte@tuempresa.com. Nada de excusas ni de vender.»
 5. **Google Sheets** — `Append` en `Respuestas` con estado `pendiente`.
 6. **Gmail** — Send Message a tu correo con el original, el borrador y dos enlaces: `https://TU-N8N/webhook/aprobar?id={{$json.reviewId}}` y `...&accion=descartar`.
-7. **Webhook** (flujo aparte, ruta `aprobar`, método GET) — recibe el clic.
+7. **Webhook** (flujo aparte, ruta `aprobar`, método GET) — recibe el clic. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 8. **IF** — comprueba `{{ $json.query.accion }}` distinto de `descartar`.
 9. **Google Sheets** — `Get Row(s)` filtrando por `reviewId` para recuperar el borrador.
 10. **HTTP Request** — POST a `https://androidpublisher.googleapis.com/androidpublisher/v3/applications/com.tuempresa.tuapp/reviews/{{$json.reviewId}}:reply` con body JSON `{ "replyText": "{{$json.borrador}}" }`.

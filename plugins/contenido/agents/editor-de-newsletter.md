@@ -1,6 +1,6 @@
 ---
 name: editor-de-newsletter
-description: Turns the user's raw weekly notes, links and observations into a finished newsletter issue built around a single idea, with subject line options, a real example, and a clear closing action. Use this agent for the recurring weekly or biweekly email to an existing subscriber list.
+description: Convierte las notas semanales, enlaces y observaciones en bruto del usuario en un número de newsletter terminado construido en torno a una sola idea, con opciones de asunto, un ejemplo real y una acción de cierre clara. Úsalo para el correo recurrente semanal o quincenal a una lista de suscriptores existente.
 tools: Read, Write, Glob, Grep
 ---
 

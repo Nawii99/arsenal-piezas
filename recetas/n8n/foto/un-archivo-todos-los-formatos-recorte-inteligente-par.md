@@ -35,7 +35,7 @@ Ahorra 10-15 minutos por foto: con 40 publicaciones al mes son unas 8 horas, y e
 Para creadores de contenido, tiendas y fotógrafos que publican en varios sitios: dejas una foto en una carpeta y aparecen automáticamente seis versiones (1:1, 4:5, 9:16, 16:9, portada de blog y miniatura) recortadas con detección automática del sujeto, optimizadas de peso y con el nombre de cada formato en el archivo.
 
 ## Lo que necesitas antes
-- n8n (Cloud o auto-alojado).
+- n8n (auto-alojado gratis; Cloud tiene prueba temporal y luego es de pago).
 - Cloudinary gratuita: Cloud name, API Key, API Secret. El recorte inteligente usa `g_auto`, que está incluido en el plan gratuito.
 - Credencial Google Drive OAuth2.
 - Carpetas en Drive: `MAESTRAS` (entrada) y `FORMATOS` con subcarpetas `1x1`, `4x5`, `9x16`, `16x9`, `blog`, `mini`.
@@ -96,4 +96,4 @@ return FORMATOS.map(f => ({ json: {
 - **Créditos**: seis transformaciones por foto. Con 200 fotos al mes son 1.200 transformaciones, muy dentro del plan gratuito.
 
 ## Cuánto cuesta
-n8n, Drive y Airtable (plan gratuito): 0 €. Cloudinary: 25 créditos/mes gratis, que dan de sobra para unos cuantos miles de transformaciones. Alternativa 100 % gratis y sin límite: hacerlo con ImageMagick en n8n auto-alojado, pero pierdes el recorte inteligente y tendrás que recortar por el centro.
+n8n autoalojado (Community Edition), Drive y Airtable (plan gratuito): 0 €; n8n Cloud tiene una prueba gratuita temporal y después planes de pago. Cloudinary: 25 créditos/mes gratis, que dan de sobra para unos cuantos miles de transformaciones. Alternativa 100 % gratis y sin límite: hacerlo con ImageMagick en n8n auto-alojado, pero pierdes el recorte inteligente y tendrás que recortar por el centro.

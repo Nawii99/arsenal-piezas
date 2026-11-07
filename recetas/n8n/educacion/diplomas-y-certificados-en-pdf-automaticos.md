@@ -59,7 +59,7 @@ return $input.item;
 {"requests":[{"replaceAllText":{"containsText":{"text":"{{NOMBRE}}"},"replaceText":"{{ $('Code').item.json.nombre }}"}},{"replaceAllText":{"containsText":{"text":"{{CURSO}}"},"replaceText":"{{ $('Code').item.json.curso }}"}},{"replaceAllText":{"containsText":{"text":"{{HORAS}}"},"replaceText":"{{ $('Code').item.json.horas }}"}},{"replaceAllText":{"containsText":{"text":"{{FECHA}}"},"replaceText":"{{ $('Code').item.json.fechaES }}"}},{"replaceAllText":{"containsText":{"text":"{{CODIGO}}"},"replaceText":"{{ $('Code').item.json.codigo }}"}}]}
 ```
 7) **HTTP Request** (Download). Method: GET. URL: `https://www.googleapis.com/drive/v3/files/{{ $('Google Drive').item.json.id }}/export?mimeType=application/pdf`. Response Format: File. Property Name: `data`.
-8) **Google Drive** (File > Upload). Binary Property: `data`. Name: `{{ $('Code').item.json.codigo }}.pdf`. Parent: «Diplomas». Después un **Google Drive** (Share) con Permission «anyone», Role «reader» si quieres enlace público.
+8) **Google Drive** (File > Upload). Binary Property: `data`. Name: `{{ $('Code').item.json.codigo }}.pdf`. Parent: «Diplomas». No lo compartas con «anyone» ni con enlace público: el diploma lleva nombre y datos del alumno (datos personales). Si el alumno debe poder abrirlo desde Drive, usa un **Google Drive** (Share) con Type `user`, Role `reader` y su correo; si no, basta el PDF adjunto del paso 9.
 9) **Gmail** (Send). Para el alumno, con el PDF adjunto (activa «Attachments», Binary Property `data`). Texto: enhorabuena, código de verificación y una frase invitando a compartirlo en LinkedIn.
 10) **Google Sheets** (Update Row) para guardar `codigo`, `pdf_url` y poner `estado` = `diploma_enviado`.
 11) **Google Drive** (File > Delete) sobre la copia de Slides, para no llenar el Drive de borradores.
@@ -74,7 +74,7 @@ return $input.item;
 - **Error 403 en Slides API**: no has activado Google Slides API en el proyecto de Google Cloud, o la credencial no tiene el scope. Vuelve a autorizar la credencial en n8n.
 - **Acentos raros en el PDF**: usa una fuente estándar de Google Slides.
 - **Duplicados**: el IF del paso 3 y el cambio de estado del paso 10 lo evitan.
-- **Verificación**: si quieres que el código se pueda comprobar, publica la hoja «Finalizados» filtrada como página web y pon el enlace en el diploma.
+- **Verificación**: si quieres que el código se pueda comprobar, crea una hoja aparte «Verificación» solo con código, curso y fecha (sin nombre ni email) y publica solo esa; no publiques «Finalizados», que lleva nombres y emails.
 
 ## Cuánto cuesta
 - Gratis: Slides, Drive, Sheets y Gmail entran en la cuenta de Google. n8n auto-alojado, gratis.

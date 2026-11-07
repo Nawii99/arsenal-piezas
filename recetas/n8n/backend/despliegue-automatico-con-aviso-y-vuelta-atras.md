@@ -37,7 +37,7 @@ Escucha los push a `main` en tu repositorio, valida la firma del webhook, actual
 ## Lo que necesitas antes
 - n8n en el mismo servidor que la app, con permiso para ejecutar comandos y para reiniciar el servicio (`sudo visudo` y añade: `node ALL=(ALL) NOPASSWD: /bin/systemctl restart mi-app`).
 - El repositorio ya clonado en `/srv/mi-app` con acceso por deploy key.
-- En GitHub: Settings del repo → Webhooks → Add webhook. Payload URL: `https://tu-n8n/webhook/deploy`, Content type: `application/json`, Secret: inventa uno largo, Events: solo «Just the push event».
+- En GitHub: Settings del repo → Webhooks → Add webhook. Payload URL: `https://tu-n8n/webhook/deploy`, Content type: `application/json`, Secret: inventa uno largo y guárdalo en la variable de entorno `GH_SECRET` de n8n (no lo escribas en ningún nodo), Events: solo «Just the push event».
 - Bot de Telegram.
 
 ## Los nodos, en orden
@@ -45,7 +45,7 @@ Escucha los push a `main` en tu repositorio, valida la firma del webhook, actual
 2. **Code** (renómbralo «Validar y filtrar»):
 ```javascript
 const crypto = require('crypto');
-const SECRETO = 'PON_AQUI_EL_SECRETO_DE_GITHUB';
+const SECRETO = $env.GH_SECRET; // variable de entorno de n8n, nunca el secreto escrito aquí
 const req = $input.item.json;
 const bruto = req.body ? req.body.toString() : '';
 const firma = (req.headers['x-hub-signature-256'] || '').replace('sha256=', '');
@@ -66,7 +66,7 @@ return { json: {
 ```
 cd /srv/mi-app && git fetch --all && git reset --hard origin/main && npm ci --omit=dev && npm run build && sudo systemctl restart mi-app && sleep 8 && echo DESPLEGADO
 ```
-6. **HTTP Request** (renómbralo «Prueba de humo») — GET a `https://tudominio.com/health`, Options → Timeout 10000, Never Error on HTTP Status: on, Retry On Fail: on, Max Tries 3, Wait Between Tries 5000.
+6. **HTTP Request** (renómbralo «Prueba de humo») — GET a `https://tudominio.com/health`, Options → Timeout 10000, Full Response: on, Never Error on HTTP Status: on, Retry On Fail: on, Max Tries 3, Wait Between Tries 5000.
 7. **IF** — Number: `{{ $json.statusCode }}` equal to 200.
 8. Rama **true** → **Telegram**: `✅ Desplegado {{ $('Validar y filtrar').first().json.commit }} por {{ $('Validar y filtrar').first().json.autor }}`.
 9. Rama **false** → **Execute Command** (renómbralo «Rollback»):
@@ -85,7 +85,8 @@ cd /srv/mi-app && git reset --hard {{ $('Guardar versión actual').first().json.
 - **Despliegues solapados**: dos push seguidos lanzan dos despliegues a la vez. En Settings del workflow pon «Execution Order: v1» y limita la concurrencia, o crea un fichero de bloqueo: `[ -f /tmp/deploy.lock ] && exit 1; touch /tmp/deploy.lock; ...; rm /tmp/deploy.lock`.
 - **Migraciones de base de datos**: si tu despliegue cambia el esquema, el rollback de código no revierte la base. Haz migraciones compatibles hacia atrás, siempre.
 - **Timeout de GitHub**: por eso el Webhook responde de inmediato y el trabajo va después.
-- **Secreto expuesto**: no subas nunca el secreto al repo. Mejor en variable de entorno de n8n (`process.env.GH_SECRET`).
+- **Secreto expuesto**: no subas nunca el secreto al repo ni lo escribas en el nodo Code: un flujo exportado se llevaría la clave. Va en la variable de entorno `GH_SECRET` de n8n y se lee con `$env.GH_SECRET` (si tu n8n bloquea el acceso a variables desde los nodos, ajusta `N8N_BLOCK_ENV_ACCESS_IN_NODE=false`).
+- **`statusCode` vacío en el IF**: sin «Full Response» el HTTP Request solo devuelve el cuerpo y el IF nunca ve 200; por eso va activado.
 
 ## Cuánto cuesta
 0 € en herramientas: n8n auto-alojado, GitHub webhooks y Telegram son gratis. Solo el VPS que ya pagas.

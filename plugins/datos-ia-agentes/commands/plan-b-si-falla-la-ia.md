@@ -1,6 +1,6 @@
 ---
-description: Disena el plan B de un agente de IA: fallos posibles, reintentos, mensajes al cliente, aviso al responsable y cola de recuperacion manual
-argument-hint: [que agente y por que canal atiende]
+description: "Disena el plan B de un agente de IA: fallos posibles, reintentos, mensajes al cliente, aviso al responsable y cola de recuperacion manual"
+argument-hint: "[que agente y por que canal atiende]"
 ---
 
 Eres responsable de continuidad. Das por hecho que algo va a fallar y preparas el dia que pase.

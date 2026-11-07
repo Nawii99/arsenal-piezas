@@ -44,7 +44,7 @@ Es para el que ya tiene la web o el backend detrás de Cloudflare y quiere enter
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Interval: Hours, Hours Between Triggers: 1.
-2. **HTTP Request** — Method POST, URL `https://api.cloudflare.com/client/v4/graphql`. En Headers: `Authorization` = `Bearer TU_TOKEN` y `Content-Type` = `application/json`. En Body (JSON) manda la consulta GraphQL con tu zoneTag y el rango de la última hora.
+2. **HTTP Request** — Method POST, URL `https://api.cloudflare.com/client/v4/graphql`. Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`); en Headers solo `Content-Type` = `application/json`. No pegues el token en el nodo: si exportas o compartes el flujo como JSON, se iría con él. En Body (JSON) manda la consulta GraphQL con tu zoneTag, el rango de la última hora y las dimensiones `clientRequestPath` y `edgeResponseStatus` (esta última sirve para contar los errores 5xx).
 3. **Code** — aplana la respuesta de GraphQL y calcula los milisegundos por ruta.
 4. **Google Sheets** — Operation: Append, hoja `latencias`, mapeo automático de columnas.
 5. **IF** — condición numérica: `ms_medios` mayor que 800 O `errores_5xx` mayor que 5.
@@ -52,15 +52,26 @@ Es para el que ya tiene la web o el backend detrás de Cloudflare y quiere enter
 
 ## El código del nodo Code
 ```js
+// La consulta GraphQL debe agrupar por `clientRequestPath` Y por `edgeResponseStatus` para poder contar los 5xx.
 const zonas = $input.first().json.data.viewer.zones[0];
-const filas = zonas.httpRequestsAdaptiveGroups.map(g => ({
-  fecha: new Date().toISOString(),
-  ruta: g.dimensions.clientRequestPath || '/',
-  peticiones: g.count,
-  ms_medios: Math.round((g.avg.originResponseDurationMs || 0)),
-  errores_5xx: g.sum.responseStatusMap ? 0 : 0
-}));
-return filas.filter(f => f.peticiones > 20).map(json => ({ json }));
+const porRuta = {};
+for (const g of zonas.httpRequestsAdaptiveGroups) {
+  const ruta = g.dimensions.clientRequestPath || '/';
+  const estado = Number(g.dimensions.edgeResponseStatus || 0);
+  const r = porRuta[ruta] || (porRuta[ruta] = { peticiones: 0, ms_total: 0, errores_5xx: 0 });
+  r.peticiones += g.count;
+  r.ms_total += (g.avg.originResponseDurationMs || 0) * g.count;
+  if (estado >= 500) r.errores_5xx += g.count;
+}
+const fecha = new Date().toISOString();
+return Object.entries(porRuta)
+  .filter(([, r]) => r.peticiones > 20)
+  .map(([ruta, r]) => ({ json: {
+    fecha, ruta,
+    peticiones: r.peticiones,
+    ms_medios: Math.round(r.ms_total / r.peticiones),
+    errores_5xx: r.errores_5xx
+  } }));
 ```
 
 ## Cómo probarla
@@ -75,5 +86,5 @@ return filas.filter(f => f.peticiones > 20).map(json => ({ json }));
 
 ## Cuánto cuesta
 - Cloudflare: gratis en el plan Free.
-- n8n auto-alojado: gratis. En n8n Cloud son 24 ejecuciones al día, dentro del plan de arranque.
+- n8n auto-alojado: gratis. En n8n Cloud son 24 ejecuciones al día contra el límite de tu plan de pago (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).
 - Google Sheets y Slack: gratis.

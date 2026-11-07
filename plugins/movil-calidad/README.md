@@ -1,6 +1,6 @@
 # arsenal-movil-calidad · Móvil · Pruebas, permisos y privacidad
 
-Móvil · Pruebas, permisos y privacidad: 6 skills, 6 subagentes, 4 comandos / en español, del Arsenal del Marketer.
+Móvil · Pruebas, permisos y privacidad: 3 skills, 2 subagentes, 2 comandos / en español, del Arsenal del Marketer.
 
 ## Instalar
 
@@ -13,21 +13,12 @@ Móvil · Pruebas, permisos y privacidad: 6 skills, 6 subagentes, 4 comandos / e
 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
-| plan-copia-seguridad-movil | Comando / | Genera un plan de copia de seguridad del móvil paso a paso, para quien no ha hecho nunca una copia de seguridad. | `/plan-copia-seguridad-movil` |
-| presupuesto-seguridad-movil | Comando / | Comando que genera, a partir de las notas de una auditoría, un presupuesto listo para enviar al cliente con precio orientativo, IVA y plazo. | `/presupuesto-seguridad-movil` |
-| probar-en-movil | Comando / | Un plan de pruebas manual para probar tu app o tu web en móviles reales antes de enseñarla, con la lista exacta de qué tocar y qué mirar. | `/probar-en-movil` |
-| reclutar-betas | Comando / | Monta la prueba beta de tu app: a quién invitas, qué les pides que hagan, qué les escribes y cómo recoges lo que te cuentan. | `/reclutar-betas` |
-| auditar-permisos-movil | Skill | Revisa los permisos de las apps del móvil (Android o iPhone) y dice cuáles quitar, para quien no ha tocado esto nunca. | se activa sola cuando hace falta |
-| auditoria-movil-web | Skill | Por qué tu web pierde gente en el móvil y qué arreglas primero. | se activa sola cuando hace falta |
-| auditoria-seguridad-movil | Skill | Skill de Claude Code que guía la auditoría de seguridad y privacidad de un móvil (permisos, copias de seguridad, cifrado, borrado seguro) y genera el informe que se entrega como servicio. | se activa sola cuando hace falta |
-| configurar-copia-seguridad-movil | Skill | Skill que deja un móvil Android o iPhone con copia de seguridad automática y cifrada activada en una sola sesión, incluyendo el caso aparte de WhatsApp. | se activa sola cuando hace falta |
+| permisos-app | Comando / | Revisa qué permisos pide tu app, quita los que sobran y escribe los textos que ve el usuario para que acepte los que de verdad importan. | `/permisos-app` o `/arsenal-movil-calidad:permisos-app` |
+| reclutar-betas | Comando / | Monta la prueba beta de tu app: a quién invitas, qué les pides que hagan, qué les escribes y cómo recoges lo que te cuentan. | `/reclutar-betas` o `/arsenal-movil-calidad:reclutar-betas` |
 | permisos-privacidad-app | Skill | Escribe los textos de permisos, la ficha de datos de las tiendas y la política de privacidad de tu app, sin quedarte corto ni pasarte. | se activa sola cuando hace falta |
-| plan-pruebas-movil | Skill | Cómo probar a mano tu app o web en móvil antes de publicarla (sin ser técnico). | se activa sola cuando hace falta |
+| privacidad-permisos-app | Skill | Prepara la parte legal y de privacidad de tu app: qué datos declaras en cada tienda, la política de privacidad y cómo pedir permisos sin que te rechacen. | se activa sola cuando hace falta |
+| pruebas-antes-publicar-app | Skill | La checklist de pruebas que haces a mano antes de publicar tu app o actualización. | se activa sola cuando hace falta |
 | auditor-arranque-y-peso-app | Subagente | Mide cuánto pesa tu app y cuánto tarda en abrirse, y te da la lista de recortes concretos ordenados por lo que más adelgaza. | pídele a Claude «usa el subagente auditor-arranque-y-peso-app» |
-| auditor-formularios-y-teclado-movil | Subagente | Revisa tus formularios y tu proceso de compra en el móvil: teclados, autorrellenado, errores y el botón que tapa el teclado. | pídele a Claude «usa el subagente auditor-formularios-y-teclado-movil» |
-| auditor-privacidad-movil | Subagente | Hace una auditoría completa de seguridad y privacidad del móvil: bloqueo, cifrado, permisos, copia de seguridad y borrado seguro, con informe priorizado. | pídele a Claude «usa el subagente auditor-privacidad-movil» |
-| auditor-web-movil | Subagente | Audita tu web o tienda tal y como la ve un cliente desde el móvil: velocidad, botones, formularios, texto y lo que estorba al comprar. | pídele a Claude «usa el subagente auditor-web-movil» |
-| plan-pruebas-dispositivos | Subagente | Diseña y ejecuta contigo el plan de pruebas de tu app en móviles reales: qué probar, en qué modelos y en qué orden. | pídele a Claude «usa el subagente plan-pruebas-dispositivos» |
-| revisor-riesgo-permisos-apps | Subagente | Subagente que clasifica el riesgo de cada app según los permisos que tiene concedidos, para alimentar el informe de auditoría de seguridad móvil que se vende como servicio. | pídele a Claude «usa el subagente revisor-riesgo-permisos-apps» |
+| traductor-de-crashes-movil | Subagente | Coge los informes de fallos y cierres inesperados de tu app, te dice en castellano qué se rompe, a cuánta gente afecta y qué arreglar primero. | pídele a Claude «usa el subagente traductor-de-crashes-movil» |
 
 Licencia: [CC BY 4.0](../../LICENSE). Cítanos si lo usas o lo compartes: «Arsenal del Marketer».

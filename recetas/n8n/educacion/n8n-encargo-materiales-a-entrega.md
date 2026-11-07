@@ -64,7 +64,7 @@ Conecta Tally con n8n desde la pestaña Integrations de Tally pegando la URL del
 
 Dos opciones según cómo cobres:
 
-- Con Stripe: añade antes un nodo Stripe Trigger para el evento de pago completado y cruza el correo del pagador con el del formulario. Si coinciden, sigue.
+- Con Stripe: añade antes un nodo Stripe Trigger para el evento de pago completado y cruza el correo del pagador con el del formulario. Si coinciden, sigue. El Stripe Trigger comprueba la firma del evento; aun así, comprueba que el estado real del pago sea `paid` (evento `checkout.session.completed` o `payment_intent.succeeded`) y guarda el id del evento para no generar dos veces el pack si Stripe lo reenvía.
 - Sin Stripe: el formulario guarda la fila en una hoja de Google Sheets con una columna "pagado" vacía. Cuando recibes el Bizum o la transferencia, escribes SÍ en esa columna. Un Google Sheets Trigger de tipo "fila actualizada" arranca el resto del flujo.
 
 Si no está pagado, el flujo termina aquí. No se generan materiales para nadie que no haya pagado el 50 % inicial.

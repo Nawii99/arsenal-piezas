@@ -43,7 +43,7 @@ Cuando llega un email con una factura adjunta en PDF, extrae los datos con IA, l
 - Cuenta de OpenAI con API key: de pago por uso, no es gratis; calcula unos céntimos por factura procesada y revisa el precio actual antes de automatizar en volumen.
 - Cuenta de Google con Google Sheets: gratis.
 - Bot de Telegram (se crea gratis con @BotFather): gratis.
-- n8n: si usas n8n cloud, el plan gratuito tiene límite de ejecuciones al mes; si lo instalas tú (self-hosted), no hay ese límite pero lo mantienes tú.
+- n8n: si usas n8n Cloud, solo hay una prueba gratuita temporal y después es de pago; si lo instalas tú (self-hosted, Community Edition), es gratis pero lo mantienes tú.
 
 ## Nodos, en orden
 1. Gmail Trigger: se dispara cuando llega un email nuevo a una carpeta o etiqueta concreta (crea una etiqueta "facturas" en Gmail y filtra solo esa).

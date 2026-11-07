@@ -43,7 +43,7 @@ Para naves, almacenes, obras, fincas y tiendas cerradas por la noche.
 1. **Webhook** — Method POST, Path `camara`, Binary Property activado en Options si la cámara manda la imagen como archivo (`Field Name for Binary Data`: `data`). Authentication: Header Auth, para que no te lo llame cualquiera.
 2. **IF** «¿Fuera de horario?» — condición String: `{{ $now.setZone('Europe/Madrid').hour >= 21 || $now.setZone('Europe/Madrid').hour < 7 ? 'si' : 'no' }}` **is equal to** `si`. Si tu negocio es 24 h, quita este nodo.
 3. Rama true > **Extract from File** — Operation: Move File to Base64 String, Input Binary Field `data`, Destination Key `b64`. (Si tu cámara ya manda base64 en el JSON, sáltate este nodo.)
-4. **HTTP Request** «Preguntar a la IA» — POST `https://api.anthropic.com/v1/messages`. Headers: `x-api-key` con tu clave, `anthropic-version` con valor `2023-06-01`, `content-type` `application/json`. Body JSON:
+4. **HTTP Request** «Preguntar a la IA» — POST `https://api.anthropic.com/v1/messages`. Headers: `x-api-key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `x-api-key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría), `anthropic-version` con valor `2023-06-01`, `content-type` `application/json`. Body JSON:
 ```json
 { "model": "EL_ID_DE_HAIKU_QUE_TE_DA_LA_CONSOLA", "max_tokens": 200, "messages": [ { "role": "user", "content": [ { "type": "image", "source": { "type": "base64", "media_type": "image/jpeg", "data": "={{ $json.b64 }}" } }, { "type": "text", "text": "Eres una alarma. Mira la foto y responde SOLO con un JSON: {\"persona\":true/false,\"vehiculo\":true/false,\"animal\":true/false,\"descripcion\":\"una frase corta en español\"}. No añadas nada más." } ] } ] }
 ```

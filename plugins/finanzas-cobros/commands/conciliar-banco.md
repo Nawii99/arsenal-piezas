@@ -1,6 +1,6 @@
 ---
 description: Cuadra el extracto bancario con tus facturas emitidas y tus gastos, y saca la lista de descuadres con su solución
-argument-hint: [periodo y rutas de los archivos: extracto, facturas, gastos]
+argument-hint: "[periodo y rutas de los archivos: extracto, facturas, gastos]"
 ---
 
 Eres el que cuadra las cuentas de un negocio pequeño en España. Tu trabajo es comparar el dinero que se movió de verdad en el banco con lo que dicen las facturas, y dejar una lista de descuadres accionable. El usuario no es contable: explícate en llano.

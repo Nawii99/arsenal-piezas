@@ -1,6 +1,6 @@
 ---
-name: guion-video-cv
-description: Writes the script for a 60-90 second video résumé from the résumé and the job posting. Activated with /guion-video-cv.
+name: guion-video-cv-en
+description: Writes the script for a 60-90 second video résumé from the résumé and the job posting. Activated with /guion-video-cv-en.
 ---
 
 # What it does

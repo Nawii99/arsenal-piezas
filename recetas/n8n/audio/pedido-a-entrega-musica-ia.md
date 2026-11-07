@@ -33,7 +33,7 @@ n8n + Stripe + Google Drive + Gmail + Google Sheets…
 
 1. Disparador: nodo "Form Trigger" de n8n (gratis, incluido) con un formulario donde el cliente elige el servicio (canción a medida, separar pistas, remezcla, doblaje), escribe el brief y deja su email.
 2. Nodo de Stripe (Payment Link o Checkout) para cobrar el precio fijo del servicio elegido; la cuenta de Stripe es gratis de crear pero cobra comisión por cada cobro, revisa el porcentaje actual en España antes de fijar precios.
-3. Nodo "Webhook" que escucha la confirmación de pago de Stripe antes de seguir: así no se empieza a trabajar en un encargo que no se ha pagado.
+3. Nodo "Stripe Trigger" (comprueba la firma del evento) o "Webhook" que escucha la confirmación de pago de Stripe antes de seguir; con un Webhook genérico, verifica la cabecera `Stripe-Signature` con el «signing secret» del endpoint, guardado en las credenciales o en una variable de entorno. Sigue solo si el evento es `checkout.session.completed` con `payment_status` = `paid` y guarda el id del evento para no procesarlo dos veces: así no se empieza a trabajar en un encargo que no se ha pagado.
 4. Nodo "Set" que arma un resumen del pedido (servicio, brief, email del cliente, importe cobrado) para pasarlo al siguiente paso.
 5. Nodo "Send Email" o "Telegram" que te avisa a ti (o a tu operador) con ese resumen: hoy no existe una API pública y estable de Suno o Udio, así que la canción se genera a mano, no de forma automática.
 6. Aviso de riesgo: si en el futuro usas una API no oficial de estas herramientas para automatizar la generación, revisa antes sus condiciones de uso; usar una vía no soportada puede acabar en el bloqueo de la cuenta con la que generas la música.
@@ -43,4 +43,4 @@ n8n + Stripe + Google Drive + Gmail + Google Sheets…
 10. Nodo "Google Sheets" (gratis) que registra el pedido: fecha, cliente, servicio, importe cobrado, si la factura está emitida o pendiente.
 11. Nodo "IF" que comprueba si el cliente pidió factura con NIF; si es así, te avisa a ti para emitirla a mano o conectarlo con tu programa de facturación de autónomos.
 12. Cómo probarlo sin liarla: usa la clave de test de Stripe (sin cobros reales), rellena el formulario con tus propios datos y comprueba que el correo final llega y que el enlace de Drive funciona, antes de pasar a las claves reales.
-13. Límite a vigilar cada mes: la versión gratuita de n8n cloud tiene un tope de ejecuciones; si lo superas, el flujo se para y el cliente que ya ha pagado no recibe nada, así que revisa el contador antes de que pase eso.
+13. Límite a vigilar cada mes: n8n Cloud no tiene plan gratuito permanente (hay una prueba gratuita temporal y después planes de pago con tope de ejecuciones; autoalojado no hay tope); si lo superas o la prueba termina, el flujo se para y el cliente que ya ha pagado no recibe nada, así que revisa el contador antes de que pase eso.

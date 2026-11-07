@@ -41,7 +41,7 @@ Tu flujo apunta a esta URL en vez de a la pasarela, el servicio de envíos o el 
 - Google: cuenta normal para Google Sheets, gratis. Crea una hoja "MAQUETA - llamadas" con columnas: fecha, ruta, datos_recibidos, respuesta_enviada.
 
 ## Nodos, en orden
-1. **Webhook** (disparador). Método POST. Ruta: `maqueta-pagos-7f3k` (añade siempre una palabra difícil de adivinar: la URL es pública y quien la conozca puede escribir en tu hoja). Respuesta: "Using Respond to Webhook node".
+1. **Webhook** (disparador). Método POST. Ruta: `maqueta-pagos-7f3k` (añade siempre una palabra difícil de adivinar: la URL es pública y quien la conozca puede escribir en tu hoja). Respuesta: "Using Respond to Webhook node". Este Webhook recibe pagos: verifica la cabecera `Stripe-Signature` con el signing secret del endpoint (leído de una variable de entorno) o usa el nodo Stripe Trigger, comprueba que el pago está pagado y descarta eventos repetidos por su `id`; una URL secreta no autentica nada.
 2. **Edit Fields (Set)**. Crea la respuesta falsa: `estado` = "aprobado", `id_operacion` = "TEST-0001", `importe` = el importe que llegue en el webhook, `fecha` = ahora. Para simular un fallo cambia `estado` a "rechazado" y guarda; no hay que tocar nada más.
 3. **Google Sheets** (Append row). Conecta tu cuenta y la hoja "MAQUETA - llamadas". Rellena fecha, ruta, datos_recibidos (cuerpo del webhook) y respuesta_enviada (campos del Set).
 4. **Respond to Webhook**. Respuesta JSON con los campos del Set. Código 200. Si simulas fallo, 402 o 500, para ver cómo reacciona tu flujo.

@@ -1,6 +1,6 @@
 ---
 name: legal-y-riesgos-instalacion
-description: Clarifies what you may legally do yourself on an electrical/IoT installation in Spain, what requires a registered installer, and what paperwork, CE marking, insurance and GDPR duties apply before charging for the work. Use before taking a first paid installation job, or when work involves the electrical panel, cameras, or premises with employees or public access.
+description: Aclara qué puedes hacer legalmente por tu cuenta en una instalación eléctrica/IoT en España, qué requiere un instalador autorizado, y qué papeleo, marcado CE, seguros y obligaciones del RGPD se aplican antes de cobrar por el trabajo. Úsala antes de aceptar un primer trabajo de instalación remunerado, o cuando el trabajo afecte al cuadro eléctrico, a cámaras o a locales con empleados o acceso público.
 ---
 
 # Qué puedes tocar y qué no: riesgos legales de una instalación

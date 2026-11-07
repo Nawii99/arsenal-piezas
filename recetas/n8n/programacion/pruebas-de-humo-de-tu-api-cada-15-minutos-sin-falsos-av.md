@@ -36,7 +36,7 @@ Lee de una hoja la lista de comprobaciones (URL, método, cuerpo, código espera
 Para quien tiene servicios propios en producción y no quiere pagar una herramienta de monitorización ni recibir 40 mensajes por la misma avería.
 
 ## Lo que necesitas antes
-- n8n auto-alojado (en la nube gratuita, ejecutar cada 15 minutos consume muchas ejecuciones del cupo mensual; auto-alojado es ilimitado).
+- n8n auto-alojado (en la prueba gratuita de n8n Cloud, ejecutar cada 15 minutos consume muchas ejecuciones del cupo mensual; auto-alojado es ilimitado).
 - Una hoja «Chequeos» con columnas: activo, nombre, url, metodo, cabeceras_json, cuerpo_json, codigo_esperado, texto_esperado, estado_anterior.
 - Bot de Telegram (token de @BotFather y tu chat_id).
 - Si tu API pide autenticación, un usuario de solo lectura y un token de pruebas guardado como credencial en n8n, nunca en la hoja.
@@ -73,7 +73,7 @@ Añade un chequeo apuntando a `https://httpstat.us/500` con código esperado 200
 - **Avisos en cascada**: sin la columna `estado_anterior` recibirías un mensaje cada 15 minutos. Es la pieza clave de la receta, no la quites.
 - **Tu propia red falla**: si el servidor de n8n pierde conexión, todo saldrá rojo. Añade un chequeo de control a `https://www.google.com`; si ese también falla, el Switch puede silenciar el resto.
 - **Peticiones POST que crean datos**: usa siempre endpoints de solo lectura o un entorno de pruebas; una prueba de humo no debe generar pedidos reales.
-- **Consumo de ejecuciones**: 96 ejecuciones diarias por 30 días son 2.880 al mes; con n8n Cloud gratuito te quedas sin cupo. Auto-alojado no tiene ese límite.
+- **Consumo de ejecuciones**: 96 ejecuciones diarias por 30 días son 2.880 al mes; con la prueba gratuita de n8n Cloud te quedas sin cupo. Auto-alojado no tiene ese límite.
 
 ## Cuánto cuesta
 Gratis con n8n auto-alojado en un VPS de 4-5 euros al mes, que además te sirve para el resto de recetas. Telegram y Sheets no cuestan nada. Un servicio equivalente tipo monitorización comercial ronda los 25 euros mensuales.

@@ -6,7 +6,7 @@ Después de entregar, manda solo el mensaje que toca: recordatorio, petición de
 
 ## Qué es y qué hace
 
-Sobre la hoja de entregas, lanza una secuencia de tres mensajes: a los 3 días un WhatsApp o SMS corto, a los 10 la petición de reseña en Google y a los 30 la oferta de ampliaciones con descuento. Cada mensaje se envía una vez y la secuencia se para si el cliente responde o ya dejó reseña. Entran fechas de entrega y salen mensajes programados y registro. Para fotógrafos y negocios de servicios con entrega puntual, con n8n y Twilio.
+Sobre la hoja de entregas, lanza una secuencia de tres mensajes: a los 3 días un WhatsApp o SMS corto, a los 10 la petición de reseña en Google y a los 30 la oferta de ampliaciones con descuento. Cada mensaje se envía una vez y la secuencia se para si el cliente pide la baja o ya dejó reseña (la petición de reseña va a todos por igual). Entran fechas de entrega y salen mensajes programados y registro. Para fotógrafos y negocios de servicios con entrega puntual, con n8n y Twilio.
 
 ## Cómo usarla
 
@@ -32,7 +32,7 @@ Cada reseña nueva en Google trae clientes durante años, y la venta de copias a
 ## La receta, paso a paso
 
 ## Qué hace y para quién
-Sobre la misma hoja de entregas, monta una secuencia de tres toques: a los 3 días, un mensaje corto por WhatsApp o SMS preguntando qué tal; a los 10, la petición de reseña con enlace directo; a los 30, la oferta de ampliaciones y álbum con un 10% si compran ese mes. Cada mensaje se manda una sola vez y se para si el cliente responde o si ya dejó reseña.
+Sobre la misma hoja de entregas, monta una secuencia de tres toques: a los 3 días, un mensaje corto por WhatsApp o SMS preguntando qué tal; a los 10, la petición de reseña con enlace directo; a los 30, la oferta de ampliaciones y álbum con un 10% si compran ese mes. Cada mensaje se manda una sola vez y se para si el cliente pide la baja (BAJA o STOP) o si ya dejó reseña. La petición de reseña va a todos los clientes por igual: filtrar según su satisfacción está prohibido por Google y las tiendas.
 Para fotógrafos, estudios y cualquier negocio local de servicios con entrega puntual.
 
 ## Lo que necesitas antes
@@ -71,7 +71,7 @@ for (const it of $input.all()) {
     mensaje = `Hola ${nombre}, soy [TU NOMBRE]. Solo queria saber que tal han quedado las fotos de tu ${d.tipo_sesion}. Si hay alguna que quieras retocar distinto, dimelo sin problema.`;
   } else if (!d.t2_enviado && n >= 10 && n < 30 && d.resena !== 'SI') {
     toque = 'T2';
-    mensaje = `Hola ${nombre}, me alegro mucho de que te gustaran las fotos. Si tienes un minuto, una resena en Google me ayuda muchisimo a que otras familias me encuentren: ${RESENA} . Mil gracias.`;
+    mensaje = `Hola ${nombre}, gracias por confiar en mi. Si tienes un minuto, una resena en Google, sea cual sea tu opinion, me ayuda muchisimo a mejorar y a que otras familias me encuentren: ${RESENA} . Mil gracias.`;
   } else if (!d.t3_enviado && n >= 30) {
     toque = 'T3';
     mensaje = `Hola ${nombre}, tus fotos siguen guardadas. Si quieres alguna ampliada o el album impreso, este mes tienes un 10% de descuento. Respondeme y te digo medidas y precios.`;
@@ -89,7 +89,7 @@ return salida;
 ## Qué puede salir mal
 - **WhatsApp por API exige plantillas aprobadas** para iniciar conversación fuera de las 24 horas. Con el sandbox de Twilio pruebas gratis; para producción hay que registrar plantillas en Meta. Si te parece mucho lío, usa SMS o email y funciona.
 - **Duplicados.** El truco es marcar la columna justo después del envío. Si el flujo falla a mitad, revisa la hoja antes de relanzar.
-- **Pedir reseña a alguien descontento.** Añade una columna `contento` y un IF: si en el T1 el cliente se quejó, no le mandes el T2. Pedirle reseña a un cliente enfadado es tirarse piedras.
+- **Cliente que se queja en el T1.** Atiéndelo tú personalmente y rápido, pero no lo saques de la petición de reseña (T2): se manda a todos los clientes por igual, porque Google y las tiendas prohíben pedir reseñas solo a quien está contento.
 - **RGPD.** Guarda el consentimiento para comunicaciones comerciales en el contrato de la sesión, incluye siempre cómo darse de baja y no compres bases de datos.
 - **Zona horaria.** Fija `Europe/Madrid` en los ajustes del workflow o los mensajes saldrán a las 13:00 en verano.
 

@@ -1,6 +1,6 @@
 ---
 name: auditor-accesibilidad-movil
-description: Audits mobile accessibility and one-handed usability: touch target sizes, contrast, dynamic type, screen reader labels, focus order and motion sensitivity, and returns concrete fixes. Use this agent when users complain the app is hard to see or tap, when the audience includes older people, before a major release, or when the user asks about accessibility requirements.
+description: "Audita la accesibilidad móvil y la usabilidad con una sola mano: tamaño de las zonas táctiles, contraste, tipografía dinámica, etiquetas para lectores de pantalla, orden del foco y sensibilidad al movimiento, y devuelve correcciones concretas. Úsalo cuando los usuarios se quejen de que la app es difícil de ver o de pulsar, cuando el público incluya a personas mayores, antes de una versión importante o cuando el usuario pregunte por requisitos de accesibilidad."
 tools: Read, Grep, Glob, Write
 ---
 

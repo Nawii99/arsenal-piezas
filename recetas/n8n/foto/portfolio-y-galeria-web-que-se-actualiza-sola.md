@@ -50,11 +50,11 @@ Para fotógrafos e ilustradores con web propia sencilla, alojada gratis en GitHu
 5. **IF** — si no hay nuevas, para el flujo aquí.
 6. **Split In Batches** — Batch Size: 1.
 7. **Google Drive** — `Download`.
-8. **HTTP Request** (`Subir a Cloudinary`) — igual que en la receta de marca de agua: `POST` a `https://api.cloudinary.com/v1_1/TU_CLOUD/image/upload`, Basic Auth con Key y Secret, Body `n8n Binary File` campo `data`, y parámetro `folder` con `portfolio`.
+8. **HTTP Request** (`Subir a Cloudinary`) — igual que en la receta de marca de agua: `POST` a `https://api.cloudinary.com/v1_1/TU_CLOUD/image/upload`, Authentication: Generic Credential Type > Basic Auth con una credencial de n8n (usuario = API Key, contraseña = API Secret; nunca escritas en el nodo), Body `n8n Binary File` campo `data`, y parámetro `folder` con `portfolio`.
 9. **Google Sheets** — `Append Row` con el `public_id` y la categoría.
 10. **Google Sheets** — `Get Row(s)` otra vez, ya con todo dentro, para tener la lista completa.
 11. **Code** (`Montar el JSON`) — construye el fichero de la galería. Código abajo.
-12. **HTTP Request** (`Guardar en GitHub`) — `PUT` a `https://api.github.com/repos/TU_USUARIO/TU_REPO/contents/galeria.json`. Headers: `Authorization` = `Bearer TU_TOKEN`, `Accept` = `application/vnd.github+json`, `User-Agent` = `n8n`. Body JSON: `{"message": "Actualizar galeria", "content": "={{ $json.contenido_b64 }}", "sha": "={{ $json.sha }}"}`.
+12. **HTTP Request** (`Guardar en GitHub`) — `PUT` a `https://api.github.com/repos/TU_USUARIO/TU_REPO/contents/galeria.json`. Authentication: Generic Credential Type > Header Auth con una credencial de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`); no pegues el token en el nodo ni en una cabecera suelta, porque un flujo exportado se llevaría la clave. Headers normales: `Accept` = `application/vnd.github+json`, `User-Agent` = `n8n`. Body JSON: `{"message": "Actualizar galeria", "content": "={{ $json.contenido_b64 }}", "sha": "={{ $json.sha }}"}`.
 
 ## El código del nodo Solo las nuevas
 ```javascript

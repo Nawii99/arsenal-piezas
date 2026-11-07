@@ -45,7 +45,7 @@ Para dueños de chalet, restaurantes con terraza ajardinada, viveros pequeños y
 2. **HTTP Request** — GET a `https://api.open-meteo.com/v1/forecast?latitude=39.4699&longitude=-0.3763&daily=precipitation_sum,temperature_2m_max&past_days=2&forecast_days=2&timezone=Europe%2FMadrid`. Cambia las coordenadas por las tuyas.
 3. **Code** (llámalo «Cuántos minutos») — Run Once for All Items, código abajo.
 4. **IF** — condición: `{{ $json.minutos }}` **larger** `0` (tipo Number).
-5. Rama true > **HTTP Request** «Abrir válvula» — POST `https://shelly-53-eu.shelly.cloud/device/relay/control`, Form Urlencoded: `id`, `auth_key`, `channel` = `0`, `turn` = `on`, `timer` = `{{ $json.minutos * 60 }}`. El parámetro `timer` hace que el propio Shelly se apague solo pasados esos segundos, así que aunque n8n se caiga no se inunda el jardín.
+5. Rama true > **HTTP Request** «Abrir válvula» — POST `https://shelly-53-eu.shelly.cloud/device/relay/control`, Form Urlencoded: `id`, `auth_key`, `channel` = `0`, `turn` = `on`, `timer` = `{{ $json.minutos * 60 }}`. El parámetro `timer` hace que el propio Shelly se apague solo pasados esos segundos, así que aunque n8n se caiga no se inunda el jardín. La `auth_key` no la escribas en el nodo ni la guardes en la hoja: ponla en una credencial de n8n (Authentication: Generic Credential Type > Custom Auth, con el JSON `{"body": {"auth_key": "tu clave"}}`); un flujo exportado se la llevaría.
 6. Detrás > **Telegram** — Send Message: `💧 Riego de hoy: {{ $json.minutos }} min. Lluvia últimos 2 días: {{ $json.pasada }} mm. Prevista hoy+mañana: {{ $json.futura }} mm.`
 7. Rama false del IF > **Telegram** — `🚫 Hoy no riego. Lluvia prevista: {{ $json.futura }} mm.`
 ## El código del nodo Code

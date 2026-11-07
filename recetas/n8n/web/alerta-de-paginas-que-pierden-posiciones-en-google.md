@@ -95,4 +95,4 @@ return [{ json: { total_caidas: caidas.length, html, caidas } }];
 
 ## Cuánto cuesta
 - API de Search Console: gratis (límite de 1.200 consultas por minuto, ni te acercas).
-- n8n, Sheets y Gmail: gratis. Cuatro ejecuciones al mes.
+- n8n auto-alojado, Sheets y Gmail: gratis (n8n Cloud: prueba gratuita temporal y después de pago). Cuatro ejecuciones al mes.

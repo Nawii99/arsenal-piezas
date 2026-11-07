@@ -39,7 +39,7 @@ A los 3 días manda un email suave con el enlace de pago, a los 10 un email más
 Para clínicas y centros que facturan sesión a sesión y no cobran siempre en el momento.
 
 ## Lo que necesitas antes
-Cuenta de Stripe si cobras con tarjeta: en dashboard.stripe.com, Desarrolladores, Claves de API, copia la clave secreta (`sk_live_...`). Empieza con la clave de prueba.
+Cuenta de Stripe si cobras con tarjeta: en dashboard.stripe.com, Desarrolladores, Claves de API, crea una clave restringida de solo lectura (permiso Read en Charges y PaymentIntents) y guárdala solo en una credencial de n8n, nunca escrita en un nodo. Empieza con la clave de prueba (`sk_test_`).
 Google Sheet `Servicios` con `id_servicio`, `fecha`, `paciente`, `email`, `telefono`, `importe`, `metodo`, `estado_cobro`, `avisos_enviados`.
 Enlaces de pago de Stripe (Payment Links) o una plantilla de enlace por importe.
 Credenciales `Stripe API`, `Google Sheets OAuth2`, `Gmail OAuth2` y `Twilio` en n8n.
@@ -48,7 +48,7 @@ Credenciales `Stripe API`, `Google Sheets OAuth2`, `Gmail OAuth2` y `Twilio` en 
 1. **Schedule Trigger** — `0 10 * * 1-5`, timezone `Europe/Madrid`.
 2. **Google Sheets** — `Get Row(s)` de `Servicios`, `Return All`.
 3. **Filter** — `{{$json.estado_cobro}}` distinto de `pagado`.
-4. **Stripe** — Resource `Charge`, Operation `Get Many`, `Return All`; o **HTTP Request** GET a `https://api.stripe.com/v1/payment_intents?limit=100` con Authentication `Generic Credential Type`, `Header Auth`, cabecera `Authorization` con valor `Bearer sk_live_...`.
+4. **Stripe** — Resource `Charge`, Operation `Get Many`, `Return All`; o **HTTP Request** GET a `https://api.stripe.com/v1/payment_intents?limit=100` con Authentication `Generic Credential Type`, `Header Auth`, cabecera `Authorization` cuyo valor (`Bearer ` + la clave) vive dentro de esa credencial de n8n; no escribas nunca la clave en el propio nodo: un flujo exportado como JSON se llevaría la clave.
 5. **Code** — cruza por importe y por email o por el campo `metadata.id_servicio` si lo pasas al crear el cobro, marca lo cobrado y calcula los días de retraso y el tramo de aviso (código abajo).
 6. **Switch** — sobre `{{$json.tramo}}`: `pagado`, `aviso1`, `aviso2`, `aviso3`, `llamada`.
 7. `pagado` → **Google Sheets** `Update Row`, `estado_cobro` = `pagado`.

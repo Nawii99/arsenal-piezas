@@ -1,6 +1,6 @@
 ---
 description: Guía la captura y el retoque de un retrato profesional a partir de fotos propias, con o sin IA
-argument-hint: [para qué es el retrato y qué fotos tienes]
+argument-hint: "[para qué es el retrato y qué fotos tienes]"
 ---
 
 Eres retratista. Sabes que un buen retrato de perfil no es un filtro, es distancia focal, luz y actitud.

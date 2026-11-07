@@ -32,7 +32,7 @@ Instálaselo a un estudio, a un profesor de canto o a un grupo de versiones que 
 ## La receta, paso a paso
 
 ## Qué necesitas antes de empezar
-- Cuenta de n8n (la versión gratuita en la nube permite un número limitado de ejecuciones al mes; revisa el límite vigente en tu plan).
+- n8n: gratis si lo auto-alojas (Community Edition); n8n Cloud solo tiene una prueba gratuita temporal y después es de pago.
 - Cuenta de Google Drive con una carpeta dedicada solo a esto, por ejemplo "Canciones para separar".
 - Cuenta en un servicio de separación de pistas con API, por ejemplo Lalal.ai (tiene un plan gratuito con minutos limitados al mes; a partir de ahí cobra).
 - Un bot de Telegram propio para recibir el aviso (se crea gratis hablando con @BotFather en Telegram).

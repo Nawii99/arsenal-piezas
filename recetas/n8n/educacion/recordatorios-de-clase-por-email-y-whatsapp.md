@@ -36,7 +36,7 @@ Cada día revisa qué clases hay en las próximas 24 horas y en la próxima hora
 Es para formadores, academias y coaches que imparten sesiones en directo con inscripción previa.
 
 ## Lo que necesitas antes
-n8n (gratis auto-alojado o plan gratuito de n8n.cloud).
+n8n (gratis auto-alojado; n8n.cloud tiene prueba gratuita temporal y luego es de pago).
 Hoja de Google «Clases» con columnas: id_clase, titulo, fecha_hora (formato 2026-09-14 18:00), enlace, tema.
 Hoja de Google «Inscripciones» con columnas: id_clase, nombre, email, telefono (en formato internacional, 34600111222 sin el signo +), aviso_24h, aviso_1h.
 Credencial Google OAuth2 en n8n para Sheets y Gmail.

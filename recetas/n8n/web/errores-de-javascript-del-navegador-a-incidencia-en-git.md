@@ -69,7 +69,7 @@ Para quien tiene una tienda online o una aplicación web con formularios, pagos 
 ```
 
 ## Los nodos, en orden
-1. **Webhook** — POST, Path `errores-js`, Respond `Immediately` (el navegador no espera respuesta).
+1. **Webhook** — POST, Path `errores-js`, Respond `Immediately` (el navegador no espera respuesta). Protégelo: configura un *Secret* en el webhook de GitHub, valida la cabecera `X-Hub-Signature-256` en un nodo Code con ese secreto leído de una variable de entorno y descarta entregas repetidas por `X-GitHub-Delivery`.
 2. **Code** — normaliza y calcula la huella del error, y descarta el ruido conocido (código abajo).
 3. **IF** — `{{ $json.ignorar }}` *is false*.
 4. **Google Sheets** (*Get Row(s)*) — busca por columna `huella` el valor `={{ $json.huella }}`. Activa `Always Output Data` en Settings del nodo.

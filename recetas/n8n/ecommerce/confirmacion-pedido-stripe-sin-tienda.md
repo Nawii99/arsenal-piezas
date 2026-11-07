@@ -35,14 +35,14 @@ Cuando alguien paga con un Payment Link o Checkout de Stripe, esta automatizaci�
 
 ## Cuentas necesarias y sus límites gratuitos
 - Stripe: gratis crear la cuenta y los Payment Links; cobra una comisión por operación (en España, alrededor de 1,5% + 0,25€ por pago con tarjeta europea, revisa el precio actualizado en tu propia cuenta).
-- n8n: si lo autoalojas (por ejemplo en una VPS barata o en tu propio ordenador) no tiene límite de ejecuciones; si usas n8n Cloud, el plan gratuito es una prueba limitada en el tiempo, después hay que pagar.
+- n8n: si lo autoalojas (por ejemplo en una VPS barata o en tu propio ordenador) no tiene límite de ejecuciones; si usas n8n Cloud, no hay plan gratuito permanente: hay una prueba gratuita temporal y después planes de pago.
 - Google Sheets: gratis con una cuenta de Gmail normal.
 - Gmail (o el proveedor de correo que uses): gratis hasta el límite de envíos diarios de una cuenta normal, unos 500 al día.
 
 ## Nodos, en orden
-1. Trigger: nodo 'Stripe Trigger' (o un nodo Webhook configurado a mano) escuchando el evento checkout.session.completed.
+1. Trigger: nodo 'Stripe Trigger' (comprueba la firma del evento) escuchando el evento checkout.session.completed. Si usas un Webhook genérico, verifica tú la cabecera `Stripe-Signature` con el «signing secret» del endpoint, guardado en las credenciales o en una variable de entorno.
 2. Nodo 'Stripe' (Get) para recuperar los datos completos de la sesión: email del cliente, importe, moneda y producto comprado.
-3. Nodo 'Google Sheets' (Append Row) para añadir una fila con fecha, email, producto, importe y número de sesión de Stripe, a una hoja de 'Pedidos'.
+3. Antes de registrar, comprueba que `payment_status` sea 'paid' y que el id de la sesión no esté ya en la hoja (Stripe puede reenviar el mismo evento). Si el pago no está en 'paid' o el id ya existe, el flujo se detiene aquí: no se registra nada ni se envía ningún correo. Si todo cuadra, nodo 'Google Sheets' (Append Row) para añadir una fila con fecha, email, producto, importe y número de sesión de Stripe, a una hoja de 'Pedidos'.
 4. Nodo 'IF' que comprueba si el importe supera un umbral que decidas (por ejemplo 100€).
 5. Rama verdadera del IF: nodo 'Gmail' o 'Telegram' para avisarte a ti de un pedido grande, aparte del registro normal.
 6. Nodo 'Gmail' (Send) para enviar al cliente el email de confirmación, con el número de pedido y el enlace de seguimiento si lo tienes.

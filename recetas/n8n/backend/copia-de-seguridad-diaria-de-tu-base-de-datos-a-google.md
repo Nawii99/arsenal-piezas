@@ -61,7 +61,7 @@ Si el volcado sale vacío o falla, te lo dice por Telegram; si va bien, te manda
 ```bash
 PGPASSWORD="$PGPASSWORD" pg_dump -h {{ $json.host }} -U {{ $json.user }} -d {{ $json.db }} --no-owner --no-acl | gzip -9 > /tmp/backup-$(date +%F).sql.gz && echo OK
 ```
-Si usas MySQL, cambia esa línea por: `mysqldump -h {{ $json.host }} -u {{ $json.user }} -p"$MYSQL_PWD" --single-transaction --quick {{ $json.db }} | gzip -9 > /tmp/backup-$(date +%F).sql.gz && echo OK`
+Si usas MySQL, cambia esa línea por: `mysqldump -h {{ $json.host }} -u {{ $json.user }} --single-transaction --quick {{ $json.db }} | gzip -9 > /tmp/backup-$(date +%F).sql.gz && echo OK`. La contraseña no va en el comando (con `-p` se ve en la lista de procesos): ponla en `~/.my.cnf` del usuario que ejecuta n8n, con `[mysqldump]` y `password=...`, y dale permisos 600 (`chmod 600 ~/.my.cnf`). En Postgres puedes usar igual `~/.pgpass` con permisos 600 en lugar de la variable de entorno.
 
 ## El código del nodo "Filtrar viejos"
 ```javascript
@@ -83,7 +83,7 @@ return $input.all().filter(i => {
 - **Subidas grandes a Drive**: por encima de 100 MB puede haber timeouts. En el nodo HTTP/Drive activa Retry On Fail (3 intentos) y sube el Timeout en Options.
 - **La cuota de Drive**: 15 GB gratis compartidos con Gmail y Fotos. 30 copias de 200 MB son 6 GB, ojo.
 - **Volcados con la base de datos en uso**: usa `--single-transaction` en MySQL para que la copia sea coherente y no bloquee tablas.
-- **Contraseñas en texto plano**: nunca las pongas en el nodo Set; van en variables de entorno del contenedor.
+- **Contraseñas en texto plano**: nunca las pongas en el nodo Set ni en el comando; van en variables de entorno del contenedor, en `~/.pgpass` o en `~/.my.cnf` (permisos 600). Un flujo exportado se lleva todo lo que esté escrito en sus nodos, contraseñas incluidas.
 
 ## Cuánto cuesta
 - Todo gratis: n8n auto-alojado, Drive hasta 15 GB, Telegram.

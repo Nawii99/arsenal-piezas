@@ -76,4 +76,4 @@ Números con coma española: el Code ya los convierte, pero revisa que Sheets no
 Un ticket puede subir dos veces si reenvías el mensaje. Añade una columna con el file_id de Telegram y un Lookup previo si te preocupa.
 
 ## Cuánto cuesta
-n8n, Telegram, Sheets y Drive: gratis. OpenAI con gpt-4o-mini y visión: alrededor de 0,003 € por ticket, es decir menos de 20 céntimos al mes con 60 tickets.
+Telegram, Sheets y Drive: gratis. n8n autoalojado: gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago). OpenAI con gpt-4o-mini y visión: alrededor de 0,003 € por ticket, es decir menos de 20 céntimos al mes con 60 tickets.

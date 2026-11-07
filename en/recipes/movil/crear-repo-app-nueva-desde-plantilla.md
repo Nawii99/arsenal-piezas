@@ -17,7 +17,7 @@ Every time you accept an order for a new app, instead of creating the repository
 
 ## Accounts needed
 - GitHub (or GitLab) account with a template repository already prepared with the app's base structure, in React Native or Flutter. GitHub's free plan is enough for this.
-- n8n account, in the cloud (n8n.cloud, free plan limited to 5 active workflows and a number of executions per month) or self-hosted, without that limit if you install it yourself.
+- n8n account, in the cloud (n8n.cloud, with a temporary free trial and then paid plans) or self-hosted (Community Edition, free), with no plan fee if you install it yourself.
 - A form, with Typeform, Google Forms, or n8n's native form, where the project name, the framework, and the client's name are entered.
 - Email or Slack account for the final notification.
 

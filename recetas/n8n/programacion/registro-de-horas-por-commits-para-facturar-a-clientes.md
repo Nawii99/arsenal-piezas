@@ -42,7 +42,7 @@ Para el freelance que factura por horas y trabaja a saltos, sin cronómetro.
 - Credenciales Google Sheets y Gmail en n8n.
 
 ## Los nodos, en orden — FLUJO A (registro)
-**1. Webhook** — `POST`, Path `commit-hora`, Respond `Immediately`. En cada repo del cliente: Settings > Webhooks, evento **Just the push event**.
+**1. Webhook** — `POST`, Path `commit-hora`, Respond `Immediately`. En cada repo del cliente: Settings > Webhooks, evento **Just the push event**. Valida la firma `X-Hub-Signature-256` con el Secret del webhook de GitHub y descarta entregas repetidas por `X-GitHub-Delivery`.
 **2. Code** («Desglosar commits») — un item por commit del push.
 **3. Google Sheets** — Operation `Append Row` en la pestaña `horas`, mapeo automático de los campos.
 

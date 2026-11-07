@@ -43,7 +43,7 @@ Para desarrolladores web freelance, diseñadores y agencias pequeñas.
 - Credenciales de Google Sheets y Gmail.
 
 ## Los nodos, en orden
-1. **Webhook** — POST, Path `presupuesto-web`, Respond `Using Respond to Webhook node`.
+1. **Webhook** — POST, Path `presupuesto-web`, Respond `Using Respond to Webhook node`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** — limpia los campos (igual que en cualquier formulario) y prepara el texto del proyecto.
 3. **Basic LLM Chain** (o **HTTP Request** a la API de Anthropic) — con el prompt de abajo. Si usas el nodo de IA, elige el modelo Claude y en Options activa la salida en JSON.
 4. **Code** — parsea la respuesta y valida que trae todos los campos (código abajo).

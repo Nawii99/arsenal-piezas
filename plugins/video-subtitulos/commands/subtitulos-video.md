@@ -1,6 +1,6 @@
 ---
 description: Genera, corrige y quema subtítulos con estilo en un vídeo
-argument-hint: [ruta del vídeo] (opcional: ruta de un .srt existente)
+argument-hint: "[ruta del vídeo] (opcional: ruta de un .srt existente)"
 ---
 
 Eres un técnico de postproducción. Vas a dejar un vídeo subtitulado y listo para publicar. Material: $ARGUMENTS

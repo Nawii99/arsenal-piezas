@@ -37,7 +37,7 @@ Aplica las actualizaciones menores de plugins (las de versión de parche), guard
 
 ## Lo que necesitas antes
 - Acceso SSH con WP-CLI en cada hosting (pídeselo a soporte si no lo tienes; sin esto la receta no funciona).
-- n8n auto-alojado (el nodo SSH no está en la nube gratuita).
+- n8n auto-alojado (Community Edition, gratis). n8n Cloud solo tiene una prueba gratuita temporal y después es de pago.
 - Hoja de Google «Webs mantenimiento» con columnas: web, cliente, email_cliente, ssh_host, ssh_user, ruta_wp, credencial.
 - Una credencial SSH en n8n por cada hosting distinto (nómbralas igual que la columna `credencial`).
 - Credencial Gmail OAuth2.
@@ -46,14 +46,22 @@ Aplica las actualizaciones menores de plugins (las de versión de parche), guard
 1. **Schedule Trigger** — Months, Trigger at Day of Month: 1, Hour: 6.
 2. **Google Sheets** — Get Row(s) de «Webs mantenimiento».
 3. **Loop Over Items** — Batch Size: 1.
-4. **SSH** (renómbralo «Diagnóstico») — Resource: Command; Command: `cd {{ $json.ruta_wp }} && echo "--CORE--" && wp core version && echo "--CORE_UPD--" && wp core check-update --format=csv && echo "--PLUGINS--" && wp plugin list --format=json && echo "--DISCO--" && du -sh . && echo "--SPAM--" && wp comment count --format=json`. Settings: `On Error: Continue`, Timeout alto.
-5. **Code** (renómbralo «Interpretar») — ver código.
-6. **SSH** (renómbralo «Actualizar menores») — Command: `cd {{ $('Loop Over Items').item.json.ruta_wp }} && wp plugin update {{ $json.plugins_menores.join(' ') }} --minor 2>&1 || echo 'sin cambios'`. Ponle Settings `Always Output Data` y `On Error: Continue`.
-7. **SSH** (renómbralo «Limpiar spam») — Command: `cd {{ $('Loop Over Items').item.json.ruta_wp }} && wp comment delete $(wp comment list --status=spam --format=ids) 2>&1 || echo 'nada que borrar'`.
-8. **Code** (renómbralo «Montar informe») — construye el HTML del correo con los datos del paso 5 y la salida del 6.
-9. **Gmail** — To: `={{ $('Loop Over Items').item.json.email_cliente }}`; Cc: tu correo; Subject: `Informe de mantenimiento — {{ $('Loop Over Items').item.json.web }} — {{ new Date().toLocaleDateString('es-ES', { month: 'long', year: 'numeric' }) }}`; Message Type: HTML; Message: `={{ $json.html }}`.
-10. **Google Sheets** — Append Row a una pestaña `historial` con fecha, web, plugins actualizados y pendientes.
-11. La salida vuelve al **Loop Over Items**.
+4. **Code** (renómbralo «Validar ruta») — Mode: Run Once for Each Item. Para el flujo si `ruta_wp` no es una ruta absoluta limpia. Ver código.
+5. **SSH** (renómbralo «Diagnóstico») — Resource: Command; Command: `cd {{ $json.ruta_wp }} && echo "--CORE--" && wp core version && echo "--CORE_UPD--" && wp core check-update --format=csv && echo "--PLUGINS--" && wp plugin list --format=json && echo "--DISCO--" && du -sh . && echo "--SPAM--" && wp comment count --format=json`. Settings: `On Error: Continue`, Timeout alto.
+6. **Code** (renómbralo «Interpretar») — ver código.
+7. **SSH** (renómbralo «Actualizar menores») — Command: `cd {{ $('Validar ruta').item.json.ruta_wp }} && wp plugin update {{ $json.plugins_menores.join(' ') }} --minor 2>&1 || echo 'sin cambios'`. Ponle Settings `Always Output Data` y `On Error: Continue`.
+8. **SSH** (renómbralo «Limpiar spam») — Command: `cd {{ $('Validar ruta').item.json.ruta_wp }} && wp comment delete $(wp comment list --status=spam --format=ids) 2>&1 || echo 'nada que borrar'`.
+9. **Code** (renómbralo «Montar informe») — construye el HTML del correo con los datos del paso 6 y la salida del 7.
+10. **Gmail** — To: `={{ $('Loop Over Items').item.json.email_cliente }}`; Cc: tu correo; Subject: `Informe de mantenimiento — {{ $('Loop Over Items').item.json.web }} — {{ new Date().toLocaleDateString('es-ES', { month: 'long', year: 'numeric' }) }}`; Message Type: HTML; Message: `={{ $json.html }}`.
+11. **Google Sheets** — Append Row a una pestaña `historial` con fecha, web, plugins actualizados y pendientes.
+12. La salida vuelve al **Loop Over Items**.
+
+## El código de «Validar ruta»
+```js
+const ruta = String($json.ruta_wp || '');
+if (!/^\/[A-Za-z0-9._\/-]+$/.test(ruta)) throw new Error('ruta_wp no válida para ' + $json.web + ': ' + ruta.slice(0, 80));
+return $input.item;
+```
 
 ## El código de «Interpretar»
 ```js
@@ -65,7 +73,7 @@ let plugins = [];
 try { plugins = JSON.parse(trozo('--PLUGINS--', '--DISCO--')); } catch (e) { plugins = []; }
 const disco = trozo('--DISCO--', '--SPAM--').split(/\s+/)[0] || '?';
 const pendientes = plugins.filter(p => p.update === 'available');
-const menores = pendientes.filter(p => { const a = (p.version || '0').split('.'); const b = (p.update_version || '0').split('.'); return a[0] === b[0] && a[1] === b[1]; }).map(p => p.name);
+const menores = pendientes.filter(p => { const a = (p.version || '0').split('.'); const b = (p.update_version || '0').split('.'); return a[0] === b[0] && a[1] === b[1]; }).map(p => p.name).filter(n => /^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(n));
 const mayores = pendientes.filter(p => !menores.includes(p.name)).map(p => `${p.name} (${p.version} → ${p.update_version})`);
 const inactivos = plugins.filter(p => p.status === 'inactive').map(p => p.name);
 return [{ json: { core, core_actualizable: coreUpd.includes(','), disco, total_plugins: plugins.length, plugins_menores: menores, plugins_mayores: mayores, inactivos } }];
@@ -92,11 +100,13 @@ return [{ json: { html } }];
 - Activa el nodo de actualización solo cuando tengas la receta 2 (copias de seguridad) funcionando. Nunca actualices sin backup del mismo día.
 
 ## Qué puede salir mal
-- **Una actualización rompe la web**: por eso solo se aplican versiones de parche. Aun así, encadena antes el flujo de backup o llama a `wp db export` en el nodo 4.
+- **Una actualización rompe la web**: por eso solo se aplican versiones de parche. Aun así, encadena antes el flujo de backup o llama a `wp db export` en el nodo 5.
 - **`Error: This does not seem to be a WordPress installation`**: la `ruta_wp` está mal; usa la ruta absoluta hasta donde está `wp-config.php`.
 - **Multisite o WooCommerce grande**: añade `--skip-plugins --skip-themes` al comando de diagnóstico si tarda demasiado.
 - **El cliente responde asustado**: escribe el correo en lenguaje llano y sin tecnicismos; el informe es un argumento de venta, no un log.
 - **Credenciales SSH distintas por web**: n8n no permite elegir la credencial con una expresión; crea un flujo por hosting o usa un único usuario con acceso a todas las rutas.
+- **Datos de la hoja dentro del comando SSH**: `ruta_wp` y los nombres de plugin acaban en la shell del hosting; por eso «Validar ruta» y el filtro de «Interpretar» solo dejan pasar letras, números, `.`, `_`, `-` y `/`. Un plugin con nombre raro pasa a revisión manual.
+- **Opciones coladas como nombre de plugin**: un nombre que empiece por `-` (`--all`) se leería como opción de WP-CLI; el filtro exige que empiece por letra o número, y los comandos SSH leen la ruta de «Validar ruta», no de la hoja.
 
 ## Cuánto cuesta
 - Gratis: n8n auto-alojado, WP-CLI, Gmail (cuidado con el límite de 500 correos/día, que aquí no vas a rozar).

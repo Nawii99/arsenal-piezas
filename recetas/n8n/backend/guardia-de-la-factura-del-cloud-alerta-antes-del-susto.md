@@ -112,4 +112,4 @@ return [{ json: { alertar: avisos.length > 0, mensaje: avisos.join('\n') } }];
 
 ## Cuánto cuesta
 - Gratis: todos los endpoints de facturación son de lectura y no se cobran (la consulta de Cost Explorer de AWS cuesta 0,01 dólares por petición: 0,30 dólares al mes).
-- n8n, Sheets y Telegram: gratis.
+- Sheets y Telegram: gratis. n8n autoalojado (Community Edition): gratis; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago.

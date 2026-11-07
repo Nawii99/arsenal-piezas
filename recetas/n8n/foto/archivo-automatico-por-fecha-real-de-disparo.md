@@ -44,12 +44,12 @@ Es para fotógrafos que descargan tarjetas a lo bruto y luego no ordenan nunca. 
 ## Los nodos, en orden
 1. **Google Drive Trigger** — Event: `File Created`, Watch Folder: `BUZON`, Poll Times: cada minuto.
 2. **Google Drive** — Operation: `Download`, File ID: `{{ $json.id }}`, output en el campo `data`.
-3. **Read/Write Files from Disk** — Operation: `Write File to Disk`, File Path: `/tmp/{{ $json.name }}`, Input Binary Field: `data`. ExifTool necesita el archivo en disco.
-4. **Execute Command** — Command: `exiftool -j -DateTimeOriginal -CreateDate "/tmp/{{ $('Google Drive Trigger').item.json.name }}"`.
+3. **Read/Write Files from Disk** — Operation: `Write File to Disk`, File Path: `/tmp/{{ $('Google Drive Trigger').item.json.id }}`, Input Binary Field: `data`. ExifTool necesita el archivo en disco; se guarda con el ID de Drive como nombre interno (ExifTool reconoce el formato por el contenido).
+4. **Execute Command** — Command: `exiftool -j -DateTimeOriginal -CreateDate "/tmp/{{ $('Google Drive Trigger').item.json.id }}"`.
 5. **Code** — Mode: `Run Once for Each Item`. Calcula ruta y nombre nuevo (código abajo).
 6. **Google Drive** (renómbralo «Crear carpeta año») — Operation: `Create Folder`, Folder Name: `{{ $json.anio }}`, Parent Folder: `ARCHIVO`. En Options activa «Same Name As Existing» si tu versión lo ofrece; si no, hazlo con el nodo de búsqueda del punto siguiente.
-7. **Google Drive** (renómbralo «Buscar o crear mes/cliente») — Operation: `Search`, Query String: `{{ $json.carpeta_mes }}`, Filter: `Folders`. Encadena un **IF** que compruebe si hay resultados y, si no, un **Google Drive** con `Create Folder`.
-8. **Google Drive** — Operation: `Update`, File ID: el del archivo, campos: `name` = `{{ $json.nombre_nuevo }}`, y en «Move to Folder» el id de la carpeta destino.
+7. **Google Drive** (renómbralo «Buscar o crear mes/cliente») — Operation: `Search`, Query String: `{{ $('Code').item.json.carpeta_mes }}`, Filter: `Folders`. Encadena un **IF** que compruebe si hay resultados y, si no, un **Google Drive** con `Create Folder`.
+8. **Google Drive** — Operation: `Update`, File ID: el del archivo, campos: `name` = `{{ $('Code').item.json.nombre_nuevo }}`, y en «Move to Folder» el id de la carpeta destino.
 
 ## El código del nodo Code
 ```javascript
@@ -91,7 +91,9 @@ return { json: {
 - **Zona horaria**: `DateTimeOriginal` no guarda zona. Al convertirlo, n8n usa la zona del servidor. Fija la del flujo en Settings del workflow a `Europe/Madrid` para que una foto de las 00:30 no salte de día.
 - **Carpetas duplicadas**: Drive permite dos carpetas con el mismo nombre. Por eso hay un paso de buscar antes de crear; si te salen duplicadas, es que te saltaste el IF.
 - **Límite de peticiones de Drive**: subir 800 fotos de golpe puede dar error 403 «rate limit». Mete un **Split In Batches** de 20 con un nodo **Wait** de 2 segundos.
-- **RAW**: los `.CR3` o `.NEF` funcionan igual con ExifTool, pero pesan; asegúrate de tener espacio en `/tmp` y añade un **Execute Command** final con `rm` para limpiar.
+- **RAW**: los `.CR3` o `.NEF` funcionan igual con ExifTool, pero pesan; asegúrate de tener espacio en `/tmp` y añade un **Execute Command** final con `rm -f "/tmp/{{ $('Google Drive Trigger').item.json.id }}"` para limpiar.
+- **Nombres de archivo con comillas o `$( )`**: un nombre así ejecutaría órdenes si entrase en el comando, aunque vaya entre comillas; por eso ExifTool solo ve el ID de Drive y el nombre original se usa únicamente para sacar el cliente y la extensión en el nodo Code.
+- **Mes o nombre vacíos en los pasos 7 y 8**: tras los nodos de Drive, `$json` es la carpeta creada o buscada; por eso esos campos se leen de `$('Code')`.
 
 ## Cuánto cuesta
 - Google Drive: gratis hasta 15 GB; 2 TB por unos 10 € al mes si archivas RAW.

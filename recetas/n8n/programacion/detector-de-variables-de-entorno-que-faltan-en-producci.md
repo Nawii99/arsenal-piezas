@@ -87,4 +87,4 @@ return [{ json: { esperadas: esperadas.length, reales: reales.length, faltan, so
 
 ### Cuánto cuesta
 - 0 €. GitHub, Vercel API, Slack y Sheets entran en planes gratuitos.
-- n8n auto-alojado gratis; en n8n Cloud gratuito, una ejecución diaria cabe holgadamente.
+- n8n auto-alojado gratis; en n8n Cloud (de pago tras la prueba gratuita), una ejecución diaria cabe holgadamente.

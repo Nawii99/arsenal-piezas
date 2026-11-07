@@ -1,5 +1,5 @@
 ---
-name: ficha-tienda
+name: ficha-tienda-en
 description: Generates the store page text (Steam, itch.io, or Google Play) for your game from a brief description, so you don't rewrite the copy every time you update the listing.
 ---
 

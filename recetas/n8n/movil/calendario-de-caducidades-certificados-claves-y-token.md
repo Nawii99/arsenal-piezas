@@ -85,4 +85,4 @@ return salida;
 - **Elemento sin responsable**: pon un valor por defecto con tu correo en el código para que nunca se quede huérfano.
 
 ## Cuánto cuesta
-Todo gratis: Sheets, Gmail, Calendar y Telegram entran en cuentas normales. n8n auto-alojado 0 €, o el plan gratuito de n8n Cloud aguanta de sobra una ejecución semanal. Coste: 0 €.
+Todo gratis: Sheets, Gmail, Calendar y Telegram entran en cuentas normales. n8n auto-alojado 0 € (n8n Cloud no tiene plan gratuito permanente: tiene una prueba temporal y luego es de pago). Coste con n8n auto-alojado: 0 €.

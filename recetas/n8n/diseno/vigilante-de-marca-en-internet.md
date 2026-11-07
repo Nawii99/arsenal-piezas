@@ -54,7 +54,7 @@ const nuevos = items.filter(i => !vistos.has(i.json.link));
 return nuevos.map(i => ({ json: { titulo: i.json.title, enlace: i.json.link, resumen: (i.json.contentSnippet || '').slice(0, 400) } }));
 ```
 5. **IF**: condición Number, `{{ $items().length }}` mayor que 0. Si no hay nada nuevo, el flujo termina y no te molesta.
-6. **HTTP Request**: POST a `https://api.anthropic.com/v1/messages`. Cabeceras: `x-api-key` con tu clave, `anthropic-version` con `2023-06-01`. Body JSON con el modelo y este prompt: «Eres el vigilante de marca de [TU MARCA], que hace [QUÉ HACE]. Para cada resultado dime en una línea: MENCION, PLAGIO o RUIDO, y una frase de por qué. Resultados: {{ JSON.stringify($json) }}».
+6. **HTTP Request**: POST a `https://api.anthropic.com/v1/messages`. Cabeceras: `x-api-key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `x-api-key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría), `anthropic-version` con `2023-06-01`. Body JSON con el modelo y este prompt: «Eres el vigilante de marca de [TU MARCA], que hace [QUÉ HACE]. Para cada resultado dime en una línea: MENCION, PLAGIO o RUIDO, y una frase de por qué. Resultados: {{ JSON.stringify($json) }}».
 7. **Telegram**: operación Send Message, con tu chat_id y en Text el texto que devuelve la IA más los enlaces.
 8. **Google Sheets**: operación Append Row para guardar los enlaces nuevos en `vistos`.
 

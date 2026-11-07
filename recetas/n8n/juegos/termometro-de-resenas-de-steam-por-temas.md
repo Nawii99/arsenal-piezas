@@ -35,7 +35,7 @@ Consulta la API pública de reseñas de Steam, guarda cada reseña nueva en una 
 Es para el estudio pequeño o el desarrollador en solitario que ya tiene el juego en tienda y quiere un sistema de alerta temprana sin contratar herramientas de escucha.
 
 ## Lo que necesitas antes
-Una cuenta de n8n (el plan gratuito de n8n Cloud o auto-alojado con Docker en tu PC).
+Una cuenta de n8n (auto-alojado gratis con Docker en tu PC, o n8n Cloud con su prueba gratuita temporal).
 El AppID de tu juego: es el número que sale en la URL de la ficha de Steam, `store.steampowered.com/app/1234567/`.
 Una cuenta de Google para Google Sheets y las credenciales OAuth de Google en n8n (Settings > Credentials > Google Sheets OAuth2).
 Un webhook de Discord: en tu servidor, Ajustes del canal > Integraciones > Webhooks > Nuevo webhook > Copiar URL.
@@ -96,4 +96,4 @@ Si el juego tiene pocas reseñas puede que `reviews` venga vacío: el código lo
 ## Cuánto cuesta
 La API de Steam es gratis. Google Sheets es gratis. Discord es gratis.
 n8n auto-alojado es gratis; su plan cloud de inicio ronda los 20 € al mes si no quieres montar servidor.
-Con una ejecución diaria cabes de sobra en cualquier plan gratuito.
+Con una ejecución diaria cabes de sobra en cualquier plan de n8n, incluida la prueba gratuita.

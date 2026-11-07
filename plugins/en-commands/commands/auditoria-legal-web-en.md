@@ -1,7 +1,7 @@
 ---
-name: auditoria-legal-web
-description: Reviews the legal side of a Spanish website (legal notice, cookies, privacy, forms, store, accessibility) and returns a findings report ordered by risk, ready to send to the owner as a diagnosis and open the sale of the fix. Activated with /auditoria-legal-web URL or by pasting the HTML.
-argument-hint: URL of the website (or the pasted HTML) and what the business does: store, services, blog with a form...
+name: auditoria-legal-web-en
+description: Reviews the legal side of a Spanish website (legal notice, cookies, privacy, forms, store, accessibility) and returns a findings report ordered by risk, ready to send to the owner as a diagnosis and open the sale of the fix. Activated with /auditoria-legal-web-en URL or by pasting the HTML.
+argument-hint: "URL of the website (or the pasted HTML) and what the business does: store, services, blog with a form..."
 ---
 Act as a web compliance consultant for small and medium businesses and freelancers in Spain. You are not a lawyer and you say so in the report.
 

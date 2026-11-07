@@ -36,14 +36,14 @@ Consulta la API de comentarios de Figma cada hora, descarta los que ya procesó,
 
 ## Lo que necesitas antes
 - Cuenta de n8n.
-- Token personal de Figma: figma.com, avatar, Settings, pestaña Security, Personal access tokens, Generate new token con permiso de lectura de File content y Comments. Se manda en la cabecera `X-Figma-Token`.
+- Token personal de Figma: figma.com, avatar, Settings, pestaña Security, Personal access tokens, Generate new token con permiso de lectura de File content y Comments. Se manda en la cabecera `X-Figma-Token`, siempre desde una credencial de n8n (Header Auth), nunca escrita en el nodo.
 - La `file_key` de tu archivo: está en la URL `figma.com/design/FILE_KEY/nombre`.
-- Cuenta de Trello, un tablero y una lista. La API key se saca en trello.com/power-ups/admin y el token con el enlace de autorización que te da esa misma página.
+- Cuenta de Trello, un tablero y una lista. La API key se saca en trello.com/power-ups/admin y el token con el enlace de autorización que te da esa misma página; ambos van solo en la credencial Trello de n8n.
 - Hoja de Google Sheets `Figma_procesados` con columna `comment_id`.
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Interval: Hours, cada 1, entre las 8 y las 20 (pon Cron Expression `0 8-20 * * 1-5` si quieres solo laborables), Timezone `Europe/Madrid`.
-2. **HTTP Request** (`Comentarios`) — GET `https://api.figma.com/v1/files/TU_FILE_KEY/comments`. Authentication: Generic, Header Auth, Name `X-Figma-Token`, Value: tu token.
+2. **HTTP Request** (`Comentarios`) — GET `https://api.figma.com/v1/files/TU_FILE_KEY/comments`. Authentication: Generic Credential Type > Header Auth, con una credencial nueva (Name `X-Figma-Token`, Value: tu token). El token va solo en la credencial: porque un flujo exportado se llevaría la clave si lo escribes en el nodo.
 3. **Google Sheets** — Get Row(s) de `Figma_procesados`, Return All.
 4. **Code** (`Nuevos`) — Mode: Run Once for All Items. Código abajo.
 5. **IF** — `{{ $json.id }}` is not empty.

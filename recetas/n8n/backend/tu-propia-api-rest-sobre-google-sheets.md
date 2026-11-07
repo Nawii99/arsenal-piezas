@@ -38,16 +38,16 @@ Publica tres endpoints —listar, crear y actualizar— que leen y escriben en u
 - n8n con HTTPS público.
 - Credencial «Google Sheets OAuth2 API» en n8n (mismo proceso de Google Cloud Console que para Drive).
 - Una hoja «Datos» con la primera fila de cabeceras, por ejemplo: id, nombre, email, estado, creado.
-- Inventa una clave larga, por ejemplo con `openssl rand -hex 24`. Guárdala en n8n en Settings → Variables (plan de pago) o directamente en el nodo Code si vas por libre.
+- Inventa una clave larga, por ejemplo con `openssl rand -hex 24`. Guárdala en una variable de entorno de n8n (por ejemplo `API_CLAVE`) y no la escribas en el nodo Code: un flujo exportado se llevaría la clave. Si tu n8n bloquea el acceso a variables desde los nodos, ajusta `N8N_BLOCK_ENV_ACCESS_IN_NODE=false`.
 
 ## Los nodos, en orden
-1. **Webhook** — HTTP Method: elige «Multiple Methods» y marca GET y POST, Path: `api/registros`, Respond: «Using Respond to Webhook node». En Options activa «Allowed Origins (CORS)» y pon tu dominio, o `*` si es público.
+1. **Webhook** — HTTP Method: elige «Multiple Methods» y marca GET y POST, Path: `api/registros`, Respond: «Using Respond to Webhook node». En Options activa «Allowed Origins (CORS)» y pon tu dominio, o `*` si es público. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** (renómbralo «Autenticar y enrutar») — Run Once for Each Item:
 ```javascript
-const CLAVE = 'PON_AQUI_TU_CLAVE_LARGA';
+const CLAVE = $env.API_CLAVE; // variable de entorno de n8n, nunca la clave escrita aquí
 const req = $input.item.json;
 const h = req.headers || {};
-const recibida = h['x-api-key'] || (req.query && req.query.key) || '';
+const recibida = h['x-api-key'] || ''; // la clave solo por cabecera, nunca en la URL
 const metodo = (h['x-http-method'] || req.method || 'GET').toUpperCase();
 const cuerpo = req.body || {};
 const accion = (cuerpo.accion || req.query?.accion || (metodo === 'POST' ? 'crear' : 'listar')).toLowerCase();
@@ -78,8 +78,8 @@ return { json: {
 8. Las tres salidas van a un mismo **Respond to Webhook** — Respond With: JSON, Response Body: `={{ JSON.stringify({ ok: true, datos: $input.all().map(i => i.json) }) }}`, Response Code 200.
 
 ## Cómo probarla
-- Listar: `curl -H 'x-api-key: TU_CLAVE' 'https://tu-n8n/webhook/api/registros'`.
-- Crear: `curl -X POST -H 'x-api-key: TU_CLAVE' -H 'Content-Type: application/json' -d '{"accion":"crear","nombre":"Ana","email":"ana@x.com"}' https://tu-n8n/webhook/api/registros`.
+- Listar (con la clave en una variable de tu terminal, `export API_CLAVE=...`, para no dejarla escrita en comandos ni en el historial compartido): `curl -H "x-api-key: $API_CLAVE" 'https://tu-n8n/webhook/api/registros'`.
+- Crear: `curl -X POST -H "x-api-key: $API_CLAVE" -H 'Content-Type: application/json' -d '{"accion":"crear","nombre":"Ana","email":"ana@x.com"}' https://tu-n8n/webhook/api/registros`.
 - Sin cabecera, comprueba que devuelve 401.
 - Desde el navegador, en la consola de tu web, prueba un `fetch` para verificar que el CORS está bien.
 
@@ -91,4 +91,4 @@ return { json: {
 - **Cabeceras en minúscula**: en n8n las cabeceras llegan siempre en minúsculas; por eso el código lee `x-api-key`, no `X-API-Key`.
 
 ## Cuánto cuesta
-n8n auto-alojado 0 €. Google Sheets 0 €. Solo pagas el VPS. En n8n Cloud gratuito te comes las ejecuciones rápido si la API recibe tráfico real.
+n8n auto-alojado 0 €. Google Sheets 0 €. Solo pagas el VPS. En n8n Cloud (prueba gratuita temporal y después planes de pago) te comes las ejecuciones rápido si la API recibe tráfico real.

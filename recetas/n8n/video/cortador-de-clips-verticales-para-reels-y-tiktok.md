@@ -44,27 +44,28 @@ Para podcasters, formadores y cualquiera que grabe una vez y publique diez veces
 1. **Manual Trigger** (o **Schedule Trigger** una vez al día a las 07:00, zona `Europe/Madrid`).
 2. **Google Sheets** (Get Row(s)) — Filters: `estado` = `pendiente`.
 3. **Split In Batches** (Loop Over Items) — Batch Size `1`. Así procesas un clip cada vez y no saturas la CPU.
+3b. **Code** («Validar fila», modo «Run Once for Each Item») — los tiempos deben ser `hh:mm:ss` (si no, el flujo para) y el clip se guarda con un nombre limpio: `const j = $json; const hora = /^\d{1,2}:\d{2}:\d{2}(\.\d{1,3})?$/; if (!hora.test(String(j.inicio)) || !hora.test(String(j.fin))) throw new Error('Tiempos no válidos en ' + j.nombre_clip); return { json: { ...j, clip: String(j.nombre_clip).replace(/[^A-Za-z0-9._-]/g, '_') } };`
 4. **Google Drive** (Search Files/Folders) — Query String: `{{ $json.archivo }}`, para sacar el ID.
 5. **Google Drive** (Download File) — By ID `{{ $json.id }}`, binario `data`.
 6. **Read/Write Files from Disk** (Write File) — `/tmp/origen.mp4`, Input Binary Field `data`.
 7. **Execute Command** — el corte y el reencuadre en un solo comando:
 ```bash
-ffmpeg -y -ss {{ $('Split In Batches').item.json.inicio }} -to {{ $('Split In Batches').item.json.fin }} -i /tmp/origen.mp4 -vf "crop=ih*9/16:ih,scale=1080:1920,setsar=1" -c:v libx264 -preset veryfast -crf 23 -c:a aac -b:a 128k /tmp/{{ $('Split In Batches').item.json.nombre_clip }}.mp4
+ffmpeg -y -ss {{ $('Validar fila').item.json.inicio }} -to {{ $('Validar fila').item.json.fin }} -i /tmp/origen.mp4 -vf "crop=ih*9/16:ih,scale=1080:1920,setsar=1" -c:v libx264 -preset veryfast -crf 23 -c:a aac -b:a 128k /tmp/{{ $('Validar fila').item.json.clip }}.mp4
 ```
-8. **Read/Write Files from Disk** (Read File) — `/tmp/{{ $('Split In Batches').item.json.nombre_clip }}.mp4`, propiedad `clip`.
+8. **Read/Write Files from Disk** (Read File) — `/tmp/{{ $('Validar fila').item.json.clip }}.mp4`, propiedad `clip`.
 9. **Google Drive** (Upload File) — carpeta `Clips verticales`, Input Binary Field `clip`, File Name `{{ ... }}.mp4`.
 10. **Google Sheets** (Update Row) — `estado` = `listo`.
 11. Conecta la salida de vuelta al **Split In Batches** para que siga con la siguiente fila.
 
 ## Variante: la cara centrada, no el centro del vídeo
-Si el que habla no está centrado, cambia el filtro por un recorte desplazado. Un **Code** antes del Execute Command te calcula el `crop` según una columna `lado` (`izquierda`, `centro`, `derecha`):
+Si el que habla no está centrado, cambia el filtro por un recorte desplazado. Un **Code** (modo «Run Once for Each Item») justo antes del Execute Command te calcula el `crop` según una columna `lado` (`izquierda`, `centro`, `derecha`); solo admite esos tres valores fijos, así que la celda nunca llega al comando:
 ```javascript
-const lado = $json.lado || 'centro';
+const lado = $('Validar fila').item.json.lado || 'centro';
 const w = 'ih*9/16';
 let x = '(iw-ih*9/16)/2';
 if (lado === 'izquierda') x = '0';
 if (lado === 'derecha') x = 'iw-ih*9/16';
-return [{ json: { ...$json, filtro: `crop=${w}:ih:${x}:0,scale=1080:1920,setsar=1` } }];
+return { json: { ...$json, filtro: `crop=${w}:ih:${x}:0,scale=1080:1920,setsar=1` } };
 ```
 Y en el comando pon `-vf "{{ $json.filtro }}"`.
 
@@ -77,6 +78,8 @@ Y en el comando pon `-vf "{{ $json.filtro }}"`.
 - **Tiempos de ejecución**: sube `EXECUTIONS_TIMEOUT` en n8n; un vídeo de una hora tarda varios minutos en descargarse.
 - **Disco lleno**: borra `/tmp` al final con un **Execute Command** `rm -f /tmp/origen.mp4 /tmp/*.mp4`.
 - **Permisos**: si el Execute Command dice `permission denied`, es que el contenedor corre con usuario `node`; escribe siempre en `/tmp`.
+- **Celdas con trampa**: `inicio`, `fin` y `nombre_clip` vienen de la hoja y acaban en el comando; algo como `$(id)` se ejecutaría. Por eso «Validar fila» exige `hh:mm:ss` y en /tmp se usa `clip`, el nombre limpio; el original solo va al nombre en Drive.
+- **El recorte desplazado no hace caso a la hoja**: tras Drive y Write File, `$json` ya no trae `lado`; por eso la variante lo lee de `$('Validar fila')`.
 - **Cuota de Drive**: descargar el mismo vídeo largo 8 veces (una por clip) es lento; mejor descarga una vez fuera del bucle y guarda `/tmp/origen.mp4` para todas las filas del mismo archivo.
 
 ## Cuánto cuesta

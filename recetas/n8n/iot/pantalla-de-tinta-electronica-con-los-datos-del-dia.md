@@ -41,7 +41,7 @@ Para obradores, talleres, recepciones, cocinas y almacenes.
 - Un calendario de Google con las citas del día.
 - Opcional: la temperatura del sensor de la receta del frigorífico, leyendo su última fila.
 ## Los nodos, en orden
-1. **Webhook** — Method GET, Path `panel`, Respond: Using Respond to Webhook node. Esta es la URL que pedirá la pantalla.
+1. **Webhook** — Method GET, Path `panel`, Respond: Using Respond to Webhook node. Esta es la URL que pedirá la pantalla. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Google Sheets** — Get Row(s) de «Panel». En Options > Filters, filtra `estado` igual a `pendiente` (o hazlo en el Code, si tu versión no filtra).
 3. **Google Calendar** — Resource: Event, Operation: Get Many, calendario el tuyo, Options: After `{{ $now.setZone('Europe/Madrid').startOf('day').toISO() }}` y Before `{{ $now.setZone('Europe/Madrid').endOf('day').toISO() }}`, Limit 10.
 4. **Merge** — Mode: Combine, Combine By: Position, o simplemente conecta los dos al mismo **Code** usando referencias por nombre de nodo.

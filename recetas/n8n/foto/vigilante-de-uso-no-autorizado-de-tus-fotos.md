@@ -47,7 +47,7 @@ Para fotógrafos de stock, de producto, ilustradores y creadores que licencian s
 3. **Google Sheets** — otro nodo, `Get Row(s)` de `Lista Blanca`. Lo necesitarás en el Code.
 4. **Google Sheets** — un tercero, `Get Row(s)` de `Hallazgos`, para no repetir avisos ya vistos.
 5. **Split In Batches** — Batch Size: 1, con un **Wait** de 3 segundos detrás.
-6. **HTTP Request** (`Buscar en Google Lens`) — Method `GET`. URL: `https://serpapi.com/search.json`. Query Parameters: `engine` = `google_lens`, `url` = `{{ $json.url_publica }}`, `hl` = `es`, `country` = `es`, `api_key` = tu clave.
+6. **HTTP Request** (`Buscar en Google Lens`) — Method `GET`. URL: `https://serpapi.com/search.json`. Query Parameters: `engine` = `google_lens`, `url` = `{{ $json.url_publica }}`, `hl` = `es`, `country` = `es`, `api_key` desde una credencial de n8n (Generic Credential Type > Query Auth, Name `api_key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría).
 7. **Code** (`Filtrar sospechosos`) — cruza los resultados con la lista blanca y con lo ya avisado. Código abajo.
 8. **IF** — `{{ $json.hay_nuevos }}` es `true`.
 9. **Google Sheets** — `Append Row` en `Hallazgos` para cada dominio nuevo.
@@ -92,4 +92,4 @@ return filas.map((f, i) => ({ json: { ...f, hay_nuevos: true, html: i === 0 ? ht
 ## Cuánto cuesta
 - SerpApi: 100 búsquedas al mes gratis; el siguiente plan son 75 $/mes, solo merece la pena si vives del stock.
 - Alternativa: TinEye API, de pago desde 200 $ por 5.000 búsquedas.
-- n8n, Sheets y Gmail: gratis.
+- Sheets y Gmail: gratis. n8n autoalojado (Community Edition): gratis; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago.

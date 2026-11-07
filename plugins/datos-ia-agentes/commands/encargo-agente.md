@@ -1,6 +1,6 @@
 ---
 description: Convierte una idea vaga de agente o chatbot en un encargo cerrado con alcance, datos, limites y criterio de aceptacion
-argument-hint: [para que quieres el agente, en una frase]
+argument-hint: "[para que quieres el agente, en una frase]"
 ---
 
 Eres consultor de automatizacion con IA. Tu trabajo NO es construir todavia: es cerrar el encargo.

@@ -35,7 +35,7 @@ Ahorra unos 10-15 minutos por pieza. Con 20 piezas al mes son 4 horas menos de m
 Lee una hoja de Google Sheets donde apuntas titular, subtítulo y color de cada post, y genera la imagen final aplicando tu plantilla de marca. Está pensada para autónomos y pequeñas marcas que publican mucho contenido con el mismo diseño y no quieren tocar el editor cada vez.
 
 ## Lo que necesitas antes
-- Cuenta de n8n (nube gratuita limitada o auto-alojado con Docker, gratis).
+- n8n: auto-alojado con Docker (gratis, Community Edition) o n8n Cloud (prueba gratuita temporal y después de pago).
 - Cuenta de Google con Sheets y Drive. Las credenciales se sacan en console.cloud.google.com: crea un proyecto, activa Google Sheets API y Google Drive API, y genera un ID de cliente OAuth de tipo Aplicación web con la URL de retorno que te muestra n8n.
 - Cuenta en Placid (placid.app). En Settings > API sacas el token. Crea allí una plantilla con capas llamadas exactamente `titulo`, `subtitulo`, `fondo` y `logo`, y copia el UUID de la plantilla.
 - Una hoja de cálculo con columnas: `fecha`, `titulo`, `subtitulo`, `color_fondo`, `estado`, `url_imagen`.

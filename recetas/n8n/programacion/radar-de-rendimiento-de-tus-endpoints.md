@@ -95,5 +95,5 @@ return [{ json: { ...$input.first().json, t0: Date.now() } }];
 
 ### Cuánto cuesta
 - 0 € con n8n auto-alojado, Sheets y Telegram.
-- En n8n Cloud gratuito, una ejecución por hora son ~720 al mes y te pasas del límite: aquí conviene auto-alojar (VPS de 5 €/mes).
+- En n8n Cloud (prueba gratuita temporal y después de pago), una ejecución por hora son ~720 al mes y puedes pasarte del límite del plan: aquí conviene auto-alojar (VPS de 5 €/mes).
 - Un servicio equivalente de monitorización de rendimiento cuesta entre 25 y 50 €/mes.

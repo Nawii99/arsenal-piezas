@@ -6,7 +6,7 @@ Mide cada semana cuánto ocupa tu app en la tienda y te avisa si ha crecido más
 
 ## Qué es y qué hace
 
-Flujo de n8n que cada lunes consulta el tamaño de tu app en la App Store mediante la API de búsqueda de iTunes, lo compara con la medición anterior guardada en Google Sheets y te avisa si ha crecido más de un 10 %. Entra el ID de la app; sale una fila con megas, versión y variación, y un aviso si hace falta. Es gratis con APIs públicas y solo necesita n8n y una cuenta de Google.
+Flujo de n8n que cada lunes consulta el tamaño de tu app en la App Store mediante la API de búsqueda de iTunes, lo compara con la medición anterior guardada en Google Sheets y te avisa si ha crecido más de un 10 %. Entra el ID de la app; sale una fila con megas, versión y variación, y un aviso si hace falta. Usa APIs públicas gratuitas y solo necesita n8n (autoalojado es gratis) y una cuenta de Google.
 
 ## Cómo usarla
 
@@ -75,4 +75,4 @@ Si el `results` viene vacío, revisa el país: una app no publicada en España n
 Para Android no hay dato público fiable; si te hace falta, mide el tamaño del AAB en tu proceso de compilación y mándalo a un **Webhook** de este flujo.
 
 ## Cuánto cuesta
-Gratis del todo. Una ejecución a la semana no gasta prácticamente nada ni siquiera en n8n Cloud.
+Gratis del todo con n8n autoalojado (Community Edition). n8n Cloud tiene una prueba gratuita temporal y después planes de pago, aunque una ejecución a la semana consume muy poco.

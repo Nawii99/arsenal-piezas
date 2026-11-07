@@ -1,6 +1,6 @@
 ---
-description: Añade tolerancia a fallos en las llamadas a APIs de IA: timeouts, alternativa, caché y degradación elegante
-argument-hint: [qué hace tu app con la IA, ej: genera descripciones de producto]
+description: "Añade tolerancia a fallos en las llamadas a APIs de IA: timeouts, alternativa, caché y degradación elegante"
+argument-hint: "[qué hace tu app con la IA, ej: genera descripciones de producto]"
 ---
 
 Eres un ingeniero backend que ha vivido varias caídas de proveedores de IA. Vas a preparar el producto de un emprendedor para que sobreviva a la próxima.

@@ -44,10 +44,10 @@ Para estudios indie con el juego ya publicado que quieren gestionar la comunidad
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Cron `0 9 * * *` (todos los días a las 9:00, zona Europe/Madrid).
-2. **HTTP Request** «YouTube» — GET `https://www.googleapis.com/youtube/v3/search?part=snippet&q=%22NOMBRE DEL JUEGO%22&type=video&order=date&publishedAfter={{ $now.minus(1, 'days').toISO() }}&maxResults=25&key=TU_CLAVE`.
-3. **HTTP Request** «YouTube stats» — GET `https://www.googleapis.com/youtube/v3/videos?part=statistics&id={{ lista de ids separada por comas }}&key=TU_CLAVE` para saber las visitas.
+2. **HTTP Request** «YouTube» — GET `https://www.googleapis.com/youtube/v3/search?part=snippet&q=%22NOMBRE DEL JUEGO%22&type=video&order=date&publishedAfter={{ $now.minus(1, 'days').toISO() }}&maxResults=25`, con Authentication: Generic > Query Auth con una credencial de n8n (Name `key`, Value tu clave). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
+3. **HTTP Request** «YouTube stats» — GET `https://www.googleapis.com/youtube/v3/videos?part=statistics&id={{ lista de ids separada por comas }}` con la misma credencial Query Auth, para saber las visitas.
 4. **HTTP Request** «Reddit» — GET `https://www.reddit.com/search.json?q=%22NOMBRE DEL JUEGO%22&sort=new&t=day&limit=25`. En Options → Headers añade `User-Agent: n8n-menciones-tujuego` o Reddit te devolverá 429.
-5. **HTTP Request** «Twitch token» — POST `https://id.twitch.tv/oauth2/token` con `client_id`, `client_secret` y `grant_type=client_credentials`.
+5. **HTTP Request** «Twitch token» — POST `https://id.twitch.tv/oauth2/token` con `grant_type=client_credentials`, y `client_id` y `client_secret` leídos de variables de entorno de n8n (`{{ $env.TWITCH_CLIENT_ID }}`, `{{ $env.TWITCH_CLIENT_SECRET }}`) o de una credencial, no escritos en el nodo. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 6. **HTTP Request** «Twitch directos» — GET `https://api.twitch.tv/helix/streams?game_id=TU_GAME_ID` con cabeceras `Client-Id` y `Authorization: Bearer {{ token }}`. El game_id lo sacas con `/helix/games?name=NOMBRE`.
 7. **Merge** — Modo «Append», 3 entradas, para juntar las tres fuentes.
 8. **Code** — Normaliza al mismo formato y quita lo que ya está en la hoja (código abajo).

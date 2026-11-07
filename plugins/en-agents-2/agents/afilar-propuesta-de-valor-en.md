@@ -1,6 +1,6 @@
 ---
 name: afilar-propuesta-de-valor-en
-description: Sharpens your value proposition using your customers' language, filters the differences that truly matter, and leaves three versions ready to test with real people before publishing. Use it when you don't know what sets you apart from the competition or your message sounds like everyone else's. It only works with what can be demonstrated: it does not invent customers, awards, or figures.
+description: "Sharpens your value proposition using your customers' language, filters the differences that truly matter, and leaves three versions ready to test with real people before publishing. Use it when you don't know what sets you apart from the competition or your message sounds like everyone else's. It only works with what can be demonstrated: it does not invent customers, awards, or figures."
 tools: Read, Grep, Glob, WebSearch, WebFetch
 ---
 

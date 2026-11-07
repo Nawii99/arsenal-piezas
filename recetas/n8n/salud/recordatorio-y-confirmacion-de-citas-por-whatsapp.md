@@ -53,7 +53,7 @@ Está pensada para cualquier negocio de salud y bienestar con agenda: fisioterap
 5. **IF** – Condición: `={{ $json.enviado_24h }}` is not equal to `si`. La rama true sigue; la false no hace nada.
 6. **HTTP Request** – Method: POST. URL: `https://graph.facebook.com/v20.0/TU_PHONE_NUMBER_ID/messages`. Authentication: Generic Credential Type > Header Auth, nombre `Authorization`, valor `Bearer TU_TOKEN`. Body: JSON, contenido abajo en el bloque de código.
 7. **Google Sheets** (segundo) – Operation: Update. Matching Column `event_id`, escribe `enviado_24h` = `si`.
-8. **Webhook** (workflow aparte, llámalo «Respuestas WhatsApp») – HTTP Method: POST, Path: `wa-respuestas`. En Meta, Configuración de WhatsApp > Webhooks, pega la URL de producción del webhook y suscríbete al campo `messages`.
+8. **Webhook** (workflow aparte, llámalo «Respuestas WhatsApp») – HTTP Method: POST, Path: `wa-respuestas`. En Meta, Configuración de WhatsApp > Webhooks, pega la URL de producción del webhook y suscríbete al campo `messages`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 9. **Code** en ese segundo workflow – lee `body.entry[0].changes[0].value.messages[0].button.text` y el teléfono, y devuelve `{telefono, respuesta}`.
 10. **Google Sheets** – Update por `telefono`: si la respuesta es «Confirmo» escribe estado `confirmada`, si es «No puedo» escribe `cancelada`.
 11. **Gmail** – Operation: Send. Solo en la rama de cancelación: te avisas a ti mismo con el nombre y la hora del hueco libre.

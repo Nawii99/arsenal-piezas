@@ -45,9 +45,9 @@ Lanza búsquedas en YouTube por tu marca y variantes, se queda con lo publicado 
 1. **Schedule Trigger** — cada día a las 08:30, Europe/Madrid.
 2. **Code** — devuelve un item por término de búsqueda.
 3. **Split In Batches** — 1 a 1, para no disparar la cuota.
-4. **HTTP Request** — GET https://www.googleapis.com/youtube/v3/search?part=snippet&q={{ $json.termino }}&type=video&order=date&publishedAfter={{ $json.desde }}&maxResults=10&relevanceLanguage=es&key=TU_API_KEY.
+4. **HTTP Request** — GET https://www.googleapis.com/youtube/v3/search?part=snippet&q={{ $json.termino }}&type=video&order=date&publishedAfter={{ $json.desde }}&maxResults=10&relevanceLanguage=es. Authentication: Generic Credential Type > Query Auth, con una credencial de n8n (Name `key`, Value tu clave de YouTube Data API). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 5. **Code** — aplana los resultados y filtra los que ya estén en la hoja (usa un Google Sheets «Get Many» previo y compara videoId).
-6. **HTTP Request** — GET .../youtube/v3/videos?part=snippet,statistics&id={{ $json.videoId }}&key=... para tener descripción y visitas.
+6. **HTTP Request** — GET .../youtube/v3/videos?part=snippet,statistics&id={{ $json.videoId }} (con la misma credencial Query Auth) para tener descripción y visitas.
 7. **AI Agent** — prompt: «Aquí tienes el título, la descripción y las visitas de un vídeo que menciona la marca X. Di si el tono es POSITIVO, NEUTRO o NEGATIVO y resume en una frase qué dice de la marca. Si en realidad no habla de la marca, responde IRRELEVANTE.»
 8. **IF** — descarta los IRRELEVANTE.
 9. **Google Sheets** (Append) — guarda la mención.

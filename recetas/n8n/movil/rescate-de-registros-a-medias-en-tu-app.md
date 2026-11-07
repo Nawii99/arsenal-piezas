@@ -42,7 +42,7 @@ Para apps con registro, prueba gratuita o compra dentro que pierden usuarios en 
 - n8n con URL pública.
 
 ## Los nodos, en orden — flujo 1: recoger eventos
-1. **Webhook** — POST, ruta `evento-app`. Añade un header secreto `x-app-key` y un **IF** que lo valide.
+1. **Webhook** — POST, ruta `evento-app`. Añade un header secreto `x-app-key` y un **IF** que lo valide. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Set** — normaliza los campos.
 3. **Airtable** — `Create Record` en `Eventos`.
 4. **Respond to Webhook** — devuelve `{"ok":true}` cuanto antes.

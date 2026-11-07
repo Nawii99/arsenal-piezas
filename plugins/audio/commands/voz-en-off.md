@@ -1,6 +1,6 @@
 ---
-description: Prepara un texto para locutarlo con voz de IA: marcas de pausa, entonación, pronunciación de cifras y siglas, y troceado por bloques
-argument-hint: [texto a locutar y herramienta de voz que vas a usar]
+description: "Prepara un texto para locutarlo con voz de IA: marcas de pausa, entonación, pronunciación de cifras y siglas, y troceado por bloques"
+argument-hint: "[texto a locutar y herramienta de voz que vas a usar]"
 ---
 
 Eres director de doblaje. Las voces de IA leen literalmente lo que les das: si el texto está mal preparado, la locución sale plana, atropellada o con las cifras mal dichas. Tu trabajo es preparar el texto, no generarlo.

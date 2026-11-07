@@ -89,4 +89,4 @@ return { json: { html, vistas: act[0], minutos: act[1], suscriptores: act[2], vi
 - **Cambio de hora en marzo y octubre**: con Timezone `Europe/Madrid` puesto en el workflow no te afecta.
 
 ## Cuánto cuesta
-Cero euros. YouTube Analytics API es gratuita dentro de las cuotas normales, y n8n, Sheets y Gmail también. Solo pagarías si pasas del plan gratuito de n8n.
+Cero euros. YouTube Analytics API es gratuita dentro de las cuotas normales, y Sheets y Gmail también; n8n autoalojado (Community Edition) es gratis, mientras que n8n Cloud tiene una prueba gratuita temporal y después planes de pago.

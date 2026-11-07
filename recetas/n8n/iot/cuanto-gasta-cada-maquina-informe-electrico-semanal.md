@@ -11,7 +11,7 @@ Flujo de n8n que cada hora lee la energía acumulada de cada enchufe medidor She
 ## Cómo usarla
 
 1. Enchufa un medidor Shelly a cada máquina
-2. Apunta auth_key y ID de cada dispositivo en la hoja Consumo
+2. Apunta el ID de cada dispositivo en la hoja Consumo y guarda la auth_key en una credencial de n8n
 3. Pon tu precio medio del kWh con impuestos
 4. Revisa el informe del lunes durante un mes
 
@@ -44,7 +44,7 @@ Para obradores, talleres, restaurantes, peluquerías y cualquiera con varias má
 1. **Schedule Trigger** — Cron `5 * * * *`.
 2. **Google Sheets** — Get Row(s) de la pestaña `equipos`. Sale un item por máquina.
 3. **Loop Over Items** (el nodo que antes se llamaba Split In Batches) — Batch Size 1.
-4. Dentro del bucle > **HTTP Request** — POST `https://shelly-53-eu.shelly.cloud/device/status`, Form Urlencoded: `id` = `{{ $json.device_id }}`, `auth_key` = tu clave. Options > Response > Never Error.
+4. Dentro del bucle > **HTTP Request** — POST `https://shelly-53-eu.shelly.cloud/device/status`, Form Urlencoded: `id` = `{{ $json.device_id }}`, `auth_key` desde la credencial (la clave guardada en una variable de entorno de n8n; no la escribas literal en el nodo: un flujo exportado se llevaría la clave). Options > Response > Never Error. La `auth_key` no la escribas en el nodo ni la guardes en la hoja: ponla en una credencial de n8n (Authentication: Generic Credential Type > Custom Auth, con el JSON `{"body": {"auth_key": "tu clave"}}`); un flujo exportado se la llevaría.
 5. **Code** «Calcular hora» — Run Once for Each Item:
 ```js
 const st = $json.data && $json.data.device_status ? $json.data.device_status : {};
@@ -86,6 +86,7 @@ Ejecuta el flujo 1 dos veces separadas 10 minutos: la primera fila saldrá con 0
 - **El contador del Shelly se resetea** al actualizar firmware o cortar la luz: el código ignora los valores menores que el previo, así que como mucho pierdes una hora.
 - **Estructura distinta según modelo**: Plug S Gen2 usa `switch:0.aenergy.total` y los Gen1 usan `meters[0].total`. El código contempla los dos; si tienes un 3EM, mira la respuesta cruda y ajusta la línea.
 - **Se te olvida cambiar el precio del kWh**: revísalo cada vez que cambies de tarifa.
+- **Dos ejecuciones a la vez leen la misma medida previa** y apuntan el mismo consumo dos veces: pon la concurrencia del flujo a 1 (ejecuciones de una en una) y, antes de añadir la fila en `horas`, comprueba que no existe ya una con la misma fecha, hora y nombre.
 - **Los datos en memoria se pierden si reinicias n8n**: solo afecta a la primera hora tras el reinicio.
 - **Muchas máquinas, muchas llamadas**: con 10 equipos son 7.200 ejecuciones al mes dentro del bucle. Autoaloja n8n.
 ## Cuánto cuesta

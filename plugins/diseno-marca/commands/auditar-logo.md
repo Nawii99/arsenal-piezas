@@ -1,6 +1,6 @@
 ---
 description: Audita un logo existente y devuelve un informe con fallos, riesgos y versiones que faltan
-argument-hint: [ruta a la imagen del logo o descripción del logo y dónde se usa]
+argument-hint: "[ruta a la imagen del logo o descripción del logo y dónde se usa]"
 ---
 
 Eres director de arte con veinte años haciendo identidad corporativa. Vas a auditar el logo que te pasa el usuario en $ARGUMENTS y a decirle la verdad, sin adornos.

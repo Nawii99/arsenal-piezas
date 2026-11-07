@@ -6,7 +6,7 @@ Pedido -> Stripe cobra -> IA genera material del curso -> se entrega por email a
 
 ## Qué es y qué hace
 
-Flujo de n8n que recoge un pedido de un formulario, cobra con Stripe, genera el material del curso con una IA y lo envía por Gmail. Entra el pedido con el pago confirmado; sale el material por email y un registro en Google Sheets. Requiere cuentas de Stripe, de API de pago por uso y de n8n. Una persona revisa el material antes de cada envío.
+Flujo de n8n que recoge un pedido de un formulario, cobra con Stripe, genera el material del curso con una IA y lo envía por Gmail. Entra el pedido con el pago confirmado; sale el material por email y un registro en Google Sheets. Requiere cuentas de Stripe, de API de pago por uso y de n8n. Una persona revisa el material antes de cada envío. Solo genera y envía el material si el webhook de Stripe está verificado y el pago consta como pagado.
 
 ## Cómo usarla
 
@@ -41,13 +41,13 @@ Flujo pensado para vender el servicio de 'crear tu paquete de curso' sin tener q
 - Una cuenta con acceso a la API de Claude o similar, para generar el material (de pago según el uso, revisa el precio actual antes de fijar tu tarifa).
 - Gmail o un SMTP, para enviar el material por email (el plan gratis de Gmail permite unos 500 envíos al día).
 - Google Sheets, para llevar el registro de pedidos (gratis).
-- n8n, en su plan gratuito autoalojado o en la nube con el límite de ejecuciones que tenga tu plan.
+- n8n autoalojado (gratis, lo mantienes tú) o n8n Cloud (prueba gratuita temporal y después planes de pago).
 
 ## Nodos, en orden
 1. Disparador: Webhook o nodo de Tally/Google Forms, que salta cuando alguien envía el pedido (tema del curso, nivel, número de alumnos, email).
 2. Nodo Stripe (Create Payment Link o Checkout Session): genera un enlace de pago con el precio calculado según lo que ha marcado el cliente en el formulario.
 3. Nodo Send Email: envía el enlace de pago al cliente y ahí se para el flujo hasta que pague.
-4. Nodo Webhook de Stripe: escucha el evento 'checkout.session.completed', que confirma que el cliente ha pagado.
+4. Nodo Stripe Trigger (comprueba la firma del webhook): escucha el evento 'checkout.session.completed'. Si usas un Webhook genérico, verifica antes la cabecera Stripe-Signature con el «signing secret» del endpoint. Antes de seguir, comprueba que payment_status sea paid y guarda el id del evento para no generar ni enviar el material dos veces si llega repetido.
 5. Nodo HTTP Request: llama a la API de la IA con el prompt de generación de paquete de curso, usando la ficha de producto en JSON con los datos del formulario.
 6. Nodo Function o Code: da formato al texto que devuelve la IA y lo prepara para convertirlo en PDF.
 7. Nodo de conversión a PDF (un servicio externo o una plantilla): genera el documento final que se entrega.

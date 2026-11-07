@@ -1,6 +1,6 @@
 ---
 name: version-otro-idioma
-description: Use this agent when an existing video must be adapted for another language or market - translated subtitles that fit the timing, a voice-over script matched to the original durations, on-screen text and cultural references that need changing. Examples - "la version en ingles de este anuncio", "traduce los subtitulos pero que quepan", "esto sirve para Mexico?".
+description: "Úsalo cuando un vídeo existente deba adaptarse a otro idioma o mercado: subtítulos traducidos que respeten los tiempos, un guion de locución ajustado a las duraciones originales, y textos en pantalla y referencias culturales que haya que cambiar. Ejemplos: \"la version en ingles de este anuncio\", \"traduce los subtitulos pero que quepan\", \"esto sirve para Mexico?\"."
 tools: Read, Write, Bash
 ---
 

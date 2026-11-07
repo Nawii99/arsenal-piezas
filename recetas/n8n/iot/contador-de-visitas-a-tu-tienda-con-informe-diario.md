@@ -40,7 +40,7 @@ Para tiendas de barrio, peluquerías, farmacias, gimnasios pequeños y cualquier
 - Hoja de Google «Visitas» con dos pestañas: `registro` (columnas: fecha, hora, franja) y nada más.
 - Cuenta de Gmail conectada en n8n (credencial Gmail OAuth2, se hace desde Google Cloud Console con el asistente de n8n; también vale el nodo **Send Email** con SMTP si prefieres no pelearte con Google).
 ## Los nodos, flujo 1: contar
-1. **Webhook** — Method GET, Path `entrada`, Respond Immediately.
+1. **Webhook** — Method GET, Path `entrada`, Respond Immediately. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. En el sensor: Shelly i4 > Ajustes > Acciones > sobre el evento de pulsación/cierre pon la URL `https://tu-n8n.com/webhook/entrada?puerta=principal`. Si usas ESP32, que haga un `HTTP GET` a esa misma URL.
 3. **Code** (llámalo «Marcar hora») — Run Once for All Items:
 ```js

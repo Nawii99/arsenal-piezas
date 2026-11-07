@@ -16,12 +16,13 @@
       "1. Agrupa los comentarios en temas y di cuántos clientes mencionan cada uno",
       "2. Separa detractores (0-6), pasivos (7-8) y promotores (9-10) y calcula cuánto dinero hay en cada grupo",
       "3. Para cada detractor, propón una llamada con el motivo concreto a tratar",
-      "4. Para cada promotor, propón una petición: reseña, recomendación o caso de éxito",
+      "4. Para cada promotor, propón una petición: recomendación o caso de éxito para tu web, siempre con su permiso",
       "5. Marca los 3 arreglos internos que más quejas quitarían"
     ]
   },
   "restricciones": [
     "Nada de preguntas que dirijan la respuesta ni escalas raras",
+    "Esta encuesta no decide a quién se pide una reseña pública en Google o en tiendas: esa petición va a todos los clientes que terminan el servicio por igual, porque Google y las tiendas prohíben pedirla solo a los contentos",
     "No inventes conclusiones si hay menos de 5 respuestas: dilo y trátalas una a una",
     "Cada acción con nombre de cliente y plazo"
   ],

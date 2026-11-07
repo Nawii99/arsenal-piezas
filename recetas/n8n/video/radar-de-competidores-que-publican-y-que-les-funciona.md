@@ -51,7 +51,7 @@ Son dos flujos: uno apunta en una hoja cada vídeo nuevo de tus competidores usa
 5. **Google Sheets** — Get Row(s) de «Competencia».
 6. **Code** («Los de hace 3 días») — deja solo filas publicadas hace entre 3 y 4 días y aún sin avisar.
 7. **Split In Batches** — Batch Size 50 (videos.list admite 50 IDs de golpe si los juntas por comas; si prefieres simple, 1).
-8. **HTTP Request** («Visitas») — GET `https://www.googleapis.com/youtube/v3/videos` con `part=statistics,snippet`, `id={{ $json.ids }}`, `key=TU_CLAVE`.
+8. **HTTP Request** («Visitas») — GET `https://www.googleapis.com/youtube/v3/videos` con `part=statistics,snippet`, `id={{ $json.ids }}`, y la clave de API con Authentication > `Generic Credential Type` > `Query Auth`: una credencial de n8n con Name `key` y Value tu clave. No la escribas en los parámetros del nodo: un flujo exportado se llevaría la clave.
 9. **Code** («Marcar los que despegan») — calcula visitas por día y compara con el umbral.
 10. **IF** — `{{ $json.despega }}` is true.
 11. **Telegram** — Send Message: `🔥 {{ $json.canal }} — {{ $json.titulo }} · {{ $json.visitas }} visitas en 3 días · {{ $json.url }}`.

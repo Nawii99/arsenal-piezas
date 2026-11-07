@@ -43,7 +43,7 @@ Si el build falla, te manda el error resumido y un botón para restaurar el últ
 - Bot de Telegram con tu chat ID y n8n con URL pública.
 
 ## Los nodos, en orden
-1. **GitHub Trigger** — Authentication: Access Token; Repository Owner y Name: los tuyos; Events: `push`. (Alternativa sin credencial: nodo **Webhook** con Path `deploy` y pega esa URL en GitHub > Settings > Webhooks, content type `application/json`, evento `push`.)
+1. **GitHub Trigger** — Authentication: Access Token; Repository Owner y Name: los tuyos; Events: `push`. (El GitHub Trigger comprueba la firma de cada aviso. Si lo cambias por un **Webhook** genérico, configura un *Secret* en GitHub, valida la cabecera `X-Hub-Signature-256` en un nodo Code con ese secreto leído de una variable de entorno y descarta las entregas repetidas por `X-GitHub-Delivery`; una URL secreta no autentica nada.)
 2. **IF** (renómbralo «¿Rama principal?») — String: `={{ $json.body?.ref || $json.ref }}` is equal to `refs/heads/main`.
 3. **HTTP Request** (renómbralo «Lanzar build») — Method: POST; URL: tu build hook; Body: none.
 4. **Wait** — Amount: 45, Unit: Seconds.

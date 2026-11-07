@@ -39,7 +39,7 @@ Pone un validador entre el mundo exterior y tu base de datos: define las reglas 
 - Una tabla destino, por ejemplo `CREATE TABLE clientes (id serial primary key, email text unique not null, nombre text, telefono text, importe numeric, creado timestamptz default now());`.
 - Una hoja `rechazados` en Sheets con columnas `fecha`, `errores`, `payload`.
 **Los nodos, en orden**
-1. `Webhook` — POST, Path `alta-cliente`, Respond `Using Respond to Webhook node`.
+1. `Webhook` — POST, Path `alta-cliente`, Respond `Using Respond to Webhook node`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. `Code` (*Validar*) — Mode `Run Once for Each Item`. Aquí van tus reglas, en un solo sitio:
 ```js
 const reglas = {

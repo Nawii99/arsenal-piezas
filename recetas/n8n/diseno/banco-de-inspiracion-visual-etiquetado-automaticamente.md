@@ -80,4 +80,4 @@ Empieza con un solo feed y el Limit en 3. Ejecuta en test y mira que Airtable re
 - **Base saturada**: 15 piezas al día son 450 al mes. Airtable gratis admite 1.000 registros por base, así que archiva o baja el Limit a 5.
 
 ## Cuánto cuesta
-n8n y RSS gratis. Airtable plan gratuito hasta 1.000 registros. La IA, con un modelo pequeño y 15 piezas al día, unos 0,50-2 € al mes.
+n8n autoalojado y RSS gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago). Airtable plan gratuito hasta 1.000 registros. La IA, con un modelo pequeño y 15 piezas al día, unos 0,50-2 € al mes.

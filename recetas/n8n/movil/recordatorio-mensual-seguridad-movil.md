@@ -34,7 +34,7 @@ Ofrécelo como suscripción de mantenimiento de seguridad móvil para autónomos
 ## Qué hace
 Manda un recordatorio automático una vez al mes por Telegram (o email) con la checklist básica de seguridad del móvil: revisar copia de seguridad, revisar permisos nuevos, comprobar bloqueo de pantalla.
 ## Cuentas necesarias
-- Cuenta de n8n (la versión cloud gratuita tiene un límite de ejecuciones al mes, revisa el plan actual antes de montarlo).
+- Cuenta de n8n (n8n autoalojado es gratis; n8n Cloud tiene una prueba gratuita temporal y después es de pago, revisa el plan actual antes de montarlo).
 - Un bot de Telegram gratis (se crea hablando con @BotFather, tarda dos minutos) o una cuenta de email tipo Gmail si prefieres recibirlo por correo.
 ## Nodos, en orden
 1. Cron (disparador): configúralo para 'Every month', día 1, a la hora que prefieras. Es el nodo que arranca todo.

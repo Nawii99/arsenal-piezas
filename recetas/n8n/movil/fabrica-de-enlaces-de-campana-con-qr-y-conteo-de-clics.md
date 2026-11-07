@@ -50,7 +50,7 @@ Cada vez que apuntas una campaña nueva en una hoja (canal, medio, destino iOS y
 7. **Google Sheets** — Update Row guardando enlace corto, ios_url final, android_url final y qr_drive con el enlace de Drive.
 
 ## Los nodos (flujo 2: el redirector que cuenta clics)
-1. **Webhook** — HTTP Method: GET, Path: `r/:slug` (n8n admite parámetros en la ruta), Respond: Using 'Respond to Webhook' Node.
+1. **Webhook** — HTTP Method: GET, Path: `r/:slug` (n8n admite parámetros en la ruta), Respond: Using 'Respond to Webhook' Node. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Google Sheets** — Get Row(s) de `campanias`, Filter: slug igual a `{{ $json.params.slug }}`.
 3. **Code** (nombre: Elegir destino) — mira el `user-agent` de la cabecera y decide iOS, Android o web. Código abajo.
 4. **Google Sheets** — Append Row en una pestaña `clics` con fecha, slug, plataforma y país si lo tienes. Mejor que sumar en la misma fila: no hay carreras entre ejecuciones.

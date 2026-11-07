@@ -45,7 +45,7 @@ Para desarrollador web o dueño de tienda que ya sabe que la velocidad le afecta
 1. **Schedule Trigger** — Weeks 1, Monday, Hour 7.
 2. **Google Sheets** — Get Row(s) de la pestaña `URLs`, Return All.
 3. **Split In Batches** — Batch Size 1 (la API tarda 20-40 s por URL, no la agobies).
-4. **HTTP Request** (`Medir`) — Method GET, URL: `https://www.googleapis.com/pagespeedonline/v5/runPagespeed`. En Options > Query Parameters añade: `url` = `{{ $json.url }}`, `key` = tu clave, `strategy` = `mobile`, y cuatro veces `category` con valores `performance`, `accessibility`, `best-practices`, `seo`. Timeout 120000. Retry On Fail activado, 3 intentos, 5000 ms entre intentos.
+4. **HTTP Request** (`Medir`) — Method GET, URL: `https://www.googleapis.com/pagespeedonline/v5/runPagespeed`. En Options > Query Parameters añade: `url` = `{{ $json.url }}`, `key` desde una credencial de n8n (Generic Credential Type > Query Auth, Name `key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría), `strategy` = `mobile`, y cuatro veces `category` con valores `performance`, `accessibility`, `best-practices`, `seo`. Timeout 120000. Retry On Fail activado, 3 intentos, 5000 ms entre intentos.
 5. **Code** (`Extraer metricas`) — Mode: Run Once for Each Item. Código abajo.
 6. **Google Sheets** (`Guardar`) — Append Row en la pestaña `Velocidad`, mapeando los campos del Code.
 7. **Code** (`Comparar`) — compara con la fila anterior de esa misma URL. Código abajo.

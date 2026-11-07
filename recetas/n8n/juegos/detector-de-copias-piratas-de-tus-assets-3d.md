@@ -46,7 +46,7 @@ Una lista blanca con tus dominios legítimos: tu web, `fab.com`, `cgtrader.com`,
 1) **Schedule Trigger** — `0 7 * * 1` (lunes a las 7:00).
 2) **Google Sheets** (`Get Row(s)`) — pestaña `productos`, filtrando `activo` igual a `si`.
 3) **Split In Batches** — tamaño 1, para respetar la cuota de la API.
-4) **HTTP Request** — GET a `https://www.googleapis.com/customsearch/v1?key=TU_CLAVE&cx=TU_CX&num=10&q="{{ $json.nombre }}" (free OR download OR torrent OR gratis)`. Activa `Never Error` en Options.
+4) **HTTP Request** — GET a `https://www.googleapis.com/customsearch/v1?cx=TU_CX&num=10&q="{{ $json.nombre }}" (free OR download OR torrent OR gratis)`. Autenticación con Authentication: Generic > Query Auth con una credencial de n8n (Name `key`, Value tu clave). Activa `Never Error` en Options. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 5) **Wait** — 2 segundos, para no saturar la cuota.
 6) **Google Sheets** (`Get Row(s)`) — pestaña `hallazgos`, para no repetir avisos.
 7) **Code** — filtra la lista blanca y los duplicados.
@@ -95,5 +95,5 @@ Antes de mandar una reclamación por copyright, ten claro que tienes los derecho
 La retirada se pide al hosting o a Google (`google.com/webmasters/tools/legal-removal-request`), no al que sube el archivo.
 
 ## Cuánto cuesta
-n8n, Sheets y Gmail: gratis.
+n8n autoalojado (Community Edition), Sheets y Gmail: gratis; n8n Cloud tiene una prueba gratuita temporal y después planes de pago.
 Google Custom Search: gratis hasta 100 consultas al día. Un catálogo de 50 productos revisado semanalmente sale a coste cero.

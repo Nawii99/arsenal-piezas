@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-backend-alternativas",
+  "version": "1.0.0",
+  "description": "Backend · Alternativas: 4 comandos /, 4 skills en español que se parecen a otras piezas de backend; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "backend",
+    "arsenal-del-marketer",
+    "alternativas"
+  ]
+}

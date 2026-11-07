@@ -36,7 +36,7 @@ Vuelca la base de producción, la restaura en la base de pruebas y, antes de dar
 **Lo que necesitas antes**
 - n8n **auto-alojado** (usa `Execute Command`).
 - `postgresql-client` dentro del contenedor de n8n (`RUN apk add --no-cache postgresql-client` en tu Dockerfile).
-- Dos bases: producción (idealmente una **réplica de lectura**, nunca la principal en caliente) y pruebas. Credenciales de ambas como variables de entorno de n8n: `PROD_URL` y `TEST_URL` con formato `postgres://usuario:clave@host:5432/base`.
+- Dos bases: producción (idealmente una **réplica de lectura**, nunca la principal en caliente) y pruebas. Credenciales de ambas como variables de entorno de n8n: `PROD_URL` (producción) y `TEST_ADMIN_URL` (servidor de pruebas, con un usuario que pueda crear y renombrar bases, apuntando a la base `postgres`), con formato `postgres://usuario:clave@host:5432/base`. Nunca escritas en el nodo.
 - Credencial `Postgres` en n8n apuntando a la base de **pruebas** (nunca a producción en este flujo).
 - Aviso legal: aunque anonimices después, durante unos minutos hay datos reales en pruebas. Lo correcto es restaurar en una base temporal, anonimizar allí y luego renombrar. Abajo va así.
 **Los nodos, en orden**
@@ -82,6 +82,7 @@ set -e; psql "$TEST_ADMIN_URL" -c "SELECT pg_terminate_backend(pid) FROM pg_stat
 - *El volcado tarda y bloquea*: hazlo siempre contra una réplica de lectura, no contra la base que atiende a tus clientes.
 - *Conexiones abiertas al renombrar*: por eso está el `pg_terminate_backend`. Avisa al equipo de que los sábados a las 4 el entorno se corta un minuto.
 - *Secretos dentro de la base* (claves de API de clientes, webhooks): anonimízalos también o el entorno de pruebas podría mandar peticiones reales a terceros. Es el fallo más peligroso y el más olvidado.
+- *Variable con otro nombre*: los comandos usan `TEST_ADMIN_URL`; si la defines como `TEST_URL`, `psql` no conecta. Las claves van en variables de entorno: un flujo exportado se llevaría lo escrito en el nodo.
 - *Espacio en disco*: guardas dump + base nueva + base vieja a la vez. Ten al menos 3 veces el tamaño de la base libre.
 **Cuánto cuesta**
 Gratis con n8n auto-alojado. El coste real es el del servidor de pruebas, que ya tienes. Herramientas comerciales de enmascaramiento de datos empiezan en cientos de euros al mes.

@@ -1,6 +1,6 @@
 ---
 description: Implanta registros útiles y estructurados en el proyecto para poder diagnosticar fallos rápido
-argument-hint: [proyecto o fallo concreto que no consigues explicar]
+argument-hint: "[proyecto o fallo concreto que no consigues explicar]"
 ---
 
 Eres un ingeniero backend veterano. Sabes que la diferencia entre arreglar algo en 5 minutos o en 5 horas está en lo que se registró.

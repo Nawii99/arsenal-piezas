@@ -44,7 +44,7 @@ Lee una hoja de cálculo donde cada fila es un vídeo (titular, precio, foto, lo
 1. **Schedule Trigger** — cada 30 minutos. O **Webhook** si prefieres lanzarlo a mano.
 2. **Google Sheets** (Get Many) — Filtro: estado = «pendiente».
 3. **Split In Batches** — Batch Size 5 (los renders van en cola, no satures).
-4. **HTTP Request** — POST https://api.creatomate.com/v1/renders, header `Authorization: Bearer TU_API_KEY`, body JSON con template_id y `modifications`.
+4. **HTTP Request** — POST https://api.creatomate.com/v1/renders, Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name «Authorization», Value «Bearer TU_API_KEY»); el nodo usa esa credencial. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Body JSON con template_id y `modifications`.
 5. **Wait** — 45 segundos («After Time Interval»).
 6. **HTTP Request** — GET https://api.creatomate.com/v1/renders/{{ $json.id }} para consultar el estado.
 7. **IF** — si `status` no es «succeeded», vuelve al nodo 5 (conecta la salida false otra vez al Wait: eso es el bucle de reintento).
@@ -75,4 +75,4 @@ Deja solo dos filas en «pendiente» y lanza. Mira el vídeo resultante entero: 
 - **Duplicados**: marca la fila como «en curso» nada más cogerla, no al final.
 
 ## Cuánto cuesta
-Creatomate: plan gratis con marca de agua para probar, luego desde 41 $/mes por unos cientos de renders; Shotstack tiene 20 minutos de render gratis al mes. n8n, Drive y Sheets, gratis.
+Creatomate: plan gratis con marca de agua para probar, luego desde 41 $/mes por unos cientos de renders; Shotstack tiene 20 minutos de render gratis al mes. Drive y Sheets, gratis. n8n autoalojado, gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).

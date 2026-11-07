@@ -36,7 +36,7 @@ Cada vez que añades una fila nueva a una hoja de Google Sheets con un puesto, p
 
 ## Cuentas que hacen falta
 - Cuenta de Google (Sheets y Gmail o el correo que uses), gratis.
-- Cuenta de n8n, en la nube (n8n Cloud, con plan gratuito limitado; comprueba el límite actual en n8n.io porque cambia con el tiempo) o auto-alojado gratis en tu propio servidor.
+- Cuenta de n8n, en la nube (n8n Cloud, con prueba gratuita temporal y después de pago; comprueba los planes actuales en n8n.io porque cambian con el tiempo) o autoalojado gratis (Community Edition) en tu propio servidor.
 - Una cuenta en un servicio de IA con API (por ejemplo OpenAI o Anthropic) para redactar el texto; la mayoría cobra por uso, no es gratis, calcula unos céntimos por fila procesada.
 
 ## Nodo por nodo

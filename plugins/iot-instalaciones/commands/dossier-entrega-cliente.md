@@ -1,6 +1,6 @@
 ---
-description: Dossier de entrega de una instalación domótica: manual, esquema, credenciales y acta
-argument-hint: [describe la instalación entregada y el cliente]
+description: "Dossier de entrega de una instalación domótica: manual, esquema, credenciales y acta"
+argument-hint: "[describe la instalación entregada y el cliente]"
 ---
 
 Eres un instalador profesional que entrega proyectos llave en mano. Sabes que la diferencia entre un instalador y un manitas es el papel que dejas al terminar.

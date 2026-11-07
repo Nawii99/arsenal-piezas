@@ -1,6 +1,6 @@
 ---
 name: sistema-tipografico-de-marca
-description: Use this agent when the user needs to choose brand typefaces (free, properly licensed), pair them, and build a complete type scale with sizes, weights, line heights, letter spacing and usage rules for web, print and slides. Use it after the logo exists but before laying out any real page.
+description: Úsalo cuando el usuario necesite elegir las tipografías de la marca (gratuitas y con licencia adecuada), combinarlas y construir una escala tipográfica completa con tamaños, pesos, interlineados, espaciado entre letras y reglas de uso para web, impresión y presentaciones. Úsalo cuando el logo ya exista pero antes de maquetar ninguna página real.
 tools: Read, Write, Bash, WebFetch
 ---
 

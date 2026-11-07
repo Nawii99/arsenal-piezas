@@ -41,7 +41,7 @@ Para el que ya tiene alertas pero las ha silenciado porque le llegan cincuenta a
 - Una hoja `Fallos` con columnas: `huella`, `titulo`, `plataforma`, `version`, `contador`, `primer_visto`, `ultimo_aviso`.
 
 ## Los nodos, en orden
-1. **Webhook** — método POST, ruta `crash`. Copia la URL Production y pégala en Sentry: Settings → Alerts → nueva regla → Action `Send a notification via webhook`, y en Integrations → WebHooks pon la URL.
+1. **Webhook** — método POST, ruta `crash`. Copia la URL Production y pégala en Sentry: Settings → Alerts → nueva regla → Action `Send a notification via webhook`, y en Integrations → WebHooks pon la URL. Protégelo: verifica la cabecera `Sentry-Hook-Signature` (HMAC-SHA256 del cuerpo con el Client Secret de la integración, leído de una variable de entorno) en un nodo Code y descarta lo que no cuadre.
 2. **Code** («Extraer datos») — saca del payload el tipo de error, el mensaje, la plataforma y la versión, y calcula una «huella» para agrupar.
 3. **Google Sheets** — `Get Row(s)` filtrando `huella` igual a la calculada.
 4. **IF** — ¿existe fila? Si no existe, rama false.

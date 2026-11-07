@@ -36,7 +36,7 @@ Cada automatización que ya tienes montada envía un "latido" (una llamada corta
 Es para quien ya depende de sus automatizaciones y necesita enterarse de que una se ha caído antes que sus clientes.
 
 ## Lo que necesitas antes
-- n8n (gratis auto-alojado, o su plan Starter en la nube).
+- n8n (gratis auto-alojado con la Community Edition, o n8n Cloud, que tras la prueba gratuita temporal es de pago).
 - Una cuenta de Google con Google Sheets y Gmail conectadas en n8n (Credenciales > Google OAuth2, se saca en console.cloud.google.com creando un proyecto y activando las API de Sheets y Gmail).
 - Opcional: un bot de Telegram creado con @BotFather y tu chat_id (se saca escribiendo a @userinfobot).
 - Una hoja de cálculo llamada `latidos` con las columnas: `flujo`, `ultimo_latido`, `max_minutos`, `estado`.
@@ -45,7 +45,7 @@ Es para quien ya depende de sus automatizaciones y necesita enterarse de que una
 1. **HTTP Request** al final de cada automatización existente. Método `POST`. URL: la del webhook del flujo B. En Body Parameters añade `flujo` con el nombre exacto del flujo (por ejemplo `pedidos-diarios`). Marca *Always Output Data* y en Settings pon *On Error: Continue* para que un fallo del latido no tumbe el flujo bueno.
 
 ## Flujo B: el receptor
-1. **Webhook**. Método `POST`, ruta `latido`. Copia la Production URL.
+1. **Webhook**. Método `POST`, ruta `latido`. Copia la Production URL. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Google Sheets**. Operación `Append or Update Row`. Hoja `latidos`. Columna clave: `flujo`. Escribe `flujo` = `{{ $json.body.flujo }}` y `ultimo_latido` = `{{ $now.toISO() }}`.
 
 ## Flujo C: el vigilante
@@ -81,4 +81,4 @@ return alertas;
 - **Duplicados en la hoja**: usa siempre `Append or Update` con columna clave `flujo`, nunca `Append`.
 
 ## Cuánto cuesta
-n8n auto-alojado en un VPS de 5 €/mes o el plan gratuito de n8n Cloud. Google Sheets y Gmail, gratis. Telegram, gratis. Coste real: 0 € si ya tienes servidor.
+n8n auto-alojado (Community Edition, gratis) en un VPS de 5 €/mes, o n8n Cloud, que es de pago tras la prueba gratuita. Google Sheets y Gmail, gratis. Telegram, gratis. Coste real: 0 € si ya tienes servidor.

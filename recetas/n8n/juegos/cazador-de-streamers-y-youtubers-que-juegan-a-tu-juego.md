@@ -43,11 +43,11 @@ Consulta a diario la API de Twitch para ver quién está o ha estado emitiendo t
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Cron: `0 9,21 * * *` (dos veces al día; los directos son efímeros y si solo miras una vez te pierdes la mitad).
-2. **HTTP Request** (`Token Twitch`) — POST a `https://id.twitch.tv/oauth2/token`, Body Content Type `Form-Urlencoded`, campos `client_id`, `client_secret`, `grant_type=client_credentials`. Devuelve `access_token` válido 60 días.
+2. **HTTP Request** (`Token Twitch`) — POST a `https://id.twitch.tv/oauth2/token`, Body Content Type `Form-Urlencoded`, campos `grant_type=client_credentials`, `client_id` y `client_secret`; estos dos últimos se leen de variables de entorno de n8n (`{{ $env.TWITCH_CLIENT_ID }}`, `{{ $env.TWITCH_CLIENT_SECRET }}`) o de una credencial de n8n, no se escriben en el nodo. Devuelve `access_token` válido 60 días. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 3. **HTTP Request** (`Directos Twitch`) — GET `https://api.twitch.tv/helix/streams?game_id=TU_GAME_ID&first=100`. Headers: `Client-Id: TU_CLIENT_ID` y `Authorization: Bearer {{ $json.access_token }}`.
 4. **Split Out** — Field to Split Out: `data`. Así cada directo es un item.
 5. **HTTP Request** (`Datos del canal`) — GET `https://api.twitch.tv/helix/channels/followers?broadcaster_id={{ $json.user_id }}` con las mismas cabeceras, para saber cuántos seguidores tiene.
-6. **HTTP Request** (`YouTube`) — GET `https://www.googleapis.com/youtube/v3/search?part=snippet&q=%22Nombre+Del+Juego%22&type=video&order=date&publishedAfter={{ $now.minus(1,'days').toISO() }}&maxResults=25&key=TU_CLAVE`.
+6. **HTTP Request** (`YouTube`) — GET `https://www.googleapis.com/youtube/v3/search?part=snippet&q=%22Nombre+Del+Juego%22&type=video&order=date&publishedAfter={{ $now.minus(1,'days').toISO() }}&maxResults=25`, con Authentication: Generic > Query Auth con una credencial de n8n (Name `key`, Value tu clave). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 7. **Code** (`Unificar y limpiar`) — junta ambas fuentes en un formato común y descarta canales minúsculos o que solo mencionan el juego de pasada. Código abajo.
 8. **Google Sheets** (`Leer conocidos`) + **Merge** en modo `Keep Non-Matches` por `id_canal`, igual que en el flujo de reseñas, para quedarte solo con creadores nuevos.
 9. **Google Sheets** (`Guardar`) — Append Row.

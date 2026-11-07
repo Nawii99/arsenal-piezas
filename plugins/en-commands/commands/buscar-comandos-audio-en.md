@@ -1,11 +1,11 @@
 ---
-name: buscar-comandos-audio
+name: buscar-comandos-audio-en
 description: Searches for community commands for a specific step of your audio work (cleaning noise, cutting silences, normalizing volume, transcribing, publishing) and reviews them before installing any. Use it when you don't know whether something already exists for that step.
 ---
 
 # Find and review audio and publishing commands
 
-How to use it: save this text in `.claude/commands/buscar-comandos-audio.md`. Type `/buscar-comandos-audio` followed by the step you want to solve. Example: `/buscar-comandos-audio remove background noise from a WAV`.
+How to use it: save this text in `.claude/commands/buscar-comandos-audio.md`. Type `/buscar-comandos-audio-en` followed by the step you want to solve. Example: `/buscar-comandos-audio-en remove background noise from a WAV`.
 Requested step: $ARGUMENTS
 
 ## What it does

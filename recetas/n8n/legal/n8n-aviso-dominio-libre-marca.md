@@ -39,13 +39,13 @@ Ofrece la vigilancia de dominios a emprendedores con un pago único de montaje o
 Si el dominio que quieres (por ejemplo tunombredemarca.com) está ocupado ahora, esta automatización lo comprueba cada día y te avisa en cuanto quede libre, sin que tengas que mirarlo tú.
 
 ## Cuentas que hacen falta
-- Cuenta de n8n (la versión gratuita en la nube tiene límite de ejecuciones al mes; revisa el límite actual en n8n.io antes de montarlo).
+- n8n: autoalojado (Community Edition) es gratis; n8n Cloud tiene una prueba gratuita temporal y después planes de pago (revisa precios y límites actuales en n8n.io antes de montarlo).
 - Una API de comprobación de disponibilidad de dominios, por ejemplo la de tu registrador de dominios o un servicio tipo WHOIS API; casi todas tienen un plan gratuito con un número limitado de consultas al mes, así que una consulta diaria de un solo dominio suele caber sin coste.
 - Un bot de Telegram gratuito (se crea hablando con @BotFather) o una cuenta de correo, para recibir el aviso.
 
 ## Nodos, en orden
 1. Nodo disparador "Schedule Trigger": configúralo para que se ejecute una vez al día, por ejemplo a las 9:00.
-2. Nodo "HTTP Request": llama a la API de disponibilidad de dominios con el dominio que quieres vigilar como parámetro (sustituye [TU-DOMINIO-DESEADO.COM] por el real y [TU-API-KEY] por la clave de tu cuenta gratuita).
+2. Nodo "HTTP Request": llama a la API de disponibilidad de dominios con el dominio que quieres vigilar como parámetro (sustituye [TU-DOMINIO-DESEADO.COM] por el real; la clave de tu cuenta gratuita de la API va en una credencial de n8n, p. ej. Header Auth o Query Auth, o en una variable de entorno, nunca escrita dentro del nodo: un flujo exportado se llevaría la clave).
 3. Nodo "IF": comprueba en la respuesta si el campo de disponibilidad dice "disponible" o "available" (el nombre exacto del campo depende de la API que uses, revísalo en la documentación de esa API).
 4. Rama "true" del IF, nodo "Telegram" (o "Send Email"): envía un mensaje del tipo "El dominio [TU-DOMINIO-DESEADO.COM] está libre, ve a registrarlo ya".
 5. Rama "false" del IF: no hace nada, deja que se repita al día siguiente.

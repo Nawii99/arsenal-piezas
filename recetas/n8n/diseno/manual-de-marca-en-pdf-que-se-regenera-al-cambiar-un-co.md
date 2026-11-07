@@ -46,7 +46,7 @@ En n8n: credenciales «Google Sheets OAuth2 API», «Google Drive OAuth2 API» y
 **4. «HTTP Request»** (nómbralo A PDF) — POST a `https://api.pdfshift.io/v3/convert/pdf`, Authentication: Basic Auth. Body JSON: `{ "source": {{ JSON.stringify($json.html) }}, "format": "A4", "landscape": false, "margin": "15mm", "use_print": true }`. Response Format: File, Put Output in Field `data`. Settings: Retry On Fail, 2 intentos.
 **5. «Code»** (nómbralo Versión) — calcula la versión sumando 1 a un contador guardado en una celda de la hoja, o usa la fecha: `const d = new Date(); return [{ json: { nombre: `Manual_Marca_${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}.pdf` } }];`
 **6. «Google Drive»** — Upload a la carpeta del cliente, File Name `{{ $json.nombre }}`, Input Data Field `data`.
-**7. «Google Drive»** (nómbralo Publicar) — Operation: Share, Role `reader`, Type `anyone`, para tener un enlace que el cliente pueda abrir.
+**7. «Google Drive»** (nómbralo Publicar) — Operation: Share, Role `reader`, Type `user`, con el correo del cliente, para que solo él abra el enlace. Usa `anyone` solo si el manual es público (para prensa o proveedores) y no lleva nada interno.
 **8. «Gmail»** — avisa al cliente: `Manual de marca actualizado. Última versión aquí: {{ $json.webViewLink }}`.
 ## El trozo de código (nodo «Code»)
 ```javascript
@@ -74,4 +74,4 @@ Las tipografías de marca no se incrustan solas: si quieres verlas en el PDF, a�
 Los acentos se rompen si olvidas el `<meta charset="utf-8">`.
 PDFShift tarda unos segundos con manuales largos; si da timeout, sube el Timeout del nodo HTTP Request en Settings a 60000 ms.
 ## Cuánto cuesta
-n8n, Sheets y Drive gratis. PDFShift: unas 50 conversiones gratis al mes y planes desde unos 9-24 $/mes. Con un manual por cliente y dos actualizaciones al año, no pasas del gratuito.
+Sheets y Drive gratis; n8n autoalojado gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago). PDFShift: unas 50 conversiones gratis al mes y planes desde unos 9-24 $/mes. Con un manual por cliente y dos actualizaciones al año, no pasas del gratuito.

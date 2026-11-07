@@ -1,6 +1,6 @@
 ---
 name: rescate-de-alumnos
-description: Designs a completion system for an online course: risk signals, milestone messages, re-engagement sequences and a weekly review routine. Use this agent when learners drop out of the user's course or before launching, to set up follow-up from day one.
+description: "Diseña un sistema de finalización para un curso en línea: señales de riesgo, mensajes de hitos, secuencias de reactivación y una rutina de revisión semanal. Úsalo cuando los alumnos abandonen el curso del usuario o antes de un lanzamiento, para montar el seguimiento desde el primer día."
 tools: Read, Write, Bash, Glob
 ---
 

@@ -42,17 +42,38 @@ Detecta episodio nuevo en tu feed RSS, lo transcribe, pide a la IA los tres frag
 
 ## Los nodos, en orden
 1. **RSS Feed Trigger** — URL de tu feed, Poll Times cada 1 hora.
-2. **Execute Command** — descarga el audio: `curl -L -o /data/podcast/ep.mp3 "{{ $json.enclosure.url }}"`.
-3. **Execute Command** — recorta a los primeros 20 minutos para no pagar de más en la transcripción: `ffmpeg -y -i /data/podcast/ep.mp3 -t 1200 -ar 16000 -ac 1 /data/podcast/ep16.mp3`.
-4. **Read/Write Files from Disk** (Read) — carga ep16.mp3 como binario.
-5. **OpenAI** (Audio → Transcribe a Recording) — modelo whisper-1, Response Format «verbose_json» para tener tiempos.
-6. **AI Agent** — prompt: «De esta transcripción con tiempos, elige 3 fragmentos de entre 30 y 55 segundos que se entiendan solos y enganchen. Devuelve JSON: [{inicio_seg, fin_seg, gancho}]. Nada más.»
-7. **Code** — parsea el JSON y saca un item por fragmento.
-8. **Split In Batches** — 1 a 1.
-9. **Execute Command** — el render con ffmpeg.
-10. **Google Drive** (Upload) a «Audiogramas» y **Gmail** con los enlaces.
+2. **Code** (renómbralo «Validar URL») — Mode: Run Once for Each Item. Para el flujo si la URL del audio no es una URL http(s) limpia. Código abajo.
+3. **Execute Command** — descarga el audio: `curl -L -o /data/podcast/ep.mp3 "{{ $json.url }}"`.
+4. **Execute Command** — recorta a los primeros 20 minutos para no pagar de más en la transcripción: `ffmpeg -y -i /data/podcast/ep.mp3 -t 1200 -ar 16000 -ac 1 /data/podcast/ep16.mp3`.
+5. **Read/Write Files from Disk** (Read) — carga ep16.mp3 como binario.
+6. **OpenAI** (Audio → Transcribe a Recording) — modelo whisper-1, Response Format «verbose_json» para tener tiempos.
+7. **AI Agent** — prompt: «De esta transcripción con tiempos, elige 3 fragmentos de entre 30 y 55 segundos que se entiendan solos y enganchen. Devuelve JSON: [{inicio_seg, fin_seg, gancho}]. Nada más.»
+8. **Code** — parsea el JSON, comprueba que los tiempos son números, limpia el gancho y saca un item por fragmento. Código abajo.
+9. **Split In Batches** — 1 a 1.
+10. **Execute Command** — el render con ffmpeg.
+11. **Read/Write Files from Disk** (Read) del vídeo que acaba de crear el nodo 10 (Execute Command no devuelve el archivo), **Google Drive** (Upload) a «Audiogramas» y **Gmail** con los enlaces.
 
-## El comando del nodo 9
+## El código de «Validar URL»
+```js
+const url = String($json.enclosure?.url || '');
+if (!/^https?:\/\/[A-Za-z0-9.-]+(:\d+)?(\/[A-Za-z0-9._~%+,;=:@&?\/-]*)?$/.test(url)) throw new Error('URL de audio no válida: ' + url.slice(0, 100));
+return { json: { url } };
+```
+
+## El código del nodo 8
+```js
+const r = $input.first().json;
+const raw = r.output ?? r.text ?? '[]';
+const frags = typeof raw === 'string' ? JSON.parse(raw.replace(/`{3}(?:json)?/g, '')) : raw;
+return frags.map(f => {
+  const inicio_seg = Number(f.inicio_seg), fin_seg = Number(f.fin_seg);
+  if (!Number.isFinite(inicio_seg) || !Number.isFinite(fin_seg) || inicio_seg < 0 || fin_seg <= inicio_seg || fin_seg - inicio_seg > 120) throw new Error('Tiempos no válidos');
+  const gancho = String(f.gancho || '').replace(/[^A-Za-z0-9ÁÉÍÓÚÜÑáéíóúüñ ,.¿?¡!-]/g, '').slice(0, 120);
+  return { json: { inicio_seg, fin_seg, gancho } };
+});
+```
+
+## El comando del nodo 10
 ```bash
 ffmpeg -y -ss {{ $json.inicio_seg }} -t {{ $json.fin_seg - $json.inicio_seg }} -i /data/podcast/ep.mp3 -loop 1 -i /data/podcast/fondo.png -filter_complex "[0:a]showwaves=s=1080x300:mode=cline:colors=white[w];[1:v][w]overlay=0:1300:shortest=1,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='{{ $json.gancho }}':fontcolor=white:fontsize=54:x=(w-text_w)/2:y=400:line_spacing=14[v]" -map "[v]" -map 0:a -c:v libx264 -pix_fmt yuv420p -c:a aac -shortest /data/podcast/audiograma_{{ $runIndex }}.mp4
 ```
@@ -61,10 +82,12 @@ ffmpeg -y -ss {{ $json.inicio_seg }} -t {{ $json.fin_seg - $json.inicio_seg }} -
 Lanza a mano con un episodio antiguo. Revisa que el fragmento elegido no empiece a media palabra: si pasa mucho, pide a la IA que use solo tiempos de inicio de frase de la transcripción. Mira el vídeo en el móvil, que es donde se va a ver.
 
 ## Qué puede salir mal
-- **Texto con comillas o acentos en drawtext**: rompe el comando. Limpia el gancho en un nodo Code con `.replace(/[':\\]/g,'')`.
+- **Texto con comillas o símbolos en drawtext**: rompe el comando. El nodo 8 ya limpia el gancho y solo deja letras (con tildes), números, espacios y `, . ¿ ? ¡ ! -`.
+- **Datos de fuera dentro del comando**: la URL del feed y lo que devuelve la IA (tiempos y gancho) van a la shell; un `"` o un `$( )` ejecutaría órdenes. Por eso se validan antes en «Validar URL» y en el nodo 8, y el flujo se para si algo no cumple.
 - **Fuente no encontrada**: comprueba la ruta real con `fc-list | grep DejaVu`.
 - **Whisper caro con episodios largos**: por eso se recorta a 20 minutos; 0,006 $ el minuto.
 - **RSS que dispara dos veces**: si tu feed cambia la fecha al editar, guarda los GUID procesados en una hoja y filtra.
+- **Drive sin archivo que subir**: Execute Command solo devuelve `stdout`, `stderr` y `exitCode`; por eso el audiograma se lee del disco antes de subirlo.
 
 ## Cuánto cuesta
-ffmpeg y n8n, gratis (VPS de 6-10 €/mes). Whisper: unos 0,12 € por episodio de 20 minutos. La IA de selección, céntimos.
+ffmpeg y n8n autoalojado (Community Edition), gratis (VPS de 6-10 €/mes). Whisper: unos 0,12 € por episodio de 20 minutos. La IA de selección, céntimos.

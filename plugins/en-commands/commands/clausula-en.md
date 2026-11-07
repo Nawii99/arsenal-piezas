@@ -1,6 +1,6 @@
 ---
-name: clausula
-description: Explains in plain language a contract clause that the user pastes, says who it benefits, and proposes alternative wording. Usage: /clausula followed by the text of the clause.
+name: clausula-en
+description: "Explains in plain language a contract clause that the user pastes, says who it benefits, and proposes alternative wording. Usage: /clausula-en followed by the text of the clause."
 ---
 
 The user pastes you a clause from a contract (normally a collaboration or services contract, in Spain). Your job is to translate it and give them ammunition to negotiate. It is not legal advice: say so at the end, in one line, without dramatizing.

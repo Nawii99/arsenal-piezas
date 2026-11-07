@@ -51,7 +51,7 @@ Bot de Telegram: escribe a @BotFather, `/newbot`, copia el token; escribe al bot
 3. **Filter** — `{{$json.programa_activo}}` igual a `si` y `{{$json.dia_envio}}` igual a `{{$now.weekday}}`.
 4. **Code** — genera el HTML con los once enlaces (código abajo).
 5. **Gmail** — `Send`, asunto `¿Cómo ha ido la semana?`, Email Type `HTML`, cuerpo `{{$json.html}}`.
-6. Workflow 2, **Webhook** — Method `GET`, path `checkin`, Respond `Using Respond to Webhook Node`.
+6. Workflow 2, **Webhook** — Method `GET`, path `checkin`, Respond `Using Respond to Webhook Node`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 7. **Google Sheets** — `Append Row` en `Respuestas` con `id` = `{{$json.query.id}}`, `puntuacion` = `{{$json.query.p}}`, `fecha` = `{{$now.format('yyyy-MM-dd')}}`.
 8. **Respond to Webhook** — Respond With `Text`, cuerpo `¡Gracias! Anotado.`
 9. Workflow 3, **Schedule Trigger** `0 11 * * 1` — lee `Respuestas`, agrupa por `id` con un **Code** que compara las tres últimas semanas, y si hay caída manda **Telegram** `Send Message` al profesional con nombre y evolución.

@@ -50,7 +50,7 @@ Nodos, en orden:
 
 Avisos que van dentro de la receta:
 - Ese formulario recoge datos personales: pon debajo del botón de envío una cláusula breve de privacidad tuya (quién eres, para qué usas el email, cómo borrarse). Vender cumplimiento sin cumplir tú queda fatal y es un riesgo real.
-- El email del presupuesto no es la factura. La factura la emites al cerrar la venta, con numeración correlativa y su IVA; la hoja "Leads legal" te sirve de registro de a quién debes facturar, no de libro de facturas.
+- El email del presupuesto no es la factura. La factura la emites al cerrar la venta, con numeración correlativa y su IVA; la hoja "Leads legal" te sirve de registro de a quién debes facturar, no de libro de facturas. Si algún día numeras facturas desde una hoja, no calcules «último número + 1» para apuntarlo después de enviar: reserva el número antes (fila con estado `reservada`), comprueba que no existe ya y ejecuta el flujo de uno en uno (concurrencia 1). Lo más seguro es que el número lo asigne tu programa de facturación.
 - No añadas al lead a ninguna lista de newsletter: ha pedido un diagnóstico, no suscribirse.
 
 Cómo probarla sin liarla: desactiva el flujo en producción y usa "Listen for test event" en el Webhook. Rellena el formulario tú mismo con tu propio email dos veces: una con todo Sí y otra con dos No, y comprueba que llega el email correcto de cada rama, que el presupuesto suma bien y que la fila aparece en la hoja. Solo entonces activa el flujo y publica el enlace del formulario.

@@ -89,4 +89,4 @@ return salida;
 - **Sitemaps enormes**: por encima de 1.000 URLs, parte el trabajo por sub-sitemap y ejecuta uno por semana.
 
 ## Cuánto cuesta
-0 €. Solo consume ancho de banda de tu propia web. En n8n Cloud vigila el número de ejecuciones de nodo si la web supera las 300 páginas.
+0 € con n8n auto-alojado: solo consume ancho de banda de tu propia web. n8n Cloud, tras la prueba gratuita temporal, es de pago; ahí vigila además el número de ejecuciones si la web supera las 300 páginas.

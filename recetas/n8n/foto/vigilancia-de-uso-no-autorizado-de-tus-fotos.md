@@ -45,7 +45,7 @@ Para fotógrafos profesionales, ilustradores y marcas con imágenes propias que 
 1) **Schedule Trigger**. Weeks, cada 1 semana, lunes a las 08:00. Timezone Europe/Madrid.
 2) **Google Sheets** (Get Rows) de MisImagenes.
 3) **Split In Batches**. Batch Size: 1.
-4) **HTTP Request** (Búsqueda inversa). Method: GET. URL: `https://serpapi.com/search.json`. Query Parameters: `engine` = google_reverse_image, `image_url` = `{{ $json.URLImagen }}`, `hl` = es, `gl` = es, `api_key` = tu clave.
+4) **HTTP Request** (Búsqueda inversa). Method: GET. URL: `https://serpapi.com/search.json`. Query Parameters: `engine` = google_reverse_image, `image_url` = `{{ $json.URLImagen }}`, `hl` = es, `gl` = es, `api_key` desde una credencial de n8n (Generic Credential Type > Query Auth, Name `api_key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría).
 5) **Code** (Filtrar y limpiar). Ver abajo.
 6) **Google Sheets1** (Get Rows de Hallazgos) para saber qué dominios ya has visto.
 7) **Code1** o **Remove Duplicates**. Si usas Remove Duplicates: Operation: Remove Items Seen in Previous Executions, Keep Items Where: Value Is New, Value to Dedupe On: `{{ $json.PaginaEncontrada }}`.

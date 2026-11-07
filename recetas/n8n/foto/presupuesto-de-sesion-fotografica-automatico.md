@@ -42,11 +42,11 @@ Para fotógrafos, videógrafos y estudios que dan precios a medida y quieren dej
 - Hoja `Presupuestos` con columnas: `fecha`, `nombre`, `email`, `tipo`, `total`, `estado`, `enlace_pdf`.
 
 ## Los nodos, en orden
-1. **Webhook** — HTTP Method `POST`, Path `presupuesto-foto`. Copia la Production URL y pégala en Tally. Respond: `Immediately`.
+1. **Webhook** — HTTP Method `POST`, Path `presupuesto-foto`. Copia la Production URL y pégala en Tally. Respond: `Immediately`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** (`Calcular precio`) — aplica tu tarifa. Es el corazón de la receta; el código está abajo y lo tienes que tocar tú con tus precios.
 3. **Code** (`Montar HTML`) — genera el documento. Puedes usar en su lugar un nodo **HTML** con la plantilla y expresiones.
-4. **HTTP Request** (`Generar PDF`) — Method `POST`. URL `https://api.pdfshift.io/v3/convert/pdf`. Authentication `Basic Auth`: usuario `api`, contraseña tu clave. Body JSON: `{"source": "={{ $json.html }}", "landscape": false, "format": "A4"}`. Response Format `File`, campo `data`.
-5. **Google Drive** — `Upload` a una carpeta `PRESUPUESTOS`, nombre `Presupuesto-{{ $json.nombre }}-{{ $json.fecha }}.pdf`. Y a continuación un **Google Drive** con Operation `Share`, Type `anyone`, Role `reader`, para tener enlace.
+4. **HTTP Request** (`Generar PDF`) — Method `POST`. URL `https://api.pdfshift.io/v3/convert/pdf`. Authentication `Basic Auth` con una credencial de n8n (usuario `api`, contraseña tu clave de PDFShift; no la escribas en el nodo: un flujo exportado se llevaría la clave). Body JSON: `{"source": "={{ $json.html }}", "landscape": false, "format": "A4"}`. Response Format `File`, campo `data`.
+5. **Google Drive** — `Upload` a una carpeta `PRESUPUESTOS`, nombre `Presupuesto-{{ $json.nombre }}-{{ $json.fecha }}.pdf`. Deja el archivo con acceso restringido (solo tú): el presupuesto lleva nombre, email y datos del cliente, así que no lo compartas con acceso abierto por enlace. Guarda en la hoja el `webViewLink` solo para ti, y al cliente envíale el PDF como adjunto (paso 6). Si algún día quiere abrirlo en Drive, compártelo con su correo concreto.
 6. **Gmail** — al cliente. Asunto: `Tu presupuesto para la sesión de {{ $json.tipo }}`. Adjunta el PDF (Options > Attachments > campo binario `data`).
 7. **Gmail** — a ti. Asunto: `NUEVO PRESUPUESTO {{ $json.total }} € — {{ $json.nombre }}`.
 8. **Google Sheets** — `Append Row` en `Presupuestos`.

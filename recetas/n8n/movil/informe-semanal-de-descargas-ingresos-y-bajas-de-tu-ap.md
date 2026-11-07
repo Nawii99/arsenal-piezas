@@ -37,7 +37,7 @@ Deja además todo el histórico en Google Sheets para que puedas hacer gráficas
 Es para quien monetiza una app con suscripciones y quiere un cuadro de mando sin pagar herramientas de analítica.
 
 ## Lo que necesitas antes
-n8n.
+n8n: gratis si lo auto-alojas (Community Edition); n8n Cloud solo tiene una prueba gratuita temporal y después es de pago.
 Cuenta de RevenueCat (gratis hasta 2.500 $ de ingresos mensuales seguidos). En el panel, Project Settings, API keys, crea una Secret API key v2.
 Una hoja de Google Sheets llamada «metricas» con columnas: semana, ingresos, altas, bajas, activos, churn.
 Cuenta de Gmail conectada en n8n con OAuth (Google Cloud Console, credenciales OAuth de aplicación de escritorio).
@@ -55,7 +55,7 @@ return [{ json: {
   etiqueta: ini.toISOString().slice(0,10) + ' a ' + fin.toISOString().slice(0,10)
 }}];
 ```
-3. «HTTP Request» (RevenueCat). Method GET, URL https://api.revenuecat.com/v2/projects/TU_PROJECT_ID/metrics/overview . Header Authorization con valor «Bearer TU_SECRET_KEY». Devuelve ingresos, suscriptores activos, trials y demás.
+3. «HTTP Request» (RevenueCat). Method GET, URL https://api.revenuecat.com/v2/projects/TU_PROJECT_ID/metrics/overview . Authentication: Generic Credential Type, Header Auth, con una credencial de nombre Authorization y valor «Bearer TU_SECRET_KEY». No escribas la clave en el nodo: un flujo exportado se llevaría la clave. Devuelve ingresos, suscriptores activos, trials y demás.
 4. «HTTP Request» (segunda llamada, opcional) al endpoint de charts si necesitas el detalle por día.
 5. «Google Sheets» (Get Row(s)) de «metricas» para leer la fila de la semana anterior.
 6. «Code» (comparar y redactar). Código completo:
@@ -86,4 +86,4 @@ El cambio de hora de octubre y marzo puede desplazar el cálculo de la semana: u
 Si Gmail te bloquea el envío, revisa que el scope de la credencial incluye gmail.send.
 
 ## Cuánto cuesta
-n8n, Sheets y Gmail: gratis. RevenueCat: gratis hasta 2.500 $ de ingresos mensuales, luego cobra un 1% aproximadamente. Si no usas RevenueCat puedes sustituirlo por los informes CSV de Play Console en Cloud Storage, también gratis.
+n8n auto-alojado, Sheets y Gmail: gratis (n8n Cloud: prueba gratuita temporal y después de pago). RevenueCat: gratis hasta 2.500 $ de ingresos mensuales, luego cobra un 1% aproximadamente. Si no usas RevenueCat puedes sustituirlo por los informes CSV de Play Console en Cloud Storage, también gratis.

@@ -47,7 +47,7 @@ Genera una página HTML de documentación (con Redoc, que es un solo fichero) y 
 1. **GitHub Trigger** — Events: `push`, sobre tu repositorio.
 2. **Code** (nombre: ¿Cambió el spec?) — mira si `openapi.yaml` está entre los ficheros modificados del push.
 3. **IF** — `={{ $json.cambio }}` is true.
-4. **HTTP Request** (nombre: Bajar spec) — GET `=https://raw.githubusercontent.com/{{ $json.repo }}/main/openapi.yaml`, Header `Authorization: Bearer TU_TOKEN`, Response Format: Text.
+4. **HTTP Request** (nombre: Bajar spec) — GET `=https://raw.githubusercontent.com/{{ $json.repo }}/main/openapi.yaml`, con Authentication: Generic > Header Auth con una credencial de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`), Response Format: Text. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 5. **Code** (nombre: Parsear YAML) — convierte YAML a objeto. n8n trae `js-yaml` disponible en el nodo Code auto-alojado; si estás en Cloud, guarda el spec en JSON en vez de YAML y usa `JSON.parse`.
 6. **Google Sheets** (nombre: Spec anterior) — Get Row(s), última fila.
 7. **Code** (nombre: Comparar) — el detector de cambios rotos. Código abajo.

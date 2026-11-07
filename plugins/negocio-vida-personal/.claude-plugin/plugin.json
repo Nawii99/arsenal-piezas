@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-negocio-vida-personal",
+  "version": "1.0.0",
+  "description": "Negocio · Vida personal, trabajo y comunidad: 10 subagentes en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "negocio",
+    "arsenal-del-marketer",
+    "vida-personal"
+  ]
+}

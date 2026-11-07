@@ -76,4 +76,4 @@ return [{ json: {
 - **Falsos positivos por cuota de Gmail API**: n8n reintenta solo; en Settings del nodo Gmail pon *Retry On Fail* con 3 intentos.
 
 ## Cuánto cuesta
-0 €. n8n gratis, Gmail gratis, Sheets gratis. Solo consume una ejecución diaria de tu cupo de n8n Cloud si no lo auto-alojas.
+0 € con n8n autoalojado, Gmail y Sheets gratis. Si usas n8n Cloud, que solo tiene una prueba gratuita temporal y después es de pago, consume una ejecución diaria de tu cupo.

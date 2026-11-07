@@ -3,7 +3,7 @@ name: factura
 description: Genera el texto de una factura válida en España (numerada, con IVA y retención calculados) a partir del trabajo hecho y los datos del cliente
 argument-hint: cliente, qué le has hecho e importe sin IVA
 ---
-Usa la skill facturas-espana: ahí están mis datos fiscales y las reglas legales. Si la ficha está sin rellenar, pídemela antes de nada.
+Usa la skill factura-legal-espana: ahí están mis datos fiscales y las reglas legales. Si la ficha está sin rellenar, pídemela antes de nada.
 
 Trabajo, cliente e importe: $ARGUMENTS
 

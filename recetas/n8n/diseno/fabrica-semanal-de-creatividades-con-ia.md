@@ -36,7 +36,7 @@ Cada lunes a las 8:00 lee una hoja de Google Sheets con las ideas de post de la 
 Para el diseñador freelance o el dueño de marca que publica en redes con un estilo fijo y no quiere partir del lienzo en blanco cada semana.
 
 **Lo que necesitas antes**
-- n8n: plan gratuito en n8n.cloud (limitado en ejecuciones) o auto-alojado gratis con Docker en tu ordenador o en un VPS de 5 €/mes.
+- n8n: prueba gratuita temporal en n8n.cloud o auto-alojado gratis (Community Edition) con Docker en tu ordenador o en un VPS de 5 €/mes.
 - Cuenta de Google con credencial OAuth para Sheets, Drive y Gmail. Se saca en console.cloud.google.com, apartado APIs y servicios, Credenciales, ID de cliente de OAuth tipo Aplicación web. La URL de redirección te la enseña n8n al crear la credencial.
 - Clave de API de imagen: platform.openai.com, sección API keys, modelo gpt-image-1. Hay que meter saldo (5 € sobran para empezar).
 - Una hoja de cálculo con estas columnas exactas: fecha, idea, texto_en_imagen, formato, estado, url_resultado.
@@ -77,6 +77,6 @@ return items.map(i => {
 - La IA mete texto raro en la imagen: no le pidas texto, el rótulo se pone después en Canva o con el nodo Edit Image.
 
 **Cuánto cuesta**
-- n8n auto-alojado: gratis. n8n cloud: gratis hasta cierto número de ejecuciones, luego desde 20 €/mes.
+- n8n auto-alojado: gratis. n8n cloud: prueba gratuita temporal y después planes de pago desde 20 €/mes.
 - Google Sheets, Drive y Gmail: gratis con tu cuenta normal.
 - OpenAI imágenes: unos 0,03-0,04 € por imagen en calidad media. Veinte imágenes al mes, menos de 1 €.

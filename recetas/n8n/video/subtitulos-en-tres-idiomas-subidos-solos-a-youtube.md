@@ -41,12 +41,12 @@ Descarga la transcripción en español, la traduce bloque a bloque manteniendo l
 - El vídeo debe tener ya subtítulos automáticos en español o un SRT tuyo.
 
 ## Los nodos, en orden
-1. **Webhook** — método POST, ruta `/traducir-subs`. Le mandas `{"videoId":"xxxx"}` desde el móvil con un atajo o desde otro workflow. Alternativa: Schedule Trigger.
+1. **Webhook** — método POST, ruta `/traducir-subs`. Le mandas `{"videoId":"xxxx"}` desde el móvil con un atajo o desde otro workflow. Alternativa: Schedule Trigger. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **HTTP Request** — GET .../youtube/v3/captions?part=snippet&videoId={{ $json.body.videoId }} y quédate con el id de la pista `es`.
 3. **HTTP Request** — GET .../youtube/v3/captions/{{ $json.captionId }}?tfmt=srt, Response Format «String».
 4. **Code** — parte el SRT en bloques y saca solo las líneas de texto (los tiempos no se tocan nunca).
 5. **Split In Batches** — Batch Size 50 bloques.
-6. **HTTP Request** a DeepL — POST https://api-free.deepl.com/v2/translate, header `Authorization: DeepL-Auth-Key TU_CLAVE`, body: text (array), target_lang EN / FR / PT-PT. Repite la rama para cada idioma o usa un **Item Lists** con los tres códigos.
+6. **HTTP Request** a DeepL — POST https://api-free.deepl.com/v2/translate, Authentication: Generic > Header Auth con una credencial de n8n (Name `Authorization`, Value `DeepL-Auth-Key TU_CLAVE`; no pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él), body: text (array), target_lang EN / FR / PT-PT. Repite la rama para cada idioma o usa un **Item Lists** con los tres códigos.
 7. **Code** — vuelve a montar el SRT con los tiempos originales y el texto traducido.
 8. **Google Drive** (Upload) — guarda `videoId_en.srt` etc. en la carpeta «Subtitulos».
 9. **HTTP Request** — POST https://www.googleapis.com/upload/youtube/v3/captions?part=snippet&uploadType=multipart, con el snippet `{videoId, language:'en', name:'English'}` y el archivo como binario. Credencial YouTube OAuth2.
@@ -78,4 +78,4 @@ Prueba con un vídeo corto y no listado. Descarga el SRT generado y ábrelo en V
 - **Idioma mal detectado**: fuerza `source_lang=ES` en DeepL.
 
 ## Cuánto cuesta
-DeepL Free cubre unos 60-80 vídeos de 10 minutos al mes en tres idiomas; a partir de ahí, 5,49 €/mes el plan Starter. YouTube y n8n, gratis.
+DeepL Free cubre unos 60-80 vídeos de 10 minutos al mes en tres idiomas; a partir de ahí, 5,49 €/mes el plan Starter. YouTube y n8n autoalojado (Community Edition), gratis (n8n Cloud: prueba gratuita temporal y después de pago).

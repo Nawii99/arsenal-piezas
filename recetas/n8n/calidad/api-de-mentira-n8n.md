@@ -42,7 +42,7 @@ Tu flujo principal llama a un servicio externo (CRM, Stripe, Brevo, una API de I
 - Nada más. No hace falta cuenta en el servicio que simulas: esa es la gracia.
 
 ## Flujo de la API de mentira, nodo por nodo
-1. Webhook (disparador). Método POST. Ruta: `mock-crm` (o el nombre del servicio que simules). Respuesta: elige `Using Respond to Webhook node`. Copia la URL de test; la de producción aparece al activar el flujo.
+1. Webhook (disparador). Método POST. Ruta: `mock-crm` (o el nombre del servicio que simules). Respuesta: elige `Using Respond to Webhook node`. Copia la URL de test; la de producción aparece al activar el flujo. Verifica la firma `Stripe-Signature` (o usa el Stripe Trigger), comprueba que el pago está pagado y descarta eventos repetidos por su `id`.
 2. Set (renombrar a `Leer entrada`). Guarda en variables lo que llega: `email`, `nombre`, `escenario`. El campo `escenario` es el truco: tu flujo principal lo envía para decirle a la API de mentira cómo comportarse. Valores: `ok`, `duplicado`, `error`, `lento`.
 3. Switch (renombrar a `Elegir escenario`). Cuatro salidas según el valor de `escenario`. Si llega vacío, va por `ok`.
 4. Salida `ok`: nodo Set con la respuesta que daría el servicio real cuando todo va bien. Ejemplo para un CRM: `{ "id": "contacto_{{ $now.toMillis() }}", "email": "{{ $json.email }}", "estado": "creado" }`. Copia el formato de la documentación del servicio real para que los campos se llamen igual.

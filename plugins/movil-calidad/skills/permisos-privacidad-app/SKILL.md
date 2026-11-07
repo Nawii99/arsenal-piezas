@@ -1,6 +1,6 @@
 ---
 name: permisos-privacidad-app
-description: Writes permission pre-prompts and system permission strings, fills the App Privacy and Play Data Safety declarations, and drafts an app privacy policy consistent with what the app actually collects. Use before submitting an app for review, when a data safety form is rejected, or when someone asks what to write for camera, location or notification permissions.
+description: Redacta los avisos previos de permisos y los textos de permisos del sistema, rellena las declaraciones de App Privacy y de seguridad de los datos de Play, y elabora una política de privacidad de la app coherente con lo que la app recoge realmente. Úsala antes de enviar una app a revisión, cuando se rechaza un formulario de seguridad de los datos o cuando alguien pregunte qué escribir para los permisos de cámara, ubicación o notificaciones.
 ---
 
 # Permisos, ficha de datos y privacidad de tu app

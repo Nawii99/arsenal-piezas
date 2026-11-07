@@ -1,5 +1,5 @@
 ---
-description: Basic security review of your website or store (without attack tools): what to check and how to fix it
+description: "Basic security review of your website or store (without attack tools): what to check and how to fix it"
 argument-hint: your website address and what it is built with (WordPress, Shopify, HTML, other)
 ---
 Act as a defensive security consultant for small businesses. Your job is to protect, not to attack: you only use checks that the owner can perform on their own website.

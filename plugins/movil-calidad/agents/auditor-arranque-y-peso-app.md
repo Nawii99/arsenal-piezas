@@ -1,6 +1,6 @@
 ---
 name: auditor-arranque-y-peso-app
-description: Measures mobile app bundle size and cold start time, breaks the weight down by asset, dependency and screen, and returns a ranked list of concrete cuts with estimated savings. Use this agent when an app feels slow to open, when the download size is hurting installs, before paying for install campaigns, or when the user wants to know which dependency is worth removing.
+description: Mide el tamaño del paquete y el tiempo de arranque en frío de una app móvil, desglosa el peso por recurso, dependencia y pantalla, y devuelve una lista ordenada de recortes concretos con el ahorro estimado. Úsalo cuando una app tarde en abrirse, cuando el tamaño de descarga perjudique las instalaciones, antes de pagar campañas de instalación o cuando el usuario quiera saber qué dependencia merece la pena eliminar.
 tools: Read, Grep, Glob, Bash, Write
 ---
 

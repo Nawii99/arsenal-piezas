@@ -1,6 +1,6 @@
 ---
 name: tokens-de-marca-a-css
-description: Use this agent when the user has brand colors, fonts and spacing decisions and needs them turned into a reusable CSS custom properties file (design tokens) with semantic naming, tints and shades, dark mode support and a usage guide. Use it before building landing pages, email templates or any repeated web piece.
+description: Úsalo cuando el usuario tenga decisiones de colores, fuentes y espaciado de marca y necesite convertirlas en un archivo reutilizable de propiedades personalizadas de CSS (design tokens) con nombres semánticos, tonos claros y oscuros, soporte de modo oscuro y una guía de uso. Úsalo antes de construir landing pages, plantillas de correo o cualquier pieza web repetida.
 tools: Read, Write, Bash, Glob
 ---
 

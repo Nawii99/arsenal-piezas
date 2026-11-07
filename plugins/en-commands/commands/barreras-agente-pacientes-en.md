@@ -1,5 +1,5 @@
 ---
-name: barreras-agente-pacientes
+name: barreras-agente-pacientes-en
 description: Reviews a project that touches patient data and proposes guardrails and an activity log for Claude Code, without touching anything. Use it before letting the agent work on code for a clinic or any system with health data.
 ---
 # Agent guardrails and logging in projects with patient data
@@ -8,7 +8,7 @@ Arguments received: $ARGUMENTS
 (This is the path of the folder to review. If empty, use the current folder.)
 
 ## Where to save it
-Save this file as `.claude/commands/barreras-agente-pacientes.md` in the project and type `/barreras-agente-pacientes`.
+Save this file as `.claude/commands/barreras-agente-pacientes.md` in the project and type `/barreras-agente-pacientes-en`.
 
 ## What it does
 Looks at how Claude Code is configured in the project and tells you, in plain language, what the agent can do today with patient data and what it lacks to be under control. Then it writes a proposal of guardrails and an activity log for a person to apply.

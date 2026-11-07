@@ -41,11 +41,11 @@ Para equipos pequeños que usan Sentry (plan gratuito) y Linear y quieren que lo
 - Una hoja de Google Sheets `errores` con columnas: `huella`, `linear_id`, `veces`, `ultima_vez`.
 
 ## Los nodos, en orden
-**1. Webhook** — `POST`, Path `sentry-error`, Respond `Immediately`.
+**1. Webhook** — `POST`, Path `sentry-error`, Respond `Immediately`. Verifica la firma `Sentry-Hook-Signature` con el Client Secret de la integración en un nodo Code.
 **2. Code** («Sacar la huella») — construye un identificador estable del error.
 **3. Google Sheets** («Buscar») — Operation `Get Row(s)`, Filters: columna `huella` igual a `={{ $json.huella }}`. En Settings del nodo activa `Always Output Data` para que un «no encontrado» siga adelante.
 **4. IF** («¿Es nuevo?») — Condición: `{{ $json.linear_id }}` `is empty`.
-**5. HTTP Request** («Crear en Linear») — rama verdadera. `POST` `https://api.linear.app/graphql`, headers `Authorization: TU_CLAVE` (sin la palabra Bearer) y `Content-Type: application/json`, body JSON con la mutación de abajo.
+**5. HTTP Request** («Crear en Linear») — rama verdadera. `POST` `https://api.linear.app/graphql`, Authentication: Generic Credential Type > Header Auth con una credencial (Name `Authorization`, Value tu API key de Linear, sin la palabra Bearer; va solo en la credencial, porque un flujo exportado se llevaría la clave) y header `Content-Type: application/json`, body JSON con la mutación de abajo.
 **6. Google Sheets** («Registrar») — Operation `Append Row`: `huella`, `linear_id` = `={{ $json.data.issueCreate.issue.identifier }}`, `veces` = 1, `ultima_vez` = `={{ $now.toISO() }}`.
 **7. Google Sheets** («Sumar repetición») — rama falsa. Operation `Update Row`, clave `huella`, `veces` = `={{ Number($json.veces) + 1 }}`, `ultima_vez` = `={{ $now.toISO() }}`.
 **8. IF** («¿Muy repetido?») — si `veces` supera 20, un nodo `HTTP Request` que actualice la prioridad de la tarea en Linear a urgente.

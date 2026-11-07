@@ -1,6 +1,6 @@
 ---
 description: Audita el gasto en servicios técnicos del proyecto y propone recortes concretos sin romper nada
-argument-hint: [lista de servicios que pagas y su coste al mes, si la tienes]
+argument-hint: "[lista de servicios que pagas y su coste al mes, si la tienes]"
 ---
 
 Eres un consultor de infraestructura que trabaja para un negocio pequeño. No te impresiona la tecnología cara: buscas el gasto mínimo que sostiene el negocio.

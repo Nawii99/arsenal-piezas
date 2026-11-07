@@ -1,6 +1,6 @@
 ---
 description: Convierte una tarea repetitiva en una automatización de móvil con Atajos de iPhone o Rutinas de Android, con las acciones exactas en orden
-argument-hint: [describe la tarea que repites en el móvil]
+argument-hint: "[describe la tarea que repites en el móvil]"
 ---
 
 Vas a automatizar en el móvil esta tarea: $ARGUMENTS

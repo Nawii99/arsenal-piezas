@@ -68,7 +68,7 @@ item.binary.data.fileName = nombre + '_' + fecha + '.zip';
 item.binary.data.mimeType = 'application/zip';
 return [item];
 ```
-7. **Google Drive** — Resource: File, Operation: Upload, «Input Data Field Name» `data`, «Parent Folder» tu carpeta de backups, «Name» `{{ $json.nombre }}_{{ $now.format('yyyy-MM-dd') }}.zip`.
+7. **Google Drive** — Resource: File, Operation: Upload, «Input Data Field Name» `data`, «Parent Folder» tu carpeta de backups, «Name» `{{ $('Split In Batches').item.json.nombre }}_{{ $now.format('yyyy-MM-dd') }}.zip` (tras la descarga, `$json` ya no trae `nombre`).
 8. Conecta la salida del Google Drive de nuevo al **Split In Batches** para que procese el siguiente repositorio.
 9. **Google Drive** («Listar antiguos») — tras la salida «done» del Split In Batches, Operation: Search, «Query String» vacío, filtro por carpeta, y en Options pide el campo `createdTime`.
 10. **Code** («Elegir borrables») — filtra por antigüedad.
@@ -86,6 +86,7 @@ Ejecuta a mano con el Code de filtrado limitado a un repositorio (`if (repo.name
 - **Repos grandes**: si un repositorio pesa más de 200 MB, n8n auto-alojado puede quedarse sin memoria. Sube `N8N_PAYLOAD_SIZE_MAX` y activa el modo de almacenamiento en disco de los binarios con `N8N_DEFAULT_BINARY_DATA_MODE=filesystem`.
 - **Límite de la API de GitHub**: 5.000 peticiones por hora con token; con decenas de repos no te acercas.
 - **Solo la rama principal**: el zipball no incluye ramas ni historial de Git. Si necesitas el historial completo, en n8n auto-alojado usa un nodo **Execute Command** con `git clone --mirror` y comprime la carpeta resultante.
+- **Archivos llamados `undefined_…zip`**: la salida del HTTP Request no conserva los campos del repo; por eso el nombre se lee de «Split In Batches».
 - **Cuota de Drive**: los 15 GB gratuitos se comparten con Gmail y Fotos. Por eso está el borrado a 60 días.
 
 ## Cuánto cuesta

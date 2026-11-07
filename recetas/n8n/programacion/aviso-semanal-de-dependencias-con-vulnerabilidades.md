@@ -45,7 +45,7 @@ Para el freelance o la agencia con 5-20 proyectos vivos que no puede revisarlos 
 ```javascript
 return ['miempresa/web-a', 'miempresa/api-b', 'miempresa/panel-c'].map(r => ({ json: { repo: r } }));
 ```
-3) **HTTP Request**: GET `https://api.github.com/repos/{{ $json.repo }}/contents/package.json`, Header Auth `Authorization: Bearer TU_TOKEN` y cabecera `Accept: application/vnd.github.raw`. En Settings marca «Continue On Fail» (habrá repos sin package.json).
+3) **HTTP Request**: GET `https://api.github.com/repos/{{ $json.repo }}/contents/package.json`, Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`) y cabecera `Accept: application/vnd.github.raw`. No pegues el token en el nodo: si exportas o compartes el flujo como JSON, se iría con él. En Settings marca «Continue On Fail» (habrá repos sin package.json).
 4) **Code** (extraer paquetes y versiones limpias):
 ```javascript
 const salida = [];

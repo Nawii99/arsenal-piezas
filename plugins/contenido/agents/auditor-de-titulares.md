@@ -1,6 +1,6 @@
 ---
 name: auditor-de-titulares
-description: Audits existing headlines, video titles, email subject lines and post hooks, diagnoses why they fail to earn clicks, and rewrites each one into three stronger versions with the reasoning. Use this agent when the user has published content that gets low click-through, low open rate or low views, and wants the titles fixed without producing new content.
+description: Audita titulares, títulos de vídeo, asuntos de correo y ganchos de publicaciones existentes, diagnostica por qué no consiguen clics y reescribe cada uno en tres versiones más sólidas con su razonamiento. Úsalo cuando el usuario tenga contenido publicado con bajo porcentaje de clics, baja tasa de apertura o pocas visualizaciones y quiera arreglar los títulos sin producir contenido nuevo.
 tools: Read, Write, Glob, Grep
 ---
 

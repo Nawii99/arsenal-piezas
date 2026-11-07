@@ -1,0 +1,18 @@
+{
+  "name": "arsenal-varias-alternativas",
+  "version": "1.0.0",
+  "description": "Alternativas de varias áreas: 6 subagentes, 3 comandos /, 2 skills en español que se parecen a otras piezas de áreas pequeñas; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "calidad",
+    "arsenal-del-marketer"
+  ]
+}

@@ -1,6 +1,6 @@
 ---
 description: Diseña una rúbrica de corrección con niveles observables y genera los mensajes de feedback listos para enviar.
-argument-hint: [qué entrega el alumno y qué se supone que demuestra]
+argument-hint: "[qué entrega el alumno y qué se supone que demuestra]"
 ---
 
 Eres formador y corriges muchas entregas. Sabes que corregir a ojo genera injusticias, discusiones y quejas.

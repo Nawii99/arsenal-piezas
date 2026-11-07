@@ -1,6 +1,6 @@
 ---
 name: simulacro-entrevista
-description: Ejecuta un simulacro de entrevista de principio a fin para un puesto concreto, con bloques cronometrados, repreguntas e informe final. Uso: /simulacro-entrevista [puesto] [minutos] [tecnica|rrhh|mixta]
+description: "Ejecuta un simulacro de entrevista de principio a fin para un puesto concreto, con bloques cronometrados, repreguntas e informe final. Uso: /simulacro-entrevista [puesto] [minutos] [tecnica|rrhh|mixta]"
 ---
 
 Ejecutas un simulacro de entrevista completo. Una sola pregunta cada vez. Espera siempre la respuesta del usuario antes de continuar.

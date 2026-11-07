@@ -1,6 +1,6 @@
 ---
 name: antes-despues-honesto
-description: Plans, shoots and assembles credible before-and-after comparisons for visible services, with matched framing and lighting, consent handling and platform ad rules. Use when the user sells reforms, cleaning, beauty, hair, car repair or training and wants to show real results.
+description: Planifica, fotografía y compone comparaciones creíbles de antes y después para servicios visibles, con encuadre e iluminación coincidentes, gestión del consentimiento y normas publicitarias de las plataformas. Úsala cuando el usuario venda reformas, limpieza, belleza, peluquería, reparación de coches o formación y quiera mostrar resultados reales.
 ---
 
 # Antes y después que se creen

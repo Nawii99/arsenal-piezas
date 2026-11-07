@@ -39,7 +39,7 @@ Al marcar un alumno como finalizado en tu hoja, coge una plantilla de Google Sli
 - Plantilla de certificado hecha en **Google Slides**, una sola diapositiva, con los textos literales `{{NOMBRE}}`, `{{CURSO}}`, `{{HORAS}}`, `{{FECHA}}`, `{{CODIGO}}` puestos como cajas de texto.
 - Credenciales de Google Drive y Google Slides OAuth2 en n8n (activa Drive API, Slides API y Sheets API en Google Cloud Console).
 - Hoja `Finalizados` con columnas: `nombre`, `email`, `curso`, `horas`, `fecha_fin`, `emitido`, `codigo`, `url_pdf`.
-- Hoja `Registro` (esta puedes publicarla en la web con Archivo > Compartir > Publicar en la web) con columnas: `codigo`, `nombre`, `curso`, `fecha`.
+- Hoja `Registro` con columnas: `codigo`, `nombre`, `curso`, `fecha`. No la publiques: lleva datos personales. Para verificar un certificado no hace falta publicar nada: quien quiera comprobarlo te manda el código y le confirmas curso y fecha. Si prefieres una consulta pública, publica otra hoja solo con el código, el curso y la fecha, sin nombres.
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — `0 9 * * *`, timezone `Europe/Madrid`.
@@ -52,8 +52,8 @@ Al marcar un alumno como finalizado en tu hoja, coge una plantilla de Google Sli
 8. **HTTP Request** — método `POST`, URL `https://slides.googleapis.com/v1/presentations/{{ $json.id }}:batchUpdate`, autenticación `Predefined Credential Type` > `Google Slides OAuth2`. Body JSON con las cinco sustituciones (abajo).
 9. **HTTP Request** (segundo) — método `GET`, URL `https://www.googleapis.com/drive/v3/files/{{ $('Google Drive').item.json.id }}/export?mimeType=application/pdf`, misma credencial de Google, Response Format `File`.
 10. **Google Drive** (`Upload`) — sube el binario a la carpeta `Certificados PDF` con nombre `{{ $json.codigo }}.pdf`. Guarda el `webViewLink`.
-11. **Gmail** (`Send`) — al alumno, con el PDF adjunto y el código de verificación en el cuerpo.
-12. **Google Sheets** (`Append Row`) sobre `Registro` y **Google Sheets** (`Update Row`) sobre `Finalizados` marcando `emitido` en `si`.
+11. **Google Sheets** (`Append Row`) sobre `Registro` y **Google Sheets** (`Update Row`) sobre `Finalizados` marcando `emitido` en `si`. Va antes del correo: así el número queda reservado aunque el envío falle y un segundo intento no repite el código. Ejecuta el flujo de uno en uno.
+12. **Gmail** (`Send`) — al alumno, con el PDF adjunto y el código de verificación en el cuerpo.
 
 ## El código del nodo Code
 ```javascript

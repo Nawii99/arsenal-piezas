@@ -63,7 +63,7 @@ No calcula precios solos: el precio lo pones tú en la plantilla o se lo pides a
 
 Nodo por nodo, en este orden:
 
-**1. Webhook** (disparador). Método POST. Copia la URL de producción que te da n8n y pégala en Tally, en Integrations > Webhooks. Manda una respuesta de prueba desde Tally para ver cómo llegan los datos.
+**1. Webhook** (disparador). Método POST. Copia la URL de producción que te da n8n y pégala en Tally, en Integrations > Webhooks. Manda una respuesta de prueba desde Tally para ver cómo llegan los datos. Pon un signing secret en el webhook de Tally y verifica la firma `Tally-Signature` en un nodo Code.
 
 **2. Set** (renombrar campos). Crea campos limpios: nombre, email, empresa, descripcion, fecha_limite. Cada uno apunta al campo del formulario que corresponda. Aquí añade también: numero, con la expresión {{ 'P-' + $now.format('yyyyMMdd') + '-' + $now.format('HHmm') }}. Da un número único por minuto; si mandas más de un presupuesto por minuto, cambia a segundos.
 

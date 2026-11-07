@@ -51,14 +51,14 @@ Para fotógrafos de bodas, retrato o producto que entregan una preselección: co
 7. **HTTP Request «Descargar preview»** — Method: GET, URL `={{ $json.url_preview }}`, Response Format: File, Put Output in Field: `data`.
 8. **Google Drive** — Operation: Upload, Input Data Field Name: `data`, File Name `={{ $json.nombre }}_preview.jpg`, Parent Folder: carpeta «02 PREVIEWS» (o crea subcarpeta con un nodo Google Drive > Folder > Create).
 9. **Google Sheets** — Operation: Append. Columna miniatura con la fórmula `=IMAGE("{{ $json.url_preview }}")`, nombre_archivo, id_original, quiero vacío.
-10. Fuera del bucle: **Gmail** — Send, al cliente, con el enlace de la hoja compartida en modo Editor y el texto de instrucciones.
+10. Fuera del bucle: **Gmail** — Send, al cliente, con el enlace de la hoja, compartida en modo Editor solo con el correo del cliente (no con «cualquiera con el enlace»), y el texto de instrucciones.
 
 ## Flujo B: entregar las elegidas
 1. **Schedule Trigger** — cada 6 horas.
 2. **Google Sheets** — Operation: Get Row(s), Filters: columna `quiero` igual a `SÍ`. Añade también una columna `entregada` y filtra las vacías.
 3. **IF** — Condition: Number, `{{ $items().length }}` Larger than `0`.
 4. **Loop Over Items** > **Google Drive** Operation: Copy (o Share) del `id_original` a la carpeta «03 ENTREGA», y **Google Sheets** Update poniendo `entregada` = `sí`.
-5. **Google Drive** — Operation: Share sobre la carpeta «03 ENTREGA»: Permissions Role: reader, Type: anyone with link.
+5. **Google Drive** — Operation: Share sobre la carpeta «03 ENTREGA»: Permissions Role: reader, Type: user, Email Address: el correo del cliente (guárdalo en una columna `email_cliente` de la hoja). Son fotos personales del cliente: no uses «cualquiera con el enlace».
 6. **Gmail** — Send con el enlace de la carpeta y el aviso de caducidad de la galería.
 
 ## El trozo de código (nodo Code «Construir URL con marca»)
@@ -85,7 +85,7 @@ return $input.all().map(item => {
 - **Duplicados en la entrega**: la columna `entregada` es obligatoria; sin ella el Flujo B reenvía las mismas fotos cada 6 horas.
 - **Nombres con tildes o espacios**: pon `unique_filename: false` y `use_filename: true`, y si Cloudinary te cambia el nombre, guarda siempre el `public_id` como referencia, no el nombre.
 - **La marca se recorta**: usa `fl_relative` con `w_0.35`, si no el logo se escala en píxeles fijos y en fotos verticales queda mal.
-- **Fotos en alta filtradas**: nunca compartas la carpeta de originales; comparte solo «02 PREVIEWS» y «03 ENTREGA».
+- **Fotos en alta filtradas**: nunca compartas la carpeta de originales; comparte solo «02 PREVIEWS» y «03 ENTREGA», y siempre con el correo concreto del cliente, porque son fotos con datos personales.
 
 ## Cuánto cuesta
 0 € en n8n auto-alojado, Drive y Sheets. Cloudinary gratis hasta 25 créditos/mes: una sesión de 400 fotos con preview consume muy poco. Si haces más de 20-30 sesiones grandes al mes te acercarás al límite y tocará subir de plan (desde 89 $/mes) o generar los previews en local con ImageMagick.

@@ -44,7 +44,7 @@ Para diseñadores freelance y estudios pequeños que reciben peticiones sueltas 
 - Tu número de IVA y condiciones de pago (50% al inicio es lo habitual).
 
 **Los nodos, en orden**
-1. **Webhook**: POST, path `presupuesto`.
+1. **Webhook**: POST, path `presupuesto`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code**: aplana los campos del formulario, igual que en la receta del brief.
 3. **Code** (segundo): la calculadora. Aquí van tus tarifas.
 ```javascript

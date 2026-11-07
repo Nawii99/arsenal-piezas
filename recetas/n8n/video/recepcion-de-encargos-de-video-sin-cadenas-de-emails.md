@@ -47,7 +47,7 @@ Un formulario público recoge los datos del encargo (cliente, tipo de vídeo, du
 3. **Google Drive** — Operation: `Create Folder`. Name: `{{ $json.codigo }} - {{ $json.empresa }}`. Parent Folder: `PROYECTOS`.
 4. **Code1** — Devuelve 4 items, uno por subcarpeta, con el ID de la carpeta padre.
 5. **Google Drive1** — `Create Folder` para cada uno. Name: `{{ $json.sub }}`. Parent Folder ID: `{{ $json.padre }}`. Se ejecuta cuatro veces automáticamente.
-6. **Google Drive2** — Operation: `Share` sobre la subcarpeta `02-MATERIAL-CLIENTE`. Role: `writer`, Type: `anyone`. Ese es el enlace de subida que mandas al cliente.
+6. **Google Drive2** — Operation: `Share` sobre la subcarpeta `02-MATERIAL-CLIENTE`. Role: `writer`, Type: `user`, Email Address: el correo del cliente que viene del formulario. No uses `anyone`: cualquiera con el enlace podría ver, cambiar o borrar el material. Ese es el enlace de subida que mandas al cliente.
 7. **Trello** — Resource: `Card`, Operation: `Create`. List ID: el de «Entrantes». Name: `{{ $('Code').item.json.codigo }} · {{ tipo }} · {{ empresa }}`. Description: el brief completo. Due Date: `{{ $('n8n Form Trigger').item.json['Fecha de entrega'] }}`.
 8. **Trello1** — Resource: `Checklist`, Operation: `Create`. Card ID: `{{ $json.id }}`. Name: `Producción`. Después añade con `Checklist Item` los pasos: Brief confirmado, Material recibido, Guion, Montaje v1, Correcciones, Entrega final, Factura.
 9. **Gmail** — Send al cliente. Asunto: `Tu proyecto {{ codigo }} ya está en marcha`. Cuerpo con el enlace de subida, qué material necesitas (bruto, logo en PNG con fondo transparente, música si tiene licencia) y la fecha comprometida.

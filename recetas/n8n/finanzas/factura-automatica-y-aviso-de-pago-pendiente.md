@@ -6,7 +6,7 @@ Genera la factura al cerrar cada sesión, la manda por email en PDF y persigue s
 
 ## Qué es y qué hace
 
-Al marcar una sesión como realizada en la hoja, crea una factura con numeración correlativa a partir de una plantilla de Google Docs, la convierte en PDF y la envía al paciente con un enlace de pago. Si no paga a los 7, 15 y 25 días, manda recordatorios cada vez más firmes y a los 30 te avisa. Entrada: sesión realizada; salida: factura PDF y recordatorios. Se monta en n8n con Sheets, Docs y Gmail.
+Al marcar una sesión como realizada en la hoja, crea una factura con numeración correlativa a partir de una plantilla de Google Docs, la convierte en PDF y la envía al paciente con un enlace de pago. Si no paga a los 7, 15 y 25 días, manda recordatorios cada vez más firmes y a los 30 te avisa. Entrada: sesión realizada; salida: factura PDF y recordatorios. Se monta en n8n con Sheets, Docs y Gmail. El cobro solo se da por bueno con el webhook de Stripe verificado, el pago en estado pagado y sin repetir eventos.
 
 ## Cómo usarla
 
@@ -49,16 +49,16 @@ Para fisioterapeutas, psicólogos, nutricionistas y entrenadores autónomos que 
 2. **Google Sheets** (Get Rows) sobre Sesiones.
 3. **Filter**: `{{ $json.estado }}` equals `pendiente`.
 4. **Google Sheets** (Get Rows) sobre Contador, para leer el último número.
-5. **Code**: asigna números correlativos y calcula importes. Código abajo.
+5. **Code**: asigna números correlativos y calcula importes. Código abajo. Justo después, antes de crear o enviar nada, un **Google Sheets** (Update) sobre Contador con el último número asignado: así el número queda reservado aunque el envío falle. Ejecuta este flujo de uno en uno.
 6. **Google Drive** (Copy File): copia Plantilla-factura con nombre `Factura-{{ $json.num_factura }}`.
 7. **Google Docs** (Update Document): usa la acción Replace Text una vez por cada marcador, sustituyendo {{numero}} por `{{ $json.num_factura }}` y así con el resto.
 8. **Google Drive** (Download): descarga ese documento indicando en las opciones el formato de conversión PDF.
 9. **Stripe** (nodo Stripe, recurso Charge no; usa **HTTP Request** POST a `https://api.stripe.com/v1/payment_links` con autenticación Predefined Credential Type > Stripe): en el cuerpo, `line_items[0][price_data][currency]=eur`, `line_items[0][price_data][product_data][name]={{ $json.concepto }}`, `line_items[0][price_data][unit_amount]={{ Math.round($json.total * 100) }}`, `line_items[0][quantity]=1`. Guarda la URL que devuelve.
 10. **Gmail** (Send): asunto `Factura {{ $json.num_factura }} - {{ $json.concepto }}`, adjunta el PDF (en Options > Attachments pon el nombre del campo binario, normalmente data) y en el cuerpo el enlace de pago.
 11. **Google Sheets** (Update Row): estado pasa a facturada, y guarda num_factura y el enlace de pago.
-12. **Google Sheets** (Update) sobre Contador con el último número usado.
+12. El contador ya se actualizó en el paso 5. Si un envío falla, reenvía esa misma factura: no generes otra con número nuevo.
 13. Flujo 2, la persecución de impagos: **Schedule Trigger** diario a las 10:00, **Google Sheets** Get Rows, **Filter** estado igual a facturada, **Code** que calcule los días desde la fecha de factura, **Switch** con salidas 7, 15 y 25 días, y tres **Gmail** con textos distintos: recordatorio amable, recordatorio firme y aviso de que a partir de ahí no se dan más citas hasta regularizar. A los 30 días, un Gmail a ti.
-14. Flujo 3, el cobro: **Webhook** POST en `/stripe`, dado de alta en Stripe > Desarrolladores > Webhooks con el evento `checkout.session.completed`; un **Google Sheets** Update pone estado en cobrada.
+14. Flujo 3, el cobro: **Stripe Trigger** con el evento `checkout.session.completed` (este nodo comprueba la firma del webhook; si usas un **Webhook** genérico, verifica antes la cabecera `Stripe-Signature` con el «signing secret» del endpoint y no te fíes del aviso sin ese paso). Un **IF** comprueba que `payment_status` sea `paid` y que el `id` del evento no esté ya guardado en la hoja (guárdalo para no repetir el trabajo si llega dos veces); después un **Google Sheets** Update pone estado en cobrada.
 
 ## El trozo de código del nodo 5
 ```javascript
@@ -92,11 +92,11 @@ return salida;
 
 ## Qué puede salir mal
 - **Numeración con huecos o repetida**: es lo más grave a efectos fiscales. Nunca ejecutes dos veces el flujo sobre la misma fila; el cambio de estado a facturada es lo que lo evita, así que ponlo justo después del envío y no antes.
-- **Ejecución paralela**: si dos ejecuciones leen el contador a la vez, repites número. Con un flujo diario a las 21:00 no pasa, pero no lo lances a mano mientras corre.
+- **Ejecución paralela**: si dos ejecuciones leen el contador a la vez, repites número. Evítalo haciendo que este flujo se ejecute siempre de uno en uno: en n8n, llámalo desde un sub-flujo único (nunca lo lances a mano mientras corre otro) o limita las ejecuciones simultáneas a 1 (en autoalojado, `N8N_CONCURRENCY_PRODUCTION_LIMIT=1`, que afecta a todos tus flujos de producción). Y antes de emitir, añade tras el nodo Code un **IF** que compruebe en la hoja Sesiones que ese `num_factura` no existe ya; si existe, para y avísate.
 - **Requisitos legales de la factura**: tiene que llevar tus datos fiscales, NIF del cliente, fecha, número, base, tipo y cuota. Si estás en Verifactu o facturación electrónica obligatoria, esta receta genera el PDF pero no sustituye al programa homologado: úsala como borrador o conecta con la API de tu programa (Holded, Quipu, Facturascripts) en el paso 6.
 - **Stripe cobra comisión**: 1,5% + 0,25 € en tarjetas europeas. Si prefieres transferencia, quita el paso 9 y pon tu IBAN en el email.
 
 ## Cuánto cuesta
-- n8n, Sheets, Docs, Drive y Gmail: gratis o incluido.
+- n8n autoalojado (Community Edition), Sheets, Docs, Drive y Gmail: gratis o incluido. n8n Cloud tiene una prueba gratuita temporal y después planes de pago.
 - Stripe: sin cuota, solo comisión por cobro.
-- Total: 0 € fijos, más la comisión de lo que cobres.
+- Total: 0 € fijos con n8n autoalojado, más la comisión de lo que cobres.

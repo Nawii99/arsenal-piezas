@@ -37,6 +37,7 @@ Vigila una hoja de encargos; cuando uno pasa a `entregado`, rellena una plantill
 ## Lo que necesitas antes
 - Google Sheet `encargos` con columnas: `id`, `cliente`, `nif`, `direccion`, `email`, `concepto`, `horas`, `precio_hora`, `base`, `irpf_pct`, `iva_pct`, `estado`, `num_factura`, `fecha_factura`, `pdf_url`, `fecha_cobro`.
 - Una segunda pestaña `contador` con una sola celda que guarde el último número de factura emitido.
+- Este flujo debe ejecutarse de uno en uno: si dos ejecuciones leen el mismo contador a la vez, saldría el mismo número en dos facturas. En n8n autoalojado limita la concurrencia a 1 (`N8N_CONCURRENCY_PRODUCTION_LIMIT=1` en una instancia dedicada a este flujo, o un worker en modo queue con `--concurrency=1`) y no pulses «Execute workflow» a mano mientras corre el programado.
 - Una plantilla en Google Docs con marcadores literales: `{{NUM}}`, `{{FECHA}}`, `{{CLIENTE}}`, `{{NIF}}`, `{{DIRECCION}}`, `{{CONCEPTO}}`, `{{BASE}}`, `{{IRPF}}`, `{{IVA}}`, `{{TOTAL}}`, más tus propios datos fiscales fijos.
 - Credenciales de Google (Sheets, Docs, Drive, Gmail) en n8n.
 - Tus datos: NIF, dirección, número de cuenta y el IRPF que aplicas (normalmente 15 %, o 7 % los tres primeros años de actividad).
@@ -46,12 +47,14 @@ Vigila una hoja de encargos; cuando uno pasa a `entregado`, rellena una plantill
 2. **Google Sheets** (`Encargos entregados`) — Get Row(s), Filter: `estado` equals `entregado` (es decir, entregado pero aún sin factura).
 3. **Google Sheets** (`Leer contador`) — lee la pestaña `contador`.
 4. **Code** (`Calcular factura`) — calcula base, IRPF, IVA, total y el número correlativo. Código abajo.
+4b. **Google Sheets** (`Reservar número`) — Update Row en la pestaña `contador` con `ultimo` = el mayor `ultimo` que sale del Code. Se hace ANTES de crear el PDF o de mandar nada, para que el número quede reservado aunque algo falle más abajo (si falla, anota el motivo y no reutilices el número).
+4c. **Google Sheets** + **IF** (`Comprobar que no existe`) — Get Row(s) de `encargos` filtrando `num_factura` = el número calculado; si ya existe alguna fila, el flujo se detiene y te avisa por correo en vez de emitir.
 5. **Google Drive** (`Copiar plantilla`) — Operation: `Copy File`. File: tu plantilla. Name: `Factura {{ $json.num_factura }} - {{ $json.cliente }}`. Folder: `facturas-emitidas`.
 6. **Google Docs** (`Rellenar`) — Operation: `Update a Document`. Doc ID: `{{ $json.id }}` del paso anterior. Actions: una acción `Replace All Text` por cada marcador, por ejemplo Search `{{CLIENTE}}` / Replace `{{ $('Calcular factura').item.json.cliente }}`.
 7. **HTTP Request** (`Exportar PDF`) — GET `https://www.googleapis.com/drive/v3/files/{{ $json.documentId }}/export?mimeType=application/pdf`, con la credencial predefinida de Google Drive OAuth2 y Response Format: `File`, Output Field: `data`.
 8. **Google Drive** (`Guardar PDF`) — Upload, nombre `{{ $json.num_factura }}.pdf`, carpeta `facturas-emitidas`.
 9. **Gmail** — Send. To: `{{ $json.email }}`. Subject: `Factura {{ $json.num_factura }} — {{ $json.concepto }}`. Message: texto breve con el importe, la forma de pago y el vencimiento. Attachments: el binario `data`.
-10. **Google Sheets** (`Marcar facturado`) — Update Row: `estado` = `facturado`, `num_factura`, `fecha_factura`, `pdf_url`. Y actualiza también la pestaña `contador`.
+10. **Google Sheets** (`Marcar facturado`) — Update Row: `estado` = `facturado`, `num_factura`, `fecha_factura`, `pdf_url`. El contador ya se actualizó en el paso 4b.
 11. **Segunda rama del mismo Schedule** — **Google Sheets** con Filter `estado` equals `facturado`, y un **Code** que calcule los días transcurridos desde `fecha_factura`.
 12. **Switch** — salida 1 si días = 15, salida 2 si días = 30, salida 3 si días = 45.
 13. **Gmail** x3 — tres textos distintos: el de 15 días amable («por si se te ha traspapelado»), el de 30 firme (recordando el vencimiento acordado) y el de 45 formal, mencionando que a partir de ahí aplicas los intereses de demora de la Ley 3/2004 de morosidad.
@@ -94,11 +97,11 @@ return salida;
 
 ## Cómo probarla
 - Crea un encargo falso con tu propio correo como cliente y ejecuta a mano. Abre el PDF: comprueba que no queda ningún `{{MARCADOR}}` sin sustituir y que los importes cuadran con una calculadora.
-- Prueba con dos encargos a la vez: la numeración debe salir correlativa, sin repetir. Si repite, es que el contador se actualiza fuera del bucle.
+- Prueba con dos encargos a la vez: la numeración debe salir correlativa, sin repetir. Si repite, revisa el paso 4b y que la concurrencia esté limitada a 1.
 - Para probar los recordatorios, pon a mano una `fecha_factura` de hace 15 días en una fila de prueba.
 
 ## Qué puede salir mal
-- **Numeración con huecos o repetida**: es lo más grave, porque Hacienda exige numeración correlativa sin saltos. Actualiza el contador en el mismo paso en que emites, y no borres nunca una factura ya emitida: si te equivocas, emite una rectificativa.
+- **Numeración con huecos o repetida**: es lo más grave, porque Hacienda exige numeración correlativa sin saltos. Reserva el número (paso 4b) antes de emitir, ejecuta el flujo de uno en uno y no borres nunca una factura ya emitida: si te equivocas, emite una rectificativa.
 - **IRPF donde no toca**: si tu cliente es una empresa extranjera, no se retiene IRPF; si es un particular español, tampoco. Deja la columna `irpf_pct` por encargo y ponla a 0 en esos casos.
 - **IVA en ventas intracomunitarias**: a una empresa de la UE con VIES válido facturas sin IVA con la mención de inversión del sujeto pasivo. Añade una columna `tipo_cliente` y una variante de plantilla.
 - **Gmail marca tus recordatorios como spam** si mandas muchos: no pasa con volúmenes de freelance, pero escribe siempre desde tu dominio si lo tienes.

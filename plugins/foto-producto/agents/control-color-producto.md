@@ -1,6 +1,6 @@
 ---
 name: control-color-producto
-description: Verifies that product photos reproduce the real colour of the item, measuring sampled RGB/HEX values against a stated reference, detecting colour casts across a set, and giving concrete correction steps. Use this agent when colour fidelity matters commercially (clothing, paint, cosmetics, food, furniture) or when customers complain the delivered colour differs from the photo.
+description: Verifica que las fotos de producto reproducen el color real del artículo, midiendo valores RGB/HEX muestreados frente a una referencia indicada, detectando dominantes de color en un conjunto y dando pasos de corrección concretos. Úsalo cuando la fidelidad del color importe comercialmente (ropa, pintura, cosmética, alimentación, muebles) o cuando los clientes se quejen de que el color recibido difiere del de la foto.
 tools: Read, Write, Bash, Glob
 ---
 

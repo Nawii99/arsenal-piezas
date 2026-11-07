@@ -48,9 +48,9 @@ Para fotógrafos, tiendas y creadores que quieren presencia constante sin estar 
 2. **Google Sheets** — `Get Row(s)` de la hoja `Cola Instagram`, filtro `estado` igual a `PENDIENTE`.
 3. **Code** (`¿Toca ahora?`) — compara fecha y hora con el momento actual. Código abajo.
 4. **IF** — `{{ $json.toca }}` es `true`. Si no, el flujo se para y ya está.
-5. **HTTP Request** (`Crear contenedor`) — Method `POST`. URL: `https://graph.facebook.com/v21.0/TU_IG_ID/media`. Query Parameters: `image_url` = `{{ $json.url_imagen }}`, `caption` = `{{ $json.texto_completo }}`, `access_token` = tu token.
+5. **HTTP Request** (`Crear contenedor`) — Method `POST`. URL: `https://graph.facebook.com/v21.0/TU_IG_ID/media`. Query Parameters: `image_url` = `{{ $json.url_imagen }}`, `caption` = `{{ $json.texto_completo }}`, `access_token` desde una credencial de n8n (Generic Credential Type > Query Auth, Name `access_token`, Value tu token; no la escribas en el nodo: un flujo exportado se la llevaría).
 6. **Wait** — Amount: 30, Unit: `Seconds`. Instagram necesita ese rato para descargar y procesar la imagen.
-7. **HTTP Request** (`Publicar`) — Method `POST`. URL: `https://graph.facebook.com/v21.0/TU_IG_ID/media_publish`. Query Parameters: `creation_id` = `{{ $json.id }}`, `access_token` = tu token.
+7. **HTTP Request** (`Publicar`) — Method `POST`. URL: `https://graph.facebook.com/v21.0/TU_IG_ID/media_publish`. Query Parameters: `creation_id` = `{{ $json.id }}`, `access_token` desde una credencial de n8n (Generic Credential Type > Query Auth, Name `access_token`, Value tu token; no la escribas en el nodo: un flujo exportado se la llevaría).
 8. **Google Sheets** — `Update Row`: pon `estado` a `PUBLICADO` e `id_publicacion` a `{{ $json.id }}`.
 9. **Gmail** — te avisa: `Publicado en Instagram: {{ $('Code').item.json.pie }}`. Opcional.
 

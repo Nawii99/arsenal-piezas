@@ -44,7 +44,7 @@ Credenciales de «Google Sheets OAuth2 API» y «Gmail OAuth2» en n8n.
 **1. «Schedule Trigger»** — Interval: Weeks, lunes a las 7:00, timezone `Europe/Madrid`.
 **2. «Google Sheets»** — Get Row(s) de la pestaña `Logos`. Sale un item por logo vigilado.
 **3. «Split In Batches»** (en n8n reciente se llama «Loop Over Items») — Batch Size 1. Así no disparas todas las búsquedas a la vez.
-**4. «HTTP Request»** — Method GET, URL `https://serpapi.com/search.json`, Send Query Parameters activado con: `engine` = `google_lens`, `url` = `{{ $json.url_imagen }}`, `api_key` = tu clave, `hl` = `es`. Marca en Settings «Retry On Fail», Max Tries 3, Wait Between Tries 5000.
+**4. «HTTP Request»** — Method GET, URL `https://serpapi.com/search.json`, Send Query Parameters activado con: `engine` = `google_lens`, `url` = `{{ $json.url_imagen }}`, `api_key` desde una credencial de n8n (Generic Credential Type > Query Auth, Name `api_key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría), `hl` = `es`. Marca en Settings «Retry On Fail», Max Tries 3, Wait Between Tries 5000.
 **5. «Code»** — Mode: Run Once for All Items. Filtra dominios permitidos (código abajo).
 **6. «Google Sheets»** (nómbralo Leer hallazgos) — Get Row(s) de `Hallazgos`, para saber qué ya habías visto.
 **7. «Code»** (nómbralo Quitar repetidos) — compara el dominio+cliente con lo ya registrado y deja solo lo nuevo.
@@ -79,4 +79,4 @@ Si la imagen no es públicamente accesible, SerpApi devuelve error: prueba la UR
 Sin el control de duplicados, cada semana te llega lo mismo. El paso 7 es obligatorio, no lo saltes.
 Con 100 búsquedas gratis al mes, vigilar 25 logos semanalmente te deja justo en el límite; usa Split In Batches y una tanda por semana.
 ## Cuánto cuesta
-n8n y Google gratis. SerpApi: 100 búsquedas al mes gratis, y el primer plan de pago ronda los 75 $/mes con 5.000 búsquedas. Con 2 o 3 logos vigilados no pagas nada.
+Google gratis y n8n autoalojado gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago). SerpApi: 100 búsquedas al mes gratis, y el primer plan de pago ronda los 75 $/mes con 5.000 búsquedas. Con 2 o 3 logos vigilados no pagas nada.

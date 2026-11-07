@@ -41,10 +41,18 @@ Para quien tiene su proyecto en un VPS propio (Node, Laravel, Django, Astro...) 
 - Un usuario de despliegue con permisos solo sobre esa carpeta y sobre reiniciar el servicio (`sudoers` con `NOPASSWD` únicamente para `systemctl restart miapp`).
 - Bot de Telegram y token de GitHub para el webhook.
 ## Los nodos, en orden
-1) **Webhook**: POST, path `deploy-miapp`. En GitHub: Settings > Webhooks, evento «Just the push event», y define un `Secret`.
+1) **Webhook**: POST, path `deploy-miapp`, y en Options activa «Raw Body». En GitHub: Settings > Webhooks, evento «Just the push event», y define un `Secret`; guárdalo en la variable de entorno `GH_SECRET` de n8n, nunca escrito en un nodo.
 2) **Code** (verificar la rama y la firma del secreto):
 ```javascript
-const body = $input.first().json.body;
+const crypto = require('crypto');
+const SECRETO = $env.GH_SECRET; // variable de entorno de n8n, nunca el secreto escrito aquí
+const req = $input.first().json;
+let bruto = '';
+try { bruto = (await this.helpers.getBinaryDataBuffer(0, 'data')).toString('utf8'); } catch (e) {}
+const firma = String(req.headers['x-hub-signature-256'] || '').replace('sha256=', '');
+const calc = SECRETO ? crypto.createHmac('sha256', SECRETO).update(bruto).digest('hex') : '';
+if (!calc || firma.length !== calc.length || !crypto.timingSafeEqual(Buffer.from(firma), Buffer.from(calc))) return [];
+const body = JSON.parse(bruto);
 if (body.ref !== 'refs/heads/main') return [];
 return [{ json: { autor: body.head_commit?.author?.name || '?', mensaje: body.head_commit?.message?.split('\n')[0] || '', sha: (body.after || '').slice(0, 7) } }];
 ```
@@ -73,8 +81,9 @@ cd /var/www/miapp && git reset --hard {{ $('SSH').first().json.stdout.trim() }} 
 - **`sudo` pide contraseña**: el SSH se queda colgado hasta el timeout. Configura la línea en `/etc/sudoers.d/deploy` con `NOPASSWD`.
 - **Dos pushes seguidos**: pueden solaparse. En Settings del workflow limita la concurrencia o añade un fichero de bloqueo: `[ -f /tmp/deploy.lock ] && exit 1 || touch /tmp/deploy.lock` al principio y `rm -f /tmp/deploy.lock` al final.
 - **Migraciones de base de datos**: añádelas al comando (`php artisan migrate --force` o `npx prisma migrate deploy`) ANTES del reinicio, y haz backup antes (ver la receta de copia de seguridad).
-- **Webhook público sin protección**: usa el Secret de GitHub y valida la cabecera `x-hub-signature-256` en el Code, o al menos usa un path largo e imposible de adivinar.
+- **Webhook público sin protección**: el Code del paso 2 valida la cabecera `x-hub-signature-256` con el secreto de `$env.GH_SECRET`; si la firma no vale, no devuelve nada y el flujo para. Un path largo o secreto no sustituye a la firma: no autentica nada. Si tu n8n bloquea `require('crypto')` o `$env`, añade `NODE_FUNCTION_ALLOW_BUILTIN=crypto` y `N8N_BLOCK_ENV_ACCESS_IN_NODE=false`.
 - **Caída de segundos durante el reinicio**: si te importa, usa `pm2 reload` en vez de `restart`, que hace recarga sin corte.
+- **El Code decía validar la firma y no lo hacía**: cualquiera con la URL lanzaba despliegues; ahora compara el HMAC del cuerpo en bruto antes de seguir.
 ## Cuánto cuesta
 - VPS: desde 5 €/mes (Hetzner, Contabo). n8n auto-alojado en el mismo servidor: 0 €.
 - GitHub y Telegram: gratis.

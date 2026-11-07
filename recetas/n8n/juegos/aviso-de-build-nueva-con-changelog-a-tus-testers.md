@@ -44,11 +44,11 @@ Para estudios que iteran rápido y tienen entre 10 y 200 testers.
 - Costumbre de escribir los commits con prefijo: `feat:`, `fix:`, `change:`. Sin esto el agrupado no sirve.
 
 ## Los nodos, en orden
-1. **GitHub Trigger** — Evento «release». Alternativa sin GitHub: un nodo **Webhook** al que llames desde tu script de subida con `curl`.
+1. **GitHub Trigger** — Evento «release». Alternativa sin GitHub: un nodo **Webhook** al que llames desde tu script de subida con `curl`; protégelo con Authentication > Header Auth y una credencial con un token largo que solo conozca quien lo llama; sin eso, cualquiera que sepa la URL lo dispara (en `curl`, con `-H "Authorization: $TOKEN_AVISOS"` leído de una variable de entorno).
 2. **GitHub** («Get Many Releases») — Para localizar la etiqueta de la versión anterior.
-3. **HTTP Request** — GET `https://api.github.com/repos/USUARIO/REPO/compare/{{ $json.tag_anterior }}...{{ $json.tag_nuevo }}` con cabecera `Authorization: Bearer TU_TOKEN`. Devuelve todos los commits entre ambas versiones.
+3. **HTTP Request** — GET `https://api.github.com/repos/USUARIO/REPO/compare/{{ $json.tag_anterior }}...{{ $json.tag_nuevo }}` con Authentication: Generic > Header Auth con una credencial de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`). Devuelve todos los commits entre ambas versiones. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 4. **Code** — Agrupa los commits en las tres categorías y monta el texto (código abajo).
-5. **HTTP Request** «itch» — GET `https://itch.io/api/1/TU_CLAVE/my-games` para confirmar que la build ya está publicada y sacar la URL. Opcional pero evita avisar antes de tiempo.
+5. **HTTP Request** «itch» — GET `https://api.itch.io/profile/games` (la clave no va en la URL: usa Authentication: Generic > Header Auth con una credencial de n8n (Name `Authorization`, Value `Bearer TU_CLAVE_ITCH`)) para confirmar que la build ya está publicada y sacar la URL. Opcional pero evita avisar antes de tiempo. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 6. **Discord** — Publica el changelog en Markdown con el enlace de descarga.
 7. **Google Sheets** («Get Row(s)», pestaña «testers», filtro activo = si).
 8. **Loop Over Items** — Lote de 20 para no disparar los límites de Gmail.

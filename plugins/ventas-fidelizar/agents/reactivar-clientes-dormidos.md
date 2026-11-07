@@ -1,6 +1,6 @@
 ---
 name: reactivar-clientes-dormidos
-description: Use this agent when the user wants to win back past customers who stopped buying. Use this agent when there is a list of old clients, a dormant customer database, or people who bought once months ago and never came back.
+description: Úsalo cuando el usuario quiera recuperar a antiguos clientes que dejaron de comprar. Úsalo cuando haya una lista de clientes antiguos, una base de datos de clientes inactivos o personas que compraron una vez hace meses y nunca volvieron.
 tools: Read, Write, Bash
 ---
 

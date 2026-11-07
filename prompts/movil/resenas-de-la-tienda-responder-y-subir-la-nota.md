@@ -47,7 +47,7 @@ CONOCIMIENTO DEL OFICIO:
 - Estructura de respuesta: reconocer el problema concreto en sus palabras, decir qué pasa o qué has hecho, dar salida (canal directo), cerrar sin pedir la retirada de la reseña de forma descarada.
 - Una reseña mala que se arregla y se responde suele acabar editada por el propio usuario: en muchos casos basta con resolverle el problema y avisarle.
 - Nunca pidas valoración a bocajarro ni al abrir la app. Se pide después de un momento bueno, y solo a quien ya ha usado la app varias veces.
-- El filtro previo funciona: pregunta primero "¿qué tal te va?"; a quien va bien, se le ofrece valorar; a quien va mal, se le ofrece soporte. No condiciones el acceso a la app a valorar, y no ofrezcas premios por estrellas: va contra las normas de las tiendas.
+- No filtres por satisfacción: preguntar antes "¿qué tal te va?" para ofrecer valorar solo a quien va bien y soporte a quien va mal está prohibido por Google Play y App Store. El aviso oficial de valoración se muestra a todos por igual y el soporte se ofrece aparte. No condiciones el acceso a la app a valorar, y no ofrezcas premios por estrellas: va contra las normas de las tiendas.
 - En iOS solo se puede mostrar el diálogo oficial de valoración un número limitado de veces al año, así que gástalo bien.
 - Las reseñas son investigación de producto gratis: agrúpalas por tema y verás la lista de arreglos ordenada por impacto real.
 LO QUE TIENES QUE HACER:
@@ -56,7 +56,7 @@ LO QUE TIENES QUE HACER:
 3. Escribe la respuesta pública de cada reseña negativa o tibia, personalizada, máximo 350 caracteres, sin copiar la misma fórmula dos veces.
 4. Escribe también respuesta breve para tres reseñas positivas, porque también se responden.
 5. Redacta tres plantillas reutilizables para los casos que se repiten, con los huecos marcados entre corchetes.
-6. Diseña el sistema para pedir valoraciones: condición exacta para mostrar la pregunta, texto del filtro previo, texto para el camino positivo y para el negativo, y cada cuánto se puede repetir.
+6. Diseña el sistema para pedir valoraciones: condición exacta para mostrar la petición (la misma para todos los usuarios que cumplan un criterio neutro, como haber completado la tarea), texto previo al aviso oficial, acceso a soporte que se ofrece aparte y cada cuánto se puede repetir.
 7. Escribe el mensaje de seguimiento para avisar a quien se quejó de que su problema ya está resuelto.
 8. Propón la lista de arreglos priorizada, separando lo que se soluciona con un texto o una ayuda dentro de la app de lo que necesita desarrollo.
 9. Sugiere qué escribir en las notas de la nueva versión para que se note que escuchas.

@@ -49,16 +49,16 @@ Para freelances y agencias pequeñas que llevan webs de terceros y no controlan 
 3. **Split In Batches** — Batch Size `5`.
 4. **HTTP Request** (nombre: «Certificado») — `GET https://ssl-checker.io/api/v1/check/{{ $json.dominio }}`. Settings: `Continue On Fail` activado, `Retry On Fail` con 2 intentos.
 5. **HTTP Request** (nombre: «Dominio») — `GET https://rdap.org/domain/{{ $json.dominio }}`, header `Accept: application/rdap+json`. También con `Continue On Fail`.
-6. **Code** (nombre: «Días restantes») — calcula los días de cada caducidad y decide si toca avisar.
+6. **Code** (nombre: «Días restantes») — Mode `Run Once for Each Item`; calcula los días de cada caducidad y decide si toca avisar.
 7. **IF** — Condition: Boolean `{{ $json.avisar }}` `is true`.
 8. **Slack** — Operation `Send Message` (o nodo `HTTP Request` POST al webhook con `{"text": "..."}`).
 9. **Google Sheets** — Operation `Update Row`, columna `ultimo_aviso` con `{{$now.toISO()}}`, usando `dominio` como columna de búsqueda.
 
 ### El código del nodo «Días restantes»
 ```javascript
-const dominio = $('Split In Batches').first().json.dominio;
-const ssl = $('Certificado').first().json || {};
-const rdap = $('Dominio').first().json || {};
+const dominio = $('Split In Batches').item.json.dominio;
+const ssl = $('Certificado').item.json || {};
+const rdap = $('Dominio').item.json || {};
 const info = ssl.result || {};
 const diasCert = typeof info.days_left === 'number' ? info.days_left : null;
 let diasDom = null;
@@ -68,7 +68,7 @@ const umbrales = [30, 14, 3];
 const critico = Math.min(...[diasCert, diasDom].filter(v => v !== null).concat([9999]));
 const avisar = umbrales.some(u => critico <= u);
 const texto = `⚠️ ${dominio} → certificado: ${diasCert ?? 'no leído'} días · dominio: ${diasDom ?? 'no leído'} días`;
-return [{ json: { dominio, diasCert, diasDom, critico, avisar, texto } }];
+return { json: { dominio, diasCert, diasDom, critico, avisar, texto } };
 ```
 
 ### Cómo probarla
@@ -80,10 +80,11 @@ return [{ json: { dominio, diasCert, diasDom, critico, avisar, texto } }];
 - **Dominios `.es`**: algunos registros nacionales no exponen la fecha de expiración por RDAP; en ese caso apunta la fecha a mano en una columna extra de la hoja y úsala como respaldo.
 - **La API pública se pone lenta o limita**: baja el Batch Size a 3 y añade un `Wait` de 3 segundos dentro del bucle.
 - **Avisos repetidos cada día**: usa la columna `ultimo_aviso` en un `IF` para no repetir dentro de las 48 horas siguientes.
-- **Certificados detrás de Cloudflare**: verás el certificado de Cloudflare, no el de tu origen; para el origen usa un `Execute Command` con `openssl s_client` si tienes n8n auto-alojado.
+- **Certificados detrás de Cloudflare**: verás el certificado de Cloudflare, no el de tu origen; para el origen usa un `Execute Command` con `openssl s_client` si tienes n8n auto-alojado, validando antes el dominio en un **Code** con una regex estricta: viene de la hoja y llegaría a la shell.
 - **Subdominios**: añádelos como filas independientes, el certificado comodín no siempre cubre lo que crees.
+- **Solo salía el primer dominio de cada lote**: con `.first()` el Code ignoraba los otros cuatro; ahora va item a item con `.item`.
 
 ### Cuánto cuesta
 - 0 € en APIs: RDAP es el protocolo oficial de los registros y ssl-checker tiene uso libre razonable.
 - Google Sheets y Slack, gratis en sus planes básicos.
-- n8n auto-alojado 0 €; en n8n Cloud gratuito, 30 ejecuciones al mes de este flujo caben sin problema.
+- n8n auto-alojado 0 €; en n8n Cloud (de pago tras la prueba gratuita), 30 ejecuciones al mes de este flujo caben sin problema.

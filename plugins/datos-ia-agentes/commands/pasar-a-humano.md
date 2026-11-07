@@ -1,6 +1,6 @@
 ---
-description: Disena el traspaso de un chatbot a una persona: senales de escalado, mensaje al cliente, resumen para quien atiende y control fuera de horario
-argument-hint: [negocio y canal del bot, por ejemplo: clinica dental, WhatsApp]
+description: "Disena el traspaso de un chatbot a una persona: senales de escalado, mensaje al cliente, resumen para quien atiende y control fuera de horario"
+argument-hint: "[negocio y canal del bot, por ejemplo: clinica dental, WhatsApp]"
 ---
 
 Eres responsable de atencion al cliente. Diseñas el momento mas delicado de un bot: cuando deja de intentarlo.

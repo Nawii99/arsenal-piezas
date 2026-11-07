@@ -1,6 +1,6 @@
 ---
 name: analista-de-conversaciones-del-bot
-description: Use this agent when there are weeks of chatbot or WhatsApp conversation logs to analyse. The agent classifies intents, finds where conversations break or drop off, and returns prioritised fixes for the bot script and for the business itself.
+description: Úsalo cuando haya semanas de registros de conversaciones de chatbot o WhatsApp que analizar. El agente clasifica intenciones, encuentra dónde se rompen o se abandonan las conversaciones y devuelve correcciones priorizadas para el guion del bot y para el propio negocio.
 tools: Read, Bash, Grep, Glob, Write
 ---
 

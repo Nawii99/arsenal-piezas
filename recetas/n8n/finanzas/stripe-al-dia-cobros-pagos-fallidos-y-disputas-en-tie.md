@@ -11,7 +11,7 @@ Recibe los eventos de Stripe en tiempo real y, según el caso, registra el cobro
 ## Cómo usarla
 
 1. Crea la hoja Ingresos Stripe
-2. Conecta Stripe con tu clave secreta y un webhook
+2. Conecta Stripe con un webhook con la firma verificada
 3. Conecta Gmail y Telegram
 4. Prueba con eventos de prueba de Stripe
 5. Que lo revise un profesional
@@ -46,9 +46,11 @@ Credencial de Google en n8n y un bot de Telegram.
 Un enlace del portal de cliente de Stripe (Settings > Billing > Customer portal) para meterlo en el correo de pago fallido.
 
 ## Los nodos, en orden
-**Webhook**: HTTP Method POST, Path `stripe-finanzas`, Respond «Immediately». Copia la Production URL que te da n8n.
+**Webhook**: HTTP Method POST, Path `stripe-finanzas`, Respond «Immediately». Copia la Production URL que te da n8n. Activa la opción Raw Body del Webhook, porque la firma se calcula sobre el cuerpo crudo.
+**Verificar la firma**: antes del Switch, un nodo Code calcula el HMAC-SHA256 de `timestamp.cuerpo` con el signing secret del endpoint (`whsec_...`) y lo compara con la cabecera `Stripe-Signature`; un IF corta (responde 400) si no coincide. El secreto va como variable de entorno de n8n (`$env.STRIPE_WEBHOOK_SECRET`), nunca pegado en el nodo: un flujo exportado se llevaría la clave. Alternativa más simple: el nodo Stripe Trigger, que ya la comprueba.
+**Evitar duplicados**: después, busca el id del evento (`$json.body.id`, empieza por `evt_`) en una pestaña «Eventos procesados» de la hoja; si ya está, no hagas nada más, y si no, anótalo antes de seguir.
 En Stripe: Developers > Webhooks > Add endpoint, pega esa URL y selecciona los eventos `invoice.payment_succeeded`, `invoice.payment_failed`, `charge.dispute.created` y `payment_intent.succeeded`.
-**Switch**: modo Rules, valor a comparar `={{ $json.body.type }}`. Regla 1: igual a `invoice.payment_succeeded` (salida «cobro»). Regla 2: igual a `invoice.payment_failed` (salida «fallo»). Regla 3: igual a `charge.dispute.created` (salida «disputa»).
+**Switch**: modo Rules, valor a comparar `={{ $json.body.type }}`. Regla 1: igual a `invoice.payment_succeeded` (salida «cobro»). Regla 2: igual a `invoice.payment_failed` (salida «fallo»). Regla 3: igual a `charge.dispute.created` (salida «disputa»). En la salida «cobro», añade un IF que solo deje pasar si `$json.body.data.object.status` es `paid`: un cobro que no está pagado no se apunta como ingreso.
 **Code** (salida cobro, renombra a `Formatear cobro`): modo «Run Once for Each Item».
 ```javascript
 const e = $input.item.json.body.data.object;
@@ -67,8 +69,8 @@ En Developers > Webhooks puedes pulsar «Send test webhook» y elegir el evento;
 Comprueba que el neto que apunta la hoja coincide con lo que Stripe te dice en su informe de balance; si no, ajusta la fórmula de comisión a tu tarifa real.
 
 ## Qué puede salir mal
-Firma del webhook: por seguridad deberías validar la cabecera `stripe-signature`. La forma sencilla es poner Header Auth en el nodo Webhook con un valor secreto en la URL, o usar el nodo Stripe Trigger nativo de n8n, que ya valida por ti.
-Reintentos de Stripe: si tu n8n no responde 200 en pocos segundos, Stripe reintenta y tendrás filas duplicadas. Por eso el Webhook responde «Immediately».
+Firma del webhook: sin validar la cabecera `Stripe-Signature`, cualquiera que conozca la URL podría mandarte cobros falsos. Valídala con el nodo Code descrito arriba (secreto en variable de entorno) o usa el nodo Stripe Trigger nativo de n8n, que ya valida por ti. No pongas ningún secreto en la URL.
+Reintentos de Stripe: si tu n8n no responde 200 en pocos segundos, Stripe reintenta, y también puede mandar el mismo evento dos veces aunque respondas bien. Responder «Immediately» no evita los duplicados: los evita el paso «Evitar duplicados» con el id del evento.
 Comisiones: la fórmula del 1,45% + 0,25 € vale para tarjetas europeas. Las de fuera de Europa son más caras. Para exactitud, consulta el objeto `balance_transaction` con una llamada extra.
 Suscripciones que fallan tres veces: Stripe manda tres eventos de fallo, así que el cliente recibirá tres correos. Añade un IF sobre `attempt_count` si te parece mucho.
 Si n8n está caído, Stripe reintenta durante 3 días; no perderás eventos, pero llegarán tarde.

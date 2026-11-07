@@ -44,18 +44,29 @@ Cuando termina un directo, descarga el histórico del chat, calcula la densidad 
 1. **Schedule Trigger** — cada día a las 03:00 (los directos ya han acabado).
 2. **HTTP Request** — POST https://id.twitch.tv/oauth2/token con client_id, client_secret y grant_type=client_credentials. Devuelve el access_token.
 3. **HTTP Request** — GET https://api.twitch.tv/helix/videos?user_id=TU_ID&type=archive&first=1, headers `Client-Id` y `Authorization: Bearer {{token}}`. Saca el VOD de ayer.
-4. **Execute Command** — descarga el VOD: `yt-dlp -o /data/clips/{{ $json.id }}.mp4 {{ $json.url }}`.
-5. **Execute Command** — descarga el chat: `chat_downloader {{ $json.url }} --output /data/clips/{{ $json.id }}.json` (pip install chat-downloader).
-6. **Read/Write Files from Disk** (Read) — lee el JSON del chat.
-7. **Code** — cuenta mensajes por ventana de 30 s y devuelve los 3 picos con su segundo de inicio.
-8. **Split In Batches** — 1 a 1.
-9. **Execute Command** — el corte con ffmpeg.
-10. **Google Drive** (Upload) — sube cada clip a la carpeta «Clips pendientes».
-11. **Telegram** — te avisa con los enlaces y el minuto original de cada corte.
+4. **Code** (renómbralo «Validar VOD») — se queda con el primer vídeo de la respuesta, para el flujo si su ID no es solo números y rehace la URL a partir del ID. Código abajo.
+5. **Execute Command** — descarga el VOD: `yt-dlp -o /data/clips/{{ $json.id }}.mp4 {{ $json.url }}`.
+6. **Execute Command** — descarga el chat: `chat_downloader {{ $('Validar VOD').first().json.url }} --output /data/clips/{{ $('Validar VOD').first().json.id }}.json` (pip install chat-downloader).
+7. **Read/Write Files from Disk** (Read) — lee el JSON del chat; queda como binario en `data` y el nodo 8 lo lee de ahí.
+8. **Code** — cuenta mensajes por ventana de 30 s y devuelve los 3 picos con su segundo de inicio.
+9. **Split In Batches** — 1 a 1.
+10. **Execute Command** — el corte con ffmpeg.
+11. **Google Drive** (Upload) — antes lee el clip con **Read/Write Files from Disk** (Read) desde `/data/clips/clip_{{ $('Split In Batches').item.json.inicio }}.mp4` (Execute Command no devuelve el archivo) y sube cada clip a la carpeta «Clips pendientes».
+12. **Telegram** — te avisa con los enlaces y el minuto original de cada corte.
 
-## El código del nodo 7
+## El código del nodo 4
 ```js
-const msgs = JSON.parse($json.data).map(m => Math.floor(m.time_in_seconds / 30));
+const r = $input.first().json;
+const v = (r.data || [])[0] || r;
+const id = String(v.id || '');
+if (!/^\d+$/.test(id)) throw new Error('ID de VOD inesperado: ' + id.slice(0, 40));
+return [{ json: { id, url: `https://www.twitch.tv/videos/${id}` } }];
+```
+
+## El código del nodo 8
+```js
+const raw = (await this.helpers.getBinaryDataBuffer(0, 'data')).toString('utf8');
+const msgs = JSON.parse(raw).map(m => Math.floor(m.time_in_seconds / 30));
 const cuenta = {};
 for (const v of msgs) cuenta[v] = (cuenta[v] || 0) + 1;
 const picos = Object.entries(cuenta)
@@ -65,19 +76,21 @@ const picos = Object.entries(cuenta)
 return picos.map(([v, n]) => ({ json: { inicio: Math.max(0, v*30 - 25), mensajes: n } }));
 ```
 
-## El comando del nodo 9
+## El comando del nodo 10
 ```bash
-ffmpeg -ss {{ $json.inicio }} -i /data/clips/{{ $('HTTP Request3').first().json.id }}.mp4 -t 45 -vf "crop=ih*9/16:ih,scale=1080:1920" -c:v libx264 -preset veryfast -c:a aac /data/clips/clip_{{ $json.inicio }}.mp4
+ffmpeg -ss {{ $json.inicio }} -i /data/clips/{{ $('Validar VOD').first().json.id }}.mp4 -t 45 -vf "crop=ih*9/16:ih,scale=1080:1920" -c:v libx264 -preset veryfast -c:a aac /data/clips/clip_{{ $json.inicio }}.mp4
 ```
 
 ## Cómo probarla
-Coge un VOD que ya conozcas y en el que sepas dónde está el momentazo. Ejecuta solo hasta el nodo 7 y comprueba que el segundo detectado coincide. El `-25` del código es el margen para empezar antes de la reacción, ajústalo a tu ritmo.
+Coge un VOD que ya conozcas y en el que sepas dónde está el momentazo. Ejecuta solo hasta el nodo 8 y comprueba que el segundo detectado coincide. El `-25` del código es el margen para empezar antes de la reacción, ajústalo a tu ritmo.
 
 ## Qué puede salir mal
 - **Recorte mal centrado**: el crop coge el centro. Si estás a la izquierda del encuadre, cambia a `crop=ih*9/16:ih:200:0`.
 - **Picos pegados**: el filtro exige 2 minutos de separación entre picos; súbelo si te salen tres clips del mismo momento.
 - **Espacio en disco**: un VOD de 3 horas son 6-10 GB. Borra el original al terminar con un Execute Command final.
 - **Token de Twitch**: caduca cada 60 días; el nodo 2 lo pide nuevo cada vez, así que no te afecta.
+- **Datos de la API dentro del comando**: el ID y la URL del VOD llegan de fuera y van sin comillas a la shell; por eso «Validar VOD» solo acepta un ID numérico y rehace la URL, en vez de pasar la que devuelve la API.
+- **El chat o el clip no llegan al nodo siguiente**: Read/Write Files deja el JSON como binario y Execute Command no devuelve archivos; por eso el nodo 8 lee el binario y cada clip se lee del disco antes de subirlo.
 
 ## Cuánto cuesta
 Todo gratis salvo el servidor: un VPS con 4 GB de RAM y 80 GB de disco por 6-10 €/mes aguanta esto. La API de Twitch no cobra.

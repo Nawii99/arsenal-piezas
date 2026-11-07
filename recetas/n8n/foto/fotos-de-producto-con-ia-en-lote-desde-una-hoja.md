@@ -46,9 +46,9 @@ Para tiendas online, marcas pequeñas y agencias que necesitan volumen de imáge
 2. **Google Sheets** — `Get Row(s)`, filtro `estado` igual a `PENDIENTE`.
 3. **Split In Batches** — Batch Size: 1. Importante: si mandas todo de golpe, Replicate te devuelve errores de cola.
 4. **Code** (`Construir prompt`) — traduce lo que has escrito en lenguaje llano a un prompt fotográfico. Código abajo.
-5. **HTTP Request** (`Lanzar generación`) — Method `POST`. URL: `https://api.replicate.com/v1/predictions`. Headers: `Authorization` = `Bearer TU_TOKEN`, `Content-Type` = `application/json`, y añade `Prefer` = `wait` para que espere hasta 60 segundos y te ahorres el sondeo. Body JSON abajo.
+5. **HTTP Request** (`Lanzar generación`) — Method `POST`. URL: `https://api.replicate.com/v1/predictions`. Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`). En Headers solo `Content-Type` = `application/json` y `Prefer` = `wait` para que espere hasta 60 segundos y te ahorres el sondeo. No pegues el token en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Body JSON abajo.
 6. **IF** — comprueba `{{ $json.status }}` igual a `succeeded`. Si no, ve al paso 7.
-7. **Wait** — 20 segundos, y luego un **HTTP Request** `GET` a `https://api.replicate.com/v1/predictions/{{ $json.id }}` que vuelve al IF. Es el bucle de espera para las lentas.
+7. **Wait** — 20 segundos, y luego un **HTTP Request** `GET` (con la misma credencial) a `https://api.replicate.com/v1/predictions/{{ $json.id }}` que vuelve al IF. Es el bucle de espera para las lentas.
 8. **HTTP Request** (`Descargar imagen`) — Method `GET`, URL `{{ $json.output[0] }}`, Response Format `File`, campo `data`.
 9. **Google Drive** — Operation `Upload`, carpeta `IMAGENES-IA`, File Name `{{ $('Construir prompt').item.json.nombre_archivo }}.png`.
 10. **Google Sheets** — `Update Row`: `estado` a `LISTA`, `enlace` a `{{ $json.webViewLink }}`, `prompt_final` al prompt que se usó.
@@ -98,4 +98,4 @@ return { json: { ...d, prompt, ratio, nombre_archivo: `${nombre}-${Date.now()}` 
 ## Cuánto cuesta
 - Replicate: se paga por generación. Flux 1.1 Pro ronda 0,04 $ por imagen. 100 imágenes son unos 4 $.
 - Alternativa más barata: Flux Schnell, unos 0,003 $ por imagen, calidad algo menor pero suficiente para bocetos.
-- n8n, Drive y Sheets: gratis.
+- Drive y Sheets: gratis. n8n autoalojado: gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).

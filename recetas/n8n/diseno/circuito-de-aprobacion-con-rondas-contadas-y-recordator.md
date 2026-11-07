@@ -44,7 +44,7 @@ Credenciales «Airtable Personal Access Token API» y «Gmail OAuth2» en n8n.
 **3. «Airtable»** — Update, guarda el `id_publico`, pone `estado` = `Pendiente` y `fecha_envio` = ahora.
 **4. «Gmail»** — Send, Email Type HTML. En el cuerpo pon dos enlaces: `https://TU-N8N/webhook/aprobacion?id={{ $json.id_publico }}&r=ok` y `...&r=cambios`. Explica en el texto cuántas rondas quedan: `Te quedan {{ $json.rondas_incluidas - $json.rondas_usadas }} rondas de cambios incluidas.`
 ## Flujo B: recibir la respuesta
-**5. «Webhook»** — HTTP Method GET, Path `aprobacion`, Respond: Using Respond to Webhook node.
+**5. «Webhook»** — HTTP Method GET, Path `aprobacion`, Respond: Using Respond to Webhook node. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 **6. «Airtable»** — Search, Filter By Formula `{id_publico}='{{ $json.query.id }}'`.
 **7. «IF»** — String: `{{ $('Webhook').first().json.query.r }}` equals `ok`.
 **8a.** Rama true: «Airtable» Update con `estado` = `Aprobada`. Luego «Gmail» a ti: `{{ $json.cliente }} ha aprobado {{ $json.proyecto }}`.
@@ -69,4 +69,4 @@ Los antivirus corporativos «pinchan» los enlaces de los correos para escanearl
 Si el webhook devuelve nada, el navegador del cliente muestra un error y creerá que no funcionó: el nodo «Respond to Webhook» no es opcional.
 Recuerda activar el workflow: en modo test la URL del webhook es distinta (`/webhook-test/`) y solo escucha una vez.
 ## Cuánto cuesta
-Gratis con n8n auto-alojado, Airtable gratuito y Gmail. En n8n Cloud gratuito ojo con las ejecuciones del recordatorio diario; con 200 al mes vas justo si tienes muchos proyectos abiertos.
+Gratis con n8n auto-alojado, Airtable gratuito y Gmail. En n8n Cloud (prueba gratuita temporal y después de pago) ojo con las ejecuciones del recordatorio diario: cuentan contra el cupo de tu plan si tienes muchos proyectos abiertos.

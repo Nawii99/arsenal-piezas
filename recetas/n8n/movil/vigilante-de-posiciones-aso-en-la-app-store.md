@@ -79,4 +79,4 @@ return [{ json: { keyword, posicion, competidorTop, total: resultados.length } }
 - **Zona horaria**: pon `Europe/Madrid` en Settings del workflow para que la fecha del día cuadre.
 
 ## Cuánto cuesta
-Todo gratis: la API de búsqueda de Apple es pública, Sheets y Telegram no cobran. Solo pagas el sitio donde corre n8n: gratis en local o en el plan free de n8n Cloud, unos 5 €/mes en un VPS pequeño si lo quieres siempre encendido.
+Todo gratis: la API de búsqueda de Apple es pública, Sheets y Telegram no cobran. Solo pagas el sitio donde corre n8n: gratis en local con la Community Edition auto-alojada (n8n Cloud solo ofrece una prueba gratuita temporal y luego es de pago), unos 5 €/mes en un VPS pequeño si lo quieres siempre encendido.

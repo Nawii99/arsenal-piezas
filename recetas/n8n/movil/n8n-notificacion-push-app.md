@@ -40,12 +40,12 @@ Avisa a los usuarios de tu app (Android e iOS) cuando pasa algo en tu negocio: u
 - Cuenta de Firebase (gratis, plan Spark) con un proyecto creado y Firebase Cloud Messaging (FCM) activado; el envío de notificaciones por FCM no tiene coste ni límite de mensajes.
 - Tu app tiene que llevar integrado el SDK de Firebase Messaging (esto lo añade quien programa la app; sin eso, la app no puede recibir nada aunque el flujo de n8n funcione).
 - Una clave de cuenta de servicio de Firebase (archivo JSON, se descarga en Configuración del proyecto > Cuentas de servicio) para autenticar las llamadas a la API.
-- Cuenta de n8n (la versión gratuita autoalojada o la de pago en la nube, según cómo la tengas montada).
+- Cuenta de n8n: gratis si la autoaloja (Community Edition); n8n Cloud tiene una prueba gratuita temporal y después planes de pago.
 
 ## Nodos, en orden
 1. Trigger: nodo Webhook (o el disparador de tu app; por ejemplo un nodo de Google Sheets "On row update" si gestionas pedidos en una hoja). Aquí llega el aviso de "pasó algo".
 2. Set: nodo para preparar los datos del mensaje: título, texto y el "token" del móvil del usuario al que se lo mandas (ese token lo guarda tu app la primera vez que el usuario la abre, y tiene que estar guardado en algún sitio al que n8n pueda acceder, como una hoja de cálculo o una base de datos).
-3. HTTP Request: nodo que llama a `https://fcm.googleapis.com/v1/projects/TU-PROYECTO/messages:send`, método POST, con autenticación OAuth2 usando la clave de cuenta de servicio del paso anterior.
+3. HTTP Request: nodo que llama a `https://fcm.googleapis.com/v1/projects/TU-PROYECTO/messages:send`, método POST, con autenticación OAuth2 usando la clave de cuenta de servicio del paso anterior, guardada en una credencial de n8n (nunca pegada dentro de un nodo Set o Code: un flujo exportado se llevaría la clave).
 4. En el cuerpo (body) del HTTP Request, en formato JSON, va el token del móvil, el título y el texto de la notificación dentro del campo `message`.
 5. IF (opcional pero recomendado): comprueba que el token del usuario existe antes de enviar, para no lanzar errores si un usuario no tiene la app instalada o no aceptó las notificaciones.
 
@@ -55,4 +55,4 @@ Antes de conectarla a datos reales, prueba con un único token de un móvil tuyo
 ## Qué tener en cuenta
 - En Android 13 o superior, el usuario tiene que haber aceptado el permiso de notificaciones dentro de la app; si no lo aceptó, el envío no falla pero no le llega nada.
 - No mandes notificaciones en bucle ni a toda tu lista de usuarios como prueba: Google y Apple penalizan (y los usuarios desinstalan) las apps que notifican de más.
-- Revisa el límite de peticiones de tu plan de n8n si vas a mandar notificaciones a muchos usuarios a la vez; en la nube gratuita hay tope de ejecuciones al mes.
+- Revisa el límite de peticiones de tu plan de n8n si vas a mandar notificaciones a muchos usuarios a la vez; los planes de n8n Cloud tienen tope de ejecuciones al mes, mientras que autoalojado no.

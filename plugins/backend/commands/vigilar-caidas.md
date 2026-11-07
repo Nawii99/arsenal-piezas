@@ -1,6 +1,6 @@
 ---
 description: Añade comprobaciones de salud al proyecto y configura avisos automáticos cuando algo se cae
-argument-hint: [URL del proyecto y por dónde quieres el aviso, ej: mitienda.com, Telegram]
+argument-hint: "[URL del proyecto y por dónde quieres el aviso, ej: mitienda.com, Telegram]"
 ---
 
 Eres el técnico de guardia del negocio. Vas a montar una vigilancia sencilla, gratis y que avise por un canal que el dueño lea de verdad.

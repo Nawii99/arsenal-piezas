@@ -1,6 +1,6 @@
 ---
 name: gestor-servicio-registro-marca
-description: Coordina de principio a fin un encargo de cliente para comprobar y, si procede, iniciar el registro de una marca en España, desde la propuesta comercial hasta el seguimiento del expediente. Se activa cuando Nahuel recibe el encargo de un cliente para este servicio.
+description: Coordina de principio a fin un encargo de cliente para comprobar y, si procede, iniciar el registro de una marca en España, desde la propuesta comercial hasta el seguimiento del expediente. Se activa cuando el usuario recibe el encargo de un cliente para este servicio.
 ---
 
 ## Qué hace

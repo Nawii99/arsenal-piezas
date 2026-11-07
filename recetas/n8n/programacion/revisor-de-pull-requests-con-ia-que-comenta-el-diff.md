@@ -41,9 +41,9 @@ Para el freelance sin compañero de revisión y para equipos que quieren cribar 
 - n8n con URL pública.
 
 ## Los nodos, en orden
-**1. Webhook** — `POST`, Path `revisar-pr`, Respond `Immediately`. En GitHub: Settings > Webhooks, evento individual **Pull requests**.
+**1. Webhook** — `POST`, Path `revisar-pr`, Respond `Immediately`. En GitHub: Settings > Webhooks, evento individual **Pull requests**. Valida la firma `X-Hub-Signature-256` con el Secret del webhook de GitHub y descarta entregas repetidas por `X-GitHub-Delivery`.
 **2. IF** («¿Merece revisión?») — Condición 1: `{{ $json.body.action }}` `is one of` (usa el operador String > contains sobre `opened,reopened`) o simplemente igual a `opened`. Condición 2: `{{ $json.body.pull_request.draft }}` igual a `false` (Boolean). Condición 3: `{{ $json.body.pull_request.user.type }}` igual a `User`. Combinador `AND`.
-**3. HTTP Request** («Bajar el diff») — `GET` `https://api.github.com/repos/{{ $json.body.repository.full_name }}/pulls/{{ $json.body.pull_request.number }}`, headers `Authorization: Bearer TU_TOKEN`, `Accept: application/vnd.github.v3.diff`, `User-Agent: n8n`. Options > Response Format `Text`.
+**3. HTTP Request** («Bajar el diff») — `GET` `https://api.github.com/repos/{{ $json.body.repository.full_name }}/pulls/{{ $json.body.pull_request.number }}`, con Authentication: Generic > Header Auth con una credencial de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`), headers `Accept: application/vnd.github.v3.diff`, `User-Agent: n8n`. Options > Response Format `Text`. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 **4. Code** («Recortar y limpiar») — quita ficheros ruidosos y corta el tamaño.
 **5. IF** («¿Hay algo que revisar?») — `{{ $json.vacio }}` igual a `false`.
 **6. HTTP Request** («Revisar») — `POST` `https://api.anthropic.com/v1/messages` con el prompt de abajo, `max_tokens` 2000.

@@ -46,10 +46,11 @@ Lee una hoja con los ficheros .blend pendientes, lanza Blender en modo consola u
 2. **Google Sheets** (llamado `Leer cola`) — Operation: `Get Row(s)`. Filter: columna `estado` equals `pendiente`. Options > Return All: activado.
 3. **Split In Batches** (en n8n reciente se llama **Loop Over Items**) — Batch Size: `1`. Esto es lo que hace que se renderice de uno en uno y no se te caiga el equipo.
 4. **Google Sheets** (llamado `Marcar en curso`) — Operation: `Update Row`, Column to Match On: `id`, columna `estado` = `renderizando`.
+4b. **Code** (llamado `Validar trabajo`, modo «Run Once for Each Item») — los campos de la hoja acaban en el comando, así que se comprueban antes y, si algo no cuadra, el flujo para: `const j = $('Loop Over Items').item.json; const ok = /^[A-Za-z0-9_-]+$/.test(j.nombre) && /^\/home\/tu\/render\/proyectos\/[A-Za-z0-9._\/-]+\.blend$/.test(j.ruta_blend) && !j.ruta_blend.includes('..') && ['CYCLES','BLENDER_EEVEE','BLENDER_EEVEE_NEXT','BLENDER_WORKBENCH'].includes(j.motor) && /^\d+$/.test(String(j.frame_inicio)) && /^\d+$/.test(String(j.frame_fin)) && /^\d{0,5}$/.test(String(j.muestras ?? '')); if (!ok) throw new Error('Trabajo ' + j.id + ' con datos no válidos para el comando'); return { json: j };`
 5. **Execute Command** (llamado `Render`) — Command: `blender -b "{{ $json.ruta_blend }}" -E {{ $json.motor }} -o "/home/tu/render/salida/{{ $json.nombre }}/frame_####" -F PNG -s {{ $json.frame_inicio }} -e {{ $json.frame_fin }} -a`. En Settings del nodo pon Timeout alto (por ejemplo 21600000 ms = 6 h) y activa **Continue On Fail** para que un render roto no pare la cola.
 6. **IF** (llamado `¿Ha ido bien?`) — Number, valor izquierdo `{{ $json.exitCode }}`, operación `equals`, valor `0`.
-7. **Execute Command** (rama true, llamado `Empaquetar`) — Command: `cd /home/tu/render/salida && zip -r "{{ $('Loop Over Items').item.json.nombre }}.zip" "{{ $('Loop Over Items').item.json.nombre }}"`. En Windows usa `powershell Compress-Archive`.
-8. **Read/Write Files from Disk** — Operation: `Read File(s) From Disk`, File(s) Selector: `/home/tu/render/salida/{{ $('Loop Over Items').item.json.nombre }}.zip`.
+7. **Execute Command** (rama true, llamado `Empaquetar`) — Command: `cd /home/tu/render/salida && zip -r "{{ $('Validar trabajo').item.json.nombre }}.zip" "{{ $('Validar trabajo').item.json.nombre }}"`. En Windows usa `powershell Compress-Archive`.
+8. **Read/Write Files from Disk** — Operation: `Read File(s) From Disk`, File(s) Selector: `/home/tu/render/salida/{{ $('Validar trabajo').item.json.nombre }}.zip`.
 9. **Google Drive** — Operation: `Upload File`, carpeta `renders-terminados`, File Name: `{{ $('Loop Over Items').item.json.nombre }}.zip`.
 10. **Google Sheets** (llamado `Marcar hecho`) — Update Row por `id`: `estado` = `hecho`, `salida_drive` = `{{ $json.webViewLink }}`.
 11. **Telegram** — Send Message: `✅ Render terminado: {{ $('Loop Over Items').item.json.nombre }} ({{ $('Loop Over Items').item.json.frame_fin - $('Loop Over Items').item.json.frame_inicio + 1 }} frames)\n{{ $json.webViewLink }}`.
@@ -57,7 +58,7 @@ Lee una hoja con los ficheros .blend pendientes, lanza Blender en modo consola u
 13. Conecta la última salida de vuelta a la entrada de **Loop Over Items** para que coja el siguiente trabajo.
 
 ## Truco extra: cambiar las muestras sin abrir Blender
-Si quieres forzar el número de muestras desde la hoja, guarda este fichero como `/home/tu/render/ajustes.py` y añade `--python /home/tu/render/ajustes.py` al comando, pasando el valor por variable de entorno `MUESTRAS`.
+Si quieres forzar el número de muestras desde la hoja, guarda este fichero como `/home/tu/render/ajustes.py` y añade `--python /home/tu/render/ajustes.py` al comando, pasando el valor por variable de entorno `MUESTRAS`: pon delante del comando `MUESTRAS={{ $('Validar trabajo').item.json.muestras || 128 }}`, que `Validar trabajo` ya ha comprobado que es un número.
 ```python
 import bpy, os
 muestras = int(os.environ.get('MUESTRAS', '128'))
@@ -76,6 +77,8 @@ bpy.context.scene.render.resolution_percentage = 100
 - **Se te llena el disco**: 500 frames en PNG 4K son decenas de GB. Añade un Execute Command final que borre la carpeta original tras subir el zip.
 - **El PC se duerme**: en Windows desactiva la suspensión (`powercfg /change standby-timeout-ac 0`); en Linux, `systemd-inhibit`.
 - **Trabajos zombis**: si cortas la ejecución, alguna fila queda en `renderizando` para siempre. Añade al inicio un Google Sheets que devuelva a `pendiente` todo lo que lleve más de 12 h en ese estado.
+- **Celdas con trampa**: `nombre`, `ruta_blend`, `motor` y los frames entran en la terminal; una celda con `$(...)` o comillas ejecutaría órdenes. Por eso `Validar trabajo` los filtra antes; si cambias la carpeta de proyectos, cambia también su regex.
+- **Datos que no se validaron**: `Validar trabajo` lee la fila de `Loop Over Items` (lo que devuelve `Marcar en curso` puede no traer todas las columnas), también comprueba `muestras`, y los comandos posteriores usan sus valores, no los de la hoja.
 
 ## Cuánto cuesta
 - Blender: **gratis**. n8n auto-alojado: **gratis**. Sheets y Drive: gratis hasta 15 GB, y ahí sí puedes necesitar los 1,99 €/mes de 100 GB si subes secuencias pesadas.

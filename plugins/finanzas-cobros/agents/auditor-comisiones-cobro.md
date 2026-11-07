@@ -1,6 +1,6 @@
 ---
 name: auditor-comisiones-cobro
-description: Audits the real cost of getting paid for a small Spanish business: payment gateway fees, card terminal rates, marketplace commissions, currency conversion and chargebacks, and recommends the cheapest method by ticket size. Use this agent before choosing a payment provider, when launching a new price point, or when the money arriving does not match what was invoiced.
+description: "Audita el coste real de cobrar en un pequeño negocio español: comisiones de pasarelas de pago, tarifas de datáfonos, comisiones de marketplaces, conversión de divisas y contracargos, y recomienda el método más barato según el importe del ticket. Úsalo antes de elegir proveedor de pagos, al lanzar un nuevo precio o cuando el dinero que llega no coincida con lo facturado."
 tools: Read, Write, Bash
 ---
 

@@ -41,7 +41,7 @@ Un detector de inundación en el suelo llama a n8n en cuanto se moja; n8n cierra
 - **Gmail** conectado en n8n.
 
 ## Los nodos, en orden
-1. **Webhook** — GET, path `fuga`. En la app Shelly, en el detector: **Ajustes > Acciones > Alarma de inundación activa**, y pega la URL con `?zona=cocina`.
+1. **Webhook** — GET, path `fuga`. En la app Shelly, en el detector: **Ajustes > Acciones > Alarma de inundación activa**, y pega la URL con `?zona=cocina`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **HTTP Request** (llámalo *Cerrar llave*) — GET a `http://192.168.1.60/rpc/Switch.Set?id=0&on=true` (o `?turn=on` si es un Shelly de primera generación). En *Settings* activa **Retry On Fail**: 3 intentos, 2000 ms. Que la llave cierre es lo único que no puede fallar.
 3. **Code** — prepara el mensaje y la lista de destinatarios:
 ```js

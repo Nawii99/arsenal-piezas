@@ -42,10 +42,10 @@ Para el desarrollador o la agencia que mantiene webs y aplicaciones de varios cl
 - Credencial de Gmail y bot de Telegram.
 
 ## Los nodos, en orden
-**1. Webhook** — `POST`, Path `incidencia`, Respond `Immediately`.
+**1. Webhook** — `POST`, Path `incidencia`, Respond `Immediately`. Valida la firma `X-Hub-Signature-256` con el Secret del webhook de GitHub y descarta entregas repetidas por `X-GitHub-Delivery`.
 **2. Code** («Normalizar el formulario») — Tally envía los campos como array; los convierte en objeto.
 **3. Switch** («Repo según proyecto») — Mode `Rules`, Value `={{ $json.proyecto }}`, una regla por cliente que asigne el repo. Alternativa más corta: un mapa dentro del Code del nodo 2.
-**4. HTTP Request** («Crear issue») — `POST` `https://api.github.com/repos/{{ $json.repo }}/issues`, Header Auth `Authorization: Bearer TU_TOKEN` y `User-Agent: n8n`, Body Content Type `JSON`, Specify Body `Using JSON`: `={{ JSON.stringify({ title: $json.titulo, body: $json.cuerpo, labels: $json.etiquetas }) }}`.
+**4. HTTP Request** («Crear issue») — `POST` `https://api.github.com/repos/{{ $json.repo }}/issues`, con una credencial «Header Auth» de n8n (Name `Authorization`, Value `Bearer TU_TOKEN`; no pegues el token en el nodo: un flujo exportado se llevaría la clave) y la cabecera normal `User-Agent: n8n`, Body Content Type `JSON`, Specify Body `Using JSON`: `={{ JSON.stringify({ title: $json.titulo, body: $json.cuerpo, labels: $json.etiquetas }) }}`.
 **5. IF** («¿Es crítica?») — String `{{ $('Normalizar el formulario').item.json.gravedad }}` igual a `Crítica`.
 **6. Telegram** — `INCIDENCIA CRÍTICA de {{ ... }}: {{ $json.html_url }}`.
 **7. Gmail** — Send al cliente: To `={{ $('Normalizar el formulario').item.json.email }}`, Subject `Hemos recibido tu incidencia (ref. #{{ $json.number }})`, mensaje explicando plazos.

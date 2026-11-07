@@ -1,6 +1,6 @@
 ---
 name: hoja-de-montaje
-description: Use this agent when the user has raw footage and needs to organise it before editing: reviewing takes, choosing the good ones, renaming files, building an edit sheet with timecodes and a cut order. Use it when they say "tengo un montón de tomas", "no sé qué toma usar", "organiza el material" or point at a folder of clips. The agent inspects the files, transcribes the spoken takes, marks keepers and rejects, and writes an edit sheet.
+description: "Úsalo cuando el usuario tenga material en bruto y necesite organizarlo antes de editar: revisar tomas, elegir las buenas, renombrar archivos, preparar una hoja de montaje con marcas de tiempo y un orden de corte. Úsalo cuando diga \"tengo un montón de tomas\", \"no sé qué toma usar\", \"organiza el material\" o señale una carpeta de clips. El agente inspecciona los archivos, transcribe las tomas habladas, marca las válidas y las descartadas, y redacta una hoja de montaje."
 tools: Read, Write, Bash
 ---
 

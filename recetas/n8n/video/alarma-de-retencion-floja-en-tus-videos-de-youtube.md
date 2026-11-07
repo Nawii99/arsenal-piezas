@@ -35,7 +35,7 @@ Te ahorra la revisión manual semanal (1-2 h) y detecta el vídeo flojo a los po
 Revisa cada lunes tus vídeos publicados en los últimos 30 días y calcula el porcentaje medio visto de cada uno. Si alguno está por debajo de la media del canal, te manda un aviso con el enlace y el dato exacto; es para creadores o negocios con canal propio que publican al menos dos veces al mes.
 
 ## Lo que necesitas antes
-- Cuenta de n8n (n8n.cloud plan gratuito de prueba, o auto-alojado con Docker en tu ordenador o un VPS de 5 €/mes).
+- Cuenta de n8n (n8n.cloud con prueba gratuita temporal, o auto-alojado con Docker en tu ordenador o un VPS de 5 €/mes).
 - Un proyecto en Google Cloud Console (console.cloud.google.com) con **YouTube Data API v3** y **YouTube Analytics API** activadas en «APIs y servicios > Biblioteca».
 - Credenciales OAuth 2.0 de tipo «Aplicación web» con la URL de redirección que te muestra n8n al crear la credencial «YouTube OAuth2 API».
 - Al autorizar, marca los permisos `youtube.readonly` y `yt-analytics.readonly`.
@@ -94,4 +94,4 @@ return filas.map(f => ({ json: {
 - **Horas raras**: si no fijas Europe/Madrid en Settings > Timezone, n8n usa UTC y en verano te llega a las 10:00.
 
 ## Cuánto cuesta
-Gratis del todo: las dos APIs de YouTube no se pagan (solo tienen cuota diaria), Google Sheets y Telegram son gratis, y n8n auto-alojado también. Si usas n8n Cloud, el plan de pago arranca sobre 20-24 €/mes, pero para este flujo (4 ejecuciones al mes) te sobra con el nivel gratuito o con Docker en casa.
+Gratis del todo: las dos APIs de YouTube no se pagan (solo tienen cuota diaria), Google Sheets y Telegram son gratis, y n8n auto-alojado también. Si usas n8n Cloud, el plan de pago arranca sobre 20-24 €/mes, pero para este flujo (4 ejecuciones al mes) te basta con n8n auto-alojado con Docker en casa, que es gratis.

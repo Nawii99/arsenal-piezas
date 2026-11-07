@@ -45,12 +45,13 @@ Para fotógrafos con volumen alto: no sustituye tu criterio, pero hace el trabaj
 1. **Manual Trigger** (lo lanzas tú al volver de la sesión) o **Schedule Trigger** cada noche.
 2. **Read/Write Files from Disk** — Operation: Read File(s) From Disk, File Selector: `/fotos/SESION/*.jpg`. (Si trabajas en Drive, sustituye por Google Drive Search + Download + Write to Disk.)
 3. **Loop Over Items** — Batch Size: 1.
+3b. **Code «Validar ruta»** (modo «Run Once for Each Item») — la ruta entra en magick y mv, así que solo pasa si el nombre es limpio; si no, el flujo para: `const ruta = $json.ruta || '/fotos/SESION/' + $input.item.binary.data.fileName; if (!/^\/fotos\/SESION\/[\p{L}\p{N}][\p{L}\p{N} ._()-]*\.jpe?g$/iu.test(ruta)) throw new Error('Nombre de foto no permitido: ' + ruta); return { json: { ...$json, ruta } };`
 4. **Execute Command «Nitidez»** — Command: `magick "{{ $json.ruta }}" -colorspace Gray -resize 1000x1000 -define convolve:scale='!' -define morphology:compose=Lighten -morphology Convolve 'Laplacian:0' -format '%[fx:standard_deviation*255]' info:`. Esa desviación típica es la medida clásica de enfoque: cuanto más alta, más nítida.
-5. **Execute Command «Exposición»** — Command: `magick "{{ $json.ruta }}" -colorspace Gray -resize 500x500 -format '%[fx:mean*255],%[fx:100*(1-mean(u>0.98?0:1))],%[fx:100*(1-mean(u<0.02?0:1))]' info:`. Devuelve brillo medio, porcentaje de quemados y porcentaje de empastados.
+5. **Execute Command «Exposición»** — Command: `magick "{{ $('Validar ruta').item.json.ruta }}" -colorspace Gray -resize 500x500 -format '%[fx:mean*255],%[fx:100*(1-mean(u>0.98?0:1))],%[fx:100*(1-mean(u<0.02?0:1))]' info:`. Devuelve brillo medio, porcentaje de quemados y porcentaje de empastados.
 6. **Code «Puntuar»** — código abajo.
 7. **Switch** — Mode: Rules sobre `{{ $json.destino }}`: `REVISAR`, `DUDOSAS`, `DESCARTE`.
 8. Cada salida: **Execute Command** con `mv "{{ $json.ruta }}" "/fotos/{{ $json.destino }}/"` (o Google Drive > Move si trabajas en la nube).
-9. **Google Sheets** — Append con todas las métricas, para que puedas afinar los umbrales viendo datos reales.
+9. **Google Sheets** — Append con todas las métricas de `{{ $('Puntuar').item.json }}` (tras el `mv`, `$json` solo trae `stdout`), para que puedas afinar los umbrales viendo datos reales.
 10. Fuera del bucle: **Code** de resumen + **Gmail** con «de 812 fotos, 340 a REVISAR, 190 dudosas, 282 descarte».
 
 ## El trozo de código (nodo Code «Puntuar»)
@@ -59,10 +60,10 @@ const UMBRAL_NITIDEZ_ALTA = 12;   // ajústalo con tus datos reales
 const UMBRAL_NITIDEZ_BAJA = 5;
 const salida = [];
 for (const item of $input.all()) {
-  const nitidez = parseFloat($('Execute Command «Nitidez»').item.json.stdout) || 0;
-  const exp = String($('Execute Command «Exposición»').item.json.stdout).trim().split(',').map(Number);
+  const nitidez = parseFloat($('Nitidez').item.json.stdout) || 0;
+  const exp = String($('Exposición').item.json.stdout).trim().split(',').map(Number);
   const [brillo, quemados, empastados] = [exp[0] || 0, exp[1] || 0, exp[2] || 0];
-  const ruta = $('Loop Over Items').item.json.ruta;
+  const ruta = $('Validar ruta').item.json.ruta;
   let p = 0;
   if (nitidez >= UMBRAL_NITIDEZ_ALTA) p += 60;
   else if (nitidez >= UMBRAL_NITIDEZ_BAJA) p += 30;
@@ -89,6 +90,8 @@ return salida;
 - **Lentitud**: 800 fotos con `-resize 1000x1000` van a unos 0,3-0,8 s cada una. Media hora larga. Lánzalo de noche y sube Batch Size si tu máquina aguanta.
 - **Mover sin copia de seguridad**: haz siempre la copia 3-2-1 antes de que este flujo empiece a mover carpetas.
 - **Rutas con espacios o tildes**: pon siempre las rutas entre comillas dobles en los comandos, como en los ejemplos.
+- **Nombres con trampa**: una foto llamada `$(id).jpg` o con comillas ejecutaría órdenes en magick o mv. «Validar ruta» para el flujo si el nombre trae algo más que letras, números, espacios, puntos, guiones o paréntesis; si trabajas desde Drive, guarda cada foto en disco como `ID-de-Drive.jpg`.
+- **Ruta vacía en «Exposición» o en la hoja**: después de un Execute Command, `$json` solo trae `stdout`, `stderr` y `exitCode`; por eso «Exposición» lee la ruta de `$('Validar ruta')`, la hoja lee de `$('Puntuar')` y «Puntuar» cita los nodos como `$('Nitidez')` y `$('Exposición')`.
 
 ## Cuánto cuesta
 0 €. Todo se ejecuta en tu ordenador con software libre: n8n auto-alojado e ImageMagick. Ni APIs ni suscripciones. Lo único que consume es tiempo de CPU.

@@ -43,12 +43,13 @@ Una hoja «Catálogo 3D» con columnas: fecha, nombre, triangulos, materiales, u
 
 ## Los nodos, en orden
 **Google Drive Trigger** — Event: File Created, carpeta «MODELOS-LISTOS», Poll: cada 15 minutos.
+**Code** («Nombre seguro», modo «Run Once for Each Item») — `const ext = String($json.name).split('.').pop().toLowerCase(); if (!['fbx','obj','glb','gltf'].includes(ext) || !/^[A-Za-z0-9_-]+$/.test($json.id)) throw new Error('Formato no admitido: ' + $json.name); return { json: { ...$json, archivo: $json.id + '.' + ext } };`. En disco y en el comando solo se usa `archivo`.
 **Google Drive** — Operation: Download, Binary Property: `data`.
-**Read/Write Files from Disk** — Write File to Disk, path `/data/entrada/{{$json.name}}`.
-**Execute Command** — `blender -b /data/plantillas/estudio.blend -P /data/scripts/turntable.py -- "/data/entrada/{{ $('Google Drive Trigger').item.json.name }}" "/data/salida"`. Timeout: 900 segundos.
+**Read/Write Files from Disk** — Write File to Disk, path `/data/entrada/{{ $('Nombre seguro').item.json.archivo }}`.
+**Execute Command** (déjale el nombre «Execute Command»: el Code de la ficha lo cita así) — `blender -b /data/plantillas/estudio.blend -P /data/scripts/turntable.py -- "/data/entrada/{{ $('Nombre seguro').item.json.archivo }}" "/data/salida"`. Timeout: 900 segundos.
 **Execute Command** — `ffmpeg -y -framerate 24 -i /data/salida/frame_%04d.png -c:v libx264 -pix_fmt yuv420p -crf 20 /data/salida/turntable.mp4`
 **Read/Write Files from Disk** — Read File from Disk, `/data/salida/turntable.mp4`, propiedad binaria `video`.
-**Google Drive** — Operation: Upload, carpeta «RENDERS», Input Binary Field: `video`, nombre `{{$json.nombre}}_turntable.mp4`.
+**Google Drive** — Operation: Upload, carpeta «RENDERS», Input Binary Field: `video`, nombre `{{ $('Google Drive Trigger').item.json.name.replace(/\.[^.]+$/, '') }}_turntable.mp4`.
 **Google Drive** — Operation: Share, Permissions: Anyone with the link, Role: Reader (para tener URL pública).
 Repite los dos últimos pasos para `/data/salida/frame_0001.png` como miniatura.
 **Code** — genera el texto de la ficha (abajo).
@@ -102,6 +103,8 @@ Modelos con escalas locas se salen del encuadre: añade en el script un ajuste d
 La carpeta de salida no se vacía entre modelos y se mezclan fotogramas: añade un **Execute Command** con `rm -f /data/salida/frame_*.png` antes del render.
 Renders lentos si usas Cycles: usa EEVEE y 32 samples, la diferencia en un turntable de catálogo no se nota.
 El enlace de Drive no es público hasta que ejecutas el paso de Share; sin él, el marketplace no verá la imagen.
+Un modelo llamado `$(id).glb` o con comillas ejecutaría órdenes si su nombre entrara en el comando: en disco va como `ID-de-Drive.extensión` y el nombre original solo se usa para el texto de la ficha.
+El vídeo subido se llamaba `undefined_turntable.mp4`: tras leer el archivo del disco, `$json` ya no trae el nombre, así que la subida lo toma de `$('Google Drive Trigger')`.
 
 ## Cuánto cuesta
 Todo gratis salvo el servidor. Si tienes una máquina con GPU en casa, coste cero; si alquilas un VPS con GPU para renderizar rápido, unos 0,20-0,50 €/hora solo mientras renderiza.

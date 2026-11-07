@@ -41,7 +41,7 @@ Recibe el formulario de briefing, pide a un modelo de IA que lo resuma en un bri
 - Google Drive y Notion conectados en n8n. En Notion crea una integración en notion.so/my-integrations, copia el token y comparte tu base de datos con esa integración.
 
 ## Los nodos, en orden
-1. **Webhook** — HTTP Method: POST, Path: `briefing`, Respond: Immediately. Copia la Production URL y pégala en Tally, en Integrations > Webhooks.
+1. **Webhook** — HTTP Method: POST, Path: `briefing`, Respond: Immediately. Copia la Production URL y pégala en Tally, en Integrations > Webhooks. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** — Mode: Run Once for Each Item. Aplana la respuesta de Tally, que llega como array de campos. Código abajo.
 3. **Anthropic Chat Model** + **Basic LLM Chain** (o el nodo **HTTP Request** contra la API si prefieres) — Prompt: `Eres director de arte. A partir de este briefing en bruto escribe: 1) resumen del encargo en 3 líneas, 2) objetivo de negocio, 3) público, 4) tono y territorio visual en 5 adjetivos, 5) entregables concretos, 6) las 3 preguntas clave que faltan por resolver. Briefing: {{ $json.texto_plano }}`.
 4. **Google Drive** — Resource: Folder, Operation: Create. Folder Name `={{ $('Code').item.json.empresa }} - {{ $('Code').item.json.necesita }}`, dentro de tu carpeta «Proyectos».
@@ -79,4 +79,4 @@ Con el workflow en modo test («Listen for test event»), rellena tú mismo el f
 - **Nombres de carpeta con barras o dos puntos**: límpialos en el Code con `.replace(/[\/:]/g, '-')`.
 
 ## Cuánto cuesta
-n8n, Tally (plan gratuito con formularios ilimitados), Drive y Notion: gratis. La llamada a la IA cuesta céntimos por briefing; con 20 briefings al mes no llegas a 1 €.
+n8n autoalojado (Community Edition), Tally (plan gratuito con formularios ilimitados), Drive y Notion: gratis (n8n Cloud: prueba gratuita temporal y después de pago). La llamada a la IA cuesta céntimos por briefing; con 20 briefings al mes no llegas a 1 €.

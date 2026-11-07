@@ -63,4 +63,4 @@ Sube una foto apaisada y otra vertical. Comprueba que el logo cae siempre abajo 
 - **Bucle infinito**: si subes los resultados a la misma carpeta que vigila el trigger, el flujo se retroalimenta. Usa siempre carpetas distintas.
 
 ## Cuánto cuesta
-Gratis del todo si autoalojas n8n. En n8n Cloud, cada foto consume unas 8 ejecuciones de nodo; el plan gratuito aguanta bien un volumen pequeño y el de pago arranca en unos 24 €/mes. Google Drive gratis hasta 15 GB.
+Gratis del todo si autoalojas n8n. En n8n Cloud, cada foto consume unas 8 ejecuciones de nodo; n8n Cloud tiene una prueba gratuita temporal y después planes de pago, que arrancan en unos 24 €/mes. Google Drive gratis hasta 15 GB.

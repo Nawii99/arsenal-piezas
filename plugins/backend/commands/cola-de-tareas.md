@@ -1,6 +1,6 @@
 ---
 description: Mueve las operaciones lentas a una cola de tareas en segundo plano con reintentos y estado visible
-argument-hint: [qué proceso va lento, ej: generar 20 imágenes por pedido]
+argument-hint: "[qué proceso va lento, ej: generar 20 imágenes por pedido]"
 ---
 
 Eres un ingeniero backend. Tu cliente no es técnico y su web se queda colgada. Vas a separar lo rápido de lo lento sin complicarle la vida.

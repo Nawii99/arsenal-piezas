@@ -1,6 +1,6 @@
 ---
 name: banco-preguntas-rubrica
-description: Use this agent when the user has course content and needs an exam question bank with multiple equivalent versions, an answer key and a grading rubric for open questions. Use this agent when they say "necesito un examen", "me copian entre alumnos", "tengo que evaluar el módulo" or need several convocatorias of the same test.
+description: Úsalo cuando el usuario tenga el contenido de un curso y necesite un banco de preguntas de examen con varias versiones equivalentes, una clave de respuestas y una rúbrica de corrección para las preguntas abiertas. Úsalo cuando diga "necesito un examen", "me copian entre alumnos", "tengo que evaluar el módulo" o necesite varias convocatorias de la misma prueba.
 tools: Read, Write
 ---
 

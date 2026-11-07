@@ -1,6 +1,6 @@
 ---
 name: constructor-de-lead-magnet
-description: Turns the user's existing expertise into a complete downloadable lead magnet: chooses the right format, writes the full content, designs the opt-in page copy and the delivery email, and defines how to know if it works. Use this agent when the user wants to start or grow an email list and needs something worth downloading.
+description: "Convierte la experiencia del usuario en un lead magnet descargable completo: elige el formato adecuado, escribe todo el contenido, diseña el texto de la página de suscripción y el correo de entrega, y define cómo saber si funciona. Úsalo cuando el usuario quiera iniciar o hacer crecer una lista de correo y necesite algo que merezca la pena descargar."
 tools: Read, Write, Glob
 ---
 

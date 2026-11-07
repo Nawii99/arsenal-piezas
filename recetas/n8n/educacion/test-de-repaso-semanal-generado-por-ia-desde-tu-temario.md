@@ -39,7 +39,7 @@ Para academias de oposiciones, escuelas de idiomas, formación de certificacione
 - El temario en Google Docs, un documento por tema, dentro de una carpeta «Temario».
 - Una hoja «Calendario» con: semana | tema | doc_id | enviado
 - Una hoja «Banco preguntas» con: fecha | tema | pregunta | a | b | c | d | correcta | explicacion
-- Clave de API de Anthropic (console.anthropic.com) u OpenAI.
+- Clave de API de Anthropic (console.anthropic.com) u OpenAI, guardada en una credencial de n8n.
 - Una lista de emails de alumnos en una hoja «Alumnos».
 
 ## Los nodos, en orden
@@ -53,7 +53,7 @@ let txt = JSON.stringify(c).replace(/\\n/g, ' ');
 txt = txt.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 20000);
 return { json: { tema: $('Google Sheets').item.json.tema, texto: txt } };
 ```
-5) **HTTP Request** a la IA. Method POST. URL `https://api.anthropic.com/v1/messages`. Headers: `x-api-key: TU_CLAVE`, `anthropic-version: 2023-06-01`, `content-type: application/json`. Body:
+5) **HTTP Request** a la IA. Method POST. URL `https://api.anthropic.com/v1/messages`. Authentication: Generic Credential Type > Header Auth, con una credencial cuyo Name es `x-api-key` y cuyo Value es tu clave de Anthropic (la clave va en la credencial; no la escribas en el nodo: un flujo exportado se llevaría la clave). Headers: `anthropic-version: 2023-06-01`, `content-type: application/json`. Body:
 ```json
 {"model":"claude-sonnet-5-5","max_tokens":3000,"messages":[{"role":"user","content":"Eres profesor de oposiciones en España. A partir del texto, escribe 10 preguntas tipo test de dificultad media-alta. Devuelve SOLO un array JSON, sin texto alrededor, con objetos {pregunta, a, b, c, d, correcta, explicacion}. La correcta es la letra. La explicación, dos frases. Texto: {{ $json.texto }}"}]}
 ```

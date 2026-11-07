@@ -50,9 +50,9 @@ Qué resuelve: a fin de trimestre el gestor te pide todas las facturas y tú ent
 
 ## Nodos, en orden
 
-**1. Stripe Trigger** (disparador). Eventos: `invoice.paid` e `invoice.payment_failed`. n8n crea el webhook en Stripe por ti al activar el flujo. Guarda el flujo y actívalo una vez para que aparezca la URL en el panel de Stripe.
+**1. Stripe Trigger** (disparador). Eventos: `invoice.paid` e `invoice.payment_failed`. n8n crea el webhook en Stripe por ti al activar el flujo. Guarda el flujo y actívalo una vez para que aparezca la URL en el panel de Stripe. El Stripe Trigger comprueba la firma del evento, así que n8n descarta avisos falsos.
 
-**2. Switch** llamado `Tipo de evento`. Regla: `{{ $json.type }}` igual a `invoice.paid` va a la salida 0; `invoice.payment_failed` a la salida 1.
+**2. Switch** llamado `Tipo de evento`. Regla: `{{ $json.type }}` igual a `invoice.paid` va a la salida 0; `invoice.payment_failed` a la salida 1. En la rama de cobro, añade además una condición: `{{ $json.data.object.status }}` igual a `paid`; si no, no se apunta nada.
 
 **3. Set** llamado `Datos factura` (rama pagado). Stripe manda los importes en céntimos. Campos:
 - `Numero`: `{{ $json.data.object.number }}`
@@ -69,7 +69,7 @@ Qué resuelve: a fin de trimestre el gestor te pide todas las facturas y tú ent
 - `Enlace Stripe`: `{{ $json.data.object.hosted_invoice_url }}`
 - `ID factura`: `{{ $json.data.object.id }}`
 
-**4. Google Sheets** (Append or Update). Hoja `Facturas`. Columna clave: `ID factura`. Con "actualizar si existe" evitas líneas duplicadas si Stripe reenvía el evento.
+**4. Google Sheets** (Append or Update). Hoja `Facturas`. Columna clave: `ID factura`. Con "actualizar si existe" evitas líneas duplicadas si Stripe reenvía el evento (el id de la factura hace de clave; también puedes guardar el id del evento). El número lo asigna Stripe al finalizar la factura (numeración secuencial de la cuenta), antes del cobro: no lo calcules ni lo incrementes tú en n8n después de enviar nada. Antes de apuntar, comprueba que ese `Numero` no existe ya en la hoja con otro `ID factura`; si existe, para y avísate por Telegram. Ejecuta el flujo de uno en uno (concurrencia 1) para que dos cobros simultáneos no escriban a la vez.
 
 **5. Telegram** (Send Message). Texto: `Cobro: {{ $json.Total }} {{ $json.Moneda }} de {{ $json.Cliente }}. Factura {{ $json.Numero }}. PDF: {{ $json.PDF }}`.
 

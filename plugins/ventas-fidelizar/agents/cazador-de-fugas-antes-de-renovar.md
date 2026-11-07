@@ -1,6 +1,6 @@
 ---
 name: cazador-de-fugas-antes-de-renovar
-description: Detects which recurring clients are at risk of cancelling before they say so, scores the risk with observable signals, and prepares a retention conversation and offer for each. Use this agent when the user bills monthly retainers, maintenance or subscriptions and wants to prevent churn instead of reacting to it.
+description: Detecta qué clientes recurrentes corren riesgo de cancelar antes de que lo digan, puntúa el riesgo con señales observables y prepara una conversación y una oferta de retención para cada uno. Úsalo cuando el usuario cobre igualas mensuales, mantenimiento o suscripciones y quiera prevenir las bajas en lugar de reaccionar a ellas.
 tools: Read, Write, Bash
 ---
 

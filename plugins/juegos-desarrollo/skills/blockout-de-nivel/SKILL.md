@@ -1,6 +1,6 @@
 ---
 name: blockout-de-nivel
-description: Designs a grey-box level blockout before art: human-scale metrics, layout, sightlines, landmarks, pacing beats, cover and readability, plus how to test it. Use before modelling scenery art, or when a level feels confusing, empty or badly scaled.
+description: "Diseña el blockout en caja gris de un nivel antes del arte: métricas a escala humana, distribución, líneas de visión, puntos de referencia, ritmo, coberturas y legibilidad, además de cómo probarlo. Úsala antes de modelar el arte del escenario, o cuando un nivel resulte confuso, vacío o mal escalado."
 ---
 
 # Blockout: diseñar el nivel en cajas grises

@@ -46,7 +46,7 @@ Cuenta de Trello con un tablero «Feedback app» y listas: Fallos, Ideas, Quejas
 Webhook de Slack (api.slack.com, Incoming Webhooks) o el nodo Slack con OAuth.
 
 ## Los nodos, en orden
-1. «Webhook». Method POST, ruta /feedback-app. Copia la Production URL.
+1. «Webhook». Method POST, ruta /feedback-app. Copia la Production URL. Pon un signing secret en el webhook de Tally y verifica la firma `Tally-Signature` en un nodo Code.
 2. En Tally, en Integrations, Webhooks, pega esa URL. Así cada respuesta llega sola.
 3. «Set» (limpiar campos). Crea texto, email, version, sistema leyendo del cuerpo de Tally: {{ $json.body.data.fields }}. Ojo, Tally manda los campos como array, mira la estructura real en la primera ejecución.
 4. «OpenAI» (Message a model). Modelo gpt-4o-mini, «Output Content as JSON» activado. Prompt: «Clasifica este mensaje de un usuario de app. Devuelve JSON con: tipo (fallo|idea|queja|elogio), gravedad (1 a 5), titulo (máximo 8 palabras), resumen (1 frase). Mensaje: {{ $json.texto }}».
@@ -69,5 +69,5 @@ La búsqueda de duplicados en Trello es literal, no entiende sinónimos. Si quie
 La IA puede devolver un JSON roto. Pon detrás un nodo «Code» con try/catch o activa el modo JSON estricto del nodo OpenAI.
 
 ## Cuánto cuesta
-n8n, Tally, Trello y Slack: gratis en sus planes básicos.
+n8n auto-alojado (n8n Cloud: prueba gratuita temporal y después de pago), Tally, Trello y Slack: gratis en sus planes básicos.
 OpenAI: alrededor de 1 € al mes con 500 mensajes de feedback.

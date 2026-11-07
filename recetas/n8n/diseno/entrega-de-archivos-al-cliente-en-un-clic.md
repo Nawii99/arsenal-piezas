@@ -54,7 +54,7 @@ return sub.map(nombre => ({ json: { nombre, padre } }));
 ```
 5. **Google Drive**: Create Folder otra vez, nombre `{{ $json.nombre }}`, Parent Folder `{{ $json.padre }}`.
 6. **Google Drive**: Search Files/Folders dentro de `carpeta_origen_id` para listar los archivos finales, y luego **Google Drive** con operación Move File (o Copy File si quieres conservar el original) hacia la subcarpeta que toque. Para repartirlos usa un **Switch** que mire la extensión: `.svg` y `.ai` a vectorial, `.png` a PNG, `.pdf` al manual.
-7. **Google Drive**: operación Share, tipo `anyone`, rol `reader`, sobre la carpeta de entrega. Así el cliente descarga sin cuenta de Google.
+7. **Google Drive**: operación Share, tipo `user`, rol `reader`, con el correo del cliente (`{{ $('Google Sheets').item.json.email_cliente }}`), sobre la carpeta de entrega. No uses `anyone`: es trabajo del cliente y cualquiera con el enlace podría descargarlo. Si no tiene cuenta de Google, puede crearla con su correo de siempre.
 8. **Gmail**: Send Message a `{{ $('Google Sheets').item.json.email_cliente }}`, asunto «Entrega final: {{ proyecto }}», cuerpo en HTML con el enlace `{{ $json.webViewLink }}`, la lista de lo que incluye y tus condiciones de uso.
 9. **Google Sheets**: Update Row, `estado` a `entregado`, `fecha_entrega` con `{{ $now.format('dd/MM/yyyy') }}` y `enlace_entrega` con el enlace.
 

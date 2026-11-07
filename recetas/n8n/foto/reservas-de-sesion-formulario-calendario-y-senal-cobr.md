@@ -6,11 +6,11 @@ El cliente rellena un formulario, elige hueco, paga la señal con Stripe y se le
 
 ## Qué es y qué hace
 
-El cliente rellena un formulario de n8n con nombre, email y fecha deseada, y recibe un enlace de pago de Stripe por la señal. Cuando paga, se crea el evento en Google Calendar, la reserva queda en una hoja y el cliente recibe la confirmación por Gmail. Así se cierran citas y se cobra por adelantado.
+El cliente rellena un formulario de n8n con nombre, email y fecha deseada, y recibe un enlace de pago de Stripe por la señal. Cuando paga, se crea el evento en Google Calendar, la reserva queda en una hoja y el cliente recibe la confirmación por Gmail. Así se cierran citas y se cobra por adelantado. La cita solo se crea con el webhook de Stripe verificado y el pago confirmado.
 
 ## Cómo usarla
 
-1. Verifica tu cuenta de Stripe y copia la clave secreta
+1. Verifica tu cuenta de Stripe y guarda la clave secreta como credencial de n8n
 2. Crea la hoja Reservas y conecta Calendar, Gmail y Sheets
 3. Prueba un pago en modo test
 4. Que lo revise un profesional
@@ -45,9 +45,9 @@ Para fotógrafos de retrato, familias, mascotas, books y cualquier servicio con 
 1) **n8n Form Trigger**. Form Title: Reserva tu sesión. Campos: Nombre (text, obligatorio), Email (email, obligatorio), Teléfono (text), Tipo de sesión (dropdown: Retrato 150, Familia 220, Book 350), Fecha deseada (date), Comentarios (textarea).
 2) **Code** (Calcular señal). Devuelve el precio según el tipo y la señal del 30%. Ver código abajo.
 3) **Google Sheets** (Append Row). Estado: PENDIENTE PAGO.
-4) **HTTP Request** (Crear pago). Method: POST. URL: `https://api.stripe.com/v1/checkout/sessions`. Authentication: Generic > Header Auth, Name: Authorization, Value: `Bearer sk_live_...`. Body Content Type: Form-Urlencoded. Parámetros: `mode` = payment, `success_url` = tu página de gracias, `customer_email` = `{{ $('n8n Form Trigger').item.json.Email }}`, `line_items[0][price_data][currency]` = eur, `line_items[0][price_data][unit_amount]` = `{{ $('Code').item.json.senalCentimos }}`, `line_items[0][price_data][product_data][name]` = `Señal {{ $('n8n Form Trigger').item.json['Tipo de sesión'] }}`, `line_items[0][quantity]` = 1.
+4) **HTTP Request** (Crear pago). Method: POST. URL: `https://api.stripe.com/v1/checkout/sessions`. Authentication: Predefined Credential Type > Stripe API (la clave secreta vive en la credencial de n8n, nunca escrita en el nodo). Body Content Type: Form-Urlencoded. Parámetros: `mode` = payment, `success_url` = tu página de gracias, `customer_email` = `{{ $('n8n Form Trigger').item.json.Email }}`, `line_items[0][price_data][currency]` = eur, `line_items[0][price_data][unit_amount]` = `{{ $('Code').item.json.senalCentimos }}`, `line_items[0][price_data][product_data][name]` = `Señal {{ $('n8n Form Trigger').item.json['Tipo de sesión'] }}`, `line_items[0][quantity]` = 1.
 5) **Gmail** (Enviar enlace). To el cliente. Cuerpo con el enlace `{{ $json.url }}` y el texto: «Tu fecha queda bloqueada 48 horas hasta que se abone la señal».
-6) Segundo flujo: **Stripe Trigger**. Events: checkout.session.completed.
+6) Segundo flujo: **Stripe Trigger**. Events: checkout.session.completed. Este nodo comprueba la firma del webhook (con un Webhook genérico, verifica la cabecera `Stripe-Signature` con el «signing secret» del endpoint). Añade un **IF** que exija `payment_status` = `paid` y que el `id` de la sesión no esté ya en la columna SessionID, para no repetir la cita si el evento llega dos veces.
 7) **Google Sheets1** (Get Rows) filtrando por Email `{{ $json.data.object.customer_email }}` y Estado PENDIENTE PAGO.
 8) **Google Calendar**. Operation: Create Event. Calendar: el tuyo. Start: `{{ $json.FechaDeseada }}T10:00:00`. End: dos horas después. Summary: `Sesión {{ $json.Tipo }} - {{ $json.Nombre }}`. Description: teléfono y comentarios. En Options activa Send Updates: all.
 9) **Gmail1** (Confirmación) con dirección del estudio, qué ropa traer y política de cancelación.

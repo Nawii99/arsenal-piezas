@@ -42,7 +42,7 @@ Detecta un archivo nuevo en «PARA REVISAR/cliente», lo comparte en modo coment
 
 ## Los nodos, en orden
 1. **Google Drive Trigger** — «File Created» en la carpeta «PARA REVISAR», subcarpetas incluidas, cada 5 minutos.
-2. **Google Drive** (File → Share) — Permissions: Role «commenter», Type «anyone with link». Así el cliente comenta con marcas de tiempo dentro del reproductor de Drive.
+2. **Google Drive** (File → Share) — Permissions: Role «commenter», Type «user» con el correo del cliente (el de tu hoja de clientes; búscalo antes de este nodo). Así el cliente comenta con marcas de tiempo dentro del reproductor de Drive y un montaje sin estrenar no queda abierto a cualquiera con el enlace.
 3. **Code** — saca el nombre del cliente de la ruta y la versión del nombre de archivo.
 4. **Google Sheets** (Append) — registra la revisión con estado «enviada».
 5. **Gmail** (Send) — al correo del cliente (búscalo con un Sheets «Get Many» sobre tu hoja de clientes), asunto «Montaje {{ $json.proyecto }} {{ $json.version }} listo para revisar», cuerpo con el enlace de Drive y el enlace del formulario con el proyecto prerrellenado.
@@ -64,10 +64,10 @@ return $input.all().filter(i => {
 ```
 
 ## Cómo probarla
-Sube un archivo de prueba con tu propio correo como cliente. Comprueba que el enlace abre sin pedir permiso desde una ventana de incógnito (es el fallo más común) y que al enviar el formulario el estado cambia en la hoja.
+Sube un archivo de prueba con tu propio correo como cliente. Comprueba que el enlace abre con la cuenta de Google del cliente y no con otra cuenta, y que al enviar el formulario el estado cambia en la hoja.
 
 ## Qué puede salir mal
-- **Enlace que pide acceso**: si tu organización de Workspace bloquea «cualquiera con el enlace», comparte por correo concreto con Role «commenter» y Type «user».
+- **Cliente sin cuenta de Google**: el correo debe corresponder a una cuenta de Google para poder comentar. Si no la tiene, pídele un correo asociado a una cuenta de Google (vale un Gmail gratuito) o envíale el archivo por otro medio privado; no uses «anyone with link»: es un montaje sin estrenar y un enlace público se reenvía sin control.
 - **Perseguir a un cliente ya aprobado**: si el formulario falla, el recordatorio sigue. Por eso el tope de 3.
 - **Gmail límite**: 500 envíos al día en cuenta gratis, de sobra.
 - **Zona horaria**: fija Europe/Madrid en Settings del workflow o los recordatorios saldrán a las 12.

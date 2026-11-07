@@ -6,7 +6,7 @@ Genera el diploma en PDF con el nombre, las horas y un código único, lo manda 
 
 ## Qué es y qué hace
 
-Cuando marcas un alumno como Apto en la hoja de notas, duplica una plantilla de Google Slides, sustituye los campos NOMBRE, CURSO, HORAS, FECHA y CODIGO, exporta el PDF y lo envía por Gmail. Registra un código único en una página de verificación para que cualquiera compruebe que el certificado existe y a nombre de quién está emitido.
+Cuando marcas un alumno como Apto en la hoja de notas, duplica una plantilla de Google Slides, sustituye los campos NOMBRE, CURSO, HORAS, FECHA y CODIGO, exporta el PDF y lo envía por Gmail. Registra un código único en una página de verificación para que quien tenga el código compruebe que el certificado existe (con el nombre abreviado y el curso).
 
 ## Cómo usarla
 
@@ -32,7 +32,7 @@ Quince minutos por diploma entre maquetar, exportar y enviar. Con 30 alumnos al 
 ## La receta, paso a paso
 
 ## Qué hace y para quién
-Cuando marcas un alumno como `Apto` en la hoja de notas, el flujo duplica una plantilla de Google Slides, sustituye los campos, la exporta a PDF, la manda por email y registra el código de verificación. Cualquiera puede meter ese código en una URL y ver si el certificado existe, a nombre de quién y de qué curso.
+Cuando marcas un alumno como `Apto` en la hoja de notas, el flujo duplica una plantilla de Google Slides, sustituye los campos, la exporta a PDF, la manda por email y registra el código de verificación. Quien tenga el código (que solo recibe el alumno en su certificado) puede meterlo en una URL y ver si el certificado existe, con el nombre abreviado y el curso.
 
 ## Lo que necesitas antes
 - Una plantilla de diploma en Google Slides (una sola diapositiva, tamaño A4 horizontal) con los textos literales `{{NOMBRE}}`, `{{CURSO}}`, `{{HORAS}}`, `{{FECHA}}`, `{{CODIGO}}`.
@@ -48,11 +48,11 @@ Cuando marcas un alumno como `Apto` en la hoja de notas, el flujo duplica una pl
 4) **Google Drive** (Operation: Copy File) — File la plantilla de Slides, Name `Diploma {{ $json.nombre }} {{ $json.codigo }}`, Folder `Diplomas emitidos`.
 5) **HTTP Request** — Method POST, URL `https://slides.googleapis.com/v1/presentations/{{ $json.id }}:batchUpdate`, Authentication: Predefined Credential Type > Google Slides OAuth2. Body JSON con las sustituciones: `{"requests":[{"replaceAllText":{"containsText":{"text":"{{NOMBRE}}"},"replaceText":"..."}}, ...]}` — una entrada por cada campo.
 6) **Google Drive** (Operation: Download File) — File el id de la copia, Options > Google File Conversion: convertir a PDF.
-7) **Google Drive** (Operation: Share) — Role Reader, Type Anyone with the link, para poder enlazarlo.
+7) **Google Drive** (Operation: Share) — Role Reader, Type User, Email Address el del alumno, para que solo él abra su copia. No uses «cualquiera con el enlace»: el diploma lleva datos personales. En Options, Send Notification Email: false, porque el PDF ya va adjunto en el paso 8.
 8) **Gmail** (Send Message) — To el alumno, Subject `Tu certificado de {{ $json.curso }}`, con el PDF adjunto (Attachments: Binary Property `data`) y el código de verificación en el cuerpo.
 9) **Google Sheets** (Update Row) — guarda `codigo`, `certificado_url` y la fecha de emisión.
 **Flujo B: verificar**
-10) **Webhook** — Method GET, Path `verificar`, parámetro `codigo`.
+10) **Webhook** — Method GET, Path `verificar`, parámetro `codigo`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 11) **Google Sheets** (Get Rows) — hoja `Notas`, Filter: `codigo` igual a `{{ $json.query.codigo }}`.
 12) **IF** — `{{ $json.nombre }}` is not empty.
 13) **Respond to Webhook** — Respond With: Text, Content-Type `text/html`, con una página simple: nombre (con el apellido abreviado), curso, horas, fecha y un «Certificado válido». En la rama false, «Código no encontrado».
@@ -61,9 +61,9 @@ Cuando marcas un alumno como `Apto` en la hoja de notas, el flujo duplica una pl
 ```js
 const crypto = require('crypto');
 const base = `${$json.email}|${$json.curso}|${$json.fecha_fin}`;
-const hash = crypto.createHash('sha256').update(base).digest('hex').toUpperCase();
+const hash = crypto.createHash('sha256').update(base + '|' + crypto.randomBytes(8).toString('hex')).digest('hex').toUpperCase();
 const anio = new Date().getFullYear();
-const codigo = `${anio}-${hash.slice(0, 4)}-${hash.slice(4, 8)}`;
+const codigo = `${anio}-${hash.slice(0, 4)}-${hash.slice(4, 8)}-${hash.slice(8, 12)}`;
 const f = new Date($json.fecha_fin || Date.now());
 const meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
 const fecha_es = `${f.getDate()} de ${meses[f.getMonth()]} de ${f.getFullYear()}`;
@@ -78,7 +78,7 @@ return { json: { ...$json, codigo, fecha_es } };
 ## Qué puede salir mal
 - **Doble emisión**: es el fallo clásico del trigger On Row Updated. La condición `codigo is empty` lo corta.
 - **Nombres largos que se salen**: en la plantilla, ajusta el cuadro de texto con autoajuste de tamaño.
-- **Datos personales en la página pública**: publica solo nombre y primera letra del apellido, nunca DNI ni email.
+- **Datos personales en la página pública**: publica solo nombre y primera letra del apellido, nunca DNI ni email. No publiques la hoja `Notas` ni la compartas con enlace abierto: la página de verificación responde solo por código, con un código no adivinable y un límite de consultas para que nadie recorra códigos.
 - **Cuota de Drive**: cada diploma ocupa poco, pero si emites miles, limpia la carpeta al año.
 
 ## Cuánto cuesta

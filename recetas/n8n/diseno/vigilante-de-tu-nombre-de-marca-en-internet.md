@@ -44,7 +44,7 @@ Cada mañana busca tu marca y sus variantes en Google, compara con lo que ya con
 ## Los nodos, en orden
 1. **Schedule Trigger** — Interval: Days, Trigger at Hour 8.
 2. **Code** — Mode: Run Once for All Items. Devuelve los términos: `return ['"Mi Marca"', '"Mi Marca" logo', 'mimarca.com'].map(q => ({ json: { q } }));`
-3. **HTTP Request** (renombra a «Buscar») — Method: GET, URL `https://serpapi.com/search.json`. Query Parameters: `q` = `={{ $json.q }}`, `engine` = `google`, `google_domain` = `google.es`, `gl` = `es`, `hl` = `es`, `num` = `20`, `api_key` = tu clave.
+3. **HTTP Request** (renombra a «Buscar») — Method: GET, URL `https://serpapi.com/search.json`. Query Parameters: `q` = `={{ $json.q }}`, `engine` = `google`, `google_domain` = `google.es`, `gl` = `es`, `hl` = `es`, `num` = `20`, `api_key` desde una credencial de n8n (Generic Credential Type > Query Auth, Name `api_key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría).
 4. **Code** — Mode: Run Once for All Items. Aplana los `organic_results` de todas las búsquedas en una lista de resultados. Código abajo.
 5. **Google Sheets** — Get Row(s) de la pestaña `conocidos`.
 6. **Code** — Mode: Run Once for All Items. Compara y deja solo lo que no estaba: `const vistos = new Set($('Google Sheets').all().map(i => i.json.url)); return $('Code1').all().filter(i => !vistos.has(i.json.url));`

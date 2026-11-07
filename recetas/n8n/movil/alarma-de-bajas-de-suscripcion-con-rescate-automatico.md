@@ -42,7 +42,7 @@ Que en tu app guardes el correo del usuario como «attribute» en RevenueCat (`$
 Gmail y Google Sheets conectados en n8n. Hoja `Suscripciones` con columnas: fecha, evento, id_usuario, email, producto, pais, importe.
 
 ## Los nodos, en orden
-1. **Webhook**: POST, Path `revenuecat`. En RevenueCat, Project settings > Integrations > Webhooks, pega la URL y pon un valor en «Authorization header» (por ejemplo `Bearer miclavelarga123`).
+1. **Webhook**: POST, Path `revenuecat`. En RevenueCat, Project settings > Integrations > Webhooks, pega la URL y pon un valor en «Authorization header» (por ejemplo `Bearer miclavelarga123`). Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. En el Webhook de n8n, Authentication = Header Auth, con ese mismo nombre y valor. Sin esto, cualquiera podría inventarte eventos.
 3. **Code**: aplana el evento de RevenueCat. Código abajo.
 4. **Google Sheets** (Append): hoja `Suscripciones`, mapea todos los campos.

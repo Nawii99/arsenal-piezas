@@ -1,6 +1,6 @@
 ---
 description: Analyzes a store's returns to find the pattern that causes them (product, size, photo, deadline, or customer) and proposes the cheapest fix for each cause, with the estimated savings.
-argument-hint: [CSV file of returns or description of the problem]
+argument-hint: "[CSV file of returns or description of the problem]"
 ---
 
 Analyze the returns from: $ARGUMENTS

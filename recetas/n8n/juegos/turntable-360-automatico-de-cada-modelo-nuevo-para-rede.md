@@ -43,11 +43,12 @@ Detecta modelos nuevos (.fbx, .obj o .glb) en una carpeta, los importa en una es
 
 ## Los nodos, en orden
 1. **Google Drive Trigger** — carpeta `modelos-terminados`, File Created, poll cada 15 minutos.
-2. **Google Drive** > **Read/Write Files from Disk** — descargar y escribir en `/datos/turntable/entrada/{{ $json.name }}` (igual que en cualquier flujo de ficheros).
-3. **Execute Command** (`Renderizar giro`) — Command: `MODELO="/datos/turntable/entrada/{{ $('Google Drive Trigger').item.json.name }}" blender -b /datos/turntable/base.blend --python /datos/turntable/turntable.py -o /datos/turntable/frames/f_#### -F PNG -s 1 -e 120 -a`. Timeout: 1800000 ms.
-4. **Execute Command** (`Montar vídeo`) — Command: `ffmpeg -y -framerate 30 -i /datos/turntable/frames/f_%04d.png -c:v libx264 -pix_fmt yuv420p -crf 20 -vf "scale=1080:1080" /datos/turntable/{{ $('Google Drive Trigger').item.json.name }}.mp4 && rm -f /datos/turntable/frames/*.png`.
-5. **Read/Write Files from Disk** — leer el MP4 generado.
-6. **Google Drive** — subir a la carpeta `turntables`, y en Options activa el permiso de lectura para cualquiera con el enlace si quieres compartirlo.
+1b. **Code** (`Nombre seguro`, modo «Run Once for Each Item») — `const ext = String($json.name).split('.').pop().toLowerCase(); if (!['fbx','obj','glb'].includes(ext) || !/^[A-Za-z0-9_-]+$/.test($json.id)) throw new Error('Formato no admitido: ' + $json.name); return { json: { ...$json, archivo: $json.id + '.' + ext } };`. En disco y en los comandos solo se usa `archivo`; el nombre original queda para Discord y Drive.
+2. **Google Drive** > **Read/Write Files from Disk** — descargar y escribir en `/datos/turntable/entrada/{{ $('Nombre seguro').item.json.archivo }}` (igual que en cualquier flujo de ficheros).
+3. **Execute Command** (`Renderizar giro`) — Command: `MODELO="/datos/turntable/entrada/{{ $('Nombre seguro').item.json.archivo }}" blender -b /datos/turntable/base.blend --python /datos/turntable/turntable.py -o /datos/turntable/frames/f_#### -F PNG -s 1 -e 120 -a`. Timeout: 1800000 ms.
+4. **Execute Command** (`Montar vídeo`) — Command: `ffmpeg -y -framerate 30 -i /datos/turntable/frames/f_%04d.png -c:v libx264 -pix_fmt yuv420p -crf 20 -vf "scale=1080:1080" /datos/turntable/{{ $('Nombre seguro').item.json.id }}.mp4 && rm -f /datos/turntable/frames/*.png`.
+5. **Read/Write Files from Disk** — leer el MP4 generado, `/datos/turntable/{{ $('Nombre seguro').item.json.id }}.mp4`.
+6. **Google Drive** — subir a la carpeta `turntables` con File Name `{{ $('Google Drive Trigger').item.json.name }}.mp4`, y en Options activa el permiso de lectura para cualquiera con el enlace si quieres compartirlo.
 7. **HTTP Request** (`Discord`) — POST al webhook, Body Content Type: `Form-Data` (n8n: `multipart-form-data`), campo `file` = el binario del MP4 y campo `payload_json` = `{"content":"Nuevo modelo terminado: {{ $('Google Drive Trigger').item.json.name }}"}`. Discord acepta hasta 8 MB en servidores sin boost, por eso el CRF 20.
 8. **Google Sheets** (opcional) — registra fecha, modelo y enlace para llevar tu catálogo.
 
@@ -98,6 +99,7 @@ bpy.context.scene.frame_end = 120
 - **Modelos descentrados**: si el origen del objeto no está en el centro geométrico, el giro sale excéntrico. Añade `bpy.ops.object.origin_set(type='ORIGIN_GEOMETRY')` antes de mover a (0,0,0).
 - **Vídeo demasiado pesado para Discord**: sube el CRF a 26 o baja a 720x720.
 - **Frames viejos mezclados**: el `rm` va al final del comando de ffmpeg; si el render falla, quedan PNG de la vez anterior. Añade un `rm -f` también al principio del paso 3.
+- **Nombres con trampa**: un modelo llamado `$(id).glb` o con comillas ejecutaría órdenes si su nombre entrara en el comando. Por eso en disco se guarda como `ID-de-Drive.extensión` y el nombre original solo va al mensaje y al vídeo subido.
 
 ## Cuánto cuesta
 - Blender, ffmpeg y n8n auto-alojado: **gratis**.

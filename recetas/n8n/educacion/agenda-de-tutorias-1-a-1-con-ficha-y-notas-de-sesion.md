@@ -42,7 +42,7 @@ Hoja «Tutorías» con columnas: fecha, alumno, email, objetivo, acuerdos, deber
 Credencial Google OAuth2 (Sheets, Gmail, Calendar).
 
 ## Los nodos, en orden
-**1. Webhook**. Method: POST, Path: `tutorias`. Copia la Production URL en el webhook de Cal.com.
+**1. Webhook**. Method: POST, Path: `tutorias`. Copia la Production URL en el webhook de Cal.com. Pon un Secret en el webhook de Cal.com y verifica la firma `X-Cal-Signature-256` en un nodo Code.
 **2. Switch**. Campo: `{{ $json.body.triggerEvent }}`. Salida 0 para `BOOKING_CREATED`, salida 1 para `BOOKING_CANCELLED`.
 **3. Set** «Datos reserva» (salida 0). `alumno` = `{{ $json.body.payload.attendees[0].name }}`, `email` = `{{ $json.body.payload.attendees[0].email }}`, `inicio` = `{{ $json.body.payload.startTime }}`, `enlace` = `{{ $json.body.payload.metadata.videoCallUrl }}`, `objetivo` = la respuesta del campo personalizado.
 **4. Google Sheets** «Historial». Get Row(s) de «Tutorías» filtrando por `email` igual a `{{ $json.email }}`, ordenado por fecha. Sirve para recuperar las sesiones anteriores.

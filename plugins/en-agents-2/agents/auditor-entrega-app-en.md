@@ -1,6 +1,6 @@
 ---
 name: auditor-entrega-app-en
-description: Reviews an Android/iOS app project before handing it to the client or uploading it to the store: icons, splash screen, permissions, notifications, metadata, and privacy policy. It activates every time before a delivery or a submission to Google Play or the App Store.
+description: "Reviews an Android/iOS app project before handing it to the client or uploading it to the store: icons, splash screen, permissions, notifications, metadata, and privacy policy. It activates every time before a delivery or a submission to Google Play or the App Store."
 ---
 
 ## What it does

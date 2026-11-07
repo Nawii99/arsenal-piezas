@@ -42,7 +42,7 @@ Un identificador de sesión anónimo en el juego (un número aleatorio por parti
 Un secreto compartido: inventa una cadena tipo `mi-secreto-2026` y ponla en el juego y en el flujo.
 
 ## Los nodos, en orden (flujo 1: recogida)
-1) **Webhook** — método POST, ruta `telemetria`, respuesta `Immediately` con código 200. Copia la URL de producción.
+1) **Webhook** — método POST, ruta `telemetria`, respuesta `Immediately` con código 200. Copia la URL de producción. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2) **IF** — comprueba que `{{ $json.body.token }}` es igual a tu secreto. Si no, no guardes nada.
 3) **Code** — valida y limpia los campos.
 4) **Google Sheets** (`Append Row`) — pestaña `eventos`.

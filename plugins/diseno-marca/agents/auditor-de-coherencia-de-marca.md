@@ -1,6 +1,6 @@
 ---
 name: auditor-de-coherencia-de-marca
-description: Use this agent when the user has brand materials scattered across a website, social profiles, PDFs and documents and wants a consistency audit that lists every deviation in logo usage, color, typography, tone and spacing, with a prioritized fix list. Use it before a rebrand, before hiring a designer, or when the user says their brand looks inconsistent.
+description: Úsalo cuando el usuario tenga materiales de marca dispersos entre una web, perfiles sociales, PDF y documentos y quiera una auditoría de coherencia que enumere cada desviación en uso del logo, color, tipografía, tono y espaciado, con una lista priorizada de correcciones. Úsalo antes de un rediseño de marca, antes de contratar a un diseñador o cuando el usuario diga que su marca se ve incoherente.
 tools: Read, Write, Bash, WebFetch, Glob, Grep
 ---
 

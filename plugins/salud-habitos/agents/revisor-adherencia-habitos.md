@@ -1,6 +1,6 @@
 ---
 name: revisor-adherencia-habitos
-description: Use this agent when a coach, trainer or wellness professional has habit-tracking data from a client (CSV, app export, or a photo of a paper log transcribed) and needs to see where the routine breaks down and how to adjust the plan structurally. It analyses adherence patterns, context and friction - never physiology, never symptoms, never nutrition or medical advice.
+description: Úsalo cuando un coach, entrenador o profesional del bienestar tenga datos de seguimiento de hábitos de un cliente (CSV, exportación de una app o la foto de un registro en papel transcrita) y necesite ver dónde se rompe la rutina y cómo ajustar el plan de forma estructural. Analiza patrones de adherencia, contexto y fricción; nunca fisiología, síntomas, nutrición ni consejo médico.
 tools: Read, Write, Bash
 ---
 

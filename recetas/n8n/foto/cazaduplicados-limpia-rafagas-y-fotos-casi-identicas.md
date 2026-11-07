@@ -35,7 +35,7 @@ Recuperas entre el 20 % y el 40 % del espacio de una sesión y te ahorras 2-3 ho
 Para fotógrafos y tiendas online que acumulan miles de imágenes: sube cada foto a Cloudinary pidiendo su huella visual (phash), compara todas contra todas y apunta en una hoja los grupos de fotos casi idénticas. Tú decides qué borras; la automatización no borra nada por su cuenta.
 
 ## Lo que necesitas antes
-- Cuenta de n8n (n8n Cloud plan gratuito de prueba, o auto-alojado gratis con Docker).
+- Cuenta de n8n (n8n Cloud con su prueba gratuita temporal, o auto-alojado gratis con Docker).
 - Cuenta de Google con la carpeta de fotos en Drive. En n8n: Credentials > Google Drive OAuth2, siguiendo el asistente de Google Cloud Console (crear proyecto, activar Drive API, pantalla de consentimiento en modo Prueba, tu correo como usuario de prueba).
 - Cuenta gratuita en cloudinary.com. En el Dashboard copias Cloud name, API Key y API Secret.
 - Una hoja de Google Sheets vacía llamada «Duplicados» con las columnas: grupo, nombre, id_drive, enlace, distancia.

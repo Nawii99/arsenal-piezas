@@ -48,10 +48,10 @@ Después espera y comprueba el resultado, para que un fallo de compilación no p
 3. **Code** — calcula el hash del contenido completo y lo compara con el guardado (código abajo).
 4. **IF** — `{{ $json.hay_cambios }}` es `true`.
 5. **IF (antirrebote)** — `{{ $json.minutos_desde_ultima }}` mayor que `5`. Evita compilar 6 veces mientras el cliente escribe.
-6. **HTTP Request** — POST vacío a la URL del build hook. Body: ninguno. Devuelve 200 al instante.
+6. **HTTP Request** — POST vacío a la URL del build hook, que guardas como variable de entorno de n8n (`={{ $env.BUILD_HOOK_URL }}`) en vez de pegarla en el nodo: quien tenga esa URL puede lanzar compilaciones y un flujo exportado se la llevaría. Body: ninguno. Devuelve 200 al instante.
 7. **Google Sheets** — `Update Row` guardando la nueva huella y la hora en la pestaña `estado`.
 8. **Wait** — 90 segundos.
-9. **HTTP Request** — GET a `https://api.netlify.com/api/v1/sites/TU_SITE_ID/deploys?per_page=1` con header `Authorization: Bearer TU_TOKEN`.
+9. **HTTP Request** — GET a `https://api.netlify.com/api/v1/sites/TU_SITE_ID/deploys?per_page=1` con Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name «Authorization», Value «Bearer TU_TOKEN»); el nodo usa esa credencial. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 10. **IF** — `{{ $json[0].state }}` igual a `ready`.
 11. Rama SÍ: **Slack** `La web se ha actualizado, {{ $json[0].deploy_time }} segundos`. Rama NO: **Slack** con el enlace a `{{ $json[0].admin_url }}` para ver el log del error.
 

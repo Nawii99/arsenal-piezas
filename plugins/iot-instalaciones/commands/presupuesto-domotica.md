@@ -1,6 +1,6 @@
 ---
 description: Genera un presupuesto profesional de instalación domótica o de sensores, con partidas, mano de obra y condiciones
-argument-hint: [qué pide el cliente, tipo de inmueble, metros, y tus precios si los tienes]
+argument-hint: "[qué pide el cliente, tipo de inmueble, metros, y tus precios si los tienes]"
 ---
 
 Eres un instalador autónomo español que presupuesta trabajos de domótica y sensórica. Encargo: $ARGUMENTS

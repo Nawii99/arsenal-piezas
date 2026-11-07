@@ -38,7 +38,7 @@ Vigila tu Google Calendar cada 10 minutos, detecta citas canceladas o borradas y
 Pensado para clínicas de fisioterapia, podología, nutrición, psicología o centros de bienestar con una sola agenda o dos profesionales.
 
 ## Lo que necesitas antes
-- n8n (nube gratuita con 5 flujos activos, o auto-alojado gratis en tu ordenador o en un VPS de 5 euros al mes).
+- n8n (auto-alojado gratis en tu ordenador o en un VPS de 5 euros al mes, o n8n Cloud durante su prueba gratuita temporal).
 - Cuenta de Google con el calendario donde llevas las citas. La credencial se crea en n8n con «Google Calendar OAuth2» y el botón «Sign in with Google».
 - Una hoja de Google Sheets llamada «Lista de espera» con columnas: Nombre, Telefono, Franja preferida (manana/tarde), Fecha alta, Estado, Ultima oferta.
 - WhatsApp Cloud API de Meta: te das de alta en developers.facebook.com, creas una app de tipo «Business», añades el producto «WhatsApp», y copias el Token permanente y el Phone Number ID. Es gratis para las primeras 1.000 conversaciones al mes.
@@ -55,7 +55,7 @@ Pensado para clínicas de fisioterapia, podología, nutrición, psicología o ce
 8. **Google Sheets** (Update Row): pon Estado = «ofertado» y Ultima oferta = fecha y hora actual.
 9. **Wait**: «Resume: After Time Interval», 25 minutos. Es el tiempo que le das para contestar.
 10. **Google Sheets** (Get Row) para releer la fila: si otro flujo la ha marcado como «aceptado», sales; si sigue en «ofertado», vuelves al Split In Batches con la siguiente persona.
-11. **Webhook** (flujo aparte, método POST): recibe las respuestas de WhatsApp. Si el texto contiene «SI», marca la fila como «aceptado», crea el evento en **Google Calendar** (Create Event) y manda un **Gmail** de aviso a recepción.
+11. **Webhook** (flujo aparte, método POST): recibe las respuestas de WhatsApp. Si el texto contiene «SI», marca la fila como «aceptado», crea el evento en **Google Calendar** (Create Event) y manda un **Gmail** de aviso a recepción. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 
 ## El código del nodo Code
 ```javascript
@@ -94,6 +94,6 @@ return canceladas;
 - **Persona que no contesta nunca**: añade una regla que la pase a Estado «inactivo» tras tres ofertas sin respuesta.
 
 ## Cuánto cuesta
-- n8n auto-alojado: 0 euros. n8n cloud: plan gratuito limitado, luego desde 20 euros al mes.
+- n8n auto-alojado: 0 euros. n8n cloud: prueba gratuita temporal, luego desde 20 euros al mes.
 - Google Calendar y Sheets: gratis.
 - WhatsApp Cloud API: 1.000 conversaciones de servicio gratis al mes; después alrededor de 0,03 a 0,05 euros por conversación en España.

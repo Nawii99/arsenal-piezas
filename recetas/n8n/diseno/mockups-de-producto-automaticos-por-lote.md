@@ -84,4 +84,4 @@ return salida;
 **Cuánto cuesta**
 - Dynamic Mockups: plan gratuito con pocos renders; de pago desde unos 19 $/mes por cientos de renders.
 - Alternativa con Edit Image en n8n: 0 €, calidad más básica.
-- Drive y n8n: gratis.
+- Drive y n8n autoalojado: gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).

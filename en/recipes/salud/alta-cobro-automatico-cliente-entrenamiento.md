@@ -24,11 +24,12 @@ When a new client pays for their training plan, the plan is generated automatica
 
 ## Nodes, in order
 1. Trigger: 'Stripe Trigger' with the 'checkout.session.completed' event, so it starts only when the payment is confirmed, not before.
+   Right after it, add an IF that continues only if `payment_status` is `paid` (with deferred payments the event arrives before the money) and a lookup in the sheet by the Stripe session id: if it already exists, the flow stops, because Stripe may resend the same event and you don't want two plans or two emails. The Stripe Trigger already verifies the webhook signature.
 2. HTTP Request node to Typeform (or the native Typeform node) to fetch the answers to the onboarding questionnaire the client filled in before paying, matching by their email.
 3. AI node (HTTP Request to the Claude API, or n8n's AI node) to which you pass the client's data with the prompt from the 'plan-entrenamiento-vendible' skill to generate the plan.
 4. 'Convert to File' or 'HTML to PDF' node to turn the plan text into a PDF with your logo.
 5. Gmail node, 'Send Email', with the PDF attached and a welcome message to the client.
-6. Google Sheets node, 'Append Row', to save in your clients sheet: name, email, sign-up date, amount paid, and date of the next payment if it is a subscription.
+6. Google Sheets node, 'Append Row', to save in your clients sheet: name, email, sign-up date, amount paid, Stripe session id, and date of the next payment if it is a subscription.
 7. Gmail or Telegram node to notify you that a new client has come in.
 
 ## How to test it without messing up

@@ -1,6 +1,6 @@
 ---
 name: reencuadre-multiformato
-description: Adapts one image into every required aspect ratio (1:1, 4:5, 9:16, 16:9, wide banners) using focal point rules, safe areas per platform, outpainting and file naming, without cropping key content or distorting it. Use when the user has one good image and needs it for feed, Stories, web hero, ads or thumbnails.
+description: Adapta una imagen a todas las proporciones necesarias (1:1, 4:5, 9:16, 16:9, banners panorámicos) con reglas de punto focal, zonas seguras por plataforma, outpainting y nomenclatura de archivos, sin recortar el contenido clave ni deformarlo. Úsala cuando el usuario tenga una buena imagen y la necesite para el feed, Stories, cabecera web, anuncios o miniaturas.
 ---
 
 # Una imagen, todos los formatos

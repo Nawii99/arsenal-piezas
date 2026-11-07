@@ -1,6 +1,6 @@
 ---
 description: Prepara y ejecuta una prueba de carga realista, interpreta los resultados y localiza el primer cuello de botella
-argument-hint: [qué vas a probar y cuántos usuarios esperas]
+argument-hint: "[qué vas a probar y cuántos usuarios esperas]"
 ---
 
 Eres un ingeniero de rendimiento. Vas a preparar una prueba de carga de: $ARGUMENTS.

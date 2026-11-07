@@ -43,17 +43,17 @@ Para academias, escuelas de negocio, cursos de oposición y formadores que vende
 - Un enlace de Calendly o Google Calendar Appointment Schedule para las llamadas.
 
 ## Los nodos, en orden
-1) **Webhook**. Method: POST. Path: `info-curso`. Response Mode: «Using Respond to Webhook Node» para poder devolver un «gracias» al formulario.
+1) **Webhook**. Method: POST. Path: `info-curso`. Response Mode: «Using Respond to Webhook Node» para poder devolver un «gracias» al formulario. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2) **Set** «Normalizar»: `nombre` = `{{ $json.body.nombre.trim() }}`, `email` = `{{ $json.body.email.trim().toLowerCase() }}`, `telefono`, `curso`, `origen` = `{{ $json.body.origen || 'web' }}`.
 3) **IF** anti-basura. Condición: el email contiene `@` Y el nombre tiene más de 2 caracteres. Añade una segunda condición que descarte si el campo oculto `honeypot` viene relleno (mete en tu formulario un campo invisible con ese nombre: los bots lo rellenan, las personas no).
 4) **Google Sheets** (Append Row) en «Leads» con `estado` = `nuevo`.
-5) **HTTP Request** a Brevo. POST `https://api.brevo.com/v3/smtp/email`. Header `api-key: TU_CLAVE`. Body:
+5) **HTTP Request** a Brevo. POST `https://api.brevo.com/v3/smtp/email`. Authentication: Generic Credential Type > Header Auth con una credencial (Name `api-key`, Value tu clave de Brevo); la clave va solo en la credencial, nunca escrita en el nodo, porque un flujo exportado se llevaría la clave. Body:
 ```json
 {"sender":{"name":"Academia X","email":"info@academiax.com"},"to":[{"email":"{{ $json.email }}","name":"{{ $json.nombre }}"}],"subject":"Aquí tienes el programa de {{ $json.curso }}","htmlContent":"<p>Hola {{ $json.nombre }}, te dejo el programa completo: <a href='ENLACE_PDF'>descargar</a>. Si prefieres que te lo cuente en 15 minutos, reserva hueco <a href='TU_CALENDLY'>aquí</a>.</p>"}
 ```
 6) **Respond to Webhook**. Response Body: `{"ok":true}`. Así tu formulario muestra el mensaje de gracias.
 7) **Wait**. Amount: 2 días. Después un **Google Sheets** (Get Row(s)) que compruebe el `estado`: si ya está en `matriculado` o `descartado`, un **IF** corta la secuencia.
-8) **HTTP Request** a Brevo, email 2: un caso real de alumno, con nombre, antes y después, y el enlace a la llamada.
+8) **HTTP Request** a Brevo (misma credencial), email 2: un caso real de alumno, con nombre, antes y después, y el enlace a la llamada.
 9) **Wait** 3 días más. Email 3: fechas de la próxima convocatoria, plazas restantes y precio. Aquí sí se habla de dinero.
 10) **Wait** 2 días. **IF** sobre si hay teléfono: si lo hay, **Gmail** o **Slack** a ti con «Llamar a {{ nombre }}, curso {{ curso }}, tel {{ telefono }}» y un **Google Calendar** (Create Event) que te bloquee 15 minutos mañana para esa llamada.
 11) **Google Sheets** (Update Row) en cada paso con `ultimo_contacto`, para que sepas por dónde va cada uno.

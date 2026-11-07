@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-datos-ia-calidad-ia",
+  "version": "1.0.0",
+  "description": "Datos e IA · Calidad y seguridad de la IA: 3 subagentes, 3 comandos / en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "datos-ia",
+    "arsenal-del-marketer",
+    "calidad-ia"
+  ]
+}

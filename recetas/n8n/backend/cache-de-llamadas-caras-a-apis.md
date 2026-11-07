@@ -38,27 +38,24 @@ Tu aplicación deja de llamar a la API cara directamente y llama a este flujo. �
 - Redis funcionando: `docker run -d --name cache -p 6379:6379 -v cache:/data redis:7-alpine redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru`.
 - En n8n: Credentials → New → «Redis», Host `127.0.0.1`, Port 6379.
 - La clave de la API cara, guardada como credencial Header Auth en n8n (nunca en el navegador).
-- Una clave propia para que solo tu web pueda usar este proxy.
+- Una clave propia para que solo tu web pueda usar este proxy: crea en n8n una credencial Header Auth (Name `X-App-Key`, Value una clave larga y aleatoria). No la escribas en ningún nodo Code: porque un flujo exportado se llevaría la clave.
 
 ## Los nodos, en orden
-1. **Webhook** — POST, Path: `cache/consulta`, Respond: «Using Respond to Webhook node».
+1. **Webhook** — POST, Path: `cache/consulta`, Authentication: Header Auth (la credencial de arriba), Respond: «Using Respond to Webhook node». Si la cabecera falta o no coincide, n8n responde 403 sin ejecutar nada más.
 2. **Code** (renómbralo «Huella») — Run Once for Each Item:
 ```javascript
 const crypto = require('crypto');
-const MI_CLAVE = 'CLAVE_INTERNA_LARGA';
 const req = $input.item.json;
-const autorizado = (req.headers['x-app-key'] || '') === MI_CLAVE;
 const cuerpo = req.body || {};
 const normal = JSON.stringify(cuerpo, Object.keys(cuerpo).sort());
 const huella = crypto.createHash('sha256').update(normal.toLowerCase().trim()).digest('hex').slice(0, 32);
-return { json: { autorizado, huella, consulta: cuerpo, clave: 'cache:' + huella } };
+return { json: { huella, consulta: cuerpo, clave: 'cache:' + huella } };
 ```
-3. **IF** — `{{ $json.autorizado }}` is true. Rama false → **Respond to Webhook** con 401.
-4. **Redis** — Operation: Get, Key: `={{ $json.clave }}`, Property Name: `guardado`, Options → Key Type: automatic.
-5. **IF** (renómbralo «¿Está en caché?») — Condition: String → `{{ $json.guardado }}` is not empty.
-6. Rama **true** (acierto) → **Respond to Webhook**, Respond With: JSON, Body: `={{ $json.guardado }}`. Añade una cabecera de respuesta `X-Cache: HIT` para poder medir.
-7. Rama **false** (fallo de caché) → **HTTP Request** — la llamada real a la API cara. Method POST, URL del proveedor, Authentication: tu Header Auth, Body: `={{ JSON.stringify($('Huella').first().json.consulta) }}`. Options → Timeout 30000, Retry On Fail: on, Max Tries 2.
-8. → **Code** (renómbralo «Preparar guardado»):
+3. **Redis** — Operation: Get, Key: `={{ $json.clave }}`, Property Name: `guardado`, Options → Key Type: automatic.
+4. **IF** (renómbralo «¿Está en caché?») — Condition: String → `{{ $json.guardado }}` is not empty.
+5. Rama **true** (acierto) → **Respond to Webhook**, Respond With: JSON, Body: `={{ $json.guardado }}`. Añade una cabecera de respuesta `X-Cache: HIT` para poder medir.
+6. Rama **false** (fallo de caché) → **HTTP Request** — la llamada real a la API cara. Method POST, URL del proveedor, Authentication: tu Header Auth, Body: `={{ JSON.stringify($('Huella').first().json.consulta) }}`. Options → Timeout 30000, Retry On Fail: on, Max Tries 2.
+7. → **Code** (renómbralo «Preparar guardado»):
 ```javascript
 const r = $input.item.json;
 const h = $('Huella').first().json;
@@ -69,9 +66,9 @@ return { json: {
   ttl: 86400 * 7
 } };
 ```
-9. → **Redis** — Operation: Set, Key: `={{ $json.clave }}`, Value: `={{ $json.valor }}`, Expire: on, TTL: `={{ $json.ttl }}`.
-10. → **Respond to Webhook** con el JSON y cabecera `X-Cache: MISS`.
-11. Extra recomendado: un **Schedule Trigger** diario + **Redis** (Operation: Info) + **Telegram** con `keyspace_hits` y `keyspace_misses` para ver cuánto estás ahorrando de verdad.
+8. → **Redis** — Operation: Set, Key: `={{ $json.clave }}`, Value: `={{ $json.valor }}`, Expire: on, TTL: `={{ $json.ttl }}`.
+9. → **Respond to Webhook** con el JSON y cabecera `X-Cache: MISS`.
+10. Extra recomendado: un **Schedule Trigger** diario + **Redis** (Operation: Info) + **Telegram** con `keyspace_hits` y `keyspace_misses` para ver cuánto estás ahorrando de verdad.
 
 ## Cómo probarla
 - Lanza dos veces la misma petición con curl y compara: la segunda debe tardar milisegundos y traer `X-Cache: HIT`.
@@ -86,4 +83,4 @@ return { json: {
 - **Redis caído**: el nodo Get dará error y romperá la petición. Marca en ese nodo «On Error: Continue (using error output)» y conéctalo a la rama de llamada real, para que sin caché siga funcionando.
 
 ## Cuánto cuesta
-Redis auto-alojado 0 € (o Redis Cloud gratuito con 30 MB). n8n 0 €. El ahorro es directo en la factura de la API cara.
+Redis auto-alojado 0 € (o Redis Cloud gratuito con 30 MB). n8n autoalojado 0 € (n8n Cloud no tiene plan gratuito permanente: solo prueba temporal y después planes de pago). El ahorro es directo en la factura de la API cara.

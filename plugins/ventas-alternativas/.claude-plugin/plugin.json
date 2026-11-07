@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-ventas-alternativas",
+  "version": "1.0.0",
+  "description": "Ventas · Alternativas: 8 subagentes, 6 comandos /, 2 skills en español que se parecen a otras piezas de ventas; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "ventas",
+    "arsenal-del-marketer",
+    "alternativas"
+  ]
+}

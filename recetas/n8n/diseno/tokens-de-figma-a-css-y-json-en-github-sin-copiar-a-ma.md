@@ -84,4 +84,4 @@ La API de Figma limita las peticiones; con una al día no te acercas al tope.
 Si el archivo `tokens.css` no existe, el nodo GitHub Get falla: por eso lleva «Continue On Fail» y la primera vez usa la operación Create.
 Las variables con alias (una que apunta a otra) llegan como `{type:'VARIABLE_ALIAS'}` y el código las salta; resuélvelas manualmente o amplía el Code si las usas mucho.
 ## Cuánto cuesta
-n8n gratis, GitHub gratis (repositorios privados incluidos), Slack gratis. La única pega es que las variables por API piden Figma Enterprise; con la variante de estilos funciona en el plan gratuito.
+n8n autoalojado gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago), GitHub gratis (repositorios privados incluidos), Slack gratis. La única pega es que las variables por API piden Figma Enterprise; con la variante de estilos funciona en el plan gratuito.

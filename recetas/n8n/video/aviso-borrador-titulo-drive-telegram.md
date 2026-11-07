@@ -40,7 +40,7 @@ Cuando subes un vídeo ya montado a una carpeta de Google Drive, la automatizaci
 - Cuenta de Google Drive (gratis, con el límite de espacio de tu cuenta normal de Gmail).
 - Cuenta de OpenAI con API key (de pago por uso; suele costar pocos céntimos por vídeo, pero no es gratis, revisa el precio actual en platform.openai.com).
 - Un bot de Telegram creado con @BotFather (gratis, sin límite relevante para este uso).
-- Cuenta de n8n (versión gratuita autoalojada, o el plan gratuito de n8n Cloud si aún no lo has gastado).
+- Cuenta de n8n (versión gratuita autoalojada, o la prueba gratuita temporal de n8n Cloud si aún no la has gastado).
 
 ## Nodos, en orden
 1. Disparador "Google Drive Trigger": vigila una carpeta concreta, por ejemplo "vídeos listos", y se activa cuando aparece un archivo nuevo.

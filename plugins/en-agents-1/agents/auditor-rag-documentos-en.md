@@ -1,6 +1,6 @@
 ---
 name: auditor-rag-documentos-en
-description: Audits a question-and-answer system over documents (RAG): chunking, search, answers, and hallucinations. It is activated when you need to check whether a chat over documents answers correctly before showing it to a client.
+description: "Audits a question-and-answer system over documents (RAG): chunking, search, answers, and hallucinations. It is activated when you need to check whether a chat over documents answers correctly before showing it to a client."
 ---
 
 ## What it does

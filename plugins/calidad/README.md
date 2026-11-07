@@ -1,6 +1,6 @@
 # arsenal-calidad · Calidad y tests
 
-Calidad y tests: 4 skills, 2 comandos /, 1 subagente en español, del Arsenal del Marketer.
+Calidad y tests: 4 skills, 1 subagente en español, del Arsenal del Marketer.
 
 ## Instalar
 
@@ -13,8 +13,6 @@ Calidad y tests: 4 skills, 2 comandos /, 1 subagente en español, del Arsenal de
 
 | Pieza | Tipo | Qué hace | Cómo se usa |
 |---|---|---|---|
-| datos-de-prueba | Comando / | Genera tablas de datos falsos pero creíbles (clientes, pedidos, facturas) con formato español: NIF con letra correcta, IVA que cuadra, emails de prueba. Para probar tiendas, CRM y flujos. | `/datos-de-prueba` |
-| datos-falsos | Comando / | Genera un CSV de contactos, pedidos o leads inventados con pinta española para probar CRM, envíos de email y flujos de n8n sin tocar clientes reales. | `/datos-falsos` |
 | entorno-de-pruebas | Skill | Reglas para probar CRM, emails, pagos y flujos de n8n sin tocar clientes reales ni gastar dinero: copias, modos de prueba, datos falsos y checklist antes de pasar a producción. | se activa sola cuando hace falta |
 | entornos-de-prueba | Skill | Cómo montar un sitio seguro donde probar lo que entregas a un cliente: datos falsos, base de datos de ejemplo y maqueta de API. Incluye cómo venderlo como partida propia del presupuesto. | se activa sola cuando hace falta |
 | plan-de-regresion-skill-guiada | Skill | Plan de regresión repetible: mismos tests, mismo rigor cada despliegue. | se activa sola cuando hace falta |

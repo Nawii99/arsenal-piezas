@@ -47,7 +47,7 @@ Para ti como emprendedor que entrena, y también para entrenadores que quieren v
 ## Los nodos, en orden
 1. **Schedule Trigger** – Cron `0 23 * * *`, Timezone Europe/Madrid.
 2. **Google Sheets** – Read Rows de `Config` para leer el refresh_token.
-3. **HTTP Request** – POST a `https://www.strava.com/oauth/token`. Body: Form-Urlencoded con `client_id`, `client_secret`, `grant_type=refresh_token`, `refresh_token={{ $json.refresh_token }}`. Devuelve un access_token nuevo que dura 6 horas.
+3. **HTTP Request** – POST a `https://www.strava.com/oauth/token`. Authentication: Generic Credential Type > Custom Auth, con una credencial de n8n cuyo JSON es `{"body": {"client_id": "TU_ID", "client_secret": "TU_SECRET"}}` (o guarda ambos en variables de entorno de n8n); el nodo usa esa credencial y no lleva el secreto escrito. Body: Form-Urlencoded con `grant_type=refresh_token`, `refresh_token={{ $json.refresh_token }}`. Devuelve un access_token nuevo que dura 6 horas. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 4. **Google Sheets** – Update en `Config` con el nuevo refresh_token (Strava lo rota, si no lo guardas mañana no entras).
 5. **HTTP Request** – GET a `https://www.strava.com/api/v3/athlete/activities`. Query Parameters: `after` = `={{ Math.floor($now.startOf('day').toSeconds()) }}`, `per_page` = `50`. Headers: `Authorization` = `Bearer {{ $('HTTP Request').item.json.access_token }}`.
 6. **Code** – aplana la respuesta a filas limpias. Código abajo.
@@ -101,6 +101,7 @@ return [{ json: { texto } }];
 - **Límite de la API de Strava**: 100 peticiones cada 15 minutos y 1.000 al día. Con una ejecución nocturna vas sobrado; no pongas el cron cada 5 minutos.
 - **Fitbit en vez de Strava**: mismo esquema pero la URL de token es `https://api.fitbit.com/oauth2/token` con Basic Auth de client_id:secret en base64, y los datos se piden a `https://api.fitbit.com/1/user/-/activities/date/YYYY-MM-DD.json`.
 - **Google Fit**: la API REST antigua está en retirada; si usas Android, exporta a Health Connect y sube el CSV a Drive, y lee ese fichero con un nodo Google Drive en vez de la API.
+- **La pestaña `Config` guarda tokens de acceso**: no compartas esa hoja con nadie, ni con «cualquiera con el enlace», y no la incluyas en copias o exportaciones públicas.
 - **Datos de salud son datos sensibles**: si guardas los de tus clientes, guárdalos en un Drive tuyo, con permisos cerrados, y ten firmado su consentimiento. Y nunca los uses para valorar nada clínico.
 
 ## Cuánto cuesta

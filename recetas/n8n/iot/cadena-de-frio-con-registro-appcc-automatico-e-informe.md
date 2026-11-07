@@ -81,4 +81,4 @@ return [{ json: { equipo, temperatura, min: rango.min, max: rango.max, fuera, fe
 - **Valor legal**: un registro automático suele aceptarse, pero pregunta a tu asesor de APPCC si tu comunidad exige firma o verificación manual periódica; en ese caso añade una casilla de «verificado por» semanal.
 
 ## Cuánto cuesta
-Software 0 €. Hardware: 25 € el ESP32 más 6-8 € por sonda; para 4 equipos, unos 55 €. Broker MQTT gratis autoalojado.
+Software 0 € con n8n autoalojado (n8n Cloud tiene una prueba gratuita temporal y después planes de pago). Hardware: 25 € el ESP32 más 6-8 € por sonda; para 4 equipos, unos 55 €. Broker MQTT gratis autoalojado.

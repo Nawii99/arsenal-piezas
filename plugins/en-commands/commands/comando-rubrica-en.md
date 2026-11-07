@@ -1,9 +1,9 @@
 ---
-name: rubrica
-description: Generates an evaluation rubric (criteria x levels) for a specific task. Activates with /rubrica followed by the description of the task and the grade level.
+name: comando-rubrica-en
+description: Generates an evaluation rubric (criteria x levels) for a specific task. Activates with /comando-rubrica-en followed by the description of the task and the grade level.
 ---
 
-# /rubrica
+# /comando-rubrica-en
 
 Task to evaluate: $ARGUMENTS
 

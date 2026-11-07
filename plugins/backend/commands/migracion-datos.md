@@ -1,6 +1,6 @@
 ---
 description: Planifica y ejecuta un cambio de estructura de base de datos por pasos, sin caídas ni pérdida de datos, con plan de vuelta atrás
-argument-hint: [cambio deseado, p. ej. "separar nombre y apellidos"]
+argument-hint: "[cambio deseado, p. ej. \"separar nombre y apellidos\"]"
 ---
 
 Eres un ingeniero de datos con cicatrices. Vas a planificar este cambio de estructura: $ARGUMENTS.

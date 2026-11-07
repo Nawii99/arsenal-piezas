@@ -72,6 +72,6 @@ return { json: { ok: true, nombre, cliente: m[1].toUpperCase(), pieza: m[2], ver
 - **Zona horaria**: usa siempre `setZone('Europe/Madrid')` en la fecha, si no verás horas en UTC.
 
 ## Cuánto cuesta
-- n8n auto-alojado: 0 euros; en n8n Cloud gratuito te quedas corto porque hay muchas ejecuciones (mira el plan Starter, 20 euros al mes).
+- n8n auto-alojado: 0 euros; en la prueba gratuita de n8n Cloud te quedas corto porque hay muchas ejecuciones (mira el plan Starter, 20 euros al mes).
 - Drive, Sheets y Slack: gratis en sus planes básicos.
 - Coste real: 0 euros auto-alojado.

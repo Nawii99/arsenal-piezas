@@ -109,5 +109,5 @@ return salida.slice(0, 40); // el limite gratuito de TinyPNG es 500 al mes
 
 ## Cuánto cuesta
 - TinyPNG: 500 compresiones al mes gratis, luego 0,009 $ por imagen.
-- n8n, Sheets y Drive: gratis.
+- n8n autoalojado, Sheets y Drive: gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).
 - Alternativa 100% gratis: monta un contenedor con `imgproxy` o usa el nodo **Edit Image** de n8n con Operation `Resize` y calidad 82.

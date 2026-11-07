@@ -42,7 +42,7 @@ Para quien vende un producto digital o SaaS propio y quiere comunicar avances si
 - Integración de Notion: notion.so/my-integrations > New integration > copia el token. Comparte tu base de datos «Changelog» con la integración desde el botón «...» > Connections.
 - Gmail conectado en n8n, y la lista de emails en una hoja de Google Sheets o en tu propio Notion.
 ## Los nodos, en orden
-1) **Webhook**: POST, path `nueva-release`. En GitHub: Settings > Webhooks > Add webhook, Content type `application/json`, evento «Releases» solamente.
+1) **Webhook**: POST, path `nueva-release`. En GitHub: Settings > Webhooks > Add webhook, Content type `application/json`, evento «Releases» solamente. Protégelo: configura un *Secret* en el webhook de GitHub, valida la cabecera `X-Hub-Signature-256` en un nodo Code con ese secreto leído de una variable de entorno y descarta entregas repetidas por `X-GitHub-Delivery`.
 2) **IF**: String, valor 1 `{{ $json.body.action }}`, «is equal to», valor 2 `published`.
 3) **HTTP Request**: GET `https://api.github.com/repos/{{ $json.body.repository.full_name }}/compare/{{ $json.body.release.target_commitish }}...{{ $json.body.release.tag_name }}` con Header Auth `Authorization: Bearer TU_TOKEN`. Si prefieres algo más simple, usa `/commits?since=` con la fecha de la release anterior.
 4) **Code**: limpia los mensajes de commit y descarta ruido.

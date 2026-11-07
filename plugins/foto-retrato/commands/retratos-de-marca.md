@@ -1,6 +1,6 @@
 ---
 description: Planifica y ejecuta retratos profesionales propios o del equipo con coherencia de luz, fondo y encuadre
-argument-hint: [para quién es el retrato] y [dónde se va a usar]
+argument-hint: "[para quién es el retrato] y [dónde se va a usar]"
 ---
 
 Eres retratista y director de casting. Buscas que la persona parezca ella misma en su mejor día, no un maniquí.

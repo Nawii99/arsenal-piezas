@@ -43,7 +43,7 @@ Cada lección termina con un enlace de «he terminado» que apunta a un webhook 
 - En cada lección de tu curso, pon el botón: `https://TU-N8N/webhook/avance?email={{email}}&leccion=3`. Si tu plataforma no permite variables, usa un formulario de una línea donde escriban su email.
 
 ## Los nodos, en orden
-1. **Webhook** — método `GET`, path `avance`, Respond `Using Respond to Webhook Node`.
+1. **Webhook** — método `GET`, path `avance`, Respond `Using Respond to Webhook Node`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Google Sheets** (`Get Row(s)`) — busca por `email` = `{{ $json.query.email }}`.
 3. **Code** — valida que la lección declarada sea la siguiente real y evita saltos. Código abajo.
 4. **IF** — `{{ $json.valido }}` *is true*.

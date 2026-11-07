@@ -11,7 +11,7 @@ Flujo de n8n que lee tu hoja de localización (una fila por clave, una columna p
 ## Cómo usarla
 
 1. 1. Prepara la hoja loc con el máximo de caracteres por clave
-2. 2. Pon tu clave de DeepL y el canal de Slack
+2. 2. Guarda tu clave de DeepL en una credencial de n8n y elige el canal de Slack
 3. 3. Revisa las filas marcadas antes de integrar la traducción
 
 ## Cuándo usarla
@@ -38,14 +38,14 @@ Para desarrolladores que lanzan en inglés, francés, alemán, italiano y portug
 - n8n.
 - Cuenta de DeepL API Free: deepl.com/pro-api → plan gratuito → clave de API (termina en `:fx`). Da 500.000 caracteres al mes gratis.
 - Hoja de Google «loc» con columnas: clave, contexto, max_caracteres, es, en, fr, de, it, pt, revisar.
-- Credencial de Google Sheets y webhook de Slack (o Discord, da igual).
+- Credencial de Google Sheets y credencial de Slack (o Discord, da igual). Las claves y URLs de webhook van solo en credenciales de n8n, nunca escritas en un nodo.
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Cron `0 7 * * 1-5`, de lunes a viernes a las 7:00. También puedes usar **Google Sheets Trigger** con «Row Updated» si prefieres que salte al editar.
 2. **Google Sheets** («Get Row(s)») — Trae toda la hoja «loc».
 3. **Code** «Pendientes» — Deja solo las filas con `es` relleno y algún idioma vacío, y genera un item por par fila+idioma.
 4. **Loop Over Items** — Lote de 50: DeepL admite varios textos por petición.
-5. **HTTP Request** — POST `https://api-free.deepl.com/v2/translate`, cabecera `Authorization: DeepL-Auth-Key TU_CLAVE:fx`, cuerpo JSON: `{ "text": ["..."], "source_lang": "ES", "target_lang": "EN", "tag_handling": "xml", "ignore_tags": ["x"] }`.
+5. **HTTP Request** — POST `https://api-free.deepl.com/v2/translate`, Authentication: Generic Credential Type > Header Auth con una credencial (Name `Authorization`, Value `DeepL-Auth-Key ` seguido de tu clave, que termina en `:fx`); la clave va solo en la credencial, nunca escrita en el nodo, porque un flujo exportado se llevaría la clave. Cuerpo JSON: `{ "text": ["..."], "source_lang": "ES", "target_lang": "EN", "tag_handling": "xml", "ignore_tags": ["x"] }`.
 6. **Code** «Validación» — Comprueba variables y longitud (código abajo).
 7. **IF** — `{{ $json.valida }}` es true.
 8. **Google Sheets** («Update Row», rama true) — Escribe la traducción en la columna del idioma, buscando por la columna `clave`.

@@ -35,7 +35,7 @@ Convierte 40 minutos de investigación por cliente en 20 segundos: con 10 client
 Rellenas un formulario con la URL del cliente, el flujo descarga la home y sus hojas de estilo, extrae los colores más repetidos, las familias tipográficas y el logo, y crea un Google Doc de arranque de proyecto. Para diseñadores de marca y agencias que hacen rediseños.
 
 ## Lo que necesitas antes
-- Cuenta de n8n (el Form Trigger existe en la versión gratuita).
+- Cuenta de n8n (el Form Trigger existe en n8n autoalojado, la Community Edition gratuita; n8n Cloud solo tiene prueba gratuita temporal y después es de pago.).
 - Credencial de Google Docs en n8n (Google Cloud, activar Google Docs API y Google Drive API).
 - Credencial de Gmail si quieres el aviso.
 - Nada más: no hace falta API de pago.

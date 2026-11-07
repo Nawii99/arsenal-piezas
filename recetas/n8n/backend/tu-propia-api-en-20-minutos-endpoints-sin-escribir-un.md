@@ -43,7 +43,7 @@ Está pensado para que tu landing en HTML, tu app móvil o el Zapier de un clien
 - Redis si quieres límite de peticiones serio (opcional; abajo hay una versión sin Redis).
 
 ## Los nodos, en orden (endpoint de listado)
-1. **Webhook** — HTTP Method: GET, Path: `api/productos`, Authentication: Header Auth (credencial con Name `X-API-Key` y Value tu clave), Respond: Using 'Respond to Webhook' node. En Options activa "Raw Body" desactivado y "Response Headers" con `Access-Control-Allow-Origin: https://tudominio.com`.
+1. **Webhook** — HTTP Method: GET, Path: `api/productos`, Authentication: Header Auth (credencial con Name `X-API-Key` y Value tu clave; la clave solo vive en esa credencial, nunca escrita en el nodo), Respond: Using 'Respond to Webhook' node. En Options activa "Raw Body" desactivado y "Response Headers" con `Access-Control-Allow-Origin: https://tudominio.com`.
 2. **Code** (nombre: Validar parámetros) — saca `page`, `limit`, `categoria` y `q` de la query, con valores por defecto y topes. Código abajo.
 3. **IF** (nombre: ¿Parámetros válidos?) — `={{ $json.error === null }}` is true.
 4. **Postgres** (nombre: Consultar) — Operation: Execute Query, con la consulta parametrizada de abajo. **Nunca** metas texto del usuario dentro del SQL con una expresión: usa Query Parameters.
@@ -87,7 +87,7 @@ return [{ json: { datos, meta: { pagina: p.page, por_pagina: p.limit, total, pag
 ```
 
 ## El endpoint POST /api/contacto
-1. **Webhook** — POST, Path: `api/contacto`, Respond: Using 'Respond to Webhook'.
+1. **Webhook** — POST, Path: `api/contacto`, Respond: Using 'Respond to Webhook'. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** (nombre: Validar) — comprueba que hay nombre, email con formato válido y mensaje de menos de 2.000 caracteres; rechaza si el campo oculto `website` viene relleno (trampa antibots).
 3. **Postgres** — INSERT en la tabla contactos.
 4. **Gmail** — te avisa a ti.
@@ -108,7 +108,7 @@ return [{ json: { ...$json, bloqueado, ip } }];
 Detrás, un **IF** que si `bloqueado` es true responde con código 429.
 
 ## Cómo probarla
-- `curl -H 'X-API-Key: TU_CLAVE' 'https://api.tudominio.com/webhook/api/productos?limit=5&categoria=camisetas'` y mira que el JSON tenga `datos` y `meta`.
+- `curl -H "X-API-Key: $API_KEY" 'https://api.tudominio.com/webhook/api/productos?limit=5&categoria=camisetas'`, habiendo hecho antes en tu terminal `read -s API_KEY && export API_KEY` (así la clave no queda escrita en el comando, en el historial ni en ningún archivo) y mira que el JSON tenga `datos` y `meta`.
 - Prueba sin la cabecera: debe darte 403.
 - Prueba con `limit=99999`: debe capar a 100.
 - Prueba con `categoria=' OR 1=1--`: no debe devolver de más ni petar. Si devuelve todo, has metido el parámetro en el SQL en vez de usar Query Parameters. Arréglalo.

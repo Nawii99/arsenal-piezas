@@ -27,7 +27,7 @@ Si el usuario no sabe responder, no te bloquees: audita con lo que hay y marca l
 5. Eventos. Para pagos únicos: `checkout.session.completed` y `payment_intent.payment_failed`. Para suscripciones: `invoice.paid`, `invoice.payment_failed`, `customer.subscription.updated`, `customer.subscription.deleted`. ¿Qué pasa cuando falla un cobro mensual? ¿Se corta el acceso? ¿Cuándo? Si no está decidido, señálalo como decisión de negocio pendiente, no como bug.
 6. Estado de pago. ¿Se comprueba que el pago está realmente pagado (`payment_status == 'paid'`) y no solo que llegó el evento? Con transferencias o métodos diferidos el evento llega antes que el dinero.
 7. Importes. ¿Se usa el importe que dice Stripe o el que dice tu base de datos? Si alguien manipula el precio en el cliente, el importe cobrado y el servicio entregado no cuadran. Compara.
-8. Secretos. ¿Hay alguna clave `sk_live_` o `whsec_` escrita en el código? Si está en el repositorio, hay que rotarla en el panel de Stripe, no basta con borrarla.
+8. Secretos. ¿Hay alguna clave `sk_live_` o `whsec_` escrita en el código? Si está en el repositorio, hay que rotarla en el panel de Stripe, no basta con borrarla. En el informe enmascara el valor (solo `sk_live_…` o los 4 primeros y últimos caracteres): nunca copies la clave completa.
 9. Errores. Si algo falla a mitad (la factura se emite pero la base de datos no se actualiza), ¿queda rastro para arreglarlo a mano? Un log con `event.id` y qué paso falló es suficiente.
 10. Reembolsos y disputas. ¿Se maneja `charge.refunded` y `charge.dispute.created`? Si no, un cliente reembolsado sigue con acceso y sin factura rectificativa.
 
@@ -42,6 +42,7 @@ Un informe corto con este formato, sin jerga:
 
 ## Qué NO hacer
 
+- No copiar nunca en el informe el valor completo de una clave o secreto: solo archivo y línea.
 - No reescribir el código. Señalas; arregla otro. Si el usuario pide el arreglo, que lo pida después con el informe delante.
 - No aprobar un webhook sin verificación de firma 'porque es un proyecto pequeño'. Los proyectos pequeños también reciben tráfico malicioso automatizado.
 - No inventar cómo se comporta Stripe. Si no estás seguro de un evento o un plazo de reintento, dilo y pon [comprobar en la documentación de Stripe].

@@ -41,7 +41,7 @@ Para desarrolladores con tests o despliegues en Actions que se cansan de abrir e
 - Clave de API de OpenAI.
 - n8n accesible desde internet y un bot de Telegram.
 ## Los nodos, en orden
-1) **Webhook**: POST, path `actions-fallo`. En el repo: Settings > Webhooks, marca solo el evento «Workflow runs».
+1) **Webhook**: POST, path `actions-fallo`. En el repo: Settings > Webhooks, marca solo el evento «Workflow runs». Protégelo: configura un *Secret* en el webhook de GitHub, valida la cabecera `X-Hub-Signature-256` en un nodo Code con ese secreto leído de una variable de entorno y descarta entregas repetidas por `X-GitHub-Delivery`.
 2) **IF**: dos condiciones con AND. String `{{ $json.body.action }}` «is equal to» `completed`; String `{{ $json.body.workflow_run.conclusion }}` «is equal to» `failure`.
 3) **HTTP Request** (listar jobs): GET `{{ $json.body.workflow_run.jobs_url }}`, Header Auth `Authorization: Bearer TU_TOKEN`, cabecera `Accept: application/vnd.github+json`.
 4) **Code** (quedarse con el job fallido):

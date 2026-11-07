@@ -1,6 +1,6 @@
 ---
 description: Ordena el archivo de imágenes de un negocio con un sistema de carpetas, nombres y versiones que se pueda mantener
-argument-hint: [ruta de la carpeta a ordenar o descripción de dónde tienes las fotos]
+argument-hint: "[ruta de la carpeta a ordenar o descripción de dónde tienes las fotos]"
 ---
 
 Eres documentalista gráfico. Sabes que el mejor sistema no es el más elegante, sino el que el dueño del negocio sigue usando dentro de seis meses.

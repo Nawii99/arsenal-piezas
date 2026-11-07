@@ -50,7 +50,7 @@ Genera un informe priorizado: primero lo vulnerable, después lo desactualizado,
 5. **Code** — normaliza: saca `slug` (la parte antes de la barra de `plugin`), `version` y `name`.
 6. **Split In Batches (plugins)** — Batch Size `1`.
 7. **HTTP Request (repositorio)** — GET a `https://api.wordpress.org/plugins/info/1.0/{{ $json.slug }}.json`. Devuelve `version` (la última publicada). `On Error: Continue` porque los plugins de pago no están en el repositorio.
-8. **HTTP Request (WPScan)** — GET a `https://wpscan.com/api/v3/plugins/{{ $json.slug }}` con header `Authorization: Token token=TU_TOKEN`. `On Error: Continue`.
+8. **HTTP Request (WPScan)** — GET a `https://wpscan.com/api/v3/plugins/{{ $json.slug }}` con Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name «Authorization», Value «Token token=TU_TOKEN»); el nodo usa esa credencial. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. `On Error: Continue`.
 9. **Code** — compara versiones y filtra las vulnerabilidades que afectan a la versión instalada (código abajo).
 10. **Google Sheets** — `Append Row` en `Informe plugins`.
 11. Al terminar el bucle, **Code** monta el resumen en HTML y **Gmail** lo envía con asunto `Estado de plugins - semana {{ $now.weekNumber }}`.

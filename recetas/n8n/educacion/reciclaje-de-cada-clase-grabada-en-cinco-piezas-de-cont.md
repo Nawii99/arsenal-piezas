@@ -46,7 +46,7 @@ Detecta un vídeo nuevo en la carpeta de grabaciones, extrae el audio, lo transc
 ## Los nodos, en orden
 1. **Google Drive Trigger** — `File Created` en la carpeta `Grabaciones`, cada hora.
 2. **Google Drive** (`Download`) — el vídeo.
-3. **Execute Command** — `ffmpeg -i /tmp/{{ $json.fileName }} -vn -ac 1 -ar 16000 -b:a 32k /tmp/audio.mp3`. Si tu n8n no permite comandos, sáltatelo y sube directamente audios en vez de vídeos.
+3. **Execute Command** — antes guarda el vídeo con **Read/Write Files from Disk** (Write) en `/tmp/{{ $('Google Drive Trigger').item.json.id }}` (el ID de Drive como nombre interno; ffmpeg reconoce el formato por el contenido) y luego: `ffmpeg -i /tmp/{{ $('Google Drive Trigger').item.json.id }} -vn -ac 1 -ar 16000 -b:a 32k /tmp/audio.mp3`. Si tu n8n no permite comandos, sáltatelo y sube directamente audios en vez de vídeos.
 4. **Read/Write Files from Disk** (operación `Read`) — `/tmp/audio.mp3`.
 5. **OpenAI** (recurso `Audio`, operación `Transcribe a Recording`) — modelo `whisper-1`, idioma `es`.
 6. **Code** — trocea la transcripción si pasa de 40.000 caracteres y añade marcas de tiempo aproximadas. Código abajo.
@@ -85,6 +85,7 @@ return [{ json: { texto, caracteres: t.length, minutos_aprox: Math.round(t.split
 - **Sin ffmpeg**: usa n8n Cloud con audios ya extraídos, o graba directamente en audio.
 - **Minutajes inventados**: Whisper devuelve segmentos con tiempo si pides `verbose_json`; si usas texto plano, el índice será aproximado. Dilo a tus alumnos o pide el formato con timestamps.
 - **Notion y bloques largos**: cada bloque de texto admite 2.000 caracteres. Trocea los apuntes en párrafos antes de enviarlos.
+- **Nombres de archivo con comillas o símbolos**: un nombre como `a"; rm -rf ~; ".mp4` ejecutaría órdenes si entrase en el comando; por eso ffmpeg solo ve el ID de Drive y el nombre original no se usa en ninguna ruta.
 
 ## Cuánto cuesta
 - Whisper: unos 0,006 dólares por minuto de audio. Una clase de 90 minutos, unos 0,50 euros.

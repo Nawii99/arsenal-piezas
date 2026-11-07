@@ -6,7 +6,7 @@ Cuando llega un encargo nuevo por formulario, crea sola el repositorio del proye
 
 ## Qué es y qué hace
 
-Receta de n8n que, al llegar un encargo por formulario, crea el repositorio de GitHub del proyecto a partir de tu plantilla de React Native o Flutter, pone el nombre del cliente y avisa cuando está listo. Entra los datos del encargo y sale un repositorio con la estructura base. Usa el plan gratuito de GitHub; en n8n Cloud el plan gratuito tiene límite de flujos activos, mientras que autoalojado no lo tiene.
+Receta de n8n que, al llegar un encargo por formulario, crea el repositorio de GitHub del proyecto a partir de tu plantilla de React Native o Flutter, pone el nombre del cliente y avisa cuando está listo. Entra los datos del encargo y sale un repositorio con la estructura base. Usa el plan gratuito de GitHub; n8n Cloud solo ofrece una prueba gratuita temporal y después es de pago, mientras que autoalojado (Community Edition) es gratis.
 
 ## Cómo usarla
 
@@ -38,7 +38,7 @@ Cada vez que aceptas un encargo de app nueva, en vez de crear el repositorio a m
 
 ## Cuentas que hacen falta
 - Cuenta de GitHub (o GitLab) con un repositorio plantilla ya preparado con la estructura base de la app, en React Native o Flutter. El plan gratuito de GitHub es suficiente para esto.
-- Cuenta de n8n, en la nube (n8n.cloud, plan gratuito limitado a 5 flujos activos y a un número de ejecuciones al mes) o autoalojado, sin ese límite si lo instalas tú.
+- Cuenta de n8n, en la nube (n8n.cloud, con prueba gratuita temporal y después planes de pago) o autoalojado (Community Edition, gratis), sin cuota de plan si lo instalas tú.
 - Un formulario, con Typeform, Google Forms o el formulario nativo de n8n, donde se apunta el nombre del proyecto, el framework y el nombre del cliente.
 - Cuenta de email o de Slack para el aviso final.
 

@@ -37,11 +37,11 @@ Cada hora mira si hay reseñas nuevas de tu app en Google Play y en App Store y 
 Es para quien tiene una app publicada y no quiere entrar cada día a dos paneles distintos para enterarse de que alguien le ha puesto una estrella.
 
 ## Lo que necesitas antes
-Cuenta de n8n (gratis auto-alojado en tu ordenador o servidor, o el plan gratuito de n8n Cloud).
+Cuenta de n8n (gratis si lo auto-alojas en tu ordenador o servidor con la Community Edition; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).
 Para Android: la API de reseñas de Google Play. Entra en Google Cloud Console, crea un proyecto, activa «Google Play Android Developer API», crea una cuenta de servicio y descarga el JSON de la clave. Luego en Play Console, Usuarios y permisos, invita al email de esa cuenta de servicio con permiso de ver y responder reseñas.
 Para iOS: no hace falta clave, App Store usa un RSS público. La URL es https://itunes.apple.com/es/rss/customerreviews/id=TU_ID_DE_APP/sortBy=mostRecent/json . El ID lo sacas de la URL de tu app en el App Store, es el número que va detrás de «id».
-Un bot de Telegram: escribe a @BotFather, comando /newbot, te da un token. Escríbele algo al bot y saca tu chat_id en https://api.telegram.org/bot TU_TOKEN /getUpdates.
-Clave de OpenAI en platform.openai.com, apartado API keys (opcional, solo para el borrador de respuesta).
+Un bot de Telegram: escribe a @BotFather, comando /newbot, te da un token. Escríbele algo al bot y saca tu chat_id abriendo la URL /getUpdates de la API de Telegram en tu navegador o con curl desde tu ordenador (es la única vez que el token va en una URL; no la pegues en ningún nodo ni la compartas). Después guarda el token solo en una credencial «Telegram API» de n8n.
+Clave de OpenAI en platform.openai.com, apartado API keys (opcional, solo para el borrador de respuesta). Se guarda en una credencial «OpenAI API» de n8n, nunca escrita dentro de un nodo: un flujo exportado se llevaría la clave.
 
 ## Los nodos, en orden
 1. «Schedule Trigger». Interval: Hours, cada 1 hora.
@@ -64,7 +64,7 @@ for (const e of entries) {
 }
 return out;
 ```
-4. «HTTP Request» (Android). Method GET, URL https://androidpublisher.googleapis.com/androidpublisher/v3/applications/TU_PACKAGE_NAME/reviews . Authentication: Predefined Credential Type, Google Service Account, y pegas el JSON de la cuenta de servicio. En Scope pon https://www.googleapis.com/auth/androidpublisher.
+4. «HTTP Request» (Android). Method GET, URL https://androidpublisher.googleapis.com/androidpublisher/v3/applications/TU_PACKAGE_NAME/reviews . Authentication: Predefined Credential Type, Google Service Account, y creas una credencial con el JSON de la cuenta de servicio (no lo pegues en el propio nodo ni en un Code: un flujo exportado se llevaría la clave). En Scope pon https://www.googleapis.com/auth/androidpublisher.
 5. «Code» (normalizar Android). Código completo:
 ```js
 const reviews = $input.first().json.reviews || [];
@@ -87,7 +87,7 @@ return out;
 7. «Google Sheets» (operación Lookup en una hoja «reseñas», columna id). Busca si el id ya está guardado. Esto es lo que evita que te avise dos veces de la misma reseña.
 8. «IF». Condición: el resultado del Lookup está vacío. Rama true sigue, rama false no hace nada.
 9. «OpenAI» (Message a model). Modelo gpt-4o-mini. Prompt: «Eres el responsable de atención al cliente de la app TU_APP. Escribe una respuesta pública de máximo 350 caracteres, en español de España, tuteando, sin excusas largas. Reseña de {{ $json.estrellas }} estrellas: {{ $json.texto }}».
-10. «Telegram» (Send Message). Chat ID el tuyo. Texto: «{{ $json.tienda }} · {{ $json.estrellas }}★ · v{{ $json.version }} — {{ $json.autor }}: {{ $json.texto }} — Borrador: {{ $json.message.content }}».
+10. «Telegram» (Send Message). Credencial «Telegram API» con el token del bot (nunca escrito en el nodo). Chat ID el tuyo. Texto: «{{ $json.tienda }} · {{ $json.estrellas }}★ · v{{ $json.version }} — {{ $json.autor }}: {{ $json.texto }} — Borrador: {{ $json.message.content }}».
 11. «Google Sheets» (Append) guardando id, tienda, estrellas, fecha, para que no se repita.
 
 ## Cómo probarla

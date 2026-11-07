@@ -44,10 +44,10 @@ Para desarrolladores que venden juegos en itch.io y packs de modelos, texturas o
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Cron `30 23 * * *` (23:30, zona Europe/Madrid).
-2. **HTTP Request** «itch juegos» — GET `https://itch.io/api/1/TU_CLAVE/my-games`. Devuelve la lista con sus IDs.
+2. **HTTP Request** «itch juegos» — GET `https://itch.io/api/1/{{ $env.ITCH_API_KEY }}/my-games`. La clave de itch.io se guarda en una variable de entorno de n8n (`ITCH_API_KEY`) y el nodo la lee de ahí. Devuelve la lista con sus IDs. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 3. **Split Out** — Sobre el campo `games`, para trabajar juego a juego.
-4. **HTTP Request** «itch compras» — GET `https://itch.io/api/1/TU_CLAVE/game/{{ $json.id }}/purchases`. Devuelve las compras con fecha y precio.
-5. **HTTP Request** «Gumroad» — GET `https://api.gumroad.com/v2/sales?access_token=TU_TOKEN&after={{ $now.minus(1,'days').toFormat('yyyy-MM-dd') }}`.
+4. **HTTP Request** «itch compras» — GET `https://itch.io/api/1/{{ $env.ITCH_API_KEY }}/game/{{ $json.id }}/purchases`. Devuelve las compras con fecha y precio.
+5. **HTTP Request** «Gumroad» — GET `https://api.gumroad.com/v2/sales?after={{ $now.minus(1,'days').toFormat('yyyy-MM-dd') }}`. Authentication: Generic Credential Type > Query Auth, con una credencial de n8n (Name `access_token`, Value tu token de Gumroad). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 6. **Merge** — Modo «Append» para juntar ambas fuentes.
 7. **Code** — Normaliza monedas, filtra el día de hoy, descuenta comisiones y agrupa por producto (código abajo).
 8. **Google Sheets** («Append Row») — Una fila por producto y día.
@@ -60,6 +60,9 @@ Para desarrolladores que venden juegos en itch.io y packs de modelos, texturas o
 ```javascript
 const hoy = new Date().toISOString().slice(0, 10);
 const filas = {};
+// Ajusta cada tasa a la comisión real de tu cuenta en esa plataforma
+const TASA_ITCH = 0.10;     // itch.io: la parte de la plataforma la eliges tú (por defecto 10 %)
+const TASA_GUMROAD = 0.10;  // Gumroad: revisa la de tu plan actual
 for (const item of $input.all()) {
   const j = item.json;
   let plataforma, producto, bruto, fecha;
@@ -81,7 +84,7 @@ for (const item of $input.all()) {
   filas[clave].bruto_eur += bruto;
 }
 return Object.values(filas).map(f => {
-  const tasa = f.plataforma === 'Gumroad' ? 0.10 : 0.10;
+  const tasa = f.plataforma === 'Gumroad' ? TASA_GUMROAD : TASA_ITCH;
   const comision = Number((f.bruto_eur * tasa).toFixed(2));
   return { json: { ...f, bruto_eur: Number(f.bruto_eur.toFixed(2)), comision_eur: comision,
                    neto_eur: Number((f.bruto_eur - comision).toFixed(2)) } };
@@ -95,7 +98,7 @@ return Object.values(filas).map(f => {
 
 ## Qué puede salir mal
 - **Moneda**: si vendes en dólares, los importes vienen en USD. Añade un **HTTP Request** a `https://api.frankfurter.app/latest?from=USD&to=EUR` (gratis, sin clave) y multiplica.
-- **Comisiones**: en itch.io la parte que se lleva la plataforma la eliges tú (por defecto 10 %) y hay que restar además la comisión de pago. Ajusta la tasa del código a la tuya real.
+- **Comisiones**: en itch.io la parte que se lleva la plataforma la eliges tú (por defecto 10 %) y hay que restar además la comisión de pago. Ajusta `TASA_ITCH` y `TASA_GUMROAD` en el código a las de tu cuenta real: el código aplica a cada venta la tasa de su plataforma.
 - **Devoluciones**: no las descuenta. Añade una columna manual «ajustes» y réstala en el resumen mensual.
 - **Corte del día**: si ejecutas a las 23:30, las ventas de 23:30 a 00:00 se pierden. Ejecuta a las 00:30 y pide el día anterior, es más limpio.
 - **Paginación**: Gumroad devuelve páginas. Si vendes mucho, sigue el campo `next_page_url` con un **Loop Over Items**.

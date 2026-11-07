@@ -50,7 +50,7 @@ interval:
 - Bot de Telegram.
 
 ## Los nodos, en orden (workflow 1: recibir latidos)
-1. **Webhook**: método GET, path `latido`, Respond: Immediately con código 200.
+1. **Webhook**: método GET, path `latido`, Respond: Immediately con código 200. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** «Leer parámetros»: normaliza los datos de la query.
 3. **Google Sheets** (Operation: Append or Update, Matching Column: `id`): actualiza la fila del dispositivo con `last_seen`, batería, rssi, fw y pone `avisado` a false.
 
@@ -91,4 +91,4 @@ return [{ json: { hayProblemas: problemas.length > 0, texto: 'Revisión de dispo
 - **Hora**: guarda `last_seen` con `{{ $now.toISO() }}` en formato ISO, nunca en texto español, o las restas fallan.
 
 ## Cuánto cuesta
-0 € con n8n autoalojado, Google Sheets y Telegram. En n8n Cloud, con 10 dispositivos latiendo cada 10 minutos son 1.440 ejecuciones diarias: te sales del plan gratuito, así que sube el intervalo a 30 minutos o autoaloja.
+0 € con n8n autoalojado, Google Sheets y Telegram. En n8n Cloud (prueba gratuita temporal y después planes de pago con cupo de ejecuciones), con 10 dispositivos latiendo cada 10 minutos son 1.440 ejecuciones diarias: te pasarás del cupo, así que sube el intervalo a 30 minutos o autoaloja.

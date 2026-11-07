@@ -52,7 +52,7 @@ Cada día busca tu nombre de marca en la App Store (y opcionalmente en Google Pl
 8. **IF** — el resultado no está ya en la hoja.
 9. **Google Sheets** — Append Row con todos los datos y estado `nuevo`.
 10. **Telegram** — Send Message: `⚠️ Posible copia: {{$json.nombre}} de {{$json.desarrollador}} (parecido {{$json.parecido}})\n{{$json.url}}\nDenuncia: https://www.apple.com/legal/internet-services/itunes/appstorenotices/` más el enlace a la hoja.
-11. Opcional Android, **HTTP Request** a `https://serpapi.com/search.json` con `engine=google_play`, `store=apps`, `q={{ $json.termino }}`, `gl=es`, `hl=es`, `api_key=TU_CLAVE`, y el mismo Code de comparación.
+11. Opcional Android, **HTTP Request** a `https://serpapi.com/search.json` con `engine=google_play`, `store=apps`, `q={{ $json.termino }}`, `gl=es`, `hl=es`, con Authentication: Generic > Query Auth con una credencial de n8n (Name `api_key`, Value tu clave), y el mismo Code de comparación. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él.
 
 ## El trozo de código (nodo Code «Comparar nombres»)
 ```javascript

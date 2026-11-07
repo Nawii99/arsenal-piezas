@@ -52,7 +52,7 @@ const fecha = new Date().toISOString().slice(0, 10);
 return [{ json: { ...$json, archivo: `${fecha}_${limpia($json.Nombre)}_${limpia($json.Empresa)}.mp4` } }];
 ```
 4. **Google Drive** (Upload File) — carpeta `Testimonios`, File Name `{{ $json.archivo }}`, Input Binary Field: el nombre que le dio el formulario (normalmente `Tu_vídeo` — míralo en la salida del trigger).
-5. **HTTP Request** (transcribir) — POST `https://api.openai.com/v1/audio/transcriptions`, Header Auth con tu clave, multipart: `file` binario, `model` = `whisper-1`, `language` = `es`, `response_format` = `text`. Si el vídeo pasa de 25 MB, extrae el audio antes con **Execute Command** y ffmpeg (`-vn -ac 1 -ar 16000 -b:a 32k`).
+5. **HTTP Request** (transcribir) — POST `https://api.openai.com/v1/audio/transcriptions`, Header Auth con tu clave, multipart: `file` binario, `model` = `whisper-1`, `language` = `es`, `response_format` = `text`. Si el vídeo pasa de 25 MB, extrae el audio antes: guarda el vídeo con **Read/Write Files from Disk** en `/tmp/{{ $('Code').item.json.archivo }}` (el nombre limpio del paso 3, nunca el nombre con el que lo subió el cliente) y lanza un **Execute Command** con `ffmpeg -y -i "/tmp/{{ $('Code').item.json.archivo }}" -vn -ac 1 -ar 16000 -b:a 32k "/tmp/{{ $('Code').item.json.archivo }}.mp3"`.
 6. **OpenAI** (Message a Model) — User: `De esta transcripción de un testimonio, devuelve JSON con: frase (la cita más potente, literal, máximo 200 caracteres), resultado (el beneficio concreto que menciona, o "no lo dice"), apto (sí/no según si se entiende bien y es publicable). Transcripción: {{ $json.data }}`.
 7. **Google Sheets** (Append Row) — todos los datos, incluida la frase.
 8. **Gmail** (Send Message) — a ti: asunto «Nuevo testimonio de {{ nombre }}», cuerpo con la frase, el enlace al archivo en Drive y si autorizó el uso.
@@ -66,9 +66,10 @@ return [{ json: { ...$json, archivo: `${fecha}_${limpia($json.Nombre)}_${limpia(
 - **Tamaño de subida**: n8n limita el cuerpo de las peticiones; sube `N8N_PAYLOAD_SIZE_MAX=256` (en MB) y avisa en el formulario de que graben menos de 2 minutos.
 - **Vídeos verticales de iPhone girados**: guarda el original y no lo reprocese nadie sin `-vf "scale=..,transpose"`; ffmpeg respeta la rotación si usas `-c copy`.
 - **Permiso de imagen**: guarda siempre la respuesta del campo de autorización. Publicar la cara de alguien sin consentimiento es un problema legal, no un detalle.
+- **Nombre del archivo del cliente**: puede traer `$(id)` o comillas y se ejecutaría en la terminal; si extraes el audio, en disco y en el comando usa solo `archivo`, el del paso 3.
 - **Ficheros con el mismo nombre**: la fecha y el nombre del cliente lo evitan; si repite, añade `{{ $execution.id }}`.
 
 ## Cuánto cuesta
-- Tally: gratis hasta cierto volumen de respuestas con archivos. El Form Trigger de n8n es gratis del todo.
+- Tally: gratis hasta cierto volumen de respuestas con archivos. El Form Trigger de n8n es gratis del todo en n8n autoalojado (Community Edition); n8n Cloud solo tiene prueba gratuita temporal y después es de pago.
 - Transcripción: unos 0,01 € por testimonio de 90 segundos.
 - Drive, Gmail y n8n auto-alojado: 0 €.

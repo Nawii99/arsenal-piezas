@@ -1,6 +1,6 @@
 ---
 name: revisor-de-contraste-y-accesibilidad
-description: Use this agent when the user needs to check color contrast and legibility of a website, landing page, poster or brand palette against WCAG thresholds, and wants corrected HEX values that keep the brand look. Use it before publishing or printing anything with text over color, images or gradients.
+description: Úsalo cuando el usuario necesite comprobar el contraste de color y la legibilidad de un sitio web, landing page, cartel o paleta de marca frente a los umbrales WCAG, y quiera valores HEX corregidos que mantengan el aspecto de la marca. Úsalo antes de publicar o imprimir cualquier cosa con texto sobre color, imágenes o degradados.
 tools: Read, Write, Bash, WebFetch, Grep
 ---
 

@@ -1,11 +1,11 @@
 ---
-name: buscar-comandos-cobros-facturas
+name: buscar-comandos-cobros-facturas-en
 description: Searches for commands published by the community for Stripe payments and invoicing, classifies them by risk, and reviews them before installing any. Use it when you need to automate a payment or invoice step and don't know whether something reliable already exists.
 ---
 
 # Find and review payments and invoicing commands
 
-How to use it: save this text in `.claude/commands/buscar-comandos-cobros-facturas.md`. Type `/buscar-comandos-cobros-facturas` followed by what you need. Example: `/buscar-comandos-cobros-facturas export the month's Stripe payments to a spreadsheet`.
+How to use it: save this text in `.claude/commands/buscar-comandos-cobros-facturas.md`. Type `/buscar-comandos-cobros-facturas-en` followed by what you need. Example: `/buscar-comandos-cobros-facturas-en export the month's Stripe payments to a spreadsheet`.
 What was requested: $ARGUMENTS
 
 ## What it does
@@ -23,7 +23,7 @@ Tracks down Claude Code commands, skills, and plugins that do that task, reads t
 1. Turn the task into three or four searches, in Spanish and in English. Use web search and, if connected, the GitHub connector. If you can't, ask them to paste links or texts.
 2. Cite only what you have opened in this conversation. Don't invent commands, repositories, or API function names.
 3. Keep five candidates at most and classify each one. Level 1: read-only (listing payments, exporting). Level 2: prepares documents (invoice drafts, payment links). Level 3: moves money or writes to customers (charging, refunding, canceling subscriptions, sending invoices).
-4. Review each one. License: without a license file there is no permission to reuse or sell it. What key it asks for: if it requires a Stripe production key (starts with sk_live_), discard it; it must be usable with a test key (sk_test_) or with a restricted read-only key. Whether it has a test mode. Whether it asks for human confirmation before each Level 3 action. Whether it leaves a log of what it does. Whether it stores customer data anywhere. Whether it is recent: payment APIs change and an old command may fail or do something different.
+4. Review each one. License: without a license file there is no permission to reuse or sell it. What key it asks for: if it requires a Stripe production secret key, or asks you to type it inside the command itself, a node, or a header, discard it; it must read the key from an environment variable or a credential, and be usable with a test key or with a restricted read-only key. Whether it has a test mode. Whether it asks for human confirmation before each Level 3 action. Whether it leaves a log of what it does. Whether it stores customer data anywhere. Whether it is recent: payment APIs change and an old command may fail or do something different.
 5. Give a verdict per candidate: USE, USE WITH CHANGES, or DISCARD. Fixed rule: a Level 3 command that doesn't ask for confirmation on every action is discarded.
 6. If none passes, say so and propose safer alternatives: the features of the payments and invoicing dashboard itself, a spreadsheet export reviewed by a person, or an automation in n8n with manual approval. Don't improvise payment code.
 7. If the person chooses one, test it only in test mode, with a test account and made-up data. Describe what each run did and compare it with what it was supposed to do.
@@ -33,7 +33,7 @@ A Markdown table: Name | What it does | Level (1, 2, or 3) | License | Key it as
 
 ## What NOT to do
 - Don't run the candidate commands while reviewing them. They are only read.
-- Don't ask for, paste, or store production keys (sk_live_), passwords, or card data, neither in the conversation nor in files. Card data must never pass through here.
+- Don't ask for, paste, or store Stripe production secret keys, passwords, or card data, neither in the conversation nor in files; keys live only in environment variables or credentials. Card data must never pass through here.
 - Don't charge, refund, cancel, or send invoices to real customers from this conversation.
 - Don't accept commands that delete, renumber, or edit invoices that have already been issued. In Spain an issued invoice is corrected with another invoice; it is not deleted.
 - Don't accept a command that generates invoices on its own. Invoicing software is subject to Spanish Tax Agency (Agencia Tributaria) rules (the Verifactu system): your accountant (gestor) must say whether it affects you and from when [DATE: CONFIRM WITH YOUR ACCOUNTANT].

@@ -1,6 +1,6 @@
 ---
 description: Audita dónde están tus claves y secretos, detecta filtraciones en el código e historial, y da el procedimiento de rotación servicio por servicio
-argument-hint: [proyecto o servicio concreto, opcional]
+argument-hint: "[proyecto o servicio concreto, opcional]"
 ---
 
 Eres un ingeniero de seguridad práctico. Vas a auditar y ordenar las claves y secretos de: $ARGUMENTS. Si no hay argumento, revisa todo el proyecto actual.

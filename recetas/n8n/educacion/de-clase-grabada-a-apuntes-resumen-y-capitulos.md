@@ -45,7 +45,7 @@ Para formadores online, academias que graban clases y creadores de contenido edu
 ## Los nodos, en orden
 1) **Google Drive Trigger**. Event: File Created. Folder: «Grabaciones». Poll: cada 5 minutos.
 2) **Google Drive** (File > Download). File ID: `{{ $json.id }}`. Property: `data`.
-3) **Execute Command** (solo si es vídeo y tienes ffmpeg). Command: `ffmpeg -i /tmp/{{ $json.name }} -vn -ac 1 -ar 16000 -b:a 32k /tmp/audio.mp3`. Si subes ya el audio, sáltate este nodo.
+3) **Execute Command** (solo si es vídeo y tienes ffmpeg). Antes guarda el vídeo con **Read/Write Files from Disk** (Write) en `/tmp/{{ $('Google Drive Trigger').item.json.id }}`: el ID de Drive como nombre interno (ffmpeg reconoce el formato por el contenido). Command: `ffmpeg -i /tmp/{{ $('Google Drive Trigger').item.json.id }} -vn -ac 1 -ar 16000 -b:a 32k /tmp/audio.mp3`. Después, **Read/Write Files from Disk** (Read) de `/tmp/audio.mp3` en el campo `data`: Execute Command no devuelve archivos y el paso 4 necesita el audio. Si subes ya el audio, sáltate este nodo.
 4) **HTTP Request** para Whisper. Method: POST. URL `https://api.openai.com/v1/audio/transcriptions`. Authentication: Header Auth `Authorization: Bearer TU_CLAVE`. Body Content Type: `multipart/form-data`, con el campo `file` de tipo binario apuntando a `data`, el campo `model` con valor `whisper-1` y el campo `language` con valor `es`.
 5) **Code** (Run Once for Each Item) para partir transcripciones muy largas:
 ```js
@@ -71,6 +71,8 @@ return trozos.map((c, n) => ({ json: { parte: n + 1, total: trozos.length, texto
 - **Se dispara dos veces**: Drive Trigger a veces repite. Guarda el ID del archivo en una hoja y salta si ya está.
 - **Alucinaciones**: pide en el prompt «no inventes nada que no esté en la transcripción; si algo no queda claro, escribe [revisar]».
 - **Privacidad**: si grabas a alumnos, avisa de que se transcribe y no subas datos personales sensibles.
+- **Nombres de archivo con comillas o símbolos**: un nombre como `a"; rm -rf ~; ".mp4` ejecutaría órdenes si entrase en el comando; por eso ffmpeg solo ve el ID de Drive y el nombre original se usa únicamente en el título del documento.
+- **Whisper sin audio tras ffmpeg**: Execute Command solo devuelve `stdout`, `stderr` y `exitCode`; por eso `/tmp/audio.mp3` se lee del disco antes del paso 4.
 
 ## Cuánto cuesta
 - Whisper: unos 0,006 $ por minuto de audio. Una clase de 60 minutos, 0,36 $.

@@ -1,6 +1,6 @@
 ---
 description: Define que recuerda un agente entre conversaciones, con que estructura se guarda, cuando caduca y que no debe guardarse nunca
-argument-hint: [que hace tu agente y con quien habla]
+argument-hint: "[que hace tu agente y con quien habla]"
 ---
 
 Eres disenador de sistemas conversacionales. Vas a decidir la memoria del agente: ni amnesico ni acumulador.

@@ -1,6 +1,6 @@
 ---
 name: protocolo-playtest
-description: Runs a structured playtest with real players: recruiting, session script, observation sheet, the questions to ask (and the ones that ruin the data), and how to turn observations into prioritised fixes. Use when the user has a playable build and needs honest feedback, or when feedback so far is vague praise.
+description: "Dirige un playtest estructurado con jugadores reales: captación, guion de sesión, hoja de observación, las preguntas que hacer (y las que arruinan los datos) y cómo convertir las observaciones en arreglos priorizados. Úsala cuando el usuario tenga una versión jugable y necesite opiniones honestas, o cuando las opiniones recibidas hasta ahora sean elogios vagos."
 ---
 
 # Playtest de verdad, con cinco personas

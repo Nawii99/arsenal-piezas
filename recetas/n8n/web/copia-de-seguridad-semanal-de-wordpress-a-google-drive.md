@@ -38,7 +38,7 @@ Después borra del hosting el archivo temporal, elimina de Drive las copias de m
 ## Lo que necesitas antes
 - Hosting con acceso SSH y WP-CLI (lo tienen SiteGround, Raiola, Webempresa, Hostinger VPS, Cloudways). Si tu plan no lo tiene, esta receta no aplica: pide el acceso a soporte.
 - Usuario, host y contraseña o clave SSH. Créala en tu panel de hosting, sección «SSH».
-- n8n auto-alojado (el nodo SSH no está en el plan gratuito de la nube).
+- n8n auto-alojado (Community Edition, gratis). n8n Cloud solo tiene una prueba gratuita temporal y después es de pago.
 - Cuenta de Google con una carpeta en Drive llamada «Backups web»; copia el ID de la carpeta de la URL (`drive.google.com/drive/folders/ESTO_ES_EL_ID`).
 - Credenciales en n8n: una `SSH` (Password o Private Key) y una `Google Drive OAuth2`.
 

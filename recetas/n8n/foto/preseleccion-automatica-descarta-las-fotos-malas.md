@@ -100,5 +100,5 @@ return { json: {
 
 ## Cuánto cuesta
 - Modelo de visión barato: menos de 1 € por cada 1.000 fotos.
-- n8n y Drive: gratis.
+- n8n autoalojado (Community Edition) y Drive: gratis (n8n Cloud: prueba gratuita temporal y después de pago).
 - Programas de culling con IA como Aftershoot o Narrative Select cuestan de 10 a 30 €/mes; esta receta es más basta pero es tuya y no sube de precio.

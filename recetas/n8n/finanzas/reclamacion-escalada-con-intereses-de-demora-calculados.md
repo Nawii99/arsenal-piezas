@@ -100,4 +100,4 @@ return out;
 - Ojo con consumidores particulares: los 40 € de la Ley 3/2004 aplican a operaciones entre empresas, no a clientes particulares.
 
 **Cuánto cuesta**
-Gratis con Gmail, Sheets y Docs. n8n auto-alojado. En n8n Cloud gratuito puedes quedarte corto de ejecuciones si lo lanzas a diario: bájalo a lunes y jueves.
+Gratis con Gmail, Sheets y Docs. n8n auto-alojado. En n8n Cloud (prueba gratuita temporal y después de pago) puedes quedarte corto de ejecuciones si lo lanzas a diario: bájalo a lunes y jueves.

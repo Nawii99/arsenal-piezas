@@ -37,7 +37,7 @@ Para el estudio con comunidad activa que no quiere pagar un gestor de incidencia
 ## Lo que necesitas antes
 Un servidor de Discord con un canal `#fallos` y permisos de administrador en él.
 Una aplicación de Discord con bot: entra en `discord.com/developers/applications`, crea la app, pestaña Bot, copia el token y activa el intent `Message Content`. Invítalo al servidor con permiso de leer y escribir mensajes.
-En n8n, la credencial `Discord Bot API` con ese token. Si te resulta pesado, alternativa más simple: usa el nodo **Webhook** de n8n y una automatización de Discord que reenvíe los mensajes.
+En n8n, la credencial `Discord Bot API` con ese token. Si te resulta pesado, alternativa más simple: usa el nodo **Webhook** de n8n y una automatización de Discord que reenvíe los mensajes; protégelo con Authentication > Header Auth y una credencial con un token largo que solo conozca quien lo llama; sin eso, cualquiera que sepa la URL lo dispara.
 Credenciales de Google Sheets OAuth2.
 Una hoja `fallos` con columnas: `id`, `fecha`, `texto`, `autor`, `votos`, `estado`, `enlace`.
 

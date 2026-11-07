@@ -43,7 +43,7 @@ Para tiendas, panaderías, ópticas, tiendas de barrio y locales con horario amp
 - Hoja «Aforo» en Google Sheets con columnas: fecha, franja, entradas, salidas.
 
 ## Los nodos, en orden (workflow 1: contar)
-1. **Webhook**: GET, path `paso`, Respond Immediately.
+1. **Webhook**: GET, path `paso`, Respond Immediately. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** «Franja»: calcula la franja de media hora actual.
 3. **Google Sheets** (Append or Update, Matching Columns: fecha y franja): suma 1 a entradas o a salidas.
 
@@ -84,7 +84,7 @@ return [{ json: { texto: lineas.join('\n') } }];
 - **Grupos que entran juntos**: dos personas hombro con hombro cuentan como una. Es la limitación de los sensores baratos; asúmela como sesgo constante, que para comparar franjas sirve igual.
 - **Puerta abierta en verano con gente parada en el marco**: mete un antirrebote en ESPHome (`filters: - delayed_off: 800ms`).
 - **Privacidad**: estos sensores no identifican a nadie ni graban imagen, así que no manejas datos personales. Si usas cámara, entras en RGPD y necesitas cartel informativo y base legal; con sensores de distancia te lo ahorras.
-- **Volumen de webhooks**: 400 entradas al día son 400 ejecuciones; con n8n Cloud gratuito te quedas corto. Alternativa: que el ESP32 acumule y envíe el total cada 30 minutos en una sola llamada.
+- **Volumen de webhooks**: 400 entradas al día son 400 ejecuciones; con n8n Cloud (prueba gratuita temporal y después planes de pago con cupo de ejecuciones) puedes quedarte corto. Alternativa: que el ESP32 acumule y envíe el total cada 30 minutos en una sola llamada.
 
 ## Cuánto cuesta
 Software 0 € autoalojado. Hardware: 30-45 € (ESP32 más dos VL53L0X). Un contador comercial equivalente cuesta 300-600 €.

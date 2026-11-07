@@ -45,7 +45,7 @@ Cuenta de Gmail conectada en n8n con credencial OAuth2 (Google Cloud Console > A
 
 ## Los nodos, en orden
 **1. Schedule Trigger** — Modo `Weeks`, lunes, 08:00, zona horaria `Europe/Madrid`.
-**2. HTTP Request** (`Cobros Stripe`) — `GET` a `https://api.stripe.com/v1/charges`. Authentication: `Generic Credential Type` > `Header Auth`, nombre `Authorization`, valor `Bearer rk_live_TU_CLAVE`. Query Parameters: `limit` = `100`, `created[gte]` = `={{ Math.floor($now.startOf('month').toSeconds()) }}`.
+**2. HTTP Request** (`Cobros Stripe`) — `GET` a `https://api.stripe.com/v1/charges`. Authentication: `Generic Credential Type` > `Header Auth`, nombre `Authorization`, valor `Bearer ` + tu clave restringida, escritos solo en esa credencial de n8n (nunca en el propio nodo: un flujo exportado como JSON se llevaría la clave). Query Parameters: `limit` = `100`, `created[gte]` = `={{ Math.floor($now.startOf('month').toSeconds()) }}`.
 **3. Google Sheets** (`Leer facturas`) — Operación `Get Row(s)`, documento `Facturacion`, hoja `Facturas`.
 **4. Code** (`Cruzar`) — Modo `Run Once for All Items`. Código abajo. Conecta al Code tanto el nodo 2 como el 3 (el Code lee ambos con `$('nombre').all()`).
 **5. Google Sheets** (`Volcar descuadres`) — Operación `Append or Update`, hoja `Descuadres`, columna de comparación `referencia`.

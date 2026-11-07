@@ -44,7 +44,7 @@ De paso te escribe en cristiano el resumen de los commits de ese push. Para quie
 ## Los nodos, en orden
 1. **Webhook** — Method POST, Path `push-main`. Pega la URL en el webhook de GitHub eligiendo solo el evento «Pushes» y content type `application/json`.
 2. **IF** — sigue solo si `{{ $json.body.ref }}` es igual a `refs/heads/main`.
-3. **HTTP Request** — GET `https://api.github.com/repos/USUARIO/REPO/contents/db/migrations?ref=main` con cabecera `Authorization: Bearer TU_TOKEN` y `Accept: application/vnd.github+json`. Cambia la carpeta por la tuya.
+3. **HTTP Request** — GET `https://api.github.com/repos/USUARIO/REPO/contents/db/migrations?ref=main` con Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name «Authorization», Value «Bearer TU_TOKEN»); el nodo usa esa credencial. Añade la cabecera normal `Accept: application/vnd.github+json`. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Cambia la carpeta por la tuya.
 4. **Postgres** — Execute Query: `SELECT version FROM schema_migrations;` (ajusta nombre de tabla y columna).
 5. **Code** — cruza las dos listas y saca las pendientes y el resumen de commits.
 6. **IF** — hay migraciones pendientes.

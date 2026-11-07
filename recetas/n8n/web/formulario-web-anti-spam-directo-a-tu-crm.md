@@ -42,7 +42,7 @@ Para freelance o pequeña agencia que quiere dejar de perder leads entre correos
 - En tu formulario HTML: un campo oculto trampa `<input type="text" name="web_site" style="display:none" tabindex="-1" autocomplete="off">` y un campo oculto `ts` con la marca de tiempo en milisegundos al cargar la página.
 
 **Los nodos, en orden**
-1. **Webhook** — HTTP Method POST, Path `contacto`, Respond: `Using Respond to Webhook node`. Copia la Production URL y ponla en el `action` de tu formulario (o en el `fetch` del JS).
+1. **Webhook** — HTTP Method POST, Path `contacto`, Respond: `Using Respond to Webhook node`. Copia la Production URL y ponla en el `action` de tu formulario (o en el `fetch` del JS). Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** (`Filtro antispam`) — Mode: Run Once for Each Item. Código abajo.
 3. **IF** (`Es spam?`) — Boolean `{{ $json.spam }}` `is true`. Rama true va directa al nodo 9 (respuesta 200 falsa, para que el bot no reintente).
 4. **HubSpot** — Resource: Contact, Operation: Create or Update. Email `{{ $json.email }}`, Additional Fields: First Name `{{ $json.nombre }}`, Phone `{{ $json.telefono }}`, y una propiedad personalizada `origen_web` `{{ $json.origen }}`.

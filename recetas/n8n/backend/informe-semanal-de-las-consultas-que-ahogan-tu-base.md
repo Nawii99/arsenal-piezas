@@ -83,5 +83,5 @@ return [{ json: { html } }];
 - **Coste de la IA.** Si activas el paso 4, son diez consultas a la semana con Haiku: céntimos.
 
 ## Cuánto cuesta
-- Postgres, n8n y Gmail: gratis.
+- Postgres, n8n autoalojado (Community Edition) y Gmail: gratis. n8n Cloud solo tiene prueba gratuita temporal y después es de pago.
 - Claude Haiku para las explicaciones: por debajo de 0,20 € al mes con este volumen. Puedes prescindir de ese nodo.

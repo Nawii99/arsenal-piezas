@@ -42,7 +42,7 @@ Para quien tiene crons, scripts de importación, backups o workflows que corren 
 - Poder añadir una línea al final de cada script o cron que vigiles.
 
 ### Los nodos, en orden (workflow A: recibir latidos)
-1. **Webhook** — Method `GET`, Path `latido`, Response Mode `Immediately`, Response Code `200`. La URL queda como `https://TU-N8N/webhook/latido?tarea=backup-nocturno`.
+1. **Webhook** — Method `GET`, Path `latido`, Response Mode `Immediately`, Response Code `200`. La URL queda como `https://TU-N8N/webhook/latido?tarea=backup-nocturno`. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** (nombre: «Normalizar») — saca el nombre de la tarea de la query y la marca de tiempo.
 3. **Google Sheets** — Operation `Update Row`, columna clave `tarea`, actualiza `ultimo_latido` y pone `estado = ok` y `alerta_enviada = no`.
 
@@ -94,4 +94,4 @@ return [{ json: { alarma: mudas.length > 0, mudas, texto } }];
 
 ### Cuánto cuesta
 - 0 €. Un servicio equivalente de monitorización de crons cuesta entre 5 y 20 €/mes.
-- Ojo si usas n8n Cloud gratuito: el vigilante cada 15 minutos son ~2.900 ejecuciones al mes y te pasas del límite; para esta receta, auto-aloja o ejecuta cada hora.
+- Ojo si usas n8n Cloud (prueba gratuita temporal y después de pago): el vigilante cada 15 minutos son ~2.900 ejecuciones al mes y te pasas del límite de ejecuciones del plan; para esta receta, auto-aloja o ejecuta cada hora.

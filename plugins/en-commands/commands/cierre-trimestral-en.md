@@ -1,9 +1,9 @@
 ---
-name: cierre-trimestral
+name: cierre-trimestral-en
 description: command that guides the collection of all the quarter's invoices and expenses to leave them ready for Spanish form 303 (VAT) and form 130 (income tax advance payment), in a single pass
 ---
 
-# /cierre-trimestral
+# /cierre-trimestral-en
 
 ## What it does
 Guides the close of a tax quarter in Spain: gathers issued invoices, received invoices, expenses pending justification, and advance payments, so you don't have to hunt for everything on the last day.

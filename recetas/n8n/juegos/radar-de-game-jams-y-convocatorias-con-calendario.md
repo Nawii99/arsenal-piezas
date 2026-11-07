@@ -83,4 +83,4 @@ Si la fuente cambia la URL del feed, el nodo RSS falla en silencio. Activa en Se
 Demasiadas palabras clave y te llegará ruido; empieza con cuatro o cinco muy tuyas.
 
 ## Cuánto cuesta
-Gratis entero: RSS, Calendar, Sheets y Gmail no cuestan nada y una ejecución diaria cabe en el plan gratuito de n8n.
+Gratis entero: RSS, Calendar, Sheets y Gmail no cuestan nada y n8n es gratis autoalojado (Community Edition); n8n Cloud solo tiene prueba gratuita temporal y después es de pago.

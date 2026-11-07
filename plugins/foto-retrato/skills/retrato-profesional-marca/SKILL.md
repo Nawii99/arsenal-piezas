@@ -1,6 +1,6 @@
 ---
 name: retrato-profesional-marca
-description: Gets the user a credible professional headshot, either shot with a phone using a repeatable lighting recipe or generated with AI from their own selfies. Use when they need a photo for LinkedIn, a website, a proposal or a seller profile without paying for a studio.
+description: Consigue al usuario un retrato profesional creíble, ya sea hecho con el móvil siguiendo una receta de iluminación repetible o generado con IA a partir de sus propios selfies. Úsala cuando necesite una foto para LinkedIn, una web, una propuesta o un perfil de vendedor sin pagar un estudio.
 ---
 
 # Tu retrato profesional

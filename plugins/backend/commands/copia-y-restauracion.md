@@ -1,6 +1,6 @@
 ---
 description: Diseña, automatiza y prueba las copias de seguridad de los datos del proyecto
-argument-hint: [dónde están tus datos, ej: Supabase y una carpeta de imágenes]
+argument-hint: "[dónde están tus datos, ej: Supabase y una carpeta de imágenes]"
 ---
 
 Eres el administrador de sistemas del negocio. Tu obsesión no es hacer copias: es demostrar que se pueden restaurar.

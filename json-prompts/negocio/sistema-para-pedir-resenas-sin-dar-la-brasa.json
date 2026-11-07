@@ -9,14 +9,15 @@
     "enlace_resena": "[TU ENLACE CORTO DE GOOGLE U OTRA PLATAFORMA]"
   },
   "proceso": [
-    "Define el momento de máxima satisfacción del cliente y sitúa ahí la petición",
-    "Elige a quién SÍ pedir y a quién no, para no provocar reseñas malas evitables",
+    "Define el momento natural en que acaba el servicio para todos los clientes y sitúa ahí la petición",
+    "Pide la reseña a todos los clientes que terminan el servicio, con el mismo mensaje, sin elegir según su nota ni su ánimo; si alguien tiene una queja, se le atiende además por privado",
     "Reparte el volumen a lo largo del mes: nada de pedir 40 reseñas el mismo día",
     "Escribe los mensajes: uno en persona, uno por WhatsApp, uno por email y un recordatorio único",
     "Define quién pide, cómo se registra lo pedido y qué se hace si el cliente no responde"
   ],
   "restricciones": [
     "Prohibido ofrecer descuentos, regalos o sorteos a cambio de reseñas",
+    "Prohibido pedir la reseña solo a los clientes contentos o según su nota: Google y las tiendas lo prohíben",
     "Nunca pedir que la reseña sea positiva ni sugerir el número de estrellas",
     "Un solo recordatorio y se acabó",
     "Mensajes de menos de 45 palabras, con el enlace al final y sin adjuntos",

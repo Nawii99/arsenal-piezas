@@ -1,18 +1,18 @@
-# Encuesta de satisfacción que se convierte en reseñas y…
+# Encuesta de fin de curso, reseña a todos y testimonios de los contentos…
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
-Al terminar el curso manda una encuesta corta, y según la nota pide reseña en Google, pide permiso para usar el testimonio o te avisa a ti para arreglarlo.
+Al terminar el curso manda una encuesta corta y pide la reseña en Google a todos por igual; según la nota, además pide permiso para usar el testimonio o te avisa a ti para arreglarlo.
 
 ## Qué es y qué hace
 
-Tres días después de terminar el curso, envía una encuesta de dos preguntas con Google Forms. Si la nota es 9 o 10, pide una reseña en Google con enlace directo; si es 7-8, pregunta qué falta; si es 6 o menos, avisa a la persona responsable para llamar. Entran respuestas de la encuesta y salen correos y avisos. Para academias y cursos online, con n8n, Sheets y Gmail.
+Tres días después de terminar el curso, envía una encuesta de dos preguntas con Google Forms. Dos días más tarde, todos los alumnos reciben la misma petición de reseña en Google con enlace directo, sea cual sea su nota. Según la nota: si es 9 o 10, pide permiso para publicar el comentario como testimonio; si es 7-8, pregunta qué falta; si es 6 o menos, avisa a la persona responsable para llamar. Entran respuestas de la encuesta y salen correos y avisos. Para academias y cursos online, con n8n, Sheets y Gmail.
 
 ## Cómo usarla
 
 1. Crea el formulario de dos preguntas
 2. Copia tu enlace de reseña desde el perfil de negocio
-3. Programa los tres caminos según la nota
+3. Programa la petición de reseña para todos y los caminos según la nota
 4. Revisa los correos antes de activarlo
 
 ## Cuándo usarla
@@ -21,7 +21,7 @@ Tres días después de terminar el curso, envía una encuesta de dos preguntas c
 
 ## Cómo ganar dinero con ella
 
-Pasar de 12 a 60 reseñas en Google multiplica las matrículas que llegan solas. Y detectar un descontento a tiempo evita la reseña de una estrella.
+Pasar de 12 a 60 reseñas en Google multiplica las matrículas que llegan solas. Y detectar un descontento a tiempo te deja arreglarlo con una llamada.
 
 - Montaje de encuesta y petición de reseñas para academias que quieren más opiniones en Google, con enlace directo.
 - Gestión mensual de la reputación de cursos online, con avisos de nota baja y respuesta a alumnos, por cuota.
@@ -32,7 +32,7 @@ Pasar de 12 a 60 reseñas en Google multiplica las matrículas que llegan solas.
 ## La receta, paso a paso
 
 ## Qué hace y para quién
-Tres días después de terminar el curso, envía una encuesta de dos preguntas. Si la nota es 9 o 10, pide reseña en Google con enlace directo y permiso para publicar su comentario. Si es 7-8, agradece y pregunta qué falta. Si es 6 o menos, te avisa al momento para que llames.
+Tres días después de terminar el curso, envía una encuesta de dos preguntas. A todos les pide la reseña en Google con el mismo correo y el enlace directo, sea cual sea su nota. Además, si la nota es 9 o 10, pide permiso para publicar su comentario como testimonio; si es 7-8, agradece y pregunta qué falta; si es 6 o menos, te avisa al momento para que llames.
 Para academias, escuelas de idiomas, formadores presenciales y cursos online.
 
 ## Lo que necesitas antes
@@ -53,20 +53,21 @@ return items.filter(i => i.json.email && !i.json.encuesta_enviada && d(i.json.fe
 ```
 4) **Gmail** (Send). Asunto: `{{ $json.nombre }}, dos preguntas y te dejo en paz`. Cuerpo con el enlace al formulario y el email precargado: `https://docs.google.com/forms/d/e/TU_ID/viewform?usp=pp_url&entry.123456={{ $json.email }}`. El número de `entry` lo sacas pulsando botón derecho > Inspeccionar sobre el campo, o desde «Obtener enlace prerrellenado» en Forms.
 5) **Google Sheets** (Update Row) marcando `encuesta_enviada` con la fecha.
+5b) En paralelo, para todos los que recibieron la encuesta: **Wait** de 2 días y **Gmail** con asunto `¿Nos echas una mano en 30 segundos?` y el enlace `g.page/r/...` bien visible. Es el mismo correo para todos, hayan contestado o no y con la nota que sea: filtrar quién puede reseñar según su satisfacción está prohibido por Google y las tiendas.
 6) Segundo flujo: **Google Sheets Trigger** (Row Added) sobre la hoja de respuestas del formulario.
 7) **Switch** en modo Rules sobre la nota `{{ Number($json['Del 0 al 10, ¿nos recomendarías?']) }}`: salida 0 si es mayor o igual que 9, salida 1 si está entre 7 y 8, salida 2 si es menor que 7.
-8) Salida promotores: **Gmail** con asunto `¡Gracias! ¿Nos echas una mano en 30 segundos?`, el enlace `g.page/r/...` bien visible y una frase pidiendo permiso para publicar su comentario en la web. Después **Google Sheets** (Append Row) en una hoja «Testimonios» con el texto de la respuesta abierta.
-9) Salida neutros: **Gmail** agradeciendo y preguntando «¿Qué habría hecho que nos pusieras un 10?». Nada de pedir reseña aquí.
+8) Salida promotores: **Gmail** con asunto `¡Gracias por tu nota!` y una frase pidiendo permiso para publicar su comentario en la web. Después **Google Sheets** (Append Row) en una hoja «Testimonios» con el texto de la respuesta abierta.
+9) Salida neutros: **Gmail** agradeciendo y preguntando «¿Qué habría hecho que nos pusieras un 10?».
 10) Salida detractores: **Slack** (o Gmail a ti) con etiqueta URGENTE, nombre, curso, nota y el comentario. Añade un **Wait** de 1 día y un segundo aviso si no has marcado la fila como atendida.
 11) Un **Schedule Trigger** mensual + **Code** que calcule tu NPS: `((promotores - detractores) / total) * 100`, y te lo mande por email.
 
 ## Cómo probarla
 - Añade una fila con fecha_fin de hace 3 días y tu email; ejecuta el primer flujo.
-- Rellena el formulario tres veces con nota 10, 8 y 4 y comprueba que cada una sale por su salida.
+- Rellena el formulario tres veces con nota 10, 8 y 4 y comprueba que cada una sale por su salida y que las tres reciben el correo de reseña del paso 5b.
 - Verifica que el enlace de reseña abre directamente el cuadro de escribir en Google.
 
 ## Qué puede salir mal
-- **Pedir reseña a todo el mundo**: es el error clásico y te trae estrellas malas. Segmenta siempre por nota.
+- **Pedir reseña solo a los contentos**: es el error clásico y Google y las tiendas lo prohíben. El correo de reseña sale a todos, sea cual sea la nota; la nota solo sirve para pedir el testimonio y para llamar a quien puntuó bajo.
 - **Comprar o incentivar reseñas**: va contra las normas de Google y te pueden tumbar la ficha. Pide, no regales.
 - **El campo precargado no funciona**: usa «Obtener enlace prerrellenado» desde el propio Forms, no montes la URL a mano.
 - **Nota como texto**: el Switch falla si la escala llega como cadena. Envuélvela en `Number()` como en el paso 7.

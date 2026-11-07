@@ -1,6 +1,6 @@
 ---
 description: Genera la estructura de carpetas, formatos y nombres de archivo para entregar una identidad
-argument-hint: [nombre de marca y dónde se va a usar: web, imprenta, redes, rotulación, ropa]
+argument-hint: "[nombre de marca y dónde se va a usar: web, imprenta, redes, rotulación, ropa]"
 ---
 
 Eres el responsable de producción de un estudio de diseño. Vas a preparar la entrega de archivos de $ARGUMENTS. Tu objetivo: que el cliente nunca tenga que volver a pedirte un archivo.

@@ -70,7 +70,7 @@ return salida;
 Crea una fila de prueba con tu propio email y Estado LISTA. Ejecuta a mano con Test Workflow y comprueba que recibes el correo y que puedes abrir la carpeta desde una cuenta distinta. Para el recordatorio, pon una FechaCaducidad dentro de 5 días y ejecuta el segundo flujo.
 
 ## Qué puede salir mal
-- **El cliente no puede abrir la carpeta**: es que compartiste con un email que no es cuenta Google. Cambia Type a anyone con Role reader (enlace público) si trabajas con clientes sin Gmail.
+- **El cliente no puede abrir la carpeta**: es que compartiste con un email que no es cuenta Google. No lo cambies a «anyone»: son fotos personales del cliente. Pídele una cuenta de Google (puede crearla con su correo de siempre) o entrégale las fotos con un servicio de galerías con contraseña y caducidad.
 - **Emails a spam**: manda desde tu dominio (Gmail con dominio propio) y evita adjuntar archivos grandes; el enlace basta.
 - **Fechas al revés**: Sheets a veces guarda las fechas como texto en formato inglés. Fuerza el formato de la columna a Texto plano y usa siempre dd/MM/yyyy.
 - **Filas repetidas**: si el flujo falla después de enviar pero antes de actualizar la hoja, el cliente recibe dos correos. Pon el nodo de actualización con Retry On Fail activado y 3 intentos.

@@ -89,7 +89,7 @@ return [{ json: { texto } }];
 
 ## Qué puede salir mal
 - **Solo puede haber un Telegram Trigger activo por bot**: si montas varios flujos con el mismo token, se pisan. Usa un bot distinto por flujo o un solo trigger que reparta con un IF.
-- **El botón se queda girando**: Telegram espera un `answerCallbackQuery`. Añade un nodo HTTP Request a `https://api.telegram.org/botTOKEN/answerCallbackQuery` con el `callback_query_id`.
+- **El botón se queda girando**: Telegram espera un `answerCallbackQuery`. Añade un nodo **Telegram** (Resource: Callback, Operation: Answer Query) con el `callback_query_id` y tu credencial de Telegram. No pongas el token en la URL de un HTTP Request: un flujo exportado se llevaría la clave.
 - **Fechas desfasadas**: usa siempre `toLocaleDateString('sv-SE', {timeZone:'Europe/Madrid'})`, que da `2026-09-09` y ordena bien alfabéticamente.
 - **n8n auto-alojado sin URL pública**: el Telegram Trigger necesita webhook accesible. Si estás en local, arranca n8n con el túnel (`n8n start --tunnel`) solo para probar, y para producción usa un dominio o n8n Cloud.
 - **Esto no es un registro médico**: no metas síntomas ni medicación, solo hábitos. Y si lo usas con clientes, pídeles permiso por escrito para guardar sus datos.

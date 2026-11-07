@@ -35,7 +35,7 @@ Rescatar 3 alumnos al mes de un curso de 300 euros son 900 euros que ya estaban 
 Cada lunes lee la hoja de progreso de tus alumnos, calcula cuántos días llevan sin actividad y qué porcentaje del curso han completado, y les asigna un nivel de riesgo. A los de riesgo medio les manda un email de reenganche distinto según dónde se atascaron; a los de riesgo alto te los pasa a ti por Telegram para que llames tú.
 
 ## Lo que necesitas antes
-- Cuenta de n8n (Cloud gratis o auto-alojado con Docker).
+- Cuenta de n8n (auto-alojado con Docker, gratis; o n8n Cloud, con prueba gratuita temporal y después planes de pago).
 - Una Google Sheet llamada `Alumnos` con columnas: `email`, `nombre`, `curso`, `fecha_alta`, `ultimo_acceso`, `pct_completado`, `ultima_leccion`, `ultimo_aviso`.
 - Credencial de Google Sheets en n8n: en Google Cloud Console creas un proyecto, activas Google Sheets API, creas credencial OAuth y pegas Client ID y Secret en n8n (Credentials > Google Sheets OAuth2).
 - Credencial de Gmail OAuth2 en n8n (mismo proyecto de Google, activando Gmail API).

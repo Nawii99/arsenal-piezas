@@ -6,12 +6,12 @@ Cuando alguien te paga por Stripe, genera la factura en PDF con numeración corr
 
 ## Qué es y qué hace
 
-Cuando Stripe confirma un pago, pide el siguiente número correlativo a una hoja de control, duplica una plantilla de Google Docs, sustituye los marcadores de cliente, importe e IVA, exporta a PDF, lo guarda en Drive, lo envía por correo y apunta la línea en la hoja de facturas emitidas. Para servicios, cursos o productos digitales cobrados con Stripe.
+Cuando Stripe confirma un pago, reserva el siguiente número correlativo en una hoja de control antes de enviar nada, duplica una plantilla de Google Docs, sustituye los marcadores de cliente, importe e IVA, exporta a PDF, lo guarda en Drive, lo envía por correo y apunta la línea en la hoja de facturas emitidas. Para servicios, cursos o productos digitales cobrados con Stripe. Solo factura con el webhook verificado, el pago confirmado y sin repetir el mismo evento, ejecutándose de uno en uno y con el número comprobado.
 
 ## Cómo usarla
 
 1. Preparar la plantilla de Google Docs con marcadores
-2. Crear la clave de Stripe en modo test
+2. Guardar la clave de Stripe (modo test) en la credencial de n8n
 3. Montar el webhook y el flujo en n8n
 4. Que lo revise un profesional
 
@@ -38,22 +38,23 @@ En cuanto Stripe confirma un pago, coge los datos del cliente y del importe, pid
 Para autónomos y pymes que cobran servicios, cursos o productos digitales con Stripe.
 
 ## Lo que necesitas antes
-- Cuenta de Stripe. La clave secreta está en Desarrolladores > Claves de API (`sk_live_...`; usa primero la de test, `sk_test_...`).
+- Cuenta de Stripe. La clave secreta está en Desarrolladores > Claves de API (`sk_live_...`; usa primero la de test, `sk_test_...`). Pégala solo en la credencial **Stripe API** de n8n, nunca en un nodo Code, Set o HTTP Request ni en el texto del flujo: porque un flujo exportado se llevaría la clave.
 - Una plantilla en Google Docs llamada `Plantilla factura` con tus datos fiscales y los marcadores literales `{{NUMERO}}`, `{{FECHA}}`, `{{CLIENTE}}`, `{{NIF}}`, `{{DIRECCION}}`, `{{CONCEPTO}}`, `{{BASE}}`, `{{IVA}}`, `{{TOTAL}}`. Apunta su ID (está en la URL).
 - Una carpeta en Drive `Facturas emitidas` y su ID.
 - Hoja `Facturas` con `numero`, `fecha_emision`, `cliente`, `nif`, `email`, `base`, `iva`, `total`, `stripe_id`, `pdf_url`, `estado`.
 - Credenciales en n8n: **Stripe API**, **Google Docs OAuth2**, **Google Drive OAuth2**, **Google Sheets OAuth2**, **Gmail OAuth2**.
 
 ## Los nodos, en orden
-1. **Stripe Trigger** — Events: `checkout.session.completed` (o `invoice.paid` si cobras suscripciones). n8n registra el webhook en Stripe solo.
-2. **Google Sheets** («Último número») — Operation: `Get Row(s)`, Sheet: `Facturas`. Devuelve todas las filas para poder calcular el máximo.
-3. **Code** («Preparar factura») — Mode: `Run Once for All Items`. Código abajo: calcula el siguiente número, desglosa base e IVA y normaliza los datos del cliente.
+1. **Stripe Trigger** — Events: `checkout.session.completed` (o `invoice.paid` si cobras suscripciones). n8n registra el webhook en Stripe solo y el nodo comprueba su firma (con un Webhook genérico, verifica la cabecera `Stripe-Signature` con el «signing secret» del endpoint, guardado en una credencial o en la variable de entorno `$env.STRIPE_WEBHOOK_SECRET`, nunca escrito en un nodo Code). Solo emite factura si `payment_status` es `paid` (o el evento es `invoice.paid`).
+2. **Google Sheets** («Último número») — Operation: `Get Row(s)`, Sheet: `Facturas`. Devuelve todas las filas para poder calcular el máximo y comprobar que el `stripe_id` del pago no esté ya registrado: añade un **IF** que pare el flujo si lo está (el mismo evento puede llegar dos veces y no debes emitir dos facturas). Este flujo debe ejecutarse de uno en uno: dos cobros simultáneos leerían el mismo «último número» (ver «Qué puede salir mal»).
+3. **Code** («Preparar factura») — Mode: `Run Once for All Items`. Código abajo: calcula el siguiente número, desglosa base e IVA y normaliza los datos del cliente. Antes de copiar la plantilla, comprueba que ese `numero` no existe ya en la hoja `Facturas`; si existe, para y avísate.
 4. **Google Drive** («Copiar plantilla») — Resource: `File`, Operation: `Copy`, File: el ID de la plantilla, Name: `{{ $json.numero }} - {{ $json.cliente }}`, Options > Parents: el ID de la carpeta `Facturas emitidas`.
+**3 bis. Google Sheets** («Reservar número») — Operation: `Append Row`, Sheet: `Facturas`, con `numero`, `stripe_id` y `estado` = `reservada`, ANTES de copiar la plantilla y de enviar nada. Así el número queda ocupado aunque el envío falle y el siguiente cobro ya lo ve en la hoja (por eso el flujo se ejecuta de uno en uno).
 5. **Google Docs** («Rellenar») — Operation: `Update a Document`, Doc ID or URL: `{{ $json.id }}` (el de la copia). En Actions añade una acción `Replace All Text` por cada marcador: Old Text `{{NUMERO}}` / New Text `{{ $('Preparar factura').item.json.numero }}`, y así con los nueve.
 6. **HTTP Request** («Exportar PDF») — Method: `GET`, URL: `https://www.googleapis.com/drive/v3/files/{{ $('Copiar plantilla').item.json.id }}/export?mimeType=application/pdf`. Authentication: `Predefined Credential Type` > `Google Drive OAuth2`. Response > Format: `File`, Output Binary Field: `data`.
-7. **Google Drive** («Guardar PDF») — Operation: `Upload`, Input Data Field: `data`, File Name: `{{ $('Preparar factura').item.json.numero }}.pdf`, carpeta `Facturas emitidas`. En Options activa `Share > Anyone with the link` si quieres enlace directo.
+7. **Google Drive** («Guardar PDF») — Operation: `Upload`, Input Data Field: `data`, File Name: `{{ $('Preparar factura').item.json.numero }}.pdf`, carpeta `Facturas emitidas`. No la compartas con acceso público (nada de enlace abierto): la factura lleva el nombre, el NIF y la dirección del cliente (datos personales). Va adjunta en el paso 8; si quieres darle acceso desde Drive, compártela solo con su correo (Operation: Share, Type User).
 8. **Gmail** («Enviar al cliente») — To: `{{ $('Preparar factura').item.json.email }}`, Subject: `Tu factura {{ $('Preparar factura').item.json.numero }}`, Message: texto de agradecimiento. En Options > Attachments, Attachment Field Name: `data`.
-9. **Google Sheets** («Registrar») — Operation: `Append Row`, Sheet: `Facturas`, con `estado` = `cobrada` y `pdf_url` = `{{ $('Guardar PDF').item.json.webViewLink }}`.
+9. **Google Sheets** («Registrar») — Operation: `Update Row`, Sheet: `Facturas`, Column to Match On: `numero` (la fila reservada en el paso 3 bis), con `fecha_emision`, `cliente`, `nif`, `email`, importes, `estado` = `cobrada` y `pdf_url` = `{{ $('Guardar PDF').item.json.webViewLink }}`.
 
 ## El código del nodo Code
 ```javascript
@@ -95,7 +96,7 @@ return [{ json: {
 - Antes de pasar a producción, enséñale una factura generada a tu asesor para que confirme que lleva todos los datos obligatorios.
 
 ## Qué puede salir mal
-- **Numeración duplicada**: si entran dos pagos en el mismo segundo, ambos pueden leer el mismo número máximo. Con volumen bajo no pasa; si vendes mucho, activa en Settings del workflow la opción de concurrencia 1, o guarda el contador en una única celda y usa un nodo Sheets `Update Row` inmediatamente después de leerlo.
+- **Numeración duplicada**: si entran dos pagos a la vez, ambas ejecuciones pueden leer el mismo número máximo. Evítalo haciendo que se ejecuten de uno en uno: deja este flujo como sub-flujo (Execute Workflow) llamado desde un flujo principal que procese los cobros en cola con concurrencia 1 (en n8n autoalojado en modo queue, un worker con `--concurrency=1`). Además, antes de emitir, comprueba que el número no existe ya en la hoja `Facturas`; si existe, para y avísate.
 - **NIF del cliente**: Stripe no lo pide por defecto. Añade un campo personalizado en tu Checkout (`custom_fields`) o pásalo en `metadata.nif` desde tu web. Sin NIF, la factura no vale para un cliente empresa.
 - **Verifactu**: desde 2026 los sistemas de facturación en España deben cumplir requisitos de registro y trazabilidad. Este flujo genera el documento, pero consulta con tu asesor si tu caso exige un software homologado. Para ventas a consumidor final con tickets suele bastar el registro ordenado.
 - **Exportación a PDF**: si el nodo HTTP Request devuelve HTML de error, es que la credencial no tiene scope de Drive. Recrea la credencial marcando el ámbito de Drive completo.

@@ -43,7 +43,7 @@ Webhook de Slack.
 Una hoja de Google Sheets «errores» con columnas: huella, primera_vez, veces_hoy, ignorar, fecha.
 
 ## Los nodos, en orden
-1. «Webhook». Method POST, ruta /error-app. Copia la Production URL.
+1. «Webhook». Method POST, ruta /error-app. Copia la Production URL. Verifica la firma `Sentry-Hook-Signature` con el Client Secret de la integración en un nodo Code.
 2. En Sentry: Settings del proyecto, Alerts, Create Alert Rule, condición «A new issue is created» o «An issue is seen more than X times», acción «Send a notification via webhook» apuntando a esa URL. También vale Integrations, WebHooks.
 3. «Set» (extraer lo útil). Crea: titulo desde {{ $json.data.issue.title }}, cultura o plataforma, url desde {{ $json.data.issue.web_url }}, usuarios afectados y versión de la app. Los nombres exactos los ves en la primera ejecución.
 4. «Code» (huella del error). Código completo:
@@ -72,4 +72,4 @@ Si te llegan avalanchas de errores, mete un «Split In Batches» o Sheets te dar
 Cuidado con el reset a las 3:00: pon la zona horaria del workflow o se reiniciará a otra hora.
 
 ## Cuánto cuesta
-n8n, Sheets y Slack: gratis. Sentry: 5.000 errores al mes gratis, luego desde 26 $. Linear: gratis hasta 250 incidencias.
+n8n auto-alojado (n8n Cloud: prueba gratuita temporal y después de pago), Sheets y Slack: gratis. Sentry: 5.000 errores al mes gratis, luego desde 26 $. Linear: gratis hasta 250 incidencias.

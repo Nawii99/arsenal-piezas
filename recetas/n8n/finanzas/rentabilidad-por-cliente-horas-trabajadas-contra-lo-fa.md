@@ -47,7 +47,7 @@ Para servicios profesionales que venden proyectos cerrados o igualas: agencias, 
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Mode: `Custom (Cron)`, Expression: `0 8 2 * *` (el día 2 de cada mes a las 8:00). Timezone `Europe/Madrid`.
-2. **HTTP Request** («Clientes Clockify») — Method: `GET`, URL: `https://api.clockify.me/api/v1/workspaces/TU_WORKSPACE_ID/clients`. Headers: `X-Api-Key` con tu clave. En Options activa Pagination si tienes más de 50 clientes.
+2. **HTTP Request** («Clientes Clockify») — Method: `GET`, URL: `https://api.clockify.me/api/v1/workspaces/TU_WORKSPACE_ID/clients`. Headers: `X-Api-Key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `X-Api-Key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría). En Options activa Pagination si tienes más de 50 clientes.
 3. **HTTP Request** («Informe de horas») — Method: `POST`, URL: `https://reports.api.clockify.me/v1/workspaces/TU_WORKSPACE_ID/reports/summary`. Header `X-Api-Key`. Body Content Type `JSON`, Specify Body `Using JSON`, con este contenido: `{"dateRangeStart": "{{ $now.minus(1,'month').startOf('month').toISO() }}", "dateRangeEnd": "{{ $now.startOf('month').toISO() }}", "summaryFilter": {"groups": ["CLIENT", "PROJECT"]}, "amountShown": "HIDE_AMOUNT"}`.
 4. **Google Sheets** («Facturas») — Operation: `Get Row(s)`, Sheet: `Facturas`.
 5. **Code** («Cruzar datos») — Mode: `Run Once for All Items`. Código abajo.

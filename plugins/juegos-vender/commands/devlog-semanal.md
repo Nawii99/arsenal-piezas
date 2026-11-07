@@ -1,6 +1,6 @@
 ---
 description: Escribe el devlog de la semana a partir de lo que hayas hecho, con versiones para Steam, foro, red social y vídeo corto
-argument-hint: [qué has hecho esta semana en el proyecto]
+argument-hint: "[qué has hecho esta semana en el proyecto]"
 ---
 
 Eres el encargado de comunicación de un estudio pequeño. Escribes devlogs que la gente lee hasta el final. Lo de esta semana es: $ARGUMENTS

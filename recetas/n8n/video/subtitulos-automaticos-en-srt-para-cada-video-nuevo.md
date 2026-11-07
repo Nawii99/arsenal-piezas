@@ -35,7 +35,7 @@ Subtitular 10 minutos a mano son 40-60 minutos o 15-25 € a un freelance. Aquí
 Detecta un vídeo nuevo en Drive, extrae el audio, lo manda a la API de transcripción de OpenAI (Whisper) y genera un archivo `.srt` de subtítulos con tiempos, más un `.txt` con la transcripción limpia. Para creadores, formadores y agencias que publican vídeo en español y quieren subtítulos sin pagarlos.
 
 ## Lo que necesitas antes
-- n8n (gratis, nube o auto-alojado).
+- n8n (auto-alojado, gratis; o n8n Cloud, con prueba gratuita temporal y después planes de pago).
 - Cuenta de OpenAI con saldo: platform.openai.com → «API keys» → «Create new secret key». Mete 5 € de saldo, dan para muchísimo audio.
 - Cuenta gratuita de CloudConvert (cloudconvert.com) para pasar de MP4 a MP3: perfil → «API» → «Create new token» con permisos `task.read` y `task.write`. El plan gratis da 25 conversiones al día.
 - Carpeta de Drive `VIDEOS-A-SUBTITULAR` y otra `SUBTITULOS`.
@@ -96,4 +96,4 @@ return {
 - **Nombres con acentos o espacios** dan problemas en algunas APIs: renombra los archivos sin tildes.
 
 ## Cuánto cuesta
-La transcripción cuesta unos 0,006 $ por minuto de audio: una hora de vídeo, 0,36 $. CloudConvert: 25 conversiones al día gratis, luego desde 9 $/mes. n8n y Drive, gratis. Total realista para 20 vídeos de 10 minutos al mes: menos de 1,50 €.
+La transcripción cuesta unos 0,006 $ por minuto de audio: una hora de vídeo, 0,36 $. CloudConvert: 25 conversiones al día gratis, luego desde 9 $/mes. n8n autoalojado y Drive, gratis (n8n Cloud no tiene plan gratuito permanente: solo prueba temporal y después planes de pago). Total realista para 20 vídeos de 10 minutos al mes: menos de 1,50 €.

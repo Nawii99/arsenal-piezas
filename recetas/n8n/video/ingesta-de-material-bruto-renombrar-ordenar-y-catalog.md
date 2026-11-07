@@ -81,4 +81,4 @@ Sube dos archivos pequeños (un .mp4 de 5 segundos y un .pdf) a «00_ENTRADA». 
 - **Cuota de Drive**: 15 GB gratis se llenan en dos rodajes en 4K. Vigílalo.
 
 ## Cuánto cuesta
-n8n y las APIs de Google, gratis. El gasto real es el almacenamiento de Drive: 2 TB por unos 10 €/mes en Google One, imprescindible si grabas en 4K.
+n8n autoalojado (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago) y las APIs de Google, gratis. El gasto real es el almacenamiento de Drive: 2 TB por unos 10 €/mes en Google One, imprescindible si grabas en 4K.

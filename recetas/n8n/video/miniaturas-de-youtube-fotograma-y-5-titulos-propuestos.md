@@ -92,4 +92,4 @@ return { json: { frames, public_id: id, duracion: dur, nombre: $('Google Drive T
 - **Miniaturas ilegibles en móvil**: el texto de portada nunca más de 4 palabras, esa regla está en el prompt por algo.
 
 ## Cuánto cuesta
-OpenAI con visión: unos 0,01-0,02 € por vídeo. Cloudinary gratis hasta 25 créditos al mes (unos 20-30 vídeos cortos), luego desde 89 $/mes, así que borra los vídeos al terminar. n8n y Drive, gratis.
+OpenAI con visión: unos 0,01-0,02 € por vídeo. Cloudinary gratis hasta 25 créditos al mes (unos 20-30 vídeos cortos), luego desde 89 $/mes, así que borra los vídeos al terminar. n8n autoalojado (Community Edition) y Drive, gratis (n8n Cloud: prueba gratuita temporal y después de pago).

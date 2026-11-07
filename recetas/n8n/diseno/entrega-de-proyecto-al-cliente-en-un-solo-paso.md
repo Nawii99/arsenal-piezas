@@ -65,7 +65,7 @@ return ['01 Logo', '02 Aplicaciones', '03 Editables', '04 Guia de marca']
 Crea un proyecto falso con tu propio correo como cliente y cuatro archivos de prueba en la carpeta origen. Ejecuta en modo test y comprueba: carpeta creada con las cuatro subcarpetas, archivos copiados, enlace que abre desde una ventana de incógnito y correo recibido.
 
 ## Qué puede salir mal
-- **El cliente no puede abrir el enlace**: usa Type `anyone` en el nodo Share si no quieres pedirle cuenta de Google, pero entonces cualquiera con el enlace entra.
+- **El cliente no puede abrir el enlace**: pídele que abra el enlace con una cuenta de Google con ese correo (puede crearla con su correo de siempre). No lo cambies a `anyone`: es material del cliente y cualquiera con el enlace entraría.
 - **Se entrega dos veces**: si el paso 11 falla, la fila sigue en `entregar`. Activa Retry On Fail en ese nodo y pon la actualización de la hoja como último paso, nunca antes del email.
 - **Muchos archivos**: la copia uno a uno es lenta. Con más de 50 archivos, mejor mover la carpeta entera con Operation: Move en vez de copiar.
 - **Cuota de Gmail**: con la cuenta gratuita, 500 correos al día; para entregas vas sobrado.

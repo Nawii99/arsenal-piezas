@@ -45,10 +45,10 @@ Después borra las copias de más de 7 días salvo las de los domingos, que se g
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Interval: Days, Trigger at Hour: 3, minuto 15. De madrugada, con la base tranquila.
-2. **Code** — arma el nombre del fichero y la orden de volcado.
+2. **Code** — arma el nombre del fichero y la orden de volcado. La contraseña no va en la orden: `pg_dump` la lee de `~/.pgpass` (permisos 600) del usuario que ejecuta n8n. Para MySQL usa `mysqldump --defaults-extra-file=/home/node/.my.cnf TU_BASE`, con usuario y contraseña en ese fichero (permisos 600).
 3. **Execute Command** — Command: `={{ $json.orden }}`. Genera el `.sql.gz` en `/tmp`.
-4. **Read/Write Files from Disk** — Operation: Read File, File Path `={{ $json.ruta }}`, Property Name `data`.
-5. **Google Drive** — Operation: Upload, Input Data Field Name `data`, File Name `={{ $json.nombre }}`, Parent Folder tu carpeta `copias-bd`.
+4. **Read/Write Files from Disk** — Operation: Read File, File Path `={{ $('Code').item.json.ruta }}`, Property Name `data`.
+5. **Google Drive** — Operation: Upload, Input Data Field Name `data`, File Name `={{ $('Code').item.json.nombre }}`, Parent Folder tu carpeta `copias-bd`.
 6. **Google Drive** — Operation: File/Folder > Search, en la misma carpeta, para listar lo que ya hay.
 7. **Code** — decide qué ficheros sobran según la regla 7/30.
 8. **Google Drive** — Operation: Delete File, para cada uno que salga del paso anterior.
@@ -60,7 +60,8 @@ const hoy = new Date();
 const sello = hoy.toISOString().slice(0,10);
 const nombre = `bd-${sello}.sql.gz`;
 const ruta = `/tmp/${nombre}`;
-const orden = `PGPASSWORD='TU_PASS' pg_dump -h TU_HOST -U TU_USUARIO -d TU_BASE | gzip > ${ruta}`;
+// Sin contraseña aquí: pg_dump la lee de ~/.pgpass (permisos 600)
+const orden = `pg_dump -h TU_HOST -U TU_USUARIO -d TU_BASE | gzip > ${ruta}`;
 return [{ json: { nombre, ruta, orden, esDomingo: hoy.getDay() === 0 } }];
 ```
 
@@ -84,10 +85,11 @@ return borrar;
 - **Restaura la copia en una base de pruebas.** Una copia que no has restaurado nunca no es una copia. Hazlo una vez al mes: `gunzip -c bd-fecha.sql.gz | psql -d pruebas`.
 
 ## Qué puede salir mal
-- **La contraseña en el nodo Code se ve en claro.** Guárdala como variable de entorno del contenedor y llámala con `process.env.PGPASSWORD`.
+- **La contraseña nunca va en el nodo Code ni en la orden.** Un flujo exportado se llevaría lo que esté escrito en el nodo. Va en `~/.pgpass` (línea `TU_HOST:5432:TU_BASE:TU_USUARIO:contraseña`, permisos 600) o en `~/.my.cnf` para MySQL.
 - **Disco lleno.** Añade `rm -f /tmp/bd-*.sql.gz` al principio de la orden para limpiar restos de intentos fallidos.
 - **Bases grandes.** Por encima de 2 GB, el nodo puede quedarse sin memoria: sube el límite con la variable `N8N_DEFAULT_BINARY_DATA_MODE=filesystem`.
 - **Cuota de Drive.** 15 GB gratis compartidos con Gmail. Con la rotación puesta no deberías pasar de una decena de ficheros.
+- **Ruta o nombre vacíos en los pasos 4 y 5**: Execute Command solo devuelve `stdout`, `stderr` y `exitCode`; por eso se leen de `$('Code')`.
 
 ## Cuánto cuesta
 - n8n auto-alojado: gratis (un VPS de 5 € al mes te sirve).

@@ -11,7 +11,7 @@ Recibe el webhook, verifica su firma, lo guarda en una tabla PostgreSQL y solo e
 ## Cómo usarla
 
 1. Crea la tabla cola_webhooks en PostgreSQL
-2. Guarda el secreto de firma en n8n
+2. Guarda el secreto de firma como variable de entorno de n8n (no en el nodo)
 3. Configura el flujo de recepción y el de reintentos
 4. Simula un fallo del backend y comprueba la cola
 
@@ -37,7 +37,7 @@ Si tu backend falla, el aviso queda en cola y un segundo flujo lo reintenta a lo
 
 ## Lo que necesitas antes
 - Una tabla en tu base PostgreSQL. Créala con: `CREATE TABLE cola_webhooks (id SERIAL PRIMARY KEY, evento_id TEXT UNIQUE, origen TEXT, cuerpo JSONB, intentos INT DEFAULT 0, proximo_intento TIMESTAMPTZ DEFAULT now(), estado TEXT DEFAULT 'pendiente', creado TIMESTAMPTZ DEFAULT now());`
-- El secreto de firma del proveedor. En Stripe: Desarrolladores > Webhooks > tu endpoint > Clave secreta de firma (`whsec_...`).
+- El secreto de firma del proveedor. En Stripe: Desarrolladores > Webhooks > tu endpoint > Clave secreta de firma (`whsec_...`). Guárdalo como variable de entorno de n8n (`STRIPE_WEBHOOK_SECRET`), nunca pegado en el nodo: un flujo exportado se llevaría la clave (si tu n8n bloquea `$env`, usa el nodo Stripe Trigger).
 - La URL interna de tu backend que procesa el evento.
 
 ## Flujo 1: recepción
@@ -61,7 +61,7 @@ Si tu backend falla, el aviso queda en cola y un segundo flujo lo reintenta a lo
 ## El código de verificación de firma
 ```js
 const crypto = require('crypto');
-const secreto = 'whsec_TU_SECRETO';
+const secreto = $env.STRIPE_WEBHOOK_SECRET; // nunca escribas aquí el whsec_
 const cabecera = $input.first().json.headers['stripe-signature'] || '';
 const cuerpo = JSON.stringify($input.first().json.body);
 const partes = Object.fromEntries(cabecera.split(',').map(p => p.split('=')));
@@ -82,5 +82,5 @@ return [{ json: { valida, evento_id: $input.first().json.body.id, cuerpo: $input
 - **Cola atascada.** Pon un aviso diario si hay más de 50 filas pendientes.
 
 ## Cuánto cuesta
-- n8n auto-alojado: gratis. En Cloud, ojo: cada reintento cuenta como ejecución; con 288 ejecuciones diarias del Schedule te comes el plan gratuito, así que auto-alójalo.
+- n8n auto-alojado: gratis. En Cloud, ojo: cada reintento cuenta como ejecución; con 288 ejecuciones diarias del Schedule te comes buena parte del cupo de ejecuciones (Cloud solo tiene prueba gratuita temporal y después planes de pago), así que auto-alójalo.
 - PostgreSQL: gratis en Supabase o Neon hasta medio giga.

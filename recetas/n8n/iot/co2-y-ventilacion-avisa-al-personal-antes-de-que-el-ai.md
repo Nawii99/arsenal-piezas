@@ -87,4 +87,4 @@ return [{ json: { ppm, accion, contador_alto: alto, contador_bajo: bajo, extract
 - **MQTT desconectado**: el MQTT Trigger de n8n a veces no reconecta solo tras un reinicio del broker. Añade un Schedule Trigger cada hora que compruebe en Sheets que ha entrado algún dato en los últimos 15 minutos.
 
 ## Cuánto cuesta
-Software y QuickChart (uso básico) gratis. Sensor y ESP32: 45-60 €. Shelly 25 €. Extractor, si no lo tienes, 60-150 €.
+Software (n8n autoalojado, gratis; n8n Cloud no tiene plan gratuito permanente: solo una prueba temporal y después planes de pago) y QuickChart (uso básico) gratis. Sensor y ESP32: 45-60 €. Shelly 25 €. Extractor, si no lo tienes, 60-150 €.

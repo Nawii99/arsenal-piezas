@@ -1,6 +1,6 @@
 ---
 description: Prepara la ficha y la propuesta de una formación para vender a una empresa
-argument-hint: [formación que ofreces y qué empresa o sector la recibe]
+argument-hint: "[formación que ofreces y qué empresa o sector la recibe]"
 ---
 
 Vas a preparar la propuesta de una formación para empresa sobre: $ARGUMENTS

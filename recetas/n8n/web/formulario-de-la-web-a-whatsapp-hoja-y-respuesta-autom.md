@@ -42,7 +42,7 @@ Para cualquier negocio de servicios que capta clientes por su web: reformas, cl�
 - Hoja «Leads web» con columnas: `fecha`, `nombre`, `email`, `telefono`, `mensaje`, `origen`, `estado`.
 
 ## Los nodos, en orden
-1. **Webhook** — Method `POST`, Path `formulario-web`, Respond `Using Respond to Webhook node`. Copia la Production URL.
+1. **Webhook** — Method `POST`, Path `formulario-web`, Respond `Using Respond to Webhook node`. Copia la Production URL. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code** — normaliza los campos y calcula la puntuación de spam (código abajo).
 3. **IF** — condición: `{{ $json.spam }}` *is false*.
 4. **Google Sheets** (*Append Row*) — hoja «Leads web».

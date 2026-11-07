@@ -44,7 +44,7 @@ Para talleres, obradores, imprentas, lavanderías y cualquier negocio con maquin
 1. **Schedule Trigger** — Interval, cada 5 minutos.
 2. **Google Sheets** — Get Row(s) de `maquinas`.
 3. **Loop Over Items** — Batch Size 1.
-4. **HTTP Request** — POST `https://shelly-53-eu.shelly.cloud/device/status`, Form Urlencoded con `id` = `{{ $json.device_id }}` y `auth_key`. Never Error activado.
+4. **HTTP Request** — POST `https://shelly-53-eu.shelly.cloud/device/status`, Form Urlencoded con `id` = `{{ $json.device_id }}`. El `auth_key` no lo escribas en el nodo: ponlo en una credencial (Authentication: Generic Credential Type > Custom Auth, con JSON `{"body": {"auth_key": "TU_AUTH_KEY"}}`), porque un flujo exportado se llevaría la clave. Never Error activado.
 5. **Code** «Sumar tiempo» — Run Once for Each Item:
 ```js
 const fila = $('Loop Over Items').item.json;
@@ -64,7 +64,7 @@ return { json: { nombre: fila.nombre, device_id: fila.device_id, umbral_w: fila.
 8. Rama true > **Telegram** — `🔧 {{ $json.nombre }} ha llegado a {{ $json.horas_acumuladas }} horas de funcionamiento (límite {{ $json.horas_limite }}). Toca mantenimiento. Último: {{ $json.ultimo_mantenimiento }}.`
 9. Conecta la salida final de vuelta al **Loop Over Items**.
 ## Cómo poner a cero tras el mantenimiento
-Haz un segundo workflow con **Webhook** (Path `mantenimiento-hecho`, GET) que reciba `?maquina=Compresor`, un **Code** que ponga `horas_acumuladas` a 0, `avisado` a `no` y `ultimo_mantenimiento` a la fecha de hoy, y un **Google Sheets** Update Row. Guarda ese enlace en el móvil: lo abres cuando acabas la revisión y listo.
+Haz un segundo workflow con **Webhook** (Path `mantenimiento-hecho`, GET) que reciba `?maquina=Compresor`, un **Code** que ponga `horas_acumuladas` a 0, `avisado` a `no` y `ultimo_mantenimiento` a la fecha de hoy, y un **Google Sheets** Update Row. Guarda ese enlace en el móvil: lo abres cuando acabas la revisión y listo. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 ## Cómo probarla
 Pon `horas_limite` a 0.1 y el `umbral_w` a 1 para una máquina de prueba (una lámpara vale). Ejecuta a mano dos veces: verás las horas subir en la hoja y llegará el Telegram. Comprueba que al segundo aviso ya no repite (columna avisado = si). Luego abre la URL de mantenimiento hecho y mira que se pone a cero. Restaura tus valores reales y activa.
 ## Qué puede salir mal
@@ -72,6 +72,6 @@ Pon `horas_limite` a 0.1 y el `umbral_w` a 1 para una máquina de prueba (una l�
 - **Cuenta horas de más**: si la máquina arranca justo entre dos muestreos, el error máximo es de 5 minutos por arranque. Suficiente para mantenimiento.
 - **Choques al escribir en la hoja**: por eso usamos Loop Over Items con lotes de 1, no en paralelo.
 - **La hoja no encuentra la fila**: la columna `nombre` tiene que coincidir exacta, sin espacios de más.
-- **Muchas ejecuciones**: 8.640 al mes por flujo. Si te aprieta, baja a cada 10 minutos y cambia el `5/60` por `10/60`.
+- **Muchas ejecuciones**: 8.640 al mes por flujo. Si te aprieta (sobre todo en n8n Cloud, que limita las ejecuciones según el plan de pago), baja a cada 10 minutos y cambia el `5/60` por `10/60`.
 ## Cuánto cuesta
-Enchufe medidor 20-40 €. Sheets, Telegram y Shelly Cloud gratis. n8n autoalojado 4-6 €/mes. Con 3 o 4 máquinas ya te ahorra la libreta y las averías tontas.
+Enchufe medidor 20-40 €. Sheets, Telegram y Shelly Cloud gratis. n8n autoalojado 4-6 €/mes (n8n Cloud no tiene plan gratuito permanente: solo prueba temporal y después planes de pago con límite de ejecuciones). Con 3 o 4 máquinas ya te ahorra la libreta y las averías tontas.

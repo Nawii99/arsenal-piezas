@@ -36,14 +36,15 @@ Llama a tu web cada 5 minutos, mira el código de respuesta y el tiempo que tard
 Cuando la web vuelve, te manda un segundo mensaje de «recuperada» con los minutos que estuvo caída, y deja todo apuntado en una hoja de cálculo para reclamar al hosting.
 
 ## Lo que necesitas antes
-- n8n funcionando: plan gratuito de n8n Cloud o auto-alojado (una VPS de 5 €/mes o un Docker en tu ordenador que esté siempre encendido).
-- Un bot de Telegram: escribe a @BotFather en Telegram, comando `/newbot`, te da un token tipo `123456:AAxx...`. Copia ese token.
-- Tu chat ID: escribe algo a tu bot y abre `https://api.telegram.org/bot<TU_TOKEN>/getUpdates` en el navegador; el número que sale en `chat.id` es el tuyo.
+- n8n funcionando: n8n Cloud (prueba gratuita temporal, luego de pago) o auto-alojado (una VPS de 5 €/mes o un Docker en tu ordenador que esté siempre encendido).
+- Un bot de Telegram: escribe a @BotFather en Telegram, comando `/newbot`, te da un token tipo `123456:AAxx...`. Pégalo solo en una credencial «Telegram API» de n8n (Credentials > New), nunca en un nodo ni en una URL: un flujo exportado se llevaría el token.
+- Tu chat ID: escribe algo a tu bot, añade un nodo **Telegram Trigger** temporal con la credencial anterior, pulsa «Listen for test event» y lee `message.chat.id`; o escribe a @userinfobot. No pongas el token en ninguna URL.
 - Una hoja de Google llamada «Caídas web» con las columnas: fecha, url, evento, codigo, ms, mensaje.
 - Credencial de Google Sheets en n8n (OAuth2, se conecta con dos clics desde el propio nodo).
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Trigger Interval: Minutes, Minutes Between Triggers: 5.
+1b. **Edit Fields (Set)** (renómbralo «Marcar inicio») — crea el campo número `inicio` con el valor `{{ Date.now() }}`. Sirve para medir cuánto tarda la web.
 2. **HTTP Request** (renómbralo «Ping web») — Method: GET; URL: `https://tudominio.com/`; en Options activa `Response > Include Response Headers and Status` y `Response > Never Error` (para que un 500 no rompa el flujo); `Timeout`: 10000 ms; `Redirects > Follow`: activado. En Settings del nodo: `On Error: Continue (using error output)` y `Retry On Fail`: desactivado (ya lo repetimos nosotros).
 3. **Code** (renómbralo «Decidir aviso») — Mode: Run Once for All Items. Pega el código de abajo. Guarda memoria entre ejecuciones para no spamearte cada 5 minutos.
 4. **Switch** — Mode: Rules, campo `{{ $json.accion }}`; salida 1 si es igual a `caida`, salida 2 si es igual a `recuperada`, salida 3 (fallback) a nada.
@@ -64,8 +65,9 @@ let accion = 'nada';
 let minutos = 0;
 if (!ok && s.fallos >= 2 && !s.avisado) { accion = 'caida'; s.avisado = true; s.desde = ahora.getTime(); }
 if (ok && s.avisado) { accion = 'recuperada'; s.avisado = false; minutos = Math.round((ahora.getTime() - (s.desde || ahora.getTime())) / 60000); }
+const ms = Date.now() - Number($('Marcar inicio').first().json.inicio || Date.now());
 const mensaje = ok ? 'OK' : (item.error?.message || 'Sin respuesta o código de error');
-return [{ json: { accion, codigo, fecha, minutos, ms: item.headers ? 0 : 0, mensaje } }];
+return [{ json: { accion, codigo, fecha, minutos, ms, mensaje } }];
 ```
 
 ## Cómo probarla
@@ -81,5 +83,5 @@ return [{ json: { accion, codigo, fecha, minutos, ms: item.headers ? 0 : 0, mens
 - **Telegram bloquea el envío**: tienes que haber escrito tú primero al bot; si no, devuelve «chat not found».
 
 ## Cuánto cuesta
-- Gratis del todo si te auto-alojas n8n (Docker) o usas n8n Cloud gratuito. Telegram y Google Sheets, gratis.
-- Ojo con el plan gratuito de n8n Cloud: cada 5 minutos son unas 8.600 ejecuciones al mes y te comerás el límite. Con auto-alojado no hay límite; si estás en la nube, pon 15 minutos o pasa a su plan de pago (~20 €/mes).
+- Gratis del todo si te auto-alojas n8n (Docker); n8n Cloud solo es gratis durante la prueba temporal. Telegram y Google Sheets, gratis.
+- Ojo con la prueba gratuita de n8n Cloud: cada 5 minutos son unas 8.600 ejecuciones al mes y te comerás el límite. Con auto-alojado no hay límite; si estás en la nube, pon 15 minutos o pasa a su plan de pago (~20 €/mes).

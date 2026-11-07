@@ -44,7 +44,7 @@ Para diseñadores gráficos y de marca que quieren arrancar cada proyecto con la
 - Tu método escrito en cuatro líneas: qué preguntas siempre haces y qué señales de alarma detectas.
 
 **Los nodos, en orden**
-1. **Webhook**: método POST, path `brief-diseno`. Copia la Production URL y pégala en Tally.
+1. **Webhook**: método POST, path `brief-diseno`. Copia la Production URL y pégala en Tally. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 2. **Code**: aplana las respuestas de Tally, que llegan anidadas.
 ```javascript
 const campos = $json.body.data.fields || [];

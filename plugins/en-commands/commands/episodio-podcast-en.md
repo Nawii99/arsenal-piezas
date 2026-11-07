@@ -1,11 +1,11 @@
 ---
-name: episodio-podcast
-description: Prepares a podcast episode from a transcript or notes, in three modes. Episode notes, promotional texts, and publish checklist. Launched with /episodio-podcast, the mode, and the file.
+name: episodio-podcast-en
+description: Prepares a podcast episode from a transcript or notes, in three modes. Episode notes, promotional texts, and publish checklist. Launched with /episodio-podcast-en, the mode, and the file.
 ---
 
-# /episodio-podcast
+# /episodio-podcast-en
 
-Usage: `/episodio-podcast notas episodios/012/transcripcion.txt`
+Usage: `/episodio-podcast-en notas episodios/012/transcripcion.txt`
 Modes: `notas` (notes), `promo`, and `publicar` (publish). The first word is the mode and the next is the file path.
 Arguments received: $ARGUMENTS
 

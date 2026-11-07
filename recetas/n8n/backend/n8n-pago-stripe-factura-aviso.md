@@ -55,10 +55,10 @@ Hazlo todo en modo prueba de Stripe. Todos los nodos funcionan igual con claves 
    Riesgo: el nodo Stripe Trigger de n8n comprueba la firma del webhook por ti. Si en lugar de este nodo usas un nodo 'Webhook' genérico, cualquiera que sepa la URL puede enviarte un pago falso y te generará una factura falsa. Usa el Stripe Trigger.
 2. Nodo 'IF': comprueba que `payment_status` es `paid` (o para `invoice.paid`, que `paid` es true). Si no, termina el flujo sin hacer nada. Evita facturar pagos pendientes.
 3. Nodo 'Set' (Editar campos): saca en campos limpios lo que vas a usar: correo del cliente, nombre, importe (Stripe lo da en céntimos: divide entre 100), moneda, NIF si lo pediste (viene en `customer_details.tax_ids`), fecha, id del pago. Así los nodos siguientes son fáciles de leer.
-4. Nodo 'Google Sheets' (Append row): hoja 'Ventas'. Columnas: fecha, id_pago, cliente, correo, NIF, base, IVA, total, estado_factura. Deja 'estado_factura' en 'pendiente'. Si algo falla más adelante, tienes el registro y puedes facturar a mano.
-5. Nodo 'Google Sheets' (Lookup) antes de facturar: busca si ya existe el id_pago. Si existe, para. Stripe reenvía el mismo evento si tu n8n no respondió a tiempo, y sin este paso harás facturas duplicadas. Es el fallo más común.
-6. Nodo 'HTTP Request' hacia tu programa de facturación: crea la factura con base, IVA, NIF y datos del cliente. La URL y el cuerpo exactos dependen del programa [mirar su documentación de API]. Numeración correlativa: la pone el programa de facturación, nunca tú en n8n.
-7. Nodo 'Google Sheets' (Update): pon 'estado_factura' en 'emitida' con el número que devolvió el programa.
+4. Nodo 'Google Sheets' (Lookup) antes de nada: busca si ya existe el id_pago. Si existe, para. Stripe reenvía el mismo evento si tu n8n no respondió a tiempo, y sin este paso harás facturas duplicadas. Es el fallo más común.
+5. Nodo 'Google Sheets' (Append row): hoja 'Ventas'. Columnas: fecha, id_pago, cliente, correo, NIF, base, IVA, total, numero_factura, estado_factura. Deja 'estado_factura' en 'pendiente': la venta queda reservada antes de facturar y, si algo falla más adelante, tienes el registro y puedes facturar a mano. Este flujo debe ejecutarse de uno en uno (concurrencia 1) para que dos pagos no se crucen.
+6. Nodo 'HTTP Request' hacia tu programa de facturación: crea la factura con base, IVA, NIF y datos del cliente. La URL y el cuerpo exactos dependen del programa [mirar su documentación de API]. Numeración correlativa: la pone el programa de facturación, nunca tú en n8n. Antes de dar la factura por buena, comprueba que el número devuelto no existe ya en la columna numero_factura de la hoja; si existe, para y avísate.
+7. Nodo 'Google Sheets' (Update): pon 'estado_factura' en 'emitida' con el número que devolvió el programa, y guarda ese número en 'numero_factura'.
 8. Nodo 'Telegram' (Send message): a tu chat_id. Texto corto: 'Pago de [IMPORTE] € de [NOMBRE]. Factura [NÚMERO] emitida.' Si el nodo 6 falló, que diga 'Factura PENDIENTE, hazla a mano'. Para eso, en el nodo 6 activa 'Continue on fail' y en el 8 usa un IF sobre si hubo error.
 
 ## Cómo probarla sin liarla
@@ -66,7 +66,7 @@ Hazlo todo en modo prueba de Stripe. Todos los nodos funcionan igual con claves 
 1. Activa el flujo con claves de prueba.
 2. En el panel de Stripe (modo prueba) haz una compra con tu Payment Link y la tarjeta 4242 4242 4242 4242.
 3. Mira en n8n 'Executions': tiene que haber una ejecución verde. Comprueba la fila en la hoja y el mensaje en Telegram.
-4. En Stripe > Desarrolladores > Webhooks, pulsa 'Reenviar' sobre ese mismo evento. Debe pararse en el nodo 5 y no crear una segunda factura. Si crea dos, no pases a producción.
+4. En Stripe > Desarrolladores > Webhooks, pulsa 'Reenviar' sobre ese mismo evento. Debe pararse en el nodo 4 y no crear una segunda factura. Si crea dos, no pases a producción.
 5. Si usas programa de facturación, comprueba que tiene modo sandbox o crea las facturas de prueba como 'borrador' y bórralas después. Una factura emitida con número correlativo no se borra: se anula con una rectificativa.
 6. Cuando todo cuadre, duplica el flujo, cambia la credencial a la clave `sk_live_` y desactiva el de prueba. No mezcles claves de prueba y producción en el mismo flujo.
 

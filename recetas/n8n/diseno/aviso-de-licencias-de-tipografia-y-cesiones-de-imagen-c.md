@@ -80,4 +80,4 @@ Las licencias por volumen (visitas al mes, tirada) no caducan por fecha: añade 
 Si el cliente no renueva, tienes que retirar la fuente de la web: deja escrito en el correo qué proyectos la usan, por eso el campo `proyecto` es obligatorio.
 Guarda siempre el PDF de la licencia en Drive y pon el enlace en `factura_url`: sin justificante, la reclamación la pierdes igual.
 ## Cuánto cuesta
-Todo gratis: Airtable plan gratuito, Gmail, Google Calendar y n8n auto-alojado. Una ejecución diaria son 30 al mes, dentro incluso del plan gratuito de n8n Cloud.
+Todo gratis: Airtable plan gratuito, Gmail, Google Calendar y n8n auto-alojado. Una ejecución diaria son 30 al mes, un consumo mínimo incluso en n8n Cloud (que tras la prueba gratuita temporal es de pago).

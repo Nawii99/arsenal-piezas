@@ -46,23 +46,23 @@ Importante: en la instalación de n8n activa la variable de entorno `NODES_EXCLU
 ## Los nodos, en orden
 1) **Schedule Trigger** — `Custom (Cron)` con expresión `0 23 * * *` para que arranque a las 23:00.
 2) **Google Drive** (operación `File/Folder > Search`) — carpeta `render_pendiente`, filtro por nombre que contenga `.blend`.
-3) **Split In Batches** — tamaño de lote `1`. Esto es la clave: renderiza de uno en uno y no funde el PC.
+3) **Split In Batches** (renómbralo «Lote») — tamaño de lote `1`. Esto es la clave: renderiza de uno en uno y no funde el PC.
 4) **Google Drive** (operación `Download`) — el archivo del lote actual.
-5) **Read/Write Files from Disk** (operación `Write`) — ruta `C:\cola\entrada\{{ $json.name }}`, campo binario `data`.
+5) **Read/Write Files from Disk** (operación `Write`) — ruta `C:\cola\entrada\{{ $('Lote').item.json.id }}.blend`, campo binario `data`. En disco el archivo se llama con su ID de Drive, no con el nombre que trae.
 6) **Execute Command** — comando de render (ver abajo). En Settings del nodo sube el `Timeout` a 21600000 ms (6 horas) o desactívalo.
-7) **Code** — comprueba que se ha generado algún fotograma y prepara el nombre de salida.
-8) **Read/Write Files from Disk** (operación `Read`) — lee el resultado de `C:\cola\salida`.
+7) **Code** — comprueba que se ha generado algún fotograma y prepara el nombre de salida. El nombre original del `.blend` (`$('Lote').item.json.name`) solo se usa aquí, como nombre del archivo que se sube a Drive.
+8) **Read/Write Files from Disk** (operación `Read`) — lee de `C:\cola\salida` los archivos que empiezan por `{{ $('Lote').item.json.id }}_`.
 9) **Google Drive** (operación `Upload`) — a la carpeta `render_terminado`.
 10) **Google Drive** (operación `Delete`) — borra el `.blend` de `render_pendiente` para que no se repita.
-11) **Gmail** (operación `Send`) — asunto `Render terminado: {{ $json.name }}`.
+11) **Gmail** (operación `Send`) — asunto `Render terminado: {{ $('Lote').item.json.name }}` (tras el Delete, `$json` ya no trae el nombre).
 12) Conecta la salida de Gmail de vuelta al **Split In Batches** para que coja el siguiente trabajo.
 
 ## El comando del nodo Execute Command
 ```bash
-"C:\Program Files\Blender Foundation\Blender 4.2\blender.exe" -b "C:\cola\entrada\{{ $json.name }}" -o "C:\cola\salida\{{ $json.name }}_####" -F PNG -x 1 -a
+"C:\Program Files\Blender Foundation\Blender 4.2\blender.exe" -b --disable-autoexec "C:\cola\entrada\{{ $('Lote').item.json.id }}.blend" -o "C:\cola\salida\{{ $('Lote').item.json.id }}_####" -F PNG -x 1 -a
 ```
-En Linux o Mac sería: `blender -b "/home/tu/cola/entrada/{{ $json.name }}" -o "/home/tu/cola/salida/{{ $json.name }}_####" -F PNG -x 1 -a`
-`-b` es sin interfaz, `-o` la ruta de salida, `-F PNG` el formato, `-x 1` añade la extensión y `-a` renderiza toda la animación. Para un solo fotograma cambia `-a` por `-f 1`.
+En Linux o Mac sería: `blender -b --disable-autoexec "/home/tu/cola/entrada/{{ $('Lote').item.json.id }}.blend" -o "/home/tu/cola/salida/{{ $('Lote').item.json.id }}_####" -F PNG -x 1 -a`
+`-b` es sin interfaz, `--disable-autoexec` impide que se ejecuten los scripts de Python que lleve dentro el `.blend`, `-o` la ruta de salida, `-F PNG` el formato, `-x 1` añade la extensión y `-a` renderiza toda la animación. Para un solo fotograma cambia `-a` por `-f 1`.
 
 ## Cómo probarla
 Prueba primero el comando a pelo en la consola con un `.blend` pequeño de 10 fotogramas a resolución baja. Si ahí funciona, funcionará en n8n.
@@ -75,6 +75,9 @@ Texturas enlazadas que no encuentra: guarda el `.blend` con `Archivo > Datos ext
 Si el render tarda más que el timeout del nodo, n8n lo corta a medias. Sube el timeout y desactiva en n8n la limpieza automática de ejecuciones largas.
 Dos ejecuciones solapadas saturan la memoria: por eso Split In Batches va a 1 y el flujo se realimenta al terminar cada trabajo.
 Si el PC se apaga o se suspende no hay render: desactiva la suspensión automática en las opciones de energía.
+Un nombre de archivo con comillas o símbolos (`a" & del ...`) ejecutaría órdenes en tu PC si entrase en el comando: por eso en disco y en el comando solo se usa el ID de Drive, y el nombre original va únicamente al archivo subido y al correo.
+Un `.blend` puede llevar scripts de Python que se ejecutan al abrirlo si tu Blender tiene activada la ejecución automática: por eso el comando lleva `--disable-autoexec`.
+Correo con el asunto vacío: tras el Delete `$json` ya no trae el nombre; por eso el asunto lo lee de «Lote».
 
 ## Cuánto cuesta
 Blender es gratis, n8n auto-alojado es gratis, Drive gratis hasta 15 GB (los renders pesan, ojo).

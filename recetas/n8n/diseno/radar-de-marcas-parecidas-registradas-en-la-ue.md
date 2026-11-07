@@ -42,9 +42,9 @@ En n8n: credencial «Airtable Personal Access Token API» (token desde airtable.
 ## Los nodos, en orden
 **1. «Schedule Trigger»** — Interval: Weeks, martes a las 8:00.
 **2. «Airtable»** — Resource: Record, Operation: Search, Base y Table `Vigilancia`, Filter By Formula `{activo}=1`.
-**3. «HTTP Request»** (nómbralo Token) — POST a la URL de token de EUIPO, Body Content Type: Form Urlencoded, campos `grant_type` = `client_credentials`, `client_id` y `client_secret`. Guarda `access_token`.
+**3. «HTTP Request»** (nómbralo Token) — POST a la URL de token de EUIPO, Body Content Type: Form Urlencoded, campos `grant_type` = `client_credentials`, y el `client_id` y el `client_secret` en una credencial de n8n (Authentication: Generic Credential Type > Custom Auth, con JSON `{"body": {"client_id": "TU_CLIENT_ID", "client_secret": "TU_CLIENT_SECRET"}, "headers": {"X-IBM-Client-Id": "TU_CLIENT_ID"}}`), nunca escritos en el nodo: un flujo exportado se llevaría las claves. Guarda `access_token`.
 **4. «Split In Batches»** — Batch Size 1, para no saturar la API.
-**5. «HTTP Request»** (nómbralo Buscar marca) — GET al endpoint de búsqueda de trademarks con query `basicSearch={{ $json.nombre_vigilado }}` y `size=50`. En Headers: `Authorization` = `Bearer {{ $('Token').first().json.access_token }}` y `X-IBM-Client-Id` = tu client id. Settings: Retry On Fail activado.
+**5. «HTTP Request»** (nómbralo Buscar marca) — GET al endpoint de búsqueda de trademarks con query `basicSearch={{ $json.nombre_vigilado }}` y `size=50`. En Headers: `Authorization` = `Bearer {{ $('Token').first().json.access_token }}` y `X-IBM-Client-Id` = tu client id (desde la misma credencial, no escrito a mano). Settings: Retry On Fail activado.
 **6. «Code»** — calcula el parecido entre el nombre vigilado y cada resultado con distancia de Levenshtein (código abajo) y deja solo los que superan el 70%.
 **7. «Airtable»** (nómbralo Ya vistas) — Search en `Alertas` para no repetir avisos, comparando el campo `numero`.
 **8. «IF»** — comprueba que quedan resultados nuevos.

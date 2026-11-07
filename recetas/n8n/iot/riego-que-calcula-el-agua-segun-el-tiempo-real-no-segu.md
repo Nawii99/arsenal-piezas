@@ -44,7 +44,7 @@ Con eso calcula los minutos de riego de la tarde, abre la electroválvula el tie
 
 ## Los nodos, en orden
 1. **Schedule Trigger** — Cron `0 8 * * *`, zona Europe/Madrid.
-2. **HTTP Request** «AEMET paso 1» — GET a `https://opendata.aemet.es/opendata/api/prediccion/especifica/municipio/diaria/28079`, con Header `api_key` y tu clave. Devuelve un JSON con un campo `datos` que es otra URL.
+2. **HTTP Request** «AEMET paso 1» — GET a `https://opendata.aemet.es/opendata/api/prediccion/especifica/municipio/diaria/28079`, con la clave en una credencial de n8n (Generic Credential Type > Header Auth, Name `api_key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría). Devuelve un JSON con un campo `datos` que es otra URL.
 3. **HTTP Request** «AEMET paso 2» — GET a `{{ $json.datos }}`. Aquí sí vienen los datos. Es una API en dos pasos, no te la saltes.
 4. **HTTP Request** «humedad suelo» — GET a `http://192.168.1.90/sensor/humedad_suelo` (ESPHome web server) o al endpoint que expongas.
 5. **Code** — calcula los minutos de riego. Código abajo.

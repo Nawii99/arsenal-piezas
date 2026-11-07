@@ -36,9 +36,9 @@ Recorre una lista de dominios, pregunta al registro oficial (RDAP, el sustituto 
 Para el desarrollador freelance o la agencia que administra dominios ajenos y no tiene un panel único donde verlo todo.
 
 ## Lo que necesitas antes
-- n8n (gratis).
+- n8n (gratis si lo autoalojas; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).
 - Nada de claves para RDAP: `https://rdap.org/domain/tudominio.es` responde JSON público y gratuito. Ojo: los `.es` los sirve Red.es y a veces no publican la fecha de expiración; para esos usaremos la fecha del certificado como aviso.
-- Nada de claves para `https://ssl-checker.io/api/v1/analyze?host=tudominio.es`, que devuelve los días restantes del certificado. Si prefieres no depender de terceros, en n8n auto-alojado puedes usar un nodo **Execute Command** con `echo | openssl s_client -servername DOMINIO -connect DOMINIO:443 2>/dev/null | openssl x509 -noout -enddate`.
+- Nada de claves para `https://ssl-checker.io/api/v1/analyze?host=tudominio.es`, que devuelve los días restantes del certificado. Si prefieres no depender de terceros, en n8n auto-alojado puedes usar un nodo **Execute Command** con `echo | openssl s_client -servername DOMINIO -connect DOMINIO:443 2>/dev/null | openssl x509 -noout -enddate`. Si los dominios salen de una hoja, pon antes un nodo **Code** que pare si no cumplen `/^(?=.{1,253}$)([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$/i` y usa en el comando solo ese valor validado.
 - Credencial de Google Calendar y de Gmail en n8n (OAuth2, asistente de Google Cloud Console).
 - Una hoja o un nodo Set con tus dominios y el correo del responsable de cada uno.
 
@@ -68,7 +68,7 @@ return salida;
 ```
 7. **IF** — condición numérica: `{{ $json.minimo }}` menor o igual que 30.
 8. **Google Calendar** — Operation: Create Event, calendario el tuyo, «Start» expresión `{{ new Date(Date.now() + ($json.minimo - 7) * 86400000).toISOString() }}`, «End» lo mismo más una hora, título `Renovar {{ $json.dominio }} (quedan {{ $json.minimo }} días)`, y en «Additional Fields» activa un recordatorio por correo de 1 día antes.
-9. **Gmail** — Send, To `{{ $json.aviso }}`, Subject `Renovación pendiente: {{ $json.dominio }}`, cuerpo indicando días de dominio y de certificado y quién debe renovarlo.
+9. **Gmail** — Send, To `{{ $('Calcular días').item.json.aviso }}`, Subject `Renovación pendiente: {{ $('Calcular días').item.json.dominio }}` (tras el Calendar, `$json` es el evento creado), cuerpo indicando días de dominio y de certificado y quién debe renovarlo.
 
 ## Cómo probarla
 Mete en la lista un dominio tuyo que sepas que caduca pronto y otro recién renovado; el primero debe generar evento y correo, el segundo no. Para probar sin esperar, cambia temporalmente el IF a «menor o igual que 400» y comprueba que se crea todo bien; luego devuélvelo a 30.
@@ -77,7 +77,9 @@ Mete en la lista un dominio tuyo que sepas que caduca pronto y otro recién reno
 - **RDAP sin fecha de expiración**: pasa con `.es` y algún TLD más. El código ya lo tolera devolviendo `null` y quedándose con la fecha del certificado; para esos dominios apunta a mano la fecha de renovación en el Set.
 - **Certificados de Let's Encrypt**: duran 90 días y se renuevan solos, así que dispararían aviso cada dos meses. Añade en el Set un campo `auto_ssl: true` y un filtro que ignore `dias_ssl` en esos dominios.
 - **Eventos duplicados**: si lo ejecutas cada lunes crearás un evento por semana. Antes del nodo Calendar pon un **Google Calendar** con operación «Get Many» filtrando por texto `Renovar {{ $json.dominio }}` y un **IF** que solo cree si no existe.
+- **Correo sin destinatario**: detrás de Google Calendar, `$json` trae el evento y no `aviso`; por eso el Gmail lee de «Calcular días».
 - **El servicio de SSL de terceros cae**: por eso está el «Continue On Fail»; si te preocupa la dependencia, usa la variante con `openssl` y Execute Command.
+- **Un dominio con trampa en la variante openssl**: una celda como `a.com; rm -rf ~` se ejecutaría en tu servidor; por eso el dominio pasa antes por la regex del Code y solo ese valor entra en el comando.
 
 ## Cuánto cuesta
-Gratis. RDAP es un servicio público, el comprobador de SSL tiene un plan gratuito de sobra para decenas de dominios semanales, y Calendar y Gmail entran en tu cuenta de Google. Solo el alojamiento de n8n si lo montas en un VPS.
+Gratis. RDAP es un servicio público, el comprobador de SSL tiene un plan gratuito de sobra para decenas de dominios semanales, y Calendar y Gmail entran en tu cuenta de Google. Con n8n autoalojado no pagas el programa, solo el alojamiento si lo montas en un VPS; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago.

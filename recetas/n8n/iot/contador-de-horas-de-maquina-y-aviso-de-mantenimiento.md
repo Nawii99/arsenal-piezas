@@ -44,7 +44,7 @@ Cada 15 minutos pregunta al enchufe inteligente cuántos vatios está gastando l
 1. **Schedule Trigger** — cada **15** minutos.
 2. **Google Sheets** — operación *Get Row(s)*, hoja `Maquinas`. Devuelve una fila por máquina.
 3. **Split In Batches** — tamaño de lote **1**, para tratar las máquinas una a una y no pasarte del límite de la API de Shelly.
-4. **HTTP Request** — POST a `https://TU-SERVIDOR.shelly.cloud/device/status`, *Form Urlencoded*, `id` = `{{ $json.device_id }}` (añade esa columna a la hoja) y `auth_key`.
+4. **HTTP Request** — POST a `https://TU-SERVIDOR.shelly.cloud/device/status`, *Form Urlencoded*, `id` = `{{ $json.device_id }}` (añade esa columna a la hoja) y `auth_key`. La `auth_key` no la escribas en el nodo ni la guardes en la hoja: ponla en una credencial de n8n (Authentication: Generic Credential Type > Custom Auth, con el JSON `{"body": {"auth_key": "tu clave"}}`); un flujo exportado se la llevaría.
 5. **Code**:
 ```js
 const est = $json.data.device_status;

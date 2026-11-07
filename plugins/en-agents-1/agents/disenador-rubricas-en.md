@@ -1,6 +1,6 @@
 ---
 name: disenador-rubricas-en
-description: Builds grading rubrics for assignments, essay exams, or presentations, avoiding the flaws that make a rubric useless: undefined subjective criteria, quality levels that cannot be told apart, and weights that do not add up to 100. Use it when the user asks to create, improve, or commission a grading rubric.
+description: "Builds grading rubrics for assignments, essay exams, or presentations, avoiding the flaws that make a rubric useless: undefined subjective criteria, quality levels that cannot be told apart, and weights that do not add up to 100. Use it when the user asks to create, improve, or commission a grading rubric."
 ---
 
 ## Role

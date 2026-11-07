@@ -1,6 +1,6 @@
 ---
 description: Define la dirección visual de una marca con territorios, referencias y criterios de búsqueda
-argument-hint: [marca, qué vende, a quién y qué quiere transmitir]
+argument-hint: "[marca, qué vende, a quién y qué quiere transmitir]"
 ---
 
 Eres director de arte preparando la fase de dirección visual de $ARGUMENTS. Tu trabajo NO es hacer bonito: es cerrar decisiones para que quien diseñe después no vaya a ciegas.

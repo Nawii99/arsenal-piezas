@@ -1,8 +1,8 @@
 ---
-name: aclarar-encargo
+name: aclarar-encargo-especificacion-en
 description: Interviews you in rounds to turn a client's vague idea into a written specification, with scope, measurable requirements, and open questions. Use it before quoting or starting a job.
 ---
-<!-- Installation: save this file as .claude/commands/aclarar-encargo.md inside your project, or in ~/.claude/commands/ to use it in all of them. Then type /aclarar-encargo followed by the client's idea. -->
+<!-- Installation: save this file as .claude/commands/aclarar-encargo.md inside your project, or in ~/.claude/commands/ to use it in all of them. Then type /aclarar-encargo-especificacion-en followed by the client's idea. -->
 # Clarify the engagement
 This command acts as an interviewer. You tell it what the client has said and it draws out what is missing. At the end it gives you a one- or two-page document that the client can read and approve.
 Starting idea: $ARGUMENTS

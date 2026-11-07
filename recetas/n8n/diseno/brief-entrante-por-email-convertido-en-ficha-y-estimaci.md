@@ -43,7 +43,7 @@ En n8n: credenciales «Gmail OAuth2», «Notion API» y una «Header Auth» para
 ## Los nodos, en orden
 **1. «Gmail Trigger»** — Poll Times: Every 5 Minutes, Filters > Label IDs: `presupuestos`, Options > Download Attachments: off.
 **2. «Code»** — limpia el correo: quita firmas, cadenas de respuestas y HTML sobrante (código abajo).
-**3. «HTTP Request»** (nómbralo Extraer brief) — POST a `https://api.anthropic.com/v1/messages`, Headers: `x-api-key` con tu clave, `anthropic-version` = `2023-06-01`, `content-type` = `application/json`. Body JSON con `model` (por ejemplo un modelo Claude actual), `max_tokens` 1200 y un `messages` cuyo contenido sea: `Extrae del siguiente correo un JSON con las claves tipo, sector, entregables (array), plazo, presupuesto_insinuado, urgencia (alta/media/baja), dudas (array de lo que falta preguntar). Responde SOLO JSON válido, sin texto alrededor. Correo: {{ $json.texto_limpio }}`.
+**3. «HTTP Request»** (nómbralo Extraer brief) — POST a `https://api.anthropic.com/v1/messages`, Headers: `x-api-key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `x-api-key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría), `anthropic-version` = `2023-06-01`, `content-type` = `application/json`. Body JSON con `model` (por ejemplo un modelo Claude actual), `max_tokens` 1200 y un `messages` cuyo contenido sea: `Extrae del siguiente correo un JSON con las claves tipo, sector, entregables (array), plazo, presupuesto_insinuado, urgencia (alta/media/baja), dudas (array de lo que falta preguntar). Responde SOLO JSON válido, sin texto alrededor. Correo: {{ $json.texto_limpio }}`.
 **4. «Code»** (nómbralo Estimar) — parsea el JSON y aplica tu tarifario para calcular horas y euros (código abajo).
 **5. «Notion»** — Resource: Database Page, Operation: Create, Database ID el tuyo, mapeando todas las propiedades.
 **6. «Gmail»** — Send, respuesta automática al cliente en 1 minuto: acuse de recibo con las dudas que ha detectado la IA, para que vaya contestándolas. Reply To Message ID `{{ $('Gmail Trigger').first().json.id }}` para que quede en el mismo hilo.
@@ -82,6 +82,6 @@ Ajusta `TARIFA` y `HORAS` a tus números reales antes de fiarte de la estimació
 La IA a veces devuelve el JSON envuelto en explicaciones: el `replace` de las comillas triples lo cubre, y el try/catch evita que el flujo reviente.
 Correos con firmas largas o cadenas de respuesta hinchan el coste: por eso se recorta a 6.000 caracteres.
 No dejes que la respuesta automática al cliente prometa precios; que solo acuse recibo y pregunte dudas. El presupuesto lo mandas tú.
-Si Gmail Trigger sondea cada minuto en n8n Cloud gratuito, te comes las ejecuciones: ponlo cada 15 minutos.
+Si Gmail Trigger sondea cada minuto en n8n Cloud (de pago tras la prueba gratuita), te comes las ejecuciones: ponlo cada 15 minutos.
 ## Cuánto cuesta
-n8n, Gmail y Notion gratis. La llamada a la IA cuesta céntimos por correo (unos 0,01-0,03 € con un modelo intermedio). Con 50 consultas al mes no llegas a 2 € de API.
+n8n auto-alojado (gratis), Gmail y Notion gratis. La llamada a la IA cuesta céntimos por correo (unos 0,01-0,03 € con un modelo intermedio). Con 50 consultas al mes no llegas a 2 € de API.

@@ -1,6 +1,6 @@
 ---
 name: verificador-antihumo
-description: Reviews a finished piece of content before publication and flags unsourced statistics, unverifiable claims, legally risky promises under Spanish advertising and consumer law, and vague filler language. Returns a line-by-line risk report with a concrete fix for each item. Use this agent as the last step before publishing web copy, articles, ads, emails or product pages.
+description: Revisa una pieza de contenido terminada antes de publicarla y señala estadísticas sin fuente, afirmaciones no verificables, promesas con riesgo legal según la ley española de publicidad y consumo, y relleno vago. Devuelve un informe de riesgos línea por línea con una corrección concreta para cada elemento. Úsalo como último paso antes de publicar textos web, artículos, anuncios, correos o fichas de producto.
 tools: Read, Write, Grep, WebSearch, WebFetch
 ---
 

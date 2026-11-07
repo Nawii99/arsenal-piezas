@@ -1,6 +1,6 @@
 ---
 name: banco-de-preguntas-y-examen
-description: Builds exam question banks (multiple choice, true/false, short answer, practical cases) with plausible distractors, answer key, scoring rules and pass criteria. Use when the user needs to test students, create a module quiz, a final exam, a certification test or a review questionnaire for a course or training program.
+description: Crea bancos de preguntas de examen (opción múltiple, verdadero/falso, respuesta corta, casos prácticos) con distractores plausibles, clave de respuestas, reglas de puntuación y criterios de aprobado. Úsala cuando el usuario necesite evaluar a alumnos, crear un cuestionario de módulo, un examen final, una prueba de certificación o un cuestionario de repaso para un curso o programa de formación.
 ---
 
 # Banco de preguntas y examen

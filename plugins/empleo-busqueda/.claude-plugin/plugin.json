@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-empleo-busqueda",
+  "version": "1.0.0",
+  "description": "Empleo y currículum · Búsqueda y candidaturas: 5 comandos /, 4 skills, 3 subagentes en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "empleo",
+    "arsenal-del-marketer",
+    "busqueda"
+  ]
+}

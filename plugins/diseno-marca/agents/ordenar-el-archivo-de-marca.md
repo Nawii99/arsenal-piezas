@@ -1,6 +1,6 @@
 ---
 name: ordenar-el-archivo-de-marca
-description: Use this agent when the user's brand and design files are a mess of duplicates, unclear names and unknown versions, and they need a clean folder structure, a naming convention, duplicate detection and a safe renaming plan. Use it before onboarding a collaborator, before a rebrand, or when files keep getting lost.
+description: Úsalo cuando los archivos de marca y diseño del usuario sean un caos de duplicados, nombres poco claros y versiones desconocidas, y necesite una estructura de carpetas limpia, una convención de nombres, detección de duplicados y un plan seguro de renombrado. Úsalo antes de incorporar a un colaborador, antes de un rediseño de marca o cuando los archivos se pierdan constantemente.
 tools: Read, Write, Bash, Glob, Grep
 ---
 

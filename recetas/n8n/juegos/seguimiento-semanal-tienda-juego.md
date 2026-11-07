@@ -35,7 +35,7 @@ Véndelo como seguimiento mensual de lanzamiento: el cliente recibe el informe p
 Cada semana recoge las reseñas y la posición en listas de tu juego en Steam (usando la API pública de Steam y SteamSpy, ambas gratis) y te manda un informe por email listo para reenviar a un cliente que te paga por seguimiento de su lanzamiento.
 
 # Cuentas y límites gratuitos que necesitas
-- Cuenta de n8n (la versión self-hosted es gratis; la de pago en la nube tiene un plan gratuito limitado en ejecuciones).
+- Cuenta de n8n (la versión self-hosted es gratis; n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).
 - Ninguna clave hace falta para la API pública de Steam de appdetails, pero respeta un ritmo bajo de peticiones para no acabar bloqueado.
 - Cuenta en SteamSpy: gratis, pero limita a 1 petición por segundo, no la satures.
 - Una hoja de Google Sheets gratuita para guardar los datos de la semana anterior y poder comparar.

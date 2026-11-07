@@ -1,6 +1,6 @@
 ---
 name: etiqueta-de-producto-lista-para-vender
-description: Use this agent when the user is about to print labels or packaging for a physical product (food, cosmetics, crafts, textiles, drinks) and needs the layout planned: mandatory information blocks, visual hierarchy, front/back split, sizes, materials and print constraints. Use it before ordering any label print run.
+description: "Úsalo cuando el usuario vaya a imprimir etiquetas o envases de un producto físico (alimentación, cosmética, artesanía, textil, bebidas) y necesite planificar la maquetación: bloques de información obligatoria, jerarquía visual, reparto anverso/reverso, tamaños, materiales y restricciones de impresión. Úsalo antes de encargar cualquier tirada de etiquetas."
 tools: Read, Write, Bash, WebFetch
 ---
 

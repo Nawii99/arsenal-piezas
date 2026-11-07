@@ -1,6 +1,6 @@
 ---
 name: examen-final-y-certificado
-description: Use this agent to design the closing assessment of a training programme: a final project or exam, the pass criteria, the correction guide, the certificate wording and what the certificate can honestly claim. Also use it to review an existing certification that nobody takes seriously.
+description: "Úsalo para diseñar la evaluación final de un programa de formación: un proyecto o examen final, los criterios de aprobado, la guía de corrección, la redacción del certificado y lo que el certificado puede afirmar con honestidad. Úsalo también para revisar una certificación existente que nadie se toma en serio."
 tools: Read, Write
 ---
 

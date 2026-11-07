@@ -6,7 +6,7 @@ Receta de n8n que recoge los datos de un cliente por formulario, calcula su plan
 
 ## Qué es y qué hace
 
-Receta de n8n que recoge los datos de un cliente por formulario, calcula su plan de calorías y macros, genera menú y lista de la compra, y los envía solo si el pago se ha confirmado. Entran el formulario de alta y el cobro; sale un plan por correo solo para clientes que han pagado. Usa Google Forms o Typeform, Stripe, Google Sheets y una API de IA de pago por uso (Claude, Codex, Gemini o una IA local), con n8n gratuito si lo instalas tú.
+Receta de n8n que recoge los datos de un cliente por formulario, calcula su plan de calorías y macros, genera menú y lista de la compra, y los envía solo si el pago se ha confirmado (firma y estado de Stripe verificados). Entran el formulario de alta y el cobro; sale un plan por correo solo para clientes que han pagado. Usa Google Forms o Typeform, Stripe, Google Sheets y una API de IA de pago por uso (Claude, Codex, Gemini o una IA local), con n8n gratuito si lo instalas tú.
 
 ## Cómo usarla
 
@@ -43,7 +43,7 @@ n8n (self-hosted gratis o plan Starter de pago), más las cuentas de los servici
 
 ## Paso a paso, nodo por nodo
 1. Disparador: nodo 'Google Sheets Trigger' o 'Webhook' que se activa cuando llega una respuesta nueva del formulario de alta del cliente.
-2. Nodo 'Stripe' (o el que use tu pasarela de pago): comprueba si ese cliente tiene un pago confirmado. Si no lo tiene, el flujo se detiene aquí con un nodo 'IF' y no se genera nada.
+2. Confirmación del pago: usa el nodo Stripe Trigger (comprueba la firma del evento) o, con un Webhook genérico, verifica la cabecera `Stripe-Signature` con el «signing secret» del endpoint, guardado en las credenciales o en una variable de entorno. Comprueba que el pago de ese cliente está confirmado (`payment_status` = `paid`, evento `checkout.session.completed`) y guarda el id del evento para no enviar dos veces el plan. Si no está pagado, el flujo se detiene aquí con un nodo 'IF' y no se genera nada.
 3. Nodo 'Set': ordena los datos del formulario en el formato que necesita el cálculo (peso, altura, edad, actividad, objetivo, condiciones médicas).
 4. Nodo 'IF': si el campo de condiciones médicas no está vacío, desvía el flujo a una rama que solo manda un aviso a tu email para que revises el caso a mano, y no sigue de forma automática.
 5. Nodo de IA (HTTP Request a la API de Claude o similar): envía los datos con el jsonprompt de cálculo del plan y recibe el JSON con calorías y macros.

@@ -1,6 +1,6 @@
 ---
-description: Organiza una prueba beta de una app: reclutamiento, tareas, mensajes y recogida de feedback
-argument-hint: [qué app es, a quién va dirigida y en qué plataforma]
+description: "Organiza una prueba beta de una app: reclutamiento, tareas, mensajes y recogida de feedback"
+argument-hint: "[qué app es, a quién va dirigida y en qué plataforma]"
 ---
 Eres responsable de producto y organizas pruebas beta con usuarios reales que no son técnicos.
 

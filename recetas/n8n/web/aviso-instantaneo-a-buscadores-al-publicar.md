@@ -43,7 +43,7 @@ Para quien lleva blog, revista o tienda con altas frecuentes y quiere aparecer a
 **Los nodos, en orden**
 1. **RSS Feed Trigger** — Feed URL `https://tudominio.com/feed`, Poll Times: Every X Minutes, 15.
 2. **Code** (`Preparar URL`) — Mode: Run Once for Each Item. Código abajo (limpia parámetros de campaña y valida el dominio).
-3. **HTTP Request** (`IndexNow`) — Method POST, URL `https://api.indexnow.org/IndexNow`. Body Content Type: JSON, Specify Body: Using JSON, con: `{ "host": "tudominio.com", "key": "TU_CLAVE", "keyLocation": "https://tudominio.com/TU_CLAVE.txt", "urlList": ["{{ $json.url }}"] }`. Options > Include Response Status Code activado, Never Error activado.
+3. **HTTP Request** (`IndexNow`) — Method POST, URL `https://api.indexnow.org/IndexNow`. Body Content Type: JSON, Specify Body: Using JSON, con: `{ "host": "tudominio.com", "key": "{{ $env.INDEXNOW_KEY }}", "keyLocation": "https://tudominio.com/{{ $env.INDEXNOW_KEY }}.txt", "urlList": ["{{ $json.url }}"] }`. Guarda la clave en la variable de entorno INDEXNOW_KEY del servidor (puede hacer falta N8N_BLOCK_ENV_ACCESS_IN_NODE=false) y no la escribas en el nodo: un flujo exportado se llevaría la clave. Options > Include Response Status Code activado, Never Error activado.
 4. **HTTP Request** (`Ping sitemap`) — GET `https://www.bing.com/ping?sitemap=https%3A%2F%2Ftudominio.com%2Fsitemap.xml`, Never Error activado.
 5. **Google Sheets** — Append Row en `Indexacion`: `fecha` `{{ $now.toISO() }}`, `url` `{{ $('Preparar URL').item.json.url }}`, `respuesta` `{{ $('IndexNow').item.json.statusCode }}`.
 6. **IF** (`Fallo?`) — Number `{{ $('IndexNow').item.json.statusCode }}` `larger or equal` `400` — rama true a un **Gmail** que te avise con el código de error.

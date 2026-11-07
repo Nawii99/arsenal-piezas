@@ -12,11 +12,11 @@ Si no lo he dicho, pregúntame antes de escribir nada: qué framework usa el pro
 Haz esto en orden y dime qué haces en cada paso en una frase:
 
 1. **Endpoint** `POST /webhooks/stripe`. Debe leer el cuerpo en crudo (sin parsear a JSON antes), porque si no la firma nunca cuadra. Es el fallo número uno. Adáptalo al framework del proyecto.
-2. **Verificación de firma** con `STRIPE_WEBHOOK_SECRET` (empieza por `whsec_`). Si la firma no vale, responde 400 y no hagas nada más.
+2. **Verificación de firma** con `STRIPE_WEBHOOK_SECRET` (empieza por `whsec_`), leído de una variable de entorno (por ejemplo `process.env.STRIPE_WEBHOOK_SECRET`), nunca escrito en el código, en una variable `const`, en una cabecera ni en la URL. Si la firma no vale, responde 400 y no hagas nada más. Una ruta o path secreto NO sustituye a la firma: no autentica nada.
 3. **Idempotencia**: guarda el `event.id` en una tabla `stripe_eventos` antes de procesar. Si ya existe, responde 200 y sal. Stripe reenvía eventos; sin esto duplicas accesos o emails.
 4. **Responder 200 rápido**. El trabajo pesado (emails, PDFs, llamadas a otras APIs) va a una cola o a un proceso aparte. Si tardas más de unos segundos, Stripe lo cuenta como fallo y reintenta.
 5. **Eventos** que se manejan, con lo que hace cada uno según lo que te he pedido:
-   - `checkout.session.completed`: crear o enlazar el usuario con `customer` y `subscription`.
+   - `checkout.session.completed`: solo si `payment_status` es `paid` (en pagos diferidos espera a `checkout.session.async_payment_succeeded`), crear o enlazar el usuario con `customer` y `subscription`.
    - `invoice.paid`: marcar activo y guardar `fin_periodo_actual`.
    - `invoice.payment_failed`: marcar impagado. No quitar el acceso al primer fallo; Stripe reintenta el cobro solo. Avisar al cliente.
    - `customer.subscription.updated`: actualizar plan y estado.
@@ -27,7 +27,7 @@ Haz esto en orden y dime qué haces en cada paso en una frase:
 Cuando el código esté, dame la guía de prueba en local, con los comandos exactos para copiar:
 
 1. Instalar Stripe CLI (dime cómo en mi sistema operativo, mira cuál es).
-2. `stripe login` y `stripe listen --forward-to localhost:[PUERTO]/webhooks/stripe`. Dime que el `whsec_` que imprime es el que va en `.env` mientras pruebo en local, distinto del de producción.
+2. `stripe login` y `stripe listen --forward-to localhost:[PUERTO]/webhooks/stripe`. Dime que el `whsec_` que imprime es el que va en la variable de entorno `STRIPE_WEBHOOK_SECRET` (en `.env`) mientras pruebo en local, distinto del de producción, y que no se escribe en el código.
 3. `stripe trigger checkout.session.completed`, `stripe trigger invoice.payment_failed`, `stripe trigger customer.subscription.deleted`. Para cada uno, qué tengo que ver en la terminal y qué tiene que haber cambiado en la base de datos.
 4. Lanzar dos veces el mismo evento y comprobar que la segunda vez no cambia nada.
 5. Mandar un POST con `curl` sin firma y comprobar que devuelve 400.

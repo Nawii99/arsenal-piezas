@@ -90,4 +90,4 @@ return out.length ? out : [{ json: { match: false, importe: 0, concepto: 'Sin in
 - Límite de la API de Sheets: 60 escrituras por minuto y usuario. El **Split In Batches** con un **Wait** de 1 segundo lo resuelve si tienes muchas facturas.
 
 **Cuánto cuesta**
-Gratis con GoCardless, Sheets y Gmail. n8n auto-alojado sin límite; en el plan gratuito de n8n Cloud son 4-5 ejecuciones al mes.
+Gratis con GoCardless, Sheets y Gmail. n8n auto-alojado sin límite; en n8n Cloud (de pago tras la prueba gratuita) son solo 4-5 ejecuciones al mes.

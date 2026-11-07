@@ -36,7 +36,7 @@ Lee el `package.json` (o `requirements.txt`) de tus repos, consulta la fecha de 
 Pensado para el desarrollador o el pequeño estudio que mantiene varios proyectos y no tiene tiempo de auditar dependencias a mano.
 
 ### Lo que necesitas antes
-- Cuenta de n8n (auto-alojado con Docker o el plan gratuito de n8n Cloud).
+- Cuenta de n8n (auto-alojado con Docker o n8n Cloud, con prueba gratuita temporal y después de pago).
 - Un token de GitHub: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained, permiso `Contents: Read-only` sobre tus repos.
 - Cuenta de Google para Sheets y Gmail (credencial OAuth2 de Google en n8n).
 - El registro de npm (`registry.npmjs.org`) es público y no pide clave.
@@ -90,6 +90,6 @@ return [{ json: { ...$('Consultar npm').first().json.__meta || {}, paquete: d.na
 - **Duplicados semana tras semana**: añade una columna `estado` en la hoja y filtra con un IF los paquetes que ya marcaste como «asumido».
 
 ### Cuánto cuesta
-- n8n auto-alojado: 0 €. n8n Cloud gratuito: entra de sobra (4 ejecuciones al mes).
+- n8n auto-alojado: 0 €. n8n Cloud (de pago tras la prueba gratuita): entra de sobra (4 ejecuciones al mes).
 - npm Registry, GitHub API y Google Sheets: gratis en este volumen.
 - Si pasas de 30 repos y quieres ejecutarlo a diario, el plan Starter de n8n Cloud ronda los 20-24 €/mes; con Docker en un VPS de 5 €/mes te sale más barato.

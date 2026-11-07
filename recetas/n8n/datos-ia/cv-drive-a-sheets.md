@@ -38,7 +38,7 @@ Cada vez que se sube un CV nuevo a una carpeta de Google Drive, la automatizaci�
 
 ## Cuentas necesarias
 - Cuenta de Google (Drive, Docs y Sheets): gratis, con los límites normales de una cuenta personal o de Workspace.
-- n8n: gratis si lo instalas tú mismo (self-hosted); de pago si usas la nube de n8n a partir del plan gratuito de prueba.
+- n8n: gratis si lo instalas tú mismo (self-hosted); de pago si usas n8n Cloud, una vez acabada su prueba gratuita temporal.
 - Un modelo de IA con API (por ejemplo OpenAI): no es gratis, cobra por uso; procesar un CV cuesta céntimos, pero suma si son muchos.
 
 ## Nodo por nodo

@@ -45,7 +45,7 @@ Cada vez que publicas un vídeo en YouTube, el flujo coge su transcripción auto
 
 ## Los nodos, en orden
 1. **RSS Feed Trigger** — Feed URL: `https://www.youtube.com/feeds/videos.xml?channel_id=TU_ID_DE_CANAL`. Poll Times: cada hora. n8n ya evita repetir elementos ya vistos.
-2. **HTTP Request** (transcripción) — Method: POST. URL: `https://api.apify.com/v2/acts/pintostudio~youtube-transcript-scraper/run-sync-get-dataset-items?token=TU_TOKEN_APIFY`. Body JSON: `{"videoUrl":"{{ $json.link }}"}`. Timeout en Options: 120000.
+2. **HTTP Request** (transcripción) — Method: POST. URL: `https://api.apify.com/v2/acts/pintostudio~youtube-transcript-scraper/run-sync-get-dataset-items`. Authentication: Generic Credential Type > Query Auth, con una credencial de n8n (Name `token`, Value tu API token de Apify). No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Body JSON: `{"videoUrl":"{{ $json.link }}"}`. Timeout en Options: 120000.
 3. **Code** — Junta todos los trozos de la transcripción en un texto único y lo recorta a 40.000 caracteres.
 4. **OpenAI** — Resource: `Text`, Operation: `Message a Model`. Model: `gpt-4.1-mini`. Añade dos mensajes. System: `Eres un estratega de contenidos español. Escribes en español de España, tuteando, sin emojis, sin palabras de relleno. Devuelves SOLO JSON válido.` User: el prompt de abajo. En Options activa **Output Content as JSON**.
 5. **Code1** — Convierte el JSON de la IA en una fila por pieza (8 items).
@@ -101,4 +101,4 @@ return piezas.map(p => ({ json: {
 - **RSS de YouTube solo trae los 15 últimos vídeos**: no sirve para procesar el archivo antiguo, para eso ejecútalo a mano.
 
 ## Cuánto cuesta
-Unos 0,08-0,15 € de OpenAI por vídeo con `gpt-4.1-mini`. Apify da 5 $ de crédito gratis al mes, suficiente para cientos de transcripciones. n8n, Sheets y Gmail, gratis.
+Unos 0,08-0,15 € de OpenAI por vídeo con `gpt-4.1-mini`. Apify da 5 $ de crédito gratis al mes, suficiente para cientos de transcripciones. Sheets y Gmail, gratis. n8n autoalojado, gratis (n8n Cloud solo tiene una prueba gratuita temporal y después es de pago).

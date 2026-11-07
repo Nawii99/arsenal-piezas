@@ -52,7 +52,7 @@ Es seguimiento de satisfacción y sensaciones declaradas, nunca una valoración 
 6. **Split In Batches**: tamaño 1, con un **Wait** de 15 segundos.
 7. **WhatsApp** (Send Template Message): plantilla con la pregunta y los botones del 1 al 5.
 8. **Google Sheets** (Append Row): guarda la sesión con Puntuacion vacía, para marcarla como preguntada.
-9. **Webhook** (flujo aparte, POST): recibe la respuesta del cliente desde WhatsApp.
+9. **Webhook** (flujo aparte, POST): recibe la respuesta del cliente desde WhatsApp. Protégelo con Header Auth y un token largo; si la URL tiene que ser pública (QR, formulario web), valida los datos en un nodo Code antes de usarlos.
 10. **Code**: extrae el número pulsado y el teléfono.
 11. **Google Sheets** (Update Row): rellena Puntuacion, Comentario y Fecha respuesta buscando por teléfono la fila más reciente sin puntuación.
 12. **IF**: si la puntuación es menor o igual a 2, **Slack** (Send Message) al profesional con nombre, teléfono y puntuación, y texto «llámale hoy».

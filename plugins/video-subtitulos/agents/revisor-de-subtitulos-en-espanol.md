@@ -1,6 +1,6 @@
 ---
 name: revisor-de-subtitulos-en-espanol
-description: Cleans and repairs auto-generated subtitle files (SRT, VTT) for Spanish from Spain: fixes timings and overlaps, enforces reading speed and line length, splits lines at natural breaks, corrects proper nouns, numbers, punctuation and spelling, and validates the file so it plays correctly everywhere. Use this agent when the user has automatic captions from YouTube, Whisper, CapCut or a transcription tool and needs them publication-ready.
+description: "Limpia y repara archivos de subtítulos autogenerados (SRT, VTT) en español de España: corrige tiempos y solapamientos, aplica velocidad de lectura y longitud de línea, divide las líneas en pausas naturales, corrige nombres propios, números, puntuación y ortografía, y valida el archivo para que se reproduzca bien en cualquier sitio. Úsalo cuando el usuario tenga subtítulos automáticos de YouTube, Whisper, CapCut o una herramienta de transcripción y los necesite listos para publicar."
 tools: Read, Write, Bash, Glob
 ---
 

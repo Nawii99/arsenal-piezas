@@ -50,7 +50,7 @@ Credencial Google OAuth2 en n8n con permisos de Drive, Slides, Sheets y Gmail. A
 **5. Google Drive** «Copiar plantilla». Operación: «Copy File». File ID: el ID de tu plantilla de Slides. Name: `Diploma - {{ $json.nombre }} {{ $json.apellidos }}`. Parent Folder: la carpeta «Diplomas emitidos».
 **6. HTTP Request** «Rellenar plantilla». Method: POST. URL: `https://slides.googleapis.com/v1/presentations/{{ $json.id }}:batchUpdate`. Authentication: «Predefined Credential Type» > Google Slides OAuth2. Body (JSON): un array `requests` con un `replaceAllText` por cada marcador.
 **7. HTTP Request** «Exportar a PDF». Method: GET. URL: `https://www.googleapis.com/drive/v3/files/{{ $('Copiar plantilla').item.json.id }}/export?mimeType=application/pdf`. Response Format: «File». Autenticación con la credencial de Google Drive.
-**8. Google Drive** «Subir PDF». Operación: «Upload», Binary Property: `data`, nombre `Diploma-{{ $json.codigo }}.pdf`, carpeta «Diplomas emitidos». Después añade un nodo **Google Drive** «Share File» con permiso `reader` y tipo `anyone` para tener enlace público.
+**8. Google Drive** «Subir PDF». Operación: «Upload», Binary Property: `data`, nombre `Diploma-{{ $json.codigo }}.pdf`, carpeta «Diplomas emitidos». No compartas el PDF con «cualquiera con el enlace»: lleva el nombre del alumno (dato personal). El PDF ya va adjunto en el paso 9; si además quieres que lo abra desde Drive, añade un nodo **Google Drive** «Share File» con permiso `reader`, tipo `user` y el email del alumno.
 **9. Gmail** «Enviar diploma». To: `{{ $json.email }}`. Subject: `Tu diploma de {{ $json.curso }}`. Adjunta el binario `data` y añade en el cuerpo el código de verificación y una frase para que lo comparta en LinkedIn.
 **10. Google Sheets** «Registrar». Update Row: `diploma_url` con el enlace del PDF, `codigo` con el código y `estado` = `diploma_enviado`.
 **11. Google Drive** «Borrar copia de Slides». Operación: «Delete File» sobre la copia del paso 5, para no llenar Drive de presentaciones sueltas.
@@ -84,7 +84,7 @@ Si en el PDF aparecen las llaves sin sustituir, es que el texto de Slides está 
 Slides no sustituye texto dentro de imágenes: los marcadores tienen que ser cajas de texto.
 La API de Slides falla si copias la plantilla y consultas demasiado rápido; añade un nodo **Wait** de 3 segundos entre el paso 5 y el 6.
 Nombres con caracteres raros en el nombre de archivo: limpia con `.replace(/[\\/:*?"<>|]/g,'')`.
-Para que el código de verificación sirva de algo, publica la hoja de códigos como página web de solo lectura o monta una página simple donde se pueda consultar.
+Para que el código de verificación sirva de algo, no publiques la hoja de alumnos (tiene nombres y emails): monta una página simple (un Webhook de n8n) donde quien tenga el código vea solo «válido», el curso y la fecha, con el nombre abreviado.
 
 ## Cuánto cuesta
 Todo el flujo es gratis: n8n auto-alojado, Google Slides, Drive, Sheets y Gmail entran en la cuenta gratuita.

@@ -1,0 +1,19 @@
+{
+  "name": "arsenal-iot-electronica",
+  "version": "1.0.0",
+  "description": "IoT y hardware · Electrónica, firmware y montaje: 6 subagentes, 3 comandos /, 2 skills en español, del Arsenal del Marketer.",
+  "author": {
+    "name": "Arsenal del Marketer",
+    "url": "https://github.com/Nawii99/arsenal-piezas"
+  },
+  "homepage": "https://github.com/Nawii99/arsenal-piezas",
+  "repository": "https://github.com/Nawii99/arsenal-piezas",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "español",
+    "spanish",
+    "iot",
+    "arsenal-del-marketer",
+    "electronica"
+  ]
+}

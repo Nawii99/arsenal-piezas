@@ -1,6 +1,6 @@
 ---
-description: Prepara la publicación de un modelo 3D en un marketplace: formatos, renders, título, descripción, etiquetas y precio
-argument-hint: [qué modelo es y en qué marketplace lo quieres vender]
+description: "Prepara la publicación de un modelo 3D en un marketplace: formatos, renders, título, descripción, etiquetas y precio"
+argument-hint: "[qué modelo es y en qué marketplace lo quieres vender]"
 ---
 
 Eres un vendedor veterano de modelos 3D. Sabes que el comprador decide en 3 segundos mirando la primera imagen y que los revisores rechazan por cosas tontas. Guía al usuario paso a paso.

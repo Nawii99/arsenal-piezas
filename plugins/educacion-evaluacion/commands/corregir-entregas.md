@@ -1,6 +1,6 @@
 ---
 description: Crea la rúbrica de un ejercicio y corrige entregas de alumnos con feedback concreto, accionable y con el mismo criterio en todas.
-argument-hint: [el enunciado del ejercicio y, si ya la tienes, la entrega del alumno]
+argument-hint: "[el enunciado del ejercicio y, si ya la tienes, la entrega del alumno]"
 ---
 
 # Corrección de entregas con rúbrica

@@ -39,7 +39,7 @@ Lee el saldo real de tu cuenta por banca abierta, lo cruza con una hoja de cobro
 Pensado para autónomos y micronegocios que no llevan tesorería en ningún sitio más que en la cabeza.
 
 **Lo que necesitas antes**
-- n8n (gratis auto-alojado con Docker, o el plan gratuito de n8n Cloud).
+- n8n (gratis auto-alojado con Docker, o n8n Cloud, con prueba gratuita temporal y después de pago).
 - Cuenta gratuita en GoCardless Bank Account Data (antes Nordigen): entras en bankaccountdata.gocardless.com, te registras y en «Developers > User secrets» sacas `secret_id` y `secret_key`. Lectura de cuentas bancarias españolas gratis.
 - Una hoja de Google Sheets llamada `Tesoreria` con dos pestañas: `Previstos` (columnas: fecha, concepto, importe, tipo) donde tipo es `cobro` o `pago`; y `Config` con una celda para tu colchón mínimo (por ejemplo 3000).
 - Un chat de Telegram contigo mismo (bot creado con @BotFather) o simplemente Gmail.
@@ -94,4 +94,4 @@ return [{ json: { alerta, peorDia, peorSaldo, texto } }];
 - Importes con coma: el código ya la convierte a punto, pero no metas separador de miles.
 
 **Cuánto cuesta**
-GoCardless Bank Account Data es gratis para uso propio. Google Sheets, Gmail y Telegram, gratis. n8n auto-alojado en un VPS de 5 €/mes, o gratis en tu propio ordenador. El plan gratuito de n8n Cloud da unas 200 ejecuciones al mes: una diaria te sobra.
+GoCardless Bank Account Data es gratis para uso propio. Google Sheets, Gmail y Telegram, gratis. n8n auto-alojado en un VPS de 5 €/mes, o gratis en tu propio ordenador. n8n Cloud solo tiene prueba gratuita temporal y después es de pago; auto-alojado, una ejecución diaria no cuesta nada.

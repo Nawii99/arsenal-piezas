@@ -47,9 +47,9 @@ Cada madrugada saca una copia completa de tu base de datos, la comprime, la sube
 1. **Schedule Trigger** — Trigger Interval: Days, Days Between Triggers 1, Trigger at Hour 3, Trigger at Minute 30. Importante: n8n usa la zona horaria de Settings → Timezone; ponla en `Europe/Madrid` o te ejecutará a la hora equivocada en verano.
 2. **Execute Command** (renómbralo «Volcado») — Command:
 ```
-PGPASSWORD='TU_PASSWORD' pg_dump -h 127.0.0.1 -U usuario_backup -d nombre_bd | gzip > /var/backups/bd_$(date +%Y-%m-%d).sql.gz && ls -l /var/backups/bd_$(date +%Y-%m-%d).sql.gz
+pg_dump -h 127.0.0.1 -U usuario_backup -d nombre_bd | gzip > /var/backups/bd_$(date +%Y-%m-%d).sql.gz && ls -l /var/backups/bd_$(date +%Y-%m-%d).sql.gz
 ```
-   Para MySQL sustituye la primera parte por `mysqldump -u usuario -p'TU_PASSWORD' nombre_bd | gzip > ...`.
+   La contraseña NO se escribe en el comando: va en `~/.pgpass` (permisos 600) del usuario que ejecuta n8n, porque un flujo exportado se llevaría la clave si la pones en el nodo. Para MySQL sustituye la primera parte por `mysqldump --defaults-extra-file=/home/node/.my.cnf nombre_bd | gzip > ...`, con usuario y contraseña en ese fichero (permisos 600).
 3. **Code** (renómbralo «Comprobar tamaño») — Mode: Run Once for All Items. Código completo:
 ```javascript
 const salida = $input.first().json.stdout || '';
@@ -76,11 +76,11 @@ return [{ json: {
 ## Cómo probarla
 - Ejecuta el flujo a mano con «Test workflow» y mira que en Drive aparece el `.gz`.
 - Descárgalo y ábrelo: `gunzip -c bd_fecha.sql.gz | head -50`. Debes ver sentencias `CREATE TABLE`.
-- Prueba el fallo: cambia la contraseña del comando por una falsa y comprueba que te llega el email.
+- Prueba el fallo: cambia la contraseña en `.pgpass` por una falsa y comprueba que te llega el email.
 
 ## Qué puede salir mal
 - **Permisos**: n8n corre como su propio usuario; dale permiso de escritura en `/var/backups` (`sudo chown -R node:node /var/backups`) o el volcado quedará vacío.
-- **Contraseña en claro**: en vez de escribirla en el nodo, guarda un fichero `~/.pgpass` con permisos 600 y quita `PGPASSWORD`.
+- **Contraseña**: nunca la escribas en el nodo Execute Command. Guárdala en `~/.pgpass` con permisos 600 (línea `127.0.0.1:5432:nombre_bd:usuario_backup:contraseña`) y comprueba que la lee el usuario con el que corre n8n.
 - **Google Drive 403 quota**: si la base pesa mucho, sube por partes o usa un bucket S3 compatible con la API de HTTP Request.
 - **Se acaba el disco a medias**: el volcado sale truncado pero con tamaño grande. Para curarte en salud, añade `&& gunzip -t fichero` al comando y falla si el test no pasa.
 - **Cambio de hora**: si no fijas la zona horaria, en marzo y octubre te bailará una hora. No es grave para un backup nocturno, pero apúntalo.

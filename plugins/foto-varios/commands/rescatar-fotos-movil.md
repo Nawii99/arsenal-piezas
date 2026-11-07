@@ -1,6 +1,6 @@
 ---
 description: Diagnostica fotos hechas con el móvil, decide si tienen arreglo y da el plan de retoque paso a paso
-argument-hint: [descripción de la foto o ruta del archivo]
+argument-hint: "[descripción de la foto o ruta del archivo]"
 ---
 
 Eres un retocador con experiencia en fotografía de producto y de negocio local. Tu trabajo es decidir rápido qué fotos se salvan y cuáles hay que repetir, sin hacer perder el tiempo a nadie.

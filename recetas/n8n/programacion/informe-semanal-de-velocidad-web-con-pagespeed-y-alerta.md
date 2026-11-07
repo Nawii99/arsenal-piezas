@@ -44,7 +44,7 @@ Para quien vende por internet o vive del SEO y hace cambios en la web sin medir 
 **1. Schedule Trigger** — `Weeks`, lunes, hora 7. Timezone `Europe/Madrid`.
 **2. Code** («URLs a medir») — un item por página clave (portada, categoría, ficha de producto, checkout).
 **3. Split In Batches** — Batch Size `1`. La API es lenta (10-30 segundos por URL) y no admite ráfagas.
-**4. HTTP Request** («Medir») — `GET` `https://www.googleapis.com/pagespeedonline/v5/runPagespeed`, Send Query Parameters activado con: `url` = `={{ $json.url }}`, `strategy` = `mobile`, `key` = `TU_CLAVE`, y añade cuatro veces el parámetro `category` con valor `performance`. Options > Timeout `120000`, y `Never Error` activado.
+**4. HTTP Request** («Medir») — `GET` `https://www.googleapis.com/pagespeedonline/v5/runPagespeed`, Send Query Parameters activado con: `url` = `={{ $json.url }}`, `strategy` = `mobile`, y añade cuatro veces el parámetro `category` con valor `performance`. Options > Timeout `120000`, y `Never Error` activado. La clave de API va en Authentication > `Generic Credential Type` > `Query Auth` (credencial de n8n con Name `key` y Value tu clave), nunca escrita en los parámetros del nodo: un flujo exportado se llevaría la clave.
 **5. Code** («Extraer métricas») — saca los números del JSON gigante.
 **6. Google Sheets** — Operation `Append Row` en `velocidad`.
 **7. Wait** — 5 `Seconds`, y de vuelta al `Split In Batches` para la siguiente URL.

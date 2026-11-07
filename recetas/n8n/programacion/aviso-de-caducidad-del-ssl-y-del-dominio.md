@@ -43,17 +43,25 @@ Para agencias y freelances que administran los dominios de sus clientes y viven 
 ## Los nodos, en orden
 1) **Schedule Trigger**: Cron `0 8 * * *`, Timezone `Europe/Madrid`.
 2) **Google Sheets**: Operation `Get Row(s)` de la hoja `dominios`.
-3) **Execute Command** (SSL): comando con expresión, en una línea:
+3) **Code** (renómbralo «Validar dominio»), Run Once for All Items: el dominio sale de la hoja y va a `openssl`; solo pasan los que cumplen una regex estricta y el resto se descarta.
+```javascript
+const re = /^(?=.{1,253}$)([a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$/i;
+return $input.all()
+  .map(i => ({ dominio: String(i.json.dominio || '').trim().toLowerCase(), cliente: i.json.cliente || '' }))
+  .filter(f => re.test(f.dominio))
+  .map(f => ({ json: f }));
+```
+4) **Execute Command** (SSL): comando con expresión, en una línea:
 ```bash
 echo | openssl s_client -servername {{ $json.dominio }} -connect {{ $json.dominio }}:443 2>/dev/null | openssl x509 -noout -enddate
 ```
 En Settings marca «Continue On Fail» para que un dominio caído no rompa el resto.
-4) **Code** (calcular días y decidir si toca avisar):
+5) **Code** (calcular días y decidir si toca avisar):
 ```javascript
 const salida = [];
 for (const item of $input.all()) {
   const linea = (item.json.stdout || '').trim();
-  const dom = $('Google Sheets').all()[$input.all().indexOf(item)]?.json || {};
+  const dom = $('Validar dominio').all()[$input.all().indexOf(item)]?.json || {};
   if (!linea.includes('notAfter=')) { salida.push({ json: { dominio: dom.dominio, dias: -1, aviso: true, texto: `🔴 No he podido leer el SSL de ${dom.dominio}` } }); continue; }
   const fecha = new Date(linea.replace('notAfter=', ''));
   const dias = Math.floor((fecha - Date.now()) / 86400000);
@@ -63,10 +71,10 @@ for (const item of $input.all()) {
 }
 return salida;
 ```
-5) **HTTP Request** (caducidad del dominio, opcional): GET `https://api.whoisjson.com/api/v1/whois?domain={{ $json.dominio }}` con cabecera `Authorization: TOKEN=TU_CLAVE`. Lee `expires` de la respuesta.
-6) **IF**: Boolean `{{ $json.aviso }}` es true.
-7) **Telegram**: Text `{{ $json.texto }}`.
-8) **Google Sheets**: Operation `Append or Update Row`, columna clave `dominio`, escribiendo `ultimo_aviso` con la fecha de hoy y `dias_restantes`.
+6) **HTTP Request** (caducidad del dominio, opcional): GET `https://api.whoisjson.com/api/v1/whois?domain={{ $json.dominio }}` con Authentication: Generic Credential Type > Header Auth, con una credencial de n8n (Name «Authorization», Value «TOKEN=TU_CLAVE»); el nodo usa esa credencial. No pegues la clave en el nodo: si exportas o compartes el flujo como JSON, se iría con él. Lee `expires` de la respuesta.
+7) **IF**: Boolean `{{ $json.aviso }}` es true.
+8) **Telegram**: Text `{{ $json.texto }}`.
+9) **Google Sheets**: Operation `Append or Update Row`, columna clave `dominio`, escribiendo `ultimo_aviso` con la fecha de hoy y `dias_restantes`.
 ## Cómo probarla
 - Mete en la hoja un dominio conocido (por ejemplo `expired.badssl.com`, que está caducado a propósito) y comprueba que salta el aviso rojo.
 - Añade un dominio sano y verifica que NO avisa si no está en los umbrales.
@@ -76,6 +84,7 @@ return salida;
 - **Dominios con redirección o CDN**: la opción `-servername` es obligatoria para SNI; sin ella te devolverá el certificado equivocado.
 - **Avisos repetidos**: la lógica de umbrales exactos evita el spam, pero si un día falla la ejecución te saltas el aviso de 30. Por eso están 14, 3 y 1 como red de seguridad.
 - **Certbot que ya renueva solo**: aun así vigílalo. La mitad de las caídas por SSL son renovaciones automáticas que dejaron de funcionar sin avisar.
+- **Dominio de la hoja dentro del comando**: un valor como `x.es; rm -rf ~` o `$(id)` ejecutaría órdenes en `openssl`; «Validar dominio» lo descarta (no recibirá aviso, revisa la hoja) y el Code de días cruza con ese nodo, no con la hoja.
 ## Cuánto cuesta
 - n8n auto-alojado, openssl, Telegram y Google Sheets: 0 €.
 - API de WHOIS: capa gratuita de unas 500 consultas al mes, de sobra para 15 dominios diarios.

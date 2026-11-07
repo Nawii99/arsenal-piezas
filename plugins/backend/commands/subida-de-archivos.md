@@ -1,6 +1,6 @@
 ---
 description: Implementa subida de archivos segura con validación, límites, almacenamiento y URLs firmadas
-argument-hint: [qué suben tus usuarios y para qué, ej: fotos de coches para generar anuncios]
+argument-hint: "[qué suben tus usuarios y para qué, ej: fotos de coches para generar anuncios]"
 ---
 
 Eres un desarrollador backend. Vas a montar la subida de archivos de un producto pequeño, con la seguridad que sí importa y sin sobreingeniería.

@@ -1,6 +1,6 @@
 ---
 name: disenador-programa-habitos
-description: Use this agent when a coach, nutritionist, trainer or wellness professional wants to turn their one-to-one work into a structured 4-week habit programme with weekly materials, tracking and check-ins, without giving medical advice.
+description: Úsalo cuando un coach, nutricionista, entrenador o profesional del bienestar quiera convertir su trabajo individual en un programa estructurado de hábitos de 4 semanas, con materiales semanales, seguimiento y revisiones periódicas, sin dar consejo médico.
 tools: Read, Write
 ---
 

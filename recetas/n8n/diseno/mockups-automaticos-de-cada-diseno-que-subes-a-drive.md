@@ -37,7 +37,7 @@ Detecta un archivo nuevo en la carpeta `01-Para-mockup` de Drive, lo envía a Pl
 ## Lo que necesitas antes
 - Cuenta de n8n.
 - Cuenta en placid.app: plan gratuito de pruebas; en el editor creas tres plantillas con una capa de imagen llamada exactamente `arte`. Cada plantilla tiene un `uuid` visible en su URL.
-- Token de API de Placid: panel, Settings, API Tokens, botón Create token. Se usa como `Authorization: Bearer TU_TOKEN`.
+- Token de API de Placid: panel, Settings, API Tokens, botón Create token. Se guarda en una credencial «Header Auth» de n8n (Name `Authorization`, Value `Bearer` + tu token); no lo escribas directamente en un nodo: un flujo exportado se llevaría la clave.
 - Dos carpetas en Google Drive y sus IDs (el trozo de la URL después de `/folders/`).
 - Credencial de Google Drive y de Gmail en n8n (Google Cloud, activar Drive API y Gmail API, OAuth de aplicación web).
 
@@ -46,9 +46,9 @@ Detecta un archivo nuevo en la carpeta `01-Para-mockup` de Drive, lo envía a Pl
 2. **Google Drive** — Operation: Share File. File ID: `{{ $json.id }}`. Permissions: Role `reader`, Type `anyone`. Placid necesita una URL pública para leer el arte.
 3. **Set** (`Datos`) — Campos: `arte_url` = `https://drive.google.com/uc?export=view&id={{ $('Google Drive Trigger').item.json.id }}`, `nombre` = `{{ $('Google Drive Trigger').item.json.name }}`.
 4. **Code** (`Plantillas`) — Mode: Run Once for All Items. `const uuids = ['UUID_TARJETA','UUID_CARTEL','UUID_CAMISETA']; return uuids.map(u => ({ json: { uuid: u, arte_url: $input.first().json.arte_url, nombre: $input.first().json.nombre } }));`
-5. **HTTP Request** (`Crear mockup`) — Method: POST. URL: `https://api.placid.app/api/rest/{{ $json.uuid }}`. Authentication: Generic, Header Auth, Name `Authorization`, Value `Bearer TU_TOKEN`. Body: JSON, contenido `{ "layers": { "arte": { "image": "{{ $json.arte_url }}" } } }`.
+5. **HTTP Request** (`Crear mockup`) — Method: POST. URL: `https://api.placid.app/api/rest/{{ $json.uuid }}`. Authentication: Generic Credential Type > Header Auth, eligiendo la credencial de Placid del apartado anterior (la cabecera y el token viven en la credencial, no en el nodo). Body: JSON, contenido `{ "layers": { "arte": { "image": "{{ $json.arte_url }}" } } }`.
 6. **Wait** — Amount: 8, Unit: Seconds. Placid genera en segundo plano.
-7. **HTTP Request** (`Recoger imagen`) — Method: GET. URL: `{{ $('Crear mockup').item.json.polling_url }}`. Misma cabecera de autorización.
+7. **HTTP Request** (`Recoger imagen`) — Method: GET. URL: `{{ $('Crear mockup').item.json.polling_url }}`. Misma credencial Header Auth.
 8. **HTTP Request** (`Descargar`) — Method: GET. URL: `{{ $json.image_url }}`. Options, Response, Response Format: File, Put Output in Field: `data`.
 9. **Google Drive** — Operation: Upload File. Input Data Field Name: `data`. File Name: `{{ $('Plantillas').item.json.nombre.replace(/\.[^.]+$/,'') }}-mockup-{{ $itemIndex }}.png`. Parent Folder: `02-Mockups-listos`.
 10. **Gmail** — Send. Subject: `Mockups listos: {{ $('Datos').first().json.nombre }}`. Message: enlace a la carpeta de resultados.

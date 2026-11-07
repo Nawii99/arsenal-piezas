@@ -6,7 +6,7 @@ Recoge el feedback que los usuarios escriben en tu app, la IA lo etiqueta como f
 
 ## Qué es y qué hace
 
-Receta de n8n que recibe el feedback que los usuarios escriben en tu app mediante un POST con texto, email, versión, plataforma e ID de usuario. La IA lo etiqueta como fallo, idea o queja con urgencia de 1 a 5. Los fallos urgentes van a una tarjeta de Trello y a un correo, las ideas a una hoja y los elogios a una lista para pedir reseña. Entrada: POST desde la app. Salida: feedback repartido por tipo. Maneja emails de usuarios, así que hay que cumplir el RGPD.
+Receta de n8n que recibe el feedback que los usuarios escriben en tu app mediante un POST con texto, email, versión, plataforma e ID de usuario. La IA lo etiqueta como fallo, idea o queja con urgencia de 1 a 5. Los fallos urgentes van a una tarjeta de Trello y a un correo, las ideas a una hoja y los elogios a una lista de testimonios (con permiso del usuario). Entrada: POST desde la app. Salida: feedback repartido por tipo. Maneja emails de usuarios, así que hay que cumplir el RGPD.
 
 ## Cómo usarla
 
@@ -34,7 +34,7 @@ Ahorra 3-4 horas al mes de leer y clasificar mensajes, y hace que los fallos gra
 > **Modelo de IA (octubre de 2026):** esta receta trae un modelo de OpenAI de cuando se escribió. Pon el que uses hoy: Claude (nodo Anthropic), Codex u otro modelo actual de OpenAI, Gemini (nodo Google Gemini) o una IA local (nodo Ollama). Si cambias de proveedor, revisa el nodo siguiente: cada uno devuelve el texto en un campo distinto.
 
 ## Qué hace y para quién
-Tu app envía el texto del usuario a una dirección web tuya; el flujo lo valida, la IA lo clasifica en fallo, idea, queja o elogio con una urgencia del 1 al 5 y lo reparte: los fallos urgentes a una tarjeta de Trello y un correo, las ideas a una hoja de ideas, los elogios a una lista para pedir reseña. Para quien tiene app y quiere escuchar sin ahogarse.
+Tu app envía el texto del usuario a una dirección web tuya; el flujo lo valida, la IA lo clasifica en fallo, idea, queja o elogio con una urgencia del 1 al 5 y lo reparte: los fallos urgentes a una tarjeta de Trello y un correo, las ideas a una hoja de ideas, los elogios a una lista de testimonios para pedir permiso de publicarlos en tu web. Para quien tiene app y quiere escuchar sin ahogarse.
 
 ## Lo que necesitas antes
 - Un formulario dentro de tu app que haga un POST con `{ texto, email, version, plataforma, id_usuario }`. Si no sabes tocar el código de la app, vale un Google Form o un Typeform enlazado desde ajustes.
@@ -55,7 +55,7 @@ Tu app envía el texto del usuario a una dirección web tuya; el flujo lo valida
 8. Rama fallo → **IF** urgencia «is larger than» 3 → **Trello** (Operation: Create Card, List: `Bugs urgentes`, Name: `[{{$json.plataforma}} {{$json.version}}] {{$json.resumen}}`, Description: el texto completo y el email) + **Gmail** a desarrollo. Si la urgencia es baja, tarjeta en `Entrante`.
 9. Rama idea → **Google Sheets** Append en una pestaña `ideas` con un contador para ver qué se repite.
 10. Rama queja → **Gmail** Send a atención al cliente con Reply-To el email del usuario, para poder contestarle en dos clics.
-11. Rama elogio → **Google Sheets** Append en `pedir_resena`, lista con la que luego lanzarás la petición de valoración.
+11. Rama elogio → **Google Sheets** Append en `testimonios`, lista de comentarios positivos a los que pedirás permiso por escrito para publicarlos como testimonio en tu web.
 12. **Respond to Webhook** — Response Code: 200, Body: `{ "ok": true, "mensaje": "Gracias, lo hemos recibido" }` para que la app enseñe la confirmación.
 
 ## El trozo de código (nodo Code «Sanear»)
@@ -83,6 +83,7 @@ return [{ json: {
 ## Qué puede salir mal
 - **La IA devuelve texto en vez de JSON**: activa la salida JSON en el nodo y, por si acaso, envuelve el parseo en un try/catch que caiga en tipo `otro`.
 - **Spam**: si publicas la URL sin token te llenarán la hoja. Token obligatorio y, si quieres, un límite de un mensaje por usuario cada 10 minutos usando la propia hoja.
+- **Reseñas en las tiendas**: este flujo no decide a quién se pide una valoración en Google Play o App Store. Si la pides, va a todos los usuarios por igual, no solo a quien elogia: Google y Apple prohíben filtrar por satisfacción.
 - **Datos personales**: si recoges el email, dilo en el formulario y guárdalo solo si el usuario quiere respuesta. Aplica el RGPD.
 - **La app espera respuesta rápida**: si la IA tarda, mejor responde 200 al principio y clasifica después (modo Respond Immediately).
 - **Coste desbocado** si alguien manda textos gigantes: por eso el recorte a 2.000 caracteres.

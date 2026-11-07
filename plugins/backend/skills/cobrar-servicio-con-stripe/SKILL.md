@@ -20,13 +20,13 @@ Te deja con un enlace de pago (o una página de pago) funcionando en modo prueba
 
 ## Paso a paso
 
-1. Modo prueba siempre primero. Las claves de prueba empiezan por `sk_test_` y `pk_test_`. Las de producción por `sk_live_`. Nunca pegues una clave `sk_live_` en un chat, un correo ni un repositorio.
+1. Modo prueba siempre primero. Las claves de prueba empiezan por `sk_test_` y `pk_test_`. Las de producción por `sk_live_`. Nunca pegues una clave `sk_live_` en un chat, un correo, un repositorio, un nodo de n8n, una variable `const`, una cabecera ni una URL: va solo en una variable de entorno (`.env` fuera del repositorio) o en una credencial de n8n; un flujo exportado con la clave dentro se la llevaría.
 2. Crea el producto en Stripe con su precio. Para el primer servicio, usa un Payment Link (enlace de pago) desde el panel de Stripe: no hace falta código y sirve para cobrar hoy. Guarda el enlace.
 3. Configura el IVA: en el precio marca si es 'impuestos incluidos' o no. Si vendes a empresas, activa en el Payment Link la opción de pedir el NIF/CIF del cliente. Sin el NIF del cliente la factura a una empresa no es válida.
 4. Activa el envío automático de recibo por correo en Stripe. Ojo: el recibo de Stripe NO es una factura legal en España. Le faltan tu NIF, el del cliente y la numeración correlativa salvo que lo configures.
 5. Decide quién emite la factura legal. Opciones reales:
    - Stripe Invoicing: rellena tus datos fiscales, activa numeración correlativa y desglose de IVA. Tiene coste por factura [comprobar tarifa en stripe.com/es/invoicing].
-   - Tu programa de facturación (Holded, Quipu, Billin u otro que ya uses) alimentado por un webhook de Stripe. Mira la receta 'n8n-pago-stripe-factura-aviso'.
+   - Tu programa de facturación (Holded, Quipu, Billin u otro que ya uses) alimentado por un webhook de Stripe (verifica la firma `Stripe-Signature` con el secreto en una variable de entorno, comprueba `payment_status = paid` y guarda el id del evento para no facturar dos veces; la ruta «secreta» del webhook no autentica). Mira la receta 'n8n-pago-stripe-factura-aviso'. Si el número de factura lo calcula tu flujo, resérvalo antes de enviar, ejecuta de uno en uno y comprueba que no existe ya.
    - A mano al recibir el pago. Vale para los primeros clientes. No escala.
 6. Si son suscripciones: crea el precio como 'recurrente', decide qué pasa si falla el cobro (Stripe reintenta varias veces por defecto; configura los correos de 'pago fallido' en Configuración > Suscripciones) y activa el portal de cliente para que puedan cancelar solos. Si no pueden cancelar solos, te comerás disputas.
 7. Si necesitas página de pago dentro de tu web o app, genera con Stripe Checkout una sesión desde el servidor. Explícale al usuario qué hace cada archivo en dos frases antes de escribirlo.

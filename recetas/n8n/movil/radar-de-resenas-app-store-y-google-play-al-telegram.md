@@ -35,7 +35,7 @@ Vigila las reseñas nuevas de tu app en App Store y Google Play, las apunta en u
 Es para el que tiene una app en el mercado y quiere responder rápido sin vivir pegado a las consolas de desarrollador.
 
 ## Lo que necesitas antes
-- n8n (nube gratuita o auto-alojado con Docker).
+- n8n autoalojado con Docker (gratuito, Community Edition) o n8n Cloud (prueba gratuita temporal y después planes de pago).
 - El ID numérico de tu app en App Store: está en la URL de la ficha, `id123456789`.
 - Para Android: una cuenta de servicio de Google Cloud con la API de Google Play Developer activada, invitada en Play Console (Usuarios y permisos) con permiso de «Ver reseñas y responder». Descarga el JSON de la clave.
 - Una hoja de Google Sheets llamada `Reseñas` con columnas: `id`, `tienda`, `fecha`, `estrellas`, `titulo`, `texto`, `version`, `autor`.
@@ -109,4 +109,4 @@ return $('Normalizar').all().filter(i => !guardadas.includes(String(i.json.id)))
 - Activa `Retry On Fail` (3 intentos, 5 s) en los dos HTTP Request: las APIs fallan de vez en cuando.
 
 ## Cuánto cuesta
-Gratis del todo: n8n auto-alojado, RSS de Apple, API de Google Play y Telegram no cobran. Google Sheets gratis. Si usas n8n Cloud, el plan de arranque ronda 20-24 €/mes y esto consume unas 720 ejecuciones al mes.
+Gratis del todo: n8n auto-alojado, RSS de Apple, API de Google Play y Telegram no cobran. Google Sheets gratis. Si usas n8n Cloud, tras la prueba gratuita necesitas un plan de pago (consulta el precio vigente en n8n.io) y esto consume unas 720 ejecuciones al mes.

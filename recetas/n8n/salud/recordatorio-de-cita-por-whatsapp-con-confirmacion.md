@@ -39,7 +39,7 @@ Está pensado para clínicas pequeñas de fisioterapia, dentistas, psicología, 
 
 ## Lo que necesitas antes
 - Cuenta de Google con la agenda de la clínica en Google Calendar. Si tienes varios profesionales, una agenda por profesional.
-- Cuenta de n8n: el plan gratuito de n8n Cloud sirve para empezar, o auto-alojado con Docker en un VPS de unos 5 € al mes.
+- Cuenta de n8n: la prueba gratuita temporal de n8n Cloud sirve para empezar (después es de pago), o auto-alojado con Docker en un VPS de unos 5 € al mes.
 - Número de WhatsApp Business y acceso a la WhatsApp Cloud API. Se saca en developers.facebook.com: crea una app tipo Empresa, añade el producto WhatsApp y copia el Phone Number ID y un token permanente desde Configuración de la app > Usuarios del sistema.
 - Una plantilla de mensaje aprobada por Meta en el Administrador de WhatsApp > Plantillas, categoría UTILITY, con tres variables: nombre, fecha y hora. Tarda entre 10 minutos y 24 horas en aprobarse.
 - Una hoja de Google Sheets llamada Registro-recordatorios con las columnas: id_evento, telefono, enviado_el, respuesta.
@@ -54,7 +54,7 @@ Está pensado para clínicas pequeñas de fisioterapia, dentistas, psicología, 
 6. **IF**: condición `{{ $json.telefono }}` Is Not Empty. La rama falsa va a un **Gmail** que te avisa a ti de que esa cita no tiene teléfono.
 7. **WhatsApp Business Cloud** (operación Send Template): Recipient Phone Number = `{{ $json.telefono }}`, Template Name el que aprobó Meta, Language `es`, y en Body Parameters mete en este orden `{{ $json.nombre }}`, `{{ $json.fecha }}`, `{{ $json.hora }}`.
 8. **Google Sheets** (operación Append): añade una fila con id_evento, telefono y `{{ $now.toISO() }}` en enviado_el.
-9. Segundo flujo aparte para las respuestas: **Webhook** (método POST, ruta `/wa-respuesta`) pegado como Callback URL en el webhook de WhatsApp dentro de la app de Meta, luego un **Code** que saca el texto de `body.entry[0].changes[0].value.messages[0].text.body`, un **Switch** que separa el 1 del 2, y un **Google Sheets** (Update Row) que escribe confirmado o anulado en la columna respuesta. Si es un 2, añade un **Gmail** que avise a recepción.
+9. Segundo flujo aparte para las respuestas: **Webhook** (método POST, ruta `/wa-respuesta`) pegado como Callback URL en el webhook de WhatsApp dentro de la app de Meta (verifica la firma `X-Hub-Signature-256` con el App Secret de tu app de Meta en un nodo Code y descarta mensajes repetidos por su `id`), luego un **Code** que saca el texto de `body.entry[0].changes[0].value.messages[0].text.body`, un **Switch** que separa el 1 del 2, y un **Google Sheets** (Update Row) que escribe confirmado o anulado en la columna respuesta. Si es un 2, añade un **Gmail** que avise a recepción.
 
 ## El trozo de código del nodo 3
 ```javascript

@@ -1,5 +1,5 @@
 ---
-name: limpiar-audio
+name: limpiar-audio-episodio
 description: limpia ruido de fondo y normaliza el volumen de un audio de podcast con ffmpeg; se usa justo después de grabar, antes de montar
 ---
 
