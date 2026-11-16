@@ -1,6 +1,6 @@
 # arsenal-negocio-estrategia · Negocio · Plan y estrategia
 
-Negocio · Plan y estrategia: 8 subagentes, 2 skills en español, del Arsenal del Marketer.
+Negocio · Plan y estrategia: 8 subagentes, 3 skills en español, del Arsenal del Marketer.
 
 ## Instalar
 
@@ -15,6 +15,7 @@ Negocio · Plan y estrategia: 8 subagentes, 2 skills en español, del Arsenal de
 |---|---|---|---|
 | estrategia-por-rondas | Skill | Construye la estrategia de un negocio en seis rondas (premisas, cliente, números, precio, posicionamiento con plan de 90 días, y riesgos y decisión) cuestionando cada premisa. | se activa sola cuando hace falta |
 | informe-competencia-apify | Skill | Recoge datos públicos de tus competidores con Apify (web, precios, redes, anuncios, reseñas) y los convierte en un informe que separa lo que se ha visto de lo que se supone. | se activa sola cuando hace falta |
+| whatsapp-business-oficial | Skill | Decide contigo entre la app WhatsApp Business y la Cloud API, y explica plantillas, categorías, ventana de 24 h, consentimiento por categoría y bajas para no perder el número. | se activa sola cuando hace falta |
 | ficha-riesgos-naturales-ubicacion | Subagente | Reúne en una ficha lo que dicen fuentes oficiales sobre inundación, incendio, terremoto, terreno y otros riesgos de un lugar de España, citando cada fuente y sin inventar probabilidades. | pídele a Claude «usa el subagente ficha-riesgos-naturales-ubicacion» |
 | mapa-ingresos-repartidos | Subagente | Analiza de dónde viene tu dinero hoy, mide cuánto dependes de un solo cliente, producto o plataforma y diseña pruebas pequeñas para añadir otras fuentes de ingresos sin prometer nada. | pídele a Claude «usa el subagente mapa-ingresos-repartidos» |
 | negocio-a-medida-de-tu-vida | Subagente | Cuadra tu negocio con la vida: horas, lugar, ingresos; cambios pequeños a 90 días. | pídele a Claude «usa el subagente negocio-a-medida-de-tu-vida» |

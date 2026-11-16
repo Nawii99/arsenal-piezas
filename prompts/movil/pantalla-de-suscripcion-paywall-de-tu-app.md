@@ -1,4 +1,4 @@
-# Pantalla de suscripción (paywall) de tu app…
+# Pantalla de suscripción (paywall) de tu app
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando vayas a cobrar dentro de la app por suscripción o compra, o cuando la tu
 
 Es la pantalla donde entra el dinero de la app: cambiar el orden de los planes, el momento en que aparece y las cuatro frases de encima suele mover las altas.
 
-- Diseño de pantalla de suscripción para apps de pago…
-- Rediseño de un paywall con poca conversión…
-- Textos y estructura de planes para apps hechas con no-code…
+- Diseño de pantalla de suscripción para apps de pago.
+- Rediseño de un paywall con poca conversión.
+- Textos y estructura de planes para apps hechas con no-code.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

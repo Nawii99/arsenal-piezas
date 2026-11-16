@@ -1,4 +1,4 @@
-# API de mentira en n8n…
+# API de mentira en n8n
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando estás montando un flujo que llama a un servicio de pago o con límite de
 
 Te permite construir y enseñar flujos antes de tener las credenciales del cliente. Reduce el tiempo de implantación y evita costes de API durante el desarrollo.
 
-- Entorno de pruebas para integrar pagos sin cobrar durante el desarrollo…
-- Simulador de API para equipos que aún no tienen credenciales del cliente…
-- Mantenimiento de maquetas de API cuando el cliente cambia de proveedor…
+- Entorno de pruebas para integrar pagos sin cobrar durante el desarrollo.
+- Simulador de API para equipos que aún no tienen credenciales del cliente.
+- Mantenimiento de maquetas de API cuando el cliente cambia de proveedor.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

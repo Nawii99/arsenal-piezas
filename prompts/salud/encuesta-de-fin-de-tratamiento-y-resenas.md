@@ -1,4 +1,4 @@
-# Encuesta de fin de tratamiento y reseñas…
+# Encuesta de fin de tratamiento y reseñas
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando terminas tratamientos y no sabes qué opinan de verdad, y las reseñas en
 
 Más reseñas reales mejoran la visibilidad en Google Maps y traen consultas nuevas sin coste de publicidad.
 
-- Sistema de encuesta y reseñas para clínicas y centros de bienestar…
-- Gestión mensual de solicitudes de reseña por WhatsApp o QR…
-- Informe trimestral de satisfacción de pacientes…
+- Sistema de encuesta y reseñas para clínicas y centros de bienestar.
+- Gestión mensual de solicitudes de reseña por WhatsApp o QR.
+- Informe trimestral de satisfacción de pacientes.
 
 **Precio orientativo:** 80–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

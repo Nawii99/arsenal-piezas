@@ -1,4 +1,4 @@
-# Copia de seguridad diaria de la base de datos con rotac…
+# Copia de seguridad diaria de la base de datos con rotac
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cada noche ejecuta un volcado completo de PostgreSQL o MySQL, lo comprime, lo su
 
 Una copia bien hecha vale lo que factures en un mes. Cuesta cero y te ahorra el rescate de datos, que se paga a precio de urgencia.
 
-- Copias de seguridad automáticas para tiendas y apps de clientes con rotación…
-- Mantenimiento de backups para pymes con base de datos en VPS…
-- Configuración de copias con rotación para agencias que alojan proyectos de clientes…
+- Copias de seguridad automáticas para tiendas y apps de clientes con rotación.
+- Mantenimiento de backups para pymes con base de datos en VPS.
+- Configuración de copias con rotación para agencias que alojan proyectos de clientes.
 
 **Precio orientativo:** 80–200 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

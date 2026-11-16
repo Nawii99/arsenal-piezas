@@ -1,4 +1,4 @@
-# Arreglar las alertas que nadie hace caso…
+# Arreglar las alertas que nadie hace caso
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando el cliente (o tú) ya ha silenciado las notificaciones porque saltan todo
 
 Una instalación cuyas alertas se ignoran es una instalación que no sirve; arreglarlo salva el contrato y evita la reclamación cuando pase algo de verdad.
 
-- Limpieza de alertas en instalaciones con cámaras y sensores…
-- Rediseño de notificaciones para negocios…
-- Servicio de ajuste de avisos para clientes de mantenimiento…
+- Limpieza de alertas en instalaciones con cámaras y sensores.
+- Rediseño de notificaciones para negocios.
+- Servicio de ajuste de avisos para clientes de mantenimiento.
 
 **Precio orientativo:** 40–120 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Piloto de sensores · Prompt operativo…
+# Piloto de sensores · Prompt operativo
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

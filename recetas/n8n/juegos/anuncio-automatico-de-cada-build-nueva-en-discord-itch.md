@@ -1,4 +1,4 @@
-# Anuncio automático de cada build nueva en Discord, itch…
+# Anuncio automático de cada build nueva en Discord, itch
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

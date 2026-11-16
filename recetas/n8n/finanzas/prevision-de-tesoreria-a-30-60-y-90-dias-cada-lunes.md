@@ -1,4 +1,4 @@
-# Previsión de tesorería a 30, 60 y 90 días cada lunes…
+# Previsión de tesorería a 30, 60 y 90 días cada lunes
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cada lunes lee tres pestañas de una hoja (saldo actual, cobros previstos y pago
 
 Ver un agujero con 6 semanas de margen te permite adelantar cobros o retrasar compras en vez de pedir un descubierto al 12% TAE. Evita 300-1.000 € al año en intereses.
 
-- Previsión de caja mensual como servicio para pymes con ingresos irregulares…
-- Panel de tesorería para autónomos que preparan una financiación…
-- Configuración de seguimiento de caja para negocios de proyectos…
+- Previsión de caja mensual como servicio para pymes con ingresos irregulares.
+- Panel de tesorería para autónomos que preparan una financiación.
+- Configuración de seguimiento de caja para negocios de proyectos.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

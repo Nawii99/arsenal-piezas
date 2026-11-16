@@ -1,4 +1,4 @@
-# Revisión semanal de las conversaciones del bot…
+# Revisión semanal de las conversaciones del bot
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que analiza conversaciones reales de un asistente de IA. Entran las conve
 
 Es la base del mantenimiento mensual que se le cobra a un cliente: un informe recurrente con mejoras medibles justifica la cuota.
 
-- Informe mensual de mejora de chatbots como servicio recurrente…
-- Mantenimiento de asistentes de WhatsApp con revisión de conversaciones…
-- Auditoría de bots con lista de preguntas sin respuesta…
+- Informe mensual de mejora de chatbots como servicio recurrente.
+- Mantenimiento de asistentes de WhatsApp con revisión de conversaciones.
+- Auditoría de bots con lista de preguntas sin respuesta.
 
 **Precio orientativo:** 80–250 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

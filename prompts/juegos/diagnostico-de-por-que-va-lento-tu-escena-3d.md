@@ -1,4 +1,4 @@
-# Diagnóstico de por qué va lento tu escena 3D…
+# Diagnóstico de por qué va lento tu escena 3D
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tu juego o tu escena 3D se mueve a tirones, tarda muchísimo en renderiza
 
 Un proyecto que va fluido se puede vender y enseñar; además, reducir tiempos de render te ahorra horas de máquina y entregas tarde a clientes.
 
-- Optimización de escenas 3D para juegos y renders…
-- Diagnóstico de rendimiento en móviles y VR…
-- Informe de cuellos de botella con plan de arreglos…
+- Optimización de escenas 3D para juegos y renders.
+- Diagnóstico de rendimiento en móviles y VR.
+- Informe de cuellos de botella con plan de arreglos.
 
 **Precio orientativo:** 200–600 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

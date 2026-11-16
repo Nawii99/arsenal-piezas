@@ -1,4 +1,4 @@
-# Detector de cortes de luz con apagado ordenado y parte…
+# Detector de cortes de luz con apagado ordenado y parte
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

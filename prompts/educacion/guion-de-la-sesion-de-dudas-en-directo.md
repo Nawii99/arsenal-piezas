@@ -1,4 +1,4 @@
-# Guion de la sesión de dudas en directo…
+# Guion de la sesión de dudas en directo
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Antes de cada directo de mentoría o clase de dudas, sobre todo si te suelen que
 
 Los directos bien llevados son lo que hace que la gente renueve la suscripción o la mentoría; una sesión sosa es la razón más habitual de baja.
 
-- Guiones de directos para mentorías y comunidades de pago…
-- Dinamización de sesiones de dudas para academias…
-- Plantillas de sesión en vivo para formadores…
+- Guiones de directos para mentorías y comunidades de pago.
+- Dinamización de sesiones de dudas para academias.
+- Plantillas de sesión en vivo para formadores.
 
 **Precio orientativo:** 40–120 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

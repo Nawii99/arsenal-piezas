@@ -1,4 +1,4 @@
-# Actualiza tu web de currículum sola cuando añades una fila a…
+# Actualiza tu web de currículum sola cuando añades una fila a
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cada vez que terminas un proyecto o cambias de puesto: en vez de editar el HTML 
 
 Se puede montar como servicio de 'CV web que se mantiene sola' para autónomos, cobrando el montaje inicial, por ejemplo [50-100 EUR], y avisando de que la IA tiene coste.
 
-- Mantenimiento automático de CV web para autónomos que cambian de proyecto…
-- Actualizaciones de portfolio para creativos que publican trabajos cada mes…
-- Servicio de CV vivo para profesionales que suman logros con frecuencia…
+- Mantenimiento automático de CV web para autónomos que cambian de proyecto.
+- Actualizaciones de portfolio para creativos que publican trabajos cada mes.
+- Servicio de CV vivo para profesionales que suman logros con frecuencia.
 
 **Precio orientativo:** 80–150 € por montaje (más 10-20 € al me. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

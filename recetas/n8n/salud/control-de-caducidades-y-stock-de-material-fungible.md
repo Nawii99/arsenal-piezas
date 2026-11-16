@@ -1,4 +1,4 @@
-# Control de caducidades y stock de material fungible…
+# Control de caducidades y stock de material fungible
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

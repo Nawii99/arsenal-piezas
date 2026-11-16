@@ -1,4 +1,4 @@
-# Alarma de retención floja en tus vídeos de YouTube…
+# Alarma de retención floja en tus vídeos de YouTube
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

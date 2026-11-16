@@ -1,4 +1,4 @@
-# Vigilante de certificados SSL y dominios…
+# Vigilante de certificados SSL y dominios
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando gestionas más de dos dominios o webs de clientes y las renovaciones no e
 
 Un día de web caída con el navegador marcando «no es seguro» cuesta ventas y credibilidad; esta receta lo evita por 0 €.
 
-- Vigilancia de dominios para freelancers que llevan webs de terceros…
-- Renovaciones centralizadas como servicio para agencias con muchos clientes…
-- Informe mensual de estado de certificados para empresas con varias webs…
+- Vigilancia de dominios para freelancers que llevan webs de terceros.
+- Renovaciones centralizadas como servicio para agencias con muchos clientes.
+- Informe mensual de estado de certificados para empresas con varias webs.
 
 **Precio orientativo:** 40–100 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

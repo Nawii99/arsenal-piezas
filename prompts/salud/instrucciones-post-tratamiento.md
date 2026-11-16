@@ -1,4 +1,4 @@
-# instrucciones-post-tratamiento…
+# instrucciones-post-tratamiento
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando los pacientes llaman una y otra vez con las mismas dudas después de la s
 
 Menos llamadas y mensajes fuera de hora, menos citas de repaso por instrucciones mal entendidas y menos incidencias que acaban en reseña negativa.
 
-- Hojas de instrucciones post-tratamiento para clínicas…
-- Plantillas imprimibles por tipo de tratamiento…
-- Servicio de redacción de comunicaciones al paciente…
+- Hojas de instrucciones post-tratamiento para clínicas.
+- Plantillas imprimibles por tipo de tratamiento.
+- Servicio de redacción de comunicaciones al paciente.
 
 **Precio orientativo:** 30–120 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

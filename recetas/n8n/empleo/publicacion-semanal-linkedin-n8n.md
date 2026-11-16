@@ -1,4 +1,4 @@
-# Publicar cada semana sin que te coma la vida…
+# Publicar cada semana sin que te coma la vida
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

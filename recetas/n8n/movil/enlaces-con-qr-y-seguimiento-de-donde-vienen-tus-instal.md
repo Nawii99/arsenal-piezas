@@ -1,4 +1,4 @@
-# Enlaces con QR y seguimiento de dónde vienen tus instal…
+# Enlaces con QR y seguimiento de dónde vienen tus instal
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

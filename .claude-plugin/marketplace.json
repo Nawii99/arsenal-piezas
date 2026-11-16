@@ -12,7 +12,7 @@
     {
       "name": "arsenal-animacion",
       "source": "./plugins/animacion",
-      "description": "Webs animadas: 1 skill, 1 subagente en español, del Arsenal del Marketer.",
+      "description": "Webs animadas: 7 skills, 3 subagentes, 2 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "animacion",
       "keywords": [
@@ -73,6 +73,17 @@
       "keywords": [
         "español",
         "calidad"
+      ]
+    },
+    {
+      "name": "arsenal-ciencia",
+      "source": "./plugins/ciencia",
+      "description": "Ciencia e investigación: 1 skill, 1 subagente en español, del Arsenal del Marketer.",
+      "version": "1.0.0",
+      "category": "ciencia",
+      "keywords": [
+        "español",
+        "ciencia"
       ]
     },
     {
@@ -342,7 +353,7 @@
     {
       "name": "arsenal-ecommerce-varios",
       "source": "./plugins/ecommerce-varios",
-      "description": "Tienda por internet · Más de tienda por internet: 5 skills, 1 comando / en español, del Arsenal del Marketer.",
+      "description": "Tienda por internet · Más de tienda por internet: 13 skills, 5 comandos /, 2 subagentes en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "ecommerce",
       "keywords": [
@@ -507,7 +518,7 @@
     {
       "name": "arsenal-finanzas-alternativas-1",
       "source": "./plugins/finanzas-alternativas-1",
-      "description": "Finanzas · Alternativas (1): 19 comandos /, 6 skills, 4 subagentes en español que se parecen a otras piezas de finanzas; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
+      "description": "Finanzas · Alternativas (1): 19 comandos /, 5 skills, 4 subagentes en español que se parecen a otras piezas de finanzas; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "finanzas",
       "keywords": [
@@ -529,7 +540,7 @@
     {
       "name": "arsenal-finanzas-cobros",
       "source": "./plugins/finanzas-cobros",
-      "description": "Finanzas · Facturas y cobros: 4 subagentes, 3 comandos /, 3 skills en español, del Arsenal del Marketer.",
+      "description": "Finanzas · Facturas y cobros: 4 subagentes, 4 skills, 3 comandos / en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "finanzas",
       "keywords": [
@@ -540,7 +551,7 @@
     {
       "name": "arsenal-finanzas-impuestos",
       "source": "./plugins/finanzas-impuestos",
-      "description": "Finanzas · Impuestos: 4 comandos /, 2 subagentes en español, del Arsenal del Marketer.",
+      "description": "Finanzas · Impuestos: 4 comandos /, 2 subagentes, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "finanzas",
       "keywords": [
@@ -573,7 +584,7 @@
     {
       "name": "arsenal-finanzas-varios",
       "source": "./plugins/finanzas-varios",
-      "description": "Finanzas · Más de finanzas: 4 subagentes, 4 comandos /, 1 skill en español, del Arsenal del Marketer.",
+      "description": "Finanzas · Más de finanzas: 5 comandos /, 4 subagentes, 1 skill en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "finanzas",
       "keywords": [
@@ -1189,7 +1200,7 @@
     {
       "name": "arsenal-negocio-estrategia",
       "source": "./plugins/negocio-estrategia",
-      "description": "Negocio · Plan y estrategia: 8 subagentes, 2 skills en español, del Arsenal del Marketer.",
+      "description": "Negocio · Plan y estrategia: 8 subagentes, 3 skills en español, del Arsenal del Marketer.",
       "version": "1.0.0",
       "category": "negocio",
       "keywords": [
@@ -1651,7 +1662,7 @@
     {
       "name": "arsenal-en-skills-1",
       "source": "./plugins/en-skills-1",
-      "description": "Arsenal del Marketer in English: 20 skills (part 1 of 2) for marketing, sales, design and small business.",
+      "description": "Arsenal del Marketer in English: 19 skills (part 1 of 2) for marketing, sales, design and small business.",
       "version": "1.0.0",
       "category": "english",
       "keywords": [

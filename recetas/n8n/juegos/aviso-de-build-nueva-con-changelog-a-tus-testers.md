@@ -1,4 +1,4 @@
-# Aviso de build nueva con changelog a tus testers…
+# Aviso de build nueva con changelog a tus testers
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

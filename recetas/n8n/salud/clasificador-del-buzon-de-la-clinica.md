@@ -1,4 +1,4 @@
-# Clasificador del buzón de la clínica…
+# Clasificador del buzón de la clínica
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

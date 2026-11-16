@@ -1,0 +1,67 @@
+{
+  "tarea": "Reescribir títulos y descripciones de productos para un feed de Google Shopping respetando las reglas editoriales que la persona pega de la ayuda oficial, sin inventar datos del producto.",
+  "idioma_salida": "es-ES",
+  "contexto": "Las reglas editoriales de Google (qué evitar en título y descripción, longitudes y estructura recomendada) pueden cambiar. Por eso esta tarea trabaja con las reglas que la persona pega, copiadas de la ayuda oficial de Merchant Center. Fuente donde copiarlas: https://support.google.com/merchants/answer/7052112?hl=es",
+  "datos_de_entrada": {
+    "reglas_editoriales_pegadas": "[PEGA AQUÍ EL TEXTO DE LAS REGLAS DE TÍTULO Y DESCRIPCIÓN DE LA AYUDA OFICIAL. SI LO DEJAS VACÍO, NO REESCRIBAS: PÍDELO]",
+    "productos": "[LISTA DE PRODUCTOS, UNO POR BLOQUE: ID · TÍTULO ACTUAL · DESCRIPCIÓN ACTUAL · MARCA · MODELO · COLOR · TALLA · MATERIAL · MEDIDAS · DATOS QUE SEAN CIERTOS]",
+    "sector": "[MODA | HOGAR | ELECTRÓNICA | ALIMENTACIÓN | OTRO: ESCRÍBELO]",
+    "palabras_que_la_gente_busca": "[OPCIONAL: BÚSQUEDAS REALES DE TUS CLIENTES O TÉRMINOS DE TU INFORME DE BÚSQUEDAS]",
+    "texto_que_no_quiero": "[OPCIONAL: PALABRAS O FRASES PROHIBIDAS EN MI MARCA]"
+  },
+  "pasos": [
+    "Comprueba que reglas_editoriales_pegadas tiene contenido. Si está vacío o es solo un enlace, responde pidiendo el texto y no reescribas nada.",
+    "Extrae las reglas del texto pegado en una lista corta (qué evitar, qué incluir, límites si los dan) y muéstrala antes de reescribir, para que la persona vea qué has entendido.",
+    "Para cada producto, identifica solo los datos ciertos que aparecen en la entrada: marca, modelo, tipo de producto, color, talla, material, medidas.",
+    "Escribe el título nuevo siguiendo las reglas pegadas. Estructura sugerida si las reglas no dicen otra cosa: tipo de producto + marca + rasgo que distingue (color, talla, material, modelo). Coloca al principio lo más importante.",
+    "Escribe la descripción nueva en texto plano, solo con información del producto, coherente con la página del producto, sin promociones ni envíos ni datos de la tienda.",
+    "Compara cada resultado con las reglas pegadas y con la lista de comprobaciones. Corrige antes de entregar.",
+    "Si falta un dato necesario para un buen título (por ejemplo, el color en una variante), no lo supongas: anótalo en datos_que_faltan."
+  ],
+  "reglas": [
+    "Usa únicamente datos que aparecen en datos_de_entrada. No inventes marcas, modelos, medidas, materiales, certificaciones ni usos.",
+    "Aplica las reglas pegadas. No añadas reglas de Google de memoria ni límites de caracteres que no estén en el texto pegado; si el texto pegado no da un límite, dilo en avisos.",
+    "No incluyas promociones, precios, envío gratis, urgencia, superlativos («el mejor») ni mayúsculas de adorno en título ni descripción, salvo que el texto pegado diga expresamente lo contrario.",
+    "El título y la descripción tienen que poder coincidir con lo que dice la página del producto: no prometas nada que la página no diga.",
+    "Mantén el idioma español de España y no mezcles marcas o modelos con variantes de otra fila.",
+    "Si el producto es de un sector restringido (salud, alcohol, adultos, armas, financiero), no reescribas: avisa de que debe revisar las políticas de Google para ese sector.",
+    "No toques identificadores, precios ni enlaces: solo título y descripción."
+  ],
+  "formato_de_salida": {
+    "descripcion": "Un único objeto JSON, sin texto alrededor.",
+    "esquema": {
+      "reglas_entendidas": [
+        "string"
+      ],
+      "productos": [
+        {
+          "id": "string",
+          "titulo_actual": "string",
+          "titulo_nuevo": "string",
+          "descripcion_nueva": "string",
+          "cambios": [
+            "string"
+          ],
+          "datos_que_faltan": [
+            "string"
+          ]
+        }
+      ],
+      "avisos": [
+        "string"
+      ],
+      "que_comprobar_tu": [
+        "Que cada título y descripción coincide con la página del producto.",
+        "Que las reglas pegadas siguen vigentes en la ayuda oficial."
+      ]
+    }
+  },
+  "comprobaciones": [
+    "Ningún título ni descripción contiene datos que no estén en la entrada.",
+    "Ningún texto contiene promociones, envío gratis, mayúsculas de adorno ni superlativos.",
+    "Cada producto conserva su id original.",
+    "Se ha avisado de todo límite o regla que el texto pegado no aclaraba.",
+    "La salida es un JSON válido."
+  ],
+  "limites": "Esto no garantiza que Merchant Center apruebe los productos: la decisión es de Google. Comprueba siempre las reglas vigentes en su ayuda oficial."
+}

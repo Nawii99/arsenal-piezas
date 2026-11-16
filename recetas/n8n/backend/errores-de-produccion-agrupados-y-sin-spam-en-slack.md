@@ -1,4 +1,4 @@
-# Errores de producción agrupados y sin spam en Slack…
+# Errores de producción agrupados y sin spam en Slack
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

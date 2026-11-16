@@ -1,4 +1,4 @@
-# Copia de seguridad verificada con restauración de prueb…
+# Copia de seguridad verificada con restauración de prueb
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Minería de reseñas de la competencia para tu hoja de ru…
+# Minería de reseñas de la competencia para tu hoja de ru
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando tienes que decidir qué construir el próximo trimestre y quieres basarte
 
 Sustituye un estudio de mercado de 500-1.500 €. Sobre todo evita meses de desarrollo en una función que a nadie le importa.
 
-- Investigación de producto para una app de nicho con tres rivales…
-- Priorización de funciones para el próximo trimestre de una app…
-- Análisis de quejas de la competencia antes de entrar en un mercado…
+- Investigación de producto para una app de nicho con tres rivales.
+- Priorización de funciones para el próximo trimestre de una app.
+- Análisis de quejas de la competencia antes de entrar en un mercado.
 
 **Precio orientativo:** 200–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

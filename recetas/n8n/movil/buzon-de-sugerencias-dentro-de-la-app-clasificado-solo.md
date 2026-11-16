@@ -1,4 +1,4 @@
-# Buzón de sugerencias dentro de la app, clasificado solo…
+# Buzón de sugerencias dentro de la app, clasificado solo
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

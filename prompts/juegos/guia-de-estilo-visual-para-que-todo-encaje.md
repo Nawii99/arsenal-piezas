@@ -1,4 +1,4 @@
-# Guía de estilo visual para que todo encaje…
+# Guía de estilo visual para que todo encaje
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tu juego o tu escena parezca un batiburrillo: modelos que no pegan entre 
 
 Un aspecto coherente es lo que hace que un proyecto parezca profesional y se pueda vender o cobrar más, y evita rehacer assets que no pegan.
 
-- Guía de estilo visual para juegos y escenas 3D…
-- Documento de arte para encargar assets a terceros…
-- Revisión de coherencia visual de un proyecto…
+- Guía de estilo visual para juegos y escenas 3D.
+- Documento de arte para encargar assets a terceros.
+- Revisión de coherencia visual de un proyecto.
 
 **Precio orientativo:** 200–600 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

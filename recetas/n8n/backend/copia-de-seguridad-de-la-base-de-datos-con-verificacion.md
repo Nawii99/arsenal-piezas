@@ -1,4 +1,4 @@
-# Copia de seguridad de la base de datos con verificación…
+# Copia de seguridad de la base de datos con verificación
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

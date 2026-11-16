@@ -1,4 +1,4 @@
-# Cola de reintentos con espera creciente para webhooks…
+# Cola de reintentos con espera creciente para webhooks
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Informe semanal de velocidad con PageSpeed…
+# Informe semanal de velocidad con PageSpeed
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

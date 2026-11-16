@@ -1,4 +1,4 @@
-# Encuesta de satisfacción y captura de testimonios…
+# Encuesta de satisfacción y captura de testimonios
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

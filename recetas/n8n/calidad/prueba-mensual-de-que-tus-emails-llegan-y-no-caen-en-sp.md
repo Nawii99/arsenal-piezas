@@ -1,4 +1,4 @@
-# Prueba mensual de que tus emails llegan y no caen en sp…
+# Prueba mensual de que tus emails llegan y no caen en sp
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

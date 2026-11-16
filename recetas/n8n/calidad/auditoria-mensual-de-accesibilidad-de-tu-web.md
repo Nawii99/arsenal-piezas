@@ -1,4 +1,4 @@
-# Auditoría mensual de accesibilidad de tu web…
+# Auditoría mensual de accesibilidad de tu web
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

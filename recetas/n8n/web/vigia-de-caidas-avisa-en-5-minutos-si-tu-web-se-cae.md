@@ -1,4 +1,4 @@
-# Vigía de caídas: avisa en 5 minutos si tu web se cae…
+# Vigía de caídas: avisa en 5 minutos si tu web se cae
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

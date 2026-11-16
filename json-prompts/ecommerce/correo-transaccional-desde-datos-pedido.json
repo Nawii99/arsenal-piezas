@@ -1,0 +1,79 @@
+{
+ "tarea": "Redactar el texto de UN correo transaccional de una tienda online (confirmación de pedido, pedido enviado, pedido entregado, pago pendiente o incidencia de envío) usando solo los datos del pedido que se aportan.",
+ "idioma_salida": "es-ES",
+ "datos_de_entrada": {
+  "tipo_de_correo": "[CONFIRMACION | ENVIADO | ENTREGADO | PAGO_PENDIENTE | INCIDENCIA]",
+  "tienda": {
+   "nombre_comercial": "[NOMBRE DE LA TIENDA]",
+   "razon_social_y_direccion": "[DATOS LEGALES DEL TITULAR]",
+   "contacto": "[EMAIL Y TELÉFONO DE ATENCIÓN, Y HORARIO SI LO HAY]",
+   "enlace_condiciones_y_devoluciones": "[URL]",
+   "tono": "[3 ADJETIVOS Y UNA FRASE DE EJEMPLO]"
+  },
+  "pedido": {
+   "numero": "[Nº DE PEDIDO]",
+   "fecha": "[FECHA DEL PEDIDO]",
+   "nombre_cliente": "[NOMBRE]",
+   "lineas": "[PRODUCTO, VARIANTE, CANTIDAD, PRECIO DE CADA LÍNEA]",
+   "gastos_de_envio": "[IMPORTE O «GRATIS»]",
+   "total_con_impuestos": "[IMPORTE TOTAL]",
+   "forma_de_pago": "[TARJETA, TRANSFERENCIA…]",
+   "direccion_de_entrega": "[DIRECCIÓN]",
+   "plazo_estimado": "[FECHA O PLAZO REAL, O «PENDIENTE DE CONFIRMAR»]"
+  },
+  "envio": {
+   "transportista": "[NOMBRE O «NO APLICA»]",
+   "enlace_de_seguimiento": "[URL O «NO APLICA»]",
+   "fecha_de_envio_o_entrega": "[FECHA O «NO APLICA»]"
+  },
+  "datos_especificos": "[SOLO PARA PAGO_PENDIENTE: DATOS DE PAGO Y FECHA LÍMITE. SOLO PARA INCIDENCIA: QUÉ HA PASADO Y QUÉ VAS A HACER. SI NO APLICA, «NINGUNO»]"
+ },
+ "pasos": [
+  "1. Comprueba que están todos los datos necesarios para este tipo de correo. Si falta alguno, anótalo en datos_que_faltan y no lo inventes.",
+  "2. Redacta un asunto claro que incluya el número de pedido.",
+  "3. Escribe primero lo esencial: qué ha pasado con el pedido y qué pasa a continuación.",
+  "4. Añade el resumen del pedido con los importes tal cual se te dan.",
+  "5. Añade el contacto y el enlace a condiciones y devoluciones.",
+  "6. Revisa el tono, la longitud (que se lea entero en un móvil) y que no haya ninguna promoción."
+ ],
+ "reglas": [
+  "Usa solo los datos de datos_de_entrada. No inventes plazos, importes, transportistas, enlaces ni condiciones.",
+  "No hagas cálculos nuevos con los importes: cópialos. Si no cuadran entre sí, avísalo en avisos.",
+  "Un correo transaccional no lleva promociones, cupones, venta cruzada ni petición de opinión con incentivo. Si te piden meterlos, dilo en avisos y no los incluyas.",
+  "No afirmes plazos de desistimiento ni de devolución: remite al enlace de condiciones y, si no hay enlace, di «consulta nuestras condiciones de devolución».",
+  "Español de España, tuteo, frases cortas, sin mayúsculas gritadas ni signos de exclamación repetidos.",
+  "Si el tipo es INCIDENCIA, empieza reconociendo el problema, sin excusas largas y sin culpar al cliente ni al transportista.",
+  "Si el tipo es CONFIRMACION, incluye todo lo que permita al cliente archivar el pedido: número, fecha, líneas, total con impuestos, gastos de envío, forma de pago y dirección.",
+  "Deja los huecos que no se puedan rellenar como [DATO PENDIENTE] y lístalos en datos_que_faltan.",
+  "No envíes nada: entrega el borrador para que una persona lo revise."
+ ],
+ "formato_de_salida": {
+  "formato": "un único objeto JSON, sin texto alrededor",
+  "esquema": {
+   "asunto": "string",
+   "texto_de_previsualizacion": "string de menos de 90 caracteres",
+   "cuerpo_texto_plano": "string",
+   "cuerpo_html_sencillo": "string con etiquetas básicas, sin estilos complejos",
+   "datos_que_faltan": [
+    "string"
+   ],
+   "avisos": [
+    "string"
+   ],
+   "revision_humana": [
+    "Comprueba los importes contra el pedido real.",
+    "Comprueba que los enlaces abren.",
+    "Comprueba los datos legales del pie.",
+    "Si tienes dudas legales, consulta con un asesor."
+   ]
+  }
+ },
+ "comprobaciones": [
+  "El asunto contiene el número de pedido.",
+  "Todos los importes coinciden con los datos de entrada.",
+  "No hay ninguna promoción ni cupón.",
+  "No se ha inventado ningún dato: lo que faltaba está en datos_que_faltan.",
+  "El correo se entiende leyendo solo las dos primeras líneas.",
+  "La salida es un JSON válido."
+ ]
+}

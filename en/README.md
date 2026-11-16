@@ -1,12 +1,12 @@
 # Arsenal del Marketer · English
 
-147 hand-picked pieces translated from Spanish: the ones rated highest in the catalog, spread across types and areas. The other pieces are in Spanish (Claude understands them and can answer in English).
+146 hand-picked pieces translated from Spanish: the ones rated highest in the catalog, spread across types and areas. The other pieces are in Spanish (Claude understands them and can answer in English).
 
-## Claude Code (100 skills, slash commands and subagents)
+## Claude Code (99 skills, slash commands and subagents)
 
 Small plugins (about 1,800 tokens each), so you only load what you need. First `/plugin marketplace add Nawii99/arsenal-piezas`, then:
 
-- `/plugin install arsenal-en-skills-1@arsenal` — 20 skills (part 1 of 2) for marketing, sales, design and small business.
+- `/plugin install arsenal-en-skills-1@arsenal` — 19 skills (part 1 of 2) for marketing, sales, design and small business.
 - `/plugin install arsenal-en-skills-2@arsenal` — 20 skills (part 2 of 2) for marketing, sales, design and small business.
 - `/plugin install arsenal-en-commands@arsenal` — 30 slash commands for marketing, sales, design and small business.
 - `/plugin install arsenal-en-agents-1@arsenal` — 15 subagents (part 1 of 2) for marketing, sales, design and small business.

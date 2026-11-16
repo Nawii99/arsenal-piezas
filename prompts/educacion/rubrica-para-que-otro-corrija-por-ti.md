@@ -1,4 +1,4 @@
-# Rúbrica para que otro corrija por ti…
+# Rúbrica para que otro corrija por ti
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando ya no llegas a corregir todo, vas a meter a un ayudante o quieres que las
 
 Te libera horas de corrección que puedes dedicar a vender o grabar, y permite delegar la parte más cara de tu tiempo a alguien más barato sin bajar la calidad.
 
-- Rúbricas delegables para equipos de corrección…
-- Manual de corrección para academias con varios tutores…
-- Estandarización de criterios entre ediciones de un curso…
+- Rúbricas delegables para equipos de corrección.
+- Manual de corrección para academias con varios tutores.
+- Estandarización de criterios entre ediciones de un curso.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

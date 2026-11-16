@@ -1,4 +1,4 @@
-# Selección del cliente convertida en cola de retoque…
+# Selección del cliente convertida en cola de retoque
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

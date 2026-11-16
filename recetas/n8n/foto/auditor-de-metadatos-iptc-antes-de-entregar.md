@@ -1,4 +1,4 @@
-# Auditor de metadatos IPTC antes de entregar…
+# Auditor de metadatos IPTC antes de entregar
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Panel de estado de todas tus webs en una sola página…
+# Panel de estado de todas tus webs en una sola página
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

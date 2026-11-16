@@ -1,4 +1,4 @@
-# Semáforo de gasto en APIs con freno automático…
+# Semáforo de gasto en APIs con freno automático
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

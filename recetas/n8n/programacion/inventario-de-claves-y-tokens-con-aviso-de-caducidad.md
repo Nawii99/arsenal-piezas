@@ -1,4 +1,4 @@
-# Inventario de claves y tokens con aviso de caducidad…
+# Inventario de claves y tokens con aviso de caducidad
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando ya no recuerdas cuántas claves tienes repartidas entre Stripe, GitHub, G
 
 Evita caídas por token caducado (la típica pasarela de pago que deja de funcionar) y reduce el riesgo de una filtración por claves eternas.
 
-- Gestión de accesos para microempresas con muchas integraciones…
-- Auditoría de claves como servicio trimestral para agencias…
-- Plan de rotación de credenciales para proyectos con datos de clientes…
+- Gestión de accesos para microempresas con muchas integraciones.
+- Auditoría de claves como servicio trimestral para agencias.
+- Plan de rotación de credenciales para proyectos con datos de clientes.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

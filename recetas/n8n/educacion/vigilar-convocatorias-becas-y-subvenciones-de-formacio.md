@@ -1,4 +1,4 @@
-# Vigilar convocatorias, becas y subvenciones de formació…
+# Vigilar convocatorias, becas y subvenciones de formació
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

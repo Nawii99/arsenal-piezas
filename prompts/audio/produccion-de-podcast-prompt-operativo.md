@@ -1,4 +1,4 @@
-# Producción de podcast · Prompt operativo…
+# Producción de podcast · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Música y audio · **Licencia:** CC BY 4.0
 

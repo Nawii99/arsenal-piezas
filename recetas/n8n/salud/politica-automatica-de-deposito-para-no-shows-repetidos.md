@@ -1,4 +1,4 @@
-# Política automática de depósito para no-shows repetidos…
+# Política automática de depósito para no-shows repetidos
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

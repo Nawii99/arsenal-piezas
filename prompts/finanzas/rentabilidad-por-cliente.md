@@ -1,4 +1,4 @@
-# rentabilidad-por-cliente…
+# rentabilidad-por-cliente
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que analiza cuánto te deja cada cliente contan
 
 Detecta los clientes que te comen horas sin pagarlas: subir precio o soltarlos libera tiempo facturable para trabajos mejores.
 
-- Análisis de rentabilidad por cliente para agencias y freelances…
-- Informe de cartera con plan de subida de tarifas…
-- Consultoría de precios para negocios de servicios…
+- Análisis de rentabilidad por cliente para agencias y freelances.
+- Informe de cartera con plan de subida de tarifas.
+- Consultoría de precios para negocios de servicios.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

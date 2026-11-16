@@ -1,4 +1,4 @@
-# Preselección técnica: separa las fotos nítidas de las m…
+# Preselección técnica: separa las fotos nítidas de las m
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

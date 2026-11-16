@@ -1,4 +1,4 @@
-# Prueba de entregabilidad de tus correos…
+# Prueba de entregabilidad de tus correos
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

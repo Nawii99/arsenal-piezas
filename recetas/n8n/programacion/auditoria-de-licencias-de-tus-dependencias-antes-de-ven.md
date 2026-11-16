@@ -1,4 +1,4 @@
-# Auditoría de licencias de tus dependencias antes de ven…
+# Auditoría de licencias de tus dependencias antes de ven
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Flujo de n8n que lee tus ficheros de dependencias de JavaScript y Python, consul
 
 Descubrir una librería con licencia copyleft al final de un proyecto obliga a reescribir o a renegociar el contrato; detectarlo pronto ahorra días y disgustos.
 
-- Informe de licencias de software para entregar a clientes corporativos…
-- Due diligence técnica previa a una inversión o compraventa de software…
-- Auditoría de cumplimiento open source para startups…
+- Informe de licencias de software para entregar a clientes corporativos.
+- Due diligence técnica previa a una inversión o compraventa de software.
+- Auditoría de cumplimiento open source para startups.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

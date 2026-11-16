@@ -1,4 +1,4 @@
-# Alertas de fallos de la app agrupadas, no una por cada…
+# Alertas de fallos de la app agrupadas, no una por cada
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Simulacro mensual: comprueba que tu copia de seguridad…
+# Simulacro mensual: comprueba que tu copia de seguridad
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

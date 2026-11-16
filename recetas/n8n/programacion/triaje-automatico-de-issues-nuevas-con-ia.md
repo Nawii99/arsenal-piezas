@@ -1,4 +1,4 @@
-# Triaje automático de issues nuevas con IA…
+# Triaje automático de issues nuevas con IA
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

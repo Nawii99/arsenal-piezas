@@ -1,4 +1,4 @@
-# Margen real por pedido de tu tienda online…
+# Margen real por pedido de tu tienda online
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

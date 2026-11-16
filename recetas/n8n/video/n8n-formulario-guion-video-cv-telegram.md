@@ -1,4 +1,4 @@
-# Formulario de cliente a guion de vídeo CV en tu Telegram…
+# Formulario de cliente a guion de vídeo CV en tu Telegram
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Si vendes vídeos currículum y cada encargo empieza con un montón de mensajes 
 
 Ofrece vídeos currículum a quien busca trabajo y cobra por vídeo, [TU PRECIO]. El guion llega a tu Telegram y lo revisas tú antes de enseñárselo al cliente.
 
-- Entrada automática de encargos para un servicio de vídeo currículum…
-- Instalación de flujo de guion para creadores de contenido personal…
-- Mantenimiento mensual del formulario y de las plantillas de guion…
+- Entrada automática de encargos para un servicio de vídeo currículum.
+- Instalación de flujo de guion para creadores de contenido personal.
+- Mantenimiento mensual del formulario y de las plantillas de guion.
 
 **Precio orientativo:** 80–200 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

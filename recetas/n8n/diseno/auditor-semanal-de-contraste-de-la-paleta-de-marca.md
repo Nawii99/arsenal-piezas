@@ -1,4 +1,4 @@
-# Auditor semanal de contraste de la paleta de marca…
+# Auditor semanal de contraste de la paleta de marca
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

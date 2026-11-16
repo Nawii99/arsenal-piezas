@@ -1,4 +1,4 @@
-# Base de conocimiento para que el bot no invente…
+# Base de conocimiento para que el bot no invente
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que convierte documentos desordenados en una base de conocimiento para un
 
 Es el trabajo que separa un bot de juguete de uno que puedes cobrar: la mayoría de proyectos de asistente fallan por la base de conocimiento, no por el modelo.
 
-- Preparación de bases de conocimiento para chatbots de pymes…
-- Limpieza de documentación interna para asistentes de IA…
-- Mantenimiento mensual de la base de conocimiento de un bot…
+- Preparación de bases de conocimiento para chatbots de pymes.
+- Limpieza de documentación interna para asistentes de IA.
+- Mantenimiento mensual de la base de conocimiento de un bot.
 
 **Precio orientativo:** 200–600 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Candidatura lista, tu le das al boton…
+# Candidatura lista, tu le das al boton
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

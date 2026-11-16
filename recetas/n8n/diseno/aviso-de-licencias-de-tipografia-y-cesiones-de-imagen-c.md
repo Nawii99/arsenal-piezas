@@ -1,4 +1,4 @@
-# Aviso de licencias de tipografía y cesiones de imagen c…
+# Aviso de licencias de tipografía y cesiones de imagen c
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando usas fuentes de pago o bancos de imágenes con licencias limitadas por ti
 
 Una reclamación por uso de tipografía fuera de licencia va de 500 a varios miles de euros. Esto la evita y además te permite refacturar renovaciones al cliente.
 
-- Control de licencias de tipografía como servicio para estudios con muchos clientes…
-- Refacturación de renovaciones de licencias a clientes con aviso previo…
-- Auditoría inicial de licencias de activos de marca antes de una entrega…
+- Control de licencias de tipografía como servicio para estudios con muchos clientes.
+- Refacturación de renovaciones de licencias a clientes con aviso previo.
+- Auditoría inicial de licencias de activos de marca antes de una entrega.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Planificar el orden de las escenas antes de montar…
+# Planificar el orden de las escenas antes de montar
 
 **Tipo:** Prompt · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Si tienes los clips grabados pero desordenados y no sabes con qué escena abrir 
 
 Puedes ofrecerlo como guion de montaje a pequeños negocios y creadores que graban pero no saben ordenar. Cobra por vídeo planificado, [TU PRECIO], o incluye el servicio en un paquete de edición.
 
-- Planificación de escenas como servicio de guion de montaje para pequeños negocios…
-- Orden de montaje para creadores que graban pero no saben ordenar sus clips…
-- Paquete de edición que incluye planificación previa del vídeo…
+- Planificación de escenas como servicio de guion de montaje para pequeños negocios.
+- Orden de montaje para creadores que graban pero no saben ordenar sus clips.
+- Paquete de edición que incluye planificación previa del vídeo.
 
 **Precio orientativo:** 10–25 € por vídeo planificado. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

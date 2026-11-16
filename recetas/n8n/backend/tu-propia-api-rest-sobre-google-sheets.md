@@ -1,4 +1,4 @@
-# Tu propia API REST sobre Google Sheets…
+# Tu propia API REST sobre Google Sheets
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Publica tres endpoints (listar, crear y actualizar) que leen y escriben una hoja
 
 Te ahorras un backend a medida (1.500-4.000 € de desarrollo) y su mantenimiento, para proyectos pequeños de hasta unos miles de registros.
 
-- Backend ligero para landings y formularios con datos en hoja, sin servidor propio…
-- Lista de espera o catálogo para pymes conectado a su web en pocos días…
-- Configuración de API sobre hojas para apps no-code como Glide…
+- Backend ligero para landings y formularios con datos en hoja, sin servidor propio.
+- Lista de espera o catálogo para pymes conectado a su web en pocos días.
+- Configuración de API sobre hojas para apps no-code como Glide.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

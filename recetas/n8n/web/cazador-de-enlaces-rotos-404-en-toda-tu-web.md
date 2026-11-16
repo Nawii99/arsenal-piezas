@@ -1,4 +1,4 @@
-# Cazador de enlaces rotos (404) en toda tu web…
+# Cazador de enlaces rotos (404) en toda tu web
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

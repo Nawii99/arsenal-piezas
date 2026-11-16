@@ -1,4 +1,4 @@
-# Plan de demo jugable…
+# Plan de demo jugable
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Te sirve unas semanas antes de lanzar, cuando el juego está casi cerrado y toca
 
 Ofrécelo como servicio de diseño de demo a estudios pequeños que no tienen a nadie para esto. Cobra por demo planificada, [TU PRECIO], y entrega un documento con lo que entra, lo que se corta y cómo termina.
 
-- Planificación de demo jugable para estudios pequeños que no tienen a nadie para ello…
-- Documento de demo con lo que entra, lo que se corta y cómo termina…
-- Revisión de la demo antes de subirla a Steam o itch.io…
+- Planificación de demo jugable para estudios pequeños que no tienen a nadie para ello.
+- Documento de demo con lo que entra, lo que se corta y cómo termina.
+- Revisión de la demo antes de subirla a Steam o itch.io.
 
 **Precio orientativo:** 60–150 € por demo planificada. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

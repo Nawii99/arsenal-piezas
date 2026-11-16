@@ -1,4 +1,4 @@
-# Plan de repaso y retención…
+# Plan de repaso y retención
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que monta un sistema de repaso espaciado y recu
 
 Vender el cuaderno de repaso como extra o como suscripción de acompañamiento alarga el ingreso de un curso que ya tienes hecho.
 
-- Cuadernos de repaso como extra de pago para cursos…
-- Plan de estudio con tarjetas para opositores y estudiantes…
-- Suscripción de acompañamiento con repasos semanales…
+- Cuadernos de repaso como extra de pago para cursos.
+- Plan de estudio con tarjetas para opositores y estudiantes.
+- Suscripción de acompañamiento con repasos semanales.
 
 **Precio orientativo:** 60–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

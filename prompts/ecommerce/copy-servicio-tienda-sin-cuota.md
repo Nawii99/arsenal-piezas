@@ -1,4 +1,4 @@
-# Copy del servicio de montaje de tienda sin cuota…
+# Copy del servicio de montaje de tienda sin cuota
 
 **Tipo:** Prompt · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Vas a publicar tu servicio de montaje de tiendas en tu web, en LinkedIn o en un 
 
 Ese texto es tu escaparate para captar artesanos, infoproductores o tiendas físicas pequeñas que paguen el montaje, cobrado por proyecto [TU PRECIO].
 
-- Redacción de la página de servicio para autónomos que quieren vender online…
-- Textos de anuncios para captar clientes de montaje de tiendas…
-- Paquete de copy para perfil de LinkedIn y publicaciones de un montador de ecommerce…
+- Redacción de la página de servicio para autónomos que quieren vender online.
+- Textos de anuncios para captar clientes de montaje de tiendas.
+- Paquete de copy para perfil de LinkedIn y publicaciones de un montador de ecommerce.
 
 **Precio orientativo:** 60–150 € por texto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

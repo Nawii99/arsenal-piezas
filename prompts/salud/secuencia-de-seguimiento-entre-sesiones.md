@@ -1,4 +1,4 @@
-# Secuencia de seguimiento entre sesiones…
+# Secuencia de seguimiento entre sesiones
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como diseñador de programas de adhe
 
 Si el paciente cumple, ve resultados y termina el plan en vez de abandonarlo a mitad: menos abandonos y más recomendaciones.
 
-- Secuencias de seguimiento entre sesiones para fisioterapia y nutrición…
-- Automatización de recordatorios de ejercicios por WhatsApp…
-- Programa de adherencia para consultas de salud…
+- Secuencias de seguimiento entre sesiones para fisioterapia y nutrición.
+- Automatización de recordatorios de ejercicios por WhatsApp.
+- Programa de adherencia para consultas de salud.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

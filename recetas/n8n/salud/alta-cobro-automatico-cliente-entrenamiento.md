@@ -1,4 +1,4 @@
-# Alta y cobro automatico de cliente de entrenamiento online…
+# Alta y cobro automatico de cliente de entrenamiento online
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

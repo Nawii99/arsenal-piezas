@@ -1,4 +1,4 @@
-# Primeros siete días del alumno, mensaje a mensaje…
+# Primeros siete días del alumno, mensaje a mensaje
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Justo después de configurar la venta del curso, antes de que entre la primera h
 
 La primera semana decide si el alumno termina o pide devolución; un buen arranque baja las devoluciones y sube las reseñas que luego venden solas.
 
-- Secuencias de bienvenida para cursos online…
-- Diseño de arranque para comunidades y mentorías…
-- Reducción de devoluciones con primera semana guiada…
+- Secuencias de bienvenida para cursos online.
+- Diseño de arranque para comunidades y mentorías.
+- Reducción de devoluciones con primera semana guiada.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

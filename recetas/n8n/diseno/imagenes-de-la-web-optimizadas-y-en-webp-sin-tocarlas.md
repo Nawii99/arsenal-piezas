@@ -1,4 +1,4 @@
-# Imágenes de la web optimizadas y en WebP sin tocarlas…
+# Imágenes de la web optimizadas y en WebP sin tocarlas
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

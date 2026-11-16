@@ -1,4 +1,4 @@
-# Propuesta comercial: papeles al día para una consulta…
+# Propuesta comercial: papeles al día para una consulta
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Acabas de entregar la auditoría a una consulta y toca ponerle precio a arreglar
 
 Con ella cierras el servicio de papeles al día: una propuesta con tres paquetes para una consulta pequeña, que cobras por proyecto o con cuota mensual de [TU PRECIO]. La propuesta deja claro que no eres abogado, y todo lo legal lo valida un profesional.
 
-- Propuestas de puesta al día para consultas sanitarias pequeñas, por propuesta…
-- Paquetes de mantenimiento documental para clínicas, por mes…
-- Plantilla de propuesta para consultores de cumplimiento, por venta…
+- Propuestas de puesta al día para consultas sanitarias pequeñas, por propuesta.
+- Paquetes de mantenimiento documental para clínicas, por mes.
+- Plantilla de propuesta para consultores de cumplimiento, por venta.
 
 **Precio orientativo:** 30–80 € por propuesta. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

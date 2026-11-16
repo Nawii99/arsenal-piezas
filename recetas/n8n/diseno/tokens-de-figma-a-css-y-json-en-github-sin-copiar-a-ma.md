@@ -1,4 +1,4 @@
-# Tokens de Figma a CSS y JSON en GitHub, sin copiar a ma…
+# Tokens de Figma a CSS y JSON en GitHub, sin copiar a ma
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando trabajas con un programador y los colores de la marca se desincronizan en
 
 Elimina el «esto no es el azul bueno» de cada revisión: entre 1 y 2 horas por sprint de idas y venidas, y evita rediseñar pantallas ya publicadas.
 
-- Sincronización de tokens de diseño entre Figma y el repositorio del cliente…
-- Mantenimiento mensual del sistema de diseño para equipos de producto…
-- Configuración inicial de tokens como servicio para startups con web propia…
+- Sincronización de tokens de diseño entre Figma y el repositorio del cliente.
+- Mantenimiento mensual del sistema de diseño para equipos de producto.
+- Configuración inicial de tokens como servicio para startups con web propia.
 
 **Precio orientativo:** 200–500 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

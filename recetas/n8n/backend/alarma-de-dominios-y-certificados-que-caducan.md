@@ -1,4 +1,4 @@
-# Alarma de dominios y certificados que caducan…
+# Alarma de dominios y certificados que caducan
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cada semana consulta para cada dominio de una hoja la fecha de caducidad del cer
 
 Un certificado caducado tumba las ventas hasta que alguien se da cuenta. Evita perder un dominio y tener que recomprarlo en subasta por cientos de euros.
 
-- Vigilancia de dominios y certificados para agencias con varias webs de clientes…
-- Servicio de mantenimiento mensual de webs con control de renovaciones…
-- Auditoría de dominios para pymes que han perdido un dominio por descuido…
+- Vigilancia de dominios y certificados para agencias con varias webs de clientes.
+- Servicio de mantenimiento mensual de webs con control de renovaciones.
+- Auditoría de dominios para pymes que han perdido un dominio por descuido.
 
 **Precio orientativo:** 30–90 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Propuesta de formación para empresas…
+# Propuesta de formación para empresas
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que prepara una propuesta de formación in-comp
 
 Formar a empresas se paga por jornada y por grupo, no por alumno: una sola propuesta aceptada vale por muchas ventas sueltas.
 
-- Propuestas de formación a medida para empresas y asociaciones…
-- Preparación de reuniones de detección de necesidades para consultores…
-- Programas in-company por jornada para autónomos formadores…
+- Propuestas de formación a medida para empresas y asociaciones.
+- Preparación de reuniones de detección de necesidades para consultores.
+- Programas in-company por jornada para autónomos formadores.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

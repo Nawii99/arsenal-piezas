@@ -1,4 +1,4 @@
-# Detector de fotos duplicadas y casi iguales…
+# Detector de fotos duplicadas y casi iguales
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

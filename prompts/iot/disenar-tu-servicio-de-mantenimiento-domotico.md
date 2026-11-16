@@ -1,4 +1,4 @@
-# Diseñar tu servicio de mantenimiento domótico…
+# Diseñar tu servicio de mantenimiento domótico
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando ya tengas varios clientes con instalaciones y quieras ingresos que se rep
 
 Es la vía más directa para pasar de cobrar por instalación a cobrar todos los meses, que es lo que da estabilidad al negocio.
 
-- Diseño de planes de mantenimiento por niveles…
-- Consultoría para pasar de proyecto a servicio recurrente…
-- Condiciones de servicio y SLA sencillos para instaladores…
+- Diseño de planes de mantenimiento por niveles.
+- Consultoría para pasar de proyecto a servicio recurrente.
+- Condiciones de servicio y SLA sencillos para instaladores.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

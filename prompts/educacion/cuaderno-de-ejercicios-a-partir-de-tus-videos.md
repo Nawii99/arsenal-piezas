@@ -1,4 +1,4 @@
-# Cuaderno de ejercicios a partir de tus vídeos…
+# Cuaderno de ejercicios a partir de tus vídeos
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando ya tengas el contenido grabado o escrito y quieras un material entregable
 
 Te permite subir el precio del curso o vender el cuaderno como producto aparte, y reduce las dudas repetidas porque el alumno practica guiado.
 
-- Cuadernos de ejercicios a partir de cursos en vídeo…
-- Material complementario descargable para academias…
-- Cuaderno vendido como producto independiente…
+- Cuadernos de ejercicios a partir de cursos en vídeo.
+- Material complementario descargable para academias.
+- Cuaderno vendido como producto independiente.
 
 **Precio orientativo:** 120–380 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

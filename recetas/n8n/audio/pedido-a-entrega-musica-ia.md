@@ -1,4 +1,4 @@
-# De pedido a entrega en un servicio de música con IA…
+# De pedido a entrega en un servicio de música con IA
 
 **Tipo:** Receta de automatización · **Área:** Música y audio · **Licencia:** CC BY 4.0
 
@@ -21,11 +21,11 @@ Automatiza el cobro y la entrega, pero deja la generación del audio en manos de
 
 ## Cómo ganar dinero con ella
 
-n8n + Stripe + Google Drive + Gmail + Google Sheets…
+n8n + Stripe + Google Drive + Gmail + Google Sheets.
 
-- Venta y entrega de canciones personalizadas con cobro automático…
-- Pedidos de pistas separadas para estudios que trabajan por encargo…
-- Gestión de encargos de doblaje musical para agencias pequeñas…
+- Venta y entrega de canciones personalizadas con cobro automático.
+- Pedidos de pistas separadas para estudios que trabajan por encargo.
+- Gestión de encargos de doblaje musical para agencias pequeñas.
 
 **Precio orientativo:** 200–350 € por montaje. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

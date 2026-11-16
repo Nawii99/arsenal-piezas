@@ -1,4 +1,4 @@
-# Alarma de bajas de suscripción con rescate automático…
+# Alarma de bajas de suscripción con rescate automático
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

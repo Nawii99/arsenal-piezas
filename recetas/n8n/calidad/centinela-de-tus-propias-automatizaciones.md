@@ -1,4 +1,4 @@
-# Centinela de tus propias automatizaciones…
+# Centinela de tus propias automatizaciones
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Copys de permisos: notificaciones, ubicación y cámara…
+# Copys de permisos: notificaciones, ubicación y cámara
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como especialista en copy móvil y normas de App Store y Googl
 
 Si la gente bloquea las notificaciones, pierdes el canal gratis para hacerles volver y tienes que pagar anuncios para recordarles que existes.
 
-- Textos de permisos y pantallas de aviso previo para apps…
-- Revisión de tasa de aceptación de permisos con propuestas…
-- Microcopy de apps listo para entregar al programador…
+- Textos de permisos y pantallas de aviso previo para apps.
+- Revisión de tasa de aceptación de permisos con propuestas.
+- Microcopy de apps listo para entregar al programador.
 
 **Precio orientativo:** 60–180 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

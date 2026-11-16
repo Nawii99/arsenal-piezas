@@ -1,4 +1,4 @@
-# Lista de espera que llena los huecos de clases cancelad…
+# Lista de espera que llena los huecos de clases cancelad
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

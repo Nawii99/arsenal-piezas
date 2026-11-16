@@ -1,4 +1,4 @@
-# Rematar el día dentro de mis macros…
+# Rematar el día dentro de mis macros
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

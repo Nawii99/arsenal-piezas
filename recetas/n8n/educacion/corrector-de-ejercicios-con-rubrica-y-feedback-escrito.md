@@ -1,4 +1,4 @@
-# Corrector de ejercicios con rúbrica y feedback escrito…
+# Corrector de ejercicios con rúbrica y feedback escrito
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

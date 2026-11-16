@@ -1,4 +1,4 @@
-# Vigilancia de tus palabras clave en las tiendas de apps…
+# Vigilancia de tus palabras clave en las tiendas de apps
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Receta de n8n que cada lunes busca tus palabras clave en Google Play y en App St
 
 Sustituye herramientas de ASO de 30-80 € al mes. Y ver que caes en una palabra clave a tiempo evita meses de descargas perdidas.
 
-- Seguimiento de posición en tienda para una app de reservas de un local…
-- Informe ASO mensual para clientes que publican apps…
-- Comparativa de palabras clave frente a competidores para decidir el título…
+- Seguimiento de posición en tienda para una app de reservas de un local.
+- Informe ASO mensual para clientes que publican apps.
+- Comparativa de palabras clave frente a competidores para decidir el título.
 
 **Precio orientativo:** 120–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

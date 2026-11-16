@@ -1,4 +1,4 @@
-# Presupuesto y condiciones para un encargo 3D…
+# Presupuesto y condiciones para un encargo 3D
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando un cliente te pida un modelo, una animación o una visualización 3D y te
 
 Cerrar el alcance y limitar las revisiones es lo que separa un encargo rentable de uno que te come el mes; también sube el precio medio de tus trabajos.
 
-- Redacción de presupuestos y propuestas de trabajos 3D…
-- Plantilla de condiciones y revisiones para freelance 3D…
-- Cierre de alcance de encargos de modelado y animación…
+- Redacción de presupuestos y propuestas de trabajos 3D.
+- Plantilla de condiciones y revisiones para freelance 3D.
+- Cierre de alcance de encargos de modelado y animación.
 
 **Precio orientativo:** 60–180 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

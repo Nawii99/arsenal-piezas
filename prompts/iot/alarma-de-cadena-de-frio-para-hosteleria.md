@@ -1,4 +1,4 @@
-# Alarma de cadena de frío para hostelería…
+# Alarma de cadena de frío para hostelería
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que diseña el aviso de temperatura de neveras y cámaras de hostelería:
 
 Una sola noche de cámara averiada detectada a tiempo evita tirar producto; además deja el registro de temperaturas que te piden en los controles de higiene.
 
-- Alarma de cadena de frío para bares y restaurantes…
-- Registro digital de temperaturas para autocontrol…
-- Mantenimiento mensual de sondas y avisos…
+- Alarma de cadena de frío para bares y restaurantes.
+- Registro digital de temperaturas para autocontrol.
+- Mantenimiento mensual de sondas y avisos.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

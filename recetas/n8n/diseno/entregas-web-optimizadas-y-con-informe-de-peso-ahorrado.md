@@ -1,4 +1,4 @@
-# Entregas web optimizadas y con informe de peso ahorrado…
+# Entregas web optimizadas y con informe de peso ahorrado
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando entregas gráficos para web o tienda online y el desarrollador se queja d
 
 Evita la ronda de correcciones por rendimiento (1-2 horas) y te da un argumento comercial medible para vender la optimización como partida aparte.
 
-- Optimización de imágenes como partida aparte en cada entrega para web…
-- Auditoría de peso de gráficos para tiendas online con informe incluido…
-- Mantenimiento trimestral de activos visuales para webs de clientes…
+- Optimización de imágenes como partida aparte en cada entrega para web.
+- Auditoría de peso de gráficos para tiendas online con informe incluido.
+- Mantenimiento trimestral de activos visuales para webs de clientes.
 
 **Precio orientativo:** 40–120 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

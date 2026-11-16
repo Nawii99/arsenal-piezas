@@ -1,4 +1,4 @@
-# subida-de-precios-cartera…
+# subida-de-precios-cartera
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que calcula cuánto puedes subir precios a tus 
 
 Una subida bien calculada y bien comunicada aumenta el margen sobre el trabajo que ya haces, sin captar un solo cliente nuevo.
 
-- Plan de subida de precios para negocios de servicios…
-- Redacción de comunicaciones de cambio de tarifa…
-- Consultoría de precios para pequeños negocios…
+- Plan de subida de precios para negocios de servicios.
+- Redacción de comunicaciones de cambio de tarifa.
+- Consultoría de precios para pequeños negocios.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Detector de uso no autorizado de tus fotos…
+# Detector de uso no autorizado de tus fotos
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

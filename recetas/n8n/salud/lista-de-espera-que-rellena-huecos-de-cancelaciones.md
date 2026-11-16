@@ -1,4 +1,4 @@
-# Lista de espera que rellena huecos de cancelaciones…
+# Lista de espera que rellena huecos de cancelaciones
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

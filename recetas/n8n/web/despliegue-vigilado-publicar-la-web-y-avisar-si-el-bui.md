@@ -1,4 +1,4 @@
-# Despliegue vigilado: publicar la web y avisar si el bui…
+# Despliegue vigilado: publicar la web y avisar si el bui
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

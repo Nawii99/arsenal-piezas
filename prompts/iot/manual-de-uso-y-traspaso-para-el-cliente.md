@@ -1,4 +1,4 @@
-# Manual de uso y traspaso para el cliente…
+# Manual de uso y traspaso para el cliente
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando termines una instalación y quieras que el cliente sepa usarla sin llamar
 
 Menos llamadas de soporte gratis y una entrega con aspecto profesional que justifica cobrar más por el mismo trabajo.
 
-- Manuales de usuario de una hoja para clientes de domótica…
-- Carteles de instrucciones para alquileres turísticos…
-- Ficha técnica de accesos para instalaciones entregadas…
+- Manuales de usuario de una hoja para clientes de domótica.
+- Carteles de instrucciones para alquileres turísticos.
+- Ficha técnica de accesos para instalaciones entregadas.
 
 **Precio orientativo:** 30–100 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

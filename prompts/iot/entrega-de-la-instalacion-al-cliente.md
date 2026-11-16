@@ -1,4 +1,4 @@
-# Entrega de la instalación al cliente…
+# Entrega de la instalación al cliente
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que prepara el paquete de entrega de una instalación: manual de una hoja
 
 Reduce las llamadas de soporte no cobradas, evita discusiones sobre lo que estaba o no incluido, y hace que te recomienden por lo profesional de la entrega.
 
-- Documentación de entrega para instaladores autónomos…
-- Manuales de usuario de una hoja para clientes…
-- Actas de entrega y garantías para instalaciones domóticas…
+- Documentación de entrega para instaladores autónomos.
+- Manuales de usuario de una hoja para clientes.
+- Actas de entrega y garantías para instalaciones domóticas.
 
 **Precio orientativo:** 40–120 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

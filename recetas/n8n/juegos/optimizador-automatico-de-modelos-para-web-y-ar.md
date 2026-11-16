@@ -1,4 +1,4 @@
-# Optimizador automático de modelos para web y AR…
+# Optimizador automático de modelos para web y AR
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

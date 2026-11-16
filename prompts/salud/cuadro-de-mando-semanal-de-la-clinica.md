@@ -1,4 +1,4 @@
-# Cuadro de mando semanal de la clínica…
+# Cuadro de mando semanal de la clínica
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando trabajas muchísimo pero no sabes si el centro va bien, ni dónde se est�
 
 Ver la ocupación real y el valor por hora te enseña qué servicios y qué franjas mantienen el negocio y cuáles te cuestan dinero.
 
-- Cuadro de mando semanal en hoja de cálculo para clínicas pequeñas…
-- Informe mensual de ocupación y rentabilidad por servicio…
-- Asesoría ligera de números para centros de bienestar…
+- Cuadro de mando semanal en hoja de cálculo para clínicas pequeñas.
+- Informe mensual de ocupación y rentabilidad por servicio.
+- Asesoría ligera de números para centros de bienestar.
 
 **Precio orientativo:** 100–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Recordatorio de cita por email el día antes, con n8n…
+# Recordatorio de cita por email el día antes, con n8n
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Tus pacientes faltan sin avisar y quieres que la víspera reciban un email con h
 
 Instálalo en consultas pequeñas que ya apuntan las citas en Google Calendar y cobra la puesta en marcha y un mantenimiento mensual a [TU PRECIO]. Antes de usarlo con pacientes reales, un profesional de protección de datos revisa la cuenta de Google y el tratamiento.
 
-- Instalación de recordatorios para fisioterapia y dental pequeños, por instalación…
-- Cuota mensual de mantenimiento del envío y de la agenda, por mes…
-- Adaptación del aviso para cada centro, por configuración…
+- Instalación de recordatorios para fisioterapia y dental pequeños, por instalación.
+- Cuota mensual de mantenimiento del envío y de la agenda, por mes.
+- Adaptación del aviso para cada centro, por configuración.
 
 **Precio orientativo:** 150–300 € puesta en marcha. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

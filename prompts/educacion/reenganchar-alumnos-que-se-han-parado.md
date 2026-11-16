@@ -1,4 +1,4 @@
-# Reenganchar alumnos que se han parado…
+# Reenganchar alumnos que se han parado
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que diagnostica por qué abandonan los alumnos 
 
 Alumnos que terminan son los que repiten, te recomiendan y te dejan testimonios: recuperarlos vale más que buscar clientes nuevos.
 
-- Campañas de reenganche de alumnos para academias online…
-- Auditoría del abandono por módulo con plan de mejora…
-- Secuencias de mensajes de recuperación para infoproductores…
+- Campañas de reenganche de alumnos para academias online.
+- Auditoría del abandono por módulo con plan de mejora.
+- Secuencias de mensajes de recuperación para infoproductores.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

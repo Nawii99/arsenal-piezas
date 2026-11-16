@@ -1,4 +1,4 @@
-# Guion de las capturas de la tienda…
+# Guion de las capturas de la tienda
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que diseña el guion de las seis capturas de la
 
 Las capturas son lo que más mueve la conversión de la ficha: mejorarlas sube descargas sin gastar un euro en publicidad.
 
-- Diseño de capturas de tienda para desarrolladores…
-- Pack de imágenes de ficha para apps de negocios…
-- Mejora de conversión de fichas con pocas descargas…
+- Diseño de capturas de tienda para desarrolladores.
+- Pack de imágenes de ficha para apps de negocios.
+- Mejora de conversión de fichas con pocas descargas.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

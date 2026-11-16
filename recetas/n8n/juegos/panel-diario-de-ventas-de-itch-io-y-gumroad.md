@@ -1,4 +1,4 @@
-# Panel diario de ventas de itch.io y Gumroad…
+# Panel diario de ventas de itch.io y Gumroad
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

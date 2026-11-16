@@ -1,4 +1,4 @@
-# Copia de seguridad 3-2-1 de tus sesiones con verificaci…
+# Copia de seguridad 3-2-1 de tus sesiones con verificaci
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

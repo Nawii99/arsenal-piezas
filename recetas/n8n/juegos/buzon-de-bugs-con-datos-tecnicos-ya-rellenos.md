@@ -1,4 +1,4 @@
-# Buzón de bugs con datos técnicos ya rellenos…
+# Buzón de bugs con datos técnicos ya rellenos
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

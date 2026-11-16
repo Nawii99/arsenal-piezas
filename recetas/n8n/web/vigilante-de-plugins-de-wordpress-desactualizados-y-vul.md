@@ -1,4 +1,4 @@
-# Vigilante de plugins de WordPress desactualizados y vul…
+# Vigilante de plugins de WordPress desactualizados y vul
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Confirmación automática de pedido de Stripe sin plataforma d…
+# Confirmación automática de pedido de Stripe sin plataforma d
 
 **Tipo:** Receta de automatización · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Onboarding de app: las 3 primeras pantallas…
+# Onboarding de app: las 3 primeras pantallas
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como diseñador de producto móvil especializado en activació
 
 Cada usuario que llega a completar la primera acción útil es un usuario que puede pagar; arreglar el arranque suele costar unas horas de texto y pantallas, no otra app.
 
-- Rediseño del onboarding de apps con textos y pantallas…
-- Auditoría del primer uso para apps con alta pérdida inicial…
-- Pack de pantallas de bienvenida para apps hechas con no-code…
+- Rediseño del onboarding de apps con textos y pantallas.
+- Auditoría del primer uso para apps con alta pérdida inicial.
+- Pack de pantallas de bienvenida para apps hechas con no-code.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

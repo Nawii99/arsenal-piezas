@@ -1,4 +1,4 @@
-# Vigía de la competencia y de lanzamientos en tu género…
+# Vigía de la competencia y de lanzamientos en tu género
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

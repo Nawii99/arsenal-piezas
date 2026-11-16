@@ -1,4 +1,4 @@
-# Imágenes de la web a WebP con texto alternativo SEO…
+# Imágenes de la web a WebP con texto alternativo SEO
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

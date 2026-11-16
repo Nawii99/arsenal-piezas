@@ -1,4 +1,4 @@
-# Reubicación de sesiones al aire libre por tiempo o pole…
+# Reubicación de sesiones al aire libre por tiempo o pole
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

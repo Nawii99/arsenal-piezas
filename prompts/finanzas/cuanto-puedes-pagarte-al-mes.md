@@ -1,4 +1,4 @@
-# Cuánto puedes pagarte al mes…
+# Cuánto puedes pagarte al mes
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como asesor de finanzas de negocio para autónomos y socios. R
 
 Fijar una retirada estable evita gastarte el dinero del IVA y tener que devolverlo con recargos, y te da un sueldo previsible.
 
-- Plan de sueldo estable y reparto de caja para autónomos…
-- Sistema de cuentas separadas para IVA, impuestos y colchón…
-- Asesoría puntual de retirada de dinero para socios de pymes…
+- Plan de sueldo estable y reparto de caja para autónomos.
+- Sistema de cuentas separadas para IVA, impuestos y colchón.
+- Asesoría puntual de retirada de dinero para socios de pymes.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

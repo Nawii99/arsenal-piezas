@@ -1,4 +1,4 @@
-# Aviso de bonos a punto de agotarse o caducar…
+# Aviso de bonos a punto de agotarse o caducar
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

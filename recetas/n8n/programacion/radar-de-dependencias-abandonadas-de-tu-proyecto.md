@@ -1,4 +1,4 @@
-# Radar de dependencias abandonadas de tu proyecto…
+# Radar de dependencias abandonadas de tu proyecto
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Flujo de n8n semanal que lee el package.json de tus repositorios y consulta en e
 
 Evita migraciones de urgencia: detectar una librería abandonada con meses de margen te ahorra entre 1 y 3 días de trabajo de reescritura a contrarreloj.
 
-- Revisión de salud de dependencias para clientes con proyectos en producción…
-- Auditoría de mantenimiento previa a la entrega de software a medida…
-- Servicio mensual de mantenimiento técnico con informe de librerías en riesgo…
+- Revisión de salud de dependencias para clientes con proyectos en producción.
+- Auditoría de mantenimiento previa a la entrega de software a medida.
+- Servicio mensual de mantenimiento técnico con informe de librerías en riesgo.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

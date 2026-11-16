@@ -1,4 +1,4 @@
-# Del formulario de encargo al pack entregado por correo, con…
+# Del formulario de encargo al pack entregado por correo, con
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Te llegan pedidos de packs de materiales y quieres que el cliente rellene un for
 
 Es el flujo de tu servicio de packs educativos: el cliente paga, la IA hace el borrador y tú lo revisas antes de enviarlo, a [TU PRECIO] por pack. Nada sale al cliente sin pasar por ti.
 
-- Flujo de pedidos de packs para academias y profesores, por instalación…
-- Mantenimiento mensual del flujo de encargos y su revisión, por cuota…
-- Formación a un centro pequeño para revisar borradores, por sesión…
+- Flujo de pedidos de packs para academias y profesores, por instalación.
+- Mantenimiento mensual del flujo de encargos y su revisión, por cuota.
+- Formación a un centro pequeño para revisar borradores, por sesión.
 
 **Precio orientativo:** 150–350 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

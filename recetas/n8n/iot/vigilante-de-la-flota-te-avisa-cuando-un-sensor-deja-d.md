@@ -1,4 +1,4 @@
-# Vigilante de la flota: te avisa cuando un sensor deja d…
+# Vigilante de la flota: te avisa cuando un sensor deja d
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

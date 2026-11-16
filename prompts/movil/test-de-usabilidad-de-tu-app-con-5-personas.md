@@ -1,4 +1,4 @@
-# Test de usabilidad de tu app con 5 personas…
+# Test de usabilidad de tu app con 5 personas
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Antes de lanzar, después de un rediseño, o cuando la gente entra en tu app y n
 
 Detecta antes de gastar en publicidad los puntos donde la gente se atasca y abandona; arreglar tres pantallas suele valer más que doblar el presupuesto de anuncios.
 
-- Test de usabilidad con cinco personas e informe de arreglos…
-- Guion y material de sesiones para equipos sin investigador…
-- Revisión de usabilidad tras un rediseño de la app…
+- Test de usabilidad con cinco personas e informe de arreglos.
+- Guion y material de sesiones para equipos sin investigador.
+- Revisión de usabilidad tras un rediseño de la app.
 
 **Precio orientativo:** 250–700 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

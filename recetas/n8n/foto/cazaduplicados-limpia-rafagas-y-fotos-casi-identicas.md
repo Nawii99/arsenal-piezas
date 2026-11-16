@@ -1,4 +1,4 @@
-# Cazaduplicados: limpia ráfagas y fotos casi idénticas…
+# Cazaduplicados: limpia ráfagas y fotos casi idénticas
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

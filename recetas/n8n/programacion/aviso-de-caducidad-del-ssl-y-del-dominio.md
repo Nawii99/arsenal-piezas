@@ -1,4 +1,4 @@
-# Aviso de caducidad del SSL y del dominio…
+# Aviso de caducidad del SSL y del dominio
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando gestiones dominios y certificados de varios clientes y ya te haya pasado 
 
 Una web con SSL caducado pierde el 100% de sus visitas ese día y quema tu reputación. Renovar a tiempo cuesta 0 € en atención.
 
-- Control de dominios y certificados como servicio mensual para agencias…
-- Revisión de renovaciones para clientes con webs en varios proveedores…
-- Auditoría inicial de dominios y certificados antes de un traspaso de web…
+- Control de dominios y certificados como servicio mensual para agencias.
+- Revisión de renovaciones para clientes con webs en varios proveedores.
+- Auditoría inicial de dominios y certificados antes de un traspaso de web.
 
 **Precio orientativo:** 40–100 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

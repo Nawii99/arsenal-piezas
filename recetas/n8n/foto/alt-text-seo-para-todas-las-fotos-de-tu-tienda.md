@@ -1,4 +1,4 @@
-# Alt text SEO para todas las fotos de tu tienda…
+# Alt text SEO para todas las fotos de tu tienda
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Arreglar un prompt que da resultados irregulares…
+# Arreglar un prompt que da resultados irregulares
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que depura otro prompt que da resultados irregulares. Entran el prompt ac
 
 Convierte un prompt que te obliga a repetir 4 intentos en uno que sale a la primera, lo que se nota en horas y en gasto de la herramienta.
 
-- Depuración de prompts de uso diario para equipos pequeños…
-- Servicio de mejora de prompts para negocios…
-- Biblioteca de prompts estables entregada a un cliente…
+- Depuración de prompts de uso diario para equipos pequeños.
+- Servicio de mejora de prompts para negocios.
+- Biblioteca de prompts estables entregada a un cliente.
 
 **Precio orientativo:** 40–150 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

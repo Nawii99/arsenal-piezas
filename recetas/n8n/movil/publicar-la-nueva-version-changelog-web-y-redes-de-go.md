@@ -1,4 +1,4 @@
-# Publicar la nueva versión: changelog, web y redes de go…
+# Publicar la nueva versión: changelog, web y redes de go
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Push programadas por segmento desde una hoja de cálculo…
+# Push programadas por segmento desde una hoja de cálculo
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

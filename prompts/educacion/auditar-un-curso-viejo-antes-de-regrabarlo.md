@@ -1,4 +1,4 @@
-# Auditar un curso viejo antes de regrabarlo…
+# Auditar un curso viejo antes de regrabarlo
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que audita un curso grabado lección por lecci�
 
 Evita regrabar horas de vídeo que no hacía falta tocar y te permite volver a vender un curso viejo como versión actualizada.
 
-- Auditoría y plan de actualización de cursos para infoproductores…
-- Relanzamiento de cursos antiguos como nueva edición…
-- Revisión de catálogo formativo para academias…
+- Auditoría y plan de actualización de cursos para infoproductores.
+- Relanzamiento de cursos antiguos como nueva edición.
+- Revisión de catálogo formativo para academias.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

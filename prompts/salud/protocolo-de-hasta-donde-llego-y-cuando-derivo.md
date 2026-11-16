@@ -1,4 +1,4 @@
-# Protocolo de hasta dónde llego y cuándo derivo…
+# Protocolo de hasta dónde llego y cuándo derivo
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como asesor de buenas prácticas pro
 
 Evita el problema caro (una reclamación, un caso que se te va de las manos) y hace que las derivaciones te construyan una red de profesionales que también te manda gente.
 
-- Protocolo de límites y derivación para entrenadores y terapeutas…
-- Guiones de derivación sin invadir competencias sanitarias…
-- Documento de ámbito de actuación para profesionales del bienestar…
+- Protocolo de límites y derivación para entrenadores y terapeutas.
+- Guiones de derivación sin invadir competencias sanitarias.
+- Documento de ámbito de actuación para profesionales del bienestar.
 
 **Precio orientativo:** 80–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

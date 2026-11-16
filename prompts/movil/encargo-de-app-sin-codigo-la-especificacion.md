@@ -1,4 +1,4 @@
-# Encargo de app sin código: la especificación…
+# Encargo de app sin código: la especificación
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Antes de pedir presupuesto, antes de sentarte con Bubble, FlutterFlow o Glide, o
 
 Un encargo mal definido se paga dos veces: con esta especificación pides presupuestos comparables y evitas los extras por cambios a mitad del trabajo.
 
-- Especificación de app lista para pedir presupuestos…
-- Documento funcional para proyectos no-code…
-- Traducción de ideas de negocio a requisitos para desarrolladores…
+- Especificación de app lista para pedir presupuestos.
+- Documento funcional para proyectos no-code.
+- Traducción de ideas de negocio a requisitos para desarrolladores.
 
 **Precio orientativo:** 200–600 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

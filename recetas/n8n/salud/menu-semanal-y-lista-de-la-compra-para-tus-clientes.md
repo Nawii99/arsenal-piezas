@@ -1,4 +1,4 @@
-# Menú semanal y lista de la compra para tus clientes…
+# Menú semanal y lista de la compra para tus clientes
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

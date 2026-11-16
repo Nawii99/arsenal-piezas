@@ -1,4 +1,4 @@
-# Fábrica de enlaces de campaña con QR y conteo de clics…
+# Fábrica de enlaces de campaña con QR y conteo de clics
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando repartes carteles, flyers o enlaces en redes para que instalen tu app y n
 
 Evita pagar 20-30 €/mes de un acortador con analítica y te dice qué canal desperdicia presupuesto, que suele valer bastante más que la herramienta.
 
-- Seguimiento de carteles y flyers para captar descargas de una app…
-- Medición de canales de captación para una app en ferias y eventos…
-- Pack de QR y enlaces para campañas de una marca con varias tiendas…
+- Seguimiento de carteles y flyers para captar descargas de una app.
+- Medición de canales de captación para una app en ferias y eventos.
+- Pack de QR y enlaces para campañas de una marca con varias tiendas.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

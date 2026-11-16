@@ -1,4 +1,4 @@
-# Plan a prueba de fallos: sin luz y sin internet…
+# Plan a prueba de fallos: sin luz y sin internet
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que rediseña una instalación domótica para que siga siendo utilizable 
 
 Evita pérdidas por paradas (frío, riego, acceso, alarmas) y es un argumento de venta claro frente a instaladores que solo montan aparatos.
 
-- Rediseño de instalaciones para que funcionen sin internet…
-- Auditoría de continuidad en cerraduras y luces conectadas…
-- Plan de contingencia para alquileres turísticos…
+- Rediseño de instalaciones para que funcionen sin internet.
+- Auditoría de continuidad en cerraduras y luces conectadas.
+- Plan de contingencia para alquileres turísticos.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

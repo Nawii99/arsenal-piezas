@@ -1,4 +1,4 @@
-# Recordatorios de clase por email y WhatsApp…
+# Recordatorios de clase por email y WhatsApp
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

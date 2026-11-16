@@ -1,4 +1,4 @@
-# Vigilante de marca en internet…
+# Vigilante de marca en internet
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cada mañana lee los avisos de Google Alerts en RSS con el nombre de tu marca y 
 
 Reemplaza suscripciones tipo Mention o Brand24 (50-90 €/mes). Coste: 0 € más unos céntimos al día en el resumen con IA.
 
-- Vigilancia de marca para diseñadores que venden identidad a sus clientes…
-- Monitorización de copias y usos de logo para estudios creativos con informe mensual…
-- Configuración de alertas de marca para pymes que quieren evitar herramientas de pago…
+- Vigilancia de marca para diseñadores que venden identidad a sus clientes.
+- Monitorización de copias y usos de logo para estudios creativos con informe mensual.
+- Configuración de alertas de marca para pymes que quieren evitar herramientas de pago.
 
 **Precio orientativo:** 40–120 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

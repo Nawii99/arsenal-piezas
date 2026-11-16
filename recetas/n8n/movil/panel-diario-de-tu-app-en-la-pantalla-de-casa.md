@@ -1,4 +1,4 @@
-# Panel diario de tu app en la pantalla de casa…
+# Panel diario de tu app en la pantalla de casa
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

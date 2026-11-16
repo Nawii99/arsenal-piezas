@@ -1,4 +1,4 @@
-# Recobro de facturas impagadas…
+# Recobro de facturas impagadas
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como gestor de cobros para pymes y autónomos españoles. Reci
 
 Cobrar antes lo que ya has facturado mete dinero real en la cuenta y evita tener que financiar el negocio con tu propio bolsillo.
 
-- Gestión de reclamación amistosa de facturas para autónomos…
-- Pack de mensajes y calendario de recobro para pymes…
-- Protocolo de cobros y seguimiento de impagados por suscripción mensual…
+- Gestión de reclamación amistosa de facturas para autónomos.
+- Pack de mensajes y calendario de recobro para pymes.
+- Protocolo de cobros y seguimiento de impagados por suscripción mensual.
 
 **Precio orientativo:** 60–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

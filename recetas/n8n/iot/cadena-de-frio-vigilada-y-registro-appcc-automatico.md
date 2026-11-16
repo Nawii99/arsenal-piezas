@@ -1,4 +1,4 @@
-# Cadena de frío vigilada y registro APPCC automático…
+# Cadena de frío vigilada y registro APPCC automático
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

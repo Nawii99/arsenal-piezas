@@ -1,4 +1,4 @@
-# Bugs de Discord a GitHub sin duplicados…
+# Bugs de Discord a GitHub sin duplicados
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

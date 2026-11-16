@@ -1,4 +1,4 @@
-# Banco de ideas sacado de los comentarios de tus vídeos…
+# Banco de ideas sacado de los comentarios de tus vídeos
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

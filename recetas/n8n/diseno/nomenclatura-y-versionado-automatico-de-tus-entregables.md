@@ -1,4 +1,4 @@
-# Nomenclatura y versionado automático de tus entregables…
+# Nomenclatura y versionado automático de tus entregables
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tienes ochenta archivos llamados «logo_final_final_v2_BUENO» y pierdes 
 
 Recupera los 10-15 minutos diarios de buscar archivos y evita el error caro de mandar a imprenta una versión antigua.
 
-- Gestión documental de entregables para estudios con muchos clientes…
-- Organización de archivos para equipos creativos con revisiones frecuentes…
-- Plantilla de nomenclatura y control de versiones para imprentas y agencias…
+- Gestión documental de entregables para estudios con muchos clientes.
+- Organización de archivos para equipos creativos con revisiones frecuentes.
+- Plantilla de nomenclatura y control de versiones para imprentas y agencias.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Zapier: del blog a una cola de posts para redes…
+# Zapier: del blog a una cola de posts para redes
 
 **Tipo:** Receta de automatización · **Área:** Contenido · **Licencia:** CC BY 4.0
 

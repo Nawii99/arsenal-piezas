@@ -1,4 +1,4 @@
-# Alta de alumno automática de la A a la Z…
+# Alta de alumno automática de la A a la Z
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

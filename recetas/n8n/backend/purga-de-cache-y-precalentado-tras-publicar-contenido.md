@@ -1,4 +1,4 @@
-# Purga de caché y precalentado tras publicar contenido…
+# Purga de caché y precalentado tras publicar contenido
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando publicas cambios y los clientes siguen viendo lo viejo, o purgas toda la 
 
 Purgar solo lo que cambia mantiene la web rápida siempre; una caché vaciada entera te dispara la carga del servidor y la tasa de rebote.
 
-- Mantenimiento de caché para tiendas online con actualizaciones de catálogo frecuentes…
-- Configuración de purga selectiva para webs de contenido de agencias…
-- Optimización de rendimiento tras publicar cambios para pymes con CDN…
+- Mantenimiento de caché para tiendas online con actualizaciones de catálogo frecuentes.
+- Configuración de purga selectiva para webs de contenido de agencias.
+- Optimización de rendimiento tras publicar cambios para pymes con CDN.
 
 **Precio orientativo:** 100–250 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Detector de trabajos y colas atascadas con reinicio aut…
+# Detector de trabajos y colas atascadas con reinicio aut
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

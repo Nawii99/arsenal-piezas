@@ -1,4 +1,4 @@
-# Termostato que se adelanta al tiempo y a tu horario…
+# Termostato que se adelanta al tiempo y a tu horario
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

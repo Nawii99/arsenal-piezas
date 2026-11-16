@@ -1,4 +1,4 @@
-# Punto muerto en vivo: qué día del mes dejas de trabajar…
+# Punto muerto en vivo: qué día del mes dejas de trabajar
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando facturas y facturas pero no sabes si vas bien o mal el mes. Ideal a mitad
 
 Saber que vas 3.000 € por debajo el día 12 te da 18 días para reaccionar. Reaccionar el día 30 no sirve de nada.
 
-- Panel de punto muerto para tiendas, talleres y consultas con costes fijos claros…
-- Seguimiento semanal de ventas para pymes que quieren decidir a mitad de mes…
-- Configuración de métricas de negocio para autónomos que empiezan a escalar…
+- Panel de punto muerto para tiendas, talleres y consultas con costes fijos claros.
+- Seguimiento semanal de ventas para pymes que quieren decidir a mitad de mes.
+- Configuración de métricas de negocio para autónomos que empiezan a escalar.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

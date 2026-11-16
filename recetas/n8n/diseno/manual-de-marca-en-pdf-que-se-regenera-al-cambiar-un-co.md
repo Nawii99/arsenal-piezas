@@ -1,4 +1,4 @@
-# Manual de marca en PDF que se regenera al cambiar un co…
+# Manual de marca en PDF que se regenera al cambiar un co
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando entregas manuales de identidad que luego evolucionan y acabas con tres PD
 
 Cada actualización del manual son 2-4 horas de maquetación. Con dos actualizaciones al año por cliente y cinco clientes, son 30 horas al año.
 
-- Mantenimiento anual de manuales de marca con actualización incluida…
-- Plantilla de manual reutilizable para estudios con varios clientes…
-- Control de versiones de identidad para empresas que cambian colores o normas…
+- Mantenimiento anual de manuales de marca con actualización incluida.
+- Plantilla de manual reutilizable para estudios con varios clientes.
+- Control de versiones de identidad para empresas que cambian colores o normas.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

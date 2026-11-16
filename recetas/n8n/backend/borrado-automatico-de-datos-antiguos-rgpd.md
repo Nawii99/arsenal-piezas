@@ -24,9 +24,9 @@ Aplica tu política de conservación cada mes: anonimiza o borra leads sin compr
 
 Reduce el riesgo de sanción (las leves ya parten de miles de euros) y evita 3-5 horas trimestrales de limpieza manual y de preparar evidencias.
 
-- Cumplimiento RGPD automatizado para tiendas y pymes con registro de borrados…
-- Servicio mensual de depuración de datos personales para agencias con bases de clientes…
-- Auditoría de conservación de datos para autónomos que guardan currículums y contactos…
+- Cumplimiento RGPD automatizado para tiendas y pymes con registro de borrados.
+- Servicio mensual de depuración de datos personales para agencias con bases de clientes.
+- Auditoría de conservación de datos para autónomos que guardan currículums y contactos.
 
 **Precio orientativo:** 150–400 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

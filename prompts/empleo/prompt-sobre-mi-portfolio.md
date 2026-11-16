@@ -1,4 +1,4 @@
-# Prompt para escribir el "sobre mí" de tu web de currículum…
+# Prompt para escribir el "sobre mí" de tu web de currículum
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando ya has montado la web y te bloqueas escribiendo el párrafo de presentaci
 
 Sirve como imán de leads para quien monte webs de currículum como servicio: quien se atasca con el resto de la web es candidato a pagar para que se lo hagas.
 
-- Textos de presentación para webs de currículum de personas que buscan empleo…
-- Pack de perfil profesional para autónomos que se presentan en su web…
-- Taller de redacción de presentación para orientadores laborales…
+- Textos de presentación para webs de currículum de personas que buscan empleo.
+- Pack de perfil profesional para autónomos que se presentan en su web.
+- Taller de redacción de presentación para orientadores laborales.
 
 **Precio orientativo:** 15–30 € por texto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

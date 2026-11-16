@@ -1,4 +1,4 @@
-# Repaso espaciado por email a partir de tu propio temari…
+# Repaso espaciado por email a partir de tu propio temari
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

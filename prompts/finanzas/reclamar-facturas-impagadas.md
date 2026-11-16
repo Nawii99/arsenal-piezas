@@ -1,4 +1,4 @@
-# reclamar-facturas-impagadas…
+# reclamar-facturas-impagadas
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que diseña una escalera de reclamación de cob
 
 Cobrar antes lo que ya has facturado es dinero que ya está ganado: recuperar una factura vencida es más rentable que buscar un cliente nuevo.
 
-- Sistema de avisos de cobro para pequeños negocios…
-- Plantillas de reclamación de facturas por fases…
-- Gestión de morosidad blanda como servicio mensual…
+- Sistema de avisos de cobro para pequeños negocios.
+- Plantillas de reclamación de facturas por fases.
+- Gestión de morosidad blanda como servicio mensual.
 
 **Precio orientativo:** 50–180 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

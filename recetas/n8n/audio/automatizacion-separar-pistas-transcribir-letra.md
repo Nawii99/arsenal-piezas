@@ -1,4 +1,4 @@
-# n8n: separar pistas y transcribir la letra al subir un audio…
+# n8n: separar pistas y transcribir la letra al subir un audio
 
 **Tipo:** Receta de automatización · **Área:** Música y audio · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando te llegan canciones o audios sueltos (de clientes, de un grupo, de un pro
 
 Automatiza la preparación de canciones como servicio: el cliente sube un audio a una carpeta y recibe pistas separadas y letra transcrita sin tocar nada a mano.
 
-- Preparación automática de audios para estudios y productores pequeños…
-- Transcripción de letras para academias de canto y coros…
-- Entrega de pistas y letra por encargo para grupos que suben muchos temas…
+- Preparación automática de audios para estudios y productores pequeños.
+- Transcripción de letras para academias de canto y coros.
+- Entrega de pistas y letra por encargo para grupos que suben muchos temas.
 
 **Precio orientativo:** 150–300 € por montaje. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

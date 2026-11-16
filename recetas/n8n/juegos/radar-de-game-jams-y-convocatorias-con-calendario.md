@@ -1,4 +1,4 @@
-# Radar de game jams y convocatorias con calendario…
+# Radar de game jams y convocatorias con calendario
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

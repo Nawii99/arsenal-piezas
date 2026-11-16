@@ -1,4 +1,4 @@
-# Recordatorio semanal de seguimiento de progreso por Telegram…
+# Recordatorio semanal de seguimiento de progreso por Telegram
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

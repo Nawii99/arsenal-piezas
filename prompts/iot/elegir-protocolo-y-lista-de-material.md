@@ -1,4 +1,4 @@
-# Elegir protocolo y lista de material…
+# Elegir protocolo y lista de material
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que compara Zigbee, Z-Wave, WiFi, Matter/Thread, Bluetooth y LoRa para tu
 
 Evita comprar el ecosistema equivocado y tener que tirarlo a los seis meses; también evita repetir compras por incompatibilidades.
 
-- Asesoría de protocolo y material para proyectos IoT…
-- Lista de compra técnica para instaladores…
-- Estudio comparativo de tecnologías para pymes…
+- Asesoría de protocolo y material para proyectos IoT.
+- Lista de compra técnica para instaladores.
+- Estudio comparativo de tecnologías para pymes.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

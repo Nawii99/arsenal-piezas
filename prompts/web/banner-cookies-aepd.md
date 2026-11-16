@@ -1,4 +1,4 @@
-# Banner de cookies que no te meta en un lío…
+# Banner de cookies que no te meta en un lío
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Si tu web carga Analytics o píxeles y el banner de cookies que tienes no cumple
 
 Ofrece configurar el banner de cookies de webs de pymes con la herramienta que ya usen, cobrando [TU PRECIO] por web. Un profesional de privacidad revisa la configuración antes de darla por buena.
 
-- Configuración de banner de cookies para webs de pymes con la herramienta que ya usan…
-- Auditoría de cookies y corrección del banner como servicio puntual…
-- Mantenimiento del banner al añadir nuevas herramientas de terceros…
+- Configuración de banner de cookies para webs de pymes con la herramienta que ya usan.
+- Auditoría de cookies y corrección del banner como servicio puntual.
+- Mantenimiento del banner al añadir nuevas herramientas de terceros.
 
 **Precio orientativo:** 60–180 € por web. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

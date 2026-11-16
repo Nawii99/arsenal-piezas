@@ -1,4 +1,4 @@
-# Notas de la versión que la gente sí lee…
+# Notas de la versión que la gente sí lee
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como redactor de producto para comunicar actualizaciones de ap
 
 Una actualización bien contada reactiva a usuarios dormidos y mejora las valoraciones, que es lo que decide si un desconocido se instala tu app.
 
-- Redacción de notas de versión para apps en varios idiomas…
-- Textos de novedades y avisos in-app para apps de clientes…
-- Servicio mensual de comunicación de actualizaciones…
+- Redacción de notas de versión para apps en varios idiomas.
+- Textos de novedades y avisos in-app para apps de clientes.
+- Servicio mensual de comunicación de actualizaciones.
 
 **Precio orientativo:** 15–50 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

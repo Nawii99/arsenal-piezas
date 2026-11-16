@@ -1,4 +1,4 @@
-# Alta de paciente con consentimiento, registro y recordatorio…
+# Alta de paciente con consentimiento, registro y recordatorio
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Tus pacientes nuevos llegan sin haber leído ni firmado nada y lo resuelves en l
 
 Se vende dentro del paquete Completo de la propuesta: lo montas en la consulta una vez y cobras la instalación y una cuota mensual de mantenimiento de [TU PRECIO]. Maneja datos de salud, así que lo revisa un profesional de protección de datos y los textos legales, un abogado.
 
-- Instalación del alta de pacientes para consultas que reciben papeles por email, por instalación…
-- Cuota mensual de mantenimiento del flujo y sus registros, por mes…
-- Formación de la recepción para usar el flujo, por sesión…
+- Instalación del alta de pacientes para consultas que reciben papeles por email, por instalación.
+- Cuota mensual de mantenimiento del flujo y sus registros, por mes.
+- Formación de la recepción para usar el flujo, por sesión.
 
 **Precio orientativo:** 200–400 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

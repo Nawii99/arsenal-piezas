@@ -1,4 +1,4 @@
-# Turntable 360 automático de cada modelo nuevo para rede…
+# Turntable 360 automático de cada modelo nuevo para rede
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

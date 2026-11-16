@@ -1,4 +1,4 @@
-# Fallos de GitHub Actions explicados y avisados…
+# Fallos de GitHub Actions explicados y avisados
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando recibas emails de «Run failed» de GitHub que no dicen nada y tengas que
 
 Cortas 15-20 minutos de diagnóstico por fallo. Con 10 fallos al mes son 3 horas recuperadas por menos de 1 € de IA.
 
-- Diagnóstico de fallos de CI para equipos que pierden tiempo en logs…
-- Seguimiento de tests inestables como servicio mensual para agencias…
-- Configuración de alertas de despliegue para proyectos con Actions…
+- Diagnóstico de fallos de CI para equipos que pierden tiempo en logs.
+- Seguimiento de tests inestables como servicio mensual para agencias.
+- Configuración de alertas de despliegue para proyectos con Actions.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

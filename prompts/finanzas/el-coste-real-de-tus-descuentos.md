@@ -1,4 +1,4 @@
-# El coste real de tus descuentos…
+# El coste real de tus descuentos
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como analista de precios y promociones. Recibe precio, coste, 
 
 Impide regalar margen: te dice el descuento máximo que aguantas y qué promoción alternativa deja más dinero.
 
-- Simulación de rentabilidad de promociones para tiendas…
-- Plan de Black Friday con límites de descuento calculados…
-- Asesoría de precios y ofertas para comercios y servicios…
+- Simulación de rentabilidad de promociones para tiendas.
+- Plan de Black Friday con límites de descuento calculados.
+- Asesoría de precios y ofertas para comercios y servicios.
 
 **Precio orientativo:** 60–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

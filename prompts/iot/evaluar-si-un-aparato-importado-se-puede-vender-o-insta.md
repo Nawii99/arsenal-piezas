@@ -1,4 +1,4 @@
-# Evaluar si un aparato importado se puede vender o insta…
+# Evaluar si un aparato importado se puede vender o insta
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Antes de comprar un lote de dispositivos baratos por internet para revender, o a
 
 Evita comprar lotes que no puedes vender legalmente, devoluciones y responsabilidades por instalar algo que no debía instalarse.
 
-- Revisión de conformidad de productos importados…
-- Checklist de documentación para pequeños importadores…
-- Asesoría previa a instalar equipos de origen dudoso…
+- Revisión de conformidad de productos importados.
+- Checklist de documentación para pequeños importadores.
+- Asesoría previa a instalar equipos de origen dudoso.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

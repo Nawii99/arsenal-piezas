@@ -1,4 +1,4 @@
-# Detector de apps que copian el nombre de tu marca…
+# Detector de apps que copian el nombre de tu marca
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tu app empieza a funcionar y aparecen clones o falsas versiones que confu
 
 Un clon puede llevarse el 10-20% de tus búsquedas de marca. Denunciarlo pronto vale más que cualquier campaña, y aquí no pagas vigilancia de marca.
 
-- Vigilancia de marca para una app de un comercio que empieza a crecer…
-- Control de clones para un estudio que lanza apps con nombre propio…
-- Registro de incidencias de suplantación para una marca registrada…
+- Vigilancia de marca para una app de un comercio que empieza a crecer.
+- Control de clones para un estudio que lanza apps con nombre propio.
+- Registro de incidencias de suplantación para una marca registrada.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

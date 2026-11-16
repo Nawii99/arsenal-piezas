@@ -1,4 +1,4 @@
-# Vigía de posiciones ASO de tu app en la App Store…
+# Vigía de posiciones ASO de tu app en la App Store
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

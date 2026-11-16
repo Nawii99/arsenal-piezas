@@ -1,4 +1,4 @@
-# Validar la idea de juego antes de hacerlo…
+# Validar la idea de juego antes de hacerlo
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como analista de mercado de videojuegos indie. Recibe tu idea,
 
 Evita meses de trabajo en un juego que nadie busca y te orienta hacia un nicho con demanda, que es donde de verdad se vende.
 
-- Estudio de viabilidad de ideas de juego indie…
-- Análisis de competencia y nicho en Steam para estudios…
-- Definición de versión mínima jugable antes de producir…
+- Estudio de viabilidad de ideas de juego indie.
+- Análisis de competencia y nicho en Steam para estudios.
+- Definición de versión mínima jugable antes de producir.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

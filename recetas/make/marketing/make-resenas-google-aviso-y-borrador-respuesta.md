@@ -1,4 +1,4 @@
-# Make (make.com): aviso de reseñas nuevas de Google con borra…
+# Make (make.com): aviso de reseñas nuevas de Google con borra
 
 **Tipo:** Receta de automatización · **Área:** Marketing · **Licencia:** CC BY 4.0
 

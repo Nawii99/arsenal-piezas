@@ -1,4 +1,4 @@
-# Lista de regresión tras cada cambio…
+# Lista de regresión tras cada cambio
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que crea una lista corta de pruebas de regresión que se ejecuta en 10 mi
 
 Evita el clásico «llevaba tres días sin recibir pedidos y no lo sabía»: cortas la sangría el mismo día del cambio, no un mes después.
 
-- Checklist de regresión para webs y tiendas de clientes en mantenimiento…
-- Protocolo de verificación tras actualizaciones como servicio mensual…
-- Listas de comprobación para equipos con freelances…
+- Checklist de regresión para webs y tiendas de clientes en mantenimiento.
+- Protocolo de verificación tras actualizaciones como servicio mensual.
+- Listas de comprobación para equipos con freelances.
 
 **Precio orientativo:** 60–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

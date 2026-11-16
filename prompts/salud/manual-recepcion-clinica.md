@@ -1,4 +1,4 @@
-# manual-recepcion-clinica…
+# manual-recepcion-clinica
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando delegas el mostrador o el teléfono y cada persona responde una cosa dist
 
 Recepción bien entrenada convierte más llamadas en citas y evita cancelaciones y quejas; también recorta las semanas de formación de cada persona nueva.
 
-- Manual de recepción de una página para clínicas…
-- Entrenamiento en role-play para personal de mostrador…
-- Formación de nuevas incorporaciones en atención al paciente…
+- Manual de recepción de una página para clínicas.
+- Entrenamiento en role-play para personal de mostrador.
+- Formación de nuevas incorporaciones en atención al paciente.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Alta y cobro de un encargo de CV en n8n…
+# Alta y cobro de un encargo de CV en n8n
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

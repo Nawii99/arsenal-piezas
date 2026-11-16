@@ -1,4 +1,4 @@
-# Informe semanal del canal en tu correo cada lunes…
+# Informe semanal del canal en tu correo cada lunes
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando entras en YouTube Studio a mirar números y sales sin conclusiones, o cua
 
 Sustituye el informe manual semanal, entre 45 y 90 minutos. Si lo haces para clientes, es una entrega recurrente que no te cuesta tiempo.
 
-- Informe semanal de YouTube para clientes de agencias, sin trabajo manual cada lunes…
-- Panel de tendencias de canal para creadores con histórico en hoja…
-- Servicio mensual de análisis de canal con recomendaciones de contenido…
+- Informe semanal de YouTube para clientes de agencias, sin trabajo manual cada lunes.
+- Panel de tendencias de canal para creadores con histórico en hoja.
+- Servicio mensual de análisis de canal con recomendaciones de contenido.
 
 **Precio orientativo:** 30–100 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

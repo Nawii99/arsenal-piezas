@@ -1,4 +1,4 @@
-# Make (make.com): recordatorio de cita por correo 24 horas an…
+# Make (make.com): recordatorio de cita por correo 24 horas an
 
 **Tipo:** Receta de automatización · **Área:** Productividad · **Licencia:** CC BY 4.0
 

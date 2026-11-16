@@ -1,4 +1,4 @@
-# De error de Sentry a tarea en Linear sin duplicados…
+# De error de Sentry a tarea en Linear sin duplicados
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

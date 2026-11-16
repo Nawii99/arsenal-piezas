@@ -1,4 +1,4 @@
-# Prueba semanal de que tu cobro con tarjeta funciona…
+# Prueba semanal de que tu cobro con tarjeta funciona
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

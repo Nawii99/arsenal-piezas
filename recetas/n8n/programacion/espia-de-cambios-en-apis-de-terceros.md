@@ -1,4 +1,4 @@
-# Espía de cambios en APIs de terceros…
+# Espía de cambios en APIs de terceros
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tu negocio depende de integraciones con Stripe, Meta, Google, un ERP o cu
 
 Enterarte de una deprecación con semanas de margen evita el clásico fin de semana arreglando pagos rotos y las ventas perdidas mientras tanto.
 
-- Vigilancia de APIs para negocios que dependen de integraciones de terceros…
-- Resumen semanal de cambios técnicos para equipos de producto…
-- Alertas de deprecación para tiendas con pagos y ERP conectados…
+- Vigilancia de APIs para negocios que dependen de integraciones de terceros.
+- Resumen semanal de cambios técnicos para equipos de producto.
+- Alertas de deprecación para tiendas con pagos y ERP conectados.
 
 **Precio orientativo:** 60–150 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

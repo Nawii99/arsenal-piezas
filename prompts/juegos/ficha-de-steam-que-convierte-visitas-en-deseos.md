@@ -1,4 +1,4 @@
-# Ficha de Steam que convierte visitas en deseos…
+# Ficha de Steam que convierte visitas en deseos
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando vayas a abrir la página de tu juego en Steam o en itch.io, o cuando ya l
 
 La ficha es el escaparate donde se decide la compra: mejorar descripción, etiquetas y capturas es lo más barato que puedes hacer para vender más copias.
 
-- Redacción de fichas de Steam para estudios indie…
-- Optimización de páginas de tienda con poca lista de deseos…
-- Guion de tráiler y orden de capturas para lanzamientos…
+- Redacción de fichas de Steam para estudios indie.
+- Optimización de páginas de tienda con poca lista de deseos.
+- Guion de tráiler y orden de capturas para lanzamientos.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

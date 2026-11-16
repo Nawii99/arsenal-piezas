@@ -1,4 +1,4 @@
-# Recompilar la web estática sola cuando cambia el conten…
+# Recompilar la web estática sola cuando cambia el conten
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

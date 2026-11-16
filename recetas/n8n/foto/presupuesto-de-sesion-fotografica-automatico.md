@@ -1,4 +1,4 @@
-# Presupuesto de sesión fotográfica automático…
+# Presupuesto de sesión fotográfica automático
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

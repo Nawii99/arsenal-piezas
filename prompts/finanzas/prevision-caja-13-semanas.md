@@ -1,4 +1,4 @@
-# prevision-caja-13-semanas…
+# prevision-caja-13-semanas
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que construye una previsión de tesorería de 1
 
 Ver el agujero con semanas de antelación te deja negociar plazos o adelantar cobros en vez de tirar de descubierto o de crédito caro.
 
-- Previsión de caja semanal para pymes y autónomos…
-- Informe de tesorería con plan de medidas…
-- Seguimiento mensual de caja como servicio recurrente…
+- Previsión de caja semanal para pymes y autónomos.
+- Informe de tesorería con plan de medidas.
+- Seguimiento mensual de caja como servicio recurrente.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

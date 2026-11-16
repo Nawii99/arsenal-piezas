@@ -1,4 +1,4 @@
-# Simulacro mensual de restauración de tu copia de seguri…
+# Simulacro mensual de restauración de tu copia de seguri
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

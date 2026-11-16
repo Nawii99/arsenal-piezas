@@ -1,4 +1,4 @@
-# Revisor de pull requests con IA que comenta el diff…
+# Revisor de pull requests con IA que comenta el diff
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

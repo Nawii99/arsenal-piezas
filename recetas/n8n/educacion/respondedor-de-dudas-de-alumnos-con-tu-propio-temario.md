@@ -1,4 +1,4 @@
-# Respondedor de dudas de alumnos con tu propio temario…
+# Respondedor de dudas de alumnos con tu propio temario
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

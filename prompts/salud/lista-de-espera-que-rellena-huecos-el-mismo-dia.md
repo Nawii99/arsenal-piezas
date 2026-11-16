@@ -1,4 +1,4 @@
-# Lista de espera que rellena huecos el mismo día…
+# Lista de espera que rellena huecos el mismo día
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando te cancelan por la mañana y el hueco de la tarde se queda vacío porque 
 
 Una cancelación recolocada el mismo día es una hora facturada que ibas a perder entera, sin gastar en publicidad.
 
-- Montaje de lista de espera y avisos rápidos para clínicas…
-- Plantillas de mensajes de hueco libre por WhatsApp Business…
-- Automatización sencilla de avisos de cancelaciones en hoja de cálculo…
+- Montaje de lista de espera y avisos rápidos para clínicas.
+- Plantillas de mensajes de hueco libre por WhatsApp Business.
+- Automatización sencilla de avisos de cancelaciones en hoja de cálculo.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

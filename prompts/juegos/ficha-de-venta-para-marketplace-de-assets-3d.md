@@ -1,4 +1,4 @@
-# Ficha de venta para marketplace de assets 3D…
+# Ficha de venta para marketplace de assets 3D
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como vendedor veterano de assets 3D en Sketchfab, CGTrader, Un
 
 Una ficha bien hecha es la diferencia entre un asset invisible y uno que vende solo; puedes vender el mismo modelo en varias tiendas.
 
-- Redacción de fichas de venta de assets 3D…
-- Optimización de títulos y etiquetas para marketplaces…
-- Pack de descripciones técnicas para estudios y artistas…
+- Redacción de fichas de venta de assets 3D.
+- Optimización de títulos y etiquetas para marketplaces.
+- Pack de descripciones técnicas para estudios y artistas.
 
 **Precio orientativo:** 15–50 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Prueba sintética de extremo a extremo cada 10 minutos…
+# Prueba sintética de extremo a extremo cada 10 minutos
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tu monitorización solo mira si la home responde, pero lo que se rompe de
 
 Descubres el fallo en 10 minutos en vez de en el primer email de un cliente enfadado. Cada hora de checkout roto son ventas perdidas.
 
-- Vigilancia del checkout de tiendas online con alerta en minutos…
-- Monitorización de flujos críticos para SaaS pequeños con informe de latencias…
-- Configuración de pruebas sintéticas para agencias que entregan aplicaciones a clientes…
+- Vigilancia del checkout de tiendas online con alerta en minutos.
+- Monitorización de flujos críticos para SaaS pequeños con informe de latencias.
+- Configuración de pruebas sintéticas para agencias que entregan aplicaciones a clientes.
 
 **Precio orientativo:** 80–250 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

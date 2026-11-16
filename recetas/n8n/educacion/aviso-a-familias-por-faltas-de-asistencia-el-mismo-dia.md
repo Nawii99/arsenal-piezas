@@ -1,4 +1,4 @@
-# Aviso a familias por faltas de asistencia el mismo día…
+# Aviso a familias por faltas de asistencia el mismo día
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

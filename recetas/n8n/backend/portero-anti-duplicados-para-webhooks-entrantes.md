@@ -1,4 +1,4 @@
-# Portero anti-duplicados para webhooks entrantes…
+# Portero anti-duplicados para webhooks entrantes
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

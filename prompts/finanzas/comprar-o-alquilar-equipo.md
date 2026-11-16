@@ -1,4 +1,4 @@
-# comprar-o-alquilar-equipo…
+# comprar-o-alquilar-equipo
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt para cualquier chat de IA que compara comprar al contado, financiar o alq
 
 Evita descapitalizarte por una compra evitable y te enseña la opción que menos caja se lleva por el mismo resultado.
 
-- Comparativa de compra, renting y financiación para autónomos…
-- Informe de inversión en equipo para pymes…
+- Comparativa de compra, renting y financiación para autónomos.
+- Informe de inversión en equipo para pymes.
 
 **Precio orientativo:** 60–180 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

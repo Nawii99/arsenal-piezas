@@ -1,4 +1,4 @@
-# Anuncio con urgencia real: textos que no engañan…
+# Anuncio con urgencia real: textos que no engañan
 
 **Tipo:** Prompt · **Área:** Marketing · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tienes una oferta con fecha o plazas limitadas de verdad y necesitas text
 
 Vende packs de textos de campaña a tiendas online, academias o autónomos con ofertas por temporada, a un precio por pack ([TU TARIFA]), con la tabla de comprobación.
 
-- Escribir textos de campaña de temporada para tiendas online con plazas o fechas verificables…
-- Preparar anuncios de lanzamiento para academias que tienen plazas limitadas de verdad…
-- Vender packs de textos revisados por campaña a autónomos con ofertas puntuales…
+- Escribir textos de campaña de temporada para tiendas online con plazas o fechas verificables.
+- Preparar anuncios de lanzamiento para academias que tienen plazas limitadas de verdad.
+- Vender packs de textos revisados por campaña a autónomos con ofertas puntuales.
 
 **Precio orientativo:** 30–80 € por pack. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

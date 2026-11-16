@@ -1,4 +1,4 @@
-# Cámara que solo te avisa cuando de verdad hay alguien…
+# Cámara que solo te avisa cuando de verdad hay alguien
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Campaña multicanal · Prompt operativo…
+# Campaña multicanal · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Marketing · **Licencia:** CC BY 4.0
 

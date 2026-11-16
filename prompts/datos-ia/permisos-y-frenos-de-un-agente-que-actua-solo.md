@@ -1,4 +1,4 @@
-# Permisos y frenos de un agente que actúa solo…
+# Permisos y frenos de un agente que actúa solo
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que define los permisos de un agente de IA que actúa solo. Entran sus ac
 
 Un agente sin frenos puede mandar 200 correos mal, cancelar citas o cambiar precios; este documento es el seguro y además es un entregable que tranquiliza al cliente.
 
-- Documento de permisos y límites para agentes de IA de clientes…
-- Revisión de riesgos antes de conectar un agente al correo o a la tienda…
-- Política de confirmaciones para automatizaciones con IA…
+- Documento de permisos y límites para agentes de IA de clientes.
+- Revisión de riesgos antes de conectar un agente al correo o a la tienda.
+- Política de confirmaciones para automatizaciones con IA.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

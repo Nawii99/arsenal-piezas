@@ -1,4 +1,4 @@
-# Informe mensual automático para el cliente…
+# Informe mensual automático para el cliente
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

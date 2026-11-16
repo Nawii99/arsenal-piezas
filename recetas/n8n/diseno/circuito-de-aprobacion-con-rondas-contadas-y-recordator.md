@@ -1,4 +1,4 @@
-# Circuito de aprobación con rondas contadas y recordator…
+# Circuito de aprobación con rondas contadas y recordator
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando los clientes tardan semanas en responder a una propuesta y luego piden la
 
 Acorta el ciclo de aprobación en días y te da la prueba escrita para facturar las rondas extra: entre 150 y 400 € por proyecto que hoy regalas.
 
-- Circuito de aprobación para estudios freelance con rondas pactadas…
-- Seguimiento de propuestas como servicio mensual para agencias…
-- Control de rondas extra con prueba escrita para facturar los cambios…
+- Circuito de aprobación para estudios freelance con rondas pactadas.
+- Seguimiento de propuestas como servicio mensual para agencias.
+- Control de rondas extra con prueba escrita para facturar los cambios.
 
 **Precio orientativo:** 100–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

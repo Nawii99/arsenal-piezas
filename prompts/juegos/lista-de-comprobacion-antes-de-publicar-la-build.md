@@ -1,4 +1,4 @@
-# Lista de comprobación antes de publicar la build…
+# Lista de comprobación antes de publicar la build
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como responsable de QA y publicació
 
 Evita el ridículo de un lanzamiento con la build rota, las devoluciones y las reseñas negativas de la primera semana, que son las que más pesan.
 
-- Servicio de QA previo al lanzamiento para estudios indie…
-- Lista de verificación personalizada de build para Steam, itch o móvil…
-- Pruebas de instalación y guardado en distintos equipos antes de entregar…
+- Servicio de QA previo al lanzamiento para estudios indie.
+- Lista de verificación personalizada de build para Steam, itch o móvil.
+- Pruebas de instalación y guardado en distintos equipos antes de entregar.
 
 **Precio orientativo:** 100–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Cobro de cuotas mensuales y aviso de impagos…
+# Cobro de cuotas mensuales y aviso de impagos
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

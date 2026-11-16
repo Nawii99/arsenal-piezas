@@ -1,4 +1,4 @@
-# Radar de apps rivales: precios, versiones y valoración…
+# Radar de apps rivales: precios, versiones y valoración
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Receta de n8n que cada lunes lee las fichas públicas de las apps competidoras q
 
 Sustituye la ronda manual de mirar fichas (que nunca haces) y te da margen para reaccionar a una bajada de precio en días en vez de en meses.
 
-- Vigilancia de precios para una app de un nicho con tres competidores…
-- Informe de competencia mensual para un fundador de producto…
-- Alertas de cambios de título y nota para un equipo de marketing…
+- Vigilancia de precios para una app de un nicho con tres competidores.
+- Informe de competencia mensual para un fundador de producto.
+- Alertas de cambios de título y nota para un equipo de marketing.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

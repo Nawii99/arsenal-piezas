@@ -1,4 +1,4 @@
-# Vigilante de renovaciones y revisión anual de tarifas c…
+# Vigilante de renovaciones y revisión anual de tarifas c
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

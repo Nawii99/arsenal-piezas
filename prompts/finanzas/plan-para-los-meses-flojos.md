@@ -1,4 +1,4 @@
-# Plan para los meses flojos…
+# Plan para los meses flojos
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como asesor financiero de negocios estacionales. Recibe ingres
 
 Reservar en los meses buenos la cantidad exacta que necesitas evita tirar de crédito en los meses malos y sus intereses.
 
-- Plan de colchón y estacionalidad para hostelería y comercio…
-- Presupuesto anual de reservas para negocios con meses flojos…
-- Revisión trimestral de caja para autónomos estacionales…
+- Plan de colchón y estacionalidad para hostelería y comercio.
+- Presupuesto anual de reservas para negocios con meses flojos.
+- Revisión trimestral de caja para autónomos estacionales.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

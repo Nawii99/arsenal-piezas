@@ -1,4 +1,4 @@
-# Riego automático que se salta el día si va a llover…
+# Riego automático que se salta el día si va a llover
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

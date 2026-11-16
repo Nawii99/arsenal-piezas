@@ -1,4 +1,4 @@
-# Entrega de archivos al cliente en un clic…
+# Entrega de archivos al cliente en un clic
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando pones «entregar» en la columna de estado de un proyecto, crea en Drive 
 
 Ahorra 20-30 minutos por entrega y evita el clásico «no encuentro el logo en vectorial» que te cuesta otro correo. Coste: 0 €.
 
-- Entrega digital de identidades visuales para estudios de diseño con condiciones incluidas…
-- Gestión de entregas para freelances con archivos ordenados y enlace de descarga…
-- Configuración de un flujo de entrega para agencias con varios clientes…
+- Entrega digital de identidades visuales para estudios de diseño con condiciones incluidas.
+- Gestión de entregas para freelances con archivos ordenados y enlace de descarga.
+- Configuración de un flujo de entrega para agencias con varios clientes.
 
 **Precio orientativo:** 80–200 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

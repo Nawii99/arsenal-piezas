@@ -1,4 +1,4 @@
-# Propuesta de cuota mensual de mantenimiento IoT…
+# Propuesta de cuota mensual de mantenimiento IoT
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Acabas una instalación y quieres dejar por escrito qué cubre la cuota mensual,
 
 Convierte una instalación puntual en ingreso recurrente: la propuesta se la haces al cliente de riego, alarma, cámara o estación meteo con una cuota de [TU PRECIO] al mes. IVA, permanencia y condiciones de baja los revisa un profesional antes de firmar.
 
-- Cuotas de mantenimiento para instalaciones de particulares, por propuesta…
-- Paquetes escalonados de mantenimiento para comunidades, por paquete…
-- Plantilla de oferta de mantenimiento para instaladores, por venta…
+- Cuotas de mantenimiento para instalaciones de particulares, por propuesta.
+- Paquetes escalonados de mantenimiento para comunidades, por paquete.
+- Plantilla de oferta de mantenimiento para instaladores, por venta.
 
 **Precio orientativo:** 20–40 € por propuesta. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

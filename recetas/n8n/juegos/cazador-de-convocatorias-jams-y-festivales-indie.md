@@ -1,4 +1,4 @@
-# Cazador de convocatorias, jams y festivales indie…
+# Cazador de convocatorias, jams y festivales indie
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

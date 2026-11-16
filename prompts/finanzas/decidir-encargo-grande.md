@@ -1,4 +1,4 @@
-# decidir-encargo-grande…
+# decidir-encargo-grande
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que evalúa si te conviene aceptar un proyecto 
 
 Evita aceptar proyectos que te ahogan la caja o te bloquean meses a mal precio, y te da las condiciones de anticipo que protegen el cobro.
 
-- Análisis de viabilidad de grandes encargos para pymes…
-- Revisión de condiciones de cobro antes de firmar…
-- Asesoría puntual de decisiones para autónomos…
+- Análisis de viabilidad de grandes encargos para pymes.
+- Revisión de condiciones de cobro antes de firmar.
+- Asesoría puntual de decisiones para autónomos.
 
 **Precio orientativo:** 60–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Mantenimiento preventivo de instalaciones conectadas…
+# Mantenimiento preventivo de instalaciones conectadas
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que crea el calendario de revisiones de tus instalaciones y el contrato d
 
 Convierte trabajos de una sola vez en una cuota mensual o anual, y reduce las urgencias no cobradas cambiándolas por visitas planificadas.
 
-- Contratos de mantenimiento preventivo para instaladores…
-- Calendario de revisiones para carteras de clientes…
-- Informes periódicos de estado de instalaciones…
+- Contratos de mantenimiento preventivo para instaladores.
+- Calendario de revisiones para carteras de clientes.
+- Informes periódicos de estado de instalaciones.
 
 **Precio orientativo:** 15–60 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

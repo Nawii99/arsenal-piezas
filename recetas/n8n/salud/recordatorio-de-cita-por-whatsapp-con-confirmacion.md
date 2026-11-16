@@ -1,4 +1,4 @@
-# Recordatorio de cita por WhatsApp con confirmación…
+# Recordatorio de cita por WhatsApp con confirmación
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Radar de dependencias abandonadas…
+# Radar de dependencias abandonadas
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cada lunes lee el package.json o requirements.txt de tus repositorios, consulta 
 
 Evita migraciones de urgencia: detectar una librería muerta con meses de margen te ahorra días de refactor pagado a precio de bombero.
 
-- Revisión de dependencias abandonadas para estudios con varios proyectos…
-- Plan de migración de librerías como servicio trimestral…
-- Informe de salud de proyectos para clientes con software a medida…
+- Revisión de dependencias abandonadas para estudios con varios proyectos.
+- Plan de migración de librerías como servicio trimestral.
+- Informe de salud de proyectos para clientes con software a medida.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

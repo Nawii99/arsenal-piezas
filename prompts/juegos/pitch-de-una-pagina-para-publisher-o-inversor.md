@@ -1,4 +1,4 @@
-# Pitch de una página para publisher o inversor…
+# Pitch de una página para publisher o inversor
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como productor de videojuegos que ha revisado pitches para pub
 
 Un pitch bien montado es lo que abre la puerta a financiación, adelantos o publishers; también te sirve para justificar el proyecto en ayudas públicas.
 
-- Redacción de pitch de una página para publishers…
-- Dossier para ayudas públicas y eventos de videojuegos…
-- Revisión de propuestas antes de enviarlas a inversores…
+- Redacción de pitch de una página para publishers.
+- Dossier para ayudas públicas y eventos de videojuegos.
+- Revisión de propuestas antes de enviarlas a inversores.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

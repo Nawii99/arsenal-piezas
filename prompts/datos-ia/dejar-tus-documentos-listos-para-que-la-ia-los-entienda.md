@@ -1,4 +1,4 @@
-# Dejar tus documentos listos para que la IA los entienda…
+# Dejar tus documentos listos para que la IA los entienda
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que prepara documentos para que un asistente de IA los lea bien. Entran P
 
 Es el paso que casi nadie hace y por el que fallan los asistentes; hacerlo bien para clientes es un servicio de preparación de datos facturable por horas.
 
-- Preparación de documentación para chatbots de empresas…
-- Limpieza y estructuración de tarifas y catálogos para IA…
-- Servicio de ordenación documental previo a un asistente…
+- Preparación de documentación para chatbots de empresas.
+- Limpieza y estructuración de tarifas y catálogos para IA.
+- Servicio de ordenación documental previo a un asistente.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

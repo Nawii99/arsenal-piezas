@@ -1,4 +1,4 @@
-# Control de calidad de datos · Prompt operativo…
+# Control de calidad de datos · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Datos · **Licencia:** CC BY 4.0
 

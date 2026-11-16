@@ -1,0 +1,76 @@
+{
+  "tarea": "Generar el storyboard de un vídeo explicativo animado de 60 a 90 segundos como una lista de planos, cada uno con lo que se ve, el movimiento, el texto en pantalla, la locución y los segundos.",
+  "idioma_salida": "es-ES",
+  "contexto": "El storyboard lo recibe una persona que anima o un flujo que genera imágenes. No ha leído nada más: cada plano debe entenderse solo. Es un documento de preproducción: no se genera ni se publica nada.",
+  "datos_de_entrada": {
+    "mensaje_unico": "[UNA FRASE: PARA QUIÉN, QUÉ PROBLEMA, QUÉ CAMBIA]",
+    "locucion_por_bloques": "[PEGA LA LOCUCIÓN DIVIDIDA EN BLOQUES CON SUS SEGUNDOS, O «NO TENGO»]",
+    "duracion_total_segundos": "[ENTRE 60 Y 90]",
+    "producto_y_publico": "[QUÉ ES Y A QUIÉN VA]",
+    "metafora_visual": "[IDEA VISUAL ÚNICA, P. EJ. «UN CAMINO DE OBSTÁCULOS QUE SE ALLANA», O «DÉJALA A TU CRITERIO»]",
+    "estilo_grafico": "[PLANO Y GEOMÉTRICO / DIBUJO A MANO / PERSONAJES SENCILLOS...]",
+    "paleta_y_tipografia": "[COLORES EN HEX Y TIPOGRAFÍAS, O «LOS DE LA MARCA»]",
+    "formato": "[16:9 / 9:16 / 1:1]",
+    "se_vera_con_sonido": "[SÍ / NO / NO LO SÉ]",
+    "accion_final": "[LO QUE DEBE HACER QUIEN LO VEA]"
+  },
+  "pasos": [
+    "Si falta el mensaje único, la duración o la acción final, haz como máximo tres preguntas y espera respuesta antes de generar.",
+    "Si no hay locución, escribe una propuesta breve por bloque y márcala como «propuesta, pendiente de aprobar».",
+    "Divide el vídeo en planos de unos 3 a 6 segundos. Un plano por idea.",
+    "Para cada plano describe qué se ve, de forma que lo dibuje alguien que no conoce el guion.",
+    "Describe el movimiento: qué entra, qué se transforma, qué sale, en qué dirección y con qué ritmo.",
+    "Añade el texto en pantalla solo si aporta; si el vídeo se verá sin sonido, que el texto cuente la historia.",
+    "Asigna a cada plano su fragmento de locución, el sonido sugerido y la transición con el siguiente.",
+    "Suma las duraciones y ajusta hasta que coincidan con la duración total."
+  ],
+  "reglas": [
+    "No inventes cifras, clientes, reseñas ni resultados en ningún plano ni texto en pantalla.",
+    "Una sola metáfora visual y un solo estilo gráfico en todo el vídeo.",
+    "Texto en pantalla de 8 palabras como máximo por plano, legible en móvil, con buen contraste.",
+    "Ningún plano pasa de 8 segundos sin que algo cambie dentro.",
+    "Sin destellos ni parpadeos rápidos.",
+    "No imites personajes ni estilos reconocibles de otras marcas; no propongas música sin licencia, solo describe su carácter.",
+    "Termina con una sola acción, dicha y escrita en pantalla.",
+    "Español de España, tuteo, frases cortas."
+  ],
+  "formato_de_salida": {
+    "formato": "un único objeto JSON, sin texto alrededor",
+    "esquema": {
+      "resumen": {
+        "mensaje_unico": "string",
+        "duracion_total_s": "number",
+        "formato": "string",
+        "metafora_visual": "string",
+        "estilo": "string"
+      },
+      "planos": [
+        {
+          "numero": "number",
+          "inicio_s": "number",
+          "fin_s": "number",
+          "duracion_s": "number",
+          "bloque": "gancho | problema | giro | funcionamiento | prueba | cierre",
+          "que_se_ve": "string",
+          "movimiento": "string",
+          "texto_en_pantalla": "string o null",
+          "locucion": "string o null",
+          "sonido": "string",
+          "transicion": "string"
+        }
+      ],
+      "pendiente_de_confirmar": [
+        "string"
+      ]
+    }
+  },
+  "comprobaciones": [
+    "La suma de duracion_s es igual a la duración total y cada inicio_s coincide con el fin_s del plano anterior.",
+    "Ningún texto_en_pantalla supera las 8 palabras.",
+    "Todo el texto de la locución recibida aparece en algún plano, sin cambios ni añadidos no marcados.",
+    "El primer plano engancha y el último contiene la acción final.",
+    "Ningún plano contiene un dato que no esté en los datos de entrada.",
+    "El JSON es válido y no hay texto fuera del objeto."
+  ],
+  "limites": "Es una guía de preproducción: quien anima puede ajustar tiempos. El cliente debe aprobar el storyboard antes de producir."
+}

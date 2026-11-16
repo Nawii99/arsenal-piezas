@@ -1,4 +1,4 @@
-# Triaje automático de issues con detector de duplicados…
+# Triaje automático de issues con detector de duplicados
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

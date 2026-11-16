@@ -1,4 +1,4 @@
-# sistema-de-estilos-de-mi-web…
+# sistema-de-estilos-de-mi-web
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que genera un archivo CSS base con variables para que todas tus páginas 
 
 Reutilizar un mismo sistema de estilos recorta el tiempo de cada página nueva y te permite entregar más webs de cliente con la misma calidad visual.
 
-- Sistema de estilos reutilizable para webs de clientes…
-- Guía de estilo CSS entregable junto con una landing…
-- Normalización visual de webs hechas con IA que salen distintas…
+- Sistema de estilos reutilizable para webs de clientes.
+- Guía de estilo CSS entregable junto con una landing.
+- Normalización visual de webs hechas con IA que salen distintas.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Guion de presentación para una clase…
+# Guion de presentación para una clase
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Tienes que explicar un tema en veinte minutos y no sabes qué poner en cada diap
 
 Prepara guiones de presentación a medida para profesores y academias, maquétalos en Canva o Google Slides y cobra por tema o por unidad didáctica a [TU PRECIO]. El docente comprueba que el contenido es correcto.
 
-- Guiones de clase por tema para academias de refuerzo, por tema…
-- Unidades didácticas completas con presentaciones para profesores, por unidad…
-- Presentaciones a medida para ponentes de formación interna, por charla…
+- Guiones de clase por tema para academias de refuerzo, por tema.
+- Unidades didácticas completas con presentaciones para profesores, por unidad.
+- Presentaciones a medida para ponentes de formación interna, por charla.
 
 **Precio orientativo:** 15–40 € por presentación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

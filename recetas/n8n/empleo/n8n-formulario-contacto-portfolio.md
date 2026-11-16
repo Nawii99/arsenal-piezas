@@ -1,4 +1,4 @@
-# Avisos automáticos del formulario de contacto de tu portfoli…
+# Avisos automáticos del formulario de contacto de tu portfoli
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Tu portfolio tiene un formulario de contacto y no quieres estar mirando el corre
 
 Móntaselo a autónomos y negocios pequeños con web propia que reciben consultas, y cobra la instalación y, si quieres, un mantenimiento mensual [TU PRECIO]. Los contactos son datos personales, así que la web necesita su aviso de privacidad.
 
-- Instalación de avisos de contacto para autónomos con web propia…
-- Mantenimiento mensual de formularios y avisos para pequeños negocios…
-- Gestión de consultas para profesionales que reciben muchos correos…
+- Instalación de avisos de contacto para autónomos con web propia.
+- Mantenimiento mensual de formularios y avisos para pequeños negocios.
+- Gestión de consultas para profesionales que reciben muchos correos.
 
 **Precio orientativo:** 60–120 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

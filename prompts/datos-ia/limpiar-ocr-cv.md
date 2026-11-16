@@ -1,4 +1,4 @@
-# Limpiar y estructurar el OCR de un CV escaneado…
+# Limpiar y estructurar el OCR de un CV escaneado
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando escaneas un CV en papel con el móvil y el OCR devuelve texto desordenado
 
 Ahorra el rato de reordenar a mano el texto del OCR antes de poder usarlo para nada, algo muy habitual en procesos con candidatos que entregan el CV en papel.
 
-- Limpieza de CV escaneados para procesos de selección con candidatos en papel…
-- Servicio de digitalización de CV para agencias pequeñas…
-- Plantilla de limpieza de OCR para autónomos de RRHH…
+- Limpieza de CV escaneados para procesos de selección con candidatos en papel.
+- Servicio de digitalización de CV para agencias pequeñas.
+- Plantilla de limpieza de OCR para autónomos de RRHH.
 
 ## El prompt (cópialo entero)
 

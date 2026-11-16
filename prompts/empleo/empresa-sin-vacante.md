@@ -1,4 +1,4 @@
-# Escribir a una empresa sin vacante…
+# Escribir a una empresa sin vacante
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

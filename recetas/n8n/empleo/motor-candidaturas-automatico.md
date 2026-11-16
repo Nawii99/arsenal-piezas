@@ -1,4 +1,4 @@
-# Motor de candidaturas: adapta, PDF y envia…
+# Motor de candidaturas: adapta, PDF y envia
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Guardián de fugas: caudal nocturno y corte de agua…
+# Guardián de fugas: caudal nocturno y corte de agua
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

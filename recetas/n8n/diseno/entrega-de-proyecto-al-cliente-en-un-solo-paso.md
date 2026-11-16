@@ -1,4 +1,4 @@
-# Entrega de proyecto al cliente en un solo paso…
+# Entrega de proyecto al cliente en un solo paso
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

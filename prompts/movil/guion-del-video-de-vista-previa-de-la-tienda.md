@@ -1,4 +1,4 @@
-# Guion del vídeo de vista previa de la tienda…
+# Guion del vídeo de vista previa de la tienda
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando vayas a publicar la ficha o quieras mejorarla, y ya tengas la app funcion
 
 El vídeo de la ficha es lo primero que mira mucha gente antes de instalar; uno claro convierte visitas en descargas sin coste por descarga.
 
-- Guion de vídeo de vista previa para fichas de tienda…
-- Grabación y edición de vídeos de app para App Store…
-- Pack de textos superpuestos para capturas y vídeos…
+- Guion de vídeo de vista previa para fichas de tienda.
+- Grabación y edición de vídeos de app para App Store.
+- Pack de textos superpuestos para capturas y vídeos.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

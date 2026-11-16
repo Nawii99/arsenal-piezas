@@ -1,4 +1,4 @@
-# Beta con testers reales antes de lanzar…
+# Beta con testers reales antes de lanzar
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como responsable de lanzamiento con experiencia en TestFlight 
 
 Descubrir fallos con veinte conocidos es gratis; descubrirlos con clientes de pago te cuesta reembolsos, reseñas de una estrella y reputación.
 
-- Organización de betas cerradas para apps antes del lanzamiento…
-- Reclutamiento y seguimiento de testers con informe final…
-- Plan de pruebas previo a una actualización grande…
+- Organización de betas cerradas para apps antes del lanzamiento.
+- Reclutamiento y seguimiento de testers con informe final.
+- Plan de pruebas previo a una actualización grande.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

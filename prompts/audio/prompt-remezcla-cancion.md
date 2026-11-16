@@ -1,4 +1,4 @@
-# Prompt para pedir una remezcla o versión distinta de una can…
+# Prompt para pedir una remezcla o versión distinta de una can
 
 **Tipo:** Prompt · **Área:** Música y audio · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Tienes una balada y quieres oírla en versión acústica o bailable antes de dec
 
 Ofrece versiones alternativas de sus temas a músicos independientes o a creadores que necesitan música para sus vídeos, con precio por versión [TU PRECIO]. Solo sobre canciones del propio cliente.
 
-- Versiones acústicas o bailables de canciones propias para músicos independientes…
-- Adaptaciones de estilo para creadores que necesitan música para sus vídeos…
-- Pruebas de estilo antes de grabar un tema, como servicio de preproducción…
+- Versiones acústicas o bailables de canciones propias para músicos independientes.
+- Adaptaciones de estilo para creadores que necesitan música para sus vídeos.
+- Pruebas de estilo antes de grabar un tema, como servicio de preproducción.
 
 **Precio orientativo:** 15–30 € por versión. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

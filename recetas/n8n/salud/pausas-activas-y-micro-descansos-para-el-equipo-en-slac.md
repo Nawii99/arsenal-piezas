@@ -1,4 +1,4 @@
-# Pausas activas y micro-descansos para el equipo en Slac…
+# Pausas activas y micro-descansos para el equipo en Slac
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Preselección automática: descarta las fotos malas…
+# Preselección automática: descarta las fotos malas
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# traductor-de-errores-web…
+# traductor-de-errores-web
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como desarrollador web senior. Pegas
 
 Evita pagar urgencias a un técnico por fallos que se arreglan en minutos y reduce las horas de web caída sin poder vender.
 
-- Servicio de soporte para errores en webs de negocios pequeños…
-- Mantenimiento mensual de webs en GitHub Pages, Netlify o WordPress…
-- Resolución puntual de incidencias web con informe…
+- Servicio de soporte para errores en webs de negocios pequeños.
+- Mantenimiento mensual de webs en GitHub Pages, Netlify o WordPress.
+- Resolución puntual de incidencias web con informe.
 
 **Precio orientativo:** 20–60 € por hora. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

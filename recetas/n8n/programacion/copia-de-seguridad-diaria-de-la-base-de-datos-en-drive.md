@@ -1,4 +1,4 @@
-# Copia de seguridad diaria de la base de datos en Drive…
+# Copia de seguridad diaria de la base de datos en Drive
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tengas una web o app con base de datos en un VPS y tu «copia de segurida
 
 Perder la base de datos de una tienda son días de trabajo y clientes cabreados. Esto cuesta 0 € frente a los 10-30 €/mes de un backup gestionado.
 
-- Copias de seguridad automáticas como servicio mensual para webs con base de datos…
-- Plan de recuperación para tiendas que dependen de su base de datos…
-- Revisión trimestral de restauraciones para proyectos en VPS…
+- Copias de seguridad automáticas como servicio mensual para webs con base de datos.
+- Plan de recuperación para tiendas que dependen de su base de datos.
+- Revisión trimestral de restauraciones para proyectos en VPS.
 
 **Precio orientativo:** 60–150 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Presupuesto de velocidad con PageSpeed…
+# Presupuesto de velocidad con PageSpeed
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

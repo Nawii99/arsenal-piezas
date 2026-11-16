@@ -23,9 +23,9 @@ Quieres captar clientes para auditorías legales y necesitas un gancho que traba
 
 Pon el formulario en tu web o en redes como muestra gratuita y vende la auditoría completa y el arreglo a quien responda, a [TU PRECIO]. Avisa en el correo de que el diagnóstico es orientativo y de que la auditoría completa la revisa un profesional.
 
-- Captación automática de clientes para auditorías legales de webs…
-- Herramienta gratuita de entrada que lleva a una auditoría de pago…
-- Diagnóstico instantáneo para agencias que quieren ofrecer revisión legal…
+- Captación automática de clientes para auditorías legales de webs.
+- Herramienta gratuita de entrada que lleva a una auditoría de pago.
+- Diagnóstico instantáneo para agencias que quieren ofrecer revisión legal.
 
 **Precio orientativo:** 80–200 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

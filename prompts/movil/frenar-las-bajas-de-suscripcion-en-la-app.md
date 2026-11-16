@@ -1,4 +1,4 @@
-# Frenar las bajas de suscripción en la app…
+# Frenar las bajas de suscripción en la app
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando ya tengas suscriptores y veas que se van al segundo o tercer mes, o al ac
 
 Retener a un suscriptor que ya paga cuesta bastante menos que captar uno nuevo; cada baja evitada es ingreso recurrente que se queda.
 
-- Rediseño del flujo de cancelación de suscripciones…
-- Mensajes de recuperación para suscriptores que se van…
-- Análisis de bajas tras la prueba gratis en apps…
+- Rediseño del flujo de cancelación de suscripciones.
+- Mensajes de recuperación para suscriptores que se van.
+- Análisis de bajas tras la prueba gratis en apps.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Vertical slice · Prompt operativo…
+# Vertical slice · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

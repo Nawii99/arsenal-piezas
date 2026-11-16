@@ -1,4 +1,4 @@
-# Parte de asistencia y horas para justificar formación b…
+# Parte de asistencia y horas para justificar formación b
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

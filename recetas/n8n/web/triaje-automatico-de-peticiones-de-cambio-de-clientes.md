@@ -1,4 +1,4 @@
-# Triaje automático de peticiones de cambio de clientes…
+# Triaje automático de peticiones de cambio de clientes
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

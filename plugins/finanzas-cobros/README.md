@@ -1,6 +1,6 @@
 # arsenal-finanzas-cobros · Finanzas · Facturas y cobros
 
-Finanzas · Facturas y cobros: 4 subagentes, 3 comandos /, 3 skills en español, del Arsenal del Marketer.
+Finanzas · Facturas y cobros: 4 subagentes, 4 skills, 3 comandos / en español, del Arsenal del Marketer.
 
 ## Instalar
 
@@ -19,6 +19,7 @@ Finanzas · Facturas y cobros: 4 subagentes, 3 comandos /, 3 skills en español,
 | factura-legal-espana | Skill | Comprueba que una factura lleva todos los datos que exige Hacienda y la corrige o la redacta desde cero. Para autónomos y pymes españolas que empiezan a facturar. | se activa sola cuando hace falta |
 | ingresos-devengados-saas | Skill | Reparte mes a mes los ingresos de suscripciones y servicios de un SaaS, calcula lo facturado, lo reconocido y lo diferido, y separa los casos dudosos para que los resuelva tu contable. | se activa sola cuando hace falta |
 | montar-invoiceshelf-para-clientes | Skill | Instala y configura InvoiceShelf para que un freelance o negocio pequeño haga sus facturas y controle pagos y gastos, y deja montado el cobro por ello. | se activa sola cuando hace falta |
+| verifactu-y-factura-electronica | Skill | Con seis preguntas te dice qué te toca y cuándo: Verifactu (tu programa de facturación) o la factura electrónica entre empresas, con la fecha vigente en el BOE y la anunciada aparte. | se activa sola cuando hace falta |
 | auditor-comisiones-cobro | Subagente | Subagente que calcula lo que te cuesta de verdad cobrar: comisiones de Stripe, PayPal, datáfono y plataformas, y qué método te conviene según el ticket. | pídele a Claude «usa el subagente auditor-comisiones-cobro» |
 | plan-de-cobros | Subagente | Subagente que ordena tus facturas impagadas por antigüedad y riesgo, y escribe la secuencia de reclamación completa hasta el aviso previo a lo legal. | pídele a Claude «usa el subagente plan-de-cobros» |
 | revisor-condiciones-de-cobro | Subagente | Revisa tus presupuestos y contratos: arregla las condiciones de pago para cobres antes y mejor. Una persona comprueba. | pídele a Claude «usa el subagente revisor-condiciones-de-cobro» |

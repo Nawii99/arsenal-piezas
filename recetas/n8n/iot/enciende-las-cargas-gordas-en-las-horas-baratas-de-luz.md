@@ -1,4 +1,4 @@
-# Enciende las cargas gordas en las horas baratas de luz…
+# Enciende las cargas gordas en las horas baratas de luz
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

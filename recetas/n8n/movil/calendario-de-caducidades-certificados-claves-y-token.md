@@ -1,4 +1,4 @@
-# Calendario de caducidades: certificados, claves y token…
+# Calendario de caducidades: certificados, claves y token
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando has tenido, o temes tener, el susto de que la app deje de compilar o deje
 
 Un certificado caducado puede tumbar los avisos push o bloquear una entrega dos días. Este aviso evita ese parón y el pico de estrés.
 
-- Control de renovaciones para un desarrollador que mantiene varias apps…
-- Vigilancia de certificados para una empresa con app en producción…
-- Plantilla de mantenimiento para un equipo pequeño que publica apps…
+- Control de renovaciones para un desarrollador que mantiene varias apps.
+- Vigilancia de certificados para una empresa con app en producción.
+- Plantilla de mantenimiento para un equipo pequeño que publica apps.
 
 **Precio orientativo:** 120–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

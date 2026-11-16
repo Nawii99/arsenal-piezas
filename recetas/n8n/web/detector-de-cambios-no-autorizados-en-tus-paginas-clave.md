@@ -1,4 +1,4 @@
-# Detector de cambios no autorizados en tus páginas clave…
+# Detector de cambios no autorizados en tus páginas clave
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

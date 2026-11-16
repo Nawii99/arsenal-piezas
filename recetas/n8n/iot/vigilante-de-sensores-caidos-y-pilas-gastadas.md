@@ -1,4 +1,4 @@
-# Vigilante de sensores caídos y pilas gastadas…
+# Vigilante de sensores caídos y pilas gastadas
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

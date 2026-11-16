@@ -1,4 +1,4 @@
-# Aviso de caducidades: certificados, claves y contraseña…
+# Aviso de caducidades: certificados, claves y contraseña
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

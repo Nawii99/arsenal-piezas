@@ -1,4 +1,4 @@
-# Aviso y borrador de título al subir un montaje a Drive…
+# Aviso y borrador de título al subir un montaje a Drive
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando subes vídeos ya montados a una carpeta de Drive y te cuesta ponerte a es
 
 Véndelo como servicio de publicación a creadores o pymes que graban mucho: tú montas, la automatización prepara el texto y tú lo repasas. Cobra una cuota mensual por vídeos al mes, [TU PRECIO].
 
-- Servicio de publicación para creadores que graban mucho y no quieren escribir textos…
-- Cuota mensual de borradores de publicación para pymes con varios vídeos al mes…
-- Automatización de textos de publicación como parte de un paquete de edición…
+- Servicio de publicación para creadores que graban mucho y no quieren escribir textos.
+- Cuota mensual de borradores de publicación para pymes con varios vídeos al mes.
+- Automatización de textos de publicación como parte de un paquete de edición.
 
 **Precio orientativo:** 40–80 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

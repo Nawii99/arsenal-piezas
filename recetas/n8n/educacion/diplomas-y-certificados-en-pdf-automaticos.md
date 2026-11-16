@@ -1,4 +1,4 @@
-# Diplomas y certificados en PDF automáticos…
+# Diplomas y certificados en PDF automáticos
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

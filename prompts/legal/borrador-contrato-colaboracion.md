@@ -1,8 +1,8 @@
-# Borrador de contrato de colaboración para presentar al clien…
+# Borrador de contrato de colaboración para presentar al clien
 
 **Tipo:** Prompt · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 
-Prompt de texto que prepara un borrador de contrato de servicios entre un profesional o sociedad y su cliente, con las cláusulas que protegen el cobro y el alcance.
+Prompt para generar el borrador de un contrato mercantil de servicios entre un autónomo o pequeña empresa y su cliente, con las cláusulas que protegen al que presta el servicio.
 
 ## Qué es y qué hace
 

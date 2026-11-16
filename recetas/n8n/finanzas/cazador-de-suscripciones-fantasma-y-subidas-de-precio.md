@@ -1,4 +1,4 @@
-# Cazador de suscripciones fantasma y subidas de precio…
+# Cazador de suscripciones fantasma y subidas de precio
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando pagas herramientas, seguros y cuotas por goteo y no sabrías enumerarlas 
 
 Un negocio pequeño arrastra de media 4-8 suscripciones muertas. Cancelar tres de 25 €/mes son 900 €/año recuperados de una sentada.
 
-- Auditoría anual de cargos recurrentes para pymes con muchas herramientas…
-- Detección de subidas de precio para negocios con SaaS a renovación anual…
-- Limpieza de gastos fijos como sesión de consultoría para autónomos…
+- Auditoría anual de cargos recurrentes para pymes con muchas herramientas.
+- Detección de subidas de precio para negocios con SaaS a renovación anual.
+- Limpieza de gastos fijos como sesión de consultoría para autónomos.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

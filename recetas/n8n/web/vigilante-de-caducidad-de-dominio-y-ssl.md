@@ -1,4 +1,4 @@
-# Vigilante de caducidad de dominio y SSL…
+# Vigilante de caducidad de dominio y SSL
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

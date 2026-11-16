@@ -1,4 +1,4 @@
-# Revisión trimestral de contenidos caducados en tu temar…
+# Revisión trimestral de contenidos caducados en tu temar
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Control de gasto de tus APIs de pago con freno automáti…
+# Control de gasto de tus APIs de pago con freno automáti
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Flujo de n8n que cada hora consulta el consumo acumulado del mes en tus APIs de 
 
 Un fallo sin control puede costar cientos de euros en horas; con el freno puesto el daño máximo queda acotado a tu presupuesto diario.
 
-- Control de costes para productos con IA o SMS que cobran por uso…
-- Límites de gasto para agencias que usan APIs en nombre de clientes…
-- Monitorización de facturas de API para startups con presupuesto ajustado…
+- Control de costes para productos con IA o SMS que cobran por uso.
+- Límites de gasto para agencias que usan APIs en nombre de clientes.
+- Monitorización de facturas de API para startups con presupuesto ajustado.
 
 **Precio orientativo:** 150–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

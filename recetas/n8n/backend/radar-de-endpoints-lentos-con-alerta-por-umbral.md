@@ -1,4 +1,4 @@
-# Radar de endpoints lentos con alerta por umbral…
+# Radar de endpoints lentos con alerta por umbral
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cada hora consulta la analítica de Cloudflare, calcula la latencia media y los 
 
 Detectas la degradación en la hora en que ocurre, no a la semana. Evitas pagar más servidor cuando el problema es una sola consulta.
 
-- Monitorización de rendimiento por ruta para APIs de clientes con alerta temprana…
-- Informe mensual de latencia para tiendas online con recomendaciones de optimización…
-- Configuración de alertas de rendimiento para agencias con webs en Cloudflare…
+- Monitorización de rendimiento por ruta para APIs de clientes con alerta temprana.
+- Informe mensual de latencia para tiendas online con recomendaciones de optimización.
+- Configuración de alertas de rendimiento para agencias con webs en Cloudflare.
 
 **Precio orientativo:** 60–200 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

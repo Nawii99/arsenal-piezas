@@ -1,4 +1,4 @@
-# Portfolio y galería web que se actualiza sola…
+# Portfolio y galería web que se actualiza sola
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

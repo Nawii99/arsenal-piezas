@@ -1,4 +1,4 @@
-# Prueba real de que tus copias se restauran…
+# Prueba real de que tus copias se restauran
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cada domingo coge la última copia de seguridad, la restaura en un contenedor Do
 
 Es la diferencia entre recuperar el negocio en una hora o perderlo. Sustituye una auditoría de continuidad y evita el peor gasto imaginable.
 
-- Verificación semanal de copias de seguridad para tiendas y CRM a medida…
-- Auditoría de continuidad con prueba de restauración para pymes con datos de clientes…
-- Servicio de copias verificadas para agencias que gestionan bases de sus clientes…
+- Verificación semanal de copias de seguridad para tiendas y CRM a medida.
+- Auditoría de continuidad con prueba de restauración para pymes con datos de clientes.
+- Servicio de copias verificadas para agencias que gestionan bases de sus clientes.
 
 **Precio orientativo:** 80–200 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Brief de diseño automático desde formulario…
+# Brief de diseño automático desde formulario
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Recoge las respuestas de un formulario de encargo (Tally o Google Forms), se las
 
 Evita 1-2 rondas de correcciones por malentendidos (2-4 horas por proyecto) y te ahorra la reunión inicial de una hora. Coste: céntimos por brief.
 
-- Brief profesional para cada encargo de diseño, enviado al cliente para validar…
-- Configuración de un proceso de briefing para estudios pequeños con formularios…
-- Plantilla de briefing de marca para agencias que reciben encargos por web…
+- Brief profesional para cada encargo de diseño, enviado al cliente para validar.
+- Configuración de un proceso de briefing para estudios pequeños con formularios.
+- Plantilla de briefing de marca para agencias que reciben encargos por web.
 
 **Precio orientativo:** 60–200 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

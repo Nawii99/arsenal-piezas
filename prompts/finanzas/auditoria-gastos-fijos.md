@@ -1,4 +1,4 @@
-# auditoria-gastos-fijos…
+# auditoria-gastos-fijos
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt para cualquier chat de IA que revisa una a una tus cuotas y suscripciones
 
 Encuentra pagos automáticos que ya no usas o que puedes bajar de plan, y ese ahorro se repite cada mes sin tener que vender más.
 
-- Auditoría de gastos fijos para pequeños negocios…
-- Renegociación de contratos y suscripciones como servicio…
+- Auditoría de gastos fijos para pequeños negocios.
+- Renegociación de contratos y suscripciones como servicio.
 
 **Precio orientativo:** 50–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

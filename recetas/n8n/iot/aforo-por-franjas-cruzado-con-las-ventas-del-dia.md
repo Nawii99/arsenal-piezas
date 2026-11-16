@@ -1,4 +1,4 @@
-# Aforo por franjas cruzado con las ventas del día…
+# Aforo por franjas cruzado con las ventas del día
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

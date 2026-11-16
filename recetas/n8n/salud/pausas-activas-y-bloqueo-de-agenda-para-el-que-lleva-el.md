@@ -1,4 +1,4 @@
-# Pausas activas y bloqueo de agenda para el que lleva el…
+# Pausas activas y bloqueo de agenda para el que lleva el
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

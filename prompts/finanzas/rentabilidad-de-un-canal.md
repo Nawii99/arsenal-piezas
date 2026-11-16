@@ -1,4 +1,4 @@
-# rentabilidad-de-un-canal…
+# rentabilidad-de-un-canal
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt para cualquier chat de IA que analiza si un canal o campaña da dinero de
 
 Corta el gasto que no se recupera y mete más donde el cliente sale barato y repite, con criterio numérico en vez de intuición.
 
-- Informe de rentabilidad de campañas para pequeños negocios…
-- Control de coste por cliente como servicio mensual…
+- Informe de rentabilidad de campañas para pequeños negocios.
+- Control de coste por cliente como servicio mensual.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

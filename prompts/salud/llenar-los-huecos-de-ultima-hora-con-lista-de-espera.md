@@ -1,4 +1,4 @@
-# Llenar los huecos de última hora con lista de espera…
+# Llenar los huecos de última hora con lista de espera
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

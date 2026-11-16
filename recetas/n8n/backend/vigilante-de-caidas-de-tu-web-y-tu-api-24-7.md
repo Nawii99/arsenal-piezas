@@ -1,4 +1,4 @@
-# Vigilante de caídas de tu web y tu API 24/7…
+# Vigilante de caídas de tu web y tu API 24/7
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -45,15 +45,16 @@ Si algo falla dos veces seguidas te manda un mensaje a Telegram, y cuando se rec
 ## Los nodos, en orden
 1. **Schedule Trigger** — Trigger Interval: Minutes, Minutes Between Triggers: 5.
 2. **Code** (nombre: Lista de URLs) — modo "Run Once for All Items". Devuelve un item por URL a vigilar. Código más abajo.
-3. **Loop Over Items** (antes Split In Batches) — Batch Size: 1. Así una URL lenta no bloquea a las demás.
-4. **HTTP Request** — Method: GET, URL: `={{ $json.url }}`, Response: Include Response Headers and Status, Never Error (activa "Always Output Data" y en Settings pon "On Error: Continue (using error output)"), Timeout: 10000 ms. En Options activa Full Response.
+3. **Loop Over Items** (antes Split In Batches) — Batch Size: 1. Así una URL lenta no bloquea a las demás. Su salida «loop» (la segunda) va al nodo siguiente; la «done» queda sin conectar. La salida del nodo del paso 11 vuelve a la entrada de este nodo.
+3 bis. **Set** (Edit Fields, nombre exacto: Marcar inicio, porque el código de «Evaluar» lo cita) — activa que conserve los demás campos y añade un campo numérico `inicio` con `={{ Date.now() }}`. Va justo antes del HTTP Request.
+4. **HTTP Request** — Method: GET, URL: `={{ $json.url }}`, Response: Include Response Headers and Status, Never Error (activa "Always Output Data" y en Settings pon "On Error: Continue (using error output)"), Timeout: 10000 ms. En Options activa Full Response. Las dos salidas del nodo (la normal y la de error) se conectan al nodo del paso 5.
 5. **Code** (nombre: Evaluar) — decide si la respuesta es buena o mala comparando código de estado, milisegundos y texto esperado.
-6. **Google Sheets** (nombre: Leer estado) — Operation: Get Row(s), Document: monitor, Sheet: estado, Filter: url igual a `={{ $json.url }}`.
+6. **Google Sheets** (nombre: Leer estado) — Operation: Get Row(s), Document: monitor, Sheet: estado, Filter: url igual a `={{ $json.url }}`. Activa «Always Output Data» para que, si la URL aún no está en la hoja, el flujo siga.
 7. **Code** (nombre: Decidir aviso) — compara el estado nuevo con el guardado y marca `avisar: true` solo en el cambio (dos fallos seguidos para entrar en caída, un OK para salir).
 8. **Google Sheets** (nombre: Guardar estado) — Operation: Append or Update Row, columna clave: url.
-9. **IF** — Condition: Boolean, Value 1 `={{ $json.avisar }}`, is true.
-10. **Telegram** — Credencial «Telegram API» (el token no se escribe en el nodo). Operation: Send Message, Chat ID: el tuyo, Text: `={{ $json.mensaje }}`, Parse Mode: HTML.
-11. **Google Sheets** (nombre: Historial) — Operation: Append Row en la pestaña historial.
+9. **IF** (va después de «Guardar estado») — Condition: Boolean, Value 1 `={{ $('Decidir aviso').item.json.avisar }}` (aquí `$json` ya es la respuesta de Google Sheets, no el aviso), is true. La salida true va al paso 10; la false va directa al paso 11.
+10. **Telegram** — Credencial «Telegram API» (el token no se escribe en el nodo). Operation: Send Message, Chat ID: el tuyo, Text: `={{ $('Decidir aviso').item.json.mensaje }}`, Parse Mode: HTML. En Settings activa Retry On Fail y On Error: Continue (regular output), para que aunque Telegram falle se anote en el historial. Su salida va al paso 11.
+11. **Google Sheets** (nombre: Historial) — Operation: Append Row en la pestaña historial, con cada columna (fecha, url, evento, codigo, ms, mensaje) tomada de `$('Decidir aviso').item.json.<campo>`. Recibe la salida de Telegram y también la salida false del IF.
 
 ## El código del nodo "Lista de URLs"
 ```javascript
@@ -67,27 +68,35 @@ return urls.map(u => ({ json: u }));
 
 ## El código del nodo "Evaluar"
 ```javascript
-const req = $('Lista de URLs').all().find(i => i.json.url === $json.url) || { json: {} };
-const cfg = req.json;
-const status = $json.statusCode || $json.error?.status || 0;
-const cuerpo = typeof $json.body === 'string' ? $json.body : JSON.stringify($json.body || '');
-const ms = Date.now() - new Date($execution.startedAt || Date.now()).getTime();
+// la URL que se acaba de pedir (url, espera, maxMs, inicio), emparejada con ESTE resultado y no con 'la primera'
+let cfg;
+try { cfg = $('Marcar inicio').itemMatching(0).json; } catch (e) { cfg = $('Marcar inicio').first().json; }
+const status = Number($json.statusCode || ($json.error && ($json.error.status || $json.error.httpCode)) || 0);
+// con «respuesta completa», el nodo HTTP Request deja el texto en «data» (o en «body», según la versión): se miran los dos
+const _b = $json.body ?? $json.data;
+const cuerpo = typeof _b === 'string' ? _b : JSON.stringify(_b || '');
+const ms = Date.now() - Number(cfg.inicio || Date.now());
 let ok = status >= 200 && status < 400;
-if (ok && cfg.espera && !cuerpo.includes(cfg.espera)) ok = false;
-return [{ json: { url: cfg.url, ok, codigo: status, ms, motivo: ok ? 'OK' : ('estado ' + status + ' o texto ausente') } }];
+let motivo = ok ? 'OK' : ('estado ' + status + ' o texto ausente');
+if (ok && cfg.espera && !cuerpo.includes(cfg.espera)) { ok = false; motivo = 'estado ' + status + ' o texto ausente'; }
+if (ok && cfg.maxMs && ms > cfg.maxMs) { ok = false; motivo = 'lenta: ' + ms + ' ms (máximo ' + cfg.maxMs + ')'; }
+return [{ json: { url: cfg.url, ok, codigo: status, ms, motivo } }];
 ```
 
 ## El código del nodo "Decidir aviso"
 ```javascript
-const prev = $('Leer estado').all()[0]?.json || {};
+// resultado de esta vuelta, emparejado con el estado leído (la entrada de este nodo)
+let ev;
+try { ev = $('Evaluar').itemMatching(0).json; } catch (e) { ev = $('Evaluar').first().json; }
+const prev = $input.all()[0]?.json || {};
 const fallos = Number(prev.fallos_seguidos || 0);
 const estadoPrev = prev.estado || 'ok';
 const ahora = new Date().toISOString();
 let estado = estadoPrev, avisar = false, mensaje = '';
-const nuevosFallos = $json.ok ? 0 : fallos + 1;
-if (!$json.ok && nuevosFallos >= 2 && estadoPrev !== 'caida') { estado = 'caida'; avisar = true; mensaje = '🔴 <b>CAÍDA</b> ' + $json.url + ' — ' + $json.motivo; }
-if ($json.ok && estadoPrev === 'caida') { const mins = Math.round((Date.now() - new Date(prev.desde || ahora).getTime())/60000); estado = 'ok'; avisar = true; mensaje = '🟢 <b>RECUPERADA</b> ' + $json.url + ' tras ' + mins + ' min'; }
-return [{ json: { url: $json.url, estado, fallos_seguidos: nuevosFallos, desde: estado !== estadoPrev ? ahora : (prev.desde || ahora), avisar, mensaje, codigo: $json.codigo, ms: $json.ms, fecha: ahora, evento: estado } }];
+const nuevosFallos = ev.ok ? 0 : fallos + 1;
+if (!ev.ok && nuevosFallos >= 2 && estadoPrev !== 'caida') { estado = 'caida'; avisar = true; mensaje = '🔴 <b>CAÍDA</b> ' + ev.url + ' — ' + ev.motivo; }
+if (ev.ok && estadoPrev === 'caida') { const mins = Math.round((Date.now() - new Date(prev.desde || ahora).getTime())/60000); estado = 'ok'; avisar = true; mensaje = '🟢 <b>RECUPERADA</b> ' + ev.url + ' tras ' + mins + ' min'; }
+return [{ json: { url: ev.url, estado, fallos_seguidos: nuevosFallos, desde: estado !== estadoPrev ? ahora : (prev.desde || ahora), avisar, mensaje, codigo: ev.codigo, ms: ev.ms, fecha: ahora, evento: estado } }];
 ```
 
 ## Cómo probarla

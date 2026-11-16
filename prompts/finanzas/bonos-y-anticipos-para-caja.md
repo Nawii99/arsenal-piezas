@@ -1,4 +1,4 @@
-# bonos-y-anticipos-para-caja…
+# bonos-y-anticipos-para-caja
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que diseña bonos prepago, cuotas o anticipos q
 
 Cobrar por adelantado mete dinero hoy en la cuenta y reduce impagos; el descuento controlado suele salir más barato que financiarte.
 
-- Diseño de bonos y cuotas para negocios de servicios…
-- Ofertas de prepago para estabilizar la caja…
-- Modelos de cobro recurrente para pequeños comercios…
+- Diseño de bonos y cuotas para negocios de servicios.
+- Ofertas de prepago para estabilizar la caja.
+- Modelos de cobro recurrente para pequeños comercios.
 
 **Precio orientativo:** 80–220 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

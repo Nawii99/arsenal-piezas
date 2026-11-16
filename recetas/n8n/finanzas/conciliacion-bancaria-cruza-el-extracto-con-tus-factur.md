@@ -1,4 +1,4 @@
-# Conciliación bancaria: cruza el extracto con tus factur…
+# Conciliación bancaria: cruza el extracto con tus factur
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Lee el CSV de movimientos que descargas del banco desde una carpeta de Drive, co
 
 Sustituye 2-4 horas mensuales de picar el extracto. A 30 €/hora son 60-120 € al mes de tu tiempo, y detecta cobros que dabas por perdidos.
 
-- Conciliación mensual de cobros como servicio para negocios que llevan Excel…
-- Limpieza de la hoja de facturas antes de cerrar el ejercicio…
-- Informe de cobros pendientes para reuniones con el gestor…
+- Conciliación mensual de cobros como servicio para negocios que llevan Excel.
+- Limpieza de la hoja de facturas antes de cerrar el ejercicio.
+- Informe de cobros pendientes para reuniones con el gestor.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

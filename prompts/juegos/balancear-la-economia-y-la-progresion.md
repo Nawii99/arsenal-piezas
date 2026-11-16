@@ -1,4 +1,4 @@
-# Balancear la economía y la progresión…
+# Balancear la economía y la progresión
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tu juego ya tenga monedas, recursos, mejoras o niveles y no sepas qué n�
 
 Una economía bien ajustada alarga el tiempo de juego y las buenas reseñas, y en juegos con compras evita que la gente abandone antes de pagar.
 
-- Balanceo de economía y progresión de juegos indie…
-- Hoja de cálculo de curvas de nivel y costes…
-- Diagnóstico de juegos que se hacen pesados o demasiado fáciles…
+- Balanceo de economía y progresión de juegos indie.
+- Hoja de cálculo de curvas de nivel y costes.
+- Diagnóstico de juegos que se hacen pesados o demasiado fáciles.
 
 **Precio orientativo:** 200–600 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

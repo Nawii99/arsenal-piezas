@@ -1,4 +1,4 @@
-# Por qué se me caen los dispositivos…
+# Por qué se me caen los dispositivos
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que diagnostica por capas por qué sensores, enchufes o bombillas intelig
 
 Ahorra horas de prueba y error y evita comprar repetidores o cambiar aparatos que no eran el problema; también salva instalaciones de clientes ya cobradas.
 
-- Diagnóstico remoto de redes domóticas inestables…
-- Servicio de reparación de instalaciones que fallan…
-- Revisión de red doméstica para dispositivos inteligentes…
+- Diagnóstico remoto de redes domóticas inestables.
+- Servicio de reparación de instalaciones que fallan.
+- Revisión de red doméstica para dispositivos inteligentes.
 
 **Precio orientativo:** 40–120 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

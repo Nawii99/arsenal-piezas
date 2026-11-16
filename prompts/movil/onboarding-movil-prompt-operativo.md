@@ -1,4 +1,4 @@
-# Onboarding móvil · Prompt operativo…
+# Onboarding móvil · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 

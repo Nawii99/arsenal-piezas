@@ -1,4 +1,4 @@
-# Make (make.com): lista semanal de clientes sin contacto reci…
+# Make (make.com): lista semanal de clientes sin contacto reci
 
 **Tipo:** Receta de automatización · **Área:** Ventas · **Licencia:** CC BY 4.0
 

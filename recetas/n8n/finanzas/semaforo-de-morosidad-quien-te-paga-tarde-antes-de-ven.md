@@ -1,4 +1,4 @@
-# Semáforo de morosidad: quién te paga tarde antes de ven…
+# Semáforo de morosidad: quién te paga tarde antes de ven
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando vas a dar crédito (trabajar y cobrar después) a un cliente y no recuerd
 
 Pedir anticipo a los clientes de riesgo alto reduce impagos. Un impago de 2.000 € equivale a vender 10.000 € al 20 % de margen: esto lo previene.
 
-- Análisis de riesgo de impago para proveedores que dan crédito a clientes B2B…
-- Política de anticipos automática para talleres y agencias…
-- Informe de morosidad mensual para negocios con pagos a 60-90 días…
+- Análisis de riesgo de impago para proveedores que dan crédito a clientes B2B.
+- Política de anticipos automática para talleres y agencias.
+- Informe de morosidad mensual para negocios con pagos a 60-90 días.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

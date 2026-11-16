@@ -1,5 +1,5 @@
 ---
-name: facturas-espana-2
+name: facturas-ley-espana
 description: Genera o revisa facturas de autónomos y pymes en España con los datos obligatorios (RD 1619/2012), IVA, retención de IRPF y facturas simplificadas o rectificativas. Actívala cuando el usuario pida hacer una factura, revisar una, montar una plantilla de facturas o preparar un pack de facturación para un cliente.
 ---
 
@@ -76,7 +76,7 @@ Tu propio servicio lleva IVA al 21 % y, si eres autónomo profesional y facturas
 Riesgos reales que hay que decir al cliente por escrito:
 
 - Tú preparas documentos, no sustituyes al gestor. Quien firma la declaración es el cliente.
-- Desde la entrada en vigor de Verifactu (Ley 11/2021 y RD 1007/2023) los programas de facturación deben cumplir requisitos técnicos. Las fechas se han aplazado varias veces: [comprueba la fecha vigente en la web de la AEAT antes de prometer nada]. Una plantilla de Word o Excel usada a mano no es un programa, pero hay debate sobre dónde está el límite. Si el cliente quiere volumen, recomendar un programa de facturación homologado y no intentar sustituirlo con n8n.
+- Verifactu (RD 1007/2023) exige requisitos al programa de facturación: sociedades antes del 1-ene-2027 y resto antes del 1-jul-2027 (RDL 15/2025, vigente); Hacienda anunció el 5-oct-2026 aplazarlo a octubre de 2028, aún sin BOE. Según la AEAT, Word o Excel usados solo para escribir e imprimir no son un sistema de facturación; con macros que generan libros registro, sí. Aparte, la factura electrónica entre empresas llega el 6-oct-2027 (más de 8 millones) o el 6-oct-2028 (resto) por la Orden HAC/1028/2026. Si el cliente quiere volumen, recomiéndale un programa con declaración responsable y no intentes sustituirlo con n8n.
 - Las facturas se guardan al menos 4 años a efectos de Hacienda y 6 según el Código de Comercio. Ante la duda, 6.
 
 ## Qué NO hacer

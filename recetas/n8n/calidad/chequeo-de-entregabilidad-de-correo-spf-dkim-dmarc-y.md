@@ -1,4 +1,4 @@
-# Chequeo de entregabilidad de correo: SPF, DKIM, DMARC y…
+# Chequeo de entregabilidad de correo: SPF, DKIM, DMARC y
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

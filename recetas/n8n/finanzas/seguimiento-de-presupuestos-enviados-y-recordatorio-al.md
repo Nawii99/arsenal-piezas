@@ -1,4 +1,4 @@
-# Seguimiento de presupuestos enviados y recordatorio al…
+# Seguimiento de presupuestos enviados y recordatorio al
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

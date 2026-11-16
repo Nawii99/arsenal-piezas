@@ -1,4 +1,4 @@
-# Auditoría de una web · Prompt operativo…
+# Auditoría de una web · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 

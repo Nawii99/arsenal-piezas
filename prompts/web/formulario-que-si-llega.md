@@ -1,4 +1,4 @@
-# formulario-que-si-llega…
+# formulario-que-si-llega
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como desarrollador web freelance. Mo
 
 Cada mensaje perdido es un presupuesto que no pides. Un formulario que llega bien convierte visitas en clientes sin pagar plataformas de cuota mensual.
 
-- Instalación de formularios de contacto con antispam en webs pequeñas…
-- Configuración de avisos por email y recepción de mensajes…
-- Paquete de formulario y aviso de privacidad para autónomos…
+- Instalación de formularios de contacto con antispam en webs pequeñas.
+- Configuración de avisos por email y recepción de mensajes.
+- Paquete de formulario y aviso de privacidad para autónomos.
 
 **Precio orientativo:** 40–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

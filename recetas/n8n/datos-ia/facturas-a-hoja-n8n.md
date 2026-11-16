@@ -1,4 +1,4 @@
-# Facturas escaneadas a hoja de cálculo…
+# Facturas escaneadas a hoja de cálculo
 
 **Tipo:** Receta de automatización · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 

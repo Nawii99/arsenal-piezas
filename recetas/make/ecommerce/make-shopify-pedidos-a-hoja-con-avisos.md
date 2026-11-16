@@ -1,4 +1,4 @@
-# Make (make.com): pedidos de Shopify a Google Sheets con avis…
+# Make (make.com): pedidos de Shopify a Google Sheets con avis
 
 **Tipo:** Receta de automatización · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 

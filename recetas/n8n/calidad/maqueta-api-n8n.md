@@ -1,4 +1,4 @@
-# Maqueta de API con n8n…
+# Maqueta de API con n8n
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando tu flujo llama a un servicio externo de pago y quieres probarlo sin ejecu
 
 Va dentro de la partida 'Entorno de pruebas'. Si el cliente cambia el flujo a menudo, mantener la maqueta al día es una cuota mensual.
 
-- Maqueta de pasarela de pago para probar cobros sin riesgo en desarrollo…
-- Cuota mensual por mantener la maqueta cuando el cliente cambia su flujo…
-- Partida de pruebas en proyectos con varios servicios externos conectados…
+- Maqueta de pasarela de pago para probar cobros sin riesgo en desarrollo.
+- Cuota mensual por mantener la maqueta cuando el cliente cambia su flujo.
+- Partida de pruebas en proyectos con varios servicios externos conectados.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

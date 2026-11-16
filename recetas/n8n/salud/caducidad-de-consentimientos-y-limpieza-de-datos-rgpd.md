@@ -1,4 +1,4 @@
-# Caducidad de consentimientos y limpieza de datos RGPD…
+# Caducidad de consentimientos y limpieza de datos RGPD
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

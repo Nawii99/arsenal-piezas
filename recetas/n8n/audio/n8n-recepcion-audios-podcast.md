@@ -1,8 +1,8 @@
-# Recepción de audios de clientes sin perseguir correos…
+# Recepción de audios de clientes sin perseguir correos
 
 **Tipo:** Receta de automatización · **Área:** Música y audio · **Licencia:** CC BY 4.0
 
-Automatización de n8n para editores de podcast: cuando un cliente sube su audio crudo a su carpeta de Google Drive, registra la entrega en una hoja de cálculo, le envía un email de confirmación con el plazo y te avisa por Telegram.
+Cuando un cliente sube su audio crudo a una carpeta de Drive, n8n lo registra en tu hoja de encargos, le confirma la recepción por email y te avisa por Telegram.
 
 ## Qué es y qué hace
 

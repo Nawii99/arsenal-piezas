@@ -1,4 +1,4 @@
-# Reciclaje de cada clase grabada en cinco piezas de cont…
+# Reciclaje de cada clase grabada en cinco piezas de cont
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

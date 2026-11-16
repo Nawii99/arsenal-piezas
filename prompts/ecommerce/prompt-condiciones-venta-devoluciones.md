@@ -1,4 +1,4 @@
-# Redactor de condiciones de venta y devoluciones…
+# Redactor de condiciones de venta y devoluciones
 
 **Tipo:** Prompt · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 

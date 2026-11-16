@@ -1,4 +1,4 @@
-# Prueba diaria del cobro real: Stripe en modo test y una…
+# Prueba diaria del cobro real: Stripe en modo test y una
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

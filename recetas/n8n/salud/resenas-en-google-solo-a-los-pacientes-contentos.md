@@ -1,4 +1,4 @@
-# Encuesta de fin de tratamiento y petición de reseña en Google…
+# Encuesta de fin de tratamiento y petición de reseña en Google
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

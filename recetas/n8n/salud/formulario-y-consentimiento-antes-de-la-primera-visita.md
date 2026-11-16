@@ -1,4 +1,4 @@
-# Formulario y consentimiento antes de la primera visita…
+# Formulario y consentimiento antes de la primera visita
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

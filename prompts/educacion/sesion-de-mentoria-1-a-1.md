@@ -1,4 +1,4 @@
-# Sesión de mentoría 1 a 1…
+# Sesión de mentoría 1 a 1
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que prepara una sesión de mentoría individual
 
 La mentoría 1 a 1 es lo que más se cobra por hora en formación; un guion sólido justifica el precio y evita sesiones de charla vacía.
 
-- Plantilla de sesión y actas para mentores y coaches…
-- Programa de mentoría 1 a 1 con seguimiento por escrito…
-- Preparación de sesiones para formadores independientes…
+- Plantilla de sesión y actas para mentores y coaches.
+- Programa de mentoría 1 a 1 con seguimiento por escrito.
+- Preparación de sesiones para formadores independientes.
 
 **Precio orientativo:** 30–80 € por hora. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

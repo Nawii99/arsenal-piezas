@@ -1,4 +1,4 @@
-# Pruebas de formularios y captación…
+# Pruebas de formularios y captación
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que prepara una batería de casos límite para formularios de contacto, r
 
 Cada lead que se pierde por un formulario silencioso es una venta regalada; recuperar solo unos pocos al mes ya compensa la hora de pruebas.
 
-- Auditoría de formularios que no entregan los avisos…
-- Revisión de embudos de captación antes de invertir en anuncios…
-- Pruebas de formularios en webs de clientes como servicio mensual…
+- Auditoría de formularios que no entregan los avisos.
+- Revisión de embudos de captación antes de invertir en anuncios.
+- Pruebas de formularios en webs de clientes como servicio mensual.
 
 **Precio orientativo:** 60–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

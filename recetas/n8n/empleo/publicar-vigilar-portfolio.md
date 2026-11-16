@@ -1,4 +1,4 @@
-# Publicar el portfolio gratis y vigilar que no se caiga…
+# Publicar el portfolio gratis y vigilar que no se caiga
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

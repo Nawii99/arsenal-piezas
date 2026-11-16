@@ -1,4 +1,4 @@
-# Validador del feed de productos antes de que Google o M…
+# Validador del feed de productos antes de que Google o M
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

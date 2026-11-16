@@ -1,4 +1,4 @@
-# Revisar licencias de assets antes de vender…
+# Revisar licencias de assets antes de vender
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que clasifica los materiales de terceros de tu 
 
 Evita retiradas de producto, reclamaciones y devoluciones por usar material que no podías usar comercialmente.
 
-- Auditoría de licencias de assets antes de publicar en tiendas para estudios indie…
-- Hoja de créditos y atribuciones lista para incluir en el juego…
-- Revisión previa de material para entregas de render a clientes…
+- Auditoría de licencias de assets antes de publicar en tiendas para estudios indie.
+- Hoja de créditos y atribuciones lista para incluir en el juego.
+- Revisión previa de material para entregas de render a clientes.
 
 **Precio orientativo:** 80–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

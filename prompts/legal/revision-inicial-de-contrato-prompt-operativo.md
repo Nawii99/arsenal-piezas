@@ -1,4 +1,4 @@
-# Revisión inicial de contrato · Prompt operativo…
+# Revisión inicial de contrato · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 

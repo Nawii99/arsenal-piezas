@@ -1,4 +1,4 @@
-# Avisos de seguimiento a 7 y 15 dias…
+# Avisos de seguimiento a 7 y 15 dias
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

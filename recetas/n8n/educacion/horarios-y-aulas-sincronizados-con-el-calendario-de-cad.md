@@ -1,4 +1,4 @@
-# Horarios y aulas sincronizados con el calendario de cad…
+# Horarios y aulas sincronizados con el calendario de cad
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

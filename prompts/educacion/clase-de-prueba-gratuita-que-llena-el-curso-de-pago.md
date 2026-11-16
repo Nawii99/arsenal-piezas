@@ -1,4 +1,4 @@
-# Clase de prueba gratuita que llena el curso de pago…
+# Clase de prueba gratuita que llena el curso de pago
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Antes de abrir matrícula, cuando quieras captar alumnos con una sesión gratuit
 
 Es la forma más barata de vender formación: la gente compra después de comprobar cómo enseñas, sin que tengas que invertir en publicidad.
 
-- Guion de clases abiertas para captar alumnos…
-- Diseño de embudos con masterclass para infoproductores…
-- Webinars de captación para academias locales…
+- Guion de clases abiertas para captar alumnos.
+- Diseño de embudos con masterclass para infoproductores.
+- Webinars de captación para academias locales.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Generador de ejercicios para clase…
+# Generador de ejercicios para clase
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 

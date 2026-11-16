@@ -1,4 +1,4 @@
-# Adelgazar un modelo 3D pesado para web, móvil o AR…
+# Adelgazar un modelo 3D pesado para web, móvil o AR
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como artista técnico 3D. Con los da
 
 Te permite vender configuradores y visores 3D que cargan rápido, y aceptar encargos de optimización, un trabajo que muchos artistas evitan.
 
-- Servicio de optimización de modelos 3D para tiendas online y visores web…
-- Paquete de modelos ligeros GLB para configuradores de producto…
-- Auditoría de rendimiento de assets 3D para apps móviles y AR…
+- Servicio de optimización de modelos 3D para tiendas online y visores web.
+- Paquete de modelos ligeros GLB para configuradores de producto.
+- Auditoría de rendimiento de assets 3D para apps móviles y AR.
 
 **Precio orientativo:** 40–150 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

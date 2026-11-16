@@ -1,4 +1,4 @@
-# Revelado y entrega de fotos por lotes con n8n…
+# Revelado y entrega de fotos por lotes con n8n
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

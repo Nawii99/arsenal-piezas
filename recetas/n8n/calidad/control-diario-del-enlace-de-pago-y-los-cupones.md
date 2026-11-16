@@ -1,4 +1,4 @@
-# Control diario del enlace de pago y los cupones…
+# Control diario del enlace de pago y los cupones
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

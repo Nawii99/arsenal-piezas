@@ -1,4 +1,4 @@
-# Cazador de clips verticales dentro de tus vídeos largos…
+# Cazador de clips verticales dentro de tus vídeos largos
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

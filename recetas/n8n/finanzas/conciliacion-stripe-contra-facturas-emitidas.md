@@ -1,4 +1,4 @@
-# Conciliación Stripe contra facturas emitidas…
+# Conciliación Stripe contra facturas emitidas
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

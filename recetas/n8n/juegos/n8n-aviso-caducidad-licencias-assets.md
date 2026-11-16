@@ -1,4 +1,4 @@
-# Aviso de licencias de assets a punto de caducar…
+# Aviso de licencias de assets a punto de caducar
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ En vez de recordar a mano que asset tiene licencia temporal y cuando vence, la h
 
 Uso interno del estudio; si se ofrece como servicio a otros estudios, se cobraría el montaje inicial del flujo, a definir según número de hojas y canales de aviso.
 
-- Montar el aviso de licencias para estudios indie que usan música y plugins con suscripción…
-- Vender el mantenimiento mensual del flujo y la revisión de la hoja de licencias a un estudio…
-- Adaptar la misma automatización a productoras que gestionan licencias de música o stock…
+- Montar el aviso de licencias para estudios indie que usan música y plugins con suscripción.
+- Vender el mantenimiento mensual del flujo y la revisión de la hoja de licencias a un estudio.
+- Adaptar la misma automatización a productoras que gestionan licencias de música o stock.
 
 **Precio orientativo:** 80–250 € por flujo montado. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

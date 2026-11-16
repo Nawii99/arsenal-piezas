@@ -1,4 +1,4 @@
-# Zapier: borrador de factura desde Google Sheets…
+# Zapier: borrador de factura desde Google Sheets
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

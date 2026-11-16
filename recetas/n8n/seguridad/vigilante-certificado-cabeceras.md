@@ -1,4 +1,4 @@
-# Vigilante del certificado y las cabeceras…
+# Vigilante del certificado y las cabeceras
 
 **Tipo:** Receta de automatización · **Área:** Ciberseguridad · **Licencia:** CC BY 4.0
 

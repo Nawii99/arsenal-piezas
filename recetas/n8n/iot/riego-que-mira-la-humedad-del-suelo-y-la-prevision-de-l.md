@@ -1,4 +1,4 @@
-# Riego que mira la humedad del suelo y la previsión de l…
+# Riego que mira la humedad del suelo y la previsión de l
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

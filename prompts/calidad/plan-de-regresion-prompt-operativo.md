@@ -1,4 +1,4 @@
-# Plan de regresión · Prompt operativo…
+# Plan de regresión · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

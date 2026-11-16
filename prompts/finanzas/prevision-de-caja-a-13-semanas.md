@@ -1,4 +1,4 @@
-# Previsión de caja a 13 semanas…
+# Previsión de caja a 13 semanas
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como director financiero para construir una previsión de teso
 
 Ver el agujero con semanas de antelación te deja adelantar cobros o aplazar pagos a tiempo, en vez de tirar de descubierto o de tarjeta.
 
-- Previsión de tesorería trimestral para autónomos y pymes…
-- Plan de caja para negocios con estacionalidad o pagos gordos…
-- Seguimiento mensual de tesorería con alertas de semanas críticas…
+- Previsión de tesorería trimestral para autónomos y pymes.
+- Plan de caja para negocios con estacionalidad o pagos gordos.
+- Seguimiento mensual de tesorería con alertas de semanas críticas.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

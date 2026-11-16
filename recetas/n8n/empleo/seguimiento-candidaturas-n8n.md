@@ -1,4 +1,4 @@
-# Seguimiento de candidaturas enviadas…
+# Seguimiento de candidaturas enviadas
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

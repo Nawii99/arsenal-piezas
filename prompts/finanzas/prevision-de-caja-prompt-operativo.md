@@ -1,4 +1,4 @@
-# Previsión de caja · Prompt operativo…
+# Previsión de caja · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

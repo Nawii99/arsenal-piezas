@@ -1,4 +1,4 @@
-# Previsión de caja a 60 días con alerta de números rojos…
+# Previsión de caja a 60 días con alerta de números rojos
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

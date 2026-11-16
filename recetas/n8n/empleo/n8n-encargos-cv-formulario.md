@@ -1,4 +1,4 @@
-# Encargos de CV con formulario y borrador automático…
+# Encargos de CV con formulario y borrador automático
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

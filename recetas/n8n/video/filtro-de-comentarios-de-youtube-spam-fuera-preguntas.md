@@ -1,4 +1,4 @@
-# Filtro de comentarios de YouTube: spam fuera, preguntas…
+# Filtro de comentarios de YouTube: spam fuera, preguntas
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

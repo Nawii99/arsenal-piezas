@@ -1,4 +1,4 @@
-# Mantenimiento predictivo por consumo eléctrico de la má…
+# Mantenimiento predictivo por consumo eléctrico de la má
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

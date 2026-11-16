@@ -1,4 +1,4 @@
-# Cola de reintentos para webhooks que fallan…
+# Cola de reintentos para webhooks que fallan
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando pierdes avisos de pago o de pedido porque tu servidor estaba caído o len
 
 Cada webhook perdido es un pedido sin procesar o un cobro sin registrar. Recuperas el 100% en vez de descubrirlos cuadrando a fin de mes.
 
-- Recepción fiable de pagos y pedidos para tiendas con backend propio…
-- Configuración de colas de webhooks para SaaS pequeños con registro de errores…
-- Mantenimiento de integraciones de pago con revisión mensual de eventos pendientes…
+- Recepción fiable de pagos y pedidos para tiendas con backend propio.
+- Configuración de colas de webhooks para SaaS pequeños con registro de errores.
+- Mantenimiento de integraciones de pago con revisión mensual de eventos pendientes.
 
 **Precio orientativo:** 150–400 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

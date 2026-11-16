@@ -1,4 +1,4 @@
-# Detector de variables de entorno que faltan en producci…
+# Detector de variables de entorno que faltan en producci
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

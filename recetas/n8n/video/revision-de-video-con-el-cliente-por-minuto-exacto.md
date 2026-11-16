@@ -1,4 +1,4 @@
-# Revisión de vídeo con el cliente por minuto exacto…
+# Revisión de vídeo con el cliente por minuto exacto
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

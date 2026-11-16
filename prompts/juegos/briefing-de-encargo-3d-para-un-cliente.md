@@ -1,4 +1,4 @@
-# Briefing de encargo 3D para un cliente…
+# Briefing de encargo 3D para un cliente
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como jefe de proyecto de un estudio 
 
 Cerrar el alcance por escrito evita revisiones infinitas gratis, que es lo que convierte un encargo rentable en trabajo a pérdida.
 
-- Plantilla de briefing y alcance para freelances de modelado y render 3D…
-- Servicio de redacción de encargos cerrados para pequeños estudios…
-- Pack de cuestionario y contrato de alcance para proyectos de visualización…
+- Plantilla de briefing y alcance para freelances de modelado y render 3D.
+- Servicio de redacción de encargos cerrados para pequeños estudios.
+- Pack de cuestionario y contrato de alcance para proyectos de visualización.
 
 **Precio orientativo:** 50–200 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

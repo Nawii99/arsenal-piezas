@@ -1,4 +1,4 @@
-# Aviso instantáneo a buscadores al publicar…
+# Aviso instantáneo a buscadores al publicar
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

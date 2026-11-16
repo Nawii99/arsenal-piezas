@@ -1,4 +1,4 @@
-# Monitorizar frío y temperatura crítica en un negocio…
+# Monitorizar frío y temperatura crítica en un negocio
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando una temperatura fuera de rango pueda estropear género o traerte un probl
 
 Evita perder género de golpe y te abre un servicio muy vendible a hostelería, fruterías, farmacias y floristerías.
 
-- Monitorización de frío para tiendas y restaurantes…
-- Registro de temperaturas para inspecciones…
-- Servicio de alertas y revisión mensual de sondas…
+- Monitorización de frío para tiendas y restaurantes.
+- Registro de temperaturas para inspecciones.
+- Servicio de alertas y revisión mensual de sondas.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

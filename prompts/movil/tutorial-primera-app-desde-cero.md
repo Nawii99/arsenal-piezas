@@ -1,4 +1,4 @@
-# Tutorial de mi primera app desde cero…
+# Tutorial de mi primera app desde cero
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Es tu primera app y quieres un camino paso a paso, con el código entero y sin p
 
 Aprende haciendo un primer producto vendible, como un quiz o un contador de hábitos para un nicho concreto, y ofrécelo después a negocios de ese nicho por un pago único de [TU PRECIO].
 
-- Cursos de iniciación en móvil para personas mayores o autónomos, por alumno…
-- Talleres para academias de formación que enseñan una primera app, por grupo…
-- Material descargable de primera app para creadores de contenido, por producto…
+- Cursos de iniciación en móvil para personas mayores o autónomos, por alumno.
+- Talleres para academias de formación que enseñan una primera app, por grupo.
+- Material descargable de primera app para creadores de contenido, por producto.
 
 **Precio orientativo:** 40–120 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

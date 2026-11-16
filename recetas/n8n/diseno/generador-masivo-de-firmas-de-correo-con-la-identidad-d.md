@@ -1,4 +1,4 @@
-# Generador masivo de firmas de correo con la identidad d…
+# Generador masivo de firmas de correo con la identidad d
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

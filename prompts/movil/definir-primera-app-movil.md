@@ -1,4 +1,4 @@
-# Definir tu primera app antes de programarla…
+# Definir tu primera app antes de programarla
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 

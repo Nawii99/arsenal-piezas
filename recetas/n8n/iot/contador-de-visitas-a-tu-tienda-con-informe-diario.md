@@ -1,4 +1,4 @@
-# Contador de visitas a tu tienda con informe diario…
+# Contador de visitas a tu tienda con informe diario
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Espía de cambios en la documentación de APIs de tercero…
+# Espía de cambios en la documentación de APIs de tercero
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Flujo de n8n que cada día descarga las páginas de changelog o de referencia de
 
 Anticipar un cambio de API evita una caída de servicio y la reparación de urgencia: fácilmente medio día de trabajo y clientes enfadados por aviso.
 
-- Vigilancia de APIs para equipos que integran pasarelas de pago…
-- Seguimiento de deprecaciones para startups con varios proveedores externos…
-- Informe semanal de cambios en proveedores para agencias de desarrollo…
+- Vigilancia de APIs para equipos que integran pasarelas de pago.
+- Seguimiento de deprecaciones para startups con varios proveedores externos.
+- Informe semanal de cambios en proveedores para agencias de desarrollo.
 
 **Precio orientativo:** 120–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

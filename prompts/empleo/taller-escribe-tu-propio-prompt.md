@@ -1,4 +1,4 @@
-# Taller para escribir tu propio prompt…
+# Taller para escribir tu propio prompt
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

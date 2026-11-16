@@ -1,4 +1,4 @@
-# Alarma de medición rota en Google Analytics…
+# Alarma de medición rota en Google Analytics
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -32,7 +32,7 @@ Semanas de datos perdidos significan campañas optimizadas a ciegas. Detectarlo 
 ## La receta, paso a paso
 
 ## Qué hace y para quién
-Pide a Google Analytics las sesiones de ayer y las de los 7 días anteriores. Si ayer hubo cero, o si la caída es mayor del 60% respecto a la media, te avisa.
+Pide a Google Analytics las sesiones de ayer y las de los 7 días anteriores. Si ayer hubo cero, o si la caída es del 60% o más respecto a la media (esto último solo cuando la media es de 20 sesiones o más), te avisa.
 Detecta lo que ningún panel te dice: que has dejado de medir, no que hayas dejado de vender.
 
 ## Lo que necesitas antes
@@ -42,13 +42,13 @@ Detecta lo que ningún panel te dice: que has dejado de medir, no que hayas deja
 - Opcional: hoja «Salud medición» para llevar histórico.
 
 ## Los nodos, en orden
-1. **Schedule Trigger** — Cron `0 11 * * *` (a las 11:00, cuando los datos de ayer ya están consolidados), `Timezone` `Europe/Madrid`.
-2. **Google Analytics** («Ayer») — *Resource: Report*, *Operation: Get*, Property ID el tuyo, *Date Range* personalizado: Start `yesterday`, End `yesterday`. Métricas: `sessions`, `totalUsers`, `conversions` (o el nombre de tu evento clave). Sin dimensiones.
-3. **Google Analytics** («Semana anterior») — igual pero Start `8daysAgo`, End `2daysAgo`, y añade la dimensión `date` para tener un valor por día.
-4. **Code** («Comparar») — calcula la media y decide.
-5. **IF** — `{{ $json.avisar }}` is true.
+1. **Schedule Trigger** — Cron `0 11 * * *` (a las 11:00, cuando los datos de ayer ya están consolidados). Pon la zona horaria del flujo (en los ajustes del workflow) en `Europe/Madrid`. Llama al nodo «Cada día a las 11:00».
+2. **Google Analytics** — llámalo exactamente «Ayer» (el código usa `$('Ayer')`). *Resource: Report*, *Operation: Get*, propiedad GA4 con tu ID, *Date Range* personalizado: Start `{{ $now.minus({ days: 1 }).toISODate() }}` y End `{{ $now.minus({ days: 1 }).toISODate() }}` (como expresiones). Métricas: `sessions`, `totalUsers`, `conversions` (o el nombre de tu evento clave). Sin dimensiones. Devuelve todos los resultados (*Return All*) y en las opciones del nodo activa que siempre devuelva datos (*Always Output Data*), para que el flujo siga aunque ayer no haya ninguna fila.
+3. **Google Analytics** — llámalo exactamente «Semana anterior» (el código usa `$('Semana anterior')`). Igual que el anterior (conéctalo a la salida de «Ayer»), pero Start `{{ $now.minus({ days: 8 }).toISODate() }}`, End `{{ $now.minus({ days: 2 }).toISODate() }}`, y añade la dimensión `date` para tener un valor por día. También con *Always Output Data* activado.
+4. **Code** — llámalo exactamente «Comparar», modo *Run Once for All Items*. Calcula la media y decide.
+5. **IF** (llámalo «¿Hay que avisar?») — `{{ $json.avisar }}` is true (condición booleana). Solo la salida *true* se conecta a Telegram; la salida *false* queda sin conectar.
 6. **Telegram** — Text `{{ $json.mensaje }}`.
-7. **Google Sheets** (siempre, fuera del IF) — *Append Row* con fecha, sesiones y media, para tener tu propio histórico independiente de Analytics.
+7. **Google Sheets** (llámalo «Guardar en histórico»; siempre, fuera del IF: conéctalo también directamente a la salida de «Comparar», en paralelo al IF) — *Append Row* con fecha (`{{ $json.fecha }}`), sesiones (`{{ $json.sesionesAyer }}`) y media (`{{ $json.media }}`), para tener tu propio histórico independiente de Analytics.
 
 ## El código del nodo «Comparar»
 ```javascript
@@ -57,8 +57,19 @@ const semana = $('Semana anterior').all().map(i => i.json);
 const num = v => parseFloat(v) || 0;
 
 const sesionesAyer = ayer.reduce((a, r) => a + num(r.sessions), 0);
-const dias = semana.map(r => num(r.sessions)).filter(v => v > 0);
-const media = dias.length ? dias.reduce((a,b) => a+b, 0) / dias.length : 0;
+// GA4 no devuelve fila de los días con 0 sesiones: se construyen los 7 días del intervalo (de hace 8 a hace 2 días),
+// los ausentes cuentan como 0 y la media se divide SIEMPRE entre 7.
+const porDia = {};
+for (const r of semana) {
+  const d = String(r.date ?? '').replace(/\D/g, '').slice(0, 8);
+  if (d.length === 8) porDia[d] = (porDia[d] || 0) + num(r.sessions);
+}
+const dias = [];
+for (let k = 8; k >= 2; k--) dias.push(porDia[$now.minus({ days: k }).toFormat('yyyyLLdd')] || 0);
+let total = dias.reduce((a, b) => a + b, 0);
+// por si las fechas vinieran en otro formato y ninguna encajara: se suman todas las filas igualmente
+if (total === 0) total = semana.reduce((a, r) => a + num(r.sessions), 0);
+const media = total / 7;
 const caida = media > 0 ? Math.round((1 - sesionesAyer / media) * 100) : 0;
 
 const avisos = [];
@@ -68,7 +79,7 @@ else if (media >= 20 && caida >= 60) avisos.push('⚠️ Las sesiones han caído
 return [{ json: {
   avisar: avisos.length > 0,
   sesionesAyer, media: Math.round(media), caida,
-  fecha: new Date(Date.now() - 86400000).toISOString().slice(0,10),
+  fecha: $now.minus({ days: 1 }).toISODate(),
   mensaje: 'Salud de la medición:\n' + avisos.join('\n')
 } }];
 ```

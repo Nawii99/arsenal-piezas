@@ -23,9 +23,9 @@ El gestor te pide las facturas del trimestre y las estás bajando de Stripe una 
 
 Instálala a autónomos y pequeños negocios que cobran con Stripe, por [TU PRECIO] de montaje y una cuota mensual de mantenimiento. El gestor de cada cliente comprueba que los datos de la hoja le sirven para sus impuestos.
 
-- Registro de cobros para autónomos que entregan datos al gestor cada trimestre…
-- Aviso de cobros fallidos para negocios con cuotas periódicas…
-- Cuota mensual de mantenimiento del registro fiscal de pagos…
+- Registro de cobros para autónomos que entregan datos al gestor cada trimestre.
+- Aviso de cobros fallidos para negocios con cuotas periódicas.
+- Cuota mensual de mantenimiento del registro fiscal de pagos.
 
 **Precio orientativo:** 120–300 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

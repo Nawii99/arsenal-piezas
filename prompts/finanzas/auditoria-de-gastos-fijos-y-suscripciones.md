@@ -1,4 +1,4 @@
-# Auditoría de gastos fijos y suscripciones…
+# Auditoría de gastos fijos y suscripciones
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como controller de pymes y revisa tus gastos fijos y suscripci
 
 Recortar fugas de suscripciones duplicadas, seguros mal ajustados y comisiones bancarias baja el gasto fijo mensual sin tocar las ventas.
 
-- Auditoría de gastos fijos y suscripciones para autónomos…
-- Limpieza anual de costes con plan de renegociación de contratos…
-- Informe de fugas de dinero para pymes con ahorro mensual estimado…
+- Auditoría de gastos fijos y suscripciones para autónomos.
+- Limpieza anual de costes con plan de renegociación de contratos.
+- Informe de fugas de dinero para pymes con ahorro mensual estimado.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

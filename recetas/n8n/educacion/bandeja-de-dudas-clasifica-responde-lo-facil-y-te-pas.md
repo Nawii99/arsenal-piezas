@@ -1,4 +1,4 @@
-# Bandeja de dudas: clasifica, responde lo fácil y te pas…
+# Bandeja de dudas: clasifica, responde lo fácil y te pas
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

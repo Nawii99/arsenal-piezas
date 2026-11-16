@@ -1,4 +1,4 @@
-# Alerta de dependencias vulnerables del proyecto…
+# Alerta de dependencias vulnerables del proyecto
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

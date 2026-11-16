@@ -1,4 +1,4 @@
-# Diagnóstico de ventas · Prompt operativo…
+# Diagnóstico de ventas · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Ventas · **Licencia:** CC BY 4.0
 

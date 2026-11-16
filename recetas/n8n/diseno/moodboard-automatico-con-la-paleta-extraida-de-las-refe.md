@@ -1,4 +1,4 @@
-# Moodboard automático con la paleta extraída de las refe…
+# Moodboard automático con la paleta extraída de las refe
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando arrancas un proyecto de identidad o dirección de arte y pierdes una mañ
 
 Convierte 2-3 horas de trabajo de arranque en 5 minutos. A 45 €/hora son unos 110 € por proyecto que dejas de regalar en la fase no facturable.
 
-- Moodboards entregados como fase inicial de cada proyecto de identidad…
-- Paquete de dirección de arte con paleta y referencias para clientes…
-- Informe visual de tendencias para marcas que preparan campañas…
+- Moodboards entregados como fase inicial de cada proyecto de identidad.
+- Paquete de dirección de arte con paleta y referencias para clientes.
+- Informe visual de tendencias para marcas que preparan campañas.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

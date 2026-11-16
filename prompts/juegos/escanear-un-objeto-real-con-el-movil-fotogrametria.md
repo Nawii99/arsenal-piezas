@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como técnico de fotogrametría. Eva
 
 Te abre un servicio muy vendible: digitalizar el catálogo de una tienda o un taller para su web, sin comprar equipo caro.
 
-- Digitalización 3D de catálogo de tiendas para su web con visor…
-- Escaneo de piezas de taller o artesanía para fichas interactivas…
-- Captura de espacios o estatuas para patrimonio y turismo local…
+- Digitalización 3D de catálogo de tiendas para su web con visor.
+- Escaneo de piezas de taller o artesanía para fichas interactivas.
+- Captura de espacios o estatuas para patrimonio y turismo local.
 
 **Precio orientativo:** 30–120 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

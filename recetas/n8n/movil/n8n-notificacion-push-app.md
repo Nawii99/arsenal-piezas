@@ -1,4 +1,4 @@
-# Enviar notificación push desde n8n…
+# Enviar notificación push desde n8n
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

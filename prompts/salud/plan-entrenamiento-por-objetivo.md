@@ -1,4 +1,4 @@
-# Plan de entrenamiento por objetivo sin plantilla genérica…
+# Plan de entrenamiento por objetivo sin plantilla genérica
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

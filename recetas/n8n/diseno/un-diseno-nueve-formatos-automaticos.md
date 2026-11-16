@@ -1,4 +1,4 @@
-# Un diseño, nueve formatos automáticos…
+# Un diseño, nueve formatos automáticos
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando dejas una imagen maestra en la carpeta 1-maestras de Drive, genera autom�
 
 Ahorra 20-30 minutos por campaña. No cuesta nada: el redimensionado se hace dentro de n8n, sin APIs de pago.
 
-- Adaptación de campañas a todos los formatos de redes para agencias pequeñas…
-- Pack de formatos para marcas que lanzan productos cada mes…
-- Servicio de exportación de piezas para clientes con entrega en carpeta organizada…
+- Adaptación de campañas a todos los formatos de redes para agencias pequeñas.
+- Pack de formatos para marcas que lanzan productos cada mes.
+- Servicio de exportación de piezas para clientes con entrega en carpeta organizada.
 
 **Precio orientativo:** 60–200 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

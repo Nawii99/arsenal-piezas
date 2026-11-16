@@ -1,4 +1,4 @@
-# Copia de seguridad 3-2-1 con parte diario de verificaci…
+# Copia de seguridad 3-2-1 con parte diario de verificaci
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

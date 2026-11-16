@@ -1,4 +1,4 @@
-# postmortem-economico-proyecto…
+# postmortem-economico-proyecto
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt para cualquier chat de IA que hace la autopsia económica de un trabajo t
 
 Corregir la desviación te hace presupuestar mejor el siguiente encargo, así dejas de regalar horas y ajustas el precio con datos reales.
 
-- Informe de desviaciones de proyectos para agencias y freelances…
-- Revisión de presupuestos con reglas de mejora…
+- Informe de desviaciones de proyectos para agencias y freelances.
+- Revisión de presupuestos con reglas de mejora.
 
 **Precio orientativo:** 60–180 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# revisor-publicidad-sanitaria…
+# revisor-publicidad-sanitaria
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Antes de publicar cualquier texto sobre tu servicio de salud o bienestar, o cuan
 
 Evita sanciones y retiradas de campañas, y quita frases que ahuyentan a pacientes exigentes; además mejora la conversión al sustituir promesas por argumentos creíbles.
 
-- Revisión de publicidad sanitaria en webs y redes de clínicas…
-- Auditoría de textos con promesas de resultado…
-- Reescritura prudente de folletos y landing pages de bienestar…
+- Revisión de publicidad sanitaria en webs y redes de clínicas.
+- Auditoría de textos con promesas de resultado.
+- Reescritura prudente de folletos y landing pages de bienestar.
 
 **Precio orientativo:** 50–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

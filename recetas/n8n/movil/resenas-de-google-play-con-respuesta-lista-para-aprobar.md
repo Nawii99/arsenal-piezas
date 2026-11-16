@@ -1,4 +1,4 @@
-# Reseñas de Google Play con respuesta lista para aprobar…
+# Reseñas de Google Play con respuesta lista para aprobar
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Receta de n8n que cada hora consulta las reseñas nuevas de tu app en Google Pla
 
 Ahorra unas 4 horas al mes de vigilar la consola y responder a mano. Responder rápido sube la nota media, y la nota media es la que decide si te instalan.
 
-- Respuestas rápidas a reseñas para una app de un negocio con muchos clientes…
-- Gestión de reseñas con aprobación humana para una agencia…
-- Plan de reputación para apps de pago con revisión semanal…
+- Respuestas rápidas a reseñas para una app de un negocio con muchos clientes.
+- Gestión de reseñas con aprobación humana para una agencia.
+- Plan de reputación para apps de pago con revisión semanal.
 
 **Precio orientativo:** 200–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

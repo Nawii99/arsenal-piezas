@@ -1,4 +1,4 @@
-# La hucha de impuestos: aparta el IVA y el IRPF antes de…
+# La hucha de impuestos: aparta el IVA y el IRPF antes de
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Calcula con tus facturas emitidas y tus gastos del trimestre en curso cuánto IV
 
 Evita recargos por aplazamiento (que empiezan en un 5% y llegan al 20%) y el clásico agujero de tesorería del trimestre. En 40.000 € de facturación son 400-1.600 €.
 
-- Previsión fiscal trimestral como servicio para autónomos en estimación directa…
-- Control de la hucha de impuestos para microempresas que facturan con IVA…
-- Calendario fiscal con avisos previos para negocios pequeños…
+- Previsión fiscal trimestral como servicio para autónomos en estimación directa.
+- Control de la hucha de impuestos para microempresas que facturan con IVA.
+- Calendario fiscal con avisos previos para negocios pequeños.
 
 **Precio orientativo:** 100–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Textos legales para clientes: del formulario al Google Doc s…
+# Textos legales para clientes: del formulario al Google Doc s
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Atiendes a varios clientes que te piden textos legales y pierdes horas recogiend
 
 Úsalo como puerta de entrada de tu servicio de textos legales para webs y cobra por documento entregado, [TU PRECIO]. Antes de enviar nada al cliente, un profesional revisa el borrador.
 
-- Recogida automática de datos legales para varios clientes a la vez…
-- Servicio de textos legales por documento entregado con formulario de entrada…
-- Mantenimiento de la plantilla de textos legales al cambiar la normativa…
+- Recogida automática de datos legales para varios clientes a la vez.
+- Servicio de textos legales por documento entregado con formulario de entrada.
+- Mantenimiento de la plantilla de textos legales al cambiar la normativa.
 
 **Precio orientativo:** 60–180 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

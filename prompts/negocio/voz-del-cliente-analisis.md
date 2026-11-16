@@ -1,4 +1,4 @@
-# Voz del cliente: qué quieren de verdad, según lo que ya te h…
+# Voz del cliente: qué quieren de verdad, según lo que ya te h
 
 **Tipo:** Prompt · **Área:** Negocio · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando vas a decidir qué ofrecer, qué mejorar o qué poner en tu web, y tienes
 
 Vende un informe de «voz del cliente» a pequeños negocios: recoges sus reseñas, correos y encuestas (con su permiso), pasas el prompt y entregas el informe con citas.
 
-- Hacer informes de voz del cliente a pequeños negocios antes de decidir una oferta nueva…
-- Analizar reseñas de un hotel o restaurante para priorizar mejoras de servicio…
-- Preparar la base de textos de una web nueva con las frases reales de sus clientes…
+- Hacer informes de voz del cliente a pequeños negocios antes de decidir una oferta nueva.
+- Analizar reseñas de un hotel o restaurante para priorizar mejoras de servicio.
+- Preparar la base de textos de una web nueva con las frases reales de sus clientes.
 
 **Precio orientativo:** 80–250 € por informe. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

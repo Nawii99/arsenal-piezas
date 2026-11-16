@@ -1,4 +1,4 @@
-# Inventario de claves API con aviso de rotación y fugas…
+# Inventario de claves API con aviso de rotación y fugas
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Flujo de n8n que mantiene una hoja con la ficha de cada credencial (servicio, en
 
 Una clave filtrada puede costar cientos o miles de euros en consumo ajeno en una noche; este control lo detecta el mismo día y sale gratis.
 
-- Auditoría de secretos y claves para equipos de desarrollo pequeños…
-- Higiene de credenciales antes de entregar un proyecto a un cliente…
-- Revisión de seguridad de repositorios para startups y agencias…
+- Auditoría de secretos y claves para equipos de desarrollo pequeños.
+- Higiene de credenciales antes de entregar un proyecto a un cliente.
+- Revisión de seguridad de repositorios para startups y agencias.
 
 **Precio orientativo:** 150–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

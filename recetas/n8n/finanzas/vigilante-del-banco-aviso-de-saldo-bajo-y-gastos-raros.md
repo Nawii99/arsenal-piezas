@@ -1,4 +1,4 @@
-# Vigilante del banco: aviso de saldo bajo y gastos raros…
+# Vigilante del banco: aviso de saldo bajo y gastos raros
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Lee el saldo y los movimientos de tu cuenta cada mañana con la API de open bank
 
 Detectar a tiempo un cargo duplicado o un cobro fraudulento vale entre 50 y 500 € por incidente, y evitar un descubierto ahorra 30-40 € de comisión cada vez.
 
-- Vigilancia bancaria diaria como servicio para autónomos sin tiempo de mirar la cuenta…
-- Alertas de cargos inusuales para pymes con varias domiciliaciones…
-- Configuración de open banking con colchón de seguridad para negocios pequeños…
+- Vigilancia bancaria diaria como servicio para autónomos sin tiempo de mirar la cuenta.
+- Alertas de cargos inusuales para pymes con varias domiciliaciones.
+- Configuración de open banking con colchón de seguridad para negocios pequeños.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

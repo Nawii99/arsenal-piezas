@@ -1,4 +1,4 @@
-# Semáforo de tesorería: saldo real a 30 días vista…
+# Semáforo de tesorería: saldo real a 30 días vista
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cada mañana lee el saldo real de tu cuenta por open banking de GoCardless, lo c
 
 Ver un descubierto con 3 semanas de antelación te evita comisiones de descubierto (30-40 € cada una) y créditos de urgencia al 8-10 % TAE.
 
-- Previsión de caja diaria para autónomos con cuotas fijas y cobros tardíos…
-- Aviso de descubierto para microempresas que quieren evitar comisiones…
-- Configuración de seguimiento de tesorería para negocios estacionales…
+- Previsión de caja diaria para autónomos con cuotas fijas y cobros tardíos.
+- Aviso de descubierto para microempresas que quieren evitar comisiones.
+- Configuración de seguimiento de tesorería para negocios estacionales.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

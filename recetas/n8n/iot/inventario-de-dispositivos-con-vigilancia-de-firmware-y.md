@@ -1,4 +1,4 @@
-# Inventario de dispositivos con vigilancia de firmware y…
+# Inventario de dispositivos con vigilancia de firmware y
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

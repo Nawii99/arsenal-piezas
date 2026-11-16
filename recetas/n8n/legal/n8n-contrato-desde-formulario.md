@@ -1,4 +1,4 @@
-# Del formulario del cliente al contrato listo para firmar…
+# Del formulario del cliente al contrato listo para firmar
 
 **Tipo:** Receta de automatización · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 

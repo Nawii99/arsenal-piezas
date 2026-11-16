@@ -1,4 +1,4 @@
-# Runbook de despliegue · Prompt operativo…
+# Runbook de despliegue · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Infraestructura · **Licencia:** CC BY 4.0
 

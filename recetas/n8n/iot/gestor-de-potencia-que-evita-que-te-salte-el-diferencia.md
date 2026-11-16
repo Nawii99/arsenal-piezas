@@ -1,4 +1,4 @@
-# Gestor de potencia que evita que te salte el diferencia…
+# Gestor de potencia que evita que te salte el diferencia
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

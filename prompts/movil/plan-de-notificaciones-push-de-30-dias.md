@@ -1,4 +1,4 @@
-# Plan de notificaciones push de 30 días…
+# Plan de notificaciones push de 30 días
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando ya tengas usuarios instalados que entran una vez y no vuelven, o antes de
 
 Una notificación bien puesta trae de vuelta a alguien que ya te instaló, sin coste por clic; mal puesta, te la bloquean y pierdes ese canal para siempre.
 
-- Calendario de notificaciones de 30 días para apps…
-- Campañas de reactivación para usuarios que no vuelven…
-- Gestión mensual de comunicación de retención de una app…
+- Calendario de notificaciones de 30 días para apps.
+- Campañas de reactivación para usuarios que no vuelven.
+- Gestión mensual de comunicación de retención de una app.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Facturas de gastos del correo al Excel del asesor…
+# Facturas de gastos del correo al Excel del asesor
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

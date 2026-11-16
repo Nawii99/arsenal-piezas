@@ -1,4 +1,4 @@
-# Preparar y presupuestar una pieza para imprimir en 3D…
+# Preparar y presupuestar una pieza para imprimir en 3D
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como técnico de fabricación aditiva con años de taller en F
 
 Evita imprimir tres veces la misma pieza fallida y te da un precio con margen en lugar de cobrar a ojo.
 
-- Impresión 3D bajo pedido con presupuesto de coste real…
-- Prototipos impresos para clientes con revisión previa…
-- Venta de piezas impresas con precio calculado…
+- Impresión 3D bajo pedido con presupuesto de coste real.
+- Prototipos impresos para clientes con revisión previa.
+- Venta de piezas impresas con precio calculado.
 
 **Precio orientativo:** 40–150 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

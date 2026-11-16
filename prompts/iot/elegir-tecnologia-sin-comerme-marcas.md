@@ -1,4 +1,4 @@
-# Elegir tecnología sin comerme marcas…
+# Elegir tecnología sin comerme marcas
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como consultor técnico independiente para elegir tecnología 
 
 Evita la compra equivocada y el rehacer la instalación entera: elegir mal la tecnología es el error que más caro sale y el que no se arregla con soporte.
 
-- Asesoría de elección de tecnología para proyectos domóticos…
-- Informe técnico previo a la compra de equipos…
-- Diseño de arquitectura de sensores para pequeños negocios…
+- Asesoría de elección de tecnología para proyectos domóticos.
+- Informe técnico previo a la compra de equipos.
+- Diseño de arquitectura de sensores para pequeños negocios.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

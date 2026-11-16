@@ -1,4 +1,4 @@
-# Control de stock de material y pedido al proveedor…
+# Control de stock de material y pedido al proveedor
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# n8n: del formulario de brief al borrador de guion en tu corr…
+# n8n: del formulario de brief al borrador de guion en tu corr
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando ya llevas más de dos o tres encargos al mes y pierdes tiempo creando car
 
 Ordena el servicio de vídeo currículum: el cliente rellena un formulario y tú recibes brief, carpeta y primer borrador. Cobras el pack, no la automatización, y lees el guion antes de enviárselo.
 
-- Gestión de encargos de vídeo currículum con carpeta y borrador automáticos…
-- Instalación para estudios de vídeo pequeños que gestionan muchos clientes…
-- Cuota mensual de mantenimiento del flujo de brief y guion…
+- Gestión de encargos de vídeo currículum con carpeta y borrador automáticos.
+- Instalación para estudios de vídeo pequeños que gestionan muchos clientes.
+- Cuota mensual de mantenimiento del flujo de brief y guion.
 
 **Precio orientativo:** 100–250 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Reglas de exportación de Blender al motor…
+# Reglas de exportación de Blender al motor
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como artista técnico de la cadena B
 
 Ahorra las horas que se pierden reparando cada asset a mano y te deja entregar paquetes de assets que el cliente puede usar sin tocar nada.
 
-- Normas de exportación y plantilla de Blender a motor para estudios pequeños…
-- Servicio de preparación de paquetes de assets listos para usar en Unity o Unreal…
-- Reparación de assets mal exportados para clientes…
+- Normas de exportación y plantilla de Blender a motor para estudios pequeños.
+- Servicio de preparación de paquetes de assets listos para usar en Unity o Unreal.
+- Reparación de assets mal exportados para clientes.
 
 **Precio orientativo:** 60–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

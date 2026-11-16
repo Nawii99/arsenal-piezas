@@ -1,4 +1,4 @@
-# Auditoría automática de títulos, descripciones y H1 dup…
+# Auditoría automática de títulos, descripciones y H1 dup
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

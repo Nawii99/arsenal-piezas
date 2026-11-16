@@ -1,4 +1,4 @@
-# Carta de presentación a medida como extra de pago…
+# Carta de presentación a medida como extra de pago
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando ya has hecho el currículum web de un cliente y él te manda una oferta d
 
 Extra de 15-30 euros por carta, o incluido gratis en el paquete si el cliente contrata mantenimiento mensual, como gancho de fidelización.
 
-- Extra de carta para clientes de webs de currículum que se presentan a ofertas…
-- Paquete de carta y web para personas en transición laboral…
-- Cartas por oferta para orientadores que atienden a muchas personas a la vez…
+- Extra de carta para clientes de webs de currículum que se presentan a ofertas.
+- Paquete de carta y web para personas en transición laboral.
+- Cartas por oferta para orientadores que atienden a muchas personas a la vez.
 
 **Precio orientativo:** 15–30 € por carta. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

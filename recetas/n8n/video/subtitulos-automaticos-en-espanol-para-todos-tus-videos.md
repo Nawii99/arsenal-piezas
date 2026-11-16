@@ -1,4 +1,4 @@
-# Subtítulos automáticos en español para todos tus vídeos…
+# Subtítulos automáticos en español para todos tus vídeos
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

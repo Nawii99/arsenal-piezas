@@ -1,4 +1,4 @@
-# De carpeta de CV a hoja de cálculo, en automático…
+# De carpeta de CV a hoja de cálculo, en automático
 
 **Tipo:** Receta de automatización · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando te llegan CV sueltos por correo o formulario, los guardas en una carpeta 
 
 Es el flujo que más tiempo ahorra de los seis: convierte una tarea manual (abrir CV, copiar datos, pegar en Sheets) en algo que corre solo cuando llega un CV.
 
-- Hoja automática de candidatos para pymes que reciben CV por correo…
-- Mantenimiento mensual del flujo y de la hoja para una agencia…
-- Adaptación del flujo para procesos de selección con varias ofertas…
+- Hoja automática de candidatos para pymes que reciben CV por correo.
+- Mantenimiento mensual del flujo y de la hoja para una agencia.
+- Adaptación del flujo para procesos de selección con varias ofertas.
 
 **Precio orientativo:** 150–300 € por montaje. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

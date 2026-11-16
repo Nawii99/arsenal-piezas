@@ -1,4 +1,4 @@
-# La hucha del IVA y del IRPF automática…
+# La hucha del IVA y del IRPF automática
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

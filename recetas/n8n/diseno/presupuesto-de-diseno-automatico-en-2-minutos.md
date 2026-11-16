@@ -1,4 +1,4 @@
-# Presupuesto de diseño automático en 2 minutos…
+# Presupuesto de diseño automático en 2 minutos
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Un formulario calcula el precio según el tipo de encargo, las propuestas extra,
 
 Responder en minutos en vez de en días sube la tasa de cierre. Y dejar de presupuestar por intuición evita el clásico proyecto que se come 20 horas por 400 €.
 
-- Presupuestos automáticos para diseñadores que responden peticiones en minutos…
-- Configuración de un cotizador de servicios para agencias pequeñas…
-- Plantilla de presupuesto con tarifas claras para estudios que pierden encargos por lentitud…
+- Presupuestos automáticos para diseñadores que responden peticiones en minutos.
+- Configuración de un cotizador de servicios para agencias pequeñas.
+- Plantilla de presupuesto con tarifas claras para estudios que pierden encargos por lentitud.
 
 **Precio orientativo:** 100–250 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

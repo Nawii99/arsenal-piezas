@@ -1,4 +1,4 @@
-# Guía de marca en PDF que se regenera sola…
+# Guía de marca en PDF que se regenera sola
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

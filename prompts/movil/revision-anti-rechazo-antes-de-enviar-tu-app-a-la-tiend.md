@@ -1,4 +1,4 @@
-# Revisión anti-rechazo antes de enviar tu app a la tiend…
+# Revisión anti-rechazo antes de enviar tu app a la tiend
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como consultor de publicación en App Store y Google Play. Rec
 
 Cada rechazo son días parados y el lanzamiento retrasado; pasar a la primera te ahorra semanas de idas y venidas.
 
-- Revisión anti-rechazo previa al envío a las tiendas…
-- Preparación de la ficha y las notas del revisor…
-- Soporte de publicación en App Store y Google Play para indies…
+- Revisión anti-rechazo previa al envío a las tiendas.
+- Preparación de la ficha y las notas del revisor.
+- Soporte de publicación en App Store y Google Play para indies.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Escucha de menciones de tu juego en YouTube, Reddit y T…
+# Escucha de menciones de tu juego en YouTube, Reddit y T
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

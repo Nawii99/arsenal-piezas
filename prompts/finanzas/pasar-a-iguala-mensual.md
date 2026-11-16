@@ -1,4 +1,4 @@
-# pasar-a-iguala-mensual…
+# pasar-a-iguala-mensual
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt para cualquier chat de IA que convierte un servicio por proyectos en una 
 
 Los ingresos recurrentes estabilizan la caja, reducen el tiempo que dedicas a vender cada mes y aumentan lo que te deja cada cliente a lo largo del año.
 
-- Diseño de igualas mensuales para freelances y agencias…
-- Propuestas de cuota para clientes habituales…
+- Diseño de igualas mensuales para freelances y agencias.
+- Propuestas de cuota para clientes habituales.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

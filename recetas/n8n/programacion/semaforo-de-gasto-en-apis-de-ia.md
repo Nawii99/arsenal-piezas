@@ -1,4 +1,4 @@
-# Semáforo de gasto en APIs de IA…
+# Semáforo de gasto en APIs de IA
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

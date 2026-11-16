@@ -1,4 +1,4 @@
-# Texto de presentación de la demo…
+# Texto de presentación de la demo
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

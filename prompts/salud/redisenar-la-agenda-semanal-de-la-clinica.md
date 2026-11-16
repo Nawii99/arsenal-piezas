@@ -1,4 +1,4 @@
-# Rediseñar la agenda semanal de la clínica…
+# Rediseñar la agenda semanal de la clínica
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como consultor de organización de c
 
 Ajustar tiempos y agrupar sesiones puede liberar huecos vendibles cada semana sin trabajar más horas, y reduce el tiempo muerto entre pacientes.
 
-- Rediseño de agenda semanal para profesionales autónomos de salud…
-- Auditoría de tiempos de consulta con propuesta de bloques…
-- Plantillas de agenda para consultas con ayudante…
+- Rediseño de agenda semanal para profesionales autónomos de salud.
+- Auditoría de tiempos de consulta con propuesta de bloques.
+- Plantillas de agenda para consultas con ayudante.
 
 **Precio orientativo:** 80–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

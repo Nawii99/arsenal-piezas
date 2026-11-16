@@ -1,4 +1,4 @@
-# Reclamación escalada con intereses de demora calculados…
+# Reclamación escalada con intereses de demora calculados
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando te da apuro reclamar y acabas dejándolo pasar. También si nunca has cob
 
 La Ley 3/2004 te permite reclamar intereses (tipo BCE + 8 puntos) y 40 € fijos de gastos de cobro por factura. Sobre 5.000 € vencidos a 90 días son unos 240 €.
 
-- Reclamación de impagos como servicio para autónomos que nunca reclaman…
-- Plantillas de aviso de cobro para agencias con clientes B2B…
-- Gestión de cobro escalado con revisión legal externa como servicio premium…
+- Reclamación de impagos como servicio para autónomos que nunca reclaman.
+- Plantillas de aviso de cobro para agencias con clientes B2B.
+- Gestión de cobro escalado con revisión legal externa como servicio premium.
 
 **Precio orientativo:** 100–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

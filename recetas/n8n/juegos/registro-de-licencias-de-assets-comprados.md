@@ -1,4 +1,4 @@
-# Registro de licencias de assets comprados…
+# Registro de licencias de assets comprados
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

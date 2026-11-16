@@ -1,4 +1,4 @@
-# Punto muerto y suelo de precios…
+# Punto muerto y suelo de precios
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como analista de costes para micronegocios. Recibe precio, cos
 
 Saber el umbral exacto evita aceptar trabajos que te dejan en pérdidas y te da un argumento sólido para no bajar precios.
 
-- Cálculo de punto muerto y precio mínimo para autónomos…
-- Estudio de viabilidad de un servicio antes de lanzarlo…
-- Revisión de tarifas con hoja de cálculo reutilizable…
+- Cálculo de punto muerto y precio mínimo para autónomos.
+- Estudio de viabilidad de un servicio antes de lanzarlo.
+- Revisión de tarifas con hoja de cálculo reutilizable.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

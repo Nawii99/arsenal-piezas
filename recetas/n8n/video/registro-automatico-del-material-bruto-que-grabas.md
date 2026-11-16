@@ -1,4 +1,4 @@
-# Registro automático del material bruto que grabas…
+# Registro automático del material bruto que grabas
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

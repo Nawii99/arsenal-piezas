@@ -1,4 +1,4 @@
-# Errores de producción avisados en Telegram en español…
+# Errores de producción avisados en Telegram en español
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Sentry envía por webhook cada error nuevo de tu web o app a n8n, que lo traduce
 
 Detectar un fallo en 2 minutos en vez de 2 días evita reembolsos y ventas perdidas. Sentry gratis hasta 5.000 errores/mes; n8n auto-alojado, 0 €.
 
-- Monitorización de errores como servicio mensual para webs de clientes…
-- Alertas de fallos en tiempo real para tiendas online…
-- Configuración de Sentry con avisos traducidos para equipos no técnicos…
+- Monitorización de errores como servicio mensual para webs de clientes.
+- Alertas de fallos en tiempo real para tiendas online.
+- Configuración de Sentry con avisos traducidos para equipos no técnicos.
 
 **Precio orientativo:** 100–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

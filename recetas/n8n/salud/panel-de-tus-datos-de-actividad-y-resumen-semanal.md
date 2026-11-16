@@ -1,4 +1,4 @@
-# Panel de tus datos de actividad y resumen semanal…
+# Panel de tus datos de actividad y resumen semanal
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

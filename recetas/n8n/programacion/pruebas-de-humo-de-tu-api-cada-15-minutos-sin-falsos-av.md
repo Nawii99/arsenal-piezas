@@ -1,4 +1,4 @@
-# Pruebas de humo de tu API cada 15 minutos sin falsos av…
+# Pruebas de humo de tu API cada 15 minutos sin falsos av
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Flujo de n8n que lee de una hoja la lista de comprobaciones (URL, método, cabec
 
 Sustituye a un servicio de monitorización de 20-50 euros al mes y reduce el tiempo de caída sin detectar de horas a minutos.
 
-- Vigilancia de disponibilidad para tiendas online y APIs de clientes…
-- Monitorización de login y checkout como servicio mensual…
-- Alertas de caída para equipos de producto sin herramienta de pago…
+- Vigilancia de disponibilidad para tiendas online y APIs de clientes.
+- Monitorización de login y checkout como servicio mensual.
+- Alertas de caída para equipos de producto sin herramienta de pago.
 
 **Precio orientativo:** 150–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

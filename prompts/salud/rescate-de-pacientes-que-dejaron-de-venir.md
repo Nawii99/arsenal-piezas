@@ -1,4 +1,4 @@
-# Rescate de pacientes que dejaron de venir…
+# Rescate de pacientes que dejaron de venir
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como responsable de fidelización de
 
 Rellenar huecos con gente que ya te conoce cuesta mucho menos que captar clientes nuevos y se nota en la ocupación de la semana siguiente.
 
-- Campaña de reactivación de pacientes para clínicas pequeñas…
-- Servicio mensual de mensajes de fidelización por WhatsApp para centros de bienestar…
-- Diseño de segmentación de base de datos de clientes inactivos…
+- Campaña de reactivación de pacientes para clínicas pequeñas.
+- Servicio mensual de mensajes de fidelización por WhatsApp para centros de bienestar.
+- Diseño de segmentación de base de datos de clientes inactivos.
 
 **Precio orientativo:** 120–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

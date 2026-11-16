@@ -1,4 +1,4 @@
-# Auditoría semanal de contraste (WCAG) de tu paleta…
+# Auditoría semanal de contraste (WCAG) de tu paleta
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Lee la lista de colores de tu marca desde una hoja de cálculo, calcula el contr
 
 Ahorra media hora de comprobaciones manuales por proyecto y evita rehacer pantallas ya aprobadas, que suele costar entre 200 y 500 € de tu tiempo.
 
-- Auditoría de accesibilidad de paleta antes de entregar un manual de marca…
-- Revisión trimestral de contraste para webs de clientes con mantenimiento…
-- Informe de accesibilidad de color incluido en cada propuesta de identidad…
+- Auditoría de accesibilidad de paleta antes de entregar un manual de marca.
+- Revisión trimestral de contraste para webs de clientes con mantenimiento.
+- Informe de accesibilidad de color incluido en cada propuesta de identidad.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

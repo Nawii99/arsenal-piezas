@@ -1,4 +1,4 @@
-# Espía de versiones y novedades de tus competidores…
+# Espía de versiones y novedades de tus competidores
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando compites con 3-10 apps y quieres enterarte de sus movimientos sin abrir l
 
 Ahorra 2-3 horas al mes de mirar fichas y evita desarrollar durante meses algo que el rival acaba de sacar mejor. Info que otros pagan a 50 €/mes.
 
-- Vigilancia de novedades para una app de un sector con cinco rivales…
-- Informe de competencia para un equipo de producto pequeño…
-- Alertas de lanzamientos para un estudio que vende apps de nicho…
+- Vigilancia de novedades para una app de un sector con cinco rivales.
+- Informe de competencia para un equipo de producto pequeño.
+- Alertas de lanzamientos para un estudio que vende apps de nicho.
 
 **Precio orientativo:** 120–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

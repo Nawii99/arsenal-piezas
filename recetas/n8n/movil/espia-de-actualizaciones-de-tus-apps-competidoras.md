@@ -1,4 +1,4 @@
-# Espía de actualizaciones de tus apps competidoras…
+# Espía de actualizaciones de tus apps competidoras
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Buzón de webhooks a prueba de fallos con cola y reinten…
+# Buzón de webhooks a prueba de fallos con cola y reinten
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

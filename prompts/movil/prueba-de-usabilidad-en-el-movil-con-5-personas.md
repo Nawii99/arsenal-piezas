@@ -1,4 +1,4 @@
-# Prueba de usabilidad en el móvil con 5 personas…
+# Prueba de usabilidad en el móvil con 5 personas
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como investigador de usuarios (UX research) y forma a quien nu
 
 Cinco pruebas de media hora detectan la mayoría de fallos graves y te ahorran pagar desarrollo de funciones que nadie va a usar.
 
-- Pruebas de usabilidad móvil con informe de hallazgos…
-- Pack de guion y material para sesiones con cinco usuarios…
-- Auditoría UX exprés de una app antes de invertir en publicidad…
+- Pruebas de usabilidad móvil con informe de hallazgos.
+- Pack de guion y material para sesiones con cinco usuarios.
+- Auditoría UX exprés de una app antes de invertir en publicidad.
 
 **Precio orientativo:** 250–700 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

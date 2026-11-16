@@ -1,4 +1,4 @@
-# Lista de materiales para un montaje…
+# Lista de materiales para un montaje
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que convierte una idea de aparato conectado con placa tipo ESP32 en lista
 
 Evita comprar componentes incompatibles o que se queman al primer intento, y te permite ofrecer soluciones a medida en vez de revender aparatos de catálogo.
 
-- Diseño de kits de sensores a medida para particulares…
-- Montaje de prototipos conectados para pequeños negocios…
-- Listas de materiales y guías de montaje para talleres…
+- Diseño de kits de sensores a medida para particulares.
+- Montaje de prototipos conectados para pequeños negocios.
+- Listas de materiales y guías de montaje para talleres.
 
 **Precio orientativo:** 60–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

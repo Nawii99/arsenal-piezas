@@ -1,4 +1,4 @@
-# Registro de autoría: huella digital de cada foto…
+# Registro de autoría: huella digital de cada foto
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

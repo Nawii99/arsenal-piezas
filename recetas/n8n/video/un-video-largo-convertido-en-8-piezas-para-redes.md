@@ -1,4 +1,4 @@
-# Un vídeo largo convertido en 8 piezas para redes…
+# Un vídeo largo convertido en 8 piezas para redes
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando grabas vídeos largos o podcast y no te da la vida para sacar contenido d
 
 Sustituye 2-3 horas de redactar de cada vídeo. A 30 €/hora son 60-90 € por vídeo, y el coste de IA es de unos 0,10 €.
 
-- Reaprovechamiento de vídeos de formación para empresas en piezas de redes y newsletter…
-- Pack mensual de contenido derivado para creadores que graban vídeo largo…
-- Servicio de repurposing para podcasters, con entrega semanal de piezas revisadas…
+- Reaprovechamiento de vídeos de formación para empresas en piezas de redes y newsletter.
+- Pack mensual de contenido derivado para creadores que graban vídeo largo.
+- Servicio de repurposing para podcasters, con entrega semanal de piezas revisadas.
 
 **Precio orientativo:** 50–150 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

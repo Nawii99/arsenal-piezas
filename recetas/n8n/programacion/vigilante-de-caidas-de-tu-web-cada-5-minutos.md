@@ -1,4 +1,4 @@
-# Vigilante de caídas de tu web cada 5 minutos…
+# Vigilante de caídas de tu web cada 5 minutos
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tengas webs o APIs de clientes en producción y no quieras pagar 15 € a
 
 Sustituye un Uptime Robot de pago (unos 8-25 €/mes) y evita horas de caída sin enterarte, que en una tienda son ventas perdidas directas.
 
-- Monitorización de webs y APIs de clientes como servicio mensual…
-- Alertas de caída para tiendas online con ventas por hora…
-- Informe mensual de disponibilidad para clientes con acuerdo de nivel de servicio…
+- Monitorización de webs y APIs de clientes como servicio mensual.
+- Alertas de caída para tiendas online con ventas por hora.
+- Informe mensual de disponibilidad para clientes con acuerdo de nivel de servicio.
 
 **Precio orientativo:** 40–100 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

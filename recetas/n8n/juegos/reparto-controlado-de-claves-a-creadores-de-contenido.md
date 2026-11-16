@@ -1,4 +1,4 @@
-# Reparto controlado de claves a creadores de contenido…
+# Reparto controlado de claves a creadores de contenido
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

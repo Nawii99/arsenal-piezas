@@ -1,4 +1,4 @@
-# Depurar un dispositivo que se reinicia o se desconecta…
+# Depurar un dispositivo que se reinicia o se desconecta
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt de interrogatorio técnico guiado para averiguar por qué un ESP32, Shell
 
 Te ahorra horas de prueba y error y de piezas devueltas, y evita entregar a un cliente un montaje que fallará a la semana.
 
-- Soporte técnico de dispositivos que se reinician…
-- Revisión de instalaciones con Shelly y Sonoff…
+- Soporte técnico de dispositivos que se reinician.
+- Revisión de instalaciones con Shelly y Sonoff.
 
 **Precio orientativo:** 30–70 € por hora. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

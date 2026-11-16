@@ -1,4 +1,4 @@
-# Pedir un aumento estando dentro…
+# Pedir un aumento estando dentro
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Entrega de galería al cliente con aviso de caducidad…
+# Entrega de galería al cliente con aviso de caducidad
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

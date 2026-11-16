@@ -1,4 +1,4 @@
-# Auditoría semanal de velocidad con PageSpeed y alerta s…
+# Auditoría semanal de velocidad con PageSpeed y alerta s
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

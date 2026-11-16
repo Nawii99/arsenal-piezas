@@ -1,4 +1,4 @@
-# Buzón de sugerencias dentro de la app, clasificado por…
+# Buzón de sugerencias dentro de la app, clasificado por
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando ya tienes un formulario de sugerencias en la app y todo cae en un correo 
 
 Ahorra 3-4 horas al mes de leer y clasificar mensajes, y hace que los fallos graves lleguen a desarrollo el mismo día en vez de la semana siguiente.
 
-- Buzón de sugerencias para una app de fidelidad de un comercio…
-- Clasificación de quejas para una app de un servicio a domicilio…
-- Captación de ideas para una app de un centro deportivo…
+- Buzón de sugerencias para una app de fidelidad de un comercio.
+- Clasificación de quejas para una app de un servicio a domicilio.
+- Captación de ideas para una app de un centro deportivo.
 
 **Precio orientativo:** 250–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

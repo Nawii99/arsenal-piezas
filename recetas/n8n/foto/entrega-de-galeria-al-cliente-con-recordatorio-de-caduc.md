@@ -1,4 +1,4 @@
-# Entrega de galería al cliente con recordatorio de caduc…
+# Entrega de galería al cliente con recordatorio de caduc
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

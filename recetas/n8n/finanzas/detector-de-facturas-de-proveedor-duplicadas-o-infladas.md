@@ -1,4 +1,4 @@
-# Detector de facturas de proveedor duplicadas o infladas…
+# Detector de facturas de proveedor duplicadas o infladas
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando recibes muchas facturas de proveedores por email y las pagas casi sin mir
 
 Pagar dos veces la misma factura pasa más de lo que parece y recuperarlo cuesta meses. Detectar una duplicidad de 800 € al año ya paga la automatización diez veces.
 
-- Control de facturas de proveedor para obras y reformas con muchas subcontratas…
-- Auditoría de pagos duplicados para hostelería y comercio…
-- Revisión de facturas antes del pago como servicio mensual para pymes…
+- Control de facturas de proveedor para obras y reformas con muchas subcontratas.
+- Auditoría de pagos duplicados para hostelería y comercio.
+- Revisión de facturas antes del pago como servicio mensual para pymes.
 
 **Precio orientativo:** 100–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

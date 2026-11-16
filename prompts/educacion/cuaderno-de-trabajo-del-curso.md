@@ -1,4 +1,4 @@
-# Cuaderno de trabajo del curso…
+# Cuaderno de trabajo del curso
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que escribe un cuaderno de trabajo completo a p
 
 Sube el valor percibido de tu formación sin grabar más vídeo, y sirve como regalo de captación o como producto suelto barato.
 
-- Cuadernos de trabajo imprimibles para infoproductores…
+- Cuadernos de trabajo imprimibles para infoproductores.
 - Material descargable de captación como regalo (lead magnet)
-- Cuaderno de ejercicios vendido como producto aparte…
+- Cuaderno de ejercicios vendido como producto aparte.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

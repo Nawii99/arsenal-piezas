@@ -1,4 +1,4 @@
-# Un archivo, todos los formatos: recorte inteligente par…
+# Un archivo, todos los formatos: recorte inteligente par
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Changelog semanal automático a partir de los PR fusiona…
+# Changelog semanal automático a partir de los PR fusiona
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Mensaje corto a alguien de dentro…
+# Mensaje corto a alguien de dentro
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

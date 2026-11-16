@@ -1,4 +1,4 @@
-# Consentimiento y documentos en lenguaje claro…
+# Consentimiento y documentos en lenguaje claro
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando tus documentos están copiados de una plantilla, nadie los lee y no sabes
 
 Documentos claros reducen malentendidos, reclamaciones y discusiones en el mostrador, y ahorran tiempo de explicación en cada visita.
 
-- Reescritura en lenguaje claro de documentos para pacientes…
-- Paquete de hojas informativas y avisos para clínicas pequeñas…
-- Revisión de legibilidad de condiciones de bonos y cancelación…
+- Reescritura en lenguaje claro de documentos para pacientes.
+- Paquete de hojas informativas y avisos para clínicas pequeñas.
+- Revisión de legibilidad de condiciones de bonos y cancelación.
 
 **Precio orientativo:** 50–200 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

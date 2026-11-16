@@ -1,4 +1,4 @@
-# cuadro-mando-clinica…
+# cuadro-mando-clinica
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando cierras el mes con la sensación de que va bien o mal pero sin datos, o t
 
 Ver a tiempo que baja la ocupación o la repetición te deja reaccionar antes de que se note en la caja, y evita gastar en publicidad cuando el problema está dentro.
 
-- Cuadro de mando mensual en hoja de cálculo para centros de salud…
-- Informe de rentabilidad por servicio y profesional…
-- Asesoría mensual de números para clínicas pequeñas…
+- Cuadro de mando mensual en hoja de cálculo para centros de salud.
+- Informe de rentabilidad por servicio y profesional.
+- Asesoría mensual de números para clínicas pequeñas.
 
 **Precio orientativo:** 100–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

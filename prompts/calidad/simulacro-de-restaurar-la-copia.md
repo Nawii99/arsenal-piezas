@@ -1,4 +1,4 @@
-# Simulacro de restaurar la copia…
+# Simulacro de restaurar la copia
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que prepara un simulacro de recuperación de copias de seguridad. Entran 
 
 Una copia que no se ha probado no es una copia; el simulacro evita quedarte días sin vender y tener que rehacer meses de trabajo.
 
-- Simulacro de restauración de copias para pymes…
-- Plan de continuidad de negocio básico para micropymes…
-- Revisión trimestral de copias y accesos de clientes…
+- Simulacro de restauración de copias para pymes.
+- Plan de continuidad de negocio básico para micropymes.
+- Revisión trimestral de copias y accesos de clientes.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

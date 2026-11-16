@@ -1,4 +1,4 @@
-# Detector de cambios raros en tus páginas clave…
+# Detector de cambios raros en tus páginas clave
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Vigilante de subidas de precio de tus proveedores…
+# Vigilante de subidas de precio de tus proveedores
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

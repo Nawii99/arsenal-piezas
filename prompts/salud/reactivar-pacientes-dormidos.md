@@ -1,4 +1,4 @@
-# reactivar-pacientes-dormidos…
+# reactivar-pacientes-dormidos
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando tienes cientos de fichas de pacientes que no vienen desde hace meses y qu
 
 Recuperar a alguien que ya te conoce cuesta mucho menos que traer un paciente nuevo con publicidad, y aprovecha una base de datos que ya tienes pagada.
 
-- Campaña de reactivación de bases de pacientes para clínicas privadas…
-- Guiones de llamada y mensajes segmentados por tipo de paciente…
-- Servicio de limpieza y segmentación de bases de clientes…
+- Campaña de reactivación de bases de pacientes para clínicas privadas.
+- Guiones de llamada y mensajes segmentados por tipo de paciente.
+- Servicio de limpieza y segmentación de bases de clientes.
 
 **Precio orientativo:** 150–500 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Control de temperatura con registro…
+# Control de temperatura con registro
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que diseña la vigilancia de temperatura y humedad de neveras, cámaras, 
 
 Una cámara que se va de temperatura una noche se lleva mucho género por delante; además el registro documentado es un servicio que se puede vender a negocios de la zona.
 
-- Instalación de monitorización de temperatura para hostelería…
-- Servicio de registro de temperaturas para tiendas de alimentación…
-- Alarmas de frío y mantenimiento mensual para negocios de la zona…
+- Instalación de monitorización de temperatura para hostelería.
+- Servicio de registro de temperaturas para tiendas de alimentación.
+- Alarmas de frío y mantenimiento mensual para negocios de la zona.
 
 **Precio orientativo:** 150–500 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

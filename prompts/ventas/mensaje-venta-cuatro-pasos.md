@@ -1,4 +1,4 @@
-# Mensaje de venta en cuatro pasos, con control de afirmacione…
+# Mensaje de venta en cuatro pasos, con control de afirmacione
 
 **Tipo:** Prompt · **Área:** Ventas · **Licencia:** CC BY 4.0
 

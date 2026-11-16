@@ -1,4 +1,4 @@
-# presentar-presupuesto-clinica…
+# presentar-presupuesto-clinica
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando entregas presupuestos y se quedan sin respuesta, o el paciente dice 'me l
 
 Un presupuesto entendido se acepta más y se cobra antes; además evita tratamientos empezados y abandonados que dejan huecos y trabajo sin cobrar.
 
-- Rediseño de presupuestos de tratamiento para clínicas privadas…
-- Guion de presentación de presupuesto al paciente…
-- Formación en comunicación de precios para mostrador y consulta…
+- Rediseño de presupuestos de tratamiento para clínicas privadas.
+- Guion de presentación de presupuesto al paciente.
+- Formación en comunicación de precios para mostrador y consulta.
 
 **Precio orientativo:** 80–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

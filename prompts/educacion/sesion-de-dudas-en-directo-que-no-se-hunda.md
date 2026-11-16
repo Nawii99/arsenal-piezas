@@ -1,4 +1,4 @@
-# Sesión de dudas en directo que no se hunda…
+# Sesión de dudas en directo que no se hunda
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que prepara una tutoría o clase de dudas en di
 
 Es lo que justifica cobrar más por una formación con acompañamiento frente a un curso grabado suelto.
 
-- Guion de sesiones en directo para formaciones con acompañamiento…
-- Dinamización de tutorías grupales para academias…
-- Plantilla de directos mensuales para comunidades de pago…
+- Guion de sesiones en directo para formaciones con acompañamiento.
+- Dinamización de tutorías grupales para academias.
+- Plantilla de directos mensuales para comunidades de pago.
 
 **Precio orientativo:** 40–120 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

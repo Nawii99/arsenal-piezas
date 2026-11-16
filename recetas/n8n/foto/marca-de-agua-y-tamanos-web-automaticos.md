@@ -1,4 +1,4 @@
-# Marca de agua y tamaños web automáticos…
+# Marca de agua y tamaños web automáticos
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Traductor de la ficha de tu app a seis idiomas…
+# Traductor de la ficha de tu app a seis idiomas
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

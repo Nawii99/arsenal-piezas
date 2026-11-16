@@ -1,4 +1,4 @@
-# Vigilante de velocidad de tu web con alerta si empeora…
+# Vigilante de velocidad de tu web con alerta si empeora
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Flujo de n8n que cada madrugada pide a la API de PageSpeed Insights la puntuaci�
 
 Detectar en 24 horas una caída de rendimiento evita semanas de pérdida de posiciones y conversión: en una tienda pequeña, cientos de euros al mes.
 
-- Vigilancia diaria del rendimiento de tiendas online tras cada actualización…
-- Control de calidad web para agencias que entregan webs a clientes…
-- Servicio de monitorización de Core Web Vitals con informe mensual…
+- Vigilancia diaria del rendimiento de tiendas online tras cada actualización.
+- Control de calidad web para agencias que entregan webs a clientes.
+- Servicio de monitorización de Core Web Vitals con informe mensual.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Catálogo en Google Sheets que publica tu web sola…
+# Catálogo en Google Sheets que publica tu web sola
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

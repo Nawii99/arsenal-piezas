@@ -1,4 +1,4 @@
-# Informe semanal de tu competencia en Steam…
+# Informe semanal de tu competencia en Steam
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

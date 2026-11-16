@@ -1,4 +1,4 @@
-# Revisión de claridad de tus materiales de curso…
+# Revisión de claridad de tus materiales de curso
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Antes de publicar un módulo, o cuando recibes muchas dudas repetidas sobre algo
 
 Cada duda repetida son mensajes que respondes gratis; materiales claros reducen el soporte y permiten atender a más alumnos con el mismo tiempo.
 
-- Revisión de claridad de materiales para academias…
-- Edición de contenidos formativos en lenguaje claro…
-- Auditoría de cursos con muchas dudas repetidas…
+- Revisión de claridad de materiales para academias.
+- Edición de contenidos formativos en lenguaje claro.
+- Auditoría de cursos con muchas dudas repetidas.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

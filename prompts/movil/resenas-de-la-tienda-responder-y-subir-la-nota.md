@@ -1,4 +1,4 @@
-# Reseñas de la tienda: responder y subir la nota…
+# Reseñas de la tienda: responder y subir la nota
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tu app tenga una nota que baja, reseñas de una estrella sin contestar, o
 
 La nota media condiciona cuánta gente instala tras ver tu ficha; subirla es descargas gratis, y responder bien recupera clientes que ya te habían pagado.
 
-- Gestión de reseñas de App Store y Google Play…
-- Respuestas a valoraciones negativas con plan de mejora…
-- Sistema para pedir valoraciones en el momento adecuado…
+- Gestión de reseñas de App Store y Google Play.
+- Respuestas a valoraciones negativas con plan de mejora.
+- Sistema para pedir valoraciones en el momento adecuado.
 
 **Precio orientativo:** 60–200 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

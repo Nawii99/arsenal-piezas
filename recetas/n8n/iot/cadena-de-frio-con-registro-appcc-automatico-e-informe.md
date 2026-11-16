@@ -1,4 +1,4 @@
-# Cadena de frío con registro APPCC automático e informe…
+# Cadena de frío con registro APPCC automático e informe
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Email de cliente convertido en ticket con respuesta…
+# Email de cliente convertido en ticket con respuesta
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Vigila el buzón de soporte y, por cada correo nuevo, una IA decide si es un err
 
 Responder en minutos mejora la retención, y separar «bug» de «cambio nuevo» te permite facturar trabajo que antes regalabas. Unos 6-8 €/mes.
 
-- Triaje de soporte para agencias con contratos de mantenimiento…
-- Separación de errores y cambios facturables para desarrolladores freelance…
-- Helpdesk ligero como servicio mensual para pymes con clientes recurrentes…
+- Triaje de soporte para agencias con contratos de mantenimiento.
+- Separación de errores y cambios facturables para desarrolladores freelance.
+- Helpdesk ligero como servicio mensual para pymes con clientes recurrentes.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 
@@ -43,29 +43,38 @@ Para desarrolladores y agencias con contratos de mantenimiento que necesitan ord
 - Cuenta de Trello: trello.com/power-ups/admin o trello.com/app-key para la API key y el token. Crea un tablero «Soporte» con listas: `Bugs`, `Dudas`, `Peticiones nuevas` y anota el ID de cada lista (añade `.json` al final de la URL del tablero para verlos).
 ## Los nodos, en orden
 1) **Gmail Trigger**: Poll Times cada 5 minutos, filtro `Label Names or IDs` = `INBOX`, y en Options activa «Download Attachments» si quieres guardar capturas. Marca «Simple» en off para tener el cuerpo completo.
-2) **Code** (limpiar el correo antes de gastar tokens):
+2) **Code** (modo «Run Once for Each Item»), llámalo exactamente «Limpiar correo» (el nodo del paso 4 lo cita con ese nombre) (limpiar el correo antes de gastar tokens):
 ```javascript
+// Un correo cada vez (modo «Run Once for Each Item»): si llegan varios, cada uno sale con sus datos
 let cuerpo = ($json.text || $json.snippet || '').replace(/\r/g, '');
 cuerpo = cuerpo.split(/El .* escribió:|-----Mensaje original-----|On .* wrote:/)[0];
-return [{ json: { de: $json.from?.value?.[0]?.address || $json.from, nombre: $json.from?.value?.[0]?.name || '', asunto: $json.subject || '(sin asunto)', cuerpo: cuerpo.slice(0, 4000), id: $json.id } }];
+return { json: { de: $json.from?.value?.[0]?.address || $json.from, nombre: $json.from?.value?.[0]?.name || '', asunto: $json.subject || '(sin asunto)', cuerpo: cuerpo.slice(0, 4000), id: $json.id } };
 ```
-3) **HTTP Request** (clasificación): POST `https://api.openai.com/v1/chat/completions`, Header Auth con tu clave. Body:
+3) **HTTP Request** (clasificación): POST `https://api.openai.com/v1/chat/completions`, Header Auth con tu clave. En el cuerpo (Specify Body: Using JSON) escribe una expresión `{{ JSON.stringify({ ... }) }}` que construya ese objeto uniendo el asunto y el cuerpo con `$json.asunto` y `$json.cuerpo`, para que las comillas del correo no rompan el JSON. Body (el objeto):
 ```json
 { "model": "gpt-4o-mini", "response_format": {"type": "json_object"}, "messages": [{"role": "user", "content": "Clasifica este email de soporte. Devuelve SOLO un JSON con: tipo (bug|duda|peticion), urgencia (alta|media|baja), resumen (una frase en español de España, máximo 90 caracteres), facturable (true si es una funcionalidad nueva, false si es un fallo de algo ya entregado). Asunto: {{ $json.asunto }}. Cuerpo: {{ $json.cuerpo }}"}] }
 ```
-4) **Code** (parsear y elegir lista de Trello):
+4) **Code** (modo «Run Once for Each Item»), llámalo exactamente «Elegir lista» (el nodo del paso 6 y el 7 lo citan con ese nombre) (parsear y elegir lista de Trello):
 ```javascript
-const r = JSON.parse($json.choices[0].message.content);
-const listas = { bug: 'ID_LISTA_BUGS', duda: 'ID_LISTA_DUDAS', peticion: 'ID_LISTA_PETICIONES' };
+// Un correo cada vez: $('Limpiar correo').item es el correo emparejado con esta respuesta de la IA
+const c = $('Limpiar correo').item.json;
+let r;
+try {
+  r = JSON.parse($json.choices[0].message.content);
+} catch (e) {
+  // JSON mal formado o sin respuesta: va a Dudas por defecto
+  r = { tipo: 'duda', urgencia: 'media', resumen: c.asunto.slice(0, 90), facturable: false };
+}
+r.facturable = r.facturable === true || r.facturable === 'true';
+const listas = { bug: 'PON_AQUI_ID_LISTA_BUGS', duda: 'PON_AQUI_ID_LISTA_DUDAS', peticion: 'PON_AQUI_ID_LISTA_PETICIONES' };
 const plazos = { alta: '24 horas laborables', media: '3 días laborables', baja: '10 días laborables' };
-const c = $('Code').first().json;
-return [{ json: { ...r, lista: listas[r.tipo] || listas.duda, plazo: plazos[r.urgencia] || plazos.media, de: c.de, nombre: c.nombre, asunto: c.asunto, cuerpo: c.cuerpo } }];
+return { json: { ...r, lista: listas[r.tipo] || listas.duda, plazo: plazos[r.urgencia] || plazos.media, de: c.de, nombre: c.nombre, asunto: c.asunto, cuerpo: c.cuerpo, id: c.id } };
 ```
 5) **Trello**: Resource `Card`, Operation `Create`, List ID `{{ $json.lista }}`, Name `[{{ $json.urgencia }}] {{ $json.resumen }}`, Description:
 `De: {{ $json.nombre }} <{{ $json.de }}>\nFacturable: {{ $json.facturable ? 'SÍ' : 'no' }}\n\n{{ $json.cuerpo }}`
-6) **Gmail**: Operation `Reply to a message`, Message ID `{{ $('Code').first().json.id }}`, Message:
-`Hola {{ $json.nombre }},\n\nHemos recibido tu mensaje y ya está en cola como {{ $json.tipo }}. Nos ponemos con ello en un plazo de {{ $json.plazo }}.\n\n{{ $json.facturable ? 'Como se trata de una funcionalidad nueva, te pasaremos presupuesto antes de empezar.' : '' }}\n\nUn saludo,\nEl equipo de soporte`
-7) **Gmail** (opcional): Operation `Add Label`, etiqueta `Procesado`, para no reprocesar.
+6) **Gmail**: Operation `Reply to a message`, Message ID `{{ $('Elegir lista').item.json.id }}`, tipo de correo texto. Este nodo va después de Trello, así que `$json` ya es la tarjeta: los datos del mensaje se leen de «Elegir lista». Message:
+`Hola{{ $('Elegir lista').item.json.nombre ? ' ' + $('Elegir lista').item.json.nombre : '' }},\n\nHemos recibido tu mensaje y ya está en cola como {{ $('Elegir lista').item.json.tipo }}. Nos ponemos con ello en un plazo de {{ $('Elegir lista').item.json.plazo }}.\n\n{{ $('Elegir lista').item.json.facturable ? 'Como se trata de una funcionalidad nueva, te pasaremos presupuesto antes de empezar.' : '' }}\n\nUn saludo,\nEl equipo de soporte`
+7) **Gmail** (opcional), a continuación de la respuesta: Operation `Add Label`, Message ID `{{ $('Elegir lista').item.json.id }}`, etiqueta `Procesado`, para no reprocesar.
 ## Cómo probarla
 - Mándate tres correos de prueba: uno claramente de bug, otro pidiendo una función nueva y otro con una duda. Comprueba que cada uno cae en su lista.
 - Desconecta el nodo de respuesta las primeras 20 ejecuciones: primero fíate de la clasificación, luego automatiza la respuesta.

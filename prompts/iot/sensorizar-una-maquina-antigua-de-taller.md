@@ -1,4 +1,4 @@
-# Sensorizar una máquina antigua de taller…
+# Sensorizar una máquina antigua de taller
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que diseña cómo medir una máquina de taller sin electrónica: horas de
 
 Convierte una intuición en datos con los que justificar turnos, mantenimiento o una compra; es un servicio que se puede vender a talleres y obradores.
 
-- Sensorización de máquinas antiguas en talleres…
-- Panel de horas y paradas para pequeñas industrias…
-- Medición de producción sin modificar equipos…
+- Sensorización de máquinas antiguas en talleres.
+- Panel de horas y paradas para pequeñas industrias.
+- Medición de producción sin modificar equipos.
 
 **Precio orientativo:** 200–600 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

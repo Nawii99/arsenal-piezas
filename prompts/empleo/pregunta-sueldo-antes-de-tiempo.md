@@ -1,4 +1,4 @@
-# Cuando te preguntan el sueldo antes de tiempo…
+# Cuando te preguntan el sueldo antes de tiempo
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

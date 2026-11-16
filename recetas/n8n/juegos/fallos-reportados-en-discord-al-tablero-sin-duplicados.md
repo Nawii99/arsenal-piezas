@@ -1,4 +1,4 @@
-# Fallos reportados en Discord al tablero, sin duplicados…
+# Fallos reportados en Discord al tablero, sin duplicados
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

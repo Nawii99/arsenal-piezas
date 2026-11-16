@@ -1,4 +1,4 @@
-# Cobros de cuotas: aviso de recibo devuelto y recuperaci…
+# Cobros de cuotas: aviso de recibo devuelto y recuperaci
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

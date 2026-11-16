@@ -1,4 +1,4 @@
-# Entrevista para sacar casos de éxito…
+# Entrevista para sacar casos de éxito
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que prepara la entrevista a un alumno para saca
 
 Los casos reales son lo que más vende una formación: sin ellos toca gastar mucho más en publicidad para convencer.
 
-- Producción de casos de éxito para academias y consultores…
-- Testimonios en texto y vídeo para páginas de venta…
-- Servicio de recogida de reseñas de alumnos…
+- Producción de casos de éxito para academias y consultores.
+- Testimonios en texto y vídeo para páginas de venta.
+- Servicio de recogida de reseñas de alumnos.
 
 **Precio orientativo:** 80–250 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

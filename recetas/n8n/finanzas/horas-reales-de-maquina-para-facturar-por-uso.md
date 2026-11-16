@@ -1,4 +1,4 @@
-# Horas reales de máquina para facturar por uso…
+# Horas reales de máquina para facturar por uso
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

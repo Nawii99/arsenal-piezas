@@ -1,4 +1,4 @@
-# Instrucciones para casa que sí se cumplen…
+# Instrucciones para casa que sí se cumplen
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando la gente sale de la consulta y a los tres días ya no se acuerda de lo qu
 
 Quien cumple las pautas ve resultados, vuelve, termina el tratamiento y te recomienda; también reduces llamadas repitiendo lo mismo.
 
-- Hojas de instrucciones para casa en lenguaje claro para clínicas…
-- Plantillas de pautas por tratamiento con formato imprimible…
-- Servicio de redacción de material para pacientes de centros de fisioterapia…
+- Hojas de instrucciones para casa en lenguaje claro para clínicas.
+- Plantillas de pautas por tratamiento con formato imprimible.
+- Servicio de redacción de material para pacientes de centros de fisioterapia.
 
 **Precio orientativo:** 30–120 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

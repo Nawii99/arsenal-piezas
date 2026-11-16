@@ -23,9 +23,9 @@ Prompt que actúa como analista de producto para apps pequeñas. Recibe tu model
 
 Saber en qué paso se cae la gente evita pagar desarrollo a ciegas: arreglas el paso que rompe la venta en vez de rehacer la app entera.
 
-- Plan de medición y eventos para apps recién lanzadas…
-- Documento de analítica listo para entregar al desarrollador…
-- Panel semanal de métricas clave para fundadores no técnicos…
+- Plan de medición y eventos para apps recién lanzadas.
+- Documento de analítica listo para entregar al desarrollador.
+- Panel semanal de métricas clave para fundadores no técnicos.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

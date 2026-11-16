@@ -1,4 +1,4 @@
-# Manual del profesor para que otro imparta tu clase…
+# Manual del profesor para que otro imparta tu clase
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,8 +22,8 @@ Cuando quieras dejar de impartir tú todas las sesiones, formar a un colaborador
 
 Es lo que te permite cobrar por formaciones que no impartes tú y aceptar dos clientes el mismo día en lugar de rechazar uno.
 
-- Manuales de formador para academias con varios docentes…
-- Franquicia de cursos con material estandarizado…
+- Manuales de formador para academias con varios docentes.
+- Franquicia de cursos con material estandarizado.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

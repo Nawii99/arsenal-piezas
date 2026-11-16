@@ -1,4 +1,4 @@
-# Mockups de producto generados solos al subir el diseño…
+# Mockups de producto generados solos al subir el diseño
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando presentas propuestas de merchandising, packaging o rotulación y pierdes 
 
 Cada presentación con 8 mockups son 45-60 minutos de Photoshop. A 40 €/hora, unos 35 € por propuesta y varias horas al mes recuperadas.
 
-- Presentaciones de merchandising con mockups listos en un día…
-- Paquete mensual de mockups para marcas con catálogo de productos…
-- Set de mockups de packaging para propuestas de estudios de diseño…
+- Presentaciones de merchandising con mockups listos en un día.
+- Paquete mensual de mockups para marcas con catálogo de productos.
+- Set de mockups de packaging para propuestas de estudios de diseño.
 
 **Precio orientativo:** 50–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Informe de progreso del paciente en lenguaje claro…
+# Informe de progreso del paciente en lenguaje claro
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como especialista en comunicación d
 
 Enseñar el avance con datos hace que la renovación se decida sola y da un motivo real para pasar a mantenimiento en vez de desaparecer.
 
-- Informes de progreso en lenguaje claro para consultas de bienestar…
-- Plantillas de seguimiento con escalas sencillas…
-- Servicio de redacción de informes de evolución…
+- Informes de progreso en lenguaje claro para consultas de bienestar.
+- Plantillas de seguimiento con escalas sencillas.
+- Servicio de redacción de informes de evolución.
 
 **Precio orientativo:** 30–120 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

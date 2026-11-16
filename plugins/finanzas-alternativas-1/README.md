@@ -1,6 +1,6 @@
 # arsenal-finanzas-alternativas-1 · Finanzas · Alternativas (1)
 
-Finanzas · Alternativas (1): 19 comandos /, 6 skills, 4 subagentes en español que se parecen a otras piezas de finanzas; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.
+Finanzas · Alternativas (1): 19 comandos /, 5 skills, 4 subagentes en español que se parecen a otras piezas de finanzas; la recomendada de cada grupo está en su plugin temático. Del Arsenal del Marketer.
 
 ## Instalar
 
@@ -34,8 +34,7 @@ Finanzas · Alternativas (1): 19 comandos /, 6 skills, 4 subagentes en español 
 | tarifa-minima | Comando / | Calcula tu precio suelo por hora y por día contando horas reales facturables, gastos fijos, impuestos y vacaciones, y te dice por debajo de qué no se trabaja. | `/tarifa-minima` o `/arsenal-finanzas-alternativas-1:tarifa-minima` |
 | cierre-trimestral-autonomo | Skill | Prepara el cierre trimestral de IVA e IRPF de un autónomo o pyme española a partir de sus facturas, dejando las cifras listas para presentar o para vender como servicio. | se activa sola cuando hace falta |
 | facturas-autonomo-basico | Skill | Ayuda a crear o revisar una factura de autónomo en España explicando cada dato obligatorio, el IVA y la retención de IRPF, sin dar por hecho que el usuario sabe de contabilidad. | se activa sola cuando hace falta |
-| facturas-espana | Skill | Guarda tus datos fiscales y las reglas que hacen que una factura sea válida ante Hacienda: campos obligatorios, IVA, retención de IRPF, simplificada, rectificativa y aviso de Verifactu. | se activa sola cuando hace falta |
-| facturas-espana-2 | Skill | Genera y revisa facturas de autónomo o pyme con todos los datos que exige Hacienda, calcula IVA e IRPF y detecta lo que falta antes de enviarla. Se puede vender como servicio. | se activa sola cuando hace falta |
+| facturas-espana | Skill | Guarda tus datos fiscales y las reglas que hacen válida una factura ante Hacienda: campos obligatorios, IVA, IRPF, simplificada, rectificativa y avisos de Verifactu y factura electrónica. | se activa sola cuando hace falta |
 | prevision-de-caja-skill-guiada | Skill | Previsión de caja repetible: mismas categorías, mismo método cada mes. | se activa sola cuando hace falta |
 | revisar-factura-autonomo | Skill | Revisa que una factura de autónomo o pyme española esté completa y correcta antes de enviarla o registrarla, evitando errores que luego cuesta corregir en el trimestre. | se activa sola cuando hace falta |
 | auditor-de-comisiones | Subagente | Revisa lo que se quedan Stripe, PayPal, marketplaces: lo facturado versus lo realmente ingresado. Una persona comprueba. | pídele a Claude «usa el subagente auditor-de-comisiones» |

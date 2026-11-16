@@ -1,4 +1,4 @@
-# Parte de incidencia reproducible…
+# Parte de incidencia reproducible
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que convierte un «no me funciona» en un parte de incidencia reproducibl
 
 Reduce las idas y venidas con soporte o con quien te programa, que se cobran en horas y en días de tienda a medio gas.
 
-- Redacción de partes de incidencia para clientes sin perfil técnico…
-- Servicio de soporte que traduce fallos a tickets claros…
-- Plantilla de reporte de errores para equipos pequeños…
+- Redacción de partes de incidencia para clientes sin perfil técnico.
+- Servicio de soporte que traduce fallos a tickets claros.
+- Plantilla de reporte de errores para equipos pequeños.
 
 ## El prompt (cópialo entero)
 

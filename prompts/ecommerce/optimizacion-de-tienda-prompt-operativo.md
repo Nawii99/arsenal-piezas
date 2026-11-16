@@ -1,4 +1,4 @@
-# Optimización de tienda · Prompt operativo…
+# Optimización de tienda · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 

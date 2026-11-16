@@ -1,4 +1,4 @@
-# De commits a parte de horas y borrador de factura…
+# De commits a parte de horas y borrador de factura
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

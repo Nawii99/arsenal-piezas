@@ -1,4 +1,4 @@
-# Detector de defectos recurrentes en reseñas y tickets…
+# Detector de defectos recurrentes en reseñas y tickets
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

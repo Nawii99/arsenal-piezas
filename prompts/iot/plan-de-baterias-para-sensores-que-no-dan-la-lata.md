@@ -1,4 +1,4 @@
-# Plan de baterías para sensores que no dan la lata…
+# Plan de baterías para sensores que no dan la lata
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Cuando vayas a instalar sensores a pilas, o cuando ya estés harto de cambiar pi
 
 Cada cambio de pila en casa de un cliente es un desplazamiento que no cobras: alargar la vida de las pilas es margen directo.
 
-- Plan de baterías para instalaciones con muchos sensores…
-- Alertas de batería baja para clientes de mantenimiento…
+- Plan de baterías para instalaciones con muchos sensores.
+- Alertas de batería baja para clientes de mantenimiento.
 
 **Precio orientativo:** 50–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

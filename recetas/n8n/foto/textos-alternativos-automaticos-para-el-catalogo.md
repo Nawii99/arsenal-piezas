@@ -1,4 +1,4 @@
-# Textos alternativos automáticos para el catálogo…
+# Textos alternativos automáticos para el catálogo
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

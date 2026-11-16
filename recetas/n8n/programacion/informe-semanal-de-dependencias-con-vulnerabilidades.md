@@ -1,4 +1,4 @@
-# Informe semanal de dependencias con vulnerabilidades…
+# Informe semanal de dependencias con vulnerabilidades
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Fábrica de exámenes y test desde tus propios apuntes…
+# Fábrica de exámenes y test desde tus propios apuntes
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

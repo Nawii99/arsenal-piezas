@@ -1,4 +1,4 @@
-# Manual de mostrador: teléfono y WhatsApp…
+# Manual de mostrador: teléfono y WhatsApp
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como formador de personal de recepci
 
 Cada llamada bien atendida es una cita; un manual evita perder pacientes por respuestas improvisadas y te ahorra formar a cada persona desde cero.
 
-- Manual de atención telefónica y WhatsApp para clínicas…
-- Banco de respuestas rápidas para recepción…
-- Formación para personal nuevo de mostrador…
+- Manual de atención telefónica y WhatsApp para clínicas.
+- Banco de respuestas rápidas para recepción.
+- Formación para personal nuevo de mostrador.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Reactivación de clientes dormidos con bono personalizad…
+# Reactivación de clientes dormidos con bono personalizad
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

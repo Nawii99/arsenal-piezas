@@ -1,4 +1,4 @@
-# Copia y catalogo de fotos sin perder nada…
+# Copia y catalogo de fotos sin perder nada
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

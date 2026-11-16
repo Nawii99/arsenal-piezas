@@ -1,4 +1,4 @@
-# Depurar un ESP32 o Arduino que se reinicia…
+# Depurar un ESP32 o Arduino que se reinicia
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que guía a depurar una placa ESP32, ESP8266, Arduino o Raspberry Pi que 
 
 Te saca del bucle de horas perdidas cambiando código cuando el problema era alimentación o cableado, y evita comprar placas nuevas sin motivo.
 
-- Reparación y depuración de montajes con ESP32 para clientes…
-- Soporte técnico por hora a aficionados y pymes…
-- Revisión de prototipos antes de pasar a producción…
+- Reparación y depuración de montajes con ESP32 para clientes.
+- Soporte técnico por hora a aficionados y pymes.
+- Revisión de prototipos antes de pasar a producción.
 
 **Precio orientativo:** 30–70 € por hora. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

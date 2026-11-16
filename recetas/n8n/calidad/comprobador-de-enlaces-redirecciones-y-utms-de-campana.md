@@ -1,4 +1,4 @@
-# Comprobador de enlaces, redirecciones y UTMs de campaña…
+# Comprobador de enlaces, redirecciones y UTMs de campaña
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

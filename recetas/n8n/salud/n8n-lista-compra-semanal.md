@@ -1,4 +1,4 @@
-# Lista de la compra automática cada domingo…
+# Lista de la compra automática cada domingo
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

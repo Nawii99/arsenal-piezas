@@ -1,4 +1,4 @@
-# Corte automático del agua ante una fuga…
+# Corte automático del agua ante una fuga
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

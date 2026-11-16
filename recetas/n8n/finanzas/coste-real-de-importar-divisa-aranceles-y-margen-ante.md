@@ -1,4 +1,4 @@
-# Coste real de importar: divisa, aranceles y margen ante…
+# Coste real de importar: divisa, aranceles y margen ante
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

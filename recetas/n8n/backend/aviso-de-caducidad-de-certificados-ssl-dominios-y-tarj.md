@@ -1,4 +1,4 @@
-# Aviso de caducidad de certificados SSL, dominios y tarj…
+# Aviso de caducidad de certificados SSL, dominios y tarj
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

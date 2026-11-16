@@ -1,4 +1,4 @@
-# Director de planos y sonido para vídeo con IA…
+# Director de planos y sonido para vídeo con IA
 
 **Tipo:** Prompt · **Área:** Música y audio · **Licencia:** CC BY 4.0
 

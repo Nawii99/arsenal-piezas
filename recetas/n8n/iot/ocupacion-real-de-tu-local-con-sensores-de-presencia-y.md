@@ -1,4 +1,4 @@
-# Ocupación real de tu local con sensores de presencia y…
+# Ocupación real de tu local con sensores de presencia y
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

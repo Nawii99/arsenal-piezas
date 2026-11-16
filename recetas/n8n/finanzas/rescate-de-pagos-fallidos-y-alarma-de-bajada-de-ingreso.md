@@ -1,4 +1,4 @@
-# Rescate de pagos fallidos y alarma de bajada de ingreso…
+# Rescate de pagos fallidos y alarma de bajada de ingreso
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando cobras cuotas mensuales (mantenimientos, membresías, iguala) y pierdes c
 
 Entre el 20 % y el 40 % de las bajas en cuotas son por tarjeta caducada, no por decisión. Recuperar 3 cuotas de 60 € al mes son 2.160 €/año.
 
-- Recuperación de cuotas fallidas para gimnasios, gestorías y mantenimientos…
-- Seguimiento de ingresos recurrentes como servicio mensual para SaaS pequeños…
-- Campaña de reactivación de pagos para membresías con tarjetas caducadas…
+- Recuperación de cuotas fallidas para gimnasios, gestorías y mantenimientos.
+- Seguimiento de ingresos recurrentes como servicio mensual para SaaS pequeños.
+- Campaña de reactivación de pagos para membresías con tarjetas caducadas.
 
 **Precio orientativo:** 100–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

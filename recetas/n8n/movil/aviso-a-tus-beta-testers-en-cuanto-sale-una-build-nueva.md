@@ -1,4 +1,4 @@
-# Aviso a tus beta testers en cuanto sale una build nueva…
+# Aviso a tus beta testers en cuanto sale una build nueva
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

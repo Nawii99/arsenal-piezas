@@ -1,4 +1,4 @@
-# Plan anti-ausencias en la agenda…
+# Plan anti-ausencias en la agenda
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como consultor de operaciones de cen
 
 Cada hueco perdido es una hora pagada sin ingreso; recuperar aunque sea parte de esas horas se ve directamente en la caja del mes.
 
-- Sistema anti-ausencias con recordatorios para clínicas y centros de bienestar…
-- Redacción de política de cancelación y guion de cobro de reserva…
-- Configuración de avisos automáticos de cita por WhatsApp…
+- Sistema anti-ausencias con recordatorios para clínicas y centros de bienestar.
+- Redacción de política de cancelación y guion de cobro de reserva.
+- Configuración de avisos automáticos de cita por WhatsApp.
 
 **Precio orientativo:** 150–500 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

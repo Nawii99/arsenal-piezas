@@ -1,4 +1,4 @@
-# Arreglar los primeros diez minutos del juego…
+# Arreglar los primeros diez minutos del juego
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Cuando la gente prueba tu juego y lo deja pronto, no entiende los controles o pr
 
 La mayoría de las devoluciones y abandonos ocurren al principio; arreglar el arranque conserva jugadores, reseñas y ventas que ya tenías casi ganadas.
 
-- Rediseño del tutorial y primeros minutos de juegos…
-- Guion de onboarding para juegos móviles y de PC…
+- Rediseño del tutorial y primeros minutos de juegos.
+- Guion de onboarding para juegos móviles y de PC.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

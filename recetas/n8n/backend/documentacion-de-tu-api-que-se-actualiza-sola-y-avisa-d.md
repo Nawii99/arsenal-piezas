@@ -1,4 +1,4 @@
-# Documentación de tu API que se actualiza sola y avisa d…
+# Documentación de tu API que se actualiza sola y avisa d
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

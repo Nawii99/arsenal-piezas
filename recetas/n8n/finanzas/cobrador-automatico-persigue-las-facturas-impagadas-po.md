@@ -1,4 +1,4 @@
-# Cobrador automático: persigue las facturas impagadas po…
+# Cobrador automático: persigue las facturas impagadas po
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cada día laborable revisa tu hoja de facturas emitidas, calcula los días de re
 
 Reclamar sin fallar reduce el plazo medio de cobro entre 10 y 25 días. Con 30.000 € facturados al año, es tener 1.500-2.500 € más en el banco de forma permanente.
 
-- Gestión de cobros como servicio mensual para autónomos con clientes lentos…
-- Plantillas de reclamación amables para agencias que facturan a empresas…
-- Revisión mensual de la cartera de impagos con informe para el cliente…
+- Gestión de cobros como servicio mensual para autónomos con clientes lentos.
+- Plantillas de reclamación amables para agencias que facturan a empresas.
+- Revisión mensual de la cartera de impagos con informe para el cliente.
 
 **Precio orientativo:** 100–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Plan de notificaciones que no queman…
+# Plan de notificaciones que no queman
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como especialista en ciclo de vida de apps y diseña tu plan d
 
 Un buen plan de avisos devuelve usuarios a la app sin pagar publicidad; uno malo hace que desinstalen y pierdas al cliente para siempre.
 
-- Plan de notificaciones y textos push para apps de pequeños negocios locales…
-- Auditoría de avisos de una app con mucha desinstalación y propuesta de recorte…
-- Pack de mensajes de reactivación para apps de suscripción o reservas…
+- Plan de notificaciones y textos push para apps de pequeños negocios locales.
+- Auditoría de avisos de una app con mucha desinstalación y propuesta de recorte.
+- Pack de mensajes de reactivación para apps de suscripción o reservas.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

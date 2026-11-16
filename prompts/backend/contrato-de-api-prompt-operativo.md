@@ -1,4 +1,4 @@
-# Contrato de API · Prompt operativo…
+# Contrato de API · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Backend · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Radar de marcas parecidas registradas en la UE…
+# Radar de marcas parecidas registradas en la UE
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando has creado un naming y una identidad para un cliente y quieres protegerlo
 
 Un aviso a tiempo permite oponerse dentro del plazo de 3 meses, en vez de tener que rehacer toda la identidad después: entre 3.000 y 15.000 € de trabajo.
 
-- Vigilancia de marcas como servicio recurrente para estudios de branding…
-- Alerta de registros parecidos para negocios antes de lanzar una marca…
-- Informe de riesgo de registro para cada naming que entregas…
+- Vigilancia de marcas como servicio recurrente para estudios de branding.
+- Alerta de registros parecidos para negocios antes de lanzar una marca.
+- Informe de riesgo de registro para cada naming que entregas.
 
 **Precio orientativo:** 30–80 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

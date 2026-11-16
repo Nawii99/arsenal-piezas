@@ -1,4 +1,4 @@
-# Tickets de gasto por foto en Telegram a tu hoja de gast…
+# Tickets de gasto por foto en Telegram a tu hoja de gast
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

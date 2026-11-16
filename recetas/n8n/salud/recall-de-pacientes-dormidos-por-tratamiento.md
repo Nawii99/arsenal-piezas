@@ -1,4 +1,4 @@
-# Recall de pacientes dormidos por tratamiento…
+# Recall de pacientes dormidos por tratamiento
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# comunicar-subida-de-precios…
+# comunicar-subida-de-precios
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando llevas años sin tocar precios, te han subido los costes y te da miedo pe
 
 Una subida bien planteada recupera margen perdido por la inflación de costes sin perder cartera, y evita el error de subir a ciegas y quedarte sin pacientes.
 
-- Plan de subida de tarifas con comunicación a clientes…
-- Cálculo de precios por servicio según costes para centros de bienestar…
-- Redacción de cartas y guiones de mostrador sobre cambios de precio…
+- Plan de subida de tarifas con comunicación a clientes.
+- Cálculo de precios por servicio según costes para centros de bienestar.
+- Redacción de cartas y guiones de mostrador sobre cambios de precio.
 
 **Precio orientativo:** 80–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

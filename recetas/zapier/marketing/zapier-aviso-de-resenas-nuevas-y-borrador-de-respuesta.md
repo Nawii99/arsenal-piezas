@@ -1,4 +1,4 @@
-# Zapier: aviso de reseñas nuevas y borrador de respuesta…
+# Zapier: aviso de reseñas nuevas y borrador de respuesta
 
 **Tipo:** Receta de automatización · **Área:** Marketing · **Licencia:** CC BY 4.0
 

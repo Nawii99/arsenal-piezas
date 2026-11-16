@@ -1,4 +1,4 @@
-# Test de nivel diagnóstico…
+# Test de nivel diagnóstico
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt que crea un cuestionario previo que mide el nivel real del alumno, lo cla
 
 Un test de nivel capta correos, filtra clientes que no encajan y sirve de argumento para vender el nivel adecuado a cada uno.
 
-- Test de nivel como captación para cursos…
-- Asignación de rutas de aprendizaje por perfil…
+- Test de nivel como captación para cursos.
+- Asignación de rutas de aprendizaje por perfil.
 
 **Precio orientativo:** 60–180 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

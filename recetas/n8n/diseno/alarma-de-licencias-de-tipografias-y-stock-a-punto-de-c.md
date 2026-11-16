@@ -1,4 +1,4 @@
-# Alarma de licencias de tipografías y stock a punto de c…
+# Alarma de licencias de tipografías y stock a punto de c
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

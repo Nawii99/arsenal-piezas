@@ -1,4 +1,4 @@
-# Amortiguador de webhooks con reintentos…
+# Amortiguador de webhooks con reintentos
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Recibe webhooks de proveedores como Stripe o Shopify, responde al instante, veri
 
 Un pedido perdido cuesta más que todo el montaje. Evita reconciliaciones manuales de horas al mes y devoluciones por pedidos no procesados.
 
-- Configuración de webhooks fiables para tiendas online que cobran con pasarela…
-- Gestión de colas de eventos para SaaS pequeños con reintentos y registro…
-- Mantenimiento mensual de integraciones de pago con revisión de eventos fallidos…
+- Configuración de webhooks fiables para tiendas online que cobran con pasarela.
+- Gestión de colas de eventos para SaaS pequeños con reintentos y registro.
+- Mantenimiento mensual de integraciones de pago con revisión de eventos fallidos.
 
 **Precio orientativo:** 150–400 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

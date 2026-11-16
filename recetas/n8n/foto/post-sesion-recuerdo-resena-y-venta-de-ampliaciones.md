@@ -1,4 +1,4 @@
-# Post-sesión: recuerdo, reseña y venta de ampliaciones…
+# Post-sesión: recuerdo, reseña y venta de ampliaciones
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

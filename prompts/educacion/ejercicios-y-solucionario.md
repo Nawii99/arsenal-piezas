@@ -1,4 +1,4 @@
-# Ejercicios y solucionario…
+# Ejercicios y solucionario
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt que genera la batería de ejercicios y casos prácticos de un módulo, co
 
 La práctica bien hecha reduce devoluciones y soporte, y te da material extra para vender como cuaderno de trabajo aparte.
 
-- Ejercicios y solucionarios para cursos online…
-- Casos prácticos para formación profesional…
+- Ejercicios y solucionarios para cursos online.
+- Casos prácticos para formación profesional.
 
 **Precio orientativo:** 60–200 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

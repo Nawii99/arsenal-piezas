@@ -1,4 +1,4 @@
-# Radar de alumnos que se están descolgando…
+# Radar de alumnos que se están descolgando
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

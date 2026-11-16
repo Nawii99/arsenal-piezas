@@ -1,4 +1,4 @@
-# Rescate de registros a medias en tu app…
+# Rescate de registros a medias en tu app
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

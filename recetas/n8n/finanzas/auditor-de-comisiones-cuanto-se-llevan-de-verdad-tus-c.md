@@ -1,4 +1,4 @@
-# Auditor de comisiones: cuánto se llevan de verdad tus c…
+# Auditor de comisiones: cuánto se llevan de verdad tus c
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Detector de cambios en la API de un proveedor…
+# Detector de cambios en la API de un proveedor
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

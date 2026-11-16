@@ -1,4 +1,4 @@
-# Aviso de mantenimiento por horas reales de máquina…
+# Aviso de mantenimiento por horas reales de máquina
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

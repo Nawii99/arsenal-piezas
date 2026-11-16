@@ -1,4 +1,4 @@
-# Radar de competidores: qué publican y qué les funciona…
+# Radar de competidores: qué publican y qué les funciona
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

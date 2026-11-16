@@ -1,4 +1,4 @@
-# Presupuestar un encargo 3D para un cliente…
+# Presupuestar un encargo 3D para un cliente
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como freelance veterano de 3D en Esp
 
 Cobrar por entregable con las revisiones acotadas y el pago por hitos evita el trabajo infinito gratis, que es lo que arruina a los freelance de 3D.
 
-- Plantilla de presupuesto y condiciones para freelances de modelado y render…
-- Servicio de redacción de propuestas para estudios de visualización…
-- Pack de presupuesto con revisiones acotadas para encargos de animación…
+- Plantilla de presupuesto y condiciones para freelances de modelado y render.
+- Servicio de redacción de propuestas para estudios de visualización.
+- Pack de presupuesto con revisiones acotadas para encargos de animación.
 
 **Precio orientativo:** 40–150 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

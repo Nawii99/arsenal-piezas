@@ -1,4 +1,4 @@
-# Automatizar solicitudes de presupuesto de edición de vídeo…
+# Automatizar solicitudes de presupuesto de edición de vídeo
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando recibes muchas peticiones de presupuesto por formulario y no quieres cont
 
 Ofrécelo como sistema de presupuestos a editores freelance o pequeñas productoras que pierden clientes por tardar en responder. Cobra por montarlo, [TU PRECIO], y una cuota de mantenimiento si lo gestionas tú.
 
-- Sistema de presupuestos automáticos para editores freelance con mucha demanda…
-- Montaje de presupuestos para productoras pequeñas que pierden clientes por tardar…
-- Cuota de mantenimiento del flujo de presupuestos para un editor…
+- Sistema de presupuestos automáticos para editores freelance con mucha demanda.
+- Montaje de presupuestos para productoras pequeñas que pierden clientes por tardar.
+- Cuota de mantenimiento del flujo de presupuestos para un editor.
 
 **Precio orientativo:** 100–250 € por montaje. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

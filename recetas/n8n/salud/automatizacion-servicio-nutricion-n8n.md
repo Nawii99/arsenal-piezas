@@ -1,4 +1,4 @@
-# Servicio automático de plan de nutrición con cobro incluido…
+# Servicio automático de plan de nutrición con cobro incluido
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Fábrica semanal de creatividades con IA…
+# Fábrica semanal de creatividades con IA
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cada lunes lee las ideas de post de una hoja de Google Sheets, genera cada image
 
 Sustituye 3-4 horas semanales de maquetación. Coste real: unos 0,04 € por imagen. Doce imágenes al mes salen por menos de 1 €.
 
-- Creatividades semanales para redes de pymes con estilo de marca fijo…
-- Servicio mensual de imágenes para redes de clientes con revisión humana…
-- Configuración de un sistema de contenido visual para tiendas online…
+- Creatividades semanales para redes de pymes con estilo de marca fijo.
+- Servicio mensual de imágenes para redes de clientes con revisión humana.
+- Configuración de un sistema de contenido visual para tiendas online.
 
 **Precio orientativo:** 100–300 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

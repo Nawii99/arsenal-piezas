@@ -1,4 +1,4 @@
-# Parte de la mañana siguiente para cada profesional…
+# Parte de la mañana siguiente para cada profesional
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

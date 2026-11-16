@@ -1,4 +1,4 @@
-# Borrador de contrato de colaboración freelance…
+# Borrador de contrato de colaboración freelance
 
 **Tipo:** Prompt · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 

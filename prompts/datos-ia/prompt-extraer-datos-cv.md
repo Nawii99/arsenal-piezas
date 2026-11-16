@@ -1,4 +1,4 @@
-# Prompt: extraer datos de un CV pegando el texto…
+# Prompt: extraer datos de un CV pegando el texto
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Para alguien sin conocimientos técnicos que quiere sacar los datos de un CV usa
 
 Cualquier chat de IA generalista (Claude, Codex, Gemini o una IA local)
 
-- Fichas de candidatos para pequeñas agencias que usan solo un chat de IA…
-- Extracción de CV para autónomos de RRHH sin herramientas técnicas…
-- Plantilla de ficha de candidato para procesos de selección sencillos…
+- Fichas de candidatos para pequeñas agencias que usan solo un chat de IA.
+- Extracción de CV para autónomos de RRHH sin herramientas técnicas.
+- Plantilla de ficha de candidato para procesos de selección sencillos.
 
 ## El prompt (cópialo entero)
 

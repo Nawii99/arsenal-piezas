@@ -1,4 +1,4 @@
-# Copia de seguridad diaria de tu base de datos…
+# Copia de seguridad diaria de tu base de datos
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cada madrugada saca una copia completa de tu base MySQL o PostgreSQL, la comprim
 
 Evita perder días de trabajo y datos de clientes tras un fallo de disco. Sustituye un servicio de backup gestionado de 15-40 € al mes.
 
-- Copias de seguridad gestionadas para tiendas y CRM a medida, con aviso mensual…
-- Configuración y mantenimiento de backups para pymes con VPS propio…
-- Auditoría de copias de seguridad con prueba de restauración para clientes…
+- Copias de seguridad gestionadas para tiendas y CRM a medida, con aviso mensual.
+- Configuración y mantenimiento de backups para pymes con VPS propio.
+- Auditoría de copias de seguridad con prueba de restauración para clientes.
 
 **Precio orientativo:** 80–250 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

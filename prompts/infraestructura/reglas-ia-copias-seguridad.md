@@ -1,4 +1,4 @@
-# Reglas de IA para copias de seguridad y recuperación…
+# Reglas de IA para copias de seguridad y recuperación
 
 **Tipo:** Prompt · **Área:** Infraestructura · **Licencia:** CC BY 4.0
 

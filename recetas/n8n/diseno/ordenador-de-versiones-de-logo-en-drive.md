@@ -1,4 +1,4 @@
-# Ordenador de versiones de logo en Drive…
+# Ordenador de versiones de logo en Drive
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Vigila la carpeta _entrada_logos de Drive; cada archivo nuevo lo analiza para de
 
 Evita rehacer un logo perdido (200-600 € de trabajo) y ahorra los 10 minutos diarios de buscar el archivo correcto. Coste: 0 €.
 
-- Organización de archivos de marca para estudios de diseño con varios clientes…
-- Archivo de versiones de identidad para empresas que cambian su logo cada temporada…
-- Gestión de activos de marca para freelances con índice consultable…
+- Organización de archivos de marca para estudios de diseño con varios clientes.
+- Archivo de versiones de identidad para empresas que cambian su logo cada temporada.
+- Gestión de activos de marca para freelances con índice consultable.
 
 **Precio orientativo:** 60–200 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Embudo de playtest: dónde abandonan tus jugadores…
+# Embudo de playtest: dónde abandonan tus jugadores
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

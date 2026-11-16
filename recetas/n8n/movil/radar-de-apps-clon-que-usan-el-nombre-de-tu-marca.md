@@ -1,4 +1,4 @@
-# Radar de apps clon que usan el nombre de tu marca…
+# Radar de apps clon que usan el nombre de tu marca
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Auditor mensual de la calidad de tus datos de clientes…
+# Auditor mensual de la calidad de tus datos de clientes
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

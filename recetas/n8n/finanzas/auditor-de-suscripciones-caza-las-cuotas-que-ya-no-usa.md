@@ -1,4 +1,4 @@
-# Auditor de suscripciones: caza las cuotas que ya no usa…
+# Auditor de suscripciones: caza las cuotas que ya no usa
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cada día 1 busca en tu Gmail los recibos de suscripción del mes anterior, extr
 
 Un negocio pequeño suele arrastrar entre 30 y 150 € al mes en suscripciones zombis. Cancelarlas es dinero puro, 350-1.800 € al año.
 
-- Auditoría de gasto recurrente como servicio trimestral para pymes con muchos SaaS…
-- Informe de suscripciones para autónomos que quieren reducir gastos fijos…
-- Limpieza de suscripciones zombis en la primera sesión de consultoría…
+- Auditoría de gasto recurrente como servicio trimestral para pymes con muchos SaaS.
+- Informe de suscripciones para autónomos que quieren reducir gastos fijos.
+- Limpieza de suscripciones zombis en la primera sesión de consultoría.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

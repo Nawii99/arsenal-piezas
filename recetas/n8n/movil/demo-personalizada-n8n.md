@@ -1,4 +1,4 @@
-# Demo personalizada automática…
+# Demo personalizada automática
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Quieres que un posible cliente vea su propio quiz, con su nombre y su temática,
 
 Es tu forma de abrir ventas de mini-apps: ofreces la demo gratis y, cuando el negocio ve su quiz funcionando, le propones la versión completa a [TU PRECIO]. Te avisa por Telegram para que le escribas tú.
 
-- Demos automáticas para captar clientes de mini-apps en academias, por instalación…
-- Puesta en marcha del flujo para agencias pequeñas, por instalación…
-- Mantenimiento mensual de la automatización y de las demos publicadas, por cuota…
+- Demos automáticas para captar clientes de mini-apps en academias, por instalación.
+- Puesta en marcha del flujo para agencias pequeñas, por instalación.
+- Mantenimiento mensual de la automatización y de las demos publicadas, por cuota.
 
 **Precio orientativo:** 80–200 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

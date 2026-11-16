@@ -1,4 +1,4 @@
-# Comentarios de YouTube con respuesta ya redactada…
+# Comentarios de YouTube con respuesta ya redactada
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tu canal crece, no llegas a responder y sabes que responder rápido sube 
 
 Evita 30-45 minutos diarios de leer y redactar. Y responder en las primeras horas mejora la posición del vídeo, que vale más que el tiempo.
 
-- Atención a comentarios de YouTube para negocios con borrador diario y aprobación humana…
-- Gestión de comunidad para creadores que delegan la respuesta sin dar acceso al canal…
-- Informe semanal de preguntas del público para ajustar el contenido…
+- Atención a comentarios de YouTube para negocios con borrador diario y aprobación humana.
+- Gestión de comunidad para creadores que delegan la respuesta sin dar acceso al canal.
+- Informe semanal de preguntas del público para ajustar el contenido.
 
 **Precio orientativo:** 80–200 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

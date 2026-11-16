@@ -1,4 +1,4 @@
-# Aviso de certificados SSL y dominios a punto de caducar…
+# Aviso de certificados SSL y dominios a punto de caducar
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

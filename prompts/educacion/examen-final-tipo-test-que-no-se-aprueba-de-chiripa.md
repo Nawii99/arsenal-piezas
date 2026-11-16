@@ -1,4 +1,4 @@
-# Examen final tipo test que no se aprueba de chiripa…
+# Examen final tipo test que no se aprueba de chiripa
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando quieras cerrar tu formación con una evaluación seria, dar un certificad
 
 Un examen serio permite cobrar por la certificación y la hace defendible ante empresas que pagan la formación de sus empleados.
 
-- Exámenes de certificación para academias…
-- Bancos de preguntas con corrección automática para formadores…
-- Evaluación final de formaciones bonificadas para empresas…
+- Exámenes de certificación para academias.
+- Bancos de preguntas con corrección automática para formadores.
+- Evaluación final de formaciones bonificadas para empresas.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Todos los formatos de una creatividad en un clic…
+# Todos los formatos de una creatividad en un clic
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

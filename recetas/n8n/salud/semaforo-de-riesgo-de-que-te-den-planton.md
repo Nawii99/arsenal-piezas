@@ -1,4 +1,4 @@
-# Semáforo de riesgo de que te den plantón…
+# Semáforo de riesgo de que te den plantón
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

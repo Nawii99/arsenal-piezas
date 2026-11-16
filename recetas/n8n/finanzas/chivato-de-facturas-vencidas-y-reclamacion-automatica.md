@@ -1,4 +1,4 @@
-# Chivato de facturas vencidas y reclamación automática…
+# Chivato de facturas vencidas y reclamación automática
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -47,9 +47,9 @@ Pensado para autónomos y pymes que facturan a otras empresas y no tienen a nadi
 1. **Schedule Trigger** — Trigger Interval: `Days`, Days Between Triggers: `1`, Trigger at Hour: `9`, Trigger at Minute: `0`. En Settings del workflow pon Timezone: `Europe/Madrid` (si no, te disparará a las 10 u 11 según la época del año).
 2. **Google Sheets** (renómbralo «Leer facturas») — Resource: `Sheet Within Document`, Operation: `Get Row(s)`, Document: tu hoja `Facturas`, Sheet: `Hoja 1`. Sin filtros: filtramos nosotros en el Code para poder calcular días.
 3. **Code** (renómbralo «Calcular avisos») — Mode: `Run Once for All Items`. Código abajo. Devuelve solo las facturas a las que hoy les toca aviso, con el texto ya montado.
-4. **IF** — Condition: `Number` > `Array` no; usa `Number`: valor izquierdo `{{ $items().length }}`... más simple: pon un **IF** con condición `Number`, izquierda `{{ $json.importe }}`, operación `is not empty`. Si no hay items, el flujo simplemente no continúa y te ahorras el IF; puedes saltártelo.
+4. **Sin nodo IF** — este flujo no lleva ningún IF: «Calcular avisos» se conecta directamente a «Aviso al cliente» (y, en paralelo, a «Resumen para mí»). Si el Code no devuelve ningún item, el flujo simplemente no continúa.
 5. **Gmail** (renómbralo «Aviso al cliente») — Resource: `Message`, Operation: `Send`. To: `{{ $json.email }}`. Subject: `{{ $json.asunto }}`. Email Type: `Text`. Message: `{{ $json.cuerpo }}`. En Options añade `Sender Name` con el nombre de tu negocio.
-6. **Google Sheets** (renómbralo «Marcar aviso») — Operation: `Update Row`, Matching Columns: `numero`, y en Values to Send mapea `numero` = `{{ $json.numero }}`, `ultimo_aviso` = `{{ $json.hoy }}`, `avisos_enviados` = `{{ $json.avisos_nuevos }}`.
+6. **Google Sheets** (renómbralo «Marcar aviso») — Operation: `Update Row`, Matching Columns: `numero`, y en Values to Send mapea `numero` = `{{ $('Calcular avisos').item.json.numero }}`, `ultimo_aviso` = `{{ $('Calcular avisos').item.json.hoy }}`, `avisos_enviados` = `{{ $('Calcular avisos').item.json.avisos_nuevos }}` (se lee del nodo «Calcular avisos» porque este nodo recibe la salida de Gmail, que no trae esos campos). Conéctalo a la salida de «Aviso al cliente».
 7. **Gmail** (renómbralo «Resumen para mí») — conéctalo también desde «Calcular avisos». To: tu propio email. Subject: `Facturas pendientes de cobro`. Message: `{{ $json.cuerpo }}` (el Code ya incluye una línea de resumen en el primer item; si quieres un único email, añade antes un nodo **Aggregate** con Aggregate: `All Item Data`).
 
 ## El código del nodo Code

@@ -1,4 +1,4 @@
-# Candidatura adaptada · Prompt operativo…
+# Candidatura adaptada · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

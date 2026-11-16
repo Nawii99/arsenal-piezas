@@ -1,4 +1,4 @@
-# Copia de seguridad de la web a Drive…
+# Copia de seguridad de la web a Drive
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

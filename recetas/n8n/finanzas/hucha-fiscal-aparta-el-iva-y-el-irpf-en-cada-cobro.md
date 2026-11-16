@@ -1,4 +1,4 @@
-# Hucha fiscal: aparta el IVA y el IRPF en cada cobro…
+# Hucha fiscal: aparta el IVA y el IRPF en cada cobro
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando llega el día 20 de enero, abril, julio u octubre y no tienes el dinero d
 
 Evita el recargo de Hacienda por presentar fuera de plazo (del 1 % al 15 %) y aplazamientos con intereses del 4,0625 %. Sobre 6.000 € de IVA son 300-900 € al año.
 
-- Configuración de la hucha fiscal para autónomos que cobran de forma irregular…
-- Control de provisiones de impuestos para microempresas en estimación directa…
-- Calendario fiscal con avisos previos para negocios pequeños…
+- Configuración de la hucha fiscal para autónomos que cobran de forma irregular.
+- Control de provisiones de impuestos para microempresas en estimación directa.
+- Calendario fiscal con avisos previos para negocios pequeños.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

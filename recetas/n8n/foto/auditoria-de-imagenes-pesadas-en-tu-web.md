@@ -1,4 +1,4 @@
-# Auditoría de imágenes pesadas en tu web…
+# Auditoría de imágenes pesadas en tu web
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

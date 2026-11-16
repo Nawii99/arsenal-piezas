@@ -1,4 +1,4 @@
-# Recordatorio de clase y aviso de faltas por WhatsApp…
+# Recordatorio de clase y aviso de faltas por WhatsApp
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

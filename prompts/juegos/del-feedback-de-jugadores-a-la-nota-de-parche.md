@@ -1,4 +1,4 @@
-# Del feedback de jugadores a la nota de parche…
+# Del feedback de jugadores a la nota de parche
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como responsable de producto de un j
 
 Arreglar lo que de verdad frena a la gente mejora las valoraciones, y las valoraciones son lo que decide si tu juego se sigue vendiendo.
 
-- Servicio mensual de análisis de feedback y notas de parche para estudios indie…
-- Gestión de comunidad con informe de prioridades de cambios…
-- Informe puntual de reseñas de Steam con plan de arreglos…
+- Servicio mensual de análisis de feedback y notas de parche para estudios indie.
+- Gestión de comunidad con informe de prioridades de cambios.
+- Informe puntual de reseñas de Steam con plan de arreglos.
 
 **Precio orientativo:** 80–300 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

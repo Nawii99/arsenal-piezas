@@ -1,4 +1,4 @@
-# Publicador de YouTube desde una carpeta de Drive…
+# Publicador de YouTube desde una carpeta de Drive
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

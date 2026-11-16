@@ -1,4 +1,4 @@
-# Aviso de divisa: protege tu margen cuando compras fuera…
+# Aviso de divisa: protege tu margen cuando compras fuera
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cada día laborable consulta el tipo de cambio oficial del BCE en la API gratuit
 
 Un movimiento del 5% en el dólar sobre 20.000 € de compras anuales son 1.000 €. Comprar en la semana buena en vez de en la mala vale ese dinero.
 
-- Seguimiento de divisas para importadores pequeños con compras en dólares…
-- Alerta de cambio para tiendas que compran a proveedores asiáticos…
-- Modelo de precios con sensibilidad al tipo de cambio para freelancers…
+- Seguimiento de divisas para importadores pequeños con compras en dólares.
+- Alerta de cambio para tiendas que compran a proveedores asiáticos.
+- Modelo de precios con sensibilidad al tipo de cambio para freelancers.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

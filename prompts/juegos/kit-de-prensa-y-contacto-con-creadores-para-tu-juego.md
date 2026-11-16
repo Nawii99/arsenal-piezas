@@ -1,4 +1,4 @@
-# Kit de prensa y contacto con creadores para tu juego…
+# Kit de prensa y contacto con creadores para tu juego
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que convierte la IA en responsable de comunicación de un estudio indie. 
 
 La cobertura y los vídeos de creadores son la única forma barata de conseguir visibilidad si no tienes presupuesto de publicidad.
 
-- Servicio de kit de prensa y envío a medios para lanzamientos indie…
-- Gestión de contacto con streamers y reparto de claves por campaña…
-- Paquete de dossier de prensa y factsheet para estudios sin comunicación…
+- Servicio de kit de prensa y envío a medios para lanzamientos indie.
+- Gestión de contacto con streamers y reparto de claves por campaña.
+- Paquete de dossier de prensa y factsheet para estudios sin comunicación.
 
 **Precio orientativo:** 150–500 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

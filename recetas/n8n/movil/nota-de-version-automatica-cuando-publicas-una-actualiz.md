@@ -1,4 +1,4 @@
-# Nota de versión automática cuando publicas una actualiz…
+# Nota de versión automática cuando publicas una actualiz
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Receta de n8n que vigila cada día la ficha pública de tu app en Google Play. C
 
 Sustituye una hora de redacción y publicación por versión. Y cada anuncio de mejora es una excusa gratis para que un usuario dormido reabra tu app.
 
-- Anuncios de versión para una app de un comercio con lista de clientes…
-- Changelog público automático para un producto digital pequeño…
-- Comunicación de novedades para una app de reservas de un local…
+- Anuncios de versión para una app de un comercio con lista de clientes.
+- Changelog público automático para un producto digital pequeño.
+- Comunicación de novedades para una app de reservas de un local.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

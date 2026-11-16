@@ -1,4 +1,4 @@
-# Zapier: resumen semanal de tus números por correo…
+# Zapier: resumen semanal de tus números por correo
 
 **Tipo:** Receta de automatización · **Área:** Datos · **Licencia:** CC BY 4.0
 

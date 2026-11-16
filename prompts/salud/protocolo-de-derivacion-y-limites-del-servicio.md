@@ -1,4 +1,4 @@
-# Protocolo de derivación y límites del servicio…
+# Protocolo de derivación y límites del servicio
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando llegan consultas que no son para ti y nadie sabe qué decir, o cuando mon
 
 Evita horas perdidas en casos que no vas a resolver, protege tu reputación y te convierte en referencia para otros profesionales que te devuelven pacientes.
 
-- Documento de alcance y protocolo de derivación para consultas pequeñas…
-- Guion de recepción para casos fuera de servicio…
-- Red de derivación entre profesionales con plantillas de comunicación…
+- Documento de alcance y protocolo de derivación para consultas pequeñas.
+- Guion de recepción para casos fuera de servicio.
+- Red de derivación entre profesionales con plantillas de comunicación.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

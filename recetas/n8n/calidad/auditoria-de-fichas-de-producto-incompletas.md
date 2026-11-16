@@ -1,4 +1,4 @@
-# Auditoría de fichas de producto incompletas…
+# Auditoría de fichas de producto incompletas
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

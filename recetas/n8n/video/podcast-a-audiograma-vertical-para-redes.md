@@ -1,4 +1,4 @@
-# Podcast a audiograma vertical para redes…
+# Podcast a audiograma vertical para redes
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Detecta cada episodio nuevo de tu feed RSS, lo descarga, lo transcribe, pide a l
 
 Sustituye 45 minutos por episodio de montaje repetitivo. Con un episodio semanal son 40 horas al año.
 
-- Audiogramas de podcast para marcas y consultores, entregados por episodio…
-- Pack mensual de clips verticales para podcasts que no tienen equipo de edición…
-- Plantilla y configuración de audiogramas para podcasters que quieren promocionarse en redes…
+- Audiogramas de podcast para marcas y consultores, entregados por episodio.
+- Pack mensual de clips verticales para podcasts que no tienen equipo de edición.
+- Plantilla y configuración de audiogramas para podcasters que quieren promocionarse en redes.
 
 **Precio orientativo:** 30–90 € por episodio. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

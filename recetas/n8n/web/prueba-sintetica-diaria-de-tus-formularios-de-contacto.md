@@ -1,4 +1,4 @@
-# Prueba sintética diaria de tus formularios de contacto…
+# Prueba sintética diaria de tus formularios de contacto
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

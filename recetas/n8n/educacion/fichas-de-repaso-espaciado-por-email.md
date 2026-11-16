@@ -1,4 +1,4 @@
-# Fichas de repaso espaciado por email…
+# Fichas de repaso espaciado por email
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

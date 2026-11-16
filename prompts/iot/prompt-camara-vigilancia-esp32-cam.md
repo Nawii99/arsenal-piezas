@@ -1,4 +1,4 @@
-# Planificar una cámara de vigilancia casera con ESP32-CAM…
+# Planificar una cámara de vigilancia casera con ESP32-CAM
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Quieres vigilar la entrada, el trastero o la terraza con una cámara casera y no
 
 Úsalo para preparar la propuesta de una cámara a vecinos o pequeños negocios y cobrar el montaje a [TU PRECIO]. Lo que puedes grabar en zonas comunes o vía pública lo confirma un profesional del derecho antes de instalar nada.
 
-- Planes de cámara para locales pequeños que no quieren cableado, por plan…
-- Instalación de cámaras de vigilancia para comunidades de vecinos pequeñas, por instalación…
-- Auditoría de privacidad de cámaras de particulares, por revisión…
+- Planes de cámara para locales pequeños que no quieren cableado, por plan.
+- Instalación de cámaras de vigilancia para comunidades de vecinos pequeñas, por instalación.
+- Auditoría de privacidad de cámaras de particulares, por revisión.
 
 **Precio orientativo:** 30–60 € por plan. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

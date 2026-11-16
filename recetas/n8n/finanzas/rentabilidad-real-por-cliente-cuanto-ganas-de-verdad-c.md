@@ -1,4 +1,4 @@
-# Rentabilidad real por cliente: cuánto ganas de verdad c…
+# Rentabilidad real por cliente: cuánto ganas de verdad c
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ El día 1 de cada mes descarga las horas registradas en Clockify, las cruza con 
 
 Identificar y soltar (o resubir) al cliente menos rentable suele mejorar el beneficio anual entre un 10% y un 20% sin facturar ni un euro más.
 
-- Análisis de rentabilidad por cliente como servicio para agencias y consultoras…
-- Informe de tarifa real para freelancers que cobran por proyecto…
-- Diagnóstico de cartera de clientes para negocios con muchos encargos pequeños…
+- Análisis de rentabilidad por cliente como servicio para agencias y consultoras.
+- Informe de tarifa real para freelancers que cobran por proyecto.
+- Diagnóstico de cartera de clientes para negocios con muchos encargos pequeños.
 
 **Precio orientativo:** 100–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 
@@ -47,22 +47,46 @@ Una pestaña `Objetivo` con una celda TarifaObjetivo (tu euro/hora mínimo acept
 Credencial de Google en n8n para Sheets y Gmail.
 
 ## Los nodos, en orden
-**Schedule Trigger**: Cron `0 9 1 * *`, timezone Europe/Madrid.
-**HTTP Request** (renombra a `Horas`): GET a `=https://api.clockify.me/api/v1/workspaces/TU_WORKSPACE_ID/reports/summary`. Ojo, los informes van por POST en la API de reports; usa Method POST a `https://reports.api.clockify.me/v1/workspaces/TU_WORKSPACE_ID/reports/summary`. Headers: `X-Api-Key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `X-Api-Key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría). Body JSON:
+**Schedule Trigger** (llámalo «Día 1 de cada mes»): Cron `0 9 1 * *`. La zona horaria Europe/Madrid se pone en los ajustes del workflow. Conecta los nodos en cadena, uno tras otro, en el orden de esta lista.
+**HTTP Request** (renombra a `Horas`): Los informes van por POST en la API de reports: Method POST a `https://reports.api.clockify.me/v1/workspaces/TU_WORKSPACE_ID/reports/summary`. Headers: `X-Api-Key` desde una credencial de n8n (Generic Credential Type > Header Auth, Name `X-Api-Key`, Value tu clave; no la escribas en el nodo: un flujo exportado se la llevaría). Body JSON:
 `={{ JSON.stringify({ dateRangeStart: new Date(new Date().getFullYear(), new Date().getMonth()-1, 1).toISOString(), dateRangeEnd: new Date(new Date().getFullYear(), new Date().getMonth(), 0, 23, 59).toISOString(), summaryFilter: { groups: ["PROJECT"] } }) }}`
-**Google Sheets** (renombra a `Facturado`): Get Row(s) en «Facturas emitidas», Return All.
-**Google Sheets** (renombra a `Objetivo`): Get Row(s) en pestaña Objetivo.
-**Code**: modo «Run Once for All Items».
+**Google Sheets** (renombra a `Facturado`): Get Row(s) en «Facturas emitidas», Return All. En las opciones del nodo activa que siempre devuelva datos (*Always Output Data*), para que el flujo siga aunque la hoja venga vacía.
+**Google Sheets** (renombra a `Objetivo`): Get Row(s) en pestaña Objetivo. En las opciones del nodo activa que se ejecute una sola vez (*Execute Once*), para que no se repita por cada fila que le llegue de «Facturado».
+**Code** (llámalo «Calcular rentabilidad»): modo «Run Once for All Items».
 ```javascript
-const num = (v) => Number(String(v ?? '0').replace(/\./g,'').replace(',', '.')) || 0;
+// num(): si la hoja ya da un número, se usa tal cual; si es texto, acepta formato español («1.234,56», «1234,56»)
+// e inglés («1234.56», «1,234.56»). Con solo puntos en grupos de 3 («1.234») se lee como miles (1234).
+const num = (v) => {
+  if (typeof v === 'number') return Number.isFinite(v) ? v : 0;
+  let s = String(v ?? '').replace(/[€\s ]/g, '');
+  if (!s) return 0;
+  const coma = s.lastIndexOf(','), punto = s.lastIndexOf('.');
+  if (coma > -1 && punto > -1) s = coma > punto ? s.replace(/\./g, '').replace(',', '.') : s.replace(/,/g, '');
+  else if (coma > -1) s = (s.match(/,/g).length > 1) ? s.replace(/,/g, '') : s.replace(',', '.');
+  else if (/^-?\d{1,3}(\.\d{3})+$/.test(s)) s = s.replace(/\./g, '');
+  const n = Number(s);
+  return Number.isFinite(n) ? n : 0;
+};
+// mes «AAAA-MM» de una fecha de la hoja: texto «AAAA-MM-DD», texto «DD/MM/AAAA» o número de serie de Sheets
+const mesDe = (v) => {
+  if (typeof v === 'number' && v > 0) return new Date(Date.UTC(1899, 11, 30) + v * 86400000).toISOString().slice(0, 7);
+  const s = String(v ?? '').trim();
+  let m = s.match(/^(\d{4})-(\d{1,2})/);
+  if (m) return m[1] + '-' + m[2].padStart(2, '0');
+  m = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+  if (m) return m[3] + '-' + m[2].padStart(2, '0');
+  return '';
+};
 const objetivo = num($('Objetivo').first().json.TarifaObjetivo) || 45;
 const rep = $('Horas').first().json;
 const grupos = rep.groupOne || [];
 const horasPorCliente = {};
 grupos.forEach(g => { horasPorCliente[String(g.name).toLowerCase().trim()] = (g.duration || 0) / 3600; });
-const mesPasado = new Date(new Date().getFullYear(), new Date().getMonth()-1, 1).toISOString().slice(0,7);
+const hoy = new Date();
+const mp = new Date(hoy.getFullYear(), hoy.getMonth() - 1, 1);
+const mesPasado = mp.getFullYear() + '-' + String(mp.getMonth() + 1).padStart(2, '0');
 const facturado = {};
-$('Facturado').all().map(i => i.json).filter(f => String(f.FechaFactura).startsWith(mesPasado)).forEach(f => {
+$('Facturado').all().map(i => i.json).filter(f => mesDe(f.FechaFactura) === mesPasado).forEach(f => {
   const c = String(f.Cliente).toLowerCase().trim();
   facturado[c] = (facturado[c] || 0) + num(f.Base);
 });
@@ -81,7 +105,7 @@ const malos = filas.filter(f => f.tarifa > 0 && f.tarifa < objetivo * 0.7);
 const informe = `RENTABILIDAD POR CLIENTE — ${mesPasado}\n\nTu tarifa media real: ${totalH > 0 ? (totalE/totalH).toFixed(1) : 0} €/h (objetivo: ${objetivo} €/h)\nHoras trabajadas: ${totalH.toFixed(1)} · Facturado: ${totalE.toFixed(0)} €\n\n${lineas.join('\n')}\n\n${malos.length ? 'CLIENTES QUE TE ESTÁN COSTANDO DINERO:\n' + malos.map(m=>`• ${m.cliente} (${m.tarifa.toFixed(1)} €/h). O le subes el precio, o reduces horas, o le dejas ir.`).join('\n') : 'Ningún cliente por debajo del 70% de tu objetivo. Buen mes.'}`;
 return [{ json: { informe } }];
 ```
-**Gmail**: Send a tu correo, Subject `=Rentabilidad por cliente`, Message `={{ $json.informe }}`.
+**Gmail** (llámalo «Enviar informe»): Resource Message, Operation Send, To tu correo, Subject `=Rentabilidad por cliente`, tipo de correo Text, Message `={{ $json.informe }}`.
 
 ## Cómo probarla
 Ejecuta a mano el día 5 de un mes con datos reales del mes anterior.

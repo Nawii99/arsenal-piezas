@@ -1,4 +1,4 @@
-# Vigilancia del backend de tu app con modo mantenimiento…
+# Vigilancia del backend de tu app con modo mantenimiento
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando tu app depende de un servidor propio y te enteras de las caídas por las 
 
 Cada hora caído son reseñas malas y bajas. Sustituye herramientas de monitorización de 15-30 €/mes y evita reinstalar la app para dar explicaciones.
 
-- Aviso de caídas para una app de reservas con servidor propio…
-- Mensaje de mantenimiento para una tienda con app que depende de su API…
-- Servicio de vigilancia para pequeños proveedores de apps con servidor…
+- Aviso de caídas para una app de reservas con servidor propio.
+- Mensaje de mantenimiento para una tienda con app que depende de su API.
+- Servicio de vigilancia para pequeños proveedores de apps con servidor.
 
 **Precio orientativo:** 150–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

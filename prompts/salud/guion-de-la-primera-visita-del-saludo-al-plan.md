@@ -1,4 +1,4 @@
-# Guion de la primera visita, del saludo al plan…
+# Guion de la primera visita, del saludo al plan
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como formador de comunicación con e
 
 Es la conversación que decide si alguien hace una sesión suelta o un plan completo: ordenarla convierte más primeras visitas en tratamientos seguidos.
 
-- Guion de primera visita para consultas de salud y bienestar…
-- Formación en comunicación de planes y presupuestos…
-- Plantillas de preguntas de valoración inicial…
+- Guion de primera visita para consultas de salud y bienestar.
+- Formación en comunicación de planes y presupuestos.
+- Plantillas de preguntas de valoración inicial.
 
 **Precio orientativo:** 80–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

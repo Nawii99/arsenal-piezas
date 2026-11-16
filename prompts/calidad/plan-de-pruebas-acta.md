@@ -1,4 +1,4 @@
-# Plan de pruebas y acta de aceptación…
+# Plan de pruebas y acta de aceptación
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Al cerrar cualquier entrega (flujo de n8n, tienda, CRM, web) para dejar por escr
 
 La firma del acta dispara el pago final. Sin acta, cada 'esto no va' posterior es gratis; con acta, es incidencia cubierta o presupuesto nuevo.
 
-- Acta de aceptación que dispara el pago final en proyectos de automatización…
-- Plan de pruebas en lenguaje llano para clientes que no programan…
-- Cierre formal de entregas para agencias pequeñas con gestión de incidencias…
+- Acta de aceptación que dispara el pago final en proyectos de automatización.
+- Plan de pruebas en lenguaje llano para clientes que no programan.
+- Cierre formal de entregas para agencias pequeñas con gestión de incidencias.
 
 **Precio orientativo:** 30–80 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

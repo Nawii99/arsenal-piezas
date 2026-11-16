@@ -1,4 +1,4 @@
-# Repositorio de app nuevo desde plantilla al recibir un encar…
+# Repositorio de app nuevo desde plantilla al recibir un encar
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

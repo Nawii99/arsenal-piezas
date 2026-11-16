@@ -1,4 +1,4 @@
-# Auditoría de derechos y licencias de tus assets…
+# Auditoría de derechos y licencias de tus assets
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Antes de publicar o vender un juego, una animación o un paquete de assets, y si
 
 Evita retiradas de tienda, reclamaciones y tener que rehacer material ya publicado, que es la forma más cara de perder un lanzamiento.
 
-- Auditoría de licencias de assets antes de publicar un juego…
-- Inventario de procedencia de material para estudios pequeños…
-- Revisión de derechos de paquetes de assets con IA…
+- Auditoría de licencias de assets antes de publicar un juego.
+- Inventario de procedencia de material para estudios pequeños.
+- Revisión de derechos de paquetes de assets con IA.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

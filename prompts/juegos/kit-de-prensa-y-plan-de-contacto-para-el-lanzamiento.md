@@ -1,4 +1,4 @@
-# Kit de prensa y plan de contacto para el lanzamiento…
+# Kit de prensa y plan de contacto para el lanzamiento
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ De cuatro a seis semanas antes de publicar un juego, una demo o un proyecto, cua
 
 La cobertura gratuita es la vía más barata de conseguir jugadores y clientes cuando no tienes presupuesto de publicidad.
 
-- Kit de prensa y plan de contacto para lanzamientos de juegos…
-- Redacción de notas de prensa para estudios indie…
+- Kit de prensa y plan de contacto para lanzamientos de juegos.
+- Redacción de notas de prensa para estudios indie.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Gimnasio de prompts para Claude Code…
+# Gimnasio de prompts para Claude Code
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

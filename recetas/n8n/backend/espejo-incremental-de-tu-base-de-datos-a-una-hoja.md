@@ -1,4 +1,4 @@
-# Espejo incremental de tu base de datos a una hoja…
+# Espejo incremental de tu base de datos a una hoja
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tu equipo pide ver datos del backend y acabas exportando CSV a mano, o ti
 
 Sustituye media hora diaria de exportar y pegar, y baja el coste de lectura de la base de 100.000 filas a las 200 que cambiaron.
 
-- Sincronización de pedidos para equipos de atención al cliente en Airtable…
-- Configuración de un espejo de datos para pymes que comparten información con su equipo…
-- Mantenimiento de integraciones de datos entre la base de producción y herramientas de equipo…
+- Sincronización de pedidos para equipos de atención al cliente en Airtable.
+- Configuración de un espejo de datos para pymes que comparten información con su equipo.
+- Mantenimiento de integraciones de datos entre la base de producción y herramientas de equipo.
 
 **Precio orientativo:** 150–400 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

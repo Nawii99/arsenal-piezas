@@ -1,4 +1,4 @@
-# Vigilante de cambios silenciosos en las páginas que dan…
+# Vigilante de cambios silenciosos en las páginas que dan
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

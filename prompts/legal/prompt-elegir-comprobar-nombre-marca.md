@@ -1,4 +1,4 @@
-# Ayuda para elegir y comprobar un nombre de marca…
+# Ayuda para elegir y comprobar un nombre de marca
 
 **Tipo:** Prompt · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Tienes la idea del negocio pero no el nombre cerrado, y quieres variantes y una 
 
 Véndelo como sesión de naming a emprendedores, con la lista de comprobaciones incluida: cobras por sesión [TU PRECIO]. Si luego quieren registrar, lo valida un profesional de propiedad industrial.
 
-- Sesión de naming con lista de comprobaciones para emprendedores sin nombre cerrado…
-- Material de preventa para gestorías que ayudan a sus clientes a registrar marca…
-- Taller de nombres de marca para negocios locales de hostelería o comercio…
+- Sesión de naming con lista de comprobaciones para emprendedores sin nombre cerrado.
+- Material de preventa para gestorías que ayudan a sus clientes a registrar marca.
+- Taller de nombres de marca para negocios locales de hostelería o comercio.
 
 **Precio orientativo:** 30–60 € por sesión. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

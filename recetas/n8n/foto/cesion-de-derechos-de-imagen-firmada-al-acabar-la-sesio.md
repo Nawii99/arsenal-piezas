@@ -1,4 +1,4 @@
-# Cesión de derechos de imagen firmada al acabar la sesió…
+# Cesión de derechos de imagen firmada al acabar la sesió
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

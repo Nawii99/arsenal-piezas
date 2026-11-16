@@ -1,4 +1,4 @@
-# Latido: avisa cuando una automatización deja de ejecuta…
+# Latido: avisa cuando una automatización deja de ejecuta
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Alerta de vulnerabilidades con OSV.dev…
+# Alerta de vulnerabilidades con OSV.dev
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando tengas software en producción con datos de clientes y no pagues una herr
 
 Sustituye a un Snyk de pago (unos 25 €/usuario/mes) y evita el coste enorme de enterarte tarde de una vulnerabilidad crítica.
 
-- Escaneo de dependencias para apps con datos de clientes sin herramienta de pago…
-- Revisión de seguridad de librerías como servicio mensual para desarrolladores…
-- Informe de vulnerabilidades para entregas a clientes con requisitos de seguridad…
+- Escaneo de dependencias para apps con datos de clientes sin herramienta de pago.
+- Revisión de seguridad de librerías como servicio mensual para desarrolladores.
+- Informe de vulnerabilidades para entregas a clientes con requisitos de seguridad.
 
 **Precio orientativo:** 60–150 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Vigilante de robo de fotos: búsqueda inversa y aviso…
+# Vigilante de robo de fotos: búsqueda inversa y aviso
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

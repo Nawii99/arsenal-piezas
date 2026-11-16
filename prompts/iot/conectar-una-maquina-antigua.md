@@ -1,4 +1,4 @@
-# Conectar una máquina antigua…
+# Conectar una máquina antigua
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que planifica cómo sacar datos de una máquina o contador antiguo sin ab
 
 Es un servicio muy vendible a talleres, lavanderías, panaderías o naves: medir sin tocar la máquina no rompe garantías y se cobra como mejora de productividad.
 
-- Digitalización de maquinaria antigua en talleres…
-- Medición de horas y paradas en lavanderías y obradores…
-- Paneles de producción sencillos para pequeñas naves…
+- Digitalización de maquinaria antigua en talleres.
+- Medición de horas y paradas en lavanderías y obradores.
+- Paneles de producción sencillos para pequeñas naves.
 
 **Precio orientativo:** 200–600 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Aprobación de diseños por Telegram con botones…
+# Aprobación de diseños por Telegram con botones
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

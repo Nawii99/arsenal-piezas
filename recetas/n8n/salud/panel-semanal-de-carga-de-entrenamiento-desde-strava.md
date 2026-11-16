@@ -1,4 +1,4 @@
-# Panel semanal de carga de entrenamiento desde Strava…
+# Panel semanal de carga de entrenamiento desde Strava
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

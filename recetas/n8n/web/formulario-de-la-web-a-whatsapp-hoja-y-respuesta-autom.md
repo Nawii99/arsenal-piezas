@@ -1,4 +1,4 @@
-# Formulario de la web a WhatsApp, hoja y respuesta autom…
+# Formulario de la web a WhatsApp, hoja y respuesta autom
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

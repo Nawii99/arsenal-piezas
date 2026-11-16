@@ -1,4 +1,4 @@
-# Flujo n8n: encargo y cobro de comprobación de marca…
+# Flujo n8n: encargo y cobro de comprobación de marca
 
 **Tipo:** Receta de automatización · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Quieres que el cliente pida la comprobación por formulario, pague antes de empe
 
 Cobra por adelantado cada comprobación de marca con un enlace de pago, por comprobación [TU PRECIO]. La OEPM la miras tú a mano y los casos dudosos pasan a un profesional.
 
-- Venta online de comprobaciones de marca con cobro por adelantado…
-- Flujo de encargos para despachos que atienden registro de marca…
-- Automatización de presupuestos y cobros para servicios de naming…
+- Venta online de comprobaciones de marca con cobro por adelantado.
+- Flujo de encargos para despachos que atienden registro de marca.
+- Automatización de presupuestos y cobros para servicios de naming.
 
 **Precio orientativo:** 150–300 € por montaje. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

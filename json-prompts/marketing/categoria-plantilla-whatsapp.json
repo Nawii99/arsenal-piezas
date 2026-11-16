@@ -1,0 +1,148 @@
+{
+  "tarea": "Revisar el texto de una plantilla de WhatsApp antes de enviarla a Meta para su aprobación: decir en qué categoría la meterá Meta con más probabilidad (UTILITY, MARKETING o AUTHENTICATION), por qué, qué frases la convierten en promoción, y proponer una versión de aviso puro y, si hace falta, una plantilla de marketing aparte.",
+  "idioma_salida": "es-ES",
+  "reglas_comprobadas_el": "2026-11-13",
+  "fuente_reglas": "https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-categorization",
+  "entrada": {
+    "texto_de_la_plantilla": "[PEGA AQUÍ EL TEXTO TAL CUAL, CON LAS VARIABLES {{1}}, {{2}}…]",
+    "cabecera_y_pie": "[TEXTO DE CABECERA Y PIE, O «NINGUNO»]",
+    "botones": "[TEXTO DE CADA BOTÓN Y SI ES RESPUESTA RÁPIDA, ENLACE O TELÉFONO, O «NINGUNO»]",
+    "que_la_dispara": "[QUÉ HA HECHO EL CLIENTE PARA RECIBIRLA: PIDIÓ CITA, COMPRÓ, PAGÓ, NADA…]",
+    "categoria_que_vas_a_pedir": "[UTILITY | MARKETING | AUTHENTICATION | NO LO SÉ]",
+    "consentimiento_que_tienes": "[QUÉ ACEPTÓ EL CLIENTE, CON QUÉ TEXTO Y CUÁNDO, O «NO LO SÉ»]"
+  },
+  "reglas_de_meta": [
+    "UTILITY: según Meta, suele dispararse por una acción o petición del cliente, tiene que ser no promocional («non-promotional») y referirse a algo concreto del cliente o pedido por él: su pedido, su cuenta, sus servicios o sus transacciones.",
+    "En los avisos de pedido o de cuenta no se puede promocionar, recomendar, vender más (upsell o cross-sell) ni incluir ofertas.",
+    "Una encuesta o petición de opinión genérica no se aprueba como UTILITY.",
+    "Meta considera MARKETING las plantillas con contenido mixto (por ejemplo, un aviso de pedido con una promoción, o una encuesta con contenido promocional) y las de contenido poco claro (por ejemplo, solo «{{1}}» o «¡Enhorabuena!»).",
+    "AUTHENTICATION es para verificar la identidad del usuario, normalmente con códigos; solo estas plantillas pueden enviar contraseñas de un solo uso.",
+    "Desde el 9-abr-2025, si una plantilla se envía como UTILITY y Meta la considera MARKETING, la aprueba como MARKETING en lugar de rechazarla.",
+    "Meta puede cambiar la categoría de una plantilla ya aprobada: de UTILITY a MARKETING avisa con 1 día de antelación, salvo a negocios ya advertidos por mal uso. Hay 60 días para recurrir.",
+    "Meta no pone los recordatorios de cita entre sus ejemplos de UTILITY. Por la regla general encajan si el cliente pidió la cita, pero la decisión es de Meta."
+  ],
+  "reglas_de_trabajo": [
+    "Trabaja solo con el texto que te pegan. No inventes contexto.",
+    "Cada motivo lleva la frase literal de la plantilla que lo justifica.",
+    "No des precios por mensaje ni digas qué categoría es más cara: remite a la tabla oficial de precios de Meta.",
+    "No prometas la aprobación: la categoría final la decide Meta.",
+    "Si falta el consentimiento para la categoría probable, dilo en «avisos».",
+    "Mantén las variables {{1}}, {{2}}… en las versiones que propongas y no empieces ni termines el texto con una variable.",
+    "En las versiones propuestas, español de España, frases cortas y sin emojis."
+  ],
+  "como_clasificar": {
+    "utility_puro": {
+      "definicion": "Información que el cliente necesita sobre algo suyo, sin nada que venda.",
+      "pistas": [
+        "tu cita",
+        "tu pedido",
+        "tu pago",
+        "tu reserva",
+        "ha cambiado",
+        "recuerda traer",
+        "si no puedes venir"
+      ]
+    },
+    "señales_de_marketing": {
+      "definicion": "Cualquier frase que busque que el cliente compre, vuelva o gaste más.",
+      "pistas": [
+        "descuento",
+        "oferta",
+        "%",
+        "gratis",
+        "promoción",
+        "novedad",
+        "solo este mes",
+        "no te lo pierdas",
+        "aprovecha",
+        "te esperamos de nuevo",
+        "visita nuestra tienda",
+        "síguenos"
+      ]
+    },
+    "contenido_poco_claro": {
+      "definicion": "Texto que no se entiende sin las variables o que no dice de qué va.",
+      "pistas": [
+        "solo variables",
+        "¡Enhorabuena!",
+        "Tenemos algo para ti"
+      ]
+    }
+  },
+  "salida": {
+    "formato": "un único objeto JSON, sin texto alrededor",
+    "esquema": {
+      "categoria_probable": "UTILITY | MARKETING | AUTHENTICATION",
+      "confianza": "alta | media | baja",
+      "coincide_con_la_que_vas_a_pedir": "boolean o null",
+      "motivos": [
+        {
+          "motivo": "string",
+          "cita_literal": "string",
+          "regla_de_meta": "string"
+        }
+      ],
+      "frases_que_la_convierten_en_marketing": [
+        {
+          "cita_literal": "string",
+          "por_que": "string"
+        }
+      ],
+      "version_utility_pura": {
+        "texto": "string o null",
+        "botones": [
+          "string"
+        ],
+        "que_has_quitado": [
+          "string"
+        ]
+      },
+      "plantilla_de_marketing_aparte": {
+        "texto": "string o null",
+        "consentimiento_necesario": "string"
+      },
+      "consentimiento": {
+        "categoria_que_hace_falta": "string",
+        "lo_tienes": "sí | no | no lo sé",
+        "que_falta": "string o null"
+      },
+      "baja": {
+        "explica_como_darse_de_baja": "boolean",
+        "propuesta": "string o null"
+      },
+      "avisos": [
+        "string"
+      ],
+      "que_comprobar_en_meta": [
+        "Mira la categoría aprobada en el Administrador de WhatsApp antes de usarla.",
+        "Revisa los avisos de cambio de categoría."
+      ]
+    }
+  },
+  "ejemplo": {
+    "entrada": "Hola {{1}}, te recordamos tu cita mañana a las {{2}} en Peluquería Ana. ¡Y este mes, 20 % en tintes!",
+    "salida_resumida": {
+      "categoria_probable": "MARKETING",
+      "confianza": "alta",
+      "motivos": [
+        {
+          "motivo": "Mezcla un aviso con una promoción: Meta la trata como marketing.",
+          "cita_literal": "¡Y este mes, 20 % en tintes!",
+          "regla_de_meta": "contenido mixto"
+        }
+      ],
+      "version_utility_pura": {
+        "texto": "Hola {{1}}, te recordamos tu cita de mañana a las {{2}} en Peluquería Ana. Si no puedes venir, responde a este mensaje. Para no recibir más recordatorios, responde BAJA.",
+        "botones": [],
+        "que_has_quitado": [
+          "¡Y este mes, 20 % en tintes!"
+        ]
+      },
+      "plantilla_de_marketing_aparte": {
+        "texto": "Hola {{1}}, este mes tienes un 20 % de descuento en tintes en Peluquería Ana. Pide tu cita respondiendo a este mensaje. Si no quieres recibir ofertas, responde BAJA.",
+        "consentimiento_necesario": "Consentimiento expreso para recibir promociones por WhatsApp, separado del de recordatorios."
+      }
+    }
+  },
+  "limites": "No es asesoría legal. La categoría la decide Meta. Reglas tomadas de la documentación de Meta el 13-nov-2026: si ha pasado tiempo, vuelve a leerlas en la fuente."
+}

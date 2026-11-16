@@ -1,4 +1,4 @@
-# Producción de vídeo · Prompt operativo…
+# Producción de vídeo · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

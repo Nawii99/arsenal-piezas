@@ -1,4 +1,4 @@
-# Vigilante de tu nombre de marca en internet…
+# Vigilante de tu nombre de marca en internet
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Examen antibulos para tu chatbot…
+# Examen antibulos para tu chatbot
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que prepara un examen de 30 preguntas trampa para un chatbot. Entran sus 
 
 Un bot que promete un descuento inexistente o un plazo imposible te cuesta el pedido y la reputación; este examen lo pilla antes que el cliente.
 
-- Examen de calidad de chatbots antes de ponerlos con clientes…
-- Informe de pruebas como entregable en proyectos de asistentes…
-- Revisión tras cada cambio de instrucciones del bot…
+- Examen de calidad de chatbots antes de ponerlos con clientes.
+- Informe de pruebas como entregable en proyectos de asistentes.
+- Revisión tras cada cambio de instrucciones del bot.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

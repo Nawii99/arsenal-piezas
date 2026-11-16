@@ -1,4 +1,4 @@
-# Vigilancia de caída con doble confirmación y registro d…
+# Vigilancia de caída con doble confirmación y registro d
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

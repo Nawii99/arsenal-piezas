@@ -1,4 +1,4 @@
-# Aviso de caducidad del certificado SSL y del dominio…
+# Aviso de caducidad del certificado SSL y del dominio
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

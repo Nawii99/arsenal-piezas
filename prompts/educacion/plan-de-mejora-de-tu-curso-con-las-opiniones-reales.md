@@ -1,4 +1,4 @@
-# Plan de mejora de tu curso con las opiniones reales…
+# Plan de mejora de tu curso con las opiniones reales
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Al cerrar una edición del curso, cuando tienes encuestas, mensajes y reseñas y
 
 Evita que rehagas el curso entero por una queja aislada y concentra tu tiempo en los tres cambios que suben las ventas y las recomendaciones.
 
-- Informe de mejora de curso a partir de opiniones para infoproductores…
-- Análisis de encuestas de satisfacción para academias…
-- Plan de producto formativo para la siguiente edición…
+- Informe de mejora de curso a partir de opiniones para infoproductores.
+- Análisis de encuestas de satisfacción para academias.
+- Plan de producto formativo para la siguiente edición.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

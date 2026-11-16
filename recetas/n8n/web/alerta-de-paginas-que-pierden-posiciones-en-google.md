@@ -1,4 +1,4 @@
-# Alerta de páginas que pierden posiciones en Google…
+# Alerta de páginas que pierden posiciones en Google
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

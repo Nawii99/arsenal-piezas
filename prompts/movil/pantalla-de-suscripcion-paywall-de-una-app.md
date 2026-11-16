@@ -1,4 +1,4 @@
-# Pantalla de suscripción (paywall) de una app…
+# Pantalla de suscripción (paywall) de una app
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como especialista en monetización de apps. Recibe qué es gra
 
 Es la pantalla donde entra el dinero: reordenar planes y textos cambia cuánta gente paga sin tocar el producto ni gastar en publicidad.
 
-- Diseño y textos de paywall para apps de suscripción…
-- Revisión de planes y precios de una pantalla de pago actual…
-- Prueba A/B de textos de suscripción para apps pequeñas…
+- Diseño y textos de paywall para apps de suscripción.
+- Revisión de planes y precios de una pantalla de pago actual.
+- Prueba A/B de textos de suscripción para apps pequeñas.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

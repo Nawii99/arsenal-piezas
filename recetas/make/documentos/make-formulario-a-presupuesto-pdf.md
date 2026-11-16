@@ -1,4 +1,4 @@
-# Make (make.com): de formulario de Google Forms a presupuesto…
+# Make (make.com): de formulario de Google Forms a presupuesto
 
 **Tipo:** Receta de automatización · **Área:** Documentos · **Licencia:** CC BY 4.0
 

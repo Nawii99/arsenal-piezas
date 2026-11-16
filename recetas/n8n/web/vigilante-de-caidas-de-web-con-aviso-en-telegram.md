@@ -1,4 +1,4 @@
-# Vigilante de caídas de web con aviso en Telegram…
+# Vigilante de caídas de web con aviso en Telegram
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

@@ -1,13 +1,13 @@
 # Arsenal del Marketer · piezas
 
-**4.659 piezas en español para trabajar con IA**: 538 skills, 515 comandos «/» y
-625 subagentes para Claude Code, 366 prompts, 1852 JSON prompts y
-763 recetas de automatización (n8n, Make y Zapier). Escritas para autónomos, pequeños negocios y
+**4.741 piezas en español para trabajar con IA**: 555 skills, 522 comandos «/» y
+630 subagentes para Claude Code, 375 prompts, 1862 JSON prompts y
+797 recetas de automatización (n8n, Make y Zapier). Escritas para autónomos, pequeños negocios y
 quien empieza, con qué hace cada una, cómo se usa, cuándo conviene y cómo ganar dinero con ella.
 
 [English version](README.en.md) · Licencia del contenido: [CC BY 4.0](LICENSE) · Código: [MIT](LICENSE-CODE)
 
-**Ya en inglés:** 147 de las mejores piezas, en [en/](en/README.md) y en los plugins `arsenal-en-…`.
+**Ya en inglés:** 146 de las mejores piezas, en [en/](en/README.md) y en los plugins `arsenal-en-…`.
 
 ## Qué es cada cosa
 
@@ -35,12 +35,13 @@ Cambia `arsenal-ventas-alternativas` por el que quieras:
 
 | Área y tema | Plugin | Qué trae |
 |---|---|---|
-| Webs animadas | `arsenal-animacion` | 1 skill, 1 subagente |
+| Webs animadas | `arsenal-animacion` | 7 skills, 3 subagentes, 2 comandos / |
 | Música y audio | `arsenal-audio` | 8 skills, 7 subagentes, 6 comandos / |
 | Música y audio · Alternativas | `arsenal-audio-alternativas` | 3 comandos /, 2 skills |
 | Backend | `arsenal-backend` | 20 comandos /, 4 skills, 2 subagentes |
 | Backend · Alternativas | `arsenal-backend-alternativas` | 4 comandos /, 4 skills |
 | Calidad y tests | `arsenal-calidad` | 4 skills, 1 subagente |
+| Ciencia e investigación | `arsenal-ciencia` | 1 skill, 1 subagente |
 | Contenido | `arsenal-contenido` | 10 subagentes, 3 skills, 1 comando / |
 | Datos | `arsenal-datos` | 5 skills, 5 subagentes |
 | Datos e IA · Agentes y chatbots | `arsenal-datos-ia-agentes` | 6 comandos /, 4 skills, 3 subagentes |
@@ -65,7 +66,7 @@ Cambia `arsenal-ventas-alternativas` por el que quieras:
 | Tienda por internet · Optimizar y vender más en la tienda | `arsenal-ecommerce-optimizacion` | 6 skills, 2 subagentes, 1 comando / |
 | Tienda por internet · Plataformas y herramientas de tienda | `arsenal-ecommerce-plataformas` | 6 skills, 1 subagente |
 | Tienda por internet · Tienda sin cuota mensual | `arsenal-ecommerce-sin-cuota` | 3 subagentes, 2 comandos /, 1 skill |
-| Tienda por internet · Más de tienda por internet | `arsenal-ecommerce-varios` | 5 skills, 1 comando / |
+| Tienda por internet · Más de tienda por internet | `arsenal-ecommerce-varios` | 13 skills, 5 comandos /, 2 subagentes |
 | Formación · Alternativas (1) | `arsenal-educacion-alternativas-1` | 23 comandos /, 7 skills |
 | Formación · Alternativas (2) | `arsenal-educacion-alternativas-2` | 13 skills, 3 subagentes |
 | Formación · Alternativas (3) | `arsenal-educacion-alternativas-3` | 17 subagentes |
@@ -80,13 +81,13 @@ Cambia `arsenal-ventas-alternativas` por el que quieras:
 | Empleo y currículum · Entrevistas y sueldo | `arsenal-empleo-entrevistas` | 3 comandos /, 2 subagentes, 1 skill |
 | Empleo y currículum · Portfolio, web y perfiles online | `arsenal-empleo-portfolio` | 4 comandos /, 4 skills, 1 subagente |
 | Empleo y currículum · Más de empleo y currículum | `arsenal-empleo-varios` | 5 subagentes, 3 comandos /, 2 skills |
-| Finanzas · Alternativas (1) | `arsenal-finanzas-alternativas-1` | 19 comandos /, 6 skills, 4 subagentes |
+| Finanzas · Alternativas (1) | `arsenal-finanzas-alternativas-1` | 19 comandos /, 5 skills, 4 subagentes |
 | Finanzas · Alternativas (2) | `arsenal-finanzas-alternativas-2` | 16 subagentes |
-| Finanzas · Facturas y cobros | `arsenal-finanzas-cobros` | 4 subagentes, 3 comandos /, 3 skills |
-| Finanzas · Impuestos | `arsenal-finanzas-impuestos` | 4 comandos /, 2 subagentes |
+| Finanzas · Facturas y cobros | `arsenal-finanzas-cobros` | 4 subagentes, 4 skills, 3 comandos / |
+| Finanzas · Impuestos | `arsenal-finanzas-impuestos` | 4 comandos /, 2 subagentes, 1 skill |
 | Finanzas · Finanzas personales e inversión | `arsenal-finanzas-personales` | 5 subagentes, 1 skill |
 | Finanzas · Rentabilidad y costes | `arsenal-finanzas-rentabilidad` | 3 subagentes, 3 comandos / |
-| Finanzas · Más de finanzas | `arsenal-finanzas-varios` | 4 subagentes, 4 comandos /, 1 skill |
+| Finanzas · Más de finanzas | `arsenal-finanzas-varios` | 5 comandos /, 4 subagentes, 1 skill |
 | Foto e imagen · Alternativas (1) | `arsenal-foto-alternativas-1` | 16 comandos /, 7 skills, 1 subagente |
 | Foto e imagen · Alternativas (2) | `arsenal-foto-alternativas-2` | 12 subagentes |
 | Foto e imagen · Archivos y publicación | `arsenal-foto-archivos` | 7 subagentes, 1 comando / |
@@ -142,7 +143,7 @@ Cambia `arsenal-ventas-alternativas` por el que quieras:
 | Negocio · Alternativas | `arsenal-negocio-alternativas` | 7 subagentes, 6 comandos /, 3 skills |
 | Negocio · Clientes y atención | `arsenal-negocio-clientes` | 10 skills, 8 subagentes, 3 comandos / |
 | Negocio · Cobros y facturas | `arsenal-negocio-cobros` | 8 skills, 2 subagentes |
-| Negocio · Plan y estrategia | `arsenal-negocio-estrategia` | 8 subagentes, 2 skills |
+| Negocio · Plan y estrategia | `arsenal-negocio-estrategia` | 8 subagentes, 3 skills |
 | Negocio · Operaciones y equipo | `arsenal-negocio-operaciones` | 7 subagentes, 6 skills |
 | Negocio · Pasarelas y medios de pago | `arsenal-negocio-pasarelas` | 4 subagentes, 4 skills |
 | Negocio · Precios y oferta | `arsenal-negocio-precios` | 6 subagentes, 6 skills, 5 comandos / |
@@ -199,7 +200,7 @@ No instales todos a la vez: cada skill ocupa un poco de memoria en cada conversa
 ## Buscar lo que necesitas
 
 Todo está en [`catalogo.json`](catalogo.json) con nombre, tipo, área, qué hace, cómo usarla, cuándo, cómo ganar dinero,
-ideas de negocio y un precio orientativo. Por áreas: Formación (319), Negocio (299), Finanzas (298), Móvil (294), Ventas (277), Videojuegos y 3D (263), Salud y deporte (249), IoT y hardware (238), Foto e imagen (225), Web (221), Vídeo (220), Marketing (190), Backend (162), Diseño (154), Ciberseguridad (149), Datos (144), Datos e IA (137), Documentos (130), Empleo y currículum (126), Calidad y tests (124), Contenido (91), Programación (81), Productividad (68), Infraestructura (53), Legal y contratos (51), Música y audio (47), Tienda por internet (43), Webs animadas (6).
+ideas de negocio y un precio orientativo. Por áreas: Formación (320), Negocio (302), Finanzas (301), Móvil (295), Ventas (278), Videojuegos y 3D (264), Salud y deporte (250), IoT y hardware (239), Foto e imagen (226), Web (222), Vídeo (221), Marketing (192), Backend (163), Diseño (155), Ciberseguridad (150), Datos (145), Datos e IA (138), Documentos (131), Empleo y currículum (127), Calidad y tests (125), Contenido (92), Programación (82), Productividad (69), Tienda por internet (68), Infraestructura (54), Legal y contratos (52), Música y audio (48), Webs animadas (25), Ciencia e investigación (7).
 
 ## Sobre los precios
 

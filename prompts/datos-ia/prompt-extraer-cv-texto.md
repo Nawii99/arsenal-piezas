@@ -1,4 +1,4 @@
-# Extraer datos de un CV pegado como texto…
+# Extraer datos de un CV pegado como texto
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Si ya tienes el texto de un CV, sacado de un OCR o copiado a mano, y quieres una
 
 Sirve para ofrecer fichas de candidatos a pequeñas agencias o autónomos de RRHH que reciben CVs sueltos. Cobra por ficha o por paquete, [TU PRECIO], y que una persona revise cada una antes de usarla en una decisión de empleo.
 
-- Fichas de candidatos para agencias pequeñas que trabajan con CV sueltos…
-- Extracción de datos para autónomos de RRHH con un chat de IA…
-- Plantilla de ficha para entrevistas de selección sencillas…
+- Fichas de candidatos para agencias pequeñas que trabajan con CV sueltos.
+- Extracción de datos para autónomos de RRHH con un chat de IA.
+- Plantilla de ficha para entrevistas de selección sencillas.
 
 ## El prompt (cópialo entero)
 

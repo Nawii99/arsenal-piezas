@@ -1,4 +1,4 @@
-# Onboarding de app: los primeros 90 segundos…
+# Onboarding de app: los primeros 90 segundos
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como diseñador de producto móvil con experiencia en activaci
 
 Cada usuario que se queda en el primer minuto es un usuario que puede pagar; arreglar el arranque suele salir gratis y evita pagar publicidad para gente que se va pronto.
 
-- Diseño de onboarding de los primeros 90 segundos…
-- Auditoría de abandono en el primer uso de apps…
-- Pantallas de bienvenida para prototipos antes de lanzar…
+- Diseño de onboarding de los primeros 90 segundos.
+- Auditoría de abandono en el primer uso de apps.
+- Pantallas de bienvenida para prototipos antes de lanzar.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

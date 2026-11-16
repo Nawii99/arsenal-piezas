@@ -1,4 +1,4 @@
-# Prueba diaria del formulario de contacto…
+# Prueba diaria del formulario de contacto
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Foto de producto de estudio…
+# Foto de producto de estudio
 
 **Tipo:** Prompt · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

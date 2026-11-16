@@ -23,9 +23,9 @@ Ya tienes un sensor instalado en casa de un cliente que puede enviar datos por H
 
 Véndelo como servicio de vigilancia mensual a clientes de riego, alarma o estación meteo, con una cuota de [TU PRECIO] por los avisos y por comprobar que los dispositivos siguen conectados. Aclara que es un aviso y no un servicio de emergencias.
 
-- Monitorización de riego o temperatura para clientes con avisos, por instalación…
-- Cuota mensual de vigilancia de dispositivos, por mes…
-- Panel de lecturas para un cliente con varios sensores, por proyecto…
+- Monitorización de riego o temperatura para clientes con avisos, por instalación.
+- Cuota mensual de vigilancia de dispositivos, por mes.
+- Panel de lecturas para un cliente con varios sensores, por proyecto.
 
 **Precio orientativo:** 150–400 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 
@@ -52,22 +52,22 @@ Pestaña 'lecturas': columnas fecha_hora, cliente_id, valor, bateria, origen.
 ## Flujo 1: recibir lectura y avisar al cliente
 
 1. Webhook. Método POST, ruta por ejemplo /lectura. Autenticación: Header Auth con una clave que tú inventes; esa misma clave la pones en el dispositivo. Sin clave, cualquiera podría meterte datos falsos. El cuerpo que esperas: cliente_id, valor, bateria.
-2. Set (Edit Fields). Añade fecha_hora con la expresión {{ $now.toISO() }} y copia cliente_id, valor y bateria del webhook. Aquí también pones origen = 'webhook'.
+2. Set (Edit Fields), llamado exactamente «Preparar lectura» (otros nodos lo citan con ese nombre). Añade fecha_hora con la expresión {{ $now.toISO() }} y copia cliente_id, valor y bateria del cuerpo (body) del webhook (valor y bateria como números). Aquí también pones origen = 'webhook'.
 3. Google Sheets, operación Append. Documento: tu hoja. Pestaña: lecturas. Mapea las columnas con los campos del paso anterior.
-4. Google Sheets, operación Get Row(s) con filtro cliente_id igual al recibido, en la pestaña clientes. Devuelve el chat_id y los umbrales de ese cliente.
-5. IF. Condición: valor menor que umbral_min O valor mayor que umbral_max O bateria menor que 20. Si es un sensor de puerta de alarma, el 'valor' es 1 cuando se abre y el umbral_max será 0.
-6. Telegram, rama verdadera, operación Send Message. Chat ID: el del cliente que sacaste en el paso 4. Texto sin tecnicismos: 'Hola [NOMBRE], el sensor de [TIPO] ha marcado [VALOR]. Si no lo esperabas, responde a este mensaje y lo miro.' Cambia el texto según tipo de proyecto.
+4. Google Sheets, operación Get Row(s) con filtro cliente_id igual al recibido ({{ $('Preparar lectura').item.json.cliente_id }}), en la pestaña clientes. Devuelve el chat_id y los umbrales de ese cliente.
+5. IF, llamado «¿Fuera de umbral o batería baja?». Condición: valor menor que umbral_min O valor mayor que umbral_max O bateria menor que 20 (valor y bateria se toman de $('Preparar lectura'), los umbrales de la fila del cliente del paso 4, y un umbral vacío en la hoja se ignora). Si es un sensor de puerta de alarma, el 'valor' es 1 cuando se abre y el umbral_max será 0.
+6. Telegram, rama verdadera, operación Send Message. Chat ID: el del cliente que sacaste en el paso 4 ({{ $json.chat_id_telegram }}); nombre y tipo salen de esa misma fila ({{ $json.nombre }}, {{ $json.tipo }}) y el valor, de $('Preparar lectura'). Texto sin tecnicismos: 'Hola [NOMBRE], el sensor de [TIPO] ha marcado [VALOR]. Si no lo esperabas, responde a este mensaje y lo miro.' Cambia el texto según tipo de proyecto.
 7. Rama falsa: nada. No mandes mensajes 'todo bien' cada 10 minutos; el cliente silencia el bot y pierdes el canal.
 
 ## Flujo 2: detectar dispositivos mudos y avisarte a ti
 
 1. Schedule Trigger. Cada hora.
 2. Google Sheets, Get Row(s), pestaña clientes, sin filtro. Saca todos los clientes.
-3. Loop Over Items (Split in Batches) para recorrer cliente a cliente.
-4. Google Sheets, Get Row(s), pestaña lecturas, filtro cliente_id igual al actual. Ordena por fecha_hora descendente o coge la última fila. Si tu hoja crece mucho, cambia esto por una pestaña 'ultima_lectura' que sobrescribes en el flujo 1 con la operación Update.
-5. IF. Condición: la diferencia entre ahora y fecha_hora de la última lectura, en horas, es mayor que horas_sin_senal_aviso de ese cliente. Expresión: {{ $now.diff(DateTime.fromISO($json.fecha_hora), 'hours').hours }}.
-6. Telegram, rama verdadera, mensaje a TU chat_id: 'Cliente [NOMBRE] ([TIPO]) sin señal desde [FECHA]. Revisar wifi, pila o corriente.' Esto no se lo mandes al cliente todavía: primero comprueba tú si es un corte de su router o un fallo real.
-7. Opcional: un tercer nodo Telegram que avise al cliente solo si lleva más de 24 horas mudo, con texto tipo 'Tu sensor lleva un día sin conectar. ¿Sigue enchufado y con wifi? Si quieres, paso a revisarlo.' Ese 'paso a revisarlo' es una visita facturable si está fuera de la cuota.
+3. Loop Over Items (Split in Batches), llamado exactamente «Recorrer clientes» (varios nodos lo citan con ese nombre) y con tamaño de lote 1, para recorrer cliente a cliente. Su salida «loop» (la segunda) va al paso 4; la salida «done» se deja sin conectar. Todas las ramas posteriores terminan volviendo a la entrada de este nodo.
+4. Google Sheets, Get Row(s), pestaña lecturas, filtro cliente_id igual al actual ({{ $('Recorrer clientes').item.json.cliente_id }}); en los ajustes del nodo activa que siempre devuelva datos, aunque el cliente no tenga lecturas. Después, un nodo Limit llamado exactamente «Quedarse con la última lectura» (máximo 1 elemento, conservando el último) se queda con la última fila. Si tu hoja crece mucho, cambia esto por una pestaña 'ultima_lectura' que sobrescribes en el flujo 1 con la operación Update.
+5. IF. Condición: la diferencia entre ahora y fecha_hora de la última lectura, en horas, es mayor que horas_sin_senal_aviso de ese cliente (leído de $('Recorrer clientes')), o no hay ninguna lectura (fecha_hora vacía). Llama a este IF «¿Lleva demasiado sin señal?»; su salida «false» vuelve a «Recorrer clientes». Expresión de la diferencia: {{ $now.diff(DateTime.fromISO($json.fecha_hora), 'hours').hours }}.
+6. Telegram, rama verdadera (salida «true» del IF), mensaje a TU chat_id (nombre y tipo salen de $('Recorrer clientes') y, si no hay ninguna lectura, en la fecha se pone «nunca»): 'Cliente [NOMBRE] ([TIPO]) sin señal desde [FECHA]. Revisar wifi, pila o corriente.' Esto no se lo mandes al cliente todavía: primero comprueba tú si es un corte de su router o un fallo real.
+7. Opcional, a continuación del aviso del paso 6: un IF llamado «¿Más de 24 horas mudo?» (condición: no hay fecha_hora en $('Quedarse con la última lectura') o la diferencia con ahora es mayor que 24 horas; su salida «false» vuelve a «Recorrer clientes») y, en su salida «true», un tercer nodo Telegram llamado «Avisar al cliente (opcional)», que va desactivado hasta que quieras usarlo, con el chat_id_telegram del cliente de $('Recorrer clientes'), que avise al cliente solo si lleva más de 24 horas mudo, con texto tipo 'Tu sensor lleva un día sin conectar. ¿Sigue enchufado y con wifi? Si quieres, paso a revisarlo.' Ese 'paso a revisarlo' es una visita facturable si está fuera de la cuota.
 
 ## Cómo probarlo sin liarla
 

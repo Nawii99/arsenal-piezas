@@ -1,4 +1,4 @@
-# Cobros de mensualidad, impagos y corte de acceso…
+# Cobros de mensualidad, impagos y corte de acceso
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

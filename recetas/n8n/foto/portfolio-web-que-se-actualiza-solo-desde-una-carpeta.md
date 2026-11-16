@@ -1,4 +1,4 @@
-# Portfolio web que se actualiza solo desde una carpeta…
+# Portfolio web que se actualiza solo desde una carpeta
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

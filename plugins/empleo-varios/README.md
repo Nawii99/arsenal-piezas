@@ -15,7 +15,7 @@ Empleo y currículum · Más de empleo y currículum: 5 subagentes, 3 comandos /
 |---|---|---|---|
 | carta-con-tu-voz | Comando / | Genera una carta de presentación desde la oferta y tu perfil, y la reescribe con tu forma de escribir, sin inventar nada. | `/carta-con-tu-voz` o `/arsenal-empleo-varios:carta-con-tu-voz` |
 | presupuesto-cv-web | Comando / | Comando que, a partir de dos o tres respuestas del cliente, genera un presupuesto listo para copiar y enviar por email o WhatsApp. | `/presupuesto-cv-web` o `/arsenal-empleo-varios:presupuesto-cv-web` |
-| presupuesto-servicio-cv | Comando / | Comando de Claude Code que redacta un presupuesto formal para un encargo de currículum o carta de presentación, listo para pegar en un email. | `/presupuesto-servicio-cv` o `/arsenal-empleo-varios:presupuesto-servicio-cv` |
+| presupuesto-servicio-cv | Comando / | Genera un presupuesto listo para enviar por un encargo de currículum, con precio desglosado, IVA y condiciones de entrega para trabajar como autónomo en España. | `/presupuesto-servicio-cv` o `/arsenal-empleo-varios:presupuesto-servicio-cv` |
 | carta-con-investigacion | Skill | Investiga la empresa antes de escribir la carta de presentación y la redacta con datos reales, no con adjetivos vacíos. | se activa sola cuando hace falta |
 | montar-servicio-candidatos | Skill | Convierte tu ayuda a candidatos en un servicio de verdad: paquetes, precios, alcance cerrado, condiciones y alta de autonomo en Espana. | se activa sola cuando hace falta |
 | brujula-giro-profesional | Subagente | Giro profesional pensado: pruebas pequeñas a 90 días con tus cifras, sin saltos ciegos. | pídele a Claude «usa el subagente brujula-giro-profesional» |

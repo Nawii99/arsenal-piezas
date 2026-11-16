@@ -1,4 +1,4 @@
-# Tickets de gasto por foto: mándalos por Telegram y se a…
+# Tickets de gasto por foto: mándalos por Telegram y se a
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Envías la foto de un ticket a un bot privado de Telegram; un modelo con visión
 
 Un autónomo pierde de media 40-80 € al mes de IVA y gasto deducible por tickets extraviados. Son 500-960 € al año que dejas de perder.
 
-- Captura de gastos por foto para comerciales y técnicos que viajan…
-- Registro de tickets para autónomos que pierden justificantes…
-- Configuración de gastos deducibles para instaladores y servicios a domicilio…
+- Captura de gastos por foto para comerciales y técnicos que viajan.
+- Registro de tickets para autónomos que pierden justificantes.
+- Configuración de gastos deducibles para instaladores y servicios a domicilio.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

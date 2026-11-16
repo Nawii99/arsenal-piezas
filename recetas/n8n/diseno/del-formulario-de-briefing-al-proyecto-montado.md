@@ -1,4 +1,4 @@
-# Del formulario de briefing al proyecto montado…
+# Del formulario de briefing al proyecto montado
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

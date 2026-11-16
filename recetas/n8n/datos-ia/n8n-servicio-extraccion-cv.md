@@ -1,4 +1,4 @@
-# Servicio automático de extracción de CVs con n8n…
+# Servicio automático de extracción de CVs con n8n
 
 **Tipo:** Receta de automatización · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Si un cliente sube CVs a una carpeta compartida y quieres que se procesen solos 
 
 Véndelo como servicio recurrente de extracción de CVs a agencias de selección y autónomos de RRHH: cuota mensual por volumen, [TU PRECIO]. Una persona revisa los resultados, porque son datos personales y de empleo, y calcula el coste por CV antes de fijar el precio.
 
-- Servicio recurrente de extracción de CV para agencias de selección…
-- Cuota mensual por volumen de CV para autónomos de RRHH…
-- Mantenimiento de la hoja de candidatos y revisión de resultados para un cliente…
+- Servicio recurrente de extracción de CV para agencias de selección.
+- Cuota mensual por volumen de CV para autónomos de RRHH.
+- Mantenimiento de la hoja de candidatos y revisión de resultados para un cliente.
 
 **Precio orientativo:** 80–200 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Calificador de leads de proyectos web con presupuesto o…
+# Calificador de leads de proyectos web con presupuesto o
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

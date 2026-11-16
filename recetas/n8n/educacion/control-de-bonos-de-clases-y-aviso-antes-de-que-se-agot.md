@@ -1,4 +1,4 @@
-# Control de bonos de clases y aviso antes de que se agot…
+# Control de bonos de clases y aviso antes de que se agot
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

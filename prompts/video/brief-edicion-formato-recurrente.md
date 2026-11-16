@@ -1,4 +1,4 @@
-# Brief de edición para formato recurrente…
+# Brief de edición para formato recurrente
 
 **Tipo:** Prompt · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para pegar en Claude, Codex, Gemini o una IA local que genera un brief de
 
 Se pega tal cual en Claude, Codex, Gemini o una IA local, rellenando los campos entre corchetes.
 
-- Brief de edición para creadores que publican un formato semanal fijo…
-- Plantilla de montaje para marcas que repiten el mismo tipo de vídeo…
-- Documento de estilo de edición para equipos que publican cada semana…
+- Brief de edición para creadores que publican un formato semanal fijo.
+- Plantilla de montaje para marcas que repiten el mismo tipo de vídeo.
+- Documento de estilo de edición para equipos que publican cada semana.
 
 **Precio orientativo:** 15–30 € por brief. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

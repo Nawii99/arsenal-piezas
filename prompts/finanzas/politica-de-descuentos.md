@@ -1,4 +1,4 @@
-# politica-de-descuentos…
+# politica-de-descuentos
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt para cualquier chat de IA que calcula hasta dónde puedes descontar sin p
 
 Un descuento mal calculado se come el margen entero: saber tu suelo y pedir contrapartidas protege el beneficio de cada venta que cierras.
 
-- Política de descuentos para comercios y servicios…
-- Preparación de campañas de rebajas con margen protegido…
+- Política de descuentos para comercios y servicios.
+- Preparación de campañas de rebajas con margen protegido.
 
 **Precio orientativo:** 50–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

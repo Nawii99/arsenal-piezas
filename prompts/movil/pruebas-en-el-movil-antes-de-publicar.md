@@ -1,4 +1,4 @@
-# Pruebas en el móvil antes de publicar…
+# Pruebas en el móvil antes de publicar
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como responsable de QA móvil y genera un plan de pruebas manu
 
 Cazar los fallos antes de publicar evita rechazos de la tienda, valoraciones de una estrella y facturas de urgencia al programador.
 
-- Revisión de calidad previa a publicación para apps de clientes…
-- Checklist de pruebas personalizado por versión para equipos pequeños…
-- Servicio de testeo manual de apps en varios móviles con informe…
+- Revisión de calidad previa a publicación para apps de clientes.
+- Checklist de pruebas personalizado por versión para equipos pequeños.
+- Servicio de testeo manual de apps en varios móviles con informe.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

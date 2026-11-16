@@ -1,4 +1,4 @@
-# Entrega a cliente: marca de agua, compresión y enlace…
+# Entrega a cliente: marca de agua, compresión y enlace
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

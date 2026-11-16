@@ -1,4 +1,4 @@
-# Firmas de email del equipo por lote…
+# Firmas de email del equipo por lote
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Lee de una hoja de cálculo el nombre, cargo, teléfono y email de cada persona 
 
 Un servicio de firmas cuesta 1-2 € por usuario y mes. Con 25 empleados son 300-600 €/año que te ahorras, y la marca deja de verse rota.
 
-- Montaje de firmas corporativas para pymes con plantilla de marca incluida…
-- Mantenimiento mensual de firmas cuando entran o salen empleados…
-- Pack de identidad digital que incluye firmas, plantillas de email y guía de uso…
+- Montaje de firmas corporativas para pymes con plantilla de marca incluida.
+- Mantenimiento mensual de firmas cuando entran o salen empleados.
+- Pack de identidad digital que incluye firmas, plantillas de email y guía de uso.
 
 **Precio orientativo:** 150–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

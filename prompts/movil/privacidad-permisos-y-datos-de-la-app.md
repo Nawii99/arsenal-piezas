@@ -1,4 +1,4 @@
-# Privacidad, permisos y datos de la app…
+# Privacidad, permisos y datos de la app
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como asesor de privacidad de apps publicadas en España. Recib
 
 Evita rechazos que retrasan el lanzamiento semanas y reduce el riesgo de sanción por tratar datos personales sin informar.
 
-- Borrador de política de privacidad y ficha de datos para apps pequeñas…
-- Inventario de datos y permisos de una app antes de publicarla…
-- Pack de textos legales y de permisos para lanzamientos en tiendas…
+- Borrador de política de privacidad y ficha de datos para apps pequeñas.
+- Inventario de datos y permisos de una app antes de publicarla.
+- Pack de textos legales y de permisos para lanzamientos en tiendas.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

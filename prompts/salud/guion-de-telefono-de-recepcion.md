@@ -1,4 +1,4 @@
-# Guion de teléfono de recepción…
+# Guion de teléfono de recepción
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando te entran consultas por teléfono o WhatsApp y muchas se quedan en «me l
 
 Subir el porcentaje de llamadas que acaban en cita agendada aprovecha demanda que ya estás pagando por generar.
 
-- Guion de atención telefónica y WhatsApp para recepción de clínicas…
-- Formación breve en role-play para personal de mostrador…
-- Manual de respuestas a objeciones de precio para centros de bienestar…
+- Guion de atención telefónica y WhatsApp para recepción de clínicas.
+- Formación breve en role-play para personal de mostrador.
+- Manual de respuestas a objeciones de precio para centros de bienestar.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

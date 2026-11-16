@@ -1,4 +1,4 @@
-# Conciliación banco-facturas: marca las cobradas solas…
+# Conciliación banco-facturas: marca las cobradas solas
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

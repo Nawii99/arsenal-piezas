@@ -1,4 +1,4 @@
-# Generador de nombres de marca con filtro de colisiones…
+# Generador de nombres de marca con filtro de colisiones
 
 **Tipo:** Prompt · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ En la fase de brainstorming de nombre, antes de perder tiempo comprobando uno a 
 
 Acelera la primera reunión de naming con un cliente: llegas con una lista ya filtrada en vez de proponer nombres al azar que luego hay que descartar todos.
 
-- Sesión de naming con lista filtrada para agencias de branding…
-- Brainstorm de nombres para emprendedores que aún no tienen marca…
-- Lista de candidatos para tiendas online que quieren un dominio libre…
+- Sesión de naming con lista filtrada para agencias de branding.
+- Brainstorm de nombres para emprendedores que aún no tienen marca.
+- Lista de candidatos para tiendas online que quieren un dominio libre.
 
 **Precio orientativo:** 40–90 € por sesión. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

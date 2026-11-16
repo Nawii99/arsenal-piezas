@@ -1,4 +1,4 @@
-# Seguimiento de adherencia con escala de 0 a 10…
+# Seguimiento de adherencia con escala de 0 a 10
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Sistema visual de marca · Prompt operativo…
+# Sistema visual de marca · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Diseño · **Licencia:** CC BY 4.0
 

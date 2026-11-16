@@ -1,4 +1,4 @@
-# Guion de clase grabada…
+# Guion de clase grabada
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt que escribe el guion completo de una lección grabada de 10 a 20 minutos 
 
 Grabar con guion reduce las tomas y el montaje, y te permite producir un curso entero en días en vez de meses.
 
-- Escaletas de vídeo formativo para academias…
-- Revisión de guiones de formación existentes…
+- Escaletas de vídeo formativo para academias.
+- Revisión de guiones de formación existentes.
 
 **Precio orientativo:** 30–100 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

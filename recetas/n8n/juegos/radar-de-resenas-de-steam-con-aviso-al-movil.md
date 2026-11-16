@@ -1,4 +1,4 @@
-# Radar de reseñas de Steam con aviso al móvil…
+# Radar de reseñas de Steam con aviso al móvil
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Receta de n8n que cada hora consulta la API pública de reseñas de Steam de tu 
 
 Sustituye la revisión manual diaria (unos 20-30 min/día) y te permite reaccionar a un bug en horas en vez de días, que es lo que salva la nota del juego.
 
-- Vigilancia de reseñas para un estudio indie con un juego de lanzamiento…
-- Respuesta rápida a bugs para un juego con comunidad activa…
-- Informe semanal de reseñas para el community manager de un juego…
+- Vigilancia de reseñas para un estudio indie con un juego de lanzamiento.
+- Respuesta rápida a bugs para un juego con comunidad activa.
+- Informe semanal de reseñas para el community manager de un juego.
 
 **Precio orientativo:** 120–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

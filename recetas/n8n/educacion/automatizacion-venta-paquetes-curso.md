@@ -1,4 +1,4 @@
-# Vender y entregar paquetes de curso por n8n…
+# Vender y entregar paquetes de curso por n8n
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

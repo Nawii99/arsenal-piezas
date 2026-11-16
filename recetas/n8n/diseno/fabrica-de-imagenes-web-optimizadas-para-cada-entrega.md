@@ -1,4 +1,4 @@
-# Fábrica de imágenes web optimizadas para cada entrega…
+# Fábrica de imágenes web optimizadas para cada entrega
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

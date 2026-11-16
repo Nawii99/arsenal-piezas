@@ -1,4 +1,4 @@
-# Prueba diaria de extremo a extremo del formulario de co…
+# Prueba diaria de extremo a extremo del formulario de co
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Enciende el termo y la lavadora en las horas baratas de…
+# Enciende el termo y la lavadora en las horas baratas de
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

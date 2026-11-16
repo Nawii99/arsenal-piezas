@@ -1,4 +1,4 @@
-# Auditoría de consumo con enchufes inteligentes…
+# Auditoría de consumo con enchufes inteligentes
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que analiza lecturas de enchufes medidores o del contador para decir qué
 
 Encuentra consumos fantasma y aparatos mal programados que se pagan todos los meses en la factura de luz, y justifica con números si merece la pena cambiar un equipo.
 
-- Auditoría de consumo eléctrico para viviendas y locales…
-- Informe de ahorro con enchufes medidores…
-- Programación de apagados automáticos para pequeños negocios…
+- Auditoría de consumo eléctrico para viviendas y locales.
+- Informe de ahorro con enchufes medidores.
+- Programación de apagados automáticos para pequeños negocios.
 
 **Precio orientativo:** 60–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

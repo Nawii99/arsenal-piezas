@@ -1,4 +1,4 @@
-# Contador de visitas del local cruzado con las ventas…
+# Contador de visitas del local cruzado con las ventas
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

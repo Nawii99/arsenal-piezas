@@ -1,4 +1,4 @@
-# Rúbrica y feedback a alumnos…
+# Rúbrica y feedback a alumnos
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que crea una rúbrica de corrección con 4 a 6 
 
 Corregir con rúbrica te lleva un tercio del tiempo y sube la percepción de valor de tu formación, que es lo que sostiene el precio.
 
-- Rúbricas y banco de feedback para academias y formadores…
-- Servicio de corrección de entregas con informe por alumno…
-- Estandarización de la evaluación para centros de formación pequeños…
+- Rúbricas y banco de feedback para academias y formadores.
+- Servicio de corrección de entregas con informe por alumno.
+- Estandarización de la evaluación para centros de formación pequeños.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

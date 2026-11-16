@@ -1,4 +1,4 @@
-# Informe semanal de las consultas que ahogan tu base…
+# Informe semanal de las consultas que ahogan tu base
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando la app va cada vez más lenta según crece y no sabes si es el servidor, 
 
 Un índice bien puesto suele valer más que doblar el servidor: te ahorras 20-50 € al mes de máquina y ganas velocidad de verdad.
 
-- Diagnóstico de rendimiento de base de datos para apps de clientes con informe semanal…
-- Servicio mensual de optimización de consultas para tiendas que van lentas…
-- Configuración de informes de consultas para startups sin DBA…
+- Diagnóstico de rendimiento de base de datos para apps de clientes con informe semanal.
+- Servicio mensual de optimización de consultas para tiendas que van lentas.
+- Configuración de informes de consultas para startups sin DBA.
 
 **Precio orientativo:** 80–250 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

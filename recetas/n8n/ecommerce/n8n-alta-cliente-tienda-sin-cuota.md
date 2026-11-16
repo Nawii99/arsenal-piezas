@@ -1,4 +1,4 @@
-# Alta automática de cliente al pagar el montaje…
+# Alta automática de cliente al pagar el montaje
 
 **Tipo:** Receta de automatización · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 
@@ -25,9 +25,9 @@ Cobras el montaje con un enlace de pago de Stripe y quieres que, al pagar, el cl
 
 Quita el trabajo administrativo del arranque de tu servicio de montaje de tiendas: cada pago dispara el alta y tú dedicas el tiempo a montar. Cobras por paquete de montaje [TU PRECIO].
 
-- Automatización de altas y facturación para tiendas que cobran con enlaces de Stripe…
-- Flujo de alta para consultores que cobran por adelantado sus servicios…
-- Mantenimiento mensual del flujo de cobros y registros para pequeños negocios…
+- Automatización de altas y facturación para tiendas que cobran con enlaces de Stripe.
+- Flujo de alta para consultores que cobran por adelantado sus servicios.
+- Mantenimiento mensual del flujo de cobros y registros para pequeños negocios.
 
 **Precio orientativo:** 120–250 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

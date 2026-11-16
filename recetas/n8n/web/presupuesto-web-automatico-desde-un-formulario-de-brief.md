@@ -1,4 +1,4 @@
-# Presupuesto web automático desde un formulario de brief…
+# Presupuesto web automático desde un formulario de brief
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

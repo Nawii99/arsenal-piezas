@@ -1,4 +1,4 @@
-# triaje-administrativo-telefono…
+# triaje-administrativo-telefono
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando recepción agenda a ciegas y se acumulan citas mal asignadas: visitas cor
 
 Ajustar la duración y el tipo de cita hace que quepan más pacientes bien atendidos en el mismo horario y evita las horas rotas por retrasos en cadena.
 
-- Guion de triaje administrativo para recepción de clínicas…
-- Manual de asignación de tipos de cita y duraciones…
-- Formación de personal de mostrador con casos prácticos…
+- Guion de triaje administrativo para recepción de clínicas.
+- Manual de asignación de tipos de cita y duraciones.
+- Formación de personal de mostrador con casos prácticos.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

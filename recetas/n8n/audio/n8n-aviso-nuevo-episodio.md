@@ -1,4 +1,4 @@
-# Aviso y borrador de redes cuando publicas episodio…
+# Aviso y borrador de redes cuando publicas episodio
 
 **Tipo:** Receta de automatización · **Área:** Música y audio · **Licencia:** CC BY 4.0
 

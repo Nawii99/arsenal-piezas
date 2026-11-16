@@ -1,4 +1,4 @@
-# me-sale-a-cuenta-esta-inversion…
+# me-sale-a-cuenta-esta-inversion
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt para cualquier chat de IA que analiza si una compra o contratación se pa
 
 Evita compras que no se recuperan y te dice el volumen exacto de ventas que hace falta para que la inversión se pague sola.
 
-- Análisis de inversiones pequeñas para pymes…
-- Informe de retorno antes de comprar equipo…
+- Análisis de inversiones pequeñas para pymes.
+- Informe de retorno antes de comprar equipo.
 
 **Precio orientativo:** 60–180 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

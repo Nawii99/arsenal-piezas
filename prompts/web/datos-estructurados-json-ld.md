@@ -1,4 +1,4 @@
-# datos-estructurados-json-ld…
+# datos-estructurados-json-ld
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para Claude, Codex, Gemini o una IA local que genera el código JSON-LD (
 
 Un resultado con horarios, precio o valoraciones se lleva más clics que uno pelado, con el mismo puesto en Google y sin pagar publicidad.
 
-- Marcado Schema.org de la portada y las fichas de servicio de webs de negocios locales…
-- Auditoría y corrección de datos estructurados en tiendas online pequeñas…
-- Paquete de FAQ con marcado para clínicas, talleres y despachos…
+- Marcado Schema.org de la portada y las fichas de servicio de webs de negocios locales.
+- Auditoría y corrección de datos estructurados en tiendas online pequeñas.
+- Paquete de FAQ con marcado para clínicas, talleres y despachos.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

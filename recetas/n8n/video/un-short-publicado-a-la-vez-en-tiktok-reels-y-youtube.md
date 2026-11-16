@@ -1,4 +1,4 @@
-# Un Short publicado a la vez en TikTok, Reels y YouTube…
+# Un Short publicado a la vez en TikTok, Reels y YouTube
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando haces vídeo vertical y publicas a mano en tres apps distintas, o cuando 
 
 Publicar en tres redes a mano son 20-25 minutos por pieza. Con 12 piezas al mes, 4-5 horas recuperadas cada mes.
 
-- Publicación multired de vídeos cortos para tiendas y negocios locales cada semana…
-- Gestión de Shorts para creadores con calendario y textos por plataforma…
-- Configuración de publicación automática para agencias con varias cuentas de cliente…
+- Publicación multired de vídeos cortos para tiendas y negocios locales cada semana.
+- Gestión de Shorts para creadores con calendario y textos por plataforma.
+- Configuración de publicación automática para agencias con varias cuentas de cliente.
 
 **Precio orientativo:** 100–300 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

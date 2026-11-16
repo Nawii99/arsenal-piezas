@@ -1,4 +1,4 @@
-# Simulador de entrevista técnica por tecnología…
+# Simulador de entrevista técnica por tecnología
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

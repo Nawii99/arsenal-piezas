@@ -1,4 +1,4 @@
-# Escalado de morosos por tramos con parada automática…
+# Escalado de morosos por tramos con parada automática
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

@@ -23,9 +23,9 @@ Lee los colores de tu marca desde una hoja, calcula el ratio de contraste WCAG d
 
 Evita rehacer una web o un manual de marca por incumplir accesibilidad (jornada entera de trabajo) y te da un argumento sólido ante el cliente. Coste: 0 €.
 
-- Auditoría de accesibilidad de paleta para marcas que entregan manual de identidad…
-- Revisión de contraste para webs de clientes antes de lanzar…
-- Informe de accesibilidad cromática para estudios que compiten en licitaciones…
+- Auditoría de accesibilidad de paleta para marcas que entregan manual de identidad.
+- Revisión de contraste para webs de clientes antes de lanzar.
+- Informe de accesibilidad cromática para estudios que compiten en licitaciones.
 
 **Precio orientativo:** 30–90 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

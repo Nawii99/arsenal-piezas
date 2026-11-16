@@ -1,4 +1,4 @@
-# Calculadora de licencias de uso desde tu web…
+# Calculadora de licencias de uso desde tu web
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

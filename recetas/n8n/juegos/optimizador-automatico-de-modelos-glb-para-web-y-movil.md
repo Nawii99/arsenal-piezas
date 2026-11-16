@@ -1,4 +1,4 @@
-# Optimizador automático de modelos GLB para web y móvil…
+# Optimizador automático de modelos GLB para web y móvil
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

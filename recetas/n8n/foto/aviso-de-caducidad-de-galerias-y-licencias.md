@@ -1,4 +1,4 @@
-# Aviso de caducidad de galerías y licencias…
+# Aviso de caducidad de galerías y licencias
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

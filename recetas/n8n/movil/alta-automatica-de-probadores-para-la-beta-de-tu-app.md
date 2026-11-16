@@ -1,4 +1,4 @@
-# Alta automática de probadores para la beta de tu app…
+# Alta automática de probadores para la beta de tu app
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Receta de n8n que recoge en un formulario el email y el sistema de quien quiere 
 
 Quita 5-10 minutos por tester y elimina los errores de copiar emails. Con 50 testers son varias horas y una publicación que no se retrasa.
 
-- Gestión de betas para una app de un estudio pequeño antes de lanzar…
-- Alta de testers para una app de cliente que sale en dos tiendas…
-- Captación de probadores para un negocio con app propia…
+- Gestión de betas para una app de un estudio pequeño antes de lanzar.
+- Alta de testers para una app de cliente que sale en dos tiendas.
+- Captación de probadores para un negocio con app propia.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

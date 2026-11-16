@@ -1,4 +1,4 @@
-# Blindar respuestas contra datos inventados…
+# Blindar respuestas contra datos inventados
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que revisa respuestas de un asistente para detectar afirmaciones inventad
 
 Un plazo o un precio inventado por un bot te lo puede reclamar el cliente; esta revisión evita reclamaciones y devoluciones.
 
-- Auditoría de respuestas de chatbots de atención al cliente…
-- Reglas anti-invención para asistentes de pymes…
-- Revisión periódica de bots que hablan de plazos y garantías…
+- Auditoría de respuestas de chatbots de atención al cliente.
+- Reglas anti-invención para asistentes de pymes.
+- Revisión periódica de bots que hablan de plazos y garantías.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# CO2 y ventilación: avisa al personal antes de que el ai…
+# CO2 y ventilación: avisa al personal antes de que el ai
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Aviso a testers cuando sube una build nueva a TestFligh…
+# Aviso a testers cuando sube una build nueva a TestFligh
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,8 +22,8 @@ Cuando tienes un grupo de testers que nunca se entera de que hay build nueva, y 
 
 Quita 20-30 minutos por entrega. Con dos builds por semana son 4 horas al mes, y consigues feedback en horas en vez de días.
 
-- Avisos de entregas para un freelance que entrega apps a clientes…
-- Coordinación de testers para un equipo con dos entregas por semana…
+- Avisos de entregas para un freelance que entrega apps a clientes.
+- Coordinación de testers para un equipo con dos entregas por semana.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

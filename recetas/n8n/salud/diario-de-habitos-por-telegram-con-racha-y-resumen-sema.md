@@ -1,4 +1,4 @@
-# Diario de hábitos por Telegram con racha y resumen sema…
+# Diario de hábitos por Telegram con racha y resumen sema
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

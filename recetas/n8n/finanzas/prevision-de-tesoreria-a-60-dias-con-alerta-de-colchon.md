@@ -1,4 +1,4 @@
-# Previsión de tesorería a 60 días con alerta de colchón…
+# Previsión de tesorería a 60 días con alerta de colchón
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

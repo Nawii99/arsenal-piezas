@@ -1,4 +1,4 @@
-# Encuesta y petición de reseña a todos tras la sesión en n8n…
+# Encuesta y petición de reseña a todos tras la sesión en n8n
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -85,4 +85,4 @@ return salida;
 
 ## Cuánto cuesta
 - Todo gratis: Forms, Sheets, Calendar, Gmail y n8n auto-alojado.
-- Único gasto posible: si mandas por WhatsApp en vez de email, unos 0,03 € por mensaje. Por WhatsApp responden bastante más.
+- Único gasto posible: si mandas por WhatsApp en vez de email, Meta cobra por mensaje entregado según la categoría y el país; consulta la tabla oficial (developers.facebook.com, precios de la WhatsApp Business Platform) el día que lo montes. Por WhatsApp responden bastante más.

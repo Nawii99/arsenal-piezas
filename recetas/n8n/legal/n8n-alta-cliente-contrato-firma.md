@@ -1,4 +1,4 @@
-# Alta de cliente con contrato y firma a distancia…
+# Alta de cliente con contrato y firma a distancia
 
 **Tipo:** Receta de automatización · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Carta de presentación para una oferta concreta…
+# Carta de presentación para una oferta concreta
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

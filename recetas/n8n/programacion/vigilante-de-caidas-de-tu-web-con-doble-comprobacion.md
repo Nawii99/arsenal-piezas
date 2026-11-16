@@ -1,4 +1,4 @@
-# Vigilante de caídas de tu web con doble comprobación…
+# Vigilante de caídas de tu web con doble comprobación
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -41,18 +41,18 @@ Para el autónomo o la pyme que tiene su web y sus servicios en un VPS y no quie
 - n8n corriendo 24/7 (un VPS de 5 €/mes o el plan de n8n Cloud; en tu portátil no sirve).
 
 ## Los nodos, en orden
-**1. Schedule Trigger** — Trigger Interval `Minutes`, Minutes Between Triggers `5`.
+**1. Schedule Trigger** (llámalo «Cada 5 minutos») — Trigger Interval `Minutes`, Minutes Between Triggers `5`.
 **2. Code** («Lista de URLs») — devuelve un item por URL a vigilar.
-**3. HTTP Request** («Ping») — `GET` `={{ $json.url }}`. En Settings del nodo activa `Always Output Data` y `On Error: Continue (using error output)`. En Options: Timeout `10000`, Response > `Include Response Headers and Status` activado, Response Format `Text`, y `Never Error` activado para que un 500 no rompa el flujo.
-**4. IF** («¿Está mal?») — Number: `{{ $json.statusCode }}` `is not equal to` `200`.
-**5. Wait** (rama verdadera) — Resume `After Time Interval`, 30 `Seconds`.
-**6. HTTP Request** («Reintento») — igual que el nodo 3, con la URL `={{ $('Lista de URLs').item.json.url }}`.
-**7. IF** («¿Sigue mal?») — misma condición que el 4.
+**3. HTTP Request** («Ping») — `GET` `={{ $json.url }}`. En Settings del nodo activa `Always Output Data` y `On Error: Continue (using error output)`. En Options: Timeout `10000`, Response > `Include Response Headers and Status` activado, Response Format `Text`, y `Never Error` activado para que un 500 no rompa el flujo. Conecta las DOS salidas del nodo (la normal y la de error) a la entrada del IF «¿Está mal?».
+**4. IF** («¿Está mal?») — Number: `{{ $json.statusCode }}` `is not equal to` `200`; activa la comparación de tipos laxa (*Loose Type Validation*) en el IF, para que un `statusCode` vacío cuente como distinto de 200.
+**5. Wait** (llámalo «Esperar 30 s»; conéctalo a la rama verdadera del IF) — Resume `After Time Interval`, 30 `Seconds`.
+**6. HTTP Request** («Reintento») — igual que el nodo 3 (incluidos Always Output Data, On Error: Continue (using error output) y las dos salidas conectadas al siguiente IF), con la URL `={{ $('Lista de URLs').item.json.url }}`.
+**7. IF** («¿Sigue mal?») — misma condición que el 4 (también con tipos laxos). Solo se usa la salida verdadera, que va a «Leer estado»; la falsa no se conecta (la web se recuperó sola y no se avisa).
 **8. Google Sheets** («Leer estado») — Operation `Get Row(s)`, filtro por columna `url` = `={{ $('Lista de URLs').item.json.url }}`.
-**9. IF** («¿Ya lo avisé?») — String: `{{ $json.estado }}` igual a `ok`. Solo si estaba en `ok` y ahora falla, avisamos.
-**10. Telegram** — Send Message: `CAÍDA: {{ $('Lista de URLs').item.json.url }} responde {{ $('Reintento').item.json.statusCode }}`.
-**11. Google Sheets** («Marcar caído») — Operation `Update Row`, columna clave `url`, campo `estado` = `caido`.
-**Rama de recuperación**: desde la salida falsa del IF 4, otro `Google Sheets` (Get Row) + `IF` (`estado` igual a `caido`) + `Telegram` («RECUPERADO: ...») + `Google Sheets` (Update a `ok`).
+**9. IF** («¿Ya lo avisé?») — String: `{{ $json.estado }}` igual a `ok`. Solo si estaba en `ok` y ahora falla, avisamos: la salida verdadera va a Telegram; la falsa no se conecta.
+**10. Telegram** («Aviso de caída») — Resource Message, Operation Send Message, con tu Chat ID, Text: `CAÍDA: {{ $('Lista de URLs').item.json.url }} responde {{ $('Reintento').item.json.statusCode }}`.
+**11. Google Sheets** («Marcar caído») — Operation `Update Row`, columna clave `url`, campos `url` = `={{ $('Lista de URLs').item.json.url }}` y `estado` = `caido`.
+**Rama de recuperación**: desde la salida falsa del IF 4, otro `Google Sheets` («Leer estado (recuperación)», Get Row(s), mismo filtro por `url` que el nodo 8) + `IF` («¿Estaba caído?», `{{ $json.estado }}` igual a `caido`; solo se conecta la salida verdadera) + `Telegram` («Aviso de recuperación», Text `RECUPERADO: {{ $('Lista de URLs').item.json.url }} vuelve a responder`) + `Google Sheets` («Marcar recuperado», Update Row, columna clave `url`, campos `url` = `={{ $('Lista de URLs').item.json.url }}` y `estado` = `ok`).
 
 ## El código del nodo 2
 ```javascript

@@ -1,4 +1,4 @@
-# Juego de repaso con tus apuntes en un solo HTML…
+# Juego de repaso con tus apuntes en un solo HTML
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando tienes que memorizar algo (temario, vocabulario, datos de producto para u
 
 Sustituye apps de flashcards de pago. También sirve como entregable: juegos de repaso para formar a un equipo o a clientes.
 
-- Juegos de repaso por tema para academias de oposiciones, por tema…
-- Paquete de formación interna con test de producto para equipos comerciales, por paquete…
-- Material de repaso para estudiantes de idiomas de un centro pequeño, por curso…
+- Juegos de repaso por tema para academias de oposiciones, por tema.
+- Paquete de formación interna con test de producto para equipos comerciales, por paquete.
+- Material de repaso para estudiantes de idiomas de un centro pequeño, por curso.
 
 **Precio orientativo:** 40–120 € por juego. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

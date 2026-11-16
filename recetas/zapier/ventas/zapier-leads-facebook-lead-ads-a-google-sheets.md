@@ -1,4 +1,4 @@
-# Zapier: leads de Facebook Lead Ads a Google Sheets…
+# Zapier: leads de Facebook Lead Ads a Google Sheets
 
 **Tipo:** Receta de automatización · **Área:** Ventas · **Licencia:** CC BY 4.0
 

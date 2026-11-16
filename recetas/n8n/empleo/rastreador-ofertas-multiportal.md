@@ -1,4 +1,4 @@
-# Rastreador de ofertas multiportal con aviso por Telegram…
+# Rastreador de ofertas multiportal con aviso por Telegram
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

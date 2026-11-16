@@ -1,4 +1,4 @@
-# Autonomía de pilas y nodo solar…
+# Autonomía de pilas y nodo solar
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que dimensiona nodos a pilas o con panel solar. Calcula la duración del 
 
 Ahorra pilas, desplazamientos para cambiarlas y sustos de nodos apagados; en instalaciones para clientes evita volver gratis cada mes.
 
-- Dimensionado de nodos solares para sensores exteriores…
-- Informe de autonomía de baterías para instalaciones remotas…
-- Diseño de sensores en fincas e invernaderos…
+- Dimensionado de nodos solares para sensores exteriores.
+- Informe de autonomía de baterías para instalaciones remotas.
+- Diseño de sensores en fincas e invernaderos.
 
 **Precio orientativo:** 60–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

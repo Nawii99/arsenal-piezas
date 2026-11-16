@@ -1,4 +1,4 @@
-# Prueba del día malo en automatizaciones…
+# Prueba del día malo en automatizaciones
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que somete una automatización de Make, n8n o Zapier a escenarios de fall
 
 Una automatización que duplica pedidos o deja de correr en silencio genera trabajo manual y clientes enfadados; probarla evita horas de limpieza a mano.
 
-- Auditoría de robustez de automatizaciones de Make, n8n y Zapier…
-- Añadir alertas de error a flujos de clientes…
-- Mantenimiento mensual de automatizaciones con revisión de fallos…
+- Auditoría de robustez de automatizaciones de Make, n8n y Zapier.
+- Añadir alertas de error a flujos de clientes.
+- Mantenimiento mensual de automatizaciones con revisión de fallos.
 
 **Precio orientativo:** 120–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

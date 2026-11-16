@@ -1,4 +1,4 @@
-# control-de-calidad-antes-de-publicar…
+# control-de-calidad-antes-de-publicar
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como responsable de calidad web y audita una página antes de 
 
 Entregar sin fallos evita el trabajo repetido gratis y las reclamaciones del cliente; y si vendes webs, este informe se cobra como parte del servicio.
 
-- Auditoría final de calidad previa a la entrega de webs a clientes…
-- Informe de revisión pre-lanzamiento como servicio…
-- Revisión mensual de webs de clientes con plan de mantenimiento…
+- Auditoría final de calidad previa a la entrega de webs a clientes.
+- Informe de revisión pre-lanzamiento como servicio.
+- Revisión mensual de webs de clientes con plan de mantenimiento.
 
 **Precio orientativo:** 80–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

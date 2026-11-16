@@ -1,6 +1,6 @@
 # arsenal-en-skills-1
 
-Arsenal del Marketer in English: 20 skills (part 1 of 2) for marketing, sales, design and small business.
+Arsenal del Marketer in English: 19 skills (part 1 of 2) for marketing, sales, design and small business.
 
 ## Install
 
@@ -31,7 +31,6 @@ Arsenal del Marketer in English: 20 skills (part 1 of 2) for marketing, sales, d
 | adaptar-curriculum-oferta-en | Jobs & résumé | A skill that adapts a plain-text CV to one specific job offer, reordering sections and highlighting matching keywords and achievements without inventing experience. | activates on its own when needed |
 | adaptar-cv-a-oferta-en | Jobs & résumé | A skill that rewrites a CV for one job posting, prioritizing the keywords applicant tracking systems look for, without inventing any experience. | activates on its own when needed |
 | cierre-trimestral-autonomo-en | Finance | Skill that prepares the quarterly VAT (form 303) and IRPF (form 130) close for a Spanish freelancer or small company from issued, received and expense invoices. | activates on its own when needed |
-| factura-legal-espana-en | Finance | Skill that checks a Spanish invoice for mandatory fields such as numbering, tax IDs, VAT, IRPF withholding and exemption wording, then fixes or drafts it. | activates on its own when needed |
 | fotos-producto-ia-en | Photo & image | Skill that applies professional photography language to AI image prompts for product shots, with shot, angle, lens and light. | activates on its own when needed |
 
 License: [CC BY 4.0](../../LICENSE). Credit: «Arsenal del Marketer».

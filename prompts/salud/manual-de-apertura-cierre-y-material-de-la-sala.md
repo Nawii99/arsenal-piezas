@@ -1,4 +1,4 @@
-# Manual de apertura, cierre y material de la sala…
+# Manual de apertura, cierre y material de la sala
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,8 +24,8 @@ Prompt para cualquier chat de IA que actúa como responsable de operaciones de c
 
 Evita quedarte sin material a media mañana, compras urgentes caras y productos caducados tirados a la basura; y hace posible delegar la apertura.
 
-- Checklists de apertura y cierre para centros de salud y bienestar…
-- Control de stock y caducidades en hoja de cálculo…
+- Checklists de apertura y cierre para centros de salud y bienestar.
+- Control de stock y caducidades en hoja de cálculo.
 
 **Precio orientativo:** 60–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

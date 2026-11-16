@@ -1,4 +1,4 @@
-# Riego que se salta el turno si va a llover…
+# Riego que se salta el turno si va a llover
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

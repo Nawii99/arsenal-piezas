@@ -1,4 +1,4 @@
-# Cobros pendientes con recordatorio escalonado…
+# Cobros pendientes con recordatorio escalonado
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

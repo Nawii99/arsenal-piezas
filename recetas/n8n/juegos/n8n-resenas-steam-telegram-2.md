@@ -1,4 +1,4 @@
-# Resumen diario de reseñas de Steam en el móvil…
+# Resumen diario de reseñas de Steam en el móvil
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Has lanzado un juego en Steam y no quieres abrir Steamworks cada día para leer 
 
 Móntalo como servicio de seguimiento de reseñas para estudios indie, con el resumen diario en Telegram, y cobra la instalación y una cuota mensual de [TU PRECIO]. El estudio decide qué contestar; el flujo no publica nada solo.
 
-- Seguimiento diario de reseñas para estudios indie con atención al jugador…
-- Instalación y cuota mensual de resúmenes para varios juegos de un mismo estudio…
-- Informe semanal de reseñas para decidir parches y actualizaciones…
+- Seguimiento diario de reseñas para estudios indie con atención al jugador.
+- Instalación y cuota mensual de resúmenes para varios juegos de un mismo estudio.
+- Informe semanal de reseñas para decidir parches y actualizaciones.
 
 **Precio orientativo:** 90–250 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

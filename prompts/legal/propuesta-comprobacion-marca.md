@@ -1,4 +1,4 @@
-# Propuesta comercial de comprobación de marca…
+# Propuesta comercial de comprobación de marca
 
 **Tipo:** Prompt · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Ya tienes el resultado de la comprobación y quieres mandárselo al cliente, con
 
 Es el cierre del servicio de comprobación de marca: envías el resultado con tus honorarios [TU PRECIO] y las tasas oficiales por separado. El texto avisa de que no sustituye a un agente de la propiedad industrial.
 
-- Propuesta de cierre para un servicio de comprobación de nombre de pago…
-- Plantilla de presupuesto para despachos de marcas que atienden a autónomos…
-- Correos de resultado para agencias de branding que entregan nombres…
+- Propuesta de cierre para un servicio de comprobación de nombre de pago.
+- Plantilla de presupuesto para despachos de marcas que atienden a autónomos.
+- Correos de resultado para agencias de branding que entregan nombres.
 
 **Precio orientativo:** 25–50 € por propuesta enviada. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

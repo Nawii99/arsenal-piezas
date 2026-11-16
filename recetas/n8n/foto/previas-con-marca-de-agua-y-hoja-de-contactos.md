@@ -1,4 +1,4 @@
-# Previas con marca de agua y hoja de contactos…
+# Previas con marca de agua y hoja de contactos
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Procesa en lote una carpeta de JPG de una sesión: reduce cada foto a 1200 px de
 
 Preparar 200 previas a mano con marca de agua son 45 minutos por sesión. A cuatro sesiones al mes, tres horas recuperadas y cero fotos sueltas sin firmar.
 
-- Previas protegidas para bodas y eventos, entregadas en 24 horas con marca de agua y número por foto…
-- Preparación de material para marcas: envías propuestas con fotos sin firmar y sin riesgo de circulación…
-- Configuración del flujo de previas para otros fotógrafos, con soporte mensual…
+- Previas protegidas para bodas y eventos, entregadas en 24 horas con marca de agua y número por foto.
+- Preparación de material para marcas: envías propuestas con fotos sin firmar y sin riesgo de circulación.
+- Configuración del flujo de previas para otros fotógrafos, con soporte mensual.
 
 **Precio orientativo:** 90–250 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

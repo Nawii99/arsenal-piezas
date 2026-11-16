@@ -1,4 +1,4 @@
-# Devlog: una publicación, cinco redes…
+# Devlog: una publicación, cinco redes
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

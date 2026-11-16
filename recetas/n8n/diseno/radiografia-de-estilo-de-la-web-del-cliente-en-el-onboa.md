@@ -1,4 +1,4 @@
-# Radiografía de estilo de la web del cliente en el onboa…
+# Radiografía de estilo de la web del cliente en el onboa
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

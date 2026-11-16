@@ -1,4 +1,4 @@
-# Vigilante de posiciones ASO en la App Store…
+# Vigilante de posiciones ASO en la App Store
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando dependes de las búsquedas de la tienda para conseguir instalaciones y qu
 
 Sustituye una suscripción ASO de 40-80 € al mes para lo básico. Detectar una caída el mismo día evita semanas de instalaciones perdidas.
 
-- Seguimiento de búsquedas en App Store para una app de un comercio local…
-- Control de posiciones tras cambiar el título de una app…
-- Servicio mensual de ASO básico para desarrolladores pequeños…
+- Seguimiento de búsquedas en App Store para una app de un comercio local.
+- Control de posiciones tras cambiar el título de una app.
+- Servicio mensual de ASO básico para desarrolladores pequeños.
 
 **Precio orientativo:** 120–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

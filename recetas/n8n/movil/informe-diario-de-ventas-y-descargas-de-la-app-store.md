@@ -1,4 +1,4 @@
-# Informe diario de ventas y descargas de la App Store…
+# Informe diario de ventas y descargas de la App Store
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando entras a App Store Connect todos los días solo para mirar cuántas desca
 
 Cinco minutos al día son 30 horas al año. Además detectas una caída de descargas el mismo día en vez de a final de mes.
 
-- Pulso diario de ventas para una app de pago de un autónomo…
-- Informe de ingresos por país para un estudio que vende en varios mercados…
-- Alerta de caída de descargas para un negocio con app propia…
+- Pulso diario de ventas para una app de pago de un autónomo.
+- Informe de ingresos por país para un estudio que vende en varios mercados.
+- Alerta de caída de descargas para un negocio con app propia.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Preparar tu juego para traducirlo a varios idiomas…
+# Preparar tu juego para traducirlo a varios idiomas
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como responsable de localización. E
 
 Abre mercados enteros con poco coste y evita pagar dos veces la traducción por haberla encargado con los textos mal preparados.
 
-- Preparación técnica de textos para localizar juegos y apps 3D…
-- Migración de textos del código a tablas de traducción para indies…
-- Control de calidad lingüístico de builds traducidas…
+- Preparación técnica de textos para localizar juegos y apps 3D.
+- Migración de textos del código a tablas de traducción para indies.
+- Control de calidad lingüístico de builds traducidas.
 
 **Precio orientativo:** 100–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

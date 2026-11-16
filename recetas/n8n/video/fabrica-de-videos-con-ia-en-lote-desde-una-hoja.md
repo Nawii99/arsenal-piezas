@@ -1,4 +1,4 @@
-# Fábrica de vídeos con IA en lote desde una hoja…
+# Fábrica de vídeos con IA en lote desde una hoja
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

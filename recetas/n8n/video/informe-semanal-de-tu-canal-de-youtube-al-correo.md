@@ -1,4 +1,4 @@
-# Informe semanal de tu canal de YouTube al correo…
+# Informe semanal de tu canal de YouTube al correo
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

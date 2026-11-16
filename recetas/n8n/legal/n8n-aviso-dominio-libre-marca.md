@@ -1,4 +1,4 @@
-# Aviso automático de dominio libre para tu futura marca…
+# Aviso automático de dominio libre para tu futura marca
 
 **Tipo:** Receta de automatización · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ El dominio que quieres para tu marca está ocupado y prefieres que algo lo mire 
 
 Ofrece la vigilancia de dominios a emprendedores con un pago único de montaje o una cuota mensual pequeña [TU PRECIO]. Avísales de que un dominio libre no significa que la marca lo esté.
 
-- Vigilancia de dominios para clientes que esperan un nombre concreto…
-- Alertas de disponibilidad para agencias que proponen nombres a sus clientes…
-- Seguimiento de dominios para emprendedores en espera de su nombre…
+- Vigilancia de dominios para clientes que esperan un nombre concreto.
+- Alertas de disponibilidad para agencias que proponen nombres a sus clientes.
+- Seguimiento de dominios para emprendedores en espera de su nombre.
 
 **Precio orientativo:** 60–120 € por montaje. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Cuánto te cuesta cada conversación de IA…
+# Cuánto te cuesta cada conversación de IA
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que calcula el coste real por conversación o tarea de un asistente de IA
 
 Te dice qué precio mínimo tienes que cobrar por un servicio con IA para no perder dinero, y suele recortar gasto cambiando lo que se manda en cada mensaje.
 
-- Cálculo de costes de asistentes de IA antes de fijar precio…
-- Optimización del gasto en IA de pequeños negocios…
-- Presupuesto de mantenimiento mensual de bots…
+- Cálculo de costes de asistentes de IA antes de fijar precio.
+- Optimización del gasto en IA de pequeños negocios.
+- Presupuesto de mantenimiento mensual de bots.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

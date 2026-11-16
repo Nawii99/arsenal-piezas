@@ -1,4 +1,4 @@
-# Revisor de ortografía y estilo antes de publicar…
+# Revisor de ortografía y estilo antes de publicar
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Del crash del jugador a la tarea, ya agrupada…
+# Del crash del jugador a la tarea, ya agrupada
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

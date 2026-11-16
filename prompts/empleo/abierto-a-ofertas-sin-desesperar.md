@@ -1,4 +1,4 @@
-# Mensaje de abierto a ofertas sin sonar desesperado…
+# Mensaje de abierto a ofertas sin sonar desesperado
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

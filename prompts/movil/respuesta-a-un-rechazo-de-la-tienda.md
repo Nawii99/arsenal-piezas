@@ -1,4 +1,4 @@
-# Respuesta a un rechazo de la tienda…
+# Respuesta a un rechazo de la tienda
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que interpreta el mensaje de rechazo de App Store o Google Play y lo conv
 
 Cada semana de rechazo es una semana sin vender: resolver a la primera acorta el bloqueo y evita pagar horas de consultoría.
 
-- Gestión de rechazos de tienda con respuesta al revisor incluida…
-- Revisión previa de apps para evitar rechazos habituales…
-- Soporte puntual de publicación en App Store y Google Play…
+- Gestión de rechazos de tienda con respuesta al revisor incluida.
+- Revisión previa de apps para evitar rechazos habituales.
+- Soporte puntual de publicación en App Store y Google Play.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

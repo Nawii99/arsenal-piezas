@@ -1,4 +1,4 @@
-# Portero de validación antes de tocar la base de datos…
+# Portero de validación antes de tocar la base de datos
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

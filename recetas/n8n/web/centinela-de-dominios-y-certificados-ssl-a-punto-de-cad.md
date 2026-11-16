@@ -1,4 +1,4 @@
-# Centinela de dominios y certificados SSL a punto de cad…
+# Centinela de dominios y certificados SSL a punto de cad
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

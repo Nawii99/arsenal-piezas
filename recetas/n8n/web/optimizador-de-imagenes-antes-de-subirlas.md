@@ -1,4 +1,4 @@
-# Optimizador de imágenes antes de subirlas…
+# Optimizador de imágenes antes de subirlas
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Termostato de gasto en APIs con corte automático…
+# Termostato de gasto en APIs con corte automático
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando pagas por uso (IA, SMS, mapas, envíos) y te da miedo abrir la factura po
 
 Un fallo en bucle contra una API de pago puede costar cientos de euros en horas. Esto lo corta cuando llevas el 80% del presupuesto.
 
-- Control de gasto de APIs para startups que temen facturas inesperadas…
-- Configuración de límites de consumo para agencias con clientes que usan IA…
-- Mantenimiento de presupuestos de APIs para pymes con servicios de pago…
+- Control de gasto de APIs para startups que temen facturas inesperadas.
+- Configuración de límites de consumo para agencias con clientes que usan IA.
+- Mantenimiento de presupuestos de APIs para pymes con servicios de pago.
 
 **Precio orientativo:** 80–200 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

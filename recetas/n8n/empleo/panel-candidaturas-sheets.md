@@ -1,4 +1,4 @@
-# Panel de candidaturas en Google Sheets…
+# Panel de candidaturas en Google Sheets
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

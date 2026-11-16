@@ -1,4 +1,4 @@
-# Vigilante de uso no autorizado de tu logo en internet…
+# Vigilante de uso no autorizado de tu logo en internet
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

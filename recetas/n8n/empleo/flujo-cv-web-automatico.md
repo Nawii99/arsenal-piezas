@@ -1,4 +1,4 @@
-# De formulario a currículum web publicado, sin tocarlo a mano…
+# De formulario a currículum web publicado, sin tocarlo a mano
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando ya ofreces el servicio de currículum web a varios clientes al mes y mont
 
 Con este flujo puedes aceptar más encargos al mes con el mismo tiempo, o cobrar un extra de urgencia por entregar en menos de 24 horas, porque casi todo va automatizado.
 
-- Entrega de webs de currículum en menos de un día para varios clientes al mes…
-- Urgencias de CV web con recargo para personas con entrevista en pocos días…
-- Servicio de publicación de webs de CV para academias de empleo…
+- Entrega de webs de currículum en menos de un día para varios clientes al mes.
+- Urgencias de CV web con recargo para personas con entrevista en pocos días.
+- Servicio de publicación de webs de CV para academias de empleo.
 
 **Precio orientativo:** 150–300 € por montaje (más 15-30 € al me. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

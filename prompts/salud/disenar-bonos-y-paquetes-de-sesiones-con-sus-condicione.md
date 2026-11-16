@@ -1,4 +1,4 @@
-# Diseñar bonos y paquetes de sesiones con sus condicione…
+# Diseñar bonos y paquetes de sesiones con sus condicione
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como consultor de negocio para clín
 
 El bono cobra por adelantado varias sesiones, mejora tu caja y sube la continuidad; unas condiciones claras evitan discusiones y devoluciones caras.
 
-- Diseño de bonos y condiciones para clínicas y centros de bienestar…
-- Redacción de condiciones de uso de bonos…
-- Estudio de precios de paquetes de sesiones…
+- Diseño de bonos y condiciones para clínicas y centros de bienestar.
+- Redacción de condiciones de uso de bonos.
+- Estudio de precios de paquetes de sesiones.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

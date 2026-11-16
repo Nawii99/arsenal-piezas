@@ -1,4 +1,4 @@
-# Errores de JavaScript del navegador a incidencia en Git…
+# Errores de JavaScript del navegador a incidencia en Git
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

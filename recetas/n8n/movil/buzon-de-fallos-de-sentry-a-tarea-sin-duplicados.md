@@ -1,4 +1,4 @@
-# Buzón de fallos: de Sentry a tarea sin duplicados…
+# Buzón de fallos: de Sentry a tarea sin duplicados
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

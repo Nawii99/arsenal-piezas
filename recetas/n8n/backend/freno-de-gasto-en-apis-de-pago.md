@@ -1,4 +1,4 @@
-# Freno de gasto en APIs de pago…
+# Freno de gasto en APIs de pago
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Consulta cada hora el consumo de tus APIs de pago, lo compara con el presupuesto
 
 Evita facturas descontroladas de cientos de euros por un fallo o un abuso, y te da visibilidad diaria del coste real por servicio.
 
-- Control de costes de APIs para startups, con avisos y corte automático…
-- Configuración de límites de gasto para agencias que integran IA en proyectos de clientes…
-- Monitorización mensual de consumo de APIs para tiendas con servicios de pago…
+- Control de costes de APIs para startups, con avisos y corte automático.
+- Configuración de límites de gasto para agencias que integran IA en proyectos de clientes.
+- Monitorización mensual de consumo de APIs para tiendas con servicios de pago.
 
 **Precio orientativo:** 80–200 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Instrucciones a medida para tu asistente de notas de episodi…
+# Instrucciones a medida para tu asistente de notas de episodi
 
 **Tipo:** Prompt · **Área:** Música y audio · **Licencia:** CC BY 4.0
 

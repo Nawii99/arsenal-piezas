@@ -1,4 +1,4 @@
-# Aviso semanal de copias de seguridad en n8n…
+# Aviso semanal de copias de seguridad en n8n
 
 **Tipo:** Receta de automatización · **Área:** Ciberseguridad · **Licencia:** CC BY 4.0
 

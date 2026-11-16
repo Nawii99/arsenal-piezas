@@ -1,4 +1,4 @@
-# Cuánto durarán las pilas del sensor…
+# Cuánto durarán las pilas del sensor
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que calcula la autonomía real de un sensor a pilas o batería e identifi
 
 Cambiar pilas en casa de clientes es trabajo no cobrado; alargar la autonomía elimina visitas y te permite prometer plazos de mantenimiento realistas.
 
-- Auditoría de consumo de sensores a pilas…
-- Optimización de autonomía en instalaciones de clientes…
-- Planes de mantenimiento con previsión de cambio de pilas…
+- Auditoría de consumo de sensores a pilas.
+- Optimización de autonomía en instalaciones de clientes.
+- Planes de mantenimiento con previsión de cambio de pilas.
 
 **Precio orientativo:** 40–120 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

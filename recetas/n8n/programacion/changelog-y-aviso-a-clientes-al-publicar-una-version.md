@@ -1,4 +1,4 @@
-# Changelog y aviso a clientes al publicar una versión…
+# Changelog y aviso a clientes al publicar una versión
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Al crear una release en GitHub, recoge los commits desde la versión anterior, l
 
 Ahorra 1-2 horas por release escribiendo notas y evita el «no sabía que ya estaba hecho» del cliente. Gratis salvo unos céntimos de IA.
 
-- Notas de versión para clientes como servicio por release de un SaaS…
-- Comunicación de producto para apps con usuarios beta…
-- Changelog público para productos digitales de pequeños estudios…
+- Notas de versión para clientes como servicio por release de un SaaS.
+- Comunicación de producto para apps con usuarios beta.
+- Changelog público para productos digitales de pequeños estudios.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

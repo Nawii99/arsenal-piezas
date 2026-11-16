@@ -1,4 +1,4 @@
-# Cola de renders de Blender desatendida en tu propio PC…
+# Cola de renders de Blender desatendida en tu propio PC
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

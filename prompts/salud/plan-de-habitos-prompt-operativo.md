@@ -1,4 +1,4 @@
-# Plan de hábitos · Prompt operativo…
+# Plan de hábitos · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

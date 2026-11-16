@@ -1,4 +1,4 @@
-# Guardián del peso del bundle en cada PR…
+# Guardián del peso del bundle en cada PR
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tengas una web o app en React, Vue o Next y notes que carga cada vez más
 
 Cada 100 KB extra de JavaScript se paga en conversión perdida; detectarlo en la PR cuesta minutos, detectarlo en producción cuesta semanas.
 
-- Presupuesto de rendimiento para frontends de clientes en React o Next…
-- Control de peso de JavaScript como servicio mensual para webs con tráfico…
-- Revisión de rendimiento en cada pull request para equipos de producto…
+- Presupuesto de rendimiento para frontends de clientes en React o Next.
+- Control de peso de JavaScript como servicio mensual para webs con tráfico.
+- Revisión de rendimiento en cada pull request para equipos de producto.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

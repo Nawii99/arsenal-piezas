@@ -1,4 +1,4 @@
-# Revisión de pantalla móvil desde captura…
+# Revisión de pantalla móvil desde captura
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 

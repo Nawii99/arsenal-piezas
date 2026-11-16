@@ -1,4 +1,4 @@
-# Banco de inspiración visual etiquetado automáticamente…
+# Banco de inspiración visual etiquetado automáticamente
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

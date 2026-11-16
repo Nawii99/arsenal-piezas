@@ -1,4 +1,4 @@
-# Recordatorio de cita por correo el día antes…
+# Recordatorio de cita por correo el día antes
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Tu consulta pierde citas por olvidos y cada tarde mandas los avisos a mano desde
 
 Instálalo en consultas pequeñas de fisioterapia, psicología o dental que no tienen quien les lleve la agenda, y cobra el montaje más una cuota mensual de mantenimiento de [TU PRECIO]. Toca datos de salud: antes de entregarlo, que lo revise un profesional de protección de datos.
 
-- Montaje de recordatorios para fisioterapia y psicología sin agenda digital, por instalación…
-- Mantenimiento mensual de recordatorios y control de envíos, por mes…
-- Revisión del flujo ante cambios de agenda o de cuenta, por hora…
+- Montaje de recordatorios para fisioterapia y psicología sin agenda digital, por instalación.
+- Mantenimiento mensual de recordatorios y control de envíos, por mes.
+- Revisión del flujo ante cambios de agenda o de cuenta, por hora.
 
 **Precio orientativo:** 150–300 € puesta en marcha. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

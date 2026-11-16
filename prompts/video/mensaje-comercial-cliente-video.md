@@ -1,4 +1,4 @@
-# Mensaje comercial para cliente de edición de vídeo…
+# Mensaje comercial para cliente de edición de vídeo
 
 **Tipo:** Prompt · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Si quieres escribir a un cliente concreto, como una marca local o un creador, y 
 
 Úsalo para captar clientes de edición de vídeo escribiendo a negocios que ya publican contenido. Cobra por el paquete que ofrezcas en el mensaje, [TU PRECIO], con revisiones y plazo definidos.
 
-- Mensajes de captación para editores que buscan clientes locales…
-- Plantillas de contacto para creadores que venden paquetes de edición…
-- Secuencia de mensajes para negocios que ya publican vídeos…
+- Mensajes de captación para editores que buscan clientes locales.
+- Plantillas de contacto para creadores que venden paquetes de edición.
+- Secuencia de mensajes para negocios que ya publican vídeos.
 
 **Precio orientativo:** 10–25 € por mensaje. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Comentarios de Figma convertidos en tareas y resumen di…
+# Comentarios de Figma convertidos en tareas y resumen di
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Control de calidad del feed de productos antes de Googl…
+# Control de calidad del feed de productos antes de Googl
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

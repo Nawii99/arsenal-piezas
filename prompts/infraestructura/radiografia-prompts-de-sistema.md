@@ -1,4 +1,4 @@
-# Radiografía de prompts de sistema…
+# Radiografía de prompts de sistema
 
 **Tipo:** Prompt · **Área:** Infraestructura · **Licencia:** CC BY 4.0
 

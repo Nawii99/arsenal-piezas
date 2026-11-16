@@ -1,4 +1,4 @@
-# Radar de suscripciones y subidas de precio silenciosas…
+# Radar de suscripciones y subidas de precio silenciosas
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

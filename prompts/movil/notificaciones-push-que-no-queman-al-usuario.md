@@ -1,4 +1,4 @@
-# Notificaciones push que no queman al usuario…
+# Notificaciones push que no queman al usuario
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como responsable de retención respetuoso con el usuario y con
 
 Los avisos bien puestos traen de vuelta a gente que ya tienes, que es la forma más barata de vender otra vez; los mal puestos te cuestan usuarios.
 
-- Estrategia de notificaciones push para apps de negocios locales…
-- Reglas de frecuencia y segmentación de avisos para apps…
-- Textos de reactivación y retención para apps con poco uso…
+- Estrategia de notificaciones push para apps de negocios locales.
+- Reglas de frecuencia y segmentación de avisos para apps.
+- Textos de reactivación y retención para apps con poco uso.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

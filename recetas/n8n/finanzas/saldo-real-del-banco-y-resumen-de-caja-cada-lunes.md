@@ -1,4 +1,4 @@
-# Saldo real del banco y resumen de caja cada lunes…
+# Saldo real del banco y resumen de caja cada lunes
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

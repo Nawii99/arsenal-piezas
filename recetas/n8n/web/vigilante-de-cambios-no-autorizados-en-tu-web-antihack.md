@@ -1,4 +1,4 @@
-# Vigilante de cambios no autorizados en tu web (antihack…
+# Vigilante de cambios no autorizados en tu web (antihack
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

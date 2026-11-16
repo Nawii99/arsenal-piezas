@@ -1,4 +1,4 @@
-# Rescate de suscriptores que se dan de baja en la app…
+# Rescate de suscriptores que se dan de baja en la app
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Receta de n8n que recibe por webhook la cancelación de una suscripción desde R
 
 Recuperar un 10% de las bajas es dinero que ya no ibas a ver. Un suscriptor de 9,99 € al mes que se queda seis meses más son 60 € por cada rescate.
 
-- Recuperación de bajas para una app de suscripción de un estudio pequeño…
-- Encuesta de salida automática para apps de pago de un negocio…
-- Informe mensual de motivos de baja para decidir mejoras de producto…
+- Recuperación de bajas para una app de suscripción de un estudio pequeño.
+- Encuesta de salida automática para apps de pago de un negocio.
+- Informe mensual de motivos de baja para decidir mejoras de producto.
 
 **Precio orientativo:** 250–500 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

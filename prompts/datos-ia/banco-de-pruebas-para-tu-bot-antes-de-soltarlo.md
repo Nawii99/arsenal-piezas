@@ -1,4 +1,4 @@
-# Banco de pruebas para tu bot antes de soltarlo…
+# Banco de pruebas para tu bot antes de soltarlo
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que genera 40 mensajes difíciles para probar un chatbot antes de ponerlo
 
 Evita el marrón de un bot que promete descuentos que no existen o insulta a un cliente; también te da un entregable de 'pruebas de calidad' que puedes cobrar aparte.
 
-- Pruebas de calidad de chatbots como entregable cobrable aparte…
-- Auditoría previa al lanzamiento de asistentes de WhatsApp…
-- Revisión de bots tras cambiar sus instrucciones…
+- Pruebas de calidad de chatbots como entregable cobrable aparte.
+- Auditoría previa al lanzamiento de asistentes de WhatsApp.
+- Revisión de bots tras cambiar sus instrucciones.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

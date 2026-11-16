@@ -1,4 +1,4 @@
-# Rehacer los primeros 5 minutos de tu juego…
+# Rehacer los primeros 5 minutos de tu juego
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como diseñador de las primeras sesi
 
 El principio decide si alguien sigue jugando, deja reseña o pide devolución; arreglarlo es el cambio más barato con más efecto en las ventas.
 
-- Rediseño de los primeros minutos y del tutorial de un juego…
-- Revisión de demos con propuesta de nuevo orden de enseñanza…
-- Consultoría rápida de onboarding para equipos de uno o dos desarrolladores…
+- Rediseño de los primeros minutos y del tutorial de un juego.
+- Revisión de demos con propuesta de nuevo orden de enseñanza.
+- Consultoría rápida de onboarding para equipos de uno o dos desarrolladores.
 
 **Precio orientativo:** 120–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

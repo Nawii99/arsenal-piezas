@@ -1,4 +1,4 @@
-# Aviso de caducidad y reposición de stock sanitario…
+# Aviso de caducidad y reposición de stock sanitario
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

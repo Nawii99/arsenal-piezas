@@ -1,4 +1,4 @@
-# Onboarding: los primeros 60 segundos…
+# Onboarding: los primeros 60 segundos
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,8 +22,8 @@ Prompt para cualquier chat de IA que diseña los primeros 60 segundos de una app
 
 Cada usuario que se pierde en el primer minuto es dinero de captación tirado; arreglar el arranque rentabiliza la publicidad que ya pagas.
 
-- Mejora de retención del día 1 para desarrolladores…
-- Revisión de la primera experiencia de usuario…
+- Mejora de retención del día 1 para desarrolladores.
+- Revisión de la primera experiencia de usuario.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

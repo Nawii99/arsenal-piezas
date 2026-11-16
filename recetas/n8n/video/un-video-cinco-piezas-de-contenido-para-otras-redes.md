@@ -1,4 +1,4 @@
-# Un vídeo, cinco piezas de contenido para otras redes…
+# Un vídeo, cinco piezas de contenido para otras redes
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

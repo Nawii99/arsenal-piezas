@@ -1,4 +1,4 @@
-# Vigilante de material caducado y enlaces rotos del curs…
+# Vigilante de material caducado y enlaces rotos del curs
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

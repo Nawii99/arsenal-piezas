@@ -1,4 +1,4 @@
-# Valorar el presupuesto de quien te va a hacer la app…
+# Valorar el presupuesto de quien te va a hacer la app
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como director técnico externo que defiende tus intereses. Rec
 
 Detectar partidas que faltan y quedarte con el código y las cuentas evita sobrecostes y quedar atrapado con un proveedor que te cobra por cada cambio.
 
-- Revisión de presupuestos de desarrollo de apps…
-- Segunda opinión técnica antes de contratar una agencia…
-- Lista de condiciones contractuales a pedir al proveedor…
+- Revisión de presupuestos de desarrollo de apps.
+- Segunda opinión técnica antes de contratar una agencia.
+- Lista de condiciones contractuales a pedir al proveedor.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

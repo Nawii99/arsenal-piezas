@@ -1,4 +1,4 @@
-# cuanto-tengo-que-facturar…
+# cuanto-tengo-que-facturar
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

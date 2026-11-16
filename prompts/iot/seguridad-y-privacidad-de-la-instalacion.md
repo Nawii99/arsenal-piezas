@@ -1,4 +1,4 @@
-# Seguridad y privacidad de la instalación…
+# Seguridad y privacidad de la instalación
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que revisa una instalación conectada punto por punto: inventario de apar
 
 Un incidente con cámaras o una cerradura conectada mal configurada te cuesta el cliente y la reputación; hacer esta revisión es además un extra facturable por entrega.
 
-- Revisión de seguridad de cámaras y sensores para negocios…
-- Extra de auditoría en cada entrega de instalación…
-- Configuración segura de red y accesos en alquileres turísticos…
+- Revisión de seguridad de cámaras y sensores para negocios.
+- Extra de auditoría en cada entrega de instalación.
+- Configuración segura de red y accesos en alquileres turísticos.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

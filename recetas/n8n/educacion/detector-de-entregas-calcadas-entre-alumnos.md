@@ -1,4 +1,4 @@
-# Detector de entregas calcadas entre alumnos…
+# Detector de entregas calcadas entre alumnos
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

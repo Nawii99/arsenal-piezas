@@ -1,4 +1,4 @@
-# Web animada con criterio · Prompt operativo…
+# Web animada con criterio · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Webs animadas · **Licencia:** CC BY 4.0
 

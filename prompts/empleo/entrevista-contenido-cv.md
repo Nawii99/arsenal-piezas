@@ -1,8 +1,8 @@
-# Entrevista para sacar el contenido del CV…
+# Entrevista para sacar el contenido del CV
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 
-Prompt de texto que te entrevista para sacar toda la materia prima del currículum antes de tocar ninguna plantilla: logros, responsabilidades, formación y objetivos.
+Prompt para que la IA te entreviste (o entreviste a tu cliente) y saque toda la materia prima del currículum antes de tocar ninguna plantilla.
 
 ## Qué es y qué hace
 

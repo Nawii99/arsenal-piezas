@@ -1,4 +1,4 @@
-# Presupuestos automáticos para encargos 3D…
+# Presupuestos automáticos para encargos 3D
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

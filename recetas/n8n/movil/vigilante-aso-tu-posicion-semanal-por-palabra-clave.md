@@ -1,4 +1,4 @@
-# Vigilante ASO: tu posición semanal por palabra clave…
+# Vigilante ASO: tu posición semanal por palabra clave
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# apartar-impuestos-sin-sustos…
+# apartar-impuestos-sin-sustos
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que monta el sistema para apartar impuestos y c
 
 Deja de tirar de crédito o de retrasar pagos para cubrir impuestos: el dinero ya estará apartado y sin recargos.
 
-- Sistema de reserva de impuestos para autónomos…
-- Calendario fiscal y rutina de control para freelances…
-- Formación breve de finanzas básicas para emprendedores…
+- Sistema de reserva de impuestos para autónomos.
+- Calendario fiscal y rutina de control para freelances.
+- Formación breve de finanzas básicas para emprendedores.
 
 **Precio orientativo:** 50–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

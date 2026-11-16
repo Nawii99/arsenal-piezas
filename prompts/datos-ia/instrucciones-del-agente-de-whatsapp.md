@@ -1,4 +1,4 @@
-# Instrucciones del agente de WhatsApp…
+# Instrucciones del agente de WhatsApp
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que escribe el system prompt completo de un agente de atención por Whats
 
 Un agente bien instruido contesta fuera de horario y filtra consultas que hoy te comen la tarde; montar este documento para terceros es un entregable vendible aparte.
 
-- Redacción de instrucciones de bots de WhatsApp para pymes…
-- Diseño de asistentes de atención con reglas de escalado…
-- Documento de instrucciones como entregable en proyectos de chatbot…
+- Redacción de instrucciones de bots de WhatsApp para pymes.
+- Diseño de asistentes de atención con reglas de escalado.
+- Documento de instrucciones como entregable en proyectos de chatbot.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

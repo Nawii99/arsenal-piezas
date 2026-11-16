@@ -1,4 +1,4 @@
-# Radar de qué modelos 3D se están buscando…
+# Radar de qué modelos 3D se están buscando
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

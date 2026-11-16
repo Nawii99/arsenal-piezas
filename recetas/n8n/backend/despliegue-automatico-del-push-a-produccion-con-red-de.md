@@ -1,4 +1,4 @@
-# Despliegue automático: del push a producción con red de…
+# Despliegue automático: del push a producción con red de
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

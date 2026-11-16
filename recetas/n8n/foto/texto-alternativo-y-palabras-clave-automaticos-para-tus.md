@@ -1,4 +1,4 @@
-# Texto alternativo y palabras clave automáticos para tus…
+# Texto alternativo y palabras clave automáticos para tus
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

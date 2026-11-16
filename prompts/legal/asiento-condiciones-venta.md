@@ -1,4 +1,4 @@
-# Condiciones de venta · borrador para revisar…
+# Condiciones de venta · borrador para revisar
 
 **Tipo:** Prompt · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 

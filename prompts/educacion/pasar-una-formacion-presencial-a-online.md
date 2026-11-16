@@ -1,4 +1,4 @@
-# Pasar una formación presencial a online…
+# Pasar una formación presencial a online
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que rediseña una clase presencial como curso a
 
 Convierte una formación que solo cobras una vez por sesión en un producto que se vende muchas veces sin tu presencia.
 
-- Digitalización de talleres presenciales para formadores…
-- Conversión de formación en curso online para academias locales…
-- Plan de grabación y estructura de módulos para expertos sin experiencia en vídeo…
+- Digitalización de talleres presenciales para formadores.
+- Conversión de formación en curso online para academias locales.
+- Plan de grabación y estructura de módulos para expertos sin experiencia en vídeo.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

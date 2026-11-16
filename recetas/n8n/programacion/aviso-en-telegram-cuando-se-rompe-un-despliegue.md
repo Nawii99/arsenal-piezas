@@ -1,4 +1,4 @@
-# Aviso en Telegram cuando se rompe un despliegue…
+# Aviso en Telegram cuando se rompe un despliegue
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

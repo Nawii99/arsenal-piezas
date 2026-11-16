@@ -1,4 +1,4 @@
-# Rotación de miniaturas con registro de resultados…
+# Rotación de miniaturas con registro de resultados
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

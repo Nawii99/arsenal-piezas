@@ -1,4 +1,4 @@
-# Aviso de caídas de tráfico en Search Console…
+# Aviso de caídas de tráfico en Search Console
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

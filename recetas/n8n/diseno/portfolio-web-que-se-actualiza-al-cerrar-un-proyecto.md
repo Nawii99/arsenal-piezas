@@ -1,4 +1,4 @@
-# Portfolio web que se actualiza al cerrar un proyecto…
+# Portfolio web que se actualiza al cerrar un proyecto
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

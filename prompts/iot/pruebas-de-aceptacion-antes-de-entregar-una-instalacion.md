@@ -1,4 +1,4 @@
-# Pruebas de aceptación antes de entregar una instalación…
+# Pruebas de aceptación antes de entregar una instalación
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que crea el guion de pruebas de aceptación que se hace delante del clien
 
 Reduce las vueltas gratis a casa del cliente y las discusiones sobre si algo funcionaba o no cuando entregaste.
 
-- Protocolos de pruebas de aceptación para instaladores…
-- Acta de conformidad firmada para clientes…
-- Servicio de revisión final de instalaciones…
+- Protocolos de pruebas de aceptación para instaladores.
+- Acta de conformidad firmada para clientes.
+- Servicio de revisión final de instalaciones.
 
 **Precio orientativo:** 40–120 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

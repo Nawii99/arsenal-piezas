@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que diseña la primera semana de un alumno en t
 
 Menos abandono significa menos devoluciones, más testimonios y más gente que te compra la siguiente formación.
 
-- Diseño de onboarding para academias y cursos online…
-- Secuencia de bienvenida automatizada para infoproductores…
-- Auditoría del abandono en la primera semana con plan de mejora…
+- Diseño de onboarding para academias y cursos online.
+- Secuencia de bienvenida automatizada para infoproductores.
+- Auditoría del abandono en la primera semana con plan de mejora.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

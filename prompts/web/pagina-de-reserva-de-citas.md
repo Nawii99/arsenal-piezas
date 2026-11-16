@@ -1,4 +1,4 @@
-# pagina-de-reserva-de-citas…
+# pagina-de-reserva-de-citas
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que diseña una página de reserva de citas para negocios de servicios. E
 
 Menos llamadas para cuadrar horas y menos ausencias: cada hueco que se llena solo y cada plantón evitado es facturación que se te escapaba.
 
-- Montaje de sistema de reservas online para peluquerías y clínicas…
-- Configuración de recordatorios para reducir plantones…
-- Página de reservas integrada en la web existente del cliente…
+- Montaje de sistema de reservas online para peluquerías y clínicas.
+- Configuración de recordatorios para reducir plantones.
+- Página de reservas integrada en la web existente del cliente.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

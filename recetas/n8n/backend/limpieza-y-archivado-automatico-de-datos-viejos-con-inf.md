@@ -1,4 +1,4 @@
-# Limpieza y archivado automático de datos viejos con inf…
+# Limpieza y archivado automático de datos viejos con inf
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# contratar-o-subcontratar…
+# contratar-o-subcontratar
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que calcula el coste real de incorporar a algui
 
 Evita una contratación que te descuadre la caja y te dice el volumen mínimo de trabajo que hay que tener firmado antes de dar el paso.
 
-- Análisis de primera contratación para autónomos…
-- Comparativa contratar frente a subcontratar…
-- Plan de crecimiento con números para micropymes…
+- Análisis de primera contratación para autónomos.
+- Comparativa contratar frente a subcontratar.
+- Plan de crecimiento con números para micropymes.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

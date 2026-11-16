@@ -1,4 +1,4 @@
-# Revisión de vídeo con el cliente y recordatorios que no…
+# Revisión de vídeo con el cliente y recordatorios que no
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando aparece un montaje nuevo en la carpeta de revisión de Drive, lo comparte
 
 Acorta los ciclos de revisión y con ellos el plazo de cobro. Cada semana de retraso menos es tesorería que entra antes.
 
-- Gestión de revisiones de vídeo para agencias con recordatorios y registro de versiones…
-- Servicio de seguimiento de aprobaciones para productoras que cobran tras la entrega…
-- Plantilla de flujo de revisión para estudios de vídeo con formulario de cambios…
+- Gestión de revisiones de vídeo para agencias con recordatorios y registro de versiones.
+- Servicio de seguimiento de aprobaciones para productoras que cobran tras la entrega.
+- Plantilla de flujo de revisión para estudios de vídeo con formulario de cambios.
 
 **Precio orientativo:** 80–200 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

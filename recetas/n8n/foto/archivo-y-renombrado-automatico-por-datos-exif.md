@@ -1,4 +1,4 @@
-# Archivo y renombrado automático por datos EXIF…
+# Archivo y renombrado automático por datos EXIF
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

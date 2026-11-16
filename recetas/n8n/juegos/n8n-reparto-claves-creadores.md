@@ -1,4 +1,4 @@
-# Reparto de claves a creadores con aprobación manual…
+# Reparto de claves a creadores con aprobación manual
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Anuncias un juego y de golpe llegan decenas de peticiones de clave, sin saber cu
 
 Móntasela a un estudio como parte de su servicio de prensa, o cóbrala como instalación suelta por [TU PRECIO] más una cuota mensual de mantenimiento.
 
-- Gestión de claves para estudios que anuncian un juego con muchas peticiones…
-- Montaje de reparto de claves como parte del servicio de prensa…
-- Registro de claves enviadas para informes del estudio…
+- Gestión de claves para estudios que anuncian un juego con muchas peticiones.
+- Montaje de reparto de claves como parte del servicio de prensa.
+- Registro de claves enviadas para informes del estudio.
 
 **Precio orientativo:** 80–200 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

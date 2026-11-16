@@ -1,4 +1,4 @@
-# Recogida y cierre automático de facturas por email…
+# Recogida y cierre automático de facturas por email
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

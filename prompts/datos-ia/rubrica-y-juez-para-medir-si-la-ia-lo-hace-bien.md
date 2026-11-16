@@ -1,4 +1,4 @@
-# Rúbrica y juez para medir si la IA lo hace bien…
+# Rúbrica y juez para medir si la IA lo hace bien
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que crea un banco de 20 casos de prueba, una rúbrica y un prompt de juez
 
 Deja de discutir por sensaciones: puedes demostrar mejoras a un cliente con números, que es lo que permite cobrar el mantenimiento mensual.
 
-- Informes de evaluación de asistentes con puntuaciones para clientes…
-- Justificación con datos de mejoras en mantenimiento mensual…
-- Rúbricas de calidad para bots de atención…
+- Informes de evaluación de asistentes con puntuaciones para clientes.
+- Justificación con datos de mejoras en mantenimiento mensual.
+- Rúbricas de calidad para bots de atención.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

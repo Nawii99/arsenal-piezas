@@ -1,4 +1,4 @@
-# Informe de fallo para tu programador…
+# Informe de fallo para tu programador
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como técnico de soporte móvil y transforma un mensaje vago d
 
 Un fallo bien descrito se arregla en una fracción del tiempo: pagas menos horas y el cliente vuelve a usar la app antes.
 
-- Servicio de triaje de incidencias para apps de pequeños clientes…
-- Plantillas de informe de fallos para equipos sin QA…
-- Soporte de nivel 1 externalizado con informes para el programador…
+- Servicio de triaje de incidencias para apps de pequeños clientes.
+- Plantillas de informe de fallos para equipos sin QA.
+- Soporte de nivel 1 externalizado con informes para el programador.
 
 **Precio orientativo:** 15–40 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

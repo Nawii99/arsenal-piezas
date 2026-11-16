@@ -1,4 +1,4 @@
-# Vigilante de automatizaciones rotas y parte semanal…
+# Vigilante de automatizaciones rotas y parte semanal
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

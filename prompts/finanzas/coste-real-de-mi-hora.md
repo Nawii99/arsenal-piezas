@@ -1,4 +1,4 @@
-# coste-real-de-mi-hora…
+# coste-real-de-mi-hora
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt para cualquier chat de IA que calcula el coste real de una hora productiv
 
 Saber tu coste por hora te dice qué encargos rechazar y qué tareas delegar, y evita aceptar trabajos que te cuestan dinero.
 
-- Cálculo de tarifa por hora para freelances…
-- Revisión de presupuestos y precios cerrados…
+- Cálculo de tarifa por hora para freelances.
+- Revisión de presupuestos y precios cerrados.
 
 **Precio orientativo:** 40–130 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

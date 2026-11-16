@@ -1,4 +1,4 @@
-# Modelo listo para imprimir en 3D y vender…
+# Modelo listo para imprimir en 3D y vender
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando quieras vender figuras, piezas o recambios impresos en 3D, o vender el ar
 
 Reduce impresiones fallidas, plástico y horas de máquina desperdiciadas, y te permite vender la misma pieza impresa o como archivo descargable.
 
-- Adaptación de modelos para impresión 3D con revisión técnica…
-- Venta de figuras y recambios impresos en 3D…
-- Fichas de archivos imprimibles para marketplaces…
+- Adaptación de modelos para impresión 3D con revisión técnica.
+- Venta de figuras y recambios impresos en 3D.
+- Fichas de archivos imprimibles para marketplaces.
 
 **Precio orientativo:** 40–150 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

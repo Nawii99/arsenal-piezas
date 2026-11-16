@@ -1,4 +1,4 @@
-# Mensaje de captación para el servicio de auditoría móvil…
+# Mensaje de captación para el servicio de auditoría móvil
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 

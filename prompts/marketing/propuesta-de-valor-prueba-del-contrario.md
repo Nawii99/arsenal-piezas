@@ -1,4 +1,4 @@
-# Propuesta de valor: por qué te eligen a ti y no a otro…
+# Propuesta de valor: por qué te eligen a ti y no a otro
 
 **Tipo:** Prompt · **Área:** Marketing · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando estás definiendo tu marca, rehaciendo la web o no sabes explicar en una 
 
 Ofrece una sesión de posicionamiento a autónomos y pequeñas empresas: preparas los datos con el cliente, pasas el prompt y entregas tres propuestas con sus pruebas.
 
-- Hacer sesiones de posicionamiento a autónomos que no saben explicar su oferta…
-- Reescribir el titular y la propuesta de una web antes de rediseñarla…
-- Entregar a una pyme tres propuestas de valor con pruebas para elegir en una reunión…
+- Hacer sesiones de posicionamiento a autónomos que no saben explicar su oferta.
+- Reescribir el titular y la propuesta de una web antes de rediseñarla.
+- Entregar a una pyme tres propuestas de valor con pruebas para elegir en una reunión.
 
 **Precio orientativo:** 50–150 € por sesión. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

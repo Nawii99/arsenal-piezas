@@ -1,4 +1,4 @@
-# Centinela de caducidad de SSL y dominios…
+# Centinela de caducidad de SSL y dominios
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

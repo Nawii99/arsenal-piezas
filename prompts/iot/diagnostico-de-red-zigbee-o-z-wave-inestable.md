@@ -1,4 +1,4 @@
-# Diagnóstico de red Zigbee o Z-Wave inestable…
+# Diagnóstico de red Zigbee o Z-Wave inestable
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que analiza por qué se caen o responden tarde los dispositivos Zigbee y 
 
 Convierte una avería que te haría volver gratis a casa del cliente en una visita diagnosticada y resuelta a la primera, y evita que devuelvan material que funcionaba.
 
-- Reparación de redes malladas Zigbee y Z-Wave…
-- Optimización de topología en viviendas y locales…
-- Soporte remoto de domótica por suscripción…
+- Reparación de redes malladas Zigbee y Z-Wave.
+- Optimización de topología en viviendas y locales.
+- Soporte remoto de domótica por suscripción.
 
 **Precio orientativo:** 40–130 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

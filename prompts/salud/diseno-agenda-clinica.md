@@ -1,4 +1,4 @@
-# diseno-agenda-clinica…
+# diseno-agenda-clinica
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando tu agenda va siempre con retraso, hay ratos vacíos a media mañana o no 
 
 Una plantilla bien montada cabe más citas útiles en las mismas horas y reduce las horas pagadas sin facturar; además baja el desgaste del equipo.
 
-- Rediseño de agenda semanal para clínicas pequeñas…
-- Auditoría de tiempos reales y retrasos de consulta…
-- Plantillas de agenda por bloques para centros de fisioterapia…
+- Rediseño de agenda semanal para clínicas pequeñas.
+- Auditoría de tiempos reales y retrasos de consulta.
+- Plantillas de agenda por bloques para centros de fisioterapia.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

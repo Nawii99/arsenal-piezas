@@ -1,4 +1,4 @@
-# Radar del modelo 347 y de los umbrales que te cambian d…
+# Radar del modelo 347 y de los umbrales que te cambian d
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando en enero tu gestor te pide los datos del 347 y no los tienes. O cuando cr
 
 Evita la sanción por 347 mal presentado (mínimo 300 €) y te deja planificar con meses de margen en vez de descubrirlo en enero.
 
-- Control del modelo 347 como servicio anual para autónomos con muchos clientes…
-- Alerta de umbrales fiscales para pymes que crecen…
-- Preparación de datos para la declaración informativa con el gestor…
+- Control del modelo 347 como servicio anual para autónomos con muchos clientes.
+- Alerta de umbrales fiscales para pymes que crecen.
+- Preparación de datos para la declaración informativa con el gestor.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

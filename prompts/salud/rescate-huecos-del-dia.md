@@ -1,4 +1,4 @@
-# rescate-huecos-del-dia…
+# rescate-huecos-del-dia
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como responsable de operaciones de c
 
 Cada hueco rellenado es facturación que ya dabas por perdida, con el profesional y el local igualmente pagados; también reduce el tiempo muerto de recepción.
 
-- Sistema de lista de espera para clínicas privadas…
-- Plantillas de avisos de hueco libre por WhatsApp…
-- Configuración de agenda con prioridad de huecos para centros de estética…
+- Sistema de lista de espera para clínicas privadas.
+- Plantillas de avisos de hueco libre por WhatsApp.
+- Configuración de agenda con prioridad de huecos para centros de estética.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

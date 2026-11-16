@@ -1,4 +1,4 @@
-# Make (make.com): contactos de Facebook e Instagram Lead Ads…
+# Make (make.com): contactos de Facebook e Instagram Lead Ads
 
 **Tipo:** Receta de automatización · **Área:** Ventas · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Subtítulos en tres idiomas subidos solos a YouTube…
+# Subtítulos en tres idiomas subidos solos a YouTube
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Toma el SRT en español de un vídeo, lo traduce a inglés, francés y portugué
 
 Un traductor de subtítulos cobra 3-6 € por minuto de vídeo. Esto lo deja en céntimos y abre tres mercados sin doblar.
 
-- Subtitulado multilingüe de vídeos corporativos y de producto para empresas que venden fuera…
-- Paquete de traducción de subtítulos para creadores con tarifa por vídeo…
-- Localización de cursos online en tres idiomas con revisión humana incluida…
+- Subtitulado multilingüe de vídeos corporativos y de producto para empresas que venden fuera.
+- Paquete de traducción de subtítulos para creadores con tarifa por vídeo.
+- Localización de cursos online en tres idiomas con revisión humana incluida.
 
 **Precio orientativo:** 15–40 € por vídeo. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

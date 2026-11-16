@@ -1,4 +1,4 @@
-# Sesión de pruebas con jugadores y lectura de resultados…
+# Sesión de pruebas con jugadores y lectura de resultados
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tengas algo jugable, aunque sea feo, y quieras saber si funciona antes de
 
 Probar con cinco personas antes de producir evita rehacer el trabajo entero después; el tiempo que ahorras es dinero que no gastas dos veces.
 
-- Organización de playtests para estudios pequeños…
-- Informe de hallazgos de pruebas con jugadores…
-- Plantillas de observación y cuestionario para demos…
+- Organización de playtests para estudios pequeños.
+- Informe de hallazgos de pruebas con jugadores.
+- Plantillas de observación y cuestionario para demos.
 
 **Precio orientativo:** 250–700 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

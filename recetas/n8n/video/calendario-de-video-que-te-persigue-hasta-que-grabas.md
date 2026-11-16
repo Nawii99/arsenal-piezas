@@ -1,4 +1,4 @@
-# Calendario de vídeo que te persigue hasta que grabas…
+# Calendario de vídeo que te persigue hasta que grabas
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tienes ideas de vídeo apuntadas por todas partes, publicas a rachas y ll
 
 Publicar con regularidad es lo que hace crecer un canal. Esto te quita la gestión del calendario, unos 45 minutos por semana, y el olvido.
 
-- Planificación editorial de vídeo para creadores con seguimiento semanal…
-- Calendario de contenido para pymes que publican vídeo de forma irregular…
-- Configuración de un sistema de producción de vídeo para equipos de marketing…
+- Planificación editorial de vídeo para creadores con seguimiento semanal.
+- Calendario de contenido para pymes que publican vídeo de forma irregular.
+- Configuración de un sistema de producción de vídeo para equipos de marketing.
 
 **Precio orientativo:** 80–250 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

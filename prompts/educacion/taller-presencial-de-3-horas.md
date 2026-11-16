@@ -1,4 +1,4 @@
-# Taller presencial de 3 horas…
+# Taller presencial de 3 horas
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que diseña un taller presencial o en directo de tres horas con minutado,
 
 Un taller bien diseñado se cobra por sesión y se reutiliza tal cual con distintos clientes cambiando solo los ejemplos.
 
-- Diseño de talleres presenciales para empresas…
-- Talleres de formación para asociaciones y comercios…
-- Paquete de taller con materiales y plan B incluido…
+- Diseño de talleres presenciales para empresas.
+- Talleres de formación para asociaciones y comercios.
+- Paquete de taller con materiales y plan B incluido.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

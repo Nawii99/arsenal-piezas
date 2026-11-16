@@ -1,4 +1,4 @@
-# Boletín semanal de progreso para alumnos y para padres…
+# Boletín semanal de progreso para alumnos y para padres
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

@@ -1,14 +1,14 @@
 # Arsenal del Marketer · pieces
 
-**4.659 ready-to-use AI pieces written in Spanish**: 538 skills, 515 slash commands and
-625 subagents for Claude Code, 366 prompts, 1852 JSON prompts and
-763 automation recipes (n8n, Make, Zapier), aimed at freelancers and small businesses.
+**4.741 ready-to-use AI pieces written in Spanish**: 555 skills, 522 slash commands and
+630 subagents for Claude Code, 375 prompts, 1862 JSON prompts and
+797 automation recipes (n8n, Make, Zapier), aimed at freelancers and small businesses.
 
 [Versión en español](README.md) · Content license: [CC BY 4.0](LICENSE) · Code: [MIT](LICENSE-CODE)
 
 The pieces are written in Spanish; Claude understands them and can answer in English if you ask it to.
 
-**147 of the best pieces are already translated into English**: see [en/](en/README.md), or install them in Claude Code with the small `arsenal-en-…` plugins listed there.
+**146 of the best pieces are already translated into English**: see [en/](en/README.md), or install them in Claude Code with the small `arsenal-en-…` plugins listed there.
 Every piece has an English one-line description in [`catalogo.json`](catalogo.json) (`description_en`).
 
 ## Install in Claude Code
@@ -28,6 +28,7 @@ One plugin per area, so you only install what you need:
 | Backend | `arsenal-backend` |
 | Backend | `arsenal-backend-alternativas` |
 | Quality & testing | `arsenal-calidad` |
+| Science & research | `arsenal-ciencia` |
 | Content | `arsenal-contenido` |
 | Data | `arsenal-datos` |
 | Data & AI | `arsenal-datos-ia-agentes` |

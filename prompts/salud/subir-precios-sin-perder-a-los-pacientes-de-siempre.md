@@ -1,4 +1,4 @@
-# Subir precios sin perder a los pacientes de siempre…
+# Subir precios sin perder a los pacientes de siempre
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,8 +24,8 @@ Prompt para cualquier chat de IA que actúa como asesor de precios para consulta
 
 Una subida bien comunicada mejora el margen de cada sesión sin necesidad de más pacientes; mal comunicada, se lleva por delante a los fieles.
 
-- Plan de subida de tarifas para clínicas y consultas privadas…
-- Revisión de precios por servicio según costes…
+- Plan de subida de tarifas para clínicas y consultas privadas.
+- Revisión de precios por servicio según costes.
 
 **Precio orientativo:** 80–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

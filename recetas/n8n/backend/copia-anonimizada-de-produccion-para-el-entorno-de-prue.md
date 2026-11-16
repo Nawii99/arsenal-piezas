@@ -1,4 +1,4 @@
-# Copia anonimizada de producción para el entorno de prue…
+# Copia anonimizada de producción para el entorno de prue
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Stripe al día: cobros, pagos fallidos y disputas en tie…
+# Stripe al día: cobros, pagos fallidos y disputas en tie
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Recibe los eventos de Stripe en tiempo real y, según el caso, registra el cobro
 
 Recuperar tarjetas caducadas con un aviso el mismo día salva entre el 30% y el 50% de esos cobros. Con 60 suscripciones de 30 €, son 300-600 € al año que no se pierden.
 
-- Recuperación de pagos fallidos como servicio mensual para tiendas online…
-- Registro automático de ingresos Stripe para negocios de suscripción…
-- Configuración de avisos de disputas para vendedores digitales…
+- Recuperación de pagos fallidos como servicio mensual para tiendas online.
+- Registro automático de ingresos Stripe para negocios de suscripción.
+- Configuración de avisos de disputas para vendedores digitales.
 
 **Precio orientativo:** 100–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

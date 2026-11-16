@@ -23,9 +23,9 @@ Consulta cada mañana la API de YouTube para los vídeos de las últimas 48-72 h
 
 Recuperar un vídeo en las primeras 72 horas puede multiplicar sus visitas. Te ahorra entrar cada día a YouTube Studio: 10-15 minutos diarios.
 
-- Auditoría mensual de rendimiento de canales de YouTube para pymes, con avisos de vídeos que caen…
-- Gestión de canal para creadores pequeños: revisión de títulos y miniaturas dentro de la ventana de 72 horas…
-- Panel de métricas de YouTube para clientes con alertas automáticas y recomendación de acción…
+- Auditoría mensual de rendimiento de canales de YouTube para pymes, con avisos de vídeos que caen.
+- Gestión de canal para creadores pequeños: revisión de títulos y miniaturas dentro de la ventana de 72 horas.
+- Panel de métricas de YouTube para clientes con alertas automáticas y recomendación de acción.
 
 **Precio orientativo:** 40–120 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

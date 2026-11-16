@@ -1,4 +1,4 @@
-# Códigos de puerta que caducan solos para tu alquiler tu…
+# Códigos de puerta que caducan solos para tu alquiler tu
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

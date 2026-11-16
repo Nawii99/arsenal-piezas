@@ -1,4 +1,4 @@
-# Zapier: formulario de alta con carpeta y ficha de cliente…
+# Zapier: formulario de alta con carpeta y ficha de cliente
 
 **Tipo:** Receta de automatización · **Área:** Documentos · **Licencia:** CC BY 4.0
 

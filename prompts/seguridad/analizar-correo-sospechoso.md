@@ -1,4 +1,4 @@
-# Analizar un correo sospechoso antes de picar…
+# Analizar un correo sospechoso antes de picar
 
 **Tipo:** Prompt · **Área:** Ciberseguridad · **Licencia:** CC BY 4.0
 

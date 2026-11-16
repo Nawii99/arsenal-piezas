@@ -1,4 +1,4 @@
-# Centinela de errores JavaScript de tus visitantes…
+# Centinela de errores JavaScript de tus visitantes
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Copia de seguridad diaria de tu base de datos a Google…
+# Copia de seguridad diaria de tu base de datos a Google
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

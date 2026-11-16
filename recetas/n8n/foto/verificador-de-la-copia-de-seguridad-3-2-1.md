@@ -1,4 +1,4 @@
-# Verificador de la copia de seguridad 3-2-1…
+# Verificador de la copia de seguridad 3-2-1
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

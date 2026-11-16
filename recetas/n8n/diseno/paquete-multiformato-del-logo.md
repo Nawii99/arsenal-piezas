@@ -1,4 +1,4 @@
-# Paquete multiformato del logo…
+# Paquete multiformato del logo
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cada SVG que dejas en una carpeta de Drive se convierte con CloudConvert en un p
 
 Media hora de exportaciones manuales por marca, más las peticiones de última hora del cliente. Gratis hasta 25 conversiones al día.
 
-- Entrega de paquetes de logo como partida fija en cada identidad…
-- Servicio de archivos de marca para empresas con muchas versiones…
-- Exportación bajo encargo con revisión previa del SVG antes de entregar…
+- Entrega de paquetes de logo como partida fija en cada identidad.
+- Servicio de archivos de marca para empresas con muchas versiones.
+- Exportación bajo encargo con revisión previa del SVG antes de entregar.
 
 **Precio orientativo:** 30–80 € por marca. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

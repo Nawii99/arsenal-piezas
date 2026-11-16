@@ -1,4 +1,4 @@
-# Margen real por pedido y alerta de ventas que pierden d…
+# Margen real por pedido y alerta de ventas que pierden d
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

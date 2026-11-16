@@ -1,4 +1,4 @@
-# Recordatorio mensual de seguridad del móvil…
+# Recordatorio mensual de seguridad del móvil
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

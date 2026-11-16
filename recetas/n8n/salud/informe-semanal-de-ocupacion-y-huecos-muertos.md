@@ -1,4 +1,4 @@
-# Informe semanal de ocupación y huecos muertos…
+# Informe semanal de ocupación y huecos muertos
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

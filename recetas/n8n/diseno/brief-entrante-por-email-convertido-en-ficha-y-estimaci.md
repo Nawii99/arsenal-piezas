@@ -1,4 +1,4 @@
-# Brief entrante por email convertido en ficha y estimaci…
+# Brief entrante por email convertido en ficha y estimaci
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando recibes peticiones de diseño por correo en formato caos y pierdes media 
 
 20-30 minutos por consulta entrante. Con 10 consultas al mes son 4 horas; además respondes el mismo día, lo que sube bastante la tasa de cierre.
 
-- Filtro de encargos para estudios que reciben muchas peticiones por correo…
-- Estimaciones previas en 24 horas como servicio para agencias pequeñas…
-- Plantilla de brief para diseñadores freelance con presupuesto orientativo…
+- Filtro de encargos para estudios que reciben muchas peticiones por correo.
+- Estimaciones previas en 24 horas como servicio para agencias pequeñas.
+- Plantilla de brief para diseñadores freelance con presupuesto orientativo.
 
 **Precio orientativo:** 100–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

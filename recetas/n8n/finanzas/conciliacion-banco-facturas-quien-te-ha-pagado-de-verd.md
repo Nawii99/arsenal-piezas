@@ -1,4 +1,4 @@
-# Conciliación banco-facturas: quién te ha pagado de verd…
+# Conciliación banco-facturas: quién te ha pagado de verd
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando cada mes pierdes una hora repasando el extracto para saber qué facturas 
 
 Ahorra 2-4 horas al mes de conciliación manual (60-140 € de tu tiempo) y evita reclamar a clientes que ya pagaron, que es la forma más rápida de quedar mal.
 
-- Conciliación semanal de cobros como servicio para negocios con muchas facturas…
-- Control de cobros parciales para proveedores con clientes que pagan a plazos…
-- Configuración de conciliación para pymes que no usan programa contable…
+- Conciliación semanal de cobros como servicio para negocios con muchas facturas.
+- Control de cobros parciales para proveedores con clientes que pagan a plazos.
+- Configuración de conciliación para pymes que no usan programa contable.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

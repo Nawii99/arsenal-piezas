@@ -1,4 +1,4 @@
-# Visita técnica previa de domótica…
+# Visita técnica previa de domótica
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que convierte a la IA en instalador de domótica para preparar el guion d
 
 Evita presupuestos mal calculados y segundas visitas: con los datos bien tomados a la primera cobras lo que cuesta de verdad y no comes el error.
 
-- Visita técnica de valoración para instalaciones domóticas…
-- Estudio previo de viabilidad para viviendas y locales…
-- Informe fotográfico y de medidas previo al presupuesto…
+- Visita técnica de valoración para instalaciones domóticas.
+- Estudio previo de viabilidad para viviendas y locales.
+- Informe fotográfico y de medidas previo al presupuesto.
 
 **Precio orientativo:** 60–180 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Control de peso de la app: aviso si engorda demasiado…
+# Control de peso de la app: aviso si engorda demasiado
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

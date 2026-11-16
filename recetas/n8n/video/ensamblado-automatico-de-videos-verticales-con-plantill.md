@@ -1,4 +1,4 @@
-# Ensamblado automático de vídeos verticales con plantill…
+# Ensamblado automático de vídeos verticales con plantill
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

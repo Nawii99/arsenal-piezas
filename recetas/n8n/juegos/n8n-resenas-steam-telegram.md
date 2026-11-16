@@ -1,4 +1,4 @@
-# Aviso en Telegram de cada reseña nueva de tu juego en Steam…
+# Aviso en Telegram de cada reseña nueva de tu juego en Steam
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tu juego ya está en Steam y quieres enterarte de cada reseña el mismo d
 
 Se puede montar para cada cliente que lance en Steam como parte de un pack de «seguimiento de lanzamiento», y ampliarlo con resúmenes semanales.
 
-- Seguimiento de reseñas en Steam para estudios que acaban de lanzar…
-- Pack de seguimiento de lanzamiento con resúmenes semanales incluidos…
-- Aviso de reseñas y bugs para equipos de soporte de juegos…
+- Seguimiento de reseñas en Steam para estudios que acaban de lanzar.
+- Pack de seguimiento de lanzamiento con resúmenes semanales incluidos.
+- Aviso de reseñas y bugs para equipos de soporte de juegos.
 
 **Precio orientativo:** 60–180 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

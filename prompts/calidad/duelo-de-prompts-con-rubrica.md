@@ -1,4 +1,4 @@
-# Duelo de prompts con rúbrica…
+# Duelo de prompts con rúbrica
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que compara dos versiones de un prompt con método. Entran los dos prompt
 
 Un prompt que acierta más veces reduce las correcciones a mano de cada pieza; el ahorro se multiplica por todas las veces que lo usarás.
 
-- Optimización de prompts de uso diario para pymes…
-- Evaluación comparativa de prompts como servicio de consultoría IA…
-- Informe de mejora de prompts con puntuaciones para clientes…
+- Optimización de prompts de uso diario para pymes.
+- Evaluación comparativa de prompts como servicio de consultoría IA.
+- Informe de mejora de prompts con puntuaciones para clientes.
 
 ## El prompt (cópialo entero)
 

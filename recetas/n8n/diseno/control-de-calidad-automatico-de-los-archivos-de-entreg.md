@@ -1,4 +1,4 @@
-# Control de calidad automático de los archivos de entreg…
+# Control de calidad automático de los archivos de entreg
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

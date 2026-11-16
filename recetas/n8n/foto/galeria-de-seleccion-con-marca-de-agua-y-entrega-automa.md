@@ -1,4 +1,4 @@
-# Galería de selección con marca de agua y entrega automá…
+# Galería de selección con marca de agua y entrega automá
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

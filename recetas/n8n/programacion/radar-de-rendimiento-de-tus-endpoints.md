@@ -1,4 +1,4 @@
-# Radar de rendimiento de tus endpoints…
+# Radar de rendimiento de tus endpoints
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

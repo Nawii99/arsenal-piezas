@@ -1,4 +1,4 @@
-# Alarma de temperatura en nevera y congelador…
+# Alarma de temperatura en nevera y congelador
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

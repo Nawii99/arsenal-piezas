@@ -23,9 +23,9 @@ Prompt que actúa como asesor tecnológico independiente para decidir el formato
 
 Elegir el camino equivocado son miles de euros y meses perdidos; esta decisión bien tomada es el mayor ahorro del proyecto.
 
-- Consultoría de decisión tecnológica previa a encargar una app…
-- Informe comparativo nativa, PWA o no-code para emprendedores…
-- Segunda opinión sobre presupuestos de desarrollo de apps…
+- Consultoría de decisión tecnológica previa a encargar una app.
+- Informe comparativo nativa, PWA o no-code para emprendedores.
+- Segunda opinión sobre presupuestos de desarrollo de apps.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

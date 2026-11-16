@@ -1,4 +1,4 @@
-# Envío de notificaciones push desde una hoja de cálculo…
+# Envío de notificaciones push desde una hoja de cálculo
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Receta de n8n que lee una hoja de Google Sheets donde escribes título, mensaje,
 
 Convierte una tarea de desarrollador en una tarea de dos minutos para cualquiera del equipo. Una push bien enviada recupera usuarios que ya tienes, y es lo más barato.
 
-- Avisos de promociones para una app de un comercio con clientes fieles…
-- Notificaciones de novedades para una app de reservas de un gimnasio…
-- Flujo de marketing para equipos pequeños que lanzan push cada semana…
+- Avisos de promociones para una app de un comercio con clientes fieles.
+- Notificaciones de novedades para una app de reservas de un gimnasio.
+- Flujo de marketing para equipos pequeños que lanzan push cada semana.
 
 **Precio orientativo:** 150–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

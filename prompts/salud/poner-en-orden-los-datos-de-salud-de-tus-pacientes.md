@@ -1,4 +1,4 @@
-# Poner en orden los datos de salud de tus pacientes…
+# Poner en orden los datos de salud de tus pacientes
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como consultor de buenas prácticas 
 
 Un descuido con datos de salud es de lo más caro que le puede pasar a una consulta pequeña; además ordenar esto te ahorra buscar fichas cada semana.
 
-- Orden y plan de arreglos de datos de pacientes para consultas…
-- Textos de consentimiento y reglas de uso de WhatsApp…
-- Auditoría ligera de hábitos con datos personales…
+- Orden y plan de arreglos de datos de pacientes para consultas.
+- Textos de consentimiento y reglas de uso de WhatsApp.
+- Auditoría ligera de hábitos con datos personales.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

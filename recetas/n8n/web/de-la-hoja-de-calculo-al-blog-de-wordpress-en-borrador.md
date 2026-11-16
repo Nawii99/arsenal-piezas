@@ -1,4 +1,4 @@
-# De la hoja de cálculo al blog de WordPress en borrador…
+# De la hoja de cálculo al blog de WordPress en borrador
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

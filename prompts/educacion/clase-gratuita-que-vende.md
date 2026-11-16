@@ -1,4 +1,4 @@
-# Clase gratuita que vende…
+# Clase gratuita que vende
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que actúa como guionista de masterclass gratui
 
 Es la vía más directa para convertir una audiencia pequeña en matrículas, sin invertir en publicidad.
 
-- Guion de webinar de venta para formadores y academias online…
-- Diseño de masterclass gratuita como embudo de captación para infoproductores…
-- Pack de guion y diapositivas de clase abierta para escuelas pequeñas…
+- Guion de webinar de venta para formadores y academias online.
+- Diseño de masterclass gratuita como embudo de captación para infoproductores.
+- Pack de guion y diapositivas de clase abierta para escuelas pequeñas.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

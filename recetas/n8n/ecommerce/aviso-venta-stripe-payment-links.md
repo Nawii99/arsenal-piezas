@@ -1,4 +1,4 @@
-# Aviso automático de venta con Stripe Payment Links…
+# Aviso automático de venta con Stripe Payment Links
 
 **Tipo:** Receta de automatización · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 

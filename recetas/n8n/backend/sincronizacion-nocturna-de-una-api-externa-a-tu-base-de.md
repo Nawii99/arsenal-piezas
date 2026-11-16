@@ -1,4 +1,4 @@
-# Sincronización nocturna de una API externa a tu base de…
+# Sincronización nocturna de una API externa a tu base de
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

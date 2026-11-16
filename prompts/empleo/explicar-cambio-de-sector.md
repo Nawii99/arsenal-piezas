@@ -1,4 +1,4 @@
-# Explicar tu cambio de sector…
+# Explicar tu cambio de sector
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

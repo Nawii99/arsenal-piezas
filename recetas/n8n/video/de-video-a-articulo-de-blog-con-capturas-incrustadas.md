@@ -1,4 +1,4 @@
-# De vídeo a artículo de blog con capturas incrustadas…
+# De vídeo a artículo de blog con capturas incrustadas
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Descarga un vídeo ya publicado y su transcripción, pide a la IA un artículo c
 
 Un redactor SEO cobra 60-150 € por artículo. Aquí sale por menos de 0,50 € y aprovechas contenido que ya has pagado.
 
-- Conversión de vídeos de formación en artículos de blog para academias y consultoras…
-- Reaprovechamiento de contenido para tiendas con canal de YouTube y web propia…
-- Redacción SEO a partir de vídeos de clientes, con entrega de borrador revisado…
+- Conversión de vídeos de formación en artículos de blog para academias y consultoras.
+- Reaprovechamiento de contenido para tiendas con canal de YouTube y web propia.
+- Redacción SEO a partir de vídeos de clientes, con entrega de borrador revisado.
 
 **Precio orientativo:** 30–80 € por artículo. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

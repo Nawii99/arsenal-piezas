@@ -1,4 +1,4 @@
-# Rescatar alumnos que han dejado el curso…
+# Rescatar alumnos que han dejado el curso
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que diagnostica en qué punto se cae la gente e
 
 Un alumno que termina deja reseña, recomienda y compra el siguiente producto; recuperar a los parados cuesta mucho menos que captar alumnos nuevos.
 
-- Campañas de reenganche para escuelas online…
-- Análisis de abandono con plan de acción para infoproductores…
-- Secuencias de rescate por email y WhatsApp para academias…
+- Campañas de reenganche para escuelas online.
+- Análisis de abandono con plan de acción para infoproductores.
+- Secuencias de rescate por email y WhatsApp para academias.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

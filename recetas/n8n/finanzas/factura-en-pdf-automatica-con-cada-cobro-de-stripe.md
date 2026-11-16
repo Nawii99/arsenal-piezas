@@ -1,4 +1,4 @@
-# Factura en PDF automática con cada cobro de Stripe…
+# Factura en PDF automática con cada cobro de Stripe
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -98,7 +98,7 @@ return [{ json: {
 ## Qué puede salir mal
 - **Numeración duplicada**: si entran dos pagos a la vez, ambas ejecuciones pueden leer el mismo número máximo. Evítalo haciendo que se ejecuten de uno en uno: deja este flujo como sub-flujo (Execute Workflow) llamado desde un flujo principal que procese los cobros en cola con concurrencia 1 (en n8n autoalojado en modo queue, un worker con `--concurrency=1`). Además, antes de emitir, comprueba que el número no existe ya en la hoja `Facturas`; si existe, para y avísate.
 - **NIF del cliente**: Stripe no lo pide por defecto. Añade un campo personalizado en tu Checkout (`custom_fields`) o pásalo en `metadata.nif` desde tu web. Sin NIF, la factura no vale para un cliente empresa.
-- **Verifactu**: desde 2026 los sistemas de facturación en España deben cumplir requisitos de registro y trazabilidad. Este flujo genera el documento, pero consulta con tu asesor si tu caso exige un software homologado. Para ventas a consumidor final con tickets suele bastar el registro ordenado.
+- **Verifactu**: si facturas con un sistema informático, debe cumplir el RD 1007/2023 antes del 1-ene-2027 (sociedades) o del 1-jul-2027 (resto); aplazamiento a octubre de 2028 anunciado, sin BOE a 13-nov-2026. Un flujo que numera y genera facturas probablemente es un sistema de facturación: úsalo solo como borrador o conéctalo a un programa con declaración responsable, y que lo confirme tu asesor.
 - **Exportación a PDF**: si el nodo HTTP Request devuelve HTML de error, es que la credencial no tiene scope de Drive. Recrea la credencial marcando el ámbito de Drive completo.
 - **Reembolsos**: añade otro **Stripe Trigger** con `charge.refunded` que te avise para emitir la factura rectificativa a mano. No las generes automáticamente.
 

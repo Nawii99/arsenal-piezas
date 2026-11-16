@@ -1,4 +1,4 @@
-# Caché de llamadas caras a APIs…
+# Caché de llamadas caras a APIs
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Pone un intermediario entre tu web y las APIs de pago: calcula una huella de cad
 
 En consultas repetitivas se ahorra entre el 40 % y el 80 % de las llamadas. Con una factura de 200 €/mes son 80-160 € al mes menos, y respuestas más rápidas.
 
-- Optimización de costes de APIs para tiendas con buscador de productos o cálculo de envíos…
-- Configuración de caché para apps con IA que repiten preguntas frecuentes…
-- Mantenimiento de proxy de APIs para pymes con factura de llamadas creciente…
+- Optimización de costes de APIs para tiendas con buscador de productos o cálculo de envíos.
+- Configuración de caché para apps con IA que repiten preguntas frecuentes.
+- Mantenimiento de proxy de APIs para pymes con factura de llamadas creciente.
 
 **Precio orientativo:** 150–400 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

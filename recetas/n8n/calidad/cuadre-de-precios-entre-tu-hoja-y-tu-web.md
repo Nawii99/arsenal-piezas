@@ -1,4 +1,4 @@
-# Cuadre de precios entre tu hoja y tu web…
+# Cuadre de precios entre tu hoja y tu web
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

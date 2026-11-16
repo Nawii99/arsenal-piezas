@@ -1,4 +1,4 @@
-# Traducción de los textos del juego con revisión de etiq…
+# Traducción de los textos del juego con revisión de etiq
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

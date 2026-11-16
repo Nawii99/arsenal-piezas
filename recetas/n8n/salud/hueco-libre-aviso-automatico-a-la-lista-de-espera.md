@@ -1,4 +1,4 @@
-# Hueco libre: aviso automático a la lista de espera…
+# Hueco libre: aviso automático a la lista de espera
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

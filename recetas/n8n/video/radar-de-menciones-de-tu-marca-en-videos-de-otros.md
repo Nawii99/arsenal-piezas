@@ -1,4 +1,4 @@
-# Radar de menciones de tu marca en vídeos de otros…
+# Radar de menciones de tu marca en vídeos de otros
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando vendes un producto o servicio con nombre propio y quieres enterarte de re
 
 Te ahorra una herramienta de escucha (Brand24 desde 79 €/mes) y te deja responder a una crítica cuando aún tiene 200 visitas.
 
-- Monitorización de reseñas en vídeo para marcas de producto, con informe semanal…
-- Escucha de YouTube para negocios locales que quieren responder críticas a tiempo…
-- Configuración de radar de menciones para agencias con varios clientes…
+- Monitorización de reseñas en vídeo para marcas de producto, con informe semanal.
+- Escucha de YouTube para negocios locales que quieren responder críticas a tiempo.
+- Configuración de radar de menciones para agencias con varios clientes.
 
 **Precio orientativo:** 40–120 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

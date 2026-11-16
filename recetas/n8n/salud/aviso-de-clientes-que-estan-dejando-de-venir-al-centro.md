@@ -1,4 +1,4 @@
-# Aviso de clientes que están dejando de venir al centro…
+# Aviso de clientes que están dejando de venir al centro
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

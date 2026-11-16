@@ -1,4 +1,4 @@
-# Guardia del cobro: pedido de prueba automático a diario…
+# Guardia del cobro: pedido de prueba automático a diario
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

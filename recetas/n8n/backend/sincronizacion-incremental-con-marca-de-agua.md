@@ -1,4 +1,4 @@
-# Sincronización incremental con marca de agua…
+# Sincronización incremental con marca de agua
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

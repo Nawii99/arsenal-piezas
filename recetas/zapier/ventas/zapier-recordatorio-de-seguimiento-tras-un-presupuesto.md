@@ -1,4 +1,4 @@
-# Zapier: recordatorio de seguimiento tras un presupuesto…
+# Zapier: recordatorio de seguimiento tras un presupuesto
 
 **Tipo:** Receta de automatización · **Área:** Ventas · **Licencia:** CC BY 4.0
 

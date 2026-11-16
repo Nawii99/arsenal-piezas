@@ -1,4 +1,4 @@
-# Avisos legales y datos del chatbot en España…
+# Avisos legales y datos del chatbot en España
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que prepara los textos y decisiones de transparencia y datos de un chatbo
 
 Evita sustos y objeciones de venta: muchos clientes bloquean el proyecto por dudas de datos, y llevar esto resuelto cierra la venta.
 
-- Textos de aviso y privacidad para chatbots de pymes…
-- Checklist de datos y transparencia al entregar un bot a un cliente…
-- Documento de decisiones de datos de un asistente…
+- Textos de aviso y privacidad para chatbots de pymes.
+- Checklist de datos y transparencia al entregar un bot a un cliente.
+- Documento de decisiones de datos de un asistente.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

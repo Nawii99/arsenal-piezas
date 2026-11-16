@@ -1,4 +1,4 @@
-# Agenda de tutorías 1 a 1 con ficha y notas de sesión…
+# Agenda de tutorías 1 a 1 con ficha y notas de sesión
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

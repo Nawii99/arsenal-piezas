@@ -1,4 +1,4 @@
-# Alta de cliente y presupuesto del servicio legal en n8n…
+# Alta de cliente y presupuesto del servicio legal en n8n
 
 **Tipo:** Receta de automatización · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 

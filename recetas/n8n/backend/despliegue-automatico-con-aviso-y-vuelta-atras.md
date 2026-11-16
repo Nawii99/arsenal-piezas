@@ -1,4 +1,4 @@
-# Despliegue automático con aviso y vuelta atrás…
+# Despliegue automático con aviso y vuelta atrás
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Escucha los push a main con un webhook firmado de GitHub, actualiza el código e
 
 Ahorra 10-20 minutos por despliegue y evita las caídas de la web que cuestan ventas. Sustituye herramientas de CI/CD de pago para proyectos pequeños.
 
-- Despliegue automatizado para webs de clientes en VPS, con vuelta atrás incluida…
-- Configuración de CI/CD ligero para proyectos pequeños sin herramientas de pago…
-- Mantenimiento de despliegues para desarrolladores freelance con aviso de incidencias…
+- Despliegue automatizado para webs de clientes en VPS, con vuelta atrás incluida.
+- Configuración de CI/CD ligero para proyectos pequeños sin herramientas de pago.
+- Mantenimiento de despliegues para desarrolladores freelance con aviso de incidencias.
 
 **Precio orientativo:** 100–300 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Economía y progresión de tu juego…
+# Economía y progresión de tu juego
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como diseñador de economía de vide
 
 Una economía bien calibrada es lo que hace que un juego gratuito o con compras genere ingresos sin que la gente se sienta estafada.
 
-- Consultoría de economía y progresión para estudios indie que lanzan un juego con compras…
-- Revisión de balance de un juego móvil existente con informe y tabla de ajustes…
-- Taller de diseño de economía para equipos pequeños de videojuegos…
+- Consultoría de economía y progresión para estudios indie que lanzan un juego con compras.
+- Revisión de balance de un juego móvil existente con informe y tabla de ajustes.
+- Taller de diseño de economía para equipos pequeños de videojuegos.
 
 **Precio orientativo:** 150–600 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

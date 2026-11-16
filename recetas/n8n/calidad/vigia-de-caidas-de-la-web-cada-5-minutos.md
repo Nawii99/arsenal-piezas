@@ -1,4 +1,4 @@
-# Vigía de caídas de la web cada 5 minutos…
+# Vigía de caídas de la web cada 5 minutos
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

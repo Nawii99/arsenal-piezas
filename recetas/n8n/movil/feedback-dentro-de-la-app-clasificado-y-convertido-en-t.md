@@ -1,4 +1,4 @@
-# Feedback dentro de la app clasificado y convertido en t…
+# Feedback dentro de la app clasificado y convertido en t
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Receta de n8n que recoge el feedback de tu app, desde un formulario de sugerenci
 
 Evita las 3-4 horas semanales de triaje manual y hace que las quejas que se repiten salgan solas a la superficie en vez de perderse.
 
-- Triaje de feedback para pequeños estudios de software…
-- Buzón de ideas y quejas para una app de un gimnasio o una academia…
-- Priorización mensual de tareas de producto con votos de usuarios…
+- Triaje de feedback para pequeños estudios de software.
+- Buzón de ideas y quejas para una app de un gimnasio o una academia.
+- Priorización mensual de tareas de producto con votos de usuarios.
 
 **Precio orientativo:** 250–500 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

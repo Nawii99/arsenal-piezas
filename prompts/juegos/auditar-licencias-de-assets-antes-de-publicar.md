@@ -1,4 +1,4 @@
-# Auditar licencias de assets antes de publicar…
+# Auditar licencias de assets antes de publicar
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que revisa uno a uno los assets de tu proyecto 
 
 Evita retiradas de tienda, reclamaciones y tener que rehacer trabajo ya cobrado; también te deja entregar al cliente con la cesión de derechos clara.
 
-- Auditoría de licencias de assets para estudios y freelances antes de publicar…
-- Informe de cesión de derechos y créditos para entregas a clientes…
-- Revisión de riesgos de material con IA en proyectos de render…
+- Auditoría de licencias de assets para estudios y freelances antes de publicar.
+- Informe de cesión de derechos y créditos para entregas a clientes.
+- Revisión de riesgos de material con IA en proyectos de render.
 
 **Precio orientativo:** 80–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Copia de seguridad semanal de WordPress a Google Drive…
+# Copia de seguridad semanal de WordPress a Google Drive
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

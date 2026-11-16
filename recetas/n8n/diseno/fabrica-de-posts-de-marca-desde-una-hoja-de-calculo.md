@@ -1,4 +1,4 @@
-# Fábrica de posts de marca desde una hoja de cálculo…
+# Fábrica de posts de marca desde una hoja de cálculo
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

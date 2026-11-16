@@ -1,4 +1,4 @@
-# Aviso de bonos que se acaban antes de que se acaben…
+# Aviso de bonos que se acaban antes de que se acaben
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

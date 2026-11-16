@@ -1,4 +1,4 @@
-# Marca de agua y tres tamaños web en un clic…
+# Marca de agua y tres tamaños web en un clic
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

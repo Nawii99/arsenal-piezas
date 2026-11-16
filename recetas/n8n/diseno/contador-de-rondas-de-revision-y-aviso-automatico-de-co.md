@@ -1,4 +1,4 @@
-# Contador de rondas de revisión y aviso automático de co…
+# Contador de rondas de revisión y aviso automático de co
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

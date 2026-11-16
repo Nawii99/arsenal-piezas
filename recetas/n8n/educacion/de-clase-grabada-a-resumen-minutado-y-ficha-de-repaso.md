@@ -1,4 +1,4 @@
-# De clase grabada a resumen, minutado y ficha de repaso…
+# De clase grabada a resumen, minutado y ficha de repaso
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

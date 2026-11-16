@@ -1,4 +1,4 @@
-# Simulador de subida de precios…
+# Simulador de subida de precios
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como consultor de precios para negocios pequeños. Recibe prec
 
 Una subida bien calculada aumenta el margen sin trabajar más, y saber el umbral de bajas evita quedarse corto por miedo.
 
-- Estudio de subida de precios con umbral de bajas aceptable…
-- Redacción del comunicado de subida para clientes recurrentes…
-- Revisión anual de tarifas para autónomos y pequeños negocios…
+- Estudio de subida de precios con umbral de bajas aceptable.
+- Redacción del comunicado de subida para clientes recurrentes.
+- Revisión anual de tarifas para autónomos y pequeños negocios.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

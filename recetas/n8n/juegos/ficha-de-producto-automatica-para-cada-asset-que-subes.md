@@ -1,4 +1,4 @@
-# Ficha de producto automática para cada asset que subes…
+# Ficha de producto automática para cada asset que subes
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

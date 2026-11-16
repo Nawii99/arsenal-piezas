@@ -1,4 +1,4 @@
-# Aviso de dominios y certificados SSL a punto de caducar…
+# Aviso de dominios y certificados SSL a punto de caducar
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Flujo de n8n que recorre una lista de dominios, consulta la fecha de caducidad e
 
 Una web caída medio día por un certificado olvidado cuesta ventas y credibilidad; el aviso previo lo evita por completo y ahorra la llamada de urgencia del cliente.
 
-- Gestión de dominios y certificados para clientes con varias webs…
-- Mantenimiento técnico mensual de webs de pymes con aviso de renovaciones…
-- Vigilancia de caducidades para agencias que administran dominios ajenos…
+- Gestión de dominios y certificados para clientes con varias webs.
+- Mantenimiento técnico mensual de webs de pymes con aviso de renovaciones.
+- Vigilancia de caducidades para agencias que administran dominios ajenos.
 
 **Precio orientativo:** 40–90 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

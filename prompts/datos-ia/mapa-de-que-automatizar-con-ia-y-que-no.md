@@ -1,4 +1,4 @@
-# Mapa de qué automatizar con IA y qué no…
+# Mapa de qué automatizar con IA y qué no
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que analiza tu semana de trabajo y decide qué tareas pasan a IA. Entran 
 
 Te evita perder semanas automatizando lo que no toca y libera horas que puedes dedicar a trabajo facturable.
 
-- Consultoría de automatización con IA para pequeños negocios…
-- Auditoría de tareas repetitivas con plan de ahorro de horas…
-- Hoja de ruta de adopción de IA para autónomos…
+- Consultoría de automatización con IA para pequeños negocios.
+- Auditoría de tareas repetitivas con plan de ahorro de horas.
+- Hoja de ruta de adopción de IA para autónomos.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

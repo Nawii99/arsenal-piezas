@@ -1,4 +1,4 @@
-# Evaluación de una IA · Prompt operativo…
+# Evaluación de una IA · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 

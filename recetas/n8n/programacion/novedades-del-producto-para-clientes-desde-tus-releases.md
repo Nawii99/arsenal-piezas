@@ -1,4 +1,4 @@
-# Novedades del producto para clientes desde tus releases…
+# Novedades del producto para clientes desde tus releases
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Flujo de n8n que se activa cuando publicas una release en GitHub. Lee sus commit
 
 Comunicar mejoras reduce bajas y justifica la cuota de mantenimiento: media hora ahorrada por versión y clientes que ven que el producto avanza.
 
-- Comunicación de versiones para productos SaaS pequeños…
-- Boletín de novedades para clientes de software a medida…
-- Gestión de changelog y avisos para proyectos entregados a varios clientes…
+- Comunicación de versiones para productos SaaS pequeños.
+- Boletín de novedades para clientes de software a medida.
+- Gestión de changelog y avisos para proyectos entregados a varios clientes.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que escribe la ficha de tienda de una app para 
 
 Aparecer en las búsquedas de la tienda trae descargas que no pagas: es el canal más barato que tiene una app pequeña.
 
-- Redacción de fichas ASO para apps de negocios locales…
-- Optimización de ficha para apps con pocas descargas…
-- Pack de textos de lanzamiento para desarrolladores…
+- Redacción de fichas ASO para apps de negocios locales.
+- Optimización de ficha para apps con pocas descargas.
+- Pack de textos de lanzamiento para desarrolladores.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

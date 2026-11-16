@@ -1,4 +1,4 @@
-# Trabajo hecho y sin facturar: el dinero que se te olvid…
+# Trabajo hecho y sin facturar: el dinero que se te olvid
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando trabajas por horas, por visitas o por hitos y se te acumulan trabajos pen
 
 Recuperar 6-10 horas al mes que se quedaban sin facturar a 45 €/h son 3.000-5.000 € al año que ya habías trabajado.
 
-- Auditoría de trabajo no facturado para agencias y consultoras por horas…
-- Informe semanal de pendientes de facturar para técnicos y servicios…
-- Configuración de partes de trabajo para freelancers que trabajan por bolsas de horas…
+- Auditoría de trabajo no facturado para agencias y consultoras por horas.
+- Informe semanal de pendientes de facturar para técnicos y servicios.
+- Configuración de partes de trabajo para freelancers que trabajan por bolsas de horas.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

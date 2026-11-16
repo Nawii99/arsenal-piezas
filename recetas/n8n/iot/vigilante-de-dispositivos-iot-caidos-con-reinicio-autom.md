@@ -1,4 +1,4 @@
-# Vigilante de dispositivos IoT caídos con reinicio autom…
+# Vigilante de dispositivos IoT caídos con reinicio autom
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

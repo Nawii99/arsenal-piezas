@@ -1,4 +1,4 @@
-# Portero de comentarios: oculta spam y te saca ideas de…
+# Portero de comentarios: oculta spam y te saca ideas de
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando ya recibes suficientes comentarios como para no leerlos todos, o te llega
 
 Media hora diaria de moderación menos y un banco de ideas de contenido que sale gratis del propio público.
 
-- Moderación de comentarios para canales de creadores con filtro de spam y resumen semanal…
-- Gestión de comunidad en YouTube para negocios locales, con informe de preguntas del público…
-- Investigación de temas para creadores a partir de las preguntas reales de su audiencia…
+- Moderación de comentarios para canales de creadores con filtro de spam y resumen semanal.
+- Gestión de comunidad en YouTube para negocios locales, con informe de preguntas del público.
+- Investigación de temas para creadores a partir de las preguntas reales de su audiencia.
 
 **Precio orientativo:** 50–150 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

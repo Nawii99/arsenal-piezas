@@ -1,4 +1,4 @@
-# Copia verificada de tu base de datos con prueba de que…
+# Copia verificada de tu base de datos con prueba de que
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Flujo de n8n que cada noche genera un volcado comprimido de tu PostgreSQL con pg
 
 Perder la base de datos de un negocio es un cierre; y una copia que nadie verifica es tan mala como no tenerla. Coste cero frente a un desastre total.
 
-- Copias de seguridad verificadas para bases de datos de pymes y tiendas…
-- Mantenimiento de datos para proyectos que guardan información de clientes…
-- Plan de recuperación ante desastres para aplicaciones de un solo servidor…
+- Copias de seguridad verificadas para bases de datos de pymes y tiendas.
+- Mantenimiento de datos para proyectos que guardan información de clientes.
+- Plan de recuperación ante desastres para aplicaciones de un solo servidor.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

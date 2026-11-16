@@ -1,4 +1,4 @@
-# Subtítulos automáticos en SRT para cada vídeo nuevo…
+# Subtítulos automáticos en SRT para cada vídeo nuevo
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando publicas vídeo en redes o YouTube y pagas o pierdes horas subtitulando, 
 
 Subtitular 10 minutos a mano son 40-60 minutos o 15-25 € a un freelance. Aquí cuesta unos 0,06 € y 2 minutos sin que estés delante.
 
-- Subtitulado de vídeos para empresas y formadores con tarifa por minuto de vídeo…
-- Transcripciones de entrevistas y reuniones grabadas en vídeo para consultoras…
-- Paquete mensual de subtítulos y textos para redes de un creador o pyme…
+- Subtitulado de vídeos para empresas y formadores con tarifa por minuto de vídeo.
+- Transcripciones de entrevistas y reuniones grabadas en vídeo para consultoras.
+- Paquete mensual de subtítulos y textos para redes de un creador o pyme.
 
 **Precio orientativo:** 5–25 € por vídeo. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

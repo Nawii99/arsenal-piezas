@@ -1,4 +1,4 @@
-# Copia de seguridad del contenido de WordPress a Google…
+# Copia de seguridad del contenido de WordPress a Google
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

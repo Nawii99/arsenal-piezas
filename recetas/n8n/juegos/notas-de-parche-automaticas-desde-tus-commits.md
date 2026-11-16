@@ -1,4 +1,4 @@
-# Notas de parche automáticas desde tus commits…
+# Notas de parche automáticas desde tus commits
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Publicar el mismo vertical en TikTok, Reels y Shorts…
+# Publicar el mismo vertical en TikTok, Reels y Shorts
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

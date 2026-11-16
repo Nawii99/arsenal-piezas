@@ -1,4 +1,4 @@
-# Mockups automáticos de cada diseño que subes a Drive…
+# Mockups automáticos de cada diseño que subes a Drive
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

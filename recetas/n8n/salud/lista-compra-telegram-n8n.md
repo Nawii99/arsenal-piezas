@@ -1,4 +1,4 @@
-# Lista de la compra semanal por Telegram…
+# Lista de la compra semanal por Telegram
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

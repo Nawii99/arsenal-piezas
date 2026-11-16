@@ -1,4 +1,4 @@
-# Rastreador de convocatorias y ayudas a la formación…
+# Rastreador de convocatorias y ayudas a la formación
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

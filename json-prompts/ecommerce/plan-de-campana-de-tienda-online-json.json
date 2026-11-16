@@ -1,0 +1,102 @@
+{
+  "tarea": "Generar el plan de UNA campaña concreta de una tienda online pequeña en España: objetivo, oferta, piezas, calendario inverso y comprobaciones legales de precio, sin publicar nada.",
+  "idioma_salida": "es-ES",
+  "contexto": {
+    "tienda": "[TIENDA Y QUÉ VENDE]",
+    "campana": "[REBAJAS DE INVIERNO / BLACK FRIDAY / NAVIDAD / DÍA DE LA MADRE / OTRA]",
+    "fecha_de_salida": "[FECHA EXACTA]",
+    "fecha_de_cierre": "[FECHA Y HORA EXACTAS]",
+    "norma_comprobada_el": "2026-11-15",
+    "fuentes_oficiales": [
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1072",
+      "https://www.boe.es/buscar/act.php?id=BOE-A-1991-628"
+    ]
+  },
+  "datos_de_entrada": {
+    "objetivo_de_negocio": "[VENDER STOCK / CAPTAR CLIENTES NUEVOS / RECOMPRA / OTRO]",
+    "productos_en_oferta": "[LISTA CON PRECIO ACTUAL, MENOR PRECIO DE LOS 30 DÍAS ANTERIORES Y MARGEN MÍNIMO]",
+    "stock_por_producto": "[UNIDADES REALES]",
+    "presupuesto": "[PRESUPUESTO EN EUROS, O «NINGUNO»]",
+    "canales_con_permiso": "[EMAIL CON CONSENTIMIENTO, REDES, ANUNCIOS, TIENDA]",
+    "plazos_internos": "[DÍAS QUE TARDAS EN TEXTOS, FOTOS Y PRUEBAS]",
+    "limites": "[QUÉ NO ESTÁS DISPUESTO A HACER]"
+  },
+  "pasos": [
+    "Si falta un dato imprescindible (fecha, stock, menor precio de 30 días), haz como máximo tres preguntas antes de continuar.",
+    "Fija un objetivo medible con un solo número elegido por la persona; no propongas cifras de ventas.",
+    "Propón tres ofertas distintas (por ejemplo, descuento, pack, regalo), cada una con una línea de pros y contras y el cálculo del margen restante con los datos dados; recomienda una y justifica por qué.",
+    "Lista las piezas necesarias: página de campaña, ficha de producto, correo, anuncios, redes, atención al cliente; marca cuáles dependen de consentimiento.",
+    "Construye el calendario hacia atrás desde la fecha de salida con los plazos internos, incluido un día de pruebas y un balance posterior.",
+    "Para cada producto con precio rebajado, calcula si el precio anterior que se va a mostrar coincide con el menor precio de los últimos 30 días dado y marca los que no.",
+    "Redacta la lista de comprobaciones antes de publicar y la lista de cosas que decide una persona."
+  ],
+  "reglas": [
+    "Usa solo los datos de entrada. No inventes cifras, fechas ni descuentos.",
+    "No afirmes plazos legales de memoria: apóyate en el art. 20 de la Ley 7/1996 (precio anterior = el menor de los treinta días precedentes) y en el art. 23.4 de la Ley 3/1991 (plazo limitado falso). Para todo lo demás escribe «comprueba la norma vigente».",
+    "Nada de urgencia falsa, contadores falsos ni «últimas unidades» sin stock real.",
+    "Mensajes por correo, SMS o WhatsApp solo a quien haya dado su consentimiento, con baja fácil.",
+    "No publiques, no envíes y no cambies precios: todo es propuesta pendiente de visto bueno.",
+    "Español de España, tuteo, frases cortas.",
+    "Esto no es asesoramiento legal."
+  ],
+  "formato_de_salida": {
+    "formato": "un único objeto JSON, sin texto alrededor",
+    "esquema": {
+      "resumen": "string",
+      "objetivo": {
+        "descripcion": "string",
+        "indicador_que_elige_la_persona": "string"
+      },
+      "ofertas_comparadas": [
+        {
+          "nombre": "string",
+          "pros_y_contras": "string",
+          "margen_restante": "string"
+        }
+      ],
+      "oferta_recomendada": {
+        "nombre": "string",
+        "motivo": "string"
+      },
+      "piezas": [
+        {
+          "pieza": "string",
+          "canal": "string",
+          "necesita_consentimiento": "boolean",
+          "responsable": "string"
+        }
+      ],
+      "calendario": [
+        {
+          "fecha": "string",
+          "tarea": "string"
+        }
+      ],
+      "revision_de_precios": [
+        {
+          "producto": "string",
+          "precio_anterior_que_se_mostrara": "string",
+          "menor_precio_30_dias": "string",
+          "coincide": "sí | no | dato pendiente"
+        }
+      ],
+      "comprobaciones_antes_de_publicar": [
+        "string"
+      ],
+      "decisiones_humanas": [
+        "string"
+      ],
+      "datos_pendientes": [
+        "string"
+      ]
+    }
+  },
+  "comprobaciones": [
+    "Cada producto con precio tachado tiene su menor precio de 30 días anotado y comparado.",
+    "La fecha de cierre es real y hay plan para retirar o cambiar el anuncio al terminar.",
+    "No hay cifras inventadas ni promesas de resultados.",
+    "Cada pieza por correo, SMS o WhatsApp indica el consentimiento necesario.",
+    "El calendario cuenta hacia atrás y termina con una revisión después de la campaña."
+  ],
+  "limites": "No es asesoramiento legal. Fuentes oficiales abiertas el 2026-11-15; si ha pasado tiempo, vuelve a leerlas. Casos no cubiertos (cupones, packs, suscripciones): comprueba la norma vigente."
+}

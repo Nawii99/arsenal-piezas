@@ -1,4 +1,4 @@
-# Cazador de testimonios en vídeo de tus clientes…
+# Cazador de testimonios en vídeo de tus clientes
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando sabes que los testimonios en vídeo venden más que cualquier anuncio y l
 
 Un testimonio en vídeo grabado por un actor cuesta 150-400 €. Este sistema consigue reales gratis y sin que tú lo pidas cada vez.
 
-- Captación de testimonios en vídeo para negocios de servicios con entrega mensual…
-- Gestión de reseñas en vídeo para tiendas online con autorización de uso firmada…
-- Configuración de un sistema de testimonios para formadores y consultoras…
+- Captación de testimonios en vídeo para negocios de servicios con entrega mensual.
+- Gestión de reseñas en vídeo para tiendas online con autorización de uso firmada.
+- Configuración de un sistema de testimonios para formadores y consultoras.
 
 **Precio orientativo:** 80–200 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Detector de copias piratas de tus assets 3D…
+# Detector de copias piratas de tus assets 3D
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

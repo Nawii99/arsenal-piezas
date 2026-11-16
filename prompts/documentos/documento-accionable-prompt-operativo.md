@@ -1,4 +1,4 @@
-# Documento accionable · Prompt operativo…
+# Documento accionable · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Documentos · **Licencia:** CC BY 4.0
 

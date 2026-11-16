@@ -1,4 +1,4 @@
-# Despliegue al servidor al hacer push a main…
+# Despliegue al servidor al hacer push a main
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando despliegues entrando por SSH a mano y arrastrando comandos, y ya hayas ro
 
 Ahorra 10-15 minutos por despliegue y evita las caídas por despliegue manual. Sustituye planes de PaaS de 20 €/mes por un VPS de 5 €.
 
-- Despliegue automatizado para webs de clientes en VPS propio…
-- Configuración de integración continua para proyectos pequeños sin PaaS…
-- Revisión de procesos de despliegue como consultoría para equipos con incidencias…
+- Despliegue automatizado para webs de clientes en VPS propio.
+- Configuración de integración continua para proyectos pequeños sin PaaS.
+- Revisión de procesos de despliegue como consultoría para equipos con incidencias.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

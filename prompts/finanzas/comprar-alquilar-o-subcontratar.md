@@ -1,4 +1,4 @@
-# Comprar, alquilar o subcontratar…
+# Comprar, alquilar o subcontratar
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como asesor de inversión para negocios pequeños. Recibe prec
 
 Evita inmovilizar dinero en compras que tardan años en amortizarse y te dice cuál de las tres opciones deja más caja al final del año.
 
-- Estudio comprar, alquilar o subcontratar para autónomos…
-- Informe de amortización de equipo o vehículo para pymes…
-- Segunda opinión antes de una inversión en maquinaria o software…
+- Estudio comprar, alquilar o subcontratar para autónomos.
+- Informe de amortización de equipo o vehículo para pymes.
+- Segunda opinión antes de una inversión en maquinaria o software.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

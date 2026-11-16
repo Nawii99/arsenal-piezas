@@ -1,4 +1,4 @@
-# Resumen diario de errores del servidor…
+# Resumen diario de errores del servidor
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cada mañana lee los errores de las últimas 24 horas de tu servicio con journal
 
 Evita horas de búsqueda a ciegas cuando algo falla y sustituye un plan de agregación de logs de 25-99 € al mes para proyectos pequeños.
 
-- Resumen de errores para apps de clientes con informe diario por correo…
-- Vigilancia de logs para pymes sin equipo técnico, con priorización de incidencias…
-- Configuración de monitorización ligera para tiendas a medida…
+- Resumen de errores para apps de clientes con informe diario por correo.
+- Vigilancia de logs para pymes sin equipo técnico, con priorización de incidencias.
+- Configuración de monitorización ligera para tiendas a medida.
 
 **Precio orientativo:** 60–150 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

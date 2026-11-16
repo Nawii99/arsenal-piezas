@@ -1,4 +1,4 @@
-# Música de fondo con IA para un vídeo…
+# Música de fondo con IA para un vídeo
 
 **Tipo:** Prompt · **Área:** Música y audio · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando necesitas música de fondo para un vídeo (redes, presentación, anuncio)
 
 Incluye música de fondo generada con IA en tu servicio de vídeos para clientes, sin coste de licencia por cada entrega.
 
-- Música de fondo a medida para vídeos de redes de pequeños negocios…
-- Bandas sonoras de presentación para formación online y cursos…
-- Pistas instrumentales para vídeos corporativos y de producto…
+- Música de fondo a medida para vídeos de redes de pequeños negocios.
+- Bandas sonoras de presentación para formación online y cursos.
+- Pistas instrumentales para vídeos corporativos y de producto.
 
 **Precio orientativo:** 20–50 € por pista. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

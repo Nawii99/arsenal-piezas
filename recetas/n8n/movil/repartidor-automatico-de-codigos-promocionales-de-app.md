@@ -1,4 +1,4 @@
-# Repartidor automático de códigos promocionales de app…
+# Repartidor automático de códigos promocionales de app
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

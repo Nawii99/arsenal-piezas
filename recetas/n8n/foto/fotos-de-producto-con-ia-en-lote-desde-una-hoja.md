@@ -1,4 +1,4 @@
-# Fotos de producto con IA en lote desde una hoja…
+# Fotos de producto con IA en lote desde una hoja
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Fichaje de entrada y salida con llavero NFC…
+# Fichaje de entrada y salida con llavero NFC
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -40,27 +40,35 @@ Un lector NFC barato pegado a la pared manda el código del llavero a n8n, que a
 - **Gmail** conectado en n8n.
 
 ## Los nodos, en orden
-1. **Webhook** — método **POST**, path `fichaje`. En *Authentication* elige *Header Auth* y crea una credencial con nombre `X-Token` y un valor secreto largo que tú inventes; así nadie más puede colar fichajes.
+1. **Webhook** — método **POST**, path `fichaje`. En *Authentication* elige *Header Auth* y crea una credencial con nombre `X-Token` y un valor secreto largo que tú inventes; así nadie más puede colar fichajes. Deja el nodo con su nombre «Webhook» (el código lo cita) y, en *Respond*, elige responder con el nodo *Respond to Webhook*, porque la respuesta al lector la da el paso 7 (o la del rebote).
 2. En el ESP32 con ESPHome, en el `binary_sensor` del lector, añade una acción `http_request.post` a la URL del webhook con el cuerpo `{"uid": "UID_LEIDO"}` y la cabecera `X-Token`. El asistente de ESPHome te genera casi todo; el bloque de tag es `on_tag: then: - http_request.post:`.
-3. **Google Sheets** — *Get Row(s)* de la pestaña `Empleados`, filtro `uid` = `{{ $json.body.uid }}`. Devuelve el nombre.
-4. **Google Sheets** — *Get Row(s)* de `Fichajes`, filtro `uid` = el mismo y `fecha` = hoy. Sirve para saber si esta persona ya ha entrado.
-5. **Code** — decide si es entrada o salida:
+3. **Google Sheets** — *Get Row(s)* de la pestaña `Empleados`, filtro `uid` = `{{ $json.body.uid }}`. Llama al nodo exactamente «Empleados» (el código lo cita) y en sus ajustes activa que siempre devuelva datos aunque no encuentre el uid, para que un uid desconocido llegue al Code y salga como DESCONOCIDO. Devuelve el nombre.
+4. **Google Sheets** — *Get Row(s)* de `Fichajes`, filtro `uid` = el mismo y `fecha` = hoy. Llama al nodo exactamente «Fichajes hoy» (el código lo cita); el uid se toma con `{{ $('Webhook').first().json.body.uid }}`, la fecha es la de hoy en formato es-ES (día/mes/año) calculada con la hora de Europe/Madrid, y en los ajustes del nodo activa que siempre devuelva datos y que se ejecute una sola vez. Sirve para saber si esta persona ya ha entrado.
+5. **Code** (modo *Run Once for All Items*), llámalo «Decidir entrada o salida» — decide si es entrada o salida o si es un rebote:
 ```js
+// Antirrebote: si el mismo llavero ya fichó hace menos de REBOTE_SEGUNDOS, no se apunta (pero se responde al lector)
+const REBOTE_SEGUNDOS = 60;
 const uid = $('Webhook').first().json.body.uid;
 const emp = $('Empleados').all()[0];
-const nombre = emp ? emp.json.nombre : 'DESCONOCIDO ' + uid;
+const nombre = emp && emp.json.nombre ? emp.json.nombre : 'DESCONOCIDO ' + uid;
 const previos = $('Fichajes hoy').all().map(i => i.json).filter(f => f.uid === uid);
 const tipo = previos.length % 2 === 0 ? 'ENTRADA' : 'SALIDA';
 const d = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Madrid' }));
 const st = $getWorkflowStaticData('global');
-const clave = uid + '_' + d.getHours() + '_' + d.getMinutes();
-if (st[clave]) return []; // el mismo llavero dos veces en el mismo minuto = rebote
-st[clave] = true;
-return [{ json: { fecha: d.toLocaleDateString('es-ES'), hora: d.toLocaleTimeString('es-ES'), uid, nombre, tipo } }];
+st.ultimo = st.ultimo || {};
+const ahora = Date.now();
+const antes = st.ultimo[uid];
+if (antes && ahora - antes < REBOTE_SEGUNDOS * 1000) {
+  return [{ json: { rebote: true, uid, nombre, segundos: Math.round((ahora - antes) / 1000) } }];
+}
+st.ultimo[uid] = ahora;
+// limpia llaveros que llevan más de un día sin fichar para que la memoria no crezca
+for (const [k, t] of Object.entries(st.ultimo)) if (ahora - t > 86400000) delete st.ultimo[k];
+return [{ json: { rebote: false, fecha: d.toLocaleDateString('es-ES'), hora: d.toLocaleTimeString('es-ES'), uid, nombre, tipo } }];
 ```
-6. **Google Sheets** — *Append Row* en `Fichajes`.
-7. **Respond to Webhook** — devuelve `{{ $json.nombre }}: {{ $json.tipo }}`, para que si pones una pantallita o un zumbador el empleado tenga confirmación.
-8. Segundo workflow: **Schedule Trigger** *Cron* `0 18 * * 5` (viernes a las 18:00), **Google Sheets** *Get Row(s)* de toda la semana, un **Code** que sume por persona (entradas y salidas emparejadas) y un **Gmail** con la tabla.
+6. **IF** llamado «¿Rebote?», con la condición booleana `{{ $json.rebote }}` verdadera. La salida *true* va a un **Respond to Webhook** llamado «Responder rebote», con respuesta de texto `{{ $json.nombre }}: ya fichado hace {{ $json.segundos }} s (no se apunta otra vez)`, y ahí termina. La salida *false* va a **Google Sheets** — *Append Row* en `Fichajes`, llamado «Apuntar fichaje», con las columnas fecha, hora, uid, nombre y tipo tomadas de `{{ $json.campo }}`.
+7. **Respond to Webhook** (llámalo «Responder al lector», conectado tras «Apuntar fichaje», con respuesta de texto) — devuelve `{{ $json.nombre }}: {{ $json.tipo }}`, para que si pones una pantallita o un zumbador el empleado tenga confirmación.
+8. Segundo workflow: **Schedule Trigger** *Cron* `0 18 * * 5` (viernes a las 18:00), **Google Sheets** *Get Row(s)* de la pestaña `Fichajes` entera, sin filtro y con la opción de devolver siempre datos (el Code siguiente se queda con los últimos 7 días), un **Code** que sume por persona (entradas y salidas emparejadas) y un **Gmail** (operación Send Message, tipo de correo HTML, asunto `{{ $json.asunto }}` y mensaje `{{ $json.html }}`) con la tabla.
 
 ## Cómo probarla
 - Manda una petición de prueba desde el propio n8n o con el navegador (en modo test) con un uid inventado: debe salir `DESCONOCIDO`.
@@ -76,3 +84,40 @@ return [{ json: { fecha: d.toLocaleDateString('es-ES'), hora: d.toLocaleTimeStri
 
 ## Cuánto cuesta
 ESP32 + RC522 + llaveros: 15-25 € una vez. ESPHome, Google Sheets, Gmail y n8n auto-alojado: **0 €/mes**, frente a los 3-5 € por empleado y mes de las apps comerciales.
+
+CÓDIGO DE LOS NODOS (el mismo que lleva el flujo importable)
+
+Nodo Code «Sumar horas por persona»:
+```js
+// Suma las horas de la última semana por persona, emparejando ENTRADA con SALIDA
+const filas = $input.all().map(i => i.json).filter(f => f.uid && f.fecha && f.hora);
+const hoy = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Madrid' }));
+const desde = new Date(hoy.getFullYear(), hoy.getMonth(), hoy.getDate() - 6).getTime();
+const ts = f => {
+  const [d, m, y] = String(f.fecha).split('/').map(Number);
+  const [H, M, S] = String(f.hora).split(':').map(Number);
+  return new Date(y, m - 1, d, H || 0, M || 0, S || 0).getTime();
+};
+const semana = filas.map(f => ({ ...f, t: ts(f) })).filter(f => !isNaN(f.t) && f.t >= desde).sort((a, b) => a.t - b.t);
+const personas = {};
+for (const f of semana) {
+  const p = personas[f.uid] ||= { nombre: f.nombre, ms: 0, abierta: null, impar: false, fichajes: 0 };
+  p.fichajes++;
+  if (f.tipo === 'ENTRADA') {
+    if (p.abierta !== null) p.impar = true; // dos entradas seguidas
+    p.abierta = f.t;
+  } else if (f.tipo === 'SALIDA') {
+    if (p.abierta === null) p.impar = true; // salida sin entrada
+    else { p.ms += f.t - p.abierta; p.abierta = null; }
+  }
+}
+const hm = ms => Math.floor(ms / 3600000) + ' h ' + String(Math.round((ms % 3600000) / 60000)).padStart(2, '0') + ' min';
+let html = '<p>Resumen de fichajes de los últimos 7 días.</p><table border="1" cellpadding="6" cellspacing="0"><tr><th>Persona</th><th>Fichajes</th><th>Horas</th><th>Revisar</th></tr>';
+for (const p of Object.values(personas)) {
+  if (p.abierta !== null) p.impar = true; // quedó una entrada sin salida
+  html += '<tr><td>' + p.nombre + '</td><td>' + p.fichajes + '</td><td>' + hm(p.ms) + '</td><td>' + (p.impar ? 'FICHAJE IMPAR: revisar a mano' : '') + '</td></tr>';
+}
+html += '</table>';
+if (!Object.keys(personas).length) html = '<p>No hay fichajes en los últimos 7 días.</p>';
+return [{ json: { asunto: 'Resumen semanal de fichajes', html } }];
+```

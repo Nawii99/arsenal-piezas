@@ -1,4 +1,4 @@
-# Rentabilidad cliente por cliente…
+# Rentabilidad cliente por cliente
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como asesor de rentabilidad para autónomos y analiza tu carte
 
 Detectar los clientes que dan pérdidas y reordenarlos sube el margen medio sin vender más ni trabajar más horas.
 
-- Análisis de rentabilidad por cliente para autónomos y agencias…
-- Revisión de tarifas antes de renovar contratos con clientes…
-- Informe de clientes que dan pérdidas con plan de subida de precios…
+- Análisis de rentabilidad por cliente para autónomos y agencias.
+- Revisión de tarifas antes de renovar contratos con clientes.
+- Informe de clientes que dan pérdidas con plan de subida de precios.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Convierte tus vídeos en podcast sin tocar nada…
+# Convierte tus vídeos en podcast sin tocar nada
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando ya grabas vídeo largo o entrevistas y estás dejando escapar toda la aud
 
 Un canal de audio nuevo con cero horas extra de producción. Externalizar esta conversión y publicación cuesta 30-60 € al mes.
 
-- Publicación de podcast a partir de vídeos de empresas o formadores, con feed gestionado…
-- Conversión de entrevistas en vídeo a podcast para creadores…
-- Mantenimiento mensual del feed para negocios con presencia en audio…
+- Publicación de podcast a partir de vídeos de empresas o formadores, con feed gestionado.
+- Conversión de entrevistas en vídeo a podcast para creadores.
+- Mantenimiento mensual del feed para negocios con presencia en audio.
 
 **Precio orientativo:** 50–150 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

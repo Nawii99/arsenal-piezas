@@ -1,4 +1,4 @@
-# Preparar un asset 3D para venderlo en marketplaces…
+# Preparar un asset 3D para venderlo en marketplaces
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que combina el papel de vendedor veterano de as
 
 Un mismo modelo bien empaquetado se vende muchas veces sin trabajo extra; una ficha bien hecha y las miniaturas correctas son la diferencia entre vender y no vender.
 
-- Empaquetado y publicación de assets 3D en CGTrader, Sketchfab o Fab…
-- Redacción de fichas de producto y miniaturas para modeladores…
-- Revisión de calidad previa a subida para artistas que venden modelos…
+- Empaquetado y publicación de assets 3D en CGTrader, Sketchfab o Fab.
+- Redacción de fichas de producto y miniaturas para modeladores.
+- Revisión de calidad previa a subida para artistas que venden modelos.
 
 **Precio orientativo:** 30–120 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

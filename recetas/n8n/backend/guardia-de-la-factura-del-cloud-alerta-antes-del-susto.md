@@ -1,4 +1,4 @@
-# Guardia de la factura del cloud: alerta antes del susto…
+# Guardia de la factura del cloud: alerta antes del susto
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

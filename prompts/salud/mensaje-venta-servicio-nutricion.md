@@ -1,4 +1,4 @@
-# Mensaje de venta del servicio de nutrición por WhatsApp o In…
+# Mensaje de venta del servicio de nutrición por WhatsApp o In
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

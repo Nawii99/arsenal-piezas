@@ -1,4 +1,4 @@
-# textos-legales-y-cookies-rgpd…
+# textos-legales-y-cookies-rgpd
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como consultor de cumplimiento digit
 
 Evita sustos con sanciones y desbloquea poder anunciarte: muchas plataformas de anuncios rechazan webs sin política de privacidad ni aviso de cookies.
 
-- Textos legales y banner de cookies para webs de autónomos…
-- Revisión de cumplimiento básico de webs pequeñas…
-- Paquete legal para tiendas online pequeñas…
+- Textos legales y banner de cookies para webs de autónomos.
+- Revisión de cumplimiento básico de webs pequeñas.
+- Paquete legal para tiendas online pequeñas.
 
 **Precio orientativo:** 60–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

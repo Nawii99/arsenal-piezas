@@ -1,4 +1,4 @@
-# Pedido de prueba de punta a punta…
+# Pedido de prueba de punta a punta
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que genera un guion para hacerte un pedido de prueba y seguir toda la cad
 
 Detecta el pedido que se cobra pero no avisa a nadie, o el IVA mal aplicado, antes de que te cueste devoluciones, reclamaciones y reseñas de una estrella.
 
-- Prueba de punta a punta antes del lanzamiento de tiendas online…
-- Revisión de flujo de pedidos tras cambiar pasarela o plantillas…
-- Informe de verificación de ventas y reembolsos para tiendas de clientes…
+- Prueba de punta a punta antes del lanzamiento de tiendas online.
+- Revisión de flujo de pedidos tras cambiar pasarela o plantillas.
+- Informe de verificación de ventas y reembolsos para tiendas de clientes.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

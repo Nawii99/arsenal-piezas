@@ -1,4 +1,4 @@
-# Filtro inteligente de errores de la app para no ahogart…
+# Filtro inteligente de errores de la app para no ahogart
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Receta de n8n que recibe los errores de tu app desde Sentry, comprueba si ya los
 
 Evita que un fallo de checkout viva días sin que nadie lo vea. Y devuelve la utilidad a un canal de alertas que ya habías silenciado.
 
-- Alertas filtradas para una app de reservas con pagos…
-- Vigilancia de errores para una tienda con app móvil propia…
-- Guardia técnica de bajo coste para apps de pequeñas empresas…
+- Alertas filtradas para una app de reservas con pagos.
+- Vigilancia de errores para una tienda con app móvil propia.
+- Guardia técnica de bajo coste para apps de pequeñas empresas.
 
 **Precio orientativo:** 200–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

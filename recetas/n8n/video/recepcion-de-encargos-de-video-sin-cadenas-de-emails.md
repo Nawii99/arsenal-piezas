@@ -1,4 +1,4 @@
-# Recepción de encargos de vídeo sin cadenas de emails…
+# Recepción de encargos de vídeo sin cadenas de emails
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando eres videógrafo o editor y cada encargo empieza con diez correos pregunt
 
 Quita 30-40 minutos de gestión por encargo y evita el retraso típico de esperar material. Con 10 encargos al mes son 6 horas.
 
-- Gestión de encargos de vídeo para freelances, con carpeta y brief creados al instante…
-- Sistema de recepción de proyectos para productoras que reciben muchas peticiones…
-- Configuración de recepción de encargos para estudios de edición…
+- Gestión de encargos de vídeo para freelances, con carpeta y brief creados al instante.
+- Sistema de recepción de proyectos para productoras que reciben muchas peticiones.
+- Configuración de recepción de encargos para estudios de edición.
 
 **Precio orientativo:** 150–350 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

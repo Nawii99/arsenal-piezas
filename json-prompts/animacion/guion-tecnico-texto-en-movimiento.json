@@ -1,0 +1,71 @@
+{
+ "tarea": "Generar el guion técnico de una pieza corta de texto en movimiento: lista de frases con su entrada, su salida, su duración y su posición, más el tiempo total, para pasarlo a quien lo anima en un editor.",
+ "idioma_salida": "es-ES",
+ "contexto": "El guion es para una pieza vertical corta de texto animado (reel, story o anuncio). El texto debe poder leerse con calma y la pieza debe entenderse sin sonido. Las medidas, la duración máxima y las zonas seguras dependen de cada red y cambian: no las inventes.",
+ "datos_de_entrada": {
+  "mensaje_principal": "[LA IDEA QUE QUIERES TRANSMITIR, EN UNA FRASE]",
+  "acción_final": "[QUÉ DEBE HACER QUIEN LO VE: SEGUIR, ESCRIBIR, RESERVAR…]",
+  "red_y_posición": "[REEL, STORY, ANUNCIO EN FEED, SHORTS, TIKTOK…]",
+  "duración_objetivo_en_segundos": "[NÚMERO, O «LA QUE TE PAREZCA»]",
+  "duración_máxima_según_la_red": "[LO QUE PONGA LA AYUDA OFICIAL, O «NO LO SÉ»]",
+  "zonas_seguras_según_la_red": "[LO QUE PONGA LA AYUDA OFICIAL, O «NO LO SÉ»]",
+  "tono": "[CERCANO, SERIO, DIVERTIDO…]",
+  "tipografía_y_colores": "[LOS DE LA MARCA, O «NINGUNO»]",
+  "textos_obligatorios": "[NOMBRE, PRECIO, FECHA… QUE DEBEN SALIR TAL CUAL]",
+  "herramienta_de_animación": "[CAPCUT, AFTER EFFECTS, CANVA, OTRA, O «NO LO SÉ»]"
+ },
+ "pasos": [
+  "Si falta el mensaje principal o la acción final, haz como máximo tres preguntas y espera.",
+  "Escribe entre 3 y 6 frases de pantalla. La primera es el gancho. La última lleva la acción final.",
+  "Para cada frase decide la entrada, la salida y el tiempo en pantalla. El tiempo debe permitir leerla en voz alta sin prisa.",
+  "Asigna una posición dentro de las zonas seguras indicadas. Si no las tengo, deja la posición como «zona central, lejos de los bordes» y avisa en «avisos».",
+  "Suma los tiempos. Si pasan de la duración máxima de la red o de la duración objetivo, recorta palabras antes de acelerar.",
+  "Escribe una versión sin movimiento de cada frase por si la persona pide reducir animaciones o la herramienta no soporta el efecto."
+ ],
+ "reglas": [
+  "Una sola idea por frase y un elemento protagonista por momento.",
+  "Entradas y salidas sobrias: aparición con fundido o desplazamiento corto, salida más rápida que la entrada. Nada de parpadeos ni destellos.",
+  "Usa solo nombres de efectos genéricos (fundido, desplazamiento, escala). No cites menús ni funciones de un programa concreto si no los conoces con seguridad.",
+  "Respeta los textos obligatorios tal cual, sin cambiar cifras ni fechas.",
+  "No inventes medidas, duraciones máximas ni zonas seguras: si el dato es «no lo sé», dilo y manda comprobarlo en la ayuda oficial de la red.",
+  "Español de España, tuteo, frases cortas, sin promesas de resultados."
+ ],
+ "formato_de_salida": {
+  "formato": "un único objeto JSON, sin texto alrededor",
+  "esquema": {
+   "resumen": "string",
+   "duración_total_segundos": "number",
+   "frases": [
+    {
+     "orden": "number",
+     "texto": "string",
+     "inicio_s": "number",
+     "fin_s": "number",
+     "entrada": "string",
+     "salida": "string",
+     "posición": "string",
+     "énfasis": "string o null",
+     "versión_sin_movimiento": "string"
+    }
+   ],
+   "banda_sonora_sugerida": "string o null",
+   "avisos": [
+    "string"
+   ],
+   "que_comprobar_en_la_ayuda_oficial": [
+    "Duración máxima",
+    "Medidas",
+    "Zonas seguras de la posición elegida"
+   ]
+  }
+ },
+ "comprobaciones": [
+  "La duración total coincide con la suma de los tiempos y no supera la máxima indicada.",
+  "Cada frase tiene tiempo suficiente para leerse en voz alta.",
+  "El mensaje se entiende sin sonido.",
+  "La última frase lleva la acción final.",
+  "No hay destellos ni parpadeos rápidos.",
+  "Los textos obligatorios aparecen sin cambios."
+ ],
+ "limites": "Es un guion, no una pieza terminada. Revisa el resultado en un móvil real antes de publicar."
+}

@@ -1,4 +1,4 @@
-# Tu propia API en 20 minutos: endpoints sin escribir un…
+# Tu propia API en 20 minutos: endpoints sin escribir un
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

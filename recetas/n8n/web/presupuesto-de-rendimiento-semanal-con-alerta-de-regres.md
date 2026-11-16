@@ -1,4 +1,4 @@
-# Presupuesto de rendimiento semanal con alerta de regres…
+# Presupuesto de rendimiento semanal con alerta de regres
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Leer facturas escaneadas en lote con n8n…
+# Leer facturas escaneadas en lote con n8n
 
 **Tipo:** Receta de automatización · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Portero de despliegue: migraciones y resumen de cambios…
+# Portero de despliegue: migraciones y resumen de cambios
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando despliegas tú solo o con un programador externo y alguna vez has subido 
 
 Evita el despliegue que rompe producción y las dos horas de vuelta atrás. Además te deja el historial de cambios escrito sin esfuerzo.
 
-- Control de migraciones para desarrolladores que despliegan sin equipo de operaciones…
-- Aviso de cambios antes de desplegar para agencias con proyectos Rails o Laravel…
-- Resúmenes de cambios para clientes que reciben entregas de código sin documentación…
+- Control de migraciones para desarrolladores que despliegan sin equipo de operaciones.
+- Aviso de cambios antes de desplegar para agencias con proyectos Rails o Laravel.
+- Resúmenes de cambios para clientes que reciben entregas de código sin documentación.
 
 **Precio orientativo:** 100–300 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

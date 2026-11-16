@@ -1,4 +1,4 @@
-# n8n: captación y entrega automática del servicio de auditorí…
+# n8n: captación y entrega automática del servicio de auditorí
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

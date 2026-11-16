@@ -1,4 +1,4 @@
-# Registro automático de facturas recibidas en Google Sheets…
+# Registro automático de facturas recibidas en Google Sheets
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

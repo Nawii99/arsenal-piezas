@@ -1,4 +1,4 @@
-# Recordatorio diario de entreno y registro en Google Sheets p…
+# Recordatorio diario de entreno y registro en Google Sheets p
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -17,7 +17,7 @@ Flujo de n8n que manda cada día un mensaje de Telegram para entrenar y guarda e
 
 ## Cuándo usarla
 
-salud > entrenamiento > principiantes…
+salud > entrenamiento > principiantes.
 
 ## Cómo ganar dinero con ella
 

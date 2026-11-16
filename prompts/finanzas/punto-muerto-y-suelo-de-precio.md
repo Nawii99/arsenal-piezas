@@ -1,4 +1,4 @@
-# punto-muerto-y-suelo-de-precio…
+# punto-muerto-y-suelo-de-precio
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt para cualquier chat de IA que calcula el punto muerto mensual y el precio
 
 Te da un suelo de precio numérico, así dejas de aceptar encargos que te quitan tiempo y te dejan a cero o en pérdidas.
 
-- Cálculo de tarifas y punto muerto para autónomos…
-- Revisión de precios con informe para pequeños negocios…
+- Cálculo de tarifas y punto muerto para autónomos.
+- Revisión de precios con informe para pequeños negocios.
 
 **Precio orientativo:** 60–180 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

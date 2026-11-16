@@ -1,4 +1,4 @@
-# Control de calidad de fotos de producto antes de subirl…
+# Control de calidad de fotos de producto antes de subirl
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

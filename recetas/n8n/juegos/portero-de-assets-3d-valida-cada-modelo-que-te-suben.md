@@ -1,4 +1,4 @@
-# Portero de assets 3D: valida cada modelo que te suben…
+# Portero de assets 3D: valida cada modelo que te suben
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

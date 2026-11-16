@@ -1,4 +1,4 @@
-# Buzón RGPD que no se te olvida…
+# Buzón RGPD que no se te olvida
 
 **Tipo:** Receta de automatización · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 

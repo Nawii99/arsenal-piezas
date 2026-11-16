@@ -1,4 +1,4 @@
-# Entregas de trabajos: acuse, recordatorio y aviso de re…
+# Entregas de trabajos: acuse, recordatorio y aviso de re
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

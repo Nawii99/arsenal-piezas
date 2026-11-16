@@ -1,4 +1,4 @@
-# Make (make.com): borrador de respuesta en Gmail con IA para…
+# Make (make.com): borrador de respuesta en Gmail con IA para
 
 **Tipo:** Receta de automatización · **Área:** Negocio · **Licencia:** CC BY 4.0
 

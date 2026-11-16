@@ -1,4 +1,4 @@
-# Capítulos y descripción SEO automáticos en YouTube…
+# Capítulos y descripción SEO automáticos en YouTube
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

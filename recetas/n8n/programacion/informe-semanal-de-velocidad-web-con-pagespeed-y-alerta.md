@@ -1,4 +1,4 @@
-# Informe semanal de velocidad web con PageSpeed y alerta…
+# Informe semanal de velocidad web con PageSpeed y alerta
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tienes webs o tiendas donde la velocidad afecta a las ventas y al SEO, y 
 
 Detecta regresiones de rendimiento antes de que hundan las conversiones. Sustituye herramientas de monitorización de 20-50 €/mes.
 
-- Control de velocidad mensual para tiendas online de clientes…
-- Informe de rendimiento para agencias de SEO con histórico en hoja…
-- Auditoría inicial de velocidad antes de entregar una web nueva…
+- Control de velocidad mensual para tiendas online de clientes.
+- Informe de rendimiento para agencias de SEO con histórico en hoja.
+- Auditoría inicial de velocidad antes de entregar una web nueva.
 
 **Precio orientativo:** 120–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

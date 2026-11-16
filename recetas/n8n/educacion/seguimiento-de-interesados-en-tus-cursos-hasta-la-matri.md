@@ -1,4 +1,4 @@
-# Seguimiento de interesados en tus cursos hasta la matrí…
+# Seguimiento de interesados en tus cursos hasta la matrí
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

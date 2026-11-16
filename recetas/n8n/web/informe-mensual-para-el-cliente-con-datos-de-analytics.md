@@ -1,4 +1,4 @@
-# Informe mensual para el cliente con datos de Analytics…
+# Informe mensual para el cliente con datos de Analytics
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

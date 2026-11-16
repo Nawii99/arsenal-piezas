@@ -1,4 +1,4 @@
-# Recogida automática de testimonios en vídeo de clientes…
+# Recogida automática de testimonios en vídeo de clientes
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

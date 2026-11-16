@@ -1,4 +1,4 @@
-# Corrección automática de examen tipo test…
+# Corrección automática de examen tipo test
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

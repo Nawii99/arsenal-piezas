@@ -1,4 +1,4 @@
-# Termómetro por módulo: rescata a los enfadados y pide reseña a todos…
+# Termómetro por módulo: rescata a los enfadados y pide reseña a todos
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

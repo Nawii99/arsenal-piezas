@@ -1,4 +1,4 @@
-# negociar-con-proveedores…
+# negociar-con-proveedores
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

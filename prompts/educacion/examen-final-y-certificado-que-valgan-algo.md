@@ -1,4 +1,4 @@
-# Examen final y certificado que valgan algo…
+# Examen final y certificado que valgan algo
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que diseña la evaluación final de una formaci
 
 Un certificado que exige algo hace que la formación se pueda vender más cara y que los alumnos la enseñen, trayéndote más gente.
 
-- Diseño de exámenes y certificados para academias…
-- Evaluación final por competencias para cursos de empresa…
-- Certificación de aprovechamiento para formadores independientes…
+- Diseño de exámenes y certificados para academias.
+- Evaluación final por competencias para cursos de empresa.
+- Certificación de aprovechamiento para formadores independientes.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

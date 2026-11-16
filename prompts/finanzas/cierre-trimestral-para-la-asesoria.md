@@ -1,4 +1,4 @@
-# Cierre trimestral para la asesoría…
+# Cierre trimestral para la asesoría
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como ayudante ordenado de un autónomo antes del cierre trimes
 
 Recuperar gastos deducibles olvidados y evitar recargos por presentar tarde o mal es dinero que se queda en tu bolsillo.
 
-- Servicio de preparación documental trimestral para autónomos…
-- Organización mensual de facturas y tickets antes de la asesoría…
-- Pack de checklists de cierre para clientes de gestorías…
+- Servicio de preparación documental trimestral para autónomos.
+- Organización mensual de facturas y tickets antes de la asesoría.
+- Pack de checklists de cierre para clientes de gestorías.
 
 **Precio orientativo:** 40–120 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

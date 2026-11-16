@@ -1,4 +1,4 @@
-# Diplomas en PDF automáticos al terminar el curso…
+# Diplomas en PDF automáticos al terminar el curso
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

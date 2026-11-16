@@ -1,4 +1,4 @@
-# Parte de luz y hora dorada para tus sesiones…
+# Parte de luz y hora dorada para tus sesiones
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

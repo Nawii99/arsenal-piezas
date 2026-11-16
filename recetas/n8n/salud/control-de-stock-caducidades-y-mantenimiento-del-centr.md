@@ -1,4 +1,4 @@
-# Control de stock, caducidades y mantenimiento del centr…
+# Control de stock, caducidades y mantenimiento del centr
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

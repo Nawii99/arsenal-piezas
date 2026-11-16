@@ -1,4 +1,4 @@
-# Auditoría de precios, IVA y cálculos…
+# Auditoría de precios, IVA y cálculos
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que audita la coherencia de precios, descuentos, IVA, envíos y redondeos
 
 Un redondeo o un IVA mal aplicado se repite en cada venta: se come margen o te obliga a devolver dinero y rehacer facturas.
 
-- Auditoría de precios e IVA en tiendas online pequeñas…
-- Revisión de cálculos tras promociones o nuevas zonas de envío…
-- Informe de coherencia de importes en checkout y facturas…
+- Auditoría de precios e IVA en tiendas online pequeñas.
+- Revisión de cálculos tras promociones o nuevas zonas de envío.
+- Informe de coherencia de importes en checkout y facturas.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

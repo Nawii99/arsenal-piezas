@@ -1,4 +1,4 @@
-# Respuesta a mensajes de clientes sobre su pedido…
+# Respuesta a mensajes de clientes sobre su pedido
 
 **Tipo:** Prompt · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 

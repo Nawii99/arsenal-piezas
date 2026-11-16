@@ -1,4 +1,4 @@
-# Auditoría de descripciones y enlaces rotos de tu canal…
+# Auditoría de descripciones y enlaces rotos de tu canal
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

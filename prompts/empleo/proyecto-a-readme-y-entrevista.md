@@ -1,4 +1,4 @@
-# Del proyecto al README y a la entrevista…
+# Del proyecto al README y a la entrevista
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

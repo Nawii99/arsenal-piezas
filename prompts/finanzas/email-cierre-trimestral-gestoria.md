@@ -1,4 +1,4 @@
-# Email de cierre trimestral para la gestoría…
+# Email de cierre trimestral para la gestoría
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

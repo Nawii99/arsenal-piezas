@@ -1,4 +1,4 @@
-# Borrado y anonimizado de datos por RGPD con evidencia…
+# Borrado y anonimizado de datos por RGPD con evidencia
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando guardas datos de clientes, presupuestos o currículums y sabes que «hay 
 
 Las sanciones del RGPD empiezan en miles de euros. Y en una inspección o una auditoría de cliente, el registro es lo que te salva.
 
-- Anonimización mensual de datos para pymes con bases de contactos y candidatos…
-- Cumplimiento RGPD con evidencia para agencias que gestionan datos de clientes…
-- Auditoría y limpieza de datos personales para tiendas online antes de una inspección…
+- Anonimización mensual de datos para pymes con bases de contactos y candidatos.
+- Cumplimiento RGPD con evidencia para agencias que gestionan datos de clientes.
+- Auditoría y limpieza de datos personales para tiendas online antes de una inspección.
 
 **Precio orientativo:** 150–400 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

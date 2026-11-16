@@ -1,4 +1,4 @@
-# Panel semanal de ventas y wishlists desde el CSV de Ste…
+# Panel semanal de ventas y wishlists desde el CSV de Ste
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

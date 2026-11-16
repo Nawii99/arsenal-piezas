@@ -1,4 +1,4 @@
-# Alerta de gasto disparado por categoría respecto a tu m…
+# Alerta de gasto disparado por categoría respecto a tu m
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

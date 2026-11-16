@@ -1,4 +1,4 @@
-# Revisar mi CV contra una oferta antes de enviarlo…
+# Revisar mi CV contra una oferta antes de enviarlo
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Vigía de caducidades: SSL, dominio, claves y suscripcio…
+# Vigía de caducidades: SSL, dominio, claves y suscripcio
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

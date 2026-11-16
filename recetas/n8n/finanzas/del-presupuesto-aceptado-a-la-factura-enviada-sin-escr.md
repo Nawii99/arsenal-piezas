@@ -1,4 +1,4 @@
-# Del presupuesto aceptado a la factura enviada, sin escr…
+# Del presupuesto aceptado a la factura enviada, sin escr
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando el cliente acepta un presupuesto desde un formulario, toma el siguiente n
 
 Ahorra 15 minutos por factura y elimina los errores de numeración (que son motivo de sanción). Con 20 facturas al mes son 5 horas, unos 150 € de tu tiempo.
 
-- Emisión automática de facturas para consultores que cierran varios trabajos al mes…
-- Flujo de presupuesto a factura para reformistas y fotógrafos…
-- Configuración de numeración correlativa y plantillas para negocios que empiezan…
+- Emisión automática de facturas para consultores que cierran varios trabajos al mes.
+- Flujo de presupuesto a factura para reformistas y fotógrafos.
+- Configuración de numeración correlativa y plantillas para negocios que empiezan.
 
 **Precio orientativo:** 100–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

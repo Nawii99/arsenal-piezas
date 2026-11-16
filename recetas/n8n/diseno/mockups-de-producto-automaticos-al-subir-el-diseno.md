@@ -1,4 +1,4 @@
-# Mockups de producto automáticos al subir el diseño…
+# Mockups de producto automáticos al subir el diseño
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

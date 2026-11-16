@@ -1,4 +1,4 @@
-# Generar CV y carta adaptados cada vez que guardas una oferta…
+# Generar CV y carta adaptados cada vez que guardas una oferta
 
 **Tipo:** Receta de automatización · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

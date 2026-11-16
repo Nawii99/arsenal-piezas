@@ -1,4 +1,4 @@
-# Automatización n8n: de CV escaneado a fila en Google Sheets…
+# Automatización n8n: de CV escaneado a fila en Google Sheets
 
 **Tipo:** Receta de automatización · **Área:** Datos e IA · **Licencia:** CC BY 4.0
 
@@ -21,11 +21,11 @@ Para quien recibe CVs por email o los va guardando en una carpeta de Drive y qui
 
 ## Cómo ganar dinero con ella
 
-n8n (self-hosted gratis, o n8n Cloud de pago tras la prueba gratuita), Google Drive, Google Sheets, OCR y una API de IA…
+n8n (self-hosted gratis, o n8n Cloud de pago tras la prueba gratuita), Google Drive, Google Sheets, OCR y una API de IA.
 
-- Flujo de captura de CV para agencias de selección que reciben candidatos por email…
-- Montaje de una hoja de candidatos automática para autónomos de RRHH…
-- Mantenimiento mensual del flujo y revisión de errores de OCR para un cliente…
+- Flujo de captura de CV para agencias de selección que reciben candidatos por email.
+- Montaje de una hoja de candidatos automática para autónomos de RRHH.
+- Mantenimiento mensual del flujo y revisión de errores de OCR para un cliente.
 
 **Precio orientativo:** 150–350 € por montaje. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

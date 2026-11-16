@@ -1,4 +1,4 @@
-# Escanear objetos reales con el móvil…
+# Escanear objetos reales con el móvil
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como especialista en fotogrametría y escaneo 3D con móvil. R
 
 Digitalizar productos de otros negocios (tienda, artesano, inmobiliaria) es un servicio que puedes vender sin comprar equipo caro.
 
-- Escaneo 3D de productos con móvil para tiendas online…
-- Digitalización de piezas, fachadas u objetos para clientes…
-- Formación práctica de captura de fotogrametría…
+- Escaneo 3D de productos con móvil para tiendas online.
+- Digitalización de piezas, fachadas u objetos para clientes.
+- Formación práctica de captura de fotogrametría.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

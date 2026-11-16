@@ -1,4 +1,4 @@
-# Cuánto gasta cada máquina: informe eléctrico semanal…
+# Cuánto gasta cada máquina: informe eléctrico semanal
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

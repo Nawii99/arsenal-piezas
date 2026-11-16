@@ -1,4 +1,4 @@
-# Control de calidad antes de que el vídeo se publique so…
+# Control de calidad antes de que el vídeo se publique so
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cada mañana lista tus vídeos programados o privados con fecha cercana y les pa
 
 Un vídeo publicado sin miniatura pierde la mitad de sus clics. Este chequeo cuesta cero y evita el error que más caro sale.
 
-- Revisión técnica de vídeos programados para equipos de contenido de marcas…
-- Checklist de publicación para creadores que delegan la subida en un editor…
-- Auditoría de metadatos para canales con cientos de vídeos…
+- Revisión técnica de vídeos programados para equipos de contenido de marcas.
+- Checklist de publicación para creadores que delegan la subida en un editor.
+- Auditoría de metadatos para canales con cientos de vídeos.
 
 **Precio orientativo:** 30–90 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

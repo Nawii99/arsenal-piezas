@@ -1,4 +1,4 @@
-# Inventario de componentes con QR y lista de compra auto…
+# Inventario de componentes con QR y lista de compra auto
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

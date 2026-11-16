@@ -1,4 +1,4 @@
-# Fichas de venta multi-idioma para tus modelos 3D…
+# Fichas de venta multi-idioma para tus modelos 3D
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

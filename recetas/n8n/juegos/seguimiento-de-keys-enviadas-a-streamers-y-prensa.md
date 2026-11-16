@@ -1,4 +1,4 @@
-# Seguimiento de keys enviadas a streamers y prensa…
+# Seguimiento de keys enviadas a streamers y prensa
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

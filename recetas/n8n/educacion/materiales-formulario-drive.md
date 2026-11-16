@@ -1,4 +1,4 @@
-# Materiales de clase por formulario y a Google Drive…
+# Materiales de clase por formulario y a Google Drive
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Preparas materiales cada semana y te gustaría pedirlos desde el móvil, en el t
 
 Monta el flujo como ayudante de preparación de clases para ti o para una academia pequeña, y cobra la instalación y la formación a [TU PRECIO]. Nada llega al alumnado: el docente revisa cada documento.
 
-- Instalación de un flujo de materiales para una academia pequeña, por instalación…
-- Mantenimiento mensual del flujo y de sus límites de uso, por cuota…
-- Formación a docentes para pedir materiales desde el móvil, por sesión…
+- Instalación de un flujo de materiales para una academia pequeña, por instalación.
+- Mantenimiento mensual del flujo y de sus límites de uso, por cuota.
+- Formación a docentes para pedir materiales desde el móvil, por sesión.
 
 **Precio orientativo:** 100–250 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

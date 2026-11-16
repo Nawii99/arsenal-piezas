@@ -1,4 +1,4 @@
-# Vigilante semanal de enlaces rotos en toda tu web…
+# Vigilante semanal de enlaces rotos en toda tu web
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

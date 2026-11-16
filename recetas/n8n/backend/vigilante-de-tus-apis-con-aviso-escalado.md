@@ -1,4 +1,4 @@
-# Vigilante de tus APIs con aviso escalado…
+# Vigilante de tus APIs con aviso escalado
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cada cinco minutos llama a tus endpoints críticos, mide código de respuesta y 
 
 Detectas caídas en 5 minutos en vez de en horas. Sustituye un plan de monitorización tipo Better Uptime o Pingdom de 20-50 € al mes.
 
-- Monitorización de web y API para tiendas y SaaS pequeños con aviso al móvil…
-- Vigilancia de servicios para agencias con varios clientes y resumen mensual…
-- Configuración de alertas de disponibilidad para negocios que dependen de su web…
+- Monitorización de web y API para tiendas y SaaS pequeños con aviso al móvil.
+- Vigilancia de servicios para agencias con varios clientes y resumen mensual.
+- Configuración de alertas de disponibilidad para negocios que dependen de su web.
 
 **Precio orientativo:** 30–100 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

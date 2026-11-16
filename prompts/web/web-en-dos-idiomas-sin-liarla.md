@@ -1,4 +1,4 @@
-# web-en-dos-idiomas-sin-liarla…
+# web-en-dos-idiomas-sin-liarla
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que planifica una web multiidioma. Entra tu web actual, idiomas y países
 
 Abrir tu web a otro idioma multiplica el público al que puedes vender con el mismo producto y el mismo esfuerzo comercial.
 
-- Conversión de webs de pymes a versión bilingüe…
-- Configuración SEO internacional con hreflang…
-- Versión en catalán, euskera o gallego de webs existentes…
+- Conversión de webs de pymes a versión bilingüe.
+- Configuración SEO internacional con hreflang.
+- Versión en catalán, euskera o gallego de webs existentes.
 
 **Precio orientativo:** 150–500 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

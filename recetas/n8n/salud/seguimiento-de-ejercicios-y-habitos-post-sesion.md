@@ -1,4 +1,4 @@
-# Seguimiento de ejercicios y hábitos post-sesión…
+# Seguimiento de ejercicios y hábitos post-sesión
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

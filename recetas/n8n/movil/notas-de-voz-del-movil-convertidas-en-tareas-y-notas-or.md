@@ -1,4 +1,4 @@
-# Notas de voz del móvil convertidas en tareas y notas or…
+# Notas de voz del móvil convertidas en tareas y notas or
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Receta de n8n que recibe una nota de voz en un bot de Telegram y la transcribe c
 
 Recupera las ideas y los compromisos que se olvidaban. Sustituye 20-30 minutos diarios de pasar notas a limpio por hablar 40 segundos.
 
-- Resumen de visitas para un comercial que hace rutas por la zona…
-- Notas de obra para un instalador o un reformista…
-- Captura de ideas para un consultor que va de cliente en cliente…
+- Resumen de visitas para un comercial que hace rutas por la zona.
+- Notas de obra para un instalador o un reformista.
+- Captura de ideas para un consultor que va de cliente en cliente.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

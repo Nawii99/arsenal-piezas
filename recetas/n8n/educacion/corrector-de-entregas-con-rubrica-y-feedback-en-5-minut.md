@@ -1,4 +1,4 @@
-# Corrector de entregas con rúbrica y feedback en 5 minut…
+# Corrector de entregas con rúbrica y feedback en 5 minut
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

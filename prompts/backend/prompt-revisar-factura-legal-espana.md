@@ -1,4 +1,4 @@
-# Revisar si mi factura (o la de Stripe) cumple lo obligatorio…
+# Revisar si mi factura (o la de Stripe) cumple lo obligatorio
 
 **Tipo:** Prompt · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando vas a emitir tu primera factura por un cobro online, o quieres saber si e
 
 Puntos de partida para un servicio de 'puesta a punto de facturación online' para autónomos: revisar sus plantillas y dejarles el proceso hecho con su gestor.
 
-- Puesta a punto de facturación online para autónomos con revisión de plantilla…
-- Lista de preguntas para el gestor preparada antes de cada reunión fiscal…
-- Revisión de recibos de pasarela para negocios que facturan a mano…
+- Puesta a punto de facturación online para autónomos con revisión de plantilla.
+- Lista de preguntas para el gestor preparada antes de cada reunión fiscal.
+- Revisión de recibos de pasarela para negocios que facturan a mano.
 
 **Precio orientativo:** 30–80 € por revisión. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

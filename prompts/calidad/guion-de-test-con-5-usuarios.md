@@ -1,4 +1,4 @@
-# Guion de test con 5 usuarios…
+# Guion de test con 5 usuarios
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que prepara sesiones de prueba con cinco usuarios reales sobre tu web o p
 
 Descubrir que el botón no se ve o que nadie entiende qué vendes evita quemar presupuesto de anuncios llevando tráfico a una página que no convierte.
 
-- Test de usabilidad con cinco usuarios para webs de pymes…
-- Informe de fricciones antes de invertir en anuncios…
-- Moderación de pruebas de usuario para landings y tiendas…
+- Test de usabilidad con cinco usuarios para webs de pymes.
+- Informe de fricciones antes de invertir en anuncios.
+- Moderación de pruebas de usuario para landings y tiendas.
 
 **Precio orientativo:** 200–600 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

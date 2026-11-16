@@ -1,4 +1,4 @@
-# Semáforo de clientes que se enfrían y riesgo de concent…
+# Semáforo de clientes que se enfrían y riesgo de concent
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

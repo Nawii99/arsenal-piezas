@@ -1,4 +1,4 @@
-# Feedback de beta testers ordenado y clasificado solo…
+# Feedback de beta testers ordenado y clasificado solo
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

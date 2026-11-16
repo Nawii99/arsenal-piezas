@@ -1,4 +1,4 @@
-# Bonos y paquetes de sesiones…
+# Bonos y paquetes de sesiones
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando vendes sesiones sueltas, la gente viene una vez y no hay continuidad ni p
 
 Un bono cobra por adelantado varias sesiones, mejora la tesorería del mes y aumenta la probabilidad de que la persona termine el proceso.
 
-- Diseño de bonos y paquetes de sesiones para clínicas y centros…
-- Redacción de condiciones de bono y guion de venta amable…
-- Estudio de precios de packs para servicios de bienestar…
+- Diseño de bonos y paquetes de sesiones para clínicas y centros.
+- Redacción de condiciones de bono y guion de venta amable.
+- Estudio de precios de packs para servicios de bienestar.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

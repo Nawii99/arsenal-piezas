@@ -1,0 +1,72 @@
+{
+  "tarea": "Describir UN plano animado a partir de una imagen para pedírselo a un generador de vídeo con IA: sujeto, acción, cámara, ritmo y lo que debe quedar igual, listo para pegar como petición.",
+  "idioma_salida": "es-ES",
+  "contexto": "Quien usa este JSON tiene una imagen (ilustración o foto) y quiere un clip corto. No se conoce la herramienta concreta, así que no se prometen funciones, duraciones máximas ni formatos: eso se comprueba en la ayuda oficial de la herramienta.",
+  "datos_de_entrada": {
+    "descripcion_de_la_imagen": "[DESCRIBE LO QUE SE VE: SUJETO, FONDO, ESTILO, COLORES]",
+    "tipo_de_imagen": "[ILUSTRACIÓN | FOTO | RENDER]",
+    "origen_y_derechos": "[ES MÍA | TENGO LICENCIA QUE PERMITE TRANSFORMARLA Y USARLA EN VÍDEO | NO LO SÉ]",
+    "aparecen_personas_reconocibles": "[SÍ, CON PERMISO | SÍ, SIN PERMISO | NO]",
+    "objetivo_del_plano": "[PARA QUÉ SIRVE ESTE PLANO: PORTADA DE REEL, FONDO DE WEB, ESCENA DE UN VÍDEO…]",
+    "formato": "[VERTICAL | HORIZONTAL | CUADRADO]",
+    "duracion_deseada_en_segundos": "[NÚMERO]",
+    "que_debe_moverse": "[LO QUE QUIERES QUE SE MUEVA]",
+    "que_no_debe_cambiar": "[CARA, ROPA, COLORES, ESTILO, FONDO, TEXTO…]",
+    "movimiento_de_camara_deseado": "[FIJA | ACERCAMIENTO LENTO | ALEJAMIENTO LENTO | DESPLAZAMIENTO LATERAL | GIRO SUAVE | NO LO SÉ]",
+    "ficha_del_personaje_si_hay_serie": "[RASGOS, ROPA, COLORES, ESTILO, O «NO HAY SERIE»]"
+  },
+  "pasos": [
+    "Revisa origen_y_derechos y aparecen_personas_reconocibles. Si no es tuya ni tiene licencia, o hay personas sin permiso, no sigas: dilo y explica qué falta.",
+    "Resume la imagen en una frase y decide cuál es el sujeto principal.",
+    "Elige UNA acción principal y, como mucho, una ambiental. Si la persona pide más, propón dividirlo en varios planos.",
+    "Elige UN movimiento de cámara. Si el sujeto se mueve, la cámara va fija o casi fija.",
+    "Define el ritmo con palabras (lento, pausado, constante) y ajusta la duración a una sola idea de acción.",
+    "Escribe la lista de lo que debe quedar igual, usando lo que dice la persona y la ficha del personaje si existe.",
+    "Redacta la petición en español y una versión en inglés, con los mismos bloques.",
+    "Señala los riesgos de este plano concreto (manos, texto dentro de la imagen, fondo complejo) y qué mirar al revisar."
+  ],
+  "reglas": [
+    "Trabaja solo con lo que describe la persona. No añadas personajes, objetos ni texto que no estén en la imagen.",
+    "Una acción principal por plano. Cuantos más movimientos, más riesgo de deformación.",
+    "No nombres herramientas ni versiones, ni prometas duraciones, resoluciones o funciones concretas. Remite a la ayuda oficial de la herramienta.",
+    "No incluyas en la petición texto que deba aparecer dentro del vídeo: el texto se añade en el montaje.",
+    "No pidas cortes de plano dentro del clip.",
+    "Si hay serie, copia la ficha del personaje literal en la petición.",
+    "Español de España, tuteo y frases cortas."
+  ],
+  "formato_de_salida": {
+    "formato": "un único objeto JSON, sin texto alrededor",
+    "esquema": {
+      "derechos": {
+        "estado": "OK | FALTA ALGO | NO CONTINUAR",
+        "que_falta": "string o null"
+      },
+      "resumen_del_plano": "string",
+      "sujeto": "string",
+      "accion_principal": "string",
+      "accion_ambiental": "string o null",
+      "camara": "string",
+      "ritmo_y_duracion": "string",
+      "se_mantiene_igual": [
+        "string"
+      ],
+      "evitar": [
+        "string"
+      ],
+      "peticion_es": "string",
+      "peticion_en": "string",
+      "riesgos_y_que_mirar_al_revisar": [
+        "string"
+      ],
+      "si_falla": "string con un único cambio para el siguiente intento"
+    }
+  },
+  "comprobaciones": [
+    "La petición contiene una sola acción principal y un solo movimiento de cámara.",
+    "Todo lo que se menciona sale de la imagen o de lo que dijo la persona.",
+    "Hay lista de lo que se mantiene igual.",
+    "No hay promesas de funciones ni cifras de una herramienta.",
+    "El JSON de salida es válido y no lleva texto fuera del objeto."
+  ],
+  "limites": "No sustituye la comprobación de derechos de la imagen ni las condiciones de uso de la herramienta. Cada generador se comporta distinto: prueba y ajusta."
+}

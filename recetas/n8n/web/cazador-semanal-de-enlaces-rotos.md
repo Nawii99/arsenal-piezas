@@ -1,4 +1,4 @@
-# Cazador semanal de enlaces rotos…
+# Cazador semanal de enlaces rotos
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

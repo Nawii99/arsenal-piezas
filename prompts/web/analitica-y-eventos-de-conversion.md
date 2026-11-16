@@ -1,4 +1,4 @@
-# analitica-y-eventos-de-conversion…
+# analitica-y-eventos-de-conversion
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que diseña la medición de una web: elige herramienta, define los evento
 
 Saber qué página y qué canal traen los contactos te deja cortar lo que no funciona y repetir lo que sí, en vez de gastar a ciegas en anuncios.
 
-- Configuración de analítica y eventos para webs de pymes…
-- Panel semanal de cinco cifras para dueños de negocio…
-- Preparación de la medición antes de lanzar campañas de anuncios…
+- Configuración de analítica y eventos para webs de pymes.
+- Panel semanal de cinco cifras para dueños de negocio.
+- Preparación de la medición antes de lanzar campañas de anuncios.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

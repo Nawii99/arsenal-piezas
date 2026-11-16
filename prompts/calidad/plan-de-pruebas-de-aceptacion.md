@@ -1,4 +1,4 @@
-# Plan de pruebas de aceptación…
+# Plan de pruebas de aceptación
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que convierte una entrega (web, tienda, panel o bot) en un plan de prueba
 
 Evita pagar o dar por buena una entrega que falla en cuanto entra el primer cliente real, y te ahorra la ronda de arreglos de urgencia.
 
-- Plan de pruebas de aceptación para clientes que reciben webs de terceros…
-- Servicio de QA previo a la entrega de proyectos digitales…
-- Informe de aceptación para webs, tiendas y bots de pymes…
+- Plan de pruebas de aceptación para clientes que reciben webs de terceros.
+- Servicio de QA previo a la entrega de proyectos digitales.
+- Informe de aceptación para webs, tiendas y bots de pymes.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

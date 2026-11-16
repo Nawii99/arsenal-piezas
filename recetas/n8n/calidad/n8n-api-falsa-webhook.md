@@ -1,4 +1,4 @@
-# API falsa con n8n para probar flujos sin tocar el CRM real…
+# API falsa con n8n para probar flujos sin tocar el CRM real
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Estás construyendo un flujo o una app que leerá un CRM o una tienda, pero toda
 
 Ofrécela como extra dentro de un proyecto de integración con n8n: el cliente ve el flujo funcionando contra una maqueta antes de conectar su sistema, y lo incluyes en el presupuesto del proyecto a [TU PRECIO].
 
-- Maqueta de API para que un cliente vea su flujo funcionando antes de conectar su CRM…
-- Entorno de pruebas incluido en proyectos de integración con n8n para pymes…
-- Servicio de prototipado de integraciones cuando la API real aún no está disponible…
+- Maqueta de API para que un cliente vea su flujo funcionando antes de conectar su CRM.
+- Entorno de pruebas incluido en proyectos de integración con n8n para pymes.
+- Servicio de prototipado de integraciones cuando la API real aún no está disponible.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

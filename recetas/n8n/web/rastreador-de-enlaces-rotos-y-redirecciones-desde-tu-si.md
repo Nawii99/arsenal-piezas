@@ -1,4 +1,4 @@
-# Rastreador de enlaces rotos y redirecciones desde tu si…
+# Rastreador de enlaces rotos y redirecciones desde tu si
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

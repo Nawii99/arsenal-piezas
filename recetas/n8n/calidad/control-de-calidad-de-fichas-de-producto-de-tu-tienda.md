@@ -1,4 +1,4 @@
-# Control de calidad de fichas de producto de tu tienda…
+# Control de calidad de fichas de producto de tu tienda
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -38,11 +38,11 @@ Baja todos los productos de tu tienda, les aplica una lista de reglas de calidad
 - n8n.
 - **WooCommerce**: en WordPress ve a WooCommerce > Ajustes > Avanzado > REST API > Añadir clave, permisos «Lectura», copia Consumer Key y Consumer Secret. En n8n crea la credencial «WooCommerce API» con la URL de tu tienda.
 - **Si usas Shopify**: en Configuración > Aplicaciones > Desarrollar apps, crea una app con permiso `read_products` y usa la credencial «Shopify Access Token» de n8n; el resto del flujo es idéntico cambiando el nodo del paso 2.
-- Hoja «QA catálogo» con columnas: fecha, sku, nombre, problemas, enlace.
+- Hoja «QA catálogo» con columnas: fecha, id, sku, nombre, problemas, enlace (`id` es el ID del producto en la tienda y es la clave; `sku` puede quedar vacío).
 
 ## Los nodos, en orden
-1. **Schedule Trigger** — Days, Day of Week: Monday, Hour: 7.
-2. **WooCommerce** — Resource: Product, Operation: Get Many, Return All: on. En Options > Status: publish.
+1. **Schedule Trigger** («Cada lunes a las 7») — Cron `0 7 * * 1` (lunes a las 7:00).
+2. **WooCommerce** (llámalo «Productos») — Resource: Product, Operation: Get Many, Return All: on. En Options > Status: publish.
 3. **Code** (nombre: «Reglas de calidad»). Run Once for Each Item.
 ```js
 const p = $json;
@@ -61,13 +61,14 @@ if (p.manage_stock && Number(p.stock_quantity) === 0 && p.stock_status === 'inst
 if (!p.categories || p.categories.length === 0) problemas.push('sin categoría');
 if ((p.weight === '' || p.weight === '0') && p.shipping_required) problemas.push('sin peso para el envío');
 if (p.name && p.name === p.name.toUpperCase()) problemas.push('título todo en mayúsculas');
-return { json: { sku: p.sku || '-', nombre: p.name, problemas: problemas.join(' | '), enlace: p.permalink, fallos: problemas.length } };
+// id = clave única de la hoja (el SKU puede faltar: es justo uno de los problemas que se detectan)
+return { json: { id: String(p.id), sku: p.sku || '', nombre: p.name, problemas: problemas.join(' | '), enlace: p.permalink, fallos: problemas.length } };
 ```
-4. **Filter** — Condition: Number `={{ $json.fallos }}` larger than 0.
-5. **Sort** — Field: fallos, Order: Descending. Así arriba están los peores.
-6. **Google Sheets** — Operation: Append or Update, Column to Match On: sku, mapeando fecha `={{ $now.format('yyyy-LL-dd') }}`, nombre, problemas y enlace.
+4. **Filter** (llámalo «Solo los que fallan») — Condition: Number `={{ $json.fallos }}` larger than 0.
+5. **Sort** (llámalo «Ordenar por fallos») — Field: fallos, Order: Descending. Así arriba están los peores.
+6. **Google Sheets** (llámalo «Guardar en QA catálogo») — Operation: Append or Update, hoja «QA catálogo», Column to Match On: `id`, mapeando fecha `={{ $now.format('yyyy-LL-dd') }}`, `id` `={{ $json.id }}`, `sku` `={{ $json.sku }}`, nombre, problemas y enlace.
 7. **Code** (nombre: «Resumen») — Run Once for All Items: `const n = $input.all().length; const top = $input.all().slice(0,10).map(i => '- ' + i.json.nombre + ': ' + i.json.problemas).join('\n'); return [{ json: { n, top } }];`
-8. **Gmail** — Send, Subject: `=QA catálogo: {{ $json.n }} fichas con fallos`, Message: `={{ $json.top }}`, y el enlace a la hoja.
+8. **Gmail** (llámalo «Enviar resumen») — Send, tipo de correo Text, Subject: `=QA catálogo: {{ $json.n }} fichas con fallos`, Message: `={{ $json.top }}`, y el enlace a la hoja.
 
 ## Cómo probarla
 Antes de nada, edita un producto y quítale la foto o pon el precio a 0: al ejecutar debe salir el primero de la lista. Ejecuta con Return All desactivado y Limit 20 la primera vez para ver que las reglas no dan falsos positivos con tu forma de trabajar (por ejemplo, si vendes servicios sin peso, quita esa regla).
@@ -76,7 +77,7 @@ Antes de nada, edita un producto y quítale la foto o pon el precio a 0: al ejec
 - **Timeout con catálogos grandes**: si tienes más de 1.000 productos, cambia el paso 2 por Get Many con Limit 100 y mete un **Loop Over Items** paginando con el parámetro `page`.
 - **Variaciones**: en Woo, las variaciones son productos aparte; si el precio está en la variación, el padre te saldrá como «precio 0». Añade `if (p.type === 'variable') return [];` al principio del Code o comprueba las variaciones por separado.
 - **Clave de API con permisos de escritura**: no hace falta, usa solo lectura para no romper nada.
-- **Se llena la hoja**: usa Append or Update con SKU como clave, así cada producto ocupa una fila y ves si sigue roto la semana siguiente.
+- **Se llena la hoja**: usa Append or Update con el ID del producto como clave (no el SKU, que puede faltar), así cada producto ocupa una fila y ves si sigue roto la semana siguiente.
 
 ## Cuánto cuesta
 Gratis: la REST API de WooCommerce va incluida, Sheets y Gmail gratis. En Shopify también entra en cualquier plan. Solo pagas el sitio donde corre n8n.

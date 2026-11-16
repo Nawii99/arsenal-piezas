@@ -1,4 +1,4 @@
-# Política de devoluciones que cumple la ley…
+# Política de devoluciones que cumple la ley
 
 **Tipo:** Prompt · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 

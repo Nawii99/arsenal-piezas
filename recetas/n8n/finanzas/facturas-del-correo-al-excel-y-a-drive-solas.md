@@ -1,4 +1,4 @@
-# Facturas del correo al Excel y a Drive, solas…
+# Facturas del correo al Excel y a Drive, solas
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Vigila tu bandeja de Gmail, detecta los correos con factura en PDF, guarda el ar
 
 Ahorra entre 3 y 5 horas cada trimestre de recopilar y teclear facturas, y evita perder IVA soportado por facturas traspapeladas (fácilmente 200-600 € al año).
 
-- Recopilación trimestral de facturas para autónomos que cierran con gestor…
-- Registro de IVA soportado como servicio mensual para pymes…
-- Configuración inicial del archivo de facturas para negocios que empiezan…
+- Recopilación trimestral de facturas para autónomos que cierran con gestor.
+- Registro de IVA soportado como servicio mensual para pymes.
+- Configuración inicial del archivo de facturas para negocios que empiezan.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

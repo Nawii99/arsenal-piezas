@@ -1,4 +1,4 @@
-# Horas por proyecto: de GitHub a hoja de facturación…
+# Horas por proyecto: de GitHub a hoja de facturación
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cada viernes recoge los commits y las incidencias cerradas de la semana por repo
 
 Ahorra 2-4 horas al mes de administración y evita facturar de menos por trabajo que no recordabas. Coste 0 €.
 
-- Partes de trabajo automáticos para agencias que facturan igualas…
-- Justificación de horas para freelancers con bolsas de horas…
-- Informe mensual de avance para clientes de mantenimiento de software…
+- Partes de trabajo automáticos para agencias que facturan igualas.
+- Justificación de horas para freelancers con bolsas de horas.
+- Informe mensual de avance para clientes de mantenimiento de software.
 
 **Precio orientativo:** 60–150 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

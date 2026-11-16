@@ -1,4 +1,4 @@
-# Fuga de agua: corta la llave y avisa a todo el equipo…
+# Fuga de agua: corta la llave y avisa a todo el equipo
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

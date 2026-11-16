@@ -1,4 +1,4 @@
-# De manual denso a material didáctico…
+# De manual denso a material didáctico
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que convierte documentación densa (manual, nor
 
 Te permite dar formación sobre normativa o procedimientos de un cliente sin ser tú el experto, y cobrar por transformarlo en algo enseñable.
 
-- Conversión de manuales internos en material formativo para empresas…
-- Resúmenes y test de estudio de normativa para academias…
-- Fichas de procedimientos para onboarding de plantillas…
+- Conversión de manuales internos en material formativo para empresas.
+- Resúmenes y test de estudio de normativa para academias.
+- Fichas de procedimientos para onboarding de plantillas.
 
 **Precio orientativo:** 150–500 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

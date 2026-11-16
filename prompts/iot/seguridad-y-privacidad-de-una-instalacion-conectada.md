@@ -1,4 +1,4 @@
-# Seguridad y privacidad de una instalación conectada…
+# Seguridad y privacidad de una instalación conectada
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que revisa una instalación de cámaras y sensores: accesos, red y avisos
 
 Evita el disgusto y el coste de un acceso no autorizado o de una reclamación por grabar sin informar, y te permite ofrecer una revisión de seguridad como servicio aparte.
 
-- Auditoría de seguridad de videovigilancia para negocios…
-- Configuración segura de cámaras y accesos…
-- Revisión anual de privacidad en instalaciones conectadas…
+- Auditoría de seguridad de videovigilancia para negocios.
+- Configuración segura de cámaras y accesos.
+- Revisión anual de privacidad en instalaciones conectadas.
 
 **Precio orientativo:** 80–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

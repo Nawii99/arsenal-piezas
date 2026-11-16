@@ -1,4 +1,4 @@
-# Adaptaciones a todos los formatos de redes desde una ho…
+# Adaptaciones a todos los formatos de redes desde una ho
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando el cliente pide la misma campaña en seis tamaños distintos y te toca du
 
 De 40 minutos por campaña a 2. Con cuatro campañas al mes son más de dos horas facturables recuperadas, o adaptaciones que puedes cobrar sin trabajarlas.
 
-- Adaptación de campañas a todos los formatos como entrega fija por cliente…
-- Gestión mensual de piezas para redes de pymes con hoja de encargos…
-- Plantillas de formatos sociales para agencias que trabajan con varios clientes…
+- Adaptación de campañas a todos los formatos como entrega fija por cliente.
+- Gestión mensual de piezas para redes de pymes con hoja de encargos.
+- Plantillas de formatos sociales para agencias que trabajan con varios clientes.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

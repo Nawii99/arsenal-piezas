@@ -1,4 +1,4 @@
-# Conciliación bancaria mensual…
+# Conciliación bancaria mensual
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como administrativo contable meticuloso. Recibe el extracto ba
 
 Aparecen cobros que nunca llegaron, dobles cargos y comisiones mal aplicadas que se pueden reclamar y recuperar.
 
-- Conciliación bancaria mensual para autónomos y pymes…
-- Revisión de cobros y comisiones de pasarelas de pago…
-- Detección de cargos duplicados con reclamaciones preparadas…
+- Conciliación bancaria mensual para autónomos y pymes.
+- Revisión de cobros y comisiones de pasarelas de pago.
+- Detección de cargos duplicados con reclamaciones preparadas.
 
 **Precio orientativo:** 50–150 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

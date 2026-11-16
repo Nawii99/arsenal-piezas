@@ -1,4 +1,4 @@
-# Vigilante de certificados SSL, dominios y DNS…
+# Vigilante de certificados SSL, dominios y DNS
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

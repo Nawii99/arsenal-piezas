@@ -1,4 +1,4 @@
-# Purga y anonimizado de datos de clientes según RGPD…
+# Purga y anonimizado de datos de clientes según RGPD
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

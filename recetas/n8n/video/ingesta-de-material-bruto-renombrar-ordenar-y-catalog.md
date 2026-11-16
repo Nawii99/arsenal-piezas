@@ -1,4 +1,4 @@
-# Ingesta de material bruto: renombrar, ordenar y catalog…
+# Ingesta de material bruto: renombrar, ordenar y catalog
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando grabas con cámara o móvil y acabas con carpetas llenas de C0012.MP4 e I
 
 Ahorra 30-60 minutos por rodaje en ordenar material y evita el coste real de perder una toma buena porque nadie la encuentra.
 
-- Organización de archivos de rodaje para productoras pequeñas, entregada como servicio puntual…
-- Gestión mensual de archivos de vídeo para clientes, con inventario y copia de seguridad…
-- Plantilla y configuración del flujo de catalogación para videógrafos de boda y eventos…
+- Organización de archivos de rodaje para productoras pequeñas, entregada como servicio puntual.
+- Gestión mensual de archivos de vídeo para clientes, con inventario y copia de seguridad.
+- Plantilla y configuración del flujo de catalogación para videógrafos de boda y eventos.
 
 **Precio orientativo:** 90–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

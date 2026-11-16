@@ -1,4 +1,4 @@
-# cobrar-facturas-impagadas…
+# cobrar-facturas-impagadas
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que diseña la escalera de recobro de una factu
 
 Recupera dinero ya facturado que estabas dando por perdido y acorta los días que tardas en cobrar, que es caja real en tu cuenta.
 
-- Sistema de reclamación de cobros para autónomos y pymes…
-- Plantillas de recobro amistoso con guion de llamada…
-- Servicio de gestión de morosos blandos para pequeños negocios…
+- Sistema de reclamación de cobros para autónomos y pymes.
+- Plantillas de recobro amistoso con guion de llamada.
+- Servicio de gestión de morosos blandos para pequeños negocios.
 
 **Precio orientativo:** 60–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

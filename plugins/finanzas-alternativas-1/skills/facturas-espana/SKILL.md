@@ -55,9 +55,22 @@ Vale hasta 400 € IVA incluido (hasta 3.000 € en comercio minorista, hosteler
 
 Una factura ya emitida no se modifica ni se borra. Se emite una factura rectificativa con su propia serie (ej: R-2026-001) que cita número y fecha de la original y explica qué corrige. Para anularla entera, la rectificativa lleva los importes en negativo.
 
-## Verifactu: el riesgo que hay que tener en cuenta
+## Verifactu y factura electrónica: dos obligaciones distintas
 
-El Real Decreto 1007/2023 obliga a emitir facturas con un programa que genere un registro y un código QR verificables por Hacienda. Cuando te aplique, una factura hecha en Word, en Excel o con este asistente no será válida: tendrás que usar un programa de facturación adaptado (varios tienen plan gratuito o de pocos euros al mes). La fecha de entrada en vigor se ha aplazado al menos una vez: [comprueba en sede.agenciatributaria.gob.es la fecha que te aplica según seas autónomo o sociedad]. Hasta entonces, lo que generes aquí sirve si cumple los puntos de arriba.
+Esto no es asesoría fiscal: confirma con tu gestoría qué te aplica. Fechas comprobadas el 13-nov-2026.
+
+**1. Verifactu (Real Decreto 1007/2023).** No cambia lo que lleva una factura, sino el programa con el que se hace: si facturas con un sistema informático, ese programa tiene que cumplir el reglamento (registro de cada factura, integridad, trazabilidad, código QR y, en la modalidad VERI*FACTU, envío de los registros a la AEAT).
+- Fecha vigente (BOE, Real Decreto-ley 15/2025): sociedades, antes del 1 de enero de 2027; resto, autónomos incluidos, antes del 1 de julio de 2027. Ya se ha movido dos veces por norma (Real Decreto 254/2025 y Real Decreto-ley 15/2025).
+- Anunciado y todavía sin BOE: el 5-oct-2026 Hacienda comunicó la previsión de aplazarlo hasta octubre de 2028. Mientras no se publique, valen las fechas de 2027.
+- No te afecta si facturas a mano (talonario), si llevas el SII o si tu domicilio fiscal está en territorio foral (País Vasco: TicketBAI; Navarra: su normativa foral). Según la AEAT, Word o Excel usados solo para escribir, imprimir y guardar facturas no son un sistema de facturación; si generan solos el libro registro (por ejemplo, con una macro), sí lo son.
+- Si este asistente numera, calcula y genera tus facturas, puede considerarse un sistema informático de facturación. Cuando te llegue la fecha, no lo uses como sistema principal sin que tu gestoría lo confirme: usa un programa cuyo fabricante dé la declaración responsable del reglamento.
+
+**2. Factura electrónica entre empresas y profesionales (Real Decreto 238/2026 y Orden HAC/1028/2026).** Es otra obligación, independiente de Verifactu: las facturas que emites a otros empresarios o profesionales en España tendrán que expedirse, enviarse y recibirse en formato electrónico, informando de su estado y su pago. No afecta a las facturas simplificadas (salvo las cualificadas) ni a lo que facturas a particulares.
+- Fechas vigentes (la Orden está en vigor desde el 6-oct-2026): volumen de operaciones de más de 8 millones de euros, 6 de octubre de 2027; resto de empresarios y profesionales, 6 de octubre de 2028. Los autónomos (personas físicas) tendrán que informar del estado y el pago de las facturas desde el 6 de octubre de 2029.
+- Cuando te toque, para facturar a empresas hará falta un programa o plataforma de factura electrónica, o la aplicación gratuita que prepara la AEAT, que tendrá sus condiciones de uso. Que un PDF hecho aquí sirva o no, confírmalo con tu gestoría.
+- Territorio foral: el Real Decreto remite al Concierto y al Convenio; pregunta a tu hacienda foral.
+
+Hasta que te llegue cada fecha, lo que prepares aquí sirve si cumple los puntos de arriba. Fuentes: sede.agenciatributaria.gob.es (Verifactu y Orden HAC/1028/2026) y boe.es (Real Decreto-ley 15/2025 y Real Decreto 238/2026).
 
 ## Cómo trabajar con el usuario
 

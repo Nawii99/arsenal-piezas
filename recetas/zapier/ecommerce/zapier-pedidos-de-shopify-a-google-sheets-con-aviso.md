@@ -1,4 +1,4 @@
-# Zapier: pedidos de Shopify a Google Sheets con aviso…
+# Zapier: pedidos de Shopify a Google Sheets con aviso
 
 **Tipo:** Receta de automatización · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 

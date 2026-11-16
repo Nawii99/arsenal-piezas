@@ -1,4 +1,4 @@
-# Corrección de ejercicios con IA y feedback al alumno…
+# Corrección de ejercicios con IA y feedback al alumno
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

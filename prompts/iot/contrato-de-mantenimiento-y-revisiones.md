@@ -1,4 +1,4 @@
-# Contrato de mantenimiento y revisiones…
+# Contrato de mantenimiento y revisiones
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que diseña un servicio de mantenimiento recurrente de instalaciones cone
 
 Convierte trabajos puntuales en cuota recurrente y evita el soporte gratis; además, la revisión detecta averías antes de que el cliente se enfade.
 
-- Cuota mensual de mantenimiento de instalaciones domóticas…
-- Revisión anual de sensores y baterías para negocios…
-- Pack de soporte con visita periódica e informe…
+- Cuota mensual de mantenimiento de instalaciones domóticas.
+- Revisión anual de sensores y baterías para negocios.
+- Pack de soporte con visita periódica e informe.
 
 **Precio orientativo:** 15–60 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

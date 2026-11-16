@@ -23,9 +23,9 @@ Ya cobras con Stripe y haces cada factura a mano, copiando datos de los correos 
 
 Véndela a autónomos que facturan a mano: automatizas registro, factura y aviso en una tarde, por [TU PRECIO], con mantenimiento mensual si lo quieren. Su gestor comprueba que las facturas salen bien.
 
-- Facturación automática para autónomos que facturan a mano…
-- Registro y aviso de ventas con mantenimiento mensual incluido…
-- Conexión de pagos con programa de facturas para pequeños negocios…
+- Facturación automática para autónomos que facturan a mano.
+- Registro y aviso de ventas con mantenimiento mensual incluido.
+- Conexión de pagos con programa de facturas para pequeños negocios.
 
 **Precio orientativo:** 150–350 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

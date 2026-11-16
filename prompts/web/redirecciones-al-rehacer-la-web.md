@@ -1,4 +1,4 @@
-# redirecciones-al-rehacer-la-web…
+# redirecciones-al-rehacer-la-web
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como consultor de migraciones web y prepara un plan de redirec
 
 Rehacer la web sin redirecciones te puede tumbar el tráfico que ya tenías. Esto conserva los clientes que llegaban solos por Google.
 
-- Migración SEO de webs de pymes al cambiar de plataforma o dominio…
-- Plan de redirecciones 301 como servicio de cierre en rediseños web…
-- Diseño de páginas 404 que reconducen a la venta…
+- Migración SEO de webs de pymes al cambiar de plataforma o dominio.
+- Plan de redirecciones 301 como servicio de cierre en rediseños web.
+- Diseño de páginas 404 que reconducen a la venta.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

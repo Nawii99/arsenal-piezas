@@ -1,4 +1,4 @@
-# Diagnosticar por qué tu juego va a tirones…
+# Diagnosticar por qué tu juego va a tirones
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como optimizador de rendimiento para
 
 Un juego que va fluido tiene mejores reseñas y menos devoluciones; y saber diagnosticar rendimiento es un encargo que se cobra bien.
 
-- Diagnóstico de rendimiento de juegos y escenas 3D con informe priorizado…
-- Optimización para móvil de proyectos que van a tirones…
-- Auditoría de rendimiento de visores 3D en webs de clientes…
+- Diagnóstico de rendimiento de juegos y escenas 3D con informe priorizado.
+- Optimización para móvil de proyectos que van a tirones.
+- Auditoría de rendimiento de visores 3D en webs de clientes.
 
 **Precio orientativo:** 100–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

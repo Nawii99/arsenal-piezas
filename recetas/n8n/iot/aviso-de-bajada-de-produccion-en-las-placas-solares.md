@@ -1,4 +1,4 @@
-# Aviso de bajada de producción en las placas solares…
+# Aviso de bajada de producción en las placas solares
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Semáforo de nombres de marca: dominio, redes y marca re…
+# Semáforo de nombres de marca: dominio, redes y marca re
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

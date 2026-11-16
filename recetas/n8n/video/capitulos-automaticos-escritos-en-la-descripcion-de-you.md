@@ -1,4 +1,4 @@
-# Capítulos automáticos escritos en la descripción de You…
+# Capítulos automáticos escritos en la descripción de You
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Seguimiento semanal de tienda para clientes de pago…
+# Seguimiento semanal de tienda para clientes de pago
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Si trabajas con un estudio que acaba de lanzar en Steam y quiere ver cada semana
 
 Véndelo como seguimiento mensual de lanzamiento: el cliente recibe el informe por email y tú cobras una cuota recurrente, [TU PRECIO]. Añade una llamada corta al mes para comentar los datos.
 
-- Seguimiento mensual de lanzamiento en Steam como cuota recurrente para un estudio…
-- Informe semanal de reseñas y propietarios con una llamada corta al mes…
-- Monitor de competencia de Steam para varios juegos de un mismo cliente…
+- Seguimiento mensual de lanzamiento en Steam como cuota recurrente para un estudio.
+- Informe semanal de reseñas y propietarios con una llamada corta al mes.
+- Monitor de competencia de Steam para varios juegos de un mismo cliente.
 
 **Precio orientativo:** 30–80 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

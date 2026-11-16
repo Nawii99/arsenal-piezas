@@ -1,4 +1,4 @@
-# proteccion-datos-clinica…
+# proteccion-datos-clinica
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando manejas fichas de pacientes, WhatsApp, fotos y correos y no tienes claro 
 
 Evita sanciones y reclamaciones caras y te ahorra pagar una consultoría entera para lo básico, dejando al asesor solo lo que de verdad requiere firma profesional.
 
-- Checklist de protección de datos de salud para consultas pequeñas…
-- Revisión de hábitos diarios con datos de pacientes…
-- Plantillas de textos de consentimiento para centros de bienestar…
+- Checklist de protección de datos de salud para consultas pequeñas.
+- Revisión de hábitos diarios con datos de pacientes.
+- Plantillas de textos de consentimiento para centros de bienestar.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

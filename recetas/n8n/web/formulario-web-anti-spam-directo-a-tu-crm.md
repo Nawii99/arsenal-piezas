@@ -1,4 +1,4 @@
-# Formulario web anti-spam directo a tu CRM…
+# Formulario web anti-spam directo a tu CRM
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

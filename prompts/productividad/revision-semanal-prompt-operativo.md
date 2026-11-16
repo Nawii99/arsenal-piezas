@@ -1,4 +1,4 @@
-# Revisión semanal · Prompt operativo…
+# Revisión semanal · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Productividad · **Licencia:** CC BY 4.0
 

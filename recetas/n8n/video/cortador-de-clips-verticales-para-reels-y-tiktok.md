@@ -1,4 +1,4 @@
-# Cortador de clips verticales para Reels y TikTok…
+# Cortador de clips verticales para Reels y TikTok
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

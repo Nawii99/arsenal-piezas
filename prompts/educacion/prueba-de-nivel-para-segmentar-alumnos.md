@@ -1,4 +1,4 @@
-# Prueba de nivel para segmentar alumnos…
+# Prueba de nivel para segmentar alumnos
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que diseña una prueba de nivel de 7 minutos an
 
 Reduce abandonos y devoluciones porque nadie se aburre ni se pierde, y te ahorra horas de clases que no hacían falta.
 
-- Test de diagnóstico de entrada para academias y cursos…
-- Segmentación de alumnos y rutas de aprendizaje para formadores…
-- Formulario de nivel conectado a un formulario online para escuelas…
+- Test de diagnóstico de entrada para academias y cursos.
+- Segmentación de alumnos y rutas de aprendizaje para formadores.
+- Formulario de nivel conectado a un formulario online para escuelas.
 
 **Precio orientativo:** 80–220 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

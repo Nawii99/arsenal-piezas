@@ -1,4 +1,4 @@
-# Rúbrica y feedback para corregir trabajos…
+# Rúbrica y feedback para corregir trabajos
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que construye una rúbrica ponderada con 4 o 5 
 
 Te permite corregir muchas más entregas por hora manteniendo la calidad, que es lo que separa una formación cara de una barata.
 
-- Rúbricas y bancos de comentarios para formadores y tutores…
-- Servicio de corrección de ejercicios para cursos de terceros…
-- Plantillas de evaluación para centros de formación pequeños…
+- Rúbricas y bancos de comentarios para formadores y tutores.
+- Servicio de corrección de ejercicios para cursos de terceros.
+- Plantillas de evaluación para centros de formación pequeños.
 
 **Precio orientativo:** 70–220 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

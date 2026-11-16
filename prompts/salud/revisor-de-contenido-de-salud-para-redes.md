@@ -1,4 +1,4 @@
-# Revisor de contenido de salud para redes…
+# Revisor de contenido de salud para redes
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Antes de publicar cualquier post, reel o email donde hables de salud, hábitos, 
 
 Evita rectificaciones, quejas y problemas con la publicidad sanitaria, y hace que el contenido genere más consultas por confianza que por exageración.
 
-- Revisión de contenidos de salud para redes de clínicas y terapeutas…
-- Servicio mensual de redacción prudente de posts y emails de bienestar…
-- Auditoría de textos de web y folletos con promesas arriesgadas…
+- Revisión de contenidos de salud para redes de clínicas y terapeutas.
+- Servicio mensual de redacción prudente de posts y emails de bienestar.
+- Auditoría de textos de web y folletos con promesas arriesgadas.
 
 **Precio orientativo:** 30–150 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

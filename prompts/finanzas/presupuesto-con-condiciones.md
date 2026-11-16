@@ -1,4 +1,4 @@
-# Presupuesto con condiciones que te protejan…
+# Presupuesto con condiciones que te protejan
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Un cliente te pide precio y sabes que, si no dejas cerrado qué entra y qué no,
 
 Úsalo para presupuestar tus propios servicios o ofrece a otros autónomos una plantilla de presupuesto y condiciones por [TU PRECIO]. IVA, retención y cláusulas los revisa un gestor o un abogado antes de enviarlo.
 
-- Presupuestos cerrados para autónomos de servicios, por presupuesto…
-- Plantilla de presupuesto para freelancers que cobran por fases, por venta…
-- Revisión de presupuestos antes de enviarlos a clientes, por revisión…
+- Presupuestos cerrados para autónomos de servicios, por presupuesto.
+- Plantilla de presupuesto para freelancers que cobran por fases, por venta.
+- Revisión de presupuestos antes de enviarlos a clientes, por revisión.
 
 **Precio orientativo:** 20–50 € por presupuesto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

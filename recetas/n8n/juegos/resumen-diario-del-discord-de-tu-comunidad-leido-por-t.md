@@ -1,4 +1,4 @@
-# Resumen diario del Discord de tu comunidad, leído por t…
+# Resumen diario del Discord de tu comunidad, leído por t
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

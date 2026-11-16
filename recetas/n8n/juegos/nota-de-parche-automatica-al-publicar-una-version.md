@@ -1,4 +1,4 @@
-# Nota de parche automática al publicar una versión…
+# Nota de parche automática al publicar una versión
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Control de rondas de revisión y avisos de coste extra…
+# Control de rondas de revisión y avisos de coste extra
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

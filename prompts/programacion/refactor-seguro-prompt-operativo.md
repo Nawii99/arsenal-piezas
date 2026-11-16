@@ -1,4 +1,4 @@
-# Refactor seguro · Prompt operativo…
+# Refactor seguro · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Programación · **Licencia:** CC BY 4.0
 

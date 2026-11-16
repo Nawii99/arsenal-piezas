@@ -1,4 +1,4 @@
-# Detector de deriva de marca en el Instagram del cliente…
+# Detector de deriva de marca en el Instagram del cliente
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

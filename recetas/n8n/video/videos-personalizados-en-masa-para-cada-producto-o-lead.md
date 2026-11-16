@@ -1,4 +1,4 @@
-# Vídeos personalizados en masa para cada producto o lead…
+# Vídeos personalizados en masa para cada producto o lead
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando necesitas 50 vídeos casi iguales: un reel por producto del catálogo, un
 
 Un editor cobra 20-40 € por vídeo simple. Cincuenta vídeos pasan de 1.500 € a unos 25 € de créditos de render.
 
-- Vídeos de producto automáticos para tiendas online con catálogo de cientos de referencias…
-- Fichas de inmuebles en vídeo para inmobiliarias pequeñas con precio y foto…
-- Vídeos de bienvenida personalizados para clientes de un negocio o programa de fidelidad…
+- Vídeos de producto automáticos para tiendas online con catálogo de cientos de referencias.
+- Fichas de inmuebles en vídeo para inmobiliarias pequeñas con precio y foto.
+- Vídeos de bienvenida personalizados para clientes de un negocio o programa de fidelidad.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

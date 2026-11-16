@@ -1,4 +1,4 @@
-# Presupuesto de instalación domótica para cliente…
+# Presupuesto de instalación domótica para cliente
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que convierte lo que pide un cliente de domótica en un presupuesto profe
 
 Te ayuda a cobrar la mano de obra y las horas de configuración que normalmente se regalan, y a evitar el trabajo extra no pagado por un alcance mal definido.
 
-- Redacción de presupuestos para instaladores autónomos…
-- Plantilla de propuesta con exclusiones y condiciones…
-- Servicio de gestión comercial para pequeños instaladores…
+- Redacción de presupuestos para instaladores autónomos.
+- Plantilla de propuesta con exclusiones y condiciones.
+- Servicio de gestión comercial para pequeños instaladores.
 
 **Precio orientativo:** 30–100 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

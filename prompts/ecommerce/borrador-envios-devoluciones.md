@@ -1,4 +1,4 @@
-# Borrador de política de envíos y devoluciones…
+# Borrador de política de envíos y devoluciones
 
 **Tipo:** Prompt · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 

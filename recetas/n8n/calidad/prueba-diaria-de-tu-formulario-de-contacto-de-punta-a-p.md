@@ -1,4 +1,4 @@
-# Prueba diaria de tu formulario de contacto de punta a p…
+# Prueba diaria de tu formulario de contacto de punta a p
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

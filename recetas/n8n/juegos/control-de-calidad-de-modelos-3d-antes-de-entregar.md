@@ -1,4 +1,4 @@
-# Control de calidad de modelos 3D antes de entregar…
+# Control de calidad de modelos 3D antes de entregar
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

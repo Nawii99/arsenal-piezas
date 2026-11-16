@@ -1,4 +1,4 @@
-# Apuntes, resumen y test a partir de la grabación de cla…
+# Apuntes, resumen y test a partir de la grabación de cla
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Formulario de contacto sin plugins: antispam, hoja y re…
+# Formulario de contacto sin plugins: antispam, hoja y re
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

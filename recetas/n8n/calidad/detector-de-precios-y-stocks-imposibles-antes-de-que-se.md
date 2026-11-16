@@ -1,4 +1,4 @@
-# Detector de precios y stocks imposibles antes de que se…
+# Detector de precios y stocks imposibles antes de que se
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

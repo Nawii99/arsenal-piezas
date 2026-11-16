@@ -1,4 +1,4 @@
-# Tabla de clientes falsos para probar sin tocar datos reales…
+# Tabla de clientes falsos para probar sin tocar datos reales
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Necesitas probar un CRM, un flujo de n8n o una plantilla de email y no quieres u
 
 Prepara datos de prueba para pymes y freelancers que estrenan un CRM o una automatización, y cobra por juego de datos o por entorno de pruebas a [TU PRECIO]. Los datos son inventados, así que el cliente puede enseñarlos sin riesgo.
 
-- Datos de prueba para flujos de n8n de autónomos que los van a vender, por lote…
-- Juegos de datos de ejemplo para demos de software, por demo…
-- Plantillas de datos ficticios para formar a equipos, por sesión…
+- Datos de prueba para flujos de n8n de autónomos que los van a vender, por lote.
+- Juegos de datos de ejemplo para demos de software, por demo.
+- Plantillas de datos ficticios para formar a equipos, por sesión.
 
 ## El prompt (cópialo entero)
 

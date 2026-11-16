@@ -1,4 +1,4 @@
-# Tickets y albaranes al Excel haciendo una foto con el m…
+# Tickets y albaranes al Excel haciendo una foto con el m
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Receta de n8n que convierte un bot de Telegram en escáner de tickets. Mandas la
 
 Cinco minutos por ticket a cero. Con 60 tickets al mes son cinco horas. Y no pierdes IVA deducible por tickets que se traspapelan.
 
-- Organización de tickets para un autónomo que factura poco…
-- Digitalización de albaranes para una pequeña empresa de reparto…
-- Puesta en marcha de un escáner de gastos para una gestoría pequeña…
+- Organización de tickets para un autónomo que factura poco.
+- Digitalización de albaranes para una pequeña empresa de reparto.
+- Puesta en marcha de un escáner de gastos para una gestoría pequeña.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

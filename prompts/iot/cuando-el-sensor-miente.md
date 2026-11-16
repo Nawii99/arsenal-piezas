@@ -1,4 +1,4 @@
-# Cuando el sensor miente…
+# Cuando el sensor miente
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que separa el sensor, la instalación, el sitio y la expectativa para ave
 
 Evita cambiar aparatos que estaban bien y evita decisiones tomadas con datos falsos; también salva tu credibilidad ante un cliente que te dice que su sensor no funciona.
 
-- Diagnóstico de sensores con lecturas erróneas…
-- Calibración y reubicación de sensores en instalaciones…
-- Informe técnico para clientes con dudas sobre sus datos…
+- Diagnóstico de sensores con lecturas erróneas.
+- Calibración y reubicación de sensores en instalaciones.
+- Informe técnico para clientes con dudas sobre sus datos.
 
 **Precio orientativo:** 40–120 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

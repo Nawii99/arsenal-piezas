@@ -1,4 +1,4 @@
-# Resumen diario de Pull Requests pendientes en Slack…
+# Resumen diario de Pull Requests pendientes en Slack
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando trabajéis dos o más personas en el mismo repositorio y los Pull Request
 
 Un PR parado 5 días es trabajo pagado sin entregar. Recuperar 2 horas semanales de coordinación son unas 100 € al mes. Todo con herramientas gratis.
 
-- Seguimiento de revisiones de código para equipos de dos a cinco desarrolladores…
-- Panel de PRs parados como servicio para agencias con varios repos de clientes…
-- Configuración de flujo de revisión para proyectos freelance en equipo…
+- Seguimiento de revisiones de código para equipos de dos a cinco desarrolladores.
+- Panel de PRs parados como servicio para agencias con varios repos de clientes.
+- Configuración de flujo de revisión para proyectos freelance en equipo.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

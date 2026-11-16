@@ -1,4 +1,4 @@
-# Control de calidad por muestreo…
+# Control de calidad por muestreo
 
 **Tipo:** Prompt · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que aplica muestreo estadístico sencillo al contenido generado por IA. E
 
 Publicar en masa con errores repetidos daña ventas y posicionamiento; el muestreo te permite escalar sin leerlo todo ni pagar a un revisor.
 
-- Control de calidad de fichas de producto generadas en masa…
-- Revisión por muestreo de traducciones y subtítulos de clientes…
-- Servicio de verificación antes de publicar catálogos con IA…
+- Control de calidad de fichas de producto generadas en masa.
+- Revisión por muestreo de traducciones y subtítulos de clientes.
+- Servicio de verificación antes de publicar catálogos con IA.
 
 **Precio orientativo:** 80–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

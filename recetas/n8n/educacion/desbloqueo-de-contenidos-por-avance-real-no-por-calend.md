@@ -1,4 +1,4 @@
-# Desbloqueo de contenidos por avance real, no por calend…
+# Desbloqueo de contenidos por avance real, no por calend
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

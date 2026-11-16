@@ -1,4 +1,4 @@
-# Unidad de aprendizaje · Prompt operativo…
+# Unidad de aprendizaje · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 

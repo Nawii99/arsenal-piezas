@@ -1,4 +1,4 @@
-# Alta automática de alumnos y acceso al curso…
+# Alta automática de alumnos y acceso al curso
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

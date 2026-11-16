@@ -1,4 +1,4 @@
-# Test de repaso semanal generado por IA desde tu temario…
+# Test de repaso semanal generado por IA desde tu temario
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

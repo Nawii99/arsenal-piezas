@@ -1,4 +1,4 @@
-# Capítulos automáticos en la descripción desde los subtí…
+# Capítulos automáticos en la descripción desde los subtí
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Descarga los subtítulos automáticos de tus vídeos de YouTube con marcas de ti
 
 Los capítulos suben la retención y hacen que Google muestre «momentos clave». Ahorra 15-20 minutos por vídeo largo.
 
-- Optimización de metadatos para canales de formación, con capítulos y descripciones por lote…
-- Revisión mensual de descripciones de YouTube para clientes con vídeos largos…
-- Plantilla de capítulos y SEO de vídeo para academias online…
+- Optimización de metadatos para canales de formación, con capítulos y descripciones por lote.
+- Revisión mensual de descripciones de YouTube para clientes con vídeos largos.
+- Plantilla de capítulos y SEO de vídeo para academias online.
 
 **Precio orientativo:** 40–120 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

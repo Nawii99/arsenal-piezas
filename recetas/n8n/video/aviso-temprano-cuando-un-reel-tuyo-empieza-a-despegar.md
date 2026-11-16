@@ -1,4 +1,4 @@
-# Aviso temprano cuando un reel tuyo empieza a despegar…
+# Aviso temprano cuando un reel tuyo empieza a despegar
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

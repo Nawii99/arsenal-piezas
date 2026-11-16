@@ -69,7 +69,7 @@ Lista de comprobación (marca cada una):
 ## Avisos que van dentro de la respuesta
 - Una factura emitida no se borra ni se edita. Si te equivocas, se hace una factura rectificativa que la anula o corrige.
 - Guarda todas las facturas emitidas y recibidas al menos 4 años (plazo de prescripción fiscal), mejor 6 por el Código de Comercio.
-- El sistema Verifactu (facturación con registro verificable ante la AEAT) tiene fechas de obligación que han cambiado varias veces. Antes de elegir programa de facturación, comprueba la fecha vigente para tu caso en la web de la AEAT: [consultar sede.agenciatributaria.gob.es]. Un Excel o un Word no van a cumplirlo.
+- Verifactu (requisitos del programa de facturación): sociedades antes del 1-ene-2027 y resto antes del 1-jul-2027 (RDL 15/2025, vigente); aplazamiento a octubre de 2028 anunciado el 5-oct-2026, aún sin BOE. Según la AEAT, Word o Excel usados solo para escribir, imprimir y guardar no son un sistema de facturación; si generan solos el libro registro, sí. La factura electrónica entre empresas es otra obligación (6-oct-2027 o 6-oct-2028). Confírmalo con tu gestoría.
 
 ## Qué NO hacer
 - No inventes NIF, direcciones ni números de factura. Si faltan, déjalos entre corchetes y dilo.

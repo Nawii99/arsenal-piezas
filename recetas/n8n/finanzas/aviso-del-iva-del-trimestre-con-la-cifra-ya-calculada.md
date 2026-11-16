@@ -1,4 +1,4 @@
-# Aviso del IVA del trimestre con la cifra ya calculada…
+# Aviso del IVA del trimestre con la cifra ya calculada
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

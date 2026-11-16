@@ -1,4 +1,4 @@
-# Auditor de fichas de producto con IA: faltas, huecos y…
+# Auditor de fichas de producto con IA: faltas, huecos y
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

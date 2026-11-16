@@ -1,4 +1,4 @@
-# Formulario de incidencias de clientes que crea la issue…
+# Formulario de incidencias de clientes que crea la issue
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando recibes bugs por WhatsApp, email y llamadas, sin capturas ni pasos, y lue
 
 Elimina el ir y venir de correos pidiendo datos (15-20 min por incidencia) y da imagen de empresa seria con seguimiento numerado.
 
-- Soporte técnico para agencias que mantienen webs de varios clientes…
-- Gestión de incidencias para equipos de desarrollo pequeños con clientes externos…
-- Implantación de seguimiento numerado de incidencias para software a medida…
+- Soporte técnico para agencias que mantienen webs de varios clientes.
+- Gestión de incidencias para equipos de desarrollo pequeños con clientes externos.
+- Implantación de seguimiento numerado de incidencias para software a medida.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

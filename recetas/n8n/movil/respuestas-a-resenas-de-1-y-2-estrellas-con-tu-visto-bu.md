@@ -1,4 +1,4 @@
-# Respuestas a reseñas de 1 y 2 estrellas con tu visto bu…
+# Respuestas a reseñas de 1 y 2 estrellas con tu visto bu
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

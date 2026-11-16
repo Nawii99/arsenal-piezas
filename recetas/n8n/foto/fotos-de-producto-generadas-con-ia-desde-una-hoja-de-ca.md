@@ -1,4 +1,4 @@
-# Fotos de producto generadas con IA desde una hoja de cá…
+# Fotos de producto generadas con IA desde una hoja de cá
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

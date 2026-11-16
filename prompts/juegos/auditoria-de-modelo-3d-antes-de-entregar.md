@@ -1,4 +1,4 @@
-# Auditoría de modelo 3D antes de entregar…
+# Auditoría de modelo 3D antes de entregar
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como artista técnico con experiencia revisando modelos antes 
 
 Evita rechazos y revisiones gratis por archivos pesados o mal montados, y te permite cobrar como profesional en encargos de 3D.
 
-- Auditoría técnica de modelos 3D para clientes…
-- Revisión previa a la subida a marketplaces…
-- Control de calidad de assets para estudios de juegos…
+- Auditoría técnica de modelos 3D para clientes.
+- Revisión previa a la subida a marketplaces.
+- Control de calidad de assets para estudios de juegos.
 
 **Precio orientativo:** 60–180 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

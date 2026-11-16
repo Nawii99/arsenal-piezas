@@ -1,4 +1,4 @@
-# Detector de reuploads y robos de tus vídeos…
+# Detector de reuploads y robos de tus vídeos
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

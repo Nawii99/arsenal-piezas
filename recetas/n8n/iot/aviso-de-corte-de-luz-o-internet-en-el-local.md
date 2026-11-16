@@ -1,4 +1,4 @@
-# Aviso de corte de luz o internet en el local…
+# Aviso de corte de luz o internet en el local
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

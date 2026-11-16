@@ -1,4 +1,4 @@
-# Diario de cambios de tu API a partir del OpenAPI…
+# Diario de cambios de tu API a partir del OpenAPI
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

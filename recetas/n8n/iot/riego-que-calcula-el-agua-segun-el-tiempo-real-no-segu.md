@@ -1,4 +1,4 @@
-# Riego que calcula el agua según el tiempo real, no segú…
+# Riego que calcula el agua según el tiempo real, no segú
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

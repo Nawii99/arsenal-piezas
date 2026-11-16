@@ -1,4 +1,4 @@
-# Botón físico que dispara un proceso de tu negocio…
+# Botón físico que dispara un proceso de tu negocio
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

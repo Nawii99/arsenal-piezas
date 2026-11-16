@@ -1,4 +1,4 @@
-# Privacidad de tu app: qué datos declaras en las tiendas…
+# Privacidad de tu app: qué datos declaras en las tiendas
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt que actúa como consultor de privacidad de apps en la Unión Europea. Rec
 
 Evita el bloqueo de la publicación y el riesgo de sanción por declarar mal; también te ahorra pagar a un asesor por el trabajo de inventario.
 
-- Inventario de datos y formularios de privacidad para apps…
-- Revisión de servicios externos y su impacto en la declaración…
-- Pack de textos de privacidad para lanzamientos en tiendas…
+- Inventario de datos y formularios de privacidad para apps.
+- Revisión de servicios externos y su impacto en la declaración.
+- Pack de textos de privacidad para lanzamientos en tiendas.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

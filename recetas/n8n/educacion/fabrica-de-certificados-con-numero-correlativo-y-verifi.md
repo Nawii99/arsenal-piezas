@@ -1,4 +1,4 @@
-# Fábrica de certificados con número correlativo y verifi…
+# Fábrica de certificados con número correlativo y verifi
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Lista de cortes para montar el episodio…
+# Lista de cortes para montar el episodio
 
 **Tipo:** Prompt · **Área:** Música y audio · **Licencia:** CC BY 4.0
 

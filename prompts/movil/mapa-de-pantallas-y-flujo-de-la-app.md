@@ -1,4 +1,4 @@
-# Mapa de pantallas y flujo de la app…
+# Mapa de pantallas y flujo de la app
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que dibuja en texto el mapa de pantallas de una
 
 Detectar pantallas que faltan sobre papel cuesta cero; detectarlas cuando ya está programada se paga en horas de desarrollo rehechas.
 
-- Mapas de pantallas y flujos para apps de negocios pequeños…
-- Preparación de diseño para freelance de UX…
-- Especificación previa a maquetar en Figma o código…
+- Mapas de pantallas y flujos para apps de negocios pequeños.
+- Preparación de diseño para freelance de UX.
+- Especificación previa a maquetar en Figma o código.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

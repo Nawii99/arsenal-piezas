@@ -1,4 +1,4 @@
-# De clase grabada a apuntes, resumen y capítulos…
+# De clase grabada a apuntes, resumen y capítulos
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

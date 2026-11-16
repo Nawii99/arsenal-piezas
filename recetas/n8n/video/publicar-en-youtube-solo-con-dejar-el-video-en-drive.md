@@ -1,4 +1,4 @@
-# Publicar en YouTube solo con dejar el vídeo en Drive…
+# Publicar en YouTube solo con dejar el vídeo en Drive
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Vigila una carpeta de Google Drive y, en cuanto aparece un MP4 nuevo, lo sube a 
 
 Ahorra unos 15-20 minutos por vídeo de subida y espera, y evita el clásico «se me olvidó subirlo». Con 8 vídeos al mes son 2 horas.
 
-- Entrega de vídeos a canales de clientes con subida automática a privado para revisión…
-- Flujo de publicación para academias con varios editores y un solo canal…
-- Configuración de subida automática para creadores que editan por su cuenta…
+- Entrega de vídeos a canales de clientes con subida automática a privado para revisión.
+- Flujo de publicación para academias con varios editores y un solo canal.
+- Configuración de subida automática para creadores que editan por su cuenta.
 
 **Precio orientativo:** 100–250 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

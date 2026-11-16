@@ -1,4 +1,4 @@
-# Reseñas de tu app al chat, con respuesta redactada…
+# Reseñas de tu app al chat, con respuesta redactada
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Receta de n8n que revisa cada hora las reseñas nuevas de tu app en Google Play 
 
 Ahorra la media hora diaria de entrar a las dos consolas y responder a mano. Contestar en menos de 24 h sube la nota media y esa nota es lo que te trae descargas gratis.
 
-- Gestión de reseñas para apps de pequeñas empresas sin equipo…
-- Respuestas en menos de 24 horas para una app de reservas de un local…
-- Panel mensual de reseñas con temas repetidos para el responsable de producto…
+- Gestión de reseñas para apps de pequeñas empresas sin equipo.
+- Respuestas en menos de 24 horas para una app de reservas de un local.
+- Panel mensual de reseñas con temas repetidos para el responsable de producto.
 
 **Precio orientativo:** 150–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

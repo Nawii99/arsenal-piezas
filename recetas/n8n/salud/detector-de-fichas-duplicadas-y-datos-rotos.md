@@ -1,4 +1,4 @@
-# Detector de fichas duplicadas y datos rotos…
+# Detector de fichas duplicadas y datos rotos
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

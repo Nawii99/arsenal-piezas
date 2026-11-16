@@ -1,4 +1,4 @@
-# Escribir la automatización complicada en YAML…
+# Escribir la automatización complicada en YAML
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando quieras una automatización que va más allá de encender una luz: con ho
 
 Te permite entregar automatizaciones que no dan la lata al cliente, que es la diferencia entre cobrar una instalación y que te llamen gratis cada semana.
 
-- Automatizaciones de Home Assistant a medida…
-- Configuración de escenas y rutinas para clientes…
-- Revisión de automatizaciones que se disparan mal…
+- Automatizaciones de Home Assistant a medida.
+- Configuración de escenas y rutinas para clientes.
+- Revisión de automatizaciones que se disparan mal.
 
 **Precio orientativo:** 40–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

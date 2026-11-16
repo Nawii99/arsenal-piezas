@@ -1,4 +1,4 @@
-# Buzón de bugs de playtest con capturas y ficha automáti…
+# Buzón de bugs de playtest con capturas y ficha automáti
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

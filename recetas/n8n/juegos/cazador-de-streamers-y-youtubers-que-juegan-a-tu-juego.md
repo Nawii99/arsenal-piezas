@@ -1,4 +1,4 @@
-# Cazador de streamers y youtubers que juegan a tu juego…
+# Cazador de streamers y youtubers que juegan a tu juego
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

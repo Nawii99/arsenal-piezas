@@ -1,4 +1,4 @@
-# Precio en riesgo: aviso cuando sube el coste de lo que…
+# Precio en riesgo: aviso cuando sube el coste de lo que
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando compras materiales o mercancía cuyo precio se mueve (alimentación, mate
 
 Detectar a tiempo que un producto ha pasado del 35 % al 12 % de margen. En un catálogo pequeño, ajustar tres precios recupera cientos de euros al mes.
 
-- Control de márgenes para tiendas y obradores con muchos productos…
-- Revisión de precios mensual como servicio para talleres y pequeños distribuidores…
-- Actualización de tarifas por coste para negocios que compran materias primas…
+- Control de márgenes para tiendas y obradores con muchos productos.
+- Revisión de precios mensual como servicio para talleres y pequeños distribuidores.
+- Actualización de tarifas por coste para negocios que compran materias primas.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

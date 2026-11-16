@@ -1,4 +1,4 @@
-# Ordenar el proyecto para no perder trabajo…
+# Ordenar el proyecto para no perder trabajo
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como coordinador de producción de u
 
 Ahorra horas de buscar archivos y evita el desastre de perder un encargo entero por un archivo corrupto o sobrescrito.
 
-- Auditoría y orden del flujo de archivos para freelances de 3D…
-- Plantilla de proyecto con carpetas y copias de seguridad para estudios pequeños…
-- Formación breve en organización de proyectos para equipos de juegos…
+- Auditoría y orden del flujo de archivos para freelances de 3D.
+- Plantilla de proyecto con carpetas y copias de seguridad para estudios pequeños.
+- Formación breve en organización de proyectos para equipos de juegos.
 
 **Precio orientativo:** 60–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

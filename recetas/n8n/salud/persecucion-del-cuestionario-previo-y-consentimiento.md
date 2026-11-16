@@ -1,4 +1,4 @@
-# Persecución del cuestionario previo y consentimiento…
+# Persecución del cuestionario previo y consentimiento
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

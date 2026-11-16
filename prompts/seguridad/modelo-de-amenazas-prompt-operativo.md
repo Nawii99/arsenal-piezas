@@ -1,4 +1,4 @@
-# Modelo de amenazas · Prompt operativo…
+# Modelo de amenazas · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Ciberseguridad · **Licencia:** CC BY 4.0
 

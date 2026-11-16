@@ -1,4 +1,4 @@
-# Cazador de paletas desde inspiración…
+# Cazador de paletas desde inspiración
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Recibe una imagen de referencia desde una carpeta de Drive y la envía a un mode
 
 Ahorra 15-20 minutos por moodboard y da paletas más coherentes. Coste: menos de 0,01 € por imagen analizada.
 
-- Paletas para moodboards de marca entregadas como ficha por imagen…
-- Servicio mensual de dirección de arte con biblioteca de paletas por cliente…
-- Plantilla para estudios que documentan referencias visuales de cada proyecto…
+- Paletas para moodboards de marca entregadas como ficha por imagen.
+- Servicio mensual de dirección de arte con biblioteca de paletas por cliente.
+- Plantilla para estudios que documentan referencias visuales de cada proyecto.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

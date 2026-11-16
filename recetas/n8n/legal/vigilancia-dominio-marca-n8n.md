@@ -1,4 +1,4 @@
-# Vigilancia semanal de dominio y aviso para registrar marca…
+# Vigilancia semanal de dominio y aviso para registrar marca
 
 **Tipo:** Receta de automatización · **Área:** Legal y contratos · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando quieres un nombre concreto y el dominio está ocupado ahora mismo, pero p
 
 Vigilancia de dominios como añadido gratis a un servicio de naming o registro de marca: el flujo se monta una vez y funciona solo para todos los clientes que quieran.
 
-- Vigilancia de dominios para clientes que esperan un nombre concreto…
-- Alertas de dominios para agencias que proponen nombres a sus clientes…
-- Servicio semanal de seguimiento de dominios para emprendedores en espera…
+- Vigilancia de dominios para clientes que esperan un nombre concreto.
+- Alertas de dominios para agencias que proponen nombres a sus clientes.
+- Servicio semanal de seguimiento de dominios para emprendedores en espera.
 
 **Precio orientativo:** 40–80 € por montaje. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

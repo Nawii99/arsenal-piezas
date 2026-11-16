@@ -1,4 +1,4 @@
-# Corrección de exámenes tipo test con informe personaliz…
+# Corrección de exámenes tipo test con informe personaliz
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Escaleta del primer episodio…
+# Escaleta del primer episodio
 
 **Tipo:** Prompt · **Área:** Música y audio · **Licencia:** CC BY 4.0
 

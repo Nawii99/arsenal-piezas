@@ -1,4 +1,4 @@
-# Agenda propia de cada profesional sincronizada…
+# Agenda propia de cada profesional sincronizada
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

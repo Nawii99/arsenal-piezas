@@ -1,4 +1,4 @@
-# Integrar un aparato que no tiene integración…
+# Integrar un aparato que no tiene integración
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que guía para controlar en local un dispositivo que solo funciona con su
 
 Te evita tirar aparatos que ya tienes y comprar sustitutos, y te permite ofrecer integraciones a clientes que ya tienen cacharros sueltos de marcas distintas.
 
-- Integración de aparatos sin integración oficial…
-- Servicio de unificación de dispositivos en Home Assistant…
-- Consultoría para dejar de depender de apps de fabricante…
+- Integración de aparatos sin integración oficial.
+- Servicio de unificación de dispositivos en Home Assistant.
+- Consultoría para dejar de depender de apps de fabricante.
 
 **Precio orientativo:** 50–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

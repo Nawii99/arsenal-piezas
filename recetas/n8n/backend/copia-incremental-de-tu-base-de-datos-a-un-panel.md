@@ -1,4 +1,4 @@
-# Copia incremental de tu base de datos a un panel…
+# Copia incremental de tu base de datos a un panel
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Guarda la marca del último id copiado, pide a tu base de datos solo los registr
 
 Ahorra 2-4 horas al mes de exportaciones manuales y evita comprar un ETL tipo Fivetran o Stitch (desde 100 €/mes).
 
-- Panel de informes para tiendas con datos actualizados sin tocar la base de producción…
-- Sincronización de datos para equipos de ventas en hoja, con actualización nocturna…
-- Configuración de copias incrementales para pymes que exportan CSV a mano…
+- Panel de informes para tiendas con datos actualizados sin tocar la base de producción.
+- Sincronización de datos para equipos de ventas en hoja, con actualización nocturna.
+- Configuración de copias incrementales para pymes que exportan CSV a mano.
 
 **Precio orientativo:** 100–300 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

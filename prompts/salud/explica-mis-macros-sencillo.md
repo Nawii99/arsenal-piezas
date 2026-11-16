@@ -1,4 +1,4 @@
-# Explícame mis macros sin jerga…
+# Explícame mis macros sin jerga
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

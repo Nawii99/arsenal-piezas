@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que convierte una idea de app en un brief funci
 
 Un brief cerrado evita el clásico presupuesto que se dobla por cambios: pides precio por algo definido y comparas ofertas de verdad.
 
-- Briefs funcionales de apps para emprendedores sin perfil técnico…
-- Documento previo a presupuesto para desarrolladores freelance…
-- Especificación para construir apps con IA o no-code…
+- Briefs funcionales de apps para emprendedores sin perfil técnico.
+- Documento previo a presupuesto para desarrolladores freelance.
+- Especificación para construir apps con IA o no-code.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

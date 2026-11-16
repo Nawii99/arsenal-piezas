@@ -1,4 +1,4 @@
-# cierre-de-mes-en-30-minutos…
+# cierre-de-mes-en-30-minutos
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que monta un cierre de mes de 30 minutos y lo e
 
 Detectar a tiempo un margen que baja o un cobro que se atasca evita meses perdidos y te ahorra las horas de reconstruir las cuentas al final del año.
 
-- Cierre mensual simplificado para pequeños negocios…
-- Cuadro de mando de seis números para autónomos…
-- Seguimiento financiero mensual como servicio recurrente…
+- Cierre mensual simplificado para pequeños negocios.
+- Cuadro de mando de seis números para autónomos.
+- Seguimiento financiero mensual como servicio recurrente.
 
 **Precio orientativo:** 60–180 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

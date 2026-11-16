@@ -1,4 +1,4 @@
-# Centinela de caducidades: certificados, dominios y toke…
+# Centinela de caducidades: certificados, dominios y toke
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tienes más de un dominio o proveedor y ya te ha pasado alguna vez que al
 
 Una web caída medio día por un certificado vencido cuesta ventas y confianza. Esto lo evita por cero euros.
 
-- Control de renovaciones para agencias con varias webs y proveedores de clientes…
-- Servicio mensual de vigilancia de caducidades para pymes con varias webs…
-- Configuración de un calendario de vencimientos para autónomos con dominios y servicios…
+- Control de renovaciones para agencias con varias webs y proveedores de clientes.
+- Servicio mensual de vigilancia de caducidades para pymes con varias webs.
+- Configuración de un calendario de vencimientos para autónomos con dominios y servicios.
 
 **Precio orientativo:** 30–80 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

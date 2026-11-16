@@ -1,4 +1,4 @@
-# Ajustar la economía y la progresión de tu juego…
+# Ajustar la economía y la progresión de tu juego
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como diseñador de sistemas y econom
 
 Una progresión bien medida es lo que hace que la gente siga jugando, y en juegos con anuncios o compras es directamente lo que decide tus ingresos.
 
-- Balance de economía y progresión para juegos idle, de gestión o roguelike…
-- Hoja de cálculo de costes y recompensas entregada a estudios indie…
-- Revisión de un juego que se hace pesado o demasiado fácil…
+- Balance de economía y progresión para juegos idle, de gestión o roguelike.
+- Hoja de cálculo de costes y recompensas entregada a estudios indie.
+- Revisión de un juego que se hace pesado o demasiado fácil.
 
 **Precio orientativo:** 150–600 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

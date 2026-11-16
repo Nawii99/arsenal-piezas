@@ -1,4 +1,4 @@
-# Motor editorial · Prompt operativo…
+# Motor editorial · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Contenido · **Licencia:** CC BY 4.0
 

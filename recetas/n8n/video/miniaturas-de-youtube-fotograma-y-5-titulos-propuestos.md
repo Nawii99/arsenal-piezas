@@ -1,4 +1,4 @@
-# Miniaturas de YouTube: fotograma y 5 títulos propuestos…
+# Miniaturas de YouTube: fotograma y 5 títulos propuestos
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando el vídeo está listo pero te atascas media hora eligiendo miniatura y t�
 
 Ahorra 30-40 minutos por vídeo de decisiones y pruebas, y mejorar el clic un punto vale más que cualquier otra optimización del canal.
 
-- Propuestas de miniatura y título para canales de creadores, con revisión incluida…
-- Pack de portadas de vídeo para negocios que publican en YouTube sin diseñador…
-- Análisis de miniaturas para mejorar clics en canales con buen contenido y poca visibilidad…
+- Propuestas de miniatura y título para canales de creadores, con revisión incluida.
+- Pack de portadas de vídeo para negocios que publican en YouTube sin diseñador.
+- Análisis de miniaturas para mejorar clics en canales con buen contenido y poca visibilidad.
 
 **Precio orientativo:** 15–40 € por vídeo. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

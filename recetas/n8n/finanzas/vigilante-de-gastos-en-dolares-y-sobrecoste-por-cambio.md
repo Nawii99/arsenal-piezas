@@ -1,4 +1,4 @@
-# Vigilante de gastos en dólares y sobrecoste por cambio…
+# Vigilante de gastos en dólares y sobrecoste por cambio
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando pagas software, publicidad o proveedores en USD o GBP y no sabes cuánto 
 
 La comisión típica de cambio de un banco tradicional es del 3 %. Sobre 800 €/mes en herramientas son 288 €/año que ahorras pasando a una tarjeta sin comisión de cambio.
 
-- Auditoría de comisiones de cambio para negocios digitales que pagan software en dólares…
-- Informe de costes de divisa para agencias con publicidad fuera de la zona euro…
-- Análisis de tarjetas sin comisión de cambio como consultoría para autónomos…
+- Auditoría de comisiones de cambio para negocios digitales que pagan software en dólares.
+- Informe de costes de divisa para agencias con publicidad fuera de la zona euro.
+- Análisis de tarjetas sin comisión de cambio como consultoría para autónomos.
 
 **Precio orientativo:** 60–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Difuminado automático de caras antes de publicar fotos…
+# Difuminado automático de caras antes de publicar fotos
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

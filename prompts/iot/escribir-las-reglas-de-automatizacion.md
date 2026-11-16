@@ -1,4 +1,4 @@
-# Escribir las reglas de automatización…
+# Escribir las reglas de automatización
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que convierte una idea del tipo «que la luz se encienda si...» en regla
 
 Evita automatizaciones que molestan al cliente y generan llamadas de soporte; unas reglas bien escritas se programan en un rato y no hay que rehacerlas.
 
-- Diseño de automatizaciones domóticas para particulares…
-- Configuración de reglas para locales y oficinas…
-- Revisión de automatizaciones que molestan o fallan…
+- Diseño de automatizaciones domóticas para particulares.
+- Configuración de reglas para locales y oficinas.
+- Revisión de automatizaciones que molestan o fallan.
 
 **Precio orientativo:** 40–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

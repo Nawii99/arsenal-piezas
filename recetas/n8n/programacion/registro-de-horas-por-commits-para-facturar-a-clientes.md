@@ -1,4 +1,4 @@
-# Registro de horas por commits para facturar a clientes…
+# Registro de horas por commits para facturar a clientes
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

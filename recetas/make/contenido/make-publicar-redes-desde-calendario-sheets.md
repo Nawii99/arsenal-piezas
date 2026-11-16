@@ -1,4 +1,4 @@
-# Make (make.com): publicar en Facebook e Instagram desde un c…
+# Make (make.com): publicar en Facebook e Instagram desde un c
 
 **Tipo:** Receta de automatización · **Área:** Contenido · **Licencia:** CC BY 4.0
 

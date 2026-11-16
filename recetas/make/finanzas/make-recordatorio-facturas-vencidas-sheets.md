@@ -1,4 +1,4 @@
-# Make (make.com): recordatorio de facturas vencidas desde una…
+# Make (make.com): recordatorio de facturas vencidas desde una
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

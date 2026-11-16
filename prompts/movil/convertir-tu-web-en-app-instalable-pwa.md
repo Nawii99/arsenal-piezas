@@ -23,9 +23,9 @@ Prompt que actúa como desarrollador web y asesor honesto para convertir una web
 
 Te ahorras las cuotas de desarrollador y el desarrollo de dos apps nativas, y ganas un canal directo con el cliente sin intermediarios.
 
-- Conversión de webs de negocio en PWA instalables…
-- Instalación de PWA con icono y modo offline básico…
-- Alternativa económica a una app de tienda para clientes recurrentes…
+- Conversión de webs de negocio en PWA instalables.
+- Instalación de PWA con icono y modo offline básico.
+- Alternativa económica a una app de tienda para clientes recurrentes.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

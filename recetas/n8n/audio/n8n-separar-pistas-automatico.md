@@ -1,4 +1,4 @@
-# Separar pistas de audio automáticamente al subir una canción…
+# Separar pistas de audio automáticamente al subir una canción
 
 **Tipo:** Receta de automatización · **Área:** Música y audio · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Subes canciones a menudo para separar la voz del instrumental y te cansa abrir l
 
 Instálaselo a un estudio, a un profesor de canto o a un grupo de versiones que trabaja con muchas pistas. Cobra la puesta en marcha y, si quieres, un mantenimiento mensual [TU PRECIO].
 
-- Separación de pistas por lote para un estudio de grabación pequeño…
-- Karaoke automático para locales y academias de canto…
-- Mantenimiento mensual de flujos de audio para un grupo de versiones…
+- Separación de pistas por lote para un estudio de grabación pequeño.
+- Karaoke automático para locales y academias de canto.
+- Mantenimiento mensual de flujos de audio para un grupo de versiones.
 
 **Precio orientativo:** 100–200 € por puesta en marcha (más 20-4. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

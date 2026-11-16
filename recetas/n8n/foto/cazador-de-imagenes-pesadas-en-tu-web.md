@@ -1,4 +1,4 @@
-# Cazador de imágenes pesadas en tu web…
+# Cazador de imágenes pesadas en tu web
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

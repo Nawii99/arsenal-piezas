@@ -1,4 +1,4 @@
-# Informe de cadena de frío por cada reparto…
+# Informe de cadena de frío por cada reparto
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

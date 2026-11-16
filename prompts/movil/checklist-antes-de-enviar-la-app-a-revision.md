@@ -1,4 +1,4 @@
-# Checklist antes de enviar la app a revisión…
+# Checklist antes de enviar la app a revisión
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Justo antes de mandar tu primera versión, tras un rechazo, o cuando vayas a pub
 
 Cada rechazo son días parado y otra ronda de espera; pasar a la primera adelanta el lanzamiento y evita perder la fecha de una campaña ya pagada.
 
-- Checklist de envío a revisión para apps de clientes…
-- Revisión previa de actualizaciones con pagos o datos nuevos…
-- Servicio de publicación asistida en App Store y Google Play…
+- Checklist de envío a revisión para apps de clientes.
+- Revisión previa de actualizaciones con pagos o datos nuevos.
+- Servicio de publicación asistida en App Store y Google Play.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

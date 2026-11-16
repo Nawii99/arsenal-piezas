@@ -1,4 +1,4 @@
-# Errores agrupados por huella que abren incidencia sola…
+# Errores agrupados por huella que abren incidencia sola
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

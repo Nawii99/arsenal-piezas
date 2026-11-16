@@ -1,4 +1,4 @@
-# Email de captación para servicio de contabilidad…
+# Email de captación para servicio de contabilidad
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

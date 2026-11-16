@@ -1,4 +1,4 @@
-# Presupuesto automático: formulario, PDF y seguimiento del co…
+# Presupuesto automático: formulario, PDF y seguimiento del co
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Montas cada presupuesto a mano y luego se te olvida hacer seguimiento al que no 
 
 Móntalo a medida para pequeños negocios que presupuestan a menudo, como reformas, estudios de diseño o instaladores: cobras la instalación con su plantilla y una cuota de mantenimiento de [TU PRECIO]. El IVA y las condiciones de la plantilla los revisa su gestor.
 
-- Montaje de presupuestos automáticos para autónomos con muchos encargos, por instalación…
-- Seguimiento de presupuestos pendientes para pymes, por mes…
-- Plantillas de presupuesto por sector para una gestoría, por lote…
+- Montaje de presupuestos automáticos para autónomos con muchos encargos, por instalación.
+- Seguimiento de presupuestos pendientes para pymes, por mes.
+- Plantillas de presupuesto por sector para una gestoría, por lote.
 
 **Precio orientativo:** 150–300 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

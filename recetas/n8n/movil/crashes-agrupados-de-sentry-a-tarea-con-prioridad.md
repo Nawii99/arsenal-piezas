@@ -1,4 +1,4 @@
-# Crashes agrupados: de Sentry a tarea con prioridad…
+# Crashes agrupados: de Sentry a tarea con prioridad
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Cuando tienes Sentry o Crashlytics conectado y te llegan cientos de avisos que y
 
 Evita que un crash en el checkout viva días sin detectarse. Ahorra 3-5 horas semanales de triaje manual y reduce reseñas de una estrella por fallos.
 
-- Vigilancia de fallos en el pago para una tienda con app…
-- Triaje de errores para una app de reservas con pocos desarrolladores…
-- Servicio de monitorización de errores para apps de pequeñas empresas…
+- Vigilancia de fallos en el pago para una tienda con app.
+- Triaje de errores para una app de reservas con pocos desarrolladores.
+- Servicio de monitorización de errores para apps de pequeñas empresas.
 
 **Precio orientativo:** 250–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

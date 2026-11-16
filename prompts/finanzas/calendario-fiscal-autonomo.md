@@ -1,4 +1,4 @@
-# Calendario fiscal para autónomo que empieza…
+# Calendario fiscal para autónomo que empieza
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

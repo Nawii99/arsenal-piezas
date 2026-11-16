@@ -1,4 +1,4 @@
-# Alarma de presencia: PIR + ESP32 avisa por Telegram con n8n…
+# Alarma de presencia: PIR + ESP32 avisa por Telegram con n8n
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Quieres que el móvil te avise cuando salte el sensor de movimiento del trastero
 
 Instálalo como aviso casero a particulares y pequeños locales que no quieren una alarma con central, y cobra la instalación más una cuota mensual de [TU PRECIO]. Deja por escrito que no sustituye a una alarma con central receptora.
 
-- Avisos de presencia para locales pequeños sin alarma profesional, por instalación…
-- Mantenimiento mensual de avisos y sensores, por mes…
-- Ampliación con foto para viviendas que lo piden, por instalación…
+- Avisos de presencia para locales pequeños sin alarma profesional, por instalación.
+- Mantenimiento mensual de avisos y sensores, por mes.
+- Ampliación con foto para viviendas que lo piden, por instalación.
 
 **Precio orientativo:** 100–250 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

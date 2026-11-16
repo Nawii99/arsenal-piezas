@@ -1,4 +1,4 @@
-# Letra personalizada para un encargo pagado…
+# Letra personalizada para un encargo pagado
 
 **Tipo:** Prompt · **Área:** Música y audio · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Para usar en Claude, Codex, Gemini, una IA local u otro chat, antes de meter el 
 
 Cualquier chat de IA de texto (Claude, Codex, Gemini o una IA local)
 
-- Letras a medida para bodas, aniversarios y cumpleaños cobradas por encargo…
-- Canción de empresa para celebrar hitos de equipo o de clientes…
-- Regalos musicales personalizados para despedidas y jubilaciones…
+- Letras a medida para bodas, aniversarios y cumpleaños cobradas por encargo.
+- Canción de empresa para celebrar hitos de equipo o de clientes.
+- Regalos musicales personalizados para despedidas y jubilaciones.
 
 **Precio orientativo:** 40–80 € por letra. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

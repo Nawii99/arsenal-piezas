@@ -1,4 +1,4 @@
-# Reservas de sesión: formulario, calendario y señal cobr…
+# Reservas de sesión: formulario, calendario y señal cobr
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Formulario de soporte que crea la incidencia en GitHub…
+# Formulario de soporte que crea la incidencia en GitHub
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Un formulario público (Tally o Google Forms) recoge la descripción del fallo, 
 
 Evitas rehacer trabajo por bugs perdidos y dejas de copiar-pegar tickets a mano: unas 3 horas al mes. Formulario y GitHub, gratis.
 
-- Canal de incidencias para clientes de mantenimiento web sin pagar un helpdesk…
-- Gestión de bugs para agencias con varias webs de clientes…
-- Soporte técnico estructurado como servicio mensual para pymes…
+- Canal de incidencias para clientes de mantenimiento web sin pagar un helpdesk.
+- Gestión de bugs para agencias con varias webs de clientes.
+- Soporte técnico estructurado como servicio mensual para pymes.
 
 **Precio orientativo:** 80–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

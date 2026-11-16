@@ -1,4 +1,4 @@
-# Temario de curso por resultados…
+# Temario de curso por resultados
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como diseñador instruccional para convertir lo que sabes hace
 
 Un temario cerrado te permite abrir preventa y vender antes de grabar, y evita grabar módulos que nadie necesita.
 
-- Diseño del temario de cursos online para expertos…
-- Reconversión de tu oficio en un producto formativo…
-- Auditoría de cursos existentes por resultados…
+- Diseño del temario de cursos online para expertos.
+- Reconversión de tu oficio en un producto formativo.
+- Auditoría de cursos existentes por resultados.
 
 **Precio orientativo:** 150–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Reparto controlado de claves de Steam a prensa y creado…
+# Reparto controlado de claves de Steam a prensa y creado
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

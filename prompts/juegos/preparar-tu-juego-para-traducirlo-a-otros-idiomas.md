@@ -1,4 +1,4 @@
-# Preparar tu juego para traducirlo a otros idiomas…
+# Preparar tu juego para traducirlo a otros idiomas
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que prepara los textos de un juego para traduci
 
 Abrir tu juego a inglés y a un par de idiomas más multiplica el público al que puedes venderlo con un coste bajo.
 
-- Preparación de textos para localización de juegos indie con glosario y límites…
-- Gestión de traducción con revisión humana de menús y fichas de tienda…
-- Auditoría de textos cortados y claves de traducción en un juego terminado…
+- Preparación de textos para localización de juegos indie con glosario y límites.
+- Gestión de traducción con revisión humana de menús y fichas de tienda.
+- Auditoría de textos cortados y claves de traducción en un juego terminado.
 
 **Precio orientativo:** 100–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

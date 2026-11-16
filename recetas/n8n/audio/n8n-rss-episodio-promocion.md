@@ -1,4 +1,4 @@
-# Del RSS del podcast al borrador de promoción…
+# Del RSS del podcast al borrador de promoción
 
 **Tipo:** Receta de automatización · **Área:** Música y audio · **Licencia:** CC BY 4.0
 

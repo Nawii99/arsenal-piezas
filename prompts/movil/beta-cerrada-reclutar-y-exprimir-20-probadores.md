@@ -1,4 +1,4 @@
-# Beta cerrada: reclutar y exprimir 20 probadores…
+# Beta cerrada: reclutar y exprimir 20 probadores
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando la app ya funciona pero no está publicada, o cuando Google Play te exija
 
 Salir con los fallos gordos ya arreglados evita reseñas de una estrella nada más publicar, que son las más caras de revertir.
 
-- Organización de la prueba cerrada de 20 testers de Google Play…
-- Reclutamiento y seguimiento de betas con informe final…
-- Plan de feedback de testers para apps antes de publicar…
+- Organización de la prueba cerrada de 20 testers de Google Play.
+- Reclutamiento y seguimiento de betas con informe final.
+- Plan de feedback de testers para apps antes de publicar.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

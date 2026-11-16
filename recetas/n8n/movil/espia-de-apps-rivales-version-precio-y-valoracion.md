@@ -1,4 +1,4 @@
-# Espía de apps rivales: versión, precio y valoración…
+# Espía de apps rivales: versión, precio y valoración
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

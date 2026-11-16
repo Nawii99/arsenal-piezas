@@ -1,4 +1,4 @@
-# Aviso al móvil si tu app o tu API se cae…
+# Aviso al móvil si tu app o tu API se cae
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Receta de n8n que comprueba cada cinco minutos que la API de tu app, la web y el
 
 Una caída de dos horas en horario de compras se come las ventas del día. Sustituye a los planes de monitorización de 15-30 € al mes por 0 €.
 
-- Vigilancia de disponibilidad para una tienda online con ventas en horario fijo…
-- Monitorización de web y API para un proveedor de servicios pequeño…
-- Servicio mensual de vigilancia con informe de caídas para clientes…
+- Vigilancia de disponibilidad para una tienda online con ventas en horario fijo.
+- Monitorización de web y API para un proveedor de servicios pequeño.
+- Servicio mensual de vigilancia con informe de caídas para clientes.
 
 **Precio orientativo:** 100–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

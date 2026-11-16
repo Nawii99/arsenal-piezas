@@ -1,4 +1,4 @@
-# Borradores de respuesta a reseñas malas, listos para ap…
+# Borradores de respuesta a reseñas malas, listos para ap
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Escribir tu 'Sobre mí' para la web de currículum…
+# Escribir tu 'Sobre mí' para la web de currículum
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Te falta la sección «Sobre mí» de tu web y no sabes cómo hablar de ti sin s
 
 Inclúyelo en un pack de web de currículum o de perfil profesional para quien busca empleo y cobra el pack [TU PRECIO]. Comprueba con el cliente que todo lo que aparece es cierto.
 
-- Textos de presentación para webs de currículum de personas en búsqueda de empleo…
-- Pack de perfiles profesionales para autónomos que se presentan en LinkedIn…
-- Revisión de textos de presentación para orientadores laborales…
+- Textos de presentación para webs de currículum de personas en búsqueda de empleo.
+- Pack de perfiles profesionales para autónomos que se presentan en LinkedIn.
+- Revisión de textos de presentación para orientadores laborales.
 
 **Precio orientativo:** 15–30 € por texto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

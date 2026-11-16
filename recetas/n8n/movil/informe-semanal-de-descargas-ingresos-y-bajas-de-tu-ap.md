@@ -1,4 +1,4 @@
-# Informe semanal de descargas, ingresos y bajas de tu ap…
+# Informe semanal de descargas, ingresos y bajas de tu ap
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Receta de n8n que cada lunes pide a RevenueCat los ingresos, altas y bajas de la
 
 Ahorra una hora semanal de copiar cifras y, sobre todo, hace que veas una caída de conversión en la semana 1 y no en el cierre del trimestre.
 
-- Cuadro de mando semanal para una app pequeña con suscripciones…
-- Informe de métricas para un cliente que tiene una app de pago…
-- Seguimiento de bajas y ventas para un estudio que vende apps…
+- Cuadro de mando semanal para una app pequeña con suscripciones.
+- Informe de métricas para un cliente que tiene una app de pago.
+- Seguimiento de bajas y ventas para un estudio que vende apps.
 
 **Precio orientativo:** 200–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

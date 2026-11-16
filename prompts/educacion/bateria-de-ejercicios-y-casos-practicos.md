@@ -1,4 +1,4 @@
-# Batería de ejercicios y casos prácticos…
+# Batería de ejercicios y casos prácticos
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que crea una batería de cinco ejercicios progr
 
 Un curso con práctica se puede cobrar bastante más que uno de solo vídeos, y genera muchos menos reembolsos.
 
-- Packs de ejercicios y casos prácticos para cursos online…
-- Material práctico por módulo para academias…
-- Casos resueltos como producto descargable complementario…
+- Packs de ejercicios y casos prácticos para cursos online.
+- Material práctico por módulo para academias.
+- Casos resueltos como producto descargable complementario.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

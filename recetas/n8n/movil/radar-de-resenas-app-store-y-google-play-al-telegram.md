@@ -1,4 +1,4 @@
-# Radar de reseñas: App Store y Google Play al Telegram…
+# Radar de reseñas: App Store y Google Play al Telegram
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

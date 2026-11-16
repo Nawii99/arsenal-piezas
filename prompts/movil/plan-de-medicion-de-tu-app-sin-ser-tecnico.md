@@ -1,4 +1,4 @@
-# Plan de medición de tu app sin ser técnico…
+# Plan de medición de tu app sin ser técnico
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Antes de encargar la app o justo después de lanzarla, cuando tienes números su
 
 Sin medición, la publicidad se gasta a ciegas; con el embudo bien puesto sabes qué pantalla arreglar y qué campaña apagar antes de quemar el presupuesto.
 
-- Plan de medición de eventos para apps nuevas…
-- Documento de analítica para entregar al desarrollador…
-- Auditoría de datos de apps con descargas pero sin conversión…
+- Plan de medición de eventos para apps nuevas.
+- Documento de analítica para entregar al desarrollador.
+- Auditoría de datos de apps con descargas pero sin conversión.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

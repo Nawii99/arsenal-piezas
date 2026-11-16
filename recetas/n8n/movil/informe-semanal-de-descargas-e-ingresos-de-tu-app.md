@@ -1,4 +1,4 @@
-# Informe semanal de descargas e ingresos de tu app…
+# Informe semanal de descargas e ingresos de tu app
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

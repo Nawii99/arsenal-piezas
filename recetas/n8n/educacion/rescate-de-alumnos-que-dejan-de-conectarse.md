@@ -1,4 +1,4 @@
-# Rescate de alumnos que dejan de conectarse…
+# Rescate de alumnos que dejan de conectarse
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

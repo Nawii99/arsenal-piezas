@@ -1,4 +1,4 @@
-# Factura automática y aviso de pago pendiente…
+# Factura automática y aviso de pago pendiente
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

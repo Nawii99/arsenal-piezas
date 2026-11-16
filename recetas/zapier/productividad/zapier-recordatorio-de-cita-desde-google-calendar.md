@@ -1,4 +1,4 @@
-# Zapier: recordatorio de cita desde Google Calendar…
+# Zapier: recordatorio de cita desde Google Calendar
 
 **Tipo:** Receta de automatización · **Área:** Productividad · **Licencia:** CC BY 4.0
 

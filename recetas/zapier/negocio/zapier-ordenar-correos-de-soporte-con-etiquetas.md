@@ -1,4 +1,4 @@
-# Zapier: ordenar correos de soporte con etiquetas…
+# Zapier: ordenar correos de soporte con etiquetas
 
 **Tipo:** Receta de automatización · **Área:** Negocio · **Licencia:** CC BY 4.0
 

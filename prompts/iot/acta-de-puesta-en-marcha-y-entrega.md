@@ -1,4 +1,4 @@
-# Acta de puesta en marcha y entrega…
+# Acta de puesta en marcha y entrega
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que genera el protocolo de pruebas de una instalación antes de entregarl
 
 Reduce las visitas gratuitas posteriores y las discusiones sobre qué estaba incluido; una entrega documentada también justifica cobrar mantenimiento.
 
-- Protocolo de puesta en marcha para instaladores…
-- Acta de entrega firmada y manual para el cliente…
-- Servicio de documentación de instalaciones terminadas…
+- Protocolo de puesta en marcha para instaladores.
+- Acta de entrega firmada y manual para el cliente.
+- Servicio de documentación de instalaciones terminadas.
 
 **Precio orientativo:** 40–120 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

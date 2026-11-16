@@ -23,9 +23,9 @@ Cuando dependes de una API de terceros o tienes una app móvil que llama a tu ba
 
 Evita el clásico «hace dos semanas que la integración no manda pedidos y nadie se dio cuenta». Es un incidente menos al trimestre.
 
-- Vigilancia de cambios en APIs de proveedores para integraciones de tiendas y ERP…
-- Mantenimiento de integraciones para agencias que conectan clientes con terceros…
-- Auditoría de contratos de API para startups con apps móviles…
+- Vigilancia de cambios en APIs de proveedores para integraciones de tiendas y ERP.
+- Mantenimiento de integraciones para agencias que conectan clientes con terceros.
+- Auditoría de contratos de API para startups con apps móviles.
 
 **Precio orientativo:** 40–120 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

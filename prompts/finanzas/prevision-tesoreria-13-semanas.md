@@ -1,4 +1,4 @@
-# prevision-tesoreria-13-semanas…
+# prevision-tesoreria-13-semanas
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que convierte cobros y pagos previstos en un ca
 
 Ver el agujero de caja con semanas de margen te permite adelantar cobros o aplazar pagos sin recurrir a descubiertos ni financiación cara.
 
-- Previsión de tesorería para pymes y autónomos…
-- Seguimiento semanal de caja como servicio recurrente…
-- Informe previo a contratar o comprar stock…
+- Previsión de tesorería para pymes y autónomos.
+- Seguimiento semanal de caja como servicio recurrente.
+- Informe previo a contratar o comprar stock.
 
 **Precio orientativo:** 100–300 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

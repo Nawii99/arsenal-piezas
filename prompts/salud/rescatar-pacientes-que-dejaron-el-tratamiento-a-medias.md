@@ -1,4 +1,4 @@
-# Rescatar pacientes que dejaron el tratamiento a medias…
+# Rescatar pacientes que dejaron el tratamiento a medias
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Prompt para cualquier chat de IA que actúa como responsable de atención al pac
 
 Rellenar huecos con gente que ya te conoce sale mucho más barato que captar nuevos, y recuperar un plan a medias son varias sesiones seguidas.
 
-- Rescate de pacientes con tratamiento abandonado en clínicas pequeñas…
-- Guion de llamada y mensajes para recuperar clientes…
-- Servicio de priorización de lista de inactivos…
+- Rescate de pacientes con tratamiento abandonado en clínicas pequeñas.
+- Guion de llamada y mensajes para recuperar clientes.
+- Servicio de priorización de lista de inactivos.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

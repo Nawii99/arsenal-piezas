@@ -1,4 +1,4 @@
-# Palabras clave de la oferta, colocadas sin que cante…
+# Palabras clave de la oferta, colocadas sin que cante
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

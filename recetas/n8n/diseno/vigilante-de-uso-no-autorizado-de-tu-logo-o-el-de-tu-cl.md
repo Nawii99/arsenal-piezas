@@ -1,4 +1,4 @@
-# Vigilante de uso no autorizado de tu logo o el de tu cl…
+# Vigilante de uso no autorizado de tu logo o el de tu cl
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando entregas una identidad a un cliente con contrato de uso, o cuando quieres
 
 Detectar un uso indebido a tiempo evita procesos legales y protege la exclusividad que le has vendido al cliente; a mano son horas de rastreo que nadie hace.
 
-- Vigilancia semanal de marca como servicio mensual para clientes con contrato…
-- Informe de detección de copias para estudios de branding…
-- Auditoría puntual de uso de marca antes de renovar un contrato…
+- Vigilancia semanal de marca como servicio mensual para clientes con contrato.
+- Informe de detección de copias para estudios de branding.
+- Auditoría puntual de uso de marca antes de renovar un contrato.
 
 **Precio orientativo:** 40–120 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

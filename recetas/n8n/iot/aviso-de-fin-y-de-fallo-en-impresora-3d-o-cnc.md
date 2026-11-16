@@ -1,4 +1,4 @@
-# Aviso de fin y de fallo en impresora 3D o CNC…
+# Aviso de fin y de fallo en impresora 3D o CNC
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

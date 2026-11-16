@@ -1,4 +1,4 @@
-# Banco de pruebas de tu chatbot o tus respuestas automát…
+# Banco de pruebas de tu chatbot o tus respuestas automát
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

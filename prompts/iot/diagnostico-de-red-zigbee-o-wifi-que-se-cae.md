@@ -1,4 +1,4 @@
-# Diagnóstico de red Zigbee o WiFi que se cae…
+# Diagnóstico de red Zigbee o WiFi que se cae
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que convierte síntomas como «el sensor del garaje se desconecta» en un
 
 Evita comprar repetidores o dispositivos nuevos que no hacían falta, y te ahorra las horas de prueba y error que hoy pierdes cada vez que algo se cae.
 
-- Soporte técnico remoto para domótica doméstica…
-- Optimización de redes Zigbee en viviendas…
-- Servicio de revisión de cobertura de dispositivos inteligentes…
+- Soporte técnico remoto para domótica doméstica.
+- Optimización de redes Zigbee en viviendas.
+- Servicio de revisión de cobertura de dispositivos inteligentes.
 
 **Precio orientativo:** 40–120 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

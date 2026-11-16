@@ -1,4 +1,4 @@
-# Interruptor de hombre muerto para tus tareas programada…
+# Interruptor de hombre muerto para tus tareas programada
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 

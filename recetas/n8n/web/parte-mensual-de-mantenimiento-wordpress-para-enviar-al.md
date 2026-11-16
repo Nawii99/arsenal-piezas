@@ -1,4 +1,4 @@
-# Parte mensual de mantenimiento WordPress para enviar al…
+# Parte mensual de mantenimiento WordPress para enviar al
 
 **Tipo:** Receta de automatización · **Área:** Web · **Licencia:** CC BY 4.0
 

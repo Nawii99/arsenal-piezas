@@ -1,4 +1,4 @@
-# Reposición automática de pilas y mantenimiento de senso…
+# Reposición automática de pilas y mantenimiento de senso
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

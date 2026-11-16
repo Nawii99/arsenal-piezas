@@ -1,4 +1,4 @@
-# Repaso espaciado por email después de cada tema…
+# Repaso espaciado por email después de cada tema
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

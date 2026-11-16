@@ -1,4 +1,4 @@
-# Enchufes que se encienden en las horas más baratas de l…
+# Enchufes que se encienden en las horas más baratas de l
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

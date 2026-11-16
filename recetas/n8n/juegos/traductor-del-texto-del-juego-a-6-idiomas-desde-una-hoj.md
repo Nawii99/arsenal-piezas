@@ -1,4 +1,4 @@
-# Traductor del texto del juego a 6 idiomas desde una hoj…
+# Traductor del texto del juego a 6 idiomas desde una hoj
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

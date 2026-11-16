@@ -1,4 +1,4 @@
-# Radar de la competencia en YouTube…
+# Radar de la competencia en YouTube
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 

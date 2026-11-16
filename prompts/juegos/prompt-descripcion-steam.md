@@ -1,4 +1,4 @@
-# Generador de descripcion corta y larga para Steam…
+# Generador de descripcion corta y larga para Steam
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

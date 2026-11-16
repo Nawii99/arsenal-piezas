@@ -1,4 +1,4 @@
-# Checklist de borrado seguro antes de vender el móvil…
+# Checklist de borrado seguro antes de vender el móvil
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 

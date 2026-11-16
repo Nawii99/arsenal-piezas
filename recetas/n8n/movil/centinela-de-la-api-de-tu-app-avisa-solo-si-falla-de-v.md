@@ -1,4 +1,4 @@
-# Centinela de la API de tu app: avisa solo si falla de v…
+# Centinela de la API de tu app: avisa solo si falla de v
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 

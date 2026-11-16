@@ -1,4 +1,4 @@
-# Puntos de experiencia con cifras…
+# Puntos de experiencia con cifras
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

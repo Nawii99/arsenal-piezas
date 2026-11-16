@@ -1,4 +1,4 @@
-# Recordatorio mensual de revisión de licencias de assets…
+# Recordatorio mensual de revisión de licencias de assets
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

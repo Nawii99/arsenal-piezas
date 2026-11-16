@@ -1,4 +1,4 @@
-# Panel de negocio: de tu base de datos a Google Sheets c…
+# Panel de negocio: de tu base de datos a Google Sheets c
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

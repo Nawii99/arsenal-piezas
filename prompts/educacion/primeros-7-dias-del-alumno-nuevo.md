@@ -1,4 +1,4 @@
-# Primeros 7 días del alumno nuevo…
+# Primeros 7 días del alumno nuevo
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que diseña la bienvenida de los 7 primeros dí
 
 El alumno que arranca la primera semana termina y recomienda; el que no arranca pide devolución. Esto reduce las devoluciones.
 
-- Secuencias de bienvenida para cursos y comunidades de pago…
-- Diseño de la experiencia del alumno para escuelas online…
-- Reducción de devoluciones con onboarding guiado para infoproductores…
+- Secuencias de bienvenida para cursos y comunidades de pago.
+- Diseño de la experiencia del alumno para escuelas online.
+- Reducción de devoluciones con onboarding guiado para infoproductores.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

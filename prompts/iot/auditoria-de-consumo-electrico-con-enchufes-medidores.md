@@ -1,4 +1,4 @@
-# Auditoría de consumo eléctrico con enchufes medidores…
+# Auditoría de consumo eléctrico con enchufes medidores
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

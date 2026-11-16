@@ -1,4 +1,4 @@
-# Las dudas del grupo convertidas en tu banco de pregunta…
+# Las dudas del grupo convertidas en tu banco de pregunta
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Encuesta de sensaciones post-sesión y aviso al profesio…
+# Encuesta de sensaciones post-sesión y aviso al profesio
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

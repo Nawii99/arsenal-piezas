@@ -1,4 +1,4 @@
-# plan-adherencia-habitos…
+# plan-adherencia-habitos
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando trabajas como entrenador, coach o nutricionista y tus clientes empiezan c
 
 Los clientes que siguen el plan renuevan y te recomiendan; la adherencia es lo que convierte una venta suelta en un ingreso recurrente.
 
-- Sistema de seguimiento semanal para clientes de entrenamiento y nutrición…
-- Plantillas de registro y recordatorios por WhatsApp…
-- Programas de adherencia para gimnasios y centros de bienestar…
+- Sistema de seguimiento semanal para clientes de entrenamiento y nutrición.
+- Plantillas de registro y recordatorios por WhatsApp.
+- Programas de adherencia para gimnasios y centros de bienestar.
 
 **Precio orientativo:** 60–220 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

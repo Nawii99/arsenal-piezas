@@ -1,4 +1,4 @@
-# Validación de oferta · Prompt operativo…
+# Validación de oferta · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Negocio · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Revisar si un mensaje del móvil es una estafa…
+# Revisar si un mensaje del móvil es una estafa
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 

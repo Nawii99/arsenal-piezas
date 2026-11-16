@@ -1,4 +1,4 @@
-# Termómetro de reseñas de Steam por temas…
+# Termómetro de reseñas de Steam por temas
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

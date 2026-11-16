@@ -1,4 +1,4 @@
-# auditar-gastos-fijos…
+# auditar-gastos-fijos
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que audita tus gastos fijos y suscripciones con
 
 Cancelar y renegociar gastos fijos es ahorro directo que se repite todos los meses, sin necesidad de vender más.
 
-- Auditoría de gastos fijos para pequeños negocios…
-- Servicio de ahorro en suscripciones y contratos…
-- Informe trimestral de costes para autónomos…
+- Auditoría de gastos fijos para pequeños negocios.
+- Servicio de ahorro en suscripciones y contratos.
+- Informe trimestral de costes para autónomos.
 
 **Precio orientativo:** 50–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

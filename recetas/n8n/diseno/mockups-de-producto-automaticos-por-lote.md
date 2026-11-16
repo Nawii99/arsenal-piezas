@@ -1,4 +1,4 @@
-# Mockups de producto automáticos por lote…
+# Mockups de producto automáticos por lote
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Recorre una carpeta de Drive con tus diseños planos y, para cada uno, genera fo
 
 Un mockup a mano lleva 10-15 minutos; aquí salen 30 en cinco minutos. Desde 0 € con plantillas propias, o unos 15-20 €/mes con servicio de mockups.
 
-- Fotos de producto para tiendas de print on demand con lotes semanales…
-- Mockups de presentación para diseñadores que venden a clientes…
-- Configuración de un flujo de mockups para marcas de merchandising…
+- Fotos de producto para tiendas de print on demand con lotes semanales.
+- Mockups de presentación para diseñadores que venden a clientes.
+- Configuración de un flujo de mockups para marcas de merchandising.
 
 **Precio orientativo:** 60–200 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

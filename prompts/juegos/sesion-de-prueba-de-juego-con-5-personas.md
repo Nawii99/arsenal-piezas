@@ -1,4 +1,4 @@
-# Sesión de prueba de juego con 5 personas…
+# Sesión de prueba de juego con 5 personas
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como investigador de experiencia de jugador en estudios peque�
 
 Evita meses de trabajo en la dirección equivocada y detecta el punto donde los jugadores abandonan, que es donde se pierden las ventas.
 
-- Playtests de demos para estudios indie con informe…
-- Guion y cuestionarios de pruebas de jugadores…
-- Análisis de prototipos antes de seguir invirtiendo horas…
+- Playtests de demos para estudios indie con informe.
+- Guion y cuestionarios de pruebas de jugadores.
+- Análisis de prototipos antes de seguir invirtiendo horas.
 
 **Precio orientativo:** 250–700 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

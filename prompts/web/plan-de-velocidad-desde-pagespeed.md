@@ -1,4 +1,4 @@
-# plan-de-velocidad-desde-pagespeed…
+# plan-de-velocidad-desde-pagespeed
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como especialista en rendimiento web
 
 Una web lenta pierde visitas antes de que lleguen a ver el precio. Acelerarla aprovecha el tráfico que ya pagas o ya te llega sin gastar más en publicidad.
 
-- Optimización de velocidad de webs de negocios pequeños…
-- Informe de rendimiento con plan de mejora priorizado…
-- Mantenimiento mensual de velocidad y Core Web Vitals…
+- Optimización de velocidad de webs de negocios pequeños.
+- Informe de rendimiento con plan de mejora priorizado.
+- Mantenimiento mensual de velocidad y Core Web Vitals.
 
 **Precio orientativo:** 60–250 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

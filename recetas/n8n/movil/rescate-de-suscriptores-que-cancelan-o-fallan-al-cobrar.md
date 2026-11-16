@@ -1,4 +1,4 @@
-# Rescate de suscriptores que cancelan o fallan al cobrar…
+# Rescate de suscriptores que cancelan o fallan al cobrar
 
 **Tipo:** Receta de automatización · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando cobras suscripciones dentro de la app y ves bajas cada mes sin saber por 
 
 Recuperar el 20% de los fallos de tarjeta en una app con 200 suscriptores de 5 € son unos 100-200 € al año que ya no se pierden.
 
-- Recuperación de cobros fallidos para una app de suscripción pequeña…
-- Avisos de fin de prueba gratuita para una app de pago de un negocio…
-- Informe mensual de ingresos recuperados para el dueño de la app…
+- Recuperación de cobros fallidos para una app de suscripción pequeña.
+- Avisos de fin de prueba gratuita para una app de pago de un negocio.
+- Informe mensual de ingresos recuperados para el dueño de la app.
 
 **Precio orientativo:** 250–500 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

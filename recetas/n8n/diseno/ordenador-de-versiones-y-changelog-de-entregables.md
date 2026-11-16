@@ -1,4 +1,4 @@
-# Ordenador de versiones y changelog de entregables…
+# Ordenador de versiones y changelog de entregables
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 

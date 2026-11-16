@@ -1,4 +1,4 @@
-# Paywall y modelo de precios de la app…
+# Paywall y modelo de precios de la app
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,8 +23,8 @@ Prompt para cualquier chat de IA que decide cómo cobra tu app. Compara suscripc
 
 Elegir bien el modelo y ordenar los planes en la pantalla de pago cambia directamente lo que ingresas por cada usuario que ya tienes.
 
-- Diseño de modelo de monetización para apps…
-- Pruebas de precio para apps con pocas conversiones…
+- Diseño de modelo de monetización para apps.
+- Pruebas de precio para apps con pocas conversiones.
 
 **Precio orientativo:** 120–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

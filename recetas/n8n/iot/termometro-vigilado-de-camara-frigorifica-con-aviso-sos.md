@@ -1,4 +1,4 @@
-# Termómetro vigilado de cámara frigorífica con aviso sos…
+# Termómetro vigilado de cámara frigorífica con aviso sos
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

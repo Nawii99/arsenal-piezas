@@ -1,4 +1,4 @@
-# Alerta de clases con baja ocupación y llamada a llenarl…
+# Alerta de clases con baja ocupación y llamada a llenarl
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

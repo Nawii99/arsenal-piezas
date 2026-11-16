@@ -1,4 +1,4 @@
-# Montar una sesión de playtest con 5 personas…
+# Montar una sesión de playtest con 5 personas
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como investigador de usuarios para j
 
 Detectar en una tarde por qué la gente abandona en los primeros minutos evita tirar el presupuesto de lanzamiento en un juego que no engancha.
 
-- Organización y análisis de sesiones de playtest para estudios indie…
-- Informe de problemas de usabilidad de una demo con grabaciones…
-- Servicio de pruebas con jugadores del género antes del lanzamiento…
+- Organización y análisis de sesiones de playtest para estudios indie.
+- Informe de problemas de usabilidad de una demo con grabaciones.
+- Servicio de pruebas con jugadores del género antes del lanzamiento.
 
 **Precio orientativo:** 150–500 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

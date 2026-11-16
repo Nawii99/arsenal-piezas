@@ -1,4 +1,4 @@
-# Copia de seguridad semanal de tus repos a Google Drive…
+# Copia de seguridad semanal de tus repos a Google Drive
 
 **Tipo:** Receta de automatización · **Área:** Programación · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Flujo de n8n que cada domingo lista tus repositorios de GitHub, descarga el ZIP 
 
 Recuperar un proyecto perdido cuesta semanas de reescritura; esta copia vale cero euros y elimina ese riesgo por completo.
 
-- Copias de seguridad de código para freelances y estudios pequeños…
-- Configuración de backups de repositorios para equipos sin administrador de sistemas…
-- Mantenimiento de copias como servicio mensual para desarrolladores…
+- Copias de seguridad de código para freelances y estudios pequeños.
+- Configuración de backups de repositorios para equipos sin administrador de sistemas.
+- Mantenimiento de copias como servicio mensual para desarrolladores.
 
 **Precio orientativo:** 80–180 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

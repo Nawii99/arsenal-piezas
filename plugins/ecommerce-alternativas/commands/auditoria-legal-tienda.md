@@ -20,7 +20,7 @@ Entrada del usuario: $ARGUMENTS (los textos pegados, o una descripción de qué 
 3. **Condiciones de venta**: ¿precios con IVA incluido, gastos de envío visibles antes de pagar, garantía de 3 años en producto nuevo?
 4. **Privacidad**: ¿dice quién es el responsable, qué datos se recogen, para qué, y cómo ejercer los derechos ante la AEPD? ¿El formulario de compra o de newsletter tiene casilla de consentimiento sin premarcar?
 5. **Cookies**: ¿hay banner que permite rechazar tan fácil como aceptar? Un banner con solo el botón "Aceptar" incumple el criterio de la AEPD.
-6. **Facturas**: pregunta si emite factura con número correlativo, fecha, NIF de ambas partes, base imponible, tipo de IVA y total. Si es sociedad, recuérdale que desde enero de 2026 aplica la obligación de facturación Verifactu; para autónomos, desde julio de 2026. Que lo confirme con su gestor, porque los plazos han tenido cambios.
+6. **Facturas**: pregunta si emite factura con número correlativo, fecha, NIF de ambas partes, base imponible, tipo de IVA y total. Si es sociedad, recuérdale que su programa de facturación debe cumplir Verifactu antes del 1 de enero de 2027; si es autónomo, antes del 1 de julio de 2027 (Real Decreto-ley 15/2025). Hacienda ha anunciado aplazarlo a octubre de 2028, pero a 13-nov-2026 no está en el BOE.
 
 ## Qué devolver
 

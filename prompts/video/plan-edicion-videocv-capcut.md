@@ -1,4 +1,4 @@
-# Plan de edición del vídeo currículum en CapCut…
+# Plan de edición del vídeo currículum en CapCut
 
 **Tipo:** Prompt · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Tienes las tomas grabadas, nunca has editado y no sabes qué botón tocar para c
 
 Úsalo para enseñar a clientes a montar su vídeo currículum, o para editárselo tú, cobrando [TU PRECIO] por vídeo editado. El cliente da el visto bueno antes de enviarlo a una oferta.
 
-- Edición de vídeos currículum por encargo cerrado…
-- Clase práctica de edición en CapCut para candidatos que nunca han editado…
-- Guía impresa de edición como entregable para clientes que editan solos…
+- Edición de vídeos currículum por encargo cerrado.
+- Clase práctica de edición en CapCut para candidatos que nunca han editado.
+- Guía impresa de edición como entregable para clientes que editan solos.
 
 **Precio orientativo:** 25–80 € por vídeo. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

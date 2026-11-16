@@ -1,4 +1,4 @@
-# Espía a los canales de tu sector sin abrir YouTube…
+# Espía a los canales de tu sector sin abrir YouTube
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando quieres saber qué está funcionando en tu nicho sin perder una hora al d
 
 Sustituye 3-4 horas al mes de investigación manual y evita grabar vídeos que nadie busca, que es el gasto más caro de todos.
 
-- Análisis mensual de competencia en YouTube para marcas, con temas que funcionan…
-- Radar de ideas de vídeo para creadores con demanda demostrada…
-- Seguimiento de canales de sector para agencias, con avisos de vídeos que despuntan…
+- Análisis mensual de competencia en YouTube para marcas, con temas que funcionan.
+- Radar de ideas de vídeo para creadores con demanda demostrada.
+- Seguimiento de canales de sector para agencias, con avisos de vídeos que despuntan.
 
 **Precio orientativo:** 60–200 € al mes. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

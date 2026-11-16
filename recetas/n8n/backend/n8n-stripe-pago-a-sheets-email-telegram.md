@@ -1,4 +1,4 @@
-# n8n: cuando alguien paga en Stripe, apuntarlo en Google Shee…
+# n8n: cuando alguien paga en Stripe, apuntarlo en Google Shee
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando ya cobras con Stripe y quieres dejar de mirar el panel para saber quién 
 
 Se vende como 'registro automático de ventas' a cualquier negocio con Stripe; el mismo flujo sirve para conectar con su CRM o su programa de facturas en lugar de Sheets.
 
-- Registro automático de ventas para negocios que cobran con Stripe…
-- Conexión de pagos con CRM o programa de facturas para pymes…
-- Avisos de venta para equipos que reparten pedidos…
+- Registro automático de ventas para negocios que cobran con Stripe.
+- Conexión de pagos con CRM o programa de facturas para pymes.
+- Avisos de venta para equipos que reparten pedidos.
 
 **Precio orientativo:** 100–250 € por instalación. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

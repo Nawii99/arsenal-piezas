@@ -1,4 +1,4 @@
-# Encuesta de fin de curso, reseña a todos y testimonios de los contentos…
+# Encuesta de fin de curso, reseña a todos y testimonios de los contentos
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

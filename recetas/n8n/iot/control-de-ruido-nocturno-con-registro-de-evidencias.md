@@ -1,4 +1,4 @@
-# Control de ruido nocturno con registro de evidencias…
+# Control de ruido nocturno con registro de evidencias
 
 **Tipo:** Receta de automatización · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 

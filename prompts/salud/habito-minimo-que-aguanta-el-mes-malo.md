@@ -1,4 +1,4 @@
-# Hábito mínimo que aguanta el mes malo…
+# Hábito mínimo que aguanta el mes malo
 
 **Tipo:** Prompt · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 
@@ -24,9 +24,9 @@ Cuando tú o un cliente de acompañamiento empezáis algo con ganas y a las dos 
 
 Si acompañas a personas, este método convierte un servicio de charla en un programa con estructura y seguimiento, que se puede cobrar mejor y se abandona menos.
 
-- Programa de hábitos mínimos para clientes de coaching y entrenamiento…
-- Plan de seguimiento de hábitos con registro semanal…
-- Taller de constancia para equipos o gimnasios pequeños…
+- Programa de hábitos mínimos para clientes de coaching y entrenamiento.
+- Plan de seguimiento de hábitos con registro semanal.
+- Taller de constancia para equipos o gimnasios pequeños.
 
 **Precio orientativo:** 60–200 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

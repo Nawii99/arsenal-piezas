@@ -1,4 +1,4 @@
-# Inventario de claves y secretos con aviso de caducidad…
+# Inventario de claves y secretos con aviso de caducidad
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 

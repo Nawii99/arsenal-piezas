@@ -1,4 +1,4 @@
-# Revisión de accesibilidad de tu app en el móvil…
+# Revisión de accesibilidad de tu app en el móvil
 
 **Tipo:** Prompt · **Área:** Móvil · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que actúa como especialista en accesibilidad móvil y WCAG. Recibe públ
 
 Amplía el número de personas que pueden usar y pagar tu producto, y es requisito en muchos concursos públicos y en clientes grandes.
 
-- Auditoría de accesibilidad móvil con lista de arreglos…
-- Revisión de contraste y tamaños para webs y apps…
-- Preparación para concursos públicos que exigen accesibilidad…
+- Auditoría de accesibilidad móvil con lista de arreglos.
+- Revisión de contraste y tamaños para webs y apps.
+- Preparación para concursos públicos que exigen accesibilidad.
 
 **Precio orientativo:** 200–600 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

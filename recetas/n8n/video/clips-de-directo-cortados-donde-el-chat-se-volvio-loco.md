@@ -1,4 +1,4 @@
-# Clips de directo cortados donde el chat se volvió loco…
+# Clips de directo cortados donde el chat se volvió loco
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Tras un directo, descarga el histórico del chat de Twitch o YouTube, calcula la
 
 Sustituye 2-3 horas de revisión y montaje por vídeo en directo. Cada clip publicado es tráfico gratis hacia el canal.
 
-- Cortes de directos y webinars para empresas, entregados en 48 horas con subtítulos…
-- Gestión de clips para streamers: detección de momentos y publicación en redes…
-- Montaje de resúmenes verticales de eventos para marcas y ponentes…
+- Cortes de directos y webinars para empresas, entregados en 48 horas con subtítulos.
+- Gestión de clips para streamers: detección de momentos y publicación en redes.
+- Montaje de resúmenes verticales de eventos para marcas y ponentes.
 
 **Precio orientativo:** 60–200 € por directo. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

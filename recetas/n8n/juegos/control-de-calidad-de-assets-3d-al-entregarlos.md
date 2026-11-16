@@ -1,4 +1,4 @@
-# Control de calidad de assets 3D al entregarlos…
+# Control de calidad de assets 3D al entregarlos
 
 **Tipo:** Receta de automatización · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 

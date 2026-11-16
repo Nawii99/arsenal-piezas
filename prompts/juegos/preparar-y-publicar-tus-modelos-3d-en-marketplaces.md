@@ -1,4 +1,4 @@
-# Preparar y publicar tus modelos 3D en marketplaces…
+# Preparar y publicar tus modelos 3D en marketplaces
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tengas modelos hechos y quieras venderlos en sitios como Sketchfab, CGTra
 
 Vender un mismo modelo muchas veces convierte trabajo ya hecho en ingresos recurrentes, sin repetir el esfuerzo por cada cliente.
 
-- Preparación de modelos 3D para vender en marketplaces…
-- Fichas optimizadas de assets con imágenes y etiquetas…
-- Revisión técnica de paquetes antes de su publicación…
+- Preparación de modelos 3D para vender en marketplaces.
+- Fichas optimizadas de assets con imágenes y etiquetas.
+- Revisión técnica de paquetes antes de su publicación.
 
 **Precio orientativo:** 60–200 € por pieza. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Propuesta de formación para empresas con FUNDAE…
+# Propuesta de formación para empresas con FUNDAE
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,8 +22,8 @@ Cuando una empresa te pregunta si puedes formar a su equipo y quieres presentar 
 
 Vender una edición cerrada a una empresa suele valer varias ventas sueltas a particulares, y el crédito de formación hace que a la empresa le salga más barato.
 
-- Propuestas de formación bonificada para pymes…
-- Gestión de grupos cerrados para empresas como formador autónomo…
+- Propuestas de formación bonificada para pymes.
+- Gestión de grupos cerrados para empresas como formador autónomo.
 - Preparación de reuniones con responsables de RR. HH.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*

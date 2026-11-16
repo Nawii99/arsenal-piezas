@@ -1,4 +1,4 @@
-# Versión ATS del CV para InfoJobs y LinkedIn…
+# Versión ATS del CV para InfoJobs y LinkedIn
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Sacar tus dispositivos de la nube y pasarlos a local…
+# Sacar tus dispositivos de la nube y pasarlos a local
 
 **Tipo:** Prompt · **Área:** IoT y hardware · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando un fabricante anuncie que cierra su app, suba a suscripción, o simplemen
 
 Evita tener que recomprar dispositivos que funcionan y te da un argumento de venta muy fuerte frente a instaladores que solo montan cajas de marca.
 
-- Migración de domótica de la nube a control local…
-- Instalación de Home Assistant para particulares…
-- Servicio de rescate de dispositivos abandonados por el fabricante…
+- Migración de domótica de la nube a control local.
+- Instalación de Home Assistant para particulares.
+- Servicio de rescate de dispositivos abandonados por el fabricante.
 
 **Precio orientativo:** 100–350 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

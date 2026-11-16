@@ -1,4 +1,4 @@
-# Pagina de venta del servicio…
+# Pagina de venta del servicio
 
 **Tipo:** Prompt · **Área:** Empleo y currículum · **Licencia:** CC BY 4.0
 

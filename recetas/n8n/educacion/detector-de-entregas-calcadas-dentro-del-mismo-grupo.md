@@ -1,4 +1,4 @@
-# Detector de entregas calcadas dentro del mismo grupo…
+# Detector de entregas calcadas dentro del mismo grupo
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

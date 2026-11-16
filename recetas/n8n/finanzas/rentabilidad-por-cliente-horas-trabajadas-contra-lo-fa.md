@@ -1,4 +1,4 @@
-# Rentabilidad por cliente: horas trabajadas contra lo fa…
+# Rentabilidad por cliente: horas trabajadas contra lo fa
 
 **Tipo:** Receta de automatización · **Área:** Finanzas · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Encuesta de satisfacción de fin de curso con reseña para todos…
+# Encuesta de satisfacción de fin de curso con reseña para todos
 
 **Tipo:** Receta de automatización · **Área:** Formación · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Portero de calidad: nada se publica sin pasar la lista…
+# Portero de calidad: nada se publica sin pasar la lista
 
 **Tipo:** Receta de automatización · **Área:** Calidad y tests · **Licencia:** CC BY 4.0
 

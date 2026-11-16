@@ -1,4 +1,4 @@
-# Constructor de prompts para Claude en tu tienda online…
+# Constructor de prompts para Claude en tu tienda online
 
 **Tipo:** Prompt · **Área:** Tienda por internet · **Licencia:** CC BY 4.0
 

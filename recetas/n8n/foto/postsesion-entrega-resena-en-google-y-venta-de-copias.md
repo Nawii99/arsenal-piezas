@@ -1,4 +1,4 @@
-# Postsesión: entrega, reseña en Google y venta de copias…
+# Postsesión: entrega, reseña en Google y venta de copias
 
 **Tipo:** Receta de automatización · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

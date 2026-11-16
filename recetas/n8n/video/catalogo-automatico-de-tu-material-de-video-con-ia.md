@@ -1,4 +1,4 @@
-# Catálogo automático de tu material de vídeo con IA…
+# Catálogo automático de tu material de vídeo con IA
 
 **Tipo:** Receta de automatización · **Área:** Vídeo · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Cuando tienes cientos de clips en discos y carpetas con nombres tipo DJI_0453.MP
 
 Buscar un plano concreto entre tu material cuesta 10-20 minutos cada vez. Con esto es una búsqueda de 5 segundos en una hoja.
 
-- Catalogado de archivo de vídeo para productoras con búsqueda por tipo de plano…
-- Biblioteca de material de apoyo para marcas que reutilizan imágenes en varias campañas…
-- Organización de archivo de vídeo para estudios con etiquetado automático…
+- Catalogado de archivo de vídeo para productoras con búsqueda por tipo de plano.
+- Biblioteca de material de apoyo para marcas que reutilizan imágenes en varias campañas.
+- Organización de archivo de vídeo para estudios con etiquetado automático.
 
 **Precio orientativo:** 150–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

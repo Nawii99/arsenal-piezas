@@ -1,4 +1,4 @@
-# Make (make.com): informe semanal de ventas por correo desde…
+# Make (make.com): informe semanal de ventas por correo desde
 
 **Tipo:** Receta de automatización · **Área:** Datos · **Licencia:** CC BY 4.0
 

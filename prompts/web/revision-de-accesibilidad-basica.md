@@ -1,4 +1,4 @@
-# revision-de-accesibilidad-basica…
+# revision-de-accesibilidad-basica
 
 **Tipo:** Prompt · **Área:** Web · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt que audita la accesibilidad básica de una web según WCAG 2.2 nivel AA. 
 
 Abre tu web a clientes que hoy no pueden comprarte y es requisito en muchos concursos públicos y clientes grandes: te deja optar a trabajos mejor pagados.
 
-- Auditoría de accesibilidad básica para webs de pymes…
-- Adaptación de webs para concursos públicos y clientes grandes…
-- Revisión de contraste y teclado como extra al entregar webs…
+- Auditoría de accesibilidad básica para webs de pymes.
+- Adaptación de webs para concursos públicos y clientes grandes.
+- Revisión de contraste y teclado como extra al entregar webs.
 
 **Precio orientativo:** 120–400 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

@@ -1,4 +1,4 @@
-# Diseñar el primer minuto de tu juego…
+# Diseñar el primer minuto de tu juego
 
 **Tipo:** Prompt · **Área:** Videojuegos y 3D · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que actúa como diseñador de onboarding. Con t
 
 El primer minuto decide si alguien sigue jugando, si un streamer lo enseña y si la demo convierte en venta.
 
-- Rediseño del onboarding y de la demo de juegos indie…
-- Revisión de los primeros minutos con informe de abandonos probables…
-- Taller de diseño de tutoriales sin texto para estudios pequeños…
+- Rediseño del onboarding y de la demo de juegos indie.
+- Revisión de los primeros minutos con informe de abandonos probables.
+- Taller de diseño de tutoriales sin texto para estudios pequeños.
 
 **Precio orientativo:** 120–450 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

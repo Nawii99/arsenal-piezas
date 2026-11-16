@@ -1,4 +1,4 @@
-# Papeleo previo a la cita, con freno si falta algo…
+# Papeleo previo a la cita, con freno si falta algo
 
 **Tipo:** Receta de automatización · **Área:** Salud y deporte · **Licencia:** CC BY 4.0
 

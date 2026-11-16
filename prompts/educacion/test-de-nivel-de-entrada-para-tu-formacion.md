@@ -1,4 +1,4 @@
-# Test de nivel de entrada para tu formación…
+# Test de nivel de entrada para tu formación
 
 **Tipo:** Prompt · **Área:** Formación · **Licencia:** CC BY 4.0
 
@@ -22,9 +22,9 @@ Prompt para cualquier chat de IA que crea un test diagnóstico de entrada. Deduc
 
 Reduce abandonos y devoluciones porque cada alumno entra en el nivel que le toca; además te da argumentos para vender una vía premium a los de nivel alto.
 
-- Test de nivel y rutas de aprendizaje para academias…
-- Segmentación de alumnos con oferta premium para los avanzados…
-- Formulario diagnóstico de acceso para mentorías…
+- Test de nivel y rutas de aprendizaje para academias.
+- Segmentación de alumnos con oferta premium para los avanzados.
+- Formulario diagnóstico de acceso para mentorías.
 
 **Precio orientativo:** 80–220 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

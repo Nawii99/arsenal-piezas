@@ -1,4 +1,4 @@
-# Apagar servidores fuera de horario para pagar menos…
+# Apagar servidores fuera de horario para pagar menos
 
 **Tipo:** Receta de automatización · **Área:** Backend · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Apaga cada noche y los fines de semana las máquinas de pruebas o desarrollo mar
 
 Un entorno de pruebas encendido solo 50 horas a la semana en vez de 168 recorta la factura un 70 %: de 60 €/mes a menos de 20 €.
 
-- Reducción de la factura de servidores de pruebas para agencias de desarrollo…
-- Mantenimiento de entornos de staging con control de costes para pymes tecnológicas…
-- Auditoría de servidores encendidos sin uso con informe de ahorro mensual…
+- Reducción de la factura de servidores de pruebas para agencias de desarrollo.
+- Mantenimiento de entornos de staging con control de costes para pymes tecnológicas.
+- Auditoría de servidores encendidos sin uso con informe de ahorro mensual.
 
 **Precio orientativo:** 80–250 € por configuración. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

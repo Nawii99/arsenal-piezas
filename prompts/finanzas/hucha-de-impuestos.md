@@ -1,4 +1,4 @@
-# hucha-de-impuestos…
+# hucha-de-impuestos
 
 **Tipo:** Prompt · **Área:** Finanzas · **Licencia:** CC BY 4.0
 
@@ -23,9 +23,9 @@ Prompt para cualquier chat de IA que monta tu hucha de impuestos. Calcula un por
 
 Evita el agujero trimestral, los recargos por pagar fuera de plazo y el coste de financiarte para pagar impuestos que ya habías cobrado.
 
-- Sistema de reserva de impuestos para autónomos…
-- Orientación financiera básica para nuevos emprendedores…
-- Plantilla de control trimestral en hoja de cálculo…
+- Sistema de reserva de impuestos para autónomos.
+- Orientación financiera básica para nuevos emprendedores.
+- Plantilla de control trimestral en hoja de cálculo.
 
 **Precio orientativo:** 50–150 € por proyecto. *Cifra inventada para hacerte una idea, no una recomendación: investiga tu mercado y pon el precio que quieras.*
 

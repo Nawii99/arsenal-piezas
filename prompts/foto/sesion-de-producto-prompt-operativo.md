@@ -1,4 +1,4 @@
-# Sesión de producto · Prompt operativo…
+# Sesión de producto · Prompt operativo
 
 **Tipo:** Prompt · **Área:** Foto e imagen · **Licencia:** CC BY 4.0
 

@@ -1,4 +1,4 @@
-# Guardián de paleta: avisa si un arte se sale de marca…
+# Guardián de paleta: avisa si un arte se sale de marca
 
 **Tipo:** Receta de automatización · **Área:** Diseño · **Licencia:** CC BY 4.0
 
